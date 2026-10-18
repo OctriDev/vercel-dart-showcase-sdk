@@ -8,7 +8,8 @@ class CreateConditionalBypassResponseResult {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String condition;
-  final List<CreateConditionalBypassResponseResultConditionGroupItem> conditionGroup;
+  final List<CreateConditionalBypassResponseResultConditionGroupItem>
+      conditionGroup;
   final String createdAt;
   final String domain;
   final String id;
@@ -16,45 +17,94 @@ class CreateConditionalBypassResponseResult {
   final String projectId;
   final String updatedAt;
 
-  const CreateConditionalBypassResponseResult({required this.condition, required this.conditionGroup, required this.createdAt, required this.domain, required this.id, this.note = const SdkOmitted(), required this.projectId, required this.updatedAt});
+  const CreateConditionalBypassResponseResult(
+      {required this.condition,
+      required this.conditionGroup,
+      required this.createdAt,
+      required this.domain,
+      required this.id,
+      this.note = const SdkOmitted(),
+      required this.projectId,
+      required this.updatedAt});
 
-  CreateConditionalBypassResponseResult Function({String condition, List<CreateConditionalBypassResponseResultConditionGroupItem> conditionGroup, String createdAt, String domain, String id, SdkOptional<String> note, String projectId, String updatedAt}) get copyWith => _copyWith;
+  CreateConditionalBypassResponseResult Function(
+      {String condition,
+      List<CreateConditionalBypassResponseResultConditionGroupItem>
+          conditionGroup,
+      String createdAt,
+      String domain,
+      String id,
+      SdkOptional<String> note,
+      String projectId,
+      String updatedAt}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponseResult _copyWith({Object? condition = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? domain = sdkOmittedValue, Object? id = sdkOmittedValue, Object? note = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateConditionalBypassResponseResult(
-    condition: identical(condition, sdkOmittedValue) ? this.condition : condition as String,
-    conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<CreateConditionalBypassResponseResultConditionGroupItem>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-  );
+  CreateConditionalBypassResponseResult _copyWith(
+          {Object? condition = sdkOmittedValue,
+          Object? conditionGroup = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? domain = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? note = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      CreateConditionalBypassResponseResult(
+        condition: identical(condition, sdkOmittedValue)
+            ? this.condition
+            : condition as String,
+        conditionGroup: identical(conditionGroup, sdkOmittedValue)
+            ? this.conditionGroup
+            : conditionGroup as List<
+                CreateConditionalBypassResponseResultConditionGroupItem>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+      );
 
-  factory CreateConditionalBypassResponseResult.fromJson(Map<String, dynamic> json) => CreateConditionalBypassResponseResult(
-    condition: (json['condition'] as String?)!,
-    conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => CreateConditionalBypassResponseResultConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    createdAt: (json['createdAt'] as String?)!,
-    domain: (json['domain'] as String?)!,
-    id: (json['id'] as String?)!,
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    updatedAt: (json['updatedAt'] as String?)!,
-  );
+  factory CreateConditionalBypassResponseResult.fromJson(
+          Map<String, dynamic> json) =>
+      CreateConditionalBypassResponseResult(
+        condition: (json['condition'] as String?)!,
+        conditionGroup: ((json['conditionGroup'] as List?)
+            ?.map((e) => CreateConditionalBypassResponseResultConditionGroupItem
+                .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        createdAt: (json['createdAt'] as String?)!,
+        domain: (json['domain'] as String?)!,
+        id: (json['id'] as String?)!,
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        updatedAt: (json['updatedAt'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'condition': condition,
-    'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
-    'createdAt': createdAt,
-    'domain': domain,
-    'id': id,
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'updatedAt': updatedAt,
-  };
+        'condition': condition,
+        'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
+        'createdAt': createdAt,
+        'domain': domain,
+        'id': id,
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'updatedAt': updatedAt,
+      };
 }
 
 class CreateConditionalBypassResponse {
@@ -64,19 +114,28 @@ class CreateConditionalBypassResponse {
 
   const CreateConditionalBypassResponse({required this.result});
 
-  CreateConditionalBypassResponse Function({CreateConditionalBypassResponseResult result}) get copyWith => _copyWith;
+  CreateConditionalBypassResponse Function(
+      {CreateConditionalBypassResponseResult result}) get copyWith => _copyWith;
 
-  CreateConditionalBypassResponse _copyWith({Object? result = sdkOmittedValue}) => CreateConditionalBypassResponse(
-    result: identical(result, sdkOmittedValue) ? this.result : result as CreateConditionalBypassResponseResult,
-  );
+  CreateConditionalBypassResponse _copyWith(
+          {Object? result = sdkOmittedValue}) =>
+      CreateConditionalBypassResponse(
+        result: identical(result, sdkOmittedValue)
+            ? this.result
+            : result as CreateConditionalBypassResponseResult,
+      );
 
-  factory CreateConditionalBypassResponse.fromJson(Map<String, dynamic> json) => CreateConditionalBypassResponse(
-    result: (json['result'] != null ? CreateConditionalBypassResponseResult.fromJson(json['result'] as Map<String, dynamic>) : null)!,
-  );
+  factory CreateConditionalBypassResponse.fromJson(Map<String, dynamic> json) =>
+      CreateConditionalBypassResponse(
+        result: (json['result'] != null
+            ? CreateConditionalBypassResponseResult.fromJson(
+                json['result'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'result': result.toJson(),
-  };
+        'result': result.toJson(),
+      };
 }
 
 class DeleteConditionalBypassResponse {
@@ -86,19 +145,26 @@ class DeleteConditionalBypassResponse {
 
   const DeleteConditionalBypassResponse({required this.ok});
 
-  DeleteConditionalBypassResponse Function({DeleteConditionalBypassResponseOk ok}) get copyWith => _copyWith;
+  DeleteConditionalBypassResponse Function(
+      {DeleteConditionalBypassResponseOk ok}) get copyWith => _copyWith;
 
-  DeleteConditionalBypassResponse _copyWith({Object? ok = sdkOmittedValue}) => DeleteConditionalBypassResponse(
-    ok: identical(ok, sdkOmittedValue) ? this.ok : ok as DeleteConditionalBypassResponseOk,
-  );
+  DeleteConditionalBypassResponse _copyWith({Object? ok = sdkOmittedValue}) =>
+      DeleteConditionalBypassResponse(
+        ok: identical(ok, sdkOmittedValue)
+            ? this.ok
+            : ok as DeleteConditionalBypassResponseOk,
+      );
 
-  factory DeleteConditionalBypassResponse.fromJson(Map<String, dynamic> json) => DeleteConditionalBypassResponse(
-    ok: (json['ok'] != null ? DeleteConditionalBypassResponseOk.fromJson(json['ok'] as bool) : null)!,
-  );
+  factory DeleteConditionalBypassResponse.fromJson(Map<String, dynamic> json) =>
+      DeleteConditionalBypassResponse(
+        ok: (json['ok'] != null
+            ? DeleteConditionalBypassResponseOk.fromJson(json['ok'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'ok': ok.toJson(),
-  };
+        'ok': ok.toJson(),
+      };
 }
 
 class GetSecurityFirewallEventsResponseActionsItem {
@@ -115,75 +181,149 @@ class GetSecurityFirewallEventsResponseActionsItem {
   final String? ruleName;
   final String startTime;
 
-  const GetSecurityFirewallEventsResponseActionsItem({required this.action, required this.actionType, required this.count, required this.endTime, required this.host, required this.isActive, required this.publicIp, required this.ruleId, required this.ruleName, required this.startTime});
+  const GetSecurityFirewallEventsResponseActionsItem(
+      {required this.action,
+      required this.actionType,
+      required this.count,
+      required this.endTime,
+      required this.host,
+      required this.isActive,
+      required this.publicIp,
+      required this.ruleId,
+      required this.ruleName,
+      required this.startTime});
 
-  GetSecurityFirewallEventsResponseActionsItem Function({String action, String actionType, double count, String endTime, String host, GetSecurityFirewallEventsResponseActionsItemIsActive isActive, String publicIp, String? ruleId, String? ruleName, String startTime}) get copyWith => _copyWith;
+  GetSecurityFirewallEventsResponseActionsItem Function(
+      {String action,
+      String actionType,
+      double count,
+      String endTime,
+      String host,
+      GetSecurityFirewallEventsResponseActionsItemIsActive isActive,
+      String publicIp,
+      String? ruleId,
+      String? ruleName,
+      String startTime}) get copyWith => _copyWith;
 
-  GetSecurityFirewallEventsResponseActionsItem _copyWith({Object? action = sdkOmittedValue, Object? actionType = sdkOmittedValue, Object? count = sdkOmittedValue, Object? endTime = sdkOmittedValue, Object? host = sdkOmittedValue, Object? isActive = sdkOmittedValue, Object? publicIp = sdkOmittedValue, Object? ruleId = sdkOmittedValue, Object? ruleName = sdkOmittedValue, Object? startTime = sdkOmittedValue}) => GetSecurityFirewallEventsResponseActionsItem(
-    action: identical(action, sdkOmittedValue) ? this.action : action as String,
-    actionType: identical(actionType, sdkOmittedValue) ? this.actionType : actionType as String,
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    endTime: identical(endTime, sdkOmittedValue) ? this.endTime : endTime as String,
-    host: identical(host, sdkOmittedValue) ? this.host : host as String,
-    isActive: identical(isActive, sdkOmittedValue) ? this.isActive : isActive as GetSecurityFirewallEventsResponseActionsItemIsActive,
-    publicIp: identical(publicIp, sdkOmittedValue) ? this.publicIp : publicIp as String,
-    ruleId: identical(ruleId, sdkOmittedValue) ? this.ruleId : ruleId as String?,
-    ruleName: identical(ruleName, sdkOmittedValue) ? this.ruleName : ruleName as String?,
-    startTime: identical(startTime, sdkOmittedValue) ? this.startTime : startTime as String,
-  );
+  GetSecurityFirewallEventsResponseActionsItem _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? actionType = sdkOmittedValue,
+          Object? count = sdkOmittedValue,
+          Object? endTime = sdkOmittedValue,
+          Object? host = sdkOmittedValue,
+          Object? isActive = sdkOmittedValue,
+          Object? publicIp = sdkOmittedValue,
+          Object? ruleId = sdkOmittedValue,
+          Object? ruleName = sdkOmittedValue,
+          Object? startTime = sdkOmittedValue}) =>
+      GetSecurityFirewallEventsResponseActionsItem(
+        action:
+            identical(action, sdkOmittedValue) ? this.action : action as String,
+        actionType: identical(actionType, sdkOmittedValue)
+            ? this.actionType
+            : actionType as String,
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        endTime: identical(endTime, sdkOmittedValue)
+            ? this.endTime
+            : endTime as String,
+        host: identical(host, sdkOmittedValue) ? this.host : host as String,
+        isActive: identical(isActive, sdkOmittedValue)
+            ? this.isActive
+            : isActive as GetSecurityFirewallEventsResponseActionsItemIsActive,
+        publicIp: identical(publicIp, sdkOmittedValue)
+            ? this.publicIp
+            : publicIp as String,
+        ruleId: identical(ruleId, sdkOmittedValue)
+            ? this.ruleId
+            : ruleId as String?,
+        ruleName: identical(ruleName, sdkOmittedValue)
+            ? this.ruleName
+            : ruleName as String?,
+        startTime: identical(startTime, sdkOmittedValue)
+            ? this.startTime
+            : startTime as String,
+      );
 
-  factory GetSecurityFirewallEventsResponseActionsItem.fromJson(Map<String, dynamic> json) => GetSecurityFirewallEventsResponseActionsItem(
-    action: (json['action'] as String?)!,
-    actionType: (json['action_type'] as String?)!,
-    count: ((json['count'] as num?)?.toDouble())!,
-    endTime: (json['endTime'] as String?)!,
-    host: (json['host'] as String?)!,
-    isActive: (json['isActive'] != null ? GetSecurityFirewallEventsResponseActionsItemIsActive.fromJson(json['isActive'] as bool) : null)!,
-    publicIp: (json['public_ip'] as String?)!,
-    ruleId: json.containsKey('ruleId') ? json['ruleId'] as String? : throw ArgumentError.value(null, 'ruleId', 'Required property is missing'),
-    ruleName: json.containsKey('ruleName') ? json['ruleName'] as String? : throw ArgumentError.value(null, 'ruleName', 'Required property is missing'),
-    startTime: (json['startTime'] as String?)!,
-  );
+  factory GetSecurityFirewallEventsResponseActionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallEventsResponseActionsItem(
+        action: (json['action'] as String?)!,
+        actionType: (json['action_type'] as String?)!,
+        count: ((json['count'] as num?)?.toDouble())!,
+        endTime: (json['endTime'] as String?)!,
+        host: (json['host'] as String?)!,
+        isActive: (json['isActive'] != null
+            ? GetSecurityFirewallEventsResponseActionsItemIsActive.fromJson(
+                json['isActive'] as bool)
+            : null)!,
+        publicIp: (json['public_ip'] as String?)!,
+        ruleId: json.containsKey('ruleId')
+            ? json['ruleId'] as String?
+            : throw ArgumentError.value(
+                null, 'ruleId', 'Required property is missing'),
+        ruleName: json.containsKey('ruleName')
+            ? json['ruleName'] as String?
+            : throw ArgumentError.value(
+                null, 'ruleName', 'Required property is missing'),
+        startTime: (json['startTime'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action,
-    'action_type': actionType,
-    'count': count,
-    'endTime': endTime,
-    'host': host,
-    'isActive': isActive.toJson(),
-    'public_ip': publicIp,
-    'ruleId': ruleId,
-    'ruleName': ruleName,
-    'startTime': startTime,
-  };
+        'action': action,
+        'action_type': actionType,
+        'count': count,
+        'endTime': endTime,
+        'host': host,
+        'isActive': isActive.toJson(),
+        'public_ip': publicIp,
+        'ruleId': ruleId,
+        'ruleName': ruleName,
+        'startTime': startTime,
+      };
 }
 
 class GetSecurityFirewallEventsResponsePagination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final GetSecurityFirewallEventsResponsePaginationHasMore hasMore;
+
   /// Pass as `cursor` to fetch the next page; null when there are no more.
   final String? next;
 
-  const GetSecurityFirewallEventsResponsePagination({required this.hasMore, required this.next});
+  const GetSecurityFirewallEventsResponsePagination(
+      {required this.hasMore, required this.next});
 
-  GetSecurityFirewallEventsResponsePagination Function({GetSecurityFirewallEventsResponsePaginationHasMore hasMore, String? next}) get copyWith => _copyWith;
+  GetSecurityFirewallEventsResponsePagination Function(
+      {GetSecurityFirewallEventsResponsePaginationHasMore hasMore,
+      String? next}) get copyWith => _copyWith;
 
-  GetSecurityFirewallEventsResponsePagination _copyWith({Object? hasMore = sdkOmittedValue, Object? next = sdkOmittedValue}) => GetSecurityFirewallEventsResponsePagination(
-    hasMore: identical(hasMore, sdkOmittedValue) ? this.hasMore : hasMore as GetSecurityFirewallEventsResponsePaginationHasMore,
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-  );
+  GetSecurityFirewallEventsResponsePagination _copyWith(
+          {Object? hasMore = sdkOmittedValue,
+          Object? next = sdkOmittedValue}) =>
+      GetSecurityFirewallEventsResponsePagination(
+        hasMore: identical(hasMore, sdkOmittedValue)
+            ? this.hasMore
+            : hasMore as GetSecurityFirewallEventsResponsePaginationHasMore,
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+      );
 
-  factory GetSecurityFirewallEventsResponsePagination.fromJson(Map<String, dynamic> json) => GetSecurityFirewallEventsResponsePagination(
-    hasMore: (json['hasMore'] != null ? GetSecurityFirewallEventsResponsePaginationHasMore.fromJson(json['hasMore'] as bool) : null)!,
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-  );
+  factory GetSecurityFirewallEventsResponsePagination.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallEventsResponsePagination(
+        hasMore: (json['hasMore'] != null
+            ? GetSecurityFirewallEventsResponsePaginationHasMore.fromJson(
+                json['hasMore'] as bool)
+            : null)!,
+        next: json.containsKey('next')
+            ? json['next'] as String?
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'hasMore': hasMore.toJson(),
-    'next': next,
-  };
+        'hasMore': hasMore.toJson(),
+        'next': next,
+      };
 }
 
 class GetSecurityFirewallEventsResponse {
@@ -192,24 +332,43 @@ class GetSecurityFirewallEventsResponse {
   final List<GetSecurityFirewallEventsResponseActionsItem> actions;
   final GetSecurityFirewallEventsResponsePagination pagination;
 
-  const GetSecurityFirewallEventsResponse({required this.actions, required this.pagination});
+  const GetSecurityFirewallEventsResponse(
+      {required this.actions, required this.pagination});
 
-  GetSecurityFirewallEventsResponse Function({List<GetSecurityFirewallEventsResponseActionsItem> actions, GetSecurityFirewallEventsResponsePagination pagination}) get copyWith => _copyWith;
+  GetSecurityFirewallEventsResponse Function(
+          {List<GetSecurityFirewallEventsResponseActionsItem> actions,
+          GetSecurityFirewallEventsResponsePagination pagination})
+      get copyWith => _copyWith;
 
-  GetSecurityFirewallEventsResponse _copyWith({Object? actions = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => GetSecurityFirewallEventsResponse(
-    actions: identical(actions, sdkOmittedValue) ? this.actions : actions as List<GetSecurityFirewallEventsResponseActionsItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as GetSecurityFirewallEventsResponsePagination,
-  );
+  GetSecurityFirewallEventsResponse _copyWith(
+          {Object? actions = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      GetSecurityFirewallEventsResponse(
+        actions: identical(actions, sdkOmittedValue)
+            ? this.actions
+            : actions as List<GetSecurityFirewallEventsResponseActionsItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as GetSecurityFirewallEventsResponsePagination,
+      );
 
-  factory GetSecurityFirewallEventsResponse.fromJson(Map<String, dynamic> json) => GetSecurityFirewallEventsResponse(
-    actions: ((json['actions'] as List?)?.map((e) => GetSecurityFirewallEventsResponseActionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? GetSecurityFirewallEventsResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetSecurityFirewallEventsResponse.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallEventsResponse(
+        actions: ((json['actions'] as List?)
+            ?.map((e) => GetSecurityFirewallEventsResponseActionsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        pagination: (json['pagination'] != null
+            ? GetSecurityFirewallEventsResponsePagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'actions': actions.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'actions': actions.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 class GetSecurityFirewallEventsSummaryResponse {
@@ -222,36 +381,71 @@ class GetSecurityFirewallEventsSummaryResponse {
   final double other;
   final double total;
 
-  const GetSecurityFirewallEventsSummaryResponse({required this.blockingIps, required this.byAction, required this.byActionType, required this.challengingIps, required this.other, required this.total});
+  const GetSecurityFirewallEventsSummaryResponse(
+      {required this.blockingIps,
+      required this.byAction,
+      required this.byActionType,
+      required this.challengingIps,
+      required this.other,
+      required this.total});
 
-  GetSecurityFirewallEventsSummaryResponse Function({double blockingIps, Map<String, double> byAction, Map<String, double> byActionType, double challengingIps, double other, double total}) get copyWith => _copyWith;
+  GetSecurityFirewallEventsSummaryResponse Function(
+      {double blockingIps,
+      Map<String, double> byAction,
+      Map<String, double> byActionType,
+      double challengingIps,
+      double other,
+      double total}) get copyWith => _copyWith;
 
-  GetSecurityFirewallEventsSummaryResponse _copyWith({Object? blockingIps = sdkOmittedValue, Object? byAction = sdkOmittedValue, Object? byActionType = sdkOmittedValue, Object? challengingIps = sdkOmittedValue, Object? other = sdkOmittedValue, Object? total = sdkOmittedValue}) => GetSecurityFirewallEventsSummaryResponse(
-    blockingIps: identical(blockingIps, sdkOmittedValue) ? this.blockingIps : blockingIps as double,
-    byAction: identical(byAction, sdkOmittedValue) ? this.byAction : byAction as Map<String, double>,
-    byActionType: identical(byActionType, sdkOmittedValue) ? this.byActionType : byActionType as Map<String, double>,
-    challengingIps: identical(challengingIps, sdkOmittedValue) ? this.challengingIps : challengingIps as double,
-    other: identical(other, sdkOmittedValue) ? this.other : other as double,
-    total: identical(total, sdkOmittedValue) ? this.total : total as double,
-  );
+  GetSecurityFirewallEventsSummaryResponse _copyWith(
+          {Object? blockingIps = sdkOmittedValue,
+          Object? byAction = sdkOmittedValue,
+          Object? byActionType = sdkOmittedValue,
+          Object? challengingIps = sdkOmittedValue,
+          Object? other = sdkOmittedValue,
+          Object? total = sdkOmittedValue}) =>
+      GetSecurityFirewallEventsSummaryResponse(
+        blockingIps: identical(blockingIps, sdkOmittedValue)
+            ? this.blockingIps
+            : blockingIps as double,
+        byAction: identical(byAction, sdkOmittedValue)
+            ? this.byAction
+            : byAction as Map<String, double>,
+        byActionType: identical(byActionType, sdkOmittedValue)
+            ? this.byActionType
+            : byActionType as Map<String, double>,
+        challengingIps: identical(challengingIps, sdkOmittedValue)
+            ? this.challengingIps
+            : challengingIps as double,
+        other: identical(other, sdkOmittedValue) ? this.other : other as double,
+        total: identical(total, sdkOmittedValue) ? this.total : total as double,
+      );
 
-  factory GetSecurityFirewallEventsSummaryResponse.fromJson(Map<String, dynamic> json) => GetSecurityFirewallEventsSummaryResponse(
-    blockingIps: ((json['blockingIps'] as num?)?.toDouble())!,
-    byAction: (json['byAction'] == null ? null : Map<String, dynamic>.from(json['byAction'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!,
-    byActionType: (json['byActionType'] == null ? null : Map<String, dynamic>.from(json['byActionType'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!,
-    challengingIps: ((json['challengingIps'] as num?)?.toDouble())!,
-    other: ((json['other'] as num?)?.toDouble())!,
-    total: ((json['total'] as num?)?.toDouble())!,
-  );
+  factory GetSecurityFirewallEventsSummaryResponse.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallEventsSummaryResponse(
+        blockingIps: ((json['blockingIps'] as num?)?.toDouble())!,
+        byAction: (json['byAction'] == null
+            ? null
+            : Map<String, dynamic>.from(json['byAction'] as Map).map(
+                (key, value) => MapEntry(key, (value as num).toDouble())))!,
+        byActionType: (json['byActionType'] == null
+            ? null
+            : Map<String, dynamic>.from(json['byActionType'] as Map).map(
+                (key, value) => MapEntry(key, (value as num).toDouble())))!,
+        challengingIps: ((json['challengingIps'] as num?)?.toDouble())!,
+        other: ((json['other'] as num?)?.toDouble())!,
+        total: ((json['total'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'blockingIps': blockingIps,
-    'byAction': byAction,
-    'byActionType': byActionType,
-    'challengingIps': challengingIps,
-    'other': other,
-    'total': total,
-  };
+        'blockingIps': blockingIps,
+        'byAction': byAction,
+        'byActionType': byActionType,
+        'challengingIps': challengingIps,
+        'other': other,
+        'total': total,
+      };
 }
 
 class GenerateFirewallRuleResponseRuleActionMitigateRateLimit {
@@ -263,34 +457,60 @@ class GenerateFirewallRuleResponseRuleActionMitigateRateLimit {
   final double limit;
   final double window;
 
-  const GenerateFirewallRuleResponseRuleActionMitigateRateLimit({this.action = const SdkOmitted(), required this.algo, required this.keys, required this.limit, required this.window});
+  const GenerateFirewallRuleResponseRuleActionMitigateRateLimit(
+      {this.action = const SdkOmitted(),
+      required this.algo,
+      required this.keys,
+      required this.limit,
+      required this.window});
 
-  GenerateFirewallRuleResponseRuleActionMitigateRateLimit Function({SdkOptional<String?> action, String algo, List<String> keys, double limit, double window}) get copyWith => _copyWith;
+  GenerateFirewallRuleResponseRuleActionMitigateRateLimit Function(
+      {SdkOptional<String?> action,
+      String algo,
+      List<String> keys,
+      double limit,
+      double window}) get copyWith => _copyWith;
 
-  GenerateFirewallRuleResponseRuleActionMitigateRateLimit _copyWith({Object? action = sdkOmittedValue, Object? algo = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? window = sdkOmittedValue}) => GenerateFirewallRuleResponseRuleActionMitigateRateLimit(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<String?>,
-    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as String,
-    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
-    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
-    window: identical(window, sdkOmittedValue) ? this.window : window as double,
-  );
+  GenerateFirewallRuleResponseRuleActionMitigateRateLimit _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? algo = sdkOmittedValue,
+          Object? keys = sdkOmittedValue,
+          Object? limit = sdkOmittedValue,
+          Object? window = sdkOmittedValue}) =>
+      GenerateFirewallRuleResponseRuleActionMitigateRateLimit(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<String?>,
+        algo: identical(algo, sdkOmittedValue) ? this.algo : algo as String,
+        keys:
+            identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
+        limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
+        window:
+            identical(window, sdkOmittedValue) ? this.window : window as double,
+      );
 
-  factory GenerateFirewallRuleResponseRuleActionMitigateRateLimit.fromJson(Map<String, dynamic> json) => GenerateFirewallRuleResponseRuleActionMitigateRateLimit(
-    action: json.containsKey('action') ? SdkPresent(json['action'] as String?) : const SdkOmitted(),
-    algo: (json['algo'] as String?)!,
-    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-    limit: ((json['limit'] as num?)?.toDouble())!,
-    window: ((json['window'] as num?)?.toDouble())!,
-  );
+  factory GenerateFirewallRuleResponseRuleActionMitigateRateLimit.fromJson(
+          Map<String, dynamic> json) =>
+      GenerateFirewallRuleResponseRuleActionMitigateRateLimit(
+        action: json.containsKey('action')
+            ? SdkPresent(json['action'] as String?)
+            : const SdkOmitted(),
+        algo: (json['algo'] as String?)!,
+        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+        limit: ((json['limit'] as num?)?.toDouble())!,
+        window: ((json['window'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<String?>(value: final value) => {'action': value,},
-      _ => const <String, dynamic>{},
-    },
-    'algo': algo,
-    'keys': keys,
-    'limit': limit,
-    'window': window,
-  };
+        ...switch (action) {
+          SdkPresent<String?>(value: final value) => {
+              'action': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'algo': algo,
+        'keys': keys,
+        'limit': limit,
+        'window': window,
+      };
 }

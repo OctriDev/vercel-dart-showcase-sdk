@@ -5,285 +5,394 @@ part of 'inline.dart';
 
 // Inline operation models (part 411)
 final class GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType {
-
   final String value;
 
-  const GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._(this.value);
+  const GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._(
+      this.value);
 
-  factory GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType.fromJson(String value) => GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._(value);
+  factory GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType.fromJson(
+          String value) =>
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._(value);
 
-  static const botCategory = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('bot_category');
-  static const botName = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('bot_name');
-  static const botProtection = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('bot_protection');
-  static const botStatus = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('bot_status');
-  static const cookie = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('cookie');
-  static const domainEnvironment = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('domain_environment');
-  static const environment = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('environment');
-  static const geoAsNumber = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('geo_as_number');
-  static const geoCity = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('geo_city');
-  static const geoContinent = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('geo_continent');
-  static const geoCountry = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('geo_country');
-  static const geoCountryRegion = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('geo_country_region');
-  static const header = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('header');
-  static const host = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('host');
-  static const ipAddress = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('ip_address');
-  static const ja3Digest = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('ja3_digest');
-  static const ja4Digest = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('ja4_digest');
-  static const method = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('method');
-  static const path = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('path');
-  static const protocol = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('protocol');
-  static const query = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('query');
-  static const rateLimitApiId = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('rate_limit_api_id');
-  static const rawPath = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('raw_path');
-  static const region = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('region');
-  static const responseCode = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('response_code');
-  static const route = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('route');
-  static const ruleset = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('ruleset');
-  static const scheme = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('scheme');
-  static const serverAction = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('server_action');
-  static const sharedCondition = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('shared_condition');
-  static const targetPath = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('target_path');
-  static const trafficSource = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('traffic_source');
-  static const trustedSource = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('trusted_source');
-  static const userAgent = GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType._('user_agent');
+  static const botCategory =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('bot_category');
+  static const botName =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('bot_name');
+  static const botProtection =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('bot_protection');
+  static const botStatus =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('bot_status');
+  static const cookie =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('cookie');
+  static const domainEnvironment =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('domain_environment');
+  static const environment =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('environment');
+  static const geoAsNumber =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('geo_as_number');
+  static const geoCity =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('geo_city');
+  static const geoContinent =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('geo_continent');
+  static const geoCountry =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('geo_country');
+  static const geoCountryRegion =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('geo_country_region');
+  static const header =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('header');
+  static const host =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('host');
+  static const ipAddress =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('ip_address');
+  static const ja3Digest =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('ja3_digest');
+  static const ja4Digest =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('ja4_digest');
+  static const method =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('method');
+  static const path =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('path');
+  static const protocol =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('protocol');
+  static const query =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('query');
+  static const rateLimitApiId =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('rate_limit_api_id');
+  static const rawPath =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('raw_path');
+  static const region =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('region');
+  static const responseCode =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('response_code');
+  static const route =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('route');
+  static const ruleset =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('ruleset');
+  static const scheme =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('scheme');
+  static const serverAction =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('server_action');
+  static const sharedCondition =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('shared_condition');
+  static const targetPath =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('target_path');
+  static const trafficSource =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('traffic_source');
+  static const trustedSource =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('trusted_source');
+  static const userAgent =
+      GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType
+          ._('user_agent');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetFirewallConfigResponseConditionsItemConditionGroupItemConditionsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsGenAction {
-
   final String value;
 
   const GetFirewallConfigResponseCrsGenAction._(this.value);
 
-  factory GetFirewallConfigResponseCrsGenAction.fromJson(String value) => GetFirewallConfigResponseCrsGenAction._(value);
+  factory GetFirewallConfigResponseCrsGenAction.fromJson(String value) =>
+      GetFirewallConfigResponseCrsGenAction._(value);
 
   static const deny = GetFirewallConfigResponseCrsGenAction._('deny');
   static const log = GetFirewallConfigResponseCrsGenAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsGenAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsGenAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsGenActive {
-
   final bool value;
 
   const GetFirewallConfigResponseCrsGenActive._(this.value);
 
-  factory GetFirewallConfigResponseCrsGenActive.fromJson(bool value) => GetFirewallConfigResponseCrsGenActive._(value);
+  factory GetFirewallConfigResponseCrsGenActive.fromJson(bool value) =>
+      GetFirewallConfigResponseCrsGenActive._(value);
 
   static const false_ = GetFirewallConfigResponseCrsGenActive._(false);
   static const true_ = GetFirewallConfigResponseCrsGenActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsGenActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsGenActive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsJavaAction {
-
   final String value;
 
   const GetFirewallConfigResponseCrsJavaAction._(this.value);
 
-  factory GetFirewallConfigResponseCrsJavaAction.fromJson(String value) => GetFirewallConfigResponseCrsJavaAction._(value);
+  factory GetFirewallConfigResponseCrsJavaAction.fromJson(String value) =>
+      GetFirewallConfigResponseCrsJavaAction._(value);
 
   static const deny = GetFirewallConfigResponseCrsJavaAction._('deny');
   static const log = GetFirewallConfigResponseCrsJavaAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsJavaAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsJavaAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsJavaActive {
-
   final bool value;
 
   const GetFirewallConfigResponseCrsJavaActive._(this.value);
 
-  factory GetFirewallConfigResponseCrsJavaActive.fromJson(bool value) => GetFirewallConfigResponseCrsJavaActive._(value);
+  factory GetFirewallConfigResponseCrsJavaActive.fromJson(bool value) =>
+      GetFirewallConfigResponseCrsJavaActive._(value);
 
   static const false_ = GetFirewallConfigResponseCrsJavaActive._(false);
   static const true_ = GetFirewallConfigResponseCrsJavaActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsJavaActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsJavaActive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsLfiAction {
-
   final String value;
 
   const GetFirewallConfigResponseCrsLfiAction._(this.value);
 
-  factory GetFirewallConfigResponseCrsLfiAction.fromJson(String value) => GetFirewallConfigResponseCrsLfiAction._(value);
+  factory GetFirewallConfigResponseCrsLfiAction.fromJson(String value) =>
+      GetFirewallConfigResponseCrsLfiAction._(value);
 
   static const deny = GetFirewallConfigResponseCrsLfiAction._('deny');
   static const log = GetFirewallConfigResponseCrsLfiAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsLfiAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsLfiAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsLfiActive {
-
   final bool value;
 
   const GetFirewallConfigResponseCrsLfiActive._(this.value);
 
-  factory GetFirewallConfigResponseCrsLfiActive.fromJson(bool value) => GetFirewallConfigResponseCrsLfiActive._(value);
+  factory GetFirewallConfigResponseCrsLfiActive.fromJson(bool value) =>
+      GetFirewallConfigResponseCrsLfiActive._(value);
 
   static const false_ = GetFirewallConfigResponseCrsLfiActive._(false);
   static const true_ = GetFirewallConfigResponseCrsLfiActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsLfiActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsLfiActive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsMaAction {
-
   final String value;
 
   const GetFirewallConfigResponseCrsMaAction._(this.value);
 
-  factory GetFirewallConfigResponseCrsMaAction.fromJson(String value) => GetFirewallConfigResponseCrsMaAction._(value);
+  factory GetFirewallConfigResponseCrsMaAction.fromJson(String value) =>
+      GetFirewallConfigResponseCrsMaAction._(value);
 
   static const deny = GetFirewallConfigResponseCrsMaAction._('deny');
   static const log = GetFirewallConfigResponseCrsMaAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsMaAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsMaAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsMaActive {
-
   final bool value;
 
   const GetFirewallConfigResponseCrsMaActive._(this.value);
 
-  factory GetFirewallConfigResponseCrsMaActive.fromJson(bool value) => GetFirewallConfigResponseCrsMaActive._(value);
+  factory GetFirewallConfigResponseCrsMaActive.fromJson(bool value) =>
+      GetFirewallConfigResponseCrsMaActive._(value);
 
   static const false_ = GetFirewallConfigResponseCrsMaActive._(false);
   static const true_ = GetFirewallConfigResponseCrsMaActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsMaActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsMaActive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsPhpAction {
-
   final String value;
 
   const GetFirewallConfigResponseCrsPhpAction._(this.value);
 
-  factory GetFirewallConfigResponseCrsPhpAction.fromJson(String value) => GetFirewallConfigResponseCrsPhpAction._(value);
+  factory GetFirewallConfigResponseCrsPhpAction.fromJson(String value) =>
+      GetFirewallConfigResponseCrsPhpAction._(value);
 
   static const deny = GetFirewallConfigResponseCrsPhpAction._('deny');
   static const log = GetFirewallConfigResponseCrsPhpAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsPhpAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsPhpAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsPhpActive {
-
   final bool value;
 
   const GetFirewallConfigResponseCrsPhpActive._(this.value);
 
-  factory GetFirewallConfigResponseCrsPhpActive.fromJson(bool value) => GetFirewallConfigResponseCrsPhpActive._(value);
+  factory GetFirewallConfigResponseCrsPhpActive.fromJson(bool value) =>
+      GetFirewallConfigResponseCrsPhpActive._(value);
 
   static const false_ = GetFirewallConfigResponseCrsPhpActive._(false);
   static const true_ = GetFirewallConfigResponseCrsPhpActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsPhpActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsPhpActive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseCrsRceAction {
-
   final String value;
 
   const GetFirewallConfigResponseCrsRceAction._(this.value);
 
-  factory GetFirewallConfigResponseCrsRceAction.fromJson(String value) => GetFirewallConfigResponseCrsRceAction._(value);
+  factory GetFirewallConfigResponseCrsRceAction.fromJson(String value) =>
+      GetFirewallConfigResponseCrsRceAction._(value);
 
   static const deny = GetFirewallConfigResponseCrsRceAction._('deny');
   static const log = GetFirewallConfigResponseCrsRceAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseCrsRceAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseCrsRceAction && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

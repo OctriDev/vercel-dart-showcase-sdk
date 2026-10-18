@@ -7,79 +7,137 @@ part of 'inline.dart';
 class CreateProjectRequestBodyEnvironmentVariablesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Name of the ENV variable
   final String key;
+
   /// Deployment Target or Targets in which the ENV variable will be used
   final dynamic target;
+
   /// If defined, the git branch of the environment variable (must have target=preview)
   final SdkOptional<String> gitBranch;
+
   /// Type of the ENV variable
   final SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType> type_;
+
   /// Value for the ENV variable
   final String value;
 
-  const CreateProjectRequestBodyEnvironmentVariablesItem({required this.key, required this.target, this.gitBranch = const SdkOmitted(), this.type_ = const SdkOmitted(), required this.value});
+  const CreateProjectRequestBodyEnvironmentVariablesItem(
+      {required this.key,
+      required this.target,
+      this.gitBranch = const SdkOmitted(),
+      this.type_ = const SdkOmitted(),
+      required this.value});
 
-  CreateProjectRequestBodyEnvironmentVariablesItem Function({String key, dynamic target, SdkOptional<String> gitBranch, SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType> type_, String value}) get copyWith => _copyWith;
+  CreateProjectRequestBodyEnvironmentVariablesItem Function(
+      {String key,
+      dynamic target,
+      SdkOptional<String> gitBranch,
+      SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType> type_,
+      String value}) get copyWith => _copyWith;
 
-  CreateProjectRequestBodyEnvironmentVariablesItem _copyWith({Object? key = sdkOmittedValue, Object? target = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateProjectRequestBodyEnvironmentVariablesItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    target: identical(target, sdkOmittedValue) ? this.target : target as dynamic,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  CreateProjectRequestBodyEnvironmentVariablesItem _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      CreateProjectRequestBodyEnvironmentVariablesItem(
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as dynamic,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<
+                CreateProjectRequestBodyEnvironmentVariablesItemType>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory CreateProjectRequestBodyEnvironmentVariablesItem.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodyEnvironmentVariablesItem(
-    key: (json['key'] as String?)!,
-    target: (json['target'])!,
-    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? CreateProjectRequestBodyEnvironmentVariablesItemType.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory CreateProjectRequestBodyEnvironmentVariablesItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectRequestBodyEnvironmentVariablesItem(
+        key: (json['key'] as String?)!,
+        target: (json['target'])!,
+        gitBranch: json['gitBranch'] != null
+            ? SdkPresent((json['gitBranch'] as String?)!)
+            : const SdkOmitted(),
+        type_: json['type'] != null
+            ? SdkPresent((json['type'] != null
+                ? CreateProjectRequestBodyEnvironmentVariablesItemType.fromJson(
+                    json['type'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'target': target,
-    ...switch (gitBranch) {
-      SdkPresent<String>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (type_) {
-      SdkPresent<CreateProjectRequestBodyEnvironmentVariablesItemType>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        'key': key,
+        'target': target,
+        ...switch (gitBranch) {
+          SdkPresent<String>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (type_) {
+          SdkPresent<CreateProjectRequestBodyEnvironmentVariablesItemType>(
+            value: final value
+          ) =>
+            {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 /// The Git Repository that will be connected to the project. When this is defined, any pushes to the specified connected Git Repository will be automatically deployed
 class CreateProjectRequestBodyGitRepository {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The name of the git repository. For example: \"vercel/next.js\"
   final String repo;
+
   /// The Git Provider of the repository
   final CreateProjectRequestBodyGitRepositoryType type_;
 
-  const CreateProjectRequestBodyGitRepository({required this.repo, required this.type_});
+  const CreateProjectRequestBodyGitRepository(
+      {required this.repo, required this.type_});
 
-  CreateProjectRequestBodyGitRepository Function({String repo, CreateProjectRequestBodyGitRepositoryType type_}) get copyWith => _copyWith;
+  CreateProjectRequestBodyGitRepository Function(
+          {String repo, CreateProjectRequestBodyGitRepositoryType type_})
+      get copyWith => _copyWith;
 
-  CreateProjectRequestBodyGitRepository _copyWith({Object? repo = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateProjectRequestBodyGitRepository(
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectRequestBodyGitRepositoryType,
-  );
+  CreateProjectRequestBodyGitRepository _copyWith(
+          {Object? repo = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
+      CreateProjectRequestBodyGitRepository(
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateProjectRequestBodyGitRepositoryType,
+      );
 
-  factory CreateProjectRequestBodyGitRepository.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodyGitRepository(
-    repo: (json['repo'] as String?)!,
-    type_: (json['type'] != null ? CreateProjectRequestBodyGitRepositoryType.fromJson(json['type'] as String) : null)!,
-  );
+  factory CreateProjectRequestBodyGitRepository.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectRequestBodyGitRepository(
+        repo: (json['repo'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateProjectRequestBodyGitRepositoryType.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'repo': repo,
-    'type': type_.toJson(),
-  };
+        'repo': repo,
+        'type': type_.toJson(),
+      };
 }
 
 /// The Vercel Auth setting for the project (historically named \"SSO Protection\")
@@ -90,142 +148,270 @@ class CreateProjectRequestBodySsoProtection {
 
   const CreateProjectRequestBodySsoProtection({required this.deploymentType});
 
-  CreateProjectRequestBodySsoProtection Function({CreateProjectRequestBodySsoProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
+  CreateProjectRequestBodySsoProtection Function(
+          {CreateProjectRequestBodySsoProtectionDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  CreateProjectRequestBodySsoProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => CreateProjectRequestBodySsoProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as CreateProjectRequestBodySsoProtectionDeploymentType,
-  );
+  CreateProjectRequestBodySsoProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      CreateProjectRequestBodySsoProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as CreateProjectRequestBodySsoProtectionDeploymentType,
+      );
 
-  factory CreateProjectRequestBodySsoProtection.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodySsoProtection(
-    deploymentType: (json['deploymentType'] != null ? CreateProjectRequestBodySsoProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory CreateProjectRequestBodySsoProtection.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectRequestBodySsoProtection(
+        deploymentType: (json['deploymentType'] != null
+            ? CreateProjectRequestBodySsoProtectionDeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Specifies the default region and failover regions for sandboxes created in the project
 class CreateProjectRequestBodySandbox {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The Vercel region sandboxes in this project are created in by default.
   final SdkOptional<CreateProjectRequestBodySandboxRegion> region;
+
   /// The regions sandboxes in this project fall back to when they cannot be created in `region`.
-  final SdkOptional<List<CreateProjectRequestBodySandboxFailoverRegionsItem>> failoverRegions;
+  final SdkOptional<List<CreateProjectRequestBodySandboxFailoverRegionsItem>>
+      failoverRegions;
 
-  const CreateProjectRequestBodySandbox({this.region = const SdkOmitted(), this.failoverRegions = const SdkOmitted()});
+  const CreateProjectRequestBodySandbox(
+      {this.region = const SdkOmitted(),
+      this.failoverRegions = const SdkOmitted()});
 
-  CreateProjectRequestBodySandbox Function({SdkOptional<CreateProjectRequestBodySandboxRegion> region, SdkOptional<List<CreateProjectRequestBodySandboxFailoverRegionsItem>> failoverRegions}) get copyWith => _copyWith;
+  CreateProjectRequestBodySandbox Function(
+      {SdkOptional<CreateProjectRequestBodySandboxRegion> region,
+      SdkOptional<List<CreateProjectRequestBodySandboxFailoverRegionsItem>>
+          failoverRegions}) get copyWith => _copyWith;
 
-  CreateProjectRequestBodySandbox _copyWith({Object? region = sdkOmittedValue, Object? failoverRegions = sdkOmittedValue}) => CreateProjectRequestBodySandbox(
-    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<CreateProjectRequestBodySandboxRegion>,
-    failoverRegions: identical(failoverRegions, sdkOmittedValue) ? this.failoverRegions : failoverRegions as SdkOptional<List<CreateProjectRequestBodySandboxFailoverRegionsItem>>,
-  );
+  CreateProjectRequestBodySandbox _copyWith(
+          {Object? region = sdkOmittedValue,
+          Object? failoverRegions = sdkOmittedValue}) =>
+      CreateProjectRequestBodySandbox(
+        region: identical(region, sdkOmittedValue)
+            ? this.region
+            : region as SdkOptional<CreateProjectRequestBodySandboxRegion>,
+        failoverRegions: identical(failoverRegions, sdkOmittedValue)
+            ? this.failoverRegions
+            : failoverRegions as SdkOptional<
+                List<CreateProjectRequestBodySandboxFailoverRegionsItem>>,
+      );
 
-  factory CreateProjectRequestBodySandbox.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodySandbox(
-    region: json['region'] != null ? SdkPresent((json['region'] != null ? CreateProjectRequestBodySandboxRegion.fromJson(json['region'] as String) : null)!) : const SdkOmitted(),
-    failoverRegions: json['failoverRegions'] != null ? SdkPresent(((json['failoverRegions'] as List?)?.map((e) => CreateProjectRequestBodySandboxFailoverRegionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-  );
+  factory CreateProjectRequestBodySandbox.fromJson(Map<String, dynamic> json) =>
+      CreateProjectRequestBodySandbox(
+        region: json['region'] != null
+            ? SdkPresent((json['region'] != null
+                ? CreateProjectRequestBodySandboxRegion.fromJson(
+                    json['region'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        failoverRegions: json['failoverRegions'] != null
+            ? SdkPresent(((json['failoverRegions'] as List?)
+                ?.map((e) =>
+                    CreateProjectRequestBodySandboxFailoverRegionsItem.fromJson(
+                        e as String))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (region) {
-      SdkPresent<CreateProjectRequestBodySandboxRegion>(value: final value) => {'region': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (failoverRegions) {
-      SdkPresent<List<CreateProjectRequestBodySandboxFailoverRegionsItem>>(value: final value) => {'failoverRegions': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (region) {
+          SdkPresent<CreateProjectRequestBodySandboxRegion>(
+            value: final value
+          ) =>
+            {
+              'region': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (failoverRegions) {
+          SdkPresent<List<CreateProjectRequestBodySandboxFailoverRegionsItem>>(
+            value: final value
+          ) =>
+            {
+              'failoverRegions': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// OpenID Connect JSON Web Token generation configuration.
 class CreateProjectRequestBodyOidcTokenConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether or not to generate OpenID Connect JSON Web Tokens.
   final SdkOptional<bool> enabled;
+
   /// team: `https://oidc.vercel.com/[team_slug]` global: `https://oidc.vercel.com`
-  final SdkOptional<CreateProjectRequestBodyOidcTokenConfigIssuerMode> issuerMode;
+  final SdkOptional<CreateProjectRequestBodyOidcTokenConfigIssuerMode>
+      issuerMode;
 
-  const CreateProjectRequestBodyOidcTokenConfig({this.enabled = const SdkOmitted(), this.issuerMode = const SdkOmitted()});
+  const CreateProjectRequestBodyOidcTokenConfig(
+      {this.enabled = const SdkOmitted(),
+      this.issuerMode = const SdkOmitted()});
 
-  CreateProjectRequestBodyOidcTokenConfig Function({SdkOptional<bool> enabled, SdkOptional<CreateProjectRequestBodyOidcTokenConfigIssuerMode> issuerMode}) get copyWith => _copyWith;
+  CreateProjectRequestBodyOidcTokenConfig Function(
+      {SdkOptional<bool> enabled,
+      SdkOptional<CreateProjectRequestBodyOidcTokenConfigIssuerMode>
+          issuerMode}) get copyWith => _copyWith;
 
-  CreateProjectRequestBodyOidcTokenConfig _copyWith({Object? enabled = sdkOmittedValue, Object? issuerMode = sdkOmittedValue}) => CreateProjectRequestBodyOidcTokenConfig(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<bool>,
-    issuerMode: identical(issuerMode, sdkOmittedValue) ? this.issuerMode : issuerMode as SdkOptional<CreateProjectRequestBodyOidcTokenConfigIssuerMode>,
-  );
+  CreateProjectRequestBodyOidcTokenConfig _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? issuerMode = sdkOmittedValue}) =>
+      CreateProjectRequestBodyOidcTokenConfig(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<bool>,
+        issuerMode: identical(issuerMode, sdkOmittedValue)
+            ? this.issuerMode
+            : issuerMode as SdkOptional<
+                CreateProjectRequestBodyOidcTokenConfigIssuerMode>,
+      );
 
-  factory CreateProjectRequestBodyOidcTokenConfig.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodyOidcTokenConfig(
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] as bool?)!) : const SdkOmitted(),
-    issuerMode: json['issuerMode'] != null ? SdkPresent((json['issuerMode'] != null ? CreateProjectRequestBodyOidcTokenConfigIssuerMode.fromJson(json['issuerMode'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory CreateProjectRequestBodyOidcTokenConfig.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectRequestBodyOidcTokenConfig(
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] as bool?)!)
+            : const SdkOmitted(),
+        issuerMode: json['issuerMode'] != null
+            ? SdkPresent((json['issuerMode'] != null
+                ? CreateProjectRequestBodyOidcTokenConfigIssuerMode.fromJson(
+                    json['issuerMode'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enabled) {
-      SdkPresent<bool>(value: final value) => {'enabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (issuerMode) {
-      SdkPresent<CreateProjectRequestBodyOidcTokenConfigIssuerMode>(value: final value) => {'issuerMode': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enabled) {
+          SdkPresent<bool>(value: final value) => {
+              'enabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (issuerMode) {
+          SdkPresent<CreateProjectRequestBodyOidcTokenConfigIssuerMode>(
+            value: final value
+          ) =>
+            {
+              'issuerMode': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double at;
-  final CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection direction;
+  final CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
+      direction;
   final String algorithmVersion;
 
-  const CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition({required this.at, required this.direction, required this.algorithmVersion});
+  const CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
+      {required this.at,
+      required this.direction,
+      required this.algorithmVersion});
 
-  CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition Function({double at, CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection direction, String algorithmVersion}) get copyWith => _copyWith;
+  CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition Function(
+      {double at,
+      CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
+          direction,
+      String algorithmVersion}) get copyWith => _copyWith;
 
-  CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition _copyWith({Object? at = sdkOmittedValue, Object? direction = sdkOmittedValue, Object? algorithmVersion = sdkOmittedValue}) => CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
-    at: identical(at, sdkOmittedValue) ? this.at : at as double,
-    direction: identical(direction, sdkOmittedValue) ? this.direction : direction as CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection,
-    algorithmVersion: identical(algorithmVersion, sdkOmittedValue) ? this.algorithmVersion : algorithmVersion as String,
-  );
+  CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition _copyWith(
+          {Object? at = sdkOmittedValue,
+          Object? direction = sdkOmittedValue,
+          Object? algorithmVersion = sdkOmittedValue}) =>
+      CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
+        at: identical(at, sdkOmittedValue) ? this.at : at as double,
+        direction: identical(direction, sdkOmittedValue)
+            ? this.direction
+            : direction
+                as CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection,
+        algorithmVersion: identical(algorithmVersion, sdkOmittedValue)
+            ? this.algorithmVersion
+            : algorithmVersion as String,
+      );
 
-  factory CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
-    at: ((json['at'] as num?)?.toDouble())!,
-    direction: (json['direction'] != null ? CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection.fromJson(json['direction'] as String) : null)!,
-    algorithmVersion: (json['algorithmVersion'] as String?)!,
-  );
+  factory CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
+        at: ((json['at'] as num?)?.toDouble())!,
+        direction: (json['direction'] != null
+            ? CreateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
+                .fromJson(json['direction'] as String)
+            : null)!,
+        algorithmVersion: (json['algorithmVersion'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'at': at,
-    'direction': direction.toJson(),
-    'algorithmVersion': algorithmVersion,
-  };
+        'at': at,
+        'direction': direction.toJson(),
+        'algorithmVersion': algorithmVersion,
+      };
 }
 
 class CreateProjectRequestBodyResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateProjectRequestBodyResourceConfigBuildQueueConfiguration> configuration;
+  final SdkOptional<
+          CreateProjectRequestBodyResourceConfigBuildQueueConfiguration>
+      configuration;
 
-  const CreateProjectRequestBodyResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
+  const CreateProjectRequestBodyResourceConfigBuildQueue(
+      {this.configuration = const SdkOmitted()});
 
-  CreateProjectRequestBodyResourceConfigBuildQueue Function({SdkOptional<CreateProjectRequestBodyResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
+  CreateProjectRequestBodyResourceConfigBuildQueue Function(
+      {SdkOptional<
+              CreateProjectRequestBodyResourceConfigBuildQueueConfiguration>
+          configuration}) get copyWith => _copyWith;
 
-  CreateProjectRequestBodyResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => CreateProjectRequestBodyResourceConfigBuildQueue(
-    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<CreateProjectRequestBodyResourceConfigBuildQueueConfiguration>,
-  );
+  CreateProjectRequestBodyResourceConfigBuildQueue _copyWith(
+          {Object? configuration = sdkOmittedValue}) =>
+      CreateProjectRequestBodyResourceConfigBuildQueue(
+        configuration: identical(configuration, sdkOmittedValue)
+            ? this.configuration
+            : configuration as SdkOptional<
+                CreateProjectRequestBodyResourceConfigBuildQueueConfiguration>,
+      );
 
-  factory CreateProjectRequestBodyResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodyResourceConfigBuildQueue(
-    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? CreateProjectRequestBodyResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory CreateProjectRequestBodyResourceConfigBuildQueue.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectRequestBodyResourceConfigBuildQueue(
+        configuration: json['configuration'] != null
+            ? SdkPresent((json['configuration'] != null
+                ? CreateProjectRequestBodyResourceConfigBuildQueueConfiguration
+                    .fromJson(json['configuration'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (configuration) {
-      SdkPresent<CreateProjectRequestBodyResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (configuration) {
+          SdkPresent<
+                CreateProjectRequestBodyResourceConfigBuildQueueConfiguration>(
+            value: final value
+          ) =>
+            {
+              'configuration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

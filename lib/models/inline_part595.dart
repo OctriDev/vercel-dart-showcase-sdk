@@ -7,77 +7,157 @@ part of 'inline.dart';
 class UpdateVersionResponseVersion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The staging link for previewing redirects in this version.
   final SdkOptional<String> alias;
   final String createdBy;
+
   /// The unique identifier for the version.
   final String id;
+
   /// Whether this version is currently live in production.
   final SdkOptional<UpdateVersionResponseVersionIsLive> isLive;
+
   /// Whether this version has not been promoted to production yet and is not serving end users.
   final SdkOptional<UpdateVersionResponseVersionIsStaging> isStaging;
+
   /// The key of the version. The key may be duplicated across versions if the contents are the same as a different version.
   final String key;
   final double lastModified;
+
   /// Optional name for the version. If not provided, defaults to an ISO timestamp string.
   final SdkOptional<String> name;
+
   /// The number of redirects in this version.
   final SdkOptional<double> redirectCount;
 
-  const UpdateVersionResponseVersion({this.alias = const SdkOmitted(), required this.createdBy, required this.id, this.isLive = const SdkOmitted(), this.isStaging = const SdkOmitted(), required this.key, required this.lastModified, this.name = const SdkOmitted(), this.redirectCount = const SdkOmitted()});
+  const UpdateVersionResponseVersion(
+      {this.alias = const SdkOmitted(),
+      required this.createdBy,
+      required this.id,
+      this.isLive = const SdkOmitted(),
+      this.isStaging = const SdkOmitted(),
+      required this.key,
+      required this.lastModified,
+      this.name = const SdkOmitted(),
+      this.redirectCount = const SdkOmitted()});
 
-  UpdateVersionResponseVersion Function({SdkOptional<String> alias, String createdBy, String id, SdkOptional<UpdateVersionResponseVersionIsLive> isLive, SdkOptional<UpdateVersionResponseVersionIsStaging> isStaging, String key, double lastModified, SdkOptional<String> name, SdkOptional<double> redirectCount}) get copyWith => _copyWith;
+  UpdateVersionResponseVersion Function(
+      {SdkOptional<String> alias,
+      String createdBy,
+      String id,
+      SdkOptional<UpdateVersionResponseVersionIsLive> isLive,
+      SdkOptional<UpdateVersionResponseVersionIsStaging> isStaging,
+      String key,
+      double lastModified,
+      SdkOptional<String> name,
+      SdkOptional<double> redirectCount}) get copyWith => _copyWith;
 
-  UpdateVersionResponseVersion _copyWith({Object? alias = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isLive = sdkOmittedValue, Object? isStaging = sdkOmittedValue, Object? key = sdkOmittedValue, Object? lastModified = sdkOmittedValue, Object? name = sdkOmittedValue, Object? redirectCount = sdkOmittedValue}) => UpdateVersionResponseVersion(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isLive: identical(isLive, sdkOmittedValue) ? this.isLive : isLive as SdkOptional<UpdateVersionResponseVersionIsLive>,
-    isStaging: identical(isStaging, sdkOmittedValue) ? this.isStaging : isStaging as SdkOptional<UpdateVersionResponseVersionIsStaging>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    lastModified: identical(lastModified, sdkOmittedValue) ? this.lastModified : lastModified as double,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    redirectCount: identical(redirectCount, sdkOmittedValue) ? this.redirectCount : redirectCount as SdkOptional<double>,
-  );
+  UpdateVersionResponseVersion _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isLive = sdkOmittedValue,
+          Object? isStaging = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? lastModified = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? redirectCount = sdkOmittedValue}) =>
+      UpdateVersionResponseVersion(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isLive: identical(isLive, sdkOmittedValue)
+            ? this.isLive
+            : isLive as SdkOptional<UpdateVersionResponseVersionIsLive>,
+        isStaging: identical(isStaging, sdkOmittedValue)
+            ? this.isStaging
+            : isStaging as SdkOptional<UpdateVersionResponseVersionIsStaging>,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        lastModified: identical(lastModified, sdkOmittedValue)
+            ? this.lastModified
+            : lastModified as double,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        redirectCount: identical(redirectCount, sdkOmittedValue)
+            ? this.redirectCount
+            : redirectCount as SdkOptional<double>,
+      );
 
-  factory UpdateVersionResponseVersion.fromJson(Map<String, dynamic> json) => UpdateVersionResponseVersion(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    createdBy: (json['createdBy'] as String?)!,
-    id: (json['id'] as String?)!,
-    isLive: json['isLive'] != null ? SdkPresent((json['isLive'] != null ? UpdateVersionResponseVersionIsLive.fromJson(json['isLive'] as bool) : null)!) : const SdkOmitted(),
-    isStaging: json['isStaging'] != null ? SdkPresent((json['isStaging'] != null ? UpdateVersionResponseVersionIsStaging.fromJson(json['isStaging'] as bool) : null)!) : const SdkOmitted(),
-    key: (json['key'] as String?)!,
-    lastModified: ((json['lastModified'] as num?)?.toDouble())!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    redirectCount: json['redirectCount'] != null ? SdkPresent(((json['redirectCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory UpdateVersionResponseVersion.fromJson(Map<String, dynamic> json) =>
+      UpdateVersionResponseVersion(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+        createdBy: (json['createdBy'] as String?)!,
+        id: (json['id'] as String?)!,
+        isLive: json['isLive'] != null
+            ? SdkPresent((json['isLive'] != null
+                ? UpdateVersionResponseVersionIsLive.fromJson(
+                    json['isLive'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        isStaging: json['isStaging'] != null
+            ? SdkPresent((json['isStaging'] != null
+                ? UpdateVersionResponseVersionIsStaging.fromJson(
+                    json['isStaging'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        key: (json['key'] as String?)!,
+        lastModified: ((json['lastModified'] as num?)?.toDouble())!,
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+        redirectCount: json['redirectCount'] != null
+            ? SdkPresent(((json['redirectCount'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdBy': createdBy,
-    'id': id,
-    ...switch (isLive) {
-      SdkPresent<UpdateVersionResponseVersionIsLive>(value: final value) => {'isLive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isStaging) {
-      SdkPresent<UpdateVersionResponseVersionIsStaging>(value: final value) => {'isStaging': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'key': key,
-    'lastModified': lastModified,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectCount) {
-      SdkPresent<double>(value: final value) => {'redirectCount': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdBy': createdBy,
+        'id': id,
+        ...switch (isLive) {
+          SdkPresent<UpdateVersionResponseVersionIsLive>(value: final value) =>
+            {
+              'isLive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isStaging) {
+          SdkPresent<UpdateVersionResponseVersionIsStaging>(
+            value: final value
+          ) =>
+            {
+              'isStaging': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'key': key,
+        'lastModified': lastModified,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectCount) {
+          SdkPresent<double>(value: final value) => {
+              'redirectCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateVersionResponse {
@@ -87,19 +167,27 @@ class UpdateVersionResponse {
 
   const UpdateVersionResponse({required this.version});
 
-  UpdateVersionResponse Function({UpdateVersionResponseVersion version}) get copyWith => _copyWith;
+  UpdateVersionResponse Function({UpdateVersionResponseVersion version})
+      get copyWith => _copyWith;
 
-  UpdateVersionResponse _copyWith({Object? version = sdkOmittedValue}) => UpdateVersionResponse(
-    version: identical(version, sdkOmittedValue) ? this.version : version as UpdateVersionResponseVersion,
-  );
+  UpdateVersionResponse _copyWith({Object? version = sdkOmittedValue}) =>
+      UpdateVersionResponse(
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as UpdateVersionResponseVersion,
+      );
 
-  factory UpdateVersionResponse.fromJson(Map<String, dynamic> json) => UpdateVersionResponse(
-    version: (json['version'] != null ? UpdateVersionResponseVersion.fromJson(json['version'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateVersionResponse.fromJson(Map<String, dynamic> json) =>
+      UpdateVersionResponse(
+        version: (json['version'] != null
+            ? UpdateVersionResponseVersion.fromJson(
+                json['version'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'version': version.toJson(),
-  };
+        'version': version.toJson(),
+      };
 }
 
 class ListProjectChecksResponseChecksItem {
@@ -114,6 +202,7 @@ class ListProjectChecksResponseChecksItem {
   final String ownerId;
   final String projectId;
   final ListProjectChecksResponseChecksItemRequires requires;
+
   /// Typed representation of the `ListProjectChecksResponseChecksItemSource` API schema.
   final ListProjectChecksResponseChecksItemSource source;
   final SdkOptional<String> sourceIntegrationConfigurationId;
@@ -122,69 +211,170 @@ class ListProjectChecksResponseChecksItem {
   final double timeout;
   final double updatedAt;
 
-  const ListProjectChecksResponseChecksItem({required this.blocks, required this.createdAt, this.deletedAt = const SdkOmitted(), required this.id, required this.isRerequestable, required this.name, required this.ownerId, required this.projectId, required this.requires, required this.source, this.sourceIntegrationConfigurationId = const SdkOmitted(), required this.sourceKind, required this.targets, required this.timeout, required this.updatedAt});
+  const ListProjectChecksResponseChecksItem(
+      {required this.blocks,
+      required this.createdAt,
+      this.deletedAt = const SdkOmitted(),
+      required this.id,
+      required this.isRerequestable,
+      required this.name,
+      required this.ownerId,
+      required this.projectId,
+      required this.requires,
+      required this.source,
+      this.sourceIntegrationConfigurationId = const SdkOmitted(),
+      required this.sourceKind,
+      required this.targets,
+      required this.timeout,
+      required this.updatedAt});
 
-  ListProjectChecksResponseChecksItem Function({ListProjectChecksResponseChecksItemBlocks blocks, double createdAt, SdkOptional<double> deletedAt, String id, ListProjectChecksResponseChecksItemIsRerequestable isRerequestable, String name, String ownerId, String projectId, ListProjectChecksResponseChecksItemRequires requires, ListProjectChecksResponseChecksItemSource source, SdkOptional<String> sourceIntegrationConfigurationId, ListProjectChecksResponseChecksItemSourceKind sourceKind, List<String> targets, double timeout, double updatedAt}) get copyWith => _copyWith;
+  ListProjectChecksResponseChecksItem Function(
+      {ListProjectChecksResponseChecksItemBlocks blocks,
+      double createdAt,
+      SdkOptional<double> deletedAt,
+      String id,
+      ListProjectChecksResponseChecksItemIsRerequestable isRerequestable,
+      String name,
+      String ownerId,
+      String projectId,
+      ListProjectChecksResponseChecksItemRequires requires,
+      ListProjectChecksResponseChecksItemSource source,
+      SdkOptional<String> sourceIntegrationConfigurationId,
+      ListProjectChecksResponseChecksItemSourceKind sourceKind,
+      List<String> targets,
+      double timeout,
+      double updatedAt}) get copyWith => _copyWith;
 
-  ListProjectChecksResponseChecksItem _copyWith({Object? blocks = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isRerequestable = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? requires = sdkOmittedValue, Object? source = sdkOmittedValue, Object? sourceIntegrationConfigurationId = sdkOmittedValue, Object? sourceKind = sdkOmittedValue, Object? targets = sdkOmittedValue, Object? timeout = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ListProjectChecksResponseChecksItem(
-    blocks: identical(blocks, sdkOmittedValue) ? this.blocks : blocks as ListProjectChecksResponseChecksItemBlocks,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isRerequestable: identical(isRerequestable, sdkOmittedValue) ? this.isRerequestable : isRerequestable as ListProjectChecksResponseChecksItemIsRerequestable,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    requires: identical(requires, sdkOmittedValue) ? this.requires : requires as ListProjectChecksResponseChecksItemRequires,
-    source: identical(source, sdkOmittedValue) ? this.source : source as ListProjectChecksResponseChecksItemSource,
-    sourceIntegrationConfigurationId: identical(sourceIntegrationConfigurationId, sdkOmittedValue) ? this.sourceIntegrationConfigurationId : sourceIntegrationConfigurationId as SdkOptional<String>,
-    sourceKind: identical(sourceKind, sdkOmittedValue) ? this.sourceKind : sourceKind as ListProjectChecksResponseChecksItemSourceKind,
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
-    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as double,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  ListProjectChecksResponseChecksItem _copyWith(
+          {Object? blocks = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? deletedAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isRerequestable = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? requires = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? sourceIntegrationConfigurationId = sdkOmittedValue,
+          Object? sourceKind = sdkOmittedValue,
+          Object? targets = sdkOmittedValue,
+          Object? timeout = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      ListProjectChecksResponseChecksItem(
+        blocks: identical(blocks, sdkOmittedValue)
+            ? this.blocks
+            : blocks as ListProjectChecksResponseChecksItemBlocks,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        deletedAt: identical(deletedAt, sdkOmittedValue)
+            ? this.deletedAt
+            : deletedAt as SdkOptional<double>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isRerequestable: identical(isRerequestable, sdkOmittedValue)
+            ? this.isRerequestable
+            : isRerequestable
+                as ListProjectChecksResponseChecksItemIsRerequestable,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        requires: identical(requires, sdkOmittedValue)
+            ? this.requires
+            : requires as ListProjectChecksResponseChecksItemRequires,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as ListProjectChecksResponseChecksItemSource,
+        sourceIntegrationConfigurationId:
+            identical(sourceIntegrationConfigurationId, sdkOmittedValue)
+                ? this.sourceIntegrationConfigurationId
+                : sourceIntegrationConfigurationId as SdkOptional<String>,
+        sourceKind: identical(sourceKind, sdkOmittedValue)
+            ? this.sourceKind
+            : sourceKind as ListProjectChecksResponseChecksItemSourceKind,
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as List<String>,
+        timeout: identical(timeout, sdkOmittedValue)
+            ? this.timeout
+            : timeout as double,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory ListProjectChecksResponseChecksItem.fromJson(Map<String, dynamic> json) => ListProjectChecksResponseChecksItem(
-    blocks: (json['blocks'] != null ? ListProjectChecksResponseChecksItemBlocks.fromJson(json['blocks'] as String) : null)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    deletedAt: json['deletedAt'] != null ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    isRerequestable: (json['isRerequestable'] != null ? ListProjectChecksResponseChecksItemIsRerequestable.fromJson(json['isRerequestable'] as bool) : null)!,
-    name: (json['name'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    requires: (json['requires'] != null ? ListProjectChecksResponseChecksItemRequires.fromJson(json['requires'] as String) : null)!,
-    source: (json['source'] != null ? ListProjectChecksResponseChecksItemSource.fromJson(json['source']) : null)!,
-    sourceIntegrationConfigurationId: json['sourceIntegrationConfigurationId'] != null ? SdkPresent((json['sourceIntegrationConfigurationId'] as String?)!) : const SdkOmitted(),
-    sourceKind: (json['sourceKind'] != null ? ListProjectChecksResponseChecksItemSourceKind.fromJson(json['sourceKind'] as String) : null)!,
-    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-    timeout: ((json['timeout'] as num?)?.toDouble())!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory ListProjectChecksResponseChecksItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectChecksResponseChecksItem(
+        blocks: (json['blocks'] != null
+            ? ListProjectChecksResponseChecksItemBlocks.fromJson(
+                json['blocks'] as String)
+            : null)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        deletedAt: json['deletedAt'] != null
+            ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        isRerequestable: (json['isRerequestable'] != null
+            ? ListProjectChecksResponseChecksItemIsRerequestable.fromJson(
+                json['isRerequestable'] as bool)
+            : null)!,
+        name: (json['name'] as String?)!,
+        ownerId: (json['ownerId'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        requires: (json['requires'] != null
+            ? ListProjectChecksResponseChecksItemRequires.fromJson(
+                json['requires'] as String)
+            : null)!,
+        source: (json['source'] != null
+            ? ListProjectChecksResponseChecksItemSource.fromJson(json['source'])
+            : null)!,
+        sourceIntegrationConfigurationId:
+            json['sourceIntegrationConfigurationId'] != null
+                ? SdkPresent(
+                    (json['sourceIntegrationConfigurationId'] as String?)!)
+                : const SdkOmitted(),
+        sourceKind: (json['sourceKind'] != null
+            ? ListProjectChecksResponseChecksItemSourceKind.fromJson(
+                json['sourceKind'] as String)
+            : null)!,
+        targets:
+            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+        timeout: ((json['timeout'] as num?)?.toDouble())!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'blocks': blocks.toJson(),
-    'createdAt': createdAt,
-    ...switch (deletedAt) {
-      SdkPresent<double>(value: final value) => {'deletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'isRerequestable': isRerequestable.toJson(),
-    'name': name,
-    'ownerId': ownerId,
-    'projectId': projectId,
-    'requires': requires.toJson(),
-    'source': source.toJson(),
-    ...switch (sourceIntegrationConfigurationId) {
-      SdkPresent<String>(value: final value) => {'sourceIntegrationConfigurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'sourceKind': sourceKind.toJson(),
-    'targets': targets,
-    'timeout': timeout,
-    'updatedAt': updatedAt,
-  };
+        'blocks': blocks.toJson(),
+        'createdAt': createdAt,
+        ...switch (deletedAt) {
+          SdkPresent<double>(value: final value) => {
+              'deletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'isRerequestable': isRerequestable.toJson(),
+        'name': name,
+        'ownerId': ownerId,
+        'projectId': projectId,
+        'requires': requires.toJson(),
+        'source': source.toJson(),
+        ...switch (sourceIntegrationConfigurationId) {
+          SdkPresent<String>(value: final value) => {
+              'sourceIntegrationConfigurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'sourceKind': sourceKind.toJson(),
+        'targets': targets,
+        'timeout': timeout,
+        'updatedAt': updatedAt,
+      };
 }
 
 class ListProjectChecksResponse {
@@ -193,24 +383,41 @@ class ListProjectChecksResponse {
   final List<String> availableNativeChecks;
   final List<ListProjectChecksResponseChecksItem> checks;
 
-  const ListProjectChecksResponse({required this.availableNativeChecks, required this.checks});
+  const ListProjectChecksResponse(
+      {required this.availableNativeChecks, required this.checks});
 
-  ListProjectChecksResponse Function({List<String> availableNativeChecks, List<ListProjectChecksResponseChecksItem> checks}) get copyWith => _copyWith;
+  ListProjectChecksResponse Function(
+          {List<String> availableNativeChecks,
+          List<ListProjectChecksResponseChecksItem> checks})
+      get copyWith => _copyWith;
 
-  ListProjectChecksResponse _copyWith({Object? availableNativeChecks = sdkOmittedValue, Object? checks = sdkOmittedValue}) => ListProjectChecksResponse(
-    availableNativeChecks: identical(availableNativeChecks, sdkOmittedValue) ? this.availableNativeChecks : availableNativeChecks as List<String>,
-    checks: identical(checks, sdkOmittedValue) ? this.checks : checks as List<ListProjectChecksResponseChecksItem>,
-  );
+  ListProjectChecksResponse _copyWith(
+          {Object? availableNativeChecks = sdkOmittedValue,
+          Object? checks = sdkOmittedValue}) =>
+      ListProjectChecksResponse(
+        availableNativeChecks: identical(availableNativeChecks, sdkOmittedValue)
+            ? this.availableNativeChecks
+            : availableNativeChecks as List<String>,
+        checks: identical(checks, sdkOmittedValue)
+            ? this.checks
+            : checks as List<ListProjectChecksResponseChecksItem>,
+      );
 
-  factory ListProjectChecksResponse.fromJson(Map<String, dynamic> json) => ListProjectChecksResponse(
-    availableNativeChecks: ((json['availableNativeChecks'] as List?)?.map((e) => e as String).toList())!,
-    checks: ((json['checks'] as List?)?.map((e) => ListProjectChecksResponseChecksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListProjectChecksResponse.fromJson(Map<String, dynamic> json) =>
+      ListProjectChecksResponse(
+        availableNativeChecks: ((json['availableNativeChecks'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+        checks: ((json['checks'] as List?)
+            ?.map((e) => ListProjectChecksResponseChecksItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'availableNativeChecks': availableNativeChecks,
-    'checks': checks.map((item) => item.toJson()).toList(),
-  };
+        'availableNativeChecks': availableNativeChecks,
+        'checks': checks.map((item) => item.toJson()).toList(),
+      };
 }
 
 class CreateProjectCheckRequestBody {
@@ -221,56 +428,122 @@ class CreateProjectCheckRequestBody {
   final CreateProjectCheckRequestBodyRequires requires;
   final SdkOptional<List<String>> targets;
   final SdkOptional<CreateProjectCheckRequestBodyBlocks> blocks;
+
   /// Typed representation of the `CreateProjectCheckRequestSource` API schema.
   final SdkOptional<CreateProjectCheckRequestSource> source;
   final SdkOptional<double> timeout;
 
-  const CreateProjectCheckRequestBody({required this.name, this.isRerequestable = const SdkOmitted(), required this.requires, this.targets = const SdkOmitted(), this.blocks = const SdkOmitted(), this.source = const SdkOmitted(), this.timeout = const SdkOmitted()});
+  const CreateProjectCheckRequestBody(
+      {required this.name,
+      this.isRerequestable = const SdkOmitted(),
+      required this.requires,
+      this.targets = const SdkOmitted(),
+      this.blocks = const SdkOmitted(),
+      this.source = const SdkOmitted(),
+      this.timeout = const SdkOmitted()});
 
-  CreateProjectCheckRequestBody Function({String name, SdkOptional<bool> isRerequestable, CreateProjectCheckRequestBodyRequires requires, SdkOptional<List<String>> targets, SdkOptional<CreateProjectCheckRequestBodyBlocks> blocks, SdkOptional<CreateProjectCheckRequestSource> source, SdkOptional<double> timeout}) get copyWith => _copyWith;
+  CreateProjectCheckRequestBody Function(
+      {String name,
+      SdkOptional<bool> isRerequestable,
+      CreateProjectCheckRequestBodyRequires requires,
+      SdkOptional<List<String>> targets,
+      SdkOptional<CreateProjectCheckRequestBodyBlocks> blocks,
+      SdkOptional<CreateProjectCheckRequestSource> source,
+      SdkOptional<double> timeout}) get copyWith => _copyWith;
 
-  CreateProjectCheckRequestBody _copyWith({Object? name = sdkOmittedValue, Object? isRerequestable = sdkOmittedValue, Object? requires = sdkOmittedValue, Object? targets = sdkOmittedValue, Object? blocks = sdkOmittedValue, Object? source = sdkOmittedValue, Object? timeout = sdkOmittedValue}) => CreateProjectCheckRequestBody(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    isRerequestable: identical(isRerequestable, sdkOmittedValue) ? this.isRerequestable : isRerequestable as SdkOptional<bool>,
-    requires: identical(requires, sdkOmittedValue) ? this.requires : requires as CreateProjectCheckRequestBodyRequires,
-    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<List<String>>,
-    blocks: identical(blocks, sdkOmittedValue) ? this.blocks : blocks as SdkOptional<CreateProjectCheckRequestBodyBlocks>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<CreateProjectCheckRequestSource>,
-    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as SdkOptional<double>,
-  );
+  CreateProjectCheckRequestBody _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? isRerequestable = sdkOmittedValue,
+          Object? requires = sdkOmittedValue,
+          Object? targets = sdkOmittedValue,
+          Object? blocks = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? timeout = sdkOmittedValue}) =>
+      CreateProjectCheckRequestBody(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        isRerequestable: identical(isRerequestable, sdkOmittedValue)
+            ? this.isRerequestable
+            : isRerequestable as SdkOptional<bool>,
+        requires: identical(requires, sdkOmittedValue)
+            ? this.requires
+            : requires as CreateProjectCheckRequestBodyRequires,
+        targets: identical(targets, sdkOmittedValue)
+            ? this.targets
+            : targets as SdkOptional<List<String>>,
+        blocks: identical(blocks, sdkOmittedValue)
+            ? this.blocks
+            : blocks as SdkOptional<CreateProjectCheckRequestBodyBlocks>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as SdkOptional<CreateProjectCheckRequestSource>,
+        timeout: identical(timeout, sdkOmittedValue)
+            ? this.timeout
+            : timeout as SdkOptional<double>,
+      );
 
-  factory CreateProjectCheckRequestBody.fromJson(Map<String, dynamic> json) => CreateProjectCheckRequestBody(
-    name: (json['name'] as String?)!,
-    isRerequestable: json['isRerequestable'] != null ? SdkPresent((json['isRerequestable'] as bool?)!) : const SdkOmitted(),
-    requires: (json['requires'] != null ? CreateProjectCheckRequestBodyRequires.fromJson(json['requires'] as String) : null)!,
-    targets: json['targets'] != null ? SdkPresent(((json['targets'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    blocks: json['blocks'] != null ? SdkPresent((json['blocks'] != null ? CreateProjectCheckRequestBodyBlocks.fromJson(json['blocks'] as String) : null)!) : const SdkOmitted(),
-    source: json['source'] != null ? SdkPresent((json['source'] != null ? CreateProjectCheckRequestSource.fromJson(json['source']) : null)!) : const SdkOmitted(),
-    timeout: json['timeout'] != null ? SdkPresent(((json['timeout'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory CreateProjectCheckRequestBody.fromJson(Map<String, dynamic> json) =>
+      CreateProjectCheckRequestBody(
+        name: (json['name'] as String?)!,
+        isRerequestable: json['isRerequestable'] != null
+            ? SdkPresent((json['isRerequestable'] as bool?)!)
+            : const SdkOmitted(),
+        requires: (json['requires'] != null
+            ? CreateProjectCheckRequestBodyRequires.fromJson(
+                json['requires'] as String)
+            : null)!,
+        targets: json['targets'] != null
+            ? SdkPresent(
+                ((json['targets'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        blocks: json['blocks'] != null
+            ? SdkPresent((json['blocks'] != null
+                ? CreateProjectCheckRequestBodyBlocks.fromJson(
+                    json['blocks'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        source: json['source'] != null
+            ? SdkPresent((json['source'] != null
+                ? CreateProjectCheckRequestSource.fromJson(json['source'])
+                : null)!)
+            : const SdkOmitted(),
+        timeout: json['timeout'] != null
+            ? SdkPresent(((json['timeout'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    ...switch (isRerequestable) {
-      SdkPresent<bool>(value: final value) => {'isRerequestable': value,},
-      _ => const <String, dynamic>{},
-    },
-    'requires': requires.toJson(),
-    ...switch (targets) {
-      SdkPresent<List<String>>(value: final value) => {'targets': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (blocks) {
-      SdkPresent<CreateProjectCheckRequestBodyBlocks>(value: final value) => {'blocks': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (source) {
-      SdkPresent<CreateProjectCheckRequestSource>(value: final value) => {'source': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeout) {
-      SdkPresent<double>(value: final value) => {'timeout': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        ...switch (isRerequestable) {
+          SdkPresent<bool>(value: final value) => {
+              'isRerequestable': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'requires': requires.toJson(),
+        ...switch (targets) {
+          SdkPresent<List<String>>(value: final value) => {
+              'targets': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (blocks) {
+          SdkPresent<CreateProjectCheckRequestBodyBlocks>(value: final value) =>
+            {
+              'blocks': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (source) {
+          SdkPresent<CreateProjectCheckRequestSource>(value: final value) => {
+              'source': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeout) {
+          SdkPresent<double>(value: final value) => {
+              'timeout': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

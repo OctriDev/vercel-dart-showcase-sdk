@@ -6,289 +6,377 @@ part of 'inline.dart';
 // Inline operation models (part 217)
 /// Optional enumerated value serialized in the `legacy` wire field.
 final class UserEventPayloadVariant211FactorsVariant0ItemLegacy {
-
   final bool value;
 
   const UserEventPayloadVariant211FactorsVariant0ItemLegacy._(this.value);
 
-  factory UserEventPayloadVariant211FactorsVariant0ItemLegacy.fromJson(bool value) => UserEventPayloadVariant211FactorsVariant0ItemLegacy._(value);
+  factory UserEventPayloadVariant211FactorsVariant0ItemLegacy.fromJson(
+          bool value) =>
+      UserEventPayloadVariant211FactorsVariant0ItemLegacy._(value);
 
-  static const false_ = UserEventPayloadVariant211FactorsVariant0ItemLegacy._(false);
-  static const true_ = UserEventPayloadVariant211FactorsVariant0ItemLegacy._(true);
+  static const false_ =
+      UserEventPayloadVariant211FactorsVariant0ItemLegacy._(false);
+  static const true_ =
+      UserEventPayloadVariant211FactorsVariant0ItemLegacy._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211FactorsVariant0ItemLegacy && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211FactorsVariant0ItemLegacy &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `origin` wire field.
 final class UserEventPayloadVariant211FactorsVariant0ItemOrigin {
-
   final String value;
 
   const UserEventPayloadVariant211FactorsVariant0ItemOrigin._(this.value);
 
-  factory UserEventPayloadVariant211FactorsVariant0ItemOrigin.fromJson(String value) => UserEventPayloadVariant211FactorsVariant0ItemOrigin._(value);
+  factory UserEventPayloadVariant211FactorsVariant0ItemOrigin.fromJson(
+          String value) =>
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._(value);
 
-  static const apple = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('apple');
-  static const bitbucket = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('bitbucket');
-  static const chatgpt = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('chatgpt');
-  static const email = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('email');
-  static const emuRecovery = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('emu-recovery');
-  static const github = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('github');
-  static const gitlab = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('gitlab');
-  static const google = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('google');
-  static const invite = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('invite');
-  static const magicLink = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('magic-link');
-  static const otp = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('otp');
-  static const otpLink = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('otp-link');
-  static const saml = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('saml');
-  static const webauthn = UserEventPayloadVariant211FactorsVariant0ItemOrigin._('webauthn');
+  static const apple =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('apple');
+  static const bitbucket =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('bitbucket');
+  static const chatgpt =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('chatgpt');
+  static const email =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('email');
+  static const emuRecovery =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('emu-recovery');
+  static const github =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('github');
+  static const gitlab =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('gitlab');
+  static const google =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('google');
+  static const invite =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('invite');
+  static const magicLink =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('magic-link');
+  static const otp =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('otp');
+  static const otpLink =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('otp-link');
+  static const saml =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('saml');
+  static const webauthn =
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin._('webauthn');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211FactorsVariant0ItemOrigin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211FactorsVariant0ItemOrigin &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `legacy` wire field.
 final class UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy {
-
   final bool value;
 
-  const UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(this.value);
+  const UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(
+      this.value);
 
-  factory UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy.fromJson(bool value) => UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(value);
+  factory UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy.fromJson(
+          bool value) =>
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(value);
 
-  static const false_ = UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(false);
-  static const true_ = UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(true);
+  static const false_ =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(false);
+  static const true_ =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `origin` wire field.
 final class UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin {
-
   final String value;
 
-  const UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._(this.value);
+  const UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._(
+      this.value);
 
-  factory UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin.fromJson(String value) => UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._(value);
+  factory UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin.fromJson(
+          String value) =>
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._(value);
 
-  static const apple = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('apple');
-  static const bitbucket = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('bitbucket');
-  static const chatgpt = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('chatgpt');
-  static const email = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('email');
-  static const emuRecovery = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('emu-recovery');
-  static const github = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('github');
-  static const gitlab = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('gitlab');
-  static const google = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('google');
-  static const invite = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('invite');
-  static const magicLink = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('magic-link');
-  static const otp = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('otp');
-  static const otpLink = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('otp-link');
-  static const saml = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('saml');
-  static const webauthn = UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('webauthn');
+  static const apple =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('apple');
+  static const bitbucket =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._(
+          'bitbucket');
+  static const chatgpt =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('chatgpt');
+  static const email =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('email');
+  static const emuRecovery =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._(
+          'emu-recovery');
+  static const github =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('github');
+  static const gitlab =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('gitlab');
+  static const google =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('google');
+  static const invite =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('invite');
+  static const magicLink =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._(
+          'magic-link');
+  static const otp =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('otp');
+  static const otpLink =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('otp-link');
+  static const saml =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('saml');
+  static const webauthn =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin._('webauthn');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `origin` wire field.
 final class UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin {
-
   final String value;
 
-  const UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._(this.value);
+  const UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._(
+      this.value);
 
-  factory UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin.fromJson(String value) => UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._(value);
+  factory UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin.fromJson(
+          String value) =>
+      UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._(value);
 
-  static const recoveryCode = UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._('recovery-code');
-  static const totp = UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._('totp');
-  static const webauthn = UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._('webauthn');
+  static const recoveryCode =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._(
+          'recovery-code');
+  static const totp =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._('totp');
+  static const webauthn =
+      UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin._('webauthn');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `viaApple` wire field.
 final class UserEventPayloadVariant211ViaApple {
-
   final bool value;
 
   const UserEventPayloadVariant211ViaApple._(this.value);
 
-  factory UserEventPayloadVariant211ViaApple.fromJson(bool value) => UserEventPayloadVariant211ViaApple._(value);
+  factory UserEventPayloadVariant211ViaApple.fromJson(bool value) =>
+      UserEventPayloadVariant211ViaApple._(value);
 
   static const false_ = UserEventPayloadVariant211ViaApple._(false);
   static const true_ = UserEventPayloadVariant211ViaApple._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211ViaApple && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211ViaApple && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `viaBitbucket` wire field.
 final class UserEventPayloadVariant211ViaBitbucket {
-
   final bool value;
 
   const UserEventPayloadVariant211ViaBitbucket._(this.value);
 
-  factory UserEventPayloadVariant211ViaBitbucket.fromJson(bool value) => UserEventPayloadVariant211ViaBitbucket._(value);
+  factory UserEventPayloadVariant211ViaBitbucket.fromJson(bool value) =>
+      UserEventPayloadVariant211ViaBitbucket._(value);
 
   static const false_ = UserEventPayloadVariant211ViaBitbucket._(false);
   static const true_ = UserEventPayloadVariant211ViaBitbucket._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211ViaBitbucket && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211ViaBitbucket && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `viaGithub` wire field.
 final class UserEventPayloadVariant211ViaGithub {
-
   final bool value;
 
   const UserEventPayloadVariant211ViaGithub._(this.value);
 
-  factory UserEventPayloadVariant211ViaGithub.fromJson(bool value) => UserEventPayloadVariant211ViaGithub._(value);
+  factory UserEventPayloadVariant211ViaGithub.fromJson(bool value) =>
+      UserEventPayloadVariant211ViaGithub._(value);
 
   static const false_ = UserEventPayloadVariant211ViaGithub._(false);
   static const true_ = UserEventPayloadVariant211ViaGithub._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211ViaGithub && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211ViaGithub && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `viaGitlab` wire field.
 final class UserEventPayloadVariant211ViaGitlab {
-
   final bool value;
 
   const UserEventPayloadVariant211ViaGitlab._(this.value);
 
-  factory UserEventPayloadVariant211ViaGitlab.fromJson(bool value) => UserEventPayloadVariant211ViaGitlab._(value);
+  factory UserEventPayloadVariant211ViaGitlab.fromJson(bool value) =>
+      UserEventPayloadVariant211ViaGitlab._(value);
 
   static const false_ = UserEventPayloadVariant211ViaGitlab._(false);
   static const true_ = UserEventPayloadVariant211ViaGitlab._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211ViaGitlab && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211ViaGitlab && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `viaGoogle` wire field.
 final class UserEventPayloadVariant211ViaGoogle {
-
   final bool value;
 
   const UserEventPayloadVariant211ViaGoogle._(this.value);
 
-  factory UserEventPayloadVariant211ViaGoogle.fromJson(bool value) => UserEventPayloadVariant211ViaGoogle._(value);
+  factory UserEventPayloadVariant211ViaGoogle.fromJson(bool value) =>
+      UserEventPayloadVariant211ViaGoogle._(value);
 
   static const false_ = UserEventPayloadVariant211ViaGoogle._(false);
   static const true_ = UserEventPayloadVariant211ViaGoogle._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211ViaGoogle && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211ViaGoogle && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `viaOTP` wire field.
 final class UserEventPayloadVariant211ViaOTP {
-
   final bool value;
 
   const UserEventPayloadVariant211ViaOTP._(this.value);
 
-  factory UserEventPayloadVariant211ViaOTP.fromJson(bool value) => UserEventPayloadVariant211ViaOTP._(value);
+  factory UserEventPayloadVariant211ViaOTP.fromJson(bool value) =>
+      UserEventPayloadVariant211ViaOTP._(value);
 
   static const false_ = UserEventPayloadVariant211ViaOTP._(false);
   static const true_ = UserEventPayloadVariant211ViaOTP._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211ViaOTP && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211ViaOTP && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `viaPasskey` wire field.
 final class UserEventPayloadVariant211ViaPasskey {
-
   final bool value;
 
   const UserEventPayloadVariant211ViaPasskey._(this.value);
 
-  factory UserEventPayloadVariant211ViaPasskey.fromJson(bool value) => UserEventPayloadVariant211ViaPasskey._(value);
+  factory UserEventPayloadVariant211ViaPasskey.fromJson(bool value) =>
+      UserEventPayloadVariant211ViaPasskey._(value);
 
   static const false_ = UserEventPayloadVariant211ViaPasskey._(false);
   static const true_ = UserEventPayloadVariant211ViaPasskey._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant211ViaPasskey && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant211ViaPasskey && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

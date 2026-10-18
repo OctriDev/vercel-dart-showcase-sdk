@@ -9,62 +9,120 @@ class GetAliasResponseMicrofrontendsApplicationsVariant2Item {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> branchAlias;
+
   /// This is the latest non-cancelled deployment of the branch alias at the time the commit alias was created. It is possible there is no deployment for the branch, or this was set before the deployment was canceled, in which case this will point to a cancelled deployment, in either case the proxy will fallback to the fallbackDeploymentId.
   final SdkOptional<String> branchDeploymentId;
+
   /// This is the deployment for the same commit, it could be a cancelled deployment. The proxy will fallback to the branchDeploymentId and then the fallbackDeploymentId.
   final SdkOptional<String> deploymentId;
+
   /// This is the deployment of the fallback host at the time the commit alias was created. It is possible for this to be a deleted deployment, in which case the proxy will show that the deployment is deleted. It will not use the fallbackHost, as a future deployment on the fallback host could be invalid for this deployment, and it could lead to confusion / incorrect behavior for the commit alias.
   final SdkOptional<String> fallbackDeploymentId;
+
   /// Temporary for backwards compatibility. Can remove when metadata change is released
   final SdkOptional<String> fallbackHost;
+
   /// The project ID of the microfrontends application.
   final String projectId;
 
-  const GetAliasResponseMicrofrontendsApplicationsVariant2Item({this.branchAlias = const SdkOmitted(), this.branchDeploymentId = const SdkOmitted(), this.deploymentId = const SdkOmitted(), this.fallbackDeploymentId = const SdkOmitted(), this.fallbackHost = const SdkOmitted(), required this.projectId});
+  const GetAliasResponseMicrofrontendsApplicationsVariant2Item(
+      {this.branchAlias = const SdkOmitted(),
+      this.branchDeploymentId = const SdkOmitted(),
+      this.deploymentId = const SdkOmitted(),
+      this.fallbackDeploymentId = const SdkOmitted(),
+      this.fallbackHost = const SdkOmitted(),
+      required this.projectId});
 
-  GetAliasResponseMicrofrontendsApplicationsVariant2Item Function({SdkOptional<String> branchAlias, SdkOptional<String> branchDeploymentId, SdkOptional<String> deploymentId, SdkOptional<String> fallbackDeploymentId, SdkOptional<String> fallbackHost, String projectId}) get copyWith => _copyWith;
+  GetAliasResponseMicrofrontendsApplicationsVariant2Item Function(
+      {SdkOptional<String> branchAlias,
+      SdkOptional<String> branchDeploymentId,
+      SdkOptional<String> deploymentId,
+      SdkOptional<String> fallbackDeploymentId,
+      SdkOptional<String> fallbackHost,
+      String projectId}) get copyWith => _copyWith;
 
-  GetAliasResponseMicrofrontendsApplicationsVariant2Item _copyWith({Object? branchAlias = sdkOmittedValue, Object? branchDeploymentId = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? fallbackDeploymentId = sdkOmittedValue, Object? fallbackHost = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => GetAliasResponseMicrofrontendsApplicationsVariant2Item(
-    branchAlias: identical(branchAlias, sdkOmittedValue) ? this.branchAlias : branchAlias as SdkOptional<String>,
-    branchDeploymentId: identical(branchDeploymentId, sdkOmittedValue) ? this.branchDeploymentId : branchDeploymentId as SdkOptional<String>,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as SdkOptional<String>,
-    fallbackDeploymentId: identical(fallbackDeploymentId, sdkOmittedValue) ? this.fallbackDeploymentId : fallbackDeploymentId as SdkOptional<String>,
-    fallbackHost: identical(fallbackHost, sdkOmittedValue) ? this.fallbackHost : fallbackHost as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-  );
+  GetAliasResponseMicrofrontendsApplicationsVariant2Item _copyWith(
+          {Object? branchAlias = sdkOmittedValue,
+          Object? branchDeploymentId = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? fallbackDeploymentId = sdkOmittedValue,
+          Object? fallbackHost = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      GetAliasResponseMicrofrontendsApplicationsVariant2Item(
+        branchAlias: identical(branchAlias, sdkOmittedValue)
+            ? this.branchAlias
+            : branchAlias as SdkOptional<String>,
+        branchDeploymentId: identical(branchDeploymentId, sdkOmittedValue)
+            ? this.branchDeploymentId
+            : branchDeploymentId as SdkOptional<String>,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as SdkOptional<String>,
+        fallbackDeploymentId: identical(fallbackDeploymentId, sdkOmittedValue)
+            ? this.fallbackDeploymentId
+            : fallbackDeploymentId as SdkOptional<String>,
+        fallbackHost: identical(fallbackHost, sdkOmittedValue)
+            ? this.fallbackHost
+            : fallbackHost as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+      );
 
-  factory GetAliasResponseMicrofrontendsApplicationsVariant2Item.fromJson(Map<String, dynamic> json) => GetAliasResponseMicrofrontendsApplicationsVariant2Item(
-    branchAlias: json['branchAlias'] != null ? SdkPresent((json['branchAlias'] as String?)!) : const SdkOmitted(),
-    branchDeploymentId: json['branchDeploymentId'] != null ? SdkPresent((json['branchDeploymentId'] as String?)!) : const SdkOmitted(),
-    deploymentId: json['deploymentId'] != null ? SdkPresent((json['deploymentId'] as String?)!) : const SdkOmitted(),
-    fallbackDeploymentId: json['fallbackDeploymentId'] != null ? SdkPresent((json['fallbackDeploymentId'] as String?)!) : const SdkOmitted(),
-    fallbackHost: json['fallbackHost'] != null ? SdkPresent((json['fallbackHost'] as String?)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-  );
+  factory GetAliasResponseMicrofrontendsApplicationsVariant2Item.fromJson(
+          Map<String, dynamic> json) =>
+      GetAliasResponseMicrofrontendsApplicationsVariant2Item(
+        branchAlias: json['branchAlias'] != null
+            ? SdkPresent((json['branchAlias'] as String?)!)
+            : const SdkOmitted(),
+        branchDeploymentId: json['branchDeploymentId'] != null
+            ? SdkPresent((json['branchDeploymentId'] as String?)!)
+            : const SdkOmitted(),
+        deploymentId: json['deploymentId'] != null
+            ? SdkPresent((json['deploymentId'] as String?)!)
+            : const SdkOmitted(),
+        fallbackDeploymentId: json['fallbackDeploymentId'] != null
+            ? SdkPresent((json['fallbackDeploymentId'] as String?)!)
+            : const SdkOmitted(),
+        fallbackHost: json['fallbackHost'] != null
+            ? SdkPresent((json['fallbackHost'] as String?)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (branchAlias) {
-      SdkPresent<String>(value: final value) => {'branchAlias': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (branchDeploymentId) {
-      SdkPresent<String>(value: final value) => {'branchDeploymentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deploymentId) {
-      SdkPresent<String>(value: final value) => {'deploymentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (fallbackDeploymentId) {
-      SdkPresent<String>(value: final value) => {'fallbackDeploymentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (fallbackHost) {
-      SdkPresent<String>(value: final value) => {'fallbackHost': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-  };
+        ...switch (branchAlias) {
+          SdkPresent<String>(value: final value) => {
+              'branchAlias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (branchDeploymentId) {
+          SdkPresent<String>(value: final value) => {
+              'branchDeploymentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deploymentId) {
+          SdkPresent<String>(value: final value) => {
+              'deploymentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (fallbackDeploymentId) {
+          SdkPresent<String>(value: final value) => {
+              'fallbackDeploymentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (fallbackHost) {
+          SdkPresent<String>(value: final value) => {
+              'fallbackHost': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+      };
 }
 
 class GetAliasResponseMicrofrontendsDefaultApp {
@@ -74,19 +132,26 @@ class GetAliasResponseMicrofrontendsDefaultApp {
 
   const GetAliasResponseMicrofrontendsDefaultApp({required this.projectId});
 
-  GetAliasResponseMicrofrontendsDefaultApp Function({String projectId}) get copyWith => _copyWith;
+  GetAliasResponseMicrofrontendsDefaultApp Function({String projectId})
+      get copyWith => _copyWith;
 
-  GetAliasResponseMicrofrontendsDefaultApp _copyWith({Object? projectId = sdkOmittedValue}) => GetAliasResponseMicrofrontendsDefaultApp(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-  );
+  GetAliasResponseMicrofrontendsDefaultApp _copyWith(
+          {Object? projectId = sdkOmittedValue}) =>
+      GetAliasResponseMicrofrontendsDefaultApp(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+      );
 
-  factory GetAliasResponseMicrofrontendsDefaultApp.fromJson(Map<String, dynamic> json) => GetAliasResponseMicrofrontendsDefaultApp(
-    projectId: (json['projectId'] as String?)!,
-  );
+  factory GetAliasResponseMicrofrontendsDefaultApp.fromJson(
+          Map<String, dynamic> json) =>
+      GetAliasResponseMicrofrontendsDefaultApp(
+        projectId: (json['projectId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-  };
+        'projectId': projectId,
+      };
 }
 
 /// The microfrontends for the alias including the routing configuration
@@ -96,24 +161,39 @@ class GetAliasResponseMicrofrontends {
   final dynamic applications;
   final GetAliasResponseMicrofrontendsDefaultApp defaultApp;
 
-  const GetAliasResponseMicrofrontends({required this.applications, required this.defaultApp});
+  const GetAliasResponseMicrofrontends(
+      {required this.applications, required this.defaultApp});
 
-  GetAliasResponseMicrofrontends Function({dynamic applications, GetAliasResponseMicrofrontendsDefaultApp defaultApp}) get copyWith => _copyWith;
+  GetAliasResponseMicrofrontends Function(
+          {dynamic applications,
+          GetAliasResponseMicrofrontendsDefaultApp defaultApp})
+      get copyWith => _copyWith;
 
-  GetAliasResponseMicrofrontends _copyWith({Object? applications = sdkOmittedValue, Object? defaultApp = sdkOmittedValue}) => GetAliasResponseMicrofrontends(
-    applications: identical(applications, sdkOmittedValue) ? this.applications : applications as dynamic,
-    defaultApp: identical(defaultApp, sdkOmittedValue) ? this.defaultApp : defaultApp as GetAliasResponseMicrofrontendsDefaultApp,
-  );
+  GetAliasResponseMicrofrontends _copyWith(
+          {Object? applications = sdkOmittedValue,
+          Object? defaultApp = sdkOmittedValue}) =>
+      GetAliasResponseMicrofrontends(
+        applications: identical(applications, sdkOmittedValue)
+            ? this.applications
+            : applications as dynamic,
+        defaultApp: identical(defaultApp, sdkOmittedValue)
+            ? this.defaultApp
+            : defaultApp as GetAliasResponseMicrofrontendsDefaultApp,
+      );
 
-  factory GetAliasResponseMicrofrontends.fromJson(Map<String, dynamic> json) => GetAliasResponseMicrofrontends(
-    applications: (json['applications'])!,
-    defaultApp: (json['defaultApp'] != null ? GetAliasResponseMicrofrontendsDefaultApp.fromJson(json['defaultApp'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetAliasResponseMicrofrontends.fromJson(Map<String, dynamic> json) =>
+      GetAliasResponseMicrofrontends(
+        applications: (json['applications'])!,
+        defaultApp: (json['defaultApp'] != null
+            ? GetAliasResponseMicrofrontendsDefaultApp.fromJson(
+                json['defaultApp'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'applications': applications,
-    'defaultApp': defaultApp.toJson(),
-  };
+        'applications': applications,
+        'defaultApp': defaultApp.toJson(),
+      };
 }
 
 /// The protection bypass for the alias
@@ -125,33 +205,64 @@ class GetAliasResponseProtectionBypassValueVariant0 {
   final SdkOptional<double> expires;
   final GetAliasResponseProtectionBypassValueVariant0Scope scope;
 
-  const GetAliasResponseProtectionBypassValueVariant0({required this.createdAt, required this.createdBy, this.expires = const SdkOmitted(), required this.scope});
+  const GetAliasResponseProtectionBypassValueVariant0(
+      {required this.createdAt,
+      required this.createdBy,
+      this.expires = const SdkOmitted(),
+      required this.scope});
 
-  GetAliasResponseProtectionBypassValueVariant0 Function({double createdAt, String createdBy, SdkOptional<double> expires, GetAliasResponseProtectionBypassValueVariant0Scope scope}) get copyWith => _copyWith;
+  GetAliasResponseProtectionBypassValueVariant0 Function(
+          {double createdAt,
+          String createdBy,
+          SdkOptional<double> expires,
+          GetAliasResponseProtectionBypassValueVariant0Scope scope})
+      get copyWith => _copyWith;
 
-  GetAliasResponseProtectionBypassValueVariant0 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? expires = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetAliasResponseProtectionBypassValueVariant0(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    expires: identical(expires, sdkOmittedValue) ? this.expires : expires as SdkOptional<double>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetAliasResponseProtectionBypassValueVariant0Scope,
-  );
+  GetAliasResponseProtectionBypassValueVariant0 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? expires = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      GetAliasResponseProtectionBypassValueVariant0(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        expires: identical(expires, sdkOmittedValue)
+            ? this.expires
+            : expires as SdkOptional<double>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as GetAliasResponseProtectionBypassValueVariant0Scope,
+      );
 
-  factory GetAliasResponseProtectionBypassValueVariant0.fromJson(Map<String, dynamic> json) => GetAliasResponseProtectionBypassValueVariant0(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    expires: json['expires'] != null ? SdkPresent(((json['expires'] as num?)?.toDouble())!) : const SdkOmitted(),
-    scope: (json['scope'] != null ? GetAliasResponseProtectionBypassValueVariant0Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory GetAliasResponseProtectionBypassValueVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetAliasResponseProtectionBypassValueVariant0(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        expires: json['expires'] != null
+            ? SdkPresent(((json['expires'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        scope: (json['scope'] != null
+            ? GetAliasResponseProtectionBypassValueVariant0Scope.fromJson(
+                json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    ...switch (expires) {
-      SdkPresent<double>(value: final value) => {'expires': value,},
-      _ => const <String, dynamic>{},
-    },
-    'scope': scope.toJson(),
-  };
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        ...switch (expires) {
+          SdkPresent<double>(value: final value) => {
+              'expires': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'scope': scope.toJson(),
+      };
 }
 
 /// The protection bypass for the alias
@@ -164,33 +275,68 @@ class GetAliasResponseProtectionBypassValueVariant1 {
   final String lastUpdatedBy;
   final GetAliasResponseProtectionBypassValueVariant1Scope scope;
 
-  const GetAliasResponseProtectionBypassValueVariant1({required this.access, required this.createdAt, required this.lastUpdatedAt, required this.lastUpdatedBy, required this.scope});
+  const GetAliasResponseProtectionBypassValueVariant1(
+      {required this.access,
+      required this.createdAt,
+      required this.lastUpdatedAt,
+      required this.lastUpdatedBy,
+      required this.scope});
 
-  GetAliasResponseProtectionBypassValueVariant1 Function({GetAliasResponseProtectionBypassValueVariant1Access access, double createdAt, double lastUpdatedAt, String lastUpdatedBy, GetAliasResponseProtectionBypassValueVariant1Scope scope}) get copyWith => _copyWith;
+  GetAliasResponseProtectionBypassValueVariant1 Function(
+          {GetAliasResponseProtectionBypassValueVariant1Access access,
+          double createdAt,
+          double lastUpdatedAt,
+          String lastUpdatedBy,
+          GetAliasResponseProtectionBypassValueVariant1Scope scope})
+      get copyWith => _copyWith;
 
-  GetAliasResponseProtectionBypassValueVariant1 _copyWith({Object? access = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? lastUpdatedAt = sdkOmittedValue, Object? lastUpdatedBy = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetAliasResponseProtectionBypassValueVariant1(
-    access: identical(access, sdkOmittedValue) ? this.access : access as GetAliasResponseProtectionBypassValueVariant1Access,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue) ? this.lastUpdatedAt : lastUpdatedAt as double,
-    lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue) ? this.lastUpdatedBy : lastUpdatedBy as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetAliasResponseProtectionBypassValueVariant1Scope,
-  );
+  GetAliasResponseProtectionBypassValueVariant1 _copyWith(
+          {Object? access = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? lastUpdatedAt = sdkOmittedValue,
+          Object? lastUpdatedBy = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      GetAliasResponseProtectionBypassValueVariant1(
+        access: identical(access, sdkOmittedValue)
+            ? this.access
+            : access as GetAliasResponseProtectionBypassValueVariant1Access,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue)
+            ? this.lastUpdatedAt
+            : lastUpdatedAt as double,
+        lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue)
+            ? this.lastUpdatedBy
+            : lastUpdatedBy as String,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as GetAliasResponseProtectionBypassValueVariant1Scope,
+      );
 
-  factory GetAliasResponseProtectionBypassValueVariant1.fromJson(Map<String, dynamic> json) => GetAliasResponseProtectionBypassValueVariant1(
-    access: (json['access'] != null ? GetAliasResponseProtectionBypassValueVariant1Access.fromJson(json['access'] as String) : null)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
-    lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
-    scope: (json['scope'] != null ? GetAliasResponseProtectionBypassValueVariant1Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory GetAliasResponseProtectionBypassValueVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetAliasResponseProtectionBypassValueVariant1(
+        access: (json['access'] != null
+            ? GetAliasResponseProtectionBypassValueVariant1Access.fromJson(
+                json['access'] as String)
+            : null)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
+        lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
+        scope: (json['scope'] != null
+            ? GetAliasResponseProtectionBypassValueVariant1Scope.fromJson(
+                json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'access': access.toJson(),
-    'createdAt': createdAt,
-    'lastUpdatedAt': lastUpdatedAt,
-    'lastUpdatedBy': lastUpdatedBy,
-    'scope': scope.toJson(),
-  };
+        'access': access.toJson(),
+        'createdAt': createdAt,
+        'lastUpdatedAt': lastUpdatedAt,
+        'lastUpdatedBy': lastUpdatedBy,
+        'scope': scope.toJson(),
+      };
 }
 
 /// The protection bypass for the alias
@@ -201,27 +347,47 @@ class GetAliasResponseProtectionBypassValueVariant2 {
   final String createdBy;
   final GetAliasResponseProtectionBypassValueVariant2Scope scope;
 
-  const GetAliasResponseProtectionBypassValueVariant2({required this.createdAt, required this.createdBy, required this.scope});
+  const GetAliasResponseProtectionBypassValueVariant2(
+      {required this.createdAt, required this.createdBy, required this.scope});
 
-  GetAliasResponseProtectionBypassValueVariant2 Function({double createdAt, String createdBy, GetAliasResponseProtectionBypassValueVariant2Scope scope}) get copyWith => _copyWith;
+  GetAliasResponseProtectionBypassValueVariant2 Function(
+          {double createdAt,
+          String createdBy,
+          GetAliasResponseProtectionBypassValueVariant2Scope scope})
+      get copyWith => _copyWith;
 
-  GetAliasResponseProtectionBypassValueVariant2 _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetAliasResponseProtectionBypassValueVariant2(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetAliasResponseProtectionBypassValueVariant2Scope,
-  );
+  GetAliasResponseProtectionBypassValueVariant2 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      GetAliasResponseProtectionBypassValueVariant2(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as GetAliasResponseProtectionBypassValueVariant2Scope,
+      );
 
-  factory GetAliasResponseProtectionBypassValueVariant2.fromJson(Map<String, dynamic> json) => GetAliasResponseProtectionBypassValueVariant2(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    scope: (json['scope'] != null ? GetAliasResponseProtectionBypassValueVariant2Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory GetAliasResponseProtectionBypassValueVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      GetAliasResponseProtectionBypassValueVariant2(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        scope: (json['scope'] != null
+            ? GetAliasResponseProtectionBypassValueVariant2Scope.fromJson(
+                json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    'scope': scope.toJson(),
-  };
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        'scope': scope.toJson(),
+      };
 }
 
 /// The protection bypass for the alias
@@ -233,28 +399,55 @@ class GetAliasResponseProtectionBypassValueVariant3 {
   final String lastUpdatedBy;
   final GetAliasResponseProtectionBypassValueVariant3Scope scope;
 
-  const GetAliasResponseProtectionBypassValueVariant3({required this.createdAt, required this.lastUpdatedAt, required this.lastUpdatedBy, required this.scope});
+  const GetAliasResponseProtectionBypassValueVariant3(
+      {required this.createdAt,
+      required this.lastUpdatedAt,
+      required this.lastUpdatedBy,
+      required this.scope});
 
-  GetAliasResponseProtectionBypassValueVariant3 Function({double createdAt, double lastUpdatedAt, String lastUpdatedBy, GetAliasResponseProtectionBypassValueVariant3Scope scope}) get copyWith => _copyWith;
+  GetAliasResponseProtectionBypassValueVariant3 Function(
+          {double createdAt,
+          double lastUpdatedAt,
+          String lastUpdatedBy,
+          GetAliasResponseProtectionBypassValueVariant3Scope scope})
+      get copyWith => _copyWith;
 
-  GetAliasResponseProtectionBypassValueVariant3 _copyWith({Object? createdAt = sdkOmittedValue, Object? lastUpdatedAt = sdkOmittedValue, Object? lastUpdatedBy = sdkOmittedValue, Object? scope = sdkOmittedValue}) => GetAliasResponseProtectionBypassValueVariant3(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue) ? this.lastUpdatedAt : lastUpdatedAt as double,
-    lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue) ? this.lastUpdatedBy : lastUpdatedBy as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as GetAliasResponseProtectionBypassValueVariant3Scope,
-  );
+  GetAliasResponseProtectionBypassValueVariant3 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? lastUpdatedAt = sdkOmittedValue,
+          Object? lastUpdatedBy = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      GetAliasResponseProtectionBypassValueVariant3(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        lastUpdatedAt: identical(lastUpdatedAt, sdkOmittedValue)
+            ? this.lastUpdatedAt
+            : lastUpdatedAt as double,
+        lastUpdatedBy: identical(lastUpdatedBy, sdkOmittedValue)
+            ? this.lastUpdatedBy
+            : lastUpdatedBy as String,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as GetAliasResponseProtectionBypassValueVariant3Scope,
+      );
 
-  factory GetAliasResponseProtectionBypassValueVariant3.fromJson(Map<String, dynamic> json) => GetAliasResponseProtectionBypassValueVariant3(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
-    lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
-    scope: (json['scope'] != null ? GetAliasResponseProtectionBypassValueVariant3Scope.fromJson(json['scope'] as String) : null)!,
-  );
+  factory GetAliasResponseProtectionBypassValueVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      GetAliasResponseProtectionBypassValueVariant3(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        lastUpdatedAt: ((json['lastUpdatedAt'] as num?)?.toDouble())!,
+        lastUpdatedBy: (json['lastUpdatedBy'] as String?)!,
+        scope: (json['scope'] != null
+            ? GetAliasResponseProtectionBypassValueVariant3Scope.fromJson(
+                json['scope'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'lastUpdatedAt': lastUpdatedAt,
-    'lastUpdatedBy': lastUpdatedBy,
-    'scope': scope.toJson(),
-  };
+        'createdAt': createdAt,
+        'lastUpdatedAt': lastUpdatedAt,
+        'lastUpdatedBy': lastUpdatedBy,
+        'scope': scope.toJson(),
+      };
 }

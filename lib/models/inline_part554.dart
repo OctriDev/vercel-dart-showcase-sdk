@@ -6,142 +6,177 @@ part of 'inline.dart';
 // Inline operation models (part 554)
 /// What to do when the gate trips: pause the rollout, or roll it back.
 final class GetProjectsResponseRollingReleaseGateAction {
-
   final String value;
 
   const GetProjectsResponseRollingReleaseGateAction._(this.value);
 
-  factory GetProjectsResponseRollingReleaseGateAction.fromJson(String value) => GetProjectsResponseRollingReleaseGateAction._(value);
+  factory GetProjectsResponseRollingReleaseGateAction.fromJson(String value) =>
+      GetProjectsResponseRollingReleaseGateAction._(value);
 
   static const pause = GetProjectsResponseRollingReleaseGateAction._('pause');
-  static const rollback = GetProjectsResponseRollingReleaseGateAction._('rollback');
+  static const rollback =
+      GetProjectsResponseRollingReleaseGateAction._('rollback');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseRollingReleaseGateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseRollingReleaseGateAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The metric this check evaluates.
 final class GetProjectsResponseRollingReleaseGateChecksItemType {
-
   final String value;
 
   const GetProjectsResponseRollingReleaseGateChecksItemType._(this.value);
 
-  factory GetProjectsResponseRollingReleaseGateChecksItemType.fromJson(String value) => GetProjectsResponseRollingReleaseGateChecksItemType._(value);
+  factory GetProjectsResponseRollingReleaseGateChecksItemType.fromJson(
+          String value) =>
+      GetProjectsResponseRollingReleaseGateChecksItemType._(value);
 
-  static const errorRate5xx = GetProjectsResponseRollingReleaseGateChecksItemType._('error-rate-5xx');
+  static const errorRate5xx =
+      GetProjectsResponseRollingReleaseGateChecksItemType._('error-rate-5xx');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseRollingReleaseGateChecksItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseRollingReleaseGateChecksItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// When true, a tripped gate is only reported — {@link action} is not taken.
 final class GetProjectsResponseRollingReleaseGateDryRun {
-
   final bool value;
 
   const GetProjectsResponseRollingReleaseGateDryRun._(this.value);
 
-  factory GetProjectsResponseRollingReleaseGateDryRun.fromJson(bool value) => GetProjectsResponseRollingReleaseGateDryRun._(value);
+  factory GetProjectsResponseRollingReleaseGateDryRun.fromJson(bool value) =>
+      GetProjectsResponseRollingReleaseGateDryRun._(value);
 
   static const false_ = GetProjectsResponseRollingReleaseGateDryRun._(false);
   static const true_ = GetProjectsResponseRollingReleaseGateDryRun._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseRollingReleaseGateDryRun && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseRollingReleaseGateDryRun &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether automated gating is enabled for this project's rollouts.
 final class GetProjectsResponseRollingReleaseGateEnabled {
-
   final bool value;
 
   const GetProjectsResponseRollingReleaseGateEnabled._(this.value);
 
-  factory GetProjectsResponseRollingReleaseGateEnabled.fromJson(bool value) => GetProjectsResponseRollingReleaseGateEnabled._(value);
+  factory GetProjectsResponseRollingReleaseGateEnabled.fromJson(bool value) =>
+      GetProjectsResponseRollingReleaseGateEnabled._(value);
 
   static const false_ = GetProjectsResponseRollingReleaseGateEnabled._(false);
   static const true_ = GetProjectsResponseRollingReleaseGateEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseRollingReleaseGateEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseRollingReleaseGateEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to linearly shift traffic over the duration of this stage
 final class GetProjectsResponseRollingReleaseStagesItemLinearShift {
-
   final bool value;
 
   const GetProjectsResponseRollingReleaseStagesItemLinearShift._(this.value);
 
-  factory GetProjectsResponseRollingReleaseStagesItemLinearShift.fromJson(bool value) => GetProjectsResponseRollingReleaseStagesItemLinearShift._(value);
+  factory GetProjectsResponseRollingReleaseStagesItemLinearShift.fromJson(
+          bool value) =>
+      GetProjectsResponseRollingReleaseStagesItemLinearShift._(value);
 
-  static const false_ = GetProjectsResponseRollingReleaseStagesItemLinearShift._(false);
-  static const true_ = GetProjectsResponseRollingReleaseStagesItemLinearShift._(true);
+  static const false_ =
+      GetProjectsResponseRollingReleaseStagesItemLinearShift._(false);
+  static const true_ =
+      GetProjectsResponseRollingReleaseStagesItemLinearShift._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseRollingReleaseStagesItemLinearShift && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseRollingReleaseStagesItemLinearShift &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage requires manual approval to proceed
 final class GetProjectsResponseRollingReleaseStagesItemRequireApproval {
-
   final bool value;
 
-  const GetProjectsResponseRollingReleaseStagesItemRequireApproval._(this.value);
+  const GetProjectsResponseRollingReleaseStagesItemRequireApproval._(
+      this.value);
 
-  factory GetProjectsResponseRollingReleaseStagesItemRequireApproval.fromJson(bool value) => GetProjectsResponseRollingReleaseStagesItemRequireApproval._(value);
+  factory GetProjectsResponseRollingReleaseStagesItemRequireApproval.fromJson(
+          bool value) =>
+      GetProjectsResponseRollingReleaseStagesItemRequireApproval._(value);
 
-  static const false_ = GetProjectsResponseRollingReleaseStagesItemRequireApproval._(false);
-  static const true_ = GetProjectsResponseRollingReleaseStagesItemRequireApproval._(true);
+  static const false_ =
+      GetProjectsResponseRollingReleaseStagesItemRequireApproval._(false);
+  static const true_ =
+      GetProjectsResponseRollingReleaseStagesItemRequireApproval._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseRollingReleaseStagesItemRequireApproval && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseRollingReleaseStagesItemRequireApproval &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSandboxFailoverRegionsItem {
-
   final String value;
 
   const GetProjectsResponseSandboxFailoverRegionsItem._(this.value);
 
-  factory GetProjectsResponseSandboxFailoverRegionsItem.fromJson(String value) => GetProjectsResponseSandboxFailoverRegionsItem._(value);
+  factory GetProjectsResponseSandboxFailoverRegionsItem.fromJson(
+          String value) =>
+      GetProjectsResponseSandboxFailoverRegionsItem._(value);
 
   static const arn1 = GetProjectsResponseSandboxFailoverRegionsItem._('arn1');
   static const bom1 = GetProjectsResponseSandboxFailoverRegionsItem._('bom1');
@@ -165,21 +200,25 @@ final class GetProjectsResponseSandboxFailoverRegionsItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSandboxFailoverRegionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSandboxFailoverRegionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSandboxRegion {
-
   final String value;
 
   const GetProjectsResponseSandboxRegion._(this.value);
 
-  factory GetProjectsResponseSandboxRegion.fromJson(String value) => GetProjectsResponseSandboxRegion._(value);
+  factory GetProjectsResponseSandboxRegion.fromJson(String value) =>
+      GetProjectsResponseSandboxRegion._(value);
 
   static const arn1 = GetProjectsResponseSandboxRegion._('arn1');
   static const bom1 = GetProjectsResponseSandboxRegion._('bom1');
@@ -203,73 +242,87 @@ final class GetProjectsResponseSandboxRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSandboxRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSandboxRegion && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSecurityAttackModeEnabled {
-
   final bool value;
 
   const GetProjectsResponseSecurityAttackModeEnabled._(this.value);
 
-  factory GetProjectsResponseSecurityAttackModeEnabled.fromJson(bool value) => GetProjectsResponseSecurityAttackModeEnabled._(value);
+  factory GetProjectsResponseSecurityAttackModeEnabled.fromJson(bool value) =>
+      GetProjectsResponseSecurityAttackModeEnabled._(value);
 
   static const false_ = GetProjectsResponseSecurityAttackModeEnabled._(false);
   static const true_ = GetProjectsResponseSecurityAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityAttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSecurityAttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSecurityBotIdEnabled {
-
   final bool value;
 
   const GetProjectsResponseSecurityBotIdEnabled._(this.value);
 
-  factory GetProjectsResponseSecurityBotIdEnabled.fromJson(bool value) => GetProjectsResponseSecurityBotIdEnabled._(value);
+  factory GetProjectsResponseSecurityBotIdEnabled.fromJson(bool value) =>
+      GetProjectsResponseSecurityBotIdEnabled._(value);
 
   static const false_ = GetProjectsResponseSecurityBotIdEnabled._(false);
   static const true_ = GetProjectsResponseSecurityBotIdEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityBotIdEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSecurityBotIdEnabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSecurityFirewallEnabled {
-
   final bool value;
 
   const GetProjectsResponseSecurityFirewallEnabled._(this.value);
 
-  factory GetProjectsResponseSecurityFirewallEnabled.fromJson(bool value) => GetProjectsResponseSecurityFirewallEnabled._(value);
+  factory GetProjectsResponseSecurityFirewallEnabled.fromJson(bool value) =>
+      GetProjectsResponseSecurityFirewallEnabled._(value);
 
   static const false_ = GetProjectsResponseSecurityFirewallEnabled._(false);
   static const true_ = GetProjectsResponseSecurityFirewallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityFirewallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSecurityFirewallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

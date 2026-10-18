@@ -13,26 +13,28 @@ import '../types.dart';
 /// [idOrName] Project ID or project name (URL-encoded)
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetRollingReleaseBillingStatusResponse>
-    getRollingReleaseBillingStatus(ClientConfig config,
-        {required String idOrName,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<GetRollingReleaseBillingStatusResponse> getRollingReleaseBillingStatus(
+    ClientConfig config,
+    {required String idOrName,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetRollingReleaseBillingStatusResponse>('GET',
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release/billing',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRollingReleaseBillingStatus',
-          fromJsonRaw: (value) => GetRollingReleaseBillingStatusResponse.fromJson(value),
+          fromJsonRaw: (value) =>
+              GetRollingReleaseBillingStatusResponse.fromJson(value),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves the project-level rolling release configuration template. Use this configuration to inspect the settings that will apply to future rolling releases; it does not describe an active rolling release.
 ///
@@ -41,26 +43,28 @@ Future<GetRollingReleaseBillingStatusResponse>
 /// [idOrName] Project ID or project name (URL-encoded)
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetRollingReleaseConfigResponse>
-    getRollingReleaseConfig(ClientConfig config,
-        {required String idOrName,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<GetRollingReleaseConfigResponse> getRollingReleaseConfig(
+    ClientConfig config,
+    {required String idOrName,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetRollingReleaseConfigResponse>('GET',
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release/config',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRollingReleaseConfig',
-          fromJsonRaw: (value) => GetRollingReleaseConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetRollingReleaseConfigResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a project's rolling release configuration and disables rolling releases for future deployments. Disabling the configuration does not change a rollout that is already in progress. To stop an active rollout as well, use the completion or abort operation after disabling rolling releases.
 ///
@@ -69,26 +73,28 @@ Future<GetRollingReleaseConfigResponse>
 /// [idOrName] Project ID or project name (URL-encoded)
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<DeleteRollingReleaseConfigResponse>
-    deleteRollingReleaseConfig(ClientConfig config,
-        {required String idOrName,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<DeleteRollingReleaseConfigResponse> deleteRollingReleaseConfig(
+    ClientConfig config,
+    {required String idOrName,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<DeleteRollingReleaseConfigResponse>('DELETE',
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release/config',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteRollingReleaseConfig',
-          fromJsonRaw: (value) => DeleteRollingReleaseConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteRollingReleaseConfigResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates a project's rolling release configuration, including enabling or disabling rolling releases. When disabling, `disableRolloutAction` controls how an active rollout is resolved if the resolve-on-disable feature is enabled; enabling or updating configuration affects the next production deployment, not an in-flight rollout. Enabling rolling releases also enables skew protection with its default value if it was not already configured.
 ///
@@ -97,26 +103,28 @@ Future<DeleteRollingReleaseConfigResponse>
 /// [idOrName] Project ID or project name (URL-encoded)
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<UpdateRollingReleaseConfigResponse>
-    updateRollingReleaseConfig(ClientConfig config,
-        {required String idOrName,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<UpdateRollingReleaseConfigResponse> updateRollingReleaseConfig(
+    ClientConfig config,
+    {required String idOrName,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateRollingReleaseConfigResponse>('PATCH',
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release/config',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateRollingReleaseConfig',
-          fromJsonRaw: (value) => UpdateRollingReleaseConfigResponse.fromJson(value),
+          fromJsonRaw: (value) =>
+              UpdateRollingReleaseConfigResponse.fromJson(value),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves rolling release information for a project, whether its rollout is active, aborted, or complete. Use `state` to filter the result to ACTIVE, COMPLETE, or ABORTED. If rolling releases are enabled but no deployment has occurred, the response contains a null rolling release value.
 ///
@@ -136,17 +144,20 @@ Future<GetRollingReleaseResponse> getRollingRelease(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release',
           config: config,
           query: {
-            'state': SdkQueryValue(SdkUtils.unwrapOptional(state), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'state': SdkQueryValue(SdkUtils.unwrapOptional(state),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRollingRelease',
-          fromJsonRaw: (value) => GetRollingReleaseResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetRollingReleaseResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Advances a project's active rolling release to a specified stage. Use this operation when the rolling release requires manual approval, and identify the canary deployment and target stage in the request body. The response includes the updated rolling release information.
 ///
@@ -158,20 +169,22 @@ Future<GetRollingReleaseResponse> getRollingRelease(ClientConfig config,
 ///   stage
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ApproveRollingReleaseStageResponse>
-    approveRollingReleaseStage(ClientConfig config,
-        {required String idOrName,
-        required double nextStageIndex,
-        required String canaryDeploymentId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<ApproveRollingReleaseStageResponse> approveRollingReleaseStage(
+    ClientConfig config,
+    {required String idOrName,
+    required double nextStageIndex,
+    required String canaryDeploymentId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<ApproveRollingReleaseStageResponse>('POST',
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release/approve-stage',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'nextStageIndex': nextStageIndex,
@@ -179,11 +192,11 @@ Future<ApproveRollingReleaseStageResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'approveRollingReleaseStage',
-          fromJsonRaw: (value) => ApproveRollingReleaseStageResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ApproveRollingReleaseStageResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Starts a rolling release for a project's canary deployment. Supply `canaryDeploymentId` to identify the deployment to roll out; if that deployment already has an active rolling release, the endpoint returns its current state without side effects. The response includes the rolling release information.
 ///
@@ -204,17 +217,19 @@ Future<StartRollingReleaseResponse> startRollingRelease(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release/start',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'canaryDeploymentId': canaryDeploymentId},
           decoder: SdkResponseDecoder.json,
           operationId: 'startRollingRelease',
-          fromJsonRaw: (value) => StartRollingReleaseResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => StartRollingReleaseResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Completes a project's rolling release and sends 100% of traffic to the canary deployment. Supply `canaryDeploymentId` to identify the deployment to promote. The response includes the updated rolling release information.
 ///
@@ -224,24 +239,27 @@ Future<StartRollingReleaseResponse> startRollingRelease(ClientConfig config,
 /// [canaryDeploymentId] The ID of the canary deployment to complete
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<CompleteRollingReleaseResponse>
-    completeRollingRelease(ClientConfig config,
-        {required String idOrName,
-        required String canaryDeploymentId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CompleteRollingReleaseResponse> completeRollingRelease(
+    ClientConfig config,
+    {required String idOrName,
+    required String canaryDeploymentId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<CompleteRollingReleaseResponse>('POST',
           '/v1/projects/${Uri.encodeComponent(idOrName.toString())}/rolling-release/complete',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'canaryDeploymentId': canaryDeploymentId},
           decoder: SdkResponseDecoder.json,
           operationId: 'completeRollingRelease',
-          fromJsonRaw: (value) => CompleteRollingReleaseResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CompleteRollingReleaseResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

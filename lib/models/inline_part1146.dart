@@ -11,19 +11,29 @@ class ListVercelCiBranchesResponse {
 
   const ListVercelCiBranchesResponse({required this.branches});
 
-  ListVercelCiBranchesResponse Function({List<ListVercelCiBranchesResponseBranchesItem> branches}) get copyWith => _copyWith;
+  ListVercelCiBranchesResponse Function(
+          {List<ListVercelCiBranchesResponseBranchesItem> branches})
+      get copyWith => _copyWith;
 
-  ListVercelCiBranchesResponse _copyWith({Object? branches = sdkOmittedValue}) => ListVercelCiBranchesResponse(
-    branches: identical(branches, sdkOmittedValue) ? this.branches : branches as List<ListVercelCiBranchesResponseBranchesItem>,
-  );
+  ListVercelCiBranchesResponse _copyWith(
+          {Object? branches = sdkOmittedValue}) =>
+      ListVercelCiBranchesResponse(
+        branches: identical(branches, sdkOmittedValue)
+            ? this.branches
+            : branches as List<ListVercelCiBranchesResponseBranchesItem>,
+      );
 
-  factory ListVercelCiBranchesResponse.fromJson(Map<String, dynamic> json) => ListVercelCiBranchesResponse(
-    branches: ((json['branches'] as List?)?.map((e) => ListVercelCiBranchesResponseBranchesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListVercelCiBranchesResponse.fromJson(Map<String, dynamic> json) =>
+      ListVercelCiBranchesResponse(
+        branches: ((json['branches'] as List?)
+            ?.map((e) => ListVercelCiBranchesResponseBranchesItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'branches': branches.map((item) => item.toJson()).toList(),
-  };
+        'branches': branches.map((item) => item.toJson()).toList(),
+      };
 }
 
 class CreateVercelCiTaskAnalysisRequestBody {
@@ -32,24 +42,30 @@ class CreateVercelCiTaskAnalysisRequestBody {
   final String owner;
   final String repo;
 
-  const CreateVercelCiTaskAnalysisRequestBody({required this.owner, required this.repo});
+  const CreateVercelCiTaskAnalysisRequestBody(
+      {required this.owner, required this.repo});
 
-  CreateVercelCiTaskAnalysisRequestBody Function({String owner, String repo}) get copyWith => _copyWith;
+  CreateVercelCiTaskAnalysisRequestBody Function({String owner, String repo})
+      get copyWith => _copyWith;
 
-  CreateVercelCiTaskAnalysisRequestBody _copyWith({Object? owner = sdkOmittedValue, Object? repo = sdkOmittedValue}) => CreateVercelCiTaskAnalysisRequestBody(
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-  );
+  CreateVercelCiTaskAnalysisRequestBody _copyWith(
+          {Object? owner = sdkOmittedValue, Object? repo = sdkOmittedValue}) =>
+      CreateVercelCiTaskAnalysisRequestBody(
+        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+      );
 
-  factory CreateVercelCiTaskAnalysisRequestBody.fromJson(Map<String, dynamic> json) => CreateVercelCiTaskAnalysisRequestBody(
-    owner: (json['owner'] as String?)!,
-    repo: (json['repo'] as String?)!,
-  );
+  factory CreateVercelCiTaskAnalysisRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      CreateVercelCiTaskAnalysisRequestBody(
+        owner: (json['owner'] as String?)!,
+        repo: (json['repo'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'owner': owner,
-    'repo': repo,
-  };
+        'owner': owner,
+        'repo': repo,
+      };
 }
 
 class CreateVercelCiTaskAnalysisResponse {
@@ -58,24 +74,40 @@ class CreateVercelCiTaskAnalysisResponse {
   final String analysisId;
   final CreateVercelCiTaskAnalysisResponseStatusVariant0 status;
 
-  const CreateVercelCiTaskAnalysisResponse({required this.analysisId, required this.status});
+  const CreateVercelCiTaskAnalysisResponse(
+      {required this.analysisId, required this.status});
 
-  CreateVercelCiTaskAnalysisResponse Function({String analysisId, CreateVercelCiTaskAnalysisResponseStatusVariant0 status}) get copyWith => _copyWith;
+  CreateVercelCiTaskAnalysisResponse Function(
+          {String analysisId,
+          CreateVercelCiTaskAnalysisResponseStatusVariant0 status})
+      get copyWith => _copyWith;
 
-  CreateVercelCiTaskAnalysisResponse _copyWith({Object? analysisId = sdkOmittedValue, Object? status = sdkOmittedValue}) => CreateVercelCiTaskAnalysisResponse(
-    analysisId: identical(analysisId, sdkOmittedValue) ? this.analysisId : analysisId as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as CreateVercelCiTaskAnalysisResponseStatusVariant0,
-  );
+  CreateVercelCiTaskAnalysisResponse _copyWith(
+          {Object? analysisId = sdkOmittedValue,
+          Object? status = sdkOmittedValue}) =>
+      CreateVercelCiTaskAnalysisResponse(
+        analysisId: identical(analysisId, sdkOmittedValue)
+            ? this.analysisId
+            : analysisId as String,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as CreateVercelCiTaskAnalysisResponseStatusVariant0,
+      );
 
-  factory CreateVercelCiTaskAnalysisResponse.fromJson(Map<String, dynamic> json) => CreateVercelCiTaskAnalysisResponse(
-    analysisId: (json['analysisId'] as String?)!,
-    status: (json['status'] != null ? CreateVercelCiTaskAnalysisResponseStatusVariant0.fromJson(json['status'] as String) : null)!,
-  );
+  factory CreateVercelCiTaskAnalysisResponse.fromJson(
+          Map<String, dynamic> json) =>
+      CreateVercelCiTaskAnalysisResponse(
+        analysisId: (json['analysisId'] as String?)!,
+        status: (json['status'] != null
+            ? CreateVercelCiTaskAnalysisResponseStatusVariant0.fromJson(
+                json['status'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'analysisId': analysisId,
-    'status': status.toJson(),
-  };
+        'analysisId': analysisId,
+        'status': status.toJson(),
+      };
 }
 
 class GetVercelCiTaskAnalysisResponse {
@@ -85,30 +117,54 @@ class GetVercelCiTaskAnalysisResponse {
   final GetVercelCiTaskAnalysisResponseStatusVariant0 status;
   final SdkOptional<String> failureReason;
 
-  const GetVercelCiTaskAnalysisResponse({required this.analysisId, required this.status, this.failureReason = const SdkOmitted()});
+  const GetVercelCiTaskAnalysisResponse(
+      {required this.analysisId,
+      required this.status,
+      this.failureReason = const SdkOmitted()});
 
-  GetVercelCiTaskAnalysisResponse Function({String analysisId, GetVercelCiTaskAnalysisResponseStatusVariant0 status, SdkOptional<String> failureReason}) get copyWith => _copyWith;
+  GetVercelCiTaskAnalysisResponse Function(
+      {String analysisId,
+      GetVercelCiTaskAnalysisResponseStatusVariant0 status,
+      SdkOptional<String> failureReason}) get copyWith => _copyWith;
 
-  GetVercelCiTaskAnalysisResponse _copyWith({Object? analysisId = sdkOmittedValue, Object? status = sdkOmittedValue, Object? failureReason = sdkOmittedValue}) => GetVercelCiTaskAnalysisResponse(
-    analysisId: identical(analysisId, sdkOmittedValue) ? this.analysisId : analysisId as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as GetVercelCiTaskAnalysisResponseStatusVariant0,
-    failureReason: identical(failureReason, sdkOmittedValue) ? this.failureReason : failureReason as SdkOptional<String>,
-  );
+  GetVercelCiTaskAnalysisResponse _copyWith(
+          {Object? analysisId = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? failureReason = sdkOmittedValue}) =>
+      GetVercelCiTaskAnalysisResponse(
+        analysisId: identical(analysisId, sdkOmittedValue)
+            ? this.analysisId
+            : analysisId as String,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as GetVercelCiTaskAnalysisResponseStatusVariant0,
+        failureReason: identical(failureReason, sdkOmittedValue)
+            ? this.failureReason
+            : failureReason as SdkOptional<String>,
+      );
 
-  factory GetVercelCiTaskAnalysisResponse.fromJson(Map<String, dynamic> json) => GetVercelCiTaskAnalysisResponse(
-    analysisId: (json['analysisId'] as String?)!,
-    status: (json['status'] != null ? GetVercelCiTaskAnalysisResponseStatusVariant0.fromJson(json['status'] as String) : null)!,
-    failureReason: json['failureReason'] != null ? SdkPresent((json['failureReason'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetVercelCiTaskAnalysisResponse.fromJson(Map<String, dynamic> json) =>
+      GetVercelCiTaskAnalysisResponse(
+        analysisId: (json['analysisId'] as String?)!,
+        status: (json['status'] != null
+            ? GetVercelCiTaskAnalysisResponseStatusVariant0.fromJson(
+                json['status'] as String)
+            : null)!,
+        failureReason: json['failureReason'] != null
+            ? SdkPresent((json['failureReason'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'analysisId': analysisId,
-    'status': status.toJson(),
-    ...switch (failureReason) {
-      SdkPresent<String>(value: final value) => {'failureReason': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'analysisId': analysisId,
+        'status': status.toJson(),
+        ...switch (failureReason) {
+          SdkPresent<String>(value: final value) => {
+              'failureReason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem {
@@ -117,46 +173,70 @@ class CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem {
   final String name;
   final String configPath;
 
-  const CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem({required this.name, required this.configPath});
+  const CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem(
+      {required this.name, required this.configPath});
 
-  CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem Function({String name, String configPath}) get copyWith => _copyWith;
+  CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem Function(
+      {String name, String configPath}) get copyWith => _copyWith;
 
-  CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem _copyWith({Object? name = sdkOmittedValue, Object? configPath = sdkOmittedValue}) => CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    configPath: identical(configPath, sdkOmittedValue) ? this.configPath : configPath as String,
-  );
+  CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? configPath = sdkOmittedValue}) =>
+      CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        configPath: identical(configPath, sdkOmittedValue)
+            ? this.configPath
+            : configPath as String,
+      );
 
-  factory CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem.fromJson(Map<String, dynamic> json) => CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem(
-    name: (json['name'] as String?)!,
-    configPath: (json['configPath'] as String?)!,
-  );
+  factory CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem(
+        name: (json['name'] as String?)!,
+        configPath: (json['configPath'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'configPath': configPath,
-  };
+        'name': name,
+        'configPath': configPath,
+      };
 }
 
 class CreateVercelCiTaskConfigurationPullRequestRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem> tasks;
+  final List<CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem>
+      tasks;
 
-  const CreateVercelCiTaskConfigurationPullRequestRequestBody({required this.tasks});
+  const CreateVercelCiTaskConfigurationPullRequestRequestBody(
+      {required this.tasks});
 
-  CreateVercelCiTaskConfigurationPullRequestRequestBody Function({List<CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem> tasks}) get copyWith => _copyWith;
+  CreateVercelCiTaskConfigurationPullRequestRequestBody Function(
+      {List<CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem>
+          tasks}) get copyWith => _copyWith;
 
-  CreateVercelCiTaskConfigurationPullRequestRequestBody _copyWith({Object? tasks = sdkOmittedValue}) => CreateVercelCiTaskConfigurationPullRequestRequestBody(
-    tasks: identical(tasks, sdkOmittedValue) ? this.tasks : tasks as List<CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem>,
-  );
+  CreateVercelCiTaskConfigurationPullRequestRequestBody _copyWith(
+          {Object? tasks = sdkOmittedValue}) =>
+      CreateVercelCiTaskConfigurationPullRequestRequestBody(
+        tasks: identical(tasks, sdkOmittedValue)
+            ? this.tasks
+            : tasks as List<
+                CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem>,
+      );
 
-  factory CreateVercelCiTaskConfigurationPullRequestRequestBody.fromJson(Map<String, dynamic> json) => CreateVercelCiTaskConfigurationPullRequestRequestBody(
-    tasks: ((json['tasks'] as List?)?.map((e) => CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory CreateVercelCiTaskConfigurationPullRequestRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      CreateVercelCiTaskConfigurationPullRequestRequestBody(
+        tasks: ((json['tasks'] as List?)
+            ?.map((e) =>
+                CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'tasks': tasks.map((item) => item.toJson()).toList(),
-  };
+        'tasks': tasks.map((item) => item.toJson()).toList(),
+      };
 }
 
 class CreateVercelCiTaskConfigurationPullRequestResponse {
@@ -165,24 +245,35 @@ class CreateVercelCiTaskConfigurationPullRequestResponse {
   final String url;
   final List<String> changedTaskNames;
 
-  const CreateVercelCiTaskConfigurationPullRequestResponse({required this.url, required this.changedTaskNames});
+  const CreateVercelCiTaskConfigurationPullRequestResponse(
+      {required this.url, required this.changedTaskNames});
 
-  CreateVercelCiTaskConfigurationPullRequestResponse Function({String url, List<String> changedTaskNames}) get copyWith => _copyWith;
+  CreateVercelCiTaskConfigurationPullRequestResponse Function(
+      {String url, List<String> changedTaskNames}) get copyWith => _copyWith;
 
-  CreateVercelCiTaskConfigurationPullRequestResponse _copyWith({Object? url = sdkOmittedValue, Object? changedTaskNames = sdkOmittedValue}) => CreateVercelCiTaskConfigurationPullRequestResponse(
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-    changedTaskNames: identical(changedTaskNames, sdkOmittedValue) ? this.changedTaskNames : changedTaskNames as List<String>,
-  );
+  CreateVercelCiTaskConfigurationPullRequestResponse _copyWith(
+          {Object? url = sdkOmittedValue,
+          Object? changedTaskNames = sdkOmittedValue}) =>
+      CreateVercelCiTaskConfigurationPullRequestResponse(
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+        changedTaskNames: identical(changedTaskNames, sdkOmittedValue)
+            ? this.changedTaskNames
+            : changedTaskNames as List<String>,
+      );
 
-  factory CreateVercelCiTaskConfigurationPullRequestResponse.fromJson(Map<String, dynamic> json) => CreateVercelCiTaskConfigurationPullRequestResponse(
-    url: (json['url'] as String?)!,
-    changedTaskNames: ((json['changedTaskNames'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory CreateVercelCiTaskConfigurationPullRequestResponse.fromJson(
+          Map<String, dynamic> json) =>
+      CreateVercelCiTaskConfigurationPullRequestResponse(
+        url: (json['url'] as String?)!,
+        changedTaskNames: ((json['changedTaskNames'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'url': url,
-    'changedTaskNames': changedTaskNames,
-  };
+        'url': url,
+        'changedTaskNames': changedTaskNames,
+      };
 }
 
 class ListVercelCiTaskAnalysisTasksResponseTasksItem {
@@ -192,27 +283,45 @@ class ListVercelCiTaskAnalysisTasksResponseTasksItem {
   final String configPath;
   final List<String> recommendationReasons;
 
-  const ListVercelCiTaskAnalysisTasksResponseTasksItem({required this.name, required this.configPath, required this.recommendationReasons});
+  const ListVercelCiTaskAnalysisTasksResponseTasksItem(
+      {required this.name,
+      required this.configPath,
+      required this.recommendationReasons});
 
-  ListVercelCiTaskAnalysisTasksResponseTasksItem Function({String name, String configPath, List<String> recommendationReasons}) get copyWith => _copyWith;
+  ListVercelCiTaskAnalysisTasksResponseTasksItem Function(
+      {String name,
+      String configPath,
+      List<String> recommendationReasons}) get copyWith => _copyWith;
 
-  ListVercelCiTaskAnalysisTasksResponseTasksItem _copyWith({Object? name = sdkOmittedValue, Object? configPath = sdkOmittedValue, Object? recommendationReasons = sdkOmittedValue}) => ListVercelCiTaskAnalysisTasksResponseTasksItem(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    configPath: identical(configPath, sdkOmittedValue) ? this.configPath : configPath as String,
-    recommendationReasons: identical(recommendationReasons, sdkOmittedValue) ? this.recommendationReasons : recommendationReasons as List<String>,
-  );
+  ListVercelCiTaskAnalysisTasksResponseTasksItem _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? configPath = sdkOmittedValue,
+          Object? recommendationReasons = sdkOmittedValue}) =>
+      ListVercelCiTaskAnalysisTasksResponseTasksItem(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        configPath: identical(configPath, sdkOmittedValue)
+            ? this.configPath
+            : configPath as String,
+        recommendationReasons: identical(recommendationReasons, sdkOmittedValue)
+            ? this.recommendationReasons
+            : recommendationReasons as List<String>,
+      );
 
-  factory ListVercelCiTaskAnalysisTasksResponseTasksItem.fromJson(Map<String, dynamic> json) => ListVercelCiTaskAnalysisTasksResponseTasksItem(
-    name: (json['name'] as String?)!,
-    configPath: (json['configPath'] as String?)!,
-    recommendationReasons: ((json['recommendationReasons'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory ListVercelCiTaskAnalysisTasksResponseTasksItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListVercelCiTaskAnalysisTasksResponseTasksItem(
+        name: (json['name'] as String?)!,
+        configPath: (json['configPath'] as String?)!,
+        recommendationReasons: ((json['recommendationReasons'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'configPath': configPath,
-    'recommendationReasons': recommendationReasons,
-  };
+        'name': name,
+        'configPath': configPath,
+        'recommendationReasons': recommendationReasons,
+      };
 }
 
 class ListVercelCiTaskAnalysisTasksResponsePagination {
@@ -220,24 +329,36 @@ class ListVercelCiTaskAnalysisTasksResponsePagination {
   static const String constructionSurface = 'named';
   final SdkOptional<String> nextCursor;
 
-  const ListVercelCiTaskAnalysisTasksResponsePagination({this.nextCursor = const SdkOmitted()});
+  const ListVercelCiTaskAnalysisTasksResponsePagination(
+      {this.nextCursor = const SdkOmitted()});
 
-  ListVercelCiTaskAnalysisTasksResponsePagination Function({SdkOptional<String> nextCursor}) get copyWith => _copyWith;
+  ListVercelCiTaskAnalysisTasksResponsePagination Function(
+      {SdkOptional<String> nextCursor}) get copyWith => _copyWith;
 
-  ListVercelCiTaskAnalysisTasksResponsePagination _copyWith({Object? nextCursor = sdkOmittedValue}) => ListVercelCiTaskAnalysisTasksResponsePagination(
-    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as SdkOptional<String>,
-  );
+  ListVercelCiTaskAnalysisTasksResponsePagination _copyWith(
+          {Object? nextCursor = sdkOmittedValue}) =>
+      ListVercelCiTaskAnalysisTasksResponsePagination(
+        nextCursor: identical(nextCursor, sdkOmittedValue)
+            ? this.nextCursor
+            : nextCursor as SdkOptional<String>,
+      );
 
-  factory ListVercelCiTaskAnalysisTasksResponsePagination.fromJson(Map<String, dynamic> json) => ListVercelCiTaskAnalysisTasksResponsePagination(
-    nextCursor: json['nextCursor'] != null ? SdkPresent((json['nextCursor'] as String?)!) : const SdkOmitted(),
-  );
+  factory ListVercelCiTaskAnalysisTasksResponsePagination.fromJson(
+          Map<String, dynamic> json) =>
+      ListVercelCiTaskAnalysisTasksResponsePagination(
+        nextCursor: json['nextCursor'] != null
+            ? SdkPresent((json['nextCursor'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (nextCursor) {
-      SdkPresent<String>(value: final value) => {'nextCursor': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (nextCursor) {
+          SdkPresent<String>(value: final value) => {
+              'nextCursor': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListVercelCiTaskAnalysisTasksResponse {
@@ -246,24 +367,44 @@ class ListVercelCiTaskAnalysisTasksResponse {
   final List<ListVercelCiTaskAnalysisTasksResponseTasksItem> tasks;
   final ListVercelCiTaskAnalysisTasksResponsePagination pagination;
 
-  const ListVercelCiTaskAnalysisTasksResponse({required this.tasks, required this.pagination});
+  const ListVercelCiTaskAnalysisTasksResponse(
+      {required this.tasks, required this.pagination});
 
-  ListVercelCiTaskAnalysisTasksResponse Function({List<ListVercelCiTaskAnalysisTasksResponseTasksItem> tasks, ListVercelCiTaskAnalysisTasksResponsePagination pagination}) get copyWith => _copyWith;
+  ListVercelCiTaskAnalysisTasksResponse Function(
+          {List<ListVercelCiTaskAnalysisTasksResponseTasksItem> tasks,
+          ListVercelCiTaskAnalysisTasksResponsePagination pagination})
+      get copyWith => _copyWith;
 
-  ListVercelCiTaskAnalysisTasksResponse _copyWith({Object? tasks = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListVercelCiTaskAnalysisTasksResponse(
-    tasks: identical(tasks, sdkOmittedValue) ? this.tasks : tasks as List<ListVercelCiTaskAnalysisTasksResponseTasksItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListVercelCiTaskAnalysisTasksResponsePagination,
-  );
+  ListVercelCiTaskAnalysisTasksResponse _copyWith(
+          {Object? tasks = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListVercelCiTaskAnalysisTasksResponse(
+        tasks: identical(tasks, sdkOmittedValue)
+            ? this.tasks
+            : tasks as List<ListVercelCiTaskAnalysisTasksResponseTasksItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListVercelCiTaskAnalysisTasksResponsePagination,
+      );
 
-  factory ListVercelCiTaskAnalysisTasksResponse.fromJson(Map<String, dynamic> json) => ListVercelCiTaskAnalysisTasksResponse(
-    tasks: ((json['tasks'] as List?)?.map((e) => ListVercelCiTaskAnalysisTasksResponseTasksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? ListVercelCiTaskAnalysisTasksResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  );
+  factory ListVercelCiTaskAnalysisTasksResponse.fromJson(
+          Map<String, dynamic> json) =>
+      ListVercelCiTaskAnalysisTasksResponse(
+        tasks: ((json['tasks'] as List?)
+            ?.map((e) =>
+                ListVercelCiTaskAnalysisTasksResponseTasksItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        pagination: (json['pagination'] != null
+            ? ListVercelCiTaskAnalysisTasksResponsePagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'tasks': tasks.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'tasks': tasks.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 class ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped {
@@ -271,19 +412,26 @@ class ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped {
   static const String constructionSurface = 'named';
   final String reason;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped({required this.reason});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
+      {required this.reason});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped Function({String reason}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped Function(
+      {String reason}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped _copyWith({Object? reason = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-  );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped _copyWith(
+          {Object? reason = sdkOmittedValue}) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
+        reason:
+            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+      );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped.fromJson(Map<String, dynamic> json) => ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
-    reason: (json['reason'] as String?)!,
-  );
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped.fromJson(
+          Map<String, dynamic> json) =>
+      ListVercelCiInvocationAttemptsResponseAttemptsItemSkipped(
+        reason: (json['reason'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'reason': reason,
-  };
+        'reason': reason,
+      };
 }

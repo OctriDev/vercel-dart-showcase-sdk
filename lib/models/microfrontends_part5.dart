@@ -8,52 +8,90 @@ class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14({required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
+      {required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 Function(
+      {String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14
+      _copyWith(
+              {Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 {
@@ -63,207 +101,538 @@ class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 {
   final String integrationId;
   final String integrationProductId;
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15({required this.integrationConfigurationId, required this.integrationId, required this.integrationProductId, required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
+      {required this.integrationConfigurationId,
+      required this.integrationId,
+      required this.integrationProductId,
+      required this.storeId,
+      required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 Function({String integrationConfigurationId, String integrationId, String integrationProductId, String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 Function(
+      {String integrationConfigurationId,
+      String integrationId,
+      String integrationProductId,
+      String storeId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 _copyWith({Object? integrationConfigurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationProductId = sdkOmittedValue, Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
-    integrationConfigurationId: identical(integrationConfigurationId, sdkOmittedValue) ? this.integrationConfigurationId : integrationConfigurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    integrationProductId: identical(integrationProductId, sdkOmittedValue) ? this.integrationProductId : integrationProductId as String,
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15
+      _copyWith(
+              {Object? integrationConfigurationId = sdkOmittedValue,
+              Object? integrationId = sdkOmittedValue,
+              Object? integrationProductId = sdkOmittedValue,
+              Object? storeId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
+            integrationConfigurationId:
+                identical(integrationConfigurationId, sdkOmittedValue)
+                    ? this.integrationConfigurationId
+                    : integrationConfigurationId as String,
+            integrationId: identical(integrationId, sdkOmittedValue)
+                ? this.integrationId
+                : integrationId as String,
+            integrationProductId:
+                identical(integrationProductId, sdkOmittedValue)
+                    ? this.integrationProductId
+                    : integrationProductId as String,
+            storeId: identical(storeId, sdkOmittedValue)
+                ? this.storeId
+                : storeId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
-    integrationConfigurationId: (json['integrationConfigurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-    integrationProductId: (json['integrationProductId'] as String?)!,
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
+        integrationConfigurationId:
+            (json['integrationConfigurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+        integrationProductId: (json['integrationProductId'] as String?)!,
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integrationConfigurationId': integrationConfigurationId,
-    'integrationId': integrationId,
-    'integrationProductId': integrationProductId,
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'integrationConfigurationId': integrationConfigurationId,
+        'integrationId': integrationId,
+        'integrationProductId': integrationProductId,
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String projectId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16({required this.projectId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
+      {required this.projectId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 Function({String projectId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 Function(
+      {String projectId,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 _copyWith({Object? projectId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16
+      _copyWith(
+              {Object? projectId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
+            projectId: identical(projectId, sdkOmittedValue)
+                ? this.projectId
+                : projectId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
-    projectId: (json['projectId'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
+        projectId: (json['projectId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'type': type_.toJson(),
-  };
+        'projectId': projectId,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint();
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint.fromJson(Object? json) {
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(value); } } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint");
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant4(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant5(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant6(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant7(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant8(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant9(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant10(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant11(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant12(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant13(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant14(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant15(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16
+    extends GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHint {
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16
+      value;
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintGetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

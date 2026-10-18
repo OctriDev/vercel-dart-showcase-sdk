@@ -4,14 +4,18 @@
 part of 'domains_registrar_get.dart';
 
 // domains_registrar_get domain models (part 8)
-final class GetOrderResponseErrorGetOrderResponseErrorVariant5 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant5
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant5 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant5(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant6 extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant6
+    extends GetOrderResponseError {
   final GetOrderResponseErrorVariant6 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

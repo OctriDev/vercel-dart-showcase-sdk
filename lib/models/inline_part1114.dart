@@ -10,53 +10,110 @@ class UpdateFirewallConfigRequestBodyVariant10Value {
   final String name;
   final SdkOptional<String> description;
   final bool active;
-  final List<UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem> conditionGroup;
+  final List<UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem>
+      conditionGroup;
   final UpdateFirewallConfigRequestBodyVariant10ValueAction action;
   final SdkOptional<bool> valid;
   final SdkOptional<dynamic> validationErrors;
 
-  const UpdateFirewallConfigRequestBodyVariant10Value({required this.name, this.description = const SdkOmitted(), required this.active, required this.conditionGroup, required this.action, this.valid = const SdkOmitted(), this.validationErrors = const SdkOmitted()});
+  const UpdateFirewallConfigRequestBodyVariant10Value(
+      {required this.name,
+      this.description = const SdkOmitted(),
+      required this.active,
+      required this.conditionGroup,
+      required this.action,
+      this.valid = const SdkOmitted(),
+      this.validationErrors = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant10Value Function({String name, SdkOptional<String> description, bool active, List<UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem> conditionGroup, UpdateFirewallConfigRequestBodyVariant10ValueAction action, SdkOptional<bool> valid, SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant10Value Function(
+      {String name,
+      SdkOptional<String> description,
+      bool active,
+      List<UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem>
+          conditionGroup,
+      UpdateFirewallConfigRequestBodyVariant10ValueAction action,
+      SdkOptional<bool> valid,
+      SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant10Value _copyWith({Object? name = sdkOmittedValue, Object? description = sdkOmittedValue, Object? active = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? action = sdkOmittedValue, Object? valid = sdkOmittedValue, Object? validationErrors = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant10Value(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem>,
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateFirewallConfigRequestBodyVariant10ValueAction,
-    valid: identical(valid, sdkOmittedValue) ? this.valid : valid as SdkOptional<bool>,
-    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as SdkOptional<dynamic>,
-  );
+  UpdateFirewallConfigRequestBodyVariant10Value _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? active = sdkOmittedValue,
+          Object? conditionGroup = sdkOmittedValue,
+          Object? action = sdkOmittedValue,
+          Object? valid = sdkOmittedValue,
+          Object? validationErrors = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant10Value(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        conditionGroup: identical(conditionGroup, sdkOmittedValue)
+            ? this.conditionGroup
+            : conditionGroup as List<
+                UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem>,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UpdateFirewallConfigRequestBodyVariant10ValueAction,
+        valid: identical(valid, sdkOmittedValue)
+            ? this.valid
+            : valid as SdkOptional<bool>,
+        validationErrors: identical(validationErrors, sdkOmittedValue)
+            ? this.validationErrors
+            : validationErrors as SdkOptional<dynamic>,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant10Value.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant10Value(
-    name: (json['name'] as String?)!,
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    active: (json['active'] as bool?)!,
-    conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    action: (json['action'] != null ? UpdateFirewallConfigRequestBodyVariant10ValueAction.fromJson(json['action'] as Map<String, dynamic>) : null)!,
-    valid: json['valid'] != null ? SdkPresent((json['valid'] as bool?)!) : const SdkOmitted(),
-    validationErrors: json['validationErrors'] != null ? SdkPresent((json['validationErrors'])!) : const SdkOmitted(),
-  );
+  factory UpdateFirewallConfigRequestBodyVariant10Value.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant10Value(
+        name: (json['name'] as String?)!,
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        active: (json['active'] as bool?)!,
+        conditionGroup: ((json['conditionGroup'] as List?)
+            ?.map((e) =>
+                UpdateFirewallConfigRequestBodyVariant10ValueConditionGroupItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        action: (json['action'] != null
+            ? UpdateFirewallConfigRequestBodyVariant10ValueAction.fromJson(
+                json['action'] as Map<String, dynamic>)
+            : null)!,
+        valid: json['valid'] != null
+            ? SdkPresent((json['valid'] as bool?)!)
+            : const SdkOmitted(),
+        validationErrors: json['validationErrors'] != null
+            ? SdkPresent((json['validationErrors'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    'active': active,
-    'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
-    'action': action.toJson(),
-    ...switch (valid) {
-      SdkPresent<bool>(value: final value) => {'valid': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (validationErrors) {
-      SdkPresent<dynamic>(value: final value) => {'validationErrors': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active,
+        'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
+        'action': action.toJson(),
+        ...switch (valid) {
+          SdkPresent<bool>(value: final value) => {
+              'valid': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (validationErrors) {
+          SdkPresent<dynamic>(value: final value) => {
+              'validationErrors': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Add a custom rule
@@ -67,140 +124,277 @@ class UpdateFirewallConfigRequestBodyVariant10 {
   final SdkOptional<String> id;
   final UpdateFirewallConfigRequestBodyVariant10Value value;
 
-  const UpdateFirewallConfigRequestBodyVariant10({required this.action, this.id = const SdkOmitted(), required this.value});
+  const UpdateFirewallConfigRequestBodyVariant10(
+      {required this.action,
+      this.id = const SdkOmitted(),
+      required this.value});
 
-  UpdateFirewallConfigRequestBodyVariant10 Function({UpdateFirewallConfigRequestBodyVariant10Action action, SdkOptional<String> id, UpdateFirewallConfigRequestBodyVariant10Value value}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant10 Function(
+          {UpdateFirewallConfigRequestBodyVariant10Action action,
+          SdkOptional<String> id,
+          UpdateFirewallConfigRequestBodyVariant10Value value})
+      get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant10 _copyWith({Object? action = sdkOmittedValue, Object? id = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant10(
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateFirewallConfigRequestBodyVariant10Action,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateFirewallConfigRequestBodyVariant10Value,
-  );
+  UpdateFirewallConfigRequestBodyVariant10 _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant10(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UpdateFirewallConfigRequestBodyVariant10Action,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as UpdateFirewallConfigRequestBodyVariant10Value,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant10.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant10(
-    action: (json['action'] != null ? UpdateFirewallConfigRequestBodyVariant10Action.fromJson(json['action'] as String) : null)!,
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] != null ? UpdateFirewallConfigRequestBodyVariant10Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant10.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant10(
+        action: (json['action'] != null
+            ? UpdateFirewallConfigRequestBodyVariant10Action.fromJson(
+                json['action'] as String)
+            : null)!,
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] != null
+            ? UpdateFirewallConfigRequestBodyVariant10Value.fromJson(
+                json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value.toJson(),
-  };
+        'action': action.toJson(),
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value.toJson(),
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType type_;
-  final UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp op;
+  final UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType
+      type_;
+  final UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp
+      op;
   final SdkOptional<bool> neg;
   final SdkOptional<String> key;
   final SdkOptional<dynamic> value;
 
-  const UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem({required this.type_, required this.op, this.neg = const SdkOmitted(), this.key = const SdkOmitted(), this.value = const SdkOmitted()});
+  const UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem(
+      {required this.type_,
+      required this.op,
+      this.neg = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.value = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem Function({UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType type_, UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp op, SdkOptional<bool> neg, SdkOptional<String> key, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem Function(
+      {UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType
+          type_,
+      UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp
+          op,
+      SdkOptional<bool> neg,
+      SdkOptional<String> key,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem _copyWith({Object? type_ = sdkOmittedValue, Object? op = sdkOmittedValue, Object? neg = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType,
-    op: identical(op, sdkOmittedValue) ? this.op : op as UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp,
-    neg: identical(neg, sdkOmittedValue) ? this.neg : neg as SdkOptional<bool>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem
+      _copyWith(
+              {Object? type_ = sdkOmittedValue,
+              Object? op = sdkOmittedValue,
+              Object? neg = sdkOmittedValue,
+              Object? key = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem(
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType,
+            op: identical(op, sdkOmittedValue)
+                ? this.op
+                : op
+                    as UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp,
+            neg: identical(neg, sdkOmittedValue)
+                ? this.neg
+                : neg as SdkOptional<bool>,
+            key: identical(key, sdkOmittedValue)
+                ? this.key
+                : key as SdkOptional<String>,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as SdkOptional<dynamic>,
+          );
 
-  factory UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem(
-    type_: (json['type'] != null ? UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType.fromJson(json['type'] as String) : null)!,
-    op: (json['op'] != null ? UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp.fromJson(json['op'] as String) : null)!,
-    neg: json['neg'] != null ? SdkPresent((json['neg'] as bool?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  );
+  factory UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem(
+        type_: (json['type'] != null
+            ? UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemType
+                .fromJson(json['type'] as String)
+            : null)!,
+        op: (json['op'] != null
+            ? UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItemOp
+                .fromJson(json['op'] as String)
+            : null)!,
+        neg: json['neg'] != null
+            ? SdkPresent((json['neg'] as bool?)!)
+            : const SdkOmitted(),
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'op': op.toJson(),
-    ...switch (neg) {
-      SdkPresent<bool>(value: final value) => {'neg': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'type': type_.toJson(),
+        'op': op.toJson(),
+        ...switch (neg) {
+          SdkPresent<bool>(value: final value) => {
+              'neg': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem> conditions;
+  final List<
+          UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem>
+      conditions;
 
-  const UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem({required this.conditions});
+  const UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem(
+      {required this.conditions});
 
-  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem Function({List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem Function(
+      {List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem>
+          conditions}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem>,
-  );
+  UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem _copyWith(
+          {Object? conditions = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<
+                UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem>,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem(
-    conditions: ((json['conditions'] as List?)?.map((e) => UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem(
+        conditions: ((json['conditions'] as List?)
+            ?.map((e) =>
+                UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItemConditionsItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo algo;
+  final UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo
+      algo;
   final double window;
   final double limit;
   final List<String> keys;
   final SdkOptional<String> action;
 
-  const UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0({required this.algo, required this.window, required this.limit, required this.keys, this.action = const SdkOmitted()});
+  const UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0(
+      {required this.algo,
+      required this.window,
+      required this.limit,
+      required this.keys,
+      this.action = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0 Function({UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo algo, double window, double limit, List<String> keys, SdkOptional<String> action}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0 Function(
+      {UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo
+          algo,
+      double window,
+      double limit,
+      List<String> keys,
+      SdkOptional<String> action}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0 _copyWith({Object? algo = sdkOmittedValue, Object? window = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? action = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0(
-    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo,
-    window: identical(window, sdkOmittedValue) ? this.window : window as double,
-    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
-    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<String>,
-  );
+  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0
+      _copyWith(
+              {Object? algo = sdkOmittedValue,
+              Object? window = sdkOmittedValue,
+              Object? limit = sdkOmittedValue,
+              Object? keys = sdkOmittedValue,
+              Object? action = sdkOmittedValue}) =>
+          UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0(
+            algo: identical(algo, sdkOmittedValue)
+                ? this.algo
+                : algo
+                    as UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo,
+            window: identical(window, sdkOmittedValue)
+                ? this.window
+                : window as double,
+            limit: identical(limit, sdkOmittedValue)
+                ? this.limit
+                : limit as double,
+            keys: identical(keys, sdkOmittedValue)
+                ? this.keys
+                : keys as List<String>,
+            action: identical(action, sdkOmittedValue)
+                ? this.action
+                : action as SdkOptional<String>,
+          );
 
-  factory UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0(
-    algo: (json['algo'] != null ? UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo.fromJson(json['algo'] as String) : null)!,
-    window: ((json['window'] as num?)?.toDouble())!,
-    limit: ((json['limit'] as num?)?.toDouble())!,
-    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-    action: json['action'] != null ? SdkPresent((json['action'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0(
+        algo: (json['algo'] != null
+            ? UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRateLimitVariant0Algo
+                .fromJson(json['algo'] as String)
+            : null)!,
+        window: ((json['window'] as num?)?.toDouble())!,
+        limit: ((json['limit'] as num?)?.toDouble())!,
+        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+        action: json['action'] != null
+            ? SdkPresent((json['action'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'algo': algo.toJson(),
-    'window': window,
-    'limit': limit,
-    'keys': keys,
-    ...switch (action) {
-      SdkPresent<String>(value: final value) => {'action': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'algo': algo.toJson(),
+        'window': window,
+        'limit': limit,
+        'keys': keys,
+        ...switch (action) {
+          SdkPresent<String>(value: final value) => {
+              'action': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0 {
@@ -209,79 +403,149 @@ class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant
   final String location;
   final bool permanent;
 
-  const UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0({required this.location, required this.permanent});
+  const UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0(
+      {required this.location, required this.permanent});
 
-  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0 Function({String location, bool permanent}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0
+      Function({String location, bool permanent}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0 _copyWith({Object? location = sdkOmittedValue, Object? permanent = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0(
-    location: identical(location, sdkOmittedValue) ? this.location : location as String,
-    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as bool,
-  );
+  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0
+      _copyWith(
+              {Object? location = sdkOmittedValue,
+              Object? permanent = sdkOmittedValue}) =>
+          UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0(
+            location: identical(location, sdkOmittedValue)
+                ? this.location
+                : location as String,
+            permanent: identical(permanent, sdkOmittedValue)
+                ? this.permanent
+                : permanent as bool,
+          );
 
-  factory UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0(
-    location: (json['location'] as String?)!,
-    permanent: (json['permanent'] as bool?)!,
-  );
+  factory UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateRedirectVariant0(
+        location: (json['location'] as String?)!,
+        permanent: (json['permanent'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'location': location,
-    'permanent': permanent,
-  };
+        'location': location,
+        'permanent': permanent,
+      };
 }
 
 class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction action;
+  final UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction
+      action;
   final SdkOptional<dynamic> rateLimit;
   final SdkOptional<dynamic> redirect;
   final SdkOptional<String?> actionDuration;
   final SdkOptional<bool?> bypassSystem;
   final SdkOptional<dynamic> logHeaders;
 
-  const UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate({required this.action, this.rateLimit = const SdkOmitted(), this.redirect = const SdkOmitted(), this.actionDuration = const SdkOmitted(), this.bypassSystem = const SdkOmitted(), this.logHeaders = const SdkOmitted()});
+  const UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate(
+      {required this.action,
+      this.rateLimit = const SdkOmitted(),
+      this.redirect = const SdkOmitted(),
+      this.actionDuration = const SdkOmitted(),
+      this.bypassSystem = const SdkOmitted(),
+      this.logHeaders = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate Function({UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction action, SdkOptional<dynamic> rateLimit, SdkOptional<dynamic> redirect, SdkOptional<String?> actionDuration, SdkOptional<bool?> bypassSystem, SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate Function(
+      {UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction action,
+      SdkOptional<dynamic> rateLimit,
+      SdkOptional<dynamic> redirect,
+      SdkOptional<String?> actionDuration,
+      SdkOptional<bool?> bypassSystem,
+      SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
 
-  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate _copyWith({Object? action = sdkOmittedValue, Object? rateLimit = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? actionDuration = sdkOmittedValue, Object? bypassSystem = sdkOmittedValue, Object? logHeaders = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate(
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction,
-    rateLimit: identical(rateLimit, sdkOmittedValue) ? this.rateLimit : rateLimit as SdkOptional<dynamic>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<dynamic>,
-    actionDuration: identical(actionDuration, sdkOmittedValue) ? this.actionDuration : actionDuration as SdkOptional<String?>,
-    bypassSystem: identical(bypassSystem, sdkOmittedValue) ? this.bypassSystem : bypassSystem as SdkOptional<bool?>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
-  );
+  UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? rateLimit = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? actionDuration = sdkOmittedValue,
+          Object? bypassSystem = sdkOmittedValue,
+          Object? logHeaders = sdkOmittedValue}) =>
+      UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction,
+        rateLimit: identical(rateLimit, sdkOmittedValue)
+            ? this.rateLimit
+            : rateLimit as SdkOptional<dynamic>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<dynamic>,
+        actionDuration: identical(actionDuration, sdkOmittedValue)
+            ? this.actionDuration
+            : actionDuration as SdkOptional<String?>,
+        bypassSystem: identical(bypassSystem, sdkOmittedValue)
+            ? this.bypassSystem
+            : bypassSystem as SdkOptional<bool?>,
+        logHeaders: identical(logHeaders, sdkOmittedValue)
+            ? this.logHeaders
+            : logHeaders as SdkOptional<dynamic>,
+      );
 
-  factory UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate(
-    action: (json['action'] != null ? UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction.fromJson(json['action'] as String) : null)!,
-    rateLimit: json['rateLimit'] != null ? SdkPresent((json['rateLimit'])!) : const SdkOmitted(),
-    redirect: json['redirect'] != null ? SdkPresent((json['redirect'])!) : const SdkOmitted(),
-    actionDuration: json.containsKey('actionDuration') ? SdkPresent(json['actionDuration'] as String?) : const SdkOmitted(),
-    bypassSystem: json.containsKey('bypassSystem') ? SdkPresent(json['bypassSystem'] as bool?) : const SdkOmitted(),
-    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
-  );
+  factory UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate(
+        action: (json['action'] != null
+            ? UpdateFirewallConfigRequestBodyVariant11ValueActionMitigateAction
+                .fromJson(json['action'] as String)
+            : null)!,
+        rateLimit: json['rateLimit'] != null
+            ? SdkPresent((json['rateLimit'])!)
+            : const SdkOmitted(),
+        redirect: json['redirect'] != null
+            ? SdkPresent((json['redirect'])!)
+            : const SdkOmitted(),
+        actionDuration: json.containsKey('actionDuration')
+            ? SdkPresent(json['actionDuration'] as String?)
+            : const SdkOmitted(),
+        bypassSystem: json.containsKey('bypassSystem')
+            ? SdkPresent(json['bypassSystem'] as bool?)
+            : const SdkOmitted(),
+        logHeaders: json['logHeaders'] != null
+            ? SdkPresent((json['logHeaders'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    ...switch (rateLimit) {
-      SdkPresent<dynamic>(value: final value) => {'rateLimit': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<dynamic>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (actionDuration) {
-      SdkPresent<String?>(value: final value) => {'actionDuration': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (bypassSystem) {
-      SdkPresent<bool?>(value: final value) => {'bypassSystem': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action.toJson(),
+        ...switch (rateLimit) {
+          SdkPresent<dynamic>(value: final value) => {
+              'rateLimit': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<dynamic>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (actionDuration) {
+          SdkPresent<String?>(value: final value) => {
+              'actionDuration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (bypassSystem) {
+          SdkPresent<bool?>(value: final value) => {
+              'bypassSystem': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (logHeaders) {
+          SdkPresent<dynamic>(value: final value) => {
+              'logHeaders': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

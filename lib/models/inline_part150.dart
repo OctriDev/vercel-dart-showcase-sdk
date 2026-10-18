@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin {
   platform;
 
-  static ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin fromJson(String value) {
+  static ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin
+      fromJson(String value) {
     switch (value) {
-      case 'platform': return ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin.platform;
-      default: throw ArgumentError('Unknown ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin: $value');
+      case 'platform':
+        return ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin
+            .platform;
+      default:
+        throw ArgumentError(
+            'Unknown ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin.platform: return 'platform';
+      case ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin
+            .platform:
+        return 'platform';
     }
   }
 
@@ -25,55 +32,73 @@ enum ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1Origin {
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind {
-
   final String value;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind._(this.value);
+  const ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind._(
+      this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind.fromJson(
+          String value) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind._(
+          value);
 
-  static const vercelCiSentinel = ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind._('vercel-ci-sentinel');
+  static const vercelCiSentinel =
+      ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind._(
+          'vercel-ci-sentinel');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListDeploymentCheckRunsResponseRunsItemVariant1SourceVariant1SubKind &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListDeploymentCheckRunsResponseRunsItemVariant1Status {
-
   final String value;
 
   const ListDeploymentCheckRunsResponseRunsItemVariant1Status._(this.value);
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant1Status.fromJson(String value) => ListDeploymentCheckRunsResponseRunsItemVariant1Status._(value);
+  factory ListDeploymentCheckRunsResponseRunsItemVariant1Status.fromJson(
+          String value) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant1Status._(value);
 
-  static const completed = ListDeploymentCheckRunsResponseRunsItemVariant1Status._('completed');
-  static const queued = ListDeploymentCheckRunsResponseRunsItemVariant1Status._('queued');
-  static const running = ListDeploymentCheckRunsResponseRunsItemVariant1Status._('running');
+  static const completed =
+      ListDeploymentCheckRunsResponseRunsItemVariant1Status._('completed');
+  static const queued =
+      ListDeploymentCheckRunsResponseRunsItemVariant1Status._('queued');
+  static const running =
+      ListDeploymentCheckRunsResponseRunsItemVariant1Status._('running');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListDeploymentCheckRunsResponseRunsItemVariant1Status && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListDeploymentCheckRunsResponseRunsItemVariant1Status &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Categories that group this event type with related event types.
 final class ListEventTypeCategoriesItem {
-
   final String value;
 
   const ListEventTypeCategoriesItem._(this.value);
 
-  factory ListEventTypeCategoriesItem.fromJson(String value) => ListEventTypeCategoriesItem._(value);
+  factory ListEventTypeCategoriesItem.fromJson(String value) =>
+      ListEventTypeCategoriesItem._(value);
 
   static const account = ListEventTypeCategoriesItem._('account');
   static const ai = ListEventTypeCategoriesItem._('ai');
@@ -101,32 +126,38 @@ final class ListEventTypeCategoriesItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListEventTypeCategoriesItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListEventTypeCategoriesItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Present only when this event type is deprecated.
 final class ListEventTypeDeprecated {
-
   final bool value;
 
   const ListEventTypeDeprecated._(this.value);
 
-  factory ListEventTypeDeprecated.fromJson(bool value) => ListEventTypeDeprecated._(value);
+  factory ListEventTypeDeprecated.fromJson(bool value) =>
+      ListEventTypeDeprecated._(value);
 
   static const false_ = ListEventTypeDeprecated._(false);
   static const true_ = ListEventTypeDeprecated._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListEventTypeDeprecated && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListEventTypeDeprecated && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

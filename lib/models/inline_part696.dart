@@ -7,168 +7,401 @@ part of 'inline.dart';
 class GetConfigurationsResponseVariant1Item {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Historical parent installation from which acceptedPolicies were inherited. This is immutable provenance, not current authorization or relationship truth.
   final SdkOptional<String> acceptedPoliciesInheritedFromInstallationId;
+
   /// A timestamp that tells you when the configuration was installed successfully
   final SdkOptional<double> completedAt;
+
   /// A timestamp that tells you when the configuration was created
   final double createdAt;
+
   /// Record when the customer initited deletion, independent of whether `deleteRequestedAt` gets set.
   final SdkOptional<double?> customerDeleteRequestedAt;
+
   /// A timestamp that tells you when the configuration was deleted.
   final SdkOptional<double?> deletedAt;
+
   /// A timestamp that tells you when the configuration deletion has been started for cases when the deletion needs to be settled/approved by partners, such as when marketplace invoices have been paid.
   final SdkOptional<double?> deleteRequestedAt;
+
   /// A timestamp that tells you when the configuration was disabled. Note: Configurations can be disabled when the associated user loses access to a team. They do not function during this time until the configuration is 'transferred', meaning the associated user is changed to one with access to the team.
   final SdkOptional<double> disabledAt;
-  final SdkOptional<GetConfigurationsResponseVariant1ItemDisabledReason> disabledReason;
+  final SdkOptional<GetConfigurationsResponseVariant1ItemDisabledReason>
+      disabledReason;
+
   /// An external identifier defined by the integration vendor.
   final SdkOptional<String> externalId;
+
   /// The unique identifier of the configuration
   final String id;
+
   /// Defines the installation type. - 'external' integrations are installed via the existing integrations flow - 'marketplace' integrations are natively installed: - when accepting the TOS of a partner during the store creation process - if undefined, assume 'external'
-  final SdkOptional<GetConfigurationsResponseVariant1ItemInstallationType> installationType;
+  final SdkOptional<GetConfigurationsResponseVariant1ItemInstallationType>
+      installationType;
   final GetConfigurationsResponseVariant1ItemIntegration integration;
+
   /// The unique identifier of the app the configuration was created for
   final String integrationId;
+
   /// The user or team ID that owns the configuration
   final String ownerId;
+
   /// When a configuration is limited to access certain projects, this will contain each of the project ID it is allowed to access. If it is not defined, the configuration has full access.
   final SdkOptional<List<String>> projects;
+
   /// The resources that are allowed to be accessed by the configuration.
   final List<String> scopes;
+
   /// The slug of the integration the configuration is created for.
   final String slug;
+
   /// Source defines where the configuration was installed from. It is used to analyze user engagement for integration installations in product metrics.
   final SdkOptional<GetConfigurationsResponseVariant1ItemSource> source;
+
   /// The configuration status. Optional. If not defined, assume 'ready'.
   final SdkOptional<GetConfigurationsResponseVariant1ItemStatus> status;
+
   /// When the configuration was created for a team, this will show the ID of the team.
   final SdkOptional<String?> teamId;
   final GetConfigurationsResponseVariant1ItemType type_;
+
   /// A timestamp that tells you when the configuration was updated.
   final double updatedAt;
+
   /// The ID of the user that created the configuration.
   final String userId;
 
-  const GetConfigurationsResponseVariant1Item({this.acceptedPoliciesInheritedFromInstallationId = const SdkOmitted(), this.completedAt = const SdkOmitted(), required this.createdAt, this.customerDeleteRequestedAt = const SdkOmitted(), this.deletedAt = const SdkOmitted(), this.deleteRequestedAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.disabledReason = const SdkOmitted(), this.externalId = const SdkOmitted(), required this.id, this.installationType = const SdkOmitted(), required this.integration, required this.integrationId, required this.ownerId, this.projects = const SdkOmitted(), required this.scopes, required this.slug, this.source = const SdkOmitted(), this.status = const SdkOmitted(), this.teamId = const SdkOmitted(), required this.type_, required this.updatedAt, required this.userId});
+  const GetConfigurationsResponseVariant1Item(
+      {this.acceptedPoliciesInheritedFromInstallationId = const SdkOmitted(),
+      this.completedAt = const SdkOmitted(),
+      required this.createdAt,
+      this.customerDeleteRequestedAt = const SdkOmitted(),
+      this.deletedAt = const SdkOmitted(),
+      this.deleteRequestedAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.disabledReason = const SdkOmitted(),
+      this.externalId = const SdkOmitted(),
+      required this.id,
+      this.installationType = const SdkOmitted(),
+      required this.integration,
+      required this.integrationId,
+      required this.ownerId,
+      this.projects = const SdkOmitted(),
+      required this.scopes,
+      required this.slug,
+      this.source = const SdkOmitted(),
+      this.status = const SdkOmitted(),
+      this.teamId = const SdkOmitted(),
+      required this.type_,
+      required this.updatedAt,
+      required this.userId});
 
-  GetConfigurationsResponseVariant1Item Function({SdkOptional<String> acceptedPoliciesInheritedFromInstallationId, SdkOptional<double> completedAt, double createdAt, SdkOptional<double?> customerDeleteRequestedAt, SdkOptional<double?> deletedAt, SdkOptional<double?> deleteRequestedAt, SdkOptional<double> disabledAt, SdkOptional<GetConfigurationsResponseVariant1ItemDisabledReason> disabledReason, SdkOptional<String> externalId, String id, SdkOptional<GetConfigurationsResponseVariant1ItemInstallationType> installationType, GetConfigurationsResponseVariant1ItemIntegration integration, String integrationId, String ownerId, SdkOptional<List<String>> projects, List<String> scopes, String slug, SdkOptional<GetConfigurationsResponseVariant1ItemSource> source, SdkOptional<GetConfigurationsResponseVariant1ItemStatus> status, SdkOptional<String?> teamId, GetConfigurationsResponseVariant1ItemType type_, double updatedAt, String userId}) get copyWith => _copyWith;
+  GetConfigurationsResponseVariant1Item Function(
+      {SdkOptional<String> acceptedPoliciesInheritedFromInstallationId,
+      SdkOptional<double> completedAt,
+      double createdAt,
+      SdkOptional<double?> customerDeleteRequestedAt,
+      SdkOptional<double?> deletedAt,
+      SdkOptional<double?> deleteRequestedAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<GetConfigurationsResponseVariant1ItemDisabledReason>
+          disabledReason,
+      SdkOptional<String> externalId,
+      String id,
+      SdkOptional<GetConfigurationsResponseVariant1ItemInstallationType>
+          installationType,
+      GetConfigurationsResponseVariant1ItemIntegration integration,
+      String integrationId,
+      String ownerId,
+      SdkOptional<List<String>> projects,
+      List<String> scopes,
+      String slug,
+      SdkOptional<GetConfigurationsResponseVariant1ItemSource> source,
+      SdkOptional<GetConfigurationsResponseVariant1ItemStatus> status,
+      SdkOptional<String?> teamId,
+      GetConfigurationsResponseVariant1ItemType type_,
+      double updatedAt,
+      String userId}) get copyWith => _copyWith;
 
-  GetConfigurationsResponseVariant1Item _copyWith({Object? acceptedPoliciesInheritedFromInstallationId = sdkOmittedValue, Object? completedAt = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customerDeleteRequestedAt = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? deleteRequestedAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? disabledReason = sdkOmittedValue, Object? externalId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? installationType = sdkOmittedValue, Object? integration = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? scopes = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? source = sdkOmittedValue, Object? status = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? userId = sdkOmittedValue}) => GetConfigurationsResponseVariant1Item(
-    acceptedPoliciesInheritedFromInstallationId: identical(acceptedPoliciesInheritedFromInstallationId, sdkOmittedValue) ? this.acceptedPoliciesInheritedFromInstallationId : acceptedPoliciesInheritedFromInstallationId as SdkOptional<String>,
-    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    customerDeleteRequestedAt: identical(customerDeleteRequestedAt, sdkOmittedValue) ? this.customerDeleteRequestedAt : customerDeleteRequestedAt as SdkOptional<double?>,
-    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double?>,
-    deleteRequestedAt: identical(deleteRequestedAt, sdkOmittedValue) ? this.deleteRequestedAt : deleteRequestedAt as SdkOptional<double?>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    disabledReason: identical(disabledReason, sdkOmittedValue) ? this.disabledReason : disabledReason as SdkOptional<GetConfigurationsResponseVariant1ItemDisabledReason>,
-    externalId: identical(externalId, sdkOmittedValue) ? this.externalId : externalId as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    installationType: identical(installationType, sdkOmittedValue) ? this.installationType : installationType as SdkOptional<GetConfigurationsResponseVariant1ItemInstallationType>,
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as GetConfigurationsResponseVariant1ItemIntegration,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<List<String>>,
-    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as List<String>,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<GetConfigurationsResponseVariant1ItemSource>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as SdkOptional<GetConfigurationsResponseVariant1ItemStatus>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String?>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetConfigurationsResponseVariant1ItemType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as String,
-  );
+  GetConfigurationsResponseVariant1Item _copyWith(
+          {Object? acceptedPoliciesInheritedFromInstallationId =
+              sdkOmittedValue,
+          Object? completedAt = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? customerDeleteRequestedAt = sdkOmittedValue,
+          Object? deletedAt = sdkOmittedValue,
+          Object? deleteRequestedAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? disabledReason = sdkOmittedValue,
+          Object? externalId = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? installationType = sdkOmittedValue,
+          Object? integration = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projects = sdkOmittedValue,
+          Object? scopes = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? userId = sdkOmittedValue}) =>
+      GetConfigurationsResponseVariant1Item(
+        acceptedPoliciesInheritedFromInstallationId: identical(
+                acceptedPoliciesInheritedFromInstallationId, sdkOmittedValue)
+            ? this.acceptedPoliciesInheritedFromInstallationId
+            : acceptedPoliciesInheritedFromInstallationId
+                as SdkOptional<String>,
+        completedAt: identical(completedAt, sdkOmittedValue)
+            ? this.completedAt
+            : completedAt as SdkOptional<double>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        customerDeleteRequestedAt:
+            identical(customerDeleteRequestedAt, sdkOmittedValue)
+                ? this.customerDeleteRequestedAt
+                : customerDeleteRequestedAt as SdkOptional<double?>,
+        deletedAt: identical(deletedAt, sdkOmittedValue)
+            ? this.deletedAt
+            : deletedAt as SdkOptional<double?>,
+        deleteRequestedAt: identical(deleteRequestedAt, sdkOmittedValue)
+            ? this.deleteRequestedAt
+            : deleteRequestedAt as SdkOptional<double?>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        disabledReason: identical(disabledReason, sdkOmittedValue)
+            ? this.disabledReason
+            : disabledReason as SdkOptional<
+                GetConfigurationsResponseVariant1ItemDisabledReason>,
+        externalId: identical(externalId, sdkOmittedValue)
+            ? this.externalId
+            : externalId as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        installationType: identical(installationType, sdkOmittedValue)
+            ? this.installationType
+            : installationType as SdkOptional<
+                GetConfigurationsResponseVariant1ItemInstallationType>,
+        integration: identical(integration, sdkOmittedValue)
+            ? this.integration
+            : integration as GetConfigurationsResponseVariant1ItemIntegration,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        projects: identical(projects, sdkOmittedValue)
+            ? this.projects
+            : projects as SdkOptional<List<String>>,
+        scopes: identical(scopes, sdkOmittedValue)
+            ? this.scopes
+            : scopes as List<String>,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source
+                as SdkOptional<GetConfigurationsResponseVariant1ItemSource>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status
+                as SdkOptional<GetConfigurationsResponseVariant1ItemStatus>,
+        teamId: identical(teamId, sdkOmittedValue)
+            ? this.teamId
+            : teamId as SdkOptional<String?>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetConfigurationsResponseVariant1ItemType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        userId:
+            identical(userId, sdkOmittedValue) ? this.userId : userId as String,
+      );
 
-  factory GetConfigurationsResponseVariant1Item.fromJson(Map<String, dynamic> json) => GetConfigurationsResponseVariant1Item(
-    acceptedPoliciesInheritedFromInstallationId: json['acceptedPoliciesInheritedFromInstallationId'] != null ? SdkPresent((json['acceptedPoliciesInheritedFromInstallationId'] as String?)!) : const SdkOmitted(),
-    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    customerDeleteRequestedAt: json.containsKey('customerDeleteRequestedAt') ? SdkPresent((json['customerDeleteRequestedAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    deletedAt: json.containsKey('deletedAt') ? SdkPresent((json['deletedAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    deleteRequestedAt: json.containsKey('deleteRequestedAt') ? SdkPresent((json['deleteRequestedAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledReason: json['disabledReason'] != null ? SdkPresent((json['disabledReason'] != null ? GetConfigurationsResponseVariant1ItemDisabledReason.fromJson(json['disabledReason'] as String) : null)!) : const SdkOmitted(),
-    externalId: json['externalId'] != null ? SdkPresent((json['externalId'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    installationType: json['installationType'] != null ? SdkPresent((json['installationType'] != null ? GetConfigurationsResponseVariant1ItemInstallationType.fromJson(json['installationType'] as String) : null)!) : const SdkOmitted(),
-    integration: (json['integration'] != null ? GetConfigurationsResponseVariant1ItemIntegration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    integrationId: (json['integrationId'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    projects: json['projects'] != null ? SdkPresent(((json['projects'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    scopes: ((json['scopes'] as List?)?.map((e) => e as String).toList())!,
-    slug: (json['slug'] as String?)!,
-    source: json['source'] != null ? SdkPresent((json['source'] != null ? GetConfigurationsResponseVariant1ItemSource.fromJson(json['source'] as String) : null)!) : const SdkOmitted(),
-    status: json['status'] != null ? SdkPresent((json['status'] != null ? GetConfigurationsResponseVariant1ItemStatus.fromJson(json['status'] as String) : null)!) : const SdkOmitted(),
-    teamId: json.containsKey('teamId') ? SdkPresent(json['teamId'] as String?) : const SdkOmitted(),
-    type_: (json['type'] != null ? GetConfigurationsResponseVariant1ItemType.fromJson(json['type'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    userId: (json['userId'] as String?)!,
-  );
+  factory GetConfigurationsResponseVariant1Item.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationsResponseVariant1Item(
+        acceptedPoliciesInheritedFromInstallationId:
+            json['acceptedPoliciesInheritedFromInstallationId'] != null
+                ? SdkPresent(
+                    (json['acceptedPoliciesInheritedFromInstallationId']
+                        as String?)!)
+                : const SdkOmitted(),
+        completedAt: json['completedAt'] != null
+            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        customerDeleteRequestedAt: json.containsKey('customerDeleteRequestedAt')
+            ? SdkPresent(
+                (json['customerDeleteRequestedAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        deletedAt: json.containsKey('deletedAt')
+            ? SdkPresent((json['deletedAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        deleteRequestedAt: json.containsKey('deleteRequestedAt')
+            ? SdkPresent((json['deleteRequestedAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        disabledAt: json['disabledAt'] != null
+            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        disabledReason: json['disabledReason'] != null
+            ? SdkPresent((json['disabledReason'] != null
+                ? GetConfigurationsResponseVariant1ItemDisabledReason.fromJson(
+                    json['disabledReason'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        externalId: json['externalId'] != null
+            ? SdkPresent((json['externalId'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        installationType: json['installationType'] != null
+            ? SdkPresent((json['installationType'] != null
+                ? GetConfigurationsResponseVariant1ItemInstallationType
+                    .fromJson(json['installationType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        integration: (json['integration'] != null
+            ? GetConfigurationsResponseVariant1ItemIntegration.fromJson(
+                json['integration'] as Map<String, dynamic>)
+            : null)!,
+        integrationId: (json['integrationId'] as String?)!,
+        ownerId: (json['ownerId'] as String?)!,
+        projects: json['projects'] != null
+            ? SdkPresent(((json['projects'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        scopes: ((json['scopes'] as List?)?.map((e) => e as String).toList())!,
+        slug: (json['slug'] as String?)!,
+        source: json['source'] != null
+            ? SdkPresent((json['source'] != null
+                ? GetConfigurationsResponseVariant1ItemSource.fromJson(
+                    json['source'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        status: json['status'] != null
+            ? SdkPresent((json['status'] != null
+                ? GetConfigurationsResponseVariant1ItemStatus.fromJson(
+                    json['status'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        teamId: json.containsKey('teamId')
+            ? SdkPresent(json['teamId'] as String?)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? GetConfigurationsResponseVariant1ItemType.fromJson(
+                json['type'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        userId: (json['userId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (acceptedPoliciesInheritedFromInstallationId) {
-      SdkPresent<String>(value: final value) => {'acceptedPoliciesInheritedFromInstallationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (completedAt) {
-      SdkPresent<double>(value: final value) => {'completedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    ...switch (customerDeleteRequestedAt) {
-      SdkPresent<double?>(value: final value) => {'customerDeleteRequestedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deletedAt) {
-      SdkPresent<double?>(value: final value) => {'deletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deleteRequestedAt) {
-      SdkPresent<double?>(value: final value) => {'deleteRequestedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledReason) {
-      SdkPresent<GetConfigurationsResponseVariant1ItemDisabledReason>(value: final value) => {'disabledReason': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (externalId) {
-      SdkPresent<String>(value: final value) => {'externalId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (installationType) {
-      SdkPresent<GetConfigurationsResponseVariant1ItemInstallationType>(value: final value) => {'installationType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'integration': integration.toJson(),
-    'integrationId': integrationId,
-    'ownerId': ownerId,
-    ...switch (projects) {
-      SdkPresent<List<String>>(value: final value) => {'projects': value,},
-      _ => const <String, dynamic>{},
-    },
-    'scopes': scopes,
-    'slug': slug,
-    ...switch (source) {
-      SdkPresent<GetConfigurationsResponseVariant1ItemSource>(value: final value) => {'source': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (status) {
-      SdkPresent<GetConfigurationsResponseVariant1ItemStatus>(value: final value) => {'status': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamId) {
-      SdkPresent<String?>(value: final value) => {'teamId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    'updatedAt': updatedAt,
-    'userId': userId,
-  };
+        ...switch (acceptedPoliciesInheritedFromInstallationId) {
+          SdkPresent<String>(value: final value) => {
+              'acceptedPoliciesInheritedFromInstallationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (completedAt) {
+          SdkPresent<double>(value: final value) => {
+              'completedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        ...switch (customerDeleteRequestedAt) {
+          SdkPresent<double?>(value: final value) => {
+              'customerDeleteRequestedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deletedAt) {
+          SdkPresent<double?>(value: final value) => {
+              'deletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deleteRequestedAt) {
+          SdkPresent<double?>(value: final value) => {
+              'deleteRequestedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledReason) {
+          SdkPresent<GetConfigurationsResponseVariant1ItemDisabledReason>(
+            value: final value
+          ) =>
+            {
+              'disabledReason': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (externalId) {
+          SdkPresent<String>(value: final value) => {
+              'externalId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (installationType) {
+          SdkPresent<GetConfigurationsResponseVariant1ItemInstallationType>(
+            value: final value
+          ) =>
+            {
+              'installationType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'integration': integration.toJson(),
+        'integrationId': integrationId,
+        'ownerId': ownerId,
+        ...switch (projects) {
+          SdkPresent<List<String>>(value: final value) => {
+              'projects': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'scopes': scopes,
+        'slug': slug,
+        ...switch (source) {
+          SdkPresent<GetConfigurationsResponseVariant1ItemSource>(
+            value: final value
+          ) =>
+            {
+              'source': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (status) {
+          SdkPresent<GetConfigurationsResponseVariant1ItemStatus>(
+            value: final value
+          ) =>
+            {
+              'status': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamId) {
+          SdkPresent<String?>(value: final value) => {
+              'teamId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        'updatedAt': updatedAt,
+        'userId': userId,
+      };
 }

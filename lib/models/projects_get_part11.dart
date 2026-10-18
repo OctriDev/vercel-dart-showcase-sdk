@@ -10,24 +10,35 @@ class GetProjectsResponseCreatorVariant2Integration {
   final String configurationId;
   final String integrationId;
 
-  const GetProjectsResponseCreatorVariant2Integration({required this.configurationId, required this.integrationId});
+  const GetProjectsResponseCreatorVariant2Integration(
+      {required this.configurationId, required this.integrationId});
 
-  GetProjectsResponseCreatorVariant2Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
+  GetProjectsResponseCreatorVariant2Integration Function(
+      {String configurationId, String integrationId}) get copyWith => _copyWith;
 
-  GetProjectsResponseCreatorVariant2Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => GetProjectsResponseCreatorVariant2Integration(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-  );
+  GetProjectsResponseCreatorVariant2Integration _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue}) =>
+      GetProjectsResponseCreatorVariant2Integration(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+      );
 
-  factory GetProjectsResponseCreatorVariant2Integration.fromJson(Map<String, dynamic> json) => GetProjectsResponseCreatorVariant2Integration(
-    configurationId: (json['configurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-  );
+  factory GetProjectsResponseCreatorVariant2Integration.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseCreatorVariant2Integration(
+        configurationId: (json['configurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    'integrationId': integrationId,
-  };
+        'configurationId': configurationId,
+        'integrationId': integrationId,
+      };
 }
 
 class GetProjectsResponseCreatorVariant2 {
@@ -36,24 +47,42 @@ class GetProjectsResponseCreatorVariant2 {
   final GetProjectsResponseCreatorVariant2Integration integration;
   final GetProjectsResponseCreatorVariant2Type type_;
 
-  const GetProjectsResponseCreatorVariant2({required this.integration, required this.type_});
+  const GetProjectsResponseCreatorVariant2(
+      {required this.integration, required this.type_});
 
-  GetProjectsResponseCreatorVariant2 Function({GetProjectsResponseCreatorVariant2Integration integration, GetProjectsResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseCreatorVariant2 Function(
+      {GetProjectsResponseCreatorVariant2Integration integration,
+      GetProjectsResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectsResponseCreatorVariant2(
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as GetProjectsResponseCreatorVariant2Integration,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseCreatorVariant2Type,
-  );
+  GetProjectsResponseCreatorVariant2 _copyWith(
+          {Object? integration = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetProjectsResponseCreatorVariant2(
+        integration: identical(integration, sdkOmittedValue)
+            ? this.integration
+            : integration as GetProjectsResponseCreatorVariant2Integration,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetProjectsResponseCreatorVariant2Type,
+      );
 
-  factory GetProjectsResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => GetProjectsResponseCreatorVariant2(
-    integration: (json['integration'] != null ? GetProjectsResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? GetProjectsResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectsResponseCreatorVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseCreatorVariant2(
+        integration: (json['integration'] != null
+            ? GetProjectsResponseCreatorVariant2Integration.fromJson(
+                json['integration'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetProjectsResponseCreatorVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integration': integration.toJson(),
-    'type': type_.toJson(),
-  };
+        'integration': integration.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class GetProjectsResponseCreatorVariant3 {
@@ -63,19 +92,29 @@ class GetProjectsResponseCreatorVariant3 {
 
   const GetProjectsResponseCreatorVariant3({required this.type_});
 
-  GetProjectsResponseCreatorVariant3 Function({GetProjectsResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseCreatorVariant3 Function(
+      {GetProjectsResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => GetProjectsResponseCreatorVariant3(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseCreatorVariant3Type,
-  );
+  GetProjectsResponseCreatorVariant3 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      GetProjectsResponseCreatorVariant3(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetProjectsResponseCreatorVariant3Type,
+      );
 
-  factory GetProjectsResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => GetProjectsResponseCreatorVariant3(
-    type_: (json['type'] != null ? GetProjectsResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectsResponseCreatorVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseCreatorVariant3(
+        type_: (json['type'] != null
+            ? GetProjectsResponseCreatorVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 sealed class GetProjectsResponseCreator {
@@ -84,200 +123,408 @@ sealed class GetProjectsResponseCreator {
   const GetProjectsResponseCreator();
   factory GetProjectsResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetProjectsResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(value); } } catch (_) {}
-      try { final value = GetProjectsResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(value); } } catch (_) {}
-      try { final value = GetProjectsResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(value); } } catch (_) {}
-      try { final value = GetProjectsResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(value); } } catch (_) {}
+      try {
+        final value = GetProjectsResponseCreatorVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetProjectsResponseCreatorVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetProjectsResponseCreatorVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetProjectsResponseCreatorVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(GetProjectsResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(GetProjectsResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(GetProjectsResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(GetProjectsResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(
+          GetProjectsResponseCreatorVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(
+          GetProjectsResponseCreatorVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(
+          GetProjectsResponseCreatorVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(
+          GetProjectsResponseCreatorVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for GetProjectsResponseCreator");
   }
   Object? toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0 extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0
+    extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant0 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1 extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1
+    extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant1 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2 extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2
+    extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant2 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3 extends GetProjectsResponseCreator {
+final class GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3
+    extends GetProjectsResponseCreator {
   final GetProjectsResponseCreatorVariant3 value;
-  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectsResponseCreatorGetProjectsResponseCreatorVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target target;
-  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type type_;
+  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+      target;
+  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+      type_;
 
-  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0({required this.target, required this.type_});
+  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+      {required this.target, required this.type_});
 
-  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 Function({GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target target, GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 Function(
+      {GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          target,
+      GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+          type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 _copyWith({Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-    target: identical(target, sdkOmittedValue) ? this.target : target as GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type,
-  );
+  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
+      _copyWith(
+              {Object? target = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+            target: identical(target, sdkOmittedValue)
+                ? this.target
+                : target
+                    as GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type,
+          );
 
-  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(Map<String, dynamic> json) => GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-    target: (json['target'] != null ? GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(json['target'] as String) : null)!,
-    type_: (json['type'] != null ? GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+        target: (json['target'] != null
+            ? GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+                .fromJson(json['target'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'target': target.toJson(),
-    'type': type_.toJson(),
-  };
+        'target': target.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String environmentId;
-  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type type_;
+  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+      type_;
 
-  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1({required this.environmentId, required this.type_});
+  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+      {required this.environmentId, required this.type_});
 
-  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 Function({String environmentId, GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 Function(
+      {String environmentId,
+      GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 _copyWith({Object? environmentId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-    environmentId: identical(environmentId, sdkOmittedValue) ? this.environmentId : environmentId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type,
-  );
+  GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
+      _copyWith(
+              {Object? environmentId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+            environmentId: identical(environmentId, sdkOmittedValue)
+                ? this.environmentId
+                : environmentId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type,
+          );
 
-  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(Map<String, dynamic> json) => GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-    environmentId: (json['environmentId'] as String?)!,
-    type_: (json['type'] != null ? GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+        environmentId: (json['environmentId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'environmentId': environmentId,
-    'type': type_.toJson(),
-  };
+        'environmentId': environmentId,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem();
-  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem.fromJson(Object? json) {
+  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(value); } } catch (_) {}
-      try { final value = GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem");
+    try {
+      return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+          GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+          GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem");
   }
   Object? toJson();
 }
 
-final class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 extends GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
-  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 value;
-  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
+    extends GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
+  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
+      value;
+  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 extends GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
-  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 value;
-  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
+    extends GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
+  final GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
+      value;
+  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target target;
-  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type type_;
+  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+      target;
+  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+      type_;
 
-  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0({required this.target, required this.type_});
+  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+      {required this.target, required this.type_});
 
-  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 Function({GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target target, GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 Function(
+      {GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+          target,
+      GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+          type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 _copyWith({Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-    target: identical(target, sdkOmittedValue) ? this.target : target as GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type,
-  );
+  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
+      _copyWith(
+              {Object? target = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+            target: identical(target, sdkOmittedValue)
+                ? this.target
+                : target
+                    as GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type,
+          );
 
-  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(Map<String, dynamic> json) => GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-    target: (json['target'] != null ? GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(json['target'] as String) : null)!,
-    type_: (json['type'] != null ? GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+        target: (json['target'] != null
+            ? GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+                .fromJson(json['target'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'target': target.toJson(),
-    'type': type_.toJson(),
-  };
+        'target': target.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String environmentId;
-  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type type_;
+  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+      type_;
 
-  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1({required this.environmentId, required this.type_});
+  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+      {required this.environmentId, required this.type_});
 
-  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 Function({String environmentId, GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type type_}) get copyWith => _copyWith;
+  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 Function(
+      {String environmentId,
+      GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 _copyWith({Object? environmentId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-    environmentId: identical(environmentId, sdkOmittedValue) ? this.environmentId : environmentId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type,
-  );
+  GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
+      _copyWith(
+              {Object? environmentId = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+            environmentId: identical(environmentId, sdkOmittedValue)
+                ? this.environmentId
+                : environmentId as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type,
+          );
 
-  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(Map<String, dynamic> json) => GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-    environmentId: (json['environmentId'] as String?)!,
-    type_: (json['type'] != null ? GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+        environmentId: (json['environmentId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'environmentId': environmentId,
-    'type': type_.toJson(),
-  };
+        'environmentId': environmentId,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem();
-  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem.fromJson(Object? json) {
+  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(value); } } catch (_) {}
-      try { final value = GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem");
+    try {
+      return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+          GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+          GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem");
   }
   Object? toJson();
 }
 
-final class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 extends GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
-  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 value;
-  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
+    extends GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
+  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
+      value;
+  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 extends GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
-  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 value;
-  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
+    extends GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
+  final GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
+      value;
+  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemGetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

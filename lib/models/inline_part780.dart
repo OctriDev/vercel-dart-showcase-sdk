@@ -7,45 +7,104 @@ part of 'inline.dart';
 class GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Which tracing destination this rule applies to. `internal` is the hidden Vercel production-tracing drain (internal delivery); `external` is any customer-configured drain. Derived from the owning drain's delivery type when project tracing is computed; absent on configs persisted before this field existed.
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination> destination;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv> env;
+  final SdkOptional<
+          GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination>
+      destination;
+  final SdkOptional<
+          GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv>
+      env;
   final double rate;
   final SdkOptional<String> requestPath;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem({this.destination = const SdkOmitted(), this.env = const SdkOmitted(), required this.rate, this.requestPath = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem(
+      {this.destination = const SdkOmitted(),
+      this.env = const SdkOmitted(),
+      required this.rate,
+      this.requestPath = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination> destination, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv> env, double rate, SdkOptional<String> requestPath}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem Function(
+      {SdkOptional<
+              GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination>
+          destination,
+      SdkOptional<
+              GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv>
+          env,
+      double rate,
+      SdkOptional<String> requestPath}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem _copyWith({Object? destination = sdkOmittedValue, Object? env = sdkOmittedValue, Object? rate = sdkOmittedValue, Object? requestPath = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem(
-    destination: identical(destination, sdkOmittedValue) ? this.destination : destination as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination>,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv>,
-    rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
-    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as SdkOptional<String>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem
+      _copyWith(
+              {Object? destination = sdkOmittedValue,
+              Object? env = sdkOmittedValue,
+              Object? rate = sdkOmittedValue,
+              Object? requestPath = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem(
+            destination: identical(destination, sdkOmittedValue)
+                ? this.destination
+                : destination as SdkOptional<
+                    GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination>,
+            env: identical(env, sdkOmittedValue)
+                ? this.env
+                : env as SdkOptional<
+                    GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv>,
+            rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
+            requestPath: identical(requestPath, sdkOmittedValue)
+                ? this.requestPath
+                : requestPath as SdkOptional<String>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem(
-    destination: json['destination'] != null ? SdkPresent((json['destination'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination.fromJson(json['destination'] as String) : null)!) : const SdkOmitted(),
-    env: json['env'] != null ? SdkPresent((json['env'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv.fromJson(json['env'] as String) : null)!) : const SdkOmitted(),
-    rate: ((json['rate'] as num?)?.toDouble())!,
-    requestPath: json['requestPath'] != null ? SdkPresent((json['requestPath'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem(
+        destination: json['destination'] != null
+            ? SdkPresent((json['destination'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination
+                    .fromJson(json['destination'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        env: json['env'] != null
+            ? SdkPresent((json['env'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv
+                    .fromJson(json['env'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        rate: ((json['rate'] as num?)?.toDouble())!,
+        requestPath: json['requestPath'] != null
+            ? SdkPresent((json['requestPath'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (destination) {
-      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination>(value: final value) => {'destination': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (env) {
-      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv>(value: final value) => {'env': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'rate': rate,
-    ...switch (requestPath) {
-      SdkPresent<String>(value: final value) => {'requestPath': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (destination) {
+          SdkPresent<
+                GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemDestination>(
+            value: final value
+          ) =>
+            {
+              'destination': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (env) {
+          SdkPresent<
+                GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItemEnv>(
+            value: final value
+          ) =>
+            {
+              'env': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'rate': rate,
+        ...switch (requestPath) {
+          SdkPresent<String>(value: final value) => {
+              'requestPath': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemTracing {
@@ -53,100 +112,204 @@ class GetMicrofrontendsInGroupResponseProjectsItemTracing {
   static const String constructionSurface = 'named';
   final SdkOptional<String> domains;
   final SdkOptional<List<String>> ignorePaths;
-  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>> samplingRules;
+  final SdkOptional<
+          List<
+              GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>>
+      samplingRules;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTracing({this.domains = const SdkOmitted(), this.ignorePaths = const SdkOmitted(), this.samplingRules = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemTracing(
+      {this.domains = const SdkOmitted(),
+      this.ignorePaths = const SdkOmitted(),
+      this.samplingRules = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTracing Function({SdkOptional<String> domains, SdkOptional<List<String>> ignorePaths, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>> samplingRules}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTracing Function(
+      {SdkOptional<String> domains,
+      SdkOptional<List<String>> ignorePaths,
+      SdkOptional<
+              List<
+                  GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>>
+          samplingRules}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTracing _copyWith({Object? domains = sdkOmittedValue, Object? ignorePaths = sdkOmittedValue, Object? samplingRules = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTracing(
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<String>,
-    ignorePaths: identical(ignorePaths, sdkOmittedValue) ? this.ignorePaths : ignorePaths as SdkOptional<List<String>>,
-    samplingRules: identical(samplingRules, sdkOmittedValue) ? this.samplingRules : samplingRules as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTracing _copyWith(
+          {Object? domains = sdkOmittedValue,
+          Object? ignorePaths = sdkOmittedValue,
+          Object? samplingRules = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTracing(
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as SdkOptional<String>,
+        ignorePaths: identical(ignorePaths, sdkOmittedValue)
+            ? this.ignorePaths
+            : ignorePaths as SdkOptional<List<String>>,
+        samplingRules: identical(samplingRules, sdkOmittedValue)
+            ? this.samplingRules
+            : samplingRules as SdkOptional<
+                List<
+                    GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>>,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTracing.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTracing(
-    domains: json['domains'] != null ? SdkPresent((json['domains'] as String?)!) : const SdkOmitted(),
-    ignorePaths: json['ignorePaths'] != null ? SdkPresent(((json['ignorePaths'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    samplingRules: json['samplingRules'] != null ? SdkPresent(((json['samplingRules'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTracing.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTracing(
+        domains: json['domains'] != null
+            ? SdkPresent((json['domains'] as String?)!)
+            : const SdkOmitted(),
+        ignorePaths: json['ignorePaths'] != null
+            ? SdkPresent(((json['ignorePaths'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        samplingRules: json['samplingRules'] != null
+            ? SdkPresent(((json['samplingRules'] as List?)
+                ?.map((e) =>
+                    GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (domains) {
-      SdkPresent<String>(value: final value) => {'domains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ignorePaths) {
-      SdkPresent<List<String>>(value: final value) => {'ignorePaths': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (samplingRules) {
-      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>>(value: final value) => {'samplingRules': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (domains) {
+          SdkPresent<String>(value: final value) => {
+              'domains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ignorePaths) {
+          SdkPresent<List<String>>(value: final value) => {
+              'ignorePaths': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (samplingRules) {
+          SdkPresent<
+                List<
+                    GetMicrofrontendsInGroupResponseProjectsItemTracingSamplingRulesItem>>(
+            value: final value
+          ) =>
+            {
+              'samplingRules': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset;
+  final SdkOptional<
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 Function(
+      {SdkOptional<
+              GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset preset;
+  final GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 Function({GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
-    preset: (json['preset'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
+        preset: (json['preset'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem {
@@ -156,121 +319,231 @@ class GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersVal
   final Map<String, List<String>> claims;
   final SdkOptional<String> label;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem({required this.to, required this.claims, this.label = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem(
+      {required this.to,
+      required this.claims,
+      this.label = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem Function({dynamic to, Map<String, List<String>> claims, SdkOptional<String> label}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem Function(
+      {dynamic to,
+      Map<String, List<String>> claims,
+      SdkOptional<String> label}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem _copyWith({Object? to = sdkOmittedValue, Object? claims = sdkOmittedValue, Object? label = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem(
-    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as Map<String, List<String>>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem
+      _copyWith(
+              {Object? to = sdkOmittedValue,
+              Object? claims = sdkOmittedValue,
+              Object? label = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem(
+            to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+            claims: identical(claims, sdkOmittedValue)
+                ? this.claims
+                : claims as Map<String, List<String>>,
+            label: identical(label, sdkOmittedValue)
+                ? this.label
+                : label as SdkOptional<String>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem(
-    to: (json['to'])!,
-    claims: (json['claims'] == null ? null : Map<String, dynamic>.from(json['claims'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => item as String).toList())))!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesOidcProvidersValueItem(
+        to: (json['to'])!,
+        claims: (json['claims'] == null
+            ? null
+            : Map<String, dynamic>.from(json['claims'] as Map).map(
+                (key, value) => MapEntry(key,
+                    (value as List).map((item) => item as String).toList())))!,
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'to': to,
-    'claims': claims,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'to': to,
+        'claims': claims,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The source envs on the trusted project that are allowed to access `to`.
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset> preset;
+  final SdkOptional<
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 Function(
+      {SdkOptional<
+              GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The source envs on the trusted project that are allowed to access `to`.
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset preset;
+  final GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 Function({GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
-    preset: (json['preset'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+        preset: (json['preset'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset> preset;
+  final SdkOptional<
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 Function(
+      {SdkOptional<
+              GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                GetMicrofrontendsInGroupResponseProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }

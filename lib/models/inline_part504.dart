@@ -5,290 +5,417 @@ part of 'inline.dart';
 
 // Inline operation models (part 504)
 final class CreateProjectResponseConnectConfigurationsItemPassive {
-
   final bool value;
 
   const CreateProjectResponseConnectConfigurationsItemPassive._(this.value);
 
-  factory CreateProjectResponseConnectConfigurationsItemPassive.fromJson(bool value) => CreateProjectResponseConnectConfigurationsItemPassive._(value);
+  factory CreateProjectResponseConnectConfigurationsItemPassive.fromJson(
+          bool value) =>
+      CreateProjectResponseConnectConfigurationsItemPassive._(value);
 
-  static const false_ = CreateProjectResponseConnectConfigurationsItemPassive._(false);
-  static const true_ = CreateProjectResponseConnectConfigurationsItemPassive._(true);
+  static const false_ =
+      CreateProjectResponseConnectConfigurationsItemPassive._(false);
+  static const true_ =
+      CreateProjectResponseConnectConfigurationsItemPassive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseConnectConfigurationsItemPassive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseConnectConfigurationsItemPassive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the host was inferred from the production deployment URL rather than explicitly provided.
 final class CreateProjectResponseCronsDefinitionsItemHostInferred {
-
   final bool value;
 
   const CreateProjectResponseCronsDefinitionsItemHostInferred._(this.value);
 
-  factory CreateProjectResponseCronsDefinitionsItemHostInferred.fromJson(bool value) => CreateProjectResponseCronsDefinitionsItemHostInferred._(value);
+  factory CreateProjectResponseCronsDefinitionsItemHostInferred.fromJson(
+          bool value) =>
+      CreateProjectResponseCronsDefinitionsItemHostInferred._(value);
 
-  static const false_ = CreateProjectResponseCronsDefinitionsItemHostInferred._(false);
-  static const true_ = CreateProjectResponseCronsDefinitionsItemHostInferred._(true);
+  static const false_ =
+      CreateProjectResponseCronsDefinitionsItemHostInferred._(false);
+  static const true_ =
+      CreateProjectResponseCronsDefinitionsItemHostInferred._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseCronsDefinitionsItemHostInferred && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseCronsDefinitionsItemHostInferred &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The origin of this definition. 'api' means created via the API. Undefined means it originated from a deployment (vercel.json).
 final class CreateProjectResponseCronsDefinitionsItemSource {
-
   final String value;
 
   const CreateProjectResponseCronsDefinitionsItemSource._(this.value);
 
-  factory CreateProjectResponseCronsDefinitionsItemSource.fromJson(String value) => CreateProjectResponseCronsDefinitionsItemSource._(value);
+  factory CreateProjectResponseCronsDefinitionsItemSource.fromJson(
+          String value) =>
+      CreateProjectResponseCronsDefinitionsItemSource._(value);
 
   static const api = CreateProjectResponseCronsDefinitionsItemSource._('api');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseCronsDefinitionsItemSource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseCronsDefinitionsItemSource &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of matching to perform
 final class CreateProjectResponseCustomEnvironmentsItemBranchMatcherType {
-
   final String value;
 
-  const CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._(this.value);
+  const CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._(
+      this.value);
 
-  factory CreateProjectResponseCustomEnvironmentsItemBranchMatcherType.fromJson(String value) => CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._(value);
+  factory CreateProjectResponseCustomEnvironmentsItemBranchMatcherType.fromJson(
+          String value) =>
+      CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._(value);
 
-  static const endswith = CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._('endsWith');
-  static const equals = CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._('equals');
-  static const startswith = CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._('startsWith');
+  static const endswith =
+      CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._(
+          'endsWith');
+  static const equals =
+      CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._('equals');
+  static const startswith =
+      CreateProjectResponseCustomEnvironmentsItemBranchMatcherType._(
+          'startsWith');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseCustomEnvironmentsItemBranchMatcherType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseCustomEnvironmentsItemBranchMatcherType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode {
-
   final double value;
 
-  const CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(this.value);
+  const CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(
+      this.value);
 
-  factory CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode.fromJson(double value) => CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(value);
+  factory CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode.fromJson(
+          double value) =>
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
+          ._(value);
 
-  static const v301 = CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(301);
-  static const v302 = CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(302);
-  static const v307 = CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(307);
-  static const v308 = CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(308);
+  static const v301 =
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
+          ._(301);
+  static const v302 =
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
+          ._(302);
+  static const v307 =
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
+          ._(307);
+  static const v308 =
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
+          ._(308);
 
   double toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified {
-
   final bool value;
 
-  const CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(this.value);
+  const CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(
+      this.value);
 
-  factory CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified.fromJson(bool value) => CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(value);
+  factory CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified.fromJson(
+          bool value) =>
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(value);
 
-  static const false_ = CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(false);
-  static const true_ = CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(true);
+  static const false_ =
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(false);
+  static const true_ =
+      CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of environment (production, preview, or development)
 final class CreateProjectResponseCustomEnvironmentsItemType {
-
   final String value;
 
   const CreateProjectResponseCustomEnvironmentsItemType._(this.value);
 
-  factory CreateProjectResponseCustomEnvironmentsItemType.fromJson(String value) => CreateProjectResponseCustomEnvironmentsItemType._(value);
+  factory CreateProjectResponseCustomEnvironmentsItemType.fromJson(
+          String value) =>
+      CreateProjectResponseCustomEnvironmentsItemType._(value);
 
-  static const development = CreateProjectResponseCustomEnvironmentsItemType._('development');
-  static const preview = CreateProjectResponseCustomEnvironmentsItemType._('preview');
-  static const production = CreateProjectResponseCustomEnvironmentsItemType._('production');
+  static const development =
+      CreateProjectResponseCustomEnvironmentsItemType._('development');
+  static const preview =
+      CreateProjectResponseCustomEnvironmentsItemType._('preview');
+  static const production =
+      CreateProjectResponseCustomEnvironmentsItemType._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseCustomEnvironmentsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseCustomEnvironmentsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseCustomerSupportCodeVisibility {
-
   final bool value;
 
   const CreateProjectResponseCustomerSupportCodeVisibility._(this.value);
 
-  factory CreateProjectResponseCustomerSupportCodeVisibility.fromJson(bool value) => CreateProjectResponseCustomerSupportCodeVisibility._(value);
+  factory CreateProjectResponseCustomerSupportCodeVisibility.fromJson(
+          bool value) =>
+      CreateProjectResponseCustomerSupportCodeVisibility._(value);
 
-  static const false_ = CreateProjectResponseCustomerSupportCodeVisibility._(false);
-  static const true_ = CreateProjectResponseCustomerSupportCodeVisibility._(true);
+  static const false_ =
+      CreateProjectResponseCustomerSupportCodeVisibility._(false);
+  static const true_ =
+      CreateProjectResponseCustomerSupportCodeVisibility._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseCustomerSupportCodeVisibility && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseCustomerSupportCodeVisibility &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseDataCacheUnlimited {
-
   final bool value;
 
   const CreateProjectResponseDataCacheUnlimited._(this.value);
 
-  factory CreateProjectResponseDataCacheUnlimited.fromJson(bool value) => CreateProjectResponseDataCacheUnlimited._(value);
+  factory CreateProjectResponseDataCacheUnlimited.fromJson(bool value) =>
+      CreateProjectResponseDataCacheUnlimited._(value);
 
   static const false_ = CreateProjectResponseDataCacheUnlimited._(false);
   static const true_ = CreateProjectResponseDataCacheUnlimited._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseDataCacheUnlimited && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseDataCacheUnlimited && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseDataCacheUserDisabled {
-
   final bool value;
 
   const CreateProjectResponseDataCacheUserDisabled._(this.value);
 
-  factory CreateProjectResponseDataCacheUserDisabled.fromJson(bool value) => CreateProjectResponseDataCacheUserDisabled._(value);
+  factory CreateProjectResponseDataCacheUserDisabled.fromJson(bool value) =>
+      CreateProjectResponseDataCacheUserDisabled._(value);
 
   static const false_ = CreateProjectResponseDataCacheUserDisabled._(false);
   static const true_ = CreateProjectResponseDataCacheUserDisabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseDataCacheUserDisabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseDataCacheUserDisabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason {
-
   final String value;
 
-  const CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(this.value);
+  const CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+      this.value);
 
-  factory CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason.fromJson(String value) => CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(value);
+  factory CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason.fromJson(
+          String value) =>
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          value);
 
-  static const basicFloor = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('basic-floor');
-  static const buildTimeoutFailure = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('build-timeout-failure');
-  static const enospcFailure = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('enospc-failure');
-  static const enterpriseFloor = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('enterprise-floor');
-  static const highPeakDisk = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('high-peak-disk');
-  static const highPeakMemory = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('high-peak-memory');
-  static const longBuildDuration = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('long-build-duration');
-  static const oomFailure = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('oom-failure');
-  static const shortBuildDuration = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('short-build-duration');
-  static const sustainedHighCpu = CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._('sustained-high-cpu');
+  static const basicFloor =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'basic-floor');
+  static const buildTimeoutFailure =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'build-timeout-failure');
+  static const enospcFailure =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'enospc-failure');
+  static const enterpriseFloor =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'enterprise-floor');
+  static const highPeakDisk =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'high-peak-disk');
+  static const highPeakMemory =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'high-peak-memory');
+  static const longBuildDuration =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'long-build-duration');
+  static const oomFailure =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'oom-failure');
+  static const shortBuildDuration =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'short-build-duration');
+  static const sustainedHighCpu =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason._(
+          'sustained-high-cpu');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseDefaultResourceConfigBuildMachineElasticReason &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection {
-
   final String value;
 
-  const CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._(this.value);
+  const CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._(
+      this.value);
 
-  factory CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection.fromJson(String value) => CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._(value);
+  factory CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection.fromJson(
+          String value) =>
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
+          ._(value);
 
-  static const downgrade = CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._('downgrade');
-  static const upgrade = CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._('upgrade');
+  static const downgrade =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
+          ._('downgrade');
+  static const upgrade =
+      CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
+          ._('upgrade');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseDefaultResourceConfigBuildMachineElasticTransitionDirection &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseDefaultResourceConfigBuildMachineSelection {
-
   final String value;
 
-  const CreateProjectResponseDefaultResourceConfigBuildMachineSelection._(this.value);
+  const CreateProjectResponseDefaultResourceConfigBuildMachineSelection._(
+      this.value);
 
-  factory CreateProjectResponseDefaultResourceConfigBuildMachineSelection.fromJson(String value) => CreateProjectResponseDefaultResourceConfigBuildMachineSelection._(value);
+  factory CreateProjectResponseDefaultResourceConfigBuildMachineSelection.fromJson(
+          String value) =>
+      CreateProjectResponseDefaultResourceConfigBuildMachineSelection._(value);
 
-  static const elastic = CreateProjectResponseDefaultResourceConfigBuildMachineSelection._('elastic');
-  static const fixed = CreateProjectResponseDefaultResourceConfigBuildMachineSelection._('fixed');
+  static const elastic =
+      CreateProjectResponseDefaultResourceConfigBuildMachineSelection._(
+          'elastic');
+  static const fixed =
+      CreateProjectResponseDefaultResourceConfigBuildMachineSelection._(
+          'fixed');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseDefaultResourceConfigBuildMachineSelection && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseDefaultResourceConfigBuildMachineSelection &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

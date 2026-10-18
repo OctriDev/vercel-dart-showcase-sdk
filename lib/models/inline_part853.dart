@@ -8,62 +8,117 @@ part of 'inline.dart';
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset preset;
+  final ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 Function({ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 Function(
+      {ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
-    preset: (json['preset'] != null ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1(
+        preset: (json['preset'] != null
+            ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItemToVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem {
@@ -73,154 +128,289 @@ class ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueIt
   final Map<String, List<String>> claims;
   final SdkOptional<String> label;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem({required this.to, required this.claims, this.label = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem(
+      {required this.to,
+      required this.claims,
+      this.label = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem Function({dynamic to, Map<String, List<String>> claims, SdkOptional<String> label}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem Function(
+      {dynamic to,
+      Map<String, List<String>> claims,
+      SdkOptional<String> label}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem _copyWith({Object? to = sdkOmittedValue, Object? claims = sdkOmittedValue, Object? label = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem(
-    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as Map<String, List<String>>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem
+      _copyWith(
+              {Object? to = sdkOmittedValue,
+              Object? claims = sdkOmittedValue,
+              Object? label = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem(
+            to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+            claims: identical(claims, sdkOmittedValue)
+                ? this.claims
+                : claims as Map<String, List<String>>,
+            label: identical(label, sdkOmittedValue)
+                ? this.label
+                : label as SdkOptional<String>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem(
-    to: (json['to'])!,
-    claims: (json['claims'] == null ? null : Map<String, dynamic>.from(json['claims'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => item as String).toList())))!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesOidcProvidersValueItem(
+        to: (json['to'])!,
+        claims: (json['claims'] == null
+            ? null
+            : Map<String, dynamic>.from(json['claims'] as Map).map(
+                (key, value) => MapEntry(key,
+                    (value as List).map((item) => item as String).toList())))!,
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'to': to,
-    'claims': claims,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'to': to,
+        'claims': claims,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The source envs on the trusted project that are allowed to access `to`.
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset> preset;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The source envs on the trusted project that are allowed to access `to`.
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset preset;
+  final ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 Function({ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 Function(
+      {ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
-    preset: (json['preset'] != null ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+        preset: (json['preset'] != null
+            ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset> preset;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset;
+  final ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function({ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function(
+      {ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-    preset: (json['preset'] != null ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+        preset: (json['preset'] != null
+            ? ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
@@ -230,55 +420,101 @@ class ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomA
   final dynamic from;
   final dynamic to;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem({required this.from, required this.to});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem(
+      {required this.from, required this.to});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem Function({dynamic from, dynamic to}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem
+      Function({dynamic from, dynamic to}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem _copyWith({Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem(
-    from: identical(from, sdkOmittedValue) ? this.from : from as dynamic,
-    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem
+      _copyWith(
+              {Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem(
+            from:
+                identical(from, sdkOmittedValue) ? this.from : from as dynamic,
+            to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem(
-    from: (json['from'])!,
-    to: (json['to'])!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem(
+        from: (json['from'])!,
+        to: (json['to'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'from': from,
-    'to': to,
-  };
+        'from': from,
+        'to': to,
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
-  final SdkOptional<List<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>> customAllow;
+  final SdkOptional<
+          List<
+              ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>>
+      customAllow;
   final SdkOptional<String> label;
 
-  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue({this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue(
+      {this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue Function({SdkOptional<List<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>> customAllow, SdkOptional<String> label}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue Function(
+      {SdkOptional<
+              List<
+                  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>>
+          customAllow,
+      SdkOptional<String> label}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue _copyWith({Object? customAllow = sdkOmittedValue, Object? label = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue(
-    customAllow: identical(customAllow, sdkOmittedValue) ? this.customAllow : customAllow as SdkOptional<List<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-  );
+  ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue _copyWith(
+          {Object? customAllow = sdkOmittedValue,
+          Object? label = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue(
+        customAllow: identical(customAllow, sdkOmittedValue)
+            ? this.customAllow
+            : customAllow as SdkOptional<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>>,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue(
-    customAllow: json['customAllow'] != null ? SdkPresent(((json['customAllow'] as List?)?.map((e) => ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValue(
+        customAllow: json['customAllow'] != null
+            ? SdkPresent(((json['customAllow'] as List?)
+                ?.map((e) =>
+                    ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (customAllow) {
-      SdkPresent<List<ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>>(value: final value) => {'customAllow': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (customAllow) {
+          SdkPresent<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemTrustedSourcesProjectsValueCustomAllowItem>>(
+            value: final value
+          ) =>
+            {
+              'customAllow': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -8,159 +8,321 @@ class ListSharedEnvVariableResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<ListSharedEnvVariableResponseDataItem> data;
+
   /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
   final Pagination pagination;
 
-  const ListSharedEnvVariableResponse({required this.data, required this.pagination});
+  const ListSharedEnvVariableResponse(
+      {required this.data, required this.pagination});
 
-  ListSharedEnvVariableResponse Function({List<ListSharedEnvVariableResponseDataItem> data, Pagination pagination}) get copyWith => _copyWith;
+  ListSharedEnvVariableResponse Function(
+      {List<ListSharedEnvVariableResponseDataItem> data,
+      Pagination pagination}) get copyWith => _copyWith;
 
-  ListSharedEnvVariableResponse _copyWith({Object? data = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListSharedEnvVariableResponse(
-    data: identical(data, sdkOmittedValue) ? this.data : data as List<ListSharedEnvVariableResponseDataItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Pagination,
-  );
+  ListSharedEnvVariableResponse _copyWith(
+          {Object? data = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListSharedEnvVariableResponse(
+        data: identical(data, sdkOmittedValue)
+            ? this.data
+            : data as List<ListSharedEnvVariableResponseDataItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as Pagination,
+      );
 
-  factory ListSharedEnvVariableResponse.fromJson(Map<String, dynamic> json) => ListSharedEnvVariableResponse(
-    data: ((json['data'] as List?)?.map((e) => ListSharedEnvVariableResponseDataItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  );
+  factory ListSharedEnvVariableResponse.fromJson(Map<String, dynamic> json) =>
+      ListSharedEnvVariableResponse(
+        data: ((json['data'] as List?)
+            ?.map((e) => ListSharedEnvVariableResponseDataItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        pagination: (json['pagination'] != null
+            ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'data': data.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'data': data.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 /// Incrementally update project linking without specifying the full list
 class UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Project IDs to add to this environment variable
   final SdkOptional<List<String>> link;
+
   /// Project IDs to remove from this environment variable
   final SdkOptional<List<String>> unlink;
 
-  const UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates({this.link = const SdkOmitted(), this.unlink = const SdkOmitted()});
+  const UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates(
+      {this.link = const SdkOmitted(), this.unlink = const SdkOmitted()});
 
-  UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates Function({SdkOptional<List<String>> link, SdkOptional<List<String>> unlink}) get copyWith => _copyWith;
+  UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates Function(
+      {SdkOptional<List<String>> link,
+      SdkOptional<List<String>> unlink}) get copyWith => _copyWith;
 
-  UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates _copyWith({Object? link = sdkOmittedValue, Object? unlink = sdkOmittedValue}) => UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates(
-    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<List<String>>,
-    unlink: identical(unlink, sdkOmittedValue) ? this.unlink : unlink as SdkOptional<List<String>>,
-  );
+  UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates _copyWith(
+          {Object? link = sdkOmittedValue, Object? unlink = sdkOmittedValue}) =>
+      UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates(
+        link: identical(link, sdkOmittedValue)
+            ? this.link
+            : link as SdkOptional<List<String>>,
+        unlink: identical(unlink, sdkOmittedValue)
+            ? this.unlink
+            : unlink as SdkOptional<List<String>>,
+      );
 
-  factory UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates.fromJson(Map<String, dynamic> json) => UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates(
-    link: json['link'] != null ? SdkPresent(((json['link'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    unlink: json['unlink'] != null ? SdkPresent(((json['unlink'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates(
+        link: json['link'] != null
+            ? SdkPresent(
+                ((json['link'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        unlink: json['unlink'] != null
+            ? SdkPresent(
+                ((json['unlink'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (link) {
-      SdkPresent<List<String>>(value: final value) => {'link': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (unlink) {
-      SdkPresent<List<String>>(value: final value) => {'unlink': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (link) {
+          SdkPresent<List<String>>(value: final value) => {
+              'link': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (unlink) {
+          SdkPresent<List<String>>(value: final value) => {
+              'unlink': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateSharedEnvVariableRequestBodyUpdatesValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The name of the Shared Environment Variable
   final SdkOptional<String> key;
+
   /// The value of the Shared Environment Variable
   final SdkOptional<String> value;
+
   /// The target environment of the Shared Environment Variable
-  final SdkOptional<List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>> target;
+  final SdkOptional<
+      List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>> target;
+
   /// Associate a Shared Environment Variable to projects.
   final SdkOptional<List<String>> projectId;
+
   /// Incrementally update project linking without specifying the full list
-  final SdkOptional<UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates> projectIdUpdates;
+  final SdkOptional<
+          UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates>
+      projectIdUpdates;
+
   /// The new type of the Shared Environment Variable
   final SdkOptional<UpdateSharedEnvVariableRequestBodyUpdatesValueType> type_;
+
   /// A comment to add context on what this Shared Environment Variable is for
   final SdkOptional<String> comment;
 
-  const UpdateSharedEnvVariableRequestBodyUpdatesValue({this.key = const SdkOmitted(), this.value = const SdkOmitted(), this.target = const SdkOmitted(), this.projectId = const SdkOmitted(), this.projectIdUpdates = const SdkOmitted(), this.type_ = const SdkOmitted(), this.comment = const SdkOmitted()});
+  const UpdateSharedEnvVariableRequestBodyUpdatesValue(
+      {this.key = const SdkOmitted(),
+      this.value = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      this.projectIdUpdates = const SdkOmitted(),
+      this.type_ = const SdkOmitted(),
+      this.comment = const SdkOmitted()});
 
-  UpdateSharedEnvVariableRequestBodyUpdatesValue Function({SdkOptional<String> key, SdkOptional<String> value, SdkOptional<List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>> target, SdkOptional<List<String>> projectId, SdkOptional<UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates> projectIdUpdates, SdkOptional<UpdateSharedEnvVariableRequestBodyUpdatesValueType> type_, SdkOptional<String> comment}) get copyWith => _copyWith;
+  UpdateSharedEnvVariableRequestBodyUpdatesValue Function(
+      {SdkOptional<String> key,
+      SdkOptional<String> value,
+      SdkOptional<
+              List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>>
+          target,
+      SdkOptional<List<String>> projectId,
+      SdkOptional<
+              UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates>
+          projectIdUpdates,
+      SdkOptional<UpdateSharedEnvVariableRequestBodyUpdatesValueType> type_,
+      SdkOptional<String> comment}) get copyWith => _copyWith;
 
-  UpdateSharedEnvVariableRequestBodyUpdatesValue _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? target = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectIdUpdates = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? comment = sdkOmittedValue}) => UpdateSharedEnvVariableRequestBodyUpdatesValue(
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<List<String>>,
-    projectIdUpdates: identical(projectIdUpdates, sdkOmittedValue) ? this.projectIdUpdates : projectIdUpdates as SdkOptional<UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<UpdateSharedEnvVariableRequestBodyUpdatesValueType>,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-  );
+  UpdateSharedEnvVariableRequestBodyUpdatesValue _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectIdUpdates = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? comment = sdkOmittedValue}) =>
+      UpdateSharedEnvVariableRequestBodyUpdatesValue(
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<
+                List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<List<String>>,
+        projectIdUpdates: identical(projectIdUpdates, sdkOmittedValue)
+            ? this.projectIdUpdates
+            : projectIdUpdates as SdkOptional<
+                UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<
+                UpdateSharedEnvVariableRequestBodyUpdatesValueType>,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+      );
 
-  factory UpdateSharedEnvVariableRequestBodyUpdatesValue.fromJson(Map<String, dynamic> json) => UpdateSharedEnvVariableRequestBodyUpdatesValue(
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent(((json['target'] as List?)?.map((e) => UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent(((json['projectId'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    projectIdUpdates: json['projectIdUpdates'] != null ? SdkPresent((json['projectIdUpdates'] != null ? UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates.fromJson(json['projectIdUpdates'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? UpdateSharedEnvVariableRequestBodyUpdatesValueType.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateSharedEnvVariableRequestBodyUpdatesValue.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSharedEnvVariableRequestBodyUpdatesValue(
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+        target: json['target'] != null
+            ? SdkPresent(((json['target'] as List?)
+                ?.map((e) =>
+                    UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem
+                        .fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        projectId: json['projectId'] != null
+            ? SdkPresent(((json['projectId'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        projectIdUpdates: json['projectIdUpdates'] != null
+            ? SdkPresent((json['projectIdUpdates'] != null
+                ? UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates
+                    .fromJson(json['projectIdUpdates'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        type_: json['type'] != null
+            ? SdkPresent((json['type'] != null
+                ? UpdateSharedEnvVariableRequestBodyUpdatesValueType.fromJson(
+                    json['type'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>>(value: final value) => {'target': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<List<String>>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectIdUpdates) {
-      SdkPresent<UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates>(value: final value) => {'projectIdUpdates': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (type_) {
-      SdkPresent<UpdateSharedEnvVariableRequestBodyUpdatesValueType>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<
+                List<UpdateSharedEnvVariableRequestBodyUpdatesValueTargetItem>>(
+            value: final value
+          ) =>
+            {
+              'target': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<List<String>>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectIdUpdates) {
+          SdkPresent<
+                UpdateSharedEnvVariableRequestBodyUpdatesValueProjectIdUpdates>(
+            value: final value
+          ) =>
+            {
+              'projectIdUpdates': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (type_) {
+          SdkPresent<UpdateSharedEnvVariableRequestBodyUpdatesValueType>(
+            value: final value
+          ) =>
+            {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateSharedEnvVariableRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// An object where each key is an environment variable ID (not the key name) and the value is the update to apply
   final Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue> updates;
 
   const UpdateSharedEnvVariableRequestBody({required this.updates});
 
-  UpdateSharedEnvVariableRequestBody Function({Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue> updates}) get copyWith => _copyWith;
+  UpdateSharedEnvVariableRequestBody Function(
+          {Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue> updates})
+      get copyWith => _copyWith;
 
-  UpdateSharedEnvVariableRequestBody _copyWith({Object? updates = sdkOmittedValue}) => UpdateSharedEnvVariableRequestBody(
-    updates: identical(updates, sdkOmittedValue) ? this.updates : updates as Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue>,
-  );
+  UpdateSharedEnvVariableRequestBody _copyWith(
+          {Object? updates = sdkOmittedValue}) =>
+      UpdateSharedEnvVariableRequestBody(
+        updates: identical(updates, sdkOmittedValue)
+            ? this.updates
+            : updates
+                as Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue>,
+      );
 
-  factory UpdateSharedEnvVariableRequestBody.fromJson(Map<String, dynamic> json) => UpdateSharedEnvVariableRequestBody(
-    updates: (json['updates'] == null ? null : Map<String, dynamic>.from(json['updates'] as Map).map((key, value) => MapEntry(key, UpdateSharedEnvVariableRequestBodyUpdatesValue.fromJson(value as Map<String, dynamic>))))!,
-  );
+  factory UpdateSharedEnvVariableRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSharedEnvVariableRequestBody(
+        updates: (json['updates'] == null
+            ? null
+            : Map<String, dynamic>.from(json['updates'] as Map).map(
+                (key, value) => MapEntry(
+                    key,
+                    UpdateSharedEnvVariableRequestBodyUpdatesValue.fromJson(
+                        value as Map<String, dynamic>))))!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'updates': updates.map((key, value) => MapEntry(key, value.toJson())),
-  };
+        'updates': updates.map((key, value) => MapEntry(key, value.toJson())),
+      };
 }
 
 class UpdateSharedEnvVariableResponseFailedItemError {
@@ -178,78 +340,170 @@ class UpdateSharedEnvVariableResponseFailedItemError {
   final SdkOptional<dynamic> target;
   final SdkOptional<dynamic> value;
 
-  const UpdateSharedEnvVariableResponseFailedItemError({this.action = const SdkOmitted(), required this.code, this.envVarId = const SdkOmitted(), this.envVarKey = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.key = const SdkOmitted(), this.link = const SdkOmitted(), required this.message, this.project = const SdkOmitted(), this.target = const SdkOmitted(), this.value = const SdkOmitted()});
+  const UpdateSharedEnvVariableResponseFailedItemError(
+      {this.action = const SdkOmitted(),
+      required this.code,
+      this.envVarId = const SdkOmitted(),
+      this.envVarKey = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.link = const SdkOmitted(),
+      required this.message,
+      this.project = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      this.value = const SdkOmitted()});
 
-  UpdateSharedEnvVariableResponseFailedItemError Function({SdkOptional<String> action, String code, SdkOptional<String> envVarId, SdkOptional<String> envVarKey, SdkOptional<String> gitBranch, SdkOptional<String> key, SdkOptional<String> link, String message, SdkOptional<String> project, SdkOptional<dynamic> target, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  UpdateSharedEnvVariableResponseFailedItemError Function(
+      {SdkOptional<String> action,
+      String code,
+      SdkOptional<String> envVarId,
+      SdkOptional<String> envVarKey,
+      SdkOptional<String> gitBranch,
+      SdkOptional<String> key,
+      SdkOptional<String> link,
+      String message,
+      SdkOptional<String> project,
+      SdkOptional<dynamic> target,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  UpdateSharedEnvVariableResponseFailedItemError _copyWith({Object? action = sdkOmittedValue, Object? code = sdkOmittedValue, Object? envVarId = sdkOmittedValue, Object? envVarKey = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? key = sdkOmittedValue, Object? link = sdkOmittedValue, Object? message = sdkOmittedValue, Object? project = sdkOmittedValue, Object? target = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateSharedEnvVariableResponseFailedItemError(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<String>,
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    envVarId: identical(envVarId, sdkOmittedValue) ? this.envVarId : envVarId as SdkOptional<String>,
-    envVarKey: identical(envVarKey, sdkOmittedValue) ? this.envVarKey : envVarKey as SdkOptional<String>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<String>,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<String>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  UpdateSharedEnvVariableResponseFailedItemError _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? envVarId = sdkOmittedValue,
+          Object? envVarKey = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? link = sdkOmittedValue,
+          Object? message = sdkOmittedValue,
+          Object? project = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateSharedEnvVariableResponseFailedItemError(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<String>,
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        envVarId: identical(envVarId, sdkOmittedValue)
+            ? this.envVarId
+            : envVarId as SdkOptional<String>,
+        envVarKey: identical(envVarKey, sdkOmittedValue)
+            ? this.envVarKey
+            : envVarKey as SdkOptional<String>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        link: identical(link, sdkOmittedValue)
+            ? this.link
+            : link as SdkOptional<String>,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as SdkOptional<String>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<dynamic>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<dynamic>,
+      );
 
-  factory UpdateSharedEnvVariableResponseFailedItemError.fromJson(Map<String, dynamic> json) => UpdateSharedEnvVariableResponseFailedItemError(
-    action: json['action'] != null ? SdkPresent((json['action'] as String?)!) : const SdkOmitted(),
-    code: (json['code'] as String?)!,
-    envVarId: json['envVarId'] != null ? SdkPresent((json['envVarId'] as String?)!) : const SdkOmitted(),
-    envVarKey: json['envVarKey'] != null ? SdkPresent((json['envVarKey'] as String?)!) : const SdkOmitted(),
-    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    link: json['link'] != null ? SdkPresent((json['link'] as String?)!) : const SdkOmitted(),
-    message: (json['message'] as String?)!,
-    project: json['project'] != null ? SdkPresent((json['project'] as String?)!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  );
+  factory UpdateSharedEnvVariableResponseFailedItemError.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSharedEnvVariableResponseFailedItemError(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] as String?)!)
+            : const SdkOmitted(),
+        code: (json['code'] as String?)!,
+        envVarId: json['envVarId'] != null
+            ? SdkPresent((json['envVarId'] as String?)!)
+            : const SdkOmitted(),
+        envVarKey: json['envVarKey'] != null
+            ? SdkPresent((json['envVarKey'] as String?)!)
+            : const SdkOmitted(),
+        gitBranch: json['gitBranch'] != null
+            ? SdkPresent((json['gitBranch'] as String?)!)
+            : const SdkOmitted(),
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        link: json['link'] != null
+            ? SdkPresent((json['link'] as String?)!)
+            : const SdkOmitted(),
+        message: (json['message'] as String?)!,
+        project: json['project'] != null
+            ? SdkPresent((json['project'] as String?)!)
+            : const SdkOmitted(),
+        target: json['target'] != null
+            ? SdkPresent((json['target'])!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<String>(value: final value) => {'action': value,},
-      _ => const <String, dynamic>{},
-    },
-    'code': code,
-    ...switch (envVarId) {
-      SdkPresent<String>(value: final value) => {'envVarId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (envVarKey) {
-      SdkPresent<String>(value: final value) => {'envVarKey': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (link) {
-      SdkPresent<String>(value: final value) => {'link': value,},
-      _ => const <String, dynamic>{},
-    },
-    'message': message,
-    ...switch (project) {
-      SdkPresent<String>(value: final value) => {'project': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<dynamic>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<String>(value: final value) => {
+              'action': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'code': code,
+        ...switch (envVarId) {
+          SdkPresent<String>(value: final value) => {
+              'envVarId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (envVarKey) {
+          SdkPresent<String>(value: final value) => {
+              'envVarKey': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (link) {
+          SdkPresent<String>(value: final value) => {
+              'link': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'message': message,
+        ...switch (project) {
+          SdkPresent<String>(value: final value) => {
+              'project': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<dynamic>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateSharedEnvVariableResponseFailedItem {
@@ -259,17 +513,28 @@ class UpdateSharedEnvVariableResponseFailedItem {
 
   const UpdateSharedEnvVariableResponseFailedItem({required this.error});
 
-  UpdateSharedEnvVariableResponseFailedItem Function({UpdateSharedEnvVariableResponseFailedItemError error}) get copyWith => _copyWith;
+  UpdateSharedEnvVariableResponseFailedItem Function(
+          {UpdateSharedEnvVariableResponseFailedItemError error})
+      get copyWith => _copyWith;
 
-  UpdateSharedEnvVariableResponseFailedItem _copyWith({Object? error = sdkOmittedValue}) => UpdateSharedEnvVariableResponseFailedItem(
-    error: identical(error, sdkOmittedValue) ? this.error : error as UpdateSharedEnvVariableResponseFailedItemError,
-  );
+  UpdateSharedEnvVariableResponseFailedItem _copyWith(
+          {Object? error = sdkOmittedValue}) =>
+      UpdateSharedEnvVariableResponseFailedItem(
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as UpdateSharedEnvVariableResponseFailedItemError,
+      );
 
-  factory UpdateSharedEnvVariableResponseFailedItem.fromJson(Map<String, dynamic> json) => UpdateSharedEnvVariableResponseFailedItem(
-    error: (json['error'] != null ? UpdateSharedEnvVariableResponseFailedItemError.fromJson(json['error'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateSharedEnvVariableResponseFailedItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSharedEnvVariableResponseFailedItem(
+        error: (json['error'] != null
+            ? UpdateSharedEnvVariableResponseFailedItemError.fromJson(
+                json['error'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'error': error.toJson(),
-  };
+        'error': error.toJson(),
+      };
 }

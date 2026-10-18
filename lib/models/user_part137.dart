@@ -8,279 +8,475 @@ part of 'user.dart';
 class UserEventPayloadVariant465 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `username` wire field.
   final String username;
+
   /// Okta user id.
   final String actorId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant465ActorType actorType;
 
-  const UserEventPayloadVariant465({required this.username, required this.actorId, this.actorName = const SdkOmitted(), required this.actorType});
+  const UserEventPayloadVariant465(
+      {required this.username,
+      required this.actorId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType});
 
-  UserEventPayloadVariant465 Function({String username, String actorId, SdkOptional<String> actorName, UserEventPayloadVariant465ActorType actorType}) get copyWith => _copyWith;
+  UserEventPayloadVariant465 Function(
+      {String username,
+      String actorId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant465ActorType actorType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant465 _copyWith({Object? username = sdkOmittedValue, Object? actorId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue}) => UserEventPayloadVariant465(
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-    actorId: identical(actorId, sdkOmittedValue) ? this.actorId : actorId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant465ActorType,
-  );
+  UserEventPayloadVariant465 _copyWith(
+          {Object? username = sdkOmittedValue,
+          Object? actorId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue}) =>
+      UserEventPayloadVariant465(
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+        actorId: identical(actorId, sdkOmittedValue)
+            ? this.actorId
+            : actorId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant465ActorType,
+      );
 
-  factory UserEventPayloadVariant465.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant465(
-    username: (json['username'] as String?)!,
-    actorId: (json['actorId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant465ActorType.fromJson(json['actorType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant465.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant465(
+        username: (json['username'] as String?)!,
+        actorId: (json['actorId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant465ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'username': username,
-    'actorId': actorId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-  };
+        'username': username,
+        'actorId': actorId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant466 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required `string` value serialized in the `repositoryName` wire field.
   final String repositoryName;
 
-  const UserEventPayloadVariant466({required this.projectId, required this.projectName, required this.repositoryName});
+  const UserEventPayloadVariant466(
+      {required this.projectId,
+      required this.projectName,
+      required this.repositoryName});
 
-  UserEventPayloadVariant466 Function({String projectId, String projectName, String repositoryName}) get copyWith => _copyWith;
+  UserEventPayloadVariant466 Function(
+      {String projectId,
+      String projectName,
+      String repositoryName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant466 _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? repositoryName = sdkOmittedValue}) => UserEventPayloadVariant466(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    repositoryName: identical(repositoryName, sdkOmittedValue) ? this.repositoryName : repositoryName as String,
-  );
+  UserEventPayloadVariant466 _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? repositoryName = sdkOmittedValue}) =>
+      UserEventPayloadVariant466(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        repositoryName: identical(repositoryName, sdkOmittedValue)
+            ? this.repositoryName
+            : repositoryName as String,
+      );
 
-  factory UserEventPayloadVariant466.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant466(
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-    repositoryName: (json['repositoryName'] as String?)!,
-  );
+  factory UserEventPayloadVariant466.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant466(
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+        repositoryName: (json['repositoryName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'projectName': projectName,
-    'repositoryName': repositoryName,
-  };
+        'projectId': projectId,
+        'projectName': projectName,
+        'repositoryName': repositoryName,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant467 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `digest` wire field.
   final String digest;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required `string` value serialized in the `reference` wire field.
   final String reference;
+
   /// Required `string` value serialized in the `repositoryName` wire field.
   final String repositoryName;
 
-  const UserEventPayloadVariant467({required this.digest, required this.projectId, required this.projectName, required this.reference, required this.repositoryName});
+  const UserEventPayloadVariant467(
+      {required this.digest,
+      required this.projectId,
+      required this.projectName,
+      required this.reference,
+      required this.repositoryName});
 
-  UserEventPayloadVariant467 Function({String digest, String projectId, String projectName, String reference, String repositoryName}) get copyWith => _copyWith;
+  UserEventPayloadVariant467 Function(
+      {String digest,
+      String projectId,
+      String projectName,
+      String reference,
+      String repositoryName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant467 _copyWith({Object? digest = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? reference = sdkOmittedValue, Object? repositoryName = sdkOmittedValue}) => UserEventPayloadVariant467(
-    digest: identical(digest, sdkOmittedValue) ? this.digest : digest as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    reference: identical(reference, sdkOmittedValue) ? this.reference : reference as String,
-    repositoryName: identical(repositoryName, sdkOmittedValue) ? this.repositoryName : repositoryName as String,
-  );
+  UserEventPayloadVariant467 _copyWith(
+          {Object? digest = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? reference = sdkOmittedValue,
+          Object? repositoryName = sdkOmittedValue}) =>
+      UserEventPayloadVariant467(
+        digest:
+            identical(digest, sdkOmittedValue) ? this.digest : digest as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        reference: identical(reference, sdkOmittedValue)
+            ? this.reference
+            : reference as String,
+        repositoryName: identical(repositoryName, sdkOmittedValue)
+            ? this.repositoryName
+            : repositoryName as String,
+      );
 
-  factory UserEventPayloadVariant467.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant467(
-    digest: (json['digest'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-    reference: (json['reference'] as String?)!,
-    repositoryName: (json['repositoryName'] as String?)!,
-  );
+  factory UserEventPayloadVariant467.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant467(
+        digest: (json['digest'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+        reference: (json['reference'] as String?)!,
+        repositoryName: (json['repositoryName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'digest': digest,
-    'projectId': projectId,
-    'projectName': projectName,
-    'reference': reference,
-    'repositoryName': repositoryName,
-  };
+        'digest': digest,
+        'projectId': projectId,
+        'projectName': projectName,
+        'reference': reference,
+        'repositoryName': repositoryName,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant468 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required `string` value serialized in the `reference` wire field.
   final String reference;
+
   /// Required `string` value serialized in the `repositoryName` wire field.
   final String repositoryName;
 
-  const UserEventPayloadVariant468({required this.projectId, required this.projectName, required this.reference, required this.repositoryName});
+  const UserEventPayloadVariant468(
+      {required this.projectId,
+      required this.projectName,
+      required this.reference,
+      required this.repositoryName});
 
-  UserEventPayloadVariant468 Function({String projectId, String projectName, String reference, String repositoryName}) get copyWith => _copyWith;
+  UserEventPayloadVariant468 Function(
+      {String projectId,
+      String projectName,
+      String reference,
+      String repositoryName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant468 _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? reference = sdkOmittedValue, Object? repositoryName = sdkOmittedValue}) => UserEventPayloadVariant468(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    reference: identical(reference, sdkOmittedValue) ? this.reference : reference as String,
-    repositoryName: identical(repositoryName, sdkOmittedValue) ? this.repositoryName : repositoryName as String,
-  );
+  UserEventPayloadVariant468 _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? reference = sdkOmittedValue,
+          Object? repositoryName = sdkOmittedValue}) =>
+      UserEventPayloadVariant468(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        reference: identical(reference, sdkOmittedValue)
+            ? this.reference
+            : reference as String,
+        repositoryName: identical(repositoryName, sdkOmittedValue)
+            ? this.repositoryName
+            : repositoryName as String,
+      );
 
-  factory UserEventPayloadVariant468.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant468(
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-    reference: (json['reference'] as String?)!,
-    repositoryName: (json['repositoryName'] as String?)!,
-  );
+  factory UserEventPayloadVariant468.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant468(
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+        reference: (json['reference'] as String?)!,
+        repositoryName: (json['repositoryName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'projectName': projectName,
-    'reference': reference,
-    'repositoryName': repositoryName,
-  };
+        'projectId': projectId,
+        'projectName': projectName,
+        'reference': reference,
+        'repositoryName': repositoryName,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant469 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required `string` value serialized in the `repositoryName` wire field.
   final String repositoryName;
+
   /// Required `string` value serialized in the `sharedWithTeamId` wire field.
   final String sharedWithTeamId;
+
   /// Required `string` value serialized in the `sharedWithTeamSlug` wire field.
   final String sharedWithTeamSlug;
 
-  const UserEventPayloadVariant469({required this.projectId, required this.projectName, required this.repositoryName, required this.sharedWithTeamId, required this.sharedWithTeamSlug});
+  const UserEventPayloadVariant469(
+      {required this.projectId,
+      required this.projectName,
+      required this.repositoryName,
+      required this.sharedWithTeamId,
+      required this.sharedWithTeamSlug});
 
-  UserEventPayloadVariant469 Function({String projectId, String projectName, String repositoryName, String sharedWithTeamId, String sharedWithTeamSlug}) get copyWith => _copyWith;
+  UserEventPayloadVariant469 Function(
+      {String projectId,
+      String projectName,
+      String repositoryName,
+      String sharedWithTeamId,
+      String sharedWithTeamSlug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant469 _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? repositoryName = sdkOmittedValue, Object? sharedWithTeamId = sdkOmittedValue, Object? sharedWithTeamSlug = sdkOmittedValue}) => UserEventPayloadVariant469(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    repositoryName: identical(repositoryName, sdkOmittedValue) ? this.repositoryName : repositoryName as String,
-    sharedWithTeamId: identical(sharedWithTeamId, sdkOmittedValue) ? this.sharedWithTeamId : sharedWithTeamId as String,
-    sharedWithTeamSlug: identical(sharedWithTeamSlug, sdkOmittedValue) ? this.sharedWithTeamSlug : sharedWithTeamSlug as String,
-  );
+  UserEventPayloadVariant469 _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? repositoryName = sdkOmittedValue,
+          Object? sharedWithTeamId = sdkOmittedValue,
+          Object? sharedWithTeamSlug = sdkOmittedValue}) =>
+      UserEventPayloadVariant469(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        repositoryName: identical(repositoryName, sdkOmittedValue)
+            ? this.repositoryName
+            : repositoryName as String,
+        sharedWithTeamId: identical(sharedWithTeamId, sdkOmittedValue)
+            ? this.sharedWithTeamId
+            : sharedWithTeamId as String,
+        sharedWithTeamSlug: identical(sharedWithTeamSlug, sdkOmittedValue)
+            ? this.sharedWithTeamSlug
+            : sharedWithTeamSlug as String,
+      );
 
-  factory UserEventPayloadVariant469.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant469(
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-    repositoryName: (json['repositoryName'] as String?)!,
-    sharedWithTeamId: (json['sharedWithTeamId'] as String?)!,
-    sharedWithTeamSlug: (json['sharedWithTeamSlug'] as String?)!,
-  );
+  factory UserEventPayloadVariant469.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant469(
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+        repositoryName: (json['repositoryName'] as String?)!,
+        sharedWithTeamId: (json['sharedWithTeamId'] as String?)!,
+        sharedWithTeamSlug: (json['sharedWithTeamSlug'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'projectName': projectName,
-    'repositoryName': repositoryName,
-    'sharedWithTeamId': sharedWithTeamId,
-    'sharedWithTeamSlug': sharedWithTeamSlug,
-  };
+        'projectId': projectId,
+        'projectName': projectName,
+        'repositoryName': repositoryName,
+        'sharedWithTeamId': sharedWithTeamId,
+        'sharedWithTeamSlug': sharedWithTeamSlug,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant470 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required `string` value serialized in the `repositoryName` wire field.
   final String repositoryName;
+
   /// Required `string` value serialized in the `sharedWithTeamId` wire field.
   final String sharedWithTeamId;
 
-  const UserEventPayloadVariant470({required this.projectId, required this.projectName, required this.repositoryName, required this.sharedWithTeamId});
+  const UserEventPayloadVariant470(
+      {required this.projectId,
+      required this.projectName,
+      required this.repositoryName,
+      required this.sharedWithTeamId});
 
-  UserEventPayloadVariant470 Function({String projectId, String projectName, String repositoryName, String sharedWithTeamId}) get copyWith => _copyWith;
+  UserEventPayloadVariant470 Function(
+      {String projectId,
+      String projectName,
+      String repositoryName,
+      String sharedWithTeamId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant470 _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? repositoryName = sdkOmittedValue, Object? sharedWithTeamId = sdkOmittedValue}) => UserEventPayloadVariant470(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    repositoryName: identical(repositoryName, sdkOmittedValue) ? this.repositoryName : repositoryName as String,
-    sharedWithTeamId: identical(sharedWithTeamId, sdkOmittedValue) ? this.sharedWithTeamId : sharedWithTeamId as String,
-  );
+  UserEventPayloadVariant470 _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? repositoryName = sdkOmittedValue,
+          Object? sharedWithTeamId = sdkOmittedValue}) =>
+      UserEventPayloadVariant470(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        repositoryName: identical(repositoryName, sdkOmittedValue)
+            ? this.repositoryName
+            : repositoryName as String,
+        sharedWithTeamId: identical(sharedWithTeamId, sdkOmittedValue)
+            ? this.sharedWithTeamId
+            : sharedWithTeamId as String,
+      );
 
-  factory UserEventPayloadVariant470.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant470(
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-    repositoryName: (json['repositoryName'] as String?)!,
-    sharedWithTeamId: (json['sharedWithTeamId'] as String?)!,
-  );
+  factory UserEventPayloadVariant470.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant470(
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+        repositoryName: (json['repositoryName'] as String?)!,
+        sharedWithTeamId: (json['sharedWithTeamId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'projectName': projectName,
-    'repositoryName': repositoryName,
-    'sharedWithTeamId': sharedWithTeamId,
-  };
+        'projectId': projectId,
+        'projectName': projectName,
+        'repositoryName': repositoryName,
+        'sharedWithTeamId': sharedWithTeamId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant471 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required enumerated value serialized in the `public` wire field.
   final UserEventPayloadVariant471Public public;
+
   /// Required `string` value serialized in the `repositoryName` wire field.
   final String repositoryName;
 
-  const UserEventPayloadVariant471({required this.projectId, required this.projectName, required this.public, required this.repositoryName});
+  const UserEventPayloadVariant471(
+      {required this.projectId,
+      required this.projectName,
+      required this.public,
+      required this.repositoryName});
 
-  UserEventPayloadVariant471 Function({String projectId, String projectName, UserEventPayloadVariant471Public public, String repositoryName}) get copyWith => _copyWith;
+  UserEventPayloadVariant471 Function(
+      {String projectId,
+      String projectName,
+      UserEventPayloadVariant471Public public,
+      String repositoryName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant471 _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? public = sdkOmittedValue, Object? repositoryName = sdkOmittedValue}) => UserEventPayloadVariant471(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    public: identical(public, sdkOmittedValue) ? this.public : public as UserEventPayloadVariant471Public,
-    repositoryName: identical(repositoryName, sdkOmittedValue) ? this.repositoryName : repositoryName as String,
-  );
+  UserEventPayloadVariant471 _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? public = sdkOmittedValue,
+          Object? repositoryName = sdkOmittedValue}) =>
+      UserEventPayloadVariant471(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        public: identical(public, sdkOmittedValue)
+            ? this.public
+            : public as UserEventPayloadVariant471Public,
+        repositoryName: identical(repositoryName, sdkOmittedValue)
+            ? this.repositoryName
+            : repositoryName as String,
+      );
 
-  factory UserEventPayloadVariant471.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant471(
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-    public: (json['public'] != null ? UserEventPayloadVariant471Public.fromJson(json['public'] as bool) : null)!,
-    repositoryName: (json['repositoryName'] as String?)!,
-  );
+  factory UserEventPayloadVariant471.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant471(
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+        public: (json['public'] != null
+            ? UserEventPayloadVariant471Public.fromJson(json['public'] as bool)
+            : null)!,
+        repositoryName: (json['repositoryName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'projectName': projectName,
-    'public': public.toJson(),
-    'repositoryName': repositoryName,
-  };
+        'projectId': projectId,
+        'projectName': projectName,
+        'public': public.toJson(),
+        'repositoryName': repositoryName,
+      };
 }

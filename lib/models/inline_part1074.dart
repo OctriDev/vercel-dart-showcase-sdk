@@ -7,162 +7,370 @@ part of 'inline.dart';
 class UpdateSandboxRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Resources to define the VM
   final SdkOptional<UpdateSandboxRequestBodyResources> resources;
+
   /// The runtime environment for the sandbox. Determines the pre-installed language runtimes and tools available.
   final SdkOptional<UpdateSandboxRequestBodyRuntime> runtime;
+
   /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.
   final SdkOptional<int> timeout;
+
   /// Whether the sandbox persists its state across restarts via automatic snapshots.
   final SdkOptional<bool> persistent;
+
   /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.
   final SdkOptional<int?> snapshotExpiration;
+
   /// Protect the N most recent snapshots with different expiration/deletion behavior. Set to null to clear.
   final SdkOptional<UpdateSandboxRequestKeepLastSnapshots> keepLastSnapshots;
+
   /// Typed representation of the `UpdateSandboxRequestNetworkPolicy` API schema.
   final SdkOptional<UpdateSandboxRequestNetworkPolicy> networkPolicy;
+
   /// The Vercel region in which to create the sandbox.
   final SdkOptional<UpdateSandboxRequestBodyRegion> region;
+
   /// The regions the sandbox falls back to when it cannot be created in `region`.
-  final SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>> failoverRegions;
+  final SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>>
+      failoverRegions;
+
   /// Drives to mount to the sandbox at the provided path. Replaces the current mounts; an empty object removes them all. Changes take effect when the next session starts.
   final SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>> mounts;
+
   /// The Connect network id for the target Secure Compute private network. Set to null to remove the sandbox from Secure Compute.
   final SdkOptional<String> networkId;
+
   /// Default environment variables for the sandbox. Set to empty object to clear.
   final SdkOptional<Map<String, String>> env;
+
   /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.
   final SdkOptional<List<int>> ports;
+
   /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
   final SdkOptional<String> currentSnapshotId;
+
   /// Key-value tags to associate with the sandbox. Replaces existing tags. Set to empty object to clear. Maximum 5 tags.
   final SdkOptional<Map<String, String>> tags;
 
-  const UpdateSandboxRequestBody({this.resources = const SdkOmitted(), this.runtime = const SdkOmitted(), this.timeout = const SdkOmitted(), this.persistent = const SdkOmitted(), this.snapshotExpiration = const SdkOmitted(), this.keepLastSnapshots = const SdkOmitted(), this.networkPolicy = const SdkOmitted(), this.region = const SdkOmitted(), this.failoverRegions = const SdkOmitted(), this.mounts = const SdkOmitted(), this.networkId = const SdkOmitted(), this.env = const SdkOmitted(), this.ports = const SdkOmitted(), this.currentSnapshotId = const SdkOmitted(), this.tags = const SdkOmitted()});
+  const UpdateSandboxRequestBody(
+      {this.resources = const SdkOmitted(),
+      this.runtime = const SdkOmitted(),
+      this.timeout = const SdkOmitted(),
+      this.persistent = const SdkOmitted(),
+      this.snapshotExpiration = const SdkOmitted(),
+      this.keepLastSnapshots = const SdkOmitted(),
+      this.networkPolicy = const SdkOmitted(),
+      this.region = const SdkOmitted(),
+      this.failoverRegions = const SdkOmitted(),
+      this.mounts = const SdkOmitted(),
+      this.networkId = const SdkOmitted(),
+      this.env = const SdkOmitted(),
+      this.ports = const SdkOmitted(),
+      this.currentSnapshotId = const SdkOmitted(),
+      this.tags = const SdkOmitted()});
 
-  UpdateSandboxRequestBody Function({SdkOptional<UpdateSandboxRequestBodyResources> resources, SdkOptional<UpdateSandboxRequestBodyRuntime> runtime, SdkOptional<int> timeout, SdkOptional<bool> persistent, SdkOptional<int?> snapshotExpiration, SdkOptional<UpdateSandboxRequestKeepLastSnapshots> keepLastSnapshots, SdkOptional<UpdateSandboxRequestNetworkPolicy> networkPolicy, SdkOptional<UpdateSandboxRequestBodyRegion> region, SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>> failoverRegions, SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>> mounts, SdkOptional<String> networkId, SdkOptional<Map<String, String>> env, SdkOptional<List<int>> ports, SdkOptional<String> currentSnapshotId, SdkOptional<Map<String, String>> tags}) get copyWith => _copyWith;
+  UpdateSandboxRequestBody Function(
+      {SdkOptional<UpdateSandboxRequestBodyResources> resources,
+      SdkOptional<UpdateSandboxRequestBodyRuntime> runtime,
+      SdkOptional<int> timeout,
+      SdkOptional<bool> persistent,
+      SdkOptional<int?> snapshotExpiration,
+      SdkOptional<UpdateSandboxRequestKeepLastSnapshots> keepLastSnapshots,
+      SdkOptional<UpdateSandboxRequestNetworkPolicy> networkPolicy,
+      SdkOptional<UpdateSandboxRequestBodyRegion> region,
+      SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>>
+          failoverRegions,
+      SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>> mounts,
+      SdkOptional<String> networkId,
+      SdkOptional<Map<String, String>> env,
+      SdkOptional<List<int>> ports,
+      SdkOptional<String> currentSnapshotId,
+      SdkOptional<Map<String, String>> tags}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestBody _copyWith({Object? resources = sdkOmittedValue, Object? runtime = sdkOmittedValue, Object? timeout = sdkOmittedValue, Object? persistent = sdkOmittedValue, Object? snapshotExpiration = sdkOmittedValue, Object? keepLastSnapshots = sdkOmittedValue, Object? networkPolicy = sdkOmittedValue, Object? region = sdkOmittedValue, Object? failoverRegions = sdkOmittedValue, Object? mounts = sdkOmittedValue, Object? networkId = sdkOmittedValue, Object? env = sdkOmittedValue, Object? ports = sdkOmittedValue, Object? currentSnapshotId = sdkOmittedValue, Object? tags = sdkOmittedValue}) => UpdateSandboxRequestBody(
-    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as SdkOptional<UpdateSandboxRequestBodyResources>,
-    runtime: identical(runtime, sdkOmittedValue) ? this.runtime : runtime as SdkOptional<UpdateSandboxRequestBodyRuntime>,
-    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as SdkOptional<int>,
-    persistent: identical(persistent, sdkOmittedValue) ? this.persistent : persistent as SdkOptional<bool>,
-    snapshotExpiration: identical(snapshotExpiration, sdkOmittedValue) ? this.snapshotExpiration : snapshotExpiration as SdkOptional<int?>,
-    keepLastSnapshots: identical(keepLastSnapshots, sdkOmittedValue) ? this.keepLastSnapshots : keepLastSnapshots as SdkOptional<UpdateSandboxRequestKeepLastSnapshots>,
-    networkPolicy: identical(networkPolicy, sdkOmittedValue) ? this.networkPolicy : networkPolicy as SdkOptional<UpdateSandboxRequestNetworkPolicy>,
-    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<UpdateSandboxRequestBodyRegion>,
-    failoverRegions: identical(failoverRegions, sdkOmittedValue) ? this.failoverRegions : failoverRegions as SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>>,
-    mounts: identical(mounts, sdkOmittedValue) ? this.mounts : mounts as SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>>,
-    networkId: identical(networkId, sdkOmittedValue) ? this.networkId : networkId as SdkOptional<String>,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<Map<String, String>>,
-    ports: identical(ports, sdkOmittedValue) ? this.ports : ports as SdkOptional<List<int>>,
-    currentSnapshotId: identical(currentSnapshotId, sdkOmittedValue) ? this.currentSnapshotId : currentSnapshotId as SdkOptional<String>,
-    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as SdkOptional<Map<String, String>>,
-  );
+  UpdateSandboxRequestBody _copyWith(
+          {Object? resources = sdkOmittedValue,
+          Object? runtime = sdkOmittedValue,
+          Object? timeout = sdkOmittedValue,
+          Object? persistent = sdkOmittedValue,
+          Object? snapshotExpiration = sdkOmittedValue,
+          Object? keepLastSnapshots = sdkOmittedValue,
+          Object? networkPolicy = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? failoverRegions = sdkOmittedValue,
+          Object? mounts = sdkOmittedValue,
+          Object? networkId = sdkOmittedValue,
+          Object? env = sdkOmittedValue,
+          Object? ports = sdkOmittedValue,
+          Object? currentSnapshotId = sdkOmittedValue,
+          Object? tags = sdkOmittedValue}) =>
+      UpdateSandboxRequestBody(
+        resources: identical(resources, sdkOmittedValue)
+            ? this.resources
+            : resources as SdkOptional<UpdateSandboxRequestBodyResources>,
+        runtime: identical(runtime, sdkOmittedValue)
+            ? this.runtime
+            : runtime as SdkOptional<UpdateSandboxRequestBodyRuntime>,
+        timeout: identical(timeout, sdkOmittedValue)
+            ? this.timeout
+            : timeout as SdkOptional<int>,
+        persistent: identical(persistent, sdkOmittedValue)
+            ? this.persistent
+            : persistent as SdkOptional<bool>,
+        snapshotExpiration: identical(snapshotExpiration, sdkOmittedValue)
+            ? this.snapshotExpiration
+            : snapshotExpiration as SdkOptional<int?>,
+        keepLastSnapshots: identical(keepLastSnapshots, sdkOmittedValue)
+            ? this.keepLastSnapshots
+            : keepLastSnapshots
+                as SdkOptional<UpdateSandboxRequestKeepLastSnapshots>,
+        networkPolicy: identical(networkPolicy, sdkOmittedValue)
+            ? this.networkPolicy
+            : networkPolicy as SdkOptional<UpdateSandboxRequestNetworkPolicy>,
+        region: identical(region, sdkOmittedValue)
+            ? this.region
+            : region as SdkOptional<UpdateSandboxRequestBodyRegion>,
+        failoverRegions: identical(failoverRegions, sdkOmittedValue)
+            ? this.failoverRegions
+            : failoverRegions as SdkOptional<
+                List<UpdateSandboxRequestBodyFailoverRegionsItem>>,
+        mounts: identical(mounts, sdkOmittedValue)
+            ? this.mounts
+            : mounts as SdkOptional<
+                Map<String, UpdateSandboxRequestBodyMountsValue>>,
+        networkId: identical(networkId, sdkOmittedValue)
+            ? this.networkId
+            : networkId as SdkOptional<String>,
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<Map<String, String>>,
+        ports: identical(ports, sdkOmittedValue)
+            ? this.ports
+            : ports as SdkOptional<List<int>>,
+        currentSnapshotId: identical(currentSnapshotId, sdkOmittedValue)
+            ? this.currentSnapshotId
+            : currentSnapshotId as SdkOptional<String>,
+        tags: identical(tags, sdkOmittedValue)
+            ? this.tags
+            : tags as SdkOptional<Map<String, String>>,
+      );
 
-  factory UpdateSandboxRequestBody.fromJson(Map<String, dynamic> json) => UpdateSandboxRequestBody(
-    resources: json['resources'] != null ? SdkPresent((json['resources'] != null ? UpdateSandboxRequestBodyResources.fromJson(json['resources'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    runtime: json['runtime'] != null ? SdkPresent((json['runtime'] != null ? UpdateSandboxRequestBodyRuntime.fromJson(json['runtime'] as String) : null)!) : const SdkOmitted(),
-    timeout: json['timeout'] != null ? SdkPresent(((json['timeout'] as num?)?.toInt())!) : const SdkOmitted(),
-    persistent: json['persistent'] != null ? SdkPresent((json['persistent'] as bool?)!) : const SdkOmitted(),
-    snapshotExpiration: json.containsKey('snapshotExpiration') ? SdkPresent((json['snapshotExpiration'] as num?)?.toInt()) : const SdkOmitted(),
-    keepLastSnapshots: json['keepLastSnapshots'] != null ? SdkPresent((json['keepLastSnapshots'] != null ? UpdateSandboxRequestKeepLastSnapshots.fromJson(json['keepLastSnapshots']) : null)!) : const SdkOmitted(),
-    networkPolicy: json['networkPolicy'] != null ? SdkPresent((json['networkPolicy'] != null ? UpdateSandboxRequestNetworkPolicy.fromJson(json['networkPolicy']) : null)!) : const SdkOmitted(),
-    region: json['region'] != null ? SdkPresent((json['region'] != null ? UpdateSandboxRequestBodyRegion.fromJson(json['region'] as String) : null)!) : const SdkOmitted(),
-    failoverRegions: json['failoverRegions'] != null ? SdkPresent(((json['failoverRegions'] as List?)?.map((e) => UpdateSandboxRequestBodyFailoverRegionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    mounts: json['mounts'] != null ? SdkPresent((json['mounts'] == null ? null : Map<String, dynamic>.from(json['mounts'] as Map).map((key, value) => MapEntry(key, UpdateSandboxRequestBodyMountsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    networkId: json['networkId'] != null ? SdkPresent((json['networkId'] as String?)!) : const SdkOmitted(),
-    env: json['env'] != null ? SdkPresent((json['env'] == null ? null : Map<String, dynamic>.from(json['env'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    ports: json['ports'] != null ? SdkPresent(((json['ports'] as List?)?.map((e) => (e as num).toInt()).toList())!) : const SdkOmitted(),
-    currentSnapshotId: json['currentSnapshotId'] != null ? SdkPresent((json['currentSnapshotId'] as String?)!) : const SdkOmitted(),
-    tags: json['tags'] != null ? SdkPresent((json['tags'] == null ? null : Map<String, dynamic>.from(json['tags'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-  );
+  factory UpdateSandboxRequestBody.fromJson(Map<String, dynamic> json) =>
+      UpdateSandboxRequestBody(
+        resources: json['resources'] != null
+            ? SdkPresent((json['resources'] != null
+                ? UpdateSandboxRequestBodyResources.fromJson(
+                    json['resources'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        runtime: json['runtime'] != null
+            ? SdkPresent((json['runtime'] != null
+                ? UpdateSandboxRequestBodyRuntime.fromJson(
+                    json['runtime'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        timeout: json['timeout'] != null
+            ? SdkPresent(((json['timeout'] as num?)?.toInt())!)
+            : const SdkOmitted(),
+        persistent: json['persistent'] != null
+            ? SdkPresent((json['persistent'] as bool?)!)
+            : const SdkOmitted(),
+        snapshotExpiration: json.containsKey('snapshotExpiration')
+            ? SdkPresent((json['snapshotExpiration'] as num?)?.toInt())
+            : const SdkOmitted(),
+        keepLastSnapshots: json['keepLastSnapshots'] != null
+            ? SdkPresent((json['keepLastSnapshots'] != null
+                ? UpdateSandboxRequestKeepLastSnapshots.fromJson(
+                    json['keepLastSnapshots'])
+                : null)!)
+            : const SdkOmitted(),
+        networkPolicy: json['networkPolicy'] != null
+            ? SdkPresent((json['networkPolicy'] != null
+                ? UpdateSandboxRequestNetworkPolicy.fromJson(
+                    json['networkPolicy'])
+                : null)!)
+            : const SdkOmitted(),
+        region: json['region'] != null
+            ? SdkPresent((json['region'] != null
+                ? UpdateSandboxRequestBodyRegion.fromJson(
+                    json['region'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        failoverRegions: json['failoverRegions'] != null
+            ? SdkPresent(((json['failoverRegions'] as List?)
+                ?.map((e) =>
+                    UpdateSandboxRequestBodyFailoverRegionsItem.fromJson(
+                        e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        mounts: json['mounts'] != null
+            ? SdkPresent((json['mounts'] == null
+                ? null
+                : Map<String, dynamic>.from(json['mounts'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        UpdateSandboxRequestBodyMountsValue.fromJson(
+                            value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        networkId: json['networkId'] != null
+            ? SdkPresent((json['networkId'] as String?)!)
+            : const SdkOmitted(),
+        env: json['env'] != null
+            ? SdkPresent((json['env'] == null
+                ? null
+                : Map<String, dynamic>.from(json['env'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        ports: json['ports'] != null
+            ? SdkPresent(((json['ports'] as List?)
+                ?.map((e) => (e as num).toInt())
+                .toList())!)
+            : const SdkOmitted(),
+        currentSnapshotId: json['currentSnapshotId'] != null
+            ? SdkPresent((json['currentSnapshotId'] as String?)!)
+            : const SdkOmitted(),
+        tags: json['tags'] != null
+            ? SdkPresent((json['tags'] == null
+                ? null
+                : Map<String, dynamic>.from(json['tags'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (resources) {
-      SdkPresent<UpdateSandboxRequestBodyResources>(value: final value) => {'resources': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (runtime) {
-      SdkPresent<UpdateSandboxRequestBodyRuntime>(value: final value) => {'runtime': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeout) {
-      SdkPresent<int>(value: final value) => {'timeout': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (persistent) {
-      SdkPresent<bool>(value: final value) => {'persistent': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (snapshotExpiration) {
-      SdkPresent<int?>(value: final value) => {'snapshotExpiration': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (keepLastSnapshots) {
-      SdkPresent<UpdateSandboxRequestKeepLastSnapshots>(value: final value) => {'keepLastSnapshots': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (networkPolicy) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicy>(value: final value) => {'networkPolicy': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (region) {
-      SdkPresent<UpdateSandboxRequestBodyRegion>(value: final value) => {'region': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (failoverRegions) {
-      SdkPresent<List<UpdateSandboxRequestBodyFailoverRegionsItem>>(value: final value) => {'failoverRegions': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (mounts) {
-      SdkPresent<Map<String, UpdateSandboxRequestBodyMountsValue>>(value: final value) => {'mounts': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (networkId) {
-      SdkPresent<String>(value: final value) => {'networkId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (env) {
-      SdkPresent<Map<String, String>>(value: final value) => {'env': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ports) {
-      SdkPresent<List<int>>(value: final value) => {'ports': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (currentSnapshotId) {
-      SdkPresent<String>(value: final value) => {'currentSnapshotId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (tags) {
-      SdkPresent<Map<String, String>>(value: final value) => {'tags': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (resources) {
+          SdkPresent<UpdateSandboxRequestBodyResources>(value: final value) => {
+              'resources': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (runtime) {
+          SdkPresent<UpdateSandboxRequestBodyRuntime>(value: final value) => {
+              'runtime': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeout) {
+          SdkPresent<int>(value: final value) => {
+              'timeout': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (persistent) {
+          SdkPresent<bool>(value: final value) => {
+              'persistent': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (snapshotExpiration) {
+          SdkPresent<int?>(value: final value) => {
+              'snapshotExpiration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (keepLastSnapshots) {
+          SdkPresent<UpdateSandboxRequestKeepLastSnapshots>(
+            value: final value
+          ) =>
+            {
+              'keepLastSnapshots': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (networkPolicy) {
+          SdkPresent<UpdateSandboxRequestNetworkPolicy>(value: final value) => {
+              'networkPolicy': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (region) {
+          SdkPresent<UpdateSandboxRequestBodyRegion>(value: final value) => {
+              'region': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (failoverRegions) {
+          SdkPresent<List<UpdateSandboxRequestBodyFailoverRegionsItem>>(
+            value: final value
+          ) =>
+            {
+              'failoverRegions': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (mounts) {
+          SdkPresent<Map<String, UpdateSandboxRequestBodyMountsValue>>(
+            value: final value
+          ) =>
+            {
+              'mounts':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (networkId) {
+          SdkPresent<String>(value: final value) => {
+              'networkId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (env) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'env': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ports) {
+          SdkPresent<List<int>>(value: final value) => {
+              'ports': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (currentSnapshotId) {
+          SdkPresent<String>(value: final value) => {
+              'currentSnapshotId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (tags) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'tags': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class DeleteSandboxResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to a Vercel NamedSandbox.
   final NamedSandbox sandbox;
 
   const DeleteSandboxResponse({required this.sandbox});
 
-  DeleteSandboxResponse Function({NamedSandbox sandbox}) get copyWith => _copyWith;
+  DeleteSandboxResponse Function({NamedSandbox sandbox}) get copyWith =>
+      _copyWith;
 
-  DeleteSandboxResponse _copyWith({Object? sandbox = sdkOmittedValue}) => DeleteSandboxResponse(
-    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as NamedSandbox,
-  );
+  DeleteSandboxResponse _copyWith({Object? sandbox = sdkOmittedValue}) =>
+      DeleteSandboxResponse(
+        sandbox: identical(sandbox, sdkOmittedValue)
+            ? this.sandbox
+            : sandbox as NamedSandbox,
+      );
 
-  factory DeleteSandboxResponse.fromJson(Map<String, dynamic> json) => DeleteSandboxResponse(
-    sandbox: (json['sandbox'] != null ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!,
-  );
+  factory DeleteSandboxResponse.fromJson(Map<String, dynamic> json) =>
+      DeleteSandboxResponse(
+        sandbox: (json['sandbox'] != null
+            ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'sandbox': sandbox.toJson(),
-  };
+        'sandbox': sandbox.toJson(),
+      };
 }
 
 class ListSessionCommandsResponse {
@@ -172,127 +380,234 @@ class ListSessionCommandsResponse {
 
   const ListSessionCommandsResponse({required this.commands});
 
-  ListSessionCommandsResponse Function({List<SessionCommand> commands}) get copyWith => _copyWith;
+  ListSessionCommandsResponse Function({List<SessionCommand> commands})
+      get copyWith => _copyWith;
 
-  ListSessionCommandsResponse _copyWith({Object? commands = sdkOmittedValue}) => ListSessionCommandsResponse(
-    commands: identical(commands, sdkOmittedValue) ? this.commands : commands as List<SessionCommand>,
-  );
+  ListSessionCommandsResponse _copyWith({Object? commands = sdkOmittedValue}) =>
+      ListSessionCommandsResponse(
+        commands: identical(commands, sdkOmittedValue)
+            ? this.commands
+            : commands as List<SessionCommand>,
+      );
 
-  factory ListSessionCommandsResponse.fromJson(Map<String, dynamic> json) => ListSessionCommandsResponse(
-    commands: ((json['commands'] as List?)?.map((e) => SessionCommand.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListSessionCommandsResponse.fromJson(Map<String, dynamic> json) =>
+      ListSessionCommandsResponse(
+        commands: ((json['commands'] as List?)
+            ?.map((e) => SessionCommand.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'commands': commands.map((item) => item.toJson()).toList(),
-  };
+        'commands': commands.map((item) => item.toJson()).toList(),
+      };
 }
 
 class RunSessionCommandRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The executable or shell command to run. This is the program name without arguments.
   final String command;
+
   /// Arguments to pass to the command. Each argument should be a separate array element.
   final SdkOptional<List<String>> args;
+
   /// The working directory in which to execute the command. Defaults to the sandbox home directory if not specified.
   final SdkOptional<String> cwd;
+
   /// Additional environment variables to set for this command. These are merged with the sandbox environment.
   final SdkOptional<Map<String, String>> env;
+
   /// Execute the command with root (superuser) privileges.
   final SdkOptional<bool> sudo;
+
   /// If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.
   final SdkOptional<bool> wait;
+
   /// If true, stream the logs of the command execution in real-time via ND-JSON. This is only applicable if `wait` is also true.
   final SdkOptional<bool> logs;
+
   /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.
   final SdkOptional<int> timeout;
+
   /// If true, keeps the command stdin open so it can be written to with the stdin endpoint while the command runs. When false, the command reads from an empty stdin.
   final SdkOptional<bool> attachStdin;
 
-  const RunSessionCommandRequestBody({required this.command, this.args = const SdkOmitted(), this.cwd = const SdkOmitted(), this.env = const SdkOmitted(), this.sudo = const SdkOmitted(), this.wait = const SdkOmitted(), this.logs = const SdkOmitted(), this.timeout = const SdkOmitted(), this.attachStdin = const SdkOmitted()});
+  const RunSessionCommandRequestBody(
+      {required this.command,
+      this.args = const SdkOmitted(),
+      this.cwd = const SdkOmitted(),
+      this.env = const SdkOmitted(),
+      this.sudo = const SdkOmitted(),
+      this.wait = const SdkOmitted(),
+      this.logs = const SdkOmitted(),
+      this.timeout = const SdkOmitted(),
+      this.attachStdin = const SdkOmitted()});
 
-  RunSessionCommandRequestBody Function({String command, SdkOptional<List<String>> args, SdkOptional<String> cwd, SdkOptional<Map<String, String>> env, SdkOptional<bool> sudo, SdkOptional<bool> wait, SdkOptional<bool> logs, SdkOptional<int> timeout, SdkOptional<bool> attachStdin}) get copyWith => _copyWith;
+  RunSessionCommandRequestBody Function(
+      {String command,
+      SdkOptional<List<String>> args,
+      SdkOptional<String> cwd,
+      SdkOptional<Map<String, String>> env,
+      SdkOptional<bool> sudo,
+      SdkOptional<bool> wait,
+      SdkOptional<bool> logs,
+      SdkOptional<int> timeout,
+      SdkOptional<bool> attachStdin}) get copyWith => _copyWith;
 
-  RunSessionCommandRequestBody _copyWith({Object? command = sdkOmittedValue, Object? args = sdkOmittedValue, Object? cwd = sdkOmittedValue, Object? env = sdkOmittedValue, Object? sudo = sdkOmittedValue, Object? wait = sdkOmittedValue, Object? logs = sdkOmittedValue, Object? timeout = sdkOmittedValue, Object? attachStdin = sdkOmittedValue}) => RunSessionCommandRequestBody(
-    command: identical(command, sdkOmittedValue) ? this.command : command as String,
-    args: identical(args, sdkOmittedValue) ? this.args : args as SdkOptional<List<String>>,
-    cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as SdkOptional<String>,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<Map<String, String>>,
-    sudo: identical(sudo, sdkOmittedValue) ? this.sudo : sudo as SdkOptional<bool>,
-    wait: identical(wait, sdkOmittedValue) ? this.wait : wait as SdkOptional<bool>,
-    logs: identical(logs, sdkOmittedValue) ? this.logs : logs as SdkOptional<bool>,
-    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as SdkOptional<int>,
-    attachStdin: identical(attachStdin, sdkOmittedValue) ? this.attachStdin : attachStdin as SdkOptional<bool>,
-  );
+  RunSessionCommandRequestBody _copyWith(
+          {Object? command = sdkOmittedValue,
+          Object? args = sdkOmittedValue,
+          Object? cwd = sdkOmittedValue,
+          Object? env = sdkOmittedValue,
+          Object? sudo = sdkOmittedValue,
+          Object? wait = sdkOmittedValue,
+          Object? logs = sdkOmittedValue,
+          Object? timeout = sdkOmittedValue,
+          Object? attachStdin = sdkOmittedValue}) =>
+      RunSessionCommandRequestBody(
+        command: identical(command, sdkOmittedValue)
+            ? this.command
+            : command as String,
+        args: identical(args, sdkOmittedValue)
+            ? this.args
+            : args as SdkOptional<List<String>>,
+        cwd: identical(cwd, sdkOmittedValue)
+            ? this.cwd
+            : cwd as SdkOptional<String>,
+        env: identical(env, sdkOmittedValue)
+            ? this.env
+            : env as SdkOptional<Map<String, String>>,
+        sudo: identical(sudo, sdkOmittedValue)
+            ? this.sudo
+            : sudo as SdkOptional<bool>,
+        wait: identical(wait, sdkOmittedValue)
+            ? this.wait
+            : wait as SdkOptional<bool>,
+        logs: identical(logs, sdkOmittedValue)
+            ? this.logs
+            : logs as SdkOptional<bool>,
+        timeout: identical(timeout, sdkOmittedValue)
+            ? this.timeout
+            : timeout as SdkOptional<int>,
+        attachStdin: identical(attachStdin, sdkOmittedValue)
+            ? this.attachStdin
+            : attachStdin as SdkOptional<bool>,
+      );
 
-  factory RunSessionCommandRequestBody.fromJson(Map<String, dynamic> json) => RunSessionCommandRequestBody(
-    command: (json['command'] as String?)!,
-    args: json['args'] != null ? SdkPresent(((json['args'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    cwd: json['cwd'] != null ? SdkPresent((json['cwd'] as String?)!) : const SdkOmitted(),
-    env: json['env'] != null ? SdkPresent((json['env'] == null ? null : Map<String, dynamic>.from(json['env'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    sudo: json['sudo'] != null ? SdkPresent((json['sudo'] as bool?)!) : const SdkOmitted(),
-    wait: json['wait'] != null ? SdkPresent((json['wait'] as bool?)!) : const SdkOmitted(),
-    logs: json['logs'] != null ? SdkPresent((json['logs'] as bool?)!) : const SdkOmitted(),
-    timeout: json['timeout'] != null ? SdkPresent(((json['timeout'] as num?)?.toInt())!) : const SdkOmitted(),
-    attachStdin: json['attachStdin'] != null ? SdkPresent((json['attachStdin'] as bool?)!) : const SdkOmitted(),
-  );
+  factory RunSessionCommandRequestBody.fromJson(Map<String, dynamic> json) =>
+      RunSessionCommandRequestBody(
+        command: (json['command'] as String?)!,
+        args: json['args'] != null
+            ? SdkPresent(
+                ((json['args'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        cwd: json['cwd'] != null
+            ? SdkPresent((json['cwd'] as String?)!)
+            : const SdkOmitted(),
+        env: json['env'] != null
+            ? SdkPresent((json['env'] == null
+                ? null
+                : Map<String, dynamic>.from(json['env'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        sudo: json['sudo'] != null
+            ? SdkPresent((json['sudo'] as bool?)!)
+            : const SdkOmitted(),
+        wait: json['wait'] != null
+            ? SdkPresent((json['wait'] as bool?)!)
+            : const SdkOmitted(),
+        logs: json['logs'] != null
+            ? SdkPresent((json['logs'] as bool?)!)
+            : const SdkOmitted(),
+        timeout: json['timeout'] != null
+            ? SdkPresent(((json['timeout'] as num?)?.toInt())!)
+            : const SdkOmitted(),
+        attachStdin: json['attachStdin'] != null
+            ? SdkPresent((json['attachStdin'] as bool?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'command': command,
-    ...switch (args) {
-      SdkPresent<List<String>>(value: final value) => {'args': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (cwd) {
-      SdkPresent<String>(value: final value) => {'cwd': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (env) {
-      SdkPresent<Map<String, String>>(value: final value) => {'env': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sudo) {
-      SdkPresent<bool>(value: final value) => {'sudo': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (wait) {
-      SdkPresent<bool>(value: final value) => {'wait': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (logs) {
-      SdkPresent<bool>(value: final value) => {'logs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeout) {
-      SdkPresent<int>(value: final value) => {'timeout': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (attachStdin) {
-      SdkPresent<bool>(value: final value) => {'attachStdin': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'command': command,
+        ...switch (args) {
+          SdkPresent<List<String>>(value: final value) => {
+              'args': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (cwd) {
+          SdkPresent<String>(value: final value) => {
+              'cwd': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (env) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'env': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sudo) {
+          SdkPresent<bool>(value: final value) => {
+              'sudo': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (wait) {
+          SdkPresent<bool>(value: final value) => {
+              'wait': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (logs) {
+          SdkPresent<bool>(value: final value) => {
+              'logs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeout) {
+          SdkPresent<int>(value: final value) => {
+              'timeout': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (attachStdin) {
+          SdkPresent<bool>(value: final value) => {
+              'attachStdin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RunSessionCommandResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object represents a command run in a Vercel Sandbox session (v2 API).
   final SessionCommand command;
 
   const RunSessionCommandResponse({required this.command});
 
-  RunSessionCommandResponse Function({SessionCommand command}) get copyWith => _copyWith;
+  RunSessionCommandResponse Function({SessionCommand command}) get copyWith =>
+      _copyWith;
 
-  RunSessionCommandResponse _copyWith({Object? command = sdkOmittedValue}) => RunSessionCommandResponse(
-    command: identical(command, sdkOmittedValue) ? this.command : command as SessionCommand,
-  );
+  RunSessionCommandResponse _copyWith({Object? command = sdkOmittedValue}) =>
+      RunSessionCommandResponse(
+        command: identical(command, sdkOmittedValue)
+            ? this.command
+            : command as SessionCommand,
+      );
 
-  factory RunSessionCommandResponse.fromJson(Map<String, dynamic> json) => RunSessionCommandResponse(
-    command: (json['command'] != null ? SessionCommand.fromJson(json['command'] as Map<String, dynamic>) : null)!,
-  );
+  factory RunSessionCommandResponse.fromJson(Map<String, dynamic> json) =>
+      RunSessionCommandResponse(
+        command: (json['command'] != null
+            ? SessionCommand.fromJson(json['command'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'command': command.toJson(),
-  };
+        'command': command.toJson(),
+      };
 }

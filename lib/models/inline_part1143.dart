@@ -7,92 +7,146 @@ part of 'inline.dart';
 class AddRepositoryPermissionRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// ID of a team that is granted access to a repository.
   final SdkOptional<String> teamId;
+
   /// Slug of a team that is granted access to a repository.
   final SdkOptional<String> teamSlug;
 
-  const AddRepositoryPermissionRequestBody({this.teamId = const SdkOmitted(), this.teamSlug = const SdkOmitted()});
+  const AddRepositoryPermissionRequestBody(
+      {this.teamId = const SdkOmitted(), this.teamSlug = const SdkOmitted()});
 
-  AddRepositoryPermissionRequestBody Function({SdkOptional<String> teamId, SdkOptional<String> teamSlug}) get copyWith => _copyWith;
+  AddRepositoryPermissionRequestBody Function(
+      {SdkOptional<String> teamId,
+      SdkOptional<String> teamSlug}) get copyWith => _copyWith;
 
-  AddRepositoryPermissionRequestBody _copyWith({Object? teamId = sdkOmittedValue, Object? teamSlug = sdkOmittedValue}) => AddRepositoryPermissionRequestBody(
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String>,
-    teamSlug: identical(teamSlug, sdkOmittedValue) ? this.teamSlug : teamSlug as SdkOptional<String>,
-  );
+  AddRepositoryPermissionRequestBody _copyWith(
+          {Object? teamId = sdkOmittedValue,
+          Object? teamSlug = sdkOmittedValue}) =>
+      AddRepositoryPermissionRequestBody(
+        teamId: identical(teamId, sdkOmittedValue)
+            ? this.teamId
+            : teamId as SdkOptional<String>,
+        teamSlug: identical(teamSlug, sdkOmittedValue)
+            ? this.teamSlug
+            : teamSlug as SdkOptional<String>,
+      );
 
-  factory AddRepositoryPermissionRequestBody.fromJson(Map<String, dynamic> json) => AddRepositoryPermissionRequestBody(
-    teamId: json['teamId'] != null ? SdkPresent((json['teamId'] as String?)!) : const SdkOmitted(),
-    teamSlug: json['teamSlug'] != null ? SdkPresent((json['teamSlug'] as String?)!) : const SdkOmitted(),
-  );
+  factory AddRepositoryPermissionRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      AddRepositoryPermissionRequestBody(
+        teamId: json['teamId'] != null
+            ? SdkPresent((json['teamId'] as String?)!)
+            : const SdkOmitted(),
+        teamSlug: json['teamSlug'] != null
+            ? SdkPresent((json['teamSlug'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (teamId) {
-      SdkPresent<String>(value: final value) => {'teamId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamSlug) {
-      SdkPresent<String>(value: final value) => {'teamSlug': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (teamId) {
+          SdkPresent<String>(value: final value) => {
+              'teamId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamSlug) {
+          SdkPresent<String>(value: final value) => {
+              'teamSlug': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class AddRepositoryPermissionResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A team's access grant to a Vercel Container Registry repository.
   final VcrRepositoryPermission permission;
 
   const AddRepositoryPermissionResponse({required this.permission});
 
-  AddRepositoryPermissionResponse Function({VcrRepositoryPermission permission}) get copyWith => _copyWith;
+  AddRepositoryPermissionResponse Function({VcrRepositoryPermission permission})
+      get copyWith => _copyWith;
 
-  AddRepositoryPermissionResponse _copyWith({Object? permission = sdkOmittedValue}) => AddRepositoryPermissionResponse(
-    permission: identical(permission, sdkOmittedValue) ? this.permission : permission as VcrRepositoryPermission,
-  );
+  AddRepositoryPermissionResponse _copyWith(
+          {Object? permission = sdkOmittedValue}) =>
+      AddRepositoryPermissionResponse(
+        permission: identical(permission, sdkOmittedValue)
+            ? this.permission
+            : permission as VcrRepositoryPermission,
+      );
 
-  factory AddRepositoryPermissionResponse.fromJson(Map<String, dynamic> json) => AddRepositoryPermissionResponse(
-    permission: (json['permission'] != null ? VcrRepositoryPermission.fromJson(json['permission'] as Map<String, dynamic>) : null)!,
-  );
+  factory AddRepositoryPermissionResponse.fromJson(Map<String, dynamic> json) =>
+      AddRepositoryPermissionResponse(
+        permission: (json['permission'] != null
+            ? VcrRepositoryPermission.fromJson(
+                json['permission'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'permission': permission.toJson(),
-  };
+        'permission': permission.toJson(),
+      };
 }
 
 class RemoveRepositoryPermissionRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// ID of a team that is granted access to a repository.
   final SdkOptional<String> teamId;
+
   /// Slug of a team that is granted access to a repository.
   final SdkOptional<String> teamSlug;
 
-  const RemoveRepositoryPermissionRequestBody({this.teamId = const SdkOmitted(), this.teamSlug = const SdkOmitted()});
+  const RemoveRepositoryPermissionRequestBody(
+      {this.teamId = const SdkOmitted(), this.teamSlug = const SdkOmitted()});
 
-  RemoveRepositoryPermissionRequestBody Function({SdkOptional<String> teamId, SdkOptional<String> teamSlug}) get copyWith => _copyWith;
+  RemoveRepositoryPermissionRequestBody Function(
+      {SdkOptional<String> teamId,
+      SdkOptional<String> teamSlug}) get copyWith => _copyWith;
 
-  RemoveRepositoryPermissionRequestBody _copyWith({Object? teamId = sdkOmittedValue, Object? teamSlug = sdkOmittedValue}) => RemoveRepositoryPermissionRequestBody(
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String>,
-    teamSlug: identical(teamSlug, sdkOmittedValue) ? this.teamSlug : teamSlug as SdkOptional<String>,
-  );
+  RemoveRepositoryPermissionRequestBody _copyWith(
+          {Object? teamId = sdkOmittedValue,
+          Object? teamSlug = sdkOmittedValue}) =>
+      RemoveRepositoryPermissionRequestBody(
+        teamId: identical(teamId, sdkOmittedValue)
+            ? this.teamId
+            : teamId as SdkOptional<String>,
+        teamSlug: identical(teamSlug, sdkOmittedValue)
+            ? this.teamSlug
+            : teamSlug as SdkOptional<String>,
+      );
 
-  factory RemoveRepositoryPermissionRequestBody.fromJson(Map<String, dynamic> json) => RemoveRepositoryPermissionRequestBody(
-    teamId: json['teamId'] != null ? SdkPresent((json['teamId'] as String?)!) : const SdkOmitted(),
-    teamSlug: json['teamSlug'] != null ? SdkPresent((json['teamSlug'] as String?)!) : const SdkOmitted(),
-  );
+  factory RemoveRepositoryPermissionRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveRepositoryPermissionRequestBody(
+        teamId: json['teamId'] != null
+            ? SdkPresent((json['teamId'] as String?)!)
+            : const SdkOmitted(),
+        teamSlug: json['teamSlug'] != null
+            ? SdkPresent((json['teamSlug'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (teamId) {
-      SdkPresent<String>(value: final value) => {'teamId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamSlug) {
-      SdkPresent<String>(value: final value) => {'teamSlug': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (teamId) {
+          SdkPresent<String>(value: final value) => {
+              'teamId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamSlug) {
+          SdkPresent<String>(value: final value) => {
+              'teamSlug': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListRepositoryTagsResponseTagsItem {
@@ -110,60 +164,137 @@ class ListRepositoryTagsResponseTagsItem {
   final String tag;
   final String updatedAt;
 
-  const ListRepositoryTagsResponseTagsItem({this.arch = const SdkOmitted(), required this.createdAt, required this.imageId, required this.kind, required this.manifestDigest, this.platform = const SdkOmitted(), this.pushedBy = const SdkOmitted(), required this.sizeInBytes, required this.status, required this.tag, required this.updatedAt});
+  const ListRepositoryTagsResponseTagsItem(
+      {this.arch = const SdkOmitted(),
+      required this.createdAt,
+      required this.imageId,
+      required this.kind,
+      required this.manifestDigest,
+      this.platform = const SdkOmitted(),
+      this.pushedBy = const SdkOmitted(),
+      required this.sizeInBytes,
+      required this.status,
+      required this.tag,
+      required this.updatedAt});
 
-  ListRepositoryTagsResponseTagsItem Function({SdkOptional<String> arch, String createdAt, String imageId, ListRepositoryTagsResponseTagsItemKind kind, String manifestDigest, SdkOptional<String> platform, SdkOptional<String> pushedBy, double sizeInBytes, ListRepositoryTagsResponseTagsItemStatus? status, String tag, String updatedAt}) get copyWith => _copyWith;
+  ListRepositoryTagsResponseTagsItem Function(
+      {SdkOptional<String> arch,
+      String createdAt,
+      String imageId,
+      ListRepositoryTagsResponseTagsItemKind kind,
+      String manifestDigest,
+      SdkOptional<String> platform,
+      SdkOptional<String> pushedBy,
+      double sizeInBytes,
+      ListRepositoryTagsResponseTagsItemStatus? status,
+      String tag,
+      String updatedAt}) get copyWith => _copyWith;
 
-  ListRepositoryTagsResponseTagsItem _copyWith({Object? arch = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? imageId = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? manifestDigest = sdkOmittedValue, Object? platform = sdkOmittedValue, Object? pushedBy = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? status = sdkOmittedValue, Object? tag = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ListRepositoryTagsResponseTagsItem(
-    arch: identical(arch, sdkOmittedValue) ? this.arch : arch as SdkOptional<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    imageId: identical(imageId, sdkOmittedValue) ? this.imageId : imageId as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListRepositoryTagsResponseTagsItemKind,
-    manifestDigest: identical(manifestDigest, sdkOmittedValue) ? this.manifestDigest : manifestDigest as String,
-    platform: identical(platform, sdkOmittedValue) ? this.platform : platform as SdkOptional<String>,
-    pushedBy: identical(pushedBy, sdkOmittedValue) ? this.pushedBy : pushedBy as SdkOptional<String>,
-    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
-    status: identical(status, sdkOmittedValue) ? this.status : status as ListRepositoryTagsResponseTagsItemStatus?,
-    tag: identical(tag, sdkOmittedValue) ? this.tag : tag as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-  );
+  ListRepositoryTagsResponseTagsItem _copyWith(
+          {Object? arch = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? imageId = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? manifestDigest = sdkOmittedValue,
+          Object? platform = sdkOmittedValue,
+          Object? pushedBy = sdkOmittedValue,
+          Object? sizeInBytes = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? tag = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      ListRepositoryTagsResponseTagsItem(
+        arch: identical(arch, sdkOmittedValue)
+            ? this.arch
+            : arch as SdkOptional<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        imageId: identical(imageId, sdkOmittedValue)
+            ? this.imageId
+            : imageId as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as ListRepositoryTagsResponseTagsItemKind,
+        manifestDigest: identical(manifestDigest, sdkOmittedValue)
+            ? this.manifestDigest
+            : manifestDigest as String,
+        platform: identical(platform, sdkOmittedValue)
+            ? this.platform
+            : platform as SdkOptional<String>,
+        pushedBy: identical(pushedBy, sdkOmittedValue)
+            ? this.pushedBy
+            : pushedBy as SdkOptional<String>,
+        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
+            ? this.sizeInBytes
+            : sizeInBytes as double,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as ListRepositoryTagsResponseTagsItemStatus?,
+        tag: identical(tag, sdkOmittedValue) ? this.tag : tag as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+      );
 
-  factory ListRepositoryTagsResponseTagsItem.fromJson(Map<String, dynamic> json) => ListRepositoryTagsResponseTagsItem(
-    arch: json['arch'] != null ? SdkPresent((json['arch'] as String?)!) : const SdkOmitted(),
-    createdAt: (json['createdAt'] as String?)!,
-    imageId: (json['imageId'] as String?)!,
-    kind: (json['kind'] != null ? ListRepositoryTagsResponseTagsItemKind.fromJson(json['kind'] as String) : null)!,
-    manifestDigest: (json['manifestDigest'] as String?)!,
-    platform: json['platform'] != null ? SdkPresent((json['platform'] as String?)!) : const SdkOmitted(),
-    pushedBy: json['pushedBy'] != null ? SdkPresent((json['pushedBy'] as String?)!) : const SdkOmitted(),
-    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-    status: json.containsKey('status') ? json['status'] != null ? ListRepositoryTagsResponseTagsItemStatus.fromJson(json['status'] as String) : null : throw ArgumentError.value(null, 'status', 'Required property is missing'),
-    tag: (json['tag'] as String?)!,
-    updatedAt: (json['updatedAt'] as String?)!,
-  );
+  factory ListRepositoryTagsResponseTagsItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListRepositoryTagsResponseTagsItem(
+        arch: json['arch'] != null
+            ? SdkPresent((json['arch'] as String?)!)
+            : const SdkOmitted(),
+        createdAt: (json['createdAt'] as String?)!,
+        imageId: (json['imageId'] as String?)!,
+        kind: (json['kind'] != null
+            ? ListRepositoryTagsResponseTagsItemKind.fromJson(
+                json['kind'] as String)
+            : null)!,
+        manifestDigest: (json['manifestDigest'] as String?)!,
+        platform: json['platform'] != null
+            ? SdkPresent((json['platform'] as String?)!)
+            : const SdkOmitted(),
+        pushedBy: json['pushedBy'] != null
+            ? SdkPresent((json['pushedBy'] as String?)!)
+            : const SdkOmitted(),
+        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+        status: json.containsKey('status')
+            ? json['status'] != null
+                ? ListRepositoryTagsResponseTagsItemStatus.fromJson(
+                    json['status'] as String)
+                : null
+            : throw ArgumentError.value(
+                null, 'status', 'Required property is missing'),
+        tag: (json['tag'] as String?)!,
+        updatedAt: (json['updatedAt'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (arch) {
-      SdkPresent<String>(value: final value) => {'arch': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    'imageId': imageId,
-    'kind': kind.toJson(),
-    'manifestDigest': manifestDigest,
-    ...switch (platform) {
-      SdkPresent<String>(value: final value) => {'platform': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pushedBy) {
-      SdkPresent<String>(value: final value) => {'pushedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    'sizeInBytes': sizeInBytes,
-    'status': status?.toJson(),
-    'tag': tag,
-    'updatedAt': updatedAt,
-  };
+        ...switch (arch) {
+          SdkPresent<String>(value: final value) => {
+              'arch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        'imageId': imageId,
+        'kind': kind.toJson(),
+        'manifestDigest': manifestDigest,
+        ...switch (platform) {
+          SdkPresent<String>(value: final value) => {
+              'platform': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pushedBy) {
+          SdkPresent<String>(value: final value) => {
+              'pushedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'sizeInBytes': sizeInBytes,
+        'status': status?.toJson(),
+        'tag': tag,
+        'updatedAt': updatedAt,
+      };
 }
 
 class ListRepositoryTagsResponse {
@@ -172,32 +303,51 @@ class ListRepositoryTagsResponse {
   final SdkOptional<String> nextCursor;
   final List<ListRepositoryTagsResponseTagsItem> tags;
 
-  const ListRepositoryTagsResponse({this.nextCursor = const SdkOmitted(), required this.tags});
+  const ListRepositoryTagsResponse(
+      {this.nextCursor = const SdkOmitted(), required this.tags});
 
-  ListRepositoryTagsResponse Function({SdkOptional<String> nextCursor, List<ListRepositoryTagsResponseTagsItem> tags}) get copyWith => _copyWith;
+  ListRepositoryTagsResponse Function(
+      {SdkOptional<String> nextCursor,
+      List<ListRepositoryTagsResponseTagsItem> tags}) get copyWith => _copyWith;
 
-  ListRepositoryTagsResponse _copyWith({Object? nextCursor = sdkOmittedValue, Object? tags = sdkOmittedValue}) => ListRepositoryTagsResponse(
-    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as SdkOptional<String>,
-    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as List<ListRepositoryTagsResponseTagsItem>,
-  );
+  ListRepositoryTagsResponse _copyWith(
+          {Object? nextCursor = sdkOmittedValue,
+          Object? tags = sdkOmittedValue}) =>
+      ListRepositoryTagsResponse(
+        nextCursor: identical(nextCursor, sdkOmittedValue)
+            ? this.nextCursor
+            : nextCursor as SdkOptional<String>,
+        tags: identical(tags, sdkOmittedValue)
+            ? this.tags
+            : tags as List<ListRepositoryTagsResponseTagsItem>,
+      );
 
-  factory ListRepositoryTagsResponse.fromJson(Map<String, dynamic> json) => ListRepositoryTagsResponse(
-    nextCursor: json['nextCursor'] != null ? SdkPresent((json['nextCursor'] as String?)!) : const SdkOmitted(),
-    tags: ((json['tags'] as List?)?.map((e) => ListRepositoryTagsResponseTagsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListRepositoryTagsResponse.fromJson(Map<String, dynamic> json) =>
+      ListRepositoryTagsResponse(
+        nextCursor: json['nextCursor'] != null
+            ? SdkPresent((json['nextCursor'] as String?)!)
+            : const SdkOmitted(),
+        tags: ((json['tags'] as List?)
+            ?.map((e) => ListRepositoryTagsResponseTagsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (nextCursor) {
-      SdkPresent<String>(value: final value) => {'nextCursor': value,},
-      _ => const <String, dynamic>{},
-    },
-    'tags': tags.map((item) => item.toJson()).toList(),
-  };
+        ...switch (nextCursor) {
+          SdkPresent<String>(value: final value) => {
+              'nextCursor': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'tags': tags.map((item) => item.toJson()).toList(),
+      };
 }
 
 class GetRepositoryTagResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A tag pointing at an image in a Vercel Container Registry repository, enriched with the backing image's metadata and VHS-readiness status.
   final VcrTag tag;
 
@@ -205,40 +355,52 @@ class GetRepositoryTagResponse {
 
   GetRepositoryTagResponse Function({VcrTag tag}) get copyWith => _copyWith;
 
-  GetRepositoryTagResponse _copyWith({Object? tag = sdkOmittedValue}) => GetRepositoryTagResponse(
-    tag: identical(tag, sdkOmittedValue) ? this.tag : tag as VcrTag,
-  );
+  GetRepositoryTagResponse _copyWith({Object? tag = sdkOmittedValue}) =>
+      GetRepositoryTagResponse(
+        tag: identical(tag, sdkOmittedValue) ? this.tag : tag as VcrTag,
+      );
 
-  factory GetRepositoryTagResponse.fromJson(Map<String, dynamic> json) => GetRepositoryTagResponse(
-    tag: (json['tag'] != null ? VcrTag.fromJson(json['tag'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetRepositoryTagResponse.fromJson(Map<String, dynamic> json) =>
+      GetRepositoryTagResponse(
+        tag: (json['tag'] != null
+            ? VcrTag.fromJson(json['tag'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'tag': tag.toJson(),
-  };
+        'tag': tag.toJson(),
+      };
 }
 
 class GetRepositoryImageResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A single image with its tags, status and resolved Dockerfile layer history.
   final VcrImageDetail image;
 
   const GetRepositoryImageResponse({required this.image});
 
-  GetRepositoryImageResponse Function({VcrImageDetail image}) get copyWith => _copyWith;
+  GetRepositoryImageResponse Function({VcrImageDetail image}) get copyWith =>
+      _copyWith;
 
-  GetRepositoryImageResponse _copyWith({Object? image = sdkOmittedValue}) => GetRepositoryImageResponse(
-    image: identical(image, sdkOmittedValue) ? this.image : image as VcrImageDetail,
-  );
+  GetRepositoryImageResponse _copyWith({Object? image = sdkOmittedValue}) =>
+      GetRepositoryImageResponse(
+        image: identical(image, sdkOmittedValue)
+            ? this.image
+            : image as VcrImageDetail,
+      );
 
-  factory GetRepositoryImageResponse.fromJson(Map<String, dynamic> json) => GetRepositoryImageResponse(
-    image: (json['image'] != null ? VcrImageDetail.fromJson(json['image'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetRepositoryImageResponse.fromJson(Map<String, dynamic> json) =>
+      GetRepositoryImageResponse(
+        image: (json['image'] != null
+            ? VcrImageDetail.fromJson(json['image'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'image': image.toJson(),
-  };
+        'image': image.toJson(),
+      };
 }
 
 class GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse {
@@ -247,22 +409,29 @@ class GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse {
   final String name;
   final List<String> tags;
 
-  const GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse({required this.name, required this.tags});
+  const GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse(
+      {required this.name, required this.tags});
 
-  GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse Function({String name, List<String> tags}) get copyWith => _copyWith;
+  GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse Function(
+      {String name, List<String> tags}) get copyWith => _copyWith;
 
-  GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse _copyWith({Object? name = sdkOmittedValue, Object? tags = sdkOmittedValue}) => GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
-  );
+  GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse _copyWith(
+          {Object? name = sdkOmittedValue, Object? tags = sdkOmittedValue}) =>
+      GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        tags:
+            identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
+      );
 
-  factory GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse.fromJson(Map<String, dynamic> json) => GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse(
-    name: (json['name'] as String?)!,
-    tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse.fromJson(
+          Map<String, dynamic> json) =>
+      GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse(
+        name: (json['name'] as String?)!,
+        tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'tags': tags,
-  };
+        'name': name,
+        'tags': tags,
+      };
 }

@@ -13,43 +13,46 @@ import '../types.dart';
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<UpdateAttackChallengeModeResponse>
-    updateAttackChallengeMode(ClientConfig config,
-        {required dynamic body,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<UpdateAttackChallengeModeResponse> updateAttackChallengeMode(
+    ClientConfig config,
+    {required dynamic body,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateAttackChallengeModeResponse>(
           'POST', '/v1/security/attack-mode',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: body,
           decoder: SdkResponseDecoder.json,
           operationId: 'updateAttackChallengeMode',
-          fromJsonRaw: (value) => UpdateAttackChallengeModeResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateAttackChallengeModeResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
 
-
 /// Retrieves the active and draft firewall configurations for a project, along with its configuration versions. Use this operation to inspect the current WAF settings and review available versions before changing or activating a configuration.
 ///
 /// Lists WAF configs for a project
-Future<GetSecurityFirewallConfigResponse> getSecurityFirewallConfig(ClientConfig config,
+Future<GetSecurityFirewallConfigResponse> getSecurityFirewallConfig(
+    ClientConfig config,
     {RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetSecurityFirewallConfigResponse>(
           'GET', '/v1/security/firewall/config',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getSecurityFirewallConfig',
-          fromJsonRaw: (value) => GetSecurityFirewallConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetSecurityFirewallConfigResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Replaces the firewall configuration for a project, creating a configuration if one does not already exist. Supply `firewallEnabled` and any firewall settings you want applied, including rules, rulesets, IP rules, or managed rules.
 ///
@@ -65,9 +68,11 @@ Future<PutFirewallConfigResponse> putFirewallConfig(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<Map<String, dynamic>> managedRules = const SdkOmitted(),
     SdkOptional<PutFirewallConfigRequestBodyCrs> crs = const SdkOmitted(),
-    SdkOptional<List<PutFirewallConfigRequestBodyRulesItem>> rules = const SdkOmitted(),
+    SdkOptional<List<PutFirewallConfigRequestBodyRulesItem>> rules =
+        const SdkOmitted(),
     SdkOptional<dynamic> rulesets = const SdkOmitted(),
-    SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips = const SdkOmitted(),
+    SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips =
+        const SdkOmitted(),
     SdkOptional<bool> botIdEnabled = const SdkOmitted(),
     SdkOptional<dynamic> logHeaders = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
@@ -76,8 +81,10 @@ Future<PutFirewallConfigResponse> putFirewallConfig(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'firewallEnabled': firewallEnabled,
@@ -91,11 +98,11 @@ Future<PutFirewallConfigResponse> putFirewallConfig(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'putFirewallConfig',
-          fromJsonRaw: (value) => PutFirewallConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              PutFirewallConfigResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates an existing firewall configuration by applying configuration changes. Supply the appropriate action and values for each change; the accepted body uses action-specific shapes for firewall settings and rulesets.
 ///
@@ -114,8 +121,10 @@ Future<Map<String, dynamic>> updateFirewallConfig(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: body,
           decoder: SdkResponseDecoder.json,
@@ -124,7 +133,6 @@ Future<Map<String, dynamic>> updateFirewallConfig(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a specific firewall configuration version for a project. Use `configVersion` to select the version to inspect; the deployed version is identified as `active`.
 ///
@@ -144,16 +152,18 @@ Future<GetFirewallConfigResponse> getFirewallConfig(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getFirewallConfig',
-          fromJsonRaw: (value) => GetFirewallConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetFirewallConfigResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a firewall configuration version. Supply `configVersion` to identify the version to remove; use this operation when that version should no longer be available.
 ///
@@ -171,24 +181,27 @@ Future<void> deleteSecurityFirewallConfigByConfigVersion(ClientConfig config,
       .data;
 }
 
-
 /// Triggers activation of a draft firewall configuration version. Supply `configVersion` to select the draft to promote; the response contains the activated configuration.
 ///
 /// Promotes a draft WAF config to an active config
 ///
 /// [configVersion] The deployed configVersion for the firewall configuration
-Future<CreateSecurityFirewallConfigByConfigVersionActivateResponse> createSecurityFirewallConfigByConfigVersionActivate(ClientConfig config,
-    {required String configVersion, RequestOptions? requestOptions}) async {
-  return (await sdkRequest<CreateSecurityFirewallConfigByConfigVersionActivateResponse>('POST',
+Future<CreateSecurityFirewallConfigByConfigVersionActivateResponse>
+    createSecurityFirewallConfigByConfigVersionActivate(ClientConfig config,
+        {required String configVersion, RequestOptions? requestOptions}) async {
+  return (await sdkRequest<
+              CreateSecurityFirewallConfigByConfigVersionActivateResponse>(
+          'POST',
           '/v1/security/firewall/config/${Uri.encodeComponent(configVersion.toString())}/activate',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'createSecurityFirewallConfigByConfigVersionActivate',
-          fromJsonRaw: (value) => CreateSecurityFirewallConfigByConfigVersionActivateResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateSecurityFirewallConfigByConfigVersionActivateResponse
+                  .fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves recent active attack data for a project. Use `since` to set the lookback period in days; it defaults to one day when omitted.
 ///
@@ -211,9 +224,12 @@ Future<dynamic> getActiveAttackStatus(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getActiveAttackStatus',
@@ -221,7 +237,6 @@ Future<dynamic> getActiveAttackStatus(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Lists system bypass rules configured for a project. Filter the results with `sourceIp`, `domain`, or `projectScope`, and use `offset` and `limit` to page through matching rules.
 ///
@@ -262,21 +277,28 @@ Future<GetBypassIpResponse> getBypassIp(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'sourceIp': SdkQueryValue(SdkUtils.unwrapOptional(sourceIp), style: 'form', explode: true),
-            'domain': SdkQueryValue(SdkUtils.unwrapOptional(domain), style: 'form', explode: true),
-            'projectScope': SdkQueryValue(SdkUtils.unwrapOptional(projectScope), style: 'form', explode: true),
-            'offset': SdkQueryValue(SdkUtils.unwrapOptional(offset), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'sourceIp': SdkQueryValue(SdkUtils.unwrapOptional(sourceIp),
+                style: 'form', explode: true),
+            'domain': SdkQueryValue(SdkUtils.unwrapOptional(domain),
+                style: 'form', explode: true),
+            'projectScope': SdkQueryValue(SdkUtils.unwrapOptional(projectScope),
+                style: 'form', explode: true),
+            'offset': SdkQueryValue(SdkUtils.unwrapOptional(offset),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getBypassIp',
-          fromJsonRaw: (value) => GetBypassIpResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetBypassIpResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a system bypass rule for a project. Supply either `domain` to scope the rule to a domain or `projectScope` to apply it across project domains; you can also set a source IP, expiry, and note.
 ///
@@ -311,8 +333,10 @@ Future<AddBypassIpResponse> addBypassIp(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'domain': SdkUtils.unwrapOptional(domain),
@@ -328,7 +352,6 @@ Future<AddBypassIpResponse> addBypassIp(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes system bypass rules for a project. Specify either `domain` or `projectScope` to identify the scope of the rules to remove, and optionally narrow the selection with source details.
 ///
@@ -359,8 +382,10 @@ Future<RemoveBypassIpResponse> removeBypassIp(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'domain': SdkUtils.unwrapOptional(domain),
@@ -371,11 +396,11 @@ Future<RemoveBypassIpResponse> removeBypassIp(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'removeBypassIp',
-          fromJsonRaw: (value) => RemoveBypassIpResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              RemoveBypassIpResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists conditional firewall bypass rules for a project. Use `projectId` to select the project and optionally filter by `slug` or `domain`; `limit` and `offset` control the returned results. The response includes the rules and may include pagination metadata.
 ///
@@ -402,11 +427,16 @@ Future<GetConditionalBypassResponse> getConditionalBypass(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true),
-            'domain': SdkQueryValue(SdkUtils.unwrapOptional(domain), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'offset': SdkQueryValue(SdkUtils.unwrapOptional(offset), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true),
+            'domain': SdkQueryValue(SdkUtils.unwrapOptional(domain),
+                style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'offset': SdkQueryValue(SdkUtils.unwrapOptional(offset),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getConditionalBypass',
@@ -415,21 +445,21 @@ Future<GetConditionalBypassResponse> getConditionalBypass(ClientConfig config,
       .data;
 }
 
-
 /// Creates a conditional firewall bypass rule for a project domain. Provide the domain and a `conditionGroup` containing the conditions that determine when the bypass applies. You can add an optional note to describe the rule.
 ///
 /// Create a conditional firewall bypass rule for a project domain.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
-Future<CreateConditionalBypassResponse>
-    createConditionalBypass(ClientConfig config,
-        {required String projectId,
-        required String domain,
-        required List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup,
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> note = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CreateConditionalBypassResponse> createConditionalBypass(
+    ClientConfig config,
+    {required String projectId,
+    required String domain,
+    required List<CreateConditionalBypassRequestBodyConditionGroupItem>
+        conditionGroup,
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> note = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   validateItems('conditionGroup', conditionGroup, min: 1, max: 25);
   if (note is SdkPresent<String>) {
     validateLength('note', note.value, max: 500);
@@ -440,8 +470,10 @@ Future<CreateConditionalBypassResponse>
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true)
           },
           body: {
             'domain': domain,
@@ -450,40 +482,42 @@ Future<CreateConditionalBypassResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createConditionalBypass',
-          fromJsonRaw: (value) => CreateConditionalBypassResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateConditionalBypassResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a conditional firewall bypass rule for a project domain. Specify the project with `projectId` and the rule's domain with `domain`. You can use `slug` or `teamId` to perform the request in a team context.
 ///
 /// Delete a conditional firewall bypass rule from a project domain.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
-Future<DeleteConditionalBypassResponse>
-    deleteConditionalBypass(ClientConfig config,
-        {required String projectId,
-        required String domain,
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<String> teamId = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<DeleteConditionalBypassResponse> deleteConditionalBypass(
+    ClientConfig config,
+    {required String projectId,
+    required String domain,
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<String> teamId = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<DeleteConditionalBypassResponse>(
           'DELETE', '/v1/security/firewall/bypass/rules',
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
             'domain': SdkQueryValue(domain, style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteConditionalBypass',
-          fromJsonRaw: (value) => DeleteConditionalBypassResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteConditionalBypassResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists firewall actions for a project, with optional filters for time, host, IP address, activity, action, and rule. Filters are combined across parameters and matched as alternatives within repeated parameters; use the returned pagination cursor to fetch subsequent results. Rule names reflect the project's current active firewall configuration and active team rulesets.
 ///
@@ -491,24 +525,27 @@ Future<DeleteConditionalBypassResponse>
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetSecurityFirewallEventsResponse>
-    getSecurityFirewallEvents(ClientConfig config,
-        {required String projectId,
-        SdkOptional<GetSecurityFirewallEventsSort> sort = const SdkOmitted(),
-        SdkOptional<double> limit = const SdkOmitted(),
-        SdkOptional<String> cursor = const SdkOmitted(),
-        SdkOptional<double> startTimestamp = const SdkOmitted(),
-        SdkOptional<double> endTimestamp = const SdkOmitted(),
-        SdkOptional<String> hosts = const SdkOmitted(),
-        SdkOptional<List<String>> ip = const SdkOmitted(),
-        SdkOptional<bool> isActive = const SdkOmitted(),
-        SdkOptional<List<GetSecurityFirewallEventsActionItem>> action = const SdkOmitted(),
-        SdkOptional<List<GetSecurityFirewallEventsActionTypeItem>> actionType = const SdkOmitted(),
-        SdkOptional<GetSecurityFirewallEventsRuleKind> ruleKind = const SdkOmitted(),
-        SdkOptional<List<String>> ruleId = const SdkOmitted(),
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<GetSecurityFirewallEventsResponse> getSecurityFirewallEvents(
+    ClientConfig config,
+    {required String projectId,
+    SdkOptional<GetSecurityFirewallEventsSort> sort = const SdkOmitted(),
+    SdkOptional<double> limit = const SdkOmitted(),
+    SdkOptional<String> cursor = const SdkOmitted(),
+    SdkOptional<double> startTimestamp = const SdkOmitted(),
+    SdkOptional<double> endTimestamp = const SdkOmitted(),
+    SdkOptional<String> hosts = const SdkOmitted(),
+    SdkOptional<List<String>> ip = const SdkOmitted(),
+    SdkOptional<bool> isActive = const SdkOmitted(),
+    SdkOptional<List<GetSecurityFirewallEventsActionItem>> action =
+        const SdkOmitted(),
+    SdkOptional<List<GetSecurityFirewallEventsActionTypeItem>> actionType =
+        const SdkOmitted(),
+    SdkOptional<GetSecurityFirewallEventsRuleKind> ruleKind =
+        const SdkOmitted(),
+    SdkOptional<List<String>> ruleId = const SdkOmitted(),
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   if (limit is SdkPresent<double>) {
     validateRange('limit', limit.value, min: 1, max: 5000);
   }
@@ -533,28 +570,44 @@ Future<GetSecurityFirewallEventsResponse>
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'sort': SdkQueryValue(SdkUtils.unwrapOptional(sort), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
-            'startTimestamp': SdkQueryValue(SdkUtils.unwrapOptional(startTimestamp), style: 'form', explode: true),
-            'endTimestamp': SdkQueryValue(SdkUtils.unwrapOptional(endTimestamp), style: 'form', explode: true),
-            'hosts': SdkQueryValue(SdkUtils.unwrapOptional(hosts), style: 'form', explode: true),
-            'ip': SdkQueryValue(SdkUtils.unwrapOptional(ip), style: 'form', explode: true),
-            'isActive': SdkQueryValue(SdkUtils.unwrapOptional(isActive), style: 'form', explode: true),
-            'action': SdkQueryValue(SdkUtils.unwrapOptional(action), style: 'form', explode: true),
-            'actionType': SdkQueryValue(SdkUtils.unwrapOptional(actionType), style: 'form', explode: true),
-            'ruleKind': SdkQueryValue(SdkUtils.unwrapOptional(ruleKind), style: 'form', explode: true),
-            'ruleId': SdkQueryValue(SdkUtils.unwrapOptional(ruleId), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'sort': SdkQueryValue(SdkUtils.unwrapOptional(sort),
+                style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
+                style: 'form', explode: true),
+            'startTimestamp': SdkQueryValue(
+                SdkUtils.unwrapOptional(startTimestamp),
+                style: 'form',
+                explode: true),
+            'endTimestamp': SdkQueryValue(SdkUtils.unwrapOptional(endTimestamp),
+                style: 'form', explode: true),
+            'hosts': SdkQueryValue(SdkUtils.unwrapOptional(hosts),
+                style: 'form', explode: true),
+            'ip': SdkQueryValue(SdkUtils.unwrapOptional(ip),
+                style: 'form', explode: true),
+            'isActive': SdkQueryValue(SdkUtils.unwrapOptional(isActive),
+                style: 'form', explode: true),
+            'action': SdkQueryValue(SdkUtils.unwrapOptional(action),
+                style: 'form', explode: true),
+            'actionType': SdkQueryValue(SdkUtils.unwrapOptional(actionType),
+                style: 'form', explode: true),
+            'ruleKind': SdkQueryValue(SdkUtils.unwrapOptional(ruleKind),
+                style: 'form', explode: true),
+            'ruleId': SdkQueryValue(SdkUtils.unwrapOptional(ruleId),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSecurityFirewallEvents',
-          fromJsonRaw: (value) => GetSecurityFirewallEventsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetSecurityFirewallEventsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Returns aggregate counts for firewall actions matching the specified project and filters, without returning individual action rows. The counts represent policies, including policies that matched no requests. Use the same filter parameters as the firewall actions listing to scope the summary.
 ///
@@ -570,9 +623,12 @@ Future<GetSecurityFirewallEventsSummaryResponse>
         SdkOptional<String> hosts = const SdkOmitted(),
         SdkOptional<List<String>> ip = const SdkOmitted(),
         SdkOptional<bool> isActive = const SdkOmitted(),
-        SdkOptional<List<GetSecurityFirewallEventsSummaryActionItem>> action = const SdkOmitted(),
-        SdkOptional<List<GetSecurityFirewallEventsSummaryActionTypeItem>> actionType = const SdkOmitted(),
-        SdkOptional<GetSecurityFirewallEventsSummaryRuleKind> ruleKind = const SdkOmitted(),
+        SdkOptional<List<GetSecurityFirewallEventsSummaryActionItem>> action =
+            const SdkOmitted(),
+        SdkOptional<List<GetSecurityFirewallEventsSummaryActionTypeItem>>
+            actionType = const SdkOmitted(),
+        SdkOptional<GetSecurityFirewallEventsSummaryRuleKind> ruleKind =
+            const SdkOmitted(),
         SdkOptional<List<String>> ruleId = const SdkOmitted(),
         SdkOptional<String> teamId = const SdkOmitted(),
         SdkOptional<String> slug = const SdkOmitted(),
@@ -586,7 +642,8 @@ Future<GetSecurityFirewallEventsSummaryResponse>
   if (action is SdkPresent<List<GetSecurityFirewallEventsSummaryActionItem>>) {
     validateItems('action', action.value, max: 5);
   }
-  if (actionType is SdkPresent<List<GetSecurityFirewallEventsSummaryActionTypeItem>>) {
+  if (actionType
+      is SdkPresent<List<GetSecurityFirewallEventsSummaryActionTypeItem>>) {
     validateItems('actionType', actionType.value, max: 2);
   }
   if (ruleId is SdkPresent<List<String>>) {
@@ -598,25 +655,39 @@ Future<GetSecurityFirewallEventsSummaryResponse>
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'startTimestamp': SdkQueryValue(SdkUtils.unwrapOptional(startTimestamp), style: 'form', explode: true),
-            'endTimestamp': SdkQueryValue(SdkUtils.unwrapOptional(endTimestamp), style: 'form', explode: true),
-            'hosts': SdkQueryValue(SdkUtils.unwrapOptional(hosts), style: 'form', explode: true),
-            'ip': SdkQueryValue(SdkUtils.unwrapOptional(ip), style: 'form', explode: true),
-            'isActive': SdkQueryValue(SdkUtils.unwrapOptional(isActive), style: 'form', explode: true),
-            'action': SdkQueryValue(SdkUtils.unwrapOptional(action), style: 'form', explode: true),
-            'actionType': SdkQueryValue(SdkUtils.unwrapOptional(actionType), style: 'form', explode: true),
-            'ruleKind': SdkQueryValue(SdkUtils.unwrapOptional(ruleKind), style: 'form', explode: true),
-            'ruleId': SdkQueryValue(SdkUtils.unwrapOptional(ruleId), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'startTimestamp': SdkQueryValue(
+                SdkUtils.unwrapOptional(startTimestamp),
+                style: 'form',
+                explode: true),
+            'endTimestamp': SdkQueryValue(SdkUtils.unwrapOptional(endTimestamp),
+                style: 'form', explode: true),
+            'hosts': SdkQueryValue(SdkUtils.unwrapOptional(hosts),
+                style: 'form', explode: true),
+            'ip': SdkQueryValue(SdkUtils.unwrapOptional(ip),
+                style: 'form', explode: true),
+            'isActive': SdkQueryValue(SdkUtils.unwrapOptional(isActive),
+                style: 'form', explode: true),
+            'action': SdkQueryValue(SdkUtils.unwrapOptional(action),
+                style: 'form', explode: true),
+            'actionType': SdkQueryValue(SdkUtils.unwrapOptional(actionType),
+                style: 'form', explode: true),
+            'ruleKind': SdkQueryValue(SdkUtils.unwrapOptional(ruleKind),
+                style: 'form', explode: true),
+            'ruleId': SdkQueryValue(SdkUtils.unwrapOptional(ruleId),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSecurityFirewallEventsSummary',
-          fromJsonRaw: (value) => GetSecurityFirewallEventsSummaryResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetSecurityFirewallEventsSummaryResponse.fromJson(
+                  value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Generates a firewall rule from a natural-language description for the selected project or team context. Use `projectId`, `teamId`, or `slug` to scope the request, then inspect the returned `rule` or `error`.
 ///
@@ -633,13 +704,17 @@ Future<GenerateFirewallRuleResponse> generateFirewallRule(ClientConfig config,
           'POST', '/v1/security/firewall/config/generate-rule',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'generateFirewallRule',
-          fromJsonRaw: (value) => GenerateFirewallRuleResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GenerateFirewallRuleResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

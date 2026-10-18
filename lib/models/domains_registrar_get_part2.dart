@@ -11,19 +11,30 @@ class GetOrderResponseDomainsItemVariant0ErrorVariant7 {
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant7({required this.code});
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant7 Function({GetOrderResponseDomainsItemVariant0ErrorVariant7Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant0ErrorVariant7 Function(
+          {GetOrderResponseDomainsItemVariant0ErrorVariant7Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant7 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant0ErrorVariant7(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant0ErrorVariant7Code,
-  );
+  GetOrderResponseDomainsItemVariant0ErrorVariant7 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant7(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant0ErrorVariant7Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant7.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant0ErrorVariant7(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant0ErrorVariant7Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant7(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant0ErrorVariant7Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant0ErrorVariant8 {
@@ -33,44 +44,79 @@ class GetOrderResponseDomainsItemVariant0ErrorVariant8 {
 
   const GetOrderResponseDomainsItemVariant0ErrorVariant8({required this.code});
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant8 Function({GetOrderResponseDomainsItemVariant0ErrorVariant8Code code}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant0ErrorVariant8 Function(
+          {GetOrderResponseDomainsItemVariant0ErrorVariant8Code code})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant8 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant0ErrorVariant8(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant0ErrorVariant8Code,
-  );
+  GetOrderResponseDomainsItemVariant0ErrorVariant8 _copyWith(
+          {Object? code = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant8(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant0ErrorVariant8Code,
+      );
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant8.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant0ErrorVariant8(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant0ErrorVariant8Code.fromJson(json['code'] as String) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant8(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant0ErrorVariant8Code.fromJson(
+                json['code'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-  };
+        'code': code.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant0ErrorVariant9Details {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField> invalidField;
+  final SdkOptional<
+          GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField>
+      invalidField;
 
-  const GetOrderResponseDomainsItemVariant0ErrorVariant9Details({this.invalidField = const SdkOmitted()});
+  const GetOrderResponseDomainsItemVariant0ErrorVariant9Details(
+      {this.invalidField = const SdkOmitted()});
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant9Details Function({SdkOptional<GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField> invalidField}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant0ErrorVariant9Details Function(
+      {SdkOptional<
+              GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField>
+          invalidField}) get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant9Details _copyWith({Object? invalidField = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant0ErrorVariant9Details(
-    invalidField: identical(invalidField, sdkOmittedValue) ? this.invalidField : invalidField as SdkOptional<GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField>,
-  );
+  GetOrderResponseDomainsItemVariant0ErrorVariant9Details _copyWith(
+          {Object? invalidField = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant9Details(
+        invalidField: identical(invalidField, sdkOmittedValue)
+            ? this.invalidField
+            : invalidField as SdkOptional<
+                GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField>,
+      );
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant9Details.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant0ErrorVariant9Details(
-    invalidField: json['invalidField'] != null ? SdkPresent((json['invalidField'] != null ? GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField.fromJson(json['invalidField'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant9Details.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant9Details(
+        invalidField: json['invalidField'] != null
+            ? SdkPresent((json['invalidField'] != null
+                ? GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField
+                    .fromJson(json['invalidField'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (invalidField) {
-      SdkPresent<GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField>(value: final value) => {'invalidField': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (invalidField) {
+          SdkPresent<
+                GetOrderResponseDomainsItemVariant0ErrorVariant9DetailsInvalidField>(
+            value: final value
+          ) =>
+            {
+              'invalidField': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetOrderResponseDomainsItemVariant0ErrorVariant9 {
@@ -79,24 +125,44 @@ class GetOrderResponseDomainsItemVariant0ErrorVariant9 {
   final GetOrderResponseDomainsItemVariant0ErrorVariant9Code code;
   final GetOrderResponseDomainsItemVariant0ErrorVariant9Details details;
 
-  const GetOrderResponseDomainsItemVariant0ErrorVariant9({required this.code, required this.details});
+  const GetOrderResponseDomainsItemVariant0ErrorVariant9(
+      {required this.code, required this.details});
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant9 Function({GetOrderResponseDomainsItemVariant0ErrorVariant9Code code, GetOrderResponseDomainsItemVariant0ErrorVariant9Details details}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant0ErrorVariant9 Function(
+          {GetOrderResponseDomainsItemVariant0ErrorVariant9Code code,
+          GetOrderResponseDomainsItemVariant0ErrorVariant9Details details})
+      get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant9 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant0ErrorVariant9(
-    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseDomainsItemVariant0ErrorVariant9Code,
-    details: identical(details, sdkOmittedValue) ? this.details : details as GetOrderResponseDomainsItemVariant0ErrorVariant9Details,
-  );
+  GetOrderResponseDomainsItemVariant0ErrorVariant9 _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? details = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant9(
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as GetOrderResponseDomainsItemVariant0ErrorVariant9Code,
+        details: identical(details, sdkOmittedValue)
+            ? this.details
+            : details
+                as GetOrderResponseDomainsItemVariant0ErrorVariant9Details,
+      );
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant9.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant0ErrorVariant9(
-    code: (json['code'] != null ? GetOrderResponseDomainsItemVariant0ErrorVariant9Code.fromJson(json['code'] as String) : null)!,
-    details: (json['details'] != null ? GetOrderResponseDomainsItemVariant0ErrorVariant9Details.fromJson(json['details'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant9(
+        code: (json['code'] != null
+            ? GetOrderResponseDomainsItemVariant0ErrorVariant9Code.fromJson(
+                json['code'] as String)
+            : null)!,
+        details: (json['details'] != null
+            ? GetOrderResponseDomainsItemVariant0ErrorVariant9Details.fromJson(
+                json['details'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code.toJson(),
-    'details': details.toJson(),
-  };
+        'code': code.toJson(),
+        'details': details.toJson(),
+      };
 }
 
 class GetOrderResponseDomainsItemVariant0ErrorVariant10 {
@@ -105,27 +171,40 @@ class GetOrderResponseDomainsItemVariant0ErrorVariant10 {
   final String code;
   final SdkOptional<dynamic> details;
 
-  const GetOrderResponseDomainsItemVariant0ErrorVariant10({required this.code, this.details = const SdkOmitted()});
+  const GetOrderResponseDomainsItemVariant0ErrorVariant10(
+      {required this.code, this.details = const SdkOmitted()});
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant10 Function({String code, SdkOptional<dynamic> details}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant0ErrorVariant10 Function(
+      {String code, SdkOptional<dynamic> details}) get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant0ErrorVariant10 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant0ErrorVariant10(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    details: identical(details, sdkOmittedValue) ? this.details : details as SdkOptional<dynamic>,
-  );
+  GetOrderResponseDomainsItemVariant0ErrorVariant10 _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? details = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant10(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        details: identical(details, sdkOmittedValue)
+            ? this.details
+            : details as SdkOptional<dynamic>,
+      );
 
-  factory GetOrderResponseDomainsItemVariant0ErrorVariant10.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant0ErrorVariant10(
-    code: (json['code'] as String?)!,
-    details: json['details'] != null ? SdkPresent((json['details'])!) : const SdkOmitted(),
-  );
+  factory GetOrderResponseDomainsItemVariant0ErrorVariant10.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant0ErrorVariant10(
+        code: (json['code'] as String?)!,
+        details: json['details'] != null
+            ? SdkPresent((json['details'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code,
-    ...switch (details) {
-      SdkPresent<dynamic>(value: final value) => {'details': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'code': code,
+        ...switch (details) {
+          SdkPresent<dynamic>(value: final value) => {
+              'details': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class GetOrderResponseDomainsItemVariant0Error {
@@ -134,98 +213,253 @@ sealed class GetOrderResponseDomainsItemVariant0Error {
   const GetOrderResponseDomainsItemVariant0Error();
   factory GetOrderResponseDomainsItemVariant0Error.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant8.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant9.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9(value); } } catch (_) {}
-      try { final value = GetOrderResponseDomainsItemVariant0ErrorVariant10.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10(value); } } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant4.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant5.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant6.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant7.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant8.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant9.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetOrderResponseDomainsItemVariant0ErrorVariant10.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0(GetOrderResponseDomainsItemVariant0ErrorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1(GetOrderResponseDomainsItemVariant0ErrorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2(GetOrderResponseDomainsItemVariant0ErrorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3(GetOrderResponseDomainsItemVariant0ErrorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4(GetOrderResponseDomainsItemVariant0ErrorVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5(GetOrderResponseDomainsItemVariant0ErrorVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6(GetOrderResponseDomainsItemVariant0ErrorVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7(GetOrderResponseDomainsItemVariant0ErrorVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8(GetOrderResponseDomainsItemVariant0ErrorVariant8.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9(GetOrderResponseDomainsItemVariant0ErrorVariant9.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10(GetOrderResponseDomainsItemVariant0ErrorVariant10.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetOrderResponseDomainsItemVariant0Error");
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0(
+          GetOrderResponseDomainsItemVariant0ErrorVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1(
+          GetOrderResponseDomainsItemVariant0ErrorVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2(
+          GetOrderResponseDomainsItemVariant0ErrorVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3(
+          GetOrderResponseDomainsItemVariant0ErrorVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4(
+          GetOrderResponseDomainsItemVariant0ErrorVariant4.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5(
+          GetOrderResponseDomainsItemVariant0ErrorVariant5.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6(
+          GetOrderResponseDomainsItemVariant0ErrorVariant6.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7(
+          GetOrderResponseDomainsItemVariant0ErrorVariant7.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8(
+          GetOrderResponseDomainsItemVariant0ErrorVariant8.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9(
+          GetOrderResponseDomainsItemVariant0ErrorVariant9.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10(
+          GetOrderResponseDomainsItemVariant0ErrorVariant10.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetOrderResponseDomainsItemVariant0Error");
   }
   Object? toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant0 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant1 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant2 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant3 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant4 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant4(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant5 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant5(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant6 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant6(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant7 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant7(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant8 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant8(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant9 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant9(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10 extends GetOrderResponseDomainsItemVariant0Error {
+final class GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10
+    extends GetOrderResponseDomainsItemVariant0Error {
   final GetOrderResponseDomainsItemVariant0ErrorVariant10 value;
-  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetOrderResponseDomainsItemVariant0ErrorGetOrderResponseDomainsItemVariant0ErrorVariant10(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetOrderResponseDomainsItemVariant0 {
@@ -233,48 +467,94 @@ class GetOrderResponseDomainsItemVariant0 {
   static const String constructionSurface = 'named';
   final GetOrderResponseDomainsItemVariant0PurchaseType purchaseType;
   final bool autoRenew;
+
   /// The number of years the domain is being purchased for.
   final double years;
+
   /// A valid domain name
   final String domainName;
   final GetOrderResponseDomainsItemVariant0Status status;
   final double price;
   final SdkOptional<dynamic> error;
 
-  const GetOrderResponseDomainsItemVariant0({required this.purchaseType, required this.autoRenew, required this.years, required this.domainName, required this.status, required this.price, this.error = const SdkOmitted()});
+  const GetOrderResponseDomainsItemVariant0(
+      {required this.purchaseType,
+      required this.autoRenew,
+      required this.years,
+      required this.domainName,
+      required this.status,
+      required this.price,
+      this.error = const SdkOmitted()});
 
-  GetOrderResponseDomainsItemVariant0 Function({GetOrderResponseDomainsItemVariant0PurchaseType purchaseType, bool autoRenew, double years, String domainName, GetOrderResponseDomainsItemVariant0Status status, double price, SdkOptional<dynamic> error}) get copyWith => _copyWith;
+  GetOrderResponseDomainsItemVariant0 Function(
+      {GetOrderResponseDomainsItemVariant0PurchaseType purchaseType,
+      bool autoRenew,
+      double years,
+      String domainName,
+      GetOrderResponseDomainsItemVariant0Status status,
+      double price,
+      SdkOptional<dynamic> error}) get copyWith => _copyWith;
 
-  GetOrderResponseDomainsItemVariant0 _copyWith({Object? purchaseType = sdkOmittedValue, Object? autoRenew = sdkOmittedValue, Object? years = sdkOmittedValue, Object? domainName = sdkOmittedValue, Object? status = sdkOmittedValue, Object? price = sdkOmittedValue, Object? error = sdkOmittedValue}) => GetOrderResponseDomainsItemVariant0(
-    purchaseType: identical(purchaseType, sdkOmittedValue) ? this.purchaseType : purchaseType as GetOrderResponseDomainsItemVariant0PurchaseType,
-    autoRenew: identical(autoRenew, sdkOmittedValue) ? this.autoRenew : autoRenew as bool,
-    years: identical(years, sdkOmittedValue) ? this.years : years as double,
-    domainName: identical(domainName, sdkOmittedValue) ? this.domainName : domainName as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as GetOrderResponseDomainsItemVariant0Status,
-    price: identical(price, sdkOmittedValue) ? this.price : price as double,
-    error: identical(error, sdkOmittedValue) ? this.error : error as SdkOptional<dynamic>,
-  );
+  GetOrderResponseDomainsItemVariant0 _copyWith(
+          {Object? purchaseType = sdkOmittedValue,
+          Object? autoRenew = sdkOmittedValue,
+          Object? years = sdkOmittedValue,
+          Object? domainName = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? price = sdkOmittedValue,
+          Object? error = sdkOmittedValue}) =>
+      GetOrderResponseDomainsItemVariant0(
+        purchaseType: identical(purchaseType, sdkOmittedValue)
+            ? this.purchaseType
+            : purchaseType as GetOrderResponseDomainsItemVariant0PurchaseType,
+        autoRenew: identical(autoRenew, sdkOmittedValue)
+            ? this.autoRenew
+            : autoRenew as bool,
+        years: identical(years, sdkOmittedValue) ? this.years : years as double,
+        domainName: identical(domainName, sdkOmittedValue)
+            ? this.domainName
+            : domainName as String,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as GetOrderResponseDomainsItemVariant0Status,
+        price: identical(price, sdkOmittedValue) ? this.price : price as double,
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as SdkOptional<dynamic>,
+      );
 
-  factory GetOrderResponseDomainsItemVariant0.fromJson(Map<String, dynamic> json) => GetOrderResponseDomainsItemVariant0(
-    purchaseType: (json['purchaseType'] != null ? GetOrderResponseDomainsItemVariant0PurchaseType.fromJson(json['purchaseType'] as String) : null)!,
-    autoRenew: (json['autoRenew'] as bool?)!,
-    years: ((json['years'] as num?)?.toDouble())!,
-    domainName: (json['domainName'] as String?)!,
-    status: (json['status'] != null ? GetOrderResponseDomainsItemVariant0Status.fromJson(json['status'] as String) : null)!,
-    price: ((json['price'] as num?)?.toDouble())!,
-    error: json['error'] != null ? SdkPresent((json['error'])!) : const SdkOmitted(),
-  );
+  factory GetOrderResponseDomainsItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetOrderResponseDomainsItemVariant0(
+        purchaseType: (json['purchaseType'] != null
+            ? GetOrderResponseDomainsItemVariant0PurchaseType.fromJson(
+                json['purchaseType'] as String)
+            : null)!,
+        autoRenew: (json['autoRenew'] as bool?)!,
+        years: ((json['years'] as num?)?.toDouble())!,
+        domainName: (json['domainName'] as String?)!,
+        status: (json['status'] != null
+            ? GetOrderResponseDomainsItemVariant0Status.fromJson(
+                json['status'] as String)
+            : null)!,
+        price: ((json['price'] as num?)?.toDouble())!,
+        error: json['error'] != null
+            ? SdkPresent((json['error'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'purchaseType': purchaseType.toJson(),
-    'autoRenew': autoRenew,
-    'years': years,
-    'domainName': domainName,
-    'status': status.toJson(),
-    'price': price,
-    ...switch (error) {
-      SdkPresent<dynamic>(value: final value) => {'error': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'purchaseType': purchaseType.toJson(),
+        'autoRenew': autoRenew,
+        'years': years,
+        'domainName': domainName,
+        'status': status.toJson(),
+        'price': price,
+        ...switch (error) {
+          SdkPresent<dynamic>(value: final value) => {
+              'error': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

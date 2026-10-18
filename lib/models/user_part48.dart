@@ -8,278 +8,696 @@ part of 'user.dart';
 class UserEventPayloadVariant120JobVariant8 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional enumerated value serialized in the `authorized` wire field.
   final SdkOptional<UserEventPayloadVariant120JobVariant8Authorized> authorized;
+
   /// Optional `string` value serialized in the `authorizedBy` wire field.
   final SdkOptional<String> authorizedBy;
+
   /// Optional `string` value serialized in the `beforeSha` wire field.
   final SdkOptional<String> beforeSha;
+
   /// Since 6 Nov 2025 The verification status of the commit. - 'verified' if the commit is verified - 'unverified' if the commit is not verified - 'unknown' if the commit verification status is unknown or not supported
-  final SdkOptional<UserEventPayloadVariant120JobVariant8CommitVerification> commitVerification;
+  final SdkOptional<UserEventPayloadVariant120JobVariant8CommitVerification>
+      commitVerification;
+
   /// Since April 2023 Cached count of how many projects are connected to the repo. Saves a few Cosmos queries down the road in the main flow.
   final SdkOptional<double> connectedProjectCount;
+
   /// Optional `number` value serialized in the `createdAt` wire field.
   final SdkOptional<double> createdAt;
+
   /// Optional `string` value serialized in the `customEnvId` wire field.
   final SdkOptional<String?> customEnvId;
+
   /// Optional `string` value serialized in the `defaultBranch` wire field.
   final SdkOptional<String> defaultBranch;
+
   /// Optional object value serialized in the `deployHook` wire field.
   final SdkOptional<UserEventPayloadVariant120JobVariant8DeployHook> deployHook;
+
   /// Optional `string` value serialized in the `deploymentId` wire field.
   final SdkOptional<String> deploymentId;
+
   /// Optional enumerated value serialized in the `eventful` wire field.
   final SdkOptional<UserEventPayloadVariant120JobVariant8Eventful> eventful;
+
   /// Optional enumerated value serialized in the `forced` wire field.
   final SdkOptional<UserEventPayloadVariant120JobVariant8Forced> forced;
+
   /// Optional enumerated value serialized in the `forceNew` wire field.
   final SdkOptional<UserEventPayloadVariant120JobVariant8ForceNew> forceNew;
+
   /// Since June 2023 Determines if comments should be posted to the git host. Replaces `github.silent` in the vercel.json.
-  final SdkOptional<UserEventPayloadVariant120JobVariant8GitComments> gitComments;
+  final SdkOptional<UserEventPayloadVariant120JobVariant8GitComments>
+      gitComments;
+
   /// Since February 2022 All the hashtag-vercel tags found in the commit message triggering the deploy. For example, #VERCEL_DO_SOMETHING
-  final SdkOptional<List<UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>> gitHashtagVercel;
+  final SdkOptional<
+          List<UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>>
+      gitHashtagVercel;
+
   /// Cursor Origin
   final UserEventPayloadVariant120JobVariant8HeadInfo headInfo;
+
   /// Origin installation id (`i_…`) used to resolve the credential.
   final String installationId;
+
   /// Since 28 Feb 2024 If set to true, identifies that the git job was created for a manual git deployment
-  final SdkOptional<UserEventPayloadVariant120JobVariant8IsManualGitDeploy> isManualGitDeploy;
+  final SdkOptional<UserEventPayloadVariant120JobVariant8IsManualGitDeploy>
+      isManualGitDeploy;
+
   /// Since December 2022 Pairs of projects and owner ids to build for this build request.
   final SdkOptional<List<List<String>>> jobPairs;
+
   /// Since December 2022 All project ids associated to this job. Think monorepo. This job will be for one of these project.
   final SdkOptional<List<String>> jobProjectIds;
+
   /// Optional `string` value serialized in the `linkedProjectId` wire field.
   final SdkOptional<String> linkedProjectId;
+
   /// Since March 2026 Records a successful NSNB auto-add result so later GitHub PR comments can deterministically explain why this SHA was allowed to deploy.
-  final SdkOptional<UserEventPayloadVariant120JobVariant8NsnbSideEffect> nsnbSideEffect;
+  final SdkOptional<UserEventPayloadVariant120JobVariant8NsnbSideEffect>
+      nsnbSideEffect;
+
   /// Required `string` value serialized in the `owner` wire field.
   final String owner;
+
   /// Optional `number` value serialized in the `prId` wire field.
   final SdkOptional<double?> prId;
+
   /// Since April 2023 If set then it is a cached result of asking the remote for the PR ID the commit that triggered this Job. Or zero if it was not a PR. This prevents a few git round trips by the git updater.
   final SdkOptional<double> prIdOrZero;
+
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
+
   /// Required enumerated value serialized in the `provider` wire field.
   final UserEventPayloadVariant120JobVariant8Provider provider;
+
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
+
   /// Required `string` value serialized in the `repo` wire field.
   final String repo;
+
   /// Required `string` value serialized in the `repoId` wire field.
   final String repoId;
+
   /// Optional `number` value serialized in the `repoPushedAt` wire field.
   final SdkOptional<double?> repoPushedAt;
+
   /// Required `string` value serialized in the `sha` wire field.
   final String sha;
+
   /// Since June 2024 Pairs of projects and owner ids to immediately finish (without building) because we want to create them in a skipped state.
   final SdkOptional<List<List<String>>> skippedJobPairs;
+
   /// Optional `string` value serialized in the `target` wire field.
   final SdkOptional<String?> target;
+
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventPayloadVariant120JobVariant8Type type_;
+
   /// Optional `string` value serialized in the `url` wire field.
   final SdkOptional<String> url;
 
-  const UserEventPayloadVariant120JobVariant8({this.authorized = const SdkOmitted(), this.authorizedBy = const SdkOmitted(), this.beforeSha = const SdkOmitted(), this.commitVerification = const SdkOmitted(), this.connectedProjectCount = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.customEnvId = const SdkOmitted(), this.defaultBranch = const SdkOmitted(), this.deployHook = const SdkOmitted(), this.deploymentId = const SdkOmitted(), this.eventful = const SdkOmitted(), this.forced = const SdkOmitted(), this.forceNew = const SdkOmitted(), this.gitComments = const SdkOmitted(), this.gitHashtagVercel = const SdkOmitted(), required this.headInfo, required this.installationId, this.isManualGitDeploy = const SdkOmitted(), this.jobPairs = const SdkOmitted(), this.jobProjectIds = const SdkOmitted(), this.linkedProjectId = const SdkOmitted(), this.nsnbSideEffect = const SdkOmitted(), required this.owner, this.prId = const SdkOmitted(), this.prIdOrZero = const SdkOmitted(), this.projectId = const SdkOmitted(), required this.provider, required this.ref, required this.repo, required this.repoId, this.repoPushedAt = const SdkOmitted(), required this.sha, this.skippedJobPairs = const SdkOmitted(), this.target = const SdkOmitted(), required this.type_, this.url = const SdkOmitted()});
+  const UserEventPayloadVariant120JobVariant8(
+      {this.authorized = const SdkOmitted(),
+      this.authorizedBy = const SdkOmitted(),
+      this.beforeSha = const SdkOmitted(),
+      this.commitVerification = const SdkOmitted(),
+      this.connectedProjectCount = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.customEnvId = const SdkOmitted(),
+      this.defaultBranch = const SdkOmitted(),
+      this.deployHook = const SdkOmitted(),
+      this.deploymentId = const SdkOmitted(),
+      this.eventful = const SdkOmitted(),
+      this.forced = const SdkOmitted(),
+      this.forceNew = const SdkOmitted(),
+      this.gitComments = const SdkOmitted(),
+      this.gitHashtagVercel = const SdkOmitted(),
+      required this.headInfo,
+      required this.installationId,
+      this.isManualGitDeploy = const SdkOmitted(),
+      this.jobPairs = const SdkOmitted(),
+      this.jobProjectIds = const SdkOmitted(),
+      this.linkedProjectId = const SdkOmitted(),
+      this.nsnbSideEffect = const SdkOmitted(),
+      required this.owner,
+      this.prId = const SdkOmitted(),
+      this.prIdOrZero = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      required this.provider,
+      required this.ref,
+      required this.repo,
+      required this.repoId,
+      this.repoPushedAt = const SdkOmitted(),
+      required this.sha,
+      this.skippedJobPairs = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      required this.type_,
+      this.url = const SdkOmitted()});
 
-  UserEventPayloadVariant120JobVariant8 Function({SdkOptional<UserEventPayloadVariant120JobVariant8Authorized> authorized, SdkOptional<String> authorizedBy, SdkOptional<String> beforeSha, SdkOptional<UserEventPayloadVariant120JobVariant8CommitVerification> commitVerification, SdkOptional<double> connectedProjectCount, SdkOptional<double> createdAt, SdkOptional<String?> customEnvId, SdkOptional<String> defaultBranch, SdkOptional<UserEventPayloadVariant120JobVariant8DeployHook> deployHook, SdkOptional<String> deploymentId, SdkOptional<UserEventPayloadVariant120JobVariant8Eventful> eventful, SdkOptional<UserEventPayloadVariant120JobVariant8Forced> forced, SdkOptional<UserEventPayloadVariant120JobVariant8ForceNew> forceNew, SdkOptional<UserEventPayloadVariant120JobVariant8GitComments> gitComments, SdkOptional<List<UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>> gitHashtagVercel, UserEventPayloadVariant120JobVariant8HeadInfo headInfo, String installationId, SdkOptional<UserEventPayloadVariant120JobVariant8IsManualGitDeploy> isManualGitDeploy, SdkOptional<List<List<String>>> jobPairs, SdkOptional<List<String>> jobProjectIds, SdkOptional<String> linkedProjectId, SdkOptional<UserEventPayloadVariant120JobVariant8NsnbSideEffect> nsnbSideEffect, String owner, SdkOptional<double?> prId, SdkOptional<double> prIdOrZero, SdkOptional<String> projectId, UserEventPayloadVariant120JobVariant8Provider provider, String ref, String repo, String repoId, SdkOptional<double?> repoPushedAt, String sha, SdkOptional<List<List<String>>> skippedJobPairs, SdkOptional<String?> target, UserEventPayloadVariant120JobVariant8Type type_, SdkOptional<String> url}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant8 Function(
+      {SdkOptional<UserEventPayloadVariant120JobVariant8Authorized> authorized,
+      SdkOptional<String> authorizedBy,
+      SdkOptional<String> beforeSha,
+      SdkOptional<UserEventPayloadVariant120JobVariant8CommitVerification>
+          commitVerification,
+      SdkOptional<double> connectedProjectCount,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> customEnvId,
+      SdkOptional<String> defaultBranch,
+      SdkOptional<UserEventPayloadVariant120JobVariant8DeployHook> deployHook,
+      SdkOptional<String> deploymentId,
+      SdkOptional<UserEventPayloadVariant120JobVariant8Eventful> eventful,
+      SdkOptional<UserEventPayloadVariant120JobVariant8Forced> forced,
+      SdkOptional<UserEventPayloadVariant120JobVariant8ForceNew> forceNew,
+      SdkOptional<UserEventPayloadVariant120JobVariant8GitComments> gitComments,
+      SdkOptional<
+              List<UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>>
+          gitHashtagVercel,
+      UserEventPayloadVariant120JobVariant8HeadInfo headInfo,
+      String installationId,
+      SdkOptional<UserEventPayloadVariant120JobVariant8IsManualGitDeploy>
+          isManualGitDeploy,
+      SdkOptional<List<List<String>>> jobPairs,
+      SdkOptional<List<String>> jobProjectIds,
+      SdkOptional<String> linkedProjectId,
+      SdkOptional<UserEventPayloadVariant120JobVariant8NsnbSideEffect>
+          nsnbSideEffect,
+      String owner,
+      SdkOptional<double?> prId,
+      SdkOptional<double> prIdOrZero,
+      SdkOptional<String> projectId,
+      UserEventPayloadVariant120JobVariant8Provider provider,
+      String ref,
+      String repo,
+      String repoId,
+      SdkOptional<double?> repoPushedAt,
+      String sha,
+      SdkOptional<List<List<String>>> skippedJobPairs,
+      SdkOptional<String?> target,
+      UserEventPayloadVariant120JobVariant8Type type_,
+      SdkOptional<String> url}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant8 _copyWith({Object? authorized = sdkOmittedValue, Object? authorizedBy = sdkOmittedValue, Object? beforeSha = sdkOmittedValue, Object? commitVerification = sdkOmittedValue, Object? connectedProjectCount = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customEnvId = sdkOmittedValue, Object? defaultBranch = sdkOmittedValue, Object? deployHook = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? eventful = sdkOmittedValue, Object? forced = sdkOmittedValue, Object? forceNew = sdkOmittedValue, Object? gitComments = sdkOmittedValue, Object? gitHashtagVercel = sdkOmittedValue, Object? headInfo = sdkOmittedValue, Object? installationId = sdkOmittedValue, Object? isManualGitDeploy = sdkOmittedValue, Object? jobPairs = sdkOmittedValue, Object? jobProjectIds = sdkOmittedValue, Object? linkedProjectId = sdkOmittedValue, Object? nsnbSideEffect = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? prId = sdkOmittedValue, Object? prIdOrZero = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? provider = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoPushedAt = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? skippedJobPairs = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant8(
-    authorized: identical(authorized, sdkOmittedValue) ? this.authorized : authorized as SdkOptional<UserEventPayloadVariant120JobVariant8Authorized>,
-    authorizedBy: identical(authorizedBy, sdkOmittedValue) ? this.authorizedBy : authorizedBy as SdkOptional<String>,
-    beforeSha: identical(beforeSha, sdkOmittedValue) ? this.beforeSha : beforeSha as SdkOptional<String>,
-    commitVerification: identical(commitVerification, sdkOmittedValue) ? this.commitVerification : commitVerification as SdkOptional<UserEventPayloadVariant120JobVariant8CommitVerification>,
-    connectedProjectCount: identical(connectedProjectCount, sdkOmittedValue) ? this.connectedProjectCount : connectedProjectCount as SdkOptional<double>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    customEnvId: identical(customEnvId, sdkOmittedValue) ? this.customEnvId : customEnvId as SdkOptional<String?>,
-    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as SdkOptional<String>,
-    deployHook: identical(deployHook, sdkOmittedValue) ? this.deployHook : deployHook as SdkOptional<UserEventPayloadVariant120JobVariant8DeployHook>,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as SdkOptional<String>,
-    eventful: identical(eventful, sdkOmittedValue) ? this.eventful : eventful as SdkOptional<UserEventPayloadVariant120JobVariant8Eventful>,
-    forced: identical(forced, sdkOmittedValue) ? this.forced : forced as SdkOptional<UserEventPayloadVariant120JobVariant8Forced>,
-    forceNew: identical(forceNew, sdkOmittedValue) ? this.forceNew : forceNew as SdkOptional<UserEventPayloadVariant120JobVariant8ForceNew>,
-    gitComments: identical(gitComments, sdkOmittedValue) ? this.gitComments : gitComments as SdkOptional<UserEventPayloadVariant120JobVariant8GitComments>,
-    gitHashtagVercel: identical(gitHashtagVercel, sdkOmittedValue) ? this.gitHashtagVercel : gitHashtagVercel as SdkOptional<List<UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>>,
-    headInfo: identical(headInfo, sdkOmittedValue) ? this.headInfo : headInfo as UserEventPayloadVariant120JobVariant8HeadInfo,
-    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as String,
-    isManualGitDeploy: identical(isManualGitDeploy, sdkOmittedValue) ? this.isManualGitDeploy : isManualGitDeploy as SdkOptional<UserEventPayloadVariant120JobVariant8IsManualGitDeploy>,
-    jobPairs: identical(jobPairs, sdkOmittedValue) ? this.jobPairs : jobPairs as SdkOptional<List<List<String>>>,
-    jobProjectIds: identical(jobProjectIds, sdkOmittedValue) ? this.jobProjectIds : jobProjectIds as SdkOptional<List<String>>,
-    linkedProjectId: identical(linkedProjectId, sdkOmittedValue) ? this.linkedProjectId : linkedProjectId as SdkOptional<String>,
-    nsnbSideEffect: identical(nsnbSideEffect, sdkOmittedValue) ? this.nsnbSideEffect : nsnbSideEffect as SdkOptional<UserEventPayloadVariant120JobVariant8NsnbSideEffect>,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    prId: identical(prId, sdkOmittedValue) ? this.prId : prId as SdkOptional<double?>,
-    prIdOrZero: identical(prIdOrZero, sdkOmittedValue) ? this.prIdOrZero : prIdOrZero as SdkOptional<double>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as UserEventPayloadVariant120JobVariant8Provider,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-    repoPushedAt: identical(repoPushedAt, sdkOmittedValue) ? this.repoPushedAt : repoPushedAt as SdkOptional<double?>,
-    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-    skippedJobPairs: identical(skippedJobPairs, sdkOmittedValue) ? this.skippedJobPairs : skippedJobPairs as SdkOptional<List<List<String>>>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<String?>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant120JobVariant8Type,
-    url: identical(url, sdkOmittedValue) ? this.url : url as SdkOptional<String>,
-  );
+  UserEventPayloadVariant120JobVariant8 _copyWith(
+          {Object? authorized = sdkOmittedValue,
+          Object? authorizedBy = sdkOmittedValue,
+          Object? beforeSha = sdkOmittedValue,
+          Object? commitVerification = sdkOmittedValue,
+          Object? connectedProjectCount = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? customEnvId = sdkOmittedValue,
+          Object? defaultBranch = sdkOmittedValue,
+          Object? deployHook = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? eventful = sdkOmittedValue,
+          Object? forced = sdkOmittedValue,
+          Object? forceNew = sdkOmittedValue,
+          Object? gitComments = sdkOmittedValue,
+          Object? gitHashtagVercel = sdkOmittedValue,
+          Object? headInfo = sdkOmittedValue,
+          Object? installationId = sdkOmittedValue,
+          Object? isManualGitDeploy = sdkOmittedValue,
+          Object? jobPairs = sdkOmittedValue,
+          Object? jobProjectIds = sdkOmittedValue,
+          Object? linkedProjectId = sdkOmittedValue,
+          Object? nsnbSideEffect = sdkOmittedValue,
+          Object? owner = sdkOmittedValue,
+          Object? prId = sdkOmittedValue,
+          Object? prIdOrZero = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? provider = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? repoPushedAt = sdkOmittedValue,
+          Object? sha = sdkOmittedValue,
+          Object? skippedJobPairs = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant8(
+        authorized: identical(authorized, sdkOmittedValue)
+            ? this.authorized
+            : authorized
+                as SdkOptional<UserEventPayloadVariant120JobVariant8Authorized>,
+        authorizedBy: identical(authorizedBy, sdkOmittedValue)
+            ? this.authorizedBy
+            : authorizedBy as SdkOptional<String>,
+        beforeSha: identical(beforeSha, sdkOmittedValue)
+            ? this.beforeSha
+            : beforeSha as SdkOptional<String>,
+        commitVerification: identical(commitVerification, sdkOmittedValue)
+            ? this.commitVerification
+            : commitVerification as SdkOptional<
+                UserEventPayloadVariant120JobVariant8CommitVerification>,
+        connectedProjectCount: identical(connectedProjectCount, sdkOmittedValue)
+            ? this.connectedProjectCount
+            : connectedProjectCount as SdkOptional<double>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        customEnvId: identical(customEnvId, sdkOmittedValue)
+            ? this.customEnvId
+            : customEnvId as SdkOptional<String?>,
+        defaultBranch: identical(defaultBranch, sdkOmittedValue)
+            ? this.defaultBranch
+            : defaultBranch as SdkOptional<String>,
+        deployHook: identical(deployHook, sdkOmittedValue)
+            ? this.deployHook
+            : deployHook
+                as SdkOptional<UserEventPayloadVariant120JobVariant8DeployHook>,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as SdkOptional<String>,
+        eventful: identical(eventful, sdkOmittedValue)
+            ? this.eventful
+            : eventful
+                as SdkOptional<UserEventPayloadVariant120JobVariant8Eventful>,
+        forced: identical(forced, sdkOmittedValue)
+            ? this.forced
+            : forced
+                as SdkOptional<UserEventPayloadVariant120JobVariant8Forced>,
+        forceNew: identical(forceNew, sdkOmittedValue)
+            ? this.forceNew
+            : forceNew
+                as SdkOptional<UserEventPayloadVariant120JobVariant8ForceNew>,
+        gitComments: identical(gitComments, sdkOmittedValue)
+            ? this.gitComments
+            : gitComments as SdkOptional<
+                UserEventPayloadVariant120JobVariant8GitComments>,
+        gitHashtagVercel: identical(gitHashtagVercel, sdkOmittedValue)
+            ? this.gitHashtagVercel
+            : gitHashtagVercel as SdkOptional<
+                List<
+                    UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>>,
+        headInfo: identical(headInfo, sdkOmittedValue)
+            ? this.headInfo
+            : headInfo as UserEventPayloadVariant120JobVariant8HeadInfo,
+        installationId: identical(installationId, sdkOmittedValue)
+            ? this.installationId
+            : installationId as String,
+        isManualGitDeploy: identical(isManualGitDeploy, sdkOmittedValue)
+            ? this.isManualGitDeploy
+            : isManualGitDeploy as SdkOptional<
+                UserEventPayloadVariant120JobVariant8IsManualGitDeploy>,
+        jobPairs: identical(jobPairs, sdkOmittedValue)
+            ? this.jobPairs
+            : jobPairs as SdkOptional<List<List<String>>>,
+        jobProjectIds: identical(jobProjectIds, sdkOmittedValue)
+            ? this.jobProjectIds
+            : jobProjectIds as SdkOptional<List<String>>,
+        linkedProjectId: identical(linkedProjectId, sdkOmittedValue)
+            ? this.linkedProjectId
+            : linkedProjectId as SdkOptional<String>,
+        nsnbSideEffect: identical(nsnbSideEffect, sdkOmittedValue)
+            ? this.nsnbSideEffect
+            : nsnbSideEffect as SdkOptional<
+                UserEventPayloadVariant120JobVariant8NsnbSideEffect>,
+        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+        prId: identical(prId, sdkOmittedValue)
+            ? this.prId
+            : prId as SdkOptional<double?>,
+        prIdOrZero: identical(prIdOrZero, sdkOmittedValue)
+            ? this.prIdOrZero
+            : prIdOrZero as SdkOptional<double>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as UserEventPayloadVariant120JobVariant8Provider,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        repoId:
+            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+        repoPushedAt: identical(repoPushedAt, sdkOmittedValue)
+            ? this.repoPushedAt
+            : repoPushedAt as SdkOptional<double?>,
+        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+        skippedJobPairs: identical(skippedJobPairs, sdkOmittedValue)
+            ? this.skippedJobPairs
+            : skippedJobPairs as SdkOptional<List<List<String>>>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<String?>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventPayloadVariant120JobVariant8Type,
+        url: identical(url, sdkOmittedValue)
+            ? this.url
+            : url as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant120JobVariant8.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant8(
-    authorized: json['authorized'] != null ? SdkPresent((json['authorized'] != null ? UserEventPayloadVariant120JobVariant8Authorized.fromJson(json['authorized'] as bool) : null)!) : const SdkOmitted(),
-    authorizedBy: json['authorizedBy'] != null ? SdkPresent((json['authorizedBy'] as String?)!) : const SdkOmitted(),
-    beforeSha: json['beforeSha'] != null ? SdkPresent((json['beforeSha'] as String?)!) : const SdkOmitted(),
-    commitVerification: json['commitVerification'] != null ? SdkPresent((json['commitVerification'] != null ? UserEventPayloadVariant120JobVariant8CommitVerification.fromJson(json['commitVerification'] as String) : null)!) : const SdkOmitted(),
-    connectedProjectCount: json['connectedProjectCount'] != null ? SdkPresent(((json['connectedProjectCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    customEnvId: json.containsKey('customEnvId') ? SdkPresent(json['customEnvId'] as String?) : const SdkOmitted(),
-    defaultBranch: json['defaultBranch'] != null ? SdkPresent((json['defaultBranch'] as String?)!) : const SdkOmitted(),
-    deployHook: json['deployHook'] != null ? SdkPresent((json['deployHook'] != null ? UserEventPayloadVariant120JobVariant8DeployHook.fromJson(json['deployHook'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    deploymentId: json['deploymentId'] != null ? SdkPresent((json['deploymentId'] as String?)!) : const SdkOmitted(),
-    eventful: json['eventful'] != null ? SdkPresent((json['eventful'] != null ? UserEventPayloadVariant120JobVariant8Eventful.fromJson(json['eventful'] as bool) : null)!) : const SdkOmitted(),
-    forced: json['forced'] != null ? SdkPresent((json['forced'] != null ? UserEventPayloadVariant120JobVariant8Forced.fromJson(json['forced'] as bool) : null)!) : const SdkOmitted(),
-    forceNew: json['forceNew'] != null ? SdkPresent((json['forceNew'] != null ? UserEventPayloadVariant120JobVariant8ForceNew.fromJson(json['forceNew'] as bool) : null)!) : const SdkOmitted(),
-    gitComments: json['gitComments'] != null ? SdkPresent((json['gitComments'] != null ? UserEventPayloadVariant120JobVariant8GitComments.fromJson(json['gitComments'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    gitHashtagVercel: json['gitHashtagVercel'] != null ? SdkPresent(((json['gitHashtagVercel'] as List?)?.map((e) => UserEventPayloadVariant120JobVariant8GitHashtagVercelItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    headInfo: (json['headInfo'] != null ? UserEventPayloadVariant120JobVariant8HeadInfo.fromJson(json['headInfo'] as Map<String, dynamic>) : null)!,
-    installationId: (json['installationId'] as String?)!,
-    isManualGitDeploy: json['isManualGitDeploy'] != null ? SdkPresent((json['isManualGitDeploy'] != null ? UserEventPayloadVariant120JobVariant8IsManualGitDeploy.fromJson(json['isManualGitDeploy'] as bool) : null)!) : const SdkOmitted(),
-    jobPairs: json['jobPairs'] != null ? SdkPresent(((json['jobPairs'] as List?)?.map((e) => (e as List).map((item) => item as String).toList()).toList())!) : const SdkOmitted(),
-    jobProjectIds: json['jobProjectIds'] != null ? SdkPresent(((json['jobProjectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    linkedProjectId: json['linkedProjectId'] != null ? SdkPresent((json['linkedProjectId'] as String?)!) : const SdkOmitted(),
-    nsnbSideEffect: json['nsnbSideEffect'] != null ? SdkPresent((json['nsnbSideEffect'] != null ? UserEventPayloadVariant120JobVariant8NsnbSideEffect.fromJson(json['nsnbSideEffect'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    owner: (json['owner'] as String?)!,
-    prId: json.containsKey('prId') ? SdkPresent((json['prId'] as num?)?.toDouble()) : const SdkOmitted(),
-    prIdOrZero: json['prIdOrZero'] != null ? SdkPresent(((json['prIdOrZero'] as num?)?.toDouble())!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    provider: (json['provider'] != null ? UserEventPayloadVariant120JobVariant8Provider.fromJson(json['provider'] as String) : null)!,
-    ref: (json['ref'] as String?)!,
-    repo: (json['repo'] as String?)!,
-    repoId: (json['repoId'] as String?)!,
-    repoPushedAt: json.containsKey('repoPushedAt') ? SdkPresent((json['repoPushedAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    sha: (json['sha'] as String?)!,
-    skippedJobPairs: json['skippedJobPairs'] != null ? SdkPresent(((json['skippedJobPairs'] as List?)?.map((e) => (e as List).map((item) => item as String).toList()).toList())!) : const SdkOmitted(),
-    target: json.containsKey('target') ? SdkPresent(json['target'] as String?) : const SdkOmitted(),
-    type_: (json['type'] != null ? UserEventPayloadVariant120JobVariant8Type.fromJson(json['type'] as String) : null)!,
-    url: json['url'] != null ? SdkPresent((json['url'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant120JobVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant8(
+        authorized: json['authorized'] != null
+            ? SdkPresent((json['authorized'] != null
+                ? UserEventPayloadVariant120JobVariant8Authorized.fromJson(
+                    json['authorized'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        authorizedBy: json['authorizedBy'] != null
+            ? SdkPresent((json['authorizedBy'] as String?)!)
+            : const SdkOmitted(),
+        beforeSha: json['beforeSha'] != null
+            ? SdkPresent((json['beforeSha'] as String?)!)
+            : const SdkOmitted(),
+        commitVerification: json['commitVerification'] != null
+            ? SdkPresent((json['commitVerification'] != null
+                ? UserEventPayloadVariant120JobVariant8CommitVerification
+                    .fromJson(json['commitVerification'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        connectedProjectCount: json['connectedProjectCount'] != null
+            ? SdkPresent(((json['connectedProjectCount'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        customEnvId: json.containsKey('customEnvId')
+            ? SdkPresent(json['customEnvId'] as String?)
+            : const SdkOmitted(),
+        defaultBranch: json['defaultBranch'] != null
+            ? SdkPresent((json['defaultBranch'] as String?)!)
+            : const SdkOmitted(),
+        deployHook: json['deployHook'] != null
+            ? SdkPresent((json['deployHook'] != null
+                ? UserEventPayloadVariant120JobVariant8DeployHook.fromJson(
+                    json['deployHook'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        deploymentId: json['deploymentId'] != null
+            ? SdkPresent((json['deploymentId'] as String?)!)
+            : const SdkOmitted(),
+        eventful: json['eventful'] != null
+            ? SdkPresent((json['eventful'] != null
+                ? UserEventPayloadVariant120JobVariant8Eventful.fromJson(
+                    json['eventful'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        forced: json['forced'] != null
+            ? SdkPresent((json['forced'] != null
+                ? UserEventPayloadVariant120JobVariant8Forced.fromJson(
+                    json['forced'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        forceNew: json['forceNew'] != null
+            ? SdkPresent((json['forceNew'] != null
+                ? UserEventPayloadVariant120JobVariant8ForceNew.fromJson(
+                    json['forceNew'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        gitComments: json['gitComments'] != null
+            ? SdkPresent((json['gitComments'] != null
+                ? UserEventPayloadVariant120JobVariant8GitComments.fromJson(
+                    json['gitComments'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        gitHashtagVercel: json['gitHashtagVercel'] != null
+            ? SdkPresent(((json['gitHashtagVercel'] as List?)
+                ?.map((e) =>
+                    UserEventPayloadVariant120JobVariant8GitHashtagVercelItem
+                        .fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        headInfo: (json['headInfo'] != null
+            ? UserEventPayloadVariant120JobVariant8HeadInfo.fromJson(
+                json['headInfo'] as Map<String, dynamic>)
+            : null)!,
+        installationId: (json['installationId'] as String?)!,
+        isManualGitDeploy: json['isManualGitDeploy'] != null
+            ? SdkPresent((json['isManualGitDeploy'] != null
+                ? UserEventPayloadVariant120JobVariant8IsManualGitDeploy
+                    .fromJson(json['isManualGitDeploy'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        jobPairs: json['jobPairs'] != null
+            ? SdkPresent(((json['jobPairs'] as List?)
+                ?.map((e) => (e as List).map((item) => item as String).toList())
+                .toList())!)
+            : const SdkOmitted(),
+        jobProjectIds: json['jobProjectIds'] != null
+            ? SdkPresent(((json['jobProjectIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        linkedProjectId: json['linkedProjectId'] != null
+            ? SdkPresent((json['linkedProjectId'] as String?)!)
+            : const SdkOmitted(),
+        nsnbSideEffect: json['nsnbSideEffect'] != null
+            ? SdkPresent((json['nsnbSideEffect'] != null
+                ? UserEventPayloadVariant120JobVariant8NsnbSideEffect.fromJson(
+                    json['nsnbSideEffect'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        owner: (json['owner'] as String?)!,
+        prId: json.containsKey('prId')
+            ? SdkPresent((json['prId'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        prIdOrZero: json['prIdOrZero'] != null
+            ? SdkPresent(((json['prIdOrZero'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        projectId: json['projectId'] != null
+            ? SdkPresent((json['projectId'] as String?)!)
+            : const SdkOmitted(),
+        provider: (json['provider'] != null
+            ? UserEventPayloadVariant120JobVariant8Provider.fromJson(
+                json['provider'] as String)
+            : null)!,
+        ref: (json['ref'] as String?)!,
+        repo: (json['repo'] as String?)!,
+        repoId: (json['repoId'] as String?)!,
+        repoPushedAt: json.containsKey('repoPushedAt')
+            ? SdkPresent((json['repoPushedAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        sha: (json['sha'] as String?)!,
+        skippedJobPairs: json['skippedJobPairs'] != null
+            ? SdkPresent(((json['skippedJobPairs'] as List?)
+                ?.map((e) => (e as List).map((item) => item as String).toList())
+                .toList())!)
+            : const SdkOmitted(),
+        target: json.containsKey('target')
+            ? SdkPresent(json['target'] as String?)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? UserEventPayloadVariant120JobVariant8Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        url: json['url'] != null
+            ? SdkPresent((json['url'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (authorized) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8Authorized>(value: final value) => {'authorized': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (authorizedBy) {
-      SdkPresent<String>(value: final value) => {'authorizedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (beforeSha) {
-      SdkPresent<String>(value: final value) => {'beforeSha': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (commitVerification) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8CommitVerification>(value: final value) => {'commitVerification': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectedProjectCount) {
-      SdkPresent<double>(value: final value) => {'connectedProjectCount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvId) {
-      SdkPresent<String?>(value: final value) => {'customEnvId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultBranch) {
-      SdkPresent<String>(value: final value) => {'defaultBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deployHook) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8DeployHook>(value: final value) => {'deployHook': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deploymentId) {
-      SdkPresent<String>(value: final value) => {'deploymentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (eventful) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8Eventful>(value: final value) => {'eventful': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (forced) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8Forced>(value: final value) => {'forced': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (forceNew) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8ForceNew>(value: final value) => {'forceNew': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitComments) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8GitComments>(value: final value) => {'gitComments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitHashtagVercel) {
-      SdkPresent<List<UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>>(value: final value) => {'gitHashtagVercel': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'headInfo': headInfo.toJson(),
-    'installationId': installationId,
-    ...switch (isManualGitDeploy) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8IsManualGitDeploy>(value: final value) => {'isManualGitDeploy': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (jobPairs) {
-      SdkPresent<List<List<String>>>(value: final value) => {'jobPairs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (jobProjectIds) {
-      SdkPresent<List<String>>(value: final value) => {'jobProjectIds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (linkedProjectId) {
-      SdkPresent<String>(value: final value) => {'linkedProjectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (nsnbSideEffect) {
-      SdkPresent<UserEventPayloadVariant120JobVariant8NsnbSideEffect>(value: final value) => {'nsnbSideEffect': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'owner': owner,
-    ...switch (prId) {
-      SdkPresent<double?>(value: final value) => {'prId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (prIdOrZero) {
-      SdkPresent<double>(value: final value) => {'prIdOrZero': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'provider': provider.toJson(),
-    'ref': ref,
-    'repo': repo,
-    'repoId': repoId,
-    ...switch (repoPushedAt) {
-      SdkPresent<double?>(value: final value) => {'repoPushedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'sha': sha,
-    ...switch (skippedJobPairs) {
-      SdkPresent<List<List<String>>>(value: final value) => {'skippedJobPairs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<String?>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    ...switch (url) {
-      SdkPresent<String>(value: final value) => {'url': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (authorized) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8Authorized>(
+            value: final value
+          ) =>
+            {
+              'authorized': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (authorizedBy) {
+          SdkPresent<String>(value: final value) => {
+              'authorizedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (beforeSha) {
+          SdkPresent<String>(value: final value) => {
+              'beforeSha': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (commitVerification) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8CommitVerification>(
+            value: final value
+          ) =>
+            {
+              'commitVerification': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectedProjectCount) {
+          SdkPresent<double>(value: final value) => {
+              'connectedProjectCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvId) {
+          SdkPresent<String?>(value: final value) => {
+              'customEnvId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultBranch) {
+          SdkPresent<String>(value: final value) => {
+              'defaultBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deployHook) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8DeployHook>(
+            value: final value
+          ) =>
+            {
+              'deployHook': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deploymentId) {
+          SdkPresent<String>(value: final value) => {
+              'deploymentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (eventful) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8Eventful>(
+            value: final value
+          ) =>
+            {
+              'eventful': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (forced) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8Forced>(
+            value: final value
+          ) =>
+            {
+              'forced': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (forceNew) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8ForceNew>(
+            value: final value
+          ) =>
+            {
+              'forceNew': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitComments) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8GitComments>(
+            value: final value
+          ) =>
+            {
+              'gitComments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitHashtagVercel) {
+          SdkPresent<
+                List<
+                    UserEventPayloadVariant120JobVariant8GitHashtagVercelItem>>(
+            value: final value
+          ) =>
+            {
+              'gitHashtagVercel': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'headInfo': headInfo.toJson(),
+        'installationId': installationId,
+        ...switch (isManualGitDeploy) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8IsManualGitDeploy>(
+            value: final value
+          ) =>
+            {
+              'isManualGitDeploy': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (jobPairs) {
+          SdkPresent<List<List<String>>>(value: final value) => {
+              'jobPairs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (jobProjectIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'jobProjectIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (linkedProjectId) {
+          SdkPresent<String>(value: final value) => {
+              'linkedProjectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (nsnbSideEffect) {
+          SdkPresent<UserEventPayloadVariant120JobVariant8NsnbSideEffect>(
+            value: final value
+          ) =>
+            {
+              'nsnbSideEffect': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'owner': owner,
+        ...switch (prId) {
+          SdkPresent<double?>(value: final value) => {
+              'prId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (prIdOrZero) {
+          SdkPresent<double>(value: final value) => {
+              'prIdOrZero': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'provider': provider.toJson(),
+        'ref': ref,
+        'repo': repo,
+        'repoId': repoId,
+        ...switch (repoPushedAt) {
+          SdkPresent<double?>(value: final value) => {
+              'repoPushedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'sha': sha,
+        ...switch (skippedJobPairs) {
+          SdkPresent<List<List<String>>>(value: final value) => {
+              'skippedJobPairs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<String?>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        ...switch (url) {
+          SdkPresent<String>(value: final value) => {
+              'url': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

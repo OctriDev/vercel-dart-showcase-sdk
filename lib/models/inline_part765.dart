@@ -7,62 +7,119 @@ part of 'inline.dart';
 class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction action;
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction
+      action;
   final double dismissedAt;
   final String key;
+
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue` API schema.
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue? value;
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?
+      value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem({required this.action, required this.dismissedAt, required this.key, required this.value});
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
+      {required this.action,
+      required this.dismissedAt,
+      required this.key,
+      required this.value});
 
-  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem Function({GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction action, double dismissedAt, String key, GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue? value}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction
+          action,
+      double dismissedAt,
+      String key,
+      GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?
+          value}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem _copyWith({Object? action = sdkOmittedValue, Object? dismissedAt = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
-    action: identical(action, sdkOmittedValue) ? this.action : action as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction,
-    dismissedAt: identical(dismissedAt, sdkOmittedValue) ? this.dismissedAt : dismissedAt as double,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? dismissedAt = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction,
+        dismissedAt: identical(dismissedAt, sdkOmittedValue)
+            ? this.dismissedAt
+            : dismissedAt as double,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value
+                as GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue?,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
-    action: (json['action'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction.fromJson(json['action'] as String) : null)!,
-    dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
-    key: (json['key'] as String?)!,
-    value: json.containsKey('value') ? json['value'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue.fromJson(json['value']) : null : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem(
+        action: (json['action'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemAction
+                .fromJson(json['action'] as String)
+            : null)!,
+        dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
+        key: (json['key'] as String?)!,
+        value: json.containsKey('value')
+            ? json['value'] != null
+                ? GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue
+                    .fromJson(json['value'])
+                : null
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'dismissedAt': dismissedAt,
-    'key': key,
-    'value': value?.toJson(),
-  };
+        'action': action.toJson(),
+        'dismissedAt': dismissedAt,
+        'key': key,
+        'value': value?.toJson(),
+      };
 }
 
 /// Similar to `contentHints`, but should not be exposed to the user.
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
   final String encryptedValue;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType
+      type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint({required this.encryptedValue, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
+      {required this.encryptedValue, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint Function({String encryptedValue, GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint Function(
+      {String encryptedValue,
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType
+          type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint _copyWith({Object? encryptedValue = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
-    encryptedValue: identical(encryptedValue, sdkOmittedValue) ? this.encryptedValue : encryptedValue as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint
+      _copyWith(
+              {Object? encryptedValue = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
+            encryptedValue: identical(encryptedValue, sdkOmittedValue)
+                ? this.encryptedValue
+                : encryptedValue as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
-    encryptedValue: (json['encryptedValue'] as String?)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHint(
+        encryptedValue: (json['encryptedValue'] as String?)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemInternalContentHintType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'encryptedValue': encryptedValue,
-    'type': type_.toJson(),
-  };
+        'encryptedValue': encryptedValue,
+        'type': type_.toJson(),
+      };
 }

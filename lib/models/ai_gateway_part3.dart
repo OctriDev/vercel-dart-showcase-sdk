@@ -8,272 +8,535 @@ part of 'ai_gateway.dart';
 class AiGatewayRuleMatch {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `model` wire field.
   final SdkOptional<String> model;
 
   const AiGatewayRuleMatch({this.model = const SdkOmitted()});
 
-  AiGatewayRuleMatch Function({SdkOptional<String> model}) get copyWith => _copyWith;
+  AiGatewayRuleMatch Function({SdkOptional<String> model}) get copyWith =>
+      _copyWith;
 
-  AiGatewayRuleMatch _copyWith({Object? model = sdkOmittedValue}) => AiGatewayRuleMatch(
-    model: identical(model, sdkOmittedValue) ? this.model : model as SdkOptional<String>,
-  );
+  AiGatewayRuleMatch _copyWith({Object? model = sdkOmittedValue}) =>
+      AiGatewayRuleMatch(
+        model: identical(model, sdkOmittedValue)
+            ? this.model
+            : model as SdkOptional<String>,
+      );
 
-  factory AiGatewayRuleMatch.fromJson(Map<String, dynamic> json) => AiGatewayRuleMatch(
-    model: json['model'] != null ? SdkPresent((json['model'] as String?)!) : const SdkOmitted(),
-  );
+  factory AiGatewayRuleMatch.fromJson(Map<String, dynamic> json) =>
+      AiGatewayRuleMatch(
+        model: json['model'] != null
+            ? SdkPresent((json['model'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (model) {
-      SdkPresent<String>(value: final value) => {'model': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (model) {
+          SdkPresent<String>(value: final value) => {
+              'model': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Public response shape for AI Gateway routing rules. Used so OpenAPI generation can avoid ElectroDB's recursive EntityItem types.
 class AiGatewayRule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `action` wire field.
   final SdkOptional<AiGatewayRuleAction> action;
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Optional `string` value serialized in the `createdBy` wire field.
   final SdkOptional<String> createdBy;
+
   /// Optional enumerated value serialized in the `deleted` wire field.
   final SdkOptional<AiGatewayRuleDeleted> deleted;
+
   /// Optional `string` value serialized in the `description` wire field.
   final SdkOptional<String> description;
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final AiGatewayRuleEnabled enabled;
+
   /// Optional object value serialized in the `match` wire field.
   final SdkOptional<AiGatewayRuleMatch> match;
+
   /// Required `string` value serialized in the `ownerId` wire field.
   final String ownerId;
+
   /// Required `string` value serialized in the `ruleId` wire field.
   final String ruleId;
+
   /// Required enumerated value serialized in the `type` wire field.
   final AiGatewayRuleType type_;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
+
   /// Optional `string` value serialized in the `updatedBy` wire field.
   final SdkOptional<String> updatedBy;
 
-  const AiGatewayRule({this.action = const SdkOmitted(), required this.createdAt, this.createdBy = const SdkOmitted(), this.deleted = const SdkOmitted(), this.description = const SdkOmitted(), required this.enabled, this.match = const SdkOmitted(), required this.ownerId, required this.ruleId, required this.type_, required this.updatedAt, this.updatedBy = const SdkOmitted()});
+  const AiGatewayRule(
+      {this.action = const SdkOmitted(),
+      required this.createdAt,
+      this.createdBy = const SdkOmitted(),
+      this.deleted = const SdkOmitted(),
+      this.description = const SdkOmitted(),
+      required this.enabled,
+      this.match = const SdkOmitted(),
+      required this.ownerId,
+      required this.ruleId,
+      required this.type_,
+      required this.updatedAt,
+      this.updatedBy = const SdkOmitted()});
 
-  AiGatewayRule Function({SdkOptional<AiGatewayRuleAction> action, double createdAt, SdkOptional<String> createdBy, SdkOptional<AiGatewayRuleDeleted> deleted, SdkOptional<String> description, AiGatewayRuleEnabled enabled, SdkOptional<AiGatewayRuleMatch> match, String ownerId, String ruleId, AiGatewayRuleType type_, double updatedAt, SdkOptional<String> updatedBy}) get copyWith => _copyWith;
+  AiGatewayRule Function(
+      {SdkOptional<AiGatewayRuleAction> action,
+      double createdAt,
+      SdkOptional<String> createdBy,
+      SdkOptional<AiGatewayRuleDeleted> deleted,
+      SdkOptional<String> description,
+      AiGatewayRuleEnabled enabled,
+      SdkOptional<AiGatewayRuleMatch> match,
+      String ownerId,
+      String ruleId,
+      AiGatewayRuleType type_,
+      double updatedAt,
+      SdkOptional<String> updatedBy}) get copyWith => _copyWith;
 
-  AiGatewayRule _copyWith({Object? action = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? deleted = sdkOmittedValue, Object? description = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? match = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? ruleId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue}) => AiGatewayRule(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<AiGatewayRuleAction>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
-    deleted: identical(deleted, sdkOmittedValue) ? this.deleted : deleted as SdkOptional<AiGatewayRuleDeleted>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as AiGatewayRuleEnabled,
-    match: identical(match, sdkOmittedValue) ? this.match : match as SdkOptional<AiGatewayRuleMatch>,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    ruleId: identical(ruleId, sdkOmittedValue) ? this.ruleId : ruleId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as AiGatewayRuleType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String>,
-  );
+  AiGatewayRule _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? deleted = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? match = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? ruleId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedBy = sdkOmittedValue}) =>
+      AiGatewayRule(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<AiGatewayRuleAction>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as SdkOptional<String>,
+        deleted: identical(deleted, sdkOmittedValue)
+            ? this.deleted
+            : deleted as SdkOptional<AiGatewayRuleDeleted>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as AiGatewayRuleEnabled,
+        match: identical(match, sdkOmittedValue)
+            ? this.match
+            : match as SdkOptional<AiGatewayRuleMatch>,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        ruleId:
+            identical(ruleId, sdkOmittedValue) ? this.ruleId : ruleId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as AiGatewayRuleType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        updatedBy: identical(updatedBy, sdkOmittedValue)
+            ? this.updatedBy
+            : updatedBy as SdkOptional<String>,
+      );
 
   factory AiGatewayRule.fromJson(Map<String, dynamic> json) => AiGatewayRule(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? AiGatewayRuleAction.fromJson(json['action'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
-    deleted: json['deleted'] != null ? SdkPresent((json['deleted'] != null ? AiGatewayRuleDeleted.fromJson(json['deleted'] as bool) : null)!) : const SdkOmitted(),
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? AiGatewayRuleEnabled.fromJson(json['enabled'] as bool) : null)!,
-    match: json['match'] != null ? SdkPresent((json['match'] != null ? AiGatewayRuleMatch.fromJson(json['match'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    ownerId: (json['ownerId'] as String?)!,
-    ruleId: (json['ruleId'] as String?)!,
-    type_: (json['type'] != null ? AiGatewayRuleType.fromJson(json['type'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    updatedBy: json['updatedBy'] != null ? SdkPresent((json['updatedBy'] as String?)!) : const SdkOmitted(),
-  );
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? AiGatewayRuleAction.fromJson(
+                    json['action'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: json['createdBy'] != null
+            ? SdkPresent((json['createdBy'] as String?)!)
+            : const SdkOmitted(),
+        deleted: json['deleted'] != null
+            ? SdkPresent((json['deleted'] != null
+                ? AiGatewayRuleDeleted.fromJson(json['deleted'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        enabled: (json['enabled'] != null
+            ? AiGatewayRuleEnabled.fromJson(json['enabled'] as bool)
+            : null)!,
+        match: json['match'] != null
+            ? SdkPresent((json['match'] != null
+                ? AiGatewayRuleMatch.fromJson(
+                    json['match'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        ownerId: (json['ownerId'] as String?)!,
+        ruleId: (json['ruleId'] as String?)!,
+        type_: (json['type'] != null
+            ? AiGatewayRuleType.fromJson(json['type'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        updatedBy: json['updatedBy'] != null
+            ? SdkPresent((json['updatedBy'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<AiGatewayRuleAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    ...switch (createdBy) {
-      SdkPresent<String>(value: final value) => {'createdBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deleted) {
-      SdkPresent<AiGatewayRuleDeleted>(value: final value) => {'deleted': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    ...switch (match) {
-      SdkPresent<AiGatewayRuleMatch>(value: final value) => {'match': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'ownerId': ownerId,
-    'ruleId': ruleId,
-    'type': type_.toJson(),
-    'updatedAt': updatedAt,
-    ...switch (updatedBy) {
-      SdkPresent<String>(value: final value) => {'updatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<AiGatewayRuleAction>(value: final value) => {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        ...switch (createdBy) {
+          SdkPresent<String>(value: final value) => {
+              'createdBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deleted) {
+          SdkPresent<AiGatewayRuleDeleted>(value: final value) => {
+              'deleted': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        ...switch (match) {
+          SdkPresent<AiGatewayRuleMatch>(value: final value) => {
+              'match': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'ownerId': ownerId,
+        'ruleId': ruleId,
+        'type': type_.toJson(),
+        'updatedAt': updatedAt,
+        ...switch (updatedBy) {
+          SdkPresent<String>(value: final value) => {
+              'updatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Typed representation of the `AiGatewayRuleList` API schema.
 class AiGatewayRuleList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `nextCursor` wire field.
   final String? nextCursor;
+
   /// Required array value serialized in the `rules` wire field.
   final List<AiGatewayRule> rules;
 
   const AiGatewayRuleList({required this.nextCursor, required this.rules});
 
-  AiGatewayRuleList Function({String? nextCursor, List<AiGatewayRule> rules}) get copyWith => _copyWith;
+  AiGatewayRuleList Function({String? nextCursor, List<AiGatewayRule> rules})
+      get copyWith => _copyWith;
 
-  AiGatewayRuleList _copyWith({Object? nextCursor = sdkOmittedValue, Object? rules = sdkOmittedValue}) => AiGatewayRuleList(
-    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as String?,
-    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as List<AiGatewayRule>,
-  );
+  AiGatewayRuleList _copyWith(
+          {Object? nextCursor = sdkOmittedValue,
+          Object? rules = sdkOmittedValue}) =>
+      AiGatewayRuleList(
+        nextCursor: identical(nextCursor, sdkOmittedValue)
+            ? this.nextCursor
+            : nextCursor as String?,
+        rules: identical(rules, sdkOmittedValue)
+            ? this.rules
+            : rules as List<AiGatewayRule>,
+      );
 
-  factory AiGatewayRuleList.fromJson(Map<String, dynamic> json) => AiGatewayRuleList(
-    nextCursor: json.containsKey('nextCursor') ? json['nextCursor'] as String? : throw ArgumentError.value(null, 'nextCursor', 'Required property is missing'),
-    rules: ((json['rules'] as List?)?.map((e) => AiGatewayRule.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory AiGatewayRuleList.fromJson(Map<String, dynamic> json) =>
+      AiGatewayRuleList(
+        nextCursor: json.containsKey('nextCursor')
+            ? json['nextCursor'] as String?
+            : throw ArgumentError.value(
+                null, 'nextCursor', 'Required property is missing'),
+        rules: ((json['rules'] as List?)
+            ?.map((e) => AiGatewayRule.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'nextCursor': nextCursor,
-    'rules': rules.map((item) => item.toJson()).toList(),
-  };
+        'nextCursor': nextCursor,
+        'rules': rules.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// Per-provider region overrides keyed by provider slug.
 class AiGatewayVirtualModelConfigInferenceRegionProvidersValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Geo zone (e.g. "us", "eu").
   final SdkOptional<String> geoRegion;
+
   /// Provider-specific region identifier.
   final SdkOptional<String> providerRegion;
+
   /// Pin scope: `specific` (one provider region), `zone` (geo zone), or `global`.
-  final SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope> scope;
+  final SdkOptional<
+      AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope> scope;
 
-  const AiGatewayVirtualModelConfigInferenceRegionProvidersValue({this.geoRegion = const SdkOmitted(), this.providerRegion = const SdkOmitted(), this.scope = const SdkOmitted()});
+  const AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
+      {this.geoRegion = const SdkOmitted(),
+      this.providerRegion = const SdkOmitted(),
+      this.scope = const SdkOmitted()});
 
-  AiGatewayVirtualModelConfigInferenceRegionProvidersValue Function({SdkOptional<String> geoRegion, SdkOptional<String> providerRegion, SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope> scope}) get copyWith => _copyWith;
+  AiGatewayVirtualModelConfigInferenceRegionProvidersValue Function(
+      {SdkOptional<String> geoRegion,
+      SdkOptional<String> providerRegion,
+      SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>
+          scope}) get copyWith => _copyWith;
 
-  AiGatewayVirtualModelConfigInferenceRegionProvidersValue _copyWith({Object? geoRegion = sdkOmittedValue, Object? providerRegion = sdkOmittedValue, Object? scope = sdkOmittedValue}) => AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
-    geoRegion: identical(geoRegion, sdkOmittedValue) ? this.geoRegion : geoRegion as SdkOptional<String>,
-    providerRegion: identical(providerRegion, sdkOmittedValue) ? this.providerRegion : providerRegion as SdkOptional<String>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>,
-  );
+  AiGatewayVirtualModelConfigInferenceRegionProvidersValue _copyWith(
+          {Object? geoRegion = sdkOmittedValue,
+          Object? providerRegion = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
+        geoRegion: identical(geoRegion, sdkOmittedValue)
+            ? this.geoRegion
+            : geoRegion as SdkOptional<String>,
+        providerRegion: identical(providerRegion, sdkOmittedValue)
+            ? this.providerRegion
+            : providerRegion as SdkOptional<String>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as SdkOptional<
+                AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>,
+      );
 
-  factory AiGatewayVirtualModelConfigInferenceRegionProvidersValue.fromJson(Map<String, dynamic> json) => AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
-    geoRegion: json['geoRegion'] != null ? SdkPresent((json['geoRegion'] as String?)!) : const SdkOmitted(),
-    providerRegion: json['providerRegion'] != null ? SdkPresent((json['providerRegion'] as String?)!) : const SdkOmitted(),
-    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory AiGatewayVirtualModelConfigInferenceRegionProvidersValue.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayVirtualModelConfigInferenceRegionProvidersValue(
+        geoRegion: json['geoRegion'] != null
+            ? SdkPresent((json['geoRegion'] as String?)!)
+            : const SdkOmitted(),
+        providerRegion: json['providerRegion'] != null
+            ? SdkPresent((json['providerRegion'] as String?)!)
+            : const SdkOmitted(),
+        scope: json['scope'] != null
+            ? SdkPresent((json['scope'] != null
+                ? AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope
+                    .fromJson(json['scope'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (geoRegion) {
-      SdkPresent<String>(value: final value) => {'geoRegion': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (providerRegion) {
-      SdkPresent<String>(value: final value) => {'providerRegion': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scope) {
-      SdkPresent<AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>(value: final value) => {'scope': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (geoRegion) {
+          SdkPresent<String>(value: final value) => {
+              'geoRegion': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (providerRegion) {
+          SdkPresent<String>(value: final value) => {
+              'providerRegion': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scope) {
+          SdkPresent<
+                AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope>(
+            value: final value
+          ) =>
+            {
+              'scope': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Region pinned on the VMC for system-credential routing (alias/router only).
 class AiGatewayVirtualModelConfigInferenceRegion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Geo zone (e.g. "us", "eu").
   final SdkOptional<String> geoRegion;
+
   /// Provider-specific region identifier.
   final SdkOptional<String> providerRegion;
+
   /// Per-provider region overrides keyed by provider slug.
-  final SdkOptional<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>> providers;
+  final SdkOptional<
+          Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>
+      providers;
+
   /// Pin scope: `specific` (one provider region), `zone` (geo zone), or `global`.
   final SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope> scope;
 
-  const AiGatewayVirtualModelConfigInferenceRegion({this.geoRegion = const SdkOmitted(), this.providerRegion = const SdkOmitted(), this.providers = const SdkOmitted(), this.scope = const SdkOmitted()});
+  const AiGatewayVirtualModelConfigInferenceRegion(
+      {this.geoRegion = const SdkOmitted(),
+      this.providerRegion = const SdkOmitted(),
+      this.providers = const SdkOmitted(),
+      this.scope = const SdkOmitted()});
 
-  AiGatewayVirtualModelConfigInferenceRegion Function({SdkOptional<String> geoRegion, SdkOptional<String> providerRegion, SdkOptional<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>> providers, SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope> scope}) get copyWith => _copyWith;
+  AiGatewayVirtualModelConfigInferenceRegion Function(
+          {SdkOptional<String> geoRegion,
+          SdkOptional<String> providerRegion,
+          SdkOptional<
+                  Map<String,
+                      AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>
+              providers,
+          SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope> scope})
+      get copyWith => _copyWith;
 
-  AiGatewayVirtualModelConfigInferenceRegion _copyWith({Object? geoRegion = sdkOmittedValue, Object? providerRegion = sdkOmittedValue, Object? providers = sdkOmittedValue, Object? scope = sdkOmittedValue}) => AiGatewayVirtualModelConfigInferenceRegion(
-    geoRegion: identical(geoRegion, sdkOmittedValue) ? this.geoRegion : geoRegion as SdkOptional<String>,
-    providerRegion: identical(providerRegion, sdkOmittedValue) ? this.providerRegion : providerRegion as SdkOptional<String>,
-    providers: identical(providers, sdkOmittedValue) ? this.providers : providers as SdkOptional<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope>,
-  );
+  AiGatewayVirtualModelConfigInferenceRegion _copyWith(
+          {Object? geoRegion = sdkOmittedValue,
+          Object? providerRegion = sdkOmittedValue,
+          Object? providers = sdkOmittedValue,
+          Object? scope = sdkOmittedValue}) =>
+      AiGatewayVirtualModelConfigInferenceRegion(
+        geoRegion: identical(geoRegion, sdkOmittedValue)
+            ? this.geoRegion
+            : geoRegion as SdkOptional<String>,
+        providerRegion: identical(providerRegion, sdkOmittedValue)
+            ? this.providerRegion
+            : providerRegion as SdkOptional<String>,
+        providers: identical(providers, sdkOmittedValue)
+            ? this.providers
+            : providers as SdkOptional<
+                Map<String,
+                    AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope
+                as SdkOptional<AiGatewayVirtualModelConfigInferenceRegionScope>,
+      );
 
-  factory AiGatewayVirtualModelConfigInferenceRegion.fromJson(Map<String, dynamic> json) => AiGatewayVirtualModelConfigInferenceRegion(
-    geoRegion: json['geoRegion'] != null ? SdkPresent((json['geoRegion'] as String?)!) : const SdkOmitted(),
-    providerRegion: json['providerRegion'] != null ? SdkPresent((json['providerRegion'] as String?)!) : const SdkOmitted(),
-    providers: json['providers'] != null ? SdkPresent((json['providers'] == null ? null : Map<String, dynamic>.from(json['providers'] as Map).map((key, value) => MapEntry(key, AiGatewayVirtualModelConfigInferenceRegionProvidersValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? AiGatewayVirtualModelConfigInferenceRegionScope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory AiGatewayVirtualModelConfigInferenceRegion.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayVirtualModelConfigInferenceRegion(
+        geoRegion: json['geoRegion'] != null
+            ? SdkPresent((json['geoRegion'] as String?)!)
+            : const SdkOmitted(),
+        providerRegion: json['providerRegion'] != null
+            ? SdkPresent((json['providerRegion'] as String?)!)
+            : const SdkOmitted(),
+        providers: json['providers'] != null
+            ? SdkPresent((json['providers'] == null
+                ? null
+                : Map<String, dynamic>.from(json['providers'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        AiGatewayVirtualModelConfigInferenceRegionProvidersValue
+                            .fromJson(value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        scope: json['scope'] != null
+            ? SdkPresent((json['scope'] != null
+                ? AiGatewayVirtualModelConfigInferenceRegionScope.fromJson(
+                    json['scope'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (geoRegion) {
-      SdkPresent<String>(value: final value) => {'geoRegion': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (providerRegion) {
-      SdkPresent<String>(value: final value) => {'providerRegion': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (providers) {
-      SdkPresent<Map<String, AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>(value: final value) => {'providers': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scope) {
-      SdkPresent<AiGatewayVirtualModelConfigInferenceRegionScope>(value: final value) => {'scope': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (geoRegion) {
+          SdkPresent<String>(value: final value) => {
+              'geoRegion': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (providerRegion) {
+          SdkPresent<String>(value: final value) => {
+              'providerRegion': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (providers) {
+          SdkPresent<
+                Map<String,
+                    AiGatewayVirtualModelConfigInferenceRegionProvidersValue>>(
+            value: final value
+          ) =>
+            {
+              'providers':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scope) {
+          SdkPresent<AiGatewayVirtualModelConfigInferenceRegionScope>(
+            value: final value
+          ) =>
+            {
+              'scope': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Per-request provider timeouts in ms, keyed by provider slug for BYOK credentials.
 class AiGatewayVirtualModelConfigProviderTimeouts {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `byok` wire field.
   final SdkOptional<Map<String, double>> byok;
 
-  const AiGatewayVirtualModelConfigProviderTimeouts({this.byok = const SdkOmitted()});
+  const AiGatewayVirtualModelConfigProviderTimeouts(
+      {this.byok = const SdkOmitted()});
 
-  AiGatewayVirtualModelConfigProviderTimeouts Function({SdkOptional<Map<String, double>> byok}) get copyWith => _copyWith;
+  AiGatewayVirtualModelConfigProviderTimeouts Function(
+      {SdkOptional<Map<String, double>> byok}) get copyWith => _copyWith;
 
-  AiGatewayVirtualModelConfigProviderTimeouts _copyWith({Object? byok = sdkOmittedValue}) => AiGatewayVirtualModelConfigProviderTimeouts(
-    byok: identical(byok, sdkOmittedValue) ? this.byok : byok as SdkOptional<Map<String, double>>,
-  );
+  AiGatewayVirtualModelConfigProviderTimeouts _copyWith(
+          {Object? byok = sdkOmittedValue}) =>
+      AiGatewayVirtualModelConfigProviderTimeouts(
+        byok: identical(byok, sdkOmittedValue)
+            ? this.byok
+            : byok as SdkOptional<Map<String, double>>,
+      );
 
-  factory AiGatewayVirtualModelConfigProviderTimeouts.fromJson(Map<String, dynamic> json) => AiGatewayVirtualModelConfigProviderTimeouts(
-    byok: json['byok'] != null ? SdkPresent((json['byok'] == null ? null : Map<String, dynamic>.from(json['byok'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!) : const SdkOmitted(),
-  );
+  factory AiGatewayVirtualModelConfigProviderTimeouts.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayVirtualModelConfigProviderTimeouts(
+        byok: json['byok'] != null
+            ? SdkPresent((json['byok'] == null
+                ? null
+                : Map<String, dynamic>.from(json['byok'] as Map).map(
+                    (key, value) => MapEntry(key, (value as num).toDouble())))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (byok) {
-      SdkPresent<Map<String, double>>(value: final value) => {'byok': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (byok) {
+          SdkPresent<Map<String, double>>(value: final value) => {
+              'byok': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -7,27 +7,46 @@ part of 'teams.dart';
 class UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type type_;
+  final UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type
+      type_;
   final String environmentId;
 
-  const UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1({required this.type_, required this.environmentId});
+  const UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1(
+      {required this.type_, required this.environmentId});
 
-  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1 Function({UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type type_, String environmentId}) get copyWith => _copyWith;
+  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1 Function(
+      {UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type
+          type_,
+      String environmentId}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? environmentId = sdkOmittedValue}) => UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type,
-    environmentId: identical(environmentId, sdkOmittedValue) ? this.environmentId : environmentId as String,
-  );
+  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1
+      _copyWith(
+              {Object? type_ = sdkOmittedValue,
+              Object? environmentId = sdkOmittedValue}) =>
+          UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1(
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type,
+            environmentId: identical(environmentId, sdkOmittedValue)
+                ? this.environmentId
+                : environmentId as String,
+          );
 
-  factory UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1(
-    type_: (json['type'] != null ? UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type.fromJson(json['type'] as String) : null)!,
-    environmentId: (json['environmentId'] as String?)!,
-  );
+  factory UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1(
+        type_: (json['type'] != null
+            ? UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemEnvironmentsItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        environmentId: (json['environmentId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'environmentId': environmentId,
-  };
+        'type': type_.toJson(),
+        'environmentId': environmentId,
+      };
 }
 
 class UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item {
@@ -35,29 +54,57 @@ class UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item {
   static const String constructionSurface = 'named';
   final bool enabled;
   final List<dynamic> environments;
-  final List<UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem> sources;
+  final List<
+          UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem>
+      sources;
 
-  const UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item({required this.enabled, required this.environments, required this.sources});
+  const UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item(
+      {required this.enabled,
+      required this.environments,
+      required this.sources});
 
-  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item Function({bool enabled, List<dynamic> environments, List<UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem> sources}) get copyWith => _copyWith;
+  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item Function(
+      {bool enabled,
+      List<dynamic> environments,
+      List<UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem>
+          sources}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item _copyWith({Object? enabled = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? sources = sdkOmittedValue}) => UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<dynamic>,
-    sources: identical(sources, sdkOmittedValue) ? this.sources : sources as List<UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem>,
-  );
+  UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item
+      _copyWith(
+              {Object? enabled = sdkOmittedValue,
+              Object? environments = sdkOmittedValue,
+              Object? sources = sdkOmittedValue}) =>
+          UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item(
+            enabled: identical(enabled, sdkOmittedValue)
+                ? this.enabled
+                : enabled as bool,
+            environments: identical(environments, sdkOmittedValue)
+                ? this.environments
+                : environments as List<dynamic>,
+            sources: identical(sources, sdkOmittedValue)
+                ? this.sources
+                : sources as List<
+                    UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem>,
+          );
 
-  factory UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item(
-    enabled: (json['enabled'] as bool?)!,
-    environments: ((json['environments'] as List?)?.map((e) => e).toList())!,
-    sources: ((json['sources'] as List?)?.map((e) => UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem.fromJson(e as String)).toList())!,
-  );
+  factory UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0Item(
+        enabled: (json['enabled'] as bool?)!,
+        environments:
+            ((json['environments'] as List?)?.map((e) => e).toList())!,
+        sources: ((json['sources'] as List?)
+            ?.map((e) =>
+                UpdateTeamsRequestDeploymentPolicyVariant0DeploymentSourcesVariant0ItemSourcesItem
+                    .fromJson(e as String))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled,
-    'environments': environments,
-    'sources': sources.map((item) => item.toJson()).toList(),
-  };
+        'enabled': enabled,
+        'environments': environments,
+        'sources': sources.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// Composable deployment-time policy. Each rule type holds a list of rules, one per environment scope.
@@ -67,30 +114,51 @@ class UpdateTeamsRequestDeploymentPolicyVariant0 {
   final SdkOptional<dynamic> gitSources;
   final SdkOptional<dynamic> deploymentSources;
 
-  const UpdateTeamsRequestDeploymentPolicyVariant0({this.gitSources = const SdkOmitted(), this.deploymentSources = const SdkOmitted()});
+  const UpdateTeamsRequestDeploymentPolicyVariant0(
+      {this.gitSources = const SdkOmitted(),
+      this.deploymentSources = const SdkOmitted()});
 
-  UpdateTeamsRequestDeploymentPolicyVariant0 Function({SdkOptional<dynamic> gitSources, SdkOptional<dynamic> deploymentSources}) get copyWith => _copyWith;
+  UpdateTeamsRequestDeploymentPolicyVariant0 Function(
+      {SdkOptional<dynamic> gitSources,
+      SdkOptional<dynamic> deploymentSources}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestDeploymentPolicyVariant0 _copyWith({Object? gitSources = sdkOmittedValue, Object? deploymentSources = sdkOmittedValue}) => UpdateTeamsRequestDeploymentPolicyVariant0(
-    gitSources: identical(gitSources, sdkOmittedValue) ? this.gitSources : gitSources as SdkOptional<dynamic>,
-    deploymentSources: identical(deploymentSources, sdkOmittedValue) ? this.deploymentSources : deploymentSources as SdkOptional<dynamic>,
-  );
+  UpdateTeamsRequestDeploymentPolicyVariant0 _copyWith(
+          {Object? gitSources = sdkOmittedValue,
+          Object? deploymentSources = sdkOmittedValue}) =>
+      UpdateTeamsRequestDeploymentPolicyVariant0(
+        gitSources: identical(gitSources, sdkOmittedValue)
+            ? this.gitSources
+            : gitSources as SdkOptional<dynamic>,
+        deploymentSources: identical(deploymentSources, sdkOmittedValue)
+            ? this.deploymentSources
+            : deploymentSources as SdkOptional<dynamic>,
+      );
 
-  factory UpdateTeamsRequestDeploymentPolicyVariant0.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestDeploymentPolicyVariant0(
-    gitSources: json['gitSources'] != null ? SdkPresent((json['gitSources'])!) : const SdkOmitted(),
-    deploymentSources: json['deploymentSources'] != null ? SdkPresent((json['deploymentSources'])!) : const SdkOmitted(),
-  );
+  factory UpdateTeamsRequestDeploymentPolicyVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestDeploymentPolicyVariant0(
+        gitSources: json['gitSources'] != null
+            ? SdkPresent((json['gitSources'])!)
+            : const SdkOmitted(),
+        deploymentSources: json['deploymentSources'] != null
+            ? SdkPresent((json['deploymentSources'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (gitSources) {
-      SdkPresent<dynamic>(value: final value) => {'gitSources': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deploymentSources) {
-      SdkPresent<dynamic>(value: final value) => {'deploymentSources': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (gitSources) {
+          SdkPresent<dynamic>(value: final value) => {
+              'gitSources': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deploymentSources) {
+          SdkPresent<dynamic>(value: final value) => {
+              'deploymentSources': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class UpdateTeamsRequestDeploymentPolicy {
@@ -98,47 +166,71 @@ sealed class UpdateTeamsRequestDeploymentPolicy {
   static const String constructionSurface = 'named';
   const UpdateTeamsRequestDeploymentPolicy();
   factory UpdateTeamsRequestDeploymentPolicy.fromJson(Object? json) {
-    if (json is String) { return UpdateTeamsRequestDeploymentPolicyString(json); }
-    try { return UpdateTeamsRequestDeploymentPolicyUpdateTeamsRequestDeploymentPolicyVariant0(UpdateTeamsRequestDeploymentPolicyVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateTeamsRequestDeploymentPolicy");
+    if (json is String) {
+      return UpdateTeamsRequestDeploymentPolicyString(json);
+    }
+    try {
+      return UpdateTeamsRequestDeploymentPolicyUpdateTeamsRequestDeploymentPolicyVariant0(
+          UpdateTeamsRequestDeploymentPolicyVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateTeamsRequestDeploymentPolicy");
   }
   Object? toJson();
 }
 
-final class UpdateTeamsRequestDeploymentPolicyUpdateTeamsRequestDeploymentPolicyVariant0 extends UpdateTeamsRequestDeploymentPolicy {
+final class UpdateTeamsRequestDeploymentPolicyUpdateTeamsRequestDeploymentPolicyVariant0
+    extends UpdateTeamsRequestDeploymentPolicy {
   final UpdateTeamsRequestDeploymentPolicyVariant0 value;
-  const UpdateTeamsRequestDeploymentPolicyUpdateTeamsRequestDeploymentPolicyVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateTeamsRequestDeploymentPolicyUpdateTeamsRequestDeploymentPolicyVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateTeamsRequestDeploymentPolicyString extends UpdateTeamsRequestDeploymentPolicy {
+final class UpdateTeamsRequestDeploymentPolicyString
+    extends UpdateTeamsRequestDeploymentPolicy {
   final String value;
   const UpdateTeamsRequestDeploymentPolicyString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 /// NSNB configuration for the team.
 class UpdateTeamsRequestNsnbConfigVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The NSNB preference for the team.
   final UpdateTeamsRequestNsnbConfigVariant0Preference preference;
 
   const UpdateTeamsRequestNsnbConfigVariant0({required this.preference});
 
-  UpdateTeamsRequestNsnbConfigVariant0 Function({UpdateTeamsRequestNsnbConfigVariant0Preference preference}) get copyWith => _copyWith;
+  UpdateTeamsRequestNsnbConfigVariant0 Function(
+          {UpdateTeamsRequestNsnbConfigVariant0Preference preference})
+      get copyWith => _copyWith;
 
-  UpdateTeamsRequestNsnbConfigVariant0 _copyWith({Object? preference = sdkOmittedValue}) => UpdateTeamsRequestNsnbConfigVariant0(
-    preference: identical(preference, sdkOmittedValue) ? this.preference : preference as UpdateTeamsRequestNsnbConfigVariant0Preference,
-  );
+  UpdateTeamsRequestNsnbConfigVariant0 _copyWith(
+          {Object? preference = sdkOmittedValue}) =>
+      UpdateTeamsRequestNsnbConfigVariant0(
+        preference: identical(preference, sdkOmittedValue)
+            ? this.preference
+            : preference as UpdateTeamsRequestNsnbConfigVariant0Preference,
+      );
 
-  factory UpdateTeamsRequestNsnbConfigVariant0.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestNsnbConfigVariant0(
-    preference: (json['preference'] != null ? UpdateTeamsRequestNsnbConfigVariant0Preference.fromJson(json['preference'] as String) : null)!,
-  );
+  factory UpdateTeamsRequestNsnbConfigVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestNsnbConfigVariant0(
+        preference: (json['preference'] != null
+            ? UpdateTeamsRequestNsnbConfigVariant0Preference.fromJson(
+                json['preference'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'preference': preference.toJson(),
-  };
+        'preference': preference.toJson(),
+      };
 }
 
 sealed class UpdateTeamsRequestNsnbConfig {
@@ -146,21 +238,33 @@ sealed class UpdateTeamsRequestNsnbConfig {
   static const String constructionSurface = 'named';
   const UpdateTeamsRequestNsnbConfig();
   factory UpdateTeamsRequestNsnbConfig.fromJson(Object? json) {
-    if (json is String) { return UpdateTeamsRequestNsnbConfigString(json); }
-    try { return UpdateTeamsRequestNsnbConfigUpdateTeamsRequestNsnbConfigVariant0(UpdateTeamsRequestNsnbConfigVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateTeamsRequestNsnbConfig");
+    if (json is String) {
+      return UpdateTeamsRequestNsnbConfigString(json);
+    }
+    try {
+      return UpdateTeamsRequestNsnbConfigUpdateTeamsRequestNsnbConfigVariant0(
+          UpdateTeamsRequestNsnbConfigVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateTeamsRequestNsnbConfig");
   }
   Object? toJson();
 }
 
-final class UpdateTeamsRequestNsnbConfigUpdateTeamsRequestNsnbConfigVariant0 extends UpdateTeamsRequestNsnbConfig {
+final class UpdateTeamsRequestNsnbConfigUpdateTeamsRequestNsnbConfigVariant0
+    extends UpdateTeamsRequestNsnbConfig {
   final UpdateTeamsRequestNsnbConfigVariant0 value;
-  const UpdateTeamsRequestNsnbConfigUpdateTeamsRequestNsnbConfigVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateTeamsRequestNsnbConfigUpdateTeamsRequestNsnbConfigVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateTeamsRequestNsnbConfigString extends UpdateTeamsRequestNsnbConfig {
+final class UpdateTeamsRequestNsnbConfigString
+    extends UpdateTeamsRequestNsnbConfig {
   final String value;
   const UpdateTeamsRequestNsnbConfigString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }

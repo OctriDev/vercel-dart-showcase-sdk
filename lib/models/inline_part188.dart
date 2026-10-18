@@ -5,23 +5,33 @@ part of 'inline.dart';
 
 // Inline operation models (part 188)
 final class UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider {
-
   final String value;
 
-  const UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._(this.value);
+  const UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._(
+      this.value);
 
-  factory UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider.fromJson(String value) => UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._(value);
+  factory UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider.fromJson(
+          String value) =>
+      UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider
+          ._(value);
 
-  static const gitlab = UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider._('gitlab');
+  static const gitlab =
+      UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider
+          ._('gitlab');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectRequestDeploymentPolicyVariant0GitSourcesVariant0ItemSourcesItemVariant1Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UpdateProjectResponseCreatorVariant0Type {
@@ -29,14 +39,18 @@ enum UpdateProjectResponseCreatorVariant0Type {
 
   static UpdateProjectResponseCreatorVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user': return UpdateProjectResponseCreatorVariant0Type.user;
-      default: throw ArgumentError('Unknown UpdateProjectResponseCreatorVariant0Type: $value');
+      case 'user':
+        return UpdateProjectResponseCreatorVariant0Type.user;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseCreatorVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseCreatorVariant0Type.user: return 'user';
+      case UpdateProjectResponseCreatorVariant0Type.user:
+        return 'user';
     }
   }
 
@@ -47,16 +61,21 @@ enum UpdateProjectResponseCreatorVariant0Type {
 enum UpdateProjectResponseCreatorVariant0ViaVariant0Type {
   app;
 
-  static UpdateProjectResponseCreatorVariant0ViaVariant0Type fromJson(String value) {
+  static UpdateProjectResponseCreatorVariant0ViaVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'app': return UpdateProjectResponseCreatorVariant0ViaVariant0Type.app;
-      default: throw ArgumentError('Unknown UpdateProjectResponseCreatorVariant0ViaVariant0Type: $value');
+      case 'app':
+        return UpdateProjectResponseCreatorVariant0ViaVariant0Type.app;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseCreatorVariant0ViaVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseCreatorVariant0ViaVariant0Type.app: return 'app';
+      case UpdateProjectResponseCreatorVariant0ViaVariant0Type.app:
+        return 'app';
     }
   }
 
@@ -67,16 +86,21 @@ enum UpdateProjectResponseCreatorVariant0ViaVariant0Type {
 enum UpdateProjectResponseCreatorVariant0ViaVariant1Type {
   integration;
 
-  static UpdateProjectResponseCreatorVariant0ViaVariant1Type fromJson(String value) {
+  static UpdateProjectResponseCreatorVariant0ViaVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration': return UpdateProjectResponseCreatorVariant0ViaVariant1Type.integration;
-      default: throw ArgumentError('Unknown UpdateProjectResponseCreatorVariant0ViaVariant1Type: $value');
+      case 'integration':
+        return UpdateProjectResponseCreatorVariant0ViaVariant1Type.integration;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseCreatorVariant0ViaVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseCreatorVariant0ViaVariant1Type.integration: return 'integration';
+      case UpdateProjectResponseCreatorVariant0ViaVariant1Type.integration:
+        return 'integration';
     }
   }
 
@@ -89,14 +113,18 @@ enum UpdateProjectResponseCreatorVariant1Type {
 
   static UpdateProjectResponseCreatorVariant1Type fromJson(String value) {
     switch (value) {
-      case 'app': return UpdateProjectResponseCreatorVariant1Type.app;
-      default: throw ArgumentError('Unknown UpdateProjectResponseCreatorVariant1Type: $value');
+      case 'app':
+        return UpdateProjectResponseCreatorVariant1Type.app;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseCreatorVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseCreatorVariant1Type.app: return 'app';
+      case UpdateProjectResponseCreatorVariant1Type.app:
+        return 'app';
     }
   }
 
@@ -109,14 +137,18 @@ enum UpdateProjectResponseCreatorVariant2Type {
 
   static UpdateProjectResponseCreatorVariant2Type fromJson(String value) {
     switch (value) {
-      case 'integration': return UpdateProjectResponseCreatorVariant2Type.integration;
-      default: throw ArgumentError('Unknown UpdateProjectResponseCreatorVariant2Type: $value');
+      case 'integration':
+        return UpdateProjectResponseCreatorVariant2Type.integration;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseCreatorVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseCreatorVariant2Type.integration: return 'integration';
+      case UpdateProjectResponseCreatorVariant2Type.integration:
+        return 'integration';
     }
   }
 
@@ -129,14 +161,18 @@ enum UpdateProjectResponseCreatorVariant3Type {
 
   static UpdateProjectResponseCreatorVariant3Type fromJson(String value) {
     switch (value) {
-      case 'system': return UpdateProjectResponseCreatorVariant3Type.system;
-      default: throw ArgumentError('Unknown UpdateProjectResponseCreatorVariant3Type: $value');
+      case 'system':
+        return UpdateProjectResponseCreatorVariant3Type.system;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseCreatorVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseCreatorVariant3Type.system: return 'system';
+      case UpdateProjectResponseCreatorVariant3Type.system:
+        return 'system';
     }
   }
 
@@ -145,39 +181,58 @@ enum UpdateProjectResponseCreatorVariant3Type {
 }
 
 final class UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target {
-
   final String value;
 
-  const UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(this.value);
+  const UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
+      this.value);
 
-  factory UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(value);
+  factory UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(
+          String value) =>
+      UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._(value);
 
-  static const preview = UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('preview');
-  static const production = UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('production');
+  static const preview =
+      UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._('preview');
+  static const production =
+      UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
+          ._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
+  static UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'system': return UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system;
-      default: throw ArgumentError('Unknown UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system':
+        return UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+            .system;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
+      case UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
+            .system:
+        return 'system';
     }
   }
 
@@ -188,16 +243,23 @@ enum UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemV
 enum UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
+  static UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'custom': return UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom;
-      default: throw ArgumentError('Unknown UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom':
+        return UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+            .custom;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
+      case UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
+            .custom:
+        return 'custom';
     }
   }
 
@@ -206,39 +268,58 @@ enum UpdateProjectResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemV
 }
 
 final class UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target {
-
   final String value;
 
-  const UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(this.value);
+  const UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
+      this.value);
 
-  factory UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(value);
+  factory UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(
+          String value) =>
+      UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+          ._(value);
 
-  static const preview = UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('preview');
-  static const production = UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('production');
+  static const preview =
+      UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+          ._('preview');
+  static const production =
+      UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
+          ._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
+  static UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'system': return UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system;
-      default: throw ArgumentError('Unknown UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system':
+        return UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+            .system;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
+      case UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
+            .system:
+        return 'system';
     }
   }
 
@@ -249,16 +330,23 @@ enum UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
 enum UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
+  static UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'custom': return UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom;
-      default: throw ArgumentError('Unknown UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom':
+        return UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+            .custom;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
+      case UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+            .custom:
+        return 'custom';
     }
   }
 
@@ -267,22 +355,34 @@ enum UpdateProjectResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
 }
 
 final class UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider {
-
   final String value;
 
-  const UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(this.value);
+  const UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(
+      this.value);
 
-  factory UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(String value) => UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(value);
+  factory UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(
+          String value) =>
+      UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._(value);
 
-  static const bitbucket = UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('bitbucket');
-  static const github = UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('github');
+  static const bitbucket =
+      UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('bitbucket');
+  static const github =
+      UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('github');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

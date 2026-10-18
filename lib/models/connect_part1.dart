@@ -8,101 +8,217 @@ part of 'connect.dart';
 class ConnectConnectorAppTokens {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether one app token can be used across installations.
   final ConnectConnectorAppTokensCrossInstallation crossInstallation;
+
   /// Required enumerated value serialized in the `isStaticCredential` wire field.
   final ConnectConnectorAppTokensIsStaticCredential isStaticCredential;
+
   /// Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
   final SdkOptional<String> permissionsUrl;
+
   /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
-  final SdkOptional<ConnectConnectorAppTokensRequiresReinstallation> requiresReinstallation;
+  final SdkOptional<ConnectConnectorAppTokensRequiresReinstallation>
+      requiresReinstallation;
+
   /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is the connector's enabled `clientCredentials.scopes` configuration.
   final SdkOptional<List<String>> scopes;
+
   /// Supported OAuth authorization-detail type names.
   final SdkOptional<List<String>> supportedAuthorizationDetails;
+
   /// Whether callers can narrow app-token grants per request.
   final ConnectConnectorAppTokensSupportsRefinement supportsRefinement;
+
   /// Whether callers can request resource-specific app tokens.
-  final SdkOptional<ConnectConnectorAppTokensSupportsResources> supportsResources;
+  final SdkOptional<ConnectConnectorAppTokensSupportsResources>
+      supportsResources;
 
-  const ConnectConnectorAppTokens({required this.crossInstallation, required this.isStaticCredential, this.permissionsUrl = const SdkOmitted(), this.requiresReinstallation = const SdkOmitted(), this.scopes = const SdkOmitted(), this.supportedAuthorizationDetails = const SdkOmitted(), required this.supportsRefinement, this.supportsResources = const SdkOmitted()});
+  const ConnectConnectorAppTokens(
+      {required this.crossInstallation,
+      required this.isStaticCredential,
+      this.permissionsUrl = const SdkOmitted(),
+      this.requiresReinstallation = const SdkOmitted(),
+      this.scopes = const SdkOmitted(),
+      this.supportedAuthorizationDetails = const SdkOmitted(),
+      required this.supportsRefinement,
+      this.supportsResources = const SdkOmitted()});
 
-  ConnectConnectorAppTokens Function({ConnectConnectorAppTokensCrossInstallation crossInstallation, ConnectConnectorAppTokensIsStaticCredential isStaticCredential, SdkOptional<String> permissionsUrl, SdkOptional<ConnectConnectorAppTokensRequiresReinstallation> requiresReinstallation, SdkOptional<List<String>> scopes, SdkOptional<List<String>> supportedAuthorizationDetails, ConnectConnectorAppTokensSupportsRefinement supportsRefinement, SdkOptional<ConnectConnectorAppTokensSupportsResources> supportsResources}) get copyWith => _copyWith;
+  ConnectConnectorAppTokens Function(
+      {ConnectConnectorAppTokensCrossInstallation crossInstallation,
+      ConnectConnectorAppTokensIsStaticCredential isStaticCredential,
+      SdkOptional<String> permissionsUrl,
+      SdkOptional<ConnectConnectorAppTokensRequiresReinstallation>
+          requiresReinstallation,
+      SdkOptional<List<String>> scopes,
+      SdkOptional<List<String>> supportedAuthorizationDetails,
+      ConnectConnectorAppTokensSupportsRefinement supportsRefinement,
+      SdkOptional<ConnectConnectorAppTokensSupportsResources>
+          supportsResources}) get copyWith => _copyWith;
 
-  ConnectConnectorAppTokens _copyWith({Object? crossInstallation = sdkOmittedValue, Object? isStaticCredential = sdkOmittedValue, Object? permissionsUrl = sdkOmittedValue, Object? requiresReinstallation = sdkOmittedValue, Object? scopes = sdkOmittedValue, Object? supportedAuthorizationDetails = sdkOmittedValue, Object? supportsRefinement = sdkOmittedValue, Object? supportsResources = sdkOmittedValue}) => ConnectConnectorAppTokens(
-    crossInstallation: identical(crossInstallation, sdkOmittedValue) ? this.crossInstallation : crossInstallation as ConnectConnectorAppTokensCrossInstallation,
-    isStaticCredential: identical(isStaticCredential, sdkOmittedValue) ? this.isStaticCredential : isStaticCredential as ConnectConnectorAppTokensIsStaticCredential,
-    permissionsUrl: identical(permissionsUrl, sdkOmittedValue) ? this.permissionsUrl : permissionsUrl as SdkOptional<String>,
-    requiresReinstallation: identical(requiresReinstallation, sdkOmittedValue) ? this.requiresReinstallation : requiresReinstallation as SdkOptional<ConnectConnectorAppTokensRequiresReinstallation>,
-    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as SdkOptional<List<String>>,
-    supportedAuthorizationDetails: identical(supportedAuthorizationDetails, sdkOmittedValue) ? this.supportedAuthorizationDetails : supportedAuthorizationDetails as SdkOptional<List<String>>,
-    supportsRefinement: identical(supportsRefinement, sdkOmittedValue) ? this.supportsRefinement : supportsRefinement as ConnectConnectorAppTokensSupportsRefinement,
-    supportsResources: identical(supportsResources, sdkOmittedValue) ? this.supportsResources : supportsResources as SdkOptional<ConnectConnectorAppTokensSupportsResources>,
-  );
+  ConnectConnectorAppTokens _copyWith(
+          {Object? crossInstallation = sdkOmittedValue,
+          Object? isStaticCredential = sdkOmittedValue,
+          Object? permissionsUrl = sdkOmittedValue,
+          Object? requiresReinstallation = sdkOmittedValue,
+          Object? scopes = sdkOmittedValue,
+          Object? supportedAuthorizationDetails = sdkOmittedValue,
+          Object? supportsRefinement = sdkOmittedValue,
+          Object? supportsResources = sdkOmittedValue}) =>
+      ConnectConnectorAppTokens(
+        crossInstallation: identical(crossInstallation, sdkOmittedValue)
+            ? this.crossInstallation
+            : crossInstallation as ConnectConnectorAppTokensCrossInstallation,
+        isStaticCredential: identical(isStaticCredential, sdkOmittedValue)
+            ? this.isStaticCredential
+            : isStaticCredential as ConnectConnectorAppTokensIsStaticCredential,
+        permissionsUrl: identical(permissionsUrl, sdkOmittedValue)
+            ? this.permissionsUrl
+            : permissionsUrl as SdkOptional<String>,
+        requiresReinstallation: identical(
+                requiresReinstallation, sdkOmittedValue)
+            ? this.requiresReinstallation
+            : requiresReinstallation
+                as SdkOptional<ConnectConnectorAppTokensRequiresReinstallation>,
+        scopes: identical(scopes, sdkOmittedValue)
+            ? this.scopes
+            : scopes as SdkOptional<List<String>>,
+        supportedAuthorizationDetails:
+            identical(supportedAuthorizationDetails, sdkOmittedValue)
+                ? this.supportedAuthorizationDetails
+                : supportedAuthorizationDetails as SdkOptional<List<String>>,
+        supportsRefinement: identical(supportsRefinement, sdkOmittedValue)
+            ? this.supportsRefinement
+            : supportsRefinement as ConnectConnectorAppTokensSupportsRefinement,
+        supportsResources: identical(supportsResources, sdkOmittedValue)
+            ? this.supportsResources
+            : supportsResources
+                as SdkOptional<ConnectConnectorAppTokensSupportsResources>,
+      );
 
-  factory ConnectConnectorAppTokens.fromJson(Map<String, dynamic> json) => ConnectConnectorAppTokens(
-    crossInstallation: (json['crossInstallation'] != null ? ConnectConnectorAppTokensCrossInstallation.fromJson(json['crossInstallation'] as bool) : null)!,
-    isStaticCredential: (json['isStaticCredential'] != null ? ConnectConnectorAppTokensIsStaticCredential.fromJson(json['isStaticCredential'] as bool) : null)!,
-    permissionsUrl: json['permissionsUrl'] != null ? SdkPresent((json['permissionsUrl'] as String?)!) : const SdkOmitted(),
-    requiresReinstallation: json['requiresReinstallation'] != null ? SdkPresent((json['requiresReinstallation'] != null ? ConnectConnectorAppTokensRequiresReinstallation.fromJson(json['requiresReinstallation'] as bool) : null)!) : const SdkOmitted(),
-    scopes: json['scopes'] != null ? SdkPresent(((json['scopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    supportedAuthorizationDetails: json['supportedAuthorizationDetails'] != null ? SdkPresent(((json['supportedAuthorizationDetails'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    supportsRefinement: (json['supportsRefinement'] != null ? ConnectConnectorAppTokensSupportsRefinement.fromJson(json['supportsRefinement'] as bool) : null)!,
-    supportsResources: json['supportsResources'] != null ? SdkPresent((json['supportsResources'] != null ? ConnectConnectorAppTokensSupportsResources.fromJson(json['supportsResources'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorAppTokens.fromJson(Map<String, dynamic> json) =>
+      ConnectConnectorAppTokens(
+        crossInstallation: (json['crossInstallation'] != null
+            ? ConnectConnectorAppTokensCrossInstallation.fromJson(
+                json['crossInstallation'] as bool)
+            : null)!,
+        isStaticCredential: (json['isStaticCredential'] != null
+            ? ConnectConnectorAppTokensIsStaticCredential.fromJson(
+                json['isStaticCredential'] as bool)
+            : null)!,
+        permissionsUrl: json['permissionsUrl'] != null
+            ? SdkPresent((json['permissionsUrl'] as String?)!)
+            : const SdkOmitted(),
+        requiresReinstallation: json['requiresReinstallation'] != null
+            ? SdkPresent((json['requiresReinstallation'] != null
+                ? ConnectConnectorAppTokensRequiresReinstallation.fromJson(
+                    json['requiresReinstallation'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        scopes: json['scopes'] != null
+            ? SdkPresent(
+                ((json['scopes'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        supportedAuthorizationDetails:
+            json['supportedAuthorizationDetails'] != null
+                ? SdkPresent(((json['supportedAuthorizationDetails'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+        supportsRefinement: (json['supportsRefinement'] != null
+            ? ConnectConnectorAppTokensSupportsRefinement.fromJson(
+                json['supportsRefinement'] as bool)
+            : null)!,
+        supportsResources: json['supportsResources'] != null
+            ? SdkPresent((json['supportsResources'] != null
+                ? ConnectConnectorAppTokensSupportsResources.fromJson(
+                    json['supportsResources'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'crossInstallation': crossInstallation.toJson(),
-    'isStaticCredential': isStaticCredential.toJson(),
-    ...switch (permissionsUrl) {
-      SdkPresent<String>(value: final value) => {'permissionsUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (requiresReinstallation) {
-      SdkPresent<ConnectConnectorAppTokensRequiresReinstallation>(value: final value) => {'requiresReinstallation': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scopes) {
-      SdkPresent<List<String>>(value: final value) => {'scopes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (supportedAuthorizationDetails) {
-      SdkPresent<List<String>>(value: final value) => {'supportedAuthorizationDetails': value,},
-      _ => const <String, dynamic>{},
-    },
-    'supportsRefinement': supportsRefinement.toJson(),
-    ...switch (supportsResources) {
-      SdkPresent<ConnectConnectorAppTokensSupportsResources>(value: final value) => {'supportsResources': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'crossInstallation': crossInstallation.toJson(),
+        'isStaticCredential': isStaticCredential.toJson(),
+        ...switch (permissionsUrl) {
+          SdkPresent<String>(value: final value) => {
+              'permissionsUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (requiresReinstallation) {
+          SdkPresent<ConnectConnectorAppTokensRequiresReinstallation>(
+            value: final value
+          ) =>
+            {
+              'requiresReinstallation': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scopes) {
+          SdkPresent<List<String>>(value: final value) => {
+              'scopes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (supportedAuthorizationDetails) {
+          SdkPresent<List<String>>(value: final value) => {
+              'supportedAuthorizationDetails': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'supportsRefinement': supportsRefinement.toJson(),
+        ...switch (supportsResources) {
+          SdkPresent<ConnectConnectorAppTokensSupportsResources>(
+            value: final value
+          ) =>
+            {
+              'supportsResources': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Managed connector metadata exposed without leaking the manager connector or installation identifiers.
 class ConnectConnectorManaged {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether Vercel synchronizes provider-side configuration.
   final SdkOptional<ConnectConnectorManagedSync> sync_;
 
   const ConnectConnectorManaged({this.sync_ = const SdkOmitted()});
 
-  ConnectConnectorManaged Function({SdkOptional<ConnectConnectorManagedSync> sync_}) get copyWith => _copyWith;
+  ConnectConnectorManaged Function(
+          {SdkOptional<ConnectConnectorManagedSync> sync_})
+      get copyWith => _copyWith;
 
-  ConnectConnectorManaged _copyWith({Object? sync_ = sdkOmittedValue}) => ConnectConnectorManaged(
-    sync_: identical(sync_, sdkOmittedValue) ? this.sync_ : sync_ as SdkOptional<ConnectConnectorManagedSync>,
-  );
+  ConnectConnectorManaged _copyWith({Object? sync_ = sdkOmittedValue}) =>
+      ConnectConnectorManaged(
+        sync_: identical(sync_, sdkOmittedValue)
+            ? this.sync_
+            : sync_ as SdkOptional<ConnectConnectorManagedSync>,
+      );
 
-  factory ConnectConnectorManaged.fromJson(Map<String, dynamic> json) => ConnectConnectorManaged(
-    sync_: json['sync'] != null ? SdkPresent((json['sync'] != null ? ConnectConnectorManagedSync.fromJson(json['sync'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorManaged.fromJson(Map<String, dynamic> json) =>
+      ConnectConnectorManaged(
+        sync_: json['sync'] != null
+            ? SdkPresent((json['sync'] != null
+                ? ConnectConnectorManagedSync.fromJson(json['sync'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (sync_) {
-      SdkPresent<ConnectConnectorManagedSync>(value: final value) => {'sync': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (sync_) {
+          SdkPresent<ConnectConnectorManagedSync>(value: final value) => {
+              'sync': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class ConnectConnectorSupportsIcon {
@@ -110,87 +226,194 @@ sealed class ConnectConnectorSupportsIcon {
   static const String constructionSurface = 'named';
   const ConnectConnectorSupportsIcon();
   factory ConnectConnectorSupportsIcon.fromJson(Object? json) {
-    try { return ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant0(ConnectConnectorSupportsIconVariant0.fromJson(json as bool)); } catch (_) {}
-    try { return ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant1(ConnectConnectorSupportsIconVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for ConnectConnectorSupportsIcon");
+    try {
+      return ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant0(
+          ConnectConnectorSupportsIconVariant0.fromJson(json as bool));
+    } catch (_) {}
+    try {
+      return ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant1(
+          ConnectConnectorSupportsIconVariant1.fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for ConnectConnectorSupportsIcon");
   }
   Object? toJson();
 }
 
-final class ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant0 extends ConnectConnectorSupportsIcon {
+final class ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant0
+    extends ConnectConnectorSupportsIcon {
   final ConnectConnectorSupportsIconVariant0 value;
-  const ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant1 extends ConnectConnectorSupportsIcon {
+final class ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant1
+    extends ConnectConnectorSupportsIcon {
   final ConnectConnectorSupportsIconVariant1 value;
-  const ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const ConnectConnectorSupportsIconConnectConnectorSupportsIconVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// User-token capabilities and known grants for the connector.
 class ConnectConnectorUserTokens {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether one user token can be used across installations.
   final ConnectConnectorUserTokensCrossInstallation crossInstallation;
+
   /// Required enumerated value serialized in the `isStaticCredential` wire field.
   final ConnectConnectorUserTokensIsStaticCredential isStaticCredential;
+
   /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
-  final SdkOptional<ConnectConnectorUserTokensManualCredentialInput> manualCredentialInput;
+  final SdkOptional<ConnectConnectorUserTokensManualCredentialInput>
+      manualCredentialInput;
+
   /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration.
   final SdkOptional<List<String>> scopes;
+
   /// Supported OAuth authorization-detail type names.
   final SdkOptional<List<String>> supportedAuthorizationDetails;
+
   /// Whether callers can narrow user-token grants per request.
   final ConnectConnectorUserTokensSupportsRefinement supportsRefinement;
+
   /// Whether callers can request resource-specific user tokens.
-  final SdkOptional<ConnectConnectorUserTokensSupportsResources> supportsResources;
+  final SdkOptional<ConnectConnectorUserTokensSupportsResources>
+      supportsResources;
 
-  const ConnectConnectorUserTokens({required this.crossInstallation, required this.isStaticCredential, this.manualCredentialInput = const SdkOmitted(), this.scopes = const SdkOmitted(), this.supportedAuthorizationDetails = const SdkOmitted(), required this.supportsRefinement, this.supportsResources = const SdkOmitted()});
+  const ConnectConnectorUserTokens(
+      {required this.crossInstallation,
+      required this.isStaticCredential,
+      this.manualCredentialInput = const SdkOmitted(),
+      this.scopes = const SdkOmitted(),
+      this.supportedAuthorizationDetails = const SdkOmitted(),
+      required this.supportsRefinement,
+      this.supportsResources = const SdkOmitted()});
 
-  ConnectConnectorUserTokens Function({ConnectConnectorUserTokensCrossInstallation crossInstallation, ConnectConnectorUserTokensIsStaticCredential isStaticCredential, SdkOptional<ConnectConnectorUserTokensManualCredentialInput> manualCredentialInput, SdkOptional<List<String>> scopes, SdkOptional<List<String>> supportedAuthorizationDetails, ConnectConnectorUserTokensSupportsRefinement supportsRefinement, SdkOptional<ConnectConnectorUserTokensSupportsResources> supportsResources}) get copyWith => _copyWith;
+  ConnectConnectorUserTokens Function(
+      {ConnectConnectorUserTokensCrossInstallation crossInstallation,
+      ConnectConnectorUserTokensIsStaticCredential isStaticCredential,
+      SdkOptional<ConnectConnectorUserTokensManualCredentialInput>
+          manualCredentialInput,
+      SdkOptional<List<String>> scopes,
+      SdkOptional<List<String>> supportedAuthorizationDetails,
+      ConnectConnectorUserTokensSupportsRefinement supportsRefinement,
+      SdkOptional<ConnectConnectorUserTokensSupportsResources>
+          supportsResources}) get copyWith => _copyWith;
 
-  ConnectConnectorUserTokens _copyWith({Object? crossInstallation = sdkOmittedValue, Object? isStaticCredential = sdkOmittedValue, Object? manualCredentialInput = sdkOmittedValue, Object? scopes = sdkOmittedValue, Object? supportedAuthorizationDetails = sdkOmittedValue, Object? supportsRefinement = sdkOmittedValue, Object? supportsResources = sdkOmittedValue}) => ConnectConnectorUserTokens(
-    crossInstallation: identical(crossInstallation, sdkOmittedValue) ? this.crossInstallation : crossInstallation as ConnectConnectorUserTokensCrossInstallation,
-    isStaticCredential: identical(isStaticCredential, sdkOmittedValue) ? this.isStaticCredential : isStaticCredential as ConnectConnectorUserTokensIsStaticCredential,
-    manualCredentialInput: identical(manualCredentialInput, sdkOmittedValue) ? this.manualCredentialInput : manualCredentialInput as SdkOptional<ConnectConnectorUserTokensManualCredentialInput>,
-    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as SdkOptional<List<String>>,
-    supportedAuthorizationDetails: identical(supportedAuthorizationDetails, sdkOmittedValue) ? this.supportedAuthorizationDetails : supportedAuthorizationDetails as SdkOptional<List<String>>,
-    supportsRefinement: identical(supportsRefinement, sdkOmittedValue) ? this.supportsRefinement : supportsRefinement as ConnectConnectorUserTokensSupportsRefinement,
-    supportsResources: identical(supportsResources, sdkOmittedValue) ? this.supportsResources : supportsResources as SdkOptional<ConnectConnectorUserTokensSupportsResources>,
-  );
+  ConnectConnectorUserTokens _copyWith(
+          {Object? crossInstallation = sdkOmittedValue,
+          Object? isStaticCredential = sdkOmittedValue,
+          Object? manualCredentialInput = sdkOmittedValue,
+          Object? scopes = sdkOmittedValue,
+          Object? supportedAuthorizationDetails = sdkOmittedValue,
+          Object? supportsRefinement = sdkOmittedValue,
+          Object? supportsResources = sdkOmittedValue}) =>
+      ConnectConnectorUserTokens(
+        crossInstallation: identical(crossInstallation, sdkOmittedValue)
+            ? this.crossInstallation
+            : crossInstallation as ConnectConnectorUserTokensCrossInstallation,
+        isStaticCredential: identical(isStaticCredential, sdkOmittedValue)
+            ? this.isStaticCredential
+            : isStaticCredential
+                as ConnectConnectorUserTokensIsStaticCredential,
+        manualCredentialInput: identical(manualCredentialInput, sdkOmittedValue)
+            ? this.manualCredentialInput
+            : manualCredentialInput
+                as SdkOptional<ConnectConnectorUserTokensManualCredentialInput>,
+        scopes: identical(scopes, sdkOmittedValue)
+            ? this.scopes
+            : scopes as SdkOptional<List<String>>,
+        supportedAuthorizationDetails:
+            identical(supportedAuthorizationDetails, sdkOmittedValue)
+                ? this.supportedAuthorizationDetails
+                : supportedAuthorizationDetails as SdkOptional<List<String>>,
+        supportsRefinement: identical(supportsRefinement, sdkOmittedValue)
+            ? this.supportsRefinement
+            : supportsRefinement
+                as ConnectConnectorUserTokensSupportsRefinement,
+        supportsResources: identical(supportsResources, sdkOmittedValue)
+            ? this.supportsResources
+            : supportsResources
+                as SdkOptional<ConnectConnectorUserTokensSupportsResources>,
+      );
 
-  factory ConnectConnectorUserTokens.fromJson(Map<String, dynamic> json) => ConnectConnectorUserTokens(
-    crossInstallation: (json['crossInstallation'] != null ? ConnectConnectorUserTokensCrossInstallation.fromJson(json['crossInstallation'] as bool) : null)!,
-    isStaticCredential: (json['isStaticCredential'] != null ? ConnectConnectorUserTokensIsStaticCredential.fromJson(json['isStaticCredential'] as bool) : null)!,
-    manualCredentialInput: json['manualCredentialInput'] != null ? SdkPresent((json['manualCredentialInput'] != null ? ConnectConnectorUserTokensManualCredentialInput.fromJson(json['manualCredentialInput'] as bool) : null)!) : const SdkOmitted(),
-    scopes: json['scopes'] != null ? SdkPresent(((json['scopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    supportedAuthorizationDetails: json['supportedAuthorizationDetails'] != null ? SdkPresent(((json['supportedAuthorizationDetails'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    supportsRefinement: (json['supportsRefinement'] != null ? ConnectConnectorUserTokensSupportsRefinement.fromJson(json['supportsRefinement'] as bool) : null)!,
-    supportsResources: json['supportsResources'] != null ? SdkPresent((json['supportsResources'] != null ? ConnectConnectorUserTokensSupportsResources.fromJson(json['supportsResources'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorUserTokens.fromJson(Map<String, dynamic> json) =>
+      ConnectConnectorUserTokens(
+        crossInstallation: (json['crossInstallation'] != null
+            ? ConnectConnectorUserTokensCrossInstallation.fromJson(
+                json['crossInstallation'] as bool)
+            : null)!,
+        isStaticCredential: (json['isStaticCredential'] != null
+            ? ConnectConnectorUserTokensIsStaticCredential.fromJson(
+                json['isStaticCredential'] as bool)
+            : null)!,
+        manualCredentialInput: json['manualCredentialInput'] != null
+            ? SdkPresent((json['manualCredentialInput'] != null
+                ? ConnectConnectorUserTokensManualCredentialInput.fromJson(
+                    json['manualCredentialInput'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        scopes: json['scopes'] != null
+            ? SdkPresent(
+                ((json['scopes'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        supportedAuthorizationDetails:
+            json['supportedAuthorizationDetails'] != null
+                ? SdkPresent(((json['supportedAuthorizationDetails'] as List?)
+                    ?.map((e) => e as String)
+                    .toList())!)
+                : const SdkOmitted(),
+        supportsRefinement: (json['supportsRefinement'] != null
+            ? ConnectConnectorUserTokensSupportsRefinement.fromJson(
+                json['supportsRefinement'] as bool)
+            : null)!,
+        supportsResources: json['supportsResources'] != null
+            ? SdkPresent((json['supportsResources'] != null
+                ? ConnectConnectorUserTokensSupportsResources.fromJson(
+                    json['supportsResources'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'crossInstallation': crossInstallation.toJson(),
-    'isStaticCredential': isStaticCredential.toJson(),
-    ...switch (manualCredentialInput) {
-      SdkPresent<ConnectConnectorUserTokensManualCredentialInput>(value: final value) => {'manualCredentialInput': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scopes) {
-      SdkPresent<List<String>>(value: final value) => {'scopes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (supportedAuthorizationDetails) {
-      SdkPresent<List<String>>(value: final value) => {'supportedAuthorizationDetails': value,},
-      _ => const <String, dynamic>{},
-    },
-    'supportsRefinement': supportsRefinement.toJson(),
-    ...switch (supportsResources) {
-      SdkPresent<ConnectConnectorUserTokensSupportsResources>(value: final value) => {'supportsResources': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'crossInstallation': crossInstallation.toJson(),
+        'isStaticCredential': isStaticCredential.toJson(),
+        ...switch (manualCredentialInput) {
+          SdkPresent<ConnectConnectorUserTokensManualCredentialInput>(
+            value: final value
+          ) =>
+            {
+              'manualCredentialInput': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scopes) {
+          SdkPresent<List<String>>(value: final value) => {
+              'scopes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (supportedAuthorizationDetails) {
+          SdkPresent<List<String>>(value: final value) => {
+              'supportedAuthorizationDetails': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'supportsRefinement': supportsRefinement.toJson(),
+        ...switch (supportsResources) {
+          SdkPresent<ConnectConnectorUserTokensSupportsResources>(
+            value: final value
+          ) =>
+            {
+              'supportsResources': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

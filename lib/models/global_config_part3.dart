@@ -12,33 +12,64 @@ class PatchEdgeConfigItemsRequestItemsItemVariant0 {
   final dynamic value;
   final SdkOptional<String?> description;
 
-  const PatchEdgeConfigItemsRequestItemsItemVariant0({required this.operation, required this.key, required this.value, this.description = const SdkOmitted()});
+  const PatchEdgeConfigItemsRequestItemsItemVariant0(
+      {required this.operation,
+      required this.key,
+      required this.value,
+      this.description = const SdkOmitted()});
 
-  PatchEdgeConfigItemsRequestItemsItemVariant0 Function({PatchEdgeConfigItemsRequestItemsItemVariant0Operation operation, String key, dynamic value, SdkOptional<String?> description}) get copyWith => _copyWith;
+  PatchEdgeConfigItemsRequestItemsItemVariant0 Function(
+      {PatchEdgeConfigItemsRequestItemsItemVariant0Operation operation,
+      String key,
+      dynamic value,
+      SdkOptional<String?> description}) get copyWith => _copyWith;
 
-  PatchEdgeConfigItemsRequestItemsItemVariant0 _copyWith({Object? operation = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? description = sdkOmittedValue}) => PatchEdgeConfigItemsRequestItemsItemVariant0(
-    operation: identical(operation, sdkOmittedValue) ? this.operation : operation as PatchEdgeConfigItemsRequestItemsItemVariant0Operation,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as dynamic,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String?>,
-  );
+  PatchEdgeConfigItemsRequestItemsItemVariant0 _copyWith(
+          {Object? operation = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? description = sdkOmittedValue}) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant0(
+        operation: identical(operation, sdkOmittedValue)
+            ? this.operation
+            : operation
+                as PatchEdgeConfigItemsRequestItemsItemVariant0Operation,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value:
+            identical(value, sdkOmittedValue) ? this.value : value as dynamic,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String?>,
+      );
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant0.fromJson(Map<String, dynamic> json) => PatchEdgeConfigItemsRequestItemsItemVariant0(
-    operation: (json['operation'] != null ? PatchEdgeConfigItemsRequestItemsItemVariant0Operation.fromJson(json['operation'] as String) : null)!,
-    key: (json['key'] as String?)!,
-    value: json.containsKey('value') ? json['value'] : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-    description: json.containsKey('description') ? SdkPresent(json['description'] as String?) : const SdkOmitted(),
-  );
+  factory PatchEdgeConfigItemsRequestItemsItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant0(
+        operation: (json['operation'] != null
+            ? PatchEdgeConfigItemsRequestItemsItemVariant0Operation.fromJson(
+                json['operation'] as String)
+            : null)!,
+        key: (json['key'] as String?)!,
+        value: json.containsKey('value')
+            ? json['value']
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+        description: json.containsKey('description')
+            ? SdkPresent(json['description'] as String?)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'operation': operation.toJson(),
-    'key': key,
-    'value': value,
-    ...switch (description) {
-      SdkPresent<String?>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'operation': operation.toJson(),
+        'key': key,
+        'value': value,
+        ...switch (description) {
+          SdkPresent<String?>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class PatchEdgeConfigItemsRequestItemsItemVariant1 {
@@ -49,33 +80,64 @@ class PatchEdgeConfigItemsRequestItemsItemVariant1 {
   final dynamic value;
   final SdkOptional<String?> description;
 
-  const PatchEdgeConfigItemsRequestItemsItemVariant1({required this.operation, required this.key, required this.value, this.description = const SdkOmitted()});
+  const PatchEdgeConfigItemsRequestItemsItemVariant1(
+      {required this.operation,
+      required this.key,
+      required this.value,
+      this.description = const SdkOmitted()});
 
-  PatchEdgeConfigItemsRequestItemsItemVariant1 Function({PatchEdgeConfigItemsRequestItemsItemVariant1Operation operation, String key, dynamic value, SdkOptional<String?> description}) get copyWith => _copyWith;
+  PatchEdgeConfigItemsRequestItemsItemVariant1 Function(
+      {PatchEdgeConfigItemsRequestItemsItemVariant1Operation operation,
+      String key,
+      dynamic value,
+      SdkOptional<String?> description}) get copyWith => _copyWith;
 
-  PatchEdgeConfigItemsRequestItemsItemVariant1 _copyWith({Object? operation = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? description = sdkOmittedValue}) => PatchEdgeConfigItemsRequestItemsItemVariant1(
-    operation: identical(operation, sdkOmittedValue) ? this.operation : operation as PatchEdgeConfigItemsRequestItemsItemVariant1Operation,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as dynamic,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String?>,
-  );
+  PatchEdgeConfigItemsRequestItemsItemVariant1 _copyWith(
+          {Object? operation = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? description = sdkOmittedValue}) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant1(
+        operation: identical(operation, sdkOmittedValue)
+            ? this.operation
+            : operation
+                as PatchEdgeConfigItemsRequestItemsItemVariant1Operation,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value:
+            identical(value, sdkOmittedValue) ? this.value : value as dynamic,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String?>,
+      );
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant1.fromJson(Map<String, dynamic> json) => PatchEdgeConfigItemsRequestItemsItemVariant1(
-    operation: (json['operation'] != null ? PatchEdgeConfigItemsRequestItemsItemVariant1Operation.fromJson(json['operation'] as String) : null)!,
-    key: (json['key'] as String?)!,
-    value: json.containsKey('value') ? json['value'] : throw ArgumentError.value(null, 'value', 'Required property is missing'),
-    description: json.containsKey('description') ? SdkPresent(json['description'] as String?) : const SdkOmitted(),
-  );
+  factory PatchEdgeConfigItemsRequestItemsItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant1(
+        operation: (json['operation'] != null
+            ? PatchEdgeConfigItemsRequestItemsItemVariant1Operation.fromJson(
+                json['operation'] as String)
+            : null)!,
+        key: (json['key'] as String?)!,
+        value: json.containsKey('value')
+            ? json['value']
+            : throw ArgumentError.value(
+                null, 'value', 'Required property is missing'),
+        description: json.containsKey('description')
+            ? SdkPresent(json['description'] as String?)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'operation': operation.toJson(),
-    'key': key,
-    'value': value,
-    ...switch (description) {
-      SdkPresent<String?>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'operation': operation.toJson(),
+        'key': key,
+        'value': value,
+        ...switch (description) {
+          SdkPresent<String?>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class PatchEdgeConfigItemsRequestItemsItemVariant2 {
@@ -86,33 +148,65 @@ class PatchEdgeConfigItemsRequestItemsItemVariant2 {
   final SdkOptional<dynamic> value;
   final String? description;
 
-  const PatchEdgeConfigItemsRequestItemsItemVariant2({required this.operation, required this.key, this.value = const SdkOmitted(), required this.description});
+  const PatchEdgeConfigItemsRequestItemsItemVariant2(
+      {required this.operation,
+      required this.key,
+      this.value = const SdkOmitted(),
+      required this.description});
 
-  PatchEdgeConfigItemsRequestItemsItemVariant2 Function({PatchEdgeConfigItemsRequestItemsItemVariant2Operation operation, String key, SdkOptional<dynamic> value, String? description}) get copyWith => _copyWith;
+  PatchEdgeConfigItemsRequestItemsItemVariant2 Function(
+      {PatchEdgeConfigItemsRequestItemsItemVariant2Operation operation,
+      String key,
+      SdkOptional<dynamic> value,
+      String? description}) get copyWith => _copyWith;
 
-  PatchEdgeConfigItemsRequestItemsItemVariant2 _copyWith({Object? operation = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? description = sdkOmittedValue}) => PatchEdgeConfigItemsRequestItemsItemVariant2(
-    operation: identical(operation, sdkOmittedValue) ? this.operation : operation as PatchEdgeConfigItemsRequestItemsItemVariant2Operation,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as String?,
-  );
+  PatchEdgeConfigItemsRequestItemsItemVariant2 _copyWith(
+          {Object? operation = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? description = sdkOmittedValue}) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant2(
+        operation: identical(operation, sdkOmittedValue)
+            ? this.operation
+            : operation
+                as PatchEdgeConfigItemsRequestItemsItemVariant2Operation,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<dynamic>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as String?,
+      );
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant2.fromJson(Map<String, dynamic> json) => PatchEdgeConfigItemsRequestItemsItemVariant2(
-    operation: (json['operation'] != null ? PatchEdgeConfigItemsRequestItemsItemVariant2Operation.fromJson(json['operation'] as String) : null)!,
-    key: (json['key'] as String?)!,
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-    description: json.containsKey('description') ? json['description'] as String? : throw ArgumentError.value(null, 'description', 'Required property is missing'),
-  );
+  factory PatchEdgeConfigItemsRequestItemsItemVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant2(
+        operation: (json['operation'] != null
+            ? PatchEdgeConfigItemsRequestItemsItemVariant2Operation.fromJson(
+                json['operation'] as String)
+            : null)!,
+        key: (json['key'] as String?)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+        description: json.containsKey('description')
+            ? json['description'] as String?
+            : throw ArgumentError.value(
+                null, 'description', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'operation': operation.toJson(),
-    'key': key,
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-    'description': description,
-  };
+        'operation': operation.toJson(),
+        'key': key,
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'description': description,
+      };
 }
 
 class PatchEdgeConfigItemsRequestItemsItemVariant3 {
@@ -123,36 +217,69 @@ class PatchEdgeConfigItemsRequestItemsItemVariant3 {
   final SdkOptional<dynamic> value;
   final SdkOptional<String?> description;
 
-  const PatchEdgeConfigItemsRequestItemsItemVariant3({required this.operation, required this.key, this.value = const SdkOmitted(), this.description = const SdkOmitted()});
+  const PatchEdgeConfigItemsRequestItemsItemVariant3(
+      {required this.operation,
+      required this.key,
+      this.value = const SdkOmitted(),
+      this.description = const SdkOmitted()});
 
-  PatchEdgeConfigItemsRequestItemsItemVariant3 Function({PatchEdgeConfigItemsRequestItemsItemVariant3Operation operation, String key, SdkOptional<dynamic> value, SdkOptional<String?> description}) get copyWith => _copyWith;
+  PatchEdgeConfigItemsRequestItemsItemVariant3 Function(
+      {PatchEdgeConfigItemsRequestItemsItemVariant3Operation operation,
+      String key,
+      SdkOptional<dynamic> value,
+      SdkOptional<String?> description}) get copyWith => _copyWith;
 
-  PatchEdgeConfigItemsRequestItemsItemVariant3 _copyWith({Object? operation = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? description = sdkOmittedValue}) => PatchEdgeConfigItemsRequestItemsItemVariant3(
-    operation: identical(operation, sdkOmittedValue) ? this.operation : operation as PatchEdgeConfigItemsRequestItemsItemVariant3Operation,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String?>,
-  );
+  PatchEdgeConfigItemsRequestItemsItemVariant3 _copyWith(
+          {Object? operation = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? description = sdkOmittedValue}) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant3(
+        operation: identical(operation, sdkOmittedValue)
+            ? this.operation
+            : operation
+                as PatchEdgeConfigItemsRequestItemsItemVariant3Operation,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<dynamic>,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String?>,
+      );
 
-  factory PatchEdgeConfigItemsRequestItemsItemVariant3.fromJson(Map<String, dynamic> json) => PatchEdgeConfigItemsRequestItemsItemVariant3(
-    operation: (json['operation'] != null ? PatchEdgeConfigItemsRequestItemsItemVariant3Operation.fromJson(json['operation'] as String) : null)!,
-    key: (json['key'] as String?)!,
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-    description: json.containsKey('description') ? SdkPresent(json['description'] as String?) : const SdkOmitted(),
-  );
+  factory PatchEdgeConfigItemsRequestItemsItemVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      PatchEdgeConfigItemsRequestItemsItemVariant3(
+        operation: (json['operation'] != null
+            ? PatchEdgeConfigItemsRequestItemsItemVariant3Operation.fromJson(
+                json['operation'] as String)
+            : null)!,
+        key: (json['key'] as String?)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+        description: json.containsKey('description')
+            ? SdkPresent(json['description'] as String?)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'operation': operation.toJson(),
-    'key': key,
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (description) {
-      SdkPresent<String?>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'operation': operation.toJson(),
+        'key': key,
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (description) {
+          SdkPresent<String?>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class PatchEdgeConfigItemsRequestItemsItem {
@@ -161,40 +288,97 @@ sealed class PatchEdgeConfigItemsRequestItemsItem {
   const PatchEdgeConfigItemsRequestItemsItem();
   factory PatchEdgeConfigItemsRequestItemsItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = PatchEdgeConfigItemsRequestItemsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0(value); } } catch (_) {}
-      try { final value = PatchEdgeConfigItemsRequestItemsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1(value); } } catch (_) {}
-      try { final value = PatchEdgeConfigItemsRequestItemsItemVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2(value); } } catch (_) {}
-      try { final value = PatchEdgeConfigItemsRequestItemsItemVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3(value); } } catch (_) {}
+      try {
+        final value =
+            PatchEdgeConfigItemsRequestItemsItemVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            PatchEdgeConfigItemsRequestItemsItemVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            PatchEdgeConfigItemsRequestItemsItemVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            PatchEdgeConfigItemsRequestItemsItemVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0(PatchEdgeConfigItemsRequestItemsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1(PatchEdgeConfigItemsRequestItemsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2(PatchEdgeConfigItemsRequestItemsItemVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3(PatchEdgeConfigItemsRequestItemsItemVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for PatchEdgeConfigItemsRequestItemsItem");
+    try {
+      return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0(
+          PatchEdgeConfigItemsRequestItemsItemVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1(
+          PatchEdgeConfigItemsRequestItemsItemVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2(
+          PatchEdgeConfigItemsRequestItemsItemVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3(
+          PatchEdgeConfigItemsRequestItemsItemVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for PatchEdgeConfigItemsRequestItemsItem");
   }
   Object? toJson();
 }
 
-final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0 extends PatchEdgeConfigItemsRequestItemsItem {
+final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0
+    extends PatchEdgeConfigItemsRequestItemsItem {
   final PatchEdgeConfigItemsRequestItemsItemVariant0 value;
-  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1 extends PatchEdgeConfigItemsRequestItemsItem {
+final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1
+    extends PatchEdgeConfigItemsRequestItemsItem {
   final PatchEdgeConfigItemsRequestItemsItemVariant1 value;
-  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2 extends PatchEdgeConfigItemsRequestItemsItem {
+final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2
+    extends PatchEdgeConfigItemsRequestItemsItem {
   final PatchEdgeConfigItemsRequestItemsItemVariant2 value;
-  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3 extends PatchEdgeConfigItemsRequestItemsItem {
+final class PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3
+    extends PatchEdgeConfigItemsRequestItemsItem {
   final PatchEdgeConfigItemsRequestItemsItemVariant3 value;
-  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const PatchEdgeConfigItemsRequestItemsItemPatchEdgeConfigItemsRequestItemsItemVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

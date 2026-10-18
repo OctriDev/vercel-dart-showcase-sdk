@@ -5,186 +5,236 @@ part of 'inline.dart';
 
 // Inline operation models (part 571)
 final class UpdateProjectResponseResourceConfigIsNSNBDisabled {
-
   final bool value;
 
   const UpdateProjectResponseResourceConfigIsNSNBDisabled._(this.value);
 
-  factory UpdateProjectResponseResourceConfigIsNSNBDisabled.fromJson(bool value) => UpdateProjectResponseResourceConfigIsNSNBDisabled._(value);
+  factory UpdateProjectResponseResourceConfigIsNSNBDisabled.fromJson(
+          bool value) =>
+      UpdateProjectResponseResourceConfigIsNSNBDisabled._(value);
 
-  static const false_ = UpdateProjectResponseResourceConfigIsNSNBDisabled._(false);
-  static const true_ = UpdateProjectResponseResourceConfigIsNSNBDisabled._(true);
+  static const false_ =
+      UpdateProjectResponseResourceConfigIsNSNBDisabled._(false);
+  static const true_ =
+      UpdateProjectResponseResourceConfigIsNSNBDisabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseResourceConfigIsNSNBDisabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseResourceConfigIsNSNBDisabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.
 final class UpdateProjectResponseRollingReleaseCanaryResponseHeader {
-
   final bool value;
 
   const UpdateProjectResponseRollingReleaseCanaryResponseHeader._(this.value);
 
-  factory UpdateProjectResponseRollingReleaseCanaryResponseHeader.fromJson(bool value) => UpdateProjectResponseRollingReleaseCanaryResponseHeader._(value);
+  factory UpdateProjectResponseRollingReleaseCanaryResponseHeader.fromJson(
+          bool value) =>
+      UpdateProjectResponseRollingReleaseCanaryResponseHeader._(value);
 
-  static const false_ = UpdateProjectResponseRollingReleaseCanaryResponseHeader._(false);
-  static const true_ = UpdateProjectResponseRollingReleaseCanaryResponseHeader._(true);
+  static const false_ =
+      UpdateProjectResponseRollingReleaseCanaryResponseHeader._(false);
+  static const true_ =
+      UpdateProjectResponseRollingReleaseCanaryResponseHeader._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseRollingReleaseCanaryResponseHeader && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseRollingReleaseCanaryResponseHeader &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// What to do when the gate trips: pause the rollout, or roll it back.
 final class UpdateProjectResponseRollingReleaseGateAction {
-
   final String value;
 
   const UpdateProjectResponseRollingReleaseGateAction._(this.value);
 
-  factory UpdateProjectResponseRollingReleaseGateAction.fromJson(String value) => UpdateProjectResponseRollingReleaseGateAction._(value);
+  factory UpdateProjectResponseRollingReleaseGateAction.fromJson(
+          String value) =>
+      UpdateProjectResponseRollingReleaseGateAction._(value);
 
   static const pause = UpdateProjectResponseRollingReleaseGateAction._('pause');
-  static const rollback = UpdateProjectResponseRollingReleaseGateAction._('rollback');
+  static const rollback =
+      UpdateProjectResponseRollingReleaseGateAction._('rollback');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseRollingReleaseGateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseRollingReleaseGateAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The metric this check evaluates.
 final class UpdateProjectResponseRollingReleaseGateChecksItemType {
-
   final String value;
 
   const UpdateProjectResponseRollingReleaseGateChecksItemType._(this.value);
 
-  factory UpdateProjectResponseRollingReleaseGateChecksItemType.fromJson(String value) => UpdateProjectResponseRollingReleaseGateChecksItemType._(value);
+  factory UpdateProjectResponseRollingReleaseGateChecksItemType.fromJson(
+          String value) =>
+      UpdateProjectResponseRollingReleaseGateChecksItemType._(value);
 
-  static const errorRate5xx = UpdateProjectResponseRollingReleaseGateChecksItemType._('error-rate-5xx');
+  static const errorRate5xx =
+      UpdateProjectResponseRollingReleaseGateChecksItemType._('error-rate-5xx');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseRollingReleaseGateChecksItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseRollingReleaseGateChecksItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// When true, a tripped gate is only reported — {@link action} is not taken.
 final class UpdateProjectResponseRollingReleaseGateDryRun {
-
   final bool value;
 
   const UpdateProjectResponseRollingReleaseGateDryRun._(this.value);
 
-  factory UpdateProjectResponseRollingReleaseGateDryRun.fromJson(bool value) => UpdateProjectResponseRollingReleaseGateDryRun._(value);
+  factory UpdateProjectResponseRollingReleaseGateDryRun.fromJson(bool value) =>
+      UpdateProjectResponseRollingReleaseGateDryRun._(value);
 
   static const false_ = UpdateProjectResponseRollingReleaseGateDryRun._(false);
   static const true_ = UpdateProjectResponseRollingReleaseGateDryRun._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseRollingReleaseGateDryRun && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseRollingReleaseGateDryRun &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether automated gating is enabled for this project's rollouts.
 final class UpdateProjectResponseRollingReleaseGateEnabled {
-
   final bool value;
 
   const UpdateProjectResponseRollingReleaseGateEnabled._(this.value);
 
-  factory UpdateProjectResponseRollingReleaseGateEnabled.fromJson(bool value) => UpdateProjectResponseRollingReleaseGateEnabled._(value);
+  factory UpdateProjectResponseRollingReleaseGateEnabled.fromJson(bool value) =>
+      UpdateProjectResponseRollingReleaseGateEnabled._(value);
 
   static const false_ = UpdateProjectResponseRollingReleaseGateEnabled._(false);
   static const true_ = UpdateProjectResponseRollingReleaseGateEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseRollingReleaseGateEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseRollingReleaseGateEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to linearly shift traffic over the duration of this stage
 final class UpdateProjectResponseRollingReleaseStagesItemLinearShift {
-
   final bool value;
 
   const UpdateProjectResponseRollingReleaseStagesItemLinearShift._(this.value);
 
-  factory UpdateProjectResponseRollingReleaseStagesItemLinearShift.fromJson(bool value) => UpdateProjectResponseRollingReleaseStagesItemLinearShift._(value);
+  factory UpdateProjectResponseRollingReleaseStagesItemLinearShift.fromJson(
+          bool value) =>
+      UpdateProjectResponseRollingReleaseStagesItemLinearShift._(value);
 
-  static const false_ = UpdateProjectResponseRollingReleaseStagesItemLinearShift._(false);
-  static const true_ = UpdateProjectResponseRollingReleaseStagesItemLinearShift._(true);
+  static const false_ =
+      UpdateProjectResponseRollingReleaseStagesItemLinearShift._(false);
+  static const true_ =
+      UpdateProjectResponseRollingReleaseStagesItemLinearShift._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseRollingReleaseStagesItemLinearShift && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseRollingReleaseStagesItemLinearShift &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage requires manual approval to proceed
 final class UpdateProjectResponseRollingReleaseStagesItemRequireApproval {
-
   final bool value;
 
-  const UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(this.value);
+  const UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(
+      this.value);
 
-  factory UpdateProjectResponseRollingReleaseStagesItemRequireApproval.fromJson(bool value) => UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(value);
+  factory UpdateProjectResponseRollingReleaseStagesItemRequireApproval.fromJson(
+          bool value) =>
+      UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(value);
 
-  static const false_ = UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(false);
-  static const true_ = UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(true);
+  static const false_ =
+      UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(false);
+  static const true_ =
+      UpdateProjectResponseRollingReleaseStagesItemRequireApproval._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseRollingReleaseStagesItemRequireApproval && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseRollingReleaseStagesItemRequireApproval &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSandboxFailoverRegionsItem {
-
   final String value;
 
   const UpdateProjectResponseSandboxFailoverRegionsItem._(this.value);
 
-  factory UpdateProjectResponseSandboxFailoverRegionsItem.fromJson(String value) => UpdateProjectResponseSandboxFailoverRegionsItem._(value);
+  factory UpdateProjectResponseSandboxFailoverRegionsItem.fromJson(
+          String value) =>
+      UpdateProjectResponseSandboxFailoverRegionsItem._(value);
 
   static const arn1 = UpdateProjectResponseSandboxFailoverRegionsItem._('arn1');
   static const bom1 = UpdateProjectResponseSandboxFailoverRegionsItem._('bom1');
@@ -208,21 +258,25 @@ final class UpdateProjectResponseSandboxFailoverRegionsItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSandboxFailoverRegionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSandboxFailoverRegionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSandboxRegion {
-
   final String value;
 
   const UpdateProjectResponseSandboxRegion._(this.value);
 
-  factory UpdateProjectResponseSandboxRegion.fromJson(String value) => UpdateProjectResponseSandboxRegion._(value);
+  factory UpdateProjectResponseSandboxRegion.fromJson(String value) =>
+      UpdateProjectResponseSandboxRegion._(value);
 
   static const arn1 = UpdateProjectResponseSandboxRegion._('arn1');
   static const bom1 = UpdateProjectResponseSandboxRegion._('bom1');
@@ -246,31 +300,38 @@ final class UpdateProjectResponseSandboxRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSandboxRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSandboxRegion && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSecurityAttackModeEnabled {
-
   final bool value;
 
   const UpdateProjectResponseSecurityAttackModeEnabled._(this.value);
 
-  factory UpdateProjectResponseSecurityAttackModeEnabled.fromJson(bool value) => UpdateProjectResponseSecurityAttackModeEnabled._(value);
+  factory UpdateProjectResponseSecurityAttackModeEnabled.fromJson(bool value) =>
+      UpdateProjectResponseSecurityAttackModeEnabled._(value);
 
   static const false_ = UpdateProjectResponseSecurityAttackModeEnabled._(false);
   static const true_ = UpdateProjectResponseSecurityAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSecurityAttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSecurityAttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

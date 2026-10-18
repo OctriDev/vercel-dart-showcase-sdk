@@ -7,287 +7,594 @@ part of 'billing.dart';
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The line items that make up the Purchase Intent.
-  final SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>> lineItems;
+  final SdkOptional<
+          List<
+              BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>>
+      lineItems;
+
   /// The ID of the Orb customer to create
   final String orbCustomerId;
+
   /// The external ID of the Orb customer to create
   final String orbExternalCustomerId;
+
   /// The external ID of the Orb plan to create
   final String orbExternalPlanId;
+
   /// The ID of the pending subscription change
   final SdkOptional<String> orbPendingSubscriptionChangeId;
+
   /// The ID of the Orb plan to create
   final String orbPlanId;
+
   /// The ID of the Orb subscription to create
   final String orbSubscriptionId;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options({this.lineItems = const SdkOmitted(), required this.orbCustomerId, required this.orbExternalCustomerId, required this.orbExternalPlanId, this.orbPendingSubscriptionChangeId = const SdkOmitted(), required this.orbPlanId, required this.orbSubscriptionId});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options(
+      {this.lineItems = const SdkOmitted(),
+      required this.orbCustomerId,
+      required this.orbExternalCustomerId,
+      required this.orbExternalPlanId,
+      this.orbPendingSubscriptionChangeId = const SdkOmitted(),
+      required this.orbPlanId,
+      required this.orbSubscriptionId});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options Function({SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>> lineItems, String orbCustomerId, String orbExternalCustomerId, String orbExternalPlanId, SdkOptional<String> orbPendingSubscriptionChangeId, String orbPlanId, String orbSubscriptionId}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options Function(
+      {SdkOptional<
+              List<
+                  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>>
+          lineItems,
+      String orbCustomerId,
+      String orbExternalCustomerId,
+      String orbExternalPlanId,
+      SdkOptional<String> orbPendingSubscriptionChangeId,
+      String orbPlanId,
+      String orbSubscriptionId}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options _copyWith({Object? lineItems = sdkOmittedValue, Object? orbCustomerId = sdkOmittedValue, Object? orbExternalCustomerId = sdkOmittedValue, Object? orbExternalPlanId = sdkOmittedValue, Object? orbPendingSubscriptionChangeId = sdkOmittedValue, Object? orbPlanId = sdkOmittedValue, Object? orbSubscriptionId = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options(
-    lineItems: identical(lineItems, sdkOmittedValue) ? this.lineItems : lineItems as SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>>,
-    orbCustomerId: identical(orbCustomerId, sdkOmittedValue) ? this.orbCustomerId : orbCustomerId as String,
-    orbExternalCustomerId: identical(orbExternalCustomerId, sdkOmittedValue) ? this.orbExternalCustomerId : orbExternalCustomerId as String,
-    orbExternalPlanId: identical(orbExternalPlanId, sdkOmittedValue) ? this.orbExternalPlanId : orbExternalPlanId as String,
-    orbPendingSubscriptionChangeId: identical(orbPendingSubscriptionChangeId, sdkOmittedValue) ? this.orbPendingSubscriptionChangeId : orbPendingSubscriptionChangeId as SdkOptional<String>,
-    orbPlanId: identical(orbPlanId, sdkOmittedValue) ? this.orbPlanId : orbPlanId as String,
-    orbSubscriptionId: identical(orbSubscriptionId, sdkOmittedValue) ? this.orbSubscriptionId : orbSubscriptionId as String,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options
+      _copyWith(
+              {Object? lineItems = sdkOmittedValue,
+              Object? orbCustomerId = sdkOmittedValue,
+              Object? orbExternalCustomerId = sdkOmittedValue,
+              Object? orbExternalPlanId = sdkOmittedValue,
+              Object? orbPendingSubscriptionChangeId = sdkOmittedValue,
+              Object? orbPlanId = sdkOmittedValue,
+              Object? orbSubscriptionId = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options(
+            lineItems: identical(lineItems, sdkOmittedValue)
+                ? this.lineItems
+                : lineItems as SdkOptional<
+                    List<
+                        BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>>,
+            orbCustomerId: identical(orbCustomerId, sdkOmittedValue)
+                ? this.orbCustomerId
+                : orbCustomerId as String,
+            orbExternalCustomerId:
+                identical(orbExternalCustomerId, sdkOmittedValue)
+                    ? this.orbExternalCustomerId
+                    : orbExternalCustomerId as String,
+            orbExternalPlanId: identical(orbExternalPlanId, sdkOmittedValue)
+                ? this.orbExternalPlanId
+                : orbExternalPlanId as String,
+            orbPendingSubscriptionChangeId:
+                identical(orbPendingSubscriptionChangeId, sdkOmittedValue)
+                    ? this.orbPendingSubscriptionChangeId
+                    : orbPendingSubscriptionChangeId as SdkOptional<String>,
+            orbPlanId: identical(orbPlanId, sdkOmittedValue)
+                ? this.orbPlanId
+                : orbPlanId as String,
+            orbSubscriptionId: identical(orbSubscriptionId, sdkOmittedValue)
+                ? this.orbSubscriptionId
+                : orbSubscriptionId as String,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options(
-    lineItems: json['lineItems'] != null ? SdkPresent(((json['lineItems'] as List?)?.map((e) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    orbCustomerId: (json['orbCustomerId'] as String?)!,
-    orbExternalCustomerId: (json['orbExternalCustomerId'] as String?)!,
-    orbExternalPlanId: (json['orbExternalPlanId'] as String?)!,
-    orbPendingSubscriptionChangeId: json['orbPendingSubscriptionChangeId'] != null ? SdkPresent((json['orbPendingSubscriptionChangeId'] as String?)!) : const SdkOmitted(),
-    orbPlanId: (json['orbPlanId'] as String?)!,
-    orbSubscriptionId: (json['orbSubscriptionId'] as String?)!,
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options(
+        lineItems: json['lineItems'] != null
+            ? SdkPresent(((json['lineItems'] as List?)
+                ?.map((e) =>
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        orbCustomerId: (json['orbCustomerId'] as String?)!,
+        orbExternalCustomerId: (json['orbExternalCustomerId'] as String?)!,
+        orbExternalPlanId: (json['orbExternalPlanId'] as String?)!,
+        orbPendingSubscriptionChangeId:
+            json['orbPendingSubscriptionChangeId'] != null
+                ? SdkPresent(
+                    (json['orbPendingSubscriptionChangeId'] as String?)!)
+                : const SdkOmitted(),
+        orbPlanId: (json['orbPlanId'] as String?)!,
+        orbSubscriptionId: (json['orbSubscriptionId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (lineItems) {
-      SdkPresent<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>>(value: final value) => {'lineItems': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'orbCustomerId': orbCustomerId,
-    'orbExternalCustomerId': orbExternalCustomerId,
-    'orbExternalPlanId': orbExternalPlanId,
-    ...switch (orbPendingSubscriptionChangeId) {
-      SdkPresent<String>(value: final value) => {'orbPendingSubscriptionChangeId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'orbPlanId': orbPlanId,
-    'orbSubscriptionId': orbSubscriptionId,
-  };
+        ...switch (lineItems) {
+          SdkPresent<
+                List<
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5OptionsLineItemsItem>>(
+            value: final value
+          ) =>
+            {
+              'lineItems': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'orbCustomerId': orbCustomerId,
+        'orbExternalCustomerId': orbExternalCustomerId,
+        'orbExternalPlanId': orbExternalPlanId,
+        ...switch (orbPendingSubscriptionChangeId) {
+          SdkPresent<String>(value: final value) => {
+              'orbPendingSubscriptionChangeId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'orbPlanId': orbPlanId,
+        'orbSubscriptionId': orbSubscriptionId,
+      };
 }
 
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The ID of the pending subscription change
   final SdkOptional<String> pendingSubscriptionChangeId;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output({this.pendingSubscriptionChangeId = const SdkOmitted()});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output(
+      {this.pendingSubscriptionChangeId = const SdkOmitted()});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output Function({SdkOptional<String> pendingSubscriptionChangeId}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output Function(
+          {SdkOptional<String> pendingSubscriptionChangeId})
+      get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output _copyWith({Object? pendingSubscriptionChangeId = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output(
-    pendingSubscriptionChangeId: identical(pendingSubscriptionChangeId, sdkOmittedValue) ? this.pendingSubscriptionChangeId : pendingSubscriptionChangeId as SdkOptional<String>,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output _copyWith(
+          {Object? pendingSubscriptionChangeId = sdkOmittedValue}) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output(
+        pendingSubscriptionChangeId:
+            identical(pendingSubscriptionChangeId, sdkOmittedValue)
+                ? this.pendingSubscriptionChangeId
+                : pendingSubscriptionChangeId as SdkOptional<String>,
+      );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output(
-    pendingSubscriptionChangeId: json['pendingSubscriptionChangeId'] != null ? SdkPresent((json['pendingSubscriptionChangeId'] as String?)!) : const SdkOmitted(),
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output(
+        pendingSubscriptionChangeId: json['pendingSubscriptionChangeId'] != null
+            ? SdkPresent((json['pendingSubscriptionChangeId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (pendingSubscriptionChangeId) {
-      SdkPresent<String>(value: final value) => {'pendingSubscriptionChangeId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (pendingSubscriptionChangeId) {
+          SdkPresent<String>(value: final value) => {
+              'pendingSubscriptionChangeId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The configuration for a credit purchase
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options options;
-  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output output;
+  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options
+      options;
+  final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output
+      output;
   final BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type type_;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5({required this.options, required this.output, required this.type_});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5(
+      {required this.options, required this.output, required this.type_});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5 Function({BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options options, BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output output, BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type type_}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5 Function(
+      {BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options
+          options,
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output
+          output,
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type
+          type_}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5 _copyWith({Object? options = sdkOmittedValue, Object? output = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5(
-    options: identical(options, sdkOmittedValue) ? this.options : options as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options,
-    output: identical(output, sdkOmittedValue) ? this.output : output as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5 _copyWith(
+          {Object? options = sdkOmittedValue,
+          Object? output = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5(
+        options: identical(options, sdkOmittedValue)
+            ? this.options
+            : options
+                as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options,
+        output: identical(output, sdkOmittedValue)
+            ? this.output
+            : output
+                as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type,
+      );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5(
-    options: (json['options'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options.fromJson(json['options'] as Map<String, dynamic>) : null)!,
-    output: (json['output'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output.fromJson(json['output'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5(
+        options: (json['options'] != null
+            ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Options
+                .fromJson(json['options'] as Map<String, dynamic>)
+            : null)!,
+        output: (json['output'] != null
+            ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Output
+                .fromJson(json['output'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'options': options.toJson(),
-    'output': output.toJson(),
-    'type': type_.toJson(),
-  };
+        'options': options.toJson(),
+        'output': output.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 /// The current plan item quantities
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The ID of the current plan item to set the quantity for
   final String planItemId;
+
   /// The nonnegative integer quantity for the current plan item
   final double quantity;
+
   /// The resource IDs associated with the current plan item quantity
   final SdkOptional<List<String>> resourceIds;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem({required this.planItemId, required this.quantity, this.resourceIds = const SdkOmitted()});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem(
+      {required this.planItemId,
+      required this.quantity,
+      this.resourceIds = const SdkOmitted()});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem Function({String planItemId, double quantity, SdkOptional<List<String>> resourceIds}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem Function(
+      {String planItemId,
+      double quantity,
+      SdkOptional<List<String>> resourceIds}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem _copyWith({Object? planItemId = sdkOmittedValue, Object? quantity = sdkOmittedValue, Object? resourceIds = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem(
-    planItemId: identical(planItemId, sdkOmittedValue) ? this.planItemId : planItemId as String,
-    quantity: identical(quantity, sdkOmittedValue) ? this.quantity : quantity as double,
-    resourceIds: identical(resourceIds, sdkOmittedValue) ? this.resourceIds : resourceIds as SdkOptional<List<String>>,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem
+      _copyWith(
+              {Object? planItemId = sdkOmittedValue,
+              Object? quantity = sdkOmittedValue,
+              Object? resourceIds = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem(
+            planItemId: identical(planItemId, sdkOmittedValue)
+                ? this.planItemId
+                : planItemId as String,
+            quantity: identical(quantity, sdkOmittedValue)
+                ? this.quantity
+                : quantity as double,
+            resourceIds: identical(resourceIds, sdkOmittedValue)
+                ? this.resourceIds
+                : resourceIds as SdkOptional<List<String>>,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem(
-    planItemId: (json['planItemId'] as String?)!,
-    quantity: ((json['quantity'] as num?)?.toDouble())!,
-    resourceIds: json['resourceIds'] != null ? SdkPresent(((json['resourceIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem(
+        planItemId: (json['planItemId'] as String?)!,
+        quantity: ((json['quantity'] as num?)?.toDouble())!,
+        resourceIds: json['resourceIds'] != null
+            ? SdkPresent(((json['resourceIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'planItemId': planItemId,
-    'quantity': quantity,
-    ...switch (resourceIds) {
-      SdkPresent<List<String>>(value: final value) => {'resourceIds': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'planItemId': planItemId,
+        'quantity': quantity,
+        ...switch (resourceIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'resourceIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The current plan being replaced by this purchase
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The end of the current plan billing cycle
   final String currentCycleEndDate;
+
   /// The Orb subscription ID currently active for the owner on the source plan
   final String orbSubscriptionId;
+
   /// The ID of the plan currently assigned
   final String planId;
+
   /// The current plan item quantities
-  final SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>> planItemQuantities;
+  final SdkOptional<
+          List<
+              BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>>
+      planItemQuantities;
+
   /// The rate variant currently assigned
   final SdkOptional<String> rateVariantKey;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan({required this.currentCycleEndDate, required this.orbSubscriptionId, required this.planId, this.planItemQuantities = const SdkOmitted(), this.rateVariantKey = const SdkOmitted()});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan(
+      {required this.currentCycleEndDate,
+      required this.orbSubscriptionId,
+      required this.planId,
+      this.planItemQuantities = const SdkOmitted(),
+      this.rateVariantKey = const SdkOmitted()});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan Function({String currentCycleEndDate, String orbSubscriptionId, String planId, SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>> planItemQuantities, SdkOptional<String> rateVariantKey}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan Function(
+      {String currentCycleEndDate,
+      String orbSubscriptionId,
+      String planId,
+      SdkOptional<
+              List<
+                  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>>
+          planItemQuantities,
+      SdkOptional<String> rateVariantKey}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan _copyWith({Object? currentCycleEndDate = sdkOmittedValue, Object? orbSubscriptionId = sdkOmittedValue, Object? planId = sdkOmittedValue, Object? planItemQuantities = sdkOmittedValue, Object? rateVariantKey = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan(
-    currentCycleEndDate: identical(currentCycleEndDate, sdkOmittedValue) ? this.currentCycleEndDate : currentCycleEndDate as String,
-    orbSubscriptionId: identical(orbSubscriptionId, sdkOmittedValue) ? this.orbSubscriptionId : orbSubscriptionId as String,
-    planId: identical(planId, sdkOmittedValue) ? this.planId : planId as String,
-    planItemQuantities: identical(planItemQuantities, sdkOmittedValue) ? this.planItemQuantities : planItemQuantities as SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>>,
-    rateVariantKey: identical(rateVariantKey, sdkOmittedValue) ? this.rateVariantKey : rateVariantKey as SdkOptional<String>,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan
+      _copyWith(
+              {Object? currentCycleEndDate = sdkOmittedValue,
+              Object? orbSubscriptionId = sdkOmittedValue,
+              Object? planId = sdkOmittedValue,
+              Object? planItemQuantities = sdkOmittedValue,
+              Object? rateVariantKey = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan(
+            currentCycleEndDate: identical(currentCycleEndDate, sdkOmittedValue)
+                ? this.currentCycleEndDate
+                : currentCycleEndDate as String,
+            orbSubscriptionId: identical(orbSubscriptionId, sdkOmittedValue)
+                ? this.orbSubscriptionId
+                : orbSubscriptionId as String,
+            planId: identical(planId, sdkOmittedValue)
+                ? this.planId
+                : planId as String,
+            planItemQuantities: identical(planItemQuantities, sdkOmittedValue)
+                ? this.planItemQuantities
+                : planItemQuantities as SdkOptional<
+                    List<
+                        BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>>,
+            rateVariantKey: identical(rateVariantKey, sdkOmittedValue)
+                ? this.rateVariantKey
+                : rateVariantKey as SdkOptional<String>,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan(
-    currentCycleEndDate: (json['currentCycleEndDate'] as String?)!,
-    orbSubscriptionId: (json['orbSubscriptionId'] as String?)!,
-    planId: (json['planId'] as String?)!,
-    planItemQuantities: json['planItemQuantities'] != null ? SdkPresent(((json['planItemQuantities'] as List?)?.map((e) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    rateVariantKey: json['rateVariantKey'] != null ? SdkPresent((json['rateVariantKey'] as String?)!) : const SdkOmitted(),
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan(
+        currentCycleEndDate: (json['currentCycleEndDate'] as String?)!,
+        orbSubscriptionId: (json['orbSubscriptionId'] as String?)!,
+        planId: (json['planId'] as String?)!,
+        planItemQuantities: json['planItemQuantities'] != null
+            ? SdkPresent(((json['planItemQuantities'] as List?)
+                ?.map((e) =>
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        rateVariantKey: json['rateVariantKey'] != null
+            ? SdkPresent((json['rateVariantKey'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'currentCycleEndDate': currentCycleEndDate,
-    'orbSubscriptionId': orbSubscriptionId,
-    'planId': planId,
-    ...switch (planItemQuantities) {
-      SdkPresent<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>>(value: final value) => {'planItemQuantities': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rateVariantKey) {
-      SdkPresent<String>(value: final value) => {'rateVariantKey': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'currentCycleEndDate': currentCycleEndDate,
+        'orbSubscriptionId': orbSubscriptionId,
+        'planId': planId,
+        ...switch (planItemQuantities) {
+          SdkPresent<
+                List<
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlanPlanItemQuantitiesItem>>(
+            value: final value
+          ) =>
+            {
+              'planItemQuantities': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rateVariantKey) {
+          SdkPresent<String>(value: final value) => {
+              'rateVariantKey': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The plan item quantities to set for the subscription
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The ID of the plan item to set the quantity for
   final String planItemId;
+
   /// The nonnegative integer quantity for the plan item
   final double quantity;
+
   /// The resource IDs to associate with the plan item quantity
   final SdkOptional<List<String>> resourceIds;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem({required this.planItemId, required this.quantity, this.resourceIds = const SdkOmitted()});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem(
+      {required this.planItemId,
+      required this.quantity,
+      this.resourceIds = const SdkOmitted()});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem Function({String planItemId, double quantity, SdkOptional<List<String>> resourceIds}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem Function(
+      {String planItemId,
+      double quantity,
+      SdkOptional<List<String>> resourceIds}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem _copyWith({Object? planItemId = sdkOmittedValue, Object? quantity = sdkOmittedValue, Object? resourceIds = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem(
-    planItemId: identical(planItemId, sdkOmittedValue) ? this.planItemId : planItemId as String,
-    quantity: identical(quantity, sdkOmittedValue) ? this.quantity : quantity as double,
-    resourceIds: identical(resourceIds, sdkOmittedValue) ? this.resourceIds : resourceIds as SdkOptional<List<String>>,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem
+      _copyWith(
+              {Object? planItemId = sdkOmittedValue,
+              Object? quantity = sdkOmittedValue,
+              Object? resourceIds = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem(
+            planItemId: identical(planItemId, sdkOmittedValue)
+                ? this.planItemId
+                : planItemId as String,
+            quantity: identical(quantity, sdkOmittedValue)
+                ? this.quantity
+                : quantity as double,
+            resourceIds: identical(resourceIds, sdkOmittedValue)
+                ? this.resourceIds
+                : resourceIds as SdkOptional<List<String>>,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem(
-    planItemId: (json['planItemId'] as String?)!,
-    quantity: ((json['quantity'] as num?)?.toDouble())!,
-    resourceIds: json['resourceIds'] != null ? SdkPresent(((json['resourceIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem(
+        planItemId: (json['planItemId'] as String?)!,
+        quantity: ((json['quantity'] as num?)?.toDouble())!,
+        resourceIds: json['resourceIds'] != null
+            ? SdkPresent(((json['resourceIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'planItemId': planItemId,
-    'quantity': quantity,
-    ...switch (resourceIds) {
-      SdkPresent<List<String>>(value: final value) => {'resourceIds': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'planItemId': planItemId,
+        'quantity': quantity,
+        ...switch (resourceIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'resourceIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Purchase configuration specific options
 class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The current plan being replaced by this purchase
-  final SdkOptional<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan> fromPlan;
+  final SdkOptional<
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan>
+      fromPlan;
+
   /// The ID of the plan to subscribe to
   final String planId;
+
   /// The plan item quantities to set for the subscription
-  final SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>> planItemQuantities;
+  final SdkOptional<
+          List<
+              BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>>
+      planItemQuantities;
+
   /// The rate variant key to apply to the subscription
   final SdkOptional<String> rateVariantKey;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options({this.fromPlan = const SdkOmitted(), required this.planId, this.planItemQuantities = const SdkOmitted(), this.rateVariantKey = const SdkOmitted()});
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options(
+      {this.fromPlan = const SdkOmitted(),
+      required this.planId,
+      this.planItemQuantities = const SdkOmitted(),
+      this.rateVariantKey = const SdkOmitted()});
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options Function({SdkOptional<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan> fromPlan, String planId, SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>> planItemQuantities, SdkOptional<String> rateVariantKey}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options Function(
+      {SdkOptional<
+              BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan>
+          fromPlan,
+      String planId,
+      SdkOptional<
+              List<
+                  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>>
+          planItemQuantities,
+      SdkOptional<String> rateVariantKey}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options _copyWith({Object? fromPlan = sdkOmittedValue, Object? planId = sdkOmittedValue, Object? planItemQuantities = sdkOmittedValue, Object? rateVariantKey = sdkOmittedValue}) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options(
-    fromPlan: identical(fromPlan, sdkOmittedValue) ? this.fromPlan : fromPlan as SdkOptional<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan>,
-    planId: identical(planId, sdkOmittedValue) ? this.planId : planId as String,
-    planItemQuantities: identical(planItemQuantities, sdkOmittedValue) ? this.planItemQuantities : planItemQuantities as SdkOptional<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>>,
-    rateVariantKey: identical(rateVariantKey, sdkOmittedValue) ? this.rateVariantKey : rateVariantKey as SdkOptional<String>,
-  );
+  BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options
+      _copyWith(
+              {Object? fromPlan = sdkOmittedValue,
+              Object? planId = sdkOmittedValue,
+              Object? planItemQuantities = sdkOmittedValue,
+              Object? rateVariantKey = sdkOmittedValue}) =>
+          BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options(
+            fromPlan: identical(fromPlan, sdkOmittedValue)
+                ? this.fromPlan
+                : fromPlan as SdkOptional<
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan>,
+            planId: identical(planId, sdkOmittedValue)
+                ? this.planId
+                : planId as String,
+            planItemQuantities: identical(planItemQuantities, sdkOmittedValue)
+                ? this.planItemQuantities
+                : planItemQuantities as SdkOptional<
+                    List<
+                        BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>>,
+            rateVariantKey: identical(rateVariantKey, sdkOmittedValue)
+                ? this.rateVariantKey
+                : rateVariantKey as SdkOptional<String>,
+          );
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options(
-    fromPlan: json['fromPlan'] != null ? SdkPresent((json['fromPlan'] != null ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan.fromJson(json['fromPlan'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    planId: (json['planId'] as String?)!,
-    planItemQuantities: json['planItemQuantities'] != null ? SdkPresent(((json['planItemQuantities'] as List?)?.map((e) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    rateVariantKey: json['rateVariantKey'] != null ? SdkPresent((json['rateVariantKey'] as String?)!) : const SdkOmitted(),
-  );
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options.fromJson(
+          Map<String, dynamic> json) =>
+      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6Options(
+        fromPlan: json['fromPlan'] != null
+            ? SdkPresent((json['fromPlan'] != null
+                ? BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan
+                    .fromJson(json['fromPlan'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        planId: (json['planId'] as String?)!,
+        planItemQuantities: json['planItemQuantities'] != null
+            ? SdkPresent(((json['planItemQuantities'] as List?)
+                ?.map((e) =>
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        rateVariantKey: json['rateVariantKey'] != null
+            ? SdkPresent((json['rateVariantKey'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (fromPlan) {
-      SdkPresent<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan>(value: final value) => {'fromPlan': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'planId': planId,
-    ...switch (planItemQuantities) {
-      SdkPresent<List<BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>>(value: final value) => {'planItemQuantities': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rateVariantKey) {
-      SdkPresent<String>(value: final value) => {'rateVariantKey': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (fromPlan) {
+          SdkPresent<
+                BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsFromPlan>(
+            value: final value
+          ) =>
+            {
+              'fromPlan': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'planId': planId,
+        ...switch (planItemQuantities) {
+          SdkPresent<
+                List<
+                    BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant6OptionsPlanItemQuantitiesItem>>(
+            value: final value
+          ) =>
+            {
+              'planItemQuantities': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rateVariantKey) {
+          SdkPresent<String>(value: final value) => {
+              'rateVariantKey': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

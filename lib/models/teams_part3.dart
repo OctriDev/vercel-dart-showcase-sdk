@@ -8,91 +8,188 @@ part of 'teams.dart';
 class TeamDeploymentPolicy {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional array value serialized in the `deploymentSources` wire field.
-  final SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>> deploymentSources;
+  final SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>
+      deploymentSources;
+
   /// Optional array value serialized in the `gitSources` wire field.
   final SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>> gitSources;
 
-  const TeamDeploymentPolicy({this.deploymentSources = const SdkOmitted(), this.gitSources = const SdkOmitted()});
+  const TeamDeploymentPolicy(
+      {this.deploymentSources = const SdkOmitted(),
+      this.gitSources = const SdkOmitted()});
 
-  TeamDeploymentPolicy Function({SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>> deploymentSources, SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>> gitSources}) get copyWith => _copyWith;
+  TeamDeploymentPolicy Function(
+          {SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>
+              deploymentSources,
+          SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>> gitSources})
+      get copyWith => _copyWith;
 
-  TeamDeploymentPolicy _copyWith({Object? deploymentSources = sdkOmittedValue, Object? gitSources = sdkOmittedValue}) => TeamDeploymentPolicy(
-    deploymentSources: identical(deploymentSources, sdkOmittedValue) ? this.deploymentSources : deploymentSources as SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>,
-    gitSources: identical(gitSources, sdkOmittedValue) ? this.gitSources : gitSources as SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>>,
-  );
+  TeamDeploymentPolicy _copyWith(
+          {Object? deploymentSources = sdkOmittedValue,
+          Object? gitSources = sdkOmittedValue}) =>
+      TeamDeploymentPolicy(
+        deploymentSources: identical(deploymentSources, sdkOmittedValue)
+            ? this.deploymentSources
+            : deploymentSources
+                as SdkOptional<List<TeamDeploymentPolicyDeploymentSourcesItem>>,
+        gitSources: identical(gitSources, sdkOmittedValue)
+            ? this.gitSources
+            : gitSources
+                as SdkOptional<List<TeamDeploymentPolicyGitSourcesItem>>,
+      );
 
-  factory TeamDeploymentPolicy.fromJson(Map<String, dynamic> json) => TeamDeploymentPolicy(
-    deploymentSources: json['deploymentSources'] != null ? SdkPresent(((json['deploymentSources'] as List?)?.map((e) => TeamDeploymentPolicyDeploymentSourcesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    gitSources: json['gitSources'] != null ? SdkPresent(((json['gitSources'] as List?)?.map((e) => TeamDeploymentPolicyGitSourcesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory TeamDeploymentPolicy.fromJson(Map<String, dynamic> json) =>
+      TeamDeploymentPolicy(
+        deploymentSources: json['deploymentSources'] != null
+            ? SdkPresent(((json['deploymentSources'] as List?)
+                ?.map((e) => TeamDeploymentPolicyDeploymentSourcesItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        gitSources: json['gitSources'] != null
+            ? SdkPresent(((json['gitSources'] as List?)
+                ?.map((e) => TeamDeploymentPolicyGitSourcesItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (deploymentSources) {
-      SdkPresent<List<TeamDeploymentPolicyDeploymentSourcesItem>>(value: final value) => {'deploymentSources': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitSources) {
-      SdkPresent<List<TeamDeploymentPolicyGitSourcesItem>>(value: final value) => {'gitSources': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (deploymentSources) {
+          SdkPresent<List<TeamDeploymentPolicyDeploymentSourcesItem>>(
+            value: final value
+          ) =>
+            {
+              'deploymentSources': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitSources) {
+          SdkPresent<List<TeamDeploymentPolicyGitSourcesItem>>(
+            value: final value
+          ) =>
+            {
+              'gitSources': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Pro deployment-storage pricing rollout cohort and milestones. Absent when the team has not been placed in a rollout cohort yet.
 class TeamDeploymentStorageRollout {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `cohort` wire field.
   final TeamDeploymentStorageRolloutCohort cohort;
+
   /// When team-wide metering was recorded for this rollout.
   final SdkOptional<double> meteredAt;
+
   /// Optional enumerated value serialized in the `meterReason` wire field.
   final SdkOptional<TeamDeploymentStorageRolloutMeterReason> meterReason;
+
   /// When the calendar retention-reduce migration applied 30d retention.
   final SdkOptional<double> retentionAppliedAt;
+
   /// When the customer chose "keep my retention" before reduce day.
   final SdkOptional<double> retentionOptOutAt;
 
-  const TeamDeploymentStorageRollout({required this.cohort, this.meteredAt = const SdkOmitted(), this.meterReason = const SdkOmitted(), this.retentionAppliedAt = const SdkOmitted(), this.retentionOptOutAt = const SdkOmitted()});
+  const TeamDeploymentStorageRollout(
+      {required this.cohort,
+      this.meteredAt = const SdkOmitted(),
+      this.meterReason = const SdkOmitted(),
+      this.retentionAppliedAt = const SdkOmitted(),
+      this.retentionOptOutAt = const SdkOmitted()});
 
-  TeamDeploymentStorageRollout Function({TeamDeploymentStorageRolloutCohort cohort, SdkOptional<double> meteredAt, SdkOptional<TeamDeploymentStorageRolloutMeterReason> meterReason, SdkOptional<double> retentionAppliedAt, SdkOptional<double> retentionOptOutAt}) get copyWith => _copyWith;
+  TeamDeploymentStorageRollout Function(
+      {TeamDeploymentStorageRolloutCohort cohort,
+      SdkOptional<double> meteredAt,
+      SdkOptional<TeamDeploymentStorageRolloutMeterReason> meterReason,
+      SdkOptional<double> retentionAppliedAt,
+      SdkOptional<double> retentionOptOutAt}) get copyWith => _copyWith;
 
-  TeamDeploymentStorageRollout _copyWith({Object? cohort = sdkOmittedValue, Object? meteredAt = sdkOmittedValue, Object? meterReason = sdkOmittedValue, Object? retentionAppliedAt = sdkOmittedValue, Object? retentionOptOutAt = sdkOmittedValue}) => TeamDeploymentStorageRollout(
-    cohort: identical(cohort, sdkOmittedValue) ? this.cohort : cohort as TeamDeploymentStorageRolloutCohort,
-    meteredAt: identical(meteredAt, sdkOmittedValue) ? this.meteredAt : meteredAt as SdkOptional<double>,
-    meterReason: identical(meterReason, sdkOmittedValue) ? this.meterReason : meterReason as SdkOptional<TeamDeploymentStorageRolloutMeterReason>,
-    retentionAppliedAt: identical(retentionAppliedAt, sdkOmittedValue) ? this.retentionAppliedAt : retentionAppliedAt as SdkOptional<double>,
-    retentionOptOutAt: identical(retentionOptOutAt, sdkOmittedValue) ? this.retentionOptOutAt : retentionOptOutAt as SdkOptional<double>,
-  );
+  TeamDeploymentStorageRollout _copyWith(
+          {Object? cohort = sdkOmittedValue,
+          Object? meteredAt = sdkOmittedValue,
+          Object? meterReason = sdkOmittedValue,
+          Object? retentionAppliedAt = sdkOmittedValue,
+          Object? retentionOptOutAt = sdkOmittedValue}) =>
+      TeamDeploymentStorageRollout(
+        cohort: identical(cohort, sdkOmittedValue)
+            ? this.cohort
+            : cohort as TeamDeploymentStorageRolloutCohort,
+        meteredAt: identical(meteredAt, sdkOmittedValue)
+            ? this.meteredAt
+            : meteredAt as SdkOptional<double>,
+        meterReason: identical(meterReason, sdkOmittedValue)
+            ? this.meterReason
+            : meterReason
+                as SdkOptional<TeamDeploymentStorageRolloutMeterReason>,
+        retentionAppliedAt: identical(retentionAppliedAt, sdkOmittedValue)
+            ? this.retentionAppliedAt
+            : retentionAppliedAt as SdkOptional<double>,
+        retentionOptOutAt: identical(retentionOptOutAt, sdkOmittedValue)
+            ? this.retentionOptOutAt
+            : retentionOptOutAt as SdkOptional<double>,
+      );
 
-  factory TeamDeploymentStorageRollout.fromJson(Map<String, dynamic> json) => TeamDeploymentStorageRollout(
-    cohort: (json['cohort'] != null ? TeamDeploymentStorageRolloutCohort.fromJson(json['cohort'] as String) : null)!,
-    meteredAt: json['meteredAt'] != null ? SdkPresent(((json['meteredAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    meterReason: json['meterReason'] != null ? SdkPresent((json['meterReason'] != null ? TeamDeploymentStorageRolloutMeterReason.fromJson(json['meterReason'] as String) : null)!) : const SdkOmitted(),
-    retentionAppliedAt: json['retentionAppliedAt'] != null ? SdkPresent(((json['retentionAppliedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    retentionOptOutAt: json['retentionOptOutAt'] != null ? SdkPresent(((json['retentionOptOutAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory TeamDeploymentStorageRollout.fromJson(Map<String, dynamic> json) =>
+      TeamDeploymentStorageRollout(
+        cohort: (json['cohort'] != null
+            ? TeamDeploymentStorageRolloutCohort.fromJson(
+                json['cohort'] as String)
+            : null)!,
+        meteredAt: json['meteredAt'] != null
+            ? SdkPresent(((json['meteredAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        meterReason: json['meterReason'] != null
+            ? SdkPresent((json['meterReason'] != null
+                ? TeamDeploymentStorageRolloutMeterReason.fromJson(
+                    json['meterReason'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        retentionAppliedAt: json['retentionAppliedAt'] != null
+            ? SdkPresent(((json['retentionAppliedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        retentionOptOutAt: json['retentionOptOutAt'] != null
+            ? SdkPresent(((json['retentionOptOutAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'cohort': cohort.toJson(),
-    ...switch (meteredAt) {
-      SdkPresent<double>(value: final value) => {'meteredAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (meterReason) {
-      SdkPresent<TeamDeploymentStorageRolloutMeterReason>(value: final value) => {'meterReason': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (retentionAppliedAt) {
-      SdkPresent<double>(value: final value) => {'retentionAppliedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (retentionOptOutAt) {
-      SdkPresent<double>(value: final value) => {'retentionOptOutAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'cohort': cohort.toJson(),
+        ...switch (meteredAt) {
+          SdkPresent<double>(value: final value) => {
+              'meteredAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (meterReason) {
+          SdkPresent<TeamDeploymentStorageRolloutMeterReason>(
+            value: final value
+          ) =>
+            {
+              'meterReason': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (retentionAppliedAt) {
+          SdkPresent<double>(value: final value) => {
+              'retentionAppliedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (retentionOptOutAt) {
+          SdkPresent<double>(value: final value) => {
+              'retentionOptOutAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class TeamDisableHardAutoBlocks {
@@ -100,8 +197,13 @@ sealed class TeamDisableHardAutoBlocks {
   static const String constructionSurface = 'named';
   const TeamDisableHardAutoBlocks();
   factory TeamDisableHardAutoBlocks.fromJson(Object? json) {
-    if (json is num) { return TeamDisableHardAutoBlocksDouble(json.toDouble()); }
-    try { return TeamDisableHardAutoBlocksTeamDisableHardAutoBlocksVariant1(TeamDisableHardAutoBlocksVariant1.fromJson(json as bool)); } catch (_) {}
+    if (json is num) {
+      return TeamDisableHardAutoBlocksDouble(json.toDouble());
+    }
+    try {
+      return TeamDisableHardAutoBlocksTeamDisableHardAutoBlocksVariant1(
+          TeamDisableHardAutoBlocksVariant1.fromJson(json as bool));
+    } catch (_) {}
     throw FormatException("No variant matched for TeamDisableHardAutoBlocks");
   }
   Object? toJson();
@@ -110,13 +212,16 @@ sealed class TeamDisableHardAutoBlocks {
 final class TeamDisableHardAutoBlocksDouble extends TeamDisableHardAutoBlocks {
   final double value;
   const TeamDisableHardAutoBlocksDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class TeamDisableHardAutoBlocksTeamDisableHardAutoBlocksVariant1 extends TeamDisableHardAutoBlocks {
+final class TeamDisableHardAutoBlocksTeamDisableHardAutoBlocksVariant1
+    extends TeamDisableHardAutoBlocks {
   final TeamDisableHardAutoBlocksVariant1 value;
   const TeamDisableHardAutoBlocksTeamDisableHardAutoBlocksVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 sealed class TeamMembershipJoinedFromGitUserId {
@@ -124,149 +229,275 @@ sealed class TeamMembershipJoinedFromGitUserId {
   static const String constructionSurface = 'named';
   const TeamMembershipJoinedFromGitUserId();
   factory TeamMembershipJoinedFromGitUserId.fromJson(Object? json) {
-    if (json is String) { return TeamMembershipJoinedFromGitUserIdString(json); }
-    if (json is num) { return TeamMembershipJoinedFromGitUserIdDouble(json.toDouble()); }
-    throw FormatException("No variant matched for TeamMembershipJoinedFromGitUserId");
+    if (json is String) {
+      return TeamMembershipJoinedFromGitUserIdString(json);
+    }
+    if (json is num) {
+      return TeamMembershipJoinedFromGitUserIdDouble(json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for TeamMembershipJoinedFromGitUserId");
   }
   Object? toJson();
 }
 
-final class TeamMembershipJoinedFromGitUserIdString extends TeamMembershipJoinedFromGitUserId {
+final class TeamMembershipJoinedFromGitUserIdString
+    extends TeamMembershipJoinedFromGitUserId {
   final String value;
   const TeamMembershipJoinedFromGitUserIdString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class TeamMembershipJoinedFromGitUserIdDouble extends TeamMembershipJoinedFromGitUserId {
+final class TeamMembershipJoinedFromGitUserIdDouble
+    extends TeamMembershipJoinedFromGitUserId {
   final double value;
   const TeamMembershipJoinedFromGitUserIdDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 /// Optional object value serialized in the `joinedFrom` wire field.
 class TeamMembershipJoinedFrom {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `commitId` wire field.
   final SdkOptional<String> commitId;
+
   /// Optional `number` value serialized in the `dsyncConnectedAt` wire field.
   final SdkOptional<double> dsyncConnectedAt;
+
   /// Optional `string` value serialized in the `dsyncUserId` wire field.
   final SdkOptional<String> dsyncUserId;
+
   /// Optional API value serialized in the `gitUserId` wire field.
   final SdkOptional<dynamic> gitUserId;
+
   /// Optional `string` value serialized in the `gitUserLogin` wire field.
   final SdkOptional<String> gitUserLogin;
+
   /// Optional `string` value serialized in the `idpUserId` wire field.
   final SdkOptional<String> idpUserId;
+
   /// Required enumerated value serialized in the `origin` wire field.
   final TeamMembershipJoinedFromOrigin origin;
+
   /// Optional `string` value serialized in the `repoId` wire field.
   final SdkOptional<String> repoId;
+
   /// Optional `string` value serialized in the `repoPath` wire field.
   final SdkOptional<String> repoPath;
+
   /// Optional `number` value serialized in the `ssoConnectedAt` wire field.
   final SdkOptional<double> ssoConnectedAt;
+
   /// Optional `string` value serialized in the `ssoUserId` wire field.
   final SdkOptional<String> ssoUserId;
 
-  const TeamMembershipJoinedFrom({this.commitId = const SdkOmitted(), this.dsyncConnectedAt = const SdkOmitted(), this.dsyncUserId = const SdkOmitted(), this.gitUserId = const SdkOmitted(), this.gitUserLogin = const SdkOmitted(), this.idpUserId = const SdkOmitted(), required this.origin, this.repoId = const SdkOmitted(), this.repoPath = const SdkOmitted(), this.ssoConnectedAt = const SdkOmitted(), this.ssoUserId = const SdkOmitted()});
+  const TeamMembershipJoinedFrom(
+      {this.commitId = const SdkOmitted(),
+      this.dsyncConnectedAt = const SdkOmitted(),
+      this.dsyncUserId = const SdkOmitted(),
+      this.gitUserId = const SdkOmitted(),
+      this.gitUserLogin = const SdkOmitted(),
+      this.idpUserId = const SdkOmitted(),
+      required this.origin,
+      this.repoId = const SdkOmitted(),
+      this.repoPath = const SdkOmitted(),
+      this.ssoConnectedAt = const SdkOmitted(),
+      this.ssoUserId = const SdkOmitted()});
 
-  TeamMembershipJoinedFrom Function({SdkOptional<String> commitId, SdkOptional<double> dsyncConnectedAt, SdkOptional<String> dsyncUserId, SdkOptional<dynamic> gitUserId, SdkOptional<String> gitUserLogin, SdkOptional<String> idpUserId, TeamMembershipJoinedFromOrigin origin, SdkOptional<String> repoId, SdkOptional<String> repoPath, SdkOptional<double> ssoConnectedAt, SdkOptional<String> ssoUserId}) get copyWith => _copyWith;
+  TeamMembershipJoinedFrom Function(
+      {SdkOptional<String> commitId,
+      SdkOptional<double> dsyncConnectedAt,
+      SdkOptional<String> dsyncUserId,
+      SdkOptional<dynamic> gitUserId,
+      SdkOptional<String> gitUserLogin,
+      SdkOptional<String> idpUserId,
+      TeamMembershipJoinedFromOrigin origin,
+      SdkOptional<String> repoId,
+      SdkOptional<String> repoPath,
+      SdkOptional<double> ssoConnectedAt,
+      SdkOptional<String> ssoUserId}) get copyWith => _copyWith;
 
-  TeamMembershipJoinedFrom _copyWith({Object? commitId = sdkOmittedValue, Object? dsyncConnectedAt = sdkOmittedValue, Object? dsyncUserId = sdkOmittedValue, Object? gitUserId = sdkOmittedValue, Object? gitUserLogin = sdkOmittedValue, Object? idpUserId = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoPath = sdkOmittedValue, Object? ssoConnectedAt = sdkOmittedValue, Object? ssoUserId = sdkOmittedValue}) => TeamMembershipJoinedFrom(
-    commitId: identical(commitId, sdkOmittedValue) ? this.commitId : commitId as SdkOptional<String>,
-    dsyncConnectedAt: identical(dsyncConnectedAt, sdkOmittedValue) ? this.dsyncConnectedAt : dsyncConnectedAt as SdkOptional<double>,
-    dsyncUserId: identical(dsyncUserId, sdkOmittedValue) ? this.dsyncUserId : dsyncUserId as SdkOptional<String>,
-    gitUserId: identical(gitUserId, sdkOmittedValue) ? this.gitUserId : gitUserId as SdkOptional<dynamic>,
-    gitUserLogin: identical(gitUserLogin, sdkOmittedValue) ? this.gitUserLogin : gitUserLogin as SdkOptional<String>,
-    idpUserId: identical(idpUserId, sdkOmittedValue) ? this.idpUserId : idpUserId as SdkOptional<String>,
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as TeamMembershipJoinedFromOrigin,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<String>,
-    repoPath: identical(repoPath, sdkOmittedValue) ? this.repoPath : repoPath as SdkOptional<String>,
-    ssoConnectedAt: identical(ssoConnectedAt, sdkOmittedValue) ? this.ssoConnectedAt : ssoConnectedAt as SdkOptional<double>,
-    ssoUserId: identical(ssoUserId, sdkOmittedValue) ? this.ssoUserId : ssoUserId as SdkOptional<String>,
-  );
+  TeamMembershipJoinedFrom _copyWith(
+          {Object? commitId = sdkOmittedValue,
+          Object? dsyncConnectedAt = sdkOmittedValue,
+          Object? dsyncUserId = sdkOmittedValue,
+          Object? gitUserId = sdkOmittedValue,
+          Object? gitUserLogin = sdkOmittedValue,
+          Object? idpUserId = sdkOmittedValue,
+          Object? origin = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? repoPath = sdkOmittedValue,
+          Object? ssoConnectedAt = sdkOmittedValue,
+          Object? ssoUserId = sdkOmittedValue}) =>
+      TeamMembershipJoinedFrom(
+        commitId: identical(commitId, sdkOmittedValue)
+            ? this.commitId
+            : commitId as SdkOptional<String>,
+        dsyncConnectedAt: identical(dsyncConnectedAt, sdkOmittedValue)
+            ? this.dsyncConnectedAt
+            : dsyncConnectedAt as SdkOptional<double>,
+        dsyncUserId: identical(dsyncUserId, sdkOmittedValue)
+            ? this.dsyncUserId
+            : dsyncUserId as SdkOptional<String>,
+        gitUserId: identical(gitUserId, sdkOmittedValue)
+            ? this.gitUserId
+            : gitUserId as SdkOptional<dynamic>,
+        gitUserLogin: identical(gitUserLogin, sdkOmittedValue)
+            ? this.gitUserLogin
+            : gitUserLogin as SdkOptional<String>,
+        idpUserId: identical(idpUserId, sdkOmittedValue)
+            ? this.idpUserId
+            : idpUserId as SdkOptional<String>,
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin as TeamMembershipJoinedFromOrigin,
+        repoId: identical(repoId, sdkOmittedValue)
+            ? this.repoId
+            : repoId as SdkOptional<String>,
+        repoPath: identical(repoPath, sdkOmittedValue)
+            ? this.repoPath
+            : repoPath as SdkOptional<String>,
+        ssoConnectedAt: identical(ssoConnectedAt, sdkOmittedValue)
+            ? this.ssoConnectedAt
+            : ssoConnectedAt as SdkOptional<double>,
+        ssoUserId: identical(ssoUserId, sdkOmittedValue)
+            ? this.ssoUserId
+            : ssoUserId as SdkOptional<String>,
+      );
 
-  factory TeamMembershipJoinedFrom.fromJson(Map<String, dynamic> json) => TeamMembershipJoinedFrom(
-    commitId: json['commitId'] != null ? SdkPresent((json['commitId'] as String?)!) : const SdkOmitted(),
-    dsyncConnectedAt: json['dsyncConnectedAt'] != null ? SdkPresent(((json['dsyncConnectedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    dsyncUserId: json['dsyncUserId'] != null ? SdkPresent((json['dsyncUserId'] as String?)!) : const SdkOmitted(),
-    gitUserId: json['gitUserId'] != null ? SdkPresent((json['gitUserId'])!) : const SdkOmitted(),
-    gitUserLogin: json['gitUserLogin'] != null ? SdkPresent((json['gitUserLogin'] as String?)!) : const SdkOmitted(),
-    idpUserId: json['idpUserId'] != null ? SdkPresent((json['idpUserId'] as String?)!) : const SdkOmitted(),
-    origin: (json['origin'] != null ? TeamMembershipJoinedFromOrigin.fromJson(json['origin'] as String) : null)!,
-    repoId: json['repoId'] != null ? SdkPresent((json['repoId'] as String?)!) : const SdkOmitted(),
-    repoPath: json['repoPath'] != null ? SdkPresent((json['repoPath'] as String?)!) : const SdkOmitted(),
-    ssoConnectedAt: json['ssoConnectedAt'] != null ? SdkPresent(((json['ssoConnectedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    ssoUserId: json['ssoUserId'] != null ? SdkPresent((json['ssoUserId'] as String?)!) : const SdkOmitted(),
-  );
+  factory TeamMembershipJoinedFrom.fromJson(Map<String, dynamic> json) =>
+      TeamMembershipJoinedFrom(
+        commitId: json['commitId'] != null
+            ? SdkPresent((json['commitId'] as String?)!)
+            : const SdkOmitted(),
+        dsyncConnectedAt: json['dsyncConnectedAt'] != null
+            ? SdkPresent(((json['dsyncConnectedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        dsyncUserId: json['dsyncUserId'] != null
+            ? SdkPresent((json['dsyncUserId'] as String?)!)
+            : const SdkOmitted(),
+        gitUserId: json['gitUserId'] != null
+            ? SdkPresent((json['gitUserId'])!)
+            : const SdkOmitted(),
+        gitUserLogin: json['gitUserLogin'] != null
+            ? SdkPresent((json['gitUserLogin'] as String?)!)
+            : const SdkOmitted(),
+        idpUserId: json['idpUserId'] != null
+            ? SdkPresent((json['idpUserId'] as String?)!)
+            : const SdkOmitted(),
+        origin: (json['origin'] != null
+            ? TeamMembershipJoinedFromOrigin.fromJson(json['origin'] as String)
+            : null)!,
+        repoId: json['repoId'] != null
+            ? SdkPresent((json['repoId'] as String?)!)
+            : const SdkOmitted(),
+        repoPath: json['repoPath'] != null
+            ? SdkPresent((json['repoPath'] as String?)!)
+            : const SdkOmitted(),
+        ssoConnectedAt: json['ssoConnectedAt'] != null
+            ? SdkPresent(((json['ssoConnectedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        ssoUserId: json['ssoUserId'] != null
+            ? SdkPresent((json['ssoUserId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (commitId) {
-      SdkPresent<String>(value: final value) => {'commitId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dsyncConnectedAt) {
-      SdkPresent<double>(value: final value) => {'dsyncConnectedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dsyncUserId) {
-      SdkPresent<String>(value: final value) => {'dsyncUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitUserId) {
-      SdkPresent<dynamic>(value: final value) => {'gitUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitUserLogin) {
-      SdkPresent<String>(value: final value) => {'gitUserLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (idpUserId) {
-      SdkPresent<String>(value: final value) => {'idpUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'origin': origin.toJson(),
-    ...switch (repoId) {
-      SdkPresent<String>(value: final value) => {'repoId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (repoPath) {
-      SdkPresent<String>(value: final value) => {'repoPath': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoConnectedAt) {
-      SdkPresent<double>(value: final value) => {'ssoConnectedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoUserId) {
-      SdkPresent<String>(value: final value) => {'ssoUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (commitId) {
+          SdkPresent<String>(value: final value) => {
+              'commitId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dsyncConnectedAt) {
+          SdkPresent<double>(value: final value) => {
+              'dsyncConnectedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dsyncUserId) {
+          SdkPresent<String>(value: final value) => {
+              'dsyncUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitUserId) {
+          SdkPresent<dynamic>(value: final value) => {
+              'gitUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitUserLogin) {
+          SdkPresent<String>(value: final value) => {
+              'gitUserLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (idpUserId) {
+          SdkPresent<String>(value: final value) => {
+              'idpUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'origin': origin.toJson(),
+        ...switch (repoId) {
+          SdkPresent<String>(value: final value) => {
+              'repoId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (repoPath) {
+          SdkPresent<String>(value: final value) => {
+              'repoPath': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoConnectedAt) {
+          SdkPresent<double>(value: final value) => {
+              'ssoConnectedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoUserId) {
+          SdkPresent<String>(value: final value) => {
+              'ssoUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `entitlements[]` wire field.
 class TeamMembershipEntitlementsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `entitlement` wire field.
   final String entitlement;
 
   const TeamMembershipEntitlementsItem({required this.entitlement});
 
-  TeamMembershipEntitlementsItem Function({String entitlement}) get copyWith => _copyWith;
+  TeamMembershipEntitlementsItem Function({String entitlement}) get copyWith =>
+      _copyWith;
 
-  TeamMembershipEntitlementsItem _copyWith({Object? entitlement = sdkOmittedValue}) => TeamMembershipEntitlementsItem(
-    entitlement: identical(entitlement, sdkOmittedValue) ? this.entitlement : entitlement as String,
-  );
+  TeamMembershipEntitlementsItem _copyWith(
+          {Object? entitlement = sdkOmittedValue}) =>
+      TeamMembershipEntitlementsItem(
+        entitlement: identical(entitlement, sdkOmittedValue)
+            ? this.entitlement
+            : entitlement as String,
+      );
 
-  factory TeamMembershipEntitlementsItem.fromJson(Map<String, dynamic> json) => TeamMembershipEntitlementsItem(
-    entitlement: (json['entitlement'] as String?)!,
-  );
+  factory TeamMembershipEntitlementsItem.fromJson(Map<String, dynamic> json) =>
+      TeamMembershipEntitlementsItem(
+        entitlement: (json['entitlement'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'entitlement': entitlement,
-  };
+        'entitlement': entitlement,
+      };
 }

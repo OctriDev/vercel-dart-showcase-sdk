@@ -6,272 +6,343 @@ part of 'inline.dart';
 // Inline operation models (part 526)
 /// Direction to order grouped results by. Defaults to desc.
 final class CreateObservabilityQueryRequestBodyOrderDirection {
-
   final String value;
 
   const CreateObservabilityQueryRequestBodyOrderDirection._(this.value);
 
-  factory CreateObservabilityQueryRequestBodyOrderDirection.fromJson(String value) => CreateObservabilityQueryRequestBodyOrderDirection._(value);
+  factory CreateObservabilityQueryRequestBodyOrderDirection.fromJson(
+          String value) =>
+      CreateObservabilityQueryRequestBodyOrderDirection._(value);
 
   static const asc = CreateObservabilityQueryRequestBodyOrderDirection._('asc');
-  static const desc = CreateObservabilityQueryRequestBodyOrderDirection._('desc');
+  static const desc =
+      CreateObservabilityQueryRequestBodyOrderDirection._('desc');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateObservabilityQueryRequestBodyOrderDirection && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateObservabilityQueryRequestBodyOrderDirection &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectChecksBlocks {
-
   final String value;
 
   const ListProjectChecksBlocks._(this.value);
 
-  factory ListProjectChecksBlocks.fromJson(String value) => ListProjectChecksBlocks._(value);
+  factory ListProjectChecksBlocks.fromJson(String value) =>
+      ListProjectChecksBlocks._(value);
 
   static const buildStart = ListProjectChecksBlocks._('build-start');
   static const deploymentStart = ListProjectChecksBlocks._('deployment-start');
   static const deploymentAlias = ListProjectChecksBlocks._('deployment-alias');
-  static const deploymentPromotion = ListProjectChecksBlocks._('deployment-promotion');
+  static const deploymentPromotion =
+      ListProjectChecksBlocks._('deployment-promotion');
   static const none = ListProjectChecksBlocks._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectChecksBlocks && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectChecksBlocks && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectChecksResponseChecksItemBlocks {
-
   final String value;
 
   const ListProjectChecksResponseChecksItemBlocks._(this.value);
 
-  factory ListProjectChecksResponseChecksItemBlocks.fromJson(String value) => ListProjectChecksResponseChecksItemBlocks._(value);
+  factory ListProjectChecksResponseChecksItemBlocks.fromJson(String value) =>
+      ListProjectChecksResponseChecksItemBlocks._(value);
 
-  static const buildStart = ListProjectChecksResponseChecksItemBlocks._('build-start');
-  static const deploymentAlias = ListProjectChecksResponseChecksItemBlocks._('deployment-alias');
-  static const deploymentPromotion = ListProjectChecksResponseChecksItemBlocks._('deployment-promotion');
-  static const deploymentStart = ListProjectChecksResponseChecksItemBlocks._('deployment-start');
+  static const buildStart =
+      ListProjectChecksResponseChecksItemBlocks._('build-start');
+  static const deploymentAlias =
+      ListProjectChecksResponseChecksItemBlocks._('deployment-alias');
+  static const deploymentPromotion =
+      ListProjectChecksResponseChecksItemBlocks._('deployment-promotion');
+  static const deploymentStart =
+      ListProjectChecksResponseChecksItemBlocks._('deployment-start');
   static const none = ListProjectChecksResponseChecksItemBlocks._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectChecksResponseChecksItemBlocks && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectChecksResponseChecksItemBlocks &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectChecksResponseChecksItemIsRerequestable {
-
   final bool value;
 
   const ListProjectChecksResponseChecksItemIsRerequestable._(this.value);
 
-  factory ListProjectChecksResponseChecksItemIsRerequestable.fromJson(bool value) => ListProjectChecksResponseChecksItemIsRerequestable._(value);
+  factory ListProjectChecksResponseChecksItemIsRerequestable.fromJson(
+          bool value) =>
+      ListProjectChecksResponseChecksItemIsRerequestable._(value);
 
-  static const false_ = ListProjectChecksResponseChecksItemIsRerequestable._(false);
-  static const true_ = ListProjectChecksResponseChecksItemIsRerequestable._(true);
+  static const false_ =
+      ListProjectChecksResponseChecksItemIsRerequestable._(false);
+  static const true_ =
+      ListProjectChecksResponseChecksItemIsRerequestable._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectChecksResponseChecksItemIsRerequestable && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectChecksResponseChecksItemIsRerequestable &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectChecksResponseChecksItemRequires {
-
   final String value;
 
   const ListProjectChecksResponseChecksItemRequires._(this.value);
 
-  factory ListProjectChecksResponseChecksItemRequires.fromJson(String value) => ListProjectChecksResponseChecksItemRequires._(value);
+  factory ListProjectChecksResponseChecksItemRequires.fromJson(String value) =>
+      ListProjectChecksResponseChecksItemRequires._(value);
 
-  static const buildReady = ListProjectChecksResponseChecksItemRequires._('build-ready');
-  static const deploymentUrl = ListProjectChecksResponseChecksItemRequires._('deployment-url');
+  static const buildReady =
+      ListProjectChecksResponseChecksItemRequires._('build-ready');
+  static const deploymentUrl =
+      ListProjectChecksResponseChecksItemRequires._('deployment-url');
   static const none = ListProjectChecksResponseChecksItemRequires._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectChecksResponseChecksItemRequires && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectChecksResponseChecksItemRequires &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectChecksResponseChecksItemSourceKind {
-
   final String value;
 
   const ListProjectChecksResponseChecksItemSourceKind._(this.value);
 
-  factory ListProjectChecksResponseChecksItemSourceKind.fromJson(String value) => ListProjectChecksResponseChecksItemSourceKind._(value);
+  factory ListProjectChecksResponseChecksItemSourceKind.fromJson(
+          String value) =>
+      ListProjectChecksResponseChecksItemSourceKind._(value);
 
-  static const gitProvider = ListProjectChecksResponseChecksItemSourceKind._('git-provider');
-  static const integration = ListProjectChecksResponseChecksItemSourceKind._('integration');
-  static const vercel = ListProjectChecksResponseChecksItemSourceKind._('vercel');
-  static const webhook = ListProjectChecksResponseChecksItemSourceKind._('webhook');
+  static const gitProvider =
+      ListProjectChecksResponseChecksItemSourceKind._('git-provider');
+  static const integration =
+      ListProjectChecksResponseChecksItemSourceKind._('integration');
+  static const vercel =
+      ListProjectChecksResponseChecksItemSourceKind._('vercel');
+  static const webhook =
+      ListProjectChecksResponseChecksItemSourceKind._('webhook');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectChecksResponseChecksItemSourceKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectChecksResponseChecksItemSourceKind &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectCheckRequestBodyBlocks {
-
   final String value;
 
   const CreateProjectCheckRequestBodyBlocks._(this.value);
 
-  factory CreateProjectCheckRequestBodyBlocks.fromJson(String value) => CreateProjectCheckRequestBodyBlocks._(value);
+  factory CreateProjectCheckRequestBodyBlocks.fromJson(String value) =>
+      CreateProjectCheckRequestBodyBlocks._(value);
 
-  static const buildStart = CreateProjectCheckRequestBodyBlocks._('build-start');
-  static const deploymentStart = CreateProjectCheckRequestBodyBlocks._('deployment-start');
-  static const deploymentAlias = CreateProjectCheckRequestBodyBlocks._('deployment-alias');
-  static const deploymentPromotion = CreateProjectCheckRequestBodyBlocks._('deployment-promotion');
+  static const buildStart =
+      CreateProjectCheckRequestBodyBlocks._('build-start');
+  static const deploymentStart =
+      CreateProjectCheckRequestBodyBlocks._('deployment-start');
+  static const deploymentAlias =
+      CreateProjectCheckRequestBodyBlocks._('deployment-alias');
+  static const deploymentPromotion =
+      CreateProjectCheckRequestBodyBlocks._('deployment-promotion');
   static const none = CreateProjectCheckRequestBodyBlocks._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectCheckRequestBodyBlocks && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectCheckRequestBodyBlocks && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectCheckRequestBodyRequires {
-
   final String value;
 
   const CreateProjectCheckRequestBodyRequires._(this.value);
 
-  factory CreateProjectCheckRequestBodyRequires.fromJson(String value) => CreateProjectCheckRequestBodyRequires._(value);
+  factory CreateProjectCheckRequestBodyRequires.fromJson(String value) =>
+      CreateProjectCheckRequestBodyRequires._(value);
 
-  static const buildReady = CreateProjectCheckRequestBodyRequires._('build-ready');
-  static const deploymentUrl = CreateProjectCheckRequestBodyRequires._('deployment-url');
+  static const buildReady =
+      CreateProjectCheckRequestBodyRequires._('build-ready');
+  static const deploymentUrl =
+      CreateProjectCheckRequestBodyRequires._('deployment-url');
   static const none = CreateProjectCheckRequestBodyRequires._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectCheckRequestBodyRequires && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectCheckRequestBodyRequires && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectCheckResponseBlocks {
-
   final String value;
 
   const CreateProjectCheckResponseBlocks._(this.value);
 
-  factory CreateProjectCheckResponseBlocks.fromJson(String value) => CreateProjectCheckResponseBlocks._(value);
+  factory CreateProjectCheckResponseBlocks.fromJson(String value) =>
+      CreateProjectCheckResponseBlocks._(value);
 
   static const buildStart = CreateProjectCheckResponseBlocks._('build-start');
-  static const deploymentAlias = CreateProjectCheckResponseBlocks._('deployment-alias');
-  static const deploymentPromotion = CreateProjectCheckResponseBlocks._('deployment-promotion');
-  static const deploymentStart = CreateProjectCheckResponseBlocks._('deployment-start');
+  static const deploymentAlias =
+      CreateProjectCheckResponseBlocks._('deployment-alias');
+  static const deploymentPromotion =
+      CreateProjectCheckResponseBlocks._('deployment-promotion');
+  static const deploymentStart =
+      CreateProjectCheckResponseBlocks._('deployment-start');
   static const none = CreateProjectCheckResponseBlocks._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectCheckResponseBlocks && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectCheckResponseBlocks && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectCheckResponseIsRerequestable {
-
   final bool value;
 
   const CreateProjectCheckResponseIsRerequestable._(this.value);
 
-  factory CreateProjectCheckResponseIsRerequestable.fromJson(bool value) => CreateProjectCheckResponseIsRerequestable._(value);
+  factory CreateProjectCheckResponseIsRerequestable.fromJson(bool value) =>
+      CreateProjectCheckResponseIsRerequestable._(value);
 
   static const false_ = CreateProjectCheckResponseIsRerequestable._(false);
   static const true_ = CreateProjectCheckResponseIsRerequestable._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectCheckResponseIsRerequestable && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectCheckResponseIsRerequestable &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectCheckResponseRequires {
-
   final String value;
 
   const CreateProjectCheckResponseRequires._(this.value);
 
-  factory CreateProjectCheckResponseRequires.fromJson(String value) => CreateProjectCheckResponseRequires._(value);
+  factory CreateProjectCheckResponseRequires.fromJson(String value) =>
+      CreateProjectCheckResponseRequires._(value);
 
   static const buildReady = CreateProjectCheckResponseRequires._('build-ready');
-  static const deploymentUrl = CreateProjectCheckResponseRequires._('deployment-url');
+  static const deploymentUrl =
+      CreateProjectCheckResponseRequires._('deployment-url');
   static const none = CreateProjectCheckResponseRequires._('none');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectCheckResponseRequires && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectCheckResponseRequires && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectCheckResponseSourceKind {
-
   final String value;
 
   const CreateProjectCheckResponseSourceKind._(this.value);
 
-  factory CreateProjectCheckResponseSourceKind.fromJson(String value) => CreateProjectCheckResponseSourceKind._(value);
+  factory CreateProjectCheckResponseSourceKind.fromJson(String value) =>
+      CreateProjectCheckResponseSourceKind._(value);
 
-  static const gitProvider = CreateProjectCheckResponseSourceKind._('git-provider');
-  static const integration = CreateProjectCheckResponseSourceKind._('integration');
+  static const gitProvider =
+      CreateProjectCheckResponseSourceKind._('git-provider');
+  static const integration =
+      CreateProjectCheckResponseSourceKind._('integration');
   static const vercel = CreateProjectCheckResponseSourceKind._('vercel');
   static const webhook = CreateProjectCheckResponseSourceKind._('webhook');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectCheckResponseSourceKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectCheckResponseSourceKind && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

@@ -23,9 +23,12 @@ Future<void> invalidateByTags(ClientConfig config,
   return (await sdkRequest<void>('POST', '/v1/edge-cache/invalidate-by-tags',
           config: config,
           query: {
-            'projectIdOrName': SdkQueryValue(projectIdOrName, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectIdOrName':
+                SdkQueryValue(projectIdOrName, style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'tags': tags, 'target': SdkUtils.unwrapOptional(target)},
           decoder: SdkResponseDecoder.empty,
@@ -33,7 +36,6 @@ Future<void> invalidateByTags(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Marks cache entries associated with the specified tags as deleted so they are revalidated in the foreground on the next request. Supply `projectIdOrName` and `tags`, and optionally set `revalidationDeadlineSeconds` or `target`. Use this operation cautiously: deleting cached entries can send many concurrent requests to the origin; prefer tag invalidation for routine use.
 ///
@@ -47,23 +49,30 @@ Future<void> dangerouslyDeleteByTags(ClientConfig config,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<int> revalidationDeadlineSeconds = const SdkOmitted(),
-    SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget> target = const SdkOmitted(),
+    SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget> target =
+        const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (revalidationDeadlineSeconds is SdkPresent<int>) {
-    validateRange('revalidationDeadlineSeconds', revalidationDeadlineSeconds.value, min: 0, max: 31536000);
+    validateRange(
+        'revalidationDeadlineSeconds', revalidationDeadlineSeconds.value,
+        min: 0, max: 31536000);
   }
 
   return (await sdkRequest<void>(
           'POST', '/v1/edge-cache/dangerously-delete-by-tags',
           config: config,
           query: {
-            'projectIdOrName': SdkQueryValue(projectIdOrName, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectIdOrName':
+                SdkQueryValue(projectIdOrName, style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'tags': tags,
-            'revalidationDeadlineSeconds': SdkUtils.unwrapOptional(revalidationDeadlineSeconds),
+            'revalidationDeadlineSeconds':
+                SdkUtils.unwrapOptional(revalidationDeadlineSeconds),
             'target': SdkUtils.unwrapOptional(target)
           },
           decoder: SdkResponseDecoder.empty,
@@ -71,7 +80,6 @@ Future<void> dangerouslyDeleteByTags(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Invalidates source images, marking them stale so their transformed images are revalidated in the background on the next request. Use `projectIdOrName` to scope the operation and supply the image sources in `srcImages`. The request can include between 1 and 8 source images.
 ///
@@ -91,9 +99,12 @@ Future<void> invalidateBySrcImages(ClientConfig config,
           'POST', '/v1/edge-cache/invalidate-by-src-images',
           config: config,
           query: {
-            'projectIdOrName': SdkQueryValue(projectIdOrName, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectIdOrName':
+                SdkQueryValue(projectIdOrName, style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'srcImages': srcImages},
           decoder: SdkResponseDecoder.empty,
@@ -101,7 +112,6 @@ Future<void> invalidateBySrcImages(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Marks cache entries associated with source images as deleted so they are revalidated in the foreground on the next request. Provide `projectIdOrName` and between 1 and 8 entries in `srcImages`; you can optionally set `revalidationDeadlineSeconds`. Use this operation cautiously because foreground revalidation can send many concurrent requests to the origin; prefer source image invalidation for routine use.
 ///
@@ -118,20 +128,26 @@ Future<void> dangerouslyDeleteBySrcImages(ClientConfig config,
     RequestOptions? requestOptions}) async {
   validateItems('srcImages', srcImages, min: 1, max: 8);
   if (revalidationDeadlineSeconds is SdkPresent<int>) {
-    validateRange('revalidationDeadlineSeconds', revalidationDeadlineSeconds.value, min: 0, max: 31536000);
+    validateRange(
+        'revalidationDeadlineSeconds', revalidationDeadlineSeconds.value,
+        min: 0, max: 31536000);
   }
 
   return (await sdkRequest<void>(
           'POST', '/v1/edge-cache/dangerously-delete-by-src-images',
           config: config,
           query: {
-            'projectIdOrName': SdkQueryValue(projectIdOrName, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectIdOrName':
+                SdkQueryValue(projectIdOrName, style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'srcImages': srcImages,
-            'revalidationDeadlineSeconds': SdkUtils.unwrapOptional(revalidationDeadlineSeconds)
+            'revalidationDeadlineSeconds':
+                SdkUtils.unwrapOptional(revalidationDeadlineSeconds)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'dangerouslyDeleteBySrcImages',

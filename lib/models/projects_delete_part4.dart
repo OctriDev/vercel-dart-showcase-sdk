@@ -10,24 +10,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant2 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant2Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant2({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant2(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant2 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant2Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant2 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant2Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant2(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant2Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant2 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant2(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant2Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant2.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant2(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant2(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant2Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant3 {
@@ -36,24 +53,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant3 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant3Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant3({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant3(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant3 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant3Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant3 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant3Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant3 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant3(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant3Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant3 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant3(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant3Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant3.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant3(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant3(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant3Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant4 {
@@ -62,24 +96,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant4 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant4Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant4({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant4(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant4 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant4Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant4 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant4Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant4 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant4(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant4Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant4 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant4(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant4Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant4.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant4(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant4Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant4(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant4Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant5 {
@@ -88,24 +139,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant5 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant5Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant5({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant5(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant5 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant5Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant5 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant5Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant5 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant5(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant5Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant5 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant5(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant5Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant5.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant5(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant5Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant5(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant5Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant6 {
@@ -114,24 +182,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant6 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant6Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant6({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant6(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant6 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant6Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant6 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant6Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant6 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant6(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant6Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant6 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant6(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant6Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant6.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant6(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant6Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant6(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant6Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant7 {
@@ -140,24 +225,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant7 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant7Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant7({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant7(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant7 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant7Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant7 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant7Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant7 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant7(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant7Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant7 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant7(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant7Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant7.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant7(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant7Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant7(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant7Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant8 {
@@ -166,24 +268,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant8 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant8Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant8({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant8(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant8 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant8Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant8 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant8Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant8 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant8(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant8Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant8 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant8(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant8Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant8.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant8(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant8Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant8(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant8Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant9 {
@@ -192,24 +311,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant9 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant9Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant9({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant9(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant9 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant9Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant9 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant9Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant9 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant9(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant9Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant9 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant9(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant9Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant9.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant9(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant9Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant9(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant9Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant10 {
@@ -218,24 +354,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant10 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant10Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant10({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant10(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant10 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant10Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant10 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant10Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant10 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant10(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant10Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant10 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant10(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant10Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant10.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant10(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant10Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant10.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant10(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant10Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant11 {
@@ -244,24 +397,41 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant11 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant11Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant11({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant11(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant11 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant11Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant11 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant11Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant11 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant11(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant11Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant11 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant11(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant11Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant11.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant11(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant11Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant11.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant11(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant11Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseEnvItemContentHintVariant12 {
@@ -270,22 +440,39 @@ class DeleteProjectAvatarResponseEnvItemContentHintVariant12 {
   final String storeId;
   final DeleteProjectAvatarResponseEnvItemContentHintVariant12Type type_;
 
-  const DeleteProjectAvatarResponseEnvItemContentHintVariant12({required this.storeId, required this.type_});
+  const DeleteProjectAvatarResponseEnvItemContentHintVariant12(
+      {required this.storeId, required this.type_});
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant12 Function({String storeId, DeleteProjectAvatarResponseEnvItemContentHintVariant12Type type_}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseEnvItemContentHintVariant12 Function(
+          {String storeId,
+          DeleteProjectAvatarResponseEnvItemContentHintVariant12Type type_})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseEnvItemContentHintVariant12 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => DeleteProjectAvatarResponseEnvItemContentHintVariant12(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as DeleteProjectAvatarResponseEnvItemContentHintVariant12Type,
-  );
+  DeleteProjectAvatarResponseEnvItemContentHintVariant12 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant12(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as DeleteProjectAvatarResponseEnvItemContentHintVariant12Type,
+      );
 
-  factory DeleteProjectAvatarResponseEnvItemContentHintVariant12.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseEnvItemContentHintVariant12(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? DeleteProjectAvatarResponseEnvItemContentHintVariant12Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseEnvItemContentHintVariant12.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseEnvItemContentHintVariant12(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? DeleteProjectAvatarResponseEnvItemContentHintVariant12Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }

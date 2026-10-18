@@ -5,270 +5,367 @@ part of 'inline.dart';
 
 // Inline operation models (part 516)
 final class CreateProjectResponseTargetsValueWithCache {
-
   final bool value;
 
   const CreateProjectResponseTargetsValueWithCache._(this.value);
 
-  factory CreateProjectResponseTargetsValueWithCache.fromJson(bool value) => CreateProjectResponseTargetsValueWithCache._(value);
+  factory CreateProjectResponseTargetsValueWithCache.fromJson(bool value) =>
+      CreateProjectResponseTargetsValueWithCache._(value);
 
   static const false_ = CreateProjectResponseTargetsValueWithCache._(false);
   static const true_ = CreateProjectResponseTargetsValueWithCache._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTargetsValueWithCache && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseTargetsValueWithCache &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTier {
-
   final String value;
 
   const CreateProjectResponseTier._(this.value);
 
-  factory CreateProjectResponseTier.fromJson(String value) => CreateProjectResponseTier._(value);
+  factory CreateProjectResponseTier.fromJson(String value) =>
+      CreateProjectResponseTier._(value);
 
   static const priority = CreateProjectResponseTier._('priority');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTier && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseTier && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Which tracing destination this rule applies to. `internal` is the hidden Vercel production-tracing drain (internal delivery); `external` is any customer-configured drain. Derived from the owning drain's delivery type when project tracing is computed; absent on configs persisted before this field existed.
 final class CreateProjectResponseTracingSamplingRulesItemDestination {
-
   final String value;
 
   const CreateProjectResponseTracingSamplingRulesItemDestination._(this.value);
 
-  factory CreateProjectResponseTracingSamplingRulesItemDestination.fromJson(String value) => CreateProjectResponseTracingSamplingRulesItemDestination._(value);
+  factory CreateProjectResponseTracingSamplingRulesItemDestination.fromJson(
+          String value) =>
+      CreateProjectResponseTracingSamplingRulesItemDestination._(value);
 
-  static const external_ = CreateProjectResponseTracingSamplingRulesItemDestination._('external');
-  static const internal = CreateProjectResponseTracingSamplingRulesItemDestination._('internal');
+  static const external_ =
+      CreateProjectResponseTracingSamplingRulesItemDestination._('external');
+  static const internal =
+      CreateProjectResponseTracingSamplingRulesItemDestination._('internal');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTracingSamplingRulesItemDestination && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseTracingSamplingRulesItemDestination &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTracingSamplingRulesItemEnv {
-
   final String value;
 
   const CreateProjectResponseTracingSamplingRulesItemEnv._(this.value);
 
-  factory CreateProjectResponseTracingSamplingRulesItemEnv.fromJson(String value) => CreateProjectResponseTracingSamplingRulesItemEnv._(value);
+  factory CreateProjectResponseTracingSamplingRulesItemEnv.fromJson(
+          String value) =>
+      CreateProjectResponseTracingSamplingRulesItemEnv._(value);
 
-  static const preview = CreateProjectResponseTracingSamplingRulesItemEnv._('preview');
-  static const production = CreateProjectResponseTracingSamplingRulesItemEnv._('production');
+  static const preview =
+      CreateProjectResponseTracingSamplingRulesItemEnv._('preview');
+  static const production =
+      CreateProjectResponseTracingSamplingRulesItemEnv._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTracingSamplingRulesItemEnv && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseTracingSamplingRulesItemEnv &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Allow same-team Vercel CI access to preview and production deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value.
 final class CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository {
-
   final bool value;
 
-  const CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(this.value);
+  const CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(
+      this.value);
 
-  factory CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(bool value) => CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(value);
+  factory CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(
+          bool value) =>
+      CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(value);
 
-  static const false_ = CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(false);
-  static const true_ = CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(true);
+  static const false_ =
+      CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(false);
+  static const true_ =
+      CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseTrustedSourcesEnableVercelCiSameRepository &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset {
-
   final String value;
 
-  const CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(this.value);
+  const CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(
+      this.value);
 
-  factory CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(String value) => CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(value);
+  factory CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset
+          ._(value);
 
-  static const allCustom = CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._('all-custom');
+  static const allCustom =
+      CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset {
-
   final String value;
 
-  const CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(this.value);
+  const CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(
+      this.value);
 
-  factory CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(String value) => CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(value);
+  factory CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
+          ._(value);
 
-  static const allCustom = CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._('all-custom');
+  static const allCustom =
+      CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset {
-
   final String value;
 
-  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(this.value);
+  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(
+      this.value);
 
-  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(String value) => CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(value);
+  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
+          ._(value);
 
-  static const allCustom = CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._('all-custom');
+  static const allCustom =
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset {
-
   final String value;
 
-  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(this.value);
+  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(
+      this.value);
 
-  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(String value) => CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(value);
+  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+          ._(value);
 
-  static const allCustom = CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._('all-custom');
+  static const allCustom =
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset {
-
   final String value;
 
-  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(this.value);
+  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(
+      this.value);
 
-  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(String value) => CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(value);
+  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
+          ._(value);
 
-  static const allCustom = CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._('all-custom');
+  static const allCustom =
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset {
-
   final String value;
 
-  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(this.value);
+  const CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(
+      this.value);
 
-  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(String value) => CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(value);
+  factory CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(
+          String value) =>
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+          ._(value);
 
-  static const allCustom = CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._('all-custom');
+  static const allCustom =
+      CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateProjectResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Billing mode. Always 'flat' for flat-rate projects.
 final class CreateProjectResponseUsageStatusKind {
-
   final String value;
 
   const CreateProjectResponseUsageStatusKind._(this.value);
 
-  factory CreateProjectResponseUsageStatusKind.fromJson(String value) => CreateProjectResponseUsageStatusKind._(value);
+  factory CreateProjectResponseUsageStatusKind.fromJson(String value) =>
+      CreateProjectResponseUsageStatusKind._(value);
 
   static const flat = CreateProjectResponseUsageStatusKind._('flat');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseUsageStatusKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseUsageStatusKind && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
 final class CreateProjectResponseUsageStatusTeamThrottled {
-
   final bool value;
 
   const CreateProjectResponseUsageStatusTeamThrottled._(this.value);
 
-  factory CreateProjectResponseUsageStatusTeamThrottled.fromJson(bool value) => CreateProjectResponseUsageStatusTeamThrottled._(value);
+  factory CreateProjectResponseUsageStatusTeamThrottled.fromJson(bool value) =>
+      CreateProjectResponseUsageStatusTeamThrottled._(value);
 
   static const false_ = CreateProjectResponseUsageStatusTeamThrottled._(false);
   static const true_ = CreateProjectResponseUsageStatusTeamThrottled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectResponseUsageStatusTeamThrottled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseUsageStatusTeamThrottled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
