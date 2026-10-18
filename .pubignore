@@ -1,0 +1,8 @@
+.dart_tool/
+build/
+coverage/
+dist/
+scripts/
+test/
+sdk-manifest.json
+sdk-quality-report.json
