@@ -8,228 +8,526 @@ part of 'sandboxes.dart';
 class NamedSandbox {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// CPU architecture of the sandbox. This value does not change.
   final SdkOptional<NamedSandboxArchitecture> architecture;
+
   /// The time when the named sandbox was created, in milliseconds since the epoch.
   final double createdAt;
+
   /// Current session ID the sandbox is pointing to.
   final String currentSessionId;
+
   /// Current snapshot ID that the named sandbox is pointing to.
   final SdkOptional<String> currentSnapshotId;
+
   /// The working directory of the sandbox.
   final SdkOptional<String> cwd;
+
   /// The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.
   final SdkOptional<double> expiresAt;
+
   /// The regions the sandbox fails over to. Empty when it does not fail over.
   final SdkOptional<List<NamedSandboxFailoverRegionsItem>> failoverRegions;
+
   /// Owner-qualified, digest-pinned reference of the container image the sandbox was created from ("{team}/{project}/{repository}@{manifestDigest}").
   final SdkOptional<String> image;
+
   /// Keep-last snapshot configuration.
   final SdkOptional<NamedSandboxKeepLastSnapshots> keepLastSnapshots;
+
   /// Memory allocated in MB.
   final SdkOptional<double> memory;
+
   /// Key-value pairs of mount path and drive.
   final SdkOptional<Map<String, NamedSandboxMountsValue>> mounts;
+
   /// The unique identifier of the sandbox.
   final String name;
+
   /// The Connect network id for the target Secure Compute private network.
   final SdkOptional<String> networkId;
+
   /// Network policy configuration.
   final SdkOptional<NamedSandboxNetworkPolicy> networkPolicy;
+
   /// Whether the sandbox persists its state across restarts via automatic snapshots.
   final NamedSandboxPersistent persistent;
+
   /// The region the sandbox is pinned to: the region stored on the sandbox, otherwise the platform default. Where a running session actually landed is reported by `session.region`.
   final SdkOptional<String> region;
+
   /// Runtime identifier.
   final SdkOptional<String> runtime;
+
   /// Default snapshot expiration time in milliseconds. 0 means no expiration.
   final SdkOptional<double> snapshotExpiration;
+
   /// The status of the current sandbox.
   final NamedSandboxStatus status;
+
   /// The time when the sandbox status was last updated, in milliseconds since the epoch.
   final double statusUpdatedAt;
+
   /// Key-value tags attached to the named sandbox.
   final SdkOptional<Map<String, String>> tags;
+
   /// Timeout in milliseconds.
   final SdkOptional<double> timeout;
+
   /// Cumulative active CPU duration in milliseconds across all sandbox runs.
   final SdkOptional<double> totalActiveCpuDurationMs;
+
   /// Cumulative wall-clock duration in milliseconds across all sandbox runs.
   final SdkOptional<double> totalDurationMs;
+
   /// Cumulative egress bytes across all sandbox runs.
   final SdkOptional<double> totalEgressBytes;
+
   /// Cumulative ingress bytes across all sandbox runs.
   final SdkOptional<double> totalIngressBytes;
+
   /// The time when the named sandbox was last updated, in milliseconds since the epoch.
   final double updatedAt;
+
   /// Whether this sandbox is managed by v0 on the customer's behalf.
   final SdkOptional<NamedSandboxV0> v0;
+
   /// Number of virtual CPUs allocated.
   final SdkOptional<double> vcpus;
 
-  const NamedSandbox({this.architecture = const SdkOmitted(), required this.createdAt, required this.currentSessionId, this.currentSnapshotId = const SdkOmitted(), this.cwd = const SdkOmitted(), this.expiresAt = const SdkOmitted(), this.failoverRegions = const SdkOmitted(), this.image = const SdkOmitted(), this.keepLastSnapshots = const SdkOmitted(), this.memory = const SdkOmitted(), this.mounts = const SdkOmitted(), required this.name, this.networkId = const SdkOmitted(), this.networkPolicy = const SdkOmitted(), required this.persistent, this.region = const SdkOmitted(), this.runtime = const SdkOmitted(), this.snapshotExpiration = const SdkOmitted(), required this.status, required this.statusUpdatedAt, this.tags = const SdkOmitted(), this.timeout = const SdkOmitted(), this.totalActiveCpuDurationMs = const SdkOmitted(), this.totalDurationMs = const SdkOmitted(), this.totalEgressBytes = const SdkOmitted(), this.totalIngressBytes = const SdkOmitted(), required this.updatedAt, this.v0 = const SdkOmitted(), this.vcpus = const SdkOmitted()});
+  const NamedSandbox(
+      {this.architecture = const SdkOmitted(),
+      required this.createdAt,
+      required this.currentSessionId,
+      this.currentSnapshotId = const SdkOmitted(),
+      this.cwd = const SdkOmitted(),
+      this.expiresAt = const SdkOmitted(),
+      this.failoverRegions = const SdkOmitted(),
+      this.image = const SdkOmitted(),
+      this.keepLastSnapshots = const SdkOmitted(),
+      this.memory = const SdkOmitted(),
+      this.mounts = const SdkOmitted(),
+      required this.name,
+      this.networkId = const SdkOmitted(),
+      this.networkPolicy = const SdkOmitted(),
+      required this.persistent,
+      this.region = const SdkOmitted(),
+      this.runtime = const SdkOmitted(),
+      this.snapshotExpiration = const SdkOmitted(),
+      required this.status,
+      required this.statusUpdatedAt,
+      this.tags = const SdkOmitted(),
+      this.timeout = const SdkOmitted(),
+      this.totalActiveCpuDurationMs = const SdkOmitted(),
+      this.totalDurationMs = const SdkOmitted(),
+      this.totalEgressBytes = const SdkOmitted(),
+      this.totalIngressBytes = const SdkOmitted(),
+      required this.updatedAt,
+      this.v0 = const SdkOmitted(),
+      this.vcpus = const SdkOmitted()});
 
-  NamedSandbox Function({SdkOptional<NamedSandboxArchitecture> architecture, double createdAt, String currentSessionId, SdkOptional<String> currentSnapshotId, SdkOptional<String> cwd, SdkOptional<double> expiresAt, SdkOptional<List<NamedSandboxFailoverRegionsItem>> failoverRegions, SdkOptional<String> image, SdkOptional<NamedSandboxKeepLastSnapshots> keepLastSnapshots, SdkOptional<double> memory, SdkOptional<Map<String, NamedSandboxMountsValue>> mounts, String name, SdkOptional<String> networkId, SdkOptional<NamedSandboxNetworkPolicy> networkPolicy, NamedSandboxPersistent persistent, SdkOptional<String> region, SdkOptional<String> runtime, SdkOptional<double> snapshotExpiration, NamedSandboxStatus status, double statusUpdatedAt, SdkOptional<Map<String, String>> tags, SdkOptional<double> timeout, SdkOptional<double> totalActiveCpuDurationMs, SdkOptional<double> totalDurationMs, SdkOptional<double> totalEgressBytes, SdkOptional<double> totalIngressBytes, double updatedAt, SdkOptional<NamedSandboxV0> v0, SdkOptional<double> vcpus}) get copyWith => _copyWith;
+  NamedSandbox Function(
+      {SdkOptional<NamedSandboxArchitecture> architecture,
+      double createdAt,
+      String currentSessionId,
+      SdkOptional<String> currentSnapshotId,
+      SdkOptional<String> cwd,
+      SdkOptional<double> expiresAt,
+      SdkOptional<List<NamedSandboxFailoverRegionsItem>> failoverRegions,
+      SdkOptional<String> image,
+      SdkOptional<NamedSandboxKeepLastSnapshots> keepLastSnapshots,
+      SdkOptional<double> memory,
+      SdkOptional<Map<String, NamedSandboxMountsValue>> mounts,
+      String name,
+      SdkOptional<String> networkId,
+      SdkOptional<NamedSandboxNetworkPolicy> networkPolicy,
+      NamedSandboxPersistent persistent,
+      SdkOptional<String> region,
+      SdkOptional<String> runtime,
+      SdkOptional<double> snapshotExpiration,
+      NamedSandboxStatus status,
+      double statusUpdatedAt,
+      SdkOptional<Map<String, String>> tags,
+      SdkOptional<double> timeout,
+      SdkOptional<double> totalActiveCpuDurationMs,
+      SdkOptional<double> totalDurationMs,
+      SdkOptional<double> totalEgressBytes,
+      SdkOptional<double> totalIngressBytes,
+      double updatedAt,
+      SdkOptional<NamedSandboxV0> v0,
+      SdkOptional<double> vcpus}) get copyWith => _copyWith;
 
-  NamedSandbox _copyWith({Object? architecture = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? currentSessionId = sdkOmittedValue, Object? currentSnapshotId = sdkOmittedValue, Object? cwd = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? failoverRegions = sdkOmittedValue, Object? image = sdkOmittedValue, Object? keepLastSnapshots = sdkOmittedValue, Object? memory = sdkOmittedValue, Object? mounts = sdkOmittedValue, Object? name = sdkOmittedValue, Object? networkId = sdkOmittedValue, Object? networkPolicy = sdkOmittedValue, Object? persistent = sdkOmittedValue, Object? region = sdkOmittedValue, Object? runtime = sdkOmittedValue, Object? snapshotExpiration = sdkOmittedValue, Object? status = sdkOmittedValue, Object? statusUpdatedAt = sdkOmittedValue, Object? tags = sdkOmittedValue, Object? timeout = sdkOmittedValue, Object? totalActiveCpuDurationMs = sdkOmittedValue, Object? totalDurationMs = sdkOmittedValue, Object? totalEgressBytes = sdkOmittedValue, Object? totalIngressBytes = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? v0 = sdkOmittedValue, Object? vcpus = sdkOmittedValue}) => NamedSandbox(
-    architecture: identical(architecture, sdkOmittedValue) ? this.architecture : architecture as SdkOptional<NamedSandboxArchitecture>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    currentSessionId: identical(currentSessionId, sdkOmittedValue) ? this.currentSessionId : currentSessionId as String,
-    currentSnapshotId: identical(currentSnapshotId, sdkOmittedValue) ? this.currentSnapshotId : currentSnapshotId as SdkOptional<String>,
-    cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as SdkOptional<String>,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<double>,
-    failoverRegions: identical(failoverRegions, sdkOmittedValue) ? this.failoverRegions : failoverRegions as SdkOptional<List<NamedSandboxFailoverRegionsItem>>,
-    image: identical(image, sdkOmittedValue) ? this.image : image as SdkOptional<String>,
-    keepLastSnapshots: identical(keepLastSnapshots, sdkOmittedValue) ? this.keepLastSnapshots : keepLastSnapshots as SdkOptional<NamedSandboxKeepLastSnapshots>,
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as SdkOptional<double>,
-    mounts: identical(mounts, sdkOmittedValue) ? this.mounts : mounts as SdkOptional<Map<String, NamedSandboxMountsValue>>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    networkId: identical(networkId, sdkOmittedValue) ? this.networkId : networkId as SdkOptional<String>,
-    networkPolicy: identical(networkPolicy, sdkOmittedValue) ? this.networkPolicy : networkPolicy as SdkOptional<NamedSandboxNetworkPolicy>,
-    persistent: identical(persistent, sdkOmittedValue) ? this.persistent : persistent as NamedSandboxPersistent,
-    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<String>,
-    runtime: identical(runtime, sdkOmittedValue) ? this.runtime : runtime as SdkOptional<String>,
-    snapshotExpiration: identical(snapshotExpiration, sdkOmittedValue) ? this.snapshotExpiration : snapshotExpiration as SdkOptional<double>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as NamedSandboxStatus,
-    statusUpdatedAt: identical(statusUpdatedAt, sdkOmittedValue) ? this.statusUpdatedAt : statusUpdatedAt as double,
-    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as SdkOptional<Map<String, String>>,
-    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as SdkOptional<double>,
-    totalActiveCpuDurationMs: identical(totalActiveCpuDurationMs, sdkOmittedValue) ? this.totalActiveCpuDurationMs : totalActiveCpuDurationMs as SdkOptional<double>,
-    totalDurationMs: identical(totalDurationMs, sdkOmittedValue) ? this.totalDurationMs : totalDurationMs as SdkOptional<double>,
-    totalEgressBytes: identical(totalEgressBytes, sdkOmittedValue) ? this.totalEgressBytes : totalEgressBytes as SdkOptional<double>,
-    totalIngressBytes: identical(totalIngressBytes, sdkOmittedValue) ? this.totalIngressBytes : totalIngressBytes as SdkOptional<double>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<NamedSandboxV0>,
-    vcpus: identical(vcpus, sdkOmittedValue) ? this.vcpus : vcpus as SdkOptional<double>,
-  );
+  NamedSandbox _copyWith(
+          {Object? architecture = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? currentSessionId = sdkOmittedValue,
+          Object? currentSnapshotId = sdkOmittedValue,
+          Object? cwd = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? failoverRegions = sdkOmittedValue,
+          Object? image = sdkOmittedValue,
+          Object? keepLastSnapshots = sdkOmittedValue,
+          Object? memory = sdkOmittedValue,
+          Object? mounts = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? networkId = sdkOmittedValue,
+          Object? networkPolicy = sdkOmittedValue,
+          Object? persistent = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? runtime = sdkOmittedValue,
+          Object? snapshotExpiration = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? statusUpdatedAt = sdkOmittedValue,
+          Object? tags = sdkOmittedValue,
+          Object? timeout = sdkOmittedValue,
+          Object? totalActiveCpuDurationMs = sdkOmittedValue,
+          Object? totalDurationMs = sdkOmittedValue,
+          Object? totalEgressBytes = sdkOmittedValue,
+          Object? totalIngressBytes = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? v0 = sdkOmittedValue,
+          Object? vcpus = sdkOmittedValue}) =>
+      NamedSandbox(
+        architecture: identical(architecture, sdkOmittedValue)
+            ? this.architecture
+            : architecture as SdkOptional<NamedSandboxArchitecture>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        currentSessionId: identical(currentSessionId, sdkOmittedValue)
+            ? this.currentSessionId
+            : currentSessionId as String,
+        currentSnapshotId: identical(currentSnapshotId, sdkOmittedValue)
+            ? this.currentSnapshotId
+            : currentSnapshotId as SdkOptional<String>,
+        cwd: identical(cwd, sdkOmittedValue)
+            ? this.cwd
+            : cwd as SdkOptional<String>,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as SdkOptional<double>,
+        failoverRegions: identical(failoverRegions, sdkOmittedValue)
+            ? this.failoverRegions
+            : failoverRegions
+                as SdkOptional<List<NamedSandboxFailoverRegionsItem>>,
+        image: identical(image, sdkOmittedValue)
+            ? this.image
+            : image as SdkOptional<String>,
+        keepLastSnapshots: identical(keepLastSnapshots, sdkOmittedValue)
+            ? this.keepLastSnapshots
+            : keepLastSnapshots as SdkOptional<NamedSandboxKeepLastSnapshots>,
+        memory: identical(memory, sdkOmittedValue)
+            ? this.memory
+            : memory as SdkOptional<double>,
+        mounts: identical(mounts, sdkOmittedValue)
+            ? this.mounts
+            : mounts as SdkOptional<Map<String, NamedSandboxMountsValue>>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        networkId: identical(networkId, sdkOmittedValue)
+            ? this.networkId
+            : networkId as SdkOptional<String>,
+        networkPolicy: identical(networkPolicy, sdkOmittedValue)
+            ? this.networkPolicy
+            : networkPolicy as SdkOptional<NamedSandboxNetworkPolicy>,
+        persistent: identical(persistent, sdkOmittedValue)
+            ? this.persistent
+            : persistent as NamedSandboxPersistent,
+        region: identical(region, sdkOmittedValue)
+            ? this.region
+            : region as SdkOptional<String>,
+        runtime: identical(runtime, sdkOmittedValue)
+            ? this.runtime
+            : runtime as SdkOptional<String>,
+        snapshotExpiration: identical(snapshotExpiration, sdkOmittedValue)
+            ? this.snapshotExpiration
+            : snapshotExpiration as SdkOptional<double>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as NamedSandboxStatus,
+        statusUpdatedAt: identical(statusUpdatedAt, sdkOmittedValue)
+            ? this.statusUpdatedAt
+            : statusUpdatedAt as double,
+        tags: identical(tags, sdkOmittedValue)
+            ? this.tags
+            : tags as SdkOptional<Map<String, String>>,
+        timeout: identical(timeout, sdkOmittedValue)
+            ? this.timeout
+            : timeout as SdkOptional<double>,
+        totalActiveCpuDurationMs:
+            identical(totalActiveCpuDurationMs, sdkOmittedValue)
+                ? this.totalActiveCpuDurationMs
+                : totalActiveCpuDurationMs as SdkOptional<double>,
+        totalDurationMs: identical(totalDurationMs, sdkOmittedValue)
+            ? this.totalDurationMs
+            : totalDurationMs as SdkOptional<double>,
+        totalEgressBytes: identical(totalEgressBytes, sdkOmittedValue)
+            ? this.totalEgressBytes
+            : totalEgressBytes as SdkOptional<double>,
+        totalIngressBytes: identical(totalIngressBytes, sdkOmittedValue)
+            ? this.totalIngressBytes
+            : totalIngressBytes as SdkOptional<double>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        v0: identical(v0, sdkOmittedValue)
+            ? this.v0
+            : v0 as SdkOptional<NamedSandboxV0>,
+        vcpus: identical(vcpus, sdkOmittedValue)
+            ? this.vcpus
+            : vcpus as SdkOptional<double>,
+      );
 
   factory NamedSandbox.fromJson(Map<String, dynamic> json) => NamedSandbox(
-    architecture: json['architecture'] != null ? SdkPresent((json['architecture'] != null ? NamedSandboxArchitecture.fromJson(json['architecture'] as String) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    currentSessionId: (json['currentSessionId'] as String?)!,
-    currentSnapshotId: json['currentSnapshotId'] != null ? SdkPresent((json['currentSnapshotId'] as String?)!) : const SdkOmitted(),
-    cwd: json['cwd'] != null ? SdkPresent((json['cwd'] as String?)!) : const SdkOmitted(),
-    expiresAt: json['expiresAt'] != null ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    failoverRegions: json['failoverRegions'] != null ? SdkPresent(((json['failoverRegions'] as List?)?.map((e) => NamedSandboxFailoverRegionsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    image: json['image'] != null ? SdkPresent((json['image'] as String?)!) : const SdkOmitted(),
-    keepLastSnapshots: json['keepLastSnapshots'] != null ? SdkPresent((json['keepLastSnapshots'] != null ? NamedSandboxKeepLastSnapshots.fromJson(json['keepLastSnapshots'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    memory: json['memory'] != null ? SdkPresent(((json['memory'] as num?)?.toDouble())!) : const SdkOmitted(),
-    mounts: json['mounts'] != null ? SdkPresent((json['mounts'] == null ? null : Map<String, dynamic>.from(json['mounts'] as Map).map((key, value) => MapEntry(key, NamedSandboxMountsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    networkId: json['networkId'] != null ? SdkPresent((json['networkId'] as String?)!) : const SdkOmitted(),
-    networkPolicy: json['networkPolicy'] != null ? SdkPresent((json['networkPolicy'] != null ? NamedSandboxNetworkPolicy.fromJson(json['networkPolicy'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    persistent: (json['persistent'] != null ? NamedSandboxPersistent.fromJson(json['persistent'] as bool) : null)!,
-    region: json['region'] != null ? SdkPresent((json['region'] as String?)!) : const SdkOmitted(),
-    runtime: json['runtime'] != null ? SdkPresent((json['runtime'] as String?)!) : const SdkOmitted(),
-    snapshotExpiration: json['snapshotExpiration'] != null ? SdkPresent(((json['snapshotExpiration'] as num?)?.toDouble())!) : const SdkOmitted(),
-    status: (json['status'] != null ? NamedSandboxStatus.fromJson(json['status'] as String) : null)!,
-    statusUpdatedAt: ((json['statusUpdatedAt'] as num?)?.toDouble())!,
-    tags: json['tags'] != null ? SdkPresent((json['tags'] == null ? null : Map<String, dynamic>.from(json['tags'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    timeout: json['timeout'] != null ? SdkPresent(((json['timeout'] as num?)?.toDouble())!) : const SdkOmitted(),
-    totalActiveCpuDurationMs: json['totalActiveCpuDurationMs'] != null ? SdkPresent(((json['totalActiveCpuDurationMs'] as num?)?.toDouble())!) : const SdkOmitted(),
-    totalDurationMs: json['totalDurationMs'] != null ? SdkPresent(((json['totalDurationMs'] as num?)?.toDouble())!) : const SdkOmitted(),
-    totalEgressBytes: json['totalEgressBytes'] != null ? SdkPresent(((json['totalEgressBytes'] as num?)?.toDouble())!) : const SdkOmitted(),
-    totalIngressBytes: json['totalIngressBytes'] != null ? SdkPresent(((json['totalIngressBytes'] as num?)?.toDouble())!) : const SdkOmitted(),
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? NamedSandboxV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
-    vcpus: json['vcpus'] != null ? SdkPresent(((json['vcpus'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+        architecture: json['architecture'] != null
+            ? SdkPresent((json['architecture'] != null
+                ? NamedSandboxArchitecture.fromJson(
+                    json['architecture'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        currentSessionId: (json['currentSessionId'] as String?)!,
+        currentSnapshotId: json['currentSnapshotId'] != null
+            ? SdkPresent((json['currentSnapshotId'] as String?)!)
+            : const SdkOmitted(),
+        cwd: json['cwd'] != null
+            ? SdkPresent((json['cwd'] as String?)!)
+            : const SdkOmitted(),
+        expiresAt: json['expiresAt'] != null
+            ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        failoverRegions: json['failoverRegions'] != null
+            ? SdkPresent(((json['failoverRegions'] as List?)
+                ?.map((e) =>
+                    NamedSandboxFailoverRegionsItem.fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        image: json['image'] != null
+            ? SdkPresent((json['image'] as String?)!)
+            : const SdkOmitted(),
+        keepLastSnapshots: json['keepLastSnapshots'] != null
+            ? SdkPresent((json['keepLastSnapshots'] != null
+                ? NamedSandboxKeepLastSnapshots.fromJson(
+                    json['keepLastSnapshots'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        memory: json['memory'] != null
+            ? SdkPresent(((json['memory'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        mounts: json['mounts'] != null
+            ? SdkPresent((json['mounts'] == null
+                ? null
+                : Map<String, dynamic>.from(json['mounts'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        NamedSandboxMountsValue.fromJson(
+                            value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        networkId: json['networkId'] != null
+            ? SdkPresent((json['networkId'] as String?)!)
+            : const SdkOmitted(),
+        networkPolicy: json['networkPolicy'] != null
+            ? SdkPresent((json['networkPolicy'] != null
+                ? NamedSandboxNetworkPolicy.fromJson(
+                    json['networkPolicy'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        persistent: (json['persistent'] != null
+            ? NamedSandboxPersistent.fromJson(json['persistent'] as bool)
+            : null)!,
+        region: json['region'] != null
+            ? SdkPresent((json['region'] as String?)!)
+            : const SdkOmitted(),
+        runtime: json['runtime'] != null
+            ? SdkPresent((json['runtime'] as String?)!)
+            : const SdkOmitted(),
+        snapshotExpiration: json['snapshotExpiration'] != null
+            ? SdkPresent(((json['snapshotExpiration'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        status: (json['status'] != null
+            ? NamedSandboxStatus.fromJson(json['status'] as String)
+            : null)!,
+        statusUpdatedAt: ((json['statusUpdatedAt'] as num?)?.toDouble())!,
+        tags: json['tags'] != null
+            ? SdkPresent((json['tags'] == null
+                ? null
+                : Map<String, dynamic>.from(json['tags'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        timeout: json['timeout'] != null
+            ? SdkPresent(((json['timeout'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        totalActiveCpuDurationMs: json['totalActiveCpuDurationMs'] != null
+            ? SdkPresent(
+                ((json['totalActiveCpuDurationMs'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        totalDurationMs: json['totalDurationMs'] != null
+            ? SdkPresent(((json['totalDurationMs'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        totalEgressBytes: json['totalEgressBytes'] != null
+            ? SdkPresent(((json['totalEgressBytes'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        totalIngressBytes: json['totalIngressBytes'] != null
+            ? SdkPresent(((json['totalIngressBytes'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        v0: json['v0'] != null
+            ? SdkPresent((json['v0'] != null
+                ? NamedSandboxV0.fromJson(json['v0'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        vcpus: json['vcpus'] != null
+            ? SdkPresent(((json['vcpus'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (architecture) {
-      SdkPresent<NamedSandboxArchitecture>(value: final value) => {'architecture': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    'currentSessionId': currentSessionId,
-    ...switch (currentSnapshotId) {
-      SdkPresent<String>(value: final value) => {'currentSnapshotId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (cwd) {
-      SdkPresent<String>(value: final value) => {'cwd': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiresAt) {
-      SdkPresent<double>(value: final value) => {'expiresAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (failoverRegions) {
-      SdkPresent<List<NamedSandboxFailoverRegionsItem>>(value: final value) => {'failoverRegions': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (image) {
-      SdkPresent<String>(value: final value) => {'image': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (keepLastSnapshots) {
-      SdkPresent<NamedSandboxKeepLastSnapshots>(value: final value) => {'keepLastSnapshots': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (memory) {
-      SdkPresent<double>(value: final value) => {'memory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (mounts) {
-      SdkPresent<Map<String, NamedSandboxMountsValue>>(value: final value) => {'mounts': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    ...switch (networkId) {
-      SdkPresent<String>(value: final value) => {'networkId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (networkPolicy) {
-      SdkPresent<NamedSandboxNetworkPolicy>(value: final value) => {'networkPolicy': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'persistent': persistent.toJson(),
-    ...switch (region) {
-      SdkPresent<String>(value: final value) => {'region': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (runtime) {
-      SdkPresent<String>(value: final value) => {'runtime': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (snapshotExpiration) {
-      SdkPresent<double>(value: final value) => {'snapshotExpiration': value,},
-      _ => const <String, dynamic>{},
-    },
-    'status': status.toJson(),
-    'statusUpdatedAt': statusUpdatedAt,
-    ...switch (tags) {
-      SdkPresent<Map<String, String>>(value: final value) => {'tags': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timeout) {
-      SdkPresent<double>(value: final value) => {'timeout': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (totalActiveCpuDurationMs) {
-      SdkPresent<double>(value: final value) => {'totalActiveCpuDurationMs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (totalDurationMs) {
-      SdkPresent<double>(value: final value) => {'totalDurationMs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (totalEgressBytes) {
-      SdkPresent<double>(value: final value) => {'totalEgressBytes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (totalIngressBytes) {
-      SdkPresent<double>(value: final value) => {'totalIngressBytes': value,},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-    ...switch (v0) {
-      SdkPresent<NamedSandboxV0>(value: final value) => {'v0': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (vcpus) {
-      SdkPresent<double>(value: final value) => {'vcpus': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (architecture) {
+          SdkPresent<NamedSandboxArchitecture>(value: final value) => {
+              'architecture': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        'currentSessionId': currentSessionId,
+        ...switch (currentSnapshotId) {
+          SdkPresent<String>(value: final value) => {
+              'currentSnapshotId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (cwd) {
+          SdkPresent<String>(value: final value) => {
+              'cwd': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiresAt) {
+          SdkPresent<double>(value: final value) => {
+              'expiresAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (failoverRegions) {
+          SdkPresent<List<NamedSandboxFailoverRegionsItem>>(
+            value: final value
+          ) =>
+            {
+              'failoverRegions': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (image) {
+          SdkPresent<String>(value: final value) => {
+              'image': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (keepLastSnapshots) {
+          SdkPresent<NamedSandboxKeepLastSnapshots>(value: final value) => {
+              'keepLastSnapshots': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (memory) {
+          SdkPresent<double>(value: final value) => {
+              'memory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (mounts) {
+          SdkPresent<Map<String, NamedSandboxMountsValue>>(
+            value: final value
+          ) =>
+            {
+              'mounts':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        ...switch (networkId) {
+          SdkPresent<String>(value: final value) => {
+              'networkId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (networkPolicy) {
+          SdkPresent<NamedSandboxNetworkPolicy>(value: final value) => {
+              'networkPolicy': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'persistent': persistent.toJson(),
+        ...switch (region) {
+          SdkPresent<String>(value: final value) => {
+              'region': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (runtime) {
+          SdkPresent<String>(value: final value) => {
+              'runtime': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (snapshotExpiration) {
+          SdkPresent<double>(value: final value) => {
+              'snapshotExpiration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'status': status.toJson(),
+        'statusUpdatedAt': statusUpdatedAt,
+        ...switch (tags) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'tags': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timeout) {
+          SdkPresent<double>(value: final value) => {
+              'timeout': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (totalActiveCpuDurationMs) {
+          SdkPresent<double>(value: final value) => {
+              'totalActiveCpuDurationMs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (totalDurationMs) {
+          SdkPresent<double>(value: final value) => {
+              'totalDurationMs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (totalEgressBytes) {
+          SdkPresent<double>(value: final value) => {
+              'totalEgressBytes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (totalIngressBytes) {
+          SdkPresent<double>(value: final value) => {
+              'totalIngressBytes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+        ...switch (v0) {
+          SdkPresent<NamedSandboxV0>(value: final value) => {
+              'v0': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (vcpus) {
+          SdkPresent<double>(value: final value) => {
+              'vcpus': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

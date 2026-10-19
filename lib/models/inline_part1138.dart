@@ -8,118 +8,218 @@ part of 'inline.dart';
 class UpdateTeamsRequestBodyRemoteCaching {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Enable or disable remote caching for the team.
   final SdkOptional<bool> enabled;
 
-  const UpdateTeamsRequestBodyRemoteCaching({this.enabled = const SdkOmitted()});
+  const UpdateTeamsRequestBodyRemoteCaching(
+      {this.enabled = const SdkOmitted()});
 
-  UpdateTeamsRequestBodyRemoteCaching Function({SdkOptional<bool> enabled}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyRemoteCaching Function({SdkOptional<bool> enabled})
+      get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyRemoteCaching _copyWith({Object? enabled = sdkOmittedValue}) => UpdateTeamsRequestBodyRemoteCaching(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<bool>,
-  );
+  UpdateTeamsRequestBodyRemoteCaching _copyWith(
+          {Object? enabled = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyRemoteCaching(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<bool>,
+      );
 
-  factory UpdateTeamsRequestBodyRemoteCaching.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyRemoteCaching(
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] as bool?)!) : const SdkOmitted(),
-  );
+  factory UpdateTeamsRequestBodyRemoteCaching.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyRemoteCaching(
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] as bool?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enabled) {
-      SdkPresent<bool>(value: final value) => {'enabled': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enabled) {
+          SdkPresent<bool>(value: final value) => {
+              'enabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Allows to protect project deployments with a password
 class UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Specify if the password will apply to every Deployment Target or just Preview
-  final UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType deploymentType;
+  final UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
+      deploymentType;
+
   /// The password that will be used to protect Project Deployments
   final SdkOptional<String?> password;
 
-  const UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection({required this.deploymentType, this.password = const SdkOmitted()});
+  const UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection(
+      {required this.deploymentType, this.password = const SdkOmitted()});
 
-  UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection Function({UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType deploymentType, SdkOptional<String?> password}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection Function(
+      {UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
+          deploymentType,
+      SdkOptional<String?> password}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue, Object? password = sdkOmittedValue}) => UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType,
-    password: identical(password, sdkOmittedValue) ? this.password : password as SdkOptional<String?>,
-  );
+  UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue,
+          Object? password = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType,
+        password: identical(password, sdkOmittedValue)
+            ? this.password
+            : password as SdkOptional<String?>,
+      );
 
-  factory UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection(
-    deploymentType: (json['deploymentType'] != null ? UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-    password: json.containsKey('password') ? SdkPresent(json['password'] as String?) : const SdkOmitted(),
-  );
+  factory UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection(
+        deploymentType: (json['deploymentType'] != null
+            ? UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtectionDeploymentType
+                .fromJson(json['deploymentType'] as String)
+            : null)!,
+        password: json.containsKey('password')
+            ? SdkPresent(json['password'] as String?)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-    ...switch (password) {
-      SdkPresent<String?>(value: final value) => {'password': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'deploymentType': deploymentType.toJson(),
+        ...switch (password) {
+          SdkPresent<String?>(value: final value) => {
+              'password': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
 class UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Specify if the Vercel Authentication (SSO Protection) will apply to every Deployment Target or just Preview
-  final UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType deploymentType;
+  final UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
+      deploymentType;
 
-  const UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection({required this.deploymentType});
+  const UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection(
+      {required this.deploymentType});
 
-  UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection Function({UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection Function(
+      {UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType,
-  );
+  UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType,
+      );
 
-  factory UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection(
-    deploymentType: (json['deploymentType'] != null ? UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection(
+        deploymentType: (json['deploymentType'] != null
+            ? UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtectionDeploymentType
+                .fromJson(json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Default deployment protection settings for new projects.
 class UpdateTeamsRequestBodyDefaultDeploymentProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Allows to protect project deployments with a password
-  final SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?> passwordProtection;
+  final SdkOptional<
+          UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?>
+      passwordProtection;
+
   /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
-  final SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?> ssoProtection;
+  final SdkOptional<
+          UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?>
+      ssoProtection;
 
-  const UpdateTeamsRequestBodyDefaultDeploymentProtection({this.passwordProtection = const SdkOmitted(), this.ssoProtection = const SdkOmitted()});
+  const UpdateTeamsRequestBodyDefaultDeploymentProtection(
+      {this.passwordProtection = const SdkOmitted(),
+      this.ssoProtection = const SdkOmitted()});
 
-  UpdateTeamsRequestBodyDefaultDeploymentProtection Function({SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?> passwordProtection, SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?> ssoProtection}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyDefaultDeploymentProtection Function(
+      {SdkOptional<
+              UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?>
+          passwordProtection,
+      SdkOptional<
+              UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?>
+          ssoProtection}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyDefaultDeploymentProtection _copyWith({Object? passwordProtection = sdkOmittedValue, Object? ssoProtection = sdkOmittedValue}) => UpdateTeamsRequestBodyDefaultDeploymentProtection(
-    passwordProtection: identical(passwordProtection, sdkOmittedValue) ? this.passwordProtection : passwordProtection as SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?>,
-    ssoProtection: identical(ssoProtection, sdkOmittedValue) ? this.ssoProtection : ssoProtection as SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?>,
-  );
+  UpdateTeamsRequestBodyDefaultDeploymentProtection _copyWith(
+          {Object? passwordProtection = sdkOmittedValue,
+          Object? ssoProtection = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyDefaultDeploymentProtection(
+        passwordProtection: identical(passwordProtection, sdkOmittedValue)
+            ? this.passwordProtection
+            : passwordProtection as SdkOptional<
+                UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?>,
+        ssoProtection: identical(ssoProtection, sdkOmittedValue)
+            ? this.ssoProtection
+            : ssoProtection as SdkOptional<
+                UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?>,
+      );
 
-  factory UpdateTeamsRequestBodyDefaultDeploymentProtection.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyDefaultDeploymentProtection(
-    passwordProtection: json.containsKey('passwordProtection') ? SdkPresent(json['passwordProtection'] != null ? UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection.fromJson(json['passwordProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    ssoProtection: json.containsKey('ssoProtection') ? SdkPresent(json['ssoProtection'] != null ? UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection.fromJson(json['ssoProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-  );
+  factory UpdateTeamsRequestBodyDefaultDeploymentProtection.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyDefaultDeploymentProtection(
+        passwordProtection: json.containsKey('passwordProtection')
+            ? SdkPresent(json['passwordProtection'] != null
+                ? UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection
+                    .fromJson(
+                        json['passwordProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        ssoProtection: json.containsKey('ssoProtection')
+            ? SdkPresent(json['ssoProtection'] != null
+                ? UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection
+                    .fromJson(json['ssoProtection'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (passwordProtection) {
-      SdkPresent<UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?>(value: final value) => {'passwordProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoProtection) {
-      SdkPresent<UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?>(value: final value) => {'ssoProtection': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (passwordProtection) {
+          SdkPresent<
+                UpdateTeamsRequestBodyDefaultDeploymentProtectionPasswordProtection?>(
+            value: final value
+          ) =>
+            {
+              'passwordProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoProtection) {
+          SdkPresent<
+                UpdateTeamsRequestBodyDefaultDeploymentProtectionSsoProtection?>(
+            value: final value
+          ) =>
+            {
+              'ssoProtection': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Default Passport configuration for new projects.
@@ -127,165 +227,325 @@ class UpdateTeamsRequestBodyDefaultPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String connectorId;
-  final SdkOptional<UpdateTeamsRequestBodyDefaultPassportDeploymentType> deploymentType;
+  final SdkOptional<UpdateTeamsRequestBodyDefaultPassportDeploymentType>
+      deploymentType;
 
-  const UpdateTeamsRequestBodyDefaultPassport({required this.connectorId, this.deploymentType = const SdkOmitted()});
+  const UpdateTeamsRequestBodyDefaultPassport(
+      {required this.connectorId, this.deploymentType = const SdkOmitted()});
 
-  UpdateTeamsRequestBodyDefaultPassport Function({String connectorId, SdkOptional<UpdateTeamsRequestBodyDefaultPassportDeploymentType> deploymentType}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyDefaultPassport Function(
+      {String connectorId,
+      SdkOptional<UpdateTeamsRequestBodyDefaultPassportDeploymentType>
+          deploymentType}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyDefaultPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UpdateTeamsRequestBodyDefaultPassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as SdkOptional<UpdateTeamsRequestBodyDefaultPassportDeploymentType>,
-  );
+  UpdateTeamsRequestBodyDefaultPassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyDefaultPassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType as SdkOptional<
+                UpdateTeamsRequestBodyDefaultPassportDeploymentType>,
+      );
 
-  factory UpdateTeamsRequestBodyDefaultPassport.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyDefaultPassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: json['deploymentType'] != null ? SdkPresent((json['deploymentType'] != null ? UpdateTeamsRequestBodyDefaultPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateTeamsRequestBodyDefaultPassport.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyDefaultPassport(
+        connectorId: (json['connectorId'] as String?)!,
+        deploymentType: json['deploymentType'] != null
+            ? SdkPresent((json['deploymentType'] != null
+                ? UpdateTeamsRequestBodyDefaultPassportDeploymentType.fromJson(
+                    json['deploymentType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    ...switch (deploymentType) {
-      SdkPresent<UpdateTeamsRequestBodyDefaultPassportDeploymentType>(value: final value) => {'deploymentType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'connectorId': connectorId,
+        ...switch (deploymentType) {
+          SdkPresent<UpdateTeamsRequestBodyDefaultPassportDeploymentType>(
+            value: final value
+          ) =>
+            {
+              'deploymentType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateTeamsRequestBodyDefaultExpirationSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The time period to keep non-production deployments for
-  final SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration> expiration;
+  final SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration>
+      expiration;
+
   /// The time period to keep production deployments for
-  final SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction> expirationProduction;
+  final SdkOptional<
+          UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction>
+      expirationProduction;
+
   /// The time period to keep canceled deployments for
-  final SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled> expirationCanceled;
+  final SdkOptional<
+          UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled>
+      expirationCanceled;
+
   /// The time period to keep errored deployments for
-  final SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored> expirationErrored;
+  final SdkOptional<
+          UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored>
+      expirationErrored;
+
   /// When true, opts a Pro team out of the upcoming deployment-storage retention reduce. Does not change expiration settings. Unmetered teams also require acknowledgeStorageBilling.
   final SdkOptional<bool> keepCurrentRetention;
+
   /// Required with keepCurrentRetention for unmetered Pro teams; acknowledges that keeping current retention will incur storage billing on a later date.
   final SdkOptional<bool> acknowledgeStorageBilling;
 
-  const UpdateTeamsRequestBodyDefaultExpirationSettings({this.expiration = const SdkOmitted(), this.expirationProduction = const SdkOmitted(), this.expirationCanceled = const SdkOmitted(), this.expirationErrored = const SdkOmitted(), this.keepCurrentRetention = const SdkOmitted(), this.acknowledgeStorageBilling = const SdkOmitted()});
+  const UpdateTeamsRequestBodyDefaultExpirationSettings(
+      {this.expiration = const SdkOmitted(),
+      this.expirationProduction = const SdkOmitted(),
+      this.expirationCanceled = const SdkOmitted(),
+      this.expirationErrored = const SdkOmitted(),
+      this.keepCurrentRetention = const SdkOmitted(),
+      this.acknowledgeStorageBilling = const SdkOmitted()});
 
-  UpdateTeamsRequestBodyDefaultExpirationSettings Function({SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration> expiration, SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction> expirationProduction, SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled> expirationCanceled, SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored> expirationErrored, SdkOptional<bool> keepCurrentRetention, SdkOptional<bool> acknowledgeStorageBilling}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyDefaultExpirationSettings Function(
+      {SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration>
+          expiration,
+      SdkOptional<
+              UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction>
+          expirationProduction,
+      SdkOptional<
+              UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled>
+          expirationCanceled,
+      SdkOptional<
+              UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored>
+          expirationErrored,
+      SdkOptional<bool> keepCurrentRetention,
+      SdkOptional<bool> acknowledgeStorageBilling}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyDefaultExpirationSettings _copyWith({Object? expiration = sdkOmittedValue, Object? expirationProduction = sdkOmittedValue, Object? expirationCanceled = sdkOmittedValue, Object? expirationErrored = sdkOmittedValue, Object? keepCurrentRetention = sdkOmittedValue, Object? acknowledgeStorageBilling = sdkOmittedValue}) => UpdateTeamsRequestBodyDefaultExpirationSettings(
-    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration>,
-    expirationProduction: identical(expirationProduction, sdkOmittedValue) ? this.expirationProduction : expirationProduction as SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction>,
-    expirationCanceled: identical(expirationCanceled, sdkOmittedValue) ? this.expirationCanceled : expirationCanceled as SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled>,
-    expirationErrored: identical(expirationErrored, sdkOmittedValue) ? this.expirationErrored : expirationErrored as SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored>,
-    keepCurrentRetention: identical(keepCurrentRetention, sdkOmittedValue) ? this.keepCurrentRetention : keepCurrentRetention as SdkOptional<bool>,
-    acknowledgeStorageBilling: identical(acknowledgeStorageBilling, sdkOmittedValue) ? this.acknowledgeStorageBilling : acknowledgeStorageBilling as SdkOptional<bool>,
-  );
+  UpdateTeamsRequestBodyDefaultExpirationSettings _copyWith(
+          {Object? expiration = sdkOmittedValue,
+          Object? expirationProduction = sdkOmittedValue,
+          Object? expirationCanceled = sdkOmittedValue,
+          Object? expirationErrored = sdkOmittedValue,
+          Object? keepCurrentRetention = sdkOmittedValue,
+          Object? acknowledgeStorageBilling = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyDefaultExpirationSettings(
+        expiration: identical(expiration, sdkOmittedValue)
+            ? this.expiration
+            : expiration as SdkOptional<
+                UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration>,
+        expirationProduction: identical(expirationProduction, sdkOmittedValue)
+            ? this.expirationProduction
+            : expirationProduction as SdkOptional<
+                UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction>,
+        expirationCanceled: identical(expirationCanceled, sdkOmittedValue)
+            ? this.expirationCanceled
+            : expirationCanceled as SdkOptional<
+                UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled>,
+        expirationErrored: identical(expirationErrored, sdkOmittedValue)
+            ? this.expirationErrored
+            : expirationErrored as SdkOptional<
+                UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored>,
+        keepCurrentRetention: identical(keepCurrentRetention, sdkOmittedValue)
+            ? this.keepCurrentRetention
+            : keepCurrentRetention as SdkOptional<bool>,
+        acknowledgeStorageBilling:
+            identical(acknowledgeStorageBilling, sdkOmittedValue)
+                ? this.acknowledgeStorageBilling
+                : acknowledgeStorageBilling as SdkOptional<bool>,
+      );
 
-  factory UpdateTeamsRequestBodyDefaultExpirationSettings.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyDefaultExpirationSettings(
-    expiration: json['expiration'] != null ? SdkPresent((json['expiration'] != null ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration.fromJson(json['expiration'] as String) : null)!) : const SdkOmitted(),
-    expirationProduction: json['expirationProduction'] != null ? SdkPresent((json['expirationProduction'] != null ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction.fromJson(json['expirationProduction'] as String) : null)!) : const SdkOmitted(),
-    expirationCanceled: json['expirationCanceled'] != null ? SdkPresent((json['expirationCanceled'] != null ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled.fromJson(json['expirationCanceled'] as String) : null)!) : const SdkOmitted(),
-    expirationErrored: json['expirationErrored'] != null ? SdkPresent((json['expirationErrored'] != null ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored.fromJson(json['expirationErrored'] as String) : null)!) : const SdkOmitted(),
-    keepCurrentRetention: json['keepCurrentRetention'] != null ? SdkPresent((json['keepCurrentRetention'] as bool?)!) : const SdkOmitted(),
-    acknowledgeStorageBilling: json['acknowledgeStorageBilling'] != null ? SdkPresent((json['acknowledgeStorageBilling'] as bool?)!) : const SdkOmitted(),
-  );
+  factory UpdateTeamsRequestBodyDefaultExpirationSettings.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyDefaultExpirationSettings(
+        expiration: json['expiration'] != null
+            ? SdkPresent((json['expiration'] != null
+                ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration
+                    .fromJson(json['expiration'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        expirationProduction: json['expirationProduction'] != null
+            ? SdkPresent((json['expirationProduction'] != null
+                ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction
+                    .fromJson(json['expirationProduction'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        expirationCanceled: json['expirationCanceled'] != null
+            ? SdkPresent((json['expirationCanceled'] != null
+                ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled
+                    .fromJson(json['expirationCanceled'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        expirationErrored: json['expirationErrored'] != null
+            ? SdkPresent((json['expirationErrored'] != null
+                ? UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored
+                    .fromJson(json['expirationErrored'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        keepCurrentRetention: json['keepCurrentRetention'] != null
+            ? SdkPresent((json['keepCurrentRetention'] as bool?)!)
+            : const SdkOmitted(),
+        acknowledgeStorageBilling: json['acknowledgeStorageBilling'] != null
+            ? SdkPresent((json['acknowledgeStorageBilling'] as bool?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (expiration) {
-      SdkPresent<UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration>(value: final value) => {'expiration': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expirationProduction) {
-      SdkPresent<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction>(value: final value) => {'expirationProduction': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expirationCanceled) {
-      SdkPresent<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled>(value: final value) => {'expirationCanceled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expirationErrored) {
-      SdkPresent<UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored>(value: final value) => {'expirationErrored': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (keepCurrentRetention) {
-      SdkPresent<bool>(value: final value) => {'keepCurrentRetention': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (acknowledgeStorageBilling) {
-      SdkPresent<bool>(value: final value) => {'acknowledgeStorageBilling': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (expiration) {
+          SdkPresent<UpdateTeamsRequestBodyDefaultExpirationSettingsExpiration>(
+            value: final value
+          ) =>
+            {
+              'expiration': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expirationProduction) {
+          SdkPresent<
+                UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationProduction>(
+            value: final value
+          ) =>
+            {
+              'expirationProduction': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expirationCanceled) {
+          SdkPresent<
+                UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationCanceled>(
+            value: final value
+          ) =>
+            {
+              'expirationCanceled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expirationErrored) {
+          SdkPresent<
+                UpdateTeamsRequestBodyDefaultExpirationSettingsExpirationErrored>(
+            value: final value
+          ) =>
+            {
+              'expirationErrored': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (keepCurrentRetention) {
+          SdkPresent<bool>(value: final value) => {
+              'keepCurrentRetention': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (acknowledgeStorageBilling) {
+          SdkPresent<bool>(value: final value) => {
+              'acknowledgeStorageBilling': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// When enabled, deployment protection settings require stricter permissions (owner-only).
 class UpdateTeamsRequestBodyStrictDeploymentProtectionSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Enable or disable strict deployment protection settings.
   final bool enabled;
 
-  const UpdateTeamsRequestBodyStrictDeploymentProtectionSettings({required this.enabled});
+  const UpdateTeamsRequestBodyStrictDeploymentProtectionSettings(
+      {required this.enabled});
 
-  UpdateTeamsRequestBodyStrictDeploymentProtectionSettings Function({bool enabled}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyStrictDeploymentProtectionSettings Function(
+      {bool enabled}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyStrictDeploymentProtectionSettings _copyWith({Object? enabled = sdkOmittedValue}) => UpdateTeamsRequestBodyStrictDeploymentProtectionSettings(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
-  );
+  UpdateTeamsRequestBodyStrictDeploymentProtectionSettings _copyWith(
+          {Object? enabled = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyStrictDeploymentProtectionSettings(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as bool,
+      );
 
-  factory UpdateTeamsRequestBodyStrictDeploymentProtectionSettings.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyStrictDeploymentProtectionSettings(
-    enabled: (json['enabled'] as bool?)!,
-  );
+  factory UpdateTeamsRequestBodyStrictDeploymentProtectionSettings.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyStrictDeploymentProtectionSettings(
+        enabled: (json['enabled'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled,
-  };
+        'enabled': enabled,
+      };
 }
 
 /// When enabled, creating shareable links requires Owner role.
 class UpdateTeamsRequestBodyStrictShareableLinks {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Enable or disable requiring Owner role to create shareable links.
   final bool enabled;
 
   const UpdateTeamsRequestBodyStrictShareableLinks({required this.enabled});
 
-  UpdateTeamsRequestBodyStrictShareableLinks Function({bool enabled}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyStrictShareableLinks Function({bool enabled})
+      get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyStrictShareableLinks _copyWith({Object? enabled = sdkOmittedValue}) => UpdateTeamsRequestBodyStrictShareableLinks(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
-  );
+  UpdateTeamsRequestBodyStrictShareableLinks _copyWith(
+          {Object? enabled = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyStrictShareableLinks(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as bool,
+      );
 
-  factory UpdateTeamsRequestBodyStrictShareableLinks.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyStrictShareableLinks(
-    enabled: (json['enabled'] as bool?)!,
-  );
+  factory UpdateTeamsRequestBodyStrictShareableLinks.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyStrictShareableLinks(
+        enabled: (json['enabled'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled,
-  };
+        'enabled': enabled,
+      };
 }
 
 /// When enabled, adding, changing, or removing project password protection requires Owner role.
 class UpdateTeamsRequestBodyStrictPasswordProtectionSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Enable or disable requiring Owner role to change project password protection.
   final bool enabled;
 
-  const UpdateTeamsRequestBodyStrictPasswordProtectionSettings({required this.enabled});
+  const UpdateTeamsRequestBodyStrictPasswordProtectionSettings(
+      {required this.enabled});
 
-  UpdateTeamsRequestBodyStrictPasswordProtectionSettings Function({bool enabled}) get copyWith => _copyWith;
+  UpdateTeamsRequestBodyStrictPasswordProtectionSettings Function(
+      {bool enabled}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBodyStrictPasswordProtectionSettings _copyWith({Object? enabled = sdkOmittedValue}) => UpdateTeamsRequestBodyStrictPasswordProtectionSettings(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
-  );
+  UpdateTeamsRequestBodyStrictPasswordProtectionSettings _copyWith(
+          {Object? enabled = sdkOmittedValue}) =>
+      UpdateTeamsRequestBodyStrictPasswordProtectionSettings(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as bool,
+      );
 
-  factory UpdateTeamsRequestBodyStrictPasswordProtectionSettings.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBodyStrictPasswordProtectionSettings(
-    enabled: (json['enabled'] as bool?)!,
-  );
+  factory UpdateTeamsRequestBodyStrictPasswordProtectionSettings.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateTeamsRequestBodyStrictPasswordProtectionSettings(
+        enabled: (json['enabled'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled,
-  };
+        'enabled': enabled,
+      };
 }

@@ -8,31 +8,56 @@ part of 'inline.dart';
 class UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset;
+  final UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function({UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function(
+      {UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-    preset: (json['preset'] != null ? UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+        preset: (json['preset'] != null
+            ? UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
@@ -42,152 +67,364 @@ class UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem {
   final dynamic from;
   final dynamic to;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem({required this.from, required this.to});
+  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem(
+      {required this.from, required this.to});
 
-  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem Function({dynamic from, dynamic to}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem
+      Function({dynamic from, dynamic to}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem _copyWith({Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem(
-    from: identical(from, sdkOmittedValue) ? this.from : from as dynamic,
-    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-  );
+  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem
+      _copyWith(
+              {Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) =>
+          UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem(
+            from:
+                identical(from, sdkOmittedValue) ? this.from : from as dynamic,
+            to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+          );
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem(
-    from: (json['from'])!,
-    to: (json['to'])!,
-  );
+  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem(
+        from: (json['from'])!,
+        to: (json['to'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'from': from,
-    'to': to,
-  };
+        'from': from,
+        'to': to,
+      };
 }
 
 class UpdateMicrofrontendsResponseTrustedSourcesProjectsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
-  final SdkOptional<List<UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>> customAllow;
+  final SdkOptional<
+          List<
+              UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>>
+      customAllow;
   final SdkOptional<String> label;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValue({this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValue(
+      {this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseTrustedSourcesProjectsValue Function({SdkOptional<List<UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>> customAllow, SdkOptional<String> label}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseTrustedSourcesProjectsValue Function(
+      {SdkOptional<
+              List<
+                  UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>>
+          customAllow,
+      SdkOptional<String> label}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseTrustedSourcesProjectsValue _copyWith({Object? customAllow = sdkOmittedValue, Object? label = sdkOmittedValue}) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValue(
-    customAllow: identical(customAllow, sdkOmittedValue) ? this.customAllow : customAllow as SdkOptional<List<UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-  );
+  UpdateMicrofrontendsResponseTrustedSourcesProjectsValue _copyWith(
+          {Object? customAllow = sdkOmittedValue,
+          Object? label = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValue(
+        customAllow: identical(customAllow, sdkOmittedValue)
+            ? this.customAllow
+            : customAllow as SdkOptional<
+                List<
+                    UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>>,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+      );
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValue.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValue(
-    customAllow: json['customAllow'] != null ? SdkPresent(((json['customAllow'] as List?)?.map((e) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValue.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValue(
+        customAllow: json['customAllow'] != null
+            ? SdkPresent(((json['customAllow'] as List?)
+                ?.map((e) =>
+                    UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (customAllow) {
-      SdkPresent<List<UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>>(value: final value) => {'customAllow': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (customAllow) {
+          SdkPresent<
+                List<
+                    UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItem>>(
+            value: final value
+          ) =>
+            {
+              'customAllow': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateMicrofrontendsResponseTrustedSources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Allow same-team Vercel CI access to preview and production deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value.
-  final SdkOptional<UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository> enableVercelCiSameRepository;
-  final SdkOptional<Map<String, List<UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>> oidcProviders;
-  final SdkOptional<Map<String, UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>> projects;
+  final SdkOptional<
+          UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository>
+      enableVercelCiSameRepository;
+  final SdkOptional<
+          Map<
+              String,
+              List<
+                  UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>>
+      oidcProviders;
+  final SdkOptional<
+          Map<String, UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>>
+      projects;
 
-  const UpdateMicrofrontendsResponseTrustedSources({this.enableVercelCiSameRepository = const SdkOmitted(), this.oidcProviders = const SdkOmitted(), this.projects = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseTrustedSources(
+      {this.enableVercelCiSameRepository = const SdkOmitted(),
+      this.oidcProviders = const SdkOmitted(),
+      this.projects = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseTrustedSources Function({SdkOptional<UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository> enableVercelCiSameRepository, SdkOptional<Map<String, List<UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>> oidcProviders, SdkOptional<Map<String, UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>> projects}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseTrustedSources Function(
+      {SdkOptional<
+              UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository>
+          enableVercelCiSameRepository,
+      SdkOptional<
+              Map<
+                  String,
+                  List<
+                      UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>>
+          oidcProviders,
+      SdkOptional<
+              Map<String,
+                  UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>>
+          projects}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseTrustedSources _copyWith({Object? enableVercelCiSameRepository = sdkOmittedValue, Object? oidcProviders = sdkOmittedValue, Object? projects = sdkOmittedValue}) => UpdateMicrofrontendsResponseTrustedSources(
-    enableVercelCiSameRepository: identical(enableVercelCiSameRepository, sdkOmittedValue) ? this.enableVercelCiSameRepository : enableVercelCiSameRepository as SdkOptional<UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository>,
-    oidcProviders: identical(oidcProviders, sdkOmittedValue) ? this.oidcProviders : oidcProviders as SdkOptional<Map<String, List<UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>>,
-    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<Map<String, UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>>,
-  );
+  UpdateMicrofrontendsResponseTrustedSources _copyWith(
+          {Object? enableVercelCiSameRepository = sdkOmittedValue,
+          Object? oidcProviders = sdkOmittedValue,
+          Object? projects = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseTrustedSources(
+        enableVercelCiSameRepository: identical(
+                enableVercelCiSameRepository, sdkOmittedValue)
+            ? this.enableVercelCiSameRepository
+            : enableVercelCiSameRepository as SdkOptional<
+                UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository>,
+        oidcProviders: identical(oidcProviders, sdkOmittedValue)
+            ? this.oidcProviders
+            : oidcProviders as SdkOptional<
+                Map<
+                    String,
+                    List<
+                        UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>>,
+        projects: identical(projects, sdkOmittedValue)
+            ? this.projects
+            : projects as SdkOptional<
+                Map<String,
+                    UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>>,
+      );
 
-  factory UpdateMicrofrontendsResponseTrustedSources.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseTrustedSources(
-    enableVercelCiSameRepository: json['enableVercelCiSameRepository'] != null ? SdkPresent((json['enableVercelCiSameRepository'] != null ? UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(json['enableVercelCiSameRepository'] as bool) : null)!) : const SdkOmitted(),
-    oidcProviders: json['oidcProviders'] != null ? SdkPresent((json['oidcProviders'] == null ? null : Map<String, dynamic>.from(json['oidcProviders'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem.fromJson(item as Map<String, dynamic>)).toList())))!) : const SdkOmitted(),
-    projects: json['projects'] != null ? SdkPresent((json['projects'] == null ? null : Map<String, dynamic>.from(json['projects'] as Map).map((key, value) => MapEntry(key, UpdateMicrofrontendsResponseTrustedSourcesProjectsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-  );
+  factory UpdateMicrofrontendsResponseTrustedSources.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseTrustedSources(
+        enableVercelCiSameRepository: json['enableVercelCiSameRepository'] !=
+                null
+            ? SdkPresent((json['enableVercelCiSameRepository'] != null
+                ? UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository
+                    .fromJson(json['enableVercelCiSameRepository'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        oidcProviders: json['oidcProviders'] != null
+            ? SdkPresent((json['oidcProviders'] == null
+                ? null
+                : Map<String, dynamic>.from(json['oidcProviders'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        (value as List)
+                            .map((item) =>
+                                UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem
+                                    .fromJson(item as Map<String, dynamic>))
+                            .toList())))!)
+            : const SdkOmitted(),
+        projects: json['projects'] != null
+            ? SdkPresent((json['projects'] == null
+                ? null
+                : Map<String, dynamic>.from(json['projects'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        UpdateMicrofrontendsResponseTrustedSourcesProjectsValue
+                            .fromJson(value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enableVercelCiSameRepository) {
-      SdkPresent<UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository>(value: final value) => {'enableVercelCiSameRepository': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (oidcProviders) {
-      SdkPresent<Map<String, List<UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>>(value: final value) => {'oidcProviders': value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projects) {
-      SdkPresent<Map<String, UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>>(value: final value) => {'projects': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enableVercelCiSameRepository) {
+          SdkPresent<
+                UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository>(
+            value: final value
+          ) =>
+            {
+              'enableVercelCiSameRepository': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (oidcProviders) {
+          SdkPresent<
+                Map<
+                    String,
+                    List<
+                        UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItem>>>(
+            value: final value
+          ) =>
+            {
+              'oidcProviders': value.map((key, value) =>
+                  MapEntry(key, value.map((item) => item.toJson()).toList())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projects) {
+          SdkPresent<
+                Map<String,
+                    UpdateMicrofrontendsResponseTrustedSourcesProjectsValue>>(
+            value: final value
+          ) =>
+            {
+              'projects':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateMicrofrontendsResponseUsageStatus {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Timestamp until which throttling is bypassed (project pays list rates for overage).
   final SdkOptional<double> bypassThrottleUntil;
+
   /// Timestamp until which the project has exceeded its CDN allowance.
   final SdkOptional<double> exceededAllowanceUntil;
+
   /// Billing mode. Always 'flat' for flat-rate projects.
   final UpdateMicrofrontendsResponseUsageStatusKind kind;
+
   /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
-  final SdkOptional<UpdateMicrofrontendsResponseUsageStatusTeamThrottled> teamThrottled;
+  final SdkOptional<UpdateMicrofrontendsResponseUsageStatusTeamThrottled>
+      teamThrottled;
+
   /// Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint).
   final SdkOptional<UpdateMicrofrontendsResponseUsageStatusThrottled> throttled;
 
-  const UpdateMicrofrontendsResponseUsageStatus({this.bypassThrottleUntil = const SdkOmitted(), this.exceededAllowanceUntil = const SdkOmitted(), required this.kind, this.teamThrottled = const SdkOmitted(), this.throttled = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseUsageStatus(
+      {this.bypassThrottleUntil = const SdkOmitted(),
+      this.exceededAllowanceUntil = const SdkOmitted(),
+      required this.kind,
+      this.teamThrottled = const SdkOmitted(),
+      this.throttled = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseUsageStatus Function({SdkOptional<double> bypassThrottleUntil, SdkOptional<double> exceededAllowanceUntil, UpdateMicrofrontendsResponseUsageStatusKind kind, SdkOptional<UpdateMicrofrontendsResponseUsageStatusTeamThrottled> teamThrottled, SdkOptional<UpdateMicrofrontendsResponseUsageStatusThrottled> throttled}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseUsageStatus Function(
+      {SdkOptional<double> bypassThrottleUntil,
+      SdkOptional<double> exceededAllowanceUntil,
+      UpdateMicrofrontendsResponseUsageStatusKind kind,
+      SdkOptional<UpdateMicrofrontendsResponseUsageStatusTeamThrottled>
+          teamThrottled,
+      SdkOptional<UpdateMicrofrontendsResponseUsageStatusThrottled>
+          throttled}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseUsageStatus _copyWith({Object? bypassThrottleUntil = sdkOmittedValue, Object? exceededAllowanceUntil = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? teamThrottled = sdkOmittedValue, Object? throttled = sdkOmittedValue}) => UpdateMicrofrontendsResponseUsageStatus(
-    bypassThrottleUntil: identical(bypassThrottleUntil, sdkOmittedValue) ? this.bypassThrottleUntil : bypassThrottleUntil as SdkOptional<double>,
-    exceededAllowanceUntil: identical(exceededAllowanceUntil, sdkOmittedValue) ? this.exceededAllowanceUntil : exceededAllowanceUntil as SdkOptional<double>,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateMicrofrontendsResponseUsageStatusKind,
-    teamThrottled: identical(teamThrottled, sdkOmittedValue) ? this.teamThrottled : teamThrottled as SdkOptional<UpdateMicrofrontendsResponseUsageStatusTeamThrottled>,
-    throttled: identical(throttled, sdkOmittedValue) ? this.throttled : throttled as SdkOptional<UpdateMicrofrontendsResponseUsageStatusThrottled>,
-  );
+  UpdateMicrofrontendsResponseUsageStatus _copyWith(
+          {Object? bypassThrottleUntil = sdkOmittedValue,
+          Object? exceededAllowanceUntil = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? teamThrottled = sdkOmittedValue,
+          Object? throttled = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseUsageStatus(
+        bypassThrottleUntil: identical(bypassThrottleUntil, sdkOmittedValue)
+            ? this.bypassThrottleUntil
+            : bypassThrottleUntil as SdkOptional<double>,
+        exceededAllowanceUntil:
+            identical(exceededAllowanceUntil, sdkOmittedValue)
+                ? this.exceededAllowanceUntil
+                : exceededAllowanceUntil as SdkOptional<double>,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as UpdateMicrofrontendsResponseUsageStatusKind,
+        teamThrottled: identical(teamThrottled, sdkOmittedValue)
+            ? this.teamThrottled
+            : teamThrottled as SdkOptional<
+                UpdateMicrofrontendsResponseUsageStatusTeamThrottled>,
+        throttled: identical(throttled, sdkOmittedValue)
+            ? this.throttled
+            : throttled as SdkOptional<
+                UpdateMicrofrontendsResponseUsageStatusThrottled>,
+      );
 
-  factory UpdateMicrofrontendsResponseUsageStatus.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseUsageStatus(
-    bypassThrottleUntil: json['bypassThrottleUntil'] != null ? SdkPresent(((json['bypassThrottleUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
-    exceededAllowanceUntil: json['exceededAllowanceUntil'] != null ? SdkPresent(((json['exceededAllowanceUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
-    kind: (json['kind'] != null ? UpdateMicrofrontendsResponseUsageStatusKind.fromJson(json['kind'] as String) : null)!,
-    teamThrottled: json['teamThrottled'] != null ? SdkPresent((json['teamThrottled'] != null ? UpdateMicrofrontendsResponseUsageStatusTeamThrottled.fromJson(json['teamThrottled'] as bool) : null)!) : const SdkOmitted(),
-    throttled: json['throttled'] != null ? SdkPresent((json['throttled'] != null ? UpdateMicrofrontendsResponseUsageStatusThrottled.fromJson(json['throttled'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateMicrofrontendsResponseUsageStatus.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseUsageStatus(
+        bypassThrottleUntil: json['bypassThrottleUntil'] != null
+            ? SdkPresent(((json['bypassThrottleUntil'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        exceededAllowanceUntil: json['exceededAllowanceUntil'] != null
+            ? SdkPresent(
+                ((json['exceededAllowanceUntil'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        kind: (json['kind'] != null
+            ? UpdateMicrofrontendsResponseUsageStatusKind.fromJson(
+                json['kind'] as String)
+            : null)!,
+        teamThrottled: json['teamThrottled'] != null
+            ? SdkPresent((json['teamThrottled'] != null
+                ? UpdateMicrofrontendsResponseUsageStatusTeamThrottled.fromJson(
+                    json['teamThrottled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        throttled: json['throttled'] != null
+            ? SdkPresent((json['throttled'] != null
+                ? UpdateMicrofrontendsResponseUsageStatusThrottled.fromJson(
+                    json['throttled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (bypassThrottleUntil) {
-      SdkPresent<double>(value: final value) => {'bypassThrottleUntil': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (exceededAllowanceUntil) {
-      SdkPresent<double>(value: final value) => {'exceededAllowanceUntil': value,},
-      _ => const <String, dynamic>{},
-    },
-    'kind': kind.toJson(),
-    ...switch (teamThrottled) {
-      SdkPresent<UpdateMicrofrontendsResponseUsageStatusTeamThrottled>(value: final value) => {'teamThrottled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (throttled) {
-      SdkPresent<UpdateMicrofrontendsResponseUsageStatusThrottled>(value: final value) => {'throttled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (bypassThrottleUntil) {
+          SdkPresent<double>(value: final value) => {
+              'bypassThrottleUntil': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (exceededAllowanceUntil) {
+          SdkPresent<double>(value: final value) => {
+              'exceededAllowanceUntil': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'kind': kind.toJson(),
+        ...switch (teamThrottled) {
+          SdkPresent<UpdateMicrofrontendsResponseUsageStatusTeamThrottled>(
+            value: final value
+          ) =>
+            {
+              'teamThrottled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (throttled) {
+          SdkPresent<UpdateMicrofrontendsResponseUsageStatusThrottled>(
+            value: final value
+          ) =>
+            {
+              'throttled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateMicrofrontendsResponseWebAnalytics {
@@ -199,43 +436,92 @@ class UpdateMicrofrontendsResponseWebAnalytics {
   final SdkOptional<UpdateMicrofrontendsResponseWebAnalyticsHasData> hasData;
   final String id;
 
-  const UpdateMicrofrontendsResponseWebAnalytics({this.canceledAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id});
+  const UpdateMicrofrontendsResponseWebAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id});
 
-  UpdateMicrofrontendsResponseWebAnalytics Function({SdkOptional<double> canceledAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<UpdateMicrofrontendsResponseWebAnalyticsHasData> hasData, String id}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseWebAnalytics Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<UpdateMicrofrontendsResponseWebAnalyticsHasData> hasData,
+      String id}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseWebAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue}) => UpdateMicrofrontendsResponseWebAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<UpdateMicrofrontendsResponseWebAnalyticsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  UpdateMicrofrontendsResponseWebAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseWebAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData
+                as SdkOptional<UpdateMicrofrontendsResponseWebAnalyticsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory UpdateMicrofrontendsResponseWebAnalytics.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseWebAnalytics(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? UpdateMicrofrontendsResponseWebAnalyticsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  );
+  factory UpdateMicrofrontendsResponseWebAnalytics.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseWebAnalytics(
+        canceledAt: json['canceledAt'] != null
+            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        disabledAt: json['disabledAt'] != null
+            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        enabledAt: json['enabledAt'] != null
+            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        hasData: json['hasData'] != null
+            ? SdkPresent((json['hasData'] != null
+                ? UpdateMicrofrontendsResponseWebAnalyticsHasData.fromJson(
+                    json['hasData'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<UpdateMicrofrontendsResponseWebAnalyticsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<UpdateMicrofrontendsResponseWebAnalyticsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }

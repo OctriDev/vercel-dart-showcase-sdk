@@ -7,176 +7,405 @@ part of 'deployments.dart';
 class CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs> autoExposeSystemEnvs;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs>
+      autoExposeSystemEnvs;
   final SdkOptional<String?> buildCommand;
   final SdkOptional<String?> commandForIgnoringBuildStep;
   final SdkOptional<double> createdAt;
   final SdkOptional<String?> devCommand;
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing> directoryListing;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing>
+      directoryListing;
   final SdkOptional<String?> framework;
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection> gitForkProtection;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection>
+      gitForkProtection;
   final SdkOptional<String?> installCommand;
   final SdkOptional<String?> monorepoManager;
   final SdkOptional<String> nodeVersion;
   final SdkOptional<String?> outputDirectory;
   final SdkOptional<String?> rootDirectory;
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory>
+      sourceFilesOutsideRootDirectory;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings({this.autoExposeSystemEnvs = const SdkOmitted(), this.buildCommand = const SdkOmitted(), this.commandForIgnoringBuildStep = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.devCommand = const SdkOmitted(), this.directoryListing = const SdkOmitted(), this.framework = const SdkOmitted(), this.gitForkProtection = const SdkOmitted(), this.installCommand = const SdkOmitted(), this.monorepoManager = const SdkOmitted(), this.nodeVersion = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.rootDirectory = const SdkOmitted(), this.sourceFilesOutsideRootDirectory = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings(
+      {this.autoExposeSystemEnvs = const SdkOmitted(),
+      this.buildCommand = const SdkOmitted(),
+      this.commandForIgnoringBuildStep = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.devCommand = const SdkOmitted(),
+      this.directoryListing = const SdkOmitted(),
+      this.framework = const SdkOmitted(),
+      this.gitForkProtection = const SdkOmitted(),
+      this.installCommand = const SdkOmitted(),
+      this.monorepoManager = const SdkOmitted(),
+      this.nodeVersion = const SdkOmitted(),
+      this.outputDirectory = const SdkOmitted(),
+      this.rootDirectory = const SdkOmitted(),
+      this.sourceFilesOutsideRootDirectory = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings Function({SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs> autoExposeSystemEnvs, SdkOptional<String?> buildCommand, SdkOptional<String?> commandForIgnoringBuildStep, SdkOptional<double> createdAt, SdkOptional<String?> devCommand, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing> directoryListing, SdkOptional<String?> framework, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection> gitForkProtection, SdkOptional<String?> installCommand, SdkOptional<String?> monorepoManager, SdkOptional<String> nodeVersion, SdkOptional<String?> outputDirectory, SdkOptional<String?> rootDirectory, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings Function(
+      {SdkOptional<
+              CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs>
+          autoExposeSystemEnvs,
+      SdkOptional<String?> buildCommand,
+      SdkOptional<String?> commandForIgnoringBuildStep,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> devCommand,
+      SdkOptional<
+              CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing>
+          directoryListing,
+      SdkOptional<String?> framework,
+      SdkOptional<
+              CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection>
+          gitForkProtection,
+      SdkOptional<String?> installCommand,
+      SdkOptional<String?> monorepoManager,
+      SdkOptional<String> nodeVersion,
+      SdkOptional<String?> outputDirectory,
+      SdkOptional<String?> rootDirectory,
+      SdkOptional<
+              CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory>
+          sourceFilesOutsideRootDirectory}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings _copyWith({Object? autoExposeSystemEnvs = sdkOmittedValue, Object? buildCommand = sdkOmittedValue, Object? commandForIgnoringBuildStep = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? directoryListing = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? gitForkProtection = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? monorepoManager = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? rootDirectory = sdkOmittedValue, Object? sourceFilesOutsideRootDirectory = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings(
-    autoExposeSystemEnvs: identical(autoExposeSystemEnvs, sdkOmittedValue) ? this.autoExposeSystemEnvs : autoExposeSystemEnvs as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs>,
-    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String?>,
-    commandForIgnoringBuildStep: identical(commandForIgnoringBuildStep, sdkOmittedValue) ? this.commandForIgnoringBuildStep : commandForIgnoringBuildStep as SdkOptional<String?>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String?>,
-    directoryListing: identical(directoryListing, sdkOmittedValue) ? this.directoryListing : directoryListing as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing>,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<String?>,
-    gitForkProtection: identical(gitForkProtection, sdkOmittedValue) ? this.gitForkProtection : gitForkProtection as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection>,
-    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String?>,
-    monorepoManager: identical(monorepoManager, sdkOmittedValue) ? this.monorepoManager : monorepoManager as SdkOptional<String?>,
-    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as SdkOptional<String>,
-    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String?>,
-    rootDirectory: identical(rootDirectory, sdkOmittedValue) ? this.rootDirectory : rootDirectory as SdkOptional<String?>,
-    sourceFilesOutsideRootDirectory: identical(sourceFilesOutsideRootDirectory, sdkOmittedValue) ? this.sourceFilesOutsideRootDirectory : sourceFilesOutsideRootDirectory as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory>,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings
+      _copyWith(
+              {Object? autoExposeSystemEnvs = sdkOmittedValue,
+              Object? buildCommand = sdkOmittedValue,
+              Object? commandForIgnoringBuildStep = sdkOmittedValue,
+              Object? createdAt = sdkOmittedValue,
+              Object? devCommand = sdkOmittedValue,
+              Object? directoryListing = sdkOmittedValue,
+              Object? framework = sdkOmittedValue,
+              Object? gitForkProtection = sdkOmittedValue,
+              Object? installCommand = sdkOmittedValue,
+              Object? monorepoManager = sdkOmittedValue,
+              Object? nodeVersion = sdkOmittedValue,
+              Object? outputDirectory = sdkOmittedValue,
+              Object? rootDirectory = sdkOmittedValue,
+              Object? sourceFilesOutsideRootDirectory = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings(
+            autoExposeSystemEnvs: identical(
+                    autoExposeSystemEnvs, sdkOmittedValue)
+                ? this.autoExposeSystemEnvs
+                : autoExposeSystemEnvs as SdkOptional<
+                    CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs>,
+            buildCommand: identical(buildCommand, sdkOmittedValue)
+                ? this.buildCommand
+                : buildCommand as SdkOptional<String?>,
+            commandForIgnoringBuildStep:
+                identical(commandForIgnoringBuildStep, sdkOmittedValue)
+                    ? this.commandForIgnoringBuildStep
+                    : commandForIgnoringBuildStep as SdkOptional<String?>,
+            createdAt: identical(createdAt, sdkOmittedValue)
+                ? this.createdAt
+                : createdAt as SdkOptional<double>,
+            devCommand: identical(devCommand, sdkOmittedValue)
+                ? this.devCommand
+                : devCommand as SdkOptional<String?>,
+            directoryListing: identical(directoryListing, sdkOmittedValue)
+                ? this.directoryListing
+                : directoryListing as SdkOptional<
+                    CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing>,
+            framework: identical(framework, sdkOmittedValue)
+                ? this.framework
+                : framework as SdkOptional<String?>,
+            gitForkProtection: identical(gitForkProtection, sdkOmittedValue)
+                ? this.gitForkProtection
+                : gitForkProtection as SdkOptional<
+                    CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection>,
+            installCommand: identical(installCommand, sdkOmittedValue)
+                ? this.installCommand
+                : installCommand as SdkOptional<String?>,
+            monorepoManager: identical(monorepoManager, sdkOmittedValue)
+                ? this.monorepoManager
+                : monorepoManager as SdkOptional<String?>,
+            nodeVersion: identical(nodeVersion, sdkOmittedValue)
+                ? this.nodeVersion
+                : nodeVersion as SdkOptional<String>,
+            outputDirectory: identical(outputDirectory, sdkOmittedValue)
+                ? this.outputDirectory
+                : outputDirectory as SdkOptional<String?>,
+            rootDirectory: identical(rootDirectory, sdkOmittedValue)
+                ? this.rootDirectory
+                : rootDirectory as SdkOptional<String?>,
+            sourceFilesOutsideRootDirectory: identical(
+                    sourceFilesOutsideRootDirectory, sdkOmittedValue)
+                ? this.sourceFilesOutsideRootDirectory
+                : sourceFilesOutsideRootDirectory as SdkOptional<
+                    CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory>,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings(
-    autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null ? SdkPresent((json['autoExposeSystemEnvs'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs.fromJson(json['autoExposeSystemEnvs'] as bool) : null)!) : const SdkOmitted(),
-    buildCommand: json.containsKey('buildCommand') ? SdkPresent(json['buildCommand'] as String?) : const SdkOmitted(),
-    commandForIgnoringBuildStep: json.containsKey('commandForIgnoringBuildStep') ? SdkPresent(json['commandForIgnoringBuildStep'] as String?) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    devCommand: json.containsKey('devCommand') ? SdkPresent(json['devCommand'] as String?) : const SdkOmitted(),
-    directoryListing: json['directoryListing'] != null ? SdkPresent((json['directoryListing'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing.fromJson(json['directoryListing'] as bool) : null)!) : const SdkOmitted(),
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] as String?) : const SdkOmitted(),
-    gitForkProtection: json['gitForkProtection'] != null ? SdkPresent((json['gitForkProtection'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection.fromJson(json['gitForkProtection'] as bool) : null)!) : const SdkOmitted(),
-    installCommand: json.containsKey('installCommand') ? SdkPresent(json['installCommand'] as String?) : const SdkOmitted(),
-    monorepoManager: json.containsKey('monorepoManager') ? SdkPresent(json['monorepoManager'] as String?) : const SdkOmitted(),
-    nodeVersion: json['nodeVersion'] != null ? SdkPresent((json['nodeVersion'] as String?)!) : const SdkOmitted(),
-    outputDirectory: json.containsKey('outputDirectory') ? SdkPresent(json['outputDirectory'] as String?) : const SdkOmitted(),
-    rootDirectory: json.containsKey('rootDirectory') ? SdkPresent(json['rootDirectory'] as String?) : const SdkOmitted(),
-    sourceFilesOutsideRootDirectory: json['sourceFilesOutsideRootDirectory'] != null ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory.fromJson(json['sourceFilesOutsideRootDirectory'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettings(
+        autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null
+            ? SdkPresent((json['autoExposeSystemEnvs'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs
+                    .fromJson(json['autoExposeSystemEnvs'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        buildCommand: json.containsKey('buildCommand')
+            ? SdkPresent(json['buildCommand'] as String?)
+            : const SdkOmitted(),
+        commandForIgnoringBuildStep:
+            json.containsKey('commandForIgnoringBuildStep')
+                ? SdkPresent(json['commandForIgnoringBuildStep'] as String?)
+                : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        devCommand: json.containsKey('devCommand')
+            ? SdkPresent(json['devCommand'] as String?)
+            : const SdkOmitted(),
+        directoryListing: json['directoryListing'] != null
+            ? SdkPresent((json['directoryListing'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing
+                    .fromJson(json['directoryListing'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] as String?)
+            : const SdkOmitted(),
+        gitForkProtection: json['gitForkProtection'] != null
+            ? SdkPresent((json['gitForkProtection'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection
+                    .fromJson(json['gitForkProtection'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        installCommand: json.containsKey('installCommand')
+            ? SdkPresent(json['installCommand'] as String?)
+            : const SdkOmitted(),
+        monorepoManager: json.containsKey('monorepoManager')
+            ? SdkPresent(json['monorepoManager'] as String?)
+            : const SdkOmitted(),
+        nodeVersion: json['nodeVersion'] != null
+            ? SdkPresent((json['nodeVersion'] as String?)!)
+            : const SdkOmitted(),
+        outputDirectory: json.containsKey('outputDirectory')
+            ? SdkPresent(json['outputDirectory'] as String?)
+            : const SdkOmitted(),
+        rootDirectory: json.containsKey('rootDirectory')
+            ? SdkPresent(json['rootDirectory'] as String?)
+            : const SdkOmitted(),
+        sourceFilesOutsideRootDirectory: json[
+                    'sourceFilesOutsideRootDirectory'] !=
+                null
+            ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory
+                    .fromJson(json['sourceFilesOutsideRootDirectory'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (autoExposeSystemEnvs) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs>(value: final value) => {'autoExposeSystemEnvs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildCommand) {
-      SdkPresent<String?>(value: final value) => {'buildCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (commandForIgnoringBuildStep) {
-      SdkPresent<String?>(value: final value) => {'commandForIgnoringBuildStep': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (devCommand) {
-      SdkPresent<String?>(value: final value) => {'devCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (directoryListing) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing>(value: final value) => {'directoryListing': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (framework) {
-      SdkPresent<String?>(value: final value) => {'framework': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitForkProtection) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection>(value: final value) => {'gitForkProtection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (installCommand) {
-      SdkPresent<String?>(value: final value) => {'installCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (monorepoManager) {
-      SdkPresent<String?>(value: final value) => {'monorepoManager': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (nodeVersion) {
-      SdkPresent<String>(value: final value) => {'nodeVersion': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (outputDirectory) {
-      SdkPresent<String?>(value: final value) => {'outputDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rootDirectory) {
-      SdkPresent<String?>(value: final value) => {'rootDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sourceFilesOutsideRootDirectory) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory>(value: final value) => {'sourceFilesOutsideRootDirectory': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (autoExposeSystemEnvs) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsAutoExposeSystemEnvs>(
+            value: final value
+          ) =>
+            {
+              'autoExposeSystemEnvs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'buildCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (commandForIgnoringBuildStep) {
+          SdkPresent<String?>(value: final value) => {
+              'commandForIgnoringBuildStep': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (devCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'devCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (directoryListing) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsDirectoryListing>(
+            value: final value
+          ) =>
+            {
+              'directoryListing': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (framework) {
+          SdkPresent<String?>(value: final value) => {
+              'framework': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitForkProtection) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsGitForkProtection>(
+            value: final value
+          ) =>
+            {
+              'gitForkProtection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (installCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'installCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (monorepoManager) {
+          SdkPresent<String?>(value: final value) => {
+              'monorepoManager': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (nodeVersion) {
+          SdkPresent<String>(value: final value) => {
+              'nodeVersion': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (outputDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'outputDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rootDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'rootDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sourceFilesOutsideRootDirectory) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory>(
+            value: final value
+          ) =>
+            {
+              'sourceFilesOutsideRootDirectory': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Runtime-specific entrypoint locator from `vercel.json`.
   final String entrypoint;
+
   /// Names of the schedules that dispatch to this entrypoint, in config order.
   final List<String> scheduleNames;
+
   /// Project-relative source file that contains the entrypoint.
   final String sourceFile;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem({required this.entrypoint, required this.scheduleNames, required this.sourceFile});
+  const CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem(
+      {required this.entrypoint,
+      required this.scheduleNames,
+      required this.sourceFile});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem Function({String entrypoint, List<String> scheduleNames, String sourceFile}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem
+          Function({String entrypoint, List<String> scheduleNames, String sourceFile})
+      get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem _copyWith({Object? entrypoint = sdkOmittedValue, Object? scheduleNames = sdkOmittedValue, Object? sourceFile = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem(
-    entrypoint: identical(entrypoint, sdkOmittedValue) ? this.entrypoint : entrypoint as String,
-    scheduleNames: identical(scheduleNames, sdkOmittedValue) ? this.scheduleNames : scheduleNames as List<String>,
-    sourceFile: identical(sourceFile, sdkOmittedValue) ? this.sourceFile : sourceFile as String,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem
+      _copyWith(
+              {Object? entrypoint = sdkOmittedValue,
+              Object? scheduleNames = sdkOmittedValue,
+              Object? sourceFile = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem(
+            entrypoint: identical(entrypoint, sdkOmittedValue)
+                ? this.entrypoint
+                : entrypoint as String,
+            scheduleNames: identical(scheduleNames, sdkOmittedValue)
+                ? this.scheduleNames
+                : scheduleNames as List<String>,
+            sourceFile: identical(sourceFile, sdkOmittedValue)
+                ? this.sourceFile
+                : sourceFile as String,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem(
-    entrypoint: (json['entrypoint'] as String?)!,
-    scheduleNames: ((json['scheduleNames'] as List?)?.map((e) => e as String).toList())!,
-    sourceFile: (json['sourceFile'] as String?)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem(
+        entrypoint: (json['entrypoint'] as String?)!,
+        scheduleNames: ((json['scheduleNames'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+        sourceFile: (json['sourceFile'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'entrypoint': entrypoint,
-    'scheduleNames': scheduleNames,
-    'sourceFile': sourceFile,
-  };
+        'entrypoint': entrypoint,
+        'scheduleNames': scheduleNames,
+        'sourceFile': sourceFile,
+      };
 }
 
 /// Set when this build produces a function for schedule entrypoints.
 class CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem> entrypoints;
+  final List<
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem>
+      entrypoints;
+
   /// Function output path every schedule in this build targets.
   final String outputPath;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction({required this.entrypoints, required this.outputPath});
+  const CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction(
+      {required this.entrypoints, required this.outputPath});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction Function({List<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem> entrypoints, String outputPath}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction Function(
+      {List<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem>
+          entrypoints,
+      String outputPath}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction _copyWith({Object? entrypoints = sdkOmittedValue, Object? outputPath = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction(
-    entrypoints: identical(entrypoints, sdkOmittedValue) ? this.entrypoints : entrypoints as List<CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem>,
-    outputPath: identical(outputPath, sdkOmittedValue) ? this.outputPath : outputPath as String,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction
+      _copyWith(
+              {Object? entrypoints = sdkOmittedValue,
+              Object? outputPath = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction(
+            entrypoints: identical(entrypoints, sdkOmittedValue)
+                ? this.entrypoints
+                : entrypoints as List<
+                    CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem>,
+            outputPath: identical(outputPath, sdkOmittedValue)
+                ? this.outputPath
+                : outputPath as String,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction(
-    entrypoints: ((json['entrypoints'] as List?)?.map((e) => CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    outputPath: (json['outputPath'] as String?)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunction(
+        entrypoints: ((json['entrypoints'] as List?)
+            ?.map((e) =>
+                CreateDeploymentResponseVariant1ServicesItemVariant1BuilderConfigScheduleFunctionEntrypointsItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        outputPath: (json['outputPath'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'entrypoints': entrypoints.map((item) => item.toJson()).toList(),
-    'outputPath': outputPath,
-  };
+        'entrypoints': entrypoints.map((item) => item.toJson()).toList(),
+        'outputPath': outputPath,
+      };
 }

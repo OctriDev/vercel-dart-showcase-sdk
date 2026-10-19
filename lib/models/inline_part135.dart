@@ -5,24 +5,28 @@ part of 'inline.dart';
 
 // Inline operation models (part 135)
 final class GetProjectsResponseLinkVariant1Sourceless {
-
   final bool value;
 
   const GetProjectsResponseLinkVariant1Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant1Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant1Sourceless._(value);
+  factory GetProjectsResponseLinkVariant1Sourceless.fromJson(bool value) =>
+      GetProjectsResponseLinkVariant1Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant1Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant1Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant1Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseLinkVariant1Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseLinkVariant1Type {
@@ -30,14 +34,18 @@ enum GetProjectsResponseLinkVariant1Type {
 
   static GetProjectsResponseLinkVariant1Type fromJson(String value) {
     switch (value) {
-      case 'github-limited': return GetProjectsResponseLinkVariant1Type.githubLimited;
-      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant1Type: $value');
+      case 'github-limited':
+        return GetProjectsResponseLinkVariant1Type.githubLimited;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseLinkVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant1Type.githubLimited: return 'github-limited';
+      case GetProjectsResponseLinkVariant1Type.githubLimited:
+        return 'github-limited';
     }
   }
 
@@ -46,24 +54,28 @@ enum GetProjectsResponseLinkVariant1Type {
 }
 
 final class GetProjectsResponseLinkVariant2Sourceless {
-
   final bool value;
 
   const GetProjectsResponseLinkVariant2Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant2Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant2Sourceless._(value);
+  factory GetProjectsResponseLinkVariant2Sourceless.fromJson(bool value) =>
+      GetProjectsResponseLinkVariant2Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant2Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant2Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant2Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseLinkVariant2Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseLinkVariant2Type {
@@ -71,14 +83,18 @@ enum GetProjectsResponseLinkVariant2Type {
 
   static GetProjectsResponseLinkVariant2Type fromJson(String value) {
     switch (value) {
-      case 'github-custom-host': return GetProjectsResponseLinkVariant2Type.githubCustomHost;
-      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant2Type: $value');
+      case 'github-custom-host':
+        return GetProjectsResponseLinkVariant2Type.githubCustomHost;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseLinkVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant2Type.githubCustomHost: return 'github-custom-host';
+      case GetProjectsResponseLinkVariant2Type.githubCustomHost:
+        return 'github-custom-host';
     }
   }
 
@@ -87,24 +103,28 @@ enum GetProjectsResponseLinkVariant2Type {
 }
 
 final class GetProjectsResponseLinkVariant3Sourceless {
-
   final bool value;
 
   const GetProjectsResponseLinkVariant3Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant3Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant3Sourceless._(value);
+  factory GetProjectsResponseLinkVariant3Sourceless.fromJson(bool value) =>
+      GetProjectsResponseLinkVariant3Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant3Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant3Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant3Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseLinkVariant3Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseLinkVariant3Type {
@@ -112,14 +132,18 @@ enum GetProjectsResponseLinkVariant3Type {
 
   static GetProjectsResponseLinkVariant3Type fromJson(String value) {
     switch (value) {
-      case 'gitlab': return GetProjectsResponseLinkVariant3Type.gitlab;
-      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant3Type: $value');
+      case 'gitlab':
+        return GetProjectsResponseLinkVariant3Type.gitlab;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseLinkVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant3Type.gitlab: return 'gitlab';
+      case GetProjectsResponseLinkVariant3Type.gitlab:
+        return 'gitlab';
     }
   }
 
@@ -128,24 +152,28 @@ enum GetProjectsResponseLinkVariant3Type {
 }
 
 final class GetProjectsResponseLinkVariant4Sourceless {
-
   final bool value;
 
   const GetProjectsResponseLinkVariant4Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant4Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant4Sourceless._(value);
+  factory GetProjectsResponseLinkVariant4Sourceless.fromJson(bool value) =>
+      GetProjectsResponseLinkVariant4Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant4Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant4Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant4Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseLinkVariant4Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseLinkVariant4Type {
@@ -153,14 +181,18 @@ enum GetProjectsResponseLinkVariant4Type {
 
   static GetProjectsResponseLinkVariant4Type fromJson(String value) {
     switch (value) {
-      case 'bitbucket': return GetProjectsResponseLinkVariant4Type.bitbucket;
-      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant4Type: $value');
+      case 'bitbucket':
+        return GetProjectsResponseLinkVariant4Type.bitbucket;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseLinkVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant4Type.bitbucket: return 'bitbucket';
+      case GetProjectsResponseLinkVariant4Type.bitbucket:
+        return 'bitbucket';
     }
   }
 
@@ -169,24 +201,28 @@ enum GetProjectsResponseLinkVariant4Type {
 }
 
 final class GetProjectsResponseLinkVariant5Sourceless {
-
   final bool value;
 
   const GetProjectsResponseLinkVariant5Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant5Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant5Sourceless._(value);
+  factory GetProjectsResponseLinkVariant5Sourceless.fromJson(bool value) =>
+      GetProjectsResponseLinkVariant5Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant5Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant5Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant5Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseLinkVariant5Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseLinkVariant5Type {
@@ -194,14 +230,18 @@ enum GetProjectsResponseLinkVariant5Type {
 
   static GetProjectsResponseLinkVariant5Type fromJson(String value) {
     switch (value) {
-      case 'vercel': return GetProjectsResponseLinkVariant5Type.vercel;
-      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant5Type: $value');
+      case 'vercel':
+        return GetProjectsResponseLinkVariant5Type.vercel;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseLinkVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant5Type.vercel: return 'vercel';
+      case GetProjectsResponseLinkVariant5Type.vercel:
+        return 'vercel';
     }
   }
 
@@ -210,24 +250,28 @@ enum GetProjectsResponseLinkVariant5Type {
 }
 
 final class GetProjectsResponseLinkVariant6Sourceless {
-
   final bool value;
 
   const GetProjectsResponseLinkVariant6Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant6Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant6Sourceless._(value);
+  factory GetProjectsResponseLinkVariant6Sourceless.fromJson(bool value) =>
+      GetProjectsResponseLinkVariant6Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant6Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant6Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant6Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseLinkVariant6Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseLinkVariant6Type {
@@ -235,14 +279,18 @@ enum GetProjectsResponseLinkVariant6Type {
 
   static GetProjectsResponseLinkVariant6Type fromJson(String value) {
     switch (value) {
-      case 'v0': return GetProjectsResponseLinkVariant6Type.v0;
-      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant6Type: $value');
+      case 'v0':
+        return GetProjectsResponseLinkVariant6Type.v0;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseLinkVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant6Type.v0: return 'v0';
+      case GetProjectsResponseLinkVariant6Type.v0:
+        return 'v0';
     }
   }
 
@@ -251,24 +299,28 @@ enum GetProjectsResponseLinkVariant6Type {
 }
 
 final class GetProjectsResponseLinkVariant7Sourceless {
-
   final bool value;
 
   const GetProjectsResponseLinkVariant7Sourceless._(this.value);
 
-  factory GetProjectsResponseLinkVariant7Sourceless.fromJson(bool value) => GetProjectsResponseLinkVariant7Sourceless._(value);
+  factory GetProjectsResponseLinkVariant7Sourceless.fromJson(bool value) =>
+      GetProjectsResponseLinkVariant7Sourceless._(value);
 
   static const false_ = GetProjectsResponseLinkVariant7Sourceless._(false);
   static const true_ = GetProjectsResponseLinkVariant7Sourceless._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseLinkVariant7Sourceless && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseLinkVariant7Sourceless &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseLinkVariant7Type {
@@ -276,14 +328,18 @@ enum GetProjectsResponseLinkVariant7Type {
 
   static GetProjectsResponseLinkVariant7Type fromJson(String value) {
     switch (value) {
-      case 'cursor-origin': return GetProjectsResponseLinkVariant7Type.cursorOrigin;
-      default: throw ArgumentError('Unknown GetProjectsResponseLinkVariant7Type: $value');
+      case 'cursor-origin':
+        return GetProjectsResponseLinkVariant7Type.cursorOrigin;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseLinkVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseLinkVariant7Type.cursorOrigin: return 'cursor-origin';
+      case GetProjectsResponseLinkVariant7Type.cursorOrigin:
+        return 'cursor-origin';
     }
   }
 

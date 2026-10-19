@@ -5,284 +5,439 @@ part of 'inline.dart';
 
 // Inline operation models (part 478)
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentForced &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan {
-
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._(value);
 
-  static const enterprise = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._('enterprise');
-  static const hobby = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._('hobby');
-  static const pro = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._('pro');
+  static const enterprise =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._(
+          'enterprise');
+  static const hobby =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._(
+          'hobby');
+  static const pro =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan._('pro');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPlan &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not preview comments are enabled for the deployment
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled
+          ._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPreviewCommentsEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentPrivate &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState {
-
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          value);
 
-  static const blocked = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._('BLOCKED');
-  static const building = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._('BUILDING');
-  static const canceled = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._('CANCELED');
-  static const error = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._('ERROR');
-  static const initializing = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._('INITIALIZING');
-  static const queued = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._('QUEUED');
-  static const ready = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._('READY');
+  static const blocked =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          'BLOCKED');
+  static const building =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          'BUILDING');
+  static const canceled =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          'CANCELED');
+  static const error =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          'ERROR');
+  static const initializing =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          'INITIALIZING');
+  static const queued =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          'QUEUED');
+  static const ready =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState._(
+          'READY');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadyState &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate {
-
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate
+          ._(value);
 
-  static const promoted = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate._('PROMOTED');
-  static const rolling = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate._('ROLLING');
-  static const staged = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate._('STAGED');
+  static const promoted =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate
+          ._('PROMOTED');
+  static const rolling =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate
+          ._('ROLLING');
+  static const staged =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate
+          ._('STAGED');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentReadySubstate &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType {
-
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType._(value);
 
-  static const lambdas = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType._('LAMBDAS');
+  static const lambdas =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType._(
+          'LAMBDAS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemDeploymentWithCache &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment {
-
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._(value);
 
-  static const preview = ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._('preview');
-  static const production = ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._('production');
+  static const preview =
+      ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._('preview');
+  static const production =
+      ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment._(
+          'production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant2ProjectsItemAliasItemEnvironment &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode {
-
   final double value;
 
-  const ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode.fromJson(double value) => ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode.fromJson(
+          double value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(
+          value);
 
-  static const v301 = ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(301);
-  static const v302 = ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(302);
-  static const v307 = ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(307);
-  static const v308 = ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(308);
+  static const v301 =
+      ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(
+          301);
+  static const v302 =
+      ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(
+          302);
+  static const v307 =
+      ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(
+          307);
+  static const v308 =
+      ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode._(
+          308);
 
   double toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAliasItemRedirectStatusCode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAliasItemTarget {
-
   final String value;
 
   const ListProjectsResponseVariant2ProjectsItemAliasItemTarget._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAliasItemTarget.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemAliasItemTarget._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAliasItemTarget.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemAliasItemTarget._(value);
 
-  static const preview = ListProjectsResponseVariant2ProjectsItemAliasItemTarget._('PREVIEW');
-  static const production = ListProjectsResponseVariant2ProjectsItemAliasItemTarget._('PRODUCTION');
-  static const staging = ListProjectsResponseVariant2ProjectsItemAliasItemTarget._('STAGING');
+  static const preview =
+      ListProjectsResponseVariant2ProjectsItemAliasItemTarget._('PREVIEW');
+  static const production =
+      ListProjectsResponseVariant2ProjectsItemAliasItemTarget._('PRODUCTION');
+  static const staging =
+      ListProjectsResponseVariant2ProjectsItemAliasItemTarget._('STAGING');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAliasItemTarget && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant2ProjectsItemAliasItemTarget &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAppliedCve55182Migration &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(value);
+  factory ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemAutoAssignCustomDomains &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

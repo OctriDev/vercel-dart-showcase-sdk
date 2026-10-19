@@ -16,20 +16,24 @@ import '../types.dart';
 /// [type_] The type of environment variable
 /// [target] The target environment of the Shared Environment Variable
 /// [projectId] Associate a Shared Environment Variable to projects.
-Future<CreateSharedEnvVariableResponse>
-    createSharedEnvVariable(ClientConfig config,
-        {required List<CreateSharedEnvVariableRequestBodyEvsItem> evs,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<CreateSharedEnvVariableRequestBodyType> type_ = const SdkOmitted(),
-        SdkOptional<List<CreateSharedEnvVariableRequestBodyTargetItem>> target = const SdkOmitted(),
-        SdkOptional<List<String>> projectId = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CreateSharedEnvVariableResponse> createSharedEnvVariable(
+    ClientConfig config,
+    {required List<CreateSharedEnvVariableRequestBodyEvsItem> evs,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<CreateSharedEnvVariableRequestBodyType> type_ =
+        const SdkOmitted(),
+    SdkOptional<List<CreateSharedEnvVariableRequestBodyTargetItem>> target =
+        const SdkOmitted(),
+    SdkOptional<List<String>> projectId = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<CreateSharedEnvVariableResponse>('POST', '/v1/env',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'evs': evs,
@@ -39,11 +43,11 @@ Future<CreateSharedEnvVariableResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createSharedEnvVariable',
-          fromJsonRaw: (value) => CreateSharedEnvVariableResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSharedEnvVariableResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists shared environment variables for a team, with optional filters for search terms, projects, and variable IDs. Use the exclusion filters to omit specified IDs or project associations from the results. The response includes variable records and pagination information.
 ///
@@ -71,23 +75,36 @@ Future<ListSharedEnvVariableResponse> listSharedEnvVariable(ClientConfig config,
   return (await sdkRequest<ListSharedEnvVariableResponse>('GET', '/v1/env',
           config: config,
           query: {
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
-            'ids': SdkQueryValue(SdkUtils.unwrapOptional(ids), style: 'form', explode: true),
-            'exclude_ids': SdkQueryValue(SdkUtils.unwrapOptional(excludeIds_), style: 'form', explode: true),
-            'exclude-ids': SdkQueryValue(SdkUtils.unwrapOptional(excludeIds), style: 'form', explode: true),
-            'exclude_projectId': SdkQueryValue(SdkUtils.unwrapOptional(excludeProjectId_), style: 'form', explode: true),
-            'exclude-projectId': SdkQueryValue(SdkUtils.unwrapOptional(excludeProjectId), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
+                style: 'form', explode: true),
+            'ids': SdkQueryValue(SdkUtils.unwrapOptional(ids),
+                style: 'form', explode: true),
+            'exclude_ids': SdkQueryValue(SdkUtils.unwrapOptional(excludeIds_),
+                style: 'form', explode: true),
+            'exclude-ids': SdkQueryValue(SdkUtils.unwrapOptional(excludeIds),
+                style: 'form', explode: true),
+            'exclude_projectId': SdkQueryValue(
+                SdkUtils.unwrapOptional(excludeProjectId_),
+                style: 'form',
+                explode: true),
+            'exclude-projectId': SdkQueryValue(
+                SdkUtils.unwrapOptional(excludeProjectId),
+                style: 'form',
+                explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listSharedEnvVariable',
-          fromJsonRaw: (value) => ListSharedEnvVariableResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListSharedEnvVariableResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates one or more shared environment variables for a team. Provide an `updates` object keyed by environment variable IDs, with each value containing the changes to apply. The response separates updated variables from entries that failed.
 ///
@@ -97,26 +114,29 @@ Future<ListSharedEnvVariableResponse> listSharedEnvVariable(ClientConfig config,
 ///   key name) and the value is the update to apply
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<UpdateSharedEnvVariableResponse>
-    updateSharedEnvVariable(ClientConfig config,
-        {required Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue> updates,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<UpdateSharedEnvVariableResponse> updateSharedEnvVariable(
+    ClientConfig config,
+    {required Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue>
+        updates,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateSharedEnvVariableResponse>('PATCH', '/v1/env',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'updates': updates},
           decoder: SdkResponseDecoder.json,
           operationId: 'updateSharedEnvVariable',
-          fromJsonRaw: (value) => UpdateSharedEnvVariableResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateSharedEnvVariableResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes one or more shared environment variables for a team. Supply their identifiers in the `ids` array and use `teamId` or `slug` to select the team context. The response reports which identifiers were deleted and which failed.
 ///
@@ -125,26 +145,28 @@ Future<UpdateSharedEnvVariableResponse>
 /// [ids] IDs of the Shared Environment Variables to delete
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<DeleteSharedEnvVariableResponse>
-    deleteSharedEnvVariable(ClientConfig config,
-        {required List<String> ids,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<DeleteSharedEnvVariableResponse> deleteSharedEnvVariable(
+    ClientConfig config,
+    {required List<String> ids,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<DeleteSharedEnvVariableResponse>('DELETE', '/v1/env',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'ids': ids},
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteSharedEnvVariable',
-          fromJsonRaw: (value) => DeleteSharedEnvVariableResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteSharedEnvVariableResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves the decrypted value and metadata for a shared environment variable. Supply its `id` and, when needed, `teamId` or `slug` to select the team context. The response includes whether the value is decrypted and the projects and custom environments associated with it.
 ///
@@ -163,16 +185,18 @@ Future<GetSharedEnvVarResponse> getSharedEnvVar(ClientConfig config,
           'GET', '/v1/env/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSharedEnvVar',
-          fromJsonRaw: (value) => GetSharedEnvVarResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetSharedEnvVarResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Disconnects a shared environment variable from a project without deleting the variable. Supply the variable's `id` and the target `projectId`, and use `teamId` or `slug` to select the team context. The response identifies the shared environment variable that was unlinked.
 ///
@@ -182,27 +206,29 @@ Future<GetSharedEnvVarResponse> getSharedEnvVar(ClientConfig config,
 ///   project.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<UnlinkSharedEnvVariableResponse>
-    unlinkSharedEnvVariable(ClientConfig config,
-        {required String id,
-        required String projectId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<UnlinkSharedEnvVariableResponse> unlinkSharedEnvVariable(
+    ClientConfig config,
+    {required String id,
+    required String projectId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<UnlinkSharedEnvVariableResponse>('PATCH',
           '/v1/env/${Uri.encodeComponent(id.toString())}/unlink/${Uri.encodeComponent(projectId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'unlinkSharedEnvVariable',
-          fromJsonRaw: (value) => UnlinkSharedEnvVariableResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UnlinkSharedEnvVariableResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a custom environment for a project. Provide a `slug` and, if needed, a `description`, branch-matching configuration, or source for copied environment variables. The environment cannot be named Production or Preview.
 ///
@@ -217,16 +243,17 @@ Future<UnlinkSharedEnvVariableResponse>
 ///   optional.
 /// [copyEnvVarsFrom] Where to copy environment variables from. This is
 ///   optional.
-Future<CreateCustomEnvironmentResponse>
-    createCustomEnvironment(ClientConfig config,
-        {required String idOrName,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<String> slug_2 = const SdkOmitted(),
-        SdkOptional<String> description = const SdkOmitted(),
-        SdkOptional<CreateCustomEnvironmentRequestBodyBranchMatcher> branchMatcher = const SdkOmitted(),
-        SdkOptional<String> copyEnvVarsFrom = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CreateCustomEnvironmentResponse> createCustomEnvironment(
+    ClientConfig config,
+    {required String idOrName,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<String> slug_2 = const SdkOmitted(),
+    SdkOptional<String> description = const SdkOmitted(),
+    SdkOptional<CreateCustomEnvironmentRequestBodyBranchMatcher> branchMatcher =
+        const SdkOmitted(),
+    SdkOptional<String> copyEnvVarsFrom = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   if (slug_2 is SdkPresent<String>) {
     validateLength('slug', slug_2.value, max: 32);
   }
@@ -238,8 +265,10 @@ Future<CreateCustomEnvironmentResponse>
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/custom-environments',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'slug': SdkUtils.unwrapOptional(slug_2),
@@ -249,11 +278,11 @@ Future<CreateCustomEnvironmentResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createCustomEnvironment',
-          fromJsonRaw: (value) => CreateCustomEnvironmentResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateCustomEnvironmentResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists custom environments configured for a project. Use `gitBranch` to filter the results to environments associated with a specific Git branch.
 ///
@@ -273,17 +302,20 @@ Future<ListEnvironmentCustomResponse> listEnvironmentCustom(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/custom-environments',
           config: config,
           query: {
-            'gitBranch': SdkQueryValue(SdkUtils.unwrapOptional(gitBranch), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'gitBranch': SdkQueryValue(SdkUtils.unwrapOptional(gitBranch),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listEnvironmentCustom',
-          fromJsonRaw: (value) => ListEnvironmentCustomResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListEnvironmentCustomResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a custom environment from a project by its identifier or slug. Use the project identifier or name together with `environmentSlugOrId` to select the environment.
 ///
@@ -304,16 +336,18 @@ Future<GetCustomEnvironmentResponse> getCustomEnvironment(ClientConfig config,
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/custom-environments/${Uri.encodeComponent(environmentSlugOrId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getCustomEnvironment',
-          fromJsonRaw: (value) => GetCustomEnvironmentResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetCustomEnvironmentResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates a custom environment’s slug, description, or branch-matching configuration. Supply only the properties you want to change; the environment cannot be named Production or Preview.
 ///
@@ -328,16 +362,17 @@ Future<GetCustomEnvironmentResponse> getCustomEnvironment(ClientConfig config,
 /// [description] Description of the custom environment. This is optional.
 /// [branchMatcher] How we want to determine a matching branch. This is
 ///   optional.
-Future<UpdateCustomEnvironmentResponse>
-    updateCustomEnvironment(ClientConfig config,
-        {required String idOrName,
-        required String environmentSlugOrId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<String> slug_2 = const SdkOmitted(),
-        SdkOptional<String> description = const SdkOmitted(),
-        SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?> branchMatcher = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<UpdateCustomEnvironmentResponse> updateCustomEnvironment(
+    ClientConfig config,
+    {required String idOrName,
+    required String environmentSlugOrId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<String> slug_2 = const SdkOmitted(),
+    SdkOptional<String> description = const SdkOmitted(),
+    SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?>
+        branchMatcher = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   if (slug_2 is SdkPresent<String>) {
     validateLength('slug', slug_2.value, max: 32);
   }
@@ -349,8 +384,10 @@ Future<UpdateCustomEnvironmentResponse>
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/custom-environments/${Uri.encodeComponent(environmentSlugOrId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'slug': SdkUtils.unwrapOptional(slug_2),
@@ -359,11 +396,11 @@ Future<UpdateCustomEnvironmentResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateCustomEnvironment',
-          fromJsonRaw: (value) => UpdateCustomEnvironmentResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateCustomEnvironmentResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a custom environment from a project. You can set `deleteUnassignedEnvironmentVariables` in the request body to also delete environment variables that are not assigned to any environments.
 ///
@@ -376,27 +413,31 @@ Future<UpdateCustomEnvironmentResponse>
 /// [slug] The Team slug to perform the request on behalf of.
 /// [deleteUnassignedEnvironmentVariables] Delete Environment Variables that are
 ///   not assigned to any environments.
-Future<RemoveCustomEnvironmentResponse>
-    removeCustomEnvironment(ClientConfig config,
-        {required String idOrName,
-        required String environmentSlugOrId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<bool> deleteUnassignedEnvironmentVariables = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<RemoveCustomEnvironmentResponse> removeCustomEnvironment(
+    ClientConfig config,
+    {required String idOrName,
+    required String environmentSlugOrId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<bool> deleteUnassignedEnvironmentVariables = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<RemoveCustomEnvironmentResponse>('DELETE',
           '/v9/projects/${Uri.encodeComponent(idOrName.toString())}/custom-environments/${Uri.encodeComponent(environmentSlugOrId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
-            'deleteUnassignedEnvironmentVariables': SdkUtils.unwrapOptional(deleteUnassignedEnvironmentVariables)
+            'deleteUnassignedEnvironmentVariables':
+                SdkUtils.unwrapOptional(deleteUnassignedEnvironmentVariables)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'removeCustomEnvironment',
-          fromJsonRaw: (value) => RemoveCustomEnvironmentResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RemoveCustomEnvironmentResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

@@ -8,279 +8,488 @@ part of 'user.dart';
 class UserEventPayloadVariant353 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `gitProvider` wire field.
   final String gitProvider;
+
   /// Required `string` value serialized in the `gitProviderGroupDescriptor` wire field.
   final String gitProviderGroupDescriptor;
+
   /// Required `string` value serialized in the `gitScope` wire field.
   final String gitScope;
 
-  const UserEventPayloadVariant353({required this.gitProvider, required this.gitProviderGroupDescriptor, required this.gitScope});
+  const UserEventPayloadVariant353(
+      {required this.gitProvider,
+      required this.gitProviderGroupDescriptor,
+      required this.gitScope});
 
-  UserEventPayloadVariant353 Function({String gitProvider, String gitProviderGroupDescriptor, String gitScope}) get copyWith => _copyWith;
+  UserEventPayloadVariant353 Function(
+      {String gitProvider,
+      String gitProviderGroupDescriptor,
+      String gitScope}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant353 _copyWith({Object? gitProvider = sdkOmittedValue, Object? gitProviderGroupDescriptor = sdkOmittedValue, Object? gitScope = sdkOmittedValue}) => UserEventPayloadVariant353(
-    gitProvider: identical(gitProvider, sdkOmittedValue) ? this.gitProvider : gitProvider as String,
-    gitProviderGroupDescriptor: identical(gitProviderGroupDescriptor, sdkOmittedValue) ? this.gitProviderGroupDescriptor : gitProviderGroupDescriptor as String,
-    gitScope: identical(gitScope, sdkOmittedValue) ? this.gitScope : gitScope as String,
-  );
+  UserEventPayloadVariant353 _copyWith(
+          {Object? gitProvider = sdkOmittedValue,
+          Object? gitProviderGroupDescriptor = sdkOmittedValue,
+          Object? gitScope = sdkOmittedValue}) =>
+      UserEventPayloadVariant353(
+        gitProvider: identical(gitProvider, sdkOmittedValue)
+            ? this.gitProvider
+            : gitProvider as String,
+        gitProviderGroupDescriptor:
+            identical(gitProviderGroupDescriptor, sdkOmittedValue)
+                ? this.gitProviderGroupDescriptor
+                : gitProviderGroupDescriptor as String,
+        gitScope: identical(gitScope, sdkOmittedValue)
+            ? this.gitScope
+            : gitScope as String,
+      );
 
-  factory UserEventPayloadVariant353.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant353(
-    gitProvider: (json['gitProvider'] as String?)!,
-    gitProviderGroupDescriptor: (json['gitProviderGroupDescriptor'] as String?)!,
-    gitScope: (json['gitScope'] as String?)!,
-  );
+  factory UserEventPayloadVariant353.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant353(
+        gitProvider: (json['gitProvider'] as String?)!,
+        gitProviderGroupDescriptor:
+            (json['gitProviderGroupDescriptor'] as String?)!,
+        gitScope: (json['gitScope'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'gitProvider': gitProvider,
-    'gitProviderGroupDescriptor': gitProviderGroupDescriptor,
-    'gitScope': gitScope,
-  };
+        'gitProvider': gitProvider,
+        'gitProviderGroupDescriptor': gitProviderGroupDescriptor,
+        'gitScope': gitScope,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant354 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectionId` wire field.
   final String connectionId;
+
   /// Required `string` value serialized in the `connectionType` wire field.
   final String connectionType;
 
-  const UserEventPayloadVariant354({required this.connectionId, required this.connectionType});
+  const UserEventPayloadVariant354(
+      {required this.connectionId, required this.connectionType});
 
-  UserEventPayloadVariant354 Function({String connectionId, String connectionType}) get copyWith => _copyWith;
+  UserEventPayloadVariant354 Function(
+      {String connectionId, String connectionType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant354 _copyWith({Object? connectionId = sdkOmittedValue, Object? connectionType = sdkOmittedValue}) => UserEventPayloadVariant354(
-    connectionId: identical(connectionId, sdkOmittedValue) ? this.connectionId : connectionId as String,
-    connectionType: identical(connectionType, sdkOmittedValue) ? this.connectionType : connectionType as String,
-  );
+  UserEventPayloadVariant354 _copyWith(
+          {Object? connectionId = sdkOmittedValue,
+          Object? connectionType = sdkOmittedValue}) =>
+      UserEventPayloadVariant354(
+        connectionId: identical(connectionId, sdkOmittedValue)
+            ? this.connectionId
+            : connectionId as String,
+        connectionType: identical(connectionType, sdkOmittedValue)
+            ? this.connectionType
+            : connectionType as String,
+      );
 
-  factory UserEventPayloadVariant354.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant354(
-    connectionId: (json['connectionId'] as String?)!,
-    connectionType: (json['connectionType'] as String?)!,
-  );
+  factory UserEventPayloadVariant354.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant354(
+        connectionId: (json['connectionId'] as String?)!,
+        connectionType: (json['connectionType'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectionId': connectionId,
-    'connectionType': connectionType,
-  };
+        'connectionId': connectionId,
+        'connectionType': connectionType,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant355 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectionId` wire field.
   final String connectionId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant355ActorType actorType;
 
-  const UserEventPayloadVariant355({required this.connectionId, this.actorName = const SdkOmitted(), required this.actorType});
+  const UserEventPayloadVariant355(
+      {required this.connectionId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType});
 
-  UserEventPayloadVariant355 Function({String connectionId, SdkOptional<String> actorName, UserEventPayloadVariant355ActorType actorType}) get copyWith => _copyWith;
+  UserEventPayloadVariant355 Function(
+      {String connectionId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant355ActorType actorType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant355 _copyWith({Object? connectionId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue}) => UserEventPayloadVariant355(
-    connectionId: identical(connectionId, sdkOmittedValue) ? this.connectionId : connectionId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant355ActorType,
-  );
+  UserEventPayloadVariant355 _copyWith(
+          {Object? connectionId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue}) =>
+      UserEventPayloadVariant355(
+        connectionId: identical(connectionId, sdkOmittedValue)
+            ? this.connectionId
+            : connectionId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant355ActorType,
+      );
 
-  factory UserEventPayloadVariant355.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant355(
-    connectionId: (json['connectionId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant355ActorType.fromJson(json['actorType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant355.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant355(
+        connectionId: (json['connectionId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant355ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectionId': connectionId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-  };
+        'connectionId': connectionId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant356 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectionId` wire field.
   final String connectionId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant356ActorType actorType;
+
   /// Required enumerated value serialized in the `created` wire field.
   final UserEventPayloadVariant356Created created;
 
-  const UserEventPayloadVariant356({required this.connectionId, this.actorName = const SdkOmitted(), required this.actorType, required this.created});
+  const UserEventPayloadVariant356(
+      {required this.connectionId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType,
+      required this.created});
 
-  UserEventPayloadVariant356 Function({String connectionId, SdkOptional<String> actorName, UserEventPayloadVariant356ActorType actorType, UserEventPayloadVariant356Created created}) get copyWith => _copyWith;
+  UserEventPayloadVariant356 Function(
+      {String connectionId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant356ActorType actorType,
+      UserEventPayloadVariant356Created created}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant356 _copyWith({Object? connectionId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue, Object? created = sdkOmittedValue}) => UserEventPayloadVariant356(
-    connectionId: identical(connectionId, sdkOmittedValue) ? this.connectionId : connectionId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant356ActorType,
-    created: identical(created, sdkOmittedValue) ? this.created : created as UserEventPayloadVariant356Created,
-  );
+  UserEventPayloadVariant356 _copyWith(
+          {Object? connectionId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue,
+          Object? created = sdkOmittedValue}) =>
+      UserEventPayloadVariant356(
+        connectionId: identical(connectionId, sdkOmittedValue)
+            ? this.connectionId
+            : connectionId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant356ActorType,
+        created: identical(created, sdkOmittedValue)
+            ? this.created
+            : created as UserEventPayloadVariant356Created,
+      );
 
-  factory UserEventPayloadVariant356.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant356(
-    connectionId: (json['connectionId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant356ActorType.fromJson(json['actorType'] as String) : null)!,
-    created: (json['created'] != null ? UserEventPayloadVariant356Created.fromJson(json['created'] as bool) : null)!,
-  );
+  factory UserEventPayloadVariant356.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant356(
+        connectionId: (json['connectionId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant356ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+        created: (json['created'] != null
+            ? UserEventPayloadVariant356Created.fromJson(
+                json['created'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectionId': connectionId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-    'created': created.toJson(),
-  };
+        'connectionId': connectionId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+        'created': created.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant357 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectionId` wire field.
   final String connectionId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant357ActorType actorType;
+
   /// Required `string` value serialized in the `keyId` wire field.
   final String keyId;
 
-  const UserEventPayloadVariant357({required this.connectionId, this.actorName = const SdkOmitted(), required this.actorType, required this.keyId});
+  const UserEventPayloadVariant357(
+      {required this.connectionId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType,
+      required this.keyId});
 
-  UserEventPayloadVariant357 Function({String connectionId, SdkOptional<String> actorName, UserEventPayloadVariant357ActorType actorType, String keyId}) get copyWith => _copyWith;
+  UserEventPayloadVariant357 Function(
+      {String connectionId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant357ActorType actorType,
+      String keyId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant357 _copyWith({Object? connectionId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue, Object? keyId = sdkOmittedValue}) => UserEventPayloadVariant357(
-    connectionId: identical(connectionId, sdkOmittedValue) ? this.connectionId : connectionId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant357ActorType,
-    keyId: identical(keyId, sdkOmittedValue) ? this.keyId : keyId as String,
-  );
+  UserEventPayloadVariant357 _copyWith(
+          {Object? connectionId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue,
+          Object? keyId = sdkOmittedValue}) =>
+      UserEventPayloadVariant357(
+        connectionId: identical(connectionId, sdkOmittedValue)
+            ? this.connectionId
+            : connectionId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant357ActorType,
+        keyId: identical(keyId, sdkOmittedValue) ? this.keyId : keyId as String,
+      );
 
-  factory UserEventPayloadVariant357.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant357(
-    connectionId: (json['connectionId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant357ActorType.fromJson(json['actorType'] as String) : null)!,
-    keyId: (json['keyId'] as String?)!,
-  );
+  factory UserEventPayloadVariant357.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant357(
+        connectionId: (json['connectionId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant357ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+        keyId: (json['keyId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectionId': connectionId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-    'keyId': keyId,
-  };
+        'connectionId': connectionId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+        'keyId': keyId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant358 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectionId` wire field.
   final String connectionId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant358ActorType actorType;
+
   /// Required `string` value serialized in the `keyId` wire field.
   final String keyId;
+
   /// Required enumerated value serialized in the `signingEnabled` wire field.
   final UserEventPayloadVariant358SigningEnabled signingEnabled;
+
   /// Required `string` value serialized in the `signingKeyId` wire field.
   final String? signingKeyId;
 
-  const UserEventPayloadVariant358({required this.connectionId, this.actorName = const SdkOmitted(), required this.actorType, required this.keyId, required this.signingEnabled, required this.signingKeyId});
+  const UserEventPayloadVariant358(
+      {required this.connectionId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType,
+      required this.keyId,
+      required this.signingEnabled,
+      required this.signingKeyId});
 
-  UserEventPayloadVariant358 Function({String connectionId, SdkOptional<String> actorName, UserEventPayloadVariant358ActorType actorType, String keyId, UserEventPayloadVariant358SigningEnabled signingEnabled, String? signingKeyId}) get copyWith => _copyWith;
+  UserEventPayloadVariant358 Function(
+      {String connectionId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant358ActorType actorType,
+      String keyId,
+      UserEventPayloadVariant358SigningEnabled signingEnabled,
+      String? signingKeyId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant358 _copyWith({Object? connectionId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue, Object? keyId = sdkOmittedValue, Object? signingEnabled = sdkOmittedValue, Object? signingKeyId = sdkOmittedValue}) => UserEventPayloadVariant358(
-    connectionId: identical(connectionId, sdkOmittedValue) ? this.connectionId : connectionId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant358ActorType,
-    keyId: identical(keyId, sdkOmittedValue) ? this.keyId : keyId as String,
-    signingEnabled: identical(signingEnabled, sdkOmittedValue) ? this.signingEnabled : signingEnabled as UserEventPayloadVariant358SigningEnabled,
-    signingKeyId: identical(signingKeyId, sdkOmittedValue) ? this.signingKeyId : signingKeyId as String?,
-  );
+  UserEventPayloadVariant358 _copyWith(
+          {Object? connectionId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue,
+          Object? keyId = sdkOmittedValue,
+          Object? signingEnabled = sdkOmittedValue,
+          Object? signingKeyId = sdkOmittedValue}) =>
+      UserEventPayloadVariant358(
+        connectionId: identical(connectionId, sdkOmittedValue)
+            ? this.connectionId
+            : connectionId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant358ActorType,
+        keyId: identical(keyId, sdkOmittedValue) ? this.keyId : keyId as String,
+        signingEnabled: identical(signingEnabled, sdkOmittedValue)
+            ? this.signingEnabled
+            : signingEnabled as UserEventPayloadVariant358SigningEnabled,
+        signingKeyId: identical(signingKeyId, sdkOmittedValue)
+            ? this.signingKeyId
+            : signingKeyId as String?,
+      );
 
-  factory UserEventPayloadVariant358.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant358(
-    connectionId: (json['connectionId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant358ActorType.fromJson(json['actorType'] as String) : null)!,
-    keyId: (json['keyId'] as String?)!,
-    signingEnabled: (json['signingEnabled'] != null ? UserEventPayloadVariant358SigningEnabled.fromJson(json['signingEnabled'] as bool) : null)!,
-    signingKeyId: json.containsKey('signingKeyId') ? json['signingKeyId'] as String? : throw ArgumentError.value(null, 'signingKeyId', 'Required property is missing'),
-  );
+  factory UserEventPayloadVariant358.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant358(
+        connectionId: (json['connectionId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant358ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+        keyId: (json['keyId'] as String?)!,
+        signingEnabled: (json['signingEnabled'] != null
+            ? UserEventPayloadVariant358SigningEnabled.fromJson(
+                json['signingEnabled'] as bool)
+            : null)!,
+        signingKeyId: json.containsKey('signingKeyId')
+            ? json['signingKeyId'] as String?
+            : throw ArgumentError.value(
+                null, 'signingKeyId', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectionId': connectionId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-    'keyId': keyId,
-    'signingEnabled': signingEnabled.toJson(),
-    'signingKeyId': signingKeyId,
-  };
+        'connectionId': connectionId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+        'keyId': keyId,
+        'signingEnabled': signingEnabled.toJson(),
+        'signingKeyId': signingKeyId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant359 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `alias` wire field.
   final String alias;
+
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
+
   /// Optional `string` value serialized in the `sandboxId` wire field.
   final SdkOptional<String> sandboxId;
+
   /// Required `string` value serialized in the `sandboxName` wire field.
   final String sandboxName;
 
-  const UserEventPayloadVariant359({required this.alias, this.projectId = const SdkOmitted(), this.sandboxId = const SdkOmitted(), required this.sandboxName});
+  const UserEventPayloadVariant359(
+      {required this.alias,
+      this.projectId = const SdkOmitted(),
+      this.sandboxId = const SdkOmitted(),
+      required this.sandboxName});
 
-  UserEventPayloadVariant359 Function({String alias, SdkOptional<String> projectId, SdkOptional<String> sandboxId, String sandboxName}) get copyWith => _copyWith;
+  UserEventPayloadVariant359 Function(
+      {String alias,
+      SdkOptional<String> projectId,
+      SdkOptional<String> sandboxId,
+      String sandboxName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant359 _copyWith({Object? alias = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? sandboxId = sdkOmittedValue, Object? sandboxName = sdkOmittedValue}) => UserEventPayloadVariant359(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    sandboxId: identical(sandboxId, sdkOmittedValue) ? this.sandboxId : sandboxId as SdkOptional<String>,
-    sandboxName: identical(sandboxName, sdkOmittedValue) ? this.sandboxName : sandboxName as String,
-  );
+  UserEventPayloadVariant359 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? sandboxId = sdkOmittedValue,
+          Object? sandboxName = sdkOmittedValue}) =>
+      UserEventPayloadVariant359(
+        alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        sandboxId: identical(sandboxId, sdkOmittedValue)
+            ? this.sandboxId
+            : sandboxId as SdkOptional<String>,
+        sandboxName: identical(sandboxName, sdkOmittedValue)
+            ? this.sandboxName
+            : sandboxName as String,
+      );
 
-  factory UserEventPayloadVariant359.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant359(
-    alias: (json['alias'] as String?)!,
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    sandboxId: json['sandboxId'] != null ? SdkPresent((json['sandboxId'] as String?)!) : const SdkOmitted(),
-    sandboxName: (json['sandboxName'] as String?)!,
-  );
+  factory UserEventPayloadVariant359.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant359(
+        alias: (json['alias'] as String?)!,
+        projectId: json['projectId'] != null
+            ? SdkPresent((json['projectId'] as String?)!)
+            : const SdkOmitted(),
+        sandboxId: json['sandboxId'] != null
+            ? SdkPresent((json['sandboxId'] as String?)!)
+            : const SdkOmitted(),
+        sandboxName: (json['sandboxName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'alias': alias,
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sandboxId) {
-      SdkPresent<String>(value: final value) => {'sandboxId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'sandboxName': sandboxName,
-  };
+        'alias': alias,
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sandboxId) {
+          SdkPresent<String>(value: final value) => {
+              'sandboxId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'sandboxName': sandboxName,
+      };
 }

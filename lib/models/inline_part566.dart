@@ -5,138 +5,169 @@ part of 'inline.dart';
 
 // Inline operation models (part 566)
 final class UpdateProjectResponseEnableExternalRewriteCaching {
-
   final bool value;
 
   const UpdateProjectResponseEnableExternalRewriteCaching._(this.value);
 
-  factory UpdateProjectResponseEnableExternalRewriteCaching.fromJson(bool value) => UpdateProjectResponseEnableExternalRewriteCaching._(value);
+  factory UpdateProjectResponseEnableExternalRewriteCaching.fromJson(
+          bool value) =>
+      UpdateProjectResponseEnableExternalRewriteCaching._(value);
 
-  static const false_ = UpdateProjectResponseEnableExternalRewriteCaching._(false);
-  static const true_ = UpdateProjectResponseEnableExternalRewriteCaching._(true);
+  static const false_ =
+      UpdateProjectResponseEnableExternalRewriteCaching._(false);
+  static const true_ =
+      UpdateProjectResponseEnableExternalRewriteCaching._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnableExternalRewriteCaching && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnableExternalRewriteCaching &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseEnablePreviewFeedback {
-
   final bool value;
 
   const UpdateProjectResponseEnablePreviewFeedback._(this.value);
 
-  factory UpdateProjectResponseEnablePreviewFeedback.fromJson(bool value) => UpdateProjectResponseEnablePreviewFeedback._(value);
+  factory UpdateProjectResponseEnablePreviewFeedback.fromJson(bool value) =>
+      UpdateProjectResponseEnablePreviewFeedback._(value);
 
   static const false_ = UpdateProjectResponseEnablePreviewFeedback._(false);
   static const true_ = UpdateProjectResponseEnablePreviewFeedback._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnablePreviewFeedback && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnablePreviewFeedback &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseEnableProductionFeedback {
-
   final bool value;
 
   const UpdateProjectResponseEnableProductionFeedback._(this.value);
 
-  factory UpdateProjectResponseEnableProductionFeedback.fromJson(bool value) => UpdateProjectResponseEnableProductionFeedback._(value);
+  factory UpdateProjectResponseEnableProductionFeedback.fromJson(bool value) =>
+      UpdateProjectResponseEnableProductionFeedback._(value);
 
   static const false_ = UpdateProjectResponseEnableProductionFeedback._(false);
   static const true_ = UpdateProjectResponseEnableProductionFeedback._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnableProductionFeedback && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnableProductionFeedback &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseEnvItemDecrypted {
-
   final bool value;
 
   const UpdateProjectResponseEnvItemDecrypted._(this.value);
 
-  factory UpdateProjectResponseEnvItemDecrypted.fromJson(bool value) => UpdateProjectResponseEnvItemDecrypted._(value);
+  factory UpdateProjectResponseEnvItemDecrypted.fromJson(bool value) =>
+      UpdateProjectResponseEnvItemDecrypted._(value);
 
   static const false_ = UpdateProjectResponseEnvItemDecrypted._(false);
   static const true_ = UpdateProjectResponseEnvItemDecrypted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnvItemDecrypted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnvItemDecrypted && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseEnvItemInternalContentHintType {
-
   final String value;
 
   const UpdateProjectResponseEnvItemInternalContentHintType._(this.value);
 
-  factory UpdateProjectResponseEnvItemInternalContentHintType.fromJson(String value) => UpdateProjectResponseEnvItemInternalContentHintType._(value);
+  factory UpdateProjectResponseEnvItemInternalContentHintType.fromJson(
+          String value) =>
+      UpdateProjectResponseEnvItemInternalContentHintType._(value);
 
-  static const flagsSecret = UpdateProjectResponseEnvItemInternalContentHintType._('flags-secret');
+  static const flagsSecret =
+      UpdateProjectResponseEnvItemInternalContentHintType._('flags-secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnvItemInternalContentHintType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnvItemInternalContentHintType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseEnvItemTargetVariant1 {
-
   final String value;
 
   const UpdateProjectResponseEnvItemTargetVariant1._(this.value);
 
-  factory UpdateProjectResponseEnvItemTargetVariant1.fromJson(String value) => UpdateProjectResponseEnvItemTargetVariant1._(value);
+  factory UpdateProjectResponseEnvItemTargetVariant1.fromJson(String value) =>
+      UpdateProjectResponseEnvItemTargetVariant1._(value);
 
-  static const production = UpdateProjectResponseEnvItemTargetVariant1._('production');
-  static const preview = UpdateProjectResponseEnvItemTargetVariant1._('preview');
-  static const development = UpdateProjectResponseEnvItemTargetVariant1._('development');
+  static const production =
+      UpdateProjectResponseEnvItemTargetVariant1._('production');
+  static const preview =
+      UpdateProjectResponseEnvItemTargetVariant1._('preview');
+  static const development =
+      UpdateProjectResponseEnvItemTargetVariant1._('development');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnvItemTargetVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnvItemTargetVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseEnvItemType {
-
   final String value;
 
   const UpdateProjectResponseEnvItemType._(this.value);
 
-  factory UpdateProjectResponseEnvItemType.fromJson(String value) => UpdateProjectResponseEnvItemType._(value);
+  factory UpdateProjectResponseEnvItemType.fromJson(String value) =>
+      UpdateProjectResponseEnvItemType._(value);
 
   static const encrypted = UpdateProjectResponseEnvItemType._('encrypted');
   static const plain = UpdateProjectResponseEnvItemType._('plain');
@@ -146,64 +177,74 @@ final class UpdateProjectResponseEnvItemType {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnvItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnvItemType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
 final class UpdateProjectResponseEnvItemVisibility {
-
   final String value;
 
   const UpdateProjectResponseEnvItemVisibility._(this.value);
 
-  factory UpdateProjectResponseEnvItemVisibility.fromJson(String value) => UpdateProjectResponseEnvItemVisibility._(value);
+  factory UpdateProjectResponseEnvItemVisibility.fromJson(String value) =>
+      UpdateProjectResponseEnvItemVisibility._(value);
 
   static const config = UpdateProjectResponseEnvItemVisibility._('config');
   static const secret = UpdateProjectResponseEnvItemVisibility._('secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseEnvItemVisibility && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseEnvItemVisibility && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseFeaturesWebAnalytics {
-
   final bool value;
 
   const UpdateProjectResponseFeaturesWebAnalytics._(this.value);
 
-  factory UpdateProjectResponseFeaturesWebAnalytics.fromJson(bool value) => UpdateProjectResponseFeaturesWebAnalytics._(value);
+  factory UpdateProjectResponseFeaturesWebAnalytics.fromJson(bool value) =>
+      UpdateProjectResponseFeaturesWebAnalytics._(value);
 
   static const false_ = UpdateProjectResponseFeaturesWebAnalytics._(false);
   static const true_ = UpdateProjectResponseFeaturesWebAnalytics._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseFeaturesWebAnalytics && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseFeaturesWebAnalytics &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseFramework {
-
   final String value;
 
   const UpdateProjectResponseFramework._(this.value);
 
-  factory UpdateProjectResponseFramework.fromJson(String value) => UpdateProjectResponseFramework._(value);
+  factory UpdateProjectResponseFramework.fromJson(String value) =>
+      UpdateProjectResponseFramework._(value);
 
   static const actixWeb = UpdateProjectResponseFramework._('actix-web');
   static const angular = UpdateProjectResponseFramework._('angular');
@@ -214,7 +255,8 @@ final class UpdateProjectResponseFramework {
   static const brunch = UpdateProjectResponseFramework._('brunch');
   static const bun = UpdateProjectResponseFramework._('bun');
   static const container = UpdateProjectResponseFramework._('container');
-  static const createReactApp = UpdateProjectResponseFramework._('create-react-app');
+  static const createReactApp =
+      UpdateProjectResponseFramework._('create-react-app');
   static const django = UpdateProjectResponseFramework._('django');
   static const docusaurus = UpdateProjectResponseFramework._('docusaurus');
   static const docusaurus2 = UpdateProjectResponseFramework._('docusaurus-2');
@@ -270,8 +312,10 @@ final class UpdateProjectResponseFramework {
   static const svelte = UpdateProjectResponseFramework._('svelte');
   static const sveltekit = UpdateProjectResponseFramework._('sveltekit');
   static const sveltekit1 = UpdateProjectResponseFramework._('sveltekit-1');
-  static const tanstackStart = UpdateProjectResponseFramework._('tanstack-start');
-  static const tanstackStartLovable = UpdateProjectResponseFramework._('tanstack-start-lovable');
+  static const tanstackStart =
+      UpdateProjectResponseFramework._('tanstack-start');
+  static const tanstackStartLovable =
+      UpdateProjectResponseFramework._('tanstack-start-lovable');
   static const umijs = UpdateProjectResponseFramework._('umijs');
   static const vite = UpdateProjectResponseFramework._('vite');
   static const vitepress = UpdateProjectResponseFramework._('vitepress');
@@ -282,10 +326,13 @@ final class UpdateProjectResponseFramework {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseFramework && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

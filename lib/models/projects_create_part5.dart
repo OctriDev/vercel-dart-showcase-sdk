@@ -9,33 +9,60 @@ class CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String org;
-  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider provider;
+  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+      provider;
   final SdkOptional<String> repo;
 
-  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0({required this.org, required this.provider, this.repo = const SdkOmitted()});
+  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+      {required this.org,
+      required this.provider,
+      this.repo = const SdkOmitted()});
 
-  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 Function({String org, CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider provider, SdkOptional<String> repo}) get copyWith => _copyWith;
+  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 Function(
+      {String org,
+      CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          provider,
+      SdkOptional<String> repo}) get copyWith => _copyWith;
 
-  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 _copyWith({Object? org = sdkOmittedValue, Object? provider = sdkOmittedValue, Object? repo = sdkOmittedValue}) => CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-    org: identical(org, sdkOmittedValue) ? this.org : org as String,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
-  );
+  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+      _copyWith(
+              {Object? org = sdkOmittedValue,
+              Object? provider = sdkOmittedValue,
+              Object? repo = sdkOmittedValue}) =>
+          CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+            org: identical(org, sdkOmittedValue) ? this.org : org as String,
+            provider: identical(provider, sdkOmittedValue)
+                ? this.provider
+                : provider
+                    as CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider,
+            repo: identical(repo, sdkOmittedValue)
+                ? this.repo
+                : repo as SdkOptional<String>,
+          );
 
-  factory CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(Map<String, dynamic> json) => CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-    org: (json['org'] as String?)!,
-    provider: (json['provider'] != null ? CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(json['provider'] as String) : null)!,
-    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+        org: (json['org'] as String?)!,
+        provider: (json['provider'] != null
+            ? CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+                .fromJson(json['provider'] as String)
+            : null)!,
+        repo: json['repo'] != null
+            ? SdkPresent((json['repo'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'org': org,
-    'provider': provider.toJson(),
-    ...switch (repo) {
-      SdkPresent<String>(value: final value) => {'repo': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'org': org,
+        'provider': provider.toJson(),
+        ...switch (repo) {
+          SdkPresent<String>(value: final value) => {
+              'repo': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively.
@@ -44,122 +71,229 @@ class CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 {
   static const String constructionSurface = 'named';
   final String namespace;
   final SdkOptional<String> project;
-  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider provider;
+  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+      provider;
 
-  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1({required this.namespace, this.project = const SdkOmitted(), required this.provider});
+  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+      {required this.namespace,
+      this.project = const SdkOmitted(),
+      required this.provider});
 
-  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 Function({String namespace, SdkOptional<String> project, CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider provider}) get copyWith => _copyWith;
+  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 Function(
+      {String namespace,
+      SdkOptional<String> project,
+      CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          provider}) get copyWith => _copyWith;
 
-  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 _copyWith({Object? namespace = sdkOmittedValue, Object? project = sdkOmittedValue, Object? provider = sdkOmittedValue}) => CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-    namespace: identical(namespace, sdkOmittedValue) ? this.namespace : namespace as String,
-    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<String>,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider,
-  );
+  CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+      _copyWith(
+              {Object? namespace = sdkOmittedValue,
+              Object? project = sdkOmittedValue,
+              Object? provider = sdkOmittedValue}) =>
+          CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+            namespace: identical(namespace, sdkOmittedValue)
+                ? this.namespace
+                : namespace as String,
+            project: identical(project, sdkOmittedValue)
+                ? this.project
+                : project as SdkOptional<String>,
+            provider: identical(provider, sdkOmittedValue)
+                ? this.provider
+                : provider
+                    as CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider,
+          );
 
-  factory CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(Map<String, dynamic> json) => CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-    namespace: (json['namespace'] as String?)!,
-    project: json['project'] != null ? SdkPresent((json['project'] as String?)!) : const SdkOmitted(),
-    provider: (json['provider'] != null ? CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(json['provider'] as String) : null)!,
-  );
+  factory CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+        namespace: (json['namespace'] as String?)!,
+        project: json['project'] != null
+            ? SdkPresent((json['project'] as String?)!)
+            : const SdkOmitted(),
+        provider: (json['provider'] != null
+            ? CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+                .fromJson(json['provider'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'namespace': namespace,
-    ...switch (project) {
-      SdkPresent<String>(value: final value) => {'project': value,},
-      _ => const <String, dynamic>{},
-    },
-    'provider': provider.toJson(),
-  };
+        'namespace': namespace,
+        ...switch (project) {
+          SdkPresent<String>(value: final value) => {
+              'project': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'provider': provider.toJson(),
+      };
 }
 
 sealed class CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem();
-  factory CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem.fromJson(Object? json) {
+  factory CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(value); } } catch (_) {}
-      try { final value = CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem");
+    try {
+      return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+          CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+          CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 extends CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem {
-  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 value;
-  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+    extends CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem {
+  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+      value;
+  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 extends CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem {
-  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 value;
-  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+    extends CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItem {
+  final CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+      value;
+  const CreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemCreateProjectResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 sealed class CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue();
-  factory CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue.fromJson(Object? json) {
-    if (json is String) { return CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueString(json); }
-    if (json is num) { return CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueDouble(json.toDouble()); }
-    try { return CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueCreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2(CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(json as bool)); } catch (_) {}
-    throw FormatException("No variant matched for CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue");
+  factory CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueString(
+          json);
+    }
+    if (json is num) {
+      return CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueDouble(
+          json.toDouble());
+    }
+    try {
+      return CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueCreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2(
+          CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+              .fromJson(json as bool));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueString extends CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue {
+final class CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueString
+    extends CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue {
   final String value;
-  const CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueString(this.value);
-  @override Object? toJson() => value;
+  const CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueDouble extends CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue {
+final class CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueDouble
+    extends CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue {
   final double value;
-  const CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueDouble(this.value);
-  @override Object? toJson() => value;
+  const CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueCreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2 extends CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue {
-  final CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2 value;
-  const CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueCreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+final class CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueCreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+    extends CreateProjectResponseDismissedToastsItemValueVariant2CurrentValue {
+  final CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+      value;
+  const CreateProjectResponseDismissedToastsItemValueVariant2CurrentValueCreateProjectResponseDismissedToastsItemValueVariant2CurrentValueVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 sealed class CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue();
-  factory CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue.fromJson(Object? json) {
-    if (json is String) { return CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueString(json); }
-    if (json is num) { return CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueDouble(json.toDouble()); }
-    try { return CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueCreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2(CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(json as bool)); } catch (_) {}
-    throw FormatException("No variant matched for CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue");
+  factory CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueString(
+          json);
+    }
+    if (json is num) {
+      return CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueDouble(
+          json.toDouble());
+    }
+    try {
+      return CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueCreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2(
+          CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+              .fromJson(json as bool));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueString extends CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue {
+final class CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueString
+    extends CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue {
   final String value;
-  const CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueString(this.value);
-  @override Object? toJson() => value;
+  const CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueDouble extends CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue {
+final class CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueDouble
+    extends CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue {
   final double value;
-  const CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueDouble(this.value);
-  @override Object? toJson() => value;
+  const CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueCreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2 extends CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue {
-  final CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2 value;
-  const CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueCreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+final class CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueCreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+    extends CreateProjectResponseDismissedToastsItemValueVariant2PreviousValue {
+  final CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+      value;
+  const CreateProjectResponseDismissedToastsItemValueVariant2PreviousValueCreateProjectResponseDismissedToastsItemValueVariant2PreviousValueVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class CreateProjectResponseDismissedToastsItemValueVariant2 {
@@ -168,24 +302,35 @@ class CreateProjectResponseDismissedToastsItemValueVariant2 {
   final dynamic currentValue;
   final dynamic previousValue;
 
-  const CreateProjectResponseDismissedToastsItemValueVariant2({required this.currentValue, required this.previousValue});
+  const CreateProjectResponseDismissedToastsItemValueVariant2(
+      {required this.currentValue, required this.previousValue});
 
-  CreateProjectResponseDismissedToastsItemValueVariant2 Function({dynamic currentValue, dynamic previousValue}) get copyWith => _copyWith;
+  CreateProjectResponseDismissedToastsItemValueVariant2 Function(
+      {dynamic currentValue, dynamic previousValue}) get copyWith => _copyWith;
 
-  CreateProjectResponseDismissedToastsItemValueVariant2 _copyWith({Object? currentValue = sdkOmittedValue, Object? previousValue = sdkOmittedValue}) => CreateProjectResponseDismissedToastsItemValueVariant2(
-    currentValue: identical(currentValue, sdkOmittedValue) ? this.currentValue : currentValue as dynamic,
-    previousValue: identical(previousValue, sdkOmittedValue) ? this.previousValue : previousValue as dynamic,
-  );
+  CreateProjectResponseDismissedToastsItemValueVariant2 _copyWith(
+          {Object? currentValue = sdkOmittedValue,
+          Object? previousValue = sdkOmittedValue}) =>
+      CreateProjectResponseDismissedToastsItemValueVariant2(
+        currentValue: identical(currentValue, sdkOmittedValue)
+            ? this.currentValue
+            : currentValue as dynamic,
+        previousValue: identical(previousValue, sdkOmittedValue)
+            ? this.previousValue
+            : previousValue as dynamic,
+      );
 
-  factory CreateProjectResponseDismissedToastsItemValueVariant2.fromJson(Map<String, dynamic> json) => CreateProjectResponseDismissedToastsItemValueVariant2(
-    currentValue: (json['currentValue'])!,
-    previousValue: (json['previousValue'])!,
-  );
+  factory CreateProjectResponseDismissedToastsItemValueVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseDismissedToastsItemValueVariant2(
+        currentValue: (json['currentValue'])!,
+        previousValue: (json['previousValue'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'currentValue': currentValue,
-    'previousValue': previousValue,
-  };
+        'currentValue': currentValue,
+        'previousValue': previousValue,
+      };
 }
 
 sealed class CreateProjectResponseDismissedToastsItemValue {
@@ -193,37 +338,61 @@ sealed class CreateProjectResponseDismissedToastsItemValue {
   static const String constructionSurface = 'named';
   const CreateProjectResponseDismissedToastsItemValue();
   factory CreateProjectResponseDismissedToastsItemValue.fromJson(Object? json) {
-    if (json is String) { return CreateProjectResponseDismissedToastsItemValueString(json); }
-    if (json is num) { return CreateProjectResponseDismissedToastsItemValueDouble(json.toDouble()); }
-    try { return CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant2(CreateProjectResponseDismissedToastsItemValueVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant3(CreateProjectResponseDismissedToastsItemValueVariant3.fromJson(json as bool)); } catch (_) {}
-    throw FormatException("No variant matched for CreateProjectResponseDismissedToastsItemValue");
+    if (json is String) {
+      return CreateProjectResponseDismissedToastsItemValueString(json);
+    }
+    if (json is num) {
+      return CreateProjectResponseDismissedToastsItemValueDouble(
+          json.toDouble());
+    }
+    try {
+      return CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant2(
+          CreateProjectResponseDismissedToastsItemValueVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant3(
+          CreateProjectResponseDismissedToastsItemValueVariant3.fromJson(
+              json as bool));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateProjectResponseDismissedToastsItemValue");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseDismissedToastsItemValueString extends CreateProjectResponseDismissedToastsItemValue {
+final class CreateProjectResponseDismissedToastsItemValueString
+    extends CreateProjectResponseDismissedToastsItemValue {
   final String value;
   const CreateProjectResponseDismissedToastsItemValueString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateProjectResponseDismissedToastsItemValueDouble extends CreateProjectResponseDismissedToastsItemValue {
+final class CreateProjectResponseDismissedToastsItemValueDouble
+    extends CreateProjectResponseDismissedToastsItemValue {
   final double value;
   const CreateProjectResponseDismissedToastsItemValueDouble(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant2 extends CreateProjectResponseDismissedToastsItemValue {
+final class CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant2
+    extends CreateProjectResponseDismissedToastsItemValue {
   final CreateProjectResponseDismissedToastsItemValueVariant2 value;
-  const CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant3 extends CreateProjectResponseDismissedToastsItemValue {
+final class CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant3
+    extends CreateProjectResponseDismissedToastsItemValue {
   final CreateProjectResponseDismissedToastsItemValueVariant3 value;
-  const CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateProjectResponseDismissedToastsItemValueCreateProjectResponseDismissedToastsItemValueVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class CreateProjectResponseEnvItemContentHintVariant0 {
@@ -232,24 +401,40 @@ class CreateProjectResponseEnvItemContentHintVariant0 {
   final String storeId;
   final CreateProjectResponseEnvItemContentHintVariant0Type type_;
 
-  const CreateProjectResponseEnvItemContentHintVariant0({required this.storeId, required this.type_});
+  const CreateProjectResponseEnvItemContentHintVariant0(
+      {required this.storeId, required this.type_});
 
-  CreateProjectResponseEnvItemContentHintVariant0 Function({String storeId, CreateProjectResponseEnvItemContentHintVariant0Type type_}) get copyWith => _copyWith;
+  CreateProjectResponseEnvItemContentHintVariant0 Function(
+          {String storeId,
+          CreateProjectResponseEnvItemContentHintVariant0Type type_})
+      get copyWith => _copyWith;
 
-  CreateProjectResponseEnvItemContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateProjectResponseEnvItemContentHintVariant0(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseEnvItemContentHintVariant0Type,
-  );
+  CreateProjectResponseEnvItemContentHintVariant0 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CreateProjectResponseEnvItemContentHintVariant0(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateProjectResponseEnvItemContentHintVariant0Type,
+      );
 
-  factory CreateProjectResponseEnvItemContentHintVariant0.fromJson(Map<String, dynamic> json) => CreateProjectResponseEnvItemContentHintVariant0(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? CreateProjectResponseEnvItemContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CreateProjectResponseEnvItemContentHintVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseEnvItemContentHintVariant0(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateProjectResponseEnvItemContentHintVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class CreateProjectResponseEnvItemContentHintVariant1 {
@@ -258,22 +443,38 @@ class CreateProjectResponseEnvItemContentHintVariant1 {
   final String storeId;
   final CreateProjectResponseEnvItemContentHintVariant1Type type_;
 
-  const CreateProjectResponseEnvItemContentHintVariant1({required this.storeId, required this.type_});
+  const CreateProjectResponseEnvItemContentHintVariant1(
+      {required this.storeId, required this.type_});
 
-  CreateProjectResponseEnvItemContentHintVariant1 Function({String storeId, CreateProjectResponseEnvItemContentHintVariant1Type type_}) get copyWith => _copyWith;
+  CreateProjectResponseEnvItemContentHintVariant1 Function(
+          {String storeId,
+          CreateProjectResponseEnvItemContentHintVariant1Type type_})
+      get copyWith => _copyWith;
 
-  CreateProjectResponseEnvItemContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateProjectResponseEnvItemContentHintVariant1(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseEnvItemContentHintVariant1Type,
-  );
+  CreateProjectResponseEnvItemContentHintVariant1 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CreateProjectResponseEnvItemContentHintVariant1(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateProjectResponseEnvItemContentHintVariant1Type,
+      );
 
-  factory CreateProjectResponseEnvItemContentHintVariant1.fromJson(Map<String, dynamic> json) => CreateProjectResponseEnvItemContentHintVariant1(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? CreateProjectResponseEnvItemContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CreateProjectResponseEnvItemContentHintVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseEnvItemContentHintVariant1(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateProjectResponseEnvItemContentHintVariant1Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }

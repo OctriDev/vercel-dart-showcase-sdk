@@ -8,283 +8,549 @@ part of 'user.dart';
 class UserEventPayloadVariant411 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `entitlement` wire field.
   final String entitlement;
+
   /// Optional `string` value serialized in the `previousCanceledAt` wire field.
   final SdkOptional<String> previousCanceledAt;
+
   /// Required object value serialized in the `user` wire field.
   final UserEventPayloadVariant411User user;
 
-  const UserEventPayloadVariant411({required this.entitlement, this.previousCanceledAt = const SdkOmitted(), required this.user});
+  const UserEventPayloadVariant411(
+      {required this.entitlement,
+      this.previousCanceledAt = const SdkOmitted(),
+      required this.user});
 
-  UserEventPayloadVariant411 Function({String entitlement, SdkOptional<String> previousCanceledAt, UserEventPayloadVariant411User user}) get copyWith => _copyWith;
+  UserEventPayloadVariant411 Function(
+      {String entitlement,
+      SdkOptional<String> previousCanceledAt,
+      UserEventPayloadVariant411User user}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant411 _copyWith({Object? entitlement = sdkOmittedValue, Object? previousCanceledAt = sdkOmittedValue, Object? user = sdkOmittedValue}) => UserEventPayloadVariant411(
-    entitlement: identical(entitlement, sdkOmittedValue) ? this.entitlement : entitlement as String,
-    previousCanceledAt: identical(previousCanceledAt, sdkOmittedValue) ? this.previousCanceledAt : previousCanceledAt as SdkOptional<String>,
-    user: identical(user, sdkOmittedValue) ? this.user : user as UserEventPayloadVariant411User,
-  );
+  UserEventPayloadVariant411 _copyWith(
+          {Object? entitlement = sdkOmittedValue,
+          Object? previousCanceledAt = sdkOmittedValue,
+          Object? user = sdkOmittedValue}) =>
+      UserEventPayloadVariant411(
+        entitlement: identical(entitlement, sdkOmittedValue)
+            ? this.entitlement
+            : entitlement as String,
+        previousCanceledAt: identical(previousCanceledAt, sdkOmittedValue)
+            ? this.previousCanceledAt
+            : previousCanceledAt as SdkOptional<String>,
+        user: identical(user, sdkOmittedValue)
+            ? this.user
+            : user as UserEventPayloadVariant411User,
+      );
 
-  factory UserEventPayloadVariant411.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant411(
-    entitlement: (json['entitlement'] as String?)!,
-    previousCanceledAt: json['previousCanceledAt'] != null ? SdkPresent((json['previousCanceledAt'] as String?)!) : const SdkOmitted(),
-    user: (json['user'] != null ? UserEventPayloadVariant411User.fromJson(json['user'] as Map<String, dynamic>) : null)!,
-  );
+  factory UserEventPayloadVariant411.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant411(
+        entitlement: (json['entitlement'] as String?)!,
+        previousCanceledAt: json['previousCanceledAt'] != null
+            ? SdkPresent((json['previousCanceledAt'] as String?)!)
+            : const SdkOmitted(),
+        user: (json['user'] != null
+            ? UserEventPayloadVariant411User.fromJson(
+                json['user'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'entitlement': entitlement,
-    ...switch (previousCanceledAt) {
-      SdkPresent<String>(value: final value) => {'previousCanceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'user': user.toJson(),
-  };
+        'entitlement': entitlement,
+        ...switch (previousCanceledAt) {
+          SdkPresent<String>(value: final value) => {
+              'previousCanceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'user': user.toJson(),
+      };
 }
 
 /// Optional object value serialized in the `invitedBy` wire field.
 class UserEventPayloadVariant412InvitedBy {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
+
   /// Optional `string` value serialized in the `userId` wire field.
   final SdkOptional<String> userId;
 
-  const UserEventPayloadVariant412InvitedBy({required this.email, this.name = const SdkOmitted(), this.userId = const SdkOmitted()});
+  const UserEventPayloadVariant412InvitedBy(
+      {required this.email,
+      this.name = const SdkOmitted(),
+      this.userId = const SdkOmitted()});
 
-  UserEventPayloadVariant412InvitedBy Function({String email, SdkOptional<String> name, SdkOptional<String> userId}) get copyWith => _copyWith;
+  UserEventPayloadVariant412InvitedBy Function(
+      {String email,
+      SdkOptional<String> name,
+      SdkOptional<String> userId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant412InvitedBy _copyWith({Object? email = sdkOmittedValue, Object? name = sdkOmittedValue, Object? userId = sdkOmittedValue}) => UserEventPayloadVariant412InvitedBy(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
-  );
+  UserEventPayloadVariant412InvitedBy _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? userId = sdkOmittedValue}) =>
+      UserEventPayloadVariant412InvitedBy(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        userId: identical(userId, sdkOmittedValue)
+            ? this.userId
+            : userId as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant412InvitedBy.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant412InvitedBy(
-    email: (json['email'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant412InvitedBy.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant412InvitedBy(
+        email: (json['email'] as String?)!,
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+        userId: json['userId'] != null
+            ? SdkPresent((json['userId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'email': email,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (userId) {
-      SdkPresent<String>(value: final value) => {'userId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'email': email,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (userId) {
+          SdkPresent<String>(value: final value) => {
+              'userId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `updatedUser` wire field.
 class UserEventPayloadVariant412UpdatedUser {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
+
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventPayloadVariant412UpdatedUser({required this.email, required this.username});
+  const UserEventPayloadVariant412UpdatedUser(
+      {required this.email, required this.username});
 
-  UserEventPayloadVariant412UpdatedUser Function({String email, String username}) get copyWith => _copyWith;
+  UserEventPayloadVariant412UpdatedUser Function(
+      {String email, String username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant412UpdatedUser _copyWith({Object? email = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant412UpdatedUser(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  UserEventPayloadVariant412UpdatedUser _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant412UpdatedUser(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory UserEventPayloadVariant412UpdatedUser.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant412UpdatedUser(
-    email: (json['email'] as String?)!,
-    username: (json['username'] as String?)!,
-  );
+  factory UserEventPayloadVariant412UpdatedUser.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant412UpdatedUser(
+        email: (json['email'] as String?)!,
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'email': email,
-    'username': username,
-  };
+        'email': email,
+        'username': username,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant412 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional array value serialized in the `entitlements` wire field.
   final SdkOptional<List<String>> entitlements;
+
   /// Optional object value serialized in the `invitedBy` wire field.
   final SdkOptional<UserEventPayloadVariant412InvitedBy> invitedBy;
+
   /// Optional `string` value serialized in the `origin` wire field.
   final SdkOptional<String> origin;
+
   /// Optional `string` value serialized in the `role` wire field.
   final SdkOptional<String> role;
+
   /// Optional array value serialized in the `teamPermissions` wire field.
   final SdkOptional<List<String>> teamPermissions;
+
   /// Optional array value serialized in the `teamRoles` wire field.
   final SdkOptional<List<String>> teamRoles;
+
   /// Optional `string` value serialized in the `teamSlug` wire field.
   final SdkOptional<String> teamSlug;
+
   /// Optional `string` value serialized in the `uid` wire field.
   final SdkOptional<String> uid;
+
   /// Optional `string` value serialized in the `updatedUid` wire field.
   final SdkOptional<String> updatedUid;
+
   /// Optional object value serialized in the `updatedUser` wire field.
   final SdkOptional<UserEventPayloadVariant412UpdatedUser> updatedUser;
 
-  const UserEventPayloadVariant412({this.entitlements = const SdkOmitted(), this.invitedBy = const SdkOmitted(), this.origin = const SdkOmitted(), this.role = const SdkOmitted(), this.teamPermissions = const SdkOmitted(), this.teamRoles = const SdkOmitted(), this.teamSlug = const SdkOmitted(), this.uid = const SdkOmitted(), this.updatedUid = const SdkOmitted(), this.updatedUser = const SdkOmitted()});
+  const UserEventPayloadVariant412(
+      {this.entitlements = const SdkOmitted(),
+      this.invitedBy = const SdkOmitted(),
+      this.origin = const SdkOmitted(),
+      this.role = const SdkOmitted(),
+      this.teamPermissions = const SdkOmitted(),
+      this.teamRoles = const SdkOmitted(),
+      this.teamSlug = const SdkOmitted(),
+      this.uid = const SdkOmitted(),
+      this.updatedUid = const SdkOmitted(),
+      this.updatedUser = const SdkOmitted()});
 
-  UserEventPayloadVariant412 Function({SdkOptional<List<String>> entitlements, SdkOptional<UserEventPayloadVariant412InvitedBy> invitedBy, SdkOptional<String> origin, SdkOptional<String> role, SdkOptional<List<String>> teamPermissions, SdkOptional<List<String>> teamRoles, SdkOptional<String> teamSlug, SdkOptional<String> uid, SdkOptional<String> updatedUid, SdkOptional<UserEventPayloadVariant412UpdatedUser> updatedUser}) get copyWith => _copyWith;
+  UserEventPayloadVariant412 Function(
+          {SdkOptional<List<String>> entitlements,
+          SdkOptional<UserEventPayloadVariant412InvitedBy> invitedBy,
+          SdkOptional<String> origin,
+          SdkOptional<String> role,
+          SdkOptional<List<String>> teamPermissions,
+          SdkOptional<List<String>> teamRoles,
+          SdkOptional<String> teamSlug,
+          SdkOptional<String> uid,
+          SdkOptional<String> updatedUid,
+          SdkOptional<UserEventPayloadVariant412UpdatedUser> updatedUser})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant412 _copyWith({Object? entitlements = sdkOmittedValue, Object? invitedBy = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? role = sdkOmittedValue, Object? teamPermissions = sdkOmittedValue, Object? teamRoles = sdkOmittedValue, Object? teamSlug = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? updatedUid = sdkOmittedValue, Object? updatedUser = sdkOmittedValue}) => UserEventPayloadVariant412(
-    entitlements: identical(entitlements, sdkOmittedValue) ? this.entitlements : entitlements as SdkOptional<List<String>>,
-    invitedBy: identical(invitedBy, sdkOmittedValue) ? this.invitedBy : invitedBy as SdkOptional<UserEventPayloadVariant412InvitedBy>,
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as SdkOptional<String>,
-    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<String>,
-    teamPermissions: identical(teamPermissions, sdkOmittedValue) ? this.teamPermissions : teamPermissions as SdkOptional<List<String>>,
-    teamRoles: identical(teamRoles, sdkOmittedValue) ? this.teamRoles : teamRoles as SdkOptional<List<String>>,
-    teamSlug: identical(teamSlug, sdkOmittedValue) ? this.teamSlug : teamSlug as SdkOptional<String>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as SdkOptional<String>,
-    updatedUid: identical(updatedUid, sdkOmittedValue) ? this.updatedUid : updatedUid as SdkOptional<String>,
-    updatedUser: identical(updatedUser, sdkOmittedValue) ? this.updatedUser : updatedUser as SdkOptional<UserEventPayloadVariant412UpdatedUser>,
-  );
+  UserEventPayloadVariant412 _copyWith(
+          {Object? entitlements = sdkOmittedValue,
+          Object? invitedBy = sdkOmittedValue,
+          Object? origin = sdkOmittedValue,
+          Object? role = sdkOmittedValue,
+          Object? teamPermissions = sdkOmittedValue,
+          Object? teamRoles = sdkOmittedValue,
+          Object? teamSlug = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? updatedUid = sdkOmittedValue,
+          Object? updatedUser = sdkOmittedValue}) =>
+      UserEventPayloadVariant412(
+        entitlements: identical(entitlements, sdkOmittedValue)
+            ? this.entitlements
+            : entitlements as SdkOptional<List<String>>,
+        invitedBy: identical(invitedBy, sdkOmittedValue)
+            ? this.invitedBy
+            : invitedBy as SdkOptional<UserEventPayloadVariant412InvitedBy>,
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin as SdkOptional<String>,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as SdkOptional<String>,
+        teamPermissions: identical(teamPermissions, sdkOmittedValue)
+            ? this.teamPermissions
+            : teamPermissions as SdkOptional<List<String>>,
+        teamRoles: identical(teamRoles, sdkOmittedValue)
+            ? this.teamRoles
+            : teamRoles as SdkOptional<List<String>>,
+        teamSlug: identical(teamSlug, sdkOmittedValue)
+            ? this.teamSlug
+            : teamSlug as SdkOptional<String>,
+        uid: identical(uid, sdkOmittedValue)
+            ? this.uid
+            : uid as SdkOptional<String>,
+        updatedUid: identical(updatedUid, sdkOmittedValue)
+            ? this.updatedUid
+            : updatedUid as SdkOptional<String>,
+        updatedUser: identical(updatedUser, sdkOmittedValue)
+            ? this.updatedUser
+            : updatedUser as SdkOptional<UserEventPayloadVariant412UpdatedUser>,
+      );
 
-  factory UserEventPayloadVariant412.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant412(
-    entitlements: json['entitlements'] != null ? SdkPresent(((json['entitlements'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    invitedBy: json['invitedBy'] != null ? SdkPresent((json['invitedBy'] != null ? UserEventPayloadVariant412InvitedBy.fromJson(json['invitedBy'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    origin: json['origin'] != null ? SdkPresent((json['origin'] as String?)!) : const SdkOmitted(),
-    role: json['role'] != null ? SdkPresent((json['role'] as String?)!) : const SdkOmitted(),
-    teamPermissions: json['teamPermissions'] != null ? SdkPresent(((json['teamPermissions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    teamRoles: json['teamRoles'] != null ? SdkPresent(((json['teamRoles'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    teamSlug: json['teamSlug'] != null ? SdkPresent((json['teamSlug'] as String?)!) : const SdkOmitted(),
-    uid: json['uid'] != null ? SdkPresent((json['uid'] as String?)!) : const SdkOmitted(),
-    updatedUid: json['updatedUid'] != null ? SdkPresent((json['updatedUid'] as String?)!) : const SdkOmitted(),
-    updatedUser: json['updatedUser'] != null ? SdkPresent((json['updatedUser'] != null ? UserEventPayloadVariant412UpdatedUser.fromJson(json['updatedUser'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant412.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant412(
+        entitlements: json['entitlements'] != null
+            ? SdkPresent(((json['entitlements'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        invitedBy: json['invitedBy'] != null
+            ? SdkPresent((json['invitedBy'] != null
+                ? UserEventPayloadVariant412InvitedBy.fromJson(
+                    json['invitedBy'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        origin: json['origin'] != null
+            ? SdkPresent((json['origin'] as String?)!)
+            : const SdkOmitted(),
+        role: json['role'] != null
+            ? SdkPresent((json['role'] as String?)!)
+            : const SdkOmitted(),
+        teamPermissions: json['teamPermissions'] != null
+            ? SdkPresent(((json['teamPermissions'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        teamRoles: json['teamRoles'] != null
+            ? SdkPresent(((json['teamRoles'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        teamSlug: json['teamSlug'] != null
+            ? SdkPresent((json['teamSlug'] as String?)!)
+            : const SdkOmitted(),
+        uid: json['uid'] != null
+            ? SdkPresent((json['uid'] as String?)!)
+            : const SdkOmitted(),
+        updatedUid: json['updatedUid'] != null
+            ? SdkPresent((json['updatedUid'] as String?)!)
+            : const SdkOmitted(),
+        updatedUser: json['updatedUser'] != null
+            ? SdkPresent((json['updatedUser'] != null
+                ? UserEventPayloadVariant412UpdatedUser.fromJson(
+                    json['updatedUser'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (entitlements) {
-      SdkPresent<List<String>>(value: final value) => {'entitlements': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (invitedBy) {
-      SdkPresent<UserEventPayloadVariant412InvitedBy>(value: final value) => {'invitedBy': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (origin) {
-      SdkPresent<String>(value: final value) => {'origin': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (role) {
-      SdkPresent<String>(value: final value) => {'role': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamPermissions) {
-      SdkPresent<List<String>>(value: final value) => {'teamPermissions': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamRoles) {
-      SdkPresent<List<String>>(value: final value) => {'teamRoles': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamSlug) {
-      SdkPresent<String>(value: final value) => {'teamSlug': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uid) {
-      SdkPresent<String>(value: final value) => {'uid': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedUid) {
-      SdkPresent<String>(value: final value) => {'updatedUid': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedUser) {
-      SdkPresent<UserEventPayloadVariant412UpdatedUser>(value: final value) => {'updatedUser': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (entitlements) {
+          SdkPresent<List<String>>(value: final value) => {
+              'entitlements': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (invitedBy) {
+          SdkPresent<UserEventPayloadVariant412InvitedBy>(value: final value) =>
+            {
+              'invitedBy': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (origin) {
+          SdkPresent<String>(value: final value) => {
+              'origin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (role) {
+          SdkPresent<String>(value: final value) => {
+              'role': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamPermissions) {
+          SdkPresent<List<String>>(value: final value) => {
+              'teamPermissions': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamRoles) {
+          SdkPresent<List<String>>(value: final value) => {
+              'teamRoles': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamSlug) {
+          SdkPresent<String>(value: final value) => {
+              'teamSlug': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uid) {
+          SdkPresent<String>(value: final value) => {
+              'uid': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedUid) {
+          SdkPresent<String>(value: final value) => {
+              'updatedUid': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedUser) {
+          SdkPresent<UserEventPayloadVariant412UpdatedUser>(
+            value: final value
+          ) =>
+            {
+              'updatedUser': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant413 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `bitbucketUsername` wire field.
   final SdkOptional<String> bitbucketUsername;
+
   /// Optional `string` value serialized in the `githubUsername` wire field.
   final SdkOptional<String> githubUsername;
+
   /// Optional `string` value serialized in the `gitlabUsername` wire field.
   final SdkOptional<String> gitlabUsername;
+
   /// Optional `string` value serialized in the `gitUsername` wire field.
   final SdkOptional<String> gitUsername;
+
   /// Required `string` value serialized in the `requestedTeamName` wire field.
   final String requestedTeamName;
+
   /// Optional `string` value serialized in the `requestedTeamSlug` wire field.
   final SdkOptional<String> requestedTeamSlug;
+
   /// Optional `string` value serialized in the `requestedUserName` wire field.
   final SdkOptional<String> requestedUserName;
+
   /// Optional enumerated value serialized in the `source` wire field.
   final SdkOptional<UserEventPayloadVariant413Source> source;
 
-  const UserEventPayloadVariant413({this.bitbucketUsername = const SdkOmitted(), this.githubUsername = const SdkOmitted(), this.gitlabUsername = const SdkOmitted(), this.gitUsername = const SdkOmitted(), required this.requestedTeamName, this.requestedTeamSlug = const SdkOmitted(), this.requestedUserName = const SdkOmitted(), this.source = const SdkOmitted()});
+  const UserEventPayloadVariant413(
+      {this.bitbucketUsername = const SdkOmitted(),
+      this.githubUsername = const SdkOmitted(),
+      this.gitlabUsername = const SdkOmitted(),
+      this.gitUsername = const SdkOmitted(),
+      required this.requestedTeamName,
+      this.requestedTeamSlug = const SdkOmitted(),
+      this.requestedUserName = const SdkOmitted(),
+      this.source = const SdkOmitted()});
 
-  UserEventPayloadVariant413 Function({SdkOptional<String> bitbucketUsername, SdkOptional<String> githubUsername, SdkOptional<String> gitlabUsername, SdkOptional<String> gitUsername, String requestedTeamName, SdkOptional<String> requestedTeamSlug, SdkOptional<String> requestedUserName, SdkOptional<UserEventPayloadVariant413Source> source}) get copyWith => _copyWith;
+  UserEventPayloadVariant413 Function(
+          {SdkOptional<String> bitbucketUsername,
+          SdkOptional<String> githubUsername,
+          SdkOptional<String> gitlabUsername,
+          SdkOptional<String> gitUsername,
+          String requestedTeamName,
+          SdkOptional<String> requestedTeamSlug,
+          SdkOptional<String> requestedUserName,
+          SdkOptional<UserEventPayloadVariant413Source> source})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant413 _copyWith({Object? bitbucketUsername = sdkOmittedValue, Object? githubUsername = sdkOmittedValue, Object? gitlabUsername = sdkOmittedValue, Object? gitUsername = sdkOmittedValue, Object? requestedTeamName = sdkOmittedValue, Object? requestedTeamSlug = sdkOmittedValue, Object? requestedUserName = sdkOmittedValue, Object? source = sdkOmittedValue}) => UserEventPayloadVariant413(
-    bitbucketUsername: identical(bitbucketUsername, sdkOmittedValue) ? this.bitbucketUsername : bitbucketUsername as SdkOptional<String>,
-    githubUsername: identical(githubUsername, sdkOmittedValue) ? this.githubUsername : githubUsername as SdkOptional<String>,
-    gitlabUsername: identical(gitlabUsername, sdkOmittedValue) ? this.gitlabUsername : gitlabUsername as SdkOptional<String>,
-    gitUsername: identical(gitUsername, sdkOmittedValue) ? this.gitUsername : gitUsername as SdkOptional<String>,
-    requestedTeamName: identical(requestedTeamName, sdkOmittedValue) ? this.requestedTeamName : requestedTeamName as String,
-    requestedTeamSlug: identical(requestedTeamSlug, sdkOmittedValue) ? this.requestedTeamSlug : requestedTeamSlug as SdkOptional<String>,
-    requestedUserName: identical(requestedUserName, sdkOmittedValue) ? this.requestedUserName : requestedUserName as SdkOptional<String>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<UserEventPayloadVariant413Source>,
-  );
+  UserEventPayloadVariant413 _copyWith(
+          {Object? bitbucketUsername = sdkOmittedValue,
+          Object? githubUsername = sdkOmittedValue,
+          Object? gitlabUsername = sdkOmittedValue,
+          Object? gitUsername = sdkOmittedValue,
+          Object? requestedTeamName = sdkOmittedValue,
+          Object? requestedTeamSlug = sdkOmittedValue,
+          Object? requestedUserName = sdkOmittedValue,
+          Object? source = sdkOmittedValue}) =>
+      UserEventPayloadVariant413(
+        bitbucketUsername: identical(bitbucketUsername, sdkOmittedValue)
+            ? this.bitbucketUsername
+            : bitbucketUsername as SdkOptional<String>,
+        githubUsername: identical(githubUsername, sdkOmittedValue)
+            ? this.githubUsername
+            : githubUsername as SdkOptional<String>,
+        gitlabUsername: identical(gitlabUsername, sdkOmittedValue)
+            ? this.gitlabUsername
+            : gitlabUsername as SdkOptional<String>,
+        gitUsername: identical(gitUsername, sdkOmittedValue)
+            ? this.gitUsername
+            : gitUsername as SdkOptional<String>,
+        requestedTeamName: identical(requestedTeamName, sdkOmittedValue)
+            ? this.requestedTeamName
+            : requestedTeamName as String,
+        requestedTeamSlug: identical(requestedTeamSlug, sdkOmittedValue)
+            ? this.requestedTeamSlug
+            : requestedTeamSlug as SdkOptional<String>,
+        requestedUserName: identical(requestedUserName, sdkOmittedValue)
+            ? this.requestedUserName
+            : requestedUserName as SdkOptional<String>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source as SdkOptional<UserEventPayloadVariant413Source>,
+      );
 
-  factory UserEventPayloadVariant413.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant413(
-    bitbucketUsername: json['bitbucketUsername'] != null ? SdkPresent((json['bitbucketUsername'] as String?)!) : const SdkOmitted(),
-    githubUsername: json['githubUsername'] != null ? SdkPresent((json['githubUsername'] as String?)!) : const SdkOmitted(),
-    gitlabUsername: json['gitlabUsername'] != null ? SdkPresent((json['gitlabUsername'] as String?)!) : const SdkOmitted(),
-    gitUsername: json['gitUsername'] != null ? SdkPresent((json['gitUsername'] as String?)!) : const SdkOmitted(),
-    requestedTeamName: (json['requestedTeamName'] as String?)!,
-    requestedTeamSlug: json['requestedTeamSlug'] != null ? SdkPresent((json['requestedTeamSlug'] as String?)!) : const SdkOmitted(),
-    requestedUserName: json['requestedUserName'] != null ? SdkPresent((json['requestedUserName'] as String?)!) : const SdkOmitted(),
-    source: json['source'] != null ? SdkPresent((json['source'] != null ? UserEventPayloadVariant413Source.fromJson(json['source'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant413.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant413(
+        bitbucketUsername: json['bitbucketUsername'] != null
+            ? SdkPresent((json['bitbucketUsername'] as String?)!)
+            : const SdkOmitted(),
+        githubUsername: json['githubUsername'] != null
+            ? SdkPresent((json['githubUsername'] as String?)!)
+            : const SdkOmitted(),
+        gitlabUsername: json['gitlabUsername'] != null
+            ? SdkPresent((json['gitlabUsername'] as String?)!)
+            : const SdkOmitted(),
+        gitUsername: json['gitUsername'] != null
+            ? SdkPresent((json['gitUsername'] as String?)!)
+            : const SdkOmitted(),
+        requestedTeamName: (json['requestedTeamName'] as String?)!,
+        requestedTeamSlug: json['requestedTeamSlug'] != null
+            ? SdkPresent((json['requestedTeamSlug'] as String?)!)
+            : const SdkOmitted(),
+        requestedUserName: json['requestedUserName'] != null
+            ? SdkPresent((json['requestedUserName'] as String?)!)
+            : const SdkOmitted(),
+        source: json['source'] != null
+            ? SdkPresent((json['source'] != null
+                ? UserEventPayloadVariant413Source.fromJson(
+                    json['source'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (bitbucketUsername) {
-      SdkPresent<String>(value: final value) => {'bitbucketUsername': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (githubUsername) {
-      SdkPresent<String>(value: final value) => {'githubUsername': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitlabUsername) {
-      SdkPresent<String>(value: final value) => {'gitlabUsername': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitUsername) {
-      SdkPresent<String>(value: final value) => {'gitUsername': value,},
-      _ => const <String, dynamic>{},
-    },
-    'requestedTeamName': requestedTeamName,
-    ...switch (requestedTeamSlug) {
-      SdkPresent<String>(value: final value) => {'requestedTeamSlug': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (requestedUserName) {
-      SdkPresent<String>(value: final value) => {'requestedUserName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (source) {
-      SdkPresent<UserEventPayloadVariant413Source>(value: final value) => {'source': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (bitbucketUsername) {
+          SdkPresent<String>(value: final value) => {
+              'bitbucketUsername': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (githubUsername) {
+          SdkPresent<String>(value: final value) => {
+              'githubUsername': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitlabUsername) {
+          SdkPresent<String>(value: final value) => {
+              'gitlabUsername': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitUsername) {
+          SdkPresent<String>(value: final value) => {
+              'gitUsername': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'requestedTeamName': requestedTeamName,
+        ...switch (requestedTeamSlug) {
+          SdkPresent<String>(value: final value) => {
+              'requestedTeamSlug': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (requestedUserName) {
+          SdkPresent<String>(value: final value) => {
+              'requestedUserName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (source) {
+          SdkPresent<UserEventPayloadVariant413Source>(value: final value) => {
+              'source': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

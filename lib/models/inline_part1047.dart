@@ -7,53 +7,127 @@ part of 'inline.dart';
 class UpdateMicrofrontendsResponseJobs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent> flagDefinitionsPresent;
+  final SdkOptional<UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent>
+      flagDefinitionsPresent;
   final SdkOptional<UpdateMicrofrontendsResponseJobsLint> lint;
-  final SdkOptional<UpdateMicrofrontendsResponseJobsMfeConfigPresent> mfeConfigPresent;
+  final SdkOptional<UpdateMicrofrontendsResponseJobsMfeConfigPresent>
+      mfeConfigPresent;
   final SdkOptional<UpdateMicrofrontendsResponseJobsTypecheck> typecheck;
 
-  const UpdateMicrofrontendsResponseJobs({this.flagDefinitionsPresent = const SdkOmitted(), this.lint = const SdkOmitted(), this.mfeConfigPresent = const SdkOmitted(), this.typecheck = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseJobs(
+      {this.flagDefinitionsPresent = const SdkOmitted(),
+      this.lint = const SdkOmitted(),
+      this.mfeConfigPresent = const SdkOmitted(),
+      this.typecheck = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseJobs Function({SdkOptional<UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent> flagDefinitionsPresent, SdkOptional<UpdateMicrofrontendsResponseJobsLint> lint, SdkOptional<UpdateMicrofrontendsResponseJobsMfeConfigPresent> mfeConfigPresent, SdkOptional<UpdateMicrofrontendsResponseJobsTypecheck> typecheck}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseJobs Function(
+          {SdkOptional<UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent>
+              flagDefinitionsPresent,
+          SdkOptional<UpdateMicrofrontendsResponseJobsLint> lint,
+          SdkOptional<UpdateMicrofrontendsResponseJobsMfeConfigPresent>
+              mfeConfigPresent,
+          SdkOptional<UpdateMicrofrontendsResponseJobsTypecheck> typecheck})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseJobs _copyWith({Object? flagDefinitionsPresent = sdkOmittedValue, Object? lint = sdkOmittedValue, Object? mfeConfigPresent = sdkOmittedValue, Object? typecheck = sdkOmittedValue}) => UpdateMicrofrontendsResponseJobs(
-    flagDefinitionsPresent: identical(flagDefinitionsPresent, sdkOmittedValue) ? this.flagDefinitionsPresent : flagDefinitionsPresent as SdkOptional<UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent>,
-    lint: identical(lint, sdkOmittedValue) ? this.lint : lint as SdkOptional<UpdateMicrofrontendsResponseJobsLint>,
-    mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue) ? this.mfeConfigPresent : mfeConfigPresent as SdkOptional<UpdateMicrofrontendsResponseJobsMfeConfigPresent>,
-    typecheck: identical(typecheck, sdkOmittedValue) ? this.typecheck : typecheck as SdkOptional<UpdateMicrofrontendsResponseJobsTypecheck>,
-  );
+  UpdateMicrofrontendsResponseJobs _copyWith(
+          {Object? flagDefinitionsPresent = sdkOmittedValue,
+          Object? lint = sdkOmittedValue,
+          Object? mfeConfigPresent = sdkOmittedValue,
+          Object? typecheck = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseJobs(
+        flagDefinitionsPresent:
+            identical(flagDefinitionsPresent, sdkOmittedValue)
+                ? this.flagDefinitionsPresent
+                : flagDefinitionsPresent as SdkOptional<
+                    UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent>,
+        lint: identical(lint, sdkOmittedValue)
+            ? this.lint
+            : lint as SdkOptional<UpdateMicrofrontendsResponseJobsLint>,
+        mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue)
+            ? this.mfeConfigPresent
+            : mfeConfigPresent as SdkOptional<
+                UpdateMicrofrontendsResponseJobsMfeConfigPresent>,
+        typecheck: identical(typecheck, sdkOmittedValue)
+            ? this.typecheck
+            : typecheck
+                as SdkOptional<UpdateMicrofrontendsResponseJobsTypecheck>,
+      );
 
-  factory UpdateMicrofrontendsResponseJobs.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseJobs(
-    flagDefinitionsPresent: json['flag-definitions-present'] != null ? SdkPresent((json['flag-definitions-present'] != null ? UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent.fromJson(json['flag-definitions-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    lint: json['lint'] != null ? SdkPresent((json['lint'] != null ? UpdateMicrofrontendsResponseJobsLint.fromJson(json['lint'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    mfeConfigPresent: json['mfe-config-present'] != null ? SdkPresent((json['mfe-config-present'] != null ? UpdateMicrofrontendsResponseJobsMfeConfigPresent.fromJson(json['mfe-config-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    typecheck: json['typecheck'] != null ? SdkPresent((json['typecheck'] != null ? UpdateMicrofrontendsResponseJobsTypecheck.fromJson(json['typecheck'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateMicrofrontendsResponseJobs.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseJobs(
+        flagDefinitionsPresent: json['flag-definitions-present'] != null
+            ? SdkPresent((json['flag-definitions-present'] != null
+                ? UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent
+                    .fromJson(json['flag-definitions-present']
+                        as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        lint: json['lint'] != null
+            ? SdkPresent((json['lint'] != null
+                ? UpdateMicrofrontendsResponseJobsLint.fromJson(
+                    json['lint'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        mfeConfigPresent: json['mfe-config-present'] != null
+            ? SdkPresent((json['mfe-config-present'] != null
+                ? UpdateMicrofrontendsResponseJobsMfeConfigPresent.fromJson(
+                    json['mfe-config-present'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        typecheck: json['typecheck'] != null
+            ? SdkPresent((json['typecheck'] != null
+                ? UpdateMicrofrontendsResponseJobsTypecheck.fromJson(
+                    json['typecheck'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (flagDefinitionsPresent) {
-      SdkPresent<UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent>(value: final value) => {'flag-definitions-present': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lint) {
-      SdkPresent<UpdateMicrofrontendsResponseJobsLint>(value: final value) => {'lint': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (mfeConfigPresent) {
-      SdkPresent<UpdateMicrofrontendsResponseJobsMfeConfigPresent>(value: final value) => {'mfe-config-present': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (typecheck) {
-      SdkPresent<UpdateMicrofrontendsResponseJobsTypecheck>(value: final value) => {'typecheck': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (flagDefinitionsPresent) {
+          SdkPresent<UpdateMicrofrontendsResponseJobsFlagDefinitionsPresent>(
+            value: final value
+          ) =>
+            {
+              'flag-definitions-present': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lint) {
+          SdkPresent<UpdateMicrofrontendsResponseJobsLint>(
+            value: final value
+          ) =>
+            {
+              'lint': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (mfeConfigPresent) {
+          SdkPresent<UpdateMicrofrontendsResponseJobsMfeConfigPresent>(
+            value: final value
+          ) =>
+            {
+              'mfe-config-present': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (typecheck) {
+          SdkPresent<UpdateMicrofrontendsResponseJobsTypecheck>(
+            value: final value
+          ) =>
+            {
+              'typecheck': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateMicrofrontendsResponseLastAliasRequest {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String? fromDeploymentId;
+
   /// If rolling back from a rolling release, fromDeploymentId captures the "base" of that rolling release, and fromRollingReleaseId captures the "target" of that rolling release.
   final SdkOptional<String> fromRollingReleaseId;
   final UpdateMicrofrontendsResponseLastAliasRequestJobStatus jobStatus;
@@ -61,39 +135,87 @@ class UpdateMicrofrontendsResponseLastAliasRequest {
   final String toDeploymentId;
   final UpdateMicrofrontendsResponseLastAliasRequestType type_;
 
-  const UpdateMicrofrontendsResponseLastAliasRequest({required this.fromDeploymentId, this.fromRollingReleaseId = const SdkOmitted(), required this.jobStatus, required this.requestedAt, required this.toDeploymentId, required this.type_});
+  const UpdateMicrofrontendsResponseLastAliasRequest(
+      {required this.fromDeploymentId,
+      this.fromRollingReleaseId = const SdkOmitted(),
+      required this.jobStatus,
+      required this.requestedAt,
+      required this.toDeploymentId,
+      required this.type_});
 
-  UpdateMicrofrontendsResponseLastAliasRequest Function({String? fromDeploymentId, SdkOptional<String> fromRollingReleaseId, UpdateMicrofrontendsResponseLastAliasRequestJobStatus jobStatus, double requestedAt, String toDeploymentId, UpdateMicrofrontendsResponseLastAliasRequestType type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseLastAliasRequest Function(
+          {String? fromDeploymentId,
+          SdkOptional<String> fromRollingReleaseId,
+          UpdateMicrofrontendsResponseLastAliasRequestJobStatus jobStatus,
+          double requestedAt,
+          String toDeploymentId,
+          UpdateMicrofrontendsResponseLastAliasRequestType type_})
+      get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseLastAliasRequest _copyWith({Object? fromDeploymentId = sdkOmittedValue, Object? fromRollingReleaseId = sdkOmittedValue, Object? jobStatus = sdkOmittedValue, Object? requestedAt = sdkOmittedValue, Object? toDeploymentId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseLastAliasRequest(
-    fromDeploymentId: identical(fromDeploymentId, sdkOmittedValue) ? this.fromDeploymentId : fromDeploymentId as String?,
-    fromRollingReleaseId: identical(fromRollingReleaseId, sdkOmittedValue) ? this.fromRollingReleaseId : fromRollingReleaseId as SdkOptional<String>,
-    jobStatus: identical(jobStatus, sdkOmittedValue) ? this.jobStatus : jobStatus as UpdateMicrofrontendsResponseLastAliasRequestJobStatus,
-    requestedAt: identical(requestedAt, sdkOmittedValue) ? this.requestedAt : requestedAt as double,
-    toDeploymentId: identical(toDeploymentId, sdkOmittedValue) ? this.toDeploymentId : toDeploymentId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseLastAliasRequestType,
-  );
+  UpdateMicrofrontendsResponseLastAliasRequest _copyWith(
+          {Object? fromDeploymentId = sdkOmittedValue,
+          Object? fromRollingReleaseId = sdkOmittedValue,
+          Object? jobStatus = sdkOmittedValue,
+          Object? requestedAt = sdkOmittedValue,
+          Object? toDeploymentId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseLastAliasRequest(
+        fromDeploymentId: identical(fromDeploymentId, sdkOmittedValue)
+            ? this.fromDeploymentId
+            : fromDeploymentId as String?,
+        fromRollingReleaseId: identical(fromRollingReleaseId, sdkOmittedValue)
+            ? this.fromRollingReleaseId
+            : fromRollingReleaseId as SdkOptional<String>,
+        jobStatus: identical(jobStatus, sdkOmittedValue)
+            ? this.jobStatus
+            : jobStatus
+                as UpdateMicrofrontendsResponseLastAliasRequestJobStatus,
+        requestedAt: identical(requestedAt, sdkOmittedValue)
+            ? this.requestedAt
+            : requestedAt as double,
+        toDeploymentId: identical(toDeploymentId, sdkOmittedValue)
+            ? this.toDeploymentId
+            : toDeploymentId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UpdateMicrofrontendsResponseLastAliasRequestType,
+      );
 
-  factory UpdateMicrofrontendsResponseLastAliasRequest.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseLastAliasRequest(
-    fromDeploymentId: json.containsKey('fromDeploymentId') ? json['fromDeploymentId'] as String? : throw ArgumentError.value(null, 'fromDeploymentId', 'Required property is missing'),
-    fromRollingReleaseId: json['fromRollingReleaseId'] != null ? SdkPresent((json['fromRollingReleaseId'] as String?)!) : const SdkOmitted(),
-    jobStatus: (json['jobStatus'] != null ? UpdateMicrofrontendsResponseLastAliasRequestJobStatus.fromJson(json['jobStatus'] as String) : null)!,
-    requestedAt: ((json['requestedAt'] as num?)?.toDouble())!,
-    toDeploymentId: (json['toDeploymentId'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseLastAliasRequestType.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseLastAliasRequest.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseLastAliasRequest(
+        fromDeploymentId: json.containsKey('fromDeploymentId')
+            ? json['fromDeploymentId'] as String?
+            : throw ArgumentError.value(
+                null, 'fromDeploymentId', 'Required property is missing'),
+        fromRollingReleaseId: json['fromRollingReleaseId'] != null
+            ? SdkPresent((json['fromRollingReleaseId'] as String?)!)
+            : const SdkOmitted(),
+        jobStatus: (json['jobStatus'] != null
+            ? UpdateMicrofrontendsResponseLastAliasRequestJobStatus.fromJson(
+                json['jobStatus'] as String)
+            : null)!,
+        requestedAt: ((json['requestedAt'] as num?)?.toDouble())!,
+        toDeploymentId: (json['toDeploymentId'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseLastAliasRequestType.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'fromDeploymentId': fromDeploymentId,
-    ...switch (fromRollingReleaseId) {
-      SdkPresent<String>(value: final value) => {'fromRollingReleaseId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'jobStatus': jobStatus.toJson(),
-    'requestedAt': requestedAt,
-    'toDeploymentId': toDeploymentId,
-    'type': type_.toJson(),
-  };
+        'fromDeploymentId': fromDeploymentId,
+        ...switch (fromRollingReleaseId) {
+          SdkPresent<String>(value: final value) => {
+              'fromRollingReleaseId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'jobStatus': jobStatus.toJson(),
+        'requestedAt': requestedAt,
+        'toDeploymentId': toDeploymentId,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError {
@@ -102,52 +224,81 @@ class UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError {
   final String code;
   final String message;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError({required this.code, required this.message});
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError(
+      {required this.code, required this.message});
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError Function({String code, String message}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError Function(
+      {String code, String message}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError(
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError _copyWith(
+          {Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError(
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError(
-    code: (json['code'] as String?)!,
-    message: (json['message'] as String?)!,
-  );
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemAliasError(
+        code: (json['code'] as String?)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'code': code,
-    'message': message,
-  };
+        'code': code,
+        'message': message,
+      };
 }
 
 class UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The pattern to match against branch names
   final String pattern;
+
   /// The type of matching to perform
-  final UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType type_;
+  final UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType
+      type_;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher({required this.pattern, required this.type_});
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher(
+      {required this.pattern, required this.type_});
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher Function({String pattern, UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher Function(
+      {String pattern,
+      UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType
+          type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher(
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType,
-  );
+  UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher _copyWith(
+          {Object? pattern = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher(
+        pattern: identical(pattern, sdkOmittedValue)
+            ? this.pattern
+            : pattern as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType,
+      );
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher(
-    pattern: (json['pattern'] as String?)!,
-    type_: (json['type'] != null ? UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcher(
+        pattern: (json['pattern'] as String?)!,
+        type_: (json['type'] != null
+            ? UpdateMicrofrontendsResponseLatestDeploymentsItemBranchMatcherType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pattern': pattern,
-    'type': type_.toJson(),
-  };
+        'pattern': pattern,
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem {
@@ -157,33 +308,57 @@ class UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem {
   final SdkOptional<String> src;
   final String use;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem({this.dest = const SdkOmitted(), this.src = const SdkOmitted(), required this.use});
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem(
+      {this.dest = const SdkOmitted(),
+      this.src = const SdkOmitted(),
+      required this.use});
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem Function({SdkOptional<String> dest, SdkOptional<String> src, String use}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem Function(
+      {SdkOptional<String> dest,
+      SdkOptional<String> src,
+      String use}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem _copyWith({Object? dest = sdkOmittedValue, Object? src = sdkOmittedValue, Object? use = sdkOmittedValue}) => UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem(
-    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-    use: identical(use, sdkOmittedValue) ? this.use : use as String,
-  );
+  UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem _copyWith(
+          {Object? dest = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? use = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem(
+        dest: identical(dest, sdkOmittedValue)
+            ? this.dest
+            : dest as SdkOptional<String>,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+        use: identical(use, sdkOmittedValue) ? this.use : use as String,
+      );
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem(
-    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-    use: (json['use'] as String?)!,
-  );
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemBuildsItem(
+        dest: json['dest'] != null
+            ? SdkPresent((json['dest'] as String?)!)
+            : const SdkOmitted(),
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+        use: (json['use'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (dest) {
-      SdkPresent<String>(value: final value) => {'dest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    'use': use,
-  };
+        ...switch (dest) {
+          SdkPresent<String>(value: final value) => {
+              'dest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'use': use,
+      };
 }
 
 class UpdateMicrofrontendsResponseLatestDeploymentsItemCreator {
@@ -195,37 +370,69 @@ class UpdateMicrofrontendsResponseLatestDeploymentsItemCreator {
   final String uid;
   final String username;
 
-  const UpdateMicrofrontendsResponseLatestDeploymentsItemCreator({required this.email, this.githubLogin = const SdkOmitted(), this.gitlabLogin = const SdkOmitted(), required this.uid, required this.username});
+  const UpdateMicrofrontendsResponseLatestDeploymentsItemCreator(
+      {required this.email,
+      this.githubLogin = const SdkOmitted(),
+      this.gitlabLogin = const SdkOmitted(),
+      required this.uid,
+      required this.username});
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemCreator Function({String email, SdkOptional<String> githubLogin, SdkOptional<String> gitlabLogin, String uid, String username}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseLatestDeploymentsItemCreator Function(
+      {String email,
+      SdkOptional<String> githubLogin,
+      SdkOptional<String> gitlabLogin,
+      String uid,
+      String username}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseLatestDeploymentsItemCreator _copyWith({Object? email = sdkOmittedValue, Object? githubLogin = sdkOmittedValue, Object? gitlabLogin = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => UpdateMicrofrontendsResponseLatestDeploymentsItemCreator(
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    githubLogin: identical(githubLogin, sdkOmittedValue) ? this.githubLogin : githubLogin as SdkOptional<String>,
-    gitlabLogin: identical(gitlabLogin, sdkOmittedValue) ? this.gitlabLogin : gitlabLogin as SdkOptional<String>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  UpdateMicrofrontendsResponseLatestDeploymentsItemCreator _copyWith(
+          {Object? email = sdkOmittedValue,
+          Object? githubLogin = sdkOmittedValue,
+          Object? gitlabLogin = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemCreator(
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        githubLogin: identical(githubLogin, sdkOmittedValue)
+            ? this.githubLogin
+            : githubLogin as SdkOptional<String>,
+        gitlabLogin: identical(gitlabLogin, sdkOmittedValue)
+            ? this.gitlabLogin
+            : gitlabLogin as SdkOptional<String>,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory UpdateMicrofrontendsResponseLatestDeploymentsItemCreator.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseLatestDeploymentsItemCreator(
-    email: (json['email'] as String?)!,
-    githubLogin: json['githubLogin'] != null ? SdkPresent((json['githubLogin'] as String?)!) : const SdkOmitted(),
-    gitlabLogin: json['gitlabLogin'] != null ? SdkPresent((json['gitlabLogin'] as String?)!) : const SdkOmitted(),
-    uid: (json['uid'] as String?)!,
-    username: (json['username'] as String?)!,
-  );
+  factory UpdateMicrofrontendsResponseLatestDeploymentsItemCreator.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseLatestDeploymentsItemCreator(
+        email: (json['email'] as String?)!,
+        githubLogin: json['githubLogin'] != null
+            ? SdkPresent((json['githubLogin'] as String?)!)
+            : const SdkOmitted(),
+        gitlabLogin: json['gitlabLogin'] != null
+            ? SdkPresent((json['gitlabLogin'] as String?)!)
+            : const SdkOmitted(),
+        uid: (json['uid'] as String?)!,
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'email': email,
-    ...switch (githubLogin) {
-      SdkPresent<String>(value: final value) => {'githubLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitlabLogin) {
-      SdkPresent<String>(value: final value) => {'gitlabLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    'uid': uid,
-    'username': username,
-  };
+        'email': email,
+        ...switch (githubLogin) {
+          SdkPresent<String>(value: final value) => {
+              'githubLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitlabLogin) {
+          SdkPresent<String>(value: final value) => {
+              'gitlabLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'uid': uid,
+        'username': username,
+      };
 }

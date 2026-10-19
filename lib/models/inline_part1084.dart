@@ -8,96 +8,164 @@ class CreateSandboxesByNameForkV3Response {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<SandboxPublicRoute> routes;
+
   /// This object contains information related to a Vercel NamedSandbox.
   final NamedSandbox sandbox;
+
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
 
-  const CreateSandboxesByNameForkV3Response({required this.routes, required this.sandbox, required this.session});
+  const CreateSandboxesByNameForkV3Response(
+      {required this.routes, required this.sandbox, required this.session});
 
-  CreateSandboxesByNameForkV3Response Function({List<SandboxPublicRoute> routes, NamedSandbox sandbox, Session session}) get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3Response Function(
+      {List<SandboxPublicRoute> routes,
+      NamedSandbox sandbox,
+      Session session}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3Response _copyWith({Object? routes = sdkOmittedValue, Object? sandbox = sdkOmittedValue, Object? session = sdkOmittedValue}) => CreateSandboxesByNameForkV3Response(
-    routes: identical(routes, sdkOmittedValue) ? this.routes : routes as List<SandboxPublicRoute>,
-    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as NamedSandbox,
-    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
-  );
+  CreateSandboxesByNameForkV3Response _copyWith(
+          {Object? routes = sdkOmittedValue,
+          Object? sandbox = sdkOmittedValue,
+          Object? session = sdkOmittedValue}) =>
+      CreateSandboxesByNameForkV3Response(
+        routes: identical(routes, sdkOmittedValue)
+            ? this.routes
+            : routes as List<SandboxPublicRoute>,
+        sandbox: identical(sandbox, sdkOmittedValue)
+            ? this.sandbox
+            : sandbox as NamedSandbox,
+        session: identical(session, sdkOmittedValue)
+            ? this.session
+            : session as Session,
+      );
 
-  factory CreateSandboxesByNameForkV3Response.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3Response(
-    routes: ((json['routes'] as List?)?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>)).toList())!,
-    sandbox: (json['sandbox'] != null ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!,
-    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
-  );
+  factory CreateSandboxesByNameForkV3Response.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesByNameForkV3Response(
+        routes: ((json['routes'] as List?)
+            ?.map((e) => SandboxPublicRoute.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        sandbox: (json['sandbox'] != null
+            ? NamedSandbox.fromJson(json['sandbox'] as Map<String, dynamic>)
+            : null)!,
+        session: (json['session'] != null
+            ? Session.fromJson(json['session'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'routes': routes.map((item) => item.toJson()).toList(),
-    'sandbox': sandbox.toJson(),
-    'session': session.toJson(),
-  };
+        'routes': routes.map((item) => item.toJson()).toList(),
+        'sandbox': sandbox.toJson(),
+        'session': session.toJson(),
+      };
 }
 
 /// Resources to define the VM
 class CreateSandboxesV4RequestBodyResources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The number of virtual CPUs to allocate to the sandbox. Must be 1, or an even number.
   final SdkOptional<int> vcpus;
+
   /// The amount of memory in megabytes to allocate to the sandbox. Must equal vcpus * 2048.
   final SdkOptional<int> memory;
 
-  const CreateSandboxesV4RequestBodyResources({this.vcpus = const SdkOmitted(), this.memory = const SdkOmitted()});
+  const CreateSandboxesV4RequestBodyResources(
+      {this.vcpus = const SdkOmitted(), this.memory = const SdkOmitted()});
 
-  CreateSandboxesV4RequestBodyResources Function({SdkOptional<int> vcpus, SdkOptional<int> memory}) get copyWith => _copyWith;
+  CreateSandboxesV4RequestBodyResources Function(
+      {SdkOptional<int> vcpus,
+      SdkOptional<int> memory}) get copyWith => _copyWith;
 
-  CreateSandboxesV4RequestBodyResources _copyWith({Object? vcpus = sdkOmittedValue, Object? memory = sdkOmittedValue}) => CreateSandboxesV4RequestBodyResources(
-    vcpus: identical(vcpus, sdkOmittedValue) ? this.vcpus : vcpus as SdkOptional<int>,
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as SdkOptional<int>,
-  );
+  CreateSandboxesV4RequestBodyResources _copyWith(
+          {Object? vcpus = sdkOmittedValue,
+          Object? memory = sdkOmittedValue}) =>
+      CreateSandboxesV4RequestBodyResources(
+        vcpus: identical(vcpus, sdkOmittedValue)
+            ? this.vcpus
+            : vcpus as SdkOptional<int>,
+        memory: identical(memory, sdkOmittedValue)
+            ? this.memory
+            : memory as SdkOptional<int>,
+      );
 
-  factory CreateSandboxesV4RequestBodyResources.fromJson(Map<String, dynamic> json) => CreateSandboxesV4RequestBodyResources(
-    vcpus: json['vcpus'] != null ? SdkPresent(((json['vcpus'] as num?)?.toInt())!) : const SdkOmitted(),
-    memory: json['memory'] != null ? SdkPresent(((json['memory'] as num?)?.toInt())!) : const SdkOmitted(),
-  );
+  factory CreateSandboxesV4RequestBodyResources.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV4RequestBodyResources(
+        vcpus: json['vcpus'] != null
+            ? SdkPresent(((json['vcpus'] as num?)?.toInt())!)
+            : const SdkOmitted(),
+        memory: json['memory'] != null
+            ? SdkPresent(((json['memory'] as num?)?.toInt())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (vcpus) {
-      SdkPresent<int>(value: final value) => {'vcpus': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (memory) {
-      SdkPresent<int>(value: final value) => {'memory': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (vcpus) {
+          SdkPresent<int>(value: final value) => {
+              'vcpus': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (memory) {
+          SdkPresent<int>(value: final value) => {
+              'memory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateSandboxesV4RequestBodyMountsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Name of the drive to mount. The drive must already exist.
   final String drive;
+
   /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.
   final SdkOptional<CreateSandboxesV4RequestBodyMountsValueMode> mode;
 
-  const CreateSandboxesV4RequestBodyMountsValue({required this.drive, this.mode = const SdkOmitted()});
+  const CreateSandboxesV4RequestBodyMountsValue(
+      {required this.drive, this.mode = const SdkOmitted()});
 
-  CreateSandboxesV4RequestBodyMountsValue Function({String drive, SdkOptional<CreateSandboxesV4RequestBodyMountsValueMode> mode}) get copyWith => _copyWith;
+  CreateSandboxesV4RequestBodyMountsValue Function(
+          {String drive,
+          SdkOptional<CreateSandboxesV4RequestBodyMountsValueMode> mode})
+      get copyWith => _copyWith;
 
-  CreateSandboxesV4RequestBodyMountsValue _copyWith({Object? drive = sdkOmittedValue, Object? mode = sdkOmittedValue}) => CreateSandboxesV4RequestBodyMountsValue(
-    drive: identical(drive, sdkOmittedValue) ? this.drive : drive as String,
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as SdkOptional<CreateSandboxesV4RequestBodyMountsValueMode>,
-  );
+  CreateSandboxesV4RequestBodyMountsValue _copyWith(
+          {Object? drive = sdkOmittedValue, Object? mode = sdkOmittedValue}) =>
+      CreateSandboxesV4RequestBodyMountsValue(
+        drive: identical(drive, sdkOmittedValue) ? this.drive : drive as String,
+        mode: identical(mode, sdkOmittedValue)
+            ? this.mode
+            : mode as SdkOptional<CreateSandboxesV4RequestBodyMountsValueMode>,
+      );
 
-  factory CreateSandboxesV4RequestBodyMountsValue.fromJson(Map<String, dynamic> json) => CreateSandboxesV4RequestBodyMountsValue(
-    drive: (json['drive'] as String?)!,
-    mode: json['mode'] != null ? SdkPresent((json['mode'] != null ? CreateSandboxesV4RequestBodyMountsValueMode.fromJson(json['mode'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory CreateSandboxesV4RequestBodyMountsValue.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV4RequestBodyMountsValue(
+        drive: (json['drive'] as String?)!,
+        mode: json['mode'] != null
+            ? SdkPresent((json['mode'] != null
+                ? CreateSandboxesV4RequestBodyMountsValueMode.fromJson(
+                    json['mode'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'drive': drive,
-    ...switch (mode) {
-      SdkPresent<CreateSandboxesV4RequestBodyMountsValueMode>(value: final value) => {'mode': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'drive': drive,
+        ...switch (mode) {
+          SdkPresent<CreateSandboxesV4RequestBodyMountsValueMode>(
+            value: final value
+          ) =>
+            {
+              'mode': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

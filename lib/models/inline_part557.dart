@@ -5,285 +5,381 @@ part of 'inline.dart';
 
 // Inline operation models (part 557)
 final class GetProjectsResponseSkipGitConnectDuringLink {
-
   final bool value;
 
   const GetProjectsResponseSkipGitConnectDuringLink._(this.value);
 
-  factory GetProjectsResponseSkipGitConnectDuringLink.fromJson(bool value) => GetProjectsResponseSkipGitConnectDuringLink._(value);
+  factory GetProjectsResponseSkipGitConnectDuringLink.fromJson(bool value) =>
+      GetProjectsResponseSkipGitConnectDuringLink._(value);
 
   static const false_ = GetProjectsResponseSkipGitConnectDuringLink._(false);
   static const true_ = GetProjectsResponseSkipGitConnectDuringLink._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSkipGitConnectDuringLink && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSkipGitConnectDuringLink &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSourceFilesOutsideRootDirectory {
-
   final bool value;
 
   const GetProjectsResponseSourceFilesOutsideRootDirectory._(this.value);
 
-  factory GetProjectsResponseSourceFilesOutsideRootDirectory.fromJson(bool value) => GetProjectsResponseSourceFilesOutsideRootDirectory._(value);
+  factory GetProjectsResponseSourceFilesOutsideRootDirectory.fromJson(
+          bool value) =>
+      GetProjectsResponseSourceFilesOutsideRootDirectory._(value);
 
-  static const false_ = GetProjectsResponseSourceFilesOutsideRootDirectory._(false);
-  static const true_ = GetProjectsResponseSourceFilesOutsideRootDirectory._(true);
+  static const false_ =
+      GetProjectsResponseSourceFilesOutsideRootDirectory._(false);
+  static const true_ =
+      GetProjectsResponseSourceFilesOutsideRootDirectory._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSourceFilesOutsideRootDirectory && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSourceFilesOutsideRootDirectory &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSpeedInsightsHasData {
-
   final bool value;
 
   const GetProjectsResponseSpeedInsightsHasData._(this.value);
 
-  factory GetProjectsResponseSpeedInsightsHasData.fromJson(bool value) => GetProjectsResponseSpeedInsightsHasData._(value);
+  factory GetProjectsResponseSpeedInsightsHasData.fromJson(bool value) =>
+      GetProjectsResponseSpeedInsightsHasData._(value);
 
   static const false_ = GetProjectsResponseSpeedInsightsHasData._(false);
   static const true_ = GetProjectsResponseSpeedInsightsHasData._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSpeedInsightsHasData && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSpeedInsightsHasData && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom {
-
   final String value;
 
-  const GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._(this.value);
+  const GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._(
+      this.value);
 
-  factory GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom.fromJson(String value) => GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._(value);
+  factory GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom.fromJson(
+          String value) =>
+      GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._(value);
 
-  static const all = GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('all');
-  static const allExceptCustomDomains = GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('all_except_custom_domains');
-  static const preview = GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('prod_deployment_urls_and_all_previews');
+  static const all =
+      GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('all');
+  static const allExceptCustomDomains =
+      GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('all_except_custom_domains');
+  static const preview =
+      GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetProjectsResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom {
-
   final String value;
 
-  const GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._(this.value);
+  const GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._(
+      this.value);
 
-  factory GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom.fromJson(String value) => GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._(value);
+  factory GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom.fromJson(
+          String value) =>
+      GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._(value);
 
-  static const all = GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._('all');
-  static const allExceptCustomDomains = GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._('all_except_custom_domains');
-  static const preview = GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._('prod_deployment_urls_and_all_previews');
+  static const all =
+      GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._('all');
+  static const allExceptCustomDomains =
+      GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._(
+          'all_except_custom_domains');
+  static const preview =
+      GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom._(
+          'prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSsoProtectionCve55182MigrationAppliedFrom &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseSsoProtectionDeploymentType {
-
   final String value;
 
   const GetProjectsResponseSsoProtectionDeploymentType._(this.value);
 
-  factory GetProjectsResponseSsoProtectionDeploymentType.fromJson(String value) => GetProjectsResponseSsoProtectionDeploymentType._(value);
+  factory GetProjectsResponseSsoProtectionDeploymentType.fromJson(
+          String value) =>
+      GetProjectsResponseSsoProtectionDeploymentType._(value);
 
   static const all = GetProjectsResponseSsoProtectionDeploymentType._('all');
-  static const allExceptCustomDomains = GetProjectsResponseSsoProtectionDeploymentType._('all_except_custom_domains');
-  static const preview = GetProjectsResponseSsoProtectionDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = GetProjectsResponseSsoProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains =
+      GetProjectsResponseSsoProtectionDeploymentType._(
+          'all_except_custom_domains');
+  static const preview =
+      GetProjectsResponseSsoProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      GetProjectsResponseSsoProtectionDeploymentType._(
+          'prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseSsoProtectionDeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseSsoProtectionDeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseStaticIpsBuilds {
-
   final bool value;
 
   const GetProjectsResponseStaticIpsBuilds._(this.value);
 
-  factory GetProjectsResponseStaticIpsBuilds.fromJson(bool value) => GetProjectsResponseStaticIpsBuilds._(value);
+  factory GetProjectsResponseStaticIpsBuilds.fromJson(bool value) =>
+      GetProjectsResponseStaticIpsBuilds._(value);
 
   static const false_ = GetProjectsResponseStaticIpsBuilds._(false);
   static const true_ = GetProjectsResponseStaticIpsBuilds._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseStaticIpsBuilds && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseStaticIpsBuilds && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseStaticIpsEnabled {
-
   final bool value;
 
   const GetProjectsResponseStaticIpsEnabled._(this.value);
 
-  factory GetProjectsResponseStaticIpsEnabled.fromJson(bool value) => GetProjectsResponseStaticIpsEnabled._(value);
+  factory GetProjectsResponseStaticIpsEnabled.fromJson(bool value) =>
+      GetProjectsResponseStaticIpsEnabled._(value);
 
   static const false_ = GetProjectsResponseStaticIpsEnabled._(false);
   static const true_ = GetProjectsResponseStaticIpsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseStaticIpsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseStaticIpsEnabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseTargetsValueAliasAssignedVariant1 {
-
   final bool value;
 
   const GetProjectsResponseTargetsValueAliasAssignedVariant1._(this.value);
 
-  factory GetProjectsResponseTargetsValueAliasAssignedVariant1.fromJson(bool value) => GetProjectsResponseTargetsValueAliasAssignedVariant1._(value);
+  factory GetProjectsResponseTargetsValueAliasAssignedVariant1.fromJson(
+          bool value) =>
+      GetProjectsResponseTargetsValueAliasAssignedVariant1._(value);
 
-  static const false_ = GetProjectsResponseTargetsValueAliasAssignedVariant1._(false);
-  static const true_ = GetProjectsResponseTargetsValueAliasAssignedVariant1._(true);
+  static const false_ =
+      GetProjectsResponseTargetsValueAliasAssignedVariant1._(false);
+  static const true_ =
+      GetProjectsResponseTargetsValueAliasAssignedVariant1._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseTargetsValueAliasAssignedVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseTargetsValueAliasAssignedVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of matching to perform
 final class GetProjectsResponseTargetsValueBranchMatcherType {
-
   final String value;
 
   const GetProjectsResponseTargetsValueBranchMatcherType._(this.value);
 
-  factory GetProjectsResponseTargetsValueBranchMatcherType.fromJson(String value) => GetProjectsResponseTargetsValueBranchMatcherType._(value);
+  factory GetProjectsResponseTargetsValueBranchMatcherType.fromJson(
+          String value) =>
+      GetProjectsResponseTargetsValueBranchMatcherType._(value);
 
-  static const endswith = GetProjectsResponseTargetsValueBranchMatcherType._('endsWith');
-  static const equals = GetProjectsResponseTargetsValueBranchMatcherType._('equals');
-  static const startswith = GetProjectsResponseTargetsValueBranchMatcherType._('startsWith');
+  static const endswith =
+      GetProjectsResponseTargetsValueBranchMatcherType._('endsWith');
+  static const equals =
+      GetProjectsResponseTargetsValueBranchMatcherType._('equals');
+  static const startswith =
+      GetProjectsResponseTargetsValueBranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseTargetsValueBranchMatcherType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseTargetsValueBranchMatcherType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseTargetsValueChecksConclusion {
-
   final String value;
 
   const GetProjectsResponseTargetsValueChecksConclusion._(this.value);
 
-  factory GetProjectsResponseTargetsValueChecksConclusion.fromJson(String value) => GetProjectsResponseTargetsValueChecksConclusion._(value);
+  factory GetProjectsResponseTargetsValueChecksConclusion.fromJson(
+          String value) =>
+      GetProjectsResponseTargetsValueChecksConclusion._(value);
 
-  static const canceled = GetProjectsResponseTargetsValueChecksConclusion._('canceled');
-  static const failed = GetProjectsResponseTargetsValueChecksConclusion._('failed');
-  static const skipped = GetProjectsResponseTargetsValueChecksConclusion._('skipped');
-  static const succeeded = GetProjectsResponseTargetsValueChecksConclusion._('succeeded');
+  static const canceled =
+      GetProjectsResponseTargetsValueChecksConclusion._('canceled');
+  static const failed =
+      GetProjectsResponseTargetsValueChecksConclusion._('failed');
+  static const skipped =
+      GetProjectsResponseTargetsValueChecksConclusion._('skipped');
+  static const succeeded =
+      GetProjectsResponseTargetsValueChecksConclusion._('succeeded');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseTargetsValueChecksConclusion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseTargetsValueChecksConclusion &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseTargetsValueChecksState {
-
   final String value;
 
   const GetProjectsResponseTargetsValueChecksState._(this.value);
 
-  factory GetProjectsResponseTargetsValueChecksState.fromJson(String value) => GetProjectsResponseTargetsValueChecksState._(value);
+  factory GetProjectsResponseTargetsValueChecksState.fromJson(String value) =>
+      GetProjectsResponseTargetsValueChecksState._(value);
 
-  static const completed = GetProjectsResponseTargetsValueChecksState._('completed');
-  static const registered = GetProjectsResponseTargetsValueChecksState._('registered');
-  static const running = GetProjectsResponseTargetsValueChecksState._('running');
+  static const completed =
+      GetProjectsResponseTargetsValueChecksState._('completed');
+  static const registered =
+      GetProjectsResponseTargetsValueChecksState._('registered');
+  static const running =
+      GetProjectsResponseTargetsValueChecksState._('running');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseTargetsValueChecksState && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseTargetsValueChecksState &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseTargetsValueConnectBuildsEnabled {
-
   final bool value;
 
   const GetProjectsResponseTargetsValueConnectBuildsEnabled._(this.value);
 
-  factory GetProjectsResponseTargetsValueConnectBuildsEnabled.fromJson(bool value) => GetProjectsResponseTargetsValueConnectBuildsEnabled._(value);
+  factory GetProjectsResponseTargetsValueConnectBuildsEnabled.fromJson(
+          bool value) =>
+      GetProjectsResponseTargetsValueConnectBuildsEnabled._(value);
 
-  static const false_ = GetProjectsResponseTargetsValueConnectBuildsEnabled._(false);
-  static const true_ = GetProjectsResponseTargetsValueConnectBuildsEnabled._(true);
+  static const false_ =
+      GetProjectsResponseTargetsValueConnectBuildsEnabled._(false);
+  static const true_ =
+      GetProjectsResponseTargetsValueConnectBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseTargetsValueConnectBuildsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseTargetsValueConnectBuildsEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

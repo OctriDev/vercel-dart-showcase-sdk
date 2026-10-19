@@ -4,260 +4,346 @@
 part of 'user.dart';
 
 // user domain models (part 160)
-final class UserEventPayloadUserEventPayloadVariant344 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant344
+    extends UserEventPayload {
   final UserEventPayloadVariant344 value;
   const UserEventPayloadUserEventPayloadVariant344(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant345 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant345
+    extends UserEventPayload {
   final UserEventPayloadVariant345 value;
   const UserEventPayloadUserEventPayloadVariant345(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant346 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant346
+    extends UserEventPayload {
   final UserEventPayloadVariant346 value;
   const UserEventPayloadUserEventPayloadVariant346(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant347 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant347
+    extends UserEventPayload {
   final UserEventPayloadVariant347 value;
   const UserEventPayloadUserEventPayloadVariant347(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant348 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant348
+    extends UserEventPayload {
   final UserEventPayloadVariant348 value;
   const UserEventPayloadUserEventPayloadVariant348(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant349 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant349
+    extends UserEventPayload {
   final UserEventPayloadVariant349 value;
   const UserEventPayloadUserEventPayloadVariant349(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant350 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant350
+    extends UserEventPayload {
   final UserEventPayloadVariant350 value;
   const UserEventPayloadUserEventPayloadVariant350(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant351 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant351
+    extends UserEventPayload {
   final UserEventPayloadVariant351 value;
   const UserEventPayloadUserEventPayloadVariant351(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant352 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant352
+    extends UserEventPayload {
   final UserEventPayloadVariant352 value;
   const UserEventPayloadUserEventPayloadVariant352(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant353 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant353
+    extends UserEventPayload {
   final UserEventPayloadVariant353 value;
   const UserEventPayloadUserEventPayloadVariant353(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant354 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant354
+    extends UserEventPayload {
   final UserEventPayloadVariant354 value;
   const UserEventPayloadUserEventPayloadVariant354(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant355 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant355
+    extends UserEventPayload {
   final UserEventPayloadVariant355 value;
   const UserEventPayloadUserEventPayloadVariant355(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant356 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant356
+    extends UserEventPayload {
   final UserEventPayloadVariant356 value;
   const UserEventPayloadUserEventPayloadVariant356(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant357 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant357
+    extends UserEventPayload {
   final UserEventPayloadVariant357 value;
   const UserEventPayloadUserEventPayloadVariant357(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant358 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant358
+    extends UserEventPayload {
   final UserEventPayloadVariant358 value;
   const UserEventPayloadUserEventPayloadVariant358(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant359 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant359
+    extends UserEventPayload {
   final UserEventPayloadVariant359 value;
   const UserEventPayloadUserEventPayloadVariant359(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant360 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant360
+    extends UserEventPayload {
   final UserEventPayloadVariant360 value;
   const UserEventPayloadUserEventPayloadVariant360(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant361 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant361
+    extends UserEventPayload {
   final UserEventPayloadVariant361 value;
   const UserEventPayloadUserEventPayloadVariant361(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant362 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant362
+    extends UserEventPayload {
   final UserEventPayloadVariant362 value;
   const UserEventPayloadUserEventPayloadVariant362(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant363 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant363
+    extends UserEventPayload {
   final UserEventPayloadVariant363 value;
   const UserEventPayloadUserEventPayloadVariant363(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant364 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant364
+    extends UserEventPayload {
   final UserEventPayloadVariant364 value;
   const UserEventPayloadUserEventPayloadVariant364(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant365 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant365
+    extends UserEventPayload {
   final UserEventPayloadVariant365 value;
   const UserEventPayloadUserEventPayloadVariant365(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant366 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant366
+    extends UserEventPayload {
   final UserEventPayloadVariant366 value;
   const UserEventPayloadUserEventPayloadVariant366(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant367 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant367
+    extends UserEventPayload {
   final UserEventPayloadVariant367 value;
   const UserEventPayloadUserEventPayloadVariant367(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant368 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant368
+    extends UserEventPayload {
   final UserEventPayloadVariant368 value;
   const UserEventPayloadUserEventPayloadVariant368(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant369 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant369
+    extends UserEventPayload {
   final UserEventPayloadVariant369 value;
   const UserEventPayloadUserEventPayloadVariant369(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant370 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant370
+    extends UserEventPayload {
   final UserEventPayloadVariant370 value;
   const UserEventPayloadUserEventPayloadVariant370(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant371 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant371
+    extends UserEventPayload {
   final UserEventPayloadVariant371 value;
   const UserEventPayloadUserEventPayloadVariant371(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant372 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant372
+    extends UserEventPayload {
   final UserEventPayloadVariant372 value;
   const UserEventPayloadUserEventPayloadVariant372(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant373 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant373
+    extends UserEventPayload {
   final UserEventPayloadVariant373 value;
   const UserEventPayloadUserEventPayloadVariant373(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant374 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant374
+    extends UserEventPayload {
   final UserEventPayloadVariant374 value;
   const UserEventPayloadUserEventPayloadVariant374(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant375 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant375
+    extends UserEventPayload {
   final UserEventPayloadVariant375 value;
   const UserEventPayloadUserEventPayloadVariant375(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant376 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant376
+    extends UserEventPayload {
   final UserEventPayloadVariant376 value;
   const UserEventPayloadUserEventPayloadVariant376(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant377 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant377
+    extends UserEventPayload {
   final UserEventPayloadVariant377 value;
   const UserEventPayloadUserEventPayloadVariant377(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant378 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant378
+    extends UserEventPayload {
   final UserEventPayloadVariant378 value;
   const UserEventPayloadUserEventPayloadVariant378(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant379 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant379
+    extends UserEventPayload {
   final UserEventPayloadVariant379 value;
   const UserEventPayloadUserEventPayloadVariant379(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant380 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant380
+    extends UserEventPayload {
   final UserEventPayloadVariant380 value;
   const UserEventPayloadUserEventPayloadVariant380(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant381 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant381
+    extends UserEventPayload {
   final UserEventPayloadVariant381 value;
   const UserEventPayloadUserEventPayloadVariant381(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant382 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant382
+    extends UserEventPayload {
   final UserEventPayloadVariant382 value;
   const UserEventPayloadUserEventPayloadVariant382(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant383 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant383
+    extends UserEventPayload {
   final UserEventPayloadVariant383 value;
   const UserEventPayloadUserEventPayloadVariant383(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant384 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant384
+    extends UserEventPayload {
   final UserEventPayloadVariant384 value;
   const UserEventPayloadUserEventPayloadVariant384(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant385 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant385
+    extends UserEventPayload {
   final UserEventPayloadVariant385 value;
   const UserEventPayloadUserEventPayloadVariant385(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadUserEventPayloadVariant386 extends UserEventPayload {
+final class UserEventPayloadUserEventPayloadVariant386
+    extends UserEventPayload {
   final UserEventPayloadVariant386 value;
   const UserEventPayloadUserEventPayloadVariant386(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

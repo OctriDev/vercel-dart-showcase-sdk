@@ -11,24 +11,38 @@ class PutFirewallConfigRequestBodyCrsMa {
   final bool active;
   final PutFirewallConfigRequestBodyCrsMaAction action;
 
-  const PutFirewallConfigRequestBodyCrsMa({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsMa(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsMa Function({bool active, PutFirewallConfigRequestBodyCrsMaAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsMa Function(
+          {bool active, PutFirewallConfigRequestBodyCrsMaAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsMa _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsMa(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsMaAction,
-  );
+  PutFirewallConfigRequestBodyCrsMa _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsMa(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsMaAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsMa.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsMa(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsMaAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsMa.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsMa(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsMaAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Local File Inclusion Attack - Prevent unauthorized access to local files through web applications.
@@ -38,24 +52,38 @@ class PutFirewallConfigRequestBodyCrsLfi {
   final bool active;
   final PutFirewallConfigRequestBodyCrsLfiAction action;
 
-  const PutFirewallConfigRequestBodyCrsLfi({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsLfi(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsLfi Function({bool active, PutFirewallConfigRequestBodyCrsLfiAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsLfi Function(
+          {bool active, PutFirewallConfigRequestBodyCrsLfiAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsLfi _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsLfi(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsLfiAction,
-  );
+  PutFirewallConfigRequestBodyCrsLfi _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsLfi(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsLfiAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsLfi.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsLfi(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsLfiAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsLfi.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsLfi(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsLfiAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Remote File Inclusion Attack - Prohibit unauthorized upload or execution of remote files.
@@ -65,24 +93,38 @@ class PutFirewallConfigRequestBodyCrsRfi {
   final bool active;
   final PutFirewallConfigRequestBodyCrsRfiAction action;
 
-  const PutFirewallConfigRequestBodyCrsRfi({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsRfi(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsRfi Function({bool active, PutFirewallConfigRequestBodyCrsRfiAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsRfi Function(
+          {bool active, PutFirewallConfigRequestBodyCrsRfiAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsRfi _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsRfi(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsRfiAction,
-  );
+  PutFirewallConfigRequestBodyCrsRfi _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsRfi(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsRfiAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsRfi.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsRfi(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsRfiAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsRfi.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsRfi(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsRfiAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Remote Execution Attack - Prevent unauthorized execution of remote scripts or commands.
@@ -92,24 +134,38 @@ class PutFirewallConfigRequestBodyCrsRce {
   final bool active;
   final PutFirewallConfigRequestBodyCrsRceAction action;
 
-  const PutFirewallConfigRequestBodyCrsRce({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsRce(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsRce Function({bool active, PutFirewallConfigRequestBodyCrsRceAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsRce Function(
+          {bool active, PutFirewallConfigRequestBodyCrsRceAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsRce _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsRce(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsRceAction,
-  );
+  PutFirewallConfigRequestBodyCrsRce _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsRce(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsRceAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsRce.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsRce(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsRceAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsRce.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsRce(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsRceAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// PHP Attack - Safeguard against vulnerability exploits in PHP-based applications.
@@ -119,24 +175,38 @@ class PutFirewallConfigRequestBodyCrsPhp {
   final bool active;
   final PutFirewallConfigRequestBodyCrsPhpAction action;
 
-  const PutFirewallConfigRequestBodyCrsPhp({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsPhp(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsPhp Function({bool active, PutFirewallConfigRequestBodyCrsPhpAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsPhp Function(
+          {bool active, PutFirewallConfigRequestBodyCrsPhpAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsPhp _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsPhp(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsPhpAction,
-  );
+  PutFirewallConfigRequestBodyCrsPhp _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsPhp(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsPhpAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsPhp.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsPhp(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsPhpAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsPhp.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsPhp(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsPhpAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Generic Attack - Provide broad protection from various undefined or novel attack vectors.
@@ -146,24 +216,38 @@ class PutFirewallConfigRequestBodyCrsGen {
   final bool active;
   final PutFirewallConfigRequestBodyCrsGenAction action;
 
-  const PutFirewallConfigRequestBodyCrsGen({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsGen(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsGen Function({bool active, PutFirewallConfigRequestBodyCrsGenAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsGen Function(
+          {bool active, PutFirewallConfigRequestBodyCrsGenAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsGen _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsGen(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsGenAction,
-  );
+  PutFirewallConfigRequestBodyCrsGen _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsGen(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsGenAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsGen.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsGen(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsGenAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsGen.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsGen(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsGenAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// XSS Attack - Prevent injection of malicious scripts into trusted webpages.
@@ -173,24 +257,38 @@ class PutFirewallConfigRequestBodyCrsXss {
   final bool active;
   final PutFirewallConfigRequestBodyCrsXssAction action;
 
-  const PutFirewallConfigRequestBodyCrsXss({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsXss(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsXss Function({bool active, PutFirewallConfigRequestBodyCrsXssAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsXss Function(
+          {bool active, PutFirewallConfigRequestBodyCrsXssAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsXss _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsXss(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsXssAction,
-  );
+  PutFirewallConfigRequestBodyCrsXss _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsXss(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsXssAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsXss.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsXss(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsXssAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsXss.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsXss(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsXssAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// SQL Injection Attack - Prohibit unauthorized use of SQL commands to manipulate databases.
@@ -200,24 +298,38 @@ class PutFirewallConfigRequestBodyCrsSqli {
   final bool active;
   final PutFirewallConfigRequestBodyCrsSqliAction action;
 
-  const PutFirewallConfigRequestBodyCrsSqli({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsSqli(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsSqli Function({bool active, PutFirewallConfigRequestBodyCrsSqliAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsSqli Function(
+          {bool active, PutFirewallConfigRequestBodyCrsSqliAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsSqli _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsSqli(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsSqliAction,
-  );
+  PutFirewallConfigRequestBodyCrsSqli _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsSqli(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsSqliAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsSqli.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsSqli(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsSqliAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsSqli.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsSqli(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsSqliAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Session Fixation Attack - Prevent unauthorized takeover of user sessions by enforcing unique session IDs.
@@ -227,24 +339,38 @@ class PutFirewallConfigRequestBodyCrsSf {
   final bool active;
   final PutFirewallConfigRequestBodyCrsSfAction action;
 
-  const PutFirewallConfigRequestBodyCrsSf({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsSf(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsSf Function({bool active, PutFirewallConfigRequestBodyCrsSfAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsSf Function(
+          {bool active, PutFirewallConfigRequestBodyCrsSfAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsSf _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsSf(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsSfAction,
-  );
+  PutFirewallConfigRequestBodyCrsSf _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsSf(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsSfAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsSf.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsSf(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsSfAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsSf.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsSf(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsSfAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }
 
 /// Java Attack - Mitigate risks of exploitation targeting Java-based applications or components.
@@ -254,22 +380,36 @@ class PutFirewallConfigRequestBodyCrsJava {
   final bool active;
   final PutFirewallConfigRequestBodyCrsJavaAction action;
 
-  const PutFirewallConfigRequestBodyCrsJava({required this.active, required this.action});
+  const PutFirewallConfigRequestBodyCrsJava(
+      {required this.active, required this.action});
 
-  PutFirewallConfigRequestBodyCrsJava Function({bool active, PutFirewallConfigRequestBodyCrsJavaAction action}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyCrsJava Function(
+          {bool active, PutFirewallConfigRequestBodyCrsJavaAction action})
+      get copyWith => _copyWith;
 
-  PutFirewallConfigRequestBodyCrsJava _copyWith({Object? active = sdkOmittedValue, Object? action = sdkOmittedValue}) => PutFirewallConfigRequestBodyCrsJava(
-    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
-    action: identical(action, sdkOmittedValue) ? this.action : action as PutFirewallConfigRequestBodyCrsJavaAction,
-  );
+  PutFirewallConfigRequestBodyCrsJava _copyWith(
+          {Object? active = sdkOmittedValue,
+          Object? action = sdkOmittedValue}) =>
+      PutFirewallConfigRequestBodyCrsJava(
+        active:
+            identical(active, sdkOmittedValue) ? this.active : active as bool,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as PutFirewallConfigRequestBodyCrsJavaAction,
+      );
 
-  factory PutFirewallConfigRequestBodyCrsJava.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyCrsJava(
-    active: (json['active'] as bool?)!,
-    action: (json['action'] != null ? PutFirewallConfigRequestBodyCrsJavaAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory PutFirewallConfigRequestBodyCrsJava.fromJson(
+          Map<String, dynamic> json) =>
+      PutFirewallConfigRequestBodyCrsJava(
+        active: (json['active'] as bool?)!,
+        action: (json['action'] != null
+            ? PutFirewallConfigRequestBodyCrsJavaAction.fromJson(
+                json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'active': active,
-    'action': action.toJson(),
-  };
+        'active': active,
+        'action': action.toJson(),
+      };
 }

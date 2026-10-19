@@ -8,144 +8,237 @@ part of 'user.dart';
 class UserEventPayloadVariant120JobVariant8DeployHook {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
 
-  const UserEventPayloadVariant120JobVariant8DeployHook({required this.createdAt, required this.id, required this.name, required this.ref});
+  const UserEventPayloadVariant120JobVariant8DeployHook(
+      {required this.createdAt,
+      required this.id,
+      required this.name,
+      required this.ref});
 
-  UserEventPayloadVariant120JobVariant8DeployHook Function({double createdAt, String id, String name, String ref}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant8DeployHook Function(
+      {double createdAt,
+      String id,
+      String name,
+      String ref}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant8DeployHook _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant8DeployHook(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-  );
+  UserEventPayloadVariant120JobVariant8DeployHook _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ref = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant8DeployHook(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant8DeployHook.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant8DeployHook(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    ref: (json['ref'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant8DeployHook.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant8DeployHook(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        ref: (json['ref'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'id': id,
-    'name': name,
-    'ref': ref,
-  };
+        'createdAt': createdAt,
+        'id': id,
+        'name': name,
+        'ref': ref,
+      };
 }
 
 /// Since June 2023 Determines if comments should be posted to the git host. Replaces `github.silent` in the vercel.json.
 class UserEventPayloadVariant120JobVariant8GitComments {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `onCommit` wire field.
   final UserEventPayloadVariant120JobVariant8GitCommentsOnCommit onCommit;
+
   /// Required enumerated value serialized in the `onPullRequest` wire field.
-  final UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest onPullRequest;
+  final UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest
+      onPullRequest;
 
-  const UserEventPayloadVariant120JobVariant8GitComments({required this.onCommit, required this.onPullRequest});
+  const UserEventPayloadVariant120JobVariant8GitComments(
+      {required this.onCommit, required this.onPullRequest});
 
-  UserEventPayloadVariant120JobVariant8GitComments Function({UserEventPayloadVariant120JobVariant8GitCommentsOnCommit onCommit, UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest onPullRequest}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant8GitComments Function(
+      {UserEventPayloadVariant120JobVariant8GitCommentsOnCommit onCommit,
+      UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest
+          onPullRequest}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant8GitComments _copyWith({Object? onCommit = sdkOmittedValue, Object? onPullRequest = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant8GitComments(
-    onCommit: identical(onCommit, sdkOmittedValue) ? this.onCommit : onCommit as UserEventPayloadVariant120JobVariant8GitCommentsOnCommit,
-    onPullRequest: identical(onPullRequest, sdkOmittedValue) ? this.onPullRequest : onPullRequest as UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest,
-  );
+  UserEventPayloadVariant120JobVariant8GitComments _copyWith(
+          {Object? onCommit = sdkOmittedValue,
+          Object? onPullRequest = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant8GitComments(
+        onCommit: identical(onCommit, sdkOmittedValue)
+            ? this.onCommit
+            : onCommit
+                as UserEventPayloadVariant120JobVariant8GitCommentsOnCommit,
+        onPullRequest: identical(onPullRequest, sdkOmittedValue)
+            ? this.onPullRequest
+            : onPullRequest
+                as UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest,
+      );
 
-  factory UserEventPayloadVariant120JobVariant8GitComments.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant8GitComments(
-    onCommit: (json['onCommit'] != null ? UserEventPayloadVariant120JobVariant8GitCommentsOnCommit.fromJson(json['onCommit'] as bool) : null)!,
-    onPullRequest: (json['onPullRequest'] != null ? UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest.fromJson(json['onPullRequest'] as bool) : null)!,
-  );
+  factory UserEventPayloadVariant120JobVariant8GitComments.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant8GitComments(
+        onCommit: (json['onCommit'] != null
+            ? UserEventPayloadVariant120JobVariant8GitCommentsOnCommit.fromJson(
+                json['onCommit'] as bool)
+            : null)!,
+        onPullRequest: (json['onPullRequest'] != null
+            ? UserEventPayloadVariant120JobVariant8GitCommentsOnPullRequest
+                .fromJson(json['onPullRequest'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'onCommit': onCommit.toJson(),
-    'onPullRequest': onPullRequest.toJson(),
-  };
+        'onCommit': onCommit.toJson(),
+        'onPullRequest': onPullRequest.toJson(),
+      };
 }
 
 /// Cursor Origin
 class UserEventPayloadVariant120JobVariant8HeadInfo {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Owner (namespace) slug, e.g. `acme`.
   final String owner;
+
   /// Origin namespace id (`ns_…`).
   final String ownerId;
+
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
+
   /// Repository name, e.g. `api`.
   final String repo;
+
   /// Origin repository id.
   final String repoId;
+
   /// Required `string` value serialized in the `sha` wire field.
   final String sha;
 
-  const UserEventPayloadVariant120JobVariant8HeadInfo({required this.owner, required this.ownerId, required this.ref, required this.repo, required this.repoId, required this.sha});
+  const UserEventPayloadVariant120JobVariant8HeadInfo(
+      {required this.owner,
+      required this.ownerId,
+      required this.ref,
+      required this.repo,
+      required this.repoId,
+      required this.sha});
 
-  UserEventPayloadVariant120JobVariant8HeadInfo Function({String owner, String ownerId, String ref, String repo, String repoId, String sha}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant8HeadInfo Function(
+      {String owner,
+      String ownerId,
+      String ref,
+      String repo,
+      String repoId,
+      String sha}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant8HeadInfo _copyWith({Object? owner = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant8HeadInfo(
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-  );
+  UserEventPayloadVariant120JobVariant8HeadInfo _copyWith(
+          {Object? owner = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? sha = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant8HeadInfo(
+        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        repoId:
+            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant8HeadInfo.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant8HeadInfo(
-    owner: (json['owner'] as String?)!,
-    ownerId: (json['ownerId'] as String?)!,
-    ref: (json['ref'] as String?)!,
-    repo: (json['repo'] as String?)!,
-    repoId: (json['repoId'] as String?)!,
-    sha: (json['sha'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant8HeadInfo.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant8HeadInfo(
+        owner: (json['owner'] as String?)!,
+        ownerId: (json['ownerId'] as String?)!,
+        ref: (json['ref'] as String?)!,
+        repo: (json['repo'] as String?)!,
+        repoId: (json['repoId'] as String?)!,
+        sha: (json['sha'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'owner': owner,
-    'ownerId': ownerId,
-    'ref': ref,
-    'repo': repo,
-    'repoId': repoId,
-    'sha': sha,
-  };
+        'owner': owner,
+        'ownerId': ownerId,
+        'ref': ref,
+        'repo': repo,
+        'repoId': repoId,
+        'sha': sha,
+      };
 }
 
 /// Since March 2026 Records a successful NSNB auto-add result so later GitHub PR comments can deterministically explain why this SHA was allowed to deploy.
 class UserEventPayloadVariant120JobVariant8NsnbSideEffect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `action` wire field.
   final UserEventPayloadVariant120JobVariant8NsnbSideEffectAction action;
+
   /// Required `string` value serialized in the `gitUserLogin` wire field.
   final String gitUserLogin;
 
-  const UserEventPayloadVariant120JobVariant8NsnbSideEffect({required this.action, required this.gitUserLogin});
+  const UserEventPayloadVariant120JobVariant8NsnbSideEffect(
+      {required this.action, required this.gitUserLogin});
 
-  UserEventPayloadVariant120JobVariant8NsnbSideEffect Function({UserEventPayloadVariant120JobVariant8NsnbSideEffectAction action, String gitUserLogin}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant8NsnbSideEffect Function(
+      {UserEventPayloadVariant120JobVariant8NsnbSideEffectAction action,
+      String gitUserLogin}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant8NsnbSideEffect _copyWith({Object? action = sdkOmittedValue, Object? gitUserLogin = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant8NsnbSideEffect(
-    action: identical(action, sdkOmittedValue) ? this.action : action as UserEventPayloadVariant120JobVariant8NsnbSideEffectAction,
-    gitUserLogin: identical(gitUserLogin, sdkOmittedValue) ? this.gitUserLogin : gitUserLogin as String,
-  );
+  UserEventPayloadVariant120JobVariant8NsnbSideEffect _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? gitUserLogin = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant8NsnbSideEffect(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as UserEventPayloadVariant120JobVariant8NsnbSideEffectAction,
+        gitUserLogin: identical(gitUserLogin, sdkOmittedValue)
+            ? this.gitUserLogin
+            : gitUserLogin as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant8NsnbSideEffect.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant8NsnbSideEffect(
-    action: (json['action'] != null ? UserEventPayloadVariant120JobVariant8NsnbSideEffectAction.fromJson(json['action'] as String) : null)!,
-    gitUserLogin: (json['gitUserLogin'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant8NsnbSideEffect.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant8NsnbSideEffect(
+        action: (json['action'] != null
+            ? UserEventPayloadVariant120JobVariant8NsnbSideEffectAction
+                .fromJson(json['action'] as String)
+            : null)!,
+        gitUserLogin: (json['gitUserLogin'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'gitUserLogin': gitUserLogin,
-  };
+        'action': action.toJson(),
+        'gitUserLogin': gitUserLogin,
+      };
 }

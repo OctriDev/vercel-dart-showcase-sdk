@@ -7,11 +7,11 @@ import '../sdk_utils.dart';
 import '../types.dart';
 
 /// Updates the Web Insights setting for a project. Supply `projectId` and the `value` to set the toggle to true or false. The response returns the resulting toggle value.
-Future<CreateWebInsightsToggleResponse>
-    createWebInsightsToggle(ClientConfig config,
-        {required String projectId,
-        required bool value_,
-        RequestOptions? requestOptions}) async {
+Future<CreateWebInsightsToggleResponse> createWebInsightsToggle(
+    ClientConfig config,
+    {required String projectId,
+    required bool value_,
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<CreateWebInsightsToggleResponse>(
           'POST', '/web/insights/toggle',
           config: config,
@@ -21,7 +21,8 @@ Future<CreateWebInsightsToggleResponse>
           body: {'value': value_},
           decoder: SdkResponseDecoder.json,
           operationId: 'createWebInsightsToggle',
-          fromJsonRaw: (value) => CreateWebInsightsToggleResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateWebInsightsToggleResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

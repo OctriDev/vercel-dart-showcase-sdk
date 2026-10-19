@@ -8,258 +8,544 @@ part of 'user.dart';
 class UserEventPayloadVariant253 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether the plan change was system-initiated rather than human-initiated.
   final SdkOptional<UserEventPayloadVariant253Automated> automated;
+
   /// Optional enumerated value serialized in the `isDowngrade` wire field.
   final SdkOptional<UserEventPayloadVariant253IsDowngrade> isDowngrade;
+
   /// Optional enumerated value serialized in the `isReactivate` wire field.
   final SdkOptional<UserEventPayloadVariant253IsReactivate> isReactivate;
+
   /// Optional enumerated value serialized in the `isTrialUpgrade` wire field.
   final SdkOptional<UserEventPayloadVariant253IsTrialUpgrade> isTrialUpgrade;
+
   /// Required `string` value serialized in the `plan` wire field.
   final String plan;
+
   /// Optional `string` value serialized in the `prevPlan` wire field.
   final SdkOptional<String> prevPlan;
+
   /// Optional `string` value serialized in the `priorPlan` wire field.
   final SdkOptional<String> priorPlan;
+
   /// Why the plan changed. For downgrades, this is a {@link DowngradeReason} from `@api/pubsub-types` (e.g. `user_downgrade`, `trial_expired`).
   final SdkOptional<String> reason;
+
   /// Optional `number` value serialized in the `removedMemberCount` wire field.
   final SdkOptional<double> removedMemberCount;
+
   /// Optional object value serialized in the `removedUsers` wire field.
-  final SdkOptional<Map<String, UserEventPayloadVariant253RemovedUsersValue>> removedUsers;
+  final SdkOptional<Map<String, UserEventPayloadVariant253RemovedUsersValue>>
+      removedUsers;
+
   /// Optional `number` value serialized in the `timestamp` wire field.
   final SdkOptional<double> timestamp;
+
   /// Optional `string` value serialized in the `userAgent` wire field.
   final SdkOptional<String> userAgent;
+
   /// Okta user id.
   final String actorId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant253ActorType actorType;
 
-  const UserEventPayloadVariant253({this.automated = const SdkOmitted(), this.isDowngrade = const SdkOmitted(), this.isReactivate = const SdkOmitted(), this.isTrialUpgrade = const SdkOmitted(), required this.plan, this.prevPlan = const SdkOmitted(), this.priorPlan = const SdkOmitted(), this.reason = const SdkOmitted(), this.removedMemberCount = const SdkOmitted(), this.removedUsers = const SdkOmitted(), this.timestamp = const SdkOmitted(), this.userAgent = const SdkOmitted(), required this.actorId, this.actorName = const SdkOmitted(), required this.actorType});
+  const UserEventPayloadVariant253(
+      {this.automated = const SdkOmitted(),
+      this.isDowngrade = const SdkOmitted(),
+      this.isReactivate = const SdkOmitted(),
+      this.isTrialUpgrade = const SdkOmitted(),
+      required this.plan,
+      this.prevPlan = const SdkOmitted(),
+      this.priorPlan = const SdkOmitted(),
+      this.reason = const SdkOmitted(),
+      this.removedMemberCount = const SdkOmitted(),
+      this.removedUsers = const SdkOmitted(),
+      this.timestamp = const SdkOmitted(),
+      this.userAgent = const SdkOmitted(),
+      required this.actorId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType});
 
-  UserEventPayloadVariant253 Function({SdkOptional<UserEventPayloadVariant253Automated> automated, SdkOptional<UserEventPayloadVariant253IsDowngrade> isDowngrade, SdkOptional<UserEventPayloadVariant253IsReactivate> isReactivate, SdkOptional<UserEventPayloadVariant253IsTrialUpgrade> isTrialUpgrade, String plan, SdkOptional<String> prevPlan, SdkOptional<String> priorPlan, SdkOptional<String> reason, SdkOptional<double> removedMemberCount, SdkOptional<Map<String, UserEventPayloadVariant253RemovedUsersValue>> removedUsers, SdkOptional<double> timestamp, SdkOptional<String> userAgent, String actorId, SdkOptional<String> actorName, UserEventPayloadVariant253ActorType actorType}) get copyWith => _copyWith;
+  UserEventPayloadVariant253 Function(
+      {SdkOptional<UserEventPayloadVariant253Automated> automated,
+      SdkOptional<UserEventPayloadVariant253IsDowngrade> isDowngrade,
+      SdkOptional<UserEventPayloadVariant253IsReactivate> isReactivate,
+      SdkOptional<UserEventPayloadVariant253IsTrialUpgrade> isTrialUpgrade,
+      String plan,
+      SdkOptional<String> prevPlan,
+      SdkOptional<String> priorPlan,
+      SdkOptional<String> reason,
+      SdkOptional<double> removedMemberCount,
+      SdkOptional<Map<String, UserEventPayloadVariant253RemovedUsersValue>>
+          removedUsers,
+      SdkOptional<double> timestamp,
+      SdkOptional<String> userAgent,
+      String actorId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant253ActorType actorType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant253 _copyWith({Object? automated = sdkOmittedValue, Object? isDowngrade = sdkOmittedValue, Object? isReactivate = sdkOmittedValue, Object? isTrialUpgrade = sdkOmittedValue, Object? plan = sdkOmittedValue, Object? prevPlan = sdkOmittedValue, Object? priorPlan = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? removedMemberCount = sdkOmittedValue, Object? removedUsers = sdkOmittedValue, Object? timestamp = sdkOmittedValue, Object? userAgent = sdkOmittedValue, Object? actorId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue}) => UserEventPayloadVariant253(
-    automated: identical(automated, sdkOmittedValue) ? this.automated : automated as SdkOptional<UserEventPayloadVariant253Automated>,
-    isDowngrade: identical(isDowngrade, sdkOmittedValue) ? this.isDowngrade : isDowngrade as SdkOptional<UserEventPayloadVariant253IsDowngrade>,
-    isReactivate: identical(isReactivate, sdkOmittedValue) ? this.isReactivate : isReactivate as SdkOptional<UserEventPayloadVariant253IsReactivate>,
-    isTrialUpgrade: identical(isTrialUpgrade, sdkOmittedValue) ? this.isTrialUpgrade : isTrialUpgrade as SdkOptional<UserEventPayloadVariant253IsTrialUpgrade>,
-    plan: identical(plan, sdkOmittedValue) ? this.plan : plan as String,
-    prevPlan: identical(prevPlan, sdkOmittedValue) ? this.prevPlan : prevPlan as SdkOptional<String>,
-    priorPlan: identical(priorPlan, sdkOmittedValue) ? this.priorPlan : priorPlan as SdkOptional<String>,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<String>,
-    removedMemberCount: identical(removedMemberCount, sdkOmittedValue) ? this.removedMemberCount : removedMemberCount as SdkOptional<double>,
-    removedUsers: identical(removedUsers, sdkOmittedValue) ? this.removedUsers : removedUsers as SdkOptional<Map<String, UserEventPayloadVariant253RemovedUsersValue>>,
-    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as SdkOptional<double>,
-    userAgent: identical(userAgent, sdkOmittedValue) ? this.userAgent : userAgent as SdkOptional<String>,
-    actorId: identical(actorId, sdkOmittedValue) ? this.actorId : actorId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant253ActorType,
-  );
+  UserEventPayloadVariant253 _copyWith(
+          {Object? automated = sdkOmittedValue,
+          Object? isDowngrade = sdkOmittedValue,
+          Object? isReactivate = sdkOmittedValue,
+          Object? isTrialUpgrade = sdkOmittedValue,
+          Object? plan = sdkOmittedValue,
+          Object? prevPlan = sdkOmittedValue,
+          Object? priorPlan = sdkOmittedValue,
+          Object? reason = sdkOmittedValue,
+          Object? removedMemberCount = sdkOmittedValue,
+          Object? removedUsers = sdkOmittedValue,
+          Object? timestamp = sdkOmittedValue,
+          Object? userAgent = sdkOmittedValue,
+          Object? actorId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue}) =>
+      UserEventPayloadVariant253(
+        automated: identical(automated, sdkOmittedValue)
+            ? this.automated
+            : automated as SdkOptional<UserEventPayloadVariant253Automated>,
+        isDowngrade: identical(isDowngrade, sdkOmittedValue)
+            ? this.isDowngrade
+            : isDowngrade as SdkOptional<UserEventPayloadVariant253IsDowngrade>,
+        isReactivate: identical(isReactivate, sdkOmittedValue)
+            ? this.isReactivate
+            : isReactivate
+                as SdkOptional<UserEventPayloadVariant253IsReactivate>,
+        isTrialUpgrade: identical(isTrialUpgrade, sdkOmittedValue)
+            ? this.isTrialUpgrade
+            : isTrialUpgrade
+                as SdkOptional<UserEventPayloadVariant253IsTrialUpgrade>,
+        plan: identical(plan, sdkOmittedValue) ? this.plan : plan as String,
+        prevPlan: identical(prevPlan, sdkOmittedValue)
+            ? this.prevPlan
+            : prevPlan as SdkOptional<String>,
+        priorPlan: identical(priorPlan, sdkOmittedValue)
+            ? this.priorPlan
+            : priorPlan as SdkOptional<String>,
+        reason: identical(reason, sdkOmittedValue)
+            ? this.reason
+            : reason as SdkOptional<String>,
+        removedMemberCount: identical(removedMemberCount, sdkOmittedValue)
+            ? this.removedMemberCount
+            : removedMemberCount as SdkOptional<double>,
+        removedUsers: identical(removedUsers, sdkOmittedValue)
+            ? this.removedUsers
+            : removedUsers as SdkOptional<
+                Map<String, UserEventPayloadVariant253RemovedUsersValue>>,
+        timestamp: identical(timestamp, sdkOmittedValue)
+            ? this.timestamp
+            : timestamp as SdkOptional<double>,
+        userAgent: identical(userAgent, sdkOmittedValue)
+            ? this.userAgent
+            : userAgent as SdkOptional<String>,
+        actorId: identical(actorId, sdkOmittedValue)
+            ? this.actorId
+            : actorId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant253ActorType,
+      );
 
-  factory UserEventPayloadVariant253.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant253(
-    automated: json['automated'] != null ? SdkPresent((json['automated'] != null ? UserEventPayloadVariant253Automated.fromJson(json['automated'] as bool) : null)!) : const SdkOmitted(),
-    isDowngrade: json['isDowngrade'] != null ? SdkPresent((json['isDowngrade'] != null ? UserEventPayloadVariant253IsDowngrade.fromJson(json['isDowngrade'] as bool) : null)!) : const SdkOmitted(),
-    isReactivate: json['isReactivate'] != null ? SdkPresent((json['isReactivate'] != null ? UserEventPayloadVariant253IsReactivate.fromJson(json['isReactivate'] as bool) : null)!) : const SdkOmitted(),
-    isTrialUpgrade: json['isTrialUpgrade'] != null ? SdkPresent((json['isTrialUpgrade'] != null ? UserEventPayloadVariant253IsTrialUpgrade.fromJson(json['isTrialUpgrade'] as bool) : null)!) : const SdkOmitted(),
-    plan: (json['plan'] as String?)!,
-    prevPlan: json['prevPlan'] != null ? SdkPresent((json['prevPlan'] as String?)!) : const SdkOmitted(),
-    priorPlan: json['priorPlan'] != null ? SdkPresent((json['priorPlan'] as String?)!) : const SdkOmitted(),
-    reason: json['reason'] != null ? SdkPresent((json['reason'] as String?)!) : const SdkOmitted(),
-    removedMemberCount: json['removedMemberCount'] != null ? SdkPresent(((json['removedMemberCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-    removedUsers: json['removedUsers'] != null ? SdkPresent((json['removedUsers'] == null ? null : Map<String, dynamic>.from(json['removedUsers'] as Map).map((key, value) => MapEntry(key, UserEventPayloadVariant253RemovedUsersValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    timestamp: json['timestamp'] != null ? SdkPresent(((json['timestamp'] as num?)?.toDouble())!) : const SdkOmitted(),
-    userAgent: json['userAgent'] != null ? SdkPresent((json['userAgent'] as String?)!) : const SdkOmitted(),
-    actorId: (json['actorId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant253ActorType.fromJson(json['actorType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant253.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant253(
+        automated: json['automated'] != null
+            ? SdkPresent((json['automated'] != null
+                ? UserEventPayloadVariant253Automated.fromJson(
+                    json['automated'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        isDowngrade: json['isDowngrade'] != null
+            ? SdkPresent((json['isDowngrade'] != null
+                ? UserEventPayloadVariant253IsDowngrade.fromJson(
+                    json['isDowngrade'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        isReactivate: json['isReactivate'] != null
+            ? SdkPresent((json['isReactivate'] != null
+                ? UserEventPayloadVariant253IsReactivate.fromJson(
+                    json['isReactivate'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        isTrialUpgrade: json['isTrialUpgrade'] != null
+            ? SdkPresent((json['isTrialUpgrade'] != null
+                ? UserEventPayloadVariant253IsTrialUpgrade.fromJson(
+                    json['isTrialUpgrade'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        plan: (json['plan'] as String?)!,
+        prevPlan: json['prevPlan'] != null
+            ? SdkPresent((json['prevPlan'] as String?)!)
+            : const SdkOmitted(),
+        priorPlan: json['priorPlan'] != null
+            ? SdkPresent((json['priorPlan'] as String?)!)
+            : const SdkOmitted(),
+        reason: json['reason'] != null
+            ? SdkPresent((json['reason'] as String?)!)
+            : const SdkOmitted(),
+        removedMemberCount: json['removedMemberCount'] != null
+            ? SdkPresent(((json['removedMemberCount'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        removedUsers: json['removedUsers'] != null
+            ? SdkPresent((json['removedUsers'] == null
+                ? null
+                : Map<String, dynamic>.from(json['removedUsers'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        UserEventPayloadVariant253RemovedUsersValue.fromJson(
+                            value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        timestamp: json['timestamp'] != null
+            ? SdkPresent(((json['timestamp'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        userAgent: json['userAgent'] != null
+            ? SdkPresent((json['userAgent'] as String?)!)
+            : const SdkOmitted(),
+        actorId: (json['actorId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant253ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (automated) {
-      SdkPresent<UserEventPayloadVariant253Automated>(value: final value) => {'automated': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isDowngrade) {
-      SdkPresent<UserEventPayloadVariant253IsDowngrade>(value: final value) => {'isDowngrade': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isReactivate) {
-      SdkPresent<UserEventPayloadVariant253IsReactivate>(value: final value) => {'isReactivate': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isTrialUpgrade) {
-      SdkPresent<UserEventPayloadVariant253IsTrialUpgrade>(value: final value) => {'isTrialUpgrade': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'plan': plan,
-    ...switch (prevPlan) {
-      SdkPresent<String>(value: final value) => {'prevPlan': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (priorPlan) {
-      SdkPresent<String>(value: final value) => {'priorPlan': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (reason) {
-      SdkPresent<String>(value: final value) => {'reason': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (removedMemberCount) {
-      SdkPresent<double>(value: final value) => {'removedMemberCount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (removedUsers) {
-      SdkPresent<Map<String, UserEventPayloadVariant253RemovedUsersValue>>(value: final value) => {'removedUsers': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (timestamp) {
-      SdkPresent<double>(value: final value) => {'timestamp': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (userAgent) {
-      SdkPresent<String>(value: final value) => {'userAgent': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorId': actorId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-  };
+        ...switch (automated) {
+          SdkPresent<UserEventPayloadVariant253Automated>(value: final value) =>
+            {
+              'automated': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isDowngrade) {
+          SdkPresent<UserEventPayloadVariant253IsDowngrade>(
+            value: final value
+          ) =>
+            {
+              'isDowngrade': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isReactivate) {
+          SdkPresent<UserEventPayloadVariant253IsReactivate>(
+            value: final value
+          ) =>
+            {
+              'isReactivate': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isTrialUpgrade) {
+          SdkPresent<UserEventPayloadVariant253IsTrialUpgrade>(
+            value: final value
+          ) =>
+            {
+              'isTrialUpgrade': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'plan': plan,
+        ...switch (prevPlan) {
+          SdkPresent<String>(value: final value) => {
+              'prevPlan': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (priorPlan) {
+          SdkPresent<String>(value: final value) => {
+              'priorPlan': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (reason) {
+          SdkPresent<String>(value: final value) => {
+              'reason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (removedMemberCount) {
+          SdkPresent<double>(value: final value) => {
+              'removedMemberCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (removedUsers) {
+          SdkPresent<Map<String, UserEventPayloadVariant253RemovedUsersValue>>(
+            value: final value
+          ) =>
+            {
+              'removedUsers':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (timestamp) {
+          SdkPresent<double>(value: final value) => {
+              'timestamp': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (userAgent) {
+          SdkPresent<String>(value: final value) => {
+              'userAgent': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorId': actorId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant254 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `currency` wire field.
   final SdkOptional<String> currency;
+
   /// Optional enumerated value serialized in the `enabled` wire field.
   final SdkOptional<UserEventPayloadVariant254Enabled> enabled;
+
   /// Optional `number` value serialized in the `price` wire field.
   final SdkOptional<double> price;
 
-  const UserEventPayloadVariant254({this.currency = const SdkOmitted(), this.enabled = const SdkOmitted(), this.price = const SdkOmitted()});
+  const UserEventPayloadVariant254(
+      {this.currency = const SdkOmitted(),
+      this.enabled = const SdkOmitted(),
+      this.price = const SdkOmitted()});
 
-  UserEventPayloadVariant254 Function({SdkOptional<String> currency, SdkOptional<UserEventPayloadVariant254Enabled> enabled, SdkOptional<double> price}) get copyWith => _copyWith;
+  UserEventPayloadVariant254 Function(
+      {SdkOptional<String> currency,
+      SdkOptional<UserEventPayloadVariant254Enabled> enabled,
+      SdkOptional<double> price}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant254 _copyWith({Object? currency = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? price = sdkOmittedValue}) => UserEventPayloadVariant254(
-    currency: identical(currency, sdkOmittedValue) ? this.currency : currency as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<UserEventPayloadVariant254Enabled>,
-    price: identical(price, sdkOmittedValue) ? this.price : price as SdkOptional<double>,
-  );
+  UserEventPayloadVariant254 _copyWith(
+          {Object? currency = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? price = sdkOmittedValue}) =>
+      UserEventPayloadVariant254(
+        currency: identical(currency, sdkOmittedValue)
+            ? this.currency
+            : currency as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<UserEventPayloadVariant254Enabled>,
+        price: identical(price, sdkOmittedValue)
+            ? this.price
+            : price as SdkOptional<double>,
+      );
 
-  factory UserEventPayloadVariant254.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant254(
-    currency: json['currency'] != null ? SdkPresent((json['currency'] as String?)!) : const SdkOmitted(),
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? UserEventPayloadVariant254Enabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-    price: json['price'] != null ? SdkPresent(((json['price'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant254.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant254(
+        currency: json['currency'] != null
+            ? SdkPresent((json['currency'] as String?)!)
+            : const SdkOmitted(),
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] != null
+                ? UserEventPayloadVariant254Enabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        price: json['price'] != null
+            ? SdkPresent(((json['price'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (currency) {
-      SdkPresent<String>(value: final value) => {'currency': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabled) {
-      SdkPresent<UserEventPayloadVariant254Enabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (price) {
-      SdkPresent<double>(value: final value) => {'price': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (currency) {
+          SdkPresent<String>(value: final value) => {
+              'currency': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabled) {
+          SdkPresent<UserEventPayloadVariant254Enabled>(value: final value) => {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (price) {
+          SdkPresent<double>(value: final value) => {
+              'price': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant255 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `previewDeploymentSuffix` wire field.
   final SdkOptional<String?> previewDeploymentSuffix;
+
   /// Optional `string` value serialized in the `previousPreviewDeploymentSuffix` wire field.
   final SdkOptional<String?> previousPreviewDeploymentSuffix;
 
-  const UserEventPayloadVariant255({this.previewDeploymentSuffix = const SdkOmitted(), this.previousPreviewDeploymentSuffix = const SdkOmitted()});
+  const UserEventPayloadVariant255(
+      {this.previewDeploymentSuffix = const SdkOmitted(),
+      this.previousPreviewDeploymentSuffix = const SdkOmitted()});
 
-  UserEventPayloadVariant255 Function({SdkOptional<String?> previewDeploymentSuffix, SdkOptional<String?> previousPreviewDeploymentSuffix}) get copyWith => _copyWith;
+  UserEventPayloadVariant255 Function(
+          {SdkOptional<String?> previewDeploymentSuffix,
+          SdkOptional<String?> previousPreviewDeploymentSuffix})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant255 _copyWith({Object? previewDeploymentSuffix = sdkOmittedValue, Object? previousPreviewDeploymentSuffix = sdkOmittedValue}) => UserEventPayloadVariant255(
-    previewDeploymentSuffix: identical(previewDeploymentSuffix, sdkOmittedValue) ? this.previewDeploymentSuffix : previewDeploymentSuffix as SdkOptional<String?>,
-    previousPreviewDeploymentSuffix: identical(previousPreviewDeploymentSuffix, sdkOmittedValue) ? this.previousPreviewDeploymentSuffix : previousPreviewDeploymentSuffix as SdkOptional<String?>,
-  );
+  UserEventPayloadVariant255 _copyWith(
+          {Object? previewDeploymentSuffix = sdkOmittedValue,
+          Object? previousPreviewDeploymentSuffix = sdkOmittedValue}) =>
+      UserEventPayloadVariant255(
+        previewDeploymentSuffix:
+            identical(previewDeploymentSuffix, sdkOmittedValue)
+                ? this.previewDeploymentSuffix
+                : previewDeploymentSuffix as SdkOptional<String?>,
+        previousPreviewDeploymentSuffix:
+            identical(previousPreviewDeploymentSuffix, sdkOmittedValue)
+                ? this.previousPreviewDeploymentSuffix
+                : previousPreviewDeploymentSuffix as SdkOptional<String?>,
+      );
 
-  factory UserEventPayloadVariant255.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant255(
-    previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix') ? SdkPresent(json['previewDeploymentSuffix'] as String?) : const SdkOmitted(),
-    previousPreviewDeploymentSuffix: json.containsKey('previousPreviewDeploymentSuffix') ? SdkPresent(json['previousPreviewDeploymentSuffix'] as String?) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant255.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant255(
+        previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix')
+            ? SdkPresent(json['previewDeploymentSuffix'] as String?)
+            : const SdkOmitted(),
+        previousPreviewDeploymentSuffix:
+            json.containsKey('previousPreviewDeploymentSuffix')
+                ? SdkPresent(json['previousPreviewDeploymentSuffix'] as String?)
+                : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (previewDeploymentSuffix) {
-      SdkPresent<String?>(value: final value) => {'previewDeploymentSuffix': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (previousPreviewDeploymentSuffix) {
-      SdkPresent<String?>(value: final value) => {'previousPreviewDeploymentSuffix': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (previewDeploymentSuffix) {
+          SdkPresent<String?>(value: final value) => {
+              'previewDeploymentSuffix': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (previousPreviewDeploymentSuffix) {
+          SdkPresent<String?>(value: final value) => {
+              'previousPreviewDeploymentSuffix': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant256 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `previousTeamSuffix` wire field.
   final String? previousTeamSuffix;
+
   /// Required `number` value serialized in the `projectCount` wire field.
   final double projectCount;
+
   /// Required `string` value serialized in the `reason` wire field.
   final String reason;
+
   /// Okta user id.
   final String actorId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant256ActorType actorType;
 
-  const UserEventPayloadVariant256({required this.previousTeamSuffix, required this.projectCount, required this.reason, required this.actorId, this.actorName = const SdkOmitted(), required this.actorType});
+  const UserEventPayloadVariant256(
+      {required this.previousTeamSuffix,
+      required this.projectCount,
+      required this.reason,
+      required this.actorId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType});
 
-  UserEventPayloadVariant256 Function({String? previousTeamSuffix, double projectCount, String reason, String actorId, SdkOptional<String> actorName, UserEventPayloadVariant256ActorType actorType}) get copyWith => _copyWith;
+  UserEventPayloadVariant256 Function(
+      {String? previousTeamSuffix,
+      double projectCount,
+      String reason,
+      String actorId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant256ActorType actorType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant256 _copyWith({Object? previousTeamSuffix = sdkOmittedValue, Object? projectCount = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? actorId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue}) => UserEventPayloadVariant256(
-    previousTeamSuffix: identical(previousTeamSuffix, sdkOmittedValue) ? this.previousTeamSuffix : previousTeamSuffix as String?,
-    projectCount: identical(projectCount, sdkOmittedValue) ? this.projectCount : projectCount as double,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-    actorId: identical(actorId, sdkOmittedValue) ? this.actorId : actorId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant256ActorType,
-  );
+  UserEventPayloadVariant256 _copyWith(
+          {Object? previousTeamSuffix = sdkOmittedValue,
+          Object? projectCount = sdkOmittedValue,
+          Object? reason = sdkOmittedValue,
+          Object? actorId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue}) =>
+      UserEventPayloadVariant256(
+        previousTeamSuffix: identical(previousTeamSuffix, sdkOmittedValue)
+            ? this.previousTeamSuffix
+            : previousTeamSuffix as String?,
+        projectCount: identical(projectCount, sdkOmittedValue)
+            ? this.projectCount
+            : projectCount as double,
+        reason:
+            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+        actorId: identical(actorId, sdkOmittedValue)
+            ? this.actorId
+            : actorId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant256ActorType,
+      );
 
-  factory UserEventPayloadVariant256.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant256(
-    previousTeamSuffix: json.containsKey('previousTeamSuffix') ? json['previousTeamSuffix'] as String? : throw ArgumentError.value(null, 'previousTeamSuffix', 'Required property is missing'),
-    projectCount: ((json['projectCount'] as num?)?.toDouble())!,
-    reason: (json['reason'] as String?)!,
-    actorId: (json['actorId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant256ActorType.fromJson(json['actorType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant256.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant256(
+        previousTeamSuffix: json.containsKey('previousTeamSuffix')
+            ? json['previousTeamSuffix'] as String?
+            : throw ArgumentError.value(
+                null, 'previousTeamSuffix', 'Required property is missing'),
+        projectCount: ((json['projectCount'] as num?)?.toDouble())!,
+        reason: (json['reason'] as String?)!,
+        actorId: (json['actorId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant256ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'previousTeamSuffix': previousTeamSuffix,
-    'projectCount': projectCount,
-    'reason': reason,
-    'actorId': actorId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-  };
+        'previousTeamSuffix': previousTeamSuffix,
+        'projectCount': projectCount,
+        'reason': reason,
+        'actorId': actorId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+      };
 }

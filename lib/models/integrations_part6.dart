@@ -10,32 +10,68 @@ sealed class GetConfigurationResponse {
   const GetConfigurationResponse();
   factory GetConfigurationResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetConfigurationResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConfigurationResponseGetConfigurationResponseVariant0(value); } } catch (_) {}
-      try { final value = GetConfigurationResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConfigurationResponseGetConfigurationResponseVariant1(value); } } catch (_) {}
-      try { final value = GetConfigurationResponseVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetConfigurationResponseGetConfigurationResponseVariant2(value); } } catch (_) {}
+      try {
+        final value = GetConfigurationResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetConfigurationResponseGetConfigurationResponseVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetConfigurationResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetConfigurationResponseGetConfigurationResponseVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetConfigurationResponseVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetConfigurationResponseGetConfigurationResponseVariant2(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetConfigurationResponseGetConfigurationResponseVariant0(GetConfigurationResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetConfigurationResponseGetConfigurationResponseVariant1(GetConfigurationResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetConfigurationResponseGetConfigurationResponseVariant2(GetConfigurationResponseVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return GetConfigurationResponseGetConfigurationResponseVariant0(
+          GetConfigurationResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetConfigurationResponseGetConfigurationResponseVariant1(
+          GetConfigurationResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetConfigurationResponseGetConfigurationResponseVariant2(
+          GetConfigurationResponseVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for GetConfigurationResponse");
   }
   Object? toJson();
 }
 
-final class GetConfigurationResponseGetConfigurationResponseVariant0 extends GetConfigurationResponse {
+final class GetConfigurationResponseGetConfigurationResponseVariant0
+    extends GetConfigurationResponse {
   final GetConfigurationResponseVariant0 value;
   const GetConfigurationResponseGetConfigurationResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetConfigurationResponseGetConfigurationResponseVariant1 extends GetConfigurationResponse {
+final class GetConfigurationResponseGetConfigurationResponseVariant1
+    extends GetConfigurationResponse {
   final GetConfigurationResponseVariant1 value;
   const GetConfigurationResponseGetConfigurationResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetConfigurationResponseGetConfigurationResponseVariant2 extends GetConfigurationResponse {
+final class GetConfigurationResponseGetConfigurationResponseVariant2
+    extends GetConfigurationResponse {
   final GetConfigurationResponseVariant2 value;
   const GetConfigurationResponseGetConfigurationResponseVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -8,32 +8,61 @@ class CreateSandboxesV2RequestNetworkPolicyVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<dynamic> allow;
-  final SdkOptional<CreateSandboxesV2RequestNetworkPolicyVariant1Subnets> subnets;
+  final SdkOptional<CreateSandboxesV2RequestNetworkPolicyVariant1Subnets>
+      subnets;
 
-  const CreateSandboxesV2RequestNetworkPolicyVariant1({this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
+  const CreateSandboxesV2RequestNetworkPolicyVariant1(
+      {this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
 
-  CreateSandboxesV2RequestNetworkPolicyVariant1 Function({SdkOptional<dynamic> allow, SdkOptional<CreateSandboxesV2RequestNetworkPolicyVariant1Subnets> subnets}) get copyWith => _copyWith;
+  CreateSandboxesV2RequestNetworkPolicyVariant1 Function(
+      {SdkOptional<dynamic> allow,
+      SdkOptional<CreateSandboxesV2RequestNetworkPolicyVariant1Subnets>
+          subnets}) get copyWith => _copyWith;
 
-  CreateSandboxesV2RequestNetworkPolicyVariant1 _copyWith({Object? allow = sdkOmittedValue, Object? subnets = sdkOmittedValue}) => CreateSandboxesV2RequestNetworkPolicyVariant1(
-    allow: identical(allow, sdkOmittedValue) ? this.allow : allow as SdkOptional<dynamic>,
-    subnets: identical(subnets, sdkOmittedValue) ? this.subnets : subnets as SdkOptional<CreateSandboxesV2RequestNetworkPolicyVariant1Subnets>,
-  );
+  CreateSandboxesV2RequestNetworkPolicyVariant1 _copyWith(
+          {Object? allow = sdkOmittedValue,
+          Object? subnets = sdkOmittedValue}) =>
+      CreateSandboxesV2RequestNetworkPolicyVariant1(
+        allow: identical(allow, sdkOmittedValue)
+            ? this.allow
+            : allow as SdkOptional<dynamic>,
+        subnets: identical(subnets, sdkOmittedValue)
+            ? this.subnets
+            : subnets as SdkOptional<
+                CreateSandboxesV2RequestNetworkPolicyVariant1Subnets>,
+      );
 
-  factory CreateSandboxesV2RequestNetworkPolicyVariant1.fromJson(Map<String, dynamic> json) => CreateSandboxesV2RequestNetworkPolicyVariant1(
-    allow: json['allow'] != null ? SdkPresent((json['allow'])!) : const SdkOmitted(),
-    subnets: json['subnets'] != null ? SdkPresent((json['subnets'] != null ? CreateSandboxesV2RequestNetworkPolicyVariant1Subnets.fromJson(json['subnets'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory CreateSandboxesV2RequestNetworkPolicyVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV2RequestNetworkPolicyVariant1(
+        allow: json['allow'] != null
+            ? SdkPresent((json['allow'])!)
+            : const SdkOmitted(),
+        subnets: json['subnets'] != null
+            ? SdkPresent((json['subnets'] != null
+                ? CreateSandboxesV2RequestNetworkPolicyVariant1Subnets.fromJson(
+                    json['subnets'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (allow) {
-      SdkPresent<dynamic>(value: final value) => {'allow': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (subnets) {
-      SdkPresent<CreateSandboxesV2RequestNetworkPolicyVariant1Subnets>(value: final value) => {'subnets': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (allow) {
+          SdkPresent<dynamic>(value: final value) => {
+              'allow': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (subnets) {
+          SdkPresent<CreateSandboxesV2RequestNetworkPolicyVariant1Subnets>(
+            value: final value
+          ) =>
+            {
+              'subnets': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class CreateSandboxesV2RequestNetworkPolicy {
@@ -42,145 +71,256 @@ sealed class CreateSandboxesV2RequestNetworkPolicy {
   const CreateSandboxesV2RequestNetworkPolicy();
   factory CreateSandboxesV2RequestNetworkPolicy.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CreateSandboxesV2RequestNetworkPolicyVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0(value); } } catch (_) {}
-      try { final value = CreateSandboxesV2RequestNetworkPolicyVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            CreateSandboxesV2RequestNetworkPolicyVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            CreateSandboxesV2RequestNetworkPolicyVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0(CreateSandboxesV2RequestNetworkPolicyVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1(CreateSandboxesV2RequestNetworkPolicyVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CreateSandboxesV2RequestNetworkPolicy");
+    try {
+      return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0(
+          CreateSandboxesV2RequestNetworkPolicyVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1(
+          CreateSandboxesV2RequestNetworkPolicyVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateSandboxesV2RequestNetworkPolicy");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0 extends CreateSandboxesV2RequestNetworkPolicy {
+final class CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0
+    extends CreateSandboxesV2RequestNetworkPolicy {
   final CreateSandboxesV2RequestNetworkPolicyVariant0 value;
-  const CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1 extends CreateSandboxesV2RequestNetworkPolicy {
+final class CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1
+    extends CreateSandboxesV2RequestNetworkPolicy {
   final CreateSandboxesV2RequestNetworkPolicyVariant1 value;
-  const CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateSandboxesV2RequestNetworkPolicyCreateSandboxesV2RequestNetworkPolicyVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Clone a Git repository into the sandbox.
 class CreateSandboxesV2RequestSourceVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Indicates the source is a Git repository.
   final dynamic type_;
+
   /// The URL of the Git repository to clone.
   final String url;
+
   /// Username for Git authentication. Required together with password for private repositories.
   final SdkOptional<String> username;
+
   /// Password or personal access token for Git authentication. Required together with username for private repositories.
   final SdkOptional<String> password;
+
   /// Create a shallow clone with history truncated to the specified number of commits. Useful for faster cloning of large repositories.
   final SdkOptional<int> depth;
+
   /// The specific commit SHA, branch name, or tag to checkout after cloning.
   final SdkOptional<String> revision;
 
-  const CreateSandboxesV2RequestSourceVariant0({required this.type_, required this.url, this.username = const SdkOmitted(), this.password = const SdkOmitted(), this.depth = const SdkOmitted(), this.revision = const SdkOmitted()});
+  const CreateSandboxesV2RequestSourceVariant0(
+      {required this.type_,
+      required this.url,
+      this.username = const SdkOmitted(),
+      this.password = const SdkOmitted(),
+      this.depth = const SdkOmitted(),
+      this.revision = const SdkOmitted()});
 
-  CreateSandboxesV2RequestSourceVariant0 Function({dynamic type_, String url, SdkOptional<String> username, SdkOptional<String> password, SdkOptional<int> depth, SdkOptional<String> revision}) get copyWith => _copyWith;
+  CreateSandboxesV2RequestSourceVariant0 Function(
+      {dynamic type_,
+      String url,
+      SdkOptional<String> username,
+      SdkOptional<String> password,
+      SdkOptional<int> depth,
+      SdkOptional<String> revision}) get copyWith => _copyWith;
 
-  CreateSandboxesV2RequestSourceVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue, Object? username = sdkOmittedValue, Object? password = sdkOmittedValue, Object? depth = sdkOmittedValue, Object? revision = sdkOmittedValue}) => CreateSandboxesV2RequestSourceVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-    password: identical(password, sdkOmittedValue) ? this.password : password as SdkOptional<String>,
-    depth: identical(depth, sdkOmittedValue) ? this.depth : depth as SdkOptional<int>,
-    revision: identical(revision, sdkOmittedValue) ? this.revision : revision as SdkOptional<String>,
-  );
+  CreateSandboxesV2RequestSourceVariant0 _copyWith(
+          {Object? type_ = sdkOmittedValue,
+          Object? url = sdkOmittedValue,
+          Object? username = sdkOmittedValue,
+          Object? password = sdkOmittedValue,
+          Object? depth = sdkOmittedValue,
+          Object? revision = sdkOmittedValue}) =>
+      CreateSandboxesV2RequestSourceVariant0(
+        type_:
+            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+        password: identical(password, sdkOmittedValue)
+            ? this.password
+            : password as SdkOptional<String>,
+        depth: identical(depth, sdkOmittedValue)
+            ? this.depth
+            : depth as SdkOptional<int>,
+        revision: identical(revision, sdkOmittedValue)
+            ? this.revision
+            : revision as SdkOptional<String>,
+      );
 
-  factory CreateSandboxesV2RequestSourceVariant0.fromJson(Map<String, dynamic> json) => CreateSandboxesV2RequestSourceVariant0(
-    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
-    url: (json['url'] as String?)!,
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-    password: json['password'] != null ? SdkPresent((json['password'] as String?)!) : const SdkOmitted(),
-    depth: json['depth'] != null ? SdkPresent(((json['depth'] as num?)?.toInt())!) : const SdkOmitted(),
-    revision: json['revision'] != null ? SdkPresent((json['revision'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateSandboxesV2RequestSourceVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV2RequestSourceVariant0(
+        type_: json.containsKey('type')
+            ? json['type']
+            : throw ArgumentError.value(
+                null, 'type', 'Required property is missing'),
+        url: (json['url'] as String?)!,
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+        password: json['password'] != null
+            ? SdkPresent((json['password'] as String?)!)
+            : const SdkOmitted(),
+        depth: json['depth'] != null
+            ? SdkPresent(((json['depth'] as num?)?.toInt())!)
+            : const SdkOmitted(),
+        revision: json['revision'] != null
+            ? SdkPresent((json['revision'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_,
-    'url': url,
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (password) {
-      SdkPresent<String>(value: final value) => {'password': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (depth) {
-      SdkPresent<int>(value: final value) => {'depth': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (revision) {
-      SdkPresent<String>(value: final value) => {'revision': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'type': type_,
+        'url': url,
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (password) {
+          SdkPresent<String>(value: final value) => {
+              'password': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (depth) {
+          SdkPresent<int>(value: final value) => {
+              'depth': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (revision) {
+          SdkPresent<String>(value: final value) => {
+              'revision': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Download and extract a gzipped tarball into the sandbox.
 class CreateSandboxesV2RequestSourceVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Indicates the source is a tarball.
   final dynamic type_;
+
   /// URL of a gzipped tarball (.tar.gz) to download and extract.
   final String url;
 
-  const CreateSandboxesV2RequestSourceVariant1({required this.type_, required this.url});
+  const CreateSandboxesV2RequestSourceVariant1(
+      {required this.type_, required this.url});
 
-  CreateSandboxesV2RequestSourceVariant1 Function({dynamic type_, String url}) get copyWith => _copyWith;
+  CreateSandboxesV2RequestSourceVariant1 Function({dynamic type_, String url})
+      get copyWith => _copyWith;
 
-  CreateSandboxesV2RequestSourceVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue}) => CreateSandboxesV2RequestSourceVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  CreateSandboxesV2RequestSourceVariant1 _copyWith(
+          {Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue}) =>
+      CreateSandboxesV2RequestSourceVariant1(
+        type_:
+            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory CreateSandboxesV2RequestSourceVariant1.fromJson(Map<String, dynamic> json) => CreateSandboxesV2RequestSourceVariant1(
-    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
-    url: (json['url'] as String?)!,
-  );
+  factory CreateSandboxesV2RequestSourceVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV2RequestSourceVariant1(
+        type_: json.containsKey('type')
+            ? json['type']
+            : throw ArgumentError.value(
+                null, 'type', 'Required property is missing'),
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_,
-    'url': url,
-  };
+        'type': type_,
+        'url': url,
+      };
 }
 
 /// Restore the sandbox filesystem from an existing snapshot.
 class CreateSandboxesV2RequestSourceVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Indicates the source is a snapshot.
   final dynamic type_;
+
   /// The unique identifier of the snapshot to restore.
   final String snapshotId;
 
-  const CreateSandboxesV2RequestSourceVariant2({required this.type_, required this.snapshotId});
+  const CreateSandboxesV2RequestSourceVariant2(
+      {required this.type_, required this.snapshotId});
 
-  CreateSandboxesV2RequestSourceVariant2 Function({dynamic type_, String snapshotId}) get copyWith => _copyWith;
+  CreateSandboxesV2RequestSourceVariant2 Function(
+      {dynamic type_, String snapshotId}) get copyWith => _copyWith;
 
-  CreateSandboxesV2RequestSourceVariant2 _copyWith({Object? type_ = sdkOmittedValue, Object? snapshotId = sdkOmittedValue}) => CreateSandboxesV2RequestSourceVariant2(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-    snapshotId: identical(snapshotId, sdkOmittedValue) ? this.snapshotId : snapshotId as String,
-  );
+  CreateSandboxesV2RequestSourceVariant2 _copyWith(
+          {Object? type_ = sdkOmittedValue,
+          Object? snapshotId = sdkOmittedValue}) =>
+      CreateSandboxesV2RequestSourceVariant2(
+        type_:
+            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+        snapshotId: identical(snapshotId, sdkOmittedValue)
+            ? this.snapshotId
+            : snapshotId as String,
+      );
 
-  factory CreateSandboxesV2RequestSourceVariant2.fromJson(Map<String, dynamic> json) => CreateSandboxesV2RequestSourceVariant2(
-    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
-    snapshotId: (json['snapshotId'] as String?)!,
-  );
+  factory CreateSandboxesV2RequestSourceVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV2RequestSourceVariant2(
+        type_: json.containsKey('type')
+            ? json['type']
+            : throw ArgumentError.value(
+                null, 'type', 'Required property is missing'),
+        snapshotId: (json['snapshotId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_,
-    'snapshotId': snapshotId,
-  };
+        'type': type_,
+        'snapshotId': snapshotId,
+      };
 }
 
 sealed class CreateSandboxesV2RequestSource {
@@ -189,102 +329,188 @@ sealed class CreateSandboxesV2RequestSource {
   const CreateSandboxesV2RequestSource();
   factory CreateSandboxesV2RequestSource.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CreateSandboxesV2RequestSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0(value); } } catch (_) {}
-      try { final value = CreateSandboxesV2RequestSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1(value); } } catch (_) {}
-      try { final value = CreateSandboxesV2RequestSourceVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2(value); } } catch (_) {}
+      try {
+        final value = CreateSandboxesV2RequestSourceVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = CreateSandboxesV2RequestSourceVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = CreateSandboxesV2RequestSourceVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0(CreateSandboxesV2RequestSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1(CreateSandboxesV2RequestSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2(CreateSandboxesV2RequestSourceVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CreateSandboxesV2RequestSource");
+    try {
+      return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0(
+          CreateSandboxesV2RequestSourceVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1(
+          CreateSandboxesV2RequestSourceVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2(
+          CreateSandboxesV2RequestSourceVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateSandboxesV2RequestSource");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0 extends CreateSandboxesV2RequestSource {
+final class CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0
+    extends CreateSandboxesV2RequestSource {
   final CreateSandboxesV2RequestSourceVariant0 value;
-  const CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1 extends CreateSandboxesV2RequestSource {
+final class CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1
+    extends CreateSandboxesV2RequestSource {
   final CreateSandboxesV2RequestSourceVariant1 value;
-  const CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2 extends CreateSandboxesV2RequestSource {
+final class CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2
+    extends CreateSandboxesV2RequestSource {
   final CreateSandboxesV2RequestSourceVariant2 value;
-  const CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateSandboxesV2RequestSourceCreateSandboxesV2RequestSourceVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Match on the request path. Comparison is case-sensitive.
 class CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
+
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
+      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath
+          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
+      get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
-    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
-    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
-  );
+  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath
+      _copyWith(
+              {Object? exact = sdkOmittedValue,
+              Object? startsWith = sdkOmittedValue}) =>
+          CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
+            exact: identical(exact, sdkOmittedValue)
+                ? this.exact
+                : exact as SdkOptional<String>,
+            startsWith: identical(startsWith, sdkOmittedValue)
+                ? this.startsWith
+                : startsWith as SdkOptional<String>,
+          );
 
-  factory CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
-    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
-    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
+        exact: json['exact'] != null
+            ? SdkPresent((json['exact'] as String?)!)
+            : const SdkOmitted(),
+        startsWith: json['startsWith'] != null
+            ? SdkPresent((json['startsWith'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (exact) {
-      SdkPresent<String>(value: final value) => {'exact': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (startsWith) {
-      SdkPresent<String>(value: final value) => {'startsWith': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (exact) {
+          SdkPresent<String>(value: final value) => {
+              'exact': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (startsWith) {
+          SdkPresent<String>(value: final value) => {
+              'startsWith': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Matcher for the entry key (header name or query key).
 class CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
+
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey(
+      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey
+          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
+      get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey(
-    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
-    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
-  );
+  CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey
+      _copyWith(
+              {Object? exact = sdkOmittedValue,
+              Object? startsWith = sdkOmittedValue}) =>
+          CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey(
+            exact: identical(exact, sdkOmittedValue)
+                ? this.exact
+                : exact as SdkOptional<String>,
+            startsWith: identical(startsWith, sdkOmittedValue)
+                ? this.startsWith
+                : startsWith as SdkOptional<String>,
+          );
 
-  factory CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey(
-    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
-    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey.fromJson(
+          Map<String, dynamic> json) =>
+      CreateSandboxesV3RequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItemKey(
+        exact: json['exact'] != null
+            ? SdkPresent((json['exact'] as String?)!)
+            : const SdkOmitted(),
+        startsWith: json['startsWith'] != null
+            ? SdkPresent((json['startsWith'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (exact) {
-      SdkPresent<String>(value: final value) => {'exact': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (startsWith) {
-      SdkPresent<String>(value: final value) => {'startsWith': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (exact) {
+          SdkPresent<String>(value: final value) => {
+              'exact': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (startsWith) {
+          SdkPresent<String>(value: final value) => {
+              'startsWith': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

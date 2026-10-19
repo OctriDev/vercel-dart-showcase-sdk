@@ -8,244 +8,401 @@ part of 'user.dart';
 class UserEventPayloadVariant120JobVariant7DeployHook {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
 
-  const UserEventPayloadVariant120JobVariant7DeployHook({required this.createdAt, required this.id, required this.name, required this.ref});
+  const UserEventPayloadVariant120JobVariant7DeployHook(
+      {required this.createdAt,
+      required this.id,
+      required this.name,
+      required this.ref});
 
-  UserEventPayloadVariant120JobVariant7DeployHook Function({double createdAt, String id, String name, String ref}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant7DeployHook Function(
+      {double createdAt,
+      String id,
+      String name,
+      String ref}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant7DeployHook _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant7DeployHook(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-  );
+  UserEventPayloadVariant120JobVariant7DeployHook _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ref = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant7DeployHook(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant7DeployHook.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant7DeployHook(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    ref: (json['ref'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant7DeployHook.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant7DeployHook(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        ref: (json['ref'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'id': id,
-    'name': name,
-    'ref': ref,
-  };
+        'createdAt': createdAt,
+        'id': id,
+        'name': name,
+        'ref': ref,
+      };
 }
 
 /// Since June 2023 Determines if comments should be posted to the git host. Replaces `github.silent` in the vercel.json.
 class UserEventPayloadVariant120JobVariant7GitComments {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `onCommit` wire field.
   final UserEventPayloadVariant120JobVariant7GitCommentsOnCommit onCommit;
+
   /// Required enumerated value serialized in the `onPullRequest` wire field.
-  final UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest onPullRequest;
+  final UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest
+      onPullRequest;
 
-  const UserEventPayloadVariant120JobVariant7GitComments({required this.onCommit, required this.onPullRequest});
+  const UserEventPayloadVariant120JobVariant7GitComments(
+      {required this.onCommit, required this.onPullRequest});
 
-  UserEventPayloadVariant120JobVariant7GitComments Function({UserEventPayloadVariant120JobVariant7GitCommentsOnCommit onCommit, UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest onPullRequest}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant7GitComments Function(
+      {UserEventPayloadVariant120JobVariant7GitCommentsOnCommit onCommit,
+      UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest
+          onPullRequest}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant7GitComments _copyWith({Object? onCommit = sdkOmittedValue, Object? onPullRequest = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant7GitComments(
-    onCommit: identical(onCommit, sdkOmittedValue) ? this.onCommit : onCommit as UserEventPayloadVariant120JobVariant7GitCommentsOnCommit,
-    onPullRequest: identical(onPullRequest, sdkOmittedValue) ? this.onPullRequest : onPullRequest as UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest,
-  );
+  UserEventPayloadVariant120JobVariant7GitComments _copyWith(
+          {Object? onCommit = sdkOmittedValue,
+          Object? onPullRequest = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant7GitComments(
+        onCommit: identical(onCommit, sdkOmittedValue)
+            ? this.onCommit
+            : onCommit
+                as UserEventPayloadVariant120JobVariant7GitCommentsOnCommit,
+        onPullRequest: identical(onPullRequest, sdkOmittedValue)
+            ? this.onPullRequest
+            : onPullRequest
+                as UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest,
+      );
 
-  factory UserEventPayloadVariant120JobVariant7GitComments.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant7GitComments(
-    onCommit: (json['onCommit'] != null ? UserEventPayloadVariant120JobVariant7GitCommentsOnCommit.fromJson(json['onCommit'] as bool) : null)!,
-    onPullRequest: (json['onPullRequest'] != null ? UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest.fromJson(json['onPullRequest'] as bool) : null)!,
-  );
+  factory UserEventPayloadVariant120JobVariant7GitComments.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant7GitComments(
+        onCommit: (json['onCommit'] != null
+            ? UserEventPayloadVariant120JobVariant7GitCommentsOnCommit.fromJson(
+                json['onCommit'] as bool)
+            : null)!,
+        onPullRequest: (json['onPullRequest'] != null
+            ? UserEventPayloadVariant120JobVariant7GitCommentsOnPullRequest
+                .fromJson(json['onPullRequest'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'onCommit': onCommit.toJson(),
-    'onPullRequest': onPullRequest.toJson(),
-  };
+        'onCommit': onCommit.toJson(),
+        'onPullRequest': onPullRequest.toJson(),
+      };
 }
 
 /// Required object value serialized in the `author` wire field.
 class UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `date` wire field.
   final String date;
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
-  const UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor({required this.date, required this.email, required this.name});
+  const UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor(
+      {required this.date, required this.email, required this.name});
 
-  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor Function({String date, String email, String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor Function(
+      {String date, String email, String name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor _copyWith({Object? date = sdkOmittedValue, Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor(
-    date: identical(date, sdkOmittedValue) ? this.date : date as String,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor _copyWith(
+          {Object? date = sdkOmittedValue,
+          Object? email = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor(
+        date: identical(date, sdkOmittedValue) ? this.date : date as String,
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor(
-    date: (json['date'] as String?)!,
-    email: (json['email'] as String?)!,
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor(
+        date: (json['date'] as String?)!,
+        email: (json['email'] as String?)!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'date': date,
-    'email': email,
-    'name': name,
-  };
+        'date': date,
+        'email': email,
+        'name': name,
+      };
 }
 
 /// Required object value serialized in the `committer` wire field.
 class UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `date` wire field.
   final String date;
+
   /// Required `string` value serialized in the `email` wire field.
   final String email;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
-  const UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter({required this.date, required this.email, required this.name});
+  const UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter(
+      {required this.date, required this.email, required this.name});
 
-  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter Function({String date, String email, String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter Function(
+      {String date, String email, String name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter _copyWith({Object? date = sdkOmittedValue, Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter(
-    date: identical(date, sdkOmittedValue) ? this.date : date as String,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter
+      _copyWith(
+              {Object? date = sdkOmittedValue,
+              Object? email = sdkOmittedValue,
+              Object? name = sdkOmittedValue}) =>
+          UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter(
+            date: identical(date, sdkOmittedValue) ? this.date : date as String,
+            email: identical(email, sdkOmittedValue)
+                ? this.email
+                : email as String,
+            name: identical(name, sdkOmittedValue) ? this.name : name as String,
+          );
 
-  factory UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter(
-    date: (json['date'] as String?)!,
-    email: (json['email'] as String?)!,
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter(
+        date: (json['date'] as String?)!,
+        email: (json['email'] as String?)!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'date': date,
-    'email': email,
-    'name': name,
-  };
+        'date': date,
+        'email': email,
+        'name': name,
+      };
 }
 
 /// Optional object value serialized in the `commitMetadata` wire field.
 class UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `author` wire field.
-  final UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor author;
+  final UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor
+      author;
+
   /// Required object value serialized in the `committer` wire field.
-  final UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter committer;
+  final UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter
+      committer;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata({required this.author, required this.committer, required this.message});
+  const UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata(
+      {required this.author, required this.committer, required this.message});
 
-  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata Function({UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor author, UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter committer, String message}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata Function(
+      {UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor author,
+      UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter
+          committer,
+      String message}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata _copyWith({Object? author = sdkOmittedValue, Object? committer = sdkOmittedValue, Object? message = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata(
-    author: identical(author, sdkOmittedValue) ? this.author : author as UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor,
-    committer: identical(committer, sdkOmittedValue) ? this.committer : committer as UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata _copyWith(
+          {Object? author = sdkOmittedValue,
+          Object? committer = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata(
+        author: identical(author, sdkOmittedValue)
+            ? this.author
+            : author
+                as UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor,
+        committer: identical(committer, sdkOmittedValue)
+            ? this.committer
+            : committer
+                as UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata(
-    author: (json['author'] != null ? UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor.fromJson(json['author'] as Map<String, dynamic>) : null)!,
-    committer: (json['committer'] != null ? UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter.fromJson(json['committer'] as Map<String, dynamic>) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata(
+        author: (json['author'] != null
+            ? UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataAuthor
+                .fromJson(json['author'] as Map<String, dynamic>)
+            : null)!,
+        committer: (json['committer'] != null
+            ? UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadataCommitter
+                .fromJson(json['committer'] as Map<String, dynamic>)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'author': author.toJson(),
-    'committer': committer.toJson(),
-    'message': message,
-  };
+        'author': author.toJson(),
+        'committer': committer.toJson(),
+        'message': message,
+      };
 }
 
 /// Vercel
 class UserEventPayloadVariant120JobVariant7HeadInfo {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `commitMetadata` wire field.
-  final SdkOptional<UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata> commitMetadata;
+  final SdkOptional<UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata>
+      commitMetadata;
+
   /// Required `string` value serialized in the `org` wire field.
   final String org;
+
   /// Required `string` value serialized in the `ref` wire field.
   final String ref;
+
   /// Required `string` value serialized in the `repo` wire field.
   final String repo;
+
   /// Required `string` value serialized in the `sha` wire field.
   final String sha;
 
-  const UserEventPayloadVariant120JobVariant7HeadInfo({this.commitMetadata = const SdkOmitted(), required this.org, required this.ref, required this.repo, required this.sha});
+  const UserEventPayloadVariant120JobVariant7HeadInfo(
+      {this.commitMetadata = const SdkOmitted(),
+      required this.org,
+      required this.ref,
+      required this.repo,
+      required this.sha});
 
-  UserEventPayloadVariant120JobVariant7HeadInfo Function({SdkOptional<UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata> commitMetadata, String org, String ref, String repo, String sha}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant7HeadInfo Function(
+      {SdkOptional<UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata>
+          commitMetadata,
+      String org,
+      String ref,
+      String repo,
+      String sha}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant7HeadInfo _copyWith({Object? commitMetadata = sdkOmittedValue, Object? org = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? sha = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant7HeadInfo(
-    commitMetadata: identical(commitMetadata, sdkOmittedValue) ? this.commitMetadata : commitMetadata as SdkOptional<UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata>,
-    org: identical(org, sdkOmittedValue) ? this.org : org as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-  );
+  UserEventPayloadVariant120JobVariant7HeadInfo _copyWith(
+          {Object? commitMetadata = sdkOmittedValue,
+          Object? org = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? sha = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant7HeadInfo(
+        commitMetadata: identical(commitMetadata, sdkOmittedValue)
+            ? this.commitMetadata
+            : commitMetadata as SdkOptional<
+                UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata>,
+        org: identical(org, sdkOmittedValue) ? this.org : org as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant7HeadInfo.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant7HeadInfo(
-    commitMetadata: json['commitMetadata'] != null ? SdkPresent((json['commitMetadata'] != null ? UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata.fromJson(json['commitMetadata'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    org: (json['org'] as String?)!,
-    ref: (json['ref'] as String?)!,
-    repo: (json['repo'] as String?)!,
-    sha: (json['sha'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant7HeadInfo.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant7HeadInfo(
+        commitMetadata: json['commitMetadata'] != null
+            ? SdkPresent((json['commitMetadata'] != null
+                ? UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata
+                    .fromJson(json['commitMetadata'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        org: (json['org'] as String?)!,
+        ref: (json['ref'] as String?)!,
+        repo: (json['repo'] as String?)!,
+        sha: (json['sha'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (commitMetadata) {
-      SdkPresent<UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata>(value: final value) => {'commitMetadata': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'org': org,
-    'ref': ref,
-    'repo': repo,
-    'sha': sha,
-  };
+        ...switch (commitMetadata) {
+          SdkPresent<
+                UserEventPayloadVariant120JobVariant7HeadInfoCommitMetadata>(
+            value: final value
+          ) =>
+            {
+              'commitMetadata': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'org': org,
+        'ref': ref,
+        'repo': repo,
+        'sha': sha,
+      };
 }
 
 /// Since March 2026 Records a successful NSNB auto-add result so later GitHub PR comments can deterministically explain why this SHA was allowed to deploy.
 class UserEventPayloadVariant120JobVariant7NsnbSideEffect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `action` wire field.
   final UserEventPayloadVariant120JobVariant7NsnbSideEffectAction action;
+
   /// Required `string` value serialized in the `gitUserLogin` wire field.
   final String gitUserLogin;
 
-  const UserEventPayloadVariant120JobVariant7NsnbSideEffect({required this.action, required this.gitUserLogin});
+  const UserEventPayloadVariant120JobVariant7NsnbSideEffect(
+      {required this.action, required this.gitUserLogin});
 
-  UserEventPayloadVariant120JobVariant7NsnbSideEffect Function({UserEventPayloadVariant120JobVariant7NsnbSideEffectAction action, String gitUserLogin}) get copyWith => _copyWith;
+  UserEventPayloadVariant120JobVariant7NsnbSideEffect Function(
+      {UserEventPayloadVariant120JobVariant7NsnbSideEffectAction action,
+      String gitUserLogin}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant120JobVariant7NsnbSideEffect _copyWith({Object? action = sdkOmittedValue, Object? gitUserLogin = sdkOmittedValue}) => UserEventPayloadVariant120JobVariant7NsnbSideEffect(
-    action: identical(action, sdkOmittedValue) ? this.action : action as UserEventPayloadVariant120JobVariant7NsnbSideEffectAction,
-    gitUserLogin: identical(gitUserLogin, sdkOmittedValue) ? this.gitUserLogin : gitUserLogin as String,
-  );
+  UserEventPayloadVariant120JobVariant7NsnbSideEffect _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? gitUserLogin = sdkOmittedValue}) =>
+      UserEventPayloadVariant120JobVariant7NsnbSideEffect(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as UserEventPayloadVariant120JobVariant7NsnbSideEffectAction,
+        gitUserLogin: identical(gitUserLogin, sdkOmittedValue)
+            ? this.gitUserLogin
+            : gitUserLogin as String,
+      );
 
-  factory UserEventPayloadVariant120JobVariant7NsnbSideEffect.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant120JobVariant7NsnbSideEffect(
-    action: (json['action'] != null ? UserEventPayloadVariant120JobVariant7NsnbSideEffectAction.fromJson(json['action'] as String) : null)!,
-    gitUserLogin: (json['gitUserLogin'] as String?)!,
-  );
+  factory UserEventPayloadVariant120JobVariant7NsnbSideEffect.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant120JobVariant7NsnbSideEffect(
+        action: (json['action'] != null
+            ? UserEventPayloadVariant120JobVariant7NsnbSideEffectAction
+                .fromJson(json['action'] as String)
+            : null)!,
+        gitUserLogin: (json['gitUserLogin'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'gitUserLogin': gitUserLogin,
-  };
+        'action': action.toJson(),
+        'gitUserLogin': gitUserLogin,
+      };
 }

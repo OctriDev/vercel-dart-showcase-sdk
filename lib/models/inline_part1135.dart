@@ -7,64 +7,126 @@ part of 'inline.dart';
 class RequestAccessToTeamRequestBodyJoinedFrom {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The origin of the request.
   final RequestAccessToTeamRequestBodyJoinedFromOrigin origin;
+
   /// The commit sha if the origin is a git provider.
   final SdkOptional<String> commitId;
+
   /// The ID of the repository for the given Git provider.
   final SdkOptional<String> repoId;
+
   /// The path to the repository for the given Git provider.
   final SdkOptional<String> repoPath;
+
   /// The ID of the Git account of the user who requests access.
   final SdkOptional<dynamic> gitUserId;
+
   /// The login name for the Git account of the user who requests access.
   final SdkOptional<String> gitUserLogin;
 
-  const RequestAccessToTeamRequestBodyJoinedFrom({required this.origin, this.commitId = const SdkOmitted(), this.repoId = const SdkOmitted(), this.repoPath = const SdkOmitted(), this.gitUserId = const SdkOmitted(), this.gitUserLogin = const SdkOmitted()});
+  const RequestAccessToTeamRequestBodyJoinedFrom(
+      {required this.origin,
+      this.commitId = const SdkOmitted(),
+      this.repoId = const SdkOmitted(),
+      this.repoPath = const SdkOmitted(),
+      this.gitUserId = const SdkOmitted(),
+      this.gitUserLogin = const SdkOmitted()});
 
-  RequestAccessToTeamRequestBodyJoinedFrom Function({RequestAccessToTeamRequestBodyJoinedFromOrigin origin, SdkOptional<String> commitId, SdkOptional<String> repoId, SdkOptional<String> repoPath, SdkOptional<dynamic> gitUserId, SdkOptional<String> gitUserLogin}) get copyWith => _copyWith;
+  RequestAccessToTeamRequestBodyJoinedFrom Function(
+      {RequestAccessToTeamRequestBodyJoinedFromOrigin origin,
+      SdkOptional<String> commitId,
+      SdkOptional<String> repoId,
+      SdkOptional<String> repoPath,
+      SdkOptional<dynamic> gitUserId,
+      SdkOptional<String> gitUserLogin}) get copyWith => _copyWith;
 
-  RequestAccessToTeamRequestBodyJoinedFrom _copyWith({Object? origin = sdkOmittedValue, Object? commitId = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoPath = sdkOmittedValue, Object? gitUserId = sdkOmittedValue, Object? gitUserLogin = sdkOmittedValue}) => RequestAccessToTeamRequestBodyJoinedFrom(
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as RequestAccessToTeamRequestBodyJoinedFromOrigin,
-    commitId: identical(commitId, sdkOmittedValue) ? this.commitId : commitId as SdkOptional<String>,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<String>,
-    repoPath: identical(repoPath, sdkOmittedValue) ? this.repoPath : repoPath as SdkOptional<String>,
-    gitUserId: identical(gitUserId, sdkOmittedValue) ? this.gitUserId : gitUserId as SdkOptional<dynamic>,
-    gitUserLogin: identical(gitUserLogin, sdkOmittedValue) ? this.gitUserLogin : gitUserLogin as SdkOptional<String>,
-  );
+  RequestAccessToTeamRequestBodyJoinedFrom _copyWith(
+          {Object? origin = sdkOmittedValue,
+          Object? commitId = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? repoPath = sdkOmittedValue,
+          Object? gitUserId = sdkOmittedValue,
+          Object? gitUserLogin = sdkOmittedValue}) =>
+      RequestAccessToTeamRequestBodyJoinedFrom(
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin as RequestAccessToTeamRequestBodyJoinedFromOrigin,
+        commitId: identical(commitId, sdkOmittedValue)
+            ? this.commitId
+            : commitId as SdkOptional<String>,
+        repoId: identical(repoId, sdkOmittedValue)
+            ? this.repoId
+            : repoId as SdkOptional<String>,
+        repoPath: identical(repoPath, sdkOmittedValue)
+            ? this.repoPath
+            : repoPath as SdkOptional<String>,
+        gitUserId: identical(gitUserId, sdkOmittedValue)
+            ? this.gitUserId
+            : gitUserId as SdkOptional<dynamic>,
+        gitUserLogin: identical(gitUserLogin, sdkOmittedValue)
+            ? this.gitUserLogin
+            : gitUserLogin as SdkOptional<String>,
+      );
 
-  factory RequestAccessToTeamRequestBodyJoinedFrom.fromJson(Map<String, dynamic> json) => RequestAccessToTeamRequestBodyJoinedFrom(
-    origin: (json['origin'] != null ? RequestAccessToTeamRequestBodyJoinedFromOrigin.fromJson(json['origin'] as String) : null)!,
-    commitId: json['commitId'] != null ? SdkPresent((json['commitId'] as String?)!) : const SdkOmitted(),
-    repoId: json['repoId'] != null ? SdkPresent((json['repoId'] as String?)!) : const SdkOmitted(),
-    repoPath: json['repoPath'] != null ? SdkPresent((json['repoPath'] as String?)!) : const SdkOmitted(),
-    gitUserId: json['gitUserId'] != null ? SdkPresent((json['gitUserId'])!) : const SdkOmitted(),
-    gitUserLogin: json['gitUserLogin'] != null ? SdkPresent((json['gitUserLogin'] as String?)!) : const SdkOmitted(),
-  );
+  factory RequestAccessToTeamRequestBodyJoinedFrom.fromJson(
+          Map<String, dynamic> json) =>
+      RequestAccessToTeamRequestBodyJoinedFrom(
+        origin: (json['origin'] != null
+            ? RequestAccessToTeamRequestBodyJoinedFromOrigin.fromJson(
+                json['origin'] as String)
+            : null)!,
+        commitId: json['commitId'] != null
+            ? SdkPresent((json['commitId'] as String?)!)
+            : const SdkOmitted(),
+        repoId: json['repoId'] != null
+            ? SdkPresent((json['repoId'] as String?)!)
+            : const SdkOmitted(),
+        repoPath: json['repoPath'] != null
+            ? SdkPresent((json['repoPath'] as String?)!)
+            : const SdkOmitted(),
+        gitUserId: json['gitUserId'] != null
+            ? SdkPresent((json['gitUserId'])!)
+            : const SdkOmitted(),
+        gitUserLogin: json['gitUserLogin'] != null
+            ? SdkPresent((json['gitUserLogin'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'origin': origin.toJson(),
-    ...switch (commitId) {
-      SdkPresent<String>(value: final value) => {'commitId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (repoId) {
-      SdkPresent<String>(value: final value) => {'repoId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (repoPath) {
-      SdkPresent<String>(value: final value) => {'repoPath': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitUserId) {
-      SdkPresent<dynamic>(value: final value) => {'gitUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitUserLogin) {
-      SdkPresent<String>(value: final value) => {'gitUserLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'origin': origin.toJson(),
+        ...switch (commitId) {
+          SdkPresent<String>(value: final value) => {
+              'commitId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (repoId) {
+          SdkPresent<String>(value: final value) => {
+              'repoId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (repoPath) {
+          SdkPresent<String>(value: final value) => {
+              'repoPath': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitUserId) {
+          SdkPresent<dynamic>(value: final value) => {
+              'gitUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitUserLogin) {
+          SdkPresent<String>(value: final value) => {
+              'gitUserLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RequestAccessToTeamRequestBody {
@@ -74,19 +136,29 @@ class RequestAccessToTeamRequestBody {
 
   const RequestAccessToTeamRequestBody({required this.joinedFrom});
 
-  RequestAccessToTeamRequestBody Function({RequestAccessToTeamRequestBodyJoinedFrom joinedFrom}) get copyWith => _copyWith;
+  RequestAccessToTeamRequestBody Function(
+          {RequestAccessToTeamRequestBodyJoinedFrom joinedFrom})
+      get copyWith => _copyWith;
 
-  RequestAccessToTeamRequestBody _copyWith({Object? joinedFrom = sdkOmittedValue}) => RequestAccessToTeamRequestBody(
-    joinedFrom: identical(joinedFrom, sdkOmittedValue) ? this.joinedFrom : joinedFrom as RequestAccessToTeamRequestBodyJoinedFrom,
-  );
+  RequestAccessToTeamRequestBody _copyWith(
+          {Object? joinedFrom = sdkOmittedValue}) =>
+      RequestAccessToTeamRequestBody(
+        joinedFrom: identical(joinedFrom, sdkOmittedValue)
+            ? this.joinedFrom
+            : joinedFrom as RequestAccessToTeamRequestBodyJoinedFrom,
+      );
 
-  factory RequestAccessToTeamRequestBody.fromJson(Map<String, dynamic> json) => RequestAccessToTeamRequestBody(
-    joinedFrom: (json['joinedFrom'] != null ? RequestAccessToTeamRequestBodyJoinedFrom.fromJson(json['joinedFrom'] as Map<String, dynamic>) : null)!,
-  );
+  factory RequestAccessToTeamRequestBody.fromJson(Map<String, dynamic> json) =>
+      RequestAccessToTeamRequestBody(
+        joinedFrom: (json['joinedFrom'] != null
+            ? RequestAccessToTeamRequestBodyJoinedFrom.fromJson(
+                json['joinedFrom'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'joinedFrom': joinedFrom.toJson(),
-  };
+        'joinedFrom': joinedFrom.toJson(),
+      };
 }
 
 class RequestAccessToTeamResponseBitbucket {
@@ -96,22 +168,33 @@ class RequestAccessToTeamResponseBitbucket {
 
   const RequestAccessToTeamResponseBitbucket({this.login = const SdkOmitted()});
 
-  RequestAccessToTeamResponseBitbucket Function({SdkOptional<String> login}) get copyWith => _copyWith;
+  RequestAccessToTeamResponseBitbucket Function({SdkOptional<String> login})
+      get copyWith => _copyWith;
 
-  RequestAccessToTeamResponseBitbucket _copyWith({Object? login = sdkOmittedValue}) => RequestAccessToTeamResponseBitbucket(
-    login: identical(login, sdkOmittedValue) ? this.login : login as SdkOptional<String>,
-  );
+  RequestAccessToTeamResponseBitbucket _copyWith(
+          {Object? login = sdkOmittedValue}) =>
+      RequestAccessToTeamResponseBitbucket(
+        login: identical(login, sdkOmittedValue)
+            ? this.login
+            : login as SdkOptional<String>,
+      );
 
-  factory RequestAccessToTeamResponseBitbucket.fromJson(Map<String, dynamic> json) => RequestAccessToTeamResponseBitbucket(
-    login: json['login'] != null ? SdkPresent((json['login'] as String?)!) : const SdkOmitted(),
-  );
+  factory RequestAccessToTeamResponseBitbucket.fromJson(
+          Map<String, dynamic> json) =>
+      RequestAccessToTeamResponseBitbucket(
+        login: json['login'] != null
+            ? SdkPresent((json['login'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (login) {
-      SdkPresent<String>(value: final value) => {'login': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (login) {
+          SdkPresent<String>(value: final value) => {
+              'login': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RequestAccessToTeamResponseGithub {
@@ -121,22 +204,33 @@ class RequestAccessToTeamResponseGithub {
 
   const RequestAccessToTeamResponseGithub({this.login = const SdkOmitted()});
 
-  RequestAccessToTeamResponseGithub Function({SdkOptional<String> login}) get copyWith => _copyWith;
+  RequestAccessToTeamResponseGithub Function({SdkOptional<String> login})
+      get copyWith => _copyWith;
 
-  RequestAccessToTeamResponseGithub _copyWith({Object? login = sdkOmittedValue}) => RequestAccessToTeamResponseGithub(
-    login: identical(login, sdkOmittedValue) ? this.login : login as SdkOptional<String>,
-  );
+  RequestAccessToTeamResponseGithub _copyWith(
+          {Object? login = sdkOmittedValue}) =>
+      RequestAccessToTeamResponseGithub(
+        login: identical(login, sdkOmittedValue)
+            ? this.login
+            : login as SdkOptional<String>,
+      );
 
-  factory RequestAccessToTeamResponseGithub.fromJson(Map<String, dynamic> json) => RequestAccessToTeamResponseGithub(
-    login: json['login'] != null ? SdkPresent((json['login'] as String?)!) : const SdkOmitted(),
-  );
+  factory RequestAccessToTeamResponseGithub.fromJson(
+          Map<String, dynamic> json) =>
+      RequestAccessToTeamResponseGithub(
+        login: json['login'] != null
+            ? SdkPresent((json['login'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (login) {
-      SdkPresent<String>(value: final value) => {'login': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (login) {
+          SdkPresent<String>(value: final value) => {
+              'login': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RequestAccessToTeamResponseGitlab {
@@ -146,22 +240,33 @@ class RequestAccessToTeamResponseGitlab {
 
   const RequestAccessToTeamResponseGitlab({this.login = const SdkOmitted()});
 
-  RequestAccessToTeamResponseGitlab Function({SdkOptional<String> login}) get copyWith => _copyWith;
+  RequestAccessToTeamResponseGitlab Function({SdkOptional<String> login})
+      get copyWith => _copyWith;
 
-  RequestAccessToTeamResponseGitlab _copyWith({Object? login = sdkOmittedValue}) => RequestAccessToTeamResponseGitlab(
-    login: identical(login, sdkOmittedValue) ? this.login : login as SdkOptional<String>,
-  );
+  RequestAccessToTeamResponseGitlab _copyWith(
+          {Object? login = sdkOmittedValue}) =>
+      RequestAccessToTeamResponseGitlab(
+        login: identical(login, sdkOmittedValue)
+            ? this.login
+            : login as SdkOptional<String>,
+      );
 
-  factory RequestAccessToTeamResponseGitlab.fromJson(Map<String, dynamic> json) => RequestAccessToTeamResponseGitlab(
-    login: json['login'] != null ? SdkPresent((json['login'] as String?)!) : const SdkOmitted(),
-  );
+  factory RequestAccessToTeamResponseGitlab.fromJson(
+          Map<String, dynamic> json) =>
+      RequestAccessToTeamResponseGitlab(
+        login: json['login'] != null
+            ? SdkPresent((json['login'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (login) {
-      SdkPresent<String>(value: final value) => {'login': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (login) {
+          SdkPresent<String>(value: final value) => {
+              'login': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class RequestAccessToTeamResponseJoinedFrom {
@@ -179,79 +284,180 @@ class RequestAccessToTeamResponseJoinedFrom {
   final SdkOptional<double> ssoConnectedAt;
   final SdkOptional<String> ssoUserId;
 
-  const RequestAccessToTeamResponseJoinedFrom({this.commitId = const SdkOmitted(), this.dsyncConnectedAt = const SdkOmitted(), this.dsyncUserId = const SdkOmitted(), this.gitUserId = const SdkOmitted(), this.gitUserLogin = const SdkOmitted(), this.idpUserId = const SdkOmitted(), required this.origin, this.repoId = const SdkOmitted(), this.repoPath = const SdkOmitted(), this.ssoConnectedAt = const SdkOmitted(), this.ssoUserId = const SdkOmitted()});
+  const RequestAccessToTeamResponseJoinedFrom(
+      {this.commitId = const SdkOmitted(),
+      this.dsyncConnectedAt = const SdkOmitted(),
+      this.dsyncUserId = const SdkOmitted(),
+      this.gitUserId = const SdkOmitted(),
+      this.gitUserLogin = const SdkOmitted(),
+      this.idpUserId = const SdkOmitted(),
+      required this.origin,
+      this.repoId = const SdkOmitted(),
+      this.repoPath = const SdkOmitted(),
+      this.ssoConnectedAt = const SdkOmitted(),
+      this.ssoUserId = const SdkOmitted()});
 
-  RequestAccessToTeamResponseJoinedFrom Function({SdkOptional<String> commitId, SdkOptional<double> dsyncConnectedAt, SdkOptional<String> dsyncUserId, SdkOptional<dynamic> gitUserId, SdkOptional<String> gitUserLogin, SdkOptional<String> idpUserId, RequestAccessToTeamResponseJoinedFromOrigin origin, SdkOptional<String> repoId, SdkOptional<String> repoPath, SdkOptional<double> ssoConnectedAt, SdkOptional<String> ssoUserId}) get copyWith => _copyWith;
+  RequestAccessToTeamResponseJoinedFrom Function(
+      {SdkOptional<String> commitId,
+      SdkOptional<double> dsyncConnectedAt,
+      SdkOptional<String> dsyncUserId,
+      SdkOptional<dynamic> gitUserId,
+      SdkOptional<String> gitUserLogin,
+      SdkOptional<String> idpUserId,
+      RequestAccessToTeamResponseJoinedFromOrigin origin,
+      SdkOptional<String> repoId,
+      SdkOptional<String> repoPath,
+      SdkOptional<double> ssoConnectedAt,
+      SdkOptional<String> ssoUserId}) get copyWith => _copyWith;
 
-  RequestAccessToTeamResponseJoinedFrom _copyWith({Object? commitId = sdkOmittedValue, Object? dsyncConnectedAt = sdkOmittedValue, Object? dsyncUserId = sdkOmittedValue, Object? gitUserId = sdkOmittedValue, Object? gitUserLogin = sdkOmittedValue, Object? idpUserId = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoPath = sdkOmittedValue, Object? ssoConnectedAt = sdkOmittedValue, Object? ssoUserId = sdkOmittedValue}) => RequestAccessToTeamResponseJoinedFrom(
-    commitId: identical(commitId, sdkOmittedValue) ? this.commitId : commitId as SdkOptional<String>,
-    dsyncConnectedAt: identical(dsyncConnectedAt, sdkOmittedValue) ? this.dsyncConnectedAt : dsyncConnectedAt as SdkOptional<double>,
-    dsyncUserId: identical(dsyncUserId, sdkOmittedValue) ? this.dsyncUserId : dsyncUserId as SdkOptional<String>,
-    gitUserId: identical(gitUserId, sdkOmittedValue) ? this.gitUserId : gitUserId as SdkOptional<dynamic>,
-    gitUserLogin: identical(gitUserLogin, sdkOmittedValue) ? this.gitUserLogin : gitUserLogin as SdkOptional<String>,
-    idpUserId: identical(idpUserId, sdkOmittedValue) ? this.idpUserId : idpUserId as SdkOptional<String>,
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as RequestAccessToTeamResponseJoinedFromOrigin,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<String>,
-    repoPath: identical(repoPath, sdkOmittedValue) ? this.repoPath : repoPath as SdkOptional<String>,
-    ssoConnectedAt: identical(ssoConnectedAt, sdkOmittedValue) ? this.ssoConnectedAt : ssoConnectedAt as SdkOptional<double>,
-    ssoUserId: identical(ssoUserId, sdkOmittedValue) ? this.ssoUserId : ssoUserId as SdkOptional<String>,
-  );
+  RequestAccessToTeamResponseJoinedFrom _copyWith(
+          {Object? commitId = sdkOmittedValue,
+          Object? dsyncConnectedAt = sdkOmittedValue,
+          Object? dsyncUserId = sdkOmittedValue,
+          Object? gitUserId = sdkOmittedValue,
+          Object? gitUserLogin = sdkOmittedValue,
+          Object? idpUserId = sdkOmittedValue,
+          Object? origin = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? repoPath = sdkOmittedValue,
+          Object? ssoConnectedAt = sdkOmittedValue,
+          Object? ssoUserId = sdkOmittedValue}) =>
+      RequestAccessToTeamResponseJoinedFrom(
+        commitId: identical(commitId, sdkOmittedValue)
+            ? this.commitId
+            : commitId as SdkOptional<String>,
+        dsyncConnectedAt: identical(dsyncConnectedAt, sdkOmittedValue)
+            ? this.dsyncConnectedAt
+            : dsyncConnectedAt as SdkOptional<double>,
+        dsyncUserId: identical(dsyncUserId, sdkOmittedValue)
+            ? this.dsyncUserId
+            : dsyncUserId as SdkOptional<String>,
+        gitUserId: identical(gitUserId, sdkOmittedValue)
+            ? this.gitUserId
+            : gitUserId as SdkOptional<dynamic>,
+        gitUserLogin: identical(gitUserLogin, sdkOmittedValue)
+            ? this.gitUserLogin
+            : gitUserLogin as SdkOptional<String>,
+        idpUserId: identical(idpUserId, sdkOmittedValue)
+            ? this.idpUserId
+            : idpUserId as SdkOptional<String>,
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin as RequestAccessToTeamResponseJoinedFromOrigin,
+        repoId: identical(repoId, sdkOmittedValue)
+            ? this.repoId
+            : repoId as SdkOptional<String>,
+        repoPath: identical(repoPath, sdkOmittedValue)
+            ? this.repoPath
+            : repoPath as SdkOptional<String>,
+        ssoConnectedAt: identical(ssoConnectedAt, sdkOmittedValue)
+            ? this.ssoConnectedAt
+            : ssoConnectedAt as SdkOptional<double>,
+        ssoUserId: identical(ssoUserId, sdkOmittedValue)
+            ? this.ssoUserId
+            : ssoUserId as SdkOptional<String>,
+      );
 
-  factory RequestAccessToTeamResponseJoinedFrom.fromJson(Map<String, dynamic> json) => RequestAccessToTeamResponseJoinedFrom(
-    commitId: json['commitId'] != null ? SdkPresent((json['commitId'] as String?)!) : const SdkOmitted(),
-    dsyncConnectedAt: json['dsyncConnectedAt'] != null ? SdkPresent(((json['dsyncConnectedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    dsyncUserId: json['dsyncUserId'] != null ? SdkPresent((json['dsyncUserId'] as String?)!) : const SdkOmitted(),
-    gitUserId: json['gitUserId'] != null ? SdkPresent((json['gitUserId'])!) : const SdkOmitted(),
-    gitUserLogin: json['gitUserLogin'] != null ? SdkPresent((json['gitUserLogin'] as String?)!) : const SdkOmitted(),
-    idpUserId: json['idpUserId'] != null ? SdkPresent((json['idpUserId'] as String?)!) : const SdkOmitted(),
-    origin: (json['origin'] != null ? RequestAccessToTeamResponseJoinedFromOrigin.fromJson(json['origin'] as String) : null)!,
-    repoId: json['repoId'] != null ? SdkPresent((json['repoId'] as String?)!) : const SdkOmitted(),
-    repoPath: json['repoPath'] != null ? SdkPresent((json['repoPath'] as String?)!) : const SdkOmitted(),
-    ssoConnectedAt: json['ssoConnectedAt'] != null ? SdkPresent(((json['ssoConnectedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    ssoUserId: json['ssoUserId'] != null ? SdkPresent((json['ssoUserId'] as String?)!) : const SdkOmitted(),
-  );
+  factory RequestAccessToTeamResponseJoinedFrom.fromJson(
+          Map<String, dynamic> json) =>
+      RequestAccessToTeamResponseJoinedFrom(
+        commitId: json['commitId'] != null
+            ? SdkPresent((json['commitId'] as String?)!)
+            : const SdkOmitted(),
+        dsyncConnectedAt: json['dsyncConnectedAt'] != null
+            ? SdkPresent(((json['dsyncConnectedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        dsyncUserId: json['dsyncUserId'] != null
+            ? SdkPresent((json['dsyncUserId'] as String?)!)
+            : const SdkOmitted(),
+        gitUserId: json['gitUserId'] != null
+            ? SdkPresent((json['gitUserId'])!)
+            : const SdkOmitted(),
+        gitUserLogin: json['gitUserLogin'] != null
+            ? SdkPresent((json['gitUserLogin'] as String?)!)
+            : const SdkOmitted(),
+        idpUserId: json['idpUserId'] != null
+            ? SdkPresent((json['idpUserId'] as String?)!)
+            : const SdkOmitted(),
+        origin: (json['origin'] != null
+            ? RequestAccessToTeamResponseJoinedFromOrigin.fromJson(
+                json['origin'] as String)
+            : null)!,
+        repoId: json['repoId'] != null
+            ? SdkPresent((json['repoId'] as String?)!)
+            : const SdkOmitted(),
+        repoPath: json['repoPath'] != null
+            ? SdkPresent((json['repoPath'] as String?)!)
+            : const SdkOmitted(),
+        ssoConnectedAt: json['ssoConnectedAt'] != null
+            ? SdkPresent(((json['ssoConnectedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        ssoUserId: json['ssoUserId'] != null
+            ? SdkPresent((json['ssoUserId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (commitId) {
-      SdkPresent<String>(value: final value) => {'commitId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dsyncConnectedAt) {
-      SdkPresent<double>(value: final value) => {'dsyncConnectedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dsyncUserId) {
-      SdkPresent<String>(value: final value) => {'dsyncUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitUserId) {
-      SdkPresent<dynamic>(value: final value) => {'gitUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitUserLogin) {
-      SdkPresent<String>(value: final value) => {'gitUserLogin': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (idpUserId) {
-      SdkPresent<String>(value: final value) => {'idpUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'origin': origin.toJson(),
-    ...switch (repoId) {
-      SdkPresent<String>(value: final value) => {'repoId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (repoPath) {
-      SdkPresent<String>(value: final value) => {'repoPath': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoConnectedAt) {
-      SdkPresent<double>(value: final value) => {'ssoConnectedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ssoUserId) {
-      SdkPresent<String>(value: final value) => {'ssoUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (commitId) {
+          SdkPresent<String>(value: final value) => {
+              'commitId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dsyncConnectedAt) {
+          SdkPresent<double>(value: final value) => {
+              'dsyncConnectedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dsyncUserId) {
+          SdkPresent<String>(value: final value) => {
+              'dsyncUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitUserId) {
+          SdkPresent<dynamic>(value: final value) => {
+              'gitUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitUserLogin) {
+          SdkPresent<String>(value: final value) => {
+              'gitUserLogin': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (idpUserId) {
+          SdkPresent<String>(value: final value) => {
+              'idpUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'origin': origin.toJson(),
+        ...switch (repoId) {
+          SdkPresent<String>(value: final value) => {
+              'repoId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (repoPath) {
+          SdkPresent<String>(value: final value) => {
+              'repoPath': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoConnectedAt) {
+          SdkPresent<double>(value: final value) => {
+              'ssoConnectedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ssoUserId) {
+          SdkPresent<String>(value: final value) => {
+              'ssoUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

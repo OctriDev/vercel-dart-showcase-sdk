@@ -5,39 +5,53 @@ part of 'inline.dart';
 
 // Inline operation models (part 65)
 final class DeleteProjectAvatarResponseDismissedToastsItemValueVariant3 {
-
   final bool value;
 
-  const DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(this.value);
+  const DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseDismissedToastsItemValueVariant3.fromJson(bool value) => DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(value);
+  factory DeleteProjectAvatarResponseDismissedToastsItemValueVariant3.fromJson(
+          bool value) =>
+      DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(value);
 
-  static const false_ = DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(false);
-  static const true_ = DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(true);
+  static const false_ =
+      DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(false);
+  static const true_ =
+      DeleteProjectAvatarResponseDismissedToastsItemValueVariant3._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseDismissedToastsItemValueVariant3 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseDismissedToastsItemValueVariant3 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant0Type {
   redisUrl;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant0Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-url': return DeleteProjectAvatarResponseEnvItemContentHintVariant0Type.redisUrl;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant0Type: $value');
+      case 'redis-url':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant0Type
+            .redisUrl;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant0Type.redisUrl: return 'redis-url';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant0Type.redisUrl:
+        return 'redis-url';
     }
   }
 
@@ -48,16 +62,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant0Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant1Type {
   redisRestApiUrl;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant1Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-url': return DeleteProjectAvatarResponseEnvItemContentHintVariant1Type.redisRestApiUrl;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant1Type: $value');
+      case 'redis-rest-api-url':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant1Type
+            .redisRestApiUrl;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant1Type.redisRestApiUrl: return 'redis-rest-api-url';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant1Type
+            .redisRestApiUrl:
+        return 'redis-rest-api-url';
     }
   }
 
@@ -68,16 +89,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant1Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant10Type {
   postgresUser;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant10Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant10Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-user': return DeleteProjectAvatarResponseEnvItemContentHintVariant10Type.postgresUser;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant10Type: $value');
+      case 'postgres-user':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant10Type
+            .postgresUser;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant10Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant10Type.postgresUser: return 'postgres-user';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant10Type
+            .postgresUser:
+        return 'postgres-user';
     }
   }
 
@@ -88,16 +116,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant10Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant11Type {
   postgresHost;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant11Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant11Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-host': return DeleteProjectAvatarResponseEnvItemContentHintVariant11Type.postgresHost;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant11Type: $value');
+      case 'postgres-host':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant11Type
+            .postgresHost;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant11Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant11Type.postgresHost: return 'postgres-host';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant11Type
+            .postgresHost:
+        return 'postgres-host';
     }
   }
 
@@ -108,16 +143,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant11Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant12Type {
   postgresPassword;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant12Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant12Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-password': return DeleteProjectAvatarResponseEnvItemContentHintVariant12Type.postgresPassword;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant12Type: $value');
+      case 'postgres-password':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant12Type
+            .postgresPassword;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant12Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant12Type.postgresPassword: return 'postgres-password';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant12Type
+            .postgresPassword:
+        return 'postgres-password';
     }
   }
 
@@ -128,16 +170,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant12Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant13Type {
   postgresDatabase;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant13Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant13Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-database': return DeleteProjectAvatarResponseEnvItemContentHintVariant13Type.postgresDatabase;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant13Type: $value');
+      case 'postgres-database':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant13Type
+            .postgresDatabase;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant13Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant13Type.postgresDatabase: return 'postgres-database';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant13Type
+            .postgresDatabase:
+        return 'postgres-database';
     }
   }
 
@@ -148,16 +197,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant13Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant14Type {
   postgresUrlNoSsl;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant14Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant14Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url-no-ssl': return DeleteProjectAvatarResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant14Type: $value');
+      case 'postgres-url-no-ssl':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant14Type
+            .postgresUrlNoSsl;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant14Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl: return 'postgres-url-no-ssl';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant14Type
+            .postgresUrlNoSsl:
+        return 'postgres-url-no-ssl';
     }
   }
 
@@ -168,16 +224,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant14Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant15Type {
   integrationStoreSecret;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant15Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant15Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration-store-secret': return DeleteProjectAvatarResponseEnvItemContentHintVariant15Type.integrationStoreSecret;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant15Type: $value');
+      case 'integration-store-secret':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant15Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant15Type.integrationStoreSecret: return 'integration-store-secret';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret:
+        return 'integration-store-secret';
     }
   }
 
@@ -188,16 +251,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant15Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant16Type {
   flagsConnectionString;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant16Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant16Type fromJson(
+      String value) {
     switch (value) {
-      case 'flags-connection-string': return DeleteProjectAvatarResponseEnvItemContentHintVariant16Type.flagsConnectionString;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant16Type: $value');
+      case 'flags-connection-string':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant16Type
+            .flagsConnectionString;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant16Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant16Type.flagsConnectionString: return 'flags-connection-string';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant16Type
+            .flagsConnectionString:
+        return 'flags-connection-string';
     }
   }
 
@@ -208,16 +278,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant16Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant2Type {
   redisRestApiToken;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant2Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant2Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-token': return DeleteProjectAvatarResponseEnvItemContentHintVariant2Type.redisRestApiToken;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant2Type: $value');
+      case 'redis-rest-api-token':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant2Type
+            .redisRestApiToken;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant2Type.redisRestApiToken: return 'redis-rest-api-token';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant2Type
+            .redisRestApiToken:
+        return 'redis-rest-api-token';
     }
   }
 
@@ -228,16 +305,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant2Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant3Type {
   redisRestApiReadOnlyToken;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant3Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant3Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-read-only-token': return DeleteProjectAvatarResponseEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant3Type: $value');
+      case 'redis-rest-api-read-only-token':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant3Type
+            .redisRestApiReadOnlyToken;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken: return 'redis-rest-api-read-only-token';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant3Type
+            .redisRestApiReadOnlyToken:
+        return 'redis-rest-api-read-only-token';
     }
   }
 
@@ -248,16 +332,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant3Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant4Type {
   blobReadWriteToken;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant4Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant4Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-read-write-token': return DeleteProjectAvatarResponseEnvItemContentHintVariant4Type.blobReadWriteToken;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant4Type: $value');
+      case 'blob-read-write-token':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant4Type
+            .blobReadWriteToken;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant4Type.blobReadWriteToken: return 'blob-read-write-token';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant4Type
+            .blobReadWriteToken:
+        return 'blob-read-write-token';
     }
   }
 
@@ -268,16 +359,23 @@ enum DeleteProjectAvatarResponseEnvItemContentHintVariant4Type {
 enum DeleteProjectAvatarResponseEnvItemContentHintVariant5Type {
   blobStoreId;
 
-  static DeleteProjectAvatarResponseEnvItemContentHintVariant5Type fromJson(String value) {
+  static DeleteProjectAvatarResponseEnvItemContentHintVariant5Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-store-id': return DeleteProjectAvatarResponseEnvItemContentHintVariant5Type.blobStoreId;
-      default: throw ArgumentError('Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant5Type: $value');
+      case 'blob-store-id':
+        return DeleteProjectAvatarResponseEnvItemContentHintVariant5Type
+            .blobStoreId;
+      default:
+        throw ArgumentError(
+            'Unknown DeleteProjectAvatarResponseEnvItemContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case DeleteProjectAvatarResponseEnvItemContentHintVariant5Type.blobStoreId: return 'blob-store-id';
+      case DeleteProjectAvatarResponseEnvItemContentHintVariant5Type
+            .blobStoreId:
+        return 'blob-store-id';
     }
   }
 

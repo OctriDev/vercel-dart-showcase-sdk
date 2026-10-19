@@ -8,32 +8,54 @@ part of 'deployments.dart';
 class GetDeploymentResponseVariant2ManualProvisioning {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Timestamp when manual provisioning completed
   final SdkOptional<double> completedAt;
+
   /// Current provisioning state
   final GetDeploymentResponseVariant2ManualProvisioningState state;
 
-  const GetDeploymentResponseVariant2ManualProvisioning({this.completedAt = const SdkOmitted(), required this.state});
+  const GetDeploymentResponseVariant2ManualProvisioning(
+      {this.completedAt = const SdkOmitted(), required this.state});
 
-  GetDeploymentResponseVariant2ManualProvisioning Function({SdkOptional<double> completedAt, GetDeploymentResponseVariant2ManualProvisioningState state}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2ManualProvisioning Function(
+          {SdkOptional<double> completedAt,
+          GetDeploymentResponseVariant2ManualProvisioningState state})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2ManualProvisioning _copyWith({Object? completedAt = sdkOmittedValue, Object? state = sdkOmittedValue}) => GetDeploymentResponseVariant2ManualProvisioning(
-    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
-    state: identical(state, sdkOmittedValue) ? this.state : state as GetDeploymentResponseVariant2ManualProvisioningState,
-  );
+  GetDeploymentResponseVariant2ManualProvisioning _copyWith(
+          {Object? completedAt = sdkOmittedValue,
+          Object? state = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2ManualProvisioning(
+        completedAt: identical(completedAt, sdkOmittedValue)
+            ? this.completedAt
+            : completedAt as SdkOptional<double>,
+        state: identical(state, sdkOmittedValue)
+            ? this.state
+            : state as GetDeploymentResponseVariant2ManualProvisioningState,
+      );
 
-  factory GetDeploymentResponseVariant2ManualProvisioning.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2ManualProvisioning(
-    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    state: (json['state'] != null ? GetDeploymentResponseVariant2ManualProvisioningState.fromJson(json['state'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant2ManualProvisioning.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2ManualProvisioning(
+        completedAt: json['completedAt'] != null
+            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        state: (json['state'] != null
+            ? GetDeploymentResponseVariant2ManualProvisioningState.fromJson(
+                json['state'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (completedAt) {
-      SdkPresent<double>(value: final value) => {'completedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'state': state.toJson(),
-  };
+        ...switch (completedAt) {
+          SdkPresent<double>(value: final value) => {
+              'completedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'state': state.toJson(),
+      };
 }
 
 class GetDeploymentResponseVariant2OidcTokenClaims {
@@ -53,69 +75,145 @@ class GetDeploymentResponseVariant2OidcTokenClaims {
   final String scope;
   final String sub;
 
-  const GetDeploymentResponseVariant2OidcTokenClaims({required this.aud, this.customEnvironmentId = const SdkOmitted(), this.deploymentId = const SdkOmitted(), required this.environment, required this.iss, this.mfeGroupIds = const SdkOmitted(), required this.owner, required this.ownerId, this.plan = const SdkOmitted(), required this.project, required this.projectId, required this.scope, required this.sub});
+  const GetDeploymentResponseVariant2OidcTokenClaims(
+      {required this.aud,
+      this.customEnvironmentId = const SdkOmitted(),
+      this.deploymentId = const SdkOmitted(),
+      required this.environment,
+      required this.iss,
+      this.mfeGroupIds = const SdkOmitted(),
+      required this.owner,
+      required this.ownerId,
+      this.plan = const SdkOmitted(),
+      required this.project,
+      required this.projectId,
+      required this.scope,
+      required this.sub});
 
-  GetDeploymentResponseVariant2OidcTokenClaims Function({String aud, SdkOptional<String> customEnvironmentId, SdkOptional<String> deploymentId, String environment, String iss, SdkOptional<List<String>> mfeGroupIds, String owner, String ownerId, SdkOptional<String> plan, String project, String projectId, String scope, String sub}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2OidcTokenClaims Function(
+      {String aud,
+      SdkOptional<String> customEnvironmentId,
+      SdkOptional<String> deploymentId,
+      String environment,
+      String iss,
+      SdkOptional<List<String>> mfeGroupIds,
+      String owner,
+      String ownerId,
+      SdkOptional<String> plan,
+      String project,
+      String projectId,
+      String scope,
+      String sub}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2OidcTokenClaims _copyWith({Object? aud = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? iss = sdkOmittedValue, Object? mfeGroupIds = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? plan = sdkOmittedValue, Object? project = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? sub = sdkOmittedValue}) => GetDeploymentResponseVariant2OidcTokenClaims(
-    aud: identical(aud, sdkOmittedValue) ? this.aud : aud as String,
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String>,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as SdkOptional<String>,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
-    iss: identical(iss, sdkOmittedValue) ? this.iss : iss as String,
-    mfeGroupIds: identical(mfeGroupIds, sdkOmittedValue) ? this.mfeGroupIds : mfeGroupIds as SdkOptional<List<String>>,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    plan: identical(plan, sdkOmittedValue) ? this.plan : plan as SdkOptional<String>,
-    project: identical(project, sdkOmittedValue) ? this.project : project as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as String,
-    sub: identical(sub, sdkOmittedValue) ? this.sub : sub as String,
-  );
+  GetDeploymentResponseVariant2OidcTokenClaims _copyWith(
+          {Object? aud = sdkOmittedValue,
+          Object? customEnvironmentId = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? environment = sdkOmittedValue,
+          Object? iss = sdkOmittedValue,
+          Object? mfeGroupIds = sdkOmittedValue,
+          Object? owner = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? plan = sdkOmittedValue,
+          Object? project = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? scope = sdkOmittedValue,
+          Object? sub = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2OidcTokenClaims(
+        aud: identical(aud, sdkOmittedValue) ? this.aud : aud as String,
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as SdkOptional<String>,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as SdkOptional<String>,
+        environment: identical(environment, sdkOmittedValue)
+            ? this.environment
+            : environment as String,
+        iss: identical(iss, sdkOmittedValue) ? this.iss : iss as String,
+        mfeGroupIds: identical(mfeGroupIds, sdkOmittedValue)
+            ? this.mfeGroupIds
+            : mfeGroupIds as SdkOptional<List<String>>,
+        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        plan: identical(plan, sdkOmittedValue)
+            ? this.plan
+            : plan as SdkOptional<String>,
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        scope: identical(scope, sdkOmittedValue) ? this.scope : scope as String,
+        sub: identical(sub, sdkOmittedValue) ? this.sub : sub as String,
+      );
 
-  factory GetDeploymentResponseVariant2OidcTokenClaims.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2OidcTokenClaims(
-    aud: (json['aud'] as String?)!,
-    customEnvironmentId: json['custom_environment_id'] != null ? SdkPresent((json['custom_environment_id'] as String?)!) : const SdkOmitted(),
-    deploymentId: json['deployment_id'] != null ? SdkPresent((json['deployment_id'] as String?)!) : const SdkOmitted(),
-    environment: (json['environment'] as String?)!,
-    iss: (json['iss'] as String?)!,
-    mfeGroupIds: json['mfe_group_ids'] != null ? SdkPresent(((json['mfe_group_ids'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    owner: (json['owner'] as String?)!,
-    ownerId: (json['owner_id'] as String?)!,
-    plan: json['plan'] != null ? SdkPresent((json['plan'] as String?)!) : const SdkOmitted(),
-    project: (json['project'] as String?)!,
-    projectId: (json['project_id'] as String?)!,
-    scope: (json['scope'] as String?)!,
-    sub: (json['sub'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2OidcTokenClaims.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2OidcTokenClaims(
+        aud: (json['aud'] as String?)!,
+        customEnvironmentId: json['custom_environment_id'] != null
+            ? SdkPresent((json['custom_environment_id'] as String?)!)
+            : const SdkOmitted(),
+        deploymentId: json['deployment_id'] != null
+            ? SdkPresent((json['deployment_id'] as String?)!)
+            : const SdkOmitted(),
+        environment: (json['environment'] as String?)!,
+        iss: (json['iss'] as String?)!,
+        mfeGroupIds: json['mfe_group_ids'] != null
+            ? SdkPresent(((json['mfe_group_ids'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        owner: (json['owner'] as String?)!,
+        ownerId: (json['owner_id'] as String?)!,
+        plan: json['plan'] != null
+            ? SdkPresent((json['plan'] as String?)!)
+            : const SdkOmitted(),
+        project: (json['project'] as String?)!,
+        projectId: (json['project_id'] as String?)!,
+        scope: (json['scope'] as String?)!,
+        sub: (json['sub'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'aud': aud,
-    ...switch (customEnvironmentId) {
-      SdkPresent<String>(value: final value) => {'custom_environment_id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deploymentId) {
-      SdkPresent<String>(value: final value) => {'deployment_id': value,},
-      _ => const <String, dynamic>{},
-    },
-    'environment': environment,
-    'iss': iss,
-    ...switch (mfeGroupIds) {
-      SdkPresent<List<String>>(value: final value) => {'mfe_group_ids': value,},
-      _ => const <String, dynamic>{},
-    },
-    'owner': owner,
-    'owner_id': ownerId,
-    ...switch (plan) {
-      SdkPresent<String>(value: final value) => {'plan': value,},
-      _ => const <String, dynamic>{},
-    },
-    'project': project,
-    'project_id': projectId,
-    'scope': scope,
-    'sub': sub,
-  };
+        'aud': aud,
+        ...switch (customEnvironmentId) {
+          SdkPresent<String>(value: final value) => {
+              'custom_environment_id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deploymentId) {
+          SdkPresent<String>(value: final value) => {
+              'deployment_id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'environment': environment,
+        'iss': iss,
+        ...switch (mfeGroupIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'mfe_group_ids': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'owner': owner,
+        'owner_id': ownerId,
+        ...switch (plan) {
+          SdkPresent<String>(value: final value) => {
+              'plan': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'project': project,
+        'project_id': projectId,
+        'scope': scope,
+        'sub': sub,
+      };
 }
 
 /// The public project information associated with the deployment.
@@ -126,30 +224,48 @@ class GetDeploymentResponseVariant2Project {
   final String id;
   final String name;
 
-  const GetDeploymentResponseVariant2Project({this.framework = const SdkOmitted(), required this.id, required this.name});
+  const GetDeploymentResponseVariant2Project(
+      {this.framework = const SdkOmitted(),
+      required this.id,
+      required this.name});
 
-  GetDeploymentResponseVariant2Project Function({SdkOptional<String?> framework, String id, String name}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2Project Function(
+      {SdkOptional<String?> framework,
+      String id,
+      String name}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2Project _copyWith({Object? framework = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetDeploymentResponseVariant2Project(
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<String?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  GetDeploymentResponseVariant2Project _copyWith(
+          {Object? framework = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2Project(
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<String?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory GetDeploymentResponseVariant2Project.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2Project(
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] as String?) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2Project.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2Project(
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] as String?)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (framework) {
-      SdkPresent<String?>(value: final value) => {'framework': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-  };
+        ...switch (framework) {
+          SdkPresent<String?>(value: final value) => {
+              'framework': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+      };
 }
 
 /// The team that owns the deployment if any
@@ -161,33 +277,54 @@ class GetDeploymentResponseVariant2Team {
   final String name;
   final String slug;
 
-  const GetDeploymentResponseVariant2Team({this.avatar = const SdkOmitted(), required this.id, required this.name, required this.slug});
+  const GetDeploymentResponseVariant2Team(
+      {this.avatar = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      required this.slug});
 
-  GetDeploymentResponseVariant2Team Function({SdkOptional<String> avatar, String id, String name, String slug}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2Team Function(
+      {SdkOptional<String> avatar,
+      String id,
+      String name,
+      String slug}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2Team _copyWith({Object? avatar = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? slug = sdkOmittedValue}) => GetDeploymentResponseVariant2Team(
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-  );
+  GetDeploymentResponseVariant2Team _copyWith(
+          {Object? avatar = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? slug = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2Team(
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+      );
 
-  factory GetDeploymentResponseVariant2Team.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2Team(
-    avatar: json['avatar'] != null ? SdkPresent((json['avatar'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    slug: (json['slug'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2Team.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2Team(
+        avatar: json['avatar'] != null
+            ? SdkPresent((json['avatar'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        slug: (json['slug'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (avatar) {
-      SdkPresent<String>(value: final value) => {'avatar': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    'slug': slug,
-  };
+        ...switch (avatar) {
+          SdkPresent<String>(value: final value) => {
+              'avatar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        'slug': slug,
+      };
 }
 
 class GetDeploymentResponseVariant2LambdasItemOutputItem {
@@ -196,24 +333,33 @@ class GetDeploymentResponseVariant2LambdasItemOutputItem {
   final String functionName;
   final String path;
 
-  const GetDeploymentResponseVariant2LambdasItemOutputItem({required this.functionName, required this.path});
+  const GetDeploymentResponseVariant2LambdasItemOutputItem(
+      {required this.functionName, required this.path});
 
-  GetDeploymentResponseVariant2LambdasItemOutputItem Function({String functionName, String path}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2LambdasItemOutputItem Function(
+      {String functionName, String path}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2LambdasItemOutputItem _copyWith({Object? functionName = sdkOmittedValue, Object? path = sdkOmittedValue}) => GetDeploymentResponseVariant2LambdasItemOutputItem(
-    functionName: identical(functionName, sdkOmittedValue) ? this.functionName : functionName as String,
-    path: identical(path, sdkOmittedValue) ? this.path : path as String,
-  );
+  GetDeploymentResponseVariant2LambdasItemOutputItem _copyWith(
+          {Object? functionName = sdkOmittedValue,
+          Object? path = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2LambdasItemOutputItem(
+        functionName: identical(functionName, sdkOmittedValue)
+            ? this.functionName
+            : functionName as String,
+        path: identical(path, sdkOmittedValue) ? this.path : path as String,
+      );
 
-  factory GetDeploymentResponseVariant2LambdasItemOutputItem.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2LambdasItemOutputItem(
-    functionName: (json['functionName'] as String?)!,
-    path: (json['path'] as String?)!,
-  );
+  factory GetDeploymentResponseVariant2LambdasItemOutputItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2LambdasItemOutputItem(
+        functionName: (json['functionName'] as String?)!,
+        path: (json['path'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'functionName': functionName,
-    'path': path,
-  };
+        'functionName': functionName,
+        'path': path,
+      };
 }
 
 /// A partial representation of a Build used by the deployment endpoint.
@@ -223,50 +369,112 @@ class GetDeploymentResponseVariant2LambdasItem {
   final SdkOptional<double> createdAt;
   final SdkOptional<String?> entrypoint;
   final String id;
-  final SdkOptional<GetDeploymentResponseVariant2LambdasItemReadyState> readyState;
+  final SdkOptional<GetDeploymentResponseVariant2LambdasItemReadyState>
+      readyState;
   final SdkOptional<double> readyStateAt;
   final List<GetDeploymentResponseVariant2LambdasItemOutputItem> output;
 
-  const GetDeploymentResponseVariant2LambdasItem({this.createdAt = const SdkOmitted(), this.entrypoint = const SdkOmitted(), required this.id, this.readyState = const SdkOmitted(), this.readyStateAt = const SdkOmitted(), required this.output});
+  const GetDeploymentResponseVariant2LambdasItem(
+      {this.createdAt = const SdkOmitted(),
+      this.entrypoint = const SdkOmitted(),
+      required this.id,
+      this.readyState = const SdkOmitted(),
+      this.readyStateAt = const SdkOmitted(),
+      required this.output});
 
-  GetDeploymentResponseVariant2LambdasItem Function({SdkOptional<double> createdAt, SdkOptional<String?> entrypoint, String id, SdkOptional<GetDeploymentResponseVariant2LambdasItemReadyState> readyState, SdkOptional<double> readyStateAt, List<GetDeploymentResponseVariant2LambdasItemOutputItem> output}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant2LambdasItem Function(
+          {SdkOptional<double> createdAt,
+          SdkOptional<String?> entrypoint,
+          String id,
+          SdkOptional<GetDeploymentResponseVariant2LambdasItemReadyState>
+              readyState,
+          SdkOptional<double> readyStateAt,
+          List<GetDeploymentResponseVariant2LambdasItemOutputItem> output})
+      get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2LambdasItem _copyWith({Object? createdAt = sdkOmittedValue, Object? entrypoint = sdkOmittedValue, Object? id = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? readyStateAt = sdkOmittedValue, Object? output = sdkOmittedValue}) => GetDeploymentResponseVariant2LambdasItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    entrypoint: identical(entrypoint, sdkOmittedValue) ? this.entrypoint : entrypoint as SdkOptional<String?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as SdkOptional<GetDeploymentResponseVariant2LambdasItemReadyState>,
-    readyStateAt: identical(readyStateAt, sdkOmittedValue) ? this.readyStateAt : readyStateAt as SdkOptional<double>,
-    output: identical(output, sdkOmittedValue) ? this.output : output as List<GetDeploymentResponseVariant2LambdasItemOutputItem>,
-  );
+  GetDeploymentResponseVariant2LambdasItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? entrypoint = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? readyState = sdkOmittedValue,
+          Object? readyStateAt = sdkOmittedValue,
+          Object? output = sdkOmittedValue}) =>
+      GetDeploymentResponseVariant2LambdasItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        entrypoint: identical(entrypoint, sdkOmittedValue)
+            ? this.entrypoint
+            : entrypoint as SdkOptional<String?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        readyState: identical(readyState, sdkOmittedValue)
+            ? this.readyState
+            : readyState as SdkOptional<
+                GetDeploymentResponseVariant2LambdasItemReadyState>,
+        readyStateAt: identical(readyStateAt, sdkOmittedValue)
+            ? this.readyStateAt
+            : readyStateAt as SdkOptional<double>,
+        output: identical(output, sdkOmittedValue)
+            ? this.output
+            : output
+                as List<GetDeploymentResponseVariant2LambdasItemOutputItem>,
+      );
 
-  factory GetDeploymentResponseVariant2LambdasItem.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2LambdasItem(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    entrypoint: json.containsKey('entrypoint') ? SdkPresent(json['entrypoint'] as String?) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    readyState: json['readyState'] != null ? SdkPresent((json['readyState'] != null ? GetDeploymentResponseVariant2LambdasItemReadyState.fromJson(json['readyState'] as String) : null)!) : const SdkOmitted(),
-    readyStateAt: json['readyStateAt'] != null ? SdkPresent(((json['readyStateAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    output: ((json['output'] as List?)?.map((e) => GetDeploymentResponseVariant2LambdasItemOutputItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory GetDeploymentResponseVariant2LambdasItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant2LambdasItem(
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        entrypoint: json.containsKey('entrypoint')
+            ? SdkPresent(json['entrypoint'] as String?)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        readyState: json['readyState'] != null
+            ? SdkPresent((json['readyState'] != null
+                ? GetDeploymentResponseVariant2LambdasItemReadyState.fromJson(
+                    json['readyState'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        readyStateAt: json['readyStateAt'] != null
+            ? SdkPresent(((json['readyStateAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        output: ((json['output'] as List?)
+            ?.map((e) =>
+                GetDeploymentResponseVariant2LambdasItemOutputItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (entrypoint) {
-      SdkPresent<String?>(value: final value) => {'entrypoint': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (readyState) {
-      SdkPresent<GetDeploymentResponseVariant2LambdasItemReadyState>(value: final value) => {'readyState': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (readyStateAt) {
-      SdkPresent<double>(value: final value) => {'readyStateAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'output': output.map((item) => item.toJson()).toList(),
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (entrypoint) {
+          SdkPresent<String?>(value: final value) => {
+              'entrypoint': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (readyState) {
+          SdkPresent<GetDeploymentResponseVariant2LambdasItemReadyState>(
+            value: final value
+          ) =>
+            {
+              'readyState': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (readyStateAt) {
+          SdkPresent<double>(value: final value) => {
+              'readyStateAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'output': output.map((item) => item.toJson()).toList(),
+      };
 }

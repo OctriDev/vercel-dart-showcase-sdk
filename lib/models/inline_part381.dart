@@ -5,80 +5,103 @@ part of 'inline.dart';
 
 // Inline operation models (part 381)
 final class UpdateFlagResponseTypeName {
-
   final String value;
 
   const UpdateFlagResponseTypeName._(this.value);
 
-  factory UpdateFlagResponseTypeName.fromJson(String value) => UpdateFlagResponseTypeName._(value);
+  factory UpdateFlagResponseTypeName.fromJson(String value) =>
+      UpdateFlagResponseTypeName._(value);
 
   static const flag = UpdateFlagResponseTypeName._('flag');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateFlagResponseTypeName && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateFlagResponseTypeName && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateFlagResponseVariantsItemValueVariant4 {
-
   final bool value;
 
   const UpdateFlagResponseVariantsItemValueVariant4._(this.value);
 
-  factory UpdateFlagResponseVariantsItemValueVariant4.fromJson(bool value) => UpdateFlagResponseVariantsItemValueVariant4._(value);
+  factory UpdateFlagResponseVariantsItemValueVariant4.fromJson(bool value) =>
+      UpdateFlagResponseVariantsItemValueVariant4._(value);
 
   static const false_ = UpdateFlagResponseVariantsItemValueVariant4._(false);
   static const true_ = UpdateFlagResponseVariantsItemValueVariant4._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateFlagResponseVariantsItemValueVariant4 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateFlagResponseVariantsItemValueVariant4 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive {
-
   final bool value;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(this.value);
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(
+      this.value);
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive.fromJson(bool value) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(value);
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive.fromJson(
+          bool value) =>
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(value);
 
-  static const false_ = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(false);
-  static const true_ = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(true);
+  static const false_ =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(false);
+  static const true_ =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type {
   variant;
 
-  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type fromJson(String value) {
+  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'variant': return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type.variant;
-      default: throw ArgumentError('Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type: $value');
+      case 'variant':
+        return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type
+            .variant;
+      default:
+        throw ArgumentError(
+            'Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type.variant: return 'variant';
+      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant0Type
+            .variant:
+        return 'variant';
     }
   }
 
@@ -87,38 +110,55 @@ enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant
 }
 
 final class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType {
-
   final String value;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType._(this.value);
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType._(
+      this.value);
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType.fromJson(String value) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType._(value);
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType.fromJson(
+          String value) =>
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType
+          ._(value);
 
-  static const entity = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType._('entity');
+  static const entity =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType
+          ._('entity');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1BaseType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type {
   split;
 
-  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type fromJson(String value) {
+  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'split': return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type.split;
-      default: throw ArgumentError('Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type: $value');
+      case 'split':
+        return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type
+            .split;
+      default:
+        throw ArgumentError(
+            'Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type.split: return 'split';
+      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant1Type
+            .split:
+        return 'split';
     }
   }
 
@@ -127,38 +167,55 @@ enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant
 }
 
 final class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType {
-
   final String value;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType._(this.value);
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType._(
+      this.value);
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType.fromJson(String value) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType._(value);
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType.fromJson(
+          String value) =>
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType
+          ._(value);
 
-  static const entity = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType._('entity');
+  static const entity =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType
+          ._('entity');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2BaseType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type {
   rollout;
 
-  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type fromJson(String value) {
+  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type
+      fromJson(String value) {
     switch (value) {
-      case 'rollout': return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type.rollout;
-      default: throw ArgumentError('Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type: $value');
+      case 'rollout':
+        return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type
+            .rollout;
+      default:
+        throw ArgumentError(
+            'Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type.rollout: return 'rollout';
+      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant2Type
+            .rollout:
+        return 'rollout';
     }
   }
 
@@ -169,16 +226,23 @@ enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant
 enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type {
   experiment;
 
-  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type fromJson(String value) {
+  static ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type
+      fromJson(String value) {
     switch (value) {
-      case 'experiment': return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type.experiment;
-      default: throw ArgumentError('Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type: $value');
+      case 'experiment':
+        return ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type
+            .experiment;
+      default:
+        throw ArgumentError(
+            'Unknown ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type.experiment: return 'experiment';
+      case ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant3Type
+            .experiment:
+        return 'experiment';
     }
   }
 
@@ -187,105 +251,193 @@ enum ListFlagVersionsResponseVersionsItemDataEnvironmentsValueFallthroughVariant
 }
 
 final class ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType {
-
   final String value;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType._(this.value);
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType._(
+      this.value);
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType.fromJson(String value) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType._(value);
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType.fromJson(
+          String value) =>
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType
+          ._(value);
 
-  static const variant = ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType._('variant');
+  static const variant =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType
+          ._('variant');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListFlagVersionsResponseVersionsItemDataEnvironmentsValuePausedOutcomeType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive {
-
   final bool value;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(this.value);
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(
+      this.value);
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive.fromJson(bool value) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(value);
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive.fromJson(
+          bool value) =>
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(
+          value);
 
-  static const false_ = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(false);
-  static const true_ = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(true);
+  static const false_ =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(
+          false);
+  static const true_ =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueReuseActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp {
-
   final String value;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._(this.value);
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._(
+      this.value);
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp.fromJson(String value) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._(value);
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp.fromJson(
+          String value) =>
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._(value);
 
-  static const contains = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('!contains');
-  static const endswith = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('!endsWith');
-  static const eq = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('!eq');
-  static const ex = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('!ex');
-  static const oneof = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('!oneOf');
-  static const regex = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('!regex');
-  static const startswith = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('!startsWith');
-  static const after = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('after');
-  static const before = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('before');
-  static const contains2 = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('contains');
-  static const containsallof = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('containsAllOf');
-  static const containsanyof = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('containsAnyOf');
-  static const containsnoneof = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('containsNoneOf');
-  static const endswith2 = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('endsWith');
-  static const eq2 = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('eq');
-  static const ex2 = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('ex');
-  static const gt = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('gt');
-  static const gte = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('gte');
-  static const lt = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('lt');
-  static const lte = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('lte');
-  static const oneof2 = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('oneOf');
-  static const regex2 = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('regex');
-  static const startswith2 = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp._('startsWith');
+  static const contains =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('!contains');
+  static const endswith =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('!endsWith');
+  static const eq =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('!eq');
+  static const ex =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('!ex');
+  static const oneof =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('!oneOf');
+  static const regex =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('!regex');
+  static const startswith =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('!startsWith');
+  static const after =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('after');
+  static const before =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('before');
+  static const contains2 =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('contains');
+  static const containsallof =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('containsAllOf');
+  static const containsanyof =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('containsAnyOf');
+  static const containsnoneof =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('containsNoneOf');
+  static const endswith2 =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('endsWith');
+  static const eq2 =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('eq');
+  static const ex2 =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('ex');
+  static const gt =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('gt');
+  static const gte =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('gte');
+  static const lt =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('lt');
+  static const lte =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('lte');
+  static const oneof2 =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('oneOf');
+  static const regex2 =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('regex');
+  static const startswith2 =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp
+          ._('startsWith');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase {
-
   final bool value;
 
-  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(this.value);
+  const ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(
+      this.value);
 
-  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(bool value) => ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(value);
+  factory ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(
+          bool value) =>
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase
+          ._(value);
 
-  static const false_ = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(false);
-  static const true_ = ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(true);
+  static const false_ =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase
+          ._(false);
+  static const true_ =
+      ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListFlagVersionsResponseVersionsItemDataEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

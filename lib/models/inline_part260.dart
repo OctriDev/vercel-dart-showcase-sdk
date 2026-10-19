@@ -5,165 +5,225 @@ part of 'inline.dart';
 
 // Inline operation models (part 260)
 final class ReadAccessGroupResponseIsDsyncManaged {
-
   final bool value;
 
   const ReadAccessGroupResponseIsDsyncManaged._(this.value);
 
-  factory ReadAccessGroupResponseIsDsyncManaged.fromJson(bool value) => ReadAccessGroupResponseIsDsyncManaged._(value);
+  factory ReadAccessGroupResponseIsDsyncManaged.fromJson(bool value) =>
+      ReadAccessGroupResponseIsDsyncManaged._(value);
 
   static const false_ = ReadAccessGroupResponseIsDsyncManaged._(false);
   static const true_ = ReadAccessGroupResponseIsDsyncManaged._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ReadAccessGroupResponseIsDsyncManaged && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ReadAccessGroupResponseIsDsyncManaged && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ReadAccessGroupResponseTeamPermissionsItem {
-
   final String value;
 
   const ReadAccessGroupResponseTeamPermissionsItem._(this.value);
 
-  factory ReadAccessGroupResponseTeamPermissionsItem.fromJson(String value) => ReadAccessGroupResponseTeamPermissionsItem._(value);
+  factory ReadAccessGroupResponseTeamPermissionsItem.fromJson(String value) =>
+      ReadAccessGroupResponseTeamPermissionsItem._(value);
 
-  static const aigatewaybudgetmanager = ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayBudgetManager');
-  static const aigatewaycredits = ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayCredits');
-  static const aigatewaysettings = ReadAccessGroupResponseTeamPermissionsItem._('AiGatewaySettings');
-  static const aigatewaytranscriptsmanager = ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayTranscriptsManager');
-  static const aigatewaytranscriptsviewer = ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayTranscriptsViewer');
-  static const aigatewayuser = ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayUser');
-  static const connectormanager = ReadAccessGroupResponseTeamPermissionsItem._('ConnectorManager');
-  static const createproject = ReadAccessGroupResponseTeamPermissionsItem._('CreateProject');
-  static const envvariablemanager = ReadAccessGroupResponseTeamPermissionsItem._('EnvVariableManager');
-  static const environmentmanager = ReadAccessGroupResponseTeamPermissionsItem._('EnvironmentManager');
-  static const fullproductiondeployment = ReadAccessGroupResponseTeamPermissionsItem._('FullProductionDeployment');
-  static const integrationmanager = ReadAccessGroupResponseTeamPermissionsItem._('IntegrationManager');
-  static const orgadmin = ReadAccessGroupResponseTeamPermissionsItem._('OrgAdmin');
-  static const orgviewer = ReadAccessGroupResponseTeamPermissionsItem._('OrgViewer');
-  static const usageviewer = ReadAccessGroupResponseTeamPermissionsItem._('UsageViewer');
-  static const v0builder = ReadAccessGroupResponseTeamPermissionsItem._('V0Builder');
-  static const v0chatter = ReadAccessGroupResponseTeamPermissionsItem._('V0Chatter');
-  static const v0viewer = ReadAccessGroupResponseTeamPermissionsItem._('V0Viewer');
-  static const workflowdecryptor = ReadAccessGroupResponseTeamPermissionsItem._('WorkflowDecryptor');
+  static const aigatewaybudgetmanager =
+      ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayBudgetManager');
+  static const aigatewaycredits =
+      ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayCredits');
+  static const aigatewaysettings =
+      ReadAccessGroupResponseTeamPermissionsItem._('AiGatewaySettings');
+  static const aigatewaytranscriptsmanager =
+      ReadAccessGroupResponseTeamPermissionsItem._(
+          'AiGatewayTranscriptsManager');
+  static const aigatewaytranscriptsviewer =
+      ReadAccessGroupResponseTeamPermissionsItem._(
+          'AiGatewayTranscriptsViewer');
+  static const aigatewayuser =
+      ReadAccessGroupResponseTeamPermissionsItem._('AiGatewayUser');
+  static const connectormanager =
+      ReadAccessGroupResponseTeamPermissionsItem._('ConnectorManager');
+  static const createproject =
+      ReadAccessGroupResponseTeamPermissionsItem._('CreateProject');
+  static const envvariablemanager =
+      ReadAccessGroupResponseTeamPermissionsItem._('EnvVariableManager');
+  static const environmentmanager =
+      ReadAccessGroupResponseTeamPermissionsItem._('EnvironmentManager');
+  static const fullproductiondeployment =
+      ReadAccessGroupResponseTeamPermissionsItem._('FullProductionDeployment');
+  static const integrationmanager =
+      ReadAccessGroupResponseTeamPermissionsItem._('IntegrationManager');
+  static const orgadmin =
+      ReadAccessGroupResponseTeamPermissionsItem._('OrgAdmin');
+  static const orgviewer =
+      ReadAccessGroupResponseTeamPermissionsItem._('OrgViewer');
+  static const usageviewer =
+      ReadAccessGroupResponseTeamPermissionsItem._('UsageViewer');
+  static const v0builder =
+      ReadAccessGroupResponseTeamPermissionsItem._('V0Builder');
+  static const v0chatter =
+      ReadAccessGroupResponseTeamPermissionsItem._('V0Chatter');
+  static const v0viewer =
+      ReadAccessGroupResponseTeamPermissionsItem._('V0Viewer');
+  static const workflowdecryptor =
+      ReadAccessGroupResponseTeamPermissionsItem._('WorkflowDecryptor');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ReadAccessGroupResponseTeamPermissionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ReadAccessGroupResponseTeamPermissionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The project role that will be added to this Access Group. "null" will remove this project level role.
 final class UpdateAccessGroupRequestBodyProjectsItemRole {
-
   final String value;
 
   const UpdateAccessGroupRequestBodyProjectsItemRole._(this.value);
 
-  factory UpdateAccessGroupRequestBodyProjectsItemRole.fromJson(String value) => UpdateAccessGroupRequestBodyProjectsItemRole._(value);
+  factory UpdateAccessGroupRequestBodyProjectsItemRole.fromJson(String value) =>
+      UpdateAccessGroupRequestBodyProjectsItemRole._(value);
 
   static const admin = UpdateAccessGroupRequestBodyProjectsItemRole._('ADMIN');
-  static const projectViewer = UpdateAccessGroupRequestBodyProjectsItemRole._('PROJECT_VIEWER');
-  static const projectDeveloper = UpdateAccessGroupRequestBodyProjectsItemRole._('PROJECT_DEVELOPER');
+  static const projectViewer =
+      UpdateAccessGroupRequestBodyProjectsItemRole._('PROJECT_VIEWER');
+  static const projectDeveloper =
+      UpdateAccessGroupRequestBodyProjectsItemRole._('PROJECT_DEVELOPER');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateAccessGroupRequestBodyProjectsItemRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateAccessGroupRequestBodyProjectsItemRole &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateAccessGroupResponseEntitlementsItem {
-
   final String value;
 
   const UpdateAccessGroupResponseEntitlementsItem._(this.value);
 
-  factory UpdateAccessGroupResponseEntitlementsItem.fromJson(String value) => UpdateAccessGroupResponseEntitlementsItem._(value);
+  factory UpdateAccessGroupResponseEntitlementsItem.fromJson(String value) =>
+      UpdateAccessGroupResponseEntitlementsItem._(value);
 
   static const v0 = UpdateAccessGroupResponseEntitlementsItem._('v0');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateAccessGroupResponseEntitlementsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateAccessGroupResponseEntitlementsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListAccessGroupMembersResponseMembersItemTeamRole {
-
   final String value;
 
   const ListAccessGroupMembersResponseMembersItemTeamRole._(this.value);
 
-  factory ListAccessGroupMembersResponseMembersItemTeamRole.fromJson(String value) => ListAccessGroupMembersResponseMembersItemTeamRole._(value);
+  factory ListAccessGroupMembersResponseMembersItemTeamRole.fromJson(
+          String value) =>
+      ListAccessGroupMembersResponseMembersItemTeamRole._(value);
 
-  static const billing = ListAccessGroupMembersResponseMembersItemTeamRole._('BILLING');
-  static const contributor = ListAccessGroupMembersResponseMembersItemTeamRole._('CONTRIBUTOR');
-  static const developer = ListAccessGroupMembersResponseMembersItemTeamRole._('DEVELOPER');
-  static const member = ListAccessGroupMembersResponseMembersItemTeamRole._('MEMBER');
-  static const owner = ListAccessGroupMembersResponseMembersItemTeamRole._('OWNER');
-  static const security = ListAccessGroupMembersResponseMembersItemTeamRole._('SECURITY');
-  static const viewer = ListAccessGroupMembersResponseMembersItemTeamRole._('VIEWER');
-  static const viewerForPlus = ListAccessGroupMembersResponseMembersItemTeamRole._('VIEWER_FOR_PLUS');
+  static const billing =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('BILLING');
+  static const contributor =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('CONTRIBUTOR');
+  static const developer =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('DEVELOPER');
+  static const member =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('MEMBER');
+  static const owner =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('OWNER');
+  static const security =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('SECURITY');
+  static const viewer =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('VIEWER');
+  static const viewerForPlus =
+      ListAccessGroupMembersResponseMembersItemTeamRole._('VIEWER_FOR_PLUS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListAccessGroupMembersResponseMembersItemTeamRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListAccessGroupMembersResponseMembersItemTeamRole &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListAccessGroupProjectsResponseProjectsItemRole {
-
   final String value;
 
   const ListAccessGroupProjectsResponseProjectsItemRole._(this.value);
 
-  factory ListAccessGroupProjectsResponseProjectsItemRole.fromJson(String value) => ListAccessGroupProjectsResponseProjectsItemRole._(value);
+  factory ListAccessGroupProjectsResponseProjectsItemRole.fromJson(
+          String value) =>
+      ListAccessGroupProjectsResponseProjectsItemRole._(value);
 
-  static const admin = ListAccessGroupProjectsResponseProjectsItemRole._('ADMIN');
-  static const projectDeveloper = ListAccessGroupProjectsResponseProjectsItemRole._('PROJECT_DEVELOPER');
-  static const projectGuest = ListAccessGroupProjectsResponseProjectsItemRole._('PROJECT_GUEST');
-  static const projectViewer = ListAccessGroupProjectsResponseProjectsItemRole._('PROJECT_VIEWER');
+  static const admin =
+      ListAccessGroupProjectsResponseProjectsItemRole._('ADMIN');
+  static const projectDeveloper =
+      ListAccessGroupProjectsResponseProjectsItemRole._('PROJECT_DEVELOPER');
+  static const projectGuest =
+      ListAccessGroupProjectsResponseProjectsItemRole._('PROJECT_GUEST');
+  static const projectViewer =
+      ListAccessGroupProjectsResponseProjectsItemRole._('PROJECT_VIEWER');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListAccessGroupProjectsResponseProjectsItemRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListAccessGroupProjectsResponseProjectsItemRole &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of credits to purchase.
 final class BuyCreditsRequestBodyItemCreditType {
-
   final String value;
 
   const BuyCreditsRequestBodyItemCreditType._(this.value);
 
-  factory BuyCreditsRequestBodyItemCreditType.fromJson(String value) => BuyCreditsRequestBodyItemCreditType._(value);
+  factory BuyCreditsRequestBodyItemCreditType.fromJson(String value) =>
+      BuyCreditsRequestBodyItemCreditType._(value);
 
   static const v0 = BuyCreditsRequestBodyItemCreditType._('v0');
   static const gateway = BuyCreditsRequestBodyItemCreditType._('gateway');
@@ -171,121 +231,147 @@ final class BuyCreditsRequestBodyItemCreditType {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsRequestBodyItemCreditType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is BuyCreditsRequestBodyItemCreditType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of item to purchase.
 final class BuyCreditsRequestBodyItemType {
-
   final String value;
 
   const BuyCreditsRequestBodyItemType._(this.value);
 
-  factory BuyCreditsRequestBodyItemType.fromJson(String value) => BuyCreditsRequestBodyItemType._(value);
+  factory BuyCreditsRequestBodyItemType.fromJson(String value) =>
+      BuyCreditsRequestBodyItemType._(value);
 
   static const credits = BuyCreditsRequestBodyItemType._('credits');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsRequestBodyItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is BuyCreditsRequestBodyItemType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Currency used for billing (ISO 4217)
 final class ListBillingChargesResponseBillingCurrency {
-
   final String value;
 
   const ListBillingChargesResponseBillingCurrency._(this.value);
 
-  factory ListBillingChargesResponseBillingCurrency.fromJson(String value) => ListBillingChargesResponseBillingCurrency._(value);
+  factory ListBillingChargesResponseBillingCurrency.fromJson(String value) =>
+      ListBillingChargesResponseBillingCurrency._(value);
 
   static const usd = ListBillingChargesResponseBillingCurrency._('USD');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListBillingChargesResponseBillingCurrency && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListBillingChargesResponseBillingCurrency &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Classification of the charge
 final class ListBillingChargesResponseChargeCategory {
-
   final String value;
 
   const ListBillingChargesResponseChargeCategory._(this.value);
 
-  factory ListBillingChargesResponseChargeCategory.fromJson(String value) => ListBillingChargesResponseChargeCategory._(value);
+  factory ListBillingChargesResponseChargeCategory.fromJson(String value) =>
+      ListBillingChargesResponseChargeCategory._(value);
 
-  static const adjustment = ListBillingChargesResponseChargeCategory._('Adjustment');
+  static const adjustment =
+      ListBillingChargesResponseChargeCategory._('Adjustment');
   static const credit = ListBillingChargesResponseChargeCategory._('Credit');
-  static const purchase = ListBillingChargesResponseChargeCategory._('Purchase');
+  static const purchase =
+      ListBillingChargesResponseChargeCategory._('Purchase');
   static const tax = ListBillingChargesResponseChargeCategory._('Tax');
   static const usage = ListBillingChargesResponseChargeCategory._('Usage');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListBillingChargesResponseChargeCategory && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListBillingChargesResponseChargeCategory && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Pricing model used for the charge.
 final class ListBillingChargesResponsePricingCategory {
-
   final String value;
 
   const ListBillingChargesResponsePricingCategory._(this.value);
 
-  factory ListBillingChargesResponsePricingCategory.fromJson(String value) => ListBillingChargesResponsePricingCategory._(value);
+  factory ListBillingChargesResponsePricingCategory.fromJson(String value) =>
+      ListBillingChargesResponsePricingCategory._(value);
 
-  static const committed = ListBillingChargesResponsePricingCategory._('Committed');
-  static const dynamic_ = ListBillingChargesResponsePricingCategory._('Dynamic');
+  static const committed =
+      ListBillingChargesResponsePricingCategory._('Committed');
+  static const dynamic_ =
+      ListBillingChargesResponsePricingCategory._('Dynamic');
   static const other = ListBillingChargesResponsePricingCategory._('Other');
-  static const standard = ListBillingChargesResponsePricingCategory._('Standard');
+  static const standard =
+      ListBillingChargesResponsePricingCategory._('Standard');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListBillingChargesResponsePricingCategory && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListBillingChargesResponsePricingCategory &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListBillingChargesResponsePricingCurrency {
-
   final String value;
 
   const ListBillingChargesResponsePricingCurrency._(this.value);
 
-  factory ListBillingChargesResponsePricingCurrency.fromJson(String value) => ListBillingChargesResponsePricingCurrency._(value);
+  factory ListBillingChargesResponsePricingCurrency.fromJson(String value) =>
+      ListBillingChargesResponsePricingCurrency._(value);
 
   static const usd = ListBillingChargesResponsePricingCurrency._('USD');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListBillingChargesResponsePricingCurrency && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListBillingChargesResponsePricingCurrency &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

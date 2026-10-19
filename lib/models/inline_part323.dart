@@ -5,277 +5,378 @@ part of 'inline.dart';
 
 // Inline operation models (part 323)
 final class DeleteProjectAvatarResponseSecurityBotIdEnabled {
-
   final bool value;
 
   const DeleteProjectAvatarResponseSecurityBotIdEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseSecurityBotIdEnabled.fromJson(bool value) => DeleteProjectAvatarResponseSecurityBotIdEnabled._(value);
+  factory DeleteProjectAvatarResponseSecurityBotIdEnabled.fromJson(
+          bool value) =>
+      DeleteProjectAvatarResponseSecurityBotIdEnabled._(value);
 
-  static const false_ = DeleteProjectAvatarResponseSecurityBotIdEnabled._(false);
+  static const false_ =
+      DeleteProjectAvatarResponseSecurityBotIdEnabled._(false);
   static const true_ = DeleteProjectAvatarResponseSecurityBotIdEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityBotIdEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityBotIdEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityFirewallEnabled {
-
   final bool value;
 
   const DeleteProjectAvatarResponseSecurityFirewallEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseSecurityFirewallEnabled.fromJson(bool value) => DeleteProjectAvatarResponseSecurityFirewallEnabled._(value);
+  factory DeleteProjectAvatarResponseSecurityFirewallEnabled.fromJson(
+          bool value) =>
+      DeleteProjectAvatarResponseSecurityFirewallEnabled._(value);
 
-  static const false_ = DeleteProjectAvatarResponseSecurityFirewallEnabled._(false);
-  static const true_ = DeleteProjectAvatarResponseSecurityFirewallEnabled._(true);
+  static const false_ =
+      DeleteProjectAvatarResponseSecurityFirewallEnabled._(false);
+  static const true_ =
+      DeleteProjectAvatarResponseSecurityFirewallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityFirewallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityFirewallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled {
-
   final bool value;
 
   const DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled.fromJson(bool value) => DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled._(value);
+  factory DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled.fromJson(
+          bool value) =>
+      DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled._(value);
 
-  static const false_ = DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled._(false);
-  static const true_ = DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled._(true);
+  static const false_ =
+      DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled._(false);
+  static const true_ =
+      DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityFirewallSeawallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityJa3Enabled {
-
   final bool value;
 
   const DeleteProjectAvatarResponseSecurityJa3Enabled._(this.value);
 
-  factory DeleteProjectAvatarResponseSecurityJa3Enabled.fromJson(bool value) => DeleteProjectAvatarResponseSecurityJa3Enabled._(value);
+  factory DeleteProjectAvatarResponseSecurityJa3Enabled.fromJson(bool value) =>
+      DeleteProjectAvatarResponseSecurityJa3Enabled._(value);
 
   static const false_ = DeleteProjectAvatarResponseSecurityJa3Enabled._(false);
   static const true_ = DeleteProjectAvatarResponseSecurityJa3Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityJa3Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityJa3Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityJa4Enabled {
-
   final bool value;
 
   const DeleteProjectAvatarResponseSecurityJa4Enabled._(this.value);
 
-  factory DeleteProjectAvatarResponseSecurityJa4Enabled.fromJson(bool value) => DeleteProjectAvatarResponseSecurityJa4Enabled._(value);
+  factory DeleteProjectAvatarResponseSecurityJa4Enabled.fromJson(bool value) =>
+      DeleteProjectAvatarResponseSecurityJa4Enabled._(value);
 
   static const false_ = DeleteProjectAvatarResponseSecurityJa4Enabled._(false);
   static const true_ = DeleteProjectAvatarResponseSecurityJa4Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityJa4Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityJa4Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityLogHeadersVariant1 {
-
   final String value;
 
   const DeleteProjectAvatarResponseSecurityLogHeadersVariant1._(this.value);
 
-  factory DeleteProjectAvatarResponseSecurityLogHeadersVariant1.fromJson(String value) => DeleteProjectAvatarResponseSecurityLogHeadersVariant1._(value);
+  factory DeleteProjectAvatarResponseSecurityLogHeadersVariant1.fromJson(
+          String value) =>
+      DeleteProjectAvatarResponseSecurityLogHeadersVariant1._(value);
 
-  static const unknown = DeleteProjectAvatarResponseSecurityLogHeadersVariant1._('*');
+  static const unknown =
+      DeleteProjectAvatarResponseSecurityLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityLogHeadersVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityLogHeadersVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction {
-
   final String value;
 
-  const DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._(this.value);
+  const DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction.fromJson(String value) => DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._(value);
+  factory DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction.fromJson(
+          String value) =>
+      DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._(value);
 
-  static const challenge = DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._('challenge');
-  static const deny = DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._('deny');
-  static const log = DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._('log');
+  static const challenge =
+      DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._(
+          'challenge');
+  static const deny =
+      DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._('deny');
+  static const log =
+      DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityManagedRulesAiBotsAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive {
-
   final bool value;
 
-  const DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(this.value);
+  const DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive.fromJson(bool value) => DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(value);
+  factory DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive.fromJson(
+          bool value) =>
+      DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(value);
 
-  static const false_ = DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(false);
-  static const true_ = DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(true);
+  static const false_ =
+      DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(false);
+  static const true_ =
+      DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityManagedRulesAiBotsActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction {
-
   final String value;
 
-  const DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._(this.value);
+  const DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction.fromJson(String value) => DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._(value);
+  factory DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction.fromJson(
+          String value) =>
+      DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._(value);
 
-  static const challenge = DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._('challenge');
-  static const deny = DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._('deny');
-  static const log = DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._('log');
+  static const challenge =
+      DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._(
+          'challenge');
+  static const deny =
+      DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._('deny');
+  static const log =
+      DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityManagedRulesBotFilterAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive {
-
   final bool value;
 
-  const DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(this.value);
+  const DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive.fromJson(bool value) => DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(value);
+  factory DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive.fromJson(
+          bool value) =>
+      DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(value);
 
-  static const false_ = DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(false);
-  static const true_ = DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(true);
+  static const false_ =
+      DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(false);
+  static const true_ =
+      DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityManagedRulesBotFilterActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction {
-
   final String value;
 
-  const DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._(this.value);
+  const DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction.fromJson(String value) => DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._(value);
+  factory DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction.fromJson(
+          String value) =>
+      DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._(value);
 
-  static const challenge = DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._('challenge');
-  static const deny = DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._('deny');
-  static const log = DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._('log');
+  static const challenge =
+      DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._('challenge');
+  static const deny =
+      DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._('deny');
+  static const log =
+      DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityManagedRulesOwaspAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive {
-
   final bool value;
 
-  const DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(this.value);
+  const DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive.fromJson(bool value) => DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(value);
+  factory DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive.fromJson(
+          bool value) =>
+      DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(value);
 
-  static const false_ = DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(false);
-  static const true_ = DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(true);
+  static const false_ =
+      DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(false);
+  static const true_ =
+      DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is DeleteProjectAvatarResponseSecurityManagedRulesOwaspActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction {
-
   final String value;
 
-  const DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(this.value);
+  const DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+      this.value);
 
-  factory DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction.fromJson(String value) => DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(value);
+  factory DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction.fromJson(
+          String value) =>
+      DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          value);
 
-  static const challenge = DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._('challenge');
-  static const deny = DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._('deny');
-  static const log = DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._('log');
+  static const challenge =
+      DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          'challenge');
+  static const deny =
+      DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          'deny');
+  static const log =
+      DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is DeleteProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

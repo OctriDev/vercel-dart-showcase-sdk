@@ -11,19 +11,26 @@ class UpdateDomainAutoRenewRequestBody {
 
   const UpdateDomainAutoRenewRequestBody({required this.autoRenew});
 
-  UpdateDomainAutoRenewRequestBody Function({bool autoRenew}) get copyWith => _copyWith;
+  UpdateDomainAutoRenewRequestBody Function({bool autoRenew}) get copyWith =>
+      _copyWith;
 
-  UpdateDomainAutoRenewRequestBody _copyWith({Object? autoRenew = sdkOmittedValue}) => UpdateDomainAutoRenewRequestBody(
-    autoRenew: identical(autoRenew, sdkOmittedValue) ? this.autoRenew : autoRenew as bool,
-  );
+  UpdateDomainAutoRenewRequestBody _copyWith(
+          {Object? autoRenew = sdkOmittedValue}) =>
+      UpdateDomainAutoRenewRequestBody(
+        autoRenew: identical(autoRenew, sdkOmittedValue)
+            ? this.autoRenew
+            : autoRenew as bool,
+      );
 
-  factory UpdateDomainAutoRenewRequestBody.fromJson(Map<String, dynamic> json) => UpdateDomainAutoRenewRequestBody(
-    autoRenew: (json['autoRenew'] as bool?)!,
-  );
+  factory UpdateDomainAutoRenewRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDomainAutoRenewRequestBody(
+        autoRenew: (json['autoRenew'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'autoRenew': autoRenew,
-  };
+        'autoRenew': autoRenew,
+      };
 }
 
 class UpdateDomainNameserversRequestBody {
@@ -33,98 +40,178 @@ class UpdateDomainNameserversRequestBody {
 
   const UpdateDomainNameserversRequestBody({required this.nameservers});
 
-  UpdateDomainNameserversRequestBody Function({List<String> nameservers}) get copyWith => _copyWith;
+  UpdateDomainNameserversRequestBody Function({List<String> nameservers})
+      get copyWith => _copyWith;
 
-  UpdateDomainNameserversRequestBody _copyWith({Object? nameservers = sdkOmittedValue}) => UpdateDomainNameserversRequestBody(
-    nameservers: identical(nameservers, sdkOmittedValue) ? this.nameservers : nameservers as List<String>,
-  );
+  UpdateDomainNameserversRequestBody _copyWith(
+          {Object? nameservers = sdkOmittedValue}) =>
+      UpdateDomainNameserversRequestBody(
+        nameservers: identical(nameservers, sdkOmittedValue)
+            ? this.nameservers
+            : nameservers as List<String>,
+      );
 
-  factory UpdateDomainNameserversRequestBody.fromJson(Map<String, dynamic> json) => UpdateDomainNameserversRequestBody(
-    nameservers: ((json['nameservers'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory UpdateDomainNameserversRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateDomainNameserversRequestBody(
+        nameservers:
+            ((json['nameservers'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'nameservers': nameservers,
-  };
+        'nameservers': nameservers,
+      };
 }
 
 class GetOrderResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A valid order ID
   final String orderId;
   final List<GetOrderResponseDomainsItem> domains;
   final GetOrderResponseStatus status;
+
   /// Typed representation of the `GetOrderResponseError` API schema.
   final SdkOptional<GetOrderResponseError> error;
 
-  const GetOrderResponse({required this.orderId, required this.domains, required this.status, this.error = const SdkOmitted()});
+  const GetOrderResponse(
+      {required this.orderId,
+      required this.domains,
+      required this.status,
+      this.error = const SdkOmitted()});
 
-  GetOrderResponse Function({String orderId, List<GetOrderResponseDomainsItem> domains, GetOrderResponseStatus status, SdkOptional<GetOrderResponseError> error}) get copyWith => _copyWith;
+  GetOrderResponse Function(
+      {String orderId,
+      List<GetOrderResponseDomainsItem> domains,
+      GetOrderResponseStatus status,
+      SdkOptional<GetOrderResponseError> error}) get copyWith => _copyWith;
 
-  GetOrderResponse _copyWith({Object? orderId = sdkOmittedValue, Object? domains = sdkOmittedValue, Object? status = sdkOmittedValue, Object? error = sdkOmittedValue}) => GetOrderResponse(
-    orderId: identical(orderId, sdkOmittedValue) ? this.orderId : orderId as String,
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as List<GetOrderResponseDomainsItem>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as GetOrderResponseStatus,
-    error: identical(error, sdkOmittedValue) ? this.error : error as SdkOptional<GetOrderResponseError>,
-  );
+  GetOrderResponse _copyWith(
+          {Object? orderId = sdkOmittedValue,
+          Object? domains = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? error = sdkOmittedValue}) =>
+      GetOrderResponse(
+        orderId: identical(orderId, sdkOmittedValue)
+            ? this.orderId
+            : orderId as String,
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as List<GetOrderResponseDomainsItem>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as GetOrderResponseStatus,
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as SdkOptional<GetOrderResponseError>,
+      );
 
-  factory GetOrderResponse.fromJson(Map<String, dynamic> json) => GetOrderResponse(
-    orderId: (json['orderId'] as String?)!,
-    domains: ((json['domains'] as List?)?.map((e) => GetOrderResponseDomainsItem.fromJson(e)).toList())!,
-    status: (json['status'] != null ? GetOrderResponseStatus.fromJson(json['status'] as String) : null)!,
-    error: json['error'] != null ? SdkPresent((json['error'] != null ? GetOrderResponseError.fromJson(json['error']) : null)!) : const SdkOmitted(),
-  );
+  factory GetOrderResponse.fromJson(Map<String, dynamic> json) =>
+      GetOrderResponse(
+        orderId: (json['orderId'] as String?)!,
+        domains: ((json['domains'] as List?)
+            ?.map((e) => GetOrderResponseDomainsItem.fromJson(e))
+            .toList())!,
+        status: (json['status'] != null
+            ? GetOrderResponseStatus.fromJson(json['status'] as String)
+            : null)!,
+        error: json['error'] != null
+            ? SdkPresent((json['error'] != null
+                ? GetOrderResponseError.fromJson(json['error'])
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'orderId': orderId,
-    'domains': domains.map((item) => item.toJson()).toList(),
-    'status': status.toJson(),
-    ...switch (error) {
-      SdkPresent<GetOrderResponseError>(value: final value) => {'error': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'orderId': orderId,
+        'domains': domains.map((item) => item.toJson()).toList(),
+        'status': status.toJson(),
+        ...switch (error) {
+          SdkPresent<GetOrderResponseError>(value: final value) => {
+              'error': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetConfigurableLogDrainResponseProjectsMetadataItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetConfigurableLogDrainResponseProjectsMetadataItemFramework?> framework;
+  final SdkOptional<
+      GetConfigurableLogDrainResponseProjectsMetadataItemFramework?> framework;
   final String id;
   final SdkOptional<String> latestDeployment;
   final String name;
 
-  const GetConfigurableLogDrainResponseProjectsMetadataItem({this.framework = const SdkOmitted(), required this.id, this.latestDeployment = const SdkOmitted(), required this.name});
+  const GetConfigurableLogDrainResponseProjectsMetadataItem(
+      {this.framework = const SdkOmitted(),
+      required this.id,
+      this.latestDeployment = const SdkOmitted(),
+      required this.name});
 
-  GetConfigurableLogDrainResponseProjectsMetadataItem Function({SdkOptional<GetConfigurableLogDrainResponseProjectsMetadataItemFramework?> framework, String id, SdkOptional<String> latestDeployment, String name}) get copyWith => _copyWith;
+  GetConfigurableLogDrainResponseProjectsMetadataItem Function(
+      {SdkOptional<
+              GetConfigurableLogDrainResponseProjectsMetadataItemFramework?>
+          framework,
+      String id,
+      SdkOptional<String> latestDeployment,
+      String name}) get copyWith => _copyWith;
 
-  GetConfigurableLogDrainResponseProjectsMetadataItem _copyWith({Object? framework = sdkOmittedValue, Object? id = sdkOmittedValue, Object? latestDeployment = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetConfigurableLogDrainResponseProjectsMetadataItem(
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<GetConfigurableLogDrainResponseProjectsMetadataItemFramework?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    latestDeployment: identical(latestDeployment, sdkOmittedValue) ? this.latestDeployment : latestDeployment as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  GetConfigurableLogDrainResponseProjectsMetadataItem _copyWith(
+          {Object? framework = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? latestDeployment = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      GetConfigurableLogDrainResponseProjectsMetadataItem(
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<
+                GetConfigurableLogDrainResponseProjectsMetadataItemFramework?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        latestDeployment: identical(latestDeployment, sdkOmittedValue)
+            ? this.latestDeployment
+            : latestDeployment as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory GetConfigurableLogDrainResponseProjectsMetadataItem.fromJson(Map<String, dynamic> json) => GetConfigurableLogDrainResponseProjectsMetadataItem(
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? GetConfigurableLogDrainResponseProjectsMetadataItemFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    latestDeployment: json['latestDeployment'] != null ? SdkPresent((json['latestDeployment'] as String?)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-  );
+  factory GetConfigurableLogDrainResponseProjectsMetadataItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurableLogDrainResponseProjectsMetadataItem(
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] != null
+                ? GetConfigurableLogDrainResponseProjectsMetadataItemFramework
+                    .fromJson(json['framework'] as String)
+                : null)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        latestDeployment: json['latestDeployment'] != null
+            ? SdkPresent((json['latestDeployment'] as String?)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (framework) {
-      SdkPresent<GetConfigurableLogDrainResponseProjectsMetadataItemFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (latestDeployment) {
-      SdkPresent<String>(value: final value) => {'latestDeployment': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-  };
+        ...switch (framework) {
+          SdkPresent<
+                GetConfigurableLogDrainResponseProjectsMetadataItemFramework?>(
+            value: final value
+          ) =>
+            {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (latestDeployment) {
+          SdkPresent<String>(value: final value) => {
+              'latestDeployment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+      };
 }
 
 class GetConfigurableLogDrainResponse {
@@ -136,99 +223,210 @@ class GetConfigurableLogDrainResponse {
   final SdkOptional<String> integrationConfigurationUri;
   final SdkOptional<String> integrationIcon;
   final SdkOptional<String> integrationWebsite;
-  final SdkOptional<List<GetConfigurableLogDrainResponseProjectsMetadataItem>?> projectsMetadata;
+  final SdkOptional<List<GetConfigurableLogDrainResponseProjectsMetadataItem>?>
+      projectsMetadata;
 
-  const GetConfigurableLogDrainResponse({this.clientId = const SdkOmitted(), this.configurationId = const SdkOmitted(), required this.createdFrom, this.integrationConfigurationUri = const SdkOmitted(), this.integrationIcon = const SdkOmitted(), this.integrationWebsite = const SdkOmitted(), this.projectsMetadata = const SdkOmitted()});
+  const GetConfigurableLogDrainResponse(
+      {this.clientId = const SdkOmitted(),
+      this.configurationId = const SdkOmitted(),
+      required this.createdFrom,
+      this.integrationConfigurationUri = const SdkOmitted(),
+      this.integrationIcon = const SdkOmitted(),
+      this.integrationWebsite = const SdkOmitted(),
+      this.projectsMetadata = const SdkOmitted()});
 
-  GetConfigurableLogDrainResponse Function({SdkOptional<String> clientId, SdkOptional<String> configurationId, String createdFrom, SdkOptional<String> integrationConfigurationUri, SdkOptional<String> integrationIcon, SdkOptional<String> integrationWebsite, SdkOptional<List<GetConfigurableLogDrainResponseProjectsMetadataItem>?> projectsMetadata}) get copyWith => _copyWith;
+  GetConfigurableLogDrainResponse Function(
+      {SdkOptional<String> clientId,
+      SdkOptional<String> configurationId,
+      String createdFrom,
+      SdkOptional<String> integrationConfigurationUri,
+      SdkOptional<String> integrationIcon,
+      SdkOptional<String> integrationWebsite,
+      SdkOptional<List<GetConfigurableLogDrainResponseProjectsMetadataItem>?>
+          projectsMetadata}) get copyWith => _copyWith;
 
-  GetConfigurableLogDrainResponse _copyWith({Object? clientId = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? createdFrom = sdkOmittedValue, Object? integrationConfigurationUri = sdkOmittedValue, Object? integrationIcon = sdkOmittedValue, Object? integrationWebsite = sdkOmittedValue, Object? projectsMetadata = sdkOmittedValue}) => GetConfigurableLogDrainResponse(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String>,
-    createdFrom: identical(createdFrom, sdkOmittedValue) ? this.createdFrom : createdFrom as String,
-    integrationConfigurationUri: identical(integrationConfigurationUri, sdkOmittedValue) ? this.integrationConfigurationUri : integrationConfigurationUri as SdkOptional<String>,
-    integrationIcon: identical(integrationIcon, sdkOmittedValue) ? this.integrationIcon : integrationIcon as SdkOptional<String>,
-    integrationWebsite: identical(integrationWebsite, sdkOmittedValue) ? this.integrationWebsite : integrationWebsite as SdkOptional<String>,
-    projectsMetadata: identical(projectsMetadata, sdkOmittedValue) ? this.projectsMetadata : projectsMetadata as SdkOptional<List<GetConfigurableLogDrainResponseProjectsMetadataItem>?>,
-  );
+  GetConfigurableLogDrainResponse _copyWith(
+          {Object? clientId = sdkOmittedValue,
+          Object? configurationId = sdkOmittedValue,
+          Object? createdFrom = sdkOmittedValue,
+          Object? integrationConfigurationUri = sdkOmittedValue,
+          Object? integrationIcon = sdkOmittedValue,
+          Object? integrationWebsite = sdkOmittedValue,
+          Object? projectsMetadata = sdkOmittedValue}) =>
+      GetConfigurableLogDrainResponse(
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as SdkOptional<String>,
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as SdkOptional<String>,
+        createdFrom: identical(createdFrom, sdkOmittedValue)
+            ? this.createdFrom
+            : createdFrom as String,
+        integrationConfigurationUri:
+            identical(integrationConfigurationUri, sdkOmittedValue)
+                ? this.integrationConfigurationUri
+                : integrationConfigurationUri as SdkOptional<String>,
+        integrationIcon: identical(integrationIcon, sdkOmittedValue)
+            ? this.integrationIcon
+            : integrationIcon as SdkOptional<String>,
+        integrationWebsite: identical(integrationWebsite, sdkOmittedValue)
+            ? this.integrationWebsite
+            : integrationWebsite as SdkOptional<String>,
+        projectsMetadata: identical(projectsMetadata, sdkOmittedValue)
+            ? this.projectsMetadata
+            : projectsMetadata as SdkOptional<
+                List<GetConfigurableLogDrainResponseProjectsMetadataItem>?>,
+      );
 
-  factory GetConfigurableLogDrainResponse.fromJson(Map<String, dynamic> json) => GetConfigurableLogDrainResponse(
-    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
-    configurationId: json['configurationId'] != null ? SdkPresent((json['configurationId'] as String?)!) : const SdkOmitted(),
-    createdFrom: (json['createdFrom'] as String?)!,
-    integrationConfigurationUri: json['integrationConfigurationUri'] != null ? SdkPresent((json['integrationConfigurationUri'] as String?)!) : const SdkOmitted(),
-    integrationIcon: json['integrationIcon'] != null ? SdkPresent((json['integrationIcon'] as String?)!) : const SdkOmitted(),
-    integrationWebsite: json['integrationWebsite'] != null ? SdkPresent((json['integrationWebsite'] as String?)!) : const SdkOmitted(),
-    projectsMetadata: json.containsKey('projectsMetadata') ? SdkPresent((json['projectsMetadata'] as List?)?.map((e) => GetConfigurableLogDrainResponseProjectsMetadataItem.fromJson(e as Map<String, dynamic>)).toList()) : const SdkOmitted(),
-  );
+  factory GetConfigurableLogDrainResponse.fromJson(Map<String, dynamic> json) =>
+      GetConfigurableLogDrainResponse(
+        clientId: json['clientId'] != null
+            ? SdkPresent((json['clientId'] as String?)!)
+            : const SdkOmitted(),
+        configurationId: json['configurationId'] != null
+            ? SdkPresent((json['configurationId'] as String?)!)
+            : const SdkOmitted(),
+        createdFrom: (json['createdFrom'] as String?)!,
+        integrationConfigurationUri: json['integrationConfigurationUri'] != null
+            ? SdkPresent((json['integrationConfigurationUri'] as String?)!)
+            : const SdkOmitted(),
+        integrationIcon: json['integrationIcon'] != null
+            ? SdkPresent((json['integrationIcon'] as String?)!)
+            : const SdkOmitted(),
+        integrationWebsite: json['integrationWebsite'] != null
+            ? SdkPresent((json['integrationWebsite'] as String?)!)
+            : const SdkOmitted(),
+        projectsMetadata: json.containsKey('projectsMetadata')
+            ? SdkPresent((json['projectsMetadata'] as List?)
+                ?.map((e) => GetConfigurableLogDrainResponseProjectsMetadataItem
+                    .fromJson(e as Map<String, dynamic>))
+                .toList())
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'clientId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (configurationId) {
-      SdkPresent<String>(value: final value) => {'configurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdFrom': createdFrom,
-    ...switch (integrationConfigurationUri) {
-      SdkPresent<String>(value: final value) => {'integrationConfigurationUri': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (integrationIcon) {
-      SdkPresent<String>(value: final value) => {'integrationIcon': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (integrationWebsite) {
-      SdkPresent<String>(value: final value) => {'integrationWebsite': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectsMetadata) {
-      SdkPresent<List<GetConfigurableLogDrainResponseProjectsMetadataItem>?>(value: final value) => {'projectsMetadata': value?.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'clientId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (configurationId) {
+          SdkPresent<String>(value: final value) => {
+              'configurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdFrom': createdFrom,
+        ...switch (integrationConfigurationUri) {
+          SdkPresent<String>(value: final value) => {
+              'integrationConfigurationUri': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (integrationIcon) {
+          SdkPresent<String>(value: final value) => {
+              'integrationIcon': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (integrationWebsite) {
+          SdkPresent<String>(value: final value) => {
+              'integrationWebsite': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectsMetadata) {
+          SdkPresent<
+                List<GetConfigurableLogDrainResponseProjectsMetadataItem>?>(
+            value: final value
+          ) =>
+            {
+              'projectsMetadata': value?.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListLogDrainsResponseVariant0ItemProjectsMetadataItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?> framework;
+  final SdkOptional<
+          ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?>
+      framework;
   final String id;
   final SdkOptional<String> latestDeployment;
   final String name;
 
-  const ListLogDrainsResponseVariant0ItemProjectsMetadataItem({this.framework = const SdkOmitted(), required this.id, this.latestDeployment = const SdkOmitted(), required this.name});
+  const ListLogDrainsResponseVariant0ItemProjectsMetadataItem(
+      {this.framework = const SdkOmitted(),
+      required this.id,
+      this.latestDeployment = const SdkOmitted(),
+      required this.name});
 
-  ListLogDrainsResponseVariant0ItemProjectsMetadataItem Function({SdkOptional<ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?> framework, String id, SdkOptional<String> latestDeployment, String name}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant0ItemProjectsMetadataItem Function(
+      {SdkOptional<
+              ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?>
+          framework,
+      String id,
+      SdkOptional<String> latestDeployment,
+      String name}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant0ItemProjectsMetadataItem _copyWith({Object? framework = sdkOmittedValue, Object? id = sdkOmittedValue, Object? latestDeployment = sdkOmittedValue, Object? name = sdkOmittedValue}) => ListLogDrainsResponseVariant0ItemProjectsMetadataItem(
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    latestDeployment: identical(latestDeployment, sdkOmittedValue) ? this.latestDeployment : latestDeployment as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  ListLogDrainsResponseVariant0ItemProjectsMetadataItem _copyWith(
+          {Object? framework = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? latestDeployment = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      ListLogDrainsResponseVariant0ItemProjectsMetadataItem(
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<
+                ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        latestDeployment: identical(latestDeployment, sdkOmittedValue)
+            ? this.latestDeployment
+            : latestDeployment as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory ListLogDrainsResponseVariant0ItemProjectsMetadataItem.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant0ItemProjectsMetadataItem(
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    latestDeployment: json['latestDeployment'] != null ? SdkPresent((json['latestDeployment'] as String?)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-  );
+  factory ListLogDrainsResponseVariant0ItemProjectsMetadataItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant0ItemProjectsMetadataItem(
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] != null
+                ? ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework
+                    .fromJson(json['framework'] as String)
+                : null)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        latestDeployment: json['latestDeployment'] != null
+            ? SdkPresent((json['latestDeployment'] as String?)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (framework) {
-      SdkPresent<ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (latestDeployment) {
-      SdkPresent<String>(value: final value) => {'latestDeployment': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-  };
+        ...switch (framework) {
+          SdkPresent<
+                ListLogDrainsResponseVariant0ItemProjectsMetadataItemFramework?>(
+            value: final value
+          ) =>
+            {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (latestDeployment) {
+          SdkPresent<String>(value: final value) => {
+              'latestDeployment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+      };
 }
 
 class ListLogDrainsResponseVariant0Item {
@@ -240,57 +438,132 @@ class ListLogDrainsResponseVariant0Item {
   final SdkOptional<String> integrationConfigurationUri;
   final SdkOptional<String> integrationIcon;
   final SdkOptional<String> integrationWebsite;
-  final SdkOptional<List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?> projectsMetadata;
+  final SdkOptional<
+          List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?>
+      projectsMetadata;
 
-  const ListLogDrainsResponseVariant0Item({this.clientId = const SdkOmitted(), this.configurationId = const SdkOmitted(), required this.createdFrom, this.integrationConfigurationUri = const SdkOmitted(), this.integrationIcon = const SdkOmitted(), this.integrationWebsite = const SdkOmitted(), this.projectsMetadata = const SdkOmitted()});
+  const ListLogDrainsResponseVariant0Item(
+      {this.clientId = const SdkOmitted(),
+      this.configurationId = const SdkOmitted(),
+      required this.createdFrom,
+      this.integrationConfigurationUri = const SdkOmitted(),
+      this.integrationIcon = const SdkOmitted(),
+      this.integrationWebsite = const SdkOmitted(),
+      this.projectsMetadata = const SdkOmitted()});
 
-  ListLogDrainsResponseVariant0Item Function({SdkOptional<String> clientId, SdkOptional<String> configurationId, String createdFrom, SdkOptional<String> integrationConfigurationUri, SdkOptional<String> integrationIcon, SdkOptional<String> integrationWebsite, SdkOptional<List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?> projectsMetadata}) get copyWith => _copyWith;
+  ListLogDrainsResponseVariant0Item Function(
+      {SdkOptional<String> clientId,
+      SdkOptional<String> configurationId,
+      String createdFrom,
+      SdkOptional<String> integrationConfigurationUri,
+      SdkOptional<String> integrationIcon,
+      SdkOptional<String> integrationWebsite,
+      SdkOptional<List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?>
+          projectsMetadata}) get copyWith => _copyWith;
 
-  ListLogDrainsResponseVariant0Item _copyWith({Object? clientId = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? createdFrom = sdkOmittedValue, Object? integrationConfigurationUri = sdkOmittedValue, Object? integrationIcon = sdkOmittedValue, Object? integrationWebsite = sdkOmittedValue, Object? projectsMetadata = sdkOmittedValue}) => ListLogDrainsResponseVariant0Item(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String>,
-    createdFrom: identical(createdFrom, sdkOmittedValue) ? this.createdFrom : createdFrom as String,
-    integrationConfigurationUri: identical(integrationConfigurationUri, sdkOmittedValue) ? this.integrationConfigurationUri : integrationConfigurationUri as SdkOptional<String>,
-    integrationIcon: identical(integrationIcon, sdkOmittedValue) ? this.integrationIcon : integrationIcon as SdkOptional<String>,
-    integrationWebsite: identical(integrationWebsite, sdkOmittedValue) ? this.integrationWebsite : integrationWebsite as SdkOptional<String>,
-    projectsMetadata: identical(projectsMetadata, sdkOmittedValue) ? this.projectsMetadata : projectsMetadata as SdkOptional<List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?>,
-  );
+  ListLogDrainsResponseVariant0Item _copyWith(
+          {Object? clientId = sdkOmittedValue,
+          Object? configurationId = sdkOmittedValue,
+          Object? createdFrom = sdkOmittedValue,
+          Object? integrationConfigurationUri = sdkOmittedValue,
+          Object? integrationIcon = sdkOmittedValue,
+          Object? integrationWebsite = sdkOmittedValue,
+          Object? projectsMetadata = sdkOmittedValue}) =>
+      ListLogDrainsResponseVariant0Item(
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as SdkOptional<String>,
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as SdkOptional<String>,
+        createdFrom: identical(createdFrom, sdkOmittedValue)
+            ? this.createdFrom
+            : createdFrom as String,
+        integrationConfigurationUri:
+            identical(integrationConfigurationUri, sdkOmittedValue)
+                ? this.integrationConfigurationUri
+                : integrationConfigurationUri as SdkOptional<String>,
+        integrationIcon: identical(integrationIcon, sdkOmittedValue)
+            ? this.integrationIcon
+            : integrationIcon as SdkOptional<String>,
+        integrationWebsite: identical(integrationWebsite, sdkOmittedValue)
+            ? this.integrationWebsite
+            : integrationWebsite as SdkOptional<String>,
+        projectsMetadata: identical(projectsMetadata, sdkOmittedValue)
+            ? this.projectsMetadata
+            : projectsMetadata as SdkOptional<
+                List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?>,
+      );
 
-  factory ListLogDrainsResponseVariant0Item.fromJson(Map<String, dynamic> json) => ListLogDrainsResponseVariant0Item(
-    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
-    configurationId: json['configurationId'] != null ? SdkPresent((json['configurationId'] as String?)!) : const SdkOmitted(),
-    createdFrom: (json['createdFrom'] as String?)!,
-    integrationConfigurationUri: json['integrationConfigurationUri'] != null ? SdkPresent((json['integrationConfigurationUri'] as String?)!) : const SdkOmitted(),
-    integrationIcon: json['integrationIcon'] != null ? SdkPresent((json['integrationIcon'] as String?)!) : const SdkOmitted(),
-    integrationWebsite: json['integrationWebsite'] != null ? SdkPresent((json['integrationWebsite'] as String?)!) : const SdkOmitted(),
-    projectsMetadata: json.containsKey('projectsMetadata') ? SdkPresent((json['projectsMetadata'] as List?)?.map((e) => ListLogDrainsResponseVariant0ItemProjectsMetadataItem.fromJson(e as Map<String, dynamic>)).toList()) : const SdkOmitted(),
-  );
+  factory ListLogDrainsResponseVariant0Item.fromJson(
+          Map<String, dynamic> json) =>
+      ListLogDrainsResponseVariant0Item(
+        clientId: json['clientId'] != null
+            ? SdkPresent((json['clientId'] as String?)!)
+            : const SdkOmitted(),
+        configurationId: json['configurationId'] != null
+            ? SdkPresent((json['configurationId'] as String?)!)
+            : const SdkOmitted(),
+        createdFrom: (json['createdFrom'] as String?)!,
+        integrationConfigurationUri: json['integrationConfigurationUri'] != null
+            ? SdkPresent((json['integrationConfigurationUri'] as String?)!)
+            : const SdkOmitted(),
+        integrationIcon: json['integrationIcon'] != null
+            ? SdkPresent((json['integrationIcon'] as String?)!)
+            : const SdkOmitted(),
+        integrationWebsite: json['integrationWebsite'] != null
+            ? SdkPresent((json['integrationWebsite'] as String?)!)
+            : const SdkOmitted(),
+        projectsMetadata: json.containsKey('projectsMetadata')
+            ? SdkPresent((json['projectsMetadata'] as List?)
+                ?.map((e) =>
+                    ListLogDrainsResponseVariant0ItemProjectsMetadataItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'clientId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (configurationId) {
-      SdkPresent<String>(value: final value) => {'configurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdFrom': createdFrom,
-    ...switch (integrationConfigurationUri) {
-      SdkPresent<String>(value: final value) => {'integrationConfigurationUri': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (integrationIcon) {
-      SdkPresent<String>(value: final value) => {'integrationIcon': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (integrationWebsite) {
-      SdkPresent<String>(value: final value) => {'integrationWebsite': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectsMetadata) {
-      SdkPresent<List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?>(value: final value) => {'projectsMetadata': value?.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'clientId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (configurationId) {
+          SdkPresent<String>(value: final value) => {
+              'configurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdFrom': createdFrom,
+        ...switch (integrationConfigurationUri) {
+          SdkPresent<String>(value: final value) => {
+              'integrationConfigurationUri': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (integrationIcon) {
+          SdkPresent<String>(value: final value) => {
+              'integrationIcon': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (integrationWebsite) {
+          SdkPresent<String>(value: final value) => {
+              'integrationWebsite': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectsMetadata) {
+          SdkPresent<
+                List<ListLogDrainsResponseVariant0ItemProjectsMetadataItem>?>(
+            value: final value
+          ) =>
+            {
+              'projectsMetadata': value?.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -26,11 +26,11 @@ Future<SignKmsMessageResponse> signKmsMessage(ClientConfig config,
           body: {'message': message},
           decoder: SdkResponseDecoder.json,
           operationId: 'signKmsMessage',
-          fromJsonRaw: (value) => SignKmsMessageResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              SignKmsMessageResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Signs a JWT with an issuer's active KMS signing key. Authenticate with a Vercel OIDC token in the `Authorization` header, and ensure the issuer's policies allow the workload to sign. You can provide claims and additional token headers, or omit them to sign a token with default settings.
 ///
@@ -56,11 +56,11 @@ Future<SignKmsTokenResponse> signKmsToken(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'signKmsToken',
-          fromJsonRaw: (value) => SignKmsTokenResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              SignKmsTokenResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists KMS issuers belonging to the authenticated user's team. Use `limit` to control the page size and `next` to continue from a previous page; `teamId` or `slug` can scope the request to a team.
 ///
@@ -87,18 +87,22 @@ Future<ListKmsIssuersResponse> listKmsIssuers(ClientConfig config,
   return (await sdkRequest<ListKmsIssuersResponse>('GET', '/v1/kms/issuers',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'next': SdkQueryValue(SdkUtils.unwrapOptional(next), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'next': SdkQueryValue(SdkUtils.unwrapOptional(next),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listKmsIssuers',
-          fromJsonRaw: (value) => ListKmsIssuersResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListKmsIssuersResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a KMS issuer for the authenticated user's team to own asymmetric signing keys. Supply `name` and optionally configure the signing `algorithm`, claims validation schema, policy, or imported private key. The response includes the issuer and its signing keys.
 ///
@@ -120,7 +124,8 @@ Future<CreateKmsIssuerResponse> createKmsIssuer(ClientConfig config,
     {required String name,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<CreateKmsIssuerRequestBodyAlgorithm> algorithm = const SdkOmitted(),
+    SdkOptional<CreateKmsIssuerRequestBodyAlgorithm> algorithm =
+        const SdkOmitted(),
     SdkOptional<Map<String, Object?>> claimsSchema = const SdkOmitted(),
     SdkOptional<CreateKmsIssuerRequestPolicy> policy = const SdkOmitted(),
     SdkOptional<String> importKey = const SdkOmitted(),
@@ -134,8 +139,10 @@ Future<CreateKmsIssuerResponse> createKmsIssuer(ClientConfig config,
   return (await sdkRequest<CreateKmsIssuerResponse>('POST', '/v1/kms/issuers',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -147,11 +154,11 @@ Future<CreateKmsIssuerResponse> createKmsIssuer(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createKmsIssuer',
-          fromJsonRaw: (value) => CreateKmsIssuerResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateKmsIssuerResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a signing key for a KMS issuer. Use `activation` to choose automatic or manual activation, and optionally configure the grace period before the previous key is revoked. For manual activation, use the activate endpoint after the new key is ready.
 ///
@@ -177,14 +184,16 @@ Future<CreateKmsSigningKeyResponse> createKmsSigningKey(ClientConfig config,
     {required String issuerId,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<CreateKmsSigningKeyRequestBodyActivation> activation = const SdkOmitted(),
+    SdkOptional<CreateKmsSigningKeyRequestBodyActivation> activation =
+        const SdkOmitted(),
     SdkOptional<double> revokePreviousAfterHours = const SdkOmitted(),
     SdkOptional<dynamic> revokePreviousAt = const SdkOmitted(),
     SdkOptional<String> importKey = const SdkOmitted(),
     SdkOptional<String> importKeyId = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (revokePreviousAfterHours is SdkPresent<double>) {
-    validateRange('revokePreviousAfterHours', revokePreviousAfterHours.value, min: 0);
+    validateRange('revokePreviousAfterHours', revokePreviousAfterHours.value,
+        min: 0);
   }
   if (importKeyId is SdkPresent<String>) {
     validateLength('importKeyId', importKeyId.value, max: 128);
@@ -195,23 +204,26 @@ Future<CreateKmsSigningKeyResponse> createKmsSigningKey(ClientConfig config,
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}/keys',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'activation': SdkUtils.unwrapOptional(activation),
-            'revokePreviousAfterHours': SdkUtils.unwrapOptional(revokePreviousAfterHours),
+            'revokePreviousAfterHours':
+                SdkUtils.unwrapOptional(revokePreviousAfterHours),
             'revokePreviousAt': SdkUtils.unwrapOptional(revokePreviousAt),
             'importKey': SdkUtils.unwrapOptional(importKey),
             'importKeyId': SdkUtils.unwrapOptional(importKeyId)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createKmsSigningKey',
-          fromJsonRaw: (value) => CreateKmsSigningKeyResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateKmsSigningKeyResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Activates a pending signing key so the issuer begins signing with it. Optionally set `revokePreviousAfterHours` to control how long the previously active key remains in use after activation. Use the key identifier returned when the signing key was created.
 ///
@@ -232,26 +244,30 @@ Future<ActivateKmsSigningKeyResponse> activateKmsSigningKey(ClientConfig config,
     SdkOptional<double> revokePreviousAfterHours = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (revokePreviousAfterHours is SdkPresent<double>) {
-    validateRange('revokePreviousAfterHours', revokePreviousAfterHours.value, min: 0);
+    validateRange('revokePreviousAfterHours', revokePreviousAfterHours.value,
+        min: 0);
   }
 
   return (await sdkRequest<ActivateKmsSigningKeyResponse>('POST',
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}/keys/${Uri.encodeComponent(keyId.toString())}/activate',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
-            'revokePreviousAfterHours': SdkUtils.unwrapOptional(revokePreviousAfterHours)
+            'revokePreviousAfterHours':
+                SdkUtils.unwrapOptional(revokePreviousAfterHours)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'activateKmsSigningKey',
-          fromJsonRaw: (value) => ActivateKmsSigningKeyResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ActivateKmsSigningKeyResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Revokes a signing key immediately when it is already scheduled for revocation. Identify the issuer and key with `issuerId` and `keyId`. The response contains the updated issuer and its signing keys.
 ///
@@ -272,16 +288,18 @@ Future<RevokeKmsSigningKeyResponse> revokeKmsSigningKey(ClientConfig config,
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}/keys/${Uri.encodeComponent(keyId.toString())}/revoke',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'revokeKmsSigningKey',
-          fromJsonRaw: (value) => RevokeKmsSigningKeyResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RevokeKmsSigningKeyResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a KMS issuer by its identifier. Use a team bearer token for issuer management access or an OIDC token authorized by one of the issuer's policies for signing access. An OIDC-authorized response omits policies because that token does not grant management access.
 ///
@@ -299,16 +317,18 @@ Future<GetKmsIssuerResponse> getKmsIssuer(ClientConfig config,
           'GET', '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getKmsIssuer',
-          fromJsonRaw: (value) => GetKmsIssuerResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetKmsIssuerResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates a KMS issuer's name or claims schema. Include one or both fields to change; pass `null` for `claimsSchema` to remove the schema. The response contains the updated issuer.
 ///
@@ -331,8 +351,10 @@ Future<UpdateKmsIssuerResponse> updateKmsIssuer(ClientConfig config,
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
@@ -340,11 +362,11 @@ Future<UpdateKmsIssuerResponse> updateKmsIssuer(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateKmsIssuer',
-          fromJsonRaw: (value) => UpdateKmsIssuerResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateKmsIssuerResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a KMS issuer and its signing keys. Use `issuerId` to identify the issuer and optionally provide `teamId` or `slug` to select the team scope. The operation removes the issuer and its associated keys.
 ///
@@ -362,15 +384,16 @@ Future<void> deleteKmsIssuer(ClientConfig config,
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteKmsIssuer',
           options: requestOptions))
       .data;
 }
-
 
 /// Creates a policy on a KMS issuer that grants a project's deployments permission to sign with the issuer. Supply `kind`, `projectId`, and at least one `environments` entry; optionally include `tokenClaims` for claims to add to signed tokens. The response returns the created policy.
 ///
@@ -400,8 +423,10 @@ Future<CreateKmsIssuerPolicyResponse> createKmsIssuerPolicy(ClientConfig config,
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}/policies',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'kind': kind,
@@ -415,7 +440,6 @@ Future<CreateKmsIssuerPolicyResponse> createKmsIssuerPolicy(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Updates an existing KMS issuer policy's environments or token claims. Use `environments` to change where a project-grant policy applies, and `tokenClaims` to change the claims included in signed JWTs. Pass `null` for `tokenClaims` to remove the claims.
 ///
@@ -448,8 +472,10 @@ Future<UpdateKmsIssuerPolicyResponse> updateKmsIssuerPolicy(ClientConfig config,
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}/policies/${Uri.encodeComponent(kind.toString())}/${Uri.encodeComponent(policyKey.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'environments': SdkUtils.unwrapOptional(environments),
@@ -461,7 +487,6 @@ Future<UpdateKmsIssuerPolicyResponse> updateKmsIssuerPolicy(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a policy from a KMS issuer. Use `issuerId`, `kind`, and `policyKey` to identify the issuer policy, and use `teamId` or `slug` to specify the team context when needed.
 ///
@@ -483,8 +508,10 @@ Future<void> deleteKmsIssuerPolicy(ClientConfig config,
           '/v1/kms/issuers/${Uri.encodeComponent(issuerId.toString())}/policies/${Uri.encodeComponent(kind.toString())}/${Uri.encodeComponent(policyKey.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteKmsIssuerPolicy',

@@ -8,292 +8,506 @@ part of 'user.dart';
 class UserEventPayloadVariant317Project {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `id` wire field.
   final SdkOptional<String> id;
+
   /// Optional `string` value serialized in the `invitedUserId` wire field.
   final SdkOptional<String> invitedUserId;
+
   /// Required `string` value serialized in the `invitedUserName` wire field.
   final String invitedUserName;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required enumerated value serialized in the `role` wire field.
   final UserEventPayloadVariant317ProjectRole role;
 
-  const UserEventPayloadVariant317Project({this.id = const SdkOmitted(), this.invitedUserId = const SdkOmitted(), required this.invitedUserName, required this.name, required this.role});
+  const UserEventPayloadVariant317Project(
+      {this.id = const SdkOmitted(),
+      this.invitedUserId = const SdkOmitted(),
+      required this.invitedUserName,
+      required this.name,
+      required this.role});
 
-  UserEventPayloadVariant317Project Function({SdkOptional<String> id, SdkOptional<String> invitedUserId, String invitedUserName, String name, UserEventPayloadVariant317ProjectRole role}) get copyWith => _copyWith;
+  UserEventPayloadVariant317Project Function(
+      {SdkOptional<String> id,
+      SdkOptional<String> invitedUserId,
+      String invitedUserName,
+      String name,
+      UserEventPayloadVariant317ProjectRole role}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant317Project _copyWith({Object? id = sdkOmittedValue, Object? invitedUserId = sdkOmittedValue, Object? invitedUserName = sdkOmittedValue, Object? name = sdkOmittedValue, Object? role = sdkOmittedValue}) => UserEventPayloadVariant317Project(
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    invitedUserId: identical(invitedUserId, sdkOmittedValue) ? this.invitedUserId : invitedUserId as SdkOptional<String>,
-    invitedUserName: identical(invitedUserName, sdkOmittedValue) ? this.invitedUserName : invitedUserName as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    role: identical(role, sdkOmittedValue) ? this.role : role as UserEventPayloadVariant317ProjectRole,
-  );
+  UserEventPayloadVariant317Project _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? invitedUserId = sdkOmittedValue,
+          Object? invitedUserName = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? role = sdkOmittedValue}) =>
+      UserEventPayloadVariant317Project(
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        invitedUserId: identical(invitedUserId, sdkOmittedValue)
+            ? this.invitedUserId
+            : invitedUserId as SdkOptional<String>,
+        invitedUserName: identical(invitedUserName, sdkOmittedValue)
+            ? this.invitedUserName
+            : invitedUserName as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as UserEventPayloadVariant317ProjectRole,
+      );
 
-  factory UserEventPayloadVariant317Project.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant317Project(
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    invitedUserId: json['invitedUserId'] != null ? SdkPresent((json['invitedUserId'] as String?)!) : const SdkOmitted(),
-    invitedUserName: (json['invitedUserName'] as String?)!,
-    name: (json['name'] as String?)!,
-    role: (json['role'] != null ? UserEventPayloadVariant317ProjectRole.fromJson(json['role'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant317Project.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant317Project(
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        invitedUserId: json['invitedUserId'] != null
+            ? SdkPresent((json['invitedUserId'] as String?)!)
+            : const SdkOmitted(),
+        invitedUserName: (json['invitedUserName'] as String?)!,
+        name: (json['name'] as String?)!,
+        role: (json['role'] != null
+            ? UserEventPayloadVariant317ProjectRole.fromJson(
+                json['role'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (invitedUserId) {
-      SdkPresent<String>(value: final value) => {'invitedUserId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'invitedUserName': invitedUserName,
-    'name': name,
-    'role': role.toJson(),
-  };
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (invitedUserId) {
+          SdkPresent<String>(value: final value) => {
+              'invitedUserId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'invitedUserName': invitedUserName,
+        'name': name,
+        'role': role.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant317 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `project` wire field.
   final UserEventPayloadVariant317Project project;
 
   const UserEventPayloadVariant317({required this.project});
 
-  UserEventPayloadVariant317 Function({UserEventPayloadVariant317Project project}) get copyWith => _copyWith;
+  UserEventPayloadVariant317 Function(
+      {UserEventPayloadVariant317Project project}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant317 _copyWith({Object? project = sdkOmittedValue}) => UserEventPayloadVariant317(
-    project: identical(project, sdkOmittedValue) ? this.project : project as UserEventPayloadVariant317Project,
-  );
+  UserEventPayloadVariant317 _copyWith({Object? project = sdkOmittedValue}) =>
+      UserEventPayloadVariant317(
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as UserEventPayloadVariant317Project,
+      );
 
-  factory UserEventPayloadVariant317.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant317(
-    project: (json['project'] != null ? UserEventPayloadVariant317Project.fromJson(json['project'] as Map<String, dynamic>) : null)!,
-  );
+  factory UserEventPayloadVariant317.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant317(
+        project: (json['project'] != null
+            ? UserEventPayloadVariant317Project.fromJson(
+                json['project'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'project': project.toJson(),
-  };
+        'project': project.toJson(),
+      };
 }
 
 /// Required object value serialized in the `project` wire field.
 class UserEventPayloadVariant318Project {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `id` wire field.
   final SdkOptional<String> id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
-  const UserEventPayloadVariant318Project({this.id = const SdkOmitted(), required this.name});
+  const UserEventPayloadVariant318Project(
+      {this.id = const SdkOmitted(), required this.name});
 
-  UserEventPayloadVariant318Project Function({SdkOptional<String> id, String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant318Project Function(
+      {SdkOptional<String> id, String name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant318Project _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant318Project(
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant318Project _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant318Project(
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant318Project.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant318Project(
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant318Project.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant318Project(
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-  };
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+      };
 }
 
 /// Required object value serialized in the `removedMembership` wire field.
 class UserEventPayloadVariant318RemovedMembership {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required enumerated value serialized in the `role` wire field.
   final UserEventPayloadVariant318RemovedMembershipRole role;
+
   /// Required `string` value serialized in the `uid` wire field.
   final String uid;
+
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant318RemovedMembership({required this.createdAt, required this.role, required this.uid, this.username = const SdkOmitted()});
+  const UserEventPayloadVariant318RemovedMembership(
+      {required this.createdAt,
+      required this.role,
+      required this.uid,
+      this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant318RemovedMembership Function({double createdAt, UserEventPayloadVariant318RemovedMembershipRole role, String uid, SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant318RemovedMembership Function(
+      {double createdAt,
+      UserEventPayloadVariant318RemovedMembershipRole role,
+      String uid,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant318RemovedMembership _copyWith({Object? createdAt = sdkOmittedValue, Object? role = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant318RemovedMembership(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    role: identical(role, sdkOmittedValue) ? this.role : role as UserEventPayloadVariant318RemovedMembershipRole,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  UserEventPayloadVariant318RemovedMembership _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? role = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant318RemovedMembership(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role as UserEventPayloadVariant318RemovedMembershipRole,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant318RemovedMembership.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant318RemovedMembership(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    role: (json['role'] != null ? UserEventPayloadVariant318RemovedMembershipRole.fromJson(json['role'] as String) : null)!,
-    uid: (json['uid'] as String?)!,
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant318RemovedMembership.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant318RemovedMembership(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        role: (json['role'] != null
+            ? UserEventPayloadVariant318RemovedMembershipRole.fromJson(
+                json['role'] as String)
+            : null)!,
+        uid: (json['uid'] as String?)!,
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'role': role.toJson(),
-    'uid': uid,
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        'role': role.toJson(),
+        'uid': uid,
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant318 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `project` wire field.
   final UserEventPayloadVariant318Project project;
+
   /// Required object value serialized in the `removedMembership` wire field.
   final UserEventPayloadVariant318RemovedMembership removedMembership;
 
-  const UserEventPayloadVariant318({required this.project, required this.removedMembership});
+  const UserEventPayloadVariant318(
+      {required this.project, required this.removedMembership});
 
-  UserEventPayloadVariant318 Function({UserEventPayloadVariant318Project project, UserEventPayloadVariant318RemovedMembership removedMembership}) get copyWith => _copyWith;
+  UserEventPayloadVariant318 Function(
+          {UserEventPayloadVariant318Project project,
+          UserEventPayloadVariant318RemovedMembership removedMembership})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant318 _copyWith({Object? project = sdkOmittedValue, Object? removedMembership = sdkOmittedValue}) => UserEventPayloadVariant318(
-    project: identical(project, sdkOmittedValue) ? this.project : project as UserEventPayloadVariant318Project,
-    removedMembership: identical(removedMembership, sdkOmittedValue) ? this.removedMembership : removedMembership as UserEventPayloadVariant318RemovedMembership,
-  );
+  UserEventPayloadVariant318 _copyWith(
+          {Object? project = sdkOmittedValue,
+          Object? removedMembership = sdkOmittedValue}) =>
+      UserEventPayloadVariant318(
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as UserEventPayloadVariant318Project,
+        removedMembership: identical(removedMembership, sdkOmittedValue)
+            ? this.removedMembership
+            : removedMembership as UserEventPayloadVariant318RemovedMembership,
+      );
 
-  factory UserEventPayloadVariant318.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant318(
-    project: (json['project'] != null ? UserEventPayloadVariant318Project.fromJson(json['project'] as Map<String, dynamic>) : null)!,
-    removedMembership: (json['removedMembership'] != null ? UserEventPayloadVariant318RemovedMembership.fromJson(json['removedMembership'] as Map<String, dynamic>) : null)!,
-  );
+  factory UserEventPayloadVariant318.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant318(
+        project: (json['project'] != null
+            ? UserEventPayloadVariant318Project.fromJson(
+                json['project'] as Map<String, dynamic>)
+            : null)!,
+        removedMembership: (json['removedMembership'] != null
+            ? UserEventPayloadVariant318RemovedMembership.fromJson(
+                json['removedMembership'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'project': project.toJson(),
-    'removedMembership': removedMembership.toJson(),
-  };
+        'project': project.toJson(),
+        'removedMembership': removedMembership.toJson(),
+      };
 }
 
 /// Required object value serialized in the `project` wire field.
 class UserEventPayloadVariant319Project {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
-  const UserEventPayloadVariant319Project({required this.id, required this.name});
+  const UserEventPayloadVariant319Project(
+      {required this.id, required this.name});
 
-  UserEventPayloadVariant319Project Function({String id, String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant319Project Function({String id, String name})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant319Project _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant319Project(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant319Project _copyWith(
+          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant319Project(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant319Project.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant319Project(
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant319Project.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant319Project(
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'name': name,
-  };
+        'id': id,
+        'name': name,
+      };
 }
 
 /// Required object value serialized in the `projectMembership` wire field.
 class UserEventPayloadVariant319ProjectMembership {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `number` value serialized in the `createdAt` wire field.
   final SdkOptional<double> createdAt;
+
   /// Optional enumerated value serialized in the `role` wire field.
   final SdkOptional<UserEventPayloadVariant319ProjectMembershipRole> role;
+
   /// Optional `string` value serialized in the `uid` wire field.
   final SdkOptional<String> uid;
+
   /// Optional enumerated value serialized in the `previousRole` wire field.
-  final SdkOptional<UserEventPayloadVariant319ProjectMembershipPreviousRole> previousRole;
+  final SdkOptional<UserEventPayloadVariant319ProjectMembershipPreviousRole>
+      previousRole;
+
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant319ProjectMembership({this.createdAt = const SdkOmitted(), this.role = const SdkOmitted(), this.uid = const SdkOmitted(), this.previousRole = const SdkOmitted(), this.username = const SdkOmitted()});
+  const UserEventPayloadVariant319ProjectMembership(
+      {this.createdAt = const SdkOmitted(),
+      this.role = const SdkOmitted(),
+      this.uid = const SdkOmitted(),
+      this.previousRole = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant319ProjectMembership Function({SdkOptional<double> createdAt, SdkOptional<UserEventPayloadVariant319ProjectMembershipRole> role, SdkOptional<String> uid, SdkOptional<UserEventPayloadVariant319ProjectMembershipPreviousRole> previousRole, SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant319ProjectMembership Function(
+      {SdkOptional<double> createdAt,
+      SdkOptional<UserEventPayloadVariant319ProjectMembershipRole> role,
+      SdkOptional<String> uid,
+      SdkOptional<UserEventPayloadVariant319ProjectMembershipPreviousRole>
+          previousRole,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant319ProjectMembership _copyWith({Object? createdAt = sdkOmittedValue, Object? role = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? previousRole = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant319ProjectMembership(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<UserEventPayloadVariant319ProjectMembershipRole>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as SdkOptional<String>,
-    previousRole: identical(previousRole, sdkOmittedValue) ? this.previousRole : previousRole as SdkOptional<UserEventPayloadVariant319ProjectMembershipPreviousRole>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  UserEventPayloadVariant319ProjectMembership _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? role = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? previousRole = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant319ProjectMembership(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        role: identical(role, sdkOmittedValue)
+            ? this.role
+            : role
+                as SdkOptional<UserEventPayloadVariant319ProjectMembershipRole>,
+        uid: identical(uid, sdkOmittedValue)
+            ? this.uid
+            : uid as SdkOptional<String>,
+        previousRole: identical(previousRole, sdkOmittedValue)
+            ? this.previousRole
+            : previousRole as SdkOptional<
+                UserEventPayloadVariant319ProjectMembershipPreviousRole>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant319ProjectMembership.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant319ProjectMembership(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    role: json['role'] != null ? SdkPresent((json['role'] != null ? UserEventPayloadVariant319ProjectMembershipRole.fromJson(json['role'] as String) : null)!) : const SdkOmitted(),
-    uid: json['uid'] != null ? SdkPresent((json['uid'] as String?)!) : const SdkOmitted(),
-    previousRole: json['previousRole'] != null ? SdkPresent((json['previousRole'] != null ? UserEventPayloadVariant319ProjectMembershipPreviousRole.fromJson(json['previousRole'] as String) : null)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant319ProjectMembership.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant319ProjectMembership(
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        role: json['role'] != null
+            ? SdkPresent((json['role'] != null
+                ? UserEventPayloadVariant319ProjectMembershipRole.fromJson(
+                    json['role'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        uid: json['uid'] != null
+            ? SdkPresent((json['uid'] as String?)!)
+            : const SdkOmitted(),
+        previousRole: json['previousRole'] != null
+            ? SdkPresent((json['previousRole'] != null
+                ? UserEventPayloadVariant319ProjectMembershipPreviousRole
+                    .fromJson(json['previousRole'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (role) {
-      SdkPresent<UserEventPayloadVariant319ProjectMembershipRole>(value: final value) => {'role': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uid) {
-      SdkPresent<String>(value: final value) => {'uid': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (previousRole) {
-      SdkPresent<UserEventPayloadVariant319ProjectMembershipPreviousRole>(value: final value) => {'previousRole': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (role) {
+          SdkPresent<UserEventPayloadVariant319ProjectMembershipRole>(
+            value: final value
+          ) =>
+            {
+              'role': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uid) {
+          SdkPresent<String>(value: final value) => {
+              'uid': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (previousRole) {
+          SdkPresent<UserEventPayloadVariant319ProjectMembershipPreviousRole>(
+            value: final value
+          ) =>
+            {
+              'previousRole': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant319 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `project` wire field.
   final UserEventPayloadVariant319Project project;
+
   /// Required object value serialized in the `projectMembership` wire field.
   final UserEventPayloadVariant319ProjectMembership projectMembership;
 
-  const UserEventPayloadVariant319({required this.project, required this.projectMembership});
+  const UserEventPayloadVariant319(
+      {required this.project, required this.projectMembership});
 
-  UserEventPayloadVariant319 Function({UserEventPayloadVariant319Project project, UserEventPayloadVariant319ProjectMembership projectMembership}) get copyWith => _copyWith;
+  UserEventPayloadVariant319 Function(
+          {UserEventPayloadVariant319Project project,
+          UserEventPayloadVariant319ProjectMembership projectMembership})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant319 _copyWith({Object? project = sdkOmittedValue, Object? projectMembership = sdkOmittedValue}) => UserEventPayloadVariant319(
-    project: identical(project, sdkOmittedValue) ? this.project : project as UserEventPayloadVariant319Project,
-    projectMembership: identical(projectMembership, sdkOmittedValue) ? this.projectMembership : projectMembership as UserEventPayloadVariant319ProjectMembership,
-  );
+  UserEventPayloadVariant319 _copyWith(
+          {Object? project = sdkOmittedValue,
+          Object? projectMembership = sdkOmittedValue}) =>
+      UserEventPayloadVariant319(
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as UserEventPayloadVariant319Project,
+        projectMembership: identical(projectMembership, sdkOmittedValue)
+            ? this.projectMembership
+            : projectMembership as UserEventPayloadVariant319ProjectMembership,
+      );
 
-  factory UserEventPayloadVariant319.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant319(
-    project: (json['project'] != null ? UserEventPayloadVariant319Project.fromJson(json['project'] as Map<String, dynamic>) : null)!,
-    projectMembership: (json['projectMembership'] != null ? UserEventPayloadVariant319ProjectMembership.fromJson(json['projectMembership'] as Map<String, dynamic>) : null)!,
-  );
+  factory UserEventPayloadVariant319.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant319(
+        project: (json['project'] != null
+            ? UserEventPayloadVariant319Project.fromJson(
+                json['project'] as Map<String, dynamic>)
+            : null)!,
+        projectMembership: (json['projectMembership'] != null
+            ? UserEventPayloadVariant319ProjectMembership.fromJson(
+                json['projectMembership'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'project': project.toJson(),
-    'projectMembership': projectMembership.toJson(),
-  };
+        'project': project.toJson(),
+        'projectMembership': projectMembership.toJson(),
+      };
 }

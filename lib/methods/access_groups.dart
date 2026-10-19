@@ -22,16 +22,18 @@ Future<ReadAccessGroupResponse> readAccessGroup(ClientConfig config,
           '/v1/access-groups/${Uri.encodeComponent(idOrName.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'readAccessGroup',
-          fromJsonRaw: (value) => ReadAccessGroupResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ReadAccessGroupResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates an access group's metadata, members, or project roles. Supply only the fields you want to change; `name` is limited to 50 characters and `projects` associates projects with roles.
 ///
@@ -47,7 +49,8 @@ Future<UpdateAccessGroupResponse> updateAccessGroup(ClientConfig config,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
-    SdkOptional<List<UpdateAccessGroupRequestBodyProjectsItem>> projects = const SdkOmitted(),
+    SdkOptional<List<UpdateAccessGroupRequestBodyProjectsItem>> projects =
+        const SdkOmitted(),
     SdkOptional<List<String>> membersToAdd = const SdkOmitted(),
     SdkOptional<List<String>> membersToRemove = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
@@ -60,8 +63,10 @@ Future<UpdateAccessGroupResponse> updateAccessGroup(ClientConfig config,
           '/v1/access-groups/${Uri.encodeComponent(idOrName.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': SdkUtils.unwrapOptional(name),
@@ -71,11 +76,11 @@ Future<UpdateAccessGroupResponse> updateAccessGroup(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateAccessGroup',
-          fromJsonRaw: (value) => UpdateAccessGroupResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateAccessGroupResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes an access group. Use `idOrName` to identify the group and `teamId` or `slug` to select the team for the request.
 ///
@@ -92,15 +97,16 @@ Future<void> deleteAccessGroup(ClientConfig config,
           '/v1/access-groups/${Uri.encodeComponent(idOrName.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteAccessGroup',
           options: requestOptions))
       .data;
 }
-
 
 /// Lists members of an access group, with optional search and cursor-based pagination. Use `search` to match members by name, username, or email, and `next` to retrieve the next page.
 ///
@@ -112,15 +118,15 @@ Future<void> deleteAccessGroup(ClientConfig config,
 /// [search] Search project members by their name, username, and email.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListAccessGroupMembersResponse>
-    listAccessGroupMembers(ClientConfig config,
-        {required String idOrName,
-        SdkOptional<int> limit = const SdkOmitted(),
-        SdkOptional<String> next = const SdkOmitted(),
-        SdkOptional<String> search = const SdkOmitted(),
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<ListAccessGroupMembersResponse> listAccessGroupMembers(
+    ClientConfig config,
+    {required String idOrName,
+    SdkOptional<int> limit = const SdkOmitted(),
+    SdkOptional<String> next = const SdkOmitted(),
+    SdkOptional<String> search = const SdkOmitted(),
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   if (limit is SdkPresent<int>) {
     validateRange('limit', limit.value, min: 1, max: 100);
   }
@@ -129,19 +135,24 @@ Future<ListAccessGroupMembersResponse>
           '/v1/access-groups/${Uri.encodeComponent(idOrName.toString())}/members',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'next': SdkQueryValue(SdkUtils.unwrapOptional(next), style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'next': SdkQueryValue(SdkUtils.unwrapOptional(next),
+                style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAccessGroupMembers',
-          fromJsonRaw: (value) => ListAccessGroupMembersResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListAccessGroupMembersResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists access groups, with optional filters for project and group name. Use `membersLimit` and `projectsLimit` to control how many associated members and projects are included, and `next` to continue through paginated results.
 ///
@@ -178,14 +189,24 @@ Future<dynamic> listAccessGroups(ClientConfig config,
   return (await sdkRequest<dynamic>('GET', '/v1/access-groups',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
-            'search': SdkQueryValue(SdkUtils.unwrapOptional(search), style: 'form', explode: true),
-            'membersLimit': SdkQueryValue(SdkUtils.unwrapOptional(membersLimit), style: 'form', explode: true),
-            'projectsLimit': SdkQueryValue(SdkUtils.unwrapOptional(projectsLimit), style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'next': SdkQueryValue(SdkUtils.unwrapOptional(next), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
+                style: 'form', explode: true),
+            'search': SdkQueryValue(SdkUtils.unwrapOptional(search),
+                style: 'form', explode: true),
+            'membersLimit': SdkQueryValue(SdkUtils.unwrapOptional(membersLimit),
+                style: 'form', explode: true),
+            'projectsLimit': SdkQueryValue(
+                SdkUtils.unwrapOptional(projectsLimit),
+                style: 'form',
+                explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'next': SdkQueryValue(SdkUtils.unwrapOptional(next),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAccessGroups',
@@ -193,7 +214,6 @@ Future<dynamic> listAccessGroups(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Creates an access group for a team, optionally assigning projects and adding members. Provide a `name` that matches the allowed character pattern and is no longer than 50 characters.
 ///
@@ -207,7 +227,8 @@ Future<CreateAccessGroupResponse> createAccessGroup(ClientConfig config,
     {required String name,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<List<CreateAccessGroupRequestBodyProjectsItem>> projects = const SdkOmitted(),
+    SdkOptional<List<CreateAccessGroupRequestBodyProjectsItem>> projects =
+        const SdkOmitted(),
     SdkOptional<List<String>> membersToAdd = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 50);
@@ -217,8 +238,10 @@ Future<CreateAccessGroupResponse> createAccessGroup(ClientConfig config,
           'POST', '/v1/access-groups',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -227,11 +250,11 @@ Future<CreateAccessGroupResponse> createAccessGroup(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createAccessGroup',
-          fromJsonRaw: (value) => CreateAccessGroupResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              CreateAccessGroupResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists the projects associated with an access group. Use `limit` to control the number of project assignments returned and `next` to continue through the cursor-based results.
 ///
@@ -242,14 +265,14 @@ Future<CreateAccessGroupResponse> createAccessGroup(ClientConfig config,
 /// [next] Continuation cursor to retrieve the next page of results.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ListAccessGroupProjectsResponse>
-    listAccessGroupProjects(ClientConfig config,
-        {required String idOrName,
-        SdkOptional<int> limit = const SdkOmitted(),
-        SdkOptional<String> next = const SdkOmitted(),
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<ListAccessGroupProjectsResponse> listAccessGroupProjects(
+    ClientConfig config,
+    {required String idOrName,
+    SdkOptional<int> limit = const SdkOmitted(),
+    SdkOptional<String> next = const SdkOmitted(),
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   if (limit is SdkPresent<int>) {
     validateRange('limit', limit.value, min: 1, max: 100);
   }
@@ -258,18 +281,22 @@ Future<ListAccessGroupProjectsResponse>
           '/v1/access-groups/${Uri.encodeComponent(idOrName.toString())}/projects',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'next': SdkQueryValue(SdkUtils.unwrapOptional(next), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'next': SdkQueryValue(SdkUtils.unwrapOptional(next),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAccessGroupProjects',
-          fromJsonRaw: (value) => ListAccessGroupProjectsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListAccessGroupProjectsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Adds a project and its role to an access group. Provide both `projectId` and `role`; the role must be one of the supported project roles.
 ///
@@ -279,31 +306,33 @@ Future<ListAccessGroupProjectsResponse>
 /// [role] The project role that will be added to this Access Group.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<CreateAccessGroupProjectResponse>
-    createAccessGroupProject(ClientConfig config,
-        {required String accessGroupIdOrName,
-        required String projectId,
-        required CreateAccessGroupProjectRequestBodyRole role,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CreateAccessGroupProjectResponse> createAccessGroupProject(
+    ClientConfig config,
+    {required String accessGroupIdOrName,
+    required String projectId,
+    required CreateAccessGroupProjectRequestBodyRole role,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   validateLength('projectId', projectId, max: 256);
 
   return (await sdkRequest<CreateAccessGroupProjectResponse>('POST',
           '/v1/access-groups/${Uri.encodeComponent(accessGroupIdOrName.toString())}/projects',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'projectId': projectId, 'role': role},
           decoder: SdkResponseDecoder.json,
           operationId: 'createAccessGroupProject',
-          fromJsonRaw: (value) => CreateAccessGroupProjectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateAccessGroupProjectResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves a project's assignment in an access group. Use both `accessGroupIdOrName` and `projectId` to identify the association you want to read.
 ///
@@ -311,27 +340,29 @@ Future<CreateAccessGroupProjectResponse>
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<ReadAccessGroupProjectResponse>
-    readAccessGroupProject(ClientConfig config,
-        {required String accessGroupIdOrName,
-        required String projectId,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<ReadAccessGroupProjectResponse> readAccessGroupProject(
+    ClientConfig config,
+    {required String accessGroupIdOrName,
+    required String projectId,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<ReadAccessGroupProjectResponse>('GET',
           '/v1/access-groups/${Uri.encodeComponent(accessGroupIdOrName.toString())}/projects/${Uri.encodeComponent(projectId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'readAccessGroupProject',
-          fromJsonRaw: (value) => ReadAccessGroupProjectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ReadAccessGroupProjectResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates the role assigned to a project in an access group. Supply `role` with a supported project role, or null to remove the project-level role.
 ///
@@ -340,29 +371,31 @@ Future<ReadAccessGroupProjectResponse>
 /// [role] The project role that will be added to this Access Group.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<UpdateAccessGroupProjectResponse>
-    updateAccessGroupProject(ClientConfig config,
-        {required String accessGroupIdOrName,
-        required String projectId,
-        required UpdateAccessGroupProjectRequestBodyRole role,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<UpdateAccessGroupProjectResponse> updateAccessGroupProject(
+    ClientConfig config,
+    {required String accessGroupIdOrName,
+    required String projectId,
+    required UpdateAccessGroupProjectRequestBodyRole role,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateAccessGroupProjectResponse>('PATCH',
           '/v1/access-groups/${Uri.encodeComponent(accessGroupIdOrName.toString())}/projects/${Uri.encodeComponent(projectId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'role': role},
           decoder: SdkResponseDecoder.json,
           operationId: 'updateAccessGroupProject',
-          fromJsonRaw: (value) => UpdateAccessGroupProjectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateAccessGroupProjectResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a project association from an access group. Use `accessGroupIdOrName` and `projectId` to identify the association, and optionally specify the team context with `teamId` or `slug`.
 ///
@@ -380,8 +413,10 @@ Future<void> deleteAccessGroupProject(ClientConfig config,
           '/v1/access-groups/${Uri.encodeComponent(accessGroupIdOrName.toString())}/projects/${Uri.encodeComponent(projectId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteAccessGroupProject',

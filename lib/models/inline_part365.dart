@@ -5,269 +5,382 @@ part of 'inline.dart';
 
 // Inline operation models (part 365)
 final class UpdateMicrofrontendsResponseTargetsValueReadySubstate {
-
   final String value;
 
   const UpdateMicrofrontendsResponseTargetsValueReadySubstate._(this.value);
 
-  factory UpdateMicrofrontendsResponseTargetsValueReadySubstate.fromJson(String value) => UpdateMicrofrontendsResponseTargetsValueReadySubstate._(value);
+  factory UpdateMicrofrontendsResponseTargetsValueReadySubstate.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTargetsValueReadySubstate._(value);
 
-  static const promoted = UpdateMicrofrontendsResponseTargetsValueReadySubstate._('PROMOTED');
-  static const rolling = UpdateMicrofrontendsResponseTargetsValueReadySubstate._('ROLLING');
-  static const staged = UpdateMicrofrontendsResponseTargetsValueReadySubstate._('STAGED');
+  static const promoted =
+      UpdateMicrofrontendsResponseTargetsValueReadySubstate._('PROMOTED');
+  static const rolling =
+      UpdateMicrofrontendsResponseTargetsValueReadySubstate._('ROLLING');
+  static const staged =
+      UpdateMicrofrontendsResponseTargetsValueReadySubstate._('STAGED');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTargetsValueReadySubstate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseTargetsValueReadySubstate &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTargetsValueType {
-
   final String value;
 
   const UpdateMicrofrontendsResponseTargetsValueType._(this.value);
 
-  factory UpdateMicrofrontendsResponseTargetsValueType.fromJson(String value) => UpdateMicrofrontendsResponseTargetsValueType._(value);
+  factory UpdateMicrofrontendsResponseTargetsValueType.fromJson(String value) =>
+      UpdateMicrofrontendsResponseTargetsValueType._(value);
 
-  static const lambdas = UpdateMicrofrontendsResponseTargetsValueType._('LAMBDAS');
+  static const lambdas =
+      UpdateMicrofrontendsResponseTargetsValueType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTargetsValueType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseTargetsValueType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTargetsValueWithCache {
-
   final bool value;
 
   const UpdateMicrofrontendsResponseTargetsValueWithCache._(this.value);
 
-  factory UpdateMicrofrontendsResponseTargetsValueWithCache.fromJson(bool value) => UpdateMicrofrontendsResponseTargetsValueWithCache._(value);
+  factory UpdateMicrofrontendsResponseTargetsValueWithCache.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseTargetsValueWithCache._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseTargetsValueWithCache._(false);
-  static const true_ = UpdateMicrofrontendsResponseTargetsValueWithCache._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseTargetsValueWithCache._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseTargetsValueWithCache._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTargetsValueWithCache && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseTargetsValueWithCache &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTier {
-
   final String value;
 
   const UpdateMicrofrontendsResponseTier._(this.value);
 
-  factory UpdateMicrofrontendsResponseTier.fromJson(String value) => UpdateMicrofrontendsResponseTier._(value);
+  factory UpdateMicrofrontendsResponseTier.fromJson(String value) =>
+      UpdateMicrofrontendsResponseTier._(value);
 
   static const priority = UpdateMicrofrontendsResponseTier._('priority');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTier && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseTier && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Which tracing destination this rule applies to. `internal` is the hidden Vercel production-tracing drain (internal delivery); `external` is any customer-configured drain. Derived from the owning drain's delivery type when project tracing is computed; absent on configs persisted before this field existed.
 final class UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._(this.value);
+  const UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination.fromJson(String value) => UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._(value);
+  factory UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._(value);
 
-  static const external_ = UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._('external');
-  static const internal = UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._('internal');
+  static const external_ =
+      UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._(
+          'external');
+  static const internal =
+      UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination._(
+          'internal');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTracingSamplingRulesItemDestination &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv {
-
   final String value;
 
   const UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv._(this.value);
 
-  factory UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv.fromJson(String value) => UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv._(value);
+  factory UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv._(value);
 
-  static const preview = UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv._('preview');
-  static const production = UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv._('production');
+  static const preview =
+      UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv._('preview');
+  static const production =
+      UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseTracingSamplingRulesItemEnv &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Allow same-team Vercel CI access to preview and production deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value.
 final class UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository {
-
   final bool value;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(this.value);
+  const UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(bool value) => UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(value);
+  factory UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(
+          value);
 
-  static const false_ = UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(false);
-  static const true_ = UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(
+          false);
+  static const true_ =
+      UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTrustedSourcesEnableVercelCiSameRepository &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(this.value);
+  const UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(String value) => UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._(value);
+  factory UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset
+          ._(value);
 
-  static const allCustom = UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset._('all-custom');
+  static const allCustom =
+      UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(this.value);
+  const UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(String value) => UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._(value);
+  factory UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
+          ._(value);
 
-  static const allCustom = UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset._('all-custom');
+  static const allCustom =
+      UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(this.value);
+  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(String value) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._(value);
+  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
+          ._(value);
 
-  static const allCustom = UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset._('all-custom');
+  static const allCustom =
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(this.value);
+  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(String value) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._(value);
+  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+          ._(value);
 
-  static const allCustom = UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset._('all-custom');
+  static const allCustom =
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(this.value);
+  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(String value) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._(value);
+  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
+          ._(value);
 
-  static const allCustom = UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset._('all-custom');
+  static const allCustom =
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(this.value);
+  const UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(String value) => UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._(value);
+  factory UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+          ._(value);
 
-  static const allCustom = UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset._('all-custom');
+  static const allCustom =
+      UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+          ._('all-custom');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

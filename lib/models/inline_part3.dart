@@ -6,236 +6,287 @@ part of 'inline.dart';
 // Inline operation models (part 3)
 /// Required enumerated value serialized in the `enabled` wire field.
 final class AiGatewayRuleEnabled {
-
   final bool value;
 
   const AiGatewayRuleEnabled._(this.value);
 
-  factory AiGatewayRuleEnabled.fromJson(bool value) => AiGatewayRuleEnabled._(value);
+  factory AiGatewayRuleEnabled.fromJson(bool value) =>
+      AiGatewayRuleEnabled._(value);
 
   static const false_ = AiGatewayRuleEnabled._(false);
   static const true_ = AiGatewayRuleEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayRuleEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayRuleEnabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class AiGatewayRuleType {
-
   final String value;
 
   const AiGatewayRuleType._(this.value);
 
-  factory AiGatewayRuleType.fromJson(String value) => AiGatewayRuleType._(value);
+  factory AiGatewayRuleType.fromJson(String value) =>
+      AiGatewayRuleType._(value);
 
   static const deny = AiGatewayRuleType._('deny');
   static const rewrite = AiGatewayRuleType._('rewrite');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayRuleType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayRuleType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Allow fallback from fast to standard providers on failure.
 final class AiGatewayVirtualModelConfigAllowFallbackFromFast {
-
   final bool value;
 
   const AiGatewayVirtualModelConfigAllowFallbackFromFast._(this.value);
 
-  factory AiGatewayVirtualModelConfigAllowFallbackFromFast.fromJson(bool value) => AiGatewayVirtualModelConfigAllowFallbackFromFast._(value);
+  factory AiGatewayVirtualModelConfigAllowFallbackFromFast.fromJson(
+          bool value) =>
+      AiGatewayVirtualModelConfigAllowFallbackFromFast._(value);
 
-  static const false_ = AiGatewayVirtualModelConfigAllowFallbackFromFast._(false);
+  static const false_ =
+      AiGatewayVirtualModelConfigAllowFallbackFromFast._(false);
   static const true_ = AiGatewayVirtualModelConfigAllowFallbackFromFast._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigAllowFallbackFromFast && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigAllowFallbackFromFast &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Use caching if available.
 final class AiGatewayVirtualModelConfigCaching {
-
   final String value;
 
   const AiGatewayVirtualModelConfigCaching._(this.value);
 
-  factory AiGatewayVirtualModelConfigCaching.fromJson(String value) => AiGatewayVirtualModelConfigCaching._(value);
+  factory AiGatewayVirtualModelConfigCaching.fromJson(String value) =>
+      AiGatewayVirtualModelConfigCaching._(value);
 
   static const auto = AiGatewayVirtualModelConfigCaching._('auto');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigCaching && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigCaching && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this VMC is soft-deleted.
 final class AiGatewayVirtualModelConfigDeleted {
-
   final bool value;
 
   const AiGatewayVirtualModelConfigDeleted._(this.value);
 
-  factory AiGatewayVirtualModelConfigDeleted.fromJson(bool value) => AiGatewayVirtualModelConfigDeleted._(value);
+  factory AiGatewayVirtualModelConfigDeleted.fromJson(bool value) =>
+      AiGatewayVirtualModelConfigDeleted._(value);
 
   static const false_ = AiGatewayVirtualModelConfigDeleted._(false);
   static const true_ = AiGatewayVirtualModelConfigDeleted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigDeleted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigDeleted && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Only use providers that will not train on your prompts.
 final class AiGatewayVirtualModelConfigDisallowPromptTraining {
-
   final bool value;
 
   const AiGatewayVirtualModelConfigDisallowPromptTraining._(this.value);
 
-  factory AiGatewayVirtualModelConfigDisallowPromptTraining.fromJson(bool value) => AiGatewayVirtualModelConfigDisallowPromptTraining._(value);
+  factory AiGatewayVirtualModelConfigDisallowPromptTraining.fromJson(
+          bool value) =>
+      AiGatewayVirtualModelConfigDisallowPromptTraining._(value);
 
-  static const false_ = AiGatewayVirtualModelConfigDisallowPromptTraining._(false);
-  static const true_ = AiGatewayVirtualModelConfigDisallowPromptTraining._(true);
+  static const false_ =
+      AiGatewayVirtualModelConfigDisallowPromptTraining._(false);
+  static const true_ =
+      AiGatewayVirtualModelConfigDisallowPromptTraining._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigDisallowPromptTraining && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigDisallowPromptTraining &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Limit providers to those with these features.
 final class AiGatewayVirtualModelConfigHasItem {
-
   final String value;
 
   const AiGatewayVirtualModelConfigHasItem._(this.value);
 
-  factory AiGatewayVirtualModelConfigHasItem.fromJson(String value) => AiGatewayVirtualModelConfigHasItem._(value);
+  factory AiGatewayVirtualModelConfigHasItem.fromJson(String value) =>
+      AiGatewayVirtualModelConfigHasItem._(value);
 
-  static const implicitCaching = AiGatewayVirtualModelConfigHasItem._('implicit-caching');
+  static const implicitCaching =
+      AiGatewayVirtualModelConfigHasItem._('implicit-caching');
   static const reasoning = AiGatewayVirtualModelConfigHasItem._('reasoning');
-  static const structuredOutput = AiGatewayVirtualModelConfigHasItem._('structured-output');
+  static const structuredOutput =
+      AiGatewayVirtualModelConfigHasItem._('structured-output');
   static const toolUse = AiGatewayVirtualModelConfigHasItem._('tool-use');
   static const vision = AiGatewayVirtualModelConfigHasItem._('vision');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigHasItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigHasItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Only use HIPAA-compliant providers.
 final class AiGatewayVirtualModelConfigHipaaCompliant {
-
   final bool value;
 
   const AiGatewayVirtualModelConfigHipaaCompliant._(this.value);
 
-  factory AiGatewayVirtualModelConfigHipaaCompliant.fromJson(bool value) => AiGatewayVirtualModelConfigHipaaCompliant._(value);
+  factory AiGatewayVirtualModelConfigHipaaCompliant.fromJson(bool value) =>
+      AiGatewayVirtualModelConfigHipaaCompliant._(value);
 
   static const false_ = AiGatewayVirtualModelConfigHipaaCompliant._(false);
   static const true_ = AiGatewayVirtualModelConfigHipaaCompliant._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigHipaaCompliant && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigHipaaCompliant &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Pin scope: `specific` (one provider region), `zone` (geo zone), or `global`.
 final class AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope {
-
   final String value;
 
-  const AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._(this.value);
+  const AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._(
+      this.value);
 
-  factory AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope.fromJson(String value) => AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._(value);
+  factory AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope.fromJson(
+          String value) =>
+      AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._(value);
 
-  static const global = AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._('global');
-  static const specific = AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._('specific');
-  static const zone = AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._('zone');
+  static const global =
+      AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._('global');
+  static const specific =
+      AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._(
+          'specific');
+  static const zone =
+      AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope._('zone');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigInferenceRegionProvidersValueScope &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Pin scope: `specific` (one provider region), `zone` (geo zone), or `global`.
 final class AiGatewayVirtualModelConfigInferenceRegionScope {
-
   final String value;
 
   const AiGatewayVirtualModelConfigInferenceRegionScope._(this.value);
 
-  factory AiGatewayVirtualModelConfigInferenceRegionScope.fromJson(String value) => AiGatewayVirtualModelConfigInferenceRegionScope._(value);
+  factory AiGatewayVirtualModelConfigInferenceRegionScope.fromJson(
+          String value) =>
+      AiGatewayVirtualModelConfigInferenceRegionScope._(value);
 
-  static const global = AiGatewayVirtualModelConfigInferenceRegionScope._('global');
-  static const specific = AiGatewayVirtualModelConfigInferenceRegionScope._('specific');
+  static const global =
+      AiGatewayVirtualModelConfigInferenceRegionScope._('global');
+  static const specific =
+      AiGatewayVirtualModelConfigInferenceRegionScope._('specific');
   static const zone = AiGatewayVirtualModelConfigInferenceRegionScope._('zone');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigInferenceRegionScope && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigInferenceRegionScope &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// For kind=router: how to order candidates. Absent means declared order.
 final class AiGatewayVirtualModelConfigSelector {
-
   final String value;
 
   const AiGatewayVirtualModelConfigSelector._(this.value);
 
-  factory AiGatewayVirtualModelConfigSelector.fromJson(String value) => AiGatewayVirtualModelConfigSelector._(value);
+  factory AiGatewayVirtualModelConfigSelector.fromJson(String value) =>
+      AiGatewayVirtualModelConfigSelector._(value);
 
   static const cost = AiGatewayVirtualModelConfigSelector._('cost');
   static const tps = AiGatewayVirtualModelConfigSelector._('tps');
@@ -243,22 +294,25 @@ final class AiGatewayVirtualModelConfigSelector {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigSelector && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigSelector && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Service tier for providers that support it.
 final class AiGatewayVirtualModelConfigServiceTier {
-
   final String value;
 
   const AiGatewayVirtualModelConfigServiceTier._(this.value);
 
-  factory AiGatewayVirtualModelConfigServiceTier.fromJson(String value) => AiGatewayVirtualModelConfigServiceTier._(value);
+  factory AiGatewayVirtualModelConfigServiceTier.fromJson(String value) =>
+      AiGatewayVirtualModelConfigServiceTier._(value);
 
   static const fast = AiGatewayVirtualModelConfigServiceTier._('fast');
   static const flex = AiGatewayVirtualModelConfigServiceTier._('flex');
@@ -266,10 +320,13 @@ final class AiGatewayVirtualModelConfigServiceTier {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is AiGatewayVirtualModelConfigServiceTier && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is AiGatewayVirtualModelConfigServiceTier && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
