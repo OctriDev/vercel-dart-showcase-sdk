@@ -4,121 +4,58 @@
 part of 'drains.dart';
 
 // drains domain models (part 3)
-final class CreateDrainResponseVariant0DeliveryVariant0SecretCreateDrainResponseVariant0DeliveryVariant0SecretVariant1
-    extends CreateDrainResponseVariant0DeliveryVariant0Secret {
+final class CreateDrainResponseVariant0DeliveryVariant0SecretCreateDrainResponseVariant0DeliveryVariant0SecretVariant1 extends CreateDrainResponseVariant0DeliveryVariant0Secret {
   final CreateDrainResponseVariant0DeliveryVariant0SecretVariant1 value;
-  const CreateDrainResponseVariant0DeliveryVariant0SecretCreateDrainResponseVariant0DeliveryVariant0SecretVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateDrainResponseVariant0DeliveryVariant0SecretCreateDrainResponseVariant0DeliveryVariant0SecretVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class CreateDrainResponseVariant0DeliveryVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateDrainResponseVariant0DeliveryVariant0Compression>
-      compression;
+  final SdkOptional<CreateDrainResponseVariant0DeliveryVariant0Compression> compression;
   final CreateDrainResponseVariant0DeliveryVariant0Encoding encoding;
   final String endpoint;
   final Map<String, String> headers;
   final SdkOptional<dynamic> secret;
   final CreateDrainResponseVariant0DeliveryVariant0Type type_;
 
-  const CreateDrainResponseVariant0DeliveryVariant0(
-      {this.compression = const SdkOmitted(),
-      required this.encoding,
-      required this.endpoint,
-      required this.headers,
-      this.secret = const SdkOmitted(),
-      required this.type_});
+  const CreateDrainResponseVariant0DeliveryVariant0({this.compression = const SdkOmitted(), required this.encoding, required this.endpoint, required this.headers, this.secret = const SdkOmitted(), required this.type_});
 
-  CreateDrainResponseVariant0DeliveryVariant0 Function(
-          {SdkOptional<CreateDrainResponseVariant0DeliveryVariant0Compression>
-              compression,
-          CreateDrainResponseVariant0DeliveryVariant0Encoding encoding,
-          String endpoint,
-          Map<String, String> headers,
-          SdkOptional<dynamic> secret,
-          CreateDrainResponseVariant0DeliveryVariant0Type type_})
-      get copyWith => _copyWith;
+  CreateDrainResponseVariant0DeliveryVariant0 Function({SdkOptional<CreateDrainResponseVariant0DeliveryVariant0Compression> compression, CreateDrainResponseVariant0DeliveryVariant0Encoding encoding, String endpoint, Map<String, String> headers, SdkOptional<dynamic> secret, CreateDrainResponseVariant0DeliveryVariant0Type type_}) get copyWith => _copyWith;
 
-  CreateDrainResponseVariant0DeliveryVariant0 _copyWith(
-          {Object? compression = sdkOmittedValue,
-          Object? encoding = sdkOmittedValue,
-          Object? endpoint = sdkOmittedValue,
-          Object? headers = sdkOmittedValue,
-          Object? secret = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDrainResponseVariant0DeliveryVariant0(
-        compression: identical(compression, sdkOmittedValue)
-            ? this.compression
-            : compression as SdkOptional<
-                CreateDrainResponseVariant0DeliveryVariant0Compression>,
-        encoding: identical(encoding, sdkOmittedValue)
-            ? this.encoding
-            : encoding as CreateDrainResponseVariant0DeliveryVariant0Encoding,
-        endpoint: identical(endpoint, sdkOmittedValue)
-            ? this.endpoint
-            : endpoint as String,
-        headers: identical(headers, sdkOmittedValue)
-            ? this.headers
-            : headers as Map<String, String>,
-        secret: identical(secret, sdkOmittedValue)
-            ? this.secret
-            : secret as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDrainResponseVariant0DeliveryVariant0Type,
-      );
+  CreateDrainResponseVariant0DeliveryVariant0 _copyWith({Object? compression = sdkOmittedValue, Object? encoding = sdkOmittedValue, Object? endpoint = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? secret = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDrainResponseVariant0DeliveryVariant0(
+    compression: identical(compression, sdkOmittedValue) ? this.compression : compression as SdkOptional<CreateDrainResponseVariant0DeliveryVariant0Compression>,
+    encoding: identical(encoding, sdkOmittedValue) ? this.encoding : encoding as CreateDrainResponseVariant0DeliveryVariant0Encoding,
+    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as String,
+    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as Map<String, String>,
+    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDrainResponseVariant0DeliveryVariant0Type,
+  );
 
-  factory CreateDrainResponseVariant0DeliveryVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDrainResponseVariant0DeliveryVariant0(
-        compression: json['compression'] != null
-            ? SdkPresent((json['compression'] != null
-                ? CreateDrainResponseVariant0DeliveryVariant0Compression
-                    .fromJson(json['compression'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        encoding: (json['encoding'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant0Encoding.fromJson(
-                json['encoding'] as String)
-            : null)!,
-        endpoint: (json['endpoint'] as String?)!,
-        headers: (json['headers'] == null
-            ? null
-            : Map<String, dynamic>.from(json['headers'] as Map)
-                .map((key, value) => MapEntry(key, value as String)))!,
-        secret: json['secret'] != null
-            ? SdkPresent((json['secret'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDrainResponseVariant0DeliveryVariant0.fromJson(Map<String, dynamic> json) => CreateDrainResponseVariant0DeliveryVariant0(
+    compression: json['compression'] != null ? SdkPresent((json['compression'] != null ? CreateDrainResponseVariant0DeliveryVariant0Compression.fromJson(json['compression'] as String) : null)!) : const SdkOmitted(),
+    encoding: (json['encoding'] != null ? CreateDrainResponseVariant0DeliveryVariant0Encoding.fromJson(json['encoding'] as String) : null)!,
+    endpoint: (json['endpoint'] as String?)!,
+    headers: (json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!,
+    secret: json['secret'] != null ? SdkPresent((json['secret'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDrainResponseVariant0DeliveryVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (compression) {
-          SdkPresent<CreateDrainResponseVariant0DeliveryVariant0Compression>(
-            value: final value
-          ) =>
-            {
-              'compression': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'encoding': encoding.toJson(),
-        'endpoint': endpoint,
-        'headers': headers,
-        ...switch (secret) {
-          SdkPresent<dynamic>(value: final value) => {
-              'secret': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    ...switch (compression) {
+      SdkPresent<CreateDrainResponseVariant0DeliveryVariant0Compression>(value: final value) => {'compression': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'encoding': encoding.toJson(),
+    'endpoint': endpoint,
+    'headers': headers,
+    ...switch (secret) {
+      SdkPresent<dynamic>(value: final value) => {'secret': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class CreateDrainResponseVariant0DeliveryVariant1Endpoint {
@@ -126,28 +63,21 @@ class CreateDrainResponseVariant0DeliveryVariant1Endpoint {
   static const String constructionSurface = 'named';
   final String traces;
 
-  const CreateDrainResponseVariant0DeliveryVariant1Endpoint(
-      {required this.traces});
+  const CreateDrainResponseVariant0DeliveryVariant1Endpoint({required this.traces});
 
-  CreateDrainResponseVariant0DeliveryVariant1Endpoint Function({String traces})
-      get copyWith => _copyWith;
+  CreateDrainResponseVariant0DeliveryVariant1Endpoint Function({String traces}) get copyWith => _copyWith;
 
-  CreateDrainResponseVariant0DeliveryVariant1Endpoint _copyWith(
-          {Object? traces = sdkOmittedValue}) =>
-      CreateDrainResponseVariant0DeliveryVariant1Endpoint(
-        traces:
-            identical(traces, sdkOmittedValue) ? this.traces : traces as String,
-      );
+  CreateDrainResponseVariant0DeliveryVariant1Endpoint _copyWith({Object? traces = sdkOmittedValue}) => CreateDrainResponseVariant0DeliveryVariant1Endpoint(
+    traces: identical(traces, sdkOmittedValue) ? this.traces : traces as String,
+  );
 
-  factory CreateDrainResponseVariant0DeliveryVariant1Endpoint.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDrainResponseVariant0DeliveryVariant1Endpoint(
-        traces: (json['traces'] as String?)!,
-      );
+  factory CreateDrainResponseVariant0DeliveryVariant1Endpoint.fromJson(Map<String, dynamic> json) => CreateDrainResponseVariant0DeliveryVariant1Endpoint(
+    traces: (json['traces'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'traces': traces,
-      };
+    'traces': traces,
+  };
 }
 
 class CreateDrainResponseVariant0DeliveryVariant1SecretVariant1 {
@@ -155,71 +85,45 @@ class CreateDrainResponseVariant0DeliveryVariant1SecretVariant1 {
   static const String constructionSurface = 'named';
   final CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind kind;
 
-  const CreateDrainResponseVariant0DeliveryVariant1SecretVariant1(
-      {required this.kind});
+  const CreateDrainResponseVariant0DeliveryVariant1SecretVariant1({required this.kind});
 
-  CreateDrainResponseVariant0DeliveryVariant1SecretVariant1 Function(
-          {CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind kind})
-      get copyWith => _copyWith;
+  CreateDrainResponseVariant0DeliveryVariant1SecretVariant1 Function({CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind kind}) get copyWith => _copyWith;
 
-  CreateDrainResponseVariant0DeliveryVariant1SecretVariant1 _copyWith(
-          {Object? kind = sdkOmittedValue}) =>
-      CreateDrainResponseVariant0DeliveryVariant1SecretVariant1(
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind
-                as CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind,
-      );
+  CreateDrainResponseVariant0DeliveryVariant1SecretVariant1 _copyWith({Object? kind = sdkOmittedValue}) => CreateDrainResponseVariant0DeliveryVariant1SecretVariant1(
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind,
+  );
 
-  factory CreateDrainResponseVariant0DeliveryVariant1SecretVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDrainResponseVariant0DeliveryVariant1SecretVariant1(
-        kind: (json['kind'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind
-                .fromJson(json['kind'] as String)
-            : null)!,
-      );
+  factory CreateDrainResponseVariant0DeliveryVariant1SecretVariant1.fromJson(Map<String, dynamic> json) => CreateDrainResponseVariant0DeliveryVariant1SecretVariant1(
+    kind: (json['kind'] != null ? CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind.fromJson(json['kind'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'kind': kind.toJson(),
-      };
+    'kind': kind.toJson(),
+  };
 }
 
 sealed class CreateDrainResponseVariant0DeliveryVariant1Secret {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDrainResponseVariant0DeliveryVariant1Secret();
-  factory CreateDrainResponseVariant0DeliveryVariant1Secret.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CreateDrainResponseVariant0DeliveryVariant1SecretString(json);
-    }
-    try {
-      return CreateDrainResponseVariant0DeliveryVariant1SecretCreateDrainResponseVariant0DeliveryVariant1SecretVariant1(
-          CreateDrainResponseVariant0DeliveryVariant1SecretVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateDrainResponseVariant0DeliveryVariant1Secret");
+  factory CreateDrainResponseVariant0DeliveryVariant1Secret.fromJson(Object? json) {
+    if (json is String) { return CreateDrainResponseVariant0DeliveryVariant1SecretString(json); }
+    try { return CreateDrainResponseVariant0DeliveryVariant1SecretCreateDrainResponseVariant0DeliveryVariant1SecretVariant1(CreateDrainResponseVariant0DeliveryVariant1SecretVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateDrainResponseVariant0DeliveryVariant1Secret");
   }
   Object? toJson();
 }
 
-final class CreateDrainResponseVariant0DeliveryVariant1SecretString
-    extends CreateDrainResponseVariant0DeliveryVariant1Secret {
+final class CreateDrainResponseVariant0DeliveryVariant1SecretString extends CreateDrainResponseVariant0DeliveryVariant1Secret {
   final String value;
   const CreateDrainResponseVariant0DeliveryVariant1SecretString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CreateDrainResponseVariant0DeliveryVariant1SecretCreateDrainResponseVariant0DeliveryVariant1SecretVariant1
-    extends CreateDrainResponseVariant0DeliveryVariant1Secret {
+final class CreateDrainResponseVariant0DeliveryVariant1SecretCreateDrainResponseVariant0DeliveryVariant1SecretVariant1 extends CreateDrainResponseVariant0DeliveryVariant1Secret {
   final CreateDrainResponseVariant0DeliveryVariant1SecretVariant1 value;
-  const CreateDrainResponseVariant0DeliveryVariant1SecretCreateDrainResponseVariant0DeliveryVariant1SecretVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateDrainResponseVariant0DeliveryVariant1SecretCreateDrainResponseVariant0DeliveryVariant1SecretVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class CreateDrainResponseVariant0DeliveryVariant1 {
@@ -231,81 +135,36 @@ class CreateDrainResponseVariant0DeliveryVariant1 {
   final SdkOptional<dynamic> secret;
   final CreateDrainResponseVariant0DeliveryVariant1Type type_;
 
-  const CreateDrainResponseVariant0DeliveryVariant1(
-      {required this.encoding,
-      required this.endpoint,
-      required this.headers,
-      this.secret = const SdkOmitted(),
-      required this.type_});
+  const CreateDrainResponseVariant0DeliveryVariant1({required this.encoding, required this.endpoint, required this.headers, this.secret = const SdkOmitted(), required this.type_});
 
-  CreateDrainResponseVariant0DeliveryVariant1 Function(
-          {CreateDrainResponseVariant0DeliveryVariant1Encoding encoding,
-          CreateDrainResponseVariant0DeliveryVariant1Endpoint endpoint,
-          Map<String, String> headers,
-          SdkOptional<dynamic> secret,
-          CreateDrainResponseVariant0DeliveryVariant1Type type_})
-      get copyWith => _copyWith;
+  CreateDrainResponseVariant0DeliveryVariant1 Function({CreateDrainResponseVariant0DeliveryVariant1Encoding encoding, CreateDrainResponseVariant0DeliveryVariant1Endpoint endpoint, Map<String, String> headers, SdkOptional<dynamic> secret, CreateDrainResponseVariant0DeliveryVariant1Type type_}) get copyWith => _copyWith;
 
-  CreateDrainResponseVariant0DeliveryVariant1 _copyWith(
-          {Object? encoding = sdkOmittedValue,
-          Object? endpoint = sdkOmittedValue,
-          Object? headers = sdkOmittedValue,
-          Object? secret = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDrainResponseVariant0DeliveryVariant1(
-        encoding: identical(encoding, sdkOmittedValue)
-            ? this.encoding
-            : encoding as CreateDrainResponseVariant0DeliveryVariant1Encoding,
-        endpoint: identical(endpoint, sdkOmittedValue)
-            ? this.endpoint
-            : endpoint as CreateDrainResponseVariant0DeliveryVariant1Endpoint,
-        headers: identical(headers, sdkOmittedValue)
-            ? this.headers
-            : headers as Map<String, String>,
-        secret: identical(secret, sdkOmittedValue)
-            ? this.secret
-            : secret as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDrainResponseVariant0DeliveryVariant1Type,
-      );
+  CreateDrainResponseVariant0DeliveryVariant1 _copyWith({Object? encoding = sdkOmittedValue, Object? endpoint = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? secret = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDrainResponseVariant0DeliveryVariant1(
+    encoding: identical(encoding, sdkOmittedValue) ? this.encoding : encoding as CreateDrainResponseVariant0DeliveryVariant1Encoding,
+    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as CreateDrainResponseVariant0DeliveryVariant1Endpoint,
+    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as Map<String, String>,
+    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDrainResponseVariant0DeliveryVariant1Type,
+  );
 
-  factory CreateDrainResponseVariant0DeliveryVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDrainResponseVariant0DeliveryVariant1(
-        encoding: (json['encoding'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant1Encoding.fromJson(
-                json['encoding'] as String)
-            : null)!,
-        endpoint: (json['endpoint'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant1Endpoint.fromJson(
-                json['endpoint'] as Map<String, dynamic>)
-            : null)!,
-        headers: (json['headers'] == null
-            ? null
-            : Map<String, dynamic>.from(json['headers'] as Map)
-                .map((key, value) => MapEntry(key, value as String)))!,
-        secret: json['secret'] != null
-            ? SdkPresent((json['secret'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDrainResponseVariant0DeliveryVariant1.fromJson(Map<String, dynamic> json) => CreateDrainResponseVariant0DeliveryVariant1(
+    encoding: (json['encoding'] != null ? CreateDrainResponseVariant0DeliveryVariant1Encoding.fromJson(json['encoding'] as String) : null)!,
+    endpoint: (json['endpoint'] != null ? CreateDrainResponseVariant0DeliveryVariant1Endpoint.fromJson(json['endpoint'] as Map<String, dynamic>) : null)!,
+    headers: (json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!,
+    secret: json['secret'] != null ? SdkPresent((json['secret'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDrainResponseVariant0DeliveryVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'encoding': encoding.toJson(),
-        'endpoint': endpoint.toJson(),
-        'headers': headers,
-        ...switch (secret) {
-          SdkPresent<dynamic>(value: final value) => {
-              'secret': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'encoding': encoding.toJson(),
+    'endpoint': endpoint.toJson(),
+    'headers': headers,
+    ...switch (secret) {
+      SdkPresent<dynamic>(value: final value) => {'secret': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class CreateDrainResponseVariant0DeliveryVariant2 {
@@ -315,45 +174,27 @@ class CreateDrainResponseVariant0DeliveryVariant2 {
   final String table;
   final CreateDrainResponseVariant0DeliveryVariant2Type type_;
 
-  const CreateDrainResponseVariant0DeliveryVariant2(
-      {required this.endpoint, required this.table, required this.type_});
+  const CreateDrainResponseVariant0DeliveryVariant2({required this.endpoint, required this.table, required this.type_});
 
-  CreateDrainResponseVariant0DeliveryVariant2 Function(
-          {String endpoint,
-          String table,
-          CreateDrainResponseVariant0DeliveryVariant2Type type_})
-      get copyWith => _copyWith;
+  CreateDrainResponseVariant0DeliveryVariant2 Function({String endpoint, String table, CreateDrainResponseVariant0DeliveryVariant2Type type_}) get copyWith => _copyWith;
 
-  CreateDrainResponseVariant0DeliveryVariant2 _copyWith(
-          {Object? endpoint = sdkOmittedValue,
-          Object? table = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDrainResponseVariant0DeliveryVariant2(
-        endpoint: identical(endpoint, sdkOmittedValue)
-            ? this.endpoint
-            : endpoint as String,
-        table: identical(table, sdkOmittedValue) ? this.table : table as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDrainResponseVariant0DeliveryVariant2Type,
-      );
+  CreateDrainResponseVariant0DeliveryVariant2 _copyWith({Object? endpoint = sdkOmittedValue, Object? table = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDrainResponseVariant0DeliveryVariant2(
+    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as String,
+    table: identical(table, sdkOmittedValue) ? this.table : table as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDrainResponseVariant0DeliveryVariant2Type,
+  );
 
-  factory CreateDrainResponseVariant0DeliveryVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDrainResponseVariant0DeliveryVariant2(
-        endpoint: (json['endpoint'] as String?)!,
-        table: (json['table'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDrainResponseVariant0DeliveryVariant2.fromJson(Map<String, dynamic> json) => CreateDrainResponseVariant0DeliveryVariant2(
+    endpoint: (json['endpoint'] as String?)!,
+    table: (json['table'] as String?)!,
+    type_: (json['type'] != null ? CreateDrainResponseVariant0DeliveryVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'endpoint': endpoint,
-        'table': table,
-        'type': type_.toJson(),
-      };
+    'endpoint': endpoint,
+    'table': table,
+    'type': type_.toJson(),
+  };
 }
 
 class CreateDrainResponseVariant0DeliveryVariant3 {
@@ -363,148 +204,57 @@ class CreateDrainResponseVariant0DeliveryVariant3 {
   final CreateDrainResponseVariant0DeliveryVariant3Encoding encoding;
   final String endpoint;
   final CreateDrainResponseVariant0DeliveryVariant3FileStructure fileStructure;
-  final SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ObjectAcl>
-      objectAcl;
+  final SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ObjectAcl> objectAcl;
   final String region;
   final String roleArn;
-  final SdkOptional<
-          CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption>
-      serverSideEncryption;
+  final SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption> serverSideEncryption;
   final CreateDrainResponseVariant0DeliveryVariant3Type type_;
 
-  const CreateDrainResponseVariant0DeliveryVariant3(
-      {required this.compression,
-      required this.encoding,
-      required this.endpoint,
-      required this.fileStructure,
-      this.objectAcl = const SdkOmitted(),
-      required this.region,
-      required this.roleArn,
-      this.serverSideEncryption = const SdkOmitted(),
-      required this.type_});
+  const CreateDrainResponseVariant0DeliveryVariant3({required this.compression, required this.encoding, required this.endpoint, required this.fileStructure, this.objectAcl = const SdkOmitted(), required this.region, required this.roleArn, this.serverSideEncryption = const SdkOmitted(), required this.type_});
 
-  CreateDrainResponseVariant0DeliveryVariant3 Function(
-      {CreateDrainResponseVariant0DeliveryVariant3Compression compression,
-      CreateDrainResponseVariant0DeliveryVariant3Encoding encoding,
-      String endpoint,
-      CreateDrainResponseVariant0DeliveryVariant3FileStructure fileStructure,
-      SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ObjectAcl>
-          objectAcl,
-      String region,
-      String roleArn,
-      SdkOptional<
-              CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption>
-          serverSideEncryption,
-      CreateDrainResponseVariant0DeliveryVariant3Type
-          type_}) get copyWith => _copyWith;
+  CreateDrainResponseVariant0DeliveryVariant3 Function({CreateDrainResponseVariant0DeliveryVariant3Compression compression, CreateDrainResponseVariant0DeliveryVariant3Encoding encoding, String endpoint, CreateDrainResponseVariant0DeliveryVariant3FileStructure fileStructure, SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ObjectAcl> objectAcl, String region, String roleArn, SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption> serverSideEncryption, CreateDrainResponseVariant0DeliveryVariant3Type type_}) get copyWith => _copyWith;
 
-  CreateDrainResponseVariant0DeliveryVariant3 _copyWith(
-          {Object? compression = sdkOmittedValue,
-          Object? encoding = sdkOmittedValue,
-          Object? endpoint = sdkOmittedValue,
-          Object? fileStructure = sdkOmittedValue,
-          Object? objectAcl = sdkOmittedValue,
-          Object? region = sdkOmittedValue,
-          Object? roleArn = sdkOmittedValue,
-          Object? serverSideEncryption = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDrainResponseVariant0DeliveryVariant3(
-        compression: identical(compression, sdkOmittedValue)
-            ? this.compression
-            : compression
-                as CreateDrainResponseVariant0DeliveryVariant3Compression,
-        encoding: identical(encoding, sdkOmittedValue)
-            ? this.encoding
-            : encoding as CreateDrainResponseVariant0DeliveryVariant3Encoding,
-        endpoint: identical(endpoint, sdkOmittedValue)
-            ? this.endpoint
-            : endpoint as String,
-        fileStructure: identical(fileStructure, sdkOmittedValue)
-            ? this.fileStructure
-            : fileStructure
-                as CreateDrainResponseVariant0DeliveryVariant3FileStructure,
-        objectAcl: identical(objectAcl, sdkOmittedValue)
-            ? this.objectAcl
-            : objectAcl as SdkOptional<
-                CreateDrainResponseVariant0DeliveryVariant3ObjectAcl>,
-        region:
-            identical(region, sdkOmittedValue) ? this.region : region as String,
-        roleArn: identical(roleArn, sdkOmittedValue)
-            ? this.roleArn
-            : roleArn as String,
-        serverSideEncryption: identical(serverSideEncryption, sdkOmittedValue)
-            ? this.serverSideEncryption
-            : serverSideEncryption as SdkOptional<
-                CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDrainResponseVariant0DeliveryVariant3Type,
-      );
+  CreateDrainResponseVariant0DeliveryVariant3 _copyWith({Object? compression = sdkOmittedValue, Object? encoding = sdkOmittedValue, Object? endpoint = sdkOmittedValue, Object? fileStructure = sdkOmittedValue, Object? objectAcl = sdkOmittedValue, Object? region = sdkOmittedValue, Object? roleArn = sdkOmittedValue, Object? serverSideEncryption = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDrainResponseVariant0DeliveryVariant3(
+    compression: identical(compression, sdkOmittedValue) ? this.compression : compression as CreateDrainResponseVariant0DeliveryVariant3Compression,
+    encoding: identical(encoding, sdkOmittedValue) ? this.encoding : encoding as CreateDrainResponseVariant0DeliveryVariant3Encoding,
+    endpoint: identical(endpoint, sdkOmittedValue) ? this.endpoint : endpoint as String,
+    fileStructure: identical(fileStructure, sdkOmittedValue) ? this.fileStructure : fileStructure as CreateDrainResponseVariant0DeliveryVariant3FileStructure,
+    objectAcl: identical(objectAcl, sdkOmittedValue) ? this.objectAcl : objectAcl as SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ObjectAcl>,
+    region: identical(region, sdkOmittedValue) ? this.region : region as String,
+    roleArn: identical(roleArn, sdkOmittedValue) ? this.roleArn : roleArn as String,
+    serverSideEncryption: identical(serverSideEncryption, sdkOmittedValue) ? this.serverSideEncryption : serverSideEncryption as SdkOptional<CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDrainResponseVariant0DeliveryVariant3Type,
+  );
 
-  factory CreateDrainResponseVariant0DeliveryVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDrainResponseVariant0DeliveryVariant3(
-        compression: (json['compression'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant3Compression.fromJson(
-                json['compression'] as String)
-            : null)!,
-        encoding: (json['encoding'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant3Encoding.fromJson(
-                json['encoding'] as String)
-            : null)!,
-        endpoint: (json['endpoint'] as String?)!,
-        fileStructure: (json['fileStructure'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant3FileStructure.fromJson(
-                json['fileStructure'] as String)
-            : null)!,
-        objectAcl: json['objectAcl'] != null
-            ? SdkPresent((json['objectAcl'] != null
-                ? CreateDrainResponseVariant0DeliveryVariant3ObjectAcl.fromJson(
-                    json['objectAcl'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        region: (json['region'] as String?)!,
-        roleArn: (json['roleArn'] as String?)!,
-        serverSideEncryption: json['serverSideEncryption'] != null
-            ? SdkPresent((json['serverSideEncryption'] != null
-                ? CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption
-                    .fromJson(json['serverSideEncryption'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDrainResponseVariant0DeliveryVariant3.fromJson(Map<String, dynamic> json) => CreateDrainResponseVariant0DeliveryVariant3(
+    compression: (json['compression'] != null ? CreateDrainResponseVariant0DeliveryVariant3Compression.fromJson(json['compression'] as String) : null)!,
+    encoding: (json['encoding'] != null ? CreateDrainResponseVariant0DeliveryVariant3Encoding.fromJson(json['encoding'] as String) : null)!,
+    endpoint: (json['endpoint'] as String?)!,
+    fileStructure: (json['fileStructure'] != null ? CreateDrainResponseVariant0DeliveryVariant3FileStructure.fromJson(json['fileStructure'] as String) : null)!,
+    objectAcl: json['objectAcl'] != null ? SdkPresent((json['objectAcl'] != null ? CreateDrainResponseVariant0DeliveryVariant3ObjectAcl.fromJson(json['objectAcl'] as String) : null)!) : const SdkOmitted(),
+    region: (json['region'] as String?)!,
+    roleArn: (json['roleArn'] as String?)!,
+    serverSideEncryption: json['serverSideEncryption'] != null ? SdkPresent((json['serverSideEncryption'] != null ? CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption.fromJson(json['serverSideEncryption'] as String) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CreateDrainResponseVariant0DeliveryVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'compression': compression.toJson(),
-        'encoding': encoding.toJson(),
-        'endpoint': endpoint,
-        'fileStructure': fileStructure.toJson(),
-        ...switch (objectAcl) {
-          SdkPresent<CreateDrainResponseVariant0DeliveryVariant3ObjectAcl>(
-            value: final value
-          ) =>
-            {
-              'objectAcl': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'region': region,
-        'roleArn': roleArn,
-        ...switch (serverSideEncryption) {
-          SdkPresent<
-                CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption>(
-            value: final value
-          ) =>
-            {
-              'serverSideEncryption': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'compression': compression.toJson(),
+    'encoding': encoding.toJson(),
+    'endpoint': endpoint,
+    'fileStructure': fileStructure.toJson(),
+    ...switch (objectAcl) {
+      SdkPresent<CreateDrainResponseVariant0DeliveryVariant3ObjectAcl>(value: final value) => {'objectAcl': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'region': region,
+    'roleArn': roleArn,
+    ...switch (serverSideEncryption) {
+      SdkPresent<CreateDrainResponseVariant0DeliveryVariant3ServerSideEncryption>(value: final value) => {'serverSideEncryption': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class CreateDrainResponseVariant0DeliveryVariant4 {
@@ -513,41 +263,22 @@ class CreateDrainResponseVariant0DeliveryVariant4 {
   final CreateDrainResponseVariant0DeliveryVariant4Target target;
   final CreateDrainResponseVariant0DeliveryVariant4Type type_;
 
-  const CreateDrainResponseVariant0DeliveryVariant4(
-      {required this.target, required this.type_});
+  const CreateDrainResponseVariant0DeliveryVariant4({required this.target, required this.type_});
 
-  CreateDrainResponseVariant0DeliveryVariant4 Function(
-          {CreateDrainResponseVariant0DeliveryVariant4Target target,
-          CreateDrainResponseVariant0DeliveryVariant4Type type_})
-      get copyWith => _copyWith;
+  CreateDrainResponseVariant0DeliveryVariant4 Function({CreateDrainResponseVariant0DeliveryVariant4Target target, CreateDrainResponseVariant0DeliveryVariant4Type type_}) get copyWith => _copyWith;
 
-  CreateDrainResponseVariant0DeliveryVariant4 _copyWith(
-          {Object? target = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateDrainResponseVariant0DeliveryVariant4(
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as CreateDrainResponseVariant0DeliveryVariant4Target,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateDrainResponseVariant0DeliveryVariant4Type,
-      );
+  CreateDrainResponseVariant0DeliveryVariant4 _copyWith({Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDrainResponseVariant0DeliveryVariant4(
+    target: identical(target, sdkOmittedValue) ? this.target : target as CreateDrainResponseVariant0DeliveryVariant4Target,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDrainResponseVariant0DeliveryVariant4Type,
+  );
 
-  factory CreateDrainResponseVariant0DeliveryVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDrainResponseVariant0DeliveryVariant4(
-        target: (json['target'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant4Target.fromJson(
-                json['target'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? CreateDrainResponseVariant0DeliveryVariant4Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateDrainResponseVariant0DeliveryVariant4.fromJson(Map<String, dynamic> json) => CreateDrainResponseVariant0DeliveryVariant4(
+    target: (json['target'] != null ? CreateDrainResponseVariant0DeliveryVariant4Target.fromJson(json['target'] as String) : null)!,
+    type_: (json['type'] != null ? CreateDrainResponseVariant0DeliveryVariant4Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'target': target.toJson(),
-        'type': type_.toJson(),
-      };
+    'target': target.toJson(),
+    'type': type_.toJson(),
+  };
 }

@@ -7,663 +7,285 @@ part of 'inline.dart';
 class CreateConfigurableLogDrainRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The delivery log format
   final CreateConfigurableLogDrainRequestBodyDeliveryFormat deliveryFormat;
-
   /// The log drain url
   final String url;
-
   /// Headers to be sent together with the request
   final SdkOptional<Map<String, String>> headers;
   final SdkOptional<List<String>> projectIds;
   final List<CreateConfigurableLogDrainRequestBodySourcesItem> sources;
-  final SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>
-      environments;
-
+  final SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>> environments;
   /// Custom secret of log drain
   final SdkOptional<String> secret;
-
   /// The sampling rate for this log drain. It should be a percentage rate between 0 and 100. With max 2 decimal points
   final SdkOptional<double> samplingRate;
-
   /// The custom name of this log drain.
   final SdkOptional<String> name;
 
-  const CreateConfigurableLogDrainRequestBody(
-      {required this.deliveryFormat,
-      required this.url,
-      this.headers = const SdkOmitted(),
-      this.projectIds = const SdkOmitted(),
-      required this.sources,
-      this.environments = const SdkOmitted(),
-      this.secret = const SdkOmitted(),
-      this.samplingRate = const SdkOmitted(),
-      this.name = const SdkOmitted()});
+  const CreateConfigurableLogDrainRequestBody({required this.deliveryFormat, required this.url, this.headers = const SdkOmitted(), this.projectIds = const SdkOmitted(), required this.sources, this.environments = const SdkOmitted(), this.secret = const SdkOmitted(), this.samplingRate = const SdkOmitted(), this.name = const SdkOmitted()});
 
-  CreateConfigurableLogDrainRequestBody Function(
-      {CreateConfigurableLogDrainRequestBodyDeliveryFormat deliveryFormat,
-      String url,
-      SdkOptional<Map<String, String>> headers,
-      SdkOptional<List<String>> projectIds,
-      List<CreateConfigurableLogDrainRequestBodySourcesItem> sources,
-      SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>
-          environments,
-      SdkOptional<String> secret,
-      SdkOptional<double> samplingRate,
-      SdkOptional<String> name}) get copyWith => _copyWith;
+  CreateConfigurableLogDrainRequestBody Function({CreateConfigurableLogDrainRequestBodyDeliveryFormat deliveryFormat, String url, SdkOptional<Map<String, String>> headers, SdkOptional<List<String>> projectIds, List<CreateConfigurableLogDrainRequestBodySourcesItem> sources, SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>> environments, SdkOptional<String> secret, SdkOptional<double> samplingRate, SdkOptional<String> name}) get copyWith => _copyWith;
 
-  CreateConfigurableLogDrainRequestBody _copyWith(
-          {Object? deliveryFormat = sdkOmittedValue,
-          Object? url = sdkOmittedValue,
-          Object? headers = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue,
-          Object? sources = sdkOmittedValue,
-          Object? environments = sdkOmittedValue,
-          Object? secret = sdkOmittedValue,
-          Object? samplingRate = sdkOmittedValue,
-          Object? name = sdkOmittedValue}) =>
-      CreateConfigurableLogDrainRequestBody(
-        deliveryFormat: identical(deliveryFormat, sdkOmittedValue)
-            ? this.deliveryFormat
-            : deliveryFormat
-                as CreateConfigurableLogDrainRequestBodyDeliveryFormat,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        headers: identical(headers, sdkOmittedValue)
-            ? this.headers
-            : headers as SdkOptional<Map<String, String>>,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-        sources: identical(sources, sdkOmittedValue)
-            ? this.sources
-            : sources as List<CreateConfigurableLogDrainRequestBodySourcesItem>,
-        environments: identical(environments, sdkOmittedValue)
-            ? this.environments
-            : environments as SdkOptional<
-                List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>,
-        secret: identical(secret, sdkOmittedValue)
-            ? this.secret
-            : secret as SdkOptional<String>,
-        samplingRate: identical(samplingRate, sdkOmittedValue)
-            ? this.samplingRate
-            : samplingRate as SdkOptional<double>,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-      );
+  CreateConfigurableLogDrainRequestBody _copyWith({Object? deliveryFormat = sdkOmittedValue, Object? url = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? sources = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? secret = sdkOmittedValue, Object? samplingRate = sdkOmittedValue, Object? name = sdkOmittedValue}) => CreateConfigurableLogDrainRequestBody(
+    deliveryFormat: identical(deliveryFormat, sdkOmittedValue) ? this.deliveryFormat : deliveryFormat as CreateConfigurableLogDrainRequestBodyDeliveryFormat,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as SdkOptional<Map<String, String>>,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+    sources: identical(sources, sdkOmittedValue) ? this.sources : sources as List<CreateConfigurableLogDrainRequestBodySourcesItem>,
+    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>,
+    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as SdkOptional<String>,
+    samplingRate: identical(samplingRate, sdkOmittedValue) ? this.samplingRate : samplingRate as SdkOptional<double>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+  );
 
-  factory CreateConfigurableLogDrainRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConfigurableLogDrainRequestBody(
-        deliveryFormat: (json['deliveryFormat'] != null
-            ? CreateConfigurableLogDrainRequestBodyDeliveryFormat.fromJson(
-                json['deliveryFormat'] as String)
-            : null)!,
-        url: (json['url'] as String?)!,
-        headers: json['headers'] != null
-            ? SdkPresent((json['headers'] == null
-                ? null
-                : Map<String, dynamic>.from(json['headers'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        sources: ((json['sources'] as List?)
-            ?.map((e) =>
-                CreateConfigurableLogDrainRequestBodySourcesItem.fromJson(
-                    e as String))
-            .toList())!,
-        environments: json['environments'] != null
-            ? SdkPresent(((json['environments'] as List?)
-                ?.map((e) =>
-                    CreateConfigurableLogDrainRequestBodyEnvironmentsItem
-                        .fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        secret: json['secret'] != null
-            ? SdkPresent((json['secret'] as String?)!)
-            : const SdkOmitted(),
-        samplingRate: json['samplingRate'] != null
-            ? SdkPresent(((json['samplingRate'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateConfigurableLogDrainRequestBody.fromJson(Map<String, dynamic> json) => CreateConfigurableLogDrainRequestBody(
+    deliveryFormat: (json['deliveryFormat'] != null ? CreateConfigurableLogDrainRequestBodyDeliveryFormat.fromJson(json['deliveryFormat'] as String) : null)!,
+    url: (json['url'] as String?)!,
+    headers: json['headers'] != null ? SdkPresent((json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    sources: ((json['sources'] as List?)?.map((e) => CreateConfigurableLogDrainRequestBodySourcesItem.fromJson(e as String)).toList())!,
+    environments: json['environments'] != null ? SdkPresent(((json['environments'] as List?)?.map((e) => CreateConfigurableLogDrainRequestBodyEnvironmentsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    secret: json['secret'] != null ? SdkPresent((json['secret'] as String?)!) : const SdkOmitted(),
+    samplingRate: json['samplingRate'] != null ? SdkPresent(((json['samplingRate'] as num?)?.toDouble())!) : const SdkOmitted(),
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'deliveryFormat': deliveryFormat.toJson(),
-        'url': url,
-        ...switch (headers) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'headers': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'sources': sources.map((item) => item.toJson()).toList(),
-        ...switch (environments) {
-          SdkPresent<
-                List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>(
-            value: final value
-          ) =>
-            {
-              'environments': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secret) {
-          SdkPresent<String>(value: final value) => {
-              'secret': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (samplingRate) {
-          SdkPresent<double>(value: final value) => {
-              'samplingRate': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'deliveryFormat': deliveryFormat.toJson(),
+    'url': url,
+    ...switch (headers) {
+      SdkPresent<Map<String, String>>(value: final value) => {'headers': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    'sources': sources.map((item) => item.toJson()).toList(),
+    ...switch (environments) {
+      SdkPresent<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>(value: final value) => {'environments': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secret) {
+      SdkPresent<String>(value: final value) => {'secret': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (samplingRate) {
+      SdkPresent<double>(value: final value) => {'samplingRate': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetIntegrationLogDrainsResponseItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The branch regexp of log drain
   final SdkOptional<String> branch;
-
   /// The oauth2 client application id that created this log drain
   final SdkOptional<String> clientId;
-
   /// The client configuration this log drain was created with
   final SdkOptional<String> configurationId;
-
   /// A timestamp that tells you when the log drain was created
   final double createdAt;
-
   /// Whether the log drain was created by an integration or by a user
   final SdkOptional<GetIntegrationLogDrainsResponseItemCreatedFrom> createdFrom;
-
   /// The delivery log format
-  final SdkOptional<GetIntegrationLogDrainsResponseItemDeliveryFormat>
-      deliveryFormat;
-
+  final SdkOptional<GetIntegrationLogDrainsResponseItemDeliveryFormat> deliveryFormat;
   /// The environment of log drain
-  final SdkOptional<List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>>
-      environments;
-
+  final SdkOptional<List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>> environments;
   /// The headers to send with the request
   final SdkOptional<Map<String, String>> headers;
-
   /// The unique identifier of the log drain. Always prefixed with `ld_`
   final String id;
-
   /// The name of the log drain
   final String name;
-
   /// The identifier of the team or user whose events will trigger the log drain
   final String ownerId;
   final SdkOptional<String?> projectId;
-
   /// The identifier of the projects this log drain is associated with
   final SdkOptional<List<String>> projectIds;
-
   /// The sampling rate of log drain
   final SdkOptional<double> samplingRate;
-
   /// Typed representation of the `GetIntegrationLogDrainsResponseItemSource` API schema.
   final GetIntegrationLogDrainsResponseItemSource source;
-
   /// The sources from which logs are currently being delivered to this log drain.
-  final SdkOptional<List<GetIntegrationLogDrainsResponseItemSourcesItem>>
-      sources;
-
+  final SdkOptional<List<GetIntegrationLogDrainsResponseItemSourcesItem>> sources;
   /// The URL to call when logs are generated
   final String url;
 
-  const GetIntegrationLogDrainsResponseItem(
-      {this.branch = const SdkOmitted(),
-      this.clientId = const SdkOmitted(),
-      this.configurationId = const SdkOmitted(),
-      required this.createdAt,
-      this.createdFrom = const SdkOmitted(),
-      this.deliveryFormat = const SdkOmitted(),
-      this.environments = const SdkOmitted(),
-      this.headers = const SdkOmitted(),
-      required this.id,
-      required this.name,
-      required this.ownerId,
-      this.projectId = const SdkOmitted(),
-      this.projectIds = const SdkOmitted(),
-      this.samplingRate = const SdkOmitted(),
-      required this.source,
-      this.sources = const SdkOmitted(),
-      required this.url});
+  const GetIntegrationLogDrainsResponseItem({this.branch = const SdkOmitted(), this.clientId = const SdkOmitted(), this.configurationId = const SdkOmitted(), required this.createdAt, this.createdFrom = const SdkOmitted(), this.deliveryFormat = const SdkOmitted(), this.environments = const SdkOmitted(), this.headers = const SdkOmitted(), required this.id, required this.name, required this.ownerId, this.projectId = const SdkOmitted(), this.projectIds = const SdkOmitted(), this.samplingRate = const SdkOmitted(), required this.source, this.sources = const SdkOmitted(), required this.url});
 
-  GetIntegrationLogDrainsResponseItem Function(
-      {SdkOptional<String> branch,
-      SdkOptional<String> clientId,
-      SdkOptional<String> configurationId,
-      double createdAt,
-      SdkOptional<GetIntegrationLogDrainsResponseItemCreatedFrom> createdFrom,
-      SdkOptional<GetIntegrationLogDrainsResponseItemDeliveryFormat>
-          deliveryFormat,
-      SdkOptional<List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>>
-          environments,
-      SdkOptional<Map<String, String>> headers,
-      String id,
-      String name,
-      String ownerId,
-      SdkOptional<String?> projectId,
-      SdkOptional<List<String>> projectIds,
-      SdkOptional<double> samplingRate,
-      GetIntegrationLogDrainsResponseItemSource source,
-      SdkOptional<List<GetIntegrationLogDrainsResponseItemSourcesItem>> sources,
-      String url}) get copyWith => _copyWith;
+  GetIntegrationLogDrainsResponseItem Function({SdkOptional<String> branch, SdkOptional<String> clientId, SdkOptional<String> configurationId, double createdAt, SdkOptional<GetIntegrationLogDrainsResponseItemCreatedFrom> createdFrom, SdkOptional<GetIntegrationLogDrainsResponseItemDeliveryFormat> deliveryFormat, SdkOptional<List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>> environments, SdkOptional<Map<String, String>> headers, String id, String name, String ownerId, SdkOptional<String?> projectId, SdkOptional<List<String>> projectIds, SdkOptional<double> samplingRate, GetIntegrationLogDrainsResponseItemSource source, SdkOptional<List<GetIntegrationLogDrainsResponseItemSourcesItem>> sources, String url}) get copyWith => _copyWith;
 
-  GetIntegrationLogDrainsResponseItem _copyWith(
-          {Object? branch = sdkOmittedValue,
-          Object? clientId = sdkOmittedValue,
-          Object? configurationId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdFrom = sdkOmittedValue,
-          Object? deliveryFormat = sdkOmittedValue,
-          Object? environments = sdkOmittedValue,
-          Object? headers = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue,
-          Object? samplingRate = sdkOmittedValue,
-          Object? source = sdkOmittedValue,
-          Object? sources = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      GetIntegrationLogDrainsResponseItem(
-        branch: identical(branch, sdkOmittedValue)
-            ? this.branch
-            : branch as SdkOptional<String>,
-        clientId: identical(clientId, sdkOmittedValue)
-            ? this.clientId
-            : clientId as SdkOptional<String>,
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as SdkOptional<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdFrom: identical(createdFrom, sdkOmittedValue)
-            ? this.createdFrom
-            : createdFrom
-                as SdkOptional<GetIntegrationLogDrainsResponseItemCreatedFrom>,
-        deliveryFormat: identical(deliveryFormat, sdkOmittedValue)
-            ? this.deliveryFormat
-            : deliveryFormat as SdkOptional<
-                GetIntegrationLogDrainsResponseItemDeliveryFormat>,
-        environments: identical(environments, sdkOmittedValue)
-            ? this.environments
-            : environments as SdkOptional<
-                List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>>,
-        headers: identical(headers, sdkOmittedValue)
-            ? this.headers
-            : headers as SdkOptional<Map<String, String>>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String?>,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-        samplingRate: identical(samplingRate, sdkOmittedValue)
-            ? this.samplingRate
-            : samplingRate as SdkOptional<double>,
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source as GetIntegrationLogDrainsResponseItemSource,
-        sources: identical(sources, sdkOmittedValue)
-            ? this.sources
-            : sources as SdkOptional<
-                List<GetIntegrationLogDrainsResponseItemSourcesItem>>,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  GetIntegrationLogDrainsResponseItem _copyWith({Object? branch = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdFrom = sdkOmittedValue, Object? deliveryFormat = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? samplingRate = sdkOmittedValue, Object? source = sdkOmittedValue, Object? sources = sdkOmittedValue, Object? url = sdkOmittedValue}) => GetIntegrationLogDrainsResponseItem(
+    branch: identical(branch, sdkOmittedValue) ? this.branch : branch as SdkOptional<String>,
+    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdFrom: identical(createdFrom, sdkOmittedValue) ? this.createdFrom : createdFrom as SdkOptional<GetIntegrationLogDrainsResponseItemCreatedFrom>,
+    deliveryFormat: identical(deliveryFormat, sdkOmittedValue) ? this.deliveryFormat : deliveryFormat as SdkOptional<GetIntegrationLogDrainsResponseItemDeliveryFormat>,
+    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as SdkOptional<List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>>,
+    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as SdkOptional<Map<String, String>>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String?>,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+    samplingRate: identical(samplingRate, sdkOmittedValue) ? this.samplingRate : samplingRate as SdkOptional<double>,
+    source: identical(source, sdkOmittedValue) ? this.source : source as GetIntegrationLogDrainsResponseItemSource,
+    sources: identical(sources, sdkOmittedValue) ? this.sources : sources as SdkOptional<List<GetIntegrationLogDrainsResponseItemSourcesItem>>,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory GetIntegrationLogDrainsResponseItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetIntegrationLogDrainsResponseItem(
-        branch: json['branch'] != null
-            ? SdkPresent((json['branch'] as String?)!)
-            : const SdkOmitted(),
-        clientId: json['clientId'] != null
-            ? SdkPresent((json['clientId'] as String?)!)
-            : const SdkOmitted(),
-        configurationId: json['configurationId'] != null
-            ? SdkPresent((json['configurationId'] as String?)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdFrom: json['createdFrom'] != null
-            ? SdkPresent((json['createdFrom'] != null
-                ? GetIntegrationLogDrainsResponseItemCreatedFrom.fromJson(
-                    json['createdFrom'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        deliveryFormat: json['deliveryFormat'] != null
-            ? SdkPresent((json['deliveryFormat'] != null
-                ? GetIntegrationLogDrainsResponseItemDeliveryFormat.fromJson(
-                    json['deliveryFormat'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        environments: json['environments'] != null
-            ? SdkPresent(((json['environments'] as List?)
-                ?.map((e) => GetIntegrationLogDrainsResponseItemEnvironmentsItem
-                    .fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        headers: json['headers'] != null
-            ? SdkPresent((json['headers'] == null
-                ? null
-                : Map<String, dynamic>.from(json['headers'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        ownerId: (json['ownerId'] as String?)!,
-        projectId: json.containsKey('projectId')
-            ? SdkPresent(json['projectId'] as String?)
-            : const SdkOmitted(),
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        samplingRate: json['samplingRate'] != null
-            ? SdkPresent(((json['samplingRate'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        source: (json['source'] != null
-            ? GetIntegrationLogDrainsResponseItemSource.fromJson(json['source'])
-            : null)!,
-        sources: json['sources'] != null
-            ? SdkPresent(((json['sources'] as List?)
-                ?.map((e) =>
-                    GetIntegrationLogDrainsResponseItemSourcesItem.fromJson(
-                        e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        url: (json['url'] as String?)!,
-      );
+  factory GetIntegrationLogDrainsResponseItem.fromJson(Map<String, dynamic> json) => GetIntegrationLogDrainsResponseItem(
+    branch: json['branch'] != null ? SdkPresent((json['branch'] as String?)!) : const SdkOmitted(),
+    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
+    configurationId: json['configurationId'] != null ? SdkPresent((json['configurationId'] as String?)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdFrom: json['createdFrom'] != null ? SdkPresent((json['createdFrom'] != null ? GetIntegrationLogDrainsResponseItemCreatedFrom.fromJson(json['createdFrom'] as String) : null)!) : const SdkOmitted(),
+    deliveryFormat: json['deliveryFormat'] != null ? SdkPresent((json['deliveryFormat'] != null ? GetIntegrationLogDrainsResponseItemDeliveryFormat.fromJson(json['deliveryFormat'] as String) : null)!) : const SdkOmitted(),
+    environments: json['environments'] != null ? SdkPresent(((json['environments'] as List?)?.map((e) => GetIntegrationLogDrainsResponseItemEnvironmentsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    headers: json['headers'] != null ? SdkPresent((json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    ownerId: (json['ownerId'] as String?)!,
+    projectId: json.containsKey('projectId') ? SdkPresent(json['projectId'] as String?) : const SdkOmitted(),
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    samplingRate: json['samplingRate'] != null ? SdkPresent(((json['samplingRate'] as num?)?.toDouble())!) : const SdkOmitted(),
+    source: (json['source'] != null ? GetIntegrationLogDrainsResponseItemSource.fromJson(json['source']) : null)!,
+    sources: json['sources'] != null ? SdkPresent(((json['sources'] as List?)?.map((e) => GetIntegrationLogDrainsResponseItemSourcesItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (branch) {
-          SdkPresent<String>(value: final value) => {
-              'branch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (clientId) {
-          SdkPresent<String>(value: final value) => {
-              'clientId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (configurationId) {
-          SdkPresent<String>(value: final value) => {
-              'configurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        ...switch (createdFrom) {
-          SdkPresent<GetIntegrationLogDrainsResponseItemCreatedFrom>(
-            value: final value
-          ) =>
-            {
-              'createdFrom': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deliveryFormat) {
-          SdkPresent<GetIntegrationLogDrainsResponseItemDeliveryFormat>(
-            value: final value
-          ) =>
-            {
-              'deliveryFormat': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environments) {
-          SdkPresent<List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>>(
-            value: final value
-          ) =>
-            {
-              'environments': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (headers) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'headers': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-        'ownerId': ownerId,
-        ...switch (projectId) {
-          SdkPresent<String?>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (samplingRate) {
-          SdkPresent<double>(value: final value) => {
-              'samplingRate': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'source': source.toJson(),
-        ...switch (sources) {
-          SdkPresent<List<GetIntegrationLogDrainsResponseItemSourcesItem>>(
-            value: final value
-          ) =>
-            {
-              'sources': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'url': url,
-      };
+    ...switch (branch) {
+      SdkPresent<String>(value: final value) => {'branch': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (clientId) {
+      SdkPresent<String>(value: final value) => {'clientId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (configurationId) {
+      SdkPresent<String>(value: final value) => {'configurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    ...switch (createdFrom) {
+      SdkPresent<GetIntegrationLogDrainsResponseItemCreatedFrom>(value: final value) => {'createdFrom': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deliveryFormat) {
+      SdkPresent<GetIntegrationLogDrainsResponseItemDeliveryFormat>(value: final value) => {'deliveryFormat': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environments) {
+      SdkPresent<List<GetIntegrationLogDrainsResponseItemEnvironmentsItem>>(value: final value) => {'environments': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (headers) {
+      SdkPresent<Map<String, String>>(value: final value) => {'headers': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+    'ownerId': ownerId,
+    ...switch (projectId) {
+      SdkPresent<String?>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (samplingRate) {
+      SdkPresent<double>(value: final value) => {'samplingRate': value,},
+      _ => const <String, dynamic>{},
+    },
+    'source': source.toJson(),
+    ...switch (sources) {
+      SdkPresent<List<GetIntegrationLogDrainsResponseItemSourcesItem>>(value: final value) => {'sources': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'url': url,
+  };
 }
 
 class CreateLogDrainRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The name of the log drain
   final String name;
   final SdkOptional<List<String>> projectIds;
-
   /// A secret to sign log drain notification headers so a consumer can verify their authenticity
   final SdkOptional<String> secret;
-
   /// The delivery log format
   final SdkOptional<CreateLogDrainRequestBodyDeliveryFormat> deliveryFormat;
-
   /// The url where you will receive logs. The protocol must be `https://` or `http://` when type is `json` and `ndjson`.
   final String url;
   final SdkOptional<List<CreateLogDrainRequestBodySourcesItem>> sources;
-
   /// Headers to be sent together with the request
   final SdkOptional<Map<String, String>> headers;
-  final SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>>
-      environments;
+  final SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>> environments;
 
-  const CreateLogDrainRequestBody(
-      {required this.name,
-      this.projectIds = const SdkOmitted(),
-      this.secret = const SdkOmitted(),
-      this.deliveryFormat = const SdkOmitted(),
-      required this.url,
-      this.sources = const SdkOmitted(),
-      this.headers = const SdkOmitted(),
-      this.environments = const SdkOmitted()});
+  const CreateLogDrainRequestBody({required this.name, this.projectIds = const SdkOmitted(), this.secret = const SdkOmitted(), this.deliveryFormat = const SdkOmitted(), required this.url, this.sources = const SdkOmitted(), this.headers = const SdkOmitted(), this.environments = const SdkOmitted()});
 
-  CreateLogDrainRequestBody Function(
-      {String name,
-      SdkOptional<List<String>> projectIds,
-      SdkOptional<String> secret,
-      SdkOptional<CreateLogDrainRequestBodyDeliveryFormat> deliveryFormat,
-      String url,
-      SdkOptional<List<CreateLogDrainRequestBodySourcesItem>> sources,
-      SdkOptional<Map<String, String>> headers,
-      SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>>
-          environments}) get copyWith => _copyWith;
+  CreateLogDrainRequestBody Function({String name, SdkOptional<List<String>> projectIds, SdkOptional<String> secret, SdkOptional<CreateLogDrainRequestBodyDeliveryFormat> deliveryFormat, String url, SdkOptional<List<CreateLogDrainRequestBodySourcesItem>> sources, SdkOptional<Map<String, String>> headers, SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>> environments}) get copyWith => _copyWith;
 
-  CreateLogDrainRequestBody _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue,
-          Object? secret = sdkOmittedValue,
-          Object? deliveryFormat = sdkOmittedValue,
-          Object? url = sdkOmittedValue,
-          Object? sources = sdkOmittedValue,
-          Object? headers = sdkOmittedValue,
-          Object? environments = sdkOmittedValue}) =>
-      CreateLogDrainRequestBody(
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-        secret: identical(secret, sdkOmittedValue)
-            ? this.secret
-            : secret as SdkOptional<String>,
-        deliveryFormat: identical(deliveryFormat, sdkOmittedValue)
-            ? this.deliveryFormat
-            : deliveryFormat
-                as SdkOptional<CreateLogDrainRequestBodyDeliveryFormat>,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        sources: identical(sources, sdkOmittedValue)
-            ? this.sources
-            : sources
-                as SdkOptional<List<CreateLogDrainRequestBodySourcesItem>>,
-        headers: identical(headers, sdkOmittedValue)
-            ? this.headers
-            : headers as SdkOptional<Map<String, String>>,
-        environments: identical(environments, sdkOmittedValue)
-            ? this.environments
-            : environments
-                as SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>>,
-      );
+  CreateLogDrainRequestBody _copyWith({Object? name = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? secret = sdkOmittedValue, Object? deliveryFormat = sdkOmittedValue, Object? url = sdkOmittedValue, Object? sources = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? environments = sdkOmittedValue}) => CreateLogDrainRequestBody(
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as SdkOptional<String>,
+    deliveryFormat: identical(deliveryFormat, sdkOmittedValue) ? this.deliveryFormat : deliveryFormat as SdkOptional<CreateLogDrainRequestBodyDeliveryFormat>,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    sources: identical(sources, sdkOmittedValue) ? this.sources : sources as SdkOptional<List<CreateLogDrainRequestBodySourcesItem>>,
+    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as SdkOptional<Map<String, String>>,
+    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>>,
+  );
 
-  factory CreateLogDrainRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateLogDrainRequestBody(
-        name: (json['name'] as String?)!,
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        secret: json['secret'] != null
-            ? SdkPresent((json['secret'] as String?)!)
-            : const SdkOmitted(),
-        deliveryFormat: json['deliveryFormat'] != null
-            ? SdkPresent((json['deliveryFormat'] != null
-                ? CreateLogDrainRequestBodyDeliveryFormat.fromJson(
-                    json['deliveryFormat'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        url: (json['url'] as String?)!,
-        sources: json['sources'] != null
-            ? SdkPresent(((json['sources'] as List?)
-                ?.map((e) =>
-                    CreateLogDrainRequestBodySourcesItem.fromJson(e as String))
-                .toList())!)
-            : const SdkOmitted(),
-        headers: json['headers'] != null
-            ? SdkPresent((json['headers'] == null
-                ? null
-                : Map<String, dynamic>.from(json['headers'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        environments: json['environments'] != null
-            ? SdkPresent(((json['environments'] as List?)
-                ?.map((e) => CreateLogDrainRequestBodyEnvironmentsItem.fromJson(
-                    e as String))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory CreateLogDrainRequestBody.fromJson(Map<String, dynamic> json) => CreateLogDrainRequestBody(
+    name: (json['name'] as String?)!,
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    secret: json['secret'] != null ? SdkPresent((json['secret'] as String?)!) : const SdkOmitted(),
+    deliveryFormat: json['deliveryFormat'] != null ? SdkPresent((json['deliveryFormat'] != null ? CreateLogDrainRequestBodyDeliveryFormat.fromJson(json['deliveryFormat'] as String) : null)!) : const SdkOmitted(),
+    url: (json['url'] as String?)!,
+    sources: json['sources'] != null ? SdkPresent(((json['sources'] as List?)?.map((e) => CreateLogDrainRequestBodySourcesItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+    headers: json['headers'] != null ? SdkPresent((json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    environments: json['environments'] != null ? SdkPresent(((json['environments'] as List?)?.map((e) => CreateLogDrainRequestBodyEnvironmentsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secret) {
-          SdkPresent<String>(value: final value) => {
-              'secret': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deliveryFormat) {
-          SdkPresent<CreateLogDrainRequestBodyDeliveryFormat>(
-            value: final value
-          ) =>
-            {
-              'deliveryFormat': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'url': url,
-        ...switch (sources) {
-          SdkPresent<List<CreateLogDrainRequestBodySourcesItem>>(
-            value: final value
-          ) =>
-            {
-              'sources': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (headers) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'headers': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (environments) {
-          SdkPresent<List<CreateLogDrainRequestBodyEnvironmentsItem>>(
-            value: final value
-          ) =>
-            {
-              'environments': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'name': name,
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secret) {
+      SdkPresent<String>(value: final value) => {'secret': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deliveryFormat) {
+      SdkPresent<CreateLogDrainRequestBodyDeliveryFormat>(value: final value) => {'deliveryFormat': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'url': url,
+    ...switch (sources) {
+      SdkPresent<List<CreateLogDrainRequestBodySourcesItem>>(value: final value) => {'sources': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (headers) {
+      SdkPresent<Map<String, String>>(value: final value) => {'headers': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (environments) {
+      SdkPresent<List<CreateLogDrainRequestBodyEnvironmentsItem>>(value: final value) => {'environments': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

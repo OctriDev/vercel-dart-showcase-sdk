@@ -9,244 +9,138 @@ class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemV
   static const String constructionSurface = 'named';
   final String eq;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-      {required this.eq});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value({required this.eq});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-      Function({String eq}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value Function({String eq}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-      _copyWith({Object? eq = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-            eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value _copyWith({Object? eq = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
+    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-        eq: (json['eq'] as String?)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
+    eq: (json['eq'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'eq': eq,
-      };
+    'eq': eq,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
-      type_;
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-      value;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type type_;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value value;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-      {required this.type_, required this.value});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1({required this.type_, required this.value});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 Function(
-      {ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
-          type_,
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-          value}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 Function({ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type type_, ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value value}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1
-      _copyWith(
-              {Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type,
+    value: identical(value, sdkOmittedValue) ? this.value : value as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-        type_: (json['type'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        value: (json['value'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
-                .fromJson(json['value'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1(
+    type_: (json['type'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Type.fromJson(json['type'] as String) : null)!,
+    value: (json['value'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'value': value.toJson(),
-      };
+    'type': type_.toJson(),
+    'value': value.toJson(),
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction
-      action;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction action;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
-      {required this.action});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate({required this.action});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate Function(
-      {ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction
-          action}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate Function({ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction action}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-      _copyWith({Object? action = sdkOmittedValue}) =>
-          ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
-            action: identical(action, sdkOmittedValue)
-                ? this.action
-                : action
-                    as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction,
-          );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate _copyWith({Object? action = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
+    action: identical(action, sdkOmittedValue) ? this.action : action as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
-        action: (json['action'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction
-                .fromJson(json['action'] as String)
-            : null)!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate(
+    action: (json['action'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1MitigateAction.fromJson(json['action'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-      };
+    'action': action.toJson(),
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<dynamic> has;
-  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-      mitigate;
+  final ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate mitigate;
   final SdkOptional<String> src;
 
-  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
-      {required this.has,
-      required this.mitigate,
-      this.src = const SdkOmitted()});
+  const ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1({required this.has, required this.mitigate, this.src = const SdkOmitted()});
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 Function(
-      {List<dynamic> has,
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-          mitigate,
-      SdkOptional<String> src}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 Function({List<dynamic> has, ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate mitigate, SdkOptional<String> src}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 _copyWith(
-          {Object? has = sdkOmittedValue,
-          Object? mitigate = sdkOmittedValue,
-          Object? src = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
-        has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
-        mitigate: identical(mitigate, sdkOmittedValue)
-            ? this.mitigate
-            : mitigate
-                as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate,
-        src: identical(src, sdkOmittedValue)
-            ? this.src
-            : src as SdkOptional<String>,
-      );
+  ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1 _copyWith({Object? has = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? src = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
+    has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
+    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate,
+    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
-        has: ((json['has'] as List?)?.map((e) => e).toList())!,
-        mitigate: (json['mitigate'] != null
-            ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate
-                .fromJson(json['mitigate'] as Map<String, dynamic>)
-            : null)!,
-        src: json['src'] != null
-            ? SdkPresent((json['src'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1(
+    has: ((json['has'] as List?)?.map((e) => e).toList())!,
+    mitigate: (json['mitigate'] != null ? ListProjectsResponseVariant2ProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!,
+    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'has': has,
-        'mitigate': mitigate.toJson(),
-        ...switch (src) {
-          SdkPresent<String>(value: final value) => {
-              'src': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'has': has,
+    'mitigate': mitigate.toJson(),
+    ...switch (src) {
+      SdkPresent<String>(value: final value) => {'src': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemIpBucketsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String bucket;
-  final SdkOptional<
-      ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault> default_;
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault> default_;
   final SdkOptional<double> supportUntil;
 
-  const ListProjectsResponseVariant2ProjectsItemIpBucketsItem(
-      {required this.bucket,
-      this.default_ = const SdkOmitted(),
-      this.supportUntil = const SdkOmitted()});
+  const ListProjectsResponseVariant2ProjectsItemIpBucketsItem({required this.bucket, this.default_ = const SdkOmitted(), this.supportUntil = const SdkOmitted()});
 
-  ListProjectsResponseVariant2ProjectsItemIpBucketsItem Function(
-      {String bucket,
-      SdkOptional<ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault>
-          default_,
-      SdkOptional<double> supportUntil}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemIpBucketsItem Function({String bucket, SdkOptional<ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault> default_, SdkOptional<double> supportUntil}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemIpBucketsItem _copyWith(
-          {Object? bucket = sdkOmittedValue,
-          Object? default_ = sdkOmittedValue,
-          Object? supportUntil = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemIpBucketsItem(
-        bucket:
-            identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
-        default_: identical(default_, sdkOmittedValue)
-            ? this.default_
-            : default_ as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault>,
-        supportUntil: identical(supportUntil, sdkOmittedValue)
-            ? this.supportUntil
-            : supportUntil as SdkOptional<double>,
-      );
+  ListProjectsResponseVariant2ProjectsItemIpBucketsItem _copyWith({Object? bucket = sdkOmittedValue, Object? default_ = sdkOmittedValue, Object? supportUntil = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemIpBucketsItem(
+    bucket: identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
+    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault>,
+    supportUntil: identical(supportUntil, sdkOmittedValue) ? this.supportUntil : supportUntil as SdkOptional<double>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemIpBucketsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemIpBucketsItem(
-        bucket: (json['bucket'] as String?)!,
-        default_: json['default'] != null
-            ? SdkPresent((json['default'] != null
-                ? ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault
-                    .fromJson(json['default'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        supportUntil: json['supportUntil'] != null
-            ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant2ProjectsItemIpBucketsItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemIpBucketsItem(
+    bucket: (json['bucket'] as String?)!,
+    default_: json['default'] != null ? SdkPresent((json['default'] != null ? ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault.fromJson(json['default'] as bool) : null)!) : const SdkOmitted(),
+    supportUntil: json['supportUntil'] != null ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'bucket': bucket,
-        ...switch (default_) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault>(
-            value: final value
-          ) =>
-            {
-              'default': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (supportUntil) {
-          SdkPresent<double>(value: final value) => {
-              'supportUntil': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'bucket': bucket,
+    ...switch (default_) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemIpBucketsItemDefault>(value: final value) => {'default': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (supportUntil) {
+      SdkPresent<double>(value: final value) => {'supportUntil': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent {
@@ -254,30 +148,21 @@ class ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent(
-      {required this.targets});
+  const ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent({required this.targets});
 
-  ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent Function({List<String> targets}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent _copyWith({Object? targets = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemJobsLint {
@@ -285,30 +170,21 @@ class ListProjectsResponseVariant2ProjectsItemJobsLint {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const ListProjectsResponseVariant2ProjectsItemJobsLint(
-      {required this.targets});
+  const ListProjectsResponseVariant2ProjectsItemJobsLint({required this.targets});
 
-  ListProjectsResponseVariant2ProjectsItemJobsLint Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemJobsLint Function({List<String> targets}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemJobsLint _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemJobsLint(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  ListProjectsResponseVariant2ProjectsItemJobsLint _copyWith({Object? targets = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemJobsLint(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemJobsLint.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemJobsLint(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemJobsLint.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemJobsLint(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent {
@@ -316,30 +192,21 @@ class ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent(
-      {required this.targets});
+  const ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent({required this.targets});
 
-  ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent Function({List<String> targets}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent _copyWith({Object? targets = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemJobsTypecheck {
@@ -347,155 +214,65 @@ class ListProjectsResponseVariant2ProjectsItemJobsTypecheck {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const ListProjectsResponseVariant2ProjectsItemJobsTypecheck(
-      {required this.targets});
+  const ListProjectsResponseVariant2ProjectsItemJobsTypecheck({required this.targets});
 
-  ListProjectsResponseVariant2ProjectsItemJobsTypecheck Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemJobsTypecheck Function({List<String> targets}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemJobsTypecheck _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemJobsTypecheck(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  ListProjectsResponseVariant2ProjectsItemJobsTypecheck _copyWith({Object? targets = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemJobsTypecheck(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemJobsTypecheck.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemJobsTypecheck(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory ListProjectsResponseVariant2ProjectsItemJobsTypecheck.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemJobsTypecheck(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class ListProjectsResponseVariant2ProjectsItemJobs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent>
-      flagDefinitionsPresent;
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent> flagDefinitionsPresent;
   final SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsLint> lint;
-  final SdkOptional<
-          ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent>
-      mfeConfigPresent;
-  final SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsTypecheck>
-      typecheck;
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent> mfeConfigPresent;
+  final SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsTypecheck> typecheck;
 
-  const ListProjectsResponseVariant2ProjectsItemJobs(
-      {this.flagDefinitionsPresent = const SdkOmitted(),
-      this.lint = const SdkOmitted(),
-      this.mfeConfigPresent = const SdkOmitted(),
-      this.typecheck = const SdkOmitted()});
+  const ListProjectsResponseVariant2ProjectsItemJobs({this.flagDefinitionsPresent = const SdkOmitted(), this.lint = const SdkOmitted(), this.mfeConfigPresent = const SdkOmitted(), this.typecheck = const SdkOmitted()});
 
-  ListProjectsResponseVariant2ProjectsItemJobs Function(
-      {SdkOptional<
-              ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent>
-          flagDefinitionsPresent,
-      SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsLint> lint,
-      SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent>
-          mfeConfigPresent,
-      SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsTypecheck>
-          typecheck}) get copyWith => _copyWith;
+  ListProjectsResponseVariant2ProjectsItemJobs Function({SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent> flagDefinitionsPresent, SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsLint> lint, SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent> mfeConfigPresent, SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsTypecheck> typecheck}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant2ProjectsItemJobs _copyWith(
-          {Object? flagDefinitionsPresent = sdkOmittedValue,
-          Object? lint = sdkOmittedValue,
-          Object? mfeConfigPresent = sdkOmittedValue,
-          Object? typecheck = sdkOmittedValue}) =>
-      ListProjectsResponseVariant2ProjectsItemJobs(
-        flagDefinitionsPresent: identical(
-                flagDefinitionsPresent, sdkOmittedValue)
-            ? this.flagDefinitionsPresent
-            : flagDefinitionsPresent as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent>,
-        lint: identical(lint, sdkOmittedValue)
-            ? this.lint
-            : lint as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemJobsLint>,
-        mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue)
-            ? this.mfeConfigPresent
-            : mfeConfigPresent as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent>,
-        typecheck: identical(typecheck, sdkOmittedValue)
-            ? this.typecheck
-            : typecheck as SdkOptional<
-                ListProjectsResponseVariant2ProjectsItemJobsTypecheck>,
-      );
+  ListProjectsResponseVariant2ProjectsItemJobs _copyWith({Object? flagDefinitionsPresent = sdkOmittedValue, Object? lint = sdkOmittedValue, Object? mfeConfigPresent = sdkOmittedValue, Object? typecheck = sdkOmittedValue}) => ListProjectsResponseVariant2ProjectsItemJobs(
+    flagDefinitionsPresent: identical(flagDefinitionsPresent, sdkOmittedValue) ? this.flagDefinitionsPresent : flagDefinitionsPresent as SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent>,
+    lint: identical(lint, sdkOmittedValue) ? this.lint : lint as SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsLint>,
+    mfeConfigPresent: identical(mfeConfigPresent, sdkOmittedValue) ? this.mfeConfigPresent : mfeConfigPresent as SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent>,
+    typecheck: identical(typecheck, sdkOmittedValue) ? this.typecheck : typecheck as SdkOptional<ListProjectsResponseVariant2ProjectsItemJobsTypecheck>,
+  );
 
-  factory ListProjectsResponseVariant2ProjectsItemJobs.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant2ProjectsItemJobs(
-        flagDefinitionsPresent: json['flag-definitions-present'] != null
-            ? SdkPresent((json['flag-definitions-present'] != null
-                ? ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent
-                    .fromJson(json['flag-definitions-present']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        lint: json['lint'] != null
-            ? SdkPresent((json['lint'] != null
-                ? ListProjectsResponseVariant2ProjectsItemJobsLint.fromJson(
-                    json['lint'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        mfeConfigPresent: json['mfe-config-present'] != null
-            ? SdkPresent((json['mfe-config-present'] != null
-                ? ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent
-                    .fromJson(
-                        json['mfe-config-present'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        typecheck: json['typecheck'] != null
-            ? SdkPresent((json['typecheck'] != null
-                ? ListProjectsResponseVariant2ProjectsItemJobsTypecheck
-                    .fromJson(json['typecheck'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant2ProjectsItemJobs.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant2ProjectsItemJobs(
+    flagDefinitionsPresent: json['flag-definitions-present'] != null ? SdkPresent((json['flag-definitions-present'] != null ? ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent.fromJson(json['flag-definitions-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    lint: json['lint'] != null ? SdkPresent((json['lint'] != null ? ListProjectsResponseVariant2ProjectsItemJobsLint.fromJson(json['lint'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    mfeConfigPresent: json['mfe-config-present'] != null ? SdkPresent((json['mfe-config-present'] != null ? ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent.fromJson(json['mfe-config-present'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    typecheck: json['typecheck'] != null ? SdkPresent((json['typecheck'] != null ? ListProjectsResponseVariant2ProjectsItemJobsTypecheck.fromJson(json['typecheck'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (flagDefinitionsPresent) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent>(
-            value: final value
-          ) =>
-            {
-              'flag-definitions-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lint) {
-          SdkPresent<ListProjectsResponseVariant2ProjectsItemJobsLint>(
-            value: final value
-          ) =>
-            {
-              'lint': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mfeConfigPresent) {
-          SdkPresent<
-                ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent>(
-            value: final value
-          ) =>
-            {
-              'mfe-config-present': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (typecheck) {
-          SdkPresent<ListProjectsResponseVariant2ProjectsItemJobsTypecheck>(
-            value: final value
-          ) =>
-            {
-              'typecheck': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (flagDefinitionsPresent) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemJobsFlagDefinitionsPresent>(value: final value) => {'flag-definitions-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lint) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemJobsLint>(value: final value) => {'lint': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mfeConfigPresent) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemJobsMfeConfigPresent>(value: final value) => {'mfe-config-present': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (typecheck) {
+      SdkPresent<ListProjectsResponseVariant2ProjectsItemJobsTypecheck>(value: final value) => {'typecheck': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

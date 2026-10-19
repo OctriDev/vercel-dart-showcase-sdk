@@ -10,37 +10,24 @@ class GetDrainsResponseDrainsItemFilterV2Filter2Variant1 {
   final String text;
   final GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type type_;
 
-  const GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-      {required this.text, required this.type_});
+  const GetDrainsResponseDrainsItemFilterV2Filter2Variant1({required this.text, required this.type_});
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 Function(
-          {String text,
-          GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type type_})
-      get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 Function({String text, GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type type_}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 _copyWith(
-          {Object? text = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-        text: identical(text, sdkOmittedValue) ? this.text : text as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type,
-      );
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 _copyWith({Object? text = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+    text: identical(text, sdkOmittedValue) ? this.text : text as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type,
+  );
 
-  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-        text: (json['text'] as String?)!,
-        type_: (json['type'] != null
-            ? GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+    text: (json['text'] as String?)!,
+    type_: (json['type'] != null ? GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'text': text,
-        'type': type_.toJson(),
-      };
+    'text': text,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class GetDrainsResponseDrainsItemFilterV2Filter2 {
@@ -49,55 +36,26 @@ sealed class GetDrainsResponseDrainsItemFilterV2Filter2 {
   const GetDrainsResponseDrainsItemFilterV2Filter2();
   factory GetDrainsResponseDrainsItemFilterV2Filter2.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(value); } } catch (_) {}
+      try { final value = GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(value); } } catch (_) {}
     }
-    try {
-      return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
-          GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-          GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetDrainsResponseDrainsItemFilterV2Filter2");
+    try { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetDrainsResponseDrainsItemFilterV2Filter2");
   }
   Object? toJson();
 }
 
-final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0
-    extends GetDrainsResponseDrainsItemFilterV2Filter2 {
+final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0 extends GetDrainsResponseDrainsItemFilterV2Filter2 {
   final GetDrainsResponseDrainsItemFilterV2Filter2Variant0 value;
-  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1
-    extends GetDrainsResponseDrainsItemFilterV2Filter2 {
+final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1 extends GetDrainsResponseDrainsItemFilterV2Filter2 {
   final GetDrainsResponseDrainsItemFilterV2Filter2Variant1 value;
-  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetDrainsResponseDrainsItemProjectAccessVariant0 {
@@ -106,44 +64,24 @@ class GetDrainsResponseDrainsItemProjectAccessVariant0 {
   final GetDrainsResponseDrainsItemProjectAccessVariant0Access access;
   final GetDrainsResponseDrainsItemProjectAccessVariant0ManagedBy managedBy;
 
-  const GetDrainsResponseDrainsItemProjectAccessVariant0(
-      {required this.access, required this.managedBy});
+  const GetDrainsResponseDrainsItemProjectAccessVariant0({required this.access, required this.managedBy});
 
-  GetDrainsResponseDrainsItemProjectAccessVariant0 Function(
-          {GetDrainsResponseDrainsItemProjectAccessVariant0Access access,
-          GetDrainsResponseDrainsItemProjectAccessVariant0ManagedBy managedBy})
-      get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemProjectAccessVariant0 Function({GetDrainsResponseDrainsItemProjectAccessVariant0Access access, GetDrainsResponseDrainsItemProjectAccessVariant0ManagedBy managedBy}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemProjectAccessVariant0 _copyWith(
-          {Object? access = sdkOmittedValue,
-          Object? managedBy = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsItemProjectAccessVariant0(
-        access: identical(access, sdkOmittedValue)
-            ? this.access
-            : access as GetDrainsResponseDrainsItemProjectAccessVariant0Access,
-        managedBy: identical(managedBy, sdkOmittedValue)
-            ? this.managedBy
-            : managedBy
-                as GetDrainsResponseDrainsItemProjectAccessVariant0ManagedBy,
-      );
+  GetDrainsResponseDrainsItemProjectAccessVariant0 _copyWith({Object? access = sdkOmittedValue, Object? managedBy = sdkOmittedValue}) => GetDrainsResponseDrainsItemProjectAccessVariant0(
+    access: identical(access, sdkOmittedValue) ? this.access : access as GetDrainsResponseDrainsItemProjectAccessVariant0Access,
+    managedBy: identical(managedBy, sdkOmittedValue) ? this.managedBy : managedBy as GetDrainsResponseDrainsItemProjectAccessVariant0ManagedBy,
+  );
 
-  factory GetDrainsResponseDrainsItemProjectAccessVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsItemProjectAccessVariant0(
-        access: (json['access'] != null
-            ? GetDrainsResponseDrainsItemProjectAccessVariant0Access.fromJson(
-                json['access'] as String)
-            : null)!,
-        managedBy: (json['managedBy'] != null
-            ? GetDrainsResponseDrainsItemProjectAccessVariant0ManagedBy
-                .fromJson(json['managedBy'] as String)
-            : null)!,
-      );
+  factory GetDrainsResponseDrainsItemProjectAccessVariant0.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemProjectAccessVariant0(
+    access: (json['access'] != null ? GetDrainsResponseDrainsItemProjectAccessVariant0Access.fromJson(json['access'] as String) : null)!,
+    managedBy: (json['managedBy'] != null ? GetDrainsResponseDrainsItemProjectAccessVariant0ManagedBy.fromJson(json['managedBy'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'access': access.toJson(),
-        'managedBy': managedBy.toJson(),
-      };
+    'access': access.toJson(),
+    'managedBy': managedBy.toJson(),
+  };
 }
 
 class GetDrainsResponseDrainsItemProjectAccessVariant1 {
@@ -153,54 +91,27 @@ class GetDrainsResponseDrainsItemProjectAccessVariant1 {
   final List<String> projectIds;
   final GetDrainsResponseDrainsItemProjectAccessVariant1ManagedBy managedBy;
 
-  const GetDrainsResponseDrainsItemProjectAccessVariant1(
-      {required this.access,
-      required this.projectIds,
-      required this.managedBy});
+  const GetDrainsResponseDrainsItemProjectAccessVariant1({required this.access, required this.projectIds, required this.managedBy});
 
-  GetDrainsResponseDrainsItemProjectAccessVariant1 Function(
-          {GetDrainsResponseDrainsItemProjectAccessVariant1Access access,
-          List<String> projectIds,
-          GetDrainsResponseDrainsItemProjectAccessVariant1ManagedBy managedBy})
-      get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemProjectAccessVariant1 Function({GetDrainsResponseDrainsItemProjectAccessVariant1Access access, List<String> projectIds, GetDrainsResponseDrainsItemProjectAccessVariant1ManagedBy managedBy}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemProjectAccessVariant1 _copyWith(
-          {Object? access = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue,
-          Object? managedBy = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsItemProjectAccessVariant1(
-        access: identical(access, sdkOmittedValue)
-            ? this.access
-            : access as GetDrainsResponseDrainsItemProjectAccessVariant1Access,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as List<String>,
-        managedBy: identical(managedBy, sdkOmittedValue)
-            ? this.managedBy
-            : managedBy
-                as GetDrainsResponseDrainsItemProjectAccessVariant1ManagedBy,
-      );
+  GetDrainsResponseDrainsItemProjectAccessVariant1 _copyWith({Object? access = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? managedBy = sdkOmittedValue}) => GetDrainsResponseDrainsItemProjectAccessVariant1(
+    access: identical(access, sdkOmittedValue) ? this.access : access as GetDrainsResponseDrainsItemProjectAccessVariant1Access,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as List<String>,
+    managedBy: identical(managedBy, sdkOmittedValue) ? this.managedBy : managedBy as GetDrainsResponseDrainsItemProjectAccessVariant1ManagedBy,
+  );
 
-  factory GetDrainsResponseDrainsItemProjectAccessVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsItemProjectAccessVariant1(
-        access: (json['access'] != null
-            ? GetDrainsResponseDrainsItemProjectAccessVariant1Access.fromJson(
-                json['access'] as String)
-            : null)!,
-        projectIds:
-            ((json['projectIds'] as List?)?.map((e) => e as String).toList())!,
-        managedBy: (json['managedBy'] != null
-            ? GetDrainsResponseDrainsItemProjectAccessVariant1ManagedBy
-                .fromJson(json['managedBy'] as String)
-            : null)!,
-      );
+  factory GetDrainsResponseDrainsItemProjectAccessVariant1.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemProjectAccessVariant1(
+    access: (json['access'] != null ? GetDrainsResponseDrainsItemProjectAccessVariant1Access.fromJson(json['access'] as String) : null)!,
+    projectIds: ((json['projectIds'] as List?)?.map((e) => e as String).toList())!,
+    managedBy: (json['managedBy'] != null ? GetDrainsResponseDrainsItemProjectAccessVariant1ManagedBy.fromJson(json['managedBy'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'access': access.toJson(),
-        'projectIds': projectIds,
-        'managedBy': managedBy.toJson(),
-      };
+    'access': access.toJson(),
+    'projectIds': projectIds,
+    'managedBy': managedBy.toJson(),
+  };
 }
 
 sealed class GetDrainsResponseDrainsItemProjectAccess {
@@ -209,115 +120,56 @@ sealed class GetDrainsResponseDrainsItemProjectAccess {
   const GetDrainsResponseDrainsItemProjectAccess();
   factory GetDrainsResponseDrainsItemProjectAccess.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetDrainsResponseDrainsItemProjectAccessVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDrainsResponseDrainsItemProjectAccessVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetDrainsResponseDrainsItemProjectAccessVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0(value); } } catch (_) {}
+      try { final value = GetDrainsResponseDrainsItemProjectAccessVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1(value); } } catch (_) {}
     }
-    try {
-      return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0(
-          GetDrainsResponseDrainsItemProjectAccessVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1(
-          GetDrainsResponseDrainsItemProjectAccessVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetDrainsResponseDrainsItemProjectAccess");
+    try { return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0(GetDrainsResponseDrainsItemProjectAccessVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1(GetDrainsResponseDrainsItemProjectAccessVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetDrainsResponseDrainsItemProjectAccess");
   }
   Object? toJson();
 }
 
-final class GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0
-    extends GetDrainsResponseDrainsItemProjectAccess {
+final class GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0 extends GetDrainsResponseDrainsItemProjectAccess {
   final GetDrainsResponseDrainsItemProjectAccessVariant0 value;
-  const GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1
-    extends GetDrainsResponseDrainsItemProjectAccess {
+final class GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1 extends GetDrainsResponseDrainsItemProjectAccess {
   final GetDrainsResponseDrainsItemProjectAccessVariant1 value;
-  const GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemProjectAccessGetDrainsResponseDrainsItemProjectAccessVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetDrainsResponseDrainsItemSourceVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Informational marker for a system-owned default drain.
-  final SdkOptional<GetDrainsResponseDrainsItemSourceVariant0DefaultFor>
-      defaultFor;
+  final SdkOptional<GetDrainsResponseDrainsItemSourceVariant0DefaultFor> defaultFor;
   final GetDrainsResponseDrainsItemSourceVariant0Kind kind;
 
-  const GetDrainsResponseDrainsItemSourceVariant0(
-      {this.defaultFor = const SdkOmitted(), required this.kind});
+  const GetDrainsResponseDrainsItemSourceVariant0({this.defaultFor = const SdkOmitted(), required this.kind});
 
-  GetDrainsResponseDrainsItemSourceVariant0 Function(
-          {SdkOptional<GetDrainsResponseDrainsItemSourceVariant0DefaultFor>
-              defaultFor,
-          GetDrainsResponseDrainsItemSourceVariant0Kind kind})
-      get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemSourceVariant0 Function({SdkOptional<GetDrainsResponseDrainsItemSourceVariant0DefaultFor> defaultFor, GetDrainsResponseDrainsItemSourceVariant0Kind kind}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemSourceVariant0 _copyWith(
-          {Object? defaultFor = sdkOmittedValue,
-          Object? kind = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsItemSourceVariant0(
-        defaultFor: identical(defaultFor, sdkOmittedValue)
-            ? this.defaultFor
-            : defaultFor as SdkOptional<
-                GetDrainsResponseDrainsItemSourceVariant0DefaultFor>,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as GetDrainsResponseDrainsItemSourceVariant0Kind,
-      );
+  GetDrainsResponseDrainsItemSourceVariant0 _copyWith({Object? defaultFor = sdkOmittedValue, Object? kind = sdkOmittedValue}) => GetDrainsResponseDrainsItemSourceVariant0(
+    defaultFor: identical(defaultFor, sdkOmittedValue) ? this.defaultFor : defaultFor as SdkOptional<GetDrainsResponseDrainsItemSourceVariant0DefaultFor>,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as GetDrainsResponseDrainsItemSourceVariant0Kind,
+  );
 
-  factory GetDrainsResponseDrainsItemSourceVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsItemSourceVariant0(
-        defaultFor: json['defaultFor'] != null
-            ? SdkPresent((json['defaultFor'] != null
-                ? GetDrainsResponseDrainsItemSourceVariant0DefaultFor.fromJson(
-                    json['defaultFor'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        kind: (json['kind'] != null
-            ? GetDrainsResponseDrainsItemSourceVariant0Kind.fromJson(
-                json['kind'] as String)
-            : null)!,
-      );
+  factory GetDrainsResponseDrainsItemSourceVariant0.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemSourceVariant0(
+    defaultFor: json['defaultFor'] != null ? SdkPresent((json['defaultFor'] != null ? GetDrainsResponseDrainsItemSourceVariant0DefaultFor.fromJson(json['defaultFor'] as String) : null)!) : const SdkOmitted(),
+    kind: (json['kind'] != null ? GetDrainsResponseDrainsItemSourceVariant0Kind.fromJson(json['kind'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (defaultFor) {
-          SdkPresent<GetDrainsResponseDrainsItemSourceVariant0DefaultFor>(
-            value: final value
-          ) =>
-            {
-              'defaultFor': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'kind': kind.toJson(),
-      };
+    ...switch (defaultFor) {
+      SdkPresent<GetDrainsResponseDrainsItemSourceVariant0DefaultFor>(value: final value) => {'defaultFor': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'kind': kind.toJson(),
+  };
 }
 
 class GetDrainsResponseDrainsItemSourceVariant1 {
@@ -329,80 +181,39 @@ class GetDrainsResponseDrainsItemSourceVariant1 {
   final GetDrainsResponseDrainsItemSourceVariant1Kind kind;
   final SdkOptional<String> resourceId;
 
-  const GetDrainsResponseDrainsItemSourceVariant1(
-      {this.externalResourceId = const SdkOmitted(),
-      required this.integrationConfigurationId,
-      required this.integrationId,
-      required this.kind,
-      this.resourceId = const SdkOmitted()});
+  const GetDrainsResponseDrainsItemSourceVariant1({this.externalResourceId = const SdkOmitted(), required this.integrationConfigurationId, required this.integrationId, required this.kind, this.resourceId = const SdkOmitted()});
 
-  GetDrainsResponseDrainsItemSourceVariant1 Function(
-      {SdkOptional<String> externalResourceId,
-      String integrationConfigurationId,
-      String integrationId,
-      GetDrainsResponseDrainsItemSourceVariant1Kind kind,
-      SdkOptional<String> resourceId}) get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemSourceVariant1 Function({SdkOptional<String> externalResourceId, String integrationConfigurationId, String integrationId, GetDrainsResponseDrainsItemSourceVariant1Kind kind, SdkOptional<String> resourceId}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemSourceVariant1 _copyWith(
-          {Object? externalResourceId = sdkOmittedValue,
-          Object? integrationConfigurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? resourceId = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsItemSourceVariant1(
-        externalResourceId: identical(externalResourceId, sdkOmittedValue)
-            ? this.externalResourceId
-            : externalResourceId as SdkOptional<String>,
-        integrationConfigurationId:
-            identical(integrationConfigurationId, sdkOmittedValue)
-                ? this.integrationConfigurationId
-                : integrationConfigurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as GetDrainsResponseDrainsItemSourceVariant1Kind,
-        resourceId: identical(resourceId, sdkOmittedValue)
-            ? this.resourceId
-            : resourceId as SdkOptional<String>,
-      );
+  GetDrainsResponseDrainsItemSourceVariant1 _copyWith({Object? externalResourceId = sdkOmittedValue, Object? integrationConfigurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? resourceId = sdkOmittedValue}) => GetDrainsResponseDrainsItemSourceVariant1(
+    externalResourceId: identical(externalResourceId, sdkOmittedValue) ? this.externalResourceId : externalResourceId as SdkOptional<String>,
+    integrationConfigurationId: identical(integrationConfigurationId, sdkOmittedValue) ? this.integrationConfigurationId : integrationConfigurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as GetDrainsResponseDrainsItemSourceVariant1Kind,
+    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as SdkOptional<String>,
+  );
 
-  factory GetDrainsResponseDrainsItemSourceVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsItemSourceVariant1(
-        externalResourceId: json['externalResourceId'] != null
-            ? SdkPresent((json['externalResourceId'] as String?)!)
-            : const SdkOmitted(),
-        integrationConfigurationId:
-            (json['integrationConfigurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-        kind: (json['kind'] != null
-            ? GetDrainsResponseDrainsItemSourceVariant1Kind.fromJson(
-                json['kind'] as String)
-            : null)!,
-        resourceId: json['resourceId'] != null
-            ? SdkPresent((json['resourceId'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetDrainsResponseDrainsItemSourceVariant1.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemSourceVariant1(
+    externalResourceId: json['externalResourceId'] != null ? SdkPresent((json['externalResourceId'] as String?)!) : const SdkOmitted(),
+    integrationConfigurationId: (json['integrationConfigurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+    kind: (json['kind'] != null ? GetDrainsResponseDrainsItemSourceVariant1Kind.fromJson(json['kind'] as String) : null)!,
+    resourceId: json['resourceId'] != null ? SdkPresent((json['resourceId'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (externalResourceId) {
-          SdkPresent<String>(value: final value) => {
-              'externalResourceId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'integrationConfigurationId': integrationConfigurationId,
-        'integrationId': integrationId,
-        'kind': kind.toJson(),
-        ...switch (resourceId) {
-          SdkPresent<String>(value: final value) => {
-              'resourceId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (externalResourceId) {
+      SdkPresent<String>(value: final value) => {'externalResourceId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'integrationConfigurationId': integrationConfigurationId,
+    'integrationId': integrationId,
+    'kind': kind.toJson(),
+    ...switch (resourceId) {
+      SdkPresent<String>(value: final value) => {'resourceId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class GetDrainsResponseDrainsItemSource {
@@ -411,111 +222,54 @@ sealed class GetDrainsResponseDrainsItemSource {
   const GetDrainsResponseDrainsItemSource();
   factory GetDrainsResponseDrainsItemSource.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetDrainsResponseDrainsItemSourceVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetDrainsResponseDrainsItemSourceVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetDrainsResponseDrainsItemSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0(value); } } catch (_) {}
+      try { final value = GetDrainsResponseDrainsItemSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1(value); } } catch (_) {}
     }
-    try {
-      return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0(
-          GetDrainsResponseDrainsItemSourceVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1(
-          GetDrainsResponseDrainsItemSourceVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetDrainsResponseDrainsItemSource");
+    try { return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0(GetDrainsResponseDrainsItemSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1(GetDrainsResponseDrainsItemSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetDrainsResponseDrainsItemSource");
   }
   Object? toJson();
 }
 
-final class GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0
-    extends GetDrainsResponseDrainsItemSource {
+final class GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0 extends GetDrainsResponseDrainsItemSource {
   final GetDrainsResponseDrainsItemSourceVariant0 value;
-  const GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1
-    extends GetDrainsResponseDrainsItemSource {
+final class GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1 extends GetDrainsResponseDrainsItemSource {
   final GetDrainsResponseDrainsItemSourceVariant1 value;
-  const GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemSourceGetDrainsResponseDrainsItemSourceVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetDrainsResponseDrainsItemSource2Variant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Informational marker for a system-owned default drain.
-  final SdkOptional<GetDrainsResponseDrainsItemSource2Variant0DefaultFor>
-      defaultFor;
+  final SdkOptional<GetDrainsResponseDrainsItemSource2Variant0DefaultFor> defaultFor;
   final GetDrainsResponseDrainsItemSource2Variant0Kind kind;
 
-  const GetDrainsResponseDrainsItemSource2Variant0(
-      {this.defaultFor = const SdkOmitted(), required this.kind});
+  const GetDrainsResponseDrainsItemSource2Variant0({this.defaultFor = const SdkOmitted(), required this.kind});
 
-  GetDrainsResponseDrainsItemSource2Variant0 Function(
-          {SdkOptional<GetDrainsResponseDrainsItemSource2Variant0DefaultFor>
-              defaultFor,
-          GetDrainsResponseDrainsItemSource2Variant0Kind kind})
-      get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemSource2Variant0 Function({SdkOptional<GetDrainsResponseDrainsItemSource2Variant0DefaultFor> defaultFor, GetDrainsResponseDrainsItemSource2Variant0Kind kind}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemSource2Variant0 _copyWith(
-          {Object? defaultFor = sdkOmittedValue,
-          Object? kind = sdkOmittedValue}) =>
-      GetDrainsResponseDrainsItemSource2Variant0(
-        defaultFor: identical(defaultFor, sdkOmittedValue)
-            ? this.defaultFor
-            : defaultFor as SdkOptional<
-                GetDrainsResponseDrainsItemSource2Variant0DefaultFor>,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as GetDrainsResponseDrainsItemSource2Variant0Kind,
-      );
+  GetDrainsResponseDrainsItemSource2Variant0 _copyWith({Object? defaultFor = sdkOmittedValue, Object? kind = sdkOmittedValue}) => GetDrainsResponseDrainsItemSource2Variant0(
+    defaultFor: identical(defaultFor, sdkOmittedValue) ? this.defaultFor : defaultFor as SdkOptional<GetDrainsResponseDrainsItemSource2Variant0DefaultFor>,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as GetDrainsResponseDrainsItemSource2Variant0Kind,
+  );
 
-  factory GetDrainsResponseDrainsItemSource2Variant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetDrainsResponseDrainsItemSource2Variant0(
-        defaultFor: json['defaultFor'] != null
-            ? SdkPresent((json['defaultFor'] != null
-                ? GetDrainsResponseDrainsItemSource2Variant0DefaultFor.fromJson(
-                    json['defaultFor'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        kind: (json['kind'] != null
-            ? GetDrainsResponseDrainsItemSource2Variant0Kind.fromJson(
-                json['kind'] as String)
-            : null)!,
-      );
+  factory GetDrainsResponseDrainsItemSource2Variant0.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemSource2Variant0(
+    defaultFor: json['defaultFor'] != null ? SdkPresent((json['defaultFor'] != null ? GetDrainsResponseDrainsItemSource2Variant0DefaultFor.fromJson(json['defaultFor'] as String) : null)!) : const SdkOmitted(),
+    kind: (json['kind'] != null ? GetDrainsResponseDrainsItemSource2Variant0Kind.fromJson(json['kind'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (defaultFor) {
-          SdkPresent<GetDrainsResponseDrainsItemSource2Variant0DefaultFor>(
-            value: final value
-          ) =>
-            {
-              'defaultFor': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'kind': kind.toJson(),
-      };
+    ...switch (defaultFor) {
+      SdkPresent<GetDrainsResponseDrainsItemSource2Variant0DefaultFor>(value: final value) => {'defaultFor': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'kind': kind.toJson(),
+  };
 }

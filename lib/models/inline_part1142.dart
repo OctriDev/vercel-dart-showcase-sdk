@@ -7,106 +7,64 @@ part of 'inline.dart';
 class DeleteTeamRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional array of objects that describe the reason why the team is being deleted.
   final SdkOptional<List<DeleteTeamRequestBodyReasonsItem>> reasons;
 
   const DeleteTeamRequestBody({this.reasons = const SdkOmitted()});
 
-  DeleteTeamRequestBody Function(
-          {SdkOptional<List<DeleteTeamRequestBodyReasonsItem>> reasons})
-      get copyWith => _copyWith;
+  DeleteTeamRequestBody Function({SdkOptional<List<DeleteTeamRequestBodyReasonsItem>> reasons}) get copyWith => _copyWith;
 
-  DeleteTeamRequestBody _copyWith({Object? reasons = sdkOmittedValue}) =>
-      DeleteTeamRequestBody(
-        reasons: identical(reasons, sdkOmittedValue)
-            ? this.reasons
-            : reasons as SdkOptional<List<DeleteTeamRequestBodyReasonsItem>>,
-      );
+  DeleteTeamRequestBody _copyWith({Object? reasons = sdkOmittedValue}) => DeleteTeamRequestBody(
+    reasons: identical(reasons, sdkOmittedValue) ? this.reasons : reasons as SdkOptional<List<DeleteTeamRequestBodyReasonsItem>>,
+  );
 
-  factory DeleteTeamRequestBody.fromJson(Map<String, dynamic> json) =>
-      DeleteTeamRequestBody(
-        reasons: json['reasons'] != null
-            ? SdkPresent(((json['reasons'] as List?)
-                ?.map((e) => DeleteTeamRequestBodyReasonsItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory DeleteTeamRequestBody.fromJson(Map<String, dynamic> json) => DeleteTeamRequestBody(
+    reasons: json['reasons'] != null ? SdkPresent(((json['reasons'] as List?)?.map((e) => DeleteTeamRequestBodyReasonsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (reasons) {
-          SdkPresent<List<DeleteTeamRequestBodyReasonsItem>>(
-            value: final value
-          ) =>
-            {
-              'reasons': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (reasons) {
+      SdkPresent<List<DeleteTeamRequestBodyReasonsItem>>(value: final value) => {'reasons': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The Team was successfully deleted
 class DeleteTeamResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The ID of the deleted Team
   final String id;
-
   /// Signifies whether the default team update has failed, when newDefaultTeamId is provided in request query.
-  final SdkOptional<DeleteTeamResponseNewDefaultTeamIdError>
-      newDefaultTeamIdError;
+  final SdkOptional<DeleteTeamResponseNewDefaultTeamIdError> newDefaultTeamIdError;
 
-  const DeleteTeamResponse(
-      {required this.id, this.newDefaultTeamIdError = const SdkOmitted()});
+  const DeleteTeamResponse({required this.id, this.newDefaultTeamIdError = const SdkOmitted()});
 
-  DeleteTeamResponse Function(
-      {String id,
-      SdkOptional<DeleteTeamResponseNewDefaultTeamIdError>
-          newDefaultTeamIdError}) get copyWith => _copyWith;
+  DeleteTeamResponse Function({String id, SdkOptional<DeleteTeamResponseNewDefaultTeamIdError> newDefaultTeamIdError}) get copyWith => _copyWith;
 
-  DeleteTeamResponse _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? newDefaultTeamIdError = sdkOmittedValue}) =>
-      DeleteTeamResponse(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        newDefaultTeamIdError: identical(newDefaultTeamIdError, sdkOmittedValue)
-            ? this.newDefaultTeamIdError
-            : newDefaultTeamIdError
-                as SdkOptional<DeleteTeamResponseNewDefaultTeamIdError>,
-      );
+  DeleteTeamResponse _copyWith({Object? id = sdkOmittedValue, Object? newDefaultTeamIdError = sdkOmittedValue}) => DeleteTeamResponse(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    newDefaultTeamIdError: identical(newDefaultTeamIdError, sdkOmittedValue) ? this.newDefaultTeamIdError : newDefaultTeamIdError as SdkOptional<DeleteTeamResponseNewDefaultTeamIdError>,
+  );
 
-  factory DeleteTeamResponse.fromJson(Map<String, dynamic> json) =>
-      DeleteTeamResponse(
-        id: (json['id'] as String?)!,
-        newDefaultTeamIdError: json['newDefaultTeamIdError'] != null
-            ? SdkPresent((json['newDefaultTeamIdError'] != null
-                ? DeleteTeamResponseNewDefaultTeamIdError.fromJson(
-                    json['newDefaultTeamIdError'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory DeleteTeamResponse.fromJson(Map<String, dynamic> json) => DeleteTeamResponse(
+    id: (json['id'] as String?)!,
+    newDefaultTeamIdError: json['newDefaultTeamIdError'] != null ? SdkPresent((json['newDefaultTeamIdError'] != null ? DeleteTeamResponseNewDefaultTeamIdError.fromJson(json['newDefaultTeamIdError'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (newDefaultTeamIdError) {
-          SdkPresent<DeleteTeamResponseNewDefaultTeamIdError>(
-            value: final value
-          ) =>
-            {
-              'newDefaultTeamIdError': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'id': id,
+    ...switch (newDefaultTeamIdError) {
+      SdkPresent<DeleteTeamResponseNewDefaultTeamIdError>(value: final value) => {'newDefaultTeamIdError': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class DeleteTeamInviteCodeResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// ID of the team.
   final String id;
 
@@ -114,336 +72,203 @@ class DeleteTeamInviteCodeResponse {
 
   DeleteTeamInviteCodeResponse Function({String id}) get copyWith => _copyWith;
 
-  DeleteTeamInviteCodeResponse _copyWith({Object? id = sdkOmittedValue}) =>
-      DeleteTeamInviteCodeResponse(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  DeleteTeamInviteCodeResponse _copyWith({Object? id = sdkOmittedValue}) => DeleteTeamInviteCodeResponse(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory DeleteTeamInviteCodeResponse.fromJson(Map<String, dynamic> json) =>
-      DeleteTeamInviteCodeResponse(
-        id: (json['id'] as String?)!,
-      );
+  factory DeleteTeamInviteCodeResponse.fromJson(Map<String, dynamic> json) => DeleteTeamInviteCodeResponse(
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-      };
+    'id': id,
+  };
 }
 
 class UpdateMicrofrontendsGroupRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The new name for the existing microfrontends group.
   final SdkOptional<String> name;
-
   /// The new fallback environment for the microfrontends group. Must be "SAME_ENV", "PRODUCTION", or a valid custom environment slug from the default app.
   final SdkOptional<String> fallbackEnvironment;
-
   /// Whether Preview Deployments can link to branches with the same name in other Git repositories.
   final SdkOptional<bool> enablePolyrepoBranchRouting;
 
-  const UpdateMicrofrontendsGroupRequestBody(
-      {this.name = const SdkOmitted(),
-      this.fallbackEnvironment = const SdkOmitted(),
-      this.enablePolyrepoBranchRouting = const SdkOmitted()});
+  const UpdateMicrofrontendsGroupRequestBody({this.name = const SdkOmitted(), this.fallbackEnvironment = const SdkOmitted(), this.enablePolyrepoBranchRouting = const SdkOmitted()});
 
-  UpdateMicrofrontendsGroupRequestBody Function(
-      {SdkOptional<String> name,
-      SdkOptional<String> fallbackEnvironment,
-      SdkOptional<bool> enablePolyrepoBranchRouting}) get copyWith => _copyWith;
+  UpdateMicrofrontendsGroupRequestBody Function({SdkOptional<String> name, SdkOptional<String> fallbackEnvironment, SdkOptional<bool> enablePolyrepoBranchRouting}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsGroupRequestBody _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? fallbackEnvironment = sdkOmittedValue,
-          Object? enablePolyrepoBranchRouting = sdkOmittedValue}) =>
-      UpdateMicrofrontendsGroupRequestBody(
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        fallbackEnvironment: identical(fallbackEnvironment, sdkOmittedValue)
-            ? this.fallbackEnvironment
-            : fallbackEnvironment as SdkOptional<String>,
-        enablePolyrepoBranchRouting:
-            identical(enablePolyrepoBranchRouting, sdkOmittedValue)
-                ? this.enablePolyrepoBranchRouting
-                : enablePolyrepoBranchRouting as SdkOptional<bool>,
-      );
+  UpdateMicrofrontendsGroupRequestBody _copyWith({Object? name = sdkOmittedValue, Object? fallbackEnvironment = sdkOmittedValue, Object? enablePolyrepoBranchRouting = sdkOmittedValue}) => UpdateMicrofrontendsGroupRequestBody(
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    fallbackEnvironment: identical(fallbackEnvironment, sdkOmittedValue) ? this.fallbackEnvironment : fallbackEnvironment as SdkOptional<String>,
+    enablePolyrepoBranchRouting: identical(enablePolyrepoBranchRouting, sdkOmittedValue) ? this.enablePolyrepoBranchRouting : enablePolyrepoBranchRouting as SdkOptional<bool>,
+  );
 
-  factory UpdateMicrofrontendsGroupRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsGroupRequestBody(
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        fallbackEnvironment: json['fallbackEnvironment'] != null
-            ? SdkPresent((json['fallbackEnvironment'] as String?)!)
-            : const SdkOmitted(),
-        enablePolyrepoBranchRouting: json['enablePolyrepoBranchRouting'] != null
-            ? SdkPresent((json['enablePolyrepoBranchRouting'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateMicrofrontendsGroupRequestBody.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsGroupRequestBody(
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    fallbackEnvironment: json['fallbackEnvironment'] != null ? SdkPresent((json['fallbackEnvironment'] as String?)!) : const SdkOmitted(),
+    enablePolyrepoBranchRouting: json['enablePolyrepoBranchRouting'] != null ? SdkPresent((json['enablePolyrepoBranchRouting'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (fallbackEnvironment) {
-          SdkPresent<String>(value: final value) => {
-              'fallbackEnvironment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enablePolyrepoBranchRouting) {
-          SdkPresent<bool>(value: final value) => {
-              'enablePolyrepoBranchRouting': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (fallbackEnvironment) {
+      SdkPresent<String>(value: final value) => {'fallbackEnvironment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enablePolyrepoBranchRouting) {
+      SdkPresent<bool>(value: final value) => {'enablePolyrepoBranchRouting': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting>
-      enablePolyrepoBranchRouting;
+  final SdkOptional<UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting> enablePolyrepoBranchRouting;
   final SdkOptional<String> fallbackEnvironment;
   final String id;
   final SdkOptional<String> name;
   final SdkOptional<String> slug;
 
-  const UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup(
-      {this.enablePolyrepoBranchRouting = const SdkOmitted(),
-      this.fallbackEnvironment = const SdkOmitted(),
-      required this.id,
-      this.name = const SdkOmitted(),
-      this.slug = const SdkOmitted()});
+  const UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup({this.enablePolyrepoBranchRouting = const SdkOmitted(), this.fallbackEnvironment = const SdkOmitted(), required this.id, this.name = const SdkOmitted(), this.slug = const SdkOmitted()});
 
-  UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup Function(
-      {SdkOptional<
-              UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting>
-          enablePolyrepoBranchRouting,
-      SdkOptional<String> fallbackEnvironment,
-      String id,
-      SdkOptional<String> name,
-      SdkOptional<String> slug}) get copyWith => _copyWith;
+  UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup Function({SdkOptional<UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting> enablePolyrepoBranchRouting, SdkOptional<String> fallbackEnvironment, String id, SdkOptional<String> name, SdkOptional<String> slug}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup _copyWith(
-          {Object? enablePolyrepoBranchRouting = sdkOmittedValue,
-          Object? fallbackEnvironment = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? slug = sdkOmittedValue}) =>
-      UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup(
-        enablePolyrepoBranchRouting: identical(
-                enablePolyrepoBranchRouting, sdkOmittedValue)
-            ? this.enablePolyrepoBranchRouting
-            : enablePolyrepoBranchRouting as SdkOptional<
-                UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting>,
-        fallbackEnvironment: identical(fallbackEnvironment, sdkOmittedValue)
-            ? this.fallbackEnvironment
-            : fallbackEnvironment as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        slug: identical(slug, sdkOmittedValue)
-            ? this.slug
-            : slug as SdkOptional<String>,
-      );
+  UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup _copyWith({Object? enablePolyrepoBranchRouting = sdkOmittedValue, Object? fallbackEnvironment = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? slug = sdkOmittedValue}) => UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup(
+    enablePolyrepoBranchRouting: identical(enablePolyrepoBranchRouting, sdkOmittedValue) ? this.enablePolyrepoBranchRouting : enablePolyrepoBranchRouting as SdkOptional<UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting>,
+    fallbackEnvironment: identical(fallbackEnvironment, sdkOmittedValue) ? this.fallbackEnvironment : fallbackEnvironment as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
+  );
 
-  factory UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup(
-        enablePolyrepoBranchRouting: json['enablePolyrepoBranchRouting'] != null
-            ? SdkPresent((json['enablePolyrepoBranchRouting'] != null
-                ? UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting
-                    .fromJson(json['enablePolyrepoBranchRouting'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        fallbackEnvironment: json['fallbackEnvironment'] != null
-            ? SdkPresent((json['fallbackEnvironment'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        slug: json['slug'] != null
-            ? SdkPresent((json['slug'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup(
+    enablePolyrepoBranchRouting: json['enablePolyrepoBranchRouting'] != null ? SdkPresent((json['enablePolyrepoBranchRouting'] != null ? UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting.fromJson(json['enablePolyrepoBranchRouting'] as bool) : null)!) : const SdkOmitted(),
+    fallbackEnvironment: json['fallbackEnvironment'] != null ? SdkPresent((json['fallbackEnvironment'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enablePolyrepoBranchRouting) {
-          SdkPresent<
-                UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting>(
-            value: final value
-          ) =>
-            {
-              'enablePolyrepoBranchRouting': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (fallbackEnvironment) {
-          SdkPresent<String>(value: final value) => {
-              'fallbackEnvironment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (slug) {
-          SdkPresent<String>(value: final value) => {
-              'slug': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enablePolyrepoBranchRouting) {
+      SdkPresent<UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroupEnablePolyrepoBranchRouting>(value: final value) => {'enablePolyrepoBranchRouting': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (fallbackEnvironment) {
+      SdkPresent<String>(value: final value) => {'fallbackEnvironment': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (slug) {
+      SdkPresent<String>(value: final value) => {'slug': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateMicrofrontendsGroupResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup
-      updatedMicrofrontendsGroup;
+  final UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup updatedMicrofrontendsGroup;
 
-  const UpdateMicrofrontendsGroupResponse(
-      {required this.updatedMicrofrontendsGroup});
+  const UpdateMicrofrontendsGroupResponse({required this.updatedMicrofrontendsGroup});
 
-  UpdateMicrofrontendsGroupResponse Function(
-      {UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup
-          updatedMicrofrontendsGroup}) get copyWith => _copyWith;
+  UpdateMicrofrontendsGroupResponse Function({UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup updatedMicrofrontendsGroup}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsGroupResponse _copyWith(
-          {Object? updatedMicrofrontendsGroup = sdkOmittedValue}) =>
-      UpdateMicrofrontendsGroupResponse(
-        updatedMicrofrontendsGroup: identical(
-                updatedMicrofrontendsGroup, sdkOmittedValue)
-            ? this.updatedMicrofrontendsGroup
-            : updatedMicrofrontendsGroup
-                as UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup,
-      );
+  UpdateMicrofrontendsGroupResponse _copyWith({Object? updatedMicrofrontendsGroup = sdkOmittedValue}) => UpdateMicrofrontendsGroupResponse(
+    updatedMicrofrontendsGroup: identical(updatedMicrofrontendsGroup, sdkOmittedValue) ? this.updatedMicrofrontendsGroup : updatedMicrofrontendsGroup as UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup,
+  );
 
-  factory UpdateMicrofrontendsGroupResponse.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsGroupResponse(
-        updatedMicrofrontendsGroup: (json['updatedMicrofrontendsGroup'] != null
-            ? UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup
-                .fromJson(
-                    json['updatedMicrofrontendsGroup'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsGroupResponse.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsGroupResponse(
+    updatedMicrofrontendsGroup: (json['updatedMicrofrontendsGroup'] != null ? UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup.fromJson(json['updatedMicrofrontendsGroup'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'updatedMicrofrontendsGroup': updatedMicrofrontendsGroup.toJson(),
-      };
+    'updatedMicrofrontendsGroup': updatedMicrofrontendsGroup.toJson(),
+  };
 }
 
 class CreateRepositoryRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
   final String projectId;
-
   /// Single Docker repository name component.
   final String name;
 
-  const CreateRepositoryRequestBody(
-      {required this.projectId, required this.name});
+  const CreateRepositoryRequestBody({required this.projectId, required this.name});
 
-  CreateRepositoryRequestBody Function({String projectId, String name})
-      get copyWith => _copyWith;
+  CreateRepositoryRequestBody Function({String projectId, String name}) get copyWith => _copyWith;
 
-  CreateRepositoryRequestBody _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? name = sdkOmittedValue}) =>
-      CreateRepositoryRequestBody(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  CreateRepositoryRequestBody _copyWith({Object? projectId = sdkOmittedValue, Object? name = sdkOmittedValue}) => CreateRepositoryRequestBody(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory CreateRepositoryRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateRepositoryRequestBody(
-        projectId: (json['projectId'] as String?)!,
-        name: (json['name'] as String?)!,
-      );
+  factory CreateRepositoryRequestBody.fromJson(Map<String, dynamic> json) => CreateRepositoryRequestBody(
+    projectId: (json['projectId'] as String?)!,
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        'name': name,
-      };
+    'projectId': projectId,
+    'name': name,
+  };
 }
 
 class CreateRepositoryResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A Vercel Container Registry repository.
   final VcrRepository repository;
 
   const CreateRepositoryResponse({required this.repository});
 
-  CreateRepositoryResponse Function({VcrRepository repository}) get copyWith =>
-      _copyWith;
+  CreateRepositoryResponse Function({VcrRepository repository}) get copyWith => _copyWith;
 
-  CreateRepositoryResponse _copyWith({Object? repository = sdkOmittedValue}) =>
-      CreateRepositoryResponse(
-        repository: identical(repository, sdkOmittedValue)
-            ? this.repository
-            : repository as VcrRepository,
-      );
+  CreateRepositoryResponse _copyWith({Object? repository = sdkOmittedValue}) => CreateRepositoryResponse(
+    repository: identical(repository, sdkOmittedValue) ? this.repository : repository as VcrRepository,
+  );
 
-  factory CreateRepositoryResponse.fromJson(Map<String, dynamic> json) =>
-      CreateRepositoryResponse(
-        repository: (json['repository'] != null
-            ? VcrRepository.fromJson(json['repository'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CreateRepositoryResponse.fromJson(Map<String, dynamic> json) => CreateRepositoryResponse(
+    repository: (json['repository'] != null ? VcrRepository.fromJson(json['repository'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'repository': repository.toJson(),
-      };
+    'repository': repository.toJson(),
+  };
 }
 
 class GetRepositoryResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A Vercel Container Registry repository.
   final VcrRepository repository;
 
   const GetRepositoryResponse({required this.repository});
 
-  GetRepositoryResponse Function({VcrRepository repository}) get copyWith =>
-      _copyWith;
+  GetRepositoryResponse Function({VcrRepository repository}) get copyWith => _copyWith;
 
-  GetRepositoryResponse _copyWith({Object? repository = sdkOmittedValue}) =>
-      GetRepositoryResponse(
-        repository: identical(repository, sdkOmittedValue)
-            ? this.repository
-            : repository as VcrRepository,
-      );
+  GetRepositoryResponse _copyWith({Object? repository = sdkOmittedValue}) => GetRepositoryResponse(
+    repository: identical(repository, sdkOmittedValue) ? this.repository : repository as VcrRepository,
+  );
 
-  factory GetRepositoryResponse.fromJson(Map<String, dynamic> json) =>
-      GetRepositoryResponse(
-        repository: (json['repository'] != null
-            ? VcrRepository.fromJson(json['repository'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory GetRepositoryResponse.fromJson(Map<String, dynamic> json) => GetRepositoryResponse(
+    repository: (json['repository'] != null ? VcrRepository.fromJson(json['repository'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'repository': repository.toJson(),
-      };
+    'repository': repository.toJson(),
+  };
 }

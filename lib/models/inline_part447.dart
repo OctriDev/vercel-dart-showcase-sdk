@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1 {
   turbo;
 
-  static GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1 fromJson(String value) {
     switch (value) {
-      case 'turbo':
-        return GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1
-            .turbo;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1: $value');
+      case 'turbo': return GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1.turbo;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1
-            .turbo:
-        return 'turbo';
+      case GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1.turbo: return 'turbo';
     }
   }
 
@@ -32,12 +25,12 @@ enum GetVercelCiInvocationTreeResponseJobsItemDefinitionKindVariant1 {
 }
 
 final class SearchVercelCiLogsLevelItem {
+
   final String value;
 
   const SearchVercelCiLogsLevelItem._(this.value);
 
-  factory SearchVercelCiLogsLevelItem.fromJson(String value) =>
-      SearchVercelCiLogsLevelItem._(value);
+  factory SearchVercelCiLogsLevelItem.fromJson(String value) => SearchVercelCiLogsLevelItem._(value);
 
   static const trace = SearchVercelCiLogsLevelItem._('trace');
   static const debug = SearchVercelCiLogsLevelItem._('debug');
@@ -50,63 +43,51 @@ final class SearchVercelCiLogsLevelItem {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is SearchVercelCiLogsLevelItem && other.value == value;
+  @override bool operator ==(Object other) => other is SearchVercelCiLogsLevelItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetVercelCiRepositorySettingsProvider {
+
   final String value;
 
   const GetVercelCiRepositorySettingsProvider._(this.value);
 
-  factory GetVercelCiRepositorySettingsProvider.fromJson(String value) =>
-      GetVercelCiRepositorySettingsProvider._(value);
+  factory GetVercelCiRepositorySettingsProvider.fromJson(String value) => GetVercelCiRepositorySettingsProvider._(value);
 
   static const bitbucket = GetVercelCiRepositorySettingsProvider._('bitbucket');
-  static const cursorOrigin =
-      GetVercelCiRepositorySettingsProvider._('cursor-origin');
+  static const cursorOrigin = GetVercelCiRepositorySettingsProvider._('cursor-origin');
   static const github = GetVercelCiRepositorySettingsProvider._('github');
   static const gitlab = GetVercelCiRepositorySettingsProvider._('gitlab');
   static const vercel = GetVercelCiRepositorySettingsProvider._('vercel');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetVercelCiRepositorySettingsProvider && other.value == value;
+  @override bool operator ==(Object other) => other is GetVercelCiRepositorySettingsProvider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetVercelCiRepositorySettingsResponseProviderVariant0 {
   bitbucket;
 
-  static GetVercelCiRepositorySettingsResponseProviderVariant0 fromJson(
-      String value) {
+  static GetVercelCiRepositorySettingsResponseProviderVariant0 fromJson(String value) {
     switch (value) {
-      case 'bitbucket':
-        return GetVercelCiRepositorySettingsResponseProviderVariant0.bitbucket;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiRepositorySettingsResponseProviderVariant0: $value');
+      case 'bitbucket': return GetVercelCiRepositorySettingsResponseProviderVariant0.bitbucket;
+      default: throw ArgumentError('Unknown GetVercelCiRepositorySettingsResponseProviderVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiRepositorySettingsResponseProviderVariant0.bitbucket:
-        return 'bitbucket';
+      case GetVercelCiRepositorySettingsResponseProviderVariant0.bitbucket: return 'bitbucket';
     }
   }
 
@@ -117,22 +98,16 @@ enum GetVercelCiRepositorySettingsResponseProviderVariant0 {
 enum GetVercelCiRepositorySettingsResponseProviderVariant1 {
   cursorOrigin;
 
-  static GetVercelCiRepositorySettingsResponseProviderVariant1 fromJson(
-      String value) {
+  static GetVercelCiRepositorySettingsResponseProviderVariant1 fromJson(String value) {
     switch (value) {
-      case 'cursor-origin':
-        return GetVercelCiRepositorySettingsResponseProviderVariant1
-            .cursorOrigin;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiRepositorySettingsResponseProviderVariant1: $value');
+      case 'cursor-origin': return GetVercelCiRepositorySettingsResponseProviderVariant1.cursorOrigin;
+      default: throw ArgumentError('Unknown GetVercelCiRepositorySettingsResponseProviderVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiRepositorySettingsResponseProviderVariant1.cursorOrigin:
-        return 'cursor-origin';
+      case GetVercelCiRepositorySettingsResponseProviderVariant1.cursorOrigin: return 'cursor-origin';
     }
   }
 
@@ -143,21 +118,16 @@ enum GetVercelCiRepositorySettingsResponseProviderVariant1 {
 enum GetVercelCiRepositorySettingsResponseProviderVariant2 {
   github;
 
-  static GetVercelCiRepositorySettingsResponseProviderVariant2 fromJson(
-      String value) {
+  static GetVercelCiRepositorySettingsResponseProviderVariant2 fromJson(String value) {
     switch (value) {
-      case 'github':
-        return GetVercelCiRepositorySettingsResponseProviderVariant2.github;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiRepositorySettingsResponseProviderVariant2: $value');
+      case 'github': return GetVercelCiRepositorySettingsResponseProviderVariant2.github;
+      default: throw ArgumentError('Unknown GetVercelCiRepositorySettingsResponseProviderVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiRepositorySettingsResponseProviderVariant2.github:
-        return 'github';
+      case GetVercelCiRepositorySettingsResponseProviderVariant2.github: return 'github';
     }
   }
 
@@ -168,21 +138,16 @@ enum GetVercelCiRepositorySettingsResponseProviderVariant2 {
 enum GetVercelCiRepositorySettingsResponseProviderVariant3 {
   gitlab;
 
-  static GetVercelCiRepositorySettingsResponseProviderVariant3 fromJson(
-      String value) {
+  static GetVercelCiRepositorySettingsResponseProviderVariant3 fromJson(String value) {
     switch (value) {
-      case 'gitlab':
-        return GetVercelCiRepositorySettingsResponseProviderVariant3.gitlab;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiRepositorySettingsResponseProviderVariant3: $value');
+      case 'gitlab': return GetVercelCiRepositorySettingsResponseProviderVariant3.gitlab;
+      default: throw ArgumentError('Unknown GetVercelCiRepositorySettingsResponseProviderVariant3: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiRepositorySettingsResponseProviderVariant3.gitlab:
-        return 'gitlab';
+      case GetVercelCiRepositorySettingsResponseProviderVariant3.gitlab: return 'gitlab';
     }
   }
 
@@ -193,21 +158,16 @@ enum GetVercelCiRepositorySettingsResponseProviderVariant3 {
 enum GetVercelCiRepositorySettingsResponseProviderVariant4 {
   vercel;
 
-  static GetVercelCiRepositorySettingsResponseProviderVariant4 fromJson(
-      String value) {
+  static GetVercelCiRepositorySettingsResponseProviderVariant4 fromJson(String value) {
     switch (value) {
-      case 'vercel':
-        return GetVercelCiRepositorySettingsResponseProviderVariant4.vercel;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiRepositorySettingsResponseProviderVariant4: $value');
+      case 'vercel': return GetVercelCiRepositorySettingsResponseProviderVariant4.vercel;
+      default: throw ArgumentError('Unknown GetVercelCiRepositorySettingsResponseProviderVariant4: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiRepositorySettingsResponseProviderVariant4.vercel:
-        return 'vercel';
+      case GetVercelCiRepositorySettingsResponseProviderVariant4.vercel: return 'vercel';
     }
   }
 
@@ -216,53 +176,42 @@ enum GetVercelCiRepositorySettingsResponseProviderVariant4 {
 }
 
 final class UpdateVercelCiRepositorySettingsProvider {
+
   final String value;
 
   const UpdateVercelCiRepositorySettingsProvider._(this.value);
 
-  factory UpdateVercelCiRepositorySettingsProvider.fromJson(String value) =>
-      UpdateVercelCiRepositorySettingsProvider._(value);
+  factory UpdateVercelCiRepositorySettingsProvider.fromJson(String value) => UpdateVercelCiRepositorySettingsProvider._(value);
 
-  static const bitbucket =
-      UpdateVercelCiRepositorySettingsProvider._('bitbucket');
-  static const cursorOrigin =
-      UpdateVercelCiRepositorySettingsProvider._('cursor-origin');
+  static const bitbucket = UpdateVercelCiRepositorySettingsProvider._('bitbucket');
+  static const cursorOrigin = UpdateVercelCiRepositorySettingsProvider._('cursor-origin');
   static const github = UpdateVercelCiRepositorySettingsProvider._('github');
   static const gitlab = UpdateVercelCiRepositorySettingsProvider._('gitlab');
   static const vercel = UpdateVercelCiRepositorySettingsProvider._('vercel');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateVercelCiRepositorySettingsProvider && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateVercelCiRepositorySettingsProvider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateVercelCiRepositorySettingsResponseProviderVariant0 {
   bitbucket;
 
-  static UpdateVercelCiRepositorySettingsResponseProviderVariant0 fromJson(
-      String value) {
+  static UpdateVercelCiRepositorySettingsResponseProviderVariant0 fromJson(String value) {
     switch (value) {
-      case 'bitbucket':
-        return UpdateVercelCiRepositorySettingsResponseProviderVariant0
-            .bitbucket;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant0: $value');
+      case 'bitbucket': return UpdateVercelCiRepositorySettingsResponseProviderVariant0.bitbucket;
+      default: throw ArgumentError('Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateVercelCiRepositorySettingsResponseProviderVariant0.bitbucket:
-        return 'bitbucket';
+      case UpdateVercelCiRepositorySettingsResponseProviderVariant0.bitbucket: return 'bitbucket';
     }
   }
 
@@ -273,23 +222,16 @@ enum UpdateVercelCiRepositorySettingsResponseProviderVariant0 {
 enum UpdateVercelCiRepositorySettingsResponseProviderVariant1 {
   cursorOrigin;
 
-  static UpdateVercelCiRepositorySettingsResponseProviderVariant1 fromJson(
-      String value) {
+  static UpdateVercelCiRepositorySettingsResponseProviderVariant1 fromJson(String value) {
     switch (value) {
-      case 'cursor-origin':
-        return UpdateVercelCiRepositorySettingsResponseProviderVariant1
-            .cursorOrigin;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant1: $value');
+      case 'cursor-origin': return UpdateVercelCiRepositorySettingsResponseProviderVariant1.cursorOrigin;
+      default: throw ArgumentError('Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateVercelCiRepositorySettingsResponseProviderVariant1
-            .cursorOrigin:
-        return 'cursor-origin';
+      case UpdateVercelCiRepositorySettingsResponseProviderVariant1.cursorOrigin: return 'cursor-origin';
     }
   }
 
@@ -300,21 +242,16 @@ enum UpdateVercelCiRepositorySettingsResponseProviderVariant1 {
 enum UpdateVercelCiRepositorySettingsResponseProviderVariant2 {
   github;
 
-  static UpdateVercelCiRepositorySettingsResponseProviderVariant2 fromJson(
-      String value) {
+  static UpdateVercelCiRepositorySettingsResponseProviderVariant2 fromJson(String value) {
     switch (value) {
-      case 'github':
-        return UpdateVercelCiRepositorySettingsResponseProviderVariant2.github;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant2: $value');
+      case 'github': return UpdateVercelCiRepositorySettingsResponseProviderVariant2.github;
+      default: throw ArgumentError('Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateVercelCiRepositorySettingsResponseProviderVariant2.github:
-        return 'github';
+      case UpdateVercelCiRepositorySettingsResponseProviderVariant2.github: return 'github';
     }
   }
 
@@ -325,21 +262,16 @@ enum UpdateVercelCiRepositorySettingsResponseProviderVariant2 {
 enum UpdateVercelCiRepositorySettingsResponseProviderVariant3 {
   gitlab;
 
-  static UpdateVercelCiRepositorySettingsResponseProviderVariant3 fromJson(
-      String value) {
+  static UpdateVercelCiRepositorySettingsResponseProviderVariant3 fromJson(String value) {
     switch (value) {
-      case 'gitlab':
-        return UpdateVercelCiRepositorySettingsResponseProviderVariant3.gitlab;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant3: $value');
+      case 'gitlab': return UpdateVercelCiRepositorySettingsResponseProviderVariant3.gitlab;
+      default: throw ArgumentError('Unknown UpdateVercelCiRepositorySettingsResponseProviderVariant3: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateVercelCiRepositorySettingsResponseProviderVariant3.gitlab:
-        return 'gitlab';
+      case UpdateVercelCiRepositorySettingsResponseProviderVariant3.gitlab: return 'gitlab';
     }
   }
 

@@ -9,656 +9,236 @@ class UploadProjectAvatarResponseAliasItemDeployment {
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> alias;
   final SdkOptional<dynamic> aliasAssigned;
-  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentAliasError?>
-      aliasError;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentAliasError?> aliasError;
   final SdkOptional<String?> aliasFinal;
   final SdkOptional<List<String>> automaticAliases;
-  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher>
-      branchMatcher;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher> branchMatcher;
   final SdkOptional<double> buildingAt;
-  final SdkOptional<
-      List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>> builds;
-  final SdkOptional<
-          UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion>
-      checksConclusion;
-  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksState>
-      checksState;
-  final SdkOptional<
-          UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled>
-      connectBuildsEnabled;
+  final SdkOptional<List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>> builds;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion> checksConclusion;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksState> checksState;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled> connectBuildsEnabled;
   final SdkOptional<String> connectConfigurationId;
   final double createdAt;
   final String createdIn;
   final UploadProjectAvatarResponseAliasItemDeploymentCreator? creator;
   final SdkOptional<double> deletedAt;
   final String deploymentHostname;
-  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentForced>
-      forced;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentForced> forced;
   final String id;
   final SdkOptional<Map<String, String>> meta;
   final SdkOptional<String?> monorepoManager;
   final String name;
-  final SdkOptional<
-          UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims>
-      oidcTokenClaims;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims> oidcTokenClaims;
   final UploadProjectAvatarResponseAliasItemDeploymentPlan plan;
-
   /// Whether or not preview comments are enabled for the deployment
-  final SdkOptional<
-          UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled>
-      previewCommentsEnabled;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled> previewCommentsEnabled;
   final UploadProjectAvatarResponseAliasItemDeploymentPrivate private;
   final SdkOptional<double> readyAt;
   final UploadProjectAvatarResponseAliasItemDeploymentReadyState readyState;
-  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentReadySubstate>
-      readySubstate;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentReadySubstate> readySubstate;
   final SdkOptional<double> requestedAt;
   final SdkOptional<String?> target;
   final SdkOptional<String?> teamId;
   final UploadProjectAvatarResponseAliasItemDeploymentType type_;
   final String url;
-
   /// Present for user creators; omitted for app/integration/system creators.
   final SdkOptional<String> userId;
-  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentWithCache>
-      withCache;
+  final SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentWithCache> withCache;
 
-  const UploadProjectAvatarResponseAliasItemDeployment(
-      {this.alias = const SdkOmitted(),
-      this.aliasAssigned = const SdkOmitted(),
-      this.aliasError = const SdkOmitted(),
-      this.aliasFinal = const SdkOmitted(),
-      this.automaticAliases = const SdkOmitted(),
-      this.branchMatcher = const SdkOmitted(),
-      this.buildingAt = const SdkOmitted(),
-      this.builds = const SdkOmitted(),
-      this.checksConclusion = const SdkOmitted(),
-      this.checksState = const SdkOmitted(),
-      this.connectBuildsEnabled = const SdkOmitted(),
-      this.connectConfigurationId = const SdkOmitted(),
-      required this.createdAt,
-      required this.createdIn,
-      required this.creator,
-      this.deletedAt = const SdkOmitted(),
-      required this.deploymentHostname,
-      this.forced = const SdkOmitted(),
-      required this.id,
-      this.meta = const SdkOmitted(),
-      this.monorepoManager = const SdkOmitted(),
-      required this.name,
-      this.oidcTokenClaims = const SdkOmitted(),
-      required this.plan,
-      this.previewCommentsEnabled = const SdkOmitted(),
-      required this.private,
-      this.readyAt = const SdkOmitted(),
-      required this.readyState,
-      this.readySubstate = const SdkOmitted(),
-      this.requestedAt = const SdkOmitted(),
-      this.target = const SdkOmitted(),
-      this.teamId = const SdkOmitted(),
-      required this.type_,
-      required this.url,
-      this.userId = const SdkOmitted(),
-      this.withCache = const SdkOmitted()});
+  const UploadProjectAvatarResponseAliasItemDeployment({this.alias = const SdkOmitted(), this.aliasAssigned = const SdkOmitted(), this.aliasError = const SdkOmitted(), this.aliasFinal = const SdkOmitted(), this.automaticAliases = const SdkOmitted(), this.branchMatcher = const SdkOmitted(), this.buildingAt = const SdkOmitted(), this.builds = const SdkOmitted(), this.checksConclusion = const SdkOmitted(), this.checksState = const SdkOmitted(), this.connectBuildsEnabled = const SdkOmitted(), this.connectConfigurationId = const SdkOmitted(), required this.createdAt, required this.createdIn, required this.creator, this.deletedAt = const SdkOmitted(), required this.deploymentHostname, this.forced = const SdkOmitted(), required this.id, this.meta = const SdkOmitted(), this.monorepoManager = const SdkOmitted(), required this.name, this.oidcTokenClaims = const SdkOmitted(), required this.plan, this.previewCommentsEnabled = const SdkOmitted(), required this.private, this.readyAt = const SdkOmitted(), required this.readyState, this.readySubstate = const SdkOmitted(), this.requestedAt = const SdkOmitted(), this.target = const SdkOmitted(), this.teamId = const SdkOmitted(), required this.type_, required this.url, this.userId = const SdkOmitted(), this.withCache = const SdkOmitted()});
 
-  UploadProjectAvatarResponseAliasItemDeployment Function(
-      {SdkOptional<List<String>> alias,
-      SdkOptional<dynamic> aliasAssigned,
-      SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentAliasError?>
-          aliasError,
-      SdkOptional<String?> aliasFinal,
-      SdkOptional<List<String>> automaticAliases,
-      SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher>
-          branchMatcher,
-      SdkOptional<double> buildingAt,
-      SdkOptional<
-              List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>>
-          builds,
-      SdkOptional<
-              UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion>
-          checksConclusion,
-      SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksState>
-          checksState,
-      SdkOptional<
-              UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled>
-          connectBuildsEnabled,
-      SdkOptional<String> connectConfigurationId,
-      double createdAt,
-      String createdIn,
-      UploadProjectAvatarResponseAliasItemDeploymentCreator? creator,
-      SdkOptional<double> deletedAt,
-      String deploymentHostname,
-      SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentForced> forced,
-      String id,
-      SdkOptional<Map<String, String>> meta,
-      SdkOptional<String?> monorepoManager,
-      String name,
-      SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims>
-          oidcTokenClaims,
-      UploadProjectAvatarResponseAliasItemDeploymentPlan plan,
-      SdkOptional<
-              UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled>
-          previewCommentsEnabled,
-      UploadProjectAvatarResponseAliasItemDeploymentPrivate private,
-      SdkOptional<double> readyAt,
-      UploadProjectAvatarResponseAliasItemDeploymentReadyState readyState,
-      SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentReadySubstate>
-          readySubstate,
-      SdkOptional<double> requestedAt,
-      SdkOptional<String?> target,
-      SdkOptional<String?> teamId,
-      UploadProjectAvatarResponseAliasItemDeploymentType type_,
-      String url,
-      SdkOptional<String> userId,
-      SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentWithCache>
-          withCache}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseAliasItemDeployment Function({SdkOptional<List<String>> alias, SdkOptional<dynamic> aliasAssigned, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentAliasError?> aliasError, SdkOptional<String?> aliasFinal, SdkOptional<List<String>> automaticAliases, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher> branchMatcher, SdkOptional<double> buildingAt, SdkOptional<List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>> builds, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion> checksConclusion, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksState> checksState, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled> connectBuildsEnabled, SdkOptional<String> connectConfigurationId, double createdAt, String createdIn, UploadProjectAvatarResponseAliasItemDeploymentCreator? creator, SdkOptional<double> deletedAt, String deploymentHostname, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentForced> forced, String id, SdkOptional<Map<String, String>> meta, SdkOptional<String?> monorepoManager, String name, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims> oidcTokenClaims, UploadProjectAvatarResponseAliasItemDeploymentPlan plan, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled> previewCommentsEnabled, UploadProjectAvatarResponseAliasItemDeploymentPrivate private, SdkOptional<double> readyAt, UploadProjectAvatarResponseAliasItemDeploymentReadyState readyState, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentReadySubstate> readySubstate, SdkOptional<double> requestedAt, SdkOptional<String?> target, SdkOptional<String?> teamId, UploadProjectAvatarResponseAliasItemDeploymentType type_, String url, SdkOptional<String> userId, SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentWithCache> withCache}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseAliasItemDeployment _copyWith(
-          {Object? alias = sdkOmittedValue,
-          Object? aliasAssigned = sdkOmittedValue,
-          Object? aliasError = sdkOmittedValue,
-          Object? aliasFinal = sdkOmittedValue,
-          Object? automaticAliases = sdkOmittedValue,
-          Object? branchMatcher = sdkOmittedValue,
-          Object? buildingAt = sdkOmittedValue,
-          Object? builds = sdkOmittedValue,
-          Object? checksConclusion = sdkOmittedValue,
-          Object? checksState = sdkOmittedValue,
-          Object? connectBuildsEnabled = sdkOmittedValue,
-          Object? connectConfigurationId = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdIn = sdkOmittedValue,
-          Object? creator = sdkOmittedValue,
-          Object? deletedAt = sdkOmittedValue,
-          Object? deploymentHostname = sdkOmittedValue,
-          Object? forced = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? meta = sdkOmittedValue,
-          Object? monorepoManager = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? oidcTokenClaims = sdkOmittedValue,
-          Object? plan = sdkOmittedValue,
-          Object? previewCommentsEnabled = sdkOmittedValue,
-          Object? private = sdkOmittedValue,
-          Object? readyAt = sdkOmittedValue,
-          Object? readyState = sdkOmittedValue,
-          Object? readySubstate = sdkOmittedValue,
-          Object? requestedAt = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? url = sdkOmittedValue,
-          Object? userId = sdkOmittedValue,
-          Object? withCache = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseAliasItemDeployment(
-        alias: identical(alias, sdkOmittedValue)
-            ? this.alias
-            : alias as SdkOptional<List<String>>,
-        aliasAssigned: identical(aliasAssigned, sdkOmittedValue)
-            ? this.aliasAssigned
-            : aliasAssigned as SdkOptional<dynamic>,
-        aliasError: identical(aliasError, sdkOmittedValue)
-            ? this.aliasError
-            : aliasError as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentAliasError?>,
-        aliasFinal: identical(aliasFinal, sdkOmittedValue)
-            ? this.aliasFinal
-            : aliasFinal as SdkOptional<String?>,
-        automaticAliases: identical(automaticAliases, sdkOmittedValue)
-            ? this.automaticAliases
-            : automaticAliases as SdkOptional<List<String>>,
-        branchMatcher: identical(branchMatcher, sdkOmittedValue)
-            ? this.branchMatcher
-            : branchMatcher as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher>,
-        buildingAt: identical(buildingAt, sdkOmittedValue)
-            ? this.buildingAt
-            : buildingAt as SdkOptional<double>,
-        builds: identical(builds, sdkOmittedValue)
-            ? this.builds
-            : builds as SdkOptional<
-                List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>>,
-        checksConclusion: identical(checksConclusion, sdkOmittedValue)
-            ? this.checksConclusion
-            : checksConclusion as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion>,
-        checksState: identical(checksState, sdkOmittedValue)
-            ? this.checksState
-            : checksState as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentChecksState>,
-        connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue)
-            ? this.connectBuildsEnabled
-            : connectBuildsEnabled as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled>,
-        connectConfigurationId:
-            identical(connectConfigurationId, sdkOmittedValue)
-                ? this.connectConfigurationId
-                : connectConfigurationId as SdkOptional<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdIn: identical(createdIn, sdkOmittedValue)
-            ? this.createdIn
-            : createdIn as String,
-        creator: identical(creator, sdkOmittedValue)
-            ? this.creator
-            : creator as UploadProjectAvatarResponseAliasItemDeploymentCreator?,
-        deletedAt: identical(deletedAt, sdkOmittedValue)
-            ? this.deletedAt
-            : deletedAt as SdkOptional<double>,
-        deploymentHostname: identical(deploymentHostname, sdkOmittedValue)
-            ? this.deploymentHostname
-            : deploymentHostname as String,
-        forced: identical(forced, sdkOmittedValue)
-            ? this.forced
-            : forced as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentForced>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        meta: identical(meta, sdkOmittedValue)
-            ? this.meta
-            : meta as SdkOptional<Map<String, String>>,
-        monorepoManager: identical(monorepoManager, sdkOmittedValue)
-            ? this.monorepoManager
-            : monorepoManager as SdkOptional<String?>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        oidcTokenClaims: identical(oidcTokenClaims, sdkOmittedValue)
-            ? this.oidcTokenClaims
-            : oidcTokenClaims as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims>,
-        plan: identical(plan, sdkOmittedValue)
-            ? this.plan
-            : plan as UploadProjectAvatarResponseAliasItemDeploymentPlan,
-        previewCommentsEnabled: identical(
-                previewCommentsEnabled, sdkOmittedValue)
-            ? this.previewCommentsEnabled
-            : previewCommentsEnabled as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled>,
-        private: identical(private, sdkOmittedValue)
-            ? this.private
-            : private as UploadProjectAvatarResponseAliasItemDeploymentPrivate,
-        readyAt: identical(readyAt, sdkOmittedValue)
-            ? this.readyAt
-            : readyAt as SdkOptional<double>,
-        readyState: identical(readyState, sdkOmittedValue)
-            ? this.readyState
-            : readyState
-                as UploadProjectAvatarResponseAliasItemDeploymentReadyState,
-        readySubstate: identical(readySubstate, sdkOmittedValue)
-            ? this.readySubstate
-            : readySubstate as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentReadySubstate>,
-        requestedAt: identical(requestedAt, sdkOmittedValue)
-            ? this.requestedAt
-            : requestedAt as SdkOptional<double>,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<String?>,
-        teamId: identical(teamId, sdkOmittedValue)
-            ? this.teamId
-            : teamId as SdkOptional<String?>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UploadProjectAvatarResponseAliasItemDeploymentType,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        userId: identical(userId, sdkOmittedValue)
-            ? this.userId
-            : userId as SdkOptional<String>,
-        withCache: identical(withCache, sdkOmittedValue)
-            ? this.withCache
-            : withCache as SdkOptional<
-                UploadProjectAvatarResponseAliasItemDeploymentWithCache>,
-      );
+  UploadProjectAvatarResponseAliasItemDeployment _copyWith({Object? alias = sdkOmittedValue, Object? aliasAssigned = sdkOmittedValue, Object? aliasError = sdkOmittedValue, Object? aliasFinal = sdkOmittedValue, Object? automaticAliases = sdkOmittedValue, Object? branchMatcher = sdkOmittedValue, Object? buildingAt = sdkOmittedValue, Object? builds = sdkOmittedValue, Object? checksConclusion = sdkOmittedValue, Object? checksState = sdkOmittedValue, Object? connectBuildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdIn = sdkOmittedValue, Object? creator = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? deploymentHostname = sdkOmittedValue, Object? forced = sdkOmittedValue, Object? id = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? monorepoManager = sdkOmittedValue, Object? name = sdkOmittedValue, Object? oidcTokenClaims = sdkOmittedValue, Object? plan = sdkOmittedValue, Object? previewCommentsEnabled = sdkOmittedValue, Object? private = sdkOmittedValue, Object? readyAt = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? readySubstate = sdkOmittedValue, Object? requestedAt = sdkOmittedValue, Object? target = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? withCache = sdkOmittedValue}) => UploadProjectAvatarResponseAliasItemDeployment(
+    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<List<String>>,
+    aliasAssigned: identical(aliasAssigned, sdkOmittedValue) ? this.aliasAssigned : aliasAssigned as SdkOptional<dynamic>,
+    aliasError: identical(aliasError, sdkOmittedValue) ? this.aliasError : aliasError as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentAliasError?>,
+    aliasFinal: identical(aliasFinal, sdkOmittedValue) ? this.aliasFinal : aliasFinal as SdkOptional<String?>,
+    automaticAliases: identical(automaticAliases, sdkOmittedValue) ? this.automaticAliases : automaticAliases as SdkOptional<List<String>>,
+    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher>,
+    buildingAt: identical(buildingAt, sdkOmittedValue) ? this.buildingAt : buildingAt as SdkOptional<double>,
+    builds: identical(builds, sdkOmittedValue) ? this.builds : builds as SdkOptional<List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>>,
+    checksConclusion: identical(checksConclusion, sdkOmittedValue) ? this.checksConclusion : checksConclusion as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion>,
+    checksState: identical(checksState, sdkOmittedValue) ? this.checksState : checksState as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentChecksState>,
+    connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue) ? this.connectBuildsEnabled : connectBuildsEnabled as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled>,
+    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as SdkOptional<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdIn: identical(createdIn, sdkOmittedValue) ? this.createdIn : createdIn as String,
+    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as UploadProjectAvatarResponseAliasItemDeploymentCreator?,
+    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double>,
+    deploymentHostname: identical(deploymentHostname, sdkOmittedValue) ? this.deploymentHostname : deploymentHostname as String,
+    forced: identical(forced, sdkOmittedValue) ? this.forced : forced as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentForced>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as SdkOptional<Map<String, String>>,
+    monorepoManager: identical(monorepoManager, sdkOmittedValue) ? this.monorepoManager : monorepoManager as SdkOptional<String?>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    oidcTokenClaims: identical(oidcTokenClaims, sdkOmittedValue) ? this.oidcTokenClaims : oidcTokenClaims as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims>,
+    plan: identical(plan, sdkOmittedValue) ? this.plan : plan as UploadProjectAvatarResponseAliasItemDeploymentPlan,
+    previewCommentsEnabled: identical(previewCommentsEnabled, sdkOmittedValue) ? this.previewCommentsEnabled : previewCommentsEnabled as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled>,
+    private: identical(private, sdkOmittedValue) ? this.private : private as UploadProjectAvatarResponseAliasItemDeploymentPrivate,
+    readyAt: identical(readyAt, sdkOmittedValue) ? this.readyAt : readyAt as SdkOptional<double>,
+    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as UploadProjectAvatarResponseAliasItemDeploymentReadyState,
+    readySubstate: identical(readySubstate, sdkOmittedValue) ? this.readySubstate : readySubstate as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentReadySubstate>,
+    requestedAt: identical(requestedAt, sdkOmittedValue) ? this.requestedAt : requestedAt as SdkOptional<double>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<String?>,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String?>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseAliasItemDeploymentType,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
+    withCache: identical(withCache, sdkOmittedValue) ? this.withCache : withCache as SdkOptional<UploadProjectAvatarResponseAliasItemDeploymentWithCache>,
+  );
 
-  factory UploadProjectAvatarResponseAliasItemDeployment.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseAliasItemDeployment(
-        alias: json['alias'] != null
-            ? SdkPresent(
-                ((json['alias'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        aliasAssigned: json.containsKey('aliasAssigned')
-            ? SdkPresent(json['aliasAssigned'])
-            : const SdkOmitted(),
-        aliasError: json.containsKey('aliasError')
-            ? SdkPresent(json['aliasError'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentAliasError
-                    .fromJson(json['aliasError'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        aliasFinal: json.containsKey('aliasFinal')
-            ? SdkPresent(json['aliasFinal'] as String?)
-            : const SdkOmitted(),
-        automaticAliases: json['automaticAliases'] != null
-            ? SdkPresent(((json['automaticAliases'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        branchMatcher: json['branchMatcher'] != null
-            ? SdkPresent((json['branchMatcher'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher
-                    .fromJson(json['branchMatcher'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        buildingAt: json['buildingAt'] != null
-            ? SdkPresent(((json['buildingAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        builds: json['builds'] != null
-            ? SdkPresent(((json['builds'] as List?)
-                ?.map((e) =>
-                    UploadProjectAvatarResponseAliasItemDeploymentBuildsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        checksConclusion: json['checksConclusion'] != null
-            ? SdkPresent((json['checksConclusion'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion
-                    .fromJson(json['checksConclusion'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        checksState: json['checksState'] != null
-            ? SdkPresent((json['checksState'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentChecksState
-                    .fromJson(json['checksState'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        connectBuildsEnabled: json['connectBuildsEnabled'] != null
-            ? SdkPresent((json['connectBuildsEnabled'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled
-                    .fromJson(json['connectBuildsEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        connectConfigurationId: json['connectConfigurationId'] != null
-            ? SdkPresent((json['connectConfigurationId'] as String?)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdIn: (json['createdIn'] as String?)!,
-        creator: json.containsKey('creator')
-            ? json['creator'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentCreator
-                    .fromJson(json['creator'] as Map<String, dynamic>)
-                : null
-            : throw ArgumentError.value(
-                null, 'creator', 'Required property is missing'),
-        deletedAt: json['deletedAt'] != null
-            ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        deploymentHostname: (json['deploymentHostname'] as String?)!,
-        forced: json['forced'] != null
-            ? SdkPresent((json['forced'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentForced.fromJson(
-                    json['forced'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        meta: json['meta'] != null
-            ? SdkPresent((json['meta'] == null
-                ? null
-                : Map<String, dynamic>.from(json['meta'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        monorepoManager: json.containsKey('monorepoManager')
-            ? SdkPresent(json['monorepoManager'] as String?)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        oidcTokenClaims: json['oidcTokenClaims'] != null
-            ? SdkPresent((json['oidcTokenClaims'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims
-                    .fromJson(json['oidcTokenClaims'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        plan: (json['plan'] != null
-            ? UploadProjectAvatarResponseAliasItemDeploymentPlan.fromJson(
-                json['plan'] as String)
-            : null)!,
-        previewCommentsEnabled: json['previewCommentsEnabled'] != null
-            ? SdkPresent((json['previewCommentsEnabled'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled
-                    .fromJson(json['previewCommentsEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        private: (json['private'] != null
-            ? UploadProjectAvatarResponseAliasItemDeploymentPrivate.fromJson(
-                json['private'] as bool)
-            : null)!,
-        readyAt: json['readyAt'] != null
-            ? SdkPresent(((json['readyAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        readyState: (json['readyState'] != null
-            ? UploadProjectAvatarResponseAliasItemDeploymentReadyState.fromJson(
-                json['readyState'] as String)
-            : null)!,
-        readySubstate: json['readySubstate'] != null
-            ? SdkPresent((json['readySubstate'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentReadySubstate
-                    .fromJson(json['readySubstate'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        requestedAt: json['requestedAt'] != null
-            ? SdkPresent(((json['requestedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        target: json.containsKey('target')
-            ? SdkPresent(json['target'] as String?)
-            : const SdkOmitted(),
-        teamId: json.containsKey('teamId')
-            ? SdkPresent(json['teamId'] as String?)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UploadProjectAvatarResponseAliasItemDeploymentType.fromJson(
-                json['type'] as String)
-            : null)!,
-        url: (json['url'] as String?)!,
-        userId: json['userId'] != null
-            ? SdkPresent((json['userId'] as String?)!)
-            : const SdkOmitted(),
-        withCache: json['withCache'] != null
-            ? SdkPresent((json['withCache'] != null
-                ? UploadProjectAvatarResponseAliasItemDeploymentWithCache
-                    .fromJson(json['withCache'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseAliasItemDeployment.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseAliasItemDeployment(
+    alias: json['alias'] != null ? SdkPresent(((json['alias'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    aliasAssigned: json.containsKey('aliasAssigned') ? SdkPresent(json['aliasAssigned']) : const SdkOmitted(),
+    aliasError: json.containsKey('aliasError') ? SdkPresent(json['aliasError'] != null ? UploadProjectAvatarResponseAliasItemDeploymentAliasError.fromJson(json['aliasError'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    aliasFinal: json.containsKey('aliasFinal') ? SdkPresent(json['aliasFinal'] as String?) : const SdkOmitted(),
+    automaticAliases: json['automaticAliases'] != null ? SdkPresent(((json['automaticAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    buildingAt: json['buildingAt'] != null ? SdkPresent(((json['buildingAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    builds: json['builds'] != null ? SdkPresent(((json['builds'] as List?)?.map((e) => UploadProjectAvatarResponseAliasItemDeploymentBuildsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    checksConclusion: json['checksConclusion'] != null ? SdkPresent((json['checksConclusion'] != null ? UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion.fromJson(json['checksConclusion'] as String) : null)!) : const SdkOmitted(),
+    checksState: json['checksState'] != null ? SdkPresent((json['checksState'] != null ? UploadProjectAvatarResponseAliasItemDeploymentChecksState.fromJson(json['checksState'] as String) : null)!) : const SdkOmitted(),
+    connectBuildsEnabled: json['connectBuildsEnabled'] != null ? SdkPresent((json['connectBuildsEnabled'] != null ? UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled.fromJson(json['connectBuildsEnabled'] as bool) : null)!) : const SdkOmitted(),
+    connectConfigurationId: json['connectConfigurationId'] != null ? SdkPresent((json['connectConfigurationId'] as String?)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdIn: (json['createdIn'] as String?)!,
+    creator: json.containsKey('creator') ? json['creator'] != null ? UploadProjectAvatarResponseAliasItemDeploymentCreator.fromJson(json['creator'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'creator', 'Required property is missing'),
+    deletedAt: json['deletedAt'] != null ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    deploymentHostname: (json['deploymentHostname'] as String?)!,
+    forced: json['forced'] != null ? SdkPresent((json['forced'] != null ? UploadProjectAvatarResponseAliasItemDeploymentForced.fromJson(json['forced'] as bool) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    meta: json['meta'] != null ? SdkPresent((json['meta'] == null ? null : Map<String, dynamic>.from(json['meta'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    monorepoManager: json.containsKey('monorepoManager') ? SdkPresent(json['monorepoManager'] as String?) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    oidcTokenClaims: json['oidcTokenClaims'] != null ? SdkPresent((json['oidcTokenClaims'] != null ? UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims.fromJson(json['oidcTokenClaims'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    plan: (json['plan'] != null ? UploadProjectAvatarResponseAliasItemDeploymentPlan.fromJson(json['plan'] as String) : null)!,
+    previewCommentsEnabled: json['previewCommentsEnabled'] != null ? SdkPresent((json['previewCommentsEnabled'] != null ? UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled.fromJson(json['previewCommentsEnabled'] as bool) : null)!) : const SdkOmitted(),
+    private: (json['private'] != null ? UploadProjectAvatarResponseAliasItemDeploymentPrivate.fromJson(json['private'] as bool) : null)!,
+    readyAt: json['readyAt'] != null ? SdkPresent(((json['readyAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    readyState: (json['readyState'] != null ? UploadProjectAvatarResponseAliasItemDeploymentReadyState.fromJson(json['readyState'] as String) : null)!,
+    readySubstate: json['readySubstate'] != null ? SdkPresent((json['readySubstate'] != null ? UploadProjectAvatarResponseAliasItemDeploymentReadySubstate.fromJson(json['readySubstate'] as String) : null)!) : const SdkOmitted(),
+    requestedAt: json['requestedAt'] != null ? SdkPresent(((json['requestedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    target: json.containsKey('target') ? SdkPresent(json['target'] as String?) : const SdkOmitted(),
+    teamId: json.containsKey('teamId') ? SdkPresent(json['teamId'] as String?) : const SdkOmitted(),
+    type_: (json['type'] != null ? UploadProjectAvatarResponseAliasItemDeploymentType.fromJson(json['type'] as String) : null)!,
+    url: (json['url'] as String?)!,
+    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
+    withCache: json['withCache'] != null ? SdkPresent((json['withCache'] != null ? UploadProjectAvatarResponseAliasItemDeploymentWithCache.fromJson(json['withCache'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (alias) {
-          SdkPresent<List<String>>(value: final value) => {
-              'alias': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasAssigned) {
-          SdkPresent<dynamic>(value: final value) => {
-              'aliasAssigned': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasError) {
-          SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentAliasError?>(
-            value: final value
-          ) =>
-            {
-              'aliasError': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (aliasFinal) {
-          SdkPresent<String?>(value: final value) => {
-              'aliasFinal': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (automaticAliases) {
-          SdkPresent<List<String>>(value: final value) => {
-              'automaticAliases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (branchMatcher) {
-          SdkPresent<
-                UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher>(
-            value: final value
-          ) =>
-            {
-              'branchMatcher': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildingAt) {
-          SdkPresent<double>(value: final value) => {
-              'buildingAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (builds) {
-          SdkPresent<
-                List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>>(
-            value: final value
-          ) =>
-            {
-              'builds': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (checksConclusion) {
-          SdkPresent<
-                UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion>(
-            value: final value
-          ) =>
-            {
-              'checksConclusion': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (checksState) {
-          SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentChecksState>(
-            value: final value
-          ) =>
-            {
-              'checksState': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectBuildsEnabled) {
-          SdkPresent<
-                UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled>(
-            value: final value
-          ) =>
-            {
-              'connectBuildsEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectConfigurationId) {
-          SdkPresent<String>(value: final value) => {
-              'connectConfigurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'createdIn': createdIn,
-        'creator': creator?.toJson(),
-        ...switch (deletedAt) {
-          SdkPresent<double>(value: final value) => {
-              'deletedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deploymentHostname': deploymentHostname,
-        ...switch (forced) {
-          SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentForced>(
-            value: final value
-          ) =>
-            {
-              'forced': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (meta) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'meta': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (monorepoManager) {
-          SdkPresent<String?>(value: final value) => {
-              'monorepoManager': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        ...switch (oidcTokenClaims) {
-          SdkPresent<
-                UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims>(
-            value: final value
-          ) =>
-            {
-              'oidcTokenClaims': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'plan': plan.toJson(),
-        ...switch (previewCommentsEnabled) {
-          SdkPresent<
-                UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled>(
-            value: final value
-          ) =>
-            {
-              'previewCommentsEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'private': private.toJson(),
-        ...switch (readyAt) {
-          SdkPresent<double>(value: final value) => {
-              'readyAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'readyState': readyState.toJson(),
-        ...switch (readySubstate) {
-          SdkPresent<
-                UploadProjectAvatarResponseAliasItemDeploymentReadySubstate>(
-            value: final value
-          ) =>
-            {
-              'readySubstate': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requestedAt) {
-          SdkPresent<double>(value: final value) => {
-              'requestedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (target) {
-          SdkPresent<String?>(value: final value) => {
-              'target': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (teamId) {
-          SdkPresent<String?>(value: final value) => {
-              'teamId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        'url': url,
-        ...switch (userId) {
-          SdkPresent<String>(value: final value) => {
-              'userId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (withCache) {
-          SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentWithCache>(
-            value: final value
-          ) =>
-            {
-              'withCache': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (alias) {
+      SdkPresent<List<String>>(value: final value) => {'alias': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasAssigned) {
+      SdkPresent<dynamic>(value: final value) => {'aliasAssigned': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasError) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentAliasError?>(value: final value) => {'aliasError': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (aliasFinal) {
+      SdkPresent<String?>(value: final value) => {'aliasFinal': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (automaticAliases) {
+      SdkPresent<List<String>>(value: final value) => {'automaticAliases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (branchMatcher) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildingAt) {
+      SdkPresent<double>(value: final value) => {'buildingAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (builds) {
+      SdkPresent<List<UploadProjectAvatarResponseAliasItemDeploymentBuildsItem>>(value: final value) => {'builds': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (checksConclusion) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentChecksConclusion>(value: final value) => {'checksConclusion': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (checksState) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentChecksState>(value: final value) => {'checksState': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectBuildsEnabled) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentConnectBuildsEnabled>(value: final value) => {'connectBuildsEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectConfigurationId) {
+      SdkPresent<String>(value: final value) => {'connectConfigurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'createdIn': createdIn,
+    'creator': creator?.toJson(),
+    ...switch (deletedAt) {
+      SdkPresent<double>(value: final value) => {'deletedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'deploymentHostname': deploymentHostname,
+    ...switch (forced) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentForced>(value: final value) => {'forced': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (meta) {
+      SdkPresent<Map<String, String>>(value: final value) => {'meta': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (monorepoManager) {
+      SdkPresent<String?>(value: final value) => {'monorepoManager': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    ...switch (oidcTokenClaims) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentOidcTokenClaims>(value: final value) => {'oidcTokenClaims': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'plan': plan.toJson(),
+    ...switch (previewCommentsEnabled) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentPreviewCommentsEnabled>(value: final value) => {'previewCommentsEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'private': private.toJson(),
+    ...switch (readyAt) {
+      SdkPresent<double>(value: final value) => {'readyAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'readyState': readyState.toJson(),
+    ...switch (readySubstate) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentReadySubstate>(value: final value) => {'readySubstate': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requestedAt) {
+      SdkPresent<double>(value: final value) => {'requestedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (target) {
+      SdkPresent<String?>(value: final value) => {'target': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (teamId) {
+      SdkPresent<String?>(value: final value) => {'teamId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    'url': url,
+    ...switch (userId) {
+      SdkPresent<String>(value: final value) => {'userId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (withCache) {
+      SdkPresent<UploadProjectAvatarResponseAliasItemDeploymentWithCache>(value: final value) => {'withCache': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

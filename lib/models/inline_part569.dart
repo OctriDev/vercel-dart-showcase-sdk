@@ -5,90 +5,74 @@ part of 'inline.dart';
 
 // Inline operation models (part 569)
 final class UpdateProjectResponseLatestDeploymentsItemType {
+
   final String value;
 
   const UpdateProjectResponseLatestDeploymentsItemType._(this.value);
 
-  factory UpdateProjectResponseLatestDeploymentsItemType.fromJson(
-          String value) =>
-      UpdateProjectResponseLatestDeploymentsItemType._(value);
+  factory UpdateProjectResponseLatestDeploymentsItemType.fromJson(String value) => UpdateProjectResponseLatestDeploymentsItemType._(value);
 
-  static const lambdas =
-      UpdateProjectResponseLatestDeploymentsItemType._('LAMBDAS');
+  static const lambdas = UpdateProjectResponseLatestDeploymentsItemType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseLatestDeploymentsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseLatestDeploymentsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponseLatestDeploymentsItemWithCache {
+
   final bool value;
 
   const UpdateProjectResponseLatestDeploymentsItemWithCache._(this.value);
 
-  factory UpdateProjectResponseLatestDeploymentsItemWithCache.fromJson(
-          bool value) =>
-      UpdateProjectResponseLatestDeploymentsItemWithCache._(value);
+  factory UpdateProjectResponseLatestDeploymentsItemWithCache.fromJson(bool value) => UpdateProjectResponseLatestDeploymentsItemWithCache._(value);
 
-  static const false_ =
-      UpdateProjectResponseLatestDeploymentsItemWithCache._(false);
-  static const true_ =
-      UpdateProjectResponseLatestDeploymentsItemWithCache._(true);
+  static const false_ = UpdateProjectResponseLatestDeploymentsItemWithCache._(false);
+  static const true_ = UpdateProjectResponseLatestDeploymentsItemWithCache._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseLatestDeploymentsItemWithCache &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseLatestDeploymentsItemWithCache && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponseLive {
+
   final bool value;
 
   const UpdateProjectResponseLive._(this.value);
 
-  factory UpdateProjectResponseLive.fromJson(bool value) =>
-      UpdateProjectResponseLive._(value);
+  factory UpdateProjectResponseLive.fromJson(bool value) => UpdateProjectResponseLive._(value);
 
   static const false_ = UpdateProjectResponseLive._(false);
   static const true_ = UpdateProjectResponseLive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseLive && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseLive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponseNodeVersion {
+
   final String value;
 
   const UpdateProjectResponseNodeVersion._(this.value);
 
-  factory UpdateProjectResponseNodeVersion.fromJson(String value) =>
-      UpdateProjectResponseNodeVersion._(value);
+  factory UpdateProjectResponseNodeVersion.fromJson(String value) => UpdateProjectResponseNodeVersion._(value);
 
   static const v10X = UpdateProjectResponseNodeVersion._('10.x');
   static const v12X = UpdateProjectResponseNodeVersion._('12.x');
@@ -103,233 +87,180 @@ final class UpdateProjectResponseNodeVersion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseNodeVersion && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseNodeVersion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not to generate OpenID Connect JSON Web Tokens.
 final class UpdateProjectResponseOidcTokenConfigEnabled {
+
   final bool value;
 
   const UpdateProjectResponseOidcTokenConfigEnabled._(this.value);
 
-  factory UpdateProjectResponseOidcTokenConfigEnabled.fromJson(bool value) =>
-      UpdateProjectResponseOidcTokenConfigEnabled._(value);
+  factory UpdateProjectResponseOidcTokenConfigEnabled.fromJson(bool value) => UpdateProjectResponseOidcTokenConfigEnabled._(value);
 
   static const false_ = UpdateProjectResponseOidcTokenConfigEnabled._(false);
   static const true_ = UpdateProjectResponseOidcTokenConfigEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseOidcTokenConfigEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseOidcTokenConfigEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
 final class UpdateProjectResponseOidcTokenConfigIssuerMode {
+
   final String value;
 
   const UpdateProjectResponseOidcTokenConfigIssuerMode._(this.value);
 
-  factory UpdateProjectResponseOidcTokenConfigIssuerMode.fromJson(
-          String value) =>
-      UpdateProjectResponseOidcTokenConfigIssuerMode._(value);
+  factory UpdateProjectResponseOidcTokenConfigIssuerMode.fromJson(String value) => UpdateProjectResponseOidcTokenConfigIssuerMode._(value);
 
-  static const global =
-      UpdateProjectResponseOidcTokenConfigIssuerMode._('global');
+  static const global = UpdateProjectResponseOidcTokenConfigIssuerMode._('global');
   static const team = UpdateProjectResponseOidcTokenConfigIssuerMode._('team');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseOidcTokenConfigIssuerMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseOidcTokenConfigIssuerMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponsePassportDeploymentType {
+
   final String value;
 
   const UpdateProjectResponsePassportDeploymentType._(this.value);
 
-  factory UpdateProjectResponsePassportDeploymentType.fromJson(String value) =>
-      UpdateProjectResponsePassportDeploymentType._(value);
+  factory UpdateProjectResponsePassportDeploymentType.fromJson(String value) => UpdateProjectResponsePassportDeploymentType._(value);
 
   static const all = UpdateProjectResponsePassportDeploymentType._('all');
-  static const allExceptCustomDomains =
-      UpdateProjectResponsePassportDeploymentType._(
-          'all_except_custom_domains');
-  static const preview =
-      UpdateProjectResponsePassportDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UpdateProjectResponsePassportDeploymentType._(
-          'prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains = UpdateProjectResponsePassportDeploymentType._('all_except_custom_domains');
+  static const preview = UpdateProjectResponsePassportDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectResponsePassportDeploymentType._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponsePassportDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponsePassportDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponsePasswordProtectionDeploymentType {
+
   final String value;
 
   const UpdateProjectResponsePasswordProtectionDeploymentType._(this.value);
 
-  factory UpdateProjectResponsePasswordProtectionDeploymentType.fromJson(
-          String value) =>
-      UpdateProjectResponsePasswordProtectionDeploymentType._(value);
+  factory UpdateProjectResponsePasswordProtectionDeploymentType.fromJson(String value) => UpdateProjectResponsePasswordProtectionDeploymentType._(value);
 
-  static const all =
-      UpdateProjectResponsePasswordProtectionDeploymentType._('all');
-  static const allExceptCustomDomains =
-      UpdateProjectResponsePasswordProtectionDeploymentType._(
-          'all_except_custom_domains');
-  static const preview =
-      UpdateProjectResponsePasswordProtectionDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      UpdateProjectResponsePasswordProtectionDeploymentType._(
-          'prod_deployment_urls_and_all_previews');
+  static const all = UpdateProjectResponsePasswordProtectionDeploymentType._('all');
+  static const allExceptCustomDomains = UpdateProjectResponsePasswordProtectionDeploymentType._('all_except_custom_domains');
+  static const preview = UpdateProjectResponsePasswordProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectResponsePasswordProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponsePasswordProtectionDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponsePasswordProtectionDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponsePaused {
+
   final bool value;
 
   const UpdateProjectResponsePaused._(this.value);
 
-  factory UpdateProjectResponsePaused.fromJson(bool value) =>
-      UpdateProjectResponsePaused._(value);
+  factory UpdateProjectResponsePaused.fromJson(bool value) => UpdateProjectResponsePaused._(value);
 
   static const false_ = UpdateProjectResponsePaused._(false);
   static const true_ = UpdateProjectResponsePaused._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponsePaused && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponsePaused && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponseProductionDeploymentsFastLane {
+
   final bool value;
 
   const UpdateProjectResponseProductionDeploymentsFastLane._(this.value);
 
-  factory UpdateProjectResponseProductionDeploymentsFastLane.fromJson(
-          bool value) =>
-      UpdateProjectResponseProductionDeploymentsFastLane._(value);
+  factory UpdateProjectResponseProductionDeploymentsFastLane.fromJson(bool value) => UpdateProjectResponseProductionDeploymentsFastLane._(value);
 
-  static const false_ =
-      UpdateProjectResponseProductionDeploymentsFastLane._(false);
-  static const true_ =
-      UpdateProjectResponseProductionDeploymentsFastLane._(true);
+  static const false_ = UpdateProjectResponseProductionDeploymentsFastLane._(false);
+  static const true_ = UpdateProjectResponseProductionDeploymentsFastLane._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseProductionDeploymentsFastLane &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseProductionDeploymentsFastLane && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateProjectResponseProtectedSourcemaps {
+
   final bool value;
 
   const UpdateProjectResponseProtectedSourcemaps._(this.value);
 
-  factory UpdateProjectResponseProtectedSourcemaps.fromJson(bool value) =>
-      UpdateProjectResponseProtectedSourcemaps._(value);
+  factory UpdateProjectResponseProtectedSourcemaps.fromJson(bool value) => UpdateProjectResponseProtectedSourcemaps._(value);
 
   static const false_ = UpdateProjectResponseProtectedSourcemaps._(false);
   static const true_ = UpdateProjectResponseProtectedSourcemaps._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseProtectedSourcemaps && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseProtectedSourcemaps && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateProjectResponseProtectionBypassValueVariant0Scope {
   integrationAutomationBypass;
 
-  static UpdateProjectResponseProtectionBypassValueVariant0Scope fromJson(
-      String value) {
+  static UpdateProjectResponseProtectionBypassValueVariant0Scope fromJson(String value) {
     switch (value) {
-      case 'integration-automation-bypass':
-        return UpdateProjectResponseProtectionBypassValueVariant0Scope
-            .integrationAutomationBypass;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateProjectResponseProtectionBypassValueVariant0Scope: $value');
+      case 'integration-automation-bypass': return UpdateProjectResponseProtectionBypassValueVariant0Scope.integrationAutomationBypass;
+      default: throw ArgumentError('Unknown UpdateProjectResponseProtectionBypassValueVariant0Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateProjectResponseProtectionBypassValueVariant0Scope
-            .integrationAutomationBypass:
-        return 'integration-automation-bypass';
+      case UpdateProjectResponseProtectionBypassValueVariant0Scope.integrationAutomationBypass: return 'integration-automation-bypass';
     }
   }
 
@@ -339,30 +270,22 @@ enum UpdateProjectResponseProtectionBypassValueVariant0Scope {
 
 /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
 final class UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar {
+
   final bool value;
 
-  const UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(
-      this.value);
+  const UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(this.value);
 
-  factory UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar.fromJson(
-          bool value) =>
-      UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(value);
+  factory UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar.fromJson(bool value) => UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(value);
 
-  static const false_ =
-      UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(false);
-  static const true_ =
-      UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(true);
+  static const false_ = UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(false);
+  static const true_ = UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateProjectResponseProtectionBypassValueVariant1IsEnvVar && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

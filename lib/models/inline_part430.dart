@@ -5,424 +5,272 @@ part of 'inline.dart';
 
 // Inline operation models (part 430)
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2 {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2._(value);
 
-  static const create =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2
-          ._('create');
-  static const update =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2
-          ._('update');
+  static const create = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2._('create');
+  static const update = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2._('update');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant2 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2 {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2._(value);
 
-  static const create =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2
-          ._('create');
-  static const update =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2
-          ._('update');
+  static const create = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2._('create');
+  static const update = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2._('update');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant2 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiPaidOnly && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2 {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2._(value);
 
-  static const create =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2
-          ._('create');
-  static const update =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2
-          ._('update');
+  static const create = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2._('create');
+  static const update = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2._('update');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant2 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type._(value);
 
-  static const string =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type
-          ._('string');
+  static const string = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type._('string');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl._(value);
 
-  static const radioButton =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl
-          ._('radio-button');
+  static const radioButton = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl._('radio-button');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiControl && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2 {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2._(value);
 
-  static const create =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2
-          ._('create');
-  static const update =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2
-          ._('update');
+  static const create = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2._('create');
+  static const update = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2._('update');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiDisabledVariant2 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2 {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2._(value);
 
-  static const create =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2
-          ._('create');
-  static const update =
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2
-          ._('update');
+  static const create = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2._('create');
+  static const update = CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2._('update');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant5UiHiddenVariant2 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

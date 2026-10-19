@@ -8,524 +8,285 @@ part of 'user.dart';
 class UserEventPayloadVariant408 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `string` value serialized in the `bitbucketUsername` wire field.
   final SdkOptional<String?> bitbucketUsername;
-
   /// Optional `string` value serialized in the `githubUsername` wire field.
   final SdkOptional<String?> githubUsername;
-
   /// Optional `string` value serialized in the `gitlabUsername` wire field.
   final SdkOptional<String?> gitlabUsername;
-
   /// Optional `string` value serialized in the `gitUsername` wire field.
   final SdkOptional<String?> gitUsername;
-
   /// Required `string` value serialized in the `teamName` wire field.
   final String teamName;
-
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant408(
-      {this.bitbucketUsername = const SdkOmitted(),
-      this.githubUsername = const SdkOmitted(),
-      this.gitlabUsername = const SdkOmitted(),
-      this.gitUsername = const SdkOmitted(),
-      required this.teamName,
-      this.username = const SdkOmitted()});
+  const UserEventPayloadVariant408({this.bitbucketUsername = const SdkOmitted(), this.githubUsername = const SdkOmitted(), this.gitlabUsername = const SdkOmitted(), this.gitUsername = const SdkOmitted(), required this.teamName, this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant408 Function(
-      {SdkOptional<String?> bitbucketUsername,
-      SdkOptional<String?> githubUsername,
-      SdkOptional<String?> gitlabUsername,
-      SdkOptional<String?> gitUsername,
-      String teamName,
-      SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant408 Function({SdkOptional<String?> bitbucketUsername, SdkOptional<String?> githubUsername, SdkOptional<String?> gitlabUsername, SdkOptional<String?> gitUsername, String teamName, SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant408 _copyWith(
-          {Object? bitbucketUsername = sdkOmittedValue,
-          Object? githubUsername = sdkOmittedValue,
-          Object? gitlabUsername = sdkOmittedValue,
-          Object? gitUsername = sdkOmittedValue,
-          Object? teamName = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      UserEventPayloadVariant408(
-        bitbucketUsername: identical(bitbucketUsername, sdkOmittedValue)
-            ? this.bitbucketUsername
-            : bitbucketUsername as SdkOptional<String?>,
-        githubUsername: identical(githubUsername, sdkOmittedValue)
-            ? this.githubUsername
-            : githubUsername as SdkOptional<String?>,
-        gitlabUsername: identical(gitlabUsername, sdkOmittedValue)
-            ? this.gitlabUsername
-            : gitlabUsername as SdkOptional<String?>,
-        gitUsername: identical(gitUsername, sdkOmittedValue)
-            ? this.gitUsername
-            : gitUsername as SdkOptional<String?>,
-        teamName: identical(teamName, sdkOmittedValue)
-            ? this.teamName
-            : teamName as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as SdkOptional<String>,
-      );
+  UserEventPayloadVariant408 _copyWith({Object? bitbucketUsername = sdkOmittedValue, Object? githubUsername = sdkOmittedValue, Object? gitlabUsername = sdkOmittedValue, Object? gitUsername = sdkOmittedValue, Object? teamName = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant408(
+    bitbucketUsername: identical(bitbucketUsername, sdkOmittedValue) ? this.bitbucketUsername : bitbucketUsername as SdkOptional<String?>,
+    githubUsername: identical(githubUsername, sdkOmittedValue) ? this.githubUsername : githubUsername as SdkOptional<String?>,
+    gitlabUsername: identical(gitlabUsername, sdkOmittedValue) ? this.gitlabUsername : gitlabUsername as SdkOptional<String?>,
+    gitUsername: identical(gitUsername, sdkOmittedValue) ? this.gitUsername : gitUsername as SdkOptional<String?>,
+    teamName: identical(teamName, sdkOmittedValue) ? this.teamName : teamName as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant408.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant408(
-        bitbucketUsername: json.containsKey('bitbucketUsername')
-            ? SdkPresent(json['bitbucketUsername'] as String?)
-            : const SdkOmitted(),
-        githubUsername: json.containsKey('githubUsername')
-            ? SdkPresent(json['githubUsername'] as String?)
-            : const SdkOmitted(),
-        gitlabUsername: json.containsKey('gitlabUsername')
-            ? SdkPresent(json['gitlabUsername'] as String?)
-            : const SdkOmitted(),
-        gitUsername: json.containsKey('gitUsername')
-            ? SdkPresent(json['gitUsername'] as String?)
-            : const SdkOmitted(),
-        teamName: (json['teamName'] as String?)!,
-        username: json['username'] != null
-            ? SdkPresent((json['username'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant408.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant408(
+    bitbucketUsername: json.containsKey('bitbucketUsername') ? SdkPresent(json['bitbucketUsername'] as String?) : const SdkOmitted(),
+    githubUsername: json.containsKey('githubUsername') ? SdkPresent(json['githubUsername'] as String?) : const SdkOmitted(),
+    gitlabUsername: json.containsKey('gitlabUsername') ? SdkPresent(json['gitlabUsername'] as String?) : const SdkOmitted(),
+    gitUsername: json.containsKey('gitUsername') ? SdkPresent(json['gitUsername'] as String?) : const SdkOmitted(),
+    teamName: (json['teamName'] as String?)!,
+    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (bitbucketUsername) {
-          SdkPresent<String?>(value: final value) => {
-              'bitbucketUsername': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (githubUsername) {
-          SdkPresent<String?>(value: final value) => {
-              'githubUsername': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitlabUsername) {
-          SdkPresent<String?>(value: final value) => {
-              'gitlabUsername': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitUsername) {
-          SdkPresent<String?>(value: final value) => {
-              'gitUsername': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'teamName': teamName,
-        ...switch (username) {
-          SdkPresent<String>(value: final value) => {
-              'username': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (bitbucketUsername) {
+      SdkPresent<String?>(value: final value) => {'bitbucketUsername': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (githubUsername) {
+      SdkPresent<String?>(value: final value) => {'githubUsername': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitlabUsername) {
+      SdkPresent<String?>(value: final value) => {'gitlabUsername': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitUsername) {
+      SdkPresent<String?>(value: final value) => {'gitUsername': value,},
+      _ => const <String, dynamic>{},
+    },
+    'teamName': teamName,
+    ...switch (username) {
+      SdkPresent<String>(value: final value) => {'username': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `deletedUser` wire field.
 class UserEventPayloadVariant409DeletedUser {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `email` wire field.
   final String email;
-
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventPayloadVariant409DeletedUser(
-      {required this.email, required this.username});
+  const UserEventPayloadVariant409DeletedUser({required this.email, required this.username});
 
-  UserEventPayloadVariant409DeletedUser Function(
-      {String email, String username}) get copyWith => _copyWith;
+  UserEventPayloadVariant409DeletedUser Function({String email, String username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant409DeletedUser _copyWith(
-          {Object? email = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      UserEventPayloadVariant409DeletedUser(
-        email: identical(email, sdkOmittedValue) ? this.email : email as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  UserEventPayloadVariant409DeletedUser _copyWith({Object? email = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant409DeletedUser(
+    email: identical(email, sdkOmittedValue) ? this.email : email as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory UserEventPayloadVariant409DeletedUser.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant409DeletedUser(
-        email: (json['email'] as String?)!,
-        username: (json['username'] as String?)!,
-      );
+  factory UserEventPayloadVariant409DeletedUser.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant409DeletedUser(
+    email: (json['email'] as String?)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'email': email,
-        'username': username,
-      };
+    'email': email,
+    'username': username,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant409 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether the removal was system-initiated rather than human-initiated.
   final SdkOptional<UserEventPayloadVariant409Automated> automated;
-
   /// Optional `string` value serialized in the `bitbucketUsername` wire field.
   final SdkOptional<String?> bitbucketUsername;
-
   /// Optional `string` value serialized in the `deletedUid` wire field.
   final SdkOptional<String> deletedUid;
-
   /// Optional object value serialized in the `deletedUser` wire field.
   final SdkOptional<UserEventPayloadVariant409DeletedUser> deletedUser;
-
   /// Optional `string` value serialized in the `directoryType` wire field.
   final SdkOptional<String> directoryType;
-
   /// Optional `string` value serialized in the `githubUsername` wire field.
   final SdkOptional<String?> githubUsername;
-
   /// Optional `string` value serialized in the `gitlabUsername` wire field.
   final SdkOptional<String?> gitlabUsername;
-
   /// Optional enumerated value serialized in the `newPlan` wire field.
   final SdkOptional<UserEventPayloadVariant409NewPlan> newPlan;
-
   /// Optional enumerated value serialized in the `previousPlan` wire field.
   final SdkOptional<UserEventPayloadVariant409PreviousPlan> previousPlan;
-
   /// Why the member was removed. When removed due to a plan downgrade, this is a {@link DowngradeReason} from `@api/pubsub-types` (e.g. `trial_expired`, `user_downgrade`).
   final SdkOptional<String> reason;
-
   /// Optional enumerated value serialized in the `role` wire field.
   final SdkOptional<UserEventPayloadVariant409Role> role;
 
-  const UserEventPayloadVariant409(
-      {this.automated = const SdkOmitted(),
-      this.bitbucketUsername = const SdkOmitted(),
-      this.deletedUid = const SdkOmitted(),
-      this.deletedUser = const SdkOmitted(),
-      this.directoryType = const SdkOmitted(),
-      this.githubUsername = const SdkOmitted(),
-      this.gitlabUsername = const SdkOmitted(),
-      this.newPlan = const SdkOmitted(),
-      this.previousPlan = const SdkOmitted(),
-      this.reason = const SdkOmitted(),
-      this.role = const SdkOmitted()});
+  const UserEventPayloadVariant409({this.automated = const SdkOmitted(), this.bitbucketUsername = const SdkOmitted(), this.deletedUid = const SdkOmitted(), this.deletedUser = const SdkOmitted(), this.directoryType = const SdkOmitted(), this.githubUsername = const SdkOmitted(), this.gitlabUsername = const SdkOmitted(), this.newPlan = const SdkOmitted(), this.previousPlan = const SdkOmitted(), this.reason = const SdkOmitted(), this.role = const SdkOmitted()});
 
-  UserEventPayloadVariant409 Function(
-          {SdkOptional<UserEventPayloadVariant409Automated> automated,
-          SdkOptional<String?> bitbucketUsername,
-          SdkOptional<String> deletedUid,
-          SdkOptional<UserEventPayloadVariant409DeletedUser> deletedUser,
-          SdkOptional<String> directoryType,
-          SdkOptional<String?> githubUsername,
-          SdkOptional<String?> gitlabUsername,
-          SdkOptional<UserEventPayloadVariant409NewPlan> newPlan,
-          SdkOptional<UserEventPayloadVariant409PreviousPlan> previousPlan,
-          SdkOptional<String> reason,
-          SdkOptional<UserEventPayloadVariant409Role> role})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant409 Function({SdkOptional<UserEventPayloadVariant409Automated> automated, SdkOptional<String?> bitbucketUsername, SdkOptional<String> deletedUid, SdkOptional<UserEventPayloadVariant409DeletedUser> deletedUser, SdkOptional<String> directoryType, SdkOptional<String?> githubUsername, SdkOptional<String?> gitlabUsername, SdkOptional<UserEventPayloadVariant409NewPlan> newPlan, SdkOptional<UserEventPayloadVariant409PreviousPlan> previousPlan, SdkOptional<String> reason, SdkOptional<UserEventPayloadVariant409Role> role}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant409 _copyWith(
-          {Object? automated = sdkOmittedValue,
-          Object? bitbucketUsername = sdkOmittedValue,
-          Object? deletedUid = sdkOmittedValue,
-          Object? deletedUser = sdkOmittedValue,
-          Object? directoryType = sdkOmittedValue,
-          Object? githubUsername = sdkOmittedValue,
-          Object? gitlabUsername = sdkOmittedValue,
-          Object? newPlan = sdkOmittedValue,
-          Object? previousPlan = sdkOmittedValue,
-          Object? reason = sdkOmittedValue,
-          Object? role = sdkOmittedValue}) =>
-      UserEventPayloadVariant409(
-        automated: identical(automated, sdkOmittedValue)
-            ? this.automated
-            : automated as SdkOptional<UserEventPayloadVariant409Automated>,
-        bitbucketUsername: identical(bitbucketUsername, sdkOmittedValue)
-            ? this.bitbucketUsername
-            : bitbucketUsername as SdkOptional<String?>,
-        deletedUid: identical(deletedUid, sdkOmittedValue)
-            ? this.deletedUid
-            : deletedUid as SdkOptional<String>,
-        deletedUser: identical(deletedUser, sdkOmittedValue)
-            ? this.deletedUser
-            : deletedUser as SdkOptional<UserEventPayloadVariant409DeletedUser>,
-        directoryType: identical(directoryType, sdkOmittedValue)
-            ? this.directoryType
-            : directoryType as SdkOptional<String>,
-        githubUsername: identical(githubUsername, sdkOmittedValue)
-            ? this.githubUsername
-            : githubUsername as SdkOptional<String?>,
-        gitlabUsername: identical(gitlabUsername, sdkOmittedValue)
-            ? this.gitlabUsername
-            : gitlabUsername as SdkOptional<String?>,
-        newPlan: identical(newPlan, sdkOmittedValue)
-            ? this.newPlan
-            : newPlan as SdkOptional<UserEventPayloadVariant409NewPlan>,
-        previousPlan: identical(previousPlan, sdkOmittedValue)
-            ? this.previousPlan
-            : previousPlan
-                as SdkOptional<UserEventPayloadVariant409PreviousPlan>,
-        reason: identical(reason, sdkOmittedValue)
-            ? this.reason
-            : reason as SdkOptional<String>,
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as SdkOptional<UserEventPayloadVariant409Role>,
-      );
+  UserEventPayloadVariant409 _copyWith({Object? automated = sdkOmittedValue, Object? bitbucketUsername = sdkOmittedValue, Object? deletedUid = sdkOmittedValue, Object? deletedUser = sdkOmittedValue, Object? directoryType = sdkOmittedValue, Object? githubUsername = sdkOmittedValue, Object? gitlabUsername = sdkOmittedValue, Object? newPlan = sdkOmittedValue, Object? previousPlan = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? role = sdkOmittedValue}) => UserEventPayloadVariant409(
+    automated: identical(automated, sdkOmittedValue) ? this.automated : automated as SdkOptional<UserEventPayloadVariant409Automated>,
+    bitbucketUsername: identical(bitbucketUsername, sdkOmittedValue) ? this.bitbucketUsername : bitbucketUsername as SdkOptional<String?>,
+    deletedUid: identical(deletedUid, sdkOmittedValue) ? this.deletedUid : deletedUid as SdkOptional<String>,
+    deletedUser: identical(deletedUser, sdkOmittedValue) ? this.deletedUser : deletedUser as SdkOptional<UserEventPayloadVariant409DeletedUser>,
+    directoryType: identical(directoryType, sdkOmittedValue) ? this.directoryType : directoryType as SdkOptional<String>,
+    githubUsername: identical(githubUsername, sdkOmittedValue) ? this.githubUsername : githubUsername as SdkOptional<String?>,
+    gitlabUsername: identical(gitlabUsername, sdkOmittedValue) ? this.gitlabUsername : gitlabUsername as SdkOptional<String?>,
+    newPlan: identical(newPlan, sdkOmittedValue) ? this.newPlan : newPlan as SdkOptional<UserEventPayloadVariant409NewPlan>,
+    previousPlan: identical(previousPlan, sdkOmittedValue) ? this.previousPlan : previousPlan as SdkOptional<UserEventPayloadVariant409PreviousPlan>,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<String>,
+    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<UserEventPayloadVariant409Role>,
+  );
 
-  factory UserEventPayloadVariant409.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant409(
-        automated: json['automated'] != null
-            ? SdkPresent((json['automated'] != null
-                ? UserEventPayloadVariant409Automated.fromJson(
-                    json['automated'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        bitbucketUsername: json.containsKey('bitbucketUsername')
-            ? SdkPresent(json['bitbucketUsername'] as String?)
-            : const SdkOmitted(),
-        deletedUid: json['deletedUid'] != null
-            ? SdkPresent((json['deletedUid'] as String?)!)
-            : const SdkOmitted(),
-        deletedUser: json['deletedUser'] != null
-            ? SdkPresent((json['deletedUser'] != null
-                ? UserEventPayloadVariant409DeletedUser.fromJson(
-                    json['deletedUser'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        directoryType: json['directoryType'] != null
-            ? SdkPresent((json['directoryType'] as String?)!)
-            : const SdkOmitted(),
-        githubUsername: json.containsKey('githubUsername')
-            ? SdkPresent(json['githubUsername'] as String?)
-            : const SdkOmitted(),
-        gitlabUsername: json.containsKey('gitlabUsername')
-            ? SdkPresent(json['gitlabUsername'] as String?)
-            : const SdkOmitted(),
-        newPlan: json['newPlan'] != null
-            ? SdkPresent((json['newPlan'] != null
-                ? UserEventPayloadVariant409NewPlan.fromJson(
-                    json['newPlan'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        previousPlan: json['previousPlan'] != null
-            ? SdkPresent((json['previousPlan'] != null
-                ? UserEventPayloadVariant409PreviousPlan.fromJson(
-                    json['previousPlan'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        reason: json['reason'] != null
-            ? SdkPresent((json['reason'] as String?)!)
-            : const SdkOmitted(),
-        role: json['role'] != null
-            ? SdkPresent((json['role'] != null
-                ? UserEventPayloadVariant409Role.fromJson(
-                    json['role'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant409.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant409(
+    automated: json['automated'] != null ? SdkPresent((json['automated'] != null ? UserEventPayloadVariant409Automated.fromJson(json['automated'] as bool) : null)!) : const SdkOmitted(),
+    bitbucketUsername: json.containsKey('bitbucketUsername') ? SdkPresent(json['bitbucketUsername'] as String?) : const SdkOmitted(),
+    deletedUid: json['deletedUid'] != null ? SdkPresent((json['deletedUid'] as String?)!) : const SdkOmitted(),
+    deletedUser: json['deletedUser'] != null ? SdkPresent((json['deletedUser'] != null ? UserEventPayloadVariant409DeletedUser.fromJson(json['deletedUser'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    directoryType: json['directoryType'] != null ? SdkPresent((json['directoryType'] as String?)!) : const SdkOmitted(),
+    githubUsername: json.containsKey('githubUsername') ? SdkPresent(json['githubUsername'] as String?) : const SdkOmitted(),
+    gitlabUsername: json.containsKey('gitlabUsername') ? SdkPresent(json['gitlabUsername'] as String?) : const SdkOmitted(),
+    newPlan: json['newPlan'] != null ? SdkPresent((json['newPlan'] != null ? UserEventPayloadVariant409NewPlan.fromJson(json['newPlan'] as String) : null)!) : const SdkOmitted(),
+    previousPlan: json['previousPlan'] != null ? SdkPresent((json['previousPlan'] != null ? UserEventPayloadVariant409PreviousPlan.fromJson(json['previousPlan'] as String) : null)!) : const SdkOmitted(),
+    reason: json['reason'] != null ? SdkPresent((json['reason'] as String?)!) : const SdkOmitted(),
+    role: json['role'] != null ? SdkPresent((json['role'] != null ? UserEventPayloadVariant409Role.fromJson(json['role'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (automated) {
-          SdkPresent<UserEventPayloadVariant409Automated>(value: final value) =>
-            {
-              'automated': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (bitbucketUsername) {
-          SdkPresent<String?>(value: final value) => {
-              'bitbucketUsername': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deletedUid) {
-          SdkPresent<String>(value: final value) => {
-              'deletedUid': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deletedUser) {
-          SdkPresent<UserEventPayloadVariant409DeletedUser>(
-            value: final value
-          ) =>
-            {
-              'deletedUser': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (directoryType) {
-          SdkPresent<String>(value: final value) => {
-              'directoryType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (githubUsername) {
-          SdkPresent<String?>(value: final value) => {
-              'githubUsername': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitlabUsername) {
-          SdkPresent<String?>(value: final value) => {
-              'gitlabUsername': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (newPlan) {
-          SdkPresent<UserEventPayloadVariant409NewPlan>(value: final value) => {
-              'newPlan': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (previousPlan) {
-          SdkPresent<UserEventPayloadVariant409PreviousPlan>(
-            value: final value
-          ) =>
-            {
-              'previousPlan': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (reason) {
-          SdkPresent<String>(value: final value) => {
-              'reason': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (role) {
-          SdkPresent<UserEventPayloadVariant409Role>(value: final value) => {
-              'role': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (automated) {
+      SdkPresent<UserEventPayloadVariant409Automated>(value: final value) => {'automated': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (bitbucketUsername) {
+      SdkPresent<String?>(value: final value) => {'bitbucketUsername': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deletedUid) {
+      SdkPresent<String>(value: final value) => {'deletedUid': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deletedUser) {
+      SdkPresent<UserEventPayloadVariant409DeletedUser>(value: final value) => {'deletedUser': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (directoryType) {
+      SdkPresent<String>(value: final value) => {'directoryType': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (githubUsername) {
+      SdkPresent<String?>(value: final value) => {'githubUsername': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitlabUsername) {
+      SdkPresent<String?>(value: final value) => {'gitlabUsername': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (newPlan) {
+      SdkPresent<UserEventPayloadVariant409NewPlan>(value: final value) => {'newPlan': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (previousPlan) {
+      SdkPresent<UserEventPayloadVariant409PreviousPlan>(value: final value) => {'previousPlan': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (reason) {
+      SdkPresent<String>(value: final value) => {'reason': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (role) {
+      SdkPresent<UserEventPayloadVariant409Role>(value: final value) => {'role': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `user` wire field.
 class UserEventPayloadVariant410User {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventPayloadVariant410User(
-      {required this.id, required this.username});
+  const UserEventPayloadVariant410User({required this.id, required this.username});
 
-  UserEventPayloadVariant410User Function({String id, String username})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant410User Function({String id, String username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant410User _copyWith(
-          {Object? id = sdkOmittedValue, Object? username = sdkOmittedValue}) =>
-      UserEventPayloadVariant410User(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  UserEventPayloadVariant410User _copyWith({Object? id = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant410User(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory UserEventPayloadVariant410User.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant410User(
-        id: (json['id'] as String?)!,
-        username: (json['username'] as String?)!,
-      );
+  factory UserEventPayloadVariant410User.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant410User(
+    id: (json['id'] as String?)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'username': username,
-      };
+    'id': id,
+    'username': username,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant410 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `entitlement` wire field.
   final String entitlement;
-
   /// Required object value serialized in the `user` wire field.
   final UserEventPayloadVariant410User user;
 
-  const UserEventPayloadVariant410(
-      {required this.entitlement, required this.user});
+  const UserEventPayloadVariant410({required this.entitlement, required this.user});
 
-  UserEventPayloadVariant410 Function(
-      {String entitlement,
-      UserEventPayloadVariant410User user}) get copyWith => _copyWith;
+  UserEventPayloadVariant410 Function({String entitlement, UserEventPayloadVariant410User user}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant410 _copyWith(
-          {Object? entitlement = sdkOmittedValue,
-          Object? user = sdkOmittedValue}) =>
-      UserEventPayloadVariant410(
-        entitlement: identical(entitlement, sdkOmittedValue)
-            ? this.entitlement
-            : entitlement as String,
-        user: identical(user, sdkOmittedValue)
-            ? this.user
-            : user as UserEventPayloadVariant410User,
-      );
+  UserEventPayloadVariant410 _copyWith({Object? entitlement = sdkOmittedValue, Object? user = sdkOmittedValue}) => UserEventPayloadVariant410(
+    entitlement: identical(entitlement, sdkOmittedValue) ? this.entitlement : entitlement as String,
+    user: identical(user, sdkOmittedValue) ? this.user : user as UserEventPayloadVariant410User,
+  );
 
-  factory UserEventPayloadVariant410.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant410(
-        entitlement: (json['entitlement'] as String?)!,
-        user: (json['user'] != null
-            ? UserEventPayloadVariant410User.fromJson(
-                json['user'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant410.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant410(
+    entitlement: (json['entitlement'] as String?)!,
+    user: (json['user'] != null ? UserEventPayloadVariant410User.fromJson(json['user'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'entitlement': entitlement,
-        'user': user.toJson(),
-      };
+    'entitlement': entitlement,
+    'user': user.toJson(),
+  };
 }
 
 /// Required object value serialized in the `user` wire field.
 class UserEventPayloadVariant411User {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventPayloadVariant411User(
-      {required this.id, required this.username});
+  const UserEventPayloadVariant411User({required this.id, required this.username});
 
-  UserEventPayloadVariant411User Function({String id, String username})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant411User Function({String id, String username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant411User _copyWith(
-          {Object? id = sdkOmittedValue, Object? username = sdkOmittedValue}) =>
-      UserEventPayloadVariant411User(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as String,
-      );
+  UserEventPayloadVariant411User _copyWith({Object? id = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant411User(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as String,
+  );
 
-  factory UserEventPayloadVariant411User.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant411User(
-        id: (json['id'] as String?)!,
-        username: (json['username'] as String?)!,
-      );
+  factory UserEventPayloadVariant411User.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant411User(
+    id: (json['id'] as String?)!,
+    username: (json['username'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'username': username,
-      };
+    'id': id,
+    'username': username,
+  };
 }

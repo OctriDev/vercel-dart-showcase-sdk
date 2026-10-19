@@ -7,29 +7,24 @@ part of 'inline.dart';
 class BatchRemoveProjectEnvRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Array of environment variable IDs to delete
   final List<String> ids;
 
   const BatchRemoveProjectEnvRequestBody({required this.ids});
 
-  BatchRemoveProjectEnvRequestBody Function({List<String> ids}) get copyWith =>
-      _copyWith;
+  BatchRemoveProjectEnvRequestBody Function({List<String> ids}) get copyWith => _copyWith;
 
-  BatchRemoveProjectEnvRequestBody _copyWith({Object? ids = sdkOmittedValue}) =>
-      BatchRemoveProjectEnvRequestBody(
-        ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
-      );
+  BatchRemoveProjectEnvRequestBody _copyWith({Object? ids = sdkOmittedValue}) => BatchRemoveProjectEnvRequestBody(
+    ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
+  );
 
-  factory BatchRemoveProjectEnvRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      BatchRemoveProjectEnvRequestBody(
-        ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory BatchRemoveProjectEnvRequestBody.fromJson(Map<String, dynamic> json) => BatchRemoveProjectEnvRequestBody(
+    ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'ids': ids,
-      };
+    'ids': ids,
+  };
 }
 
 class BatchRemoveProjectEnvResponse {
@@ -38,88 +33,58 @@ class BatchRemoveProjectEnvResponse {
   final double deleted;
   final List<String> ids;
 
-  const BatchRemoveProjectEnvResponse(
-      {required this.deleted, required this.ids});
+  const BatchRemoveProjectEnvResponse({required this.deleted, required this.ids});
 
-  BatchRemoveProjectEnvResponse Function({double deleted, List<String> ids})
-      get copyWith => _copyWith;
+  BatchRemoveProjectEnvResponse Function({double deleted, List<String> ids}) get copyWith => _copyWith;
 
-  BatchRemoveProjectEnvResponse _copyWith(
-          {Object? deleted = sdkOmittedValue, Object? ids = sdkOmittedValue}) =>
-      BatchRemoveProjectEnvResponse(
-        deleted: identical(deleted, sdkOmittedValue)
-            ? this.deleted
-            : deleted as double,
-        ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
-      );
+  BatchRemoveProjectEnvResponse _copyWith({Object? deleted = sdkOmittedValue, Object? ids = sdkOmittedValue}) => BatchRemoveProjectEnvResponse(
+    deleted: identical(deleted, sdkOmittedValue) ? this.deleted : deleted as double,
+    ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
+  );
 
-  factory BatchRemoveProjectEnvResponse.fromJson(Map<String, dynamic> json) =>
-      BatchRemoveProjectEnvResponse(
-        deleted: ((json['deleted'] as num?)?.toDouble())!,
-        ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory BatchRemoveProjectEnvResponse.fromJson(Map<String, dynamic> json) => BatchRemoveProjectEnvResponse(
+    deleted: ((json['deleted'] as num?)?.toDouble())!,
+    ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'deleted': deleted,
-        'ids': ids,
-      };
+    'deleted': deleted,
+    'ids': ids,
+  };
 }
 
 class CreateProjectTransferRequestRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The URL to send a webhook to when the transfer is accepted.
   final SdkOptional<String> callbackUrl;
-
   /// The secret to use to sign the webhook payload with HMAC-SHA256.
   final SdkOptional<String> callbackSecret;
 
-  const CreateProjectTransferRequestRequestBody(
-      {this.callbackUrl = const SdkOmitted(),
-      this.callbackSecret = const SdkOmitted()});
+  const CreateProjectTransferRequestRequestBody({this.callbackUrl = const SdkOmitted(), this.callbackSecret = const SdkOmitted()});
 
-  CreateProjectTransferRequestRequestBody Function(
-      {SdkOptional<String> callbackUrl,
-      SdkOptional<String> callbackSecret}) get copyWith => _copyWith;
+  CreateProjectTransferRequestRequestBody Function({SdkOptional<String> callbackUrl, SdkOptional<String> callbackSecret}) get copyWith => _copyWith;
 
-  CreateProjectTransferRequestRequestBody _copyWith(
-          {Object? callbackUrl = sdkOmittedValue,
-          Object? callbackSecret = sdkOmittedValue}) =>
-      CreateProjectTransferRequestRequestBody(
-        callbackUrl: identical(callbackUrl, sdkOmittedValue)
-            ? this.callbackUrl
-            : callbackUrl as SdkOptional<String>,
-        callbackSecret: identical(callbackSecret, sdkOmittedValue)
-            ? this.callbackSecret
-            : callbackSecret as SdkOptional<String>,
-      );
+  CreateProjectTransferRequestRequestBody _copyWith({Object? callbackUrl = sdkOmittedValue, Object? callbackSecret = sdkOmittedValue}) => CreateProjectTransferRequestRequestBody(
+    callbackUrl: identical(callbackUrl, sdkOmittedValue) ? this.callbackUrl : callbackUrl as SdkOptional<String>,
+    callbackSecret: identical(callbackSecret, sdkOmittedValue) ? this.callbackSecret : callbackSecret as SdkOptional<String>,
+  );
 
-  factory CreateProjectTransferRequestRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectTransferRequestRequestBody(
-        callbackUrl: json['callbackUrl'] != null
-            ? SdkPresent((json['callbackUrl'] as String?)!)
-            : const SdkOmitted(),
-        callbackSecret: json['callbackSecret'] != null
-            ? SdkPresent((json['callbackSecret'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectTransferRequestRequestBody.fromJson(Map<String, dynamic> json) => CreateProjectTransferRequestRequestBody(
+    callbackUrl: json['callbackUrl'] != null ? SdkPresent((json['callbackUrl'] as String?)!) : const SdkOmitted(),
+    callbackSecret: json['callbackSecret'] != null ? SdkPresent((json['callbackSecret'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (callbackUrl) {
-          SdkPresent<String>(value: final value) => {
-              'callbackUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (callbackSecret) {
-          SdkPresent<String>(value: final value) => {
-              'callbackSecret': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (callbackUrl) {
+      SdkPresent<String>(value: final value) => {'callbackUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (callbackSecret) {
+      SdkPresent<String>(value: final value) => {'callbackSecret': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateProjectTransferRequestResponse {
@@ -129,24 +94,19 @@ class CreateProjectTransferRequestResponse {
 
   const CreateProjectTransferRequestResponse({required this.code});
 
-  CreateProjectTransferRequestResponse Function({String code}) get copyWith =>
-      _copyWith;
+  CreateProjectTransferRequestResponse Function({String code}) get copyWith => _copyWith;
 
-  CreateProjectTransferRequestResponse _copyWith(
-          {Object? code = sdkOmittedValue}) =>
-      CreateProjectTransferRequestResponse(
-        code: identical(code, sdkOmittedValue) ? this.code : code as String,
-      );
+  CreateProjectTransferRequestResponse _copyWith({Object? code = sdkOmittedValue}) => CreateProjectTransferRequestResponse(
+    code: identical(code, sdkOmittedValue) ? this.code : code as String,
+  );
 
-  factory CreateProjectTransferRequestResponse.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectTransferRequestResponse(
-        code: (json['code'] as String?)!,
-      );
+  factory CreateProjectTransferRequestResponse.fromJson(Map<String, dynamic> json) => CreateProjectTransferRequestResponse(
+    code: (json['code'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code,
-      };
+    'code': code,
+  };
 }
 
 class AcceptProjectTransferRequestRequestBodyPaidFeatures {
@@ -156,67 +116,36 @@ class AcceptProjectTransferRequestRequestBodyPaidFeatures {
   final SdkOptional<bool?> passwordProtection;
   final SdkOptional<bool?> previewDeploymentSuffix;
 
-  const AcceptProjectTransferRequestRequestBodyPaidFeatures(
-      {this.concurrentBuilds = const SdkOmitted(),
-      this.passwordProtection = const SdkOmitted(),
-      this.previewDeploymentSuffix = const SdkOmitted()});
+  const AcceptProjectTransferRequestRequestBodyPaidFeatures({this.concurrentBuilds = const SdkOmitted(), this.passwordProtection = const SdkOmitted(), this.previewDeploymentSuffix = const SdkOmitted()});
 
-  AcceptProjectTransferRequestRequestBodyPaidFeatures Function(
-      {SdkOptional<int?> concurrentBuilds,
-      SdkOptional<bool?> passwordProtection,
-      SdkOptional<bool?> previewDeploymentSuffix}) get copyWith => _copyWith;
+  AcceptProjectTransferRequestRequestBodyPaidFeatures Function({SdkOptional<int?> concurrentBuilds, SdkOptional<bool?> passwordProtection, SdkOptional<bool?> previewDeploymentSuffix}) get copyWith => _copyWith;
 
-  AcceptProjectTransferRequestRequestBodyPaidFeatures _copyWith(
-          {Object? concurrentBuilds = sdkOmittedValue,
-          Object? passwordProtection = sdkOmittedValue,
-          Object? previewDeploymentSuffix = sdkOmittedValue}) =>
-      AcceptProjectTransferRequestRequestBodyPaidFeatures(
-        concurrentBuilds: identical(concurrentBuilds, sdkOmittedValue)
-            ? this.concurrentBuilds
-            : concurrentBuilds as SdkOptional<int?>,
-        passwordProtection: identical(passwordProtection, sdkOmittedValue)
-            ? this.passwordProtection
-            : passwordProtection as SdkOptional<bool?>,
-        previewDeploymentSuffix:
-            identical(previewDeploymentSuffix, sdkOmittedValue)
-                ? this.previewDeploymentSuffix
-                : previewDeploymentSuffix as SdkOptional<bool?>,
-      );
+  AcceptProjectTransferRequestRequestBodyPaidFeatures _copyWith({Object? concurrentBuilds = sdkOmittedValue, Object? passwordProtection = sdkOmittedValue, Object? previewDeploymentSuffix = sdkOmittedValue}) => AcceptProjectTransferRequestRequestBodyPaidFeatures(
+    concurrentBuilds: identical(concurrentBuilds, sdkOmittedValue) ? this.concurrentBuilds : concurrentBuilds as SdkOptional<int?>,
+    passwordProtection: identical(passwordProtection, sdkOmittedValue) ? this.passwordProtection : passwordProtection as SdkOptional<bool?>,
+    previewDeploymentSuffix: identical(previewDeploymentSuffix, sdkOmittedValue) ? this.previewDeploymentSuffix : previewDeploymentSuffix as SdkOptional<bool?>,
+  );
 
-  factory AcceptProjectTransferRequestRequestBodyPaidFeatures.fromJson(
-          Map<String, dynamic> json) =>
-      AcceptProjectTransferRequestRequestBodyPaidFeatures(
-        concurrentBuilds: json.containsKey('concurrentBuilds')
-            ? SdkPresent((json['concurrentBuilds'] as num?)?.toInt())
-            : const SdkOmitted(),
-        passwordProtection: json.containsKey('passwordProtection')
-            ? SdkPresent(json['passwordProtection'] as bool?)
-            : const SdkOmitted(),
-        previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix')
-            ? SdkPresent(json['previewDeploymentSuffix'] as bool?)
-            : const SdkOmitted(),
-      );
+  factory AcceptProjectTransferRequestRequestBodyPaidFeatures.fromJson(Map<String, dynamic> json) => AcceptProjectTransferRequestRequestBodyPaidFeatures(
+    concurrentBuilds: json.containsKey('concurrentBuilds') ? SdkPresent((json['concurrentBuilds'] as num?)?.toInt()) : const SdkOmitted(),
+    passwordProtection: json.containsKey('passwordProtection') ? SdkPresent(json['passwordProtection'] as bool?) : const SdkOmitted(),
+    previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix') ? SdkPresent(json['previewDeploymentSuffix'] as bool?) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (concurrentBuilds) {
-          SdkPresent<int?>(value: final value) => {
-              'concurrentBuilds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (passwordProtection) {
-          SdkPresent<bool?>(value: final value) => {
-              'passwordProtection': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (previewDeploymentSuffix) {
-          SdkPresent<bool?>(value: final value) => {
-              'previewDeploymentSuffix': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (concurrentBuilds) {
+      SdkPresent<int?>(value: final value) => {'concurrentBuilds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (passwordProtection) {
+      SdkPresent<bool?>(value: final value) => {'passwordProtection': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (previewDeploymentSuffix) {
+      SdkPresent<bool?>(value: final value) => {'previewDeploymentSuffix': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue {
@@ -226,140 +155,67 @@ class AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue {
   final String privacy;
   final Map<String, dynamic> additionalProperties;
 
-  const AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue(
-      {required this.eula,
-      required this.privacy,
-      this.additionalProperties = const <String, dynamic>{}});
+  const AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue({required this.eula, required this.privacy, this.additionalProperties = const <String, dynamic>{}});
 
-  AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue Function(
-      {String eula, String privacy}) get copyWith => _copyWith;
+  AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue Function({String eula, String privacy}) get copyWith => _copyWith;
 
-  AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue _copyWith(
-          {Object? eula = sdkOmittedValue,
-          Object? privacy = sdkOmittedValue}) =>
-      AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue(
-        eula: identical(eula, sdkOmittedValue) ? this.eula : eula as String,
-        privacy: identical(privacy, sdkOmittedValue)
-            ? this.privacy
-            : privacy as String,
-        additionalProperties: additionalProperties,
-      );
+  AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue _copyWith({Object? eula = sdkOmittedValue, Object? privacy = sdkOmittedValue}) => AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue(
+    eula: identical(eula, sdkOmittedValue) ? this.eula : eula as String,
+    privacy: identical(privacy, sdkOmittedValue) ? this.privacy : privacy as String,
+    additionalProperties: additionalProperties,
+  );
 
-  factory AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue.fromJson(
-          Map<String, dynamic> json) =>
-      AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue(
-        eula: (json['eula'] as String?)!,
-        privacy: (json['privacy'] as String?)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere(
-              (key, _) => const <String>{'eula', 'privacy'}.contains(key)),
-      );
+  factory AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue.fromJson(Map<String, dynamic> json) => AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue(
+    eula: (json['eula'] as String?)!,
+    privacy: (json['privacy'] as String?)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'eula', 'privacy'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'eula': eula,
-        'privacy': privacy,
-      };
+    ...additionalProperties,
+    'eula': eula,
+    'privacy': privacy,
+  };
 }
 
 class AcceptProjectTransferRequestRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The desired name for the project
   final SdkOptional<String> newProjectName;
-  final SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures>
-      paidFeatures;
-  final SdkOptional<
-          Map<String,
-              AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>
-      acceptedPolicies;
+  final SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures> paidFeatures;
+  final SdkOptional<Map<String, AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>> acceptedPolicies;
 
-  const AcceptProjectTransferRequestRequestBody(
-      {this.newProjectName = const SdkOmitted(),
-      this.paidFeatures = const SdkOmitted(),
-      this.acceptedPolicies = const SdkOmitted()});
+  const AcceptProjectTransferRequestRequestBody({this.newProjectName = const SdkOmitted(), this.paidFeatures = const SdkOmitted(), this.acceptedPolicies = const SdkOmitted()});
 
-  AcceptProjectTransferRequestRequestBody Function(
-      {SdkOptional<String> newProjectName,
-      SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures>
-          paidFeatures,
-      SdkOptional<
-              Map<String,
-                  AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>
-          acceptedPolicies}) get copyWith => _copyWith;
+  AcceptProjectTransferRequestRequestBody Function({SdkOptional<String> newProjectName, SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures> paidFeatures, SdkOptional<Map<String, AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>> acceptedPolicies}) get copyWith => _copyWith;
 
-  AcceptProjectTransferRequestRequestBody _copyWith(
-          {Object? newProjectName = sdkOmittedValue,
-          Object? paidFeatures = sdkOmittedValue,
-          Object? acceptedPolicies = sdkOmittedValue}) =>
-      AcceptProjectTransferRequestRequestBody(
-        newProjectName: identical(newProjectName, sdkOmittedValue)
-            ? this.newProjectName
-            : newProjectName as SdkOptional<String>,
-        paidFeatures: identical(paidFeatures, sdkOmittedValue)
-            ? this.paidFeatures
-            : paidFeatures as SdkOptional<
-                AcceptProjectTransferRequestRequestBodyPaidFeatures>,
-        acceptedPolicies: identical(acceptedPolicies, sdkOmittedValue)
-            ? this.acceptedPolicies
-            : acceptedPolicies as SdkOptional<
-                Map<String,
-                    AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>,
-      );
+  AcceptProjectTransferRequestRequestBody _copyWith({Object? newProjectName = sdkOmittedValue, Object? paidFeatures = sdkOmittedValue, Object? acceptedPolicies = sdkOmittedValue}) => AcceptProjectTransferRequestRequestBody(
+    newProjectName: identical(newProjectName, sdkOmittedValue) ? this.newProjectName : newProjectName as SdkOptional<String>,
+    paidFeatures: identical(paidFeatures, sdkOmittedValue) ? this.paidFeatures : paidFeatures as SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures>,
+    acceptedPolicies: identical(acceptedPolicies, sdkOmittedValue) ? this.acceptedPolicies : acceptedPolicies as SdkOptional<Map<String, AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>,
+  );
 
-  factory AcceptProjectTransferRequestRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      AcceptProjectTransferRequestRequestBody(
-        newProjectName: json['newProjectName'] != null
-            ? SdkPresent((json['newProjectName'] as String?)!)
-            : const SdkOmitted(),
-        paidFeatures: json['paidFeatures'] != null
-            ? SdkPresent((json['paidFeatures'] != null
-                ? AcceptProjectTransferRequestRequestBodyPaidFeatures.fromJson(
-                    json['paidFeatures'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        acceptedPolicies: json['acceptedPolicies'] != null
-            ? SdkPresent((json['acceptedPolicies'] == null
-                ? null
-                : Map<String, dynamic>.from(json['acceptedPolicies'] as Map)
-                    .map((key, value) => MapEntry(
-                        key,
-                        AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue
-                            .fromJson(value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-      );
+  factory AcceptProjectTransferRequestRequestBody.fromJson(Map<String, dynamic> json) => AcceptProjectTransferRequestRequestBody(
+    newProjectName: json['newProjectName'] != null ? SdkPresent((json['newProjectName'] as String?)!) : const SdkOmitted(),
+    paidFeatures: json['paidFeatures'] != null ? SdkPresent((json['paidFeatures'] != null ? AcceptProjectTransferRequestRequestBodyPaidFeatures.fromJson(json['paidFeatures'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    acceptedPolicies: json['acceptedPolicies'] != null ? SdkPresent((json['acceptedPolicies'] == null ? null : Map<String, dynamic>.from(json['acceptedPolicies'] as Map).map((key, value) => MapEntry(key, AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (newProjectName) {
-          SdkPresent<String>(value: final value) => {
-              'newProjectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (paidFeatures) {
-          SdkPresent<AcceptProjectTransferRequestRequestBodyPaidFeatures>(
-            value: final value
-          ) =>
-            {
-              'paidFeatures': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (acceptedPolicies) {
-          SdkPresent<
-                Map<String,
-                    AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>(
-            value: final value
-          ) =>
-            {
-              'acceptedPolicies':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (newProjectName) {
+      SdkPresent<String>(value: final value) => {'newProjectName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (paidFeatures) {
+      SdkPresent<AcceptProjectTransferRequestRequestBodyPaidFeatures>(value: final value) => {'paidFeatures': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (acceptedPolicies) {
+      SdkPresent<Map<String, AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>(value: final value) => {'acceptedPolicies': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class AcceptProjectTransferRequestResponsePartnerCallsItemResult {
@@ -369,66 +225,33 @@ class AcceptProjectTransferRequestResponsePartnerCallsItemResult {
   final SdkOptional<Map<String, dynamic>> error;
   final AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus status;
 
-  const AcceptProjectTransferRequestResponsePartnerCallsItemResult(
-      {this.code = const SdkOmitted(),
-      this.error = const SdkOmitted(),
-      required this.status});
+  const AcceptProjectTransferRequestResponsePartnerCallsItemResult({this.code = const SdkOmitted(), this.error = const SdkOmitted(), required this.status});
 
-  AcceptProjectTransferRequestResponsePartnerCallsItemResult Function(
-      {SdkOptional<String> code,
-      SdkOptional<Map<String, dynamic>> error,
-      AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus
-          status}) get copyWith => _copyWith;
+  AcceptProjectTransferRequestResponsePartnerCallsItemResult Function({SdkOptional<String> code, SdkOptional<Map<String, dynamic>> error, AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus status}) get copyWith => _copyWith;
 
-  AcceptProjectTransferRequestResponsePartnerCallsItemResult _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? error = sdkOmittedValue,
-          Object? status = sdkOmittedValue}) =>
-      AcceptProjectTransferRequestResponsePartnerCallsItemResult(
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as SdkOptional<String>,
-        error: identical(error, sdkOmittedValue)
-            ? this.error
-            : error as SdkOptional<Map<String, dynamic>>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status
-                as AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus,
-      );
+  AcceptProjectTransferRequestResponsePartnerCallsItemResult _copyWith({Object? code = sdkOmittedValue, Object? error = sdkOmittedValue, Object? status = sdkOmittedValue}) => AcceptProjectTransferRequestResponsePartnerCallsItemResult(
+    code: identical(code, sdkOmittedValue) ? this.code : code as SdkOptional<String>,
+    error: identical(error, sdkOmittedValue) ? this.error : error as SdkOptional<Map<String, dynamic>>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus,
+  );
 
-  factory AcceptProjectTransferRequestResponsePartnerCallsItemResult.fromJson(
-          Map<String, dynamic> json) =>
-      AcceptProjectTransferRequestResponsePartnerCallsItemResult(
-        code: json['code'] != null
-            ? SdkPresent((json['code'] as String?)!)
-            : const SdkOmitted(),
-        error: json['error'] != null
-            ? SdkPresent((json['error'] == null
-                ? null
-                : json['error'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        status: (json['status'] != null
-            ? AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus
-                .fromJson(json['status'] as String)
-            : null)!,
-      );
+  factory AcceptProjectTransferRequestResponsePartnerCallsItemResult.fromJson(Map<String, dynamic> json) => AcceptProjectTransferRequestResponsePartnerCallsItemResult(
+    code: json['code'] != null ? SdkPresent((json['code'] as String?)!) : const SdkOmitted(),
+    error: json['error'] != null ? SdkPresent((json['error'] == null ? null : json['error'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    status: (json['status'] != null ? AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus.fromJson(json['status'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (code) {
-          SdkPresent<String>(value: final value) => {
-              'code': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (error) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'error': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'status': status.toJson(),
-      };
+    ...switch (code) {
+      SdkPresent<String>(value: final value) => {'code': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (error) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'error': value,},
+      _ => const <String, dynamic>{},
+    },
+    'status': status.toJson(),
+  };
 }
 
 class AcceptProjectTransferRequestResponsePartnerCallsItem {
@@ -438,49 +261,25 @@ class AcceptProjectTransferRequestResponsePartnerCallsItem {
   final List<String> resourceIds;
   final AcceptProjectTransferRequestResponsePartnerCallsItemResult result;
 
-  const AcceptProjectTransferRequestResponsePartnerCallsItem(
-      {required this.installationId,
-      required this.resourceIds,
-      required this.result});
+  const AcceptProjectTransferRequestResponsePartnerCallsItem({required this.installationId, required this.resourceIds, required this.result});
 
-  AcceptProjectTransferRequestResponsePartnerCallsItem Function(
-          {String installationId,
-          List<String> resourceIds,
-          AcceptProjectTransferRequestResponsePartnerCallsItemResult result})
-      get copyWith => _copyWith;
+  AcceptProjectTransferRequestResponsePartnerCallsItem Function({String installationId, List<String> resourceIds, AcceptProjectTransferRequestResponsePartnerCallsItemResult result}) get copyWith => _copyWith;
 
-  AcceptProjectTransferRequestResponsePartnerCallsItem _copyWith(
-          {Object? installationId = sdkOmittedValue,
-          Object? resourceIds = sdkOmittedValue,
-          Object? result = sdkOmittedValue}) =>
-      AcceptProjectTransferRequestResponsePartnerCallsItem(
-        installationId: identical(installationId, sdkOmittedValue)
-            ? this.installationId
-            : installationId as String,
-        resourceIds: identical(resourceIds, sdkOmittedValue)
-            ? this.resourceIds
-            : resourceIds as List<String>,
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result
-                as AcceptProjectTransferRequestResponsePartnerCallsItemResult,
-      );
+  AcceptProjectTransferRequestResponsePartnerCallsItem _copyWith({Object? installationId = sdkOmittedValue, Object? resourceIds = sdkOmittedValue, Object? result = sdkOmittedValue}) => AcceptProjectTransferRequestResponsePartnerCallsItem(
+    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as String,
+    resourceIds: identical(resourceIds, sdkOmittedValue) ? this.resourceIds : resourceIds as List<String>,
+    result: identical(result, sdkOmittedValue) ? this.result : result as AcceptProjectTransferRequestResponsePartnerCallsItemResult,
+  );
 
-  factory AcceptProjectTransferRequestResponsePartnerCallsItem.fromJson(
-          Map<String, dynamic> json) =>
-      AcceptProjectTransferRequestResponsePartnerCallsItem(
-        installationId: (json['installationId'] as String?)!,
-        resourceIds:
-            ((json['resourceIds'] as List?)?.map((e) => e as String).toList())!,
-        result: (json['result'] != null
-            ? AcceptProjectTransferRequestResponsePartnerCallsItemResult
-                .fromJson(json['result'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory AcceptProjectTransferRequestResponsePartnerCallsItem.fromJson(Map<String, dynamic> json) => AcceptProjectTransferRequestResponsePartnerCallsItem(
+    installationId: (json['installationId'] as String?)!,
+    resourceIds: ((json['resourceIds'] as List?)?.map((e) => e as String).toList())!,
+    result: (json['result'] != null ? AcceptProjectTransferRequestResponsePartnerCallsItemResult.fromJson(json['result'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'installationId': installationId,
-        'resourceIds': resourceIds,
-        'result': result.toJson(),
-      };
+    'installationId': installationId,
+    'resourceIds': resourceIds,
+    'result': result.toJson(),
+  };
 }

@@ -5,79 +5,60 @@ part of 'inline.dart';
 
 // Inline operation models (part 34)
 final class CreateDeploymentResponseVariant1GitRepoVariant2OwnerType {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant2OwnerType._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant2OwnerType.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant2OwnerType._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant2OwnerType.fromJson(String value) => CreateDeploymentResponseVariant1GitRepoVariant2OwnerType._(value);
 
-  static const team =
-      CreateDeploymentResponseVariant1GitRepoVariant2OwnerType._('team');
-  static const user =
-      CreateDeploymentResponseVariant1GitRepoVariant2OwnerType._('user');
+  static const team = CreateDeploymentResponseVariant1GitRepoVariant2OwnerType._('team');
+  static const user = CreateDeploymentResponseVariant1GitRepoVariant2OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant2OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant2OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant2Private {
+
   final bool value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant2Private._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant2Private.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant2Private._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant2Private.fromJson(bool value) => CreateDeploymentResponseVariant1GitRepoVariant2Private._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1GitRepoVariant2Private._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1GitRepoVariant2Private._(true);
+  static const false_ = CreateDeploymentResponseVariant1GitRepoVariant2Private._(false);
+  static const true_ = CreateDeploymentResponseVariant1GitRepoVariant2Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant2Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant2Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateDeploymentResponseVariant1GitRepoVariant2Type {
   bitbucket;
 
-  static CreateDeploymentResponseVariant1GitRepoVariant2Type fromJson(
-      String value) {
+  static CreateDeploymentResponseVariant1GitRepoVariant2Type fromJson(String value) {
     switch (value) {
-      case 'bitbucket':
-        return CreateDeploymentResponseVariant1GitRepoVariant2Type.bitbucket;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1GitRepoVariant2Type: $value');
+      case 'bitbucket': return CreateDeploymentResponseVariant1GitRepoVariant2Type.bitbucket;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1GitRepoVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1GitRepoVariant2Type.bitbucket:
-        return 'bitbucket';
+      case CreateDeploymentResponseVariant1GitRepoVariant2Type.bitbucket: return 'bitbucket';
     }
   }
 
@@ -86,79 +67,60 @@ enum CreateDeploymentResponseVariant1GitRepoVariant2Type {
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant3OwnerType {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant3OwnerType._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant3OwnerType.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant3OwnerType._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant3OwnerType.fromJson(String value) => CreateDeploymentResponseVariant1GitRepoVariant3OwnerType._(value);
 
-  static const team =
-      CreateDeploymentResponseVariant1GitRepoVariant3OwnerType._('team');
-  static const user =
-      CreateDeploymentResponseVariant1GitRepoVariant3OwnerType._('user');
+  static const team = CreateDeploymentResponseVariant1GitRepoVariant3OwnerType._('team');
+  static const user = CreateDeploymentResponseVariant1GitRepoVariant3OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant3OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant3OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant3Private {
+
   final bool value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant3Private._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant3Private.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant3Private._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant3Private.fromJson(bool value) => CreateDeploymentResponseVariant1GitRepoVariant3Private._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1GitRepoVariant3Private._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1GitRepoVariant3Private._(true);
+  static const false_ = CreateDeploymentResponseVariant1GitRepoVariant3Private._(false);
+  static const true_ = CreateDeploymentResponseVariant1GitRepoVariant3Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant3Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant3Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateDeploymentResponseVariant1GitRepoVariant3Type {
   vercel;
 
-  static CreateDeploymentResponseVariant1GitRepoVariant3Type fromJson(
-      String value) {
+  static CreateDeploymentResponseVariant1GitRepoVariant3Type fromJson(String value) {
     switch (value) {
-      case 'vercel':
-        return CreateDeploymentResponseVariant1GitRepoVariant3Type.vercel;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1GitRepoVariant3Type: $value');
+      case 'vercel': return CreateDeploymentResponseVariant1GitRepoVariant3Type.vercel;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1GitRepoVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1GitRepoVariant3Type.vercel:
-        return 'vercel';
+      case CreateDeploymentResponseVariant1GitRepoVariant3Type.vercel: return 'vercel';
     }
   }
 
@@ -167,79 +129,60 @@ enum CreateDeploymentResponseVariant1GitRepoVariant3Type {
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant4OwnerType {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant4OwnerType._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant4OwnerType.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant4OwnerType._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant4OwnerType.fromJson(String value) => CreateDeploymentResponseVariant1GitRepoVariant4OwnerType._(value);
 
-  static const team =
-      CreateDeploymentResponseVariant1GitRepoVariant4OwnerType._('team');
-  static const user =
-      CreateDeploymentResponseVariant1GitRepoVariant4OwnerType._('user');
+  static const team = CreateDeploymentResponseVariant1GitRepoVariant4OwnerType._('team');
+  static const user = CreateDeploymentResponseVariant1GitRepoVariant4OwnerType._('user');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant4OwnerType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant4OwnerType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitRepoVariant4Private {
+
   final bool value;
 
   const CreateDeploymentResponseVariant1GitRepoVariant4Private._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitRepoVariant4Private.fromJson(
-          bool value) =>
-      CreateDeploymentResponseVariant1GitRepoVariant4Private._(value);
+  factory CreateDeploymentResponseVariant1GitRepoVariant4Private.fromJson(bool value) => CreateDeploymentResponseVariant1GitRepoVariant4Private._(value);
 
-  static const false_ =
-      CreateDeploymentResponseVariant1GitRepoVariant4Private._(false);
-  static const true_ =
-      CreateDeploymentResponseVariant1GitRepoVariant4Private._(true);
+  static const false_ = CreateDeploymentResponseVariant1GitRepoVariant4Private._(false);
+  static const true_ = CreateDeploymentResponseVariant1GitRepoVariant4Private._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitRepoVariant4Private &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitRepoVariant4Private && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateDeploymentResponseVariant1GitRepoVariant4Type {
   cursorOrigin;
 
-  static CreateDeploymentResponseVariant1GitRepoVariant4Type fromJson(
-      String value) {
+  static CreateDeploymentResponseVariant1GitRepoVariant4Type fromJson(String value) {
     switch (value) {
-      case 'cursor-origin':
-        return CreateDeploymentResponseVariant1GitRepoVariant4Type.cursorOrigin;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDeploymentResponseVariant1GitRepoVariant4Type: $value');
+      case 'cursor-origin': return CreateDeploymentResponseVariant1GitRepoVariant4Type.cursorOrigin;
+      default: throw ArgumentError('Unknown CreateDeploymentResponseVariant1GitRepoVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDeploymentResponseVariant1GitRepoVariant4Type.cursorOrigin:
-        return 'cursor-origin';
+      case CreateDeploymentResponseVariant1GitRepoVariant4Type.cursorOrigin: return 'cursor-origin';
     }
   }
 
@@ -248,131 +191,101 @@ enum CreateDeploymentResponseVariant1GitRepoVariant4Type {
 }
 
 final class CreateDeploymentResponseVariant1GitSourceVariant0Type {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitSourceVariant0Type._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitSourceVariant0Type.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitSourceVariant0Type._(value);
+  factory CreateDeploymentResponseVariant1GitSourceVariant0Type.fromJson(String value) => CreateDeploymentResponseVariant1GitSourceVariant0Type._(value);
 
-  static const github =
-      CreateDeploymentResponseVariant1GitSourceVariant0Type._('github');
+  static const github = CreateDeploymentResponseVariant1GitSourceVariant0Type._('github');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitSourceVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitSourceVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitSourceVariant1Type {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitSourceVariant1Type._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitSourceVariant1Type.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitSourceVariant1Type._(value);
+  factory CreateDeploymentResponseVariant1GitSourceVariant1Type.fromJson(String value) => CreateDeploymentResponseVariant1GitSourceVariant1Type._(value);
 
-  static const github =
-      CreateDeploymentResponseVariant1GitSourceVariant1Type._('github');
+  static const github = CreateDeploymentResponseVariant1GitSourceVariant1Type._('github');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitSourceVariant1Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitSourceVariant1Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitSourceVariant10Type {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitSourceVariant10Type._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitSourceVariant10Type.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitSourceVariant10Type._(value);
+  factory CreateDeploymentResponseVariant1GitSourceVariant10Type.fromJson(String value) => CreateDeploymentResponseVariant1GitSourceVariant10Type._(value);
 
-  static const cursorOrigin =
-      CreateDeploymentResponseVariant1GitSourceVariant10Type._('cursor-origin');
+  static const cursorOrigin = CreateDeploymentResponseVariant1GitSourceVariant10Type._('cursor-origin');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitSourceVariant10Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitSourceVariant10Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitSourceVariant11Type {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitSourceVariant11Type._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitSourceVariant11Type.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitSourceVariant11Type._(value);
+  factory CreateDeploymentResponseVariant1GitSourceVariant11Type.fromJson(String value) => CreateDeploymentResponseVariant1GitSourceVariant11Type._(value);
 
-  static const custom =
-      CreateDeploymentResponseVariant1GitSourceVariant11Type._('custom');
+  static const custom = CreateDeploymentResponseVariant1GitSourceVariant11Type._('custom');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitSourceVariant11Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitSourceVariant11Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDeploymentResponseVariant1GitSourceVariant12Type {
+
   final String value;
 
   const CreateDeploymentResponseVariant1GitSourceVariant12Type._(this.value);
 
-  factory CreateDeploymentResponseVariant1GitSourceVariant12Type.fromJson(
-          String value) =>
-      CreateDeploymentResponseVariant1GitSourceVariant12Type._(value);
+  factory CreateDeploymentResponseVariant1GitSourceVariant12Type.fromJson(String value) => CreateDeploymentResponseVariant1GitSourceVariant12Type._(value);
 
-  static const github =
-      CreateDeploymentResponseVariant1GitSourceVariant12Type._('github');
+  static const github = CreateDeploymentResponseVariant1GitSourceVariant12Type._('github');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDeploymentResponseVariant1GitSourceVariant12Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1GitSourceVariant12Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

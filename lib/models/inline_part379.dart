@@ -5,73 +5,60 @@ part of 'inline.dart';
 
 // Inline operation models (part 379)
 final class UpdateFlagRequestBodyState {
+
   final String value;
 
   const UpdateFlagRequestBodyState._(this.value);
 
-  factory UpdateFlagRequestBodyState.fromJson(String value) =>
-      UpdateFlagRequestBodyState._(value);
+  factory UpdateFlagRequestBodyState.fromJson(String value) => UpdateFlagRequestBodyState._(value);
 
   static const active = UpdateFlagRequestBodyState._('active');
   static const archived = UpdateFlagRequestBodyState._('archived');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagRequestBodyState && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagRequestBodyState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagResponseEnvironmentsValueActive {
+
   final bool value;
 
   const UpdateFlagResponseEnvironmentsValueActive._(this.value);
 
-  factory UpdateFlagResponseEnvironmentsValueActive.fromJson(bool value) =>
-      UpdateFlagResponseEnvironmentsValueActive._(value);
+  factory UpdateFlagResponseEnvironmentsValueActive.fromJson(bool value) => UpdateFlagResponseEnvironmentsValueActive._(value);
 
   static const false_ = UpdateFlagResponseEnvironmentsValueActive._(false);
   static const true_ = UpdateFlagResponseEnvironmentsValueActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagResponseEnvironmentsValueActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagResponseEnvironmentsValueActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type {
   variant;
 
-  static UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type fromJson(
-      String value) {
+  static UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type fromJson(String value) {
     switch (value) {
-      case 'variant':
-        return UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type
-            .variant;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type: $value');
+      case 'variant': return UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type.variant;
+      default: throw ArgumentError('Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type.variant:
-        return 'variant';
+      case UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type.variant: return 'variant';
     }
   }
 
@@ -80,51 +67,38 @@ enum UpdateFlagResponseEnvironmentsValueFallthroughVariant0Type {
 }
 
 final class UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType {
+
   final String value;
 
-  const UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType._(
-      this.value);
+  const UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType._(this.value);
 
-  factory UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType.fromJson(
-          String value) =>
-      UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType._(value);
+  factory UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType.fromJson(String value) => UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType._(value);
 
-  static const entity =
-      UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType._(
-          'entity');
+  static const entity = UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType._('entity');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagResponseEnvironmentsValueFallthroughVariant1BaseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type {
   split;
 
-  static UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type fromJson(
-      String value) {
+  static UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type fromJson(String value) {
     switch (value) {
-      case 'split':
-        return UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type.split;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type: $value');
+      case 'split': return UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type.split;
+      default: throw ArgumentError('Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type.split:
-        return 'split';
+      case UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type.split: return 'split';
     }
   }
 
@@ -133,52 +107,38 @@ enum UpdateFlagResponseEnvironmentsValueFallthroughVariant1Type {
 }
 
 final class UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType {
+
   final String value;
 
-  const UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType._(
-      this.value);
+  const UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType._(this.value);
 
-  factory UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType.fromJson(
-          String value) =>
-      UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType._(value);
+  factory UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType.fromJson(String value) => UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType._(value);
 
-  static const entity =
-      UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType._(
-          'entity');
+  static const entity = UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType._('entity');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagResponseEnvironmentsValueFallthroughVariant2BaseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type {
   rollout;
 
-  static UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type fromJson(
-      String value) {
+  static UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type fromJson(String value) {
     switch (value) {
-      case 'rollout':
-        return UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type
-            .rollout;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type: $value');
+      case 'rollout': return UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type.rollout;
+      default: throw ArgumentError('Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type.rollout:
-        return 'rollout';
+      case UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type.rollout: return 'rollout';
     }
   }
 
@@ -189,23 +149,16 @@ enum UpdateFlagResponseEnvironmentsValueFallthroughVariant2Type {
 enum UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type {
   experiment;
 
-  static UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type fromJson(
-      String value) {
+  static UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type fromJson(String value) {
     switch (value) {
-      case 'experiment':
-        return UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type
-            .experiment;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type: $value');
+      case 'experiment': return UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type.experiment;
+      default: throw ArgumentError('Unknown UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type
-            .experiment:
-        return 'experiment';
+      case UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type.experiment: return 'experiment';
     }
   }
 
@@ -214,189 +167,122 @@ enum UpdateFlagResponseEnvironmentsValueFallthroughVariant3Type {
 }
 
 final class UpdateFlagResponseEnvironmentsValuePausedOutcomeType {
+
   final String value;
 
   const UpdateFlagResponseEnvironmentsValuePausedOutcomeType._(this.value);
 
-  factory UpdateFlagResponseEnvironmentsValuePausedOutcomeType.fromJson(
-          String value) =>
-      UpdateFlagResponseEnvironmentsValuePausedOutcomeType._(value);
+  factory UpdateFlagResponseEnvironmentsValuePausedOutcomeType.fromJson(String value) => UpdateFlagResponseEnvironmentsValuePausedOutcomeType._(value);
 
-  static const variant =
-      UpdateFlagResponseEnvironmentsValuePausedOutcomeType._('variant');
+  static const variant = UpdateFlagResponseEnvironmentsValuePausedOutcomeType._('variant');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagResponseEnvironmentsValuePausedOutcomeType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagResponseEnvironmentsValuePausedOutcomeType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagResponseEnvironmentsValueReuseActive {
+
   final bool value;
 
   const UpdateFlagResponseEnvironmentsValueReuseActive._(this.value);
 
-  factory UpdateFlagResponseEnvironmentsValueReuseActive.fromJson(bool value) =>
-      UpdateFlagResponseEnvironmentsValueReuseActive._(value);
+  factory UpdateFlagResponseEnvironmentsValueReuseActive.fromJson(bool value) => UpdateFlagResponseEnvironmentsValueReuseActive._(value);
 
   static const false_ = UpdateFlagResponseEnvironmentsValueReuseActive._(false);
   static const true_ = UpdateFlagResponseEnvironmentsValueReuseActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagResponseEnvironmentsValueReuseActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagResponseEnvironmentsValueReuseActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp {
+
   final String value;
 
-  const UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-      this.value);
+  const UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(this.value);
 
-  factory UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp.fromJson(
-          String value) =>
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(value);
+  factory UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp.fromJson(String value) => UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(value);
 
-  static const contains =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          '!contains');
-  static const endswith =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          '!endsWith');
-  static const eq =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!eq');
-  static const ex =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!ex');
-  static const oneof =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!oneOf');
-  static const regex =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!regex');
-  static const startswith =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          '!startsWith');
-  static const after =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('after');
-  static const before =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('before');
-  static const contains2 =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          'contains');
-  static const containsallof =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          'containsAllOf');
-  static const containsanyof =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          'containsAnyOf');
-  static const containsnoneof =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          'containsNoneOf');
-  static const endswith2 =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          'endsWith');
-  static const eq2 =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('eq');
-  static const ex2 =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('ex');
-  static const gt =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('gt');
-  static const gte =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('gte');
-  static const lt =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('lt');
-  static const lte =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('lte');
-  static const oneof2 =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('oneOf');
-  static const regex2 =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('regex');
-  static const startswith2 =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._(
-          'startsWith');
+  static const contains = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!contains');
+  static const endswith = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!endsWith');
+  static const eq = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!eq');
+  static const ex = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!ex');
+  static const oneof = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!oneOf');
+  static const regex = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!regex');
+  static const startswith = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('!startsWith');
+  static const after = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('after');
+  static const before = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('before');
+  static const contains2 = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('contains');
+  static const containsallof = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('containsAllOf');
+  static const containsanyof = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('containsAnyOf');
+  static const containsnoneof = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('containsNoneOf');
+  static const endswith2 = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('endsWith');
+  static const eq2 = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('eq');
+  static const ex2 = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('ex');
+  static const gt = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('gt');
+  static const gte = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('gte');
+  static const lt = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('lt');
+  static const lte = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('lte');
+  static const oneof2 = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('oneOf');
+  static const regex2 = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('regex');
+  static const startswith2 = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase {
+
   final bool value;
 
-  const UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(
-      this.value);
+  const UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(this.value);
 
-  factory UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(
-          bool value) =>
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase
-          ._(value);
+  factory UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(bool value) => UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(value);
 
-  static const false_ =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase
-          ._(false);
-  static const true_ =
-      UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase
-          ._(true);
+  static const false_ = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(false);
+  static const true_ = UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type {
   segment;
 
-  static UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type
-      fromJson(String value) {
+  static UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type fromJson(String value) {
     switch (value) {
-      case 'segment':
-        return UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type
-            .segment;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type: $value');
+      case 'segment': return UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type.segment;
+      default: throw ArgumentError('Unknown UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type
-            .segment:
-        return 'segment';
+      case UpdateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type.segment: return 'segment';
     }
   }
 

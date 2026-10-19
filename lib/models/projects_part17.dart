@@ -4,155 +4,104 @@
 part of 'projects.dart';
 
 // projects domain models (part 17)
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant0
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant0 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant0 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant1
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant1 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant1 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant2
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant2 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant2 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant3
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant3 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant3 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant4
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant4 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant4 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant5
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant5 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant5 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant5(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant5(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant6
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant6 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant6 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant6(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant6(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant7
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant7 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant7 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant7(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant7(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant8
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant8 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant8 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant8(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant8(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant9
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant9 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant9 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant9(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant9(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant10
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant10 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant10 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant10(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant10(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant11
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant11 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant11 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant11(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant11(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant12
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant12 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant12 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant12(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant12(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant13
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant13 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant13 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant13(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant13(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant14
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant14 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant14 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant14(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant14(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant15
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant15 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant15 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant15(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant15(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant16
-    extends RemoveProjectEnvResponseItemContentHint {
+final class RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant16 extends RemoveProjectEnvResponseItemContentHint {
   final RemoveProjectEnvResponseItemContentHintVariant16 value;
-  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant16(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const RemoveProjectEnvResponseItemContentHintRemoveProjectEnvResponseItemContentHintVariant16(this.value);
+  @override Object? toJson() => value.toJson();
 }

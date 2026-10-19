@@ -5,458 +5,284 @@ part of 'inline.dart';
 
 // Inline operation models (part 308)
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1 {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1._(
-          value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1._(value);
 
-  static const unknown =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1._(
-          '*');
+  static const unknown = GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityLogHeadersVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction._(value);
 
-  static const challenge =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction
-          ._('challenge');
-  static const deny =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction
-          ._('deny');
-  static const log =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction
-          ._('log');
+  static const challenge = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction._('challenge');
+  static const deny = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction._('deny');
+  static const log = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesAiBotsActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction._(value);
 
-  static const challenge =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction
-          ._('challenge');
-  static const deny =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction
-          ._('deny');
-  static const log =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction
-          ._('log');
+  static const challenge = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction._('challenge');
+  static const deny = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction._('deny');
+  static const log = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesBotFilterActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction._(value);
 
-  static const challenge =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction
-          ._('challenge');
-  static const deny =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction
-          ._('deny');
-  static const log =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction
-          ._('log');
+  static const challenge = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction._('challenge');
+  static const deny = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction._('deny');
+  static const log = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesOwaspActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction._(value);
 
-  static const challenge =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._('challenge');
-  static const deny =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._('deny');
-  static const log =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction
-          ._('log');
+  static const challenge = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction._('challenge');
+  static const deny = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction._('deny');
+  static const log = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesTrafficSourcesActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction._(value);
 
-  static const challenge =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._('challenge');
-  static const deny =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._('deny');
-  static const log =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction
-          ._('log');
+  static const challenge = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction._('challenge');
+  static const deny = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction._('deny');
+  static const log = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityManagedRulesVercelRulesetActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled {
+
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled.fromJson(
-          bool value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled
-          ._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled._(value);
 
-  static const false_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled
-          ._(false);
-  static const true_ =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled
-          ._(true);
+  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled._(false);
+  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityPageIntegrityEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction {
+
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-      this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction.fromJson(
-          String value) =>
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(value);
 
-  static const allow =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          'allow');
-  static const bypass =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          'bypass');
-  static const challenge =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          'challenge');
-  static const deny =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          'deny');
-  static const log =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          'log');
-  static const rateLimit =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          'rate_limit');
-  static const redirect =
-      GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._(
-          'redirect');
+  static const allow = GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._('allow');
+  static const bypass = GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._('bypass');
+  static const challenge = GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._('challenge');
+  static const deny = GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._('deny');
+  static const log = GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._('log');
+  static const rateLimit = GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._('rate_limit');
+  static const redirect = GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction._('redirect');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemSecurityRulesetsValueAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

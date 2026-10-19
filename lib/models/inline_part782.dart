@@ -9,2234 +9,678 @@ class GetMicrofrontendsInGroupResponseProjectsItem {
   static const String constructionSurface = 'named';
   final String accountId;
   final List<GetMicrofrontendsInGroupResponseProjectsItemAliasItem> alias;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAnalytics>
-      analytics;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration>
-      appliedCve55182Migration;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains>
-      autoAssignCustomDomains;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAnalytics> analytics;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration> appliedCve55182Migration;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains> autoAssignCustomDomains;
   final SdkOptional<String> autoAssignCustomDomainsUpdatedBy;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs>
-      autoExposeSystemEnvs;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs> autoExposeSystemEnvs;
   final SdkOptional<String?> avatar;
   final SdkOptional<String?> avatarDarkMode;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemBlobs> blobs;
   final SdkOptional<String?> buildCommand;
   final SdkOptional<String?> commandForIgnoringBuildStep;
   final SdkOptional<String> concurrencyBucketName;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled>
-      connectBuildsEnabled;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled> connectBuildsEnabled;
   final SdkOptional<String?> connectConfigurationId;
-  final SdkOptional<
-          List<
-              GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?>
-      connectConfigurations;
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?> connectConfigurations;
   final SdkOptional<double> createdAt;
-
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemCreator` API schema.
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCreator>
-      creator;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCreator> creator;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCrons> crons;
-  final SdkOptional<
-          List<
-              GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>>
-      customEnvironments;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility>
-      customerSupportCodeVisibility;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDataCache>
-      dataCache;
-  final GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig
-      defaultResourceConfig;
-
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>> customEnvironments;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility> customerSupportCodeVisibility;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDataCache> dataCache;
+  final GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig defaultResourceConfig;
   /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
-  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration
-      deploymentExpiration;
-
+  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration deploymentExpiration;
   /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?>
-      deploymentPolicy;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?> deploymentPolicy;
   final SdkOptional<String?> devCommand;
-  final GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing
-      directoryListing;
-  final SdkOptional<
-          List<GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>>
-      dismissedToasts;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments>
-      enableAffectedProjectsDeployments;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching>
-      enableExternalRewriteCaching;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?>
-      enablePreviewFeedback;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?>
-      enableProductionFeedback;
-  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>>
-      env;
-
+  final GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing directoryListing;
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>> dismissedToasts;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments> enableAffectedProjectsDeployments;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching> enableExternalRewriteCaching;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?> enablePreviewFeedback;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?> enableProductionFeedback;
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>> env;
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemExpiration` API schema.
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemExpiration>
-      expiration;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeatures>
-      features;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFramework?>
-      framework;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitComments>
-      gitComments;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection>
-      gitForkProtection;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemExpiration> expiration;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeatures> features;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFramework?> framework;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitComments> gitComments;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection> gitForkProtection;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitLFS> gitLfs;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions>
-      gitProviderOptions;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches>
-      hasActiveBranches;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasDeployments>
-      hasDeployments;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions> gitProviderOptions;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches> hasActiveBranches;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasDeployments> hasDeployments;
   final String id;
   final SdkOptional<String?> installCommand;
-  final SdkOptional<
-          List<GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>>
-      internalRoutes;
-  final SdkOptional<
-          List<GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>>
-      ipBuckets;
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>> internalRoutes;
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>> ipBuckets;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemJobs> jobs;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?>
-      lastAliasRequest;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?> lastAliasRequest;
   final SdkOptional<Map<String, dynamic>?> lastRollbackTarget;
-  final SdkOptional<
-          List<
-              GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>>
-      latestDeployments;
-
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>> latestDeployments;
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemLink` API schema.
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLink> link;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLive> live;
-
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends` API schema.
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends>
-      microfrontends;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends> microfrontends;
   final String name;
   final GetMicrofrontendsInGroupResponseProjectsItemNodeVersion nodeVersion;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig>
-      oidcTokenConfig;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?>
-      optionsAllowlist;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig> oidcTokenConfig;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?> optionsAllowlist;
   final SdkOptional<String?> outputDirectory;
   final SdkOptional<String?> passiveConnectConfigurationId;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPassport?>
-      passport;
-
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPassport?> passport;
   /// Password protection settings returned without the secret password hash.
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?>
-      passwordProtection;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?> passwordProtection;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPaused> paused;
-
   /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPermissions>
-      permissions;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane>
-      productionDeploymentsFastLane;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps>
-      protectedSourcemaps;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPermissions> permissions;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane> productionDeploymentsFastLane;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps> protectedSourcemaps;
   final SdkOptional<Map<String, dynamic>> protectionBypass;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig>
-      protectionConfig;
-  final GetMicrofrontendsInGroupResponseProjectsItemResourceConfig
-      resourceConfig;
-
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig> protectionConfig;
+  final GetMicrofrontendsInGroupResponseProjectsItemResourceConfig resourceConfig;
   /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription>
-      rollbackDescription;
-
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription> rollbackDescription;
   /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?>
-      rollingRelease;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?> rollingRelease;
   final SdkOptional<String?> rootDirectory;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSandbox>
-      sandbox;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSecurity>
-      security;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover>
-      serverlessFunctionZeroConfigFailover;
-  final SdkOptional<
-      List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>> services;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSandbox> sandbox;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSecurity> security;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover> serverlessFunctionZeroConfigFailover;
+  final SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>> services;
   final SdkOptional<List<String>> skewProtectionAllowedDomains;
   final SdkOptional<double> skewProtectionBoundaryAt;
   final SdkOptional<double> skewProtectionMaxAge;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink>
-      skipGitConnectDuringLink;
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory>
-      sourceFilesOutsideRootDirectory;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights>
-      speedInsights;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?>
-      ssoProtection;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemStaticIps>
-      staticIps;
-  final SdkOptional<
-          Map<String, GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>>
-      targets;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink> skipGitConnectDuringLink;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights> speedInsights;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?> ssoProtection;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemStaticIps> staticIps;
+  final SdkOptional<Map<String, GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>> targets;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTier> tier;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracing>
-      tracing;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracing> tracing;
   final SdkOptional<double> transferCompletedAt;
   final SdkOptional<String> transferredFromAccountId;
   final SdkOptional<double> transferStartedAt;
   final SdkOptional<String> transferToAccountId;
-
   /// Typed representation of the `GetMicrofrontendsInGroupResponseProjectsItemTrustedIps` API schema.
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?>
-      trustedIps;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?>
-      trustedSources;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?> trustedIps;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?> trustedSources;
   final SdkOptional<double> updatedAt;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemUsageStatus>
-      usageStatus;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemUsageStatus> usageStatus;
   final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0> v0;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0Created>
-      v0Created;
-  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics>
-      webAnalytics;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0Created> v0Created;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics> webAnalytics;
 
-  const GetMicrofrontendsInGroupResponseProjectsItem(
-      {required this.accountId,
-      required this.alias,
-      this.analytics = const SdkOmitted(),
-      this.appliedCve55182Migration = const SdkOmitted(),
-      this.autoAssignCustomDomains = const SdkOmitted(),
-      this.autoAssignCustomDomainsUpdatedBy = const SdkOmitted(),
-      this.autoExposeSystemEnvs = const SdkOmitted(),
-      this.avatar = const SdkOmitted(),
-      this.avatarDarkMode = const SdkOmitted(),
-      this.blobs = const SdkOmitted(),
-      this.buildCommand = const SdkOmitted(),
-      this.commandForIgnoringBuildStep = const SdkOmitted(),
-      this.concurrencyBucketName = const SdkOmitted(),
-      this.connectBuildsEnabled = const SdkOmitted(),
-      this.connectConfigurationId = const SdkOmitted(),
-      this.connectConfigurations = const SdkOmitted(),
-      this.createdAt = const SdkOmitted(),
-      this.creator = const SdkOmitted(),
-      this.crons = const SdkOmitted(),
-      this.customEnvironments = const SdkOmitted(),
-      this.customerSupportCodeVisibility = const SdkOmitted(),
-      this.dataCache = const SdkOmitted(),
-      required this.defaultResourceConfig,
-      required this.deploymentExpiration,
-      this.deploymentPolicy = const SdkOmitted(),
-      this.devCommand = const SdkOmitted(),
-      required this.directoryListing,
-      this.dismissedToasts = const SdkOmitted(),
-      this.enableAffectedProjectsDeployments = const SdkOmitted(),
-      this.enableExternalRewriteCaching = const SdkOmitted(),
-      this.enablePreviewFeedback = const SdkOmitted(),
-      this.enableProductionFeedback = const SdkOmitted(),
-      this.env = const SdkOmitted(),
-      this.expiration = const SdkOmitted(),
-      this.features = const SdkOmitted(),
-      this.framework = const SdkOmitted(),
-      this.gitComments = const SdkOmitted(),
-      this.gitForkProtection = const SdkOmitted(),
-      this.gitLfs = const SdkOmitted(),
-      this.gitProviderOptions = const SdkOmitted(),
-      this.hasActiveBranches = const SdkOmitted(),
-      this.hasDeployments = const SdkOmitted(),
-      required this.id,
-      this.installCommand = const SdkOmitted(),
-      this.internalRoutes = const SdkOmitted(),
-      this.ipBuckets = const SdkOmitted(),
-      this.jobs = const SdkOmitted(),
-      this.lastAliasRequest = const SdkOmitted(),
-      this.lastRollbackTarget = const SdkOmitted(),
-      this.latestDeployments = const SdkOmitted(),
-      this.link = const SdkOmitted(),
-      this.live = const SdkOmitted(),
-      this.microfrontends = const SdkOmitted(),
-      required this.name,
-      required this.nodeVersion,
-      this.oidcTokenConfig = const SdkOmitted(),
-      this.optionsAllowlist = const SdkOmitted(),
-      this.outputDirectory = const SdkOmitted(),
-      this.passiveConnectConfigurationId = const SdkOmitted(),
-      this.passport = const SdkOmitted(),
-      this.passwordProtection = const SdkOmitted(),
-      this.paused = const SdkOmitted(),
-      this.permissions = const SdkOmitted(),
-      this.productionDeploymentsFastLane = const SdkOmitted(),
-      this.protectedSourcemaps = const SdkOmitted(),
-      this.protectionBypass = const SdkOmitted(),
-      this.protectionConfig = const SdkOmitted(),
-      required this.resourceConfig,
-      this.rollbackDescription = const SdkOmitted(),
-      this.rollingRelease = const SdkOmitted(),
-      this.rootDirectory = const SdkOmitted(),
-      this.sandbox = const SdkOmitted(),
-      this.security = const SdkOmitted(),
-      this.serverlessFunctionZeroConfigFailover = const SdkOmitted(),
-      this.services = const SdkOmitted(),
-      this.skewProtectionAllowedDomains = const SdkOmitted(),
-      this.skewProtectionBoundaryAt = const SdkOmitted(),
-      this.skewProtectionMaxAge = const SdkOmitted(),
-      this.skipGitConnectDuringLink = const SdkOmitted(),
-      this.sourceFilesOutsideRootDirectory = const SdkOmitted(),
-      this.speedInsights = const SdkOmitted(),
-      this.ssoProtection = const SdkOmitted(),
-      this.staticIps = const SdkOmitted(),
-      this.targets = const SdkOmitted(),
-      this.tier = const SdkOmitted(),
-      this.tracing = const SdkOmitted(),
-      this.transferCompletedAt = const SdkOmitted(),
-      this.transferredFromAccountId = const SdkOmitted(),
-      this.transferStartedAt = const SdkOmitted(),
-      this.transferToAccountId = const SdkOmitted(),
-      this.trustedIps = const SdkOmitted(),
-      this.trustedSources = const SdkOmitted(),
-      this.updatedAt = const SdkOmitted(),
-      this.usageStatus = const SdkOmitted(),
-      this.v0 = const SdkOmitted(),
-      this.v0Created = const SdkOmitted(),
-      this.webAnalytics = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItem({required this.accountId, required this.alias, this.analytics = const SdkOmitted(), this.appliedCve55182Migration = const SdkOmitted(), this.autoAssignCustomDomains = const SdkOmitted(), this.autoAssignCustomDomainsUpdatedBy = const SdkOmitted(), this.autoExposeSystemEnvs = const SdkOmitted(), this.avatar = const SdkOmitted(), this.avatarDarkMode = const SdkOmitted(), this.blobs = const SdkOmitted(), this.buildCommand = const SdkOmitted(), this.commandForIgnoringBuildStep = const SdkOmitted(), this.concurrencyBucketName = const SdkOmitted(), this.connectBuildsEnabled = const SdkOmitted(), this.connectConfigurationId = const SdkOmitted(), this.connectConfigurations = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.creator = const SdkOmitted(), this.crons = const SdkOmitted(), this.customEnvironments = const SdkOmitted(), this.customerSupportCodeVisibility = const SdkOmitted(), this.dataCache = const SdkOmitted(), required this.defaultResourceConfig, required this.deploymentExpiration, this.deploymentPolicy = const SdkOmitted(), this.devCommand = const SdkOmitted(), required this.directoryListing, this.dismissedToasts = const SdkOmitted(), this.enableAffectedProjectsDeployments = const SdkOmitted(), this.enableExternalRewriteCaching = const SdkOmitted(), this.enablePreviewFeedback = const SdkOmitted(), this.enableProductionFeedback = const SdkOmitted(), this.env = const SdkOmitted(), this.expiration = const SdkOmitted(), this.features = const SdkOmitted(), this.framework = const SdkOmitted(), this.gitComments = const SdkOmitted(), this.gitForkProtection = const SdkOmitted(), this.gitLfs = const SdkOmitted(), this.gitProviderOptions = const SdkOmitted(), this.hasActiveBranches = const SdkOmitted(), this.hasDeployments = const SdkOmitted(), required this.id, this.installCommand = const SdkOmitted(), this.internalRoutes = const SdkOmitted(), this.ipBuckets = const SdkOmitted(), this.jobs = const SdkOmitted(), this.lastAliasRequest = const SdkOmitted(), this.lastRollbackTarget = const SdkOmitted(), this.latestDeployments = const SdkOmitted(), this.link = const SdkOmitted(), this.live = const SdkOmitted(), this.microfrontends = const SdkOmitted(), required this.name, required this.nodeVersion, this.oidcTokenConfig = const SdkOmitted(), this.optionsAllowlist = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.passiveConnectConfigurationId = const SdkOmitted(), this.passport = const SdkOmitted(), this.passwordProtection = const SdkOmitted(), this.paused = const SdkOmitted(), this.permissions = const SdkOmitted(), this.productionDeploymentsFastLane = const SdkOmitted(), this.protectedSourcemaps = const SdkOmitted(), this.protectionBypass = const SdkOmitted(), this.protectionConfig = const SdkOmitted(), required this.resourceConfig, this.rollbackDescription = const SdkOmitted(), this.rollingRelease = const SdkOmitted(), this.rootDirectory = const SdkOmitted(), this.sandbox = const SdkOmitted(), this.security = const SdkOmitted(), this.serverlessFunctionZeroConfigFailover = const SdkOmitted(), this.services = const SdkOmitted(), this.skewProtectionAllowedDomains = const SdkOmitted(), this.skewProtectionBoundaryAt = const SdkOmitted(), this.skewProtectionMaxAge = const SdkOmitted(), this.skipGitConnectDuringLink = const SdkOmitted(), this.sourceFilesOutsideRootDirectory = const SdkOmitted(), this.speedInsights = const SdkOmitted(), this.ssoProtection = const SdkOmitted(), this.staticIps = const SdkOmitted(), this.targets = const SdkOmitted(), this.tier = const SdkOmitted(), this.tracing = const SdkOmitted(), this.transferCompletedAt = const SdkOmitted(), this.transferredFromAccountId = const SdkOmitted(), this.transferStartedAt = const SdkOmitted(), this.transferToAccountId = const SdkOmitted(), this.trustedIps = const SdkOmitted(), this.trustedSources = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.usageStatus = const SdkOmitted(), this.v0 = const SdkOmitted(), this.v0Created = const SdkOmitted(), this.webAnalytics = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItem Function(
-      {String accountId,
-      List<GetMicrofrontendsInGroupResponseProjectsItemAliasItem> alias,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAnalytics>
-          analytics,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration>
-          appliedCve55182Migration,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains>
-          autoAssignCustomDomains,
-      SdkOptional<String> autoAssignCustomDomainsUpdatedBy,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs>
-          autoExposeSystemEnvs,
-      SdkOptional<String?> avatar,
-      SdkOptional<String?> avatarDarkMode,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemBlobs> blobs,
-      SdkOptional<String?> buildCommand,
-      SdkOptional<String?> commandForIgnoringBuildStep,
-      SdkOptional<String> concurrencyBucketName,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled>
-          connectBuildsEnabled,
-      SdkOptional<String?> connectConfigurationId,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?>
-          connectConfigurations,
-      SdkOptional<double> createdAt,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCreator> creator,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCrons> crons,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>>
-          customEnvironments,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility>
-          customerSupportCodeVisibility,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDataCache>
-          dataCache,
-      GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig
-          defaultResourceConfig,
-      GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration
-          deploymentExpiration,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?>
-          deploymentPolicy,
-      SdkOptional<String?> devCommand,
-      GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing
-          directoryListing,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>>
-          dismissedToasts,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments>
-          enableAffectedProjectsDeployments,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching>
-          enableExternalRewriteCaching,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?>
-          enablePreviewFeedback,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?>
-          enableProductionFeedback,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>>
-          env,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemExpiration>
-          expiration,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeatures>
-          features,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFramework?>
-          framework,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitComments>
-          gitComments,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection>
-          gitForkProtection,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitLFS> gitLfs,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions>
-          gitProviderOptions,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches>
-          hasActiveBranches,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasDeployments>
-          hasDeployments,
-      String id,
-      SdkOptional<String?> installCommand,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>>
-          internalRoutes,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>>
-          ipBuckets,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemJobs> jobs,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?>
-          lastAliasRequest,
-      SdkOptional<Map<String, dynamic>?> lastRollbackTarget,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>>
-          latestDeployments,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLink> link,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLive> live,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends>
-          microfrontends,
-      String name,
-      GetMicrofrontendsInGroupResponseProjectsItemNodeVersion nodeVersion,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig> oidcTokenConfig,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?> optionsAllowlist,
-      SdkOptional<String?> outputDirectory,
-      SdkOptional<String?> passiveConnectConfigurationId,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPassport?> passport,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?> passwordProtection,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPaused> paused,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPermissions> permissions,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane> productionDeploymentsFastLane,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps> protectedSourcemaps,
-      SdkOptional<Map<String, dynamic>> protectionBypass,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig> protectionConfig,
-      GetMicrofrontendsInGroupResponseProjectsItemResourceConfig resourceConfig,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription> rollbackDescription,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?> rollingRelease,
-      SdkOptional<String?> rootDirectory,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSandbox> sandbox,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSecurity> security,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover> serverlessFunctionZeroConfigFailover,
-      SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>> services,
-      SdkOptional<List<String>> skewProtectionAllowedDomains,
-      SdkOptional<double> skewProtectionBoundaryAt,
-      SdkOptional<double> skewProtectionMaxAge,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink> skipGitConnectDuringLink,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights> speedInsights,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?> ssoProtection,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemStaticIps> staticIps,
-      SdkOptional<Map<String, GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>> targets,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTier> tier,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracing> tracing,
-      SdkOptional<double> transferCompletedAt,
-      SdkOptional<String> transferredFromAccountId,
-      SdkOptional<double> transferStartedAt,
-      SdkOptional<String> transferToAccountId,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?> trustedIps,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?> trustedSources,
-      SdkOptional<double> updatedAt,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemUsageStatus> usageStatus,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0> v0,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0Created> v0Created,
-      SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics> webAnalytics}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItem Function({String accountId, List<GetMicrofrontendsInGroupResponseProjectsItemAliasItem> alias, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAnalytics> analytics, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration> appliedCve55182Migration, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains> autoAssignCustomDomains, SdkOptional<String> autoAssignCustomDomainsUpdatedBy, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs> autoExposeSystemEnvs, SdkOptional<String?> avatar, SdkOptional<String?> avatarDarkMode, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemBlobs> blobs, SdkOptional<String?> buildCommand, SdkOptional<String?> commandForIgnoringBuildStep, SdkOptional<String> concurrencyBucketName, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled> connectBuildsEnabled, SdkOptional<String?> connectConfigurationId, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?> connectConfigurations, SdkOptional<double> createdAt, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCreator> creator, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCrons> crons, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>> customEnvironments, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility> customerSupportCodeVisibility, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDataCache> dataCache, GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig defaultResourceConfig, GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration deploymentExpiration, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?> deploymentPolicy, SdkOptional<String?> devCommand, GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing directoryListing, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>> dismissedToasts, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments> enableAffectedProjectsDeployments, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching> enableExternalRewriteCaching, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?> enablePreviewFeedback, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?> enableProductionFeedback, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>> env, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemExpiration> expiration, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeatures> features, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFramework?> framework, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitComments> gitComments, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection> gitForkProtection, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitLFS> gitLfs, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions> gitProviderOptions, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches> hasActiveBranches, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasDeployments> hasDeployments, String id, SdkOptional<String?> installCommand, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>> internalRoutes, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>> ipBuckets, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemJobs> jobs, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?> lastAliasRequest, SdkOptional<Map<String, dynamic>?> lastRollbackTarget, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>> latestDeployments, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLink> link, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLive> live, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends> microfrontends, String name, GetMicrofrontendsInGroupResponseProjectsItemNodeVersion nodeVersion, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig> oidcTokenConfig, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?> optionsAllowlist, SdkOptional<String?> outputDirectory, SdkOptional<String?> passiveConnectConfigurationId, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPassport?> passport, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?> passwordProtection, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPaused> paused, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPermissions> permissions, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane> productionDeploymentsFastLane, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps> protectedSourcemaps, SdkOptional<Map<String, dynamic>> protectionBypass, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig> protectionConfig, GetMicrofrontendsInGroupResponseProjectsItemResourceConfig resourceConfig, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription> rollbackDescription, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?> rollingRelease, SdkOptional<String?> rootDirectory, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSandbox> sandbox, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSecurity> security, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover> serverlessFunctionZeroConfigFailover, SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>> services, SdkOptional<List<String>> skewProtectionAllowedDomains, SdkOptional<double> skewProtectionBoundaryAt, SdkOptional<double> skewProtectionMaxAge, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink> skipGitConnectDuringLink, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory> sourceFilesOutsideRootDirectory, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights> speedInsights, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?> ssoProtection, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemStaticIps> staticIps, SdkOptional<Map<String, GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>> targets, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTier> tier, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracing> tracing, SdkOptional<double> transferCompletedAt, SdkOptional<String> transferredFromAccountId, SdkOptional<double> transferStartedAt, SdkOptional<String> transferToAccountId, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?> trustedIps, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?> trustedSources, SdkOptional<double> updatedAt, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemUsageStatus> usageStatus, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0> v0, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0Created> v0Created, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics> webAnalytics}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItem _copyWith(
-          {Object? accountId = sdkOmittedValue,
-          Object? alias = sdkOmittedValue,
-          Object? analytics = sdkOmittedValue,
-          Object? appliedCve55182Migration = sdkOmittedValue,
-          Object? autoAssignCustomDomains = sdkOmittedValue,
-          Object? autoAssignCustomDomainsUpdatedBy = sdkOmittedValue,
-          Object? autoExposeSystemEnvs = sdkOmittedValue,
-          Object? avatar = sdkOmittedValue,
-          Object? avatarDarkMode = sdkOmittedValue,
-          Object? blobs = sdkOmittedValue,
-          Object? buildCommand = sdkOmittedValue,
-          Object? commandForIgnoringBuildStep = sdkOmittedValue,
-          Object? concurrencyBucketName = sdkOmittedValue,
-          Object? connectBuildsEnabled = sdkOmittedValue,
-          Object? connectConfigurationId = sdkOmittedValue,
-          Object? connectConfigurations = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? creator = sdkOmittedValue,
-          Object? crons = sdkOmittedValue,
-          Object? customEnvironments = sdkOmittedValue,
-          Object? customerSupportCodeVisibility = sdkOmittedValue,
-          Object? dataCache = sdkOmittedValue,
-          Object? defaultResourceConfig = sdkOmittedValue,
-          Object? deploymentExpiration = sdkOmittedValue,
-          Object? deploymentPolicy = sdkOmittedValue,
-          Object? devCommand = sdkOmittedValue,
-          Object? directoryListing = sdkOmittedValue,
-          Object? dismissedToasts = sdkOmittedValue,
-          Object? enableAffectedProjectsDeployments = sdkOmittedValue,
-          Object? enableExternalRewriteCaching = sdkOmittedValue,
-          Object? enablePreviewFeedback = sdkOmittedValue,
-          Object? enableProductionFeedback = sdkOmittedValue,
-          Object? env = sdkOmittedValue,
-          Object? expiration = sdkOmittedValue,
-          Object? features = sdkOmittedValue,
-          Object? framework = sdkOmittedValue,
-          Object? gitComments = sdkOmittedValue,
-          Object? gitForkProtection = sdkOmittedValue,
-          Object? gitLfs = sdkOmittedValue,
-          Object? gitProviderOptions = sdkOmittedValue,
-          Object? hasActiveBranches = sdkOmittedValue,
-          Object? hasDeployments = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? installCommand = sdkOmittedValue,
-          Object? internalRoutes = sdkOmittedValue,
-          Object? ipBuckets = sdkOmittedValue,
-          Object? jobs = sdkOmittedValue,
-          Object? lastAliasRequest = sdkOmittedValue,
-          Object? lastRollbackTarget = sdkOmittedValue,
-          Object? latestDeployments = sdkOmittedValue,
-          Object? link = sdkOmittedValue,
-          Object? live = sdkOmittedValue,
-          Object? microfrontends = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? nodeVersion = sdkOmittedValue,
-          Object? oidcTokenConfig = sdkOmittedValue,
-          Object? optionsAllowlist = sdkOmittedValue,
-          Object? outputDirectory = sdkOmittedValue,
-          Object? passiveConnectConfigurationId = sdkOmittedValue,
-          Object? passport = sdkOmittedValue,
-          Object? passwordProtection = sdkOmittedValue,
-          Object? paused = sdkOmittedValue,
-          Object? permissions = sdkOmittedValue,
-          Object? productionDeploymentsFastLane = sdkOmittedValue,
-          Object? protectedSourcemaps = sdkOmittedValue,
-          Object? protectionBypass = sdkOmittedValue,
-          Object? protectionConfig = sdkOmittedValue,
-          Object? resourceConfig = sdkOmittedValue,
-          Object? rollbackDescription = sdkOmittedValue,
-          Object? rollingRelease = sdkOmittedValue,
-          Object? rootDirectory = sdkOmittedValue,
-          Object? sandbox = sdkOmittedValue,
-          Object? security = sdkOmittedValue,
-          Object? serverlessFunctionZeroConfigFailover = sdkOmittedValue,
-          Object? services = sdkOmittedValue,
-          Object? skewProtectionAllowedDomains = sdkOmittedValue,
-          Object? skewProtectionBoundaryAt = sdkOmittedValue,
-          Object? skewProtectionMaxAge = sdkOmittedValue,
-          Object? skipGitConnectDuringLink = sdkOmittedValue,
-          Object? sourceFilesOutsideRootDirectory = sdkOmittedValue,
-          Object? speedInsights = sdkOmittedValue,
-          Object? ssoProtection = sdkOmittedValue,
-          Object? staticIps = sdkOmittedValue,
-          Object? targets = sdkOmittedValue,
-          Object? tier = sdkOmittedValue,
-          Object? tracing = sdkOmittedValue,
-          Object? transferCompletedAt = sdkOmittedValue,
-          Object? transferredFromAccountId = sdkOmittedValue,
-          Object? transferStartedAt = sdkOmittedValue,
-          Object? transferToAccountId = sdkOmittedValue,
-          Object? trustedIps = sdkOmittedValue,
-          Object? trustedSources = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? usageStatus = sdkOmittedValue,
-          Object? v0 = sdkOmittedValue,
-          Object? v0Created = sdkOmittedValue,
-          Object? webAnalytics = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItem(
-        accountId: identical(accountId, sdkOmittedValue)
-            ? this.accountId
-            : accountId as String,
-        alias: identical(alias, sdkOmittedValue)
-            ? this.alias
-            : alias
-                as List<GetMicrofrontendsInGroupResponseProjectsItemAliasItem>,
-        analytics: identical(analytics, sdkOmittedValue)
-            ? this.analytics
-            : analytics as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemAnalytics>,
-        appliedCve55182Migration: identical(
-                appliedCve55182Migration, sdkOmittedValue)
-            ? this.appliedCve55182Migration
-            : appliedCve55182Migration as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration>,
-        autoAssignCustomDomains: identical(
-                autoAssignCustomDomains, sdkOmittedValue)
-            ? this.autoAssignCustomDomains
-            : autoAssignCustomDomains as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains>,
-        autoAssignCustomDomainsUpdatedBy:
-            identical(autoAssignCustomDomainsUpdatedBy, sdkOmittedValue)
-                ? this.autoAssignCustomDomainsUpdatedBy
-                : autoAssignCustomDomainsUpdatedBy as SdkOptional<String>,
-        autoExposeSystemEnvs: identical(autoExposeSystemEnvs, sdkOmittedValue)
-            ? this.autoExposeSystemEnvs
-            : autoExposeSystemEnvs as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs>,
-        avatar: identical(avatar, sdkOmittedValue)
-            ? this.avatar
-            : avatar as SdkOptional<String?>,
-        avatarDarkMode: identical(avatarDarkMode, sdkOmittedValue)
-            ? this.avatarDarkMode
-            : avatarDarkMode as SdkOptional<String?>,
-        blobs: identical(blobs, sdkOmittedValue)
-            ? this.blobs
-            : blobs as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemBlobs>,
-        buildCommand: identical(buildCommand, sdkOmittedValue)
-            ? this.buildCommand
-            : buildCommand as SdkOptional<String?>,
-        commandForIgnoringBuildStep:
-            identical(commandForIgnoringBuildStep, sdkOmittedValue)
-                ? this.commandForIgnoringBuildStep
-                : commandForIgnoringBuildStep as SdkOptional<String?>,
-        concurrencyBucketName: identical(concurrencyBucketName, sdkOmittedValue)
-            ? this.concurrencyBucketName
-            : concurrencyBucketName as SdkOptional<String>,
-        connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue)
-            ? this.connectBuildsEnabled
-            : connectBuildsEnabled as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled>,
-        connectConfigurationId:
-            identical(connectConfigurationId, sdkOmittedValue)
-                ? this.connectConfigurationId
-                : connectConfigurationId as SdkOptional<String?>,
-        connectConfigurations: identical(connectConfigurations, sdkOmittedValue)
-            ? this.connectConfigurations
-            : connectConfigurations as SdkOptional<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        creator: identical(creator, sdkOmittedValue)
-            ? this.creator
-            : creator as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemCreator>,
-        crons: identical(crons, sdkOmittedValue)
-            ? this.crons
-            : crons as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemCrons>,
-        customEnvironments: identical(customEnvironments, sdkOmittedValue)
-            ? this.customEnvironments
-            : customEnvironments as SdkOptional<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>>,
-        customerSupportCodeVisibility: identical(
-                customerSupportCodeVisibility, sdkOmittedValue)
-            ? this.customerSupportCodeVisibility
-            : customerSupportCodeVisibility as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility>,
-        dataCache: identical(dataCache, sdkOmittedValue)
-            ? this.dataCache
-            : dataCache as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemDataCache>,
-        defaultResourceConfig: identical(defaultResourceConfig, sdkOmittedValue)
-            ? this.defaultResourceConfig
-            : defaultResourceConfig
-                as GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig,
-        deploymentExpiration: identical(deploymentExpiration, sdkOmittedValue)
-            ? this.deploymentExpiration
-            : deploymentExpiration
-                as GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration,
-        deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue)
-            ? this.deploymentPolicy
-            : deploymentPolicy as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?>,
-        devCommand: identical(devCommand, sdkOmittedValue)
-            ? this.devCommand
-            : devCommand as SdkOptional<String?>,
-        directoryListing: identical(directoryListing, sdkOmittedValue)
-            ? this.directoryListing
-            : directoryListing
-                as GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing,
-        dismissedToasts: identical(dismissedToasts, sdkOmittedValue)
-            ? this.dismissedToasts
-            : dismissedToasts as SdkOptional<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>>,
-        enableAffectedProjectsDeployments: identical(
-                enableAffectedProjectsDeployments, sdkOmittedValue)
-            ? this.enableAffectedProjectsDeployments
-            : enableAffectedProjectsDeployments as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments>,
-        enableExternalRewriteCaching: identical(
-                enableExternalRewriteCaching, sdkOmittedValue)
-            ? this.enableExternalRewriteCaching
-            : enableExternalRewriteCaching as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching>,
-        enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue)
-            ? this.enablePreviewFeedback
-            : enablePreviewFeedback as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?>,
-        enableProductionFeedback: identical(
-                enableProductionFeedback, sdkOmittedValue)
-            ? this.enableProductionFeedback
-            : enableProductionFeedback as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?>,
-        env: identical(env, sdkOmittedValue)
-            ? this.env
-            : env as SdkOptional<
-                List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>>,
-        expiration: identical(expiration, sdkOmittedValue)
-            ? this.expiration
-            : expiration as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemExpiration>,
-        features: identical(features, sdkOmittedValue)
-            ? this.features
-            : features as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemFeatures>,
-        framework: identical(framework, sdkOmittedValue)
-            ? this.framework
-            : framework as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemFramework?>,
-        gitComments: identical(gitComments, sdkOmittedValue)
-            ? this.gitComments
-            : gitComments as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemGitComments>,
-        gitForkProtection: identical(gitForkProtection, sdkOmittedValue)
-            ? this.gitForkProtection
-            : gitForkProtection as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection>,
-        gitLfs: identical(gitLfs, sdkOmittedValue)
-            ? this.gitLfs
-            : gitLfs as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemGitLFS>,
-        gitProviderOptions: identical(gitProviderOptions, sdkOmittedValue)
-            ? this.gitProviderOptions
-            : gitProviderOptions as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions>,
-        hasActiveBranches: identical(hasActiveBranches, sdkOmittedValue)
-            ? this.hasActiveBranches
-            : hasActiveBranches as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches>,
-        hasDeployments: identical(hasDeployments, sdkOmittedValue)
-            ? this.hasDeployments
-            : hasDeployments as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemHasDeployments>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        installCommand: identical(installCommand, sdkOmittedValue)
-            ? this.installCommand
-            : installCommand as SdkOptional<String?>,
-        internalRoutes: identical(internalRoutes, sdkOmittedValue)
-            ? this.internalRoutes
-            : internalRoutes as SdkOptional<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>>,
-        ipBuckets: identical(ipBuckets, sdkOmittedValue)
-            ? this.ipBuckets
-            : ipBuckets as SdkOptional<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>>,
-        jobs: identical(jobs, sdkOmittedValue)
-            ? this.jobs
-            : jobs as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemJobs>,
-        lastAliasRequest: identical(lastAliasRequest, sdkOmittedValue)
-            ? this.lastAliasRequest
-            : lastAliasRequest as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?>,
-        lastRollbackTarget: identical(lastRollbackTarget, sdkOmittedValue)
-            ? this.lastRollbackTarget
-            : lastRollbackTarget as SdkOptional<Map<String, dynamic>?>,
-        latestDeployments: identical(latestDeployments, sdkOmittedValue)
-            ? this.latestDeployments
-            : latestDeployments as SdkOptional<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>>,
-        link: identical(link, sdkOmittedValue)
-            ? this.link
-            : link as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemLink>,
-        live: identical(live, sdkOmittedValue)
-            ? this.live
-            : live as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemLive>,
-        microfrontends: identical(microfrontends, sdkOmittedValue)
-            ? this.microfrontends
-            : microfrontends as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        nodeVersion: identical(nodeVersion, sdkOmittedValue)
-            ? this.nodeVersion
-            : nodeVersion
-                as GetMicrofrontendsInGroupResponseProjectsItemNodeVersion,
-        oidcTokenConfig: identical(oidcTokenConfig, sdkOmittedValue)
-            ? this.oidcTokenConfig
-            : oidcTokenConfig as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig>,
-        optionsAllowlist: identical(optionsAllowlist, sdkOmittedValue)
-            ? this.optionsAllowlist
-            : optionsAllowlist as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?>,
-        outputDirectory: identical(outputDirectory, sdkOmittedValue)
-            ? this.outputDirectory
-            : outputDirectory as SdkOptional<String?>,
-        passiveConnectConfigurationId:
-            identical(passiveConnectConfigurationId, sdkOmittedValue)
-                ? this.passiveConnectConfigurationId
-                : passiveConnectConfigurationId as SdkOptional<String?>,
-        passport: identical(passport, sdkOmittedValue)
-            ? this.passport
-            : passport as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemPassport?>,
-        passwordProtection: identical(passwordProtection, sdkOmittedValue)
-            ? this.passwordProtection
-            : passwordProtection as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?>,
-        paused: identical(paused, sdkOmittedValue)
-            ? this.paused
-            : paused as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemPaused>,
-        permissions: identical(permissions, sdkOmittedValue)
-            ? this.permissions
-            : permissions as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemPermissions>,
-        productionDeploymentsFastLane: identical(
-                productionDeploymentsFastLane, sdkOmittedValue)
-            ? this.productionDeploymentsFastLane
-            : productionDeploymentsFastLane as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane>,
-        protectedSourcemaps: identical(protectedSourcemaps, sdkOmittedValue)
-            ? this.protectedSourcemaps
-            : protectedSourcemaps as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps>,
-        protectionBypass: identical(protectionBypass, sdkOmittedValue)
-            ? this.protectionBypass
-            : protectionBypass as SdkOptional<Map<String, dynamic>>,
-        protectionConfig: identical(protectionConfig, sdkOmittedValue)
-            ? this.protectionConfig
-            : protectionConfig as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig>,
-        resourceConfig: identical(resourceConfig, sdkOmittedValue)
-            ? this.resourceConfig
-            : resourceConfig
-                as GetMicrofrontendsInGroupResponseProjectsItemResourceConfig,
-        rollbackDescription: identical(rollbackDescription, sdkOmittedValue)
-            ? this.rollbackDescription
-            : rollbackDescription as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription>,
-        rollingRelease: identical(rollingRelease, sdkOmittedValue)
-            ? this.rollingRelease
-            : rollingRelease as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?>,
-        rootDirectory: identical(rootDirectory, sdkOmittedValue)
-            ? this.rootDirectory
-            : rootDirectory as SdkOptional<String?>,
-        sandbox: identical(sandbox, sdkOmittedValue)
-            ? this.sandbox
-            : sandbox as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemSandbox>,
-        security: identical(security, sdkOmittedValue)
-            ? this.security
-            : security as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemSecurity>,
-        serverlessFunctionZeroConfigFailover: identical(
-                serverlessFunctionZeroConfigFailover, sdkOmittedValue)
-            ? this.serverlessFunctionZeroConfigFailover
-            : serverlessFunctionZeroConfigFailover as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover>,
-        services: identical(services, sdkOmittedValue)
-            ? this.services
-            : services as SdkOptional<
-                List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>>,
-        skewProtectionAllowedDomains:
-            identical(skewProtectionAllowedDomains, sdkOmittedValue)
-                ? this.skewProtectionAllowedDomains
-                : skewProtectionAllowedDomains as SdkOptional<List<String>>,
-        skewProtectionBoundaryAt:
-            identical(skewProtectionBoundaryAt, sdkOmittedValue)
-                ? this.skewProtectionBoundaryAt
-                : skewProtectionBoundaryAt as SdkOptional<double>,
-        skewProtectionMaxAge: identical(skewProtectionMaxAge, sdkOmittedValue)
-            ? this.skewProtectionMaxAge
-            : skewProtectionMaxAge as SdkOptional<double>,
-        skipGitConnectDuringLink: identical(
-                skipGitConnectDuringLink, sdkOmittedValue)
-            ? this.skipGitConnectDuringLink
-            : skipGitConnectDuringLink as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink>,
-        sourceFilesOutsideRootDirectory: identical(
-                sourceFilesOutsideRootDirectory, sdkOmittedValue)
-            ? this.sourceFilesOutsideRootDirectory
-            : sourceFilesOutsideRootDirectory as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory>,
-        speedInsights: identical(speedInsights, sdkOmittedValue)
-            ? this.speedInsights
-            : speedInsights as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights>,
-        ssoProtection: identical(ssoProtection, sdkOmittedValue)
-            ? this.ssoProtection
-            : ssoProtection as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?>,
-        staticIps: identical(staticIps, sdkOmittedValue)
-            ? this.staticIps
-            : staticIps as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemStaticIps>,
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as SdkOptional<
-                Map<String,
-                    GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>>,
-        tier: identical(tier, sdkOmittedValue)
-            ? this.tier
-            : tier as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemTier>,
-        tracing: identical(tracing, sdkOmittedValue)
-            ? this.tracing
-            : tracing as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemTracing>,
-        transferCompletedAt: identical(transferCompletedAt, sdkOmittedValue)
-            ? this.transferCompletedAt
-            : transferCompletedAt as SdkOptional<double>,
-        transferredFromAccountId:
-            identical(transferredFromAccountId, sdkOmittedValue)
-                ? this.transferredFromAccountId
-                : transferredFromAccountId as SdkOptional<String>,
-        transferStartedAt: identical(transferStartedAt, sdkOmittedValue)
-            ? this.transferStartedAt
-            : transferStartedAt as SdkOptional<double>,
-        transferToAccountId: identical(transferToAccountId, sdkOmittedValue)
-            ? this.transferToAccountId
-            : transferToAccountId as SdkOptional<String>,
-        trustedIps: identical(trustedIps, sdkOmittedValue)
-            ? this.trustedIps
-            : trustedIps as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?>,
-        trustedSources: identical(trustedSources, sdkOmittedValue)
-            ? this.trustedSources
-            : trustedSources as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        usageStatus: identical(usageStatus, sdkOmittedValue)
-            ? this.usageStatus
-            : usageStatus as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemUsageStatus>,
-        v0: identical(v0, sdkOmittedValue)
-            ? this.v0
-            : v0 as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0>,
-        v0Created: identical(v0Created, sdkOmittedValue)
-            ? this.v0Created
-            : v0Created as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemV0Created>,
-        webAnalytics: identical(webAnalytics, sdkOmittedValue)
-            ? this.webAnalytics
-            : webAnalytics as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItem _copyWith({Object? accountId = sdkOmittedValue, Object? alias = sdkOmittedValue, Object? analytics = sdkOmittedValue, Object? appliedCve55182Migration = sdkOmittedValue, Object? autoAssignCustomDomains = sdkOmittedValue, Object? autoAssignCustomDomainsUpdatedBy = sdkOmittedValue, Object? autoExposeSystemEnvs = sdkOmittedValue, Object? avatar = sdkOmittedValue, Object? avatarDarkMode = sdkOmittedValue, Object? blobs = sdkOmittedValue, Object? buildCommand = sdkOmittedValue, Object? commandForIgnoringBuildStep = sdkOmittedValue, Object? concurrencyBucketName = sdkOmittedValue, Object? connectBuildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? connectConfigurations = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? creator = sdkOmittedValue, Object? crons = sdkOmittedValue, Object? customEnvironments = sdkOmittedValue, Object? customerSupportCodeVisibility = sdkOmittedValue, Object? dataCache = sdkOmittedValue, Object? defaultResourceConfig = sdkOmittedValue, Object? deploymentExpiration = sdkOmittedValue, Object? deploymentPolicy = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? directoryListing = sdkOmittedValue, Object? dismissedToasts = sdkOmittedValue, Object? enableAffectedProjectsDeployments = sdkOmittedValue, Object? enableExternalRewriteCaching = sdkOmittedValue, Object? enablePreviewFeedback = sdkOmittedValue, Object? enableProductionFeedback = sdkOmittedValue, Object? env = sdkOmittedValue, Object? expiration = sdkOmittedValue, Object? features = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? gitComments = sdkOmittedValue, Object? gitForkProtection = sdkOmittedValue, Object? gitLfs = sdkOmittedValue, Object? gitProviderOptions = sdkOmittedValue, Object? hasActiveBranches = sdkOmittedValue, Object? hasDeployments = sdkOmittedValue, Object? id = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? internalRoutes = sdkOmittedValue, Object? ipBuckets = sdkOmittedValue, Object? jobs = sdkOmittedValue, Object? lastAliasRequest = sdkOmittedValue, Object? lastRollbackTarget = sdkOmittedValue, Object? latestDeployments = sdkOmittedValue, Object? link = sdkOmittedValue, Object? live = sdkOmittedValue, Object? microfrontends = sdkOmittedValue, Object? name = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? oidcTokenConfig = sdkOmittedValue, Object? optionsAllowlist = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? passiveConnectConfigurationId = sdkOmittedValue, Object? passport = sdkOmittedValue, Object? passwordProtection = sdkOmittedValue, Object? paused = sdkOmittedValue, Object? permissions = sdkOmittedValue, Object? productionDeploymentsFastLane = sdkOmittedValue, Object? protectedSourcemaps = sdkOmittedValue, Object? protectionBypass = sdkOmittedValue, Object? protectionConfig = sdkOmittedValue, Object? resourceConfig = sdkOmittedValue, Object? rollbackDescription = sdkOmittedValue, Object? rollingRelease = sdkOmittedValue, Object? rootDirectory = sdkOmittedValue, Object? sandbox = sdkOmittedValue, Object? security = sdkOmittedValue, Object? serverlessFunctionZeroConfigFailover = sdkOmittedValue, Object? services = sdkOmittedValue, Object? skewProtectionAllowedDomains = sdkOmittedValue, Object? skewProtectionBoundaryAt = sdkOmittedValue, Object? skewProtectionMaxAge = sdkOmittedValue, Object? skipGitConnectDuringLink = sdkOmittedValue, Object? sourceFilesOutsideRootDirectory = sdkOmittedValue, Object? speedInsights = sdkOmittedValue, Object? ssoProtection = sdkOmittedValue, Object? staticIps = sdkOmittedValue, Object? targets = sdkOmittedValue, Object? tier = sdkOmittedValue, Object? tracing = sdkOmittedValue, Object? transferCompletedAt = sdkOmittedValue, Object? transferredFromAccountId = sdkOmittedValue, Object? transferStartedAt = sdkOmittedValue, Object? transferToAccountId = sdkOmittedValue, Object? trustedIps = sdkOmittedValue, Object? trustedSources = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? usageStatus = sdkOmittedValue, Object? v0 = sdkOmittedValue, Object? v0Created = sdkOmittedValue, Object? webAnalytics = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItem(
+    accountId: identical(accountId, sdkOmittedValue) ? this.accountId : accountId as String,
+    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as List<GetMicrofrontendsInGroupResponseProjectsItemAliasItem>,
+    analytics: identical(analytics, sdkOmittedValue) ? this.analytics : analytics as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAnalytics>,
+    appliedCve55182Migration: identical(appliedCve55182Migration, sdkOmittedValue) ? this.appliedCve55182Migration : appliedCve55182Migration as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration>,
+    autoAssignCustomDomains: identical(autoAssignCustomDomains, sdkOmittedValue) ? this.autoAssignCustomDomains : autoAssignCustomDomains as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains>,
+    autoAssignCustomDomainsUpdatedBy: identical(autoAssignCustomDomainsUpdatedBy, sdkOmittedValue) ? this.autoAssignCustomDomainsUpdatedBy : autoAssignCustomDomainsUpdatedBy as SdkOptional<String>,
+    autoExposeSystemEnvs: identical(autoExposeSystemEnvs, sdkOmittedValue) ? this.autoExposeSystemEnvs : autoExposeSystemEnvs as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs>,
+    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String?>,
+    avatarDarkMode: identical(avatarDarkMode, sdkOmittedValue) ? this.avatarDarkMode : avatarDarkMode as SdkOptional<String?>,
+    blobs: identical(blobs, sdkOmittedValue) ? this.blobs : blobs as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemBlobs>,
+    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String?>,
+    commandForIgnoringBuildStep: identical(commandForIgnoringBuildStep, sdkOmittedValue) ? this.commandForIgnoringBuildStep : commandForIgnoringBuildStep as SdkOptional<String?>,
+    concurrencyBucketName: identical(concurrencyBucketName, sdkOmittedValue) ? this.concurrencyBucketName : concurrencyBucketName as SdkOptional<String>,
+    connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue) ? this.connectBuildsEnabled : connectBuildsEnabled as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled>,
+    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as SdkOptional<String?>,
+    connectConfigurations: identical(connectConfigurations, sdkOmittedValue) ? this.connectConfigurations : connectConfigurations as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCreator>,
+    crons: identical(crons, sdkOmittedValue) ? this.crons : crons as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCrons>,
+    customEnvironments: identical(customEnvironments, sdkOmittedValue) ? this.customEnvironments : customEnvironments as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>>,
+    customerSupportCodeVisibility: identical(customerSupportCodeVisibility, sdkOmittedValue) ? this.customerSupportCodeVisibility : customerSupportCodeVisibility as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility>,
+    dataCache: identical(dataCache, sdkOmittedValue) ? this.dataCache : dataCache as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDataCache>,
+    defaultResourceConfig: identical(defaultResourceConfig, sdkOmittedValue) ? this.defaultResourceConfig : defaultResourceConfig as GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig,
+    deploymentExpiration: identical(deploymentExpiration, sdkOmittedValue) ? this.deploymentExpiration : deploymentExpiration as GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration,
+    deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue) ? this.deploymentPolicy : deploymentPolicy as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?>,
+    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String?>,
+    directoryListing: identical(directoryListing, sdkOmittedValue) ? this.directoryListing : directoryListing as GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing,
+    dismissedToasts: identical(dismissedToasts, sdkOmittedValue) ? this.dismissedToasts : dismissedToasts as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>>,
+    enableAffectedProjectsDeployments: identical(enableAffectedProjectsDeployments, sdkOmittedValue) ? this.enableAffectedProjectsDeployments : enableAffectedProjectsDeployments as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments>,
+    enableExternalRewriteCaching: identical(enableExternalRewriteCaching, sdkOmittedValue) ? this.enableExternalRewriteCaching : enableExternalRewriteCaching as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching>,
+    enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue) ? this.enablePreviewFeedback : enablePreviewFeedback as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?>,
+    enableProductionFeedback: identical(enableProductionFeedback, sdkOmittedValue) ? this.enableProductionFeedback : enableProductionFeedback as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?>,
+    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>>,
+    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemExpiration>,
+    features: identical(features, sdkOmittedValue) ? this.features : features as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFeatures>,
+    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemFramework?>,
+    gitComments: identical(gitComments, sdkOmittedValue) ? this.gitComments : gitComments as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitComments>,
+    gitForkProtection: identical(gitForkProtection, sdkOmittedValue) ? this.gitForkProtection : gitForkProtection as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection>,
+    gitLfs: identical(gitLfs, sdkOmittedValue) ? this.gitLfs : gitLfs as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitLFS>,
+    gitProviderOptions: identical(gitProviderOptions, sdkOmittedValue) ? this.gitProviderOptions : gitProviderOptions as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions>,
+    hasActiveBranches: identical(hasActiveBranches, sdkOmittedValue) ? this.hasActiveBranches : hasActiveBranches as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches>,
+    hasDeployments: identical(hasDeployments, sdkOmittedValue) ? this.hasDeployments : hasDeployments as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemHasDeployments>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String?>,
+    internalRoutes: identical(internalRoutes, sdkOmittedValue) ? this.internalRoutes : internalRoutes as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>>,
+    ipBuckets: identical(ipBuckets, sdkOmittedValue) ? this.ipBuckets : ipBuckets as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>>,
+    jobs: identical(jobs, sdkOmittedValue) ? this.jobs : jobs as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemJobs>,
+    lastAliasRequest: identical(lastAliasRequest, sdkOmittedValue) ? this.lastAliasRequest : lastAliasRequest as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?>,
+    lastRollbackTarget: identical(lastRollbackTarget, sdkOmittedValue) ? this.lastRollbackTarget : lastRollbackTarget as SdkOptional<Map<String, dynamic>?>,
+    latestDeployments: identical(latestDeployments, sdkOmittedValue) ? this.latestDeployments : latestDeployments as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>>,
+    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLink>,
+    live: identical(live, sdkOmittedValue) ? this.live : live as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemLive>,
+    microfrontends: identical(microfrontends, sdkOmittedValue) ? this.microfrontends : microfrontends as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as GetMicrofrontendsInGroupResponseProjectsItemNodeVersion,
+    oidcTokenConfig: identical(oidcTokenConfig, sdkOmittedValue) ? this.oidcTokenConfig : oidcTokenConfig as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig>,
+    optionsAllowlist: identical(optionsAllowlist, sdkOmittedValue) ? this.optionsAllowlist : optionsAllowlist as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?>,
+    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String?>,
+    passiveConnectConfigurationId: identical(passiveConnectConfigurationId, sdkOmittedValue) ? this.passiveConnectConfigurationId : passiveConnectConfigurationId as SdkOptional<String?>,
+    passport: identical(passport, sdkOmittedValue) ? this.passport : passport as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPassport?>,
+    passwordProtection: identical(passwordProtection, sdkOmittedValue) ? this.passwordProtection : passwordProtection as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?>,
+    paused: identical(paused, sdkOmittedValue) ? this.paused : paused as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPaused>,
+    permissions: identical(permissions, sdkOmittedValue) ? this.permissions : permissions as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemPermissions>,
+    productionDeploymentsFastLane: identical(productionDeploymentsFastLane, sdkOmittedValue) ? this.productionDeploymentsFastLane : productionDeploymentsFastLane as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane>,
+    protectedSourcemaps: identical(protectedSourcemaps, sdkOmittedValue) ? this.protectedSourcemaps : protectedSourcemaps as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps>,
+    protectionBypass: identical(protectionBypass, sdkOmittedValue) ? this.protectionBypass : protectionBypass as SdkOptional<Map<String, dynamic>>,
+    protectionConfig: identical(protectionConfig, sdkOmittedValue) ? this.protectionConfig : protectionConfig as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig>,
+    resourceConfig: identical(resourceConfig, sdkOmittedValue) ? this.resourceConfig : resourceConfig as GetMicrofrontendsInGroupResponseProjectsItemResourceConfig,
+    rollbackDescription: identical(rollbackDescription, sdkOmittedValue) ? this.rollbackDescription : rollbackDescription as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription>,
+    rollingRelease: identical(rollingRelease, sdkOmittedValue) ? this.rollingRelease : rollingRelease as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?>,
+    rootDirectory: identical(rootDirectory, sdkOmittedValue) ? this.rootDirectory : rootDirectory as SdkOptional<String?>,
+    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSandbox>,
+    security: identical(security, sdkOmittedValue) ? this.security : security as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSecurity>,
+    serverlessFunctionZeroConfigFailover: identical(serverlessFunctionZeroConfigFailover, sdkOmittedValue) ? this.serverlessFunctionZeroConfigFailover : serverlessFunctionZeroConfigFailover as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover>,
+    services: identical(services, sdkOmittedValue) ? this.services : services as SdkOptional<List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>>,
+    skewProtectionAllowedDomains: identical(skewProtectionAllowedDomains, sdkOmittedValue) ? this.skewProtectionAllowedDomains : skewProtectionAllowedDomains as SdkOptional<List<String>>,
+    skewProtectionBoundaryAt: identical(skewProtectionBoundaryAt, sdkOmittedValue) ? this.skewProtectionBoundaryAt : skewProtectionBoundaryAt as SdkOptional<double>,
+    skewProtectionMaxAge: identical(skewProtectionMaxAge, sdkOmittedValue) ? this.skewProtectionMaxAge : skewProtectionMaxAge as SdkOptional<double>,
+    skipGitConnectDuringLink: identical(skipGitConnectDuringLink, sdkOmittedValue) ? this.skipGitConnectDuringLink : skipGitConnectDuringLink as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink>,
+    sourceFilesOutsideRootDirectory: identical(sourceFilesOutsideRootDirectory, sdkOmittedValue) ? this.sourceFilesOutsideRootDirectory : sourceFilesOutsideRootDirectory as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory>,
+    speedInsights: identical(speedInsights, sdkOmittedValue) ? this.speedInsights : speedInsights as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights>,
+    ssoProtection: identical(ssoProtection, sdkOmittedValue) ? this.ssoProtection : ssoProtection as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?>,
+    staticIps: identical(staticIps, sdkOmittedValue) ? this.staticIps : staticIps as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemStaticIps>,
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<Map<String, GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>>,
+    tier: identical(tier, sdkOmittedValue) ? this.tier : tier as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTier>,
+    tracing: identical(tracing, sdkOmittedValue) ? this.tracing : tracing as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTracing>,
+    transferCompletedAt: identical(transferCompletedAt, sdkOmittedValue) ? this.transferCompletedAt : transferCompletedAt as SdkOptional<double>,
+    transferredFromAccountId: identical(transferredFromAccountId, sdkOmittedValue) ? this.transferredFromAccountId : transferredFromAccountId as SdkOptional<String>,
+    transferStartedAt: identical(transferStartedAt, sdkOmittedValue) ? this.transferStartedAt : transferStartedAt as SdkOptional<double>,
+    transferToAccountId: identical(transferToAccountId, sdkOmittedValue) ? this.transferToAccountId : transferToAccountId as SdkOptional<String>,
+    trustedIps: identical(trustedIps, sdkOmittedValue) ? this.trustedIps : trustedIps as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?>,
+    trustedSources: identical(trustedSources, sdkOmittedValue) ? this.trustedSources : trustedSources as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    usageStatus: identical(usageStatus, sdkOmittedValue) ? this.usageStatus : usageStatus as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemUsageStatus>,
+    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0>,
+    v0Created: identical(v0Created, sdkOmittedValue) ? this.v0Created : v0Created as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemV0Created>,
+    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItem(
-        accountId: (json['accountId'] as String?)!,
-        alias: ((json['alias'] as List?)
-            ?.map((e) =>
-                GetMicrofrontendsInGroupResponseProjectsItemAliasItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        analytics: json['analytics'] != null
-            ? SdkPresent((json['analytics'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemAnalytics
-                    .fromJson(json['analytics'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        appliedCve55182Migration: json['appliedCve55182Migration'] != null
-            ? SdkPresent((json['appliedCve55182Migration'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration
-                    .fromJson(json['appliedCve55182Migration'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        autoAssignCustomDomains: json['autoAssignCustomDomains'] != null
-            ? SdkPresent((json['autoAssignCustomDomains'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains
-                    .fromJson(json['autoAssignCustomDomains'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        autoAssignCustomDomainsUpdatedBy:
-            json['autoAssignCustomDomainsUpdatedBy'] != null
-                ? SdkPresent(
-                    (json['autoAssignCustomDomainsUpdatedBy'] as String?)!)
-                : const SdkOmitted(),
-        autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null
-            ? SdkPresent((json['autoExposeSystemEnvs'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs
-                    .fromJson(json['autoExposeSystemEnvs'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        avatar: json.containsKey('avatar')
-            ? SdkPresent(json['avatar'] as String?)
-            : const SdkOmitted(),
-        avatarDarkMode: json.containsKey('avatarDarkMode')
-            ? SdkPresent(json['avatarDarkMode'] as String?)
-            : const SdkOmitted(),
-        blobs: json['blobs'] != null
-            ? SdkPresent((json['blobs'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemBlobs.fromJson(
-                    json['blobs'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        buildCommand: json.containsKey('buildCommand')
-            ? SdkPresent(json['buildCommand'] as String?)
-            : const SdkOmitted(),
-        commandForIgnoringBuildStep:
-            json.containsKey('commandForIgnoringBuildStep')
-                ? SdkPresent(json['commandForIgnoringBuildStep'] as String?)
-                : const SdkOmitted(),
-        concurrencyBucketName: json['concurrencyBucketName'] != null
-            ? SdkPresent((json['concurrencyBucketName'] as String?)!)
-            : const SdkOmitted(),
-        connectBuildsEnabled: json['connectBuildsEnabled'] != null
-            ? SdkPresent((json['connectBuildsEnabled'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled
-                    .fromJson(json['connectBuildsEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        connectConfigurationId: json.containsKey('connectConfigurationId')
-            ? SdkPresent(json['connectConfigurationId'] as String?)
-            : const SdkOmitted(),
-        connectConfigurations: json.containsKey('connectConfigurations')
-            ? SdkPresent((json['connectConfigurations'] as List?)
-                ?.map((e) =>
-                    GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())
-            : const SdkOmitted(),
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        creator: json['creator'] != null
-            ? SdkPresent((json['creator'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemCreator.fromJson(
-                    json['creator'])
-                : null)!)
-            : const SdkOmitted(),
-        crons: json['crons'] != null
-            ? SdkPresent((json['crons'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemCrons.fromJson(
-                    json['crons'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        customEnvironments: json['customEnvironments'] != null
-            ? SdkPresent(((json['customEnvironments'] as List?)
-                ?.map((e) =>
-                    GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        customerSupportCodeVisibility: json['customerSupportCodeVisibility'] !=
-                null
-            ? SdkPresent((json['customerSupportCodeVisibility'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility
-                    .fromJson(json['customerSupportCodeVisibility'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        dataCache: json['dataCache'] != null
-            ? SdkPresent((json['dataCache'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemDataCache
-                    .fromJson(json['dataCache'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        defaultResourceConfig: (json['defaultResourceConfig'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig
-                .fromJson(json['defaultResourceConfig'] as Map<String, dynamic>)
-            : null)!,
-        deploymentExpiration: (json['deploymentExpiration'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration
-                .fromJson(json['deploymentExpiration'] as Map<String, dynamic>)
-            : null)!,
-        deploymentPolicy: json.containsKey('deploymentPolicy')
-            ? SdkPresent(json['deploymentPolicy'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy
-                    .fromJson(json['deploymentPolicy'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        devCommand: json.containsKey('devCommand')
-            ? SdkPresent(json['devCommand'] as String?)
-            : const SdkOmitted(),
-        directoryListing: (json['directoryListing'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing
-                .fromJson(json['directoryListing'] as bool)
-            : null)!,
-        dismissedToasts: json['dismissedToasts'] != null
-            ? SdkPresent(((json['dismissedToasts'] as List?)
-                ?.map((e) =>
-                    GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        enableAffectedProjectsDeployments: json[
-                    'enableAffectedProjectsDeployments'] !=
-                null
-            ? SdkPresent((json['enableAffectedProjectsDeployments'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments
-                    .fromJson(json['enableAffectedProjectsDeployments'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        enableExternalRewriteCaching: json['enableExternalRewriteCaching'] !=
-                null
-            ? SdkPresent((json['enableExternalRewriteCaching'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching
-                    .fromJson(json['enableExternalRewriteCaching'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        enablePreviewFeedback: json.containsKey('enablePreviewFeedback')
-            ? SdkPresent(json['enablePreviewFeedback'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback
-                    .fromJson(json['enablePreviewFeedback'] as bool)
-                : null)
-            : const SdkOmitted(),
-        enableProductionFeedback: json.containsKey('enableProductionFeedback')
-            ? SdkPresent(json['enableProductionFeedback'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback
-                    .fromJson(json['enableProductionFeedback'] as bool)
-                : null)
-            : const SdkOmitted(),
-        env: json['env'] != null
-            ? SdkPresent(((json['env'] as List?)
-                ?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemEnvItem
-                    .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        expiration: json['expiration'] != null
-            ? SdkPresent((json['expiration'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemExpiration
-                    .fromJson(json['expiration'])
-                : null)!)
-            : const SdkOmitted(),
-        features: json['features'] != null
-            ? SdkPresent((json['features'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemFeatures.fromJson(
-                    json['features'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        framework: json.containsKey('framework')
-            ? SdkPresent(json['framework'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemFramework
-                    .fromJson(json['framework'] as String)
-                : null)
-            : const SdkOmitted(),
-        gitComments: json['gitComments'] != null
-            ? SdkPresent((json['gitComments'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemGitComments
-                    .fromJson(json['gitComments'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        gitForkProtection: json['gitForkProtection'] != null
-            ? SdkPresent((json['gitForkProtection'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection
-                    .fromJson(json['gitForkProtection'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        gitLfs: json['gitLFS'] != null
-            ? SdkPresent((json['gitLFS'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemGitLFS.fromJson(
-                    json['gitLFS'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        gitProviderOptions: json['gitProviderOptions'] != null
-            ? SdkPresent((json['gitProviderOptions'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions
-                    .fromJson(
-                        json['gitProviderOptions'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        hasActiveBranches: json['hasActiveBranches'] != null
-            ? SdkPresent((json['hasActiveBranches'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches
-                    .fromJson(json['hasActiveBranches'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        hasDeployments: json['hasDeployments'] != null
-            ? SdkPresent((json['hasDeployments'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemHasDeployments
-                    .fromJson(json['hasDeployments'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        installCommand: json.containsKey('installCommand')
-            ? SdkPresent(json['installCommand'] as String?)
-            : const SdkOmitted(),
-        internalRoutes: json['internalRoutes'] != null
-            ? SdkPresent(((json['internalRoutes'] as List?)
-                ?.map((e) =>
-                    GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem
-                        .fromJson(e))
-                .toList())!)
-            : const SdkOmitted(),
-        ipBuckets: json['ipBuckets'] != null
-            ? SdkPresent(((json['ipBuckets'] as List?)
-                ?.map((e) =>
-                    GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        jobs: json['jobs'] != null
-            ? SdkPresent((json['jobs'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemJobs.fromJson(
-                    json['jobs'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        lastAliasRequest: json.containsKey('lastAliasRequest')
-            ? SdkPresent(json['lastAliasRequest'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest
-                    .fromJson(json['lastAliasRequest'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        lastRollbackTarget: json.containsKey('lastRollbackTarget')
-            ? SdkPresent(json['lastRollbackTarget'] == null
-                ? null
-                : json['lastRollbackTarget'] as Map<String, dynamic>)
-            : const SdkOmitted(),
-        latestDeployments: json['latestDeployments'] != null
-            ? SdkPresent(((json['latestDeployments'] as List?)
-                ?.map((e) =>
-                    GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        link: json['link'] != null
-            ? SdkPresent((json['link'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemLink.fromJson(
-                    json['link'])
-                : null)!)
-            : const SdkOmitted(),
-        live: json['live'] != null
-            ? SdkPresent((json['live'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemLive.fromJson(
-                    json['live'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        microfrontends: json['microfrontends'] != null
-            ? SdkPresent((json['microfrontends'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends
-                    .fromJson(json['microfrontends'])
-                : null)!)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        nodeVersion: (json['nodeVersion'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemNodeVersion.fromJson(
-                json['nodeVersion'] as String)
-            : null)!,
-        oidcTokenConfig: json['oidcTokenConfig'] != null
-            ? SdkPresent((json['oidcTokenConfig'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig
-                    .fromJson(json['oidcTokenConfig'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        optionsAllowlist: json.containsKey('optionsAllowlist')
-            ? SdkPresent(json['optionsAllowlist'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist
-                    .fromJson(json['optionsAllowlist'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        outputDirectory: json.containsKey('outputDirectory')
-            ? SdkPresent(json['outputDirectory'] as String?)
-            : const SdkOmitted(),
-        passiveConnectConfigurationId:
-            json.containsKey('passiveConnectConfigurationId')
-                ? SdkPresent(json['passiveConnectConfigurationId'] as String?)
-                : const SdkOmitted(),
-        passport: json.containsKey('passport')
-            ? SdkPresent(json['passport'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemPassport.fromJson(
-                    json['passport'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        passwordProtection: json.containsKey('passwordProtection')
-            ? SdkPresent(json['passwordProtection'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection
-                    .fromJson(
-                        json['passwordProtection'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        paused: json['paused'] != null
-            ? SdkPresent((json['paused'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemPaused.fromJson(
-                    json['paused'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        permissions: json['permissions'] != null
-            ? SdkPresent((json['permissions'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemPermissions
-                    .fromJson(json['permissions'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        productionDeploymentsFastLane: json['productionDeploymentsFastLane'] !=
-                null
-            ? SdkPresent((json['productionDeploymentsFastLane'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane
-                    .fromJson(json['productionDeploymentsFastLane'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        protectedSourcemaps: json['protectedSourcemaps'] != null
-            ? SdkPresent((json['protectedSourcemaps'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps
-                    .fromJson(json['protectedSourcemaps'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        protectionBypass: json['protectionBypass'] != null
-            ? SdkPresent((json['protectionBypass'] == null
-                ? null
-                : json['protectionBypass'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        protectionConfig: json['protectionConfig'] != null
-            ? SdkPresent((json['protectionConfig'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig
-                    .fromJson(json['protectionConfig'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        resourceConfig: (json['resourceConfig'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfig
-                .fromJson(json['resourceConfig'] as Map<String, dynamic>)
-            : null)!,
-        rollbackDescription: json['rollbackDescription'] != null
-            ? SdkPresent((json['rollbackDescription'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription
-                    .fromJson(
-                        json['rollbackDescription'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        rollingRelease: json.containsKey('rollingRelease')
-            ? SdkPresent(json['rollingRelease'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemRollingRelease
-                    .fromJson(json['rollingRelease'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        rootDirectory: json.containsKey('rootDirectory')
-            ? SdkPresent(json['rootDirectory'] as String?)
-            : const SdkOmitted(),
-        sandbox: json['sandbox'] != null
-            ? SdkPresent((json['sandbox'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemSandbox.fromJson(
-                    json['sandbox'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        security: json['security'] != null
-            ? SdkPresent((json['security'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemSecurity.fromJson(
-                    json['security'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        serverlessFunctionZeroConfigFailover: json[
-                    'serverlessFunctionZeroConfigFailover'] !=
-                null
-            ? SdkPresent((json['serverlessFunctionZeroConfigFailover'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover
-                    .fromJson(
-                        json['serverlessFunctionZeroConfigFailover'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        services: json['services'] != null
-            ? SdkPresent(((json['services'] as List?)
-                ?.map((e) =>
-                    GetMicrofrontendsInGroupResponseProjectsItemServicesItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        skewProtectionAllowedDomains:
-            json['skewProtectionAllowedDomains'] != null
-                ? SdkPresent(((json['skewProtectionAllowedDomains'] as List?)
-                    ?.map((e) => e as String)
-                    .toList())!)
-                : const SdkOmitted(),
-        skewProtectionBoundaryAt: json['skewProtectionBoundaryAt'] != null
-            ? SdkPresent(
-                ((json['skewProtectionBoundaryAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        skewProtectionMaxAge: json['skewProtectionMaxAge'] != null
-            ? SdkPresent(((json['skewProtectionMaxAge'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null
-            ? SdkPresent((json['skipGitConnectDuringLink'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink
-                    .fromJson(json['skipGitConnectDuringLink'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        sourceFilesOutsideRootDirectory: json[
-                    'sourceFilesOutsideRootDirectory'] !=
-                null
-            ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory
-                    .fromJson(json['sourceFilesOutsideRootDirectory'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        speedInsights: json['speedInsights'] != null
-            ? SdkPresent((json['speedInsights'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights
-                    .fromJson(json['speedInsights'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        ssoProtection: json.containsKey('ssoProtection')
-            ? SdkPresent(json['ssoProtection'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemSsoProtection
-                    .fromJson(json['ssoProtection'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        staticIps: json['staticIps'] != null
-            ? SdkPresent((json['staticIps'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemStaticIps
-                    .fromJson(json['staticIps'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        targets: json['targets'] != null
-            ? SdkPresent((json['targets'] == null
-                ? null
-                : Map<String, dynamic>.from(json['targets'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        GetMicrofrontendsInGroupResponseProjectsItemTargetsValue
-                            .fromJson(value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-        tier: json['tier'] != null
-            ? SdkPresent((json['tier'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemTier.fromJson(
-                    json['tier'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        tracing: json['tracing'] != null
-            ? SdkPresent((json['tracing'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemTracing.fromJson(
-                    json['tracing'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        transferCompletedAt: json['transferCompletedAt'] != null
-            ? SdkPresent(((json['transferCompletedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        transferredFromAccountId: json['transferredFromAccountId'] != null
-            ? SdkPresent((json['transferredFromAccountId'] as String?)!)
-            : const SdkOmitted(),
-        transferStartedAt: json['transferStartedAt'] != null
-            ? SdkPresent(((json['transferStartedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        transferToAccountId: json['transferToAccountId'] != null
-            ? SdkPresent((json['transferToAccountId'] as String?)!)
-            : const SdkOmitted(),
-        trustedIps: json.containsKey('trustedIps')
-            ? SdkPresent(json['trustedIps'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIps
-                    .fromJson(json['trustedIps'])
-                : null)
-            : const SdkOmitted(),
-        trustedSources: json.containsKey('trustedSources')
-            ? SdkPresent(json['trustedSources'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSources
-                    .fromJson(json['trustedSources'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        usageStatus: json['usageStatus'] != null
-            ? SdkPresent((json['usageStatus'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemUsageStatus
-                    .fromJson(json['usageStatus'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        v0: json['v0'] != null
-            ? SdkPresent((json['v0'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemV0.fromJson(
-                    json['v0'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        v0Created: json['v0Created'] != null
-            ? SdkPresent((json['v0Created'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemV0Created
-                    .fromJson(json['v0Created'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        webAnalytics: json['webAnalytics'] != null
-            ? SdkPresent((json['webAnalytics'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics
-                    .fromJson(json['webAnalytics'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItem(
+    accountId: (json['accountId'] as String?)!,
+    alias: ((json['alias'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemAliasItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    analytics: json['analytics'] != null ? SdkPresent((json['analytics'] != null ? GetMicrofrontendsInGroupResponseProjectsItemAnalytics.fromJson(json['analytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    appliedCve55182Migration: json['appliedCve55182Migration'] != null ? SdkPresent((json['appliedCve55182Migration'] != null ? GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration.fromJson(json['appliedCve55182Migration'] as bool) : null)!) : const SdkOmitted(),
+    autoAssignCustomDomains: json['autoAssignCustomDomains'] != null ? SdkPresent((json['autoAssignCustomDomains'] != null ? GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains.fromJson(json['autoAssignCustomDomains'] as bool) : null)!) : const SdkOmitted(),
+    autoAssignCustomDomainsUpdatedBy: json['autoAssignCustomDomainsUpdatedBy'] != null ? SdkPresent((json['autoAssignCustomDomainsUpdatedBy'] as String?)!) : const SdkOmitted(),
+    autoExposeSystemEnvs: json['autoExposeSystemEnvs'] != null ? SdkPresent((json['autoExposeSystemEnvs'] != null ? GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs.fromJson(json['autoExposeSystemEnvs'] as bool) : null)!) : const SdkOmitted(),
+    avatar: json.containsKey('avatar') ? SdkPresent(json['avatar'] as String?) : const SdkOmitted(),
+    avatarDarkMode: json.containsKey('avatarDarkMode') ? SdkPresent(json['avatarDarkMode'] as String?) : const SdkOmitted(),
+    blobs: json['blobs'] != null ? SdkPresent((json['blobs'] != null ? GetMicrofrontendsInGroupResponseProjectsItemBlobs.fromJson(json['blobs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    buildCommand: json.containsKey('buildCommand') ? SdkPresent(json['buildCommand'] as String?) : const SdkOmitted(),
+    commandForIgnoringBuildStep: json.containsKey('commandForIgnoringBuildStep') ? SdkPresent(json['commandForIgnoringBuildStep'] as String?) : const SdkOmitted(),
+    concurrencyBucketName: json['concurrencyBucketName'] != null ? SdkPresent((json['concurrencyBucketName'] as String?)!) : const SdkOmitted(),
+    connectBuildsEnabled: json['connectBuildsEnabled'] != null ? SdkPresent((json['connectBuildsEnabled'] != null ? GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled.fromJson(json['connectBuildsEnabled'] as bool) : null)!) : const SdkOmitted(),
+    connectConfigurationId: json.containsKey('connectConfigurationId') ? SdkPresent(json['connectConfigurationId'] as String?) : const SdkOmitted(),
+    connectConfigurations: json.containsKey('connectConfigurations') ? SdkPresent((json['connectConfigurations'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem.fromJson(e as Map<String, dynamic>)).toList()) : const SdkOmitted(),
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    creator: json['creator'] != null ? SdkPresent((json['creator'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCreator.fromJson(json['creator']) : null)!) : const SdkOmitted(),
+    crons: json['crons'] != null ? SdkPresent((json['crons'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCrons.fromJson(json['crons'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    customEnvironments: json['customEnvironments'] != null ? SdkPresent(((json['customEnvironments'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    customerSupportCodeVisibility: json['customerSupportCodeVisibility'] != null ? SdkPresent((json['customerSupportCodeVisibility'] != null ? GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility.fromJson(json['customerSupportCodeVisibility'] as bool) : null)!) : const SdkOmitted(),
+    dataCache: json['dataCache'] != null ? SdkPresent((json['dataCache'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDataCache.fromJson(json['dataCache'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    defaultResourceConfig: (json['defaultResourceConfig'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDefaultResourceConfig.fromJson(json['defaultResourceConfig'] as Map<String, dynamic>) : null)!,
+    deploymentExpiration: (json['deploymentExpiration'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentExpiration.fromJson(json['deploymentExpiration'] as Map<String, dynamic>) : null)!,
+    deploymentPolicy: json.containsKey('deploymentPolicy') ? SdkPresent(json['deploymentPolicy'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy.fromJson(json['deploymentPolicy'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    devCommand: json.containsKey('devCommand') ? SdkPresent(json['devCommand'] as String?) : const SdkOmitted(),
+    directoryListing: (json['directoryListing'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDirectoryListing.fromJson(json['directoryListing'] as bool) : null)!,
+    dismissedToasts: json['dismissedToasts'] != null ? SdkPresent(((json['dismissedToasts'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    enableAffectedProjectsDeployments: json['enableAffectedProjectsDeployments'] != null ? SdkPresent((json['enableAffectedProjectsDeployments'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments.fromJson(json['enableAffectedProjectsDeployments'] as bool) : null)!) : const SdkOmitted(),
+    enableExternalRewriteCaching: json['enableExternalRewriteCaching'] != null ? SdkPresent((json['enableExternalRewriteCaching'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching.fromJson(json['enableExternalRewriteCaching'] as bool) : null)!) : const SdkOmitted(),
+    enablePreviewFeedback: json.containsKey('enablePreviewFeedback') ? SdkPresent(json['enablePreviewFeedback'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback.fromJson(json['enablePreviewFeedback'] as bool) : null) : const SdkOmitted(),
+    enableProductionFeedback: json.containsKey('enableProductionFeedback') ? SdkPresent(json['enableProductionFeedback'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback.fromJson(json['enableProductionFeedback'] as bool) : null) : const SdkOmitted(),
+    env: json['env'] != null ? SdkPresent(((json['env'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemEnvItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    expiration: json['expiration'] != null ? SdkPresent((json['expiration'] != null ? GetMicrofrontendsInGroupResponseProjectsItemExpiration.fromJson(json['expiration']) : null)!) : const SdkOmitted(),
+    features: json['features'] != null ? SdkPresent((json['features'] != null ? GetMicrofrontendsInGroupResponseProjectsItemFeatures.fromJson(json['features'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? GetMicrofrontendsInGroupResponseProjectsItemFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
+    gitComments: json['gitComments'] != null ? SdkPresent((json['gitComments'] != null ? GetMicrofrontendsInGroupResponseProjectsItemGitComments.fromJson(json['gitComments'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    gitForkProtection: json['gitForkProtection'] != null ? SdkPresent((json['gitForkProtection'] != null ? GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection.fromJson(json['gitForkProtection'] as bool) : null)!) : const SdkOmitted(),
+    gitLfs: json['gitLFS'] != null ? SdkPresent((json['gitLFS'] != null ? GetMicrofrontendsInGroupResponseProjectsItemGitLFS.fromJson(json['gitLFS'] as bool) : null)!) : const SdkOmitted(),
+    gitProviderOptions: json['gitProviderOptions'] != null ? SdkPresent((json['gitProviderOptions'] != null ? GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions.fromJson(json['gitProviderOptions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    hasActiveBranches: json['hasActiveBranches'] != null ? SdkPresent((json['hasActiveBranches'] != null ? GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches.fromJson(json['hasActiveBranches'] as bool) : null)!) : const SdkOmitted(),
+    hasDeployments: json['hasDeployments'] != null ? SdkPresent((json['hasDeployments'] != null ? GetMicrofrontendsInGroupResponseProjectsItemHasDeployments.fromJson(json['hasDeployments'] as bool) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    installCommand: json.containsKey('installCommand') ? SdkPresent(json['installCommand'] as String?) : const SdkOmitted(),
+    internalRoutes: json['internalRoutes'] != null ? SdkPresent(((json['internalRoutes'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem.fromJson(e)).toList())!) : const SdkOmitted(),
+    ipBuckets: json['ipBuckets'] != null ? SdkPresent(((json['ipBuckets'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    jobs: json['jobs'] != null ? SdkPresent((json['jobs'] != null ? GetMicrofrontendsInGroupResponseProjectsItemJobs.fromJson(json['jobs'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    lastAliasRequest: json.containsKey('lastAliasRequest') ? SdkPresent(json['lastAliasRequest'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest.fromJson(json['lastAliasRequest'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    lastRollbackTarget: json.containsKey('lastRollbackTarget') ? SdkPresent(json['lastRollbackTarget'] == null ? null : json['lastRollbackTarget'] as Map<String, dynamic>) : const SdkOmitted(),
+    latestDeployments: json['latestDeployments'] != null ? SdkPresent(((json['latestDeployments'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    link: json['link'] != null ? SdkPresent((json['link'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLink.fromJson(json['link']) : null)!) : const SdkOmitted(),
+    live: json['live'] != null ? SdkPresent((json['live'] != null ? GetMicrofrontendsInGroupResponseProjectsItemLive.fromJson(json['live'] as bool) : null)!) : const SdkOmitted(),
+    microfrontends: json['microfrontends'] != null ? SdkPresent((json['microfrontends'] != null ? GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends.fromJson(json['microfrontends']) : null)!) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    nodeVersion: (json['nodeVersion'] != null ? GetMicrofrontendsInGroupResponseProjectsItemNodeVersion.fromJson(json['nodeVersion'] as String) : null)!,
+    oidcTokenConfig: json['oidcTokenConfig'] != null ? SdkPresent((json['oidcTokenConfig'] != null ? GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig.fromJson(json['oidcTokenConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    optionsAllowlist: json.containsKey('optionsAllowlist') ? SdkPresent(json['optionsAllowlist'] != null ? GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist.fromJson(json['optionsAllowlist'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    outputDirectory: json.containsKey('outputDirectory') ? SdkPresent(json['outputDirectory'] as String?) : const SdkOmitted(),
+    passiveConnectConfigurationId: json.containsKey('passiveConnectConfigurationId') ? SdkPresent(json['passiveConnectConfigurationId'] as String?) : const SdkOmitted(),
+    passport: json.containsKey('passport') ? SdkPresent(json['passport'] != null ? GetMicrofrontendsInGroupResponseProjectsItemPassport.fromJson(json['passport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    passwordProtection: json.containsKey('passwordProtection') ? SdkPresent(json['passwordProtection'] != null ? GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection.fromJson(json['passwordProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    paused: json['paused'] != null ? SdkPresent((json['paused'] != null ? GetMicrofrontendsInGroupResponseProjectsItemPaused.fromJson(json['paused'] as bool) : null)!) : const SdkOmitted(),
+    permissions: json['permissions'] != null ? SdkPresent((json['permissions'] != null ? GetMicrofrontendsInGroupResponseProjectsItemPermissions.fromJson(json['permissions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    productionDeploymentsFastLane: json['productionDeploymentsFastLane'] != null ? SdkPresent((json['productionDeploymentsFastLane'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane.fromJson(json['productionDeploymentsFastLane'] as bool) : null)!) : const SdkOmitted(),
+    protectedSourcemaps: json['protectedSourcemaps'] != null ? SdkPresent((json['protectedSourcemaps'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps.fromJson(json['protectedSourcemaps'] as bool) : null)!) : const SdkOmitted(),
+    protectionBypass: json['protectionBypass'] != null ? SdkPresent((json['protectionBypass'] == null ? null : json['protectionBypass'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    protectionConfig: json['protectionConfig'] != null ? SdkPresent((json['protectionConfig'] != null ? GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig.fromJson(json['protectionConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    resourceConfig: (json['resourceConfig'] != null ? GetMicrofrontendsInGroupResponseProjectsItemResourceConfig.fromJson(json['resourceConfig'] as Map<String, dynamic>) : null)!,
+    rollbackDescription: json['rollbackDescription'] != null ? SdkPresent((json['rollbackDescription'] != null ? GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription.fromJson(json['rollbackDescription'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    rollingRelease: json.containsKey('rollingRelease') ? SdkPresent(json['rollingRelease'] != null ? GetMicrofrontendsInGroupResponseProjectsItemRollingRelease.fromJson(json['rollingRelease'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    rootDirectory: json.containsKey('rootDirectory') ? SdkPresent(json['rootDirectory'] as String?) : const SdkOmitted(),
+    sandbox: json['sandbox'] != null ? SdkPresent((json['sandbox'] != null ? GetMicrofrontendsInGroupResponseProjectsItemSandbox.fromJson(json['sandbox'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    security: json['security'] != null ? SdkPresent((json['security'] != null ? GetMicrofrontendsInGroupResponseProjectsItemSecurity.fromJson(json['security'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    serverlessFunctionZeroConfigFailover: json['serverlessFunctionZeroConfigFailover'] != null ? SdkPresent((json['serverlessFunctionZeroConfigFailover'] != null ? GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover.fromJson(json['serverlessFunctionZeroConfigFailover'] as bool) : null)!) : const SdkOmitted(),
+    services: json['services'] != null ? SdkPresent(((json['services'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemServicesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    skewProtectionAllowedDomains: json['skewProtectionAllowedDomains'] != null ? SdkPresent(((json['skewProtectionAllowedDomains'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    skewProtectionBoundaryAt: json['skewProtectionBoundaryAt'] != null ? SdkPresent(((json['skewProtectionBoundaryAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    skewProtectionMaxAge: json['skewProtectionMaxAge'] != null ? SdkPresent(((json['skewProtectionMaxAge'] as num?)?.toDouble())!) : const SdkOmitted(),
+    skipGitConnectDuringLink: json['skipGitConnectDuringLink'] != null ? SdkPresent((json['skipGitConnectDuringLink'] != null ? GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink.fromJson(json['skipGitConnectDuringLink'] as bool) : null)!) : const SdkOmitted(),
+    sourceFilesOutsideRootDirectory: json['sourceFilesOutsideRootDirectory'] != null ? SdkPresent((json['sourceFilesOutsideRootDirectory'] != null ? GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory.fromJson(json['sourceFilesOutsideRootDirectory'] as bool) : null)!) : const SdkOmitted(),
+    speedInsights: json['speedInsights'] != null ? SdkPresent((json['speedInsights'] != null ? GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights.fromJson(json['speedInsights'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    ssoProtection: json.containsKey('ssoProtection') ? SdkPresent(json['ssoProtection'] != null ? GetMicrofrontendsInGroupResponseProjectsItemSsoProtection.fromJson(json['ssoProtection'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    staticIps: json['staticIps'] != null ? SdkPresent((json['staticIps'] != null ? GetMicrofrontendsInGroupResponseProjectsItemStaticIps.fromJson(json['staticIps'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    targets: json['targets'] != null ? SdkPresent((json['targets'] == null ? null : Map<String, dynamic>.from(json['targets'] as Map).map((key, value) => MapEntry(key, GetMicrofrontendsInGroupResponseProjectsItemTargetsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+    tier: json['tier'] != null ? SdkPresent((json['tier'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTier.fromJson(json['tier'] as String) : null)!) : const SdkOmitted(),
+    tracing: json['tracing'] != null ? SdkPresent((json['tracing'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTracing.fromJson(json['tracing'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    transferCompletedAt: json['transferCompletedAt'] != null ? SdkPresent(((json['transferCompletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    transferredFromAccountId: json['transferredFromAccountId'] != null ? SdkPresent((json['transferredFromAccountId'] as String?)!) : const SdkOmitted(),
+    transferStartedAt: json['transferStartedAt'] != null ? SdkPresent(((json['transferStartedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    transferToAccountId: json['transferToAccountId'] != null ? SdkPresent((json['transferToAccountId'] as String?)!) : const SdkOmitted(),
+    trustedIps: json.containsKey('trustedIps') ? SdkPresent(json['trustedIps'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedIps.fromJson(json['trustedIps']) : null) : const SdkOmitted(),
+    trustedSources: json.containsKey('trustedSources') ? SdkPresent(json['trustedSources'] != null ? GetMicrofrontendsInGroupResponseProjectsItemTrustedSources.fromJson(json['trustedSources'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    usageStatus: json['usageStatus'] != null ? SdkPresent((json['usageStatus'] != null ? GetMicrofrontendsInGroupResponseProjectsItemUsageStatus.fromJson(json['usageStatus'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? GetMicrofrontendsInGroupResponseProjectsItemV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
+    v0Created: json['v0Created'] != null ? SdkPresent((json['v0Created'] != null ? GetMicrofrontendsInGroupResponseProjectsItemV0Created.fromJson(json['v0Created'] as bool) : null)!) : const SdkOmitted(),
+    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics.fromJson(json['webAnalytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'accountId': accountId,
-        'alias': alias.map((item) => item.toJson()).toList(),
-        ...switch (analytics) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemAnalytics>(
-            value: final value
-          ) =>
-            {
-              'analytics': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (appliedCve55182Migration) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration>(
-            value: final value
-          ) =>
-            {
-              'appliedCve55182Migration': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (autoAssignCustomDomains) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains>(
-            value: final value
-          ) =>
-            {
-              'autoAssignCustomDomains': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (autoAssignCustomDomainsUpdatedBy) {
-          SdkPresent<String>(value: final value) => {
-              'autoAssignCustomDomainsUpdatedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (autoExposeSystemEnvs) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs>(
-            value: final value
-          ) =>
-            {
-              'autoExposeSystemEnvs': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (avatar) {
-          SdkPresent<String?>(value: final value) => {
-              'avatar': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (avatarDarkMode) {
-          SdkPresent<String?>(value: final value) => {
-              'avatarDarkMode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (blobs) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemBlobs>(
-            value: final value
-          ) =>
-            {
-              'blobs': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildCommand) {
-          SdkPresent<String?>(value: final value) => {
-              'buildCommand': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (commandForIgnoringBuildStep) {
-          SdkPresent<String?>(value: final value) => {
-              'commandForIgnoringBuildStep': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (concurrencyBucketName) {
-          SdkPresent<String>(value: final value) => {
-              'concurrencyBucketName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectBuildsEnabled) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled>(
-            value: final value
-          ) =>
-            {
-              'connectBuildsEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectConfigurationId) {
-          SdkPresent<String?>(value: final value) => {
-              'connectConfigurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectConfigurations) {
-          SdkPresent<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?>(
-            value: final value
-          ) =>
-            {
-              'connectConfigurations':
-                  value?.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (creator) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemCreator>(
-            value: final value
-          ) =>
-            {
-              'creator': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (crons) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemCrons>(
-            value: final value
-          ) =>
-            {
-              'crons': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironments) {
-          SdkPresent<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>>(
-            value: final value
-          ) =>
-            {
-              'customEnvironments': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customerSupportCodeVisibility) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility>(
-            value: final value
-          ) =>
-            {
-              'customerSupportCodeVisibility': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (dataCache) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemDataCache>(
-            value: final value
-          ) =>
-            {
-              'dataCache': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'defaultResourceConfig': defaultResourceConfig.toJson(),
-        'deploymentExpiration': deploymentExpiration.toJson(),
-        ...switch (deploymentPolicy) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?>(
-            value: final value
-          ) =>
-            {
-              'deploymentPolicy': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (devCommand) {
-          SdkPresent<String?>(value: final value) => {
-              'devCommand': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'directoryListing': directoryListing.toJson(),
-        ...switch (dismissedToasts) {
-          SdkPresent<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>>(
-            value: final value
-          ) =>
-            {
-              'dismissedToasts': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enableAffectedProjectsDeployments) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments>(
-            value: final value
-          ) =>
-            {
-              'enableAffectedProjectsDeployments': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enableExternalRewriteCaching) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching>(
-            value: final value
-          ) =>
-            {
-              'enableExternalRewriteCaching': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enablePreviewFeedback) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?>(
-            value: final value
-          ) =>
-            {
-              'enablePreviewFeedback': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enableProductionFeedback) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?>(
-            value: final value
-          ) =>
-            {
-              'enableProductionFeedback': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (env) {
-          SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>>(
-            value: final value
-          ) =>
-            {
-              'env': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (expiration) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemExpiration>(
-            value: final value
-          ) =>
-            {
-              'expiration': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (features) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemFeatures>(
-            value: final value
-          ) =>
-            {
-              'features': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (framework) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemFramework?>(
-            value: final value
-          ) =>
-            {
-              'framework': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitComments) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemGitComments>(
-            value: final value
-          ) =>
-            {
-              'gitComments': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitForkProtection) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection>(
-            value: final value
-          ) =>
-            {
-              'gitForkProtection': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitLfs) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemGitLFS>(
-            value: final value
-          ) =>
-            {
-              'gitLFS': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitProviderOptions) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions>(
-            value: final value
-          ) =>
-            {
-              'gitProviderOptions': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hasActiveBranches) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches>(
-            value: final value
-          ) =>
-            {
-              'hasActiveBranches': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hasDeployments) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemHasDeployments>(
-            value: final value
-          ) =>
-            {
-              'hasDeployments': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (installCommand) {
-          SdkPresent<String?>(value: final value) => {
-              'installCommand': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (internalRoutes) {
-          SdkPresent<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>>(
-            value: final value
-          ) =>
-            {
-              'internalRoutes': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ipBuckets) {
-          SdkPresent<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>>(
-            value: final value
-          ) =>
-            {
-              'ipBuckets': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (jobs) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemJobs>(
-            value: final value
-          ) =>
-            {
-              'jobs': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lastAliasRequest) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?>(
-            value: final value
-          ) =>
-            {
-              'lastAliasRequest': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lastRollbackTarget) {
-          SdkPresent<Map<String, dynamic>?>(value: final value) => {
-              'lastRollbackTarget': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (latestDeployments) {
-          SdkPresent<
-                List<
-                    GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>>(
-            value: final value
-          ) =>
-            {
-              'latestDeployments': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (link) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLink>(
-            value: final value
-          ) =>
-            {
-              'link': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (live) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLive>(
-            value: final value
-          ) =>
-            {
-              'live': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (microfrontends) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends>(
-            value: final value
-          ) =>
-            {
-              'microfrontends': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        'nodeVersion': nodeVersion.toJson(),
-        ...switch (oidcTokenConfig) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig>(
-            value: final value
-          ) =>
-            {
-              'oidcTokenConfig': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (optionsAllowlist) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?>(
-            value: final value
-          ) =>
-            {
-              'optionsAllowlist': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (outputDirectory) {
-          SdkPresent<String?>(value: final value) => {
-              'outputDirectory': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (passiveConnectConfigurationId) {
-          SdkPresent<String?>(value: final value) => {
-              'passiveConnectConfigurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (passport) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemPassport?>(
-            value: final value
-          ) =>
-            {
-              'passport': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (passwordProtection) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?>(
-            value: final value
-          ) =>
-            {
-              'passwordProtection': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (paused) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemPaused>(
-            value: final value
-          ) =>
-            {
-              'paused': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (permissions) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemPermissions>(
-            value: final value
-          ) =>
-            {
-              'permissions': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (productionDeploymentsFastLane) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane>(
-            value: final value
-          ) =>
-            {
-              'productionDeploymentsFastLane': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (protectedSourcemaps) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps>(
-            value: final value
-          ) =>
-            {
-              'protectedSourcemaps': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (protectionBypass) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'protectionBypass': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (protectionConfig) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig>(
-            value: final value
-          ) =>
-            {
-              'protectionConfig': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'resourceConfig': resourceConfig.toJson(),
-        ...switch (rollbackDescription) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription>(
-            value: final value
-          ) =>
-            {
-              'rollbackDescription': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rollingRelease) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?>(
-            value: final value
-          ) =>
-            {
-              'rollingRelease': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rootDirectory) {
-          SdkPresent<String?>(value: final value) => {
-              'rootDirectory': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sandbox) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSandbox>(
-            value: final value
-          ) =>
-            {
-              'sandbox': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (security) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSecurity>(
-            value: final value
-          ) =>
-            {
-              'security': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (serverlessFunctionZeroConfigFailover) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover>(
-            value: final value
-          ) =>
-            {
-              'serverlessFunctionZeroConfigFailover': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (services) {
-          SdkPresent<
-                List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>>(
-            value: final value
-          ) =>
-            {
-              'services': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (skewProtectionAllowedDomains) {
-          SdkPresent<List<String>>(value: final value) => {
-              'skewProtectionAllowedDomains': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (skewProtectionBoundaryAt) {
-          SdkPresent<double>(value: final value) => {
-              'skewProtectionBoundaryAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (skewProtectionMaxAge) {
-          SdkPresent<double>(value: final value) => {
-              'skewProtectionMaxAge': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (skipGitConnectDuringLink) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink>(
-            value: final value
-          ) =>
-            {
-              'skipGitConnectDuringLink': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sourceFilesOutsideRootDirectory) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory>(
-            value: final value
-          ) =>
-            {
-              'sourceFilesOutsideRootDirectory': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (speedInsights) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights>(
-            value: final value
-          ) =>
-            {
-              'speedInsights': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ssoProtection) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?>(
-            value: final value
-          ) =>
-            {
-              'ssoProtection': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (staticIps) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemStaticIps>(
-            value: final value
-          ) =>
-            {
-              'staticIps': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (targets) {
-          SdkPresent<
-                Map<String,
-                    GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>>(
-            value: final value
-          ) =>
-            {
-              'targets':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (tier) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTier>(
-            value: final value
-          ) =>
-            {
-              'tier': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (tracing) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTracing>(
-            value: final value
-          ) =>
-            {
-              'tracing': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transferCompletedAt) {
-          SdkPresent<double>(value: final value) => {
-              'transferCompletedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transferredFromAccountId) {
-          SdkPresent<String>(value: final value) => {
-              'transferredFromAccountId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transferStartedAt) {
-          SdkPresent<double>(value: final value) => {
-              'transferStartedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transferToAccountId) {
-          SdkPresent<String>(value: final value) => {
-              'transferToAccountId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (trustedIps) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?>(
-            value: final value
-          ) =>
-            {
-              'trustedIps': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (trustedSources) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?>(
-            value: final value
-          ) =>
-            {
-              'trustedSources': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (usageStatus) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemUsageStatus>(
-            value: final value
-          ) =>
-            {
-              'usageStatus': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (v0) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemV0>(
-            value: final value
-          ) =>
-            {
-              'v0': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (v0Created) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemV0Created>(
-            value: final value
-          ) =>
-            {
-              'v0Created': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (webAnalytics) {
-          SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics>(
-            value: final value
-          ) =>
-            {
-              'webAnalytics': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'accountId': accountId,
+    'alias': alias.map((item) => item.toJson()).toList(),
+    ...switch (analytics) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemAnalytics>(value: final value) => {'analytics': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (appliedCve55182Migration) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemAppliedCve55182Migration>(value: final value) => {'appliedCve55182Migration': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (autoAssignCustomDomains) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemAutoAssignCustomDomains>(value: final value) => {'autoAssignCustomDomains': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (autoAssignCustomDomainsUpdatedBy) {
+      SdkPresent<String>(value: final value) => {'autoAssignCustomDomainsUpdatedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (autoExposeSystemEnvs) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemAutoExposeSystemEnvs>(value: final value) => {'autoExposeSystemEnvs': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (avatar) {
+      SdkPresent<String?>(value: final value) => {'avatar': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (avatarDarkMode) {
+      SdkPresent<String?>(value: final value) => {'avatarDarkMode': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (blobs) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemBlobs>(value: final value) => {'blobs': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildCommand) {
+      SdkPresent<String?>(value: final value) => {'buildCommand': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (commandForIgnoringBuildStep) {
+      SdkPresent<String?>(value: final value) => {'commandForIgnoringBuildStep': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (concurrencyBucketName) {
+      SdkPresent<String>(value: final value) => {'concurrencyBucketName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectBuildsEnabled) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemConnectBuildsEnabled>(value: final value) => {'connectBuildsEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectConfigurationId) {
+      SdkPresent<String?>(value: final value) => {'connectConfigurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectConfigurations) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemConnectConfigurationsItem>?>(value: final value) => {'connectConfigurations': value?.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (creator) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemCreator>(value: final value) => {'creator': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (crons) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemCrons>(value: final value) => {'crons': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironments) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemCustomEnvironmentsItem>>(value: final value) => {'customEnvironments': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customerSupportCodeVisibility) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemCustomerSupportCodeVisibility>(value: final value) => {'customerSupportCodeVisibility': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (dataCache) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemDataCache>(value: final value) => {'dataCache': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'defaultResourceConfig': defaultResourceConfig.toJson(),
+    'deploymentExpiration': deploymentExpiration.toJson(),
+    ...switch (deploymentPolicy) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicy?>(value: final value) => {'deploymentPolicy': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (devCommand) {
+      SdkPresent<String?>(value: final value) => {'devCommand': value,},
+      _ => const <String, dynamic>{},
+    },
+    'directoryListing': directoryListing.toJson(),
+    ...switch (dismissedToasts) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItem>>(value: final value) => {'dismissedToasts': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enableAffectedProjectsDeployments) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnableAffectedProjectsDeployments>(value: final value) => {'enableAffectedProjectsDeployments': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enableExternalRewriteCaching) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnableExternalRewriteCaching>(value: final value) => {'enableExternalRewriteCaching': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enablePreviewFeedback) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnablePreviewFeedback?>(value: final value) => {'enablePreviewFeedback': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enableProductionFeedback) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemEnableProductionFeedback?>(value: final value) => {'enableProductionFeedback': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (env) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemEnvItem>>(value: final value) => {'env': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (expiration) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemExpiration>(value: final value) => {'expiration': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (features) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemFeatures>(value: final value) => {'features': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (framework) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemFramework?>(value: final value) => {'framework': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitComments) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemGitComments>(value: final value) => {'gitComments': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitForkProtection) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection>(value: final value) => {'gitForkProtection': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitLfs) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemGitLFS>(value: final value) => {'gitLFS': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitProviderOptions) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptions>(value: final value) => {'gitProviderOptions': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hasActiveBranches) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemHasActiveBranches>(value: final value) => {'hasActiveBranches': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hasDeployments) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemHasDeployments>(value: final value) => {'hasDeployments': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (installCommand) {
+      SdkPresent<String?>(value: final value) => {'installCommand': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (internalRoutes) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem>>(value: final value) => {'internalRoutes': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ipBuckets) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemIpBucketsItem>>(value: final value) => {'ipBuckets': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (jobs) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemJobs>(value: final value) => {'jobs': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lastAliasRequest) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLastAliasRequest?>(value: final value) => {'lastAliasRequest': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lastRollbackTarget) {
+      SdkPresent<Map<String, dynamic>?>(value: final value) => {'lastRollbackTarget': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (latestDeployments) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemLatestDeploymentsItem>>(value: final value) => {'latestDeployments': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (link) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLink>(value: final value) => {'link': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (live) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemLive>(value: final value) => {'live': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (microfrontends) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemMicrofrontends>(value: final value) => {'microfrontends': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    'nodeVersion': nodeVersion.toJson(),
+    ...switch (oidcTokenConfig) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig>(value: final value) => {'oidcTokenConfig': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (optionsAllowlist) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist?>(value: final value) => {'optionsAllowlist': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (outputDirectory) {
+      SdkPresent<String?>(value: final value) => {'outputDirectory': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (passiveConnectConfigurationId) {
+      SdkPresent<String?>(value: final value) => {'passiveConnectConfigurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (passport) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemPassport?>(value: final value) => {'passport': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (passwordProtection) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection?>(value: final value) => {'passwordProtection': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (paused) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemPaused>(value: final value) => {'paused': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (permissions) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemPermissions>(value: final value) => {'permissions': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (productionDeploymentsFastLane) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemProductionDeploymentsFastLane>(value: final value) => {'productionDeploymentsFastLane': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (protectedSourcemaps) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemProtectedSourcemaps>(value: final value) => {'protectedSourcemaps': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (protectionBypass) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'protectionBypass': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (protectionConfig) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemProtectionConfig>(value: final value) => {'protectionConfig': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'resourceConfig': resourceConfig.toJson(),
+    ...switch (rollbackDescription) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemRollbackDescription>(value: final value) => {'rollbackDescription': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rollingRelease) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemRollingRelease?>(value: final value) => {'rollingRelease': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rootDirectory) {
+      SdkPresent<String?>(value: final value) => {'rootDirectory': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sandbox) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSandbox>(value: final value) => {'sandbox': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (security) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSecurity>(value: final value) => {'security': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (serverlessFunctionZeroConfigFailover) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemServerlessFunctionZeroConfigFailover>(value: final value) => {'serverlessFunctionZeroConfigFailover': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (services) {
+      SdkPresent<List<GetMicrofrontendsInGroupResponseProjectsItemServicesItem>>(value: final value) => {'services': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (skewProtectionAllowedDomains) {
+      SdkPresent<List<String>>(value: final value) => {'skewProtectionAllowedDomains': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (skewProtectionBoundaryAt) {
+      SdkPresent<double>(value: final value) => {'skewProtectionBoundaryAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (skewProtectionMaxAge) {
+      SdkPresent<double>(value: final value) => {'skewProtectionMaxAge': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (skipGitConnectDuringLink) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSkipGitConnectDuringLink>(value: final value) => {'skipGitConnectDuringLink': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sourceFilesOutsideRootDirectory) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSourceFilesOutsideRootDirectory>(value: final value) => {'sourceFilesOutsideRootDirectory': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (speedInsights) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSpeedInsights>(value: final value) => {'speedInsights': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ssoProtection) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemSsoProtection?>(value: final value) => {'ssoProtection': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (staticIps) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemStaticIps>(value: final value) => {'staticIps': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (targets) {
+      SdkPresent<Map<String, GetMicrofrontendsInGroupResponseProjectsItemTargetsValue>>(value: final value) => {'targets': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (tier) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTier>(value: final value) => {'tier': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (tracing) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTracing>(value: final value) => {'tracing': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transferCompletedAt) {
+      SdkPresent<double>(value: final value) => {'transferCompletedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transferredFromAccountId) {
+      SdkPresent<String>(value: final value) => {'transferredFromAccountId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transferStartedAt) {
+      SdkPresent<double>(value: final value) => {'transferStartedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transferToAccountId) {
+      SdkPresent<String>(value: final value) => {'transferToAccountId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (trustedIps) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTrustedIps?>(value: final value) => {'trustedIps': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (trustedSources) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemTrustedSources?>(value: final value) => {'trustedSources': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (usageStatus) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemUsageStatus>(value: final value) => {'usageStatus': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (v0) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemV0>(value: final value) => {'v0': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (v0Created) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemV0Created>(value: final value) => {'v0Created': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (webAnalytics) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

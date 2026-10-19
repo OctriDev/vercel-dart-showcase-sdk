@@ -10,44 +10,24 @@ class UpdateMicrofrontendsResponseCreatorVariant2 {
   final UpdateMicrofrontendsResponseCreatorVariant2Integration integration;
   final UpdateMicrofrontendsResponseCreatorVariant2Type type_;
 
-  const UpdateMicrofrontendsResponseCreatorVariant2(
-      {required this.integration, required this.type_});
+  const UpdateMicrofrontendsResponseCreatorVariant2({required this.integration, required this.type_});
 
-  UpdateMicrofrontendsResponseCreatorVariant2 Function(
-          {UpdateMicrofrontendsResponseCreatorVariant2Integration integration,
-          UpdateMicrofrontendsResponseCreatorVariant2Type type_})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant2 Function({UpdateMicrofrontendsResponseCreatorVariant2Integration integration, UpdateMicrofrontendsResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant2 _copyWith(
-          {Object? integration = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant2(
-        integration: identical(integration, sdkOmittedValue)
-            ? this.integration
-            : integration
-                as UpdateMicrofrontendsResponseCreatorVariant2Integration,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateMicrofrontendsResponseCreatorVariant2Type,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant2(
+    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as UpdateMicrofrontendsResponseCreatorVariant2Integration,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant2Type,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant2(
-        integration: (json['integration'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant2Integration.fromJson(
-                json['integration'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant2(
+    integration: (json['integration'] != null ? UpdateMicrofrontendsResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'integration': integration.toJson(),
-        'type': type_.toJson(),
-      };
+    'integration': integration.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant3 {
@@ -57,30 +37,19 @@ class UpdateMicrofrontendsResponseCreatorVariant3 {
 
   const UpdateMicrofrontendsResponseCreatorVariant3({required this.type_});
 
-  UpdateMicrofrontendsResponseCreatorVariant3 Function(
-          {UpdateMicrofrontendsResponseCreatorVariant3Type type_})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant3 Function({UpdateMicrofrontendsResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant3 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant3(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateMicrofrontendsResponseCreatorVariant3Type,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant3(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant3Type,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant3(
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant3(
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 sealed class UpdateMicrofrontendsResponseCreator {
@@ -89,413 +58,200 @@ sealed class UpdateMicrofrontendsResponseCreator {
   const UpdateMicrofrontendsResponseCreator();
   factory UpdateMicrofrontendsResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateMicrofrontendsResponseCreatorVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateMicrofrontendsResponseCreatorVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateMicrofrontendsResponseCreatorVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateMicrofrontendsResponseCreatorVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(value); } } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(value); } } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(value); } } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(value); } } catch (_) {}
     }
-    try {
-      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(
-          UpdateMicrofrontendsResponseCreatorVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(
-          UpdateMicrofrontendsResponseCreatorVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(
-          UpdateMicrofrontendsResponseCreatorVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(
-          UpdateMicrofrontendsResponseCreatorVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateMicrofrontendsResponseCreator");
+    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(UpdateMicrofrontendsResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(UpdateMicrofrontendsResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(UpdateMicrofrontendsResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(UpdateMicrofrontendsResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateMicrofrontendsResponseCreator");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0
-    extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0 extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant0 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1
-    extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1 extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant1 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2
-    extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2 extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant2 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3
-    extends UpdateMicrofrontendsResponseCreator {
+final class UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3 extends UpdateMicrofrontendsResponseCreator {
   final UpdateMicrofrontendsResponseCreatorVariant3 value;
-  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorUpdateMicrofrontendsResponseCreatorVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-      target;
-  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-      type_;
+  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target target;
+  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type type_;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-      {required this.target, required this.type_});
+  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0({required this.target, required this.type_});
 
-  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 Function(
-      {UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          target,
-      UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-          type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 Function({UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target target, UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
-      _copyWith(
-              {Object? target = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-            target: identical(target, sdkOmittedValue)
-                ? this.target
-                : target
-                    as UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type,
-          );
+  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 _copyWith({Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+    target: identical(target, sdkOmittedValue) ? this.target : target as UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type,
+  );
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-        target: (json['target'] != null
-            ? UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-                .fromJson(json['target'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
+    target: (json['target'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(json['target'] as String) : null)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'target': target.toJson(),
-        'type': type_.toJson(),
-      };
+    'target': target.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String environmentId;
-  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-      type_;
+  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type type_;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-      {required this.environmentId, required this.type_});
+  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1({required this.environmentId, required this.type_});
 
-  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 Function(
-      {String environmentId,
-      UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-          type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 Function({String environmentId, UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
-      _copyWith(
-              {Object? environmentId = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-            environmentId: identical(environmentId, sdkOmittedValue)
-                ? this.environmentId
-                : environmentId as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type,
-          );
+  UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 _copyWith({Object? environmentId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+    environmentId: identical(environmentId, sdkOmittedValue) ? this.environmentId : environmentId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type,
+  );
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-        environmentId: (json['environmentId'] as String?)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
+    environmentId: (json['environmentId'] as String?)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'environmentId': environmentId,
-        'type': type_.toJson(),
-      };
+    'environmentId': environmentId,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem();
-  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem.fromJson(
-      Object? json) {
+  factory UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(value); } } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(value); } } catch (_) {}
     }
-    try {
-      return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-          UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-          UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem");
+    try { return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
-    extends UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
-  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0
-      value;
-  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 extends UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
+  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0 value;
+  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
-    extends UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
-  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1
-      value;
-  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 extends UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItem {
+  final UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1 value;
+  const UpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-      target;
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-      type_;
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target target;
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type type_;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-      {required this.target, required this.type_});
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0({required this.target, required this.type_});
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 Function(
-      {UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          target,
-      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-          type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 Function({UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target target, UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
-      _copyWith(
-              {Object? target = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-            target: identical(target, sdkOmittedValue)
-                ? this.target
-                : target
-                    as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type,
-          );
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 _copyWith({Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+    target: identical(target, sdkOmittedValue) ? this.target : target as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type,
+  );
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-        target: (json['target'] != null
-            ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-                .fromJson(json['target'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
+    target: (json['target'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(json['target'] as String) : null)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'target': target.toJson(),
-        'type': type_.toJson(),
-      };
+    'target': target.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String environmentId;
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-      type_;
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type type_;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-      {required this.environmentId, required this.type_});
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1({required this.environmentId, required this.type_});
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 Function(
-      {String environmentId,
-      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-          type_}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 Function({String environmentId, UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
-      _copyWith(
-              {Object? environmentId = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-            environmentId: identical(environmentId, sdkOmittedValue)
-                ? this.environmentId
-                : environmentId as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type,
-          );
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 _copyWith({Object? environmentId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+    environmentId: identical(environmentId, sdkOmittedValue) ? this.environmentId : environmentId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type,
+  );
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-        environmentId: (json['environmentId'] as String?)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
+    environmentId: (json['environmentId'] as String?)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'environmentId': environmentId,
-        'type': type_.toJson(),
-      };
+    'environmentId': environmentId,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem();
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem.fromJson(
-      Object? json) {
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(value); } } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(value); } } catch (_) {}
     }
-    try {
-      return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem");
+    try { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
-    extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0
-      value;
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0 value;
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
-    extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1
-      value;
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItem {
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1 value;
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

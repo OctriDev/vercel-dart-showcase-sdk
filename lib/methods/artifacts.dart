@@ -28,30 +28,23 @@ Future<void> recordEvents(ClientConfig config,
     validateLength('x-artifact-client-ci', xArtifactClientCi.value, max: 50);
   }
   if (xArtifactClientInteractive is SdkPresent<int>) {
-    validateRange(
-        'x-artifact-client-interactive', xArtifactClientInteractive.value,
-        min: 0, max: 1);
+    validateRange('x-artifact-client-interactive', xArtifactClientInteractive.value, min: 0, max: 1);
   }
 
   return (await sdkRequest<void>('POST', '/v8/artifacts/events',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: body,
           decoder: SdkResponseDecoder.empty,
-          extraHeaders: SdkUtils.serializeHeaders({
-            'x-artifact-client-ci': SdkUtils.unwrapOptional(xArtifactClientCi),
-            'x-artifact-client-interactive':
-                SdkUtils.unwrapOptional(xArtifactClientInteractive)
-          }),
+          extraHeaders: SdkUtils.serializeHeaders({'x-artifact-client-ci': SdkUtils.unwrapOptional(xArtifactClientCi), 'x-artifact-client-interactive': SdkUtils.unwrapOptional(xArtifactClientInteractive)}),
           operationId: 'recordEvents',
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the Remote Caching status for a team or user. Use `teamId` or `slug` to make the request on behalf of a team; the response indicates whether Remote Caching is enabled, disabled, or disabled due to usage limits.
 ///
@@ -66,10 +59,8 @@ Future<StatusResponse> status(ClientConfig config,
   return (await sdkRequest<StatusResponse>('GET', '/v8/artifacts/status',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'status',
@@ -77,6 +68,7 @@ Future<StatusResponse> status(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Uploads an artifact to the cache using its hash. Send the artifact as an octet-stream body and provide its size in the `Content-Length` header. The uploaded artifact can then be downloaded using the same hash.
 ///
@@ -114,9 +106,7 @@ Future<UploadArtifactResponse> uploadArtifact(ClientConfig config,
     validateLength('x-artifact-client-ci', xArtifactClientCi.value, max: 50);
   }
   if (xArtifactClientInteractive is SdkPresent<int>) {
-    validateRange(
-        'x-artifact-client-interactive', xArtifactClientInteractive.value,
-        min: 0, max: 1);
+    validateRange('x-artifact-client-interactive', xArtifactClientInteractive.value, min: 0, max: 1);
   }
   if (xArtifactTag is SdkPresent<String>) {
     validateLength('x-artifact-tag', xArtifactTag.value, max: 600);
@@ -132,29 +122,19 @@ Future<UploadArtifactResponse> uploadArtifact(ClientConfig config,
           'PUT', '/v8/artifacts/${Uri.encodeComponent(hash.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: body,
           contentType: 'application/octet-stream',
           decoder: SdkResponseDecoder.json,
-          extraHeaders: SdkUtils.serializeHeaders({
-            'x-artifact-duration': SdkUtils.unwrapOptional(xArtifactDuration),
-            'x-artifact-client-ci': SdkUtils.unwrapOptional(xArtifactClientCi),
-            'x-artifact-client-interactive':
-                SdkUtils.unwrapOptional(xArtifactClientInteractive),
-            'x-artifact-tag': SdkUtils.unwrapOptional(xArtifactTag),
-            'x-artifact-sha': SdkUtils.unwrapOptional(xArtifactSha),
-            'x-artifact-dirty-hash': SdkUtils.unwrapOptional(xArtifactDirtyHash)
-          }),
+          extraHeaders: SdkUtils.serializeHeaders({'x-artifact-duration': SdkUtils.unwrapOptional(xArtifactDuration), 'x-artifact-client-ci': SdkUtils.unwrapOptional(xArtifactClientCi), 'x-artifact-client-interactive': SdkUtils.unwrapOptional(xArtifactClientInteractive), 'x-artifact-tag': SdkUtils.unwrapOptional(xArtifactTag), 'x-artifact-sha': SdkUtils.unwrapOptional(xArtifactSha), 'x-artifact-dirty-hash': SdkUtils.unwrapOptional(xArtifactDirtyHash)}),
           operationId: 'uploadArtifact',
-          fromJsonRaw: (value) =>
-              UploadArtifactResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UploadArtifactResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves an artifact from the cache by its hash. Use `hash` to identify the artifact and check the response content length and body when downloading the octet-stream data. You can use the client headers to identify the CI environment and whether the client is interactive.
 ///
@@ -178,30 +158,23 @@ Future<List<int>> downloadArtifact(ClientConfig config,
     validateLength('x-artifact-client-ci', xArtifactClientCi.value, max: 50);
   }
   if (xArtifactClientInteractive is SdkPresent<int>) {
-    validateRange(
-        'x-artifact-client-interactive', xArtifactClientInteractive.value,
-        min: 0, max: 1);
+    validateRange('x-artifact-client-interactive', xArtifactClientInteractive.value, min: 0, max: 1);
   }
 
   return (await sdkRequest<List<int>>(
           'GET', '/v8/artifacts/${Uri.encodeComponent(hash.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.bytes,
-          extraHeaders: SdkUtils.serializeHeaders({
-            'x-artifact-client-ci': SdkUtils.unwrapOptional(xArtifactClientCi),
-            'x-artifact-client-interactive':
-                SdkUtils.unwrapOptional(xArtifactClientInteractive)
-          }),
+          extraHeaders: SdkUtils.serializeHeaders({'x-artifact-client-ci': SdkUtils.unwrapOptional(xArtifactClientCi), 'x-artifact-client-interactive': SdkUtils.unwrapOptional(xArtifactClientInteractive)}),
           operationId: 'downloadArtifact',
           options: requestOptions))
       .data;
 }
+
 
 /// Checks whether an artifact with the specified hash exists in the cache. Use `hash` to identify the artifact; the response contains headers only and no body. The request otherwise has the same behavior as a `GET` request to the artifact path.
 ///
@@ -219,16 +192,15 @@ Future<void> artifactExists(ClientConfig config,
           'HEAD', '/v8/artifacts/${Uri.encodeComponent(hash.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'artifactExists',
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves cache information for multiple artifacts. Supply the artifact hashes in the `hashes` array to query information about each one. Use `teamId` or `slug` to make the request on behalf of a team.
 ///
@@ -245,10 +217,8 @@ Future<Map<String, dynamic>> artifactQuery(ClientConfig config,
   return (await sdkRequest<Map<String, dynamic>>('POST', '/v8/artifacts',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'hashes': hashes},
           decoder: SdkResponseDecoder.json,
@@ -257,6 +227,7 @@ Future<Map<String, dynamic>> artifactQuery(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes all cache artifacts stored for the authenticated team or user, clearing the Remote Cache. Use `teamId` or `slug` to select a team; subsequent builds repopulate the cache.
 ///
@@ -272,15 +243,12 @@ Future<DeleteAllArtifactsResponse> deleteAllArtifacts(ClientConfig config,
           'DELETE', '/v8/artifacts',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteAllArtifacts',
-          fromJsonRaw: (value) => DeleteAllArtifactsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteAllArtifactsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

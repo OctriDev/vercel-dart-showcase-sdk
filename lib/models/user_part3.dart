@@ -8,568 +8,233 @@ part of 'user.dart';
 class AuthUserResourceConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<List<String>> awsAccountIds;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<String> awsAccountType;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> blobStores;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<AuthUserResourceConfigBuildEntitlements> buildEntitlements;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<AuthUserResourceConfigBuildQueue> buildQueue;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> bulkRedirectsFreeLimitOverride;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<String> cfZoneName;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> concurrentBuilds;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> cronJobsPerProject;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> customEnvironmentsPerProject;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> edgeConfigs;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> edgeConfigSize;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> edgeFunctionExecutionTimeoutMs;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> edgeFunctionMaxSizeBytes;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
-  final SdkOptional<AuthUserResourceConfigElasticConcurrencyEnabled>
-      elasticConcurrencyEnabled;
-
+  final SdkOptional<AuthUserResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled;
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> flagsExplorerOverridesThreshold;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
-  final SdkOptional<AuthUserResourceConfigFlagsExplorerUnlimitedOverrides>
-      flagsExplorerUnlimitedOverrides;
-
+  final SdkOptional<AuthUserResourceConfigFlagsExplorerUnlimitedOverrides> flagsExplorerUnlimitedOverrides;
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<String> imageOptimizationType;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> integrationStores;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> kvDatabases;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> microfrontendGroupsPerTeam;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> microfrontendProjectsPerGroup;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<String> nodeType;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> postgresDatabases;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<AuthUserResourceConfigSecurity> security;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> serverlessFunctionMaxDuration;
-
   /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
   final SdkOptional<double> serverlessFunctionMaxMemorySize;
 
-  const AuthUserResourceConfig(
-      {this.awsAccountIds = const SdkOmitted(),
-      this.awsAccountType = const SdkOmitted(),
-      this.blobStores = const SdkOmitted(),
-      this.buildEntitlements = const SdkOmitted(),
-      this.buildQueue = const SdkOmitted(),
-      this.bulkRedirectsFreeLimitOverride = const SdkOmitted(),
-      this.cfZoneName = const SdkOmitted(),
-      this.concurrentBuilds = const SdkOmitted(),
-      this.cronJobsPerProject = const SdkOmitted(),
-      this.customEnvironmentsPerProject = const SdkOmitted(),
-      this.edgeConfigs = const SdkOmitted(),
-      this.edgeConfigSize = const SdkOmitted(),
-      this.edgeFunctionExecutionTimeoutMs = const SdkOmitted(),
-      this.edgeFunctionMaxSizeBytes = const SdkOmitted(),
-      this.elasticConcurrencyEnabled = const SdkOmitted(),
-      this.flagsExplorerOverridesThreshold = const SdkOmitted(),
-      this.flagsExplorerUnlimitedOverrides = const SdkOmitted(),
-      this.imageOptimizationType = const SdkOmitted(),
-      this.integrationStores = const SdkOmitted(),
-      this.kvDatabases = const SdkOmitted(),
-      this.microfrontendGroupsPerTeam = const SdkOmitted(),
-      this.microfrontendProjectsPerGroup = const SdkOmitted(),
-      this.nodeType = const SdkOmitted(),
-      this.postgresDatabases = const SdkOmitted(),
-      this.security = const SdkOmitted(),
-      this.serverlessFunctionMaxDuration = const SdkOmitted(),
-      this.serverlessFunctionMaxMemorySize = const SdkOmitted()});
+  const AuthUserResourceConfig({this.awsAccountIds = const SdkOmitted(), this.awsAccountType = const SdkOmitted(), this.blobStores = const SdkOmitted(), this.buildEntitlements = const SdkOmitted(), this.buildQueue = const SdkOmitted(), this.bulkRedirectsFreeLimitOverride = const SdkOmitted(), this.cfZoneName = const SdkOmitted(), this.concurrentBuilds = const SdkOmitted(), this.cronJobsPerProject = const SdkOmitted(), this.customEnvironmentsPerProject = const SdkOmitted(), this.edgeConfigs = const SdkOmitted(), this.edgeConfigSize = const SdkOmitted(), this.edgeFunctionExecutionTimeoutMs = const SdkOmitted(), this.edgeFunctionMaxSizeBytes = const SdkOmitted(), this.elasticConcurrencyEnabled = const SdkOmitted(), this.flagsExplorerOverridesThreshold = const SdkOmitted(), this.flagsExplorerUnlimitedOverrides = const SdkOmitted(), this.imageOptimizationType = const SdkOmitted(), this.integrationStores = const SdkOmitted(), this.kvDatabases = const SdkOmitted(), this.microfrontendGroupsPerTeam = const SdkOmitted(), this.microfrontendProjectsPerGroup = const SdkOmitted(), this.nodeType = const SdkOmitted(), this.postgresDatabases = const SdkOmitted(), this.security = const SdkOmitted(), this.serverlessFunctionMaxDuration = const SdkOmitted(), this.serverlessFunctionMaxMemorySize = const SdkOmitted()});
 
-  AuthUserResourceConfig Function(
-      {SdkOptional<List<String>> awsAccountIds,
-      SdkOptional<String> awsAccountType,
-      SdkOptional<double> blobStores,
-      SdkOptional<AuthUserResourceConfigBuildEntitlements> buildEntitlements,
-      SdkOptional<AuthUserResourceConfigBuildQueue> buildQueue,
-      SdkOptional<double> bulkRedirectsFreeLimitOverride,
-      SdkOptional<String> cfZoneName,
-      SdkOptional<double> concurrentBuilds,
-      SdkOptional<double> cronJobsPerProject,
-      SdkOptional<double> customEnvironmentsPerProject,
-      SdkOptional<double> edgeConfigs,
-      SdkOptional<double> edgeConfigSize,
-      SdkOptional<double> edgeFunctionExecutionTimeoutMs,
-      SdkOptional<double> edgeFunctionMaxSizeBytes,
-      SdkOptional<AuthUserResourceConfigElasticConcurrencyEnabled>
-          elasticConcurrencyEnabled,
-      SdkOptional<double> flagsExplorerOverridesThreshold,
-      SdkOptional<AuthUserResourceConfigFlagsExplorerUnlimitedOverrides>
-          flagsExplorerUnlimitedOverrides,
-      SdkOptional<String> imageOptimizationType,
-      SdkOptional<double> integrationStores,
-      SdkOptional<double> kvDatabases,
-      SdkOptional<double> microfrontendGroupsPerTeam,
-      SdkOptional<double> microfrontendProjectsPerGroup,
-      SdkOptional<String> nodeType,
-      SdkOptional<double> postgresDatabases,
-      SdkOptional<AuthUserResourceConfigSecurity> security,
-      SdkOptional<double> serverlessFunctionMaxDuration,
-      SdkOptional<double>
-          serverlessFunctionMaxMemorySize}) get copyWith => _copyWith;
+  AuthUserResourceConfig Function({SdkOptional<List<String>> awsAccountIds, SdkOptional<String> awsAccountType, SdkOptional<double> blobStores, SdkOptional<AuthUserResourceConfigBuildEntitlements> buildEntitlements, SdkOptional<AuthUserResourceConfigBuildQueue> buildQueue, SdkOptional<double> bulkRedirectsFreeLimitOverride, SdkOptional<String> cfZoneName, SdkOptional<double> concurrentBuilds, SdkOptional<double> cronJobsPerProject, SdkOptional<double> customEnvironmentsPerProject, SdkOptional<double> edgeConfigs, SdkOptional<double> edgeConfigSize, SdkOptional<double> edgeFunctionExecutionTimeoutMs, SdkOptional<double> edgeFunctionMaxSizeBytes, SdkOptional<AuthUserResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled, SdkOptional<double> flagsExplorerOverridesThreshold, SdkOptional<AuthUserResourceConfigFlagsExplorerUnlimitedOverrides> flagsExplorerUnlimitedOverrides, SdkOptional<String> imageOptimizationType, SdkOptional<double> integrationStores, SdkOptional<double> kvDatabases, SdkOptional<double> microfrontendGroupsPerTeam, SdkOptional<double> microfrontendProjectsPerGroup, SdkOptional<String> nodeType, SdkOptional<double> postgresDatabases, SdkOptional<AuthUserResourceConfigSecurity> security, SdkOptional<double> serverlessFunctionMaxDuration, SdkOptional<double> serverlessFunctionMaxMemorySize}) get copyWith => _copyWith;
 
-  AuthUserResourceConfig _copyWith(
-          {Object? awsAccountIds = sdkOmittedValue,
-          Object? awsAccountType = sdkOmittedValue,
-          Object? blobStores = sdkOmittedValue,
-          Object? buildEntitlements = sdkOmittedValue,
-          Object? buildQueue = sdkOmittedValue,
-          Object? bulkRedirectsFreeLimitOverride = sdkOmittedValue,
-          Object? cfZoneName = sdkOmittedValue,
-          Object? concurrentBuilds = sdkOmittedValue,
-          Object? cronJobsPerProject = sdkOmittedValue,
-          Object? customEnvironmentsPerProject = sdkOmittedValue,
-          Object? edgeConfigs = sdkOmittedValue,
-          Object? edgeConfigSize = sdkOmittedValue,
-          Object? edgeFunctionExecutionTimeoutMs = sdkOmittedValue,
-          Object? edgeFunctionMaxSizeBytes = sdkOmittedValue,
-          Object? elasticConcurrencyEnabled = sdkOmittedValue,
-          Object? flagsExplorerOverridesThreshold = sdkOmittedValue,
-          Object? flagsExplorerUnlimitedOverrides = sdkOmittedValue,
-          Object? imageOptimizationType = sdkOmittedValue,
-          Object? integrationStores = sdkOmittedValue,
-          Object? kvDatabases = sdkOmittedValue,
-          Object? microfrontendGroupsPerTeam = sdkOmittedValue,
-          Object? microfrontendProjectsPerGroup = sdkOmittedValue,
-          Object? nodeType = sdkOmittedValue,
-          Object? postgresDatabases = sdkOmittedValue,
-          Object? security = sdkOmittedValue,
-          Object? serverlessFunctionMaxDuration = sdkOmittedValue,
-          Object? serverlessFunctionMaxMemorySize = sdkOmittedValue}) =>
-      AuthUserResourceConfig(
-        awsAccountIds: identical(awsAccountIds, sdkOmittedValue)
-            ? this.awsAccountIds
-            : awsAccountIds as SdkOptional<List<String>>,
-        awsAccountType: identical(awsAccountType, sdkOmittedValue)
-            ? this.awsAccountType
-            : awsAccountType as SdkOptional<String>,
-        blobStores: identical(blobStores, sdkOmittedValue)
-            ? this.blobStores
-            : blobStores as SdkOptional<double>,
-        buildEntitlements: identical(buildEntitlements, sdkOmittedValue)
-            ? this.buildEntitlements
-            : buildEntitlements
-                as SdkOptional<AuthUserResourceConfigBuildEntitlements>,
-        buildQueue: identical(buildQueue, sdkOmittedValue)
-            ? this.buildQueue
-            : buildQueue as SdkOptional<AuthUserResourceConfigBuildQueue>,
-        bulkRedirectsFreeLimitOverride:
-            identical(bulkRedirectsFreeLimitOverride, sdkOmittedValue)
-                ? this.bulkRedirectsFreeLimitOverride
-                : bulkRedirectsFreeLimitOverride as SdkOptional<double>,
-        cfZoneName: identical(cfZoneName, sdkOmittedValue)
-            ? this.cfZoneName
-            : cfZoneName as SdkOptional<String>,
-        concurrentBuilds: identical(concurrentBuilds, sdkOmittedValue)
-            ? this.concurrentBuilds
-            : concurrentBuilds as SdkOptional<double>,
-        cronJobsPerProject: identical(cronJobsPerProject, sdkOmittedValue)
-            ? this.cronJobsPerProject
-            : cronJobsPerProject as SdkOptional<double>,
-        customEnvironmentsPerProject:
-            identical(customEnvironmentsPerProject, sdkOmittedValue)
-                ? this.customEnvironmentsPerProject
-                : customEnvironmentsPerProject as SdkOptional<double>,
-        edgeConfigs: identical(edgeConfigs, sdkOmittedValue)
-            ? this.edgeConfigs
-            : edgeConfigs as SdkOptional<double>,
-        edgeConfigSize: identical(edgeConfigSize, sdkOmittedValue)
-            ? this.edgeConfigSize
-            : edgeConfigSize as SdkOptional<double>,
-        edgeFunctionExecutionTimeoutMs:
-            identical(edgeFunctionExecutionTimeoutMs, sdkOmittedValue)
-                ? this.edgeFunctionExecutionTimeoutMs
-                : edgeFunctionExecutionTimeoutMs as SdkOptional<double>,
-        edgeFunctionMaxSizeBytes:
-            identical(edgeFunctionMaxSizeBytes, sdkOmittedValue)
-                ? this.edgeFunctionMaxSizeBytes
-                : edgeFunctionMaxSizeBytes as SdkOptional<double>,
-        elasticConcurrencyEnabled: identical(
-                elasticConcurrencyEnabled, sdkOmittedValue)
-            ? this.elasticConcurrencyEnabled
-            : elasticConcurrencyEnabled
-                as SdkOptional<AuthUserResourceConfigElasticConcurrencyEnabled>,
-        flagsExplorerOverridesThreshold:
-            identical(flagsExplorerOverridesThreshold, sdkOmittedValue)
-                ? this.flagsExplorerOverridesThreshold
-                : flagsExplorerOverridesThreshold as SdkOptional<double>,
-        flagsExplorerUnlimitedOverrides:
-            identical(flagsExplorerUnlimitedOverrides, sdkOmittedValue)
-                ? this.flagsExplorerUnlimitedOverrides
-                : flagsExplorerUnlimitedOverrides as SdkOptional<
-                    AuthUserResourceConfigFlagsExplorerUnlimitedOverrides>,
-        imageOptimizationType: identical(imageOptimizationType, sdkOmittedValue)
-            ? this.imageOptimizationType
-            : imageOptimizationType as SdkOptional<String>,
-        integrationStores: identical(integrationStores, sdkOmittedValue)
-            ? this.integrationStores
-            : integrationStores as SdkOptional<double>,
-        kvDatabases: identical(kvDatabases, sdkOmittedValue)
-            ? this.kvDatabases
-            : kvDatabases as SdkOptional<double>,
-        microfrontendGroupsPerTeam:
-            identical(microfrontendGroupsPerTeam, sdkOmittedValue)
-                ? this.microfrontendGroupsPerTeam
-                : microfrontendGroupsPerTeam as SdkOptional<double>,
-        microfrontendProjectsPerGroup:
-            identical(microfrontendProjectsPerGroup, sdkOmittedValue)
-                ? this.microfrontendProjectsPerGroup
-                : microfrontendProjectsPerGroup as SdkOptional<double>,
-        nodeType: identical(nodeType, sdkOmittedValue)
-            ? this.nodeType
-            : nodeType as SdkOptional<String>,
-        postgresDatabases: identical(postgresDatabases, sdkOmittedValue)
-            ? this.postgresDatabases
-            : postgresDatabases as SdkOptional<double>,
-        security: identical(security, sdkOmittedValue)
-            ? this.security
-            : security as SdkOptional<AuthUserResourceConfigSecurity>,
-        serverlessFunctionMaxDuration:
-            identical(serverlessFunctionMaxDuration, sdkOmittedValue)
-                ? this.serverlessFunctionMaxDuration
-                : serverlessFunctionMaxDuration as SdkOptional<double>,
-        serverlessFunctionMaxMemorySize:
-            identical(serverlessFunctionMaxMemorySize, sdkOmittedValue)
-                ? this.serverlessFunctionMaxMemorySize
-                : serverlessFunctionMaxMemorySize as SdkOptional<double>,
-      );
+  AuthUserResourceConfig _copyWith({Object? awsAccountIds = sdkOmittedValue, Object? awsAccountType = sdkOmittedValue, Object? blobStores = sdkOmittedValue, Object? buildEntitlements = sdkOmittedValue, Object? buildQueue = sdkOmittedValue, Object? bulkRedirectsFreeLimitOverride = sdkOmittedValue, Object? cfZoneName = sdkOmittedValue, Object? concurrentBuilds = sdkOmittedValue, Object? cronJobsPerProject = sdkOmittedValue, Object? customEnvironmentsPerProject = sdkOmittedValue, Object? edgeConfigs = sdkOmittedValue, Object? edgeConfigSize = sdkOmittedValue, Object? edgeFunctionExecutionTimeoutMs = sdkOmittedValue, Object? edgeFunctionMaxSizeBytes = sdkOmittedValue, Object? elasticConcurrencyEnabled = sdkOmittedValue, Object? flagsExplorerOverridesThreshold = sdkOmittedValue, Object? flagsExplorerUnlimitedOverrides = sdkOmittedValue, Object? imageOptimizationType = sdkOmittedValue, Object? integrationStores = sdkOmittedValue, Object? kvDatabases = sdkOmittedValue, Object? microfrontendGroupsPerTeam = sdkOmittedValue, Object? microfrontendProjectsPerGroup = sdkOmittedValue, Object? nodeType = sdkOmittedValue, Object? postgresDatabases = sdkOmittedValue, Object? security = sdkOmittedValue, Object? serverlessFunctionMaxDuration = sdkOmittedValue, Object? serverlessFunctionMaxMemorySize = sdkOmittedValue}) => AuthUserResourceConfig(
+    awsAccountIds: identical(awsAccountIds, sdkOmittedValue) ? this.awsAccountIds : awsAccountIds as SdkOptional<List<String>>,
+    awsAccountType: identical(awsAccountType, sdkOmittedValue) ? this.awsAccountType : awsAccountType as SdkOptional<String>,
+    blobStores: identical(blobStores, sdkOmittedValue) ? this.blobStores : blobStores as SdkOptional<double>,
+    buildEntitlements: identical(buildEntitlements, sdkOmittedValue) ? this.buildEntitlements : buildEntitlements as SdkOptional<AuthUserResourceConfigBuildEntitlements>,
+    buildQueue: identical(buildQueue, sdkOmittedValue) ? this.buildQueue : buildQueue as SdkOptional<AuthUserResourceConfigBuildQueue>,
+    bulkRedirectsFreeLimitOverride: identical(bulkRedirectsFreeLimitOverride, sdkOmittedValue) ? this.bulkRedirectsFreeLimitOverride : bulkRedirectsFreeLimitOverride as SdkOptional<double>,
+    cfZoneName: identical(cfZoneName, sdkOmittedValue) ? this.cfZoneName : cfZoneName as SdkOptional<String>,
+    concurrentBuilds: identical(concurrentBuilds, sdkOmittedValue) ? this.concurrentBuilds : concurrentBuilds as SdkOptional<double>,
+    cronJobsPerProject: identical(cronJobsPerProject, sdkOmittedValue) ? this.cronJobsPerProject : cronJobsPerProject as SdkOptional<double>,
+    customEnvironmentsPerProject: identical(customEnvironmentsPerProject, sdkOmittedValue) ? this.customEnvironmentsPerProject : customEnvironmentsPerProject as SdkOptional<double>,
+    edgeConfigs: identical(edgeConfigs, sdkOmittedValue) ? this.edgeConfigs : edgeConfigs as SdkOptional<double>,
+    edgeConfigSize: identical(edgeConfigSize, sdkOmittedValue) ? this.edgeConfigSize : edgeConfigSize as SdkOptional<double>,
+    edgeFunctionExecutionTimeoutMs: identical(edgeFunctionExecutionTimeoutMs, sdkOmittedValue) ? this.edgeFunctionExecutionTimeoutMs : edgeFunctionExecutionTimeoutMs as SdkOptional<double>,
+    edgeFunctionMaxSizeBytes: identical(edgeFunctionMaxSizeBytes, sdkOmittedValue) ? this.edgeFunctionMaxSizeBytes : edgeFunctionMaxSizeBytes as SdkOptional<double>,
+    elasticConcurrencyEnabled: identical(elasticConcurrencyEnabled, sdkOmittedValue) ? this.elasticConcurrencyEnabled : elasticConcurrencyEnabled as SdkOptional<AuthUserResourceConfigElasticConcurrencyEnabled>,
+    flagsExplorerOverridesThreshold: identical(flagsExplorerOverridesThreshold, sdkOmittedValue) ? this.flagsExplorerOverridesThreshold : flagsExplorerOverridesThreshold as SdkOptional<double>,
+    flagsExplorerUnlimitedOverrides: identical(flagsExplorerUnlimitedOverrides, sdkOmittedValue) ? this.flagsExplorerUnlimitedOverrides : flagsExplorerUnlimitedOverrides as SdkOptional<AuthUserResourceConfigFlagsExplorerUnlimitedOverrides>,
+    imageOptimizationType: identical(imageOptimizationType, sdkOmittedValue) ? this.imageOptimizationType : imageOptimizationType as SdkOptional<String>,
+    integrationStores: identical(integrationStores, sdkOmittedValue) ? this.integrationStores : integrationStores as SdkOptional<double>,
+    kvDatabases: identical(kvDatabases, sdkOmittedValue) ? this.kvDatabases : kvDatabases as SdkOptional<double>,
+    microfrontendGroupsPerTeam: identical(microfrontendGroupsPerTeam, sdkOmittedValue) ? this.microfrontendGroupsPerTeam : microfrontendGroupsPerTeam as SdkOptional<double>,
+    microfrontendProjectsPerGroup: identical(microfrontendProjectsPerGroup, sdkOmittedValue) ? this.microfrontendProjectsPerGroup : microfrontendProjectsPerGroup as SdkOptional<double>,
+    nodeType: identical(nodeType, sdkOmittedValue) ? this.nodeType : nodeType as SdkOptional<String>,
+    postgresDatabases: identical(postgresDatabases, sdkOmittedValue) ? this.postgresDatabases : postgresDatabases as SdkOptional<double>,
+    security: identical(security, sdkOmittedValue) ? this.security : security as SdkOptional<AuthUserResourceConfigSecurity>,
+    serverlessFunctionMaxDuration: identical(serverlessFunctionMaxDuration, sdkOmittedValue) ? this.serverlessFunctionMaxDuration : serverlessFunctionMaxDuration as SdkOptional<double>,
+    serverlessFunctionMaxMemorySize: identical(serverlessFunctionMaxMemorySize, sdkOmittedValue) ? this.serverlessFunctionMaxMemorySize : serverlessFunctionMaxMemorySize as SdkOptional<double>,
+  );
 
-  factory AuthUserResourceConfig.fromJson(Map<String, dynamic> json) =>
-      AuthUserResourceConfig(
-        awsAccountIds: json['awsAccountIds'] != null
-            ? SdkPresent(((json['awsAccountIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        awsAccountType: json['awsAccountType'] != null
-            ? SdkPresent((json['awsAccountType'] as String?)!)
-            : const SdkOmitted(),
-        blobStores: json['blobStores'] != null
-            ? SdkPresent(((json['blobStores'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        buildEntitlements: json['buildEntitlements'] != null
-            ? SdkPresent((json['buildEntitlements'] != null
-                ? AuthUserResourceConfigBuildEntitlements.fromJson(
-                    json['buildEntitlements'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        buildQueue: json['buildQueue'] != null
-            ? SdkPresent((json['buildQueue'] != null
-                ? AuthUserResourceConfigBuildQueue.fromJson(
-                    json['buildQueue'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        bulkRedirectsFreeLimitOverride:
-            json['bulkRedirectsFreeLimitOverride'] != null
-                ? SdkPresent(((json['bulkRedirectsFreeLimitOverride'] as num?)
-                    ?.toDouble())!)
-                : const SdkOmitted(),
-        cfZoneName: json['cfZoneName'] != null
-            ? SdkPresent((json['cfZoneName'] as String?)!)
-            : const SdkOmitted(),
-        concurrentBuilds: json['concurrentBuilds'] != null
-            ? SdkPresent(((json['concurrentBuilds'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        cronJobsPerProject: json['cronJobsPerProject'] != null
-            ? SdkPresent(((json['cronJobsPerProject'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        customEnvironmentsPerProject: json['customEnvironmentsPerProject'] !=
-                null
-            ? SdkPresent(
-                ((json['customEnvironmentsPerProject'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        edgeConfigs: json['edgeConfigs'] != null
-            ? SdkPresent(((json['edgeConfigs'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        edgeConfigSize: json['edgeConfigSize'] != null
-            ? SdkPresent(((json['edgeConfigSize'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        edgeFunctionExecutionTimeoutMs:
-            json['edgeFunctionExecutionTimeoutMs'] != null
-                ? SdkPresent(((json['edgeFunctionExecutionTimeoutMs'] as num?)
-                    ?.toDouble())!)
-                : const SdkOmitted(),
-        edgeFunctionMaxSizeBytes: json['edgeFunctionMaxSizeBytes'] != null
-            ? SdkPresent(
-                ((json['edgeFunctionMaxSizeBytes'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null
-            ? SdkPresent((json['elasticConcurrencyEnabled'] != null
-                ? AuthUserResourceConfigElasticConcurrencyEnabled.fromJson(
-                    json['elasticConcurrencyEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        flagsExplorerOverridesThreshold:
-            json['flagsExplorerOverridesThreshold'] != null
-                ? SdkPresent(((json['flagsExplorerOverridesThreshold'] as num?)
-                    ?.toDouble())!)
-                : const SdkOmitted(),
-        flagsExplorerUnlimitedOverrides:
-            json['flagsExplorerUnlimitedOverrides'] != null
-                ? SdkPresent((json['flagsExplorerUnlimitedOverrides'] != null
-                    ? AuthUserResourceConfigFlagsExplorerUnlimitedOverrides
-                        .fromJson(
-                            json['flagsExplorerUnlimitedOverrides'] as bool)
-                    : null)!)
-                : const SdkOmitted(),
-        imageOptimizationType: json['imageOptimizationType'] != null
-            ? SdkPresent((json['imageOptimizationType'] as String?)!)
-            : const SdkOmitted(),
-        integrationStores: json['integrationStores'] != null
-            ? SdkPresent(((json['integrationStores'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        kvDatabases: json['kvDatabases'] != null
-            ? SdkPresent(((json['kvDatabases'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        microfrontendGroupsPerTeam: json['microfrontendGroupsPerTeam'] != null
-            ? SdkPresent(
-                ((json['microfrontendGroupsPerTeam'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        microfrontendProjectsPerGroup: json['microfrontendProjectsPerGroup'] !=
-                null
-            ? SdkPresent(
-                ((json['microfrontendProjectsPerGroup'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        nodeType: json['nodeType'] != null
-            ? SdkPresent((json['nodeType'] as String?)!)
-            : const SdkOmitted(),
-        postgresDatabases: json['postgresDatabases'] != null
-            ? SdkPresent(((json['postgresDatabases'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        security: json['security'] != null
-            ? SdkPresent((json['security'] != null
-                ? AuthUserResourceConfigSecurity.fromJson(
-                    json['security'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        serverlessFunctionMaxDuration: json['serverlessFunctionMaxDuration'] !=
-                null
-            ? SdkPresent(
-                ((json['serverlessFunctionMaxDuration'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        serverlessFunctionMaxMemorySize:
-            json['serverlessFunctionMaxMemorySize'] != null
-                ? SdkPresent(((json['serverlessFunctionMaxMemorySize'] as num?)
-                    ?.toDouble())!)
-                : const SdkOmitted(),
-      );
+  factory AuthUserResourceConfig.fromJson(Map<String, dynamic> json) => AuthUserResourceConfig(
+    awsAccountIds: json['awsAccountIds'] != null ? SdkPresent(((json['awsAccountIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    awsAccountType: json['awsAccountType'] != null ? SdkPresent((json['awsAccountType'] as String?)!) : const SdkOmitted(),
+    blobStores: json['blobStores'] != null ? SdkPresent(((json['blobStores'] as num?)?.toDouble())!) : const SdkOmitted(),
+    buildEntitlements: json['buildEntitlements'] != null ? SdkPresent((json['buildEntitlements'] != null ? AuthUserResourceConfigBuildEntitlements.fromJson(json['buildEntitlements'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    buildQueue: json['buildQueue'] != null ? SdkPresent((json['buildQueue'] != null ? AuthUserResourceConfigBuildQueue.fromJson(json['buildQueue'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    bulkRedirectsFreeLimitOverride: json['bulkRedirectsFreeLimitOverride'] != null ? SdkPresent(((json['bulkRedirectsFreeLimitOverride'] as num?)?.toDouble())!) : const SdkOmitted(),
+    cfZoneName: json['cfZoneName'] != null ? SdkPresent((json['cfZoneName'] as String?)!) : const SdkOmitted(),
+    concurrentBuilds: json['concurrentBuilds'] != null ? SdkPresent(((json['concurrentBuilds'] as num?)?.toDouble())!) : const SdkOmitted(),
+    cronJobsPerProject: json['cronJobsPerProject'] != null ? SdkPresent(((json['cronJobsPerProject'] as num?)?.toDouble())!) : const SdkOmitted(),
+    customEnvironmentsPerProject: json['customEnvironmentsPerProject'] != null ? SdkPresent(((json['customEnvironmentsPerProject'] as num?)?.toDouble())!) : const SdkOmitted(),
+    edgeConfigs: json['edgeConfigs'] != null ? SdkPresent(((json['edgeConfigs'] as num?)?.toDouble())!) : const SdkOmitted(),
+    edgeConfigSize: json['edgeConfigSize'] != null ? SdkPresent(((json['edgeConfigSize'] as num?)?.toDouble())!) : const SdkOmitted(),
+    edgeFunctionExecutionTimeoutMs: json['edgeFunctionExecutionTimeoutMs'] != null ? SdkPresent(((json['edgeFunctionExecutionTimeoutMs'] as num?)?.toDouble())!) : const SdkOmitted(),
+    edgeFunctionMaxSizeBytes: json['edgeFunctionMaxSizeBytes'] != null ? SdkPresent(((json['edgeFunctionMaxSizeBytes'] as num?)?.toDouble())!) : const SdkOmitted(),
+    elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null ? SdkPresent((json['elasticConcurrencyEnabled'] != null ? AuthUserResourceConfigElasticConcurrencyEnabled.fromJson(json['elasticConcurrencyEnabled'] as bool) : null)!) : const SdkOmitted(),
+    flagsExplorerOverridesThreshold: json['flagsExplorerOverridesThreshold'] != null ? SdkPresent(((json['flagsExplorerOverridesThreshold'] as num?)?.toDouble())!) : const SdkOmitted(),
+    flagsExplorerUnlimitedOverrides: json['flagsExplorerUnlimitedOverrides'] != null ? SdkPresent((json['flagsExplorerUnlimitedOverrides'] != null ? AuthUserResourceConfigFlagsExplorerUnlimitedOverrides.fromJson(json['flagsExplorerUnlimitedOverrides'] as bool) : null)!) : const SdkOmitted(),
+    imageOptimizationType: json['imageOptimizationType'] != null ? SdkPresent((json['imageOptimizationType'] as String?)!) : const SdkOmitted(),
+    integrationStores: json['integrationStores'] != null ? SdkPresent(((json['integrationStores'] as num?)?.toDouble())!) : const SdkOmitted(),
+    kvDatabases: json['kvDatabases'] != null ? SdkPresent(((json['kvDatabases'] as num?)?.toDouble())!) : const SdkOmitted(),
+    microfrontendGroupsPerTeam: json['microfrontendGroupsPerTeam'] != null ? SdkPresent(((json['microfrontendGroupsPerTeam'] as num?)?.toDouble())!) : const SdkOmitted(),
+    microfrontendProjectsPerGroup: json['microfrontendProjectsPerGroup'] != null ? SdkPresent(((json['microfrontendProjectsPerGroup'] as num?)?.toDouble())!) : const SdkOmitted(),
+    nodeType: json['nodeType'] != null ? SdkPresent((json['nodeType'] as String?)!) : const SdkOmitted(),
+    postgresDatabases: json['postgresDatabases'] != null ? SdkPresent(((json['postgresDatabases'] as num?)?.toDouble())!) : const SdkOmitted(),
+    security: json['security'] != null ? SdkPresent((json['security'] != null ? AuthUserResourceConfigSecurity.fromJson(json['security'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    serverlessFunctionMaxDuration: json['serverlessFunctionMaxDuration'] != null ? SdkPresent(((json['serverlessFunctionMaxDuration'] as num?)?.toDouble())!) : const SdkOmitted(),
+    serverlessFunctionMaxMemorySize: json['serverlessFunctionMaxMemorySize'] != null ? SdkPresent(((json['serverlessFunctionMaxMemorySize'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (awsAccountIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'awsAccountIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (awsAccountType) {
-          SdkPresent<String>(value: final value) => {
-              'awsAccountType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (blobStores) {
-          SdkPresent<double>(value: final value) => {
-              'blobStores': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildEntitlements) {
-          SdkPresent<AuthUserResourceConfigBuildEntitlements>(
-            value: final value
-          ) =>
-            {
-              'buildEntitlements': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildQueue) {
-          SdkPresent<AuthUserResourceConfigBuildQueue>(value: final value) => {
-              'buildQueue': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (bulkRedirectsFreeLimitOverride) {
-          SdkPresent<double>(value: final value) => {
-              'bulkRedirectsFreeLimitOverride': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (cfZoneName) {
-          SdkPresent<String>(value: final value) => {
-              'cfZoneName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (concurrentBuilds) {
-          SdkPresent<double>(value: final value) => {
-              'concurrentBuilds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (cronJobsPerProject) {
-          SdkPresent<double>(value: final value) => {
-              'cronJobsPerProject': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentsPerProject) {
-          SdkPresent<double>(value: final value) => {
-              'customEnvironmentsPerProject': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigs) {
-          SdkPresent<double>(value: final value) => {
-              'edgeConfigs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigSize) {
-          SdkPresent<double>(value: final value) => {
-              'edgeConfigSize': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeFunctionExecutionTimeoutMs) {
-          SdkPresent<double>(value: final value) => {
-              'edgeFunctionExecutionTimeoutMs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeFunctionMaxSizeBytes) {
-          SdkPresent<double>(value: final value) => {
-              'edgeFunctionMaxSizeBytes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (elasticConcurrencyEnabled) {
-          SdkPresent<AuthUserResourceConfigElasticConcurrencyEnabled>(
-            value: final value
-          ) =>
-            {
-              'elasticConcurrencyEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (flagsExplorerOverridesThreshold) {
-          SdkPresent<double>(value: final value) => {
-              'flagsExplorerOverridesThreshold': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (flagsExplorerUnlimitedOverrides) {
-          SdkPresent<AuthUserResourceConfigFlagsExplorerUnlimitedOverrides>(
-            value: final value
-          ) =>
-            {
-              'flagsExplorerUnlimitedOverrides': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (imageOptimizationType) {
-          SdkPresent<String>(value: final value) => {
-              'imageOptimizationType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (integrationStores) {
-          SdkPresent<double>(value: final value) => {
-              'integrationStores': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (kvDatabases) {
-          SdkPresent<double>(value: final value) => {
-              'kvDatabases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (microfrontendGroupsPerTeam) {
-          SdkPresent<double>(value: final value) => {
-              'microfrontendGroupsPerTeam': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (microfrontendProjectsPerGroup) {
-          SdkPresent<double>(value: final value) => {
-              'microfrontendProjectsPerGroup': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (nodeType) {
-          SdkPresent<String>(value: final value) => {
-              'nodeType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (postgresDatabases) {
-          SdkPresent<double>(value: final value) => {
-              'postgresDatabases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (security) {
-          SdkPresent<AuthUserResourceConfigSecurity>(value: final value) => {
-              'security': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (serverlessFunctionMaxDuration) {
-          SdkPresent<double>(value: final value) => {
-              'serverlessFunctionMaxDuration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (serverlessFunctionMaxMemorySize) {
-          SdkPresent<double>(value: final value) => {
-              'serverlessFunctionMaxMemorySize': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (awsAccountIds) {
+      SdkPresent<List<String>>(value: final value) => {'awsAccountIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (awsAccountType) {
+      SdkPresent<String>(value: final value) => {'awsAccountType': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (blobStores) {
+      SdkPresent<double>(value: final value) => {'blobStores': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildEntitlements) {
+      SdkPresent<AuthUserResourceConfigBuildEntitlements>(value: final value) => {'buildEntitlements': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildQueue) {
+      SdkPresent<AuthUserResourceConfigBuildQueue>(value: final value) => {'buildQueue': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (bulkRedirectsFreeLimitOverride) {
+      SdkPresent<double>(value: final value) => {'bulkRedirectsFreeLimitOverride': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (cfZoneName) {
+      SdkPresent<String>(value: final value) => {'cfZoneName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (concurrentBuilds) {
+      SdkPresent<double>(value: final value) => {'concurrentBuilds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (cronJobsPerProject) {
+      SdkPresent<double>(value: final value) => {'cronJobsPerProject': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentsPerProject) {
+      SdkPresent<double>(value: final value) => {'customEnvironmentsPerProject': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigs) {
+      SdkPresent<double>(value: final value) => {'edgeConfigs': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigSize) {
+      SdkPresent<double>(value: final value) => {'edgeConfigSize': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeFunctionExecutionTimeoutMs) {
+      SdkPresent<double>(value: final value) => {'edgeFunctionExecutionTimeoutMs': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeFunctionMaxSizeBytes) {
+      SdkPresent<double>(value: final value) => {'edgeFunctionMaxSizeBytes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (elasticConcurrencyEnabled) {
+      SdkPresent<AuthUserResourceConfigElasticConcurrencyEnabled>(value: final value) => {'elasticConcurrencyEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (flagsExplorerOverridesThreshold) {
+      SdkPresent<double>(value: final value) => {'flagsExplorerOverridesThreshold': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (flagsExplorerUnlimitedOverrides) {
+      SdkPresent<AuthUserResourceConfigFlagsExplorerUnlimitedOverrides>(value: final value) => {'flagsExplorerUnlimitedOverrides': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (imageOptimizationType) {
+      SdkPresent<String>(value: final value) => {'imageOptimizationType': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (integrationStores) {
+      SdkPresent<double>(value: final value) => {'integrationStores': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (kvDatabases) {
+      SdkPresent<double>(value: final value) => {'kvDatabases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (microfrontendGroupsPerTeam) {
+      SdkPresent<double>(value: final value) => {'microfrontendGroupsPerTeam': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (microfrontendProjectsPerGroup) {
+      SdkPresent<double>(value: final value) => {'microfrontendProjectsPerGroup': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (nodeType) {
+      SdkPresent<String>(value: final value) => {'nodeType': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (postgresDatabases) {
+      SdkPresent<double>(value: final value) => {'postgresDatabases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (security) {
+      SdkPresent<AuthUserResourceConfigSecurity>(value: final value) => {'security': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (serverlessFunctionMaxDuration) {
+      SdkPresent<double>(value: final value) => {'serverlessFunctionMaxDuration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (serverlessFunctionMaxMemorySize) {
+      SdkPresent<double>(value: final value) => {'serverlessFunctionMaxMemorySize': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

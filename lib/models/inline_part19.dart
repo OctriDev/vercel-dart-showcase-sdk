@@ -5,420 +5,272 @@ part of 'inline.dart';
 
 // Inline operation models (part 19)
 final class CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent {
+
   final bool value;
 
-  const CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent.fromJson(
-          bool value) =>
-      CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(
-          value);
+  factory CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent.fromJson(bool value) => CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(value);
 
-  static const false_ =
-      CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(
-          false);
-  static const true_ =
-      CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(
-          true);
+  static const false_ = CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(false);
+  static const true_ = CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RedirectsItemPermanent && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type._(value);
 
-  static const service =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type
-          ._('service');
+  static const service = CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type._('service');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemDestinationVariant1Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type._(value);
 
-  static const host =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type
-          ._('host');
+  static const host = CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type._('host');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type._(value);
 
-  static const cookie =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type
-          ._('cookie');
-  static const header =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type
-          ._('header');
-  static const query =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type
-          ._('query');
+  static const cookie = CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type._('cookie');
+  static const header = CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type._('header');
+  static const query = CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type._('query');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemHasItemVariant1Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type._(value);
 
-  static const host =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type
-          ._('host');
+  static const host = CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type._('host');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type._(value);
 
-  static const cookie =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type
-          ._('cookie');
-  static const header =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type
-          ._('header');
-  static const query =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type
-          ._('query');
+  static const cookie = CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type._('cookie');
+  static const header = CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type._('header');
+  static const query = CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type._('query');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemMissingItemVariant1Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl {
+
   final bool value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl.fromJson(
-          bool value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl.fromJson(bool value) => CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl._(value);
 
-  static const false_ =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl
-          ._(false);
-  static const true_ =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl
-          ._(true);
+  static const false_ = CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl._(false);
+  static const true_ = CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemRespectOriginCacheControl && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp._(value);
 
-  static const set_ =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp
-          ._('set');
+  static const set_ = CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp._('set');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemOp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType._(value);
 
-  static const requestPath =
-      CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType
-          ._('request.path');
+  static const requestPath = CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType._('request.path');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RewritesItemTransformsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive {
+
   final bool value;
 
-  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive.fromJson(
-          bool value) =>
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive.fromJson(bool value) => CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive._(value);
 
-  static const false_ =
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive
-          ._(false);
-  static const true_ =
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive
-          ._(true);
+  static const false_ = CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive._(false);
+  static const true_ = CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0CaseSensitive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check {
+
   final bool value;
 
-  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check.fromJson(
-          bool value) =>
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(
-          value);
+  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check.fromJson(bool value) => CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(value);
 
-  static const false_ =
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(
-          false);
-  static const true_ =
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(
-          true);
+  static const false_ = CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(false);
+  static const true_ = CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Check && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue {
+
   final bool value;
 
-  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue.fromJson(
-          bool value) =>
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(
-          value);
+  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue.fromJson(bool value) => CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(value);
 
-  static const false_ =
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(
-          false);
-  static const true_ =
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(
-          true);
+  static const false_ = CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(false);
+  static const true_ = CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0Continue && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
 final class CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type {
+
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._(
-      this.value);
+  const CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type
-          ._(value);
+  factory CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._(value);
 
-  static const service =
-      CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type
-          ._('service');
+  static const service = CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type._('service');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1RoutesItemVariant0DestinationVariant1Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

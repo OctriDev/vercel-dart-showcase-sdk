@@ -24,286 +24,135 @@ class UpdateCheckResponse {
   final UpdateCheckResponseStatus status;
   final double updatedAt;
 
-  const UpdateCheckResponse(
-      {required this.blocking,
-      this.completedAt = const SdkOmitted(),
-      this.conclusion = const SdkOmitted(),
-      required this.createdAt,
-      required this.deploymentId,
-      this.detailsUrl = const SdkOmitted(),
-      this.externalId = const SdkOmitted(),
-      required this.id,
-      required this.integrationId,
-      required this.name,
-      this.output = const SdkOmitted(),
-      this.path = const SdkOmitted(),
-      this.rerequestable = const SdkOmitted(),
-      this.startedAt = const SdkOmitted(),
-      required this.status,
-      required this.updatedAt});
+  const UpdateCheckResponse({required this.blocking, this.completedAt = const SdkOmitted(), this.conclusion = const SdkOmitted(), required this.createdAt, required this.deploymentId, this.detailsUrl = const SdkOmitted(), this.externalId = const SdkOmitted(), required this.id, required this.integrationId, required this.name, this.output = const SdkOmitted(), this.path = const SdkOmitted(), this.rerequestable = const SdkOmitted(), this.startedAt = const SdkOmitted(), required this.status, required this.updatedAt});
 
-  UpdateCheckResponse Function(
-      {UpdateCheckResponseBlocking blocking,
-      SdkOptional<double> completedAt,
-      SdkOptional<UpdateCheckResponseConclusion> conclusion,
-      double createdAt,
-      String deploymentId,
-      SdkOptional<String> detailsUrl,
-      SdkOptional<String> externalId,
-      String id,
-      String integrationId,
-      String name,
-      SdkOptional<UpdateCheckResponseOutput> output,
-      SdkOptional<String> path,
-      SdkOptional<UpdateCheckResponseRerequestable> rerequestable,
-      SdkOptional<double> startedAt,
-      UpdateCheckResponseStatus status,
-      double updatedAt}) get copyWith => _copyWith;
+  UpdateCheckResponse Function({UpdateCheckResponseBlocking blocking, SdkOptional<double> completedAt, SdkOptional<UpdateCheckResponseConclusion> conclusion, double createdAt, String deploymentId, SdkOptional<String> detailsUrl, SdkOptional<String> externalId, String id, String integrationId, String name, SdkOptional<UpdateCheckResponseOutput> output, SdkOptional<String> path, SdkOptional<UpdateCheckResponseRerequestable> rerequestable, SdkOptional<double> startedAt, UpdateCheckResponseStatus status, double updatedAt}) get copyWith => _copyWith;
 
-  UpdateCheckResponse _copyWith(
-          {Object? blocking = sdkOmittedValue,
-          Object? completedAt = sdkOmittedValue,
-          Object? conclusion = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? deploymentId = sdkOmittedValue,
-          Object? detailsUrl = sdkOmittedValue,
-          Object? externalId = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? output = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? rerequestable = sdkOmittedValue,
-          Object? startedAt = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UpdateCheckResponse(
-        blocking: identical(blocking, sdkOmittedValue)
-            ? this.blocking
-            : blocking as UpdateCheckResponseBlocking,
-        completedAt: identical(completedAt, sdkOmittedValue)
-            ? this.completedAt
-            : completedAt as SdkOptional<double>,
-        conclusion: identical(conclusion, sdkOmittedValue)
-            ? this.conclusion
-            : conclusion as SdkOptional<UpdateCheckResponseConclusion>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        deploymentId: identical(deploymentId, sdkOmittedValue)
-            ? this.deploymentId
-            : deploymentId as String,
-        detailsUrl: identical(detailsUrl, sdkOmittedValue)
-            ? this.detailsUrl
-            : detailsUrl as SdkOptional<String>,
-        externalId: identical(externalId, sdkOmittedValue)
-            ? this.externalId
-            : externalId as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        output: identical(output, sdkOmittedValue)
-            ? this.output
-            : output as SdkOptional<UpdateCheckResponseOutput>,
-        path: identical(path, sdkOmittedValue)
-            ? this.path
-            : path as SdkOptional<String>,
-        rerequestable: identical(rerequestable, sdkOmittedValue)
-            ? this.rerequestable
-            : rerequestable as SdkOptional<UpdateCheckResponseRerequestable>,
-        startedAt: identical(startedAt, sdkOmittedValue)
-            ? this.startedAt
-            : startedAt as SdkOptional<double>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as UpdateCheckResponseStatus,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  UpdateCheckResponse _copyWith({Object? blocking = sdkOmittedValue, Object? completedAt = sdkOmittedValue, Object? conclusion = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? detailsUrl = sdkOmittedValue, Object? externalId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? output = sdkOmittedValue, Object? path = sdkOmittedValue, Object? rerequestable = sdkOmittedValue, Object? startedAt = sdkOmittedValue, Object? status = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateCheckResponse(
+    blocking: identical(blocking, sdkOmittedValue) ? this.blocking : blocking as UpdateCheckResponseBlocking,
+    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
+    conclusion: identical(conclusion, sdkOmittedValue) ? this.conclusion : conclusion as SdkOptional<UpdateCheckResponseConclusion>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
+    detailsUrl: identical(detailsUrl, sdkOmittedValue) ? this.detailsUrl : detailsUrl as SdkOptional<String>,
+    externalId: identical(externalId, sdkOmittedValue) ? this.externalId : externalId as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    output: identical(output, sdkOmittedValue) ? this.output : output as SdkOptional<UpdateCheckResponseOutput>,
+    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
+    rerequestable: identical(rerequestable, sdkOmittedValue) ? this.rerequestable : rerequestable as SdkOptional<UpdateCheckResponseRerequestable>,
+    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as SdkOptional<double>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as UpdateCheckResponseStatus,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory UpdateCheckResponse.fromJson(Map<String, dynamic> json) =>
-      UpdateCheckResponse(
-        blocking: (json['blocking'] != null
-            ? UpdateCheckResponseBlocking.fromJson(json['blocking'] as bool)
-            : null)!,
-        completedAt: json['completedAt'] != null
-            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        conclusion: json['conclusion'] != null
-            ? SdkPresent((json['conclusion'] != null
-                ? UpdateCheckResponseConclusion.fromJson(
-                    json['conclusion'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        deploymentId: (json['deploymentId'] as String?)!,
-        detailsUrl: json['detailsUrl'] != null
-            ? SdkPresent((json['detailsUrl'] as String?)!)
-            : const SdkOmitted(),
-        externalId: json['externalId'] != null
-            ? SdkPresent((json['externalId'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-        name: (json['name'] as String?)!,
-        output: json['output'] != null
-            ? SdkPresent((json['output'] != null
-                ? UpdateCheckResponseOutput.fromJson(
-                    json['output'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        path: json['path'] != null
-            ? SdkPresent((json['path'] as String?)!)
-            : const SdkOmitted(),
-        rerequestable: json['rerequestable'] != null
-            ? SdkPresent((json['rerequestable'] != null
-                ? UpdateCheckResponseRerequestable.fromJson(
-                    json['rerequestable'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        startedAt: json['startedAt'] != null
-            ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        status: (json['status'] != null
-            ? UpdateCheckResponseStatus.fromJson(json['status'] as String)
-            : null)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory UpdateCheckResponse.fromJson(Map<String, dynamic> json) => UpdateCheckResponse(
+    blocking: (json['blocking'] != null ? UpdateCheckResponseBlocking.fromJson(json['blocking'] as bool) : null)!,
+    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    conclusion: json['conclusion'] != null ? SdkPresent((json['conclusion'] != null ? UpdateCheckResponseConclusion.fromJson(json['conclusion'] as String) : null)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    deploymentId: (json['deploymentId'] as String?)!,
+    detailsUrl: json['detailsUrl'] != null ? SdkPresent((json['detailsUrl'] as String?)!) : const SdkOmitted(),
+    externalId: json['externalId'] != null ? SdkPresent((json['externalId'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+    name: (json['name'] as String?)!,
+    output: json['output'] != null ? SdkPresent((json['output'] != null ? UpdateCheckResponseOutput.fromJson(json['output'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
+    rerequestable: json['rerequestable'] != null ? SdkPresent((json['rerequestable'] != null ? UpdateCheckResponseRerequestable.fromJson(json['rerequestable'] as bool) : null)!) : const SdkOmitted(),
+    startedAt: json['startedAt'] != null ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    status: (json['status'] != null ? UpdateCheckResponseStatus.fromJson(json['status'] as String) : null)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'blocking': blocking.toJson(),
-        ...switch (completedAt) {
-          SdkPresent<double>(value: final value) => {
-              'completedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (conclusion) {
-          SdkPresent<UpdateCheckResponseConclusion>(value: final value) => {
-              'conclusion': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'deploymentId': deploymentId,
-        ...switch (detailsUrl) {
-          SdkPresent<String>(value: final value) => {
-              'detailsUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (externalId) {
-          SdkPresent<String>(value: final value) => {
-              'externalId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'integrationId': integrationId,
-        'name': name,
-        ...switch (output) {
-          SdkPresent<UpdateCheckResponseOutput>(value: final value) => {
-              'output': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (path) {
-          SdkPresent<String>(value: final value) => {
-              'path': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rerequestable) {
-          SdkPresent<UpdateCheckResponseRerequestable>(value: final value) => {
-              'rerequestable': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startedAt) {
-          SdkPresent<double>(value: final value) => {
-              'startedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'status': status.toJson(),
-        'updatedAt': updatedAt,
-      };
+    'blocking': blocking.toJson(),
+    ...switch (completedAt) {
+      SdkPresent<double>(value: final value) => {'completedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (conclusion) {
+      SdkPresent<UpdateCheckResponseConclusion>(value: final value) => {'conclusion': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'deploymentId': deploymentId,
+    ...switch (detailsUrl) {
+      SdkPresent<String>(value: final value) => {'detailsUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (externalId) {
+      SdkPresent<String>(value: final value) => {'externalId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'integrationId': integrationId,
+    'name': name,
+    ...switch (output) {
+      SdkPresent<UpdateCheckResponseOutput>(value: final value) => {'output': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (path) {
+      SdkPresent<String>(value: final value) => {'path': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rerequestable) {
+      SdkPresent<UpdateCheckResponseRerequestable>(value: final value) => {'rerequestable': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startedAt) {
+      SdkPresent<double>(value: final value) => {'startedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'status': status.toJson(),
+    'updatedAt': updatedAt,
+  };
 }
 
 class CreateNetworkRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> awsAvailabilityZoneIds;
-
   /// The CIDR block of the network
   final String cidr;
-
   /// The name of the network
   final String name;
-
   /// The region where the network will be created
   final String region;
 
-  const CreateNetworkRequestBody(
-      {this.awsAvailabilityZoneIds = const SdkOmitted(),
-      required this.cidr,
-      required this.name,
-      required this.region});
+  const CreateNetworkRequestBody({this.awsAvailabilityZoneIds = const SdkOmitted(), required this.cidr, required this.name, required this.region});
 
-  CreateNetworkRequestBody Function(
-      {SdkOptional<List<String>> awsAvailabilityZoneIds,
-      String cidr,
-      String name,
-      String region}) get copyWith => _copyWith;
+  CreateNetworkRequestBody Function({SdkOptional<List<String>> awsAvailabilityZoneIds, String cidr, String name, String region}) get copyWith => _copyWith;
 
-  CreateNetworkRequestBody _copyWith(
-          {Object? awsAvailabilityZoneIds = sdkOmittedValue,
-          Object? cidr = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? region = sdkOmittedValue}) =>
-      CreateNetworkRequestBody(
-        awsAvailabilityZoneIds:
-            identical(awsAvailabilityZoneIds, sdkOmittedValue)
-                ? this.awsAvailabilityZoneIds
-                : awsAvailabilityZoneIds as SdkOptional<List<String>>,
-        cidr: identical(cidr, sdkOmittedValue) ? this.cidr : cidr as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        region:
-            identical(region, sdkOmittedValue) ? this.region : region as String,
-      );
+  CreateNetworkRequestBody _copyWith({Object? awsAvailabilityZoneIds = sdkOmittedValue, Object? cidr = sdkOmittedValue, Object? name = sdkOmittedValue, Object? region = sdkOmittedValue}) => CreateNetworkRequestBody(
+    awsAvailabilityZoneIds: identical(awsAvailabilityZoneIds, sdkOmittedValue) ? this.awsAvailabilityZoneIds : awsAvailabilityZoneIds as SdkOptional<List<String>>,
+    cidr: identical(cidr, sdkOmittedValue) ? this.cidr : cidr as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    region: identical(region, sdkOmittedValue) ? this.region : region as String,
+  );
 
-  factory CreateNetworkRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateNetworkRequestBody(
-        awsAvailabilityZoneIds: json['awsAvailabilityZoneIds'] != null
-            ? SdkPresent(((json['awsAvailabilityZoneIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        cidr: (json['cidr'] as String?)!,
-        name: (json['name'] as String?)!,
-        region: (json['region'] as String?)!,
-      );
+  factory CreateNetworkRequestBody.fromJson(Map<String, dynamic> json) => CreateNetworkRequestBody(
+    awsAvailabilityZoneIds: json['awsAvailabilityZoneIds'] != null ? SdkPresent(((json['awsAvailabilityZoneIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    cidr: (json['cidr'] as String?)!,
+    name: (json['name'] as String?)!,
+    region: (json['region'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (awsAvailabilityZoneIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'awsAvailabilityZoneIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'cidr': cidr,
-        'name': name,
-        'region': region,
-      };
+    ...switch (awsAvailabilityZoneIds) {
+      SdkPresent<List<String>>(value: final value) => {'awsAvailabilityZoneIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    'cidr': cidr,
+    'name': name,
+    'region': region,
+  };
 }
 
 class UpdateNetworkRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The name of the Secure Compute network
   final String name;
 
@@ -311,209 +160,128 @@ class UpdateNetworkRequestBody {
 
   UpdateNetworkRequestBody Function({String name}) get copyWith => _copyWith;
 
-  UpdateNetworkRequestBody _copyWith({Object? name = sdkOmittedValue}) =>
-      UpdateNetworkRequestBody(
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  UpdateNetworkRequestBody _copyWith({Object? name = sdkOmittedValue}) => UpdateNetworkRequestBody(
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory UpdateNetworkRequestBody.fromJson(Map<String, dynamic> json) =>
-      UpdateNetworkRequestBody(
-        name: (json['name'] as String?)!,
-      );
+  factory UpdateNetworkRequestBody.fromJson(Map<String, dynamic> json) => UpdateNetworkRequestBody(
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-      };
+    'name': name,
+  };
 }
 
 class CreatePrivateLinkEndpointRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The project ID to create the PrivateLink endpoint for.
   final String projectId;
-
   /// The name of the PrivateLink endpoint, used as its label in the Vercel dashboard.
   final String name;
-
   /// The Vercel region to provision the endpoint in. Advanced Networking must be enabled for the project in that region. The endpoint service itself may live in another AWS region.
   final String vercelRegion;
-
   /// The name of the AWS VPC endpoint service to connect to. Its AWS region is read from the name; when that region differs from the one behind `vercelRegion`, the service must allow cross-region access.
   final String awsServiceName;
-
   /// Whether to resolve the endpoint service through its private DNS names, which are then returned in `privateDnsNames`. Defaults to `false`, in which case the endpoint is reachable through the DNS names in `awsDnsEntries`.
   final SdkOptional<bool> enablePrivateDns;
 
-  const CreatePrivateLinkEndpointRequestBody(
-      {required this.projectId,
-      required this.name,
-      required this.vercelRegion,
-      required this.awsServiceName,
-      this.enablePrivateDns = const SdkOmitted()});
+  const CreatePrivateLinkEndpointRequestBody({required this.projectId, required this.name, required this.vercelRegion, required this.awsServiceName, this.enablePrivateDns = const SdkOmitted()});
 
-  CreatePrivateLinkEndpointRequestBody Function(
-      {String projectId,
-      String name,
-      String vercelRegion,
-      String awsServiceName,
-      SdkOptional<bool> enablePrivateDns}) get copyWith => _copyWith;
+  CreatePrivateLinkEndpointRequestBody Function({String projectId, String name, String vercelRegion, String awsServiceName, SdkOptional<bool> enablePrivateDns}) get copyWith => _copyWith;
 
-  CreatePrivateLinkEndpointRequestBody _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? vercelRegion = sdkOmittedValue,
-          Object? awsServiceName = sdkOmittedValue,
-          Object? enablePrivateDns = sdkOmittedValue}) =>
-      CreatePrivateLinkEndpointRequestBody(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        vercelRegion: identical(vercelRegion, sdkOmittedValue)
-            ? this.vercelRegion
-            : vercelRegion as String,
-        awsServiceName: identical(awsServiceName, sdkOmittedValue)
-            ? this.awsServiceName
-            : awsServiceName as String,
-        enablePrivateDns: identical(enablePrivateDns, sdkOmittedValue)
-            ? this.enablePrivateDns
-            : enablePrivateDns as SdkOptional<bool>,
-      );
+  CreatePrivateLinkEndpointRequestBody _copyWith({Object? projectId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? vercelRegion = sdkOmittedValue, Object? awsServiceName = sdkOmittedValue, Object? enablePrivateDns = sdkOmittedValue}) => CreatePrivateLinkEndpointRequestBody(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    vercelRegion: identical(vercelRegion, sdkOmittedValue) ? this.vercelRegion : vercelRegion as String,
+    awsServiceName: identical(awsServiceName, sdkOmittedValue) ? this.awsServiceName : awsServiceName as String,
+    enablePrivateDns: identical(enablePrivateDns, sdkOmittedValue) ? this.enablePrivateDns : enablePrivateDns as SdkOptional<bool>,
+  );
 
-  factory CreatePrivateLinkEndpointRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreatePrivateLinkEndpointRequestBody(
-        projectId: (json['projectId'] as String?)!,
-        name: (json['name'] as String?)!,
-        vercelRegion: (json['vercelRegion'] as String?)!,
-        awsServiceName: (json['awsServiceName'] as String?)!,
-        enablePrivateDns: json['enablePrivateDns'] != null
-            ? SdkPresent((json['enablePrivateDns'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory CreatePrivateLinkEndpointRequestBody.fromJson(Map<String, dynamic> json) => CreatePrivateLinkEndpointRequestBody(
+    projectId: (json['projectId'] as String?)!,
+    name: (json['name'] as String?)!,
+    vercelRegion: (json['vercelRegion'] as String?)!,
+    awsServiceName: (json['awsServiceName'] as String?)!,
+    enablePrivateDns: json['enablePrivateDns'] != null ? SdkPresent((json['enablePrivateDns'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'projectId': projectId,
-        'name': name,
-        'vercelRegion': vercelRegion,
-        'awsServiceName': awsServiceName,
-        ...switch (enablePrivateDns) {
-          SdkPresent<bool>(value: final value) => {
-              'enablePrivateDns': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'projectId': projectId,
+    'name': name,
+    'vercelRegion': vercelRegion,
+    'awsServiceName': awsServiceName,
+    ...switch (enablePrivateDns) {
+      SdkPresent<bool>(value: final value) => {'enablePrivateDns': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdatePrivateLinkEndpointRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A new name for the PrivateLink endpoint. When omitted, the current name is kept.
   final SdkOptional<String> name;
-
   /// When `true`, resolves the endpoint service through its private DNS names, which are then returned in `privateDnsNames`. When `false`, clears them. When omitted, the current setting is kept. At least one of `name` or `enablePrivateDns` must be provided.
   final SdkOptional<bool> enablePrivateDns;
 
-  const UpdatePrivateLinkEndpointRequestBody(
-      {this.name = const SdkOmitted(),
-      this.enablePrivateDns = const SdkOmitted()});
+  const UpdatePrivateLinkEndpointRequestBody({this.name = const SdkOmitted(), this.enablePrivateDns = const SdkOmitted()});
 
-  UpdatePrivateLinkEndpointRequestBody Function(
-      {SdkOptional<String> name,
-      SdkOptional<bool> enablePrivateDns}) get copyWith => _copyWith;
+  UpdatePrivateLinkEndpointRequestBody Function({SdkOptional<String> name, SdkOptional<bool> enablePrivateDns}) get copyWith => _copyWith;
 
-  UpdatePrivateLinkEndpointRequestBody _copyWith(
-          {Object? name = sdkOmittedValue,
-          Object? enablePrivateDns = sdkOmittedValue}) =>
-      UpdatePrivateLinkEndpointRequestBody(
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        enablePrivateDns: identical(enablePrivateDns, sdkOmittedValue)
-            ? this.enablePrivateDns
-            : enablePrivateDns as SdkOptional<bool>,
-      );
+  UpdatePrivateLinkEndpointRequestBody _copyWith({Object? name = sdkOmittedValue, Object? enablePrivateDns = sdkOmittedValue}) => UpdatePrivateLinkEndpointRequestBody(
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    enablePrivateDns: identical(enablePrivateDns, sdkOmittedValue) ? this.enablePrivateDns : enablePrivateDns as SdkOptional<bool>,
+  );
 
-  factory UpdatePrivateLinkEndpointRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      UpdatePrivateLinkEndpointRequestBody(
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        enablePrivateDns: json['enablePrivateDns'] != null
-            ? SdkPresent((json['enablePrivateDns'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdatePrivateLinkEndpointRequestBody.fromJson(Map<String, dynamic> json) => UpdatePrivateLinkEndpointRequestBody(
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    enablePrivateDns: json['enablePrivateDns'] != null ? SdkPresent((json['enablePrivateDns'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enablePrivateDns) {
-          SdkPresent<bool>(value: final value) => {
-              'enablePrivateDns': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enablePrivateDns) {
+      SdkPresent<bool>(value: final value) => {'enablePrivateDns': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateStaticIpsRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether to use Static IPs for builds.
   final SdkOptional<bool> builds;
   final SdkOptional<List<String>> regions;
 
-  const UpdateStaticIpsRequestBody(
-      {this.builds = const SdkOmitted(), this.regions = const SdkOmitted()});
+  const UpdateStaticIpsRequestBody({this.builds = const SdkOmitted(), this.regions = const SdkOmitted()});
 
-  UpdateStaticIpsRequestBody Function(
-      {SdkOptional<bool> builds,
-      SdkOptional<List<String>> regions}) get copyWith => _copyWith;
+  UpdateStaticIpsRequestBody Function({SdkOptional<bool> builds, SdkOptional<List<String>> regions}) get copyWith => _copyWith;
 
-  UpdateStaticIpsRequestBody _copyWith(
-          {Object? builds = sdkOmittedValue,
-          Object? regions = sdkOmittedValue}) =>
-      UpdateStaticIpsRequestBody(
-        builds: identical(builds, sdkOmittedValue)
-            ? this.builds
-            : builds as SdkOptional<bool>,
-        regions: identical(regions, sdkOmittedValue)
-            ? this.regions
-            : regions as SdkOptional<List<String>>,
-      );
+  UpdateStaticIpsRequestBody _copyWith({Object? builds = sdkOmittedValue, Object? regions = sdkOmittedValue}) => UpdateStaticIpsRequestBody(
+    builds: identical(builds, sdkOmittedValue) ? this.builds : builds as SdkOptional<bool>,
+    regions: identical(regions, sdkOmittedValue) ? this.regions : regions as SdkOptional<List<String>>,
+  );
 
-  factory UpdateStaticIpsRequestBody.fromJson(Map<String, dynamic> json) =>
-      UpdateStaticIpsRequestBody(
-        builds: json['builds'] != null
-            ? SdkPresent((json['builds'] as bool?)!)
-            : const SdkOmitted(),
-        regions: json['regions'] != null
-            ? SdkPresent(
-                ((json['regions'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateStaticIpsRequestBody.fromJson(Map<String, dynamic> json) => UpdateStaticIpsRequestBody(
+    builds: json['builds'] != null ? SdkPresent((json['builds'] as bool?)!) : const SdkOmitted(),
+    regions: json['regions'] != null ? SdkPresent(((json['regions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (builds) {
-          SdkPresent<bool>(value: final value) => {
-              'builds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (regions) {
-          SdkPresent<List<String>>(value: final value) => {
-              'regions': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (builds) {
+      SdkPresent<bool>(value: final value) => {'builds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (regions) {
+      SdkPresent<List<String>>(value: final value) => {'regions': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

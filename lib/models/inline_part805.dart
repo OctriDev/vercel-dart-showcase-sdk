@@ -8,116 +8,65 @@ part of 'inline.dart';
 class AddRouteRequestBodyPosition {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// "after"/"before" require referenceId.
   final SdkOptional<AddRouteRequestBodyPositionPlacement> placement;
-
   /// Route ID to insert after/before. Required for "after"/"before".
   final SdkOptional<String> referenceId;
 
-  const AddRouteRequestBodyPosition(
-      {this.placement = const SdkOmitted(),
-      this.referenceId = const SdkOmitted()});
+  const AddRouteRequestBodyPosition({this.placement = const SdkOmitted(), this.referenceId = const SdkOmitted()});
 
-  AddRouteRequestBodyPosition Function(
-      {SdkOptional<AddRouteRequestBodyPositionPlacement> placement,
-      SdkOptional<String> referenceId}) get copyWith => _copyWith;
+  AddRouteRequestBodyPosition Function({SdkOptional<AddRouteRequestBodyPositionPlacement> placement, SdkOptional<String> referenceId}) get copyWith => _copyWith;
 
-  AddRouteRequestBodyPosition _copyWith(
-          {Object? placement = sdkOmittedValue,
-          Object? referenceId = sdkOmittedValue}) =>
-      AddRouteRequestBodyPosition(
-        placement: identical(placement, sdkOmittedValue)
-            ? this.placement
-            : placement as SdkOptional<AddRouteRequestBodyPositionPlacement>,
-        referenceId: identical(referenceId, sdkOmittedValue)
-            ? this.referenceId
-            : referenceId as SdkOptional<String>,
-      );
+  AddRouteRequestBodyPosition _copyWith({Object? placement = sdkOmittedValue, Object? referenceId = sdkOmittedValue}) => AddRouteRequestBodyPosition(
+    placement: identical(placement, sdkOmittedValue) ? this.placement : placement as SdkOptional<AddRouteRequestBodyPositionPlacement>,
+    referenceId: identical(referenceId, sdkOmittedValue) ? this.referenceId : referenceId as SdkOptional<String>,
+  );
 
-  factory AddRouteRequestBodyPosition.fromJson(Map<String, dynamic> json) =>
-      AddRouteRequestBodyPosition(
-        placement: json['placement'] != null
-            ? SdkPresent((json['placement'] != null
-                ? AddRouteRequestBodyPositionPlacement.fromJson(
-                    json['placement'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        referenceId: json['referenceId'] != null
-            ? SdkPresent((json['referenceId'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory AddRouteRequestBodyPosition.fromJson(Map<String, dynamic> json) => AddRouteRequestBodyPosition(
+    placement: json['placement'] != null ? SdkPresent((json['placement'] != null ? AddRouteRequestBodyPositionPlacement.fromJson(json['placement'] as String) : null)!) : const SdkOmitted(),
+    referenceId: json['referenceId'] != null ? SdkPresent((json['referenceId'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (placement) {
-          SdkPresent<AddRouteRequestBodyPositionPlacement>(
-            value: final value
-          ) =>
-            {
-              'placement': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (referenceId) {
-          SdkPresent<String>(value: final value) => {
-              'referenceId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (placement) {
+      SdkPresent<AddRouteRequestBodyPositionPlacement>(value: final value) => {'placement': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (referenceId) {
+      SdkPresent<String>(value: final value) => {'referenceId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class AddRouteRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final AddRouteRequestBodyRoute route;
-
   /// Controls where the route is inserted. Defaults to "end" if omitted.
   final SdkOptional<AddRouteRequestBodyPosition> position;
 
-  const AddRouteRequestBody(
-      {required this.route, this.position = const SdkOmitted()});
+  const AddRouteRequestBody({required this.route, this.position = const SdkOmitted()});
 
-  AddRouteRequestBody Function(
-          {AddRouteRequestBodyRoute route,
-          SdkOptional<AddRouteRequestBodyPosition> position})
-      get copyWith => _copyWith;
+  AddRouteRequestBody Function({AddRouteRequestBodyRoute route, SdkOptional<AddRouteRequestBodyPosition> position}) get copyWith => _copyWith;
 
-  AddRouteRequestBody _copyWith(
-          {Object? route = sdkOmittedValue,
-          Object? position = sdkOmittedValue}) =>
-      AddRouteRequestBody(
-        route: identical(route, sdkOmittedValue)
-            ? this.route
-            : route as AddRouteRequestBodyRoute,
-        position: identical(position, sdkOmittedValue)
-            ? this.position
-            : position as SdkOptional<AddRouteRequestBodyPosition>,
-      );
+  AddRouteRequestBody _copyWith({Object? route = sdkOmittedValue, Object? position = sdkOmittedValue}) => AddRouteRequestBody(
+    route: identical(route, sdkOmittedValue) ? this.route : route as AddRouteRequestBodyRoute,
+    position: identical(position, sdkOmittedValue) ? this.position : position as SdkOptional<AddRouteRequestBodyPosition>,
+  );
 
-  factory AddRouteRequestBody.fromJson(Map<String, dynamic> json) =>
-      AddRouteRequestBody(
-        route: (json['route'] != null
-            ? AddRouteRequestBodyRoute.fromJson(
-                json['route'] as Map<String, dynamic>)
-            : null)!,
-        position: json['position'] != null
-            ? SdkPresent((json['position'] != null
-                ? AddRouteRequestBodyPosition.fromJson(
-                    json['position'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory AddRouteRequestBody.fromJson(Map<String, dynamic> json) => AddRouteRequestBody(
+    route: (json['route'] != null ? AddRouteRequestBodyRoute.fromJson(json['route'] as Map<String, dynamic>) : null)!,
+    position: json['position'] != null ? SdkPresent((json['position'] != null ? AddRouteRequestBodyPosition.fromJson(json['position'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'route': route.toJson(),
-        ...switch (position) {
-          SdkPresent<AddRouteRequestBodyPosition>(value: final value) => {
-              'position': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'route': route.toJson(),
+    ...switch (position) {
+      SdkPresent<AddRouteRequestBodyPosition>(value: final value) => {'position': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class AddRouteResponseRouteRouteLocale {
@@ -126,53 +75,30 @@ class AddRouteResponseRouteRouteLocale {
   final SdkOptional<String> cookie;
   final SdkOptional<Map<String, String>> redirect;
 
-  const AddRouteResponseRouteRouteLocale(
-      {this.cookie = const SdkOmitted(), this.redirect = const SdkOmitted()});
+  const AddRouteResponseRouteRouteLocale({this.cookie = const SdkOmitted(), this.redirect = const SdkOmitted()});
 
-  AddRouteResponseRouteRouteLocale Function(
-      {SdkOptional<String> cookie,
-      SdkOptional<Map<String, String>> redirect}) get copyWith => _copyWith;
+  AddRouteResponseRouteRouteLocale Function({SdkOptional<String> cookie, SdkOptional<Map<String, String>> redirect}) get copyWith => _copyWith;
 
-  AddRouteResponseRouteRouteLocale _copyWith(
-          {Object? cookie = sdkOmittedValue,
-          Object? redirect = sdkOmittedValue}) =>
-      AddRouteResponseRouteRouteLocale(
-        cookie: identical(cookie, sdkOmittedValue)
-            ? this.cookie
-            : cookie as SdkOptional<String>,
-        redirect: identical(redirect, sdkOmittedValue)
-            ? this.redirect
-            : redirect as SdkOptional<Map<String, String>>,
-      );
+  AddRouteResponseRouteRouteLocale _copyWith({Object? cookie = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => AddRouteResponseRouteRouteLocale(
+    cookie: identical(cookie, sdkOmittedValue) ? this.cookie : cookie as SdkOptional<String>,
+    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<Map<String, String>>,
+  );
 
-  factory AddRouteResponseRouteRouteLocale.fromJson(
-          Map<String, dynamic> json) =>
-      AddRouteResponseRouteRouteLocale(
-        cookie: json['cookie'] != null
-            ? SdkPresent((json['cookie'] as String?)!)
-            : const SdkOmitted(),
-        redirect: json['redirect'] != null
-            ? SdkPresent((json['redirect'] == null
-                ? null
-                : Map<String, dynamic>.from(json['redirect'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-      );
+  factory AddRouteResponseRouteRouteLocale.fromJson(Map<String, dynamic> json) => AddRouteResponseRouteRouteLocale(
+    cookie: json['cookie'] != null ? SdkPresent((json['cookie'] as String?)!) : const SdkOmitted(),
+    redirect: json['redirect'] != null ? SdkPresent((json['redirect'] == null ? null : Map<String, dynamic>.from(json['redirect'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (cookie) {
-          SdkPresent<String>(value: final value) => {
-              'cookie': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (redirect) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'redirect': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (cookie) {
+      SdkPresent<String>(value: final value) => {'cookie': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (redirect) {
+      SdkPresent<Map<String, String>>(value: final value) => {'redirect': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class AddRouteResponseRouteRouteMitigate {
@@ -182,28 +108,17 @@ class AddRouteResponseRouteRouteMitigate {
 
   const AddRouteResponseRouteRouteMitigate({required this.action});
 
-  AddRouteResponseRouteRouteMitigate Function(
-          {AddRouteResponseRouteRouteMitigateAction action})
-      get copyWith => _copyWith;
+  AddRouteResponseRouteRouteMitigate Function({AddRouteResponseRouteRouteMitigateAction action}) get copyWith => _copyWith;
 
-  AddRouteResponseRouteRouteMitigate _copyWith(
-          {Object? action = sdkOmittedValue}) =>
-      AddRouteResponseRouteRouteMitigate(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as AddRouteResponseRouteRouteMitigateAction,
-      );
+  AddRouteResponseRouteRouteMitigate _copyWith({Object? action = sdkOmittedValue}) => AddRouteResponseRouteRouteMitigate(
+    action: identical(action, sdkOmittedValue) ? this.action : action as AddRouteResponseRouteRouteMitigateAction,
+  );
 
-  factory AddRouteResponseRouteRouteMitigate.fromJson(
-          Map<String, dynamic> json) =>
-      AddRouteResponseRouteRouteMitigate(
-        action: (json['action'] != null
-            ? AddRouteResponseRouteRouteMitigateAction.fromJson(
-                json['action'] as String)
-            : null)!,
-      );
+  factory AddRouteResponseRouteRouteMitigate.fromJson(Map<String, dynamic> json) => AddRouteResponseRouteRouteMitigate(
+    action: (json['action'] != null ? AddRouteResponseRouteRouteMitigateAction.fromJson(json['action'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-      };
+    'action': action.toJson(),
+  };
 }

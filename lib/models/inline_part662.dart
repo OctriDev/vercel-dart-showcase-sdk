@@ -8,340 +8,176 @@ part of 'inline.dart';
 class GetCustomEnvironmentResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Configuration for matching git branches to this environment
   final SdkOptional<GetCustomEnvironmentResponseBranchMatcher> branchMatcher;
-
   /// Timestamp when the environment was created
   final double createdAt;
-
   /// List of aliases for the current deployment
   final SdkOptional<List<String>> currentDeploymentAliases;
-
   /// Optional description of the environment's purpose
   final SdkOptional<String> description;
-
   /// List of domains associated with this environment
   final SdkOptional<List<GetCustomEnvironmentResponseDomainsItem>> domains;
-
   /// Unique identifier for the custom environment (format: env_*)
   final String id;
-
   /// URL-friendly name of the environment
   final String slug;
-
   /// The type of environment (production, preview, or development)
   final GetCustomEnvironmentResponseType type_;
-
   /// Timestamp when the environment was last updated
   final double updatedAt;
 
-  const GetCustomEnvironmentResponse(
-      {this.branchMatcher = const SdkOmitted(),
-      required this.createdAt,
-      this.currentDeploymentAliases = const SdkOmitted(),
-      this.description = const SdkOmitted(),
-      this.domains = const SdkOmitted(),
-      required this.id,
-      required this.slug,
-      required this.type_,
-      required this.updatedAt});
+  const GetCustomEnvironmentResponse({this.branchMatcher = const SdkOmitted(), required this.createdAt, this.currentDeploymentAliases = const SdkOmitted(), this.description = const SdkOmitted(), this.domains = const SdkOmitted(), required this.id, required this.slug, required this.type_, required this.updatedAt});
 
-  GetCustomEnvironmentResponse Function(
-      {SdkOptional<GetCustomEnvironmentResponseBranchMatcher> branchMatcher,
-      double createdAt,
-      SdkOptional<List<String>> currentDeploymentAliases,
-      SdkOptional<String> description,
-      SdkOptional<List<GetCustomEnvironmentResponseDomainsItem>> domains,
-      String id,
-      String slug,
-      GetCustomEnvironmentResponseType type_,
-      double updatedAt}) get copyWith => _copyWith;
+  GetCustomEnvironmentResponse Function({SdkOptional<GetCustomEnvironmentResponseBranchMatcher> branchMatcher, double createdAt, SdkOptional<List<String>> currentDeploymentAliases, SdkOptional<String> description, SdkOptional<List<GetCustomEnvironmentResponseDomainsItem>> domains, String id, String slug, GetCustomEnvironmentResponseType type_, double updatedAt}) get copyWith => _copyWith;
 
-  GetCustomEnvironmentResponse _copyWith(
-          {Object? branchMatcher = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? currentDeploymentAliases = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? domains = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      GetCustomEnvironmentResponse(
-        branchMatcher: identical(branchMatcher, sdkOmittedValue)
-            ? this.branchMatcher
-            : branchMatcher
-                as SdkOptional<GetCustomEnvironmentResponseBranchMatcher>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        currentDeploymentAliases:
-            identical(currentDeploymentAliases, sdkOmittedValue)
-                ? this.currentDeploymentAliases
-                : currentDeploymentAliases as SdkOptional<List<String>>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        domains: identical(domains, sdkOmittedValue)
-            ? this.domains
-            : domains
-                as SdkOptional<List<GetCustomEnvironmentResponseDomainsItem>>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetCustomEnvironmentResponseType,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  GetCustomEnvironmentResponse _copyWith({Object? branchMatcher = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? currentDeploymentAliases = sdkOmittedValue, Object? description = sdkOmittedValue, Object? domains = sdkOmittedValue, Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => GetCustomEnvironmentResponse(
+    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<GetCustomEnvironmentResponseBranchMatcher>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    currentDeploymentAliases: identical(currentDeploymentAliases, sdkOmittedValue) ? this.currentDeploymentAliases : currentDeploymentAliases as SdkOptional<List<String>>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<List<GetCustomEnvironmentResponseDomainsItem>>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetCustomEnvironmentResponseType,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory GetCustomEnvironmentResponse.fromJson(Map<String, dynamic> json) =>
-      GetCustomEnvironmentResponse(
-        branchMatcher: json['branchMatcher'] != null
-            ? SdkPresent((json['branchMatcher'] != null
-                ? GetCustomEnvironmentResponseBranchMatcher.fromJson(
-                    json['branchMatcher'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        currentDeploymentAliases: json['currentDeploymentAliases'] != null
-            ? SdkPresent(((json['currentDeploymentAliases'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        domains: json['domains'] != null
-            ? SdkPresent(((json['domains'] as List?)
-                ?.map((e) => GetCustomEnvironmentResponseDomainsItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        type_: (json['type'] != null
-            ? GetCustomEnvironmentResponseType.fromJson(json['type'] as String)
-            : null)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory GetCustomEnvironmentResponse.fromJson(Map<String, dynamic> json) => GetCustomEnvironmentResponse(
+    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? GetCustomEnvironmentResponseBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    currentDeploymentAliases: json['currentDeploymentAliases'] != null ? SdkPresent(((json['currentDeploymentAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    domains: json['domains'] != null ? SdkPresent(((json['domains'] as List?)?.map((e) => GetCustomEnvironmentResponseDomainsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    type_: (json['type'] != null ? GetCustomEnvironmentResponseType.fromJson(json['type'] as String) : null)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (branchMatcher) {
-          SdkPresent<GetCustomEnvironmentResponseBranchMatcher>(
-            value: final value
-          ) =>
-            {
-              'branchMatcher': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        ...switch (currentDeploymentAliases) {
-          SdkPresent<List<String>>(value: final value) => {
-              'currentDeploymentAliases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (domains) {
-          SdkPresent<List<GetCustomEnvironmentResponseDomainsItem>>(
-            value: final value
-          ) =>
-            {
-              'domains': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'slug': slug,
-        'type': type_.toJson(),
-        'updatedAt': updatedAt,
-      };
+    ...switch (branchMatcher) {
+      SdkPresent<GetCustomEnvironmentResponseBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    ...switch (currentDeploymentAliases) {
+      SdkPresent<List<String>>(value: final value) => {'currentDeploymentAliases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (domains) {
+      SdkPresent<List<GetCustomEnvironmentResponseDomainsItem>>(value: final value) => {'domains': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'slug': slug,
+    'type': type_.toJson(),
+    'updatedAt': updatedAt,
+  };
 }
 
 /// How we want to determine a matching branch. This is optional.
 class UpdateCustomEnvironmentRequestBodyBranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Type of matcher. One of "equals", "startsWith", or "endsWith".
   final UpdateCustomEnvironmentRequestBodyBranchMatcherType type_;
-
   /// Git branch name or portion thereof.
   final String pattern;
 
-  const UpdateCustomEnvironmentRequestBodyBranchMatcher(
-      {required this.type_, required this.pattern});
+  const UpdateCustomEnvironmentRequestBodyBranchMatcher({required this.type_, required this.pattern});
 
-  UpdateCustomEnvironmentRequestBodyBranchMatcher Function(
-      {UpdateCustomEnvironmentRequestBodyBranchMatcherType type_,
-      String pattern}) get copyWith => _copyWith;
+  UpdateCustomEnvironmentRequestBodyBranchMatcher Function({UpdateCustomEnvironmentRequestBodyBranchMatcherType type_, String pattern}) get copyWith => _copyWith;
 
-  UpdateCustomEnvironmentRequestBodyBranchMatcher _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? pattern = sdkOmittedValue}) =>
-      UpdateCustomEnvironmentRequestBodyBranchMatcher(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateCustomEnvironmentRequestBodyBranchMatcherType,
-        pattern: identical(pattern, sdkOmittedValue)
-            ? this.pattern
-            : pattern as String,
-      );
+  UpdateCustomEnvironmentRequestBodyBranchMatcher _copyWith({Object? type_ = sdkOmittedValue, Object? pattern = sdkOmittedValue}) => UpdateCustomEnvironmentRequestBodyBranchMatcher(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateCustomEnvironmentRequestBodyBranchMatcherType,
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+  );
 
-  factory UpdateCustomEnvironmentRequestBodyBranchMatcher.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateCustomEnvironmentRequestBodyBranchMatcher(
-        type_: (json['type'] != null
-            ? UpdateCustomEnvironmentRequestBodyBranchMatcherType.fromJson(
-                json['type'] as String)
-            : null)!,
-        pattern: (json['pattern'] as String?)!,
-      );
+  factory UpdateCustomEnvironmentRequestBodyBranchMatcher.fromJson(Map<String, dynamic> json) => UpdateCustomEnvironmentRequestBodyBranchMatcher(
+    type_: (json['type'] != null ? UpdateCustomEnvironmentRequestBodyBranchMatcherType.fromJson(json['type'] as String) : null)!,
+    pattern: (json['pattern'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'pattern': pattern,
-      };
+    'type': type_.toJson(),
+    'pattern': pattern,
+  };
 }
 
 class UpdateCustomEnvironmentRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The slug of the custom environment.
   final SdkOptional<String> slug;
-
   /// Description of the custom environment. This is optional.
   final SdkOptional<String> description;
-
   /// How we want to determine a matching branch. This is optional.
-  final SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?>
-      branchMatcher;
+  final SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?> branchMatcher;
 
-  const UpdateCustomEnvironmentRequestBody(
-      {this.slug = const SdkOmitted(),
-      this.description = const SdkOmitted(),
-      this.branchMatcher = const SdkOmitted()});
+  const UpdateCustomEnvironmentRequestBody({this.slug = const SdkOmitted(), this.description = const SdkOmitted(), this.branchMatcher = const SdkOmitted()});
 
-  UpdateCustomEnvironmentRequestBody Function(
-      {SdkOptional<String> slug,
-      SdkOptional<String> description,
-      SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?>
-          branchMatcher}) get copyWith => _copyWith;
+  UpdateCustomEnvironmentRequestBody Function({SdkOptional<String> slug, SdkOptional<String> description, SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?> branchMatcher}) get copyWith => _copyWith;
 
-  UpdateCustomEnvironmentRequestBody _copyWith(
-          {Object? slug = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? branchMatcher = sdkOmittedValue}) =>
-      UpdateCustomEnvironmentRequestBody(
-        slug: identical(slug, sdkOmittedValue)
-            ? this.slug
-            : slug as SdkOptional<String>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        branchMatcher: identical(branchMatcher, sdkOmittedValue)
-            ? this.branchMatcher
-            : branchMatcher as SdkOptional<
-                UpdateCustomEnvironmentRequestBodyBranchMatcher?>,
-      );
+  UpdateCustomEnvironmentRequestBody _copyWith({Object? slug = sdkOmittedValue, Object? description = sdkOmittedValue, Object? branchMatcher = sdkOmittedValue}) => UpdateCustomEnvironmentRequestBody(
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?>,
+  );
 
-  factory UpdateCustomEnvironmentRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateCustomEnvironmentRequestBody(
-        slug: json['slug'] != null
-            ? SdkPresent((json['slug'] as String?)!)
-            : const SdkOmitted(),
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        branchMatcher: json.containsKey('branchMatcher')
-            ? SdkPresent(json['branchMatcher'] != null
-                ? UpdateCustomEnvironmentRequestBodyBranchMatcher.fromJson(
-                    json['branchMatcher'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-      );
+  factory UpdateCustomEnvironmentRequestBody.fromJson(Map<String, dynamic> json) => UpdateCustomEnvironmentRequestBody(
+    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    branchMatcher: json.containsKey('branchMatcher') ? SdkPresent(json['branchMatcher'] != null ? UpdateCustomEnvironmentRequestBodyBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (slug) {
-          SdkPresent<String>(value: final value) => {
-              'slug': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (branchMatcher) {
-          SdkPresent<UpdateCustomEnvironmentRequestBodyBranchMatcher?>(
-            value: final value
-          ) =>
-            {
-              'branchMatcher': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (slug) {
+      SdkPresent<String>(value: final value) => {'slug': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (branchMatcher) {
+      SdkPresent<UpdateCustomEnvironmentRequestBodyBranchMatcher?>(value: final value) => {'branchMatcher': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Configuration for matching git branches to this environment
 class UpdateCustomEnvironmentResponseBranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The pattern to match against branch names
   final String pattern;
-
   /// The type of matching to perform
   final UpdateCustomEnvironmentResponseBranchMatcherType type_;
 
-  const UpdateCustomEnvironmentResponseBranchMatcher(
-      {required this.pattern, required this.type_});
+  const UpdateCustomEnvironmentResponseBranchMatcher({required this.pattern, required this.type_});
 
-  UpdateCustomEnvironmentResponseBranchMatcher Function(
-          {String pattern,
-          UpdateCustomEnvironmentResponseBranchMatcherType type_})
-      get copyWith => _copyWith;
+  UpdateCustomEnvironmentResponseBranchMatcher Function({String pattern, UpdateCustomEnvironmentResponseBranchMatcherType type_}) get copyWith => _copyWith;
 
-  UpdateCustomEnvironmentResponseBranchMatcher _copyWith(
-          {Object? pattern = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UpdateCustomEnvironmentResponseBranchMatcher(
-        pattern: identical(pattern, sdkOmittedValue)
-            ? this.pattern
-            : pattern as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateCustomEnvironmentResponseBranchMatcherType,
-      );
+  UpdateCustomEnvironmentResponseBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateCustomEnvironmentResponseBranchMatcher(
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateCustomEnvironmentResponseBranchMatcherType,
+  );
 
-  factory UpdateCustomEnvironmentResponseBranchMatcher.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateCustomEnvironmentResponseBranchMatcher(
-        pattern: (json['pattern'] as String?)!,
-        type_: (json['type'] != null
-            ? UpdateCustomEnvironmentResponseBranchMatcherType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UpdateCustomEnvironmentResponseBranchMatcher.fromJson(Map<String, dynamic> json) => UpdateCustomEnvironmentResponseBranchMatcher(
+    pattern: (json['pattern'] as String?)!,
+    type_: (json['type'] != null ? UpdateCustomEnvironmentResponseBranchMatcherType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'pattern': pattern,
-        'type': type_.toJson(),
-      };
+    'pattern': pattern,
+    'type': type_.toJson(),
+  };
 }
 
 /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
@@ -353,45 +189,28 @@ class UpdateCustomEnvironmentResponseDomainsItemVerificationItem {
   final String type_;
   final String value;
 
-  const UpdateCustomEnvironmentResponseDomainsItemVerificationItem(
-      {required this.domain,
-      required this.reason,
-      required this.type_,
-      required this.value});
+  const UpdateCustomEnvironmentResponseDomainsItemVerificationItem({required this.domain, required this.reason, required this.type_, required this.value});
 
-  UpdateCustomEnvironmentResponseDomainsItemVerificationItem Function(
-      {String domain,
-      String reason,
-      String type_,
-      String value}) get copyWith => _copyWith;
+  UpdateCustomEnvironmentResponseDomainsItemVerificationItem Function({String domain, String reason, String type_, String value}) get copyWith => _copyWith;
 
-  UpdateCustomEnvironmentResponseDomainsItemVerificationItem _copyWith(
-          {Object? domain = sdkOmittedValue,
-          Object? reason = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      UpdateCustomEnvironmentResponseDomainsItemVerificationItem(
-        domain:
-            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-        reason:
-            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-      );
+  UpdateCustomEnvironmentResponseDomainsItemVerificationItem _copyWith({Object? domain = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateCustomEnvironmentResponseDomainsItemVerificationItem(
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory UpdateCustomEnvironmentResponseDomainsItemVerificationItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateCustomEnvironmentResponseDomainsItemVerificationItem(
-        domain: (json['domain'] as String?)!,
-        reason: (json['reason'] as String?)!,
-        type_: (json['type'] as String?)!,
-        value: (json['value'] as String?)!,
-      );
+  factory UpdateCustomEnvironmentResponseDomainsItemVerificationItem.fromJson(Map<String, dynamic> json) => UpdateCustomEnvironmentResponseDomainsItemVerificationItem(
+    domain: (json['domain'] as String?)!,
+    reason: (json['reason'] as String?)!,
+    type_: (json['type'] as String?)!,
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'domain': domain,
-        'reason': reason,
-        'type': type_,
-        'value': value,
-      };
+    'domain': domain,
+    'reason': reason,
+    'type': type_,
+    'value': value,
+  };
 }

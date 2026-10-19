@@ -11,30 +11,19 @@ class GetOrderResponseErrorVariant1Details {
 
   const GetOrderResponseErrorVariant1Details({required this.tlds});
 
-  GetOrderResponseErrorVariant1Details Function(
-          {List<GetOrderResponseErrorVariant1DetailsTldsItem> tlds})
-      get copyWith => _copyWith;
+  GetOrderResponseErrorVariant1Details Function({List<GetOrderResponseErrorVariant1DetailsTldsItem> tlds}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant1Details _copyWith(
-          {Object? tlds = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant1Details(
-        tlds: identical(tlds, sdkOmittedValue)
-            ? this.tlds
-            : tlds as List<GetOrderResponseErrorVariant1DetailsTldsItem>,
-      );
+  GetOrderResponseErrorVariant1Details _copyWith({Object? tlds = sdkOmittedValue}) => GetOrderResponseErrorVariant1Details(
+    tlds: identical(tlds, sdkOmittedValue) ? this.tlds : tlds as List<GetOrderResponseErrorVariant1DetailsTldsItem>,
+  );
 
-  factory GetOrderResponseErrorVariant1Details.fromJson(
-          Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant1Details(
-        tlds: ((json['tlds'] as List?)
-            ?.map((e) => GetOrderResponseErrorVariant1DetailsTldsItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory GetOrderResponseErrorVariant1Details.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant1Details(
+    tlds: ((json['tlds'] as List?)?.map((e) => GetOrderResponseErrorVariant1DetailsTldsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'tlds': tlds.map((item) => item.toJson()).toList(),
-      };
+    'tlds': tlds.map((item) => item.toJson()).toList(),
+  };
 }
 
 class GetOrderResponseErrorVariant1 {
@@ -43,40 +32,24 @@ class GetOrderResponseErrorVariant1 {
   final GetOrderResponseErrorVariant1Code code;
   final GetOrderResponseErrorVariant1Details details;
 
-  const GetOrderResponseErrorVariant1(
-      {required this.code, required this.details});
+  const GetOrderResponseErrorVariant1({required this.code, required this.details});
 
-  GetOrderResponseErrorVariant1 Function(
-      {GetOrderResponseErrorVariant1Code code,
-      GetOrderResponseErrorVariant1Details details}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant1 Function({GetOrderResponseErrorVariant1Code code, GetOrderResponseErrorVariant1Details details}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant1 _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? details = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant1(
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as GetOrderResponseErrorVariant1Code,
-        details: identical(details, sdkOmittedValue)
-            ? this.details
-            : details as GetOrderResponseErrorVariant1Details,
-      );
+  GetOrderResponseErrorVariant1 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseErrorVariant1(
+    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseErrorVariant1Code,
+    details: identical(details, sdkOmittedValue) ? this.details : details as GetOrderResponseErrorVariant1Details,
+  );
 
-  factory GetOrderResponseErrorVariant1.fromJson(Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant1(
-        code: (json['code'] != null
-            ? GetOrderResponseErrorVariant1Code.fromJson(json['code'] as String)
-            : null)!,
-        details: (json['details'] != null
-            ? GetOrderResponseErrorVariant1Details.fromJson(
-                json['details'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory GetOrderResponseErrorVariant1.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant1(
+    code: (json['code'] != null ? GetOrderResponseErrorVariant1Code.fromJson(json['code'] as String) : null)!,
+    details: (json['details'] != null ? GetOrderResponseErrorVariant1Details.fromJson(json['details'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code.toJson(),
-        'details': details.toJson(),
-      };
+    'code': code.toJson(),
+    'details': details.toJson(),
+  };
 }
 
 class GetOrderResponseErrorVariant2Details {
@@ -85,43 +58,27 @@ class GetOrderResponseErrorVariant2Details {
   final double expectedPrice;
   final SdkOptional<double> actualPrice;
 
-  const GetOrderResponseErrorVariant2Details(
-      {required this.expectedPrice, this.actualPrice = const SdkOmitted()});
+  const GetOrderResponseErrorVariant2Details({required this.expectedPrice, this.actualPrice = const SdkOmitted()});
 
-  GetOrderResponseErrorVariant2Details Function(
-      {double expectedPrice,
-      SdkOptional<double> actualPrice}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant2Details Function({double expectedPrice, SdkOptional<double> actualPrice}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant2Details _copyWith(
-          {Object? expectedPrice = sdkOmittedValue,
-          Object? actualPrice = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant2Details(
-        expectedPrice: identical(expectedPrice, sdkOmittedValue)
-            ? this.expectedPrice
-            : expectedPrice as double,
-        actualPrice: identical(actualPrice, sdkOmittedValue)
-            ? this.actualPrice
-            : actualPrice as SdkOptional<double>,
-      );
+  GetOrderResponseErrorVariant2Details _copyWith({Object? expectedPrice = sdkOmittedValue, Object? actualPrice = sdkOmittedValue}) => GetOrderResponseErrorVariant2Details(
+    expectedPrice: identical(expectedPrice, sdkOmittedValue) ? this.expectedPrice : expectedPrice as double,
+    actualPrice: identical(actualPrice, sdkOmittedValue) ? this.actualPrice : actualPrice as SdkOptional<double>,
+  );
 
-  factory GetOrderResponseErrorVariant2Details.fromJson(
-          Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant2Details(
-        expectedPrice: ((json['expectedPrice'] as num?)?.toDouble())!,
-        actualPrice: json['actualPrice'] != null
-            ? SdkPresent(((json['actualPrice'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory GetOrderResponseErrorVariant2Details.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant2Details(
+    expectedPrice: ((json['expectedPrice'] as num?)?.toDouble())!,
+    actualPrice: json['actualPrice'] != null ? SdkPresent(((json['actualPrice'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'expectedPrice': expectedPrice,
-        ...switch (actualPrice) {
-          SdkPresent<double>(value: final value) => {
-              'actualPrice': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'expectedPrice': expectedPrice,
+    ...switch (actualPrice) {
+      SdkPresent<double>(value: final value) => {'actualPrice': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetOrderResponseErrorVariant2 {
@@ -130,40 +87,24 @@ class GetOrderResponseErrorVariant2 {
   final GetOrderResponseErrorVariant2Code code;
   final GetOrderResponseErrorVariant2Details details;
 
-  const GetOrderResponseErrorVariant2(
-      {required this.code, required this.details});
+  const GetOrderResponseErrorVariant2({required this.code, required this.details});
 
-  GetOrderResponseErrorVariant2 Function(
-      {GetOrderResponseErrorVariant2Code code,
-      GetOrderResponseErrorVariant2Details details}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant2 Function({GetOrderResponseErrorVariant2Code code, GetOrderResponseErrorVariant2Details details}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant2 _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? details = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant2(
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as GetOrderResponseErrorVariant2Code,
-        details: identical(details, sdkOmittedValue)
-            ? this.details
-            : details as GetOrderResponseErrorVariant2Details,
-      );
+  GetOrderResponseErrorVariant2 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseErrorVariant2(
+    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseErrorVariant2Code,
+    details: identical(details, sdkOmittedValue) ? this.details : details as GetOrderResponseErrorVariant2Details,
+  );
 
-  factory GetOrderResponseErrorVariant2.fromJson(Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant2(
-        code: (json['code'] != null
-            ? GetOrderResponseErrorVariant2Code.fromJson(json['code'] as String)
-            : null)!,
-        details: (json['details'] != null
-            ? GetOrderResponseErrorVariant2Details.fromJson(
-                json['details'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory GetOrderResponseErrorVariant2.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant2(
+    code: (json['code'] != null ? GetOrderResponseErrorVariant2Code.fromJson(json['code'] as String) : null)!,
+    details: (json['details'] != null ? GetOrderResponseErrorVariant2Details.fromJson(json['details'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code.toJson(),
-        'details': details.toJson(),
-      };
+    'code': code.toJson(),
+    'details': details.toJson(),
+  };
 }
 
 class GetOrderResponseErrorVariant3 {
@@ -173,26 +114,19 @@ class GetOrderResponseErrorVariant3 {
 
   const GetOrderResponseErrorVariant3({required this.code});
 
-  GetOrderResponseErrorVariant3 Function(
-      {GetOrderResponseErrorVariant3Code code}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant3 Function({GetOrderResponseErrorVariant3Code code}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant3 _copyWith({Object? code = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant3(
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as GetOrderResponseErrorVariant3Code,
-      );
+  GetOrderResponseErrorVariant3 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseErrorVariant3(
+    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseErrorVariant3Code,
+  );
 
-  factory GetOrderResponseErrorVariant3.fromJson(Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant3(
-        code: (json['code'] != null
-            ? GetOrderResponseErrorVariant3Code.fromJson(json['code'] as String)
-            : null)!,
-      );
+  factory GetOrderResponseErrorVariant3.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant3(
+    code: (json['code'] != null ? GetOrderResponseErrorVariant3Code.fromJson(json['code'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code.toJson(),
-      };
+    'code': code.toJson(),
+  };
 }
 
 class GetOrderResponseErrorVariant4Details {
@@ -201,36 +135,24 @@ class GetOrderResponseErrorVariant4Details {
   final String message;
   final List<String> domainNames;
 
-  const GetOrderResponseErrorVariant4Details(
-      {required this.message, required this.domainNames});
+  const GetOrderResponseErrorVariant4Details({required this.message, required this.domainNames});
 
-  GetOrderResponseErrorVariant4Details Function(
-      {String message, List<String> domainNames}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant4Details Function({String message, List<String> domainNames}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant4Details _copyWith(
-          {Object? message = sdkOmittedValue,
-          Object? domainNames = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant4Details(
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-        domainNames: identical(domainNames, sdkOmittedValue)
-            ? this.domainNames
-            : domainNames as List<String>,
-      );
+  GetOrderResponseErrorVariant4Details _copyWith({Object? message = sdkOmittedValue, Object? domainNames = sdkOmittedValue}) => GetOrderResponseErrorVariant4Details(
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+    domainNames: identical(domainNames, sdkOmittedValue) ? this.domainNames : domainNames as List<String>,
+  );
 
-  factory GetOrderResponseErrorVariant4Details.fromJson(
-          Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant4Details(
-        message: (json['message'] as String?)!,
-        domainNames:
-            ((json['domainNames'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory GetOrderResponseErrorVariant4Details.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant4Details(
+    message: (json['message'] as String?)!,
+    domainNames: ((json['domainNames'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'message': message,
-        'domainNames': domainNames,
-      };
+    'message': message,
+    'domainNames': domainNames,
+  };
 }
 
 class GetOrderResponseErrorVariant4 {
@@ -239,40 +161,24 @@ class GetOrderResponseErrorVariant4 {
   final GetOrderResponseErrorVariant4Code code;
   final GetOrderResponseErrorVariant4Details details;
 
-  const GetOrderResponseErrorVariant4(
-      {required this.code, required this.details});
+  const GetOrderResponseErrorVariant4({required this.code, required this.details});
 
-  GetOrderResponseErrorVariant4 Function(
-      {GetOrderResponseErrorVariant4Code code,
-      GetOrderResponseErrorVariant4Details details}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant4 Function({GetOrderResponseErrorVariant4Code code, GetOrderResponseErrorVariant4Details details}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant4 _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? details = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant4(
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as GetOrderResponseErrorVariant4Code,
-        details: identical(details, sdkOmittedValue)
-            ? this.details
-            : details as GetOrderResponseErrorVariant4Details,
-      );
+  GetOrderResponseErrorVariant4 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseErrorVariant4(
+    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseErrorVariant4Code,
+    details: identical(details, sdkOmittedValue) ? this.details : details as GetOrderResponseErrorVariant4Details,
+  );
 
-  factory GetOrderResponseErrorVariant4.fromJson(Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant4(
-        code: (json['code'] != null
-            ? GetOrderResponseErrorVariant4Code.fromJson(json['code'] as String)
-            : null)!,
-        details: (json['details'] != null
-            ? GetOrderResponseErrorVariant4Details.fromJson(
-                json['details'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory GetOrderResponseErrorVariant4.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant4(
+    code: (json['code'] != null ? GetOrderResponseErrorVariant4Code.fromJson(json['code'] as String) : null)!,
+    details: (json['details'] != null ? GetOrderResponseErrorVariant4Details.fromJson(json['details'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code.toJson(),
-        'details': details.toJson(),
-      };
+    'code': code.toJson(),
+    'details': details.toJson(),
+  };
 }
 
 class GetOrderResponseErrorVariant5 {
@@ -282,26 +188,19 @@ class GetOrderResponseErrorVariant5 {
 
   const GetOrderResponseErrorVariant5({required this.code});
 
-  GetOrderResponseErrorVariant5 Function(
-      {GetOrderResponseErrorVariant5Code code}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant5 Function({GetOrderResponseErrorVariant5Code code}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant5 _copyWith({Object? code = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant5(
-        code: identical(code, sdkOmittedValue)
-            ? this.code
-            : code as GetOrderResponseErrorVariant5Code,
-      );
+  GetOrderResponseErrorVariant5 _copyWith({Object? code = sdkOmittedValue}) => GetOrderResponseErrorVariant5(
+    code: identical(code, sdkOmittedValue) ? this.code : code as GetOrderResponseErrorVariant5Code,
+  );
 
-  factory GetOrderResponseErrorVariant5.fromJson(Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant5(
-        code: (json['code'] != null
-            ? GetOrderResponseErrorVariant5Code.fromJson(json['code'] as String)
-            : null)!,
-      );
+  factory GetOrderResponseErrorVariant5.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant5(
+    code: (json['code'] != null ? GetOrderResponseErrorVariant5Code.fromJson(json['code'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code.toJson(),
-      };
+    'code': code.toJson(),
+  };
 }
 
 class GetOrderResponseErrorVariant6 {
@@ -310,39 +209,27 @@ class GetOrderResponseErrorVariant6 {
   final String code;
   final SdkOptional<dynamic> details;
 
-  const GetOrderResponseErrorVariant6(
-      {required this.code, this.details = const SdkOmitted()});
+  const GetOrderResponseErrorVariant6({required this.code, this.details = const SdkOmitted()});
 
-  GetOrderResponseErrorVariant6 Function(
-      {String code, SdkOptional<dynamic> details}) get copyWith => _copyWith;
+  GetOrderResponseErrorVariant6 Function({String code, SdkOptional<dynamic> details}) get copyWith => _copyWith;
 
-  GetOrderResponseErrorVariant6 _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? details = sdkOmittedValue}) =>
-      GetOrderResponseErrorVariant6(
-        code: identical(code, sdkOmittedValue) ? this.code : code as String,
-        details: identical(details, sdkOmittedValue)
-            ? this.details
-            : details as SdkOptional<dynamic>,
-      );
+  GetOrderResponseErrorVariant6 _copyWith({Object? code = sdkOmittedValue, Object? details = sdkOmittedValue}) => GetOrderResponseErrorVariant6(
+    code: identical(code, sdkOmittedValue) ? this.code : code as String,
+    details: identical(details, sdkOmittedValue) ? this.details : details as SdkOptional<dynamic>,
+  );
 
-  factory GetOrderResponseErrorVariant6.fromJson(Map<String, dynamic> json) =>
-      GetOrderResponseErrorVariant6(
-        code: (json['code'] as String?)!,
-        details: json['details'] != null
-            ? SdkPresent((json['details'])!)
-            : const SdkOmitted(),
-      );
+  factory GetOrderResponseErrorVariant6.fromJson(Map<String, dynamic> json) => GetOrderResponseErrorVariant6(
+    code: (json['code'] as String?)!,
+    details: json['details'] != null ? SdkPresent((json['details'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'code': code,
-        ...switch (details) {
-          SdkPresent<dynamic>(value: final value) => {
-              'details': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'code': code,
+    ...switch (details) {
+      SdkPresent<dynamic>(value: final value) => {'details': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class GetOrderResponseError {
@@ -351,118 +238,52 @@ sealed class GetOrderResponseError {
   const GetOrderResponseError();
   factory GetOrderResponseError.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = GetOrderResponseErrorVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseErrorGetOrderResponseErrorVariant0(value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseErrorVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseErrorGetOrderResponseErrorVariant1(value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseErrorVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseErrorGetOrderResponseErrorVariant2(value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseErrorVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseErrorGetOrderResponseErrorVariant3(value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseErrorVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseErrorGetOrderResponseErrorVariant4(value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseErrorVariant5.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseErrorGetOrderResponseErrorVariant5(value);
-        }
-      } catch (_) {}
-      try {
-        final value = GetOrderResponseErrorVariant6.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetOrderResponseErrorGetOrderResponseErrorVariant6(value);
-        }
-      } catch (_) {}
+      try { final value = GetOrderResponseErrorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant0(value); } } catch (_) {}
+      try { final value = GetOrderResponseErrorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant1(value); } } catch (_) {}
+      try { final value = GetOrderResponseErrorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant2(value); } } catch (_) {}
+      try { final value = GetOrderResponseErrorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant3(value); } } catch (_) {}
+      try { final value = GetOrderResponseErrorVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant4(value); } } catch (_) {}
+      try { final value = GetOrderResponseErrorVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant5(value); } } catch (_) {}
+      try { final value = GetOrderResponseErrorVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetOrderResponseErrorGetOrderResponseErrorVariant6(value); } } catch (_) {}
     }
-    try {
-      return GetOrderResponseErrorGetOrderResponseErrorVariant0(
-          GetOrderResponseErrorVariant0.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseErrorGetOrderResponseErrorVariant1(
-          GetOrderResponseErrorVariant1.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseErrorGetOrderResponseErrorVariant2(
-          GetOrderResponseErrorVariant2.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseErrorGetOrderResponseErrorVariant3(
-          GetOrderResponseErrorVariant3.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseErrorGetOrderResponseErrorVariant4(
-          GetOrderResponseErrorVariant4.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseErrorGetOrderResponseErrorVariant5(
-          GetOrderResponseErrorVariant5.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetOrderResponseErrorGetOrderResponseErrorVariant6(
-          GetOrderResponseErrorVariant6.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return GetOrderResponseErrorGetOrderResponseErrorVariant0(GetOrderResponseErrorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseErrorGetOrderResponseErrorVariant1(GetOrderResponseErrorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseErrorGetOrderResponseErrorVariant2(GetOrderResponseErrorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseErrorGetOrderResponseErrorVariant3(GetOrderResponseErrorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseErrorGetOrderResponseErrorVariant4(GetOrderResponseErrorVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseErrorGetOrderResponseErrorVariant5(GetOrderResponseErrorVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetOrderResponseErrorGetOrderResponseErrorVariant6(GetOrderResponseErrorVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for GetOrderResponseError");
   }
   Object? toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant0
-    extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant0 extends GetOrderResponseError {
   final GetOrderResponseErrorVariant0 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant1
-    extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant1 extends GetOrderResponseError {
   final GetOrderResponseErrorVariant1 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant2
-    extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant2 extends GetOrderResponseError {
   final GetOrderResponseErrorVariant2 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant2(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant3
-    extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant3 extends GetOrderResponseError {
   final GetOrderResponseErrorVariant3 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant3(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetOrderResponseErrorGetOrderResponseErrorVariant4
-    extends GetOrderResponseError {
+final class GetOrderResponseErrorGetOrderResponseErrorVariant4 extends GetOrderResponseError {
   final GetOrderResponseErrorVariant4 value;
   const GetOrderResponseErrorGetOrderResponseErrorVariant4(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }

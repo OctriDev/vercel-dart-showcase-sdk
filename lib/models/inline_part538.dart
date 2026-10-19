@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope {
   aliasProtectionOverride;
 
-  static ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope
-      fromJson(String value) {
+  static ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope fromJson(String value) {
     switch (value) {
-      case 'alias-protection-override':
-        return ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope
-            .aliasProtectionOverride;
-      default:
-        throw ArgumentError(
-            'Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope: $value');
+      case 'alias-protection-override': return ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope.aliasProtectionOverride;
+      default: throw ArgumentError('Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope
-            .aliasProtectionOverride:
-        return 'alias-protection-override';
+      case ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope.aliasProtectionOverride: return 'alias-protection-override';
     }
   }
 
@@ -34,23 +27,16 @@ enum ListAliasesResponseAliasesItemProtectionBypassValueVariant2Scope {
 enum ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope {
   emailInvite;
 
-  static ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope
-      fromJson(String value) {
+  static ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope fromJson(String value) {
     switch (value) {
-      case 'email_invite':
-        return ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope
-            .emailInvite;
-      default:
-        throw ArgumentError(
-            'Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope: $value');
+      case 'email_invite': return ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope.emailInvite;
+      default: throw ArgumentError('Unknown ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope
-            .emailInvite:
-        return 'email_invite';
+      case ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope.emailInvite: return 'email_invite';
     }
   }
 
@@ -60,13 +46,12 @@ enum ListAliasesResponseAliasesItemProtectionBypassValueVariant3Scope {
 
 /// Status code to be used on redirect
 final class ListAliasesResponseAliasesItemRedirectStatusCode {
+
   final double value;
 
   const ListAliasesResponseAliasesItemRedirectStatusCode._(this.value);
 
-  factory ListAliasesResponseAliasesItemRedirectStatusCode.fromJson(
-          double value) =>
-      ListAliasesResponseAliasesItemRedirectStatusCode._(value);
+  factory ListAliasesResponseAliasesItemRedirectStatusCode.fromJson(double value) => ListAliasesResponseAliasesItemRedirectStatusCode._(value);
 
   static const v301 = ListAliasesResponseAliasesItemRedirectStatusCode._(301);
   static const v302 = ListAliasesResponseAliasesItemRedirectStatusCode._(302);
@@ -75,36 +60,27 @@ final class ListAliasesResponseAliasesItemRedirectStatusCode {
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListAliasesResponseAliasesItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListAliasesResponseAliasesItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetAliasResponseProtectionBypassValueVariant0Scope {
   shareableLink;
 
-  static GetAliasResponseProtectionBypassValueVariant0Scope fromJson(
-      String value) {
+  static GetAliasResponseProtectionBypassValueVariant0Scope fromJson(String value) {
     switch (value) {
-      case 'shareable-link':
-        return GetAliasResponseProtectionBypassValueVariant0Scope.shareableLink;
-      default:
-        throw ArgumentError(
-            'Unknown GetAliasResponseProtectionBypassValueVariant0Scope: $value');
+      case 'shareable-link': return GetAliasResponseProtectionBypassValueVariant0Scope.shareableLink;
+      default: throw ArgumentError('Unknown GetAliasResponseProtectionBypassValueVariant0Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetAliasResponseProtectionBypassValueVariant0Scope.shareableLink:
-        return 'shareable-link';
+      case GetAliasResponseProtectionBypassValueVariant0Scope.shareableLink: return 'shareable-link';
     }
   }
 
@@ -113,51 +89,39 @@ enum GetAliasResponseProtectionBypassValueVariant0Scope {
 }
 
 final class GetAliasResponseProtectionBypassValueVariant1Access {
+
   final String value;
 
   const GetAliasResponseProtectionBypassValueVariant1Access._(this.value);
 
-  factory GetAliasResponseProtectionBypassValueVariant1Access.fromJson(
-          String value) =>
-      GetAliasResponseProtectionBypassValueVariant1Access._(value);
+  factory GetAliasResponseProtectionBypassValueVariant1Access.fromJson(String value) => GetAliasResponseProtectionBypassValueVariant1Access._(value);
 
-  static const granted =
-      GetAliasResponseProtectionBypassValueVariant1Access._('granted');
-  static const requested =
-      GetAliasResponseProtectionBypassValueVariant1Access._('requested');
+  static const granted = GetAliasResponseProtectionBypassValueVariant1Access._('granted');
+  static const requested = GetAliasResponseProtectionBypassValueVariant1Access._('requested');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetAliasResponseProtectionBypassValueVariant1Access &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetAliasResponseProtectionBypassValueVariant1Access && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetAliasResponseProtectionBypassValueVariant1Scope {
   user;
 
-  static GetAliasResponseProtectionBypassValueVariant1Scope fromJson(
-      String value) {
+  static GetAliasResponseProtectionBypassValueVariant1Scope fromJson(String value) {
     switch (value) {
-      case 'user':
-        return GetAliasResponseProtectionBypassValueVariant1Scope.user;
-      default:
-        throw ArgumentError(
-            'Unknown GetAliasResponseProtectionBypassValueVariant1Scope: $value');
+      case 'user': return GetAliasResponseProtectionBypassValueVariant1Scope.user;
+      default: throw ArgumentError('Unknown GetAliasResponseProtectionBypassValueVariant1Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetAliasResponseProtectionBypassValueVariant1Scope.user:
-        return 'user';
+      case GetAliasResponseProtectionBypassValueVariant1Scope.user: return 'user';
     }
   }
 
@@ -168,23 +132,16 @@ enum GetAliasResponseProtectionBypassValueVariant1Scope {
 enum GetAliasResponseProtectionBypassValueVariant2Scope {
   aliasProtectionOverride;
 
-  static GetAliasResponseProtectionBypassValueVariant2Scope fromJson(
-      String value) {
+  static GetAliasResponseProtectionBypassValueVariant2Scope fromJson(String value) {
     switch (value) {
-      case 'alias-protection-override':
-        return GetAliasResponseProtectionBypassValueVariant2Scope
-            .aliasProtectionOverride;
-      default:
-        throw ArgumentError(
-            'Unknown GetAliasResponseProtectionBypassValueVariant2Scope: $value');
+      case 'alias-protection-override': return GetAliasResponseProtectionBypassValueVariant2Scope.aliasProtectionOverride;
+      default: throw ArgumentError('Unknown GetAliasResponseProtectionBypassValueVariant2Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetAliasResponseProtectionBypassValueVariant2Scope
-            .aliasProtectionOverride:
-        return 'alias-protection-override';
+      case GetAliasResponseProtectionBypassValueVariant2Scope.aliasProtectionOverride: return 'alias-protection-override';
     }
   }
 
@@ -195,21 +152,16 @@ enum GetAliasResponseProtectionBypassValueVariant2Scope {
 enum GetAliasResponseProtectionBypassValueVariant3Scope {
   emailInvite;
 
-  static GetAliasResponseProtectionBypassValueVariant3Scope fromJson(
-      String value) {
+  static GetAliasResponseProtectionBypassValueVariant3Scope fromJson(String value) {
     switch (value) {
-      case 'email_invite':
-        return GetAliasResponseProtectionBypassValueVariant3Scope.emailInvite;
-      default:
-        throw ArgumentError(
-            'Unknown GetAliasResponseProtectionBypassValueVariant3Scope: $value');
+      case 'email_invite': return GetAliasResponseProtectionBypassValueVariant3Scope.emailInvite;
+      default: throw ArgumentError('Unknown GetAliasResponseProtectionBypassValueVariant3Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetAliasResponseProtectionBypassValueVariant3Scope.emailInvite:
-        return 'email_invite';
+      case GetAliasResponseProtectionBypassValueVariant3Scope.emailInvite: return 'email_invite';
     }
   }
 
@@ -219,12 +171,12 @@ enum GetAliasResponseProtectionBypassValueVariant3Scope {
 
 /// Status code to be used on redirect
 final class GetAliasResponseRedirectStatusCode {
+
   final double value;
 
   const GetAliasResponseRedirectStatusCode._(this.value);
 
-  factory GetAliasResponseRedirectStatusCode.fromJson(double value) =>
-      GetAliasResponseRedirectStatusCode._(value);
+  factory GetAliasResponseRedirectStatusCode.fromJson(double value) => GetAliasResponseRedirectStatusCode._(value);
 
   static const v301 = GetAliasResponseRedirectStatusCode._(301);
   static const v302 = GetAliasResponseRedirectStatusCode._(302);
@@ -233,50 +185,43 @@ final class GetAliasResponseRedirectStatusCode {
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetAliasResponseRedirectStatusCode && other.value == value;
+  @override bool operator ==(Object other) => other is GetAliasResponseRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.
 final class CreateSandboxesV4RequestBodyArchitecture {
+
   final String value;
 
   const CreateSandboxesV4RequestBodyArchitecture._(this.value);
 
-  factory CreateSandboxesV4RequestBodyArchitecture.fromJson(String value) =>
-      CreateSandboxesV4RequestBodyArchitecture._(value);
+  factory CreateSandboxesV4RequestBodyArchitecture.fromJson(String value) => CreateSandboxesV4RequestBodyArchitecture._(value);
 
   static const amd64 = CreateSandboxesV4RequestBodyArchitecture._('amd64');
   static const arm64 = CreateSandboxesV4RequestBodyArchitecture._('arm64');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSandboxesV4RequestBodyArchitecture && other.value == value;
+  @override bool operator ==(Object other) => other is CreateSandboxesV4RequestBodyArchitecture && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateSandboxesV4RequestBodyFailoverRegionsItem {
+
   final String value;
 
   const CreateSandboxesV4RequestBodyFailoverRegionsItem._(this.value);
 
-  factory CreateSandboxesV4RequestBodyFailoverRegionsItem.fromJson(
-          String value) =>
-      CreateSandboxesV4RequestBodyFailoverRegionsItem._(value);
+  factory CreateSandboxesV4RequestBodyFailoverRegionsItem.fromJson(String value) => CreateSandboxesV4RequestBodyFailoverRegionsItem._(value);
 
   static const iad1 = CreateSandboxesV4RequestBodyFailoverRegionsItem._('iad1');
   static const sfo1 = CreateSandboxesV4RequestBodyFailoverRegionsItem._('sfo1');
@@ -300,42 +245,32 @@ final class CreateSandboxesV4RequestBodyFailoverRegionsItem {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSandboxesV4RequestBodyFailoverRegionsItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateSandboxesV4RequestBodyFailoverRegionsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.
 final class CreateSandboxesV4RequestBodyMountsValueMode {
+
   final String value;
 
   const CreateSandboxesV4RequestBodyMountsValueMode._(this.value);
 
-  factory CreateSandboxesV4RequestBodyMountsValueMode.fromJson(String value) =>
-      CreateSandboxesV4RequestBodyMountsValueMode._(value);
+  factory CreateSandboxesV4RequestBodyMountsValueMode.fromJson(String value) => CreateSandboxesV4RequestBodyMountsValueMode._(value);
 
-  static const snapshot =
-      CreateSandboxesV4RequestBodyMountsValueMode._('snapshot');
-  static const readWrite =
-      CreateSandboxesV4RequestBodyMountsValueMode._('read-write');
+  static const snapshot = CreateSandboxesV4RequestBodyMountsValueMode._('snapshot');
+  static const readWrite = CreateSandboxesV4RequestBodyMountsValueMode._('read-write');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSandboxesV4RequestBodyMountsValueMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateSandboxesV4RequestBodyMountsValueMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

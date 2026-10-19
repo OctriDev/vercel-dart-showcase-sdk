@@ -9,18 +9,14 @@ enum CreateDrainResponseVariant1SourceVariant1Kind {
 
   static CreateDrainResponseVariant1SourceVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return CreateDrainResponseVariant1SourceVariant1Kind.integration;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDrainResponseVariant1SourceVariant1Kind: $value');
+      case 'integration': return CreateDrainResponseVariant1SourceVariant1Kind.integration;
+      default: throw ArgumentError('Unknown CreateDrainResponseVariant1SourceVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant1SourceVariant1Kind.integration:
-        return 'integration';
+      case CreateDrainResponseVariant1SourceVariant1Kind.integration: return 'integration';
     }
   }
 
@@ -29,12 +25,12 @@ enum CreateDrainResponseVariant1SourceVariant1Kind {
 }
 
 final class CreateDrainResponseVariant1Status {
+
   final String value;
 
   const CreateDrainResponseVariant1Status._(this.value);
 
-  factory CreateDrainResponseVariant1Status.fromJson(String value) =>
-      CreateDrainResponseVariant1Status._(value);
+  factory CreateDrainResponseVariant1Status.fromJson(String value) => CreateDrainResponseVariant1Status._(value);
 
   static const disabled = CreateDrainResponseVariant1Status._('disabled');
   static const enabled = CreateDrainResponseVariant1Status._('enabled');
@@ -42,15 +38,12 @@ final class CreateDrainResponseVariant1Status {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainResponseVariant1Status && other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainResponseVariant1Status && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateEventRequestEventVariant0Type {
@@ -58,18 +51,14 @@ enum CreateEventRequestEventVariant0Type {
 
   static CreateEventRequestEventVariant0Type fromJson(String value) {
     switch (value) {
-      case 'installation.updated':
-        return CreateEventRequestEventVariant0Type.installationUpdated;
-      default:
-        throw ArgumentError(
-            'Unknown CreateEventRequestEventVariant0Type: $value');
+      case 'installation.updated': return CreateEventRequestEventVariant0Type.installationUpdated;
+      default: throw ArgumentError('Unknown CreateEventRequestEventVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateEventRequestEventVariant0Type.installationUpdated:
-        return 'installation.updated';
+      case CreateEventRequestEventVariant0Type.installationUpdated: return 'installation.updated';
     }
   }
 
@@ -82,18 +71,14 @@ enum CreateEventRequestEventVariant1Type {
 
   static CreateEventRequestEventVariant1Type fromJson(String value) {
     switch (value) {
-      case 'resource.updated':
-        return CreateEventRequestEventVariant1Type.resourceUpdated;
-      default:
-        throw ArgumentError(
-            'Unknown CreateEventRequestEventVariant1Type: $value');
+      case 'resource.updated': return CreateEventRequestEventVariant1Type.resourceUpdated;
+      default: throw ArgumentError('Unknown CreateEventRequestEventVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateEventRequestEventVariant1Type.resourceUpdated:
-        return 'resource.updated';
+      case CreateEventRequestEventVariant1Type.resourceUpdated: return 'resource.updated';
     }
   }
 
@@ -102,58 +87,39 @@ enum CreateEventRequestEventVariant1Type {
 }
 
 final class CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type {
+
   final String value;
 
-  const CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._(
-      this.value);
+  const CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._(this.value);
 
-  factory CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type.fromJson(
-          String value) =>
-      CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._(
-          value);
+  factory CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type.fromJson(String value) => CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._(value);
 
-  static const listInline =
-      CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._(
-          'list/inline');
-  static const list =
-      CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._(
-          'list');
+  static const listInline = CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._('list/inline');
+  static const list = CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type._('list');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentRequestDataRulesItemConditionsItemRhsVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type {
   segment;
 
-  static CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type
-      fromJson(String value) {
+  static CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type fromJson(String value) {
     switch (value) {
-      case 'segment':
-        return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type
-            .segment;
-      default:
-        throw ArgumentError(
-            'Unknown CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type: $value');
+      case 'segment': return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type.segment;
+      default: throw ArgumentError('Unknown CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type
-            .segment:
-        return 'segment';
+      case CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type.segment: return 'segment';
     }
   }
 
@@ -164,23 +130,16 @@ enum CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant0Type {
 enum CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type {
   entity;
 
-  static CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type
-      fromJson(String value) {
+  static CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type fromJson(String value) {
     switch (value) {
-      case 'entity':
-        return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type
-            .entity;
-      default:
-        throw ArgumentError(
-            'Unknown CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type: $value');
+      case 'entity': return CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type.entity;
+      default: throw ArgumentError('Unknown CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type
-            .entity:
-        return 'entity';
+      case CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type.entity: return 'entity';
     }
   }
 
@@ -189,116 +148,80 @@ enum CreateFlagSegmentResponseDataRulesItemConditionsItemLhsVariant1Type {
 }
 
 final class CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type {
+
   final String value;
 
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._(
-      this.value);
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._(this.value);
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type.fromJson(
-          String value) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._(
-          value);
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type.fromJson(String value) => CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._(value);
 
-  static const list =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._(
-          'list');
-  static const listInline =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._(
-          'list/inline');
+  static const list = CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._('list');
+  static const listInline = CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type._('list/inline');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant2Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type {
+
   final String value;
 
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type._(
-      this.value);
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type._(this.value);
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type.fromJson(
-          String value) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type._(
-          value);
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type.fromJson(String value) => CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type._(value);
 
-  static const regex =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type._(
-          'regex');
+  static const regex = CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type._('regex');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant3Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4 {
+
   final bool value;
 
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(
-      this.value);
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(this.value);
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4.fromJson(
-          bool value) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(value);
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4.fromJson(bool value) => CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(value);
 
-  static const false_ =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(false);
-  static const true_ =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(true);
+  static const false_ = CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(false);
+  static const true_ = CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentResponseDataRulesItemConditionsItemRhsVariant4 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type {
   all;
 
-  static CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type fromJson(
-      String value) {
+  static CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type fromJson(String value) {
     switch (value) {
-      case 'all':
-        return CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type.all;
-      default:
-        throw ArgumentError(
-            'Unknown CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type: $value');
+      case 'all': return CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type.all;
+      default: throw ArgumentError('Unknown CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type.all:
-        return 'all';
+      case CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type.all: return 'all';
     }
   }
 
@@ -307,50 +230,38 @@ enum CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type {
 }
 
 final class CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType {
+
   final String value;
 
-  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType._(
-      this.value);
+  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType._(this.value);
 
-  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType.fromJson(
-          String value) =>
-      CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType._(value);
+  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType.fromJson(String value) => CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType._(value);
 
-  static const entity =
-      CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType._('entity');
+  static const entity = CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType._('entity');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type {
   split;
 
-  static CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type fromJson(
-      String value) {
+  static CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type fromJson(String value) {
     switch (value) {
-      case 'split':
-        return CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type.split;
-      default:
-        throw ArgumentError(
-            'Unknown CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type: $value');
+      case 'split': return CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type.split;
+      default: throw ArgumentError('Unknown CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type.split:
-        return 'split';
+      case CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type.split: return 'split';
     }
   }
 
@@ -359,31 +270,21 @@ enum CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type {
 }
 
 final class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1 {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1
-          ._(false);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

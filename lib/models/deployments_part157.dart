@@ -7,9 +7,7 @@ part of 'deployments.dart';
 class GetDeploymentResponseVariant2GitSourceVariant17 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata>
-      commitMetadata;
+  final SdkOptional<GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata> commitMetadata;
   final String org;
   final String ref;
   final String repo;
@@ -18,112 +16,51 @@ class GetDeploymentResponseVariant2GitSourceVariant17 {
   final String sha;
   final GetDeploymentResponseVariant2GitSourceVariant17Type type_;
 
-  const GetDeploymentResponseVariant2GitSourceVariant17(
-      {this.commitMetadata = const SdkOmitted(),
-      required this.org,
-      required this.ref,
-      required this.repo,
-      this.repoId = const SdkOmitted(),
-      this.repoPushedAt = const SdkOmitted(),
-      required this.sha,
-      required this.type_});
+  const GetDeploymentResponseVariant2GitSourceVariant17({this.commitMetadata = const SdkOmitted(), required this.org, required this.ref, required this.repo, this.repoId = const SdkOmitted(), this.repoPushedAt = const SdkOmitted(), required this.sha, required this.type_});
 
-  GetDeploymentResponseVariant2GitSourceVariant17 Function(
-          {SdkOptional<
-                  GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata>
-              commitMetadata,
-          String org,
-          String ref,
-          String repo,
-          SdkOptional<String> repoId,
-          SdkOptional<double> repoPushedAt,
-          String sha,
-          GetDeploymentResponseVariant2GitSourceVariant17Type type_})
-      get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant17 Function({SdkOptional<GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata> commitMetadata, String org, String ref, String repo, SdkOptional<String> repoId, SdkOptional<double> repoPushedAt, String sha, GetDeploymentResponseVariant2GitSourceVariant17Type type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant17 _copyWith(
-          {Object? commitMetadata = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? repoPushedAt = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetDeploymentResponseVariant2GitSourceVariant17(
-        commitMetadata: identical(commitMetadata, sdkOmittedValue)
-            ? this.commitMetadata
-            : commitMetadata as SdkOptional<
-                GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata>,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as SdkOptional<String>,
-        repoPushedAt: identical(repoPushedAt, sdkOmittedValue)
-            ? this.repoPushedAt
-            : repoPushedAt as SdkOptional<double>,
-        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDeploymentResponseVariant2GitSourceVariant17Type,
-      );
+  GetDeploymentResponseVariant2GitSourceVariant17 _copyWith({Object? commitMetadata = sdkOmittedValue, Object? org = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoPushedAt = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant17(
+    commitMetadata: identical(commitMetadata, sdkOmittedValue) ? this.commitMetadata : commitMetadata as SdkOptional<GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata>,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<String>,
+    repoPushedAt: identical(repoPushedAt, sdkOmittedValue) ? this.repoPushedAt : repoPushedAt as SdkOptional<double>,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant2GitSourceVariant17Type,
+  );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant17.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentResponseVariant2GitSourceVariant17(
-        commitMetadata: json['commitMetadata'] != null
-            ? SdkPresent((json['commitMetadata'] != null
-                ? GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata
-                    .fromJson(json['commitMetadata'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        org: (json['org'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: json['repoId'] != null
-            ? SdkPresent((json['repoId'] as String?)!)
-            : const SdkOmitted(),
-        repoPushedAt: json['repoPushedAt'] != null
-            ? SdkPresent(((json['repoPushedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        sha: (json['sha'] as String?)!,
-        type_: (json['type'] != null
-            ? GetDeploymentResponseVariant2GitSourceVariant17Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetDeploymentResponseVariant2GitSourceVariant17.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant17(
+    commitMetadata: json['commitMetadata'] != null ? SdkPresent((json['commitMetadata'] != null ? GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata.fromJson(json['commitMetadata'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    org: (json['org'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: json['repoId'] != null ? SdkPresent((json['repoId'] as String?)!) : const SdkOmitted(),
+    repoPushedAt: json['repoPushedAt'] != null ? SdkPresent(((json['repoPushedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    sha: (json['sha'] as String?)!,
+    type_: (json['type'] != null ? GetDeploymentResponseVariant2GitSourceVariant17Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (commitMetadata) {
-          SdkPresent<
-                GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata>(
-            value: final value
-          ) =>
-            {
-              'commitMetadata': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'org': org,
-        'ref': ref,
-        'repo': repo,
-        ...switch (repoId) {
-          SdkPresent<String>(value: final value) => {
-              'repoId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (repoPushedAt) {
-          SdkPresent<double>(value: final value) => {
-              'repoPushedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'sha': sha,
-        'type': type_.toJson(),
-      };
+    ...switch (commitMetadata) {
+      SdkPresent<GetDeploymentResponseVariant2GitSourceVariant17CommitMetadata>(value: final value) => {'commitMetadata': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'org': org,
+    'ref': ref,
+    'repo': repo,
+    ...switch (repoId) {
+      SdkPresent<String>(value: final value) => {'repoId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (repoPushedAt) {
+      SdkPresent<double>(value: final value) => {'repoPushedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'sha': sha,
+    'type': type_.toJson(),
+  };
 }
 
 class GetDeploymentResponseVariant2GitSourceVariant18 {
@@ -136,64 +73,36 @@ class GetDeploymentResponseVariant2GitSourceVariant18 {
   final String sha;
   final GetDeploymentResponseVariant2GitSourceVariant18Type type_;
 
-  const GetDeploymentResponseVariant2GitSourceVariant18(
-      {required this.owner,
-      required this.ref,
-      required this.repo,
-      required this.repoId,
-      required this.sha,
-      required this.type_});
+  const GetDeploymentResponseVariant2GitSourceVariant18({required this.owner, required this.ref, required this.repo, required this.repoId, required this.sha, required this.type_});
 
-  GetDeploymentResponseVariant2GitSourceVariant18 Function(
-          {String owner,
-          String ref,
-          String repo,
-          String repoId,
-          String sha,
-          GetDeploymentResponseVariant2GitSourceVariant18Type type_})
-      get copyWith => _copyWith;
+  GetDeploymentResponseVariant2GitSourceVariant18 Function({String owner, String ref, String repo, String repoId, String sha, GetDeploymentResponseVariant2GitSourceVariant18Type type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant2GitSourceVariant18 _copyWith(
-          {Object? owner = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetDeploymentResponseVariant2GitSourceVariant18(
-        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        repoId:
-            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-        sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDeploymentResponseVariant2GitSourceVariant18Type,
-      );
+  GetDeploymentResponseVariant2GitSourceVariant18 _copyWith({Object? owner = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant2GitSourceVariant18(
+    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant2GitSourceVariant18Type,
+  );
 
-  factory GetDeploymentResponseVariant2GitSourceVariant18.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentResponseVariant2GitSourceVariant18(
-        owner: (json['owner'] as String?)!,
-        ref: (json['ref'] as String?)!,
-        repo: (json['repo'] as String?)!,
-        repoId: (json['repoId'] as String?)!,
-        sha: (json['sha'] as String?)!,
-        type_: (json['type'] != null
-            ? GetDeploymentResponseVariant2GitSourceVariant18Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetDeploymentResponseVariant2GitSourceVariant18.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant2GitSourceVariant18(
+    owner: (json['owner'] as String?)!,
+    ref: (json['ref'] as String?)!,
+    repo: (json['repo'] as String?)!,
+    repoId: (json['repoId'] as String?)!,
+    sha: (json['sha'] as String?)!,
+    type_: (json['type'] != null ? GetDeploymentResponseVariant2GitSourceVariant18Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'owner': owner,
-        'ref': ref,
-        'repo': repo,
-        'repoId': repoId,
-        'sha': sha,
-        'type': type_.toJson(),
-      };
+    'owner': owner,
+    'ref': ref,
+    'repo': repo,
+    'repoId': repoId,
+    'sha': sha,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class GetDeploymentResponseVariant2GitSource {
@@ -202,427 +111,160 @@ sealed class GetDeploymentResponseVariant2GitSource {
   const GetDeploymentResponseVariant2GitSource();
   factory GetDeploymentResponseVariant2GitSource.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant4.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant5.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant6.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant7.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant8.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant9.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant10.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant11.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant12.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant13.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant14.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant15.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant16.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant17.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetDeploymentResponseVariant2GitSourceVariant18.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant5.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant6.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant7.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant8.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant9.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant10.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant11.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant12.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant13.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant14.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant15.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant16.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant17.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17(value); } } catch (_) {}
+      try { final value = GetDeploymentResponseVariant2GitSourceVariant18.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18(value); } } catch (_) {}
     }
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0(
-          GetDeploymentResponseVariant2GitSourceVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1(
-          GetDeploymentResponseVariant2GitSourceVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2(
-          GetDeploymentResponseVariant2GitSourceVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3(
-          GetDeploymentResponseVariant2GitSourceVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4(
-          GetDeploymentResponseVariant2GitSourceVariant4.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5(
-          GetDeploymentResponseVariant2GitSourceVariant5.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6(
-          GetDeploymentResponseVariant2GitSourceVariant6.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7(
-          GetDeploymentResponseVariant2GitSourceVariant7.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8(
-          GetDeploymentResponseVariant2GitSourceVariant8.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9(
-          GetDeploymentResponseVariant2GitSourceVariant9.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10(
-          GetDeploymentResponseVariant2GitSourceVariant10.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11(
-          GetDeploymentResponseVariant2GitSourceVariant11.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12(
-          GetDeploymentResponseVariant2GitSourceVariant12.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13(
-          GetDeploymentResponseVariant2GitSourceVariant13.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14(
-          GetDeploymentResponseVariant2GitSourceVariant14.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15(
-          GetDeploymentResponseVariant2GitSourceVariant15.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16(
-          GetDeploymentResponseVariant2GitSourceVariant16.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17(
-          GetDeploymentResponseVariant2GitSourceVariant17.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18(
-          GetDeploymentResponseVariant2GitSourceVariant18.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetDeploymentResponseVariant2GitSource");
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0(GetDeploymentResponseVariant2GitSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1(GetDeploymentResponseVariant2GitSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2(GetDeploymentResponseVariant2GitSourceVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3(GetDeploymentResponseVariant2GitSourceVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4(GetDeploymentResponseVariant2GitSourceVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5(GetDeploymentResponseVariant2GitSourceVariant5.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6(GetDeploymentResponseVariant2GitSourceVariant6.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7(GetDeploymentResponseVariant2GitSourceVariant7.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8(GetDeploymentResponseVariant2GitSourceVariant8.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9(GetDeploymentResponseVariant2GitSourceVariant9.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10(GetDeploymentResponseVariant2GitSourceVariant10.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11(GetDeploymentResponseVariant2GitSourceVariant11.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12(GetDeploymentResponseVariant2GitSourceVariant12.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13(GetDeploymentResponseVariant2GitSourceVariant13.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14(GetDeploymentResponseVariant2GitSourceVariant14.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15(GetDeploymentResponseVariant2GitSourceVariant15.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16(GetDeploymentResponseVariant2GitSourceVariant16.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17(GetDeploymentResponseVariant2GitSourceVariant17.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18(GetDeploymentResponseVariant2GitSourceVariant18.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetDeploymentResponseVariant2GitSource");
   }
   Object? toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant0 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant1 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant2 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant3 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant4 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant4(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant5 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant5(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant6 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant6(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant7 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant7(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant8 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant8(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant9 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant9(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant10 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant10(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant11 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant11(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant12 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant12(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant13 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant13(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant14 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant14(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant15 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant15(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant16 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant16(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant17 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant17(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18
-    extends GetDeploymentResponseVariant2GitSource {
+final class GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18 extends GetDeploymentResponseVariant2GitSource {
   final GetDeploymentResponseVariant2GitSourceVariant18 value;
-  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetDeploymentResponseVariant2GitSourceGetDeploymentResponseVariant2GitSourceVariant18(this.value);
+  @override Object? toJson() => value.toJson();
 }

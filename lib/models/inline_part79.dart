@@ -5,163 +5,122 @@ part of 'inline.dart';
 
 // Inline operation models (part 79)
 final class FlagEnvironmentsValuePausedOutcomeType {
+
   final String value;
 
   const FlagEnvironmentsValuePausedOutcomeType._(this.value);
 
-  factory FlagEnvironmentsValuePausedOutcomeType.fromJson(String value) =>
-      FlagEnvironmentsValuePausedOutcomeType._(value);
+  factory FlagEnvironmentsValuePausedOutcomeType.fromJson(String value) => FlagEnvironmentsValuePausedOutcomeType._(value);
 
   static const variant = FlagEnvironmentsValuePausedOutcomeType._('variant');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValuePausedOutcomeType && other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValuePausedOutcomeType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class FlagEnvironmentsValueReuseActive {
+
   final bool value;
 
   const FlagEnvironmentsValueReuseActive._(this.value);
 
-  factory FlagEnvironmentsValueReuseActive.fromJson(bool value) =>
-      FlagEnvironmentsValueReuseActive._(value);
+  factory FlagEnvironmentsValueReuseActive.fromJson(bool value) => FlagEnvironmentsValueReuseActive._(value);
 
   static const false_ = FlagEnvironmentsValueReuseActive._(false);
   static const true_ = FlagEnvironmentsValueReuseActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValueReuseActive && other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueReuseActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class FlagEnvironmentsValueRulesItemConditionsItemCmp {
+
   final String value;
 
   const FlagEnvironmentsValueRulesItemConditionsItemCmp._(this.value);
 
-  factory FlagEnvironmentsValueRulesItemConditionsItemCmp.fromJson(
-          String value) =>
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._(value);
+  factory FlagEnvironmentsValueRulesItemConditionsItemCmp.fromJson(String value) => FlagEnvironmentsValueRulesItemConditionsItemCmp._(value);
 
-  static const contains =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('!contains');
-  static const endswith =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('!endsWith');
+  static const contains = FlagEnvironmentsValueRulesItemConditionsItemCmp._('!contains');
+  static const endswith = FlagEnvironmentsValueRulesItemConditionsItemCmp._('!endsWith');
   static const eq = FlagEnvironmentsValueRulesItemConditionsItemCmp._('!eq');
   static const ex = FlagEnvironmentsValueRulesItemConditionsItemCmp._('!ex');
-  static const oneof =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('!oneOf');
-  static const regex =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('!regex');
-  static const startswith =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('!startsWith');
-  static const after =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('after');
-  static const before =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('before');
-  static const contains2 =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('contains');
-  static const containsallof =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('containsAllOf');
-  static const containsanyof =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('containsAnyOf');
-  static const containsnoneof =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('containsNoneOf');
-  static const endswith2 =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('endsWith');
+  static const oneof = FlagEnvironmentsValueRulesItemConditionsItemCmp._('!oneOf');
+  static const regex = FlagEnvironmentsValueRulesItemConditionsItemCmp._('!regex');
+  static const startswith = FlagEnvironmentsValueRulesItemConditionsItemCmp._('!startsWith');
+  static const after = FlagEnvironmentsValueRulesItemConditionsItemCmp._('after');
+  static const before = FlagEnvironmentsValueRulesItemConditionsItemCmp._('before');
+  static const contains2 = FlagEnvironmentsValueRulesItemConditionsItemCmp._('contains');
+  static const containsallof = FlagEnvironmentsValueRulesItemConditionsItemCmp._('containsAllOf');
+  static const containsanyof = FlagEnvironmentsValueRulesItemConditionsItemCmp._('containsAnyOf');
+  static const containsnoneof = FlagEnvironmentsValueRulesItemConditionsItemCmp._('containsNoneOf');
+  static const endswith2 = FlagEnvironmentsValueRulesItemConditionsItemCmp._('endsWith');
   static const eq2 = FlagEnvironmentsValueRulesItemConditionsItemCmp._('eq');
   static const ex2 = FlagEnvironmentsValueRulesItemConditionsItemCmp._('ex');
   static const gt = FlagEnvironmentsValueRulesItemConditionsItemCmp._('gt');
   static const gte = FlagEnvironmentsValueRulesItemConditionsItemCmp._('gte');
   static const lt = FlagEnvironmentsValueRulesItemConditionsItemCmp._('lt');
   static const lte = FlagEnvironmentsValueRulesItemConditionsItemCmp._('lte');
-  static const oneof2 =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('oneOf');
-  static const regex2 =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('regex');
-  static const startswith2 =
-      FlagEnvironmentsValueRulesItemConditionsItemCmp._('startsWith');
+  static const oneof2 = FlagEnvironmentsValueRulesItemConditionsItemCmp._('oneOf');
+  static const regex2 = FlagEnvironmentsValueRulesItemConditionsItemCmp._('regex');
+  static const startswith2 = FlagEnvironmentsValueRulesItemConditionsItemCmp._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValueRulesItemConditionsItemCmp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueRulesItemConditionsItemCmp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase {
+
   final bool value;
 
-  const FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(
-      this.value);
+  const FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(this.value);
 
-  factory FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(
-          bool value) =>
-      FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(value);
+  factory FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(bool value) => FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(value);
 
-  static const false_ =
-      FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(false);
-  static const true_ =
-      FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(true);
+  static const false_ = FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(false);
+  static const true_ = FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueRulesItemConditionsItemCmpOptionsIgnoreCase && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type {
   segment;
 
-  static FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type fromJson(
-      String value) {
+  static FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type fromJson(String value) {
     switch (value) {
-      case 'segment':
-        return FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type
-            .segment;
-      default:
-        throw ArgumentError(
-            'Unknown FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type: $value');
+      case 'segment': return FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type.segment;
+      default: throw ArgumentError('Unknown FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type.segment:
-        return 'segment';
+      case FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type.segment: return 'segment';
     }
   }
 
@@ -172,22 +131,16 @@ enum FlagEnvironmentsValueRulesItemConditionsItemLhsVariant0Type {
 enum FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type {
   entity;
 
-  static FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type fromJson(
-      String value) {
+  static FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type fromJson(String value) {
     switch (value) {
-      case 'entity':
-        return FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type
-            .entity;
-      default:
-        throw ArgumentError(
-            'Unknown FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type: $value');
+      case 'entity': return FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type.entity;
+      default: throw ArgumentError('Unknown FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type.entity:
-        return 'entity';
+      case FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type.entity: return 'entity';
     }
   }
 
@@ -196,108 +149,80 @@ enum FlagEnvironmentsValueRulesItemConditionsItemLhsVariant1Type {
 }
 
 final class FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type {
+
   final String value;
 
-  const FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._(
-      this.value);
+  const FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._(this.value);
 
-  factory FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type.fromJson(
-          String value) =>
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._(value);
+  factory FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type.fromJson(String value) => FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._(value);
 
-  static const list =
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._('list');
-  static const listInline =
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._(
-          'list/inline');
+  static const list = FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._('list');
+  static const listInline = FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type._('list/inline');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueRulesItemConditionsItemRhsVariant2Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type {
+
   final String value;
 
-  const FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type._(
-      this.value);
+  const FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type._(this.value);
 
-  factory FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type.fromJson(
-          String value) =>
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type._(value);
+  factory FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type.fromJson(String value) => FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type._(value);
 
-  static const regex =
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type._('regex');
+  static const regex = FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type._('regex');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueRulesItemConditionsItemRhsVariant3Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4 {
+
   final bool value;
 
   const FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4._(this.value);
 
-  factory FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4.fromJson(
-          bool value) =>
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4._(value);
+  factory FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4.fromJson(bool value) => FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4._(value);
 
-  static const false_ =
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4._(false);
-  static const true_ =
-      FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4._(true);
+  static const false_ = FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4._(false);
+  static const true_ = FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueRulesItemConditionsItemRhsVariant4 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum FlagEnvironmentsValueRulesItemOutcomeVariant0Type {
   variant;
 
-  static FlagEnvironmentsValueRulesItemOutcomeVariant0Type fromJson(
-      String value) {
+  static FlagEnvironmentsValueRulesItemOutcomeVariant0Type fromJson(String value) {
     switch (value) {
-      case 'variant':
-        return FlagEnvironmentsValueRulesItemOutcomeVariant0Type.variant;
-      default:
-        throw ArgumentError(
-            'Unknown FlagEnvironmentsValueRulesItemOutcomeVariant0Type: $value');
+      case 'variant': return FlagEnvironmentsValueRulesItemOutcomeVariant0Type.variant;
+      default: throw ArgumentError('Unknown FlagEnvironmentsValueRulesItemOutcomeVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueRulesItemOutcomeVariant0Type.variant:
-        return 'variant';
+      case FlagEnvironmentsValueRulesItemOutcomeVariant0Type.variant: return 'variant';
     }
   }
 
@@ -306,49 +231,38 @@ enum FlagEnvironmentsValueRulesItemOutcomeVariant0Type {
 }
 
 final class FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType {
+
   final String value;
 
   const FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType._(this.value);
 
-  factory FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType.fromJson(
-          String value) =>
-      FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType._(value);
+  factory FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType.fromJson(String value) => FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType._(value);
 
-  static const entity =
-      FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType._('entity');
+  static const entity = FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType._('entity');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueRulesItemOutcomeVariant1BaseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum FlagEnvironmentsValueRulesItemOutcomeVariant1Type {
   split;
 
-  static FlagEnvironmentsValueRulesItemOutcomeVariant1Type fromJson(
-      String value) {
+  static FlagEnvironmentsValueRulesItemOutcomeVariant1Type fromJson(String value) {
     switch (value) {
-      case 'split':
-        return FlagEnvironmentsValueRulesItemOutcomeVariant1Type.split;
-      default:
-        throw ArgumentError(
-            'Unknown FlagEnvironmentsValueRulesItemOutcomeVariant1Type: $value');
+      case 'split': return FlagEnvironmentsValueRulesItemOutcomeVariant1Type.split;
+      default: throw ArgumentError('Unknown FlagEnvironmentsValueRulesItemOutcomeVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FlagEnvironmentsValueRulesItemOutcomeVariant1Type.split:
-        return 'split';
+      case FlagEnvironmentsValueRulesItemOutcomeVariant1Type.split: return 'split';
     }
   }
 
@@ -357,27 +271,21 @@ enum FlagEnvironmentsValueRulesItemOutcomeVariant1Type {
 }
 
 final class FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType {
+
   final String value;
 
   const FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType._(this.value);
 
-  factory FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType.fromJson(
-          String value) =>
-      FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType._(value);
+  factory FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType.fromJson(String value) => FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType._(value);
 
-  static const entity =
-      FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType._('entity');
+  static const entity = FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType._('entity');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is FlagEnvironmentsValueRulesItemOutcomeVariant2BaseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

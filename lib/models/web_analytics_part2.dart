@@ -4,20 +4,14 @@
 part of 'web_analytics.dart';
 
 // web_analytics domain models (part 2)
-final class CountPageviewsResponseDataCountPageviewsResponseDataVariant0
-    extends CountPageviewsResponseData {
+final class CountPageviewsResponseDataCountPageviewsResponseDataVariant0 extends CountPageviewsResponseData {
   final CountPageviewsResponseDataVariant0 value;
-  const CountPageviewsResponseDataCountPageviewsResponseDataVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CountPageviewsResponseDataCountPageviewsResponseDataVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CountPageviewsResponseDataCountPageviewsResponseDataVariant1
-    extends CountPageviewsResponseData {
+final class CountPageviewsResponseDataCountPageviewsResponseDataVariant1 extends CountPageviewsResponseData {
   final CountPageviewsResponseDataVariant1 value;
-  const CountPageviewsResponseDataCountPageviewsResponseDataVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CountPageviewsResponseDataCountPageviewsResponseDataVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

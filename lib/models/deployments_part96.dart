@@ -22,311 +22,128 @@ class GetDeploymentEventsResponseItemVariant0PayloadProxy {
   final SdkOptional<double> statusCode;
   final double timestamp;
   final SdkOptional<List<String>> userAgent;
-  final SdkOptional<
-          GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache>
-      vercelCache;
+  final SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache> vercelCache;
   final SdkOptional<String> vercelId;
-  final SdkOptional<
-      GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction> wafAction;
+  final SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction> wafAction;
   final SdkOptional<String> wafRuleId;
 
-  const GetDeploymentEventsResponseItemVariant0PayloadProxy(
-      {this.cacheId = const SdkOmitted(),
-      this.clientIp = const SdkOmitted(),
-      required this.host,
-      this.lambdaRegion = const SdkOmitted(),
-      required this.method,
-      this.path = const SdkOmitted(),
-      this.pathType = const SdkOmitted(),
-      this.pathTypeVariant = const SdkOmitted(),
-      this.referer = const SdkOmitted(),
-      this.region = const SdkOmitted(),
-      this.responseByteSize = const SdkOmitted(),
-      this.scheme = const SdkOmitted(),
-      this.statusCode = const SdkOmitted(),
-      required this.timestamp,
-      this.userAgent = const SdkOmitted(),
-      this.vercelCache = const SdkOmitted(),
-      this.vercelId = const SdkOmitted(),
-      this.wafAction = const SdkOmitted(),
-      this.wafRuleId = const SdkOmitted()});
+  const GetDeploymentEventsResponseItemVariant0PayloadProxy({this.cacheId = const SdkOmitted(), this.clientIp = const SdkOmitted(), required this.host, this.lambdaRegion = const SdkOmitted(), required this.method, this.path = const SdkOmitted(), this.pathType = const SdkOmitted(), this.pathTypeVariant = const SdkOmitted(), this.referer = const SdkOmitted(), this.region = const SdkOmitted(), this.responseByteSize = const SdkOmitted(), this.scheme = const SdkOmitted(), this.statusCode = const SdkOmitted(), required this.timestamp, this.userAgent = const SdkOmitted(), this.vercelCache = const SdkOmitted(), this.vercelId = const SdkOmitted(), this.wafAction = const SdkOmitted(), this.wafRuleId = const SdkOmitted()});
 
-  GetDeploymentEventsResponseItemVariant0PayloadProxy Function(
-      {SdkOptional<String> cacheId,
-      SdkOptional<String> clientIp,
-      String host,
-      SdkOptional<String> lambdaRegion,
-      String method,
-      SdkOptional<String> path,
-      SdkOptional<String> pathType,
-      SdkOptional<String> pathTypeVariant,
-      SdkOptional<String> referer,
-      SdkOptional<String> region,
-      SdkOptional<double> responseByteSize,
-      SdkOptional<String> scheme,
-      SdkOptional<double> statusCode,
-      double timestamp,
-      SdkOptional<List<String>> userAgent,
-      SdkOptional<
-              GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache>
-          vercelCache,
-      SdkOptional<String> vercelId,
-      SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction>
-          wafAction,
-      SdkOptional<String> wafRuleId}) get copyWith => _copyWith;
+  GetDeploymentEventsResponseItemVariant0PayloadProxy Function({SdkOptional<String> cacheId, SdkOptional<String> clientIp, String host, SdkOptional<String> lambdaRegion, String method, SdkOptional<String> path, SdkOptional<String> pathType, SdkOptional<String> pathTypeVariant, SdkOptional<String> referer, SdkOptional<String> region, SdkOptional<double> responseByteSize, SdkOptional<String> scheme, SdkOptional<double> statusCode, double timestamp, SdkOptional<List<String>> userAgent, SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache> vercelCache, SdkOptional<String> vercelId, SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction> wafAction, SdkOptional<String> wafRuleId}) get copyWith => _copyWith;
 
-  GetDeploymentEventsResponseItemVariant0PayloadProxy _copyWith(
-          {Object? cacheId = sdkOmittedValue,
-          Object? clientIp = sdkOmittedValue,
-          Object? host = sdkOmittedValue,
-          Object? lambdaRegion = sdkOmittedValue,
-          Object? method = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? pathType = sdkOmittedValue,
-          Object? pathTypeVariant = sdkOmittedValue,
-          Object? referer = sdkOmittedValue,
-          Object? region = sdkOmittedValue,
-          Object? responseByteSize = sdkOmittedValue,
-          Object? scheme = sdkOmittedValue,
-          Object? statusCode = sdkOmittedValue,
-          Object? timestamp = sdkOmittedValue,
-          Object? userAgent = sdkOmittedValue,
-          Object? vercelCache = sdkOmittedValue,
-          Object? vercelId = sdkOmittedValue,
-          Object? wafAction = sdkOmittedValue,
-          Object? wafRuleId = sdkOmittedValue}) =>
-      GetDeploymentEventsResponseItemVariant0PayloadProxy(
-        cacheId: identical(cacheId, sdkOmittedValue)
-            ? this.cacheId
-            : cacheId as SdkOptional<String>,
-        clientIp: identical(clientIp, sdkOmittedValue)
-            ? this.clientIp
-            : clientIp as SdkOptional<String>,
-        host: identical(host, sdkOmittedValue) ? this.host : host as String,
-        lambdaRegion: identical(lambdaRegion, sdkOmittedValue)
-            ? this.lambdaRegion
-            : lambdaRegion as SdkOptional<String>,
-        method:
-            identical(method, sdkOmittedValue) ? this.method : method as String,
-        path: identical(path, sdkOmittedValue)
-            ? this.path
-            : path as SdkOptional<String>,
-        pathType: identical(pathType, sdkOmittedValue)
-            ? this.pathType
-            : pathType as SdkOptional<String>,
-        pathTypeVariant: identical(pathTypeVariant, sdkOmittedValue)
-            ? this.pathTypeVariant
-            : pathTypeVariant as SdkOptional<String>,
-        referer: identical(referer, sdkOmittedValue)
-            ? this.referer
-            : referer as SdkOptional<String>,
-        region: identical(region, sdkOmittedValue)
-            ? this.region
-            : region as SdkOptional<String>,
-        responseByteSize: identical(responseByteSize, sdkOmittedValue)
-            ? this.responseByteSize
-            : responseByteSize as SdkOptional<double>,
-        scheme: identical(scheme, sdkOmittedValue)
-            ? this.scheme
-            : scheme as SdkOptional<String>,
-        statusCode: identical(statusCode, sdkOmittedValue)
-            ? this.statusCode
-            : statusCode as SdkOptional<double>,
-        timestamp: identical(timestamp, sdkOmittedValue)
-            ? this.timestamp
-            : timestamp as double,
-        userAgent: identical(userAgent, sdkOmittedValue)
-            ? this.userAgent
-            : userAgent as SdkOptional<List<String>>,
-        vercelCache: identical(vercelCache, sdkOmittedValue)
-            ? this.vercelCache
-            : vercelCache as SdkOptional<
-                GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache>,
-        vercelId: identical(vercelId, sdkOmittedValue)
-            ? this.vercelId
-            : vercelId as SdkOptional<String>,
-        wafAction: identical(wafAction, sdkOmittedValue)
-            ? this.wafAction
-            : wafAction as SdkOptional<
-                GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction>,
-        wafRuleId: identical(wafRuleId, sdkOmittedValue)
-            ? this.wafRuleId
-            : wafRuleId as SdkOptional<String>,
-      );
+  GetDeploymentEventsResponseItemVariant0PayloadProxy _copyWith({Object? cacheId = sdkOmittedValue, Object? clientIp = sdkOmittedValue, Object? host = sdkOmittedValue, Object? lambdaRegion = sdkOmittedValue, Object? method = sdkOmittedValue, Object? path = sdkOmittedValue, Object? pathType = sdkOmittedValue, Object? pathTypeVariant = sdkOmittedValue, Object? referer = sdkOmittedValue, Object? region = sdkOmittedValue, Object? responseByteSize = sdkOmittedValue, Object? scheme = sdkOmittedValue, Object? statusCode = sdkOmittedValue, Object? timestamp = sdkOmittedValue, Object? userAgent = sdkOmittedValue, Object? vercelCache = sdkOmittedValue, Object? vercelId = sdkOmittedValue, Object? wafAction = sdkOmittedValue, Object? wafRuleId = sdkOmittedValue}) => GetDeploymentEventsResponseItemVariant0PayloadProxy(
+    cacheId: identical(cacheId, sdkOmittedValue) ? this.cacheId : cacheId as SdkOptional<String>,
+    clientIp: identical(clientIp, sdkOmittedValue) ? this.clientIp : clientIp as SdkOptional<String>,
+    host: identical(host, sdkOmittedValue) ? this.host : host as String,
+    lambdaRegion: identical(lambdaRegion, sdkOmittedValue) ? this.lambdaRegion : lambdaRegion as SdkOptional<String>,
+    method: identical(method, sdkOmittedValue) ? this.method : method as String,
+    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
+    pathType: identical(pathType, sdkOmittedValue) ? this.pathType : pathType as SdkOptional<String>,
+    pathTypeVariant: identical(pathTypeVariant, sdkOmittedValue) ? this.pathTypeVariant : pathTypeVariant as SdkOptional<String>,
+    referer: identical(referer, sdkOmittedValue) ? this.referer : referer as SdkOptional<String>,
+    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<String>,
+    responseByteSize: identical(responseByteSize, sdkOmittedValue) ? this.responseByteSize : responseByteSize as SdkOptional<double>,
+    scheme: identical(scheme, sdkOmittedValue) ? this.scheme : scheme as SdkOptional<String>,
+    statusCode: identical(statusCode, sdkOmittedValue) ? this.statusCode : statusCode as SdkOptional<double>,
+    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as double,
+    userAgent: identical(userAgent, sdkOmittedValue) ? this.userAgent : userAgent as SdkOptional<List<String>>,
+    vercelCache: identical(vercelCache, sdkOmittedValue) ? this.vercelCache : vercelCache as SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache>,
+    vercelId: identical(vercelId, sdkOmittedValue) ? this.vercelId : vercelId as SdkOptional<String>,
+    wafAction: identical(wafAction, sdkOmittedValue) ? this.wafAction : wafAction as SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction>,
+    wafRuleId: identical(wafRuleId, sdkOmittedValue) ? this.wafRuleId : wafRuleId as SdkOptional<String>,
+  );
 
-  factory GetDeploymentEventsResponseItemVariant0PayloadProxy.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentEventsResponseItemVariant0PayloadProxy(
-        cacheId: json['cacheId'] != null
-            ? SdkPresent((json['cacheId'] as String?)!)
-            : const SdkOmitted(),
-        clientIp: json['clientIp'] != null
-            ? SdkPresent((json['clientIp'] as String?)!)
-            : const SdkOmitted(),
-        host: (json['host'] as String?)!,
-        lambdaRegion: json['lambdaRegion'] != null
-            ? SdkPresent((json['lambdaRegion'] as String?)!)
-            : const SdkOmitted(),
-        method: (json['method'] as String?)!,
-        path: json['path'] != null
-            ? SdkPresent((json['path'] as String?)!)
-            : const SdkOmitted(),
-        pathType: json['pathType'] != null
-            ? SdkPresent((json['pathType'] as String?)!)
-            : const SdkOmitted(),
-        pathTypeVariant: json['pathTypeVariant'] != null
-            ? SdkPresent((json['pathTypeVariant'] as String?)!)
-            : const SdkOmitted(),
-        referer: json['referer'] != null
-            ? SdkPresent((json['referer'] as String?)!)
-            : const SdkOmitted(),
-        region: json['region'] != null
-            ? SdkPresent((json['region'] as String?)!)
-            : const SdkOmitted(),
-        responseByteSize: json['responseByteSize'] != null
-            ? SdkPresent(((json['responseByteSize'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        scheme: json['scheme'] != null
-            ? SdkPresent((json['scheme'] as String?)!)
-            : const SdkOmitted(),
-        statusCode: json['statusCode'] != null
-            ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        timestamp: ((json['timestamp'] as num?)?.toDouble())!,
-        userAgent: json['userAgent'] != null
-            ? SdkPresent(((json['userAgent'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        vercelCache: json['vercelCache'] != null
-            ? SdkPresent((json['vercelCache'] != null
-                ? GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache
-                    .fromJson(json['vercelCache'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        vercelId: json['vercelId'] != null
-            ? SdkPresent((json['vercelId'] as String?)!)
-            : const SdkOmitted(),
-        wafAction: json['wafAction'] != null
-            ? SdkPresent((json['wafAction'] != null
-                ? GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction
-                    .fromJson(json['wafAction'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        wafRuleId: json['wafRuleId'] != null
-            ? SdkPresent((json['wafRuleId'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetDeploymentEventsResponseItemVariant0PayloadProxy.fromJson(Map<String, dynamic> json) => GetDeploymentEventsResponseItemVariant0PayloadProxy(
+    cacheId: json['cacheId'] != null ? SdkPresent((json['cacheId'] as String?)!) : const SdkOmitted(),
+    clientIp: json['clientIp'] != null ? SdkPresent((json['clientIp'] as String?)!) : const SdkOmitted(),
+    host: (json['host'] as String?)!,
+    lambdaRegion: json['lambdaRegion'] != null ? SdkPresent((json['lambdaRegion'] as String?)!) : const SdkOmitted(),
+    method: (json['method'] as String?)!,
+    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
+    pathType: json['pathType'] != null ? SdkPresent((json['pathType'] as String?)!) : const SdkOmitted(),
+    pathTypeVariant: json['pathTypeVariant'] != null ? SdkPresent((json['pathTypeVariant'] as String?)!) : const SdkOmitted(),
+    referer: json['referer'] != null ? SdkPresent((json['referer'] as String?)!) : const SdkOmitted(),
+    region: json['region'] != null ? SdkPresent((json['region'] as String?)!) : const SdkOmitted(),
+    responseByteSize: json['responseByteSize'] != null ? SdkPresent(((json['responseByteSize'] as num?)?.toDouble())!) : const SdkOmitted(),
+    scheme: json['scheme'] != null ? SdkPresent((json['scheme'] as String?)!) : const SdkOmitted(),
+    statusCode: json['statusCode'] != null ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!) : const SdkOmitted(),
+    timestamp: ((json['timestamp'] as num?)?.toDouble())!,
+    userAgent: json['userAgent'] != null ? SdkPresent(((json['userAgent'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    vercelCache: json['vercelCache'] != null ? SdkPresent((json['vercelCache'] != null ? GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache.fromJson(json['vercelCache'] as String) : null)!) : const SdkOmitted(),
+    vercelId: json['vercelId'] != null ? SdkPresent((json['vercelId'] as String?)!) : const SdkOmitted(),
+    wafAction: json['wafAction'] != null ? SdkPresent((json['wafAction'] != null ? GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction.fromJson(json['wafAction'] as String) : null)!) : const SdkOmitted(),
+    wafRuleId: json['wafRuleId'] != null ? SdkPresent((json['wafRuleId'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (cacheId) {
-          SdkPresent<String>(value: final value) => {
-              'cacheId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (clientIp) {
-          SdkPresent<String>(value: final value) => {
-              'clientIp': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'host': host,
-        ...switch (lambdaRegion) {
-          SdkPresent<String>(value: final value) => {
-              'lambdaRegion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'method': method,
-        ...switch (path) {
-          SdkPresent<String>(value: final value) => {
-              'path': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (pathType) {
-          SdkPresent<String>(value: final value) => {
-              'pathType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (pathTypeVariant) {
-          SdkPresent<String>(value: final value) => {
-              'pathTypeVariant': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (referer) {
-          SdkPresent<String>(value: final value) => {
-              'referer': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (region) {
-          SdkPresent<String>(value: final value) => {
-              'region': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (responseByteSize) {
-          SdkPresent<double>(value: final value) => {
-              'responseByteSize': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scheme) {
-          SdkPresent<String>(value: final value) => {
-              'scheme': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (statusCode) {
-          SdkPresent<double>(value: final value) => {
-              'statusCode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'timestamp': timestamp,
-        ...switch (userAgent) {
-          SdkPresent<List<String>>(value: final value) => {
-              'userAgent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (vercelCache) {
-          SdkPresent<
-                GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache>(
-            value: final value
-          ) =>
-            {
-              'vercelCache': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (vercelId) {
-          SdkPresent<String>(value: final value) => {
-              'vercelId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (wafAction) {
-          SdkPresent<
-                GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction>(
-            value: final value
-          ) =>
-            {
-              'wafAction': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (wafRuleId) {
-          SdkPresent<String>(value: final value) => {
-              'wafRuleId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (cacheId) {
+      SdkPresent<String>(value: final value) => {'cacheId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (clientIp) {
+      SdkPresent<String>(value: final value) => {'clientIp': value,},
+      _ => const <String, dynamic>{},
+    },
+    'host': host,
+    ...switch (lambdaRegion) {
+      SdkPresent<String>(value: final value) => {'lambdaRegion': value,},
+      _ => const <String, dynamic>{},
+    },
+    'method': method,
+    ...switch (path) {
+      SdkPresent<String>(value: final value) => {'path': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (pathType) {
+      SdkPresent<String>(value: final value) => {'pathType': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (pathTypeVariant) {
+      SdkPresent<String>(value: final value) => {'pathTypeVariant': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (referer) {
+      SdkPresent<String>(value: final value) => {'referer': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (region) {
+      SdkPresent<String>(value: final value) => {'region': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (responseByteSize) {
+      SdkPresent<double>(value: final value) => {'responseByteSize': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scheme) {
+      SdkPresent<String>(value: final value) => {'scheme': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (statusCode) {
+      SdkPresent<double>(value: final value) => {'statusCode': value,},
+      _ => const <String, dynamic>{},
+    },
+    'timestamp': timestamp,
+    ...switch (userAgent) {
+      SdkPresent<List<String>>(value: final value) => {'userAgent': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (vercelCache) {
+      SdkPresent<GetDeploymentEventsResponseItemVariant0PayloadProxyVercelCache>(value: final value) => {'vercelCache': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (vercelId) {
+      SdkPresent<String>(value: final value) => {'vercelId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (wafAction) {
+      SdkPresent<GetDeploymentEventsResponseItemVariant0PayloadProxyWafAction>(value: final value) => {'wafAction': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (wafRuleId) {
+      SdkPresent<String>(value: final value) => {'wafRuleId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetDeploymentEventsResponseItemVariant0Payload {
@@ -343,152 +160,66 @@ class GetDeploymentEventsResponseItemVariant0Payload {
   final SdkOptional<double> statusCode;
   final SdkOptional<String> text;
 
-  const GetDeploymentEventsResponseItemVariant0Payload(
-      {this.created = const SdkOmitted(),
-      required this.date,
-      required this.deploymentId,
-      required this.id,
-      this.info = const SdkOmitted(),
-      this.proxy = const SdkOmitted(),
-      this.requestId = const SdkOmitted(),
-      required this.serial,
-      this.statusCode = const SdkOmitted(),
-      this.text = const SdkOmitted()});
+  const GetDeploymentEventsResponseItemVariant0Payload({this.created = const SdkOmitted(), required this.date, required this.deploymentId, required this.id, this.info = const SdkOmitted(), this.proxy = const SdkOmitted(), this.requestId = const SdkOmitted(), required this.serial, this.statusCode = const SdkOmitted(), this.text = const SdkOmitted()});
 
-  GetDeploymentEventsResponseItemVariant0Payload Function(
-      {SdkOptional<double> created,
-      double date,
-      String deploymentId,
-      String id,
-      SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadInfo> info,
-      SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxy> proxy,
-      SdkOptional<String> requestId,
-      String serial,
-      SdkOptional<double> statusCode,
-      SdkOptional<String> text}) get copyWith => _copyWith;
+  GetDeploymentEventsResponseItemVariant0Payload Function({SdkOptional<double> created, double date, String deploymentId, String id, SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadInfo> info, SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxy> proxy, SdkOptional<String> requestId, String serial, SdkOptional<double> statusCode, SdkOptional<String> text}) get copyWith => _copyWith;
 
-  GetDeploymentEventsResponseItemVariant0Payload _copyWith(
-          {Object? created = sdkOmittedValue,
-          Object? date = sdkOmittedValue,
-          Object? deploymentId = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? info = sdkOmittedValue,
-          Object? proxy = sdkOmittedValue,
-          Object? requestId = sdkOmittedValue,
-          Object? serial = sdkOmittedValue,
-          Object? statusCode = sdkOmittedValue,
-          Object? text = sdkOmittedValue}) =>
-      GetDeploymentEventsResponseItemVariant0Payload(
-        created: identical(created, sdkOmittedValue)
-            ? this.created
-            : created as SdkOptional<double>,
-        date: identical(date, sdkOmittedValue) ? this.date : date as double,
-        deploymentId: identical(deploymentId, sdkOmittedValue)
-            ? this.deploymentId
-            : deploymentId as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        info: identical(info, sdkOmittedValue)
-            ? this.info
-            : info as SdkOptional<
-                GetDeploymentEventsResponseItemVariant0PayloadInfo>,
-        proxy: identical(proxy, sdkOmittedValue)
-            ? this.proxy
-            : proxy as SdkOptional<
-                GetDeploymentEventsResponseItemVariant0PayloadProxy>,
-        requestId: identical(requestId, sdkOmittedValue)
-            ? this.requestId
-            : requestId as SdkOptional<String>,
-        serial:
-            identical(serial, sdkOmittedValue) ? this.serial : serial as String,
-        statusCode: identical(statusCode, sdkOmittedValue)
-            ? this.statusCode
-            : statusCode as SdkOptional<double>,
-        text: identical(text, sdkOmittedValue)
-            ? this.text
-            : text as SdkOptional<String>,
-      );
+  GetDeploymentEventsResponseItemVariant0Payload _copyWith({Object? created = sdkOmittedValue, Object? date = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? info = sdkOmittedValue, Object? proxy = sdkOmittedValue, Object? requestId = sdkOmittedValue, Object? serial = sdkOmittedValue, Object? statusCode = sdkOmittedValue, Object? text = sdkOmittedValue}) => GetDeploymentEventsResponseItemVariant0Payload(
+    created: identical(created, sdkOmittedValue) ? this.created : created as SdkOptional<double>,
+    date: identical(date, sdkOmittedValue) ? this.date : date as double,
+    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    info: identical(info, sdkOmittedValue) ? this.info : info as SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadInfo>,
+    proxy: identical(proxy, sdkOmittedValue) ? this.proxy : proxy as SdkOptional<GetDeploymentEventsResponseItemVariant0PayloadProxy>,
+    requestId: identical(requestId, sdkOmittedValue) ? this.requestId : requestId as SdkOptional<String>,
+    serial: identical(serial, sdkOmittedValue) ? this.serial : serial as String,
+    statusCode: identical(statusCode, sdkOmittedValue) ? this.statusCode : statusCode as SdkOptional<double>,
+    text: identical(text, sdkOmittedValue) ? this.text : text as SdkOptional<String>,
+  );
 
-  factory GetDeploymentEventsResponseItemVariant0Payload.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentEventsResponseItemVariant0Payload(
-        created: json['created'] != null
-            ? SdkPresent(((json['created'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        date: ((json['date'] as num?)?.toDouble())!,
-        deploymentId: (json['deploymentId'] as String?)!,
-        id: (json['id'] as String?)!,
-        info: json['info'] != null
-            ? SdkPresent((json['info'] != null
-                ? GetDeploymentEventsResponseItemVariant0PayloadInfo.fromJson(
-                    json['info'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        proxy: json['proxy'] != null
-            ? SdkPresent((json['proxy'] != null
-                ? GetDeploymentEventsResponseItemVariant0PayloadProxy.fromJson(
-                    json['proxy'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        requestId: json['requestId'] != null
-            ? SdkPresent((json['requestId'] as String?)!)
-            : const SdkOmitted(),
-        serial: (json['serial'] as String?)!,
-        statusCode: json['statusCode'] != null
-            ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        text: json['text'] != null
-            ? SdkPresent((json['text'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetDeploymentEventsResponseItemVariant0Payload.fromJson(Map<String, dynamic> json) => GetDeploymentEventsResponseItemVariant0Payload(
+    created: json['created'] != null ? SdkPresent(((json['created'] as num?)?.toDouble())!) : const SdkOmitted(),
+    date: ((json['date'] as num?)?.toDouble())!,
+    deploymentId: (json['deploymentId'] as String?)!,
+    id: (json['id'] as String?)!,
+    info: json['info'] != null ? SdkPresent((json['info'] != null ? GetDeploymentEventsResponseItemVariant0PayloadInfo.fromJson(json['info'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    proxy: json['proxy'] != null ? SdkPresent((json['proxy'] != null ? GetDeploymentEventsResponseItemVariant0PayloadProxy.fromJson(json['proxy'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    requestId: json['requestId'] != null ? SdkPresent((json['requestId'] as String?)!) : const SdkOmitted(),
+    serial: (json['serial'] as String?)!,
+    statusCode: json['statusCode'] != null ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!) : const SdkOmitted(),
+    text: json['text'] != null ? SdkPresent((json['text'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (created) {
-          SdkPresent<double>(value: final value) => {
-              'created': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'date': date,
-        'deploymentId': deploymentId,
-        'id': id,
-        ...switch (info) {
-          SdkPresent<GetDeploymentEventsResponseItemVariant0PayloadInfo>(
-            value: final value
-          ) =>
-            {
-              'info': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (proxy) {
-          SdkPresent<GetDeploymentEventsResponseItemVariant0PayloadProxy>(
-            value: final value
-          ) =>
-            {
-              'proxy': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requestId) {
-          SdkPresent<String>(value: final value) => {
-              'requestId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'serial': serial,
-        ...switch (statusCode) {
-          SdkPresent<double>(value: final value) => {
-              'statusCode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (text) {
-          SdkPresent<String>(value: final value) => {
-              'text': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (created) {
+      SdkPresent<double>(value: final value) => {'created': value,},
+      _ => const <String, dynamic>{},
+    },
+    'date': date,
+    'deploymentId': deploymentId,
+    'id': id,
+    ...switch (info) {
+      SdkPresent<GetDeploymentEventsResponseItemVariant0PayloadInfo>(value: final value) => {'info': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (proxy) {
+      SdkPresent<GetDeploymentEventsResponseItemVariant0PayloadProxy>(value: final value) => {'proxy': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requestId) {
+      SdkPresent<String>(value: final value) => {'requestId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'serial': serial,
+    ...switch (statusCode) {
+      SdkPresent<double>(value: final value) => {'statusCode': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (text) {
+      SdkPresent<String>(value: final value) => {'text': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetDeploymentEventsResponseItemVariant0 {
@@ -498,48 +229,25 @@ class GetDeploymentEventsResponseItemVariant0 {
   final GetDeploymentEventsResponseItemVariant0Payload payload;
   final GetDeploymentEventsResponseItemVariant0Type type_;
 
-  const GetDeploymentEventsResponseItemVariant0(
-      {required this.created, required this.payload, required this.type_});
+  const GetDeploymentEventsResponseItemVariant0({required this.created, required this.payload, required this.type_});
 
-  GetDeploymentEventsResponseItemVariant0 Function(
-          {double created,
-          GetDeploymentEventsResponseItemVariant0Payload payload,
-          GetDeploymentEventsResponseItemVariant0Type type_})
-      get copyWith => _copyWith;
+  GetDeploymentEventsResponseItemVariant0 Function({double created, GetDeploymentEventsResponseItemVariant0Payload payload, GetDeploymentEventsResponseItemVariant0Type type_}) get copyWith => _copyWith;
 
-  GetDeploymentEventsResponseItemVariant0 _copyWith(
-          {Object? created = sdkOmittedValue,
-          Object? payload = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetDeploymentEventsResponseItemVariant0(
-        created: identical(created, sdkOmittedValue)
-            ? this.created
-            : created as double,
-        payload: identical(payload, sdkOmittedValue)
-            ? this.payload
-            : payload as GetDeploymentEventsResponseItemVariant0Payload,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as GetDeploymentEventsResponseItemVariant0Type,
-      );
+  GetDeploymentEventsResponseItemVariant0 _copyWith({Object? created = sdkOmittedValue, Object? payload = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentEventsResponseItemVariant0(
+    created: identical(created, sdkOmittedValue) ? this.created : created as double,
+    payload: identical(payload, sdkOmittedValue) ? this.payload : payload as GetDeploymentEventsResponseItemVariant0Payload,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentEventsResponseItemVariant0Type,
+  );
 
-  factory GetDeploymentEventsResponseItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetDeploymentEventsResponseItemVariant0(
-        created: ((json['created'] as num?)?.toDouble())!,
-        payload: (json['payload'] != null
-            ? GetDeploymentEventsResponseItemVariant0Payload.fromJson(
-                json['payload'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? GetDeploymentEventsResponseItemVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory GetDeploymentEventsResponseItemVariant0.fromJson(Map<String, dynamic> json) => GetDeploymentEventsResponseItemVariant0(
+    created: ((json['created'] as num?)?.toDouble())!,
+    payload: (json['payload'] != null ? GetDeploymentEventsResponseItemVariant0Payload.fromJson(json['payload'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? GetDeploymentEventsResponseItemVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'created': created,
-        'payload': payload.toJson(),
-        'type': type_.toJson(),
-      };
+    'created': created,
+    'payload': payload.toJson(),
+    'type': type_.toJson(),
+  };
 }

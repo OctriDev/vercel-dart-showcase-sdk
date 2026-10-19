@@ -8,603 +8,270 @@ part of 'billing.dart';
 class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Resource IDs that were added.
   final SdkOptional<List<String>> addedResourceIds;
-
   /// When this resource change should take effect for downstream consumers.
   final SdkOptional<String> effectiveAt;
-
   /// The alias of the product that was changed.
   final String productAlias;
-
   /// The ID of the product that was changed.
   final String productId;
-
   /// The resulting quantity after this change.
   final double quantity;
-
   /// Resource IDs that were removed.
   final SdkOptional<List<String>> removedResourceIds;
-
   /// The full set of resource IDs after the change.
   final SdkOptional<List<String>> resourceIds;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem(
-      {this.addedResourceIds = const SdkOmitted(),
-      this.effectiveAt = const SdkOmitted(),
-      required this.productAlias,
-      required this.productId,
-      required this.quantity,
-      this.removedResourceIds = const SdkOmitted(),
-      this.resourceIds = const SdkOmitted()});
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem({this.addedResourceIds = const SdkOmitted(), this.effectiveAt = const SdkOmitted(), required this.productAlias, required this.productId, required this.quantity, this.removedResourceIds = const SdkOmitted(), this.resourceIds = const SdkOmitted()});
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem Function(
-      {SdkOptional<List<String>> addedResourceIds,
-      SdkOptional<String> effectiveAt,
-      String productAlias,
-      String productId,
-      double quantity,
-      SdkOptional<List<String>> removedResourceIds,
-      SdkOptional<List<String>> resourceIds}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem Function({SdkOptional<List<String>> addedResourceIds, SdkOptional<String> effectiveAt, String productAlias, String productId, double quantity, SdkOptional<List<String>> removedResourceIds, SdkOptional<List<String>> resourceIds}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem
-      _copyWith(
-              {Object? addedResourceIds = sdkOmittedValue,
-              Object? effectiveAt = sdkOmittedValue,
-              Object? productAlias = sdkOmittedValue,
-              Object? productId = sdkOmittedValue,
-              Object? quantity = sdkOmittedValue,
-              Object? removedResourceIds = sdkOmittedValue,
-              Object? resourceIds = sdkOmittedValue}) =>
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem(
-            addedResourceIds: identical(addedResourceIds, sdkOmittedValue)
-                ? this.addedResourceIds
-                : addedResourceIds as SdkOptional<List<String>>,
-            effectiveAt: identical(effectiveAt, sdkOmittedValue)
-                ? this.effectiveAt
-                : effectiveAt as SdkOptional<String>,
-            productAlias: identical(productAlias, sdkOmittedValue)
-                ? this.productAlias
-                : productAlias as String,
-            productId: identical(productId, sdkOmittedValue)
-                ? this.productId
-                : productId as String,
-            quantity: identical(quantity, sdkOmittedValue)
-                ? this.quantity
-                : quantity as double,
-            removedResourceIds: identical(removedResourceIds, sdkOmittedValue)
-                ? this.removedResourceIds
-                : removedResourceIds as SdkOptional<List<String>>,
-            resourceIds: identical(resourceIds, sdkOmittedValue)
-                ? this.resourceIds
-                : resourceIds as SdkOptional<List<String>>,
-          );
+  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem _copyWith({Object? addedResourceIds = sdkOmittedValue, Object? effectiveAt = sdkOmittedValue, Object? productAlias = sdkOmittedValue, Object? productId = sdkOmittedValue, Object? quantity = sdkOmittedValue, Object? removedResourceIds = sdkOmittedValue, Object? resourceIds = sdkOmittedValue}) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem(
+    addedResourceIds: identical(addedResourceIds, sdkOmittedValue) ? this.addedResourceIds : addedResourceIds as SdkOptional<List<String>>,
+    effectiveAt: identical(effectiveAt, sdkOmittedValue) ? this.effectiveAt : effectiveAt as SdkOptional<String>,
+    productAlias: identical(productAlias, sdkOmittedValue) ? this.productAlias : productAlias as String,
+    productId: identical(productId, sdkOmittedValue) ? this.productId : productId as String,
+    quantity: identical(quantity, sdkOmittedValue) ? this.quantity : quantity as double,
+    removedResourceIds: identical(removedResourceIds, sdkOmittedValue) ? this.removedResourceIds : removedResourceIds as SdkOptional<List<String>>,
+    resourceIds: identical(resourceIds, sdkOmittedValue) ? this.resourceIds : resourceIds as SdkOptional<List<String>>,
+  );
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem.fromJson(
-          Map<String, dynamic> json) =>
-      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem(
-        addedResourceIds: json['addedResourceIds'] != null
-            ? SdkPresent(((json['addedResourceIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        effectiveAt: json['effectiveAt'] != null
-            ? SdkPresent((json['effectiveAt'] as String?)!)
-            : const SdkOmitted(),
-        productAlias: (json['productAlias'] as String?)!,
-        productId: (json['productId'] as String?)!,
-        quantity: ((json['quantity'] as num?)?.toDouble())!,
-        removedResourceIds: json['removedResourceIds'] != null
-            ? SdkPresent(((json['removedResourceIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        resourceIds: json['resourceIds'] != null
-            ? SdkPresent(((json['resourceIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem(
+    addedResourceIds: json['addedResourceIds'] != null ? SdkPresent(((json['addedResourceIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    effectiveAt: json['effectiveAt'] != null ? SdkPresent((json['effectiveAt'] as String?)!) : const SdkOmitted(),
+    productAlias: (json['productAlias'] as String?)!,
+    productId: (json['productId'] as String?)!,
+    quantity: ((json['quantity'] as num?)?.toDouble())!,
+    removedResourceIds: json['removedResourceIds'] != null ? SdkPresent(((json['removedResourceIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    resourceIds: json['resourceIds'] != null ? SdkPresent(((json['resourceIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (addedResourceIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'addedResourceIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (effectiveAt) {
-          SdkPresent<String>(value: final value) => {
-              'effectiveAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'productAlias': productAlias,
-        'productId': productId,
-        'quantity': quantity,
-        ...switch (removedResourceIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'removedResourceIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (resourceIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'resourceIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (addedResourceIds) {
+      SdkPresent<List<String>>(value: final value) => {'addedResourceIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (effectiveAt) {
+      SdkPresent<String>(value: final value) => {'effectiveAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'productAlias': productAlias,
+    'productId': productId,
+    'quantity': quantity,
+    ...switch (removedResourceIds) {
+      SdkPresent<List<String>>(value: final value) => {'removedResourceIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (resourceIds) {
+      SdkPresent<List<String>>(value: final value) => {'resourceIds': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Output returned after configuring an OrbSubscriptionIntent.
 class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects.
-  final SdkOptional<
-          List<
-              BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>>
-      changedResources;
-
+  final SdkOptional<List<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>> changedResources;
   /// The Orb customer's timezone when the intent was created. Omitted for legacy intents.
   final SdkOptional<String> customerTimezone;
-
   /// When the subscription change should take effect.
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior
-      effectiveBehavior;
-
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior effectiveBehavior;
   /// Optional metadata associated with the intent to update the Orb subscription with.
   final SdkOptional<Map<String, String>> metadata;
-
   /// The Orb price ID for the subscription item being modified.
   final String orbPriceId;
-
   /// The ID of the pending subscription change if there is one.
   final SdkOptional<String> pendingSubscriptionChangeId;
-
   /// The source used as the authoritative price for this intent.
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource
-      pricingSource;
-
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource pricingSource;
   /// The product ID associated with this intent.
   final String productId;
-
   /// The canonical reference-product billing period at intent creation. Omitted for historical intents.
-  final SdkOptional<
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod>
-      referenceBillingPeriod;
+  final SdkOptional<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod> referenceBillingPeriod;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output(
-      {this.changedResources = const SdkOmitted(),
-      this.customerTimezone = const SdkOmitted(),
-      required this.effectiveBehavior,
-      this.metadata = const SdkOmitted(),
-      required this.orbPriceId,
-      this.pendingSubscriptionChangeId = const SdkOmitted(),
-      required this.pricingSource,
-      required this.productId,
-      this.referenceBillingPeriod = const SdkOmitted()});
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output({this.changedResources = const SdkOmitted(), this.customerTimezone = const SdkOmitted(), required this.effectiveBehavior, this.metadata = const SdkOmitted(), required this.orbPriceId, this.pendingSubscriptionChangeId = const SdkOmitted(), required this.pricingSource, required this.productId, this.referenceBillingPeriod = const SdkOmitted()});
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output Function(
-      {SdkOptional<
-              List<
-                  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>>
-          changedResources,
-      SdkOptional<String> customerTimezone,
-      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior
-          effectiveBehavior,
-      SdkOptional<Map<String, String>> metadata,
-      String orbPriceId,
-      SdkOptional<String> pendingSubscriptionChangeId,
-      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource
-          pricingSource,
-      String productId,
-      SdkOptional<
-              BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod>
-          referenceBillingPeriod}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output Function({SdkOptional<List<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>> changedResources, SdkOptional<String> customerTimezone, BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior effectiveBehavior, SdkOptional<Map<String, String>> metadata, String orbPriceId, SdkOptional<String> pendingSubscriptionChangeId, BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource pricingSource, String productId, SdkOptional<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod> referenceBillingPeriod}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output
-      _copyWith(
-              {Object? changedResources = sdkOmittedValue,
-              Object? customerTimezone = sdkOmittedValue,
-              Object? effectiveBehavior = sdkOmittedValue,
-              Object? metadata = sdkOmittedValue,
-              Object? orbPriceId = sdkOmittedValue,
-              Object? pendingSubscriptionChangeId = sdkOmittedValue,
-              Object? pricingSource = sdkOmittedValue,
-              Object? productId = sdkOmittedValue,
-              Object? referenceBillingPeriod = sdkOmittedValue}) =>
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output(
-            changedResources: identical(changedResources, sdkOmittedValue)
-                ? this.changedResources
-                : changedResources as SdkOptional<
-                    List<
-                        BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>>,
-            customerTimezone: identical(customerTimezone, sdkOmittedValue)
-                ? this.customerTimezone
-                : customerTimezone as SdkOptional<String>,
-            effectiveBehavior: identical(effectiveBehavior, sdkOmittedValue)
-                ? this.effectiveBehavior
-                : effectiveBehavior
-                    as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior,
-            metadata: identical(metadata, sdkOmittedValue)
-                ? this.metadata
-                : metadata as SdkOptional<Map<String, String>>,
-            orbPriceId: identical(orbPriceId, sdkOmittedValue)
-                ? this.orbPriceId
-                : orbPriceId as String,
-            pendingSubscriptionChangeId:
-                identical(pendingSubscriptionChangeId, sdkOmittedValue)
-                    ? this.pendingSubscriptionChangeId
-                    : pendingSubscriptionChangeId as SdkOptional<String>,
-            pricingSource: identical(pricingSource, sdkOmittedValue)
-                ? this.pricingSource
-                : pricingSource
-                    as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource,
-            productId: identical(productId, sdkOmittedValue)
-                ? this.productId
-                : productId as String,
-            referenceBillingPeriod: identical(
-                    referenceBillingPeriod, sdkOmittedValue)
-                ? this.referenceBillingPeriod
-                : referenceBillingPeriod as SdkOptional<
-                    BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod>,
-          );
+  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output _copyWith({Object? changedResources = sdkOmittedValue, Object? customerTimezone = sdkOmittedValue, Object? effectiveBehavior = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? orbPriceId = sdkOmittedValue, Object? pendingSubscriptionChangeId = sdkOmittedValue, Object? pricingSource = sdkOmittedValue, Object? productId = sdkOmittedValue, Object? referenceBillingPeriod = sdkOmittedValue}) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output(
+    changedResources: identical(changedResources, sdkOmittedValue) ? this.changedResources : changedResources as SdkOptional<List<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>>,
+    customerTimezone: identical(customerTimezone, sdkOmittedValue) ? this.customerTimezone : customerTimezone as SdkOptional<String>,
+    effectiveBehavior: identical(effectiveBehavior, sdkOmittedValue) ? this.effectiveBehavior : effectiveBehavior as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior,
+    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<Map<String, String>>,
+    orbPriceId: identical(orbPriceId, sdkOmittedValue) ? this.orbPriceId : orbPriceId as String,
+    pendingSubscriptionChangeId: identical(pendingSubscriptionChangeId, sdkOmittedValue) ? this.pendingSubscriptionChangeId : pendingSubscriptionChangeId as SdkOptional<String>,
+    pricingSource: identical(pricingSource, sdkOmittedValue) ? this.pricingSource : pricingSource as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource,
+    productId: identical(productId, sdkOmittedValue) ? this.productId : productId as String,
+    referenceBillingPeriod: identical(referenceBillingPeriod, sdkOmittedValue) ? this.referenceBillingPeriod : referenceBillingPeriod as SdkOptional<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod>,
+  );
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output.fromJson(
-          Map<String, dynamic> json) =>
-      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output(
-        changedResources: json['changedResources'] != null
-            ? SdkPresent(((json['changedResources'] as List?)
-                ?.map((e) =>
-                    BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        customerTimezone: json['customerTimezone'] != null
-            ? SdkPresent((json['customerTimezone'] as String?)!)
-            : const SdkOmitted(),
-        effectiveBehavior: (json['effectiveBehavior'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior
-                .fromJson(json['effectiveBehavior'] as String)
-            : null)!,
-        metadata: json['metadata'] != null
-            ? SdkPresent((json['metadata'] == null
-                ? null
-                : Map<String, dynamic>.from(json['metadata'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-        orbPriceId: (json['orbPriceId'] as String?)!,
-        pendingSubscriptionChangeId: json['pendingSubscriptionChangeId'] != null
-            ? SdkPresent((json['pendingSubscriptionChangeId'] as String?)!)
-            : const SdkOmitted(),
-        pricingSource: (json['pricingSource'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource
-                .fromJson(json['pricingSource'] as String)
-            : null)!,
-        productId: (json['productId'] as String?)!,
-        referenceBillingPeriod: json['referenceBillingPeriod'] != null
-            ? SdkPresent((json['referenceBillingPeriod'] != null
-                ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod
-                    .fromJson(
-                        json['referenceBillingPeriod'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output(
+    changedResources: json['changedResources'] != null ? SdkPresent(((json['changedResources'] as List?)?.map((e) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    customerTimezone: json['customerTimezone'] != null ? SdkPresent((json['customerTimezone'] as String?)!) : const SdkOmitted(),
+    effectiveBehavior: (json['effectiveBehavior'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior.fromJson(json['effectiveBehavior'] as String) : null)!,
+    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] == null ? null : Map<String, dynamic>.from(json['metadata'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+    orbPriceId: (json['orbPriceId'] as String?)!,
+    pendingSubscriptionChangeId: json['pendingSubscriptionChangeId'] != null ? SdkPresent((json['pendingSubscriptionChangeId'] as String?)!) : const SdkOmitted(),
+    pricingSource: (json['pricingSource'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource.fromJson(json['pricingSource'] as String) : null)!,
+    productId: (json['productId'] as String?)!,
+    referenceBillingPeriod: json['referenceBillingPeriod'] != null ? SdkPresent((json['referenceBillingPeriod'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod.fromJson(json['referenceBillingPeriod'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (changedResources) {
-          SdkPresent<
-                List<
-                    BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>>(
-            value: final value
-          ) =>
-            {
-              'changedResources': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customerTimezone) {
-          SdkPresent<String>(value: final value) => {
-              'customerTimezone': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'effectiveBehavior': effectiveBehavior.toJson(),
-        ...switch (metadata) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'metadata': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'orbPriceId': orbPriceId,
-        ...switch (pendingSubscriptionChangeId) {
-          SdkPresent<String>(value: final value) => {
-              'pendingSubscriptionChangeId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'pricingSource': pricingSource.toJson(),
-        'productId': productId,
-        ...switch (referenceBillingPeriod) {
-          SdkPresent<
-                BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod>(
-            value: final value
-          ) =>
-            {
-              'referenceBillingPeriod': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (changedResources) {
+      SdkPresent<List<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputChangedResourcesItem>>(value: final value) => {'changedResources': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customerTimezone) {
+      SdkPresent<String>(value: final value) => {'customerTimezone': value,},
+      _ => const <String, dynamic>{},
+    },
+    'effectiveBehavior': effectiveBehavior.toJson(),
+    ...switch (metadata) {
+      SdkPresent<Map<String, String>>(value: final value) => {'metadata': value,},
+      _ => const <String, dynamic>{},
+    },
+    'orbPriceId': orbPriceId,
+    ...switch (pendingSubscriptionChangeId) {
+      SdkPresent<String>(value: final value) => {'pendingSubscriptionChangeId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'pricingSource': pricingSource.toJson(),
+    'productId': productId,
+    ...switch (referenceBillingPeriod) {
+      SdkPresent<BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputReferenceBillingPeriod>(value: final value) => {'referenceBillingPeriod': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Configuration for the Orb subscription intent.
 class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Configuration input options for adjusting plan item quantity.
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options
-      options;
-
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options options;
   /// Output returned after configuring an OrbSubscriptionIntent.
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output
-      output;
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type
-      type_;
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output output;
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type type_;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
-      {required this.options, required this.output, required this.type_});
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3({required this.options, required this.output, required this.type_});
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3 Function(
-      {BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options
-          options,
-      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output
-          output,
-      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type
-          type_}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3 Function({BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options options, BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output output, BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type type_}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3
-      _copyWith(
-              {Object? options = sdkOmittedValue,
-              Object? output = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
-            options: identical(options, sdkOmittedValue)
-                ? this.options
-                : options
-                    as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options,
-            output: identical(output, sdkOmittedValue)
-                ? this.output
-                : output
-                    as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type,
-          );
+  BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3 _copyWith({Object? options = sdkOmittedValue, Object? output = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
+    options: identical(options, sdkOmittedValue) ? this.options : options as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options,
+    output: identical(output, sdkOmittedValue) ? this.output : output as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type,
+  );
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
-        options: (json['options'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options
-                .fromJson(json['options'] as Map<String, dynamic>)
-            : null)!,
-        output: (json['output'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output
-                .fromJson(json['output'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
+    options: (json['options'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Options.fromJson(json['options'] as Map<String, dynamic>) : null)!,
+    output: (json['output'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Output.fromJson(json['output'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'options': options.toJson(),
-        'output': output.toJson(),
-        'type': type_.toJson(),
-      };
+    'options': options.toJson(),
+    'output': output.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 sealed class BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration();
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration.fromJson(
-      Object? json) {
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0(value); } } catch (_) {}
+      try { final value = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1(value); } } catch (_) {}
+      try { final value = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2(value); } } catch (_) {}
+      try { final value = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(value); } } catch (_) {}
     }
-    try {
-      return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0(
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1(
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2(
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
-          BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration");
+    try { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0(BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1(BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2(BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration");
   }
   Object? toJson();
 }
 
-final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0
-    extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0
-      value;
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0 extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0 value;
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1
-    extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1
-      value;
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1 extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1 value;
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2
-    extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2
-      value;
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2 extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2 value;
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3
-    extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3
-      value;
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3 extends BuyCreditsResponseVariant2OrbSubscriptionIntentConfiguration {
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3 value;
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationBuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// How the subscription change is applied to Orb.
 class BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode
-      mode;
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode mode;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0(
-      {required this.mode});
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0({required this.mode});
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0 Function(
-      {BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode
-          mode}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0 Function({BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode mode}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0 _copyWith(
-          {Object? mode = sdkOmittedValue}) =>
-      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0(
-        mode: identical(mode, sdkOmittedValue)
-            ? this.mode
-            : mode
-                as BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode,
-      );
+  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0 _copyWith({Object? mode = sdkOmittedValue}) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0(
+    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode,
+  );
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0(
-        mode: (json['mode'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode
-                .fromJson(json['mode'] as String)
-            : null)!,
-      );
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0(
+    mode: (json['mode'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode.fromJson(json['mode'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'mode': mode.toJson(),
-      };
+    'mode': mode.toJson(),
+  };
 }
 
 /// How the subscription change is applied to Orb.
 class BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode
-      mode;
-  final BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status
-      status;
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode mode;
+  final BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status status;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1(
-      {required this.mode, required this.status});
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1({required this.mode, required this.status});
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1 Function(
-      {BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode
-          mode,
-      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status
-          status}) get copyWith => _copyWith;
+  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1 Function({BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode mode, BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status status}) get copyWith => _copyWith;
 
-  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1 _copyWith(
-          {Object? mode = sdkOmittedValue, Object? status = sdkOmittedValue}) =>
-      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1(
-        mode: identical(mode, sdkOmittedValue)
-            ? this.mode
-            : mode
-                as BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status
-                as BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status,
-      );
+  BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1 _copyWith({Object? mode = sdkOmittedValue, Object? status = sdkOmittedValue}) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1(
+    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode,
+    status: identical(status, sdkOmittedValue) ? this.status : status as BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status,
+  );
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1(
-        mode: (json['mode'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode
-                .fromJson(json['mode'] as String)
-            : null)!,
-        status: (json['status'] != null
-            ? BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status
-                .fromJson(json['status'] as String)
-            : null)!,
-      );
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1.fromJson(Map<String, dynamic> json) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1(
+    mode: (json['mode'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode.fromJson(json['mode'] as String) : null)!,
+    status: (json['status'] != null ? BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status.fromJson(json['status'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'mode': mode.toJson(),
-        'status': status.toJson(),
-      };
+    'mode': mode.toJson(),
+    'status': status.toJson(),
+  };
 }

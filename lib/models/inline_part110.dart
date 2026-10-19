@@ -5,31 +5,23 @@ part of 'inline.dart';
 
 // Inline operation models (part 110)
 final class GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind {
+
   final String value;
 
-  const GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(
-      this.value);
+  const GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(value);
+  factory GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._(
-          'INTEGRATION_SECRET');
+  static const integrationSecret = GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant0SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetDrainResponseVariant1DeliveryVariant0Type {
@@ -37,18 +29,14 @@ enum GetDrainResponseVariant1DeliveryVariant0Type {
 
   static GetDrainResponseVariant1DeliveryVariant0Type fromJson(String value) {
     switch (value) {
-      case 'http':
-        return GetDrainResponseVariant1DeliveryVariant0Type.http;
-      default:
-        throw ArgumentError(
-            'Unknown GetDrainResponseVariant1DeliveryVariant0Type: $value');
+      case 'http': return GetDrainResponseVariant1DeliveryVariant0Type.http;
+      default: throw ArgumentError('Unknown GetDrainResponseVariant1DeliveryVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDrainResponseVariant1DeliveryVariant0Type.http:
-        return 'http';
+      case GetDrainResponseVariant1DeliveryVariant0Type.http: return 'http';
     }
   }
 
@@ -57,59 +45,44 @@ enum GetDrainResponseVariant1DeliveryVariant0Type {
 }
 
 final class GetDrainResponseVariant1DeliveryVariant1Encoding {
+
   final String value;
 
   const GetDrainResponseVariant1DeliveryVariant1Encoding._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant1Encoding.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant1Encoding._(value);
+  factory GetDrainResponseVariant1DeliveryVariant1Encoding.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant1Encoding._(value);
 
-  static const json =
-      GetDrainResponseVariant1DeliveryVariant1Encoding._('json');
-  static const proto =
-      GetDrainResponseVariant1DeliveryVariant1Encoding._('proto');
+  static const json = GetDrainResponseVariant1DeliveryVariant1Encoding._('json');
+  static const proto = GetDrainResponseVariant1DeliveryVariant1Encoding._('proto');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant1Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant1Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind {
+
   final String value;
 
-  const GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind._(
-      this.value);
+  const GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind._(value);
+  factory GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind._(
-          'INTEGRATION_SECRET');
+  static const integrationSecret = GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant1SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetDrainResponseVariant1DeliveryVariant1Type {
@@ -117,18 +90,14 @@ enum GetDrainResponseVariant1DeliveryVariant1Type {
 
   static GetDrainResponseVariant1DeliveryVariant1Type fromJson(String value) {
     switch (value) {
-      case 'otlphttp':
-        return GetDrainResponseVariant1DeliveryVariant1Type.otlphttp;
-      default:
-        throw ArgumentError(
-            'Unknown GetDrainResponseVariant1DeliveryVariant1Type: $value');
+      case 'otlphttp': return GetDrainResponseVariant1DeliveryVariant1Type.otlphttp;
+      default: throw ArgumentError('Unknown GetDrainResponseVariant1DeliveryVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDrainResponseVariant1DeliveryVariant1Type.otlphttp:
-        return 'otlphttp';
+      case GetDrainResponseVariant1DeliveryVariant1Type.otlphttp: return 'otlphttp';
     }
   }
 
@@ -141,18 +110,14 @@ enum GetDrainResponseVariant1DeliveryVariant2Type {
 
   static GetDrainResponseVariant1DeliveryVariant2Type fromJson(String value) {
     switch (value) {
-      case 'clickhouse':
-        return GetDrainResponseVariant1DeliveryVariant2Type.clickhouse;
-      default:
-        throw ArgumentError(
-            'Unknown GetDrainResponseVariant1DeliveryVariant2Type: $value');
+      case 'clickhouse': return GetDrainResponseVariant1DeliveryVariant2Type.clickhouse;
+      default: throw ArgumentError('Unknown GetDrainResponseVariant1DeliveryVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDrainResponseVariant1DeliveryVariant2Type.clickhouse:
-        return 'clickhouse';
+      case GetDrainResponseVariant1DeliveryVariant2Type.clickhouse: return 'clickhouse';
     }
   }
 
@@ -161,154 +126,112 @@ enum GetDrainResponseVariant1DeliveryVariant2Type {
 }
 
 final class GetDrainResponseVariant1DeliveryVariant3Compression {
+
   final String value;
 
   const GetDrainResponseVariant1DeliveryVariant3Compression._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant3Compression.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant3Compression._(value);
+  factory GetDrainResponseVariant1DeliveryVariant3Compression.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant3Compression._(value);
 
-  static const none =
-      GetDrainResponseVariant1DeliveryVariant3Compression._('none');
+  static const none = GetDrainResponseVariant1DeliveryVariant3Compression._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant3Compression &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant3Compression && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainResponseVariant1DeliveryVariant3Encoding {
+
   final String value;
 
   const GetDrainResponseVariant1DeliveryVariant3Encoding._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant3Encoding.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant3Encoding._(value);
+  factory GetDrainResponseVariant1DeliveryVariant3Encoding.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant3Encoding._(value);
 
-  static const json =
-      GetDrainResponseVariant1DeliveryVariant3Encoding._('json');
-  static const ndjson =
-      GetDrainResponseVariant1DeliveryVariant3Encoding._('ndjson');
+  static const json = GetDrainResponseVariant1DeliveryVariant3Encoding._('json');
+  static const ndjson = GetDrainResponseVariant1DeliveryVariant3Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant3Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant3Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainResponseVariant1DeliveryVariant3FileStructure {
+
   final String value;
 
   const GetDrainResponseVariant1DeliveryVariant3FileStructure._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant3FileStructure.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant3FileStructure._(value);
+  factory GetDrainResponseVariant1DeliveryVariant3FileStructure.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant3FileStructure._(value);
 
-  static const hive =
-      GetDrainResponseVariant1DeliveryVariant3FileStructure._('hive');
+  static const hive = GetDrainResponseVariant1DeliveryVariant3FileStructure._('hive');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant3FileStructure &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant3FileStructure && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainResponseVariant1DeliveryVariant3ObjectAcl {
+
   final String value;
 
   const GetDrainResponseVariant1DeliveryVariant3ObjectAcl._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant3ObjectAcl.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._(value);
+  factory GetDrainResponseVariant1DeliveryVariant3ObjectAcl.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant3ObjectAcl._(value);
 
-  static const authenticatedRead =
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('authenticated-read');
-  static const awsExecRead =
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('aws-exec-read');
-  static const bucketOwnerFullControl =
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._(
-          'bucket-owner-full-control');
-  static const bucketOwnerRead =
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('bucket-owner-read');
-  static const private =
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('private');
-  static const publicRead =
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('public-read');
-  static const publicReadWrite =
-      GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('public-read-write');
+  static const authenticatedRead = GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('authenticated-read');
+  static const awsExecRead = GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('aws-exec-read');
+  static const bucketOwnerFullControl = GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('bucket-owner-full-control');
+  static const bucketOwnerRead = GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('bucket-owner-read');
+  static const private = GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('private');
+  static const publicRead = GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('public-read');
+  static const publicReadWrite = GetDrainResponseVariant1DeliveryVariant3ObjectAcl._('public-read-write');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant3ObjectAcl &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant3ObjectAcl && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption {
+
   final String value;
 
-  const GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._(
-      this.value);
+  const GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._(value);
+  factory GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._(value);
 
-  static const aes256 =
-      GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._('AES256');
-  static const awsKms =
-      GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._('aws:kms');
-  static const awsKmsDsse =
-      GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._(
-          'aws:kms:dsse');
+  static const aes256 = GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._('AES256');
+  static const awsKms = GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._('aws:kms');
+  static const awsKmsDsse = GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption._('aws:kms:dsse');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant3ServerSideEncryption && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetDrainResponseVariant1DeliveryVariant3Type {
@@ -316,18 +239,14 @@ enum GetDrainResponseVariant1DeliveryVariant3Type {
 
   static GetDrainResponseVariant1DeliveryVariant3Type fromJson(String value) {
     switch (value) {
-      case 's3':
-        return GetDrainResponseVariant1DeliveryVariant3Type.s3;
-      default:
-        throw ArgumentError(
-            'Unknown GetDrainResponseVariant1DeliveryVariant3Type: $value');
+      case 's3': return GetDrainResponseVariant1DeliveryVariant3Type.s3;
+      default: throw ArgumentError('Unknown GetDrainResponseVariant1DeliveryVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDrainResponseVariant1DeliveryVariant3Type.s3:
-        return 's3';
+      case GetDrainResponseVariant1DeliveryVariant3Type.s3: return 's3';
     }
   }
 
@@ -336,27 +255,21 @@ enum GetDrainResponseVariant1DeliveryVariant3Type {
 }
 
 final class GetDrainResponseVariant1DeliveryVariant4Target {
+
   final String value;
 
   const GetDrainResponseVariant1DeliveryVariant4Target._(this.value);
 
-  factory GetDrainResponseVariant1DeliveryVariant4Target.fromJson(
-          String value) =>
-      GetDrainResponseVariant1DeliveryVariant4Target._(value);
+  factory GetDrainResponseVariant1DeliveryVariant4Target.fromJson(String value) => GetDrainResponseVariant1DeliveryVariant4Target._(value);
 
-  static const vercelOtelTracesDb =
-      GetDrainResponseVariant1DeliveryVariant4Target._('vercel-otel-traces-db');
+  static const vercelOtelTracesDb = GetDrainResponseVariant1DeliveryVariant4Target._('vercel-otel-traces-db');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDrainResponseVariant1DeliveryVariant4Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDrainResponseVariant1DeliveryVariant4Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

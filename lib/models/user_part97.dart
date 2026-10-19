@@ -8,479 +8,276 @@ part of 'user.dart';
 class UserEventPayloadVariant287 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `customEnvironmentId` wire field.
   final String customEnvironmentId;
-
   /// Required `string` value serialized in the `customEnvironmentSlug` wire field.
   final String customEnvironmentSlug;
-
   /// Required enumerated value serialized in the `enableSchedulesByDefault` wire field.
-  final UserEventPayloadVariant287EnableSchedulesByDefault
-      enableSchedulesByDefault;
-
+  final UserEventPayloadVariant287EnableSchedulesByDefault enableSchedulesByDefault;
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant287(
-      {required this.customEnvironmentId,
-      required this.customEnvironmentSlug,
-      required this.enableSchedulesByDefault,
-      required this.projectId,
-      required this.projectName});
+  const UserEventPayloadVariant287({required this.customEnvironmentId, required this.customEnvironmentSlug, required this.enableSchedulesByDefault, required this.projectId, required this.projectName});
 
-  UserEventPayloadVariant287 Function(
-      {String customEnvironmentId,
-      String customEnvironmentSlug,
-      UserEventPayloadVariant287EnableSchedulesByDefault
-          enableSchedulesByDefault,
-      String projectId,
-      String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant287 Function({String customEnvironmentId, String customEnvironmentSlug, UserEventPayloadVariant287EnableSchedulesByDefault enableSchedulesByDefault, String projectId, String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant287 _copyWith(
-          {Object? customEnvironmentId = sdkOmittedValue,
-          Object? customEnvironmentSlug = sdkOmittedValue,
-          Object? enableSchedulesByDefault = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant287(
-        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
-            ? this.customEnvironmentId
-            : customEnvironmentId as String,
-        customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue)
-            ? this.customEnvironmentSlug
-            : customEnvironmentSlug as String,
-        enableSchedulesByDefault:
-            identical(enableSchedulesByDefault, sdkOmittedValue)
-                ? this.enableSchedulesByDefault
-                : enableSchedulesByDefault
-                    as UserEventPayloadVariant287EnableSchedulesByDefault,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-      );
+  UserEventPayloadVariant287 _copyWith({Object? customEnvironmentId = sdkOmittedValue, Object? customEnvironmentSlug = sdkOmittedValue, Object? enableSchedulesByDefault = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant287(
+    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as String,
+    customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue) ? this.customEnvironmentSlug : customEnvironmentSlug as String,
+    enableSchedulesByDefault: identical(enableSchedulesByDefault, sdkOmittedValue) ? this.enableSchedulesByDefault : enableSchedulesByDefault as UserEventPayloadVariant287EnableSchedulesByDefault,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+  );
 
-  factory UserEventPayloadVariant287.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant287(
-        customEnvironmentId: (json['customEnvironmentId'] as String?)!,
-        customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
-        enableSchedulesByDefault: (json['enableSchedulesByDefault'] != null
-            ? UserEventPayloadVariant287EnableSchedulesByDefault.fromJson(
-                json['enableSchedulesByDefault'] as bool)
-            : null)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-      );
+  factory UserEventPayloadVariant287.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant287(
+    customEnvironmentId: (json['customEnvironmentId'] as String?)!,
+    customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
+    enableSchedulesByDefault: (json['enableSchedulesByDefault'] != null ? UserEventPayloadVariant287EnableSchedulesByDefault.fromJson(json['enableSchedulesByDefault'] as bool) : null)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'customEnvironmentId': customEnvironmentId,
-        'customEnvironmentSlug': customEnvironmentSlug,
-        'enableSchedulesByDefault': enableSchedulesByDefault.toJson(),
-        'projectId': projectId,
-        'projectName': projectName,
-      };
+    'customEnvironmentId': customEnvironmentId,
+    'customEnvironmentSlug': customEnvironmentSlug,
+    'enableSchedulesByDefault': enableSchedulesByDefault.toJson(),
+    'projectId': projectId,
+    'projectName': projectName,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant288 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `customEnvironmentId` wire field.
   final String customEnvironmentId;
-
   /// Required `string` value serialized in the `customEnvironmentSlug` wire field.
   final String customEnvironmentSlug;
-
   /// Optional enumerated value serialized in the `enableSchedulesByDefault` wire field.
-  final SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault>
-      enableSchedulesByDefault;
-
+  final SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault> enableSchedulesByDefault;
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant288(
-      {required this.customEnvironmentId,
-      required this.customEnvironmentSlug,
-      this.enableSchedulesByDefault = const SdkOmitted(),
-      required this.projectId,
-      required this.projectName});
+  const UserEventPayloadVariant288({required this.customEnvironmentId, required this.customEnvironmentSlug, this.enableSchedulesByDefault = const SdkOmitted(), required this.projectId, required this.projectName});
 
-  UserEventPayloadVariant288 Function(
-      {String customEnvironmentId,
-      String customEnvironmentSlug,
-      SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault>
-          enableSchedulesByDefault,
-      String projectId,
-      String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant288 Function({String customEnvironmentId, String customEnvironmentSlug, SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault> enableSchedulesByDefault, String projectId, String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant288 _copyWith(
-          {Object? customEnvironmentId = sdkOmittedValue,
-          Object? customEnvironmentSlug = sdkOmittedValue,
-          Object? enableSchedulesByDefault = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant288(
-        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
-            ? this.customEnvironmentId
-            : customEnvironmentId as String,
-        customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue)
-            ? this.customEnvironmentSlug
-            : customEnvironmentSlug as String,
-        enableSchedulesByDefault:
-            identical(enableSchedulesByDefault, sdkOmittedValue)
-                ? this.enableSchedulesByDefault
-                : enableSchedulesByDefault as SdkOptional<
-                    UserEventPayloadVariant288EnableSchedulesByDefault>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-      );
+  UserEventPayloadVariant288 _copyWith({Object? customEnvironmentId = sdkOmittedValue, Object? customEnvironmentSlug = sdkOmittedValue, Object? enableSchedulesByDefault = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant288(
+    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as String,
+    customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue) ? this.customEnvironmentSlug : customEnvironmentSlug as String,
+    enableSchedulesByDefault: identical(enableSchedulesByDefault, sdkOmittedValue) ? this.enableSchedulesByDefault : enableSchedulesByDefault as SdkOptional<UserEventPayloadVariant288EnableSchedulesByDefault>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+  );
 
-  factory UserEventPayloadVariant288.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant288(
-        customEnvironmentId: (json['customEnvironmentId'] as String?)!,
-        customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
-        enableSchedulesByDefault: json['enableSchedulesByDefault'] != null
-            ? SdkPresent((json['enableSchedulesByDefault'] != null
-                ? UserEventPayloadVariant288EnableSchedulesByDefault.fromJson(
-                    json['enableSchedulesByDefault'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-      );
+  factory UserEventPayloadVariant288.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant288(
+    customEnvironmentId: (json['customEnvironmentId'] as String?)!,
+    customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
+    enableSchedulesByDefault: json['enableSchedulesByDefault'] != null ? SdkPresent((json['enableSchedulesByDefault'] != null ? UserEventPayloadVariant288EnableSchedulesByDefault.fromJson(json['enableSchedulesByDefault'] as bool) : null)!) : const SdkOmitted(),
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'customEnvironmentId': customEnvironmentId,
-        'customEnvironmentSlug': customEnvironmentSlug,
-        ...switch (enableSchedulesByDefault) {
-          SdkPresent<UserEventPayloadVariant288EnableSchedulesByDefault>(
-            value: final value
-          ) =>
-            {
-              'enableSchedulesByDefault': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'projectId': projectId,
-        'projectName': projectName,
-      };
+    'customEnvironmentId': customEnvironmentId,
+    'customEnvironmentSlug': customEnvironmentSlug,
+    ...switch (enableSchedulesByDefault) {
+      SdkPresent<UserEventPayloadVariant288EnableSchedulesByDefault>(value: final value) => {'enableSchedulesByDefault': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'projectId': projectId,
+    'projectName': projectName,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant289 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `customEnvironmentId` wire field.
   final String customEnvironmentId;
-
   /// Required `string` value serialized in the `customEnvironmentSlug` wire field.
   final String customEnvironmentSlug;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant289(
-      {required this.customEnvironmentId,
-      required this.customEnvironmentSlug,
-      required this.projectId,
-      required this.projectName});
+  const UserEventPayloadVariant289({required this.customEnvironmentId, required this.customEnvironmentSlug, required this.projectId, required this.projectName});
 
-  UserEventPayloadVariant289 Function(
-      {String customEnvironmentId,
-      String customEnvironmentSlug,
-      String projectId,
-      String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant289 Function({String customEnvironmentId, String customEnvironmentSlug, String projectId, String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant289 _copyWith(
-          {Object? customEnvironmentId = sdkOmittedValue,
-          Object? customEnvironmentSlug = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant289(
-        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
-            ? this.customEnvironmentId
-            : customEnvironmentId as String,
-        customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue)
-            ? this.customEnvironmentSlug
-            : customEnvironmentSlug as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-      );
+  UserEventPayloadVariant289 _copyWith({Object? customEnvironmentId = sdkOmittedValue, Object? customEnvironmentSlug = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant289(
+    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as String,
+    customEnvironmentSlug: identical(customEnvironmentSlug, sdkOmittedValue) ? this.customEnvironmentSlug : customEnvironmentSlug as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+  );
 
-  factory UserEventPayloadVariant289.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant289(
-        customEnvironmentId: (json['customEnvironmentId'] as String?)!,
-        customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-      );
+  factory UserEventPayloadVariant289.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant289(
+    customEnvironmentId: (json['customEnvironmentId'] as String?)!,
+    customEnvironmentSlug: (json['customEnvironmentSlug'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'customEnvironmentId': customEnvironmentId,
-        'customEnvironmentSlug': customEnvironmentSlug,
-        'projectId': projectId,
-        'projectName': projectName,
-      };
+    'customEnvironmentId': customEnvironmentId,
+    'customEnvironmentSlug': customEnvironmentSlug,
+    'projectId': projectId,
+    'projectName': projectName,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant290 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `enableFunctionsBeta` wire field.
   final UserEventPayloadVariant290EnableFunctionsBeta enableFunctionsBeta;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
 
-  const UserEventPayloadVariant290(
-      {required this.enableFunctionsBeta,
-      required this.projectId,
-      this.projectName = const SdkOmitted()});
+  const UserEventPayloadVariant290({required this.enableFunctionsBeta, required this.projectId, this.projectName = const SdkOmitted()});
 
-  UserEventPayloadVariant290 Function(
-      {UserEventPayloadVariant290EnableFunctionsBeta enableFunctionsBeta,
-      String projectId,
-      SdkOptional<String> projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant290 Function({UserEventPayloadVariant290EnableFunctionsBeta enableFunctionsBeta, String projectId, SdkOptional<String> projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant290 _copyWith(
-          {Object? enableFunctionsBeta = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant290(
-        enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue)
-            ? this.enableFunctionsBeta
-            : enableFunctionsBeta
-                as UserEventPayloadVariant290EnableFunctionsBeta,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-      );
+  UserEventPayloadVariant290 _copyWith({Object? enableFunctionsBeta = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant290(
+    enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue) ? this.enableFunctionsBeta : enableFunctionsBeta as UserEventPayloadVariant290EnableFunctionsBeta,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant290.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant290(
-        enableFunctionsBeta: (json['enableFunctionsBeta'] != null
-            ? UserEventPayloadVariant290EnableFunctionsBeta.fromJson(
-                json['enableFunctionsBeta'] as bool)
-            : null)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant290.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant290(
+    enableFunctionsBeta: (json['enableFunctionsBeta'] != null ? UserEventPayloadVariant290EnableFunctionsBeta.fromJson(json['enableFunctionsBeta'] as bool) : null)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'enableFunctionsBeta': enableFunctionsBeta.toJson(),
-        'projectId': projectId,
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'enableFunctionsBeta': enableFunctionsBeta.toJson(),
+    'projectId': projectId,
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `next` wire field.
 class UserEventPayloadVariant291Next {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `number` value serialized in the `functionDefaultTimeout` wire field.
   final double functionDefaultTimeout;
 
   const UserEventPayloadVariant291Next({required this.functionDefaultTimeout});
 
-  UserEventPayloadVariant291Next Function({double functionDefaultTimeout})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant291Next Function({double functionDefaultTimeout}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant291Next _copyWith(
-          {Object? functionDefaultTimeout = sdkOmittedValue}) =>
-      UserEventPayloadVariant291Next(
-        functionDefaultTimeout:
-            identical(functionDefaultTimeout, sdkOmittedValue)
-                ? this.functionDefaultTimeout
-                : functionDefaultTimeout as double,
-      );
+  UserEventPayloadVariant291Next _copyWith({Object? functionDefaultTimeout = sdkOmittedValue}) => UserEventPayloadVariant291Next(
+    functionDefaultTimeout: identical(functionDefaultTimeout, sdkOmittedValue) ? this.functionDefaultTimeout : functionDefaultTimeout as double,
+  );
 
-  factory UserEventPayloadVariant291Next.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant291Next(
-        functionDefaultTimeout:
-            ((json['functionDefaultTimeout'] as num?)?.toDouble())!,
-      );
+  factory UserEventPayloadVariant291Next.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant291Next(
+    functionDefaultTimeout: ((json['functionDefaultTimeout'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'functionDefaultTimeout': functionDefaultTimeout,
-      };
+    'functionDefaultTimeout': functionDefaultTimeout,
+  };
 }
 
 /// Required object value serialized in the `previous` wire field.
 class UserEventPayloadVariant291Previous {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `number` value serialized in the `functionDefaultTimeout` wire field.
   final double? functionDefaultTimeout;
 
-  const UserEventPayloadVariant291Previous(
-      {required this.functionDefaultTimeout});
+  const UserEventPayloadVariant291Previous({required this.functionDefaultTimeout});
 
-  UserEventPayloadVariant291Previous Function({double? functionDefaultTimeout})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant291Previous Function({double? functionDefaultTimeout}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant291Previous _copyWith(
-          {Object? functionDefaultTimeout = sdkOmittedValue}) =>
-      UserEventPayloadVariant291Previous(
-        functionDefaultTimeout:
-            identical(functionDefaultTimeout, sdkOmittedValue)
-                ? this.functionDefaultTimeout
-                : functionDefaultTimeout as double?,
-      );
+  UserEventPayloadVariant291Previous _copyWith({Object? functionDefaultTimeout = sdkOmittedValue}) => UserEventPayloadVariant291Previous(
+    functionDefaultTimeout: identical(functionDefaultTimeout, sdkOmittedValue) ? this.functionDefaultTimeout : functionDefaultTimeout as double?,
+  );
 
-  factory UserEventPayloadVariant291Previous.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant291Previous(
-        functionDefaultTimeout: json.containsKey('functionDefaultTimeout')
-            ? (json['functionDefaultTimeout'] as num?)?.toDouble()
-            : throw ArgumentError.value(
-                null, 'functionDefaultTimeout', 'Required property is missing'),
-      );
+  factory UserEventPayloadVariant291Previous.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant291Previous(
+    functionDefaultTimeout: json.containsKey('functionDefaultTimeout') ? (json['functionDefaultTimeout'] as num?)?.toDouble() : throw ArgumentError.value(null, 'functionDefaultTimeout', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'functionDefaultTimeout': functionDefaultTimeout,
-      };
+    'functionDefaultTimeout': functionDefaultTimeout,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant291 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `next` wire field.
   final UserEventPayloadVariant291Next next;
-
   /// Required object value serialized in the `previous` wire field.
   final UserEventPayloadVariant291Previous previous;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant291(
-      {required this.next,
-      required this.previous,
-      required this.projectId,
-      required this.projectName});
+  const UserEventPayloadVariant291({required this.next, required this.previous, required this.projectId, required this.projectName});
 
-  UserEventPayloadVariant291 Function(
-      {UserEventPayloadVariant291Next next,
-      UserEventPayloadVariant291Previous previous,
-      String projectId,
-      String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant291 Function({UserEventPayloadVariant291Next next, UserEventPayloadVariant291Previous previous, String projectId, String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant291 _copyWith(
-          {Object? next = sdkOmittedValue,
-          Object? previous = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant291(
-        next: identical(next, sdkOmittedValue)
-            ? this.next
-            : next as UserEventPayloadVariant291Next,
-        previous: identical(previous, sdkOmittedValue)
-            ? this.previous
-            : previous as UserEventPayloadVariant291Previous,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-      );
+  UserEventPayloadVariant291 _copyWith({Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant291(
+    next: identical(next, sdkOmittedValue) ? this.next : next as UserEventPayloadVariant291Next,
+    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as UserEventPayloadVariant291Previous,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+  );
 
-  factory UserEventPayloadVariant291.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant291(
-        next: (json['next'] != null
-            ? UserEventPayloadVariant291Next.fromJson(
-                json['next'] as Map<String, dynamic>)
-            : null)!,
-        previous: (json['previous'] != null
-            ? UserEventPayloadVariant291Previous.fromJson(
-                json['previous'] as Map<String, dynamic>)
-            : null)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-      );
+  factory UserEventPayloadVariant291.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant291(
+    next: (json['next'] != null ? UserEventPayloadVariant291Next.fromJson(json['next'] as Map<String, dynamic>) : null)!,
+    previous: (json['previous'] != null ? UserEventPayloadVariant291Previous.fromJson(json['previous'] as Map<String, dynamic>) : null)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'next': next.toJson(),
-        'previous': previous.toJson(),
-        'projectId': projectId,
-        'projectName': projectName,
-      };
+    'next': next.toJson(),
+    'previous': previous.toJson(),
+    'projectId': projectId,
+    'projectName': projectName,
+  };
 }
 
 /// Required object value serialized in the `next` wire field.
 class UserEventPayloadVariant292Next {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `functionDefaultMemoryType` wire field.
   final String functionDefaultMemoryType;
 
-  const UserEventPayloadVariant292Next(
-      {required this.functionDefaultMemoryType});
+  const UserEventPayloadVariant292Next({required this.functionDefaultMemoryType});
 
-  UserEventPayloadVariant292Next Function({String functionDefaultMemoryType})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant292Next Function({String functionDefaultMemoryType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant292Next _copyWith(
-          {Object? functionDefaultMemoryType = sdkOmittedValue}) =>
-      UserEventPayloadVariant292Next(
-        functionDefaultMemoryType:
-            identical(functionDefaultMemoryType, sdkOmittedValue)
-                ? this.functionDefaultMemoryType
-                : functionDefaultMemoryType as String,
-      );
+  UserEventPayloadVariant292Next _copyWith({Object? functionDefaultMemoryType = sdkOmittedValue}) => UserEventPayloadVariant292Next(
+    functionDefaultMemoryType: identical(functionDefaultMemoryType, sdkOmittedValue) ? this.functionDefaultMemoryType : functionDefaultMemoryType as String,
+  );
 
-  factory UserEventPayloadVariant292Next.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant292Next(
-        functionDefaultMemoryType:
-            (json['functionDefaultMemoryType'] as String?)!,
-      );
+  factory UserEventPayloadVariant292Next.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant292Next(
+    functionDefaultMemoryType: (json['functionDefaultMemoryType'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'functionDefaultMemoryType': functionDefaultMemoryType,
-      };
+    'functionDefaultMemoryType': functionDefaultMemoryType,
+  };
 }

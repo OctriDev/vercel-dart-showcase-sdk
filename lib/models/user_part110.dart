@@ -8,179 +8,79 @@ part of 'user.dart';
 class UserEventPayloadVariant346 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `next` wire field.
   final UserEventPayloadVariant346Next next;
-
   /// Required object value serialized in the `previous` wire field.
   final UserEventPayloadVariant346Previous previous;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant346(
-      {required this.next,
-      required this.previous,
-      required this.projectId,
-      required this.projectName});
+  const UserEventPayloadVariant346({required this.next, required this.previous, required this.projectId, required this.projectName});
 
-  UserEventPayloadVariant346 Function(
-      {UserEventPayloadVariant346Next next,
-      UserEventPayloadVariant346Previous previous,
-      String projectId,
-      String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant346 Function({UserEventPayloadVariant346Next next, UserEventPayloadVariant346Previous previous, String projectId, String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant346 _copyWith(
-          {Object? next = sdkOmittedValue,
-          Object? previous = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue}) =>
-      UserEventPayloadVariant346(
-        next: identical(next, sdkOmittedValue)
-            ? this.next
-            : next as UserEventPayloadVariant346Next,
-        previous: identical(previous, sdkOmittedValue)
-            ? this.previous
-            : previous as UserEventPayloadVariant346Previous,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-      );
+  UserEventPayloadVariant346 _copyWith({Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant346(
+    next: identical(next, sdkOmittedValue) ? this.next : next as UserEventPayloadVariant346Next,
+    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as UserEventPayloadVariant346Previous,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+  );
 
-  factory UserEventPayloadVariant346.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant346(
-        next: (json['next'] != null
-            ? UserEventPayloadVariant346Next.fromJson(
-                json['next'] as Map<String, dynamic>)
-            : null)!,
-        previous: (json['previous'] != null
-            ? UserEventPayloadVariant346Previous.fromJson(
-                json['previous'] as Map<String, dynamic>)
-            : null)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-      );
+  factory UserEventPayloadVariant346.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant346(
+    next: (json['next'] != null ? UserEventPayloadVariant346Next.fromJson(json['next'] as Map<String, dynamic>) : null)!,
+    previous: (json['previous'] != null ? UserEventPayloadVariant346Previous.fromJson(json['previous'] as Map<String, dynamic>) : null)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'next': next.toJson(),
-        'previous': previous.toJson(),
-        'projectId': projectId,
-        'projectName': projectName,
-      };
+    'next': next.toJson(),
+    'previous': previous.toJson(),
+    'projectId': projectId,
+    'projectName': projectName,
+  };
 }
 
 /// Required object value serialized in the `oldSsoProtection` wire field.
 class UserEventPayloadVariant347OldSsoProtectionVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional enumerated value serialized in the `april2026SecurityIncidentMigrationAppliedFrom` wire field.
-  final SdkOptional<
-          UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>
-      april2026SecurityIncidentMigrationAppliedFrom;
-
+  final SdkOptional<UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom;
   /// Optional enumerated value serialized in the `cve55182MigrationAppliedFrom` wire field.
-  final SdkOptional<
-          UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?>
-      cve55182MigrationAppliedFrom;
-
+  final SdkOptional<UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom;
   /// Required enumerated value serialized in the `deploymentType` wire field.
-  final UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType
-      deploymentType;
+  final UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType deploymentType;
 
-  const UserEventPayloadVariant347OldSsoProtectionVariant0(
-      {this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(),
-      this.cve55182MigrationAppliedFrom = const SdkOmitted(),
-      required this.deploymentType});
+  const UserEventPayloadVariant347OldSsoProtectionVariant0({this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(), this.cve55182MigrationAppliedFrom = const SdkOmitted(), required this.deploymentType});
 
-  UserEventPayloadVariant347OldSsoProtectionVariant0 Function(
-      {SdkOptional<
-              UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>
-          april2026SecurityIncidentMigrationAppliedFrom,
-      SdkOptional<
-              UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?>
-          cve55182MigrationAppliedFrom,
-      UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  UserEventPayloadVariant347OldSsoProtectionVariant0 Function({SdkOptional<UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom, SdkOptional<UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom, UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType deploymentType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant347OldSsoProtectionVariant0 _copyWith(
-          {Object? april2026SecurityIncidentMigrationAppliedFrom =
-              sdkOmittedValue,
-          Object? cve55182MigrationAppliedFrom = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue}) =>
-      UserEventPayloadVariant347OldSsoProtectionVariant0(
-        april2026SecurityIncidentMigrationAppliedFrom: identical(
-                april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue)
-            ? this.april2026SecurityIncidentMigrationAppliedFrom
-            : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<
-                UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>,
-        cve55182MigrationAppliedFrom: identical(
-                cve55182MigrationAppliedFrom, sdkOmittedValue)
-            ? this.cve55182MigrationAppliedFrom
-            : cve55182MigrationAppliedFrom as SdkOptional<
-                UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?>,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType,
-      );
+  UserEventPayloadVariant347OldSsoProtectionVariant0 _copyWith({Object? april2026SecurityIncidentMigrationAppliedFrom = sdkOmittedValue, Object? cve55182MigrationAppliedFrom = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UserEventPayloadVariant347OldSsoProtectionVariant0(
+    april2026SecurityIncidentMigrationAppliedFrom: identical(april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue) ? this.april2026SecurityIncidentMigrationAppliedFrom : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>,
+    cve55182MigrationAppliedFrom: identical(cve55182MigrationAppliedFrom, sdkOmittedValue) ? this.cve55182MigrationAppliedFrom : cve55182MigrationAppliedFrom as SdkOptional<UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?>,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType,
+  );
 
-  factory UserEventPayloadVariant347OldSsoProtectionVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant347OldSsoProtectionVariant0(
-        april2026SecurityIncidentMigrationAppliedFrom: json
-                .containsKey('april2026SecurityIncidentMigrationAppliedFrom')
-            ? SdkPresent(json[
-                        'april2026SecurityIncidentMigrationAppliedFrom'] !=
-                    null
-                ? UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom
-                    .fromJson(
-                        json['april2026SecurityIncidentMigrationAppliedFrom']
-                            as String)
-                : null)
-            : const SdkOmitted(),
-        cve55182MigrationAppliedFrom: json
-                .containsKey('cve55182MigrationAppliedFrom')
-            ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null
-                ? UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom
-                    .fromJson(json['cve55182MigrationAppliedFrom'] as String)
-                : null)
-            : const SdkOmitted(),
-        deploymentType: (json['deploymentType'] != null
-            ? UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant347OldSsoProtectionVariant0.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant347OldSsoProtectionVariant0(
+    april2026SecurityIncidentMigrationAppliedFrom: json.containsKey('april2026SecurityIncidentMigrationAppliedFrom') ? SdkPresent(json['april2026SecurityIncidentMigrationAppliedFrom'] != null ? UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom.fromJson(json['april2026SecurityIncidentMigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
+    cve55182MigrationAppliedFrom: json.containsKey('cve55182MigrationAppliedFrom') ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null ? UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom.fromJson(json['cve55182MigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
+    deploymentType: (json['deploymentType'] != null ? UserEventPayloadVariant347OldSsoProtectionVariant0DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
-          SdkPresent<
-                UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>(
-            value: final value
-          ) =>
-            {
-              'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (cve55182MigrationAppliedFrom) {
-          SdkPresent<
-                UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?>(
-            value: final value
-          ) =>
-            {
-              'cve55182MigrationAppliedFrom': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deploymentType': deploymentType.toJson(),
-      };
+    ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
+      SdkPresent<UserEventPayloadVariant347OldSsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>(value: final value) => {'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (cve55182MigrationAppliedFrom) {
+      SdkPresent<UserEventPayloadVariant347OldSsoProtectionVariant0Cve55182MigrationAppliedFrom?>(value: final value) => {'cve55182MigrationAppliedFrom': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 sealed class UserEventPayloadVariant347OldSsoProtection {
@@ -188,146 +88,63 @@ sealed class UserEventPayloadVariant347OldSsoProtection {
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant347OldSsoProtection();
   factory UserEventPayloadVariant347OldSsoProtection.fromJson(Object? json) {
-    try {
-      return UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant0(
-          UserEventPayloadVariant347OldSsoProtectionVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant1(
-          UserEventPayloadVariant347OldSsoProtectionVariant1.fromJson(
-              json as String));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UserEventPayloadVariant347OldSsoProtection");
+    try { return UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant0(UserEventPayloadVariant347OldSsoProtectionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant1(UserEventPayloadVariant347OldSsoProtectionVariant1.fromJson(json as String)); } catch (_) {}
+    throw FormatException("No variant matched for UserEventPayloadVariant347OldSsoProtection");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant0
-    extends UserEventPayloadVariant347OldSsoProtection {
+final class UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant0 extends UserEventPayloadVariant347OldSsoProtection {
   final UserEventPayloadVariant347OldSsoProtectionVariant0 value;
-  const UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant1
-    extends UserEventPayloadVariant347OldSsoProtection {
+final class UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant1 extends UserEventPayloadVariant347OldSsoProtection {
   final UserEventPayloadVariant347OldSsoProtectionVariant1 value;
-  const UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UserEventPayloadVariant347OldSsoProtectionUserEventPayloadVariant347OldSsoProtectionVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// Required object value serialized in the `ssoProtection` wire field.
 class UserEventPayloadVariant347SsoProtectionVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional enumerated value serialized in the `april2026SecurityIncidentMigrationAppliedFrom` wire field.
-  final SdkOptional<
-          UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>
-      april2026SecurityIncidentMigrationAppliedFrom;
-
+  final SdkOptional<UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom;
   /// Optional enumerated value serialized in the `cve55182MigrationAppliedFrom` wire field.
-  final SdkOptional<
-          UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?>
-      cve55182MigrationAppliedFrom;
-
+  final SdkOptional<UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom;
   /// Required enumerated value serialized in the `deploymentType` wire field.
-  final UserEventPayloadVariant347SsoProtectionVariant0DeploymentType
-      deploymentType;
+  final UserEventPayloadVariant347SsoProtectionVariant0DeploymentType deploymentType;
 
-  const UserEventPayloadVariant347SsoProtectionVariant0(
-      {this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(),
-      this.cve55182MigrationAppliedFrom = const SdkOmitted(),
-      required this.deploymentType});
+  const UserEventPayloadVariant347SsoProtectionVariant0({this.april2026SecurityIncidentMigrationAppliedFrom = const SdkOmitted(), this.cve55182MigrationAppliedFrom = const SdkOmitted(), required this.deploymentType});
 
-  UserEventPayloadVariant347SsoProtectionVariant0 Function(
-      {SdkOptional<
-              UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>
-          april2026SecurityIncidentMigrationAppliedFrom,
-      SdkOptional<
-              UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?>
-          cve55182MigrationAppliedFrom,
-      UserEventPayloadVariant347SsoProtectionVariant0DeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  UserEventPayloadVariant347SsoProtectionVariant0 Function({SdkOptional<UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?> april2026SecurityIncidentMigrationAppliedFrom, SdkOptional<UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?> cve55182MigrationAppliedFrom, UserEventPayloadVariant347SsoProtectionVariant0DeploymentType deploymentType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant347SsoProtectionVariant0 _copyWith(
-          {Object? april2026SecurityIncidentMigrationAppliedFrom =
-              sdkOmittedValue,
-          Object? cve55182MigrationAppliedFrom = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue}) =>
-      UserEventPayloadVariant347SsoProtectionVariant0(
-        april2026SecurityIncidentMigrationAppliedFrom: identical(
-                april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue)
-            ? this.april2026SecurityIncidentMigrationAppliedFrom
-            : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<
-                UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>,
-        cve55182MigrationAppliedFrom: identical(
-                cve55182MigrationAppliedFrom, sdkOmittedValue)
-            ? this.cve55182MigrationAppliedFrom
-            : cve55182MigrationAppliedFrom as SdkOptional<
-                UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?>,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as UserEventPayloadVariant347SsoProtectionVariant0DeploymentType,
-      );
+  UserEventPayloadVariant347SsoProtectionVariant0 _copyWith({Object? april2026SecurityIncidentMigrationAppliedFrom = sdkOmittedValue, Object? cve55182MigrationAppliedFrom = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UserEventPayloadVariant347SsoProtectionVariant0(
+    april2026SecurityIncidentMigrationAppliedFrom: identical(april2026SecurityIncidentMigrationAppliedFrom, sdkOmittedValue) ? this.april2026SecurityIncidentMigrationAppliedFrom : april2026SecurityIncidentMigrationAppliedFrom as SdkOptional<UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>,
+    cve55182MigrationAppliedFrom: identical(cve55182MigrationAppliedFrom, sdkOmittedValue) ? this.cve55182MigrationAppliedFrom : cve55182MigrationAppliedFrom as SdkOptional<UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?>,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UserEventPayloadVariant347SsoProtectionVariant0DeploymentType,
+  );
 
-  factory UserEventPayloadVariant347SsoProtectionVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant347SsoProtectionVariant0(
-        april2026SecurityIncidentMigrationAppliedFrom: json
-                .containsKey('april2026SecurityIncidentMigrationAppliedFrom')
-            ? SdkPresent(json[
-                        'april2026SecurityIncidentMigrationAppliedFrom'] !=
-                    null
-                ? UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom
-                    .fromJson(
-                        json['april2026SecurityIncidentMigrationAppliedFrom']
-                            as String)
-                : null)
-            : const SdkOmitted(),
-        cve55182MigrationAppliedFrom: json
-                .containsKey('cve55182MigrationAppliedFrom')
-            ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null
-                ? UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom
-                    .fromJson(json['cve55182MigrationAppliedFrom'] as String)
-                : null)
-            : const SdkOmitted(),
-        deploymentType: (json['deploymentType'] != null
-            ? UserEventPayloadVariant347SsoProtectionVariant0DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant347SsoProtectionVariant0.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant347SsoProtectionVariant0(
+    april2026SecurityIncidentMigrationAppliedFrom: json.containsKey('april2026SecurityIncidentMigrationAppliedFrom') ? SdkPresent(json['april2026SecurityIncidentMigrationAppliedFrom'] != null ? UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom.fromJson(json['april2026SecurityIncidentMigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
+    cve55182MigrationAppliedFrom: json.containsKey('cve55182MigrationAppliedFrom') ? SdkPresent(json['cve55182MigrationAppliedFrom'] != null ? UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom.fromJson(json['cve55182MigrationAppliedFrom'] as String) : null) : const SdkOmitted(),
+    deploymentType: (json['deploymentType'] != null ? UserEventPayloadVariant347SsoProtectionVariant0DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
-          SdkPresent<
-                UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>(
-            value: final value
-          ) =>
-            {
-              'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (cve55182MigrationAppliedFrom) {
-          SdkPresent<
-                UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?>(
-            value: final value
-          ) =>
-            {
-              'cve55182MigrationAppliedFrom': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'deploymentType': deploymentType.toJson(),
-      };
+    ...switch (april2026SecurityIncidentMigrationAppliedFrom) {
+      SdkPresent<UserEventPayloadVariant347SsoProtectionVariant0April2026SecurityIncidentMigrationAppliedFrom?>(value: final value) => {'april2026SecurityIncidentMigrationAppliedFrom': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (cve55182MigrationAppliedFrom) {
+      SdkPresent<UserEventPayloadVariant347SsoProtectionVariant0Cve55182MigrationAppliedFrom?>(value: final value) => {'cve55182MigrationAppliedFrom': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 sealed class UserEventPayloadVariant347SsoProtection {
@@ -335,220 +152,114 @@ sealed class UserEventPayloadVariant347SsoProtection {
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant347SsoProtection();
   factory UserEventPayloadVariant347SsoProtection.fromJson(Object? json) {
-    try {
-      return UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant0(
-          UserEventPayloadVariant347SsoProtectionVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant1(
-          UserEventPayloadVariant347SsoProtectionVariant1.fromJson(
-              json as String));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UserEventPayloadVariant347SsoProtection");
+    try { return UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant0(UserEventPayloadVariant347SsoProtectionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant1(UserEventPayloadVariant347SsoProtectionVariant1.fromJson(json as String)); } catch (_) {}
+    throw FormatException("No variant matched for UserEventPayloadVariant347SsoProtection");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant0
-    extends UserEventPayloadVariant347SsoProtection {
+final class UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant0 extends UserEventPayloadVariant347SsoProtection {
   final UserEventPayloadVariant347SsoProtectionVariant0 value;
-  const UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant1
-    extends UserEventPayloadVariant347SsoProtection {
+final class UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant1 extends UserEventPayloadVariant347SsoProtection {
   final UserEventPayloadVariant347SsoProtectionVariant1 value;
-  const UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UserEventPayloadVariant347SsoProtectionUserEventPayloadVariant347SsoProtectionVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant347 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required API value serialized in the `oldSsoProtection` wire field.
   final dynamic oldSsoProtection;
-
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
-
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
-
   /// Required API value serialized in the `ssoProtection` wire field.
   final dynamic ssoProtection;
 
-  const UserEventPayloadVariant347(
-      {required this.oldSsoProtection,
-      this.projectId = const SdkOmitted(),
-      this.projectName = const SdkOmitted(),
-      required this.ssoProtection});
+  const UserEventPayloadVariant347({required this.oldSsoProtection, this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), required this.ssoProtection});
 
-  UserEventPayloadVariant347 Function(
-      {dynamic oldSsoProtection,
-      SdkOptional<String> projectId,
-      SdkOptional<String> projectName,
-      dynamic ssoProtection}) get copyWith => _copyWith;
+  UserEventPayloadVariant347 Function({dynamic oldSsoProtection, SdkOptional<String> projectId, SdkOptional<String> projectName, dynamic ssoProtection}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant347 _copyWith(
-          {Object? oldSsoProtection = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? ssoProtection = sdkOmittedValue}) =>
-      UserEventPayloadVariant347(
-        oldSsoProtection: identical(oldSsoProtection, sdkOmittedValue)
-            ? this.oldSsoProtection
-            : oldSsoProtection as dynamic,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-        ssoProtection: identical(ssoProtection, sdkOmittedValue)
-            ? this.ssoProtection
-            : ssoProtection as dynamic,
-      );
+  UserEventPayloadVariant347 _copyWith({Object? oldSsoProtection = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? ssoProtection = sdkOmittedValue}) => UserEventPayloadVariant347(
+    oldSsoProtection: identical(oldSsoProtection, sdkOmittedValue) ? this.oldSsoProtection : oldSsoProtection as dynamic,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+    ssoProtection: identical(ssoProtection, sdkOmittedValue) ? this.ssoProtection : ssoProtection as dynamic,
+  );
 
-  factory UserEventPayloadVariant347.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant347(
-        oldSsoProtection: json.containsKey('oldSsoProtection')
-            ? json['oldSsoProtection']
-            : throw ArgumentError.value(
-                null, 'oldSsoProtection', 'Required property is missing'),
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-        ssoProtection: json.containsKey('ssoProtection')
-            ? json['ssoProtection']
-            : throw ArgumentError.value(
-                null, 'ssoProtection', 'Required property is missing'),
-      );
+  factory UserEventPayloadVariant347.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant347(
+    oldSsoProtection: json.containsKey('oldSsoProtection') ? json['oldSsoProtection'] : throw ArgumentError.value(null, 'oldSsoProtection', 'Required property is missing'),
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+    ssoProtection: json.containsKey('ssoProtection') ? json['ssoProtection'] : throw ArgumentError.value(null, 'ssoProtection', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'oldSsoProtection': oldSsoProtection,
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'ssoProtection': ssoProtection,
-      };
+    'oldSsoProtection': oldSsoProtection,
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+    'ssoProtection': ssoProtection,
+  };
 }
 
 /// Required object value serialized in the `staticIps` wire field.
 class UserEventPayloadVariant348NextProjectStaticIps {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `string` value serialized in the `buildRegion` wire field.
   final SdkOptional<String> buildRegion;
-
   /// Optional enumerated value serialized in the `builds` wire field.
-  final SdkOptional<UserEventPayloadVariant348NextProjectStaticIpsBuilds>
-      builds;
-
+  final SdkOptional<UserEventPayloadVariant348NextProjectStaticIpsBuilds> builds;
   /// Required enumerated value serialized in the `enabled` wire field.
   final UserEventPayloadVariant348NextProjectStaticIpsEnabled enabled;
-
   /// Optional array value serialized in the `regions` wire field.
   final SdkOptional<List<String>> regions;
 
-  const UserEventPayloadVariant348NextProjectStaticIps(
-      {this.buildRegion = const SdkOmitted(),
-      this.builds = const SdkOmitted(),
-      required this.enabled,
-      this.regions = const SdkOmitted()});
+  const UserEventPayloadVariant348NextProjectStaticIps({this.buildRegion = const SdkOmitted(), this.builds = const SdkOmitted(), required this.enabled, this.regions = const SdkOmitted()});
 
-  UserEventPayloadVariant348NextProjectStaticIps Function(
-      {SdkOptional<String> buildRegion,
-      SdkOptional<UserEventPayloadVariant348NextProjectStaticIpsBuilds> builds,
-      UserEventPayloadVariant348NextProjectStaticIpsEnabled enabled,
-      SdkOptional<List<String>> regions}) get copyWith => _copyWith;
+  UserEventPayloadVariant348NextProjectStaticIps Function({SdkOptional<String> buildRegion, SdkOptional<UserEventPayloadVariant348NextProjectStaticIpsBuilds> builds, UserEventPayloadVariant348NextProjectStaticIpsEnabled enabled, SdkOptional<List<String>> regions}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant348NextProjectStaticIps _copyWith(
-          {Object? buildRegion = sdkOmittedValue,
-          Object? builds = sdkOmittedValue,
-          Object? enabled = sdkOmittedValue,
-          Object? regions = sdkOmittedValue}) =>
-      UserEventPayloadVariant348NextProjectStaticIps(
-        buildRegion: identical(buildRegion, sdkOmittedValue)
-            ? this.buildRegion
-            : buildRegion as SdkOptional<String>,
-        builds: identical(builds, sdkOmittedValue)
-            ? this.builds
-            : builds as SdkOptional<
-                UserEventPayloadVariant348NextProjectStaticIpsBuilds>,
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as UserEventPayloadVariant348NextProjectStaticIpsEnabled,
-        regions: identical(regions, sdkOmittedValue)
-            ? this.regions
-            : regions as SdkOptional<List<String>>,
-      );
+  UserEventPayloadVariant348NextProjectStaticIps _copyWith({Object? buildRegion = sdkOmittedValue, Object? builds = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? regions = sdkOmittedValue}) => UserEventPayloadVariant348NextProjectStaticIps(
+    buildRegion: identical(buildRegion, sdkOmittedValue) ? this.buildRegion : buildRegion as SdkOptional<String>,
+    builds: identical(builds, sdkOmittedValue) ? this.builds : builds as SdkOptional<UserEventPayloadVariant348NextProjectStaticIpsBuilds>,
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UserEventPayloadVariant348NextProjectStaticIpsEnabled,
+    regions: identical(regions, sdkOmittedValue) ? this.regions : regions as SdkOptional<List<String>>,
+  );
 
-  factory UserEventPayloadVariant348NextProjectStaticIps.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant348NextProjectStaticIps(
-        buildRegion: json['buildRegion'] != null
-            ? SdkPresent((json['buildRegion'] as String?)!)
-            : const SdkOmitted(),
-        builds: json['builds'] != null
-            ? SdkPresent((json['builds'] != null
-                ? UserEventPayloadVariant348NextProjectStaticIpsBuilds.fromJson(
-                    json['builds'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        enabled: (json['enabled'] != null
-            ? UserEventPayloadVariant348NextProjectStaticIpsEnabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        regions: json['regions'] != null
-            ? SdkPresent(
-                ((json['regions'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant348NextProjectStaticIps.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant348NextProjectStaticIps(
+    buildRegion: json['buildRegion'] != null ? SdkPresent((json['buildRegion'] as String?)!) : const SdkOmitted(),
+    builds: json['builds'] != null ? SdkPresent((json['builds'] != null ? UserEventPayloadVariant348NextProjectStaticIpsBuilds.fromJson(json['builds'] as bool) : null)!) : const SdkOmitted(),
+    enabled: (json['enabled'] != null ? UserEventPayloadVariant348NextProjectStaticIpsEnabled.fromJson(json['enabled'] as bool) : null)!,
+    regions: json['regions'] != null ? SdkPresent(((json['regions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (buildRegion) {
-          SdkPresent<String>(value: final value) => {
-              'buildRegion': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (builds) {
-          SdkPresent<UserEventPayloadVariant348NextProjectStaticIpsBuilds>(
-            value: final value
-          ) =>
-            {
-              'builds': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'enabled': enabled.toJson(),
-        ...switch (regions) {
-          SdkPresent<List<String>>(value: final value) => {
-              'regions': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (buildRegion) {
+      SdkPresent<String>(value: final value) => {'buildRegion': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (builds) {
+      SdkPresent<UserEventPayloadVariant348NextProjectStaticIpsBuilds>(value: final value) => {'builds': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'enabled': enabled.toJson(),
+    ...switch (regions) {
+      SdkPresent<List<String>>(value: final value) => {'regions': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

@@ -17,8 +17,7 @@ void main() {
   });
 
   test('distinguishes omitted from explicit null', () {
-    expect(SdkUtils.unwrapOptional(const SdkOmitted<String?>()),
-        same(sdkOmittedValue));
+    expect(SdkUtils.unwrapOptional(const SdkOmitted<String?>()), same(sdkOmittedValue));
     expect(SdkUtils.unwrapOptional(const SdkPresent<String?>(null)), isNull);
   });
 

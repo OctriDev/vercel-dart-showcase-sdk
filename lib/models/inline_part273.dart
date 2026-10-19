@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 273)
 final class UpdateResourceRequestBodyStatus {
+
   final String value;
 
   const UpdateResourceRequestBodyStatus._(this.value);
 
-  factory UpdateResourceRequestBodyStatus.fromJson(String value) =>
-      UpdateResourceRequestBodyStatus._(value);
+  factory UpdateResourceRequestBodyStatus.fromJson(String value) => UpdateResourceRequestBodyStatus._(value);
 
   static const ready = UpdateResourceRequestBodyStatus._('ready');
   static const pending = UpdateResourceRequestBodyStatus._('pending');
@@ -22,50 +22,42 @@ final class UpdateResourceRequestBodyStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateResourceRequestBodyStatus && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateResourceRequestBodyStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ImportResourceRequestBodyBillingPlanType {
+
   final String value;
 
   const ImportResourceRequestBodyBillingPlanType._(this.value);
 
-  factory ImportResourceRequestBodyBillingPlanType.fromJson(String value) =>
-      ImportResourceRequestBodyBillingPlanType._(value);
+  factory ImportResourceRequestBodyBillingPlanType.fromJson(String value) => ImportResourceRequestBodyBillingPlanType._(value);
 
-  static const prepayment =
-      ImportResourceRequestBodyBillingPlanType._('prepayment');
-  static const subscription =
-      ImportResourceRequestBodyBillingPlanType._('subscription');
+  static const prepayment = ImportResourceRequestBodyBillingPlanType._('prepayment');
+  static const subscription = ImportResourceRequestBodyBillingPlanType._('subscription');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ImportResourceRequestBodyBillingPlanType && other.value == value;
+  @override bool operator ==(Object other) => other is ImportResourceRequestBodyBillingPlanType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ImportResourceRequestBodyNotificationLevel {
+
   final String value;
 
   const ImportResourceRequestBodyNotificationLevel._(this.value);
 
-  factory ImportResourceRequestBodyNotificationLevel.fromJson(String value) =>
-      ImportResourceRequestBodyNotificationLevel._(value);
+  factory ImportResourceRequestBodyNotificationLevel.fromJson(String value) => ImportResourceRequestBodyNotificationLevel._(value);
 
   static const info = ImportResourceRequestBodyNotificationLevel._('info');
   static const warn = ImportResourceRequestBodyNotificationLevel._('warn');
@@ -73,25 +65,21 @@ final class ImportResourceRequestBodyNotificationLevel {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ImportResourceRequestBodyNotificationLevel &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ImportResourceRequestBodyNotificationLevel && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ImportResourceRequestBodyOwnership {
+
   final String value;
 
   const ImportResourceRequestBodyOwnership._(this.value);
 
-  factory ImportResourceRequestBodyOwnership.fromJson(String value) =>
-      ImportResourceRequestBodyOwnership._(value);
+  factory ImportResourceRequestBodyOwnership.fromJson(String value) => ImportResourceRequestBodyOwnership._(value);
 
   static const owned = ImportResourceRequestBodyOwnership._('owned');
   static const linked = ImportResourceRequestBodyOwnership._('linked');
@@ -99,24 +87,21 @@ final class ImportResourceRequestBodyOwnership {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ImportResourceRequestBodyOwnership && other.value == value;
+  @override bool operator ==(Object other) => other is ImportResourceRequestBodyOwnership && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ImportResourceRequestBodyStatus {
+
   final String value;
 
   const ImportResourceRequestBodyStatus._(this.value);
 
-  factory ImportResourceRequestBodyStatus.fromJson(String value) =>
-      ImportResourceRequestBodyStatus._(value);
+  factory ImportResourceRequestBodyStatus.fromJson(String value) => ImportResourceRequestBodyStatus._(value);
 
   static const ready = ImportResourceRequestBodyStatus._('ready');
   static const pending = ImportResourceRequestBodyStatus._('pending');
@@ -128,271 +113,176 @@ final class ImportResourceRequestBodyStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ImportResourceRequestBodyStatus && other.value == value;
+  @override bool operator ==(Object other) => other is ImportResourceRequestBodyStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose {
+
   final String value;
 
-  const GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(
-      this.value);
+  const GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(this.value);
 
-  factory GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose.fromJson(
-          String value) =>
-      GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._(value);
+  factory GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose.fromJson(String value) => GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(value);
 
-  static const experimentation =
-      GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._('experimentation');
-  static const flags =
-      GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._('flags');
+  static const experimentation = GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._('experimentation');
+  static const flags = GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._('flags');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose {
+
   final String value;
 
-  const HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(
-      this.value);
+  const HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(this.value);
 
-  factory HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose.fromJson(
-          String value) =>
-      HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._(value);
+  factory HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose.fromJson(String value) => HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(value);
 
-  static const experimentation =
-      HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._('experimentation');
-  static const flags =
-      HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._('flags');
+  static const experimentation = HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._('experimentation');
+  static const flags = HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._('flags');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose {
+
   final String value;
 
-  const ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(
-      this.value);
+  const ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(this.value);
 
-  factory ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose.fromJson(
-          String value) =>
-      ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._(value);
+  factory ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose.fromJson(String value) => ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._(value);
 
-  static const experimentation =
-      ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._('experimentation');
-  static const flags =
-      ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
-          ._('flags');
+  static const experimentation = ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._('experimentation');
+  static const flags = ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose._('flags');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory {
+
   final String value;
 
-  const CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory._(
-      this.value);
+  const CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory._(this.value);
 
-  factory CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory.fromJson(
-          String value) =>
-      CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory
-          ._(value);
+  factory CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory.fromJson(String value) => CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory._(value);
 
-  static const experiment =
-      CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory
-          ._('experiment');
-  static const flag =
-      CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory
-          ._('flag');
+  static const experiment = CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory._('experiment');
+  static const flag = CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory._('flag');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItemCategory && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory {
+
   final String value;
 
-  const UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory._(
-      this.value);
+  const UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory._(this.value);
 
-  factory UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory.fromJson(
-          String value) =>
-      UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory
-          ._(value);
+  factory UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory.fromJson(String value) => UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory._(value);
 
-  static const experiment =
-      UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory
-          ._('experiment');
-  static const flag =
-      UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory
-          ._('flag');
+  static const experiment = UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory._('experiment');
+  static const flag = UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory._('flag');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type {
+
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type._(
-      this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type._(this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type.fromJson(
-          String value) =>
-      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type
-          ._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type._(value);
 
-  static const string =
-      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type
-          ._('string');
+  static const string = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type._('string');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl {
+
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl._(
-      this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl._(this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl.fromJson(
-          String value) =>
-      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl
-          ._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl.fromJson(String value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl._(value);
 
-  static const input =
-      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl
-          ._('input');
+  static const input = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl._('input');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiControl && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1 {
+
   final bool value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1._(
-      this.value);
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1._(this.value);
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1.fromJson(
-          bool value) =>
-      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1
-          ._(value);
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1.fromJson(bool value) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1._(value);
 
-  static const false_ =
-      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1
-          ._(false);
-  static const true_ =
-      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1
-          ._(true);
+  static const false_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1._(false);
+  static const true_ = GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant0UiDisabledVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

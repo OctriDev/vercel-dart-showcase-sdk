@@ -5,287 +5,212 @@ part of 'inline.dart';
 
 // Inline operation models (part 48)
 final class CreateDrainRequestDeliveryVariant2Encoding {
+
   final String value;
 
   const CreateDrainRequestDeliveryVariant2Encoding._(this.value);
 
-  factory CreateDrainRequestDeliveryVariant2Encoding.fromJson(String value) =>
-      CreateDrainRequestDeliveryVariant2Encoding._(value);
+  factory CreateDrainRequestDeliveryVariant2Encoding.fromJson(String value) => CreateDrainRequestDeliveryVariant2Encoding._(value);
 
   static const json = CreateDrainRequestDeliveryVariant2Encoding._('json');
   static const ndjson = CreateDrainRequestDeliveryVariant2Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainRequestDeliveryVariant2Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainRequestDeliveryVariant2Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainRequestDeliveryVariant2FileStructure {
+
   final String value;
 
   const CreateDrainRequestDeliveryVariant2FileStructure._(this.value);
 
-  factory CreateDrainRequestDeliveryVariant2FileStructure.fromJson(
-          String value) =>
-      CreateDrainRequestDeliveryVariant2FileStructure._(value);
+  factory CreateDrainRequestDeliveryVariant2FileStructure.fromJson(String value) => CreateDrainRequestDeliveryVariant2FileStructure._(value);
 
   static const hive = CreateDrainRequestDeliveryVariant2FileStructure._('hive');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainRequestDeliveryVariant2FileStructure &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainRequestDeliveryVariant2FileStructure && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainRequestDeliveryVariant2ObjectAcl {
+
   final String value;
 
   const CreateDrainRequestDeliveryVariant2ObjectAcl._(this.value);
 
-  factory CreateDrainRequestDeliveryVariant2ObjectAcl.fromJson(String value) =>
-      CreateDrainRequestDeliveryVariant2ObjectAcl._(value);
+  factory CreateDrainRequestDeliveryVariant2ObjectAcl.fromJson(String value) => CreateDrainRequestDeliveryVariant2ObjectAcl._(value);
 
-  static const private =
-      CreateDrainRequestDeliveryVariant2ObjectAcl._('private');
-  static const bucketOwnerRead =
-      CreateDrainRequestDeliveryVariant2ObjectAcl._('bucket-owner-read');
-  static const bucketOwnerFullControl =
-      CreateDrainRequestDeliveryVariant2ObjectAcl._(
-          'bucket-owner-full-control');
+  static const private = CreateDrainRequestDeliveryVariant2ObjectAcl._('private');
+  static const bucketOwnerRead = CreateDrainRequestDeliveryVariant2ObjectAcl._('bucket-owner-read');
+  static const bucketOwnerFullControl = CreateDrainRequestDeliveryVariant2ObjectAcl._('bucket-owner-full-control');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainRequestDeliveryVariant2ObjectAcl &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainRequestDeliveryVariant2ObjectAcl && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainRequestDeliveryVariant2ServerSideEncryption {
+
   final String value;
 
   const CreateDrainRequestDeliveryVariant2ServerSideEncryption._(this.value);
 
-  factory CreateDrainRequestDeliveryVariant2ServerSideEncryption.fromJson(
-          String value) =>
-      CreateDrainRequestDeliveryVariant2ServerSideEncryption._(value);
+  factory CreateDrainRequestDeliveryVariant2ServerSideEncryption.fromJson(String value) => CreateDrainRequestDeliveryVariant2ServerSideEncryption._(value);
 
-  static const aes256 =
-      CreateDrainRequestDeliveryVariant2ServerSideEncryption._('AES256');
-  static const awsKms =
-      CreateDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms');
-  static const awsKmsDsse =
-      CreateDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms:dsse');
+  static const aes256 = CreateDrainRequestDeliveryVariant2ServerSideEncryption._('AES256');
+  static const awsKms = CreateDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms');
+  static const awsKmsDsse = CreateDrainRequestDeliveryVariant2ServerSideEncryption._('aws:kms:dsse');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainRequestDeliveryVariant2ServerSideEncryption &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainRequestDeliveryVariant2ServerSideEncryption && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem {
+
   final String value;
 
-  const CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._(
-      this.value);
+  const CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._(this.value);
 
-  factory CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem.fromJson(
-          String value) =>
-      CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._(value);
+  factory CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem.fromJson(String value) => CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._(value);
 
-  static const production =
-      CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._(
-          'production');
-  static const preview =
-      CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._(
-          'preview');
+  static const production = CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._('production');
+  static const preview = CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem._('preview');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainRequestFilterFilterVariant0DeploymentEnvironmentsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainRequestFilterFilterVariant0LogSourcesItem {
+
   final String value;
 
   const CreateDrainRequestFilterFilterVariant0LogSourcesItem._(this.value);
 
-  factory CreateDrainRequestFilterFilterVariant0LogSourcesItem.fromJson(
-          String value) =>
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._(value);
+  factory CreateDrainRequestFilterFilterVariant0LogSourcesItem.fromJson(String value) => CreateDrainRequestFilterFilterVariant0LogSourcesItem._(value);
 
-  static const build =
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._('build');
-  static const edge =
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._('edge');
-  static const lambda =
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._('lambda');
-  static const static_ =
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._('static');
-  static const external_ =
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._('external');
-  static const firewall =
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._('firewall');
-  static const redirect =
-      CreateDrainRequestFilterFilterVariant0LogSourcesItem._('redirect');
+  static const build = CreateDrainRequestFilterFilterVariant0LogSourcesItem._('build');
+  static const edge = CreateDrainRequestFilterFilterVariant0LogSourcesItem._('edge');
+  static const lambda = CreateDrainRequestFilterFilterVariant0LogSourcesItem._('lambda');
+  static const static_ = CreateDrainRequestFilterFilterVariant0LogSourcesItem._('static');
+  static const external_ = CreateDrainRequestFilterFilterVariant0LogSourcesItem._('external');
+  static const firewall = CreateDrainRequestFilterFilterVariant0LogSourcesItem._('firewall');
+  static const redirect = CreateDrainRequestFilterFilterVariant0LogSourcesItem._('redirect');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainRequestFilterFilterVariant0LogSourcesItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainRequestFilterFilterVariant0LogSourcesItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainResponseVariant0DeliveryVariant0Compression {
+
   final String value;
 
   const CreateDrainResponseVariant0DeliveryVariant0Compression._(this.value);
 
-  factory CreateDrainResponseVariant0DeliveryVariant0Compression.fromJson(
-          String value) =>
-      CreateDrainResponseVariant0DeliveryVariant0Compression._(value);
+  factory CreateDrainResponseVariant0DeliveryVariant0Compression.fromJson(String value) => CreateDrainResponseVariant0DeliveryVariant0Compression._(value);
 
-  static const gzip =
-      CreateDrainResponseVariant0DeliveryVariant0Compression._('gzip');
-  static const none =
-      CreateDrainResponseVariant0DeliveryVariant0Compression._('none');
+  static const gzip = CreateDrainResponseVariant0DeliveryVariant0Compression._('gzip');
+  static const none = CreateDrainResponseVariant0DeliveryVariant0Compression._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainResponseVariant0DeliveryVariant0Compression &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0DeliveryVariant0Compression && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainResponseVariant0DeliveryVariant0Encoding {
+
   final String value;
 
   const CreateDrainResponseVariant0DeliveryVariant0Encoding._(this.value);
 
-  factory CreateDrainResponseVariant0DeliveryVariant0Encoding.fromJson(
-          String value) =>
-      CreateDrainResponseVariant0DeliveryVariant0Encoding._(value);
+  factory CreateDrainResponseVariant0DeliveryVariant0Encoding.fromJson(String value) => CreateDrainResponseVariant0DeliveryVariant0Encoding._(value);
 
-  static const json =
-      CreateDrainResponseVariant0DeliveryVariant0Encoding._('json');
-  static const ndjson =
-      CreateDrainResponseVariant0DeliveryVariant0Encoding._('ndjson');
+  static const json = CreateDrainResponseVariant0DeliveryVariant0Encoding._('json');
+  static const ndjson = CreateDrainResponseVariant0DeliveryVariant0Encoding._('ndjson');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainResponseVariant0DeliveryVariant0Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0DeliveryVariant0Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind {
+
   final String value;
 
-  const CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind._(
-      this.value);
+  const CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind._(this.value);
 
-  factory CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind.fromJson(
-          String value) =>
-      CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind._(value);
+  factory CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind.fromJson(String value) => CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind._(
-          'INTEGRATION_SECRET');
+  static const integrationSecret = CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0DeliveryVariant0SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateDrainResponseVariant0DeliveryVariant0Type {
   http;
 
-  static CreateDrainResponseVariant0DeliveryVariant0Type fromJson(
-      String value) {
+  static CreateDrainResponseVariant0DeliveryVariant0Type fromJson(String value) {
     switch (value) {
-      case 'http':
-        return CreateDrainResponseVariant0DeliveryVariant0Type.http;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDrainResponseVariant0DeliveryVariant0Type: $value');
+      case 'http': return CreateDrainResponseVariant0DeliveryVariant0Type.http;
+      default: throw ArgumentError('Unknown CreateDrainResponseVariant0DeliveryVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant0DeliveryVariant0Type.http:
-        return 'http';
+      case CreateDrainResponseVariant0DeliveryVariant0Type.http: return 'http';
     }
   }
 
@@ -294,79 +219,59 @@ enum CreateDrainResponseVariant0DeliveryVariant0Type {
 }
 
 final class CreateDrainResponseVariant0DeliveryVariant1Encoding {
+
   final String value;
 
   const CreateDrainResponseVariant0DeliveryVariant1Encoding._(this.value);
 
-  factory CreateDrainResponseVariant0DeliveryVariant1Encoding.fromJson(
-          String value) =>
-      CreateDrainResponseVariant0DeliveryVariant1Encoding._(value);
+  factory CreateDrainResponseVariant0DeliveryVariant1Encoding.fromJson(String value) => CreateDrainResponseVariant0DeliveryVariant1Encoding._(value);
 
-  static const json =
-      CreateDrainResponseVariant0DeliveryVariant1Encoding._('json');
-  static const proto =
-      CreateDrainResponseVariant0DeliveryVariant1Encoding._('proto');
+  static const json = CreateDrainResponseVariant0DeliveryVariant1Encoding._('json');
+  static const proto = CreateDrainResponseVariant0DeliveryVariant1Encoding._('proto');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainResponseVariant0DeliveryVariant1Encoding &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0DeliveryVariant1Encoding && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind {
+
   final String value;
 
-  const CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind._(
-      this.value);
+  const CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind._(this.value);
 
-  factory CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind.fromJson(
-          String value) =>
-      CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind._(value);
+  factory CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind.fromJson(String value) => CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind._(value);
 
-  static const integrationSecret =
-      CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind._(
-          'INTEGRATION_SECRET');
+  static const integrationSecret = CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind._('INTEGRATION_SECRET');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateDrainResponseVariant0DeliveryVariant1SecretVariant1Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum CreateDrainResponseVariant0DeliveryVariant1Type {
   otlphttp;
 
-  static CreateDrainResponseVariant0DeliveryVariant1Type fromJson(
-      String value) {
+  static CreateDrainResponseVariant0DeliveryVariant1Type fromJson(String value) {
     switch (value) {
-      case 'otlphttp':
-        return CreateDrainResponseVariant0DeliveryVariant1Type.otlphttp;
-      default:
-        throw ArgumentError(
-            'Unknown CreateDrainResponseVariant0DeliveryVariant1Type: $value');
+      case 'otlphttp': return CreateDrainResponseVariant0DeliveryVariant1Type.otlphttp;
+      default: throw ArgumentError('Unknown CreateDrainResponseVariant0DeliveryVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateDrainResponseVariant0DeliveryVariant1Type.otlphttp:
-        return 'otlphttp';
+      case CreateDrainResponseVariant0DeliveryVariant1Type.otlphttp: return 'otlphttp';
     }
   }
 

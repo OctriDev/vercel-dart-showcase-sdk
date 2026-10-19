@@ -6,101 +6,80 @@ part of 'inline.dart';
 // Inline operation models (part 222)
 /// Required enumerated value serialized in the `newResourceBlockingPolicy` wire field.
 final class UserEventPayloadVariant238PreviousNewResourceBlockingPolicy {
+
   final String value;
 
-  const UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._(
-      this.value);
+  const UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._(this.value);
 
-  factory UserEventPayloadVariant238PreviousNewResourceBlockingPolicy.fromJson(
-          String value) =>
-      UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._(value);
+  factory UserEventPayloadVariant238PreviousNewResourceBlockingPolicy.fromJson(String value) => UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._(value);
 
-  static const allow =
-      UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._('allow');
-  static const block =
-      UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._('block');
+  static const allow = UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._('allow');
+  static const block = UserEventPayloadVariant238PreviousNewResourceBlockingPolicy._('block');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant238PreviousNewResourceBlockingPolicy &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant238PreviousNewResourceBlockingPolicy && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `omitScriptNonce` wire field.
 final class UserEventPayloadVariant238PreviousOmitScriptNonce {
+
   final bool value;
 
   const UserEventPayloadVariant238PreviousOmitScriptNonce._(this.value);
 
-  factory UserEventPayloadVariant238PreviousOmitScriptNonce.fromJson(
-          bool value) =>
-      UserEventPayloadVariant238PreviousOmitScriptNonce._(value);
+  factory UserEventPayloadVariant238PreviousOmitScriptNonce.fromJson(bool value) => UserEventPayloadVariant238PreviousOmitScriptNonce._(value);
 
-  static const false_ =
-      UserEventPayloadVariant238PreviousOmitScriptNonce._(false);
-  static const true_ =
-      UserEventPayloadVariant238PreviousOmitScriptNonce._(true);
+  static const false_ = UserEventPayloadVariant238PreviousOmitScriptNonce._(false);
+  static const true_ = UserEventPayloadVariant238PreviousOmitScriptNonce._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant238PreviousOmitScriptNonce &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant238PreviousOmitScriptNonce && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `refreshPeriod` wire field.
 final class UserEventPayloadVariant24BudgetRefreshPeriod {
+
   final String value;
 
   const UserEventPayloadVariant24BudgetRefreshPeriod._(this.value);
 
-  factory UserEventPayloadVariant24BudgetRefreshPeriod.fromJson(String value) =>
-      UserEventPayloadVariant24BudgetRefreshPeriod._(value);
+  factory UserEventPayloadVariant24BudgetRefreshPeriod.fromJson(String value) => UserEventPayloadVariant24BudgetRefreshPeriod._(value);
 
   static const daily = UserEventPayloadVariant24BudgetRefreshPeriod._('daily');
-  static const monthly =
-      UserEventPayloadVariant24BudgetRefreshPeriod._('monthly');
+  static const monthly = UserEventPayloadVariant24BudgetRefreshPeriod._('monthly');
   static const none = UserEventPayloadVariant24BudgetRefreshPeriod._('none');
-  static const weekly =
-      UserEventPayloadVariant24BudgetRefreshPeriod._('weekly');
+  static const weekly = UserEventPayloadVariant24BudgetRefreshPeriod._('weekly');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant24BudgetRefreshPeriod &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant24BudgetRefreshPeriod && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `change` wire field.
 final class UserEventPayloadVariant24Change {
+
   final String value;
 
   const UserEventPayloadVariant24Change._(this.value);
 
-  factory UserEventPayloadVariant24Change.fromJson(String value) =>
-      UserEventPayloadVariant24Change._(value);
+  factory UserEventPayloadVariant24Change.fromJson(String value) => UserEventPayloadVariant24Change._(value);
 
   static const disable = UserEventPayloadVariant24Change._('disable');
   static const enable = UserEventPayloadVariant24Change._('enable');
@@ -109,215 +88,183 @@ final class UserEventPayloadVariant24Change {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant24Change && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant24Change && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `connectSrcNormalizationRulesCleared` wire field.
 final class UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared {
+
   final bool value;
 
-  const UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(
-      this.value);
+  const UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(this.value);
 
-  factory UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared.fromJson(
-          bool value) =>
-      UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(value);
+  factory UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared.fromJson(bool value) => UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(value);
 
-  static const false_ =
-      UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(false);
-  static const true_ =
-      UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(true);
+  static const false_ = UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(false);
+  static const true_ = UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant241ConnectSrcNormalizationRulesCleared && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `approvalScope` wire field.
 final class UserEventPayloadVariant242ApprovalScope {
+
   final String value;
 
   const UserEventPayloadVariant242ApprovalScope._(this.value);
 
-  factory UserEventPayloadVariant242ApprovalScope.fromJson(String value) =>
-      UserEventPayloadVariant242ApprovalScope._(value);
+  factory UserEventPayloadVariant242ApprovalScope.fromJson(String value) => UserEventPayloadVariant242ApprovalScope._(value);
 
   static const all = UserEventPayloadVariant242ApprovalScope._('all');
   static const preview = UserEventPayloadVariant242ApprovalScope._('preview');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant242ApprovalScope && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant242ApprovalScope && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `kind` wire field.
 final class UserEventPayloadVariant242Kind {
+
   final String value;
 
   const UserEventPayloadVariant242Kind._(this.value);
 
-  factory UserEventPayloadVariant242Kind.fromJson(String value) =>
-      UserEventPayloadVariant242Kind._(value);
+  factory UserEventPayloadVariant242Kind.fromJson(String value) => UserEventPayloadVariant242Kind._(value);
 
   static const connectsrc = UserEventPayloadVariant242Kind._('connectSrc');
   static const script = UserEventPayloadVariant242Kind._('script');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant242Kind && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant242Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class UserEventPayloadVariant243Type {
+
   final String value;
 
   const UserEventPayloadVariant243Type._(this.value);
 
-  factory UserEventPayloadVariant243Type.fromJson(String value) =>
-      UserEventPayloadVariant243Type._(value);
+  factory UserEventPayloadVariant243Type.fromJson(String value) => UserEventPayloadVariant243Type._(value);
 
   static const script = UserEventPayloadVariant243Type._('script');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant243Type && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant243Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class UserEventPayloadVariant244Type {
+
   final String value;
 
   const UserEventPayloadVariant244Type._(this.value);
 
-  factory UserEventPayloadVariant244Type.fromJson(String value) =>
-      UserEventPayloadVariant244Type._(value);
+  factory UserEventPayloadVariant244Type.fromJson(String value) => UserEventPayloadVariant244Type._(value);
 
   static const header = UserEventPayloadVariant244Type._('header');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant244Type && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant244Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class UserEventPayloadVariant245Type {
+
   final String value;
 
   const UserEventPayloadVariant245Type._(this.value);
 
-  factory UserEventPayloadVariant245Type.fromJson(String value) =>
-      UserEventPayloadVariant245Type._(value);
+  factory UserEventPayloadVariant245Type.fromJson(String value) => UserEventPayloadVariant245Type._(value);
 
   static const connectsrc = UserEventPayloadVariant245Type._('connectSrc');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant245Type && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant245Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `kind` wire field.
 final class UserEventPayloadVariant246Kind {
+
   final String value;
 
   const UserEventPayloadVariant246Kind._(this.value);
 
-  factory UserEventPayloadVariant246Kind.fromJson(String value) =>
-      UserEventPayloadVariant246Kind._(value);
+  factory UserEventPayloadVariant246Kind.fromJson(String value) => UserEventPayloadVariant246Kind._(value);
 
   static const connectsrc = UserEventPayloadVariant246Kind._('connectSrc');
   static const script = UserEventPayloadVariant246Kind._('script');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant246Kind && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant246Kind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `emailVerified` wire field.
 final class UserEventPayloadVariant249EmailVerified {
+
   final bool value;
 
   const UserEventPayloadVariant249EmailVerified._(this.value);
 
-  factory UserEventPayloadVariant249EmailVerified.fromJson(bool value) =>
-      UserEventPayloadVariant249EmailVerified._(value);
+  factory UserEventPayloadVariant249EmailVerified.fromJson(bool value) => UserEventPayloadVariant249EmailVerified._(value);
 
   static const false_ = UserEventPayloadVariant249EmailVerified._(false);
   static const true_ = UserEventPayloadVariant249EmailVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant249EmailVerified && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant249EmailVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

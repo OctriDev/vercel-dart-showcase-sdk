@@ -9,18 +9,14 @@ enum UpdateMicrofrontendsResponseLinkVariant0Type {
 
   static UpdateMicrofrontendsResponseLinkVariant0Type fromJson(String value) {
     switch (value) {
-      case 'github':
-        return UpdateMicrofrontendsResponseLinkVariant0Type.github;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateMicrofrontendsResponseLinkVariant0Type: $value');
+      case 'github': return UpdateMicrofrontendsResponseLinkVariant0Type.github;
+      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseLinkVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseLinkVariant0Type.github:
-        return 'github';
+      case UpdateMicrofrontendsResponseLinkVariant0Type.github: return 'github';
     }
   }
 
@@ -29,31 +25,24 @@ enum UpdateMicrofrontendsResponseLinkVariant0Type {
 }
 
 final class UpdateMicrofrontendsResponseLinkVariant1Sourceless {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLinkVariant1Sourceless._(this.value);
 
-  factory UpdateMicrofrontendsResponseLinkVariant1Sourceless.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLinkVariant1Sourceless._(value);
+  factory UpdateMicrofrontendsResponseLinkVariant1Sourceless.fromJson(bool value) => UpdateMicrofrontendsResponseLinkVariant1Sourceless._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLinkVariant1Sourceless._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLinkVariant1Sourceless._(true);
+  static const false_ = UpdateMicrofrontendsResponseLinkVariant1Sourceless._(false);
+  static const true_ = UpdateMicrofrontendsResponseLinkVariant1Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLinkVariant1Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLinkVariant1Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateMicrofrontendsResponseLinkVariant1Type {
@@ -61,18 +50,14 @@ enum UpdateMicrofrontendsResponseLinkVariant1Type {
 
   static UpdateMicrofrontendsResponseLinkVariant1Type fromJson(String value) {
     switch (value) {
-      case 'github-limited':
-        return UpdateMicrofrontendsResponseLinkVariant1Type.githubLimited;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateMicrofrontendsResponseLinkVariant1Type: $value');
+      case 'github-limited': return UpdateMicrofrontendsResponseLinkVariant1Type.githubLimited;
+      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseLinkVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseLinkVariant1Type.githubLimited:
-        return 'github-limited';
+      case UpdateMicrofrontendsResponseLinkVariant1Type.githubLimited: return 'github-limited';
     }
   }
 
@@ -81,31 +66,24 @@ enum UpdateMicrofrontendsResponseLinkVariant1Type {
 }
 
 final class UpdateMicrofrontendsResponseLinkVariant2Sourceless {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLinkVariant2Sourceless._(this.value);
 
-  factory UpdateMicrofrontendsResponseLinkVariant2Sourceless.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLinkVariant2Sourceless._(value);
+  factory UpdateMicrofrontendsResponseLinkVariant2Sourceless.fromJson(bool value) => UpdateMicrofrontendsResponseLinkVariant2Sourceless._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLinkVariant2Sourceless._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLinkVariant2Sourceless._(true);
+  static const false_ = UpdateMicrofrontendsResponseLinkVariant2Sourceless._(false);
+  static const true_ = UpdateMicrofrontendsResponseLinkVariant2Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLinkVariant2Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLinkVariant2Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateMicrofrontendsResponseLinkVariant2Type {
@@ -113,18 +91,14 @@ enum UpdateMicrofrontendsResponseLinkVariant2Type {
 
   static UpdateMicrofrontendsResponseLinkVariant2Type fromJson(String value) {
     switch (value) {
-      case 'github-custom-host':
-        return UpdateMicrofrontendsResponseLinkVariant2Type.githubCustomHost;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateMicrofrontendsResponseLinkVariant2Type: $value');
+      case 'github-custom-host': return UpdateMicrofrontendsResponseLinkVariant2Type.githubCustomHost;
+      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseLinkVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseLinkVariant2Type.githubCustomHost:
-        return 'github-custom-host';
+      case UpdateMicrofrontendsResponseLinkVariant2Type.githubCustomHost: return 'github-custom-host';
     }
   }
 
@@ -133,31 +107,24 @@ enum UpdateMicrofrontendsResponseLinkVariant2Type {
 }
 
 final class UpdateMicrofrontendsResponseLinkVariant3Sourceless {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLinkVariant3Sourceless._(this.value);
 
-  factory UpdateMicrofrontendsResponseLinkVariant3Sourceless.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLinkVariant3Sourceless._(value);
+  factory UpdateMicrofrontendsResponseLinkVariant3Sourceless.fromJson(bool value) => UpdateMicrofrontendsResponseLinkVariant3Sourceless._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLinkVariant3Sourceless._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLinkVariant3Sourceless._(true);
+  static const false_ = UpdateMicrofrontendsResponseLinkVariant3Sourceless._(false);
+  static const true_ = UpdateMicrofrontendsResponseLinkVariant3Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLinkVariant3Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLinkVariant3Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateMicrofrontendsResponseLinkVariant3Type {
@@ -165,18 +132,14 @@ enum UpdateMicrofrontendsResponseLinkVariant3Type {
 
   static UpdateMicrofrontendsResponseLinkVariant3Type fromJson(String value) {
     switch (value) {
-      case 'gitlab':
-        return UpdateMicrofrontendsResponseLinkVariant3Type.gitlab;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateMicrofrontendsResponseLinkVariant3Type: $value');
+      case 'gitlab': return UpdateMicrofrontendsResponseLinkVariant3Type.gitlab;
+      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseLinkVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseLinkVariant3Type.gitlab:
-        return 'gitlab';
+      case UpdateMicrofrontendsResponseLinkVariant3Type.gitlab: return 'gitlab';
     }
   }
 
@@ -185,31 +148,24 @@ enum UpdateMicrofrontendsResponseLinkVariant3Type {
 }
 
 final class UpdateMicrofrontendsResponseLinkVariant4Sourceless {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLinkVariant4Sourceless._(this.value);
 
-  factory UpdateMicrofrontendsResponseLinkVariant4Sourceless.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLinkVariant4Sourceless._(value);
+  factory UpdateMicrofrontendsResponseLinkVariant4Sourceless.fromJson(bool value) => UpdateMicrofrontendsResponseLinkVariant4Sourceless._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLinkVariant4Sourceless._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLinkVariant4Sourceless._(true);
+  static const false_ = UpdateMicrofrontendsResponseLinkVariant4Sourceless._(false);
+  static const true_ = UpdateMicrofrontendsResponseLinkVariant4Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLinkVariant4Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLinkVariant4Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateMicrofrontendsResponseLinkVariant4Type {
@@ -217,18 +173,14 @@ enum UpdateMicrofrontendsResponseLinkVariant4Type {
 
   static UpdateMicrofrontendsResponseLinkVariant4Type fromJson(String value) {
     switch (value) {
-      case 'bitbucket':
-        return UpdateMicrofrontendsResponseLinkVariant4Type.bitbucket;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateMicrofrontendsResponseLinkVariant4Type: $value');
+      case 'bitbucket': return UpdateMicrofrontendsResponseLinkVariant4Type.bitbucket;
+      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseLinkVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseLinkVariant4Type.bitbucket:
-        return 'bitbucket';
+      case UpdateMicrofrontendsResponseLinkVariant4Type.bitbucket: return 'bitbucket';
     }
   }
 
@@ -237,31 +189,24 @@ enum UpdateMicrofrontendsResponseLinkVariant4Type {
 }
 
 final class UpdateMicrofrontendsResponseLinkVariant5Sourceless {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLinkVariant5Sourceless._(this.value);
 
-  factory UpdateMicrofrontendsResponseLinkVariant5Sourceless.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLinkVariant5Sourceless._(value);
+  factory UpdateMicrofrontendsResponseLinkVariant5Sourceless.fromJson(bool value) => UpdateMicrofrontendsResponseLinkVariant5Sourceless._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLinkVariant5Sourceless._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLinkVariant5Sourceless._(true);
+  static const false_ = UpdateMicrofrontendsResponseLinkVariant5Sourceless._(false);
+  static const true_ = UpdateMicrofrontendsResponseLinkVariant5Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLinkVariant5Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLinkVariant5Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateMicrofrontendsResponseLinkVariant5Type {
@@ -269,18 +214,14 @@ enum UpdateMicrofrontendsResponseLinkVariant5Type {
 
   static UpdateMicrofrontendsResponseLinkVariant5Type fromJson(String value) {
     switch (value) {
-      case 'vercel':
-        return UpdateMicrofrontendsResponseLinkVariant5Type.vercel;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateMicrofrontendsResponseLinkVariant5Type: $value');
+      case 'vercel': return UpdateMicrofrontendsResponseLinkVariant5Type.vercel;
+      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseLinkVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseLinkVariant5Type.vercel:
-        return 'vercel';
+      case UpdateMicrofrontendsResponseLinkVariant5Type.vercel: return 'vercel';
     }
   }
 
@@ -289,31 +230,24 @@ enum UpdateMicrofrontendsResponseLinkVariant5Type {
 }
 
 final class UpdateMicrofrontendsResponseLinkVariant6Sourceless {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLinkVariant6Sourceless._(this.value);
 
-  factory UpdateMicrofrontendsResponseLinkVariant6Sourceless.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLinkVariant6Sourceless._(value);
+  factory UpdateMicrofrontendsResponseLinkVariant6Sourceless.fromJson(bool value) => UpdateMicrofrontendsResponseLinkVariant6Sourceless._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLinkVariant6Sourceless._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLinkVariant6Sourceless._(true);
+  static const false_ = UpdateMicrofrontendsResponseLinkVariant6Sourceless._(false);
+  static const true_ = UpdateMicrofrontendsResponseLinkVariant6Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLinkVariant6Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLinkVariant6Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UpdateMicrofrontendsResponseLinkVariant6Type {
@@ -321,18 +255,14 @@ enum UpdateMicrofrontendsResponseLinkVariant6Type {
 
   static UpdateMicrofrontendsResponseLinkVariant6Type fromJson(String value) {
     switch (value) {
-      case 'v0':
-        return UpdateMicrofrontendsResponseLinkVariant6Type.v0;
-      default:
-        throw ArgumentError(
-            'Unknown UpdateMicrofrontendsResponseLinkVariant6Type: $value');
+      case 'v0': return UpdateMicrofrontendsResponseLinkVariant6Type.v0;
+      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseLinkVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseLinkVariant6Type.v0:
-        return 'v0';
+      case UpdateMicrofrontendsResponseLinkVariant6Type.v0: return 'v0';
     }
   }
 
@@ -341,29 +271,22 @@ enum UpdateMicrofrontendsResponseLinkVariant6Type {
 }
 
 final class UpdateMicrofrontendsResponseLinkVariant7Sourceless {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseLinkVariant7Sourceless._(this.value);
 
-  factory UpdateMicrofrontendsResponseLinkVariant7Sourceless.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseLinkVariant7Sourceless._(value);
+  factory UpdateMicrofrontendsResponseLinkVariant7Sourceless.fromJson(bool value) => UpdateMicrofrontendsResponseLinkVariant7Sourceless._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseLinkVariant7Sourceless._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseLinkVariant7Sourceless._(true);
+  static const false_ = UpdateMicrofrontendsResponseLinkVariant7Sourceless._(false);
+  static const true_ = UpdateMicrofrontendsResponseLinkVariant7Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseLinkVariant7Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseLinkVariant7Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

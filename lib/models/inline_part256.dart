@@ -6,12 +6,12 @@ part of 'inline.dart';
 // Inline operation models (part 256)
 /// Restrict the list to a single budget scope.
 final class ListAiGatewayBudgetsScopeType {
+
   final String value;
 
   const ListAiGatewayBudgetsScopeType._(this.value);
 
-  factory ListAiGatewayBudgetsScopeType.fromJson(String value) =>
-      ListAiGatewayBudgetsScopeType._(value);
+  factory ListAiGatewayBudgetsScopeType.fromJson(String value) => ListAiGatewayBudgetsScopeType._(value);
 
   static const team = ListAiGatewayBudgetsScopeType._('team');
   static const project = ListAiGatewayBudgetsScopeType._('project');
@@ -20,250 +20,194 @@ final class ListAiGatewayBudgetsScopeType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListAiGatewayBudgetsScopeType && other.value == value;
+  @override bool operator ==(Object other) => other is ListAiGatewayBudgetsScopeType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether to include rows inherited from a budget default (`source: "default"`). Defaults to true.
 final class ListAiGatewayBudgetsIncludeDefaultCovered {
+
   final String value;
 
   const ListAiGatewayBudgetsIncludeDefaultCovered._(this.value);
 
-  factory ListAiGatewayBudgetsIncludeDefaultCovered.fromJson(String value) =>
-      ListAiGatewayBudgetsIncludeDefaultCovered._(value);
+  factory ListAiGatewayBudgetsIncludeDefaultCovered.fromJson(String value) => ListAiGatewayBudgetsIncludeDefaultCovered._(value);
 
   static const true_ = ListAiGatewayBudgetsIncludeDefaultCovered._('true');
   static const false_ = ListAiGatewayBudgetsIncludeDefaultCovered._('false');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListAiGatewayBudgetsIncludeDefaultCovered &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListAiGatewayBudgetsIncludeDefaultCovered && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListAiGatewayRulesIncludeDisabled {
+
   final String value;
 
   const ListAiGatewayRulesIncludeDisabled._(this.value);
 
-  factory ListAiGatewayRulesIncludeDisabled.fromJson(String value) =>
-      ListAiGatewayRulesIncludeDisabled._(value);
+  factory ListAiGatewayRulesIncludeDisabled.fromJson(String value) => ListAiGatewayRulesIncludeDisabled._(value);
 
   static const true_ = ListAiGatewayRulesIncludeDisabled._('true');
   static const false_ = ListAiGatewayRulesIncludeDisabled._('false');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListAiGatewayRulesIncludeDisabled && other.value == value;
+  @override bool operator ==(Object other) => other is ListAiGatewayRulesIncludeDisabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListAiGatewayVirtualModelConfigsIncludeArchived {
+
   final String value;
 
   const ListAiGatewayVirtualModelConfigsIncludeArchived._(this.value);
 
-  factory ListAiGatewayVirtualModelConfigsIncludeArchived.fromJson(
-          String value) =>
-      ListAiGatewayVirtualModelConfigsIncludeArchived._(value);
+  factory ListAiGatewayVirtualModelConfigsIncludeArchived.fromJson(String value) => ListAiGatewayVirtualModelConfigsIncludeArchived._(value);
 
-  static const true_ =
-      ListAiGatewayVirtualModelConfigsIncludeArchived._('true');
-  static const false_ =
-      ListAiGatewayVirtualModelConfigsIncludeArchived._('false');
+  static const true_ = ListAiGatewayVirtualModelConfigsIncludeArchived._('true');
+  static const false_ = ListAiGatewayVirtualModelConfigsIncludeArchived._('false');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListAiGatewayVirtualModelConfigsIncludeArchived &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListAiGatewayVirtualModelConfigsIncludeArchived && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Invitation status for the user scoped bypass.
 final class PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess {
+
   final String value;
 
   const PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess._(this.value);
 
-  factory PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess.fromJson(
-          String value) =>
-      PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess._(value);
+  factory PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess.fromJson(String value) => PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess._(value);
 
-  static const denied =
-      PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess._('denied');
-  static const granted =
-      PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess._('granted');
+  static const denied = PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess._('denied');
+  static const granted = PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess._('granted');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is PatchUrlProtectionBypassRequestBodyVariant1ScopeAccess && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class PatchUrlProtectionBypassRequestBodyVariant2OverrideAction {
+
   final String value;
 
   const PatchUrlProtectionBypassRequestBodyVariant2OverrideAction._(this.value);
 
-  factory PatchUrlProtectionBypassRequestBodyVariant2OverrideAction.fromJson(
-          String value) =>
-      PatchUrlProtectionBypassRequestBodyVariant2OverrideAction._(value);
+  factory PatchUrlProtectionBypassRequestBodyVariant2OverrideAction.fromJson(String value) => PatchUrlProtectionBypassRequestBodyVariant2OverrideAction._(value);
 
-  static const create =
-      PatchUrlProtectionBypassRequestBodyVariant2OverrideAction._('create');
-  static const revoke =
-      PatchUrlProtectionBypassRequestBodyVariant2OverrideAction._('revoke');
+  static const create = PatchUrlProtectionBypassRequestBodyVariant2OverrideAction._('create');
+  static const revoke = PatchUrlProtectionBypassRequestBodyVariant2OverrideAction._('revoke');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is PatchUrlProtectionBypassRequestBodyVariant2OverrideAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is PatchUrlProtectionBypassRequestBodyVariant2OverrideAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class PatchUrlProtectionBypassRequestBodyVariant2OverrideScope {
+
   final String value;
 
   const PatchUrlProtectionBypassRequestBodyVariant2OverrideScope._(this.value);
 
-  factory PatchUrlProtectionBypassRequestBodyVariant2OverrideScope.fromJson(
-          String value) =>
-      PatchUrlProtectionBypassRequestBodyVariant2OverrideScope._(value);
+  factory PatchUrlProtectionBypassRequestBodyVariant2OverrideScope.fromJson(String value) => PatchUrlProtectionBypassRequestBodyVariant2OverrideScope._(value);
 
-  static const aliasProtectionOverride =
-      PatchUrlProtectionBypassRequestBodyVariant2OverrideScope._(
-          'alias-protection-override');
+  static const aliasProtectionOverride = PatchUrlProtectionBypassRequestBodyVariant2OverrideScope._('alias-protection-override');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is PatchUrlProtectionBypassRequestBodyVariant2OverrideScope &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is PatchUrlProtectionBypassRequestBodyVariant2OverrideScope && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem {
+
   final int value;
 
   const CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(this.value);
 
-  factory CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem.fromJson(
-          int value) =>
-      CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(value);
+  factory CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem.fromJson(int value) => CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(value);
 
-  static const v50 =
-      CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(50);
-  static const v75 =
-      CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(75);
-  static const v100 =
-      CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(100);
+  static const v50 = CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(50);
+  static const v75 = CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(75);
+  static const v100 = CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem._(100);
 
   int toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateApiKeysRequestBodyAiGatewayQuotaAlertThresholdsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// How often the quota refreshes.
 final class CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod {
+
   final String value;
 
   const CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._(this.value);
 
-  factory CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod.fromJson(
-          String value) =>
-      CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._(value);
+  factory CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod.fromJson(String value) => CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._(value);
 
-  static const daily =
-      CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('daily');
-  static const weekly =
-      CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('weekly');
-  static const monthly =
-      CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('monthly');
-  static const none =
-      CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('none');
+  static const daily = CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('daily');
+  static const weekly = CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('weekly');
+  static const monthly = CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('monthly');
+  static const none = CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod._('none');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateApiKeysRequestBodyAiGatewayQuotaRefreshPeriod && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDomainsRecordsByRecordIdResponseRecordType {
+
   final String value;
 
   const GetDomainsRecordsByRecordIdResponseRecordType._(this.value);
 
-  factory GetDomainsRecordsByRecordIdResponseRecordType.fromJson(
-          String value) =>
-      GetDomainsRecordsByRecordIdResponseRecordType._(value);
+  factory GetDomainsRecordsByRecordIdResponseRecordType.fromJson(String value) => GetDomainsRecordsByRecordIdResponseRecordType._(value);
 
   static const a = GetDomainsRecordsByRecordIdResponseRecordType._('A');
   static const aaaa = GetDomainsRecordsByRecordIdResponseRecordType._('AAAA');
@@ -278,25 +222,21 @@ final class GetDomainsRecordsByRecordIdResponseRecordType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainsRecordsByRecordIdResponseRecordType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainsRecordsByRecordIdResponseRecordType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDomainsRecordsByRecordIdResponseType {
+
   final String value;
 
   const GetDomainsRecordsByRecordIdResponseType._(this.value);
 
-  factory GetDomainsRecordsByRecordIdResponseType.fromJson(String value) =>
-      GetDomainsRecordsByRecordIdResponseType._(value);
+  factory GetDomainsRecordsByRecordIdResponseType.fromJson(String value) => GetDomainsRecordsByRecordIdResponseType._(value);
 
   static const a = GetDomainsRecordsByRecordIdResponseType._('A');
   static const aaaa = GetDomainsRecordsByRecordIdResponseType._('AAAA');
@@ -311,45 +251,31 @@ final class GetDomainsRecordsByRecordIdResponseType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainsRecordsByRecordIdResponseType && other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainsRecordsByRecordIdResponseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus {
+
   final String value;
 
-  const AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._(
-      this.value);
+  const AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._(this.value);
 
-  factory AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus.fromJson(
-          String value) =>
-      AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._(value);
+  factory AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus.fromJson(String value) => AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._(value);
 
-  static const errored =
-      AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._(
-          'errored');
-  static const fulfilled =
-      AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._(
-          'fulfilled');
+  static const errored = AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._('errored');
+  static const fulfilled = AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus._('fulfilled');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is AcceptProjectTransferRequestResponsePartnerCallsItemResultStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

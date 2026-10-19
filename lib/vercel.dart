@@ -52,7 +52,6 @@ import 'methods/certs.dart' as certs_methods;
 class AccessGroupsNamespace {
   final ClientConfig _config;
   AccessGroupsNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves an access group by its ID or name. Use `idOrName` to identify the group and `teamId` or `slug` to select the team for the request.
   ///
   /// Allows to read an access group
@@ -61,11 +60,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.readAccessGroup(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.readAccessGroup(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates an access group's metadata, members, or project roles. Supply only the fields you want to change; `name` is limited to 50 characters and `projects` associates projects with roles.
@@ -76,20 +71,11 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
-      SdkOptional<List<UpdateAccessGroupRequestBodyProjectsItem>> projects =
-          const SdkOmitted(),
+      SdkOptional<List<UpdateAccessGroupRequestBodyProjectsItem>> projects = const SdkOmitted(),
       SdkOptional<List<String>> membersToAdd = const SdkOmitted(),
       SdkOptional<List<String>> membersToRemove = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.updateAccessGroup(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        projects: projects,
-        membersToAdd: membersToAdd,
-        membersToRemove: membersToRemove,
-        requestOptions: requestOptions);
+    return access_groups_methods.updateAccessGroup(_config, idOrName: idOrName, teamId: teamId, slug: slug, name: name, projects: projects, membersToAdd: membersToAdd, membersToRemove: membersToRemove, requestOptions: requestOptions);
   }
 
   /// Deletes an access group. Use `idOrName` to identify the group and `teamId` or `slug` to select the team for the request.
@@ -100,11 +86,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.deleteAccessGroup(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.deleteAccessGroup(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists members of an access group, with optional search and cursor-based pagination. Use `search` to match members by name, username, or email, and `next` to retrieve the next page.
@@ -118,14 +100,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.listAccessGroupMembers(_config,
-        idOrName: idOrName,
-        limit: limit,
-        next: next,
-        search: search,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.listAccessGroupMembers(_config, idOrName: idOrName, limit: limit, next: next, search: search, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists access groups, with optional filters for project and group name. Use `membersLimit` and `projectsLimit` to control how many associated members and projects are included, and `next` to continue through paginated results.
@@ -141,16 +116,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.listAccessGroups(_config,
-        projectId: projectId,
-        search: search,
-        membersLimit: membersLimit,
-        projectsLimit: projectsLimit,
-        limit: limit,
-        next: next,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.listAccessGroups(_config, projectId: projectId, search: search, membersLimit: membersLimit, projectsLimit: projectsLimit, limit: limit, next: next, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates an access group for a team, optionally assigning projects and adding members. Provide a `name` that matches the allowed character pattern and is no longer than 50 characters.
@@ -160,17 +126,10 @@ class AccessGroupsNamespace {
       {required String name,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<List<CreateAccessGroupRequestBodyProjectsItem>> projects =
-          const SdkOmitted(),
+      SdkOptional<List<CreateAccessGroupRequestBodyProjectsItem>> projects = const SdkOmitted(),
       SdkOptional<List<String>> membersToAdd = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.createAccessGroup(_config,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        projects: projects,
-        membersToAdd: membersToAdd,
-        requestOptions: requestOptions);
+    return access_groups_methods.createAccessGroup(_config, name: name, teamId: teamId, slug: slug, projects: projects, membersToAdd: membersToAdd, requestOptions: requestOptions);
   }
 
   /// Lists the projects associated with an access group. Use `limit` to control the number of project assignments returned and `next` to continue through the cursor-based results.
@@ -183,13 +142,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.listAccessGroupProjects(_config,
-        idOrName: idOrName,
-        limit: limit,
-        next: next,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.listAccessGroupProjects(_config, idOrName: idOrName, limit: limit, next: next, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Adds a project and its role to an access group. Provide both `projectId` and `role`; the role must be one of the supported project roles.
@@ -202,13 +155,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.createAccessGroupProject(_config,
-        accessGroupIdOrName: accessGroupIdOrName,
-        projectId: projectId,
-        role: role,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.createAccessGroupProject(_config, accessGroupIdOrName: accessGroupIdOrName, projectId: projectId, role: role, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a project's assignment in an access group. Use both `accessGroupIdOrName` and `projectId` to identify the association you want to read.
@@ -220,12 +167,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.readAccessGroupProject(_config,
-        accessGroupIdOrName: accessGroupIdOrName,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.readAccessGroupProject(_config, accessGroupIdOrName: accessGroupIdOrName, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the role assigned to a project in an access group. Supply `role` with a supported project role, or null to remove the project-level role.
@@ -238,13 +180,7 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.updateAccessGroupProject(_config,
-        accessGroupIdOrName: accessGroupIdOrName,
-        projectId: projectId,
-        role: role,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.updateAccessGroupProject(_config, accessGroupIdOrName: accessGroupIdOrName, projectId: projectId, role: role, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a project association from an access group. Use `accessGroupIdOrName` and `projectId` to identify the association, and optionally specify the team context with `teamId` or `slug`.
@@ -256,19 +192,14 @@ class AccessGroupsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return access_groups_methods.deleteAccessGroupProject(_config,
-        accessGroupIdOrName: accessGroupIdOrName,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return access_groups_methods.deleteAccessGroupProject(_config, accessGroupIdOrName: accessGroupIdOrName, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class AiGatewayNamespace {
   final ClientConfig _config;
   AiGatewayNamespace(ClientConfig config) : _config = config;
-
   /// Creates a virtual model configuration (VMC) for a team. Specify `teamId` or `slug` to perform the request in that team's context. A 201 response returns the created configuration.
   ///
   /// Create a virtual model config (VMC)
@@ -276,8 +207,7 @@ class AiGatewayNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.createAiGatewayVirtualModelConfig(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return ai_gateway_methods.createAiGatewayVirtualModelConfig(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves virtual model configuration data for the authenticated team, including active and archived configurations. Use `virtualModelSlug` to select a configuration or `limit` and `cursor` to request a page of results.
@@ -291,14 +221,7 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.getAiGatewayVirtualModelConfig(_config,
-        ownerId: ownerId,
-        virtualModelSlug: virtualModelSlug,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.getAiGatewayVirtualModelConfig(_config, ownerId: ownerId, virtualModelSlug: virtualModelSlug, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a virtual model configuration for a team. Specify `teamId` or `slug` to perform the request in that team's context. A 200 response returns the updated configuration.
@@ -308,8 +231,7 @@ class AiGatewayNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.updateAiGatewayVirtualModelConfig(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return ai_gateway_methods.updateAiGatewayVirtualModelConfig(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a virtual model configuration by its slug using a soft delete. Specify `virtualModelSlug` to identify the configuration and optionally use `ownerId`, `teamId`, or `slug` to select the owner context.
@@ -324,15 +246,7 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.deleteAiGatewayVirtualModelConfig(_config,
-        virtualModelSlug: virtualModelSlug,
-        ownerId: ownerId,
-        updatedBy: updatedBy,
-        actingIp: actingIp,
-        actingUserAgent: actingUserAgent,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.deleteAiGatewayVirtualModelConfig(_config, virtualModelSlug: virtualModelSlug, ownerId: ownerId, updatedBy: updatedBy, actingIp: actingIp, actingUserAgent: actingUserAgent, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists virtual model configurations for a team or across teams. Use `limit` and `cursor` to retrieve a page; team results are ordered by `virtualModelSlug`, while cross-team results are ordered newest first.
@@ -342,40 +256,18 @@ class AiGatewayNamespace {
       {SdkOptional<String> ownerId = const SdkOmitted(),
       SdkOptional<int> limit = const SdkOmitted(),
       SdkOptional<String> cursor = const SdkOmitted(),
-      SdkOptional<ListAiGatewayVirtualModelConfigsIncludeArchived>
-          includeArchived = const SdkOmitted(),
+      SdkOptional<ListAiGatewayVirtualModelConfigsIncludeArchived> includeArchived = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.listAiGatewayVirtualModelConfigs(_config,
-        ownerId: ownerId,
-        limit: limit,
-        cursor: cursor,
-        includeArchived: includeArchived,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.listAiGatewayVirtualModelConfigs(_config, ownerId: ownerId, limit: limit, cursor: cursor, includeArchived: includeArchived, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists virtual model configurations for a team or across teams. Use `limit` and `cursor` to retrieve a page; team results are ordered by `virtualModelSlug`, while cross-team results are ordered newest first.
   ///
   /// List virtual model configs. For a team, returns all of its VMCs, or with `limit` or `cursor` one page ordered by `virtualModelSlug`. Across teams, pages newest-first. `includeArchived=false` omits archived VMCs.
-  Stream<AiGatewayVirtualModelConfig> listVirtualModelConfigsPaginated(
-      {String? ownerId,
-      int? limit,
-      String? cursor,
-      ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived,
-      String? teamId,
-      String? slug,
-      RequestOptions? requestOptions}) async* {
-    yield* ai_gateway_methods.listAiGatewayVirtualModelConfigsPaginated(_config,
-        ownerId: ownerId,
-        limit: limit,
-        cursor: cursor,
-        includeArchived: includeArchived,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<AiGatewayVirtualModelConfig> listVirtualModelConfigsPaginated({String? ownerId, int? limit, String? cursor, ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
+    yield* ai_gateway_methods.listAiGatewayVirtualModelConfigsPaginated(_config, ownerId: ownerId, limit: limit, cursor: cursor, includeArchived: includeArchived, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a virtual model configuration by its path slug. Use `ownerId` or the team selectors `teamId` and `slug` to scope the lookup to the appropriate owner.
@@ -387,12 +279,7 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.getAiGatewayVirtualModelConfigBySlug(_config,
-        vmcSlug: vmcSlug,
-        ownerId: ownerId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.getAiGatewayVirtualModelConfigBySlug(_config, vmcSlug: vmcSlug, ownerId: ownerId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a virtual model configuration identified by its path slug. Specify `teamId` or `slug` to perform the request in that team's context. A 200 response returns the updated configuration.
@@ -403,11 +290,7 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.updateAiGatewayVirtualModelConfigBySlug(_config,
-        vmcSlug: vmcSlug,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.updateAiGatewayVirtualModelConfigBySlug(_config, vmcSlug: vmcSlug, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a virtual model configuration identified by its path slug using a soft delete. Specify `vmcSlug` to select the configuration, and optionally use `ownerId`, `teamId`, or `slug` to scope the operation.
@@ -422,15 +305,7 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.deleteAiGatewayVirtualModelConfigBySlug(_config,
-        vmcSlug: vmcSlug,
-        ownerId: ownerId,
-        updatedBy: updatedBy,
-        actingIp: actingIp,
-        actingUserAgent: actingUserAgent,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.deleteAiGatewayVirtualModelConfigBySlug(_config, vmcSlug: vmcSlug, ownerId: ownerId, updatedBy: updatedBy, actingIp: actingIp, actingUserAgent: actingUserAgent, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the authenticated team's active and archived AI Gateway routers. Public callers select the team with `teamId` or `slug`; trusted-origin callers can use `ownerId` to scope the list.
@@ -441,11 +316,7 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.listAiGatewayRouters(_config,
-        ownerId: ownerId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.listAiGatewayRouters(_config, ownerId: ownerId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a routing rule for the authenticated team. Use `teamId` or `slug` to select the team context when needed. A 201 response returns the created rule, including its identifier and configuration.
@@ -455,47 +326,27 @@ class AiGatewayNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.createAiGatewayRule(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return ai_gateway_methods.createAiGatewayRule(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the authenticated team's AI Gateway routing rules, ordered from oldest to newest. Use `includeDisabled` to control whether disabled rules are included, and use `limit` and `cursor` to retrieve a page of results. Paged responses include `nextCursor` for the next request; it is null on the last page.
   ///
   /// List the authenticated team's routing rules, oldest first. Without `limit` or `cursor`, returns every rule. With either, returns one page and a `nextCursor` for the next page (null on the last page). Paging reads and sorts the team's rules server-side, which is fine at current rule counts.
   Future<AiGatewayRuleList> listRules(
-      {SdkOptional<ListAiGatewayRulesIncludeDisabled> includeDisabled =
-          const SdkOmitted(),
+      {SdkOptional<ListAiGatewayRulesIncludeDisabled> includeDisabled = const SdkOmitted(),
       SdkOptional<int> limit = const SdkOmitted(),
       SdkOptional<String> cursor = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.listAiGatewayRules(_config,
-        includeDisabled: includeDisabled,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.listAiGatewayRules(_config, includeDisabled: includeDisabled, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the authenticated team's AI Gateway routing rules, ordered from oldest to newest. Use `includeDisabled` to control whether disabled rules are included, and use `limit` and `cursor` to retrieve a page of results. Paged responses include `nextCursor` for the next request; it is null on the last page.
   ///
   /// List the authenticated team's routing rules, oldest first. Without `limit` or `cursor`, returns every rule. With either, returns one page and a `nextCursor` for the next page (null on the last page). Paging reads and sorts the team's rules server-side, which is fine at current rule counts.
-  Stream<AiGatewayRule> listRulesPaginated(
-      {ListAiGatewayRulesIncludeDisabled? includeDisabled,
-      int? limit,
-      String? cursor,
-      String? teamId,
-      String? slug,
-      RequestOptions? requestOptions}) async* {
-    yield* ai_gateway_methods.listAiGatewayRulesPaginated(_config,
-        includeDisabled: includeDisabled,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<AiGatewayRule> listRulesPaginated({ListAiGatewayRulesIncludeDisabled? includeDisabled, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
+    yield* ai_gateway_methods.listAiGatewayRulesPaginated(_config, includeDisabled: includeDisabled, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a routing rule's enabled state, action, or description for the authenticated team. Use `teamId` or `slug` to select the team context when needed. A 200 response returns the updated rule and its current configuration.
@@ -505,8 +356,7 @@ class AiGatewayNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.updateAiGatewayRule(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return ai_gateway_methods.updateAiGatewayRule(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a routing rule from the authenticated team's active rules; deletion is soft, so the rule is not necessarily permanently removed. Supply the rule's `ruleId` and use `teamId` or `slug` to select the team context when needed.
@@ -517,55 +367,28 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.deleteAiGatewayRule(_config,
-        ruleId: ruleId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.deleteAiGatewayRule(_config, ruleId: ruleId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the authenticated team's AI Gateway budgets as a flat list, with optional filtering by scope. Use `scopeType` to filter by team, project, user, or API key, and use `limit` and `cursor` to paginate results. Paged responses include `nextCursor` and `defaultCoveredCounts`.
   ///
   /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
   Future<AiGatewayBudgetList> listBudgets(
-      {SdkOptional<ListAiGatewayBudgetsScopeType> scopeType =
-          const SdkOmitted(),
-      SdkOptional<ListAiGatewayBudgetsIncludeDefaultCovered>
-          includeDefaultCovered = const SdkOmitted(),
+      {SdkOptional<ListAiGatewayBudgetsScopeType> scopeType = const SdkOmitted(),
+      SdkOptional<ListAiGatewayBudgetsIncludeDefaultCovered> includeDefaultCovered = const SdkOmitted(),
       SdkOptional<int> limit = const SdkOmitted(),
       SdkOptional<String> cursor = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.listAiGatewayBudgets(_config,
-        scopeType: scopeType,
-        includeDefaultCovered: includeDefaultCovered,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.listAiGatewayBudgets(_config, scopeType: scopeType, includeDefaultCovered: includeDefaultCovered, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the authenticated team's AI Gateway budgets as a flat list, with optional filtering by scope. Use `scopeType` to filter by team, project, user, or API key, and use `limit` and `cursor` to paginate results. Paged responses include `nextCursor` and `defaultCoveredCounts`.
   ///
   /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
-  Stream<AiGatewayBudget> listBudgetsPaginated(
-      {ListAiGatewayBudgetsScopeType? scopeType,
-      ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered,
-      int? limit,
-      String? cursor,
-      String? teamId,
-      String? slug,
-      RequestOptions? requestOptions}) async* {
-    yield* ai_gateway_methods.listAiGatewayBudgetsPaginated(_config,
-        scopeType: scopeType,
-        includeDefaultCovered: includeDefaultCovered,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<AiGatewayBudget> listBudgetsPaginated({ListAiGatewayBudgetsScopeType? scopeType, ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
+    yield* ai_gateway_methods.listAiGatewayBudgetsPaginated(_config, scopeType: scopeType, includeDefaultCovered: includeDefaultCovered, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates or updates an AI Gateway budget for a team, project, or user scope. Supply `scopeType` and `limitAmount`, and include `projectId` or `userId` when the selected scope requires it. The response contains the saved budget and its current spend and configuration.
@@ -578,23 +401,11 @@ class AiGatewayNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<String> userId = const SdkOmitted(),
-      SdkOptional<UpsertAiGatewayBudgetRequestBodyRefreshPeriod> refreshPeriod =
-          const SdkOmitted(),
+      SdkOptional<UpsertAiGatewayBudgetRequestBodyRefreshPeriod> refreshPeriod = const SdkOmitted(),
       SdkOptional<bool> includeByokInQuota = const SdkOmitted(),
-      SdkOptional<List<UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem>>
-          alertThresholds = const SdkOmitted(),
+      SdkOptional<List<UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem>> alertThresholds = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.upsertAiGatewayBudget(_config,
-        scopeType: scopeType,
-        limitAmount: limitAmount,
-        teamId: teamId,
-        slug: slug,
-        projectId: projectId,
-        userId: userId,
-        refreshPeriod: refreshPeriod,
-        includeByokInQuota: includeByokInQuota,
-        alertThresholds: alertThresholds,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.upsertAiGatewayBudget(_config, scopeType: scopeType, limitAmount: limitAmount, teamId: teamId, slug: slug, projectId: projectId, userId: userId, refreshPeriod: refreshPeriod, includeByokInQuota: includeByokInQuota, alertThresholds: alertThresholds, requestOptions: requestOptions);
   }
 
   /// Archives an AI Gateway budget for a team, project, or user scope. Set `scopeType` and include `projectId` or `userId` when the selected scope requires it. The response returns the archived budget and its current configuration.
@@ -607,13 +418,7 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.archiveAiGatewayBudget(_config,
-        scopeType: scopeType,
-        projectId: projectId,
-        userId: userId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.archiveAiGatewayBudget(_config, scopeType: scopeType, projectId: projectId, userId: userId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the authenticated team's AI Gateway budget defaults as a flat list, with one entry for each scope that has a default. An empty `defaults` array is a normal result when no defaults are configured. Use `teamId` or `slug` to select the team context when needed.
@@ -623,8 +428,7 @@ class AiGatewayNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.listAiGatewayBudgetDefaults(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return ai_gateway_methods.listAiGatewayBudgetDefaults(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates or updates an AI Gateway budget default for one scope. Supply `scopeType` and `limitAmount`; only team owners and admins have authority to manage these defaults. The response returns the saved default configuration.
@@ -635,20 +439,10 @@ class AiGatewayNamespace {
       required double limitAmount,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod>
-          refreshPeriod = const SdkOmitted(),
-      SdkOptional<
-              List<UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem>>
-          alertThresholds = const SdkOmitted(),
+      SdkOptional<UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod> refreshPeriod = const SdkOmitted(),
+      SdkOptional<List<UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem>> alertThresholds = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.upsertAiGatewayBudgetDefault(_config,
-        scopeType: scopeType,
-        limitAmount: limitAmount,
-        teamId: teamId,
-        slug: slug,
-        refreshPeriod: refreshPeriod,
-        alertThresholds: alertThresholds,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.upsertAiGatewayBudgetDefault(_config, scopeType: scopeType, limitAmount: limitAmount, teamId: teamId, slug: slug, refreshPeriod: refreshPeriod, alertThresholds: alertThresholds, requestOptions: requestOptions);
   }
 
   /// Deletes an AI Gateway budget default for one scope by archiving it. Set `scopeType` to identify the scope; only team owners and admins have authority to manage budget defaults. A 204 response confirms the default was archived.
@@ -659,18 +453,14 @@ class AiGatewayNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return ai_gateway_methods.archiveAiGatewayBudgetDefault(_config,
-        scopeType: scopeType,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return ai_gateway_methods.archiveAiGatewayBudgetDefault(_config, scopeType: scopeType, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class ArtifactsNamespace {
   final ClientConfig _config;
   ArtifactsNamespace(ClientConfig config) : _config = config;
-
   /// Records artifact cache usage events for a team or user. Send an array of events, each with a `sessionId`, `source`, `hash`, and `event`; include `duration` for `HIT` events. Use the client headers to identify the CI environment and whether the client is interactive.
   ///
   /// Records an artifacts cache usage event. The body of this request is an array of cache usage events. The supported event types are `HIT` and `MISS`. The source is either `LOCAL` the cache event was on the users filesystem cache or `REMOTE` if the cache event is for a remote cache. When the event is a `HIT` the request also accepts a number `duration` which is the time taken to generate the artifact in the cache.
@@ -681,13 +471,7 @@ class ArtifactsNamespace {
       SdkOptional<String> xArtifactClientCi = const SdkOmitted(),
       SdkOptional<int> xArtifactClientInteractive = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return artifacts_methods.recordEvents(_config,
-        body: body,
-        teamId: teamId,
-        slug: slug,
-        xArtifactClientCi: xArtifactClientCi,
-        xArtifactClientInteractive: xArtifactClientInteractive,
-        requestOptions: requestOptions);
+    return artifacts_methods.recordEvents(_config, body: body, teamId: teamId, slug: slug, xArtifactClientCi: xArtifactClientCi, xArtifactClientInteractive: xArtifactClientInteractive, requestOptions: requestOptions);
   }
 
   /// Retrieves the Remote Caching status for a team or user. Use `teamId` or `slug` to make the request on behalf of a team; the response indicates whether Remote Caching is enabled, disabled, or disabled due to usage limits.
@@ -697,8 +481,7 @@ class ArtifactsNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return artifacts_methods.status(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return artifacts_methods.status(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Uploads an artifact to the cache using its hash. Send the artifact as an octet-stream body and provide its size in the `Content-Length` header. The uploaded artifact can then be downloaded using the same hash.
@@ -716,18 +499,7 @@ class ArtifactsNamespace {
       SdkOptional<String> xArtifactSha = const SdkOmitted(),
       SdkOptional<String> xArtifactDirtyHash = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return artifacts_methods.uploadArtifact(_config,
-        hash: hash,
-        body: body,
-        teamId: teamId,
-        slug: slug,
-        xArtifactDuration: xArtifactDuration,
-        xArtifactClientCi: xArtifactClientCi,
-        xArtifactClientInteractive: xArtifactClientInteractive,
-        xArtifactTag: xArtifactTag,
-        xArtifactSha: xArtifactSha,
-        xArtifactDirtyHash: xArtifactDirtyHash,
-        requestOptions: requestOptions);
+    return artifacts_methods.uploadArtifact(_config, hash: hash, body: body, teamId: teamId, slug: slug, xArtifactDuration: xArtifactDuration, xArtifactClientCi: xArtifactClientCi, xArtifactClientInteractive: xArtifactClientInteractive, xArtifactTag: xArtifactTag, xArtifactSha: xArtifactSha, xArtifactDirtyHash: xArtifactDirtyHash, requestOptions: requestOptions);
   }
 
   /// Retrieves an artifact from the cache by its hash. Use `hash` to identify the artifact and check the response content length and body when downloading the octet-stream data. You can use the client headers to identify the CI environment and whether the client is interactive.
@@ -740,13 +512,7 @@ class ArtifactsNamespace {
       SdkOptional<String> xArtifactClientCi = const SdkOmitted(),
       SdkOptional<int> xArtifactClientInteractive = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return artifacts_methods.downloadArtifact(_config,
-        hash: hash,
-        teamId: teamId,
-        slug: slug,
-        xArtifactClientCi: xArtifactClientCi,
-        xArtifactClientInteractive: xArtifactClientInteractive,
-        requestOptions: requestOptions);
+    return artifacts_methods.downloadArtifact(_config, hash: hash, teamId: teamId, slug: slug, xArtifactClientCi: xArtifactClientCi, xArtifactClientInteractive: xArtifactClientInteractive, requestOptions: requestOptions);
   }
 
   /// Checks whether an artifact with the specified hash exists in the cache. Use `hash` to identify the artifact; the response contains headers only and no body. The request otherwise has the same behavior as a `GET` request to the artifact path.
@@ -757,8 +523,7 @@ class ArtifactsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return artifacts_methods.artifactExists(_config,
-        hash: hash, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return artifacts_methods.artifactExists(_config, hash: hash, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves cache information for multiple artifacts. Supply the artifact hashes in the `hashes` array to query information about each one. Use `teamId` or `slug` to make the request on behalf of a team.
@@ -769,11 +534,7 @@ class ArtifactsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return artifacts_methods.artifactQuery(_config,
-        hashes: hashes,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return artifacts_methods.artifactQuery(_config, hashes: hashes, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes all cache artifacts stored for the authenticated team or user, clearing the Remote Cache. Use `teamId` or `slug` to select a team; subsequent builds repopulate the cache.
@@ -783,41 +544,26 @@ class ArtifactsNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return artifacts_methods.deleteAllArtifacts(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return artifacts_methods.deleteAllArtifacts(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class BillingNamespace {
   final ClientConfig _config;
   BillingNamespace(ClientConfig config) : _config = config;
-
   /// Lists billing charges for a Vercel team in FOCUS v1.3 JSONL format. Set `from` and `to` to define the UTC date-time range; results use one-day granularity and the range can span at most one year. The response is streamed as newline-delimited JSON, and you can request gzip compression with the `Accept-Encoding: gzip` header.
   ///
   /// Returns the billing charge data in FOCUS v1.3 JSONL format for a specified Vercel team, within a date range specified by `from` and `to` query parameters. Supports 1-day granularity with a maximum date range of 1 year. The response is streamed as newline-delimited JSON (JSONL) and can be optionally compressed with gzip if the `Accept-Encoding: gzip` header is provided. `SkuId` is the stable product ID. For unmapped items, it is derived from the item identifier. This is only available for Owner, Member, Developer, Security, Billing, and Enterprise Viewer roles for the supplied team.
-  Stream<ListBillingChargesResponse> listCharges(
-      {required String from,
-      required String to,
-      SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<String> slug = const SdkOmitted(),
-      RequestOptions? requestOptions}) async* {
-    yield* billing_methods.listBillingCharges(_config,
-        from: from,
-        to: to,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<ListBillingChargesResponse> listCharges({required String from, required String to, SdkOptional<String> teamId = const SdkOmitted(), SdkOptional<String> slug = const SdkOmitted(), RequestOptions? requestOptions}) async* {
+    yield* billing_methods.listBillingCharges(_config, from: from, to: to, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists a Vercel team's contract commitments in FOCUS v1.3 JSONL format. Use this endpoint for Enterprise contract commitment allocations by contract period. Non-Enterprise customers receive an empty response.
   ///
   /// Returns commitment allocations per contract period in FOCUS v1.3 JSONL format for a specified Vercel team. The response is streamed as newline-delimited JSON (JSONL). This endpoint is only applicable to Enterprise Vercel customers. An empty response is returned for non-Enterprise (Pro/Flex) customers.
-  Stream<ListContractCommitmentsResponse> listContractCommitments(
-      {SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<String> slug = const SdkOmitted(),
-      RequestOptions? requestOptions}) async* {
-    yield* billing_methods.listContractCommitments(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+  Stream<ListContractCommitmentsResponse> listContractCommitments({SdkOptional<String> teamId = const SdkOmitted(), SdkOptional<String> slug = const SdkOmitted(), RequestOptions? requestOptions}) async* {
+    yield* billing_methods.listContractCommitments(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Submits a credit purchase for a Vercel team using the default payment method on file; the purchase is charged immediately through a Stripe invoice. Set `item.creditType` to `v0`, `gateway`, or `agent` and provide a positive integer `item.amount`. You can use the `source` query parameter to identify the caller; it defaults to `api` when omitted.
@@ -829,19 +575,14 @@ class BillingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return billing_methods.buyCredits(_config,
-        item: item,
-        source: source,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return billing_methods.buyCredits(_config, item: item, source: source, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class BulkRedirectsNamespace {
   final ClientConfig _config;
   BulkRedirectsNamespace(ClientConfig config) : _config = config;
-
   /// Stages a new version of bulk redirects for a project. Supply `projectId` and `teamId` in the request body; `redirects` defaults to an empty array when omitted. A successful response includes the staged version and its alias.
   ///
   /// Stages new redirects for a project and returns the new version.
@@ -852,18 +593,9 @@ class BulkRedirectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> overwrite = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
-      SdkOptional<List<StageRedirectsRequestBodyRedirectsItem>> redirects =
-          const SdkOmitted(),
+      SdkOptional<List<StageRedirectsRequestBodyRedirectsItem>> redirects = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return bulk_redirects_methods.stageRedirects(_config,
-        projectId: projectId,
-        teamId: teamId,
-        teamId_2: teamId_2,
-        slug: slug,
-        overwrite: overwrite,
-        name: name,
-        redirects: redirects,
-        requestOptions: requestOptions);
+    return bulk_redirects_methods.stageRedirects(_config, projectId: projectId, teamId: teamId, teamId_2: teamId_2, slug: slug, overwrite: overwrite, name: name, redirects: redirects, requestOptions: requestOptions);
   }
 
   /// Lists project-level bulk redirects, with optional filtering and sorting. Use `projectId` to identify the project, and `page` and `per_page` to paginate the results.
@@ -881,18 +613,7 @@ class BulkRedirectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return bulk_redirects_methods.getRedirects(_config,
-        projectId: projectId,
-        versionId: versionId,
-        q: q,
-        diff: diff,
-        page: page,
-        perPage: perPage,
-        sortBy: sortBy,
-        sortOrder: sortOrder,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return bulk_redirects_methods.getRedirects(_config, projectId: projectId, versionId: versionId, q: q, diff: diff, page: page, perPage: perPage, sortBy: sortBy, sortOrder: sortOrder, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes specified redirects from the latest staged version for a project and stages the resulting changes. Provide the redirect source paths in `redirects`; the response includes the alias for the new version.
@@ -905,13 +626,7 @@ class BulkRedirectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return bulk_redirects_methods.deleteRedirects(_config,
-        projectId: projectId,
-        redirects: redirects,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        requestOptions: requestOptions);
+    return bulk_redirects_methods.deleteRedirects(_config, projectId: projectId, redirects: redirects, teamId: teamId, slug: slug, name: name, requestOptions: requestOptions);
   }
 
   /// Updates a single staged project redirect by matching its source path, then stages a new version. Supply the redirect's `source` in the body; use `restore` to restore that redirect from the latest production version to staging.
@@ -925,14 +640,7 @@ class BulkRedirectsNamespace {
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<bool> restore = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return bulk_redirects_methods.editRedirect(_config,
-        projectId: projectId,
-        redirect: redirect,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        restore: restore,
-        requestOptions: requestOptions);
+    return bulk_redirects_methods.editRedirect(_config, projectId: projectId, redirect: redirect, teamId: teamId, slug: slug, name: name, restore: restore, requestOptions: requestOptions);
   }
 
   /// Restores specified staged redirects to their values in the production version, or removes them from staging if no production version exists. Provide the redirect source paths in `redirects`; the response reports which paths were restored and which could not be restored.
@@ -945,13 +653,7 @@ class BulkRedirectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return bulk_redirects_methods.restoreRedirects(_config,
-        projectId: projectId,
-        redirects: redirects,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        requestOptions: requestOptions);
+    return bulk_redirects_methods.restoreRedirects(_config, projectId: projectId, redirects: redirects, teamId: teamId, slug: slug, name: name, requestOptions: requestOptions);
   }
 
   /// Lists the version history for a project's bulk redirects. Supply `projectId` to identify the project and use the Team parameters to perform the request on behalf of a Team.
@@ -962,11 +664,7 @@ class BulkRedirectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return bulk_redirects_methods.getVersions(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return bulk_redirects_methods.getVersions(_config, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Changes a bulk redirect version by promoting staging, restoring a previous production version, or discarding a version. Supply the version `id` and an `action`; the response contains the updated version details.
@@ -980,21 +678,14 @@ class BulkRedirectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return bulk_redirects_methods.updateVersion(_config,
-        projectId: projectId,
-        id: id,
-        action: action,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        requestOptions: requestOptions);
+    return bulk_redirects_methods.updateVersion(_config, projectId: projectId, id: id, action: action, teamId: teamId, slug: slug, name: name, requestOptions: requestOptions);
   }
+
 }
 
 class ChecksV2Namespace {
   final ClientConfig _config;
   ChecksV2Namespace(ClientConfig config) : _config = config;
-
   /// Lists the checks configured for a project, with an optional filter for the deployment target that a check blocks. Use `blocks` to select a target, or omit it to retrieve checks without that filter.
   ///
   /// List all checks for a project, optionally filtered by target.
@@ -1004,12 +695,7 @@ class ChecksV2Namespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.listProjectChecks(_config,
-        projectIdOrName: projectIdOrName,
-        blocks: blocks,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_v2_methods.listProjectChecks(_config, projectIdOrName: projectIdOrName, blocks: blocks, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a check for a project. Provide `name` and `requires`, and configure its targets, source, blocking behavior, and timeout as needed. The check uses `deployment-url` for `requires`, `deployment-alias` for `blocks`, and 300 seconds for `timeout` when those fields are omitted.
@@ -1023,23 +709,11 @@ class ChecksV2Namespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> isRerequestable = const SdkOmitted(),
       SdkOptional<List<String>> targets = const SdkOmitted(),
-      SdkOptional<CreateProjectCheckRequestBodyBlocks> blocks =
-          const SdkOmitted(),
+      SdkOptional<CreateProjectCheckRequestBodyBlocks> blocks = const SdkOmitted(),
       SdkOptional<CreateProjectCheckRequestSource> source = const SdkOmitted(),
       SdkOptional<double> timeout = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.createProjectCheck(_config,
-        projectIdOrName: projectIdOrName,
-        name: name,
-        requires: requires,
-        teamId: teamId,
-        slug: slug,
-        isRerequestable: isRerequestable,
-        targets: targets,
-        blocks: blocks,
-        source: source,
-        timeout: timeout,
-        requestOptions: requestOptions);
+    return checks_v2_methods.createProjectCheck(_config, projectIdOrName: projectIdOrName, name: name, requires: requires, teamId: teamId, slug: slug, isRerequestable: isRerequestable, targets: targets, blocks: blocks, source: source, timeout: timeout, requestOptions: requestOptions);
   }
 
   /// Retrieves the details of a single check configured for a project. Provide the project identifier or name and the check identifier to select the check you want to inspect.
@@ -1051,12 +725,7 @@ class ChecksV2Namespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.getProjectCheck(_config,
-        projectIdOrName: projectIdOrName,
-        checkId: checkId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_v2_methods.getProjectCheck(_config, projectIdOrName: projectIdOrName, checkId: checkId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a project check's configuration, including its name, targets, and deployment behavior. Supply only the properties you want to change; `requires`, `blocks`, and `timeout` have defaults when omitted. Use the project and check identifiers to select the check to update.
@@ -1069,25 +738,12 @@ class ChecksV2Namespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<bool> isRerequestable = const SdkOmitted(),
-      SdkOptional<UpdateProjectCheckRequestBodyRequires> requires =
-          const SdkOmitted(),
+      SdkOptional<UpdateProjectCheckRequestBodyRequires> requires = const SdkOmitted(),
       SdkOptional<List<String>> targets = const SdkOmitted(),
-      SdkOptional<UpdateProjectCheckRequestBodyBlocks> blocks =
-          const SdkOmitted(),
+      SdkOptional<UpdateProjectCheckRequestBodyBlocks> blocks = const SdkOmitted(),
       SdkOptional<double> timeout = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.updateProjectCheck(_config,
-        projectIdOrName: projectIdOrName,
-        checkId: checkId,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        isRerequestable: isRerequestable,
-        requires: requires,
-        targets: targets,
-        blocks: blocks,
-        timeout: timeout,
-        requestOptions: requestOptions);
+    return checks_v2_methods.updateProjectCheck(_config, projectIdOrName: projectIdOrName, checkId: checkId, teamId: teamId, slug: slug, name: name, isRerequestable: isRerequestable, requires: requires, targets: targets, blocks: blocks, timeout: timeout, requestOptions: requestOptions);
   }
 
   /// Deletes a project check and all of its runs. Use the project and check identifiers to select the check to remove. The response confirms whether the deletion succeeded.
@@ -1099,12 +755,7 @@ class ChecksV2Namespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.deleteProjectCheck(_config,
-        projectIdOrName: projectIdOrName,
-        checkId: checkId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_v2_methods.deleteProjectCheck(_config, projectIdOrName: projectIdOrName, checkId: checkId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists all runs associated with a project check. Use the project and check identifiers to select the check whose run history you need. The response groups the results in a `runs` array.
@@ -1116,12 +767,7 @@ class ChecksV2Namespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.listCheckRuns(_config,
-        projectIdOrName: projectIdOrName,
-        checkId: checkId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_v2_methods.listCheckRuns(_config, projectIdOrName: projectIdOrName, checkId: checkId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists all check runs associated with a deployment. Use `deploymentId` to select the deployment whose check runs you want to inspect. The response groups the results in a `runs` array.
@@ -1132,11 +778,7 @@ class ChecksV2Namespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.listDeploymentCheckRuns(_config,
-        deploymentId: deploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_v2_methods.listDeploymentCheckRuns(_config, deploymentId: deploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a check run for a deployment. Supply `checkId` to associate the run with a project-level check; the request body is optional in the operation definition, but `checkId` is required when you provide a body. Use the deployment identifier to select the deployment for the new run.
@@ -1148,12 +790,7 @@ class ChecksV2Namespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.createDeploymentCheckRun(_config,
-        deploymentId: deploymentId,
-        checkId: checkId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_v2_methods.createDeploymentCheckRun(_config, deploymentId: deploymentId, checkId: checkId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a single check run for a deployment. Use the deployment and check run identifiers to select the record. The response includes the run details and supports both runs backed by a project-level check and Vercel CI runs without a parent check.
@@ -1165,12 +802,7 @@ class ChecksV2Namespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.getDeploymentCheckRun(_config,
-        deploymentId: deploymentId,
-        checkRunId: checkRunId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_v2_methods.getDeploymentCheckRun(_config, deploymentId: deploymentId, checkRunId: checkRunId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a check run's status and related metadata for a deployment. Supply only the fields you want to change; `status` and `conclusion` are limited to their documented values, and `externalUrl` accepts the specified URL formats. The response returns the updated check run.
@@ -1183,34 +815,20 @@ class ChecksV2Namespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> externalId = const SdkOmitted(),
       SdkOptional<String> externalUrl = const SdkOmitted(),
-      SdkOptional<UpdateDeploymentCheckRunRequestBodyStatus> status =
-          const SdkOmitted(),
+      SdkOptional<UpdateDeploymentCheckRunRequestBodyStatus> status = const SdkOmitted(),
       SdkOptional<Map<String, dynamic>> output = const SdkOmitted(),
       SdkOptional<double> completedAt = const SdkOmitted(),
-      SdkOptional<UpdateDeploymentCheckRunRequestBodyConclusion> conclusion =
-          const SdkOmitted(),
+      SdkOptional<UpdateDeploymentCheckRunRequestBodyConclusion> conclusion = const SdkOmitted(),
       SdkOptional<String> conclusionText = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_v2_methods.updateDeploymentCheckRun(_config,
-        deploymentId: deploymentId,
-        checkRunId: checkRunId,
-        teamId: teamId,
-        slug: slug,
-        externalId: externalId,
-        externalUrl: externalUrl,
-        status: status,
-        output: output,
-        completedAt: completedAt,
-        conclusion: conclusion,
-        conclusionText: conclusionText,
-        requestOptions: requestOptions);
+    return checks_v2_methods.updateDeploymentCheckRun(_config, deploymentId: deploymentId, checkRunId: checkRunId, teamId: teamId, slug: slug, externalId: externalId, externalUrl: externalUrl, status: status, output: output, completedAt: completedAt, conclusion: conclusion, conclusionText: conclusionText, requestOptions: requestOptions);
   }
+
 }
 
 class ChecksNamespace {
   final ClientConfig _config;
   ChecksNamespace(ClientConfig config) : _config = config;
-
   /// Creates a check for a deployment. Provide `name` and `blocking` in the request body, and use OAuth2 authentication as required by this operation. This operation is closing down and will be removed on a date not specified in the API definition.
   ///
   /// Creates a new check. This endpoint must be called with an OAuth2 or it will produce a 400 error.
@@ -1227,17 +845,7 @@ class ChecksNamespace {
       SdkOptional<String> externalId = const SdkOmitted(),
       SdkOptional<bool> rerequestable = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_methods.createCheck(_config,
-        deploymentId: deploymentId,
-        name: name,
-        blocking: blocking,
-        teamId: teamId,
-        slug: slug,
-        path: path,
-        detailsUrl: detailsUrl,
-        externalId: externalId,
-        rerequestable: rerequestable,
-        requestOptions: requestOptions);
+    return checks_methods.createCheck(_config, deploymentId: deploymentId, name: name, blocking: blocking, teamId: teamId, slug: slug, path: path, detailsUrl: detailsUrl, externalId: externalId, rerequestable: rerequestable, requestOptions: requestOptions);
   }
 
   /// Lists the checks created for a deployment. Use `deploymentId` to select the deployment whose checks you want to inspect. This operation is closing down and will be removed on a date not specified in the API definition.
@@ -1250,11 +858,7 @@ class ChecksNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_methods.listChecks(_config,
-        deploymentId: deploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_methods.listChecks(_config, deploymentId: deploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the details of a single check for a deployment. Use `deploymentId` and `checkId` to identify the deployment and check. This operation is closing down and will be removed on a date not specified in the API definition.
@@ -1268,12 +872,7 @@ class ChecksNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_methods.getCheck(_config,
-        deploymentId: deploymentId,
-        checkId: checkId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_methods.getCheck(_config, deploymentId: deploymentId, checkId: checkId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates an existing check for a deployment. Supply the check fields you want to change, such as `status`, `conclusion`, or `output`; call the operation with OAuth2 authentication. A 200 response returns the updated check object.
@@ -1289,25 +888,12 @@ class ChecksNamespace {
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<String> path = const SdkOmitted(),
       SdkOptional<UpdateCheckRequestBodyStatus> status = const SdkOmitted(),
-      SdkOptional<UpdateCheckRequestBodyConclusion> conclusion =
-          const SdkOmitted(),
+      SdkOptional<UpdateCheckRequestBodyConclusion> conclusion = const SdkOmitted(),
       SdkOptional<String> detailsUrl = const SdkOmitted(),
       SdkOptional<UpdateCheckRequestBodyOutput> output = const SdkOmitted(),
       SdkOptional<String> externalId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_methods.updateCheck(_config,
-        deploymentId: deploymentId,
-        checkId: checkId,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        path: path,
-        status: status,
-        conclusion: conclusion,
-        detailsUrl: detailsUrl,
-        output: output,
-        externalId: externalId,
-        requestOptions: requestOptions);
+    return checks_methods.updateCheck(_config, deploymentId: deploymentId, checkId: checkId, teamId: teamId, slug: slug, name: name, path: path, status: status, conclusion: conclusion, detailsUrl: detailsUrl, output: output, externalId: externalId, requestOptions: requestOptions);
   }
 
   /// Triggers another run of a selected check that has failed. Use `deploymentId` and `checkId` to identify the deployment and check, and set `autoUpdate` to mark the check as running. This operation is closing down and will be removed on a date not specified in the API definition.
@@ -1322,20 +908,14 @@ class ChecksNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return checks_methods.rerequestCheck(_config,
-        deploymentId: deploymentId,
-        checkId: checkId,
-        autoUpdate: autoUpdate,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return checks_methods.rerequestCheck(_config, deploymentId: deploymentId, checkId: checkId, autoUpdate: autoUpdate, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class NetworkingNamespace {
   final ClientConfig _config;
   NetworkingNamespace(ClientConfig config) : _config = config;
-
   /// Lists Secure Compute networks. Use the inclusion parameters to control whether hosted zones, peering connections, and associated projects appear in the results, and use `search` to filter networks. The inclusion parameters default to `true` when omitted.
   ///
   /// Allows to list Secure Compute networks.
@@ -1347,14 +927,7 @@ class NetworkingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.listNetworks(_config,
-        includeHostedZones: includeHostedZones,
-        includePeeringConnections: includePeeringConnections,
-        includeProjects: includeProjects,
-        search: search,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return networking_methods.listNetworks(_config, includeHostedZones: includeHostedZones, includePeeringConnections: includePeeringConnections, includeProjects: includeProjects, search: search, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a Secure Compute network. Supply `cidr`, `name`, and `region`; optionally provide two AWS availability zone IDs for the network. A 201 response returns the created network while it is being provisioned.
@@ -1368,14 +941,7 @@ class NetworkingNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<List<String>> awsAvailabilityZoneIds = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.createNetwork(_config,
-        cidr: cidr,
-        name: name,
-        region: region,
-        teamId: teamId,
-        slug: slug,
-        awsAvailabilityZoneIds: awsAvailabilityZoneIds,
-        requestOptions: requestOptions);
+    return networking_methods.createNetwork(_config, cidr: cidr, name: name, region: region, teamId: teamId, slug: slug, awsAvailabilityZoneIds: awsAvailabilityZoneIds, requestOptions: requestOptions);
   }
 
   /// Deletes a Secure Compute network by its identifier. Use `networkId` to select the network and the optional team parameters to make the request on behalf of a team. A 204 response confirms the deletion without returning a response body.
@@ -1386,11 +952,7 @@ class NetworkingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.deleteNetwork(_config,
-        networkId: networkId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return networking_methods.deleteNetwork(_config, networkId: networkId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the name of a Secure Compute network. Supply the new `name` in the request body; the network's other configuration is not changed by this operation. A 200 response returns the updated network object.
@@ -1402,12 +964,7 @@ class NetworkingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.updateNetwork(_config,
-        networkId: networkId,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return networking_methods.updateNetwork(_config, networkId: networkId, name: name, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a Secure Compute network by its identifier. Use `networkId` to select the network and the optional team parameters to make the request on behalf of a team. The response includes network configuration, status, and associated-resource metadata.
@@ -1418,11 +975,7 @@ class NetworkingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.readNetwork(_config,
-        networkId: networkId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return networking_methods.readNetwork(_config, networkId: networkId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a PrivateLink endpoint connecting a project to an AWS VPC endpoint service. Supply `projectId`, `name`, `vercelRegion`, and `awsServiceName`; Advanced Networking must be enabled for the project in the selected Vercel region. The endpoint is provisioned asynchronously, and the 201 response includes its current status.
@@ -1437,15 +990,7 @@ class NetworkingNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> enablePrivateDns = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.createPrivateLinkEndpoint(_config,
-        projectId: projectId,
-        name: name,
-        vercelRegion: vercelRegion,
-        awsServiceName: awsServiceName,
-        teamId: teamId,
-        slug: slug,
-        enablePrivateDns: enablePrivateDns,
-        requestOptions: requestOptions);
+    return networking_methods.createPrivateLinkEndpoint(_config, projectId: projectId, name: name, vercelRegion: vercelRegion, awsServiceName: awsServiceName, teamId: teamId, slug: slug, enablePrivateDns: enablePrivateDns, requestOptions: requestOptions);
   }
 
   /// Lists PrivateLink endpoints associated with a project. Supply `projectId` to scope the results, and use the optional team parameters to make the request on behalf of a team. Each result includes the endpoint's status and connection details.
@@ -1456,11 +1001,7 @@ class NetworkingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.listPrivateLinkEndpoints(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return networking_methods.listPrivateLinkEndpoints(_config, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a PrivateLink endpoint for a project. Supply `projectId` and `endpointId` to identify the endpoint, and use the optional team parameters to make the request on behalf of a team. The response includes endpoint status, service configuration, and available DNS names.
@@ -1472,12 +1013,7 @@ class NetworkingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.readPrivateLinkEndpoint(_config,
-        endpointId: endpointId,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return networking_methods.readPrivateLinkEndpoint(_config, endpointId: endpointId, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a PrivateLink endpoint, including its project connections and installation records. Use this operation when you no longer need the endpoint or its associated records.
@@ -1489,12 +1025,7 @@ class NetworkingNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.deletePrivateLinkEndpoint(_config,
-        endpointId: endpointId,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return networking_methods.deletePrivateLinkEndpoint(_config, endpointId: endpointId, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a PrivateLink endpoint's name or private DNS setting. Supply `name`, `enablePrivateDns`, or both; omitted values keep their current settings. When `enablePrivateDns` is true, the response includes the endpoint service's private DNS names.
@@ -1508,14 +1039,7 @@ class NetworkingNamespace {
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<bool> enablePrivateDns = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.updatePrivateLinkEndpoint(_config,
-        endpointId: endpointId,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        enablePrivateDns: enablePrivateDns,
-        requestOptions: requestOptions);
+    return networking_methods.updatePrivateLinkEndpoint(_config, endpointId: endpointId, projectId: projectId, teamId: teamId, slug: slug, name: name, enablePrivateDns: enablePrivateDns, requestOptions: requestOptions);
   }
 
   /// Configures Static IP settings for a project identified by its ID or name. Set `builds` to control Static IP usage for builds, or provide `regions` to select up to three regions. Include at least one of these fields to submit a configuration update.
@@ -1528,20 +1052,14 @@ class NetworkingNamespace {
       SdkOptional<bool> builds = const SdkOmitted(),
       SdkOptional<List<String>> regions = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return networking_methods.updateStaticIps(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        builds: builds,
-        regions: regions,
-        requestOptions: requestOptions);
+    return networking_methods.updateStaticIps(_config, idOrName: idOrName, teamId: teamId, slug: slug, builds: builds, regions: regions, requestOptions: requestOptions);
   }
+
 }
 
 class ConnectNamespace {
   final ClientConfig _config;
   ConnectNamespace(ClientConfig config) : _config = config;
-
   /// Lists connectors that belong to a team and returns them in cursor-paginated pages. Use filters such as `projectId`, `type`, and `service` to narrow the results, and pass the returned `pagination.next` cursor to retrieve another page.
   ///
   /// List connectors that belong to a team.
@@ -1556,17 +1074,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.listConnectors(_config,
-        limit: limit,
-        cursor: cursor,
-        projectId: projectId,
-        search: search,
-        type_: type_,
-        service: service,
-        sort: sort,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.listConnectors(_config, limit: limit, cursor: cursor, projectId: projectId, search: search, type_: type_, service: service, sort: sort, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a connector by its stable ID or team-scoped UID. Use a dashboard or team requester, or a deployment's project OIDC token; project requesters can read only connectors linked to their project and environment.
@@ -1577,11 +1085,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.getConnector(_config,
-        connector: connector,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.getConnector(_config, connector: connector, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a connector and its project connections and installation records. Use this operation when you want to remove the connector and its associated connections and installations from the team.
@@ -1592,11 +1096,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.deleteConnector(_config,
-        connector: connector,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.deleteConnector(_config, connector: connector, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a connector with provider configuration or a service connection method, and can optionally link it to a project. Choose either full configuration with `type` or preset configuration with `service` and `connectionMethod`; supply `data` for the provider configuration.
@@ -1620,37 +1120,12 @@ class ConnectNamespace {
       SdkOptional<List<String>> environments = const SdkOmitted(),
       SdkOptional<bool> triggers = const SdkOmitted(),
       SdkOptional<String> triggerType = const SdkOmitted(),
-      SdkOptional<Map<String, Object?>> triggerVerificationInput =
-          const SdkOmitted(),
-      SdkOptional<Map<String, Object?>> triggerRegistrationInput =
-          const SdkOmitted(),
-      SdkOptional<ConnectCreateConnectorRequestTriggerDestination>
-          triggerDestination = const SdkOmitted(),
+      SdkOptional<Map<String, Object?>> triggerVerificationInput = const SdkOmitted(),
+      SdkOptional<Map<String, Object?>> triggerRegistrationInput = const SdkOmitted(),
+      SdkOptional<ConnectCreateConnectorRequestTriggerDestination> triggerDestination = const SdkOmitted(),
       SdkOptional<List<String>> events = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.createConnector(_config,
-        data: data,
-        teamId: teamId,
-        slug: slug,
-        icon: icon,
-        backgroundColor: backgroundColor,
-        accentColor: accentColor,
-        type_: type_,
-        service: service,
-        connectionMethod: connectionMethod,
-        params: params,
-        target: target,
-        uid: uid,
-        name: name,
-        projectId: projectId,
-        environments: environments,
-        triggers: triggers,
-        triggerType: triggerType,
-        triggerVerificationInput: triggerVerificationInput,
-        triggerRegistrationInput: triggerRegistrationInput,
-        triggerDestination: triggerDestination,
-        events: events,
-        requestOptions: requestOptions);
+    return connect_methods.createConnector(_config, data: data, teamId: teamId, slug: slug, icon: icon, backgroundColor: backgroundColor, accentColor: accentColor, type_: type_, service: service, connectionMethod: connectionMethod, params: params, target: target, uid: uid, name: name, projectId: projectId, environments: environments, triggers: triggers, triggerType: triggerType, triggerVerificationInput: triggerVerificationInput, triggerRegistrationInput: triggerRegistrationInput, triggerDestination: triggerDestination, events: events, requestOptions: requestOptions);
   }
 
   /// Updates connector configuration, trigger settings, or display details and returns any provider-side follow-up signals. Supply only the fields you want to change, and handle any reconsent, reinstall, or service synchronization information in the response.
@@ -1661,10 +1136,8 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> triggers = const SdkOmitted(),
-      SdkOptional<Map<String, Object?>> triggerVerificationInput =
-          const SdkOmitted(),
-      SdkOptional<Map<String, Object?>> triggerRegistrationInput =
-          const SdkOmitted(),
+      SdkOptional<Map<String, Object?>> triggerVerificationInput = const SdkOmitted(),
+      SdkOptional<Map<String, Object?>> triggerRegistrationInput = const SdkOmitted(),
       SdkOptional<List<String>> events = const SdkOmitted(),
       SdkOptional<ConnectConnectorUpdateDataRequest> data = const SdkOmitted(),
       SdkOptional<String> icon = const SdkOmitted(),
@@ -1673,21 +1146,7 @@ class ConnectNamespace {
       SdkOptional<String> uid = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.updateConnector(_config,
-        connector: connector,
-        teamId: teamId,
-        slug: slug,
-        triggers: triggers,
-        triggerVerificationInput: triggerVerificationInput,
-        triggerRegistrationInput: triggerRegistrationInput,
-        events: events,
-        data: data,
-        icon: icon,
-        backgroundColor: backgroundColor,
-        accentColor: accentColor,
-        uid: uid,
-        name: name,
-        requestOptions: requestOptions);
+    return connect_methods.updateConnector(_config, connector: connector, teamId: teamId, slug: slug, triggers: triggers, triggerVerificationInput: triggerVerificationInput, triggerRegistrationInput: triggerRegistrationInput, events: events, data: data, icon: icon, backgroundColor: backgroundColor, accentColor: accentColor, uid: uid, name: name, requestOptions: requestOptions);
   }
 
   /// Replaces the complete set of trigger destinations for a connector. Submit all destinations you want to retain in `destinations`; an empty array removes every destination, and the replacement can contain at most three entries.
@@ -1699,12 +1158,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.replaceConnectorTriggerDestinations(_config,
-        connector: connector,
-        destinations: destinations,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.replaceConnectorTriggerDestinations(_config, connector: connector, destinations: destinations, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Disconnects a managed connector from its provider-side manager. Use this operation when you want the connector to stop being managed by that provider.
@@ -1714,8 +1168,7 @@ class ConnectNamespace {
       {required String connector,
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.ejectManagedConnector(_config,
-        connector: connector, slug: slug, requestOptions: requestOptions);
+    return connect_methods.ejectManagedConnector(_config, connector: connector, slug: slug, requestOptions: requestOptions);
   }
 
   /// List the projects connected to a connector and the environments where each connection is available.
@@ -1726,13 +1179,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.listConnectorProjectConnections(_config,
-        connector: connector,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.listConnectorProjectConnections(_config, connector: connector, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Get the configuration that connects a connector to a project.
@@ -1742,12 +1189,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.getConnectorProjectConnection(_config,
-        connector: connector,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.getConnectorProjectConnection(_config, connector: connector, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Connect a connector to a project, or replace the environments on an existing project connection.
@@ -1758,13 +1200,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.upsertConnectorProjectConnection(_config,
-        connector: connector,
-        projectId: projectId,
-        environments: environments,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.upsertConnectorProjectConnection(_config, connector: connector, projectId: projectId, environments: environments, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes the connection between a connector and a project. Supply the connector identifier or URL-encoded team-scoped UID in `connector` and the Vercel project ID in `projectId`. Use `teamId` or `slug` to select a team when the token or authenticated user's default team should not be used.
@@ -1776,12 +1212,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.deleteConnectorProjectConnection(_config,
-        connector: connector,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.deleteConnectorProjectConnection(_config, connector: connector, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// List the connectors connected to a project and the environments where each connection is available.
@@ -1792,13 +1223,7 @@ class ConnectNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.listProjectConnectorConnections(_config,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return connect_methods.listProjectConnectorConnections(_config, projectId: projectId, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves an access token for a connector, scoped to the authenticated user or another subject specified in the request body. Supply the connector identifier in the path and optionally provide token settings such as `scopes`, `resources`, or `audience`. Use the returned token and expiration details to access the connector.
@@ -1811,20 +1236,10 @@ class ConnectNamespace {
       SdkOptional<List<String>> audience = const SdkOmitted(),
       SdkOptional<List<String>> scopes = const SdkOmitted(),
       SdkOptional<List<String>> resources = const SdkOmitted(),
-      SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>>
-          authorizationDetails = const SdkOmitted(),
+      SdkOptional<List<GetConnectorTokenRequestBodyAuthorizationDetailsItem>> authorizationDetails = const SdkOmitted(),
       SdkOptional<double> validityBufferMs = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return connect_methods.getConnectorToken(_config,
-        connector: connector,
-        subject: subject,
-        installationId: installationId,
-        audience: audience,
-        scopes: scopes,
-        resources: resources,
-        authorizationDetails: authorizationDetails,
-        validityBufferMs: validityBufferMs,
-        requestOptions: requestOptions);
+    return connect_methods.getConnectorToken(_config, connector: connector, subject: subject, installationId: installationId, audience: audience, scopes: scopes, resources: resources, authorizationDetails: authorizationDetails, validityBufferMs: validityBufferMs, requestOptions: requestOptions);
   }
 
   /// Creates an authorization request for a connector and returns the URL and verifier details needed to complete the authorization flow. Supply the connector identifier and, if needed, settings such as `subject`, `scopes`, `returnUrl`, or `deviceCode`. Use the returned `url` and `verifier` to continue the connector authorization flow.
@@ -1833,48 +1248,28 @@ class ConnectNamespace {
   Future<CreateConnectorAuthorizationRequestResponse>
       createConnectorAuthorizationRequest(
           {required String connector,
-          SdkOptional<CreateConnectorAuthorizationRequestRequestSubject>
-              subject = const SdkOmitted(),
+          SdkOptional<CreateConnectorAuthorizationRequestRequestSubject> subject = const SdkOmitted(),
           SdkOptional<String> installationId = const SdkOmitted(),
           SdkOptional<List<String>> audience = const SdkOmitted(),
           SdkOptional<List<String>> scopes = const SdkOmitted(),
           SdkOptional<List<String>> resources = const SdkOmitted(),
-          SdkOptional<
-                  List<
-                      CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>
-              authorizationDetails = const SdkOmitted(),
+          SdkOptional<List<CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>> authorizationDetails = const SdkOmitted(),
           SdkOptional<double> validityBufferMs = const SdkOmitted(),
           SdkOptional<String> returnUrl = const SdkOmitted(),
           SdkOptional<String> webhook = const SdkOmitted(),
           SdkOptional<String> prompt = const SdkOmitted(),
           SdkOptional<bool> deviceCode = const SdkOmitted(),
           SdkOptional<double> expiresInMs = const SdkOmitted(),
-          SdkOptional<Map<String, String>> additionalParams =
-              const SdkOmitted(),
+          SdkOptional<Map<String, String>> additionalParams = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return connect_methods.createConnectorAuthorizationRequest(_config,
-        connector: connector,
-        subject: subject,
-        installationId: installationId,
-        audience: audience,
-        scopes: scopes,
-        resources: resources,
-        authorizationDetails: authorizationDetails,
-        validityBufferMs: validityBufferMs,
-        returnUrl: returnUrl,
-        webhook: webhook,
-        prompt: prompt,
-        deviceCode: deviceCode,
-        expiresInMs: expiresInMs,
-        additionalParams: additionalParams,
-        requestOptions: requestOptions);
+    return connect_methods.createConnectorAuthorizationRequest(_config, connector: connector, subject: subject, installationId: installationId, audience: audience, scopes: scopes, resources: resources, authorizationDetails: authorizationDetails, validityBufferMs: validityBufferMs, returnUrl: returnUrl, webhook: webhook, prompt: prompt, deviceCode: deviceCode, expiresInMs: expiresInMs, additionalParams: additionalParams, requestOptions: requestOptions);
   }
+
 }
 
 class DeploymentsNamespace {
   final ClientConfig _config;
   DeploymentsNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves build logs and events for a deployment, either as JSON or as a live stream. Use `idOrUrl` to identify the deployment and `name` to select a build; use `since`, `until`, and `statusCode` to filter events. Set `follow` to `1` to receive live events as they happen.
   ///
   /// Get the build logs of a deployment by deployment ID and build ID. It can work as an infinite stream of logs or as a JSON endpoint depending on the input parameters.
@@ -1892,20 +1287,7 @@ class DeploymentsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.getDeploymentEvents(_config,
-        idOrUrl: idOrUrl,
-        direction: direction,
-        follow: follow,
-        limit: limit,
-        name: name,
-        since: since,
-        until: until,
-        statusCode: statusCode,
-        delimiter: delimiter,
-        builds: builds,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return deployments_methods.getDeploymentEvents(_config, idOrUrl: idOrUrl, direction: direction, follow: follow, limit: limit, name: name, since: since, until: until, statusCode: statusCode, delimiter: delimiter, builds: builds, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates an integration action associated with a deployment resource. Use the path parameters to identify the deployment, integration installation, resource, and action, then provide any action status or outcome details in the body. The update is accepted asynchronously with a 202 response.
@@ -1916,23 +1298,12 @@ class DeploymentsNamespace {
       required String integrationConfigurationId,
       required String resourceId,
       required String action,
-      SdkOptional<UpdateIntegrationDeploymentActionRequestBodyStatus> status =
-          const SdkOmitted(),
+      SdkOptional<UpdateIntegrationDeploymentActionRequestBodyStatus> status = const SdkOmitted(),
       SdkOptional<String> statusText = const SdkOmitted(),
       SdkOptional<String> statusUrl = const SdkOmitted(),
-      SdkOptional<List<UpdateIntegrationDeploymentActionRequestOutcomesItem>>
-          outcomes = const SdkOmitted(),
+      SdkOptional<List<UpdateIntegrationDeploymentActionRequestOutcomesItem>> outcomes = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.updateIntegrationDeploymentAction(_config,
-        deploymentId: deploymentId,
-        integrationConfigurationId: integrationConfigurationId,
-        resourceId: resourceId,
-        action: action,
-        status: status,
-        statusText: statusText,
-        statusUrl: statusUrl,
-        outcomes: outcomes,
-        requestOptions: requestOptions);
+    return deployments_methods.updateIntegrationDeploymentAction(_config, deploymentId: deploymentId, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, action: action, status: status, statusText: statusText, statusUrl: statusUrl, outcomes: outcomes, requestOptions: requestOptions);
   }
 
   /// Retrieves a deployment by its unique identifier or hostname. Use `withGitRepoInfo` to include the `gitSource` object with commit, branch, and repository metadata. The response includes additional private deployment details when the authenticated user or team owns the deployment.
@@ -1944,12 +1315,7 @@ class DeploymentsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.getDeployment(_config,
-        idOrUrl: idOrUrl,
-        withGitRepoInfo: withGitRepoInfo,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return deployments_methods.getDeployment(_config, idOrUrl: idOrUrl, withGitRepoInfo: withGitRepoInfo, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a deployment for the authenticated team or user and starts its build. Supply `name` and either a Git source or deployment files for a non-Git deployment; you can also provide a `deploymentId` to redeploy an existing deployment. Poll the returned `readyState` to track progress through the build states.
@@ -1958,49 +1324,24 @@ class DeploymentsNamespace {
   Future<CreateDeploymentResponse> create(
       {required String name,
       SdkOptional<CreateDeploymentForceNew> forceNew = const SdkOmitted(),
-      SdkOptional<CreateDeploymentSkipAutoDetectionConfirmation>
-          skipAutoDetectionConfirmation = const SdkOmitted(),
+      SdkOptional<CreateDeploymentSkipAutoDetectionConfirmation> skipAutoDetectionConfirmation = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateDeploymentRequestBodyBuildMachine> buildMachine =
-          const SdkOmitted(),
+      SdkOptional<CreateDeploymentRequestBodyBuildMachine> buildMachine = const SdkOmitted(),
       SdkOptional<String> customEnvironmentSlugOrId = const SdkOmitted(),
       SdkOptional<String> deploymentId = const SdkOmitted(),
-      SdkOptional<List<CreateDeploymentRequestFilesItem>> files =
-          const SdkOmitted(),
+      SdkOptional<List<CreateDeploymentRequestFilesItem>> files = const SdkOmitted(),
       SdkOptional<String> gitAccessToken = const SdkOmitted(),
-      SdkOptional<CreateDeploymentRequestBodyGitMetadata> gitMetadata =
-          const SdkOmitted(),
-      SdkOptional<CreateDeploymentRequestGitSource> gitSource =
-          const SdkOmitted(),
+      SdkOptional<CreateDeploymentRequestBodyGitMetadata> gitMetadata = const SdkOmitted(),
+      SdkOptional<CreateDeploymentRequestGitSource> gitSource = const SdkOmitted(),
       SdkOptional<Map<String, String>> meta = const SdkOmitted(),
       SdkOptional<String?> monorepoManager = const SdkOmitted(),
       SdkOptional<String> project = const SdkOmitted(),
-      SdkOptional<CreateDeploymentRequestBodyProjectSettings> projectSettings =
-          const SdkOmitted(),
+      SdkOptional<CreateDeploymentRequestBodyProjectSettings> projectSettings = const SdkOmitted(),
       SdkOptional<String> target = const SdkOmitted(),
       SdkOptional<bool> withLatestCommit = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.createDeployment(_config,
-        name: name,
-        forceNew: forceNew,
-        skipAutoDetectionConfirmation: skipAutoDetectionConfirmation,
-        teamId: teamId,
-        slug: slug,
-        buildMachine: buildMachine,
-        customEnvironmentSlugOrId: customEnvironmentSlugOrId,
-        deploymentId: deploymentId,
-        files: files,
-        gitAccessToken: gitAccessToken,
-        gitMetadata: gitMetadata,
-        gitSource: gitSource,
-        meta: meta,
-        monorepoManager: monorepoManager,
-        project: project,
-        projectSettings: projectSettings,
-        target: target,
-        withLatestCommit: withLatestCommit,
-        requestOptions: requestOptions);
+    return deployments_methods.createDeployment(_config, name: name, forceNew: forceNew, skipAutoDetectionConfirmation: skipAutoDetectionConfirmation, teamId: teamId, slug: slug, buildMachine: buildMachine, customEnvironmentSlugOrId: customEnvironmentSlugOrId, deploymentId: deploymentId, files: files, gitAccessToken: gitAccessToken, gitMetadata: gitMetadata, gitSource: gitSource, meta: meta, monorepoManager: monorepoManager, project: project, projectSettings: projectSettings, target: target, withLatestCommit: withLatestCommit, requestOptions: requestOptions);
   }
 
   /// Cancels a deployment that is currently in progress and stops its build before completion. Use this operation to stop an accidental deployment or a build with known errors; deployments in `READY`, `ERROR`, or `CANCELED` states are not cancelable. The 200 response returns the updated deployment with `readyState` set to `CANCELED`, and cancellation is irreversible.
@@ -2011,8 +1352,7 @@ class DeploymentsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.cancelDeployment(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return deployments_methods.cancelDeployment(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Uploads a file for use in a deployment. Send the file content as the request body before creating the deployment that uses it. A successful response confirms the file is already uploaded or has been uploaded.
@@ -2026,14 +1366,7 @@ class DeploymentsNamespace {
       SdkOptional<double> xNowSize = const SdkOmitted(),
       SdkOptional<List<int>> body = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.uploadFile(_config,
-        teamId: teamId,
-        slug: slug,
-        xVercelDigest: xVercelDigest,
-        xNowDigest: xNowDigest,
-        xNowSize: xNowSize,
-        body: body,
-        requestOptions: requestOptions);
+    return deployments_methods.uploadFile(_config, teamId: teamId, slug: slug, xVercelDigest: xVercelDigest, xNowDigest: xNowDigest, xNowSize: xNowSize, body: body, requestOptions: requestOptions);
   }
 
   /// Retrieves the source file tree for a deployment. Use `id` to identify the deployment; a retrievable file tree is available when the deployment was created with the Vercel CLI or through the API using the `files` key.
@@ -2044,8 +1377,7 @@ class DeploymentsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.listDeploymentFiles(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return deployments_methods.listDeploymentFiles(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Allows to retrieve the content of a file by supplying the file identifier and the deployment unique identifier. The response body will contain a JSON response containing the contents of the file encoded as base64.
@@ -2056,13 +1388,7 @@ class DeploymentsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.getDeploymentFileContents(_config,
-        id: id,
-        fileId: fileId,
-        path: path,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return deployments_methods.getDeploymentFileContents(_config, id: id, fileId: fileId, path: path, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists deployments for the authenticated user or team. Use filters such as `projectId`, `state`, `branch`, or `target` to narrow the results, and use `limit` to set the maximum number returned. Incomplete deployments have a `url` value of `null`.
@@ -2086,24 +1412,7 @@ class DeploymentsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.getDeployments(_config,
-        app: app,
-        from: from,
-        limit: limit,
-        projectId: projectId,
-        projectIds: projectIds,
-        target: target,
-        to: to,
-        users: users,
-        since: since,
-        until: until,
-        state: state,
-        rollbackCandidate: rollbackCandidate,
-        branch: branch,
-        sha: sha,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return deployments_methods.getDeployments(_config, app: app, from: from, limit: limit, projectId: projectId, projectIds: projectIds, target: target, to: to, users: users, since: since, until: until, state: state, rollbackCandidate: rollbackCandidate, branch: branch, sha: sha, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a deployment identified by its ID or URL. Pass `url` to identify a deployment or alias URL; when provided, `url` takes precedence over `id`. You can obtain a deployment ID by listing deployments.
@@ -2115,19 +1424,14 @@ class DeploymentsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return deployments_methods.deleteDeployment(_config,
-        id: id,
-        url: url,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return deployments_methods.deleteDeployment(_config, id: id, url: url, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class DnsNamespace {
   final ClientConfig _config;
   DnsNamespace(ClientConfig config) : _config = config;
-
   /// Lists DNS records created for a domain. Use `limit` to control the number of records returned and `since` or `until` to filter by JavaScript timestamps. The default limit is 20 records.
   ///
   /// Retrieves a list of DNS records created for a domain name. By default it returns 20 records if no limit is provided. The rest can be retrieved using the pagination options.
@@ -2139,14 +1443,7 @@ class DnsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return dns_methods.getRecords(_config,
-        domain: domain,
-        limit: limit,
-        since: since,
-        until: until,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return dns_methods.getRecords(_config, domain: domain, limit: limit, since: since, until: until, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a DNS record for a domain. Provide the record `type`, `name`, and `value`; the accepted fields and value format depend on the record type. The response includes the identifier of the newly created record.
@@ -2158,12 +1455,7 @@ class DnsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return dns_methods.createRecord(_config,
-        domain: domain,
-        type_: type_,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return dns_methods.createRecord(_config, domain: domain, type_: type_, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates an existing DNS record for a domain. Supply only the record properties you want to change, such as its `name`, `value`, or `ttl`; record-specific data can be provided through `srv` or `https`. The response contains the updated DNS record.
@@ -2182,19 +1474,7 @@ class DnsNamespace {
       SdkOptional<UpdateRecordRequestBodyHttps?> https = const SdkOmitted(),
       SdkOptional<String> comment = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return dns_methods.updateRecord(_config,
-        recordId: recordId,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        value_: value_,
-        type_: type_,
-        ttl: ttl,
-        mxPriority: mxPriority,
-        srv: srv,
-        https: https,
-        comment: comment,
-        requestOptions: requestOptions);
+    return dns_methods.updateRecord(_config, recordId: recordId, teamId: teamId, slug: slug, name: name, value_: value_, type_: type_, ttl: ttl, mxPriority: mxPriority, srv: srv, https: https, comment: comment, requestOptions: requestOptions);
   }
 
   /// Deletes an existing DNS record from a domain. Supply the domain and record identifiers to select the record to remove. The response confirms removal of the specified record.
@@ -2206,31 +1486,24 @@ class DnsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return dns_methods.removeRecord(_config,
-        domain: domain,
-        recordId: recordId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return dns_methods.removeRecord(_config, domain: domain, recordId: recordId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class DomainsNamespace {
   final ClientConfig _config;
   DomainsNamespace(ClientConfig config) : _config = config;
-
   /// Replaces the DNS records associated with a domain. Use this operation when you need to stage a replacement set of records rather than update one record individually. The response returns the identifiers of the records involved.
   Future<ReplaceDomainsByDomainRecordsResponse> replaceByDomainRecords(
       {required String domain, RequestOptions? requestOptions}) async {
-    return domains_methods.replaceDomainsByDomainRecords(_config,
-        domain: domain, requestOptions: requestOptions);
+    return domains_methods.replaceDomainsByDomainRecords(_config, domain: domain, requestOptions: requestOptions);
   }
 
   /// Retrieves a DNS record by its unique identifier. Use this operation to inspect the record's domain, name, type, value, and other available properties. The response contains the requested record.
   Future<GetDomainsRecordsByRecordIdResponse> getRecordsByRecordId(
       {required String recordId, RequestOptions? requestOptions}) async {
-    return domains_methods.getDomainsRecordsByRecordId(_config,
-        recordId: recordId, requestOptions: requestOptions);
+    return domains_methods.getDomainsRecordsByRecordId(_config, recordId: recordId, requestOptions: requestOptions);
   }
 
   /// Retrieves configuration information for a domain, including its detected configuration and recommended DNS values. Use `projectIdOrName` to associate a domain that is not yet linked to a project, and `strict` to control whether the response includes only nameservers assigned directly to the domain. The response also indicates supported certificate challenges and whether the domain is misconfigured.
@@ -2243,13 +1516,7 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.getDomainConfig(_config,
-        domain: domain,
-        projectIdOrName: projectIdOrName,
-        strict: strict,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.getDomainConfig(_config, domain: domain, projectIdOrName: projectIdOrName, strict: strict, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the TXT record needed to verify ownership of a domain for the authenticated user's team. Add the returned record to `_vercel.{domain}` in your DNS configuration before completing the ownership claim. Then call POST /domains/:domain/claim to transfer ownership.
@@ -2260,11 +1527,7 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.getDomainVerificationRecord(_config,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.getDomainVerificationRecord(_config, domain: domain, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Claims ownership of a domain for the authenticated user's team by verifying a TXT record. First add the record returned by GET /domains/:domain/verification to `_vercel.{domain}` in your DNS configuration. Once verified, ownership transfers to your team even if another user or team currently owns the domain.
@@ -2275,11 +1538,7 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.claimDomainOwnership(_config,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.claimDomainOwnership(_config, domain: domain, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists project domains associated with an apex domain owned by the authenticated user's account. Use `limit` to control the maximum number of results and `since` or `until` to filter by creation time using JavaScript timestamps. The response includes pagination metadata and the matching project domains.
@@ -2293,14 +1552,7 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.getDomainProjectDomains(_config,
-        domain: domain,
-        limit: limit,
-        since: since,
-        until: until,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.getDomainProjectDomains(_config, domain: domain, limit: limit, since: since, until: until, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves information about a domain registered to an account or team. Use `teamId` or `slug` to make the request on behalf of a team.
@@ -2311,11 +1563,7 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.getDomains(_config,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.getDomains(_config, domain: domain, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists domains registered to the authenticated user or team. Use `since` and `until` to filter by creation time, and `limit` to control the number of domains returned; the response includes pagination metadata.
@@ -2328,13 +1576,7 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.listDomains(_config,
-        limit: limit,
-        since: since,
-        until: until,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.listDomains(_config, limit: limit, since: since, until: until, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Adds an apex domain to the authenticated user's account or team. Supply `name` and use the `method` field to select the add or move-in operation; a move-in request can also include its transfer token. Use the transfer-in endpoint for transfers from external registrars.
@@ -2345,11 +1587,7 @@ class DomainsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> method = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.createOrTransferDomain(_config,
-        teamId: teamId,
-        slug: slug,
-        method: method,
-        requestOptions: requestOptions);
+    return domains_methods.createOrTransferDomain(_config, teamId: teamId, slug: slug, method: method, requestOptions: requestOptions);
   }
 
   /// Updates settings for an apex domain or moves the domain to another user or team. Use the update operation for domain settings, or the move-out operation to specify a `destination`; use the dedicated registrar endpoints to change auto-renew or nameservers.
@@ -2361,12 +1599,7 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.updateDomains(_config,
-        domain: domain,
-        body: body,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.updateDomains(_config, domain: domain, body: body, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a registered domain from Vercel. Use `domain` to identify the domain to remove; deleting it also removes any aliases associated with it.
@@ -2377,18 +1610,14 @@ class DomainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_methods.deleteDomain(_config,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return domains_methods.deleteDomain(_config, domain: domain, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class DomainsRegistrarNamespace {
   final ClientConfig _config;
   DomainsRegistrarNamespace(ClientConfig config) : _config = config;
-
   /// Searches for domain registration availability and pricing for a batch of exact domain names. Provide between 1 and 200 valid domain names in `domains`; results are returned in input order and include registration and renewal prices in USD for available domains. This operation does not require authentication.
   ///
   /// Start domain research here. Get registration availability and pricing for 1–200 exact domain names. Returns results in input order, with registration and renewal prices in USD for available domains. No authentication required.
@@ -2396,8 +1625,7 @@ class DomainsRegistrarNamespace {
       {required List<String> domains,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.searchDomains(_config,
-        domains: domains, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.searchDomains(_config, domains: domains, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Lists the top-level domains supported for domain registration. Use this operation to discover which TLDs are available before requesting TLD metadata or checking domain availability. The response is an array of TLD names.
@@ -2406,8 +1634,7 @@ class DomainsRegistrarNamespace {
   Future<List<String>> getSupportedTlds(
       {SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getSupportedTlds(_config,
-        teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getSupportedTlds(_config, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves metadata for a specific top-level domain. Use this operation to find the language codes supported for the TLD and their corresponding language names. The response contains a map of supported language codes.
@@ -2417,8 +1644,7 @@ class DomainsRegistrarNamespace {
       {required String tld,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getTld(_config,
-        tld: tld, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getTld(_config, tld: tld, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves base price data for a top-level domain (TLD); premium domains may have different prices. Use `years` to request a registration term, or omit it to use the TLD's minimum term. For premium-domain pricing, use the endpoint for getting price data for a domain.
@@ -2429,8 +1655,7 @@ class DomainsRegistrarNamespace {
       SdkOptional<String> years = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getTldPrice(_config,
-        tld: tld, years: years, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getTldPrice(_config, tld: tld, years: years, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves the availability status for a specific domain. Use `domain` to check whether the name is available before attempting to purchase it. If it is available, you can purchase it through the single-domain or multiple-domain purchase endpoint.
@@ -2440,8 +1665,7 @@ class DomainsRegistrarNamespace {
       {required String domain,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getDomainAvailability(_config,
-        domain: domain, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getDomainAvailability(_config, domain: domain, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves price data for a specific domain, including purchase, renewal, and transfer prices. Use `years` to request pricing for a particular term, or omit it to use the minimum term for the domain's TLD.
@@ -2452,11 +1676,7 @@ class DomainsRegistrarNamespace {
       SdkOptional<String> years = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getDomainPrice(_config,
-        domain: domain,
-        years: years,
-        teamId: teamId,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.getDomainPrice(_config, domain: domain, years: years, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves price data for multiple domains in one request. Supply `domains` with the names to price, and optionally set `years` to request a specific term; omitted terms use the minimum term for each TLD. Use the returned prices to evaluate domains before purchasing them.
@@ -2467,11 +1687,7 @@ class DomainsRegistrarNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<double> years = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getBulkPrice(_config,
-        domains: domains,
-        teamId: teamId,
-        years: years,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.getBulkPrice(_config, domains: domains, teamId: teamId, years: years, requestOptions: requestOptions);
   }
 
   /// Checks the availability of multiple domains in one request. Supply `domains` with the names to check, up to 50 per request. If domains are available, you can purchase them through the single-domain or multiple-domain purchase endpoint.
@@ -2481,8 +1697,7 @@ class DomainsRegistrarNamespace {
       {required List<String> domains,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getBulkAvailability(_config,
-        domains: domains, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getBulkAvailability(_config, domains: domains, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves the contact information schema for a domain's TLD. Use the schema to identify any TLD-specific contact fields you need to supply when registering a domain. The required fields can differ between TLDs.
@@ -2492,8 +1707,7 @@ class DomainsRegistrarNamespace {
       {required String domain,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getContactInfoSchema(_config,
-        domain: domain, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getContactInfoSchema(_config, domain: domain, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves the authorization code for a domain registered with the domain registrar. Use this code when transferring the domain from the registrar to another registrar. The domain must be eligible for transfer out before its code can be retrieved.
@@ -2503,8 +1717,7 @@ class DomainsRegistrarNamespace {
       {required String domain,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getDomainAuthCode(_config,
-        domain: domain, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getDomainAuthCode(_config, domain: domain, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Purchases a domain using the supplied registration term, renewal preference, expected price, and contact information. Provide `contactInformation` with the required registrant details and use the TLD contact schema to determine whether additional fields are needed. For a punycode domain, include `languageCode`.
@@ -2519,15 +1732,7 @@ class DomainsRegistrarNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> languageCode = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.buySingleDomain(_config,
-        domain: domain,
-        autoRenew: autoRenew,
-        years: years,
-        expectedPrice: expectedPrice,
-        contactInformation: contactInformation,
-        teamId: teamId,
-        languageCode: languageCode,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.buySingleDomain(_config, domain: domain, autoRenew: autoRenew, years: years, expectedPrice: expectedPrice, contactInformation: contactInformation, teamId: teamId, languageCode: languageCode, requestOptions: requestOptions);
   }
 
   /// Purchases multiple domains in one order using shared contact information. Supply `domains` with each domain's renewal preference, term, and expected price, and provide the registrant details in `contactInformation`. Include `languageCode` for any punycode domain.
@@ -2538,11 +1743,7 @@ class DomainsRegistrarNamespace {
       required BuyDomainsRequestBodyContactInformation contactInformation,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.buyDomains(_config,
-        domains: domains,
-        contactInformation: contactInformation,
-        teamId: teamId,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.buyDomains(_config, domains: domains, contactInformation: contactInformation, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Transfers a domain to the account from another registrar. Provide the losing registrar's `authCode`, the transfer term in `years`, the `expectedPrice`, and registrant `contactInformation`; set `autoRenew` to control future renewals. A 200 response includes the transfer order's `orderId` and links for related actions.
@@ -2557,15 +1758,7 @@ class DomainsRegistrarNamespace {
       required TransferInDomainRequestBodyContactInformation contactInformation,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.transferInDomain(_config,
-        domain: domain,
-        authCode: authCode,
-        autoRenew: autoRenew,
-        years: years,
-        expectedPrice: expectedPrice,
-        contactInformation: contactInformation,
-        teamId: teamId,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.transferInDomain(_config, domain: domain, authCode: authCode, autoRenew: autoRenew, years: years, expectedPrice: expectedPrice, contactInformation: contactInformation, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves the transfer status for a domain. Use the status to check the progress or outcome of an incoming domain transfer. The response reports the transfer's current state.
@@ -2575,8 +1768,7 @@ class DomainsRegistrarNamespace {
       {required String domain,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getDomainTransferIn(_config,
-        domain: domain, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getDomainTransferIn(_config, domain: domain, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Renews a domain registered with Vercel for the specified number of years. Provide `years` and `expectedPrice`, and include `contactInformation` when updating the registrant details as part of the renewal. A 200 response includes the renewal order's `orderId` and links for related actions.
@@ -2587,16 +1779,9 @@ class DomainsRegistrarNamespace {
       required double years,
       required double expectedPrice,
       SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<RenewDomainRequestBodyContactInformation> contactInformation =
-          const SdkOmitted(),
+      SdkOptional<RenewDomainRequestBodyContactInformation> contactInformation = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.renewDomain(_config,
-        domain: domain,
-        years: years,
-        expectedPrice: expectedPrice,
-        teamId: teamId,
-        contactInformation: contactInformation,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.renewDomain(_config, domain: domain, years: years, expectedPrice: expectedPrice, teamId: teamId, contactInformation: contactInformation, requestOptions: requestOptions);
   }
 
   /// Updates whether a domain is set to renew automatically. Set `autoRenew` to `true` or `false` to enable or disable automatic renewal for the specified domain. A 204 response confirms the setting was updated and contains no response body.
@@ -2607,11 +1792,7 @@ class DomainsRegistrarNamespace {
       required bool autoRenew,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.updateDomainAutoRenew(_config,
-        domain: domain,
-        autoRenew: autoRenew,
-        teamId: teamId,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.updateDomainAutoRenew(_config, domain: domain, autoRenew: autoRenew, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Updates the nameservers assigned to a domain. Provide `nameservers` as an array of valid nameserver values, or pass an empty array to use Vercel's default nameservers. A 204 response confirms the change and contains no response body.
@@ -2622,11 +1803,7 @@ class DomainsRegistrarNamespace {
       required List<String> nameservers,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.updateDomainNameservers(_config,
-        domain: domain,
-        nameservers: nameservers,
-        teamId: teamId,
-        requestOptions: requestOptions);
+    return domains_registrar_methods.updateDomainNameservers(_config, domain: domain, nameservers: nameservers, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves the registrant contact verification status for a domain. Use this after purchasing a domain to check whether its registrant contact has been verified. A 400 is returned if the domain was bought less than 30 minutes before the request.
@@ -2636,8 +1813,7 @@ class DomainsRegistrarNamespace {
       {required String domain,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getDomainContactVerification(_config,
-        domain: domain, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getDomainContactVerification(_config, domain: domain, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Retrieves information about a domain order using its order ID. Use the response to inspect the domains included in the order and its current status. The status is one of `draft`, `purchasing`, `completed`, or `failed`.
@@ -2647,15 +1823,14 @@ class DomainsRegistrarNamespace {
       {required String orderId,
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return domains_registrar_methods.getOrder(_config,
-        orderId: orderId, teamId: teamId, requestOptions: requestOptions);
+    return domains_registrar_methods.getOrder(_config, orderId: orderId, teamId: teamId, requestOptions: requestOptions);
   }
+
 }
 
 class LogDrainsNamespace {
   final ClientConfig _config;
   LogDrainsNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves a configurable log drain owned by the authenticated team. Call this deprecated operation with a team AccessToken; integration OAuth2 clients are not allowed.
   ///
   /// Retrieves a Configurable Log Drain. This endpoint must be called with a team AccessToken (integration OAuth2 clients are not allowed). Only log drains owned by the authenticated team can be accessed.
@@ -2664,8 +1839,7 @@ class LogDrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return log_drains_methods.getConfigurableLogDrain(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return log_drains_methods.getConfigurableLogDrain(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a configurable log drain owned by the authenticated team. Call this deprecated operation with a team AccessToken; integration OAuth2 clients are not allowed.
@@ -2676,8 +1850,7 @@ class LogDrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return log_drains_methods.deleteConfigurableLogDrain(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return log_drains_methods.deleteConfigurableLogDrain(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists log drains owned by the authenticated account. Use `projectId` or `projectIdOrName` to scope the list to a project, and `includeMetadata` to control whether project metadata is included; this deprecated operation requires an account AccessToken.
@@ -2690,46 +1863,26 @@ class LogDrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return log_drains_methods.listLogDrains(_config,
-        projectId: projectId,
-        projectIdOrName: projectIdOrName,
-        includeMetadata: includeMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return log_drains_methods.listLogDrains(_config, projectId: projectId, projectIdOrName: projectIdOrName, includeMetadata: includeMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a configurable log drain for the authenticated team. Supply `deliveryFormat`, `url`, and `sources`; use the remaining fields to select projects, environments, headers, and sampling behavior. Call this deprecated operation with a team AccessToken, not an integration OAuth2 client.
   ///
   /// Creates a configurable log drain. This endpoint must be called with a team AccessToken (integration OAuth2 clients are not allowed)
   Future<Map<String, dynamic>> createConfigurable(
-      {required CreateConfigurableLogDrainRequestBodyDeliveryFormat
-          deliveryFormat,
+      {required CreateConfigurableLogDrainRequestBodyDeliveryFormat deliveryFormat,
       required String url,
       required List<CreateConfigurableLogDrainRequestBodySourcesItem> sources,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<Map<String, String>> headers = const SdkOmitted(),
       SdkOptional<List<String>> projectIds = const SdkOmitted(),
-      SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>>
-          environments = const SdkOmitted(),
+      SdkOptional<List<CreateConfigurableLogDrainRequestBodyEnvironmentsItem>> environments = const SdkOmitted(),
       SdkOptional<String> secret = const SdkOmitted(),
       SdkOptional<double> samplingRate = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return log_drains_methods.createConfigurableLogDrain(_config,
-        deliveryFormat: deliveryFormat,
-        url: url,
-        sources: sources,
-        teamId: teamId,
-        slug: slug,
-        headers: headers,
-        projectIds: projectIds,
-        environments: environments,
-        secret: secret,
-        samplingRate: samplingRate,
-        name: name,
-        requestOptions: requestOptions);
+    return log_drains_methods.createConfigurableLogDrain(_config, deliveryFormat: deliveryFormat, url: url, sources: sources, teamId: teamId, slug: slug, headers: headers, projectIds: projectIds, environments: environments, secret: secret, samplingRate: samplingRate, name: name, requestOptions: requestOptions);
   }
 
   /// Lists integration log drains defined for the authenticated user or team. When you use an OAuth2 token, the results are limited to log drains created by the authenticated integration. Use `teamId` or `slug` to scope the request to a team.
@@ -2739,8 +1892,7 @@ class LogDrainsNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return log_drains_methods.getIntegrationLogDrains(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return log_drains_methods.getIntegrationLogDrains(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates an integration log drain for delivering logs to a destination URL. Use an OAuth2 client token because log drains created through this operation are tied to integrations. Provide `name` and `url`; you can also configure projects, sources, environments, headers, and delivery format.
@@ -2753,26 +1905,12 @@ class LogDrainsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<List<String>> projectIds = const SdkOmitted(),
       SdkOptional<String> secret = const SdkOmitted(),
-      SdkOptional<CreateLogDrainRequestBodyDeliveryFormat> deliveryFormat =
-          const SdkOmitted(),
-      SdkOptional<List<CreateLogDrainRequestBodySourcesItem>> sources =
-          const SdkOmitted(),
+      SdkOptional<CreateLogDrainRequestBodyDeliveryFormat> deliveryFormat = const SdkOmitted(),
+      SdkOptional<List<CreateLogDrainRequestBodySourcesItem>> sources = const SdkOmitted(),
       SdkOptional<Map<String, String>> headers = const SdkOmitted(),
-      SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>>
-          environments = const SdkOmitted(),
+      SdkOptional<List<CreateLogDrainRequestBodyEnvironmentsItem>> environments = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return log_drains_methods.createLogDrain(_config,
-        name: name,
-        url: url,
-        teamId: teamId,
-        slug: slug,
-        projectIds: projectIds,
-        secret: secret,
-        deliveryFormat: deliveryFormat,
-        sources: sources,
-        headers: headers,
-        environments: environments,
-        requestOptions: requestOptions);
+    return log_drains_methods.createLogDrain(_config, name: name, url: url, teamId: teamId, slug: slug, projectIds: projectIds, secret: secret, deliveryFormat: deliveryFormat, sources: sources, headers: headers, environments: environments, requestOptions: requestOptions);
   }
 
   /// Deletes an integration log drain by its identifier. When using an OAuth2 token, you can delete only a log drain owned by the authenticated integration. Use `teamId` or `slug` to make the request on behalf of a team.
@@ -2783,15 +1921,14 @@ class LogDrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return log_drains_methods.deleteIntegrationLogDrain(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return log_drains_methods.deleteIntegrationLogDrain(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class DrainsNamespace {
   final ClientConfig _config;
   DrainsNamespace(ClientConfig config) : _config = config;
-
   /// Creates a new Drain with the supplied configuration. Provide `name`, `projects`, and `schemas`; configure `delivery` and optionally scope the Drain to project IDs with `projectIds`. You can also set filters, sampling rules, transforms, and a source.
   ///
   /// Create a new Drain with the provided configuration.
@@ -2804,25 +1941,11 @@ class DrainsNamespace {
       SdkOptional<List<String>> projectIds = const SdkOmitted(),
       SdkOptional<CreateDrainRequestBodyFilter> filter = const SdkOmitted(),
       SdkOptional<CreateDrainRequestDelivery> delivery = const SdkOmitted(),
-      SdkOptional<List<CreateDrainRequestBodySamplingItem>> sampling =
-          const SdkOmitted(),
-      SdkOptional<List<CreateDrainRequestBodyTransformsItem>> transforms =
-          const SdkOmitted(),
+      SdkOptional<List<CreateDrainRequestBodySamplingItem>> sampling = const SdkOmitted(),
+      SdkOptional<List<CreateDrainRequestBodyTransformsItem>> transforms = const SdkOmitted(),
       SdkOptional<CreateDrainRequestSource> source = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return drains_methods.createDrain(_config,
-        name: name,
-        projects: projects,
-        schemas: schemas,
-        teamId: teamId,
-        slug: slug,
-        projectIds: projectIds,
-        filter: filter,
-        delivery: delivery,
-        sampling: sampling,
-        transforms: transforms,
-        source: source,
-        requestOptions: requestOptions);
+    return drains_methods.createDrain(_config, name: name, projects: projects, schemas: schemas, teamId: teamId, slug: slug, projectIds: projectIds, filter: filter, delivery: delivery, sampling: sampling, transforms: transforms, source: source, requestOptions: requestOptions);
   }
 
   /// Lists drains owned by the authenticated team. Use `projectId` to filter the results and `includeMetadata` to control whether metadata is included; metadata is excluded by default.
@@ -2834,12 +1957,7 @@ class DrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return drains_methods.getDrains(_config,
-        projectId: projectId,
-        includeMetadata: includeMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return drains_methods.getDrains(_config, projectId: projectId, includeMetadata: includeMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a specific Drain identified by its path parameter. Use `teamId` or `slug` to perform the request on behalf of a team. The successful response has no content.
@@ -2850,8 +1968,7 @@ class DrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return drains_methods.deleteDrain(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return drains_methods.deleteDrain(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a Drain by its identifier. Use `id` in the path to select the Drain, and use `teamId` or `slug` to make the request on behalf of a team.
@@ -2862,8 +1979,7 @@ class DrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return drains_methods.getDrain(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return drains_methods.getDrain(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the configuration of an existing Drain. Send only the fields you want to change, such as `name`, `delivery`, or `status`; `status` can be `enabled` or `disabled`. You can also update its project scope, schemas, sampling rules, transforms, filter, or source.
@@ -2877,31 +1993,14 @@ class DrainsNamespace {
       SdkOptional<UpdateDrainRequestBodyProjects> projects = const SdkOmitted(),
       SdkOptional<List<String>?> projectIds = const SdkOmitted(),
       SdkOptional<UpdateDrainRequestFilter> filter = const SdkOmitted(),
-      SdkOptional<Map<String, UpdateDrainRequestBodySchemasValue>> schemas =
-          const SdkOmitted(),
+      SdkOptional<Map<String, UpdateDrainRequestBodySchemasValue>> schemas = const SdkOmitted(),
       SdkOptional<UpdateDrainRequestDelivery> delivery = const SdkOmitted(),
-      SdkOptional<List<UpdateDrainRequestBodySamplingItem>?> sampling =
-          const SdkOmitted(),
-      SdkOptional<List<UpdateDrainRequestBodyTransformsItem>?> transforms =
-          const SdkOmitted(),
+      SdkOptional<List<UpdateDrainRequestBodySamplingItem>?> sampling = const SdkOmitted(),
+      SdkOptional<List<UpdateDrainRequestBodyTransformsItem>?> transforms = const SdkOmitted(),
       SdkOptional<UpdateDrainRequestBodyStatus> status = const SdkOmitted(),
       SdkOptional<UpdateDrainRequestSource> source = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return drains_methods.updateDrain(_config,
-        id: id,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        projects: projects,
-        projectIds: projectIds,
-        filter: filter,
-        schemas: schemas,
-        delivery: delivery,
-        sampling: sampling,
-        transforms: transforms,
-        status: status,
-        source: source,
-        requestOptions: requestOptions);
+    return drains_methods.updateDrain(_config, id: id, teamId: teamId, slug: slug, name: name, projects: projects, projectIds: projectIds, filter: filter, schemas: schemas, delivery: delivery, sampling: sampling, transforms: transforms, status: status, source: source, requestOptions: requestOptions);
   }
 
   /// Validates a Drain delivery configuration by sending sample events. Provide `schemas` and `delivery` to check the configuration without creating or updating a Drain. The response reports the validation result.
@@ -2913,19 +2012,14 @@ class DrainsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return drains_methods.testDrain(_config,
-        schemas: schemas,
-        delivery: delivery,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return drains_methods.testDrain(_config, schemas: schemas, delivery: delivery, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class EdgeCacheNamespace {
   final ClientConfig _config;
   EdgeCacheNamespace(ClientConfig config) : _config = config;
-
   /// Invalidates cache entries associated with the specified tags, marking them stale for background revalidation on the next request. Supply `projectIdOrName` to scope the operation and `tags` in the body. You can target `production` or `preview` with the optional `target` field.
   ///
   /// Marks a cache tag as stale, causing cache entries associated with that tag to be revalidated in the background on the next request.
@@ -2934,16 +2028,9 @@ class EdgeCacheNamespace {
       required List<String> tags,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<InvalidateByTagsRequestBodyTarget> target =
-          const SdkOmitted(),
+      SdkOptional<InvalidateByTagsRequestBodyTarget> target = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return edge_cache_methods.invalidateByTags(_config,
-        projectIdOrName: projectIdOrName,
-        tags: tags,
-        teamId: teamId,
-        slug: slug,
-        target: target,
-        requestOptions: requestOptions);
+    return edge_cache_methods.invalidateByTags(_config, projectIdOrName: projectIdOrName, tags: tags, teamId: teamId, slug: slug, target: target, requestOptions: requestOptions);
   }
 
   /// Marks cache entries associated with the specified tags as deleted so they are revalidated in the foreground on the next request. Supply `projectIdOrName` and `tags`, and optionally set `revalidationDeadlineSeconds` or `target`. Use this operation cautiously: deleting cached entries can send many concurrent requests to the origin; prefer tag invalidation for routine use.
@@ -2955,17 +2042,9 @@ class EdgeCacheNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<int> revalidationDeadlineSeconds = const SdkOmitted(),
-      SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget> target =
-          const SdkOmitted(),
+      SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget> target = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return edge_cache_methods.dangerouslyDeleteByTags(_config,
-        projectIdOrName: projectIdOrName,
-        tags: tags,
-        teamId: teamId,
-        slug: slug,
-        revalidationDeadlineSeconds: revalidationDeadlineSeconds,
-        target: target,
-        requestOptions: requestOptions);
+    return edge_cache_methods.dangerouslyDeleteByTags(_config, projectIdOrName: projectIdOrName, tags: tags, teamId: teamId, slug: slug, revalidationDeadlineSeconds: revalidationDeadlineSeconds, target: target, requestOptions: requestOptions);
   }
 
   /// Invalidates source images, marking them stale so their transformed images are revalidated in the background on the next request. Use `projectIdOrName` to scope the operation and supply the image sources in `srcImages`. The request can include between 1 and 8 source images.
@@ -2977,12 +2056,7 @@ class EdgeCacheNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return edge_cache_methods.invalidateBySrcImages(_config,
-        projectIdOrName: projectIdOrName,
-        srcImages: srcImages,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return edge_cache_methods.invalidateBySrcImages(_config, projectIdOrName: projectIdOrName, srcImages: srcImages, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Marks cache entries associated with source images as deleted so they are revalidated in the foreground on the next request. Provide `projectIdOrName` and between 1 and 8 entries in `srcImages`; you can optionally set `revalidationDeadlineSeconds`. Use this operation cautiously because foreground revalidation can send many concurrent requests to the origin; prefer source image invalidation for routine use.
@@ -2995,20 +2069,14 @@ class EdgeCacheNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<int> revalidationDeadlineSeconds = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return edge_cache_methods.dangerouslyDeleteBySrcImages(_config,
-        projectIdOrName: projectIdOrName,
-        srcImages: srcImages,
-        teamId: teamId,
-        slug: slug,
-        revalidationDeadlineSeconds: revalidationDeadlineSeconds,
-        requestOptions: requestOptions);
+    return edge_cache_methods.dangerouslyDeleteBySrcImages(_config, projectIdOrName: projectIdOrName, srcImages: srcImages, teamId: teamId, slug: slug, revalidationDeadlineSeconds: revalidationDeadlineSeconds, requestOptions: requestOptions);
   }
+
 }
 
 class GlobalConfigNamespace {
   final ClientConfig _config;
   GlobalConfigNamespace(ClientConfig config) : _config = config;
-
   /// Lists all Global Configs available to the authenticated user. Use `teamId` or `slug` to perform the request on behalf of a team. Each result includes its identifier, name, digest, item count, size, and timestamps.
   ///
   /// Returns all Global Configs.
@@ -3016,8 +2084,7 @@ class GlobalConfigNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigs(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigs(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a Global Config for the authenticated user or specified team. Supply a `slug` that is at most 64 characters and contains only letters, numbers, underscores, or hyphens; you can also provide initial `items`.
@@ -3029,12 +2096,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> slug_2 = const SdkOmitted(),
       SdkOptional<Map<String, dynamic>> items = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.createEdgeConfig(_config,
-        slug: slug,
-        teamId: teamId,
-        slug_2: slug_2,
-        items: items,
-        requestOptions: requestOptions);
+    return global_config_methods.createEdgeConfig(_config, slug: slug, teamId: teamId, slug_2: slug_2, items: items, requestOptions: requestOptions);
   }
 
   /// Retrieves a Global Config by its identifier. Use `teamId` or `slug` to make the request on behalf of a team when needed.
@@ -3045,11 +2107,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfig(_config,
-        edgeConfigId: edgeConfigId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfig(_config, edgeConfigId: edgeConfigId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Replaces a Global Config's name. Supply the required `slug` in the request body; use `teamId` or `slug` to make the request on behalf of a team when needed.
@@ -3061,12 +2119,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug_2 = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.updateEdgeConfig(_config,
-        edgeConfigId: edgeConfigId,
-        slug: slug,
-        teamId: teamId,
-        slug_2: slug_2,
-        requestOptions: requestOptions);
+    return global_config_methods.updateEdgeConfig(_config, edgeConfigId: edgeConfigId, slug: slug, teamId: teamId, slug_2: slug_2, requestOptions: requestOptions);
   }
 
   /// Deletes a Global Config by its identifier. Use `teamId` or `slug` to make the request on behalf of a team when needed; deletion removes the specified Global Config.
@@ -3077,11 +2130,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.deleteEdgeConfig(_config,
-        edgeConfigId: edgeConfigId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.deleteEdgeConfig(_config, edgeConfigId: edgeConfigId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists all items in a Global Config. Use the `edgeConfigId` path parameter to select the config; it must begin with the `ecfg_` prefix.
@@ -3092,11 +2141,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigItems(_config,
-        edgeConfigId: edgeConfigId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigItems(_config, edgeConfigId: edgeConfigId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates multiple items in a Global Config in one request. Supply the required `items` array with the item operations to apply; the `edgeConfigId` must begin with the `ecfg_` prefix.
@@ -3108,12 +2153,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.patchEdgeConfigItems(_config,
-        edgeConfigId: edgeConfigId,
-        items: items,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.patchEdgeConfigItems(_config, edgeConfigId: edgeConfigId, items: items, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the schema associated with a Global Config. Use `edgeConfigId` to select the config and `teamId` or `slug` to make the request on behalf of a team when needed.
@@ -3124,11 +2164,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigSchema(_config,
-        edgeConfigId: edgeConfigId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigSchema(_config, edgeConfigId: edgeConfigId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the schema for a Global Config. Supply the required `definition` object; use `dryRun` to request a schema update without applying it, if supported by the API.
@@ -3141,13 +2177,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.patchEdgeConfigSchema(_config,
-        edgeConfigId: edgeConfigId,
-        definition: definition,
-        dryRun: dryRun,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.patchEdgeConfigSchema(_config, edgeConfigId: edgeConfigId, definition: definition, dryRun: dryRun, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes the schema associated with a Global Config. Use `edgeConfigId` to select the config and `teamId` or `slug` to make the request on behalf of a team when needed.
@@ -3158,11 +2188,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.deleteEdgeConfigSchema(_config,
-        edgeConfigId: edgeConfigId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.deleteEdgeConfigSchema(_config, edgeConfigId: edgeConfigId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a specific item from a Global Config. Supply the config identifier and item key to select the item; the config identifier must begin with the `ecfg_` prefix.
@@ -3174,12 +2200,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigItem(_config,
-        edgeConfigId: edgeConfigId,
-        edgeConfigItemKey: edgeConfigItemKey,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigItem(_config, edgeConfigId: edgeConfigId, edgeConfigItemKey: edgeConfigItemKey, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the tokens associated with a Global Config. Use `edgeConfigId` to select the Global Config and optionally `teamId` or `slug` to make the request on behalf of a team. The response includes token metadata and a masked token representation.
@@ -3190,11 +2211,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigTokens(_config,
-        edgeConfigId: edgeConfigId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigTokens(_config, edgeConfigId: edgeConfigId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes one or more tokens from an existing Global Config. Provide token values or token IDs in the request body to choose which tokens to delete. Each supplied list must contain at least one item.
@@ -3207,13 +2224,7 @@ class GlobalConfigNamespace {
       SdkOptional<List<String>> tokens = const SdkOmitted(),
       SdkOptional<List<String>> ids = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.deleteEdgeConfigTokens(_config,
-        edgeConfigId: edgeConfigId,
-        teamId: teamId,
-        slug: slug,
-        tokens: tokens,
-        ids: ids,
-        requestOptions: requestOptions);
+    return global_config_methods.deleteEdgeConfigTokens(_config, edgeConfigId: edgeConfigId, teamId: teamId, slug: slug, tokens: tokens, ids: ids, requestOptions: requestOptions);
   }
 
   /// Retrieves metadata for a specific Global Config token. Use `edgeConfigId` and `token` to identify the token whose metadata you need. The response includes a partially masked token representation and may include the full token for backwards compatibility.
@@ -3225,12 +2236,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigToken(_config,
-        edgeConfigId: edgeConfigId,
-        token: token,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigToken(_config, edgeConfigId: edgeConfigId, token: token, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a token for an existing Global Config. Provide a `label` to identify the token, with a maximum length of 52 characters. The 201 response includes the new token and its ID.
@@ -3242,12 +2248,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.createEdgeConfigToken(_config,
-        edgeConfigId: edgeConfigId,
-        label: label,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.createEdgeConfigToken(_config, edgeConfigId: edgeConfigId, label: label, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a specific version of a Global Config from backup storage. Use `edgeConfigId` and `edgeConfigBackupVersionId` to select the Global Config and backup version. The response contains the backup data and its associated metadata.
@@ -3259,12 +2260,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigBackup(_config,
-        edgeConfigId: edgeConfigId,
-        edgeConfigBackupVersionId: edgeConfigBackupVersionId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigBackup(_config, edgeConfigId: edgeConfigId, edgeConfigBackupVersionId: edgeConfigBackupVersionId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Restores a specific backup version of a Global Config. Use `edgeConfigId` and `edgeConfigBackupVersionId` to select the Global Config and the version to restore. The response reports the resulting digest, previous digest, restored backup version, and status.
@@ -3276,12 +2272,7 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.restoreEdgeConfigBackup(_config,
-        edgeConfigId: edgeConfigId,
-        edgeConfigBackupVersionId: edgeConfigBackupVersionId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.restoreEdgeConfigBackup(_config, edgeConfigId: edgeConfigId, edgeConfigBackupVersionId: edgeConfigBackupVersionId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists backups of a Global Config. Use `next` to continue from a pagination cursor, `limit` to control the number of results, and `metadata` to filter the backups. The response includes backup records and pagination information.
@@ -3295,21 +2286,14 @@ class GlobalConfigNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return global_config_methods.getEdgeConfigBackups(_config,
-        edgeConfigId: edgeConfigId,
-        next: next,
-        limit: limit,
-        metadata: metadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return global_config_methods.getEdgeConfigBackups(_config, edgeConfigId: edgeConfigId, next: next, limit: limit, metadata: metadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class EnvironmentNamespace {
   final ClientConfig _config;
   EnvironmentNamespace(ClientConfig config) : _config = config;
-
   /// Creates one or more shared environment variables for a team. Provide between 1 and 50 entries in `evs`, each with a `key` and `value`, and specify at least one target or custom-environment scope. A 201 response reports which entries were created and which failed.
   ///
   /// Creates shared environment variable(s) for a team.
@@ -3317,20 +2301,11 @@ class EnvironmentNamespace {
       {required List<CreateSharedEnvVariableRequestBodyEvsItem> evs,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateSharedEnvVariableRequestBodyType> type_ =
-          const SdkOmitted(),
-      SdkOptional<List<CreateSharedEnvVariableRequestBodyTargetItem>> target =
-          const SdkOmitted(),
+      SdkOptional<CreateSharedEnvVariableRequestBodyType> type_ = const SdkOmitted(),
+      SdkOptional<List<CreateSharedEnvVariableRequestBodyTargetItem>> target = const SdkOmitted(),
       SdkOptional<List<String>> projectId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.createSharedEnvVariable(_config,
-        evs: evs,
-        teamId: teamId,
-        slug: slug,
-        type_: type_,
-        target: target,
-        projectId: projectId,
-        requestOptions: requestOptions);
+    return environment_methods.createSharedEnvVariable(_config, evs: evs, teamId: teamId, slug: slug, type_: type_, target: target, projectId: projectId, requestOptions: requestOptions);
   }
 
   /// Lists shared environment variables for a team, with optional filters for search terms, projects, and variable IDs. Use the exclusion filters to omit specified IDs or project associations from the results. The response includes variable records and pagination information.
@@ -3347,33 +2322,18 @@ class EnvironmentNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.listSharedEnvVariable(_config,
-        search: search,
-        projectId: projectId,
-        ids: ids,
-        excludeIds_: excludeIds_,
-        excludeIds: excludeIds,
-        excludeProjectId_: excludeProjectId_,
-        excludeProjectId: excludeProjectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return environment_methods.listSharedEnvVariable(_config, search: search, projectId: projectId, ids: ids, excludeIds_: excludeIds_, excludeIds: excludeIds, excludeProjectId_: excludeProjectId_, excludeProjectId: excludeProjectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates one or more shared environment variables for a team. Provide an `updates` object keyed by environment variable IDs, with each value containing the changes to apply. The response separates updated variables from entries that failed.
   ///
   /// Updates a given Shared Environment Variable for a Team.
   Future<UpdateSharedEnvVariableResponse> updateSharedEnvVariable(
-      {required Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue>
-          updates,
+      {required Map<String, UpdateSharedEnvVariableRequestBodyUpdatesValue> updates,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.updateSharedEnvVariable(_config,
-        updates: updates,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return environment_methods.updateSharedEnvVariable(_config, updates: updates, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes one or more shared environment variables for a team. Supply their identifiers in the `ids` array and use `teamId` or `slug` to select the team context. The response reports which identifiers were deleted and which failed.
@@ -3384,8 +2344,7 @@ class EnvironmentNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.deleteSharedEnvVariable(_config,
-        ids: ids, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return environment_methods.deleteSharedEnvVariable(_config, ids: ids, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the decrypted value and metadata for a shared environment variable. Supply its `id` and, when needed, `teamId` or `slug` to select the team context. The response includes whether the value is decrypted and the projects and custom environments associated with it.
@@ -3396,8 +2355,7 @@ class EnvironmentNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.getSharedEnvVar(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return environment_methods.getSharedEnvVar(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Disconnects a shared environment variable from a project without deleting the variable. Supply the variable's `id` and the target `projectId`, and use `teamId` or `slug` to select the team context. The response identifies the shared environment variable that was unlinked.
@@ -3409,12 +2367,7 @@ class EnvironmentNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.unlinkSharedEnvVariable(_config,
-        id: id,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return environment_methods.unlinkSharedEnvVariable(_config, id: id, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a custom environment for a project. Provide a `slug` and, if needed, a `description`, branch-matching configuration, or source for copied environment variables. The environment cannot be named Production or Preview.
@@ -3426,19 +2379,10 @@ class EnvironmentNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> slug_2 = const SdkOmitted(),
       SdkOptional<String> description = const SdkOmitted(),
-      SdkOptional<CreateCustomEnvironmentRequestBodyBranchMatcher>
-          branchMatcher = const SdkOmitted(),
+      SdkOptional<CreateCustomEnvironmentRequestBodyBranchMatcher> branchMatcher = const SdkOmitted(),
       SdkOptional<String> copyEnvVarsFrom = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.createCustomEnvironment(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        slug_2: slug_2,
-        description: description,
-        branchMatcher: branchMatcher,
-        copyEnvVarsFrom: copyEnvVarsFrom,
-        requestOptions: requestOptions);
+    return environment_methods.createCustomEnvironment(_config, idOrName: idOrName, teamId: teamId, slug: slug, slug_2: slug_2, description: description, branchMatcher: branchMatcher, copyEnvVarsFrom: copyEnvVarsFrom, requestOptions: requestOptions);
   }
 
   /// Lists custom environments configured for a project. Use `gitBranch` to filter the results to environments associated with a specific Git branch.
@@ -3450,12 +2394,7 @@ class EnvironmentNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.listEnvironmentCustom(_config,
-        idOrName: idOrName,
-        gitBranch: gitBranch,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return environment_methods.listEnvironmentCustom(_config, idOrName: idOrName, gitBranch: gitBranch, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a custom environment from a project by its identifier or slug. Use the project identifier or name together with `environmentSlugOrId` to select the environment.
@@ -3467,12 +2406,7 @@ class EnvironmentNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.getCustomEnvironment(_config,
-        idOrName: idOrName,
-        environmentSlugOrId: environmentSlugOrId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return environment_methods.getCustomEnvironment(_config, idOrName: idOrName, environmentSlugOrId: environmentSlugOrId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a custom environment’s slug, description, or branch-matching configuration. Supply only the properties you want to change; the environment cannot be named Production or Preview.
@@ -3485,18 +2419,9 @@ class EnvironmentNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> slug_2 = const SdkOmitted(),
       SdkOptional<String> description = const SdkOmitted(),
-      SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?>
-          branchMatcher = const SdkOmitted(),
+      SdkOptional<UpdateCustomEnvironmentRequestBodyBranchMatcher?> branchMatcher = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.updateCustomEnvironment(_config,
-        idOrName: idOrName,
-        environmentSlugOrId: environmentSlugOrId,
-        teamId: teamId,
-        slug: slug,
-        slug_2: slug_2,
-        description: description,
-        branchMatcher: branchMatcher,
-        requestOptions: requestOptions);
+    return environment_methods.updateCustomEnvironment(_config, idOrName: idOrName, environmentSlugOrId: environmentSlugOrId, teamId: teamId, slug: slug, slug_2: slug_2, description: description, branchMatcher: branchMatcher, requestOptions: requestOptions);
   }
 
   /// Deletes a custom environment from a project. You can set `deleteUnassignedEnvironmentVariables` in the request body to also delete environment variables that are not assigned to any environments.
@@ -3507,24 +2432,16 @@ class EnvironmentNamespace {
       required String environmentSlugOrId,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<bool> deleteUnassignedEnvironmentVariables =
-          const SdkOmitted(),
+      SdkOptional<bool> deleteUnassignedEnvironmentVariables = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return environment_methods.removeCustomEnvironment(_config,
-        idOrName: idOrName,
-        environmentSlugOrId: environmentSlugOrId,
-        teamId: teamId,
-        slug: slug,
-        deleteUnassignedEnvironmentVariables:
-            deleteUnassignedEnvironmentVariables,
-        requestOptions: requestOptions);
+    return environment_methods.removeCustomEnvironment(_config, idOrName: idOrName, environmentSlugOrId: environmentSlugOrId, teamId: teamId, slug: slug, deleteUnassignedEnvironmentVariables: deleteUnassignedEnvironmentVariables, requestOptions: requestOptions);
   }
+
 }
 
 class UserNamespace {
   final ClientConfig _config;
   UserNamespace(ClientConfig config) : _config = config;
-
   /// Lists events generated by the authenticated user, such as sign-ins, deployments, and team membership changes. Use `teamId` or `slug` to scope events to a team, and apply the time, type, principal, project, or entity filters to narrow the results. Set `withPayload` to `true` to include each event's payload.
   ///
   /// Retrieves a list of "events" generated by the User on Vercel. Events are generated when the User performs a particular action, such as logging in, creating a deployment, and joining a Team (just to name a few). When the `teamId` parameter is supplied, then the events that are returned will be in relation to the Team that was specified.
@@ -3541,19 +2458,7 @@ class UserNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return user_methods.listUserEvents(_config,
-        limit: limit,
-        since: since,
-        until: until,
-        types: types,
-        userId: userId,
-        principalId: principalId,
-        projectIds: projectIds,
-        entityId: entityId,
-        withPayload: withPayload,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return user_methods.listUserEvents(_config, limit: limit, since: since, until: until, types: types, userId: userId, principalId: principalId, projectIds: projectIds, entityId: entityId, withPayload: withPayload, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists user-facing event types and their descriptions, along with the event categories. Use `teamId` or `slug` to select the team context for the request. Refer to the returned types and categories when filtering or presenting user events.
@@ -3563,14 +2468,14 @@ class UserNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return user_methods.listEventTypes(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return user_methods.listEventTypes(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves information about the authenticated user. Use this endpoint to obtain the user information associated with the request's authentication context.
   ///
   /// Retrieves information related to the currently authenticated User.
-  Future<GetAuthUserResponse> getAuth({RequestOptions? requestOptions}) async {
+  Future<GetAuthUserResponse> getAuth(
+      {RequestOptions? requestOptions}) async {
     return user_methods.getAuthUser(_config, requestOptions: requestOptions);
   }
 
@@ -3578,18 +2483,16 @@ class UserNamespace {
   ///
   /// Initiates the deletion process for the currently authenticated User, by sending a deletion confirmation email. The email contains a link that the user needs to visit in order to proceed with the deletion process.
   Future<RequestDeleteResponse> requestDelete(
-      {SdkOptional<List<RequestDeleteRequestBodyReasonsItem>> reasons =
-          const SdkOmitted(),
+      {SdkOptional<List<RequestDeleteRequestBodyReasonsItem>> reasons = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return user_methods.requestDelete(_config,
-        reasons: reasons, requestOptions: requestOptions);
+    return user_methods.requestDelete(_config, reasons: reasons, requestOptions: requestOptions);
   }
+
 }
 
 class FeatureFlagsNamespace {
   final ClientConfig _config;
   FeatureFlagsNamespace(ClientConfig config) : _config = config;
-
   /// Lists a project's feature flags with cursor-based pagination. Use `state`, `search`, `tags`, or maintainer and creator filters to narrow the results, and pass the returned pagination cursor to continue through the list. The `state` filter defaults to `active`.
   ///
   /// Retrieve feature flags for a project. Returns an opaque cursor for pagination.
@@ -3606,19 +2509,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.listFlagsV2(_config,
-        projectIdOrName: projectIdOrName,
-        state: state,
-        limit: limit,
-        cursor: cursor,
-        search: search,
-        tags: tags,
-        createdBy: createdBy,
-        maintainerIds: maintainerIds,
-        includeMarketplaceFlags: includeMarketplaceFlags,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.listFlagsV2(_config, projectIdOrName: projectIdOrName, state: state, limit: limit, cursor: cursor, search: search, tags: tags, createdBy: createdBy, maintainerIds: maintainerIds, includeMarketplaceFlags: includeMarketplaceFlags, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists feature flags for a project, with optional filtering by state, slug or description, and tags. Use the `cursor` to continue through paginated results, or omit `limit` to retrieve all flags. The `withMetadata` parameter is deprecated; resolve creator identity separately or use the single-flag endpoint when you need that metadata.
@@ -3635,17 +2526,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.listFlags(_config,
-        projectIdOrName: projectIdOrName,
-        state: state,
-        withMetadata: withMetadata,
-        limit: limit,
-        cursor: cursor,
-        search: search,
-        tags: tags,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.listFlags(_config, projectIdOrName: projectIdOrName, state: state, withMetadata: withMetadata, limit: limit, cursor: cursor, search: search, tags: tags, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a feature flag for a project with a unique project-level slug, a flag kind, and environment configuration. Supply `slug`, `kind`, and `environments`; the flag kind must be boolean, string, number, or JSON. Configure optional variants, state, maintainers, and tags as needed.
@@ -3658,8 +2539,7 @@ class FeatureFlagsNamespace {
       required Map<String, CreateFlagRequestBodyEnvironmentsValue> environments,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug_2 = const SdkOmitted(),
-      SdkOptional<List<CreateFlagRequestBodyVariantsItem>> variants =
-          const SdkOmitted(),
+      SdkOptional<List<CreateFlagRequestBodyVariantsItem>> variants = const SdkOmitted(),
       SdkOptional<double> seed = const SdkOmitted(),
       SdkOptional<String> description = const SdkOmitted(),
       SdkOptional<CreateFlagRequestBodyState> state = const SdkOmitted(),
@@ -3667,21 +2547,7 @@ class FeatureFlagsNamespace {
       SdkOptional<bool> permanent = const SdkOmitted(),
       SdkOptional<List<String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.createFlag(_config,
-        projectIdOrName: projectIdOrName,
-        slug: slug,
-        kind: kind,
-        environments: environments,
-        teamId: teamId,
-        slug_2: slug_2,
-        variants: variants,
-        seed: seed,
-        description: description,
-        state: state,
-        maintainerIds: maintainerIds,
-        permanent: permanent,
-        tags: tags,
-        requestOptions: requestOptions);
+    return feature_flags_methods.createFlag(_config, projectIdOrName: projectIdOrName, slug: slug, kind: kind, environments: environments, teamId: teamId, slug_2: slug_2, variants: variants, seed: seed, description: description, state: state, maintainerIds: maintainerIds, permanent: permanent, tags: tags, requestOptions: requestOptions);
   }
 
   /// Retrieves a feature flag by its ID or slug within a project. Use `ifMatch` to send an ETag condition and `withMetadata` to include metadata in the response. The result contains the flag configuration, including its environments, variants, and current state.
@@ -3695,14 +2561,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.getFlag(_config,
-        projectIdOrName: projectIdOrName,
-        flagIdOrSlug: flagIdOrSlug,
-        ifMatch: ifMatch,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.getFlag(_config, projectIdOrName: projectIdOrName, flagIdOrSlug: flagIdOrSlug, ifMatch: ifMatch, withMetadata: withMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates selected properties of an existing feature flag without requiring the full configuration. Supply only the fields to change, such as `variants`, `environments`, or `state`; any environment configuration you provide must include its required settings. Use `ifMatch` when you need to condition the update on an ETag.
@@ -3717,10 +2576,8 @@ class FeatureFlagsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> createdBy = const SdkOmitted(),
       SdkOptional<String> message = const SdkOmitted(),
-      SdkOptional<List<UpdateFlagRequestBodyVariantsItem>> variants =
-          const SdkOmitted(),
-      SdkOptional<Map<String, UpdateFlagRequestBodyEnvironmentsValue>>
-          environments = const SdkOmitted(),
+      SdkOptional<List<UpdateFlagRequestBodyVariantsItem>> variants = const SdkOmitted(),
+      SdkOptional<Map<String, UpdateFlagRequestBodyEnvironmentsValue>> environments = const SdkOmitted(),
       SdkOptional<double> seed = const SdkOmitted(),
       SdkOptional<String> description = const SdkOmitted(),
       SdkOptional<UpdateFlagRequestBodyState> state = const SdkOmitted(),
@@ -3728,24 +2585,7 @@ class FeatureFlagsNamespace {
       SdkOptional<bool> permanent = const SdkOmitted(),
       SdkOptional<List<String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.updateFlag(_config,
-        projectIdOrName: projectIdOrName,
-        flagIdOrSlug: flagIdOrSlug,
-        ifMatch: ifMatch,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        createdBy: createdBy,
-        message: message,
-        variants: variants,
-        environments: environments,
-        seed: seed,
-        description: description,
-        state: state,
-        maintainerIds: maintainerIds,
-        permanent: permanent,
-        tags: tags,
-        requestOptions: requestOptions);
+    return feature_flags_methods.updateFlag(_config, projectIdOrName: projectIdOrName, flagIdOrSlug: flagIdOrSlug, ifMatch: ifMatch, withMetadata: withMetadata, teamId: teamId, slug: slug, createdBy: createdBy, message: message, variants: variants, environments: environments, seed: seed, description: description, state: state, maintainerIds: maintainerIds, permanent: permanent, tags: tags, requestOptions: requestOptions);
   }
 
   /// Deletes a feature flag from a project permanently. Use this operation only when you no longer need the flag, because deletion cannot be undone; archive the flag instead if you may need it later. A 204 response has no response body.
@@ -3759,14 +2599,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.deleteFlag(_config,
-        projectIdOrName: projectIdOrName,
-        flagIdOrSlug: flagIdOrSlug,
-        ifMatch: ifMatch,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.deleteFlag(_config, projectIdOrName: projectIdOrName, flagIdOrSlug: flagIdOrSlug, ifMatch: ifMatch, withMetadata: withMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the versions recorded for a feature flag in a project. Use `cursor` to continue through the results and `environment` to filter versions by environment. The response includes pagination information alongside the version records.
@@ -3782,16 +2615,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.listFlagVersions(_config,
-        projectIdOrName: projectIdOrName,
-        flagIdOrSlug: flagIdOrSlug,
-        limit: limit,
-        cursor: cursor,
-        environment: environment,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.listFlagVersions(_config, projectIdOrName: projectIdOrName, flagIdOrSlug: flagIdOrSlug, limit: limit, cursor: cursor, environment: environment, withMetadata: withMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves feature flag settings for a project. Use these settings to inspect whether flags are enabled, which environments are configured, and the project's flag-related metadata.
@@ -3802,11 +2626,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.getFlagSettings(_config,
-        projectIdOrName: projectIdOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.getFlagSettings(_config, projectIdOrName: projectIdOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates feature flag settings for a project, including whether flags are enabled and which environments are synchronized. Send only the settings fields you want to change; entity and attribute entries have required fields and size limits. The response contains the resulting settings.
@@ -3817,18 +2637,10 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> enabled = const SdkOmitted(),
-      SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>> entities =
-          const SdkOmitted(),
+      SdkOptional<List<UpdateFlagSettingsRequestBodyEntitiesItem>> entities = const SdkOmitted(),
       SdkOptional<List<String>> environments = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.updateFlagSettings(_config,
-        projectIdOrName: projectIdOrName,
-        teamId: teamId,
-        slug: slug,
-        enabled: enabled,
-        entities: entities,
-        environments: environments,
-        requestOptions: requestOptions);
+    return feature_flags_methods.updateFlagSettings(_config, projectIdOrName: projectIdOrName, teamId: teamId, slug: slug, enabled: enabled, entities: entities, environments: environments, requestOptions: requestOptions);
   }
 
   /// Lists feature flag settings for projects in a team. Use `limit` to control the maximum number of settings returned and `cursor` to continue through the results.
@@ -3840,12 +2652,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> cursor = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.listTeamFlagSettings(_config,
-        teamId: teamId,
-        limit: limit,
-        cursor: cursor,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.listTeamFlagSettings(_config, teamId: teamId, limit: limit, cursor: cursor, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists feature flags across all projects in a team. Filter the results by state, kind, tags, creator, maintainers, or search text, and use `cursor` to continue through the results. The response includes an opaque next cursor for pagination.
@@ -3864,19 +2671,7 @@ class FeatureFlagsNamespace {
       SdkOptional<bool> includeMarketplaceFlags = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.listTeamFlagsV2(_config,
-        teamId: teamId,
-        state: state,
-        limit: limit,
-        cursor: cursor,
-        search: search,
-        kind: kind,
-        tags: tags,
-        createdBy: createdBy,
-        maintainerIds: maintainerIds,
-        includeMarketplaceFlags: includeMarketplaceFlags,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.listTeamFlagsV2(_config, teamId: teamId, state: state, limit: limit, cursor: cursor, search: search, kind: kind, tags: tags, createdBy: createdBy, maintainerIds: maintainerIds, includeMarketplaceFlags: includeMarketplaceFlags, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists feature flags across all projects in a team. Filter the results by state, kind, tags, or search text, and use `cursor` to continue through the results. The `withMetadata` parameter is deprecated; resolve creator identity separately instead.
@@ -3893,17 +2688,7 @@ class FeatureFlagsNamespace {
       SdkOptional<List<String>> tags = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.listTeamFlags(_config,
-        teamId: teamId,
-        state: state,
-        withMetadata: withMetadata,
-        limit: limit,
-        cursor: cursor,
-        search: search,
-        kind: kind,
-        tags: tags,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.listTeamFlags(_config, teamId: teamId, state: state, withMetadata: withMetadata, limit: limit, cursor: cursor, search: search, kind: kind, tags: tags, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a feature flag segment for a project. Supply `slug`, `label`, `data`, and `hint`; `data` can define segment rules and include or exclude data. A 201 response returns the created segment with its generated identifier.
@@ -3920,17 +2705,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> createdBy = const SdkOmitted(),
       SdkOptional<String> description = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.createFlagSegment(_config,
-        projectIdOrName: projectIdOrName,
-        slug: slug,
-        label: label,
-        data: data,
-        hint: hint,
-        teamId: teamId,
-        slug_2: slug_2,
-        createdBy: createdBy,
-        description: description,
-        requestOptions: requestOptions);
+    return feature_flags_methods.createFlagSegment(_config, projectIdOrName: projectIdOrName, slug: slug, label: label, data: data, hint: hint, teamId: teamId, slug_2: slug_2, createdBy: createdBy, description: description, requestOptions: requestOptions);
   }
 
   /// Lists feature flag segments defined for a project. Use `withMetadata` to control whether metadata is included in the segment records.
@@ -3942,12 +2717,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.listFlagSegments(_config,
-        projectIdOrName: projectIdOrName,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.listFlagSegments(_config, projectIdOrName: projectIdOrName, withMetadata: withMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a feature flag segment from a project by its identifier or slug. Use `withMetadata` to control whether the response includes segment metadata.
@@ -3960,13 +2730,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.getFlagSegment(_config,
-        projectIdOrName: projectIdOrName,
-        segmentIdOrSlug: segmentIdOrSlug,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.getFlagSegment(_config, projectIdOrName: projectIdOrName, segmentIdOrSlug: segmentIdOrSlug, withMetadata: withMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a feature flag segment from a project. Use `projectIdOrName` and `segmentIdOrSlug` to identify the project and segment to remove. Set `withMetadata` to include metadata in the response when the operation returns a representation.
@@ -3979,13 +2743,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.deleteFlagSegment(_config,
-        projectIdOrName: projectIdOrName,
-        segmentIdOrSlug: segmentIdOrSlug,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.deleteFlagSegment(_config, projectIdOrName: projectIdOrName, segmentIdOrSlug: segmentIdOrSlug, withMetadata: withMetadata, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates an existing feature flag segment in a project. Use `projectIdOrName` and `segmentIdOrSlug` to identify the project and segment, and send only the segment properties you want to change. The `operations` entries can add or remove values from the segment's include or exclude fields.
@@ -3997,25 +2755,13 @@ class FeatureFlagsNamespace {
       SdkOptional<bool> withMetadata = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>> operations =
-          const SdkOmitted(),
+      SdkOptional<List<UpdateFlagSegmentRequestBodyOperationsItem>> operations = const SdkOmitted(),
       SdkOptional<String> label = const SdkOmitted(),
       SdkOptional<String> description = const SdkOmitted(),
       SdkOptional<UpdateFlagSegmentRequestBodyData> data = const SdkOmitted(),
       SdkOptional<String> hint = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.updateFlagSegment(_config,
-        projectIdOrName: projectIdOrName,
-        segmentIdOrSlug: segmentIdOrSlug,
-        withMetadata: withMetadata,
-        teamId: teamId,
-        slug: slug,
-        operations: operations,
-        label: label,
-        description: description,
-        data: data,
-        hint: hint,
-        requestOptions: requestOptions);
+    return feature_flags_methods.updateFlagSegment(_config, projectIdOrName: projectIdOrName, segmentIdOrSlug: segmentIdOrSlug, withMetadata: withMetadata, teamId: teamId, slug: slug, operations: operations, label: label, description: description, data: data, hint: hint, requestOptions: requestOptions);
   }
 
   /// Retrieves the feature flags associated with a deployment. Use `deploymentId` to identify the deployment whose flags you need. The response includes the flags and status information for the deployment.
@@ -4026,11 +2772,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.getDeploymentFeatureFlags(_config,
-        deploymentId: deploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.getDeploymentFeatureFlags(_config, deploymentId: deploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the SDK keys for a project. Use `projectIdOrName` to select the project whose keys you want to inspect. The response contains safe key metadata and does not include cleartext secrets.
@@ -4041,11 +2783,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.getSdkKeys(_config,
-        projectIdOrName: projectIdOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.getSdkKeys(_config, projectIdOrName: projectIdOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates an SDK key for a project. Supply `sdkKeyType` and `environment` in the request body, and optionally provide a `label` to identify the key. The response includes the cleartext key value, which is disclosed only when the key is created.
@@ -4059,14 +2797,7 @@ class FeatureFlagsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> label = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.createSdkKey(_config,
-        projectIdOrName: projectIdOrName,
-        sdkKeyType: sdkKeyType,
-        environment: environment,
-        teamId: teamId,
-        slug: slug,
-        label: label,
-        requestOptions: requestOptions);
+    return feature_flags_methods.createSdkKey(_config, projectIdOrName: projectIdOrName, sdkKeyType: sdkKeyType, environment: environment, teamId: teamId, slug: slug, label: label, requestOptions: requestOptions);
   }
 
   /// Deletes an SDK key from a project. Use `projectIdOrName` and `hashKey` to identify the project and key to remove. The operation removes the key rather than merely hiding it from the project’s key list.
@@ -4078,19 +2809,14 @@ class FeatureFlagsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return feature_flags_methods.deleteSdkKey(_config,
-        projectIdOrName: projectIdOrName,
-        hashKey: hashKey,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return feature_flags_methods.deleteSdkKey(_config, projectIdOrName: projectIdOrName, hashKey: hashKey, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class IntegrationsNamespace {
   final ClientConfig _config;
   IntegrationsNamespace(ClientConfig config) : _config = config;
-
   /// Lists Git namespaces for a supported provider. Use `provider` to select a provider, or omit it to let the API infer the provider from the authenticated user; provide `host` when using a custom Git host. Set `viewerMetadata` to include viewer information for each namespace.
   ///
   /// Lists git namespaces for a supported provider. Supported providers are `github`, `gitlab` and `bitbucket`. If the provider is not provided, it will try to obtain it from the user that authenticated the request.
@@ -4099,11 +2825,7 @@ class IntegrationsNamespace {
       SdkOptional<GitNamespacesProvider> provider = const SdkOmitted(),
       SdkOptional<bool> viewerMetadata = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.gitNamespaces(_config,
-        host: host,
-        provider: provider,
-        viewerMetadata: viewerMetadata,
-        requestOptions: requestOptions);
+    return integrations_methods.gitNamespaces(_config, host: host, provider: provider, viewerMetadata: viewerMetadata, requestOptions: requestOptions);
   }
 
   /// Searches for Git repositories linked to a namespace for a supported provider. Use `namespaceId` and `provider` to narrow the search, or omit them to let the API infer values from the authenticated user; `query` can filter the repositories. Supply `host` when using a custom Git host.
@@ -4118,15 +2840,7 @@ class IntegrationsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.searchRepo(_config,
-        query: query,
-        namespaceId: namespaceId,
-        provider: provider,
-        installationId: installationId,
-        host: host,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return integrations_methods.searchRepo(_config, query: query, namespaceId: namespaceId, provider: provider, installationId: installationId, host: host, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists billing plans for an integration and product. Use `integrationIdOrSlug` and `productIdOrSlug` to identify them, and use `source` to filter by the source of the request. You can also provide `integrationConfigurationId` or `metadata` to scope the plan lookup.
@@ -4141,15 +2855,7 @@ class IntegrationsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.getBillingPlans(_config,
-        integrationIdOrSlug: integrationIdOrSlug,
-        productIdOrSlug: productIdOrSlug,
-        integrationConfigurationId: integrationConfigurationId,
-        metadata: metadata,
-        source: source,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return integrations_methods.getBillingPlans(_config, integrationIdOrSlug: integrationIdOrSlug, productIdOrSlug: productIdOrSlug, integrationConfigurationId: integrationConfigurationId, metadata: metadata, source: source, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Connects a provisioned integration resource to a project. Supply `projectId` in the request body to establish the connection, and optionally choose which environments receive environment variables or mark those variables as sensitive. Use this operation for a resource that has already been provisioned through an integration.
@@ -4164,15 +2870,7 @@ class IntegrationsNamespace {
       SdkOptional<List<String>> envVarEnvironments = const SdkOmitted(),
       SdkOptional<bool> makeEnvVarsSensitive = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.connectIntegrationResourceToProject(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        resourceId: resourceId,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        envVarEnvironments: envVarEnvironments,
-        makeEnvVarsSensitive: makeEnvVarsSensitive,
-        requestOptions: requestOptions);
+    return integrations_methods.connectIntegrationResourceToProject(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, projectId: projectId, teamId: teamId, slug: slug, envVarEnvironments: envVarEnvironments, makeEnvVarsSensitive: makeEnvVarsSensitive, requestOptions: requestOptions);
   }
 
   /// Lists integration configurations for the authenticated user or team. Set `view` to `account` or `project` to choose the configuration scope, and use the optional filters to narrow results by installation type, integration, or team. The `project` view excludes configurations generated for the authorization flow.
@@ -4180,19 +2878,12 @@ class IntegrationsNamespace {
   /// Allows to retrieve all configurations for an authenticated integration. When the `project` view is used, configurations generated for the authorization flow will be filtered out of the results.
   Future<dynamic> getConfigurations(
       {required GetConfigurationsView view,
-      SdkOptional<GetConfigurationsInstallationType> installationType =
-          const SdkOmitted(),
+      SdkOptional<GetConfigurationsInstallationType> installationType = const SdkOmitted(),
       SdkOptional<String> integrationIdOrSlug = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.getConfigurations(_config,
-        view: view,
-        installationType: installationType,
-        integrationIdOrSlug: integrationIdOrSlug,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return integrations_methods.getConfigurations(_config, view: view, installationType: installationType, integrationIdOrSlug: integrationIdOrSlug, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves an integration configuration by its identifier. Use `teamId` or `slug` to make the request on behalf of a team, and access is limited to the configuration's owner. The response contains the configuration details.
@@ -4203,8 +2894,7 @@ class IntegrationsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.getConfiguration(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return integrations_methods.getConfiguration(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes an integration configuration and all resources associated with it. Use `id` to identify the configuration and `teamId` or `slug` to make the request on behalf of a team. Deletion also removes associated webhooks, log drains, and project environment variables.
@@ -4215,8 +2905,7 @@ class IntegrationsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.deleteConfiguration(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return integrations_methods.deleteConfiguration(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the products available for an integration configuration. Use `id` to select the configuration, and use `teamId` or `slug` when making the request on behalf of a team. Each product includes a `metadataSchema` describing its required and optional metadata fields.
@@ -4227,8 +2916,7 @@ class IntegrationsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.getConfigurationProducts(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return integrations_methods.getConfigurationProducts(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates an integration store and handles free or paid billing plans. Supply `name`, `integrationConfigurationId`, and `integrationProductIdOrSlug`; omit `billingPlanId` to discover a free plan or provide one for a paid resource. Use `paymentMethodId` when you need to select a payment method other than the default.
@@ -4243,53 +2931,30 @@ class IntegrationsNamespace {
       SdkOptional<Map<String, dynamic>> metadata = const SdkOmitted(),
       SdkOptional<String> externalId = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> protocolSettings = const SdkOmitted(),
-      SdkOptional<CreateIntegrationStoreDirectRequestBodySource> source =
-          const SdkOmitted(),
+      SdkOptional<CreateIntegrationStoreDirectRequestBodySource> source = const SdkOmitted(),
       SdkOptional<String> billingPlanId = const SdkOmitted(),
       SdkOptional<String> paymentMethodId = const SdkOmitted(),
       SdkOptional<double> prepaymentAmountCents = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return integrations_methods.createIntegrationStoreDirect(_config,
-        name: name,
-        integrationConfigurationId: integrationConfigurationId,
-        integrationProductIdOrSlug: integrationProductIdOrSlug,
-        teamId: teamId,
-        slug: slug,
-        metadata: metadata,
-        externalId: externalId,
-        protocolSettings: protocolSettings,
-        source: source,
-        billingPlanId: billingPlanId,
-        paymentMethodId: paymentMethodId,
-        prepaymentAmountCents: prepaymentAmountCents,
-        requestOptions: requestOptions);
+    return integrations_methods.createIntegrationStoreDirect(_config, name: name, integrationConfigurationId: integrationConfigurationId, integrationProductIdOrSlug: integrationProductIdOrSlug, teamId: teamId, slug: slug, metadata: metadata, externalId: externalId, protocolSettings: protocolSettings, source: source, billingPlanId: billingPlanId, paymentMethodId: paymentMethodId, prepaymentAmountCents: prepaymentAmountCents, requestOptions: requestOptions);
   }
+
 }
 
 class MarketplaceNamespace {
   final ClientConfig _config;
   MarketplaceNamespace(ClientConfig config) : _config = config;
-
   /// Updates an integration installation's status, external identifier, billing plan, or notification. Supply only the fields you want to change; `status` must use one of the listed installation states, and sending `null` for `notification` clears it.
   ///
   /// This endpoint updates an integration installation.
   Future<void> updateInstallation(
       {required String integrationConfigurationId,
-      SdkOptional<UpdateInstallationRequestBodyStatus> status =
-          const SdkOmitted(),
+      SdkOptional<UpdateInstallationRequestBodyStatus> status = const SdkOmitted(),
       SdkOptional<String> externalId = const SdkOmitted(),
-      SdkOptional<UpdateInstallationRequestBodyBillingPlan> billingPlan =
-          const SdkOmitted(),
-      SdkOptional<UpdateInstallationRequestNotification> notification =
-          const SdkOmitted(),
+      SdkOptional<UpdateInstallationRequestBodyBillingPlan> billingPlan = const SdkOmitted(),
+      SdkOptional<UpdateInstallationRequestNotification> notification = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.updateInstallation(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        status: status,
-        externalId: externalId,
-        billingPlan: billingPlan,
-        notification: notification,
-        requestOptions: requestOptions);
+    return marketplace_methods.updateInstallation(_config, integrationConfigurationId: integrationConfigurationId, status: status, externalId: externalId, billingPlan: billingPlan, notification: notification, requestOptions: requestOptions);
   }
 
   /// Retrieves account contact information and the team name associated with an integration installation. Use the installation identifier to look up the best available contact, which can change as team members and their roles change.
@@ -4298,9 +2963,7 @@ class MarketplaceNamespace {
   Future<GetAccountInfoResponse> getAccountInfo(
       {required String integrationConfigurationId,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.getAccountInfo(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        requestOptions: requestOptions);
+    return marketplace_methods.getAccountInfo(_config, integrationConfigurationId: integrationConfigurationId, requestOptions: requestOptions);
   }
 
   /// Retrieves the role and other available information for a member of an integration installation. Use the member's user ID from the SSO OIDC token's `user_id` claim to identify the member.
@@ -4310,10 +2973,7 @@ class MarketplaceNamespace {
       {required String integrationConfigurationId,
       required String memberId,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.getMember(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        memberId: memberId,
-        requestOptions: requestOptions);
+    return marketplace_methods.getMember(_config, integrationConfigurationId: integrationConfigurationId, memberId: memberId, requestOptions: requestOptions);
   }
 
   /// Rotates an installation credential by issuing a replacement access token. Authenticate with the credential being replaced and the integration's client secret; the previous credential remains valid until you explicitly revoke it, so store the replacement before completing that step.
@@ -4324,11 +2984,7 @@ class MarketplaceNamespace {
       required String clientSecret,
       SdkOptional<String> clientId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.rotateInstallationCredential(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        clientSecret: clientSecret,
-        clientId: clientId,
-        requestOptions: requestOptions);
+    return marketplace_methods.rotateInstallationCredential(_config, integrationConfigurationId: integrationConfigurationId, clientSecret: clientSecret, clientId: clientId, requestOptions: requestOptions);
   }
 
   /// Revokes a superseded credential for an integration installation after you have rotated it. Authenticate with a live installation credential and the integration's client secret, then name the old credential in the request body; the last live credential cannot be revoked.
@@ -4340,12 +2996,7 @@ class MarketplaceNamespace {
       required String clientSecret,
       SdkOptional<String> clientId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.revokeInstallationCredential(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        token: token,
-        clientSecret: clientSecret,
-        clientId: clientId,
-        requestOptions: requestOptions);
+    return marketplace_methods.revokeInstallationCredential(_config, integrationConfigurationId: integrationConfigurationId, token: token, clientSecret: clientSecret, clientId: clientId, requestOptions: requestOptions);
   }
 
   /// Submits an event to notify Vercel about a change to an installation or one of its resources. Send an installation update when its billing plan changes outside Vercel, or a resource update when a linked resource's state changes; Vercel uses its read APIs to retrieve the updated state.
@@ -4355,10 +3006,7 @@ class MarketplaceNamespace {
       {required String integrationConfigurationId,
       required CreateEventRequestEvent event,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.createEvent(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        event: event,
-        requestOptions: requestOptions);
+    return marketplace_methods.createEvent(_config, integrationConfigurationId: integrationConfigurationId, event: event, requestOptions: requestOptions);
   }
 
   /// Lists the resources associated with an integration installation. Use the installation identifier to retrieve its resources, including each resource's partner and product identifiers and its name.
@@ -4367,9 +3015,7 @@ class MarketplaceNamespace {
   Future<GetIntegrationResourcesResponse> getIntegrationResources(
       {required String integrationConfigurationId,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.getIntegrationResources(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        requestOptions: requestOptions);
+    return marketplace_methods.getIntegrationResources(_config, integrationConfigurationId: integrationConfigurationId, requestOptions: requestOptions);
   }
 
   /// Retrieves a resource associated with an integration installation by its partner-provided ID. Use both path identifiers to scope the lookup to the installation that owns the resource.
@@ -4379,10 +3025,7 @@ class MarketplaceNamespace {
       {required String integrationConfigurationId,
       required String resourceId,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.getIntegrationResource(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        resourceId: resourceId,
-        requestOptions: requestOptions);
+    return marketplace_methods.getIntegrationResource(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, requestOptions: requestOptions);
   }
 
   /// Deletes a resource owned by an installation. Use `integrationConfigurationId` and `resourceId` to identify the installation and resource to remove. A 204 response confirms the deletion without returning a response body.
@@ -4392,10 +3035,7 @@ class MarketplaceNamespace {
       {required String integrationConfigurationId,
       required String resourceId,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.deleteIntegrationResource(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        resourceId: resourceId,
-        requestOptions: requestOptions);
+    return marketplace_methods.deleteIntegrationResource(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, requestOptions: requestOptions);
   }
 
   /// Imports or upserts a resource into an integration installation, including resources created independently in the provider's system. Use this operation to synchronize an existing resource to Vercel; for a user-initiated import, call it before redirecting the user back to Vercel.
@@ -4407,33 +3047,15 @@ class MarketplaceNamespace {
       required String productId,
       required String name,
       required ImportResourceRequestBodyStatus status,
-      SdkOptional<ImportResourceRequestBodyOwnership> ownership =
-          const SdkOmitted(),
+      SdkOptional<ImportResourceRequestBodyOwnership> ownership = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> metadata = const SdkOmitted(),
-      SdkOptional<ImportResourceRequestBodyBillingPlan> billingPlan =
-          const SdkOmitted(),
-      SdkOptional<ImportResourceRequestBodyNotification> notification =
-          const SdkOmitted(),
+      SdkOptional<ImportResourceRequestBodyBillingPlan> billingPlan = const SdkOmitted(),
+      SdkOptional<ImportResourceRequestBodyNotification> notification = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> extras = const SdkOmitted(),
-      SdkOptional<List<ImportResourceRequestBodySecretsItem>> secrets =
-          const SdkOmitted(),
-      SdkOptional<ImportResourceRequestBodyCustomClaims> customClaims =
-          const SdkOmitted(),
+      SdkOptional<List<ImportResourceRequestBodySecretsItem>> secrets = const SdkOmitted(),
+      SdkOptional<ImportResourceRequestBodyCustomClaims> customClaims = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.importResource(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        resourceId: resourceId,
-        productId: productId,
-        name: name,
-        status: status,
-        ownership: ownership,
-        metadata: metadata,
-        billingPlan: billingPlan,
-        notification: notification,
-        extras: extras,
-        secrets: secrets,
-        customClaims: customClaims,
-        requestOptions: requestOptions);
+    return marketplace_methods.importResource(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, productId: productId, name: name, status: status, ownership: ownership, metadata: metadata, billingPlan: billingPlan, notification: notification, extras: extras, secrets: secrets, customClaims: customClaims, requestOptions: requestOptions);
   }
 
   /// Updates selected properties of an existing resource in an integration installation. Send only the fields you want to change; use the path identifiers to target the resource within its installation.
@@ -4442,33 +3064,17 @@ class MarketplaceNamespace {
   Future<UpdateResourceResponse> updateResource(
       {required String integrationConfigurationId,
       required String resourceId,
-      SdkOptional<UpdateResourceRequestBodyOwnership> ownership =
-          const SdkOmitted(),
+      SdkOptional<UpdateResourceRequestBodyOwnership> ownership = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<UpdateResourceRequestBodyStatus> status = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> metadata = const SdkOmitted(),
-      SdkOptional<UpdateResourceRequestBodyBillingPlan> billingPlan =
-          const SdkOmitted(),
-      SdkOptional<UpdateResourceRequestNotification> notification =
-          const SdkOmitted(),
+      SdkOptional<UpdateResourceRequestBodyBillingPlan> billingPlan = const SdkOmitted(),
+      SdkOptional<UpdateResourceRequestNotification> notification = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> extras = const SdkOmitted(),
       SdkOptional<dynamic> secrets = const SdkOmitted(),
-      SdkOptional<UpdateResourceRequestBodyCustomClaims> customClaims =
-          const SdkOmitted(),
+      SdkOptional<UpdateResourceRequestBodyCustomClaims> customClaims = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.updateResource(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        resourceId: resourceId,
-        ownership: ownership,
-        name: name,
-        status: status,
-        metadata: metadata,
-        billingPlan: billingPlan,
-        notification: notification,
-        extras: extras,
-        secrets: secrets,
-        customClaims: customClaims,
-        requestOptions: requestOptions);
+    return marketplace_methods.updateResource(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, ownership: ownership, name: name, status: status, metadata: metadata, billingPlan: billingPlan, notification: notification, extras: extras, secrets: secrets, customClaims: customClaims, requestOptions: requestOptions);
   }
 
   /// Submits billing and usage data for an installation. Send the latest data at least daily, and ideally hourly, using the installation's billing period, billing entries, and usage metrics. Authorize the request with the installation's `credentials.access_token`.
@@ -4482,14 +3088,7 @@ class MarketplaceNamespace {
       required dynamic billing,
       required List<SubmitBillingDataRequestBodyUsageItem> usage,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.submitBillingData(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        timestamp: timestamp,
-        eod: eod,
-        period: period,
-        billing: billing,
-        usage: usage,
-        requestOptions: requestOptions);
+    return marketplace_methods.submitBillingData(_config, integrationConfigurationId: integrationConfigurationId, timestamp: timestamp, eod: eod, period: period, billing: billing, usage: usage, requestOptions: requestOptions);
   }
 
   /// Submits an invoice for an installation to the billing system for delivery to the customer. Include the invoice date, billing period, and invoice items; the resource must be eligible for the selected active subscription plan during that period. Send interim subscription usage data hourly before submitting the invoice.
@@ -4502,22 +3101,11 @@ class MarketplaceNamespace {
       required List<SubmitInvoiceRequestBodyItemsItem> items,
       SdkOptional<String> externalId = const SdkOmitted(),
       SdkOptional<String> memo = const SdkOmitted(),
-      SdkOptional<List<SubmitInvoiceRequestBodyDiscountsItem>> discounts =
-          const SdkOmitted(),
+      SdkOptional<List<SubmitInvoiceRequestBodyDiscountsItem>> discounts = const SdkOmitted(),
       SdkOptional<bool> final_ = const SdkOmitted(),
       SdkOptional<SubmitInvoiceRequestBodyTest> test = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.submitInvoice(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        invoiceDate: invoiceDate,
-        period: period,
-        items: items,
-        externalId: externalId,
-        memo: memo,
-        discounts: discounts,
-        final_: final_,
-        test: test,
-        requestOptions: requestOptions);
+    return marketplace_methods.submitInvoice(_config, integrationConfigurationId: integrationConfigurationId, invoiceDate: invoiceDate, period: period, items: items, externalId: externalId, memo: memo, discounts: discounts, final_: final_, test: test, requestOptions: requestOptions);
   }
 
   /// Finalizes an installation after a customer requests uninstall and you have submitted any remaining invoices. Finalization indicates that you will submit no further invoices and allows uninstall to proceed after outstanding invoices are paid. Authorize the request with the installation's `credentials.access_token`.
@@ -4526,9 +3114,7 @@ class MarketplaceNamespace {
   Future<void> finalizeInstallation(
       {required String integrationConfigurationId,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.finalizeInstallation(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        requestOptions: requestOptions);
+    return marketplace_methods.finalizeInstallation(_config, integrationConfigurationId: integrationConfigurationId, requestOptions: requestOptions);
   }
 
   /// Retrieves invoice details and status for an installation. Use the installation and invoice identifiers to select the invoice, and use the returned state and timestamps to track its billing lifecycle. Consult billing events through webhooks when you need invoice event notifications.
@@ -4538,10 +3124,7 @@ class MarketplaceNamespace {
       {required String integrationConfigurationId,
       required String invoiceId,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.getInvoice(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        invoiceId: invoiceId,
-        requestOptions: requestOptions);
+    return marketplace_methods.getInvoice(_config, integrationConfigurationId: integrationConfigurationId, invoiceId: invoiceId, requestOptions: requestOptions);
   }
 
   /// Submits a refund request for an invoice previously created through the invoice submission operation. Provide the refund reason and amount along with the `refund` action. The requested amount cannot exceed the invoice total.
@@ -4554,13 +3137,7 @@ class MarketplaceNamespace {
       required String reason,
       required String total,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.updateInvoice(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        invoiceId: invoiceId,
-        action: action,
-        reason: reason,
-        total: total,
-        requestOptions: requestOptions);
+    return marketplace_methods.updateInvoice(_config, integrationConfigurationId: integrationConfigurationId, invoiceId: invoiceId, action: action, reason: reason, total: total, requestOptions: requestOptions);
   }
 
   /// Submits prepayment credit balances for an installation. Send the latest balances at least daily, and ideally hourly, so the billing system can use their USD values to evaluate automatic purchase thresholds. Authorize the request with the installation's `credentials.access_token`.
@@ -4571,11 +3148,7 @@ class MarketplaceNamespace {
       required String timestamp,
       required List<SubmitPrepaymentBalancesRequestBodyBalancesItem> balances,
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.submitPrepaymentBalances(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        timestamp: timestamp,
-        balances: balances,
-        requestOptions: requestOptions);
+    return marketplace_methods.submitPrepaymentBalances(_config, integrationConfigurationId: integrationConfigurationId, timestamp: timestamp, balances: balances, requestOptions: requestOptions);
   }
 
   /// Replaces the secrets for a resource connected to an installation. This operation is deprecated and has been replaced by PUT /v1/installations/{integrationConfigurationId}/resources/{resourceId}/secrets; existing connected projects may continue using old secrets until you redeploy them. Use `partial` to update only the supplied secrets instead of replacing the full set.
@@ -4590,13 +3163,7 @@ class MarketplaceNamespace {
       required List<UpdateResourceSecretsRequestBodySecretsItem> secrets,
       SdkOptional<bool> partial = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.updateResourceSecrets(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        integrationProductIdOrSlug: integrationProductIdOrSlug,
-        resourceId: resourceId,
-        secrets: secrets,
-        partial: partial,
-        requestOptions: requestOptions);
+    return marketplace_methods.updateResourceSecrets(_config, integrationConfigurationId: integrationConfigurationId, integrationProductIdOrSlug: integrationProductIdOrSlug, resourceId: resourceId, secrets: secrets, partial: partial, requestOptions: requestOptions);
   }
 
   /// Replaces the secrets for a resource connected to an installation. Existing connected projects may continue using old secrets because they are not redeployed automatically, while new project connections use the updated secrets. Set `partial` to `true` to overwrite only the supplied secrets rather than replacing all secrets.
@@ -4608,12 +3175,7 @@ class MarketplaceNamespace {
       required List<UpdateResourceSecretsByIdRequestBodySecretsItem> secrets,
       SdkOptional<bool> partial = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return marketplace_methods.updateResourceSecretsById(_config,
-        integrationConfigurationId: integrationConfigurationId,
-        resourceId: resourceId,
-        secrets: secrets,
-        partial: partial,
-        requestOptions: requestOptions);
+    return marketplace_methods.updateResourceSecretsById(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, secrets: secrets, partial: partial, requestOptions: requestOptions);
   }
 
   /// Creates one or more experimentation items for an integration resource. Supply an `items` array whose entries identify each item with `id`, `slug`, and `origin`; each item can also include category and descriptive metadata.
@@ -4623,17 +3185,9 @@ class MarketplaceNamespace {
       createInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItems(
           {required String integrationConfigurationId,
           required String resourceId,
-          required List<
-                  CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItem>
-              items,
+          required List<CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestBodyItemsItem> items,
           RequestOptions? requestOptions}) async {
-    return marketplace_methods
-        .createInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItems(
-            _config,
-            integrationConfigurationId: integrationConfigurationId,
-            resourceId: resourceId,
-            items: items,
-            requestOptions: requestOptions);
+    return marketplace_methods.createInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItems(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, items: items, requestOptions: requestOptions);
   }
 
   /// Updates an existing experimentation item for an integration resource. Identify the item with `itemId` and provide its required `slug` and `origin`, along with any other fields you want to change.
@@ -4647,29 +3201,13 @@ class MarketplaceNamespace {
           required String slug,
           required String origin,
           SdkOptional<String> name = const SdkOmitted(),
-          SdkOptional<
-                  UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory>
-              category = const SdkOmitted(),
+          SdkOptional<UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestBodyCategory> category = const SdkOmitted(),
           SdkOptional<String> description = const SdkOmitted(),
           SdkOptional<bool> isArchived = const SdkOmitted(),
           SdkOptional<double> createdAt = const SdkOmitted(),
           SdkOptional<double> updatedAt = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return marketplace_methods
-        .updateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(
-            _config,
-            integrationConfigurationId: integrationConfigurationId,
-            resourceId: resourceId,
-            itemId: itemId,
-            slug: slug,
-            origin: origin,
-            name: name,
-            category: category,
-            description: description,
-            isArchived: isArchived,
-            createdAt: createdAt,
-            updatedAt: updatedAt,
-            requestOptions: requestOptions);
+    return marketplace_methods.updateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, itemId: itemId, slug: slug, origin: origin, name: name, category: category, description: description, isArchived: isArchived, createdAt: createdAt, updatedAt: updatedAt, requestOptions: requestOptions);
   }
 
   /// Deletes an experimentation item from an integration resource. Use `integrationConfigurationId`, `resourceId`, and `itemId` to identify the item to remove.
@@ -4681,13 +3219,7 @@ class MarketplaceNamespace {
           required String resourceId,
           required String itemId,
           RequestOptions? requestOptions}) async {
-    return marketplace_methods
-        .deleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(
-            _config,
-            integrationConfigurationId: integrationConfigurationId,
-            resourceId: resourceId,
-            itemId: itemId,
-            requestOptions: requestOptions);
+    return marketplace_methods.deleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemId(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, itemId: itemId, requestOptions: requestOptions);
   }
 
   /// Retrieves response metadata for a user-provided Global Config associated with an integration resource. Use this endpoint when the user has enabled Global Config syncing and you need to check the configuration without requesting its contents.
@@ -4698,12 +3230,7 @@ class MarketplaceNamespace {
           {required String integrationConfigurationId,
           required String resourceId,
           RequestOptions? requestOptions}) async {
-    return marketplace_methods
-        .headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(
-            _config,
-            integrationConfigurationId: integrationConfigurationId,
-            resourceId: resourceId,
-            requestOptions: requestOptions);
+    return marketplace_methods.headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, requestOptions: requestOptions);
   }
 
   /// Retrieves the contents of a user-provided Global Config for an integration resource. Use this endpoint when the user has enabled Global Config syncing; the response includes the configuration items, digest, and update time.
@@ -4714,12 +3241,7 @@ class MarketplaceNamespace {
           {required String integrationConfigurationId,
           required String resourceId,
           RequestOptions? requestOptions}) async {
-    return marketplace_methods
-        .getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(
-            _config,
-            integrationConfigurationId: integrationConfigurationId,
-            resourceId: resourceId,
-            requestOptions: requestOptions);
+    return marketplace_methods.getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, requestOptions: requestOptions);
   }
 
   /// Replaces the data in a user-provided Global Config for an integration resource. Use this endpoint to push configuration data when the user has enabled Global Config syncing, and provide the new value in `data`.
@@ -4731,27 +3253,20 @@ class MarketplaceNamespace {
           required String resourceId,
           required Map<String, dynamic> data,
           RequestOptions? requestOptions}) async {
-    return marketplace_methods
-        .replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(
-            _config,
-            integrationConfigurationId: integrationConfigurationId,
-            resourceId: resourceId,
-            data: data,
-            requestOptions: requestOptions);
+    return marketplace_methods.replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig(_config, integrationConfigurationId: integrationConfigurationId, resourceId: resourceId, data: data, requestOptions: requestOptions);
   }
+
 }
 
 class AuthenticationNamespace {
   final ClientConfig _config;
   AuthenticationNamespace(ClientConfig config) : _config = config;
-
   /// Exchanges an integration authorization code or refresh token for an OIDC token response. Use the authorization-code flow after receiving a `code`, or the refresh flow with a `refresh_token`; each flow requires its corresponding `grant_type` and client credentials. Do not persist the returned `id_token`, because it expires.
   ///
   /// During the autorization process, Vercel sends the user to the provider [redirectLoginUrl](https://vercel.com/docs/integrations/create-integration/submit-integration#redirect-login-url), that includes the OAuth authorization `code` parameter. The provider then calls the SSO Token Exchange endpoint with the sent code and receives the OIDC token. They log the user in based on this token and redirects the user back to the Vercel account using deep-link parameters included the redirectLoginUrl. Providers should not persist the returned `id_token` in a database since the token will expire. See [**Authentication with SSO**](https://vercel.com/docs/integrations/create-integration/marketplace-api#authentication-with-sso) for more details.
   Future<ExchangeSsoTokenResponse> exchangeSsoToken(
       {required dynamic body, RequestOptions? requestOptions}) async {
-    return authentication_methods.exchangeSsoToken(_config,
-        body: body, requestOptions: requestOptions);
+    return authentication_methods.exchangeSsoToken(_config, body: body, requestOptions: requestOptions);
   }
 
   /// Lists authentication tokens for the authenticated user. The response includes token records and pagination metadata for reviewing the user's tokens.
@@ -4759,8 +3274,7 @@ class AuthenticationNamespace {
   /// Retrieve a list of the current User's authentication tokens.
   Future<ListAuthTokensResponse> listAuthTokens(
       {RequestOptions? requestOptions}) async {
-    return authentication_methods.listAuthTokens(_config,
-        requestOptions: requestOptions);
+    return authentication_methods.listAuthTokens(_config, requestOptions: requestOptions);
   }
 
   /// Creates an authentication token for the authenticated user, optionally scoped to a team or project and with an optional expiration time. Supply `name` to identify the token. Save the returned `bearerToken` when you create it, because the API provides its value only in this response.
@@ -4773,13 +3287,7 @@ class AuthenticationNamespace {
       SdkOptional<double> expiresAt = const SdkOmitted(),
       SdkOptional<String> projectId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return authentication_methods.createAuthToken(_config,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        expiresAt: expiresAt,
-        projectId: projectId,
-        requestOptions: requestOptions);
+    return authentication_methods.createAuthToken(_config, name: name, teamId: teamId, slug: slug, expiresAt: expiresAt, projectId: projectId, requestOptions: requestOptions);
   }
 
   /// Retrieves metadata for an authentication token belonging to the authenticated user. Use `tokenId` to identify the token, or pass `current` to retrieve metadata for the token used to authenticate the request.
@@ -4787,8 +3295,7 @@ class AuthenticationNamespace {
   /// Retrieve metadata about an authentication token belonging to the currently authenticated User.
   Future<GetAuthTokenResponse> getAuthToken(
       {required String tokenId, RequestOptions? requestOptions}) async {
-    return authentication_methods.getAuthToken(_config,
-        tokenId: tokenId, requestOptions: requestOptions);
+    return authentication_methods.getAuthToken(_config, tokenId: tokenId, requestOptions: requestOptions);
   }
 
   /// Deletes an authentication token, invalidating it for future HTTP requests. Pass `current` as `tokenId` to invalidate the token used to authenticate the request; the logout parameters apply only when deleting that token.
@@ -4797,46 +3304,33 @@ class AuthenticationNamespace {
   Future<DeleteAuthTokenResponse> deleteAuthToken(
       {required String tokenId,
       SdkOptional<DeleteAuthTokenReason> reason = const SdkOmitted(),
-      SdkOptional<DeleteAuthTokenLogoutSource> logoutSource =
-          const SdkOmitted(),
+      SdkOptional<DeleteAuthTokenLogoutSource> logoutSource = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return authentication_methods.deleteAuthToken(_config,
-        tokenId: tokenId,
-        reason: reason,
-        logoutSource: logoutSource,
-        requestOptions: requestOptions);
+    return authentication_methods.deleteAuthToken(_config, tokenId: tokenId, reason: reason, logoutSource: logoutSource, requestOptions: requestOptions);
   }
+
 }
 
 class ApiKeysNamespace {
   final ClientConfig _config;
   ApiKeysNamespace(ClientConfig config) : _config = config;
-
   /// Creates an API key with a purpose that restricts how the key can be used. Set `purpose` and optionally scope the key to a project, assign a name or expiration, or configure AI Gateway quota settings. Save the returned `apiKeyString` securely because it is provided only in this response and cannot be retrieved again.
   Future<CreateApiKeysResponse> create(
       {required String purpose,
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<double> expiresAt = const SdkOmitted(),
-      SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota> aiGatewayQuota =
-          const SdkOmitted(),
+      SdkOptional<CreateApiKeysRequestBodyAiGatewayQuota> aiGatewayQuota = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> metadata = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return api_keys_methods.createApiKeys(_config,
-        purpose: purpose,
-        projectId: projectId,
-        name: name,
-        expiresAt: expiresAt,
-        aiGatewayQuota: aiGatewayQuota,
-        metadata: metadata,
-        requestOptions: requestOptions);
+    return api_keys_methods.createApiKeys(_config, purpose: purpose, projectId: projectId, name: name, expiresAt: expiresAt, aiGatewayQuota: aiGatewayQuota, metadata: metadata, requestOptions: requestOptions);
   }
+
 }
 
 class KmsNamespace {
   final ClientConfig _config;
   KmsNamespace(ClientConfig config) : _config = config;
-
   /// Signs a base64-encoded message with an issuer's active KMS signing key. Authenticate with a Vercel OIDC token in the `Authorization` header, and ensure the issuer's policies allow the workload to sign. The response identifies the signing key and provides the standard-base64 signature over the decoded message bytes.
   ///
   /// Sign a raw message with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. The response `signature` is standard-base64 of the raw signature over the decoded message bytes. `keyId`, `algorithm`, and `fingerprint` identify the signing key in the issuer's JWKS.
@@ -4844,8 +3338,7 @@ class KmsNamespace {
       {required String issuerId,
       required String message,
       RequestOptions? requestOptions}) async {
-    return kms_methods.signKmsMessage(_config,
-        issuerId: issuerId, message: message, requestOptions: requestOptions);
+    return kms_methods.signKmsMessage(_config, issuerId: issuerId, message: message, requestOptions: requestOptions);
   }
 
   /// Signs a JWT with an issuer's active KMS signing key. Authenticate with a Vercel OIDC token in the `Authorization` header, and ensure the issuer's policies allow the workload to sign. You can provide claims and additional token headers, or omit them to sign a token with default settings.
@@ -4857,12 +3350,7 @@ class KmsNamespace {
       SdkOptional<Map<String, dynamic>> headers = const SdkOmitted(),
       SdkOptional<double?> ttl = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.signKmsToken(_config,
-        issuerId: issuerId,
-        claims: claims,
-        headers: headers,
-        ttl: ttl,
-        requestOptions: requestOptions);
+    return kms_methods.signKmsToken(_config, issuerId: issuerId, claims: claims, headers: headers, ttl: ttl, requestOptions: requestOptions);
   }
 
   /// Lists KMS issuers belonging to the authenticated user's team. Use `limit` to control the page size and `next` to continue from a previous page; `teamId` or `slug` can scope the request to a team.
@@ -4874,12 +3362,7 @@ class KmsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.listKmsIssuers(_config,
-        limit: limit,
-        next: next,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return kms_methods.listKmsIssuers(_config, limit: limit, next: next, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a KMS issuer for the authenticated user's team to own asymmetric signing keys. Supply `name` and optionally configure the signing `algorithm`, claims validation schema, policy, or imported private key. The response includes the issuer and its signing keys.
@@ -4889,23 +3372,13 @@ class KmsNamespace {
       {required String name,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateKmsIssuerRequestBodyAlgorithm> algorithm =
-          const SdkOmitted(),
+      SdkOptional<CreateKmsIssuerRequestBodyAlgorithm> algorithm = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> claimsSchema = const SdkOmitted(),
       SdkOptional<CreateKmsIssuerRequestPolicy> policy = const SdkOmitted(),
       SdkOptional<String> importKey = const SdkOmitted(),
       SdkOptional<String> importKeyId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.createKmsIssuer(_config,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        algorithm: algorithm,
-        claimsSchema: claimsSchema,
-        policy: policy,
-        importKey: importKey,
-        importKeyId: importKeyId,
-        requestOptions: requestOptions);
+    return kms_methods.createKmsIssuer(_config, name: name, teamId: teamId, slug: slug, algorithm: algorithm, claimsSchema: claimsSchema, policy: policy, importKey: importKey, importKeyId: importKeyId, requestOptions: requestOptions);
   }
 
   /// Creates a signing key for a KMS issuer. Use `activation` to choose automatic or manual activation, and optionally configure the grace period before the previous key is revoked. For manual activation, use the activate endpoint after the new key is ready.
@@ -4915,23 +3388,13 @@ class KmsNamespace {
       {required String issuerId,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateKmsSigningKeyRequestBodyActivation> activation =
-          const SdkOmitted(),
+      SdkOptional<CreateKmsSigningKeyRequestBodyActivation> activation = const SdkOmitted(),
       SdkOptional<double> revokePreviousAfterHours = const SdkOmitted(),
       SdkOptional<dynamic> revokePreviousAt = const SdkOmitted(),
       SdkOptional<String> importKey = const SdkOmitted(),
       SdkOptional<String> importKeyId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.createKmsSigningKey(_config,
-        issuerId: issuerId,
-        teamId: teamId,
-        slug: slug,
-        activation: activation,
-        revokePreviousAfterHours: revokePreviousAfterHours,
-        revokePreviousAt: revokePreviousAt,
-        importKey: importKey,
-        importKeyId: importKeyId,
-        requestOptions: requestOptions);
+    return kms_methods.createKmsSigningKey(_config, issuerId: issuerId, teamId: teamId, slug: slug, activation: activation, revokePreviousAfterHours: revokePreviousAfterHours, revokePreviousAt: revokePreviousAt, importKey: importKey, importKeyId: importKeyId, requestOptions: requestOptions);
   }
 
   /// Activates a pending signing key so the issuer begins signing with it. Optionally set `revokePreviousAfterHours` to control how long the previously active key remains in use after activation. Use the key identifier returned when the signing key was created.
@@ -4944,13 +3407,7 @@ class KmsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<double> revokePreviousAfterHours = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.activateKmsSigningKey(_config,
-        issuerId: issuerId,
-        keyId: keyId,
-        teamId: teamId,
-        slug: slug,
-        revokePreviousAfterHours: revokePreviousAfterHours,
-        requestOptions: requestOptions);
+    return kms_methods.activateKmsSigningKey(_config, issuerId: issuerId, keyId: keyId, teamId: teamId, slug: slug, revokePreviousAfterHours: revokePreviousAfterHours, requestOptions: requestOptions);
   }
 
   /// Revokes a signing key immediately when it is already scheduled for revocation. Identify the issuer and key with `issuerId` and `keyId`. The response contains the updated issuer and its signing keys.
@@ -4962,12 +3419,7 @@ class KmsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.revokeKmsSigningKey(_config,
-        issuerId: issuerId,
-        keyId: keyId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return kms_methods.revokeKmsSigningKey(_config, issuerId: issuerId, keyId: keyId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a KMS issuer by its identifier. Use a team bearer token for issuer management access or an OIDC token authorized by one of the issuer's policies for signing access. An OIDC-authorized response omits policies because that token does not grant management access.
@@ -4978,11 +3430,7 @@ class KmsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.getKmsIssuer(_config,
-        issuerId: issuerId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return kms_methods.getKmsIssuer(_config, issuerId: issuerId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a KMS issuer's name or claims schema. Include one or both fields to change; pass `null` for `claimsSchema` to remove the schema. The response contains the updated issuer.
@@ -4995,13 +3443,7 @@ class KmsNamespace {
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<Map<String, Object?>?> claimsSchema = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.updateKmsIssuer(_config,
-        issuerId: issuerId,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        claimsSchema: claimsSchema,
-        requestOptions: requestOptions);
+    return kms_methods.updateKmsIssuer(_config, issuerId: issuerId, teamId: teamId, slug: slug, name: name, claimsSchema: claimsSchema, requestOptions: requestOptions);
   }
 
   /// Deletes a KMS issuer and its signing keys. Use `issuerId` to identify the issuer and optionally provide `teamId` or `slug` to select the team scope. The operation removes the issuer and its associated keys.
@@ -5012,11 +3454,7 @@ class KmsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.deleteKmsIssuer(_config,
-        issuerId: issuerId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return kms_methods.deleteKmsIssuer(_config, issuerId: issuerId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a policy on a KMS issuer that grants a project's deployments permission to sign with the issuer. Supply `kind`, `projectId`, and at least one `environments` entry; optionally include `tokenClaims` for claims to add to signed tokens. The response returns the created policy.
@@ -5031,15 +3469,7 @@ class KmsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<Map<String, Object?>> tokenClaims = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.createKmsIssuerPolicy(_config,
-        issuerId: issuerId,
-        kind: kind,
-        projectId: projectId,
-        environments: environments,
-        teamId: teamId,
-        slug: slug,
-        tokenClaims: tokenClaims,
-        requestOptions: requestOptions);
+    return kms_methods.createKmsIssuerPolicy(_config, issuerId: issuerId, kind: kind, projectId: projectId, environments: environments, teamId: teamId, slug: slug, tokenClaims: tokenClaims, requestOptions: requestOptions);
   }
 
   /// Updates an existing KMS issuer policy's environments or token claims. Use `environments` to change where a project-grant policy applies, and `tokenClaims` to change the claims included in signed JWTs. Pass `null` for `tokenClaims` to remove the claims.
@@ -5054,15 +3484,7 @@ class KmsNamespace {
       SdkOptional<List<String>> environments = const SdkOmitted(),
       SdkOptional<Map<String, Object?>?> tokenClaims = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.updateKmsIssuerPolicy(_config,
-        issuerId: issuerId,
-        kind: kind,
-        policyKey: policyKey,
-        teamId: teamId,
-        slug: slug,
-        environments: environments,
-        tokenClaims: tokenClaims,
-        requestOptions: requestOptions);
+    return kms_methods.updateKmsIssuerPolicy(_config, issuerId: issuerId, kind: kind, policyKey: policyKey, teamId: teamId, slug: slug, environments: environments, tokenClaims: tokenClaims, requestOptions: requestOptions);
   }
 
   /// Deletes a policy from a KMS issuer. Use `issuerId`, `kind`, and `policyKey` to identify the issuer policy, and use `teamId` or `slug` to specify the team context when needed.
@@ -5075,20 +3497,14 @@ class KmsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return kms_methods.deleteKmsIssuerPolicy(_config,
-        issuerId: issuerId,
-        kind: kind,
-        policyKey: policyKey,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return kms_methods.deleteKmsIssuerPolicy(_config, issuerId: issuerId, kind: kind, policyKey: policyKey, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class LogsNamespace {
   final ClientConfig _config;
   LogsNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves a stream of runtime logs for a deployment in a project. Use `projectId` and `deploymentId` to identify the deployment, and optionally set `teamId` or `slug` to specify the team context.
   ///
   /// Returns a stream of logs for a given deployment.
@@ -5098,19 +3514,14 @@ class LogsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return logs_methods.getRuntimeLogs(_config,
-        projectId: projectId,
-        deploymentId: deploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return logs_methods.getRuntimeLogs(_config, projectId: projectId, deploymentId: deploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class MicrofrontendsNamespace {
   final ClientConfig _config;
   MicrofrontendsNamespace(ClientConfig config) : _config = config;
-
   /// Lists the microfrontends group IDs for a team. Use `teamId` or `slug` to specify which team's groups to retrieve.
   ///
   /// Get the microfrontends group IDs for a team.
@@ -5118,8 +3529,7 @@ class MicrofrontendsNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return microfrontends_methods.getMicrofrontendsGroups(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return microfrontends_methods.getMicrofrontendsGroups(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the projects in a microfrontends group. Use `groupId` to identify the group, and optionally use `teamId` or `slug` to specify the team context.
@@ -5130,11 +3540,7 @@ class MicrofrontendsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return microfrontends_methods.getMicrofrontendsInGroup(_config,
-        groupId: groupId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return microfrontends_methods.getMicrofrontendsInGroup(_config, groupId: groupId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the microfrontends configuration for a specific deployment. Supply the deployment identifier and, when needed, `teamId` or `slug` to scope the request to a team.
@@ -5145,26 +3551,19 @@ class MicrofrontendsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return microfrontends_methods.getMicrofrontendsConfig(_config,
-        deploymentId: deploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return microfrontends_methods.getMicrofrontendsConfig(_config, deploymentId: deploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the production microfrontends configuration for a project. Identify the project with `projectIdOrName` and use `teamId` or `slug` to scope the request to a team when needed.
   ///
   /// Get the microfrontends config for a project by ID or name.
-  Future<GetMicrofrontendsConfigForProjectResponse> getConfigForProject(
-      {required String projectIdOrName,
-      SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<String> slug = const SdkOmitted(),
-      RequestOptions? requestOptions}) async {
-    return microfrontends_methods.getMicrofrontendsConfigForProject(_config,
-        projectIdOrName: projectIdOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Future<GetMicrofrontendsConfigForProjectResponse>
+      getConfigForProject(
+          {required String projectIdOrName,
+          SdkOptional<String> teamId = const SdkOmitted(),
+          SdkOptional<String> slug = const SdkOmitted(),
+          RequestOptions? requestOptions}) async {
+    return microfrontends_methods.getMicrofrontendsConfigForProject(_config, projectIdOrName: projectIdOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a microfrontends group and attaches multiple projects in one request. Provide `groupName`, a `defaultApp` with a project ID, and `otherApplications` with the additional project IDs and optional routes.
@@ -5173,29 +3572,19 @@ class MicrofrontendsNamespace {
   Future<CreateMicrofrontendsGroupWithApplicationsResponse>
       createGroupWithApplications(
           {required String groupName,
-          required CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp
-              defaultApp,
-          required List<
-                  CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem>
-              otherApplications,
+          required CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp defaultApp,
+          required List<CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem> otherApplications,
           SdkOptional<String> teamId = const SdkOmitted(),
           SdkOptional<String> slug = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return microfrontends_methods.createMicrofrontendsGroupWithApplications(
-        _config,
-        groupName: groupName,
-        defaultApp: defaultApp,
-        otherApplications: otherApplications,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return microfrontends_methods.createMicrofrontendsGroupWithApplications(_config, groupName: groupName, defaultApp: defaultApp, otherApplications: otherApplications, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class ObservabilityNamespace {
   final ClientConfig _config;
   ObservabilityNamespace(ClientConfig config) : _config = config;
-
   /// Lists the projects currently configured as disabled for Observability Plus on a team. Use this request to review which projects have the disabled setting and when that setting was applied.
   ///
   /// Lists the projects that are currently configured as disabled for Observability Plus on a team.
@@ -5204,8 +3593,7 @@ class ObservabilityNamespace {
           {SdkOptional<String> teamId = const SdkOmitted(),
           SdkOptional<String> slug = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return observability_methods.getObservabilityConfigurationProjects(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return observability_methods.getObservabilityConfigurationProjects(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates whether Observability Plus is disabled for a project. Identify the project with `projectIdOrName` and set `disabled` to the desired boolean value.
@@ -5218,13 +3606,7 @@ class ObservabilityNamespace {
           SdkOptional<String> teamId = const SdkOmitted(),
           SdkOptional<String> slug = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return observability_methods.updateObservabilityConfigurationProject(
-        _config,
-        projectIdOrName: projectIdOrName,
-        disabled: disabled,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return observability_methods.updateObservabilityConfigurationProject(_config, projectIdOrName: projectIdOrName, disabled: disabled, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Runs an Observability query for a metric and an owner or project scope. Provide `metric` and `scope`, then use optional aggregation, grouping, filtering, and time settings to shape the results.
@@ -5236,49 +3618,32 @@ class ObservabilityNamespace {
       SdkOptional<String> filter = const SdkOmitted(),
       SdkOptional<double> limit = const SdkOmitted(),
       SdkOptional<String> orderBy = const SdkOmitted(),
-      SdkOptional<CreateObservabilityQueryRequestBodyOrderDirection>
-          orderDirection = const SdkOmitted(),
+      SdkOptional<CreateObservabilityQueryRequestBodyOrderDirection> orderDirection = const SdkOmitted(),
       SdkOptional<Map<String, dynamic>> granularity = const SdkOmitted(),
       SdkOptional<String> startTime = const SdkOmitted(),
       SdkOptional<String> endTime = const SdkOmitted(),
       SdkOptional<String> bucketTimezone = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return observability_methods.createObservabilityQuery(_config,
-        metric: metric,
-        scope: scope,
-        aggregation: aggregation,
-        groupBy: groupBy,
-        filter: filter,
-        limit: limit,
-        orderBy: orderBy,
-        orderDirection: orderDirection,
-        granularity: granularity,
-        startTime: startTime,
-        endTime: endTime,
-        bucketTimezone: bucketTimezone,
-        requestOptions: requestOptions);
+    return observability_methods.createObservabilityQuery(_config, metric: metric, scope: scope, aggregation: aggregation, groupBy: groupBy, filter: filter, limit: limit, orderBy: orderBy, orderDirection: orderDirection, granularity: granularity, startTime: startTime, endTime: endTime, bucketTimezone: bucketTimezone, requestOptions: requestOptions);
   }
 
   /// Retrieves the available Observability metrics schema. Use the metric IDs and descriptions in the returned list to identify metrics for querying.
   Future<GetObservabilitySchemaResponse> getSchema(
       {RequestOptions? requestOptions}) async {
-    return observability_methods.getObservabilitySchema(_config,
-        requestOptions: requestOptions);
+    return observability_methods.getObservabilitySchema(_config, requestOptions: requestOptions);
   }
 
   /// Retrieves the Observability schema for a specific metric. Supply `metricId` to get the metric's supported aggregations, dimensions, unit, and default aggregation.
-  Future<List<GetObservabilitySchemaByMetricIdResponseItem>>
-      getSchemaByMetricId(
-          {required String metricId, RequestOptions? requestOptions}) async {
-    return observability_methods.getObservabilitySchemaByMetricId(_config,
-        metricId: metricId, requestOptions: requestOptions);
+  Future<List<GetObservabilitySchemaByMetricIdResponseItem>> getSchemaByMetricId(
+      {required String metricId, RequestOptions? requestOptions}) async {
+    return observability_methods.getObservabilitySchemaByMetricId(_config, metricId: metricId, requestOptions: requestOptions);
   }
+
 }
 
 class ProjectMembersNamespace {
   final ClientConfig _config;
   ProjectMembersNamespace(ClientConfig config) : _config = config;
-
   /// Lists members of a project, with pagination and optional filtering by addition time or member details. Use `limit` to control the number of members returned and `search` to match names, usernames, or email addresses.
   ///
   /// Lists all members of a project.
@@ -5291,15 +3656,7 @@ class ProjectMembersNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_members_methods.getProjectMembers(_config,
-        idOrName: idOrName,
-        limit: limit,
-        since: since,
-        until: until,
-        search: search,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return project_members_methods.getProjectMembers(_config, idOrName: idOrName, limit: limit, since: since, until: until, search: search, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Adds a member to a project with a specified project role. Identify the member by `uid`, `username`, or `email`, and choose one of the supported roles.
@@ -5314,15 +3671,7 @@ class ProjectMembersNamespace {
       SdkOptional<String> username = const SdkOmitted(),
       SdkOptional<String> email = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_members_methods.addProjectMember(_config,
-        idOrName: idOrName,
-        role: role,
-        teamId: teamId,
-        slug: slug,
-        uid: uid,
-        username: username,
-        email: email,
-        requestOptions: requestOptions);
+    return project_members_methods.addProjectMember(_config, idOrName: idOrName, role: role, teamId: teamId, slug: slug, uid: uid, username: username, email: email, requestOptions: requestOptions);
   }
 
   /// Removes a member from a specific project. Use `idOrName` to identify the project and `uid` to identify the member to remove. The response includes the project identifier.
@@ -5334,19 +3683,14 @@ class ProjectMembersNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_members_methods.removeProjectMember(_config,
-        idOrName: idOrName,
-        uid: uid,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return project_members_methods.removeProjectMember(_config, idOrName: idOrName, uid: uid, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class ProjectRoutesNamespace {
   final ClientConfig _config;
   ProjectRoutesNamespace(ClientConfig config) : _config = config;
-
   /// Lists routing rules for a project, with options to search, filter by route type, or compare staged changes with production. Use `q` to search by name, ID, or pattern, and `filter` to select a route type. Set `diff` to compare changes; the response can include a diff count and version information.
   ///
   /// Get the routing rules for a project. Supports searching by name/ID/pattern, filtering by route type, and diffing staged changes against production.
@@ -5359,15 +3703,7 @@ class ProjectRoutesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.getRoutes(_config,
-        projectId: projectId,
-        versionId: versionId,
-        q: q,
-        filter: filter,
-        diff: diff,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return project_routes_methods.getRoutes(_config, projectId: projectId, versionId: versionId, q: q, filter: filter, diff: diff, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Stages routing rules for a project and returns the new staged version. Set `overwrite` to replace all existing rules; otherwise, submitted rules are merged with existing rules by ID. Each item in `routes` must include an `id`, `name`, and route configuration with `src`.
@@ -5378,16 +3714,9 @@ class ProjectRoutesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> overwrite = const SdkOmitted(),
-      SdkOptional<List<StageRoutesRequestBodyRoutesItem>> routes =
-          const SdkOmitted(),
+      SdkOptional<List<StageRoutesRequestBodyRoutesItem>> routes = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.stageRoutes(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        overwrite: overwrite,
-        routes: routes,
-        requestOptions: requestOptions);
+    return project_routes_methods.stageRoutes(_config, projectId: projectId, teamId: teamId, slug: slug, overwrite: overwrite, routes: routes, requestOptions: requestOptions);
   }
 
   /// Adds a routing rule to a project and stages a new routing-rule version. Supply a `route` with its `name` and route configuration; the route configuration must include `src`. Use `position` to choose where to insert the rule, or omit it to add the rule at the end.
@@ -5400,13 +3729,7 @@ class ProjectRoutesNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<AddRouteRequestBodyPosition> position = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.addRoute(_config,
-        projectId: projectId,
-        route: route,
-        teamId: teamId,
-        slug: slug,
-        position: position,
-        requestOptions: requestOptions);
+    return project_routes_methods.addRoute(_config, projectId: projectId, route: route, teamId: teamId, slug: slug, position: position, requestOptions: requestOptions);
   }
 
   /// Deletes one or more routing rules from a project by ID and stages a new version with those rules removed. Supply the IDs in `routeIds`; the array must contain at least one route ID. The response includes the number of deleted rules and the staged version.
@@ -5418,12 +3741,7 @@ class ProjectRoutesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.deleteRoutes(_config,
-        projectId: projectId,
-        routeIds: routeIds,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return project_routes_methods.deleteRoutes(_config, projectId: projectId, routeIds: routeIds, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a routing rule in a project by replacing it or restoring its value from the current production version. Supply `route` with the complete replacement rule, or set `restore` to restore the production value. The update stages a new routing-rule version.
@@ -5437,14 +3755,7 @@ class ProjectRoutesNamespace {
       SdkOptional<EditRouteRequestBodyRoute> route = const SdkOmitted(),
       SdkOptional<bool> restore = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.editRoute(_config,
-        projectId: projectId,
-        routeId: routeId,
-        teamId: teamId,
-        slug: slug,
-        route: route,
-        restore: restore,
-        requestOptions: requestOptions);
+    return project_routes_methods.editRoute(_config, projectId: projectId, routeId: routeId, teamId: teamId, slug: slug, route: route, restore: restore, requestOptions: requestOptions);
   }
 
   /// Generates a suggested routing-rule configuration from a natural-language description. Provide the request in `prompt`, which can be up to 2000 characters, and optionally include `currentRoute` as context. Review the suggested route before saving it with a routing-rule operation.
@@ -5455,16 +3766,9 @@ class ProjectRoutesNamespace {
       required String prompt,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<GenerateRouteRequestBodyCurrentRoute> currentRoute =
-          const SdkOmitted(),
+      SdkOptional<GenerateRouteRequestBodyCurrentRoute> currentRoute = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.generateRoute(_config,
-        projectId: projectId,
-        prompt: prompt,
-        teamId: teamId,
-        slug: slug,
-        currentRoute: currentRoute,
-        requestOptions: requestOptions);
+    return project_routes_methods.generateRoute(_config, projectId: projectId, prompt: prompt, teamId: teamId, slug: slug, currentRoute: currentRoute, requestOptions: requestOptions);
   }
 
   /// Lists the version history for a project's routing rules. The results include the staging version, when one exists, followed by production versions in descending recency. Use `isStaging` to identify the staged version and `isLive` to identify the current production version.
@@ -5475,11 +3779,7 @@ class ProjectRoutesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.getRouteVersions(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return project_routes_methods.getRouteVersions(_config, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Promotes staged routing rules to production, restores an earlier production version, or discards staged changes. Supply the version `id` and choose an `action` of `promote`, `restore`, or `discard`. The response returns the resulting routing-rule version.
@@ -5492,20 +3792,14 @@ class ProjectRoutesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return project_routes_methods.updateRouteVersions(_config,
-        projectId: projectId,
-        id: id,
-        action: action,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return project_routes_methods.updateRouteVersions(_config, projectId: projectId, id: id, action: action, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class ProjectsNamespace {
   final ClientConfig _config;
   ProjectsNamespace(ClientConfig config) : _config = config;
-
   /// Lists projects belonging to the authenticated user or a team, with pagination and filters for project updates, repositories, configuration, and build settings. Use `from`, `since`, and `until` to filter by update time, or `search` to match project names. The `teamId` or `slug` query parameter scopes the request to a team.
   ///
   /// Allows to retrieve the list of projects of the authenticated user or team. The list will be paginated and the provided query parameters allow filtering the returned projects.
@@ -5513,8 +3807,7 @@ class ProjectsNamespace {
       {SdkOptional<String> from = const SdkOmitted(),
       SdkOptional<double> since = const SdkOmitted(),
       SdkOptional<double> until = const SdkOmitted(),
-      SdkOptional<ListProjectsGitForkProtection> gitForkProtection =
-          const SdkOmitted(),
+      SdkOptional<ListProjectsGitForkProtection> gitForkProtection = const SdkOmitted(),
       SdkOptional<String> limit = const SdkOmitted(),
       SdkOptional<String> search = const SdkOmitted(),
       SdkOptional<String> repo = const SdkOmitted(),
@@ -5524,37 +3817,14 @@ class ProjectsNamespace {
       SdkOptional<String> edgeConfigId = const SdkOmitted(),
       SdkOptional<String> edgeConfigTokenId = const SdkOmitted(),
       SdkOptional<bool> deprecated = const SdkOmitted(),
-      SdkOptional<ListProjectsElasticConcurrencyEnabled>
-          elasticConcurrencyEnabled = const SdkOmitted(),
-      SdkOptional<ListProjectsStaticIpsEnabled> staticIpsEnabled =
-          const SdkOmitted(),
+      SdkOptional<ListProjectsElasticConcurrencyEnabled> elasticConcurrencyEnabled = const SdkOmitted(),
+      SdkOptional<ListProjectsStaticIpsEnabled> staticIpsEnabled = const SdkOmitted(),
       SdkOptional<String> buildMachineTypes = const SdkOmitted(),
-      SdkOptional<ListProjectsBuildQueueConfiguration> buildQueueConfiguration =
-          const SdkOmitted(),
+      SdkOptional<ListProjectsBuildQueueConfiguration> buildQueueConfiguration = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.listProjects(_config,
-        from: from,
-        since: since,
-        until: until,
-        gitForkProtection: gitForkProtection,
-        limit: limit,
-        search: search,
-        repo: repo,
-        repoId: repoId,
-        repoUrl: repoUrl,
-        excludeRepos: excludeRepos,
-        edgeConfigId: edgeConfigId,
-        edgeConfigTokenId: edgeConfigTokenId,
-        deprecated: deprecated,
-        elasticConcurrencyEnabled: elasticConcurrencyEnabled,
-        staticIpsEnabled: staticIpsEnabled,
-        buildMachineTypes: buildMachineTypes,
-        buildQueueConfiguration: buildQueueConfiguration,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.listProjects(_config, from: from, since: since, until: until, gitForkProtection: gitForkProtection, limit: limit, search: search, repo: repo, repoId: repoId, repoUrl: repoUrl, excludeRepos: excludeRepos, edgeConfigId: edgeConfigId, edgeConfigTokenId: edgeConfigTokenId, deprecated: deprecated, elasticConcurrencyEnabled: elasticConcurrencyEnabled, staticIpsEnabled: staticIpsEnabled, buildMachineTypes: buildMachineTypes, buildQueueConfiguration: buildQueueConfiguration, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the OpenTelemetry trace associated with a Vercel CLI request. Provide the project identifier and request identifier to locate the trace. The response includes the trace spans and identifier, and may include resource data and a root span identifier.
@@ -5566,12 +3836,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.getProjectTrace(_config,
-        projectId: projectId,
-        requestId: requestId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.getProjectTrace(_config, projectId: projectId, requestId: requestId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a project with a required `name` and optional settings for its framework, build commands, environment variables, Git connection, and sandbox regions. Supply only the settings you want to configure; supported build and install commands can be detected automatically when set to `null`. A 200 response returns the created project object.
@@ -5588,56 +3853,23 @@ class ProjectsNamespace {
       SdkOptional<String?> buildCommand = const SdkOmitted(),
       SdkOptional<String?> commandForIgnoringBuildStep = const SdkOmitted(),
       SdkOptional<String?> devCommand = const SdkOmitted(),
-      SdkOptional<List<CreateProjectRequestBodyEnvironmentVariablesItem>>
-          environmentVariables = const SdkOmitted(),
+      SdkOptional<List<CreateProjectRequestBodyEnvironmentVariablesItem>> environmentVariables = const SdkOmitted(),
       SdkOptional<dynamic> framework = const SdkOmitted(),
-      SdkOptional<CreateProjectRequestBodyGitRepository> gitRepository =
-          const SdkOmitted(),
+      SdkOptional<CreateProjectRequestBodyGitRepository> gitRepository = const SdkOmitted(),
       SdkOptional<String?> installCommand = const SdkOmitted(),
       SdkOptional<bool> skipGitConnectDuringLink = const SdkOmitted(),
-      SdkOptional<CreateProjectRequestBodySsoProtection?> ssoProtection =
-          const SdkOmitted(),
+      SdkOptional<CreateProjectRequestBodySsoProtection?> ssoProtection = const SdkOmitted(),
       SdkOptional<CreateProjectRequestBodySandbox> sandbox = const SdkOmitted(),
       SdkOptional<String?> outputDirectory = const SdkOmitted(),
       SdkOptional<bool?> publicSource = const SdkOmitted(),
       SdkOptional<String?> rootDirectory = const SdkOmitted(),
       SdkOptional<String?> serverlessFunctionRegion = const SdkOmitted(),
-      SdkOptional<bool>
-          serverlessFunctionZeroConfigFailover = const SdkOmitted(),
-      SdkOptional<CreateProjectRequestBodyOidcTokenConfig> oidcTokenConfig =
-          const SdkOmitted(),
+      SdkOptional<bool> serverlessFunctionZeroConfigFailover = const SdkOmitted(),
+      SdkOptional<CreateProjectRequestBodyOidcTokenConfig> oidcTokenConfig = const SdkOmitted(),
       SdkOptional<bool> enableAffectedProjectsDeployments = const SdkOmitted(),
-      SdkOptional<CreateProjectRequestBodyResourceConfig> resourceConfig =
-          const SdkOmitted(),
+      SdkOptional<CreateProjectRequestBodyResourceConfig> resourceConfig = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.createProject(_config,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        enablePreviewFeedback: enablePreviewFeedback,
-        enableProductionFeedback: enableProductionFeedback,
-        previewDeploymentsDisabled: previewDeploymentsDisabled,
-        previewDeploymentSuffix: previewDeploymentSuffix,
-        buildCommand: buildCommand,
-        commandForIgnoringBuildStep: commandForIgnoringBuildStep,
-        devCommand: devCommand,
-        environmentVariables: environmentVariables,
-        framework: framework,
-        gitRepository: gitRepository,
-        installCommand: installCommand,
-        skipGitConnectDuringLink: skipGitConnectDuringLink,
-        ssoProtection: ssoProtection,
-        sandbox: sandbox,
-        outputDirectory: outputDirectory,
-        publicSource: publicSource,
-        rootDirectory: rootDirectory,
-        serverlessFunctionRegion: serverlessFunctionRegion,
-        serverlessFunctionZeroConfigFailover:
-            serverlessFunctionZeroConfigFailover,
-        oidcTokenConfig: oidcTokenConfig,
-        enableAffectedProjectsDeployments: enableAffectedProjectsDeployments,
-        resourceConfig: resourceConfig,
-        requestOptions: requestOptions);
+    return projects_methods.createProject(_config, name: name, teamId: teamId, slug: slug, enablePreviewFeedback: enablePreviewFeedback, enableProductionFeedback: enableProductionFeedback, previewDeploymentsDisabled: previewDeploymentsDisabled, previewDeploymentSuffix: previewDeploymentSuffix, buildCommand: buildCommand, commandForIgnoringBuildStep: commandForIgnoringBuildStep, devCommand: devCommand, environmentVariables: environmentVariables, framework: framework, gitRepository: gitRepository, installCommand: installCommand, skipGitConnectDuringLink: skipGitConnectDuringLink, ssoProtection: ssoProtection, sandbox: sandbox, outputDirectory: outputDirectory, publicSource: publicSource, rootDirectory: rootDirectory, serverlessFunctionRegion: serverlessFunctionRegion, serverlessFunctionZeroConfigFailover: serverlessFunctionZeroConfigFailover, oidcTokenConfig: oidcTokenConfig, enableAffectedProjectsDeployments: enableAffectedProjectsDeployments, resourceConfig: resourceConfig, requestOptions: requestOptions);
   }
 
   /// Creates an OIDC token for a project identified by its ID or name. Provide the project identifier and optionally specify a `source` to identify what is calling the endpoint. The response contains the generated token.
@@ -5649,12 +3881,7 @@ class ProjectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> source = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.getProjectToken(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        source: source,
-        requestOptions: requestOptions);
+    return projects_methods.getProjectToken(_config, idOrName: idOrName, teamId: teamId, slug: slug, source: source, requestOptions: requestOptions);
   }
 
   /// Creates a short-lived HS256 JWT scoped to a deployment hostname. Supply the project identifier and deployment hostname in the request body to define the token scope. The Vercel CLI presents the token to the proxy with requests it wants traced.
@@ -5666,12 +3893,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.createTraceSession(_config,
-        projectId: projectId,
-        hostname: hostname,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.createTraceSession(_config, projectId: projectId, hostname: hostname, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves project information using the project's ID or name. Use the `teamId` or `slug` query parameter to make the request on behalf of a team.
@@ -5682,11 +3904,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.getProjects(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.getProjects(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates configuration fields for a project identified by its ID or name. Submit the settings you want to change; supported build and install commands can be set to `null` for automatic detection. The response contains the updated project object.
@@ -5704,112 +3922,45 @@ class ProjectsNamespace {
       SdkOptional<bool> customerSupportCodeVisibility = const SdkOmitted(),
       SdkOptional<String?> devCommand = const SdkOmitted(),
       SdkOptional<bool> directoryListing = const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyFramework?> framework =
-          const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyFramework?> framework = const SdkOmitted(),
       SdkOptional<bool> gitForkProtection = const SdkOmitted(),
       SdkOptional<bool> gitLfs = const SdkOmitted(),
       SdkOptional<bool> protectedSourcemaps = const SdkOmitted(),
       SdkOptional<String?> installCommand = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyNodeVersion> nodeVersion =
-          const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyNodeVersion> nodeVersion = const SdkOmitted(),
       SdkOptional<String?> outputDirectory = const SdkOmitted(),
       SdkOptional<bool?> previewDeploymentsDisabled = const SdkOmitted(),
       SdkOptional<String?> previewDeploymentSuffix = const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyResourceConfig> resourceConfig =
-          const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyResourceConfig> resourceConfig = const SdkOmitted(),
       SdkOptional<bool?> publicSource = const SdkOmitted(),
       SdkOptional<String?> rootDirectory = const SdkOmitted(),
       SdkOptional<String?> serverlessFunctionRegion = const SdkOmitted(),
-      SdkOptional<bool> serverlessFunctionZeroConfigFailover =
-          const SdkOmitted(),
+      SdkOptional<bool> serverlessFunctionZeroConfigFailover = const SdkOmitted(),
       SdkOptional<int> skewProtectionBoundaryAt = const SdkOmitted(),
       SdkOptional<int> skewProtectionMaxAge = const SdkOmitted(),
-      SdkOptional<List<String>> skewProtectionAllowedDomains =
-          const SdkOmitted(),
+      SdkOptional<List<String>> skewProtectionAllowedDomains = const SdkOmitted(),
       SdkOptional<bool> skipGitConnectDuringLink = const SdkOmitted(),
       SdkOptional<bool> sourceFilesOutsideRootDirectory = const SdkOmitted(),
       SdkOptional<bool?> enablePreviewFeedback = const SdkOmitted(),
       SdkOptional<bool?> enableProductionFeedback = const SdkOmitted(),
       SdkOptional<bool> enableAffectedProjectsDeployments = const SdkOmitted(),
       SdkOptional<bool> enableExternalRewriteCaching = const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyStaticIps> staticIps =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyTracing?> tracing =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyOidcTokenConfig> oidcTokenConfig =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyPasswordProtection?>
-          passwordProtection = const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyPassport?> passport =
-          const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyStaticIps> staticIps = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyTracing?> tracing = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyOidcTokenConfig> oidcTokenConfig = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyPasswordProtection?> passwordProtection = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyPassport?> passport = const SdkOmitted(),
       SdkOptional<UpdateProjectRequestBodySandbox> sandbox = const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodySsoProtection?> ssoProtection =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyTrustedIps?> trustedIps =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyTrustedSources?> trustedSources =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestDeploymentPolicy> deploymentPolicy =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectRequestBodyOptionsAllowlist?> optionsAllowlist =
-          const SdkOmitted(),
-      SdkOptional<List<Map<String, dynamic>>?> connectConfigurations =
-          const SdkOmitted(),
-      SdkOptional<List<UpdateProjectRequestBodyDismissedToastsItem>>
-          dismissedToasts = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodySsoProtection?> ssoProtection = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyTrustedIps?> trustedIps = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyTrustedSources?> trustedSources = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestDeploymentPolicy> deploymentPolicy = const SdkOmitted(),
+      SdkOptional<UpdateProjectRequestBodyOptionsAllowlist?> optionsAllowlist = const SdkOmitted(),
+      SdkOptional<List<Map<String, dynamic>>?> connectConfigurations = const SdkOmitted(),
+      SdkOptional<List<UpdateProjectRequestBodyDismissedToastsItem>> dismissedToasts = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.updateProject(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        autoExposeSystemEnvs: autoExposeSystemEnvs,
-        autoAssignCustomDomains: autoAssignCustomDomains,
-        autoAssignCustomDomainsUpdatedBy: autoAssignCustomDomainsUpdatedBy,
-        buildCommand: buildCommand,
-        commandForIgnoringBuildStep: commandForIgnoringBuildStep,
-        customerSupportCodeVisibility: customerSupportCodeVisibility,
-        devCommand: devCommand,
-        directoryListing: directoryListing,
-        framework: framework,
-        gitForkProtection: gitForkProtection,
-        gitLfs: gitLfs,
-        protectedSourcemaps: protectedSourcemaps,
-        installCommand: installCommand,
-        name: name,
-        nodeVersion: nodeVersion,
-        outputDirectory: outputDirectory,
-        previewDeploymentsDisabled: previewDeploymentsDisabled,
-        previewDeploymentSuffix: previewDeploymentSuffix,
-        resourceConfig: resourceConfig,
-        publicSource: publicSource,
-        rootDirectory: rootDirectory,
-        serverlessFunctionRegion: serverlessFunctionRegion,
-        serverlessFunctionZeroConfigFailover:
-            serverlessFunctionZeroConfigFailover,
-        skewProtectionBoundaryAt: skewProtectionBoundaryAt,
-        skewProtectionMaxAge: skewProtectionMaxAge,
-        skewProtectionAllowedDomains: skewProtectionAllowedDomains,
-        skipGitConnectDuringLink: skipGitConnectDuringLink,
-        sourceFilesOutsideRootDirectory: sourceFilesOutsideRootDirectory,
-        enablePreviewFeedback: enablePreviewFeedback,
-        enableProductionFeedback: enableProductionFeedback,
-        enableAffectedProjectsDeployments: enableAffectedProjectsDeployments,
-        enableExternalRewriteCaching: enableExternalRewriteCaching,
-        staticIps: staticIps,
-        tracing: tracing,
-        oidcTokenConfig: oidcTokenConfig,
-        passwordProtection: passwordProtection,
-        passport: passport,
-        sandbox: sandbox,
-        ssoProtection: ssoProtection,
-        trustedIps: trustedIps,
-        trustedSources: trustedSources,
-        deploymentPolicy: deploymentPolicy,
-        optionsAllowlist: optionsAllowlist,
-        connectConfigurations: connectConfigurations,
-        dismissedToasts: dismissedToasts,
-        requestOptions: requestOptions);
+    return projects_methods.updateProject(_config, idOrName: idOrName, teamId: teamId, slug: slug, autoExposeSystemEnvs: autoExposeSystemEnvs, autoAssignCustomDomains: autoAssignCustomDomains, autoAssignCustomDomainsUpdatedBy: autoAssignCustomDomainsUpdatedBy, buildCommand: buildCommand, commandForIgnoringBuildStep: commandForIgnoringBuildStep, customerSupportCodeVisibility: customerSupportCodeVisibility, devCommand: devCommand, directoryListing: directoryListing, framework: framework, gitForkProtection: gitForkProtection, gitLfs: gitLfs, protectedSourcemaps: protectedSourcemaps, installCommand: installCommand, name: name, nodeVersion: nodeVersion, outputDirectory: outputDirectory, previewDeploymentsDisabled: previewDeploymentsDisabled, previewDeploymentSuffix: previewDeploymentSuffix, resourceConfig: resourceConfig, publicSource: publicSource, rootDirectory: rootDirectory, serverlessFunctionRegion: serverlessFunctionRegion, serverlessFunctionZeroConfigFailover: serverlessFunctionZeroConfigFailover, skewProtectionBoundaryAt: skewProtectionBoundaryAt, skewProtectionMaxAge: skewProtectionMaxAge, skewProtectionAllowedDomains: skewProtectionAllowedDomains, skipGitConnectDuringLink: skipGitConnectDuringLink, sourceFilesOutsideRootDirectory: sourceFilesOutsideRootDirectory, enablePreviewFeedback: enablePreviewFeedback, enableProductionFeedback: enableProductionFeedback, enableAffectedProjectsDeployments: enableAffectedProjectsDeployments, enableExternalRewriteCaching: enableExternalRewriteCaching, staticIps: staticIps, tracing: tracing, oidcTokenConfig: oidcTokenConfig, passwordProtection: passwordProtection, passport: passport, sandbox: sandbox, ssoProtection: ssoProtection, trustedIps: trustedIps, trustedSources: trustedSources, deploymentPolicy: deploymentPolicy, optionsAllowlist: optionsAllowlist, connectConfigurations: connectConfigurations, dismissedToasts: dismissedToasts, requestOptions: requestOptions);
   }
 
   /// Deletes a project identified by its ID or name. Use the `teamId` or `slug` query parameter to make the request on behalf of a team. A 204 response confirms the project was removed.
@@ -5820,11 +3971,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.deleteProject(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.deleteProject(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Uploads an image to use as the avatar for a project identified by its ID or name. Send the raw image bytes and declare the image type with the `Content-Type` header; accepted formats are JPG, PNG, and SVG. SVG images are sanitized and optimized before storage, and the response returns the updated project.
@@ -5836,12 +3983,7 @@ class ProjectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<List<int>> body = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.uploadProjectAvatar(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        body: body,
-        requestOptions: requestOptions);
+    return projects_methods.uploadProjectAvatar(_config, idOrName: idOrName, teamId: teamId, slug: slug, body: body, requestOptions: requestOptions);
   }
 
   /// Removes the avatar assignment from a project identified by its ID or name. This clears the project's avatar field so a later production deployment can run avatar auto-detection again, but it does not delete the stored image. The response returns the updated project.
@@ -5852,11 +3994,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.deleteProjectAvatar(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.deleteProjectAvatar(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists domains associated with a project. Use the query parameters to filter by environment, branch, redirect, or verification status, and to control the result limit and sort order.
@@ -5864,8 +4002,7 @@ class ProjectsNamespace {
   /// Retrieve the domains associated with a given project by passing either the project `id` or `name` in the URL.
   Future<ListProjectsDomainsResponse> listDomains(
       {required String idOrName,
-      SdkOptional<ListProjectsDomainsProduction> production =
-          const SdkOmitted(),
+      SdkOptional<ListProjectsDomainsProduction> production = const SdkOmitted(),
       SdkOptional<ListProjectsDomainsTarget> target = const SdkOmitted(),
       SdkOptional<String> customEnvironmentId = const SdkOmitted(),
       SdkOptional<String> gitBranch = const SdkOmitted(),
@@ -5879,22 +4016,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.listProjectsDomains(_config,
-        idOrName: idOrName,
-        production: production,
-        target: target,
-        customEnvironmentId: customEnvironmentId,
-        gitBranch: gitBranch,
-        redirects: redirects,
-        redirect: redirect,
-        verified: verified,
-        limit: limit,
-        since: since,
-        until: until,
-        order: order,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.listProjectsDomains(_config, idOrName: idOrName, production: production, target: target, customEnvironmentId: customEnvironmentId, gitBranch: gitBranch, redirects: redirects, redirect: redirect, verified: verified, limit: limit, since: since, until: until, order: order, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a domain associated with a project. Use the project identifier or name and the domain name to identify the domain and inspect its configuration and verification status.
@@ -5906,12 +4028,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.getProjectDomain(_config,
-        idOrName: idOrName,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.getProjectDomain(_config, idOrName: idOrName, domain: domain, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a project domain’s configuration, including its Git branch association and redirect settings. Supply only the configuration fields you want to change; `redirectStatusCode` accepts 301, 302, 307, 308, or null.
@@ -5924,18 +4041,9 @@ class ProjectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String?> gitBranch = const SdkOmitted(),
       SdkOptional<String?> redirect = const SdkOmitted(),
-      SdkOptional<UpdateProjectDomainRequestBodyRedirectStatusCode?>
-          redirectStatusCode = const SdkOmitted(),
+      SdkOptional<UpdateProjectDomainRequestBodyRedirectStatusCode?> redirectStatusCode = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.updateProjectDomain(_config,
-        idOrName: idOrName,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        gitBranch: gitBranch,
-        redirect: redirect,
-        redirectStatusCode: redirectStatusCode,
-        requestOptions: requestOptions);
+    return projects_methods.updateProjectDomain(_config, idOrName: idOrName, domain: domain, teamId: teamId, slug: slug, gitBranch: gitBranch, redirect: redirect, redirectStatusCode: redirectStatusCode, requestOptions: requestOptions);
   }
 
   /// Removes a domain from a project. Set `removeRedirects` to also remove project domains that redirect to the domain being deleted.
@@ -5948,13 +4056,7 @@ class ProjectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> removeRedirects = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.removeProjectDomain(_config,
-        idOrName: idOrName,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        removeRedirects: removeRedirects,
-        requestOptions: requestOptions);
+    return projects_methods.removeProjectDomain(_config, idOrName: idOrName, domain: domain, teamId: teamId, slug: slug, removeRedirects: removeRedirects, requestOptions: requestOptions);
   }
 
   /// Creates a project-domain association for a project. Provide the domain name and optionally configure its Git branch, custom environment, or redirect; an unverified domain must complete the returned verification challenge before it can be used as an alias.
@@ -5968,19 +4070,9 @@ class ProjectsNamespace {
       SdkOptional<String?> gitBranch = const SdkOmitted(),
       SdkOptional<String> customEnvironmentId = const SdkOmitted(),
       SdkOptional<String?> redirect = const SdkOmitted(),
-      SdkOptional<AddProjectDomainRequestBodyRedirectStatusCode?>
-          redirectStatusCode = const SdkOmitted(),
+      SdkOptional<AddProjectDomainRequestBodyRedirectStatusCode?> redirectStatusCode = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.addProjectDomain(_config,
-        idOrName: idOrName,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        gitBranch: gitBranch,
-        customEnvironmentId: customEnvironmentId,
-        redirect: redirect,
-        redirectStatusCode: redirectStatusCode,
-        requestOptions: requestOptions);
+    return projects_methods.addProjectDomain(_config, idOrName: idOrName, name: name, teamId: teamId, slug: slug, gitBranch: gitBranch, customEnvironmentId: customEnvironmentId, redirect: redirect, redirectStatusCode: redirectStatusCode, requestOptions: requestOptions);
   }
 
   /// Moves a domain from one project to another and can move the domain's redirects with it. Supply the target `projectId`; optionally set `gitBranch`, `redirect`, or `redirectStatusCode` to configure the domain on the destination project.
@@ -5994,19 +4086,9 @@ class ProjectsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String?> gitBranch = const SdkOmitted(),
       SdkOptional<String?> redirect = const SdkOmitted(),
-      SdkOptional<MoveProjectDomainRequestBodyRedirectStatusCode?>
-          redirectStatusCode = const SdkOmitted(),
+      SdkOptional<MoveProjectDomainRequestBodyRedirectStatusCode?> redirectStatusCode = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.moveProjectDomain(_config,
-        idOrName: idOrName,
-        domain: domain,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        gitBranch: gitBranch,
-        redirect: redirect,
-        redirectStatusCode: redirectStatusCode,
-        requestOptions: requestOptions);
+    return projects_methods.moveProjectDomain(_config, idOrName: idOrName, domain: domain, projectId: projectId, teamId: teamId, slug: slug, gitBranch: gitBranch, redirect: redirect, redirectStatusCode: redirectStatusCode, requestOptions: requestOptions);
   }
 
   /// Verifies a project domain by checking its verification challenge when the domain is not yet verified. Use this operation after completing one of the challenges associated with the domain.
@@ -6018,12 +4100,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.verifyProjectDomain(_config,
-        idOrName: idOrName,
-        domain: domain,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.verifyProjectDomain(_config, idOrName: idOrName, domain: domain, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists environment variables for a project, identified by its project ID or name. Use `gitBranch` to filter preview-target variables by branch, or select a custom environment with `customEnvironmentId` or `customEnvironmentSlug`.
@@ -6039,16 +4116,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.filterProjectEnvs(_config,
-        idOrName: idOrName,
-        gitBranch: gitBranch,
-        decrypt: decrypt,
-        source: source,
-        customEnvironmentId: customEnvironmentId,
-        customEnvironmentSlug: customEnvironmentSlug,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.filterProjectEnvs(_config, idOrName: idOrName, gitBranch: gitBranch, decrypt: decrypt, source: source, customEnvironmentId: customEnvironmentId, customEnvironmentSlug: customEnvironmentSlug, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates one or more environment variables for a project. Provide `key`, `value`, and `type`, and specify either `target` or `customEnvironmentIds`; use `upsert` to update an existing variable instead of creating a duplicate.
@@ -6061,13 +4129,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.createProjectEnv(_config,
-        idOrName: idOrName,
-        body: body,
-        upsert: upsert,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.createProjectEnv(_config, idOrName: idOrName, body: body, upsert: upsert, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves an environment variable for a project, including its decrypted value when available. Use the project identifier or name together with the environment variable's unique ID to select the variable.
@@ -6079,12 +4141,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.getProjectEnv(_config,
-        idOrName: idOrName,
-        id: id,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.getProjectEnv(_config, idOrName: idOrName, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a specific environment variable from a project. Identify the project and variable in the path, and use `customEnvironmentId` when the removal applies to a particular custom environment.
@@ -6097,13 +4154,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.removeProjectEnv(_config,
-        idOrName: idOrName,
-        id: id,
-        customEnvironmentId: customEnvironmentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.removeProjectEnv(_config, idOrName: idOrName, id: id, customEnvironmentId: customEnvironmentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates an environment variable belonging to a project. Send only the properties you want to change, such as `value`, `target`, or `comment`; the schema does not require any particular body property.
@@ -6115,27 +4166,14 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> key = const SdkOmitted(),
-      SdkOptional<List<EditProjectEnvRequestBodyTargetItem>> target =
-          const SdkOmitted(),
+      SdkOptional<List<EditProjectEnvRequestBodyTargetItem>> target = const SdkOmitted(),
       SdkOptional<String?> gitBranch = const SdkOmitted(),
       SdkOptional<EditProjectEnvRequestBodyType> type_ = const SdkOmitted(),
       SdkOptional<String> value_ = const SdkOmitted(),
       SdkOptional<List<String>> customEnvironmentIds = const SdkOmitted(),
       SdkOptional<String> comment = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.editProjectEnv(_config,
-        idOrName: idOrName,
-        id: id,
-        teamId: teamId,
-        slug: slug,
-        key: key,
-        target: target,
-        gitBranch: gitBranch,
-        type_: type_,
-        value_: value_,
-        customEnvironmentIds: customEnvironmentIds,
-        comment: comment,
-        requestOptions: requestOptions);
+    return projects_methods.editProjectEnv(_config, idOrName: idOrName, id: id, teamId: teamId, slug: slug, key: key, target: target, gitBranch: gitBranch, type_: type_, value_: value_, customEnvironmentIds: customEnvironmentIds, comment: comment, requestOptions: requestOptions);
   }
 
   /// Deletes multiple environment variables from a project in one request. Provide their IDs in the `ids` array, which must contain between 1 and 1,000 entries.
@@ -6147,12 +4185,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.batchRemoveProjectEnv(_config,
-        idOrName: idOrName,
-        ids: ids,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.batchRemoveProjectEnv(_config, idOrName: idOrName, ids: ids, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a request to transfer a project from one team to another. Use `idOrName` to identify the project, and optionally provide callback details to receive a signed webhook when the transfer is accepted. The response includes a transfer code that remains valid for 24 hours and can be used by another team to accept the request.
@@ -6165,13 +4198,7 @@ class ProjectsNamespace {
       SdkOptional<String> callbackUrl = const SdkOmitted(),
       SdkOptional<String> callbackSecret = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.createProjectTransferRequest(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        callbackUrl: callbackUrl,
-        callbackSecret: callbackSecret,
-        requestOptions: requestOptions);
+    return projects_methods.createProjectTransferRequest(_config, idOrName: idOrName, teamId: teamId, slug: slug, callbackUrl: callbackUrl, callbackSecret: callbackSecret, requestOptions: requestOptions);
   }
 
   /// Accepts a project transfer request initiated by another team. Use the `code` from the transfer request and optionally set the new project name, paid features, or accepted policies. The transfer response includes the project name and details about partner calls, resource transfer errors, and transferred stores.
@@ -6182,21 +4209,10 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> newProjectName = const SdkOmitted(),
-      SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures>
-          paidFeatures = const SdkOmitted(),
-      SdkOptional<
-              Map<String,
-                  AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>>
-          acceptedPolicies = const SdkOmitted(),
+      SdkOptional<AcceptProjectTransferRequestRequestBodyPaidFeatures> paidFeatures = const SdkOmitted(),
+      SdkOptional<Map<String, AcceptProjectTransferRequestRequestBodyAcceptedPoliciesValue>> acceptedPolicies = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.acceptProjectTransferRequest(_config,
-        code: code,
-        teamId: teamId,
-        slug: slug,
-        newProjectName: newProjectName,
-        paidFeatures: paidFeatures,
-        acceptedPolicies: acceptedPolicies,
-        requestOptions: requestOptions);
+    return projects_methods.acceptProjectTransferRequest(_config, code: code, teamId: teamId, slug: slug, newProjectName: newProjectName, paidFeatures: paidFeatures, acceptedPolicies: acceptedPolicies, requestOptions: requestOptions);
   }
 
   /// Updates a project's deployment protection automation bypass settings. Use `generate` to create a bypass, `revoke` to revoke one and optionally regenerate it, or `update` to change an existing bypass. If none of these actions is provided, the API generates a new random secret.
@@ -6206,21 +4222,11 @@ class ProjectsNamespace {
       {required String idOrName,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke> revoke =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate> generate =
-          const SdkOmitted(),
-      SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate> update =
-          const SdkOmitted(),
+      SdkOptional<UpdateProjectProtectionBypassRequestBodyRevoke> revoke = const SdkOmitted(),
+      SdkOptional<UpdateProjectProtectionBypassRequestBodyGenerate> generate = const SdkOmitted(),
+      SdkOptional<UpdateProjectProtectionBypassRequestBodyUpdate> update = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.updateProjectProtectionBypass(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        revoke: revoke,
-        generate: generate,
-        update: update,
-        requestOptions: requestOptions);
+    return projects_methods.updateProjectProtectionBypass(_config, idOrName: idOrName, teamId: teamId, slug: slug, revoke: revoke, generate: generate, update: update, requestOptions: requestOptions);
   }
 
   /// Requests a rollback that points production traffic to a previous production deployment. Use `projectId` to identify the project and `deploymentId` to select the deployment to roll back to; optionally provide `description` to record the reason. A successful response confirms that the rollback request was created.
@@ -6233,13 +4239,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.requestRollback(_config,
-        projectId: projectId,
-        deploymentId: deploymentId,
-        description: description,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.requestRollback(_config, projectId: projectId, deploymentId: deploymentId, description: description, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the reason recorded for a project rollback without changing its status. Supply the `description` field in the request body and identify the project and deployment in the path. The request body is optional.
@@ -6250,11 +4250,7 @@ class ProjectsNamespace {
       required String deploymentId,
       SdkOptional<String> description = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.updateProjectsRollbackDescription(_config,
-        projectId: projectId,
-        deploymentId: deploymentId,
-        description: description,
-        requestOptions: requestOptions);
+    return projects_methods.updateProjectsRollbackDescription(_config, projectId: projectId, deploymentId: deploymentId, description: description, requestOptions: requestOptions);
   }
 
   /// Updates the microfrontends settings for a project. Use the optional fields to change the project's group, enablement, default application, route, or observability routing configuration. The two routing options can only be set for child applications.
@@ -6269,21 +4265,9 @@ class ProjectsNamespace {
       SdkOptional<bool> isDefaultApp = const SdkOmitted(),
       SdkOptional<String> defaultRoute = const SdkOmitted(),
       SdkOptional<bool> routeObservabilityToThisProject = const SdkOmitted(),
-      SdkOptional<bool> doNotRouteWithMicrofrontendsRouting =
-          const SdkOmitted(),
+      SdkOptional<bool> doNotRouteWithMicrofrontendsRouting = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.updateMicrofrontends(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        microfrontendsGroupId: microfrontendsGroupId,
-        enabled: enabled,
-        isDefaultApp: isDefaultApp,
-        defaultRoute: defaultRoute,
-        routeObservabilityToThisProject: routeObservabilityToThisProject,
-        doNotRouteWithMicrofrontendsRouting:
-            doNotRouteWithMicrofrontendsRouting,
-        requestOptions: requestOptions);
+    return projects_methods.updateMicrofrontends(_config, projectId: projectId, teamId: teamId, slug: slug, microfrontendsGroupId: microfrontendsGroupId, enabled: enabled, isDefaultApp: isDefaultApp, defaultRoute: defaultRoute, routeObservabilityToThisProject: routeObservabilityToThisProject, doNotRouteWithMicrofrontendsRouting: doNotRouteWithMicrofrontendsRouting, requestOptions: requestOptions);
   }
 
   /// Triggers a production promotion for a deployment in a project. Identify the project and deployment in the path, and use `teamId` or `slug` to select the team context when needed. Promotion does not rebuild the deployment; use the deployment creation operation when a rebuild is required.
@@ -6295,12 +4279,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.requestPromote(_config,
-        projectId: projectId,
-        deploymentId: deploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.requestPromote(_config, projectId: projectId, deploymentId: deploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists aliases associated with the latest promotion request for a project and their mapping status. Use `since` and `until` to filter by creation time, and `failedOnly` to limit results to aliases that failed to map to the requested deployment. Use `limit` to cap the number of aliases returned.
@@ -6315,15 +4294,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.listPromoteAliases(_config,
-        projectId: projectId,
-        limit: limit,
-        since: since,
-        until: until,
-        failedOnly: failedOnly,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.listPromoteAliases(_config, projectId: projectId, limit: limit, since: since, until: until, failedOnly: failedOnly, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Pauses a project identified by its project ID. Use `teamId` or `slug` to select the team context when needed. When the project disables automatic assignment of custom production domains, pausing also blocks its active production deployment.
@@ -6334,11 +4305,7 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.pauseProject(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.pauseProject(_config, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Unpauses a project identified by its project ID. Use `teamId` or `slug` to select the team context when needed. When the project enables automatic assignment of custom production domains, unpausing also unblocks its active production deployment.
@@ -6349,18 +4316,14 @@ class ProjectsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return projects_methods.unpauseProject(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return projects_methods.unpauseProject(_config, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class RollingReleaseNamespace {
   final ClientConfig _config;
   RollingReleaseNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves the rolling release billing status used to determine whether a project can be configured for rolling releases. The response includes available-slot and status information for the team's billing.
   ///
   /// Get the Rolling Releases billing status for a project. The team level billing status is used to determine if the project can be configured for rolling releases.
@@ -6369,11 +4332,7 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.getRollingReleaseBillingStatus(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.getRollingReleaseBillingStatus(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the project-level rolling release configuration template. Use this configuration to inspect the settings that will apply to future rolling releases; it does not describe an active rolling release.
@@ -6384,11 +4343,7 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.getRollingReleaseConfig(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.getRollingReleaseConfig(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a project's rolling release configuration and disables rolling releases for future deployments. Disabling the configuration does not change a rollout that is already in progress. To stop an active rollout as well, use the completion or abort operation after disabling rolling releases.
@@ -6399,11 +4354,7 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.deleteRollingReleaseConfig(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.deleteRollingReleaseConfig(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates a project's rolling release configuration, including enabling or disabling rolling releases. When disabling, `disableRolloutAction` controls how an active rollout is resolved if the resolve-on-disable feature is enabled; enabling or updating configuration affects the next production deployment, not an in-flight rollout. Enabling rolling releases also enables skew protection with its default value if it was not already configured.
@@ -6414,11 +4365,7 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.updateRollingReleaseConfig(_config,
-        idOrName: idOrName,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.updateRollingReleaseConfig(_config, idOrName: idOrName, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves rolling release information for a project, whether its rollout is active, aborted, or complete. Use `state` to filter the result to ACTIVE, COMPLETE, or ABORTED. If rolling releases are enabled but no deployment has occurred, the response contains a null rolling release value.
@@ -6430,12 +4377,7 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.getRollingRelease(_config,
-        idOrName: idOrName,
-        state: state,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.getRollingRelease(_config, idOrName: idOrName, state: state, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Advances a project's active rolling release to a specified stage. Use this operation when the rolling release requires manual approval, and identify the canary deployment and target stage in the request body. The response includes the updated rolling release information.
@@ -6448,13 +4390,7 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.approveRollingReleaseStage(_config,
-        idOrName: idOrName,
-        nextStageIndex: nextStageIndex,
-        canaryDeploymentId: canaryDeploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.approveRollingReleaseStage(_config, idOrName: idOrName, nextStageIndex: nextStageIndex, canaryDeploymentId: canaryDeploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Starts a rolling release for a project's canary deployment. Supply `canaryDeploymentId` to identify the deployment to roll out; if that deployment already has an active rolling release, the endpoint returns its current state without side effects. The response includes the rolling release information.
@@ -6466,12 +4402,7 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.startRollingRelease(_config,
-        idOrName: idOrName,
-        canaryDeploymentId: canaryDeploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.startRollingRelease(_config, idOrName: idOrName, canaryDeploymentId: canaryDeploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Completes a project's rolling release and sends 100% of traffic to the canary deployment. Supply `canaryDeploymentId` to identify the deployment to promote. The response includes the updated rolling release information.
@@ -6483,19 +4414,14 @@ class RollingReleaseNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return rolling_release_methods.completeRollingRelease(_config,
-        idOrName: idOrName,
-        canaryDeploymentId: canaryDeploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return rolling_release_methods.completeRollingRelease(_config, idOrName: idOrName, canaryDeploymentId: canaryDeploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class SandboxesNamespace {
   final ClientConfig _config;
   SandboxesNamespace(ClientConfig config) : _config = config;
-
   /// Lists named sandboxes for a project in a paginated response. Filter by name prefix, status, or tag, and choose a sort field and direction; `namePrefix` is only valid with `sortBy=name`, while `status` is only valid with `sortBy=createdAt`. Continue through results using the pagination cursor returned in the response.
   ///
   /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
@@ -6511,18 +4437,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.listNamedSandboxes(_config,
-        project: project,
-        limit: limit,
-        sortBy: sortBy,
-        namePrefix: namePrefix,
-        cursor: cursor,
-        sortOrder: sortOrder,
-        status: status,
-        tags: tags,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.listNamedSandboxes(_config, project: project, limit: limit, sortBy: sortBy, namePrefix: namePrefix, cursor: cursor, sortOrder: sortOrder, status: status, tags: tags, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a named sandbox with an initialized filesystem and runtime configuration. Supply `name` and `projectId` to assign it to a project, and optionally configure its source, resources, network policy, ports, or mounted drives. A 200 response includes the sandbox, session, and exposed routes.
@@ -6531,57 +4446,27 @@ class SandboxesNamespace {
   Future<CreateSandboxesV2Response> createV2(
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateSandboxesV2RequestNetworkPolicy> networkPolicy =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV2RequestBodyRuntime> runtime =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV2RequestBodyArchitecture> architecture =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV2RequestBodyResources> resources =
-          const SdkOmitted(),
+      SdkOptional<CreateSandboxesV2RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV2RequestBodyRuntime> runtime = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV2RequestBodyArchitecture> architecture = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV2RequestBodyResources> resources = const SdkOmitted(),
       SdkOptional<CreateSandboxesV2RequestSource> source = const SdkOmitted(),
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<List<int>> ports = const SdkOmitted(),
       SdkOptional<String> image = const SdkOmitted(),
       SdkOptional<int> timeout = const SdkOmitted(),
       SdkOptional<Map<String, String>> env = const SdkOmitted(),
-      SdkOptional<Map<String, CreateSandboxesV2RequestBodyMountsValue>> mounts =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV2RequestBodyRegion> region =
-          const SdkOmitted(),
-      SdkOptional<List<CreateSandboxesV2RequestBodyFailoverRegionsItem>>
-          failoverRegions = const SdkOmitted(),
+      SdkOptional<Map<String, CreateSandboxesV2RequestBodyMountsValue>> mounts = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV2RequestBodyRegion> region = const SdkOmitted(),
+      SdkOptional<List<CreateSandboxesV2RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
       SdkOptional<String> networkId = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<bool> persistent = const SdkOmitted(),
       SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-      SdkOptional<CreateSandboxesV2RequestBodyKeepLastSnapshots>
-          keepLastSnapshots = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV2RequestBodyKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
       SdkOptional<Map<String, String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSandboxesV2(_config,
-        teamId: teamId,
-        slug: slug,
-        networkPolicy: networkPolicy,
-        runtime: runtime,
-        architecture: architecture,
-        resources: resources,
-        source: source,
-        projectId: projectId,
-        ports: ports,
-        image: image,
-        timeout: timeout,
-        env: env,
-        mounts: mounts,
-        region: region,
-        failoverRegions: failoverRegions,
-        networkId: networkId,
-        name: name,
-        persistent: persistent,
-        snapshotExpiration: snapshotExpiration,
-        keepLastSnapshots: keepLastSnapshots,
-        tags: tags,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSandboxesV2(_config, teamId: teamId, slug: slug, networkPolicy: networkPolicy, runtime: runtime, architecture: architecture, resources: resources, source: source, projectId: projectId, ports: ports, image: image, timeout: timeout, env: env, mounts: mounts, region: region, failoverRegions: failoverRegions, networkId: networkId, name: name, persistent: persistent, snapshotExpiration: snapshotExpiration, keepLastSnapshots: keepLastSnapshots, tags: tags, requestOptions: requestOptions);
   }
 
   /// Lists drives associated with a project in a paginated response. Use `projectId` to select the project unless the request uses a Vercel OIDC token scoped to one, and use `namePrefix` to filter by name when sorting by name. Continue through the results with the pagination cursor returned in the response.
@@ -6597,16 +4482,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.listDrives(_config,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        sortBy: sortBy,
-        namePrefix: namePrefix,
-        sortOrder: sortOrder,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.listDrives(_config, projectId: projectId, limit: limit, cursor: cursor, sortBy: sortBy, namePrefix: namePrefix, sortOrder: sortOrder, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a drive by its name or ID within a project. Supply `projectId` unless the request uses a Vercel OIDC token scoped to a project. The drive name or ID must use only letters, digits, hyphens, or underscores and be no longer than 64 characters.
@@ -6618,12 +4494,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.getDrive(_config,
-        nameOrId: nameOrId,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.getDrive(_config, nameOrId: nameOrId, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a drive with the specified name or retrieves the existing drive with that name in the project. Use `projectId` to associate the drive with a project unless your Vercel OIDC token is scoped to one; configure its size with `maxSizeBytes` and storage location with `region`. The response includes the drive object and its identifier.
@@ -6635,17 +4506,9 @@ class SandboxesNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<int> maxSizeBytes = const SdkOmitted(),
-      SdkOptional<GetOrCreateDriveRequestBodyRegion> region =
-          const SdkOmitted(),
+      SdkOptional<GetOrCreateDriveRequestBodyRegion> region = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.getOrCreateDrive(_config,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        projectId: projectId,
-        maxSizeBytes: maxSizeBytes,
-        region: region,
-        requestOptions: requestOptions);
+    return sandboxes_methods.getOrCreateDrive(_config, name: name, teamId: teamId, slug: slug, projectId: projectId, maxSizeBytes: maxSizeBytes, region: region, requestOptions: requestOptions);
   }
 
   /// Deletes a drive identified by its name and project. Use this operation to remove a drive that is no longer needed; a drive attached to a session cannot be deleted, so stop or replace the session using it before retrying. A successful response includes the deleted drive object.
@@ -6657,12 +4520,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.deleteDrive(_config,
-        name: name,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.deleteDrive(_config, name: name, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Forks a source drive into a new drive that inherits the source drive's region and maximum size. Provide the new drive's name in the request body and identify the project unless your Vercel OIDC token is scoped to one. The response contains the created drive object.
@@ -6675,13 +4533,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.forkDrive(_config,
-        name: name,
-        name_2: name_2,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.forkDrive(_config, name: name, name_2: name_2, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists snapshots for a project, with results paginated by an opaque cursor. Filter by project and sandbox name, and use `limit` and `cursor` to control pagination. Results are sorted by creation time in the selected direction.
@@ -6696,15 +4548,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.listSessionSnapshots(_config,
-        project: project,
-        name: name,
-        limit: limit,
-        cursor: cursor,
-        sortOrder: sortOrder,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.listSessionSnapshots(_config, project: project, name: name, limit: limit, cursor: cursor, sortOrder: sortOrder, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves details for a specific sandbox snapshot, including its creation time, size, expiration, and source session. Use `snapshotId` to identify the snapshot whose details you need. The response contains the snapshot object.
@@ -6715,11 +4559,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.getSessionSnapshot(_config,
-        snapshotId: snapshotId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.getSessionSnapshot(_config, snapshotId: snapshotId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a sandbox snapshot and frees its associated storage. Use `snapshotId` to select the snapshot to remove; a deleted snapshot cannot be used to create new sessions. &lt;Callout type="warning"&gt;Deletion is permanent and cannot be undone.&lt;/Callout&gt;
@@ -6730,11 +4570,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.deleteSessionSnapshot(_config,
-        snapshotId: snapshotId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.deleteSessionSnapshot(_config, snapshotId: snapshotId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists sessions for a sandbox, with results paginated by an opaque cursor and sorted by creation time. Filter by project and sandbox name, and use `limit`, `cursor`, and `sortOrder` to shape the results. The response includes session records and pagination metadata.
@@ -6749,15 +4585,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.listSessions(_config,
-        project: project,
-        name: name,
-        limit: limit,
-        cursor: cursor,
-        sortOrder: sortOrder,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.listSessions(_config, project: project, name: name, limit: limit, cursor: cursor, sortOrder: sortOrder, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves details for a specific sandbox session, including its status, resource configuration, and exposed routes. Use `sessionId` to identify the session to inspect. The response includes the session object and its routes.
@@ -6768,11 +4596,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.getSession(_config,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.getSession(_config, sessionId: sessionId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a named sandbox, its current session, and its exposed routes. Set `resume` to true to create a new sandbox instance from the most recent snapshot when the named sandbox is stopped; it defaults to false. The response indicates whether the sandbox resumed and includes sandbox and session details.
@@ -6785,13 +4609,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.getNamedSandbox(_config,
-        name: name,
-        projectId: projectId,
-        resume: resume,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.getNamedSandbox(_config, name: name, projectId: projectId, resume: resume, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the configuration of a named sandbox, changing only the fields you provide. Use the request body to adjust its resources, runtime, networking, storage mounts, environment, or other settings; omitted fields remain unchanged. Set `resume` to true to resume a stopped sandbox from its snapshot.
@@ -6803,49 +4621,23 @@ class SandboxesNamespace {
       SdkOptional<bool> resume = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<UpdateSandboxRequestBodyResources> resources =
-          const SdkOmitted(),
+      SdkOptional<UpdateSandboxRequestBodyResources> resources = const SdkOmitted(),
       SdkOptional<UpdateSandboxRequestBodyRuntime> runtime = const SdkOmitted(),
       SdkOptional<int> timeout = const SdkOmitted(),
       SdkOptional<bool> persistent = const SdkOmitted(),
       SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-      SdkOptional<UpdateSandboxRequestKeepLastSnapshots> keepLastSnapshots =
-          const SdkOmitted(),
-      SdkOptional<UpdateSandboxRequestNetworkPolicy> networkPolicy =
-          const SdkOmitted(),
+      SdkOptional<UpdateSandboxRequestKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
+      SdkOptional<UpdateSandboxRequestNetworkPolicy> networkPolicy = const SdkOmitted(),
       SdkOptional<UpdateSandboxRequestBodyRegion> region = const SdkOmitted(),
-      SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>>
-          failoverRegions = const SdkOmitted(),
-      SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>> mounts =
-          const SdkOmitted(),
+      SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
+      SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>> mounts = const SdkOmitted(),
       SdkOptional<String> networkId = const SdkOmitted(),
       SdkOptional<Map<String, String>> env = const SdkOmitted(),
       SdkOptional<List<int>> ports = const SdkOmitted(),
       SdkOptional<String> currentSnapshotId = const SdkOmitted(),
       SdkOptional<Map<String, String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.updateSandbox(_config,
-        name: name,
-        projectId: projectId,
-        resume: resume,
-        teamId: teamId,
-        slug: slug,
-        resources: resources,
-        runtime: runtime,
-        timeout: timeout,
-        persistent: persistent,
-        snapshotExpiration: snapshotExpiration,
-        keepLastSnapshots: keepLastSnapshots,
-        networkPolicy: networkPolicy,
-        region: region,
-        failoverRegions: failoverRegions,
-        mounts: mounts,
-        networkId: networkId,
-        env: env,
-        ports: ports,
-        currentSnapshotId: currentSnapshotId,
-        tags: tags,
-        requestOptions: requestOptions);
+    return sandboxes_methods.updateSandbox(_config, name: name, projectId: projectId, resume: resume, teamId: teamId, slug: slug, resources: resources, runtime: runtime, timeout: timeout, persistent: persistent, snapshotExpiration: snapshotExpiration, keepLastSnapshots: keepLastSnapshots, networkPolicy: networkPolicy, region: region, failoverRegions: failoverRegions, mounts: mounts, networkId: networkId, env: env, ports: ports, currentSnapshotId: currentSnapshotId, tags: tags, requestOptions: requestOptions);
   }
 
   /// Deletes a named sandbox and its metadata, stopping any running sandbox processes first. Use `deleteOrphanSnapshots` to request asynchronous deletion of snapshots that are not referenced by another sandbox; when the config item is missing, returned sandbox fields may be stale.
@@ -6858,13 +4650,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.deleteSandbox(_config,
-        name: name,
-        projectId: projectId,
-        deleteOrphanSnapshots: deleteOrphanSnapshots,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.deleteSandbox(_config, name: name, projectId: projectId, deleteOrphanSnapshots: deleteOrphanSnapshots, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists commands executed in a session, including their current status, exit codes, and execution times. Use `sessionId` to select the session; results are ordered from most recent to oldest.
@@ -6875,11 +4661,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.listSessionCommands(_config,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.listSessionCommands(_config, sessionId: sessionId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Submits a shell command for execution in a session and returns a command ID for tracking its progress. Use `wait` to stream status updates until the command finishes; set `logs` as well to stream execution output in real time.
@@ -6900,56 +4682,14 @@ class SandboxesNamespace {
       SdkOptional<int> timeout = const SdkOmitted(),
       SdkOptional<bool> attachStdin = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.runSessionCommand(_config,
-        sessionId: sessionId,
-        cmdId: cmdId,
-        command: command,
-        teamId: teamId,
-        slug: slug,
-        args: args,
-        cwd: cwd,
-        env: env,
-        sudo: sudo,
-        wait: wait,
-        logs: logs,
-        timeout: timeout,
-        attachStdin: attachStdin,
-        requestOptions: requestOptions);
+    return sandboxes_methods.runSessionCommand(_config, sessionId: sessionId, cmdId: cmdId, command: command, teamId: teamId, slug: slug, args: args, cwd: cwd, env: env, sudo: sudo, wait: wait, logs: logs, timeout: timeout, attachStdin: attachStdin, requestOptions: requestOptions);
   }
 
   /// Submits a shell command for execution in a session and returns a command ID for tracking its progress. Use `wait` to stream status updates until the command finishes; set `logs` as well to stream execution output in real time.
   ///
   /// Executes a shell command inside a running session. The command runs asynchronously and returns immediately with a command ID that can be used to track its progress and retrieve its output. Optionally, use the `wait` parameter to stream the command status until completion.
-  Stream<dynamic> runSessionCommandStream(
-      {required String sessionId,
-      required String cmdId,
-      required String command,
-      SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<List<String>> args = const SdkOmitted(),
-      SdkOptional<String> cwd = const SdkOmitted(),
-      SdkOptional<Map<String, String>> env = const SdkOmitted(),
-      SdkOptional<bool> sudo = const SdkOmitted(),
-      SdkOptional<bool> wait = const SdkOmitted(),
-      SdkOptional<bool> logs = const SdkOmitted(),
-      SdkOptional<int> timeout = const SdkOmitted(),
-      SdkOptional<bool> attachStdin = const SdkOmitted(),
-      RequestOptions? requestOptions}) async* {
-    yield* sandboxes_methods.runSessionCommandStream(_config,
-        sessionId: sessionId,
-        cmdId: cmdId,
-        command: command,
-        teamId: teamId,
-        slug: slug,
-        args: args,
-        cwd: cwd,
-        env: env,
-        sudo: sudo,
-        wait: wait,
-        logs: logs,
-        timeout: timeout,
-        attachStdin: attachStdin,
-        requestOptions: requestOptions);
+  Stream<dynamic> runSessionCommandStream({required String sessionId, required String cmdId, required String command, SdkOptional<String> teamId = const SdkOmitted(), SdkOptional<String> slug = const SdkOmitted(), SdkOptional<List<String>> args = const SdkOmitted(), SdkOptional<String> cwd = const SdkOmitted(), SdkOptional<Map<String, String>> env = const SdkOmitted(), SdkOptional<bool> sudo = const SdkOmitted(), SdkOptional<bool> wait = const SdkOmitted(), SdkOptional<bool> logs = const SdkOmitted(), SdkOptional<int> timeout = const SdkOmitted(), SdkOptional<bool> attachStdin = const SdkOmitted(), RequestOptions? requestOptions}) async* {
+    yield* sandboxes_methods.runSessionCommandStream(_config, sessionId: sessionId, cmdId: cmdId, command: command, teamId: teamId, slug: slug, args: args, cwd: cwd, env: env, sudo: sudo, wait: wait, logs: logs, timeout: timeout, attachStdin: attachStdin, requestOptions: requestOptions);
   }
 
   /// Retrieves the status and details of a command executed in a session, including its exit code if it has finished. Set `wait` to true to block the request until the command finishes.
@@ -6962,13 +4702,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.getSessionCommand(_config,
-        sessionId: sessionId,
-        cmdId: cmdId,
-        wait: wait,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.getSessionCommand(_config, sessionId: sessionId, cmdId: cmdId, wait: wait, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Triggers termination of a running command in a session by sending it a signal. Use signal 15 (SIGTERM) for graceful termination or signal 9 (SIGKILL) to forcefully stop the process; the command must still be running.
@@ -6981,13 +4715,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.killSessionCommand(_config,
-        cmdId: cmdId,
-        sessionId: sessionId,
-        signal: signal,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.killSessionCommand(_config, cmdId: cmdId, sessionId: sessionId, signal: signal, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Writes data to a running command's stdin and can close stdin after the write. The command must have started with `attachStdin` enabled; send writes one at a time to preserve order, and use `offset` to make retries safe when the response includes `bytesWritten`.
@@ -7002,32 +4730,14 @@ class SandboxesNamespace {
       SdkOptional<int> offset = const SdkOmitted(),
       SdkOptional<bool> close = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.writeSessionCommandStdin(_config,
-        cmdId: cmdId,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        data: data,
-        offset: offset,
-        close: close,
-        requestOptions: requestOptions);
+    return sandboxes_methods.writeSessionCommandStdin(_config, cmdId: cmdId, sessionId: sessionId, teamId: teamId, slug: slug, data: data, offset: offset, close: close, requestOptions: requestOptions);
   }
 
   /// Streams command output in real time as newline-delimited JSON (ND-JSON). Each stream entry includes output data and a stream type such as `stdout`, `stderr`, or `error`.
   ///
   /// Streams the output of a command in real-time using newline-delimited JSON (ND-JSON). Each entry includes the output data and stream type. Stream types include `stdout`, `stderr`, and `error` (for stream failures).
-  Stream<GetSessionCommandLogsResponse> getSessionCommandLogs(
-      {required String sessionId,
-      required String cmdId,
-      SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<String> slug = const SdkOmitted(),
-      RequestOptions? requestOptions}) async* {
-    yield* sandboxes_methods.getSessionCommandLogs(_config,
-        sessionId: sessionId,
-        cmdId: cmdId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<GetSessionCommandLogsResponse> getSessionCommandLogs({required String sessionId, required String cmdId, SdkOptional<String> teamId = const SdkOmitted(), SdkOptional<String> slug = const SdkOmitted(), RequestOptions? requestOptions}) async* {
+    yield* sandboxes_methods.getSessionCommandLogs(_config, sessionId: sessionId, cmdId: cmdId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Stops a running session and releases its allocated resources, terminating all processes within it. This action cannot be undone, and the stopped session cannot be restarted.
@@ -7038,11 +4748,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.stopSession(_config,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.stopSession(_config, sessionId: sessionId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Extends the maximum execution time of a running session. Supply the additional duration in milliseconds; the session must be active, and the resulting timeout cannot exceed your account's maximum allowed limit.
@@ -7054,12 +4760,7 @@ class SandboxesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.extendSessionTimeout(_config,
-        sessionId: sessionId,
-        duration: duration,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return sandboxes_methods.extendSessionTimeout(_config, sessionId: sessionId, duration: duration, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Replaces the network access policy for a running session, controlling which external hosts it can reach. This is a full replacement, so any previously configured network rules are overwritten; choose the policy mode and rules for the complete configuration you want applied.
@@ -7071,12 +4772,7 @@ class SandboxesNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<dynamic> body = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.updateSessionNetworkPolicy(_config,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        body: body,
-        requestOptions: requestOptions);
+    return sandboxes_methods.updateSessionNetworkPolicy(_config, sessionId: sessionId, teamId: teamId, slug: slug, body: body, requestOptions: requestOptions);
   }
 
   /// Retrieves a file from a session's filesystem. Supply `path` to identify the file and optionally use `cwd` to resolve a relative path from a different base directory. The file is returned as a binary stream for download.
@@ -7089,13 +4785,7 @@ class SandboxesNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> cwd = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.readSessionFile(_config,
-        sessionId: sessionId,
-        path: path,
-        teamId: teamId,
-        slug: slug,
-        cwd: cwd,
-        requestOptions: requestOptions);
+    return sandboxes_methods.readSessionFile(_config, sessionId: sessionId, path: path, teamId: teamId, slug: slug, cwd: cwd, requestOptions: requestOptions);
   }
 
   /// Creates a directory in a session's filesystem. Supply `path` for the directory location and use `cwd` to resolve a relative path from a different base directory. Parent directories are created recursively by default; set `recursive` to false to require them to exist.
@@ -7109,14 +4799,7 @@ class SandboxesNamespace {
       SdkOptional<String> cwd = const SdkOmitted(),
       SdkOptional<bool> recursive = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSessionDirectory(_config,
-        sessionId: sessionId,
-        path: path,
-        teamId: teamId,
-        slug: slug,
-        cwd: cwd,
-        recursive: recursive,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSessionDirectory(_config, sessionId: sessionId, path: path, teamId: teamId, slug: slug, cwd: cwd, recursive: recursive, requestOptions: requestOptions);
   }
 
   /// Writes files to a session's filesystem by uploading and extracting a gzipped tarball. Send the archive with `Content-Type: application/gzip`; use `x-cwd` to choose an extraction directory. When `x-cwd` is omitted, files are extracted to the sandbox home directory.
@@ -7128,12 +4811,7 @@ class SandboxesNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> xCwd = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.writeSessionFiles(_config,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        xCwd: xCwd,
-        requestOptions: requestOptions);
+    return sandboxes_methods.writeSessionFiles(_config, sessionId: sessionId, teamId: teamId, slug: slug, xCwd: xCwd, requestOptions: requestOptions);
   }
 
   /// Creates a point-in-time snapshot of a running session's filesystem. Use a snapshot to restore the filesystem later or initialize another session with the same environment; the session must be running and able to accept commands. The source session is terminated after the snapshot is created.
@@ -7146,13 +4824,7 @@ class SandboxesNamespace {
           SdkOptional<String> slug = const SdkOmitted(),
           SdkOptional<int?> expiration = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSandboxesSessionsBySessionIdSnapshotV2(
-        _config,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        expiration: expiration,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSandboxesSessionsBySessionIdSnapshotV2(_config, sessionId: sessionId, teamId: teamId, slug: slug, expiration: expiration, requestOptions: requestOptions);
   }
 
   /// Forks a named sandbox into a new named sandbox, copying its configuration and environment variables. Supply `name` to identify the source and `projectId` unless you authenticate with an OIDC token; request fields override values copied from the source. If the source has a snapshot, the fork starts from it; otherwise, it starts from the source runtime or image.
@@ -7163,51 +4835,23 @@ class SandboxesNamespace {
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV2RequestNetworkPolicy>
-          networkPolicy = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV2RequestBodyResources> resources =
-          const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV2RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV2RequestBodyResources> resources = const SdkOmitted(),
       SdkOptional<List<int>> ports = const SdkOmitted(),
       SdkOptional<String> image = const SdkOmitted(),
       SdkOptional<int> timeout = const SdkOmitted(),
       SdkOptional<Map<String, String>> env = const SdkOmitted(),
-      SdkOptional<
-              Map<String, CreateSandboxesByNameForkV2RequestBodyMountsValue>>
-          mounts = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV2RequestBodyRegion> region =
-          const SdkOmitted(),
-      SdkOptional<
-              List<CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem>>
-          failoverRegions = const SdkOmitted(),
+      SdkOptional<Map<String, CreateSandboxesByNameForkV2RequestBodyMountsValue>> mounts = const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV2RequestBodyRegion> region = const SdkOmitted(),
+      SdkOptional<List<CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
       SdkOptional<String> networkId = const SdkOmitted(),
       SdkOptional<String> name_2 = const SdkOmitted(),
       SdkOptional<bool> persistent = const SdkOmitted(),
       SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV2RequestBodyKeepLastSnapshots>
-          keepLastSnapshots = const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV2RequestBodyKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
       SdkOptional<Map<String, String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSandboxesByNameForkV2(_config,
-        name: name,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        networkPolicy: networkPolicy,
-        resources: resources,
-        ports: ports,
-        image: image,
-        timeout: timeout,
-        env: env,
-        mounts: mounts,
-        region: region,
-        failoverRegions: failoverRegions,
-        networkId: networkId,
-        name_2: name_2,
-        persistent: persistent,
-        snapshotExpiration: snapshotExpiration,
-        keepLastSnapshots: keepLastSnapshots,
-        tags: tags,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSandboxesByNameForkV2(_config, name: name, projectId: projectId, teamId: teamId, slug: slug, networkPolicy: networkPolicy, resources: resources, ports: ports, image: image, timeout: timeout, env: env, mounts: mounts, region: region, failoverRegions: failoverRegions, networkId: networkId, name_2: name_2, persistent: persistent, snapshotExpiration: snapshotExpiration, keepLastSnapshots: keepLastSnapshots, tags: tags, requestOptions: requestOptions);
   }
 
   /// Creates a named sandbox environment with automatic snapshotting on shutdown. Configure its resources, source, networking, and other settings in the request body; when `image` and a snapshot source are both absent, the sandbox uses the default universal image. This API version does not accept a `runtime` parameter.
@@ -7216,54 +4860,26 @@ class SandboxesNamespace {
   Future<CreateSandboxesV3Response> createV3(
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateSandboxesV3RequestNetworkPolicy> networkPolicy =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV3RequestBodyArchitecture> architecture =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV3RequestBodyResources> resources =
-          const SdkOmitted(),
+      SdkOptional<CreateSandboxesV3RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV3RequestBodyArchitecture> architecture = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV3RequestBodyResources> resources = const SdkOmitted(),
       SdkOptional<CreateSandboxesV3RequestSource> source = const SdkOmitted(),
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<List<int>> ports = const SdkOmitted(),
       SdkOptional<String> image = const SdkOmitted(),
       SdkOptional<int> timeout = const SdkOmitted(),
       SdkOptional<Map<String, String>> env = const SdkOmitted(),
-      SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>> mounts =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV3RequestBodyRegion> region =
-          const SdkOmitted(),
-      SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>
-          failoverRegions = const SdkOmitted(),
+      SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>> mounts = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV3RequestBodyRegion> region = const SdkOmitted(),
+      SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
       SdkOptional<String> networkId = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<bool> persistent = const SdkOmitted(),
       SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-      SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots>
-          keepLastSnapshots = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
       SdkOptional<Map<String, String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSandboxesV3(_config,
-        teamId: teamId,
-        slug: slug,
-        networkPolicy: networkPolicy,
-        architecture: architecture,
-        resources: resources,
-        source: source,
-        projectId: projectId,
-        ports: ports,
-        image: image,
-        timeout: timeout,
-        env: env,
-        mounts: mounts,
-        region: region,
-        failoverRegions: failoverRegions,
-        networkId: networkId,
-        name: name,
-        persistent: persistent,
-        snapshotExpiration: snapshotExpiration,
-        keepLastSnapshots: keepLastSnapshots,
-        tags: tags,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSandboxesV3(_config, teamId: teamId, slug: slug, networkPolicy: networkPolicy, architecture: architecture, resources: resources, source: source, projectId: projectId, ports: ports, image: image, timeout: timeout, env: env, mounts: mounts, region: region, failoverRegions: failoverRegions, networkId: networkId, name: name, persistent: persistent, snapshotExpiration: snapshotExpiration, keepLastSnapshots: keepLastSnapshots, tags: tags, requestOptions: requestOptions);
   }
 
   /// Creates a point-in-time snapshot of a running session's filesystem. Use a snapshot to restore the filesystem later or initialize another session with the same environment; the session must be running and able to accept commands. The source session is terminated after the snapshot is created, and snapshots default to a seven-day expiration when neither the request nor sandbox configuration sets one.
@@ -7276,13 +4892,7 @@ class SandboxesNamespace {
           SdkOptional<String> slug = const SdkOmitted(),
           SdkOptional<int?> expiration = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSandboxesSessionsBySessionIdSnapshotV3(
-        _config,
-        sessionId: sessionId,
-        teamId: teamId,
-        slug: slug,
-        expiration: expiration,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSandboxesSessionsBySessionIdSnapshotV3(_config, sessionId: sessionId, teamId: teamId, slug: slug, expiration: expiration, requestOptions: requestOptions);
   }
 
   /// Forks a named sandbox into a new named sandbox, copying its configuration and environment variables. Supply `name` to identify the source and `projectId` unless you authenticate with an OIDC token; request fields override values copied from the source. If the source has a snapshot, the fork starts from it; otherwise, it starts from the source runtime or image, with seven-day snapshot expiration and a one-snapshot retention limit by default.
@@ -7293,51 +4903,23 @@ class SandboxesNamespace {
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicy>
-          networkPolicy = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV3RequestBodyResources> resources =
-          const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV3RequestBodyResources> resources = const SdkOmitted(),
       SdkOptional<List<int>> ports = const SdkOmitted(),
       SdkOptional<String> image = const SdkOmitted(),
       SdkOptional<int> timeout = const SdkOmitted(),
       SdkOptional<Map<String, String>> env = const SdkOmitted(),
-      SdkOptional<
-              Map<String, CreateSandboxesByNameForkV3RequestBodyMountsValue>>
-          mounts = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV3RequestBodyRegion> region =
-          const SdkOmitted(),
-      SdkOptional<
-              List<CreateSandboxesByNameForkV3RequestBodyFailoverRegionsItem>>
-          failoverRegions = const SdkOmitted(),
+      SdkOptional<Map<String, CreateSandboxesByNameForkV3RequestBodyMountsValue>> mounts = const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV3RequestBodyRegion> region = const SdkOmitted(),
+      SdkOptional<List<CreateSandboxesByNameForkV3RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
       SdkOptional<String> networkId = const SdkOmitted(),
       SdkOptional<String> name_2 = const SdkOmitted(),
       SdkOptional<bool> persistent = const SdkOmitted(),
       SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-      SdkOptional<CreateSandboxesByNameForkV3RequestKeepLastSnapshots>
-          keepLastSnapshots = const SdkOmitted(),
+      SdkOptional<CreateSandboxesByNameForkV3RequestKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
       SdkOptional<Map<String, String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSandboxesByNameForkV3(_config,
-        name: name,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        networkPolicy: networkPolicy,
-        resources: resources,
-        ports: ports,
-        image: image,
-        timeout: timeout,
-        env: env,
-        mounts: mounts,
-        region: region,
-        failoverRegions: failoverRegions,
-        networkId: networkId,
-        name_2: name_2,
-        persistent: persistent,
-        snapshotExpiration: snapshotExpiration,
-        keepLastSnapshots: keepLastSnapshots,
-        tags: tags,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSandboxesByNameForkV3(_config, name: name, projectId: projectId, teamId: teamId, slug: slug, networkPolicy: networkPolicy, resources: resources, ports: ports, image: image, timeout: timeout, env: env, mounts: mounts, region: region, failoverRegions: failoverRegions, networkId: networkId, name_2: name_2, persistent: persistent, snapshotExpiration: snapshotExpiration, keepLastSnapshots: keepLastSnapshots, tags: tags, requestOptions: requestOptions);
   }
 
   /// Creates a named sandbox environment with automatic snapshotting on shutdown. Configure its resources, source, networking, and other settings in the request body; when `image` and a snapshot source are both absent, the sandbox uses the default universal image. Persistent sandboxes keep only their most recent snapshot by default, and snapshots expire after seven days unless configured otherwise.
@@ -7346,61 +4928,33 @@ class SandboxesNamespace {
   Future<CreateSandboxesV4Response> createV4(
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<CreateSandboxesV4RequestNetworkPolicy> networkPolicy =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV4RequestBodyArchitecture> architecture =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV4RequestBodyResources> resources =
-          const SdkOmitted(),
+      SdkOptional<CreateSandboxesV4RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV4RequestBodyArchitecture> architecture = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV4RequestBodyResources> resources = const SdkOmitted(),
       SdkOptional<CreateSandboxesV4RequestSource> source = const SdkOmitted(),
       SdkOptional<String> projectId = const SdkOmitted(),
       SdkOptional<List<int>> ports = const SdkOmitted(),
       SdkOptional<String> image = const SdkOmitted(),
       SdkOptional<int> timeout = const SdkOmitted(),
       SdkOptional<Map<String, String>> env = const SdkOmitted(),
-      SdkOptional<Map<String, CreateSandboxesV4RequestBodyMountsValue>> mounts =
-          const SdkOmitted(),
-      SdkOptional<CreateSandboxesV4RequestBodyRegion> region =
-          const SdkOmitted(),
-      SdkOptional<List<CreateSandboxesV4RequestBodyFailoverRegionsItem>>
-          failoverRegions = const SdkOmitted(),
+      SdkOptional<Map<String, CreateSandboxesV4RequestBodyMountsValue>> mounts = const SdkOmitted(),
+      SdkOptional<CreateSandboxesV4RequestBodyRegion> region = const SdkOmitted(),
+      SdkOptional<List<CreateSandboxesV4RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
       SdkOptional<String> networkId = const SdkOmitted(),
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<bool> persistent = const SdkOmitted(),
       SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-      SdkOptional<CreateSandboxesV4RequestKeepLastSnapshots> keepLastSnapshots =
-          const SdkOmitted(),
+      SdkOptional<CreateSandboxesV4RequestKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
       SdkOptional<Map<String, String>> tags = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return sandboxes_methods.createSandboxesV4(_config,
-        teamId: teamId,
-        slug: slug,
-        networkPolicy: networkPolicy,
-        architecture: architecture,
-        resources: resources,
-        source: source,
-        projectId: projectId,
-        ports: ports,
-        image: image,
-        timeout: timeout,
-        env: env,
-        mounts: mounts,
-        region: region,
-        failoverRegions: failoverRegions,
-        networkId: networkId,
-        name: name,
-        persistent: persistent,
-        snapshotExpiration: snapshotExpiration,
-        keepLastSnapshots: keepLastSnapshots,
-        tags: tags,
-        requestOptions: requestOptions);
+    return sandboxes_methods.createSandboxesV4(_config, teamId: teamId, slug: slug, networkPolicy: networkPolicy, architecture: architecture, resources: resources, source: source, projectId: projectId, ports: ports, image: image, timeout: timeout, env: env, mounts: mounts, region: region, failoverRegions: failoverRegions, networkId: networkId, name: name, persistent: persistent, snapshotExpiration: snapshotExpiration, keepLastSnapshots: keepLastSnapshots, tags: tags, requestOptions: requestOptions);
   }
+
 }
 
 class SecurityNamespace {
   final ClientConfig _config;
   SecurityNamespace(ClientConfig config) : _config = config;
-
   /// Updates whether Attack Challenge mode is enabled for a project. Supply `projectId` and `attackModeEnabled`; include `attackModeActiveUntil` when using the request variant that sets an active-until time. The response includes the updated setting and its update timestamp.
   ///
   /// Update the setting for determining if the project has Attack Challenge mode enabled.
@@ -7409,8 +4963,7 @@ class SecurityNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.updateAttackChallengeMode(_config,
-        body: body, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return security_methods.updateAttackChallengeMode(_config, body: body, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the active and draft firewall configurations for a project, along with its configuration versions. Use this operation to inspect the current WAF settings and review available versions before changing or activating a configuration.
@@ -7418,8 +4971,7 @@ class SecurityNamespace {
   /// Lists WAF configs for a project
   Future<GetSecurityFirewallConfigResponse> getFirewallConfig(
       {RequestOptions? requestOptions}) async {
-    return security_methods.getSecurityFirewallConfig(_config,
-        requestOptions: requestOptions);
+    return security_methods.getSecurityFirewallConfig(_config, requestOptions: requestOptions);
   }
 
   /// Replaces the firewall configuration for a project, creating a configuration if one does not already exist. Supply `firewallEnabled` and any firewall settings you want applied, including rules, rulesets, IP rules, or managed rules.
@@ -7432,27 +4984,13 @@ class SecurityNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<Map<String, dynamic>> managedRules = const SdkOmitted(),
       SdkOptional<PutFirewallConfigRequestBodyCrs> crs = const SdkOmitted(),
-      SdkOptional<List<PutFirewallConfigRequestBodyRulesItem>> rules =
-          const SdkOmitted(),
+      SdkOptional<List<PutFirewallConfigRequestBodyRulesItem>> rules = const SdkOmitted(),
       SdkOptional<dynamic> rulesets = const SdkOmitted(),
-      SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips =
-          const SdkOmitted(),
+      SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips = const SdkOmitted(),
       SdkOptional<bool> botIdEnabled = const SdkOmitted(),
       SdkOptional<List<String>> logHeaders = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.putFirewallConfig(_config,
-        projectId: projectId,
-        firewallEnabled: firewallEnabled,
-        teamId: teamId,
-        slug: slug,
-        managedRules: managedRules,
-        crs: crs,
-        rules: rules,
-        rulesets: rulesets,
-        ips: ips,
-        botIdEnabled: botIdEnabled,
-        logHeaders: logHeaders,
-        requestOptions: requestOptions);
+    return security_methods.putFirewallConfig(_config, projectId: projectId, firewallEnabled: firewallEnabled, teamId: teamId, slug: slug, managedRules: managedRules, crs: crs, rules: rules, rulesets: rulesets, ips: ips, botIdEnabled: botIdEnabled, logHeaders: logHeaders, requestOptions: requestOptions);
   }
 
   /// Updates an existing firewall configuration by applying configuration changes. Supply the appropriate action and values for each change; the accepted body uses action-specific shapes for firewall settings and rulesets.
@@ -7464,12 +5002,7 @@ class SecurityNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.updateFirewallConfig(_config,
-        projectId: projectId,
-        body: body,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return security_methods.updateFirewallConfig(_config, projectId: projectId, body: body, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a specific firewall configuration version for a project. Use `configVersion` to select the version to inspect; the deployed version is identified as `active`.
@@ -7481,12 +5014,7 @@ class SecurityNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.getFirewallConfig(_config,
-        configVersion: configVersion,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return security_methods.getFirewallConfig(_config, configVersion: configVersion, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a firewall configuration version. Supply `configVersion` to identify the version to remove; use this operation when that version should no longer be available.
@@ -7494,21 +5022,15 @@ class SecurityNamespace {
   /// Promotes a draft WAF config to an active config
   Future<void> deleteFirewallConfigByConfigVersion(
       {required String configVersion, RequestOptions? requestOptions}) async {
-    return security_methods.deleteSecurityFirewallConfigByConfigVersion(_config,
-        configVersion: configVersion, requestOptions: requestOptions);
+    return security_methods.deleteSecurityFirewallConfigByConfigVersion(_config, configVersion: configVersion, requestOptions: requestOptions);
   }
 
   /// Triggers activation of a draft firewall configuration version. Supply `configVersion` to select the draft to promote; the response contains the activated configuration.
   ///
   /// Promotes a draft WAF config to an active config
-  Future<CreateSecurityFirewallConfigByConfigVersionActivateResponse>
-      createFirewallConfigByConfigVersionActivate(
-          {required String configVersion,
-          RequestOptions? requestOptions}) async {
-    return security_methods.createSecurityFirewallConfigByConfigVersionActivate(
-        _config,
-        configVersion: configVersion,
-        requestOptions: requestOptions);
+  Future<CreateSecurityFirewallConfigByConfigVersionActivateResponse> createFirewallConfigByConfigVersionActivate(
+      {required String configVersion, RequestOptions? requestOptions}) async {
+    return security_methods.createSecurityFirewallConfigByConfigVersionActivate(_config, configVersion: configVersion, requestOptions: requestOptions);
   }
 
   /// Retrieves recent active attack data for a project. Use `since` to set the lookback period in days; it defaults to one day when omitted.
@@ -7520,12 +5042,7 @@ class SecurityNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.getActiveAttackStatus(_config,
-        projectId: projectId,
-        since: since,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return security_methods.getActiveAttackStatus(_config, projectId: projectId, since: since, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists system bypass rules configured for a project. Filter the results with `sourceIp`, `domain`, or `projectScope`, and use `offset` and `limit` to page through matching rules.
@@ -7541,16 +5058,7 @@ class SecurityNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.getBypassIp(_config,
-        projectId: projectId,
-        limit: limit,
-        sourceIp: sourceIp,
-        domain: domain,
-        projectScope: projectScope,
-        offset: offset,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return security_methods.getBypassIp(_config, projectId: projectId, limit: limit, sourceIp: sourceIp, domain: domain, projectScope: projectScope, offset: offset, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a system bypass rule for a project. Supply either `domain` to scope the rule to a domain or `projectScope` to apply it across project domains; you can also set a source IP, expiry, and note.
@@ -7567,17 +5075,7 @@ class SecurityNamespace {
       SdkOptional<double> ttl = const SdkOmitted(),
       SdkOptional<String> note = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.addBypassIp(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        domain: domain,
-        projectScope: projectScope,
-        sourceIp: sourceIp,
-        allSources: allSources,
-        ttl: ttl,
-        note: note,
-        requestOptions: requestOptions);
+    return security_methods.addBypassIp(_config, projectId: projectId, teamId: teamId, slug: slug, domain: domain, projectScope: projectScope, sourceIp: sourceIp, allSources: allSources, ttl: ttl, note: note, requestOptions: requestOptions);
   }
 
   /// Deletes system bypass rules for a project. Specify either `domain` or `projectScope` to identify the scope of the rules to remove, and optionally narrow the selection with source details.
@@ -7593,16 +5091,7 @@ class SecurityNamespace {
       SdkOptional<bool> allSources = const SdkOmitted(),
       SdkOptional<String> note = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.removeBypassIp(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        domain: domain,
-        projectScope: projectScope,
-        sourceIp: sourceIp,
-        allSources: allSources,
-        note: note,
-        requestOptions: requestOptions);
+    return security_methods.removeBypassIp(_config, projectId: projectId, teamId: teamId, slug: slug, domain: domain, projectScope: projectScope, sourceIp: sourceIp, allSources: allSources, note: note, requestOptions: requestOptions);
   }
 
   /// Lists conditional firewall bypass rules for a project. Use `projectId` to select the project and optionally filter by `slug` or `domain`; `limit` and `offset` control the returned results. The response includes the rules and may include pagination metadata.
@@ -7616,14 +5105,7 @@ class SecurityNamespace {
       SdkOptional<String> offset = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.getConditionalBypass(_config,
-        projectId: projectId,
-        slug: slug,
-        domain: domain,
-        limit: limit,
-        offset: offset,
-        teamId: teamId,
-        requestOptions: requestOptions);
+    return security_methods.getConditionalBypass(_config, projectId: projectId, slug: slug, domain: domain, limit: limit, offset: offset, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Creates a conditional firewall bypass rule for a project domain. Provide the domain and a `conditionGroup` containing the conditions that determine when the bypass applies. You can add an optional note to describe the rule.
@@ -7632,20 +5114,12 @@ class SecurityNamespace {
   Future<CreateConditionalBypassResponse> createConditionalBypass(
       {required String projectId,
       required String domain,
-      required List<CreateConditionalBypassRequestBodyConditionGroupItem>
-          conditionGroup,
+      required List<CreateConditionalBypassRequestBodyConditionGroupItem> conditionGroup,
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> note = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.createConditionalBypass(_config,
-        projectId: projectId,
-        domain: domain,
-        conditionGroup: conditionGroup,
-        slug: slug,
-        teamId: teamId,
-        note: note,
-        requestOptions: requestOptions);
+    return security_methods.createConditionalBypass(_config, projectId: projectId, domain: domain, conditionGroup: conditionGroup, slug: slug, teamId: teamId, note: note, requestOptions: requestOptions);
   }
 
   /// Deletes a conditional firewall bypass rule for a project domain. Specify the project with `projectId` and the rule's domain with `domain`. You can use `slug` or `teamId` to perform the request in a team context.
@@ -7657,12 +5131,7 @@ class SecurityNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.deleteConditionalBypass(_config,
-        projectId: projectId,
-        domain: domain,
-        slug: slug,
-        teamId: teamId,
-        requestOptions: requestOptions);
+    return security_methods.deleteConditionalBypass(_config, projectId: projectId, domain: domain, slug: slug, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Lists firewall actions for a project, with optional filters for time, host, IP address, activity, action, and rule. Filters are combined across parameters and matched as alternatives within repeated parameters; use the returned pagination cursor to fetch subsequent results. Rule names reflect the project's current active firewall configuration and active team rulesets.
@@ -7678,69 +5147,35 @@ class SecurityNamespace {
       SdkOptional<String> hosts = const SdkOmitted(),
       SdkOptional<List<String>> ip = const SdkOmitted(),
       SdkOptional<bool> isActive = const SdkOmitted(),
-      SdkOptional<List<GetSecurityFirewallEventsActionItem>> action =
-          const SdkOmitted(),
-      SdkOptional<List<GetSecurityFirewallEventsActionTypeItem>> actionType =
-          const SdkOmitted(),
-      SdkOptional<GetSecurityFirewallEventsRuleKind> ruleKind =
-          const SdkOmitted(),
+      SdkOptional<List<GetSecurityFirewallEventsActionItem>> action = const SdkOmitted(),
+      SdkOptional<List<GetSecurityFirewallEventsActionTypeItem>> actionType = const SdkOmitted(),
+      SdkOptional<GetSecurityFirewallEventsRuleKind> ruleKind = const SdkOmitted(),
       SdkOptional<List<String>> ruleId = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.getSecurityFirewallEvents(_config,
-        projectId: projectId,
-        sort: sort,
-        limit: limit,
-        cursor: cursor,
-        startTimestamp: startTimestamp,
-        endTimestamp: endTimestamp,
-        hosts: hosts,
-        ip: ip,
-        isActive: isActive,
-        action: action,
-        actionType: actionType,
-        ruleKind: ruleKind,
-        ruleId: ruleId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return security_methods.getSecurityFirewallEvents(_config, projectId: projectId, sort: sort, limit: limit, cursor: cursor, startTimestamp: startTimestamp, endTimestamp: endTimestamp, hosts: hosts, ip: ip, isActive: isActive, action: action, actionType: actionType, ruleKind: ruleKind, ruleId: ruleId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Returns aggregate counts for firewall actions matching the specified project and filters, without returning individual action rows. The counts represent policies, including policies that matched no requests. Use the same filter parameters as the firewall actions listing to scope the summary.
   ///
   /// Aggregate counts over the firewall actions matched by the same filters as `GET /v1/security/firewall/events`, without fetching any rows. Counts are of policies (mitigations), including ones that matched no requests.
-  Future<GetSecurityFirewallEventsSummaryResponse> getFirewallEventsSummary(
-      {required String projectId,
-      SdkOptional<double> startTimestamp = const SdkOmitted(),
-      SdkOptional<double> endTimestamp = const SdkOmitted(),
-      SdkOptional<String> hosts = const SdkOmitted(),
-      SdkOptional<List<String>> ip = const SdkOmitted(),
-      SdkOptional<bool> isActive = const SdkOmitted(),
-      SdkOptional<List<GetSecurityFirewallEventsSummaryActionItem>> action =
-          const SdkOmitted(),
-      SdkOptional<List<GetSecurityFirewallEventsSummaryActionTypeItem>>
-          actionType = const SdkOmitted(),
-      SdkOptional<GetSecurityFirewallEventsSummaryRuleKind> ruleKind =
-          const SdkOmitted(),
-      SdkOptional<List<String>> ruleId = const SdkOmitted(),
-      SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<String> slug = const SdkOmitted(),
-      RequestOptions? requestOptions}) async {
-    return security_methods.getSecurityFirewallEventsSummary(_config,
-        projectId: projectId,
-        startTimestamp: startTimestamp,
-        endTimestamp: endTimestamp,
-        hosts: hosts,
-        ip: ip,
-        isActive: isActive,
-        action: action,
-        actionType: actionType,
-        ruleKind: ruleKind,
-        ruleId: ruleId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Future<GetSecurityFirewallEventsSummaryResponse>
+      getFirewallEventsSummary(
+          {required String projectId,
+          SdkOptional<double> startTimestamp = const SdkOmitted(),
+          SdkOptional<double> endTimestamp = const SdkOmitted(),
+          SdkOptional<String> hosts = const SdkOmitted(),
+          SdkOptional<List<String>> ip = const SdkOmitted(),
+          SdkOptional<bool> isActive = const SdkOmitted(),
+          SdkOptional<List<GetSecurityFirewallEventsSummaryActionItem>> action = const SdkOmitted(),
+          SdkOptional<List<GetSecurityFirewallEventsSummaryActionTypeItem>> actionType = const SdkOmitted(),
+          SdkOptional<GetSecurityFirewallEventsSummaryRuleKind> ruleKind = const SdkOmitted(),
+          SdkOptional<List<String>> ruleId = const SdkOmitted(),
+          SdkOptional<String> teamId = const SdkOmitted(),
+          SdkOptional<String> slug = const SdkOmitted(),
+          RequestOptions? requestOptions}) async {
+    return security_methods.getSecurityFirewallEventsSummary(_config, projectId: projectId, startTimestamp: startTimestamp, endTimestamp: endTimestamp, hosts: hosts, ip: ip, isActive: isActive, action: action, actionType: actionType, ruleKind: ruleKind, ruleId: ruleId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Generates a firewall rule from a natural-language description for the selected project or team context. Use `projectId`, `teamId`, or `slug` to scope the request, then inspect the returned `rule` or `error`.
@@ -7751,74 +5186,57 @@ class SecurityNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return security_methods.generateFirewallRule(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return security_methods.generateFirewallRule(_config, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class SpeedInsightsNamespace {
   final ClientConfig _config;
   SpeedInsightsNamespace(ClientConfig config) : _config = config;
-
   /// Updates the Speed Insights toggle for a project. Provide the `value` field to set the toggle state, and use `projectId` to select the project. The response confirms the resulting toggle value.
   Future<CreateSpeedInsightsToggleResponse> createToggle(
       {required String projectId,
       required bool value_,
       RequestOptions? requestOptions}) async {
-    return speed_insights_methods.createSpeedInsightsToggle(_config,
-        projectId: projectId, value_: value_, requestOptions: requestOptions);
+    return speed_insights_methods.createSpeedInsightsToggle(_config, projectId: projectId, value_: value_, requestOptions: requestOptions);
   }
+
 }
 
 class StorageNamespace {
   final ClientConfig _config;
   StorageNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves a storage store by its identifier. Use `skip-metadata` to control whether project metadata is included and `include-guides` to control whether guides are included in the response.
   Future<GetStorageStoresByIdResponse> getStoresById(
       {required String id,
       SdkOptional<bool> skipMetadata = const SdkOmitted(),
       SdkOptional<bool> includeGuides = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return storage_methods.getStorageStoresById(_config,
-        id: id,
-        skipMetadata: skipMetadata,
-        includeGuides: includeGuides,
-        requestOptions: requestOptions);
+    return storage_methods.getStorageStoresById(_config, id: id, skipMetadata: skipMetadata, includeGuides: includeGuides, requestOptions: requestOptions);
   }
 
   /// Creates a Blob store with a name and optional region, access setting, and project association. Choose a supported region and set `access` to `public` or `private`; access defaults to public when omitted. The response includes the created store and its configuration.
   Future<CreateStorageStoresBlobResponse> createStoresBlob(
       {required String name,
-      SdkOptional<CreateStorageStoresBlobRequestBodyRegion> region =
-          const SdkOmitted(),
-      SdkOptional<CreateStorageStoresBlobRequestBodyAccess> access =
-          const SdkOmitted(),
+      SdkOptional<CreateStorageStoresBlobRequestBodyRegion> region = const SdkOmitted(),
+      SdkOptional<CreateStorageStoresBlobRequestBodyAccess> access = const SdkOmitted(),
       SdkOptional<String> projectId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return storage_methods.createStorageStoresBlob(_config,
-        name: name,
-        region: region,
-        access: access,
-        projectId: projectId,
-        requestOptions: requestOptions);
+    return storage_methods.createStorageStoresBlob(_config, name: name, region: region, access: access, projectId: projectId, requestOptions: requestOptions);
   }
 
   /// Deletes a Blob store by its identifier. Use the returned identifier to confirm which store was deleted. The store must be accessible to the authenticated user.
   Future<DeleteStorageStoresBlobByIdResponse> deleteStoresBlobById(
       {required String id, RequestOptions? requestOptions}) async {
-    return storage_methods.deleteStorageStoresBlobById(_config,
-        id: id, requestOptions: requestOptions);
+    return storage_methods.deleteStorageStoresBlobById(_config, id: id, requestOptions: requestOptions);
   }
+
 }
 
 class TeamsNamespace {
   final ClientConfig _config;
   TeamsNamespace(ClientConfig config) : _config = config;
-
   /// Lists team members and pending email invitations for the specified team. Use the query filters to search members, select a team role, or restrict results by membership timestamps or project eligibility. The response includes pagination metadata for navigating the results.
   ///
   /// Get a paginated list of team members for the provided team.
@@ -7833,17 +5251,7 @@ class TeamsNamespace {
       SdkOptional<String> eligibleMembersForProjectId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.getTeamMembers(_config,
-        teamId: teamId,
-        limit: limit,
-        since: since,
-        until: until,
-        search: search,
-        role: role,
-        excludeProject: excludeProject,
-        eligibleMembersForProjectId: eligibleMembersForProjectId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return teams_methods.getTeamMembers(_config, teamId: teamId, limit: limit, since: since, until: until, search: search, role: role, excludeProject: excludeProject, eligibleMembersForProjectId: eligibleMembersForProjectId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Invites one or more users to join the specified team by email. Each invitation requires an `email`; you can also assign a team role and project-specific roles. The authenticated user must be an `OWNER` to invite members.
@@ -7852,11 +5260,9 @@ class TeamsNamespace {
   Future<InvitedTeamMember> inviteUserTo(
       {required String teamId,
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<List<InviteUserToTeamRequestBodyItem>> body =
-          const SdkOmitted(),
+      SdkOptional<List<InviteUserToTeamRequestBodyItem>> body = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.inviteUserToTeam(_config,
-        teamId: teamId, slug: slug, body: body, requestOptions: requestOptions);
+    return teams_methods.inviteUserToTeam(_config, teamId: teamId, slug: slug, body: body, requestOptions: requestOptions);
   }
 
   /// Submits a request for the authenticated user to join the specified team. Include `joinedFrom.origin` to identify where the request originated, and provide the relevant repository or Git account details when applicable. A team owner must approve the request, and no more than 100 users can have pending access requests at the same time.
@@ -7866,8 +5272,7 @@ class TeamsNamespace {
       {required String teamId,
       required RequestAccessToTeamRequestBodyJoinedFrom joinedFrom,
       RequestOptions? requestOptions}) async {
-    return teams_methods.requestAccessToTeam(_config,
-        teamId: teamId, joinedFrom: joinedFrom, requestOptions: requestOptions);
+    return teams_methods.requestAccessToTeam(_config, teamId: teamId, joinedFrom: joinedFrom, requestOptions: requestOptions);
   }
 
   /// Retrieves the status of a user's request to join a team. Use `userId` to identify whose request to check; the endpoint returns the authenticated user's status when that path segment is not provided. A declined request is reported as not found.
@@ -7877,8 +5282,7 @@ class TeamsNamespace {
       {required String userId,
       required String teamId,
       RequestOptions? requestOptions}) async {
-    return teams_methods.getTeamAccessRequest(_config,
-        userId: userId, teamId: teamId, requestOptions: requestOptions);
+    return teams_methods.getTeamAccessRequest(_config, userId: userId, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Joins the authenticated user to a team using the team identifier and, when applicable, an invite code. Include `inviteCode` in the request body when joining with a code. The response identifies the team the user joined and the source of the join.
@@ -7888,8 +5292,7 @@ class TeamsNamespace {
       {required String teamId,
       SdkOptional<String> inviteCode = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.joinTeam(_config,
-        teamId: teamId, inviteCode: inviteCode, requestOptions: requestOptions);
+    return teams_methods.joinTeam(_config, teamId: teamId, inviteCode: inviteCode, requestOptions: requestOptions);
   }
 
   /// Updates a member's membership on the specified team, including their team role, permissions, or project roles. You can also confirm an unconfirmed member by setting `confirmed` to `true`. The authenticated user must be a team owner, except when disconnecting their own SAML connection.
@@ -7898,25 +5301,13 @@ class TeamsNamespace {
   Future<UpdateTeamMemberResponse> updateMember(
       {required String uid,
       required String teamId,
-      SdkOptional<UpdateTeamMemberRequestBodyConfirmed> confirmed =
-          const SdkOmitted(),
+      SdkOptional<UpdateTeamMemberRequestBodyConfirmed> confirmed = const SdkOmitted(),
       SdkOptional<String> role = const SdkOmitted(),
-      SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>>
-          teamPermissions = const SdkOmitted(),
-      SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>>
-          projects = const SdkOmitted(),
-      SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom> joinedFrom =
-          const SdkOmitted(),
+      SdkOptional<List<UpdateTeamMemberRequestBodyTeamPermissionsItem>> teamPermissions = const SdkOmitted(),
+      SdkOptional<List<UpdateTeamMemberRequestBodyProjectsItem>> projects = const SdkOmitted(),
+      SdkOptional<UpdateTeamMemberRequestBodyJoinedFrom> joinedFrom = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.updateTeamMember(_config,
-        uid: uid,
-        teamId: teamId,
-        confirmed: confirmed,
-        role: role,
-        teamPermissions: teamPermissions,
-        projects: projects,
-        joinedFrom: joinedFrom,
-        requestOptions: requestOptions);
+    return teams_methods.updateTeamMember(_config, uid: uid, teamId: teamId, confirmed: confirmed, role: role, teamPermissions: teamPermissions, projects: projects, joinedFrom: joinedFrom, requestOptions: requestOptions);
   }
 
   /// Removes a member from a team, dismisses a user's access request, or lets a member leave the team. Use `newDefaultTeamId` to set a replacement default team for the user. Directory Sync members can be removed when their directory email is absent or does not match a primary or verified secondary email.
@@ -7927,11 +5318,7 @@ class TeamsNamespace {
       required String teamId,
       SdkOptional<String> newDefaultTeamId = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.removeTeamMember(_config,
-        uid: uid,
-        teamId: teamId,
-        newDefaultTeamId: newDefaultTeamId,
-        requestOptions: requestOptions);
+    return teams_methods.removeTeamMember(_config, uid: uid, teamId: teamId, newDefaultTeamId: newDefaultTeamId, requestOptions: requestOptions);
   }
 
   /// Retrieves information about the specified team, including its billing plan, creation details, and team configuration. Use the team identifier to select the team; you can also supply its slug as request context.
@@ -7941,8 +5328,7 @@ class TeamsNamespace {
       {required String teamId,
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.getTeams(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return teams_methods.getTeams(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the specified team's information using the fields supplied in the request body. Include only the team properties you want to change, such as its name, slug, avatar, or feedback settings. The authenticated user must be a team owner to update the team.
@@ -7961,73 +5347,27 @@ class TeamsNamespace {
       SdkOptional<String> slug_2 = const SdkOmitted(),
       SdkOptional<String> enablePreviewFeedback = const SdkOmitted(),
       SdkOptional<String> enableProductionFeedback = const SdkOmitted(),
-      SdkOptional<String> sensitiveEnvironmentVariablePolicy =
-          const SdkOmitted(),
-      SdkOptional<String> disjunctiveProductionSecretPolicy =
-          const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyRemoteCaching> remoteCaching =
-          const SdkOmitted(),
+      SdkOptional<String> sensitiveEnvironmentVariablePolicy = const SdkOmitted(),
+      SdkOptional<String> disjunctiveProductionSecretPolicy = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyRemoteCaching> remoteCaching = const SdkOmitted(),
       SdkOptional<bool> hideIpAddresses = const SdkOmitted(),
       SdkOptional<bool> hideIpAddressesInLogDrains = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode>
-          dpAccessRequestsMode = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode> dpAccessRequestsMode = const SdkOmitted(),
       SdkOptional<bool> requireVerifiedCommits = const SdkOmitted(),
       SdkOptional<bool> disableRepositoryDispatchEvents = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection>
-          defaultDeploymentProtection = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDefaultPassport?> defaultPassport =
-          const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings>
-          defaultExpirationSettings = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestDeploymentPolicy> deploymentPolicy =
-          const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>
-          strictDeploymentProtectionSettings = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks>
-          strictShareableLinks = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>
-          strictPasswordProtectionSettings = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictConnectors> strictConnectors =
-          const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection> defaultDeploymentProtection = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyDefaultPassport?> defaultPassport = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings> defaultExpirationSettings = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestDeploymentPolicy> deploymentPolicy = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings> strictDeploymentProtectionSettings = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks> strictShareableLinks = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings> strictPasswordProtectionSettings = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyStrictConnectors> strictConnectors = const SdkOmitted(),
       SdkOptional<UpdateTeamsRequestNsnbConfig> nsnbConfig = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestDefaultProjectJobs> defaultProjectJobs =
-          const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyResourceConfig> resourceConfig =
-          const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestDefaultProjectJobs> defaultProjectJobs = const SdkOmitted(),
+      SdkOptional<UpdateTeamsRequestBodyResourceConfig> resourceConfig = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.updateTeams(_config,
-        teamId: teamId,
-        slug: slug,
-        avatar: avatar,
-        description: description,
-        emailDomain: emailDomain,
-        name: name,
-        previewDeploymentSuffix: previewDeploymentSuffix,
-        regenerateInviteCode: regenerateInviteCode,
-        saml: saml,
-        slug_2: slug_2,
-        enablePreviewFeedback: enablePreviewFeedback,
-        enableProductionFeedback: enableProductionFeedback,
-        sensitiveEnvironmentVariablePolicy: sensitiveEnvironmentVariablePolicy,
-        disjunctiveProductionSecretPolicy: disjunctiveProductionSecretPolicy,
-        remoteCaching: remoteCaching,
-        hideIpAddresses: hideIpAddresses,
-        hideIpAddressesInLogDrains: hideIpAddressesInLogDrains,
-        dpAccessRequestsMode: dpAccessRequestsMode,
-        requireVerifiedCommits: requireVerifiedCommits,
-        disableRepositoryDispatchEvents: disableRepositoryDispatchEvents,
-        defaultDeploymentProtection: defaultDeploymentProtection,
-        defaultPassport: defaultPassport,
-        defaultExpirationSettings: defaultExpirationSettings,
-        deploymentPolicy: deploymentPolicy,
-        strictDeploymentProtectionSettings: strictDeploymentProtectionSettings,
-        strictShareableLinks: strictShareableLinks,
-        strictPasswordProtectionSettings: strictPasswordProtectionSettings,
-        strictConnectors: strictConnectors,
-        nsnbConfig: nsnbConfig,
-        defaultProjectJobs: defaultProjectJobs,
-        resourceConfig: resourceConfig,
-        requestOptions: requestOptions);
+    return teams_methods.updateTeams(_config, teamId: teamId, slug: slug, avatar: avatar, description: description, emailDomain: emailDomain, name: name, previewDeploymentSuffix: previewDeploymentSuffix, regenerateInviteCode: regenerateInviteCode, saml: saml, slug_2: slug_2, enablePreviewFeedback: enablePreviewFeedback, enableProductionFeedback: enableProductionFeedback, sensitiveEnvironmentVariablePolicy: sensitiveEnvironmentVariablePolicy, disjunctiveProductionSecretPolicy: disjunctiveProductionSecretPolicy, remoteCaching: remoteCaching, hideIpAddresses: hideIpAddresses, hideIpAddressesInLogDrains: hideIpAddressesInLogDrains, dpAccessRequestsMode: dpAccessRequestsMode, requireVerifiedCommits: requireVerifiedCommits, disableRepositoryDispatchEvents: disableRepositoryDispatchEvents, defaultDeploymentProtection: defaultDeploymentProtection, defaultPassport: defaultPassport, defaultExpirationSettings: defaultExpirationSettings, deploymentPolicy: deploymentPolicy, strictDeploymentProtectionSettings: strictDeploymentProtectionSettings, strictShareableLinks: strictShareableLinks, strictPasswordProtectionSettings: strictPasswordProtectionSettings, strictConnectors: strictConnectors, nsnbConfig: nsnbConfig, defaultProjectJobs: defaultProjectJobs, resourceConfig: resourceConfig, requestOptions: requestOptions);
   }
 
   /// Lists teams that the authenticated user belongs to, with pagination metadata. Use `limit` to cap the number of teams and `since` or `until` to filter by creation time in milliseconds.
@@ -8038,11 +5378,7 @@ class TeamsNamespace {
       SdkOptional<double> since = const SdkOmitted(),
       SdkOptional<double> until = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.listTeams(_config,
-        limit: limit,
-        since: since,
-        until: until,
-        requestOptions: requestOptions);
+    return teams_methods.listTeams(_config, limit: limit, since: since, until: until, requestOptions: requestOptions);
   }
 
   /// Creates a new team under the authenticated user's account. Supply `slug` and optionally `name`; the team name is generated from the slug when you omit `name`. A successful response includes the created team's identifier and slug.
@@ -8051,14 +5387,9 @@ class TeamsNamespace {
   Future<CreateTeamResponse> create(
       {required String slug,
       SdkOptional<String> name = const SdkOmitted(),
-      SdkOptional<CreateTeamRequestBodyAttribution> attribution =
-          const SdkOmitted(),
+      SdkOptional<CreateTeamRequestBodyAttribution> attribution = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.createTeam(_config,
-        slug: slug,
-        name: name,
-        attribution: attribution,
-        requestOptions: requestOptions);
+    return teams_methods.createTeam(_config, slug: slug, name: name, attribution: attribution, requestOptions: requestOptions);
   }
 
   /// Updates Directory Sync role mappings for a team, associating directory groups with team roles or access groups. Identify the team with `teamId` or `slug` and provide the mappings in `roles`.
@@ -8069,11 +5400,7 @@ class TeamsNamespace {
       required Map<String, dynamic> roles,
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.postTeamDsyncRoles(_config,
-        teamId: teamId,
-        roles: roles,
-        slug: slug,
-        requestOptions: requestOptions);
+    return teams_methods.postTeamDsyncRoles(_config, teamId: teamId, roles: roles, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a team under the authenticated user's account. Identify the team with `teamId` and optionally provide `newDefaultTeamId` to select a replacement default team. Enterprise teams can be deleted only in test billing mode and when they are not linked to an organization.
@@ -8083,15 +5410,9 @@ class TeamsNamespace {
       {required String teamId,
       SdkOptional<String> newDefaultTeamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
-      SdkOptional<List<DeleteTeamRequestBodyReasonsItem>> reasons =
-          const SdkOmitted(),
+      SdkOptional<List<DeleteTeamRequestBodyReasonsItem>> reasons = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.deleteTeam(_config,
-        teamId: teamId,
-        newDefaultTeamId: newDefaultTeamId,
-        slug: slug,
-        reasons: reasons,
-        requestOptions: requestOptions);
+    return teams_methods.deleteTeam(_config, teamId: teamId, newDefaultTeamId: newDefaultTeamId, slug: slug, reasons: reasons, requestOptions: requestOptions);
   }
 
   /// Deletes an active team invite code. Use `teamId` and `inviteId` to identify the team and invite code to remove.
@@ -8101,8 +5422,7 @@ class TeamsNamespace {
       {required String inviteId,
       required String teamId,
       RequestOptions? requestOptions}) async {
-    return teams_methods.deleteTeamInviteCode(_config,
-        inviteId: inviteId, teamId: teamId, requestOptions: requestOptions);
+    return teams_methods.deleteTeamInviteCode(_config, inviteId: inviteId, teamId: teamId, requestOptions: requestOptions);
   }
 
   /// Updates the settings of a microfrontends group in a team. Supply any of `name`, `fallbackEnvironment`, or `enablePolyrepoBranchRouting` to change that setting; fields you omit are not specified for update.
@@ -8116,14 +5436,7 @@ class TeamsNamespace {
       SdkOptional<String> fallbackEnvironment = const SdkOmitted(),
       SdkOptional<bool> enablePolyrepoBranchRouting = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.updateMicrofrontendsGroup(_config,
-        groupId: groupId,
-        teamId: teamId,
-        slug: slug,
-        name: name,
-        fallbackEnvironment: fallbackEnvironment,
-        enablePolyrepoBranchRouting: enablePolyrepoBranchRouting,
-        requestOptions: requestOptions);
+    return teams_methods.updateMicrofrontendsGroup(_config, groupId: groupId, teamId: teamId, slug: slug, name: name, fallbackEnvironment: fallbackEnvironment, enablePolyrepoBranchRouting: enablePolyrepoBranchRouting, requestOptions: requestOptions);
   }
 
   /// Deletes a microfrontends group from the team associated with its group identifier. Use `groupId` and `teamId` to identify the group and team.
@@ -8134,18 +5447,14 @@ class TeamsNamespace {
       required String teamId,
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.deleteMicrofrontendsGroup(_config,
-        groupId: groupId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return teams_methods.deleteMicrofrontendsGroup(_config, groupId: groupId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class VcrNamespace {
   final ClientConfig _config;
   VcrNamespace(ClientConfig config) : _config = config;
-
   /// Creates a container registry repository for a project. Supply `projectId` and `name` in the request body; the name must follow the allowed lowercase repository-name format. The `teamId` or `slug` query parameter selects the team to act on behalf of.
   ///
   /// Create a container registry repository for a project.
@@ -8155,12 +5464,7 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.createRepository(_config,
-        projectId: projectId,
-        name: name,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.createRepository(_config, projectId: projectId, name: name, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists container registry repositories for a project in the authenticated team. Supply `projectId` to select the project; use `cursor` to continue through paginated results and `limit` to control the page size.
@@ -8173,32 +5477,14 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.listRepositories(_config,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.listRepositories(_config, projectId: projectId, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists container registry repositories for a project in the authenticated team. Supply `projectId` to select the project; use `cursor` to continue through paginated results and `limit` to control the page size.
   ///
   /// List container registry repositories for a project.
-  Stream<VcrRepository> listRepositoriesPaginated(
-      {required String projectId,
-      int? limit,
-      String? cursor,
-      String? teamId,
-      String? slug,
-      RequestOptions? requestOptions}) async* {
-    yield* vcr_methods.listRepositoriesPaginated(_config,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<VcrRepository> listRepositoriesPaginated({required String projectId, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
+    yield* vcr_methods.listRepositoriesPaginated(_config, projectId: projectId, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a container registry repository for a project by its identifier or name. Supply `projectId` to select the project; IDs take precedence over names when identifying the project.
@@ -8210,12 +5496,7 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.getRepository(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.getRepository(_config, idOrName: idOrName, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a container registry repository by scheduling it for removal. The repository disappears from list and get results immediately, while its images and associated data are reclaimed asynchronously.
@@ -8227,12 +5508,7 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.deleteRepository(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.deleteRepository(_config, idOrName: idOrName, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists images and their tags for a container registry repository. Supply `projectId` and `idOrName` to identify the repository, and use `untagged` to filter for images without tags. Use `cursor` to continue through paginated results.
@@ -8247,38 +5523,14 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.listRepositoryImages(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        untagged: untagged,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.listRepositoryImages(_config, idOrName: idOrName, projectId: projectId, limit: limit, cursor: cursor, untagged: untagged, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists images and their tags for a container registry repository. Supply `projectId` and `idOrName` to identify the repository, and use `untagged` to filter for images without tags. Use `cursor` to continue through paginated results.
   ///
   /// List images for a container registry repository, including their tags.
-  Stream<VcrImageListItem> listRepositoryImagesPaginated(
-      {required String idOrName,
-      required String projectId,
-      int? limit,
-      String? cursor,
-      bool? untagged,
-      String? teamId,
-      String? slug,
-      RequestOptions? requestOptions}) async* {
-    yield* vcr_methods.listRepositoryImagesPaginated(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        untagged: untagged,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<VcrImageListItem> listRepositoryImagesPaginated({required String idOrName, required String projectId, int? limit, String? cursor, bool? untagged, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
+    yield* vcr_methods.listRepositoryImagesPaginated(_config, idOrName: idOrName, projectId: projectId, limit: limit, cursor: cursor, untagged: untagged, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Grants a team access to a VCR repository, with sharing applied to the entire repository. Supply the repository and project identifiers, then identify the team using the request body. The response includes the permission grant and its creation time.
@@ -8292,14 +5544,7 @@ class VcrNamespace {
       SdkOptional<String> teamId_2 = const SdkOmitted(),
       SdkOptional<String> teamSlug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.addRepositoryPermission(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        teamId_2: teamId_2,
-        teamSlug: teamSlug,
-        requestOptions: requestOptions);
+    return vcr_methods.addRepositoryPermission(_config, idOrName: idOrName, projectId: projectId, teamId: teamId, slug: slug, teamId_2: teamId_2, teamSlug: teamSlug, requestOptions: requestOptions);
   }
 
   /// Revokes a team's access to a VCR repository. Supply the repository and project identifiers, then identify the team whose permission you want to remove. The operation removes the team's repository-wide access grant.
@@ -8313,14 +5558,7 @@ class VcrNamespace {
       SdkOptional<String> teamId_2 = const SdkOmitted(),
       SdkOptional<String> teamSlug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.removeRepositoryPermission(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        teamId_2: teamId_2,
-        teamSlug: teamSlug,
-        requestOptions: requestOptions);
+    return vcr_methods.removeRepositoryPermission(_config, idOrName: idOrName, projectId: projectId, teamId: teamId, slug: slug, teamId_2: teamId_2, teamSlug: teamSlug, requestOptions: requestOptions);
   }
 
   /// Lists the teams that a container registry repository is shared with. Supply `projectId` and `idOrName` to identify the repository, and use `cursor` to continue through paginated results.
@@ -8334,35 +5572,14 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.listRepositoryPermissions(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.listRepositoryPermissions(_config, idOrName: idOrName, projectId: projectId, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the teams that a container registry repository is shared with. Supply `projectId` and `idOrName` to identify the repository, and use `cursor` to continue through paginated results.
   ///
   /// List the teams a VCR repository is shared with.
-  Stream<VcrRepositoryPermission> listRepositoryPermissionsPaginated(
-      {required String idOrName,
-      required String projectId,
-      int? limit,
-      String? cursor,
-      String? teamId,
-      String? slug,
-      RequestOptions? requestOptions}) async* {
-    yield* vcr_methods.listRepositoryPermissionsPaginated(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<VcrRepositoryPermission> listRepositoryPermissionsPaginated({required String idOrName, required String projectId, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
+    yield* vcr_methods.listRepositoryPermissionsPaginated(_config, idOrName: idOrName, projectId: projectId, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Revokes every team's access to a VCR repository. Use this operation to clear all repository permissions at once; clearing a repository with no shared access has no effect. The operation requires the repository and project identifiers.
@@ -8374,12 +5591,7 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.clearRepositoryPermissions(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.clearRepositoryPermissions(_config, idOrName: idOrName, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists tags in a VCR repository, with optional pagination and sorting for non-pinned tags. Use `cursor` to continue from a previous page and the sort parameters to control tag ordering. The response includes a `nextCursor` when another page is available.
@@ -8395,41 +5607,14 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.listRepositoryTags(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        sortBy: sortBy,
-        sortOrder: sortOrder,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.listRepositoryTags(_config, idOrName: idOrName, projectId: projectId, limit: limit, cursor: cursor, sortBy: sortBy, sortOrder: sortOrder, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists tags in a VCR repository, with optional pagination and sorting for non-pinned tags. Use `cursor` to continue from a previous page and the sort parameters to control tag ordering. The response includes a `nextCursor` when another page is available.
   ///
   /// List a repository's tags.
-  Stream<ListRepositoryTagsResponseTagsItem> listRepositoryTagsPaginated(
-      {required String idOrName,
-      required String projectId,
-      int? limit,
-      String? cursor,
-      ListRepositoryTagsSortBy? sortBy,
-      ListRepositoryTagsSortOrder? sortOrder,
-      String? teamId,
-      String? slug,
-      RequestOptions? requestOptions}) async* {
-    yield* vcr_methods.listRepositoryTagsPaginated(_config,
-        idOrName: idOrName,
-        projectId: projectId,
-        limit: limit,
-        cursor: cursor,
-        sortBy: sortBy,
-        sortOrder: sortOrder,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Stream<ListRepositoryTagsResponseTagsItem> listRepositoryTagsPaginated({required String idOrName, required String projectId, int? limit, String? cursor, ListRepositoryTagsSortBy? sortBy, ListRepositoryTagsSortOrder? sortOrder, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
+    yield* vcr_methods.listRepositoryTagsPaginated(_config, idOrName: idOrName, projectId: projectId, limit: limit, cursor: cursor, sortBy: sortBy, sortOrder: sortOrder, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a single tag from a VCR repository, including metadata for its backing image and its VHS-readiness status. Use the repository and tag identifiers to select the tag you want to inspect. The response contains the tag and its associated image details.
@@ -8442,13 +5627,7 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.getRepositoryTag(_config,
-        idOrName: idOrName,
-        tag: tag,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.getRepositoryTag(_config, idOrName: idOrName, tag: tag, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves an image from a VCR repository, including its tags and resolved Dockerfile layer history. Identify the image by its internal ID or manifest digest to inspect its metadata and layer details. The image identifier may use the `image_` ID form or the `sha256:` digest form.
@@ -8461,13 +5640,7 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.getRepositoryImage(_config,
-        idOrName: idOrName,
-        imageIdOrDigest: imageIdOrDigest,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.getRepositoryImage(_config, idOrName: idOrName, imageIdOrDigest: imageIdOrDigest, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Schedules a VCR repository image for deletion. The image disappears from list and retrieve results immediately, while its manifest, blobs, tags, and database record are reclaimed asynchronously. The cleanup is performed through the `VcrManifestRemoved` event.
@@ -8480,13 +5653,7 @@ class VcrNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods.deleteRepositoryImage(_config,
-        idOrName: idOrName,
-        imageId: imageId,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vcr_methods.deleteRepositoryImage(_config, idOrName: idOrName, imageId: imageId, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Checks whether the Docker Registry API v2 is supported. Send valid credentials in the `Authorization` header to receive a successful response and proceed with registry requests. Without credentials, the registry returns an authentication challenge for the Docker client.
@@ -8505,13 +5672,7 @@ class VcrNamespace {
       required String repositoryName,
       required String digest,
       RequestOptions? requestOptions}) async {
-    return vcr_methods.headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
-        _config,
-        teamSlug: teamSlug,
-        projectSlug: projectSlug,
-        repositoryName: repositoryName,
-        digest: digest,
-        requestOptions: requestOptions);
+    return vcr_methods.headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, digest: digest, requestOptions: requestOptions);
   }
 
   /// Downloads a blob from a Docker Registry repository by its content-addressable digest. Supply the team, project, repository, and digest as path components to identify the blob. The digest must use an algorithm followed by a colon and hexadecimal value.
@@ -8523,13 +5684,7 @@ class VcrNamespace {
       required String repositoryName,
       required String digest,
       RequestOptions? requestOptions}) async {
-    return vcr_methods.getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(
-        _config,
-        teamSlug: teamSlug,
-        projectSlug: projectSlug,
-        repositoryName: repositoryName,
-        digest: digest,
-        requestOptions: requestOptions);
+    return vcr_methods.getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, digest: digest, requestOptions: requestOptions);
   }
 
   /// Rejects attempts to delete a blob from a Docker Registry repository because blob deletion is intentionally unsupported. Use the team, project, repository, and digest path components to identify the blob involved in the request. The operation follows the behavior of most public registries.
@@ -8541,13 +5696,7 @@ class VcrNamespace {
       required String repositoryName,
       required String digest,
       RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(_config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            digest: digest,
-            requestOptions: requestOptions);
+    return vcr_methods.deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, digest: digest, requestOptions: requestOptions);
   }
 
   /// Retrieves the status of an in-progress blob upload in a Docker repository. Use this operation to check an upload session before resuming a partial upload after an interruption. Supply the repository components and the session's `uuid`.
@@ -8559,13 +5708,7 @@ class VcrNamespace {
       required String repositoryName,
       required String uuid,
       RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(_config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            uuid: uuid,
-            requestOptions: requestOptions);
+    return vcr_methods.getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, uuid: uuid, requestOptions: requestOptions);
   }
 
   /// Deletes an in-progress blob upload from a Docker repository and discards its session. Use this operation to cancel an upload; it also aborts the underlying multipart upload if one was started. Supply the repository components and upload session `uuid`.
@@ -8577,14 +5720,7 @@ class VcrNamespace {
       required String repositoryName,
       required String uuid,
       RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
-            _config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            uuid: uuid,
-            requestOptions: requestOptions);
+    return vcr_methods.deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, uuid: uuid, requestOptions: requestOptions);
   }
 
   /// Uploads a chunk of blob data to an in-progress Docker repository upload. The chunk is streamed to storage and hashed incrementally, so you can call this operation multiple times for a chunked upload. Supply the repository components and upload session `uuid`.
@@ -8597,14 +5733,7 @@ class VcrNamespace {
           required String repositoryName,
           required String uuid,
           RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
-            _config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            uuid: uuid,
-            requestOptions: requestOptions);
+    return vcr_methods.updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, uuid: uuid, requestOptions: requestOptions);
   }
 
   /// Completes a blob upload to a Docker repository. Include the final data chunk in the request body for a monolithic upload, or omit it to finalize a previously uploaded chunked blob. Supply the upload session `uuid` and the blob's `digest`.
@@ -8618,15 +5747,7 @@ class VcrNamespace {
           required String uuid,
           required String digest,
           RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .replaceByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(
-            _config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            uuid: uuid,
-            digest: digest,
-            requestOptions: requestOptions);
+    return vcr_methods.replaceByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, uuid: uuid, digest: digest, requestOptions: requestOptions);
   }
 
   /// Starts a blob upload to a Docker repository. Use the optional `mount` and `from` query parameters to request mounting a blob from another repository; otherwise, the operation initiates an upload session. Use the UUID in the response's `Location` header for subsequent chunk upload and completion requests.
@@ -8639,14 +5760,7 @@ class VcrNamespace {
       SdkOptional<String> mount = const SdkOmitted(),
       SdkOptional<String> from = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads(_config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            mount: mount,
-            from: from,
-            requestOptions: requestOptions);
+    return vcr_methods.createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, mount: mount, from: from, requestOptions: requestOptions);
   }
 
   /// Uploads an image manifest to a Docker repository and associates it with the specified tag or digest reference. Use this operation to push a manifest after uploading its referenced blobs. The server computes the manifest digest and returns it in the `Docker-Content-Digest` header.
@@ -8659,14 +5773,7 @@ class VcrNamespace {
           required String repositoryName,
           required String reference,
           RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .replaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
-            _config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            reference: reference,
-            requestOptions: requestOptions);
+    return vcr_methods.replaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, reference: reference, requestOptions: requestOptions);
   }
 
   /// Checks whether a manifest exists in a Docker repository by its tag or digest reference. Docker clients use this check during a push to determine whether the manifest or a referenced config blob is already present. Supply the repository components and a valid `reference`.
@@ -8678,14 +5785,7 @@ class VcrNamespace {
       required String repositoryName,
       required String reference,
       RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
-            _config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            reference: reference,
-            requestOptions: requestOptions);
+    return vcr_methods.headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, reference: reference, requestOptions: requestOptions);
   }
 
   /// Retrieves an image manifest from a Docker repository using its tag or digest as the reference. Use this operation when you need to fetch the manifest associated with a repository reference. Supply a valid `reference` along with the repository components.
@@ -8697,13 +5797,7 @@ class VcrNamespace {
       required String repositoryName,
       required String reference,
       RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(_config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            reference: reference,
-            requestOptions: requestOptions);
+    return vcr_methods.getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, reference: reference, requestOptions: requestOptions);
   }
 
   /// Deletes an image manifest from a Docker repository by its content-addressable digest. Use this operation to remove a manifest by digest rather than by tag. Supply the repository components and a digest-form `reference`.
@@ -8716,14 +5810,7 @@ class VcrNamespace {
           required String repositoryName,
           required String reference,
           RequestOptions? requestOptions}) async {
-    return vcr_methods
-        .deleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(
-            _config,
-            teamSlug: teamSlug,
-            projectSlug: projectSlug,
-            repositoryName: repositoryName,
-            reference: reference,
-            requestOptions: requestOptions);
+    return vcr_methods.deleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, reference: reference, requestOptions: requestOptions);
   }
 
   /// Lists image tags in a Docker repository. Use `teamSlug`, `projectSlug`, and `repositoryName` to identify the repository, and `n` to control the page size. Pass the opaque cursor from a previous response's `Link` header in `last` to continue listing.
@@ -8737,21 +5824,14 @@ class VcrNamespace {
           SdkOptional<int> n = const SdkOmitted(),
           SdkOptional<String> last = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return vcr_methods.getByTeamSlugByProjectSlugByRepositoryNameTagsList(
-        _config,
-        teamSlug: teamSlug,
-        projectSlug: projectSlug,
-        repositoryName: repositoryName,
-        n: n,
-        last: last,
-        requestOptions: requestOptions);
+    return vcr_methods.getByTeamSlugByProjectSlugByRepositoryNameTagsList(_config, teamSlug: teamSlug, projectSlug: projectSlug, repositoryName: repositoryName, n: n, last: last, requestOptions: requestOptions);
   }
+
 }
 
 class VercelCiNamespace {
   final ClientConfig _config;
   VercelCiNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves Vercel CI settings for a connected repository. Identify the repository with `provider`, `organizationId`, and `repository`; use `teamId` or `slug` to make the request on behalf of a team. The response includes whether Vercel CI is enabled and the associated timestamps.
   ///
   /// Get Repository Settings
@@ -8762,51 +5842,35 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiRepositorySettings(_config,
-        provider: provider,
-        organizationId: organizationId,
-        repository: repository,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiRepositorySettings(_config, provider: provider, organizationId: organizationId, repository: repository, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates the Vercel CI enabled state for a connected repository. Identify the repository with `provider`, `organizationId`, and `repository`, then set `ciEnabled` in the request body. Use `teamId` or `slug` to perform the request on behalf of a team.
   ///
   /// Update Repository Settings
-  Future<UpdateVercelCiRepositorySettingsResponse> updateRepositorySettings(
-      {required UpdateVercelCiRepositorySettingsProvider provider,
-      required String organizationId,
-      required String repository,
-      required bool ciEnabled,
-      SdkOptional<String> teamId = const SdkOmitted(),
-      SdkOptional<String> slug = const SdkOmitted(),
-      RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.updateVercelCiRepositorySettings(_config,
-        provider: provider,
-        organizationId: organizationId,
-        repository: repository,
-        ciEnabled: ciEnabled,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+  Future<UpdateVercelCiRepositorySettingsResponse>
+      updateRepositorySettings(
+          {required UpdateVercelCiRepositorySettingsProvider provider,
+          required String organizationId,
+          required String repository,
+          required bool ciEnabled,
+          SdkOptional<String> teamId = const SdkOmitted(),
+          SdkOptional<String> slug = const SdkOmitted(),
+          RequestOptions? requestOptions}) async {
+    return vercel_ci_methods.updateVercelCiRepositorySettings(_config, provider: provider, organizationId: organizationId, repository: repository, ciEnabled: ciEnabled, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists Vercel CI invocations for a team, with optional filters for repository, branch, commit, status, conclusion, source, author, and creation time. Use `cursor` to continue from a previous response and `limit` to set the page size. The response includes invocation records, repository details, and pagination metadata.
   ///
   /// List Invocations
   Future<ListVercelCiInvocationsResponse> listInvocations(
-      {SdkOptional<ListVercelCiInvocationsProvider> provider =
-          const SdkOmitted(),
+      {SdkOptional<ListVercelCiInvocationsProvider> provider = const SdkOmitted(),
       SdkOptional<String> repository = const SdkOmitted(),
       SdkOptional<String> branchName = const SdkOmitted(),
       SdkOptional<String> snapshot = const SdkOmitted(),
-      SdkOptional<List<ListVercelCiInvocationsStatusItem>> status =
-          const SdkOmitted(),
-      SdkOptional<List<ListVercelCiInvocationsConclusionItem>> conclusion =
-          const SdkOmitted(),
-      SdkOptional<List<ListVercelCiInvocationsSourceItem>> source =
-          const SdkOmitted(),
+      SdkOptional<List<ListVercelCiInvocationsStatusItem>> status = const SdkOmitted(),
+      SdkOptional<List<ListVercelCiInvocationsConclusionItem>> conclusion = const SdkOmitted(),
+      SdkOptional<List<ListVercelCiInvocationsSourceItem>> source = const SdkOmitted(),
       SdkOptional<String> authorGitHubId = const SdkOmitted(),
       SdkOptional<String> author = const SdkOmitted(),
       SdkOptional<double> createdAfter = const SdkOmitted(),
@@ -8816,23 +5880,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiInvocations(_config,
-        provider: provider,
-        repository: repository,
-        branchName: branchName,
-        snapshot: snapshot,
-        status: status,
-        conclusion: conclusion,
-        source: source,
-        authorGitHubId: authorGitHubId,
-        author: author,
-        createdAfter: createdAfter,
-        createdBefore: createdBefore,
-        limit: limit,
-        cursor: cursor,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiInvocations(_config, provider: provider, repository: repository, branchName: branchName, snapshot: snapshot, status: status, conclusion: conclusion, source: source, authorGitHubId: authorGitHubId, author: author, createdAfter: createdAfter, createdBefore: createdBefore, limit: limit, cursor: cursor, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists Vercel CI branch suggestions for a team. Use `query` to filter the suggestions and `limit` to control how many results are returned. The response contains branch names and their counts.
@@ -8844,12 +5892,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiBranches(_config,
-        query: query,
-        limit: limit,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiBranches(_config, query: query, limit: limit, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Starts an asynchronous Vercel CI task analysis for a repository. Supply the repository `owner` and `repo` in the request body, and use `teamId` or `slug` to perform the request on behalf of a team. A 202 response confirms acceptance and provides an `analysisId` to check the analysis status.
@@ -8861,12 +5904,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.createVercelCiTaskAnalysis(_config,
-        owner: owner,
-        repo: repo,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.createVercelCiTaskAnalysis(_config, owner: owner, repo: repo, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves the current status of a Vercel CI task analysis. Use `analysisId` to identify the analysis and optionally pass `teamId` or `slug` to make the request on behalf of a team. The response includes a failure reason when one is available.
@@ -8877,11 +5915,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiTaskAnalysis(_config,
-        analysisId: analysisId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiTaskAnalysis(_config, analysisId: analysisId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates a GitHub pull request that adds Vercel CI tags for tasks discovered in a completed analysis. Identify the analysis with `analysisId` and provide the tasks and configuration paths in the request body. The response includes the pull request URL and the names of changed tasks.
@@ -8890,18 +5924,11 @@ class VercelCiNamespace {
   Future<CreateVercelCiTaskConfigurationPullRequestResponse>
       createTaskConfigurationPullRequest(
           {required String analysisId,
-          required List<
-                  CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem>
-              tasks,
+          required List<CreateVercelCiTaskConfigurationPullRequestRequestBodyTasksItem> tasks,
           SdkOptional<String> teamId = const SdkOmitted(),
           SdkOptional<String> slug = const SdkOmitted(),
           RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.createVercelCiTaskConfigurationPullRequest(_config,
-        analysisId: analysisId,
-        tasks: tasks,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.createVercelCiTaskConfigurationPullRequest(_config, analysisId: analysisId, tasks: tasks, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists tasks discovered by a completed Vercel CI task analysis. Identify the analysis with `analysisId`, and use `cursor` and `limit` to retrieve task results in pages. Each task includes its configuration path and recommendation reasons.
@@ -8914,13 +5941,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiTaskAnalysisTasks(_config,
-        analysisId: analysisId,
-        cursor: cursor,
-        limit: limit,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiTaskAnalysisTasks(_config, analysisId: analysisId, cursor: cursor, limit: limit, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists all attempts for a Vercel CI invocation. Use `invocationId` to identify the invocation and optionally pass `teamId` or `slug` to make the request on behalf of a team. The response includes attempt records and repository details.
@@ -8931,11 +5952,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiInvocationAttempts(_config,
-        invocationId: invocationId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiInvocationAttempts(_config, invocationId: invocationId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves an invocation attempt with its job definitions, latest job runs, and task definitions and active task runs. Use `attempt` to select an attempt, or omit it to use the latest; set `follow` to `1` to receive newline-delimited JSON updates until the attempt finishes or the stream times out.
@@ -8948,13 +5965,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiInvocationTree(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        follow: follow,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiInvocationTree(_config, invocationId: invocationId, attempt: attempt, follow: follow, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a specific invocation attempt and its repository details. Use `invocationId` and `attempt` to identify the attempt you want to inspect. The response includes the invocation record and associated repositories.
@@ -8966,12 +5977,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiInvocation(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiInvocation(_config, invocationId: invocationId, attempt: attempt, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Triggers a retry of a terminal Vercel CI invocation attempt. Use `invocationId` and `attempt` to identify the attempt to retry. The response confirms that the retry was scheduled and provides the new attempt number.
@@ -8983,12 +5989,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.retryVercelCiInvocation(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.retryVercelCiInvocation(_config, invocationId: invocationId, attempt: attempt, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the job definitions associated with an invocation attempt. Use `invocationId` and `attempt` to select the attempt whose jobs you want to inspect. Each result includes the job definition's identifier, kind, name, command, and creation time.
@@ -9000,12 +6001,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiJobDefinitions(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiJobDefinitions(_config, invocationId: invocationId, attempt: attempt, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a specific job definition for an invocation attempt. Use `invocationId`, `attempt`, and `jobDefinitionId` to identify the definition. The response contains the job definition's kind, name, command, and creation time.
@@ -9018,13 +6014,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiJobDefinition(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        jobDefinitionId: jobDefinitionId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiJobDefinition(_config, invocationId: invocationId, attempt: attempt, jobDefinitionId: jobDefinitionId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the runs for a job definition in a specific invocation attempt. Use `invocationId`, `attempt`, and `jobDefinitionId` to select the job whose run history you want to inspect. Each result includes the run attempt number and creation time, with start and completion details when available.
@@ -9037,13 +6027,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiJobRuns(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        jobDefinitionId: jobDefinitionId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiJobRuns(_config, invocationId: invocationId, attempt: attempt, jobDefinitionId: jobDefinitionId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a specific run attempt for a job definition. Use `invocationId`, `attempt`, `jobDefinitionId`, and `runAttempt` to identify the run. The response contains the run's creation time and any available start and completion details.
@@ -9057,14 +6041,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiJobRun(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        jobDefinitionId: jobDefinitionId,
-        runAttempt: runAttempt,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiJobRun(_config, invocationId: invocationId, attempt: attempt, jobDefinitionId: jobDefinitionId, runAttempt: runAttempt, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the task definitions associated with a job run. Use `invocationId`, `attempt`, `jobDefinitionId`, and `runAttempt` to select the run. Each result includes its task definition identifier, name, operation, dependencies, and creation time.
@@ -9078,14 +6055,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiTaskDefinitions(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        jobDefinitionId: jobDefinitionId,
-        runAttempt: runAttempt,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiTaskDefinitions(_config, invocationId: invocationId, attempt: attempt, jobDefinitionId: jobDefinitionId, runAttempt: runAttempt, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists the task runs for a job run. Use `invocationId`, `attempt`, `jobDefinitionId`, and `runAttempt` to select the job run, and use `taskRunAttempt` to filter the results by task run attempt. Each result includes task identifiers, the attempt number, creation time, and available start, completion, and deployment binding details.
@@ -9100,15 +6070,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.listVercelCiTaskRuns(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        jobDefinitionId: jobDefinitionId,
-        runAttempt: runAttempt,
-        taskRunAttempt: taskRunAttempt,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.listVercelCiTaskRuns(_config, invocationId: invocationId, attempt: attempt, jobDefinitionId: jobDefinitionId, runAttempt: runAttempt, taskRunAttempt: taskRunAttempt, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves log lines for a specific invocation attempt. Use `level` to filter the results to one or more log levels, such as `warn` or `error`. Each returned line includes its level, timestamp, and message.
@@ -9117,18 +6079,11 @@ class VercelCiNamespace {
   Future<GetVercelCiInvocationLogsResponse> getInvocationLogs(
       {required String invocationId,
       required String attempt,
-      SdkOptional<List<GetVercelCiInvocationLogsLevelItem>> level =
-          const SdkOmitted(),
+      SdkOptional<List<GetVercelCiInvocationLogsLevelItem>> level = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiInvocationLogs(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        level: level,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiInvocationLogs(_config, invocationId: invocationId, attempt: attempt, level: level, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists log lines for tasks in a specific invocation attempt, grouped by task. Use `task`, `conclusion`, and `level` to filter the results, or use `search` to return only tasks with matching lines. Search returns at most 1,000 matching lines and ignores `limit`.
@@ -9138,26 +6093,14 @@ class VercelCiNamespace {
       {required String invocationId,
       required String attempt,
       SdkOptional<List<String>> task = const SdkOmitted(),
-      SdkOptional<List<GetVercelCiTaskLogsConclusionItem>> conclusion =
-          const SdkOmitted(),
-      SdkOptional<List<GetVercelCiTaskLogsLevelItem>> level =
-          const SdkOmitted(),
+      SdkOptional<List<GetVercelCiTaskLogsConclusionItem>> conclusion = const SdkOmitted(),
+      SdkOptional<List<GetVercelCiTaskLogsLevelItem>> level = const SdkOmitted(),
       SdkOptional<String> search = const SdkOmitted(),
       SdkOptional<double> limit = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiTaskLogs(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        task: task,
-        conclusion: conclusion,
-        level: level,
-        search: search,
-        limit: limit,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiTaskLogs(_config, invocationId: invocationId, attempt: attempt, task: task, conclusion: conclusion, level: level, search: search, limit: limit, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Searches task logs across multiple invocation attempts and returns only invocations and tasks with matching lines. Supply up to 50 unique invocation attempts in `invocation` and a search string in `search`; matching is case-insensitive. When more than 1,000 lines match, the response keeps the newest lines.
@@ -9170,13 +6113,7 @@ class VercelCiNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.searchVercelCiLogs(_config,
-        invocation: invocation,
-        search: search,
-        level: level,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.searchVercelCiLogs(_config, invocation: invocation, search: search, level: level, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves log lines for a specific job run attempt. Use `level` to filter the returned lines, or provide `since` to retrieve lines from a specified point. Set `follow` to 1 to request ongoing log output.
@@ -9189,22 +6126,11 @@ class VercelCiNamespace {
       required String runAttempt,
       SdkOptional<GetVercelCiJobRunLogsFollow> follow = const SdkOmitted(),
       SdkOptional<double> since = const SdkOmitted(),
-      SdkOptional<List<GetVercelCiJobRunLogsLevelItem>> level =
-          const SdkOmitted(),
+      SdkOptional<List<GetVercelCiJobRunLogsLevelItem>> level = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiJobRunLogs(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        jobDefinitionId: jobDefinitionId,
-        runAttempt: runAttempt,
-        follow: follow,
-        since: since,
-        level: level,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiJobRunLogs(_config, invocationId: invocationId, attempt: attempt, jobDefinitionId: jobDefinitionId, runAttempt: runAttempt, follow: follow, since: since, level: level, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves log lines for a specific task run attempt. Use `level` to filter the returned lines, or provide `since` to retrieve lines from a specified point. Set `follow` to 1 to stream newline-delimited JSON log lines until the task run finishes or the stream reaches its maximum duration.
@@ -9219,45 +6145,31 @@ class VercelCiNamespace {
       required String taskRunAttempt,
       SdkOptional<GetVercelCiTaskRunLogsFollow> follow = const SdkOmitted(),
       SdkOptional<double> since = const SdkOmitted(),
-      SdkOptional<List<GetVercelCiTaskRunLogsLevelItem>> level =
-          const SdkOmitted(),
+      SdkOptional<List<GetVercelCiTaskRunLogsLevelItem>> level = const SdkOmitted(),
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return vercel_ci_methods.getVercelCiTaskRunLogs(_config,
-        invocationId: invocationId,
-        attempt: attempt,
-        jobDefinitionId: jobDefinitionId,
-        runAttempt: runAttempt,
-        taskDefinitionId: taskDefinitionId,
-        taskRunAttempt: taskRunAttempt,
-        follow: follow,
-        since: since,
-        level: level,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return vercel_ci_methods.getVercelCiTaskRunLogs(_config, invocationId: invocationId, attempt: attempt, jobDefinitionId: jobDefinitionId, runAttempt: runAttempt, taskDefinitionId: taskDefinitionId, taskRunAttempt: taskRunAttempt, follow: follow, since: since, level: level, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class WebNamespace {
   final ClientConfig _config;
   WebNamespace(ClientConfig config) : _config = config;
-
   /// Updates the Web Insights setting for a project. Supply `projectId` and the `value` to set the toggle to true or false. The response returns the resulting toggle value.
   Future<CreateWebInsightsToggleResponse> createInsightsToggle(
       {required String projectId,
       required bool value_,
       RequestOptions? requestOptions}) async {
-    return web_methods.createWebInsightsToggle(_config,
-        projectId: projectId, value_: value_, requestOptions: requestOptions);
+    return web_methods.createWebInsightsToggle(_config, projectId: projectId, value_: value_, requestOptions: requestOptions);
   }
+
 }
 
 class WebAnalyticsNamespace {
   final ClientConfig _config;
   WebAnalyticsNamespace(ClientConfig config) : _config = config;
-
   /// Aggregates page views for a project within a requested date range. Use `by` to group results by up to two dimensions and `filter` to restrict the data; `since` and `until` define the inclusive range. The optional `limit` controls the number of distinct results, with remaining results grouped as “Others.”
   ///
   /// Counts pageviews on a project, within the requested date range. Results are either aggregated or broken down over time. Results can additionally be broken down by one dimension, and filtered by multiple dimensions.
@@ -9271,16 +6183,7 @@ class WebAnalyticsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return web_analytics_methods.aggregatePageviews(_config,
-        projectId: projectId,
-        by: by,
-        since: since,
-        until: until,
-        limit: limit,
-        filter: filter,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return web_analytics_methods.aggregatePageviews(_config, projectId: projectId, by: by, since: since, until: until, limit: limit, filter: filter, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Aggregates custom events for a project within a requested date range. Use `by` to group results by up to two dimensions and `filter` to restrict the data; `since` and `until` define the inclusive range. The optional `limit` controls the number of distinct results, with remaining results grouped as “Others.”
@@ -9296,16 +6199,7 @@ class WebAnalyticsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return web_analytics_methods.aggregateEvents(_config,
-        projectId: projectId,
-        by: by,
-        since: since,
-        until: until,
-        limit: limit,
-        filter: filter,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return web_analytics_methods.aggregateEvents(_config, projectId: projectId, by: by, since: since, until: until, limit: limit, filter: filter, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Counts page views for a project since Web Analytics was enabled; the count covers production data only. Use `since` and `until` to select a date range, and `filter` to restrict results by supported dimensions. The date bounds accept timestamps in milliseconds or valid date strings.
@@ -9319,14 +6213,7 @@ class WebAnalyticsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return web_analytics_methods.countPageviews(_config,
-        projectId: projectId,
-        since: since,
-        until: until,
-        filter: filter,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return web_analytics_methods.countPageviews(_config, projectId: projectId, since: since, until: until, filter: filter, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Counts custom events for a project since Web Analytics was enabled; the count covers production data only. Use `since` and `until` to select a date range, and `filter` to restrict results by supported dimensions, including `eventName` and event data. The date bounds accept timestamps in milliseconds or valid date strings.
@@ -9340,21 +6227,14 @@ class WebAnalyticsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return web_analytics_methods.countEvents(_config,
-        projectId: projectId,
-        since: since,
-        until: until,
-        filter: filter,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return web_analytics_methods.countEvents(_config, projectId: projectId, since: since, until: until, filter: filter, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class WebhooksNamespace {
   final ClientConfig _config;
   WebhooksNamespace(ClientConfig config) : _config = config;
-
   /// Creates a webhook that sends selected events to a URL. Provide an HTTP or HTTPS `url` and at least one event in `events`; you can optionally associate the webhook with 1 to 50 `projectIds`. The response includes the webhook ID and secret used to sign payloads.
   ///
   /// Creates a webhook
@@ -9365,13 +6245,7 @@ class WebhooksNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<List<String>> projectIds = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return webhooks_methods.createWebhook(_config,
-        url: url,
-        events: events,
-        teamId: teamId,
-        slug: slug,
-        projectIds: projectIds,
-        requestOptions: requestOptions);
+    return webhooks_methods.createWebhook(_config, url: url, events: events, teamId: teamId, slug: slug, projectIds: projectIds, requestOptions: requestOptions);
   }
 
   /// Lists webhooks, optionally scoped to a project. Use `projectId` to retrieve webhooks associated with a specific project; omit it to list webhooks without that project filter. The project identifier must match the documented character pattern.
@@ -9382,11 +6256,7 @@ class WebhooksNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return webhooks_methods.getWebhooks(_config,
-        projectId: projectId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return webhooks_methods.getWebhooks(_config, projectId: projectId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves a webhook by its identifier. Use `teamId` or `slug` to specify the team context for the request. The response includes the webhook URL, subscribed events, associated project IDs, and timestamps.
@@ -9397,8 +6267,7 @@ class WebhooksNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return webhooks_methods.getWebhook(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return webhooks_methods.getWebhook(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a webhook by its identifier. Use `teamId` or `slug` to specify the team context for the request. The operation returns no response body when the deletion succeeds.
@@ -9409,15 +6278,14 @@ class WebhooksNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return webhooks_methods.deleteWebhook(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return webhooks_methods.deleteWebhook(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
+
 }
 
 class AliasesNamespace {
   final ClientConfig _config;
   AliasesNamespace(ClientConfig config) : _config = config;
-
   /// Lists aliases assigned to a deployment. Use `teamId` or `slug` to specify the team context, and provide the deployment ID in `id`. The authenticated user or team must own the deployment.
   ///
   /// Retrieves all Aliases for the Deployment with the given ID. The authenticated user or team must own the deployment.
@@ -9426,8 +6294,7 @@ class AliasesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return aliases_methods.listAliasesForDeployment(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return aliases_methods.listAliasesForDeployment(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Creates an alias for the deployment identified by a deployment or alias ID or URL. Provide the alias name in `alias`, and optionally set `redirect` to route the alias to another hostname with a 307 status code. If the alias is already assigned to another deployment, it is removed from that deployment and assigned to this one.
@@ -9440,13 +6307,7 @@ class AliasesNamespace {
       SdkOptional<String> alias = const SdkOmitted(),
       SdkOptional<String?> redirect = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return aliases_methods.assignAlias(_config,
-        id: id,
-        teamId: teamId,
-        slug: slug,
-        alias: alias,
-        redirect: redirect,
-        requestOptions: requestOptions);
+    return aliases_methods.assignAlias(_config, id: id, teamId: teamId, slug: slug, alias: alias, redirect: redirect, requestOptions: requestOptions);
   }
 
   /// Lists aliases for the authenticated user or team, with optional filters for domain, project, creation time, or rollback deployment. Use `limit` to control the number of aliases returned, and inspect `pagination` for the previous and next page values.
@@ -9463,17 +6324,7 @@ class AliasesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return aliases_methods.listAliases(_config,
-        domain: domain,
-        from: from,
-        limit: limit,
-        projectId: projectId,
-        since: since,
-        until: until,
-        rollbackDeploymentId: rollbackDeploymentId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return aliases_methods.listAliases(_config, domain: domain, from: from, limit: limit, projectId: projectId, since: since, until: until, rollbackDeploymentId: rollbackDeploymentId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Retrieves an alias by its hostname or alias ID. Use `projectId` to restrict the result to an alias assigned to a specific project, or use `since` and `until` to filter by creation time.
@@ -9488,15 +6339,7 @@ class AliasesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return aliases_methods.getAlias(_config,
-        idOrAlias: idOrAlias,
-        from: from,
-        projectId: projectId,
-        since: since,
-        until: until,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return aliases_methods.getAlias(_config, idOrAlias: idOrAlias, from: from, projectId: projectId, since: since, until: until, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes an alias by its ID or alias name. Use `teamId` or `slug` to specify the team context for the request. A successful response confirms that the alias was removed.
@@ -9507,11 +6350,7 @@ class AliasesNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return aliases_methods.deleteAlias(_config,
-        aliasId: aliasId,
-        teamId: teamId,
-        slug: slug,
-        requestOptions: requestOptions);
+    return aliases_methods.deleteAlias(_config, aliasId: aliasId, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Updates protection-bypass settings for an alias or deployment URL. Use the request body to configure a shareable link, user-scoped access, or an override for access behavior. The `ttl` value for a shareable link cannot exceed 63,072,000 seconds.
@@ -9523,19 +6362,14 @@ class AliasesNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<dynamic> body = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return aliases_methods.patchUrlProtectionBypass(_config,
-        id: id,
-        teamId: teamId,
-        slug: slug,
-        body: body,
-        requestOptions: requestOptions);
+    return aliases_methods.patchUrlProtectionBypass(_config, id: id, teamId: teamId, slug: slug, body: body, requestOptions: requestOptions);
   }
+
 }
 
 class CertsNamespace {
   final ClientConfig _config;
   CertsNamespace(ClientConfig config) : _config = config;
-
   /// Retrieves a certificate by its identifier. Use `teamId` or `slug` to specify the team context for the request. The response includes the certificate's common names, renewal setting, and creation and expiration timestamps.
   ///
   /// Get cert by id
@@ -9544,8 +6378,7 @@ class CertsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return certs_methods.getCertById(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return certs_methods.getCertById(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Deletes a certificate identified by its certificate ID. Use `teamId` or `slug` to scope the request to a team. The response object confirms the removal.
@@ -9556,8 +6389,7 @@ class CertsNamespace {
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return certs_methods.removeCert(_config,
-        id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return certs_methods.removeCert(_config, id: id, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Lists certificates available to the authenticated user or team. Use `teamId` or `slug` to scope the request to a team. The response includes certificate details and pagination information.
@@ -9567,8 +6399,7 @@ class CertsNamespace {
       {SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return certs_methods.getCerts(_config,
-        teamId: teamId, slug: slug, requestOptions: requestOptions);
+    return certs_methods.getCerts(_config, teamId: teamId, slug: slug, requestOptions: requestOptions);
   }
 
   /// Issues a new certificate for the common names you provide. Supply `cns` to specify the common names for which the certificate should be issued. The response includes the certificate identifier, common names, and certificate dates.
@@ -9579,8 +6410,7 @@ class CertsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<List<String>> cns = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return certs_methods.issueCert(_config,
-        teamId: teamId, slug: slug, cns: cns, requestOptions: requestOptions);
+    return certs_methods.issueCert(_config, teamId: teamId, slug: slug, cns: cns, requestOptions: requestOptions);
   }
 
   /// Uploads a certificate using its certificate authority, key, and certificate data. Provide `ca`, `key`, and `cert` in the request body; you can also set `skipValidation` to control certificate validation. The response includes the uploaded certificate details.
@@ -9594,15 +6424,9 @@ class CertsNamespace {
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<bool> skipValidation = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return certs_methods.uploadCert(_config,
-        ca: ca,
-        key: key,
-        cert: cert,
-        teamId: teamId,
-        slug: slug,
-        skipValidation: skipValidation,
-        requestOptions: requestOptions);
+    return certs_methods.uploadCert(_config, ca: ca, key: key, cert: cert, teamId: teamId, slug: slug, skipValidation: skipValidation, requestOptions: requestOptions);
   }
+
 }
 
 class Vercel {
@@ -9724,4 +6548,5 @@ class Vercel {
     logging.enabled = enabled ?? true;
     return logging;
   }
+
 }

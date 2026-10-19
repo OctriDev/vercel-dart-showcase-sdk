@@ -8,45 +8,26 @@ part of 'inline.dart';
 class CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
   final String encryptedValue;
-  final CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType
-      type_;
+  final CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType type_;
 
-  const CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint(
-      {required this.encryptedValue, required this.type_});
+  const CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint({required this.encryptedValue, required this.type_});
 
-  CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint Function(
-      {String encryptedValue,
-      CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType
-          type_}) get copyWith => _copyWith;
+  CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint Function({String encryptedValue, CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType type_}) get copyWith => _copyWith;
 
-  CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint _copyWith(
-          {Object? encryptedValue = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint(
-        encryptedValue: identical(encryptedValue, sdkOmittedValue)
-            ? this.encryptedValue
-            : encryptedValue as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType,
-      );
+  CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint _copyWith({Object? encryptedValue = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint(
+    encryptedValue: identical(encryptedValue, sdkOmittedValue) ? this.encryptedValue : encryptedValue as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType,
+  );
 
-  factory CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint(
-        encryptedValue: (json['encryptedValue'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint.fromJson(Map<String, dynamic> json) => CreateProjectEnvResponseCreatedVariant1ItemInternalContentHint(
+    encryptedValue: (json['encryptedValue'] as String?)!,
+    type_: (json['type'] != null ? CreateProjectEnvResponseCreatedVariant1ItemInternalContentHintType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'encryptedValue': encryptedValue,
-        'type': type_.toJson(),
-      };
+    'encryptedValue': encryptedValue,
+    'type': type_.toJson(),
+  };
 }

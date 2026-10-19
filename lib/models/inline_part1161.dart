@@ -7,53 +7,32 @@ part of 'inline.dart';
 class CountEventsResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Typed representation of the `CountEventsResponseData` API schema.
   final CountEventsResponseData data;
   final CountEventsResponseQuery query;
   final double version;
 
-  const CountEventsResponse(
-      {required this.data, required this.query, required this.version});
+  const CountEventsResponse({required this.data, required this.query, required this.version});
 
-  CountEventsResponse Function(
-      {CountEventsResponseData data,
-      CountEventsResponseQuery query,
-      double version}) get copyWith => _copyWith;
+  CountEventsResponse Function({CountEventsResponseData data, CountEventsResponseQuery query, double version}) get copyWith => _copyWith;
 
-  CountEventsResponse _copyWith(
-          {Object? data = sdkOmittedValue,
-          Object? query = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      CountEventsResponse(
-        data: identical(data, sdkOmittedValue)
-            ? this.data
-            : data as CountEventsResponseData,
-        query: identical(query, sdkOmittedValue)
-            ? this.query
-            : query as CountEventsResponseQuery,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as double,
-      );
+  CountEventsResponse _copyWith({Object? data = sdkOmittedValue, Object? query = sdkOmittedValue, Object? version = sdkOmittedValue}) => CountEventsResponse(
+    data: identical(data, sdkOmittedValue) ? this.data : data as CountEventsResponseData,
+    query: identical(query, sdkOmittedValue) ? this.query : query as CountEventsResponseQuery,
+    version: identical(version, sdkOmittedValue) ? this.version : version as double,
+  );
 
-  factory CountEventsResponse.fromJson(Map<String, dynamic> json) =>
-      CountEventsResponse(
-        data: (json['data'] != null
-            ? CountEventsResponseData.fromJson(json['data'])
-            : null)!,
-        query: (json['query'] != null
-            ? CountEventsResponseQuery.fromJson(
-                json['query'] as Map<String, dynamic>)
-            : null)!,
-        version: ((json['version'] as num?)?.toDouble())!,
-      );
+  factory CountEventsResponse.fromJson(Map<String, dynamic> json) => CountEventsResponse(
+    data: (json['data'] != null ? CountEventsResponseData.fromJson(json['data']) : null)!,
+    query: (json['query'] != null ? CountEventsResponseQuery.fromJson(json['query'] as Map<String, dynamic>) : null)!,
+    version: ((json['version'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data.toJson(),
-        'query': query.toJson(),
-        'version': version,
-      };
+    'data': data.toJson(),
+    'query': query.toJson(),
+    'version': version,
+  };
 }
 
 class CreateWebhookRequestBody {
@@ -63,404 +42,203 @@ class CreateWebhookRequestBody {
   final List<CreateWebhookRequestBodyEventsItem> events;
   final SdkOptional<List<String>> projectIds;
 
-  const CreateWebhookRequestBody(
-      {required this.url,
-      required this.events,
-      this.projectIds = const SdkOmitted()});
+  const CreateWebhookRequestBody({required this.url, required this.events, this.projectIds = const SdkOmitted()});
 
-  CreateWebhookRequestBody Function(
-      {String url,
-      List<CreateWebhookRequestBodyEventsItem> events,
-      SdkOptional<List<String>> projectIds}) get copyWith => _copyWith;
+  CreateWebhookRequestBody Function({String url, List<CreateWebhookRequestBodyEventsItem> events, SdkOptional<List<String>> projectIds}) get copyWith => _copyWith;
 
-  CreateWebhookRequestBody _copyWith(
-          {Object? url = sdkOmittedValue,
-          Object? events = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue}) =>
-      CreateWebhookRequestBody(
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        events: identical(events, sdkOmittedValue)
-            ? this.events
-            : events as List<CreateWebhookRequestBodyEventsItem>,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-      );
+  CreateWebhookRequestBody _copyWith({Object? url = sdkOmittedValue, Object? events = sdkOmittedValue, Object? projectIds = sdkOmittedValue}) => CreateWebhookRequestBody(
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    events: identical(events, sdkOmittedValue) ? this.events : events as List<CreateWebhookRequestBodyEventsItem>,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+  );
 
-  factory CreateWebhookRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateWebhookRequestBody(
-        url: (json['url'] as String?)!,
-        events: ((json['events'] as List?)
-            ?.map(
-                (e) => CreateWebhookRequestBodyEventsItem.fromJson(e as String))
-            .toList())!,
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory CreateWebhookRequestBody.fromJson(Map<String, dynamic> json) => CreateWebhookRequestBody(
+    url: (json['url'] as String?)!,
+    events: ((json['events'] as List?)?.map((e) => CreateWebhookRequestBodyEventsItem.fromJson(e as String)).toList())!,
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'url': url,
-        'events': events.map((item) => item.toJson()).toList(),
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'url': url,
+    'events': events.map((item) => item.toJson()).toList(),
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateWebhookResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> alertRuleIds;
-
   /// A number containing the date when the webhook was created in in milliseconds
   final double createdAt;
-
   /// The webhooks events
   final List<CreateWebhookResponseEventsItem> events;
-
   /// The webhook id
   final String id;
-
   /// The unique ID of the team the webhook belongs to
   final String ownerId;
-
   /// The ID of the projects the webhook is associated with
   final SdkOptional<List<String>> projectIds;
-
   /// The webhook secret used to sign the payload
   final String secret;
-
   /// A number containing the date when the webhook was updated in in milliseconds
   final double updatedAt;
-
   /// A string with the URL of the webhook
   final String url;
 
-  const CreateWebhookResponse(
-      {this.alertRuleIds = const SdkOmitted(),
-      required this.createdAt,
-      required this.events,
-      required this.id,
-      required this.ownerId,
-      this.projectIds = const SdkOmitted(),
-      required this.secret,
-      required this.updatedAt,
-      required this.url});
+  const CreateWebhookResponse({this.alertRuleIds = const SdkOmitted(), required this.createdAt, required this.events, required this.id, required this.ownerId, this.projectIds = const SdkOmitted(), required this.secret, required this.updatedAt, required this.url});
 
-  CreateWebhookResponse Function(
-      {SdkOptional<List<String>> alertRuleIds,
-      double createdAt,
-      List<CreateWebhookResponseEventsItem> events,
-      String id,
-      String ownerId,
-      SdkOptional<List<String>> projectIds,
-      String secret,
-      double updatedAt,
-      String url}) get copyWith => _copyWith;
+  CreateWebhookResponse Function({SdkOptional<List<String>> alertRuleIds, double createdAt, List<CreateWebhookResponseEventsItem> events, String id, String ownerId, SdkOptional<List<String>> projectIds, String secret, double updatedAt, String url}) get copyWith => _copyWith;
 
-  CreateWebhookResponse _copyWith(
-          {Object? alertRuleIds = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? events = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue,
-          Object? secret = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      CreateWebhookResponse(
-        alertRuleIds: identical(alertRuleIds, sdkOmittedValue)
-            ? this.alertRuleIds
-            : alertRuleIds as SdkOptional<List<String>>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        events: identical(events, sdkOmittedValue)
-            ? this.events
-            : events as List<CreateWebhookResponseEventsItem>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-        secret:
-            identical(secret, sdkOmittedValue) ? this.secret : secret as String,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  CreateWebhookResponse _copyWith({Object? alertRuleIds = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? events = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? secret = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? url = sdkOmittedValue}) => CreateWebhookResponse(
+    alertRuleIds: identical(alertRuleIds, sdkOmittedValue) ? this.alertRuleIds : alertRuleIds as SdkOptional<List<String>>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    events: identical(events, sdkOmittedValue) ? this.events : events as List<CreateWebhookResponseEventsItem>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+    secret: identical(secret, sdkOmittedValue) ? this.secret : secret as String,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory CreateWebhookResponse.fromJson(Map<String, dynamic> json) =>
-      CreateWebhookResponse(
-        alertRuleIds: json['alertRuleIds'] != null
-            ? SdkPresent(((json['alertRuleIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        events: ((json['events'] as List?)
-            ?.map((e) => CreateWebhookResponseEventsItem.fromJson(e as String))
-            .toList())!,
-        id: (json['id'] as String?)!,
-        ownerId: (json['ownerId'] as String?)!,
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        secret: (json['secret'] as String?)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-        url: (json['url'] as String?)!,
-      );
+  factory CreateWebhookResponse.fromJson(Map<String, dynamic> json) => CreateWebhookResponse(
+    alertRuleIds: json['alertRuleIds'] != null ? SdkPresent(((json['alertRuleIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    events: ((json['events'] as List?)?.map((e) => CreateWebhookResponseEventsItem.fromJson(e as String)).toList())!,
+    id: (json['id'] as String?)!,
+    ownerId: (json['ownerId'] as String?)!,
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    secret: (json['secret'] as String?)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (alertRuleIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'alertRuleIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'events': events.map((item) => item.toJson()).toList(),
-        'id': id,
-        'ownerId': ownerId,
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'secret': secret,
-        'updatedAt': updatedAt,
-        'url': url,
-      };
+    ...switch (alertRuleIds) {
+      SdkPresent<List<String>>(value: final value) => {'alertRuleIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'events': events.map((item) => item.toJson()).toList(),
+    'id': id,
+    'ownerId': ownerId,
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    'secret': secret,
+    'updatedAt': updatedAt,
+    'url': url,
+  };
 }
 
 class GetWebhooksResponseVariant0ItemProjectsMetadataItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?> framework;
+  final SdkOptional<GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?> framework;
   final String id;
   final SdkOptional<String> latestDeployment;
   final String name;
 
-  const GetWebhooksResponseVariant0ItemProjectsMetadataItem(
-      {this.framework = const SdkOmitted(),
-      required this.id,
-      this.latestDeployment = const SdkOmitted(),
-      required this.name});
+  const GetWebhooksResponseVariant0ItemProjectsMetadataItem({this.framework = const SdkOmitted(), required this.id, this.latestDeployment = const SdkOmitted(), required this.name});
 
-  GetWebhooksResponseVariant0ItemProjectsMetadataItem Function(
-      {SdkOptional<
-              GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?>
-          framework,
-      String id,
-      SdkOptional<String> latestDeployment,
-      String name}) get copyWith => _copyWith;
+  GetWebhooksResponseVariant0ItemProjectsMetadataItem Function({SdkOptional<GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?> framework, String id, SdkOptional<String> latestDeployment, String name}) get copyWith => _copyWith;
 
-  GetWebhooksResponseVariant0ItemProjectsMetadataItem _copyWith(
-          {Object? framework = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? latestDeployment = sdkOmittedValue,
-          Object? name = sdkOmittedValue}) =>
-      GetWebhooksResponseVariant0ItemProjectsMetadataItem(
-        framework: identical(framework, sdkOmittedValue)
-            ? this.framework
-            : framework as SdkOptional<
-                GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        latestDeployment: identical(latestDeployment, sdkOmittedValue)
-            ? this.latestDeployment
-            : latestDeployment as SdkOptional<String>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  GetWebhooksResponseVariant0ItemProjectsMetadataItem _copyWith({Object? framework = sdkOmittedValue, Object? id = sdkOmittedValue, Object? latestDeployment = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetWebhooksResponseVariant0ItemProjectsMetadataItem(
+    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    latestDeployment: identical(latestDeployment, sdkOmittedValue) ? this.latestDeployment : latestDeployment as SdkOptional<String>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory GetWebhooksResponseVariant0ItemProjectsMetadataItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetWebhooksResponseVariant0ItemProjectsMetadataItem(
-        framework: json.containsKey('framework')
-            ? SdkPresent(json['framework'] != null
-                ? GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework
-                    .fromJson(json['framework'] as String)
-                : null)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        latestDeployment: json['latestDeployment'] != null
-            ? SdkPresent((json['latestDeployment'] as String?)!)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-      );
+  factory GetWebhooksResponseVariant0ItemProjectsMetadataItem.fromJson(Map<String, dynamic> json) => GetWebhooksResponseVariant0ItemProjectsMetadataItem(
+    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    latestDeployment: json['latestDeployment'] != null ? SdkPresent((json['latestDeployment'] as String?)!) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (framework) {
-          SdkPresent<
-                GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?>(
-            value: final value
-          ) =>
-            {
-              'framework': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (latestDeployment) {
-          SdkPresent<String>(value: final value) => {
-              'latestDeployment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-      };
+    ...switch (framework) {
+      SdkPresent<GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework?>(value: final value) => {'framework': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (latestDeployment) {
+      SdkPresent<String>(value: final value) => {'latestDeployment': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+  };
 }
 
 class GetWebhooksResponseVariant0Item {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> alertRuleIds;
-
   /// A number containing the date when the webhook was created in in milliseconds
   final double createdAt;
-
   /// The webhooks events
   final List<GetWebhooksResponseVariant0ItemEventsItem> events;
-
   /// The webhook id
   final String id;
-
   /// The unique ID of the team the webhook belongs to
   final String ownerId;
-
   /// The ID of the projects the webhook is associated with
   final SdkOptional<List<String>> projectIds;
-  final List<GetWebhooksResponseVariant0ItemProjectsMetadataItem>?
-      projectsMetadata;
-
+  final List<GetWebhooksResponseVariant0ItemProjectsMetadataItem>? projectsMetadata;
   /// A number containing the date when the webhook was updated in in milliseconds
   final double updatedAt;
-
   /// A string with the URL of the webhook
   final String url;
 
-  const GetWebhooksResponseVariant0Item(
-      {this.alertRuleIds = const SdkOmitted(),
-      required this.createdAt,
-      required this.events,
-      required this.id,
-      required this.ownerId,
-      this.projectIds = const SdkOmitted(),
-      required this.projectsMetadata,
-      required this.updatedAt,
-      required this.url});
+  const GetWebhooksResponseVariant0Item({this.alertRuleIds = const SdkOmitted(), required this.createdAt, required this.events, required this.id, required this.ownerId, this.projectIds = const SdkOmitted(), required this.projectsMetadata, required this.updatedAt, required this.url});
 
-  GetWebhooksResponseVariant0Item Function(
-      {SdkOptional<List<String>> alertRuleIds,
-      double createdAt,
-      List<GetWebhooksResponseVariant0ItemEventsItem> events,
-      String id,
-      String ownerId,
-      SdkOptional<List<String>> projectIds,
-      List<GetWebhooksResponseVariant0ItemProjectsMetadataItem>?
-          projectsMetadata,
-      double updatedAt,
-      String url}) get copyWith => _copyWith;
+  GetWebhooksResponseVariant0Item Function({SdkOptional<List<String>> alertRuleIds, double createdAt, List<GetWebhooksResponseVariant0ItemEventsItem> events, String id, String ownerId, SdkOptional<List<String>> projectIds, List<GetWebhooksResponseVariant0ItemProjectsMetadataItem>? projectsMetadata, double updatedAt, String url}) get copyWith => _copyWith;
 
-  GetWebhooksResponseVariant0Item _copyWith(
-          {Object? alertRuleIds = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? events = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? ownerId = sdkOmittedValue,
-          Object? projectIds = sdkOmittedValue,
-          Object? projectsMetadata = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      GetWebhooksResponseVariant0Item(
-        alertRuleIds: identical(alertRuleIds, sdkOmittedValue)
-            ? this.alertRuleIds
-            : alertRuleIds as SdkOptional<List<String>>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        events: identical(events, sdkOmittedValue)
-            ? this.events
-            : events as List<GetWebhooksResponseVariant0ItemEventsItem>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        ownerId: identical(ownerId, sdkOmittedValue)
-            ? this.ownerId
-            : ownerId as String,
-        projectIds: identical(projectIds, sdkOmittedValue)
-            ? this.projectIds
-            : projectIds as SdkOptional<List<String>>,
-        projectsMetadata: identical(projectsMetadata, sdkOmittedValue)
-            ? this.projectsMetadata
-            : projectsMetadata
-                as List<GetWebhooksResponseVariant0ItemProjectsMetadataItem>?,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  GetWebhooksResponseVariant0Item _copyWith({Object? alertRuleIds = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? events = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectIds = sdkOmittedValue, Object? projectsMetadata = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? url = sdkOmittedValue}) => GetWebhooksResponseVariant0Item(
+    alertRuleIds: identical(alertRuleIds, sdkOmittedValue) ? this.alertRuleIds : alertRuleIds as SdkOptional<List<String>>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    events: identical(events, sdkOmittedValue) ? this.events : events as List<GetWebhooksResponseVariant0ItemEventsItem>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
+    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as SdkOptional<List<String>>,
+    projectsMetadata: identical(projectsMetadata, sdkOmittedValue) ? this.projectsMetadata : projectsMetadata as List<GetWebhooksResponseVariant0ItemProjectsMetadataItem>?,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory GetWebhooksResponseVariant0Item.fromJson(Map<String, dynamic> json) =>
-      GetWebhooksResponseVariant0Item(
-        alertRuleIds: json['alertRuleIds'] != null
-            ? SdkPresent(((json['alertRuleIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        events: ((json['events'] as List?)
-            ?.map((e) =>
-                GetWebhooksResponseVariant0ItemEventsItem.fromJson(e as String))
-            .toList())!,
-        id: (json['id'] as String?)!,
-        ownerId: (json['ownerId'] as String?)!,
-        projectIds: json['projectIds'] != null
-            ? SdkPresent(((json['projectIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        projectsMetadata: json.containsKey('projectsMetadata')
-            ? (json['projectsMetadata'] as List?)
-                ?.map((e) => GetWebhooksResponseVariant0ItemProjectsMetadataItem
-                    .fromJson(e as Map<String, dynamic>))
-                .toList()
-            : throw ArgumentError.value(
-                null, 'projectsMetadata', 'Required property is missing'),
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-        url: (json['url'] as String?)!,
-      );
+  factory GetWebhooksResponseVariant0Item.fromJson(Map<String, dynamic> json) => GetWebhooksResponseVariant0Item(
+    alertRuleIds: json['alertRuleIds'] != null ? SdkPresent(((json['alertRuleIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    events: ((json['events'] as List?)?.map((e) => GetWebhooksResponseVariant0ItemEventsItem.fromJson(e as String)).toList())!,
+    id: (json['id'] as String?)!,
+    ownerId: (json['ownerId'] as String?)!,
+    projectIds: json['projectIds'] != null ? SdkPresent(((json['projectIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    projectsMetadata: json.containsKey('projectsMetadata') ? (json['projectsMetadata'] as List?)?.map((e) => GetWebhooksResponseVariant0ItemProjectsMetadataItem.fromJson(e as Map<String, dynamic>)).toList() : throw ArgumentError.value(null, 'projectsMetadata', 'Required property is missing'),
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (alertRuleIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'alertRuleIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'events': events.map((item) => item.toJson()).toList(),
-        'id': id,
-        'ownerId': ownerId,
-        ...switch (projectIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'projectIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'projectsMetadata':
-            projectsMetadata?.map((item) => item.toJson()).toList(),
-        'updatedAt': updatedAt,
-        'url': url,
-      };
+    ...switch (alertRuleIds) {
+      SdkPresent<List<String>>(value: final value) => {'alertRuleIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'events': events.map((item) => item.toJson()).toList(),
+    'id': id,
+    'ownerId': ownerId,
+    ...switch (projectIds) {
+      SdkPresent<List<String>>(value: final value) => {'projectIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    'projectsMetadata': projectsMetadata?.map((item) => item.toJson()).toList(),
+    'updatedAt': updatedAt,
+    'url': url,
+  };
 }

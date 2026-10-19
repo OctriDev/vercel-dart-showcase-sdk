@@ -7,653 +7,246 @@ part of 'inline.dart';
 class UpdateTeamsRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The hash value of an uploaded image, or `null` to clear the avatar.
   final SdkOptional<String?> avatar;
-
   /// A short text that describes the team.
   final SdkOptional<String> description;
   final SdkOptional<String?> emailDomain;
-
   /// The name of the team.
   final SdkOptional<String> name;
-
   /// Suffix that will be used for all preview deployments.
   final SdkOptional<String?> previewDeploymentSuffix;
-
   /// Create a new invite code and replace the current one.
   final SdkOptional<bool> regenerateInviteCode;
   final SdkOptional<UpdateTeamsRequestBodySaml> saml;
-
   /// A new slug for the team.
   final SdkOptional<String> slug;
-
   /// Enable preview toolbar: one of on, off or default.
   final SdkOptional<String> enablePreviewFeedback;
-
   /// Enable production toolbar: one of on, off or default.
   final SdkOptional<String> enableProductionFeedback;
-
   /// Sensitive environment variable policy: one of on, off or default.
   final SdkOptional<String> sensitiveEnvironmentVariablePolicy;
-
   /// Require production secrets to be in their own environment group: one of on, off or default.
   final SdkOptional<String> disjunctiveProductionSecretPolicy;
-
   /// Whether or not remote caching is enabled for the team
   final SdkOptional<UpdateTeamsRequestBodyRemoteCaching> remoteCaching;
-
   /// Display or hide IP addresses in Monitoring queries.
   final SdkOptional<bool> hideIpAddresses;
-
   /// Display or hide IP addresses in Log Drains.
   final SdkOptional<bool> hideIpAddressesInLogDrains;
-
   /// Controls who can request access to protected deployments.
-  final SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode>
-      dpAccessRequestsMode;
-
+  final SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode> dpAccessRequestsMode;
   /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created.
   final SdkOptional<bool> requireVerifiedCommits;
-
   /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting.
   final SdkOptional<bool> disableRepositoryDispatchEvents;
-
   /// Default deployment protection settings for new projects.
-  final SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection>
-      defaultDeploymentProtection;
-
+  final SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection> defaultDeploymentProtection;
   /// Default Passport configuration for new projects.
   final SdkOptional<UpdateTeamsRequestBodyDefaultPassport?> defaultPassport;
-  final SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings>
-      defaultExpirationSettings;
-
+  final SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings> defaultExpirationSettings;
   /// Typed representation of the `UpdateTeamsRequestDeploymentPolicy` API schema.
   final SdkOptional<UpdateTeamsRequestDeploymentPolicy> deploymentPolicy;
-
   /// When enabled, deployment protection settings require stricter permissions (owner-only).
-  final SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>
-      strictDeploymentProtectionSettings;
-
+  final SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings> strictDeploymentProtectionSettings;
   /// When enabled, creating shareable links requires Owner role.
-  final SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks>
-      strictShareableLinks;
-
+  final SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks> strictShareableLinks;
   /// When enabled, adding, changing, or removing project password protection requires Owner role.
-  final SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>
-      strictPasswordProtectionSettings;
-
+  final SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings> strictPasswordProtectionSettings;
   /// When enabled, creating and managing connectors requires Owner role.
   final SdkOptional<UpdateTeamsRequestBodyStrictConnectors> strictConnectors;
-
   /// Typed representation of the `UpdateTeamsRequestNsnbConfig` API schema.
   final SdkOptional<UpdateTeamsRequestNsnbConfig> nsnbConfig;
-
   /// Typed representation of the `UpdateTeamsRequestDefaultProjectJobs` API schema.
   final SdkOptional<UpdateTeamsRequestDefaultProjectJobs> defaultProjectJobs;
-
   /// Resource configuration for the team.
   final SdkOptional<UpdateTeamsRequestBodyResourceConfig> resourceConfig;
 
-  const UpdateTeamsRequestBody(
-      {this.avatar = const SdkOmitted(),
-      this.description = const SdkOmitted(),
-      this.emailDomain = const SdkOmitted(),
-      this.name = const SdkOmitted(),
-      this.previewDeploymentSuffix = const SdkOmitted(),
-      this.regenerateInviteCode = const SdkOmitted(),
-      this.saml = const SdkOmitted(),
-      this.slug = const SdkOmitted(),
-      this.enablePreviewFeedback = const SdkOmitted(),
-      this.enableProductionFeedback = const SdkOmitted(),
-      this.sensitiveEnvironmentVariablePolicy = const SdkOmitted(),
-      this.disjunctiveProductionSecretPolicy = const SdkOmitted(),
-      this.remoteCaching = const SdkOmitted(),
-      this.hideIpAddresses = const SdkOmitted(),
-      this.hideIpAddressesInLogDrains = const SdkOmitted(),
-      this.dpAccessRequestsMode = const SdkOmitted(),
-      this.requireVerifiedCommits = const SdkOmitted(),
-      this.disableRepositoryDispatchEvents = const SdkOmitted(),
-      this.defaultDeploymentProtection = const SdkOmitted(),
-      this.defaultPassport = const SdkOmitted(),
-      this.defaultExpirationSettings = const SdkOmitted(),
-      this.deploymentPolicy = const SdkOmitted(),
-      this.strictDeploymentProtectionSettings = const SdkOmitted(),
-      this.strictShareableLinks = const SdkOmitted(),
-      this.strictPasswordProtectionSettings = const SdkOmitted(),
-      this.strictConnectors = const SdkOmitted(),
-      this.nsnbConfig = const SdkOmitted(),
-      this.defaultProjectJobs = const SdkOmitted(),
-      this.resourceConfig = const SdkOmitted()});
+  const UpdateTeamsRequestBody({this.avatar = const SdkOmitted(), this.description = const SdkOmitted(), this.emailDomain = const SdkOmitted(), this.name = const SdkOmitted(), this.previewDeploymentSuffix = const SdkOmitted(), this.regenerateInviteCode = const SdkOmitted(), this.saml = const SdkOmitted(), this.slug = const SdkOmitted(), this.enablePreviewFeedback = const SdkOmitted(), this.enableProductionFeedback = const SdkOmitted(), this.sensitiveEnvironmentVariablePolicy = const SdkOmitted(), this.disjunctiveProductionSecretPolicy = const SdkOmitted(), this.remoteCaching = const SdkOmitted(), this.hideIpAddresses = const SdkOmitted(), this.hideIpAddressesInLogDrains = const SdkOmitted(), this.dpAccessRequestsMode = const SdkOmitted(), this.requireVerifiedCommits = const SdkOmitted(), this.disableRepositoryDispatchEvents = const SdkOmitted(), this.defaultDeploymentProtection = const SdkOmitted(), this.defaultPassport = const SdkOmitted(), this.defaultExpirationSettings = const SdkOmitted(), this.deploymentPolicy = const SdkOmitted(), this.strictDeploymentProtectionSettings = const SdkOmitted(), this.strictShareableLinks = const SdkOmitted(), this.strictPasswordProtectionSettings = const SdkOmitted(), this.strictConnectors = const SdkOmitted(), this.nsnbConfig = const SdkOmitted(), this.defaultProjectJobs = const SdkOmitted(), this.resourceConfig = const SdkOmitted()});
 
-  UpdateTeamsRequestBody Function(
-          {SdkOptional<String?> avatar,
-          SdkOptional<String> description,
-          SdkOptional<String?> emailDomain,
-          SdkOptional<String> name,
-          SdkOptional<String?> previewDeploymentSuffix,
-          SdkOptional<bool> regenerateInviteCode,
-          SdkOptional<UpdateTeamsRequestBodySaml> saml,
-          SdkOptional<String> slug,
-          SdkOptional<String> enablePreviewFeedback,
-          SdkOptional<String> enableProductionFeedback,
-          SdkOptional<String> sensitiveEnvironmentVariablePolicy,
-          SdkOptional<String> disjunctiveProductionSecretPolicy,
-          SdkOptional<UpdateTeamsRequestBodyRemoteCaching> remoteCaching,
-          SdkOptional<bool> hideIpAddresses,
-          SdkOptional<bool> hideIpAddressesInLogDrains,
-          SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode>
-              dpAccessRequestsMode,
-          SdkOptional<bool> requireVerifiedCommits,
-          SdkOptional<bool> disableRepositoryDispatchEvents,
-          SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection>
-              defaultDeploymentProtection,
-          SdkOptional<UpdateTeamsRequestBodyDefaultPassport?> defaultPassport,
-          SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings>
-              defaultExpirationSettings,
-          SdkOptional<UpdateTeamsRequestDeploymentPolicy> deploymentPolicy,
-          SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>
-              strictDeploymentProtectionSettings,
-          SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks>
-              strictShareableLinks,
-          SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>
-              strictPasswordProtectionSettings,
-          SdkOptional<UpdateTeamsRequestBodyStrictConnectors> strictConnectors,
-          SdkOptional<UpdateTeamsRequestNsnbConfig> nsnbConfig,
-          SdkOptional<UpdateTeamsRequestDefaultProjectJobs> defaultProjectJobs,
-          SdkOptional<UpdateTeamsRequestBodyResourceConfig> resourceConfig})
-      get copyWith => _copyWith;
+  UpdateTeamsRequestBody Function({SdkOptional<String?> avatar, SdkOptional<String> description, SdkOptional<String?> emailDomain, SdkOptional<String> name, SdkOptional<String?> previewDeploymentSuffix, SdkOptional<bool> regenerateInviteCode, SdkOptional<UpdateTeamsRequestBodySaml> saml, SdkOptional<String> slug, SdkOptional<String> enablePreviewFeedback, SdkOptional<String> enableProductionFeedback, SdkOptional<String> sensitiveEnvironmentVariablePolicy, SdkOptional<String> disjunctiveProductionSecretPolicy, SdkOptional<UpdateTeamsRequestBodyRemoteCaching> remoteCaching, SdkOptional<bool> hideIpAddresses, SdkOptional<bool> hideIpAddressesInLogDrains, SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode> dpAccessRequestsMode, SdkOptional<bool> requireVerifiedCommits, SdkOptional<bool> disableRepositoryDispatchEvents, SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection> defaultDeploymentProtection, SdkOptional<UpdateTeamsRequestBodyDefaultPassport?> defaultPassport, SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings> defaultExpirationSettings, SdkOptional<UpdateTeamsRequestDeploymentPolicy> deploymentPolicy, SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings> strictDeploymentProtectionSettings, SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks> strictShareableLinks, SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings> strictPasswordProtectionSettings, SdkOptional<UpdateTeamsRequestBodyStrictConnectors> strictConnectors, SdkOptional<UpdateTeamsRequestNsnbConfig> nsnbConfig, SdkOptional<UpdateTeamsRequestDefaultProjectJobs> defaultProjectJobs, SdkOptional<UpdateTeamsRequestBodyResourceConfig> resourceConfig}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestBody _copyWith(
-          {Object? avatar = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? emailDomain = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? previewDeploymentSuffix = sdkOmittedValue,
-          Object? regenerateInviteCode = sdkOmittedValue,
-          Object? saml = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? enablePreviewFeedback = sdkOmittedValue,
-          Object? enableProductionFeedback = sdkOmittedValue,
-          Object? sensitiveEnvironmentVariablePolicy = sdkOmittedValue,
-          Object? disjunctiveProductionSecretPolicy = sdkOmittedValue,
-          Object? remoteCaching = sdkOmittedValue,
-          Object? hideIpAddresses = sdkOmittedValue,
-          Object? hideIpAddressesInLogDrains = sdkOmittedValue,
-          Object? dpAccessRequestsMode = sdkOmittedValue,
-          Object? requireVerifiedCommits = sdkOmittedValue,
-          Object? disableRepositoryDispatchEvents = sdkOmittedValue,
-          Object? defaultDeploymentProtection = sdkOmittedValue,
-          Object? defaultPassport = sdkOmittedValue,
-          Object? defaultExpirationSettings = sdkOmittedValue,
-          Object? deploymentPolicy = sdkOmittedValue,
-          Object? strictDeploymentProtectionSettings = sdkOmittedValue,
-          Object? strictShareableLinks = sdkOmittedValue,
-          Object? strictPasswordProtectionSettings = sdkOmittedValue,
-          Object? strictConnectors = sdkOmittedValue,
-          Object? nsnbConfig = sdkOmittedValue,
-          Object? defaultProjectJobs = sdkOmittedValue,
-          Object? resourceConfig = sdkOmittedValue}) =>
-      UpdateTeamsRequestBody(
-        avatar: identical(avatar, sdkOmittedValue)
-            ? this.avatar
-            : avatar as SdkOptional<String?>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        emailDomain: identical(emailDomain, sdkOmittedValue)
-            ? this.emailDomain
-            : emailDomain as SdkOptional<String?>,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        previewDeploymentSuffix:
-            identical(previewDeploymentSuffix, sdkOmittedValue)
-                ? this.previewDeploymentSuffix
-                : previewDeploymentSuffix as SdkOptional<String?>,
-        regenerateInviteCode: identical(regenerateInviteCode, sdkOmittedValue)
-            ? this.regenerateInviteCode
-            : regenerateInviteCode as SdkOptional<bool>,
-        saml: identical(saml, sdkOmittedValue)
-            ? this.saml
-            : saml as SdkOptional<UpdateTeamsRequestBodySaml>,
-        slug: identical(slug, sdkOmittedValue)
-            ? this.slug
-            : slug as SdkOptional<String>,
-        enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue)
-            ? this.enablePreviewFeedback
-            : enablePreviewFeedback as SdkOptional<String>,
-        enableProductionFeedback:
-            identical(enableProductionFeedback, sdkOmittedValue)
-                ? this.enableProductionFeedback
-                : enableProductionFeedback as SdkOptional<String>,
-        sensitiveEnvironmentVariablePolicy:
-            identical(sensitiveEnvironmentVariablePolicy, sdkOmittedValue)
-                ? this.sensitiveEnvironmentVariablePolicy
-                : sensitiveEnvironmentVariablePolicy as SdkOptional<String>,
-        disjunctiveProductionSecretPolicy:
-            identical(disjunctiveProductionSecretPolicy, sdkOmittedValue)
-                ? this.disjunctiveProductionSecretPolicy
-                : disjunctiveProductionSecretPolicy as SdkOptional<String>,
-        remoteCaching: identical(remoteCaching, sdkOmittedValue)
-            ? this.remoteCaching
-            : remoteCaching as SdkOptional<UpdateTeamsRequestBodyRemoteCaching>,
-        hideIpAddresses: identical(hideIpAddresses, sdkOmittedValue)
-            ? this.hideIpAddresses
-            : hideIpAddresses as SdkOptional<bool>,
-        hideIpAddressesInLogDrains:
-            identical(hideIpAddressesInLogDrains, sdkOmittedValue)
-                ? this.hideIpAddressesInLogDrains
-                : hideIpAddressesInLogDrains as SdkOptional<bool>,
-        dpAccessRequestsMode: identical(dpAccessRequestsMode, sdkOmittedValue)
-            ? this.dpAccessRequestsMode
-            : dpAccessRequestsMode
-                as SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode>,
-        requireVerifiedCommits:
-            identical(requireVerifiedCommits, sdkOmittedValue)
-                ? this.requireVerifiedCommits
-                : requireVerifiedCommits as SdkOptional<bool>,
-        disableRepositoryDispatchEvents:
-            identical(disableRepositoryDispatchEvents, sdkOmittedValue)
-                ? this.disableRepositoryDispatchEvents
-                : disableRepositoryDispatchEvents as SdkOptional<bool>,
-        defaultDeploymentProtection:
-            identical(defaultDeploymentProtection, sdkOmittedValue)
-                ? this.defaultDeploymentProtection
-                : defaultDeploymentProtection as SdkOptional<
-                    UpdateTeamsRequestBodyDefaultDeploymentProtection>,
-        defaultPassport: identical(defaultPassport, sdkOmittedValue)
-            ? this.defaultPassport
-            : defaultPassport
-                as SdkOptional<UpdateTeamsRequestBodyDefaultPassport?>,
-        defaultExpirationSettings: identical(
-                defaultExpirationSettings, sdkOmittedValue)
-            ? this.defaultExpirationSettings
-            : defaultExpirationSettings
-                as SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings>,
-        deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue)
-            ? this.deploymentPolicy
-            : deploymentPolicy
-                as SdkOptional<UpdateTeamsRequestDeploymentPolicy>,
-        strictDeploymentProtectionSettings:
-            identical(strictDeploymentProtectionSettings, sdkOmittedValue)
-                ? this.strictDeploymentProtectionSettings
-                : strictDeploymentProtectionSettings as SdkOptional<
-                    UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>,
-        strictShareableLinks: identical(strictShareableLinks, sdkOmittedValue)
-            ? this.strictShareableLinks
-            : strictShareableLinks
-                as SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks>,
-        strictPasswordProtectionSettings:
-            identical(strictPasswordProtectionSettings, sdkOmittedValue)
-                ? this.strictPasswordProtectionSettings
-                : strictPasswordProtectionSettings as SdkOptional<
-                    UpdateTeamsRequestBodyStrictPasswordProtectionSettings>,
-        strictConnectors: identical(strictConnectors, sdkOmittedValue)
-            ? this.strictConnectors
-            : strictConnectors
-                as SdkOptional<UpdateTeamsRequestBodyStrictConnectors>,
-        nsnbConfig: identical(nsnbConfig, sdkOmittedValue)
-            ? this.nsnbConfig
-            : nsnbConfig as SdkOptional<UpdateTeamsRequestNsnbConfig>,
-        defaultProjectJobs: identical(defaultProjectJobs, sdkOmittedValue)
-            ? this.defaultProjectJobs
-            : defaultProjectJobs
-                as SdkOptional<UpdateTeamsRequestDefaultProjectJobs>,
-        resourceConfig: identical(resourceConfig, sdkOmittedValue)
-            ? this.resourceConfig
-            : resourceConfig
-                as SdkOptional<UpdateTeamsRequestBodyResourceConfig>,
-      );
+  UpdateTeamsRequestBody _copyWith({Object? avatar = sdkOmittedValue, Object? description = sdkOmittedValue, Object? emailDomain = sdkOmittedValue, Object? name = sdkOmittedValue, Object? previewDeploymentSuffix = sdkOmittedValue, Object? regenerateInviteCode = sdkOmittedValue, Object? saml = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? enablePreviewFeedback = sdkOmittedValue, Object? enableProductionFeedback = sdkOmittedValue, Object? sensitiveEnvironmentVariablePolicy = sdkOmittedValue, Object? disjunctiveProductionSecretPolicy = sdkOmittedValue, Object? remoteCaching = sdkOmittedValue, Object? hideIpAddresses = sdkOmittedValue, Object? hideIpAddressesInLogDrains = sdkOmittedValue, Object? dpAccessRequestsMode = sdkOmittedValue, Object? requireVerifiedCommits = sdkOmittedValue, Object? disableRepositoryDispatchEvents = sdkOmittedValue, Object? defaultDeploymentProtection = sdkOmittedValue, Object? defaultPassport = sdkOmittedValue, Object? defaultExpirationSettings = sdkOmittedValue, Object? deploymentPolicy = sdkOmittedValue, Object? strictDeploymentProtectionSettings = sdkOmittedValue, Object? strictShareableLinks = sdkOmittedValue, Object? strictPasswordProtectionSettings = sdkOmittedValue, Object? strictConnectors = sdkOmittedValue, Object? nsnbConfig = sdkOmittedValue, Object? defaultProjectJobs = sdkOmittedValue, Object? resourceConfig = sdkOmittedValue}) => UpdateTeamsRequestBody(
+    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String?>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    emailDomain: identical(emailDomain, sdkOmittedValue) ? this.emailDomain : emailDomain as SdkOptional<String?>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    previewDeploymentSuffix: identical(previewDeploymentSuffix, sdkOmittedValue) ? this.previewDeploymentSuffix : previewDeploymentSuffix as SdkOptional<String?>,
+    regenerateInviteCode: identical(regenerateInviteCode, sdkOmittedValue) ? this.regenerateInviteCode : regenerateInviteCode as SdkOptional<bool>,
+    saml: identical(saml, sdkOmittedValue) ? this.saml : saml as SdkOptional<UpdateTeamsRequestBodySaml>,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as SdkOptional<String>,
+    enablePreviewFeedback: identical(enablePreviewFeedback, sdkOmittedValue) ? this.enablePreviewFeedback : enablePreviewFeedback as SdkOptional<String>,
+    enableProductionFeedback: identical(enableProductionFeedback, sdkOmittedValue) ? this.enableProductionFeedback : enableProductionFeedback as SdkOptional<String>,
+    sensitiveEnvironmentVariablePolicy: identical(sensitiveEnvironmentVariablePolicy, sdkOmittedValue) ? this.sensitiveEnvironmentVariablePolicy : sensitiveEnvironmentVariablePolicy as SdkOptional<String>,
+    disjunctiveProductionSecretPolicy: identical(disjunctiveProductionSecretPolicy, sdkOmittedValue) ? this.disjunctiveProductionSecretPolicy : disjunctiveProductionSecretPolicy as SdkOptional<String>,
+    remoteCaching: identical(remoteCaching, sdkOmittedValue) ? this.remoteCaching : remoteCaching as SdkOptional<UpdateTeamsRequestBodyRemoteCaching>,
+    hideIpAddresses: identical(hideIpAddresses, sdkOmittedValue) ? this.hideIpAddresses : hideIpAddresses as SdkOptional<bool>,
+    hideIpAddressesInLogDrains: identical(hideIpAddressesInLogDrains, sdkOmittedValue) ? this.hideIpAddressesInLogDrains : hideIpAddressesInLogDrains as SdkOptional<bool>,
+    dpAccessRequestsMode: identical(dpAccessRequestsMode, sdkOmittedValue) ? this.dpAccessRequestsMode : dpAccessRequestsMode as SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode>,
+    requireVerifiedCommits: identical(requireVerifiedCommits, sdkOmittedValue) ? this.requireVerifiedCommits : requireVerifiedCommits as SdkOptional<bool>,
+    disableRepositoryDispatchEvents: identical(disableRepositoryDispatchEvents, sdkOmittedValue) ? this.disableRepositoryDispatchEvents : disableRepositoryDispatchEvents as SdkOptional<bool>,
+    defaultDeploymentProtection: identical(defaultDeploymentProtection, sdkOmittedValue) ? this.defaultDeploymentProtection : defaultDeploymentProtection as SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection>,
+    defaultPassport: identical(defaultPassport, sdkOmittedValue) ? this.defaultPassport : defaultPassport as SdkOptional<UpdateTeamsRequestBodyDefaultPassport?>,
+    defaultExpirationSettings: identical(defaultExpirationSettings, sdkOmittedValue) ? this.defaultExpirationSettings : defaultExpirationSettings as SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings>,
+    deploymentPolicy: identical(deploymentPolicy, sdkOmittedValue) ? this.deploymentPolicy : deploymentPolicy as SdkOptional<UpdateTeamsRequestDeploymentPolicy>,
+    strictDeploymentProtectionSettings: identical(strictDeploymentProtectionSettings, sdkOmittedValue) ? this.strictDeploymentProtectionSettings : strictDeploymentProtectionSettings as SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>,
+    strictShareableLinks: identical(strictShareableLinks, sdkOmittedValue) ? this.strictShareableLinks : strictShareableLinks as SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks>,
+    strictPasswordProtectionSettings: identical(strictPasswordProtectionSettings, sdkOmittedValue) ? this.strictPasswordProtectionSettings : strictPasswordProtectionSettings as SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>,
+    strictConnectors: identical(strictConnectors, sdkOmittedValue) ? this.strictConnectors : strictConnectors as SdkOptional<UpdateTeamsRequestBodyStrictConnectors>,
+    nsnbConfig: identical(nsnbConfig, sdkOmittedValue) ? this.nsnbConfig : nsnbConfig as SdkOptional<UpdateTeamsRequestNsnbConfig>,
+    defaultProjectJobs: identical(defaultProjectJobs, sdkOmittedValue) ? this.defaultProjectJobs : defaultProjectJobs as SdkOptional<UpdateTeamsRequestDefaultProjectJobs>,
+    resourceConfig: identical(resourceConfig, sdkOmittedValue) ? this.resourceConfig : resourceConfig as SdkOptional<UpdateTeamsRequestBodyResourceConfig>,
+  );
 
-  factory UpdateTeamsRequestBody.fromJson(Map<String, dynamic> json) =>
-      UpdateTeamsRequestBody(
-        avatar: json.containsKey('avatar')
-            ? SdkPresent(json['avatar'] as String?)
-            : const SdkOmitted(),
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        emailDomain: json.containsKey('emailDomain')
-            ? SdkPresent(json['emailDomain'] as String?)
-            : const SdkOmitted(),
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix')
-            ? SdkPresent(json['previewDeploymentSuffix'] as String?)
-            : const SdkOmitted(),
-        regenerateInviteCode: json['regenerateInviteCode'] != null
-            ? SdkPresent((json['regenerateInviteCode'] as bool?)!)
-            : const SdkOmitted(),
-        saml: json['saml'] != null
-            ? SdkPresent((json['saml'] != null
-                ? UpdateTeamsRequestBodySaml.fromJson(
-                    json['saml'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        slug: json['slug'] != null
-            ? SdkPresent((json['slug'] as String?)!)
-            : const SdkOmitted(),
-        enablePreviewFeedback: json['enablePreviewFeedback'] != null
-            ? SdkPresent((json['enablePreviewFeedback'] as String?)!)
-            : const SdkOmitted(),
-        enableProductionFeedback: json['enableProductionFeedback'] != null
-            ? SdkPresent((json['enableProductionFeedback'] as String?)!)
-            : const SdkOmitted(),
-        sensitiveEnvironmentVariablePolicy:
-            json['sensitiveEnvironmentVariablePolicy'] != null
-                ? SdkPresent(
-                    (json['sensitiveEnvironmentVariablePolicy'] as String?)!)
-                : const SdkOmitted(),
-        disjunctiveProductionSecretPolicy:
-            json['disjunctiveProductionSecretPolicy'] != null
-                ? SdkPresent(
-                    (json['disjunctiveProductionSecretPolicy'] as String?)!)
-                : const SdkOmitted(),
-        remoteCaching: json['remoteCaching'] != null
-            ? SdkPresent((json['remoteCaching'] != null
-                ? UpdateTeamsRequestBodyRemoteCaching.fromJson(
-                    json['remoteCaching'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        hideIpAddresses: json['hideIpAddresses'] != null
-            ? SdkPresent((json['hideIpAddresses'] as bool?)!)
-            : const SdkOmitted(),
-        hideIpAddressesInLogDrains: json['hideIpAddressesInLogDrains'] != null
-            ? SdkPresent((json['hideIpAddressesInLogDrains'] as bool?)!)
-            : const SdkOmitted(),
-        dpAccessRequestsMode: json['dpAccessRequestsMode'] != null
-            ? SdkPresent((json['dpAccessRequestsMode'] != null
-                ? UpdateTeamsRequestBodyDpAccessRequestsMode.fromJson(
-                    json['dpAccessRequestsMode'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        requireVerifiedCommits: json['requireVerifiedCommits'] != null
-            ? SdkPresent((json['requireVerifiedCommits'] as bool?)!)
-            : const SdkOmitted(),
-        disableRepositoryDispatchEvents:
-            json['disableRepositoryDispatchEvents'] != null
-                ? SdkPresent(
-                    (json['disableRepositoryDispatchEvents'] as bool?)!)
-                : const SdkOmitted(),
-        defaultDeploymentProtection: json['defaultDeploymentProtection'] != null
-            ? SdkPresent((json['defaultDeploymentProtection'] != null
-                ? UpdateTeamsRequestBodyDefaultDeploymentProtection.fromJson(
-                    json['defaultDeploymentProtection'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        defaultPassport: json.containsKey('defaultPassport')
-            ? SdkPresent(json['defaultPassport'] != null
-                ? UpdateTeamsRequestBodyDefaultPassport.fromJson(
-                    json['defaultPassport'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        defaultExpirationSettings: json['defaultExpirationSettings'] != null
-            ? SdkPresent((json['defaultExpirationSettings'] != null
-                ? UpdateTeamsRequestBodyDefaultExpirationSettings.fromJson(
-                    json['defaultExpirationSettings'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        deploymentPolicy: json['deploymentPolicy'] != null
-            ? SdkPresent((json['deploymentPolicy'] != null
-                ? UpdateTeamsRequestDeploymentPolicy.fromJson(
-                    json['deploymentPolicy'])
-                : null)!)
-            : const SdkOmitted(),
-        strictDeploymentProtectionSettings:
-            json['strictDeploymentProtectionSettings'] != null
-                ? SdkPresent((json['strictDeploymentProtectionSettings'] != null
-                    ? UpdateTeamsRequestBodyStrictDeploymentProtectionSettings
-                        .fromJson(json['strictDeploymentProtectionSettings']
-                            as Map<String, dynamic>)
-                    : null)!)
-                : const SdkOmitted(),
-        strictShareableLinks: json['strictShareableLinks'] != null
-            ? SdkPresent((json['strictShareableLinks'] != null
-                ? UpdateTeamsRequestBodyStrictShareableLinks.fromJson(
-                    json['strictShareableLinks'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        strictPasswordProtectionSettings:
-            json['strictPasswordProtectionSettings'] != null
-                ? SdkPresent((json['strictPasswordProtectionSettings'] != null
-                    ? UpdateTeamsRequestBodyStrictPasswordProtectionSettings
-                        .fromJson(json['strictPasswordProtectionSettings']
-                            as Map<String, dynamic>)
-                    : null)!)
-                : const SdkOmitted(),
-        strictConnectors: json['strictConnectors'] != null
-            ? SdkPresent((json['strictConnectors'] != null
-                ? UpdateTeamsRequestBodyStrictConnectors.fromJson(
-                    json['strictConnectors'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        nsnbConfig: json['nsnbConfig'] != null
-            ? SdkPresent((json['nsnbConfig'] != null
-                ? UpdateTeamsRequestNsnbConfig.fromJson(json['nsnbConfig'])
-                : null)!)
-            : const SdkOmitted(),
-        defaultProjectJobs: json['defaultProjectJobs'] != null
-            ? SdkPresent((json['defaultProjectJobs'] != null
-                ? UpdateTeamsRequestDefaultProjectJobs.fromJson(
-                    json['defaultProjectJobs'])
-                : null)!)
-            : const SdkOmitted(),
-        resourceConfig: json['resourceConfig'] != null
-            ? SdkPresent((json['resourceConfig'] != null
-                ? UpdateTeamsRequestBodyResourceConfig.fromJson(
-                    json['resourceConfig'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateTeamsRequestBody.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestBody(
+    avatar: json.containsKey('avatar') ? SdkPresent(json['avatar'] as String?) : const SdkOmitted(),
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    emailDomain: json.containsKey('emailDomain') ? SdkPresent(json['emailDomain'] as String?) : const SdkOmitted(),
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    previewDeploymentSuffix: json.containsKey('previewDeploymentSuffix') ? SdkPresent(json['previewDeploymentSuffix'] as String?) : const SdkOmitted(),
+    regenerateInviteCode: json['regenerateInviteCode'] != null ? SdkPresent((json['regenerateInviteCode'] as bool?)!) : const SdkOmitted(),
+    saml: json['saml'] != null ? SdkPresent((json['saml'] != null ? UpdateTeamsRequestBodySaml.fromJson(json['saml'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    slug: json['slug'] != null ? SdkPresent((json['slug'] as String?)!) : const SdkOmitted(),
+    enablePreviewFeedback: json['enablePreviewFeedback'] != null ? SdkPresent((json['enablePreviewFeedback'] as String?)!) : const SdkOmitted(),
+    enableProductionFeedback: json['enableProductionFeedback'] != null ? SdkPresent((json['enableProductionFeedback'] as String?)!) : const SdkOmitted(),
+    sensitiveEnvironmentVariablePolicy: json['sensitiveEnvironmentVariablePolicy'] != null ? SdkPresent((json['sensitiveEnvironmentVariablePolicy'] as String?)!) : const SdkOmitted(),
+    disjunctiveProductionSecretPolicy: json['disjunctiveProductionSecretPolicy'] != null ? SdkPresent((json['disjunctiveProductionSecretPolicy'] as String?)!) : const SdkOmitted(),
+    remoteCaching: json['remoteCaching'] != null ? SdkPresent((json['remoteCaching'] != null ? UpdateTeamsRequestBodyRemoteCaching.fromJson(json['remoteCaching'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    hideIpAddresses: json['hideIpAddresses'] != null ? SdkPresent((json['hideIpAddresses'] as bool?)!) : const SdkOmitted(),
+    hideIpAddressesInLogDrains: json['hideIpAddressesInLogDrains'] != null ? SdkPresent((json['hideIpAddressesInLogDrains'] as bool?)!) : const SdkOmitted(),
+    dpAccessRequestsMode: json['dpAccessRequestsMode'] != null ? SdkPresent((json['dpAccessRequestsMode'] != null ? UpdateTeamsRequestBodyDpAccessRequestsMode.fromJson(json['dpAccessRequestsMode'] as String) : null)!) : const SdkOmitted(),
+    requireVerifiedCommits: json['requireVerifiedCommits'] != null ? SdkPresent((json['requireVerifiedCommits'] as bool?)!) : const SdkOmitted(),
+    disableRepositoryDispatchEvents: json['disableRepositoryDispatchEvents'] != null ? SdkPresent((json['disableRepositoryDispatchEvents'] as bool?)!) : const SdkOmitted(),
+    defaultDeploymentProtection: json['defaultDeploymentProtection'] != null ? SdkPresent((json['defaultDeploymentProtection'] != null ? UpdateTeamsRequestBodyDefaultDeploymentProtection.fromJson(json['defaultDeploymentProtection'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    defaultPassport: json.containsKey('defaultPassport') ? SdkPresent(json['defaultPassport'] != null ? UpdateTeamsRequestBodyDefaultPassport.fromJson(json['defaultPassport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    defaultExpirationSettings: json['defaultExpirationSettings'] != null ? SdkPresent((json['defaultExpirationSettings'] != null ? UpdateTeamsRequestBodyDefaultExpirationSettings.fromJson(json['defaultExpirationSettings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    deploymentPolicy: json['deploymentPolicy'] != null ? SdkPresent((json['deploymentPolicy'] != null ? UpdateTeamsRequestDeploymentPolicy.fromJson(json['deploymentPolicy']) : null)!) : const SdkOmitted(),
+    strictDeploymentProtectionSettings: json['strictDeploymentProtectionSettings'] != null ? SdkPresent((json['strictDeploymentProtectionSettings'] != null ? UpdateTeamsRequestBodyStrictDeploymentProtectionSettings.fromJson(json['strictDeploymentProtectionSettings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    strictShareableLinks: json['strictShareableLinks'] != null ? SdkPresent((json['strictShareableLinks'] != null ? UpdateTeamsRequestBodyStrictShareableLinks.fromJson(json['strictShareableLinks'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    strictPasswordProtectionSettings: json['strictPasswordProtectionSettings'] != null ? SdkPresent((json['strictPasswordProtectionSettings'] != null ? UpdateTeamsRequestBodyStrictPasswordProtectionSettings.fromJson(json['strictPasswordProtectionSettings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    strictConnectors: json['strictConnectors'] != null ? SdkPresent((json['strictConnectors'] != null ? UpdateTeamsRequestBodyStrictConnectors.fromJson(json['strictConnectors'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    nsnbConfig: json['nsnbConfig'] != null ? SdkPresent((json['nsnbConfig'] != null ? UpdateTeamsRequestNsnbConfig.fromJson(json['nsnbConfig']) : null)!) : const SdkOmitted(),
+    defaultProjectJobs: json['defaultProjectJobs'] != null ? SdkPresent((json['defaultProjectJobs'] != null ? UpdateTeamsRequestDefaultProjectJobs.fromJson(json['defaultProjectJobs']) : null)!) : const SdkOmitted(),
+    resourceConfig: json['resourceConfig'] != null ? SdkPresent((json['resourceConfig'] != null ? UpdateTeamsRequestBodyResourceConfig.fromJson(json['resourceConfig'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (avatar) {
-          SdkPresent<String?>(value: final value) => {
-              'avatar': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (emailDomain) {
-          SdkPresent<String?>(value: final value) => {
-              'emailDomain': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (previewDeploymentSuffix) {
-          SdkPresent<String?>(value: final value) => {
-              'previewDeploymentSuffix': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (regenerateInviteCode) {
-          SdkPresent<bool>(value: final value) => {
-              'regenerateInviteCode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (saml) {
-          SdkPresent<UpdateTeamsRequestBodySaml>(value: final value) => {
-              'saml': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (slug) {
-          SdkPresent<String>(value: final value) => {
-              'slug': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enablePreviewFeedback) {
-          SdkPresent<String>(value: final value) => {
-              'enablePreviewFeedback': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enableProductionFeedback) {
-          SdkPresent<String>(value: final value) => {
-              'enableProductionFeedback': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sensitiveEnvironmentVariablePolicy) {
-          SdkPresent<String>(value: final value) => {
-              'sensitiveEnvironmentVariablePolicy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disjunctiveProductionSecretPolicy) {
-          SdkPresent<String>(value: final value) => {
-              'disjunctiveProductionSecretPolicy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (remoteCaching) {
-          SdkPresent<UpdateTeamsRequestBodyRemoteCaching>(value: final value) =>
-            {
-              'remoteCaching': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hideIpAddresses) {
-          SdkPresent<bool>(value: final value) => {
-              'hideIpAddresses': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hideIpAddressesInLogDrains) {
-          SdkPresent<bool>(value: final value) => {
-              'hideIpAddressesInLogDrains': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (dpAccessRequestsMode) {
-          SdkPresent<UpdateTeamsRequestBodyDpAccessRequestsMode>(
-            value: final value
-          ) =>
-            {
-              'dpAccessRequestsMode': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requireVerifiedCommits) {
-          SdkPresent<bool>(value: final value) => {
-              'requireVerifiedCommits': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disableRepositoryDispatchEvents) {
-          SdkPresent<bool>(value: final value) => {
-              'disableRepositoryDispatchEvents': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultDeploymentProtection) {
-          SdkPresent<UpdateTeamsRequestBodyDefaultDeploymentProtection>(
-            value: final value
-          ) =>
-            {
-              'defaultDeploymentProtection': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultPassport) {
-          SdkPresent<UpdateTeamsRequestBodyDefaultPassport?>(
-            value: final value
-          ) =>
-            {
-              'defaultPassport': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultExpirationSettings) {
-          SdkPresent<UpdateTeamsRequestBodyDefaultExpirationSettings>(
-            value: final value
-          ) =>
-            {
-              'defaultExpirationSettings': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deploymentPolicy) {
-          SdkPresent<UpdateTeamsRequestDeploymentPolicy>(value: final value) =>
-            {
-              'deploymentPolicy': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (strictDeploymentProtectionSettings) {
-          SdkPresent<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>(
-            value: final value
-          ) =>
-            {
-              'strictDeploymentProtectionSettings': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (strictShareableLinks) {
-          SdkPresent<UpdateTeamsRequestBodyStrictShareableLinks>(
-            value: final value
-          ) =>
-            {
-              'strictShareableLinks': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (strictPasswordProtectionSettings) {
-          SdkPresent<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>(
-            value: final value
-          ) =>
-            {
-              'strictPasswordProtectionSettings': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (strictConnectors) {
-          SdkPresent<UpdateTeamsRequestBodyStrictConnectors>(
-            value: final value
-          ) =>
-            {
-              'strictConnectors': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (nsnbConfig) {
-          SdkPresent<UpdateTeamsRequestNsnbConfig>(value: final value) => {
-              'nsnbConfig': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultProjectJobs) {
-          SdkPresent<UpdateTeamsRequestDefaultProjectJobs>(
-            value: final value
-          ) =>
-            {
-              'defaultProjectJobs': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (resourceConfig) {
-          SdkPresent<UpdateTeamsRequestBodyResourceConfig>(
-            value: final value
-          ) =>
-            {
-              'resourceConfig': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (avatar) {
+      SdkPresent<String?>(value: final value) => {'avatar': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (emailDomain) {
+      SdkPresent<String?>(value: final value) => {'emailDomain': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (previewDeploymentSuffix) {
+      SdkPresent<String?>(value: final value) => {'previewDeploymentSuffix': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (regenerateInviteCode) {
+      SdkPresent<bool>(value: final value) => {'regenerateInviteCode': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (saml) {
+      SdkPresent<UpdateTeamsRequestBodySaml>(value: final value) => {'saml': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (slug) {
+      SdkPresent<String>(value: final value) => {'slug': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enablePreviewFeedback) {
+      SdkPresent<String>(value: final value) => {'enablePreviewFeedback': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enableProductionFeedback) {
+      SdkPresent<String>(value: final value) => {'enableProductionFeedback': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sensitiveEnvironmentVariablePolicy) {
+      SdkPresent<String>(value: final value) => {'sensitiveEnvironmentVariablePolicy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disjunctiveProductionSecretPolicy) {
+      SdkPresent<String>(value: final value) => {'disjunctiveProductionSecretPolicy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (remoteCaching) {
+      SdkPresent<UpdateTeamsRequestBodyRemoteCaching>(value: final value) => {'remoteCaching': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hideIpAddresses) {
+      SdkPresent<bool>(value: final value) => {'hideIpAddresses': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hideIpAddressesInLogDrains) {
+      SdkPresent<bool>(value: final value) => {'hideIpAddressesInLogDrains': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (dpAccessRequestsMode) {
+      SdkPresent<UpdateTeamsRequestBodyDpAccessRequestsMode>(value: final value) => {'dpAccessRequestsMode': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requireVerifiedCommits) {
+      SdkPresent<bool>(value: final value) => {'requireVerifiedCommits': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disableRepositoryDispatchEvents) {
+      SdkPresent<bool>(value: final value) => {'disableRepositoryDispatchEvents': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultDeploymentProtection) {
+      SdkPresent<UpdateTeamsRequestBodyDefaultDeploymentProtection>(value: final value) => {'defaultDeploymentProtection': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultPassport) {
+      SdkPresent<UpdateTeamsRequestBodyDefaultPassport?>(value: final value) => {'defaultPassport': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultExpirationSettings) {
+      SdkPresent<UpdateTeamsRequestBodyDefaultExpirationSettings>(value: final value) => {'defaultExpirationSettings': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deploymentPolicy) {
+      SdkPresent<UpdateTeamsRequestDeploymentPolicy>(value: final value) => {'deploymentPolicy': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (strictDeploymentProtectionSettings) {
+      SdkPresent<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>(value: final value) => {'strictDeploymentProtectionSettings': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (strictShareableLinks) {
+      SdkPresent<UpdateTeamsRequestBodyStrictShareableLinks>(value: final value) => {'strictShareableLinks': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (strictPasswordProtectionSettings) {
+      SdkPresent<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>(value: final value) => {'strictPasswordProtectionSettings': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (strictConnectors) {
+      SdkPresent<UpdateTeamsRequestBodyStrictConnectors>(value: final value) => {'strictConnectors': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (nsnbConfig) {
+      SdkPresent<UpdateTeamsRequestNsnbConfig>(value: final value) => {'nsnbConfig': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultProjectJobs) {
+      SdkPresent<UpdateTeamsRequestDefaultProjectJobs>(value: final value) => {'defaultProjectJobs': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (resourceConfig) {
+      SdkPresent<UpdateTeamsRequestBodyResourceConfig>(value: final value) => {'resourceConfig': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

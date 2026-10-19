@@ -8,504 +8,261 @@ part of 'feature_flags.dart';
 class SegmentData {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional object value serialized in the `exclude` wire field.
-  final SdkOptional<
-      Map<String, Map<String, List<SegmentDataExcludeValueValueItem>>>> exclude;
-
+  final SdkOptional<Map<String, Map<String, List<SegmentDataExcludeValueValueItem>>>> exclude;
   /// Optional object value serialized in the `include` wire field.
-  final SdkOptional<
-      Map<String, Map<String, List<SegmentDataIncludeValueValueItem>>>> include;
-
+  final SdkOptional<Map<String, Map<String, List<SegmentDataIncludeValueValueItem>>>> include;
   /// Optional array value serialized in the `rules` wire field.
   final SdkOptional<List<SegmentDataRulesItem>> rules;
 
-  const SegmentData(
-      {this.exclude = const SdkOmitted(),
-      this.include = const SdkOmitted(),
-      this.rules = const SdkOmitted()});
+  const SegmentData({this.exclude = const SdkOmitted(), this.include = const SdkOmitted(), this.rules = const SdkOmitted()});
 
-  SegmentData Function(
-      {SdkOptional<
-              Map<String, Map<String, List<SegmentDataExcludeValueValueItem>>>>
-          exclude,
-      SdkOptional<
-              Map<String, Map<String, List<SegmentDataIncludeValueValueItem>>>>
-          include,
-      SdkOptional<List<SegmentDataRulesItem>> rules}) get copyWith => _copyWith;
+  SegmentData Function({SdkOptional<Map<String, Map<String, List<SegmentDataExcludeValueValueItem>>>> exclude, SdkOptional<Map<String, Map<String, List<SegmentDataIncludeValueValueItem>>>> include, SdkOptional<List<SegmentDataRulesItem>> rules}) get copyWith => _copyWith;
 
-  SegmentData _copyWith(
-          {Object? exclude = sdkOmittedValue,
-          Object? include = sdkOmittedValue,
-          Object? rules = sdkOmittedValue}) =>
-      SegmentData(
-        exclude: identical(exclude, sdkOmittedValue)
-            ? this.exclude
-            : exclude as SdkOptional<
-                Map<String,
-                    Map<String, List<SegmentDataExcludeValueValueItem>>>>,
-        include: identical(include, sdkOmittedValue)
-            ? this.include
-            : include as SdkOptional<
-                Map<String,
-                    Map<String, List<SegmentDataIncludeValueValueItem>>>>,
-        rules: identical(rules, sdkOmittedValue)
-            ? this.rules
-            : rules as SdkOptional<List<SegmentDataRulesItem>>,
-      );
+  SegmentData _copyWith({Object? exclude = sdkOmittedValue, Object? include = sdkOmittedValue, Object? rules = sdkOmittedValue}) => SegmentData(
+    exclude: identical(exclude, sdkOmittedValue) ? this.exclude : exclude as SdkOptional<Map<String, Map<String, List<SegmentDataExcludeValueValueItem>>>>,
+    include: identical(include, sdkOmittedValue) ? this.include : include as SdkOptional<Map<String, Map<String, List<SegmentDataIncludeValueValueItem>>>>,
+    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as SdkOptional<List<SegmentDataRulesItem>>,
+  );
 
   factory SegmentData.fromJson(Map<String, dynamic> json) => SegmentData(
-        exclude: json['exclude'] != null
-            ? SdkPresent((json['exclude'] == null
-                ? null
-                : Map<String, dynamic>.from(json['exclude'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        Map<String, dynamic>.from(value as Map).map(
-                            (key, value) => MapEntry(
-                                key,
-                                (value as List)
-                                    .map((item) =>
-                                        SegmentDataExcludeValueValueItem.fromJson(
-                                            item as Map<String, dynamic>))
-                                    .toList())))))!)
-            : const SdkOmitted(),
-        include: json['include'] != null
-            ? SdkPresent((json['include'] == null
-                ? null
-                : Map<String, dynamic>.from(json['include'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        Map<String, dynamic>.from(value as Map).map(
-                            (key, value) => MapEntry(
-                                key,
-                                (value as List)
-                                    .map((item) =>
-                                        SegmentDataIncludeValueValueItem.fromJson(
-                                            item as Map<String, dynamic>))
-                                    .toList())))))!)
-            : const SdkOmitted(),
-        rules: json['rules'] != null
-            ? SdkPresent(((json['rules'] as List?)
-                ?.map((e) =>
-                    SegmentDataRulesItem.fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+    exclude: json['exclude'] != null ? SdkPresent((json['exclude'] == null ? null : Map<String, dynamic>.from(json['exclude'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => SegmentDataExcludeValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))!) : const SdkOmitted(),
+    include: json['include'] != null ? SdkPresent((json['include'] == null ? null : Map<String, dynamic>.from(json['include'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => SegmentDataIncludeValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))!) : const SdkOmitted(),
+    rules: json['rules'] != null ? SdkPresent(((json['rules'] as List?)?.map((e) => SegmentDataRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exclude) {
-          SdkPresent<
-                Map<String,
-                    Map<String, List<SegmentDataExcludeValueValueItem>>>>(
-            value: final value
-          ) =>
-            {
-              'exclude': value.map((key, value) => MapEntry(
-                  key,
-                  value.map((key, value) => MapEntry(
-                      key, value.map((item) => item.toJson()).toList())))),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (include) {
-          SdkPresent<
-                Map<String,
-                    Map<String, List<SegmentDataIncludeValueValueItem>>>>(
-            value: final value
-          ) =>
-            {
-              'include': value.map((key, value) => MapEntry(
-                  key,
-                  value.map((key, value) => MapEntry(
-                      key, value.map((item) => item.toJson()).toList())))),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rules) {
-          SdkPresent<List<SegmentDataRulesItem>>(value: final value) => {
-              'rules': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exclude) {
+      SdkPresent<Map<String, Map<String, List<SegmentDataExcludeValueValueItem>>>>(value: final value) => {'exclude': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (include) {
+      SdkPresent<Map<String, Map<String, List<SegmentDataIncludeValueValueItem>>>>(value: final value) => {'include': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rules) {
+      SdkPresent<List<SegmentDataRulesItem>>(value: final value) => {'rules': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `creator` wire field.
 class SegmentMetadataCreator {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const SegmentMetadataCreator({required this.id, required this.name});
 
-  SegmentMetadataCreator Function({String id, String name}) get copyWith =>
-      _copyWith;
+  SegmentMetadataCreator Function({String id, String name}) get copyWith => _copyWith;
 
-  SegmentMetadataCreator _copyWith(
-          {Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
-      SegmentMetadataCreator(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  SegmentMetadataCreator _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => SegmentMetadataCreator(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory SegmentMetadataCreator.fromJson(Map<String, dynamic> json) =>
-      SegmentMetadataCreator(
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-      );
+  factory SegmentMetadataCreator.fromJson(Map<String, dynamic> json) => SegmentMetadataCreator(
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'name': name,
-      };
+    'id': id,
+    'name': name,
+  };
 }
 
 /// Optional object value serialized in the `metadata` wire field.
 class SegmentMetadata {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional object value serialized in the `creator` wire field.
   final SdkOptional<SegmentMetadataCreator> creator;
 
   const SegmentMetadata({this.creator = const SdkOmitted()});
 
-  SegmentMetadata Function({SdkOptional<SegmentMetadataCreator> creator})
-      get copyWith => _copyWith;
+  SegmentMetadata Function({SdkOptional<SegmentMetadataCreator> creator}) get copyWith => _copyWith;
 
-  SegmentMetadata _copyWith({Object? creator = sdkOmittedValue}) =>
-      SegmentMetadata(
-        creator: identical(creator, sdkOmittedValue)
-            ? this.creator
-            : creator as SdkOptional<SegmentMetadataCreator>,
-      );
+  SegmentMetadata _copyWith({Object? creator = sdkOmittedValue}) => SegmentMetadata(
+    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as SdkOptional<SegmentMetadataCreator>,
+  );
 
-  factory SegmentMetadata.fromJson(Map<String, dynamic> json) =>
-      SegmentMetadata(
-        creator: json['creator'] != null
-            ? SdkPresent((json['creator'] != null
-                ? SegmentMetadataCreator.fromJson(
-                    json['creator'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory SegmentMetadata.fromJson(Map<String, dynamic> json) => SegmentMetadata(
+    creator: json['creator'] != null ? SdkPresent((json['creator'] != null ? SegmentMetadataCreator.fromJson(json['creator'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (creator) {
-          SdkPresent<SegmentMetadataCreator>(value: final value) => {
-              'creator': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (creator) {
+      SdkPresent<SegmentMetadataCreator>(value: final value) => {'creator': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Typed representation of the `Segment` API schema.
 class Segment {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
-
   /// Optional `string` value serialized in the `createdBy` wire field.
   final SdkOptional<String> createdBy;
-
   /// Required object value serialized in the `data` wire field.
   final SegmentData data;
-
   /// Optional `string` value serialized in the `description` wire field.
   final SdkOptional<String> description;
-
   /// Required `string` value serialized in the `hint` wire field.
   final String hint;
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Required `string` value serialized in the `label` wire field.
   final String label;
-
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
-
   /// Required `string` value serialized in the `slug` wire field.
   final String slug;
-
   /// Required enumerated value serialized in the `typeName` wire field.
   final SegmentTypeName typeName;
-
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
-
   /// Optional array value serialized in the `usedByFlags` wire field.
   final SdkOptional<List<String>> usedByFlags;
-
   /// Optional array value serialized in the `usedBySegments` wire field.
   final SdkOptional<List<String>> usedBySegments;
-
   /// Optional object value serialized in the `metadata` wire field.
   final SdkOptional<SegmentMetadata> metadata;
 
-  const Segment(
-      {required this.createdAt,
-      this.createdBy = const SdkOmitted(),
-      required this.data,
-      this.description = const SdkOmitted(),
-      required this.hint,
-      required this.id,
-      required this.label,
-      required this.projectId,
-      required this.slug,
-      required this.typeName,
-      required this.updatedAt,
-      this.usedByFlags = const SdkOmitted(),
-      this.usedBySegments = const SdkOmitted(),
-      this.metadata = const SdkOmitted()});
+  const Segment({required this.createdAt, this.createdBy = const SdkOmitted(), required this.data, this.description = const SdkOmitted(), required this.hint, required this.id, required this.label, required this.projectId, required this.slug, required this.typeName, required this.updatedAt, this.usedByFlags = const SdkOmitted(), this.usedBySegments = const SdkOmitted(), this.metadata = const SdkOmitted()});
 
-  Segment Function(
-      {double createdAt,
-      SdkOptional<String> createdBy,
-      SegmentData data,
-      SdkOptional<String> description,
-      String hint,
-      String id,
-      String label,
-      String projectId,
-      String slug,
-      SegmentTypeName typeName,
-      double updatedAt,
-      SdkOptional<List<String>> usedByFlags,
-      SdkOptional<List<String>> usedBySegments,
-      SdkOptional<SegmentMetadata> metadata}) get copyWith => _copyWith;
+  Segment Function({double createdAt, SdkOptional<String> createdBy, SegmentData data, SdkOptional<String> description, String hint, String id, String label, String projectId, String slug, SegmentTypeName typeName, double updatedAt, SdkOptional<List<String>> usedByFlags, SdkOptional<List<String>> usedBySegments, SdkOptional<SegmentMetadata> metadata}) get copyWith => _copyWith;
 
-  Segment _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? data = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? hint = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? label = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? typeName = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? usedByFlags = sdkOmittedValue,
-          Object? usedBySegments = sdkOmittedValue,
-          Object? metadata = sdkOmittedValue}) =>
-      Segment(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String>,
-        data:
-            identical(data, sdkOmittedValue) ? this.data : data as SegmentData,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        hint: identical(hint, sdkOmittedValue) ? this.hint : hint as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        label: identical(label, sdkOmittedValue) ? this.label : label as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        typeName: identical(typeName, sdkOmittedValue)
-            ? this.typeName
-            : typeName as SegmentTypeName,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-        usedByFlags: identical(usedByFlags, sdkOmittedValue)
-            ? this.usedByFlags
-            : usedByFlags as SdkOptional<List<String>>,
-        usedBySegments: identical(usedBySegments, sdkOmittedValue)
-            ? this.usedBySegments
-            : usedBySegments as SdkOptional<List<String>>,
-        metadata: identical(metadata, sdkOmittedValue)
-            ? this.metadata
-            : metadata as SdkOptional<SegmentMetadata>,
-      );
+  Segment _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? data = sdkOmittedValue, Object? description = sdkOmittedValue, Object? hint = sdkOmittedValue, Object? id = sdkOmittedValue, Object? label = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? typeName = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? usedByFlags = sdkOmittedValue, Object? usedBySegments = sdkOmittedValue, Object? metadata = sdkOmittedValue}) => Segment(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
+    data: identical(data, sdkOmittedValue) ? this.data : data as SegmentData,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    hint: identical(hint, sdkOmittedValue) ? this.hint : hint as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    label: identical(label, sdkOmittedValue) ? this.label : label as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    typeName: identical(typeName, sdkOmittedValue) ? this.typeName : typeName as SegmentTypeName,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+    usedByFlags: identical(usedByFlags, sdkOmittedValue) ? this.usedByFlags : usedByFlags as SdkOptional<List<String>>,
+    usedBySegments: identical(usedBySegments, sdkOmittedValue) ? this.usedBySegments : usedBySegments as SdkOptional<List<String>>,
+    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<SegmentMetadata>,
+  );
 
   factory Segment.fromJson(Map<String, dynamic> json) => Segment(
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        createdBy: json['createdBy'] != null
-            ? SdkPresent((json['createdBy'] as String?)!)
-            : const SdkOmitted(),
-        data: (json['data'] != null
-            ? SegmentData.fromJson(json['data'] as Map<String, dynamic>)
-            : null)!,
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        hint: (json['hint'] as String?)!,
-        id: (json['id'] as String?)!,
-        label: (json['label'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        typeName: (json['typeName'] != null
-            ? SegmentTypeName.fromJson(json['typeName'] as String)
-            : null)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-        usedByFlags: json['usedByFlags'] != null
-            ? SdkPresent(((json['usedByFlags'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        usedBySegments: json['usedBySegments'] != null
-            ? SdkPresent(((json['usedBySegments'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        metadata: json['metadata'] != null
-            ? SdkPresent((json['metadata'] != null
-                ? SegmentMetadata.fromJson(
-                    json['metadata'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
+    data: (json['data'] != null ? SegmentData.fromJson(json['data'] as Map<String, dynamic>) : null)!,
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    hint: (json['hint'] as String?)!,
+    id: (json['id'] as String?)!,
+    label: (json['label'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    typeName: (json['typeName'] != null ? SegmentTypeName.fromJson(json['typeName'] as String) : null)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+    usedByFlags: json['usedByFlags'] != null ? SdkPresent(((json['usedByFlags'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    usedBySegments: json['usedBySegments'] != null ? SdkPresent(((json['usedBySegments'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] != null ? SegmentMetadata.fromJson(json['metadata'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        ...switch (createdBy) {
-          SdkPresent<String>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'data': data.toJson(),
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'hint': hint,
-        'id': id,
-        'label': label,
-        'projectId': projectId,
-        'slug': slug,
-        'typeName': typeName.toJson(),
-        'updatedAt': updatedAt,
-        ...switch (usedByFlags) {
-          SdkPresent<List<String>>(value: final value) => {
-              'usedByFlags': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (usedBySegments) {
-          SdkPresent<List<String>>(value: final value) => {
-              'usedBySegments': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (metadata) {
-          SdkPresent<SegmentMetadata>(value: final value) => {
-              'metadata': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'createdAt': createdAt,
+    ...switch (createdBy) {
+      SdkPresent<String>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'data': data.toJson(),
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    'hint': hint,
+    'id': id,
+    'label': label,
+    'projectId': projectId,
+    'slug': slug,
+    'typeName': typeName.toJson(),
+    'updatedAt': updatedAt,
+    ...switch (usedByFlags) {
+      SdkPresent<List<String>>(value: final value) => {'usedByFlags': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (usedBySegments) {
+      SdkPresent<List<String>>(value: final value) => {'usedBySegments': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (metadata) {
+      SdkPresent<SegmentMetadata>(value: final value) => {'metadata': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Required object value serialized in the `lhs` wire field.
 class SegmentDataRulesItemConditionsItemLhsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemConditionsItemLhsVariant0Type type_;
 
   const SegmentDataRulesItemConditionsItemLhsVariant0({required this.type_});
 
-  SegmentDataRulesItemConditionsItemLhsVariant0 Function(
-          {SegmentDataRulesItemConditionsItemLhsVariant0Type type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemLhsVariant0 Function({SegmentDataRulesItemConditionsItemLhsVariant0Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemLhsVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemLhsVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemConditionsItemLhsVariant0Type,
-      );
+  SegmentDataRulesItemConditionsItemLhsVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemLhsVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemConditionsItemLhsVariant0Type,
+  );
 
-  factory SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemLhsVariant0(
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemConditionsItemLhsVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemLhsVariant0(
+    type_: (json['type'] != null ? SegmentDataRulesItemConditionsItemLhsVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 /// Required object value serialized in the `lhs` wire field.
 class SegmentDataRulesItemConditionsItemLhsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `attribute` wire field.
   final String attribute;
-
   /// Required `string` value serialized in the `kind` wire field.
   final String kind;
-
   /// Required enumerated value serialized in the `type` wire field.
   final SegmentDataRulesItemConditionsItemLhsVariant1Type type_;
 
-  const SegmentDataRulesItemConditionsItemLhsVariant1(
-      {required this.attribute, required this.kind, required this.type_});
+  const SegmentDataRulesItemConditionsItemLhsVariant1({required this.attribute, required this.kind, required this.type_});
 
-  SegmentDataRulesItemConditionsItemLhsVariant1 Function(
-          {String attribute,
-          String kind,
-          SegmentDataRulesItemConditionsItemLhsVariant1Type type_})
-      get copyWith => _copyWith;
+  SegmentDataRulesItemConditionsItemLhsVariant1 Function({String attribute, String kind, SegmentDataRulesItemConditionsItemLhsVariant1Type type_}) get copyWith => _copyWith;
 
-  SegmentDataRulesItemConditionsItemLhsVariant1 _copyWith(
-          {Object? attribute = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      SegmentDataRulesItemConditionsItemLhsVariant1(
-        attribute: identical(attribute, sdkOmittedValue)
-            ? this.attribute
-            : attribute as String,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as SegmentDataRulesItemConditionsItemLhsVariant1Type,
-      );
+  SegmentDataRulesItemConditionsItemLhsVariant1 _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => SegmentDataRulesItemConditionsItemLhsVariant1(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SegmentDataRulesItemConditionsItemLhsVariant1Type,
+  );
 
-  factory SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      SegmentDataRulesItemConditionsItemLhsVariant1(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? SegmentDataRulesItemConditionsItemLhsVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(Map<String, dynamic> json) => SegmentDataRulesItemConditionsItemLhsVariant1(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? SegmentDataRulesItemConditionsItemLhsVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }
 
 sealed class SegmentDataRulesItemConditionsItemLhs {
@@ -514,53 +271,24 @@ sealed class SegmentDataRulesItemConditionsItemLhs {
   const SegmentDataRulesItemConditionsItemLhs();
   factory SegmentDataRulesItemConditionsItemLhs.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(value); } } catch (_) {}
+      try { final value = SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(value); } } catch (_) {}
     }
-    try {
-      return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(
-          SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(
-          SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for SegmentDataRulesItemConditionsItemLhs");
+    try { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(SegmentDataRulesItemConditionsItemLhsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(SegmentDataRulesItemConditionsItemLhsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for SegmentDataRulesItemConditionsItemLhs");
   }
   Object? toJson();
 }
 
-final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0
-    extends SegmentDataRulesItemConditionsItemLhs {
+final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0 extends SegmentDataRulesItemConditionsItemLhs {
   final SegmentDataRulesItemConditionsItemLhsVariant0 value;
-  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1
-    extends SegmentDataRulesItemConditionsItemLhs {
+final class SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1 extends SegmentDataRulesItemConditionsItemLhs {
   final SegmentDataRulesItemConditionsItemLhsVariant1 value;
-  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const SegmentDataRulesItemConditionsItemLhsSegmentDataRulesItemConditionsItemLhsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

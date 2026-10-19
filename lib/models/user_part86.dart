@@ -8,227 +8,136 @@ part of 'user.dart';
 class UserEventPayloadVariant251Next {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional object value serialized in the `passport` wire field.
   final SdkOptional<UserEventPayloadVariant251NextPassport?> passport;
 
   const UserEventPayloadVariant251Next({this.passport = const SdkOmitted()});
 
-  UserEventPayloadVariant251Next Function(
-          {SdkOptional<UserEventPayloadVariant251NextPassport?> passport})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant251Next Function({SdkOptional<UserEventPayloadVariant251NextPassport?> passport}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant251Next _copyWith(
-          {Object? passport = sdkOmittedValue}) =>
-      UserEventPayloadVariant251Next(
-        passport: identical(passport, sdkOmittedValue)
-            ? this.passport
-            : passport as SdkOptional<UserEventPayloadVariant251NextPassport?>,
-      );
+  UserEventPayloadVariant251Next _copyWith({Object? passport = sdkOmittedValue}) => UserEventPayloadVariant251Next(
+    passport: identical(passport, sdkOmittedValue) ? this.passport : passport as SdkOptional<UserEventPayloadVariant251NextPassport?>,
+  );
 
-  factory UserEventPayloadVariant251Next.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant251Next(
-        passport: json.containsKey('passport')
-            ? SdkPresent(json['passport'] != null
-                ? UserEventPayloadVariant251NextPassport.fromJson(
-                    json['passport'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant251Next.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant251Next(
+    passport: json.containsKey('passport') ? SdkPresent(json['passport'] != null ? UserEventPayloadVariant251NextPassport.fromJson(json['passport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (passport) {
-          SdkPresent<UserEventPayloadVariant251NextPassport?>(
-            value: final value
-          ) =>
-            {
-              'passport': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (passport) {
+      SdkPresent<UserEventPayloadVariant251NextPassport?>(value: final value) => {'passport': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `passport` wire field.
 class UserEventPayloadVariant251PreviousPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `connectorId` wire field.
   final String connectorId;
-
   /// Required enumerated value serialized in the `deploymentType` wire field.
   final UserEventPayloadVariant251PreviousPassportDeploymentType deploymentType;
 
-  const UserEventPayloadVariant251PreviousPassport(
-      {required this.connectorId, required this.deploymentType});
+  const UserEventPayloadVariant251PreviousPassport({required this.connectorId, required this.deploymentType});
 
-  UserEventPayloadVariant251PreviousPassport Function(
-      {String connectorId,
-      UserEventPayloadVariant251PreviousPassportDeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  UserEventPayloadVariant251PreviousPassport Function({String connectorId, UserEventPayloadVariant251PreviousPassportDeploymentType deploymentType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant251PreviousPassport _copyWith(
-          {Object? connectorId = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue}) =>
-      UserEventPayloadVariant251PreviousPassport(
-        connectorId: identical(connectorId, sdkOmittedValue)
-            ? this.connectorId
-            : connectorId as String,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as UserEventPayloadVariant251PreviousPassportDeploymentType,
-      );
+  UserEventPayloadVariant251PreviousPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UserEventPayloadVariant251PreviousPassport(
+    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UserEventPayloadVariant251PreviousPassportDeploymentType,
+  );
 
-  factory UserEventPayloadVariant251PreviousPassport.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant251PreviousPassport(
-        connectorId: (json['connectorId'] as String?)!,
-        deploymentType: (json['deploymentType'] != null
-            ? UserEventPayloadVariant251PreviousPassportDeploymentType.fromJson(
-                json['deploymentType'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant251PreviousPassport.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant251PreviousPassport(
+    connectorId: (json['connectorId'] as String?)!,
+    deploymentType: (json['deploymentType'] != null ? UserEventPayloadVariant251PreviousPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectorId': connectorId,
-        'deploymentType': deploymentType.toJson(),
-      };
+    'connectorId': connectorId,
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 /// Required object value serialized in the `previous` wire field.
 class UserEventPayloadVariant251Previous {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional object value serialized in the `passport` wire field.
   final SdkOptional<UserEventPayloadVariant251PreviousPassport?> passport;
 
-  const UserEventPayloadVariant251Previous(
-      {this.passport = const SdkOmitted()});
+  const UserEventPayloadVariant251Previous({this.passport = const SdkOmitted()});
 
-  UserEventPayloadVariant251Previous Function(
-          {SdkOptional<UserEventPayloadVariant251PreviousPassport?> passport})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant251Previous Function({SdkOptional<UserEventPayloadVariant251PreviousPassport?> passport}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant251Previous _copyWith(
-          {Object? passport = sdkOmittedValue}) =>
-      UserEventPayloadVariant251Previous(
-        passport: identical(passport, sdkOmittedValue)
-            ? this.passport
-            : passport
-                as SdkOptional<UserEventPayloadVariant251PreviousPassport?>,
-      );
+  UserEventPayloadVariant251Previous _copyWith({Object? passport = sdkOmittedValue}) => UserEventPayloadVariant251Previous(
+    passport: identical(passport, sdkOmittedValue) ? this.passport : passport as SdkOptional<UserEventPayloadVariant251PreviousPassport?>,
+  );
 
-  factory UserEventPayloadVariant251Previous.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant251Previous(
-        passport: json.containsKey('passport')
-            ? SdkPresent(json['passport'] != null
-                ? UserEventPayloadVariant251PreviousPassport.fromJson(
-                    json['passport'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant251Previous.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant251Previous(
+    passport: json.containsKey('passport') ? SdkPresent(json['passport'] != null ? UserEventPayloadVariant251PreviousPassport.fromJson(json['passport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (passport) {
-          SdkPresent<UserEventPayloadVariant251PreviousPassport?>(
-            value: final value
-          ) =>
-            {
-              'passport': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (passport) {
+      SdkPresent<UserEventPayloadVariant251PreviousPassport?>(value: final value) => {'passport': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant251 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `next` wire field.
   final UserEventPayloadVariant251Next next;
-
   /// Required object value serialized in the `previous` wire field.
   final UserEventPayloadVariant251Previous previous;
 
-  const UserEventPayloadVariant251(
-      {required this.next, required this.previous});
+  const UserEventPayloadVariant251({required this.next, required this.previous});
 
-  UserEventPayloadVariant251 Function(
-      {UserEventPayloadVariant251Next next,
-      UserEventPayloadVariant251Previous previous}) get copyWith => _copyWith;
+  UserEventPayloadVariant251 Function({UserEventPayloadVariant251Next next, UserEventPayloadVariant251Previous previous}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant251 _copyWith(
-          {Object? next = sdkOmittedValue,
-          Object? previous = sdkOmittedValue}) =>
-      UserEventPayloadVariant251(
-        next: identical(next, sdkOmittedValue)
-            ? this.next
-            : next as UserEventPayloadVariant251Next,
-        previous: identical(previous, sdkOmittedValue)
-            ? this.previous
-            : previous as UserEventPayloadVariant251Previous,
-      );
+  UserEventPayloadVariant251 _copyWith({Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue}) => UserEventPayloadVariant251(
+    next: identical(next, sdkOmittedValue) ? this.next : next as UserEventPayloadVariant251Next,
+    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as UserEventPayloadVariant251Previous,
+  );
 
-  factory UserEventPayloadVariant251.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant251(
-        next: (json['next'] != null
-            ? UserEventPayloadVariant251Next.fromJson(
-                json['next'] as Map<String, dynamic>)
-            : null)!,
-        previous: (json['previous'] != null
-            ? UserEventPayloadVariant251Previous.fromJson(
-                json['previous'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant251.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant251(
+    next: (json['next'] != null ? UserEventPayloadVariant251Next.fromJson(json['next'] as Map<String, dynamic>) : null)!,
+    previous: (json['previous'] != null ? UserEventPayloadVariant251Previous.fromJson(json['previous'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'next': next.toJson(),
-        'previous': previous.toJson(),
-      };
+    'next': next.toJson(),
+    'previous': previous.toJson(),
+  };
 }
 
 sealed class UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId();
-  factory UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId.fromJson(
-      Object? json) {
-    if (json is String) {
-      return UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdString(
-          json);
-    }
-    if (json is num) {
-      return UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdDouble(
-          json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId");
+  factory UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId.fromJson(Object? json) {
+    if (json is String) { return UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdString(json); }
+    if (json is num) { return UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdDouble(json.toDouble()); }
+    throw FormatException("No variant matched for UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdString
-    extends UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId {
+final class UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdString extends UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId {
   final String value;
-  const UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdDouble
-    extends UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId {
+final class UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdDouble extends UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserId {
   final double value;
-  const UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const UserEventPayloadVariant252RemovedUsersValueJoinedFromGitUserIdDouble(this.value);
+  @override Object? toJson() => value;
 }
 
 class UserEventPayloadVariant252RemovedUsersValueJoinedFrom {
@@ -246,183 +155,81 @@ class UserEventPayloadVariant252RemovedUsersValueJoinedFrom {
   final SdkOptional<double> ssoConnectedAt;
   final SdkOptional<String> ssoUserId;
 
-  const UserEventPayloadVariant252RemovedUsersValueJoinedFrom(
-      {this.commitId = const SdkOmitted(),
-      this.dsyncConnectedAt = const SdkOmitted(),
-      this.dsyncUserId = const SdkOmitted(),
-      this.gitUserId = const SdkOmitted(),
-      this.gitUserLogin = const SdkOmitted(),
-      this.idpUserId = const SdkOmitted(),
-      required this.origin,
-      this.repoId = const SdkOmitted(),
-      this.repoPath = const SdkOmitted(),
-      this.ssoConnectedAt = const SdkOmitted(),
-      this.ssoUserId = const SdkOmitted()});
+  const UserEventPayloadVariant252RemovedUsersValueJoinedFrom({this.commitId = const SdkOmitted(), this.dsyncConnectedAt = const SdkOmitted(), this.dsyncUserId = const SdkOmitted(), this.gitUserId = const SdkOmitted(), this.gitUserLogin = const SdkOmitted(), this.idpUserId = const SdkOmitted(), required this.origin, this.repoId = const SdkOmitted(), this.repoPath = const SdkOmitted(), this.ssoConnectedAt = const SdkOmitted(), this.ssoUserId = const SdkOmitted()});
 
-  UserEventPayloadVariant252RemovedUsersValueJoinedFrom Function(
-      {SdkOptional<String> commitId,
-      SdkOptional<double> dsyncConnectedAt,
-      SdkOptional<String> dsyncUserId,
-      SdkOptional<dynamic> gitUserId,
-      SdkOptional<String> gitUserLogin,
-      SdkOptional<String> idpUserId,
-      UserEventPayloadVariant252RemovedUsersValueJoinedFromOrigin origin,
-      SdkOptional<String> repoId,
-      SdkOptional<String> repoPath,
-      SdkOptional<double> ssoConnectedAt,
-      SdkOptional<String> ssoUserId}) get copyWith => _copyWith;
+  UserEventPayloadVariant252RemovedUsersValueJoinedFrom Function({SdkOptional<String> commitId, SdkOptional<double> dsyncConnectedAt, SdkOptional<String> dsyncUserId, SdkOptional<dynamic> gitUserId, SdkOptional<String> gitUserLogin, SdkOptional<String> idpUserId, UserEventPayloadVariant252RemovedUsersValueJoinedFromOrigin origin, SdkOptional<String> repoId, SdkOptional<String> repoPath, SdkOptional<double> ssoConnectedAt, SdkOptional<String> ssoUserId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant252RemovedUsersValueJoinedFrom _copyWith(
-          {Object? commitId = sdkOmittedValue,
-          Object? dsyncConnectedAt = sdkOmittedValue,
-          Object? dsyncUserId = sdkOmittedValue,
-          Object? gitUserId = sdkOmittedValue,
-          Object? gitUserLogin = sdkOmittedValue,
-          Object? idpUserId = sdkOmittedValue,
-          Object? origin = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? repoPath = sdkOmittedValue,
-          Object? ssoConnectedAt = sdkOmittedValue,
-          Object? ssoUserId = sdkOmittedValue}) =>
-      UserEventPayloadVariant252RemovedUsersValueJoinedFrom(
-        commitId: identical(commitId, sdkOmittedValue)
-            ? this.commitId
-            : commitId as SdkOptional<String>,
-        dsyncConnectedAt: identical(dsyncConnectedAt, sdkOmittedValue)
-            ? this.dsyncConnectedAt
-            : dsyncConnectedAt as SdkOptional<double>,
-        dsyncUserId: identical(dsyncUserId, sdkOmittedValue)
-            ? this.dsyncUserId
-            : dsyncUserId as SdkOptional<String>,
-        gitUserId: identical(gitUserId, sdkOmittedValue)
-            ? this.gitUserId
-            : gitUserId as SdkOptional<dynamic>,
-        gitUserLogin: identical(gitUserLogin, sdkOmittedValue)
-            ? this.gitUserLogin
-            : gitUserLogin as SdkOptional<String>,
-        idpUserId: identical(idpUserId, sdkOmittedValue)
-            ? this.idpUserId
-            : idpUserId as SdkOptional<String>,
-        origin: identical(origin, sdkOmittedValue)
-            ? this.origin
-            : origin
-                as UserEventPayloadVariant252RemovedUsersValueJoinedFromOrigin,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as SdkOptional<String>,
-        repoPath: identical(repoPath, sdkOmittedValue)
-            ? this.repoPath
-            : repoPath as SdkOptional<String>,
-        ssoConnectedAt: identical(ssoConnectedAt, sdkOmittedValue)
-            ? this.ssoConnectedAt
-            : ssoConnectedAt as SdkOptional<double>,
-        ssoUserId: identical(ssoUserId, sdkOmittedValue)
-            ? this.ssoUserId
-            : ssoUserId as SdkOptional<String>,
-      );
+  UserEventPayloadVariant252RemovedUsersValueJoinedFrom _copyWith({Object? commitId = sdkOmittedValue, Object? dsyncConnectedAt = sdkOmittedValue, Object? dsyncUserId = sdkOmittedValue, Object? gitUserId = sdkOmittedValue, Object? gitUserLogin = sdkOmittedValue, Object? idpUserId = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoPath = sdkOmittedValue, Object? ssoConnectedAt = sdkOmittedValue, Object? ssoUserId = sdkOmittedValue}) => UserEventPayloadVariant252RemovedUsersValueJoinedFrom(
+    commitId: identical(commitId, sdkOmittedValue) ? this.commitId : commitId as SdkOptional<String>,
+    dsyncConnectedAt: identical(dsyncConnectedAt, sdkOmittedValue) ? this.dsyncConnectedAt : dsyncConnectedAt as SdkOptional<double>,
+    dsyncUserId: identical(dsyncUserId, sdkOmittedValue) ? this.dsyncUserId : dsyncUserId as SdkOptional<String>,
+    gitUserId: identical(gitUserId, sdkOmittedValue) ? this.gitUserId : gitUserId as SdkOptional<dynamic>,
+    gitUserLogin: identical(gitUserLogin, sdkOmittedValue) ? this.gitUserLogin : gitUserLogin as SdkOptional<String>,
+    idpUserId: identical(idpUserId, sdkOmittedValue) ? this.idpUserId : idpUserId as SdkOptional<String>,
+    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as UserEventPayloadVariant252RemovedUsersValueJoinedFromOrigin,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<String>,
+    repoPath: identical(repoPath, sdkOmittedValue) ? this.repoPath : repoPath as SdkOptional<String>,
+    ssoConnectedAt: identical(ssoConnectedAt, sdkOmittedValue) ? this.ssoConnectedAt : ssoConnectedAt as SdkOptional<double>,
+    ssoUserId: identical(ssoUserId, sdkOmittedValue) ? this.ssoUserId : ssoUserId as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant252RemovedUsersValueJoinedFrom.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant252RemovedUsersValueJoinedFrom(
-        commitId: json['commitId'] != null
-            ? SdkPresent((json['commitId'] as String?)!)
-            : const SdkOmitted(),
-        dsyncConnectedAt: json['dsyncConnectedAt'] != null
-            ? SdkPresent(((json['dsyncConnectedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        dsyncUserId: json['dsyncUserId'] != null
-            ? SdkPresent((json['dsyncUserId'] as String?)!)
-            : const SdkOmitted(),
-        gitUserId: json['gitUserId'] != null
-            ? SdkPresent((json['gitUserId'])!)
-            : const SdkOmitted(),
-        gitUserLogin: json['gitUserLogin'] != null
-            ? SdkPresent((json['gitUserLogin'] as String?)!)
-            : const SdkOmitted(),
-        idpUserId: json['idpUserId'] != null
-            ? SdkPresent((json['idpUserId'] as String?)!)
-            : const SdkOmitted(),
-        origin: (json['origin'] != null
-            ? UserEventPayloadVariant252RemovedUsersValueJoinedFromOrigin
-                .fromJson(json['origin'] as String)
-            : null)!,
-        repoId: json['repoId'] != null
-            ? SdkPresent((json['repoId'] as String?)!)
-            : const SdkOmitted(),
-        repoPath: json['repoPath'] != null
-            ? SdkPresent((json['repoPath'] as String?)!)
-            : const SdkOmitted(),
-        ssoConnectedAt: json['ssoConnectedAt'] != null
-            ? SdkPresent(((json['ssoConnectedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        ssoUserId: json['ssoUserId'] != null
-            ? SdkPresent((json['ssoUserId'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant252RemovedUsersValueJoinedFrom.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant252RemovedUsersValueJoinedFrom(
+    commitId: json['commitId'] != null ? SdkPresent((json['commitId'] as String?)!) : const SdkOmitted(),
+    dsyncConnectedAt: json['dsyncConnectedAt'] != null ? SdkPresent(((json['dsyncConnectedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    dsyncUserId: json['dsyncUserId'] != null ? SdkPresent((json['dsyncUserId'] as String?)!) : const SdkOmitted(),
+    gitUserId: json['gitUserId'] != null ? SdkPresent((json['gitUserId'])!) : const SdkOmitted(),
+    gitUserLogin: json['gitUserLogin'] != null ? SdkPresent((json['gitUserLogin'] as String?)!) : const SdkOmitted(),
+    idpUserId: json['idpUserId'] != null ? SdkPresent((json['idpUserId'] as String?)!) : const SdkOmitted(),
+    origin: (json['origin'] != null ? UserEventPayloadVariant252RemovedUsersValueJoinedFromOrigin.fromJson(json['origin'] as String) : null)!,
+    repoId: json['repoId'] != null ? SdkPresent((json['repoId'] as String?)!) : const SdkOmitted(),
+    repoPath: json['repoPath'] != null ? SdkPresent((json['repoPath'] as String?)!) : const SdkOmitted(),
+    ssoConnectedAt: json['ssoConnectedAt'] != null ? SdkPresent(((json['ssoConnectedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    ssoUserId: json['ssoUserId'] != null ? SdkPresent((json['ssoUserId'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (commitId) {
-          SdkPresent<String>(value: final value) => {
-              'commitId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (dsyncConnectedAt) {
-          SdkPresent<double>(value: final value) => {
-              'dsyncConnectedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (dsyncUserId) {
-          SdkPresent<String>(value: final value) => {
-              'dsyncUserId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitUserId) {
-          SdkPresent<dynamic>(value: final value) => {
-              'gitUserId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitUserLogin) {
-          SdkPresent<String>(value: final value) => {
-              'gitUserLogin': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (idpUserId) {
-          SdkPresent<String>(value: final value) => {
-              'idpUserId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'origin': origin.toJson(),
-        ...switch (repoId) {
-          SdkPresent<String>(value: final value) => {
-              'repoId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (repoPath) {
-          SdkPresent<String>(value: final value) => {
-              'repoPath': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ssoConnectedAt) {
-          SdkPresent<double>(value: final value) => {
-              'ssoConnectedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ssoUserId) {
-          SdkPresent<String>(value: final value) => {
-              'ssoUserId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (commitId) {
+      SdkPresent<String>(value: final value) => {'commitId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (dsyncConnectedAt) {
+      SdkPresent<double>(value: final value) => {'dsyncConnectedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (dsyncUserId) {
+      SdkPresent<String>(value: final value) => {'dsyncUserId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitUserId) {
+      SdkPresent<dynamic>(value: final value) => {'gitUserId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitUserLogin) {
+      SdkPresent<String>(value: final value) => {'gitUserLogin': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (idpUserId) {
+      SdkPresent<String>(value: final value) => {'idpUserId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'origin': origin.toJson(),
+    ...switch (repoId) {
+      SdkPresent<String>(value: final value) => {'repoId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (repoPath) {
+      SdkPresent<String>(value: final value) => {'repoPath': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ssoConnectedAt) {
+      SdkPresent<double>(value: final value) => {'ssoConnectedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ssoUserId) {
+      SdkPresent<String>(value: final value) => {'ssoUserId': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UserEventPayloadVariant252RemovedUsersValue {
@@ -430,84 +237,37 @@ class UserEventPayloadVariant252RemovedUsersValue {
   static const String constructionSurface = 'named';
   final UserEventPayloadVariant252RemovedUsersValueConfirmed confirmed;
   final SdkOptional<double> confirmedAt;
-  final SdkOptional<UserEventPayloadVariant252RemovedUsersValueJoinedFrom>
-      joinedFrom;
+  final SdkOptional<UserEventPayloadVariant252RemovedUsersValueJoinedFrom> joinedFrom;
   final UserEventPayloadVariant252RemovedUsersValueRole role;
 
-  const UserEventPayloadVariant252RemovedUsersValue(
-      {required this.confirmed,
-      this.confirmedAt = const SdkOmitted(),
-      this.joinedFrom = const SdkOmitted(),
-      required this.role});
+  const UserEventPayloadVariant252RemovedUsersValue({required this.confirmed, this.confirmedAt = const SdkOmitted(), this.joinedFrom = const SdkOmitted(), required this.role});
 
-  UserEventPayloadVariant252RemovedUsersValue Function(
-          {UserEventPayloadVariant252RemovedUsersValueConfirmed confirmed,
-          SdkOptional<double> confirmedAt,
-          SdkOptional<UserEventPayloadVariant252RemovedUsersValueJoinedFrom>
-              joinedFrom,
-          UserEventPayloadVariant252RemovedUsersValueRole role})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant252RemovedUsersValue Function({UserEventPayloadVariant252RemovedUsersValueConfirmed confirmed, SdkOptional<double> confirmedAt, SdkOptional<UserEventPayloadVariant252RemovedUsersValueJoinedFrom> joinedFrom, UserEventPayloadVariant252RemovedUsersValueRole role}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant252RemovedUsersValue _copyWith(
-          {Object? confirmed = sdkOmittedValue,
-          Object? confirmedAt = sdkOmittedValue,
-          Object? joinedFrom = sdkOmittedValue,
-          Object? role = sdkOmittedValue}) =>
-      UserEventPayloadVariant252RemovedUsersValue(
-        confirmed: identical(confirmed, sdkOmittedValue)
-            ? this.confirmed
-            : confirmed as UserEventPayloadVariant252RemovedUsersValueConfirmed,
-        confirmedAt: identical(confirmedAt, sdkOmittedValue)
-            ? this.confirmedAt
-            : confirmedAt as SdkOptional<double>,
-        joinedFrom: identical(joinedFrom, sdkOmittedValue)
-            ? this.joinedFrom
-            : joinedFrom as SdkOptional<
-                UserEventPayloadVariant252RemovedUsersValueJoinedFrom>,
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as UserEventPayloadVariant252RemovedUsersValueRole,
-      );
+  UserEventPayloadVariant252RemovedUsersValue _copyWith({Object? confirmed = sdkOmittedValue, Object? confirmedAt = sdkOmittedValue, Object? joinedFrom = sdkOmittedValue, Object? role = sdkOmittedValue}) => UserEventPayloadVariant252RemovedUsersValue(
+    confirmed: identical(confirmed, sdkOmittedValue) ? this.confirmed : confirmed as UserEventPayloadVariant252RemovedUsersValueConfirmed,
+    confirmedAt: identical(confirmedAt, sdkOmittedValue) ? this.confirmedAt : confirmedAt as SdkOptional<double>,
+    joinedFrom: identical(joinedFrom, sdkOmittedValue) ? this.joinedFrom : joinedFrom as SdkOptional<UserEventPayloadVariant252RemovedUsersValueJoinedFrom>,
+    role: identical(role, sdkOmittedValue) ? this.role : role as UserEventPayloadVariant252RemovedUsersValueRole,
+  );
 
-  factory UserEventPayloadVariant252RemovedUsersValue.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant252RemovedUsersValue(
-        confirmed: (json['confirmed'] != null
-            ? UserEventPayloadVariant252RemovedUsersValueConfirmed.fromJson(
-                json['confirmed'] as bool)
-            : null)!,
-        confirmedAt: json['confirmedAt'] != null
-            ? SdkPresent(((json['confirmedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        joinedFrom: json['joinedFrom'] != null
-            ? SdkPresent((json['joinedFrom'] != null
-                ? UserEventPayloadVariant252RemovedUsersValueJoinedFrom
-                    .fromJson(json['joinedFrom'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        role: (json['role'] != null
-            ? UserEventPayloadVariant252RemovedUsersValueRole.fromJson(
-                json['role'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant252RemovedUsersValue.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant252RemovedUsersValue(
+    confirmed: (json['confirmed'] != null ? UserEventPayloadVariant252RemovedUsersValueConfirmed.fromJson(json['confirmed'] as bool) : null)!,
+    confirmedAt: json['confirmedAt'] != null ? SdkPresent(((json['confirmedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    joinedFrom: json['joinedFrom'] != null ? SdkPresent((json['joinedFrom'] != null ? UserEventPayloadVariant252RemovedUsersValueJoinedFrom.fromJson(json['joinedFrom'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    role: (json['role'] != null ? UserEventPayloadVariant252RemovedUsersValueRole.fromJson(json['role'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'confirmed': confirmed.toJson(),
-        ...switch (confirmedAt) {
-          SdkPresent<double>(value: final value) => {
-              'confirmedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (joinedFrom) {
-          SdkPresent<UserEventPayloadVariant252RemovedUsersValueJoinedFrom>(
-            value: final value
-          ) =>
-            {
-              'joinedFrom': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'role': role.toJson(),
-      };
+    'confirmed': confirmed.toJson(),
+    ...switch (confirmedAt) {
+      SdkPresent<double>(value: final value) => {'confirmedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (joinedFrom) {
+      SdkPresent<UserEventPayloadVariant252RemovedUsersValueJoinedFrom>(value: final value) => {'joinedFrom': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'role': role.toJson(),
+  };
 }

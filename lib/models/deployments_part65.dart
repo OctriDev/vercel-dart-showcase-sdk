@@ -9,73 +9,34 @@ class CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1 {
   static const String constructionSurface = 'named';
   final String args;
   final SdkOptional<List<String>> env;
-  final CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op
-      op;
-  final CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type
-      type_;
+  final CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op op;
+  final CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type type_;
 
-  const CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1(
-      {required this.args,
-      this.env = const SdkOmitted(),
-      required this.op,
-      required this.type_});
+  const CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1({required this.args, this.env = const SdkOmitted(), required this.op, required this.type_});
 
-  CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1 Function(
-      {String args,
-      SdkOptional<List<String>> env,
-      CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op
-          op,
-      CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type
-          type_}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1 Function({String args, SdkOptional<List<String>> env, CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op op, CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type type_}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1
-      _copyWith(
-              {Object? args = sdkOmittedValue,
-              Object? env = sdkOmittedValue,
-              Object? op = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1(
-            args: identical(args, sdkOmittedValue) ? this.args : args as String,
-            env: identical(env, sdkOmittedValue)
-                ? this.env
-                : env as SdkOptional<List<String>>,
-            op: identical(op, sdkOmittedValue)
-                ? this.op
-                : op
-                    as CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type,
-          );
+  CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1 _copyWith({Object? args = sdkOmittedValue, Object? env = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1(
+    args: identical(args, sdkOmittedValue) ? this.args : args as String,
+    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<List<String>>,
+    op: identical(op, sdkOmittedValue) ? this.op : op as CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type,
+  );
 
-  factory CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1(
-        args: (json['args'] as String?)!,
-        env: json['env'] != null
-            ? SdkPresent(
-                ((json['env'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        op: (json['op'] != null
-            ? CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op
-                .fromJson(json['op'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1(
+    args: (json['args'] as String?)!,
+    env: json['env'] != null ? SdkPresent(((json['env'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    op: (json['op'] != null ? CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Op.fromJson(json['op'] as String) : null)!,
+    type_: (json['type'] != null ? CreateDeploymentResponseVariant1RoutesItemVariant0TransformsItemVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'args': args,
-        ...switch (env) {
-          SdkPresent<List<String>>(value: final value) => {
-              'env': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'op': op.toJson(),
-        'type': type_.toJson(),
-      };
+    'args': args,
+    ...switch (env) {
+      SdkPresent<List<String>>(value: final value) => {'env': value,},
+      _ => const <String, dynamic>{},
+    },
+    'op': op.toJson(),
+    'type': type_.toJson(),
+  };
 }

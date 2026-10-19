@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 264)
 final class ListChecksResponseChecksItemStatus {
+
   final String value;
 
   const ListChecksResponseChecksItemStatus._(this.value);
 
-  factory ListChecksResponseChecksItemStatus.fromJson(String value) =>
-      ListChecksResponseChecksItemStatus._(value);
+  factory ListChecksResponseChecksItemStatus.fromJson(String value) => ListChecksResponseChecksItemStatus._(value);
 
   static const completed = ListChecksResponseChecksItemStatus._('completed');
   static const registered = ListChecksResponseChecksItemStatus._('registered');
@@ -18,48 +18,42 @@ final class ListChecksResponseChecksItemStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListChecksResponseChecksItemStatus && other.value == value;
+  @override bool operator ==(Object other) => other is ListChecksResponseChecksItemStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseBlocking {
+
   final bool value;
 
   const CreateCheckResponseBlocking._(this.value);
 
-  factory CreateCheckResponseBlocking.fromJson(bool value) =>
-      CreateCheckResponseBlocking._(value);
+  factory CreateCheckResponseBlocking.fromJson(bool value) => CreateCheckResponseBlocking._(value);
 
   static const false_ = CreateCheckResponseBlocking._(false);
   static const true_ = CreateCheckResponseBlocking._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseBlocking && other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseBlocking && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseConclusion {
+
   final String value;
 
   const CreateCheckResponseConclusion._(this.value);
 
-  factory CreateCheckResponseConclusion.fromJson(String value) =>
-      CreateCheckResponseConclusion._(value);
+  factory CreateCheckResponseConclusion.fromJson(String value) => CreateCheckResponseConclusion._(value);
 
   static const canceled = CreateCheckResponseConclusion._('canceled');
   static const failed = CreateCheckResponseConclusion._('failed');
@@ -70,176 +64,142 @@ final class CreateCheckResponseConclusion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseConclusion && other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseConclusion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseOutputMetricsCLSSource {
+
   final String value;
 
   const CreateCheckResponseOutputMetricsCLSSource._(this.value);
 
-  factory CreateCheckResponseOutputMetricsCLSSource.fromJson(String value) =>
-      CreateCheckResponseOutputMetricsCLSSource._(value);
+  factory CreateCheckResponseOutputMetricsCLSSource.fromJson(String value) => CreateCheckResponseOutputMetricsCLSSource._(value);
 
-  static const webVitals =
-      CreateCheckResponseOutputMetricsCLSSource._('web-vitals');
+  static const webVitals = CreateCheckResponseOutputMetricsCLSSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseOutputMetricsCLSSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseOutputMetricsCLSSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseOutputMetricsFCPSource {
+
   final String value;
 
   const CreateCheckResponseOutputMetricsFCPSource._(this.value);
 
-  factory CreateCheckResponseOutputMetricsFCPSource.fromJson(String value) =>
-      CreateCheckResponseOutputMetricsFCPSource._(value);
+  factory CreateCheckResponseOutputMetricsFCPSource.fromJson(String value) => CreateCheckResponseOutputMetricsFCPSource._(value);
 
-  static const webVitals =
-      CreateCheckResponseOutputMetricsFCPSource._('web-vitals');
+  static const webVitals = CreateCheckResponseOutputMetricsFCPSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseOutputMetricsFCPSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseOutputMetricsFCPSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseOutputMetricsLCPSource {
+
   final String value;
 
   const CreateCheckResponseOutputMetricsLCPSource._(this.value);
 
-  factory CreateCheckResponseOutputMetricsLCPSource.fromJson(String value) =>
-      CreateCheckResponseOutputMetricsLCPSource._(value);
+  factory CreateCheckResponseOutputMetricsLCPSource.fromJson(String value) => CreateCheckResponseOutputMetricsLCPSource._(value);
 
-  static const webVitals =
-      CreateCheckResponseOutputMetricsLCPSource._('web-vitals');
+  static const webVitals = CreateCheckResponseOutputMetricsLCPSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseOutputMetricsLCPSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseOutputMetricsLCPSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseOutputMetricsTBTSource {
+
   final String value;
 
   const CreateCheckResponseOutputMetricsTBTSource._(this.value);
 
-  factory CreateCheckResponseOutputMetricsTBTSource.fromJson(String value) =>
-      CreateCheckResponseOutputMetricsTBTSource._(value);
+  factory CreateCheckResponseOutputMetricsTBTSource.fromJson(String value) => CreateCheckResponseOutputMetricsTBTSource._(value);
 
-  static const webVitals =
-      CreateCheckResponseOutputMetricsTBTSource._('web-vitals');
+  static const webVitals = CreateCheckResponseOutputMetricsTBTSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseOutputMetricsTBTSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseOutputMetricsTBTSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseOutputMetricsVirtualExperienceScoreSource {
+
   final String value;
 
-  const CreateCheckResponseOutputMetricsVirtualExperienceScoreSource._(
-      this.value);
+  const CreateCheckResponseOutputMetricsVirtualExperienceScoreSource._(this.value);
 
-  factory CreateCheckResponseOutputMetricsVirtualExperienceScoreSource.fromJson(
-          String value) =>
-      CreateCheckResponseOutputMetricsVirtualExperienceScoreSource._(value);
+  factory CreateCheckResponseOutputMetricsVirtualExperienceScoreSource.fromJson(String value) => CreateCheckResponseOutputMetricsVirtualExperienceScoreSource._(value);
 
-  static const webVitals =
-      CreateCheckResponseOutputMetricsVirtualExperienceScoreSource._(
-          'web-vitals');
+  static const webVitals = CreateCheckResponseOutputMetricsVirtualExperienceScoreSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseOutputMetricsVirtualExperienceScoreSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseOutputMetricsVirtualExperienceScoreSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseRerequestable {
+
   final bool value;
 
   const CreateCheckResponseRerequestable._(this.value);
 
-  factory CreateCheckResponseRerequestable.fromJson(bool value) =>
-      CreateCheckResponseRerequestable._(value);
+  factory CreateCheckResponseRerequestable.fromJson(bool value) => CreateCheckResponseRerequestable._(value);
 
   static const false_ = CreateCheckResponseRerequestable._(false);
   static const true_ = CreateCheckResponseRerequestable._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseRerequestable && other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseRerequestable && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateCheckResponseStatus {
+
   final String value;
 
   const CreateCheckResponseStatus._(this.value);
 
-  factory CreateCheckResponseStatus.fromJson(String value) =>
-      CreateCheckResponseStatus._(value);
+  factory CreateCheckResponseStatus.fromJson(String value) => CreateCheckResponseStatus._(value);
 
   static const completed = CreateCheckResponseStatus._('completed');
   static const registered = CreateCheckResponseStatus._('registered');
@@ -247,48 +207,42 @@ final class CreateCheckResponseStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateCheckResponseStatus && other.value == value;
+  @override bool operator ==(Object other) => other is CreateCheckResponseStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetCheckResponseBlocking {
+
   final bool value;
 
   const GetCheckResponseBlocking._(this.value);
 
-  factory GetCheckResponseBlocking.fromJson(bool value) =>
-      GetCheckResponseBlocking._(value);
+  factory GetCheckResponseBlocking.fromJson(bool value) => GetCheckResponseBlocking._(value);
 
   static const false_ = GetCheckResponseBlocking._(false);
   static const true_ = GetCheckResponseBlocking._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetCheckResponseBlocking && other.value == value;
+  @override bool operator ==(Object other) => other is GetCheckResponseBlocking && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetCheckResponseConclusion {
+
   final String value;
 
   const GetCheckResponseConclusion._(this.value);
 
-  factory GetCheckResponseConclusion.fromJson(String value) =>
-      GetCheckResponseConclusion._(value);
+  factory GetCheckResponseConclusion.fromJson(String value) => GetCheckResponseConclusion._(value);
 
   static const canceled = GetCheckResponseConclusion._('canceled');
   static const failed = GetCheckResponseConclusion._('failed');
@@ -299,37 +253,30 @@ final class GetCheckResponseConclusion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetCheckResponseConclusion && other.value == value;
+  @override bool operator ==(Object other) => other is GetCheckResponseConclusion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetCheckResponseOutputMetricsCLSSource {
+
   final String value;
 
   const GetCheckResponseOutputMetricsCLSSource._(this.value);
 
-  factory GetCheckResponseOutputMetricsCLSSource.fromJson(String value) =>
-      GetCheckResponseOutputMetricsCLSSource._(value);
+  factory GetCheckResponseOutputMetricsCLSSource.fromJson(String value) => GetCheckResponseOutputMetricsCLSSource._(value);
 
-  static const webVitals =
-      GetCheckResponseOutputMetricsCLSSource._('web-vitals');
+  static const webVitals = GetCheckResponseOutputMetricsCLSSource._('web-vitals');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetCheckResponseOutputMetricsCLSSource && other.value == value;
+  @override bool operator ==(Object other) => other is GetCheckResponseOutputMetricsCLSSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

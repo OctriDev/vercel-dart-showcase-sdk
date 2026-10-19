@@ -4,138 +4,86 @@
 part of 'projects.dart';
 
 // projects domain models (part 13)
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant7
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant7 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant7 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant7(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant7(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant8
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant8 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant8 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant8(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant8(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant9
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant9 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant9 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant9(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant9(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant10(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant11(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant12
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant12 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant12 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant12(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant12(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant13
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant13 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant13 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant13(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant13(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant14
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant14 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant14 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant14(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant14(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant15
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant15 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant15 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant15(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant15(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant16
-    extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
+final class FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant16 extends FilterProjectEnvsResponseVariant2EnvsItemContentHint {
   final FilterProjectEnvsResponseVariant2EnvsItemContentHintVariant16 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant16(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemContentHintFilterProjectEnvsResponseVariant2EnvsItemContentHintVariant16(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 sealed class FilterProjectEnvsResponseVariant2EnvsItemTarget {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const FilterProjectEnvsResponseVariant2EnvsItemTarget();
-  factory FilterProjectEnvsResponseVariant2EnvsItemTarget.fromJson(
-      Object? json) {
-    if (json is List) {
-      return FilterProjectEnvsResponseVariant2EnvsItemTargetListFilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item(
-          json
-              .map(
-                  (e) =>
-                      FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item
-                          .fromJson(e as String))
-              .toList()
-              .cast<
-                  FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item>());
-    }
-    try {
-      return FilterProjectEnvsResponseVariant2EnvsItemTargetFilterProjectEnvsResponseVariant2EnvsItemTargetVariant1(
-          FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1.fromJson(
-              json as String));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for FilterProjectEnvsResponseVariant2EnvsItemTarget");
+  factory FilterProjectEnvsResponseVariant2EnvsItemTarget.fromJson(Object? json) {
+    if (json is List) { return FilterProjectEnvsResponseVariant2EnvsItemTargetListFilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item(json.map((e) => FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item.fromJson(e as String)).toList().cast<FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item>()); }
+    try { return FilterProjectEnvsResponseVariant2EnvsItemTargetFilterProjectEnvsResponseVariant2EnvsItemTargetVariant1(FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1.fromJson(json as String)); } catch (_) {}
+    throw FormatException("No variant matched for FilterProjectEnvsResponseVariant2EnvsItemTarget");
   }
   Object? toJson();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemTargetListFilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item
-    extends FilterProjectEnvsResponseVariant2EnvsItemTarget {
+final class FilterProjectEnvsResponseVariant2EnvsItemTargetListFilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item extends FilterProjectEnvsResponseVariant2EnvsItemTarget {
   final List<FilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item> value;
-  const FilterProjectEnvsResponseVariant2EnvsItemTargetListFilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item(
-      this.value);
-  @override
-  Object? toJson() => value.map((e) => e.toJson()).toList();
+  const FilterProjectEnvsResponseVariant2EnvsItemTargetListFilterProjectEnvsResponseVariant2EnvsItemTargetVariant0Item(this.value);
+  @override Object? toJson() => value.map((e) => e.toJson()).toList();
 }
 
-final class FilterProjectEnvsResponseVariant2EnvsItemTargetFilterProjectEnvsResponseVariant2EnvsItemTargetVariant1
-    extends FilterProjectEnvsResponseVariant2EnvsItemTarget {
+final class FilterProjectEnvsResponseVariant2EnvsItemTargetFilterProjectEnvsResponseVariant2EnvsItemTargetVariant1 extends FilterProjectEnvsResponseVariant2EnvsItemTarget {
   final FilterProjectEnvsResponseVariant2EnvsItemTargetVariant1 value;
-  const FilterProjectEnvsResponseVariant2EnvsItemTargetFilterProjectEnvsResponseVariant2EnvsItemTargetVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const FilterProjectEnvsResponseVariant2EnvsItemTargetFilterProjectEnvsResponseVariant2EnvsItemTargetVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

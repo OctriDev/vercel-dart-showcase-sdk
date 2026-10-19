@@ -7,623 +7,285 @@ part of 'security.dart';
 class CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type
-      type_;
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op
-      op;
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type type_;
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op op;
   final String value;
 
-  const CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
-      {required this.type_, required this.op, required this.value});
+  const CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1({required this.type_, required this.op, required this.value});
 
-  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1 Function(
-      {CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type
-          type_,
-      CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op
-          op,
-      String value}) get copyWith => _copyWith;
+  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1 Function({CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type type_, CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op op, String value}) get copyWith => _copyWith;
 
-  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1
-      _copyWith(
-              {Object? type_ = sdkOmittedValue,
-              Object? op = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type,
-            op: identical(op, sdkOmittedValue)
-                ? this.op
-                : op
-                    as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as String,
-          );
+  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? op = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type,
+    op: identical(op, sdkOmittedValue) ? this.op : op as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
-        type_: (json['type'] != null
-            ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        op: (json['op'] != null
-            ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op
-                .fromJson(json['op'] as String)
-            : null)!,
-        value: (json['value'] as String?)!,
-      );
+  factory CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1.fromJson(Map<String, dynamic> json) => CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
+    type_: (json['type'] != null ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Type.fromJson(json['type'] as String) : null)!,
+    op: (json['op'] != null ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1Op.fromJson(json['op'] as String) : null)!,
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'op': op.toJson(),
-        'value': value,
-      };
+    'type': type_.toJson(),
+    'op': op.toJson(),
+    'value': value,
+  };
 }
 
 class CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type
-      type_;
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op
-      op;
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type type_;
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op op;
   final String key;
   final String value;
 
-  const CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
-      {required this.type_,
-      required this.op,
-      required this.key,
-      required this.value});
+  const CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2({required this.type_, required this.op, required this.key, required this.value});
 
-  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2 Function(
-      {CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type
-          type_,
-      CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op
-          op,
-      String key,
-      String value}) get copyWith => _copyWith;
+  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2 Function({CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type type_, CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op op, String key, String value}) get copyWith => _copyWith;
 
-  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2
-      _copyWith(
-              {Object? type_ = sdkOmittedValue,
-              Object? op = sdkOmittedValue,
-              Object? key = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type,
-            op: identical(op, sdkOmittedValue)
-                ? this.op
-                : op
-                    as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op,
-            key: identical(key, sdkOmittedValue) ? this.key : key as String,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as String,
-          );
+  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2 _copyWith({Object? type_ = sdkOmittedValue, Object? op = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type,
+    op: identical(op, sdkOmittedValue) ? this.op : op as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
-        type_: (json['type'] != null
-            ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        op: (json['op'] != null
-            ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op
-                .fromJson(json['op'] as String)
-            : null)!,
-        key: (json['key'] as String?)!,
-        value: (json['value'] as String?)!,
-      );
+  factory CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2.fromJson(Map<String, dynamic> json) => CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
+    type_: (json['type'] != null ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Type.fromJson(json['type'] as String) : null)!,
+    op: (json['op'] != null ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2Op.fromJson(json['op'] as String) : null)!,
+    key: (json['key'] as String?)!,
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'op': op.toJson(),
-        'key': key,
-        'value': value,
-      };
+    'type': type_.toJson(),
+    'op': op.toJson(),
+    'key': key,
+    'value': value,
+  };
 }
 
 class CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type
-      type_;
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op
-      op;
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type type_;
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op op;
   final String key;
 
-  const CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
-      {required this.type_, required this.op, required this.key});
+  const CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3({required this.type_, required this.op, required this.key});
 
-  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3 Function(
-      {CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type
-          type_,
-      CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op
-          op,
-      String key}) get copyWith => _copyWith;
+  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3 Function({CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type type_, CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op op, String key}) get copyWith => _copyWith;
 
-  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3
-      _copyWith(
-              {Object? type_ = sdkOmittedValue,
-              Object? op = sdkOmittedValue,
-              Object? key = sdkOmittedValue}) =>
-          CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type,
-            op: identical(op, sdkOmittedValue)
-                ? this.op
-                : op
-                    as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op,
-            key: identical(key, sdkOmittedValue) ? this.key : key as String,
-          );
+  CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3 _copyWith({Object? type_ = sdkOmittedValue, Object? op = sdkOmittedValue, Object? key = sdkOmittedValue}) => CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type,
+    op: identical(op, sdkOmittedValue) ? this.op : op as CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+  );
 
-  factory CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
-        type_: (json['type'] != null
-            ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        op: (json['op'] != null
-            ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op
-                .fromJson(json['op'] as String)
-            : null)!,
-        key: (json['key'] as String?)!,
-      );
+  factory CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3.fromJson(Map<String, dynamic> json) => CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
+    type_: (json['type'] != null ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Type.fromJson(json['type'] as String) : null)!,
+    op: (json['op'] != null ? CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3Op.fromJson(json['op'] as String) : null)!,
+    key: (json['key'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'op': op.toJson(),
-        'key': key,
-      };
+    'type': type_.toJson(),
+    'op': op.toJson(),
+    'key': key,
+  };
 }
 
 sealed class CreateConditionalBypassRequestConditionGroupItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateConditionalBypassRequestConditionGroupItemConditionsItem();
-  factory CreateConditionalBypassRequestConditionGroupItemConditionsItem.fromJson(
-      Object? json) {
+  factory CreateConditionalBypassRequestConditionGroupItemConditionsItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0(value); } } catch (_) {}
+      try { final value = CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(value); } } catch (_) {}
+      try { final value = CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(value); } } catch (_) {}
+      try { final value = CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(value); } } catch (_) {}
     }
-    try {
-      return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0(
-          CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
-          CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
-          CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
-          CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateConditionalBypassRequestConditionGroupItemConditionsItem");
+    try { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0(CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateConditionalBypassRequestConditionGroupItemConditionsItem");
   }
   Object? toJson();
 }
 
-final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0
-    extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0
-      value;
-  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0 extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0 value;
+  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1
-    extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1
-      value;
-  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1 extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1 value;
+  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2
-    extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2
-      value;
-  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2 extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2 value;
+  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3
-    extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
-  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3
-      value;
-  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3 extends CreateConditionalBypassRequestConditionGroupItemConditionsItem {
+  final CreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3 value;
+  const CreateConditionalBypassRequestConditionGroupItemConditionsItemCreateConditionalBypassRequestConditionGroupItemConditionsItemVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 sealed class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders();
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders.fromJson(
-      Object? json) {
-    if (json is List) {
-      return CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersListString(
-          json.map((e) => e as String).toList().cast<String>());
-    }
-    try {
-      return CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersCreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1(
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1
-              .fromJson(json as String));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders");
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders.fromJson(Object? json) {
+    if (json is List) { return CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersListString(json.map((e) => e as String).toList().cast<String>()); }
+    try { return CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersCreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1(CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1.fromJson(json as String)); } catch (_) {}
+    throw FormatException("No variant matched for CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders");
   }
   Object? toJson();
 }
 
-final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersListString
-    extends CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders {
+final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersListString extends CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders {
   final List<String> value;
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersListString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersListString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersCreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1
-    extends CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders {
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1
-      value;
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersCreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersCreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1 extends CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeaders {
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1 value;
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersCreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateLogHeadersVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?>
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo
-      algo;
+  final SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?> action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo algo;
   final List<String> keys;
   final double limit;
   final double window;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit(
-      {this.action = const SdkOmitted(),
-      required this.algo,
-      required this.keys,
-      required this.limit,
-      required this.window});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit({this.action = const SdkOmitted(), required this.algo, required this.keys, required this.limit, required this.window});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit Function(
-      {SdkOptional<
-              CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?>
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo
-          algo,
-      List<String> keys,
-      double limit,
-      double window}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit Function({SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?> action, CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo algo, List<String> keys, double limit, double window}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit
-      _copyWith(
-              {Object? action = sdkOmittedValue,
-              Object? algo = sdkOmittedValue,
-              Object? keys = sdkOmittedValue,
-              Object? limit = sdkOmittedValue,
-              Object? window = sdkOmittedValue}) =>
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit(
-            action: identical(action, sdkOmittedValue)
-                ? this.action
-                : action as SdkOptional<
-                    CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?>,
-            algo: identical(algo, sdkOmittedValue)
-                ? this.algo
-                : algo
-                    as CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo,
-            keys: identical(keys, sdkOmittedValue)
-                ? this.keys
-                : keys as List<String>,
-            limit: identical(limit, sdkOmittedValue)
-                ? this.limit
-                : limit as double,
-            window: identical(window, sdkOmittedValue)
-                ? this.window
-                : window as double,
-          );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit _copyWith({Object? action = sdkOmittedValue, Object? algo = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? window = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?>,
+    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo,
+    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
+    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
+    window: identical(window, sdkOmittedValue) ? this.window : window as double,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit(
-        action: json.containsKey('action')
-            ? SdkPresent(json['action'] != null
-                ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction
-                    .fromJson(json['action'] as String)
-                : null)
-            : const SdkOmitted(),
-        algo: (json['algo'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo
-                .fromJson(json['algo'] as String)
-            : null)!,
-        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-        limit: ((json['limit'] as num?)?.toDouble())!,
-        window: ((json['window'] as num?)?.toDouble())!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit(
+    action: json.containsKey('action') ? SdkPresent(json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction.fromJson(json['action'] as String) : null) : const SdkOmitted(),
+    algo: (json['algo'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAlgo.fromJson(json['algo'] as String) : null)!,
+    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+    limit: ((json['limit'] as num?)?.toDouble())!,
+    window: ((json['window'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<
-                CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?>(
-            value: final value
-          ) =>
-            {
-              'action': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'algo': algo.toJson(),
-        'keys': keys,
-        'limit': limit,
-        'window': window,
-      };
+    ...switch (action) {
+      SdkPresent<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimitAction?>(value: final value) => {'action': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'algo': algo.toJson(),
+    'keys': keys,
+    'limit': limit,
+    'window': window,
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String location;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent
-      permanent;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent permanent;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect(
-      {required this.location, required this.permanent});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect({required this.location, required this.permanent});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect Function(
-      {String location,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent
-          permanent}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect Function({String location, CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent permanent}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect
-      _copyWith(
-              {Object? location = sdkOmittedValue,
-              Object? permanent = sdkOmittedValue}) =>
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect(
-            location: identical(location, sdkOmittedValue)
-                ? this.location
-                : location as String,
-            permanent: identical(permanent, sdkOmittedValue)
-                ? this.permanent
-                : permanent
-                    as CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent,
-          );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect _copyWith({Object? location = sdkOmittedValue, Object? permanent = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect(
+    location: identical(location, sdkOmittedValue) ? this.location : location as String,
+    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect(
-        location: (json['location'] as String?)!,
-        permanent: (json['permanent'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent
-                .fromJson(json['permanent'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect(
+    location: (json['location'] as String?)!,
+    permanent: (json['permanent'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirectPermanent.fromJson(json['permanent'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'location': location,
-        'permanent': permanent.toJson(),
-      };
+    'location': location,
+    'permanent': permanent.toJson(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
-      action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction action;
   final SdkOptional<String?> actionDuration;
-  final SdkOptional<
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?>
-      bypassSystem;
+  final SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?> bypassSystem;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?>
-      rateLimit;
-  final SdkOptional<
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?>
-      redirect;
+  final SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?> rateLimit;
+  final SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?> redirect;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate(
-      {required this.action,
-      this.actionDuration = const SdkOmitted(),
-      this.bypassSystem = const SdkOmitted(),
-      this.logHeaders = const SdkOmitted(),
-      this.rateLimit = const SdkOmitted(),
-      this.redirect = const SdkOmitted()});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate({required this.action, this.actionDuration = const SdkOmitted(), this.bypassSystem = const SdkOmitted(), this.logHeaders = const SdkOmitted(), this.rateLimit = const SdkOmitted(), this.redirect = const SdkOmitted()});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
-          action,
-      SdkOptional<String?> actionDuration,
-      SdkOptional<
-              CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?>
-          bypassSystem,
-      SdkOptional<dynamic> logHeaders,
-      SdkOptional<
-              CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?>
-          rateLimit,
-      SdkOptional<
-              CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?>
-          redirect}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction action, SdkOptional<String?> actionDuration, SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?> bypassSystem, SdkOptional<dynamic> logHeaders, SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?> rateLimit, SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?> redirect}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate
-      _copyWith(
-              {Object? action = sdkOmittedValue,
-              Object? actionDuration = sdkOmittedValue,
-              Object? bypassSystem = sdkOmittedValue,
-              Object? logHeaders = sdkOmittedValue,
-              Object? rateLimit = sdkOmittedValue,
-              Object? redirect = sdkOmittedValue}) =>
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate(
-            action: identical(action, sdkOmittedValue)
-                ? this.action
-                : action
-                    as CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction,
-            actionDuration: identical(actionDuration, sdkOmittedValue)
-                ? this.actionDuration
-                : actionDuration as SdkOptional<String?>,
-            bypassSystem: identical(bypassSystem, sdkOmittedValue)
-                ? this.bypassSystem
-                : bypassSystem as SdkOptional<
-                    CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?>,
-            logHeaders: identical(logHeaders, sdkOmittedValue)
-                ? this.logHeaders
-                : logHeaders as SdkOptional<dynamic>,
-            rateLimit: identical(rateLimit, sdkOmittedValue)
-                ? this.rateLimit
-                : rateLimit as SdkOptional<
-                    CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?>,
-            redirect: identical(redirect, sdkOmittedValue)
-                ? this.redirect
-                : redirect as SdkOptional<
-                    CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?>,
-          );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate _copyWith({Object? action = sdkOmittedValue, Object? actionDuration = sdkOmittedValue, Object? bypassSystem = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? rateLimit = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction,
+    actionDuration: identical(actionDuration, sdkOmittedValue) ? this.actionDuration : actionDuration as SdkOptional<String?>,
+    bypassSystem: identical(bypassSystem, sdkOmittedValue) ? this.bypassSystem : bypassSystem as SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?>,
+    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
+    rateLimit: identical(rateLimit, sdkOmittedValue) ? this.rateLimit : rateLimit as SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?>,
+    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?>,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        actionDuration: json.containsKey('actionDuration')
-            ? SdkPresent(json['actionDuration'] as String?)
-            : const SdkOmitted(),
-        bypassSystem: json.containsKey('bypassSystem')
-            ? SdkPresent(json['bypassSystem'] != null
-                ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem
-                    .fromJson(json['bypassSystem'] as bool)
-                : null)
-            : const SdkOmitted(),
-        logHeaders: json['logHeaders'] != null
-            ? SdkPresent((json['logHeaders'])!)
-            : const SdkOmitted(),
-        rateLimit: json.containsKey('rateLimit')
-            ? SdkPresent(json['rateLimit'] != null
-                ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit
-                    .fromJson(json['rateLimit'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        redirect: json.containsKey('redirect')
-            ? SdkPresent(json['redirect'] != null
-                ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect
-                    .fromJson(json['redirect'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigate(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateAction.fromJson(json['action'] as String) : null)!,
+    actionDuration: json.containsKey('actionDuration') ? SdkPresent(json['actionDuration'] as String?) : const SdkOmitted(),
+    bypassSystem: json.containsKey('bypassSystem') ? SdkPresent(json['bypassSystem'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem.fromJson(json['bypassSystem'] as bool) : null) : const SdkOmitted(),
+    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
+    rateLimit: json.containsKey('rateLimit') ? SdkPresent(json['rateLimit'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit.fromJson(json['rateLimit'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect.fromJson(json['redirect'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        ...switch (actionDuration) {
-          SdkPresent<String?>(value: final value) => {
-              'actionDuration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (bypassSystem) {
-          SdkPresent<
-                CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?>(
-            value: final value
-          ) =>
-            {
-              'bypassSystem': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (logHeaders) {
-          SdkPresent<dynamic>(value: final value) => {
-              'logHeaders': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rateLimit) {
-          SdkPresent<
-                CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?>(
-            value: final value
-          ) =>
-            {
-              'rateLimit': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (redirect) {
-          SdkPresent<
-                CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?>(
-            value: final value
-          ) =>
-            {
-              'redirect': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'action': action.toJson(),
+    ...switch (actionDuration) {
+      SdkPresent<String?>(value: final value) => {'actionDuration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (bypassSystem) {
+      SdkPresent<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateBypassSystem?>(value: final value) => {'bypassSystem': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (logHeaders) {
+      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rateLimit) {
+      SdkPresent<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRateLimit?>(value: final value) => {'rateLimit': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (redirect) {
+      SdkPresent<CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesItemVariant0ActionMitigateRedirect?>(value: final value) => {'redirect': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

@@ -8,439 +8,285 @@ part of 'user.dart';
 class UserEventPayloadVariant38 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `retention` wire field.
   final UserEventPayloadVariant38Retention retention;
 
   const UserEventPayloadVariant38({required this.retention});
 
-  UserEventPayloadVariant38 Function(
-      {UserEventPayloadVariant38Retention retention}) get copyWith => _copyWith;
+  UserEventPayloadVariant38 Function({UserEventPayloadVariant38Retention retention}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant38 _copyWith({Object? retention = sdkOmittedValue}) =>
-      UserEventPayloadVariant38(
-        retention: identical(retention, sdkOmittedValue)
-            ? this.retention
-            : retention as UserEventPayloadVariant38Retention,
-      );
+  UserEventPayloadVariant38 _copyWith({Object? retention = sdkOmittedValue}) => UserEventPayloadVariant38(
+    retention: identical(retention, sdkOmittedValue) ? this.retention : retention as UserEventPayloadVariant38Retention,
+  );
 
-  factory UserEventPayloadVariant38.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant38(
-        retention: (json['retention'] != null
-            ? UserEventPayloadVariant38Retention.fromJson(
-                json['retention'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant38.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant38(
+    retention: (json['retention'] != null ? UserEventPayloadVariant38Retention.fromJson(json['retention'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'retention': retention.toJson(),
-      };
+    'retention': retention.toJson(),
+  };
 }
 
 /// Required object value serialized in the `rule` wire field.
 class UserEventPayloadVariant39Rule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `model` wire field.
   final SdkOptional<String> model;
-
   /// Optional `string` value serialized in the `rewriteModel` wire field.
   final SdkOptional<String> rewriteModel;
-
   /// Required `string` value serialized in the `type` wire field.
   final String type_;
 
-  const UserEventPayloadVariant39Rule(
-      {required this.id,
-      this.model = const SdkOmitted(),
-      this.rewriteModel = const SdkOmitted(),
-      required this.type_});
+  const UserEventPayloadVariant39Rule({required this.id, this.model = const SdkOmitted(), this.rewriteModel = const SdkOmitted(), required this.type_});
 
-  UserEventPayloadVariant39Rule Function(
-      {String id,
-      SdkOptional<String> model,
-      SdkOptional<String> rewriteModel,
-      String type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant39Rule Function({String id, SdkOptional<String> model, SdkOptional<String> rewriteModel, String type_}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant39Rule _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? model = sdkOmittedValue,
-          Object? rewriteModel = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UserEventPayloadVariant39Rule(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        model: identical(model, sdkOmittedValue)
-            ? this.model
-            : model as SdkOptional<String>,
-        rewriteModel: identical(rewriteModel, sdkOmittedValue)
-            ? this.rewriteModel
-            : rewriteModel as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-      );
+  UserEventPayloadVariant39Rule _copyWith({Object? id = sdkOmittedValue, Object? model = sdkOmittedValue, Object? rewriteModel = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant39Rule(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    model: identical(model, sdkOmittedValue) ? this.model : model as SdkOptional<String>,
+    rewriteModel: identical(rewriteModel, sdkOmittedValue) ? this.rewriteModel : rewriteModel as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+  );
 
-  factory UserEventPayloadVariant39Rule.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant39Rule(
-        id: (json['id'] as String?)!,
-        model: json['model'] != null
-            ? SdkPresent((json['model'] as String?)!)
-            : const SdkOmitted(),
-        rewriteModel: json['rewriteModel'] != null
-            ? SdkPresent((json['rewriteModel'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-      );
+  factory UserEventPayloadVariant39Rule.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant39Rule(
+    id: (json['id'] as String?)!,
+    model: json['model'] != null ? SdkPresent((json['model'] as String?)!) : const SdkOmitted(),
+    rewriteModel: json['rewriteModel'] != null ? SdkPresent((json['rewriteModel'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (model) {
-          SdkPresent<String>(value: final value) => {
-              'model': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (rewriteModel) {
-          SdkPresent<String>(value: final value) => {
-              'rewriteModel': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-      };
+    'id': id,
+    ...switch (model) {
+      SdkPresent<String>(value: final value) => {'model': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (rewriteModel) {
+      SdkPresent<String>(value: final value) => {'rewriteModel': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant39 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `rule` wire field.
   final UserEventPayloadVariant39Rule rule;
 
   const UserEventPayloadVariant39({required this.rule});
 
-  UserEventPayloadVariant39 Function({UserEventPayloadVariant39Rule rule})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant39 Function({UserEventPayloadVariant39Rule rule}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant39 _copyWith({Object? rule = sdkOmittedValue}) =>
-      UserEventPayloadVariant39(
-        rule: identical(rule, sdkOmittedValue)
-            ? this.rule
-            : rule as UserEventPayloadVariant39Rule,
-      );
+  UserEventPayloadVariant39 _copyWith({Object? rule = sdkOmittedValue}) => UserEventPayloadVariant39(
+    rule: identical(rule, sdkOmittedValue) ? this.rule : rule as UserEventPayloadVariant39Rule,
+  );
 
-  factory UserEventPayloadVariant39.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant39(
-        rule: (json['rule'] != null
-            ? UserEventPayloadVariant39Rule.fromJson(
-                json['rule'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant39.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant39(
+    rule: (json['rule'] != null ? UserEventPayloadVariant39Rule.fromJson(json['rule'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'rule': rule.toJson(),
-      };
+    'rule': rule.toJson(),
+  };
 }
 
 /// Required object value serialized in the `rule` wire field.
 class UserEventPayloadVariant40Rule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `model` wire field.
   final SdkOptional<String> model;
-
   /// Required `string` value serialized in the `type` wire field.
   final String type_;
 
-  const UserEventPayloadVariant40Rule(
-      {required this.id, this.model = const SdkOmitted(), required this.type_});
+  const UserEventPayloadVariant40Rule({required this.id, this.model = const SdkOmitted(), required this.type_});
 
-  UserEventPayloadVariant40Rule Function(
-      {String id,
-      SdkOptional<String> model,
-      String type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant40Rule Function({String id, SdkOptional<String> model, String type_}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant40Rule _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? model = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UserEventPayloadVariant40Rule(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        model: identical(model, sdkOmittedValue)
-            ? this.model
-            : model as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-      );
+  UserEventPayloadVariant40Rule _copyWith({Object? id = sdkOmittedValue, Object? model = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant40Rule(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    model: identical(model, sdkOmittedValue) ? this.model : model as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+  );
 
-  factory UserEventPayloadVariant40Rule.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant40Rule(
-        id: (json['id'] as String?)!,
-        model: json['model'] != null
-            ? SdkPresent((json['model'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-      );
+  factory UserEventPayloadVariant40Rule.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant40Rule(
+    id: (json['id'] as String?)!,
+    model: json['model'] != null ? SdkPresent((json['model'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (model) {
-          SdkPresent<String>(value: final value) => {
-              'model': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-      };
+    'id': id,
+    ...switch (model) {
+      SdkPresent<String>(value: final value) => {'model': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant40 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `rule` wire field.
   final UserEventPayloadVariant40Rule rule;
 
   const UserEventPayloadVariant40({required this.rule});
 
-  UserEventPayloadVariant40 Function({UserEventPayloadVariant40Rule rule})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant40 Function({UserEventPayloadVariant40Rule rule}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant40 _copyWith({Object? rule = sdkOmittedValue}) =>
-      UserEventPayloadVariant40(
-        rule: identical(rule, sdkOmittedValue)
-            ? this.rule
-            : rule as UserEventPayloadVariant40Rule,
-      );
+  UserEventPayloadVariant40 _copyWith({Object? rule = sdkOmittedValue}) => UserEventPayloadVariant40(
+    rule: identical(rule, sdkOmittedValue) ? this.rule : rule as UserEventPayloadVariant40Rule,
+  );
 
-  factory UserEventPayloadVariant40.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant40(
-        rule: (json['rule'] != null
-            ? UserEventPayloadVariant40Rule.fromJson(
-                json['rule'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant40.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant40(
+    rule: (json['rule'] != null ? UserEventPayloadVariant40Rule.fromJson(json['rule'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'rule': rule.toJson(),
-      };
+    'rule': rule.toJson(),
+  };
 }
 
 /// Required object value serialized in the `rule` wire field.
 class UserEventPayloadVariant41Rule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `model` wire field.
   final SdkOptional<String> model;
-
   /// Required `string` value serialized in the `type` wire field.
   final String type_;
 
-  const UserEventPayloadVariant41Rule(
-      {required this.id, this.model = const SdkOmitted(), required this.type_});
+  const UserEventPayloadVariant41Rule({required this.id, this.model = const SdkOmitted(), required this.type_});
 
-  UserEventPayloadVariant41Rule Function(
-      {String id,
-      SdkOptional<String> model,
-      String type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant41Rule Function({String id, SdkOptional<String> model, String type_}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant41Rule _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? model = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UserEventPayloadVariant41Rule(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        model: identical(model, sdkOmittedValue)
-            ? this.model
-            : model as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-      );
+  UserEventPayloadVariant41Rule _copyWith({Object? id = sdkOmittedValue, Object? model = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant41Rule(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    model: identical(model, sdkOmittedValue) ? this.model : model as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+  );
 
-  factory UserEventPayloadVariant41Rule.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant41Rule(
-        id: (json['id'] as String?)!,
-        model: json['model'] != null
-            ? SdkPresent((json['model'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-      );
+  factory UserEventPayloadVariant41Rule.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant41Rule(
+    id: (json['id'] as String?)!,
+    model: json['model'] != null ? SdkPresent((json['model'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (model) {
-          SdkPresent<String>(value: final value) => {
-              'model': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-      };
+    'id': id,
+    ...switch (model) {
+      SdkPresent<String>(value: final value) => {'model': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant41 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional enumerated value serialized in the `enabled` wire field.
   final SdkOptional<UserEventPayloadVariant41Enabled> enabled;
-
   /// Required object value serialized in the `rule` wire field.
   final UserEventPayloadVariant41Rule rule;
 
-  const UserEventPayloadVariant41(
-      {this.enabled = const SdkOmitted(), required this.rule});
+  const UserEventPayloadVariant41({this.enabled = const SdkOmitted(), required this.rule});
 
-  UserEventPayloadVariant41 Function(
-      {SdkOptional<UserEventPayloadVariant41Enabled> enabled,
-      UserEventPayloadVariant41Rule rule}) get copyWith => _copyWith;
+  UserEventPayloadVariant41 Function({SdkOptional<UserEventPayloadVariant41Enabled> enabled, UserEventPayloadVariant41Rule rule}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant41 _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? rule = sdkOmittedValue}) =>
-      UserEventPayloadVariant41(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as SdkOptional<UserEventPayloadVariant41Enabled>,
-        rule: identical(rule, sdkOmittedValue)
-            ? this.rule
-            : rule as UserEventPayloadVariant41Rule,
-      );
+  UserEventPayloadVariant41 _copyWith({Object? enabled = sdkOmittedValue, Object? rule = sdkOmittedValue}) => UserEventPayloadVariant41(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<UserEventPayloadVariant41Enabled>,
+    rule: identical(rule, sdkOmittedValue) ? this.rule : rule as UserEventPayloadVariant41Rule,
+  );
 
-  factory UserEventPayloadVariant41.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant41(
-        enabled: json['enabled'] != null
-            ? SdkPresent((json['enabled'] != null
-                ? UserEventPayloadVariant41Enabled.fromJson(
-                    json['enabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        rule: (json['rule'] != null
-            ? UserEventPayloadVariant41Rule.fromJson(
-                json['rule'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant41.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant41(
+    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? UserEventPayloadVariant41Enabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
+    rule: (json['rule'] != null ? UserEventPayloadVariant41Rule.fromJson(json['rule'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enabled) {
-          SdkPresent<UserEventPayloadVariant41Enabled>(value: final value) => {
-              'enabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'rule': rule.toJson(),
-      };
+    ...switch (enabled) {
+      SdkPresent<UserEventPayloadVariant41Enabled>(value: final value) => {'enabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'rule': rule.toJson(),
+  };
 }
 
 /// Required object value serialized in the `virtualModelConfig` wire field.
 class UserEventPayloadVariant42VirtualModelConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `string` value serialized in the `displayName` wire field.
   final SdkOptional<String> displayName;
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `modelSlug` wire field.
   final SdkOptional<String> modelSlug;
 
-  const UserEventPayloadVariant42VirtualModelConfig(
-      {this.displayName = const SdkOmitted(),
-      required this.id,
-      this.modelSlug = const SdkOmitted()});
+  const UserEventPayloadVariant42VirtualModelConfig({this.displayName = const SdkOmitted(), required this.id, this.modelSlug = const SdkOmitted()});
 
-  UserEventPayloadVariant42VirtualModelConfig Function(
-      {SdkOptional<String> displayName,
-      String id,
-      SdkOptional<String> modelSlug}) get copyWith => _copyWith;
+  UserEventPayloadVariant42VirtualModelConfig Function({SdkOptional<String> displayName, String id, SdkOptional<String> modelSlug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant42VirtualModelConfig _copyWith(
-          {Object? displayName = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? modelSlug = sdkOmittedValue}) =>
-      UserEventPayloadVariant42VirtualModelConfig(
-        displayName: identical(displayName, sdkOmittedValue)
-            ? this.displayName
-            : displayName as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        modelSlug: identical(modelSlug, sdkOmittedValue)
-            ? this.modelSlug
-            : modelSlug as SdkOptional<String>,
-      );
+  UserEventPayloadVariant42VirtualModelConfig _copyWith({Object? displayName = sdkOmittedValue, Object? id = sdkOmittedValue, Object? modelSlug = sdkOmittedValue}) => UserEventPayloadVariant42VirtualModelConfig(
+    displayName: identical(displayName, sdkOmittedValue) ? this.displayName : displayName as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    modelSlug: identical(modelSlug, sdkOmittedValue) ? this.modelSlug : modelSlug as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant42VirtualModelConfig.fromJson(
-          Map<String, dynamic> json) =>
-      UserEventPayloadVariant42VirtualModelConfig(
-        displayName: json['displayName'] != null
-            ? SdkPresent((json['displayName'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        modelSlug: json['modelSlug'] != null
-            ? SdkPresent((json['modelSlug'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant42VirtualModelConfig.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant42VirtualModelConfig(
+    displayName: json['displayName'] != null ? SdkPresent((json['displayName'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    modelSlug: json['modelSlug'] != null ? SdkPresent((json['modelSlug'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (displayName) {
-          SdkPresent<String>(value: final value) => {
-              'displayName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (modelSlug) {
-          SdkPresent<String>(value: final value) => {
-              'modelSlug': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (displayName) {
+      SdkPresent<String>(value: final value) => {'displayName': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (modelSlug) {
+      SdkPresent<String>(value: final value) => {'modelSlug': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant42 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `virtualModelConfig` wire field.
   final UserEventPayloadVariant42VirtualModelConfig virtualModelConfig;
 
   const UserEventPayloadVariant42({required this.virtualModelConfig});
 
-  UserEventPayloadVariant42 Function(
-          {UserEventPayloadVariant42VirtualModelConfig virtualModelConfig})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant42 Function({UserEventPayloadVariant42VirtualModelConfig virtualModelConfig}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant42 _copyWith(
-          {Object? virtualModelConfig = sdkOmittedValue}) =>
-      UserEventPayloadVariant42(
-        virtualModelConfig: identical(virtualModelConfig, sdkOmittedValue)
-            ? this.virtualModelConfig
-            : virtualModelConfig as UserEventPayloadVariant42VirtualModelConfig,
-      );
+  UserEventPayloadVariant42 _copyWith({Object? virtualModelConfig = sdkOmittedValue}) => UserEventPayloadVariant42(
+    virtualModelConfig: identical(virtualModelConfig, sdkOmittedValue) ? this.virtualModelConfig : virtualModelConfig as UserEventPayloadVariant42VirtualModelConfig,
+  );
 
-  factory UserEventPayloadVariant42.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant42(
-        virtualModelConfig: (json['virtualModelConfig'] != null
-            ? UserEventPayloadVariant42VirtualModelConfig.fromJson(
-                json['virtualModelConfig'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant42.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant42(
+    virtualModelConfig: (json['virtualModelConfig'] != null ? UserEventPayloadVariant42VirtualModelConfig.fromJson(json['virtualModelConfig'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'virtualModelConfig': virtualModelConfig.toJson(),
-      };
+    'virtualModelConfig': virtualModelConfig.toJson(),
+  };
 }

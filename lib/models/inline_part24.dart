@@ -6,251 +6,209 @@ part of 'inline.dart';
 // Inline operation models (part 24)
 /// How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it.
 final class ConnectConnectorCreateResultCreationMode {
+
   final String value;
 
   const ConnectConnectorCreateResultCreationMode._(this.value);
 
-  factory ConnectConnectorCreateResultCreationMode.fromJson(String value) =>
-      ConnectConnectorCreateResultCreationMode._(value);
+  factory ConnectConnectorCreateResultCreationMode.fromJson(String value) => ConnectConnectorCreateResultCreationMode._(value);
 
   static const managed = ConnectConnectorCreateResultCreationMode._('managed');
   static const manual = ConnectConnectorCreateResultCreationMode._('manual');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultCreationMode && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultCreationMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the connector is known to have been edited since the app package it publishes to the provider was last built, so that package no longer matches it. Absent when it was not computed, or when the connector type publishes no such package. Derived on every read rather than marked at edit time, so reverting an edit clears it. Only reported by connector types that publish a package a user has to re-publish by hand — Microsoft Teams today.
 final class ConnectConnectorCreateResultKnownStale {
+
   final bool value;
 
   const ConnectConnectorCreateResultKnownStale._(this.value);
 
-  factory ConnectConnectorCreateResultKnownStale.fromJson(bool value) =>
-      ConnectConnectorCreateResultKnownStale._(value);
+  factory ConnectConnectorCreateResultKnownStale.fromJson(bool value) => ConnectConnectorCreateResultKnownStale._(value);
 
   static const false_ = ConnectConnectorCreateResultKnownStale._(false);
   static const true_ = ConnectConnectorCreateResultKnownStale._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultKnownStale && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultKnownStale && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether Vercel synchronizes provider-side configuration.
 final class ConnectConnectorCreateResultManagedSync {
+
   final bool value;
 
   const ConnectConnectorCreateResultManagedSync._(this.value);
 
-  factory ConnectConnectorCreateResultManagedSync.fromJson(bool value) =>
-      ConnectConnectorCreateResultManagedSync._(value);
+  factory ConnectConnectorCreateResultManagedSync.fromJson(bool value) => ConnectConnectorCreateResultManagedSync._(value);
 
   static const false_ = ConnectConnectorCreateResultManagedSync._(false);
   static const true_ = ConnectConnectorCreateResultManagedSync._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultManagedSync && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultManagedSync && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `supportsIcon` wire field.
 final class ConnectConnectorCreateResultSupportsIconVariant0 {
+
   final bool value;
 
   const ConnectConnectorCreateResultSupportsIconVariant0._(this.value);
 
-  factory ConnectConnectorCreateResultSupportsIconVariant0.fromJson(
-          bool value) =>
-      ConnectConnectorCreateResultSupportsIconVariant0._(value);
+  factory ConnectConnectorCreateResultSupportsIconVariant0.fromJson(bool value) => ConnectConnectorCreateResultSupportsIconVariant0._(value);
 
-  static const false_ =
-      ConnectConnectorCreateResultSupportsIconVariant0._(false);
+  static const false_ = ConnectConnectorCreateResultSupportsIconVariant0._(false);
   static const true_ = ConnectConnectorCreateResultSupportsIconVariant0._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultSupportsIconVariant0 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultSupportsIconVariant0 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `supportsIcon` wire field.
 final class ConnectConnectorCreateResultSupportsIconVariant1 {
+
   final String value;
 
   const ConnectConnectorCreateResultSupportsIconVariant1._(this.value);
 
-  factory ConnectConnectorCreateResultSupportsIconVariant1.fromJson(
-          String value) =>
-      ConnectConnectorCreateResultSupportsIconVariant1._(value);
+  factory ConnectConnectorCreateResultSupportsIconVariant1.fromJson(String value) => ConnectConnectorCreateResultSupportsIconVariant1._(value);
 
-  static const maybe =
-      ConnectConnectorCreateResultSupportsIconVariant1._('maybe');
+  static const maybe = ConnectConnectorCreateResultSupportsIconVariant1._('maybe');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultSupportsIconVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultSupportsIconVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the connector supports an installation flow.
 final class ConnectConnectorCreateResultSupportsInstallation {
+
   final bool value;
 
   const ConnectConnectorCreateResultSupportsInstallation._(this.value);
 
-  factory ConnectConnectorCreateResultSupportsInstallation.fromJson(
-          bool value) =>
-      ConnectConnectorCreateResultSupportsInstallation._(value);
+  factory ConnectConnectorCreateResultSupportsInstallation.fromJson(bool value) => ConnectConnectorCreateResultSupportsInstallation._(value);
 
-  static const false_ =
-      ConnectConnectorCreateResultSupportsInstallation._(false);
+  static const false_ = ConnectConnectorCreateResultSupportsInstallation._(false);
   static const true_ = ConnectConnectorCreateResultSupportsInstallation._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultSupportsInstallation &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultSupportsInstallation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether this managed connector can disconnect from its manager.
 final class ConnectConnectorCreateResultSupportsManagedEjection {
+
   final bool value;
 
   const ConnectConnectorCreateResultSupportsManagedEjection._(this.value);
 
-  factory ConnectConnectorCreateResultSupportsManagedEjection.fromJson(
-          bool value) =>
-      ConnectConnectorCreateResultSupportsManagedEjection._(value);
+  factory ConnectConnectorCreateResultSupportsManagedEjection.fromJson(bool value) => ConnectConnectorCreateResultSupportsManagedEjection._(value);
 
-  static const false_ =
-      ConnectConnectorCreateResultSupportsManagedEjection._(false);
-  static const true_ =
-      ConnectConnectorCreateResultSupportsManagedEjection._(true);
+  static const false_ = ConnectConnectorCreateResultSupportsManagedEjection._(false);
+  static const true_ = ConnectConnectorCreateResultSupportsManagedEjection._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultSupportsManagedEjection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultSupportsManagedEjection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether Connect can revoke tokens for this connector.
 final class ConnectConnectorCreateResultSupportsRevocation {
+
   final bool value;
 
   const ConnectConnectorCreateResultSupportsRevocation._(this.value);
 
-  factory ConnectConnectorCreateResultSupportsRevocation.fromJson(bool value) =>
-      ConnectConnectorCreateResultSupportsRevocation._(value);
+  factory ConnectConnectorCreateResultSupportsRevocation.fromJson(bool value) => ConnectConnectorCreateResultSupportsRevocation._(value);
 
   static const false_ = ConnectConnectorCreateResultSupportsRevocation._(false);
   static const true_ = ConnectConnectorCreateResultSupportsRevocation._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultSupportsRevocation &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultSupportsRevocation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether this connector type supports trigger webhooks. Derived from the type definition; indicates that `triggers` and `triggerDestinations` may be meaningful for this connector.
 final class ConnectConnectorCreateResultSupportsTriggers {
+
   final bool value;
 
   const ConnectConnectorCreateResultSupportsTriggers._(this.value);
 
-  factory ConnectConnectorCreateResultSupportsTriggers.fromJson(bool value) =>
-      ConnectConnectorCreateResultSupportsTriggers._(value);
+  factory ConnectConnectorCreateResultSupportsTriggers.fromJson(bool value) => ConnectConnectorCreateResultSupportsTriggers._(value);
 
   static const false_ = ConnectConnectorCreateResultSupportsTriggers._(false);
   static const true_ = ConnectConnectorCreateResultSupportsTriggers._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultSupportsTriggers &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultSupportsTriggers && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Connector implementation type.
 final class ConnectConnectorCreateResultType {
+
   final String value;
 
   const ConnectConnectorCreateResultType._(this.value);
 
-  factory ConnectConnectorCreateResultType.fromJson(String value) =>
-      ConnectConnectorCreateResultType._(value);
+  factory ConnectConnectorCreateResultType.fromJson(String value) => ConnectConnectorCreateResultType._(value);
 
   static const apiKey = ConnectConnectorCreateResultType._('api-key');
   static const awsAlpha = ConnectConnectorCreateResultType._('aws-alpha');
@@ -259,88 +217,67 @@ final class ConnectConnectorCreateResultType {
   static const github = ConnectConnectorCreateResultType._('github');
   static const linear = ConnectConnectorCreateResultType._('linear');
   static const linq = ConnectConnectorCreateResultType._('linq');
-  static const microsoftEntra =
-      ConnectConnectorCreateResultType._('microsoft-entra');
-  static const microsoftTeams =
-      ConnectConnectorCreateResultType._('microsoft-teams');
+  static const microsoftEntra = ConnectConnectorCreateResultType._('microsoft-entra');
+  static const microsoftTeams = ConnectConnectorCreateResultType._('microsoft-teams');
   static const oauth = ConnectConnectorCreateResultType._('oauth');
   static const photon = ConnectConnectorCreateResultType._('photon');
   static const salesforce = ConnectConnectorCreateResultType._('salesforce');
   static const sendblue = ConnectConnectorCreateResultType._('sendblue');
   static const slack = ConnectConnectorCreateResultType._('slack');
   static const snowflake = ConnectConnectorCreateResultType._('snowflake');
-  static const snowflakeWif =
-      ConnectConnectorCreateResultType._('snowflake-wif');
-  static const stripeApiKey =
-      ConnectConnectorCreateResultType._('stripe-api-key');
+  static const snowflakeWif = ConnectConnectorCreateResultType._('snowflake-wif');
+  static const stripeApiKey = ConnectConnectorCreateResultType._('stripe-api-key');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultType && other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether one user token can be used across installations.
 final class ConnectConnectorCreateResultUserTokensCrossInstallation {
+
   final bool value;
 
   const ConnectConnectorCreateResultUserTokensCrossInstallation._(this.value);
 
-  factory ConnectConnectorCreateResultUserTokensCrossInstallation.fromJson(
-          bool value) =>
-      ConnectConnectorCreateResultUserTokensCrossInstallation._(value);
+  factory ConnectConnectorCreateResultUserTokensCrossInstallation.fromJson(bool value) => ConnectConnectorCreateResultUserTokensCrossInstallation._(value);
 
-  static const false_ =
-      ConnectConnectorCreateResultUserTokensCrossInstallation._(false);
-  static const true_ =
-      ConnectConnectorCreateResultUserTokensCrossInstallation._(true);
+  static const false_ = ConnectConnectorCreateResultUserTokensCrossInstallation._(false);
+  static const true_ = ConnectConnectorCreateResultUserTokensCrossInstallation._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultUserTokensCrossInstallation &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultUserTokensCrossInstallation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `isStaticCredential` wire field.
 final class ConnectConnectorCreateResultUserTokensIsStaticCredential {
+
   final bool value;
 
   const ConnectConnectorCreateResultUserTokensIsStaticCredential._(this.value);
 
-  factory ConnectConnectorCreateResultUserTokensIsStaticCredential.fromJson(
-          bool value) =>
-      ConnectConnectorCreateResultUserTokensIsStaticCredential._(value);
+  factory ConnectConnectorCreateResultUserTokensIsStaticCredential.fromJson(bool value) => ConnectConnectorCreateResultUserTokensIsStaticCredential._(value);
 
-  static const false_ =
-      ConnectConnectorCreateResultUserTokensIsStaticCredential._(false);
-  static const true_ =
-      ConnectConnectorCreateResultUserTokensIsStaticCredential._(true);
+  static const false_ = ConnectConnectorCreateResultUserTokensIsStaticCredential._(false);
+  static const true_ = ConnectConnectorCreateResultUserTokensIsStaticCredential._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ConnectConnectorCreateResultUserTokensIsStaticCredential &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ConnectConnectorCreateResultUserTokensIsStaticCredential && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

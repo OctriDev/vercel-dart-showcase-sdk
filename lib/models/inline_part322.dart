@@ -5,312 +5,224 @@ part of 'inline.dart';
 
 // Inline operation models (part 322)
 final class DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled {
+
   final bool value;
 
   const DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled._(this.value);
 
-  factory DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled._(value);
+  factory DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled.fromJson(bool value) => DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled._(true);
+  static const false_ = DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled._(false);
+  static const true_ = DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseResourceConfigIsNSNBDisabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.
 final class DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(
-      this.value);
+  const DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(this.value);
 
-  factory DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(value);
+  factory DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader.fromJson(bool value) => DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(true);
+  static const false_ = DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(false);
+  static const true_ = DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseRollingReleaseCanaryResponseHeader && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// What to do when the gate trips: pause the rollout, or roll it back.
 final class DeleteProjectAvatarResponseRollingReleaseGateAction {
+
   final String value;
 
   const DeleteProjectAvatarResponseRollingReleaseGateAction._(this.value);
 
-  factory DeleteProjectAvatarResponseRollingReleaseGateAction.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseRollingReleaseGateAction._(value);
+  factory DeleteProjectAvatarResponseRollingReleaseGateAction.fromJson(String value) => DeleteProjectAvatarResponseRollingReleaseGateAction._(value);
 
-  static const pause =
-      DeleteProjectAvatarResponseRollingReleaseGateAction._('pause');
-  static const rollback =
-      DeleteProjectAvatarResponseRollingReleaseGateAction._('rollback');
+  static const pause = DeleteProjectAvatarResponseRollingReleaseGateAction._('pause');
+  static const rollback = DeleteProjectAvatarResponseRollingReleaseGateAction._('rollback');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseRollingReleaseGateAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseRollingReleaseGateAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The metric this check evaluates.
 final class DeleteProjectAvatarResponseRollingReleaseGateChecksItemType {
+
   final String value;
 
-  const DeleteProjectAvatarResponseRollingReleaseGateChecksItemType._(
-      this.value);
+  const DeleteProjectAvatarResponseRollingReleaseGateChecksItemType._(this.value);
 
-  factory DeleteProjectAvatarResponseRollingReleaseGateChecksItemType.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseRollingReleaseGateChecksItemType._(value);
+  factory DeleteProjectAvatarResponseRollingReleaseGateChecksItemType.fromJson(String value) => DeleteProjectAvatarResponseRollingReleaseGateChecksItemType._(value);
 
-  static const errorRate5xx =
-      DeleteProjectAvatarResponseRollingReleaseGateChecksItemType._(
-          'error-rate-5xx');
+  static const errorRate5xx = DeleteProjectAvatarResponseRollingReleaseGateChecksItemType._('error-rate-5xx');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseRollingReleaseGateChecksItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseRollingReleaseGateChecksItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// When true, a tripped gate is only reported — {@link action} is not taken.
 final class DeleteProjectAvatarResponseRollingReleaseGateDryRun {
+
   final bool value;
 
   const DeleteProjectAvatarResponseRollingReleaseGateDryRun._(this.value);
 
-  factory DeleteProjectAvatarResponseRollingReleaseGateDryRun.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseRollingReleaseGateDryRun._(value);
+  factory DeleteProjectAvatarResponseRollingReleaseGateDryRun.fromJson(bool value) => DeleteProjectAvatarResponseRollingReleaseGateDryRun._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseRollingReleaseGateDryRun._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseRollingReleaseGateDryRun._(true);
+  static const false_ = DeleteProjectAvatarResponseRollingReleaseGateDryRun._(false);
+  static const true_ = DeleteProjectAvatarResponseRollingReleaseGateDryRun._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseRollingReleaseGateDryRun &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseRollingReleaseGateDryRun && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether automated gating is enabled for this project's rollouts.
 final class DeleteProjectAvatarResponseRollingReleaseGateEnabled {
+
   final bool value;
 
   const DeleteProjectAvatarResponseRollingReleaseGateEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseRollingReleaseGateEnabled.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseRollingReleaseGateEnabled._(value);
+  factory DeleteProjectAvatarResponseRollingReleaseGateEnabled.fromJson(bool value) => DeleteProjectAvatarResponseRollingReleaseGateEnabled._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseRollingReleaseGateEnabled._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseRollingReleaseGateEnabled._(true);
+  static const false_ = DeleteProjectAvatarResponseRollingReleaseGateEnabled._(false);
+  static const true_ = DeleteProjectAvatarResponseRollingReleaseGateEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseRollingReleaseGateEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseRollingReleaseGateEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether to linearly shift traffic over the duration of this stage
 final class DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(
-      this.value);
+  const DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(this.value);
 
-  factory DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(value);
+  factory DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift.fromJson(bool value) => DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(true);
+  static const false_ = DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(false);
+  static const true_ = DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseRollingReleaseStagesItemLinearShift && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not this stage requires manual approval to proceed
 final class DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval {
+
   final bool value;
 
-  const DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(
-      this.value);
+  const DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(this.value);
 
-  factory DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(
-          value);
+  factory DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval.fromJson(bool value) => DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(
-          false);
-  static const true_ =
-      DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(
-          true);
+  static const false_ = DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(false);
+  static const true_ = DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseRollingReleaseStagesItemRequireApproval && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseSandboxFailoverRegionsItem {
+
   final String value;
 
   const DeleteProjectAvatarResponseSandboxFailoverRegionsItem._(this.value);
 
-  factory DeleteProjectAvatarResponseSandboxFailoverRegionsItem.fromJson(
-          String value) =>
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._(value);
+  factory DeleteProjectAvatarResponseSandboxFailoverRegionsItem.fromJson(String value) => DeleteProjectAvatarResponseSandboxFailoverRegionsItem._(value);
 
-  static const arn1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('arn1');
-  static const bom1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('bom1');
-  static const cdg1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('cdg1');
-  static const cle1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('cle1');
-  static const cpt1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('cpt1');
-  static const dub1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('dub1');
-  static const fra1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('fra1');
-  static const gru1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('gru1');
-  static const hkg1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('hkg1');
-  static const hnd1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('hnd1');
-  static const iad1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('iad1');
-  static const icn1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('icn1');
-  static const kix1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('kix1');
-  static const lhr1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('lhr1');
-  static const pdx1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('pdx1');
-  static const sfo1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('sfo1');
-  static const sin1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('sin1');
-  static const syd1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('syd1');
-  static const yul1 =
-      DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('yul1');
+  static const arn1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('arn1');
+  static const bom1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('bom1');
+  static const cdg1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('cdg1');
+  static const cle1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('cle1');
+  static const cpt1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('cpt1');
+  static const dub1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('dub1');
+  static const fra1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('fra1');
+  static const gru1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('gru1');
+  static const hkg1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('hkg1');
+  static const hnd1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('hnd1');
+  static const iad1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('iad1');
+  static const icn1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('icn1');
+  static const kix1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('kix1');
+  static const lhr1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('lhr1');
+  static const pdx1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('pdx1');
+  static const sfo1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('sfo1');
+  static const sin1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('sin1');
+  static const syd1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('syd1');
+  static const yul1 = DeleteProjectAvatarResponseSandboxFailoverRegionsItem._('yul1');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseSandboxFailoverRegionsItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSandboxFailoverRegionsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseSandboxRegion {
+
   final String value;
 
   const DeleteProjectAvatarResponseSandboxRegion._(this.value);
 
-  factory DeleteProjectAvatarResponseSandboxRegion.fromJson(String value) =>
-      DeleteProjectAvatarResponseSandboxRegion._(value);
+  factory DeleteProjectAvatarResponseSandboxRegion.fromJson(String value) => DeleteProjectAvatarResponseSandboxRegion._(value);
 
   static const arn1 = DeleteProjectAvatarResponseSandboxRegion._('arn1');
   static const bom1 = DeleteProjectAvatarResponseSandboxRegion._('bom1');
@@ -334,41 +246,31 @@ final class DeleteProjectAvatarResponseSandboxRegion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseSandboxRegion && other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSandboxRegion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class DeleteProjectAvatarResponseSecurityAttackModeEnabled {
+
   final bool value;
 
   const DeleteProjectAvatarResponseSecurityAttackModeEnabled._(this.value);
 
-  factory DeleteProjectAvatarResponseSecurityAttackModeEnabled.fromJson(
-          bool value) =>
-      DeleteProjectAvatarResponseSecurityAttackModeEnabled._(value);
+  factory DeleteProjectAvatarResponseSecurityAttackModeEnabled.fromJson(bool value) => DeleteProjectAvatarResponseSecurityAttackModeEnabled._(value);
 
-  static const false_ =
-      DeleteProjectAvatarResponseSecurityAttackModeEnabled._(false);
-  static const true_ =
-      DeleteProjectAvatarResponseSecurityAttackModeEnabled._(true);
+  static const false_ = DeleteProjectAvatarResponseSecurityAttackModeEnabled._(false);
+  static const true_ = DeleteProjectAvatarResponseSecurityAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is DeleteProjectAvatarResponseSecurityAttackModeEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is DeleteProjectAvatarResponseSecurityAttackModeEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

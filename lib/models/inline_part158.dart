@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result {
   cached;
 
-  static ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result
-      fromJson(String value) {
+  static ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result fromJson(String value) {
     switch (value) {
-      case 'cached':
-        return ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result
-            .cached;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result: $value');
+      case 'cached': return ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result.cached;
+      default: throw ArgumentError('Unknown ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result
-            .cached:
-        return 'cached';
+      case ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result.cached: return 'cached';
     }
   }
 
@@ -34,23 +27,16 @@ enum ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant1Result {
 enum ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result {
   failed;
 
-  static ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result
-      fromJson(String value) {
+  static ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result fromJson(String value) {
     switch (value) {
-      case 'failed':
-        return ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result
-            .failed;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result: $value');
+      case 'failed': return ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result.failed;
+      default: throw ArgumentError('Unknown ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result
-            .failed:
-        return 'failed';
+      case ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result.failed: return 'failed';
     }
   }
 
@@ -61,23 +47,16 @@ enum ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant2Result {
 enum ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result {
   skipped;
 
-  static ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result
-      fromJson(String value) {
+  static ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result fromJson(String value) {
     switch (value) {
-      case 'skipped':
-        return ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result
-            .skipped;
-      default:
-        throw ArgumentError(
-            'Unknown ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result: $value');
+      case 'skipped': return ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result.skipped;
+      default: throw ArgumentError('Unknown ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result
-            .skipped:
-        return 'skipped';
+      case ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result.skipped: return 'skipped';
     }
   }
 
@@ -87,52 +66,46 @@ enum ListVercelCiTaskRunsResponseTaskRunsItemCompletedConclusionVariant3Result {
 
 /// Optional enumerated value serialized in the `category` wire field.
 final class MarketplaceFlagCategory {
+
   final String value;
 
   const MarketplaceFlagCategory._(this.value);
 
-  factory MarketplaceFlagCategory.fromJson(String value) =>
-      MarketplaceFlagCategory._(value);
+  factory MarketplaceFlagCategory.fromJson(String value) => MarketplaceFlagCategory._(value);
 
   static const experiment = MarketplaceFlagCategory._('experiment');
   static const flag = MarketplaceFlagCategory._('flag');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is MarketplaceFlagCategory && other.value == value;
+  @override bool operator ==(Object other) => other is MarketplaceFlagCategory && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `state` wire field.
 final class MarketplaceFlagState {
+
   final String value;
 
   const MarketplaceFlagState._(this.value);
 
-  factory MarketplaceFlagState.fromJson(String value) =>
-      MarketplaceFlagState._(value);
+  factory MarketplaceFlagState.fromJson(String value) => MarketplaceFlagState._(value);
 
   static const active = MarketplaceFlagState._('active');
   static const archived = MarketplaceFlagState._('archived');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is MarketplaceFlagState && other.value == value;
+  @override bool operator ==(Object other) => other is MarketplaceFlagState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `typeName` wire field.
@@ -141,17 +114,14 @@ enum MarketplaceFlagTypeName {
 
   static MarketplaceFlagTypeName fromJson(String value) {
     switch (value) {
-      case 'marketplaceFlag':
-        return MarketplaceFlagTypeName.marketplaceflag;
-      default:
-        throw ArgumentError('Unknown MarketplaceFlagTypeName: $value');
+      case 'marketplaceFlag': return MarketplaceFlagTypeName.marketplaceflag;
+      default: throw ArgumentError('Unknown MarketplaceFlagTypeName: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case MarketplaceFlagTypeName.marketplaceflag:
-        return 'marketplaceFlag';
+      case MarketplaceFlagTypeName.marketplaceflag: return 'marketplaceFlag';
     }
   }
 
@@ -161,37 +131,34 @@ enum MarketplaceFlagTypeName {
 
 /// CPU architecture of the sandbox. This value does not change.
 final class NamedSandboxArchitecture {
+
   final String value;
 
   const NamedSandboxArchitecture._(this.value);
 
-  factory NamedSandboxArchitecture.fromJson(String value) =>
-      NamedSandboxArchitecture._(value);
+  factory NamedSandboxArchitecture.fromJson(String value) => NamedSandboxArchitecture._(value);
 
   static const amd64 = NamedSandboxArchitecture._('amd64');
   static const arm64 = NamedSandboxArchitecture._('arm64');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is NamedSandboxArchitecture && other.value == value;
+  @override bool operator ==(Object other) => other is NamedSandboxArchitecture && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The regions the sandbox fails over to. Empty when it does not fail over.
 final class NamedSandboxFailoverRegionsItem {
+
   final String value;
 
   const NamedSandboxFailoverRegionsItem._(this.value);
 
-  factory NamedSandboxFailoverRegionsItem.fromJson(String value) =>
-      NamedSandboxFailoverRegionsItem._(value);
+  factory NamedSandboxFailoverRegionsItem.fromJson(String value) => NamedSandboxFailoverRegionsItem._(value);
 
   static const arn1 = NamedSandboxFailoverRegionsItem._('arn1');
   static const bom1 = NamedSandboxFailoverRegionsItem._('bom1');
@@ -215,50 +182,43 @@ final class NamedSandboxFailoverRegionsItem {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is NamedSandboxFailoverRegionsItem && other.value == value;
+  @override bool operator ==(Object other) => other is NamedSandboxFailoverRegionsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether to immediately delete evicted snapshots.
 final class NamedSandboxKeepLastSnapshotsDeleteEvicted {
+
   final bool value;
 
   const NamedSandboxKeepLastSnapshotsDeleteEvicted._(this.value);
 
-  factory NamedSandboxKeepLastSnapshotsDeleteEvicted.fromJson(bool value) =>
-      NamedSandboxKeepLastSnapshotsDeleteEvicted._(value);
+  factory NamedSandboxKeepLastSnapshotsDeleteEvicted.fromJson(bool value) => NamedSandboxKeepLastSnapshotsDeleteEvicted._(value);
 
   static const false_ = NamedSandboxKeepLastSnapshotsDeleteEvicted._(false);
   static const true_ = NamedSandboxKeepLastSnapshotsDeleteEvicted._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is NamedSandboxKeepLastSnapshotsDeleteEvicted &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is NamedSandboxKeepLastSnapshotsDeleteEvicted && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class NamedSandboxMountsValueMode {
+
   final String value;
 
   const NamedSandboxMountsValueMode._(this.value);
 
-  factory NamedSandboxMountsValueMode.fromJson(String value) =>
-      NamedSandboxMountsValueMode._(value);
+  factory NamedSandboxMountsValueMode.fromJson(String value) => NamedSandboxMountsValueMode._(value);
 
   static const readOnly = NamedSandboxMountsValueMode._('read-only');
   static const readWrite = NamedSandboxMountsValueMode._('read-write');
@@ -266,25 +226,22 @@ final class NamedSandboxMountsValueMode {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is NamedSandboxMountsValueMode && other.value == value;
+  @override bool operator ==(Object other) => other is NamedSandboxMountsValueMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `mode` wire field.
 final class NamedSandboxNetworkPolicyMode {
+
   final String value;
 
   const NamedSandboxNetworkPolicyMode._(this.value);
 
-  factory NamedSandboxNetworkPolicyMode.fromJson(String value) =>
-      NamedSandboxNetworkPolicyMode._(value);
+  factory NamedSandboxNetworkPolicyMode.fromJson(String value) => NamedSandboxNetworkPolicyMode._(value);
 
   static const allowAll = NamedSandboxNetworkPolicyMode._('allow-all');
   static const custom = NamedSandboxNetworkPolicyMode._('custom');
@@ -294,38 +251,32 @@ final class NamedSandboxNetworkPolicyMode {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is NamedSandboxNetworkPolicyMode && other.value == value;
+  @override bool operator ==(Object other) => other is NamedSandboxNetworkPolicyMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the sandbox persists its state across restarts via automatic snapshots.
 final class NamedSandboxPersistent {
+
   final bool value;
 
   const NamedSandboxPersistent._(this.value);
 
-  factory NamedSandboxPersistent.fromJson(bool value) =>
-      NamedSandboxPersistent._(value);
+  factory NamedSandboxPersistent.fromJson(bool value) => NamedSandboxPersistent._(value);
 
   static const false_ = NamedSandboxPersistent._(false);
   static const true_ = NamedSandboxPersistent._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is NamedSandboxPersistent && other.value == value;
+  @override bool operator ==(Object other) => other is NamedSandboxPersistent && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

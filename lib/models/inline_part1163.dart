@@ -8,477 +8,289 @@ part of 'inline.dart';
 class ListAliasesForDeploymentResponseAliasesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The alias name, it could be a `.vercel.app` subdomain or a custom domain
   final String alias;
-
   /// The date when the alias was created
   final String created;
-
   /// The protection bypass for the alias
   final SdkOptional<Map<String, dynamic>> protectionBypass;
-
   /// Target destination domain for redirect when the alias is a redirect
   final SdkOptional<String?> redirect;
-
   /// The unique identifier of the alias
   final String uid;
 
-  const ListAliasesForDeploymentResponseAliasesItem(
-      {required this.alias,
-      required this.created,
-      this.protectionBypass = const SdkOmitted(),
-      this.redirect = const SdkOmitted(),
-      required this.uid});
+  const ListAliasesForDeploymentResponseAliasesItem({required this.alias, required this.created, this.protectionBypass = const SdkOmitted(), this.redirect = const SdkOmitted(), required this.uid});
 
-  ListAliasesForDeploymentResponseAliasesItem Function(
-      {String alias,
-      String created,
-      SdkOptional<Map<String, dynamic>> protectionBypass,
-      SdkOptional<String?> redirect,
-      String uid}) get copyWith => _copyWith;
+  ListAliasesForDeploymentResponseAliasesItem Function({String alias, String created, SdkOptional<Map<String, dynamic>> protectionBypass, SdkOptional<String?> redirect, String uid}) get copyWith => _copyWith;
 
-  ListAliasesForDeploymentResponseAliasesItem _copyWith(
-          {Object? alias = sdkOmittedValue,
-          Object? created = sdkOmittedValue,
-          Object? protectionBypass = sdkOmittedValue,
-          Object? redirect = sdkOmittedValue,
-          Object? uid = sdkOmittedValue}) =>
-      ListAliasesForDeploymentResponseAliasesItem(
-        alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
-        created: identical(created, sdkOmittedValue)
-            ? this.created
-            : created as String,
-        protectionBypass: identical(protectionBypass, sdkOmittedValue)
-            ? this.protectionBypass
-            : protectionBypass as SdkOptional<Map<String, dynamic>>,
-        redirect: identical(redirect, sdkOmittedValue)
-            ? this.redirect
-            : redirect as SdkOptional<String?>,
-        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-      );
+  ListAliasesForDeploymentResponseAliasesItem _copyWith({Object? alias = sdkOmittedValue, Object? created = sdkOmittedValue, Object? protectionBypass = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? uid = sdkOmittedValue}) => ListAliasesForDeploymentResponseAliasesItem(
+    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
+    created: identical(created, sdkOmittedValue) ? this.created : created as String,
+    protectionBypass: identical(protectionBypass, sdkOmittedValue) ? this.protectionBypass : protectionBypass as SdkOptional<Map<String, dynamic>>,
+    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+  );
 
-  factory ListAliasesForDeploymentResponseAliasesItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesForDeploymentResponseAliasesItem(
-        alias: (json['alias'] as String?)!,
-        created: (json['created'] as String?)!,
-        protectionBypass: json['protectionBypass'] != null
-            ? SdkPresent((json['protectionBypass'] == null
-                ? null
-                : json['protectionBypass'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        redirect: json.containsKey('redirect')
-            ? SdkPresent(json['redirect'] as String?)
-            : const SdkOmitted(),
-        uid: (json['uid'] as String?)!,
-      );
+  factory ListAliasesForDeploymentResponseAliasesItem.fromJson(Map<String, dynamic> json) => ListAliasesForDeploymentResponseAliasesItem(
+    alias: (json['alias'] as String?)!,
+    created: (json['created'] as String?)!,
+    protectionBypass: json['protectionBypass'] != null ? SdkPresent((json['protectionBypass'] == null ? null : json['protectionBypass'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
+    uid: (json['uid'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'alias': alias,
-        'created': created,
-        ...switch (protectionBypass) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'protectionBypass': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (redirect) {
-          SdkPresent<String?>(value: final value) => {
-              'redirect': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'uid': uid,
-      };
+    'alias': alias,
+    'created': created,
+    ...switch (protectionBypass) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'protectionBypass': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (redirect) {
+      SdkPresent<String?>(value: final value) => {'redirect': value,},
+      _ => const <String, dynamic>{},
+    },
+    'uid': uid,
+  };
 }
 
 class ListAliasesForDeploymentResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A list of the aliases assigned to the deployment
   final List<ListAliasesForDeploymentResponseAliasesItem> aliases;
 
   const ListAliasesForDeploymentResponse({required this.aliases});
 
-  ListAliasesForDeploymentResponse Function(
-          {List<ListAliasesForDeploymentResponseAliasesItem> aliases})
-      get copyWith => _copyWith;
+  ListAliasesForDeploymentResponse Function({List<ListAliasesForDeploymentResponseAliasesItem> aliases}) get copyWith => _copyWith;
 
-  ListAliasesForDeploymentResponse _copyWith(
-          {Object? aliases = sdkOmittedValue}) =>
-      ListAliasesForDeploymentResponse(
-        aliases: identical(aliases, sdkOmittedValue)
-            ? this.aliases
-            : aliases as List<ListAliasesForDeploymentResponseAliasesItem>,
-      );
+  ListAliasesForDeploymentResponse _copyWith({Object? aliases = sdkOmittedValue}) => ListAliasesForDeploymentResponse(
+    aliases: identical(aliases, sdkOmittedValue) ? this.aliases : aliases as List<ListAliasesForDeploymentResponseAliasesItem>,
+  );
 
-  factory ListAliasesForDeploymentResponse.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesForDeploymentResponse(
-        aliases: ((json['aliases'] as List?)
-            ?.map((e) => ListAliasesForDeploymentResponseAliasesItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory ListAliasesForDeploymentResponse.fromJson(Map<String, dynamic> json) => ListAliasesForDeploymentResponse(
+    aliases: ((json['aliases'] as List?)?.map((e) => ListAliasesForDeploymentResponseAliasesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'aliases': aliases.map((item) => item.toJson()).toList(),
-      };
+    'aliases': aliases.map((item) => item.toJson()).toList(),
+  };
 }
 
 class AssignAliasRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The alias we want to assign to the deployment defined in the URL
   final SdkOptional<String> alias;
-
   /// The redirect property will take precedence over the deployment id from the URL and consists of a hostname (like test.com) to which the alias should redirect using status code 307
   final SdkOptional<String?> redirect;
 
-  const AssignAliasRequestBody(
-      {this.alias = const SdkOmitted(), this.redirect = const SdkOmitted()});
+  const AssignAliasRequestBody({this.alias = const SdkOmitted(), this.redirect = const SdkOmitted()});
 
-  AssignAliasRequestBody Function(
-      {SdkOptional<String> alias,
-      SdkOptional<String?> redirect}) get copyWith => _copyWith;
+  AssignAliasRequestBody Function({SdkOptional<String> alias, SdkOptional<String?> redirect}) get copyWith => _copyWith;
 
-  AssignAliasRequestBody _copyWith(
-          {Object? alias = sdkOmittedValue,
-          Object? redirect = sdkOmittedValue}) =>
-      AssignAliasRequestBody(
-        alias: identical(alias, sdkOmittedValue)
-            ? this.alias
-            : alias as SdkOptional<String>,
-        redirect: identical(redirect, sdkOmittedValue)
-            ? this.redirect
-            : redirect as SdkOptional<String?>,
-      );
+  AssignAliasRequestBody _copyWith({Object? alias = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => AssignAliasRequestBody(
+    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
+    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
+  );
 
-  factory AssignAliasRequestBody.fromJson(Map<String, dynamic> json) =>
-      AssignAliasRequestBody(
-        alias: json['alias'] != null
-            ? SdkPresent((json['alias'] as String?)!)
-            : const SdkOmitted(),
-        redirect: json.containsKey('redirect')
-            ? SdkPresent(json['redirect'] as String?)
-            : const SdkOmitted(),
-      );
+  factory AssignAliasRequestBody.fromJson(Map<String, dynamic> json) => AssignAliasRequestBody(
+    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
+    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (alias) {
-          SdkPresent<String>(value: final value) => {
-              'alias': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (redirect) {
-          SdkPresent<String?>(value: final value) => {
-              'redirect': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (alias) {
+      SdkPresent<String>(value: final value) => {'alias': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (redirect) {
+      SdkPresent<String?>(value: final value) => {'redirect': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class AssignAliasResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The assigned alias name
   final String alias;
-
   /// The date when the alias was created
   final String created;
-
   /// The unique identifier of the previously aliased deployment, only received when the alias was used before
   final SdkOptional<String?> oldDeploymentId;
-
   /// The unique identifier of the alias
   final String uid;
 
-  const AssignAliasResponse(
-      {required this.alias,
-      required this.created,
-      this.oldDeploymentId = const SdkOmitted(),
-      required this.uid});
+  const AssignAliasResponse({required this.alias, required this.created, this.oldDeploymentId = const SdkOmitted(), required this.uid});
 
-  AssignAliasResponse Function(
-      {String alias,
-      String created,
-      SdkOptional<String?> oldDeploymentId,
-      String uid}) get copyWith => _copyWith;
+  AssignAliasResponse Function({String alias, String created, SdkOptional<String?> oldDeploymentId, String uid}) get copyWith => _copyWith;
 
-  AssignAliasResponse _copyWith(
-          {Object? alias = sdkOmittedValue,
-          Object? created = sdkOmittedValue,
-          Object? oldDeploymentId = sdkOmittedValue,
-          Object? uid = sdkOmittedValue}) =>
-      AssignAliasResponse(
-        alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
-        created: identical(created, sdkOmittedValue)
-            ? this.created
-            : created as String,
-        oldDeploymentId: identical(oldDeploymentId, sdkOmittedValue)
-            ? this.oldDeploymentId
-            : oldDeploymentId as SdkOptional<String?>,
-        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-      );
+  AssignAliasResponse _copyWith({Object? alias = sdkOmittedValue, Object? created = sdkOmittedValue, Object? oldDeploymentId = sdkOmittedValue, Object? uid = sdkOmittedValue}) => AssignAliasResponse(
+    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
+    created: identical(created, sdkOmittedValue) ? this.created : created as String,
+    oldDeploymentId: identical(oldDeploymentId, sdkOmittedValue) ? this.oldDeploymentId : oldDeploymentId as SdkOptional<String?>,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+  );
 
-  factory AssignAliasResponse.fromJson(Map<String, dynamic> json) =>
-      AssignAliasResponse(
-        alias: (json['alias'] as String?)!,
-        created: (json['created'] as String?)!,
-        oldDeploymentId: json.containsKey('oldDeploymentId')
-            ? SdkPresent(json['oldDeploymentId'] as String?)
-            : const SdkOmitted(),
-        uid: (json['uid'] as String?)!,
-      );
+  factory AssignAliasResponse.fromJson(Map<String, dynamic> json) => AssignAliasResponse(
+    alias: (json['alias'] as String?)!,
+    created: (json['created'] as String?)!,
+    oldDeploymentId: json.containsKey('oldDeploymentId') ? SdkPresent(json['oldDeploymentId'] as String?) : const SdkOmitted(),
+    uid: (json['uid'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'alias': alias,
-        'created': created,
-        ...switch (oldDeploymentId) {
-          SdkPresent<String?>(value: final value) => {
-              'oldDeploymentId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'uid': uid,
-      };
+    'alias': alias,
+    'created': created,
+    ...switch (oldDeploymentId) {
+      SdkPresent<String?>(value: final value) => {'oldDeploymentId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'uid': uid,
+  };
 }
 
 /// Information of the user who created the alias
 class ListAliasesResponseAliasesItemCreator {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Email of the user who created the alias
   final SdkOptional<String> email;
-
   /// ID of the user who created the alias
   final String uid;
-
   /// Username of the user who created the alias
   final SdkOptional<String> username;
 
-  const ListAliasesResponseAliasesItemCreator(
-      {this.email = const SdkOmitted(),
-      required this.uid,
-      this.username = const SdkOmitted()});
+  const ListAliasesResponseAliasesItemCreator({this.email = const SdkOmitted(), required this.uid, this.username = const SdkOmitted()});
 
-  ListAliasesResponseAliasesItemCreator Function(
-      {SdkOptional<String> email,
-      String uid,
-      SdkOptional<String> username}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemCreator Function({SdkOptional<String> email, String uid, SdkOptional<String> username}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemCreator _copyWith(
-          {Object? email = sdkOmittedValue,
-          Object? uid = sdkOmittedValue,
-          Object? username = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemCreator(
-        email: identical(email, sdkOmittedValue)
-            ? this.email
-            : email as SdkOptional<String>,
-        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as SdkOptional<String>,
-      );
+  ListAliasesResponseAliasesItemCreator _copyWith({Object? email = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? username = sdkOmittedValue}) => ListAliasesResponseAliasesItemCreator(
+    email: identical(email, sdkOmittedValue) ? this.email : email as SdkOptional<String>,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
+  );
 
-  factory ListAliasesResponseAliasesItemCreator.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemCreator(
-        email: json['email'] != null
-            ? SdkPresent((json['email'] as String?)!)
-            : const SdkOmitted(),
-        uid: (json['uid'] as String?)!,
-        username: json['username'] != null
-            ? SdkPresent((json['username'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ListAliasesResponseAliasesItemCreator.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemCreator(
+    email: json['email'] != null ? SdkPresent((json['email'] as String?)!) : const SdkOmitted(),
+    uid: (json['uid'] as String?)!,
+    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (email) {
-          SdkPresent<String>(value: final value) => {
-              'email': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'uid': uid,
-        ...switch (username) {
-          SdkPresent<String>(value: final value) => {
-              'username': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (email) {
+      SdkPresent<String>(value: final value) => {'email': value,},
+      _ => const <String, dynamic>{},
+    },
+    'uid': uid,
+    ...switch (username) {
+      SdkPresent<String>(value: final value) => {'username': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// A map with the deployment ID, URL and metadata
 class ListAliasesResponseAliasesItemDeployment {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The deployment unique identifier
   final String id;
-
   /// The deployment metadata
   final SdkOptional<String> meta;
-
   /// The deployment unique URL
   final SdkOptional<String> url;
 
-  const ListAliasesResponseAliasesItemDeployment(
-      {required this.id,
-      this.meta = const SdkOmitted(),
-      this.url = const SdkOmitted()});
+  const ListAliasesResponseAliasesItemDeployment({required this.id, this.meta = const SdkOmitted(), this.url = const SdkOmitted()});
 
-  ListAliasesResponseAliasesItemDeployment Function(
-      {String id,
-      SdkOptional<String> meta,
-      SdkOptional<String> url}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemDeployment Function({String id, SdkOptional<String> meta, SdkOptional<String> url}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemDeployment _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? meta = sdkOmittedValue,
-          Object? url = sdkOmittedValue}) =>
-      ListAliasesResponseAliasesItemDeployment(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        meta: identical(meta, sdkOmittedValue)
-            ? this.meta
-            : meta as SdkOptional<String>,
-        url: identical(url, sdkOmittedValue)
-            ? this.url
-            : url as SdkOptional<String>,
-      );
+  ListAliasesResponseAliasesItemDeployment _copyWith({Object? id = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? url = sdkOmittedValue}) => ListAliasesResponseAliasesItemDeployment(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as SdkOptional<String>,
+    url: identical(url, sdkOmittedValue) ? this.url : url as SdkOptional<String>,
+  );
 
-  factory ListAliasesResponseAliasesItemDeployment.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemDeployment(
-        id: (json['id'] as String?)!,
-        meta: json['meta'] != null
-            ? SdkPresent((json['meta'] as String?)!)
-            : const SdkOmitted(),
-        url: json['url'] != null
-            ? SdkPresent((json['url'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ListAliasesResponseAliasesItemDeployment.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemDeployment(
+    id: (json['id'] as String?)!,
+    meta: json['meta'] != null ? SdkPresent((json['meta'] as String?)!) : const SdkOmitted(),
+    url: json['url'] != null ? SdkPresent((json['url'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (meta) {
-          SdkPresent<String>(value: final value) => {
-              'meta': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (url) {
-          SdkPresent<String>(value: final value) => {
-              'url': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'id': id,
+    ...switch (meta) {
+      SdkPresent<String>(value: final value) => {'meta': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (url) {
+      SdkPresent<String>(value: final value) => {'url': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// A list of the deployment routing information for each project.
 class ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// This is always set. In production it is used as a pointer to each apps production deployment. For pre-production, it's used as the fallback if there is no deployment for the branch.
   final String fallbackHost;
-
   /// The project ID of the microfrontends application.
   final String projectId;
 
-  const ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item(
-      {required this.fallbackHost, required this.projectId});
+  const ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item({required this.fallbackHost, required this.projectId});
 
-  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item Function(
-      {String fallbackHost, String projectId}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item Function({String fallbackHost, String projectId}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item
-      _copyWith(
-              {Object? fallbackHost = sdkOmittedValue,
-              Object? projectId = sdkOmittedValue}) =>
-          ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item(
-            fallbackHost: identical(fallbackHost, sdkOmittedValue)
-                ? this.fallbackHost
-                : fallbackHost as String,
-            projectId: identical(projectId, sdkOmittedValue)
-                ? this.projectId
-                : projectId as String,
-          );
+  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item _copyWith({Object? fallbackHost = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item(
+    fallbackHost: identical(fallbackHost, sdkOmittedValue) ? this.fallbackHost : fallbackHost as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+  );
 
-  factory ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item(
-        fallbackHost: (json['fallbackHost'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-      );
+  factory ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant0Item(
+    fallbackHost: (json['fallbackHost'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'fallbackHost': fallbackHost,
-        'projectId': projectId,
-      };
+    'fallbackHost': fallbackHost,
+    'projectId': projectId,
+  };
 }
 
 /// A list of the deployment routing information for each project.
 class ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Could point to a branch without a deployment if the project was never deployed. The proxy will fallback to the fallbackHost if there is no deployment.
   final String branchAlias;
-
   /// This is always set. For branch aliases, it's used as the fallback if there is no deployment for the branch.
   final String fallbackHost;
-
   /// The project ID of the microfrontends application.
   final String projectId;
 
-  const ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item(
-      {required this.branchAlias,
-      required this.fallbackHost,
-      required this.projectId});
+  const ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item({required this.branchAlias, required this.fallbackHost, required this.projectId});
 
-  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item Function(
-      {String branchAlias,
-      String fallbackHost,
-      String projectId}) get copyWith => _copyWith;
+  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item Function({String branchAlias, String fallbackHost, String projectId}) get copyWith => _copyWith;
 
-  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item
-      _copyWith(
-              {Object? branchAlias = sdkOmittedValue,
-              Object? fallbackHost = sdkOmittedValue,
-              Object? projectId = sdkOmittedValue}) =>
-          ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item(
-            branchAlias: identical(branchAlias, sdkOmittedValue)
-                ? this.branchAlias
-                : branchAlias as String,
-            fallbackHost: identical(fallbackHost, sdkOmittedValue)
-                ? this.fallbackHost
-                : fallbackHost as String,
-            projectId: identical(projectId, sdkOmittedValue)
-                ? this.projectId
-                : projectId as String,
-          );
+  ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item _copyWith({Object? branchAlias = sdkOmittedValue, Object? fallbackHost = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item(
+    branchAlias: identical(branchAlias, sdkOmittedValue) ? this.branchAlias : branchAlias as String,
+    fallbackHost: identical(fallbackHost, sdkOmittedValue) ? this.fallbackHost : fallbackHost as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+  );
 
-  factory ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item.fromJson(
-          Map<String, dynamic> json) =>
-      ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item(
-        branchAlias: (json['branchAlias'] as String?)!,
-        fallbackHost: (json['fallbackHost'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-      );
+  factory ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item.fromJson(Map<String, dynamic> json) => ListAliasesResponseAliasesItemMicrofrontendsApplicationsVariant1Item(
+    branchAlias: (json['branchAlias'] as String?)!,
+    fallbackHost: (json['fallbackHost'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'branchAlias': branchAlias,
-        'fallbackHost': fallbackHost,
-        'projectId': projectId,
-      };
+    'branchAlias': branchAlias,
+    'fallbackHost': fallbackHost,
+    'projectId': projectId,
+  };
 }

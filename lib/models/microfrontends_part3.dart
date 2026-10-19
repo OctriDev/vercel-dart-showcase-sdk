@@ -9,60 +9,33 @@ class GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItem
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String org;
-  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
-      provider;
+  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider provider;
   final SdkOptional<String> repo;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-      {required this.org,
-      required this.provider,
-      this.repo = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0({required this.org, required this.provider, this.repo = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0 Function(
-      {String org,
-      GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
-          provider,
-      SdkOptional<String> repo}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0 Function({String org, GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider provider, SdkOptional<String> repo}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0
-      _copyWith(
-              {Object? org = sdkOmittedValue,
-              Object? provider = sdkOmittedValue,
-              Object? repo = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-            org: identical(org, sdkOmittedValue) ? this.org : org as String,
-            provider: identical(provider, sdkOmittedValue)
-                ? this.provider
-                : provider
-                    as GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider,
-            repo: identical(repo, sdkOmittedValue)
-                ? this.repo
-                : repo as SdkOptional<String>,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0 _copyWith({Object? org = sdkOmittedValue, Object? provider = sdkOmittedValue, Object? repo = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-        org: (json['org'] as String?)!,
-        provider: (json['provider'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
-                .fromJson(json['provider'] as String)
-            : null)!,
-        repo: json['repo'] != null
-            ? SdkPresent((json['repo'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+    org: (json['org'] as String?)!,
+    provider: (json['provider'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(json['provider'] as String) : null)!,
+    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'org': org,
-        'provider': provider.toJson(),
-        ...switch (repo) {
-          SdkPresent<String>(value: final value) => {
-              'repo': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'org': org,
+    'provider': provider.toJson(),
+    ...switch (repo) {
+      SdkPresent<String>(value: final value) => {'repo': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively.
@@ -71,229 +44,122 @@ class GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItem
   static const String constructionSurface = 'named';
   final String namespace;
   final SdkOptional<String> project;
-  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
-      provider;
+  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider provider;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-      {required this.namespace,
-      this.project = const SdkOmitted(),
-      required this.provider});
+  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1({required this.namespace, this.project = const SdkOmitted(), required this.provider});
 
-  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1 Function(
-      {String namespace,
-      SdkOptional<String> project,
-      GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
-          provider}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1 Function({String namespace, SdkOptional<String> project, GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider provider}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1
-      _copyWith(
-              {Object? namespace = sdkOmittedValue,
-              Object? project = sdkOmittedValue,
-              Object? provider = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-            namespace: identical(namespace, sdkOmittedValue)
-                ? this.namespace
-                : namespace as String,
-            project: identical(project, sdkOmittedValue)
-                ? this.project
-                : project as SdkOptional<String>,
-            provider: identical(provider, sdkOmittedValue)
-                ? this.provider
-                : provider
-                    as GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1 _copyWith({Object? namespace = sdkOmittedValue, Object? project = sdkOmittedValue, Object? provider = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+    namespace: identical(namespace, sdkOmittedValue) ? this.namespace : namespace as String,
+    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<String>,
+    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-        namespace: (json['namespace'] as String?)!,
-        project: json['project'] != null
-            ? SdkPresent((json['project'] as String?)!)
-            : const SdkOmitted(),
-        provider: (json['provider'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
-                .fromJson(json['provider'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+    namespace: (json['namespace'] as String?)!,
+    project: json['project'] != null ? SdkPresent((json['project'] as String?)!) : const SdkOmitted(),
+    provider: (json['provider'] != null ? GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(json['provider'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'namespace': namespace,
-        ...switch (project) {
-          SdkPresent<String>(value: final value) => {
-              'project': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'provider': provider.toJson(),
-      };
+    'namespace': namespace,
+    ...switch (project) {
+      SdkPresent<String>(value: final value) => {'project': value,},
+      _ => const <String, dynamic>{},
+    },
+    'provider': provider.toJson(),
+  };
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem();
-  factory GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem.fromJson(
-      Object? json) {
+  factory GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1
-                .fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(value); } } catch (_) {}
+      try { final value = GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(value); } } catch (_) {}
     }
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-          GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-          GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem");
+    try { return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0
-    extends GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem {
-  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0 extends GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem {
+  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1
-    extends GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem {
-  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1 extends GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItem {
+  final GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemGetMicrofrontendsInGroupResponseProjectsItemDeploymentPolicyGitSourcesItemSourcesItemVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue();
-  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueString(
-          json);
-    }
-    if (json is num) {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueDouble(
-          json.toDouble());
-    }
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2(
-          GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue");
+  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue.fromJson(Object? json) {
+    if (json is String) { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueString(json); }
+    if (json is num) { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueDouble(json.toDouble()); }
+    try { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2(GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueString
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue {
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueString extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue {
   final String value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueDouble
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue {
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueDouble extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue {
   final double value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueDouble(this.value);
+  @override Object? toJson() => value;
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue {
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2 extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValue {
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2CurrentValueVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue();
-  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueString(
-          json);
-    }
-    if (json is num) {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueDouble(
-          json.toDouble());
-    }
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2(
-          GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue");
+  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue.fromJson(Object? json) {
+    if (json is String) { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueString(json); }
+    if (json is num) { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueDouble(json.toDouble()); }
+    try { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2(GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueString
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue {
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueString extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue {
   final String value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueDouble
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue {
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueDouble extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue {
   final double value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueDouble(this.value);
+  @override Object? toJson() => value;
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue {
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2 extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValue {
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2PreviousValueVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2 {
@@ -302,193 +168,112 @@ class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVarian
   final dynamic currentValue;
   final dynamic previousValue;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(
-      {required this.currentValue, required this.previousValue});
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2({required this.currentValue, required this.previousValue});
 
-  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2
-          Function({dynamic currentValue, dynamic previousValue})
-      get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2 Function({dynamic currentValue, dynamic previousValue}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2
-      _copyWith(
-              {Object? currentValue = sdkOmittedValue,
-              Object? previousValue = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(
-            currentValue: identical(currentValue, sdkOmittedValue)
-                ? this.currentValue
-                : currentValue as dynamic,
-            previousValue: identical(previousValue, sdkOmittedValue)
-                ? this.previousValue
-                : previousValue as dynamic,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2 _copyWith({Object? currentValue = sdkOmittedValue, Object? previousValue = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(
+    currentValue: identical(currentValue, sdkOmittedValue) ? this.currentValue : currentValue as dynamic,
+    previousValue: identical(previousValue, sdkOmittedValue) ? this.previousValue : previousValue as dynamic,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(
-        currentValue: (json['currentValue'])!,
-        previousValue: (json['previousValue'])!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(
+    currentValue: (json['currentValue'])!,
+    previousValue: (json['previousValue'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'currentValue': currentValue,
-        'previousValue': previousValue,
-      };
+    'currentValue': currentValue,
+    'previousValue': previousValue,
+  };
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue();
-  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue.fromJson(
-      Object? json) {
-    if (json is String) {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueString(
-          json);
-    }
-    if (json is num) {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueDouble(
-          json.toDouble());
-    }
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(
-          GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3(
-          GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue");
+  factory GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue.fromJson(Object? json) {
+    if (json is String) { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueString(json); }
+    if (json is num) { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueDouble(json.toDouble()); }
+    try { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3(GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueString
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueString extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
   final String value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueString(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueString(this.value);
+  @override Object? toJson() => value;
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueDouble
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueDouble extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
   final double value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueDouble(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueDouble(this.value);
+  @override Object? toJson() => value;
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2 extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3
-    extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
-  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3
-      value;
-  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3 extends GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValue {
+  final GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3 value;
+  const GetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueGetMicrofrontendsInGroupResponseProjectsItemDismissedToastsItemValueVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type
-      type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
-      {required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0({required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 Function(
-      {String storeId,
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type
-          type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0
-      _copyWith(
-              {Object? storeId = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
-            storeId: identical(storeId, sdkOmittedValue)
-                ? this.storeId
-                : storeId as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String storeId;
-  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type
-      type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type type_;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
-      {required this.storeId, required this.type_});
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1({required this.storeId, required this.type_});
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 Function(
-      {String storeId,
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type
-          type_}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 Function({String storeId, GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type type_}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1
-      _copyWith(
-              {Object? storeId = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
-            storeId: identical(storeId, sdkOmittedValue)
-                ? this.storeId
-                : storeId as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
-        storeId: (json['storeId'] as String?)!,
-        type_: (json['type'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1(
+    storeId: (json['storeId'] as String?)!,
+    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemEnvItemContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeId': storeId,
-        'type': type_.toJson(),
-      };
+    'storeId': storeId,
+    'type': type_.toJson(),
+  };
 }

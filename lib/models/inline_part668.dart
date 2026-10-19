@@ -11,82 +11,55 @@ class CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base {
   final String kind;
   final String attribute;
 
-  const CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base(
-      {required this.type_, required this.kind, required this.attribute});
+  const CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base({required this.type_, required this.kind, required this.attribute});
 
-  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base Function(
-      {dynamic type_, String kind, String attribute}) get copyWith => _copyWith;
+  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base Function({dynamic type_, String kind, String attribute}) get copyWith => _copyWith;
 
-  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? attribute = sdkOmittedValue}) =>
-      CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        attribute: identical(attribute, sdkOmittedValue)
-            ? this.attribute
-            : attribute as String,
-      );
+  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base _copyWith({Object? type_ = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? attribute = sdkOmittedValue}) => CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+  );
 
-  factory CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-        kind: (json['kind'] as String?)!,
-        attribute: (json['attribute'] as String?)!,
-      );
+  factory CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base.fromJson(Map<String, dynamic> json) => CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+    kind: (json['kind'] as String?)!,
+    attribute: (json['attribute'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-        'kind': kind,
-        'attribute': attribute,
-      };
+    'type': type_,
+    'kind': kind,
+    'attribute': attribute,
+  };
 }
 
 class CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Promille of traffic for rollToVariant (0-100_000, where 1_000 = 1%)
   final double promille;
-
   /// How long this promille is served in ms before moving to the next slot.
   final double durationMs;
 
-  const CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem(
-      {required this.promille, required this.durationMs});
+  const CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem({required this.promille, required this.durationMs});
 
-  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem Function(
-      {double promille, double durationMs}) get copyWith => _copyWith;
+  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem Function({double promille, double durationMs}) get copyWith => _copyWith;
 
-  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem _copyWith(
-          {Object? promille = sdkOmittedValue,
-          Object? durationMs = sdkOmittedValue}) =>
-      CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem(
-        promille: identical(promille, sdkOmittedValue)
-            ? this.promille
-            : promille as double,
-        durationMs: identical(durationMs, sdkOmittedValue)
-            ? this.durationMs
-            : durationMs as double,
-      );
+  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem _copyWith({Object? promille = sdkOmittedValue, Object? durationMs = sdkOmittedValue}) => CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem(
+    promille: identical(promille, sdkOmittedValue) ? this.promille : promille as double,
+    durationMs: identical(durationMs, sdkOmittedValue) ? this.durationMs : durationMs as double,
+  );
 
-  factory CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem(
-        promille: ((json['promille'] as num?)?.toDouble())!,
-        durationMs: ((json['durationMs'] as num?)?.toDouble())!,
-      );
+  factory CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem.fromJson(Map<String, dynamic> json) => CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem(
+    promille: ((json['promille'] as num?)?.toDouble())!,
+    durationMs: ((json['durationMs'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'promille': promille,
-        'durationMs': durationMs,
-      };
+    'promille': promille,
+    'durationMs': durationMs,
+  };
 }
 
 class CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2 {
@@ -94,498 +67,204 @@ class CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2 {
   static const String constructionSurface = 'named';
   final dynamic type_;
   final CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base base_;
-
   /// Epoch ms when the rollout begins
   final double startTimestamp;
-
   /// The variant to roll away from
   final String rollFromVariantId;
-
   /// The variant to roll towards
   final String rollToVariantId;
-
   /// This variant will be used when the base attribute does not exist
   final String defaultVariantId;
-
   /// Each slot defines a promille and how long it is served for. After all slots expire, finalPromille is served indefinitely (100% when omitted). The final percentage does not need its own slot.
-  final List<CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem>
-      slots;
-
+  final List<CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem> slots;
   /// Traffic for rollToVariant after all slots expire (0-100_000, where 1_000 = 1%). Defaults to 100_000 (100%). Set 50_000 to end at 50%.
   final SdkOptional<double> finalPromille;
 
-  const CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2(
-      {required this.type_,
-      required this.base_,
-      required this.startTimestamp,
-      required this.rollFromVariantId,
-      required this.rollToVariantId,
-      required this.defaultVariantId,
-      required this.slots,
-      this.finalPromille = const SdkOmitted()});
+  const CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2({required this.type_, required this.base_, required this.startTimestamp, required this.rollFromVariantId, required this.rollToVariantId, required this.defaultVariantId, required this.slots, this.finalPromille = const SdkOmitted()});
 
-  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2 Function(
-      {dynamic type_,
-      CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base base_,
-      double startTimestamp,
-      String rollFromVariantId,
-      String rollToVariantId,
-      String defaultVariantId,
-      List<CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem>
-          slots,
-      SdkOptional<double> finalPromille}) get copyWith => _copyWith;
+  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2 Function({dynamic type_, CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base base_, double startTimestamp, String rollFromVariantId, String rollToVariantId, String defaultVariantId, List<CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem> slots, SdkOptional<double> finalPromille}) get copyWith => _copyWith;
 
-  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? base_ = sdkOmittedValue,
-          Object? startTimestamp = sdkOmittedValue,
-          Object? rollFromVariantId = sdkOmittedValue,
-          Object? rollToVariantId = sdkOmittedValue,
-          Object? defaultVariantId = sdkOmittedValue,
-          Object? slots = sdkOmittedValue,
-          Object? finalPromille = sdkOmittedValue}) =>
-      CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-        base_: identical(base_, sdkOmittedValue)
-            ? this.base_
-            : base_
-                as CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base,
-        startTimestamp: identical(startTimestamp, sdkOmittedValue)
-            ? this.startTimestamp
-            : startTimestamp as double,
-        rollFromVariantId: identical(rollFromVariantId, sdkOmittedValue)
-            ? this.rollFromVariantId
-            : rollFromVariantId as String,
-        rollToVariantId: identical(rollToVariantId, sdkOmittedValue)
-            ? this.rollToVariantId
-            : rollToVariantId as String,
-        defaultVariantId: identical(defaultVariantId, sdkOmittedValue)
-            ? this.defaultVariantId
-            : defaultVariantId as String,
-        slots: identical(slots, sdkOmittedValue)
-            ? this.slots
-            : slots as List<
-                CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem>,
-        finalPromille: identical(finalPromille, sdkOmittedValue)
-            ? this.finalPromille
-            : finalPromille as SdkOptional<double>,
-      );
+  CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2 _copyWith({Object? type_ = sdkOmittedValue, Object? base_ = sdkOmittedValue, Object? startTimestamp = sdkOmittedValue, Object? rollFromVariantId = sdkOmittedValue, Object? rollToVariantId = sdkOmittedValue, Object? defaultVariantId = sdkOmittedValue, Object? slots = sdkOmittedValue, Object? finalPromille = sdkOmittedValue}) => CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+    base_: identical(base_, sdkOmittedValue) ? this.base_ : base_ as CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base,
+    startTimestamp: identical(startTimestamp, sdkOmittedValue) ? this.startTimestamp : startTimestamp as double,
+    rollFromVariantId: identical(rollFromVariantId, sdkOmittedValue) ? this.rollFromVariantId : rollFromVariantId as String,
+    rollToVariantId: identical(rollToVariantId, sdkOmittedValue) ? this.rollToVariantId : rollToVariantId as String,
+    defaultVariantId: identical(defaultVariantId, sdkOmittedValue) ? this.defaultVariantId : defaultVariantId as String,
+    slots: identical(slots, sdkOmittedValue) ? this.slots : slots as List<CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem>,
+    finalPromille: identical(finalPromille, sdkOmittedValue) ? this.finalPromille : finalPromille as SdkOptional<double>,
+  );
 
-  factory CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-        base_: (json['base'] != null
-            ? CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base
-                .fromJson(json['base'] as Map<String, dynamic>)
-            : null)!,
-        startTimestamp: ((json['startTimestamp'] as num?)?.toDouble())!,
-        rollFromVariantId: (json['rollFromVariantId'] as String?)!,
-        rollToVariantId: (json['rollToVariantId'] as String?)!,
-        defaultVariantId: (json['defaultVariantId'] as String?)!,
-        slots: ((json['slots'] as List?)
-            ?.map((e) =>
-                CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        finalPromille: json['finalPromille'] != null
-            ? SdkPresent(((json['finalPromille'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2.fromJson(Map<String, dynamic> json) => CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+    base_: (json['base'] != null ? CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2Base.fromJson(json['base'] as Map<String, dynamic>) : null)!,
+    startTimestamp: ((json['startTimestamp'] as num?)?.toDouble())!,
+    rollFromVariantId: (json['rollFromVariantId'] as String?)!,
+    rollToVariantId: (json['rollToVariantId'] as String?)!,
+    defaultVariantId: (json['defaultVariantId'] as String?)!,
+    slots: ((json['slots'] as List?)?.map((e) => CreateFlagRequestBodyEnvironmentsValueFallthroughVariant2SlotsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    finalPromille: json['finalPromille'] != null ? SdkPresent(((json['finalPromille'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-        'base': base_.toJson(),
-        'startTimestamp': startTimestamp,
-        'rollFromVariantId': rollFromVariantId,
-        'rollToVariantId': rollToVariantId,
-        'defaultVariantId': defaultVariantId,
-        'slots': slots.map((item) => item.toJson()).toList(),
-        ...switch (finalPromille) {
-          SdkPresent<double>(value: final value) => {
-              'finalPromille': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'type': type_,
+    'base': base_.toJson(),
+    'startTimestamp': startTimestamp,
+    'rollFromVariantId': rollFromVariantId,
+    'rollToVariantId': rollToVariantId,
+    'defaultVariantId': defaultVariantId,
+    'slots': slots.map((item) => item.toJson()).toList(),
+    ...switch (finalPromille) {
+      SdkPresent<double>(value: final value) => {'finalPromille': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateFlagRequestBodyEnvironmentsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final bool active;
-
   /// Allows linking this environment to another environment so this flag will be evaluated with the other flag's configuration
   final SdkOptional<CreateFlagRequestBodyEnvironmentsValueReuse> reuse;
-
   /// Allows assigning targets to variants while bypassing the flag's rules
-  final SdkOptional<
-          Map<
-              String,
-              Map<
-                  String,
-                  Map<
-                      String,
-                      List<
-                          CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>>
-      targets;
+  final SdkOptional<Map<String, Map<String, Map<String, List<CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>> targets;
   final CreateFlagRequestBodyEnvironmentsValuePausedOutcome pausedOutcome;
   final List<CreateFlagRequestBodyEnvironmentsValueRulesItem> rules;
   final dynamic fallthrough;
-
   /// The revision of the environment config
   final SdkOptional<double> revision;
 
-  const CreateFlagRequestBodyEnvironmentsValue(
-      {required this.active,
-      this.reuse = const SdkOmitted(),
-      this.targets = const SdkOmitted(),
-      required this.pausedOutcome,
-      required this.rules,
-      required this.fallthrough,
-      this.revision = const SdkOmitted()});
+  const CreateFlagRequestBodyEnvironmentsValue({required this.active, this.reuse = const SdkOmitted(), this.targets = const SdkOmitted(), required this.pausedOutcome, required this.rules, required this.fallthrough, this.revision = const SdkOmitted()});
 
-  CreateFlagRequestBodyEnvironmentsValue Function(
-      {bool active,
-      SdkOptional<CreateFlagRequestBodyEnvironmentsValueReuse> reuse,
-      SdkOptional<
-              Map<
-                  String,
-                  Map<
-                      String,
-                      Map<
-                          String,
-                          List<
-                              CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>>
-          targets,
-      CreateFlagRequestBodyEnvironmentsValuePausedOutcome pausedOutcome,
-      List<CreateFlagRequestBodyEnvironmentsValueRulesItem> rules,
-      dynamic fallthrough,
-      SdkOptional<double> revision}) get copyWith => _copyWith;
+  CreateFlagRequestBodyEnvironmentsValue Function({bool active, SdkOptional<CreateFlagRequestBodyEnvironmentsValueReuse> reuse, SdkOptional<Map<String, Map<String, Map<String, List<CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>> targets, CreateFlagRequestBodyEnvironmentsValuePausedOutcome pausedOutcome, List<CreateFlagRequestBodyEnvironmentsValueRulesItem> rules, dynamic fallthrough, SdkOptional<double> revision}) get copyWith => _copyWith;
 
-  CreateFlagRequestBodyEnvironmentsValue _copyWith(
-          {Object? active = sdkOmittedValue,
-          Object? reuse = sdkOmittedValue,
-          Object? targets = sdkOmittedValue,
-          Object? pausedOutcome = sdkOmittedValue,
-          Object? rules = sdkOmittedValue,
-          Object? fallthrough = sdkOmittedValue,
-          Object? revision = sdkOmittedValue}) =>
-      CreateFlagRequestBodyEnvironmentsValue(
-        active:
-            identical(active, sdkOmittedValue) ? this.active : active as bool,
-        reuse: identical(reuse, sdkOmittedValue)
-            ? this.reuse
-            : reuse as SdkOptional<CreateFlagRequestBodyEnvironmentsValueReuse>,
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as SdkOptional<
-                Map<
-                    String,
-                    Map<
-                        String,
-                        Map<
-                            String,
-                            List<
-                                CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>>,
-        pausedOutcome: identical(pausedOutcome, sdkOmittedValue)
-            ? this.pausedOutcome
-            : pausedOutcome
-                as CreateFlagRequestBodyEnvironmentsValuePausedOutcome,
-        rules: identical(rules, sdkOmittedValue)
-            ? this.rules
-            : rules as List<CreateFlagRequestBodyEnvironmentsValueRulesItem>,
-        fallthrough: identical(fallthrough, sdkOmittedValue)
-            ? this.fallthrough
-            : fallthrough as dynamic,
-        revision: identical(revision, sdkOmittedValue)
-            ? this.revision
-            : revision as SdkOptional<double>,
-      );
+  CreateFlagRequestBodyEnvironmentsValue _copyWith({Object? active = sdkOmittedValue, Object? reuse = sdkOmittedValue, Object? targets = sdkOmittedValue, Object? pausedOutcome = sdkOmittedValue, Object? rules = sdkOmittedValue, Object? fallthrough = sdkOmittedValue, Object? revision = sdkOmittedValue}) => CreateFlagRequestBodyEnvironmentsValue(
+    active: identical(active, sdkOmittedValue) ? this.active : active as bool,
+    reuse: identical(reuse, sdkOmittedValue) ? this.reuse : reuse as SdkOptional<CreateFlagRequestBodyEnvironmentsValueReuse>,
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as SdkOptional<Map<String, Map<String, Map<String, List<CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>>,
+    pausedOutcome: identical(pausedOutcome, sdkOmittedValue) ? this.pausedOutcome : pausedOutcome as CreateFlagRequestBodyEnvironmentsValuePausedOutcome,
+    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as List<CreateFlagRequestBodyEnvironmentsValueRulesItem>,
+    fallthrough: identical(fallthrough, sdkOmittedValue) ? this.fallthrough : fallthrough as dynamic,
+    revision: identical(revision, sdkOmittedValue) ? this.revision : revision as SdkOptional<double>,
+  );
 
-  factory CreateFlagRequestBodyEnvironmentsValue.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagRequestBodyEnvironmentsValue(
-        active: (json['active'] as bool?)!,
-        reuse: json['reuse'] != null
-            ? SdkPresent((json['reuse'] != null
-                ? CreateFlagRequestBodyEnvironmentsValueReuse.fromJson(
-                    json['reuse'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        targets: json['targets'] != null
-            ? SdkPresent((json['targets'] == null
-                ? null
-                : Map<String, dynamic>.from(json['targets'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(
-                            key,
-                            Map<String, dynamic>.from(value as Map).map(
-                                (key, value) => MapEntry(
-                                    key,
-                                    (value as List)
-                                        .map((item) => CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem.fromJson(item as Map<String, dynamic>))
-                                        .toList())))))))!)
-            : const SdkOmitted(),
-        pausedOutcome: (json['pausedOutcome'] != null
-            ? CreateFlagRequestBodyEnvironmentsValuePausedOutcome.fromJson(
-                json['pausedOutcome'] as Map<String, dynamic>)
-            : null)!,
-        rules: ((json['rules'] as List?)
-            ?.map((e) =>
-                CreateFlagRequestBodyEnvironmentsValueRulesItem.fromJson(
-                    e as Map<String, dynamic>))
-            .toList())!,
-        fallthrough: (json['fallthrough'])!,
-        revision: json['revision'] != null
-            ? SdkPresent(((json['revision'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-      );
+  factory CreateFlagRequestBodyEnvironmentsValue.fromJson(Map<String, dynamic> json) => CreateFlagRequestBodyEnvironmentsValue(
+    active: (json['active'] as bool?)!,
+    reuse: json['reuse'] != null ? SdkPresent((json['reuse'] != null ? CreateFlagRequestBodyEnvironmentsValueReuse.fromJson(json['reuse'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    targets: json['targets'] != null ? SdkPresent((json['targets'] == null ? null : Map<String, dynamic>.from(json['targets'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))))!) : const SdkOmitted(),
+    pausedOutcome: (json['pausedOutcome'] != null ? CreateFlagRequestBodyEnvironmentsValuePausedOutcome.fromJson(json['pausedOutcome'] as Map<String, dynamic>) : null)!,
+    rules: ((json['rules'] as List?)?.map((e) => CreateFlagRequestBodyEnvironmentsValueRulesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    fallthrough: (json['fallthrough'])!,
+    revision: json['revision'] != null ? SdkPresent(((json['revision'] as num?)?.toDouble())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'active': active,
-        ...switch (reuse) {
-          SdkPresent<CreateFlagRequestBodyEnvironmentsValueReuse>(
-            value: final value
-          ) =>
-            {
-              'reuse': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (targets) {
-          SdkPresent<
-                Map<
-                    String,
-                    Map<
-                        String,
-                        Map<
-                            String,
-                            List<
-                                CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>>(
-            value: final value
-          ) =>
-            {
-              'targets': value.map((key, value) => MapEntry(
-                  key,
-                  value.map((key, value) => MapEntry(
-                      key,
-                      value.map((key, value) => MapEntry(key,
-                          value.map((item) => item.toJson()).toList())))))),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'pausedOutcome': pausedOutcome.toJson(),
-        'rules': rules.map((item) => item.toJson()).toList(),
-        'fallthrough': fallthrough,
-        ...switch (revision) {
-          SdkPresent<double>(value: final value) => {
-              'revision': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'active': active,
+    ...switch (reuse) {
+      SdkPresent<CreateFlagRequestBodyEnvironmentsValueReuse>(value: final value) => {'reuse': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (targets) {
+      SdkPresent<Map<String, Map<String, Map<String, List<CreateFlagRequestBodyEnvironmentsValueTargetsValueValueValueItem>>>>>(value: final value) => {'targets': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))))),},
+      _ => const <String, dynamic>{},
+    },
+    'pausedOutcome': pausedOutcome.toJson(),
+    'rules': rules.map((item) => item.toJson()).toList(),
+    'fallthrough': fallthrough,
+    ...switch (revision) {
+      SdkPresent<double>(value: final value) => {'revision': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateFlagRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A unique (per project) key for the flag, composed of letters, numbers, dashes, and underscores
   final String slug;
-
   /// The kind of flag
   final CreateFlagRequestBodyKind kind;
-
   /// The variants of the flag
   final SdkOptional<List<CreateFlagRequestBodyVariantsItem>> variants;
-
   /// The configuration for the flag in different environments
   final Map<String, CreateFlagRequestBodyEnvironmentsValue> environments;
-
   /// A random seed to prevent split points in different flags from having the same targets
   final SdkOptional<double> seed;
-
   /// A description of the flag
   final SdkOptional<String> description;
   final SdkOptional<CreateFlagRequestBodyState> state;
-
   /// The user ids of the maintainers of the flag
   final SdkOptional<List<String>> maintainerIds;
-
   /// Whether this flag is marked as permanent, indicating it should not be removed
   final SdkOptional<bool> permanent;
-
   /// Tags for categorizing the flag
   final SdkOptional<List<String>> tags;
 
-  const CreateFlagRequestBody(
-      {required this.slug,
-      required this.kind,
-      this.variants = const SdkOmitted(),
-      required this.environments,
-      this.seed = const SdkOmitted(),
-      this.description = const SdkOmitted(),
-      this.state = const SdkOmitted(),
-      this.maintainerIds = const SdkOmitted(),
-      this.permanent = const SdkOmitted(),
-      this.tags = const SdkOmitted()});
+  const CreateFlagRequestBody({required this.slug, required this.kind, this.variants = const SdkOmitted(), required this.environments, this.seed = const SdkOmitted(), this.description = const SdkOmitted(), this.state = const SdkOmitted(), this.maintainerIds = const SdkOmitted(), this.permanent = const SdkOmitted(), this.tags = const SdkOmitted()});
 
-  CreateFlagRequestBody Function(
-      {String slug,
-      CreateFlagRequestBodyKind kind,
-      SdkOptional<List<CreateFlagRequestBodyVariantsItem>> variants,
-      Map<String, CreateFlagRequestBodyEnvironmentsValue> environments,
-      SdkOptional<double> seed,
-      SdkOptional<String> description,
-      SdkOptional<CreateFlagRequestBodyState> state,
-      SdkOptional<List<String>> maintainerIds,
-      SdkOptional<bool> permanent,
-      SdkOptional<List<String>> tags}) get copyWith => _copyWith;
+  CreateFlagRequestBody Function({String slug, CreateFlagRequestBodyKind kind, SdkOptional<List<CreateFlagRequestBodyVariantsItem>> variants, Map<String, CreateFlagRequestBodyEnvironmentsValue> environments, SdkOptional<double> seed, SdkOptional<String> description, SdkOptional<CreateFlagRequestBodyState> state, SdkOptional<List<String>> maintainerIds, SdkOptional<bool> permanent, SdkOptional<List<String>> tags}) get copyWith => _copyWith;
 
-  CreateFlagRequestBody _copyWith(
-          {Object? slug = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? variants = sdkOmittedValue,
-          Object? environments = sdkOmittedValue,
-          Object? seed = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? state = sdkOmittedValue,
-          Object? maintainerIds = sdkOmittedValue,
-          Object? permanent = sdkOmittedValue,
-          Object? tags = sdkOmittedValue}) =>
-      CreateFlagRequestBody(
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as CreateFlagRequestBodyKind,
-        variants: identical(variants, sdkOmittedValue)
-            ? this.variants
-            : variants as SdkOptional<List<CreateFlagRequestBodyVariantsItem>>,
-        environments: identical(environments, sdkOmittedValue)
-            ? this.environments
-            : environments
-                as Map<String, CreateFlagRequestBodyEnvironmentsValue>,
-        seed: identical(seed, sdkOmittedValue)
-            ? this.seed
-            : seed as SdkOptional<double>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        state: identical(state, sdkOmittedValue)
-            ? this.state
-            : state as SdkOptional<CreateFlagRequestBodyState>,
-        maintainerIds: identical(maintainerIds, sdkOmittedValue)
-            ? this.maintainerIds
-            : maintainerIds as SdkOptional<List<String>>,
-        permanent: identical(permanent, sdkOmittedValue)
-            ? this.permanent
-            : permanent as SdkOptional<bool>,
-        tags: identical(tags, sdkOmittedValue)
-            ? this.tags
-            : tags as SdkOptional<List<String>>,
-      );
+  CreateFlagRequestBody _copyWith({Object? slug = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? variants = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? seed = sdkOmittedValue, Object? description = sdkOmittedValue, Object? state = sdkOmittedValue, Object? maintainerIds = sdkOmittedValue, Object? permanent = sdkOmittedValue, Object? tags = sdkOmittedValue}) => CreateFlagRequestBody(
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as CreateFlagRequestBodyKind,
+    variants: identical(variants, sdkOmittedValue) ? this.variants : variants as SdkOptional<List<CreateFlagRequestBodyVariantsItem>>,
+    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as Map<String, CreateFlagRequestBodyEnvironmentsValue>,
+    seed: identical(seed, sdkOmittedValue) ? this.seed : seed as SdkOptional<double>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    state: identical(state, sdkOmittedValue) ? this.state : state as SdkOptional<CreateFlagRequestBodyState>,
+    maintainerIds: identical(maintainerIds, sdkOmittedValue) ? this.maintainerIds : maintainerIds as SdkOptional<List<String>>,
+    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as SdkOptional<bool>,
+    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as SdkOptional<List<String>>,
+  );
 
-  factory CreateFlagRequestBody.fromJson(Map<String, dynamic> json) =>
-      CreateFlagRequestBody(
-        slug: (json['slug'] as String?)!,
-        kind: (json['kind'] != null
-            ? CreateFlagRequestBodyKind.fromJson(json['kind'] as String)
-            : null)!,
-        variants: json['variants'] != null
-            ? SdkPresent(((json['variants'] as List?)
-                ?.map((e) => CreateFlagRequestBodyVariantsItem.fromJson(
-                    e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        environments: (json['environments'] == null
-            ? null
-            : Map<String, dynamic>.from(json['environments'] as Map).map(
-                (key, value) => MapEntry(
-                    key,
-                    CreateFlagRequestBodyEnvironmentsValue.fromJson(
-                        value as Map<String, dynamic>))))!,
-        seed: json['seed'] != null
-            ? SdkPresent(((json['seed'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        state: json['state'] != null
-            ? SdkPresent((json['state'] != null
-                ? CreateFlagRequestBodyState.fromJson(json['state'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        maintainerIds: json['maintainerIds'] != null
-            ? SdkPresent(((json['maintainerIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        permanent: json['permanent'] != null
-            ? SdkPresent((json['permanent'] as bool?)!)
-            : const SdkOmitted(),
-        tags: json['tags'] != null
-            ? SdkPresent(
-                ((json['tags'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory CreateFlagRequestBody.fromJson(Map<String, dynamic> json) => CreateFlagRequestBody(
+    slug: (json['slug'] as String?)!,
+    kind: (json['kind'] != null ? CreateFlagRequestBodyKind.fromJson(json['kind'] as String) : null)!,
+    variants: json['variants'] != null ? SdkPresent(((json['variants'] as List?)?.map((e) => CreateFlagRequestBodyVariantsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    environments: (json['environments'] == null ? null : Map<String, dynamic>.from(json['environments'] as Map).map((key, value) => MapEntry(key, CreateFlagRequestBodyEnvironmentsValue.fromJson(value as Map<String, dynamic>))))!,
+    seed: json['seed'] != null ? SdkPresent(((json['seed'] as num?)?.toDouble())!) : const SdkOmitted(),
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    state: json['state'] != null ? SdkPresent((json['state'] != null ? CreateFlagRequestBodyState.fromJson(json['state'] as String) : null)!) : const SdkOmitted(),
+    maintainerIds: json['maintainerIds'] != null ? SdkPresent(((json['maintainerIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    permanent: json['permanent'] != null ? SdkPresent((json['permanent'] as bool?)!) : const SdkOmitted(),
+    tags: json['tags'] != null ? SdkPresent(((json['tags'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'slug': slug,
-        'kind': kind.toJson(),
-        ...switch (variants) {
-          SdkPresent<List<CreateFlagRequestBodyVariantsItem>>(
-            value: final value
-          ) =>
-            {
-              'variants': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'environments':
-            environments.map((key, value) => MapEntry(key, value.toJson())),
-        ...switch (seed) {
-          SdkPresent<double>(value: final value) => {
-              'seed': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (state) {
-          SdkPresent<CreateFlagRequestBodyState>(value: final value) => {
-              'state': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maintainerIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'maintainerIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (permanent) {
-          SdkPresent<bool>(value: final value) => {
-              'permanent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (tags) {
-          SdkPresent<List<String>>(value: final value) => {
-              'tags': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'slug': slug,
+    'kind': kind.toJson(),
+    ...switch (variants) {
+      SdkPresent<List<CreateFlagRequestBodyVariantsItem>>(value: final value) => {'variants': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'environments': environments.map((key, value) => MapEntry(key, value.toJson())),
+    ...switch (seed) {
+      SdkPresent<double>(value: final value) => {'seed': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (state) {
+      SdkPresent<CreateFlagRequestBodyState>(value: final value) => {'state': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maintainerIds) {
+      SdkPresent<List<String>>(value: final value) => {'maintainerIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (permanent) {
+      SdkPresent<bool>(value: final value) => {'permanent': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (tags) {
+      SdkPresent<List<String>>(value: final value) => {'tags': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueFallthroughVariant0 {
@@ -594,38 +273,22 @@ class CreateFlagResponseEnvironmentsValueFallthroughVariant0 {
   final CreateFlagResponseEnvironmentsValueFallthroughVariant0Type type_;
   final String variantId;
 
-  const CreateFlagResponseEnvironmentsValueFallthroughVariant0(
-      {required this.type_, required this.variantId});
+  const CreateFlagResponseEnvironmentsValueFallthroughVariant0({required this.type_, required this.variantId});
 
-  CreateFlagResponseEnvironmentsValueFallthroughVariant0 Function(
-      {CreateFlagResponseEnvironmentsValueFallthroughVariant0Type type_,
-      String variantId}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueFallthroughVariant0 Function({CreateFlagResponseEnvironmentsValueFallthroughVariant0Type type_, String variantId}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueFallthroughVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? variantId = sdkOmittedValue}) =>
-      CreateFlagResponseEnvironmentsValueFallthroughVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateFlagResponseEnvironmentsValueFallthroughVariant0Type,
-        variantId: identical(variantId, sdkOmittedValue)
-            ? this.variantId
-            : variantId as String,
-      );
+  CreateFlagResponseEnvironmentsValueFallthroughVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? variantId = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueFallthroughVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagResponseEnvironmentsValueFallthroughVariant0Type,
+    variantId: identical(variantId, sdkOmittedValue) ? this.variantId : variantId as String,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueFallthroughVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueFallthroughVariant0(
-        type_: (json['type'] != null
-            ? CreateFlagResponseEnvironmentsValueFallthroughVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        variantId: (json['variantId'] as String?)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueFallthroughVariant0.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueFallthroughVariant0(
+    type_: (json['type'] != null ? CreateFlagResponseEnvironmentsValueFallthroughVariant0Type.fromJson(json['type'] as String) : null)!,
+    variantId: (json['variantId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'variantId': variantId,
-      };
+    'type': type_.toJson(),
+    'variantId': variantId,
+  };
 }

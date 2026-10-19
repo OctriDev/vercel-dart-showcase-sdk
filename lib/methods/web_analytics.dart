@@ -68,22 +68,18 @@ Future<AggregatePageviewsResponse> aggregatePageviews(ClientConfig config,
             'by': SdkQueryValue(by, style: 'form', explode: true),
             'since': SdkQueryValue(since, style: 'form', explode: true),
             'until': SdkQueryValue(until, style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'aggregatePageviews',
-          fromJsonRaw: (value) => AggregatePageviewsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AggregatePageviewsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Aggregates custom events for a project within a requested date range. Use `by` to group results by up to two dimensions and `filter` to restrict the data; `since` and `until` define the inclusive range. The optional `limit` controls the number of distinct results, with remaining results grouped as “Others.”
 ///
@@ -146,22 +142,18 @@ Future<AggregateEventsResponse> aggregateEvents(ClientConfig config,
             'by': SdkQueryValue(by, style: 'form', explode: true),
             'since': SdkQueryValue(since, style: 'form', explode: true),
             'until': SdkQueryValue(until, style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'aggregateEvents',
-          fromJsonRaw: (value) =>
-              AggregateEventsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AggregateEventsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Counts page views for a project since Web Analytics was enabled; the count covers production data only. Use `since` and `until` to select a date range, and `filter` to restrict results by supported dimensions. The date bounds accept timestamps in milliseconds or valid date strings.
 ///
@@ -203,24 +195,19 @@ Future<CountPageviewsResponse> countPageviews(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'countPageviews',
-          fromJsonRaw: (value) =>
-              CountPageviewsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CountPageviewsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Counts custom events for a project since Web Analytics was enabled; the count covers production data only. Use `since` and `until` to select a date range, and `filter` to restrict results by supported dimensions, including `eventName` and event data. The date bounds accept timestamps in milliseconds or valid date strings.
 ///
@@ -262,21 +249,15 @@ Future<CountEventsResponse> countEvents(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
-                style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
-                style: 'form', explode: true),
-            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
+            'filter': SdkQueryValue(SdkUtils.unwrapOptional(filter), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'countEvents',
-          fromJsonRaw: (value) =>
-              CountEventsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CountEventsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

@@ -10,39 +10,24 @@ class GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1 {
   final GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1Result result;
   final String reason;
 
-  const GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
-      {required this.result, required this.reason});
+  const GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1({required this.result, required this.reason});
 
-  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1 Function(
-      {GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1Result result,
-      String reason}) get copyWith => _copyWith;
+  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1 Function({GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1Result result, String reason}) get copyWith => _copyWith;
 
-  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1 _copyWith(
-          {Object? result = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result
-                as GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1Result,
-        reason:
-            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-      );
+  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1Result,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+  );
 
-  factory GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
-        result: (json['result'] != null
-            ? GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1Result
-                .fromJson(json['result'] as String)
-            : null)!,
-        reason: (json['reason'] as String?)!,
-      );
+  factory GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1.fromJson(Map<String, dynamic> json) => GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
+    result: (json['result'] != null ? GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1Result.fromJson(json['result'] as String) : null)!,
+    reason: (json['reason'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-        'reason': reason,
-      };
+    'result': result.toJson(),
+    'reason': reason,
+  };
 }
 
 class GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 {
@@ -51,122 +36,60 @@ class GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 {
   final GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result result;
   final String reason;
 
-  const GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
-      {required this.result, required this.reason});
+  const GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2({required this.result, required this.reason});
 
-  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 Function(
-      {GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result result,
-      String reason}) get copyWith => _copyWith;
+  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 Function({GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result result, String reason}) get copyWith => _copyWith;
 
-  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 _copyWith(
-          {Object? result = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result
-                as GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result,
-        reason:
-            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-      );
+  GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+  );
 
-  factory GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
-        result: (json['result'] != null
-            ? GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result
-                .fromJson(json['result'] as String)
-            : null)!,
-        reason: (json['reason'] as String?)!,
-      );
+  factory GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2.fromJson(Map<String, dynamic> json) => GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
+    result: (json['result'] != null ? GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result.fromJson(json['result'] as String) : null)!,
+    reason: (json['reason'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-        'reason': reason,
-      };
+    'result': result.toJson(),
+    'reason': reason,
+  };
 }
 
 sealed class GetVercelCiJobRunResponseJobRunCompletedConclusion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetVercelCiJobRunResponseJobRunCompletedConclusion();
-  factory GetVercelCiJobRunResponseJobRunCompletedConclusion.fromJson(
-      Object? json) {
+  factory GetVercelCiJobRunResponseJobRunCompletedConclusion.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetVercelCiJobRunResponseJobRunCompletedConclusionVariant0.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetVercelCiJobRunResponseJobRunCompletedConclusionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0(value); } } catch (_) {}
+      try { final value = GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(value); } } catch (_) {}
+      try { final value = GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(value); } } catch (_) {}
     }
-    try {
-      return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0(
-          GetVercelCiJobRunResponseJobRunCompletedConclusionVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
-          GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
-          GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetVercelCiJobRunResponseJobRunCompletedConclusion");
+    try { return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0(GetVercelCiJobRunResponseJobRunCompletedConclusionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetVercelCiJobRunResponseJobRunCompletedConclusion");
   }
   Object? toJson();
 }
 
-final class GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0
-    extends GetVercelCiJobRunResponseJobRunCompletedConclusion {
+final class GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0 extends GetVercelCiJobRunResponseJobRunCompletedConclusion {
   final GetVercelCiJobRunResponseJobRunCompletedConclusionVariant0 value;
-  const GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1
-    extends GetVercelCiJobRunResponseJobRunCompletedConclusion {
+final class GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1 extends GetVercelCiJobRunResponseJobRunCompletedConclusion {
   final GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1 value;
-  const GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2
-    extends GetVercelCiJobRunResponseJobRunCompletedConclusion {
+final class GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 extends GetVercelCiJobRunResponseJobRunCompletedConclusion {
   final GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2 value;
-  const GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetVercelCiJobRunResponseJobRunCompletedConclusionGetVercelCiJobRunResponseJobRunCompletedConclusionVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetVercelCiTaskLogsResponseTasksItemConclusionVariant0 {
@@ -174,34 +97,21 @@ class GetVercelCiTaskLogsResponseTasksItemConclusionVariant0 {
   static const String constructionSurface = 'named';
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result result;
 
-  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
-      {required this.result});
+  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant0({required this.result});
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant0 Function(
-          {GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result result})
-      get copyWith => _copyWith;
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant0 Function({GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result result}) get copyWith => _copyWith;
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant0 _copyWith(
-          {Object? result = sdkOmittedValue}) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result
-                as GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result,
-      );
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant0 _copyWith({Object? result = sdkOmittedValue}) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result,
+  );
 
-  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
-        result: (json['result'] != null
-            ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result
-                .fromJson(json['result'] as String)
-            : null)!,
-      );
+  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant0.fromJson(Map<String, dynamic> json) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
+    result: (json['result'] != null ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result.fromJson(json['result'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-      };
+    'result': result.toJson(),
+  };
 }
 
 class GetVercelCiTaskLogsResponseTasksItemConclusionVariant1 {
@@ -209,34 +119,21 @@ class GetVercelCiTaskLogsResponseTasksItemConclusionVariant1 {
   static const String constructionSurface = 'named';
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result result;
 
-  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
-      {required this.result});
+  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant1({required this.result});
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant1 Function(
-          {GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result result})
-      get copyWith => _copyWith;
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant1 Function({GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result result}) get copyWith => _copyWith;
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant1 _copyWith(
-          {Object? result = sdkOmittedValue}) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result
-                as GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result,
-      );
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant1 _copyWith({Object? result = sdkOmittedValue}) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result,
+  );
 
-  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
-        result: (json['result'] != null
-            ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result
-                .fromJson(json['result'] as String)
-            : null)!,
-      );
+  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant1.fromJson(Map<String, dynamic> json) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
+    result: (json['result'] != null ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result.fromJson(json['result'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-      };
+    'result': result.toJson(),
+  };
 }
 
 class GetVercelCiTaskLogsResponseTasksItemConclusionVariant2 {
@@ -245,39 +142,24 @@ class GetVercelCiTaskLogsResponseTasksItemConclusionVariant2 {
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result result;
   final String reason;
 
-  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
-      {required this.result, required this.reason});
+  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant2({required this.result, required this.reason});
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant2 Function(
-      {GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result result,
-      String reason}) get copyWith => _copyWith;
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant2 Function({GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result result, String reason}) get copyWith => _copyWith;
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant2 _copyWith(
-          {Object? result = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result
-                as GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result,
-        reason:
-            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-      );
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant2 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+  );
 
-  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
-        result: (json['result'] != null
-            ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result
-                .fromJson(json['result'] as String)
-            : null)!,
-        reason: (json['reason'] as String?)!,
-      );
+  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant2.fromJson(Map<String, dynamic> json) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
+    result: (json['result'] != null ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result.fromJson(json['result'] as String) : null)!,
+    reason: (json['reason'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-        'reason': reason,
-      };
+    'result': result.toJson(),
+    'reason': reason,
+  };
 }
 
 class GetVercelCiTaskLogsResponseTasksItemConclusionVariant3 {
@@ -286,242 +168,122 @@ class GetVercelCiTaskLogsResponseTasksItemConclusionVariant3 {
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result result;
   final String reason;
 
-  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
-      {required this.result, required this.reason});
+  const GetVercelCiTaskLogsResponseTasksItemConclusionVariant3({required this.result, required this.reason});
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant3 Function(
-      {GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result result,
-      String reason}) get copyWith => _copyWith;
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant3 Function({GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result result, String reason}) get copyWith => _copyWith;
 
-  GetVercelCiTaskLogsResponseTasksItemConclusionVariant3 _copyWith(
-          {Object? result = sdkOmittedValue,
-          Object? reason = sdkOmittedValue}) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
-        result: identical(result, sdkOmittedValue)
-            ? this.result
-            : result
-                as GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result,
-        reason:
-            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-      );
+  GetVercelCiTaskLogsResponseTasksItemConclusionVariant3 _copyWith({Object? result = sdkOmittedValue, Object? reason = sdkOmittedValue}) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
+    result: identical(result, sdkOmittedValue) ? this.result : result as GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+  );
 
-  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      GetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
-        result: (json['result'] != null
-            ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result
-                .fromJson(json['result'] as String)
-            : null)!,
-        reason: (json['reason'] as String?)!,
-      );
+  factory GetVercelCiTaskLogsResponseTasksItemConclusionVariant3.fromJson(Map<String, dynamic> json) => GetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
+    result: (json['result'] != null ? GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result.fromJson(json['result'] as String) : null)!,
+    reason: (json['reason'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'result': result.toJson(),
-        'reason': reason,
-      };
+    'result': result.toJson(),
+    'reason': reason,
+  };
 }
 
 sealed class GetVercelCiTaskLogsResponseTasksItemConclusion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetVercelCiTaskLogsResponseTasksItemConclusion();
-  factory GetVercelCiTaskLogsResponseTasksItemConclusion.fromJson(
-      Object? json) {
+  factory GetVercelCiTaskLogsResponseTasksItemConclusion.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            GetVercelCiTaskLogsResponseTasksItemConclusionVariant0.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiTaskLogsResponseTasksItemConclusionVariant1.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiTaskLogsResponseTasksItemConclusionVariant2.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            GetVercelCiTaskLogsResponseTasksItemConclusionVariant3.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
-              value);
-        }
-      } catch (_) {}
+      try { final value = GetVercelCiTaskLogsResponseTasksItemConclusionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0(value); } } catch (_) {}
+      try { final value = GetVercelCiTaskLogsResponseTasksItemConclusionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1(value); } } catch (_) {}
+      try { final value = GetVercelCiTaskLogsResponseTasksItemConclusionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2(value); } } catch (_) {}
+      try { final value = GetVercelCiTaskLogsResponseTasksItemConclusionVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3(value); } } catch (_) {}
     }
-    try {
-      return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
-          GetVercelCiTaskLogsResponseTasksItemConclusionVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
-          GetVercelCiTaskLogsResponseTasksItemConclusionVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
-          GetVercelCiTaskLogsResponseTasksItemConclusionVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
-          GetVercelCiTaskLogsResponseTasksItemConclusionVariant3.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for GetVercelCiTaskLogsResponseTasksItemConclusion");
+    try { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0(GetVercelCiTaskLogsResponseTasksItemConclusionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1(GetVercelCiTaskLogsResponseTasksItemConclusionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2(GetVercelCiTaskLogsResponseTasksItemConclusionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3(GetVercelCiTaskLogsResponseTasksItemConclusionVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for GetVercelCiTaskLogsResponseTasksItemConclusion");
   }
   Object? toJson();
 }
 
-final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0
-    extends GetVercelCiTaskLogsResponseTasksItemConclusion {
+final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0 extends GetVercelCiTaskLogsResponseTasksItemConclusion {
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant0 value;
-  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1
-    extends GetVercelCiTaskLogsResponseTasksItemConclusion {
+final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1 extends GetVercelCiTaskLogsResponseTasksItemConclusion {
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant1 value;
-  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2
-    extends GetVercelCiTaskLogsResponseTasksItemConclusion {
+final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2 extends GetVercelCiTaskLogsResponseTasksItemConclusion {
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant2 value;
-  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3
-    extends GetVercelCiTaskLogsResponseTasksItemConclusion {
+final class GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3 extends GetVercelCiTaskLogsResponseTasksItemConclusion {
   final GetVercelCiTaskLogsResponseTasksItemConclusionVariant3 value;
-  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const GetVercelCiTaskLogsResponseTasksItemConclusionGetVercelCiTaskLogsResponseTasksItemConclusionVariant3(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type
-      type_;
+  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type type_;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
-      {required this.type_});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0({required this.type_});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 Function(
-      {ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type
-          type_}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 Function({ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type type_}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue}) =>
-      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type,
-      );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type,
+  );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
-        type_: (json['type'] != null
-            ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0.fromJson(Map<String, dynamic> json) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0(
+    type_: (json['type'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 class ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type
-      type_;
+  final ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type type_;
   final String deploymentId;
   final String projectId;
   final String deploymentTargetSlug;
 
-  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
-      {required this.type_,
-      required this.deploymentId,
-      required this.projectId,
-      required this.deploymentTargetSlug});
+  const ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1({required this.type_, required this.deploymentId, required this.projectId, required this.deploymentTargetSlug});
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 Function(
-      {ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type
-          type_,
-      String deploymentId,
-      String projectId,
-      String deploymentTargetSlug}) get copyWith => _copyWith;
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 Function({ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type type_, String deploymentId, String projectId, String deploymentTargetSlug}) get copyWith => _copyWith;
 
-  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? deploymentId = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? deploymentTargetSlug = sdkOmittedValue}) =>
-      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type,
-        deploymentId: identical(deploymentId, sdkOmittedValue)
-            ? this.deploymentId
-            : deploymentId as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        deploymentTargetSlug: identical(deploymentTargetSlug, sdkOmittedValue)
-            ? this.deploymentTargetSlug
-            : deploymentTargetSlug as String,
-      );
+  ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? deploymentTargetSlug = sdkOmittedValue}) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type,
+    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    deploymentTargetSlug: identical(deploymentTargetSlug, sdkOmittedValue) ? this.deploymentTargetSlug : deploymentTargetSlug as String,
+  );
 
-  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
-        type_: (json['type'] != null
-            ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        deploymentId: (json['deploymentId'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        deploymentTargetSlug: (json['deploymentTargetSlug'] as String?)!,
-      );
+  factory ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1.fromJson(Map<String, dynamic> json) => ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1(
+    type_: (json['type'] != null ? ListVercelCiInvocationAttemptsResponseAttemptsItemSourceVariant1Type.fromJson(json['type'] as String) : null)!,
+    deploymentId: (json['deploymentId'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    deploymentTargetSlug: (json['deploymentTargetSlug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'deploymentId': deploymentId,
-        'projectId': projectId,
-        'deploymentTargetSlug': deploymentTargetSlug,
-      };
+    'type': type_.toJson(),
+    'deploymentId': deploymentId,
+    'projectId': projectId,
+    'deploymentTargetSlug': deploymentTargetSlug,
+  };
 }

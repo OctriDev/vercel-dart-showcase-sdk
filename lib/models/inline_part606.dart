@@ -7,200 +7,95 @@ part of 'inline.dart';
 class GetConnectorTokenResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Stable id correlating all tokens (including refreshes) back to the original authorization.
   final SdkOptional<String> authorizationId;
-
   /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
   final SdkOptional<Map<String, Object?>> claims;
   final GetConnectorTokenResponseConnector connector;
   final double expiresAt;
   final SdkOptional<String> externalSubject;
   final SdkOptional<String> installationId;
-
   /// Driver-specific metadata (e.g., botUserId for Slack).
   final SdkOptional<Map<String, Object?>> metadata;
   final SdkOptional<String> name;
   final SdkOptional<String> tenantId;
   final String token;
-
   /// Stable id that groups all tokens with the same parameters across refreshes.
   final SdkOptional<String> tokenGroupId;
   final String tokenId;
 
-  const GetConnectorTokenResponse(
-      {this.authorizationId = const SdkOmitted(),
-      this.claims = const SdkOmitted(),
-      required this.connector,
-      required this.expiresAt,
-      this.externalSubject = const SdkOmitted(),
-      this.installationId = const SdkOmitted(),
-      this.metadata = const SdkOmitted(),
-      this.name = const SdkOmitted(),
-      this.tenantId = const SdkOmitted(),
-      required this.token,
-      this.tokenGroupId = const SdkOmitted(),
-      required this.tokenId});
+  const GetConnectorTokenResponse({this.authorizationId = const SdkOmitted(), this.claims = const SdkOmitted(), required this.connector, required this.expiresAt, this.externalSubject = const SdkOmitted(), this.installationId = const SdkOmitted(), this.metadata = const SdkOmitted(), this.name = const SdkOmitted(), this.tenantId = const SdkOmitted(), required this.token, this.tokenGroupId = const SdkOmitted(), required this.tokenId});
 
-  GetConnectorTokenResponse Function(
-      {SdkOptional<String> authorizationId,
-      SdkOptional<Map<String, Object?>> claims,
-      GetConnectorTokenResponseConnector connector,
-      double expiresAt,
-      SdkOptional<String> externalSubject,
-      SdkOptional<String> installationId,
-      SdkOptional<Map<String, Object?>> metadata,
-      SdkOptional<String> name,
-      SdkOptional<String> tenantId,
-      String token,
-      SdkOptional<String> tokenGroupId,
-      String tokenId}) get copyWith => _copyWith;
+  GetConnectorTokenResponse Function({SdkOptional<String> authorizationId, SdkOptional<Map<String, Object?>> claims, GetConnectorTokenResponseConnector connector, double expiresAt, SdkOptional<String> externalSubject, SdkOptional<String> installationId, SdkOptional<Map<String, Object?>> metadata, SdkOptional<String> name, SdkOptional<String> tenantId, String token, SdkOptional<String> tokenGroupId, String tokenId}) get copyWith => _copyWith;
 
-  GetConnectorTokenResponse _copyWith(
-          {Object? authorizationId = sdkOmittedValue,
-          Object? claims = sdkOmittedValue,
-          Object? connector = sdkOmittedValue,
-          Object? expiresAt = sdkOmittedValue,
-          Object? externalSubject = sdkOmittedValue,
-          Object? installationId = sdkOmittedValue,
-          Object? metadata = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? tenantId = sdkOmittedValue,
-          Object? token = sdkOmittedValue,
-          Object? tokenGroupId = sdkOmittedValue,
-          Object? tokenId = sdkOmittedValue}) =>
-      GetConnectorTokenResponse(
-        authorizationId: identical(authorizationId, sdkOmittedValue)
-            ? this.authorizationId
-            : authorizationId as SdkOptional<String>,
-        claims: identical(claims, sdkOmittedValue)
-            ? this.claims
-            : claims as SdkOptional<Map<String, Object?>>,
-        connector: identical(connector, sdkOmittedValue)
-            ? this.connector
-            : connector as GetConnectorTokenResponseConnector,
-        expiresAt: identical(expiresAt, sdkOmittedValue)
-            ? this.expiresAt
-            : expiresAt as double,
-        externalSubject: identical(externalSubject, sdkOmittedValue)
-            ? this.externalSubject
-            : externalSubject as SdkOptional<String>,
-        installationId: identical(installationId, sdkOmittedValue)
-            ? this.installationId
-            : installationId as SdkOptional<String>,
-        metadata: identical(metadata, sdkOmittedValue)
-            ? this.metadata
-            : metadata as SdkOptional<Map<String, Object?>>,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        tenantId: identical(tenantId, sdkOmittedValue)
-            ? this.tenantId
-            : tenantId as SdkOptional<String>,
-        token: identical(token, sdkOmittedValue) ? this.token : token as String,
-        tokenGroupId: identical(tokenGroupId, sdkOmittedValue)
-            ? this.tokenGroupId
-            : tokenGroupId as SdkOptional<String>,
-        tokenId: identical(tokenId, sdkOmittedValue)
-            ? this.tokenId
-            : tokenId as String,
-      );
+  GetConnectorTokenResponse _copyWith({Object? authorizationId = sdkOmittedValue, Object? claims = sdkOmittedValue, Object? connector = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? externalSubject = sdkOmittedValue, Object? installationId = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? name = sdkOmittedValue, Object? tenantId = sdkOmittedValue, Object? token = sdkOmittedValue, Object? tokenGroupId = sdkOmittedValue, Object? tokenId = sdkOmittedValue}) => GetConnectorTokenResponse(
+    authorizationId: identical(authorizationId, sdkOmittedValue) ? this.authorizationId : authorizationId as SdkOptional<String>,
+    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as SdkOptional<Map<String, Object?>>,
+    connector: identical(connector, sdkOmittedValue) ? this.connector : connector as GetConnectorTokenResponseConnector,
+    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
+    externalSubject: identical(externalSubject, sdkOmittedValue) ? this.externalSubject : externalSubject as SdkOptional<String>,
+    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as SdkOptional<String>,
+    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<Map<String, Object?>>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    tenantId: identical(tenantId, sdkOmittedValue) ? this.tenantId : tenantId as SdkOptional<String>,
+    token: identical(token, sdkOmittedValue) ? this.token : token as String,
+    tokenGroupId: identical(tokenGroupId, sdkOmittedValue) ? this.tokenGroupId : tokenGroupId as SdkOptional<String>,
+    tokenId: identical(tokenId, sdkOmittedValue) ? this.tokenId : tokenId as String,
+  );
 
-  factory GetConnectorTokenResponse.fromJson(Map<String, dynamic> json) =>
-      GetConnectorTokenResponse(
-        authorizationId: json['authorizationId'] != null
-            ? SdkPresent((json['authorizationId'] as String?)!)
-            : const SdkOmitted(),
-        claims: json['claims'] != null
-            ? SdkPresent((json['claims'] == null
-                ? null
-                : Map<String, dynamic>.from(json['claims'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        connector: (json['connector'] != null
-            ? GetConnectorTokenResponseConnector.fromJson(
-                json['connector'] as Map<String, dynamic>)
-            : null)!,
-        expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-        externalSubject: json['externalSubject'] != null
-            ? SdkPresent((json['externalSubject'] as String?)!)
-            : const SdkOmitted(),
-        installationId: json['installationId'] != null
-            ? SdkPresent((json['installationId'] as String?)!)
-            : const SdkOmitted(),
-        metadata: json['metadata'] != null
-            ? SdkPresent((json['metadata'] == null
-                ? null
-                : Map<String, dynamic>.from(json['metadata'] as Map)
-                    .map((key, value) => MapEntry(key, value)))!)
-            : const SdkOmitted(),
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        tenantId: json['tenantId'] != null
-            ? SdkPresent((json['tenantId'] as String?)!)
-            : const SdkOmitted(),
-        token: (json['token'] as String?)!,
-        tokenGroupId: json['tokenGroupId'] != null
-            ? SdkPresent((json['tokenGroupId'] as String?)!)
-            : const SdkOmitted(),
-        tokenId: (json['tokenId'] as String?)!,
-      );
+  factory GetConnectorTokenResponse.fromJson(Map<String, dynamic> json) => GetConnectorTokenResponse(
+    authorizationId: json['authorizationId'] != null ? SdkPresent((json['authorizationId'] as String?)!) : const SdkOmitted(),
+    claims: json['claims'] != null ? SdkPresent((json['claims'] == null ? null : Map<String, dynamic>.from(json['claims'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    connector: (json['connector'] != null ? GetConnectorTokenResponseConnector.fromJson(json['connector'] as Map<String, dynamic>) : null)!,
+    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+    externalSubject: json['externalSubject'] != null ? SdkPresent((json['externalSubject'] as String?)!) : const SdkOmitted(),
+    installationId: json['installationId'] != null ? SdkPresent((json['installationId'] as String?)!) : const SdkOmitted(),
+    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] == null ? null : Map<String, dynamic>.from(json['metadata'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    tenantId: json['tenantId'] != null ? SdkPresent((json['tenantId'] as String?)!) : const SdkOmitted(),
+    token: (json['token'] as String?)!,
+    tokenGroupId: json['tokenGroupId'] != null ? SdkPresent((json['tokenGroupId'] as String?)!) : const SdkOmitted(),
+    tokenId: (json['tokenId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (authorizationId) {
-          SdkPresent<String>(value: final value) => {
-              'authorizationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (claims) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'claims': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'connector': connector.toJson(),
-        'expiresAt': expiresAt,
-        ...switch (externalSubject) {
-          SdkPresent<String>(value: final value) => {
-              'externalSubject': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (installationId) {
-          SdkPresent<String>(value: final value) => {
-              'installationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (metadata) {
-          SdkPresent<Map<String, Object?>>(value: final value) => {
-              'metadata': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (tenantId) {
-          SdkPresent<String>(value: final value) => {
-              'tenantId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'token': token,
-        ...switch (tokenGroupId) {
-          SdkPresent<String>(value: final value) => {
-              'tokenGroupId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'tokenId': tokenId,
-      };
+    ...switch (authorizationId) {
+      SdkPresent<String>(value: final value) => {'authorizationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (claims) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'claims': value,},
+      _ => const <String, dynamic>{},
+    },
+    'connector': connector.toJson(),
+    'expiresAt': expiresAt,
+    ...switch (externalSubject) {
+      SdkPresent<String>(value: final value) => {'externalSubject': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (installationId) {
+      SdkPresent<String>(value: final value) => {'installationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (metadata) {
+      SdkPresent<Map<String, Object?>>(value: final value) => {'metadata': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (tenantId) {
+      SdkPresent<String>(value: final value) => {'tenantId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'token': token,
+    ...switch (tokenGroupId) {
+      SdkPresent<String>(value: final value) => {'tokenGroupId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'tokenId': tokenId,
+  };
 }
 
 class CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem {
@@ -209,57 +104,39 @@ class CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem {
   final SdkOptional<String> type_;
   final Map<String, dynamic> additionalProperties;
 
-  const CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem(
-      {this.type_ = const SdkOmitted(),
-      this.additionalProperties = const <String, dynamic>{}});
+  const CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem({this.type_ = const SdkOmitted(), this.additionalProperties = const <String, dynamic>{}});
 
-  CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem
-      Function({SdkOptional<String> type_}) get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem Function({SdkOptional<String> type_}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem
-      _copyWith({Object? type_ = sdkOmittedValue}) =>
-          CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_ as SdkOptional<String>,
-            additionalProperties: additionalProperties,
-          );
+  CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem _copyWith({Object? type_ = sdkOmittedValue}) => CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<String>,
+    additionalProperties: additionalProperties,
+  );
 
-  factory CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem(
-        type_: json['type'] != null
-            ? SdkPresent((json['type'] as String?)!)
-            : const SdkOmitted(),
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{'type'}.contains(key)),
-      );
+  factory CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem(
+    type_: json['type'] != null ? SdkPresent((json['type'] as String?)!) : const SdkOmitted(),
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'type'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        ...switch (type_) {
-          SdkPresent<String>(value: final value) => {
-              'type': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...additionalProperties,
+    ...switch (type_) {
+      SdkPresent<String>(value: final value) => {'type': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateConnectorAuthorizationRequestRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Typed representation of the `CreateConnectorAuthorizationRequestRequestSubject` API schema.
   final SdkOptional<CreateConnectorAuthorizationRequestRequestSubject> subject;
   final SdkOptional<String> installationId;
   final SdkOptional<List<String>> audience;
   final SdkOptional<List<String>> scopes;
   final SdkOptional<List<String>> resources;
-  final SdkOptional<
-          List<
-              CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>
-      authorizationDetails;
+  final SdkOptional<List<CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>> authorizationDetails;
   final SdkOptional<double> validityBufferMs;
   final SdkOptional<String> returnUrl;
   final SdkOptional<String> webhook;
@@ -268,349 +145,153 @@ class CreateConnectorAuthorizationRequestRequestBody {
   final SdkOptional<double> expiresInMs;
   final SdkOptional<Map<String, String>> additionalParams;
 
-  const CreateConnectorAuthorizationRequestRequestBody(
-      {this.subject = const SdkOmitted(),
-      this.installationId = const SdkOmitted(),
-      this.audience = const SdkOmitted(),
-      this.scopes = const SdkOmitted(),
-      this.resources = const SdkOmitted(),
-      this.authorizationDetails = const SdkOmitted(),
-      this.validityBufferMs = const SdkOmitted(),
-      this.returnUrl = const SdkOmitted(),
-      this.webhook = const SdkOmitted(),
-      this.prompt = const SdkOmitted(),
-      this.deviceCode = const SdkOmitted(),
-      this.expiresInMs = const SdkOmitted(),
-      this.additionalParams = const SdkOmitted()});
+  const CreateConnectorAuthorizationRequestRequestBody({this.subject = const SdkOmitted(), this.installationId = const SdkOmitted(), this.audience = const SdkOmitted(), this.scopes = const SdkOmitted(), this.resources = const SdkOmitted(), this.authorizationDetails = const SdkOmitted(), this.validityBufferMs = const SdkOmitted(), this.returnUrl = const SdkOmitted(), this.webhook = const SdkOmitted(), this.prompt = const SdkOmitted(), this.deviceCode = const SdkOmitted(), this.expiresInMs = const SdkOmitted(), this.additionalParams = const SdkOmitted()});
 
-  CreateConnectorAuthorizationRequestRequestBody Function(
-      {SdkOptional<CreateConnectorAuthorizationRequestRequestSubject> subject,
-      SdkOptional<String> installationId,
-      SdkOptional<List<String>> audience,
-      SdkOptional<List<String>> scopes,
-      SdkOptional<List<String>> resources,
-      SdkOptional<
-              List<
-                  CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>
-          authorizationDetails,
-      SdkOptional<double> validityBufferMs,
-      SdkOptional<String> returnUrl,
-      SdkOptional<String> webhook,
-      SdkOptional<String> prompt,
-      SdkOptional<bool> deviceCode,
-      SdkOptional<double> expiresInMs,
-      SdkOptional<Map<String, String>>
-          additionalParams}) get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestRequestBody Function({SdkOptional<CreateConnectorAuthorizationRequestRequestSubject> subject, SdkOptional<String> installationId, SdkOptional<List<String>> audience, SdkOptional<List<String>> scopes, SdkOptional<List<String>> resources, SdkOptional<List<CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>> authorizationDetails, SdkOptional<double> validityBufferMs, SdkOptional<String> returnUrl, SdkOptional<String> webhook, SdkOptional<String> prompt, SdkOptional<bool> deviceCode, SdkOptional<double> expiresInMs, SdkOptional<Map<String, String>> additionalParams}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestRequestBody _copyWith(
-          {Object? subject = sdkOmittedValue,
-          Object? installationId = sdkOmittedValue,
-          Object? audience = sdkOmittedValue,
-          Object? scopes = sdkOmittedValue,
-          Object? resources = sdkOmittedValue,
-          Object? authorizationDetails = sdkOmittedValue,
-          Object? validityBufferMs = sdkOmittedValue,
-          Object? returnUrl = sdkOmittedValue,
-          Object? webhook = sdkOmittedValue,
-          Object? prompt = sdkOmittedValue,
-          Object? deviceCode = sdkOmittedValue,
-          Object? expiresInMs = sdkOmittedValue,
-          Object? additionalParams = sdkOmittedValue}) =>
-      CreateConnectorAuthorizationRequestRequestBody(
-        subject: identical(subject, sdkOmittedValue)
-            ? this.subject
-            : subject as SdkOptional<
-                CreateConnectorAuthorizationRequestRequestSubject>,
-        installationId: identical(installationId, sdkOmittedValue)
-            ? this.installationId
-            : installationId as SdkOptional<String>,
-        audience: identical(audience, sdkOmittedValue)
-            ? this.audience
-            : audience as SdkOptional<List<String>>,
-        scopes: identical(scopes, sdkOmittedValue)
-            ? this.scopes
-            : scopes as SdkOptional<List<String>>,
-        resources: identical(resources, sdkOmittedValue)
-            ? this.resources
-            : resources as SdkOptional<List<String>>,
-        authorizationDetails: identical(authorizationDetails, sdkOmittedValue)
-            ? this.authorizationDetails
-            : authorizationDetails as SdkOptional<
-                List<
-                    CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>,
-        validityBufferMs: identical(validityBufferMs, sdkOmittedValue)
-            ? this.validityBufferMs
-            : validityBufferMs as SdkOptional<double>,
-        returnUrl: identical(returnUrl, sdkOmittedValue)
-            ? this.returnUrl
-            : returnUrl as SdkOptional<String>,
-        webhook: identical(webhook, sdkOmittedValue)
-            ? this.webhook
-            : webhook as SdkOptional<String>,
-        prompt: identical(prompt, sdkOmittedValue)
-            ? this.prompt
-            : prompt as SdkOptional<String>,
-        deviceCode: identical(deviceCode, sdkOmittedValue)
-            ? this.deviceCode
-            : deviceCode as SdkOptional<bool>,
-        expiresInMs: identical(expiresInMs, sdkOmittedValue)
-            ? this.expiresInMs
-            : expiresInMs as SdkOptional<double>,
-        additionalParams: identical(additionalParams, sdkOmittedValue)
-            ? this.additionalParams
-            : additionalParams as SdkOptional<Map<String, String>>,
-      );
+  CreateConnectorAuthorizationRequestRequestBody _copyWith({Object? subject = sdkOmittedValue, Object? installationId = sdkOmittedValue, Object? audience = sdkOmittedValue, Object? scopes = sdkOmittedValue, Object? resources = sdkOmittedValue, Object? authorizationDetails = sdkOmittedValue, Object? validityBufferMs = sdkOmittedValue, Object? returnUrl = sdkOmittedValue, Object? webhook = sdkOmittedValue, Object? prompt = sdkOmittedValue, Object? deviceCode = sdkOmittedValue, Object? expiresInMs = sdkOmittedValue, Object? additionalParams = sdkOmittedValue}) => CreateConnectorAuthorizationRequestRequestBody(
+    subject: identical(subject, sdkOmittedValue) ? this.subject : subject as SdkOptional<CreateConnectorAuthorizationRequestRequestSubject>,
+    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as SdkOptional<String>,
+    audience: identical(audience, sdkOmittedValue) ? this.audience : audience as SdkOptional<List<String>>,
+    scopes: identical(scopes, sdkOmittedValue) ? this.scopes : scopes as SdkOptional<List<String>>,
+    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as SdkOptional<List<String>>,
+    authorizationDetails: identical(authorizationDetails, sdkOmittedValue) ? this.authorizationDetails : authorizationDetails as SdkOptional<List<CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>,
+    validityBufferMs: identical(validityBufferMs, sdkOmittedValue) ? this.validityBufferMs : validityBufferMs as SdkOptional<double>,
+    returnUrl: identical(returnUrl, sdkOmittedValue) ? this.returnUrl : returnUrl as SdkOptional<String>,
+    webhook: identical(webhook, sdkOmittedValue) ? this.webhook : webhook as SdkOptional<String>,
+    prompt: identical(prompt, sdkOmittedValue) ? this.prompt : prompt as SdkOptional<String>,
+    deviceCode: identical(deviceCode, sdkOmittedValue) ? this.deviceCode : deviceCode as SdkOptional<bool>,
+    expiresInMs: identical(expiresInMs, sdkOmittedValue) ? this.expiresInMs : expiresInMs as SdkOptional<double>,
+    additionalParams: identical(additionalParams, sdkOmittedValue) ? this.additionalParams : additionalParams as SdkOptional<Map<String, String>>,
+  );
 
-  factory CreateConnectorAuthorizationRequestRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestRequestBody(
-        subject: json['subject'] != null
-            ? SdkPresent((json['subject'] != null
-                ? CreateConnectorAuthorizationRequestRequestSubject.fromJson(
-                    json['subject'])
-                : null)!)
-            : const SdkOmitted(),
-        installationId: json['installationId'] != null
-            ? SdkPresent((json['installationId'] as String?)!)
-            : const SdkOmitted(),
-        audience: json['audience'] != null
-            ? SdkPresent(((json['audience'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        scopes: json['scopes'] != null
-            ? SdkPresent(
-                ((json['scopes'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        resources: json['resources'] != null
-            ? SdkPresent(((json['resources'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        authorizationDetails: json['authorizationDetails'] != null
-            ? SdkPresent(((json['authorizationDetails'] as List?)
-                ?.map((e) =>
-                    CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        validityBufferMs: json['validityBufferMs'] != null
-            ? SdkPresent(((json['validityBufferMs'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        returnUrl: json['returnUrl'] != null
-            ? SdkPresent((json['returnUrl'] as String?)!)
-            : const SdkOmitted(),
-        webhook: json['webhook'] != null
-            ? SdkPresent((json['webhook'] as String?)!)
-            : const SdkOmitted(),
-        prompt: json['prompt'] != null
-            ? SdkPresent((json['prompt'] as String?)!)
-            : const SdkOmitted(),
-        deviceCode: json['deviceCode'] != null
-            ? SdkPresent((json['deviceCode'] as bool?)!)
-            : const SdkOmitted(),
-        expiresInMs: json['expiresInMs'] != null
-            ? SdkPresent(((json['expiresInMs'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        additionalParams: json['additionalParams'] != null
-            ? SdkPresent((json['additionalParams'] == null
-                ? null
-                : Map<String, dynamic>.from(json['additionalParams'] as Map)
-                    .map((key, value) => MapEntry(key, value as String)))!)
-            : const SdkOmitted(),
-      );
+  factory CreateConnectorAuthorizationRequestRequestBody.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestRequestBody(
+    subject: json['subject'] != null ? SdkPresent((json['subject'] != null ? CreateConnectorAuthorizationRequestRequestSubject.fromJson(json['subject']) : null)!) : const SdkOmitted(),
+    installationId: json['installationId'] != null ? SdkPresent((json['installationId'] as String?)!) : const SdkOmitted(),
+    audience: json['audience'] != null ? SdkPresent(((json['audience'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    scopes: json['scopes'] != null ? SdkPresent(((json['scopes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    resources: json['resources'] != null ? SdkPresent(((json['resources'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    authorizationDetails: json['authorizationDetails'] != null ? SdkPresent(((json['authorizationDetails'] as List?)?.map((e) => CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    validityBufferMs: json['validityBufferMs'] != null ? SdkPresent(((json['validityBufferMs'] as num?)?.toDouble())!) : const SdkOmitted(),
+    returnUrl: json['returnUrl'] != null ? SdkPresent((json['returnUrl'] as String?)!) : const SdkOmitted(),
+    webhook: json['webhook'] != null ? SdkPresent((json['webhook'] as String?)!) : const SdkOmitted(),
+    prompt: json['prompt'] != null ? SdkPresent((json['prompt'] as String?)!) : const SdkOmitted(),
+    deviceCode: json['deviceCode'] != null ? SdkPresent((json['deviceCode'] as bool?)!) : const SdkOmitted(),
+    expiresInMs: json['expiresInMs'] != null ? SdkPresent(((json['expiresInMs'] as num?)?.toDouble())!) : const SdkOmitted(),
+    additionalParams: json['additionalParams'] != null ? SdkPresent((json['additionalParams'] == null ? null : Map<String, dynamic>.from(json['additionalParams'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (subject) {
-          SdkPresent<CreateConnectorAuthorizationRequestRequestSubject>(
-            value: final value
-          ) =>
-            {
-              'subject': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (installationId) {
-          SdkPresent<String>(value: final value) => {
-              'installationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (audience) {
-          SdkPresent<List<String>>(value: final value) => {
-              'audience': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scopes) {
-          SdkPresent<List<String>>(value: final value) => {
-              'scopes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (resources) {
-          SdkPresent<List<String>>(value: final value) => {
-              'resources': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (authorizationDetails) {
-          SdkPresent<
-                List<
-                    CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>(
-            value: final value
-          ) =>
-            {
-              'authorizationDetails':
-                  value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (validityBufferMs) {
-          SdkPresent<double>(value: final value) => {
-              'validityBufferMs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (returnUrl) {
-          SdkPresent<String>(value: final value) => {
-              'returnUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (webhook) {
-          SdkPresent<String>(value: final value) => {
-              'webhook': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (prompt) {
-          SdkPresent<String>(value: final value) => {
-              'prompt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deviceCode) {
-          SdkPresent<bool>(value: final value) => {
-              'deviceCode': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (expiresInMs) {
-          SdkPresent<double>(value: final value) => {
-              'expiresInMs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (additionalParams) {
-          SdkPresent<Map<String, String>>(value: final value) => {
-              'additionalParams': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (subject) {
+      SdkPresent<CreateConnectorAuthorizationRequestRequestSubject>(value: final value) => {'subject': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (installationId) {
+      SdkPresent<String>(value: final value) => {'installationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (audience) {
+      SdkPresent<List<String>>(value: final value) => {'audience': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scopes) {
+      SdkPresent<List<String>>(value: final value) => {'scopes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (resources) {
+      SdkPresent<List<String>>(value: final value) => {'resources': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (authorizationDetails) {
+      SdkPresent<List<CreateConnectorAuthorizationRequestRequestBodyAuthorizationDetailsItem>>(value: final value) => {'authorizationDetails': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (validityBufferMs) {
+      SdkPresent<double>(value: final value) => {'validityBufferMs': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (returnUrl) {
+      SdkPresent<String>(value: final value) => {'returnUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (webhook) {
+      SdkPresent<String>(value: final value) => {'webhook': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (prompt) {
+      SdkPresent<String>(value: final value) => {'prompt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deviceCode) {
+      SdkPresent<bool>(value: final value) => {'deviceCode': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (expiresInMs) {
+      SdkPresent<double>(value: final value) => {'expiresInMs': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (additionalParams) {
+      SdkPresent<Map<String, String>>(value: final value) => {'additionalParams': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateConnectorAuthorizationRequestResponseConnector {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Provider-facing display name when the connector type exposes one, falling back to the stored connector name.
   final String displayName;
-
   /// Client id (e.g. `scl_…`).
   final String id;
-
   /// The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one.
   final String name;
-
   /// Resolved service id when known (e.g. `salesforce`), following the `stored.service ?? typeDef.service ?? stored.type` convention.
   final SdkOptional<String> service;
-
   /// Curated display name of the resolved service (e.g. "Salesforce"), present when the service is a known service. Suited for end-user surfaces like "Sign in with {serviceName}".
   final SdkOptional<String> serviceName;
-
   /// Client type (e.g. `oauth`, `salesforce`).
   final String type_;
-
   /// Client uid (e.g. `salesforce/my-org`).
   final String uid;
 
-  const CreateConnectorAuthorizationRequestResponseConnector(
-      {required this.displayName,
-      required this.id,
-      required this.name,
-      this.service = const SdkOmitted(),
-      this.serviceName = const SdkOmitted(),
-      required this.type_,
-      required this.uid});
+  const CreateConnectorAuthorizationRequestResponseConnector({required this.displayName, required this.id, required this.name, this.service = const SdkOmitted(), this.serviceName = const SdkOmitted(), required this.type_, required this.uid});
 
-  CreateConnectorAuthorizationRequestResponseConnector Function(
-      {String displayName,
-      String id,
-      String name,
-      SdkOptional<String> service,
-      SdkOptional<String> serviceName,
-      String type_,
-      String uid}) get copyWith => _copyWith;
+  CreateConnectorAuthorizationRequestResponseConnector Function({String displayName, String id, String name, SdkOptional<String> service, SdkOptional<String> serviceName, String type_, String uid}) get copyWith => _copyWith;
 
-  CreateConnectorAuthorizationRequestResponseConnector _copyWith(
-          {Object? displayName = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? service = sdkOmittedValue,
-          Object? serviceName = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? uid = sdkOmittedValue}) =>
-      CreateConnectorAuthorizationRequestResponseConnector(
-        displayName: identical(displayName, sdkOmittedValue)
-            ? this.displayName
-            : displayName as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        service: identical(service, sdkOmittedValue)
-            ? this.service
-            : service as SdkOptional<String>,
-        serviceName: identical(serviceName, sdkOmittedValue)
-            ? this.serviceName
-            : serviceName as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-      );
+  CreateConnectorAuthorizationRequestResponseConnector _copyWith({Object? displayName = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? service = sdkOmittedValue, Object? serviceName = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? uid = sdkOmittedValue}) => CreateConnectorAuthorizationRequestResponseConnector(
+    displayName: identical(displayName, sdkOmittedValue) ? this.displayName : displayName as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    service: identical(service, sdkOmittedValue) ? this.service : service as SdkOptional<String>,
+    serviceName: identical(serviceName, sdkOmittedValue) ? this.serviceName : serviceName as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+  );
 
-  factory CreateConnectorAuthorizationRequestResponseConnector.fromJson(
-          Map<String, dynamic> json) =>
-      CreateConnectorAuthorizationRequestResponseConnector(
-        displayName: (json['displayName'] as String?)!,
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        service: json['service'] != null
-            ? SdkPresent((json['service'] as String?)!)
-            : const SdkOmitted(),
-        serviceName: json['serviceName'] != null
-            ? SdkPresent((json['serviceName'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-        uid: (json['uid'] as String?)!,
-      );
+  factory CreateConnectorAuthorizationRequestResponseConnector.fromJson(Map<String, dynamic> json) => CreateConnectorAuthorizationRequestResponseConnector(
+    displayName: (json['displayName'] as String?)!,
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    service: json['service'] != null ? SdkPresent((json['service'] as String?)!) : const SdkOmitted(),
+    serviceName: json['serviceName'] != null ? SdkPresent((json['serviceName'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+    uid: (json['uid'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'displayName': displayName,
-        'id': id,
-        'name': name,
-        ...switch (service) {
-          SdkPresent<String>(value: final value) => {
-              'service': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (serviceName) {
-          SdkPresent<String>(value: final value) => {
-              'serviceName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-        'uid': uid,
-      };
+    'displayName': displayName,
+    'id': id,
+    'name': name,
+    ...switch (service) {
+      SdkPresent<String>(value: final value) => {'service': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (serviceName) {
+      SdkPresent<String>(value: final value) => {'serviceName': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+    'uid': uid,
+  };
 }

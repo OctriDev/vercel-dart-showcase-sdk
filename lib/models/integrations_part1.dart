@@ -10,88 +10,51 @@ class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant
   final SdkOptional<String> customRotationWarning;
   final double maxDelayHours;
 
-  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(
-      {this.customRotationWarning = const SdkOmitted(),
-      required this.maxDelayHours});
+  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0({this.customRotationWarning = const SdkOmitted(), required this.maxDelayHours});
 
-  CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0
-          Function({SdkOptional<String> customRotationWarning, double maxDelayHours})
-      get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0 Function({SdkOptional<String> customRotationWarning, double maxDelayHours}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0
-      _copyWith(
-              {Object? customRotationWarning = sdkOmittedValue,
-              Object? maxDelayHours = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(
-            customRotationWarning:
-                identical(customRotationWarning, sdkOmittedValue)
-                    ? this.customRotationWarning
-                    : customRotationWarning as SdkOptional<String>,
-            maxDelayHours: identical(maxDelayHours, sdkOmittedValue)
-                ? this.maxDelayHours
-                : maxDelayHours as double,
-          );
+  CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0 _copyWith({Object? customRotationWarning = sdkOmittedValue, Object? maxDelayHours = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(
+    customRotationWarning: identical(customRotationWarning, sdkOmittedValue) ? this.customRotationWarning : customRotationWarning as SdkOptional<String>,
+    maxDelayHours: identical(maxDelayHours, sdkOmittedValue) ? this.maxDelayHours : maxDelayHours as double,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(
-        customRotationWarning: json['customRotationWarning'] != null
-            ? SdkPresent((json['customRotationWarning'] as String?)!)
-            : const SdkOmitted(),
-        maxDelayHours: ((json['maxDelayHours'] as num?)?.toDouble())!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(
+    customRotationWarning: json['customRotationWarning'] != null ? SdkPresent((json['customRotationWarning'] as String?)!) : const SdkOmitted(),
+    maxDelayHours: ((json['maxDelayHours'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (customRotationWarning) {
-          SdkPresent<String>(value: final value) => {
-              'customRotationWarning': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'maxDelayHours': maxDelayHours,
-      };
+    ...switch (customRotationWarning) {
+      SdkPresent<String>(value: final value) => {'customRotationWarning': value,},
+      _ => const <String, dynamic>{},
+    },
+    'maxDelayHours': maxDelayHours,
+  };
 }
 
 sealed class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation();
-  factory CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation.fromJson(
-      Object? json) {
-    try {
-      return CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1(
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation");
+  factory CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation.fromJson(Object? json) {
+    try { return CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1(CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation");
   }
   Object? toJson();
 }
 
-final class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0
-    extends CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation {
-  final CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0
-      value;
-  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0 extends CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation {
+  final CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0 value;
+  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1
-    extends CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation {
-  final CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1
-      value;
-  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1 extends CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation {
+  final CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1 value;
+  const CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0 {
@@ -100,88 +63,51 @@ class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation
   final SdkOptional<String> customRotationWarning;
   final double maxDelayHours;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(
-      {this.customRotationWarning = const SdkOmitted(),
-      required this.maxDelayHours});
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0({this.customRotationWarning = const SdkOmitted(), required this.maxDelayHours});
 
-  CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0
-          Function({SdkOptional<String> customRotationWarning, double maxDelayHours})
-      get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0 Function({SdkOptional<String> customRotationWarning, double maxDelayHours}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0
-      _copyWith(
-              {Object? customRotationWarning = sdkOmittedValue,
-              Object? maxDelayHours = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(
-            customRotationWarning:
-                identical(customRotationWarning, sdkOmittedValue)
-                    ? this.customRotationWarning
-                    : customRotationWarning as SdkOptional<String>,
-            maxDelayHours: identical(maxDelayHours, sdkOmittedValue)
-                ? this.maxDelayHours
-                : maxDelayHours as double,
-          );
+  CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0 _copyWith({Object? customRotationWarning = sdkOmittedValue, Object? maxDelayHours = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(
+    customRotationWarning: identical(customRotationWarning, sdkOmittedValue) ? this.customRotationWarning : customRotationWarning as SdkOptional<String>,
+    maxDelayHours: identical(maxDelayHours, sdkOmittedValue) ? this.maxDelayHours : maxDelayHours as double,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(
-        customRotationWarning: json['customRotationWarning'] != null
-            ? SdkPresent((json['customRotationWarning'] as String?)!)
-            : const SdkOmitted(),
-        maxDelayHours: ((json['maxDelayHours'] as num?)?.toDouble())!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(
+    customRotationWarning: json['customRotationWarning'] != null ? SdkPresent((json['customRotationWarning'] as String?)!) : const SdkOmitted(),
+    maxDelayHours: ((json['maxDelayHours'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (customRotationWarning) {
-          SdkPresent<String>(value: final value) => {
-              'customRotationWarning': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'maxDelayHours': maxDelayHours,
-      };
+    ...switch (customRotationWarning) {
+      SdkPresent<String>(value: final value) => {'customRotationWarning': value,},
+      _ => const <String, dynamic>{},
+    },
+    'maxDelayHours': maxDelayHours,
+  };
 }
 
 sealed class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation();
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation.fromJson(
-      Object? json) {
-    try {
-      return CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1(
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation");
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation.fromJson(Object? json) {
+    try { return CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1(CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation");
   }
   Object? toJson();
 }
 
-final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0
-    extends CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation {
-  final CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0
-      value;
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0 extends CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation {
+  final CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0 value;
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1
-    extends CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation {
-  final CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1
-      value;
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1 extends CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation {
+  final CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1 value;
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0 {
@@ -190,88 +116,51 @@ class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSec
   final SdkOptional<String> customRotationWarning;
   final double maxDelayHours;
 
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(
-      {this.customRotationWarning = const SdkOmitted(),
-      required this.maxDelayHours});
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0({this.customRotationWarning = const SdkOmitted(), required this.maxDelayHours});
 
-  CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0
-          Function({SdkOptional<String> customRotationWarning, double maxDelayHours})
-      get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0 Function({SdkOptional<String> customRotationWarning, double maxDelayHours}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0
-      _copyWith(
-              {Object? customRotationWarning = sdkOmittedValue,
-              Object? maxDelayHours = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(
-            customRotationWarning:
-                identical(customRotationWarning, sdkOmittedValue)
-                    ? this.customRotationWarning
-                    : customRotationWarning as SdkOptional<String>,
-            maxDelayHours: identical(maxDelayHours, sdkOmittedValue)
-                ? this.maxDelayHours
-                : maxDelayHours as double,
-          );
+  CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0 _copyWith({Object? customRotationWarning = sdkOmittedValue, Object? maxDelayHours = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(
+    customRotationWarning: identical(customRotationWarning, sdkOmittedValue) ? this.customRotationWarning : customRotationWarning as SdkOptional<String>,
+    maxDelayHours: identical(maxDelayHours, sdkOmittedValue) ? this.maxDelayHours : maxDelayHours as double,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(
-        customRotationWarning: json['customRotationWarning'] != null
-            ? SdkPresent((json['customRotationWarning'] as String?)!)
-            : const SdkOmitted(),
-        maxDelayHours: ((json['maxDelayHours'] as num?)?.toDouble())!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(
+    customRotationWarning: json['customRotationWarning'] != null ? SdkPresent((json['customRotationWarning'] as String?)!) : const SdkOmitted(),
+    maxDelayHours: ((json['maxDelayHours'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (customRotationWarning) {
-          SdkPresent<String>(value: final value) => {
-              'customRotationWarning': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'maxDelayHours': maxDelayHours,
-      };
+    ...switch (customRotationWarning) {
+      SdkPresent<String>(value: final value) => {'customRotationWarning': value,},
+      _ => const <String, dynamic>{},
+    },
+    'maxDelayHours': maxDelayHours,
+  };
 }
 
 sealed class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation();
-  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation.fromJson(
-      Object? json) {
-    try {
-      return CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(
-          CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0
-              .fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1(
-          CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1
-              .fromJson(json as bool));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation");
+  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation.fromJson(Object? json) {
+    try { return CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1(CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1.fromJson(json as bool)); } catch (_) {}
+    throw FormatException("No variant matched for CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation");
   }
   Object? toJson();
 }
 
-final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0
-    extends CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation {
-  final CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0
-      value;
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0 extends CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation {
+  final CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0 value;
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1
-    extends CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation {
-  final CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1
-      value;
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1 extends CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation {
+  final CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1 value;
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class GetConfigurationResponseVariant0Notification {
@@ -282,68 +171,36 @@ class GetConfigurationResponseVariant0Notification {
   final SdkOptional<String> message;
   final String title;
 
-  const GetConfigurationResponseVariant0Notification(
-      {this.href = const SdkOmitted(),
-      required this.level,
-      this.message = const SdkOmitted(),
-      required this.title});
+  const GetConfigurationResponseVariant0Notification({this.href = const SdkOmitted(), required this.level, this.message = const SdkOmitted(), required this.title});
 
-  GetConfigurationResponseVariant0Notification Function(
-      {SdkOptional<String> href,
-      GetConfigurationResponseVariant0NotificationLevel level,
-      SdkOptional<String> message,
-      String title}) get copyWith => _copyWith;
+  GetConfigurationResponseVariant0Notification Function({SdkOptional<String> href, GetConfigurationResponseVariant0NotificationLevel level, SdkOptional<String> message, String title}) get copyWith => _copyWith;
 
-  GetConfigurationResponseVariant0Notification _copyWith(
-          {Object? href = sdkOmittedValue,
-          Object? level = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? title = sdkOmittedValue}) =>
-      GetConfigurationResponseVariant0Notification(
-        href: identical(href, sdkOmittedValue)
-            ? this.href
-            : href as SdkOptional<String>,
-        level: identical(level, sdkOmittedValue)
-            ? this.level
-            : level as GetConfigurationResponseVariant0NotificationLevel,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as SdkOptional<String>,
-        title: identical(title, sdkOmittedValue) ? this.title : title as String,
-      );
+  GetConfigurationResponseVariant0Notification _copyWith({Object? href = sdkOmittedValue, Object? level = sdkOmittedValue, Object? message = sdkOmittedValue, Object? title = sdkOmittedValue}) => GetConfigurationResponseVariant0Notification(
+    href: identical(href, sdkOmittedValue) ? this.href : href as SdkOptional<String>,
+    level: identical(level, sdkOmittedValue) ? this.level : level as GetConfigurationResponseVariant0NotificationLevel,
+    message: identical(message, sdkOmittedValue) ? this.message : message as SdkOptional<String>,
+    title: identical(title, sdkOmittedValue) ? this.title : title as String,
+  );
 
-  factory GetConfigurationResponseVariant0Notification.fromJson(
-          Map<String, dynamic> json) =>
-      GetConfigurationResponseVariant0Notification(
-        href: json['href'] != null
-            ? SdkPresent((json['href'] as String?)!)
-            : const SdkOmitted(),
-        level: (json['level'] != null
-            ? GetConfigurationResponseVariant0NotificationLevel.fromJson(
-                json['level'] as String)
-            : null)!,
-        message: json['message'] != null
-            ? SdkPresent((json['message'] as String?)!)
-            : const SdkOmitted(),
-        title: (json['title'] as String?)!,
-      );
+  factory GetConfigurationResponseVariant0Notification.fromJson(Map<String, dynamic> json) => GetConfigurationResponseVariant0Notification(
+    href: json['href'] != null ? SdkPresent((json['href'] as String?)!) : const SdkOmitted(),
+    level: (json['level'] != null ? GetConfigurationResponseVariant0NotificationLevel.fromJson(json['level'] as String) : null)!,
+    message: json['message'] != null ? SdkPresent((json['message'] as String?)!) : const SdkOmitted(),
+    title: (json['title'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (href) {
-          SdkPresent<String>(value: final value) => {
-              'href': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'level': level.toJson(),
-        ...switch (message) {
-          SdkPresent<String>(value: final value) => {
-              'message': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'title': title,
-      };
+    ...switch (href) {
+      SdkPresent<String>(value: final value) => {'href': value,},
+      _ => const <String, dynamic>{},
+    },
+    'level': level.toJson(),
+    ...switch (message) {
+      SdkPresent<String>(value: final value) => {'message': value,},
+      _ => const <String, dynamic>{},
+    },
+    'title': title,
+  };
 }
 
 class GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan {
@@ -352,131 +209,53 @@ class GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan {
   final String description;
   final String id;
   final String name;
-  final SdkOptional<
-          GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired>
-      paymentMethodRequired;
+  final SdkOptional<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired> paymentMethodRequired;
   final SdkOptional<double> preauthorizationAmount;
-  final SdkOptional<
-          GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope>
-      scope;
-  final GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType
-      type_;
+  final SdkOptional<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope> scope;
+  final GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType type_;
 
-  const GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan(
-      {required this.description,
-      required this.id,
-      required this.name,
-      this.paymentMethodRequired = const SdkOmitted(),
-      this.preauthorizationAmount = const SdkOmitted(),
-      this.scope = const SdkOmitted(),
-      required this.type_});
+  const GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan({required this.description, required this.id, required this.name, this.paymentMethodRequired = const SdkOmitted(), this.preauthorizationAmount = const SdkOmitted(), this.scope = const SdkOmitted(), required this.type_});
 
-  GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan Function(
-      {String description,
-      String id,
-      String name,
-      SdkOptional<
-              GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired>
-          paymentMethodRequired,
-      SdkOptional<double> preauthorizationAmount,
-      SdkOptional<
-              GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope>
-          scope,
-      GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType
-          type_}) get copyWith => _copyWith;
+  GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan Function({String description, String id, String name, SdkOptional<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired> paymentMethodRequired, SdkOptional<double> preauthorizationAmount, SdkOptional<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope> scope, GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType type_}) get copyWith => _copyWith;
 
-  GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan _copyWith(
-          {Object? description = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? paymentMethodRequired = sdkOmittedValue,
-          Object? preauthorizationAmount = sdkOmittedValue,
-          Object? scope = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan(
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        paymentMethodRequired: identical(paymentMethodRequired, sdkOmittedValue)
-            ? this.paymentMethodRequired
-            : paymentMethodRequired as SdkOptional<
-                GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired>,
-        preauthorizationAmount:
-            identical(preauthorizationAmount, sdkOmittedValue)
-                ? this.preauthorizationAmount
-                : preauthorizationAmount as SdkOptional<double>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope as SdkOptional<
-                GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType,
-      );
+  GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan _copyWith({Object? description = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? paymentMethodRequired = sdkOmittedValue, Object? preauthorizationAmount = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan(
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    paymentMethodRequired: identical(paymentMethodRequired, sdkOmittedValue) ? this.paymentMethodRequired : paymentMethodRequired as SdkOptional<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired>,
+    preauthorizationAmount: identical(preauthorizationAmount, sdkOmittedValue) ? this.preauthorizationAmount : preauthorizationAmount as SdkOptional<double>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType,
+  );
 
-  factory GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan.fromJson(
-          Map<String, dynamic> json) =>
-      GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan(
-        description: (json['description'] as String?)!,
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        paymentMethodRequired: json['paymentMethodRequired'] != null
-            ? SdkPresent((json['paymentMethodRequired'] != null
-                ? GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired
-                    .fromJson(json['paymentMethodRequired'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        preauthorizationAmount: json['preauthorizationAmount'] != null
-            ? SdkPresent(
-                ((json['preauthorizationAmount'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        scope: json['scope'] != null
-            ? SdkPresent((json['scope'] != null
-                ? GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope
-                    .fromJson(json['scope'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan.fromJson(Map<String, dynamic> json) => GetConfigurationResponseVariant0TransferRequestVariant0BillingPlan(
+    description: (json['description'] as String?)!,
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    paymentMethodRequired: json['paymentMethodRequired'] != null ? SdkPresent((json['paymentMethodRequired'] != null ? GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired.fromJson(json['paymentMethodRequired'] as bool) : null)!) : const SdkOmitted(),
+    preauthorizationAmount: json['preauthorizationAmount'] != null ? SdkPresent(((json['preauthorizationAmount'] as num?)?.toDouble())!) : const SdkOmitted(),
+    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'description': description,
-        'id': id,
-        'name': name,
-        ...switch (paymentMethodRequired) {
-          SdkPresent<
-                GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired>(
-            value: final value
-          ) =>
-            {
-              'paymentMethodRequired': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (preauthorizationAmount) {
-          SdkPresent<double>(value: final value) => {
-              'preauthorizationAmount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (scope) {
-          SdkPresent<
-                GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope>(
-            value: final value
-          ) =>
-            {
-              'scope': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'description': description,
+    'id': id,
+    'name': name,
+    ...switch (paymentMethodRequired) {
+      SdkPresent<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanPaymentMethodRequired>(value: final value) => {'paymentMethodRequired': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (preauthorizationAmount) {
+      SdkPresent<double>(value: final value) => {'preauthorizationAmount': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (scope) {
+      SdkPresent<GetConfigurationResponseVariant0TransferRequestVariant0BillingPlanScope>(value: final value) => {'scope': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class GetConfigurationResponseVariant0TransferRequestVariant0Requester {
@@ -485,37 +264,25 @@ class GetConfigurationResponseVariant0TransferRequestVariant0Requester {
   final SdkOptional<String> email;
   final String name;
 
-  const GetConfigurationResponseVariant0TransferRequestVariant0Requester(
-      {this.email = const SdkOmitted(), required this.name});
+  const GetConfigurationResponseVariant0TransferRequestVariant0Requester({this.email = const SdkOmitted(), required this.name});
 
-  GetConfigurationResponseVariant0TransferRequestVariant0Requester Function(
-      {SdkOptional<String> email, String name}) get copyWith => _copyWith;
+  GetConfigurationResponseVariant0TransferRequestVariant0Requester Function({SdkOptional<String> email, String name}) get copyWith => _copyWith;
 
-  GetConfigurationResponseVariant0TransferRequestVariant0Requester _copyWith(
-          {Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) =>
-      GetConfigurationResponseVariant0TransferRequestVariant0Requester(
-        email: identical(email, sdkOmittedValue)
-            ? this.email
-            : email as SdkOptional<String>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-      );
+  GetConfigurationResponseVariant0TransferRequestVariant0Requester _copyWith({Object? email = sdkOmittedValue, Object? name = sdkOmittedValue}) => GetConfigurationResponseVariant0TransferRequestVariant0Requester(
+    email: identical(email, sdkOmittedValue) ? this.email : email as SdkOptional<String>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory GetConfigurationResponseVariant0TransferRequestVariant0Requester.fromJson(
-          Map<String, dynamic> json) =>
-      GetConfigurationResponseVariant0TransferRequestVariant0Requester(
-        email: json['email'] != null
-            ? SdkPresent((json['email'] as String?)!)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-      );
+  factory GetConfigurationResponseVariant0TransferRequestVariant0Requester.fromJson(Map<String, dynamic> json) => GetConfigurationResponseVariant0TransferRequestVariant0Requester(
+    email: json['email'] != null ? SdkPresent((json['email'] as String?)!) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (email) {
-          SdkPresent<String>(value: final value) => {
-              'email': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-      };
+    ...switch (email) {
+      SdkPresent<String>(value: final value) => {'email': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+  };
 }

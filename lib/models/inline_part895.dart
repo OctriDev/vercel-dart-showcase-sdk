@@ -7,250 +7,128 @@ part of 'inline.dart';
 class CreateProjectResponseCronsDefinitionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A human-readable description of what this cron job does.
   final SdkOptional<String> description;
-
   /// The hostname that should be used.
   final String host;
-
   /// Whether the host was inferred from the production deployment URL rather than explicitly provided.
-  final SdkOptional<CreateProjectResponseCronsDefinitionsItemHostInferred>
-      hostInferred;
-
+  final SdkOptional<CreateProjectResponseCronsDefinitionsItemHostInferred> hostInferred;
   /// The path that should be called for the cronjob.
   final String path;
-
   /// The cron expression.
   final String schedule;
-
   /// The origin of this definition. 'api' means created via the API. Undefined means it originated from a deployment (vercel.json).
   final SdkOptional<CreateProjectResponseCronsDefinitionsItemSource> source;
 
-  const CreateProjectResponseCronsDefinitionsItem(
-      {this.description = const SdkOmitted(),
-      required this.host,
-      this.hostInferred = const SdkOmitted(),
-      required this.path,
-      required this.schedule,
-      this.source = const SdkOmitted()});
+  const CreateProjectResponseCronsDefinitionsItem({this.description = const SdkOmitted(), required this.host, this.hostInferred = const SdkOmitted(), required this.path, required this.schedule, this.source = const SdkOmitted()});
 
-  CreateProjectResponseCronsDefinitionsItem Function(
-          {SdkOptional<String> description,
-          String host,
-          SdkOptional<CreateProjectResponseCronsDefinitionsItemHostInferred>
-              hostInferred,
-          String path,
-          String schedule,
-          SdkOptional<CreateProjectResponseCronsDefinitionsItemSource> source})
-      get copyWith => _copyWith;
+  CreateProjectResponseCronsDefinitionsItem Function({SdkOptional<String> description, String host, SdkOptional<CreateProjectResponseCronsDefinitionsItemHostInferred> hostInferred, String path, String schedule, SdkOptional<CreateProjectResponseCronsDefinitionsItemSource> source}) get copyWith => _copyWith;
 
-  CreateProjectResponseCronsDefinitionsItem _copyWith(
-          {Object? description = sdkOmittedValue,
-          Object? host = sdkOmittedValue,
-          Object? hostInferred = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? schedule = sdkOmittedValue,
-          Object? source = sdkOmittedValue}) =>
-      CreateProjectResponseCronsDefinitionsItem(
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        host: identical(host, sdkOmittedValue) ? this.host : host as String,
-        hostInferred: identical(hostInferred, sdkOmittedValue)
-            ? this.hostInferred
-            : hostInferred as SdkOptional<
-                CreateProjectResponseCronsDefinitionsItemHostInferred>,
-        path: identical(path, sdkOmittedValue) ? this.path : path as String,
-        schedule: identical(schedule, sdkOmittedValue)
-            ? this.schedule
-            : schedule as String,
-        source: identical(source, sdkOmittedValue)
-            ? this.source
-            : source
-                as SdkOptional<CreateProjectResponseCronsDefinitionsItemSource>,
-      );
+  CreateProjectResponseCronsDefinitionsItem _copyWith({Object? description = sdkOmittedValue, Object? host = sdkOmittedValue, Object? hostInferred = sdkOmittedValue, Object? path = sdkOmittedValue, Object? schedule = sdkOmittedValue, Object? source = sdkOmittedValue}) => CreateProjectResponseCronsDefinitionsItem(
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    host: identical(host, sdkOmittedValue) ? this.host : host as String,
+    hostInferred: identical(hostInferred, sdkOmittedValue) ? this.hostInferred : hostInferred as SdkOptional<CreateProjectResponseCronsDefinitionsItemHostInferred>,
+    path: identical(path, sdkOmittedValue) ? this.path : path as String,
+    schedule: identical(schedule, sdkOmittedValue) ? this.schedule : schedule as String,
+    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<CreateProjectResponseCronsDefinitionsItemSource>,
+  );
 
-  factory CreateProjectResponseCronsDefinitionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseCronsDefinitionsItem(
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        host: (json['host'] as String?)!,
-        hostInferred: json['hostInferred'] != null
-            ? SdkPresent((json['hostInferred'] != null
-                ? CreateProjectResponseCronsDefinitionsItemHostInferred
-                    .fromJson(json['hostInferred'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        path: (json['path'] as String?)!,
-        schedule: (json['schedule'] as String?)!,
-        source: json['source'] != null
-            ? SdkPresent((json['source'] != null
-                ? CreateProjectResponseCronsDefinitionsItemSource.fromJson(
-                    json['source'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectResponseCronsDefinitionsItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseCronsDefinitionsItem(
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    host: (json['host'] as String?)!,
+    hostInferred: json['hostInferred'] != null ? SdkPresent((json['hostInferred'] != null ? CreateProjectResponseCronsDefinitionsItemHostInferred.fromJson(json['hostInferred'] as bool) : null)!) : const SdkOmitted(),
+    path: (json['path'] as String?)!,
+    schedule: (json['schedule'] as String?)!,
+    source: json['source'] != null ? SdkPresent((json['source'] != null ? CreateProjectResponseCronsDefinitionsItemSource.fromJson(json['source'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'host': host,
-        ...switch (hostInferred) {
-          SdkPresent<CreateProjectResponseCronsDefinitionsItemHostInferred>(
-            value: final value
-          ) =>
-            {
-              'hostInferred': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'path': path,
-        'schedule': schedule,
-        ...switch (source) {
-          SdkPresent<CreateProjectResponseCronsDefinitionsItemSource>(
-            value: final value
-          ) =>
-            {
-              'source': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    'host': host,
+    ...switch (hostInferred) {
+      SdkPresent<CreateProjectResponseCronsDefinitionsItemHostInferred>(value: final value) => {'hostInferred': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'path': path,
+    'schedule': schedule,
+    ...switch (source) {
+      SdkPresent<CreateProjectResponseCronsDefinitionsItemSource>(value: final value) => {'source': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateProjectResponseCrons {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<CreateProjectResponseCronsDefinitionsItem> definitions;
-
   /// The ID of the Deployment from which the definitions originated.
   final String? deploymentId;
-
   /// The time the feature was disabled for this project.
   final double? disabledAt;
-
   /// The time the feature was enabled for this project. Note: It enables automatically with the first Deployment that outputs cronjobs.
   final double enabledAt;
   final double updatedAt;
 
-  const CreateProjectResponseCrons(
-      {required this.definitions,
-      required this.deploymentId,
-      required this.disabledAt,
-      required this.enabledAt,
-      required this.updatedAt});
+  const CreateProjectResponseCrons({required this.definitions, required this.deploymentId, required this.disabledAt, required this.enabledAt, required this.updatedAt});
 
-  CreateProjectResponseCrons Function(
-      {List<CreateProjectResponseCronsDefinitionsItem> definitions,
-      String? deploymentId,
-      double? disabledAt,
-      double enabledAt,
-      double updatedAt}) get copyWith => _copyWith;
+  CreateProjectResponseCrons Function({List<CreateProjectResponseCronsDefinitionsItem> definitions, String? deploymentId, double? disabledAt, double enabledAt, double updatedAt}) get copyWith => _copyWith;
 
-  CreateProjectResponseCrons _copyWith(
-          {Object? definitions = sdkOmittedValue,
-          Object? deploymentId = sdkOmittedValue,
-          Object? disabledAt = sdkOmittedValue,
-          Object? enabledAt = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      CreateProjectResponseCrons(
-        definitions: identical(definitions, sdkOmittedValue)
-            ? this.definitions
-            : definitions as List<CreateProjectResponseCronsDefinitionsItem>,
-        deploymentId: identical(deploymentId, sdkOmittedValue)
-            ? this.deploymentId
-            : deploymentId as String?,
-        disabledAt: identical(disabledAt, sdkOmittedValue)
-            ? this.disabledAt
-            : disabledAt as double?,
-        enabledAt: identical(enabledAt, sdkOmittedValue)
-            ? this.enabledAt
-            : enabledAt as double,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  CreateProjectResponseCrons _copyWith({Object? definitions = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => CreateProjectResponseCrons(
+    definitions: identical(definitions, sdkOmittedValue) ? this.definitions : definitions as List<CreateProjectResponseCronsDefinitionsItem>,
+    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String?,
+    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as double?,
+    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as double,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory CreateProjectResponseCrons.fromJson(Map<String, dynamic> json) =>
-      CreateProjectResponseCrons(
-        definitions: ((json['definitions'] as List?)
-            ?.map((e) => CreateProjectResponseCronsDefinitionsItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-        deploymentId: json.containsKey('deploymentId')
-            ? json['deploymentId'] as String?
-            : throw ArgumentError.value(
-                null, 'deploymentId', 'Required property is missing'),
-        disabledAt: json.containsKey('disabledAt')
-            ? (json['disabledAt'] as num?)?.toDouble()
-            : throw ArgumentError.value(
-                null, 'disabledAt', 'Required property is missing'),
-        enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory CreateProjectResponseCrons.fromJson(Map<String, dynamic> json) => CreateProjectResponseCrons(
+    definitions: ((json['definitions'] as List?)?.map((e) => CreateProjectResponseCronsDefinitionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    deploymentId: json.containsKey('deploymentId') ? json['deploymentId'] as String? : throw ArgumentError.value(null, 'deploymentId', 'Required property is missing'),
+    disabledAt: json.containsKey('disabledAt') ? (json['disabledAt'] as num?)?.toDouble() : throw ArgumentError.value(null, 'disabledAt', 'Required property is missing'),
+    enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'definitions': definitions.map((item) => item.toJson()).toList(),
-        'deploymentId': deploymentId,
-        'disabledAt': disabledAt,
-        'enabledAt': enabledAt,
-        'updatedAt': updatedAt,
-      };
+    'definitions': definitions.map((item) => item.toJson()).toList(),
+    'deploymentId': deploymentId,
+    'disabledAt': disabledAt,
+    'enabledAt': enabledAt,
+    'updatedAt': updatedAt,
+  };
 }
 
 /// Configuration for matching git branches to this environment
 class CreateProjectResponseCustomEnvironmentsItemBranchMatcher {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The pattern to match against branch names
   final String pattern;
-
   /// The type of matching to perform
   final CreateProjectResponseCustomEnvironmentsItemBranchMatcherType type_;
 
-  const CreateProjectResponseCustomEnvironmentsItemBranchMatcher(
-      {required this.pattern, required this.type_});
+  const CreateProjectResponseCustomEnvironmentsItemBranchMatcher({required this.pattern, required this.type_});
 
-  CreateProjectResponseCustomEnvironmentsItemBranchMatcher Function(
-          {String pattern,
-          CreateProjectResponseCustomEnvironmentsItemBranchMatcherType type_})
-      get copyWith => _copyWith;
+  CreateProjectResponseCustomEnvironmentsItemBranchMatcher Function({String pattern, CreateProjectResponseCustomEnvironmentsItemBranchMatcherType type_}) get copyWith => _copyWith;
 
-  CreateProjectResponseCustomEnvironmentsItemBranchMatcher _copyWith(
-          {Object? pattern = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateProjectResponseCustomEnvironmentsItemBranchMatcher(
-        pattern: identical(pattern, sdkOmittedValue)
-            ? this.pattern
-            : pattern as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateProjectResponseCustomEnvironmentsItemBranchMatcherType,
-      );
+  CreateProjectResponseCustomEnvironmentsItemBranchMatcher _copyWith({Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateProjectResponseCustomEnvironmentsItemBranchMatcher(
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseCustomEnvironmentsItemBranchMatcherType,
+  );
 
-  factory CreateProjectResponseCustomEnvironmentsItemBranchMatcher.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseCustomEnvironmentsItemBranchMatcher(
-        pattern: (json['pattern'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateProjectResponseCustomEnvironmentsItemBranchMatcherType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateProjectResponseCustomEnvironmentsItemBranchMatcher.fromJson(Map<String, dynamic> json) => CreateProjectResponseCustomEnvironmentsItemBranchMatcher(
+    pattern: (json['pattern'] as String?)!,
+    type_: (json['type'] != null ? CreateProjectResponseCustomEnvironmentsItemBranchMatcherType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'pattern': pattern,
-        'type': type_.toJson(),
-      };
+    'pattern': pattern,
+    'type': type_.toJson(),
+  };
 }
 
 /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
@@ -262,52 +140,30 @@ class CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem {
   final String type_;
   final String value;
 
-  const CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem(
-      {required this.domain,
-      required this.reason,
-      required this.type_,
-      required this.value});
+  const CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem({required this.domain, required this.reason, required this.type_, required this.value});
 
-  CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem
-          Function({String domain, String reason, String type_, String value})
-      get copyWith => _copyWith;
+  CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem Function({String domain, String reason, String type_, String value}) get copyWith => _copyWith;
 
-  CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem
-      _copyWith(
-              {Object? domain = sdkOmittedValue,
-              Object? reason = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem(
-            domain: identical(domain, sdkOmittedValue)
-                ? this.domain
-                : domain as String,
-            reason: identical(reason, sdkOmittedValue)
-                ? this.reason
-                : reason as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_ as String,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as String,
-          );
+  CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem _copyWith({Object? domain = sdkOmittedValue, Object? reason = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem(
+    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem(
-        domain: (json['domain'] as String?)!,
-        reason: (json['reason'] as String?)!,
-        type_: (json['type'] as String?)!,
-        value: (json['value'] as String?)!,
-      );
+  factory CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem(
+    domain: (json['domain'] as String?)!,
+    reason: (json['reason'] as String?)!,
+    type_: (json['type'] as String?)!,
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'domain': domain,
-        'reason': reason,
-        'type': type_,
-        'value': value,
-      };
+    'domain': domain,
+    'reason': reason,
+    'type': type_,
+    'value': value,
+  };
 }
 
 /// List of domains associated with this environment
@@ -321,197 +177,77 @@ class CreateProjectResponseCustomEnvironmentsItemDomainsItem {
   final String name;
   final String projectId;
   final SdkOptional<String?> redirect;
-  final SdkOptional<
-          CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?>
-      redirectStatusCode;
+  final SdkOptional<CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?> redirectStatusCode;
   final SdkOptional<double> updatedAt;
-
   /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
-  final SdkOptional<
-          List<
-              CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>>
-      verification;
-
+  final SdkOptional<List<CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>> verification;
   /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
   final CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified verified;
 
-  const CreateProjectResponseCustomEnvironmentsItemDomainsItem(
-      {required this.apexName,
-      this.createdAt = const SdkOmitted(),
-      this.customEnvironmentId = const SdkOmitted(),
-      this.gitBranch = const SdkOmitted(),
-      required this.name,
-      required this.projectId,
-      this.redirect = const SdkOmitted(),
-      this.redirectStatusCode = const SdkOmitted(),
-      this.updatedAt = const SdkOmitted(),
-      this.verification = const SdkOmitted(),
-      required this.verified});
+  const CreateProjectResponseCustomEnvironmentsItemDomainsItem({required this.apexName, this.createdAt = const SdkOmitted(), this.customEnvironmentId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), required this.name, required this.projectId, this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.verification = const SdkOmitted(), required this.verified});
 
-  CreateProjectResponseCustomEnvironmentsItemDomainsItem Function(
-      {String apexName,
-      SdkOptional<double> createdAt,
-      SdkOptional<String?> customEnvironmentId,
-      SdkOptional<String?> gitBranch,
-      String name,
-      String projectId,
-      SdkOptional<String?> redirect,
-      SdkOptional<
-              CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?>
-          redirectStatusCode,
-      SdkOptional<double> updatedAt,
-      SdkOptional<
-              List<
-                  CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>>
-          verification,
-      CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified
-          verified}) get copyWith => _copyWith;
+  CreateProjectResponseCustomEnvironmentsItemDomainsItem Function({String apexName, SdkOptional<double> createdAt, SdkOptional<String?> customEnvironmentId, SdkOptional<String?> gitBranch, String name, String projectId, SdkOptional<String?> redirect, SdkOptional<CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?> redirectStatusCode, SdkOptional<double> updatedAt, SdkOptional<List<CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>> verification, CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified verified}) get copyWith => _copyWith;
 
-  CreateProjectResponseCustomEnvironmentsItemDomainsItem _copyWith(
-          {Object? apexName = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? customEnvironmentId = sdkOmittedValue,
-          Object? gitBranch = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? redirect = sdkOmittedValue,
-          Object? redirectStatusCode = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? verification = sdkOmittedValue,
-          Object? verified = sdkOmittedValue}) =>
-      CreateProjectResponseCustomEnvironmentsItemDomainsItem(
-        apexName: identical(apexName, sdkOmittedValue)
-            ? this.apexName
-            : apexName as String,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
-            ? this.customEnvironmentId
-            : customEnvironmentId as SdkOptional<String?>,
-        gitBranch: identical(gitBranch, sdkOmittedValue)
-            ? this.gitBranch
-            : gitBranch as SdkOptional<String?>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        redirect: identical(redirect, sdkOmittedValue)
-            ? this.redirect
-            : redirect as SdkOptional<String?>,
-        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
-            ? this.redirectStatusCode
-            : redirectStatusCode as SdkOptional<
-                CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        verification: identical(verification, sdkOmittedValue)
-            ? this.verification
-            : verification as SdkOptional<
-                List<
-                    CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>>,
-        verified: identical(verified, sdkOmittedValue)
-            ? this.verified
-            : verified
-                as CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified,
-      );
+  CreateProjectResponseCustomEnvironmentsItemDomainsItem _copyWith({Object? apexName = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? verification = sdkOmittedValue, Object? verified = sdkOmittedValue}) => CreateProjectResponseCustomEnvironmentsItemDomainsItem(
+    apexName: identical(apexName, sdkOmittedValue) ? this.apexName : apexName as String,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String?>,
+    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
+    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    verification: identical(verification, sdkOmittedValue) ? this.verification : verification as SdkOptional<List<CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>>,
+    verified: identical(verified, sdkOmittedValue) ? this.verified : verified as CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified,
+  );
 
-  factory CreateProjectResponseCustomEnvironmentsItemDomainsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectResponseCustomEnvironmentsItemDomainsItem(
-        apexName: (json['apexName'] as String?)!,
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        customEnvironmentId: json.containsKey('customEnvironmentId')
-            ? SdkPresent(json['customEnvironmentId'] as String?)
-            : const SdkOmitted(),
-        gitBranch: json.containsKey('gitBranch')
-            ? SdkPresent(json['gitBranch'] as String?)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        redirect: json.containsKey('redirect')
-            ? SdkPresent(json['redirect'] as String?)
-            : const SdkOmitted(),
-        redirectStatusCode: json.containsKey('redirectStatusCode')
-            ? SdkPresent(json['redirectStatusCode'] != null
-                ? CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
-                    .fromJson((json['redirectStatusCode'] as num).toDouble())
-                : null)
-            : const SdkOmitted(),
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        verification: json['verification'] != null
-            ? SdkPresent(((json['verification'] as List?)
-                ?.map((e) =>
-                    CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        verified: (json['verified'] != null
-            ? CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified
-                .fromJson(json['verified'] as bool)
-            : null)!,
-      );
+  factory CreateProjectResponseCustomEnvironmentsItemDomainsItem.fromJson(Map<String, dynamic> json) => CreateProjectResponseCustomEnvironmentsItemDomainsItem(
+    apexName: (json['apexName'] as String?)!,
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    customEnvironmentId: json.containsKey('customEnvironmentId') ? SdkPresent(json['customEnvironmentId'] as String?) : const SdkOmitted(),
+    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
+    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    verification: json['verification'] != null ? SdkPresent(((json['verification'] as List?)?.map((e) => CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    verified: (json['verified'] != null ? CreateProjectResponseCustomEnvironmentsItemDomainsItemVerified.fromJson(json['verified'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'apexName': apexName,
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentId) {
-          SdkPresent<String?>(value: final value) => {
-              'customEnvironmentId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitBranch) {
-          SdkPresent<String?>(value: final value) => {
-              'gitBranch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        'projectId': projectId,
-        ...switch (redirect) {
-          SdkPresent<String?>(value: final value) => {
-              'redirect': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (redirectStatusCode) {
-          SdkPresent<
-                CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?>(
-            value: final value
-          ) =>
-            {
-              'redirectStatusCode': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (verification) {
-          SdkPresent<
-                List<
-                    CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>>(
-            value: final value
-          ) =>
-            {
-              'verification': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'verified': verified.toJson(),
-      };
+    'apexName': apexName,
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentId) {
+      SdkPresent<String?>(value: final value) => {'customEnvironmentId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitBranch) {
+      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    'projectId': projectId,
+    ...switch (redirect) {
+      SdkPresent<String?>(value: final value) => {'redirect': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (redirectStatusCode) {
+      SdkPresent<CreateProjectResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (verification) {
+      SdkPresent<List<CreateProjectResponseCustomEnvironmentsItemDomainsItemVerificationItem>>(value: final value) => {'verification': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'verified': verified.toJson(),
+  };
 }

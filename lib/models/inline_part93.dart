@@ -5,106 +5,76 @@ part of 'inline.dart';
 
 // Inline operation models (part 93)
 final class GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp {
+
   final bool value;
 
-  const GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp._(
-      this.value);
+  const GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp._(this.value);
 
-  factory GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp.fromJson(
-          bool value) =>
-      GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp._(value);
+  factory GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp.fromJson(bool value) => GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp._(value);
 
-  static const false_ =
-      GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp._(false);
+  static const false_ = GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp {
+
   final bool value;
 
-  const GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp._(
-      this.value);
+  const GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp._(this.value);
 
-  factory GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp.fromJson(
-          bool value) =>
-      GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp._(value);
+  factory GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp.fromJson(bool value) => GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp._(value);
 
-  static const true_ =
-      GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp._(true);
+  static const true_ = GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1MicrofrontendsVariant1IsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The result of the microfrontends config upload during deployment creation / build. Only set for default app deployments. The config upload is attempted during deployment create, and then again during the build. If the config is not in the root directory, or the deployment is prebuilt, the config cannot be uploaded during deployment create. The upload during deployment build finds the config even if it's not in the root directory, as it has access to all files. Uploading the config during create is ideal, as then all child deployments are guaranteed to have access to the default app deployment config even if the default app has not yet started building. If the config is not uploaded, the child app will show as building until the config has been uploaded during the default app build. - `success` - The config was uploaded successfully, either when the deployment was created or during the build. - `waiting_on_build` - The config could not be uploaded during deployment create, will be attempted again during the build. - `no_config` - No config was found. Only set once the build has not found the config in any of the deployment's files. - `undefined` - Legacy deployments, or there was an error uploading the config during deployment create.
 final class GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState {
+
   final String value;
 
-  const GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._(
-      this.value);
+  const GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._(this.value);
 
-  factory GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._(
-          value);
+  factory GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState.fromJson(String value) => GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._(value);
 
-  static const noConfig =
-      GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._(
-          'no_config');
-  static const success =
-      GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._(
-          'success');
-  static const waitingOnBuild =
-      GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._(
-          'waiting_on_build');
+  static const noConfig = GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._('no_config');
+  static const success = GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._('success');
+  static const waitingOnBuild = GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState._('waiting_on_build');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1MicrofrontendsVariant1MfeConfigUploadState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// If set it overrides the `projectSettings.nodeVersion` for this deployment.
 final class GetDeploymentResponseVariant1NodeVersion {
+
   final String value;
 
   const GetDeploymentResponseVariant1NodeVersion._(this.value);
 
-  factory GetDeploymentResponseVariant1NodeVersion.fromJson(String value) =>
-      GetDeploymentResponseVariant1NodeVersion._(value);
+  factory GetDeploymentResponseVariant1NodeVersion.fromJson(String value) => GetDeploymentResponseVariant1NodeVersion._(value);
 
   static const v10X = GetDeploymentResponseVariant1NodeVersion._('10.x');
   static const v12X = GetDeploymentResponseVariant1NodeVersion._('12.x');
@@ -119,48 +89,41 @@ final class GetDeploymentResponseVariant1NodeVersion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentResponseVariant1NodeVersion && other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1NodeVersion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1OomReport {
+
   final String value;
 
   const GetDeploymentResponseVariant1OomReport._(this.value);
 
-  factory GetDeploymentResponseVariant1OomReport.fromJson(String value) =>
-      GetDeploymentResponseVariant1OomReport._(value);
+  factory GetDeploymentResponseVariant1OomReport.fromJson(String value) => GetDeploymentResponseVariant1OomReport._(value);
 
-  static const outOfMemory =
-      GetDeploymentResponseVariant1OomReport._('out-of-memory');
+  static const outOfMemory = GetDeploymentResponseVariant1OomReport._('out-of-memory');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentResponseVariant1OomReport && other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1OomReport && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1Plan {
+
   final String value;
 
   const GetDeploymentResponseVariant1Plan._(this.value);
 
-  factory GetDeploymentResponseVariant1Plan.fromJson(String value) =>
-      GetDeploymentResponseVariant1Plan._(value);
+  factory GetDeploymentResponseVariant1Plan.fromJson(String value) => GetDeploymentResponseVariant1Plan._(value);
 
   static const enterprise = GetDeploymentResponseVariant1Plan._('enterprise');
   static const hobby = GetDeploymentResponseVariant1Plan._('hobby');
@@ -168,93 +131,75 @@ final class GetDeploymentResponseVariant1Plan {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentResponseVariant1Plan && other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1Plan && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the value is an opaque identifier or a URL.
 final class GetDeploymentResponseVariant1PlatformOriginType {
+
   final String value;
 
   const GetDeploymentResponseVariant1PlatformOriginType._(this.value);
 
-  factory GetDeploymentResponseVariant1PlatformOriginType.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1PlatformOriginType._(value);
+  factory GetDeploymentResponseVariant1PlatformOriginType.fromJson(String value) => GetDeploymentResponseVariant1PlatformOriginType._(value);
 
   static const id = GetDeploymentResponseVariant1PlatformOriginType._('id');
   static const url = GetDeploymentResponseVariant1PlatformOriginType._('url');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentResponseVariant1PlatformOriginType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1PlatformOriginType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1Prebuilt {
+
   final bool value;
 
   const GetDeploymentResponseVariant1Prebuilt._(this.value);
 
-  factory GetDeploymentResponseVariant1Prebuilt.fromJson(bool value) =>
-      GetDeploymentResponseVariant1Prebuilt._(value);
+  factory GetDeploymentResponseVariant1Prebuilt.fromJson(bool value) => GetDeploymentResponseVariant1Prebuilt._(value);
 
   static const false_ = GetDeploymentResponseVariant1Prebuilt._(false);
   static const true_ = GetDeploymentResponseVariant1Prebuilt._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentResponseVariant1Prebuilt && other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1Prebuilt && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not preview comments are enabled for the deployment
 final class GetDeploymentResponseVariant1PreviewCommentsEnabled {
+
   final bool value;
 
   const GetDeploymentResponseVariant1PreviewCommentsEnabled._(this.value);
 
-  factory GetDeploymentResponseVariant1PreviewCommentsEnabled.fromJson(
-          bool value) =>
-      GetDeploymentResponseVariant1PreviewCommentsEnabled._(value);
+  factory GetDeploymentResponseVariant1PreviewCommentsEnabled.fromJson(bool value) => GetDeploymentResponseVariant1PreviewCommentsEnabled._(value);
 
-  static const false_ =
-      GetDeploymentResponseVariant1PreviewCommentsEnabled._(false);
-  static const true_ =
-      GetDeploymentResponseVariant1PreviewCommentsEnabled._(true);
+  static const false_ = GetDeploymentResponseVariant1PreviewCommentsEnabled._(false);
+  static const true_ = GetDeploymentResponseVariant1PreviewCommentsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentResponseVariant1PreviewCommentsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1PreviewCommentsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -5,412 +5,289 @@ part of 'inline.dart';
 
 // Inline operation models (part 553)
 final class GetProjectsResponseResourceConfigBuildMachineElasticReason {
+
   final String value;
 
-  const GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-      this.value);
+  const GetProjectsResponseResourceConfigBuildMachineElasticReason._(this.value);
 
-  factory GetProjectsResponseResourceConfigBuildMachineElasticReason.fromJson(
-          String value) =>
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(value);
+  factory GetProjectsResponseResourceConfigBuildMachineElasticReason.fromJson(String value) => GetProjectsResponseResourceConfigBuildMachineElasticReason._(value);
 
-  static const basicFloor =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'basic-floor');
-  static const buildTimeoutFailure =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'build-timeout-failure');
-  static const enospcFailure =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'enospc-failure');
-  static const enterpriseFloor =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'enterprise-floor');
-  static const highPeakDisk =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'high-peak-disk');
-  static const highPeakMemory =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'high-peak-memory');
-  static const longBuildDuration =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'long-build-duration');
-  static const oomFailure =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'oom-failure');
-  static const shortBuildDuration =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'short-build-duration');
-  static const sustainedHighCpu =
-      GetProjectsResponseResourceConfigBuildMachineElasticReason._(
-          'sustained-high-cpu');
+  static const basicFloor = GetProjectsResponseResourceConfigBuildMachineElasticReason._('basic-floor');
+  static const buildTimeoutFailure = GetProjectsResponseResourceConfigBuildMachineElasticReason._('build-timeout-failure');
+  static const enospcFailure = GetProjectsResponseResourceConfigBuildMachineElasticReason._('enospc-failure');
+  static const enterpriseFloor = GetProjectsResponseResourceConfigBuildMachineElasticReason._('enterprise-floor');
+  static const highPeakDisk = GetProjectsResponseResourceConfigBuildMachineElasticReason._('high-peak-disk');
+  static const highPeakMemory = GetProjectsResponseResourceConfigBuildMachineElasticReason._('high-peak-memory');
+  static const longBuildDuration = GetProjectsResponseResourceConfigBuildMachineElasticReason._('long-build-duration');
+  static const oomFailure = GetProjectsResponseResourceConfigBuildMachineElasticReason._('oom-failure');
+  static const shortBuildDuration = GetProjectsResponseResourceConfigBuildMachineElasticReason._('short-build-duration');
+  static const sustainedHighCpu = GetProjectsResponseResourceConfigBuildMachineElasticReason._('sustained-high-cpu');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigBuildMachineElasticReason &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigBuildMachineElasticReason && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection {
+
   final String value;
 
-  const GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._(
-      this.value);
+  const GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._(this.value);
 
-  factory GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection.fromJson(
-          String value) =>
-      GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._(
-          value);
+  factory GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection.fromJson(String value) => GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._(value);
 
-  static const downgrade =
-      GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._(
-          'downgrade');
-  static const upgrade =
-      GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._(
-          'upgrade');
+  static const downgrade = GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._('downgrade');
+  static const upgrade = GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection._('upgrade');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigBuildMachineElasticTransitionDirection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigBuildMachineSelection {
+
   final String value;
 
   const GetProjectsResponseResourceConfigBuildMachineSelection._(this.value);
 
-  factory GetProjectsResponseResourceConfigBuildMachineSelection.fromJson(
-          String value) =>
-      GetProjectsResponseResourceConfigBuildMachineSelection._(value);
+  factory GetProjectsResponseResourceConfigBuildMachineSelection.fromJson(String value) => GetProjectsResponseResourceConfigBuildMachineSelection._(value);
 
-  static const elastic =
-      GetProjectsResponseResourceConfigBuildMachineSelection._('elastic');
-  static const fixed =
-      GetProjectsResponseResourceConfigBuildMachineSelection._('fixed');
+  static const elastic = GetProjectsResponseResourceConfigBuildMachineSelection._('elastic');
+  static const fixed = GetProjectsResponseResourceConfigBuildMachineSelection._('fixed');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigBuildMachineSelection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigBuildMachineSelection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigBuildMachineType {
+
   final String value;
 
   const GetProjectsResponseResourceConfigBuildMachineType._(this.value);
 
-  factory GetProjectsResponseResourceConfigBuildMachineType.fromJson(
-          String value) =>
-      GetProjectsResponseResourceConfigBuildMachineType._(value);
+  factory GetProjectsResponseResourceConfigBuildMachineType.fromJson(String value) => GetProjectsResponseResourceConfigBuildMachineType._(value);
 
-  static const basic =
-      GetProjectsResponseResourceConfigBuildMachineType._('basic');
-  static const enhanced =
-      GetProjectsResponseResourceConfigBuildMachineType._('enhanced');
-  static const standard =
-      GetProjectsResponseResourceConfigBuildMachineType._('standard');
-  static const turbo =
-      GetProjectsResponseResourceConfigBuildMachineType._('turbo');
+  static const basic = GetProjectsResponseResourceConfigBuildMachineType._('basic');
+  static const enhanced = GetProjectsResponseResourceConfigBuildMachineType._('enhanced');
+  static const standard = GetProjectsResponseResourceConfigBuildMachineType._('standard');
+  static const turbo = GetProjectsResponseResourceConfigBuildMachineType._('turbo');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigBuildMachineType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigBuildMachineType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigBuildQueueConfiguration {
+
   final String value;
 
   const GetProjectsResponseResourceConfigBuildQueueConfiguration._(this.value);
 
-  factory GetProjectsResponseResourceConfigBuildQueueConfiguration.fromJson(
-          String value) =>
-      GetProjectsResponseResourceConfigBuildQueueConfiguration._(value);
+  factory GetProjectsResponseResourceConfigBuildQueueConfiguration.fromJson(String value) => GetProjectsResponseResourceConfigBuildQueueConfiguration._(value);
 
-  static const skipNamespaceQueue =
-      GetProjectsResponseResourceConfigBuildQueueConfiguration._(
-          'SKIP_NAMESPACE_QUEUE');
-  static const waitForNamespaceQueue =
-      GetProjectsResponseResourceConfigBuildQueueConfiguration._(
-          'WAIT_FOR_NAMESPACE_QUEUE');
+  static const skipNamespaceQueue = GetProjectsResponseResourceConfigBuildQueueConfiguration._('SKIP_NAMESPACE_QUEUE');
+  static const waitForNamespaceQueue = GetProjectsResponseResourceConfigBuildQueueConfiguration._('WAIT_FOR_NAMESPACE_QUEUE');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigBuildQueueConfiguration &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigBuildQueueConfiguration && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
 final class GetProjectsResponseResourceConfigElasticBuildMachineLabel {
+
   final String value;
 
   const GetProjectsResponseResourceConfigElasticBuildMachineLabel._(this.value);
 
-  factory GetProjectsResponseResourceConfigElasticBuildMachineLabel.fromJson(
-          String value) =>
-      GetProjectsResponseResourceConfigElasticBuildMachineLabel._(value);
+  factory GetProjectsResponseResourceConfigElasticBuildMachineLabel.fromJson(String value) => GetProjectsResponseResourceConfigElasticBuildMachineLabel._(value);
 
-  static const enhanced =
-      GetProjectsResponseResourceConfigElasticBuildMachineLabel._('enhanced');
-  static const standard =
-      GetProjectsResponseResourceConfigElasticBuildMachineLabel._('standard');
-  static const turbo =
-      GetProjectsResponseResourceConfigElasticBuildMachineLabel._('turbo');
+  static const enhanced = GetProjectsResponseResourceConfigElasticBuildMachineLabel._('enhanced');
+  static const standard = GetProjectsResponseResourceConfigElasticBuildMachineLabel._('standard');
+  static const turbo = GetProjectsResponseResourceConfigElasticBuildMachineLabel._('turbo');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigElasticBuildMachineLabel &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigElasticBuildMachineLabel && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigElasticConcurrencyEnabled {
+
   final bool value;
 
-  const GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(
-      this.value);
+  const GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(this.value);
 
-  factory GetProjectsResponseResourceConfigElasticConcurrencyEnabled.fromJson(
-          bool value) =>
-      GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(value);
+  factory GetProjectsResponseResourceConfigElasticConcurrencyEnabled.fromJson(bool value) => GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(value);
 
-  static const false_ =
-      GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(false);
-  static const true_ =
-      GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(true);
+  static const false_ = GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(false);
+  static const true_ = GetProjectsResponseResourceConfigElasticConcurrencyEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigElasticConcurrencyEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigElasticConcurrencyEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigEnableFunctionsBeta {
+
   final bool value;
 
   const GetProjectsResponseResourceConfigEnableFunctionsBeta._(this.value);
 
-  factory GetProjectsResponseResourceConfigEnableFunctionsBeta.fromJson(
-          bool value) =>
-      GetProjectsResponseResourceConfigEnableFunctionsBeta._(value);
+  factory GetProjectsResponseResourceConfigEnableFunctionsBeta.fromJson(bool value) => GetProjectsResponseResourceConfigEnableFunctionsBeta._(value);
 
-  static const false_ =
-      GetProjectsResponseResourceConfigEnableFunctionsBeta._(false);
-  static const true_ =
-      GetProjectsResponseResourceConfigEnableFunctionsBeta._(true);
+  static const false_ = GetProjectsResponseResourceConfigEnableFunctionsBeta._(false);
+  static const true_ = GetProjectsResponseResourceConfigEnableFunctionsBeta._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigEnableFunctionsBeta &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigEnableFunctionsBeta && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigFluid {
+
   final bool value;
 
   const GetProjectsResponseResourceConfigFluid._(this.value);
 
-  factory GetProjectsResponseResourceConfigFluid.fromJson(bool value) =>
-      GetProjectsResponseResourceConfigFluid._(value);
+  factory GetProjectsResponseResourceConfigFluid.fromJson(bool value) => GetProjectsResponseResourceConfigFluid._(value);
 
   static const false_ = GetProjectsResponseResourceConfigFluid._(false);
   static const true_ = GetProjectsResponseResourceConfigFluid._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigFluid && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigFluid && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigFunctionDefaultMemoryType {
+
   final String value;
 
-  const GetProjectsResponseResourceConfigFunctionDefaultMemoryType._(
-      this.value);
+  const GetProjectsResponseResourceConfigFunctionDefaultMemoryType._(this.value);
 
-  factory GetProjectsResponseResourceConfigFunctionDefaultMemoryType.fromJson(
-          String value) =>
-      GetProjectsResponseResourceConfigFunctionDefaultMemoryType._(value);
+  factory GetProjectsResponseResourceConfigFunctionDefaultMemoryType.fromJson(String value) => GetProjectsResponseResourceConfigFunctionDefaultMemoryType._(value);
 
-  static const performance =
-      GetProjectsResponseResourceConfigFunctionDefaultMemoryType._(
-          'performance');
-  static const performanceXl =
-      GetProjectsResponseResourceConfigFunctionDefaultMemoryType._(
-          'performance_xl');
-  static const standard =
-      GetProjectsResponseResourceConfigFunctionDefaultMemoryType._('standard');
-  static const standardLegacy =
-      GetProjectsResponseResourceConfigFunctionDefaultMemoryType._(
-          'standard_legacy');
+  static const performance = GetProjectsResponseResourceConfigFunctionDefaultMemoryType._('performance');
+  static const performanceXl = GetProjectsResponseResourceConfigFunctionDefaultMemoryType._('performance_xl');
+  static const standard = GetProjectsResponseResourceConfigFunctionDefaultMemoryType._('standard');
+  static const standardLegacy = GetProjectsResponseResourceConfigFunctionDefaultMemoryType._('standard_legacy');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigFunctionDefaultMemoryType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigFunctionDefaultMemoryType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigFunctionZeroConfigFailover {
+
   final bool value;
 
-  const GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(
-      this.value);
+  const GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(this.value);
 
-  factory GetProjectsResponseResourceConfigFunctionZeroConfigFailover.fromJson(
-          bool value) =>
-      GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(value);
+  factory GetProjectsResponseResourceConfigFunctionZeroConfigFailover.fromJson(bool value) => GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(value);
 
-  static const false_ =
-      GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(false);
-  static const true_ =
-      GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(true);
+  static const false_ = GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(false);
+  static const true_ = GetProjectsResponseResourceConfigFunctionZeroConfigFailover._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigFunctionZeroConfigFailover &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigFunctionZeroConfigFailover && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseResourceConfigIsNSNBDisabled {
+
   final bool value;
 
   const GetProjectsResponseResourceConfigIsNSNBDisabled._(this.value);
 
-  factory GetProjectsResponseResourceConfigIsNSNBDisabled.fromJson(
-          bool value) =>
-      GetProjectsResponseResourceConfigIsNSNBDisabled._(value);
+  factory GetProjectsResponseResourceConfigIsNSNBDisabled.fromJson(bool value) => GetProjectsResponseResourceConfigIsNSNBDisabled._(value);
 
-  static const false_ =
-      GetProjectsResponseResourceConfigIsNSNBDisabled._(false);
+  static const false_ = GetProjectsResponseResourceConfigIsNSNBDisabled._(false);
   static const true_ = GetProjectsResponseResourceConfigIsNSNBDisabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseResourceConfigIsNSNBDisabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseResourceConfigIsNSNBDisabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.
 final class GetProjectsResponseRollingReleaseCanaryResponseHeader {
+
   final bool value;
 
   const GetProjectsResponseRollingReleaseCanaryResponseHeader._(this.value);
 
-  factory GetProjectsResponseRollingReleaseCanaryResponseHeader.fromJson(
-          bool value) =>
-      GetProjectsResponseRollingReleaseCanaryResponseHeader._(value);
+  factory GetProjectsResponseRollingReleaseCanaryResponseHeader.fromJson(bool value) => GetProjectsResponseRollingReleaseCanaryResponseHeader._(value);
 
-  static const false_ =
-      GetProjectsResponseRollingReleaseCanaryResponseHeader._(false);
-  static const true_ =
-      GetProjectsResponseRollingReleaseCanaryResponseHeader._(true);
+  static const false_ = GetProjectsResponseRollingReleaseCanaryResponseHeader._(false);
+  static const true_ = GetProjectsResponseRollingReleaseCanaryResponseHeader._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseRollingReleaseCanaryResponseHeader &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseRollingReleaseCanaryResponseHeader && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

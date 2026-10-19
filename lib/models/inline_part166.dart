@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 166)
 final class StatusResponseVariant1Status {
+
   final String value;
 
   const StatusResponseVariant1Status._(this.value);
 
-  factory StatusResponseVariant1Status.fromJson(String value) =>
-      StatusResponseVariant1Status._(value);
+  factory StatusResponseVariant1Status.fromJson(String value) => StatusResponseVariant1Status._(value);
 
   static const disabled = StatusResponseVariant1Status._('disabled');
   static const enabled = StatusResponseVariant1Status._('enabled');
@@ -19,49 +19,43 @@ final class StatusResponseVariant1Status {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StatusResponseVariant1Status && other.value == value;
+  @override bool operator ==(Object other) => other is StatusResponseVariant1Status && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Present and `true` when the token can read artifacts but cannot upload them.
 final class StatusResponseVariant2ReadOnly {
+
   final bool value;
 
   const StatusResponseVariant2ReadOnly._(this.value);
 
-  factory StatusResponseVariant2ReadOnly.fromJson(bool value) =>
-      StatusResponseVariant2ReadOnly._(value);
+  factory StatusResponseVariant2ReadOnly.fromJson(bool value) => StatusResponseVariant2ReadOnly._(value);
 
   static const false_ = StatusResponseVariant2ReadOnly._(false);
   static const true_ = StatusResponseVariant2ReadOnly._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StatusResponseVariant2ReadOnly && other.value == value;
+  @override bool operator ==(Object other) => other is StatusResponseVariant2ReadOnly && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class StatusResponseVariant2Status {
+
   final String value;
 
   const StatusResponseVariant2Status._(this.value);
 
-  factory StatusResponseVariant2Status.fromJson(String value) =>
-      StatusResponseVariant2Status._(value);
+  factory StatusResponseVariant2Status.fromJson(String value) => StatusResponseVariant2Status._(value);
 
   static const disabled = StatusResponseVariant2Status._('disabled');
   static const enabled = StatusResponseVariant2Status._('enabled');
@@ -70,19 +64,17 @@ final class StatusResponseVariant2Status {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is StatusResponseVariant2Status && other.value == value;
+  @override bool operator ==(Object other) => other is StatusResponseVariant2Status && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `plan` wire field.
 final class TeamBillingPlan {
+
   final String value;
 
   const TeamBillingPlan._(this.value);
@@ -95,161 +87,129 @@ final class TeamBillingPlan {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamBillingPlan && other.value == value;
+  @override bool operator ==(Object other) => other is TeamBillingPlan && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `enabled` wire field.
 final class TeamConnectEnabled {
+
   final bool value;
 
   const TeamConnectEnabled._(this.value);
 
-  factory TeamConnectEnabled.fromJson(bool value) =>
-      TeamConnectEnabled._(value);
+  factory TeamConnectEnabled.fromJson(bool value) => TeamConnectEnabled._(value);
 
   static const false_ = TeamConnectEnabled._(false);
   static const true_ = TeamConnectEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamConnectEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is TeamConnectEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Default continuous-usage billing kind for projects under this team. Absent means projects stay unmetered.
 final class TeamDefaultContinuousUsageKind {
+
   final String value;
 
   const TeamDefaultContinuousUsageKind._(this.value);
 
-  factory TeamDefaultContinuousUsageKind.fromJson(String value) =>
-      TeamDefaultContinuousUsageKind._(value);
+  factory TeamDefaultContinuousUsageKind.fromJson(String value) => TeamDefaultContinuousUsageKind._(value);
 
   static const metered = TeamDefaultContinuousUsageKind._('metered');
   static const unmetered = TeamDefaultContinuousUsageKind._('unmetered');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDefaultContinuousUsageKind && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDefaultContinuousUsageKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Default Passport configuration for new projects in this team.
 final class TeamDefaultPassportDeploymentType {
+
   final String value;
 
   const TeamDefaultPassportDeploymentType._(this.value);
 
-  factory TeamDefaultPassportDeploymentType.fromJson(String value) =>
-      TeamDefaultPassportDeploymentType._(value);
+  factory TeamDefaultPassportDeploymentType.fromJson(String value) => TeamDefaultPassportDeploymentType._(value);
 
   static const all = TeamDefaultPassportDeploymentType._('all');
-  static const allExceptCustomDomains =
-      TeamDefaultPassportDeploymentType._('all_except_custom_domains');
+  static const allExceptCustomDomains = TeamDefaultPassportDeploymentType._('all_except_custom_domains');
   static const preview = TeamDefaultPassportDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      TeamDefaultPassportDeploymentType._(
-          'prod_deployment_urls_and_all_previews');
+  static const prodDeploymentUrlsAndAllPreviews = TeamDefaultPassportDeploymentType._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDefaultPassportDeploymentType && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDefaultPassportDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `teamPermissions[]` wire field.
 final class TeamDefaultRolesTeamPermissionsItem {
+
   final String value;
 
   const TeamDefaultRolesTeamPermissionsItem._(this.value);
 
-  factory TeamDefaultRolesTeamPermissionsItem.fromJson(String value) =>
-      TeamDefaultRolesTeamPermissionsItem._(value);
+  factory TeamDefaultRolesTeamPermissionsItem.fromJson(String value) => TeamDefaultRolesTeamPermissionsItem._(value);
 
-  static const aigatewaybudgetmanager =
-      TeamDefaultRolesTeamPermissionsItem._('AiGatewayBudgetManager');
-  static const aigatewaycredits =
-      TeamDefaultRolesTeamPermissionsItem._('AiGatewayCredits');
-  static const aigatewaysettings =
-      TeamDefaultRolesTeamPermissionsItem._('AiGatewaySettings');
-  static const aigatewaytranscriptsmanager =
-      TeamDefaultRolesTeamPermissionsItem._('AiGatewayTranscriptsManager');
-  static const aigatewaytranscriptsviewer =
-      TeamDefaultRolesTeamPermissionsItem._('AiGatewayTranscriptsViewer');
-  static const aigatewayuser =
-      TeamDefaultRolesTeamPermissionsItem._('AiGatewayUser');
-  static const connectormanager =
-      TeamDefaultRolesTeamPermissionsItem._('ConnectorManager');
-  static const createproject =
-      TeamDefaultRolesTeamPermissionsItem._('CreateProject');
-  static const envvariablemanager =
-      TeamDefaultRolesTeamPermissionsItem._('EnvVariableManager');
-  static const environmentmanager =
-      TeamDefaultRolesTeamPermissionsItem._('EnvironmentManager');
-  static const fullproductiondeployment =
-      TeamDefaultRolesTeamPermissionsItem._('FullProductionDeployment');
-  static const integrationmanager =
-      TeamDefaultRolesTeamPermissionsItem._('IntegrationManager');
+  static const aigatewaybudgetmanager = TeamDefaultRolesTeamPermissionsItem._('AiGatewayBudgetManager');
+  static const aigatewaycredits = TeamDefaultRolesTeamPermissionsItem._('AiGatewayCredits');
+  static const aigatewaysettings = TeamDefaultRolesTeamPermissionsItem._('AiGatewaySettings');
+  static const aigatewaytranscriptsmanager = TeamDefaultRolesTeamPermissionsItem._('AiGatewayTranscriptsManager');
+  static const aigatewaytranscriptsviewer = TeamDefaultRolesTeamPermissionsItem._('AiGatewayTranscriptsViewer');
+  static const aigatewayuser = TeamDefaultRolesTeamPermissionsItem._('AiGatewayUser');
+  static const connectormanager = TeamDefaultRolesTeamPermissionsItem._('ConnectorManager');
+  static const createproject = TeamDefaultRolesTeamPermissionsItem._('CreateProject');
+  static const envvariablemanager = TeamDefaultRolesTeamPermissionsItem._('EnvVariableManager');
+  static const environmentmanager = TeamDefaultRolesTeamPermissionsItem._('EnvironmentManager');
+  static const fullproductiondeployment = TeamDefaultRolesTeamPermissionsItem._('FullProductionDeployment');
+  static const integrationmanager = TeamDefaultRolesTeamPermissionsItem._('IntegrationManager');
   static const orgadmin = TeamDefaultRolesTeamPermissionsItem._('OrgAdmin');
   static const orgviewer = TeamDefaultRolesTeamPermissionsItem._('OrgViewer');
-  static const usageviewer =
-      TeamDefaultRolesTeamPermissionsItem._('UsageViewer');
+  static const usageviewer = TeamDefaultRolesTeamPermissionsItem._('UsageViewer');
   static const v0builder = TeamDefaultRolesTeamPermissionsItem._('V0Builder');
   static const v0chatter = TeamDefaultRolesTeamPermissionsItem._('V0Chatter');
   static const v0viewer = TeamDefaultRolesTeamPermissionsItem._('V0Viewer');
-  static const workflowdecryptor =
-      TeamDefaultRolesTeamPermissionsItem._('WorkflowDecryptor');
+  static const workflowdecryptor = TeamDefaultRolesTeamPermissionsItem._('WorkflowDecryptor');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDefaultRolesTeamPermissionsItem && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDefaultRolesTeamPermissionsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `teamRoles[]` wire field.
 final class TeamDefaultRolesTeamRolesItem {
+
   final String value;
 
   const TeamDefaultRolesTeamRolesItem._(this.value);
 
-  factory TeamDefaultRolesTeamRolesItem.fromJson(String value) =>
-      TeamDefaultRolesTeamRolesItem._(value);
+  factory TeamDefaultRolesTeamRolesItem.fromJson(String value) => TeamDefaultRolesTeamRolesItem._(value);
 
   static const billing = TeamDefaultRolesTeamRolesItem._('BILLING');
   static const contributor = TeamDefaultRolesTeamRolesItem._('CONTRIBUTOR');
@@ -258,83 +218,62 @@ final class TeamDefaultRolesTeamRolesItem {
   static const owner = TeamDefaultRolesTeamRolesItem._('OWNER');
   static const security = TeamDefaultRolesTeamRolesItem._('SECURITY');
   static const viewer = TeamDefaultRolesTeamRolesItem._('VIEWER');
-  static const viewerForPlus =
-      TeamDefaultRolesTeamRolesItem._('VIEWER_FOR_PLUS');
+  static const viewerForPlus = TeamDefaultRolesTeamRolesItem._('VIEWER_FOR_PLUS');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDefaultRolesTeamRolesItem && other.value == value;
+  @override bool operator ==(Object other) => other is TeamDefaultRolesTeamRolesItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `enabled` wire field.
 final class TeamDeploymentPolicyDeploymentSourcesItemEnabled {
+
   final bool value;
 
   const TeamDeploymentPolicyDeploymentSourcesItemEnabled._(this.value);
 
-  factory TeamDeploymentPolicyDeploymentSourcesItemEnabled.fromJson(
-          bool value) =>
-      TeamDeploymentPolicyDeploymentSourcesItemEnabled._(value);
+  factory TeamDeploymentPolicyDeploymentSourcesItemEnabled.fromJson(bool value) => TeamDeploymentPolicyDeploymentSourcesItemEnabled._(value);
 
-  static const false_ =
-      TeamDeploymentPolicyDeploymentSourcesItemEnabled._(false);
+  static const false_ = TeamDeploymentPolicyDeploymentSourcesItemEnabled._(false);
   static const true_ = TeamDeploymentPolicyDeploymentSourcesItemEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDeploymentPolicyDeploymentSourcesItemEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentPolicyDeploymentSourcesItemEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Customer-configurable deployment sources. Every deploy classifies to exactly one. JSON schema in `packages/deployment-policy/schemas/body.ts` enumerates exactly these values. - `'git'` — git provider webhook. - `'cli'` — Vercel CLI (legacy classic-token CLI and SIWV CLI both). - `'rest-api'` — direct user/team-token REST upload. Does NOT cover deploy hooks, Marketplace integrations, or first-party app tokens. - `'deploy-hook'` — project deploy-hook URL. The URL is the credential. - `'integration'` — third-party Marketplace actor: Marketplace integration token, user-delegated OAuth from a Marketplace app, or an unrecognized third-party Vercel App. First-party Vercel Apps are never `'integration'`. - `'v0'` — the v0 product surface (entitlement-gated). v0 deploys through the CLI under the hood, but classifies as its own source so a team can allow or deny v0 independently of `'cli'`. First-party Vercel apps (Toolbar, etc.) classify as `'first-party'` — see `ClassifiedSource` in `./checks`. They're not in this union because they aren't customer-configurable; they bypass `checkDeploymentSources` entirely. v0 is intentionally NOT among them: like the CLI, it's a real product surface and is policy-controllable.
 final class TeamDeploymentPolicyDeploymentSourcesItemSourcesItem {
+
   final String value;
 
   const TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._(this.value);
 
-  factory TeamDeploymentPolicyDeploymentSourcesItemSourcesItem.fromJson(
-          String value) =>
-      TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._(value);
+  factory TeamDeploymentPolicyDeploymentSourcesItemSourcesItem.fromJson(String value) => TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._(value);
 
-  static const cli =
-      TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('cli');
-  static const deployHook =
-      TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('deploy-hook');
-  static const git =
-      TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('git');
-  static const integration =
-      TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('integration');
-  static const restApi =
-      TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('rest-api');
-  static const v0 =
-      TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('v0');
+  static const cli = TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('cli');
+  static const deployHook = TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('deploy-hook');
+  static const git = TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('git');
+  static const integration = TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('integration');
+  static const restApi = TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('rest-api');
+  static const v0 = TeamDeploymentPolicyDeploymentSourcesItemSourcesItem._('v0');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDeploymentPolicyDeploymentSourcesItemSourcesItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentPolicyDeploymentSourcesItemSourcesItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

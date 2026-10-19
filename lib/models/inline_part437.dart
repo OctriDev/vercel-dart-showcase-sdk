@@ -5,393 +5,213 @@ part of 'inline.dart';
 
 // Inline operation models (part 437)
 final class CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductReplSupportsReadOnlyMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductShowSSOLinkOnProjectConnection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          value);
+  factory CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(value);
 
-  static const ai =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'ai');
-  static const authentication =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'authentication');
-  static const checks =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'checks');
-  static const experimentation =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'experimentation');
-  static const logdrain =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'logDrain');
-  static const messaging =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'messaging');
-  static const observability =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'observability');
-  static const other =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'other');
-  static const storage =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'storage');
-  static const tracedrain =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'traceDrain');
-  static const video =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'video');
-  static const workflow =
-      CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._(
-          'workflow');
+  static const ai = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('ai');
+  static const authentication = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('authentication');
+  static const checks = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('checks');
+  static const experimentation = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('experimentation');
+  static const logdrain = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('logDrain');
+  static const messaging = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('messaging');
+  static const observability = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('observability');
+  static const other = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('other');
+  static const storage = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('storage');
+  static const tracedrain = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('traceDrain');
+  static const video = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('video');
+  static const workflow = CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem._('workflow');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductSupportedProtocolsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductTagsItem {
+
   final String value;
 
   const CreateIntegrationStoreDirectResponseStoreProductTagsItem._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductTagsItem.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductTagsItem.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductTagsItem._(value);
 
-  static const ai =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('ai');
-  static const authentication =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'authentication');
-  static const blob =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('blob');
-  static const checks =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('checks');
-  static const drains =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('drains');
-  static const edgeConfig =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('edge-config');
-  static const experimentation =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'experimentation');
-  static const kv =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('kv');
-  static const libsql =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('libsql');
-  static const logdrain =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('logDrain');
-  static const mcp =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('mcp');
-  static const messaging =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('messaging');
-  static const mysql =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('mysql');
-  static const observability =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'observability');
-  static const other =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('other');
-  static const postgres =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('postgres');
-  static const rds =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('rds');
-  static const redis =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('redis');
-  static const sqlite =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('sqlite');
-  static const storage =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('storage');
-  static const tagAgents =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_agents');
-  static const tagAi =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_ai');
-  static const tagAnalytics =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_analytics');
-  static const tagAuthentication =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_authentication');
-  static const tagChecks =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_checks');
-  static const tagCms =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_cms');
-  static const tagCodeRepository =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_code_repository');
-  static const tagCodeReview =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_code_review');
-  static const tagCodeSecurity =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_code_security');
-  static const tagCodeTesting =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_code_testing');
-  static const tagCommerce =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_commerce');
-  static const tagDatabases =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_databases');
-  static const tagDevTools =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_dev_tools');
-  static const tagExperimentation =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_experimentation');
-  static const tagFlags =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_flags');
-  static const tagLogdrain =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_logDrain');
-  static const tagLogging =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_logging');
-  static const tagMessaging =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_messaging');
-  static const tagMonitoring =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_monitoring');
-  static const tagObservability =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_observability');
-  static const tagOther =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_other');
-  static const tagPayments =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_payments');
-  static const tagPerformance =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_performance');
-  static const tagProductivity =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_productivity');
-  static const tagSearching =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_searching');
-  static const tagSecurity =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_security');
-  static const tagStorage =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_storage');
-  static const tagSupportAgent =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_support_agent');
-  static const tagTesting =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_testing');
-  static const tagTracedrain =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_traceDrain');
-  static const tagVideo =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_video');
-  static const tagWebAutomation =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_web_automation');
-  static const tagWorkflow =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._(
-          'tag_workflow');
-  static const tracedrain =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('traceDrain');
-  static const vector =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('vector');
-  static const video =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('video');
-  static const workflow =
-      CreateIntegrationStoreDirectResponseStoreProductTagsItem._('workflow');
+  static const ai = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('ai');
+  static const authentication = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('authentication');
+  static const blob = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('blob');
+  static const checks = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('checks');
+  static const drains = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('drains');
+  static const edgeConfig = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('edge-config');
+  static const experimentation = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('experimentation');
+  static const kv = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('kv');
+  static const libsql = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('libsql');
+  static const logdrain = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('logDrain');
+  static const mcp = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('mcp');
+  static const messaging = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('messaging');
+  static const mysql = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('mysql');
+  static const observability = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('observability');
+  static const other = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('other');
+  static const postgres = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('postgres');
+  static const rds = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('rds');
+  static const redis = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('redis');
+  static const sqlite = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('sqlite');
+  static const storage = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('storage');
+  static const tagAgents = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_agents');
+  static const tagAi = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_ai');
+  static const tagAnalytics = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_analytics');
+  static const tagAuthentication = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_authentication');
+  static const tagChecks = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_checks');
+  static const tagCms = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_cms');
+  static const tagCodeRepository = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_code_repository');
+  static const tagCodeReview = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_code_review');
+  static const tagCodeSecurity = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_code_security');
+  static const tagCodeTesting = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_code_testing');
+  static const tagCommerce = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_commerce');
+  static const tagDatabases = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_databases');
+  static const tagDevTools = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_dev_tools');
+  static const tagExperimentation = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_experimentation');
+  static const tagFlags = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_flags');
+  static const tagLogdrain = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_logDrain');
+  static const tagLogging = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_logging');
+  static const tagMessaging = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_messaging');
+  static const tagMonitoring = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_monitoring');
+  static const tagObservability = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_observability');
+  static const tagOther = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_other');
+  static const tagPayments = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_payments');
+  static const tagPerformance = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_performance');
+  static const tagProductivity = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_productivity');
+  static const tagSearching = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_searching');
+  static const tagSecurity = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_security');
+  static const tagStorage = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_storage');
+  static const tagSupportAgent = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_support_agent');
+  static const tagTesting = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_testing');
+  static const tagTracedrain = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_traceDrain');
+  static const tagVideo = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_video');
+  static const tagWebAutomation = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_web_automation');
+  static const tagWorkflow = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('tag_workflow');
+  static const tracedrain = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('traceDrain');
+  static const vector = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('vector');
+  static const video = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('video');
+  static const workflow = CreateIntegrationStoreDirectResponseStoreProductTagsItem._('workflow');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateIntegrationStoreDirectResponseStoreProductTagsItem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductTagsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item._(value);
 
-  static const bitbucket =
-      CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item
-          ._('bitbucket');
-  static const github =
-      CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item
-          ._('github');
-  static const gitlab =
-      CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item
-          ._('gitlab');
+  static const bitbucket = CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item._('bitbucket');
+  static const github = CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item._('github');
+  static const gitlab = CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant0Item && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1 {
+
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1.fromJson(
-          String value) =>
-      CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1._(value);
 
-  static const unknown =
-      CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1
-          ._('*');
+  static const unknown = CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1._('*');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvidersVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired {
+
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired._(
-      this.value);
+  const CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired._(this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired.fromJson(
-          bool value) =>
-      CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired
-          ._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired._(value);
 
-  static const false_ =
-      CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired
-          ._(false);
-  static const true_ =
-      CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired
-          ._(true);
+  static const false_ = CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired._(false);
+  static const true_ = CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsRequired && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -6,81 +6,60 @@ part of 'inline.dart';
 // Inline operation models (part 153)
 /// Required enumerated value serialized in the `name` wire field.
 final class ListEventTypesResponseCategoriesItemName {
+
   final String value;
 
   const ListEventTypesResponseCategoriesItemName._(this.value);
 
-  factory ListEventTypesResponseCategoriesItemName.fromJson(String value) =>
-      ListEventTypesResponseCategoriesItemName._(value);
+  factory ListEventTypesResponseCategoriesItemName.fromJson(String value) => ListEventTypesResponseCategoriesItemName._(value);
 
   static const account = ListEventTypesResponseCategoriesItemName._('account');
   static const ai = ListEventTypesResponseCategoriesItemName._('ai');
-  static const aiGateway =
-      ListEventTypesResponseCategoriesItemName._('ai-gateway');
+  static const aiGateway = ListEventTypesResponseCategoriesItemName._('ai-gateway');
   static const billing = ListEventTypesResponseCategoriesItemName._('billing');
   static const connect = ListEventTypesResponseCategoriesItemName._('connect');
-  static const deployment =
-      ListEventTypesResponseCategoriesItemName._('deployment');
+  static const deployment = ListEventTypesResponseCategoriesItemName._('deployment');
   static const domain = ListEventTypesResponseCategoriesItemName._('domain');
   static const edge = ListEventTypesResponseCategoriesItemName._('edge');
-  static const envVariable =
-      ListEventTypesResponseCategoriesItemName._('env-variable');
-  static const featureFlags =
-      ListEventTypesResponseCategoriesItemName._('feature-flags');
-  static const firewall =
-      ListEventTypesResponseCategoriesItemName._('firewall');
-  static const integration =
-      ListEventTypesResponseCategoriesItemName._('integration');
-  static const microfrontends =
-      ListEventTypesResponseCategoriesItemName._('microfrontends');
+  static const envVariable = ListEventTypesResponseCategoriesItemName._('env-variable');
+  static const featureFlags = ListEventTypesResponseCategoriesItemName._('feature-flags');
+  static const firewall = ListEventTypesResponseCategoriesItemName._('firewall');
+  static const integration = ListEventTypesResponseCategoriesItemName._('integration');
+  static const microfrontends = ListEventTypesResponseCategoriesItemName._('microfrontends');
   static const network = ListEventTypesResponseCategoriesItemName._('network');
-  static const observability =
-      ListEventTypesResponseCategoriesItemName._('observability');
+  static const observability = ListEventTypesResponseCategoriesItemName._('observability');
   static const other = ListEventTypesResponseCategoriesItemName._('other');
   static const project = ListEventTypesResponseCategoriesItemName._('project');
-  static const security =
-      ListEventTypesResponseCategoriesItemName._('security');
+  static const security = ListEventTypesResponseCategoriesItemName._('security');
   static const storage = ListEventTypesResponseCategoriesItemName._('storage');
   static const team = ListEventTypesResponseCategoriesItemName._('team');
   static const v0 = ListEventTypesResponseCategoriesItemName._('v0');
-  static const vercelApp =
-      ListEventTypesResponseCategoriesItemName._('vercel-app');
-  static const workflow =
-      ListEventTypesResponseCategoriesItemName._('workflow');
+  static const vercelApp = ListEventTypesResponseCategoriesItemName._('vercel-app');
+  static const workflow = ListEventTypesResponseCategoriesItemName._('workflow');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListEventTypesResponseCategoriesItemName && other.value == value;
+  @override bool operator ==(Object other) => other is ListEventTypesResponseCategoriesItemName && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind {
   projectGrant;
 
-  static ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind fromJson(
-      String value) {
+  static ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'project-grant':
-        return ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind
-            .projectGrant;
-      default:
-        throw ArgumentError(
-            'Unknown ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind: $value');
+      case 'project-grant': return ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind.projectGrant;
+      default: throw ArgumentError('Unknown ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind
-            .projectGrant:
-        return 'project-grant';
+      case ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind.projectGrant: return 'project-grant';
     }
   }
 
@@ -91,23 +70,16 @@ enum ListKmsIssuersResponseIssuersItemPoliciesItemVariant0Kind {
 enum ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind {
   connexGrant;
 
-  static ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind fromJson(
-      String value) {
+  static ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'connex-grant':
-        return ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind
-            .connexGrant;
-      default:
-        throw ArgumentError(
-            'Unknown ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind: $value');
+      case 'connex-grant': return ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind.connexGrant;
+      default: throw ArgumentError('Unknown ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind
-            .connexGrant:
-        return 'connex-grant';
+      case ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind.connexGrant: return 'connex-grant';
     }
   }
 
@@ -118,22 +90,16 @@ enum ListKmsIssuersResponseIssuersItemPoliciesItemVariant1Kind {
 enum ListProjectChecksResponseChecksItemSourceVariant0Kind {
   integration;
 
-  static ListProjectChecksResponseChecksItemSourceVariant0Kind fromJson(
-      String value) {
+  static ListProjectChecksResponseChecksItemSourceVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return ListProjectChecksResponseChecksItemSourceVariant0Kind
-            .integration;
-      default:
-        throw ArgumentError(
-            'Unknown ListProjectChecksResponseChecksItemSourceVariant0Kind: $value');
+      case 'integration': return ListProjectChecksResponseChecksItemSourceVariant0Kind.integration;
+      default: throw ArgumentError('Unknown ListProjectChecksResponseChecksItemSourceVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectChecksResponseChecksItemSourceVariant0Kind.integration:
-        return 'integration';
+      case ListProjectChecksResponseChecksItemSourceVariant0Kind.integration: return 'integration';
     }
   }
 
@@ -144,21 +110,16 @@ enum ListProjectChecksResponseChecksItemSourceVariant0Kind {
 enum ListProjectChecksResponseChecksItemSourceVariant1Kind {
   webhook;
 
-  static ListProjectChecksResponseChecksItemSourceVariant1Kind fromJson(
-      String value) {
+  static ListProjectChecksResponseChecksItemSourceVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'webhook':
-        return ListProjectChecksResponseChecksItemSourceVariant1Kind.webhook;
-      default:
-        throw ArgumentError(
-            'Unknown ListProjectChecksResponseChecksItemSourceVariant1Kind: $value');
+      case 'webhook': return ListProjectChecksResponseChecksItemSourceVariant1Kind.webhook;
+      default: throw ArgumentError('Unknown ListProjectChecksResponseChecksItemSourceVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectChecksResponseChecksItemSourceVariant1Kind.webhook:
-        return 'webhook';
+      case ListProjectChecksResponseChecksItemSourceVariant1Kind.webhook: return 'webhook';
     }
   }
 
@@ -169,22 +130,16 @@ enum ListProjectChecksResponseChecksItemSourceVariant1Kind {
 enum ListProjectChecksResponseChecksItemSourceVariant2Kind {
   gitProvider;
 
-  static ListProjectChecksResponseChecksItemSourceVariant2Kind fromJson(
-      String value) {
+  static ListProjectChecksResponseChecksItemSourceVariant2Kind fromJson(String value) {
     switch (value) {
-      case 'git-provider':
-        return ListProjectChecksResponseChecksItemSourceVariant2Kind
-            .gitProvider;
-      default:
-        throw ArgumentError(
-            'Unknown ListProjectChecksResponseChecksItemSourceVariant2Kind: $value');
+      case 'git-provider': return ListProjectChecksResponseChecksItemSourceVariant2Kind.gitProvider;
+      default: throw ArgumentError('Unknown ListProjectChecksResponseChecksItemSourceVariant2Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectChecksResponseChecksItemSourceVariant2Kind.gitProvider:
-        return 'git-provider';
+      case ListProjectChecksResponseChecksItemSourceVariant2Kind.gitProvider: return 'git-provider';
     }
   }
 
@@ -193,159 +148,115 @@ enum ListProjectChecksResponseChecksItemSourceVariant2Kind {
 }
 
 final class ListProjectChecksResponseChecksItemSourceVariant2Provider {
+
   final String value;
 
   const ListProjectChecksResponseChecksItemSourceVariant2Provider._(this.value);
 
-  factory ListProjectChecksResponseChecksItemSourceVariant2Provider.fromJson(
-          String value) =>
-      ListProjectChecksResponseChecksItemSourceVariant2Provider._(value);
+  factory ListProjectChecksResponseChecksItemSourceVariant2Provider.fromJson(String value) => ListProjectChecksResponseChecksItemSourceVariant2Provider._(value);
 
-  static const bitbucket =
-      ListProjectChecksResponseChecksItemSourceVariant2Provider._('bitbucket');
-  static const github =
-      ListProjectChecksResponseChecksItemSourceVariant2Provider._('github');
-  static const gitlab =
-      ListProjectChecksResponseChecksItemSourceVariant2Provider._('gitlab');
+  static const bitbucket = ListProjectChecksResponseChecksItemSourceVariant2Provider._('bitbucket');
+  static const github = ListProjectChecksResponseChecksItemSourceVariant2Provider._('github');
+  static const gitlab = ListProjectChecksResponseChecksItemSourceVariant2Provider._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectChecksResponseChecksItemSourceVariant2Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectChecksResponseChecksItemSourceVariant2Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode {
+
   final double value;
 
-  const ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(
-      this.value);
+  const ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(this.value);
 
-  factory ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode.fromJson(
-          double value) =>
-      ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(value);
+  factory ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode.fromJson(double value) => ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(value);
 
-  static const v301 =
-      ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(301);
-  static const v302 =
-      ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(302);
-  static const v307 =
-      ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(307);
-  static const v308 =
-      ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(308);
+  static const v301 = ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(301);
+  static const v302 = ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(302);
+  static const v307 = ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(307);
+  static const v308 = ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode._(308);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsDomainsResponseVariant0DomainsItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class ListProjectsDomainsResponseVariant0DomainsItemVerified {
+
   final bool value;
 
   const ListProjectsDomainsResponseVariant0DomainsItemVerified._(this.value);
 
-  factory ListProjectsDomainsResponseVariant0DomainsItemVerified.fromJson(
-          bool value) =>
-      ListProjectsDomainsResponseVariant0DomainsItemVerified._(value);
+  factory ListProjectsDomainsResponseVariant0DomainsItemVerified.fromJson(bool value) => ListProjectsDomainsResponseVariant0DomainsItemVerified._(value);
 
-  static const false_ =
-      ListProjectsDomainsResponseVariant0DomainsItemVerified._(false);
-  static const true_ =
-      ListProjectsDomainsResponseVariant0DomainsItemVerified._(true);
+  static const false_ = ListProjectsDomainsResponseVariant0DomainsItemVerified._(false);
+  static const true_ = ListProjectsDomainsResponseVariant0DomainsItemVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectsDomainsResponseVariant0DomainsItemVerified &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsDomainsResponseVariant0DomainsItemVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode {
+
   final double value;
 
-  const ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(
-      this.value);
+  const ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(this.value);
 
-  factory ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode.fromJson(
-          double value) =>
-      ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(value);
+  factory ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode.fromJson(double value) => ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(value);
 
-  static const v301 =
-      ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(301);
-  static const v302 =
-      ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(302);
-  static const v307 =
-      ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(307);
-  static const v308 =
-      ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(308);
+  static const v301 = ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(301);
+  static const v302 = ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(302);
+  static const v307 = ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(307);
+  static const v308 = ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode._(308);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsDomainsResponseVariant1DomainsItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class ListProjectsDomainsResponseVariant1DomainsItemVerified {
+
   final bool value;
 
   const ListProjectsDomainsResponseVariant1DomainsItemVerified._(this.value);
 
-  factory ListProjectsDomainsResponseVariant1DomainsItemVerified.fromJson(
-          bool value) =>
-      ListProjectsDomainsResponseVariant1DomainsItemVerified._(value);
+  factory ListProjectsDomainsResponseVariant1DomainsItemVerified.fromJson(bool value) => ListProjectsDomainsResponseVariant1DomainsItemVerified._(value);
 
-  static const false_ =
-      ListProjectsDomainsResponseVariant1DomainsItemVerified._(false);
-  static const true_ =
-      ListProjectsDomainsResponseVariant1DomainsItemVerified._(true);
+  static const false_ = ListProjectsDomainsResponseVariant1DomainsItemVerified._(false);
+  static const true_ = ListProjectsDomainsResponseVariant1DomainsItemVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListProjectsDomainsResponseVariant1DomainsItemVerified &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListProjectsDomainsResponseVariant1DomainsItemVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum ListProjectsResponseItemCreatorVariant0Type {
@@ -353,18 +264,14 @@ enum ListProjectsResponseItemCreatorVariant0Type {
 
   static ListProjectsResponseItemCreatorVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user':
-        return ListProjectsResponseItemCreatorVariant0Type.user;
-      default:
-        throw ArgumentError(
-            'Unknown ListProjectsResponseItemCreatorVariant0Type: $value');
+      case 'user': return ListProjectsResponseItemCreatorVariant0Type.user;
+      default: throw ArgumentError('Unknown ListProjectsResponseItemCreatorVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListProjectsResponseItemCreatorVariant0Type.user:
-        return 'user';
+      case ListProjectsResponseItemCreatorVariant0Type.user: return 'user';
     }
   }
 

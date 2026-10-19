@@ -5,36 +5,33 @@ part of 'inline.dart';
 
 // Inline operation models (part 539)
 final class CreateSandboxesV4RequestBodyPortsItem {
+
   final double value;
 
   const CreateSandboxesV4RequestBodyPortsItem._(this.value);
 
-  factory CreateSandboxesV4RequestBodyPortsItem.fromJson(double value) =>
-      CreateSandboxesV4RequestBodyPortsItem._(value);
+  factory CreateSandboxesV4RequestBodyPortsItem.fromJson(double value) => CreateSandboxesV4RequestBodyPortsItem._(value);
 
   static const v23456 = CreateSandboxesV4RequestBodyPortsItem._(23456);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSandboxesV4RequestBodyPortsItem && other.value == value;
+  @override bool operator ==(Object other) => other is CreateSandboxesV4RequestBodyPortsItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The Vercel region in which to create the sandbox.
 final class CreateSandboxesV4RequestBodyRegion {
+
   final String value;
 
   const CreateSandboxesV4RequestBodyRegion._(this.value);
 
-  factory CreateSandboxesV4RequestBodyRegion.fromJson(String value) =>
-      CreateSandboxesV4RequestBodyRegion._(value);
+  factory CreateSandboxesV4RequestBodyRegion.fromJson(String value) => CreateSandboxesV4RequestBodyRegion._(value);
 
   static const iad1 = CreateSandboxesV4RequestBodyRegion._('iad1');
   static const sfo1 = CreateSandboxesV4RequestBodyRegion._('sfo1');
@@ -58,53 +55,43 @@ final class CreateSandboxesV4RequestBodyRegion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSandboxesV4RequestBodyRegion && other.value == value;
+  @override bool operator ==(Object other) => other is CreateSandboxesV4RequestBodyRegion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ListDomainsResponseDomainsItemCreatorIsDomainReseller {
+
   final bool value;
 
   const ListDomainsResponseDomainsItemCreatorIsDomainReseller._(this.value);
 
-  factory ListDomainsResponseDomainsItemCreatorIsDomainReseller.fromJson(
-          bool value) =>
-      ListDomainsResponseDomainsItemCreatorIsDomainReseller._(value);
+  factory ListDomainsResponseDomainsItemCreatorIsDomainReseller.fromJson(bool value) => ListDomainsResponseDomainsItemCreatorIsDomainReseller._(value);
 
-  static const false_ =
-      ListDomainsResponseDomainsItemCreatorIsDomainReseller._(false);
-  static const true_ =
-      ListDomainsResponseDomainsItemCreatorIsDomainReseller._(true);
+  static const false_ = ListDomainsResponseDomainsItemCreatorIsDomainReseller._(false);
+  static const true_ = ListDomainsResponseDomainsItemCreatorIsDomainReseller._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDomainsResponseDomainsItemCreatorIsDomainReseller &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDomainsResponseDomainsItemCreatorIsDomainReseller && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.
 final class ListDomainsResponseDomainsItemEchMode {
+
   final String value;
 
   const ListDomainsResponseDomainsItemEchMode._(this.value);
 
-  factory ListDomainsResponseDomainsItemEchMode.fromJson(String value) =>
-      ListDomainsResponseDomainsItemEchMode._(value);
+  factory ListDomainsResponseDomainsItemEchMode.fromJson(String value) => ListDomainsResponseDomainsItemEchMode._(value);
 
   static const auto = ListDomainsResponseDomainsItemEchMode._('auto');
   static const disabled = ListDomainsResponseDomainsItemEchMode._('disabled');
@@ -112,131 +99,110 @@ final class ListDomainsResponseDomainsItemEchMode {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDomainsResponseDomainsItemEchMode && other.value == value;
+  @override bool operator ==(Object other) => other is ListDomainsResponseDomainsItemEchMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Indicates whether the domain is set to automatically renew.
 final class ListDomainsResponseDomainsItemRenew {
+
   final bool value;
 
   const ListDomainsResponseDomainsItemRenew._(this.value);
 
-  factory ListDomainsResponseDomainsItemRenew.fromJson(bool value) =>
-      ListDomainsResponseDomainsItemRenew._(value);
+  factory ListDomainsResponseDomainsItemRenew.fromJson(bool value) => ListDomainsResponseDomainsItemRenew._(value);
 
   static const false_ = ListDomainsResponseDomainsItemRenew._(false);
   static const true_ = ListDomainsResponseDomainsItemRenew._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDomainsResponseDomainsItemRenew && other.value == value;
+  @override bool operator ==(Object other) => other is ListDomainsResponseDomainsItemRenew && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of service the domain is handled by. `external` if the DNS is externally handled, `zeit.world` if handled with Vercel, or `na` if the service is not available.
 final class ListDomainsResponseDomainsItemServiceType {
+
   final String value;
 
   const ListDomainsResponseDomainsItemServiceType._(this.value);
 
-  factory ListDomainsResponseDomainsItemServiceType.fromJson(String value) =>
-      ListDomainsResponseDomainsItemServiceType._(value);
+  factory ListDomainsResponseDomainsItemServiceType.fromJson(String value) => ListDomainsResponseDomainsItemServiceType._(value);
 
-  static const external_ =
-      ListDomainsResponseDomainsItemServiceType._('external');
+  static const external_ = ListDomainsResponseDomainsItemServiceType._('external');
   static const na = ListDomainsResponseDomainsItemServiceType._('na');
-  static const zeitWorld =
-      ListDomainsResponseDomainsItemServiceType._('zeit.world');
+  static const zeitWorld = ListDomainsResponseDomainsItemServiceType._('zeit.world');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDomainsResponseDomainsItemServiceType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is ListDomainsResponseDomainsItemServiceType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// If the domain has the ownership verified.
 final class ListDomainsResponseDomainsItemVerified {
+
   final bool value;
 
   const ListDomainsResponseDomainsItemVerified._(this.value);
 
-  factory ListDomainsResponseDomainsItemVerified.fromJson(bool value) =>
-      ListDomainsResponseDomainsItemVerified._(value);
+  factory ListDomainsResponseDomainsItemVerified.fromJson(bool value) => ListDomainsResponseDomainsItemVerified._(value);
 
   static const false_ = ListDomainsResponseDomainsItemVerified._(false);
   static const true_ = ListDomainsResponseDomainsItemVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ListDomainsResponseDomainsItemVerified && other.value == value;
+  @override bool operator ==(Object other) => other is ListDomainsResponseDomainsItemVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDomainsResponseDomainCreatorIsDomainReseller {
+
   final bool value;
 
   const GetDomainsResponseDomainCreatorIsDomainReseller._(this.value);
 
-  factory GetDomainsResponseDomainCreatorIsDomainReseller.fromJson(
-          bool value) =>
-      GetDomainsResponseDomainCreatorIsDomainReseller._(value);
+  factory GetDomainsResponseDomainCreatorIsDomainReseller.fromJson(bool value) => GetDomainsResponseDomainCreatorIsDomainReseller._(value);
 
-  static const false_ =
-      GetDomainsResponseDomainCreatorIsDomainReseller._(false);
+  static const false_ = GetDomainsResponseDomainCreatorIsDomainReseller._(false);
   static const true_ = GetDomainsResponseDomainCreatorIsDomainReseller._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainsResponseDomainCreatorIsDomainReseller &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainsResponseDomainCreatorIsDomainReseller && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.
 final class GetDomainsResponseDomainEchMode {
+
   final String value;
 
   const GetDomainsResponseDomainEchMode._(this.value);
 
-  factory GetDomainsResponseDomainEchMode.fromJson(String value) =>
-      GetDomainsResponseDomainEchMode._(value);
+  factory GetDomainsResponseDomainEchMode.fromJson(String value) => GetDomainsResponseDomainEchMode._(value);
 
   static const auto = GetDomainsResponseDomainEchMode._('auto');
   static const disabled = GetDomainsResponseDomainEchMode._('disabled');
@@ -244,50 +210,44 @@ final class GetDomainsResponseDomainEchMode {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainsResponseDomainEchMode && other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainsResponseDomainEchMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Indicates whether the domain is set to automatically renew.
 final class GetDomainsResponseDomainRenew {
+
   final bool value;
 
   const GetDomainsResponseDomainRenew._(this.value);
 
-  factory GetDomainsResponseDomainRenew.fromJson(bool value) =>
-      GetDomainsResponseDomainRenew._(value);
+  factory GetDomainsResponseDomainRenew.fromJson(bool value) => GetDomainsResponseDomainRenew._(value);
 
   static const false_ = GetDomainsResponseDomainRenew._(false);
   static const true_ = GetDomainsResponseDomainRenew._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainsResponseDomainRenew && other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainsResponseDomainRenew && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of service the domain is handled by. `external` if the DNS is externally handled, `zeit.world` if handled with Vercel, or `na` if the service is not available.
 final class GetDomainsResponseDomainServiceType {
+
   final String value;
 
   const GetDomainsResponseDomainServiceType._(this.value);
 
-  factory GetDomainsResponseDomainServiceType.fromJson(String value) =>
-      GetDomainsResponseDomainServiceType._(value);
+  factory GetDomainsResponseDomainServiceType.fromJson(String value) => GetDomainsResponseDomainServiceType._(value);
 
   static const external_ = GetDomainsResponseDomainServiceType._('external');
   static const na = GetDomainsResponseDomainServiceType._('na');
@@ -295,37 +255,31 @@ final class GetDomainsResponseDomainServiceType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainsResponseDomainServiceType && other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainsResponseDomainServiceType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDomainsResponseDomainSuffix {
+
   final bool value;
 
   const GetDomainsResponseDomainSuffix._(this.value);
 
-  factory GetDomainsResponseDomainSuffix.fromJson(bool value) =>
-      GetDomainsResponseDomainSuffix._(value);
+  factory GetDomainsResponseDomainSuffix.fromJson(bool value) => GetDomainsResponseDomainSuffix._(value);
 
   static const false_ = GetDomainsResponseDomainSuffix._(false);
   static const true_ = GetDomainsResponseDomainSuffix._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDomainsResponseDomainSuffix && other.value == value;
+  @override bool operator ==(Object other) => other is GetDomainsResponseDomainSuffix && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

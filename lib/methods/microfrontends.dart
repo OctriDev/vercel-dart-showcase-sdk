@@ -20,10 +20,8 @@ Future<Map<String, dynamic>> getMicrofrontendsGroups(ClientConfig config,
           'GET', '/v1/microfrontends/groups',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getMicrofrontendsGroups',
@@ -32,34 +30,33 @@ Future<Map<String, dynamic>> getMicrofrontendsGroups(ClientConfig config,
       .data;
 }
 
+
 /// Lists the projects in a microfrontends group. Use `groupId` to identify the group, and optionally use `teamId` or `slug` to specify the team context.
 ///
 /// Get the microfrontends for a given group ID.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetMicrofrontendsInGroupResponse> getMicrofrontendsInGroup(
-    ClientConfig config,
-    {required String groupId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetMicrofrontendsInGroupResponse>
+    getMicrofrontendsInGroup(ClientConfig config,
+        {required String groupId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetMicrofrontendsInGroupResponse>('GET',
           '/v1/microfrontends/groups/${Uri.encodeComponent(groupId.toString())}/projects',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getMicrofrontendsInGroup',
-          fromJsonRaw: (value) => GetMicrofrontendsInGroupResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetMicrofrontendsInGroupResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the microfrontends configuration for a specific deployment. Supply the deployment identifier and, when needed, `teamId` or `slug` to scope the request to a team.
 ///
@@ -68,28 +65,26 @@ Future<GetMicrofrontendsInGroupResponse> getMicrofrontendsInGroup(
 /// [deploymentId] The unique deployment identifier
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetMicrofrontendsConfigResponse> getMicrofrontendsConfig(
-    ClientConfig config,
-    {required String deploymentId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetMicrofrontendsConfigResponse>
+    getMicrofrontendsConfig(ClientConfig config,
+        {required String deploymentId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetMicrofrontendsConfigResponse>('GET',
           '/v1/microfrontends/${Uri.encodeComponent(deploymentId.toString())}/config',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getMicrofrontendsConfig',
-          fromJsonRaw: (value) => GetMicrofrontendsConfigResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetMicrofrontendsConfigResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves the production microfrontends configuration for a project. Identify the project with `projectIdOrName` and use `teamId` or `slug` to scope the request to a team when needed.
 ///
@@ -108,19 +103,16 @@ Future<GetMicrofrontendsConfigForProjectResponse>
           '/v1/microfrontends/projects/${Uri.encodeComponent(projectIdOrName.toString())}/production-mfe-config',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getMicrofrontendsConfigForProject',
-          fromJsonRaw: (value) =>
-              GetMicrofrontendsConfigForProjectResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetMicrofrontendsConfigForProjectResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a microfrontends group and attaches multiple projects in one request. Provide `groupName`, a `defaultApp` with a project ID, and `otherApplications` with the additional project IDs and optional routes.
 ///
@@ -136,11 +128,8 @@ Future<GetMicrofrontendsConfigForProjectResponse>
 Future<CreateMicrofrontendsGroupWithApplicationsResponse>
     createMicrofrontendsGroupWithApplications(ClientConfig config,
         {required String groupName,
-        required CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp
-            defaultApp,
-        required List<
-                CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem>
-            otherApplications,
+        required CreateMicrofrontendsGroupWithApplicationsRequestBodyDefaultApp defaultApp,
+        required List<CreateMicrofrontendsGroupWithApplicationsRequestBodyOtherApplicationsItem> otherApplications,
         SdkOptional<String> teamId = const SdkOmitted(),
         SdkOptional<String> slug = const SdkOmitted(),
         RequestOptions? requestOptions}) async {
@@ -148,10 +137,8 @@ Future<CreateMicrofrontendsGroupWithApplicationsResponse>
           'POST', '/v1/microfrontends/group',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'groupName': groupName,
@@ -160,9 +147,7 @@ Future<CreateMicrofrontendsGroupWithApplicationsResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createMicrofrontendsGroupWithApplications',
-          fromJsonRaw: (value) =>
-              CreateMicrofrontendsGroupWithApplicationsResponse.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateMicrofrontendsGroupWithApplicationsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

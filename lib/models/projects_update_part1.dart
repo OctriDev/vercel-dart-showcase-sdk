@@ -7,46 +7,32 @@ part of 'projects_update.dart';
 class UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
-
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App(
-      {this.clientId = const SdkOmitted(), required this.id});
+  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App({this.clientId = const SdkOmitted(), required this.id});
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App Function(
-      {SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App _copyWith(
-          {Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App(
-        clientId: identical(clientId, sdkOmittedValue)
-            ? this.clientId
-            : clientId as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App(
+    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App(
-        clientId: json['clientId'] != null
-            ? SdkPresent((json['clientId'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App(
+    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (clientId) {
-          SdkPresent<String>(value: final value) => {
-              'clientId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-      };
+    ...switch (clientId) {
+      SdkPresent<String>(value: final value) => {'clientId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+  };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
@@ -56,43 +42,24 @@ class UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0 {
   final UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App app;
   final UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type type_;
 
-  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
-      {required this.app, required this.type_});
+  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0({required this.app, required this.type_});
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0 Function(
-          {UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App app,
-          UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type type_})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0 Function({UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App app, UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0 _copyWith(
-          {Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
-        app: identical(app, sdkOmittedValue)
-            ? this.app
-            : app as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0 _copyWith({Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
+    app: identical(app, sdkOmittedValue) ? this.app : app as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
-        app: (json['app'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App
-                .fromJson(json['app'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
+    app: (json['app'] != null ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0App.fromJson(json['app'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'app': app.toJson(),
-        'type': type_.toJson(),
-      };
+    'app': app.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration {
@@ -101,145 +68,79 @@ class UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration {
   final String configurationId;
   final String integrationId;
 
-  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration(
-      {required this.configurationId, required this.integrationId});
+  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration({required this.configurationId, required this.integrationId});
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration Function(
-      {String configurationId, String integrationId}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration(
-        configurationId: (json['configurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration(
+    configurationId: (json['configurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'integrationId': integrationId,
-      };
+    'configurationId': configurationId,
+    'integrationId': integrationId,
+  };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
 class UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration
-      integration;
+  final UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration integration;
   final UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type type_;
 
-  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
-      {required this.integration, required this.type_});
+  const UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1({required this.integration, required this.type_});
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1 Function(
-          {UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration
-              integration,
-          UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type type_})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1 Function({UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration integration, UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1 _copyWith(
-          {Object? integration = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
-        integration: identical(integration, sdkOmittedValue)
-            ? this.integration
-            : integration
-                as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
+    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
-        integration: (json['integration'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration
-                .fromJson(json['integration'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
+    integration: (json['integration'] != null ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'integration': integration.toJson(),
-        'type': type_.toJson(),
-      };
+    'integration': integration.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 sealed class UpdateMicrofrontendsResponseCreatorVariant0Via {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateMicrofrontendsResponseCreatorVariant0Via();
-  factory UpdateMicrofrontendsResponseCreatorVariant0Via.fromJson(
-      Object? json) {
+  factory UpdateMicrofrontendsResponseCreatorVariant0Via.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(value); } } catch (_) {}
+      try { final value = UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(value); } } catch (_) {}
     }
-    try {
-      return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
-          UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
-          UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateMicrofrontendsResponseCreatorVariant0Via");
+    try { return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateMicrofrontendsResponseCreatorVariant0Via");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0
-    extends UpdateMicrofrontendsResponseCreatorVariant0Via {
+final class UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0 extends UpdateMicrofrontendsResponseCreatorVariant0Via {
   final UpdateMicrofrontendsResponseCreatorVariant0ViaVariant0 value;
-  const UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1
-    extends UpdateMicrofrontendsResponseCreatorVariant0Via {
+final class UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1 extends UpdateMicrofrontendsResponseCreatorVariant0Via {
   final UpdateMicrofrontendsResponseCreatorVariant0ViaVariant1 value;
-  const UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateMicrofrontendsResponseCreatorVariant0ViaUpdateMicrofrontendsResponseCreatorVariant0ViaVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant0User {
@@ -249,24 +150,19 @@ class UpdateMicrofrontendsResponseCreatorVariant0User {
 
   const UpdateMicrofrontendsResponseCreatorVariant0User({required this.id});
 
-  UpdateMicrofrontendsResponseCreatorVariant0User Function({String id})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant0User Function({String id}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant0User _copyWith(
-          {Object? id = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant0User(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant0User _copyWith({Object? id = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant0User(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant0User.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant0User(
-        id: (json['id'] as String?)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant0User.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant0User(
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-      };
+    'id': id,
+  };
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant0 {
@@ -276,96 +172,58 @@ class UpdateMicrofrontendsResponseCreatorVariant0 {
   final dynamic via;
   final UpdateMicrofrontendsResponseCreatorVariant0User user;
 
-  const UpdateMicrofrontendsResponseCreatorVariant0(
-      {required this.type_, required this.via, required this.user});
+  const UpdateMicrofrontendsResponseCreatorVariant0({required this.type_, required this.via, required this.user});
 
-  UpdateMicrofrontendsResponseCreatorVariant0 Function(
-          {UpdateMicrofrontendsResponseCreatorVariant0Type type_,
-          dynamic via,
-          UpdateMicrofrontendsResponseCreatorVariant0User user})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant0 Function({UpdateMicrofrontendsResponseCreatorVariant0Type type_, dynamic via, UpdateMicrofrontendsResponseCreatorVariant0User user}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? via = sdkOmittedValue,
-          Object? user = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateMicrofrontendsResponseCreatorVariant0Type,
-        via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
-        user: identical(user, sdkOmittedValue)
-            ? this.user
-            : user as UpdateMicrofrontendsResponseCreatorVariant0User,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? via = sdkOmittedValue, Object? user = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant0Type,
+    via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
+    user: identical(user, sdkOmittedValue) ? this.user : user as UpdateMicrofrontendsResponseCreatorVariant0User,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant0(
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant0Type.fromJson(
-                json['type'] as String)
-            : null)!,
-        via: json.containsKey('via')
-            ? json['via']
-            : throw ArgumentError.value(
-                null, 'via', 'Required property is missing'),
-        user: (json['user'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant0User.fromJson(
-                json['user'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant0.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant0(
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant0Type.fromJson(json['type'] as String) : null)!,
+    via: json.containsKey('via') ? json['via'] : throw ArgumentError.value(null, 'via', 'Required property is missing'),
+    user: (json['user'] != null ? UpdateMicrofrontendsResponseCreatorVariant0User.fromJson(json['user'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'via': via,
-        'user': user.toJson(),
-      };
+    'type': type_.toJson(),
+    'via': via,
+    'user': user.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant1App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
-
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const UpdateMicrofrontendsResponseCreatorVariant1App(
-      {this.clientId = const SdkOmitted(), required this.id});
+  const UpdateMicrofrontendsResponseCreatorVariant1App({this.clientId = const SdkOmitted(), required this.id});
 
-  UpdateMicrofrontendsResponseCreatorVariant1App Function(
-      {SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant1App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant1App _copyWith(
-          {Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant1App(
-        clientId: identical(clientId, sdkOmittedValue)
-            ? this.clientId
-            : clientId as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant1App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant1App(
+    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant1App.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant1App(
-        clientId: json['clientId'] != null
-            ? SdkPresent((json['clientId'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant1App.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant1App(
+    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (clientId) {
-          SdkPresent<String>(value: final value) => {
-              'clientId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-      };
+    ...switch (clientId) {
+      SdkPresent<String>(value: final value) => {'clientId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+  };
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant1 {
@@ -374,42 +232,24 @@ class UpdateMicrofrontendsResponseCreatorVariant1 {
   final UpdateMicrofrontendsResponseCreatorVariant1App app;
   final UpdateMicrofrontendsResponseCreatorVariant1Type type_;
 
-  const UpdateMicrofrontendsResponseCreatorVariant1(
-      {required this.app, required this.type_});
+  const UpdateMicrofrontendsResponseCreatorVariant1({required this.app, required this.type_});
 
-  UpdateMicrofrontendsResponseCreatorVariant1 Function(
-          {UpdateMicrofrontendsResponseCreatorVariant1App app,
-          UpdateMicrofrontendsResponseCreatorVariant1Type type_})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant1 Function({UpdateMicrofrontendsResponseCreatorVariant1App app, UpdateMicrofrontendsResponseCreatorVariant1Type type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant1 _copyWith(
-          {Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant1(
-        app: identical(app, sdkOmittedValue)
-            ? this.app
-            : app as UpdateMicrofrontendsResponseCreatorVariant1App,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UpdateMicrofrontendsResponseCreatorVariant1Type,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant1 _copyWith({Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant1(
+    app: identical(app, sdkOmittedValue) ? this.app : app as UpdateMicrofrontendsResponseCreatorVariant1App,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseCreatorVariant1Type,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant1(
-        app: (json['app'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant1App.fromJson(
-                json['app'] as Map<String, dynamic>)
-            : null)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseCreatorVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant1.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant1(
+    app: (json['app'] != null ? UpdateMicrofrontendsResponseCreatorVariant1App.fromJson(json['app'] as Map<String, dynamic>) : null)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseCreatorVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'app': app.toJson(),
-        'type': type_.toJson(),
-      };
+    'app': app.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class UpdateMicrofrontendsResponseCreatorVariant2Integration {
@@ -418,33 +258,22 @@ class UpdateMicrofrontendsResponseCreatorVariant2Integration {
   final String configurationId;
   final String integrationId;
 
-  const UpdateMicrofrontendsResponseCreatorVariant2Integration(
-      {required this.configurationId, required this.integrationId});
+  const UpdateMicrofrontendsResponseCreatorVariant2Integration({required this.configurationId, required this.integrationId});
 
-  UpdateMicrofrontendsResponseCreatorVariant2Integration Function(
-      {String configurationId, String integrationId}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseCreatorVariant2Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseCreatorVariant2Integration _copyWith(
-          {Object? configurationId = sdkOmittedValue,
-          Object? integrationId = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseCreatorVariant2Integration(
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as String,
-        integrationId: identical(integrationId, sdkOmittedValue)
-            ? this.integrationId
-            : integrationId as String,
-      );
+  UpdateMicrofrontendsResponseCreatorVariant2Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => UpdateMicrofrontendsResponseCreatorVariant2Integration(
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
+    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
+  );
 
-  factory UpdateMicrofrontendsResponseCreatorVariant2Integration.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseCreatorVariant2Integration(
-        configurationId: (json['configurationId'] as String?)!,
-        integrationId: (json['integrationId'] as String?)!,
-      );
+  factory UpdateMicrofrontendsResponseCreatorVariant2Integration.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseCreatorVariant2Integration(
+    configurationId: (json['configurationId'] as String?)!,
+    integrationId: (json['integrationId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'configurationId': configurationId,
-        'integrationId': integrationId,
-      };
+    'configurationId': configurationId,
+    'integrationId': integrationId,
+  };
 }

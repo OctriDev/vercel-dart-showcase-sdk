@@ -6,77 +6,68 @@ part of 'inline.dart';
 // Inline operation models (part 253)
 /// Optional enumerated value serialized in the `buildsEnabled` wire field.
 final class UserEventPayloadVariant96BuildsEnabled {
+
   final bool value;
 
   const UserEventPayloadVariant96BuildsEnabled._(this.value);
 
-  factory UserEventPayloadVariant96BuildsEnabled.fromJson(bool value) =>
-      UserEventPayloadVariant96BuildsEnabled._(value);
+  factory UserEventPayloadVariant96BuildsEnabled.fromJson(bool value) => UserEventPayloadVariant96BuildsEnabled._(value);
 
   static const false_ = UserEventPayloadVariant96BuildsEnabled._(false);
   static const true_ = UserEventPayloadVariant96BuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant96BuildsEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant96BuildsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `buildsEnabled` wire field.
 final class UserEventPayloadVariant97BuildsEnabled {
+
   final bool value;
 
   const UserEventPayloadVariant97BuildsEnabled._(this.value);
 
-  factory UserEventPayloadVariant97BuildsEnabled.fromJson(bool value) =>
-      UserEventPayloadVariant97BuildsEnabled._(value);
+  factory UserEventPayloadVariant97BuildsEnabled.fromJson(bool value) => UserEventPayloadVariant97BuildsEnabled._(value);
 
   static const false_ = UserEventPayloadVariant97BuildsEnabled._(false);
   static const true_ = UserEventPayloadVariant97BuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant97BuildsEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant97BuildsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `passive` wire field.
 final class UserEventPayloadVariant97Passive {
+
   final bool value;
 
   const UserEventPayloadVariant97Passive._(this.value);
 
-  factory UserEventPayloadVariant97Passive.fromJson(bool value) =>
-      UserEventPayloadVariant97Passive._(value);
+  factory UserEventPayloadVariant97Passive.fromJson(bool value) => UserEventPayloadVariant97Passive._(value);
 
   static const false_ = UserEventPayloadVariant97Passive._(false);
   static const true_ = UserEventPayloadVariant97Passive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UserEventPayloadVariant97Passive && other.value == value;
+  @override bool operator ==(Object other) => other is UserEventPayloadVariant97Passive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Optional enumerated value serialized in the `type` wire field.
@@ -85,17 +76,14 @@ enum UserEventPrincipalVariant0Type {
 
   static UserEventPrincipalVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user':
-        return UserEventPrincipalVariant0Type.user;
-      default:
-        throw ArgumentError('Unknown UserEventPrincipalVariant0Type: $value');
+      case 'user': return UserEventPrincipalVariant0Type.user;
+      default: throw ArgumentError('Unknown UserEventPrincipalVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPrincipalVariant0Type.user:
-        return 'user';
+      case UserEventPrincipalVariant0Type.user: return 'user';
     }
   }
 
@@ -109,17 +97,14 @@ enum UserEventPrincipalVariant1Type {
 
   static UserEventPrincipalVariant1Type fromJson(String value) {
     switch (value) {
-      case 'app':
-        return UserEventPrincipalVariant1Type.app;
-      default:
-        throw ArgumentError('Unknown UserEventPrincipalVariant1Type: $value');
+      case 'app': return UserEventPrincipalVariant1Type.app;
+      default: throw ArgumentError('Unknown UserEventPrincipalVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPrincipalVariant1Type.app:
-        return 'app';
+      case UserEventPrincipalVariant1Type.app: return 'app';
     }
   }
 
@@ -133,17 +118,14 @@ enum UserEventPrincipalVariant2Type {
 
   static UserEventPrincipalVariant2Type fromJson(String value) {
     switch (value) {
-      case 'external':
-        return UserEventPrincipalVariant2Type.external_;
-      default:
-        throw ArgumentError('Unknown UserEventPrincipalVariant2Type: $value');
+      case 'external': return UserEventPrincipalVariant2Type.external_;
+      default: throw ArgumentError('Unknown UserEventPrincipalVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPrincipalVariant2Type.external_:
-        return 'external';
+      case UserEventPrincipalVariant2Type.external_: return 'external';
     }
   }
 
@@ -157,17 +139,14 @@ enum UserEventPrincipalVariant3Type {
 
   static UserEventPrincipalVariant3Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return UserEventPrincipalVariant3Type.system;
-      default:
-        throw ArgumentError('Unknown UserEventPrincipalVariant3Type: $value');
+      case 'system': return UserEventPrincipalVariant3Type.system;
+      default: throw ArgumentError('Unknown UserEventPrincipalVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPrincipalVariant3Type.system:
-        return 'system';
+      case UserEventPrincipalVariant3Type.system: return 'system';
     }
   }
 
@@ -181,17 +160,14 @@ enum UserEventViaItemVariant0Type {
 
   static UserEventViaItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user':
-        return UserEventViaItemVariant0Type.user;
-      default:
-        throw ArgumentError('Unknown UserEventViaItemVariant0Type: $value');
+      case 'user': return UserEventViaItemVariant0Type.user;
+      default: throw ArgumentError('Unknown UserEventViaItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventViaItemVariant0Type.user:
-        return 'user';
+      case UserEventViaItemVariant0Type.user: return 'user';
     }
   }
 
@@ -205,17 +181,14 @@ enum UserEventViaItemVariant1Type {
 
   static UserEventViaItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'app':
-        return UserEventViaItemVariant1Type.app;
-      default:
-        throw ArgumentError('Unknown UserEventViaItemVariant1Type: $value');
+      case 'app': return UserEventViaItemVariant1Type.app;
+      default: throw ArgumentError('Unknown UserEventViaItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventViaItemVariant1Type.app:
-        return 'app';
+      case UserEventViaItemVariant1Type.app: return 'app';
     }
   }
 
@@ -229,17 +202,14 @@ enum UserEventViaItemVariant2Type {
 
   static UserEventViaItemVariant2Type fromJson(String value) {
     switch (value) {
-      case 'external':
-        return UserEventViaItemVariant2Type.external_;
-      default:
-        throw ArgumentError('Unknown UserEventViaItemVariant2Type: $value');
+      case 'external': return UserEventViaItemVariant2Type.external_;
+      default: throw ArgumentError('Unknown UserEventViaItemVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventViaItemVariant2Type.external_:
-        return 'external';
+      case UserEventViaItemVariant2Type.external_: return 'external';
     }
   }
 
@@ -253,17 +223,14 @@ enum UserEventViaItemVariant3Type {
 
   static UserEventViaItemVariant3Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return UserEventViaItemVariant3Type.system;
-      default:
-        throw ArgumentError('Unknown UserEventViaItemVariant3Type: $value');
+      case 'system': return UserEventViaItemVariant3Type.system;
+      default: throw ArgumentError('Unknown UserEventViaItemVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventViaItemVariant3Type.system:
-        return 'system';
+      case UserEventViaItemVariant3Type.system: return 'system';
     }
   }
 
@@ -273,12 +240,12 @@ enum UserEventViaItemVariant3Type {
 
 /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
 final class VcrImageDetailKind {
+
   final String value;
 
   const VcrImageDetailKind._(this.value);
 
-  factory VcrImageDetailKind.fromJson(String value) =>
-      VcrImageDetailKind._(value);
+  factory VcrImageDetailKind.fromJson(String value) => VcrImageDetailKind._(value);
 
   static const attestation = VcrImageDetailKind._('attestation');
   static const index2 = VcrImageDetailKind._('index');
@@ -286,25 +253,22 @@ final class VcrImageDetailKind {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageDetailKind && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageDetailKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// VHS-readiness status, or `null` for a multi-platform index.
 final class VcrImageDetailStatus {
+
   final String value;
 
   const VcrImageDetailStatus._(this.value);
 
-  factory VcrImageDetailStatus.fromJson(String value) =>
-      VcrImageDetailStatus._(value);
+  factory VcrImageDetailStatus.fromJson(String value) => VcrImageDetailStatus._(value);
 
   static const errored = VcrImageDetailStatus._('errored');
   static const preparing = VcrImageDetailStatus._('preparing');
@@ -313,13 +277,10 @@ final class VcrImageDetailStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageDetailStatus && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageDetailStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

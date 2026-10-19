@@ -8,179 +8,76 @@ part of 'inline.dart';
 class UploadProjectAvatarResponseCustomEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Configuration for matching git branches to this environment
-  final SdkOptional<
-          UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher>
-      branchMatcher;
-
+  final SdkOptional<UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher> branchMatcher;
   /// Timestamp when the environment was created
   final double createdAt;
-
   /// List of aliases for the current deployment
   final SdkOptional<List<String>> currentDeploymentAliases;
-
   /// Optional description of the environment's purpose
   final SdkOptional<String> description;
-
   /// List of domains associated with this environment
-  final SdkOptional<
-          List<UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>>
-      domains;
-
+  final SdkOptional<List<UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>> domains;
   /// Unique identifier for the custom environment (format: env_*)
   final String id;
-
   /// URL-friendly name of the environment
   final String slug;
-
   /// The type of environment (production, preview, or development)
   final UploadProjectAvatarResponseCustomEnvironmentsItemType type_;
-
   /// Timestamp when the environment was last updated
   final double updatedAt;
 
-  const UploadProjectAvatarResponseCustomEnvironmentsItem(
-      {this.branchMatcher = const SdkOmitted(),
-      required this.createdAt,
-      this.currentDeploymentAliases = const SdkOmitted(),
-      this.description = const SdkOmitted(),
-      this.domains = const SdkOmitted(),
-      required this.id,
-      required this.slug,
-      required this.type_,
-      required this.updatedAt});
+  const UploadProjectAvatarResponseCustomEnvironmentsItem({this.branchMatcher = const SdkOmitted(), required this.createdAt, this.currentDeploymentAliases = const SdkOmitted(), this.description = const SdkOmitted(), this.domains = const SdkOmitted(), required this.id, required this.slug, required this.type_, required this.updatedAt});
 
-  UploadProjectAvatarResponseCustomEnvironmentsItem Function(
-      {SdkOptional<
-              UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher>
-          branchMatcher,
-      double createdAt,
-      SdkOptional<List<String>> currentDeploymentAliases,
-      SdkOptional<String> description,
-      SdkOptional<
-              List<
-                  UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>>
-          domains,
-      String id,
-      String slug,
-      UploadProjectAvatarResponseCustomEnvironmentsItemType type_,
-      double updatedAt}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseCustomEnvironmentsItem Function({SdkOptional<UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher> branchMatcher, double createdAt, SdkOptional<List<String>> currentDeploymentAliases, SdkOptional<String> description, SdkOptional<List<UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>> domains, String id, String slug, UploadProjectAvatarResponseCustomEnvironmentsItemType type_, double updatedAt}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseCustomEnvironmentsItem _copyWith(
-          {Object? branchMatcher = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? currentDeploymentAliases = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? domains = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? slug = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseCustomEnvironmentsItem(
-        branchMatcher: identical(branchMatcher, sdkOmittedValue)
-            ? this.branchMatcher
-            : branchMatcher as SdkOptional<
-                UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        currentDeploymentAliases:
-            identical(currentDeploymentAliases, sdkOmittedValue)
-                ? this.currentDeploymentAliases
-                : currentDeploymentAliases as SdkOptional<List<String>>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as SdkOptional<String>,
-        domains: identical(domains, sdkOmittedValue)
-            ? this.domains
-            : domains as SdkOptional<
-                List<
-                    UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UploadProjectAvatarResponseCustomEnvironmentsItemType,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  UploadProjectAvatarResponseCustomEnvironmentsItem _copyWith({Object? branchMatcher = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? currentDeploymentAliases = sdkOmittedValue, Object? description = sdkOmittedValue, Object? domains = sdkOmittedValue, Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UploadProjectAvatarResponseCustomEnvironmentsItem(
+    branchMatcher: identical(branchMatcher, sdkOmittedValue) ? this.branchMatcher : branchMatcher as SdkOptional<UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    currentDeploymentAliases: identical(currentDeploymentAliases, sdkOmittedValue) ? this.currentDeploymentAliases : currentDeploymentAliases as SdkOptional<List<String>>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<List<UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseCustomEnvironmentsItemType,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory UploadProjectAvatarResponseCustomEnvironmentsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseCustomEnvironmentsItem(
-        branchMatcher: json['branchMatcher'] != null
-            ? SdkPresent((json['branchMatcher'] != null
-                ? UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher
-                    .fromJson(json['branchMatcher'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        currentDeploymentAliases: json['currentDeploymentAliases'] != null
-            ? SdkPresent(((json['currentDeploymentAliases'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        domains: json['domains'] != null
-            ? SdkPresent(((json['domains'] as List?)
-                ?.map((e) =>
-                    UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        slug: (json['slug'] as String?)!,
-        type_: (json['type'] != null
-            ? UploadProjectAvatarResponseCustomEnvironmentsItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory UploadProjectAvatarResponseCustomEnvironmentsItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseCustomEnvironmentsItem(
+    branchMatcher: json['branchMatcher'] != null ? SdkPresent((json['branchMatcher'] != null ? UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher.fromJson(json['branchMatcher'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    currentDeploymentAliases: json['currentDeploymentAliases'] != null ? SdkPresent(((json['currentDeploymentAliases'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    domains: json['domains'] != null ? SdkPresent(((json['domains'] as List?)?.map((e) => UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    slug: (json['slug'] as String?)!,
+    type_: (json['type'] != null ? UploadProjectAvatarResponseCustomEnvironmentsItemType.fromJson(json['type'] as String) : null)!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (branchMatcher) {
-          SdkPresent<
-                UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher>(
-            value: final value
-          ) =>
-            {
-              'branchMatcher': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        ...switch (currentDeploymentAliases) {
-          SdkPresent<List<String>>(value: final value) => {
-              'currentDeploymentAliases': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (domains) {
-          SdkPresent<
-                List<
-                    UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>>(
-            value: final value
-          ) =>
-            {
-              'domains': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'slug': slug,
-        'type': type_.toJson(),
-        'updatedAt': updatedAt,
-      };
+    ...switch (branchMatcher) {
+      SdkPresent<UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcher>(value: final value) => {'branchMatcher': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    ...switch (currentDeploymentAliases) {
+      SdkPresent<List<String>>(value: final value) => {'currentDeploymentAliases': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (domains) {
+      SdkPresent<List<UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItem>>(value: final value) => {'domains': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'slug': slug,
+    'type': type_.toJson(),
+    'updatedAt': updatedAt,
+  };
 }
 
 class UploadProjectAvatarResponseDataCache {
@@ -190,70 +87,33 @@ class UploadProjectAvatarResponseDataCache {
   final SdkOptional<UploadProjectAvatarResponseDataCacheUnlimited> unlimited;
   final UploadProjectAvatarResponseDataCacheUserDisabled userDisabled;
 
-  const UploadProjectAvatarResponseDataCache(
-      {this.storageSizeBytes = const SdkOmitted(),
-      this.unlimited = const SdkOmitted(),
-      required this.userDisabled});
+  const UploadProjectAvatarResponseDataCache({this.storageSizeBytes = const SdkOmitted(), this.unlimited = const SdkOmitted(), required this.userDisabled});
 
-  UploadProjectAvatarResponseDataCache Function(
-          {SdkOptional<double?> storageSizeBytes,
-          SdkOptional<UploadProjectAvatarResponseDataCacheUnlimited> unlimited,
-          UploadProjectAvatarResponseDataCacheUserDisabled userDisabled})
-      get copyWith => _copyWith;
+  UploadProjectAvatarResponseDataCache Function({SdkOptional<double?> storageSizeBytes, SdkOptional<UploadProjectAvatarResponseDataCacheUnlimited> unlimited, UploadProjectAvatarResponseDataCacheUserDisabled userDisabled}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseDataCache _copyWith(
-          {Object? storageSizeBytes = sdkOmittedValue,
-          Object? unlimited = sdkOmittedValue,
-          Object? userDisabled = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseDataCache(
-        storageSizeBytes: identical(storageSizeBytes, sdkOmittedValue)
-            ? this.storageSizeBytes
-            : storageSizeBytes as SdkOptional<double?>,
-        unlimited: identical(unlimited, sdkOmittedValue)
-            ? this.unlimited
-            : unlimited
-                as SdkOptional<UploadProjectAvatarResponseDataCacheUnlimited>,
-        userDisabled: identical(userDisabled, sdkOmittedValue)
-            ? this.userDisabled
-            : userDisabled as UploadProjectAvatarResponseDataCacheUserDisabled,
-      );
+  UploadProjectAvatarResponseDataCache _copyWith({Object? storageSizeBytes = sdkOmittedValue, Object? unlimited = sdkOmittedValue, Object? userDisabled = sdkOmittedValue}) => UploadProjectAvatarResponseDataCache(
+    storageSizeBytes: identical(storageSizeBytes, sdkOmittedValue) ? this.storageSizeBytes : storageSizeBytes as SdkOptional<double?>,
+    unlimited: identical(unlimited, sdkOmittedValue) ? this.unlimited : unlimited as SdkOptional<UploadProjectAvatarResponseDataCacheUnlimited>,
+    userDisabled: identical(userDisabled, sdkOmittedValue) ? this.userDisabled : userDisabled as UploadProjectAvatarResponseDataCacheUserDisabled,
+  );
 
-  factory UploadProjectAvatarResponseDataCache.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseDataCache(
-        storageSizeBytes: json.containsKey('storageSizeBytes')
-            ? SdkPresent((json['storageSizeBytes'] as num?)?.toDouble())
-            : const SdkOmitted(),
-        unlimited: json['unlimited'] != null
-            ? SdkPresent((json['unlimited'] != null
-                ? UploadProjectAvatarResponseDataCacheUnlimited.fromJson(
-                    json['unlimited'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        userDisabled: (json['userDisabled'] != null
-            ? UploadProjectAvatarResponseDataCacheUserDisabled.fromJson(
-                json['userDisabled'] as bool)
-            : null)!,
-      );
+  factory UploadProjectAvatarResponseDataCache.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseDataCache(
+    storageSizeBytes: json.containsKey('storageSizeBytes') ? SdkPresent((json['storageSizeBytes'] as num?)?.toDouble()) : const SdkOmitted(),
+    unlimited: json['unlimited'] != null ? SdkPresent((json['unlimited'] != null ? UploadProjectAvatarResponseDataCacheUnlimited.fromJson(json['unlimited'] as bool) : null)!) : const SdkOmitted(),
+    userDisabled: (json['userDisabled'] != null ? UploadProjectAvatarResponseDataCacheUserDisabled.fromJson(json['userDisabled'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (storageSizeBytes) {
-          SdkPresent<double?>(value: final value) => {
-              'storageSizeBytes': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (unlimited) {
-          SdkPresent<UploadProjectAvatarResponseDataCacheUnlimited>(
-            value: final value
-          ) =>
-            {
-              'unlimited': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'userDisabled': userDisabled.toJson(),
-      };
+    ...switch (storageSizeBytes) {
+      SdkPresent<double?>(value: final value) => {'storageSizeBytes': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (unlimited) {
+      SdkPresent<UploadProjectAvatarResponseDataCacheUnlimited>(value: final value) => {'unlimited': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'userDisabled': userDisabled.toJson(),
+  };
 }
 
 class UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition {
@@ -261,101 +121,54 @@ class UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransit
   static const String constructionSurface = 'named';
   final String algorithmVersion;
   final double at;
-  final UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
-      direction;
+  final UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection direction;
 
-  const UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition(
-      {required this.algorithmVersion,
-      required this.at,
-      required this.direction});
+  const UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition({required this.algorithmVersion, required this.at, required this.direction});
 
-  UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition Function(
-      {String algorithmVersion,
-      double at,
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
-          direction}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition Function({String algorithmVersion, double at, UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection direction}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition
-      _copyWith(
-              {Object? algorithmVersion = sdkOmittedValue,
-              Object? at = sdkOmittedValue,
-              Object? direction = sdkOmittedValue}) =>
-          UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition(
-            algorithmVersion: identical(algorithmVersion, sdkOmittedValue)
-                ? this.algorithmVersion
-                : algorithmVersion as String,
-            at: identical(at, sdkOmittedValue) ? this.at : at as double,
-            direction: identical(direction, sdkOmittedValue)
-                ? this.direction
-                : direction
-                    as UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection,
-          );
+  UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition _copyWith({Object? algorithmVersion = sdkOmittedValue, Object? at = sdkOmittedValue, Object? direction = sdkOmittedValue}) => UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition(
+    algorithmVersion: identical(algorithmVersion, sdkOmittedValue) ? this.algorithmVersion : algorithmVersion as String,
+    at: identical(at, sdkOmittedValue) ? this.at : at as double,
+    direction: identical(direction, sdkOmittedValue) ? this.direction : direction as UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection,
+  );
 
-  factory UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition(
-        algorithmVersion: (json['algorithmVersion'] as String?)!,
-        at: ((json['at'] as num?)?.toDouble())!,
-        direction: (json['direction'] != null
-            ? UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
-                .fromJson(json['direction'] as String)
-            : null)!,
-      );
+  factory UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransition(
+    algorithmVersion: (json['algorithmVersion'] as String?)!,
+    at: ((json['at'] as num?)?.toDouble())!,
+    direction: (json['direction'] != null ? UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection.fromJson(json['direction'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'algorithmVersion': algorithmVersion,
-        'at': at,
-        'direction': direction.toJson(),
-      };
+    'algorithmVersion': algorithmVersion,
+    'at': at,
+    'direction': direction.toJson(),
+  };
 }
 
 class UploadProjectAvatarResponseDefaultResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration>
-      configuration;
+  final SdkOptional<UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration> configuration;
 
-  const UploadProjectAvatarResponseDefaultResourceConfigBuildQueue(
-      {this.configuration = const SdkOmitted()});
+  const UploadProjectAvatarResponseDefaultResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
 
-  UploadProjectAvatarResponseDefaultResourceConfigBuildQueue Function(
-      {SdkOptional<
-              UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration>
-          configuration}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseDefaultResourceConfigBuildQueue Function({SdkOptional<UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseDefaultResourceConfigBuildQueue _copyWith(
-          {Object? configuration = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseDefaultResourceConfigBuildQueue(
-        configuration: identical(configuration, sdkOmittedValue)
-            ? this.configuration
-            : configuration as SdkOptional<
-                UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration>,
-      );
+  UploadProjectAvatarResponseDefaultResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => UploadProjectAvatarResponseDefaultResourceConfigBuildQueue(
+    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration>,
+  );
 
-  factory UploadProjectAvatarResponseDefaultResourceConfigBuildQueue.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseDefaultResourceConfigBuildQueue(
-        configuration: json['configuration'] != null
-            ? SdkPresent((json['configuration'] != null
-                ? UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration
-                    .fromJson(json['configuration'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseDefaultResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseDefaultResourceConfigBuildQueue(
+    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (configuration) {
-          SdkPresent<
-                UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration>(
-            value: final value
-          ) =>
-            {
-              'configuration': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (configuration) {
+      SdkPresent<UploadProjectAvatarResponseDefaultResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
@@ -363,49 +176,29 @@ class UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double cores;
-
   /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
-  final UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel
-      label;
+  final UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel label;
   final double memory;
 
-  const UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine(
-      {required this.cores, required this.label, required this.memory});
+  const UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine({required this.cores, required this.label, required this.memory});
 
-  UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine Function(
-      {double cores,
-      UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel
-          label,
-      double memory}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine Function({double cores, UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel label, double memory}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine _copyWith(
-          {Object? cores = sdkOmittedValue,
-          Object? label = sdkOmittedValue,
-          Object? memory = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine(
-        cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label
-                as UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel,
-        memory:
-            identical(memory, sdkOmittedValue) ? this.memory : memory as double,
-      );
+  UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine _copyWith({Object? cores = sdkOmittedValue, Object? label = sdkOmittedValue, Object? memory = sdkOmittedValue}) => UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine(
+    cores: identical(cores, sdkOmittedValue) ? this.cores : cores as double,
+    label: identical(label, sdkOmittedValue) ? this.label : label as UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel,
+    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as double,
+  );
 
-  factory UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine(
-        cores: ((json['cores'] as num?)?.toDouble())!,
-        label: (json['label'] != null
-            ? UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel
-                .fromJson(json['label'] as String)
-            : null)!,
-        memory: ((json['memory'] as num?)?.toDouble())!,
-      );
+  factory UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachine(
+    cores: ((json['cores'] as num?)?.toDouble())!,
+    label: (json['label'] != null ? UploadProjectAvatarResponseDefaultResourceConfigElasticBuildMachineLabel.fromJson(json['label'] as String) : null)!,
+    memory: ((json['memory'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'cores': cores,
-        'label': label.toJson(),
-        'memory': memory,
-      };
+    'cores': cores,
+    'label': label.toJson(),
+    'memory': memory,
+  };
 }

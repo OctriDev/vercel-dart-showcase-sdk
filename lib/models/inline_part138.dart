@@ -5,507 +5,282 @@ part of 'inline.dart';
 
 // Inline operation models (part 138)
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active.fromJson(bool value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(true);
+  static const false_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(false);
+  static const true_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant0Active && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg.fromJson(bool value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg
-          ._(false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg
-          ._(true);
+  static const false_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg._(false);
+  static const true_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemNeg && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp.fromJson(String value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._(value);
 
-  static const eq =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('eq');
-  static const ex =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('ex');
-  static const gt =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('gt');
-  static const gte =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('gte');
-  static const inc =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('inc');
-  static const list =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('list');
-  static const lt =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('lt');
-  static const lte =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('lte');
-  static const neq =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('neq');
-  static const nex =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('nex');
-  static const ninc =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('ninc');
-  static const pre =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('pre');
-  static const re =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('re');
-  static const sub =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('sub');
-  static const suf =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp
-          ._('suf');
+  static const eq = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('eq');
+  static const ex = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('ex');
+  static const gt = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('gt');
+  static const gte = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('gte');
+  static const inc = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('inc');
+  static const list = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('list');
+  static const lt = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('lt');
+  static const lte = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('lte');
+  static const neq = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('neq');
+  static const nex = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('nex');
+  static const ninc = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('ninc');
+  static const pre = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('pre');
+  static const re = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('re');
+  static const sub = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('sub');
+  static const suf = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp._('suf');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemOp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType.fromJson(String value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._(value);
 
-  static const botCategory =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('bot_category');
-  static const botName =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('bot_name');
-  static const botProtection =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('bot_protection');
-  static const botStatus =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('bot_status');
-  static const cookie =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('cookie');
-  static const domainEnvironment =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('domain_environment');
-  static const environment =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('environment');
-  static const geoAsNumber =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('geo_as_number');
-  static const geoCity =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('geo_city');
-  static const geoContinent =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('geo_continent');
-  static const geoCountry =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('geo_country');
-  static const geoCountryRegion =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('geo_country_region');
-  static const header =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('header');
-  static const host =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('host');
-  static const ipAddress =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('ip_address');
-  static const ja3Digest =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('ja3_digest');
-  static const ja4Digest =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('ja4_digest');
-  static const method =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('method');
-  static const path =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('path');
-  static const protocol =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('protocol');
-  static const query =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('query');
-  static const rateLimitApiId =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('rate_limit_api_id');
-  static const rawPath =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('raw_path');
-  static const region =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('region');
-  static const responseCode =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('response_code');
-  static const route =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('route');
-  static const ruleset =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('ruleset');
-  static const scheme =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('scheme');
-  static const serverAction =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('server_action');
-  static const sharedCondition =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('shared_condition');
-  static const targetPath =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('target_path');
-  static const trafficSource =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('traffic_source');
-  static const trustedSource =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('trusted_source');
-  static const userAgent =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType
-          ._('user_agent');
+  static const botCategory = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('bot_category');
+  static const botName = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('bot_name');
+  static const botProtection = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('bot_protection');
+  static const botStatus = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('bot_status');
+  static const cookie = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('cookie');
+  static const domainEnvironment = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('domain_environment');
+  static const environment = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('environment');
+  static const geoAsNumber = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('geo_as_number');
+  static const geoCity = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('geo_city');
+  static const geoContinent = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('geo_continent');
+  static const geoCountry = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('geo_country');
+  static const geoCountryRegion = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('geo_country_region');
+  static const header = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('header');
+  static const host = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('host');
+  static const ipAddress = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('ip_address');
+  static const ja3Digest = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('ja3_digest');
+  static const ja4Digest = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('ja4_digest');
+  static const method = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('method');
+  static const path = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('path');
+  static const protocol = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('protocol');
+  static const query = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('query');
+  static const rateLimitApiId = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('rate_limit_api_id');
+  static const rawPath = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('raw_path');
+  static const region = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('region');
+  static const responseCode = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('response_code');
+  static const route = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('route');
+  static const ruleset = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('ruleset');
+  static const scheme = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('scheme');
+  static const serverAction = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('server_action');
+  static const sharedCondition = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('shared_condition');
+  static const targetPath = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('target_path');
+  static const trafficSource = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('traffic_source');
+  static const trustedSource = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('trusted_source');
+  static const userAgent = GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType._('user_agent');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant0ConditionGroupItemConditionsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid.fromJson(bool value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid._(value);
 
-  static const true_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid._(true);
+  static const true_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant0Valid && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction.fromJson(String value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._(value);
 
-  static const allow =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._('allow');
-  static const bypass =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._('bypass');
-  static const challenge =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._('challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._('deny');
-  static const log =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._('log');
-  static const rateLimit =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._('rate_limit');
-  static const redirect =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction
-          ._('redirect');
+  static const allow = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._('allow');
+  static const bypass = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._('bypass');
+  static const challenge = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._('log');
+  static const rateLimit = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._('rate_limit');
+  static const redirect = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction._('redirect');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem.fromJson(bool value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem
-          ._(false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem
-          ._(true);
+  static const false_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem._(false);
+  static const true_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateBypassSystem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1 {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1.fromJson(String value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1._(value);
 
-  static const unknown =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1
-          ._('*');
+  static const unknown = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateLogHeadersVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction.fromJson(String value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction._(value);
 
-  static const challenge =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction
-          ._('challenge');
-  static const deny =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction
-          ._('deny');
-  static const log =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction
-          ._('log');
-  static const rateLimit =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction
-          ._('rate_limit');
+  static const challenge = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction._('challenge');
+  static const deny = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction._('deny');
+  static const log = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction._('log');
+  static const rateLimit = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction._('rate_limit');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo {
+
   final String value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo.fromJson(
-          String value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo.fromJson(String value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo._(value);
 
-  static const fixedWindow =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo
-          ._('fixed_window');
-  static const tokenBucket =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo
-          ._('token_bucket');
+  static const fixedWindow = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo._('fixed_window');
+  static const tokenBucket = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo._('token_bucket');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRateLimitAlgo && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent {
+
   final bool value;
 
-  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent._(
-      this.value);
+  const GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent._(this.value);
 
-  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent.fromJson(
-          bool value) =>
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent
-          ._(value);
+  factory GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent.fromJson(bool value) => GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent._(value);
 
-  static const false_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent
-          ._(false);
-  static const true_ =
-      GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent
-          ._(true);
+  static const false_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent._(false);
+  static const true_ = GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetSecurityFirewallConfigResponseActiveRulesItemVariant1ActionMitigateRedirectPermanent && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

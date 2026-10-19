@@ -7,102 +7,56 @@ part of 'inline.dart';
 class UpdateProjectRequestBodyResourceConfigBuildQueue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration>
-      configuration;
+  final SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration> configuration;
 
-  const UpdateProjectRequestBodyResourceConfigBuildQueue(
-      {this.configuration = const SdkOmitted()});
+  const UpdateProjectRequestBodyResourceConfigBuildQueue({this.configuration = const SdkOmitted()});
 
-  UpdateProjectRequestBodyResourceConfigBuildQueue Function(
-      {SdkOptional<
-              UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration>
-          configuration}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyResourceConfigBuildQueue Function({SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration> configuration}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyResourceConfigBuildQueue _copyWith(
-          {Object? configuration = sdkOmittedValue}) =>
-      UpdateProjectRequestBodyResourceConfigBuildQueue(
-        configuration: identical(configuration, sdkOmittedValue)
-            ? this.configuration
-            : configuration as SdkOptional<
-                UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration>,
-      );
+  UpdateProjectRequestBodyResourceConfigBuildQueue _copyWith({Object? configuration = sdkOmittedValue}) => UpdateProjectRequestBodyResourceConfigBuildQueue(
+    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration>,
+  );
 
-  factory UpdateProjectRequestBodyResourceConfigBuildQueue.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectRequestBodyResourceConfigBuildQueue(
-        configuration: json['configuration'] != null
-            ? SdkPresent((json['configuration'] != null
-                ? UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration
-                    .fromJson(json['configuration'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateProjectRequestBodyResourceConfigBuildQueue.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyResourceConfigBuildQueue(
+    configuration: json['configuration'] != null ? SdkPresent((json['configuration'] != null ? UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration.fromJson(json['configuration'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (configuration) {
-          SdkPresent<
-                UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration>(
-            value: final value
-          ) =>
-            {
-              'configuration': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (configuration) {
+      SdkPresent<UpdateProjectRequestBodyResourceConfigBuildQueueConfiguration>(value: final value) => {'configuration': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final double at;
-  final UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
-      direction;
+  final UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection direction;
   final String algorithmVersion;
 
-  const UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
-      {required this.at,
-      required this.direction,
-      required this.algorithmVersion});
+  const UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition({required this.at, required this.direction, required this.algorithmVersion});
 
-  UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition Function(
-      {double at,
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
-          direction,
-      String algorithmVersion}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition Function({double at, UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection direction, String algorithmVersion}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition _copyWith(
-          {Object? at = sdkOmittedValue,
-          Object? direction = sdkOmittedValue,
-          Object? algorithmVersion = sdkOmittedValue}) =>
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
-        at: identical(at, sdkOmittedValue) ? this.at : at as double,
-        direction: identical(direction, sdkOmittedValue)
-            ? this.direction
-            : direction
-                as UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection,
-        algorithmVersion: identical(algorithmVersion, sdkOmittedValue)
-            ? this.algorithmVersion
-            : algorithmVersion as String,
-      );
+  UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition _copyWith({Object? at = sdkOmittedValue, Object? direction = sdkOmittedValue, Object? algorithmVersion = sdkOmittedValue}) => UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
+    at: identical(at, sdkOmittedValue) ? this.at : at as double,
+    direction: identical(direction, sdkOmittedValue) ? this.direction : direction as UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection,
+    algorithmVersion: identical(algorithmVersion, sdkOmittedValue) ? this.algorithmVersion : algorithmVersion as String,
+  );
 
-  factory UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
-        at: ((json['at'] as num?)?.toDouble())!,
-        direction: (json['direction'] != null
-            ? UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection
-                .fromJson(json['direction'] as String)
-            : null)!,
-        algorithmVersion: (json['algorithmVersion'] as String?)!,
-      );
+  factory UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition(
+    at: ((json['at'] as num?)?.toDouble())!,
+    direction: (json['direction'] != null ? UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransitionDirection.fromJson(json['direction'] as String) : null)!,
+    algorithmVersion: (json['algorithmVersion'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'at': at,
-        'direction': direction.toJson(),
-        'algorithmVersion': algorithmVersion,
-      };
+    'at': at,
+    'direction': direction.toJson(),
+    'algorithmVersion': algorithmVersion,
+  };
 }
 
 /// Specifies resource override configuration for the project
@@ -110,536 +64,230 @@ class UpdateProjectRequestBodyResourceConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<dynamic> buildMachineType;
-  final SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineSelection>
-      buildMachineSelection;
-  final SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueue>
-      buildQueue;
+  final SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineSelection> buildMachineSelection;
+  final SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueue> buildQueue;
   final SdkOptional<bool> fluid;
-
   /// The regions to deploy Vercel Functions to for this project
   final SdkOptional<List<String>> functionDefaultRegions;
   final SdkOptional<double> functionDefaultTimeout;
-  final SdkOptional<
-          UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType>
-      functionDefaultMemoryType;
-
+  final SdkOptional<UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType> functionDefaultMemoryType;
   /// Specifies whether Zero Config Failover is enabled for this project.
   final SdkOptional<bool> functionZeroConfigFailover;
   final SdkOptional<bool> elasticConcurrencyEnabled;
   final SdkOptional<double> buildMachineElasticLastUpdated;
-  final SdkOptional<
-          UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason>
-      buildMachineElasticReason;
-  final SdkOptional<
-          UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition>
-      buildMachineElasticTransition;
+  final SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason> buildMachineElasticReason;
+  final SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition> buildMachineElasticTransition;
   final SdkOptional<bool> isNsnbDisabled;
   final SdkOptional<bool> enableFunctionsBeta;
 
-  const UpdateProjectRequestBodyResourceConfig(
-      {this.buildMachineType = const SdkOmitted(),
-      this.buildMachineSelection = const SdkOmitted(),
-      this.buildQueue = const SdkOmitted(),
-      this.fluid = const SdkOmitted(),
-      this.functionDefaultRegions = const SdkOmitted(),
-      this.functionDefaultTimeout = const SdkOmitted(),
-      this.functionDefaultMemoryType = const SdkOmitted(),
-      this.functionZeroConfigFailover = const SdkOmitted(),
-      this.elasticConcurrencyEnabled = const SdkOmitted(),
-      this.buildMachineElasticLastUpdated = const SdkOmitted(),
-      this.buildMachineElasticReason = const SdkOmitted(),
-      this.buildMachineElasticTransition = const SdkOmitted(),
-      this.isNsnbDisabled = const SdkOmitted(),
-      this.enableFunctionsBeta = const SdkOmitted()});
+  const UpdateProjectRequestBodyResourceConfig({this.buildMachineType = const SdkOmitted(), this.buildMachineSelection = const SdkOmitted(), this.buildQueue = const SdkOmitted(), this.fluid = const SdkOmitted(), this.functionDefaultRegions = const SdkOmitted(), this.functionDefaultTimeout = const SdkOmitted(), this.functionDefaultMemoryType = const SdkOmitted(), this.functionZeroConfigFailover = const SdkOmitted(), this.elasticConcurrencyEnabled = const SdkOmitted(), this.buildMachineElasticLastUpdated = const SdkOmitted(), this.buildMachineElasticReason = const SdkOmitted(), this.buildMachineElasticTransition = const SdkOmitted(), this.isNsnbDisabled = const SdkOmitted(), this.enableFunctionsBeta = const SdkOmitted()});
 
-  UpdateProjectRequestBodyResourceConfig Function(
-      {SdkOptional<dynamic> buildMachineType,
-      SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineSelection>
-          buildMachineSelection,
-      SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueue> buildQueue,
-      SdkOptional<bool> fluid,
-      SdkOptional<List<String>> functionDefaultRegions,
-      SdkOptional<double> functionDefaultTimeout,
-      SdkOptional<
-              UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType>
-          functionDefaultMemoryType,
-      SdkOptional<bool> functionZeroConfigFailover,
-      SdkOptional<bool> elasticConcurrencyEnabled,
-      SdkOptional<double> buildMachineElasticLastUpdated,
-      SdkOptional<
-              UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason>
-          buildMachineElasticReason,
-      SdkOptional<
-              UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition>
-          buildMachineElasticTransition,
-      SdkOptional<bool> isNsnbDisabled,
-      SdkOptional<bool> enableFunctionsBeta}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyResourceConfig Function({SdkOptional<dynamic> buildMachineType, SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineSelection> buildMachineSelection, SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueue> buildQueue, SdkOptional<bool> fluid, SdkOptional<List<String>> functionDefaultRegions, SdkOptional<double> functionDefaultTimeout, SdkOptional<UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType> functionDefaultMemoryType, SdkOptional<bool> functionZeroConfigFailover, SdkOptional<bool> elasticConcurrencyEnabled, SdkOptional<double> buildMachineElasticLastUpdated, SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason> buildMachineElasticReason, SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition> buildMachineElasticTransition, SdkOptional<bool> isNsnbDisabled, SdkOptional<bool> enableFunctionsBeta}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyResourceConfig _copyWith(
-          {Object? buildMachineType = sdkOmittedValue,
-          Object? buildMachineSelection = sdkOmittedValue,
-          Object? buildQueue = sdkOmittedValue,
-          Object? fluid = sdkOmittedValue,
-          Object? functionDefaultRegions = sdkOmittedValue,
-          Object? functionDefaultTimeout = sdkOmittedValue,
-          Object? functionDefaultMemoryType = sdkOmittedValue,
-          Object? functionZeroConfigFailover = sdkOmittedValue,
-          Object? elasticConcurrencyEnabled = sdkOmittedValue,
-          Object? buildMachineElasticLastUpdated = sdkOmittedValue,
-          Object? buildMachineElasticReason = sdkOmittedValue,
-          Object? buildMachineElasticTransition = sdkOmittedValue,
-          Object? isNsnbDisabled = sdkOmittedValue,
-          Object? enableFunctionsBeta = sdkOmittedValue}) =>
-      UpdateProjectRequestBodyResourceConfig(
-        buildMachineType: identical(buildMachineType, sdkOmittedValue)
-            ? this.buildMachineType
-            : buildMachineType as SdkOptional<dynamic>,
-        buildMachineSelection: identical(buildMachineSelection, sdkOmittedValue)
-            ? this.buildMachineSelection
-            : buildMachineSelection as SdkOptional<
-                UpdateProjectRequestBodyResourceConfigBuildMachineSelection>,
-        buildQueue: identical(buildQueue, sdkOmittedValue)
-            ? this.buildQueue
-            : buildQueue as SdkOptional<
-                UpdateProjectRequestBodyResourceConfigBuildQueue>,
-        fluid: identical(fluid, sdkOmittedValue)
-            ? this.fluid
-            : fluid as SdkOptional<bool>,
-        functionDefaultRegions:
-            identical(functionDefaultRegions, sdkOmittedValue)
-                ? this.functionDefaultRegions
-                : functionDefaultRegions as SdkOptional<List<String>>,
-        functionDefaultTimeout:
-            identical(functionDefaultTimeout, sdkOmittedValue)
-                ? this.functionDefaultTimeout
-                : functionDefaultTimeout as SdkOptional<double>,
-        functionDefaultMemoryType: identical(
-                functionDefaultMemoryType, sdkOmittedValue)
-            ? this.functionDefaultMemoryType
-            : functionDefaultMemoryType as SdkOptional<
-                UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType>,
-        functionZeroConfigFailover:
-            identical(functionZeroConfigFailover, sdkOmittedValue)
-                ? this.functionZeroConfigFailover
-                : functionZeroConfigFailover as SdkOptional<bool>,
-        elasticConcurrencyEnabled:
-            identical(elasticConcurrencyEnabled, sdkOmittedValue)
-                ? this.elasticConcurrencyEnabled
-                : elasticConcurrencyEnabled as SdkOptional<bool>,
-        buildMachineElasticLastUpdated:
-            identical(buildMachineElasticLastUpdated, sdkOmittedValue)
-                ? this.buildMachineElasticLastUpdated
-                : buildMachineElasticLastUpdated as SdkOptional<double>,
-        buildMachineElasticReason: identical(
-                buildMachineElasticReason, sdkOmittedValue)
-            ? this.buildMachineElasticReason
-            : buildMachineElasticReason as SdkOptional<
-                UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason>,
-        buildMachineElasticTransition: identical(
-                buildMachineElasticTransition, sdkOmittedValue)
-            ? this.buildMachineElasticTransition
-            : buildMachineElasticTransition as SdkOptional<
-                UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition>,
-        isNsnbDisabled: identical(isNsnbDisabled, sdkOmittedValue)
-            ? this.isNsnbDisabled
-            : isNsnbDisabled as SdkOptional<bool>,
-        enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue)
-            ? this.enableFunctionsBeta
-            : enableFunctionsBeta as SdkOptional<bool>,
-      );
+  UpdateProjectRequestBodyResourceConfig _copyWith({Object? buildMachineType = sdkOmittedValue, Object? buildMachineSelection = sdkOmittedValue, Object? buildQueue = sdkOmittedValue, Object? fluid = sdkOmittedValue, Object? functionDefaultRegions = sdkOmittedValue, Object? functionDefaultTimeout = sdkOmittedValue, Object? functionDefaultMemoryType = sdkOmittedValue, Object? functionZeroConfigFailover = sdkOmittedValue, Object? elasticConcurrencyEnabled = sdkOmittedValue, Object? buildMachineElasticLastUpdated = sdkOmittedValue, Object? buildMachineElasticReason = sdkOmittedValue, Object? buildMachineElasticTransition = sdkOmittedValue, Object? isNsnbDisabled = sdkOmittedValue, Object? enableFunctionsBeta = sdkOmittedValue}) => UpdateProjectRequestBodyResourceConfig(
+    buildMachineType: identical(buildMachineType, sdkOmittedValue) ? this.buildMachineType : buildMachineType as SdkOptional<dynamic>,
+    buildMachineSelection: identical(buildMachineSelection, sdkOmittedValue) ? this.buildMachineSelection : buildMachineSelection as SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineSelection>,
+    buildQueue: identical(buildQueue, sdkOmittedValue) ? this.buildQueue : buildQueue as SdkOptional<UpdateProjectRequestBodyResourceConfigBuildQueue>,
+    fluid: identical(fluid, sdkOmittedValue) ? this.fluid : fluid as SdkOptional<bool>,
+    functionDefaultRegions: identical(functionDefaultRegions, sdkOmittedValue) ? this.functionDefaultRegions : functionDefaultRegions as SdkOptional<List<String>>,
+    functionDefaultTimeout: identical(functionDefaultTimeout, sdkOmittedValue) ? this.functionDefaultTimeout : functionDefaultTimeout as SdkOptional<double>,
+    functionDefaultMemoryType: identical(functionDefaultMemoryType, sdkOmittedValue) ? this.functionDefaultMemoryType : functionDefaultMemoryType as SdkOptional<UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType>,
+    functionZeroConfigFailover: identical(functionZeroConfigFailover, sdkOmittedValue) ? this.functionZeroConfigFailover : functionZeroConfigFailover as SdkOptional<bool>,
+    elasticConcurrencyEnabled: identical(elasticConcurrencyEnabled, sdkOmittedValue) ? this.elasticConcurrencyEnabled : elasticConcurrencyEnabled as SdkOptional<bool>,
+    buildMachineElasticLastUpdated: identical(buildMachineElasticLastUpdated, sdkOmittedValue) ? this.buildMachineElasticLastUpdated : buildMachineElasticLastUpdated as SdkOptional<double>,
+    buildMachineElasticReason: identical(buildMachineElasticReason, sdkOmittedValue) ? this.buildMachineElasticReason : buildMachineElasticReason as SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason>,
+    buildMachineElasticTransition: identical(buildMachineElasticTransition, sdkOmittedValue) ? this.buildMachineElasticTransition : buildMachineElasticTransition as SdkOptional<UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition>,
+    isNsnbDisabled: identical(isNsnbDisabled, sdkOmittedValue) ? this.isNsnbDisabled : isNsnbDisabled as SdkOptional<bool>,
+    enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue) ? this.enableFunctionsBeta : enableFunctionsBeta as SdkOptional<bool>,
+  );
 
-  factory UpdateProjectRequestBodyResourceConfig.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectRequestBodyResourceConfig(
-        buildMachineType: json['buildMachineType'] != null
-            ? SdkPresent((json['buildMachineType'])!)
-            : const SdkOmitted(),
-        buildMachineSelection: json['buildMachineSelection'] != null
-            ? SdkPresent((json['buildMachineSelection'] != null
-                ? UpdateProjectRequestBodyResourceConfigBuildMachineSelection
-                    .fromJson(json['buildMachineSelection'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        buildQueue: json['buildQueue'] != null
-            ? SdkPresent((json['buildQueue'] != null
-                ? UpdateProjectRequestBodyResourceConfigBuildQueue.fromJson(
-                    json['buildQueue'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        fluid: json['fluid'] != null
-            ? SdkPresent((json['fluid'] as bool?)!)
-            : const SdkOmitted(),
-        functionDefaultRegions: json['functionDefaultRegions'] != null
-            ? SdkPresent(((json['functionDefaultRegions'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        functionDefaultTimeout: json['functionDefaultTimeout'] != null
-            ? SdkPresent(
-                ((json['functionDefaultTimeout'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        functionDefaultMemoryType: json['functionDefaultMemoryType'] != null
-            ? SdkPresent((json['functionDefaultMemoryType'] != null
-                ? UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType
-                    .fromJson(json['functionDefaultMemoryType'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        functionZeroConfigFailover: json['functionZeroConfigFailover'] != null
-            ? SdkPresent((json['functionZeroConfigFailover'] as bool?)!)
-            : const SdkOmitted(),
-        elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null
-            ? SdkPresent((json['elasticConcurrencyEnabled'] as bool?)!)
-            : const SdkOmitted(),
-        buildMachineElasticLastUpdated:
-            json['buildMachineElasticLastUpdated'] != null
-                ? SdkPresent(((json['buildMachineElasticLastUpdated'] as num?)
-                    ?.toDouble())!)
-                : const SdkOmitted(),
-        buildMachineElasticReason: json['buildMachineElasticReason'] != null
-            ? SdkPresent((json['buildMachineElasticReason'] != null
-                ? UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason
-                    .fromJson(json['buildMachineElasticReason'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        buildMachineElasticTransition: json['buildMachineElasticTransition'] !=
-                null
-            ? SdkPresent((json['buildMachineElasticTransition'] != null
-                ? UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition
-                    .fromJson(json['buildMachineElasticTransition']
-                        as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        isNsnbDisabled: json['isNSNBDisabled'] != null
-            ? SdkPresent((json['isNSNBDisabled'] as bool?)!)
-            : const SdkOmitted(),
-        enableFunctionsBeta: json['enableFunctionsBeta'] != null
-            ? SdkPresent((json['enableFunctionsBeta'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateProjectRequestBodyResourceConfig.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyResourceConfig(
+    buildMachineType: json['buildMachineType'] != null ? SdkPresent((json['buildMachineType'])!) : const SdkOmitted(),
+    buildMachineSelection: json['buildMachineSelection'] != null ? SdkPresent((json['buildMachineSelection'] != null ? UpdateProjectRequestBodyResourceConfigBuildMachineSelection.fromJson(json['buildMachineSelection'] as String) : null)!) : const SdkOmitted(),
+    buildQueue: json['buildQueue'] != null ? SdkPresent((json['buildQueue'] != null ? UpdateProjectRequestBodyResourceConfigBuildQueue.fromJson(json['buildQueue'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    fluid: json['fluid'] != null ? SdkPresent((json['fluid'] as bool?)!) : const SdkOmitted(),
+    functionDefaultRegions: json['functionDefaultRegions'] != null ? SdkPresent(((json['functionDefaultRegions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    functionDefaultTimeout: json['functionDefaultTimeout'] != null ? SdkPresent(((json['functionDefaultTimeout'] as num?)?.toDouble())!) : const SdkOmitted(),
+    functionDefaultMemoryType: json['functionDefaultMemoryType'] != null ? SdkPresent((json['functionDefaultMemoryType'] != null ? UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType.fromJson(json['functionDefaultMemoryType'] as String) : null)!) : const SdkOmitted(),
+    functionZeroConfigFailover: json['functionZeroConfigFailover'] != null ? SdkPresent((json['functionZeroConfigFailover'] as bool?)!) : const SdkOmitted(),
+    elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null ? SdkPresent((json['elasticConcurrencyEnabled'] as bool?)!) : const SdkOmitted(),
+    buildMachineElasticLastUpdated: json['buildMachineElasticLastUpdated'] != null ? SdkPresent(((json['buildMachineElasticLastUpdated'] as num?)?.toDouble())!) : const SdkOmitted(),
+    buildMachineElasticReason: json['buildMachineElasticReason'] != null ? SdkPresent((json['buildMachineElasticReason'] != null ? UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason.fromJson(json['buildMachineElasticReason'] as String) : null)!) : const SdkOmitted(),
+    buildMachineElasticTransition: json['buildMachineElasticTransition'] != null ? SdkPresent((json['buildMachineElasticTransition'] != null ? UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition.fromJson(json['buildMachineElasticTransition'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    isNsnbDisabled: json['isNSNBDisabled'] != null ? SdkPresent((json['isNSNBDisabled'] as bool?)!) : const SdkOmitted(),
+    enableFunctionsBeta: json['enableFunctionsBeta'] != null ? SdkPresent((json['enableFunctionsBeta'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (buildMachineType) {
-          SdkPresent<dynamic>(value: final value) => {
-              'buildMachineType': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineSelection) {
-          SdkPresent<
-                UpdateProjectRequestBodyResourceConfigBuildMachineSelection>(
-            value: final value
-          ) =>
-            {
-              'buildMachineSelection': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildQueue) {
-          SdkPresent<UpdateProjectRequestBodyResourceConfigBuildQueue>(
-            value: final value
-          ) =>
-            {
-              'buildQueue': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (fluid) {
-          SdkPresent<bool>(value: final value) => {
-              'fluid': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functionDefaultRegions) {
-          SdkPresent<List<String>>(value: final value) => {
-              'functionDefaultRegions': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functionDefaultTimeout) {
-          SdkPresent<double>(value: final value) => {
-              'functionDefaultTimeout': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functionDefaultMemoryType) {
-          SdkPresent<
-                UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType>(
-            value: final value
-          ) =>
-            {
-              'functionDefaultMemoryType': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (functionZeroConfigFailover) {
-          SdkPresent<bool>(value: final value) => {
-              'functionZeroConfigFailover': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (elasticConcurrencyEnabled) {
-          SdkPresent<bool>(value: final value) => {
-              'elasticConcurrencyEnabled': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineElasticLastUpdated) {
-          SdkPresent<double>(value: final value) => {
-              'buildMachineElasticLastUpdated': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineElasticReason) {
-          SdkPresent<
-                UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason>(
-            value: final value
-          ) =>
-            {
-              'buildMachineElasticReason': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (buildMachineElasticTransition) {
-          SdkPresent<
-                UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition>(
-            value: final value
-          ) =>
-            {
-              'buildMachineElasticTransition': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (isNsnbDisabled) {
-          SdkPresent<bool>(value: final value) => {
-              'isNSNBDisabled': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enableFunctionsBeta) {
-          SdkPresent<bool>(value: final value) => {
-              'enableFunctionsBeta': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (buildMachineType) {
+      SdkPresent<dynamic>(value: final value) => {'buildMachineType': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineSelection) {
+      SdkPresent<UpdateProjectRequestBodyResourceConfigBuildMachineSelection>(value: final value) => {'buildMachineSelection': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildQueue) {
+      SdkPresent<UpdateProjectRequestBodyResourceConfigBuildQueue>(value: final value) => {'buildQueue': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (fluid) {
+      SdkPresent<bool>(value: final value) => {'fluid': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functionDefaultRegions) {
+      SdkPresent<List<String>>(value: final value) => {'functionDefaultRegions': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functionDefaultTimeout) {
+      SdkPresent<double>(value: final value) => {'functionDefaultTimeout': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functionDefaultMemoryType) {
+      SdkPresent<UpdateProjectRequestBodyResourceConfigFunctionDefaultMemoryType>(value: final value) => {'functionDefaultMemoryType': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (functionZeroConfigFailover) {
+      SdkPresent<bool>(value: final value) => {'functionZeroConfigFailover': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (elasticConcurrencyEnabled) {
+      SdkPresent<bool>(value: final value) => {'elasticConcurrencyEnabled': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineElasticLastUpdated) {
+      SdkPresent<double>(value: final value) => {'buildMachineElasticLastUpdated': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineElasticReason) {
+      SdkPresent<UpdateProjectRequestBodyResourceConfigBuildMachineElasticReason>(value: final value) => {'buildMachineElasticReason': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (buildMachineElasticTransition) {
+      SdkPresent<UpdateProjectRequestBodyResourceConfigBuildMachineElasticTransition>(value: final value) => {'buildMachineElasticTransition': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (isNsnbDisabled) {
+      SdkPresent<bool>(value: final value) => {'isNSNBDisabled': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enableFunctionsBeta) {
+      SdkPresent<bool>(value: final value) => {'enableFunctionsBeta': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Manage Static IPs for this project
 class UpdateProjectRequestBodyStaticIps {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Opt-in to Static IPs for this project
   final bool enabled;
 
   const UpdateProjectRequestBodyStaticIps({required this.enabled});
 
-  UpdateProjectRequestBodyStaticIps Function({bool enabled}) get copyWith =>
-      _copyWith;
+  UpdateProjectRequestBodyStaticIps Function({bool enabled}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyStaticIps _copyWith(
-          {Object? enabled = sdkOmittedValue}) =>
-      UpdateProjectRequestBodyStaticIps(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as bool,
-      );
+  UpdateProjectRequestBodyStaticIps _copyWith({Object? enabled = sdkOmittedValue}) => UpdateProjectRequestBodyStaticIps(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as bool,
+  );
 
-  factory UpdateProjectRequestBodyStaticIps.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectRequestBodyStaticIps(
-        enabled: (json['enabled'] as bool?)!,
-      );
+  factory UpdateProjectRequestBodyStaticIps.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyStaticIps(
+    enabled: (json['enabled'] as bool?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled,
-      };
+    'enabled': enabled,
+  };
 }
 
 class UpdateProjectRequestBodyTracingSamplingRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Sampling rate from 0 to 1
   final double rate;
-
   /// Environment to apply sampling to
   final SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemEnv> env;
-
   /// Request path prefix to apply the sampling rule to
   final SdkOptional<String> requestPath;
-
   /// Tracing destination this rule applies to. Derived server-side when project tracing is computed; accepted here so a computed config can round-trip through this endpoint.
-  final SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemDestination>
-      destination;
+  final SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemDestination> destination;
 
-  const UpdateProjectRequestBodyTracingSamplingRulesItem(
-      {required this.rate,
-      this.env = const SdkOmitted(),
-      this.requestPath = const SdkOmitted(),
-      this.destination = const SdkOmitted()});
+  const UpdateProjectRequestBodyTracingSamplingRulesItem({required this.rate, this.env = const SdkOmitted(), this.requestPath = const SdkOmitted(), this.destination = const SdkOmitted()});
 
-  UpdateProjectRequestBodyTracingSamplingRulesItem Function(
-      {double rate,
-      SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemEnv> env,
-      SdkOptional<String> requestPath,
-      SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemDestination>
-          destination}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyTracingSamplingRulesItem Function({double rate, SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemEnv> env, SdkOptional<String> requestPath, SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemDestination> destination}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyTracingSamplingRulesItem _copyWith(
-          {Object? rate = sdkOmittedValue,
-          Object? env = sdkOmittedValue,
-          Object? requestPath = sdkOmittedValue,
-          Object? destination = sdkOmittedValue}) =>
-      UpdateProjectRequestBodyTracingSamplingRulesItem(
-        rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
-        env: identical(env, sdkOmittedValue)
-            ? this.env
-            : env as SdkOptional<
-                UpdateProjectRequestBodyTracingSamplingRulesItemEnv>,
-        requestPath: identical(requestPath, sdkOmittedValue)
-            ? this.requestPath
-            : requestPath as SdkOptional<String>,
-        destination: identical(destination, sdkOmittedValue)
-            ? this.destination
-            : destination as SdkOptional<
-                UpdateProjectRequestBodyTracingSamplingRulesItemDestination>,
-      );
+  UpdateProjectRequestBodyTracingSamplingRulesItem _copyWith({Object? rate = sdkOmittedValue, Object? env = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? destination = sdkOmittedValue}) => UpdateProjectRequestBodyTracingSamplingRulesItem(
+    rate: identical(rate, sdkOmittedValue) ? this.rate : rate as double,
+    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemEnv>,
+    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as SdkOptional<String>,
+    destination: identical(destination, sdkOmittedValue) ? this.destination : destination as SdkOptional<UpdateProjectRequestBodyTracingSamplingRulesItemDestination>,
+  );
 
-  factory UpdateProjectRequestBodyTracingSamplingRulesItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateProjectRequestBodyTracingSamplingRulesItem(
-        rate: ((json['rate'] as num?)?.toDouble())!,
-        env: json['env'] != null
-            ? SdkPresent((json['env'] != null
-                ? UpdateProjectRequestBodyTracingSamplingRulesItemEnv.fromJson(
-                    json['env'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        requestPath: json['requestPath'] != null
-            ? SdkPresent((json['requestPath'] as String?)!)
-            : const SdkOmitted(),
-        destination: json['destination'] != null
-            ? SdkPresent((json['destination'] != null
-                ? UpdateProjectRequestBodyTracingSamplingRulesItemDestination
-                    .fromJson(json['destination'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateProjectRequestBodyTracingSamplingRulesItem.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyTracingSamplingRulesItem(
+    rate: ((json['rate'] as num?)?.toDouble())!,
+    env: json['env'] != null ? SdkPresent((json['env'] != null ? UpdateProjectRequestBodyTracingSamplingRulesItemEnv.fromJson(json['env'] as String) : null)!) : const SdkOmitted(),
+    requestPath: json['requestPath'] != null ? SdkPresent((json['requestPath'] as String?)!) : const SdkOmitted(),
+    destination: json['destination'] != null ? SdkPresent((json['destination'] != null ? UpdateProjectRequestBodyTracingSamplingRulesItemDestination.fromJson(json['destination'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'rate': rate,
-        ...switch (env) {
-          SdkPresent<UpdateProjectRequestBodyTracingSamplingRulesItemEnv>(
-            value: final value
-          ) =>
-            {
-              'env': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (requestPath) {
-          SdkPresent<String>(value: final value) => {
-              'requestPath': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (destination) {
-          SdkPresent<
-                UpdateProjectRequestBodyTracingSamplingRulesItemDestination>(
-            value: final value
-          ) =>
-            {
-              'destination': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'rate': rate,
+    ...switch (env) {
+      SdkPresent<UpdateProjectRequestBodyTracingSamplingRulesItemEnv>(value: final value) => {'env': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (requestPath) {
+      SdkPresent<String>(value: final value) => {'requestPath': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (destination) {
+      SdkPresent<UpdateProjectRequestBodyTracingSamplingRulesItemDestination>(value: final value) => {'destination': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Tracing configuration for this project
 class UpdateProjectRequestBodyTracing {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Comma-separated list of drain endpoint domains
   final SdkOptional<String> domains;
-
   /// Paths to ignore for tracing
   final SdkOptional<List<String>> ignorePaths;
-
   /// Sampling rules for trace collection
-  final SdkOptional<List<UpdateProjectRequestBodyTracingSamplingRulesItem>>
-      samplingRules;
+  final SdkOptional<List<UpdateProjectRequestBodyTracingSamplingRulesItem>> samplingRules;
 
-  const UpdateProjectRequestBodyTracing(
-      {this.domains = const SdkOmitted(),
-      this.ignorePaths = const SdkOmitted(),
-      this.samplingRules = const SdkOmitted()});
+  const UpdateProjectRequestBodyTracing({this.domains = const SdkOmitted(), this.ignorePaths = const SdkOmitted(), this.samplingRules = const SdkOmitted()});
 
-  UpdateProjectRequestBodyTracing Function(
-      {SdkOptional<String> domains,
-      SdkOptional<List<String>> ignorePaths,
-      SdkOptional<List<UpdateProjectRequestBodyTracingSamplingRulesItem>>
-          samplingRules}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyTracing Function({SdkOptional<String> domains, SdkOptional<List<String>> ignorePaths, SdkOptional<List<UpdateProjectRequestBodyTracingSamplingRulesItem>> samplingRules}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyTracing _copyWith(
-          {Object? domains = sdkOmittedValue,
-          Object? ignorePaths = sdkOmittedValue,
-          Object? samplingRules = sdkOmittedValue}) =>
-      UpdateProjectRequestBodyTracing(
-        domains: identical(domains, sdkOmittedValue)
-            ? this.domains
-            : domains as SdkOptional<String>,
-        ignorePaths: identical(ignorePaths, sdkOmittedValue)
-            ? this.ignorePaths
-            : ignorePaths as SdkOptional<List<String>>,
-        samplingRules: identical(samplingRules, sdkOmittedValue)
-            ? this.samplingRules
-            : samplingRules as SdkOptional<
-                List<UpdateProjectRequestBodyTracingSamplingRulesItem>>,
-      );
+  UpdateProjectRequestBodyTracing _copyWith({Object? domains = sdkOmittedValue, Object? ignorePaths = sdkOmittedValue, Object? samplingRules = sdkOmittedValue}) => UpdateProjectRequestBodyTracing(
+    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<String>,
+    ignorePaths: identical(ignorePaths, sdkOmittedValue) ? this.ignorePaths : ignorePaths as SdkOptional<List<String>>,
+    samplingRules: identical(samplingRules, sdkOmittedValue) ? this.samplingRules : samplingRules as SdkOptional<List<UpdateProjectRequestBodyTracingSamplingRulesItem>>,
+  );
 
-  factory UpdateProjectRequestBodyTracing.fromJson(Map<String, dynamic> json) =>
-      UpdateProjectRequestBodyTracing(
-        domains: json['domains'] != null
-            ? SdkPresent((json['domains'] as String?)!)
-            : const SdkOmitted(),
-        ignorePaths: json['ignorePaths'] != null
-            ? SdkPresent(((json['ignorePaths'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        samplingRules: json['samplingRules'] != null
-            ? SdkPresent(((json['samplingRules'] as List?)
-                ?.map((e) =>
-                    UpdateProjectRequestBodyTracingSamplingRulesItem.fromJson(
-                        e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateProjectRequestBodyTracing.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyTracing(
+    domains: json['domains'] != null ? SdkPresent((json['domains'] as String?)!) : const SdkOmitted(),
+    ignorePaths: json['ignorePaths'] != null ? SdkPresent(((json['ignorePaths'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    samplingRules: json['samplingRules'] != null ? SdkPresent(((json['samplingRules'] as List?)?.map((e) => UpdateProjectRequestBodyTracingSamplingRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (domains) {
-          SdkPresent<String>(value: final value) => {
-              'domains': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ignorePaths) {
-          SdkPresent<List<String>>(value: final value) => {
-              'ignorePaths': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (samplingRules) {
-          SdkPresent<List<UpdateProjectRequestBodyTracingSamplingRulesItem>>(
-            value: final value
-          ) =>
-            {
-              'samplingRules': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (domains) {
+      SdkPresent<String>(value: final value) => {'domains': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ignorePaths) {
+      SdkPresent<List<String>>(value: final value) => {'ignorePaths': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (samplingRules) {
+      SdkPresent<List<UpdateProjectRequestBodyTracingSamplingRulesItem>>(value: final value) => {'samplingRules': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

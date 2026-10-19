@@ -8,56 +8,31 @@ part of 'inline.dart';
 class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-      preset;
-
+  final UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset;
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-      {required this.preset, this.slugs = const SdkOmitted()});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function(
-      {UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-          preset,
-      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function({UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1
-      _copyWith(
-              {Object? preset = sdkOmittedValue,
-              Object? slugs = sdkOmittedValue}) =>
-          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-            preset: identical(preset, sdkOmittedValue)
-                ? this.preset
-                : preset
-                    as UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
-            slugs: identical(slugs, sdkOmittedValue)
-                ? this.slugs
-                : slugs as SdkOptional<List<String>>,
-          );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
+    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
+  );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-        preset: (json['preset'] != null
-            ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-                .fromJson(json['preset'] as String)
-            : null)!,
-        slugs: json['slugs'] != null
-            ? SdkPresent(
-                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+    preset: (json['preset'] != null ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
+    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'preset': preset.toJson(),
-        ...switch (slugs) {
-          SdkPresent<List<String>>(value: final value) => {
-              'slugs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'preset': preset.toJson(),
+    ...switch (slugs) {
+      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
@@ -67,364 +42,152 @@ class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem {
   final dynamic from;
   final dynamic to;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
-      {required this.from, required this.to});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem({required this.from, required this.to});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem
-      Function({dynamic from, dynamic to}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem Function({dynamic from, dynamic to}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem
-      _copyWith(
-              {Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) =>
-          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
-            from:
-                identical(from, sdkOmittedValue) ? this.from : from as dynamic,
-            to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-          );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem _copyWith({Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
+    from: identical(from, sdkOmittedValue) ? this.from : from as dynamic,
+    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+  );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
-        from: (json['from'])!,
-        to: (json['to'])!,
-      );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
+    from: (json['from'])!,
+    to: (json['to'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'from': from,
-        'to': to,
-      };
+    'from': from,
+    'to': to,
+  };
 }
 
 class UploadProjectAvatarResponseTrustedSourcesProjectsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
-  final SdkOptional<
-          List<
-              UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>>
-      customAllow;
+  final SdkOptional<List<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>> customAllow;
   final SdkOptional<String> label;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValue(
-      {this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValue({this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValue Function(
-      {SdkOptional<
-              List<
-                  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>>
-          customAllow,
-      SdkOptional<String> label}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValue Function({SdkOptional<List<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>> customAllow, SdkOptional<String> label}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValue _copyWith(
-          {Object? customAllow = sdkOmittedValue,
-          Object? label = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValue(
-        customAllow: identical(customAllow, sdkOmittedValue)
-            ? this.customAllow
-            : customAllow as SdkOptional<
-                List<
-                    UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>>,
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label as SdkOptional<String>,
-      );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValue _copyWith({Object? customAllow = sdkOmittedValue, Object? label = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValue(
+    customAllow: identical(customAllow, sdkOmittedValue) ? this.customAllow : customAllow as SdkOptional<List<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>>,
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+  );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValue.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseTrustedSourcesProjectsValue(
-        customAllow: json['customAllow'] != null
-            ? SdkPresent(((json['customAllow'] as List?)
-                ?.map((e) =>
-                    UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValue.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValue(
+    customAllow: json['customAllow'] != null ? SdkPresent(((json['customAllow'] as List?)?.map((e) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (customAllow) {
-          SdkPresent<
-                List<
-                    UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>>(
-            value: final value
-          ) =>
-            {
-              'customAllow': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (customAllow) {
+      SdkPresent<List<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem>>(value: final value) => {'customAllow': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UploadProjectAvatarResponseTrustedSources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Allow same-team Vercel CI access to preview and production deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value.
-  final SdkOptional<
-          UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository>
-      enableVercelCiSameRepository;
-  final SdkOptional<
-          Map<
-              String,
-              List<
-                  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>>
-      oidcProviders;
-  final SdkOptional<
-          Map<String, UploadProjectAvatarResponseTrustedSourcesProjectsValue>>
-      projects;
+  final SdkOptional<UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository> enableVercelCiSameRepository;
+  final SdkOptional<Map<String, List<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>> oidcProviders;
+  final SdkOptional<Map<String, UploadProjectAvatarResponseTrustedSourcesProjectsValue>> projects;
 
-  const UploadProjectAvatarResponseTrustedSources(
-      {this.enableVercelCiSameRepository = const SdkOmitted(),
-      this.oidcProviders = const SdkOmitted(),
-      this.projects = const SdkOmitted()});
+  const UploadProjectAvatarResponseTrustedSources({this.enableVercelCiSameRepository = const SdkOmitted(), this.oidcProviders = const SdkOmitted(), this.projects = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTrustedSources Function(
-      {SdkOptional<
-              UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository>
-          enableVercelCiSameRepository,
-      SdkOptional<
-              Map<
-                  String,
-                  List<
-                      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>>
-          oidcProviders,
-      SdkOptional<
-              Map<String,
-                  UploadProjectAvatarResponseTrustedSourcesProjectsValue>>
-          projects}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSources Function({SdkOptional<UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository> enableVercelCiSameRepository, SdkOptional<Map<String, List<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>> oidcProviders, SdkOptional<Map<String, UploadProjectAvatarResponseTrustedSourcesProjectsValue>> projects}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSources _copyWith(
-          {Object? enableVercelCiSameRepository = sdkOmittedValue,
-          Object? oidcProviders = sdkOmittedValue,
-          Object? projects = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseTrustedSources(
-        enableVercelCiSameRepository: identical(
-                enableVercelCiSameRepository, sdkOmittedValue)
-            ? this.enableVercelCiSameRepository
-            : enableVercelCiSameRepository as SdkOptional<
-                UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository>,
-        oidcProviders: identical(oidcProviders, sdkOmittedValue)
-            ? this.oidcProviders
-            : oidcProviders as SdkOptional<
-                Map<
-                    String,
-                    List<
-                        UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>>,
-        projects: identical(projects, sdkOmittedValue)
-            ? this.projects
-            : projects as SdkOptional<
-                Map<String,
-                    UploadProjectAvatarResponseTrustedSourcesProjectsValue>>,
-      );
+  UploadProjectAvatarResponseTrustedSources _copyWith({Object? enableVercelCiSameRepository = sdkOmittedValue, Object? oidcProviders = sdkOmittedValue, Object? projects = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSources(
+    enableVercelCiSameRepository: identical(enableVercelCiSameRepository, sdkOmittedValue) ? this.enableVercelCiSameRepository : enableVercelCiSameRepository as SdkOptional<UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository>,
+    oidcProviders: identical(oidcProviders, sdkOmittedValue) ? this.oidcProviders : oidcProviders as SdkOptional<Map<String, List<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>>,
+    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<Map<String, UploadProjectAvatarResponseTrustedSourcesProjectsValue>>,
+  );
 
-  factory UploadProjectAvatarResponseTrustedSources.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseTrustedSources(
-        enableVercelCiSameRepository: json['enableVercelCiSameRepository'] !=
-                null
-            ? SdkPresent((json['enableVercelCiSameRepository'] != null
-                ? UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository
-                    .fromJson(json['enableVercelCiSameRepository'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        oidcProviders: json['oidcProviders'] != null
-            ? SdkPresent((json['oidcProviders'] == null
-                ? null
-                : Map<String, dynamic>.from(json['oidcProviders'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        (value as List)
-                            .map((item) =>
-                                UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem
-                                    .fromJson(item as Map<String, dynamic>))
-                            .toList())))!)
-            : const SdkOmitted(),
-        projects: json['projects'] != null
-            ? SdkPresent((json['projects'] == null
-                ? null
-                : Map<String, dynamic>.from(json['projects'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        UploadProjectAvatarResponseTrustedSourcesProjectsValue
-                            .fromJson(value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseTrustedSources.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSources(
+    enableVercelCiSameRepository: json['enableVercelCiSameRepository'] != null ? SdkPresent((json['enableVercelCiSameRepository'] != null ? UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(json['enableVercelCiSameRepository'] as bool) : null)!) : const SdkOmitted(),
+    oidcProviders: json['oidcProviders'] != null ? SdkPresent((json['oidcProviders'] == null ? null : Map<String, dynamic>.from(json['oidcProviders'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem.fromJson(item as Map<String, dynamic>)).toList())))!) : const SdkOmitted(),
+    projects: json['projects'] != null ? SdkPresent((json['projects'] == null ? null : Map<String, dynamic>.from(json['projects'] as Map).map((key, value) => MapEntry(key, UploadProjectAvatarResponseTrustedSourcesProjectsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enableVercelCiSameRepository) {
-          SdkPresent<
-                UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository>(
-            value: final value
-          ) =>
-            {
-              'enableVercelCiSameRepository': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (oidcProviders) {
-          SdkPresent<
-                Map<
-                    String,
-                    List<
-                        UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>>(
-            value: final value
-          ) =>
-            {
-              'oidcProviders': value.map((key, value) =>
-                  MapEntry(key, value.map((item) => item.toJson()).toList())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projects) {
-          SdkPresent<
-                Map<String,
-                    UploadProjectAvatarResponseTrustedSourcesProjectsValue>>(
-            value: final value
-          ) =>
-            {
-              'projects':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enableVercelCiSameRepository) {
+      SdkPresent<UploadProjectAvatarResponseTrustedSourcesEnableVercelCiSameRepository>(value: final value) => {'enableVercelCiSameRepository': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (oidcProviders) {
+      SdkPresent<Map<String, List<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem>>>(value: final value) => {'oidcProviders': value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projects) {
+      SdkPresent<Map<String, UploadProjectAvatarResponseTrustedSourcesProjectsValue>>(value: final value) => {'projects': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UploadProjectAvatarResponseUsageStatus {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Timestamp until which throttling is bypassed (project pays list rates for overage).
   final SdkOptional<double> bypassThrottleUntil;
-
   /// Timestamp until which the project has exceeded its CDN allowance.
   final SdkOptional<double> exceededAllowanceUntil;
-
   /// Billing mode. Always 'flat' for flat-rate projects.
   final UploadProjectAvatarResponseUsageStatusKind kind;
-
   /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
-  final SdkOptional<UploadProjectAvatarResponseUsageStatusTeamThrottled>
-      teamThrottled;
-
+  final SdkOptional<UploadProjectAvatarResponseUsageStatusTeamThrottled> teamThrottled;
   /// Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint).
   final SdkOptional<UploadProjectAvatarResponseUsageStatusThrottled> throttled;
 
-  const UploadProjectAvatarResponseUsageStatus(
-      {this.bypassThrottleUntil = const SdkOmitted(),
-      this.exceededAllowanceUntil = const SdkOmitted(),
-      required this.kind,
-      this.teamThrottled = const SdkOmitted(),
-      this.throttled = const SdkOmitted()});
+  const UploadProjectAvatarResponseUsageStatus({this.bypassThrottleUntil = const SdkOmitted(), this.exceededAllowanceUntil = const SdkOmitted(), required this.kind, this.teamThrottled = const SdkOmitted(), this.throttled = const SdkOmitted()});
 
-  UploadProjectAvatarResponseUsageStatus Function(
-      {SdkOptional<double> bypassThrottleUntil,
-      SdkOptional<double> exceededAllowanceUntil,
-      UploadProjectAvatarResponseUsageStatusKind kind,
-      SdkOptional<UploadProjectAvatarResponseUsageStatusTeamThrottled>
-          teamThrottled,
-      SdkOptional<UploadProjectAvatarResponseUsageStatusThrottled>
-          throttled}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseUsageStatus Function({SdkOptional<double> bypassThrottleUntil, SdkOptional<double> exceededAllowanceUntil, UploadProjectAvatarResponseUsageStatusKind kind, SdkOptional<UploadProjectAvatarResponseUsageStatusTeamThrottled> teamThrottled, SdkOptional<UploadProjectAvatarResponseUsageStatusThrottled> throttled}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseUsageStatus _copyWith(
-          {Object? bypassThrottleUntil = sdkOmittedValue,
-          Object? exceededAllowanceUntil = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? teamThrottled = sdkOmittedValue,
-          Object? throttled = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseUsageStatus(
-        bypassThrottleUntil: identical(bypassThrottleUntil, sdkOmittedValue)
-            ? this.bypassThrottleUntil
-            : bypassThrottleUntil as SdkOptional<double>,
-        exceededAllowanceUntil:
-            identical(exceededAllowanceUntil, sdkOmittedValue)
-                ? this.exceededAllowanceUntil
-                : exceededAllowanceUntil as SdkOptional<double>,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as UploadProjectAvatarResponseUsageStatusKind,
-        teamThrottled: identical(teamThrottled, sdkOmittedValue)
-            ? this.teamThrottled
-            : teamThrottled as SdkOptional<
-                UploadProjectAvatarResponseUsageStatusTeamThrottled>,
-        throttled: identical(throttled, sdkOmittedValue)
-            ? this.throttled
-            : throttled
-                as SdkOptional<UploadProjectAvatarResponseUsageStatusThrottled>,
-      );
+  UploadProjectAvatarResponseUsageStatus _copyWith({Object? bypassThrottleUntil = sdkOmittedValue, Object? exceededAllowanceUntil = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? teamThrottled = sdkOmittedValue, Object? throttled = sdkOmittedValue}) => UploadProjectAvatarResponseUsageStatus(
+    bypassThrottleUntil: identical(bypassThrottleUntil, sdkOmittedValue) ? this.bypassThrottleUntil : bypassThrottleUntil as SdkOptional<double>,
+    exceededAllowanceUntil: identical(exceededAllowanceUntil, sdkOmittedValue) ? this.exceededAllowanceUntil : exceededAllowanceUntil as SdkOptional<double>,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UploadProjectAvatarResponseUsageStatusKind,
+    teamThrottled: identical(teamThrottled, sdkOmittedValue) ? this.teamThrottled : teamThrottled as SdkOptional<UploadProjectAvatarResponseUsageStatusTeamThrottled>,
+    throttled: identical(throttled, sdkOmittedValue) ? this.throttled : throttled as SdkOptional<UploadProjectAvatarResponseUsageStatusThrottled>,
+  );
 
-  factory UploadProjectAvatarResponseUsageStatus.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseUsageStatus(
-        bypassThrottleUntil: json['bypassThrottleUntil'] != null
-            ? SdkPresent(((json['bypassThrottleUntil'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        exceededAllowanceUntil: json['exceededAllowanceUntil'] != null
-            ? SdkPresent(
-                ((json['exceededAllowanceUntil'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        kind: (json['kind'] != null
-            ? UploadProjectAvatarResponseUsageStatusKind.fromJson(
-                json['kind'] as String)
-            : null)!,
-        teamThrottled: json['teamThrottled'] != null
-            ? SdkPresent((json['teamThrottled'] != null
-                ? UploadProjectAvatarResponseUsageStatusTeamThrottled.fromJson(
-                    json['teamThrottled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        throttled: json['throttled'] != null
-            ? SdkPresent((json['throttled'] != null
-                ? UploadProjectAvatarResponseUsageStatusThrottled.fromJson(
-                    json['throttled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UploadProjectAvatarResponseUsageStatus.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseUsageStatus(
+    bypassThrottleUntil: json['bypassThrottleUntil'] != null ? SdkPresent(((json['bypassThrottleUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
+    exceededAllowanceUntil: json['exceededAllowanceUntil'] != null ? SdkPresent(((json['exceededAllowanceUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
+    kind: (json['kind'] != null ? UploadProjectAvatarResponseUsageStatusKind.fromJson(json['kind'] as String) : null)!,
+    teamThrottled: json['teamThrottled'] != null ? SdkPresent((json['teamThrottled'] != null ? UploadProjectAvatarResponseUsageStatusTeamThrottled.fromJson(json['teamThrottled'] as bool) : null)!) : const SdkOmitted(),
+    throttled: json['throttled'] != null ? SdkPresent((json['throttled'] != null ? UploadProjectAvatarResponseUsageStatusThrottled.fromJson(json['throttled'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (bypassThrottleUntil) {
-          SdkPresent<double>(value: final value) => {
-              'bypassThrottleUntil': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (exceededAllowanceUntil) {
-          SdkPresent<double>(value: final value) => {
-              'exceededAllowanceUntil': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'kind': kind.toJson(),
-        ...switch (teamThrottled) {
-          SdkPresent<UploadProjectAvatarResponseUsageStatusTeamThrottled>(
-            value: final value
-          ) =>
-            {
-              'teamThrottled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (throttled) {
-          SdkPresent<UploadProjectAvatarResponseUsageStatusThrottled>(
-            value: final value
-          ) =>
-            {
-              'throttled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (bypassThrottleUntil) {
+      SdkPresent<double>(value: final value) => {'bypassThrottleUntil': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (exceededAllowanceUntil) {
+      SdkPresent<double>(value: final value) => {'exceededAllowanceUntil': value,},
+      _ => const <String, dynamic>{},
+    },
+    'kind': kind.toJson(),
+    ...switch (teamThrottled) {
+      SdkPresent<UploadProjectAvatarResponseUsageStatusTeamThrottled>(value: final value) => {'teamThrottled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (throttled) {
+      SdkPresent<UploadProjectAvatarResponseUsageStatusThrottled>(value: final value) => {'throttled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UploadProjectAvatarResponseWebAnalytics {
@@ -436,92 +199,43 @@ class UploadProjectAvatarResponseWebAnalytics {
   final SdkOptional<UploadProjectAvatarResponseWebAnalyticsHasData> hasData;
   final String id;
 
-  const UploadProjectAvatarResponseWebAnalytics(
-      {this.canceledAt = const SdkOmitted(),
-      this.disabledAt = const SdkOmitted(),
-      this.enabledAt = const SdkOmitted(),
-      this.hasData = const SdkOmitted(),
-      required this.id});
+  const UploadProjectAvatarResponseWebAnalytics({this.canceledAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id});
 
-  UploadProjectAvatarResponseWebAnalytics Function(
-      {SdkOptional<double> canceledAt,
-      SdkOptional<double> disabledAt,
-      SdkOptional<double> enabledAt,
-      SdkOptional<UploadProjectAvatarResponseWebAnalyticsHasData> hasData,
-      String id}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseWebAnalytics Function({SdkOptional<double> canceledAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<UploadProjectAvatarResponseWebAnalyticsHasData> hasData, String id}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseWebAnalytics _copyWith(
-          {Object? canceledAt = sdkOmittedValue,
-          Object? disabledAt = sdkOmittedValue,
-          Object? enabledAt = sdkOmittedValue,
-          Object? hasData = sdkOmittedValue,
-          Object? id = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseWebAnalytics(
-        canceledAt: identical(canceledAt, sdkOmittedValue)
-            ? this.canceledAt
-            : canceledAt as SdkOptional<double>,
-        disabledAt: identical(disabledAt, sdkOmittedValue)
-            ? this.disabledAt
-            : disabledAt as SdkOptional<double>,
-        enabledAt: identical(enabledAt, sdkOmittedValue)
-            ? this.enabledAt
-            : enabledAt as SdkOptional<double>,
-        hasData: identical(hasData, sdkOmittedValue)
-            ? this.hasData
-            : hasData
-                as SdkOptional<UploadProjectAvatarResponseWebAnalyticsHasData>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  UploadProjectAvatarResponseWebAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue}) => UploadProjectAvatarResponseWebAnalytics(
+    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
+    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
+    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
+    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<UploadProjectAvatarResponseWebAnalyticsHasData>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory UploadProjectAvatarResponseWebAnalytics.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseWebAnalytics(
-        canceledAt: json['canceledAt'] != null
-            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        disabledAt: json['disabledAt'] != null
-            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        enabledAt: json['enabledAt'] != null
-            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        hasData: json['hasData'] != null
-            ? SdkPresent((json['hasData'] != null
-                ? UploadProjectAvatarResponseWebAnalyticsHasData.fromJson(
-                    json['hasData'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-      );
+  factory UploadProjectAvatarResponseWebAnalytics.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseWebAnalytics(
+    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? UploadProjectAvatarResponseWebAnalyticsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (canceledAt) {
-          SdkPresent<double>(value: final value) => {
-              'canceledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'disabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'enabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hasData) {
-          SdkPresent<UploadProjectAvatarResponseWebAnalyticsHasData>(
-            value: final value
-          ) =>
-            {
-              'hasData': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-      };
+    ...switch (canceledAt) {
+      SdkPresent<double>(value: final value) => {'canceledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disabledAt) {
+      SdkPresent<double>(value: final value) => {'disabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enabledAt) {
+      SdkPresent<double>(value: final value) => {'enabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hasData) {
+      SdkPresent<UploadProjectAvatarResponseWebAnalyticsHasData>(value: final value) => {'hasData': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+  };
 }

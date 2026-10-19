@@ -7,37 +7,23 @@ part of 'inline.dart';
 class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type
-      type_;
+  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type type_;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0(
-      {required this.type_});
+  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0({required this.type_});
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0 Function(
-      {CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type
-          type_}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0 Function({CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type type_}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0
-      _copyWith({Object? type_ = sdkOmittedValue}) =>
-          CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0(
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type,
-          );
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0(
-        type_: (json['type'] != null
-            ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0(
+    type_: (json['type'] != null ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant0Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-      };
+    'type': type_.toJson(),
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1 {
@@ -45,50 +31,29 @@ class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1 {
   static const String constructionSurface = 'named';
   final String attribute;
   final String kind;
-  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type
-      type_;
+  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type type_;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1(
-      {required this.attribute, required this.kind, required this.type_});
+  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1({required this.attribute, required this.kind, required this.type_});
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1 Function(
-      {String attribute,
-      String kind,
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type
-          type_}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1 Function({String attribute, String kind, CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type type_}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1
-      _copyWith(
-              {Object? attribute = sdkOmittedValue,
-              Object? kind = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1(
-            attribute: identical(attribute, sdkOmittedValue)
-                ? this.attribute
-                : attribute as String,
-            kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type,
-          );
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1 _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemLhsVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0 {
@@ -98,59 +63,33 @@ class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Items
   final SdkOptional<String> note;
   final double value;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
-      {this.label = const SdkOmitted(),
-      this.note = const SdkOmitted(),
-      required this.value});
+  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0({this.label = const SdkOmitted(), this.note = const SdkOmitted(), required this.value});
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0
-          Function({SdkOptional<String> label, SdkOptional<String> note, double value})
-      get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0 Function({SdkOptional<String> label, SdkOptional<String> note, double value}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0
-      _copyWith(
-              {Object? label = sdkOmittedValue,
-              Object? note = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
-            label: identical(label, sdkOmittedValue)
-                ? this.label
-                : label as SdkOptional<String>,
-            note: identical(note, sdkOmittedValue)
-                ? this.note
-                : note as SdkOptional<String>,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as double,
-          );
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0 _copyWith({Object? label = sdkOmittedValue, Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as double,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        value: ((json['value'] as num?)?.toDouble())!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant0(
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    value: ((json['value'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-      };
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1 {
@@ -160,104 +99,59 @@ class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Items
   final SdkOptional<String> note;
   final String value;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
-      {this.label = const SdkOmitted(),
-      this.note = const SdkOmitted(),
-      required this.value});
+  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1({this.label = const SdkOmitted(), this.note = const SdkOmitted(), required this.value});
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1
-          Function({SdkOptional<String> label, SdkOptional<String> note, String value})
-      get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1 Function({SdkOptional<String> label, SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1
-      _copyWith(
-              {Object? label = sdkOmittedValue,
-              Object? note = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
-            label: identical(label, sdkOmittedValue)
-                ? this.label
-                : label as SdkOptional<String>,
-            note: identical(note, sdkOmittedValue)
-                ? this.note
-                : note as SdkOptional<String>,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as String,
-          );
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1 _copyWith({Object? label = sdkOmittedValue, Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2ItemsItemVariant1(
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-      };
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<dynamic> items;
-  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type
-      type_;
+  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type type_;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2(
-      {required this.items, required this.type_});
+  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2({required this.items, required this.type_});
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2 Function(
-      {List<dynamic> items,
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type
-          type_}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2 Function({List<dynamic> items, CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type type_}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2
-      _copyWith(
-              {Object? items = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2(
-            items: identical(items, sdkOmittedValue)
-                ? this.items
-                : items as List<dynamic>,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type,
-          );
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2 _copyWith({Object? items = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2(
+    items: identical(items, sdkOmittedValue) ? this.items : items as List<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2(
-        items: ((json['items'] as List?)?.map((e) => e).toList())!,
-        type_: (json['type'] != null
-            ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2(
+    items: ((json['items'] as List?)?.map((e) => e).toList())!,
+    type_: (json['type'] != null ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'items': items,
-        'type': type_.toJson(),
-      };
+    'items': items,
+    'type': type_.toJson(),
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3 {
@@ -265,137 +159,69 @@ class CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3 {
   static const String constructionSurface = 'named';
   final String flags;
   final String pattern;
-  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type
-      type_;
+  final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type type_;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3(
-      {required this.flags, required this.pattern, required this.type_});
+  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3({required this.flags, required this.pattern, required this.type_});
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3 Function(
-      {String flags,
-      String pattern,
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type
-          type_}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3 Function({String flags, String pattern, CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type type_}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3
-      _copyWith(
-              {Object? flags = sdkOmittedValue,
-              Object? pattern = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue}) =>
-          CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3(
-            flags: identical(flags, sdkOmittedValue)
-                ? this.flags
-                : flags as String,
-            pattern: identical(pattern, sdkOmittedValue)
-                ? this.pattern
-                : pattern as String,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type,
-          );
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3 _copyWith({Object? flags = sdkOmittedValue, Object? pattern = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3(
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
+    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3(
-        flags: (json['flags'] as String?)!,
-        pattern: (json['pattern'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3(
+    flags: (json['flags'] as String?)!,
+    pattern: (json['pattern'] as String?)!,
+    type_: (json['type'] != null ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemRhsVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'flags': flags,
-        'pattern': pattern,
-        'type': type_.toJson(),
-      };
+    'flags': flags,
+    'pattern': pattern,
+    'type': type_.toJson(),
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp cmp;
-  final SdkOptional<
-          CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions>
-      cmpOptions;
+  final SdkOptional<CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions> cmpOptions;
   final dynamic lhs;
   final SdkOptional<dynamic> rhs;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItem(
-      {required this.cmp,
-      this.cmpOptions = const SdkOmitted(),
-      required this.lhs,
-      this.rhs = const SdkOmitted()});
+  const CreateFlagResponseEnvironmentsValueRulesItemConditionsItem({required this.cmp, this.cmpOptions = const SdkOmitted(), required this.lhs, this.rhs = const SdkOmitted()});
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItem Function(
-      {CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp cmp,
-      SdkOptional<
-              CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions>
-          cmpOptions,
-      dynamic lhs,
-      SdkOptional<dynamic> rhs}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItem Function({CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp cmp, SdkOptional<CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions> cmpOptions, dynamic lhs, SdkOptional<dynamic> rhs}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemConditionsItem _copyWith(
-          {Object? cmp = sdkOmittedValue,
-          Object? cmpOptions = sdkOmittedValue,
-          Object? lhs = sdkOmittedValue,
-          Object? rhs = sdkOmittedValue}) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItem(
-        cmp: identical(cmp, sdkOmittedValue)
-            ? this.cmp
-            : cmp
-                as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp,
-        cmpOptions: identical(cmpOptions, sdkOmittedValue)
-            ? this.cmpOptions
-            : cmpOptions as SdkOptional<
-                CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions>,
-        lhs: identical(lhs, sdkOmittedValue) ? this.lhs : lhs as dynamic,
-        rhs: identical(rhs, sdkOmittedValue)
-            ? this.rhs
-            : rhs as SdkOptional<dynamic>,
-      );
+  CreateFlagResponseEnvironmentsValueRulesItemConditionsItem _copyWith({Object? cmp = sdkOmittedValue, Object? cmpOptions = sdkOmittedValue, Object? lhs = sdkOmittedValue, Object? rhs = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItem(
+    cmp: identical(cmp, sdkOmittedValue) ? this.cmp : cmp as CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp,
+    cmpOptions: identical(cmpOptions, sdkOmittedValue) ? this.cmpOptions : cmpOptions as SdkOptional<CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions>,
+    lhs: identical(lhs, sdkOmittedValue) ? this.lhs : lhs as dynamic,
+    rhs: identical(rhs, sdkOmittedValue) ? this.rhs : rhs as SdkOptional<dynamic>,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemConditionsItem(
-        cmp: (json['cmp'] != null
-            ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp
-                .fromJson(json['cmp'] as String)
-            : null)!,
-        cmpOptions: json['cmpOptions'] != null
-            ? SdkPresent((json['cmpOptions'] != null
-                ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions
-                    .fromJson(json['cmpOptions'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        lhs: (json['lhs'])!,
-        rhs: json['rhs'] != null
-            ? SdkPresent((json['rhs'])!)
-            : const SdkOmitted(),
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemConditionsItem.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemConditionsItem(
+    cmp: (json['cmp'] != null ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmp.fromJson(json['cmp'] as String) : null)!,
+    cmpOptions: json['cmpOptions'] != null ? SdkPresent((json['cmpOptions'] != null ? CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions.fromJson(json['cmpOptions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    lhs: (json['lhs'])!,
+    rhs: json['rhs'] != null ? SdkPresent((json['rhs'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'cmp': cmp.toJson(),
-        ...switch (cmpOptions) {
-          SdkPresent<
-                CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions>(
-            value: final value
-          ) =>
-            {
-              'cmpOptions': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'lhs': lhs,
-        ...switch (rhs) {
-          SdkPresent<dynamic>(value: final value) => {
-              'rhs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'cmp': cmp.toJson(),
+    ...switch (cmpOptions) {
+      SdkPresent<CreateFlagResponseEnvironmentsValueRulesItemConditionsItemCmpOptions>(value: final value) => {'cmpOptions': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'lhs': lhs,
+    ...switch (rhs) {
+      SdkPresent<dynamic>(value: final value) => {'rhs': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0 {
@@ -404,40 +230,24 @@ class CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0 {
   final CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0Type type_;
   final String variantId;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0(
-      {required this.type_, required this.variantId});
+  const CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0({required this.type_, required this.variantId});
 
-  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0 Function(
-      {CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0Type type_,
-      String variantId}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0 Function({CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0Type type_, String variantId}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? variantId = sdkOmittedValue}) =>
-      CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0(
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0Type,
-        variantId: identical(variantId, sdkOmittedValue)
-            ? this.variantId
-            : variantId as String,
-      );
+  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? variantId = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0Type,
+    variantId: identical(variantId, sdkOmittedValue) ? this.variantId : variantId as String,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0(
-        type_: (json['type'] != null
-            ? CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0Type
-                .fromJson(json['type'] as String)
-            : null)!,
-        variantId: (json['variantId'] as String?)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0(
+    type_: (json['type'] != null ? CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant0Type.fromJson(json['type'] as String) : null)!,
+    variantId: (json['variantId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_.toJson(),
-        'variantId': variantId,
-      };
+    'type': type_.toJson(),
+    'variantId': variantId,
+  };
 }
 
 class CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base {
@@ -445,47 +255,27 @@ class CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base {
   static const String constructionSurface = 'named';
   final String attribute;
   final String kind;
-  final CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType
-      type_;
+  final CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType type_;
 
-  const CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base(
-      {required this.attribute, required this.kind, required this.type_});
+  const CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base({required this.attribute, required this.kind, required this.type_});
 
-  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base Function(
-      {String attribute,
-      String kind,
-      CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType
-          type_}) get copyWith => _copyWith;
+  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base Function({String attribute, String kind, CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType type_}) get copyWith => _copyWith;
 
-  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base _copyWith(
-          {Object? attribute = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base(
-        attribute: identical(attribute, sdkOmittedValue)
-            ? this.attribute
-            : attribute as String,
-        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType,
-      );
+  CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base(
+    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType,
+  );
 
-  factory CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base.fromJson(
-          Map<String, dynamic> json) =>
-      CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base(
-        attribute: (json['attribute'] as String?)!,
-        kind: (json['kind'] as String?)!,
-        type_: (json['type'] != null
-            ? CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base.fromJson(Map<String, dynamic> json) => CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1Base(
+    attribute: (json['attribute'] as String?)!,
+    kind: (json['kind'] as String?)!,
+    type_: (json['type'] != null ? CreateFlagResponseEnvironmentsValueRulesItemOutcomeVariant1BaseType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'attribute': attribute,
-        'kind': kind,
-        'type': type_.toJson(),
-      };
+    'attribute': attribute,
+    'kind': kind,
+    'type': type_.toJson(),
+  };
 }

@@ -5,132 +5,114 @@ part of 'inline.dart';
 
 // Inline operation models (part 384)
 final class GetFlagSettingsResponseTypeName {
+
   final String value;
 
   const GetFlagSettingsResponseTypeName._(this.value);
 
-  factory GetFlagSettingsResponseTypeName.fromJson(String value) =>
-      GetFlagSettingsResponseTypeName._(value);
+  factory GetFlagSettingsResponseTypeName.fromJson(String value) => GetFlagSettingsResponseTypeName._(value);
 
   static const settings = GetFlagSettingsResponseTypeName._('settings');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetFlagSettingsResponseTypeName && other.value == value;
+  @override bool operator ==(Object other) => other is GetFlagSettingsResponseTypeName && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagSettingsResponseEnabled {
+
   final bool value;
 
   const UpdateFlagSettingsResponseEnabled._(this.value);
 
-  factory UpdateFlagSettingsResponseEnabled.fromJson(bool value) =>
-      UpdateFlagSettingsResponseEnabled._(value);
+  factory UpdateFlagSettingsResponseEnabled.fromJson(bool value) => UpdateFlagSettingsResponseEnabled._(value);
 
   static const false_ = UpdateFlagSettingsResponseEnabled._(false);
   static const true_ = UpdateFlagSettingsResponseEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagSettingsResponseEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagSettingsResponseEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagSettingsResponseTypeName {
+
   final String value;
 
   const UpdateFlagSettingsResponseTypeName._(this.value);
 
-  factory UpdateFlagSettingsResponseTypeName.fromJson(String value) =>
-      UpdateFlagSettingsResponseTypeName._(value);
+  factory UpdateFlagSettingsResponseTypeName.fromJson(String value) => UpdateFlagSettingsResponseTypeName._(value);
 
   static const settings = UpdateFlagSettingsResponseTypeName._('settings');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagSettingsResponseTypeName && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagSettingsResponseTypeName && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagSettingsResponseEnabledfb74ca80 {
+
   final bool value;
 
   const UpdateFlagSettingsResponseEnabledfb74ca80._(this.value);
 
-  factory UpdateFlagSettingsResponseEnabledfb74ca80.fromJson(bool value) =>
-      UpdateFlagSettingsResponseEnabledfb74ca80._(value);
+  factory UpdateFlagSettingsResponseEnabledfb74ca80.fromJson(bool value) => UpdateFlagSettingsResponseEnabledfb74ca80._(value);
 
   static const false_ = UpdateFlagSettingsResponseEnabledfb74ca80._(false);
   static const true_ = UpdateFlagSettingsResponseEnabledfb74ca80._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagSettingsResponseEnabledfb74ca80 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagSettingsResponseEnabledfb74ca80 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagSettingsResponseTypeNameebbe1e0e {
+
   final String value;
 
   const UpdateFlagSettingsResponseTypeNameebbe1e0e._(this.value);
 
-  factory UpdateFlagSettingsResponseTypeNameebbe1e0e.fromJson(String value) =>
-      UpdateFlagSettingsResponseTypeNameebbe1e0e._(value);
+  factory UpdateFlagSettingsResponseTypeNameebbe1e0e.fromJson(String value) => UpdateFlagSettingsResponseTypeNameebbe1e0e._(value);
 
-  static const settings =
-      UpdateFlagSettingsResponseTypeNameebbe1e0e._('settings');
+  static const settings = UpdateFlagSettingsResponseTypeNameebbe1e0e._('settings');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagSettingsResponseTypeNameebbe1e0e &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagSettingsResponseTypeNameebbe1e0e && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class AggregateEventsByItemVariant0 {
+
   final String value;
 
   const AggregateEventsByItemVariant0._(this.value);
 
-  factory AggregateEventsByItemVariant0.fromJson(String value) =>
-      AggregateEventsByItemVariant0._(value);
+  factory AggregateEventsByItemVariant0.fromJson(String value) => AggregateEventsByItemVariant0._(value);
 
   static const hour = AggregateEventsByItemVariant0._('hour');
   static const day = AggregateEventsByItemVariant0._('day');
@@ -141,8 +123,7 @@ final class AggregateEventsByItemVariant0 {
   static const devicetype = AggregateEventsByItemVariant0._('deviceType');
   static const environment = AggregateEventsByItemVariant0._('environment');
   static const requestpath = AggregateEventsByItemVariant0._('requestPath');
-  static const referrerhostname =
-      AggregateEventsByItemVariant0._('referrerHostname');
+  static const referrerhostname = AggregateEventsByItemVariant0._('referrerHostname');
   static const osname = AggregateEventsByItemVariant0._('osName');
   static const browsername = AggregateEventsByItemVariant0._('browserName');
   static const route = AggregateEventsByItemVariant0._('route');
@@ -157,80 +138,56 @@ final class AggregateEventsByItemVariant0 {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AggregateEventsByItemVariant0 && other.value == value;
+  @override bool operator ==(Object other) => other is AggregateEventsByItemVariant0 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class AggregateEventsResponseQueryGroupByItemVariant1 {
+
   final String value;
 
   const AggregateEventsResponseQueryGroupByItemVariant1._(this.value);
 
-  factory AggregateEventsResponseQueryGroupByItemVariant1.fromJson(
-          String value) =>
-      AggregateEventsResponseQueryGroupByItemVariant1._(value);
+  factory AggregateEventsResponseQueryGroupByItemVariant1.fromJson(String value) => AggregateEventsResponseQueryGroupByItemVariant1._(value);
 
-  static const browsername =
-      AggregateEventsResponseQueryGroupByItemVariant1._('browserName');
-  static const country =
-      AggregateEventsResponseQueryGroupByItemVariant1._('country');
-  static const devicetype =
-      AggregateEventsResponseQueryGroupByItemVariant1._('deviceType');
-  static const environment =
-      AggregateEventsResponseQueryGroupByItemVariant1._('environment');
-  static const eventdata =
-      AggregateEventsResponseQueryGroupByItemVariant1._('eventData');
-  static const eventname =
-      AggregateEventsResponseQueryGroupByItemVariant1._('eventName');
-  static const flags =
-      AggregateEventsResponseQueryGroupByItemVariant1._('flags');
-  static const osname =
-      AggregateEventsResponseQueryGroupByItemVariant1._('osName');
-  static const referrerhostname =
-      AggregateEventsResponseQueryGroupByItemVariant1._('referrerHostname');
-  static const requestpath =
-      AggregateEventsResponseQueryGroupByItemVariant1._('requestPath');
-  static const route =
-      AggregateEventsResponseQueryGroupByItemVariant1._('route');
-  static const utmcampaign =
-      AggregateEventsResponseQueryGroupByItemVariant1._('utmCampaign');
-  static const utmcontent =
-      AggregateEventsResponseQueryGroupByItemVariant1._('utmContent');
-  static const utmmedium =
-      AggregateEventsResponseQueryGroupByItemVariant1._('utmMedium');
-  static const utmsource =
-      AggregateEventsResponseQueryGroupByItemVariant1._('utmSource');
-  static const utmterm =
-      AggregateEventsResponseQueryGroupByItemVariant1._('utmTerm');
+  static const browsername = AggregateEventsResponseQueryGroupByItemVariant1._('browserName');
+  static const country = AggregateEventsResponseQueryGroupByItemVariant1._('country');
+  static const devicetype = AggregateEventsResponseQueryGroupByItemVariant1._('deviceType');
+  static const environment = AggregateEventsResponseQueryGroupByItemVariant1._('environment');
+  static const eventdata = AggregateEventsResponseQueryGroupByItemVariant1._('eventData');
+  static const eventname = AggregateEventsResponseQueryGroupByItemVariant1._('eventName');
+  static const flags = AggregateEventsResponseQueryGroupByItemVariant1._('flags');
+  static const osname = AggregateEventsResponseQueryGroupByItemVariant1._('osName');
+  static const referrerhostname = AggregateEventsResponseQueryGroupByItemVariant1._('referrerHostname');
+  static const requestpath = AggregateEventsResponseQueryGroupByItemVariant1._('requestPath');
+  static const route = AggregateEventsResponseQueryGroupByItemVariant1._('route');
+  static const utmcampaign = AggregateEventsResponseQueryGroupByItemVariant1._('utmCampaign');
+  static const utmcontent = AggregateEventsResponseQueryGroupByItemVariant1._('utmContent');
+  static const utmmedium = AggregateEventsResponseQueryGroupByItemVariant1._('utmMedium');
+  static const utmsource = AggregateEventsResponseQueryGroupByItemVariant1._('utmSource');
+  static const utmterm = AggregateEventsResponseQueryGroupByItemVariant1._('utmTerm');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AggregateEventsResponseQueryGroupByItemVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is AggregateEventsResponseQueryGroupByItemVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class AggregatePageviewsByItemVariant0 {
+
   final String value;
 
   const AggregatePageviewsByItemVariant0._(this.value);
 
-  factory AggregatePageviewsByItemVariant0.fromJson(String value) =>
-      AggregatePageviewsByItemVariant0._(value);
+  factory AggregatePageviewsByItemVariant0.fromJson(String value) => AggregatePageviewsByItemVariant0._(value);
 
   static const hour = AggregatePageviewsByItemVariant0._('hour');
   static const day = AggregatePageviewsByItemVariant0._('day');
@@ -241,8 +198,7 @@ final class AggregatePageviewsByItemVariant0 {
   static const devicetype = AggregatePageviewsByItemVariant0._('deviceType');
   static const environment = AggregatePageviewsByItemVariant0._('environment');
   static const requestpath = AggregatePageviewsByItemVariant0._('requestPath');
-  static const referrerhostname =
-      AggregatePageviewsByItemVariant0._('referrerHostname');
+  static const referrerhostname = AggregatePageviewsByItemVariant0._('referrerHostname');
   static const osname = AggregatePageviewsByItemVariant0._('osName');
   static const browsername = AggregatePageviewsByItemVariant0._('browserName');
   static const route = AggregatePageviewsByItemVariant0._('route');
@@ -255,76 +211,54 @@ final class AggregatePageviewsByItemVariant0 {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AggregatePageviewsByItemVariant0 && other.value == value;
+  @override bool operator ==(Object other) => other is AggregatePageviewsByItemVariant0 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class AggregatePageviewsResponseQueryGroupByItemVariant1 {
+
   final String value;
 
   const AggregatePageviewsResponseQueryGroupByItemVariant1._(this.value);
 
-  factory AggregatePageviewsResponseQueryGroupByItemVariant1.fromJson(
-          String value) =>
-      AggregatePageviewsResponseQueryGroupByItemVariant1._(value);
+  factory AggregatePageviewsResponseQueryGroupByItemVariant1.fromJson(String value) => AggregatePageviewsResponseQueryGroupByItemVariant1._(value);
 
-  static const browsername =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('browserName');
-  static const country =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('country');
-  static const devicetype =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('deviceType');
-  static const environment =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('environment');
-  static const flags =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('flags');
-  static const osname =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('osName');
-  static const referrerhostname =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('referrerHostname');
-  static const requestpath =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('requestPath');
-  static const route =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('route');
-  static const utmcampaign =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('utmCampaign');
-  static const utmcontent =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('utmContent');
-  static const utmmedium =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('utmMedium');
-  static const utmsource =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('utmSource');
-  static const utmterm =
-      AggregatePageviewsResponseQueryGroupByItemVariant1._('utmTerm');
+  static const browsername = AggregatePageviewsResponseQueryGroupByItemVariant1._('browserName');
+  static const country = AggregatePageviewsResponseQueryGroupByItemVariant1._('country');
+  static const devicetype = AggregatePageviewsResponseQueryGroupByItemVariant1._('deviceType');
+  static const environment = AggregatePageviewsResponseQueryGroupByItemVariant1._('environment');
+  static const flags = AggregatePageviewsResponseQueryGroupByItemVariant1._('flags');
+  static const osname = AggregatePageviewsResponseQueryGroupByItemVariant1._('osName');
+  static const referrerhostname = AggregatePageviewsResponseQueryGroupByItemVariant1._('referrerHostname');
+  static const requestpath = AggregatePageviewsResponseQueryGroupByItemVariant1._('requestPath');
+  static const route = AggregatePageviewsResponseQueryGroupByItemVariant1._('route');
+  static const utmcampaign = AggregatePageviewsResponseQueryGroupByItemVariant1._('utmCampaign');
+  static const utmcontent = AggregatePageviewsResponseQueryGroupByItemVariant1._('utmContent');
+  static const utmmedium = AggregatePageviewsResponseQueryGroupByItemVariant1._('utmMedium');
+  static const utmsource = AggregatePageviewsResponseQueryGroupByItemVariant1._('utmSource');
+  static const utmterm = AggregatePageviewsResponseQueryGroupByItemVariant1._('utmTerm');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is AggregatePageviewsResponseQueryGroupByItemVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is AggregatePageviewsResponseQueryGroupByItemVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class BuySingleDomainResponseLinksValueMethod {
+
   final String value;
 
   const BuySingleDomainResponseLinksValueMethod._(this.value);
 
-  factory BuySingleDomainResponseLinksValueMethod.fromJson(String value) =>
-      BuySingleDomainResponseLinksValueMethod._(value);
+  factory BuySingleDomainResponseLinksValueMethod.fromJson(String value) => BuySingleDomainResponseLinksValueMethod._(value);
 
   static const get_ = BuySingleDomainResponseLinksValueMethod._('GET');
   static const post = BuySingleDomainResponseLinksValueMethod._('POST');
@@ -334,13 +268,10 @@ final class BuySingleDomainResponseLinksValueMethod {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is BuySingleDomainResponseLinksValueMethod && other.value == value;
+  @override bool operator ==(Object other) => other is BuySingleDomainResponseLinksValueMethod && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

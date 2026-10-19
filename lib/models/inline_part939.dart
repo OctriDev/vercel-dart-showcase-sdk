@@ -8,56 +8,31 @@ part of 'inline.dart';
 class GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-      preset;
-
+  final GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset;
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-      {required this.preset, this.slugs = const SdkOmitted()});
+  const GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
 
-  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function(
-      {GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-          preset,
-      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function({GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1
-      _copyWith(
-              {Object? preset = sdkOmittedValue,
-              Object? slugs = sdkOmittedValue}) =>
-          GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-            preset: identical(preset, sdkOmittedValue)
-                ? this.preset
-                : preset
-                    as GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
-            slugs: identical(slugs, sdkOmittedValue)
-                ? this.slugs
-                : slugs as SdkOptional<List<String>>,
-          );
+  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
+    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
+  );
 
-  factory GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-        preset: (json['preset'] != null
-            ? GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
-                .fromJson(json['preset'] as String)
-            : null)!,
-        slugs: json['slugs'] != null
-            ? SdkPresent(
-                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(Map<String, dynamic> json) => GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+    preset: (json['preset'] != null ? GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
+    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'preset': preset.toJson(),
-        ...switch (slugs) {
-          SdkPresent<List<String>>(value: final value) => {
-              'slugs': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'preset': preset.toJson(),
+    ...switch (slugs) {
+      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
@@ -67,350 +42,152 @@ class GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem {
   final dynamic from;
   final dynamic to;
 
-  const GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem(
-      {required this.from, required this.to});
+  const GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem({required this.from, required this.to});
 
-  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem Function(
-      {dynamic from, dynamic to}) get copyWith => _copyWith;
+  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem Function({dynamic from, dynamic to}) get copyWith => _copyWith;
 
-  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem _copyWith(
-          {Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) =>
-      GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem(
-        from: identical(from, sdkOmittedValue) ? this.from : from as dynamic,
-        to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-      );
+  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem _copyWith({Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) => GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem(
+    from: identical(from, sdkOmittedValue) ? this.from : from as dynamic,
+    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+  );
 
-  factory GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem(
-        from: (json['from'])!,
-        to: (json['to'])!,
-      );
+  factory GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(Map<String, dynamic> json) => GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem(
+    from: (json['from'])!,
+    to: (json['to'])!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'from': from,
-        'to': to,
-      };
+    'from': from,
+    'to': to,
+  };
 }
 
 class GetProjectsResponseTrustedSourcesProjectsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
-  final SdkOptional<
-          List<GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>>
-      customAllow;
+  final SdkOptional<List<GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>> customAllow;
   final SdkOptional<String> label;
 
-  const GetProjectsResponseTrustedSourcesProjectsValue(
-      {this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
+  const GetProjectsResponseTrustedSourcesProjectsValue({this.customAllow = const SdkOmitted(), this.label = const SdkOmitted()});
 
-  GetProjectsResponseTrustedSourcesProjectsValue Function(
-      {SdkOptional<
-              List<
-                  GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>>
-          customAllow,
-      SdkOptional<String> label}) get copyWith => _copyWith;
+  GetProjectsResponseTrustedSourcesProjectsValue Function({SdkOptional<List<GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>> customAllow, SdkOptional<String> label}) get copyWith => _copyWith;
 
-  GetProjectsResponseTrustedSourcesProjectsValue _copyWith(
-          {Object? customAllow = sdkOmittedValue,
-          Object? label = sdkOmittedValue}) =>
-      GetProjectsResponseTrustedSourcesProjectsValue(
-        customAllow: identical(customAllow, sdkOmittedValue)
-            ? this.customAllow
-            : customAllow as SdkOptional<
-                List<
-                    GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>>,
-        label: identical(label, sdkOmittedValue)
-            ? this.label
-            : label as SdkOptional<String>,
-      );
+  GetProjectsResponseTrustedSourcesProjectsValue _copyWith({Object? customAllow = sdkOmittedValue, Object? label = sdkOmittedValue}) => GetProjectsResponseTrustedSourcesProjectsValue(
+    customAllow: identical(customAllow, sdkOmittedValue) ? this.customAllow : customAllow as SdkOptional<List<GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>>,
+    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
+  );
 
-  factory GetProjectsResponseTrustedSourcesProjectsValue.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseTrustedSourcesProjectsValue(
-        customAllow: json['customAllow'] != null
-            ? SdkPresent(((json['customAllow'] as List?)
-                ?.map((e) =>
-                    GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        label: json['label'] != null
-            ? SdkPresent((json['label'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory GetProjectsResponseTrustedSourcesProjectsValue.fromJson(Map<String, dynamic> json) => GetProjectsResponseTrustedSourcesProjectsValue(
+    customAllow: json['customAllow'] != null ? SdkPresent(((json['customAllow'] as List?)?.map((e) => GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (customAllow) {
-          SdkPresent<
-                List<
-                    GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>>(
-            value: final value
-          ) =>
-            {
-              'customAllow': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (label) {
-          SdkPresent<String>(value: final value) => {
-              'label': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (customAllow) {
+      SdkPresent<List<GetProjectsResponseTrustedSourcesProjectsValueCustomAllowItem>>(value: final value) => {'customAllow': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (label) {
+      SdkPresent<String>(value: final value) => {'label': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetProjectsResponseTrustedSources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Allow same-team Vercel CI access to preview and production deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value.
-  final SdkOptional<
-          GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository>
-      enableVercelCiSameRepository;
-  final SdkOptional<
-          Map<String,
-              List<GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>>
-      oidcProviders;
-  final SdkOptional<Map<String, GetProjectsResponseTrustedSourcesProjectsValue>>
-      projects;
+  final SdkOptional<GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository> enableVercelCiSameRepository;
+  final SdkOptional<Map<String, List<GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>> oidcProviders;
+  final SdkOptional<Map<String, GetProjectsResponseTrustedSourcesProjectsValue>> projects;
 
-  const GetProjectsResponseTrustedSources(
-      {this.enableVercelCiSameRepository = const SdkOmitted(),
-      this.oidcProviders = const SdkOmitted(),
-      this.projects = const SdkOmitted()});
+  const GetProjectsResponseTrustedSources({this.enableVercelCiSameRepository = const SdkOmitted(), this.oidcProviders = const SdkOmitted(), this.projects = const SdkOmitted()});
 
-  GetProjectsResponseTrustedSources Function(
-      {SdkOptional<
-              GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository>
-          enableVercelCiSameRepository,
-      SdkOptional<
-              Map<
-                  String,
-                  List<
-                      GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>>
-          oidcProviders,
-      SdkOptional<Map<String, GetProjectsResponseTrustedSourcesProjectsValue>>
-          projects}) get copyWith => _copyWith;
+  GetProjectsResponseTrustedSources Function({SdkOptional<GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository> enableVercelCiSameRepository, SdkOptional<Map<String, List<GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>> oidcProviders, SdkOptional<Map<String, GetProjectsResponseTrustedSourcesProjectsValue>> projects}) get copyWith => _copyWith;
 
-  GetProjectsResponseTrustedSources _copyWith(
-          {Object? enableVercelCiSameRepository = sdkOmittedValue,
-          Object? oidcProviders = sdkOmittedValue,
-          Object? projects = sdkOmittedValue}) =>
-      GetProjectsResponseTrustedSources(
-        enableVercelCiSameRepository: identical(
-                enableVercelCiSameRepository, sdkOmittedValue)
-            ? this.enableVercelCiSameRepository
-            : enableVercelCiSameRepository as SdkOptional<
-                GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository>,
-        oidcProviders: identical(oidcProviders, sdkOmittedValue)
-            ? this.oidcProviders
-            : oidcProviders as SdkOptional<
-                Map<
-                    String,
-                    List<
-                        GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>>,
-        projects: identical(projects, sdkOmittedValue)
-            ? this.projects
-            : projects as SdkOptional<
-                Map<String, GetProjectsResponseTrustedSourcesProjectsValue>>,
-      );
+  GetProjectsResponseTrustedSources _copyWith({Object? enableVercelCiSameRepository = sdkOmittedValue, Object? oidcProviders = sdkOmittedValue, Object? projects = sdkOmittedValue}) => GetProjectsResponseTrustedSources(
+    enableVercelCiSameRepository: identical(enableVercelCiSameRepository, sdkOmittedValue) ? this.enableVercelCiSameRepository : enableVercelCiSameRepository as SdkOptional<GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository>,
+    oidcProviders: identical(oidcProviders, sdkOmittedValue) ? this.oidcProviders : oidcProviders as SdkOptional<Map<String, List<GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>>,
+    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<Map<String, GetProjectsResponseTrustedSourcesProjectsValue>>,
+  );
 
-  factory GetProjectsResponseTrustedSources.fromJson(
-          Map<String, dynamic> json) =>
-      GetProjectsResponseTrustedSources(
-        enableVercelCiSameRepository: json['enableVercelCiSameRepository'] !=
-                null
-            ? SdkPresent((json['enableVercelCiSameRepository'] != null
-                ? GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository
-                    .fromJson(json['enableVercelCiSameRepository'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        oidcProviders: json['oidcProviders'] != null
-            ? SdkPresent((json['oidcProviders'] == null
-                ? null
-                : Map<String, dynamic>.from(json['oidcProviders'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        (value as List)
-                            .map((item) =>
-                                GetProjectsResponseTrustedSourcesOidcProvidersValueItem
-                                    .fromJson(item as Map<String, dynamic>))
-                            .toList())))!)
-            : const SdkOmitted(),
-        projects: json['projects'] != null
-            ? SdkPresent((json['projects'] == null
-                ? null
-                : Map<String, dynamic>.from(json['projects'] as Map).map(
-                    (key, value) => MapEntry(
-                        key,
-                        GetProjectsResponseTrustedSourcesProjectsValue.fromJson(
-                            value as Map<String, dynamic>))))!)
-            : const SdkOmitted(),
-      );
+  factory GetProjectsResponseTrustedSources.fromJson(Map<String, dynamic> json) => GetProjectsResponseTrustedSources(
+    enableVercelCiSameRepository: json['enableVercelCiSameRepository'] != null ? SdkPresent((json['enableVercelCiSameRepository'] != null ? GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository.fromJson(json['enableVercelCiSameRepository'] as bool) : null)!) : const SdkOmitted(),
+    oidcProviders: json['oidcProviders'] != null ? SdkPresent((json['oidcProviders'] == null ? null : Map<String, dynamic>.from(json['oidcProviders'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => GetProjectsResponseTrustedSourcesOidcProvidersValueItem.fromJson(item as Map<String, dynamic>)).toList())))!) : const SdkOmitted(),
+    projects: json['projects'] != null ? SdkPresent((json['projects'] == null ? null : Map<String, dynamic>.from(json['projects'] as Map).map((key, value) => MapEntry(key, GetProjectsResponseTrustedSourcesProjectsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enableVercelCiSameRepository) {
-          SdkPresent<
-                GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository>(
-            value: final value
-          ) =>
-            {
-              'enableVercelCiSameRepository': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (oidcProviders) {
-          SdkPresent<
-                Map<
-                    String,
-                    List<
-                        GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>>(
-            value: final value
-          ) =>
-            {
-              'oidcProviders': value.map((key, value) =>
-                  MapEntry(key, value.map((item) => item.toJson()).toList())),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projects) {
-          SdkPresent<
-                Map<String, GetProjectsResponseTrustedSourcesProjectsValue>>(
-            value: final value
-          ) =>
-            {
-              'projects':
-                  value.map((key, value) => MapEntry(key, value.toJson())),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enableVercelCiSameRepository) {
+      SdkPresent<GetProjectsResponseTrustedSourcesEnableVercelCiSameRepository>(value: final value) => {'enableVercelCiSameRepository': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (oidcProviders) {
+      SdkPresent<Map<String, List<GetProjectsResponseTrustedSourcesOidcProvidersValueItem>>>(value: final value) => {'oidcProviders': value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projects) {
+      SdkPresent<Map<String, GetProjectsResponseTrustedSourcesProjectsValue>>(value: final value) => {'projects': value.map((key, value) => MapEntry(key, value.toJson())),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetProjectsResponseUsageStatus {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Timestamp until which throttling is bypassed (project pays list rates for overage).
   final SdkOptional<double> bypassThrottleUntil;
-
   /// Timestamp until which the project has exceeded its CDN allowance.
   final SdkOptional<double> exceededAllowanceUntil;
-
   /// Billing mode. Always 'flat' for flat-rate projects.
   final GetProjectsResponseUsageStatusKind kind;
-
   /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
   final SdkOptional<GetProjectsResponseUsageStatusTeamThrottled> teamThrottled;
-
   /// Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint).
   final SdkOptional<GetProjectsResponseUsageStatusThrottled> throttled;
 
-  const GetProjectsResponseUsageStatus(
-      {this.bypassThrottleUntil = const SdkOmitted(),
-      this.exceededAllowanceUntil = const SdkOmitted(),
-      required this.kind,
-      this.teamThrottled = const SdkOmitted(),
-      this.throttled = const SdkOmitted()});
+  const GetProjectsResponseUsageStatus({this.bypassThrottleUntil = const SdkOmitted(), this.exceededAllowanceUntil = const SdkOmitted(), required this.kind, this.teamThrottled = const SdkOmitted(), this.throttled = const SdkOmitted()});
 
-  GetProjectsResponseUsageStatus Function(
-      {SdkOptional<double> bypassThrottleUntil,
-      SdkOptional<double> exceededAllowanceUntil,
-      GetProjectsResponseUsageStatusKind kind,
-      SdkOptional<GetProjectsResponseUsageStatusTeamThrottled> teamThrottled,
-      SdkOptional<GetProjectsResponseUsageStatusThrottled>
-          throttled}) get copyWith => _copyWith;
+  GetProjectsResponseUsageStatus Function({SdkOptional<double> bypassThrottleUntil, SdkOptional<double> exceededAllowanceUntil, GetProjectsResponseUsageStatusKind kind, SdkOptional<GetProjectsResponseUsageStatusTeamThrottled> teamThrottled, SdkOptional<GetProjectsResponseUsageStatusThrottled> throttled}) get copyWith => _copyWith;
 
-  GetProjectsResponseUsageStatus _copyWith(
-          {Object? bypassThrottleUntil = sdkOmittedValue,
-          Object? exceededAllowanceUntil = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? teamThrottled = sdkOmittedValue,
-          Object? throttled = sdkOmittedValue}) =>
-      GetProjectsResponseUsageStatus(
-        bypassThrottleUntil: identical(bypassThrottleUntil, sdkOmittedValue)
-            ? this.bypassThrottleUntil
-            : bypassThrottleUntil as SdkOptional<double>,
-        exceededAllowanceUntil:
-            identical(exceededAllowanceUntil, sdkOmittedValue)
-                ? this.exceededAllowanceUntil
-                : exceededAllowanceUntil as SdkOptional<double>,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as GetProjectsResponseUsageStatusKind,
-        teamThrottled: identical(teamThrottled, sdkOmittedValue)
-            ? this.teamThrottled
-            : teamThrottled
-                as SdkOptional<GetProjectsResponseUsageStatusTeamThrottled>,
-        throttled: identical(throttled, sdkOmittedValue)
-            ? this.throttled
-            : throttled as SdkOptional<GetProjectsResponseUsageStatusThrottled>,
-      );
+  GetProjectsResponseUsageStatus _copyWith({Object? bypassThrottleUntil = sdkOmittedValue, Object? exceededAllowanceUntil = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? teamThrottled = sdkOmittedValue, Object? throttled = sdkOmittedValue}) => GetProjectsResponseUsageStatus(
+    bypassThrottleUntil: identical(bypassThrottleUntil, sdkOmittedValue) ? this.bypassThrottleUntil : bypassThrottleUntil as SdkOptional<double>,
+    exceededAllowanceUntil: identical(exceededAllowanceUntil, sdkOmittedValue) ? this.exceededAllowanceUntil : exceededAllowanceUntil as SdkOptional<double>,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as GetProjectsResponseUsageStatusKind,
+    teamThrottled: identical(teamThrottled, sdkOmittedValue) ? this.teamThrottled : teamThrottled as SdkOptional<GetProjectsResponseUsageStatusTeamThrottled>,
+    throttled: identical(throttled, sdkOmittedValue) ? this.throttled : throttled as SdkOptional<GetProjectsResponseUsageStatusThrottled>,
+  );
 
-  factory GetProjectsResponseUsageStatus.fromJson(Map<String, dynamic> json) =>
-      GetProjectsResponseUsageStatus(
-        bypassThrottleUntil: json['bypassThrottleUntil'] != null
-            ? SdkPresent(((json['bypassThrottleUntil'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        exceededAllowanceUntil: json['exceededAllowanceUntil'] != null
-            ? SdkPresent(
-                ((json['exceededAllowanceUntil'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        kind: (json['kind'] != null
-            ? GetProjectsResponseUsageStatusKind.fromJson(
-                json['kind'] as String)
-            : null)!,
-        teamThrottled: json['teamThrottled'] != null
-            ? SdkPresent((json['teamThrottled'] != null
-                ? GetProjectsResponseUsageStatusTeamThrottled.fromJson(
-                    json['teamThrottled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        throttled: json['throttled'] != null
-            ? SdkPresent((json['throttled'] != null
-                ? GetProjectsResponseUsageStatusThrottled.fromJson(
-                    json['throttled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetProjectsResponseUsageStatus.fromJson(Map<String, dynamic> json) => GetProjectsResponseUsageStatus(
+    bypassThrottleUntil: json['bypassThrottleUntil'] != null ? SdkPresent(((json['bypassThrottleUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
+    exceededAllowanceUntil: json['exceededAllowanceUntil'] != null ? SdkPresent(((json['exceededAllowanceUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
+    kind: (json['kind'] != null ? GetProjectsResponseUsageStatusKind.fromJson(json['kind'] as String) : null)!,
+    teamThrottled: json['teamThrottled'] != null ? SdkPresent((json['teamThrottled'] != null ? GetProjectsResponseUsageStatusTeamThrottled.fromJson(json['teamThrottled'] as bool) : null)!) : const SdkOmitted(),
+    throttled: json['throttled'] != null ? SdkPresent((json['throttled'] != null ? GetProjectsResponseUsageStatusThrottled.fromJson(json['throttled'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (bypassThrottleUntil) {
-          SdkPresent<double>(value: final value) => {
-              'bypassThrottleUntil': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (exceededAllowanceUntil) {
-          SdkPresent<double>(value: final value) => {
-              'exceededAllowanceUntil': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'kind': kind.toJson(),
-        ...switch (teamThrottled) {
-          SdkPresent<GetProjectsResponseUsageStatusTeamThrottled>(
-            value: final value
-          ) =>
-            {
-              'teamThrottled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (throttled) {
-          SdkPresent<GetProjectsResponseUsageStatusThrottled>(
-            value: final value
-          ) =>
-            {
-              'throttled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (bypassThrottleUntil) {
+      SdkPresent<double>(value: final value) => {'bypassThrottleUntil': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (exceededAllowanceUntil) {
+      SdkPresent<double>(value: final value) => {'exceededAllowanceUntil': value,},
+      _ => const <String, dynamic>{},
+    },
+    'kind': kind.toJson(),
+    ...switch (teamThrottled) {
+      SdkPresent<GetProjectsResponseUsageStatusTeamThrottled>(value: final value) => {'teamThrottled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (throttled) {
+      SdkPresent<GetProjectsResponseUsageStatusThrottled>(value: final value) => {'throttled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetProjectsResponseWebAnalytics {
@@ -422,90 +199,43 @@ class GetProjectsResponseWebAnalytics {
   final SdkOptional<GetProjectsResponseWebAnalyticsHasData> hasData;
   final String id;
 
-  const GetProjectsResponseWebAnalytics(
-      {this.canceledAt = const SdkOmitted(),
-      this.disabledAt = const SdkOmitted(),
-      this.enabledAt = const SdkOmitted(),
-      this.hasData = const SdkOmitted(),
-      required this.id});
+  const GetProjectsResponseWebAnalytics({this.canceledAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id});
 
-  GetProjectsResponseWebAnalytics Function(
-      {SdkOptional<double> canceledAt,
-      SdkOptional<double> disabledAt,
-      SdkOptional<double> enabledAt,
-      SdkOptional<GetProjectsResponseWebAnalyticsHasData> hasData,
-      String id}) get copyWith => _copyWith;
+  GetProjectsResponseWebAnalytics Function({SdkOptional<double> canceledAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<GetProjectsResponseWebAnalyticsHasData> hasData, String id}) get copyWith => _copyWith;
 
-  GetProjectsResponseWebAnalytics _copyWith(
-          {Object? canceledAt = sdkOmittedValue,
-          Object? disabledAt = sdkOmittedValue,
-          Object? enabledAt = sdkOmittedValue,
-          Object? hasData = sdkOmittedValue,
-          Object? id = sdkOmittedValue}) =>
-      GetProjectsResponseWebAnalytics(
-        canceledAt: identical(canceledAt, sdkOmittedValue)
-            ? this.canceledAt
-            : canceledAt as SdkOptional<double>,
-        disabledAt: identical(disabledAt, sdkOmittedValue)
-            ? this.disabledAt
-            : disabledAt as SdkOptional<double>,
-        enabledAt: identical(enabledAt, sdkOmittedValue)
-            ? this.enabledAt
-            : enabledAt as SdkOptional<double>,
-        hasData: identical(hasData, sdkOmittedValue)
-            ? this.hasData
-            : hasData as SdkOptional<GetProjectsResponseWebAnalyticsHasData>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-      );
+  GetProjectsResponseWebAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue}) => GetProjectsResponseWebAnalytics(
+    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
+    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
+    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
+    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<GetProjectsResponseWebAnalyticsHasData>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+  );
 
-  factory GetProjectsResponseWebAnalytics.fromJson(Map<String, dynamic> json) =>
-      GetProjectsResponseWebAnalytics(
-        canceledAt: json['canceledAt'] != null
-            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        disabledAt: json['disabledAt'] != null
-            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        enabledAt: json['enabledAt'] != null
-            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        hasData: json['hasData'] != null
-            ? SdkPresent((json['hasData'] != null
-                ? GetProjectsResponseWebAnalyticsHasData.fromJson(
-                    json['hasData'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-      );
+  factory GetProjectsResponseWebAnalytics.fromJson(Map<String, dynamic> json) => GetProjectsResponseWebAnalytics(
+    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? GetProjectsResponseWebAnalyticsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (canceledAt) {
-          SdkPresent<double>(value: final value) => {
-              'canceledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'disabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (enabledAt) {
-          SdkPresent<double>(value: final value) => {
-              'enabledAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (hasData) {
-          SdkPresent<GetProjectsResponseWebAnalyticsHasData>(
-            value: final value
-          ) =>
-            {
-              'hasData': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-      };
+    ...switch (canceledAt) {
+      SdkPresent<double>(value: final value) => {'canceledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disabledAt) {
+      SdkPresent<double>(value: final value) => {'disabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (enabledAt) {
+      SdkPresent<double>(value: final value) => {'enabledAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (hasData) {
+      SdkPresent<GetProjectsResponseWebAnalyticsHasData>(value: final value) => {'hasData': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+  };
 }

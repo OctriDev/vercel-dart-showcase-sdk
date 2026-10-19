@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 445)
 final class GetVercelCiTaskLogsLevelItem {
+
   final String value;
 
   const GetVercelCiTaskLogsLevelItem._(this.value);
 
-  factory GetVercelCiTaskLogsLevelItem.fromJson(String value) =>
-      GetVercelCiTaskLogsLevelItem._(value);
+  factory GetVercelCiTaskLogsLevelItem.fromJson(String value) => GetVercelCiTaskLogsLevelItem._(value);
 
   static const trace = GetVercelCiTaskLogsLevelItem._('trace');
   static const debug = GetVercelCiTaskLogsLevelItem._('debug');
@@ -23,62 +23,49 @@ final class GetVercelCiTaskLogsLevelItem {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetVercelCiTaskLogsLevelItem && other.value == value;
+  @override bool operator ==(Object other) => other is GetVercelCiTaskLogsLevelItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// When 1, stream the tree as newline-delimited JSON until the attempt finishes.
 final class GetVercelCiInvocationTreeFollow {
+
   final int value;
 
   const GetVercelCiInvocationTreeFollow._(this.value);
 
-  factory GetVercelCiInvocationTreeFollow.fromJson(int value) =>
-      GetVercelCiInvocationTreeFollow._(value);
+  factory GetVercelCiInvocationTreeFollow.fromJson(int value) => GetVercelCiInvocationTreeFollow._(value);
 
   static const v0 = GetVercelCiInvocationTreeFollow._(0);
   static const v1 = GetVercelCiInvocationTreeFollow._(1);
 
   int toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetVercelCiInvocationTreeFollow && other.value == value;
+  @override bool operator ==(Object other) => other is GetVercelCiInvocationTreeFollow && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0 {
   succeeded;
 
-  static GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0 fromJson(String value) {
     switch (value) {
-      case 'succeeded':
-        return GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0
-            .succeeded;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0: $value');
+      case 'succeeded': return GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0.succeeded;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0
-            .succeeded:
-        return 'succeeded';
+      case GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0.succeeded: return 'succeeded';
     }
   }
 
@@ -89,23 +76,16 @@ enum GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant0 {
 enum GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1 {
   failed;
 
-  static GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1 fromJson(String value) {
     switch (value) {
-      case 'failed':
-        return GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1
-            .failed;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1: $value');
+      case 'failed': return GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1.failed;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1
-            .failed:
-        return 'failed';
+      case GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1.failed: return 'failed';
     }
   }
 
@@ -116,23 +96,16 @@ enum GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant1 {
 enum GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2 {
   skipped;
 
-  static GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2 fromJson(String value) {
     switch (value) {
-      case 'skipped':
-        return GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2
-            .skipped;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2: $value');
+      case 'skipped': return GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2.skipped;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2
-            .skipped:
-        return 'skipped';
+      case GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2.skipped: return 'skipped';
     }
   }
 
@@ -143,23 +116,16 @@ enum GetVercelCiInvocationTreeResponseInvocationCompletedConclusionVariant2 {
 enum GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0 {
   turboJson;
 
-  static GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0 fromJson(String value) {
     switch (value) {
-      case 'turbo-json':
-        return GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0
-            .turboJson;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0: $value');
+      case 'turbo-json': return GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0.turboJson;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0
-            .turboJson:
-        return 'turbo-json';
+      case GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant0.turboJson: return 'turbo-json';
     }
   }
 
@@ -170,23 +136,16 @@ enum GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVaria
 enum GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1 {
   vercelCiConfig;
 
-  static GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1 fromJson(String value) {
     switch (value) {
-      case 'vercel-ci-config':
-        return GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1
-            .vercelCiConfig;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1: $value');
+      case 'vercel-ci-config': return GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1.vercelCiConfig;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1
-            .vercelCiConfig:
-        return 'vercel-ci-config';
+      case GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant1.vercelCiConfig: return 'vercel-ci-config';
     }
   }
 
@@ -197,23 +156,16 @@ enum GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVaria
 enum GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2 {
   projectSettings;
 
-  static GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2 fromJson(String value) {
     switch (value) {
-      case 'project-settings':
-        return GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2
-            .projectSettings;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2: $value');
+      case 'project-settings': return GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2.projectSettings;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2
-            .projectSettings:
-        return 'project-settings';
+      case GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVariant2.projectSettings: return 'project-settings';
     }
   }
 
@@ -224,23 +176,16 @@ enum GetVercelCiInvocationTreeResponseInvocationJobDefinitionsCreatedSourceVaria
 enum GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0 {
   succeeded;
 
-  static GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0 fromJson(String value) {
     switch (value) {
-      case 'succeeded':
-        return GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0
-            .succeeded;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0: $value');
+      case 'succeeded': return GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0.succeeded;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0
-            .succeeded:
-        return 'succeeded';
+      case GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0.succeeded: return 'succeeded';
     }
   }
 
@@ -251,23 +196,16 @@ enum GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant0 {
 enum GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1 {
   failed;
 
-  static GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1 fromJson(String value) {
     switch (value) {
-      case 'failed':
-        return GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1
-            .failed;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1: $value');
+      case 'failed': return GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1.failed;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1
-            .failed:
-        return 'failed';
+      case GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1.failed: return 'failed';
     }
   }
 
@@ -278,23 +216,16 @@ enum GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant1 {
 enum GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2 {
   skipped;
 
-  static GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2 fromJson(String value) {
     switch (value) {
-      case 'skipped':
-        return GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2
-            .skipped;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2: $value');
+      case 'skipped': return GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2.skipped;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2
-            .skipped:
-        return 'skipped';
+      case GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2.skipped: return 'skipped';
     }
   }
 
@@ -305,23 +236,16 @@ enum GetVercelCiInvocationTreeResponseInvocationRunConclusionResultVariant2 {
 enum GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0 {
   succeeded;
 
-  static GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0 fromJson(String value) {
     switch (value) {
-      case 'succeeded':
-        return GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0
-            .succeeded;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0: $value');
+      case 'succeeded': return GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0.succeeded;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0
-            .succeeded:
-        return 'succeeded';
+      case GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0.succeeded: return 'succeeded';
     }
   }
 
@@ -332,23 +256,16 @@ enum GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant0 {
 enum GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1 {
   failed;
 
-  static GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1
-      fromJson(String value) {
+  static GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1 fromJson(String value) {
     switch (value) {
-      case 'failed':
-        return GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1
-            .failed;
-      default:
-        throw ArgumentError(
-            'Unknown GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1: $value');
+      case 'failed': return GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1.failed;
+      default: throw ArgumentError('Unknown GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1
-            .failed:
-        return 'failed';
+      case GetVercelCiInvocationTreeResponseInvocationSetupConclusionResultVariant1.failed: return 'failed';
     }
   }
 

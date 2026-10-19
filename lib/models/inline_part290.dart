@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 290)
 final class CreateKmsIssuerResponseAlgorithm {
+
   final String value;
 
   const CreateKmsIssuerResponseAlgorithm._(this.value);
 
-  factory CreateKmsIssuerResponseAlgorithm.fromJson(String value) =>
-      CreateKmsIssuerResponseAlgorithm._(value);
+  factory CreateKmsIssuerResponseAlgorithm.fromJson(String value) => CreateKmsIssuerResponseAlgorithm._(value);
 
   static const es256 = CreateKmsIssuerResponseAlgorithm._('ES256');
   static const es384 = CreateKmsIssuerResponseAlgorithm._('ES384');
@@ -24,77 +24,64 @@ final class CreateKmsIssuerResponseAlgorithm {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateKmsIssuerResponseAlgorithm && other.value == value;
+  @override bool operator ==(Object other) => other is CreateKmsIssuerResponseAlgorithm && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateKmsIssuerResponseOrigin {
+
   final String value;
 
   const CreateKmsIssuerResponseOrigin._(this.value);
 
-  factory CreateKmsIssuerResponseOrigin.fromJson(String value) =>
-      CreateKmsIssuerResponseOrigin._(value);
+  factory CreateKmsIssuerResponseOrigin.fromJson(String value) => CreateKmsIssuerResponseOrigin._(value);
 
   static const external_ = CreateKmsIssuerResponseOrigin._('external');
   static const vercel = CreateKmsIssuerResponseOrigin._('vercel');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateKmsIssuerResponseOrigin && other.value == value;
+  @override bool operator ==(Object other) => other is CreateKmsIssuerResponseOrigin && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateKmsIssuerResponseSigningKeysItemStatus {
+
   final String value;
 
   const CreateKmsIssuerResponseSigningKeysItemStatus._(this.value);
 
-  factory CreateKmsIssuerResponseSigningKeysItemStatus.fromJson(String value) =>
-      CreateKmsIssuerResponseSigningKeysItemStatus._(value);
+  factory CreateKmsIssuerResponseSigningKeysItemStatus.fromJson(String value) => CreateKmsIssuerResponseSigningKeysItemStatus._(value);
 
-  static const active =
-      CreateKmsIssuerResponseSigningKeysItemStatus._('active');
-  static const pending =
-      CreateKmsIssuerResponseSigningKeysItemStatus._('pending');
-  static const revoking =
-      CreateKmsIssuerResponseSigningKeysItemStatus._('revoking');
+  static const active = CreateKmsIssuerResponseSigningKeysItemStatus._('active');
+  static const pending = CreateKmsIssuerResponseSigningKeysItemStatus._('pending');
+  static const revoking = CreateKmsIssuerResponseSigningKeysItemStatus._('revoking');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateKmsIssuerResponseSigningKeysItemStatus &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateKmsIssuerResponseSigningKeysItemStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetKmsIssuerResponseAlgorithm {
+
   final String value;
 
   const GetKmsIssuerResponseAlgorithm._(this.value);
 
-  factory GetKmsIssuerResponseAlgorithm.fromJson(String value) =>
-      GetKmsIssuerResponseAlgorithm._(value);
+  factory GetKmsIssuerResponseAlgorithm.fromJson(String value) => GetKmsIssuerResponseAlgorithm._(value);
 
   static const es256 = GetKmsIssuerResponseAlgorithm._('ES256');
   static const es384 = GetKmsIssuerResponseAlgorithm._('ES384');
@@ -108,75 +95,64 @@ final class GetKmsIssuerResponseAlgorithm {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetKmsIssuerResponseAlgorithm && other.value == value;
+  @override bool operator ==(Object other) => other is GetKmsIssuerResponseAlgorithm && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetKmsIssuerResponseOrigin {
+
   final String value;
 
   const GetKmsIssuerResponseOrigin._(this.value);
 
-  factory GetKmsIssuerResponseOrigin.fromJson(String value) =>
-      GetKmsIssuerResponseOrigin._(value);
+  factory GetKmsIssuerResponseOrigin.fromJson(String value) => GetKmsIssuerResponseOrigin._(value);
 
   static const external_ = GetKmsIssuerResponseOrigin._('external');
   static const vercel = GetKmsIssuerResponseOrigin._('vercel');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetKmsIssuerResponseOrigin && other.value == value;
+  @override bool operator ==(Object other) => other is GetKmsIssuerResponseOrigin && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetKmsIssuerResponseSigningKeysItemStatus {
+
   final String value;
 
   const GetKmsIssuerResponseSigningKeysItemStatus._(this.value);
 
-  factory GetKmsIssuerResponseSigningKeysItemStatus.fromJson(String value) =>
-      GetKmsIssuerResponseSigningKeysItemStatus._(value);
+  factory GetKmsIssuerResponseSigningKeysItemStatus.fromJson(String value) => GetKmsIssuerResponseSigningKeysItemStatus._(value);
 
   static const active = GetKmsIssuerResponseSigningKeysItemStatus._('active');
   static const pending = GetKmsIssuerResponseSigningKeysItemStatus._('pending');
-  static const revoking =
-      GetKmsIssuerResponseSigningKeysItemStatus._('revoking');
+  static const revoking = GetKmsIssuerResponseSigningKeysItemStatus._('revoking');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetKmsIssuerResponseSigningKeysItemStatus &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetKmsIssuerResponseSigningKeysItemStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateKmsIssuerResponseAlgorithm {
+
   final String value;
 
   const UpdateKmsIssuerResponseAlgorithm._(this.value);
 
-  factory UpdateKmsIssuerResponseAlgorithm.fromJson(String value) =>
-      UpdateKmsIssuerResponseAlgorithm._(value);
+  factory UpdateKmsIssuerResponseAlgorithm.fromJson(String value) => UpdateKmsIssuerResponseAlgorithm._(value);
 
   static const es256 = UpdateKmsIssuerResponseAlgorithm._('ES256');
   static const es384 = UpdateKmsIssuerResponseAlgorithm._('ES384');
@@ -190,103 +166,86 @@ final class UpdateKmsIssuerResponseAlgorithm {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateKmsIssuerResponseAlgorithm && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateKmsIssuerResponseAlgorithm && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateKmsIssuerResponseOrigin {
+
   final String value;
 
   const UpdateKmsIssuerResponseOrigin._(this.value);
 
-  factory UpdateKmsIssuerResponseOrigin.fromJson(String value) =>
-      UpdateKmsIssuerResponseOrigin._(value);
+  factory UpdateKmsIssuerResponseOrigin.fromJson(String value) => UpdateKmsIssuerResponseOrigin._(value);
 
   static const external_ = UpdateKmsIssuerResponseOrigin._('external');
   static const vercel = UpdateKmsIssuerResponseOrigin._('vercel');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateKmsIssuerResponseOrigin && other.value == value;
+  @override bool operator ==(Object other) => other is UpdateKmsIssuerResponseOrigin && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateKmsIssuerResponseSigningKeysItemStatus {
+
   final String value;
 
   const UpdateKmsIssuerResponseSigningKeysItemStatus._(this.value);
 
-  factory UpdateKmsIssuerResponseSigningKeysItemStatus.fromJson(String value) =>
-      UpdateKmsIssuerResponseSigningKeysItemStatus._(value);
+  factory UpdateKmsIssuerResponseSigningKeysItemStatus.fromJson(String value) => UpdateKmsIssuerResponseSigningKeysItemStatus._(value);
 
-  static const active =
-      UpdateKmsIssuerResponseSigningKeysItemStatus._('active');
-  static const pending =
-      UpdateKmsIssuerResponseSigningKeysItemStatus._('pending');
-  static const revoking =
-      UpdateKmsIssuerResponseSigningKeysItemStatus._('revoking');
+  static const active = UpdateKmsIssuerResponseSigningKeysItemStatus._('active');
+  static const pending = UpdateKmsIssuerResponseSigningKeysItemStatus._('pending');
+  static const revoking = UpdateKmsIssuerResponseSigningKeysItemStatus._('revoking');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateKmsIssuerResponseSigningKeysItemStatus &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateKmsIssuerResponseSigningKeysItemStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the new key is activated automatically after its public key has propagated, or manually via the activate endpoint. Defaults to `automatic`.
 final class CreateKmsSigningKeyRequestBodyActivation {
+
   final String value;
 
   const CreateKmsSigningKeyRequestBodyActivation._(this.value);
 
-  factory CreateKmsSigningKeyRequestBodyActivation.fromJson(String value) =>
-      CreateKmsSigningKeyRequestBodyActivation._(value);
+  factory CreateKmsSigningKeyRequestBodyActivation.fromJson(String value) => CreateKmsSigningKeyRequestBodyActivation._(value);
 
-  static const automatic =
-      CreateKmsSigningKeyRequestBodyActivation._('automatic');
+  static const automatic = CreateKmsSigningKeyRequestBodyActivation._('automatic');
   static const manual = CreateKmsSigningKeyRequestBodyActivation._('manual');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateKmsSigningKeyRequestBodyActivation && other.value == value;
+  @override bool operator ==(Object other) => other is CreateKmsSigningKeyRequestBodyActivation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateKmsSigningKeyResponseStatus {
+
   final String value;
 
   const CreateKmsSigningKeyResponseStatus._(this.value);
 
-  factory CreateKmsSigningKeyResponseStatus.fromJson(String value) =>
-      CreateKmsSigningKeyResponseStatus._(value);
+  factory CreateKmsSigningKeyResponseStatus.fromJson(String value) => CreateKmsSigningKeyResponseStatus._(value);
 
   static const active = CreateKmsSigningKeyResponseStatus._('active');
   static const pending = CreateKmsSigningKeyResponseStatus._('pending');
@@ -294,24 +253,21 @@ final class CreateKmsSigningKeyResponseStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateKmsSigningKeyResponseStatus && other.value == value;
+  @override bool operator ==(Object other) => other is CreateKmsSigningKeyResponseStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class ActivateKmsSigningKeyResponseStatus {
+
   final String value;
 
   const ActivateKmsSigningKeyResponseStatus._(this.value);
 
-  factory ActivateKmsSigningKeyResponseStatus.fromJson(String value) =>
-      ActivateKmsSigningKeyResponseStatus._(value);
+  factory ActivateKmsSigningKeyResponseStatus.fromJson(String value) => ActivateKmsSigningKeyResponseStatus._(value);
 
   static const active = ActivateKmsSigningKeyResponseStatus._('active');
   static const pending = ActivateKmsSigningKeyResponseStatus._('pending');
@@ -319,13 +275,10 @@ final class ActivateKmsSigningKeyResponseStatus {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is ActivateKmsSigningKeyResponseStatus && other.value == value;
+  @override bool operator ==(Object other) => other is ActivateKmsSigningKeyResponseStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

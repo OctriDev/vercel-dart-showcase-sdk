@@ -10,109 +10,59 @@ class UploadProjectAvatarResponseDismissedToastsItem {
   final UploadProjectAvatarResponseDismissedToastsItemAction action;
   final double dismissedAt;
   final String key;
-
   /// Typed representation of the `UploadProjectAvatarResponseDismissedToastsItemValue` API schema.
   final UploadProjectAvatarResponseDismissedToastsItemValue? value;
 
-  const UploadProjectAvatarResponseDismissedToastsItem(
-      {required this.action,
-      required this.dismissedAt,
-      required this.key,
-      required this.value});
+  const UploadProjectAvatarResponseDismissedToastsItem({required this.action, required this.dismissedAt, required this.key, required this.value});
 
-  UploadProjectAvatarResponseDismissedToastsItem Function(
-          {UploadProjectAvatarResponseDismissedToastsItemAction action,
-          double dismissedAt,
-          String key,
-          UploadProjectAvatarResponseDismissedToastsItemValue? value})
-      get copyWith => _copyWith;
+  UploadProjectAvatarResponseDismissedToastsItem Function({UploadProjectAvatarResponseDismissedToastsItemAction action, double dismissedAt, String key, UploadProjectAvatarResponseDismissedToastsItemValue? value}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseDismissedToastsItem _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? dismissedAt = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseDismissedToastsItem(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as UploadProjectAvatarResponseDismissedToastsItemAction,
-        dismissedAt: identical(dismissedAt, sdkOmittedValue)
-            ? this.dismissedAt
-            : dismissedAt as double,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as UploadProjectAvatarResponseDismissedToastsItemValue?,
-      );
+  UploadProjectAvatarResponseDismissedToastsItem _copyWith({Object? action = sdkOmittedValue, Object? dismissedAt = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => UploadProjectAvatarResponseDismissedToastsItem(
+    action: identical(action, sdkOmittedValue) ? this.action : action as UploadProjectAvatarResponseDismissedToastsItemAction,
+    dismissedAt: identical(dismissedAt, sdkOmittedValue) ? this.dismissedAt : dismissedAt as double,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as UploadProjectAvatarResponseDismissedToastsItemValue?,
+  );
 
-  factory UploadProjectAvatarResponseDismissedToastsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseDismissedToastsItem(
-        action: (json['action'] != null
-            ? UploadProjectAvatarResponseDismissedToastsItemAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
-        key: (json['key'] as String?)!,
-        value: json.containsKey('value')
-            ? json['value'] != null
-                ? UploadProjectAvatarResponseDismissedToastsItemValue.fromJson(
-                    json['value'])
-                : null
-            : throw ArgumentError.value(
-                null, 'value', 'Required property is missing'),
-      );
+  factory UploadProjectAvatarResponseDismissedToastsItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseDismissedToastsItem(
+    action: (json['action'] != null ? UploadProjectAvatarResponseDismissedToastsItemAction.fromJson(json['action'] as String) : null)!,
+    dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
+    key: (json['key'] as String?)!,
+    value: json.containsKey('value') ? json['value'] != null ? UploadProjectAvatarResponseDismissedToastsItemValue.fromJson(json['value']) : null : throw ArgumentError.value(null, 'value', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'dismissedAt': dismissedAt,
-        'key': key,
-        'value': value?.toJson(),
-      };
+    'action': action.toJson(),
+    'dismissedAt': dismissedAt,
+    'key': key,
+    'value': value?.toJson(),
+  };
 }
 
 /// Similar to `contentHints`, but should not be exposed to the user.
 class UploadProjectAvatarResponseEnvItemInternalContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
   final String encryptedValue;
   final UploadProjectAvatarResponseEnvItemInternalContentHintType type_;
 
-  const UploadProjectAvatarResponseEnvItemInternalContentHint(
-      {required this.encryptedValue, required this.type_});
+  const UploadProjectAvatarResponseEnvItemInternalContentHint({required this.encryptedValue, required this.type_});
 
-  UploadProjectAvatarResponseEnvItemInternalContentHint Function(
-          {String encryptedValue,
-          UploadProjectAvatarResponseEnvItemInternalContentHintType type_})
-      get copyWith => _copyWith;
+  UploadProjectAvatarResponseEnvItemInternalContentHint Function({String encryptedValue, UploadProjectAvatarResponseEnvItemInternalContentHintType type_}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseEnvItemInternalContentHint _copyWith(
-          {Object? encryptedValue = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseEnvItemInternalContentHint(
-        encryptedValue: identical(encryptedValue, sdkOmittedValue)
-            ? this.encryptedValue
-            : encryptedValue as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as UploadProjectAvatarResponseEnvItemInternalContentHintType,
-      );
+  UploadProjectAvatarResponseEnvItemInternalContentHint _copyWith({Object? encryptedValue = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseEnvItemInternalContentHint(
+    encryptedValue: identical(encryptedValue, sdkOmittedValue) ? this.encryptedValue : encryptedValue as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseEnvItemInternalContentHintType,
+  );
 
-  factory UploadProjectAvatarResponseEnvItemInternalContentHint.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseEnvItemInternalContentHint(
-        encryptedValue: (json['encryptedValue'] as String?)!,
-        type_: (json['type'] != null
-            ? UploadProjectAvatarResponseEnvItemInternalContentHintType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UploadProjectAvatarResponseEnvItemInternalContentHint.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseEnvItemInternalContentHint(
+    encryptedValue: (json['encryptedValue'] as String?)!,
+    type_: (json['type'] != null ? UploadProjectAvatarResponseEnvItemInternalContentHintType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'encryptedValue': encryptedValue,
-        'type': type_.toJson(),
-      };
+    'encryptedValue': encryptedValue,
+    'type': type_.toJson(),
+  };
 }

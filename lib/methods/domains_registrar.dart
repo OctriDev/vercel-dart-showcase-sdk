@@ -22,29 +22,17 @@ Future<SearchDomainsResponse> searchDomains(ClientConfig config,
           'POST', '/v1/registrar/domains/search',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {'domains': domains},
           decoder: SdkResponseDecoder.json,
           operationId: 'searchDomains',
-          fromJsonRaw: (value) =>
-              SearchDomainsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => SearchDomainsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                HttpApiDecodeError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => HttpApiDecodeError.fromJson(value as Map<String, dynamic>), '401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Lists the top-level domains supported for domain registration. Use this operation to discover which TLDs are available before requesting TLD metadata or checking domain availability. The response is an array of TLD names.
 ///
@@ -55,28 +43,16 @@ Future<List<String>> getSupportedTlds(ClientConfig config,
   return (await sdkRequest<List<String>>('GET', '/v1/registrar/tlds/supported',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSupportedTlds',
-          fromJsonRaw: (value) =>
-              (value as List).map((item) => item as String).toList(),
+          fromJsonRaw: (value) => (value as List).map((item) => item as String).toList(),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                HttpApiDecodeError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => HttpApiDecodeError.fromJson(value as Map<String, dynamic>), '401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves metadata for a specific top-level domain. Use this operation to find the language codes supported for the TLD and their corresponding language names. The response contains a map of supported language codes.
 ///
@@ -89,26 +65,16 @@ Future<GetTldResponse> getTld(ClientConfig config,
           'GET', '/v1/registrar/tlds/${Uri.encodeComponent(tld.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getTld',
-          fromJsonRaw: (value) =>
-              GetTldResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetTldResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves base price data for a top-level domain (TLD); premium domains may have different prices. Use `years` to request a registration term, or omit it to use the TLD's minimum term. For premium-domain pricing, use the endpoint for getting price data for a domain.
 ///
@@ -125,28 +91,17 @@ Future<GetTldPriceResponse> getTldPrice(ClientConfig config,
           '/v1/registrar/tlds/${Uri.encodeComponent(tld.toString())}/price',
           config: config,
           query: {
-            'years': SdkQueryValue(SdkUtils.unwrapOptional(years),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'years': SdkQueryValue(SdkUtils.unwrapOptional(years), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getTldPrice',
-          fromJsonRaw: (value) =>
-              GetTldPriceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetTldPriceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves the availability status for a specific domain. Use `domain` to check whether the name is available before attempting to purchase it. If it is available, you can purchase it through the single-domain or multiple-domain purchase endpoint.
 ///
@@ -159,29 +114,16 @@ Future<GetDomainAvailabilityResponse> getDomainAvailability(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/availability',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainAvailability',
-          fromJsonRaw: (value) => GetDomainAvailabilityResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDomainAvailabilityResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                HttpApiDecodeError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '404': (value) => NotFound.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => HttpApiDecodeError.fromJson(value as Map<String, dynamic>), '401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '404': (value) => NotFound.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves price data for a specific domain, including purchase, renewal, and transfer prices. Use `years` to request pricing for a particular term, or omit it to use the minimum term for the domain's TLD.
 ///
@@ -198,28 +140,17 @@ Future<GetDomainPriceResponse> getDomainPrice(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/price',
           config: config,
           query: {
-            'years': SdkQueryValue(SdkUtils.unwrapOptional(years),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'years': SdkQueryValue(SdkUtils.unwrapOptional(years), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainPrice',
-          fromJsonRaw: (value) =>
-              GetDomainPriceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDomainPriceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves price data for multiple domains in one request. Supply `domains` with the names to price, and optionally set `years` to request a specific term; omitted terms use the minimum term for each TLD. Use the returned prices to evaluate domains before purchasing them.
 ///
@@ -239,27 +170,17 @@ Future<GetBulkPriceResponse> getBulkPrice(ClientConfig config,
           'POST', '/v1/registrar/domains/price',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {'domains': domains, 'years': SdkUtils.unwrapOptional(years)},
           decoder: SdkResponseDecoder.json,
           operationId: 'getBulkPrice',
-          fromJsonRaw: (value) =>
-              GetBulkPriceResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetBulkPriceResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Checks the availability of multiple domains in one request. Supply `domains` with the names to check, up to 50 per request. If domains are available, you can purchase them through the single-domain or multiple-domain purchase endpoint.
 ///
@@ -276,29 +197,17 @@ Future<GetBulkAvailabilityResponse> getBulkAvailability(ClientConfig config,
           'POST', '/v1/registrar/domains/availability',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {'domains': domains},
           decoder: SdkResponseDecoder.json,
           operationId: 'getBulkAvailability',
-          fromJsonRaw: (value) => GetBulkAvailabilityResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetBulkAvailabilityResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                HttpApiDecodeError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => HttpApiDecodeError.fromJson(value as Map<String, dynamic>), '401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves the contact information schema for a domain's TLD. Use the schema to identify any TLD-specific contact fields you need to supply when registering a domain. The required fields can differ between TLDs.
 ///
@@ -311,25 +220,16 @@ Future<Map<String, dynamic>> getContactInfoSchema(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/contact-info/schema',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getContactInfoSchema',
           fromJsonRaw: (value) => value as Map<String, dynamic>,
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '403': (value) =>
-                NotAuthorizedForScope.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '403': (value) => NotAuthorizedForScope.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves the authorization code for a domain registered with the domain registrar. Use this code when transferring the domain from the registrar to another registrar. The domain must be eligible for transfer out before its code can be retrieved.
 ///
@@ -342,28 +242,16 @@ Future<GetDomainAuthCodeResponse> getDomainAuthCode(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/auth-code',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainAuthCode',
-          fromJsonRaw: (value) =>
-              GetDomainAuthCodeResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDomainAuthCodeResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                DomainNotFound.fromJson(value as Map<String, dynamic>),
-            '409': (value) => DomainCannotBeTransferedOutUntil.fromJson(
-                value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '404': (value) => DomainNotFound.fromJson(value as Map<String, dynamic>), '409': (value) => DomainCannotBeTransferedOutUntil.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Purchases a domain using the supplied registration term, renewal preference, expected price, and contact information. Provide `contactInformation` with the required registrant details and use the TLD contact schema to determine whether additional fields are needed. For a punycode domain, include `languageCode`.
 ///
@@ -399,8 +287,7 @@ Future<BuySingleDomainResponse> buySingleDomain(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/buy',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {
             'autoRenew': autoRenew,
@@ -411,19 +298,12 @@ Future<BuySingleDomainResponse> buySingleDomain(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'buySingleDomain',
-          fromJsonRaw: (value) =>
-              BuySingleDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => BuySingleDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Purchases multiple domains in one order using shared contact information. Supply `domains` with each domain's renewal preference, term, and expected price, and provide the registrant details in `contactInformation`. Include `languageCode` for any punycode domain.
 ///
@@ -444,25 +324,17 @@ Future<BuyDomainsResponse> buyDomains(ClientConfig config,
           'POST', '/v1/registrar/domains/buy',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {'domains': domains, 'contactInformation': contactInformation},
           decoder: SdkResponseDecoder.json,
           operationId: 'buyDomains',
-          fromJsonRaw: (value) =>
-              BuyDomainsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => BuyDomainsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Transfers a domain to the account from another registrar. Provide the losing registrar's `authCode`, the transfer term in `years`, the `expectedPrice`, and registrant `contactInformation`; set `autoRenew` to control future renewals. A 200 response includes the transfer order's `orderId` and links for related actions.
 ///
@@ -492,8 +364,7 @@ Future<TransferInDomainResponse> transferInDomain(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/transfer',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {
             'authCode': authCode,
@@ -504,19 +375,12 @@ Future<TransferInDomainResponse> transferInDomain(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'transferInDomain',
-          fromJsonRaw: (value) =>
-              TransferInDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => TransferInDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves the transfer status for a domain. Use the status to check the progress or outcome of an incoming domain transfer. The response reports the transfer's current state.
 ///
@@ -529,27 +393,16 @@ Future<GetDomainTransferInResponse> getDomainTransferIn(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/transfer',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainTransferIn',
-          fromJsonRaw: (value) => GetDomainTransferInResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDomainTransferInResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                HttpApiDecodeError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '404': (value) => NotFound.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => HttpApiDecodeError.fromJson(value as Map<String, dynamic>), '401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '404': (value) => NotFound.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Renews a domain registered with Vercel for the specified number of years. Provide `years` and `expectedPrice`, and include `contactInformation` when updating the registrant details as part of the renewal. A 200 response includes the renewal order's `orderId` and links for related actions.
 ///
@@ -561,8 +414,7 @@ Future<RenewDomainResponse> renewDomain(ClientConfig config,
     required double years,
     required double expectedPrice,
     SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<RenewDomainRequestBodyContactInformation> contactInformation =
-        const SdkOmitted(),
+    SdkOptional<RenewDomainRequestBodyContactInformation> contactInformation = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateRange('expectedPrice', expectedPrice, min: 0.01);
 
@@ -570,8 +422,7 @@ Future<RenewDomainResponse> renewDomain(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/renew',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {
             'years': years,
@@ -580,21 +431,12 @@ Future<RenewDomainResponse> renewDomain(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'renewDomain',
-          fromJsonRaw: (value) =>
-              RenewDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RenewDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                DomainNotFound.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '404': (value) => DomainNotFound.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Updates whether a domain is set to renew automatically. Set `autoRenew` to `true` or `false` to enable or disable automatic renewal for the specified domain. A 204 response confirms the setting was updated and contains no response body.
 ///
@@ -608,25 +450,16 @@ Future<void> updateDomainAutoRenew(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/auto-renew',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {'autoRenew': autoRenew},
           decoder: SdkResponseDecoder.empty,
           operationId: 'updateDomainAutoRenew',
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                DomainNotFound.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '404': (value) => DomainNotFound.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Updates the nameservers assigned to a domain. Provide `nameservers` as an array of valid nameserver values, or pass an empty array to use Vercel's default nameservers. A 204 response confirms the change and contains no response body.
 ///
@@ -640,58 +473,39 @@ Future<void> updateDomainNameservers(ClientConfig config,
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/nameservers',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           body: {'nameservers': nameservers},
           decoder: SdkResponseDecoder.empty,
           operationId: 'updateDomainNameservers',
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                DomainNotFound.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '404': (value) => DomainNotFound.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves the registrant contact verification status for a domain. Use this after purchasing a domain to check whether its registrant contact has been verified. A 400 is returned if the domain was bought less than 30 minutes before the request.
 ///
 /// Get the registrant contact verification status for a domain. Use this after purchasing a domain to determine whether the contact has been verified. Note that a bought_too_recently error will be returned if the domain was bought less than 30 minutes before the request.
-Future<GetDomainContactVerificationResponse> getDomainContactVerification(
-    ClientConfig config,
-    {required String domain,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetDomainContactVerificationResponse>
+    getDomainContactVerification(ClientConfig config,
+        {required String domain,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetDomainContactVerificationResponse>('GET',
           '/v1/registrar/domains/${Uri.encodeComponent(domain.toString())}/contact-verification',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainContactVerification',
-          fromJsonRaw: (value) =>
-              GetDomainContactVerificationResponse.fromJson(value),
+          fromJsonRaw: (value) => GetDomainContactVerificationResponse.fromJson(value),
           options: requestOptions,
-          errors: {
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '404': (value) =>
-                DomainNotFound.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '404': (value) => DomainNotFound.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }
+
 
 /// Retrieves information about a domain order using its order ID. Use the response to inspect the domains included in the order and its current status. The status is one of `draft`, `purchasing`, `completed`, or `failed`.
 ///
@@ -704,24 +518,12 @@ Future<GetOrderResponse> getOrder(ClientConfig config,
           '/v1/registrar/orders/${Uri.encodeComponent(orderId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getOrder',
-          fromJsonRaw: (value) =>
-              GetOrderResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetOrderResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions,
-          errors: {
-            '400': (value) =>
-                HttpApiDecodeError.fromJson(value as Map<String, dynamic>),
-            '401': (value) =>
-                Unauthorized.fromJson(value as Map<String, dynamic>),
-            '404': (value) => NotFound.fromJson(value as Map<String, dynamic>),
-            '429': (value) =>
-                TooManyRequests.fromJson(value as Map<String, dynamic>),
-            '500': (value) =>
-                InternalServerError.fromJson(value as Map<String, dynamic>)
-          }))
+          errors: {'400': (value) => HttpApiDecodeError.fromJson(value as Map<String, dynamic>), '401': (value) => Unauthorized.fromJson(value as Map<String, dynamic>), '404': (value) => NotFound.fromJson(value as Map<String, dynamic>), '429': (value) => TooManyRequests.fromJson(value as Map<String, dynamic>), '500': (value) => InternalServerError.fromJson(value as Map<String, dynamic>)}))
       .data;
 }

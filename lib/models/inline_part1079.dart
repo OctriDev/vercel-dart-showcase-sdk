@@ -7,133 +7,50 @@ part of 'inline.dart';
 class UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch>
-      match;
-  final SdkOptional<
-          List<
-              UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>>
-      transform;
-
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch> match;
+  final SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>> transform;
   /// HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment.
   final SdkOptional<String> forwardUrl;
-
   /// Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.
-  final SdkOptional<
-          UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse>
-      response;
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse> response;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem(
-      {this.match = const SdkOmitted(),
-      this.transform = const SdkOmitted(),
-      this.forwardUrl = const SdkOmitted(),
-      this.response = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem({this.match = const SdkOmitted(), this.transform = const SdkOmitted(), this.forwardUrl = const SdkOmitted(), this.response = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem Function(
-      {SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch>
-          match,
-      SdkOptional<
-              List<
-                  UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>>
-          transform,
-      SdkOptional<String> forwardUrl,
-      SdkOptional<
-              UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse>
-          response}) get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem Function({SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch> match, SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>> transform, SdkOptional<String> forwardUrl, SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse> response}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem _copyWith(
-          {Object? match = sdkOmittedValue,
-          Object? transform = sdkOmittedValue,
-          Object? forwardUrl = sdkOmittedValue,
-          Object? response = sdkOmittedValue}) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem(
-        match: identical(match, sdkOmittedValue)
-            ? this.match
-            : match as SdkOptional<
-                UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch>,
-        transform: identical(transform, sdkOmittedValue)
-            ? this.transform
-            : transform as SdkOptional<
-                List<
-                    UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>>,
-        forwardUrl: identical(forwardUrl, sdkOmittedValue)
-            ? this.forwardUrl
-            : forwardUrl as SdkOptional<String>,
-        response: identical(response, sdkOmittedValue)
-            ? this.response
-            : response as SdkOptional<
-                UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse>,
-      );
+  UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem _copyWith({Object? match = sdkOmittedValue, Object? transform = sdkOmittedValue, Object? forwardUrl = sdkOmittedValue, Object? response = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem(
+    match: identical(match, sdkOmittedValue) ? this.match : match as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch>,
+    transform: identical(transform, sdkOmittedValue) ? this.transform : transform as SdkOptional<List<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>>,
+    forwardUrl: identical(forwardUrl, sdkOmittedValue) ? this.forwardUrl : forwardUrl as SdkOptional<String>,
+    response: identical(response, sdkOmittedValue) ? this.response : response as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem(
-        match: json['match'] != null
-            ? SdkPresent((json['match'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch
-                    .fromJson(json['match'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        transform: json['transform'] != null
-            ? SdkPresent(((json['transform'] as List?)
-                ?.map((e) =>
-                    UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        forwardUrl: json['forwardURL'] != null
-            ? SdkPresent((json['forwardURL'] as String?)!)
-            : const SdkOmitted(),
-        response: json['response'] != null
-            ? SdkPresent((json['response'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse
-                    .fromJson(json['response'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItem(
+    match: json['match'] != null ? SdkPresent((json['match'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch.fromJson(json['match'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    transform: json['transform'] != null ? SdkPresent(((json['transform'] as List?)?.map((e) => UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    forwardUrl: json['forwardURL'] != null ? SdkPresent((json['forwardURL'] as String?)!) : const SdkOmitted(),
+    response: json['response'] != null ? SdkPresent((json['response'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse.fromJson(json['response'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (match) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch>(
-            value: final value
-          ) =>
-            {
-              'match': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transform) {
-          SdkPresent<
-                List<
-                    UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>>(
-            value: final value
-          ) =>
-            {
-              'transform': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (forwardUrl) {
-          SdkPresent<String>(value: final value) => {
-              'forwardURL': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (response) {
-          SdkPresent<
-                UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse>(
-            value: final value
-          ) =>
-            {
-              'response': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (match) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemMatch>(value: final value) => {'match': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transform) {
+      SdkPresent<List<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemTransformItem>>(value: final value) => {'transform': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (forwardUrl) {
+      SdkPresent<String>(value: final value) => {'forwardURL': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (response) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant1AllowVariant1ValueItemResponse>(value: final value) => {'response': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateSessionNetworkPolicyRequestBodyVariant1Subnets {
@@ -142,337 +59,207 @@ class UpdateSessionNetworkPolicyRequestBodyVariant1Subnets {
   final SdkOptional<List<String>> allow;
   final SdkOptional<List<String>> deny;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant1Subnets(
-      {this.allow = const SdkOmitted(), this.deny = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant1Subnets({this.allow = const SdkOmitted(), this.deny = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant1Subnets Function(
-      {SdkOptional<List<String>> allow,
-      SdkOptional<List<String>> deny}) get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant1Subnets Function({SdkOptional<List<String>> allow, SdkOptional<List<String>> deny}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant1Subnets _copyWith(
-          {Object? allow = sdkOmittedValue, Object? deny = sdkOmittedValue}) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant1Subnets(
-        allow: identical(allow, sdkOmittedValue)
-            ? this.allow
-            : allow as SdkOptional<List<String>>,
-        deny: identical(deny, sdkOmittedValue)
-            ? this.deny
-            : deny as SdkOptional<List<String>>,
-      );
+  UpdateSessionNetworkPolicyRequestBodyVariant1Subnets _copyWith({Object? allow = sdkOmittedValue, Object? deny = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant1Subnets(
+    allow: identical(allow, sdkOmittedValue) ? this.allow : allow as SdkOptional<List<String>>,
+    deny: identical(deny, sdkOmittedValue) ? this.deny : deny as SdkOptional<List<String>>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant1Subnets.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant1Subnets(
-        allow: json['allow'] != null
-            ? SdkPresent(
-                ((json['allow'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        deny: json['deny'] != null
-            ? SdkPresent(
-                ((json['deny'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant1Subnets.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant1Subnets(
+    allow: json['allow'] != null ? SdkPresent(((json['allow'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    deny: json['deny'] != null ? SdkPresent(((json['deny'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (allow) {
-          SdkPresent<List<String>>(value: final value) => {
-              'allow': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deny) {
-          SdkPresent<List<String>>(value: final value) => {
-              'deny': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (allow) {
+      SdkPresent<List<String>>(value: final value) => {'allow': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deny) {
+      SdkPresent<List<String>>(value: final value) => {'deny': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateSessionNetworkPolicyRequestBodyVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<dynamic> allow;
-  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1Subnets>
-      subnets;
+  final SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1Subnets> subnets;
 
-  const UpdateSessionNetworkPolicyRequestBodyVariant1(
-      {this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
+  const UpdateSessionNetworkPolicyRequestBodyVariant1({this.allow = const SdkOmitted(), this.subnets = const SdkOmitted()});
 
-  UpdateSessionNetworkPolicyRequestBodyVariant1 Function(
-      {SdkOptional<dynamic> allow,
-      SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1Subnets>
-          subnets}) get copyWith => _copyWith;
+  UpdateSessionNetworkPolicyRequestBodyVariant1 Function({SdkOptional<dynamic> allow, SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1Subnets> subnets}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyRequestBodyVariant1 _copyWith(
-          {Object? allow = sdkOmittedValue,
-          Object? subnets = sdkOmittedValue}) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant1(
-        allow: identical(allow, sdkOmittedValue)
-            ? this.allow
-            : allow as SdkOptional<dynamic>,
-        subnets: identical(subnets, sdkOmittedValue)
-            ? this.subnets
-            : subnets as SdkOptional<
-                UpdateSessionNetworkPolicyRequestBodyVariant1Subnets>,
-      );
+  UpdateSessionNetworkPolicyRequestBodyVariant1 _copyWith({Object? allow = sdkOmittedValue, Object? subnets = sdkOmittedValue}) => UpdateSessionNetworkPolicyRequestBodyVariant1(
+    allow: identical(allow, sdkOmittedValue) ? this.allow : allow as SdkOptional<dynamic>,
+    subnets: identical(subnets, sdkOmittedValue) ? this.subnets : subnets as SdkOptional<UpdateSessionNetworkPolicyRequestBodyVariant1Subnets>,
+  );
 
-  factory UpdateSessionNetworkPolicyRequestBodyVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyRequestBodyVariant1(
-        allow: json['allow'] != null
-            ? SdkPresent((json['allow'])!)
-            : const SdkOmitted(),
-        subnets: json['subnets'] != null
-            ? SdkPresent((json['subnets'] != null
-                ? UpdateSessionNetworkPolicyRequestBodyVariant1Subnets.fromJson(
-                    json['subnets'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory UpdateSessionNetworkPolicyRequestBodyVariant1.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyRequestBodyVariant1(
+    allow: json['allow'] != null ? SdkPresent((json['allow'])!) : const SdkOmitted(),
+    subnets: json['subnets'] != null ? SdkPresent((json['subnets'] != null ? UpdateSessionNetworkPolicyRequestBodyVariant1Subnets.fromJson(json['subnets'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (allow) {
-          SdkPresent<dynamic>(value: final value) => {
-              'allow': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (subnets) {
-          SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant1Subnets>(
-            value: final value
-          ) =>
-            {
-              'subnets': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (allow) {
+      SdkPresent<dynamic>(value: final value) => {'allow': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (subnets) {
+      SdkPresent<UpdateSessionNetworkPolicyRequestBodyVariant1Subnets>(value: final value) => {'subnets': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class UpdateSessionNetworkPolicyResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
 
   const UpdateSessionNetworkPolicyResponse({required this.session});
 
-  UpdateSessionNetworkPolicyResponse Function({Session session}) get copyWith =>
-      _copyWith;
+  UpdateSessionNetworkPolicyResponse Function({Session session}) get copyWith => _copyWith;
 
-  UpdateSessionNetworkPolicyResponse _copyWith(
-          {Object? session = sdkOmittedValue}) =>
-      UpdateSessionNetworkPolicyResponse(
-        session: identical(session, sdkOmittedValue)
-            ? this.session
-            : session as Session,
-      );
+  UpdateSessionNetworkPolicyResponse _copyWith({Object? session = sdkOmittedValue}) => UpdateSessionNetworkPolicyResponse(
+    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
+  );
 
-  factory UpdateSessionNetworkPolicyResponse.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateSessionNetworkPolicyResponse(
-        session: (json['session'] != null
-            ? Session.fromJson(json['session'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UpdateSessionNetworkPolicyResponse.fromJson(Map<String, dynamic> json) => UpdateSessionNetworkPolicyResponse(
+    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'session': session.toJson(),
-      };
+    'session': session.toJson(),
+  };
 }
 
 class ReadSessionFileRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The base directory for resolving relative paths. If not specified, paths are resolved from the sandbox home directory.
   final SdkOptional<String> cwd;
-
   /// The path of the file to read. Can be absolute or relative to the working directory.
   final String path;
 
-  const ReadSessionFileRequestBody(
-      {this.cwd = const SdkOmitted(), required this.path});
+  const ReadSessionFileRequestBody({this.cwd = const SdkOmitted(), required this.path});
 
-  ReadSessionFileRequestBody Function({SdkOptional<String> cwd, String path})
-      get copyWith => _copyWith;
+  ReadSessionFileRequestBody Function({SdkOptional<String> cwd, String path}) get copyWith => _copyWith;
 
-  ReadSessionFileRequestBody _copyWith(
-          {Object? cwd = sdkOmittedValue, Object? path = sdkOmittedValue}) =>
-      ReadSessionFileRequestBody(
-        cwd: identical(cwd, sdkOmittedValue)
-            ? this.cwd
-            : cwd as SdkOptional<String>,
-        path: identical(path, sdkOmittedValue) ? this.path : path as String,
-      );
+  ReadSessionFileRequestBody _copyWith({Object? cwd = sdkOmittedValue, Object? path = sdkOmittedValue}) => ReadSessionFileRequestBody(
+    cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as SdkOptional<String>,
+    path: identical(path, sdkOmittedValue) ? this.path : path as String,
+  );
 
-  factory ReadSessionFileRequestBody.fromJson(Map<String, dynamic> json) =>
-      ReadSessionFileRequestBody(
-        cwd: json['cwd'] != null
-            ? SdkPresent((json['cwd'] as String?)!)
-            : const SdkOmitted(),
-        path: (json['path'] as String?)!,
-      );
+  factory ReadSessionFileRequestBody.fromJson(Map<String, dynamic> json) => ReadSessionFileRequestBody(
+    cwd: json['cwd'] != null ? SdkPresent((json['cwd'] as String?)!) : const SdkOmitted(),
+    path: (json['path'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (cwd) {
-          SdkPresent<String>(value: final value) => {
-              'cwd': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'path': path,
-      };
+    ...switch (cwd) {
+      SdkPresent<String>(value: final value) => {'cwd': value,},
+      _ => const <String, dynamic>{},
+    },
+    'path': path,
+  };
 }
 
 class CreateSessionDirectoryRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The base directory for resolving relative paths. If not specified, paths are resolved from the sandbox home directory.
   final SdkOptional<String> cwd;
-
   /// The path of the directory to create. Can be absolute or relative to the working directory.
   final String path;
-
   /// If true, creates parent directories as needed (like `mkdir -p`). If false, fails if parent directories do not exist.
   final SdkOptional<bool> recursive;
 
-  const CreateSessionDirectoryRequestBody(
-      {this.cwd = const SdkOmitted(),
-      required this.path,
-      this.recursive = const SdkOmitted()});
+  const CreateSessionDirectoryRequestBody({this.cwd = const SdkOmitted(), required this.path, this.recursive = const SdkOmitted()});
 
-  CreateSessionDirectoryRequestBody Function(
-      {SdkOptional<String> cwd,
-      String path,
-      SdkOptional<bool> recursive}) get copyWith => _copyWith;
+  CreateSessionDirectoryRequestBody Function({SdkOptional<String> cwd, String path, SdkOptional<bool> recursive}) get copyWith => _copyWith;
 
-  CreateSessionDirectoryRequestBody _copyWith(
-          {Object? cwd = sdkOmittedValue,
-          Object? path = sdkOmittedValue,
-          Object? recursive = sdkOmittedValue}) =>
-      CreateSessionDirectoryRequestBody(
-        cwd: identical(cwd, sdkOmittedValue)
-            ? this.cwd
-            : cwd as SdkOptional<String>,
-        path: identical(path, sdkOmittedValue) ? this.path : path as String,
-        recursive: identical(recursive, sdkOmittedValue)
-            ? this.recursive
-            : recursive as SdkOptional<bool>,
-      );
+  CreateSessionDirectoryRequestBody _copyWith({Object? cwd = sdkOmittedValue, Object? path = sdkOmittedValue, Object? recursive = sdkOmittedValue}) => CreateSessionDirectoryRequestBody(
+    cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as SdkOptional<String>,
+    path: identical(path, sdkOmittedValue) ? this.path : path as String,
+    recursive: identical(recursive, sdkOmittedValue) ? this.recursive : recursive as SdkOptional<bool>,
+  );
 
-  factory CreateSessionDirectoryRequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSessionDirectoryRequestBody(
-        cwd: json['cwd'] != null
-            ? SdkPresent((json['cwd'] as String?)!)
-            : const SdkOmitted(),
-        path: (json['path'] as String?)!,
-        recursive: json['recursive'] != null
-            ? SdkPresent((json['recursive'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSessionDirectoryRequestBody.fromJson(Map<String, dynamic> json) => CreateSessionDirectoryRequestBody(
+    cwd: json['cwd'] != null ? SdkPresent((json['cwd'] as String?)!) : const SdkOmitted(),
+    path: (json['path'] as String?)!,
+    recursive: json['recursive'] != null ? SdkPresent((json['recursive'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (cwd) {
-          SdkPresent<String>(value: final value) => {
-              'cwd': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'path': path,
-        ...switch (recursive) {
-          SdkPresent<bool>(value: final value) => {
-              'recursive': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (cwd) {
+      SdkPresent<String>(value: final value) => {'cwd': value,},
+      _ => const <String, dynamic>{},
+    },
+    'path': path,
+    ...switch (recursive) {
+      SdkPresent<bool>(value: final value) => {'recursive': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The number of milliseconds after which the snapshot will expire and be deleted. Use 0 for no expiration.
   final SdkOptional<int?> expiration;
 
-  const CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody(
-      {this.expiration = const SdkOmitted()});
+  const CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody({this.expiration = const SdkOmitted()});
 
-  CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody Function(
-      {SdkOptional<int?> expiration}) get copyWith => _copyWith;
+  CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody Function({SdkOptional<int?> expiration}) get copyWith => _copyWith;
 
-  CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody _copyWith(
-          {Object? expiration = sdkOmittedValue}) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody(
-        expiration: identical(expiration, sdkOmittedValue)
-            ? this.expiration
-            : expiration as SdkOptional<int?>,
-      );
+  CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody _copyWith({Object? expiration = sdkOmittedValue}) => CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody(
+    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<int?>,
+  );
 
-  factory CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody(
-        expiration: json.containsKey('expiration')
-            ? SdkPresent((json['expiration'] as num?)?.toInt())
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody.fromJson(Map<String, dynamic> json) => CreateSandboxesSessionsBySessionIdSnapshotV2RequestBody(
+    expiration: json.containsKey('expiration') ? SdkPresent((json['expiration'] as num?)?.toInt()) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (expiration) {
-          SdkPresent<int?>(value: final value) => {
-              'expiration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (expiration) {
+      SdkPresent<int?>(value: final value) => {'expiration': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSandboxesSessionsBySessionIdSnapshotV2Response {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
   final Session session;
-
   /// This object contains information related to a Snapshot of a Vercel Sandbox session (v2 API).
   final Snapshot snapshot;
 
-  const CreateSandboxesSessionsBySessionIdSnapshotV2Response(
-      {required this.session, required this.snapshot});
+  const CreateSandboxesSessionsBySessionIdSnapshotV2Response({required this.session, required this.snapshot});
 
-  CreateSandboxesSessionsBySessionIdSnapshotV2Response Function(
-      {Session session, Snapshot snapshot}) get copyWith => _copyWith;
+  CreateSandboxesSessionsBySessionIdSnapshotV2Response Function({Session session, Snapshot snapshot}) get copyWith => _copyWith;
 
-  CreateSandboxesSessionsBySessionIdSnapshotV2Response _copyWith(
-          {Object? session = sdkOmittedValue,
-          Object? snapshot = sdkOmittedValue}) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV2Response(
-        session: identical(session, sdkOmittedValue)
-            ? this.session
-            : session as Session,
-        snapshot: identical(snapshot, sdkOmittedValue)
-            ? this.snapshot
-            : snapshot as Snapshot,
-      );
+  CreateSandboxesSessionsBySessionIdSnapshotV2Response _copyWith({Object? session = sdkOmittedValue, Object? snapshot = sdkOmittedValue}) => CreateSandboxesSessionsBySessionIdSnapshotV2Response(
+    session: identical(session, sdkOmittedValue) ? this.session : session as Session,
+    snapshot: identical(snapshot, sdkOmittedValue) ? this.snapshot : snapshot as Snapshot,
+  );
 
-  factory CreateSandboxesSessionsBySessionIdSnapshotV2Response.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesSessionsBySessionIdSnapshotV2Response(
-        session: (json['session'] != null
-            ? Session.fromJson(json['session'] as Map<String, dynamic>)
-            : null)!,
-        snapshot: (json['snapshot'] != null
-            ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CreateSandboxesSessionsBySessionIdSnapshotV2Response.fromJson(Map<String, dynamic> json) => CreateSandboxesSessionsBySessionIdSnapshotV2Response(
+    session: (json['session'] != null ? Session.fromJson(json['session'] as Map<String, dynamic>) : null)!,
+    snapshot: (json['snapshot'] != null ? Snapshot.fromJson(json['snapshot'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'session': session.toJson(),
-        'snapshot': snapshot.toJson(),
-      };
+    'session': session.toJson(),
+    'snapshot': snapshot.toJson(),
+  };
 }

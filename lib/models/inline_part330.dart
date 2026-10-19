@@ -5,431 +5,290 @@ part of 'inline.dart';
 
 // Inline operation models (part 330)
 final class UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1 {
+
   final String value;
 
-  const UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-      this.value);
+  const UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(this.value);
 
-  factory UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-          value);
+  factory UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1.fromJson(String value) => UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(value);
 
-  static const preview =
-      UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-          'preview');
-  static const production =
-      UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._(
-          'production');
+  static const preview = UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._('preview');
+  static const production = UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseConnectConfigurationsItemEnvIdVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseConnectConfigurationsItemPassive {
+
   final bool value;
 
-  const UploadProjectAvatarResponseConnectConfigurationsItemPassive._(
-      this.value);
+  const UploadProjectAvatarResponseConnectConfigurationsItemPassive._(this.value);
 
-  factory UploadProjectAvatarResponseConnectConfigurationsItemPassive.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseConnectConfigurationsItemPassive._(value);
+  factory UploadProjectAvatarResponseConnectConfigurationsItemPassive.fromJson(bool value) => UploadProjectAvatarResponseConnectConfigurationsItemPassive._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseConnectConfigurationsItemPassive._(false);
-  static const true_ =
-      UploadProjectAvatarResponseConnectConfigurationsItemPassive._(true);
+  static const false_ = UploadProjectAvatarResponseConnectConfigurationsItemPassive._(false);
+  static const true_ = UploadProjectAvatarResponseConnectConfigurationsItemPassive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseConnectConfigurationsItemPassive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseConnectConfigurationsItemPassive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the host was inferred from the production deployment URL rather than explicitly provided.
 final class UploadProjectAvatarResponseCronsDefinitionsItemHostInferred {
+
   final bool value;
 
-  const UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(
-      this.value);
+  const UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(this.value);
 
-  factory UploadProjectAvatarResponseCronsDefinitionsItemHostInferred.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(value);
+  factory UploadProjectAvatarResponseCronsDefinitionsItemHostInferred.fromJson(bool value) => UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(false);
-  static const true_ =
-      UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(true);
+  static const false_ = UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(false);
+  static const true_ = UploadProjectAvatarResponseCronsDefinitionsItemHostInferred._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseCronsDefinitionsItemHostInferred &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseCronsDefinitionsItemHostInferred && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The origin of this definition. 'api' means created via the API. Undefined means it originated from a deployment (vercel.json).
 final class UploadProjectAvatarResponseCronsDefinitionsItemSource {
+
   final String value;
 
   const UploadProjectAvatarResponseCronsDefinitionsItemSource._(this.value);
 
-  factory UploadProjectAvatarResponseCronsDefinitionsItemSource.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseCronsDefinitionsItemSource._(value);
+  factory UploadProjectAvatarResponseCronsDefinitionsItemSource.fromJson(String value) => UploadProjectAvatarResponseCronsDefinitionsItemSource._(value);
 
-  static const api =
-      UploadProjectAvatarResponseCronsDefinitionsItemSource._('api');
+  static const api = UploadProjectAvatarResponseCronsDefinitionsItemSource._('api');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseCronsDefinitionsItemSource &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseCronsDefinitionsItemSource && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of matching to perform
 final class UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType {
+
   final String value;
 
-  const UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-      this.value);
+  const UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(this.value);
 
-  factory UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          value);
+  factory UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType.fromJson(String value) => UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(value);
 
-  static const endswith =
-      UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          'endsWith');
-  static const equals =
-      UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          'equals');
-  static const startswith =
-      UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._(
-          'startsWith');
+  static const endswith = UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._('endsWith');
+  static const equals = UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._('equals');
+  static const startswith = UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseCustomEnvironmentsItemBranchMatcherType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode {
+
   final double value;
 
-  const UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(
-      this.value);
+  const UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(this.value);
 
-  factory UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode.fromJson(
-          double value) =>
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
-          ._(value);
+  factory UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode.fromJson(double value) => UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(value);
 
-  static const v301 =
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
-          ._(301);
-  static const v302 =
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
-          ._(302);
-  static const v307 =
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
-          ._(307);
-  static const v308 =
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode
-          ._(308);
+  static const v301 = UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(301);
+  static const v302 = UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(302);
+  static const v307 = UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(307);
+  static const v308 = UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode._(308);
 
   double toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemRedirectStatusCode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified {
+
   final bool value;
 
-  const UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(
-      this.value);
+  const UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(this.value);
 
-  factory UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(
-          value);
+  factory UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified.fromJson(bool value) => UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(
-          false);
-  static const true_ =
-      UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(
-          true);
+  static const false_ = UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(false);
+  static const true_ = UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseCustomEnvironmentsItemDomainsItemVerified && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of environment (production, preview, or development)
 final class UploadProjectAvatarResponseCustomEnvironmentsItemType {
+
   final String value;
 
   const UploadProjectAvatarResponseCustomEnvironmentsItemType._(this.value);
 
-  factory UploadProjectAvatarResponseCustomEnvironmentsItemType.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseCustomEnvironmentsItemType._(value);
+  factory UploadProjectAvatarResponseCustomEnvironmentsItemType.fromJson(String value) => UploadProjectAvatarResponseCustomEnvironmentsItemType._(value);
 
-  static const development =
-      UploadProjectAvatarResponseCustomEnvironmentsItemType._('development');
-  static const preview =
-      UploadProjectAvatarResponseCustomEnvironmentsItemType._('preview');
-  static const production =
-      UploadProjectAvatarResponseCustomEnvironmentsItemType._('production');
+  static const development = UploadProjectAvatarResponseCustomEnvironmentsItemType._('development');
+  static const preview = UploadProjectAvatarResponseCustomEnvironmentsItemType._('preview');
+  static const production = UploadProjectAvatarResponseCustomEnvironmentsItemType._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseCustomEnvironmentsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseCustomEnvironmentsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseCustomerSupportCodeVisibility {
+
   final bool value;
 
   const UploadProjectAvatarResponseCustomerSupportCodeVisibility._(this.value);
 
-  factory UploadProjectAvatarResponseCustomerSupportCodeVisibility.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseCustomerSupportCodeVisibility._(value);
+  factory UploadProjectAvatarResponseCustomerSupportCodeVisibility.fromJson(bool value) => UploadProjectAvatarResponseCustomerSupportCodeVisibility._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseCustomerSupportCodeVisibility._(false);
-  static const true_ =
-      UploadProjectAvatarResponseCustomerSupportCodeVisibility._(true);
+  static const false_ = UploadProjectAvatarResponseCustomerSupportCodeVisibility._(false);
+  static const true_ = UploadProjectAvatarResponseCustomerSupportCodeVisibility._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseCustomerSupportCodeVisibility &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseCustomerSupportCodeVisibility && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseDataCacheUnlimited {
+
   final bool value;
 
   const UploadProjectAvatarResponseDataCacheUnlimited._(this.value);
 
-  factory UploadProjectAvatarResponseDataCacheUnlimited.fromJson(bool value) =>
-      UploadProjectAvatarResponseDataCacheUnlimited._(value);
+  factory UploadProjectAvatarResponseDataCacheUnlimited.fromJson(bool value) => UploadProjectAvatarResponseDataCacheUnlimited._(value);
 
   static const false_ = UploadProjectAvatarResponseDataCacheUnlimited._(false);
   static const true_ = UploadProjectAvatarResponseDataCacheUnlimited._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseDataCacheUnlimited &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDataCacheUnlimited && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseDataCacheUserDisabled {
+
   final bool value;
 
   const UploadProjectAvatarResponseDataCacheUserDisabled._(this.value);
 
-  factory UploadProjectAvatarResponseDataCacheUserDisabled.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseDataCacheUserDisabled._(value);
+  factory UploadProjectAvatarResponseDataCacheUserDisabled.fromJson(bool value) => UploadProjectAvatarResponseDataCacheUserDisabled._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseDataCacheUserDisabled._(false);
+  static const false_ = UploadProjectAvatarResponseDataCacheUserDisabled._(false);
   static const true_ = UploadProjectAvatarResponseDataCacheUserDisabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseDataCacheUserDisabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDataCacheUserDisabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason {
+
   final String value;
 
-  const UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._(
-      this.value);
+  const UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._(this.value);
 
-  factory UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._(value);
+  factory UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason.fromJson(String value) => UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._(value);
 
-  static const basicFloor =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('basic-floor');
-  static const buildTimeoutFailure =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('build-timeout-failure');
-  static const enospcFailure =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('enospc-failure');
-  static const enterpriseFloor =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('enterprise-floor');
-  static const highPeakDisk =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('high-peak-disk');
-  static const highPeakMemory =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('high-peak-memory');
-  static const longBuildDuration =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('long-build-duration');
-  static const oomFailure =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('oom-failure');
-  static const shortBuildDuration =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('short-build-duration');
-  static const sustainedHighCpu =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason
-          ._('sustained-high-cpu');
+  static const basicFloor = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('basic-floor');
+  static const buildTimeoutFailure = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('build-timeout-failure');
+  static const enospcFailure = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('enospc-failure');
+  static const enterpriseFloor = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('enterprise-floor');
+  static const highPeakDisk = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('high-peak-disk');
+  static const highPeakMemory = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('high-peak-memory');
+  static const longBuildDuration = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('long-build-duration');
+  static const oomFailure = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('oom-failure');
+  static const shortBuildDuration = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('short-build-duration');
+  static const sustainedHighCpu = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason._('sustained-high-cpu');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticReason && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection {
+
   final String value;
 
-  const UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._(
-      this.value);
+  const UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._(this.value);
 
-  factory UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
-          ._(value);
+  factory UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection.fromJson(String value) => UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._(value);
 
-  static const downgrade =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
-          ._('downgrade');
-  static const upgrade =
-      UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection
-          ._('upgrade');
+  static const downgrade = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._('downgrade');
+  static const upgrade = UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection._('upgrade');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseDefaultResourceConfigBuildMachineElasticTransitionDirection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

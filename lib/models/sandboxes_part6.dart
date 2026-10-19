@@ -10,501 +10,271 @@ class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets {
   final SdkOptional<List<String>> allow;
   final SdkOptional<List<String>> deny;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets(
-      {this.allow = const SdkOmitted(), this.deny = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets({this.allow = const SdkOmitted(), this.deny = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets Function(
-      {SdkOptional<List<String>> allow,
-      SdkOptional<List<String>> deny}) get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets Function({SdkOptional<List<String>> allow, SdkOptional<List<String>> deny}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets _copyWith(
-          {Object? allow = sdkOmittedValue, Object? deny = sdkOmittedValue}) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets(
-        allow: identical(allow, sdkOmittedValue)
-            ? this.allow
-            : allow as SdkOptional<List<String>>,
-        deny: identical(deny, sdkOmittedValue)
-            ? this.deny
-            : deny as SdkOptional<List<String>>,
-      );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets _copyWith({Object? allow = sdkOmittedValue, Object? deny = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets(
+    allow: identical(allow, sdkOmittedValue) ? this.allow : allow as SdkOptional<List<String>>,
+    deny: identical(deny, sdkOmittedValue) ? this.deny : deny as SdkOptional<List<String>>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets(
-        allow: json['allow'] != null
-            ? SdkPresent(
-                ((json['allow'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-        deny: json['deny'] != null
-            ? SdkPresent(
-                ((json['deny'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1Subnets(
+    allow: json['allow'] != null ? SdkPresent(((json['allow'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    deny: json['deny'] != null ? SdkPresent(((json['deny'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (allow) {
-          SdkPresent<List<String>>(value: final value) => {
-              'allow': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deny) {
-          SdkPresent<List<String>>(value: final value) => {
-              'deny': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (allow) {
+      SdkPresent<List<String>>(value: final value) => {'allow': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deny) {
+      SdkPresent<List<String>>(value: final value) => {'deny': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Match on the request path. Comparison is case-sensitive.
 class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Matcher for the entry key (header name or query key).
 class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Matcher for the entry value.
 class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Matcher for the entry key (header name or query key).
-  final SdkOptional<
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey>
-      key;
-
+  final SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey> key;
   /// Matcher for the entry value.
-  final SdkOptional<
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue>
-      value;
+  final SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue> value;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem(
-      {this.key = const SdkOmitted(), this.value = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem({this.key = const SdkOmitted(), this.value = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem Function(
-      {SdkOptional<
-              CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey>
-          key,
-      SdkOptional<
-              CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue>
-          value}) get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem Function({SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey> key, SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue> value}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key as SdkOptional<
-                    CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey>,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as SdkOptional<
-                    CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue>,
-          );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem(
-        key: json['key'] != null
-            ? SdkPresent((json['key'] != null
-                ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey
-                    .fromJson(json['key'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        value: json['value'] != null
-            ? SdkPresent((json['value'] != null
-                ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue
-                    .fromJson(json['value'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItem(
+    key: json['key'] != null ? SdkPresent((json['key'] != null ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey.fromJson(json['key'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    value: json['value'] != null ? SdkPresent((json['value'] != null ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue.fromJson(json['value'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (key) {
-          SdkPresent<
-                CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey>(
-            value: final value
-          ) =>
-            {
-              'key': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (value) {
-          SdkPresent<
-                CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue>(
-            value: final value
-          ) =>
-            {
-              'value': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (key) {
+      SdkPresent<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemKey>(value: final value) => {'key': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (value) {
+      SdkPresent<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchQueryStringItemValue>(value: final value) => {'value': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Matcher for the entry key (header name or query key).
 class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Matcher for the entry value.
 class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Matcher for the entry key (header name or query key).
-  final SdkOptional<
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey>
-      key;
-
+  final SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey> key;
   /// Matcher for the entry value.
-  final SdkOptional<
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue>
-      value;
+  final SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue> value;
 
-  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem(
-      {this.key = const SdkOmitted(), this.value = const SdkOmitted()});
+  const CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem({this.key = const SdkOmitted(), this.value = const SdkOmitted()});
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem Function(
-      {SdkOptional<
-              CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey>
-          key,
-      SdkOptional<
-              CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue>
-          value}) get copyWith => _copyWith;
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem Function({SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey> key, SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue> value}) get copyWith => _copyWith;
 
-  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key as SdkOptional<
-                    CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey>,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as SdkOptional<
-                    CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue>,
-          );
+  CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue>,
+  );
 
-  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem(
-        key: json['key'] != null
-            ? SdkPresent((json['key'] != null
-                ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey
-                    .fromJson(json['key'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        value: json['value'] != null
-            ? SdkPresent((json['value'] != null
-                ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue
-                    .fromJson(json['value'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem.fromJson(Map<String, dynamic> json) => CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItem(
+    key: json['key'] != null ? SdkPresent((json['key'] != null ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey.fromJson(json['key'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    value: json['value'] != null ? SdkPresent((json['value'] != null ? CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue.fromJson(json['value'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (key) {
-          SdkPresent<
-                CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey>(
-            value: final value
-          ) =>
-            {
-              'key': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (value) {
-          SdkPresent<
-                CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue>(
-            value: final value
-          ) =>
-            {
-              'value': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (key) {
+      SdkPresent<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemKey>(value: final value) => {'key': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (value) {
+      SdkPresent<CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1AllowVariant1ValueItemMatchHeadersItemValue>(value: final value) => {'value': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

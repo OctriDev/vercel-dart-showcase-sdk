@@ -10,51 +10,24 @@ sealed class UpdateRollingReleaseConfigResponse {
   const UpdateRollingReleaseConfigResponse();
   factory UpdateRollingReleaseConfigResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = UpdateRollingReleaseConfigResponseVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = UpdateRollingReleaseConfigResponseVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UpdateRollingReleaseConfigResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0(value); } } catch (_) {}
+      try { final value = UpdateRollingReleaseConfigResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1(value); } } catch (_) {}
     }
-    try {
-      return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0(
-          UpdateRollingReleaseConfigResponseVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1(
-          UpdateRollingReleaseConfigResponseVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UpdateRollingReleaseConfigResponse");
+    try { return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0(UpdateRollingReleaseConfigResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1(UpdateRollingReleaseConfigResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UpdateRollingReleaseConfigResponse");
   }
   Object? toJson();
 }
 
-final class UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0
-    extends UpdateRollingReleaseConfigResponse {
+final class UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0 extends UpdateRollingReleaseConfigResponse {
   final UpdateRollingReleaseConfigResponseVariant0 value;
-  const UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1
-    extends UpdateRollingReleaseConfigResponse {
+final class UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1 extends UpdateRollingReleaseConfigResponse {
   final UpdateRollingReleaseConfigResponseVariant1 value;
-  const UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UpdateRollingReleaseConfigResponseUpdateRollingReleaseConfigResponseVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

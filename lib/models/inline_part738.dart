@@ -8,389 +8,164 @@ class GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentatio
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> edgeConfigId;
-  final SdkOptional<
-          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>
-      edgeConfigSyncingEnabled;
+  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled> edgeConfigSyncingEnabled;
   final SdkOptional<String> edgeConfigTokenId;
   final SdkOptional<String> globalConfigId;
-  final SdkOptional<
-          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>
-      globalConfigSyncingEnabled;
+  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled> globalConfigSyncingEnabled;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
-      {this.edgeConfigId = const SdkOmitted(),
-      this.edgeConfigSyncingEnabled = const SdkOmitted(),
-      this.edgeConfigTokenId = const SdkOmitted(),
-      this.globalConfigId = const SdkOmitted(),
-      this.globalConfigSyncingEnabled = const SdkOmitted()});
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation({this.edgeConfigId = const SdkOmitted(), this.edgeConfigSyncingEnabled = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.globalConfigId = const SdkOmitted(), this.globalConfigSyncingEnabled = const SdkOmitted()});
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation Function(
-      {SdkOptional<String> edgeConfigId,
-      SdkOptional<
-              GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>
-          edgeConfigSyncingEnabled,
-      SdkOptional<String> edgeConfigTokenId,
-      SdkOptional<String> globalConfigId,
-      SdkOptional<
-              GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>
-          globalConfigSyncingEnabled}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation Function({SdkOptional<String> edgeConfigId, SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled> edgeConfigSyncingEnabled, SdkOptional<String> edgeConfigTokenId, SdkOptional<String> globalConfigId, SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled> globalConfigSyncingEnabled}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation
-      _copyWith(
-              {Object? edgeConfigId = sdkOmittedValue,
-              Object? edgeConfigSyncingEnabled = sdkOmittedValue,
-              Object? edgeConfigTokenId = sdkOmittedValue,
-              Object? globalConfigId = sdkOmittedValue,
-              Object? globalConfigSyncingEnabled = sdkOmittedValue}) =>
-          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
-            edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-                ? this.edgeConfigId
-                : edgeConfigId as SdkOptional<String>,
-            edgeConfigSyncingEnabled: identical(
-                    edgeConfigSyncingEnabled, sdkOmittedValue)
-                ? this.edgeConfigSyncingEnabled
-                : edgeConfigSyncingEnabled as SdkOptional<
-                    GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>,
-            edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
-                ? this.edgeConfigTokenId
-                : edgeConfigTokenId as SdkOptional<String>,
-            globalConfigId: identical(globalConfigId, sdkOmittedValue)
-                ? this.globalConfigId
-                : globalConfigId as SdkOptional<String>,
-            globalConfigSyncingEnabled: identical(
-                    globalConfigSyncingEnabled, sdkOmittedValue)
-                ? this.globalConfigSyncingEnabled
-                : globalConfigSyncingEnabled as SdkOptional<
-                    GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>,
-          );
+  GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation _copyWith({Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigSyncingEnabled = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? globalConfigId = sdkOmittedValue, Object? globalConfigSyncingEnabled = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String>,
+    edgeConfigSyncingEnabled: identical(edgeConfigSyncingEnabled, sdkOmittedValue) ? this.edgeConfigSyncingEnabled : edgeConfigSyncingEnabled as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>,
+    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String>,
+    globalConfigId: identical(globalConfigId, sdkOmittedValue) ? this.globalConfigId : globalConfigId as SdkOptional<String>,
+    globalConfigSyncingEnabled: identical(globalConfigSyncingEnabled, sdkOmittedValue) ? this.globalConfigSyncingEnabled : globalConfigSyncingEnabled as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>,
+  );
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation.fromJson(
-          Map<String, dynamic> json) =>
-      GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
-        edgeConfigId: json['edgeConfigId'] != null
-            ? SdkPresent((json['edgeConfigId'] as String?)!)
-            : const SdkOmitted(),
-        edgeConfigSyncingEnabled: json['edgeConfigSyncingEnabled'] != null
-            ? SdkPresent((json['edgeConfigSyncingEnabled'] != null
-                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled
-                    .fromJson(json['edgeConfigSyncingEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        edgeConfigTokenId: json['edgeConfigTokenId'] != null
-            ? SdkPresent((json['edgeConfigTokenId'] as String?)!)
-            : const SdkOmitted(),
-        globalConfigId: json['globalConfigId'] != null
-            ? SdkPresent((json['globalConfigId'] as String?)!)
-            : const SdkOmitted(),
-        globalConfigSyncingEnabled: json['globalConfigSyncingEnabled'] != null
-            ? SdkPresent((json['globalConfigSyncingEnabled'] != null
-                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled
-                    .fromJson(json['globalConfigSyncingEnabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation(
+    edgeConfigId: json['edgeConfigId'] != null ? SdkPresent((json['edgeConfigId'] as String?)!) : const SdkOmitted(),
+    edgeConfigSyncingEnabled: json['edgeConfigSyncingEnabled'] != null ? SdkPresent((json['edgeConfigSyncingEnabled'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled.fromJson(json['edgeConfigSyncingEnabled'] as bool) : null)!) : const SdkOmitted(),
+    edgeConfigTokenId: json['edgeConfigTokenId'] != null ? SdkPresent((json['edgeConfigTokenId'] as String?)!) : const SdkOmitted(),
+    globalConfigId: json['globalConfigId'] != null ? SdkPresent((json['globalConfigId'] as String?)!) : const SdkOmitted(),
+    globalConfigSyncingEnabled: json['globalConfigSyncingEnabled'] != null ? SdkPresent((json['globalConfigSyncingEnabled'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled.fromJson(json['globalConfigSyncingEnabled'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (edgeConfigId) {
-          SdkPresent<String>(value: final value) => {
-              'edgeConfigId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigSyncingEnabled) {
-          SdkPresent<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>(
-            value: final value
-          ) =>
-            {
-              'edgeConfigSyncingEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigTokenId) {
-          SdkPresent<String>(value: final value) => {
-              'edgeConfigTokenId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (globalConfigId) {
-          SdkPresent<String>(value: final value) => {
-              'globalConfigId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (globalConfigSyncingEnabled) {
-          SdkPresent<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>(
-            value: final value
-          ) =>
-            {
-              'globalConfigSyncingEnabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (edgeConfigId) {
+      SdkPresent<String>(value: final value) => {'edgeConfigId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigSyncingEnabled) {
+      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationEdgeConfigSyncingEnabled>(value: final value) => {'edgeConfigSyncingEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigTokenId) {
+      SdkPresent<String>(value: final value) => {'edgeConfigTokenId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (globalConfigId) {
+      SdkPresent<String>(value: final value) => {'globalConfigId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (globalConfigSyncingEnabled) {
+      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentationGlobalConfigSyncingEnabled>(value: final value) => {'globalConfigSyncingEnabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Any settings provided for the resource to support its product's protocols
 class GetIntegrationResourcesResponseResourcesItemProtocolSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>
-      authentication;
-  final SdkOptional<
-          GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>
-      experimentation;
+  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication> authentication;
+  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation> experimentation;
 
-  const GetIntegrationResourcesResponseResourcesItemProtocolSettings(
-      {this.authentication = const SdkOmitted(),
-      this.experimentation = const SdkOmitted()});
+  const GetIntegrationResourcesResponseResourcesItemProtocolSettings({this.authentication = const SdkOmitted(), this.experimentation = const SdkOmitted()});
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettings Function(
-      {SdkOptional<
-              GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>
-          authentication,
-      SdkOptional<
-              GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>
-          experimentation}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItemProtocolSettings Function({SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication> authentication, SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation> experimentation}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItemProtocolSettings _copyWith(
-          {Object? authentication = sdkOmittedValue,
-          Object? experimentation = sdkOmittedValue}) =>
-      GetIntegrationResourcesResponseResourcesItemProtocolSettings(
-        authentication: identical(authentication, sdkOmittedValue)
-            ? this.authentication
-            : authentication as SdkOptional<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>,
-        experimentation: identical(experimentation, sdkOmittedValue)
-            ? this.experimentation
-            : experimentation as SdkOptional<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>,
-      );
+  GetIntegrationResourcesResponseResourcesItemProtocolSettings _copyWith({Object? authentication = sdkOmittedValue, Object? experimentation = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItemProtocolSettings(
+    authentication: identical(authentication, sdkOmittedValue) ? this.authentication : authentication as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>,
+    experimentation: identical(experimentation, sdkOmittedValue) ? this.experimentation : experimentation as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>,
+  );
 
-  factory GetIntegrationResourcesResponseResourcesItemProtocolSettings.fromJson(
-          Map<String, dynamic> json) =>
-      GetIntegrationResourcesResponseResourcesItemProtocolSettings(
-        authentication: json['authentication'] != null
-            ? SdkPresent((json['authentication'] != null
-                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication
-                    .fromJson(json['authentication'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        experimentation: json['experimentation'] != null
-            ? SdkPresent((json['experimentation'] != null
-                ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation
-                    .fromJson(json['experimentation'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetIntegrationResourcesResponseResourcesItemProtocolSettings.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItemProtocolSettings(
+    authentication: json['authentication'] != null ? SdkPresent((json['authentication'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication.fromJson(json['authentication'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    experimentation: json['experimentation'] != null ? SdkPresent((json['experimentation'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation.fromJson(json['experimentation'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (authentication) {
-          SdkPresent<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>(
-            value: final value
-          ) =>
-            {
-              'authentication': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (experimentation) {
-          SdkPresent<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>(
-            value: final value
-          ) =>
-            {
-              'experimentation': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (authentication) {
+      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsAuthentication>(value: final value) => {'authentication': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (experimentation) {
+      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettingsExperimentation>(value: final value) => {'experimentation': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetIntegrationResourcesResponseResourcesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The ID of the billing plan the resource is subscribed to, if applicable
   final SdkOptional<String> billingPlanId;
-
   /// The ID assigned by Vercel for the given resource
   final String internalId;
-
   /// The configured metadata for the resource as defined by its product's Metadata Schema
   final SdkOptional<Map<String, dynamic>> metadata;
-
   /// The name of the resource as it is recorded in Vercel
   final String name;
-
   /// The notification, if set, displayed to the user when viewing the resource in Vercel
-  final SdkOptional<GetIntegrationResourcesResponseResourcesItemNotification>
-      notification;
-
+  final SdkOptional<GetIntegrationResourcesResponseResourcesItemNotification> notification;
   /// The ID provided by the partner for the given resource
   final String partnerId;
-
   /// The ID of the product the resource is derived from
   final String productId;
-
   /// Any settings provided for the resource to support its product's protocols
-  final SdkOptional<
-          GetIntegrationResourcesResponseResourcesItemProtocolSettings>
-      protocolSettings;
-
+  final SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettings> protocolSettings;
   /// The current status of the resource
   final SdkOptional<GetIntegrationResourcesResponseResourcesItemStatus> status;
 
-  const GetIntegrationResourcesResponseResourcesItem(
-      {this.billingPlanId = const SdkOmitted(),
-      required this.internalId,
-      this.metadata = const SdkOmitted(),
-      required this.name,
-      this.notification = const SdkOmitted(),
-      required this.partnerId,
-      required this.productId,
-      this.protocolSettings = const SdkOmitted(),
-      this.status = const SdkOmitted()});
+  const GetIntegrationResourcesResponseResourcesItem({this.billingPlanId = const SdkOmitted(), required this.internalId, this.metadata = const SdkOmitted(), required this.name, this.notification = const SdkOmitted(), required this.partnerId, required this.productId, this.protocolSettings = const SdkOmitted(), this.status = const SdkOmitted()});
 
-  GetIntegrationResourcesResponseResourcesItem Function(
-      {SdkOptional<String> billingPlanId,
-      String internalId,
-      SdkOptional<Map<String, dynamic>> metadata,
-      String name,
-      SdkOptional<GetIntegrationResourcesResponseResourcesItemNotification>
-          notification,
-      String partnerId,
-      String productId,
-      SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettings>
-          protocolSettings,
-      SdkOptional<GetIntegrationResourcesResponseResourcesItemStatus>
-          status}) get copyWith => _copyWith;
+  GetIntegrationResourcesResponseResourcesItem Function({SdkOptional<String> billingPlanId, String internalId, SdkOptional<Map<String, dynamic>> metadata, String name, SdkOptional<GetIntegrationResourcesResponseResourcesItemNotification> notification, String partnerId, String productId, SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettings> protocolSettings, SdkOptional<GetIntegrationResourcesResponseResourcesItemStatus> status}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponseResourcesItem _copyWith(
-          {Object? billingPlanId = sdkOmittedValue,
-          Object? internalId = sdkOmittedValue,
-          Object? metadata = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? notification = sdkOmittedValue,
-          Object? partnerId = sdkOmittedValue,
-          Object? productId = sdkOmittedValue,
-          Object? protocolSettings = sdkOmittedValue,
-          Object? status = sdkOmittedValue}) =>
-      GetIntegrationResourcesResponseResourcesItem(
-        billingPlanId: identical(billingPlanId, sdkOmittedValue)
-            ? this.billingPlanId
-            : billingPlanId as SdkOptional<String>,
-        internalId: identical(internalId, sdkOmittedValue)
-            ? this.internalId
-            : internalId as String,
-        metadata: identical(metadata, sdkOmittedValue)
-            ? this.metadata
-            : metadata as SdkOptional<Map<String, dynamic>>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        notification: identical(notification, sdkOmittedValue)
-            ? this.notification
-            : notification as SdkOptional<
-                GetIntegrationResourcesResponseResourcesItemNotification>,
-        partnerId: identical(partnerId, sdkOmittedValue)
-            ? this.partnerId
-            : partnerId as String,
-        productId: identical(productId, sdkOmittedValue)
-            ? this.productId
-            : productId as String,
-        protocolSettings: identical(protocolSettings, sdkOmittedValue)
-            ? this.protocolSettings
-            : protocolSettings as SdkOptional<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettings>,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as SdkOptional<
-                GetIntegrationResourcesResponseResourcesItemStatus>,
-      );
+  GetIntegrationResourcesResponseResourcesItem _copyWith({Object? billingPlanId = sdkOmittedValue, Object? internalId = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? name = sdkOmittedValue, Object? notification = sdkOmittedValue, Object? partnerId = sdkOmittedValue, Object? productId = sdkOmittedValue, Object? protocolSettings = sdkOmittedValue, Object? status = sdkOmittedValue}) => GetIntegrationResourcesResponseResourcesItem(
+    billingPlanId: identical(billingPlanId, sdkOmittedValue) ? this.billingPlanId : billingPlanId as SdkOptional<String>,
+    internalId: identical(internalId, sdkOmittedValue) ? this.internalId : internalId as String,
+    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as SdkOptional<Map<String, dynamic>>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    notification: identical(notification, sdkOmittedValue) ? this.notification : notification as SdkOptional<GetIntegrationResourcesResponseResourcesItemNotification>,
+    partnerId: identical(partnerId, sdkOmittedValue) ? this.partnerId : partnerId as String,
+    productId: identical(productId, sdkOmittedValue) ? this.productId : productId as String,
+    protocolSettings: identical(protocolSettings, sdkOmittedValue) ? this.protocolSettings : protocolSettings as SdkOptional<GetIntegrationResourcesResponseResourcesItemProtocolSettings>,
+    status: identical(status, sdkOmittedValue) ? this.status : status as SdkOptional<GetIntegrationResourcesResponseResourcesItemStatus>,
+  );
 
-  factory GetIntegrationResourcesResponseResourcesItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetIntegrationResourcesResponseResourcesItem(
-        billingPlanId: json['billingPlanId'] != null
-            ? SdkPresent((json['billingPlanId'] as String?)!)
-            : const SdkOmitted(),
-        internalId: (json['internalId'] as String?)!,
-        metadata: json['metadata'] != null
-            ? SdkPresent((json['metadata'] == null
-                ? null
-                : json['metadata'] as Map<String, dynamic>)!)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        notification: json['notification'] != null
-            ? SdkPresent((json['notification'] != null
-                ? GetIntegrationResourcesResponseResourcesItemNotification
-                    .fromJson(json['notification'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        partnerId: (json['partnerId'] as String?)!,
-        productId: (json['productId'] as String?)!,
-        protocolSettings: json['protocolSettings'] != null
-            ? SdkPresent((json['protocolSettings'] != null
-                ? GetIntegrationResourcesResponseResourcesItemProtocolSettings
-                    .fromJson(json['protocolSettings'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        status: json['status'] != null
-            ? SdkPresent((json['status'] != null
-                ? GetIntegrationResourcesResponseResourcesItemStatus.fromJson(
-                    json['status'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetIntegrationResourcesResponseResourcesItem.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponseResourcesItem(
+    billingPlanId: json['billingPlanId'] != null ? SdkPresent((json['billingPlanId'] as String?)!) : const SdkOmitted(),
+    internalId: (json['internalId'] as String?)!,
+    metadata: json['metadata'] != null ? SdkPresent((json['metadata'] == null ? null : json['metadata'] as Map<String, dynamic>)!) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    notification: json['notification'] != null ? SdkPresent((json['notification'] != null ? GetIntegrationResourcesResponseResourcesItemNotification.fromJson(json['notification'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    partnerId: (json['partnerId'] as String?)!,
+    productId: (json['productId'] as String?)!,
+    protocolSettings: json['protocolSettings'] != null ? SdkPresent((json['protocolSettings'] != null ? GetIntegrationResourcesResponseResourcesItemProtocolSettings.fromJson(json['protocolSettings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    status: json['status'] != null ? SdkPresent((json['status'] != null ? GetIntegrationResourcesResponseResourcesItemStatus.fromJson(json['status'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (billingPlanId) {
-          SdkPresent<String>(value: final value) => {
-              'billingPlanId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'internalId': internalId,
-        ...switch (metadata) {
-          SdkPresent<Map<String, dynamic>>(value: final value) => {
-              'metadata': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        ...switch (notification) {
-          SdkPresent<GetIntegrationResourcesResponseResourcesItemNotification>(
-            value: final value
-          ) =>
-            {
-              'notification': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'partnerId': partnerId,
-        'productId': productId,
-        ...switch (protocolSettings) {
-          SdkPresent<
-                GetIntegrationResourcesResponseResourcesItemProtocolSettings>(
-            value: final value
-          ) =>
-            {
-              'protocolSettings': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (status) {
-          SdkPresent<GetIntegrationResourcesResponseResourcesItemStatus>(
-            value: final value
-          ) =>
-            {
-              'status': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (billingPlanId) {
+      SdkPresent<String>(value: final value) => {'billingPlanId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'internalId': internalId,
+    ...switch (metadata) {
+      SdkPresent<Map<String, dynamic>>(value: final value) => {'metadata': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    ...switch (notification) {
+      SdkPresent<GetIntegrationResourcesResponseResourcesItemNotification>(value: final value) => {'notification': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'partnerId': partnerId,
+    'productId': productId,
+    ...switch (protocolSettings) {
+      SdkPresent<GetIntegrationResourcesResponseResourcesItemProtocolSettings>(value: final value) => {'protocolSettings': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (status) {
+      SdkPresent<GetIntegrationResourcesResponseResourcesItemStatus>(value: final value) => {'status': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetIntegrationResourcesResponse {
@@ -400,29 +175,19 @@ class GetIntegrationResourcesResponse {
 
   const GetIntegrationResourcesResponse({required this.resources});
 
-  GetIntegrationResourcesResponse Function(
-          {List<GetIntegrationResourcesResponseResourcesItem> resources})
-      get copyWith => _copyWith;
+  GetIntegrationResourcesResponse Function({List<GetIntegrationResourcesResponseResourcesItem> resources}) get copyWith => _copyWith;
 
-  GetIntegrationResourcesResponse _copyWith(
-          {Object? resources = sdkOmittedValue}) =>
-      GetIntegrationResourcesResponse(
-        resources: identical(resources, sdkOmittedValue)
-            ? this.resources
-            : resources as List<GetIntegrationResourcesResponseResourcesItem>,
-      );
+  GetIntegrationResourcesResponse _copyWith({Object? resources = sdkOmittedValue}) => GetIntegrationResourcesResponse(
+    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as List<GetIntegrationResourcesResponseResourcesItem>,
+  );
 
-  factory GetIntegrationResourcesResponse.fromJson(Map<String, dynamic> json) =>
-      GetIntegrationResourcesResponse(
-        resources: ((json['resources'] as List?)
-            ?.map((e) => GetIntegrationResourcesResponseResourcesItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory GetIntegrationResourcesResponse.fromJson(Map<String, dynamic> json) => GetIntegrationResourcesResponse(
+    resources: ((json['resources'] as List?)?.map((e) => GetIntegrationResourcesResponseResourcesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'resources': resources.map((item) => item.toJson()).toList(),
-      };
+    'resources': resources.map((item) => item.toJson()).toList(),
+  };
 }
 
 class GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen {
@@ -431,192 +196,97 @@ class GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen {
   final SdkOptional<List<String>> environment;
   final SdkOptional<List<String>> role;
 
-  const GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen(
-      {this.environment = const SdkOmitted(), this.role = const SdkOmitted()});
+  const GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen({this.environment = const SdkOmitted(), this.role = const SdkOmitted()});
 
-  GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen Function(
-      {SdkOptional<List<String>> environment,
-      SdkOptional<List<String>> role}) get copyWith => _copyWith;
+  GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen Function({SdkOptional<List<String>> environment, SdkOptional<List<String>> role}) get copyWith => _copyWith;
 
-  GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen _copyWith(
-          {Object? environment = sdkOmittedValue,
-          Object? role = sdkOmittedValue}) =>
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen(
-        environment: identical(environment, sdkOmittedValue)
-            ? this.environment
-            : environment as SdkOptional<List<String>>,
-        role: identical(role, sdkOmittedValue)
-            ? this.role
-            : role as SdkOptional<List<String>>,
-      );
+  GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen _copyWith({Object? environment = sdkOmittedValue, Object? role = sdkOmittedValue}) => GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen(
+    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as SdkOptional<List<String>>,
+    role: identical(role, sdkOmittedValue) ? this.role : role as SdkOptional<List<String>>,
+  );
 
-  factory GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen.fromJson(
-          Map<String, dynamic> json) =>
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen(
-        environment: json['environment'] != null
-            ? SdkPresent(((json['environment'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        role: json['role'] != null
-            ? SdkPresent(
-                ((json['role'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen.fromJson(Map<String, dynamic> json) => GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen(
+    environment: json['environment'] != null ? SdkPresent(((json['environment'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    role: json['role'] != null ? SdkPresent(((json['role'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (environment) {
-          SdkPresent<List<String>>(value: final value) => {
-              'environment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (role) {
-          SdkPresent<List<String>>(value: final value) => {
-              'role': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (environment) {
+      SdkPresent<List<String>>(value: final value) => {'environment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (role) {
+      SdkPresent<List<String>>(value: final value) => {'role': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetIntegrationResourceResponseCustomClaimsClaimRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final Map<String, dynamic> claims;
-  final SdkOptional<
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen> when_;
+  final SdkOptional<GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen> when_;
 
-  const GetIntegrationResourceResponseCustomClaimsClaimRulesItem(
-      {required this.claims, this.when_ = const SdkOmitted()});
+  const GetIntegrationResourceResponseCustomClaimsClaimRulesItem({required this.claims, this.when_ = const SdkOmitted()});
 
-  GetIntegrationResourceResponseCustomClaimsClaimRulesItem Function(
-      {Map<String, dynamic> claims,
-      SdkOptional<GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen>
-          when_}) get copyWith => _copyWith;
+  GetIntegrationResourceResponseCustomClaimsClaimRulesItem Function({Map<String, dynamic> claims, SdkOptional<GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen> when_}) get copyWith => _copyWith;
 
-  GetIntegrationResourceResponseCustomClaimsClaimRulesItem _copyWith(
-          {Object? claims = sdkOmittedValue,
-          Object? when_ = sdkOmittedValue}) =>
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItem(
-        claims: identical(claims, sdkOmittedValue)
-            ? this.claims
-            : claims as Map<String, dynamic>,
-        when_: identical(when_, sdkOmittedValue)
-            ? this.when_
-            : when_ as SdkOptional<
-                GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen>,
-      );
+  GetIntegrationResourceResponseCustomClaimsClaimRulesItem _copyWith({Object? claims = sdkOmittedValue, Object? when_ = sdkOmittedValue}) => GetIntegrationResourceResponseCustomClaimsClaimRulesItem(
+    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as Map<String, dynamic>,
+    when_: identical(when_, sdkOmittedValue) ? this.when_ : when_ as SdkOptional<GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen>,
+  );
 
-  factory GetIntegrationResourceResponseCustomClaimsClaimRulesItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetIntegrationResourceResponseCustomClaimsClaimRulesItem(
-        claims: (json['claims'] == null
-            ? null
-            : json['claims'] as Map<String, dynamic>)!,
-        when_: json['when'] != null
-            ? SdkPresent((json['when'] != null
-                ? GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen
-                    .fromJson(json['when'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetIntegrationResourceResponseCustomClaimsClaimRulesItem.fromJson(Map<String, dynamic> json) => GetIntegrationResourceResponseCustomClaimsClaimRulesItem(
+    claims: (json['claims'] == null ? null : json['claims'] as Map<String, dynamic>)!,
+    when_: json['when'] != null ? SdkPresent((json['when'] != null ? GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen.fromJson(json['when'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'claims': claims,
-        ...switch (when_) {
-          SdkPresent<
-                GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen>(
-            value: final value
-          ) =>
-            {
-              'when': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'claims': claims,
+    ...switch (when_) {
+      SdkPresent<GetIntegrationResourceResponseCustomClaimsClaimRulesItemWhen>(value: final value) => {'when': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The roles and claim rules Vercel resolves into the resource tokens it mints for this resource
 class GetIntegrationResourceResponseCustomClaims {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>>
-      claimRules;
+  final SdkOptional<List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>> claimRules;
   final SdkOptional<String> defaultRole;
   final SdkOptional<List<String>> roles;
 
-  const GetIntegrationResourceResponseCustomClaims(
-      {this.claimRules = const SdkOmitted(),
-      this.defaultRole = const SdkOmitted(),
-      this.roles = const SdkOmitted()});
+  const GetIntegrationResourceResponseCustomClaims({this.claimRules = const SdkOmitted(), this.defaultRole = const SdkOmitted(), this.roles = const SdkOmitted()});
 
-  GetIntegrationResourceResponseCustomClaims Function(
-      {SdkOptional<
-              List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>>
-          claimRules,
-      SdkOptional<String> defaultRole,
-      SdkOptional<List<String>> roles}) get copyWith => _copyWith;
+  GetIntegrationResourceResponseCustomClaims Function({SdkOptional<List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>> claimRules, SdkOptional<String> defaultRole, SdkOptional<List<String>> roles}) get copyWith => _copyWith;
 
-  GetIntegrationResourceResponseCustomClaims _copyWith(
-          {Object? claimRules = sdkOmittedValue,
-          Object? defaultRole = sdkOmittedValue,
-          Object? roles = sdkOmittedValue}) =>
-      GetIntegrationResourceResponseCustomClaims(
-        claimRules: identical(claimRules, sdkOmittedValue)
-            ? this.claimRules
-            : claimRules as SdkOptional<
-                List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>>,
-        defaultRole: identical(defaultRole, sdkOmittedValue)
-            ? this.defaultRole
-            : defaultRole as SdkOptional<String>,
-        roles: identical(roles, sdkOmittedValue)
-            ? this.roles
-            : roles as SdkOptional<List<String>>,
-      );
+  GetIntegrationResourceResponseCustomClaims _copyWith({Object? claimRules = sdkOmittedValue, Object? defaultRole = sdkOmittedValue, Object? roles = sdkOmittedValue}) => GetIntegrationResourceResponseCustomClaims(
+    claimRules: identical(claimRules, sdkOmittedValue) ? this.claimRules : claimRules as SdkOptional<List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>>,
+    defaultRole: identical(defaultRole, sdkOmittedValue) ? this.defaultRole : defaultRole as SdkOptional<String>,
+    roles: identical(roles, sdkOmittedValue) ? this.roles : roles as SdkOptional<List<String>>,
+  );
 
-  factory GetIntegrationResourceResponseCustomClaims.fromJson(
-          Map<String, dynamic> json) =>
-      GetIntegrationResourceResponseCustomClaims(
-        claimRules: json['claimRules'] != null
-            ? SdkPresent(((json['claimRules'] as List?)
-                ?.map((e) =>
-                    GetIntegrationResourceResponseCustomClaimsClaimRulesItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        defaultRole: json['defaultRole'] != null
-            ? SdkPresent((json['defaultRole'] as String?)!)
-            : const SdkOmitted(),
-        roles: json['roles'] != null
-            ? SdkPresent(
-                ((json['roles'] as List?)?.map((e) => e as String).toList())!)
-            : const SdkOmitted(),
-      );
+  factory GetIntegrationResourceResponseCustomClaims.fromJson(Map<String, dynamic> json) => GetIntegrationResourceResponseCustomClaims(
+    claimRules: json['claimRules'] != null ? SdkPresent(((json['claimRules'] as List?)?.map((e) => GetIntegrationResourceResponseCustomClaimsClaimRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    defaultRole: json['defaultRole'] != null ? SdkPresent((json['defaultRole'] as String?)!) : const SdkOmitted(),
+    roles: json['roles'] != null ? SdkPresent(((json['roles'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (claimRules) {
-          SdkPresent<
-                List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>>(
-            value: final value
-          ) =>
-            {
-              'claimRules': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (defaultRole) {
-          SdkPresent<String>(value: final value) => {
-              'defaultRole': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (roles) {
-          SdkPresent<List<String>>(value: final value) => {
-              'roles': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (claimRules) {
+      SdkPresent<List<GetIntegrationResourceResponseCustomClaimsClaimRulesItem>>(value: final value) => {'claimRules': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (defaultRole) {
+      SdkPresent<String>(value: final value) => {'defaultRole': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (roles) {
+      SdkPresent<List<String>>(value: final value) => {'roles': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

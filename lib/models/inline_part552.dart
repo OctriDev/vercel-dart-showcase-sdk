@@ -5,36 +5,33 @@ part of 'inline.dart';
 
 // Inline operation models (part 552)
 final class GetProjectsResponseLive {
+
   final bool value;
 
   const GetProjectsResponseLive._(this.value);
 
-  factory GetProjectsResponseLive.fromJson(bool value) =>
-      GetProjectsResponseLive._(value);
+  factory GetProjectsResponseLive.fromJson(bool value) => GetProjectsResponseLive._(value);
 
   static const false_ = GetProjectsResponseLive._(false);
   static const true_ = GetProjectsResponseLive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseLive && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseLive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseNodeVersion {
+
   final String value;
 
   const GetProjectsResponseNodeVersion._(this.value);
 
-  factory GetProjectsResponseNodeVersion.fromJson(String value) =>
-      GetProjectsResponseNodeVersion._(value);
+  factory GetProjectsResponseNodeVersion.fromJson(String value) => GetProjectsResponseNodeVersion._(value);
 
   static const v10X = GetProjectsResponseNodeVersion._('10.x');
   static const v12X = GetProjectsResponseNodeVersion._('12.x');
@@ -49,229 +46,180 @@ final class GetProjectsResponseNodeVersion {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseNodeVersion && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseNodeVersion && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether or not to generate OpenID Connect JSON Web Tokens.
 final class GetProjectsResponseOidcTokenConfigEnabled {
+
   final bool value;
 
   const GetProjectsResponseOidcTokenConfigEnabled._(this.value);
 
-  factory GetProjectsResponseOidcTokenConfigEnabled.fromJson(bool value) =>
-      GetProjectsResponseOidcTokenConfigEnabled._(value);
+  factory GetProjectsResponseOidcTokenConfigEnabled.fromJson(bool value) => GetProjectsResponseOidcTokenConfigEnabled._(value);
 
   static const false_ = GetProjectsResponseOidcTokenConfigEnabled._(false);
   static const true_ = GetProjectsResponseOidcTokenConfigEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseOidcTokenConfigEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseOidcTokenConfigEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
 final class GetProjectsResponseOidcTokenConfigIssuerMode {
+
   final String value;
 
   const GetProjectsResponseOidcTokenConfigIssuerMode._(this.value);
 
-  factory GetProjectsResponseOidcTokenConfigIssuerMode.fromJson(String value) =>
-      GetProjectsResponseOidcTokenConfigIssuerMode._(value);
+  factory GetProjectsResponseOidcTokenConfigIssuerMode.fromJson(String value) => GetProjectsResponseOidcTokenConfigIssuerMode._(value);
 
-  static const global =
-      GetProjectsResponseOidcTokenConfigIssuerMode._('global');
+  static const global = GetProjectsResponseOidcTokenConfigIssuerMode._('global');
   static const team = GetProjectsResponseOidcTokenConfigIssuerMode._('team');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseOidcTokenConfigIssuerMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseOidcTokenConfigIssuerMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponsePassportDeploymentType {
+
   final String value;
 
   const GetProjectsResponsePassportDeploymentType._(this.value);
 
-  factory GetProjectsResponsePassportDeploymentType.fromJson(String value) =>
-      GetProjectsResponsePassportDeploymentType._(value);
+  factory GetProjectsResponsePassportDeploymentType.fromJson(String value) => GetProjectsResponsePassportDeploymentType._(value);
 
   static const all = GetProjectsResponsePassportDeploymentType._('all');
-  static const allExceptCustomDomains =
-      GetProjectsResponsePassportDeploymentType._('all_except_custom_domains');
+  static const allExceptCustomDomains = GetProjectsResponsePassportDeploymentType._('all_except_custom_domains');
   static const preview = GetProjectsResponsePassportDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      GetProjectsResponsePassportDeploymentType._(
-          'prod_deployment_urls_and_all_previews');
+  static const prodDeploymentUrlsAndAllPreviews = GetProjectsResponsePassportDeploymentType._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponsePassportDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponsePassportDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponsePasswordProtectionDeploymentType {
+
   final String value;
 
   const GetProjectsResponsePasswordProtectionDeploymentType._(this.value);
 
-  factory GetProjectsResponsePasswordProtectionDeploymentType.fromJson(
-          String value) =>
-      GetProjectsResponsePasswordProtectionDeploymentType._(value);
+  factory GetProjectsResponsePasswordProtectionDeploymentType.fromJson(String value) => GetProjectsResponsePasswordProtectionDeploymentType._(value);
 
-  static const all =
-      GetProjectsResponsePasswordProtectionDeploymentType._('all');
-  static const allExceptCustomDomains =
-      GetProjectsResponsePasswordProtectionDeploymentType._(
-          'all_except_custom_domains');
-  static const preview =
-      GetProjectsResponsePasswordProtectionDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews =
-      GetProjectsResponsePasswordProtectionDeploymentType._(
-          'prod_deployment_urls_and_all_previews');
+  static const all = GetProjectsResponsePasswordProtectionDeploymentType._('all');
+  static const allExceptCustomDomains = GetProjectsResponsePasswordProtectionDeploymentType._('all_except_custom_domains');
+  static const preview = GetProjectsResponsePasswordProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews = GetProjectsResponsePasswordProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponsePasswordProtectionDeploymentType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponsePasswordProtectionDeploymentType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponsePaused {
+
   final bool value;
 
   const GetProjectsResponsePaused._(this.value);
 
-  factory GetProjectsResponsePaused.fromJson(bool value) =>
-      GetProjectsResponsePaused._(value);
+  factory GetProjectsResponsePaused.fromJson(bool value) => GetProjectsResponsePaused._(value);
 
   static const false_ = GetProjectsResponsePaused._(false);
   static const true_ = GetProjectsResponsePaused._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponsePaused && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponsePaused && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseProductionDeploymentsFastLane {
+
   final bool value;
 
   const GetProjectsResponseProductionDeploymentsFastLane._(this.value);
 
-  factory GetProjectsResponseProductionDeploymentsFastLane.fromJson(
-          bool value) =>
-      GetProjectsResponseProductionDeploymentsFastLane._(value);
+  factory GetProjectsResponseProductionDeploymentsFastLane.fromJson(bool value) => GetProjectsResponseProductionDeploymentsFastLane._(value);
 
-  static const false_ =
-      GetProjectsResponseProductionDeploymentsFastLane._(false);
+  static const false_ = GetProjectsResponseProductionDeploymentsFastLane._(false);
   static const true_ = GetProjectsResponseProductionDeploymentsFastLane._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseProductionDeploymentsFastLane &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseProductionDeploymentsFastLane && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseProtectedSourcemaps {
+
   final bool value;
 
   const GetProjectsResponseProtectedSourcemaps._(this.value);
 
-  factory GetProjectsResponseProtectedSourcemaps.fromJson(bool value) =>
-      GetProjectsResponseProtectedSourcemaps._(value);
+  factory GetProjectsResponseProtectedSourcemaps.fromJson(bool value) => GetProjectsResponseProtectedSourcemaps._(value);
 
   static const false_ = GetProjectsResponseProtectedSourcemaps._(false);
   static const true_ = GetProjectsResponseProtectedSourcemaps._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseProtectedSourcemaps && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseProtectedSourcemaps && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetProjectsResponseProtectionBypassValueVariant0Scope {
   integrationAutomationBypass;
 
-  static GetProjectsResponseProtectionBypassValueVariant0Scope fromJson(
-      String value) {
+  static GetProjectsResponseProtectionBypassValueVariant0Scope fromJson(String value) {
     switch (value) {
-      case 'integration-automation-bypass':
-        return GetProjectsResponseProtectionBypassValueVariant0Scope
-            .integrationAutomationBypass;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseProtectionBypassValueVariant0Scope: $value');
+      case 'integration-automation-bypass': return GetProjectsResponseProtectionBypassValueVariant0Scope.integrationAutomationBypass;
+      default: throw ArgumentError('Unknown GetProjectsResponseProtectionBypassValueVariant0Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseProtectionBypassValueVariant0Scope
-            .integrationAutomationBypass:
-        return 'integration-automation-bypass';
+      case GetProjectsResponseProtectionBypassValueVariant0Scope.integrationAutomationBypass: return 'integration-automation-bypass';
     }
   }
 
@@ -281,53 +229,39 @@ enum GetProjectsResponseProtectionBypassValueVariant0Scope {
 
 /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
 final class GetProjectsResponseProtectionBypassValueVariant1IsEnvVar {
+
   final bool value;
 
   const GetProjectsResponseProtectionBypassValueVariant1IsEnvVar._(this.value);
 
-  factory GetProjectsResponseProtectionBypassValueVariant1IsEnvVar.fromJson(
-          bool value) =>
-      GetProjectsResponseProtectionBypassValueVariant1IsEnvVar._(value);
+  factory GetProjectsResponseProtectionBypassValueVariant1IsEnvVar.fromJson(bool value) => GetProjectsResponseProtectionBypassValueVariant1IsEnvVar._(value);
 
-  static const false_ =
-      GetProjectsResponseProtectionBypassValueVariant1IsEnvVar._(false);
-  static const true_ =
-      GetProjectsResponseProtectionBypassValueVariant1IsEnvVar._(true);
+  static const false_ = GetProjectsResponseProtectionBypassValueVariant1IsEnvVar._(false);
+  static const true_ = GetProjectsResponseProtectionBypassValueVariant1IsEnvVar._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseProtectionBypassValueVariant1IsEnvVar &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseProtectionBypassValueVariant1IsEnvVar && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetProjectsResponseProtectionBypassValueVariant1Scope {
   automationBypass;
 
-  static GetProjectsResponseProtectionBypassValueVariant1Scope fromJson(
-      String value) {
+  static GetProjectsResponseProtectionBypassValueVariant1Scope fromJson(String value) {
     switch (value) {
-      case 'automation-bypass':
-        return GetProjectsResponseProtectionBypassValueVariant1Scope
-            .automationBypass;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseProtectionBypassValueVariant1Scope: $value');
+      case 'automation-bypass': return GetProjectsResponseProtectionBypassValueVariant1Scope.automationBypass;
+      default: throw ArgumentError('Unknown GetProjectsResponseProtectionBypassValueVariant1Scope: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseProtectionBypassValueVariant1Scope
-            .automationBypass:
-        return 'automation-bypass';
+      case GetProjectsResponseProtectionBypassValueVariant1Scope.automationBypass: return 'automation-bypass';
     }
   }
 
@@ -336,34 +270,22 @@ enum GetProjectsResponseProtectionBypassValueVariant1Scope {
 }
 
 final class GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection {
+
   final bool value;
 
-  const GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection._(
-      this.value);
+  const GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection._(this.value);
 
-  factory GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection.fromJson(
-          bool value) =>
-      GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection
-          ._(value);
+  factory GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection.fromJson(bool value) => GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection._(value);
 
-  static const false_ =
-      GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection
-          ._(false);
-  static const true_ =
-      GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection
-          ._(true);
+  static const false_ = GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection._(false);
+  static const true_ = GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseProtectionConfigSandboxUrlsInheritDeploymentProtection && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

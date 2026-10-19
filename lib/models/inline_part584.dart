@@ -6,64 +6,56 @@ part of 'inline.dart';
 // Inline operation models (part 584)
 /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
 final class RemoveProjectEnvResponseVariant2Visibility {
+
   final String value;
 
   const RemoveProjectEnvResponseVariant2Visibility._(this.value);
 
-  factory RemoveProjectEnvResponseVariant2Visibility.fromJson(String value) =>
-      RemoveProjectEnvResponseVariant2Visibility._(value);
+  factory RemoveProjectEnvResponseVariant2Visibility.fromJson(String value) => RemoveProjectEnvResponseVariant2Visibility._(value);
 
   static const config = RemoveProjectEnvResponseVariant2Visibility._('config');
   static const secret = RemoveProjectEnvResponseVariant2Visibility._('secret');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is RemoveProjectEnvResponseVariant2Visibility &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is RemoveProjectEnvResponseVariant2Visibility && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditProjectEnvRequestBodyTargetItem {
+
   final String value;
 
   const EditProjectEnvRequestBodyTargetItem._(this.value);
 
-  factory EditProjectEnvRequestBodyTargetItem.fromJson(String value) =>
-      EditProjectEnvRequestBodyTargetItem._(value);
+  factory EditProjectEnvRequestBodyTargetItem.fromJson(String value) => EditProjectEnvRequestBodyTargetItem._(value);
 
   static const production = EditProjectEnvRequestBodyTargetItem._('production');
   static const preview = EditProjectEnvRequestBodyTargetItem._('preview');
-  static const development =
-      EditProjectEnvRequestBodyTargetItem._('development');
+  static const development = EditProjectEnvRequestBodyTargetItem._('development');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvRequestBodyTargetItem && other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvRequestBodyTargetItem && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The type of environment variable
 final class EditProjectEnvRequestBodyType {
+
   final String value;
 
   const EditProjectEnvRequestBodyType._(this.value);
 
-  factory EditProjectEnvRequestBodyType.fromJson(String value) =>
-      EditProjectEnvRequestBodyType._(value);
+  factory EditProjectEnvRequestBodyType.fromJson(String value) => EditProjectEnvRequestBodyType._(value);
 
   static const system = EditProjectEnvRequestBodyType._('system');
   static const encrypted = EditProjectEnvRequestBodyType._('encrypted');
@@ -72,128 +64,106 @@ final class EditProjectEnvRequestBodyType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvRequestBodyType && other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvRequestBodyType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditProjectEnvResponseDecrypted {
+
   final bool value;
 
   const EditProjectEnvResponseDecrypted._(this.value);
 
-  factory EditProjectEnvResponseDecrypted.fromJson(bool value) =>
-      EditProjectEnvResponseDecrypted._(value);
+  factory EditProjectEnvResponseDecrypted.fromJson(bool value) => EditProjectEnvResponseDecrypted._(value);
 
   static const false_ = EditProjectEnvResponseDecrypted._(false);
   static const true_ = EditProjectEnvResponseDecrypted._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvResponseDecrypted && other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvResponseDecrypted && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditProjectEnvResponseInternalContentHintType {
+
   final String value;
 
   const EditProjectEnvResponseInternalContentHintType._(this.value);
 
-  factory EditProjectEnvResponseInternalContentHintType.fromJson(
-          String value) =>
-      EditProjectEnvResponseInternalContentHintType._(value);
+  factory EditProjectEnvResponseInternalContentHintType.fromJson(String value) => EditProjectEnvResponseInternalContentHintType._(value);
 
-  static const flagsSecret =
-      EditProjectEnvResponseInternalContentHintType._('flags-secret');
+  static const flagsSecret = EditProjectEnvResponseInternalContentHintType._('flags-secret');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvResponseInternalContentHintType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvResponseInternalContentHintType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditProjectEnvResponseTargetVariant0Item {
+
   final String value;
 
   const EditProjectEnvResponseTargetVariant0Item._(this.value);
 
-  factory EditProjectEnvResponseTargetVariant0Item.fromJson(String value) =>
-      EditProjectEnvResponseTargetVariant0Item._(value);
+  factory EditProjectEnvResponseTargetVariant0Item.fromJson(String value) => EditProjectEnvResponseTargetVariant0Item._(value);
 
-  static const development =
-      EditProjectEnvResponseTargetVariant0Item._('development');
+  static const development = EditProjectEnvResponseTargetVariant0Item._('development');
   static const preview = EditProjectEnvResponseTargetVariant0Item._('preview');
-  static const production =
-      EditProjectEnvResponseTargetVariant0Item._('production');
+  static const production = EditProjectEnvResponseTargetVariant0Item._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvResponseTargetVariant0Item && other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvResponseTargetVariant0Item && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditProjectEnvResponseTargetVariant1 {
+
   final String value;
 
   const EditProjectEnvResponseTargetVariant1._(this.value);
 
-  factory EditProjectEnvResponseTargetVariant1.fromJson(String value) =>
-      EditProjectEnvResponseTargetVariant1._(value);
+  factory EditProjectEnvResponseTargetVariant1.fromJson(String value) => EditProjectEnvResponseTargetVariant1._(value);
 
-  static const development =
-      EditProjectEnvResponseTargetVariant1._('development');
+  static const development = EditProjectEnvResponseTargetVariant1._('development');
   static const preview = EditProjectEnvResponseTargetVariant1._('preview');
-  static const production =
-      EditProjectEnvResponseTargetVariant1._('production');
+  static const production = EditProjectEnvResponseTargetVariant1._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvResponseTargetVariant1 && other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvResponseTargetVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class EditProjectEnvResponseType {
+
   final String value;
 
   const EditProjectEnvResponseType._(this.value);
 
-  factory EditProjectEnvResponseType.fromJson(String value) =>
-      EditProjectEnvResponseType._(value);
+  factory EditProjectEnvResponseType.fromJson(String value) => EditProjectEnvResponseType._(value);
 
   static const encrypted = EditProjectEnvResponseType._('encrypted');
   static const plain = EditProjectEnvResponseType._('plain');
@@ -203,62 +173,53 @@ final class EditProjectEnvResponseType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvResponseType && other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvResponseType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
 final class EditProjectEnvResponseVisibility {
+
   final String value;
 
   const EditProjectEnvResponseVisibility._(this.value);
 
-  factory EditProjectEnvResponseVisibility.fromJson(String value) =>
-      EditProjectEnvResponseVisibility._(value);
+  factory EditProjectEnvResponseVisibility.fromJson(String value) => EditProjectEnvResponseVisibility._(value);
 
   static const config = EditProjectEnvResponseVisibility._('config');
   static const secret = EditProjectEnvResponseVisibility._('secret');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is EditProjectEnvResponseVisibility && other.value == value;
+  @override bool operator ==(Object other) => other is EditProjectEnvResponseVisibility && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateWebInsightsToggleResponseValue {
+
   final bool value;
 
   const CreateWebInsightsToggleResponseValue._(this.value);
 
-  factory CreateWebInsightsToggleResponseValue.fromJson(bool value) =>
-      CreateWebInsightsToggleResponseValue._(value);
+  factory CreateWebInsightsToggleResponseValue.fromJson(bool value) => CreateWebInsightsToggleResponseValue._(value);
 
   static const false_ = CreateWebInsightsToggleResponseValue._(false);
   static const true_ = CreateWebInsightsToggleResponseValue._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateWebInsightsToggleResponseValue && other.value == value;
+  @override bool operator ==(Object other) => other is CreateWebInsightsToggleResponseValue && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -45,34 +45,24 @@ Future<ListNamedSandboxesResponse> listNamedSandboxes(ClientConfig config,
   return (await sdkRequest<ListNamedSandboxesResponse>('GET', '/v2/sandboxes',
           config: config,
           query: {
-            'project': SdkQueryValue(SdkUtils.unwrapOptional(project),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'sortBy': SdkQueryValue(SdkUtils.unwrapOptional(sortBy),
-                style: 'form', explode: true),
-            'namePrefix': SdkQueryValue(SdkUtils.unwrapOptional(namePrefix),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder),
-                style: 'form', explode: true),
-            'status': SdkQueryValue(SdkUtils.unwrapOptional(status),
-                style: 'form', explode: true),
-            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'project': SdkQueryValue(SdkUtils.unwrapOptional(project), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'sortBy': SdkQueryValue(SdkUtils.unwrapOptional(sortBy), style: 'form', explode: true),
+            'namePrefix': SdkQueryValue(SdkUtils.unwrapOptional(namePrefix), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder), style: 'form', explode: true),
+            'status': SdkQueryValue(SdkUtils.unwrapOptional(status), style: 'form', explode: true),
+            'tags': SdkQueryValue(SdkUtils.unwrapOptional(tags), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listNamedSandboxes',
-          fromJsonRaw: (value) => ListNamedSandboxesResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListNamedSandboxesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a named sandbox with an initialized filesystem and runtime configuration. Supply `name` and `projectId` to assign it to a project, and optionally configure its source, resources, network policy, ports, or mounted drives. A 200 response includes the sandbox, session, and exposed routes.
 ///
@@ -119,31 +109,24 @@ Future<ListNamedSandboxesResponse> listNamedSandboxes(ClientConfig config,
 Future<CreateSandboxesV2Response> createSandboxesV2(ClientConfig config,
     {SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<CreateSandboxesV2RequestNetworkPolicy> networkPolicy =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesV2RequestBodyRuntime> runtime =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesV2RequestBodyArchitecture> architecture =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesV2RequestBodyResources> resources =
-        const SdkOmitted(),
+    SdkOptional<CreateSandboxesV2RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV2RequestBodyRuntime> runtime = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV2RequestBodyArchitecture> architecture = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV2RequestBodyResources> resources = const SdkOmitted(),
     SdkOptional<CreateSandboxesV2RequestSource> source = const SdkOmitted(),
     SdkOptional<String> projectId = const SdkOmitted(),
     SdkOptional<List<int>> ports = const SdkOmitted(),
     SdkOptional<String> image = const SdkOmitted(),
     SdkOptional<int> timeout = const SdkOmitted(),
     SdkOptional<Map<String, String>> env = const SdkOmitted(),
-    SdkOptional<Map<String, CreateSandboxesV2RequestBodyMountsValue>> mounts =
-        const SdkOmitted(),
+    SdkOptional<Map<String, CreateSandboxesV2RequestBodyMountsValue>> mounts = const SdkOmitted(),
     SdkOptional<CreateSandboxesV2RequestBodyRegion> region = const SdkOmitted(),
-    SdkOptional<List<CreateSandboxesV2RequestBodyFailoverRegionsItem>>
-        failoverRegions = const SdkOmitted(),
+    SdkOptional<List<CreateSandboxesV2RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
     SdkOptional<String> networkId = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<bool> persistent = const SdkOmitted(),
     SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-    SdkOptional<CreateSandboxesV2RequestBodyKeepLastSnapshots>
-        keepLastSnapshots = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV2RequestBodyKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
     SdkOptional<Map<String, String>> tags = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (ports is SdkPresent<List<int>>) {
@@ -155,8 +138,7 @@ Future<CreateSandboxesV2Response> createSandboxesV2(ClientConfig config,
   if (timeout is SdkPresent<int>) {
     validateRange('timeout', timeout.value, min: 1000);
   }
-  if (failoverRegions
-      is SdkPresent<List<CreateSandboxesV2RequestBodyFailoverRegionsItem>>) {
+  if (failoverRegions is SdkPresent<List<CreateSandboxesV2RequestBodyFailoverRegionsItem>>) {
     validateItems('failoverRegions', failoverRegions.value, max: 19);
   }
   if (networkId is SdkPresent<String>) {
@@ -170,10 +152,8 @@ Future<CreateSandboxesV2Response> createSandboxesV2(ClientConfig config,
   return (await sdkRequest<CreateSandboxesV2Response>('POST', '/v2/sandboxes',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'networkPolicy': SdkUtils.unwrapOptional(networkPolicy),
@@ -198,11 +178,11 @@ Future<CreateSandboxesV2Response> createSandboxesV2(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createSandboxesV2',
-          fromJsonRaw: (value) =>
-              CreateSandboxesV2Response.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSandboxesV2Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists drives associated with a project in a paginated response. Use `projectId` to select the project unless the request uses a Vercel OIDC token scoped to one, and use `namePrefix` to filter by name when sorting by name. Continue through the results with the pagination cursor returned in the response.
 ///
@@ -236,30 +216,22 @@ Future<ListDrivesResponse> listDrives(ClientConfig config,
   return (await sdkRequest<ListDrivesResponse>('GET', '/v2/sandboxes/drives',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'sortBy': SdkQueryValue(SdkUtils.unwrapOptional(sortBy),
-                style: 'form', explode: true),
-            'namePrefix': SdkQueryValue(SdkUtils.unwrapOptional(namePrefix),
-                style: 'form', explode: true),
-            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'sortBy': SdkQueryValue(SdkUtils.unwrapOptional(sortBy), style: 'form', explode: true),
+            'namePrefix': SdkQueryValue(SdkUtils.unwrapOptional(namePrefix), style: 'form', explode: true),
+            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listDrives',
-          fromJsonRaw: (value) =>
-              ListDrivesResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListDrivesResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a drive by its name or ID within a project. Supply `projectId` unless the request uses a Vercel OIDC token scoped to a project. The drive name or ID must use only letters, digits, hyphens, or underscores and be no longer than 64 characters.
 ///
@@ -283,20 +255,17 @@ Future<GetDriveResponse> getDrive(ClientConfig config,
           '/v2/sandboxes/drives/${Uri.encodeComponent(nameOrId.toString())}',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDrive',
-          fromJsonRaw: (value) =>
-              GetDriveResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDriveResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a drive with the specified name or retrieves the existing drive with that name in the project. Use `projectId` to associate the drive with a project unless your Vercel OIDC token is scoped to one; configure its size with `maxSizeBytes` and storage location with `region`. The response includes the drive object and its identifier.
 ///
@@ -327,10 +296,8 @@ Future<GetOrCreateDriveResponse> getOrCreateDrive(ClientConfig config,
           '/v2/sandboxes/drives/${Uri.encodeComponent(name.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'projectId': SdkUtils.unwrapOptional(projectId),
@@ -339,11 +306,11 @@ Future<GetOrCreateDriveResponse> getOrCreateDrive(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getOrCreateDrive',
-          fromJsonRaw: (value) =>
-              GetOrCreateDriveResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetOrCreateDriveResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a drive identified by its name and project. Use this operation to remove a drive that is no longer needed; a drive attached to a session cannot be deleted, so stop or replace the session using it before retrying. A successful response includes the deleted drive object.
 ///
@@ -368,20 +335,17 @@ Future<DeleteDriveResponse> deleteDrive(ClientConfig config,
           '/v2/sandboxes/drives/${Uri.encodeComponent(name.toString())}',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteDrive',
-          fromJsonRaw: (value) =>
-              DeleteDriveResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteDriveResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Forks a source drive into a new drive that inherits the source drive's region and maximum size. Provide the new drive's name in the request body and identify the project unless your Vercel OIDC token is scoped to one. The response contains the created drive object.
 ///
@@ -410,21 +374,18 @@ Future<ForkDriveResponse> forkDrive(ClientConfig config,
           '/v2/sandboxes/drives/${Uri.encodeComponent(name.toString())}/fork',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'name': name_2},
           decoder: SdkResponseDecoder.json,
           operationId: 'forkDrive',
-          fromJsonRaw: (value) =>
-              ForkDriveResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ForkDriveResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists snapshots for a project, with results paginated by an opaque cursor. Filter by project and sandbox name, and use `limit` and `cursor` to control pagination. Results are sorted by creation time in the selected direction.
 ///
@@ -460,20 +421,13 @@ Future<dynamic> listSessionSnapshots(ClientConfig config,
   return (await sdkRequest<dynamic>('GET', '/v2/sandboxes/snapshots',
           config: config,
           query: {
-            'project': SdkQueryValue(SdkUtils.unwrapOptional(project),
-                style: 'form', explode: true),
-            'name': SdkQueryValue(SdkUtils.unwrapOptional(name),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'project': SdkQueryValue(SdkUtils.unwrapOptional(project), style: 'form', explode: true),
+            'name': SdkQueryValue(SdkUtils.unwrapOptional(name), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listSessionSnapshots',
@@ -481,6 +435,7 @@ Future<dynamic> listSessionSnapshots(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves details for a specific sandbox snapshot, including its creation time, size, expiration, and source session. Use `snapshotId` to identify the snapshot whose details you need. The response contains the snapshot object.
 ///
@@ -495,25 +450,22 @@ Future<GetSessionSnapshotResponse> getSessionSnapshot(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('snapshotId', snapshotId, max: 33);
-  sdkValidatePattern(
-      'snapshotId', snapshotId, '^(?:snap_[A-Za-z0-9]{28}|vhs_[a-z0-9]{28})\$');
+  sdkValidatePattern('snapshotId', snapshotId, '^(?:snap_[A-Za-z0-9]{28}|vhs_[a-z0-9]{28})\$');
 
   return (await sdkRequest<GetSessionSnapshotResponse>('GET',
           '/v2/sandboxes/snapshots/${Uri.encodeComponent(snapshotId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSessionSnapshot',
-          fromJsonRaw: (value) => GetSessionSnapshotResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetSessionSnapshotResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a sandbox snapshot and frees its associated storage. Use `snapshotId` to select the snapshot to remove; a deleted snapshot cannot be used to create new sessions. &lt;Callout type="warning"&gt;Deletion is permanent and cannot be undone.&lt;/Callout&gt;
 ///
@@ -528,25 +480,22 @@ Future<DeleteSessionSnapshotResponse> deleteSessionSnapshot(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateLength('snapshotId', snapshotId, max: 33);
-  sdkValidatePattern(
-      'snapshotId', snapshotId, '^(?:snap_[A-Za-z0-9]{28}|vhs_[a-z0-9]{28})\$');
+  sdkValidatePattern('snapshotId', snapshotId, '^(?:snap_[A-Za-z0-9]{28}|vhs_[a-z0-9]{28})\$');
 
   return (await sdkRequest<DeleteSessionSnapshotResponse>('DELETE',
           '/v2/sandboxes/snapshots/${Uri.encodeComponent(snapshotId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteSessionSnapshot',
-          fromJsonRaw: (value) => DeleteSessionSnapshotResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteSessionSnapshotResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists sessions for a sandbox, with results paginated by an opaque cursor and sorted by creation time. Filter by project and sandbox name, and use `limit`, `cursor`, and `sortOrder` to shape the results. The response includes session records and pagination metadata.
 ///
@@ -581,20 +530,13 @@ Future<dynamic> listSessions(ClientConfig config,
   return (await sdkRequest<dynamic>('GET', '/v2/sandboxes/sessions',
           config: config,
           query: {
-            'project': SdkQueryValue(SdkUtils.unwrapOptional(project),
-                style: 'form', explode: true),
-            'name': SdkQueryValue(SdkUtils.unwrapOptional(name),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'project': SdkQueryValue(SdkUtils.unwrapOptional(project), style: 'form', explode: true),
+            'name': SdkQueryValue(SdkUtils.unwrapOptional(name), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'sortOrder': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listSessions',
@@ -602,6 +544,7 @@ Future<dynamic> listSessions(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves details for a specific sandbox session, including its status, resource configuration, and exposed routes. Use `sessionId` to identify the session to inspect. The response includes the session object and its routes.
 ///
@@ -619,18 +562,16 @@ Future<GetSessionResponse> getSession(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSession',
-          fromJsonRaw: (value) =>
-              GetSessionResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetSessionResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a named sandbox, its current session, and its exposed routes. Set `resume` to true to create a new sandbox instance from the most recent snapshot when the named sandbox is stopped; it defaults to false. The response indicates whether the sandbox resumed and includes sandbox and session details.
 ///
@@ -657,22 +598,18 @@ Future<GetNamedSandboxResponse> getNamedSandbox(ClientConfig config,
           'GET', '/v2/sandboxes/${Uri.encodeComponent(name.toString())}',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'resume': SdkQueryValue(SdkUtils.unwrapOptional(resume),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'resume': SdkQueryValue(SdkUtils.unwrapOptional(resume), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getNamedSandbox',
-          fromJsonRaw: (value) =>
-              GetNamedSandboxResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetNamedSandboxResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates the configuration of a named sandbox, changing only the fields you provide. Use the request body to adjust its resources, runtime, networking, storage mounts, environment, or other settings; omitted fields remain unchanged. Set `resume` to true to resume a stopped sandbox from its snapshot.
 ///
@@ -721,21 +658,16 @@ Future<UpdateSandboxResponse> updateSandbox(ClientConfig config,
     SdkOptional<bool> resume = const SdkOmitted(),
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<UpdateSandboxRequestBodyResources> resources =
-        const SdkOmitted(),
+    SdkOptional<UpdateSandboxRequestBodyResources> resources = const SdkOmitted(),
     SdkOptional<UpdateSandboxRequestBodyRuntime> runtime = const SdkOmitted(),
     SdkOptional<int> timeout = const SdkOmitted(),
     SdkOptional<bool> persistent = const SdkOmitted(),
     SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-    SdkOptional<UpdateSandboxRequestKeepLastSnapshots> keepLastSnapshots =
-        const SdkOmitted(),
-    SdkOptional<UpdateSandboxRequestNetworkPolicy> networkPolicy =
-        const SdkOmitted(),
+    SdkOptional<UpdateSandboxRequestKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
+    SdkOptional<UpdateSandboxRequestNetworkPolicy> networkPolicy = const SdkOmitted(),
     SdkOptional<UpdateSandboxRequestBodyRegion> region = const SdkOmitted(),
-    SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>>
-        failoverRegions = const SdkOmitted(),
-    SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>> mounts =
-        const SdkOmitted(),
+    SdkOptional<List<UpdateSandboxRequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
+    SdkOptional<Map<String, UpdateSandboxRequestBodyMountsValue>> mounts = const SdkOmitted(),
     SdkOptional<String> networkId = const SdkOmitted(),
     SdkOptional<Map<String, String>> env = const SdkOmitted(),
     SdkOptional<List<int>> ports = const SdkOmitted(),
@@ -750,8 +682,7 @@ Future<UpdateSandboxResponse> updateSandbox(ClientConfig config,
   if (timeout is SdkPresent<int>) {
     validateRange('timeout', timeout.value, min: 1000);
   }
-  if (failoverRegions
-      is SdkPresent<List<UpdateSandboxRequestBodyFailoverRegionsItem>>) {
+  if (failoverRegions is SdkPresent<List<UpdateSandboxRequestBodyFailoverRegionsItem>>) {
     validateItems('failoverRegions', failoverRegions.value, max: 19);
   }
   if (ports is SdkPresent<List<int>>) {
@@ -765,14 +696,10 @@ Future<UpdateSandboxResponse> updateSandbox(ClientConfig config,
           'PATCH', '/v2/sandboxes/${Uri.encodeComponent(name.toString())}',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'resume': SdkQueryValue(SdkUtils.unwrapOptional(resume),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'resume': SdkQueryValue(SdkUtils.unwrapOptional(resume), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'resources': SdkUtils.unwrapOptional(resources),
@@ -797,6 +724,7 @@ Future<UpdateSandboxResponse> updateSandbox(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a named sandbox and its metadata, stopping any running sandbox processes first. Use `deleteOrphanSnapshots` to request asynchronous deletion of snapshots that are not referenced by another sandbox; when the config item is missing, returned sandbox fields may be stale.
 ///
@@ -827,24 +755,18 @@ Future<DeleteSandboxResponse> deleteSandbox(ClientConfig config,
           'DELETE', '/v2/sandboxes/${Uri.encodeComponent(name.toString())}',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'deleteOrphanSnapshots': SdkQueryValue(
-                SdkUtils.unwrapOptional(deleteOrphanSnapshots),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'deleteOrphanSnapshots': SdkQueryValue(SdkUtils.unwrapOptional(deleteOrphanSnapshots), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteSandbox',
-          fromJsonRaw: (value) =>
-              DeleteSandboxResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteSandboxResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists commands executed in a session, including their current status, exit codes, and execution times. Use `sessionId` to select the session; results are ordered from most recent to oldest.
 ///
@@ -862,18 +784,16 @@ Future<ListSessionCommandsResponse> listSessionCommands(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/cmd',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listSessionCommands',
-          fromJsonRaw: (value) => ListSessionCommandsResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ListSessionCommandsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Submits a shell command for execution in a session and returns a command ID for tracking its progress. Use `wait` to stream status updates until the command finishes; set `logs` as well to stream execution output in real time.
 ///
@@ -928,10 +848,8 @@ Future<RunSessionCommandResponse> runSessionCommand(ClientConfig config,
           config: config,
           query: {
             'cmdId': SdkQueryValue(cmdId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'command': command,
@@ -946,11 +864,11 @@ Future<RunSessionCommandResponse> runSessionCommand(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'runSessionCommand',
-          fromJsonRaw: (value) =>
-              RunSessionCommandResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => RunSessionCommandResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Submits a shell command for execution in a session and returns a command ID for tracking its progress. Use `wait` to stream status updates until the command finishes; set `logs` as well to stream execution output in real time.
 ///
@@ -981,43 +899,27 @@ Future<RunSessionCommandResponse> runSessionCommand(ClientConfig config,
 /// [attachStdin] If true, keeps the command stdin open so it can be written to
 ///   with the stdin endpoint while the command runs. When false, the command
 ///   reads from an empty stdin.
-Stream<dynamic> runSessionCommandStream(ClientConfig config,
-    {required String sessionId,
-    required String cmdId,
-    required String command,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<List<String>> args = const SdkOmitted(),
-    SdkOptional<String> cwd = const SdkOmitted(),
-    SdkOptional<Map<String, String>> env = const SdkOmitted(),
-    SdkOptional<bool> sudo = const SdkOmitted(),
-    SdkOptional<bool> wait = const SdkOmitted(),
-    SdkOptional<bool> logs = const SdkOmitted(),
-    SdkOptional<int> timeout = const SdkOmitted(),
-    SdkOptional<bool> attachStdin = const SdkOmitted(),
-    RequestOptions? requestOptions}) async* {
+Stream<dynamic> runSessionCommandStream(ClientConfig config, {required String sessionId, required String cmdId, required String command, SdkOptional<String> teamId = const SdkOmitted(), SdkOptional<String> slug = const SdkOmitted(), SdkOptional<List<String>> args = const SdkOmitted(), SdkOptional<String> cwd = const SdkOmitted(), SdkOptional<Map<String, String>> env = const SdkOmitted(), SdkOptional<bool> sudo = const SdkOmitted(), SdkOptional<bool> wait = const SdkOmitted(), SdkOptional<bool> logs = const SdkOmitted(), SdkOptional<int> timeout = const SdkOmitted(), SdkOptional<bool> attachStdin = const SdkOmitted(), RequestOptions? requestOptions}) async* {
   await for (final event in sdkStream(
     'POST',
     '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/cmd',
     query: {
-      'cmdId': SdkQueryValue(cmdId, style: 'form', explode: true),
-      'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-          style: 'form', explode: true),
-      'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-          style: 'form', explode: true),
-    },
+    'cmdId': SdkQueryValue(cmdId, style: 'form', explode: true),
+    'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+    'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true),
+  },
     config: config,
     body: {
-      'command': command,
-      'args': SdkUtils.unwrapOptional(args),
-      'cwd': SdkUtils.unwrapOptional(cwd),
-      'env': SdkUtils.unwrapOptional(env),
-      'sudo': SdkUtils.unwrapOptional(sudo),
-      'wait': SdkUtils.unwrapOptional(wait),
-      'logs': SdkUtils.unwrapOptional(logs),
-      'timeout': SdkUtils.unwrapOptional(timeout),
-      'attachStdin': SdkUtils.unwrapOptional(attachStdin),
-    },
+    'command': command,
+    'args': SdkUtils.unwrapOptional(args),
+    'cwd': SdkUtils.unwrapOptional(cwd),
+    'env': SdkUtils.unwrapOptional(env),
+    'sudo': SdkUtils.unwrapOptional(sudo),
+    'wait': SdkUtils.unwrapOptional(wait),
+    'logs': SdkUtils.unwrapOptional(logs),
+    'timeout': SdkUtils.unwrapOptional(timeout),
+    'attachStdin': SdkUtils.unwrapOptional(attachStdin),
+  },
     operationId: 'runSessionCommandStream',
     streamFormat: 'ndjson',
     streamMediaType: 'application/x-ndjson',
@@ -1028,7 +930,6 @@ Stream<dynamic> runSessionCommandStream(ClientConfig config,
     yield sdkDecode(() => event.data);
   }
 }
-
 /// Retrieves the status and details of a command executed in a session, including its exit code if it has finished. Set `wait` to true to block the request until the command finishes.
 ///
 /// Retrieves the current status and details of a command executed in a session. Use the `wait` parameter to block until the command finishes execution.
@@ -1050,20 +951,17 @@ Future<GetSessionCommandResponse> getSessionCommand(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/cmd/${Uri.encodeComponent(cmdId.toString())}',
           config: config,
           query: {
-            'wait': SdkQueryValue(SdkUtils.unwrapOptional(wait),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'wait': SdkQueryValue(SdkUtils.unwrapOptional(wait), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getSessionCommand',
-          fromJsonRaw: (value) =>
-              GetSessionCommandResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetSessionCommandResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Triggers termination of a running command in a session by sending it a signal. Use signal 15 (SIGTERM) for graceful termination or signal 9 (SIGKILL) to forcefully stop the process; the command must still be running.
 ///
@@ -1086,19 +984,17 @@ Future<KillSessionCommandResponse> killSessionCommand(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/cmd/${Uri.encodeComponent(cmdId.toString())}/kill',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'signal': signal},
           decoder: SdkResponseDecoder.json,
           operationId: 'killSessionCommand',
-          fromJsonRaw: (value) => KillSessionCommandResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => KillSessionCommandResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Writes data to a running command's stdin and can close stdin after the write. The command must have started with `attachStdin` enabled; send writes one at a time to preserve order, and use `offset` to make retries safe when the response includes `bytesWritten`.
 ///
@@ -1116,16 +1012,16 @@ Future<KillSessionCommandResponse> killSessionCommand(ClientConfig config,
 ///   it, `data` is appended.
 /// [close] If true, closes the command stdin after writing `data`. Use this for
 ///   commands that wait for end of input.
-Future<WriteSessionCommandStdinResponse> writeSessionCommandStdin(
-    ClientConfig config,
-    {required String cmdId,
-    required String sessionId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<String> data = const SdkOmitted(),
-    SdkOptional<int> offset = const SdkOmitted(),
-    SdkOptional<bool> close = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<WriteSessionCommandStdinResponse>
+    writeSessionCommandStdin(ClientConfig config,
+        {required String cmdId,
+        required String sessionId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<String> data = const SdkOmitted(),
+        SdkOptional<int> offset = const SdkOmitted(),
+        SdkOptional<bool> close = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (data is SdkPresent<String>) {
     validateLength('data', data.value, max: 1000000);
   }
@@ -1137,10 +1033,8 @@ Future<WriteSessionCommandStdinResponse> writeSessionCommandStdin(
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/cmd/${Uri.encodeComponent(cmdId.toString())}/stdin',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'data': SdkUtils.unwrapOptional(data),
@@ -1149,11 +1043,11 @@ Future<WriteSessionCommandStdinResponse> writeSessionCommandStdin(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'writeSessionCommandStdin',
-          fromJsonRaw: (value) => WriteSessionCommandStdinResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => WriteSessionCommandStdinResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Streams command output in real time as newline-delimited JSON (ND-JSON). Each stream entry includes output data and a stream type such as `stdout`, `stderr`, or `error`.
 ///
@@ -1163,21 +1057,14 @@ Future<WriteSessionCommandStdinResponse> writeSessionCommandStdin(
 /// [cmdId] The unique identifier of the command to stream logs for.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<GetSessionCommandLogsResponse> getSessionCommandLogs(ClientConfig config,
-    {required String sessionId,
-    required String cmdId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async* {
+Stream<GetSessionCommandLogsResponse> getSessionCommandLogs(ClientConfig config, {required String sessionId, required String cmdId, SdkOptional<String> teamId = const SdkOmitted(), SdkOptional<String> slug = const SdkOmitted(), RequestOptions? requestOptions}) async* {
   await for (final event in sdkStream(
     'GET',
     '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/cmd/${Uri.encodeComponent(cmdId.toString())}/logs',
     query: {
-      'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-          style: 'form', explode: true),
-      'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-          style: 'form', explode: true),
-    },
+    'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+    'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true),
+  },
     config: config,
     operationId: 'getSessionCommandLogs',
     streamFormat: 'ndjson',
@@ -1189,7 +1076,6 @@ Stream<GetSessionCommandLogsResponse> getSessionCommandLogs(ClientConfig config,
     yield sdkDecode(() => GetSessionCommandLogsResponse.fromJson(event.data));
   }
 }
-
 /// Stops a running session and releases its allocated resources, terminating all processes within it. This action cannot be undone, and the stopped session cannot be restarted.
 ///
 /// Stops a running session and releases its allocated resources. All running processes within the session will be terminated. This action cannot be undone. A stopped session cannot be restarted.
@@ -1206,10 +1092,8 @@ Future<StopSessionResponse> stopSession(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/stop',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'stopSession',
@@ -1217,6 +1101,7 @@ Future<StopSessionResponse> stopSession(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Extends the maximum execution time of a running session. Supply the additional duration in milliseconds; the session must be active, and the resulting timeout cannot exceed your account's maximum allowed limit.
 ///
@@ -1239,19 +1124,17 @@ Future<ExtendSessionTimeoutResponse> extendSessionTimeout(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/extend-timeout',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'duration': duration},
           decoder: SdkResponseDecoder.json,
           operationId: 'extendSessionTimeout',
-          fromJsonRaw: (value) => ExtendSessionTimeoutResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ExtendSessionTimeoutResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Replaces the network access policy for a running session, controlling which external hosts it can reach. This is a full replacement, so any previously configured network rules are overwritten; choose the policy mode and rules for the complete configuration you want applied.
 ///
@@ -1261,30 +1144,28 @@ Future<ExtendSessionTimeoutResponse> extendSessionTimeout(ClientConfig config,
 ///   policy for.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<UpdateSessionNetworkPolicyResponse> updateSessionNetworkPolicy(
-    ClientConfig config,
-    {required String sessionId,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<dynamic> body = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<UpdateSessionNetworkPolicyResponse>
+    updateSessionNetworkPolicy(ClientConfig config,
+        {required String sessionId,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<dynamic> body = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<UpdateSessionNetworkPolicyResponse>('POST',
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/network-policy',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: SdkUtils.unwrapOptional(body),
           decoder: SdkResponseDecoder.json,
           operationId: 'updateSessionNetworkPolicy',
-          fromJsonRaw: (value) => UpdateSessionNetworkPolicyResponse.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => UpdateSessionNetworkPolicyResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves a file from a session's filesystem. Supply `path` to identify the file and optionally use `cwd` to resolve a relative path from a different base directory. The file is returned as a binary stream for download.
 ///
@@ -1308,10 +1189,8 @@ Future<List<int>> readSessionFile(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/fs/read',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'path': path, 'cwd': SdkUtils.unwrapOptional(cwd)},
           decoder: SdkResponseDecoder.bytes,
@@ -1319,6 +1198,7 @@ Future<List<int>> readSessionFile(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a directory in a session's filesystem. Supply `path` for the directory location and use `cwd` to resolve a relative path from a different base directory. Parent directories are created recursively by default; set `recursive` to false to require them to exist.
 ///
@@ -1345,10 +1225,8 @@ Future<Map<String, dynamic>> createSessionDirectory(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/fs/mkdir',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'path': path,
@@ -1361,6 +1239,7 @@ Future<Map<String, dynamic>> createSessionDirectory(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Writes files to a session's filesystem by uploading and extracting a gzipped tarball. Send the archive with `Content-Type: application/gzip`; use `x-cwd` to choose an extraction directory. When `x-cwd` is omitted, files are extracted to the sandbox home directory.
 ///
@@ -1381,19 +1260,17 @@ Future<Map<String, dynamic>> writeSessionFiles(ClientConfig config,
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/fs/write',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
-          extraHeaders: SdkUtils.serializeHeaders(
-              {'x-cwd': SdkUtils.unwrapOptional(xCwd)}),
+          extraHeaders: SdkUtils.serializeHeaders({'x-cwd': SdkUtils.unwrapOptional(xCwd)}),
           operationId: 'writeSessionFiles',
           fromJsonRaw: (value) => value as Map<String, dynamic>,
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a point-in-time snapshot of a running session's filesystem. Use a snapshot to restore the filesystem later or initialize another session with the same environment; the session must be running and able to accept commands. The source session is terminated after the snapshot is created.
 ///
@@ -1411,25 +1288,21 @@ Future<CreateSandboxesSessionsBySessionIdSnapshotV2Response>
         SdkOptional<String> slug = const SdkOmitted(),
         SdkOptional<int?> expiration = const SdkOmitted(),
         RequestOptions? requestOptions}) async {
-  return (await sdkRequest<
-              CreateSandboxesSessionsBySessionIdSnapshotV2Response>('POST',
+  return (await sdkRequest<CreateSandboxesSessionsBySessionIdSnapshotV2Response>('POST',
           '/v2/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/snapshot',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'expiration': SdkUtils.unwrapOptional(expiration)},
           decoder: SdkResponseDecoder.json,
           operationId: 'createSandboxesSessionsBySessionIdSnapshotV2',
-          fromJsonRaw: (value) =>
-              CreateSandboxesSessionsBySessionIdSnapshotV2Response.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSandboxesSessionsBySessionIdSnapshotV2Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Forks a named sandbox into a new named sandbox, copying its configuration and environment variables. Supply `name` to identify the source and `projectId` unless you authenticate with an OIDC token; request fields override values copied from the source. If the source has a snapshot, the fork starts from it; otherwise, it starts from the source runtime or image.
 ///
@@ -1467,34 +1340,28 @@ Future<CreateSandboxesSessionsBySessionIdSnapshotV2Response>
 /// [keepLastSnapshots] Protect the N most recent snapshots with different
 ///   expiration/deletion behavior.
 /// [tags] Key-value tags to associate with the sandbox. Maximum 5 tags.
-Future<CreateSandboxesByNameForkV2Response> createSandboxesByNameForkV2(
-    ClientConfig config,
-    {required String name,
-    SdkOptional<String> projectId = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV2RequestNetworkPolicy> networkPolicy =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV2RequestBodyResources> resources =
-        const SdkOmitted(),
-    SdkOptional<List<int>> ports = const SdkOmitted(),
-    SdkOptional<String> image = const SdkOmitted(),
-    SdkOptional<int> timeout = const SdkOmitted(),
-    SdkOptional<Map<String, String>> env = const SdkOmitted(),
-    SdkOptional<Map<String, CreateSandboxesByNameForkV2RequestBodyMountsValue>>
-        mounts = const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV2RequestBodyRegion> region =
-        const SdkOmitted(),
-    SdkOptional<List<CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem>>
-        failoverRegions = const SdkOmitted(),
-    SdkOptional<String> networkId = const SdkOmitted(),
-    SdkOptional<String> name_2 = const SdkOmitted(),
-    SdkOptional<bool> persistent = const SdkOmitted(),
-    SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV2RequestBodyKeepLastSnapshots>
-        keepLastSnapshots = const SdkOmitted(),
-    SdkOptional<Map<String, String>> tags = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<CreateSandboxesByNameForkV2Response>
+    createSandboxesByNameForkV2(ClientConfig config,
+        {required String name,
+        SdkOptional<String> projectId = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV2RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV2RequestBodyResources> resources = const SdkOmitted(),
+        SdkOptional<List<int>> ports = const SdkOmitted(),
+        SdkOptional<String> image = const SdkOmitted(),
+        SdkOptional<int> timeout = const SdkOmitted(),
+        SdkOptional<Map<String, String>> env = const SdkOmitted(),
+        SdkOptional<Map<String, CreateSandboxesByNameForkV2RequestBodyMountsValue>> mounts = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV2RequestBodyRegion> region = const SdkOmitted(),
+        SdkOptional<List<CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
+        SdkOptional<String> networkId = const SdkOmitted(),
+        SdkOptional<String> name_2 = const SdkOmitted(),
+        SdkOptional<bool> persistent = const SdkOmitted(),
+        SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV2RequestBodyKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
+        SdkOptional<Map<String, String>> tags = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 128);
   sdkValidatePattern('name', name, '^[a-zA-Z0-9_-]+\$');
   if (projectId is SdkPresent<String>) {
@@ -1509,8 +1376,7 @@ Future<CreateSandboxesByNameForkV2Response> createSandboxesByNameForkV2(
   if (timeout is SdkPresent<int>) {
     validateRange('timeout', timeout.value, min: 1000);
   }
-  if (failoverRegions is SdkPresent<
-      List<CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem>>) {
+  if (failoverRegions is SdkPresent<List<CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem>>) {
     validateItems('failoverRegions', failoverRegions.value, max: 19);
   }
   if (networkId is SdkPresent<String>) {
@@ -1525,12 +1391,9 @@ Future<CreateSandboxesByNameForkV2Response> createSandboxesByNameForkV2(
           'POST', '/v2/sandboxes/${Uri.encodeComponent(name.toString())}/fork',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'networkPolicy': SdkUtils.unwrapOptional(networkPolicy),
@@ -1551,11 +1414,11 @@ Future<CreateSandboxesByNameForkV2Response> createSandboxesByNameForkV2(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createSandboxesByNameForkV2',
-          fromJsonRaw: (value) => CreateSandboxesByNameForkV2Response.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSandboxesByNameForkV2Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a named sandbox environment with automatic snapshotting on shutdown. Configure its resources, source, networking, and other settings in the request body; when `image` and a snapshot source are both absent, the sandbox uses the default universal image. This API version does not accept a `runtime` parameter.
 ///
@@ -1600,29 +1463,23 @@ Future<CreateSandboxesByNameForkV2Response> createSandboxesByNameForkV2(
 Future<CreateSandboxesV3Response> createSandboxesV3(ClientConfig config,
     {SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<CreateSandboxesV3RequestNetworkPolicy> networkPolicy =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesV3RequestBodyArchitecture> architecture =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesV3RequestBodyResources> resources =
-        const SdkOmitted(),
+    SdkOptional<CreateSandboxesV3RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV3RequestBodyArchitecture> architecture = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV3RequestBodyResources> resources = const SdkOmitted(),
     SdkOptional<CreateSandboxesV3RequestSource> source = const SdkOmitted(),
     SdkOptional<String> projectId = const SdkOmitted(),
     SdkOptional<List<int>> ports = const SdkOmitted(),
     SdkOptional<String> image = const SdkOmitted(),
     SdkOptional<int> timeout = const SdkOmitted(),
     SdkOptional<Map<String, String>> env = const SdkOmitted(),
-    SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>> mounts =
-        const SdkOmitted(),
+    SdkOptional<Map<String, CreateSandboxesV3RequestBodyMountsValue>> mounts = const SdkOmitted(),
     SdkOptional<CreateSandboxesV3RequestBodyRegion> region = const SdkOmitted(),
-    SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>
-        failoverRegions = const SdkOmitted(),
+    SdkOptional<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
     SdkOptional<String> networkId = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<bool> persistent = const SdkOmitted(),
     SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-    SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots>
-        keepLastSnapshots = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV3RequestBodyKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
     SdkOptional<Map<String, String>> tags = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (ports is SdkPresent<List<int>>) {
@@ -1634,8 +1491,7 @@ Future<CreateSandboxesV3Response> createSandboxesV3(ClientConfig config,
   if (timeout is SdkPresent<int>) {
     validateRange('timeout', timeout.value, min: 1000);
   }
-  if (failoverRegions
-      is SdkPresent<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>) {
+  if (failoverRegions is SdkPresent<List<CreateSandboxesV3RequestBodyFailoverRegionsItem>>) {
     validateItems('failoverRegions', failoverRegions.value, max: 19);
   }
   if (networkId is SdkPresent<String>) {
@@ -1649,10 +1505,8 @@ Future<CreateSandboxesV3Response> createSandboxesV3(ClientConfig config,
   return (await sdkRequest<CreateSandboxesV3Response>('POST', '/v3/sandboxes',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'networkPolicy': SdkUtils.unwrapOptional(networkPolicy),
@@ -1676,11 +1530,11 @@ Future<CreateSandboxesV3Response> createSandboxesV3(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createSandboxesV3',
-          fromJsonRaw: (value) =>
-              CreateSandboxesV3Response.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSandboxesV3Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a point-in-time snapshot of a running session's filesystem. Use a snapshot to restore the filesystem later or initialize another session with the same environment; the session must be running and able to accept commands. The source session is terminated after the snapshot is created, and snapshots default to a seven-day expiration when neither the request nor sandbox configuration sets one.
 ///
@@ -1699,25 +1553,21 @@ Future<CreateSandboxesSessionsBySessionIdSnapshotV3Response>
         SdkOptional<String> slug = const SdkOmitted(),
         SdkOptional<int?> expiration = const SdkOmitted(),
         RequestOptions? requestOptions}) async {
-  return (await sdkRequest<
-              CreateSandboxesSessionsBySessionIdSnapshotV3Response>('POST',
+  return (await sdkRequest<CreateSandboxesSessionsBySessionIdSnapshotV3Response>('POST',
           '/v3/sandboxes/sessions/${Uri.encodeComponent(sessionId.toString())}/snapshot',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {'expiration': SdkUtils.unwrapOptional(expiration)},
           decoder: SdkResponseDecoder.json,
           operationId: 'createSandboxesSessionsBySessionIdSnapshotV3',
-          fromJsonRaw: (value) =>
-              CreateSandboxesSessionsBySessionIdSnapshotV3Response.fromJson(
-                  value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSandboxesSessionsBySessionIdSnapshotV3Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Forks a named sandbox into a new named sandbox, copying its configuration and environment variables. Supply `name` to identify the source and `projectId` unless you authenticate with an OIDC token; request fields override values copied from the source. If the source has a snapshot, the fork starts from it; otherwise, it starts from the source runtime or image, with seven-day snapshot expiration and a one-snapshot retention limit by default.
 ///
@@ -1757,34 +1607,28 @@ Future<CreateSandboxesSessionsBySessionIdSnapshotV3Response>
 ///   the last snapshot (evicted snapshots are deleted). Set to null to disable
 ///   the limit.
 /// [tags] Key-value tags to associate with the sandbox. Maximum 5 tags.
-Future<CreateSandboxesByNameForkV3Response> createSandboxesByNameForkV3(
-    ClientConfig config,
-    {required String name,
-    SdkOptional<String> projectId = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicy> networkPolicy =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV3RequestBodyResources> resources =
-        const SdkOmitted(),
-    SdkOptional<List<int>> ports = const SdkOmitted(),
-    SdkOptional<String> image = const SdkOmitted(),
-    SdkOptional<int> timeout = const SdkOmitted(),
-    SdkOptional<Map<String, String>> env = const SdkOmitted(),
-    SdkOptional<Map<String, CreateSandboxesByNameForkV3RequestBodyMountsValue>>
-        mounts = const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV3RequestBodyRegion> region =
-        const SdkOmitted(),
-    SdkOptional<List<CreateSandboxesByNameForkV3RequestBodyFailoverRegionsItem>>
-        failoverRegions = const SdkOmitted(),
-    SdkOptional<String> networkId = const SdkOmitted(),
-    SdkOptional<String> name_2 = const SdkOmitted(),
-    SdkOptional<bool> persistent = const SdkOmitted(),
-    SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-    SdkOptional<CreateSandboxesByNameForkV3RequestKeepLastSnapshots>
-        keepLastSnapshots = const SdkOmitted(),
-    SdkOptional<Map<String, String>> tags = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<CreateSandboxesByNameForkV3Response>
+    createSandboxesByNameForkV3(ClientConfig config,
+        {required String name,
+        SdkOptional<String> projectId = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV3RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV3RequestBodyResources> resources = const SdkOmitted(),
+        SdkOptional<List<int>> ports = const SdkOmitted(),
+        SdkOptional<String> image = const SdkOmitted(),
+        SdkOptional<int> timeout = const SdkOmitted(),
+        SdkOptional<Map<String, String>> env = const SdkOmitted(),
+        SdkOptional<Map<String, CreateSandboxesByNameForkV3RequestBodyMountsValue>> mounts = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV3RequestBodyRegion> region = const SdkOmitted(),
+        SdkOptional<List<CreateSandboxesByNameForkV3RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
+        SdkOptional<String> networkId = const SdkOmitted(),
+        SdkOptional<String> name_2 = const SdkOmitted(),
+        SdkOptional<bool> persistent = const SdkOmitted(),
+        SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
+        SdkOptional<CreateSandboxesByNameForkV3RequestKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
+        SdkOptional<Map<String, String>> tags = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 128);
   sdkValidatePattern('name', name, '^[a-zA-Z0-9_-]+\$');
   if (projectId is SdkPresent<String>) {
@@ -1799,8 +1643,7 @@ Future<CreateSandboxesByNameForkV3Response> createSandboxesByNameForkV3(
   if (timeout is SdkPresent<int>) {
     validateRange('timeout', timeout.value, min: 1000);
   }
-  if (failoverRegions is SdkPresent<
-      List<CreateSandboxesByNameForkV3RequestBodyFailoverRegionsItem>>) {
+  if (failoverRegions is SdkPresent<List<CreateSandboxesByNameForkV3RequestBodyFailoverRegionsItem>>) {
     validateItems('failoverRegions', failoverRegions.value, max: 19);
   }
   if (networkId is SdkPresent<String>) {
@@ -1815,12 +1658,9 @@ Future<CreateSandboxesByNameForkV3Response> createSandboxesByNameForkV3(
           'POST', '/v3/sandboxes/${Uri.encodeComponent(name.toString())}/fork',
           config: config,
           query: {
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'networkPolicy': SdkUtils.unwrapOptional(networkPolicy),
@@ -1841,11 +1681,11 @@ Future<CreateSandboxesByNameForkV3Response> createSandboxesByNameForkV3(
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createSandboxesByNameForkV3',
-          fromJsonRaw: (value) => CreateSandboxesByNameForkV3Response.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSandboxesByNameForkV3Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a named sandbox environment with automatic snapshotting on shutdown. Configure its resources, source, networking, and other settings in the request body; when `image` and a snapshot source are both absent, the sandbox uses the default universal image. Persistent sandboxes keep only their most recent snapshot by default, and snapshots expire after seven days unless configured otherwise.
 ///
@@ -1892,29 +1732,23 @@ Future<CreateSandboxesByNameForkV3Response> createSandboxesByNameForkV3(
 Future<CreateSandboxesV4Response> createSandboxesV4(ClientConfig config,
     {SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<CreateSandboxesV4RequestNetworkPolicy> networkPolicy =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesV4RequestBodyArchitecture> architecture =
-        const SdkOmitted(),
-    SdkOptional<CreateSandboxesV4RequestBodyResources> resources =
-        const SdkOmitted(),
+    SdkOptional<CreateSandboxesV4RequestNetworkPolicy> networkPolicy = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV4RequestBodyArchitecture> architecture = const SdkOmitted(),
+    SdkOptional<CreateSandboxesV4RequestBodyResources> resources = const SdkOmitted(),
     SdkOptional<CreateSandboxesV4RequestSource> source = const SdkOmitted(),
     SdkOptional<String> projectId = const SdkOmitted(),
     SdkOptional<List<int>> ports = const SdkOmitted(),
     SdkOptional<String> image = const SdkOmitted(),
     SdkOptional<int> timeout = const SdkOmitted(),
     SdkOptional<Map<String, String>> env = const SdkOmitted(),
-    SdkOptional<Map<String, CreateSandboxesV4RequestBodyMountsValue>> mounts =
-        const SdkOmitted(),
+    SdkOptional<Map<String, CreateSandboxesV4RequestBodyMountsValue>> mounts = const SdkOmitted(),
     SdkOptional<CreateSandboxesV4RequestBodyRegion> region = const SdkOmitted(),
-    SdkOptional<List<CreateSandboxesV4RequestBodyFailoverRegionsItem>>
-        failoverRegions = const SdkOmitted(),
+    SdkOptional<List<CreateSandboxesV4RequestBodyFailoverRegionsItem>> failoverRegions = const SdkOmitted(),
     SdkOptional<String> networkId = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<bool> persistent = const SdkOmitted(),
     SdkOptional<int?> snapshotExpiration = const SdkOmitted(),
-    SdkOptional<CreateSandboxesV4RequestKeepLastSnapshots> keepLastSnapshots =
-        const SdkOmitted(),
+    SdkOptional<CreateSandboxesV4RequestKeepLastSnapshots> keepLastSnapshots = const SdkOmitted(),
     SdkOptional<Map<String, String>> tags = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (ports is SdkPresent<List<int>>) {
@@ -1926,8 +1760,7 @@ Future<CreateSandboxesV4Response> createSandboxesV4(ClientConfig config,
   if (timeout is SdkPresent<int>) {
     validateRange('timeout', timeout.value, min: 1000);
   }
-  if (failoverRegions
-      is SdkPresent<List<CreateSandboxesV4RequestBodyFailoverRegionsItem>>) {
+  if (failoverRegions is SdkPresent<List<CreateSandboxesV4RequestBodyFailoverRegionsItem>>) {
     validateItems('failoverRegions', failoverRegions.value, max: 19);
   }
   if (networkId is SdkPresent<String>) {
@@ -1941,10 +1774,8 @@ Future<CreateSandboxesV4Response> createSandboxesV4(ClientConfig config,
   return (await sdkRequest<CreateSandboxesV4Response>('POST', '/v4/sandboxes',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'networkPolicy': SdkUtils.unwrapOptional(networkPolicy),
@@ -1968,8 +1799,7 @@ Future<CreateSandboxesV4Response> createSandboxesV4(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createSandboxesV4',
-          fromJsonRaw: (value) =>
-              CreateSandboxesV4Response.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateSandboxesV4Response.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

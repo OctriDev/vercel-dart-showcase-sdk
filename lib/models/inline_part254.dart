@@ -6,12 +6,12 @@ part of 'inline.dart';
 // Inline operation models (part 254)
 /// Docker/OCI build instruction associated with an image layer.
 final class VcrImageLayerVariant0Operation {
+
   final String value;
 
   const VcrImageLayerVariant0Operation._(this.value);
 
-  factory VcrImageLayerVariant0Operation.fromJson(String value) =>
-      VcrImageLayerVariant0Operation._(value);
+  factory VcrImageLayerVariant0Operation.fromJson(String value) => VcrImageLayerVariant0Operation._(value);
 
   static const add = VcrImageLayerVariant0Operation._('ADD');
   static const arg = VcrImageLayerVariant0Operation._('ARG');
@@ -34,49 +34,43 @@ final class VcrImageLayerVariant0Operation {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant0Operation && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant0Operation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class VcrImageLayerVariant0Type {
+
   final String value;
 
   const VcrImageLayerVariant0Type._(this.value);
 
-  factory VcrImageLayerVariant0Type.fromJson(String value) =>
-      VcrImageLayerVariant0Type._(value);
+  factory VcrImageLayerVariant0Type.fromJson(String value) => VcrImageLayerVariant0Type._(value);
 
   static const from = VcrImageLayerVariant0Type._('FROM');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant0Type && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Docker/OCI build instruction associated with an image layer.
 final class VcrImageLayerVariant1Operation {
+
   final String value;
 
   const VcrImageLayerVariant1Operation._(this.value);
 
-  factory VcrImageLayerVariant1Operation.fromJson(String value) =>
-      VcrImageLayerVariant1Operation._(value);
+  factory VcrImageLayerVariant1Operation.fromJson(String value) => VcrImageLayerVariant1Operation._(value);
 
   static const add = VcrImageLayerVariant1Operation._('ADD');
   static const arg = VcrImageLayerVariant1Operation._('ARG');
@@ -99,49 +93,43 @@ final class VcrImageLayerVariant1Operation {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant1Operation && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant1Operation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class VcrImageLayerVariant1Type {
+
   final String value;
 
   const VcrImageLayerVariant1Type._(this.value);
 
-  factory VcrImageLayerVariant1Type.fromJson(String value) =>
-      VcrImageLayerVariant1Type._(value);
+  factory VcrImageLayerVariant1Type.fromJson(String value) => VcrImageLayerVariant1Type._(value);
 
   static const run = VcrImageLayerVariant1Type._('RUN');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant1Type && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant1Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Docker/OCI build instruction associated with an image layer.
 final class VcrImageLayerVariant2Operation {
+
   final String value;
 
   const VcrImageLayerVariant2Operation._(this.value);
 
-  factory VcrImageLayerVariant2Operation.fromJson(String value) =>
-      VcrImageLayerVariant2Operation._(value);
+  factory VcrImageLayerVariant2Operation.fromJson(String value) => VcrImageLayerVariant2Operation._(value);
 
   static const add = VcrImageLayerVariant2Operation._('ADD');
   static const arg = VcrImageLayerVariant2Operation._('ARG');
@@ -164,49 +152,43 @@ final class VcrImageLayerVariant2Operation {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant2Operation && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant2Operation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class VcrImageLayerVariant2Type {
+
   final String value;
 
   const VcrImageLayerVariant2Type._(this.value);
 
-  factory VcrImageLayerVariant2Type.fromJson(String value) =>
-      VcrImageLayerVariant2Type._(value);
+  factory VcrImageLayerVariant2Type.fromJson(String value) => VcrImageLayerVariant2Type._(value);
 
   static const env = VcrImageLayerVariant2Type._('ENV');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant2Type && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant2Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Docker/OCI build instruction associated with an image layer.
 final class VcrImageLayerVariant3Operation {
+
   final String value;
 
   const VcrImageLayerVariant3Operation._(this.value);
 
-  factory VcrImageLayerVariant3Operation.fromJson(String value) =>
-      VcrImageLayerVariant3Operation._(value);
+  factory VcrImageLayerVariant3Operation.fromJson(String value) => VcrImageLayerVariant3Operation._(value);
 
   static const add = VcrImageLayerVariant3Operation._('ADD');
   static const arg = VcrImageLayerVariant3Operation._('ARG');
@@ -229,25 +211,22 @@ final class VcrImageLayerVariant3Operation {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant3Operation && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant3Operation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 final class VcrImageLayerVariant3Type {
+
   final String value;
 
   const VcrImageLayerVariant3Type._(this.value);
 
-  factory VcrImageLayerVariant3Type.fromJson(String value) =>
-      VcrImageLayerVariant3Type._(value);
+  factory VcrImageLayerVariant3Type.fromJson(String value) => VcrImageLayerVariant3Type._(value);
 
   static const add = VcrImageLayerVariant3Type._('ADD');
   static const arg = VcrImageLayerVariant3Type._('ARG');
@@ -267,25 +246,22 @@ final class VcrImageLayerVariant3Type {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageLayerVariant3Type && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageLayerVariant3Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
 final class VcrImageListItemKind {
+
   final String value;
 
   const VcrImageListItemKind._(this.value);
 
-  factory VcrImageListItemKind.fromJson(String value) =>
-      VcrImageListItemKind._(value);
+  factory VcrImageListItemKind.fromJson(String value) => VcrImageListItemKind._(value);
 
   static const attestation = VcrImageListItemKind._('attestation');
   static const index2 = VcrImageListItemKind._('index');
@@ -293,13 +269,10 @@ final class VcrImageListItemKind {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is VcrImageListItemKind && other.value == value;
+  @override bool operator ==(Object other) => other is VcrImageListItemKind && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

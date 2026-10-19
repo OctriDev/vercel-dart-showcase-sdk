@@ -11,41 +11,25 @@ class AggregatePageviewsResponse {
   final AggregatePageviewsResponseQuery query;
   final double version;
 
-  const AggregatePageviewsResponse(
-      {required this.data, required this.query, required this.version});
+  const AggregatePageviewsResponse({required this.data, required this.query, required this.version});
 
-  AggregatePageviewsResponse Function(
-      {dynamic data,
-      AggregatePageviewsResponseQuery query,
-      double version}) get copyWith => _copyWith;
+  AggregatePageviewsResponse Function({dynamic data, AggregatePageviewsResponseQuery query, double version}) get copyWith => _copyWith;
 
-  AggregatePageviewsResponse _copyWith(
-          {Object? data = sdkOmittedValue,
-          Object? query = sdkOmittedValue,
-          Object? version = sdkOmittedValue}) =>
-      AggregatePageviewsResponse(
-        data: identical(data, sdkOmittedValue) ? this.data : data as dynamic,
-        query: identical(query, sdkOmittedValue)
-            ? this.query
-            : query as AggregatePageviewsResponseQuery,
-        version: identical(version, sdkOmittedValue)
-            ? this.version
-            : version as double,
-      );
+  AggregatePageviewsResponse _copyWith({Object? data = sdkOmittedValue, Object? query = sdkOmittedValue, Object? version = sdkOmittedValue}) => AggregatePageviewsResponse(
+    data: identical(data, sdkOmittedValue) ? this.data : data as dynamic,
+    query: identical(query, sdkOmittedValue) ? this.query : query as AggregatePageviewsResponseQuery,
+    version: identical(version, sdkOmittedValue) ? this.version : version as double,
+  );
 
-  factory AggregatePageviewsResponse.fromJson(Map<String, dynamic> json) =>
-      AggregatePageviewsResponse(
-        data: (json['data'])!,
-        query: (json['query'] != null
-            ? AggregatePageviewsResponseQuery.fromJson(
-                json['query'] as Map<String, dynamic>)
-            : null)!,
-        version: ((json['version'] as num?)?.toDouble())!,
-      );
+  factory AggregatePageviewsResponse.fromJson(Map<String, dynamic> json) => AggregatePageviewsResponse(
+    data: (json['data'])!,
+    query: (json['query'] != null ? AggregatePageviewsResponseQuery.fromJson(json['query'] as Map<String, dynamic>) : null)!,
+    version: ((json['version'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'data': data,
-        'query': query.toJson(),
-        'version': version,
-      };
+    'data': data,
+    'query': query.toJson(),
+    'version': version,
+  };
 }

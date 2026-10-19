@@ -6,91 +6,63 @@ part of 'inline.dart';
 // Inline operation models (part 7)
 /// Required enumerated value serialized in the `status` wire field.
 final class BoughtTooRecentlyStatus {
+
   final int value;
 
   const BoughtTooRecentlyStatus._(this.value);
 
-  factory BoughtTooRecentlyStatus.fromJson(int value) =>
-      BoughtTooRecentlyStatus._(value);
+  factory BoughtTooRecentlyStatus.fromJson(int value) => BoughtTooRecentlyStatus._(value);
 
   static const v400 = BoughtTooRecentlyStatus._(400);
 
   int toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is BoughtTooRecentlyStatus && other.value == value;
+  @override bool operator ==(Object other) => other is BoughtTooRecentlyStatus && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The currency being purchased
 final class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency {
+
   final String value;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._(
-      this.value);
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._(this.value);
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency.fromJson(
-          String value) =>
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency
-          ._(value);
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency.fromJson(String value) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._(value);
 
-  static const aiCredits =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency
-          ._('ai_credits');
-  static const aiGatewayCredits =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency
-          ._('ai_gateway_credits');
-  static const copperTestUnits =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency
-          ._('copper_test_units');
-  static const v0UserCredits =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency
-          ._('v0_user_credits');
-  static const vercelAgentCredits =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency
-          ._('vercel_agent_credits');
+  static const aiCredits = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._('ai_credits');
+  static const aiGatewayCredits = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._('ai_gateway_credits');
+  static const copperTestUnits = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._('copper_test_units');
+  static const v0UserCredits = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._('v0_user_credits');
+  static const vercelAgentCredits = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency._('vercel_agent_credits');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0OptionsCurrency && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type {
   creditTopup;
 
-  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type
-      fromJson(String value) {
+  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type fromJson(String value) {
     switch (value) {
-      case 'credit_topup':
-        return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type
-            .creditTopup;
-      default:
-        throw ArgumentError(
-            'Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type: $value');
+      case 'credit_topup': return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type.creditTopup;
+      default: throw ArgumentError('Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type
-            .creditTopup:
-        return 'credit_topup';
+      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type.creditTopup: return 'credit_topup';
     }
   }
 
@@ -99,61 +71,40 @@ enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant0Type {
 }
 
 final class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType {
+
   final String value;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType._(
-      this.value);
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType._(this.value);
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType.fromJson(
-          String value) =>
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType
-          ._(value);
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType.fromJson(String value) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType._(value);
 
-  static const purchase =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType
-          ._('purchase');
-  static const renewal =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType
-          ._('renewal');
-  static const transfer =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType
-          ._('transfer');
+  static const purchase = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType._('purchase');
+  static const renewal = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType._('renewal');
+  static const transfer = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType._('transfer');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1OptionsItemsItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type {
   domainName;
 
-  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type
-      fromJson(String value) {
+  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type fromJson(String value) {
     switch (value) {
-      case 'domain_name':
-        return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type
-            .domainName;
-      default:
-        throw ArgumentError(
-            'Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type: $value');
+      case 'domain_name': return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type.domainName;
+      default: throw ArgumentError('Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type
-            .domainName:
-        return 'domain_name';
+      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type.domainName: return 'domain_name';
     }
   }
 
@@ -163,91 +114,60 @@ enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant1Type {
 
 /// Whether or not to reset the billing cycle
 final class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate {
+
   final bool value;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate._(
-      this.value);
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate._(this.value);
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate.fromJson(
-          bool value) =>
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate
-          ._(value);
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate.fromJson(bool value) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate._(value);
 
-  static const false_ =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate
-          ._(false);
-  static const true_ =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate
-          ._(true);
+  static const false_ = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate._(false);
+  static const true_ = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsAlignBillingWithPlanChangeDate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1 {
+
   final String value;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1._(
-      this.value);
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1._(this.value);
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1.fromJson(
-          String value) =>
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1
-          ._(value);
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1.fromJson(String value) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1._(value);
 
-  static const endOfSubscriptionTerm =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1
-          ._('end_of_subscription_term');
-  static const immediate =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1
-          ._('immediate');
+  static const endOfSubscriptionTerm = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1._('end_of_subscription_term');
+  static const immediate = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1._('immediate');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2OptionsEffectiveDateVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type {
   orbPlanChange;
 
-  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type
-      fromJson(String value) {
+  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type fromJson(String value) {
     switch (value) {
-      case 'orb_plan_change':
-        return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type
-            .orbPlanChange;
-      default:
-        throw ArgumentError(
-            'Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type: $value');
+      case 'orb_plan_change': return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type.orbPlanChange;
+      default: throw ArgumentError('Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type
-            .orbPlanChange:
-        return 'orb_plan_change';
+      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type.orbPlanChange: return 'orb_plan_change';
     }
   }
 
@@ -257,58 +177,39 @@ enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant2Type {
 
 /// Whether to allow invoice credit or void
 final class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid {
+
   final bool value;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid._(
-      this.value);
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid._(this.value);
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid.fromJson(
-          bool value) =>
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid
-          ._(value);
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid.fromJson(bool value) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid._(value);
 
-  static const false_ =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid
-          ._(false);
-  static const true_ =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid
-          ._(true);
+  static const false_ = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid._(false);
+  static const true_ = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3OptionsAllowInvoiceCreditOrVoid && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type {
   orbPriceInterval;
 
-  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type
-      fromJson(String value) {
+  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type fromJson(String value) {
     switch (value) {
-      case 'orb_price_interval':
-        return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type
-            .orbPriceInterval;
-      default:
-        throw ArgumentError(
-            'Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type: $value');
+      case 'orb_price_interval': return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type.orbPriceInterval;
+      default: throw ArgumentError('Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type
-            .orbPriceInterval:
-        return 'orb_price_interval';
+      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type.orbPriceInterval: return 'orb_price_interval';
     }
   }
 
@@ -318,58 +219,39 @@ enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant3Type {
 
 /// Whether to align the subscription start date with the billing subscription start date
 final class BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate {
+
   final bool value;
 
-  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate._(
-      this.value);
+  const BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate._(this.value);
 
-  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate.fromJson(
-          bool value) =>
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate
-          ._(value);
+  factory BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate.fromJson(bool value) => BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate._(value);
 
-  static const false_ =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate
-          ._(false);
-  static const true_ =
-      BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate
-          ._(true);
+  static const false_ = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate._(false);
+  static const true_ = BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4OptionsAlignBillingWithSubscriptionStartDate && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type {
   orbSubscription;
 
-  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type
-      fromJson(String value) {
+  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type fromJson(String value) {
     switch (value) {
-      case 'orb_subscription':
-        return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type
-            .orbSubscription;
-      default:
-        throw ArgumentError(
-            'Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type: $value');
+      case 'orb_subscription': return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type.orbSubscription;
+      default: throw ArgumentError('Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type
-            .orbSubscription:
-        return 'orb_subscription';
+      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type.orbSubscription: return 'orb_subscription';
     }
   }
 
@@ -380,23 +262,16 @@ enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant4Type {
 enum BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type {
   orbSubscriptionIntent;
 
-  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type
-      fromJson(String value) {
+  static BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type fromJson(String value) {
     switch (value) {
-      case 'orb_subscription_intent':
-        return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type
-            .orbSubscriptionIntent;
-      default:
-        throw ArgumentError(
-            'Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type: $value');
+      case 'orb_subscription_intent': return BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type.orbSubscriptionIntent;
+      default: throw ArgumentError('Unknown BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type
-            .orbSubscriptionIntent:
-        return 'orb_subscription_intent';
+      case BuyCreditsResponseVariant1PurchaseIntentConfigurationVariant5Type.orbSubscriptionIntent: return 'orb_subscription_intent';
     }
   }
 

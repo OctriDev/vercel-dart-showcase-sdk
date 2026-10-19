@@ -10,43 +10,24 @@ class GetSecurityFirewallConfigResponseActiveCrsLfi {
   final GetSecurityFirewallConfigResponseActiveCrsLfiAction action;
   final GetSecurityFirewallConfigResponseActiveCrsLfiActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsLfi(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsLfi({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsLfi Function(
-          {GetSecurityFirewallConfigResponseActiveCrsLfiAction action,
-          GetSecurityFirewallConfigResponseActiveCrsLfiActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsLfi Function({GetSecurityFirewallConfigResponseActiveCrsLfiAction action, GetSecurityFirewallConfigResponseActiveCrsLfiActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsLfi _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsLfi(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsLfiAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsLfiActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsLfi _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsLfi(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsLfiAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsLfiActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsLfi.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsLfi(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsLfiAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsLfiActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsLfi.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsLfi(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsLfiAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsLfiActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsMa {
@@ -55,43 +36,24 @@ class GetSecurityFirewallConfigResponseActiveCrsMa {
   final GetSecurityFirewallConfigResponseActiveCrsMaAction action;
   final GetSecurityFirewallConfigResponseActiveCrsMaActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsMa(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsMa({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsMa Function(
-          {GetSecurityFirewallConfigResponseActiveCrsMaAction action,
-          GetSecurityFirewallConfigResponseActiveCrsMaActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsMa Function({GetSecurityFirewallConfigResponseActiveCrsMaAction action, GetSecurityFirewallConfigResponseActiveCrsMaActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsMa _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsMa(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsMaAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsMaActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsMa _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsMa(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsMaAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsMaActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsMa.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsMa(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsMaAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsMaActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsMa.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsMa(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsMaAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsMaActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsPhp {
@@ -100,43 +62,24 @@ class GetSecurityFirewallConfigResponseActiveCrsPhp {
   final GetSecurityFirewallConfigResponseActiveCrsPhpAction action;
   final GetSecurityFirewallConfigResponseActiveCrsPhpActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsPhp(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsPhp({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsPhp Function(
-          {GetSecurityFirewallConfigResponseActiveCrsPhpAction action,
-          GetSecurityFirewallConfigResponseActiveCrsPhpActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsPhp Function({GetSecurityFirewallConfigResponseActiveCrsPhpAction action, GetSecurityFirewallConfigResponseActiveCrsPhpActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsPhp _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsPhp(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsPhpAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsPhpActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsPhp _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsPhp(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsPhpAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsPhpActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsPhp.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsPhp(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsPhpAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsPhpActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsPhp.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsPhp(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsPhpAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsPhpActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsRce {
@@ -145,43 +88,24 @@ class GetSecurityFirewallConfigResponseActiveCrsRce {
   final GetSecurityFirewallConfigResponseActiveCrsRceAction action;
   final GetSecurityFirewallConfigResponseActiveCrsRceActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsRce(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsRce({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsRce Function(
-          {GetSecurityFirewallConfigResponseActiveCrsRceAction action,
-          GetSecurityFirewallConfigResponseActiveCrsRceActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsRce Function({GetSecurityFirewallConfigResponseActiveCrsRceAction action, GetSecurityFirewallConfigResponseActiveCrsRceActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsRce _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsRce(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsRceAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsRceActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsRce _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsRce(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsRceAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsRceActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsRce.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsRce(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsRceAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsRceActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsRce.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsRce(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsRceAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsRceActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsRfi {
@@ -190,43 +114,24 @@ class GetSecurityFirewallConfigResponseActiveCrsRfi {
   final GetSecurityFirewallConfigResponseActiveCrsRfiAction action;
   final GetSecurityFirewallConfigResponseActiveCrsRfiActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsRfi(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsRfi({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsRfi Function(
-          {GetSecurityFirewallConfigResponseActiveCrsRfiAction action,
-          GetSecurityFirewallConfigResponseActiveCrsRfiActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsRfi Function({GetSecurityFirewallConfigResponseActiveCrsRfiAction action, GetSecurityFirewallConfigResponseActiveCrsRfiActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsRfi _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsRfi(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsRfiAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsRfiActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsRfi _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsRfi(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsRfiAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsRfiActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsRfi.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsRfi(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsRfiAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsRfiActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsRfi.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsRfi(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsRfiAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsRfiActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsSd {
@@ -235,43 +140,24 @@ class GetSecurityFirewallConfigResponseActiveCrsSd {
   final GetSecurityFirewallConfigResponseActiveCrsSdAction action;
   final GetSecurityFirewallConfigResponseActiveCrsSdActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsSd(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsSd({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsSd Function(
-          {GetSecurityFirewallConfigResponseActiveCrsSdAction action,
-          GetSecurityFirewallConfigResponseActiveCrsSdActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsSd Function({GetSecurityFirewallConfigResponseActiveCrsSdAction action, GetSecurityFirewallConfigResponseActiveCrsSdActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsSd _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsSd(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsSdAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsSdActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsSd _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsSd(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsSdAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsSdActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsSd.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsSd(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsSdAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsSdActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsSd.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsSd(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsSdAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsSdActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsSf {
@@ -280,43 +166,24 @@ class GetSecurityFirewallConfigResponseActiveCrsSf {
   final GetSecurityFirewallConfigResponseActiveCrsSfAction action;
   final GetSecurityFirewallConfigResponseActiveCrsSfActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsSf(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsSf({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsSf Function(
-          {GetSecurityFirewallConfigResponseActiveCrsSfAction action,
-          GetSecurityFirewallConfigResponseActiveCrsSfActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsSf Function({GetSecurityFirewallConfigResponseActiveCrsSfAction action, GetSecurityFirewallConfigResponseActiveCrsSfActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsSf _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsSf(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsSfAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsSfActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsSf _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsSf(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsSfAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsSfActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsSf.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsSf(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsSfAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsSfActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsSf.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsSf(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsSfAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsSfActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsSqli {
@@ -325,43 +192,24 @@ class GetSecurityFirewallConfigResponseActiveCrsSqli {
   final GetSecurityFirewallConfigResponseActiveCrsSqliAction action;
   final GetSecurityFirewallConfigResponseActiveCrsSqliActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsSqli(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsSqli({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsSqli Function(
-          {GetSecurityFirewallConfigResponseActiveCrsSqliAction action,
-          GetSecurityFirewallConfigResponseActiveCrsSqliActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsSqli Function({GetSecurityFirewallConfigResponseActiveCrsSqliAction action, GetSecurityFirewallConfigResponseActiveCrsSqliActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsSqli _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsSqli(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsSqliAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsSqliActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsSqli _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsSqli(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsSqliAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsSqliActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsSqli.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsSqli(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsSqliAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsSqliActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsSqli.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsSqli(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsSqliAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsSqliActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class GetSecurityFirewallConfigResponseActiveCrsXss {
@@ -370,41 +218,22 @@ class GetSecurityFirewallConfigResponseActiveCrsXss {
   final GetSecurityFirewallConfigResponseActiveCrsXssAction action;
   final GetSecurityFirewallConfigResponseActiveCrsXssActive active;
 
-  const GetSecurityFirewallConfigResponseActiveCrsXss(
-      {required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseActiveCrsXss({required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseActiveCrsXss Function(
-          {GetSecurityFirewallConfigResponseActiveCrsXssAction action,
-          GetSecurityFirewallConfigResponseActiveCrsXssActive active})
-      get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseActiveCrsXss Function({GetSecurityFirewallConfigResponseActiveCrsXssAction action, GetSecurityFirewallConfigResponseActiveCrsXssActive active}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseActiveCrsXss _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      GetSecurityFirewallConfigResponseActiveCrsXss(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as GetSecurityFirewallConfigResponseActiveCrsXssAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active as GetSecurityFirewallConfigResponseActiveCrsXssActive,
-      );
+  GetSecurityFirewallConfigResponseActiveCrsXss _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseActiveCrsXss(
+    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseActiveCrsXssAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseActiveCrsXssActive,
+  );
 
-  factory GetSecurityFirewallConfigResponseActiveCrsXss.fromJson(
-          Map<String, dynamic> json) =>
-      GetSecurityFirewallConfigResponseActiveCrsXss(
-        action: (json['action'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsXssAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? GetSecurityFirewallConfigResponseActiveCrsXssActive.fromJson(
-                json['active'] as bool)
-            : null)!,
-      );
+  factory GetSecurityFirewallConfigResponseActiveCrsXss.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseActiveCrsXss(
+    action: (json['action'] != null ? GetSecurityFirewallConfigResponseActiveCrsXssAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? GetSecurityFirewallConfigResponseActiveCrsXssActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }

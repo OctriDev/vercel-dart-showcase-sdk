@@ -22,6 +22,7 @@ Future<ExchangeSsoTokenResponse> exchangeSsoToken(ClientConfig config,
       .data;
 }
 
+
 /// Lists authentication tokens for the authenticated user. The response includes token records and pagination metadata for reviewing the user's tokens.
 ///
 /// Retrieve a list of the current User's authentication tokens.
@@ -35,6 +36,7 @@ Future<ListAuthTokensResponse> listAuthTokens(ClientConfig config,
           options: requestOptions))
       .data;
 }
+
 
 /// Creates an authentication token for the authenticated user, optionally scoped to a team or project and with an optional expiration time. Supply `name` to identify the token. Save the returned `bearerToken` when you create it, because the API provides its value only in this response.
 ///
@@ -53,10 +55,8 @@ Future<CreateAuthTokenResponse> createAuthToken(ClientConfig config,
   return (await sdkRequest<CreateAuthTokenResponse>('POST', '/v3/user/tokens',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'name': name,
@@ -65,11 +65,11 @@ Future<CreateAuthTokenResponse> createAuthToken(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createAuthToken',
-          fromJsonRaw: (value) =>
-              CreateAuthTokenResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateAuthTokenResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves metadata for an authentication token belonging to the authenticated user. Use `tokenId` to identify the token, or pass `current` to retrieve metadata for the token used to authenticate the request.
 ///
@@ -85,11 +85,11 @@ Future<GetAuthTokenResponse> getAuthToken(ClientConfig config,
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getAuthToken',
-          fromJsonRaw: (value) =>
-              GetAuthTokenResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetAuthTokenResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an authentication token, invalidating it for future HTTP requests. Pass `current` as `tokenId` to invalidate the token used to authenticate the request; the logout parameters apply only when deleting that token.
 ///
@@ -111,15 +111,12 @@ Future<DeleteAuthTokenResponse> deleteAuthToken(ClientConfig config,
           '/v3/user/tokens/${Uri.encodeComponent(tokenId.toString())}',
           config: config,
           query: {
-            'reason': SdkQueryValue(SdkUtils.unwrapOptional(reason),
-                style: 'form', explode: true),
-            'logoutSource': SdkQueryValue(SdkUtils.unwrapOptional(logoutSource),
-                style: 'form', explode: true)
+            'reason': SdkQueryValue(SdkUtils.unwrapOptional(reason), style: 'form', explode: true),
+            'logoutSource': SdkQueryValue(SdkUtils.unwrapOptional(logoutSource), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteAuthToken',
-          fromJsonRaw: (value) =>
-              DeleteAuthTokenResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteAuthTokenResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 132)
 final class GetProjectEnvResponseVariant2Type {
+
   final String value;
 
   const GetProjectEnvResponseVariant2Type._(this.value);
 
-  factory GetProjectEnvResponseVariant2Type.fromJson(String value) =>
-      GetProjectEnvResponseVariant2Type._(value);
+  factory GetProjectEnvResponseVariant2Type.fromJson(String value) => GetProjectEnvResponseVariant2Type._(value);
 
   static const encrypted = GetProjectEnvResponseVariant2Type._('encrypted');
   static const plain = GetProjectEnvResponseVariant2Type._('plain');
@@ -20,40 +20,34 @@ final class GetProjectEnvResponseVariant2Type {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectEnvResponseVariant2Type && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectEnvResponseVariant2Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
 final class GetProjectEnvResponseVariant2Visibility {
+
   final String value;
 
   const GetProjectEnvResponseVariant2Visibility._(this.value);
 
-  factory GetProjectEnvResponseVariant2Visibility.fromJson(String value) =>
-      GetProjectEnvResponseVariant2Visibility._(value);
+  factory GetProjectEnvResponseVariant2Visibility.fromJson(String value) => GetProjectEnvResponseVariant2Visibility._(value);
 
   static const config = GetProjectEnvResponseVariant2Visibility._('config');
   static const secret = GetProjectEnvResponseVariant2Visibility._('secret');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectEnvResponseVariant2Visibility && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectEnvResponseVariant2Visibility && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetProjectsResponseCreatorVariant0Type {
@@ -61,18 +55,14 @@ enum GetProjectsResponseCreatorVariant0Type {
 
   static GetProjectsResponseCreatorVariant0Type fromJson(String value) {
     switch (value) {
-      case 'user':
-        return GetProjectsResponseCreatorVariant0Type.user;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseCreatorVariant0Type: $value');
+      case 'user': return GetProjectsResponseCreatorVariant0Type.user;
+      default: throw ArgumentError('Unknown GetProjectsResponseCreatorVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseCreatorVariant0Type.user:
-        return 'user';
+      case GetProjectsResponseCreatorVariant0Type.user: return 'user';
     }
   }
 
@@ -83,21 +73,16 @@ enum GetProjectsResponseCreatorVariant0Type {
 enum GetProjectsResponseCreatorVariant0ViaVariant0Type {
   app;
 
-  static GetProjectsResponseCreatorVariant0ViaVariant0Type fromJson(
-      String value) {
+  static GetProjectsResponseCreatorVariant0ViaVariant0Type fromJson(String value) {
     switch (value) {
-      case 'app':
-        return GetProjectsResponseCreatorVariant0ViaVariant0Type.app;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseCreatorVariant0ViaVariant0Type: $value');
+      case 'app': return GetProjectsResponseCreatorVariant0ViaVariant0Type.app;
+      default: throw ArgumentError('Unknown GetProjectsResponseCreatorVariant0ViaVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseCreatorVariant0ViaVariant0Type.app:
-        return 'app';
+      case GetProjectsResponseCreatorVariant0ViaVariant0Type.app: return 'app';
     }
   }
 
@@ -108,21 +93,16 @@ enum GetProjectsResponseCreatorVariant0ViaVariant0Type {
 enum GetProjectsResponseCreatorVariant0ViaVariant1Type {
   integration;
 
-  static GetProjectsResponseCreatorVariant0ViaVariant1Type fromJson(
-      String value) {
+  static GetProjectsResponseCreatorVariant0ViaVariant1Type fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return GetProjectsResponseCreatorVariant0ViaVariant1Type.integration;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseCreatorVariant0ViaVariant1Type: $value');
+      case 'integration': return GetProjectsResponseCreatorVariant0ViaVariant1Type.integration;
+      default: throw ArgumentError('Unknown GetProjectsResponseCreatorVariant0ViaVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseCreatorVariant0ViaVariant1Type.integration:
-        return 'integration';
+      case GetProjectsResponseCreatorVariant0ViaVariant1Type.integration: return 'integration';
     }
   }
 
@@ -135,18 +115,14 @@ enum GetProjectsResponseCreatorVariant1Type {
 
   static GetProjectsResponseCreatorVariant1Type fromJson(String value) {
     switch (value) {
-      case 'app':
-        return GetProjectsResponseCreatorVariant1Type.app;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseCreatorVariant1Type: $value');
+      case 'app': return GetProjectsResponseCreatorVariant1Type.app;
+      default: throw ArgumentError('Unknown GetProjectsResponseCreatorVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseCreatorVariant1Type.app:
-        return 'app';
+      case GetProjectsResponseCreatorVariant1Type.app: return 'app';
     }
   }
 
@@ -159,18 +135,14 @@ enum GetProjectsResponseCreatorVariant2Type {
 
   static GetProjectsResponseCreatorVariant2Type fromJson(String value) {
     switch (value) {
-      case 'integration':
-        return GetProjectsResponseCreatorVariant2Type.integration;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseCreatorVariant2Type: $value');
+      case 'integration': return GetProjectsResponseCreatorVariant2Type.integration;
+      default: throw ArgumentError('Unknown GetProjectsResponseCreatorVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseCreatorVariant2Type.integration:
-        return 'integration';
+      case GetProjectsResponseCreatorVariant2Type.integration: return 'integration';
     }
   }
 
@@ -183,18 +155,14 @@ enum GetProjectsResponseCreatorVariant3Type {
 
   static GetProjectsResponseCreatorVariant3Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return GetProjectsResponseCreatorVariant3Type.system;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseCreatorVariant3Type: $value');
+      case 'system': return GetProjectsResponseCreatorVariant3Type.system;
+      default: throw ArgumentError('Unknown GetProjectsResponseCreatorVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseCreatorVariant3Type.system:
-        return 'system';
+      case GetProjectsResponseCreatorVariant3Type.system: return 'system';
     }
   }
 
@@ -203,58 +171,39 @@ enum GetProjectsResponseCreatorVariant3Type {
 }
 
 final class GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._(value);
+  factory GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._('preview');
-  static const production =
-      GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target
-          ._('production');
+  static const preview = GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 
@@ -265,23 +214,16 @@ enum GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVar
 enum GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-      fromJson(String value) {
+  static GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'custom':
-        return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom': return GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom;
+      default: throw ArgumentError('Unknown GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom:
-        return 'custom';
+      case GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
     }
   }
 
@@ -290,58 +232,39 @@ enum GetProjectsResponseDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVar
 }
 
 final class GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._(value);
+  factory GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._('preview');
-  static const production =
-      GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target
-          ._('production');
+  static const preview = GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 
@@ -352,23 +275,16 @@ enum GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Ty
 enum GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-      fromJson(String value) {
+  static GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'custom':
-        return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-            .custom;
-      default:
-        throw ArgumentError(
-            'Unknown GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom': return GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom;
+      default: throw ArgumentError('Unknown GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-            .custom:
-        return 'custom';
+      case GetProjectsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
     }
   }
 

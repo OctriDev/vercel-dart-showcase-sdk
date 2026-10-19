@@ -13,27 +13,25 @@ import '../types.dart';
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<AiGatewayVirtualModelConfig> createAiGatewayVirtualModelConfig(
-    ClientConfig config,
-    {SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AiGatewayVirtualModelConfig>
+    createAiGatewayVirtualModelConfig(ClientConfig config,
+        {SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<AiGatewayVirtualModelConfig>(
           'POST', '/ai-gateway/virtual-model-configs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createAiGatewayVirtualModelConfig',
-          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Retrieves virtual model configuration data for the authenticated team, including active and archived configurations. Use `virtualModelSlug` to select a configuration or `limit` and `cursor` to request a page of results.
 ///
@@ -41,15 +39,15 @@ Future<AiGatewayVirtualModelConfig> createAiGatewayVirtualModelConfig(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetAiGatewayVirtualModelConfigResponse> getAiGatewayVirtualModelConfig(
-    ClientConfig config,
-    {SdkOptional<String> ownerId = const SdkOmitted(),
-    SdkOptional<String> virtualModelSlug = const SdkOmitted(),
-    SdkOptional<int> limit = const SdkOmitted(),
-    SdkOptional<String> cursor = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<GetAiGatewayVirtualModelConfigResponse>
+    getAiGatewayVirtualModelConfig(ClientConfig config,
+        {SdkOptional<String> ownerId = const SdkOmitted(),
+        SdkOptional<String> virtualModelSlug = const SdkOmitted(),
+        SdkOptional<int> limit = const SdkOmitted(),
+        SdkOptional<String> cursor = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (limit is SdkPresent<int>) {
     validateRange('limit', limit.value, min: 1);
   }
@@ -58,28 +56,20 @@ Future<GetAiGatewayVirtualModelConfigResponse> getAiGatewayVirtualModelConfig(
           'GET', '/ai-gateway/virtual-model-configs',
           config: config,
           query: {
-            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId),
-                style: 'form', explode: true),
-            'virtualModelSlug': SdkQueryValue(
-                SdkUtils.unwrapOptional(virtualModelSlug),
-                style: 'form',
-                explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId), style: 'form', explode: true),
+            'virtualModelSlug': SdkQueryValue(SdkUtils.unwrapOptional(virtualModelSlug), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getAiGatewayVirtualModelConfig',
-          fromJsonRaw: (value) =>
-              GetAiGatewayVirtualModelConfigResponse.fromJson(value),
+          fromJsonRaw: (value) => GetAiGatewayVirtualModelConfigResponse.fromJson(value),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a virtual model configuration for a team. Specify `teamId` or `slug` to perform the request in that team's context. A 200 response returns the updated configuration.
 ///
@@ -87,27 +77,25 @@ Future<GetAiGatewayVirtualModelConfigResponse> getAiGatewayVirtualModelConfig(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<AiGatewayVirtualModelConfig> updateAiGatewayVirtualModelConfig(
-    ClientConfig config,
-    {SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AiGatewayVirtualModelConfig>
+    updateAiGatewayVirtualModelConfig(ClientConfig config,
+        {SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<AiGatewayVirtualModelConfig>(
           'PATCH', '/ai-gateway/virtual-model-configs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateAiGatewayVirtualModelConfig',
-          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a virtual model configuration by its slug using a soft delete. Specify `virtualModelSlug` to identify the configuration and optionally use `ownerId`, `teamId`, or `slug` to select the owner context.
 ///
@@ -127,22 +115,13 @@ Future<void> deleteAiGatewayVirtualModelConfig(ClientConfig config,
   return (await sdkRequest<void>('DELETE', '/ai-gateway/virtual-model-configs',
           config: config,
           query: {
-            'virtualModelSlug':
-                SdkQueryValue(virtualModelSlug, style: 'form', explode: true),
-            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId),
-                style: 'form', explode: true),
-            'updatedBy': SdkQueryValue(SdkUtils.unwrapOptional(updatedBy),
-                style: 'form', explode: true),
-            'actingIp': SdkQueryValue(SdkUtils.unwrapOptional(actingIp),
-                style: 'form', explode: true),
-            'actingUserAgent': SdkQueryValue(
-                SdkUtils.unwrapOptional(actingUserAgent),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'virtualModelSlug': SdkQueryValue(virtualModelSlug, style: 'form', explode: true),
+            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId), style: 'form', explode: true),
+            'updatedBy': SdkQueryValue(SdkUtils.unwrapOptional(updatedBy), style: 'form', explode: true),
+            'actingIp': SdkQueryValue(SdkUtils.unwrapOptional(actingIp), style: 'form', explode: true),
+            'actingUserAgent': SdkQueryValue(SdkUtils.unwrapOptional(actingUserAgent), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteAiGatewayVirtualModelConfig',
@@ -150,22 +129,22 @@ Future<void> deleteAiGatewayVirtualModelConfig(ClientConfig config,
       .data;
 }
 
+
 /// Lists virtual model configurations for a team or across teams. Use `limit` and `cursor` to retrieve a page; team results are ordered by `virtualModelSlug`, while cross-team results are ordered newest first.
 ///
 /// List virtual model configs. For a team, returns all of its VMCs, or with `limit` or `cursor` one page ordered by `virtualModelSlug`. Across teams, pages newest-first. `includeArchived=false` omits archived VMCs.
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<AiGatewayVirtualModelConfigList> listAiGatewayVirtualModelConfigs(
-    ClientConfig config,
-    {SdkOptional<String> ownerId = const SdkOmitted(),
-    SdkOptional<int> limit = const SdkOmitted(),
-    SdkOptional<String> cursor = const SdkOmitted(),
-    SdkOptional<ListAiGatewayVirtualModelConfigsIncludeArchived>
-        includeArchived = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AiGatewayVirtualModelConfigList>
+    listAiGatewayVirtualModelConfigs(ClientConfig config,
+        {SdkOptional<String> ownerId = const SdkOmitted(),
+        SdkOptional<int> limit = const SdkOmitted(),
+        SdkOptional<String> cursor = const SdkOmitted(),
+        SdkOptional<ListAiGatewayVirtualModelConfigsIncludeArchived> includeArchived = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   if (limit is SdkPresent<int>) {
     validateRange('limit', limit.value, min: 1);
   }
@@ -174,28 +153,21 @@ Future<AiGatewayVirtualModelConfigList> listAiGatewayVirtualModelConfigs(
           'GET', '/ai-gateway/virtual-model-configs/list',
           config: config,
           query: {
-            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId),
-                style: 'form', explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'includeArchived': SdkQueryValue(
-                SdkUtils.unwrapOptional(includeArchived),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'includeArchived': SdkQueryValue(SdkUtils.unwrapOptional(includeArchived), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAiGatewayVirtualModelConfigs',
-          fromJsonRaw: (value) => AiGatewayVirtualModelConfigList.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayVirtualModelConfigList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
+
 
 /// Lists virtual model configurations for a team or across teams. Use `limit` and `cursor` to retrieve a page; team results are ordered by `virtualModelSlug`, while cross-team results are ordered newest first.
 ///
@@ -203,79 +175,23 @@ Future<AiGatewayVirtualModelConfigList> listAiGatewayVirtualModelConfigs(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<AiGatewayVirtualModelConfig> listAiGatewayVirtualModelConfigsPaginated(
-    ClientConfig config,
-    {String? ownerId,
-    int? limit,
-    String? cursor,
-    ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<AiGatewayVirtualModelConfig> listAiGatewayVirtualModelConfigsPaginated(ClientConfig config, {String? ownerId, int? limit, String? cursor, ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listAiGatewayVirtualModelConfigs(config,
-        ownerId: ownerId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(ownerId),
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        includeArchived: includeArchived == null
-            ? const SdkOmitted<
-                ListAiGatewayVirtualModelConfigsIncludeArchived>()
-            : SdkPresent<ListAiGatewayVirtualModelConfigsIncludeArchived>(
-                includeArchived),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listAiGatewayVirtualModelConfigs(config, ownerId: ownerId == null ? const SdkOmitted<String>() : SdkPresent<String>(ownerId), limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), includeArchived: includeArchived == null ? const SdkOmitted<ListAiGatewayVirtualModelConfigsIncludeArchived>() : SdkPresent<ListAiGatewayVirtualModelConfigsIncludeArchived>(includeArchived), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.virtualModelConfigs;
     if (sdkItems.isEmpty) return;
-    for (final sdkItem in sdkItems) {
-      yield sdkItem;
-    }
+    for (final sdkItem in sdkItems) { yield sdkItem; }
     final sdkNext = sdkPage.cursor;
     if (sdkNext == null) return;
     sdkCursor = sdkNext;
   }
 }
 
-Stream<SdkPage<AiGatewayVirtualModelConfigList, AiGatewayVirtualModelConfig>>
-    listAiGatewayVirtualModelConfigsPages(ClientConfig config,
-        {String? ownerId,
-        int? limit,
-        String? cursor,
-        ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived,
-        String? teamId,
-        String? slug,
-        RequestOptions? requestOptions}) async* {
+Stream<SdkPage<AiGatewayVirtualModelConfigList, AiGatewayVirtualModelConfig>> listAiGatewayVirtualModelConfigsPages(ClientConfig config, {String? ownerId, int? limit, String? cursor, ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listAiGatewayVirtualModelConfigs(config,
-        ownerId: ownerId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(ownerId),
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        includeArchived: includeArchived == null
-            ? const SdkOmitted<
-                ListAiGatewayVirtualModelConfigsIncludeArchived>()
-            : SdkPresent<ListAiGatewayVirtualModelConfigsIncludeArchived>(
-                includeArchived),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listAiGatewayVirtualModelConfigs(config, ownerId: ownerId == null ? const SdkOmitted<String>() : SdkPresent<String>(ownerId), limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), includeArchived: includeArchived == null ? const SdkOmitted<ListAiGatewayVirtualModelConfigsIncludeArchived>() : SdkPresent<ListAiGatewayVirtualModelConfigsIncludeArchived>(includeArchived), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.virtualModelConfigs;
     if (sdkItems.isEmpty) return;
     final sdkNext = sdkPage.cursor;
@@ -286,37 +202,35 @@ Stream<SdkPage<AiGatewayVirtualModelConfigList, AiGatewayVirtualModelConfig>>
   }
 }
 
+
 /// Retrieves a virtual model configuration by its path slug. Use `ownerId` or the team selectors `teamId` and `slug` to scope the lookup to the appropriate owner.
 ///
 /// Get a virtual model config by path slug
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<AiGatewayVirtualModelConfig> getAiGatewayVirtualModelConfigBySlug(
-    ClientConfig config,
-    {required String vmcSlug,
-    SdkOptional<String> ownerId = const SdkOmitted(),
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AiGatewayVirtualModelConfig>
+    getAiGatewayVirtualModelConfigBySlug(ClientConfig config,
+        {required String vmcSlug,
+        SdkOptional<String> ownerId = const SdkOmitted(),
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<AiGatewayVirtualModelConfig>('GET',
           '/ai-gateway/virtual-model-configs/${Uri.encodeComponent(vmcSlug.toString())}',
           config: config,
           query: {
-            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getAiGatewayVirtualModelConfigBySlug',
-          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Updates a virtual model configuration identified by its path slug. Specify `teamId` or `slug` to perform the request in that team's context. A 200 response returns the updated configuration.
 ///
@@ -324,28 +238,26 @@ Future<AiGatewayVirtualModelConfig> getAiGatewayVirtualModelConfigBySlug(
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<AiGatewayVirtualModelConfig> updateAiGatewayVirtualModelConfigBySlug(
-    ClientConfig config,
-    {required String vmcSlug,
-    SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AiGatewayVirtualModelConfig>
+    updateAiGatewayVirtualModelConfigBySlug(ClientConfig config,
+        {required String vmcSlug,
+        SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<AiGatewayVirtualModelConfig>('PATCH',
           '/ai-gateway/virtual-model-configs/${Uri.encodeComponent(vmcSlug.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateAiGatewayVirtualModelConfigBySlug',
-          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayVirtualModelConfig.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a virtual model configuration identified by its path slug using a soft delete. Specify `vmcSlug` to select the configuration, and optionally use `ownerId`, `teamId`, or `slug` to scope the operation.
 ///
@@ -366,26 +278,19 @@ Future<void> deleteAiGatewayVirtualModelConfigBySlug(ClientConfig config,
           '/ai-gateway/virtual-model-configs/${Uri.encodeComponent(vmcSlug.toString())}',
           config: config,
           query: {
-            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId),
-                style: 'form', explode: true),
-            'updatedBy': SdkQueryValue(SdkUtils.unwrapOptional(updatedBy),
-                style: 'form', explode: true),
-            'actingIp': SdkQueryValue(SdkUtils.unwrapOptional(actingIp),
-                style: 'form', explode: true),
-            'actingUserAgent': SdkQueryValue(
-                SdkUtils.unwrapOptional(actingUserAgent),
-                style: 'form',
-                explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId), style: 'form', explode: true),
+            'updatedBy': SdkQueryValue(SdkUtils.unwrapOptional(updatedBy), style: 'form', explode: true),
+            'actingIp': SdkQueryValue(SdkUtils.unwrapOptional(actingIp), style: 'form', explode: true),
+            'actingUserAgent': SdkQueryValue(SdkUtils.unwrapOptional(actingUserAgent), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteAiGatewayVirtualModelConfigBySlug',
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the authenticated team's active and archived AI Gateway routers. Public callers select the team with `teamId` or `slug`; trusted-origin callers can use `ownerId` to scope the list.
 ///
@@ -404,20 +309,17 @@ Future<AiGatewayRouterList> listAiGatewayRouters(ClientConfig config,
   return (await sdkRequest<AiGatewayRouterList>('GET', '/v1/ai-gateway/routers',
           config: config,
           query: {
-            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'ownerId': SdkQueryValue(SdkUtils.unwrapOptional(ownerId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAiGatewayRouters',
-          fromJsonRaw: (value) =>
-              AiGatewayRouterList.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayRouterList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates a routing rule for the authenticated team. Use `teamId` or `slug` to select the team context when needed. A 201 response returns the created rule, including its identifier and configuration.
 ///
@@ -432,18 +334,16 @@ Future<AiGatewayRule> createAiGatewayRule(ClientConfig config,
   return (await sdkRequest<AiGatewayRule>('POST', '/ai-gateway/rules',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createAiGatewayRule',
-          fromJsonRaw: (value) =>
-              AiGatewayRule.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayRule.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the authenticated team's AI Gateway routing rules, ordered from oldest to newest. Use `includeDisabled` to control whether disabled rules are included, and use `limit` and `cursor` to retrieve a page of results. Paged responses include `nextCursor` for the next request; it is null on the last page.
 ///
@@ -455,8 +355,7 @@ Future<AiGatewayRule> createAiGatewayRule(ClientConfig config,
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
 Future<AiGatewayRuleList> listAiGatewayRules(ClientConfig config,
-    {SdkOptional<ListAiGatewayRulesIncludeDisabled> includeDisabled =
-        const SdkOmitted(),
+    {SdkOptional<ListAiGatewayRulesIncludeDisabled> includeDisabled = const SdkOmitted(),
     SdkOptional<int> limit = const SdkOmitted(),
     SdkOptional<String> cursor = const SdkOmitted(),
     SdkOptional<String> teamId = const SdkOmitted(),
@@ -469,26 +368,20 @@ Future<AiGatewayRuleList> listAiGatewayRules(ClientConfig config,
   return (await sdkRequest<AiGatewayRuleList>('GET', '/ai-gateway/rules',
           config: config,
           query: {
-            'includeDisabled': SdkQueryValue(
-                SdkUtils.unwrapOptional(includeDisabled),
-                style: 'form',
-                explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'includeDisabled': SdkQueryValue(SdkUtils.unwrapOptional(includeDisabled), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAiGatewayRules',
-          fromJsonRaw: (value) =>
-              AiGatewayRuleList.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayRuleList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
+
 
 /// Lists the authenticated team's AI Gateway routing rules, ordered from oldest to newest. Use `includeDisabled` to control whether disabled rules are included, and use `limit` and `cursor` to retrieve a page of results. Paged responses include `nextCursor` for the next request; it is null on the last page.
 ///
@@ -499,66 +392,23 @@ Future<AiGatewayRuleList> listAiGatewayRules(ClientConfig config,
 /// [cursor] Opaque cursor returned by a prior call as nextCursor.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<AiGatewayRule> listAiGatewayRulesPaginated(ClientConfig config,
-    {ListAiGatewayRulesIncludeDisabled? includeDisabled,
-    int? limit,
-    String? cursor,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<AiGatewayRule> listAiGatewayRulesPaginated(ClientConfig config, {ListAiGatewayRulesIncludeDisabled? includeDisabled, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listAiGatewayRules(config,
-        includeDisabled: includeDisabled == null
-            ? const SdkOmitted<ListAiGatewayRulesIncludeDisabled>()
-            : SdkPresent<ListAiGatewayRulesIncludeDisabled>(includeDisabled),
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listAiGatewayRules(config, includeDisabled: includeDisabled == null ? const SdkOmitted<ListAiGatewayRulesIncludeDisabled>() : SdkPresent<ListAiGatewayRulesIncludeDisabled>(includeDisabled), limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.rules;
     if (sdkItems.isEmpty) return;
-    for (final sdkItem in sdkItems) {
-      yield sdkItem;
-    }
+    for (final sdkItem in sdkItems) { yield sdkItem; }
     final sdkNext = sdkPage.nextCursor;
     if (sdkNext == null) return;
     sdkCursor = sdkNext;
   }
 }
 
-Stream<SdkPage<AiGatewayRuleList, AiGatewayRule>> listAiGatewayRulesPages(
-    ClientConfig config,
-    {ListAiGatewayRulesIncludeDisabled? includeDisabled,
-    int? limit,
-    String? cursor,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<SdkPage<AiGatewayRuleList, AiGatewayRule>> listAiGatewayRulesPages(ClientConfig config, {ListAiGatewayRulesIncludeDisabled? includeDisabled, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listAiGatewayRules(config,
-        includeDisabled: includeDisabled == null
-            ? const SdkOmitted<ListAiGatewayRulesIncludeDisabled>()
-            : SdkPresent<ListAiGatewayRulesIncludeDisabled>(includeDisabled),
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listAiGatewayRules(config, includeDisabled: includeDisabled == null ? const SdkOmitted<ListAiGatewayRulesIncludeDisabled>() : SdkPresent<ListAiGatewayRulesIncludeDisabled>(includeDisabled), limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.rules;
     if (sdkItems.isEmpty) return;
     final sdkNext = sdkPage.nextCursor;
@@ -568,6 +418,7 @@ Stream<SdkPage<AiGatewayRuleList, AiGatewayRule>> listAiGatewayRulesPages(
     sdkCursor = sdkNext;
   }
 }
+
 
 /// Updates a routing rule's enabled state, action, or description for the authenticated team. Use `teamId` or `slug` to select the team context when needed. A 200 response returns the updated rule and its current configuration.
 ///
@@ -582,18 +433,16 @@ Future<AiGatewayRule> updateAiGatewayRule(ClientConfig config,
   return (await sdkRequest<AiGatewayRule>('PATCH', '/ai-gateway/rules',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateAiGatewayRule',
-          fromJsonRaw: (value) =>
-              AiGatewayRule.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayRule.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes a routing rule from the authenticated team's active rules; deletion is soft, so the rule is not necessarily permanently removed. Supply the rule's `ruleId` and use `teamId` or `slug` to select the team context when needed.
 ///
@@ -610,16 +459,15 @@ Future<void> deleteAiGatewayRule(ClientConfig config,
           config: config,
           query: {
             'ruleId': SdkQueryValue(ruleId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'deleteAiGatewayRule',
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the authenticated team's AI Gateway budgets as a flat list, with optional filtering by scope. Use `scopeType` to filter by team, project, user, or API key, and use `limit` and `cursor` to paginate results. Paged responses include `nextCursor` and `defaultCoveredCounts`.
 ///
@@ -635,8 +483,7 @@ Future<void> deleteAiGatewayRule(ClientConfig config,
 /// [slug] The Team slug to perform the request on behalf of.
 Future<AiGatewayBudgetList> listAiGatewayBudgets(ClientConfig config,
     {SdkOptional<ListAiGatewayBudgetsScopeType> scopeType = const SdkOmitted(),
-    SdkOptional<ListAiGatewayBudgetsIncludeDefaultCovered>
-        includeDefaultCovered = const SdkOmitted(),
+    SdkOptional<ListAiGatewayBudgetsIncludeDefaultCovered> includeDefaultCovered = const SdkOmitted(),
     SdkOptional<int> limit = const SdkOmitted(),
     SdkOptional<String> cursor = const SdkOmitted(),
     SdkOptional<String> teamId = const SdkOmitted(),
@@ -650,28 +497,21 @@ Future<AiGatewayBudgetList> listAiGatewayBudgets(ClientConfig config,
           'GET', '/ai-gateway/budgets/list',
           config: config,
           query: {
-            'scopeType': SdkQueryValue(SdkUtils.unwrapOptional(scopeType),
-                style: 'form', explode: true),
-            'includeDefaultCovered': SdkQueryValue(
-                SdkUtils.unwrapOptional(includeDefaultCovered),
-                style: 'form',
-                explode: true),
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
-                style: 'form', explode: true),
-            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'scopeType': SdkQueryValue(SdkUtils.unwrapOptional(scopeType), style: 'form', explode: true),
+            'includeDefaultCovered': SdkQueryValue(SdkUtils.unwrapOptional(includeDefaultCovered), style: 'form', explode: true),
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
+            'cursor': SdkQueryValue(SdkUtils.unwrapOptional(cursor), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAiGatewayBudgets',
-          fromJsonRaw: (value) =>
-              AiGatewayBudgetList.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayBudgetList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
+
 
 /// Lists the authenticated team's AI Gateway budgets as a flat list, with optional filtering by scope. Use `scopeType` to filter by team, project, user, or API key, and use `limit` and `cursor` to paginate results. Paged responses include `nextCursor` and `defaultCoveredCounts`.
 ///
@@ -685,76 +525,23 @@ Future<AiGatewayBudgetList> listAiGatewayBudgets(ClientConfig config,
 /// [cursor] Opaque cursor returned by a prior call as nextCursor.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Stream<AiGatewayBudget> listAiGatewayBudgetsPaginated(ClientConfig config,
-    {ListAiGatewayBudgetsScopeType? scopeType,
-    ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered,
-    int? limit,
-    String? cursor,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<AiGatewayBudget> listAiGatewayBudgetsPaginated(ClientConfig config, {ListAiGatewayBudgetsScopeType? scopeType, ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listAiGatewayBudgets(config,
-        scopeType: scopeType == null
-            ? const SdkOmitted<ListAiGatewayBudgetsScopeType>()
-            : SdkPresent<ListAiGatewayBudgetsScopeType>(scopeType),
-        includeDefaultCovered: includeDefaultCovered == null
-            ? const SdkOmitted<ListAiGatewayBudgetsIncludeDefaultCovered>()
-            : SdkPresent<ListAiGatewayBudgetsIncludeDefaultCovered>(
-                includeDefaultCovered),
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listAiGatewayBudgets(config, scopeType: scopeType == null ? const SdkOmitted<ListAiGatewayBudgetsScopeType>() : SdkPresent<ListAiGatewayBudgetsScopeType>(scopeType), includeDefaultCovered: includeDefaultCovered == null ? const SdkOmitted<ListAiGatewayBudgetsIncludeDefaultCovered>() : SdkPresent<ListAiGatewayBudgetsIncludeDefaultCovered>(includeDefaultCovered), limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.budgets;
     if (sdkItems.isEmpty) return;
-    for (final sdkItem in sdkItems) {
-      yield sdkItem;
-    }
+    for (final sdkItem in sdkItems) { yield sdkItem; }
     final sdkNext = sdkPage.nextCursor.valueOrNull;
     if (sdkNext == null) return;
     sdkCursor = sdkNext;
   }
 }
 
-Stream<SdkPage<AiGatewayBudgetList, AiGatewayBudget>> listAiGatewayBudgetsPages(
-    ClientConfig config,
-    {ListAiGatewayBudgetsScopeType? scopeType,
-    ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered,
-    int? limit,
-    String? cursor,
-    String? teamId,
-    String? slug,
-    RequestOptions? requestOptions}) async* {
+Stream<SdkPage<AiGatewayBudgetList, AiGatewayBudget>> listAiGatewayBudgetsPages(ClientConfig config, {ListAiGatewayBudgetsScopeType? scopeType, ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered, int? limit, String? cursor, String? teamId, String? slug, RequestOptions? requestOptions}) async* {
   var sdkCursor = cursor;
   while (true) {
-    final sdkPage = await listAiGatewayBudgets(config,
-        scopeType: scopeType == null
-            ? const SdkOmitted<ListAiGatewayBudgetsScopeType>()
-            : SdkPresent<ListAiGatewayBudgetsScopeType>(scopeType),
-        includeDefaultCovered: includeDefaultCovered == null
-            ? const SdkOmitted<ListAiGatewayBudgetsIncludeDefaultCovered>()
-            : SdkPresent<ListAiGatewayBudgetsIncludeDefaultCovered>(
-                includeDefaultCovered),
-        limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit),
-        cursor: sdkCursor == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(sdkCursor),
-        teamId: teamId == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(teamId),
-        slug: slug == null
-            ? const SdkOmitted<String>()
-            : SdkPresent<String>(slug),
-        requestOptions: requestOptions);
+    final sdkPage = await listAiGatewayBudgets(config, scopeType: scopeType == null ? const SdkOmitted<ListAiGatewayBudgetsScopeType>() : SdkPresent<ListAiGatewayBudgetsScopeType>(scopeType), includeDefaultCovered: includeDefaultCovered == null ? const SdkOmitted<ListAiGatewayBudgetsIncludeDefaultCovered>() : SdkPresent<ListAiGatewayBudgetsIncludeDefaultCovered>(includeDefaultCovered), limit: limit == null ? const SdkOmitted<int>() : SdkPresent<int>(limit), cursor: sdkCursor == null ? const SdkOmitted<String>() : SdkPresent<String>(sdkCursor), teamId: teamId == null ? const SdkOmitted<String>() : SdkPresent<String>(teamId), slug: slug == null ? const SdkOmitted<String>() : SdkPresent<String>(slug), requestOptions: requestOptions);
     final sdkItems = sdkPage.budgets;
     if (sdkItems.isEmpty) return;
     final sdkNext = sdkPage.nextCursor.valueOrNull;
@@ -764,6 +551,7 @@ Stream<SdkPage<AiGatewayBudgetList, AiGatewayBudget>> listAiGatewayBudgetsPages(
     sdkCursor = sdkNext;
   }
 }
+
 
 /// Creates or updates an AI Gateway budget for a team, project, or user scope. Supply `scopeType` and `limitAmount`, and include `projectId` or `userId` when the selected scope requires it. The response contains the saved budget and its current spend and configuration.
 ///
@@ -782,21 +570,17 @@ Future<AiGatewayBudget> upsertAiGatewayBudget(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String> projectId = const SdkOmitted(),
     SdkOptional<String> userId = const SdkOmitted(),
-    SdkOptional<UpsertAiGatewayBudgetRequestBodyRefreshPeriod> refreshPeriod =
-        const SdkOmitted(),
+    SdkOptional<UpsertAiGatewayBudgetRequestBodyRefreshPeriod> refreshPeriod = const SdkOmitted(),
     SdkOptional<bool> includeByokInQuota = const SdkOmitted(),
-    SdkOptional<List<UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem>>
-        alertThresholds = const SdkOmitted(),
+    SdkOptional<List<UpsertAiGatewayBudgetRequestBodyAlertThresholdsItem>> alertThresholds = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateRange('limitAmount', limitAmount, min: 1);
 
   return (await sdkRequest<AiGatewayBudget>('PUT', '/ai-gateway/budgets',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'scopeType': scopeType,
@@ -809,11 +593,11 @@ Future<AiGatewayBudget> upsertAiGatewayBudget(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'upsertAiGatewayBudget',
-          fromJsonRaw: (value) =>
-              AiGatewayBudget.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayBudget.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Archives an AI Gateway budget for a team, project, or user scope. Set `scopeType` and include `projectId` or `userId` when the selected scope requires it. The response returns the archived budget and its current configuration.
 ///
@@ -835,22 +619,18 @@ Future<AiGatewayBudget> archiveAiGatewayBudget(ClientConfig config,
           config: config,
           query: {
             'scopeType': SdkQueryValue(scopeType, style: 'form', explode: true),
-            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId),
-                style: 'form', explode: true),
-            'userId': SdkQueryValue(SdkUtils.unwrapOptional(userId),
-                style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'projectId': SdkQueryValue(SdkUtils.unwrapOptional(projectId), style: 'form', explode: true),
+            'userId': SdkQueryValue(SdkUtils.unwrapOptional(userId), style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'archiveAiGatewayBudget',
-          fromJsonRaw: (value) =>
-              AiGatewayBudget.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayBudget.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Lists the authenticated team's AI Gateway budget defaults as a flat list, with one entry for each scope that has a default. An empty `defaults` array is a normal result when no defaults are configured. Use `teamId` or `slug` to select the team context when needed.
 ///
@@ -858,27 +638,25 @@ Future<AiGatewayBudget> archiveAiGatewayBudget(ClientConfig config,
 ///
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<AiGatewayBudgetDefaultList> listAiGatewayBudgetDefaults(
-    ClientConfig config,
-    {SdkOptional<String> teamId = const SdkOmitted(),
-    SdkOptional<String> slug = const SdkOmitted(),
-    RequestOptions? requestOptions}) async {
+Future<AiGatewayBudgetDefaultList>
+    listAiGatewayBudgetDefaults(ClientConfig config,
+        {SdkOptional<String> teamId = const SdkOmitted(),
+        SdkOptional<String> slug = const SdkOmitted(),
+        RequestOptions? requestOptions}) async {
   return (await sdkRequest<AiGatewayBudgetDefaultList>(
           'GET', '/ai-gateway/budgets/defaults/list',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listAiGatewayBudgetDefaults',
-          fromJsonRaw: (value) => AiGatewayBudgetDefaultList.fromJson(
-              value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayBudgetDefaultList.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Creates or updates an AI Gateway budget default for one scope. Supply `scopeType` and `limitAmount`; only team owners and admins have authority to manage these defaults. The response returns the saved default configuration.
 ///
@@ -892,11 +670,8 @@ Future<AiGatewayBudgetDefault> upsertAiGatewayBudgetDefault(ClientConfig config,
     required double limitAmount,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
-    SdkOptional<UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod>
-        refreshPeriod = const SdkOmitted(),
-    SdkOptional<
-            List<UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem>>
-        alertThresholds = const SdkOmitted(),
+    SdkOptional<UpsertAiGatewayBudgetDefaultRequestBodyRefreshPeriod> refreshPeriod = const SdkOmitted(),
+    SdkOptional<List<UpsertAiGatewayBudgetDefaultRequestBodyAlertThresholdsItem>> alertThresholds = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   validateRange('limitAmount', limitAmount, min: 1);
 
@@ -904,10 +679,8 @@ Future<AiGatewayBudgetDefault> upsertAiGatewayBudgetDefault(ClientConfig config,
           'PUT', '/ai-gateway/budgets/defaults',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           body: {
             'scopeType': scopeType,
@@ -917,11 +690,11 @@ Future<AiGatewayBudgetDefault> upsertAiGatewayBudgetDefault(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'upsertAiGatewayBudgetDefault',
-          fromJsonRaw: (value) =>
-              AiGatewayBudgetDefault.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => AiGatewayBudgetDefault.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
+
 
 /// Deletes an AI Gateway budget default for one scope by archiving it. Set `scopeType` to identify the scope; only team owners and admins have authority to manage budget defaults. A 204 response confirms the default was archived.
 ///
@@ -939,10 +712,8 @@ Future<void> archiveAiGatewayBudgetDefault(ClientConfig config,
           config: config,
           query: {
             'scopeType': SdkQueryValue(scopeType, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
-                style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
-                style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.empty,
           operationId: 'archiveAiGatewayBudgetDefault',

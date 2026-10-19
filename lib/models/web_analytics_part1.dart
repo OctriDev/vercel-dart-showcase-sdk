@@ -29,201 +29,81 @@ class CountEventsResponseDataVariant0 {
   final String visitorId;
   final Map<String, dynamic> additionalProperties;
 
-  const CountEventsResponseDataVariant0(
-      {required this.browserName,
-      required this.country,
-      required this.deviceType,
-      required this.environment,
-      required this.eventData,
-      required this.eventName,
-      required this.flags,
-      required this.osName,
-      required this.projectId,
-      required this.projectName,
-      required this.referrerHostname,
-      required this.requestHostname,
-      required this.requestPath,
-      required this.route,
-      required this.utmCampaign,
-      required this.utmContent,
-      required this.utmMedium,
-      required this.utmSource,
-      required this.utmTerm,
-      required this.visitorId,
-      this.additionalProperties = const <String, dynamic>{}});
+  const CountEventsResponseDataVariant0({required this.browserName, required this.country, required this.deviceType, required this.environment, required this.eventData, required this.eventName, required this.flags, required this.osName, required this.projectId, required this.projectName, required this.referrerHostname, required this.requestHostname, required this.requestPath, required this.route, required this.utmCampaign, required this.utmContent, required this.utmMedium, required this.utmSource, required this.utmTerm, required this.visitorId, this.additionalProperties = const <String, dynamic>{}});
 
-  CountEventsResponseDataVariant0 Function(
-      {String browserName,
-      String country,
-      String deviceType,
-      String environment,
-      String eventData,
-      String eventName,
-      String flags,
-      String osName,
-      String projectId,
-      String projectName,
-      String referrerHostname,
-      String requestHostname,
-      String requestPath,
-      String route,
-      String utmCampaign,
-      String utmContent,
-      String utmMedium,
-      String utmSource,
-      String utmTerm,
-      String visitorId}) get copyWith => _copyWith;
+  CountEventsResponseDataVariant0 Function({String browserName, String country, String deviceType, String environment, String eventData, String eventName, String flags, String osName, String projectId, String projectName, String referrerHostname, String requestHostname, String requestPath, String route, String utmCampaign, String utmContent, String utmMedium, String utmSource, String utmTerm, String visitorId}) get copyWith => _copyWith;
 
-  CountEventsResponseDataVariant0 _copyWith(
-          {Object? browserName = sdkOmittedValue,
-          Object? country = sdkOmittedValue,
-          Object? deviceType = sdkOmittedValue,
-          Object? environment = sdkOmittedValue,
-          Object? eventData = sdkOmittedValue,
-          Object? eventName = sdkOmittedValue,
-          Object? flags = sdkOmittedValue,
-          Object? osName = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? referrerHostname = sdkOmittedValue,
-          Object? requestHostname = sdkOmittedValue,
-          Object? requestPath = sdkOmittedValue,
-          Object? route = sdkOmittedValue,
-          Object? utmCampaign = sdkOmittedValue,
-          Object? utmContent = sdkOmittedValue,
-          Object? utmMedium = sdkOmittedValue,
-          Object? utmSource = sdkOmittedValue,
-          Object? utmTerm = sdkOmittedValue,
-          Object? visitorId = sdkOmittedValue}) =>
-      CountEventsResponseDataVariant0(
-        browserName: identical(browserName, sdkOmittedValue)
-            ? this.browserName
-            : browserName as String,
-        country: identical(country, sdkOmittedValue)
-            ? this.country
-            : country as String,
-        deviceType: identical(deviceType, sdkOmittedValue)
-            ? this.deviceType
-            : deviceType as String,
-        environment: identical(environment, sdkOmittedValue)
-            ? this.environment
-            : environment as String,
-        eventData: identical(eventData, sdkOmittedValue)
-            ? this.eventData
-            : eventData as String,
-        eventName: identical(eventName, sdkOmittedValue)
-            ? this.eventName
-            : eventName as String,
-        flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
-        osName:
-            identical(osName, sdkOmittedValue) ? this.osName : osName as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-        referrerHostname: identical(referrerHostname, sdkOmittedValue)
-            ? this.referrerHostname
-            : referrerHostname as String,
-        requestHostname: identical(requestHostname, sdkOmittedValue)
-            ? this.requestHostname
-            : requestHostname as String,
-        requestPath: identical(requestPath, sdkOmittedValue)
-            ? this.requestPath
-            : requestPath as String,
-        route: identical(route, sdkOmittedValue) ? this.route : route as String,
-        utmCampaign: identical(utmCampaign, sdkOmittedValue)
-            ? this.utmCampaign
-            : utmCampaign as String,
-        utmContent: identical(utmContent, sdkOmittedValue)
-            ? this.utmContent
-            : utmContent as String,
-        utmMedium: identical(utmMedium, sdkOmittedValue)
-            ? this.utmMedium
-            : utmMedium as String,
-        utmSource: identical(utmSource, sdkOmittedValue)
-            ? this.utmSource
-            : utmSource as String,
-        utmTerm: identical(utmTerm, sdkOmittedValue)
-            ? this.utmTerm
-            : utmTerm as String,
-        visitorId: identical(visitorId, sdkOmittedValue)
-            ? this.visitorId
-            : visitorId as String,
-        additionalProperties: additionalProperties,
-      );
+  CountEventsResponseDataVariant0 _copyWith({Object? browserName = sdkOmittedValue, Object? country = sdkOmittedValue, Object? deviceType = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? eventData = sdkOmittedValue, Object? eventName = sdkOmittedValue, Object? flags = sdkOmittedValue, Object? osName = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? referrerHostname = sdkOmittedValue, Object? requestHostname = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? route = sdkOmittedValue, Object? utmCampaign = sdkOmittedValue, Object? utmContent = sdkOmittedValue, Object? utmMedium = sdkOmittedValue, Object? utmSource = sdkOmittedValue, Object? utmTerm = sdkOmittedValue, Object? visitorId = sdkOmittedValue}) => CountEventsResponseDataVariant0(
+    browserName: identical(browserName, sdkOmittedValue) ? this.browserName : browserName as String,
+    country: identical(country, sdkOmittedValue) ? this.country : country as String,
+    deviceType: identical(deviceType, sdkOmittedValue) ? this.deviceType : deviceType as String,
+    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
+    eventData: identical(eventData, sdkOmittedValue) ? this.eventData : eventData as String,
+    eventName: identical(eventName, sdkOmittedValue) ? this.eventName : eventName as String,
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
+    osName: identical(osName, sdkOmittedValue) ? this.osName : osName as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+    referrerHostname: identical(referrerHostname, sdkOmittedValue) ? this.referrerHostname : referrerHostname as String,
+    requestHostname: identical(requestHostname, sdkOmittedValue) ? this.requestHostname : requestHostname as String,
+    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as String,
+    route: identical(route, sdkOmittedValue) ? this.route : route as String,
+    utmCampaign: identical(utmCampaign, sdkOmittedValue) ? this.utmCampaign : utmCampaign as String,
+    utmContent: identical(utmContent, sdkOmittedValue) ? this.utmContent : utmContent as String,
+    utmMedium: identical(utmMedium, sdkOmittedValue) ? this.utmMedium : utmMedium as String,
+    utmSource: identical(utmSource, sdkOmittedValue) ? this.utmSource : utmSource as String,
+    utmTerm: identical(utmTerm, sdkOmittedValue) ? this.utmTerm : utmTerm as String,
+    visitorId: identical(visitorId, sdkOmittedValue) ? this.visitorId : visitorId as String,
+    additionalProperties: additionalProperties,
+  );
 
-  factory CountEventsResponseDataVariant0.fromJson(Map<String, dynamic> json) =>
-      CountEventsResponseDataVariant0(
-        browserName: (json['browserName'] as String?)!,
-        country: (json['country'] as String?)!,
-        deviceType: (json['deviceType'] as String?)!,
-        environment: (json['environment'] as String?)!,
-        eventData: (json['eventData'] as String?)!,
-        eventName: (json['eventName'] as String?)!,
-        flags: (json['flags'] as String?)!,
-        osName: (json['osName'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-        referrerHostname: (json['referrerHostname'] as String?)!,
-        requestHostname: (json['requestHostname'] as String?)!,
-        requestPath: (json['requestPath'] as String?)!,
-        route: (json['route'] as String?)!,
-        utmCampaign: (json['utmCampaign'] as String?)!,
-        utmContent: (json['utmContent'] as String?)!,
-        utmMedium: (json['utmMedium'] as String?)!,
-        utmSource: (json['utmSource'] as String?)!,
-        utmTerm: (json['utmTerm'] as String?)!,
-        visitorId: (json['visitorId'] as String?)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{
-                'browserName',
-                'country',
-                'deviceType',
-                'environment',
-                'eventData',
-                'eventName',
-                'flags',
-                'osName',
-                'projectId',
-                'projectName',
-                'referrerHostname',
-                'requestHostname',
-                'requestPath',
-                'route',
-                'utmCampaign',
-                'utmContent',
-                'utmMedium',
-                'utmSource',
-                'utmTerm',
-                'visitorId'
-              }.contains(key)),
-      );
+  factory CountEventsResponseDataVariant0.fromJson(Map<String, dynamic> json) => CountEventsResponseDataVariant0(
+    browserName: (json['browserName'] as String?)!,
+    country: (json['country'] as String?)!,
+    deviceType: (json['deviceType'] as String?)!,
+    environment: (json['environment'] as String?)!,
+    eventData: (json['eventData'] as String?)!,
+    eventName: (json['eventName'] as String?)!,
+    flags: (json['flags'] as String?)!,
+    osName: (json['osName'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+    referrerHostname: (json['referrerHostname'] as String?)!,
+    requestHostname: (json['requestHostname'] as String?)!,
+    requestPath: (json['requestPath'] as String?)!,
+    route: (json['route'] as String?)!,
+    utmCampaign: (json['utmCampaign'] as String?)!,
+    utmContent: (json['utmContent'] as String?)!,
+    utmMedium: (json['utmMedium'] as String?)!,
+    utmSource: (json['utmSource'] as String?)!,
+    utmTerm: (json['utmTerm'] as String?)!,
+    visitorId: (json['visitorId'] as String?)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'browserName', 'country', 'deviceType', 'environment', 'eventData', 'eventName', 'flags', 'osName', 'projectId', 'projectName', 'referrerHostname', 'requestHostname', 'requestPath', 'route', 'utmCampaign', 'utmContent', 'utmMedium', 'utmSource', 'utmTerm', 'visitorId'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'browserName': browserName,
-        'country': country,
-        'deviceType': deviceType,
-        'environment': environment,
-        'eventData': eventData,
-        'eventName': eventName,
-        'flags': flags,
-        'osName': osName,
-        'projectId': projectId,
-        'projectName': projectName,
-        'referrerHostname': referrerHostname,
-        'requestHostname': requestHostname,
-        'requestPath': requestPath,
-        'route': route,
-        'utmCampaign': utmCampaign,
-        'utmContent': utmContent,
-        'utmMedium': utmMedium,
-        'utmSource': utmSource,
-        'utmTerm': utmTerm,
-        'visitorId': visitorId,
-      };
+    ...additionalProperties,
+    'browserName': browserName,
+    'country': country,
+    'deviceType': deviceType,
+    'environment': environment,
+    'eventData': eventData,
+    'eventName': eventName,
+    'flags': flags,
+    'osName': osName,
+    'projectId': projectId,
+    'projectName': projectName,
+    'referrerHostname': referrerHostname,
+    'requestHostname': requestHostname,
+    'requestPath': requestPath,
+    'route': route,
+    'utmCampaign': utmCampaign,
+    'utmContent': utmContent,
+    'utmMedium': utmMedium,
+    'utmSource': utmSource,
+    'utmTerm': utmTerm,
+    'visitorId': visitorId,
+  };
 }
 
 class CountEventsResponseDataVariant1 {
@@ -232,32 +112,24 @@ class CountEventsResponseDataVariant1 {
   final double count;
   final double visitors;
 
-  const CountEventsResponseDataVariant1(
-      {required this.count, required this.visitors});
+  const CountEventsResponseDataVariant1({required this.count, required this.visitors});
 
-  CountEventsResponseDataVariant1 Function({double count, double visitors})
-      get copyWith => _copyWith;
+  CountEventsResponseDataVariant1 Function({double count, double visitors}) get copyWith => _copyWith;
 
-  CountEventsResponseDataVariant1 _copyWith(
-          {Object? count = sdkOmittedValue,
-          Object? visitors = sdkOmittedValue}) =>
-      CountEventsResponseDataVariant1(
-        count: identical(count, sdkOmittedValue) ? this.count : count as double,
-        visitors: identical(visitors, sdkOmittedValue)
-            ? this.visitors
-            : visitors as double,
-      );
+  CountEventsResponseDataVariant1 _copyWith({Object? count = sdkOmittedValue, Object? visitors = sdkOmittedValue}) => CountEventsResponseDataVariant1(
+    count: identical(count, sdkOmittedValue) ? this.count : count as double,
+    visitors: identical(visitors, sdkOmittedValue) ? this.visitors : visitors as double,
+  );
 
-  factory CountEventsResponseDataVariant1.fromJson(Map<String, dynamic> json) =>
-      CountEventsResponseDataVariant1(
-        count: ((json['count'] as num?)?.toDouble())!,
-        visitors: ((json['visitors'] as num?)?.toDouble())!,
-      );
+  factory CountEventsResponseDataVariant1.fromJson(Map<String, dynamic> json) => CountEventsResponseDataVariant1(
+    count: ((json['count'] as num?)?.toDouble())!,
+    visitors: ((json['visitors'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-        'visitors': visitors,
-      };
+    'count': count,
+    'visitors': visitors,
+  };
 }
 
 sealed class CountEventsResponseData {
@@ -266,48 +138,26 @@ sealed class CountEventsResponseData {
   const CountEventsResponseData();
   factory CountEventsResponseData.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CountEventsResponseDataVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CountEventsResponseDataCountEventsResponseDataVariant0(value);
-        }
-      } catch (_) {}
-      try {
-        final value = CountEventsResponseDataVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CountEventsResponseDataCountEventsResponseDataVariant1(value);
-        }
-      } catch (_) {}
+      try { final value = CountEventsResponseDataVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CountEventsResponseDataCountEventsResponseDataVariant0(value); } } catch (_) {}
+      try { final value = CountEventsResponseDataVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CountEventsResponseDataCountEventsResponseDataVariant1(value); } } catch (_) {}
     }
-    try {
-      return CountEventsResponseDataCountEventsResponseDataVariant0(
-          CountEventsResponseDataVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CountEventsResponseDataCountEventsResponseDataVariant1(
-          CountEventsResponseDataVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return CountEventsResponseDataCountEventsResponseDataVariant0(CountEventsResponseDataVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CountEventsResponseDataCountEventsResponseDataVariant1(CountEventsResponseDataVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for CountEventsResponseData");
   }
   Object? toJson();
 }
 
-final class CountEventsResponseDataCountEventsResponseDataVariant0
-    extends CountEventsResponseData {
+final class CountEventsResponseDataCountEventsResponseDataVariant0 extends CountEventsResponseData {
   final CountEventsResponseDataVariant0 value;
   const CountEventsResponseDataCountEventsResponseDataVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
-final class CountEventsResponseDataCountEventsResponseDataVariant1
-    extends CountEventsResponseData {
+final class CountEventsResponseDataCountEventsResponseDataVariant1 extends CountEventsResponseData {
   final CountEventsResponseDataVariant1 value;
   const CountEventsResponseDataCountEventsResponseDataVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 class CountPageviewsResponseDataVariant0 {
@@ -333,184 +183,75 @@ class CountPageviewsResponseDataVariant0 {
   final String visitorId;
   final Map<String, dynamic> additionalProperties;
 
-  const CountPageviewsResponseDataVariant0(
-      {required this.browserName,
-      required this.country,
-      required this.deviceType,
-      required this.environment,
-      required this.flags,
-      required this.osName,
-      required this.projectId,
-      required this.projectName,
-      required this.referrerHostname,
-      required this.requestHostname,
-      required this.requestPath,
-      required this.route,
-      required this.utmCampaign,
-      required this.utmContent,
-      required this.utmMedium,
-      required this.utmSource,
-      required this.utmTerm,
-      required this.visitorId,
-      this.additionalProperties = const <String, dynamic>{}});
+  const CountPageviewsResponseDataVariant0({required this.browserName, required this.country, required this.deviceType, required this.environment, required this.flags, required this.osName, required this.projectId, required this.projectName, required this.referrerHostname, required this.requestHostname, required this.requestPath, required this.route, required this.utmCampaign, required this.utmContent, required this.utmMedium, required this.utmSource, required this.utmTerm, required this.visitorId, this.additionalProperties = const <String, dynamic>{}});
 
-  CountPageviewsResponseDataVariant0 Function(
-      {String browserName,
-      String country,
-      String deviceType,
-      String environment,
-      String flags,
-      String osName,
-      String projectId,
-      String projectName,
-      String referrerHostname,
-      String requestHostname,
-      String requestPath,
-      String route,
-      String utmCampaign,
-      String utmContent,
-      String utmMedium,
-      String utmSource,
-      String utmTerm,
-      String visitorId}) get copyWith => _copyWith;
+  CountPageviewsResponseDataVariant0 Function({String browserName, String country, String deviceType, String environment, String flags, String osName, String projectId, String projectName, String referrerHostname, String requestHostname, String requestPath, String route, String utmCampaign, String utmContent, String utmMedium, String utmSource, String utmTerm, String visitorId}) get copyWith => _copyWith;
 
-  CountPageviewsResponseDataVariant0 _copyWith(
-          {Object? browserName = sdkOmittedValue,
-          Object? country = sdkOmittedValue,
-          Object? deviceType = sdkOmittedValue,
-          Object? environment = sdkOmittedValue,
-          Object? flags = sdkOmittedValue,
-          Object? osName = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? referrerHostname = sdkOmittedValue,
-          Object? requestHostname = sdkOmittedValue,
-          Object? requestPath = sdkOmittedValue,
-          Object? route = sdkOmittedValue,
-          Object? utmCampaign = sdkOmittedValue,
-          Object? utmContent = sdkOmittedValue,
-          Object? utmMedium = sdkOmittedValue,
-          Object? utmSource = sdkOmittedValue,
-          Object? utmTerm = sdkOmittedValue,
-          Object? visitorId = sdkOmittedValue}) =>
-      CountPageviewsResponseDataVariant0(
-        browserName: identical(browserName, sdkOmittedValue)
-            ? this.browserName
-            : browserName as String,
-        country: identical(country, sdkOmittedValue)
-            ? this.country
-            : country as String,
-        deviceType: identical(deviceType, sdkOmittedValue)
-            ? this.deviceType
-            : deviceType as String,
-        environment: identical(environment, sdkOmittedValue)
-            ? this.environment
-            : environment as String,
-        flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
-        osName:
-            identical(osName, sdkOmittedValue) ? this.osName : osName as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as String,
-        referrerHostname: identical(referrerHostname, sdkOmittedValue)
-            ? this.referrerHostname
-            : referrerHostname as String,
-        requestHostname: identical(requestHostname, sdkOmittedValue)
-            ? this.requestHostname
-            : requestHostname as String,
-        requestPath: identical(requestPath, sdkOmittedValue)
-            ? this.requestPath
-            : requestPath as String,
-        route: identical(route, sdkOmittedValue) ? this.route : route as String,
-        utmCampaign: identical(utmCampaign, sdkOmittedValue)
-            ? this.utmCampaign
-            : utmCampaign as String,
-        utmContent: identical(utmContent, sdkOmittedValue)
-            ? this.utmContent
-            : utmContent as String,
-        utmMedium: identical(utmMedium, sdkOmittedValue)
-            ? this.utmMedium
-            : utmMedium as String,
-        utmSource: identical(utmSource, sdkOmittedValue)
-            ? this.utmSource
-            : utmSource as String,
-        utmTerm: identical(utmTerm, sdkOmittedValue)
-            ? this.utmTerm
-            : utmTerm as String,
-        visitorId: identical(visitorId, sdkOmittedValue)
-            ? this.visitorId
-            : visitorId as String,
-        additionalProperties: additionalProperties,
-      );
+  CountPageviewsResponseDataVariant0 _copyWith({Object? browserName = sdkOmittedValue, Object? country = sdkOmittedValue, Object? deviceType = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? flags = sdkOmittedValue, Object? osName = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? referrerHostname = sdkOmittedValue, Object? requestHostname = sdkOmittedValue, Object? requestPath = sdkOmittedValue, Object? route = sdkOmittedValue, Object? utmCampaign = sdkOmittedValue, Object? utmContent = sdkOmittedValue, Object? utmMedium = sdkOmittedValue, Object? utmSource = sdkOmittedValue, Object? utmTerm = sdkOmittedValue, Object? visitorId = sdkOmittedValue}) => CountPageviewsResponseDataVariant0(
+    browserName: identical(browserName, sdkOmittedValue) ? this.browserName : browserName as String,
+    country: identical(country, sdkOmittedValue) ? this.country : country as String,
+    deviceType: identical(deviceType, sdkOmittedValue) ? this.deviceType : deviceType as String,
+    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
+    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as String,
+    osName: identical(osName, sdkOmittedValue) ? this.osName : osName as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
+    referrerHostname: identical(referrerHostname, sdkOmittedValue) ? this.referrerHostname : referrerHostname as String,
+    requestHostname: identical(requestHostname, sdkOmittedValue) ? this.requestHostname : requestHostname as String,
+    requestPath: identical(requestPath, sdkOmittedValue) ? this.requestPath : requestPath as String,
+    route: identical(route, sdkOmittedValue) ? this.route : route as String,
+    utmCampaign: identical(utmCampaign, sdkOmittedValue) ? this.utmCampaign : utmCampaign as String,
+    utmContent: identical(utmContent, sdkOmittedValue) ? this.utmContent : utmContent as String,
+    utmMedium: identical(utmMedium, sdkOmittedValue) ? this.utmMedium : utmMedium as String,
+    utmSource: identical(utmSource, sdkOmittedValue) ? this.utmSource : utmSource as String,
+    utmTerm: identical(utmTerm, sdkOmittedValue) ? this.utmTerm : utmTerm as String,
+    visitorId: identical(visitorId, sdkOmittedValue) ? this.visitorId : visitorId as String,
+    additionalProperties: additionalProperties,
+  );
 
-  factory CountPageviewsResponseDataVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CountPageviewsResponseDataVariant0(
-        browserName: (json['browserName'] as String?)!,
-        country: (json['country'] as String?)!,
-        deviceType: (json['deviceType'] as String?)!,
-        environment: (json['environment'] as String?)!,
-        flags: (json['flags'] as String?)!,
-        osName: (json['osName'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        projectName: (json['projectName'] as String?)!,
-        referrerHostname: (json['referrerHostname'] as String?)!,
-        requestHostname: (json['requestHostname'] as String?)!,
-        requestPath: (json['requestPath'] as String?)!,
-        route: (json['route'] as String?)!,
-        utmCampaign: (json['utmCampaign'] as String?)!,
-        utmContent: (json['utmContent'] as String?)!,
-        utmMedium: (json['utmMedium'] as String?)!,
-        utmSource: (json['utmSource'] as String?)!,
-        utmTerm: (json['utmTerm'] as String?)!,
-        visitorId: (json['visitorId'] as String?)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere((key, _) => const <String>{
-                'browserName',
-                'country',
-                'deviceType',
-                'environment',
-                'flags',
-                'osName',
-                'projectId',
-                'projectName',
-                'referrerHostname',
-                'requestHostname',
-                'requestPath',
-                'route',
-                'utmCampaign',
-                'utmContent',
-                'utmMedium',
-                'utmSource',
-                'utmTerm',
-                'visitorId'
-              }.contains(key)),
-      );
+  factory CountPageviewsResponseDataVariant0.fromJson(Map<String, dynamic> json) => CountPageviewsResponseDataVariant0(
+    browserName: (json['browserName'] as String?)!,
+    country: (json['country'] as String?)!,
+    deviceType: (json['deviceType'] as String?)!,
+    environment: (json['environment'] as String?)!,
+    flags: (json['flags'] as String?)!,
+    osName: (json['osName'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    projectName: (json['projectName'] as String?)!,
+    referrerHostname: (json['referrerHostname'] as String?)!,
+    requestHostname: (json['requestHostname'] as String?)!,
+    requestPath: (json['requestPath'] as String?)!,
+    route: (json['route'] as String?)!,
+    utmCampaign: (json['utmCampaign'] as String?)!,
+    utmContent: (json['utmContent'] as String?)!,
+    utmMedium: (json['utmMedium'] as String?)!,
+    utmSource: (json['utmSource'] as String?)!,
+    utmTerm: (json['utmTerm'] as String?)!,
+    visitorId: (json['visitorId'] as String?)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'browserName', 'country', 'deviceType', 'environment', 'flags', 'osName', 'projectId', 'projectName', 'referrerHostname', 'requestHostname', 'requestPath', 'route', 'utmCampaign', 'utmContent', 'utmMedium', 'utmSource', 'utmTerm', 'visitorId'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'browserName': browserName,
-        'country': country,
-        'deviceType': deviceType,
-        'environment': environment,
-        'flags': flags,
-        'osName': osName,
-        'projectId': projectId,
-        'projectName': projectName,
-        'referrerHostname': referrerHostname,
-        'requestHostname': requestHostname,
-        'requestPath': requestPath,
-        'route': route,
-        'utmCampaign': utmCampaign,
-        'utmContent': utmContent,
-        'utmMedium': utmMedium,
-        'utmSource': utmSource,
-        'utmTerm': utmTerm,
-        'visitorId': visitorId,
-      };
+    ...additionalProperties,
+    'browserName': browserName,
+    'country': country,
+    'deviceType': deviceType,
+    'environment': environment,
+    'flags': flags,
+    'osName': osName,
+    'projectId': projectId,
+    'projectName': projectName,
+    'referrerHostname': referrerHostname,
+    'requestHostname': requestHostname,
+    'requestPath': requestPath,
+    'route': route,
+    'utmCampaign': utmCampaign,
+    'utmContent': utmContent,
+    'utmMedium': utmMedium,
+    'utmSource': utmSource,
+    'utmTerm': utmTerm,
+    'visitorId': visitorId,
+  };
 }
 
 class CountPageviewsResponseDataVariant1 {
@@ -519,35 +260,24 @@ class CountPageviewsResponseDataVariant1 {
   final double pageviews;
   final double visitors;
 
-  const CountPageviewsResponseDataVariant1(
-      {required this.pageviews, required this.visitors});
+  const CountPageviewsResponseDataVariant1({required this.pageviews, required this.visitors});
 
-  CountPageviewsResponseDataVariant1 Function(
-      {double pageviews, double visitors}) get copyWith => _copyWith;
+  CountPageviewsResponseDataVariant1 Function({double pageviews, double visitors}) get copyWith => _copyWith;
 
-  CountPageviewsResponseDataVariant1 _copyWith(
-          {Object? pageviews = sdkOmittedValue,
-          Object? visitors = sdkOmittedValue}) =>
-      CountPageviewsResponseDataVariant1(
-        pageviews: identical(pageviews, sdkOmittedValue)
-            ? this.pageviews
-            : pageviews as double,
-        visitors: identical(visitors, sdkOmittedValue)
-            ? this.visitors
-            : visitors as double,
-      );
+  CountPageviewsResponseDataVariant1 _copyWith({Object? pageviews = sdkOmittedValue, Object? visitors = sdkOmittedValue}) => CountPageviewsResponseDataVariant1(
+    pageviews: identical(pageviews, sdkOmittedValue) ? this.pageviews : pageviews as double,
+    visitors: identical(visitors, sdkOmittedValue) ? this.visitors : visitors as double,
+  );
 
-  factory CountPageviewsResponseDataVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CountPageviewsResponseDataVariant1(
-        pageviews: ((json['pageviews'] as num?)?.toDouble())!,
-        visitors: ((json['visitors'] as num?)?.toDouble())!,
-      );
+  factory CountPageviewsResponseDataVariant1.fromJson(Map<String, dynamic> json) => CountPageviewsResponseDataVariant1(
+    pageviews: ((json['pageviews'] as num?)?.toDouble())!,
+    visitors: ((json['visitors'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'pageviews': pageviews,
-        'visitors': visitors,
-      };
+    'pageviews': pageviews,
+    'visitors': visitors,
+  };
 }
 
 sealed class CountPageviewsResponseData {
@@ -556,31 +286,11 @@ sealed class CountPageviewsResponseData {
   const CountPageviewsResponseData();
   factory CountPageviewsResponseData.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CountPageviewsResponseDataVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CountPageviewsResponseDataCountPageviewsResponseDataVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CountPageviewsResponseDataVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CountPageviewsResponseDataCountPageviewsResponseDataVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CountPageviewsResponseDataVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CountPageviewsResponseDataCountPageviewsResponseDataVariant0(value); } } catch (_) {}
+      try { final value = CountPageviewsResponseDataVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CountPageviewsResponseDataCountPageviewsResponseDataVariant1(value); } } catch (_) {}
     }
-    try {
-      return CountPageviewsResponseDataCountPageviewsResponseDataVariant0(
-          CountPageviewsResponseDataVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CountPageviewsResponseDataCountPageviewsResponseDataVariant1(
-          CountPageviewsResponseDataVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return CountPageviewsResponseDataCountPageviewsResponseDataVariant0(CountPageviewsResponseDataVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CountPageviewsResponseDataCountPageviewsResponseDataVariant1(CountPageviewsResponseDataVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for CountPageviewsResponseData");
   }
   Object? toJson();

@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models (part 383)
 final class GetSdkKeysResponseDataItemType {
+
   final String value;
 
   const GetSdkKeysResponseDataItemType._(this.value);
 
-  factory GetSdkKeysResponseDataItemType.fromJson(String value) =>
-      GetSdkKeysResponseDataItemType._(value);
+  factory GetSdkKeysResponseDataItemType.fromJson(String value) => GetSdkKeysResponseDataItemType._(value);
 
   static const client = GetSdkKeysResponseDataItemType._('client');
   static const mobile = GetSdkKeysResponseDataItemType._('mobile');
@@ -18,24 +18,21 @@ final class GetSdkKeysResponseDataItemType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetSdkKeysResponseDataItemType && other.value == value;
+  @override bool operator ==(Object other) => other is GetSdkKeysResponseDataItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateSdkKeyRequestBodySdkKeyType {
+
   final String value;
 
   const CreateSdkKeyRequestBodySdkKeyType._(this.value);
 
-  factory CreateSdkKeyRequestBodySdkKeyType.fromJson(String value) =>
-      CreateSdkKeyRequestBodySdkKeyType._(value);
+  factory CreateSdkKeyRequestBodySdkKeyType.fromJson(String value) => CreateSdkKeyRequestBodySdkKeyType._(value);
 
   static const server = CreateSdkKeyRequestBodySdkKeyType._('server');
   static const mobile = CreateSdkKeyRequestBodySdkKeyType._('mobile');
@@ -43,373 +40,240 @@ final class CreateSdkKeyRequestBodySdkKeyType {
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateSdkKeyRequestBodySdkKeyType && other.value == value;
+  @override bool operator ==(Object other) => other is CreateSdkKeyRequestBodySdkKeyType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp {
+
   final String value;
 
-  const CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-      this.value);
+  const CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(this.value);
 
-  factory CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp.fromJson(
-          String value) =>
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(value);
+  factory CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp.fromJson(String value) => CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(value);
 
-  static const eq =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('eq');
-  static const eq2 =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!eq');
-  static const oneof =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('oneOf');
-  static const oneof2 =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!oneOf');
-  static const containsallof =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'containsAllOf');
-  static const containsanyof =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'containsAnyOf');
-  static const containsnoneof =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'containsNoneOf');
-  static const startswith =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'startsWith');
-  static const startswith2 =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          '!startsWith');
-  static const endswith =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('endsWith');
-  static const endswith2 =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!endsWith');
-  static const contains =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('contains');
-  static const contains2 =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!contains');
-  static const ex =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('ex');
-  static const ex2 =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!ex');
-  static const gt =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gt');
-  static const gte =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gte');
-  static const lt =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lt');
-  static const lte =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lte');
-  static const regex =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('regex');
-  static const regex2 =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!regex');
-  static const before =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('before');
-  static const after =
-      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('after');
+  static const eq = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('eq');
+  static const eq2 = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!eq');
+  static const oneof = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('oneOf');
+  static const oneof2 = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!oneOf');
+  static const containsallof = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('containsAllOf');
+  static const containsanyof = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('containsAnyOf');
+  static const containsnoneof = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('containsNoneOf');
+  static const startswith = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('startsWith');
+  static const startswith2 = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!startsWith');
+  static const endswith = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('endsWith');
+  static const endswith2 = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!endsWith');
+  static const contains = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('contains');
+  static const contains2 = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!contains');
+  static const ex = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('ex');
+  static const ex2 = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!ex');
+  static const gt = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gt');
+  static const gte = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gte');
+  static const lt = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lt');
+  static const lte = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lte');
+  static const regex = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('regex');
+  static const regex2 = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!regex');
+  static const before = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('before');
+  static const after = CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('after');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateFlagSegmentResponseDataRulesItemConditionsItemCmp {
+
   final String value;
 
   const CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._(this.value);
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemCmp.fromJson(
-          String value) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._(value);
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemCmp.fromJson(String value) => CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._(value);
 
-  static const contains =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!contains');
-  static const endswith =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!endsWith');
-  static const eq =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!eq');
-  static const ex =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!ex');
-  static const oneof =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!oneOf');
-  static const regex =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!regex');
-  static const startswith =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!startsWith');
-  static const after =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('after');
-  static const before =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('before');
-  static const contains2 =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('contains');
-  static const containsallof =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._(
-          'containsAllOf');
-  static const containsanyof =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._(
-          'containsAnyOf');
-  static const containsnoneof =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._(
-          'containsNoneOf');
-  static const endswith2 =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('endsWith');
-  static const eq2 =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('eq');
-  static const ex2 =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('ex');
-  static const gt =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('gt');
-  static const gte =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('gte');
-  static const lt =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('lt');
-  static const lte =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('lte');
-  static const oneof2 =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('oneOf');
-  static const regex2 =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('regex');
-  static const startswith2 =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('startsWith');
+  static const contains = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!contains');
+  static const endswith = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!endsWith');
+  static const eq = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!eq');
+  static const ex = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!ex');
+  static const oneof = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!oneOf');
+  static const regex = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!regex');
+  static const startswith = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('!startsWith');
+  static const after = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('after');
+  static const before = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('before');
+  static const contains2 = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('contains');
+  static const containsallof = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('containsAllOf');
+  static const containsanyof = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('containsAnyOf');
+  static const containsnoneof = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('containsNoneOf');
+  static const endswith2 = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('endsWith');
+  static const eq2 = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('eq');
+  static const ex2 = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('ex');
+  static const gt = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('gt');
+  static const gte = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('gte');
+  static const lt = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('lt');
+  static const lte = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('lte');
+  static const oneof2 = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('oneOf');
+  static const regex2 = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('regex');
+  static const startswith2 = CreateFlagSegmentResponseDataRulesItemConditionsItemCmp._('startsWith');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateFlagSegmentResponseDataRulesItemConditionsItemCmp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentResponseDataRulesItemConditionsItemCmp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase {
+
   final bool value;
 
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase._(
-      this.value);
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase._(this.value);
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(
-          bool value) =>
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase
-          ._(value);
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(bool value) => CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase._(value);
 
-  static const false_ =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase
-          ._(false);
-  static const true_ =
-      CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase
-          ._(true);
+  static const false_ = CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase._(false);
+  static const true_ = CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CreateFlagSegmentResponseTypeName {
+
   final String value;
 
   const CreateFlagSegmentResponseTypeName._(this.value);
 
-  factory CreateFlagSegmentResponseTypeName.fromJson(String value) =>
-      CreateFlagSegmentResponseTypeName._(value);
+  factory CreateFlagSegmentResponseTypeName.fromJson(String value) => CreateFlagSegmentResponseTypeName._(value);
 
   static const segment = CreateFlagSegmentResponseTypeName._('segment');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CreateFlagSegmentResponseTypeName && other.value == value;
+  @override bool operator ==(Object other) => other is CreateFlagSegmentResponseTypeName && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp {
+
   final String value;
 
-  const UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-      this.value);
+  const UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(this.value);
 
-  factory UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp.fromJson(
-          String value) =>
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(value);
+  factory UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp.fromJson(String value) => UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(value);
 
-  static const eq =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('eq');
-  static const eq2 =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!eq');
-  static const oneof =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('oneOf');
-  static const oneof2 =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!oneOf');
-  static const containsallof =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'containsAllOf');
-  static const containsanyof =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'containsAnyOf');
-  static const containsnoneof =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'containsNoneOf');
-  static const startswith =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          'startsWith');
-  static const startswith2 =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._(
-          '!startsWith');
-  static const endswith =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('endsWith');
-  static const endswith2 =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!endsWith');
-  static const contains =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('contains');
-  static const contains2 =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!contains');
-  static const ex =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('ex');
-  static const ex2 =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!ex');
-  static const gt =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gt');
-  static const gte =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gte');
-  static const lt =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lt');
-  static const lte =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lte');
-  static const regex =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('regex');
-  static const regex2 =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!regex');
-  static const before =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('before');
-  static const after =
-      UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('after');
+  static const eq = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('eq');
+  static const eq2 = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!eq');
+  static const oneof = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('oneOf');
+  static const oneof2 = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!oneOf');
+  static const containsallof = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('containsAllOf');
+  static const containsanyof = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('containsAnyOf');
+  static const containsnoneof = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('containsNoneOf');
+  static const startswith = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('startsWith');
+  static const startswith2 = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!startsWith');
+  static const endswith = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('endsWith');
+  static const endswith2 = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!endsWith');
+  static const contains = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('contains');
+  static const contains2 = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!contains');
+  static const ex = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('ex');
+  static const ex2 = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!ex');
+  static const gt = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gt');
+  static const gte = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('gte');
+  static const lt = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lt');
+  static const lte = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('lte');
+  static const regex = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('regex');
+  static const regex2 = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('!regex');
+  static const before = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('before');
+  static const after = UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp._('after');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagSegmentRequestBodyOperationsItemAction {
+
   final String value;
 
   const UpdateFlagSegmentRequestBodyOperationsItemAction._(this.value);
 
-  factory UpdateFlagSegmentRequestBodyOperationsItemAction.fromJson(
-          String value) =>
-      UpdateFlagSegmentRequestBodyOperationsItemAction._(value);
+  factory UpdateFlagSegmentRequestBodyOperationsItemAction.fromJson(String value) => UpdateFlagSegmentRequestBodyOperationsItemAction._(value);
 
   static const add = UpdateFlagSegmentRequestBodyOperationsItemAction._('add');
-  static const remove =
-      UpdateFlagSegmentRequestBodyOperationsItemAction._('remove');
+  static const remove = UpdateFlagSegmentRequestBodyOperationsItemAction._('remove');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagSegmentRequestBodyOperationsItemAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagSegmentRequestBodyOperationsItemAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateFlagSegmentRequestBodyOperationsItemField {
+
   final String value;
 
   const UpdateFlagSegmentRequestBodyOperationsItemField._(this.value);
 
-  factory UpdateFlagSegmentRequestBodyOperationsItemField.fromJson(
-          String value) =>
-      UpdateFlagSegmentRequestBodyOperationsItemField._(value);
+  factory UpdateFlagSegmentRequestBodyOperationsItemField.fromJson(String value) => UpdateFlagSegmentRequestBodyOperationsItemField._(value);
 
-  static const include =
-      UpdateFlagSegmentRequestBodyOperationsItemField._('include');
-  static const exclude =
-      UpdateFlagSegmentRequestBodyOperationsItemField._('exclude');
+  static const include = UpdateFlagSegmentRequestBodyOperationsItemField._('include');
+  static const exclude = UpdateFlagSegmentRequestBodyOperationsItemField._('exclude');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateFlagSegmentRequestBodyOperationsItemField &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateFlagSegmentRequestBodyOperationsItemField && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetFlagSettingsResponseEnabled {
+
   final bool value;
 
   const GetFlagSettingsResponseEnabled._(this.value);
 
-  factory GetFlagSettingsResponseEnabled.fromJson(bool value) =>
-      GetFlagSettingsResponseEnabled._(value);
+  factory GetFlagSettingsResponseEnabled.fromJson(bool value) => GetFlagSettingsResponseEnabled._(value);
 
   static const false_ = GetFlagSettingsResponseEnabled._(false);
   static const true_ = GetFlagSettingsResponseEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetFlagSettingsResponseEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is GetFlagSettingsResponseEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -5,184 +5,123 @@ part of 'inline.dart';
 
 // Inline operation models (part 100)
 final class GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory {
+
   final bool value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory.fromJson(
-          bool value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory.fromJson(bool value) => GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(value);
 
-  static const false_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory
-          ._(false);
-  static const true_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory
-          ._(true);
+  static const false_ = GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(false);
+  static const true_ = GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigProjectSettingsSourceFilesOutsideRootDirectory && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig {
+
   final bool value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig.fromJson(
-          bool value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig.fromJson(bool value) => GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig._(value);
 
-  static const false_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig
-          ._(false);
-  static const true_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig
-          ._(true);
+  static const false_ = GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig._(false);
+  static const true_ = GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1BuilderConfigZeroConfig && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls {
+
   final bool value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls.fromJson(
-          bool value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls.fromJson(bool value) => GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(value);
 
-  static const false_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(false);
-  static const true_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(true);
+  static const false_ = GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(false);
+  static const true_ = GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1CleanUrls && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode {
+
   final String value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode.fromJson(String value) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode._(value);
 
-  static const strict =
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode
-          ._('strict');
+  static const strict = GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode._('strict');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueAffinityMode && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture {
+
   final String value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture.fromJson(String value) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture._(value);
 
-  static const arm64 =
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture
-          ._('arm64');
-  static const x8664 =
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture
-          ._('x86_64');
+  static const arm64 = GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture._('arm64');
+  static const x8664 = GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture._('x86_64');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueArchitecture && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Event type - must be "queue/v1beta" (REQUIRED)
 enum GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type {
   queueV1beta;
 
-  static GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type
-      fromJson(String value) {
+  static GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'queue/v1beta':
-        return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type
-            .queueV1beta;
-      default:
-        throw ArgumentError(
-            'Unknown GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type: $value');
+      case 'queue/v1beta': return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta;
+      default: throw ArgumentError('Unknown GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type
-            .queueV1beta:
-        return 'queue/v1beta';
+      case GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta: return 'queue/v1beta';
     }
   }
 
@@ -194,23 +133,16 @@ enum GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimental
 enum GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type {
   queueV2beta;
 
-  static GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type
-      fromJson(String value) {
+  static GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'queue/v2beta':
-        return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type
-            .queueV2beta;
-      default:
-        throw ArgumentError(
-            'Unknown GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type: $value');
+      case 'queue/v2beta': return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta;
+      default: throw ArgumentError('Unknown GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type
-            .queueV2beta:
-        return 'queue/v2beta';
+      case GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta: return 'queue/v2beta';
     }
   }
 
@@ -222,23 +154,16 @@ enum GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimental
 enum GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type {
   scheduleV1beta;
 
-  static GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type
-      fromJson(String value) {
+  static GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type fromJson(String value) {
     switch (value) {
-      case 'schedule/v1beta':
-        return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type
-            .scheduleV1beta;
-      default:
-        throw ArgumentError(
-            'Unknown GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type: $value');
+      case 'schedule/v1beta': return GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta;
+      default: throw ArgumentError('Unknown GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type
-            .scheduleV1beta:
-        return 'schedule/v1beta';
+      case GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta: return 'schedule/v1beta';
     }
   }
 
@@ -247,160 +172,104 @@ enum GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueExperimental
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1 {
+
   final String value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1.fromJson(String value) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1._(value);
 
-  static const max =
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1
-          ._('max');
+  static const max = GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1._('max');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueMaxDurationVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation {
+
   final bool value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation.fromJson(
-          bool value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation.fromJson(bool value) => GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation._(value);
 
-  static const false_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation
-          ._(false);
-  static const true_ =
-      GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation
-          ._(true);
+  static const false_ = GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation._(false);
+  static const true_ = GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1FunctionsValueSupportsCancellation && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type {
+
   final String value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type.fromJson(String value) => GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type._(value);
 
-  static const host =
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type
-          ._('host');
+  static const host = GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type._('host');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type {
+
   final String value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type.fromJson(String value) => GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type._(value);
 
-  static const cookie =
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type
-          ._('cookie');
-  static const header =
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type
-          ._('header');
-  static const query =
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type
-          ._('query');
+  static const cookie = GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type._('cookie');
+  static const header = GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type._('header');
+  static const query = GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type._('query');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemHasItemVariant1Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type {
+
   final String value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type._(
-      this.value);
+  const GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type._(this.value);
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type.fromJson(
-          String value) =>
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type
-          ._(value);
+  factory GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type.fromJson(String value) => GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type._(value);
 
-  static const host =
-      GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type
-          ._('host');
+  static const host = GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type._('host');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetDeploymentResponseVariant1ServicesItemVariant1HeadersItemMissingItemVariant0Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

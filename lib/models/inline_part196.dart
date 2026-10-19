@@ -7,23 +7,16 @@ part of 'inline.dart';
 enum UploadProjectAvatarResponseEnvItemContentHintVariant16Type {
   flagsConnectionString;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant16Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant16Type fromJson(String value) {
     switch (value) {
-      case 'flags-connection-string':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant16Type
-            .flagsConnectionString;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant16Type: $value');
+      case 'flags-connection-string': return UploadProjectAvatarResponseEnvItemContentHintVariant16Type.flagsConnectionString;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant16Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant16Type
-            .flagsConnectionString:
-        return 'flags-connection-string';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant16Type.flagsConnectionString: return 'flags-connection-string';
     }
   }
 
@@ -34,23 +27,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant16Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant2Type {
   redisRestApiToken;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant2Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant2Type fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-token':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant2Type
-            .redisRestApiToken;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant2Type: $value');
+      case 'redis-rest-api-token': return UploadProjectAvatarResponseEnvItemContentHintVariant2Type.redisRestApiToken;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant2Type
-            .redisRestApiToken:
-        return 'redis-rest-api-token';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant2Type.redisRestApiToken: return 'redis-rest-api-token';
     }
   }
 
@@ -61,23 +47,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant2Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant3Type {
   redisRestApiReadOnlyToken;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant3Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant3Type fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-read-only-token':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant3Type
-            .redisRestApiReadOnlyToken;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant3Type: $value');
+      case 'redis-rest-api-read-only-token': return UploadProjectAvatarResponseEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant3Type
-            .redisRestApiReadOnlyToken:
-        return 'redis-rest-api-read-only-token';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant3Type.redisRestApiReadOnlyToken: return 'redis-rest-api-read-only-token';
     }
   }
 
@@ -88,23 +67,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant3Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant4Type {
   blobReadWriteToken;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant4Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant4Type fromJson(String value) {
     switch (value) {
-      case 'blob-read-write-token':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant4Type
-            .blobReadWriteToken;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant4Type: $value');
+      case 'blob-read-write-token': return UploadProjectAvatarResponseEnvItemContentHintVariant4Type.blobReadWriteToken;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant4Type
-            .blobReadWriteToken:
-        return 'blob-read-write-token';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant4Type.blobReadWriteToken: return 'blob-read-write-token';
     }
   }
 
@@ -115,23 +87,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant4Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant5Type {
   blobStoreId;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant5Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant5Type fromJson(String value) {
     switch (value) {
-      case 'blob-store-id':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant5Type
-            .blobStoreId;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant5Type: $value');
+      case 'blob-store-id': return UploadProjectAvatarResponseEnvItemContentHintVariant5Type.blobStoreId;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant5Type
-            .blobStoreId:
-        return 'blob-store-id';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant5Type.blobStoreId: return 'blob-store-id';
     }
   }
 
@@ -142,23 +107,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant5Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant6Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant6Type fromJson(String value) {
     switch (value) {
-      case 'blob-webhook-public-key':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant6Type
-            .blobWebhookPublicKey;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key': return UploadProjectAvatarResponseEnvItemContentHintVariant6Type.blobWebhookPublicKey;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant6Type
-            .blobWebhookPublicKey:
-        return 'blob-webhook-public-key';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
     }
   }
 
@@ -169,23 +127,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant6Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant7Type {
   postgresUrl;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant7Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant7Type fromJson(String value) {
     switch (value) {
-      case 'postgres-url':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant7Type
-            .postgresUrl;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant7Type: $value');
+      case 'postgres-url': return UploadProjectAvatarResponseEnvItemContentHintVariant7Type.postgresUrl;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant7Type
-            .postgresUrl:
-        return 'postgres-url';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant7Type.postgresUrl: return 'postgres-url';
     }
   }
 
@@ -196,23 +147,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant7Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant8Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant8Type fromJson(String value) {
     switch (value) {
-      case 'postgres-url-non-pooling':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant8Type
-            .postgresUrlNonPooling;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling': return UploadProjectAvatarResponseEnvItemContentHintVariant8Type.postgresUrlNonPooling;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant8Type
-            .postgresUrlNonPooling:
-        return 'postgres-url-non-pooling';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
     }
   }
 
@@ -223,23 +167,16 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant8Type {
 enum UploadProjectAvatarResponseEnvItemContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static UploadProjectAvatarResponseEnvItemContentHintVariant9Type fromJson(
-      String value) {
+  static UploadProjectAvatarResponseEnvItemContentHintVariant9Type fromJson(String value) {
     switch (value) {
-      case 'postgres-prisma-url':
-        return UploadProjectAvatarResponseEnvItemContentHintVariant9Type
-            .postgresPrismaUrl;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseEnvItemContentHintVariant9Type: $value');
+      case 'postgres-prisma-url': return UploadProjectAvatarResponseEnvItemContentHintVariant9Type.postgresPrismaUrl;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseEnvItemContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseEnvItemContentHintVariant9Type
-            .postgresPrismaUrl:
-        return 'postgres-prisma-url';
+      case UploadProjectAvatarResponseEnvItemContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
     }
   }
 
@@ -248,55 +185,38 @@ enum UploadProjectAvatarResponseEnvItemContentHintVariant9Type {
 }
 
 final class UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key {
+
   final String value;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-      this.value);
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(this.value);
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-          value);
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(String value) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(value);
 
-  static const xVercelIpCountry =
-      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._(
-          'x-vercel-ip-country');
+  static const xVercelIpCountry = UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key._('x-vercel-ip-country');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 enum UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type {
   header;
 
-  static UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
-      fromJson(String value) {
+  static UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'header':
-        return UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
-            .header;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type: $value');
+      case 'header': return UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type.header;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
-            .header:
-        return 'header';
+      case UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type.header: return 'header';
     }
   }
 
@@ -307,23 +227,16 @@ enum UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type {
 enum UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type {
   host;
 
-  static UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
-      fromJson(String value) {
+  static UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'host':
-        return UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
-            .host;
-      default:
-        throw ArgumentError(
-            'Unknown UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type: $value');
+      case 'host': return UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type.host;
+      default: throw ArgumentError('Unknown UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
-            .host:
-        return 'host';
+      case UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type.host: return 'host';
     }
   }
 
@@ -332,59 +245,42 @@ enum UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type {
 }
 
 final class UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction {
+
   final String value;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(
-      this.value);
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(this.value);
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction.fromJson(
-          String value) =>
-      UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(
-          value);
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction.fromJson(String value) => UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(value);
 
-  static const blockLegalCwc =
-      UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._(
-          'block_legal_cwc');
+  static const blockLegalCwc = UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction._('block_legal_cwc');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UploadProjectAvatarResponseLinkVariant0Sourceless {
+
   final bool value;
 
   const UploadProjectAvatarResponseLinkVariant0Sourceless._(this.value);
 
-  factory UploadProjectAvatarResponseLinkVariant0Sourceless.fromJson(
-          bool value) =>
-      UploadProjectAvatarResponseLinkVariant0Sourceless._(value);
+  factory UploadProjectAvatarResponseLinkVariant0Sourceless.fromJson(bool value) => UploadProjectAvatarResponseLinkVariant0Sourceless._(value);
 
-  static const false_ =
-      UploadProjectAvatarResponseLinkVariant0Sourceless._(false);
-  static const true_ =
-      UploadProjectAvatarResponseLinkVariant0Sourceless._(true);
+  static const false_ = UploadProjectAvatarResponseLinkVariant0Sourceless._(false);
+  static const true_ = UploadProjectAvatarResponseLinkVariant0Sourceless._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UploadProjectAvatarResponseLinkVariant0Sourceless &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseLinkVariant0Sourceless && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

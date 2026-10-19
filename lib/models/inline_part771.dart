@@ -7,82 +7,35 @@ part of 'inline.dart';
 class GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Whether or not to generate OpenID Connect JSON Web Tokens.
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled>
-      enabled;
-
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled> enabled;
   /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
-  final SdkOptional<
-          GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode>
-      issuerMode;
+  final SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode> issuerMode;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig(
-      {this.enabled = const SdkOmitted(),
-      this.issuerMode = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig({this.enabled = const SdkOmitted(), this.issuerMode = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig Function(
-      {SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled>
-          enabled,
-      SdkOptional<
-              GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode>
-          issuerMode}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig Function({SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled> enabled, SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode> issuerMode}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? issuerMode = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled>,
-        issuerMode: identical(issuerMode, sdkOmittedValue)
-            ? this.issuerMode
-            : issuerMode as SdkOptional<
-                GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig _copyWith({Object? enabled = sdkOmittedValue, Object? issuerMode = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled>,
+    issuerMode: identical(issuerMode, sdkOmittedValue) ? this.issuerMode : issuerMode as SdkOptional<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig(
-        enabled: json['enabled'] != null
-            ? SdkPresent((json['enabled'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled
-                    .fromJson(json['enabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        issuerMode: json['issuerMode'] != null
-            ? SdkPresent((json['issuerMode'] != null
-                ? GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode
-                    .fromJson(json['issuerMode'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfig(
+    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
+    issuerMode: json['issuerMode'] != null ? SdkPresent((json['issuerMode'] != null ? GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode.fromJson(json['issuerMode'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (enabled) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled>(
-            value: final value
-          ) =>
-            {
-              'enabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (issuerMode) {
-          SdkPresent<
-                GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode>(
-            value: final value
-          ) =>
-            {
-              'issuerMode': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (enabled) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigEnabled>(value: final value) => {'enabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (issuerMode) {
+      SdkPresent<GetMicrofrontendsInGroupResponseProjectsItemOidcTokenConfigIssuerMode>(value: final value) => {'issuerMode': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem {
@@ -90,146 +43,90 @@ class GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem {
   static const String constructionSurface = 'named';
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem(
-      {required this.value});
+  const GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem({required this.value});
 
-  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem
-      Function({String value}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem Function({String value}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem
-      _copyWith({Object? value = sdkOmittedValue}) =>
-          GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem(
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as String,
-          );
+  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem _copyWith({Object? value = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem(
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem(
-        value: (json['value'] as String?)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem(
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'value': value,
-      };
+    'value': value,
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<
-          GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem>
-      paths;
+  final List<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem> paths;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist(
-      {required this.paths});
+  const GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist({required this.paths});
 
-  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist Function(
-      {List<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem>
-          paths}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist Function({List<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem> paths}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist _copyWith(
-          {Object? paths = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist(
-        paths: identical(paths, sdkOmittedValue)
-            ? this.paths
-            : paths as List<
-                GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem>,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist _copyWith({Object? paths = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist(
+    paths: identical(paths, sdkOmittedValue) ? this.paths : paths as List<GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem>,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist(
-        paths: ((json['paths'] as List?)
-            ?.map((e) =>
-                GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlist(
+    paths: ((json['paths'] as List?)?.map((e) => GetMicrofrontendsInGroupResponseProjectsItemOptionsAllowlistPathsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'paths': paths.map((item) => item.toJson()).toList(),
-      };
+    'paths': paths.map((item) => item.toJson()).toList(),
+  };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String connectorId;
-  final GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType
-      deploymentType;
+  final GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType deploymentType;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemPassport(
-      {required this.connectorId, required this.deploymentType});
+  const GetMicrofrontendsInGroupResponseProjectsItemPassport({required this.connectorId, required this.deploymentType});
 
-  GetMicrofrontendsInGroupResponseProjectsItemPassport Function(
-      {String connectorId,
-      GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemPassport Function({String connectorId, GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType deploymentType}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemPassport _copyWith(
-          {Object? connectorId = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemPassport(
-        connectorId: identical(connectorId, sdkOmittedValue)
-            ? this.connectorId
-            : connectorId as String,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemPassport(
+    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemPassport.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemPassport(
-        connectorId: (json['connectorId'] as String?)!,
-        deploymentType: (json['deploymentType'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemPassport.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemPassport(
+    connectorId: (json['connectorId'] as String?)!,
+    deploymentType: (json['deploymentType'] != null ? GetMicrofrontendsInGroupResponseProjectsItemPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectorId': connectorId,
-        'deploymentType': deploymentType.toJson(),
-      };
+    'connectorId': connectorId,
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 /// Password protection settings returned without the secret password hash.
 class GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType
-      deploymentType;
+  final GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType deploymentType;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection(
-      {required this.deploymentType});
+  const GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection({required this.deploymentType});
 
-  GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection Function(
-      {GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection Function({GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType deploymentType}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection _copyWith(
-          {Object? deploymentType = sdkOmittedValue}) =>
-      GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection(
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType,
-      );
+  GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection _copyWith({Object? deploymentType = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection(
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType,
+  );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection.fromJson(
-          Map<String, dynamic> json) =>
-      GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection(
-        deploymentType: (json['deploymentType'] != null
-            ? GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemPasswordProtection(
+    deploymentType: (json['deploymentType'] != null ? GetMicrofrontendsInGroupResponseProjectsItemPasswordProtectionDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'deploymentType': deploymentType.toJson(),
-      };
+    'deploymentType': deploymentType.toJson(),
+  };
 }

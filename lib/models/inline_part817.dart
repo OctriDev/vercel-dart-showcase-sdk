@@ -9,7 +9,6 @@ class ListProjectsResponseVariant0ItemEnvItem {
   static const String constructionSurface = 'named';
   final SdkOptional<String> comment;
   final SdkOptional<String?> configurationId;
-
   /// Typed representation of the `ListProjectsResponseItemEnvItemContentHint` API schema.
   final SdkOptional<ListProjectsResponseItemEnvItemContentHint?> contentHint;
   final SdkOptional<double> createdAt;
@@ -20,15 +19,11 @@ class ListProjectsResponseVariant0ItemEnvItem {
   final SdkOptional<String?> edgeConfigTokenId;
   final SdkOptional<String> gitBranch;
   final SdkOptional<String> id;
-
   /// Similar to `contentHints`, but should not be exposed to the user.
-  final SdkOptional<ListProjectsResponseVariant0ItemEnvItemInternalContentHint?>
-      internalContentHint;
+  final SdkOptional<ListProjectsResponseVariant0ItemEnvItemInternalContentHint?> internalContentHint;
   final String key;
-
   /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
   final SdkOptional<String> legacyValue;
-
   /// This is used to identify variables that have been migrated from type secret to sensitive.
   final SdkOptional<String> sunsetSecretId;
   final SdkOptional<dynamic> target;
@@ -36,366 +31,143 @@ class ListProjectsResponseVariant0ItemEnvItem {
   final SdkOptional<double> updatedAt;
   final SdkOptional<String?> updatedBy;
   final String value;
-
   /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
-  final SdkOptional<ListProjectsResponseVariant0ItemEnvItemVisibility>
-      visibility;
+  final SdkOptional<ListProjectsResponseVariant0ItemEnvItemVisibility> visibility;
   final SdkOptional<String> vsmValue;
 
-  const ListProjectsResponseVariant0ItemEnvItem(
-      {this.comment = const SdkOmitted(),
-      this.configurationId = const SdkOmitted(),
-      this.contentHint = const SdkOmitted(),
-      this.createdAt = const SdkOmitted(),
-      this.createdBy = const SdkOmitted(),
-      this.customEnvironmentIds = const SdkOmitted(),
-      this.decrypted = const SdkOmitted(),
-      this.edgeConfigId = const SdkOmitted(),
-      this.edgeConfigTokenId = const SdkOmitted(),
-      this.gitBranch = const SdkOmitted(),
-      this.id = const SdkOmitted(),
-      this.internalContentHint = const SdkOmitted(),
-      required this.key,
-      this.legacyValue = const SdkOmitted(),
-      this.sunsetSecretId = const SdkOmitted(),
-      this.target = const SdkOmitted(),
-      required this.type_,
-      this.updatedAt = const SdkOmitted(),
-      this.updatedBy = const SdkOmitted(),
-      required this.value,
-      this.visibility = const SdkOmitted(),
-      this.vsmValue = const SdkOmitted()});
+  const ListProjectsResponseVariant0ItemEnvItem({this.comment = const SdkOmitted(), this.configurationId = const SdkOmitted(), this.contentHint = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.createdBy = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted(), this.decrypted = const SdkOmitted(), this.edgeConfigId = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.id = const SdkOmitted(), this.internalContentHint = const SdkOmitted(), required this.key, this.legacyValue = const SdkOmitted(), this.sunsetSecretId = const SdkOmitted(), this.target = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted(), required this.value, this.visibility = const SdkOmitted(), this.vsmValue = const SdkOmitted()});
 
-  ListProjectsResponseVariant0ItemEnvItem Function(
-      {SdkOptional<String> comment,
-      SdkOptional<String?> configurationId,
-      SdkOptional<ListProjectsResponseItemEnvItemContentHint?> contentHint,
-      SdkOptional<double> createdAt,
-      SdkOptional<String?> createdBy,
-      SdkOptional<List<String>> customEnvironmentIds,
-      SdkOptional<ListProjectsResponseVariant0ItemEnvItemDecrypted> decrypted,
-      SdkOptional<String?> edgeConfigId,
-      SdkOptional<String?> edgeConfigTokenId,
-      SdkOptional<String> gitBranch,
-      SdkOptional<String> id,
-      SdkOptional<ListProjectsResponseVariant0ItemEnvItemInternalContentHint?>
-          internalContentHint,
-      String key,
-      SdkOptional<String> legacyValue,
-      SdkOptional<String> sunsetSecretId,
-      SdkOptional<dynamic> target,
-      ListProjectsResponseVariant0ItemEnvItemType type_,
-      SdkOptional<double> updatedAt,
-      SdkOptional<String?> updatedBy,
-      String value,
-      SdkOptional<ListProjectsResponseVariant0ItemEnvItemVisibility> visibility,
-      SdkOptional<String> vsmValue}) get copyWith => _copyWith;
+  ListProjectsResponseVariant0ItemEnvItem Function({SdkOptional<String> comment, SdkOptional<String?> configurationId, SdkOptional<ListProjectsResponseItemEnvItemContentHint?> contentHint, SdkOptional<double> createdAt, SdkOptional<String?> createdBy, SdkOptional<List<String>> customEnvironmentIds, SdkOptional<ListProjectsResponseVariant0ItemEnvItemDecrypted> decrypted, SdkOptional<String?> edgeConfigId, SdkOptional<String?> edgeConfigTokenId, SdkOptional<String> gitBranch, SdkOptional<String> id, SdkOptional<ListProjectsResponseVariant0ItemEnvItemInternalContentHint?> internalContentHint, String key, SdkOptional<String> legacyValue, SdkOptional<String> sunsetSecretId, SdkOptional<dynamic> target, ListProjectsResponseVariant0ItemEnvItemType type_, SdkOptional<double> updatedAt, SdkOptional<String?> updatedBy, String value, SdkOptional<ListProjectsResponseVariant0ItemEnvItemVisibility> visibility, SdkOptional<String> vsmValue}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant0ItemEnvItem _copyWith(
-          {Object? comment = sdkOmittedValue,
-          Object? configurationId = sdkOmittedValue,
-          Object? contentHint = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? createdBy = sdkOmittedValue,
-          Object? customEnvironmentIds = sdkOmittedValue,
-          Object? decrypted = sdkOmittedValue,
-          Object? edgeConfigId = sdkOmittedValue,
-          Object? edgeConfigTokenId = sdkOmittedValue,
-          Object? gitBranch = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? internalContentHint = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? legacyValue = sdkOmittedValue,
-          Object? sunsetSecretId = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue,
-          Object? updatedBy = sdkOmittedValue,
-          Object? value = sdkOmittedValue,
-          Object? visibility = sdkOmittedValue,
-          Object? vsmValue = sdkOmittedValue}) =>
-      ListProjectsResponseVariant0ItemEnvItem(
-        comment: identical(comment, sdkOmittedValue)
-            ? this.comment
-            : comment as SdkOptional<String>,
-        configurationId: identical(configurationId, sdkOmittedValue)
-            ? this.configurationId
-            : configurationId as SdkOptional<String?>,
-        contentHint: identical(contentHint, sdkOmittedValue)
-            ? this.contentHint
-            : contentHint
-                as SdkOptional<ListProjectsResponseItemEnvItemContentHint?>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as SdkOptional<double>,
-        createdBy: identical(createdBy, sdkOmittedValue)
-            ? this.createdBy
-            : createdBy as SdkOptional<String?>,
-        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
-            ? this.customEnvironmentIds
-            : customEnvironmentIds as SdkOptional<List<String>>,
-        decrypted: identical(decrypted, sdkOmittedValue)
-            ? this.decrypted
-            : decrypted as SdkOptional<
-                ListProjectsResponseVariant0ItemEnvItemDecrypted>,
-        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
-            ? this.edgeConfigId
-            : edgeConfigId as SdkOptional<String?>,
-        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
-            ? this.edgeConfigTokenId
-            : edgeConfigTokenId as SdkOptional<String?>,
-        gitBranch: identical(gitBranch, sdkOmittedValue)
-            ? this.gitBranch
-            : gitBranch as SdkOptional<String>,
-        id: identical(id, sdkOmittedValue)
-            ? this.id
-            : id as SdkOptional<String>,
-        internalContentHint: identical(internalContentHint, sdkOmittedValue)
-            ? this.internalContentHint
-            : internalContentHint as SdkOptional<
-                ListProjectsResponseVariant0ItemEnvItemInternalContentHint?>,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        legacyValue: identical(legacyValue, sdkOmittedValue)
-            ? this.legacyValue
-            : legacyValue as SdkOptional<String>,
-        sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue)
-            ? this.sunsetSecretId
-            : sunsetSecretId as SdkOptional<String>,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<dynamic>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as ListProjectsResponseVariant0ItemEnvItemType,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as SdkOptional<double>,
-        updatedBy: identical(updatedBy, sdkOmittedValue)
-            ? this.updatedBy
-            : updatedBy as SdkOptional<String?>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-        visibility: identical(visibility, sdkOmittedValue)
-            ? this.visibility
-            : visibility as SdkOptional<
-                ListProjectsResponseVariant0ItemEnvItemVisibility>,
-        vsmValue: identical(vsmValue, sdkOmittedValue)
-            ? this.vsmValue
-            : vsmValue as SdkOptional<String>,
-      );
+  ListProjectsResponseVariant0ItemEnvItem _copyWith({Object? comment = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? contentHint = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue, Object? decrypted = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? internalContentHint = sdkOmittedValue, Object? key = sdkOmittedValue, Object? legacyValue = sdkOmittedValue, Object? sunsetSecretId = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? value = sdkOmittedValue, Object? visibility = sdkOmittedValue, Object? vsmValue = sdkOmittedValue}) => ListProjectsResponseVariant0ItemEnvItem(
+    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
+    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String?>,
+    contentHint: identical(contentHint, sdkOmittedValue) ? this.contentHint : contentHint as SdkOptional<ListProjectsResponseItemEnvItemContentHint?>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
+    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String?>,
+    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
+    decrypted: identical(decrypted, sdkOmittedValue) ? this.decrypted : decrypted as SdkOptional<ListProjectsResponseVariant0ItemEnvItemDecrypted>,
+    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String?>,
+    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String?>,
+    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
+    internalContentHint: identical(internalContentHint, sdkOmittedValue) ? this.internalContentHint : internalContentHint as SdkOptional<ListProjectsResponseVariant0ItemEnvItemInternalContentHint?>,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    legacyValue: identical(legacyValue, sdkOmittedValue) ? this.legacyValue : legacyValue as SdkOptional<String>,
+    sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue) ? this.sunsetSecretId : sunsetSecretId as SdkOptional<String>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant0ItemEnvItemType,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
+    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String?>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+    visibility: identical(visibility, sdkOmittedValue) ? this.visibility : visibility as SdkOptional<ListProjectsResponseVariant0ItemEnvItemVisibility>,
+    vsmValue: identical(vsmValue, sdkOmittedValue) ? this.vsmValue : vsmValue as SdkOptional<String>,
+  );
 
-  factory ListProjectsResponseVariant0ItemEnvItem.fromJson(
-          Map<String, dynamic> json) =>
-      ListProjectsResponseVariant0ItemEnvItem(
-        comment: json['comment'] != null
-            ? SdkPresent((json['comment'] as String?)!)
-            : const SdkOmitted(),
-        configurationId: json.containsKey('configurationId')
-            ? SdkPresent(json['configurationId'] as String?)
-            : const SdkOmitted(),
-        contentHint: json.containsKey('contentHint')
-            ? SdkPresent(json['contentHint'] != null
-                ? ListProjectsResponseItemEnvItemContentHint.fromJson(
-                    json['contentHint'])
-                : null)
-            : const SdkOmitted(),
-        createdAt: json['createdAt'] != null
-            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        createdBy: json.containsKey('createdBy')
-            ? SdkPresent(json['createdBy'] as String?)
-            : const SdkOmitted(),
-        customEnvironmentIds: json['customEnvironmentIds'] != null
-            ? SdkPresent(((json['customEnvironmentIds'] as List?)
-                ?.map((e) => e as String)
-                .toList())!)
-            : const SdkOmitted(),
-        decrypted: json['decrypted'] != null
-            ? SdkPresent((json['decrypted'] != null
-                ? ListProjectsResponseVariant0ItemEnvItemDecrypted.fromJson(
-                    json['decrypted'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        edgeConfigId: json.containsKey('edgeConfigId')
-            ? SdkPresent(json['edgeConfigId'] as String?)
-            : const SdkOmitted(),
-        edgeConfigTokenId: json.containsKey('edgeConfigTokenId')
-            ? SdkPresent(json['edgeConfigTokenId'] as String?)
-            : const SdkOmitted(),
-        gitBranch: json['gitBranch'] != null
-            ? SdkPresent((json['gitBranch'] as String?)!)
-            : const SdkOmitted(),
-        id: json['id'] != null
-            ? SdkPresent((json['id'] as String?)!)
-            : const SdkOmitted(),
-        internalContentHint: json.containsKey('internalContentHint')
-            ? SdkPresent(json['internalContentHint'] != null
-                ? ListProjectsResponseVariant0ItemEnvItemInternalContentHint
-                    .fromJson(
-                        json['internalContentHint'] as Map<String, dynamic>)
-                : null)
-            : const SdkOmitted(),
-        key: (json['key'] as String?)!,
-        legacyValue: json['legacyValue'] != null
-            ? SdkPresent((json['legacyValue'] as String?)!)
-            : const SdkOmitted(),
-        sunsetSecretId: json['sunsetSecretId'] != null
-            ? SdkPresent((json['sunsetSecretId'] as String?)!)
-            : const SdkOmitted(),
-        target: json['target'] != null
-            ? SdkPresent((json['target'])!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? ListProjectsResponseVariant0ItemEnvItemType.fromJson(
-                json['type'] as String)
-            : null)!,
-        updatedAt: json['updatedAt'] != null
-            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        updatedBy: json.containsKey('updatedBy')
-            ? SdkPresent(json['updatedBy'] as String?)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-        visibility: json['visibility'] != null
-            ? SdkPresent((json['visibility'] != null
-                ? ListProjectsResponseVariant0ItemEnvItemVisibility.fromJson(
-                    json['visibility'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        vsmValue: json['vsmValue'] != null
-            ? SdkPresent((json['vsmValue'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ListProjectsResponseVariant0ItemEnvItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant0ItemEnvItem(
+    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
+    configurationId: json.containsKey('configurationId') ? SdkPresent(json['configurationId'] as String?) : const SdkOmitted(),
+    contentHint: json.containsKey('contentHint') ? SdkPresent(json['contentHint'] != null ? ListProjectsResponseItemEnvItemContentHint.fromJson(json['contentHint']) : null) : const SdkOmitted(),
+    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    createdBy: json.containsKey('createdBy') ? SdkPresent(json['createdBy'] as String?) : const SdkOmitted(),
+    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
+    decrypted: json['decrypted'] != null ? SdkPresent((json['decrypted'] != null ? ListProjectsResponseVariant0ItemEnvItemDecrypted.fromJson(json['decrypted'] as bool) : null)!) : const SdkOmitted(),
+    edgeConfigId: json.containsKey('edgeConfigId') ? SdkPresent(json['edgeConfigId'] as String?) : const SdkOmitted(),
+    edgeConfigTokenId: json.containsKey('edgeConfigTokenId') ? SdkPresent(json['edgeConfigTokenId'] as String?) : const SdkOmitted(),
+    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
+    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
+    internalContentHint: json.containsKey('internalContentHint') ? SdkPresent(json['internalContentHint'] != null ? ListProjectsResponseVariant0ItemEnvItemInternalContentHint.fromJson(json['internalContentHint'] as Map<String, dynamic>) : null) : const SdkOmitted(),
+    key: (json['key'] as String?)!,
+    legacyValue: json['legacyValue'] != null ? SdkPresent((json['legacyValue'] as String?)!) : const SdkOmitted(),
+    sunsetSecretId: json['sunsetSecretId'] != null ? SdkPresent((json['sunsetSecretId'] as String?)!) : const SdkOmitted(),
+    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
+    type_: (json['type'] != null ? ListProjectsResponseVariant0ItemEnvItemType.fromJson(json['type'] as String) : null)!,
+    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    updatedBy: json.containsKey('updatedBy') ? SdkPresent(json['updatedBy'] as String?) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+    visibility: json['visibility'] != null ? SdkPresent((json['visibility'] != null ? ListProjectsResponseVariant0ItemEnvItemVisibility.fromJson(json['visibility'] as String) : null)!) : const SdkOmitted(),
+    vsmValue: json['vsmValue'] != null ? SdkPresent((json['vsmValue'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (comment) {
-          SdkPresent<String>(value: final value) => {
-              'comment': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (configurationId) {
-          SdkPresent<String?>(value: final value) => {
-              'configurationId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (contentHint) {
-          SdkPresent<ListProjectsResponseItemEnvItemContentHint?>(
-            value: final value
-          ) =>
-            {
-              'contentHint': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdAt) {
-          SdkPresent<double>(value: final value) => {
-              'createdAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (createdBy) {
-          SdkPresent<String?>(value: final value) => {
-              'createdBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (customEnvironmentIds) {
-          SdkPresent<List<String>>(value: final value) => {
-              'customEnvironmentIds': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (decrypted) {
-          SdkPresent<ListProjectsResponseVariant0ItemEnvItemDecrypted>(
-            value: final value
-          ) =>
-            {
-              'decrypted': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (edgeConfigTokenId) {
-          SdkPresent<String?>(value: final value) => {
-              'edgeConfigTokenId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitBranch) {
-          SdkPresent<String>(value: final value) => {
-              'gitBranch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (id) {
-          SdkPresent<String>(value: final value) => {
-              'id': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (internalContentHint) {
-          SdkPresent<
-                ListProjectsResponseVariant0ItemEnvItemInternalContentHint?>(
-            value: final value
-          ) =>
-            {
-              'internalContentHint': value?.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'key': key,
-        ...switch (legacyValue) {
-          SdkPresent<String>(value: final value) => {
-              'legacyValue': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sunsetSecretId) {
-          SdkPresent<String>(value: final value) => {
-              'sunsetSecretId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (target) {
-          SdkPresent<dynamic>(value: final value) => {
-              'target': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-        ...switch (updatedAt) {
-          SdkPresent<double>(value: final value) => {
-              'updatedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (updatedBy) {
-          SdkPresent<String?>(value: final value) => {
-              'updatedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-        ...switch (visibility) {
-          SdkPresent<ListProjectsResponseVariant0ItemEnvItemVisibility>(
-            value: final value
-          ) =>
-            {
-              'visibility': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (vsmValue) {
-          SdkPresent<String>(value: final value) => {
-              'vsmValue': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (comment) {
+      SdkPresent<String>(value: final value) => {'comment': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (configurationId) {
+      SdkPresent<String?>(value: final value) => {'configurationId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (contentHint) {
+      SdkPresent<ListProjectsResponseItemEnvItemContentHint?>(value: final value) => {'contentHint': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdAt) {
+      SdkPresent<double>(value: final value) => {'createdAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (createdBy) {
+      SdkPresent<String?>(value: final value) => {'createdBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (customEnvironmentIds) {
+      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (decrypted) {
+      SdkPresent<ListProjectsResponseVariant0ItemEnvItemDecrypted>(value: final value) => {'decrypted': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (edgeConfigTokenId) {
+      SdkPresent<String?>(value: final value) => {'edgeConfigTokenId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitBranch) {
+      SdkPresent<String>(value: final value) => {'gitBranch': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (id) {
+      SdkPresent<String>(value: final value) => {'id': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (internalContentHint) {
+      SdkPresent<ListProjectsResponseVariant0ItemEnvItemInternalContentHint?>(value: final value) => {'internalContentHint': value?.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'key': key,
+    ...switch (legacyValue) {
+      SdkPresent<String>(value: final value) => {'legacyValue': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sunsetSecretId) {
+      SdkPresent<String>(value: final value) => {'sunsetSecretId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (target) {
+      SdkPresent<dynamic>(value: final value) => {'target': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+    ...switch (updatedAt) {
+      SdkPresent<double>(value: final value) => {'updatedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (updatedBy) {
+      SdkPresent<String?>(value: final value) => {'updatedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+    ...switch (visibility) {
+      SdkPresent<ListProjectsResponseVariant0ItemEnvItemVisibility>(value: final value) => {'visibility': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (vsmValue) {
+      SdkPresent<String>(value: final value) => {'vsmValue': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

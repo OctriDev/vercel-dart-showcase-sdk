@@ -7,526 +7,146 @@ part of 'inline.dart';
 class CreateIntegrationStoreDirectResponseStoreProductCapabilities {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools>
-      agentTools;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive>
-      autoSensitive;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable>
-      billable;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource>
-      connectedImportResource;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI>
-      databaseUi;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource>
-      importResource;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking>
-      linking;
-  final SdkOptional<
-      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp> mcp;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly>
-      mcpReadonly;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource>
-      nativeImportResource;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects>
-      projects;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox>
-      sandbox;
-
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools> agentTools;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive> autoSensitive;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable> billable;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource> connectedImportResource;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI> databaseUi;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource> importResource;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking> linking;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp> mcp;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly> mcpReadonly;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource> nativeImportResource;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects> projects;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox> sandbox;
   /// Typed representation of the `CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation` API schema.
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation>
-      secretRotation;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync>
-      secretsSync;
-  final SdkOptional<
-      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso> sso;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable>
-      transferable;
-  final SdkOptional<
-      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0> v0;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors>
-      v0Flavors;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation> secretRotation;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync> secretsSync;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso> sso;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable> transferable;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0> v0;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors> v0Flavors;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilities(
-      {this.agentTools = const SdkOmitted(),
-      this.autoSensitive = const SdkOmitted(),
-      this.billable = const SdkOmitted(),
-      this.connectedImportResource = const SdkOmitted(),
-      this.databaseUi = const SdkOmitted(),
-      this.importResource = const SdkOmitted(),
-      this.linking = const SdkOmitted(),
-      this.mcp = const SdkOmitted(),
-      this.mcpReadonly = const SdkOmitted(),
-      this.nativeImportResource = const SdkOmitted(),
-      this.projects = const SdkOmitted(),
-      this.sandbox = const SdkOmitted(),
-      this.secretRotation = const SdkOmitted(),
-      this.secretsSync = const SdkOmitted(),
-      this.sso = const SdkOmitted(),
-      this.transferable = const SdkOmitted(),
-      this.v0 = const SdkOmitted(),
-      this.v0Flavors = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilities({this.agentTools = const SdkOmitted(), this.autoSensitive = const SdkOmitted(), this.billable = const SdkOmitted(), this.connectedImportResource = const SdkOmitted(), this.databaseUi = const SdkOmitted(), this.importResource = const SdkOmitted(), this.linking = const SdkOmitted(), this.mcp = const SdkOmitted(), this.mcpReadonly = const SdkOmitted(), this.nativeImportResource = const SdkOmitted(), this.projects = const SdkOmitted(), this.sandbox = const SdkOmitted(), this.secretRotation = const SdkOmitted(), this.secretsSync = const SdkOmitted(), this.sso = const SdkOmitted(), this.transferable = const SdkOmitted(), this.v0 = const SdkOmitted(), this.v0Flavors = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreProductCapabilities Function(
-      {SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools>
-          agentTools,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive>
-          autoSensitive,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable>
-          billable,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource>
-          connectedImportResource,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI>
-          databaseUi,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource>
-          importResource,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking>
-          linking,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp>
-          mcp,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly>
-          mcpReadonly,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource>
-          nativeImportResource,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects>
-          projects,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox>
-          sandbox,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation>
-          secretRotation,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync>
-          secretsSync,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso>
-          sso,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable>
-          transferable,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0>
-          v0,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors>
-          v0Flavors}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductCapabilities Function({SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools> agentTools, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive> autoSensitive, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable> billable, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource> connectedImportResource, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI> databaseUi, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource> importResource, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking> linking, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp> mcp, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly> mcpReadonly, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource> nativeImportResource, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects> projects, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox> sandbox, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation> secretRotation, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync> secretsSync, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso> sso, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable> transferable, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0> v0, SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors> v0Flavors}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductCapabilities _copyWith(
-          {Object? agentTools = sdkOmittedValue,
-          Object? autoSensitive = sdkOmittedValue,
-          Object? billable = sdkOmittedValue,
-          Object? connectedImportResource = sdkOmittedValue,
-          Object? databaseUi = sdkOmittedValue,
-          Object? importResource = sdkOmittedValue,
-          Object? linking = sdkOmittedValue,
-          Object? mcp = sdkOmittedValue,
-          Object? mcpReadonly = sdkOmittedValue,
-          Object? nativeImportResource = sdkOmittedValue,
-          Object? projects = sdkOmittedValue,
-          Object? sandbox = sdkOmittedValue,
-          Object? secretRotation = sdkOmittedValue,
-          Object? secretsSync = sdkOmittedValue,
-          Object? sso = sdkOmittedValue,
-          Object? transferable = sdkOmittedValue,
-          Object? v0 = sdkOmittedValue,
-          Object? v0Flavors = sdkOmittedValue}) =>
-      CreateIntegrationStoreDirectResponseStoreProductCapabilities(
-        agentTools: identical(agentTools, sdkOmittedValue)
-            ? this.agentTools
-            : agentTools as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools>,
-        autoSensitive: identical(autoSensitive, sdkOmittedValue)
-            ? this.autoSensitive
-            : autoSensitive as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive>,
-        billable: identical(billable, sdkOmittedValue)
-            ? this.billable
-            : billable as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable>,
-        connectedImportResource: identical(
-                connectedImportResource, sdkOmittedValue)
-            ? this.connectedImportResource
-            : connectedImportResource as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource>,
-        databaseUi: identical(databaseUi, sdkOmittedValue)
-            ? this.databaseUi
-            : databaseUi as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI>,
-        importResource: identical(importResource, sdkOmittedValue)
-            ? this.importResource
-            : importResource as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource>,
-        linking: identical(linking, sdkOmittedValue)
-            ? this.linking
-            : linking as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking>,
-        mcp: identical(mcp, sdkOmittedValue)
-            ? this.mcp
-            : mcp as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp>,
-        mcpReadonly: identical(mcpReadonly, sdkOmittedValue)
-            ? this.mcpReadonly
-            : mcpReadonly as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly>,
-        nativeImportResource: identical(nativeImportResource, sdkOmittedValue)
-            ? this.nativeImportResource
-            : nativeImportResource as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource>,
-        projects: identical(projects, sdkOmittedValue)
-            ? this.projects
-            : projects as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects>,
-        sandbox: identical(sandbox, sdkOmittedValue)
-            ? this.sandbox
-            : sandbox as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox>,
-        secretRotation: identical(secretRotation, sdkOmittedValue)
-            ? this.secretRotation
-            : secretRotation as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation>,
-        secretsSync: identical(secretsSync, sdkOmittedValue)
-            ? this.secretsSync
-            : secretsSync as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync>,
-        sso: identical(sso, sdkOmittedValue)
-            ? this.sso
-            : sso as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso>,
-        transferable: identical(transferable, sdkOmittedValue)
-            ? this.transferable
-            : transferable as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable>,
-        v0: identical(v0, sdkOmittedValue)
-            ? this.v0
-            : v0 as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0>,
-        v0Flavors: identical(v0Flavors, sdkOmittedValue)
-            ? this.v0Flavors
-            : v0Flavors as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors>,
-      );
+  CreateIntegrationStoreDirectResponseStoreProductCapabilities _copyWith({Object? agentTools = sdkOmittedValue, Object? autoSensitive = sdkOmittedValue, Object? billable = sdkOmittedValue, Object? connectedImportResource = sdkOmittedValue, Object? databaseUi = sdkOmittedValue, Object? importResource = sdkOmittedValue, Object? linking = sdkOmittedValue, Object? mcp = sdkOmittedValue, Object? mcpReadonly = sdkOmittedValue, Object? nativeImportResource = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? sandbox = sdkOmittedValue, Object? secretRotation = sdkOmittedValue, Object? secretsSync = sdkOmittedValue, Object? sso = sdkOmittedValue, Object? transferable = sdkOmittedValue, Object? v0 = sdkOmittedValue, Object? v0Flavors = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductCapabilities(
+    agentTools: identical(agentTools, sdkOmittedValue) ? this.agentTools : agentTools as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools>,
+    autoSensitive: identical(autoSensitive, sdkOmittedValue) ? this.autoSensitive : autoSensitive as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive>,
+    billable: identical(billable, sdkOmittedValue) ? this.billable : billable as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable>,
+    connectedImportResource: identical(connectedImportResource, sdkOmittedValue) ? this.connectedImportResource : connectedImportResource as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource>,
+    databaseUi: identical(databaseUi, sdkOmittedValue) ? this.databaseUi : databaseUi as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI>,
+    importResource: identical(importResource, sdkOmittedValue) ? this.importResource : importResource as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource>,
+    linking: identical(linking, sdkOmittedValue) ? this.linking : linking as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking>,
+    mcp: identical(mcp, sdkOmittedValue) ? this.mcp : mcp as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp>,
+    mcpReadonly: identical(mcpReadonly, sdkOmittedValue) ? this.mcpReadonly : mcpReadonly as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly>,
+    nativeImportResource: identical(nativeImportResource, sdkOmittedValue) ? this.nativeImportResource : nativeImportResource as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource>,
+    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects>,
+    sandbox: identical(sandbox, sdkOmittedValue) ? this.sandbox : sandbox as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox>,
+    secretRotation: identical(secretRotation, sdkOmittedValue) ? this.secretRotation : secretRotation as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation>,
+    secretsSync: identical(secretsSync, sdkOmittedValue) ? this.secretsSync : secretsSync as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync>,
+    sso: identical(sso, sdkOmittedValue) ? this.sso : sso as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso>,
+    transferable: identical(transferable, sdkOmittedValue) ? this.transferable : transferable as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable>,
+    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0>,
+    v0Flavors: identical(v0Flavors, sdkOmittedValue) ? this.v0Flavors : v0Flavors as SdkOptional<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors>,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilities.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductCapabilities(
-        agentTools: json['agentTools'] != null
-            ? SdkPresent((json['agentTools'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools
-                    .fromJson(json['agentTools'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        autoSensitive: json['autoSensitive'] != null
-            ? SdkPresent((json['autoSensitive'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive
-                    .fromJson(json['autoSensitive'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        billable: json['billable'] != null
-            ? SdkPresent((json['billable'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable
-                    .fromJson(json['billable'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        connectedImportResource: json['connectedImportResource'] != null
-            ? SdkPresent((json['connectedImportResource'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource
-                    .fromJson(json['connectedImportResource'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        databaseUi: json['databaseUI'] != null
-            ? SdkPresent((json['databaseUI'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI
-                    .fromJson(json['databaseUI'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        importResource: json['importResource'] != null
-            ? SdkPresent((json['importResource'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource
-                    .fromJson(json['importResource'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        linking: json['linking'] != null
-            ? SdkPresent((json['linking'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking
-                    .fromJson(json['linking'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        mcp: json['mcp'] != null
-            ? SdkPresent((json['mcp'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp
-                    .fromJson(json['mcp'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        mcpReadonly: json['mcpReadonly'] != null
-            ? SdkPresent((json['mcpReadonly'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly
-                    .fromJson(json['mcpReadonly'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        nativeImportResource: json['nativeImportResource'] != null
-            ? SdkPresent((json['nativeImportResource'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource
-                    .fromJson(json['nativeImportResource'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        projects: json['projects'] != null
-            ? SdkPresent((json['projects'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects
-                    .fromJson(json['projects'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        sandbox: json['sandbox'] != null
-            ? SdkPresent((json['sandbox'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox
-                    .fromJson(json['sandbox'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        secretRotation: json['secretRotation'] != null
-            ? SdkPresent((json['secretRotation'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation
-                    .fromJson(json['secretRotation'])
-                : null)!)
-            : const SdkOmitted(),
-        secretsSync: json['secretsSync'] != null
-            ? SdkPresent((json['secretsSync'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync
-                    .fromJson(json['secretsSync'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        sso: json['sso'] != null
-            ? SdkPresent((json['sso'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso
-                    .fromJson(json['sso'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        transferable: json['transferable'] != null
-            ? SdkPresent((json['transferable'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable
-                    .fromJson(json['transferable'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        v0: json['v0'] != null
-            ? SdkPresent((json['v0'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0
-                    .fromJson(json['v0'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        v0Flavors: json['v0Flavors'] != null
-            ? SdkPresent((json['v0Flavors'] != null
-                ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors
-                    .fromJson(json['v0Flavors'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilities.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductCapabilities(
+    agentTools: json['agentTools'] != null ? SdkPresent((json['agentTools'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools.fromJson(json['agentTools'] as bool) : null)!) : const SdkOmitted(),
+    autoSensitive: json['autoSensitive'] != null ? SdkPresent((json['autoSensitive'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive.fromJson(json['autoSensitive'] as bool) : null)!) : const SdkOmitted(),
+    billable: json['billable'] != null ? SdkPresent((json['billable'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable.fromJson(json['billable'] as bool) : null)!) : const SdkOmitted(),
+    connectedImportResource: json['connectedImportResource'] != null ? SdkPresent((json['connectedImportResource'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource.fromJson(json['connectedImportResource'] as bool) : null)!) : const SdkOmitted(),
+    databaseUi: json['databaseUI'] != null ? SdkPresent((json['databaseUI'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI.fromJson(json['databaseUI'] as bool) : null)!) : const SdkOmitted(),
+    importResource: json['importResource'] != null ? SdkPresent((json['importResource'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource.fromJson(json['importResource'] as bool) : null)!) : const SdkOmitted(),
+    linking: json['linking'] != null ? SdkPresent((json['linking'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking.fromJson(json['linking'] as bool) : null)!) : const SdkOmitted(),
+    mcp: json['mcp'] != null ? SdkPresent((json['mcp'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp.fromJson(json['mcp'] as bool) : null)!) : const SdkOmitted(),
+    mcpReadonly: json['mcpReadonly'] != null ? SdkPresent((json['mcpReadonly'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly.fromJson(json['mcpReadonly'] as bool) : null)!) : const SdkOmitted(),
+    nativeImportResource: json['nativeImportResource'] != null ? SdkPresent((json['nativeImportResource'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource.fromJson(json['nativeImportResource'] as bool) : null)!) : const SdkOmitted(),
+    projects: json['projects'] != null ? SdkPresent((json['projects'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects.fromJson(json['projects'] as bool) : null)!) : const SdkOmitted(),
+    sandbox: json['sandbox'] != null ? SdkPresent((json['sandbox'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox.fromJson(json['sandbox'] as bool) : null)!) : const SdkOmitted(),
+    secretRotation: json['secretRotation'] != null ? SdkPresent((json['secretRotation'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation.fromJson(json['secretRotation']) : null)!) : const SdkOmitted(),
+    secretsSync: json['secretsSync'] != null ? SdkPresent((json['secretsSync'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync.fromJson(json['secretsSync'] as bool) : null)!) : const SdkOmitted(),
+    sso: json['sso'] != null ? SdkPresent((json['sso'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso.fromJson(json['sso'] as bool) : null)!) : const SdkOmitted(),
+    transferable: json['transferable'] != null ? SdkPresent((json['transferable'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable.fromJson(json['transferable'] as bool) : null)!) : const SdkOmitted(),
+    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
+    v0Flavors: json['v0Flavors'] != null ? SdkPresent((json['v0Flavors'] != null ? CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors.fromJson(json['v0Flavors'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (agentTools) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools>(
-            value: final value
-          ) =>
-            {
-              'agentTools': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (autoSensitive) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive>(
-            value: final value
-          ) =>
-            {
-              'autoSensitive': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (billable) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable>(
-            value: final value
-          ) =>
-            {
-              'billable': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (connectedImportResource) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource>(
-            value: final value
-          ) =>
-            {
-              'connectedImportResource': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (databaseUi) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI>(
-            value: final value
-          ) =>
-            {
-              'databaseUI': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (importResource) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource>(
-            value: final value
-          ) =>
-            {
-              'importResource': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (linking) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking>(
-            value: final value
-          ) =>
-            {
-              'linking': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mcp) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp>(
-            value: final value
-          ) =>
-            {
-              'mcp': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mcpReadonly) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly>(
-            value: final value
-          ) =>
-            {
-              'mcpReadonly': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (nativeImportResource) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource>(
-            value: final value
-          ) =>
-            {
-              'nativeImportResource': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projects) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects>(
-            value: final value
-          ) =>
-            {
-              'projects': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sandbox) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox>(
-            value: final value
-          ) =>
-            {
-              'sandbox': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretRotation) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation>(
-            value: final value
-          ) =>
-            {
-              'secretRotation': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretsSync) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync>(
-            value: final value
-          ) =>
-            {
-              'secretsSync': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sso) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso>(
-            value: final value
-          ) =>
-            {
-              'sso': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transferable) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable>(
-            value: final value
-          ) =>
-            {
-              'transferable': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (v0) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0>(
-            value: final value
-          ) =>
-            {
-              'v0': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (v0Flavors) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors>(
-            value: final value
-          ) =>
-            {
-              'v0Flavors': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (agentTools) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAgentTools>(value: final value) => {'agentTools': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (autoSensitive) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesAutoSensitive>(value: final value) => {'autoSensitive': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (billable) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesBillable>(value: final value) => {'billable': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (connectedImportResource) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesConnectedImportResource>(value: final value) => {'connectedImportResource': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (databaseUi) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesDatabaseUI>(value: final value) => {'databaseUI': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (importResource) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesImportResource>(value: final value) => {'importResource': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (linking) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesLinking>(value: final value) => {'linking': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mcp) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcp>(value: final value) => {'mcp': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mcpReadonly) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesMcpReadonly>(value: final value) => {'mcpReadonly': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (nativeImportResource) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesNativeImportResource>(value: final value) => {'nativeImportResource': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projects) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects>(value: final value) => {'projects': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sandbox) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox>(value: final value) => {'sandbox': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretRotation) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation>(value: final value) => {'secretRotation': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretsSync) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync>(value: final value) => {'secretsSync': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sso) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso>(value: final value) => {'sso': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transferable) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable>(value: final value) => {'transferable': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (v0) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0>(value: final value) => {'v0': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (v0Flavors) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors>(value: final value) => {'v0Flavors': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1 {
@@ -534,27 +154,21 @@ class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVa
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1(
-      {required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1({required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1
-      Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1 Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1
-      _copyWith({Object? expr = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1(
-            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-          );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1(
+    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1(
-        expr: (json['expr'] as String?)!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDescriptionVariant1(
+    expr: (json['expr'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expr': expr,
-      };
+    'expr': expr,
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0 {
@@ -562,27 +176,21 @@ class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVa
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0(
-      {required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0({required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0
-      Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0 Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0
-      _copyWith({Object? expr = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0(
-            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-          );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0(
+    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0(
-        expr: (json['expr'] as String?)!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiDisabledVariant0(
+    expr: (json['expr'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expr': expr,
-      };
+    'expr': expr,
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue {
@@ -590,27 +198,21 @@ class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVa
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue(
-      {required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue({required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue
-      Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue
-      _copyWith({Object? expr = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue(
-            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-          );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue(
+    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue(
-        expr: (json['expr'] as String?)!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiFormattedValue(
+    expr: (json['expr'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expr': expr,
-      };
+    'expr': expr,
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0 {
@@ -618,27 +220,21 @@ class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVa
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0(
-      {required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0({required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0
-      Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0 Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0
-      _copyWith({Object? expr = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0(
-            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-          );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0(
+    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0(
-        expr: (json['expr'] as String?)!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiHiddenVariant0(
+    expr: (json['expr'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expr': expr,
-      };
+    'expr': expr,
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0 {
@@ -646,25 +242,19 @@ class CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVa
   static const String constructionSurface = 'named';
   final String expr;
 
-  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0(
-      {required this.expr});
+  const CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0({required this.expr});
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0
-      Function({String expr}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0 Function({String expr}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0
-      _copyWith({Object? expr = sdkOmittedValue}) =>
-          CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0(
-            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-          );
+  CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0 _copyWith({Object? expr = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0(
+    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0(
-        expr: (json['expr'] as String?)!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesValueVariant0UiReadOnlyVariant0(
+    expr: (json['expr'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'expr': expr,
-      };
+    'expr': expr,
+  };
 }

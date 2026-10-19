@@ -8,483 +8,247 @@ part of 'teams.dart';
 class TeamLimitedSamlConnection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Timestamp (in milliseconds) of when the configuration was connected.
   final double connectedAt;
-
   /// Timestamp (in milliseconds) of when the last webhook event was received from WorkOS.
   final SdkOptional<double> lastReceivedWebhookEvent;
-
   /// Timestamp (in milliseconds) of when the last directory sync was performed.
   final SdkOptional<double> lastSyncedAt;
-
   /// Current state of the connection.
   final String state;
-
   /// Controls whether directory sync events are processed. - 'SETUP': Directory connected but role mappings not yet configured. Events are acknowledged but not processed. - 'ACTIVE': Fully configured. Events are processed normally. - undefined: Legacy directory (pre-feature), treat as 'ACTIVE' for backwards compatibility.
   final SdkOptional<TeamLimitedSamlConnectionSyncState> syncState;
-
   /// The Identity Provider "type", for example Okta.
   final String type_;
-
   /// Required `string` value serialized in the `status` wire field.
   final String status;
 
-  const TeamLimitedSamlConnection(
-      {required this.connectedAt,
-      this.lastReceivedWebhookEvent = const SdkOmitted(),
-      this.lastSyncedAt = const SdkOmitted(),
-      required this.state,
-      this.syncState = const SdkOmitted(),
-      required this.type_,
-      required this.status});
+  const TeamLimitedSamlConnection({required this.connectedAt, this.lastReceivedWebhookEvent = const SdkOmitted(), this.lastSyncedAt = const SdkOmitted(), required this.state, this.syncState = const SdkOmitted(), required this.type_, required this.status});
 
-  TeamLimitedSamlConnection Function(
-      {double connectedAt,
-      SdkOptional<double> lastReceivedWebhookEvent,
-      SdkOptional<double> lastSyncedAt,
-      String state,
-      SdkOptional<TeamLimitedSamlConnectionSyncState> syncState,
-      String type_,
-      String status}) get copyWith => _copyWith;
+  TeamLimitedSamlConnection Function({double connectedAt, SdkOptional<double> lastReceivedWebhookEvent, SdkOptional<double> lastSyncedAt, String state, SdkOptional<TeamLimitedSamlConnectionSyncState> syncState, String type_, String status}) get copyWith => _copyWith;
 
-  TeamLimitedSamlConnection _copyWith(
-          {Object? connectedAt = sdkOmittedValue,
-          Object? lastReceivedWebhookEvent = sdkOmittedValue,
-          Object? lastSyncedAt = sdkOmittedValue,
-          Object? state = sdkOmittedValue,
-          Object? syncState = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue,
-          Object? status = sdkOmittedValue}) =>
-      TeamLimitedSamlConnection(
-        connectedAt: identical(connectedAt, sdkOmittedValue)
-            ? this.connectedAt
-            : connectedAt as double,
-        lastReceivedWebhookEvent:
-            identical(lastReceivedWebhookEvent, sdkOmittedValue)
-                ? this.lastReceivedWebhookEvent
-                : lastReceivedWebhookEvent as SdkOptional<double>,
-        lastSyncedAt: identical(lastSyncedAt, sdkOmittedValue)
-            ? this.lastSyncedAt
-            : lastSyncedAt as SdkOptional<double>,
-        state: identical(state, sdkOmittedValue) ? this.state : state as String,
-        syncState: identical(syncState, sdkOmittedValue)
-            ? this.syncState
-            : syncState as SdkOptional<TeamLimitedSamlConnectionSyncState>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-        status:
-            identical(status, sdkOmittedValue) ? this.status : status as String,
-      );
+  TeamLimitedSamlConnection _copyWith({Object? connectedAt = sdkOmittedValue, Object? lastReceivedWebhookEvent = sdkOmittedValue, Object? lastSyncedAt = sdkOmittedValue, Object? state = sdkOmittedValue, Object? syncState = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? status = sdkOmittedValue}) => TeamLimitedSamlConnection(
+    connectedAt: identical(connectedAt, sdkOmittedValue) ? this.connectedAt : connectedAt as double,
+    lastReceivedWebhookEvent: identical(lastReceivedWebhookEvent, sdkOmittedValue) ? this.lastReceivedWebhookEvent : lastReceivedWebhookEvent as SdkOptional<double>,
+    lastSyncedAt: identical(lastSyncedAt, sdkOmittedValue) ? this.lastSyncedAt : lastSyncedAt as SdkOptional<double>,
+    state: identical(state, sdkOmittedValue) ? this.state : state as String,
+    syncState: identical(syncState, sdkOmittedValue) ? this.syncState : syncState as SdkOptional<TeamLimitedSamlConnectionSyncState>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+    status: identical(status, sdkOmittedValue) ? this.status : status as String,
+  );
 
-  factory TeamLimitedSamlConnection.fromJson(Map<String, dynamic> json) =>
-      TeamLimitedSamlConnection(
-        connectedAt: ((json['connectedAt'] as num?)?.toDouble())!,
-        lastReceivedWebhookEvent: json['lastReceivedWebhookEvent'] != null
-            ? SdkPresent(
-                ((json['lastReceivedWebhookEvent'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        lastSyncedAt: json['lastSyncedAt'] != null
-            ? SdkPresent(((json['lastSyncedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        state: (json['state'] as String?)!,
-        syncState: json['syncState'] != null
-            ? SdkPresent((json['syncState'] != null
-                ? TeamLimitedSamlConnectionSyncState.fromJson(
-                    json['syncState'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-        status: (json['status'] as String?)!,
-      );
+  factory TeamLimitedSamlConnection.fromJson(Map<String, dynamic> json) => TeamLimitedSamlConnection(
+    connectedAt: ((json['connectedAt'] as num?)?.toDouble())!,
+    lastReceivedWebhookEvent: json['lastReceivedWebhookEvent'] != null ? SdkPresent(((json['lastReceivedWebhookEvent'] as num?)?.toDouble())!) : const SdkOmitted(),
+    lastSyncedAt: json['lastSyncedAt'] != null ? SdkPresent(((json['lastSyncedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    state: (json['state'] as String?)!,
+    syncState: json['syncState'] != null ? SdkPresent((json['syncState'] != null ? TeamLimitedSamlConnectionSyncState.fromJson(json['syncState'] as String) : null)!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+    status: (json['status'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectedAt': connectedAt,
-        ...switch (lastReceivedWebhookEvent) {
-          SdkPresent<double>(value: final value) => {
-              'lastReceivedWebhookEvent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lastSyncedAt) {
-          SdkPresent<double>(value: final value) => {
-              'lastSyncedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'state': state,
-        ...switch (syncState) {
-          SdkPresent<TeamLimitedSamlConnectionSyncState>(value: final value) =>
-            {
-              'syncState': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-        'status': status,
-      };
+    'connectedAt': connectedAt,
+    ...switch (lastReceivedWebhookEvent) {
+      SdkPresent<double>(value: final value) => {'lastReceivedWebhookEvent': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lastSyncedAt) {
+      SdkPresent<double>(value: final value) => {'lastSyncedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'state': state,
+    ...switch (syncState) {
+      SdkPresent<TeamLimitedSamlConnectionSyncState>(value: final value) => {'syncState': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+    'status': status,
+  };
 }
 
 /// Information for the Directory Sync configuration.
 class TeamLimitedSamlDirectory {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Timestamp (in milliseconds) of when the configuration was connected.
   final double connectedAt;
-
   /// Timestamp (in milliseconds) of when the last webhook event was received from WorkOS.
   final SdkOptional<double> lastReceivedWebhookEvent;
-
   /// Timestamp (in milliseconds) of when the last directory sync was performed.
   final SdkOptional<double> lastSyncedAt;
-
   /// Current state of the connection.
   final String state;
-
   /// Controls whether directory sync events are processed. - 'SETUP': Directory connected but role mappings not yet configured. Events are acknowledged but not processed. - 'ACTIVE': Fully configured. Events are processed normally. - undefined: Legacy directory (pre-feature), treat as 'ACTIVE' for backwards compatibility.
   final SdkOptional<TeamLimitedSamlDirectorySyncState> syncState;
-
   /// The Identity Provider "type", for example Okta.
   final String type_;
 
-  const TeamLimitedSamlDirectory(
-      {required this.connectedAt,
-      this.lastReceivedWebhookEvent = const SdkOmitted(),
-      this.lastSyncedAt = const SdkOmitted(),
-      required this.state,
-      this.syncState = const SdkOmitted(),
-      required this.type_});
+  const TeamLimitedSamlDirectory({required this.connectedAt, this.lastReceivedWebhookEvent = const SdkOmitted(), this.lastSyncedAt = const SdkOmitted(), required this.state, this.syncState = const SdkOmitted(), required this.type_});
 
-  TeamLimitedSamlDirectory Function(
-      {double connectedAt,
-      SdkOptional<double> lastReceivedWebhookEvent,
-      SdkOptional<double> lastSyncedAt,
-      String state,
-      SdkOptional<TeamLimitedSamlDirectorySyncState> syncState,
-      String type_}) get copyWith => _copyWith;
+  TeamLimitedSamlDirectory Function({double connectedAt, SdkOptional<double> lastReceivedWebhookEvent, SdkOptional<double> lastSyncedAt, String state, SdkOptional<TeamLimitedSamlDirectorySyncState> syncState, String type_}) get copyWith => _copyWith;
 
-  TeamLimitedSamlDirectory _copyWith(
-          {Object? connectedAt = sdkOmittedValue,
-          Object? lastReceivedWebhookEvent = sdkOmittedValue,
-          Object? lastSyncedAt = sdkOmittedValue,
-          Object? state = sdkOmittedValue,
-          Object? syncState = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      TeamLimitedSamlDirectory(
-        connectedAt: identical(connectedAt, sdkOmittedValue)
-            ? this.connectedAt
-            : connectedAt as double,
-        lastReceivedWebhookEvent:
-            identical(lastReceivedWebhookEvent, sdkOmittedValue)
-                ? this.lastReceivedWebhookEvent
-                : lastReceivedWebhookEvent as SdkOptional<double>,
-        lastSyncedAt: identical(lastSyncedAt, sdkOmittedValue)
-            ? this.lastSyncedAt
-            : lastSyncedAt as SdkOptional<double>,
-        state: identical(state, sdkOmittedValue) ? this.state : state as String,
-        syncState: identical(syncState, sdkOmittedValue)
-            ? this.syncState
-            : syncState as SdkOptional<TeamLimitedSamlDirectorySyncState>,
-        type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
-      );
+  TeamLimitedSamlDirectory _copyWith({Object? connectedAt = sdkOmittedValue, Object? lastReceivedWebhookEvent = sdkOmittedValue, Object? lastSyncedAt = sdkOmittedValue, Object? state = sdkOmittedValue, Object? syncState = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => TeamLimitedSamlDirectory(
+    connectedAt: identical(connectedAt, sdkOmittedValue) ? this.connectedAt : connectedAt as double,
+    lastReceivedWebhookEvent: identical(lastReceivedWebhookEvent, sdkOmittedValue) ? this.lastReceivedWebhookEvent : lastReceivedWebhookEvent as SdkOptional<double>,
+    lastSyncedAt: identical(lastSyncedAt, sdkOmittedValue) ? this.lastSyncedAt : lastSyncedAt as SdkOptional<double>,
+    state: identical(state, sdkOmittedValue) ? this.state : state as String,
+    syncState: identical(syncState, sdkOmittedValue) ? this.syncState : syncState as SdkOptional<TeamLimitedSamlDirectorySyncState>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as String,
+  );
 
-  factory TeamLimitedSamlDirectory.fromJson(Map<String, dynamic> json) =>
-      TeamLimitedSamlDirectory(
-        connectedAt: ((json['connectedAt'] as num?)?.toDouble())!,
-        lastReceivedWebhookEvent: json['lastReceivedWebhookEvent'] != null
-            ? SdkPresent(
-                ((json['lastReceivedWebhookEvent'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        lastSyncedAt: json['lastSyncedAt'] != null
-            ? SdkPresent(((json['lastSyncedAt'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        state: (json['state'] as String?)!,
-        syncState: json['syncState'] != null
-            ? SdkPresent((json['syncState'] != null
-                ? TeamLimitedSamlDirectorySyncState.fromJson(
-                    json['syncState'] as String)
-                : null)!)
-            : const SdkOmitted(),
-        type_: (json['type'] as String?)!,
-      );
+  factory TeamLimitedSamlDirectory.fromJson(Map<String, dynamic> json) => TeamLimitedSamlDirectory(
+    connectedAt: ((json['connectedAt'] as num?)?.toDouble())!,
+    lastReceivedWebhookEvent: json['lastReceivedWebhookEvent'] != null ? SdkPresent(((json['lastReceivedWebhookEvent'] as num?)?.toDouble())!) : const SdkOmitted(),
+    lastSyncedAt: json['lastSyncedAt'] != null ? SdkPresent(((json['lastSyncedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
+    state: (json['state'] as String?)!,
+    syncState: json['syncState'] != null ? SdkPresent((json['syncState'] != null ? TeamLimitedSamlDirectorySyncState.fromJson(json['syncState'] as String) : null)!) : const SdkOmitted(),
+    type_: (json['type'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'connectedAt': connectedAt,
-        ...switch (lastReceivedWebhookEvent) {
-          SdkPresent<double>(value: final value) => {
-              'lastReceivedWebhookEvent': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (lastSyncedAt) {
-          SdkPresent<double>(value: final value) => {
-              'lastSyncedAt': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'state': state,
-        ...switch (syncState) {
-          SdkPresent<TeamLimitedSamlDirectorySyncState>(value: final value) => {
-              'syncState': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_,
-      };
+    'connectedAt': connectedAt,
+    ...switch (lastReceivedWebhookEvent) {
+      SdkPresent<double>(value: final value) => {'lastReceivedWebhookEvent': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (lastSyncedAt) {
+      SdkPresent<double>(value: final value) => {'lastSyncedAt': value,},
+      _ => const <String, dynamic>{},
+    },
+    'state': state,
+    ...switch (syncState) {
+      SdkPresent<TeamLimitedSamlDirectorySyncState>(value: final value) => {'syncState': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_,
+  };
 }
 
 /// When "Single Sign-On (SAML)" is configured, this object contains information that allows the client-side to identify whether or not this Team has SAML enforced.
 class TeamLimitedSaml {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Information for the SAML Single Sign-On configuration.
   final SdkOptional<TeamLimitedSamlConnection> connection;
-
   /// Information for the Directory Sync configuration.
   final SdkOptional<TeamLimitedSamlDirectory> directory;
-
   /// When `true`, interactions with the Team **must** be done with an authentication token that has been authenticated with the Team's SAML Single Sign-On provider.
   final TeamLimitedSamlEnforced enforced;
 
-  const TeamLimitedSaml(
-      {this.connection = const SdkOmitted(),
-      this.directory = const SdkOmitted(),
-      required this.enforced});
+  const TeamLimitedSaml({this.connection = const SdkOmitted(), this.directory = const SdkOmitted(), required this.enforced});
 
-  TeamLimitedSaml Function(
-      {SdkOptional<TeamLimitedSamlConnection> connection,
-      SdkOptional<TeamLimitedSamlDirectory> directory,
-      TeamLimitedSamlEnforced enforced}) get copyWith => _copyWith;
+  TeamLimitedSaml Function({SdkOptional<TeamLimitedSamlConnection> connection, SdkOptional<TeamLimitedSamlDirectory> directory, TeamLimitedSamlEnforced enforced}) get copyWith => _copyWith;
 
-  TeamLimitedSaml _copyWith(
-          {Object? connection = sdkOmittedValue,
-          Object? directory = sdkOmittedValue,
-          Object? enforced = sdkOmittedValue}) =>
-      TeamLimitedSaml(
-        connection: identical(connection, sdkOmittedValue)
-            ? this.connection
-            : connection as SdkOptional<TeamLimitedSamlConnection>,
-        directory: identical(directory, sdkOmittedValue)
-            ? this.directory
-            : directory as SdkOptional<TeamLimitedSamlDirectory>,
-        enforced: identical(enforced, sdkOmittedValue)
-            ? this.enforced
-            : enforced as TeamLimitedSamlEnforced,
-      );
+  TeamLimitedSaml _copyWith({Object? connection = sdkOmittedValue, Object? directory = sdkOmittedValue, Object? enforced = sdkOmittedValue}) => TeamLimitedSaml(
+    connection: identical(connection, sdkOmittedValue) ? this.connection : connection as SdkOptional<TeamLimitedSamlConnection>,
+    directory: identical(directory, sdkOmittedValue) ? this.directory : directory as SdkOptional<TeamLimitedSamlDirectory>,
+    enforced: identical(enforced, sdkOmittedValue) ? this.enforced : enforced as TeamLimitedSamlEnforced,
+  );
 
-  factory TeamLimitedSaml.fromJson(Map<String, dynamic> json) =>
-      TeamLimitedSaml(
-        connection: json['connection'] != null
-            ? SdkPresent((json['connection'] != null
-                ? TeamLimitedSamlConnection.fromJson(
-                    json['connection'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        directory: json['directory'] != null
-            ? SdkPresent((json['directory'] != null
-                ? TeamLimitedSamlDirectory.fromJson(
-                    json['directory'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        enforced: (json['enforced'] != null
-            ? TeamLimitedSamlEnforced.fromJson(json['enforced'] as bool)
-            : null)!,
-      );
+  factory TeamLimitedSaml.fromJson(Map<String, dynamic> json) => TeamLimitedSaml(
+    connection: json['connection'] != null ? SdkPresent((json['connection'] != null ? TeamLimitedSamlConnection.fromJson(json['connection'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    directory: json['directory'] != null ? SdkPresent((json['directory'] != null ? TeamLimitedSamlDirectory.fromJson(json['directory'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    enforced: (json['enforced'] != null ? TeamLimitedSamlEnforced.fromJson(json['enforced'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (connection) {
-          SdkPresent<TeamLimitedSamlConnection>(value: final value) => {
-              'connection': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (directory) {
-          SdkPresent<TeamLimitedSamlDirectory>(value: final value) => {
-              'directory': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'enforced': enforced.toJson(),
-      };
+    ...switch (connection) {
+      SdkPresent<TeamLimitedSamlConnection>(value: final value) => {'connection': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (directory) {
+      SdkPresent<TeamLimitedSamlDirectory>(value: final value) => {'directory': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'enforced': enforced.toJson(),
+  };
 }
 
 /// A limited form of data representing a Team, due to the authentication token missing privileges to read the full Team data.
 class TeamLimited {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The ID of the file used as avatar for this Team.
   final String? avatar;
-
   /// UNIX timestamp (in milliseconds) when the Team was created.
   final double createdAt;
-
   /// The Team's unique identifier.
   final String id;
-
   /// Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having MFA enforced and the user not having MFA enabled. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges.
   final TeamLimitedLimited limited;
-
   /// Required array value serialized in the `limitedBy` wire field.
   final List<TeamLimitedLimitedByItem> limitedBy;
-
   /// The membership of the authenticated User in relation to the Team.
   final SdkOptional<TeamLimitedMembership> membership;
-
   /// Name associated with the Team account, or `null` if none has been provided.
   final String? name;
-
   /// Best-effort ID of the organization’s root billing team. When present, compare `orgRootTeamId === id` to identify the root team. It may be omitted even when `parentId` is set if organization resolution fails or the referenced organization is missing. Always omitted for non-organization teams.
   final SdkOptional<String> orgRootTeamId;
-
   /// The organizationId for teams that belong to an organization (set on both the organization's root team and its child teams).
   final SdkOptional<String> parentId;
-
   /// When "Single Sign-On (SAML)" is configured, this object contains information that allows the client-side to identify whether or not this Team has SAML enforced.
   final SdkOptional<TeamLimitedSaml> saml;
-
   /// The Team's slug, which is unique across the Vercel platform.
   final String slug;
 
-  const TeamLimited(
-      {required this.avatar,
-      required this.createdAt,
-      required this.id,
-      required this.limited,
-      required this.limitedBy,
-      this.membership = const SdkOmitted(),
-      required this.name,
-      this.orgRootTeamId = const SdkOmitted(),
-      this.parentId = const SdkOmitted(),
-      this.saml = const SdkOmitted(),
-      required this.slug});
+  const TeamLimited({required this.avatar, required this.createdAt, required this.id, required this.limited, required this.limitedBy, this.membership = const SdkOmitted(), required this.name, this.orgRootTeamId = const SdkOmitted(), this.parentId = const SdkOmitted(), this.saml = const SdkOmitted(), required this.slug});
 
-  TeamLimited Function(
-      {String? avatar,
-      double createdAt,
-      String id,
-      TeamLimitedLimited limited,
-      List<TeamLimitedLimitedByItem> limitedBy,
-      SdkOptional<TeamLimitedMembership> membership,
-      String? name,
-      SdkOptional<String> orgRootTeamId,
-      SdkOptional<String> parentId,
-      SdkOptional<TeamLimitedSaml> saml,
-      String slug}) get copyWith => _copyWith;
+  TeamLimited Function({String? avatar, double createdAt, String id, TeamLimitedLimited limited, List<TeamLimitedLimitedByItem> limitedBy, SdkOptional<TeamLimitedMembership> membership, String? name, SdkOptional<String> orgRootTeamId, SdkOptional<String> parentId, SdkOptional<TeamLimitedSaml> saml, String slug}) get copyWith => _copyWith;
 
-  TeamLimited _copyWith(
-          {Object? avatar = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? limited = sdkOmittedValue,
-          Object? limitedBy = sdkOmittedValue,
-          Object? membership = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? orgRootTeamId = sdkOmittedValue,
-          Object? parentId = sdkOmittedValue,
-          Object? saml = sdkOmittedValue,
-          Object? slug = sdkOmittedValue}) =>
-      TeamLimited(
-        avatar: identical(avatar, sdkOmittedValue)
-            ? this.avatar
-            : avatar as String?,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as double,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        limited: identical(limited, sdkOmittedValue)
-            ? this.limited
-            : limited as TeamLimitedLimited,
-        limitedBy: identical(limitedBy, sdkOmittedValue)
-            ? this.limitedBy
-            : limitedBy as List<TeamLimitedLimitedByItem>,
-        membership: identical(membership, sdkOmittedValue)
-            ? this.membership
-            : membership as SdkOptional<TeamLimitedMembership>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String?,
-        orgRootTeamId: identical(orgRootTeamId, sdkOmittedValue)
-            ? this.orgRootTeamId
-            : orgRootTeamId as SdkOptional<String>,
-        parentId: identical(parentId, sdkOmittedValue)
-            ? this.parentId
-            : parentId as SdkOptional<String>,
-        saml: identical(saml, sdkOmittedValue)
-            ? this.saml
-            : saml as SdkOptional<TeamLimitedSaml>,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-      );
+  TeamLimited _copyWith({Object? avatar = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? limited = sdkOmittedValue, Object? limitedBy = sdkOmittedValue, Object? membership = sdkOmittedValue, Object? name = sdkOmittedValue, Object? orgRootTeamId = sdkOmittedValue, Object? parentId = sdkOmittedValue, Object? saml = sdkOmittedValue, Object? slug = sdkOmittedValue}) => TeamLimited(
+    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as String?,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    limited: identical(limited, sdkOmittedValue) ? this.limited : limited as TeamLimitedLimited,
+    limitedBy: identical(limitedBy, sdkOmittedValue) ? this.limitedBy : limitedBy as List<TeamLimitedLimitedByItem>,
+    membership: identical(membership, sdkOmittedValue) ? this.membership : membership as SdkOptional<TeamLimitedMembership>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String?,
+    orgRootTeamId: identical(orgRootTeamId, sdkOmittedValue) ? this.orgRootTeamId : orgRootTeamId as SdkOptional<String>,
+    parentId: identical(parentId, sdkOmittedValue) ? this.parentId : parentId as SdkOptional<String>,
+    saml: identical(saml, sdkOmittedValue) ? this.saml : saml as SdkOptional<TeamLimitedSaml>,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+  );
 
   factory TeamLimited.fromJson(Map<String, dynamic> json) => TeamLimited(
-        avatar: json.containsKey('avatar')
-            ? json['avatar'] as String?
-            : throw ArgumentError.value(
-                null, 'avatar', 'Required property is missing'),
-        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-        id: (json['id'] as String?)!,
-        limited: (json['limited'] != null
-            ? TeamLimitedLimited.fromJson(json['limited'] as bool)
-            : null)!,
-        limitedBy: ((json['limitedBy'] as List?)
-            ?.map((e) => TeamLimitedLimitedByItem.fromJson(e as String))
-            .toList())!,
-        membership: json['membership'] != null
-            ? SdkPresent((json['membership'] != null
-                ? TeamLimitedMembership.fromJson(
-                    json['membership'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        name: json.containsKey('name')
-            ? json['name'] as String?
-            : throw ArgumentError.value(
-                null, 'name', 'Required property is missing'),
-        orgRootTeamId: json['orgRootTeamId'] != null
-            ? SdkPresent((json['orgRootTeamId'] as String?)!)
-            : const SdkOmitted(),
-        parentId: json['parentId'] != null
-            ? SdkPresent((json['parentId'] as String?)!)
-            : const SdkOmitted(),
-        saml: json['saml'] != null
-            ? SdkPresent((json['saml'] != null
-                ? TeamLimitedSaml.fromJson(json['saml'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        slug: (json['slug'] as String?)!,
-      );
+    avatar: json.containsKey('avatar') ? json['avatar'] as String? : throw ArgumentError.value(null, 'avatar', 'Required property is missing'),
+    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+    id: (json['id'] as String?)!,
+    limited: (json['limited'] != null ? TeamLimitedLimited.fromJson(json['limited'] as bool) : null)!,
+    limitedBy: ((json['limitedBy'] as List?)?.map((e) => TeamLimitedLimitedByItem.fromJson(e as String)).toList())!,
+    membership: json['membership'] != null ? SdkPresent((json['membership'] != null ? TeamLimitedMembership.fromJson(json['membership'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    name: json.containsKey('name') ? json['name'] as String? : throw ArgumentError.value(null, 'name', 'Required property is missing'),
+    orgRootTeamId: json['orgRootTeamId'] != null ? SdkPresent((json['orgRootTeamId'] as String?)!) : const SdkOmitted(),
+    parentId: json['parentId'] != null ? SdkPresent((json['parentId'] as String?)!) : const SdkOmitted(),
+    saml: json['saml'] != null ? SdkPresent((json['saml'] != null ? TeamLimitedSaml.fromJson(json['saml'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    slug: (json['slug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'avatar': avatar,
-        'createdAt': createdAt,
-        'id': id,
-        'limited': limited.toJson(),
-        'limitedBy': limitedBy.map((item) => item.toJson()).toList(),
-        ...switch (membership) {
-          SdkPresent<TeamLimitedMembership>(value: final value) => {
-              'membership': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        ...switch (orgRootTeamId) {
-          SdkPresent<String>(value: final value) => {
-              'orgRootTeamId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (parentId) {
-          SdkPresent<String>(value: final value) => {
-              'parentId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (saml) {
-          SdkPresent<TeamLimitedSaml>(value: final value) => {
-              'saml': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'slug': slug,
-      };
+    'avatar': avatar,
+    'createdAt': createdAt,
+    'id': id,
+    'limited': limited.toJson(),
+    'limitedBy': limitedBy.map((item) => item.toJson()).toList(),
+    ...switch (membership) {
+      SdkPresent<TeamLimitedMembership>(value: final value) => {'membership': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    ...switch (orgRootTeamId) {
+      SdkPresent<String>(value: final value) => {'orgRootTeamId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (parentId) {
+      SdkPresent<String>(value: final value) => {'parentId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (saml) {
+      SdkPresent<TeamLimitedSaml>(value: final value) => {'saml': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'slug': slug,
+  };
 }
 
 class UpdateTeamsRequestDefaultProjectJobsVariant0Lint {
@@ -492,30 +256,21 @@ class UpdateTeamsRequestDefaultProjectJobsVariant0Lint {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const UpdateTeamsRequestDefaultProjectJobsVariant0Lint(
-      {required this.targets});
+  const UpdateTeamsRequestDefaultProjectJobsVariant0Lint({required this.targets});
 
-  UpdateTeamsRequestDefaultProjectJobsVariant0Lint Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  UpdateTeamsRequestDefaultProjectJobsVariant0Lint Function({List<String> targets}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestDefaultProjectJobsVariant0Lint _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      UpdateTeamsRequestDefaultProjectJobsVariant0Lint(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  UpdateTeamsRequestDefaultProjectJobsVariant0Lint _copyWith({Object? targets = sdkOmittedValue}) => UpdateTeamsRequestDefaultProjectJobsVariant0Lint(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory UpdateTeamsRequestDefaultProjectJobsVariant0Lint.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateTeamsRequestDefaultProjectJobsVariant0Lint(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory UpdateTeamsRequestDefaultProjectJobsVariant0Lint.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestDefaultProjectJobsVariant0Lint(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }
 
 class UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck {
@@ -523,28 +278,19 @@ class UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck {
   static const String constructionSurface = 'named';
   final List<String> targets;
 
-  const UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck(
-      {required this.targets});
+  const UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck({required this.targets});
 
-  UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck Function(
-      {List<String> targets}) get copyWith => _copyWith;
+  UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck Function({List<String> targets}) get copyWith => _copyWith;
 
-  UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck _copyWith(
-          {Object? targets = sdkOmittedValue}) =>
-      UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck(
-        targets: identical(targets, sdkOmittedValue)
-            ? this.targets
-            : targets as List<String>,
-      );
+  UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck _copyWith({Object? targets = sdkOmittedValue}) => UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck(
+    targets: identical(targets, sdkOmittedValue) ? this.targets : targets as List<String>,
+  );
 
-  factory UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck(
-        targets:
-            ((json['targets'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck.fromJson(Map<String, dynamic> json) => UpdateTeamsRequestDefaultProjectJobsVariant0Typecheck(
+    targets: ((json['targets'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'targets': targets,
-      };
+    'targets': targets,
+  };
 }

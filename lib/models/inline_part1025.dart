@@ -19,170 +19,78 @@ class CreateProjectEnvResponseFailedItemError {
   final SdkOptional<dynamic> target;
   final SdkOptional<dynamic> value;
 
-  const CreateProjectEnvResponseFailedItemError(
-      {this.action = const SdkOmitted(),
-      required this.code,
-      this.envVarId = const SdkOmitted(),
-      this.envVarKey = const SdkOmitted(),
-      this.gitBranch = const SdkOmitted(),
-      this.key = const SdkOmitted(),
-      this.link = const SdkOmitted(),
-      required this.message,
-      this.project = const SdkOmitted(),
-      this.target = const SdkOmitted(),
-      this.value = const SdkOmitted()});
+  const CreateProjectEnvResponseFailedItemError({this.action = const SdkOmitted(), required this.code, this.envVarId = const SdkOmitted(), this.envVarKey = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.key = const SdkOmitted(), this.link = const SdkOmitted(), required this.message, this.project = const SdkOmitted(), this.target = const SdkOmitted(), this.value = const SdkOmitted()});
 
-  CreateProjectEnvResponseFailedItemError Function(
-      {SdkOptional<String> action,
-      String code,
-      SdkOptional<String> envVarId,
-      SdkOptional<String> envVarKey,
-      SdkOptional<String> gitBranch,
-      SdkOptional<String> key,
-      SdkOptional<String> link,
-      String message,
-      SdkOptional<String> project,
-      SdkOptional<dynamic> target,
-      SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  CreateProjectEnvResponseFailedItemError Function({SdkOptional<String> action, String code, SdkOptional<String> envVarId, SdkOptional<String> envVarKey, SdkOptional<String> gitBranch, SdkOptional<String> key, SdkOptional<String> link, String message, SdkOptional<String> project, SdkOptional<dynamic> target, SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  CreateProjectEnvResponseFailedItemError _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? code = sdkOmittedValue,
-          Object? envVarId = sdkOmittedValue,
-          Object? envVarKey = sdkOmittedValue,
-          Object? gitBranch = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? link = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? project = sdkOmittedValue,
-          Object? target = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      CreateProjectEnvResponseFailedItemError(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as SdkOptional<String>,
-        code: identical(code, sdkOmittedValue) ? this.code : code as String,
-        envVarId: identical(envVarId, sdkOmittedValue)
-            ? this.envVarId
-            : envVarId as SdkOptional<String>,
-        envVarKey: identical(envVarKey, sdkOmittedValue)
-            ? this.envVarKey
-            : envVarKey as SdkOptional<String>,
-        gitBranch: identical(gitBranch, sdkOmittedValue)
-            ? this.gitBranch
-            : gitBranch as SdkOptional<String>,
-        key: identical(key, sdkOmittedValue)
-            ? this.key
-            : key as SdkOptional<String>,
-        link: identical(link, sdkOmittedValue)
-            ? this.link
-            : link as SdkOptional<String>,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-        project: identical(project, sdkOmittedValue)
-            ? this.project
-            : project as SdkOptional<String>,
-        target: identical(target, sdkOmittedValue)
-            ? this.target
-            : target as SdkOptional<dynamic>,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as SdkOptional<dynamic>,
-      );
+  CreateProjectEnvResponseFailedItemError _copyWith({Object? action = sdkOmittedValue, Object? code = sdkOmittedValue, Object? envVarId = sdkOmittedValue, Object? envVarKey = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? key = sdkOmittedValue, Object? link = sdkOmittedValue, Object? message = sdkOmittedValue, Object? project = sdkOmittedValue, Object? target = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateProjectEnvResponseFailedItemError(
+    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<String>,
+    code: identical(code, sdkOmittedValue) ? this.code : code as String,
+    envVarId: identical(envVarId, sdkOmittedValue) ? this.envVarId : envVarId as SdkOptional<String>,
+    envVarKey: identical(envVarKey, sdkOmittedValue) ? this.envVarKey : envVarKey as SdkOptional<String>,
+    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
+    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<String>,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<String>,
+    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
+  );
 
-  factory CreateProjectEnvResponseFailedItemError.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectEnvResponseFailedItemError(
-        action: json['action'] != null
-            ? SdkPresent((json['action'] as String?)!)
-            : const SdkOmitted(),
-        code: (json['code'] as String?)!,
-        envVarId: json['envVarId'] != null
-            ? SdkPresent((json['envVarId'] as String?)!)
-            : const SdkOmitted(),
-        envVarKey: json['envVarKey'] != null
-            ? SdkPresent((json['envVarKey'] as String?)!)
-            : const SdkOmitted(),
-        gitBranch: json['gitBranch'] != null
-            ? SdkPresent((json['gitBranch'] as String?)!)
-            : const SdkOmitted(),
-        key: json['key'] != null
-            ? SdkPresent((json['key'] as String?)!)
-            : const SdkOmitted(),
-        link: json['link'] != null
-            ? SdkPresent((json['link'] as String?)!)
-            : const SdkOmitted(),
-        message: (json['message'] as String?)!,
-        project: json['project'] != null
-            ? SdkPresent((json['project'] as String?)!)
-            : const SdkOmitted(),
-        target: json['target'] != null
-            ? SdkPresent((json['target'])!)
-            : const SdkOmitted(),
-        value: json['value'] != null
-            ? SdkPresent((json['value'])!)
-            : const SdkOmitted(),
-      );
+  factory CreateProjectEnvResponseFailedItemError.fromJson(Map<String, dynamic> json) => CreateProjectEnvResponseFailedItemError(
+    action: json['action'] != null ? SdkPresent((json['action'] as String?)!) : const SdkOmitted(),
+    code: (json['code'] as String?)!,
+    envVarId: json['envVarId'] != null ? SdkPresent((json['envVarId'] as String?)!) : const SdkOmitted(),
+    envVarKey: json['envVarKey'] != null ? SdkPresent((json['envVarKey'] as String?)!) : const SdkOmitted(),
+    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
+    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
+    link: json['link'] != null ? SdkPresent((json['link'] as String?)!) : const SdkOmitted(),
+    message: (json['message'] as String?)!,
+    project: json['project'] != null ? SdkPresent((json['project'] as String?)!) : const SdkOmitted(),
+    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
+    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (action) {
-          SdkPresent<String>(value: final value) => {
-              'action': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'code': code,
-        ...switch (envVarId) {
-          SdkPresent<String>(value: final value) => {
-              'envVarId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (envVarKey) {
-          SdkPresent<String>(value: final value) => {
-              'envVarKey': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (gitBranch) {
-          SdkPresent<String>(value: final value) => {
-              'gitBranch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (key) {
-          SdkPresent<String>(value: final value) => {
-              'key': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (link) {
-          SdkPresent<String>(value: final value) => {
-              'link': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'message': message,
-        ...switch (project) {
-          SdkPresent<String>(value: final value) => {
-              'project': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (target) {
-          SdkPresent<dynamic>(value: final value) => {
-              'target': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (value) {
-          SdkPresent<dynamic>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (action) {
+      SdkPresent<String>(value: final value) => {'action': value,},
+      _ => const <String, dynamic>{},
+    },
+    'code': code,
+    ...switch (envVarId) {
+      SdkPresent<String>(value: final value) => {'envVarId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (envVarKey) {
+      SdkPresent<String>(value: final value) => {'envVarKey': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (gitBranch) {
+      SdkPresent<String>(value: final value) => {'gitBranch': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (key) {
+      SdkPresent<String>(value: final value) => {'key': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (link) {
+      SdkPresent<String>(value: final value) => {'link': value,},
+      _ => const <String, dynamic>{},
+    },
+    'message': message,
+    ...switch (project) {
+      SdkPresent<String>(value: final value) => {'project': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (target) {
+      SdkPresent<dynamic>(value: final value) => {'target': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (value) {
+      SdkPresent<dynamic>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateProjectEnvResponseFailedItem {
@@ -192,30 +100,19 @@ class CreateProjectEnvResponseFailedItem {
 
   const CreateProjectEnvResponseFailedItem({required this.error});
 
-  CreateProjectEnvResponseFailedItem Function(
-          {CreateProjectEnvResponseFailedItemError error})
-      get copyWith => _copyWith;
+  CreateProjectEnvResponseFailedItem Function({CreateProjectEnvResponseFailedItemError error}) get copyWith => _copyWith;
 
-  CreateProjectEnvResponseFailedItem _copyWith(
-          {Object? error = sdkOmittedValue}) =>
-      CreateProjectEnvResponseFailedItem(
-        error: identical(error, sdkOmittedValue)
-            ? this.error
-            : error as CreateProjectEnvResponseFailedItemError,
-      );
+  CreateProjectEnvResponseFailedItem _copyWith({Object? error = sdkOmittedValue}) => CreateProjectEnvResponseFailedItem(
+    error: identical(error, sdkOmittedValue) ? this.error : error as CreateProjectEnvResponseFailedItemError,
+  );
 
-  factory CreateProjectEnvResponseFailedItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateProjectEnvResponseFailedItem(
-        error: (json['error'] != null
-            ? CreateProjectEnvResponseFailedItemError.fromJson(
-                json['error'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory CreateProjectEnvResponseFailedItem.fromJson(Map<String, dynamic> json) => CreateProjectEnvResponseFailedItem(
+    error: (json['error'] != null ? CreateProjectEnvResponseFailedItemError.fromJson(json['error'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'error': error.toJson(),
-      };
+    'error': error.toJson(),
+  };
 }
 
 class CreateProjectEnvResponse {
@@ -224,90 +121,53 @@ class CreateProjectEnvResponse {
   final SdkOptional<dynamic> created;
   final List<CreateProjectEnvResponseFailedItem> failed;
 
-  const CreateProjectEnvResponse(
-      {this.created = const SdkOmitted(), required this.failed});
+  const CreateProjectEnvResponse({this.created = const SdkOmitted(), required this.failed});
 
-  CreateProjectEnvResponse Function(
-          {SdkOptional<dynamic> created,
-          List<CreateProjectEnvResponseFailedItem> failed})
-      get copyWith => _copyWith;
+  CreateProjectEnvResponse Function({SdkOptional<dynamic> created, List<CreateProjectEnvResponseFailedItem> failed}) get copyWith => _copyWith;
 
-  CreateProjectEnvResponse _copyWith(
-          {Object? created = sdkOmittedValue,
-          Object? failed = sdkOmittedValue}) =>
-      CreateProjectEnvResponse(
-        created: identical(created, sdkOmittedValue)
-            ? this.created
-            : created as SdkOptional<dynamic>,
-        failed: identical(failed, sdkOmittedValue)
-            ? this.failed
-            : failed as List<CreateProjectEnvResponseFailedItem>,
-      );
+  CreateProjectEnvResponse _copyWith({Object? created = sdkOmittedValue, Object? failed = sdkOmittedValue}) => CreateProjectEnvResponse(
+    created: identical(created, sdkOmittedValue) ? this.created : created as SdkOptional<dynamic>,
+    failed: identical(failed, sdkOmittedValue) ? this.failed : failed as List<CreateProjectEnvResponseFailedItem>,
+  );
 
-  factory CreateProjectEnvResponse.fromJson(Map<String, dynamic> json) =>
-      CreateProjectEnvResponse(
-        created: json['created'] != null
-            ? SdkPresent((json['created'])!)
-            : const SdkOmitted(),
-        failed: ((json['failed'] as List?)
-            ?.map((e) => CreateProjectEnvResponseFailedItem.fromJson(
-                e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory CreateProjectEnvResponse.fromJson(Map<String, dynamic> json) => CreateProjectEnvResponse(
+    created: json['created'] != null ? SdkPresent((json['created'])!) : const SdkOmitted(),
+    failed: ((json['failed'] as List?)?.map((e) => CreateProjectEnvResponseFailedItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (created) {
-          SdkPresent<dynamic>(value: final value) => {
-              'created': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'failed': failed.map((item) => item.toJson()).toList(),
-      };
+    ...switch (created) {
+      SdkPresent<dynamic>(value: final value) => {'created': value,},
+      _ => const <String, dynamic>{},
+    },
+    'failed': failed.map((item) => item.toJson()).toList(),
+  };
 }
 
 /// Similar to `contentHints`, but should not be exposed to the user.
 class RemoveProjectEnvResponseVariant0ItemInternalContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
   final String encryptedValue;
   final RemoveProjectEnvResponseVariant0ItemInternalContentHintType type_;
 
-  const RemoveProjectEnvResponseVariant0ItemInternalContentHint(
-      {required this.encryptedValue, required this.type_});
+  const RemoveProjectEnvResponseVariant0ItemInternalContentHint({required this.encryptedValue, required this.type_});
 
-  RemoveProjectEnvResponseVariant0ItemInternalContentHint Function(
-          {String encryptedValue,
-          RemoveProjectEnvResponseVariant0ItemInternalContentHintType type_})
-      get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant0ItemInternalContentHint Function({String encryptedValue, RemoveProjectEnvResponseVariant0ItemInternalContentHintType type_}) get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant0ItemInternalContentHint _copyWith(
-          {Object? encryptedValue = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      RemoveProjectEnvResponseVariant0ItemInternalContentHint(
-        encryptedValue: identical(encryptedValue, sdkOmittedValue)
-            ? this.encryptedValue
-            : encryptedValue as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as RemoveProjectEnvResponseVariant0ItemInternalContentHintType,
-      );
+  RemoveProjectEnvResponseVariant0ItemInternalContentHint _copyWith({Object? encryptedValue = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant0ItemInternalContentHint(
+    encryptedValue: identical(encryptedValue, sdkOmittedValue) ? this.encryptedValue : encryptedValue as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant0ItemInternalContentHintType,
+  );
 
-  factory RemoveProjectEnvResponseVariant0ItemInternalContentHint.fromJson(
-          Map<String, dynamic> json) =>
-      RemoveProjectEnvResponseVariant0ItemInternalContentHint(
-        encryptedValue: (json['encryptedValue'] as String?)!,
-        type_: (json['type'] != null
-            ? RemoveProjectEnvResponseVariant0ItemInternalContentHintType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory RemoveProjectEnvResponseVariant0ItemInternalContentHint.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant0ItemInternalContentHint(
+    encryptedValue: (json['encryptedValue'] as String?)!,
+    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant0ItemInternalContentHintType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'encryptedValue': encryptedValue,
-        'type': type_.toJson(),
-      };
+    'encryptedValue': encryptedValue,
+    'type': type_.toJson(),
+  };
 }

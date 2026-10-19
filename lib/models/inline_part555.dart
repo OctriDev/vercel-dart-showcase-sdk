@@ -5,368 +5,278 @@ part of 'inline.dart';
 
 // Inline operation models (part 555)
 final class GetProjectsResponseSecurityFirewallSeawallEnabled {
+
   final bool value;
 
   const GetProjectsResponseSecurityFirewallSeawallEnabled._(this.value);
 
-  factory GetProjectsResponseSecurityFirewallSeawallEnabled.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityFirewallSeawallEnabled._(value);
+  factory GetProjectsResponseSecurityFirewallSeawallEnabled.fromJson(bool value) => GetProjectsResponseSecurityFirewallSeawallEnabled._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityFirewallSeawallEnabled._(false);
-  static const true_ =
-      GetProjectsResponseSecurityFirewallSeawallEnabled._(true);
+  static const false_ = GetProjectsResponseSecurityFirewallSeawallEnabled._(false);
+  static const true_ = GetProjectsResponseSecurityFirewallSeawallEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityFirewallSeawallEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityFirewallSeawallEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityJa3Enabled {
+
   final bool value;
 
   const GetProjectsResponseSecurityJa3Enabled._(this.value);
 
-  factory GetProjectsResponseSecurityJa3Enabled.fromJson(bool value) =>
-      GetProjectsResponseSecurityJa3Enabled._(value);
+  factory GetProjectsResponseSecurityJa3Enabled.fromJson(bool value) => GetProjectsResponseSecurityJa3Enabled._(value);
 
   static const false_ = GetProjectsResponseSecurityJa3Enabled._(false);
   static const true_ = GetProjectsResponseSecurityJa3Enabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityJa3Enabled && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityJa3Enabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityJa4Enabled {
+
   final bool value;
 
   const GetProjectsResponseSecurityJa4Enabled._(this.value);
 
-  factory GetProjectsResponseSecurityJa4Enabled.fromJson(bool value) =>
-      GetProjectsResponseSecurityJa4Enabled._(value);
+  factory GetProjectsResponseSecurityJa4Enabled.fromJson(bool value) => GetProjectsResponseSecurityJa4Enabled._(value);
 
   static const false_ = GetProjectsResponseSecurityJa4Enabled._(false);
   static const true_ = GetProjectsResponseSecurityJa4Enabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityJa4Enabled && other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityJa4Enabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityLogHeadersVariant1 {
+
   final String value;
 
   const GetProjectsResponseSecurityLogHeadersVariant1._(this.value);
 
-  factory GetProjectsResponseSecurityLogHeadersVariant1.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityLogHeadersVariant1._(value);
+  factory GetProjectsResponseSecurityLogHeadersVariant1.fromJson(String value) => GetProjectsResponseSecurityLogHeadersVariant1._(value);
 
   static const unknown = GetProjectsResponseSecurityLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityLogHeadersVariant1 &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityLogHeadersVariant1 && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesAiBotsAction {
+
   final String value;
 
   const GetProjectsResponseSecurityManagedRulesAiBotsAction._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesAiBotsAction.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityManagedRulesAiBotsAction._(value);
+  factory GetProjectsResponseSecurityManagedRulesAiBotsAction.fromJson(String value) => GetProjectsResponseSecurityManagedRulesAiBotsAction._(value);
 
-  static const challenge =
-      GetProjectsResponseSecurityManagedRulesAiBotsAction._('challenge');
-  static const deny =
-      GetProjectsResponseSecurityManagedRulesAiBotsAction._('deny');
-  static const log =
-      GetProjectsResponseSecurityManagedRulesAiBotsAction._('log');
+  static const challenge = GetProjectsResponseSecurityManagedRulesAiBotsAction._('challenge');
+  static const deny = GetProjectsResponseSecurityManagedRulesAiBotsAction._('deny');
+  static const log = GetProjectsResponseSecurityManagedRulesAiBotsAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesAiBotsAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesAiBotsAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesAiBotsActive {
+
   final bool value;
 
   const GetProjectsResponseSecurityManagedRulesAiBotsActive._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesAiBotsActive.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityManagedRulesAiBotsActive._(value);
+  factory GetProjectsResponseSecurityManagedRulesAiBotsActive.fromJson(bool value) => GetProjectsResponseSecurityManagedRulesAiBotsActive._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityManagedRulesAiBotsActive._(false);
-  static const true_ =
-      GetProjectsResponseSecurityManagedRulesAiBotsActive._(true);
+  static const false_ = GetProjectsResponseSecurityManagedRulesAiBotsActive._(false);
+  static const true_ = GetProjectsResponseSecurityManagedRulesAiBotsActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesAiBotsActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesAiBotsActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesBotFilterAction {
+
   final String value;
 
   const GetProjectsResponseSecurityManagedRulesBotFilterAction._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesBotFilterAction.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityManagedRulesBotFilterAction._(value);
+  factory GetProjectsResponseSecurityManagedRulesBotFilterAction.fromJson(String value) => GetProjectsResponseSecurityManagedRulesBotFilterAction._(value);
 
-  static const challenge =
-      GetProjectsResponseSecurityManagedRulesBotFilterAction._('challenge');
-  static const deny =
-      GetProjectsResponseSecurityManagedRulesBotFilterAction._('deny');
-  static const log =
-      GetProjectsResponseSecurityManagedRulesBotFilterAction._('log');
+  static const challenge = GetProjectsResponseSecurityManagedRulesBotFilterAction._('challenge');
+  static const deny = GetProjectsResponseSecurityManagedRulesBotFilterAction._('deny');
+  static const log = GetProjectsResponseSecurityManagedRulesBotFilterAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesBotFilterAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesBotFilterAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesBotFilterActive {
+
   final bool value;
 
   const GetProjectsResponseSecurityManagedRulesBotFilterActive._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesBotFilterActive.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityManagedRulesBotFilterActive._(value);
+  factory GetProjectsResponseSecurityManagedRulesBotFilterActive.fromJson(bool value) => GetProjectsResponseSecurityManagedRulesBotFilterActive._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityManagedRulesBotFilterActive._(false);
-  static const true_ =
-      GetProjectsResponseSecurityManagedRulesBotFilterActive._(true);
+  static const false_ = GetProjectsResponseSecurityManagedRulesBotFilterActive._(false);
+  static const true_ = GetProjectsResponseSecurityManagedRulesBotFilterActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesBotFilterActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesBotFilterActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesOwaspAction {
+
   final String value;
 
   const GetProjectsResponseSecurityManagedRulesOwaspAction._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesOwaspAction.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityManagedRulesOwaspAction._(value);
+  factory GetProjectsResponseSecurityManagedRulesOwaspAction.fromJson(String value) => GetProjectsResponseSecurityManagedRulesOwaspAction._(value);
 
-  static const challenge =
-      GetProjectsResponseSecurityManagedRulesOwaspAction._('challenge');
-  static const deny =
-      GetProjectsResponseSecurityManagedRulesOwaspAction._('deny');
-  static const log =
-      GetProjectsResponseSecurityManagedRulesOwaspAction._('log');
+  static const challenge = GetProjectsResponseSecurityManagedRulesOwaspAction._('challenge');
+  static const deny = GetProjectsResponseSecurityManagedRulesOwaspAction._('deny');
+  static const log = GetProjectsResponseSecurityManagedRulesOwaspAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesOwaspAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesOwaspAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesOwaspActive {
+
   final bool value;
 
   const GetProjectsResponseSecurityManagedRulesOwaspActive._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesOwaspActive.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityManagedRulesOwaspActive._(value);
+  factory GetProjectsResponseSecurityManagedRulesOwaspActive.fromJson(bool value) => GetProjectsResponseSecurityManagedRulesOwaspActive._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityManagedRulesOwaspActive._(false);
-  static const true_ =
-      GetProjectsResponseSecurityManagedRulesOwaspActive._(true);
+  static const false_ = GetProjectsResponseSecurityManagedRulesOwaspActive._(false);
+  static const true_ = GetProjectsResponseSecurityManagedRulesOwaspActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesOwaspActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesOwaspActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesTrafficSourcesAction {
+
   final String value;
 
-  const GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._(
-      this.value);
+  const GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesTrafficSourcesAction.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._(value);
+  factory GetProjectsResponseSecurityManagedRulesTrafficSourcesAction.fromJson(String value) => GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._(value);
 
-  static const challenge =
-      GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._(
-          'challenge');
-  static const deny =
-      GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._('deny');
-  static const log =
-      GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._('log');
+  static const challenge = GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._('challenge');
+  static const deny = GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._('deny');
+  static const log = GetProjectsResponseSecurityManagedRulesTrafficSourcesAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesTrafficSourcesAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesTrafficSourcesAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesTrafficSourcesActive {
+
   final bool value;
 
-  const GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(
-      this.value);
+  const GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesTrafficSourcesActive.fromJson(
-          bool value) =>
-      GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(value);
+  factory GetProjectsResponseSecurityManagedRulesTrafficSourcesActive.fromJson(bool value) => GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(value);
 
-  static const false_ =
-      GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(false);
-  static const true_ =
-      GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(true);
+  static const false_ = GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(false);
+  static const true_ = GetProjectsResponseSecurityManagedRulesTrafficSourcesActive._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesTrafficSourcesActive &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesTrafficSourcesActive && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class GetProjectsResponseSecurityManagedRulesVercelRulesetAction {
+
   final String value;
 
-  const GetProjectsResponseSecurityManagedRulesVercelRulesetAction._(
-      this.value);
+  const GetProjectsResponseSecurityManagedRulesVercelRulesetAction._(this.value);
 
-  factory GetProjectsResponseSecurityManagedRulesVercelRulesetAction.fromJson(
-          String value) =>
-      GetProjectsResponseSecurityManagedRulesVercelRulesetAction._(value);
+  factory GetProjectsResponseSecurityManagedRulesVercelRulesetAction.fromJson(String value) => GetProjectsResponseSecurityManagedRulesVercelRulesetAction._(value);
 
-  static const challenge =
-      GetProjectsResponseSecurityManagedRulesVercelRulesetAction._('challenge');
-  static const deny =
-      GetProjectsResponseSecurityManagedRulesVercelRulesetAction._('deny');
-  static const log =
-      GetProjectsResponseSecurityManagedRulesVercelRulesetAction._('log');
+  static const challenge = GetProjectsResponseSecurityManagedRulesVercelRulesetAction._('challenge');
+  static const deny = GetProjectsResponseSecurityManagedRulesVercelRulesetAction._('deny');
+  static const log = GetProjectsResponseSecurityManagedRulesVercelRulesetAction._('log');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is GetProjectsResponseSecurityManagedRulesVercelRulesetAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is GetProjectsResponseSecurityManagedRulesVercelRulesetAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

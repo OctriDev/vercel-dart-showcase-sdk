@@ -6,161 +6,128 @@ part of 'inline.dart';
 // Inline operation models (part 170)
 /// Required enumerated value serialized in the `enabled` wire field.
 final class TeamStrictConnectorsEnabled {
+
   final bool value;
 
   const TeamStrictConnectorsEnabled._(this.value);
 
-  factory TeamStrictConnectorsEnabled.fromJson(bool value) =>
-      TeamStrictConnectorsEnabled._(value);
+  factory TeamStrictConnectorsEnabled.fromJson(bool value) => TeamStrictConnectorsEnabled._(value);
 
   static const false_ = TeamStrictConnectorsEnabled._(false);
   static const true_ = TeamStrictConnectorsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamStrictConnectorsEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is TeamStrictConnectorsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `enabled` wire field.
 final class TeamStrictDeploymentProtectionSettingsEnabled {
+
   final bool value;
 
   const TeamStrictDeploymentProtectionSettingsEnabled._(this.value);
 
-  factory TeamStrictDeploymentProtectionSettingsEnabled.fromJson(bool value) =>
-      TeamStrictDeploymentProtectionSettingsEnabled._(value);
+  factory TeamStrictDeploymentProtectionSettingsEnabled.fromJson(bool value) => TeamStrictDeploymentProtectionSettingsEnabled._(value);
 
   static const false_ = TeamStrictDeploymentProtectionSettingsEnabled._(false);
   static const true_ = TeamStrictDeploymentProtectionSettingsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamStrictDeploymentProtectionSettingsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamStrictDeploymentProtectionSettingsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `enabled` wire field.
 final class TeamStrictPasswordProtectionSettingsEnabled {
+
   final bool value;
 
   const TeamStrictPasswordProtectionSettingsEnabled._(this.value);
 
-  factory TeamStrictPasswordProtectionSettingsEnabled.fromJson(bool value) =>
-      TeamStrictPasswordProtectionSettingsEnabled._(value);
+  factory TeamStrictPasswordProtectionSettingsEnabled.fromJson(bool value) => TeamStrictPasswordProtectionSettingsEnabled._(value);
 
   static const false_ = TeamStrictPasswordProtectionSettingsEnabled._(false);
   static const true_ = TeamStrictPasswordProtectionSettingsEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamStrictPasswordProtectionSettingsEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamStrictPasswordProtectionSettingsEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `enabled` wire field.
 final class TeamStrictShareableLinksEnabled {
+
   final bool value;
 
   const TeamStrictShareableLinksEnabled._(this.value);
 
-  factory TeamStrictShareableLinksEnabled.fromJson(bool value) =>
-      TeamStrictShareableLinksEnabled._(value);
+  factory TeamStrictShareableLinksEnabled.fromJson(bool value) => TeamStrictShareableLinksEnabled._(value);
 
   static const false_ = TeamStrictShareableLinksEnabled._(false);
   static const true_ = TeamStrictShareableLinksEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamStrictShareableLinksEnabled && other.value == value;
+  @override bool operator ==(Object other) => other is TeamStrictShareableLinksEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `target` wire field.
 final class TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
-          value);
+  factory TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
-          'preview');
-  static const production =
-      TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._(
-          'production');
+  static const preview = TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 enum TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 
@@ -172,23 +139,16 @@ enum TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant0Type {
 enum TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-      fromJson(String value) {
+  static TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'custom':
-        return TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom;
-      default:
-        throw ArgumentError(
-            'Unknown TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom': return TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom;
+      default: throw ArgumentError('Unknown TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type
-            .custom:
-        return 'custom';
+      case TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
     }
   }
 
@@ -198,58 +158,40 @@ enum TeamDeploymentPolicyDeploymentSourcesItemEnvironmentsItemVariant1Type {
 
 /// Required enumerated value serialized in the `target` wire field.
 final class TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target {
+
   final String value;
 
-  const TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
-      this.value);
+  const TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(this.value);
 
-  factory TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(
-          String value) =>
-      TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(value);
+  factory TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target.fromJson(String value) => TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(value);
 
-  static const preview =
-      TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
-          'preview');
-  static const production =
-      TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._(
-          'production');
+  static const preview = TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('preview');
+  static const production = TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target._('production');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Target && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 enum TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type {
   system;
 
-  static TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-      fromJson(String value) {
+  static TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type fromJson(String value) {
     switch (value) {
-      case 'system':
-        return TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system;
-      default:
-        throw ArgumentError(
-            'Unknown TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
+      case 'system': return TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system;
+      default: throw ArgumentError('Unknown TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type
-            .system:
-        return 'system';
+      case TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type.system: return 'system';
     }
   }
 
@@ -261,23 +203,16 @@ enum TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant0Type {
 enum TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-      fromJson(String value) {
+  static TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
     switch (value) {
-      case 'custom':
-        return TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-            .custom;
-      default:
-        throw ArgumentError(
-            'Unknown TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom': return TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom;
+      default: throw ArgumentError('Unknown TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
-            .custom:
-        return 'custom';
+      case TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
     }
   }
 
@@ -287,61 +222,45 @@ enum TeamDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type {
 
 /// Required enumerated value serialized in the `provider` wire field.
 final class TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider {
+
   final String value;
 
-  const TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(
-      this.value);
+  const TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(this.value);
 
-  factory TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(
-          String value) =>
-      TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(value);
+  factory TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(String value) => TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(value);
 
-  static const bitbucket =
-      TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(
-          'bitbucket');
-  static const github =
-      TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('github');
+  static const bitbucket = TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('bitbucket');
+  static const github = TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('github');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Required enumerated value serialized in the `provider` wire field.
 final class TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider {
+
   final String value;
 
-  const TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(
-      this.value);
+  const TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(this.value);
 
-  factory TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(
-          String value) =>
-      TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(value);
+  factory TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(String value) => TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(value);
 
-  static const gitlab =
-      TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._('gitlab');
+  static const gitlab = TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is TeamDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having MFA enforced and the user not having MFA enabled. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges.
@@ -350,17 +269,14 @@ enum TeamLimitedLimited {
 
   static TeamLimitedLimited fromJson(bool value) {
     switch (value) {
-      case true:
-        return TeamLimitedLimited.true_;
-      default:
-        throw ArgumentError('Unknown TeamLimitedLimited: $value');
+      case true: return TeamLimitedLimited.true_;
+      default: throw ArgumentError('Unknown TeamLimitedLimited: $value');
     }
   }
 
   bool toJson() {
     switch (this) {
-      case TeamLimitedLimited.true_:
-        return true;
+      case TeamLimitedLimited.true_: return true;
     }
   }
 

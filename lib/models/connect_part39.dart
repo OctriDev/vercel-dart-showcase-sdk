@@ -8,277 +8,151 @@ part of 'connect.dart';
 class ConnectCreateConnectorRequestTriggerDestinationVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Project that receives triggers. During connector creation, omit it to use the top-level projectId.
   final SdkOptional<String> projectId;
-
   /// Route path on the linked project that receives forwarded trigger requests.
   final SdkOptional<String> path;
 
-  const ConnectCreateConnectorRequestTriggerDestinationVariant0(
-      {this.projectId = const SdkOmitted(), this.path = const SdkOmitted()});
+  const ConnectCreateConnectorRequestTriggerDestinationVariant0({this.projectId = const SdkOmitted(), this.path = const SdkOmitted()});
 
-  ConnectCreateConnectorRequestTriggerDestinationVariant0 Function(
-      {SdkOptional<String> projectId,
-      SdkOptional<String> path}) get copyWith => _copyWith;
+  ConnectCreateConnectorRequestTriggerDestinationVariant0 Function({SdkOptional<String> projectId, SdkOptional<String> path}) get copyWith => _copyWith;
 
-  ConnectCreateConnectorRequestTriggerDestinationVariant0 _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? path = sdkOmittedValue}) =>
-      ConnectCreateConnectorRequestTriggerDestinationVariant0(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        path: identical(path, sdkOmittedValue)
-            ? this.path
-            : path as SdkOptional<String>,
-      );
+  ConnectCreateConnectorRequestTriggerDestinationVariant0 _copyWith({Object? projectId = sdkOmittedValue, Object? path = sdkOmittedValue}) => ConnectCreateConnectorRequestTriggerDestinationVariant0(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
+  );
 
-  factory ConnectCreateConnectorRequestTriggerDestinationVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectCreateConnectorRequestTriggerDestinationVariant0(
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        path: json['path'] != null
-            ? SdkPresent((json['path'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectCreateConnectorRequestTriggerDestinationVariant0.fromJson(Map<String, dynamic> json) => ConnectCreateConnectorRequestTriggerDestinationVariant0(
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (path) {
-          SdkPresent<String>(value: final value) => {
-              'path': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (path) {
+      SdkPresent<String>(value: final value) => {'path': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `triggerDestination` wire field.
 class ConnectCreateConnectorRequestTriggerDestinationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Project that receives triggers. During connector creation, omit it to use the top-level projectId.
   final SdkOptional<String> projectId;
-
   /// Git branch used to select a preview deployment.
   final String branch;
-
   /// Route path on the linked project that receives forwarded trigger requests.
   final SdkOptional<String> path;
 
-  const ConnectCreateConnectorRequestTriggerDestinationVariant1(
-      {this.projectId = const SdkOmitted(),
-      required this.branch,
-      this.path = const SdkOmitted()});
+  const ConnectCreateConnectorRequestTriggerDestinationVariant1({this.projectId = const SdkOmitted(), required this.branch, this.path = const SdkOmitted()});
 
-  ConnectCreateConnectorRequestTriggerDestinationVariant1 Function(
-      {SdkOptional<String> projectId,
-      String branch,
-      SdkOptional<String> path}) get copyWith => _copyWith;
+  ConnectCreateConnectorRequestTriggerDestinationVariant1 Function({SdkOptional<String> projectId, String branch, SdkOptional<String> path}) get copyWith => _copyWith;
 
-  ConnectCreateConnectorRequestTriggerDestinationVariant1 _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? branch = sdkOmittedValue,
-          Object? path = sdkOmittedValue}) =>
-      ConnectCreateConnectorRequestTriggerDestinationVariant1(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        branch:
-            identical(branch, sdkOmittedValue) ? this.branch : branch as String,
-        path: identical(path, sdkOmittedValue)
-            ? this.path
-            : path as SdkOptional<String>,
-      );
+  ConnectCreateConnectorRequestTriggerDestinationVariant1 _copyWith({Object? projectId = sdkOmittedValue, Object? branch = sdkOmittedValue, Object? path = sdkOmittedValue}) => ConnectCreateConnectorRequestTriggerDestinationVariant1(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    branch: identical(branch, sdkOmittedValue) ? this.branch : branch as String,
+    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
+  );
 
-  factory ConnectCreateConnectorRequestTriggerDestinationVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectCreateConnectorRequestTriggerDestinationVariant1(
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        branch: (json['branch'] as String?)!,
-        path: json['path'] != null
-            ? SdkPresent((json['path'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectCreateConnectorRequestTriggerDestinationVariant1.fromJson(Map<String, dynamic> json) => ConnectCreateConnectorRequestTriggerDestinationVariant1(
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    branch: (json['branch'] as String?)!,
+    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'branch': branch,
-        ...switch (path) {
-          SdkPresent<String>(value: final value) => {
-              'path': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'branch': branch,
+    ...switch (path) {
+      SdkPresent<String>(value: final value) => {'path': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Optional object value serialized in the `triggerDestination` wire field.
 class ConnectCreateConnectorRequestTriggerDestinationVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Project that receives triggers. During connector creation, omit it to use the top-level projectId.
   final SdkOptional<String> projectId;
-
   /// Stable custom environment ID that belongs to the destination project.
   final String customEnvironmentId;
-
   /// Route path on the linked project that receives forwarded trigger requests.
   final SdkOptional<String> path;
 
-  const ConnectCreateConnectorRequestTriggerDestinationVariant2(
-      {this.projectId = const SdkOmitted(),
-      required this.customEnvironmentId,
-      this.path = const SdkOmitted()});
+  const ConnectCreateConnectorRequestTriggerDestinationVariant2({this.projectId = const SdkOmitted(), required this.customEnvironmentId, this.path = const SdkOmitted()});
 
-  ConnectCreateConnectorRequestTriggerDestinationVariant2 Function(
-      {SdkOptional<String> projectId,
-      String customEnvironmentId,
-      SdkOptional<String> path}) get copyWith => _copyWith;
+  ConnectCreateConnectorRequestTriggerDestinationVariant2 Function({SdkOptional<String> projectId, String customEnvironmentId, SdkOptional<String> path}) get copyWith => _copyWith;
 
-  ConnectCreateConnectorRequestTriggerDestinationVariant2 _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? customEnvironmentId = sdkOmittedValue,
-          Object? path = sdkOmittedValue}) =>
-      ConnectCreateConnectorRequestTriggerDestinationVariant2(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
-            ? this.customEnvironmentId
-            : customEnvironmentId as String,
-        path: identical(path, sdkOmittedValue)
-            ? this.path
-            : path as SdkOptional<String>,
-      );
+  ConnectCreateConnectorRequestTriggerDestinationVariant2 _copyWith({Object? projectId = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? path = sdkOmittedValue}) => ConnectCreateConnectorRequestTriggerDestinationVariant2(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as String,
+    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
+  );
 
-  factory ConnectCreateConnectorRequestTriggerDestinationVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectCreateConnectorRequestTriggerDestinationVariant2(
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        customEnvironmentId: (json['customEnvironmentId'] as String?)!,
-        path: json['path'] != null
-            ? SdkPresent((json['path'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory ConnectCreateConnectorRequestTriggerDestinationVariant2.fromJson(Map<String, dynamic> json) => ConnectCreateConnectorRequestTriggerDestinationVariant2(
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    customEnvironmentId: (json['customEnvironmentId'] as String?)!,
+    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'customEnvironmentId': customEnvironmentId,
-        ...switch (path) {
-          SdkPresent<String>(value: final value) => {
-              'path': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    'customEnvironmentId': customEnvironmentId,
+    ...switch (path) {
+      SdkPresent<String>(value: final value) => {'path': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class ConnectCreateConnectorRequestTriggerDestination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const ConnectCreateConnectorRequestTriggerDestination();
-  factory ConnectCreateConnectorRequestTriggerDestination.fromJson(
-      Object? json) {
+  factory ConnectCreateConnectorRequestTriggerDestination.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            ConnectCreateConnectorRequestTriggerDestinationVariant0.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ConnectCreateConnectorRequestTriggerDestinationVariant1.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            ConnectCreateConnectorRequestTriggerDestinationVariant2.fromJson(
-                json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2(
-              value);
-        }
-      } catch (_) {}
+      try { final value = ConnectCreateConnectorRequestTriggerDestinationVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0(value); } } catch (_) {}
+      try { final value = ConnectCreateConnectorRequestTriggerDestinationVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1(value); } } catch (_) {}
+      try { final value = ConnectCreateConnectorRequestTriggerDestinationVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2(value); } } catch (_) {}
     }
-    try {
-      return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0(
-          ConnectCreateConnectorRequestTriggerDestinationVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1(
-          ConnectCreateConnectorRequestTriggerDestinationVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2(
-          ConnectCreateConnectorRequestTriggerDestinationVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for ConnectCreateConnectorRequestTriggerDestination");
+    try { return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0(ConnectCreateConnectorRequestTriggerDestinationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1(ConnectCreateConnectorRequestTriggerDestinationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2(ConnectCreateConnectorRequestTriggerDestinationVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for ConnectCreateConnectorRequestTriggerDestination");
   }
   Object? toJson();
 }
 
-final class ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0
-    extends ConnectCreateConnectorRequestTriggerDestination {
+final class ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0 extends ConnectCreateConnectorRequestTriggerDestination {
   final ConnectCreateConnectorRequestTriggerDestinationVariant0 value;
-  const ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1
-    extends ConnectCreateConnectorRequestTriggerDestination {
+final class ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1 extends ConnectCreateConnectorRequestTriggerDestination {
   final ConnectCreateConnectorRequestTriggerDestinationVariant1 value;
-  const ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2
-    extends ConnectCreateConnectorRequestTriggerDestination {
+final class ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2 extends ConnectCreateConnectorRequestTriggerDestination {
   final ConnectCreateConnectorRequestTriggerDestinationVariant2 value;
-  const ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const ConnectCreateConnectorRequestTriggerDestinationConnectCreateConnectorRequestTriggerDestinationVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 sealed class ConnectEnvironment {
@@ -286,85 +160,62 @@ sealed class ConnectEnvironment {
   static const String constructionSurface = 'named';
   const ConnectEnvironment();
   factory ConnectEnvironment.fromJson(Object? json) {
-    if (json is String) {
-      return ConnectEnvironmentString(json);
-    }
-    try {
-      return ConnectEnvironmentConnectEnvironmentVariant0(
-          ConnectEnvironmentVariant0.fromJson(json as String));
-    } catch (_) {}
+    if (json is String) { return ConnectEnvironmentString(json); }
+    try { return ConnectEnvironmentConnectEnvironmentVariant0(ConnectEnvironmentVariant0.fromJson(json as String)); } catch (_) {}
     throw FormatException("No variant matched for ConnectEnvironment");
   }
   Object? toJson();
 }
 
-final class ConnectEnvironmentConnectEnvironmentVariant0
-    extends ConnectEnvironment {
+final class ConnectEnvironmentConnectEnvironmentVariant0 extends ConnectEnvironment {
   final ConnectEnvironmentVariant0 value;
   const ConnectEnvironmentConnectEnvironmentVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class ConnectEnvironmentString extends ConnectEnvironment {
   final String value;
   const ConnectEnvironmentString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 /// Error details.
 class ConnectErrorError {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Stable machine-readable error code.
   final String code;
-
   /// Human-readable error message.
   final String message;
   final Map<String, dynamic> additionalProperties;
 
-  const ConnectErrorError(
-      {required this.code,
-      required this.message,
-      this.additionalProperties = const <String, dynamic>{}});
+  const ConnectErrorError({required this.code, required this.message, this.additionalProperties = const <String, dynamic>{}});
 
-  ConnectErrorError Function({String code, String message}) get copyWith =>
-      _copyWith;
+  ConnectErrorError Function({String code, String message}) get copyWith => _copyWith;
 
-  ConnectErrorError _copyWith(
-          {Object? code = sdkOmittedValue,
-          Object? message = sdkOmittedValue}) =>
-      ConnectErrorError(
-        code: identical(code, sdkOmittedValue) ? this.code : code as String,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as String,
-        additionalProperties: additionalProperties,
-      );
+  ConnectErrorError _copyWith({Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => ConnectErrorError(
+    code: identical(code, sdkOmittedValue) ? this.code : code as String,
+    message: identical(message, sdkOmittedValue) ? this.message : message as String,
+    additionalProperties: additionalProperties,
+  );
 
-  factory ConnectErrorError.fromJson(Map<String, dynamic> json) =>
-      ConnectErrorError(
-        code: (json['code'] as String?)!,
-        message: (json['message'] as String?)!,
-        additionalProperties: Map.of(json)
-          ..removeWhere(
-              (key, _) => const <String>{'code', 'message'}.contains(key)),
-      );
+  factory ConnectErrorError.fromJson(Map<String, dynamic> json) => ConnectErrorError(
+    code: (json['code'] as String?)!,
+    message: (json['message'] as String?)!,
+    additionalProperties: Map.of(json)..removeWhere((key, _) => const <String>{'code', 'message'}.contains(key)),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...additionalProperties,
-        'code': code,
-        'message': message,
-      };
+    ...additionalProperties,
+    'code': code,
+    'message': message,
+  };
 }
 
 /// Error response returned by a Connect API operation.
 class ConnectError {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Error details.
   final ConnectErrorError error;
 
@@ -373,27 +224,22 @@ class ConnectError {
   ConnectError Function({ConnectErrorError error}) get copyWith => _copyWith;
 
   ConnectError _copyWith({Object? error = sdkOmittedValue}) => ConnectError(
-        error: identical(error, sdkOmittedValue)
-            ? this.error
-            : error as ConnectErrorError,
-      );
+    error: identical(error, sdkOmittedValue) ? this.error : error as ConnectErrorError,
+  );
 
   factory ConnectError.fromJson(Map<String, dynamic> json) => ConnectError(
-        error: (json['error'] != null
-            ? ConnectErrorError.fromJson(json['error'] as Map<String, dynamic>)
-            : null)!,
-      );
+    error: (json['error'] != null ? ConnectErrorError.fromJson(json['error'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'error': error.toJson(),
-      };
+    'error': error.toJson(),
+  };
 }
 
 /// Cursor for the next page.
 class ConnectPagination {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Opaque value to pass as `cursor` on the next request.
   final String? next;
 
@@ -401,57 +247,44 @@ class ConnectPagination {
 
   ConnectPagination Function({String? next}) get copyWith => _copyWith;
 
-  ConnectPagination _copyWith({Object? next = sdkOmittedValue}) =>
-      ConnectPagination(
-        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-      );
+  ConnectPagination _copyWith({Object? next = sdkOmittedValue}) => ConnectPagination(
+    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+  );
 
-  factory ConnectPagination.fromJson(Map<String, dynamic> json) =>
-      ConnectPagination(
-        next: json.containsKey('next')
-            ? json['next'] as String?
-            : throw ArgumentError.value(
-                null, 'next', 'Required property is missing'),
-      );
+  factory ConnectPagination.fromJson(Map<String, dynamic> json) => ConnectPagination(
+    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'next': next,
-      };
+    'next': next,
+  };
 }
 
 /// Custom environments available on the project. This list can include environments where the connector is not enabled.
 class ConnectProjectConnectionProjectCustomEnvironmentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Stable custom environment ID.
   final String id;
-
   /// Current human-readable custom environment slug.
   final String slug;
 
-  const ConnectProjectConnectionProjectCustomEnvironmentsItem(
-      {required this.id, required this.slug});
+  const ConnectProjectConnectionProjectCustomEnvironmentsItem({required this.id, required this.slug});
 
-  ConnectProjectConnectionProjectCustomEnvironmentsItem Function(
-      {String id, String slug}) get copyWith => _copyWith;
+  ConnectProjectConnectionProjectCustomEnvironmentsItem Function({String id, String slug}) get copyWith => _copyWith;
 
-  ConnectProjectConnectionProjectCustomEnvironmentsItem _copyWith(
-          {Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue}) =>
-      ConnectProjectConnectionProjectCustomEnvironmentsItem(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-      );
+  ConnectProjectConnectionProjectCustomEnvironmentsItem _copyWith({Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue}) => ConnectProjectConnectionProjectCustomEnvironmentsItem(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+  );
 
-  factory ConnectProjectConnectionProjectCustomEnvironmentsItem.fromJson(
-          Map<String, dynamic> json) =>
-      ConnectProjectConnectionProjectCustomEnvironmentsItem(
-        id: (json['id'] as String?)!,
-        slug: (json['slug'] as String?)!,
-      );
+  factory ConnectProjectConnectionProjectCustomEnvironmentsItem.fromJson(Map<String, dynamic> json) => ConnectProjectConnectionProjectCustomEnvironmentsItem(
+    id: (json['id'] as String?)!,
+    slug: (json['slug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'slug': slug,
-      };
+    'id': id,
+    'slug': slug,
+  };
 }

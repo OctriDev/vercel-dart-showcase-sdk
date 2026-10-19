@@ -14,125 +14,69 @@ class CancelDeploymentResponseGitSourceVariant1 {
   final SdkOptional<String> sha;
   final CancelDeploymentResponseGitSourceVariant1Type type_;
 
-  const CancelDeploymentResponseGitSourceVariant1(
-      {required this.org,
-      this.prId = const SdkOmitted(),
-      this.ref = const SdkOmitted(),
-      required this.repo,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CancelDeploymentResponseGitSourceVariant1({required this.org, this.prId = const SdkOmitted(), this.ref = const SdkOmitted(), required this.repo, this.sha = const SdkOmitted(), required this.type_});
 
-  CancelDeploymentResponseGitSourceVariant1 Function(
-          {String org,
-          SdkOptional<double?> prId,
-          SdkOptional<String?> ref,
-          String repo,
-          SdkOptional<String> sha,
-          CancelDeploymentResponseGitSourceVariant1Type type_})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseGitSourceVariant1 Function({String org, SdkOptional<double?> prId, SdkOptional<String?> ref, String repo, SdkOptional<String> sha, CancelDeploymentResponseGitSourceVariant1Type type_}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitSourceVariant1 _copyWith(
-          {Object? org = sdkOmittedValue,
-          Object? prId = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CancelDeploymentResponseGitSourceVariant1(
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        prId: identical(prId, sdkOmittedValue)
-            ? this.prId
-            : prId as SdkOptional<double?>,
-        ref: identical(ref, sdkOmittedValue)
-            ? this.ref
-            : ref as SdkOptional<String?>,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CancelDeploymentResponseGitSourceVariant1Type,
-      );
+  CancelDeploymentResponseGitSourceVariant1 _copyWith({Object? org = sdkOmittedValue, Object? prId = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseGitSourceVariant1(
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    prId: identical(prId, sdkOmittedValue) ? this.prId : prId as SdkOptional<double?>,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as SdkOptional<String?>,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitSourceVariant1Type,
+  );
 
-  factory CancelDeploymentResponseGitSourceVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseGitSourceVariant1(
-        org: (json['org'] as String?)!,
-        prId: json.containsKey('prId')
-            ? SdkPresent((json['prId'] as num?)?.toDouble())
-            : const SdkOmitted(),
-        ref: json.containsKey('ref')
-            ? SdkPresent(json['ref'] as String?)
-            : const SdkOmitted(),
-        repo: (json['repo'] as String?)!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CancelDeploymentResponseGitSourceVariant1Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CancelDeploymentResponseGitSourceVariant1.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitSourceVariant1(
+    org: (json['org'] as String?)!,
+    prId: json.containsKey('prId') ? SdkPresent((json['prId'] as num?)?.toDouble()) : const SdkOmitted(),
+    ref: json.containsKey('ref') ? SdkPresent(json['ref'] as String?) : const SdkOmitted(),
+    repo: (json['repo'] as String?)!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CancelDeploymentResponseGitSourceVariant1Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'org': org,
-        ...switch (prId) {
-          SdkPresent<double?>(value: final value) => {
-              'prId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ref) {
-          SdkPresent<String?>(value: final value) => {
-              'ref': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'repo': repo,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'org': org,
+    ...switch (prId) {
+      SdkPresent<double?>(value: final value) => {'prId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ref) {
+      SdkPresent<String?>(value: final value) => {'ref': value,},
+      _ => const <String, dynamic>{},
+    },
+    'repo': repo,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 sealed class CancelDeploymentResponseGitSourceVariant2RepoId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CancelDeploymentResponseGitSourceVariant2RepoId();
-  factory CancelDeploymentResponseGitSourceVariant2RepoId.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CancelDeploymentResponseGitSourceVariant2RepoIdString(json);
-    }
-    if (json is num) {
-      return CancelDeploymentResponseGitSourceVariant2RepoIdDouble(
-          json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for CancelDeploymentResponseGitSourceVariant2RepoId");
+  factory CancelDeploymentResponseGitSourceVariant2RepoId.fromJson(Object? json) {
+    if (json is String) { return CancelDeploymentResponseGitSourceVariant2RepoIdString(json); }
+    if (json is num) { return CancelDeploymentResponseGitSourceVariant2RepoIdDouble(json.toDouble()); }
+    throw FormatException("No variant matched for CancelDeploymentResponseGitSourceVariant2RepoId");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseGitSourceVariant2RepoIdString
-    extends CancelDeploymentResponseGitSourceVariant2RepoId {
+final class CancelDeploymentResponseGitSourceVariant2RepoIdString extends CancelDeploymentResponseGitSourceVariant2RepoId {
   final String value;
   const CancelDeploymentResponseGitSourceVariant2RepoIdString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CancelDeploymentResponseGitSourceVariant2RepoIdDouble
-    extends CancelDeploymentResponseGitSourceVariant2RepoId {
+final class CancelDeploymentResponseGitSourceVariant2RepoIdDouble extends CancelDeploymentResponseGitSourceVariant2RepoId {
   final double value;
   const CancelDeploymentResponseGitSourceVariant2RepoIdDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 class CancelDeploymentResponseGitSourceVariant2 {
@@ -145,92 +89,45 @@ class CancelDeploymentResponseGitSourceVariant2 {
   final SdkOptional<String> sha;
   final CancelDeploymentResponseGitSourceVariant2Type type_;
 
-  const CancelDeploymentResponseGitSourceVariant2(
-      {required this.host,
-      this.prId = const SdkOmitted(),
-      this.ref = const SdkOmitted(),
-      required this.repoId,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CancelDeploymentResponseGitSourceVariant2({required this.host, this.prId = const SdkOmitted(), this.ref = const SdkOmitted(), required this.repoId, this.sha = const SdkOmitted(), required this.type_});
 
-  CancelDeploymentResponseGitSourceVariant2 Function(
-          {String host,
-          SdkOptional<double?> prId,
-          SdkOptional<String?> ref,
-          dynamic repoId,
-          SdkOptional<String> sha,
-          CancelDeploymentResponseGitSourceVariant2Type type_})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseGitSourceVariant2 Function({String host, SdkOptional<double?> prId, SdkOptional<String?> ref, dynamic repoId, SdkOptional<String> sha, CancelDeploymentResponseGitSourceVariant2Type type_}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitSourceVariant2 _copyWith(
-          {Object? host = sdkOmittedValue,
-          Object? prId = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CancelDeploymentResponseGitSourceVariant2(
-        host: identical(host, sdkOmittedValue) ? this.host : host as String,
-        prId: identical(prId, sdkOmittedValue)
-            ? this.prId
-            : prId as SdkOptional<double?>,
-        ref: identical(ref, sdkOmittedValue)
-            ? this.ref
-            : ref as SdkOptional<String?>,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as dynamic,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CancelDeploymentResponseGitSourceVariant2Type,
-      );
+  CancelDeploymentResponseGitSourceVariant2 _copyWith({Object? host = sdkOmittedValue, Object? prId = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseGitSourceVariant2(
+    host: identical(host, sdkOmittedValue) ? this.host : host as String,
+    prId: identical(prId, sdkOmittedValue) ? this.prId : prId as SdkOptional<double?>,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as SdkOptional<String?>,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as dynamic,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitSourceVariant2Type,
+  );
 
-  factory CancelDeploymentResponseGitSourceVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseGitSourceVariant2(
-        host: (json['host'] as String?)!,
-        prId: json.containsKey('prId')
-            ? SdkPresent((json['prId'] as num?)?.toDouble())
-            : const SdkOmitted(),
-        ref: json.containsKey('ref')
-            ? SdkPresent(json['ref'] as String?)
-            : const SdkOmitted(),
-        repoId: (json['repoId'])!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CancelDeploymentResponseGitSourceVariant2Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CancelDeploymentResponseGitSourceVariant2.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitSourceVariant2(
+    host: (json['host'] as String?)!,
+    prId: json.containsKey('prId') ? SdkPresent((json['prId'] as num?)?.toDouble()) : const SdkOmitted(),
+    ref: json.containsKey('ref') ? SdkPresent(json['ref'] as String?) : const SdkOmitted(),
+    repoId: (json['repoId'])!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CancelDeploymentResponseGitSourceVariant2Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'host': host,
-        ...switch (prId) {
-          SdkPresent<double?>(value: final value) => {
-              'prId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ref) {
-          SdkPresent<String?>(value: final value) => {
-              'ref': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'repoId': repoId,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'host': host,
+    ...switch (prId) {
+      SdkPresent<double?>(value: final value) => {'prId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ref) {
+      SdkPresent<String?>(value: final value) => {'ref': value,},
+      _ => const <String, dynamic>{},
+    },
+    'repoId': repoId,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 class CancelDeploymentResponseGitSourceVariant3 {
@@ -244,131 +141,72 @@ class CancelDeploymentResponseGitSourceVariant3 {
   final SdkOptional<String> sha;
   final CancelDeploymentResponseGitSourceVariant3Type type_;
 
-  const CancelDeploymentResponseGitSourceVariant3(
-      {required this.host,
-      required this.org,
-      this.prId = const SdkOmitted(),
-      this.ref = const SdkOmitted(),
-      required this.repo,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CancelDeploymentResponseGitSourceVariant3({required this.host, required this.org, this.prId = const SdkOmitted(), this.ref = const SdkOmitted(), required this.repo, this.sha = const SdkOmitted(), required this.type_});
 
-  CancelDeploymentResponseGitSourceVariant3 Function(
-          {String host,
-          String org,
-          SdkOptional<double?> prId,
-          SdkOptional<String?> ref,
-          String repo,
-          SdkOptional<String> sha,
-          CancelDeploymentResponseGitSourceVariant3Type type_})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseGitSourceVariant3 Function({String host, String org, SdkOptional<double?> prId, SdkOptional<String?> ref, String repo, SdkOptional<String> sha, CancelDeploymentResponseGitSourceVariant3Type type_}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitSourceVariant3 _copyWith(
-          {Object? host = sdkOmittedValue,
-          Object? org = sdkOmittedValue,
-          Object? prId = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repo = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CancelDeploymentResponseGitSourceVariant3(
-        host: identical(host, sdkOmittedValue) ? this.host : host as String,
-        org: identical(org, sdkOmittedValue) ? this.org : org as String,
-        prId: identical(prId, sdkOmittedValue)
-            ? this.prId
-            : prId as SdkOptional<double?>,
-        ref: identical(ref, sdkOmittedValue)
-            ? this.ref
-            : ref as SdkOptional<String?>,
-        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CancelDeploymentResponseGitSourceVariant3Type,
-      );
+  CancelDeploymentResponseGitSourceVariant3 _copyWith({Object? host = sdkOmittedValue, Object? org = sdkOmittedValue, Object? prId = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseGitSourceVariant3(
+    host: identical(host, sdkOmittedValue) ? this.host : host as String,
+    org: identical(org, sdkOmittedValue) ? this.org : org as String,
+    prId: identical(prId, sdkOmittedValue) ? this.prId : prId as SdkOptional<double?>,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as SdkOptional<String?>,
+    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitSourceVariant3Type,
+  );
 
-  factory CancelDeploymentResponseGitSourceVariant3.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseGitSourceVariant3(
-        host: (json['host'] as String?)!,
-        org: (json['org'] as String?)!,
-        prId: json.containsKey('prId')
-            ? SdkPresent((json['prId'] as num?)?.toDouble())
-            : const SdkOmitted(),
-        ref: json.containsKey('ref')
-            ? SdkPresent(json['ref'] as String?)
-            : const SdkOmitted(),
-        repo: (json['repo'] as String?)!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CancelDeploymentResponseGitSourceVariant3Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CancelDeploymentResponseGitSourceVariant3.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitSourceVariant3(
+    host: (json['host'] as String?)!,
+    org: (json['org'] as String?)!,
+    prId: json.containsKey('prId') ? SdkPresent((json['prId'] as num?)?.toDouble()) : const SdkOmitted(),
+    ref: json.containsKey('ref') ? SdkPresent(json['ref'] as String?) : const SdkOmitted(),
+    repo: (json['repo'] as String?)!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CancelDeploymentResponseGitSourceVariant3Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'host': host,
-        'org': org,
-        ...switch (prId) {
-          SdkPresent<double?>(value: final value) => {
-              'prId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ref) {
-          SdkPresent<String?>(value: final value) => {
-              'ref': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'repo': repo,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'host': host,
+    'org': org,
+    ...switch (prId) {
+      SdkPresent<double?>(value: final value) => {'prId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ref) {
+      SdkPresent<String?>(value: final value) => {'ref': value,},
+      _ => const <String, dynamic>{},
+    },
+    'repo': repo,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 sealed class CancelDeploymentResponseGitSourceVariant4RepoId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CancelDeploymentResponseGitSourceVariant4RepoId();
-  factory CancelDeploymentResponseGitSourceVariant4RepoId.fromJson(
-      Object? json) {
-    if (json is String) {
-      return CancelDeploymentResponseGitSourceVariant4RepoIdString(json);
-    }
-    if (json is num) {
-      return CancelDeploymentResponseGitSourceVariant4RepoIdDouble(
-          json.toDouble());
-    }
-    throw FormatException(
-        "No variant matched for CancelDeploymentResponseGitSourceVariant4RepoId");
+  factory CancelDeploymentResponseGitSourceVariant4RepoId.fromJson(Object? json) {
+    if (json is String) { return CancelDeploymentResponseGitSourceVariant4RepoIdString(json); }
+    if (json is num) { return CancelDeploymentResponseGitSourceVariant4RepoIdDouble(json.toDouble()); }
+    throw FormatException("No variant matched for CancelDeploymentResponseGitSourceVariant4RepoId");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseGitSourceVariant4RepoIdString
-    extends CancelDeploymentResponseGitSourceVariant4RepoId {
+final class CancelDeploymentResponseGitSourceVariant4RepoIdString extends CancelDeploymentResponseGitSourceVariant4RepoId {
   final String value;
   const CancelDeploymentResponseGitSourceVariant4RepoIdString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CancelDeploymentResponseGitSourceVariant4RepoIdDouble
-    extends CancelDeploymentResponseGitSourceVariant4RepoId {
+final class CancelDeploymentResponseGitSourceVariant4RepoIdDouble extends CancelDeploymentResponseGitSourceVariant4RepoId {
   final double value;
   const CancelDeploymentResponseGitSourceVariant4RepoIdDouble(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
 class CancelDeploymentResponseGitSourceVariant4 {
@@ -380,84 +218,40 @@ class CancelDeploymentResponseGitSourceVariant4 {
   final SdkOptional<String> sha;
   final CancelDeploymentResponseGitSourceVariant4Type type_;
 
-  const CancelDeploymentResponseGitSourceVariant4(
-      {this.prId = const SdkOmitted(),
-      this.ref = const SdkOmitted(),
-      required this.repoId,
-      this.sha = const SdkOmitted(),
-      required this.type_});
+  const CancelDeploymentResponseGitSourceVariant4({this.prId = const SdkOmitted(), this.ref = const SdkOmitted(), required this.repoId, this.sha = const SdkOmitted(), required this.type_});
 
-  CancelDeploymentResponseGitSourceVariant4 Function(
-          {SdkOptional<double?> prId,
-          SdkOptional<String?> ref,
-          dynamic repoId,
-          SdkOptional<String> sha,
-          CancelDeploymentResponseGitSourceVariant4Type type_})
-      get copyWith => _copyWith;
+  CancelDeploymentResponseGitSourceVariant4 Function({SdkOptional<double?> prId, SdkOptional<String?> ref, dynamic repoId, SdkOptional<String> sha, CancelDeploymentResponseGitSourceVariant4Type type_}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitSourceVariant4 _copyWith(
-          {Object? prId = sdkOmittedValue,
-          Object? ref = sdkOmittedValue,
-          Object? repoId = sdkOmittedValue,
-          Object? sha = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CancelDeploymentResponseGitSourceVariant4(
-        prId: identical(prId, sdkOmittedValue)
-            ? this.prId
-            : prId as SdkOptional<double?>,
-        ref: identical(ref, sdkOmittedValue)
-            ? this.ref
-            : ref as SdkOptional<String?>,
-        repoId: identical(repoId, sdkOmittedValue)
-            ? this.repoId
-            : repoId as dynamic,
-        sha: identical(sha, sdkOmittedValue)
-            ? this.sha
-            : sha as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CancelDeploymentResponseGitSourceVariant4Type,
-      );
+  CancelDeploymentResponseGitSourceVariant4 _copyWith({Object? prId = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? sha = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseGitSourceVariant4(
+    prId: identical(prId, sdkOmittedValue) ? this.prId : prId as SdkOptional<double?>,
+    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as SdkOptional<String?>,
+    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as dynamic,
+    sha: identical(sha, sdkOmittedValue) ? this.sha : sha as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitSourceVariant4Type,
+  );
 
-  factory CancelDeploymentResponseGitSourceVariant4.fromJson(
-          Map<String, dynamic> json) =>
-      CancelDeploymentResponseGitSourceVariant4(
-        prId: json.containsKey('prId')
-            ? SdkPresent((json['prId'] as num?)?.toDouble())
-            : const SdkOmitted(),
-        ref: json.containsKey('ref')
-            ? SdkPresent(json['ref'] as String?)
-            : const SdkOmitted(),
-        repoId: (json['repoId'])!,
-        sha: json['sha'] != null
-            ? SdkPresent((json['sha'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? CancelDeploymentResponseGitSourceVariant4Type.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CancelDeploymentResponseGitSourceVariant4.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitSourceVariant4(
+    prId: json.containsKey('prId') ? SdkPresent((json['prId'] as num?)?.toDouble()) : const SdkOmitted(),
+    ref: json.containsKey('ref') ? SdkPresent(json['ref'] as String?) : const SdkOmitted(),
+    repoId: (json['repoId'])!,
+    sha: json['sha'] != null ? SdkPresent((json['sha'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? CancelDeploymentResponseGitSourceVariant4Type.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (prId) {
-          SdkPresent<double?>(value: final value) => {
-              'prId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (ref) {
-          SdkPresent<String?>(value: final value) => {
-              'ref': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'repoId': repoId,
-        ...switch (sha) {
-          SdkPresent<String>(value: final value) => {
-              'sha': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    ...switch (prId) {
+      SdkPresent<double?>(value: final value) => {'prId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (ref) {
+      SdkPresent<String?>(value: final value) => {'ref': value,},
+      _ => const <String, dynamic>{},
+    },
+    'repoId': repoId,
+    ...switch (sha) {
+      SdkPresent<String>(value: final value) => {'sha': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }

@@ -8,175 +8,104 @@ part of 'inline.dart';
 class CreateSandboxesV3RequestBodyResources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// The number of virtual CPUs to allocate to the sandbox. Must be 1, or an even number.
   final SdkOptional<int> vcpus;
-
   /// The amount of memory in megabytes to allocate to the sandbox. Must equal vcpus * 2048.
   final SdkOptional<int> memory;
 
-  const CreateSandboxesV3RequestBodyResources(
-      {this.vcpus = const SdkOmitted(), this.memory = const SdkOmitted()});
+  const CreateSandboxesV3RequestBodyResources({this.vcpus = const SdkOmitted(), this.memory = const SdkOmitted()});
 
-  CreateSandboxesV3RequestBodyResources Function(
-      {SdkOptional<int> vcpus,
-      SdkOptional<int> memory}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestBodyResources Function({SdkOptional<int> vcpus, SdkOptional<int> memory}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestBodyResources _copyWith(
-          {Object? vcpus = sdkOmittedValue,
-          Object? memory = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestBodyResources(
-        vcpus: identical(vcpus, sdkOmittedValue)
-            ? this.vcpus
-            : vcpus as SdkOptional<int>,
-        memory: identical(memory, sdkOmittedValue)
-            ? this.memory
-            : memory as SdkOptional<int>,
-      );
+  CreateSandboxesV3RequestBodyResources _copyWith({Object? vcpus = sdkOmittedValue, Object? memory = sdkOmittedValue}) => CreateSandboxesV3RequestBodyResources(
+    vcpus: identical(vcpus, sdkOmittedValue) ? this.vcpus : vcpus as SdkOptional<int>,
+    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as SdkOptional<int>,
+  );
 
-  factory CreateSandboxesV3RequestBodyResources.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestBodyResources(
-        vcpus: json['vcpus'] != null
-            ? SdkPresent(((json['vcpus'] as num?)?.toInt())!)
-            : const SdkOmitted(),
-        memory: json['memory'] != null
-            ? SdkPresent(((json['memory'] as num?)?.toInt())!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV3RequestBodyResources.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestBodyResources(
+    vcpus: json['vcpus'] != null ? SdkPresent(((json['vcpus'] as num?)?.toInt())!) : const SdkOmitted(),
+    memory: json['memory'] != null ? SdkPresent(((json['memory'] as num?)?.toInt())!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (vcpus) {
-          SdkPresent<int>(value: final value) => {
-              'vcpus': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (memory) {
-          SdkPresent<int>(value: final value) => {
-              'memory': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (vcpus) {
+      SdkPresent<int>(value: final value) => {'vcpus': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (memory) {
+      SdkPresent<int>(value: final value) => {'memory': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSandboxesV3RequestBodyMountsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Name of the drive to mount. The drive must already exist.
   final String drive;
-
   /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.
   final SdkOptional<CreateSandboxesV3RequestBodyMountsValueMode> mode;
 
-  const CreateSandboxesV3RequestBodyMountsValue(
-      {required this.drive, this.mode = const SdkOmitted()});
+  const CreateSandboxesV3RequestBodyMountsValue({required this.drive, this.mode = const SdkOmitted()});
 
-  CreateSandboxesV3RequestBodyMountsValue Function(
-          {String drive,
-          SdkOptional<CreateSandboxesV3RequestBodyMountsValueMode> mode})
-      get copyWith => _copyWith;
+  CreateSandboxesV3RequestBodyMountsValue Function({String drive, SdkOptional<CreateSandboxesV3RequestBodyMountsValueMode> mode}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestBodyMountsValue _copyWith(
-          {Object? drive = sdkOmittedValue, Object? mode = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestBodyMountsValue(
-        drive: identical(drive, sdkOmittedValue) ? this.drive : drive as String,
-        mode: identical(mode, sdkOmittedValue)
-            ? this.mode
-            : mode as SdkOptional<CreateSandboxesV3RequestBodyMountsValueMode>,
-      );
+  CreateSandboxesV3RequestBodyMountsValue _copyWith({Object? drive = sdkOmittedValue, Object? mode = sdkOmittedValue}) => CreateSandboxesV3RequestBodyMountsValue(
+    drive: identical(drive, sdkOmittedValue) ? this.drive : drive as String,
+    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as SdkOptional<CreateSandboxesV3RequestBodyMountsValueMode>,
+  );
 
-  factory CreateSandboxesV3RequestBodyMountsValue.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestBodyMountsValue(
-        drive: (json['drive'] as String?)!,
-        mode: json['mode'] != null
-            ? SdkPresent((json['mode'] != null
-                ? CreateSandboxesV3RequestBodyMountsValueMode.fromJson(
-                    json['mode'] as String)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV3RequestBodyMountsValue.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestBodyMountsValue(
+    drive: (json['drive'] as String?)!,
+    mode: json['mode'] != null ? SdkPresent((json['mode'] != null ? CreateSandboxesV3RequestBodyMountsValueMode.fromJson(json['mode'] as String) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'drive': drive,
-        ...switch (mode) {
-          SdkPresent<CreateSandboxesV3RequestBodyMountsValueMode>(
-            value: final value
-          ) =>
-            {
-              'mode': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'drive': drive,
+    ...switch (mode) {
+      SdkPresent<CreateSandboxesV3RequestBodyMountsValueMode>(value: final value) => {'mode': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Protect the N most recent snapshots with different expiration/deletion behavior.
 class CreateSandboxesV3RequestBodyKeepLastSnapshots {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Number of most recent snapshots to keep.
   final int count;
-
   /// Expiration time in milliseconds for kept snapshots. Falls back to snapshotExpiration.
   final SdkOptional<int?> expiration;
-
   /// Whether to immediately delete evicted snapshots. Defaults to true.
   final SdkOptional<bool> deleteEvicted;
 
-  const CreateSandboxesV3RequestBodyKeepLastSnapshots(
-      {required this.count,
-      this.expiration = const SdkOmitted(),
-      this.deleteEvicted = const SdkOmitted()});
+  const CreateSandboxesV3RequestBodyKeepLastSnapshots({required this.count, this.expiration = const SdkOmitted(), this.deleteEvicted = const SdkOmitted()});
 
-  CreateSandboxesV3RequestBodyKeepLastSnapshots Function(
-      {int count,
-      SdkOptional<int?> expiration,
-      SdkOptional<bool> deleteEvicted}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestBodyKeepLastSnapshots Function({int count, SdkOptional<int?> expiration, SdkOptional<bool> deleteEvicted}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestBodyKeepLastSnapshots _copyWith(
-          {Object? count = sdkOmittedValue,
-          Object? expiration = sdkOmittedValue,
-          Object? deleteEvicted = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestBodyKeepLastSnapshots(
-        count: identical(count, sdkOmittedValue) ? this.count : count as int,
-        expiration: identical(expiration, sdkOmittedValue)
-            ? this.expiration
-            : expiration as SdkOptional<int?>,
-        deleteEvicted: identical(deleteEvicted, sdkOmittedValue)
-            ? this.deleteEvicted
-            : deleteEvicted as SdkOptional<bool>,
-      );
+  CreateSandboxesV3RequestBodyKeepLastSnapshots _copyWith({Object? count = sdkOmittedValue, Object? expiration = sdkOmittedValue, Object? deleteEvicted = sdkOmittedValue}) => CreateSandboxesV3RequestBodyKeepLastSnapshots(
+    count: identical(count, sdkOmittedValue) ? this.count : count as int,
+    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<int?>,
+    deleteEvicted: identical(deleteEvicted, sdkOmittedValue) ? this.deleteEvicted : deleteEvicted as SdkOptional<bool>,
+  );
 
-  factory CreateSandboxesV3RequestBodyKeepLastSnapshots.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestBodyKeepLastSnapshots(
-        count: ((json['count'] as num?)?.toInt())!,
-        expiration: json.containsKey('expiration')
-            ? SdkPresent((json['expiration'] as num?)?.toInt())
-            : const SdkOmitted(),
-        deleteEvicted: json['deleteEvicted'] != null
-            ? SdkPresent((json['deleteEvicted'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV3RequestBodyKeepLastSnapshots.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestBodyKeepLastSnapshots(
+    count: ((json['count'] as num?)?.toInt())!,
+    expiration: json.containsKey('expiration') ? SdkPresent((json['expiration'] as num?)?.toInt()) : const SdkOmitted(),
+    deleteEvicted: json['deleteEvicted'] != null ? SdkPresent((json['deleteEvicted'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-        ...switch (expiration) {
-          SdkPresent<int?>(value: final value) => {
-              'expiration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deleteEvicted) {
-          SdkPresent<bool>(value: final value) => {
-              'deleteEvicted': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'count': count,
+    ...switch (expiration) {
+      SdkPresent<int?>(value: final value) => {'expiration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deleteEvicted) {
+      SdkPresent<bool>(value: final value) => {'deleteEvicted': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

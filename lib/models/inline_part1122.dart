@@ -8,582 +8,290 @@ class CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemC
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> key;
-  final SdkOptional<
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg>
-      neg;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp
-      op;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType
-      type_;
+  final SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg> neg;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp op;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType type_;
   final SdkOptional<dynamic> value;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem(
-      {this.key = const SdkOmitted(),
-      this.neg = const SdkOmitted(),
-      required this.op,
-      required this.type_,
-      this.value = const SdkOmitted()});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem({this.key = const SdkOmitted(), this.neg = const SdkOmitted(), required this.op, required this.type_, this.value = const SdkOmitted()});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem Function(
-      {SdkOptional<String> key,
-      SdkOptional<
-              CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg>
-          neg,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp
-          op,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType
-          type_,
-      SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem Function({SdkOptional<String> key, SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg> neg, CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp op, CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem
-      _copyWith(
-              {Object? key = sdkOmittedValue,
-              Object? neg = sdkOmittedValue,
-              Object? op = sdkOmittedValue,
-              Object? type_ = sdkOmittedValue,
-              Object? value = sdkOmittedValue}) =>
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem(
-            key: identical(key, sdkOmittedValue)
-                ? this.key
-                : key as SdkOptional<String>,
-            neg: identical(neg, sdkOmittedValue)
-                ? this.neg
-                : neg as SdkOptional<
-                    CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg>,
-            op: identical(op, sdkOmittedValue)
-                ? this.op
-                : op
-                    as CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp,
-            type_: identical(type_, sdkOmittedValue)
-                ? this.type_
-                : type_
-                    as CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType,
-            value: identical(value, sdkOmittedValue)
-                ? this.value
-                : value as SdkOptional<dynamic>,
-          );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem _copyWith({Object? key = sdkOmittedValue, Object? neg = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem(
+    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
+    neg: identical(neg, sdkOmittedValue) ? this.neg : neg as SdkOptional<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg>,
+    op: identical(op, sdkOmittedValue) ? this.op : op as CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType,
+    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem(
-        key: json['key'] != null
-            ? SdkPresent((json['key'] as String?)!)
-            : const SdkOmitted(),
-        neg: json['neg'] != null
-            ? SdkPresent((json['neg'] != null
-                ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg
-                    .fromJson(json['neg'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        op: (json['op'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp
-                .fromJson(json['op'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType
-                .fromJson(json['type'] as String)
-            : null)!,
-        value: json['value'] != null
-            ? SdkPresent((json['value'])!)
-            : const SdkOmitted(),
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem(
+    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
+    neg: json['neg'] != null ? SdkPresent((json['neg'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg.fromJson(json['neg'] as bool) : null)!) : const SdkOmitted(),
+    op: (json['op'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemOp.fromJson(json['op'] as String) : null)!,
+    type_: (json['type'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemType.fromJson(json['type'] as String) : null)!,
+    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (key) {
-          SdkPresent<String>(value: final value) => {
-              'key': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (neg) {
-          SdkPresent<
-                CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg>(
-            value: final value
-          ) =>
-            {
-              'neg': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'op': op.toJson(),
-        'type': type_.toJson(),
-        ...switch (value) {
-          SdkPresent<dynamic>(value: final value) => {
-              'value': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (key) {
+      SdkPresent<String>(value: final value) => {'key': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (neg) {
+      SdkPresent<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItemNeg>(value: final value) => {'neg': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'op': op.toJson(),
+    'type': type_.toJson(),
+    ...switch (value) {
+      SdkPresent<dynamic>(value: final value) => {'value': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem>
-      conditions;
+  final List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem> conditions;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem(
-      {required this.conditions});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem({required this.conditions});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem Function(
-      {List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem>
-          conditions}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem Function({List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem
-      _copyWith({Object? conditions = sdkOmittedValue}) =>
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem(
-            conditions: identical(conditions, sdkOmittedValue)
-                ? this.conditions
-                : conditions as List<
-                    CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem>,
-          );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem(
+    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem>,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem(
-        conditions: ((json['conditions'] as List?)
-            ?.map((e) =>
-                CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem(
+    conditions: ((json['conditions'] as List?)?.map((e) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'conditions': conditions.map((item) => item.toJson()).toList(),
-      };
+    'conditions': conditions.map((item) => item.toJson()).toList(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive
-      active;
-  final List<
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem>
-      conditionGroup;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive active;
+  final List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem> conditionGroup;
   final SdkOptional<String> description;
   final String id;
   final String name;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem(
-      {required this.active,
-      required this.conditionGroup,
-      this.description = const SdkOmitted(),
-      required this.id,
-      required this.name});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem({required this.active, required this.conditionGroup, this.description = const SdkOmitted(), required this.id, required this.name});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive
-          active,
-      List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem>
-          conditionGroup,
-      SdkOptional<String> description,
-      String id,
-      String name}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive active, List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem> conditionGroup, SdkOptional<String> description, String id, String name}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem
-      _copyWith(
-              {Object? active = sdkOmittedValue,
-              Object? conditionGroup = sdkOmittedValue,
-              Object? description = sdkOmittedValue,
-              Object? id = sdkOmittedValue,
-              Object? name = sdkOmittedValue}) =>
-          CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem(
-            active: identical(active, sdkOmittedValue)
-                ? this.active
-                : active
-                    as CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive,
-            conditionGroup: identical(conditionGroup, sdkOmittedValue)
-                ? this.conditionGroup
-                : conditionGroup as List<
-                    CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem>,
-            description: identical(description, sdkOmittedValue)
-                ? this.description
-                : description as SdkOptional<String>,
-            id: identical(id, sdkOmittedValue) ? this.id : id as String,
-            name: identical(name, sdkOmittedValue) ? this.name : name as String,
-          );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem _copyWith({Object? active = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? description = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem(
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive,
+    conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem(
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-        conditionGroup: ((json['conditionGroup'] as List?)
-            ?.map((e) =>
-                CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        description: json['description'] != null
-            ? SdkPresent((json['description'] as String?)!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItem(
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemActive.fromJson(json['active'] as bool) : null)!,
+    conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionsItemConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'active': active.toJson(),
-        'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
-        ...switch (description) {
-          SdkPresent<String>(value: final value) => {
-              'description': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        'name': name,
-      };
+    'active': active.toJson(),
+    'conditionGroup': conditionGroup.map((item) => item.toJson()).toList(),
+    ...switch (description) {
+      SdkPresent<String>(value: final value) => {'description': value,},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    'name': name,
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive
-      active;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive active;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen(
-      {required this.action, required this.active});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen({required this.action, required this.active});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive
-          active}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction action, CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive active}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive,
-      );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGen(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsGenActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive
-      active;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive active;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava(
-      {required this.action, required this.active});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava({required this.action, required this.active});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive
-          active}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction action, CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive active}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive,
-      );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJava(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsJavaActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive
-      active;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive active;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi(
-      {required this.action, required this.active});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi({required this.action, required this.active});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive
-          active}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction action, CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive active}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive,
-      );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfi(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsLfiActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive
-      active;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive active;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa(
-      {required this.action, required this.active});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa({required this.action, required this.active});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive
-          active}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction action, CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive active}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive,
-      );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMa(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsMaActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive
-      active;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive active;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp(
-      {required this.action, required this.active});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp({required this.action, required this.active});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive
-          active}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction action, CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive active}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive,
-      );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhp(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsPhpActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive
-      active;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive active;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce(
-      {required this.action, required this.active});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce({required this.action, required this.active});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive
-          active}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction action, CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive active}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive,
-      );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRce(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRceActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }
 
 class CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction
-      action;
-  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive
-      active;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction action;
+  final CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive active;
 
-  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi(
-      {required this.action, required this.active});
+  const CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi({required this.action, required this.active});
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi Function(
-      {CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction
-          action,
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive
-          active}) get copyWith => _copyWith;
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi Function({CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction action, CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive active}) get copyWith => _copyWith;
 
-  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? active = sdkOmittedValue}) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction,
-        active: identical(active, sdkOmittedValue)
-            ? this.active
-            : active
-                as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive,
-      );
+  CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi(
+    action: identical(action, sdkOmittedValue) ? this.action : action as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction,
+    active: identical(active, sdkOmittedValue) ? this.active : active as CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive,
+  );
 
-  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi(
-        action: (json['action'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction
-                .fromJson(json['action'] as String)
-            : null)!,
-        active: (json['active'] != null
-            ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive
-                .fromJson(json['active'] as bool)
-            : null)!,
-      );
+  factory CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi.fromJson(Map<String, dynamic> json) => CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfi(
+    action: (json['action'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiAction.fromJson(json['action'] as String) : null)!,
+    active: (json['active'] != null ? CreateSecurityFirewallConfigByConfigVersionActivateResponseCrsRfiActive.fromJson(json['active'] as bool) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'active': active.toJson(),
-      };
+    'action': action.toJson(),
+    'active': active.toJson(),
+  };
 }

@@ -10,47 +10,15 @@ sealed class VcrImageLayer {
   const VcrImageLayer();
   factory VcrImageLayer.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = VcrImageLayerVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return VcrImageLayerVcrImageLayerVariant0(value);
-        }
-      } catch (_) {}
-      try {
-        final value = VcrImageLayerVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return VcrImageLayerVcrImageLayerVariant1(value);
-        }
-      } catch (_) {}
-      try {
-        final value = VcrImageLayerVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return VcrImageLayerVcrImageLayerVariant2(value);
-        }
-      } catch (_) {}
-      try {
-        final value = VcrImageLayerVariant3.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return VcrImageLayerVcrImageLayerVariant3(value);
-        }
-      } catch (_) {}
+      try { final value = VcrImageLayerVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return VcrImageLayerVcrImageLayerVariant0(value); } } catch (_) {}
+      try { final value = VcrImageLayerVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return VcrImageLayerVcrImageLayerVariant1(value); } } catch (_) {}
+      try { final value = VcrImageLayerVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return VcrImageLayerVcrImageLayerVariant2(value); } } catch (_) {}
+      try { final value = VcrImageLayerVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return VcrImageLayerVcrImageLayerVariant3(value); } } catch (_) {}
     }
-    try {
-      return VcrImageLayerVcrImageLayerVariant0(
-          VcrImageLayerVariant0.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return VcrImageLayerVcrImageLayerVariant1(
-          VcrImageLayerVariant1.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return VcrImageLayerVcrImageLayerVariant2(
-          VcrImageLayerVariant2.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return VcrImageLayerVcrImageLayerVariant3(
-          VcrImageLayerVariant3.fromJson(json as Map<String, dynamic>));
-    } catch (_) {}
+    try { return VcrImageLayerVcrImageLayerVariant0(VcrImageLayerVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return VcrImageLayerVcrImageLayerVariant1(VcrImageLayerVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return VcrImageLayerVcrImageLayerVariant2(VcrImageLayerVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return VcrImageLayerVcrImageLayerVariant3(VcrImageLayerVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
     throw FormatException("No variant matched for VcrImageLayer");
   }
   Object? toJson();
@@ -59,443 +27,258 @@ sealed class VcrImageLayer {
 final class VcrImageLayerVcrImageLayerVariant0 extends VcrImageLayer {
   final VcrImageLayerVariant0 value;
   const VcrImageLayerVcrImageLayerVariant0(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class VcrImageLayerVcrImageLayerVariant1 extends VcrImageLayer {
   final VcrImageLayerVariant1 value;
   const VcrImageLayerVcrImageLayerVariant1(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class VcrImageLayerVcrImageLayerVariant2 extends VcrImageLayer {
   final VcrImageLayerVariant2 value;
   const VcrImageLayerVcrImageLayerVariant2(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 final class VcrImageLayerVcrImageLayerVariant3 extends VcrImageLayer {
   final VcrImageLayerVariant3 value;
   const VcrImageLayerVcrImageLayerVariant3(this.value);
-  @override
-  Object? toJson() => value.toJson();
+  @override Object? toJson() => value.toJson();
 }
 
 /// A paginated list of images for a repository.
 class VcrImageList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required array value serialized in the `images` wire field.
   final List<VcrImageListItem> images;
-
   /// Cursor to fetch the next page of results, when more are available.
   final SdkOptional<String> nextCursor;
 
-  const VcrImageList(
-      {required this.images, this.nextCursor = const SdkOmitted()});
+  const VcrImageList({required this.images, this.nextCursor = const SdkOmitted()});
 
-  VcrImageList Function(
-      {List<VcrImageListItem> images,
-      SdkOptional<String> nextCursor}) get copyWith => _copyWith;
+  VcrImageList Function({List<VcrImageListItem> images, SdkOptional<String> nextCursor}) get copyWith => _copyWith;
 
-  VcrImageList _copyWith(
-          {Object? images = sdkOmittedValue,
-          Object? nextCursor = sdkOmittedValue}) =>
-      VcrImageList(
-        images: identical(images, sdkOmittedValue)
-            ? this.images
-            : images as List<VcrImageListItem>,
-        nextCursor: identical(nextCursor, sdkOmittedValue)
-            ? this.nextCursor
-            : nextCursor as SdkOptional<String>,
-      );
+  VcrImageList _copyWith({Object? images = sdkOmittedValue, Object? nextCursor = sdkOmittedValue}) => VcrImageList(
+    images: identical(images, sdkOmittedValue) ? this.images : images as List<VcrImageListItem>,
+    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as SdkOptional<String>,
+  );
 
   factory VcrImageList.fromJson(Map<String, dynamic> json) => VcrImageList(
-        images: ((json['images'] as List?)
-            ?.map((e) => VcrImageListItem.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        nextCursor: json['nextCursor'] != null
-            ? SdkPresent((json['nextCursor'] as String?)!)
-            : const SdkOmitted(),
-      );
+    images: ((json['images'] as List?)?.map((e) => VcrImageListItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    nextCursor: json['nextCursor'] != null ? SdkPresent((json['nextCursor'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'images': images.map((item) => item.toJson()).toList(),
-        ...switch (nextCursor) {
-          SdkPresent<String>(value: final value) => {
-              'nextCursor': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'images': images.map((item) => item.toJson()).toList(),
+    ...switch (nextCursor) {
+      SdkPresent<String>(value: final value) => {'nextCursor': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// An image enriched with its tags and VHS-readiness status, as returned when listing a repository's images.
 class VcrImageListItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// CPU architecture the manifest targets. Only present for single-platform manifests.
   final SdkOptional<String> arch;
-
   /// ISO 8601 timestamp of when the image was created.
   final String createdAt;
-
   /// Internal identifier of the image.
   final String id;
-
   /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
   final VcrImageListItemKind kind;
-
   /// SHA-256 digest of the image manifest.
   final String manifestDigest;
-
   /// Operating system the manifest targets. Only present for single-platform manifests.
   final SdkOptional<String> platform;
-
   /// Identifier of the actor that pushed the image.
   final SdkOptional<String> pushedBy;
-
   /// Identifier of the repository the image belongs to.
   final String repositoryId;
-
   /// Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry.
   final double sizeInBytes;
-
   /// VHS-readiness status, or `null` for a multi-platform index.
   final VcrImageListItemStatus? status;
-
   /// Tags pointing at this image's manifest.
   final List<String> tags;
 
-  const VcrImageListItem(
-      {this.arch = const SdkOmitted(),
-      required this.createdAt,
-      required this.id,
-      required this.kind,
-      required this.manifestDigest,
-      this.platform = const SdkOmitted(),
-      this.pushedBy = const SdkOmitted(),
-      required this.repositoryId,
-      required this.sizeInBytes,
-      required this.status,
-      required this.tags});
+  const VcrImageListItem({this.arch = const SdkOmitted(), required this.createdAt, required this.id, required this.kind, required this.manifestDigest, this.platform = const SdkOmitted(), this.pushedBy = const SdkOmitted(), required this.repositoryId, required this.sizeInBytes, required this.status, required this.tags});
 
-  VcrImageListItem Function(
-      {SdkOptional<String> arch,
-      String createdAt,
-      String id,
-      VcrImageListItemKind kind,
-      String manifestDigest,
-      SdkOptional<String> platform,
-      SdkOptional<String> pushedBy,
-      String repositoryId,
-      double sizeInBytes,
-      VcrImageListItemStatus? status,
-      List<String> tags}) get copyWith => _copyWith;
+  VcrImageListItem Function({SdkOptional<String> arch, String createdAt, String id, VcrImageListItemKind kind, String manifestDigest, SdkOptional<String> platform, SdkOptional<String> pushedBy, String repositoryId, double sizeInBytes, VcrImageListItemStatus? status, List<String> tags}) get copyWith => _copyWith;
 
-  VcrImageListItem _copyWith(
-          {Object? arch = sdkOmittedValue,
-          Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? kind = sdkOmittedValue,
-          Object? manifestDigest = sdkOmittedValue,
-          Object? platform = sdkOmittedValue,
-          Object? pushedBy = sdkOmittedValue,
-          Object? repositoryId = sdkOmittedValue,
-          Object? sizeInBytes = sdkOmittedValue,
-          Object? status = sdkOmittedValue,
-          Object? tags = sdkOmittedValue}) =>
-      VcrImageListItem(
-        arch: identical(arch, sdkOmittedValue)
-            ? this.arch
-            : arch as SdkOptional<String>,
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        kind: identical(kind, sdkOmittedValue)
-            ? this.kind
-            : kind as VcrImageListItemKind,
-        manifestDigest: identical(manifestDigest, sdkOmittedValue)
-            ? this.manifestDigest
-            : manifestDigest as String,
-        platform: identical(platform, sdkOmittedValue)
-            ? this.platform
-            : platform as SdkOptional<String>,
-        pushedBy: identical(pushedBy, sdkOmittedValue)
-            ? this.pushedBy
-            : pushedBy as SdkOptional<String>,
-        repositoryId: identical(repositoryId, sdkOmittedValue)
-            ? this.repositoryId
-            : repositoryId as String,
-        sizeInBytes: identical(sizeInBytes, sdkOmittedValue)
-            ? this.sizeInBytes
-            : sizeInBytes as double,
-        status: identical(status, sdkOmittedValue)
-            ? this.status
-            : status as VcrImageListItemStatus?,
-        tags:
-            identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
-      );
+  VcrImageListItem _copyWith({Object? arch = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? manifestDigest = sdkOmittedValue, Object? platform = sdkOmittedValue, Object? pushedBy = sdkOmittedValue, Object? repositoryId = sdkOmittedValue, Object? sizeInBytes = sdkOmittedValue, Object? status = sdkOmittedValue, Object? tags = sdkOmittedValue}) => VcrImageListItem(
+    arch: identical(arch, sdkOmittedValue) ? this.arch : arch as SdkOptional<String>,
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as VcrImageListItemKind,
+    manifestDigest: identical(manifestDigest, sdkOmittedValue) ? this.manifestDigest : manifestDigest as String,
+    platform: identical(platform, sdkOmittedValue) ? this.platform : platform as SdkOptional<String>,
+    pushedBy: identical(pushedBy, sdkOmittedValue) ? this.pushedBy : pushedBy as SdkOptional<String>,
+    repositoryId: identical(repositoryId, sdkOmittedValue) ? this.repositoryId : repositoryId as String,
+    sizeInBytes: identical(sizeInBytes, sdkOmittedValue) ? this.sizeInBytes : sizeInBytes as double,
+    status: identical(status, sdkOmittedValue) ? this.status : status as VcrImageListItemStatus?,
+    tags: identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
+  );
 
-  factory VcrImageListItem.fromJson(Map<String, dynamic> json) =>
-      VcrImageListItem(
-        arch: json['arch'] != null
-            ? SdkPresent((json['arch'] as String?)!)
-            : const SdkOmitted(),
-        createdAt: (json['createdAt'] as String?)!,
-        id: (json['id'] as String?)!,
-        kind: (json['kind'] != null
-            ? VcrImageListItemKind.fromJson(json['kind'] as String)
-            : null)!,
-        manifestDigest: (json['manifestDigest'] as String?)!,
-        platform: json['platform'] != null
-            ? SdkPresent((json['platform'] as String?)!)
-            : const SdkOmitted(),
-        pushedBy: json['pushedBy'] != null
-            ? SdkPresent((json['pushedBy'] as String?)!)
-            : const SdkOmitted(),
-        repositoryId: (json['repositoryId'] as String?)!,
-        sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
-        status: json.containsKey('status')
-            ? json['status'] != null
-                ? VcrImageListItemStatus.fromJson(json['status'] as String)
-                : null
-            : throw ArgumentError.value(
-                null, 'status', 'Required property is missing'),
-        tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
-      );
+  factory VcrImageListItem.fromJson(Map<String, dynamic> json) => VcrImageListItem(
+    arch: json['arch'] != null ? SdkPresent((json['arch'] as String?)!) : const SdkOmitted(),
+    createdAt: (json['createdAt'] as String?)!,
+    id: (json['id'] as String?)!,
+    kind: (json['kind'] != null ? VcrImageListItemKind.fromJson(json['kind'] as String) : null)!,
+    manifestDigest: (json['manifestDigest'] as String?)!,
+    platform: json['platform'] != null ? SdkPresent((json['platform'] as String?)!) : const SdkOmitted(),
+    pushedBy: json['pushedBy'] != null ? SdkPresent((json['pushedBy'] as String?)!) : const SdkOmitted(),
+    repositoryId: (json['repositoryId'] as String?)!,
+    sizeInBytes: ((json['sizeInBytes'] as num?)?.toDouble())!,
+    status: json.containsKey('status') ? json['status'] != null ? VcrImageListItemStatus.fromJson(json['status'] as String) : null : throw ArgumentError.value(null, 'status', 'Required property is missing'),
+    tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (arch) {
-          SdkPresent<String>(value: final value) => {
-              'arch': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'createdAt': createdAt,
-        'id': id,
-        'kind': kind.toJson(),
-        'manifestDigest': manifestDigest,
-        ...switch (platform) {
-          SdkPresent<String>(value: final value) => {
-              'platform': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (pushedBy) {
-          SdkPresent<String>(value: final value) => {
-              'pushedBy': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'repositoryId': repositoryId,
-        'sizeInBytes': sizeInBytes,
-        'status': status?.toJson(),
-        'tags': tags,
-      };
+    ...switch (arch) {
+      SdkPresent<String>(value: final value) => {'arch': value,},
+      _ => const <String, dynamic>{},
+    },
+    'createdAt': createdAt,
+    'id': id,
+    'kind': kind.toJson(),
+    'manifestDigest': manifestDigest,
+    ...switch (platform) {
+      SdkPresent<String>(value: final value) => {'platform': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (pushedBy) {
+      SdkPresent<String>(value: final value) => {'pushedBy': value,},
+      _ => const <String, dynamic>{},
+    },
+    'repositoryId': repositoryId,
+    'sizeInBytes': sizeInBytes,
+    'status': status?.toJson(),
+    'tags': tags,
+  };
 }
 
 /// A Vercel Container Registry repository.
 class VcrRepository {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// ISO 8601 timestamp of when the repository was created.
   final String createdAt;
-
   /// Unique identifier of the repository.
   final String id;
-
   /// Name of the repository.
   final String name;
-
   /// Identifier of the project the repository belongs to.
   final String projectId;
-
   /// Whether the repository is public. Images in public repositories can be pulled by anyone. Defaults to `false` (private).
   final VcrRepositoryPublic public;
-
   /// ISO 8601 timestamp of when the repository was last updated.
   final String updatedAt;
 
-  const VcrRepository(
-      {required this.createdAt,
-      required this.id,
-      required this.name,
-      required this.projectId,
-      required this.public,
-      required this.updatedAt});
+  const VcrRepository({required this.createdAt, required this.id, required this.name, required this.projectId, required this.public, required this.updatedAt});
 
-  VcrRepository Function(
-      {String createdAt,
-      String id,
-      String name,
-      String projectId,
-      VcrRepositoryPublic public,
-      String updatedAt}) get copyWith => _copyWith;
+  VcrRepository Function({String createdAt, String id, String name, String projectId, VcrRepositoryPublic public, String updatedAt}) get copyWith => _copyWith;
 
-  VcrRepository _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? public = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      VcrRepository(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as String,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as String,
-        public: identical(public, sdkOmittedValue)
-            ? this.public
-            : public as VcrRepositoryPublic,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as String,
-      );
+  VcrRepository _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? public = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => VcrRepository(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
+    public: identical(public, sdkOmittedValue) ? this.public : public as VcrRepositoryPublic,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
+  );
 
   factory VcrRepository.fromJson(Map<String, dynamic> json) => VcrRepository(
-        createdAt: (json['createdAt'] as String?)!,
-        id: (json['id'] as String?)!,
-        name: (json['name'] as String?)!,
-        projectId: (json['projectId'] as String?)!,
-        public: (json['public'] != null
-            ? VcrRepositoryPublic.fromJson(json['public'] as bool)
-            : null)!,
-        updatedAt: (json['updatedAt'] as String?)!,
-      );
+    createdAt: (json['createdAt'] as String?)!,
+    id: (json['id'] as String?)!,
+    name: (json['name'] as String?)!,
+    projectId: (json['projectId'] as String?)!,
+    public: (json['public'] != null ? VcrRepositoryPublic.fromJson(json['public'] as bool) : null)!,
+    updatedAt: (json['updatedAt'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'id': id,
-        'name': name,
-        'projectId': projectId,
-        'public': public.toJson(),
-        'updatedAt': updatedAt,
-      };
+    'createdAt': createdAt,
+    'id': id,
+    'name': name,
+    'projectId': projectId,
+    'public': public.toJson(),
+    'updatedAt': updatedAt,
+  };
 }
 
 /// A paginated list of Vercel Container Registry repositories.
 class VcrRepositoryList {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Cursor to fetch the next page of results, when more are available.
   final SdkOptional<String> nextCursor;
-
   /// Required array value serialized in the `repositories` wire field.
   final List<VcrRepository> repositories;
 
-  const VcrRepositoryList(
-      {this.nextCursor = const SdkOmitted(), required this.repositories});
+  const VcrRepositoryList({this.nextCursor = const SdkOmitted(), required this.repositories});
 
-  VcrRepositoryList Function(
-      {SdkOptional<String> nextCursor,
-      List<VcrRepository> repositories}) get copyWith => _copyWith;
+  VcrRepositoryList Function({SdkOptional<String> nextCursor, List<VcrRepository> repositories}) get copyWith => _copyWith;
 
-  VcrRepositoryList _copyWith(
-          {Object? nextCursor = sdkOmittedValue,
-          Object? repositories = sdkOmittedValue}) =>
-      VcrRepositoryList(
-        nextCursor: identical(nextCursor, sdkOmittedValue)
-            ? this.nextCursor
-            : nextCursor as SdkOptional<String>,
-        repositories: identical(repositories, sdkOmittedValue)
-            ? this.repositories
-            : repositories as List<VcrRepository>,
-      );
+  VcrRepositoryList _copyWith({Object? nextCursor = sdkOmittedValue, Object? repositories = sdkOmittedValue}) => VcrRepositoryList(
+    nextCursor: identical(nextCursor, sdkOmittedValue) ? this.nextCursor : nextCursor as SdkOptional<String>,
+    repositories: identical(repositories, sdkOmittedValue) ? this.repositories : repositories as List<VcrRepository>,
+  );
 
-  factory VcrRepositoryList.fromJson(Map<String, dynamic> json) =>
-      VcrRepositoryList(
-        nextCursor: json['nextCursor'] != null
-            ? SdkPresent((json['nextCursor'] as String?)!)
-            : const SdkOmitted(),
-        repositories: ((json['repositories'] as List?)
-            ?.map((e) => VcrRepository.fromJson(e as Map<String, dynamic>))
-            .toList())!,
-      );
+  factory VcrRepositoryList.fromJson(Map<String, dynamic> json) => VcrRepositoryList(
+    nextCursor: json['nextCursor'] != null ? SdkPresent((json['nextCursor'] as String?)!) : const SdkOmitted(),
+    repositories: ((json['repositories'] as List?)?.map((e) => VcrRepository.fromJson(e as Map<String, dynamic>)).toList())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (nextCursor) {
-          SdkPresent<String>(value: final value) => {
-              'nextCursor': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'repositories': repositories.map((item) => item.toJson()).toList(),
-      };
+    ...switch (nextCursor) {
+      SdkPresent<String>(value: final value) => {'nextCursor': value,},
+      _ => const <String, dynamic>{},
+    },
+    'repositories': repositories.map((item) => item.toJson()).toList(),
+  };
 }
 
 /// A team's access grant to a Vercel Container Registry repository.
 class VcrRepositoryPermission {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// ISO 8601 timestamp of when the permission was created.
   final String createdAt;
-
   /// Identifier of the repository the permission grants access to.
   final String repositoryId;
-
   /// Identifier of the team that is granted access to the repository.
   final String teamId;
-
   /// Slug of the team that is granted access to the repository.
   final String teamSlug;
 
-  const VcrRepositoryPermission(
-      {required this.createdAt,
-      required this.repositoryId,
-      required this.teamId,
-      required this.teamSlug});
+  const VcrRepositoryPermission({required this.createdAt, required this.repositoryId, required this.teamId, required this.teamSlug});
 
-  VcrRepositoryPermission Function(
-      {String createdAt,
-      String repositoryId,
-      String teamId,
-      String teamSlug}) get copyWith => _copyWith;
+  VcrRepositoryPermission Function({String createdAt, String repositoryId, String teamId, String teamSlug}) get copyWith => _copyWith;
 
-  VcrRepositoryPermission _copyWith(
-          {Object? createdAt = sdkOmittedValue,
-          Object? repositoryId = sdkOmittedValue,
-          Object? teamId = sdkOmittedValue,
-          Object? teamSlug = sdkOmittedValue}) =>
-      VcrRepositoryPermission(
-        createdAt: identical(createdAt, sdkOmittedValue)
-            ? this.createdAt
-            : createdAt as String,
-        repositoryId: identical(repositoryId, sdkOmittedValue)
-            ? this.repositoryId
-            : repositoryId as String,
-        teamId:
-            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-        teamSlug: identical(teamSlug, sdkOmittedValue)
-            ? this.teamSlug
-            : teamSlug as String,
-      );
+  VcrRepositoryPermission _copyWith({Object? createdAt = sdkOmittedValue, Object? repositoryId = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? teamSlug = sdkOmittedValue}) => VcrRepositoryPermission(
+    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
+    repositoryId: identical(repositoryId, sdkOmittedValue) ? this.repositoryId : repositoryId as String,
+    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+    teamSlug: identical(teamSlug, sdkOmittedValue) ? this.teamSlug : teamSlug as String,
+  );
 
-  factory VcrRepositoryPermission.fromJson(Map<String, dynamic> json) =>
-      VcrRepositoryPermission(
-        createdAt: (json['createdAt'] as String?)!,
-        repositoryId: (json['repositoryId'] as String?)!,
-        teamId: (json['teamId'] as String?)!,
-        teamSlug: (json['teamSlug'] as String?)!,
-      );
+  factory VcrRepositoryPermission.fromJson(Map<String, dynamic> json) => VcrRepositoryPermission(
+    createdAt: (json['createdAt'] as String?)!,
+    repositoryId: (json['repositoryId'] as String?)!,
+    teamId: (json['teamId'] as String?)!,
+    teamSlug: (json['teamSlug'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'createdAt': createdAt,
-        'repositoryId': repositoryId,
-        'teamId': teamId,
-        'teamSlug': teamSlug,
-      };
+    'createdAt': createdAt,
+    'repositoryId': repositoryId,
+    'teamId': teamId,
+    'teamSlug': teamSlug,
+  };
 }

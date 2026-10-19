@@ -10,109 +10,59 @@ class UpdateMicrofrontendsResponseDismissedToastsItem {
   final UpdateMicrofrontendsResponseDismissedToastsItemAction action;
   final double dismissedAt;
   final String key;
-
   /// Typed representation of the `UpdateMicrofrontendsResponseDismissedToastsItemValue` API schema.
   final UpdateMicrofrontendsResponseDismissedToastsItemValue? value;
 
-  const UpdateMicrofrontendsResponseDismissedToastsItem(
-      {required this.action,
-      required this.dismissedAt,
-      required this.key,
-      required this.value});
+  const UpdateMicrofrontendsResponseDismissedToastsItem({required this.action, required this.dismissedAt, required this.key, required this.value});
 
-  UpdateMicrofrontendsResponseDismissedToastsItem Function(
-          {UpdateMicrofrontendsResponseDismissedToastsItemAction action,
-          double dismissedAt,
-          String key,
-          UpdateMicrofrontendsResponseDismissedToastsItemValue? value})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDismissedToastsItem Function({UpdateMicrofrontendsResponseDismissedToastsItemAction action, double dismissedAt, String key, UpdateMicrofrontendsResponseDismissedToastsItemValue? value}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDismissedToastsItem _copyWith(
-          {Object? action = sdkOmittedValue,
-          Object? dismissedAt = sdkOmittedValue,
-          Object? key = sdkOmittedValue,
-          Object? value = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseDismissedToastsItem(
-        action: identical(action, sdkOmittedValue)
-            ? this.action
-            : action as UpdateMicrofrontendsResponseDismissedToastsItemAction,
-        dismissedAt: identical(dismissedAt, sdkOmittedValue)
-            ? this.dismissedAt
-            : dismissedAt as double,
-        key: identical(key, sdkOmittedValue) ? this.key : key as String,
-        value: identical(value, sdkOmittedValue)
-            ? this.value
-            : value as UpdateMicrofrontendsResponseDismissedToastsItemValue?,
-      );
+  UpdateMicrofrontendsResponseDismissedToastsItem _copyWith({Object? action = sdkOmittedValue, Object? dismissedAt = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateMicrofrontendsResponseDismissedToastsItem(
+    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateMicrofrontendsResponseDismissedToastsItemAction,
+    dismissedAt: identical(dismissedAt, sdkOmittedValue) ? this.dismissedAt : dismissedAt as double,
+    key: identical(key, sdkOmittedValue) ? this.key : key as String,
+    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateMicrofrontendsResponseDismissedToastsItemValue?,
+  );
 
-  factory UpdateMicrofrontendsResponseDismissedToastsItem.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseDismissedToastsItem(
-        action: (json['action'] != null
-            ? UpdateMicrofrontendsResponseDismissedToastsItemAction.fromJson(
-                json['action'] as String)
-            : null)!,
-        dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
-        key: (json['key'] as String?)!,
-        value: json.containsKey('value')
-            ? json['value'] != null
-                ? UpdateMicrofrontendsResponseDismissedToastsItemValue.fromJson(
-                    json['value'])
-                : null
-            : throw ArgumentError.value(
-                null, 'value', 'Required property is missing'),
-      );
+  factory UpdateMicrofrontendsResponseDismissedToastsItem.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDismissedToastsItem(
+    action: (json['action'] != null ? UpdateMicrofrontendsResponseDismissedToastsItemAction.fromJson(json['action'] as String) : null)!,
+    dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
+    key: (json['key'] as String?)!,
+    value: json.containsKey('value') ? json['value'] != null ? UpdateMicrofrontendsResponseDismissedToastsItemValue.fromJson(json['value']) : null : throw ArgumentError.value(null, 'value', 'Required property is missing'),
+  );
 
   Map<String, dynamic> toJson() => {
-        'action': action.toJson(),
-        'dismissedAt': dismissedAt,
-        'key': key,
-        'value': value?.toJson(),
-      };
+    'action': action.toJson(),
+    'dismissedAt': dismissedAt,
+    'key': key,
+    'value': value?.toJson(),
+  };
 }
 
 /// Similar to `contentHints`, but should not be exposed to the user.
 class UpdateMicrofrontendsResponseEnvItemInternalContentHint {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
   final String encryptedValue;
   final UpdateMicrofrontendsResponseEnvItemInternalContentHintType type_;
 
-  const UpdateMicrofrontendsResponseEnvItemInternalContentHint(
-      {required this.encryptedValue, required this.type_});
+  const UpdateMicrofrontendsResponseEnvItemInternalContentHint({required this.encryptedValue, required this.type_});
 
-  UpdateMicrofrontendsResponseEnvItemInternalContentHint Function(
-          {String encryptedValue,
-          UpdateMicrofrontendsResponseEnvItemInternalContentHintType type_})
-      get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseEnvItemInternalContentHint Function({String encryptedValue, UpdateMicrofrontendsResponseEnvItemInternalContentHintType type_}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseEnvItemInternalContentHint _copyWith(
-          {Object? encryptedValue = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UpdateMicrofrontendsResponseEnvItemInternalContentHint(
-        encryptedValue: identical(encryptedValue, sdkOmittedValue)
-            ? this.encryptedValue
-            : encryptedValue as String,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_
-                as UpdateMicrofrontendsResponseEnvItemInternalContentHintType,
-      );
+  UpdateMicrofrontendsResponseEnvItemInternalContentHint _copyWith({Object? encryptedValue = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateMicrofrontendsResponseEnvItemInternalContentHint(
+    encryptedValue: identical(encryptedValue, sdkOmittedValue) ? this.encryptedValue : encryptedValue as String,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateMicrofrontendsResponseEnvItemInternalContentHintType,
+  );
 
-  factory UpdateMicrofrontendsResponseEnvItemInternalContentHint.fromJson(
-          Map<String, dynamic> json) =>
-      UpdateMicrofrontendsResponseEnvItemInternalContentHint(
-        encryptedValue: (json['encryptedValue'] as String?)!,
-        type_: (json['type'] != null
-            ? UpdateMicrofrontendsResponseEnvItemInternalContentHintType
-                .fromJson(json['type'] as String)
-            : null)!,
-      );
+  factory UpdateMicrofrontendsResponseEnvItemInternalContentHint.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseEnvItemInternalContentHint(
+    encryptedValue: (json['encryptedValue'] as String?)!,
+    type_: (json['type'] != null ? UpdateMicrofrontendsResponseEnvItemInternalContentHintType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'encryptedValue': encryptedValue,
-        'type': type_.toJson(),
-      };
+    'encryptedValue': encryptedValue,
+    'type': type_.toJson(),
+  };
 }

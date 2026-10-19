@@ -5,378 +5,284 @@ part of 'inline.dart';
 
 // Inline operation models (part 12)
 final class CancelDeploymentResponseGitSourceVariant16Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant16Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant16Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant16Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant16Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant16Type._(value);
 
-  static const bitbucket =
-      CancelDeploymentResponseGitSourceVariant16Type._('bitbucket');
+  static const bitbucket = CancelDeploymentResponseGitSourceVariant16Type._('bitbucket');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant16Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant16Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant17Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant17Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant17Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant17Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant17Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant17Type._(value);
 
-  static const vercel =
-      CancelDeploymentResponseGitSourceVariant17Type._('vercel');
+  static const vercel = CancelDeploymentResponseGitSourceVariant17Type._('vercel');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant17Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant17Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant18Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant18Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant18Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant18Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant18Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant18Type._(value);
 
-  static const cursorOrigin =
-      CancelDeploymentResponseGitSourceVariant18Type._('cursor-origin');
+  static const cursorOrigin = CancelDeploymentResponseGitSourceVariant18Type._('cursor-origin');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant18Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant18Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant2Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant2Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant2Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant2Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant2Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant2Type._(value);
 
-  static const githubCustomHost =
-      CancelDeploymentResponseGitSourceVariant2Type._('github-custom-host');
+  static const githubCustomHost = CancelDeploymentResponseGitSourceVariant2Type._('github-custom-host');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant2Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant2Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant3Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant3Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant3Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant3Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant3Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant3Type._(value);
 
-  static const githubCustomHost =
-      CancelDeploymentResponseGitSourceVariant3Type._('github-custom-host');
+  static const githubCustomHost = CancelDeploymentResponseGitSourceVariant3Type._('github-custom-host');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant3Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant3Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant4Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant4Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant4Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant4Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant4Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant4Type._(value);
 
-  static const githubLimited =
-      CancelDeploymentResponseGitSourceVariant4Type._('github-limited');
+  static const githubLimited = CancelDeploymentResponseGitSourceVariant4Type._('github-limited');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant4Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant4Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant5Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant5Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant5Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant5Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant5Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant5Type._(value);
 
-  static const githubLimited =
-      CancelDeploymentResponseGitSourceVariant5Type._('github-limited');
+  static const githubLimited = CancelDeploymentResponseGitSourceVariant5Type._('github-limited');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant5Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant5Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant6Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant6Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant6Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant6Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant6Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant6Type._(value);
 
-  static const gitlab =
-      CancelDeploymentResponseGitSourceVariant6Type._('gitlab');
+  static const gitlab = CancelDeploymentResponseGitSourceVariant6Type._('gitlab');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant6Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant6Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant7Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant7Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant7Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant7Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant7Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant7Type._(value);
 
-  static const bitbucket =
-      CancelDeploymentResponseGitSourceVariant7Type._('bitbucket');
+  static const bitbucket = CancelDeploymentResponseGitSourceVariant7Type._('bitbucket');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant7Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant7Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant8Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant8Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant8Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant8Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant8Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant8Type._(value);
 
-  static const bitbucket =
-      CancelDeploymentResponseGitSourceVariant8Type._('bitbucket');
+  static const bitbucket = CancelDeploymentResponseGitSourceVariant8Type._('bitbucket');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant8Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant8Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseGitSourceVariant9Type {
+
   final String value;
 
   const CancelDeploymentResponseGitSourceVariant9Type._(this.value);
 
-  factory CancelDeploymentResponseGitSourceVariant9Type.fromJson(
-          String value) =>
-      CancelDeploymentResponseGitSourceVariant9Type._(value);
+  factory CancelDeploymentResponseGitSourceVariant9Type.fromJson(String value) => CancelDeploymentResponseGitSourceVariant9Type._(value);
 
-  static const vercel =
-      CancelDeploymentResponseGitSourceVariant9Type._('vercel');
+  static const vercel = CancelDeploymentResponseGitSourceVariant9Type._('vercel');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseGitSourceVariant9Type &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseGitSourceVariant9Type && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp {
+
   final bool value;
 
-  const CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp._(
-      this.value);
+  const CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp._(this.value);
 
-  factory CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp.fromJson(
-          bool value) =>
-      CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp._(value);
+  factory CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp.fromJson(bool value) => CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp._(value);
 
-  static const false_ =
-      CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp._(false);
+  static const false_ = CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp._(false);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseMicrofrontendsVariant0IsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp {
+
   final bool value;
 
-  const CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp._(
-      this.value);
+  const CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp._(this.value);
 
-  factory CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp.fromJson(
-          bool value) =>
-      CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp._(value);
+  factory CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp.fromJson(bool value) => CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp._(value);
 
-  static const true_ =
-      CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp._(true);
+  static const true_ = CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseMicrofrontendsVariant1IsDefaultApp && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The result of the microfrontends config upload during deployment creation / build. Only set for default app deployments. The config upload is attempted during deployment create, and then again during the build. If the config is not in the root directory, or the deployment is prebuilt, the config cannot be uploaded during deployment create. The upload during deployment build finds the config even if it's not in the root directory, as it has access to all files. Uploading the config during create is ideal, as then all child deployments are guaranteed to have access to the default app deployment config even if the default app has not yet started building. If the config is not uploaded, the child app will show as building until the config has been uploaded during the default app build. - `success` - The config was uploaded successfully, either when the deployment was created or during the build. - `waiting_on_build` - The config could not be uploaded during deployment create, will be attempted again during the build. - `no_config` - No config was found. Only set once the build has not found the config in any of the deployment's files. - `undefined` - Legacy deployments, or there was an error uploading the config during deployment create.
 final class CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState {
+
   final String value;
 
-  const CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._(
-      this.value);
+  const CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._(this.value);
 
-  factory CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState.fromJson(
-          String value) =>
-      CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._(
-          value);
+  factory CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState.fromJson(String value) => CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._(value);
 
-  static const noConfig =
-      CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._(
-          'no_config');
-  static const success =
-      CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._(
-          'success');
-  static const waitingOnBuild =
-      CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._(
-          'waiting_on_build');
+  static const noConfig = CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._('no_config');
+  static const success = CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._('success');
+  static const waitingOnBuild = CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState._('waiting_on_build');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is CancelDeploymentResponseMicrofrontendsVariant1MfeConfigUploadState && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }

@@ -9,639 +9,214 @@ class CreateIntegrationStoreDirectResponseStoreBillingPlan {
   static const String constructionSurface = 'named';
   final SdkOptional<String> cost;
   final String description;
-  final SdkOptional<
-          List<CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>>
-      details;
-  final SdkOptional<
-      CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled> disabled;
+  final SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>> details;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled> disabled;
   final SdkOptional<String> effectiveDate;
-  final SdkOptional<
-          List<
-              CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>>
-      highlightedDetails;
+  final SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>> highlightedDetails;
   final String id;
   final SdkOptional<String> initialCharge;
   final SdkOptional<String> maximumAmount;
   final SdkOptional<String> maximumAmountAutoPurchasePerPeriod;
   final SdkOptional<String> minimumAmount;
   final String name;
-  final CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired
-      paymentMethodRequired;
+  final CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired paymentMethodRequired;
   final SdkOptional<double> preauthorizationAmount;
-  final SdkOptional<
-          List<CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>>
-      quote;
+  final SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>> quote;
   final CreateIntegrationStoreDirectResponseStoreBillingPlanScope scope;
   final CreateIntegrationStoreDirectResponseStoreBillingPlanType type_;
 
-  const CreateIntegrationStoreDirectResponseStoreBillingPlan(
-      {this.cost = const SdkOmitted(),
-      required this.description,
-      this.details = const SdkOmitted(),
-      this.disabled = const SdkOmitted(),
-      this.effectiveDate = const SdkOmitted(),
-      this.highlightedDetails = const SdkOmitted(),
-      required this.id,
-      this.initialCharge = const SdkOmitted(),
-      this.maximumAmount = const SdkOmitted(),
-      this.maximumAmountAutoPurchasePerPeriod = const SdkOmitted(),
-      this.minimumAmount = const SdkOmitted(),
-      required this.name,
-      required this.paymentMethodRequired,
-      this.preauthorizationAmount = const SdkOmitted(),
-      this.quote = const SdkOmitted(),
-      required this.scope,
-      required this.type_});
+  const CreateIntegrationStoreDirectResponseStoreBillingPlan({this.cost = const SdkOmitted(), required this.description, this.details = const SdkOmitted(), this.disabled = const SdkOmitted(), this.effectiveDate = const SdkOmitted(), this.highlightedDetails = const SdkOmitted(), required this.id, this.initialCharge = const SdkOmitted(), this.maximumAmount = const SdkOmitted(), this.maximumAmountAutoPurchasePerPeriod = const SdkOmitted(), this.minimumAmount = const SdkOmitted(), required this.name, required this.paymentMethodRequired, this.preauthorizationAmount = const SdkOmitted(), this.quote = const SdkOmitted(), required this.scope, required this.type_});
 
-  CreateIntegrationStoreDirectResponseStoreBillingPlan Function(
-      {SdkOptional<String> cost,
-      String description,
-      SdkOptional<
-              List<
-                  CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>>
-          details,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled>
-          disabled,
-      SdkOptional<String> effectiveDate,
-      SdkOptional<
-              List<
-                  CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>>
-          highlightedDetails,
-      String id,
-      SdkOptional<String> initialCharge,
-      SdkOptional<String> maximumAmount,
-      SdkOptional<String> maximumAmountAutoPurchasePerPeriod,
-      SdkOptional<String> minimumAmount,
-      String name,
-      CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired
-          paymentMethodRequired,
-      SdkOptional<double> preauthorizationAmount,
-      SdkOptional<
-              List<
-                  CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>>
-          quote,
-      CreateIntegrationStoreDirectResponseStoreBillingPlanScope scope,
-      CreateIntegrationStoreDirectResponseStoreBillingPlanType
-          type_}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreBillingPlan Function({SdkOptional<String> cost, String description, SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>> details, SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled> disabled, SdkOptional<String> effectiveDate, SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>> highlightedDetails, String id, SdkOptional<String> initialCharge, SdkOptional<String> maximumAmount, SdkOptional<String> maximumAmountAutoPurchasePerPeriod, SdkOptional<String> minimumAmount, String name, CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired paymentMethodRequired, SdkOptional<double> preauthorizationAmount, SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>> quote, CreateIntegrationStoreDirectResponseStoreBillingPlanScope scope, CreateIntegrationStoreDirectResponseStoreBillingPlanType type_}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreBillingPlan _copyWith(
-          {Object? cost = sdkOmittedValue,
-          Object? description = sdkOmittedValue,
-          Object? details = sdkOmittedValue,
-          Object? disabled = sdkOmittedValue,
-          Object? effectiveDate = sdkOmittedValue,
-          Object? highlightedDetails = sdkOmittedValue,
-          Object? id = sdkOmittedValue,
-          Object? initialCharge = sdkOmittedValue,
-          Object? maximumAmount = sdkOmittedValue,
-          Object? maximumAmountAutoPurchasePerPeriod = sdkOmittedValue,
-          Object? minimumAmount = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? paymentMethodRequired = sdkOmittedValue,
-          Object? preauthorizationAmount = sdkOmittedValue,
-          Object? quote = sdkOmittedValue,
-          Object? scope = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      CreateIntegrationStoreDirectResponseStoreBillingPlan(
-        cost: identical(cost, sdkOmittedValue)
-            ? this.cost
-            : cost as SdkOptional<String>,
-        description: identical(description, sdkOmittedValue)
-            ? this.description
-            : description as String,
-        details: identical(details, sdkOmittedValue)
-            ? this.details
-            : details as SdkOptional<
-                List<
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>>,
-        disabled: identical(disabled, sdkOmittedValue)
-            ? this.disabled
-            : disabled as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled>,
-        effectiveDate: identical(effectiveDate, sdkOmittedValue)
-            ? this.effectiveDate
-            : effectiveDate as SdkOptional<String>,
-        highlightedDetails: identical(highlightedDetails, sdkOmittedValue)
-            ? this.highlightedDetails
-            : highlightedDetails as SdkOptional<
-                List<
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>>,
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        initialCharge: identical(initialCharge, sdkOmittedValue)
-            ? this.initialCharge
-            : initialCharge as SdkOptional<String>,
-        maximumAmount: identical(maximumAmount, sdkOmittedValue)
-            ? this.maximumAmount
-            : maximumAmount as SdkOptional<String>,
-        maximumAmountAutoPurchasePerPeriod:
-            identical(maximumAmountAutoPurchasePerPeriod, sdkOmittedValue)
-                ? this.maximumAmountAutoPurchasePerPeriod
-                : maximumAmountAutoPurchasePerPeriod as SdkOptional<String>,
-        minimumAmount: identical(minimumAmount, sdkOmittedValue)
-            ? this.minimumAmount
-            : minimumAmount as SdkOptional<String>,
-        name: identical(name, sdkOmittedValue) ? this.name : name as String,
-        paymentMethodRequired: identical(paymentMethodRequired, sdkOmittedValue)
-            ? this.paymentMethodRequired
-            : paymentMethodRequired
-                as CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired,
-        preauthorizationAmount:
-            identical(preauthorizationAmount, sdkOmittedValue)
-                ? this.preauthorizationAmount
-                : preauthorizationAmount as SdkOptional<double>,
-        quote: identical(quote, sdkOmittedValue)
-            ? this.quote
-            : quote as SdkOptional<
-                List<
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>>,
-        scope: identical(scope, sdkOmittedValue)
-            ? this.scope
-            : scope
-                as CreateIntegrationStoreDirectResponseStoreBillingPlanScope,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as CreateIntegrationStoreDirectResponseStoreBillingPlanType,
-      );
+  CreateIntegrationStoreDirectResponseStoreBillingPlan _copyWith({Object? cost = sdkOmittedValue, Object? description = sdkOmittedValue, Object? details = sdkOmittedValue, Object? disabled = sdkOmittedValue, Object? effectiveDate = sdkOmittedValue, Object? highlightedDetails = sdkOmittedValue, Object? id = sdkOmittedValue, Object? initialCharge = sdkOmittedValue, Object? maximumAmount = sdkOmittedValue, Object? maximumAmountAutoPurchasePerPeriod = sdkOmittedValue, Object? minimumAmount = sdkOmittedValue, Object? name = sdkOmittedValue, Object? paymentMethodRequired = sdkOmittedValue, Object? preauthorizationAmount = sdkOmittedValue, Object? quote = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreBillingPlan(
+    cost: identical(cost, sdkOmittedValue) ? this.cost : cost as SdkOptional<String>,
+    description: identical(description, sdkOmittedValue) ? this.description : description as String,
+    details: identical(details, sdkOmittedValue) ? this.details : details as SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>>,
+    disabled: identical(disabled, sdkOmittedValue) ? this.disabled : disabled as SdkOptional<CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled>,
+    effectiveDate: identical(effectiveDate, sdkOmittedValue) ? this.effectiveDate : effectiveDate as SdkOptional<String>,
+    highlightedDetails: identical(highlightedDetails, sdkOmittedValue) ? this.highlightedDetails : highlightedDetails as SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>>,
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    initialCharge: identical(initialCharge, sdkOmittedValue) ? this.initialCharge : initialCharge as SdkOptional<String>,
+    maximumAmount: identical(maximumAmount, sdkOmittedValue) ? this.maximumAmount : maximumAmount as SdkOptional<String>,
+    maximumAmountAutoPurchasePerPeriod: identical(maximumAmountAutoPurchasePerPeriod, sdkOmittedValue) ? this.maximumAmountAutoPurchasePerPeriod : maximumAmountAutoPurchasePerPeriod as SdkOptional<String>,
+    minimumAmount: identical(minimumAmount, sdkOmittedValue) ? this.minimumAmount : minimumAmount as SdkOptional<String>,
+    name: identical(name, sdkOmittedValue) ? this.name : name as String,
+    paymentMethodRequired: identical(paymentMethodRequired, sdkOmittedValue) ? this.paymentMethodRequired : paymentMethodRequired as CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired,
+    preauthorizationAmount: identical(preauthorizationAmount, sdkOmittedValue) ? this.preauthorizationAmount : preauthorizationAmount as SdkOptional<double>,
+    quote: identical(quote, sdkOmittedValue) ? this.quote : quote as SdkOptional<List<CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>>,
+    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as CreateIntegrationStoreDirectResponseStoreBillingPlanScope,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateIntegrationStoreDirectResponseStoreBillingPlanType,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreBillingPlan.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreBillingPlan(
-        cost: json['cost'] != null
-            ? SdkPresent((json['cost'] as String?)!)
-            : const SdkOmitted(),
-        description: (json['description'] as String?)!,
-        details: json['details'] != null
-            ? SdkPresent(((json['details'] as List?)
-                ?.map((e) =>
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        disabled: json['disabled'] != null
-            ? SdkPresent((json['disabled'] != null
-                ? CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled
-                    .fromJson(json['disabled'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        effectiveDate: json['effectiveDate'] != null
-            ? SdkPresent((json['effectiveDate'] as String?)!)
-            : const SdkOmitted(),
-        highlightedDetails: json['highlightedDetails'] != null
-            ? SdkPresent(((json['highlightedDetails'] as List?)
-                ?.map((e) =>
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        id: (json['id'] as String?)!,
-        initialCharge: json['initialCharge'] != null
-            ? SdkPresent((json['initialCharge'] as String?)!)
-            : const SdkOmitted(),
-        maximumAmount: json['maximumAmount'] != null
-            ? SdkPresent((json['maximumAmount'] as String?)!)
-            : const SdkOmitted(),
-        maximumAmountAutoPurchasePerPeriod:
-            json['maximumAmountAutoPurchasePerPeriod'] != null
-                ? SdkPresent(
-                    (json['maximumAmountAutoPurchasePerPeriod'] as String?)!)
-                : const SdkOmitted(),
-        minimumAmount: json['minimumAmount'] != null
-            ? SdkPresent((json['minimumAmount'] as String?)!)
-            : const SdkOmitted(),
-        name: (json['name'] as String?)!,
-        paymentMethodRequired: (json['paymentMethodRequired'] != null
-            ? CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired
-                .fromJson(json['paymentMethodRequired'] as bool)
-            : null)!,
-        preauthorizationAmount: json['preauthorizationAmount'] != null
-            ? SdkPresent(
-                ((json['preauthorizationAmount'] as num?)?.toDouble())!)
-            : const SdkOmitted(),
-        quote: json['quote'] != null
-            ? SdkPresent(((json['quote'] as List?)
-                ?.map((e) =>
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem
-                        .fromJson(e as Map<String, dynamic>))
-                .toList())!)
-            : const SdkOmitted(),
-        scope: (json['scope'] != null
-            ? CreateIntegrationStoreDirectResponseStoreBillingPlanScope
-                .fromJson(json['scope'] as String)
-            : null)!,
-        type_: (json['type'] != null
-            ? CreateIntegrationStoreDirectResponseStoreBillingPlanType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreBillingPlan.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreBillingPlan(
+    cost: json['cost'] != null ? SdkPresent((json['cost'] as String?)!) : const SdkOmitted(),
+    description: (json['description'] as String?)!,
+    details: json['details'] != null ? SdkPresent(((json['details'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    disabled: json['disabled'] != null ? SdkPresent((json['disabled'] != null ? CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled.fromJson(json['disabled'] as bool) : null)!) : const SdkOmitted(),
+    effectiveDate: json['effectiveDate'] != null ? SdkPresent((json['effectiveDate'] as String?)!) : const SdkOmitted(),
+    highlightedDetails: json['highlightedDetails'] != null ? SdkPresent(((json['highlightedDetails'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    id: (json['id'] as String?)!,
+    initialCharge: json['initialCharge'] != null ? SdkPresent((json['initialCharge'] as String?)!) : const SdkOmitted(),
+    maximumAmount: json['maximumAmount'] != null ? SdkPresent((json['maximumAmount'] as String?)!) : const SdkOmitted(),
+    maximumAmountAutoPurchasePerPeriod: json['maximumAmountAutoPurchasePerPeriod'] != null ? SdkPresent((json['maximumAmountAutoPurchasePerPeriod'] as String?)!) : const SdkOmitted(),
+    minimumAmount: json['minimumAmount'] != null ? SdkPresent((json['minimumAmount'] as String?)!) : const SdkOmitted(),
+    name: (json['name'] as String?)!,
+    paymentMethodRequired: (json['paymentMethodRequired'] != null ? CreateIntegrationStoreDirectResponseStoreBillingPlanPaymentMethodRequired.fromJson(json['paymentMethodRequired'] as bool) : null)!,
+    preauthorizationAmount: json['preauthorizationAmount'] != null ? SdkPresent(((json['preauthorizationAmount'] as num?)?.toDouble())!) : const SdkOmitted(),
+    quote: json['quote'] != null ? SdkPresent(((json['quote'] as List?)?.map((e) => CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
+    scope: (json['scope'] != null ? CreateIntegrationStoreDirectResponseStoreBillingPlanScope.fromJson(json['scope'] as String) : null)!,
+    type_: (json['type'] != null ? CreateIntegrationStoreDirectResponseStoreBillingPlanType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (cost) {
-          SdkPresent<String>(value: final value) => {
-              'cost': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'description': description,
-        ...switch (details) {
-          SdkPresent<
-                List<
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>>(
-            value: final value
-          ) =>
-            {
-              'details': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (disabled) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled>(
-            value: final value
-          ) =>
-            {
-              'disabled': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (effectiveDate) {
-          SdkPresent<String>(value: final value) => {
-              'effectiveDate': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (highlightedDetails) {
-          SdkPresent<
-                List<
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>>(
-            value: final value
-          ) =>
-            {
-              'highlightedDetails': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'id': id,
-        ...switch (initialCharge) {
-          SdkPresent<String>(value: final value) => {
-              'initialCharge': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maximumAmount) {
-          SdkPresent<String>(value: final value) => {
-              'maximumAmount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (maximumAmountAutoPurchasePerPeriod) {
-          SdkPresent<String>(value: final value) => {
-              'maximumAmountAutoPurchasePerPeriod': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (minimumAmount) {
-          SdkPresent<String>(value: final value) => {
-              'minimumAmount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'name': name,
-        'paymentMethodRequired': paymentMethodRequired.toJson(),
-        ...switch (preauthorizationAmount) {
-          SdkPresent<double>(value: final value) => {
-              'preauthorizationAmount': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (quote) {
-          SdkPresent<
-                List<
-                    CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>>(
-            value: final value
-          ) =>
-            {
-              'quote': value.map((item) => item.toJson()).toList(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'scope': scope.toJson(),
-        'type': type_.toJson(),
-      };
+    ...switch (cost) {
+      SdkPresent<String>(value: final value) => {'cost': value,},
+      _ => const <String, dynamic>{},
+    },
+    'description': description,
+    ...switch (details) {
+      SdkPresent<List<CreateIntegrationStoreDirectResponseStoreBillingPlanDetailsItem>>(value: final value) => {'details': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (disabled) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreBillingPlanDisabled>(value: final value) => {'disabled': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (effectiveDate) {
+      SdkPresent<String>(value: final value) => {'effectiveDate': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (highlightedDetails) {
+      SdkPresent<List<CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetailsItem>>(value: final value) => {'highlightedDetails': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'id': id,
+    ...switch (initialCharge) {
+      SdkPresent<String>(value: final value) => {'initialCharge': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maximumAmount) {
+      SdkPresent<String>(value: final value) => {'maximumAmount': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (maximumAmountAutoPurchasePerPeriod) {
+      SdkPresent<String>(value: final value) => {'maximumAmountAutoPurchasePerPeriod': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (minimumAmount) {
+      SdkPresent<String>(value: final value) => {'minimumAmount': value,},
+      _ => const <String, dynamic>{},
+    },
+    'name': name,
+    'paymentMethodRequired': paymentMethodRequired.toJson(),
+    ...switch (preauthorizationAmount) {
+      SdkPresent<double>(value: final value) => {'preauthorizationAmount': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (quote) {
+      SdkPresent<List<CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>>(value: final value) => {'quote': value.map((item) => item.toJson()).toList(),},
+      _ => const <String, dynamic>{},
+    },
+    'scope': scope.toJson(),
+    'type': type_.toJson(),
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStoreCapabilities {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools>
-      agentTools;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive>
-      autoSensitive;
-  final SdkOptional<
-      CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable> billable;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp>
-      mcp;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly>
-      mcpReadonly;
-  final SdkOptional<
-      CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects> projects;
-
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools> agentTools;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive> autoSensitive;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable> billable;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp> mcp;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly> mcpReadonly;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects> projects;
   /// Typed representation of the `CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation` API schema.
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation>
-      secretRotation;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync>
-      secretsSync;
-  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSso>
-      sso;
-  final SdkOptional<
-          CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable>
-      transferable;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation> secretRotation;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync> secretsSync;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSso> sso;
+  final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable> transferable;
   final SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesV0> v0;
 
-  const CreateIntegrationStoreDirectResponseStoreCapabilities(
-      {this.agentTools = const SdkOmitted(),
-      this.autoSensitive = const SdkOmitted(),
-      this.billable = const SdkOmitted(),
-      this.mcp = const SdkOmitted(),
-      this.mcpReadonly = const SdkOmitted(),
-      this.projects = const SdkOmitted(),
-      this.secretRotation = const SdkOmitted(),
-      this.secretsSync = const SdkOmitted(),
-      this.sso = const SdkOmitted(),
-      this.transferable = const SdkOmitted(),
-      this.v0 = const SdkOmitted()});
+  const CreateIntegrationStoreDirectResponseStoreCapabilities({this.agentTools = const SdkOmitted(), this.autoSensitive = const SdkOmitted(), this.billable = const SdkOmitted(), this.mcp = const SdkOmitted(), this.mcpReadonly = const SdkOmitted(), this.projects = const SdkOmitted(), this.secretRotation = const SdkOmitted(), this.secretsSync = const SdkOmitted(), this.sso = const SdkOmitted(), this.transferable = const SdkOmitted(), this.v0 = const SdkOmitted()});
 
-  CreateIntegrationStoreDirectResponseStoreCapabilities Function(
-      {SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools>
-          agentTools,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive>
-          autoSensitive,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable>
-          billable,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp> mcp,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly>
-          mcpReadonly,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects>
-          projects,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation>
-          secretRotation,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync>
-          secretsSync,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSso> sso,
-      SdkOptional<
-              CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable>
-          transferable,
-      SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesV0>
-          v0}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreCapabilities Function({SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools> agentTools, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive> autoSensitive, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable> billable, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp> mcp, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly> mcpReadonly, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects> projects, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation> secretRotation, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync> secretsSync, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSso> sso, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable> transferable, SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesV0> v0}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreCapabilities _copyWith(
-          {Object? agentTools = sdkOmittedValue,
-          Object? autoSensitive = sdkOmittedValue,
-          Object? billable = sdkOmittedValue,
-          Object? mcp = sdkOmittedValue,
-          Object? mcpReadonly = sdkOmittedValue,
-          Object? projects = sdkOmittedValue,
-          Object? secretRotation = sdkOmittedValue,
-          Object? secretsSync = sdkOmittedValue,
-          Object? sso = sdkOmittedValue,
-          Object? transferable = sdkOmittedValue,
-          Object? v0 = sdkOmittedValue}) =>
-      CreateIntegrationStoreDirectResponseStoreCapabilities(
-        agentTools: identical(agentTools, sdkOmittedValue)
-            ? this.agentTools
-            : agentTools as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools>,
-        autoSensitive: identical(autoSensitive, sdkOmittedValue)
-            ? this.autoSensitive
-            : autoSensitive as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive>,
-        billable: identical(billable, sdkOmittedValue)
-            ? this.billable
-            : billable as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable>,
-        mcp: identical(mcp, sdkOmittedValue)
-            ? this.mcp
-            : mcp as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp>,
-        mcpReadonly: identical(mcpReadonly, sdkOmittedValue)
-            ? this.mcpReadonly
-            : mcpReadonly as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly>,
-        projects: identical(projects, sdkOmittedValue)
-            ? this.projects
-            : projects as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects>,
-        secretRotation: identical(secretRotation, sdkOmittedValue)
-            ? this.secretRotation
-            : secretRotation as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation>,
-        secretsSync: identical(secretsSync, sdkOmittedValue)
-            ? this.secretsSync
-            : secretsSync as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync>,
-        sso: identical(sso, sdkOmittedValue)
-            ? this.sso
-            : sso as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesSso>,
-        transferable: identical(transferable, sdkOmittedValue)
-            ? this.transferable
-            : transferable as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable>,
-        v0: identical(v0, sdkOmittedValue)
-            ? this.v0
-            : v0 as SdkOptional<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesV0>,
-      );
+  CreateIntegrationStoreDirectResponseStoreCapabilities _copyWith({Object? agentTools = sdkOmittedValue, Object? autoSensitive = sdkOmittedValue, Object? billable = sdkOmittedValue, Object? mcp = sdkOmittedValue, Object? mcpReadonly = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? secretRotation = sdkOmittedValue, Object? secretsSync = sdkOmittedValue, Object? sso = sdkOmittedValue, Object? transferable = sdkOmittedValue, Object? v0 = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreCapabilities(
+    agentTools: identical(agentTools, sdkOmittedValue) ? this.agentTools : agentTools as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools>,
+    autoSensitive: identical(autoSensitive, sdkOmittedValue) ? this.autoSensitive : autoSensitive as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive>,
+    billable: identical(billable, sdkOmittedValue) ? this.billable : billable as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable>,
+    mcp: identical(mcp, sdkOmittedValue) ? this.mcp : mcp as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp>,
+    mcpReadonly: identical(mcpReadonly, sdkOmittedValue) ? this.mcpReadonly : mcpReadonly as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly>,
+    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects>,
+    secretRotation: identical(secretRotation, sdkOmittedValue) ? this.secretRotation : secretRotation as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation>,
+    secretsSync: identical(secretsSync, sdkOmittedValue) ? this.secretsSync : secretsSync as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync>,
+    sso: identical(sso, sdkOmittedValue) ? this.sso : sso as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesSso>,
+    transferable: identical(transferable, sdkOmittedValue) ? this.transferable : transferable as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable>,
+    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<CreateIntegrationStoreDirectResponseStoreCapabilitiesV0>,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreCapabilities.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreCapabilities(
-        agentTools: json['agentTools'] != null
-            ? SdkPresent((json['agentTools'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools
-                    .fromJson(json['agentTools'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        autoSensitive: json['autoSensitive'] != null
-            ? SdkPresent((json['autoSensitive'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive
-                    .fromJson(json['autoSensitive'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        billable: json['billable'] != null
-            ? SdkPresent((json['billable'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable
-                    .fromJson(json['billable'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        mcp: json['mcp'] != null
-            ? SdkPresent((json['mcp'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp
-                    .fromJson(json['mcp'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        mcpReadonly: json['mcpReadonly'] != null
-            ? SdkPresent((json['mcpReadonly'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly
-                    .fromJson(json['mcpReadonly'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        projects: json['projects'] != null
-            ? SdkPresent((json['projects'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects
-                    .fromJson(json['projects'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        secretRotation: json['secretRotation'] != null
-            ? SdkPresent((json['secretRotation'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation
-                    .fromJson(json['secretRotation'])
-                : null)!)
-            : const SdkOmitted(),
-        secretsSync: json['secretsSync'] != null
-            ? SdkPresent((json['secretsSync'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync
-                    .fromJson(json['secretsSync'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        sso: json['sso'] != null
-            ? SdkPresent((json['sso'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesSso
-                    .fromJson(json['sso'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        transferable: json['transferable'] != null
-            ? SdkPresent((json['transferable'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable
-                    .fromJson(json['transferable'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        v0: json['v0'] != null
-            ? SdkPresent((json['v0'] != null
-                ? CreateIntegrationStoreDirectResponseStoreCapabilitiesV0
-                    .fromJson(json['v0'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-      );
+  factory CreateIntegrationStoreDirectResponseStoreCapabilities.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreCapabilities(
+    agentTools: json['agentTools'] != null ? SdkPresent((json['agentTools'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools.fromJson(json['agentTools'] as bool) : null)!) : const SdkOmitted(),
+    autoSensitive: json['autoSensitive'] != null ? SdkPresent((json['autoSensitive'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive.fromJson(json['autoSensitive'] as bool) : null)!) : const SdkOmitted(),
+    billable: json['billable'] != null ? SdkPresent((json['billable'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable.fromJson(json['billable'] as bool) : null)!) : const SdkOmitted(),
+    mcp: json['mcp'] != null ? SdkPresent((json['mcp'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp.fromJson(json['mcp'] as bool) : null)!) : const SdkOmitted(),
+    mcpReadonly: json['mcpReadonly'] != null ? SdkPresent((json['mcpReadonly'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly.fromJson(json['mcpReadonly'] as bool) : null)!) : const SdkOmitted(),
+    projects: json['projects'] != null ? SdkPresent((json['projects'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects.fromJson(json['projects'] as bool) : null)!) : const SdkOmitted(),
+    secretRotation: json['secretRotation'] != null ? SdkPresent((json['secretRotation'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation.fromJson(json['secretRotation']) : null)!) : const SdkOmitted(),
+    secretsSync: json['secretsSync'] != null ? SdkPresent((json['secretsSync'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync.fromJson(json['secretsSync'] as bool) : null)!) : const SdkOmitted(),
+    sso: json['sso'] != null ? SdkPresent((json['sso'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesSso.fromJson(json['sso'] as bool) : null)!) : const SdkOmitted(),
+    transferable: json['transferable'] != null ? SdkPresent((json['transferable'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable.fromJson(json['transferable'] as bool) : null)!) : const SdkOmitted(),
+    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? CreateIntegrationStoreDirectResponseStoreCapabilitiesV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (agentTools) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools>(
-            value: final value
-          ) =>
-            {
-              'agentTools': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (autoSensitive) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive>(
-            value: final value
-          ) =>
-            {
-              'autoSensitive': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (billable) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable>(
-            value: final value
-          ) =>
-            {
-              'billable': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mcp) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp>(
-            value: final value
-          ) =>
-            {
-              'mcp': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (mcpReadonly) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly>(
-            value: final value
-          ) =>
-            {
-              'mcpReadonly': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projects) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects>(
-            value: final value
-          ) =>
-            {
-              'projects': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretRotation) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation>(
-            value: final value
-          ) =>
-            {
-              'secretRotation': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (secretsSync) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync>(
-            value: final value
-          ) =>
-            {
-              'secretsSync': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (sso) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesSso>(
-            value: final value
-          ) =>
-            {
-              'sso': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (transferable) {
-          SdkPresent<
-                CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable>(
-            value: final value
-          ) =>
-            {
-              'transferable': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (v0) {
-          SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesV0>(
-            value: final value
-          ) =>
-            {
-              'v0': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (agentTools) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesAgentTools>(value: final value) => {'agentTools': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (autoSensitive) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesAutoSensitive>(value: final value) => {'autoSensitive': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (billable) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesBillable>(value: final value) => {'billable': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mcp) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcp>(value: final value) => {'mcp': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (mcpReadonly) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesMcpReadonly>(value: final value) => {'mcpReadonly': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projects) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesProjects>(value: final value) => {'projects': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretRotation) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation>(value: final value) => {'secretRotation': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (secretsSync) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretsSync>(value: final value) => {'secretsSync': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (sso) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesSso>(value: final value) => {'sso': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (transferable) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesTransferable>(value: final value) => {'transferable': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (v0) {
+      SdkPresent<CreateIntegrationStoreDirectResponseStoreCapabilitiesV0>(value: final value) => {'v0': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 class CreateIntegrationStoreDirectResponseStoreNotification {
@@ -652,67 +227,34 @@ class CreateIntegrationStoreDirectResponseStoreNotification {
   final SdkOptional<String> message;
   final String title;
 
-  const CreateIntegrationStoreDirectResponseStoreNotification(
-      {this.href = const SdkOmitted(),
-      required this.level,
-      this.message = const SdkOmitted(),
-      required this.title});
+  const CreateIntegrationStoreDirectResponseStoreNotification({this.href = const SdkOmitted(), required this.level, this.message = const SdkOmitted(), required this.title});
 
-  CreateIntegrationStoreDirectResponseStoreNotification Function(
-      {SdkOptional<String> href,
-      CreateIntegrationStoreDirectResponseStoreNotificationLevel level,
-      SdkOptional<String> message,
-      String title}) get copyWith => _copyWith;
+  CreateIntegrationStoreDirectResponseStoreNotification Function({SdkOptional<String> href, CreateIntegrationStoreDirectResponseStoreNotificationLevel level, SdkOptional<String> message, String title}) get copyWith => _copyWith;
 
-  CreateIntegrationStoreDirectResponseStoreNotification _copyWith(
-          {Object? href = sdkOmittedValue,
-          Object? level = sdkOmittedValue,
-          Object? message = sdkOmittedValue,
-          Object? title = sdkOmittedValue}) =>
-      CreateIntegrationStoreDirectResponseStoreNotification(
-        href: identical(href, sdkOmittedValue)
-            ? this.href
-            : href as SdkOptional<String>,
-        level: identical(level, sdkOmittedValue)
-            ? this.level
-            : level
-                as CreateIntegrationStoreDirectResponseStoreNotificationLevel,
-        message: identical(message, sdkOmittedValue)
-            ? this.message
-            : message as SdkOptional<String>,
-        title: identical(title, sdkOmittedValue) ? this.title : title as String,
-      );
+  CreateIntegrationStoreDirectResponseStoreNotification _copyWith({Object? href = sdkOmittedValue, Object? level = sdkOmittedValue, Object? message = sdkOmittedValue, Object? title = sdkOmittedValue}) => CreateIntegrationStoreDirectResponseStoreNotification(
+    href: identical(href, sdkOmittedValue) ? this.href : href as SdkOptional<String>,
+    level: identical(level, sdkOmittedValue) ? this.level : level as CreateIntegrationStoreDirectResponseStoreNotificationLevel,
+    message: identical(message, sdkOmittedValue) ? this.message : message as SdkOptional<String>,
+    title: identical(title, sdkOmittedValue) ? this.title : title as String,
+  );
 
-  factory CreateIntegrationStoreDirectResponseStoreNotification.fromJson(
-          Map<String, dynamic> json) =>
-      CreateIntegrationStoreDirectResponseStoreNotification(
-        href: json['href'] != null
-            ? SdkPresent((json['href'] as String?)!)
-            : const SdkOmitted(),
-        level: (json['level'] != null
-            ? CreateIntegrationStoreDirectResponseStoreNotificationLevel
-                .fromJson(json['level'] as String)
-            : null)!,
-        message: json['message'] != null
-            ? SdkPresent((json['message'] as String?)!)
-            : const SdkOmitted(),
-        title: (json['title'] as String?)!,
-      );
+  factory CreateIntegrationStoreDirectResponseStoreNotification.fromJson(Map<String, dynamic> json) => CreateIntegrationStoreDirectResponseStoreNotification(
+    href: json['href'] != null ? SdkPresent((json['href'] as String?)!) : const SdkOmitted(),
+    level: (json['level'] != null ? CreateIntegrationStoreDirectResponseStoreNotificationLevel.fromJson(json['level'] as String) : null)!,
+    message: json['message'] != null ? SdkPresent((json['message'] as String?)!) : const SdkOmitted(),
+    title: (json['title'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (href) {
-          SdkPresent<String>(value: final value) => {
-              'href': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'level': level.toJson(),
-        ...switch (message) {
-          SdkPresent<String>(value: final value) => {
-              'message': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'title': title,
-      };
+    ...switch (href) {
+      SdkPresent<String>(value: final value) => {'href': value,},
+      _ => const <String, dynamic>{},
+    },
+    'level': level.toJson(),
+    ...switch (message) {
+      SdkPresent<String>(value: final value) => {'message': value,},
+      _ => const <String, dynamic>{},
+    },
+    'title': title,
+  };
 }

@@ -4,223 +4,135 @@
 part of 'sandboxes.dart';
 
 // sandboxes domain models (part 15)
-final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0
-    extends CreateSandboxesV3RequestNetworkPolicy {
+final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0 extends CreateSandboxesV3RequestNetworkPolicy {
   final CreateSandboxesV3RequestNetworkPolicyVariant0 value;
-  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1
-    extends CreateSandboxesV3RequestNetworkPolicy {
+final class CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1 extends CreateSandboxesV3RequestNetworkPolicy {
   final CreateSandboxesV3RequestNetworkPolicyVariant1 value;
-  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV3RequestNetworkPolicyCreateSandboxesV3RequestNetworkPolicyVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// Clone a Git repository into the sandbox.
 class CreateSandboxesV3RequestSourceVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Indicates the source is a Git repository.
   final dynamic type_;
-
   /// The URL of the Git repository to clone.
   final String url;
-
   /// Username for Git authentication. Required together with password for private repositories.
   final SdkOptional<String> username;
-
   /// Password or personal access token for Git authentication. Required together with username for private repositories.
   final SdkOptional<String> password;
-
   /// Create a shallow clone with history truncated to the specified number of commits. Useful for faster cloning of large repositories.
   final SdkOptional<int> depth;
-
   /// The specific commit SHA, branch name, or tag to checkout after cloning.
   final SdkOptional<String> revision;
 
-  const CreateSandboxesV3RequestSourceVariant0(
-      {required this.type_,
-      required this.url,
-      this.username = const SdkOmitted(),
-      this.password = const SdkOmitted(),
-      this.depth = const SdkOmitted(),
-      this.revision = const SdkOmitted()});
+  const CreateSandboxesV3RequestSourceVariant0({required this.type_, required this.url, this.username = const SdkOmitted(), this.password = const SdkOmitted(), this.depth = const SdkOmitted(), this.revision = const SdkOmitted()});
 
-  CreateSandboxesV3RequestSourceVariant0 Function(
-      {dynamic type_,
-      String url,
-      SdkOptional<String> username,
-      SdkOptional<String> password,
-      SdkOptional<int> depth,
-      SdkOptional<String> revision}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestSourceVariant0 Function({dynamic type_, String url, SdkOptional<String> username, SdkOptional<String> password, SdkOptional<int> depth, SdkOptional<String> revision}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestSourceVariant0 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? url = sdkOmittedValue,
-          Object? username = sdkOmittedValue,
-          Object? password = sdkOmittedValue,
-          Object? depth = sdkOmittedValue,
-          Object? revision = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestSourceVariant0(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-        username: identical(username, sdkOmittedValue)
-            ? this.username
-            : username as SdkOptional<String>,
-        password: identical(password, sdkOmittedValue)
-            ? this.password
-            : password as SdkOptional<String>,
-        depth: identical(depth, sdkOmittedValue)
-            ? this.depth
-            : depth as SdkOptional<int>,
-        revision: identical(revision, sdkOmittedValue)
-            ? this.revision
-            : revision as SdkOptional<String>,
-      );
+  CreateSandboxesV3RequestSourceVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue, Object? username = sdkOmittedValue, Object? password = sdkOmittedValue, Object? depth = sdkOmittedValue, Object? revision = sdkOmittedValue}) => CreateSandboxesV3RequestSourceVariant0(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
+    password: identical(password, sdkOmittedValue) ? this.password : password as SdkOptional<String>,
+    depth: identical(depth, sdkOmittedValue) ? this.depth : depth as SdkOptional<int>,
+    revision: identical(revision, sdkOmittedValue) ? this.revision : revision as SdkOptional<String>,
+  );
 
-  factory CreateSandboxesV3RequestSourceVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestSourceVariant0(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-        url: (json['url'] as String?)!,
-        username: json['username'] != null
-            ? SdkPresent((json['username'] as String?)!)
-            : const SdkOmitted(),
-        password: json['password'] != null
-            ? SdkPresent((json['password'] as String?)!)
-            : const SdkOmitted(),
-        depth: json['depth'] != null
-            ? SdkPresent(((json['depth'] as num?)?.toInt())!)
-            : const SdkOmitted(),
-        revision: json['revision'] != null
-            ? SdkPresent((json['revision'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV3RequestSourceVariant0.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestSourceVariant0(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+    url: (json['url'] as String?)!,
+    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
+    password: json['password'] != null ? SdkPresent((json['password'] as String?)!) : const SdkOmitted(),
+    depth: json['depth'] != null ? SdkPresent(((json['depth'] as num?)?.toInt())!) : const SdkOmitted(),
+    revision: json['revision'] != null ? SdkPresent((json['revision'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-        'url': url,
-        ...switch (username) {
-          SdkPresent<String>(value: final value) => {
-              'username': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (password) {
-          SdkPresent<String>(value: final value) => {
-              'password': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (depth) {
-          SdkPresent<int>(value: final value) => {
-              'depth': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (revision) {
-          SdkPresent<String>(value: final value) => {
-              'revision': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'type': type_,
+    'url': url,
+    ...switch (username) {
+      SdkPresent<String>(value: final value) => {'username': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (password) {
+      SdkPresent<String>(value: final value) => {'password': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (depth) {
+      SdkPresent<int>(value: final value) => {'depth': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (revision) {
+      SdkPresent<String>(value: final value) => {'revision': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// Download and extract a gzipped tarball into the sandbox.
 class CreateSandboxesV3RequestSourceVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Indicates the source is a tarball.
   final dynamic type_;
-
   /// URL of a gzipped tarball (.tar.gz) to download and extract.
   final String url;
 
-  const CreateSandboxesV3RequestSourceVariant1(
-      {required this.type_, required this.url});
+  const CreateSandboxesV3RequestSourceVariant1({required this.type_, required this.url});
 
-  CreateSandboxesV3RequestSourceVariant1 Function({dynamic type_, String url})
-      get copyWith => _copyWith;
+  CreateSandboxesV3RequestSourceVariant1 Function({dynamic type_, String url}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestSourceVariant1 _copyWith(
-          {Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestSourceVariant1(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-        url: identical(url, sdkOmittedValue) ? this.url : url as String,
-      );
+  CreateSandboxesV3RequestSourceVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue}) => CreateSandboxesV3RequestSourceVariant1(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+    url: identical(url, sdkOmittedValue) ? this.url : url as String,
+  );
 
-  factory CreateSandboxesV3RequestSourceVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestSourceVariant1(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-        url: (json['url'] as String?)!,
-      );
+  factory CreateSandboxesV3RequestSourceVariant1.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestSourceVariant1(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+    url: (json['url'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-        'url': url,
-      };
+    'type': type_,
+    'url': url,
+  };
 }
 
 /// Restore the sandbox filesystem from an existing snapshot.
 class CreateSandboxesV3RequestSourceVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Indicates the source is a snapshot.
   final dynamic type_;
-
   /// The unique identifier of the snapshot to restore.
   final String snapshotId;
 
-  const CreateSandboxesV3RequestSourceVariant2(
-      {required this.type_, required this.snapshotId});
+  const CreateSandboxesV3RequestSourceVariant2({required this.type_, required this.snapshotId});
 
-  CreateSandboxesV3RequestSourceVariant2 Function(
-      {dynamic type_, String snapshotId}) get copyWith => _copyWith;
+  CreateSandboxesV3RequestSourceVariant2 Function({dynamic type_, String snapshotId}) get copyWith => _copyWith;
 
-  CreateSandboxesV3RequestSourceVariant2 _copyWith(
-          {Object? type_ = sdkOmittedValue,
-          Object? snapshotId = sdkOmittedValue}) =>
-      CreateSandboxesV3RequestSourceVariant2(
-        type_:
-            identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
-        snapshotId: identical(snapshotId, sdkOmittedValue)
-            ? this.snapshotId
-            : snapshotId as String,
-      );
+  CreateSandboxesV3RequestSourceVariant2 _copyWith({Object? type_ = sdkOmittedValue, Object? snapshotId = sdkOmittedValue}) => CreateSandboxesV3RequestSourceVariant2(
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as dynamic,
+    snapshotId: identical(snapshotId, sdkOmittedValue) ? this.snapshotId : snapshotId as String,
+  );
 
-  factory CreateSandboxesV3RequestSourceVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV3RequestSourceVariant2(
-        type_: json.containsKey('type')
-            ? json['type']
-            : throw ArgumentError.value(
-                null, 'type', 'Required property is missing'),
-        snapshotId: (json['snapshotId'] as String?)!,
-      );
+  factory CreateSandboxesV3RequestSourceVariant2.fromJson(Map<String, dynamic> json) => CreateSandboxesV3RequestSourceVariant2(
+    type_: json.containsKey('type') ? json['type'] : throw ArgumentError.value(null, 'type', 'Required property is missing'),
+    snapshotId: (json['snapshotId'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'type': type_,
-        'snapshotId': snapshotId,
-      };
+    'type': type_,
+    'snapshotId': snapshotId,
+  };
 }
 
 sealed class CreateSandboxesV3RequestSource {
@@ -229,165 +141,90 @@ sealed class CreateSandboxesV3RequestSource {
   const CreateSandboxesV3RequestSource();
   factory CreateSandboxesV3RequestSource.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value = CreateSandboxesV3RequestSourceVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateSandboxesV3RequestSourceVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value = CreateSandboxesV3RequestSourceVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2(
-              value);
-        }
-      } catch (_) {}
+      try { final value = CreateSandboxesV3RequestSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0(value); } } catch (_) {}
+      try { final value = CreateSandboxesV3RequestSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1(value); } } catch (_) {}
+      try { final value = CreateSandboxesV3RequestSourceVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2(value); } } catch (_) {}
     }
-    try {
-      return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0(
-          CreateSandboxesV3RequestSourceVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1(
-          CreateSandboxesV3RequestSourceVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2(
-          CreateSandboxesV3RequestSourceVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateSandboxesV3RequestSource");
+    try { return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0(CreateSandboxesV3RequestSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1(CreateSandboxesV3RequestSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2(CreateSandboxesV3RequestSourceVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateSandboxesV3RequestSource");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0
-    extends CreateSandboxesV3RequestSource {
+final class CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0 extends CreateSandboxesV3RequestSource {
   final CreateSandboxesV3RequestSourceVariant0 value;
-  const CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1
-    extends CreateSandboxesV3RequestSource {
+final class CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1 extends CreateSandboxesV3RequestSource {
   final CreateSandboxesV3RequestSourceVariant1 value;
-  const CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2
-    extends CreateSandboxesV3RequestSource {
+final class CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2 extends CreateSandboxesV3RequestSource {
   final CreateSandboxesV3RequestSourceVariant2 value;
-  const CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV3RequestSourceCreateSandboxesV3RequestSourceVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 sealed class CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration();
-  factory CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration.fromJson(
-      Object? json) {
-    if (json is num) {
-      return CreateSandboxesV4RequestKeepLastSnapshotsVariant1ExpirationInt(
-          json.toInt());
-    }
-    throw FormatException(
-        "No variant matched for CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration");
+  factory CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration.fromJson(Object? json) {
+    if (json is num) { return CreateSandboxesV4RequestKeepLastSnapshotsVariant1ExpirationInt(json.toInt()); }
+    throw FormatException("No variant matched for CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesV4RequestKeepLastSnapshotsVariant1ExpirationInt
-    extends CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration {
+final class CreateSandboxesV4RequestKeepLastSnapshotsVariant1ExpirationInt extends CreateSandboxesV4RequestKeepLastSnapshotsVariant1Expiration {
   final int value;
-  const CreateSandboxesV4RequestKeepLastSnapshotsVariant1ExpirationInt(
-      this.value);
-  @override
-  Object? toJson() => value;
+  const CreateSandboxesV4RequestKeepLastSnapshotsVariant1ExpirationInt(this.value);
+  @override Object? toJson() => value;
 }
 
 class CreateSandboxesV4RequestKeepLastSnapshotsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Number of most recent snapshots to keep.
   final int count;
-
   /// Expiration time in milliseconds for kept snapshots. Falls back to snapshotExpiration.
   final SdkOptional<int?> expiration;
-
   /// Whether to immediately delete evicted snapshots. Defaults to true.
   final SdkOptional<bool> deleteEvicted;
 
-  const CreateSandboxesV4RequestKeepLastSnapshotsVariant1(
-      {required this.count,
-      this.expiration = const SdkOmitted(),
-      this.deleteEvicted = const SdkOmitted()});
+  const CreateSandboxesV4RequestKeepLastSnapshotsVariant1({required this.count, this.expiration = const SdkOmitted(), this.deleteEvicted = const SdkOmitted()});
 
-  CreateSandboxesV4RequestKeepLastSnapshotsVariant1 Function(
-      {int count,
-      SdkOptional<int?> expiration,
-      SdkOptional<bool> deleteEvicted}) get copyWith => _copyWith;
+  CreateSandboxesV4RequestKeepLastSnapshotsVariant1 Function({int count, SdkOptional<int?> expiration, SdkOptional<bool> deleteEvicted}) get copyWith => _copyWith;
 
-  CreateSandboxesV4RequestKeepLastSnapshotsVariant1 _copyWith(
-          {Object? count = sdkOmittedValue,
-          Object? expiration = sdkOmittedValue,
-          Object? deleteEvicted = sdkOmittedValue}) =>
-      CreateSandboxesV4RequestKeepLastSnapshotsVariant1(
-        count: identical(count, sdkOmittedValue) ? this.count : count as int,
-        expiration: identical(expiration, sdkOmittedValue)
-            ? this.expiration
-            : expiration as SdkOptional<int?>,
-        deleteEvicted: identical(deleteEvicted, sdkOmittedValue)
-            ? this.deleteEvicted
-            : deleteEvicted as SdkOptional<bool>,
-      );
+  CreateSandboxesV4RequestKeepLastSnapshotsVariant1 _copyWith({Object? count = sdkOmittedValue, Object? expiration = sdkOmittedValue, Object? deleteEvicted = sdkOmittedValue}) => CreateSandboxesV4RequestKeepLastSnapshotsVariant1(
+    count: identical(count, sdkOmittedValue) ? this.count : count as int,
+    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<int?>,
+    deleteEvicted: identical(deleteEvicted, sdkOmittedValue) ? this.deleteEvicted : deleteEvicted as SdkOptional<bool>,
+  );
 
-  factory CreateSandboxesV4RequestKeepLastSnapshotsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV4RequestKeepLastSnapshotsVariant1(
-        count: ((json['count'] as num?)?.toInt())!,
-        expiration: json.containsKey('expiration')
-            ? SdkPresent((json['expiration'] as num?)?.toInt())
-            : const SdkOmitted(),
-        deleteEvicted: json['deleteEvicted'] != null
-            ? SdkPresent((json['deleteEvicted'] as bool?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV4RequestKeepLastSnapshotsVariant1.fromJson(Map<String, dynamic> json) => CreateSandboxesV4RequestKeepLastSnapshotsVariant1(
+    count: ((json['count'] as num?)?.toInt())!,
+    expiration: json.containsKey('expiration') ? SdkPresent((json['expiration'] as num?)?.toInt()) : const SdkOmitted(),
+    deleteEvicted: json['deleteEvicted'] != null ? SdkPresent((json['deleteEvicted'] as bool?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'count': count,
-        ...switch (expiration) {
-          SdkPresent<int?>(value: final value) => {
-              'expiration': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (deleteEvicted) {
-          SdkPresent<bool>(value: final value) => {
-              'deleteEvicted': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'count': count,
+    ...switch (expiration) {
+      SdkPresent<int?>(value: final value) => {'expiration': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (deleteEvicted) {
+      SdkPresent<bool>(value: final value) => {'deleteEvicted': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 sealed class CreateSandboxesV4RequestKeepLastSnapshots {
@@ -395,91 +232,56 @@ sealed class CreateSandboxesV4RequestKeepLastSnapshots {
   static const String constructionSurface = 'named';
   const CreateSandboxesV4RequestKeepLastSnapshots();
   factory CreateSandboxesV4RequestKeepLastSnapshots.fromJson(Object? json) {
-    if (json is String) {
-      return CreateSandboxesV4RequestKeepLastSnapshotsString(json);
-    }
-    try {
-      return CreateSandboxesV4RequestKeepLastSnapshotsCreateSandboxesV4RequestKeepLastSnapshotsVariant1(
-          CreateSandboxesV4RequestKeepLastSnapshotsVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for CreateSandboxesV4RequestKeepLastSnapshots");
+    if (json is String) { return CreateSandboxesV4RequestKeepLastSnapshotsString(json); }
+    try { return CreateSandboxesV4RequestKeepLastSnapshotsCreateSandboxesV4RequestKeepLastSnapshotsVariant1(CreateSandboxesV4RequestKeepLastSnapshotsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for CreateSandboxesV4RequestKeepLastSnapshots");
   }
   Object? toJson();
 }
 
-final class CreateSandboxesV4RequestKeepLastSnapshotsString
-    extends CreateSandboxesV4RequestKeepLastSnapshots {
+final class CreateSandboxesV4RequestKeepLastSnapshotsString extends CreateSandboxesV4RequestKeepLastSnapshots {
   final String value;
   const CreateSandboxesV4RequestKeepLastSnapshotsString(this.value);
-  @override
-  Object? toJson() => value;
+  @override Object? toJson() => value;
 }
 
-final class CreateSandboxesV4RequestKeepLastSnapshotsCreateSandboxesV4RequestKeepLastSnapshotsVariant1
-    extends CreateSandboxesV4RequestKeepLastSnapshots {
+final class CreateSandboxesV4RequestKeepLastSnapshotsCreateSandboxesV4RequestKeepLastSnapshotsVariant1 extends CreateSandboxesV4RequestKeepLastSnapshots {
   final CreateSandboxesV4RequestKeepLastSnapshotsVariant1 value;
-  const CreateSandboxesV4RequestKeepLastSnapshotsCreateSandboxesV4RequestKeepLastSnapshotsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const CreateSandboxesV4RequestKeepLastSnapshotsCreateSandboxesV4RequestKeepLastSnapshotsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 /// Match on the request path. Comparison is case-sensitive.
 class CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
-
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
-      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath
-          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
-      get copyWith => _copyWith;
+  CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
 
-  CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath
-      _copyWith(
-              {Object? exact = sdkOmittedValue,
-              Object? startsWith = sdkOmittedValue}) =>
-          CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
-            exact: identical(exact, sdkOmittedValue)
-                ? this.exact
-                : exact as SdkOptional<String>,
-            startsWith: identical(startsWith, sdkOmittedValue)
-                ? this.startsWith
-                : startsWith as SdkOptional<String>,
-          );
+  CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
+    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
+    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
+  );
 
-  factory CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath.fromJson(
-          Map<String, dynamic> json) =>
-      CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
-        exact: json['exact'] != null
-            ? SdkPresent((json['exact'] as String?)!)
-            : const SdkOmitted(),
-        startsWith: json['startsWith'] != null
-            ? SdkPresent((json['startsWith'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath.fromJson(Map<String, dynamic> json) => CreateSandboxesV4RequestNetworkPolicyVariant0InjectionRulesItemMatchPath(
+    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
+    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (exact) {
-          SdkPresent<String>(value: final value) => {
-              'exact': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (startsWith) {
-          SdkPresent<String>(value: final value) => {
-              'startsWith': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (exact) {
+      SdkPresent<String>(value: final value) => {'exact': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (startsWith) {
+      SdkPresent<String>(value: final value) => {'startsWith': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }

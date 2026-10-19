@@ -7,284 +7,110 @@ part of 'projects_upload.dart';
 class UploadProjectAvatarResponseMicrofrontendsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// A path that is used to take screenshots and as the default path in preview links when a domain for this microfrontend is shown in the UI. Includes the leading slash, e.g. `/docs`
   final SdkOptional<String> defaultRoute;
-
   /// Whether to add microfrontends routing to aliases. This means domains in this project will route as a microfrontend.
-  final SdkOptional<
-          UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>
-      doNotRouteWithMicrofrontendsRouting;
-
+  final SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting> doNotRouteWithMicrofrontendsRouting;
   /// Whether microfrontends are enabled for this project.
   final UploadProjectAvatarResponseMicrofrontendsVariant1Enabled enabled;
-
   /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
-  final SdkOptional<
-          UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>
-      freeProjectForLegacyLimits;
-
+  final SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits> freeProjectForLegacyLimits;
   /// The group IDs of microfrontends that this project belongs to. Each microfrontend project must belong to a microfrontends group that is the set of microfrontends that are used together.
   final List<String> groupIds;
-  final SdkOptional<
-          UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp>
-      isDefaultApp;
-
+  final SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp> isDefaultApp;
   /// Whether observability data should be routed to this microfrontend project or a root project.
-  final SdkOptional<
-          UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject>
-      routeObservabilityToThisProject;
-
+  final SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject> routeObservabilityToThisProject;
   /// Timestamp when the microfrontends settings were last updated.
   final double updatedAt;
 
-  const UploadProjectAvatarResponseMicrofrontendsVariant1(
-      {this.defaultRoute = const SdkOmitted(),
-      this.doNotRouteWithMicrofrontendsRouting = const SdkOmitted(),
-      required this.enabled,
-      this.freeProjectForLegacyLimits = const SdkOmitted(),
-      required this.groupIds,
-      this.isDefaultApp = const SdkOmitted(),
-      this.routeObservabilityToThisProject = const SdkOmitted(),
-      required this.updatedAt});
+  const UploadProjectAvatarResponseMicrofrontendsVariant1({this.defaultRoute = const SdkOmitted(), this.doNotRouteWithMicrofrontendsRouting = const SdkOmitted(), required this.enabled, this.freeProjectForLegacyLimits = const SdkOmitted(), required this.groupIds, this.isDefaultApp = const SdkOmitted(), this.routeObservabilityToThisProject = const SdkOmitted(), required this.updatedAt});
 
-  UploadProjectAvatarResponseMicrofrontendsVariant1 Function(
-      {SdkOptional<String> defaultRoute,
-      SdkOptional<
-              UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>
-          doNotRouteWithMicrofrontendsRouting,
-      UploadProjectAvatarResponseMicrofrontendsVariant1Enabled enabled,
-      SdkOptional<
-              UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>
-          freeProjectForLegacyLimits,
-      List<String> groupIds,
-      SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp>
-          isDefaultApp,
-      SdkOptional<
-              UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject>
-          routeObservabilityToThisProject,
-      double updatedAt}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseMicrofrontendsVariant1 Function({SdkOptional<String> defaultRoute, SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting> doNotRouteWithMicrofrontendsRouting, UploadProjectAvatarResponseMicrofrontendsVariant1Enabled enabled, SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits> freeProjectForLegacyLimits, List<String> groupIds, SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp> isDefaultApp, SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject> routeObservabilityToThisProject, double updatedAt}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseMicrofrontendsVariant1 _copyWith(
-          {Object? defaultRoute = sdkOmittedValue,
-          Object? doNotRouteWithMicrofrontendsRouting = sdkOmittedValue,
-          Object? enabled = sdkOmittedValue,
-          Object? freeProjectForLegacyLimits = sdkOmittedValue,
-          Object? groupIds = sdkOmittedValue,
-          Object? isDefaultApp = sdkOmittedValue,
-          Object? routeObservabilityToThisProject = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseMicrofrontendsVariant1(
-        defaultRoute: identical(defaultRoute, sdkOmittedValue)
-            ? this.defaultRoute
-            : defaultRoute as SdkOptional<String>,
-        doNotRouteWithMicrofrontendsRouting: identical(
-                doNotRouteWithMicrofrontendsRouting, sdkOmittedValue)
-            ? this.doNotRouteWithMicrofrontendsRouting
-            : doNotRouteWithMicrofrontendsRouting as SdkOptional<
-                UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>,
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled
-                as UploadProjectAvatarResponseMicrofrontendsVariant1Enabled,
-        freeProjectForLegacyLimits: identical(
-                freeProjectForLegacyLimits, sdkOmittedValue)
-            ? this.freeProjectForLegacyLimits
-            : freeProjectForLegacyLimits as SdkOptional<
-                UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>,
-        groupIds: identical(groupIds, sdkOmittedValue)
-            ? this.groupIds
-            : groupIds as List<String>,
-        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
-            ? this.isDefaultApp
-            : isDefaultApp as SdkOptional<
-                UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp>,
-        routeObservabilityToThisProject: identical(
-                routeObservabilityToThisProject, sdkOmittedValue)
-            ? this.routeObservabilityToThisProject
-            : routeObservabilityToThisProject as SdkOptional<
-                UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  UploadProjectAvatarResponseMicrofrontendsVariant1 _copyWith({Object? defaultRoute = sdkOmittedValue, Object? doNotRouteWithMicrofrontendsRouting = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? freeProjectForLegacyLimits = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue, Object? routeObservabilityToThisProject = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UploadProjectAvatarResponseMicrofrontendsVariant1(
+    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
+    doNotRouteWithMicrofrontendsRouting: identical(doNotRouteWithMicrofrontendsRouting, sdkOmittedValue) ? this.doNotRouteWithMicrofrontendsRouting : doNotRouteWithMicrofrontendsRouting as SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>,
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UploadProjectAvatarResponseMicrofrontendsVariant1Enabled,
+    freeProjectForLegacyLimits: identical(freeProjectForLegacyLimits, sdkOmittedValue) ? this.freeProjectForLegacyLimits : freeProjectForLegacyLimits as SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>,
+    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<String>,
+    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp>,
+    routeObservabilityToThisProject: identical(routeObservabilityToThisProject, sdkOmittedValue) ? this.routeObservabilityToThisProject : routeObservabilityToThisProject as SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory UploadProjectAvatarResponseMicrofrontendsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseMicrofrontendsVariant1(
-        defaultRoute: json['defaultRoute'] != null
-            ? SdkPresent((json['defaultRoute'] as String?)!)
-            : const SdkOmitted(),
-        doNotRouteWithMicrofrontendsRouting: json[
-                    'doNotRouteWithMicrofrontendsRouting'] !=
-                null
-            ? SdkPresent((json['doNotRouteWithMicrofrontendsRouting'] != null
-                ? UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
-                    .fromJson(
-                        json['doNotRouteWithMicrofrontendsRouting'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        enabled: (json['enabled'] != null
-            ? UploadProjectAvatarResponseMicrofrontendsVariant1Enabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null
-            ? SdkPresent((json['freeProjectForLegacyLimits'] != null
-                ? UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits
-                    .fromJson(json['freeProjectForLegacyLimits'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        groupIds:
-            ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
-        isDefaultApp: json['isDefaultApp'] != null
-            ? SdkPresent((json['isDefaultApp'] != null
-                ? UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp
-                    .fromJson(json['isDefaultApp'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        routeObservabilityToThisProject: json[
-                    'routeObservabilityToThisProject'] !=
-                null
-            ? SdkPresent((json['routeObservabilityToThisProject'] != null
-                ? UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject
-                    .fromJson(json['routeObservabilityToThisProject'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory UploadProjectAvatarResponseMicrofrontendsVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseMicrofrontendsVariant1(
+    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
+    doNotRouteWithMicrofrontendsRouting: json['doNotRouteWithMicrofrontendsRouting'] != null ? SdkPresent((json['doNotRouteWithMicrofrontendsRouting'] != null ? UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(json['doNotRouteWithMicrofrontendsRouting'] as bool) : null)!) : const SdkOmitted(),
+    enabled: (json['enabled'] != null ? UploadProjectAvatarResponseMicrofrontendsVariant1Enabled.fromJson(json['enabled'] as bool) : null)!,
+    freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null ? SdkPresent((json['freeProjectForLegacyLimits'] != null ? UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(json['freeProjectForLegacyLimits'] as bool) : null)!) : const SdkOmitted(),
+    groupIds: ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
+    isDefaultApp: json['isDefaultApp'] != null ? SdkPresent((json['isDefaultApp'] != null ? UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!) : const SdkOmitted(),
+    routeObservabilityToThisProject: json['routeObservabilityToThisProject'] != null ? SdkPresent((json['routeObservabilityToThisProject'] != null ? UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(json['routeObservabilityToThisProject'] as bool) : null)!) : const SdkOmitted(),
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (defaultRoute) {
-          SdkPresent<String>(value: final value) => {
-              'defaultRoute': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (doNotRouteWithMicrofrontendsRouting) {
-          SdkPresent<
-                UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>(
-            value: final value
-          ) =>
-            {
-              'doNotRouteWithMicrofrontendsRouting': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'enabled': enabled.toJson(),
-        ...switch (freeProjectForLegacyLimits) {
-          SdkPresent<
-                UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>(
-            value: final value
-          ) =>
-            {
-              'freeProjectForLegacyLimits': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'groupIds': groupIds,
-        ...switch (isDefaultApp) {
-          SdkPresent<
-                UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp>(
-            value: final value
-          ) =>
-            {
-              'isDefaultApp': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (routeObservabilityToThisProject) {
-          SdkPresent<
-                UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject>(
-            value: final value
-          ) =>
-            {
-              'routeObservabilityToThisProject': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'updatedAt': updatedAt,
-      };
+    ...switch (defaultRoute) {
+      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (doNotRouteWithMicrofrontendsRouting) {
+      SdkPresent<UploadProjectAvatarResponseMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting>(value: final value) => {'doNotRouteWithMicrofrontendsRouting': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'enabled': enabled.toJson(),
+    ...switch (freeProjectForLegacyLimits) {
+      SdkPresent<UploadProjectAvatarResponseMicrofrontendsVariant1FreeProjectForLegacyLimits>(value: final value) => {'freeProjectForLegacyLimits': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'groupIds': groupIds,
+    ...switch (isDefaultApp) {
+      SdkPresent<UploadProjectAvatarResponseMicrofrontendsVariant1IsDefaultApp>(value: final value) => {'isDefaultApp': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (routeObservabilityToThisProject) {
+      SdkPresent<UploadProjectAvatarResponseMicrofrontendsVariant1RouteObservabilityToThisProject>(value: final value) => {'routeObservabilityToThisProject': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'updatedAt': updatedAt,
+  };
 }
 
 class UploadProjectAvatarResponseMicrofrontendsVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final UploadProjectAvatarResponseMicrofrontendsVariant2Enabled enabled;
-  final SdkOptional<
-          UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>
-      freeProjectForLegacyLimits;
+  final SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits> freeProjectForLegacyLimits;
   final List<dynamic> groupIds;
   final double updatedAt;
 
-  const UploadProjectAvatarResponseMicrofrontendsVariant2(
-      {required this.enabled,
-      this.freeProjectForLegacyLimits = const SdkOmitted(),
-      required this.groupIds,
-      required this.updatedAt});
+  const UploadProjectAvatarResponseMicrofrontendsVariant2({required this.enabled, this.freeProjectForLegacyLimits = const SdkOmitted(), required this.groupIds, required this.updatedAt});
 
-  UploadProjectAvatarResponseMicrofrontendsVariant2 Function(
-      {UploadProjectAvatarResponseMicrofrontendsVariant2Enabled enabled,
-      SdkOptional<
-              UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>
-          freeProjectForLegacyLimits,
-      List<dynamic> groupIds,
-      double updatedAt}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseMicrofrontendsVariant2 Function({UploadProjectAvatarResponseMicrofrontendsVariant2Enabled enabled, SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits> freeProjectForLegacyLimits, List<dynamic> groupIds, double updatedAt}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseMicrofrontendsVariant2 _copyWith(
-          {Object? enabled = sdkOmittedValue,
-          Object? freeProjectForLegacyLimits = sdkOmittedValue,
-          Object? groupIds = sdkOmittedValue,
-          Object? updatedAt = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseMicrofrontendsVariant2(
-        enabled: identical(enabled, sdkOmittedValue)
-            ? this.enabled
-            : enabled
-                as UploadProjectAvatarResponseMicrofrontendsVariant2Enabled,
-        freeProjectForLegacyLimits: identical(
-                freeProjectForLegacyLimits, sdkOmittedValue)
-            ? this.freeProjectForLegacyLimits
-            : freeProjectForLegacyLimits as SdkOptional<
-                UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>,
-        groupIds: identical(groupIds, sdkOmittedValue)
-            ? this.groupIds
-            : groupIds as List<dynamic>,
-        updatedAt: identical(updatedAt, sdkOmittedValue)
-            ? this.updatedAt
-            : updatedAt as double,
-      );
+  UploadProjectAvatarResponseMicrofrontendsVariant2 _copyWith({Object? enabled = sdkOmittedValue, Object? freeProjectForLegacyLimits = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UploadProjectAvatarResponseMicrofrontendsVariant2(
+    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as UploadProjectAvatarResponseMicrofrontendsVariant2Enabled,
+    freeProjectForLegacyLimits: identical(freeProjectForLegacyLimits, sdkOmittedValue) ? this.freeProjectForLegacyLimits : freeProjectForLegacyLimits as SdkOptional<UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>,
+    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<dynamic>,
+    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
+  );
 
-  factory UploadProjectAvatarResponseMicrofrontendsVariant2.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseMicrofrontendsVariant2(
-        enabled: (json['enabled'] != null
-            ? UploadProjectAvatarResponseMicrofrontendsVariant2Enabled.fromJson(
-                json['enabled'] as bool)
-            : null)!,
-        freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null
-            ? SdkPresent((json['freeProjectForLegacyLimits'] != null
-                ? UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits
-                    .fromJson(json['freeProjectForLegacyLimits'] as bool)
-                : null)!)
-            : const SdkOmitted(),
-        groupIds: ((json['groupIds'] as List?)?.map((e) => e).toList())!,
-        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-      );
+  factory UploadProjectAvatarResponseMicrofrontendsVariant2.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseMicrofrontendsVariant2(
+    enabled: (json['enabled'] != null ? UploadProjectAvatarResponseMicrofrontendsVariant2Enabled.fromJson(json['enabled'] as bool) : null)!,
+    freeProjectForLegacyLimits: json['freeProjectForLegacyLimits'] != null ? SdkPresent((json['freeProjectForLegacyLimits'] != null ? UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(json['freeProjectForLegacyLimits'] as bool) : null)!) : const SdkOmitted(),
+    groupIds: ((json['groupIds'] as List?)?.map((e) => e).toList())!,
+    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'enabled': enabled.toJson(),
-        ...switch (freeProjectForLegacyLimits) {
-          SdkPresent<
-                UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>(
-            value: final value
-          ) =>
-            {
-              'freeProjectForLegacyLimits': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        'groupIds': groupIds,
-        'updatedAt': updatedAt,
-      };
+    'enabled': enabled.toJson(),
+    ...switch (freeProjectForLegacyLimits) {
+      SdkPresent<UploadProjectAvatarResponseMicrofrontendsVariant2FreeProjectForLegacyLimits>(value: final value) => {'freeProjectForLegacyLimits': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    'groupIds': groupIds,
+    'updatedAt': updatedAt,
+  };
 }
 
 sealed class UploadProjectAvatarResponseMicrofrontends {
@@ -293,77 +119,34 @@ sealed class UploadProjectAvatarResponseMicrofrontends {
   const UploadProjectAvatarResponseMicrofrontends();
   factory UploadProjectAvatarResponseMicrofrontends.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UploadProjectAvatarResponseMicrofrontendsVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UploadProjectAvatarResponseMicrofrontendsVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UploadProjectAvatarResponseMicrofrontendsVariant2.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UploadProjectAvatarResponseMicrofrontendsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0(value); } } catch (_) {}
+      try { final value = UploadProjectAvatarResponseMicrofrontendsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1(value); } } catch (_) {}
+      try { final value = UploadProjectAvatarResponseMicrofrontendsVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2(value); } } catch (_) {}
     }
-    try {
-      return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0(
-          UploadProjectAvatarResponseMicrofrontendsVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1(
-          UploadProjectAvatarResponseMicrofrontendsVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2(
-          UploadProjectAvatarResponseMicrofrontendsVariant2.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UploadProjectAvatarResponseMicrofrontends");
+    try { return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0(UploadProjectAvatarResponseMicrofrontendsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1(UploadProjectAvatarResponseMicrofrontendsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2(UploadProjectAvatarResponseMicrofrontendsVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UploadProjectAvatarResponseMicrofrontends");
   }
   Object? toJson();
 }
 
-final class UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0
-    extends UploadProjectAvatarResponseMicrofrontends {
+final class UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0 extends UploadProjectAvatarResponseMicrofrontends {
   final UploadProjectAvatarResponseMicrofrontendsVariant0 value;
-  const UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1
-    extends UploadProjectAvatarResponseMicrofrontends {
+final class UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1 extends UploadProjectAvatarResponseMicrofrontends {
   final UploadProjectAvatarResponseMicrofrontendsVariant1 value;
-  const UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2
-    extends UploadProjectAvatarResponseMicrofrontends {
+final class UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2 extends UploadProjectAvatarResponseMicrofrontends {
   final UploadProjectAvatarResponseMicrofrontendsVariant2 value;
-  const UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseMicrofrontendsUploadProjectAvatarResponseMicrofrontendsVariant2(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
 class UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem {
@@ -372,142 +155,79 @@ class UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem {
   final SdkOptional<String> note;
   final String value;
 
-  const UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-      {this.note = const SdkOmitted(), required this.value});
+  const UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem({this.note = const SdkOmitted(), required this.value});
 
-  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem Function(
-      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem _copyWith(
-          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-        note: identical(note, sdkOmittedValue)
-            ? this.note
-            : note as SdkOptional<String>,
-        value: identical(value, sdkOmittedValue) ? this.value : value as String,
-      );
+  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
+    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
+    value: identical(value, sdkOmittedValue) ? this.value : value as String,
+  );
 
-  factory UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-        note: json['note'] != null
-            ? SdkPresent((json['note'] as String?)!)
-            : const SdkOmitted(),
-        value: (json['value'] as String?)!,
-      );
+  factory UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
+    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
+    value: (json['value'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (note) {
-          SdkPresent<String>(value: final value) => {
-              'note': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'value': value,
-      };
+    ...switch (note) {
+      SdkPresent<String>(value: final value) => {'note': value,},
+      _ => const <String, dynamic>{},
+    },
+    'value': value,
+  };
 }
 
 class UploadProjectAvatarResponseTrustedIpsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>
-      addresses;
-  final UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType
-      deploymentType;
-  final UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode
-      protectionMode;
+  final List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem> addresses;
+  final UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType deploymentType;
+  final UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode protectionMode;
 
-  const UploadProjectAvatarResponseTrustedIpsVariant0(
-      {required this.addresses,
-      required this.deploymentType,
-      required this.protectionMode});
+  const UploadProjectAvatarResponseTrustedIpsVariant0({required this.addresses, required this.deploymentType, required this.protectionMode});
 
-  UploadProjectAvatarResponseTrustedIpsVariant0 Function(
-      {List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>
-          addresses,
-      UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType
-          deploymentType,
-      UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode
-          protectionMode}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedIpsVariant0 Function({List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem> addresses, UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType deploymentType, UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode protectionMode}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedIpsVariant0 _copyWith(
-          {Object? addresses = sdkOmittedValue,
-          Object? deploymentType = sdkOmittedValue,
-          Object? protectionMode = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseTrustedIpsVariant0(
-        addresses: identical(addresses, sdkOmittedValue)
-            ? this.addresses
-            : addresses as List<
-                UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>,
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType,
-        protectionMode: identical(protectionMode, sdkOmittedValue)
-            ? this.protectionMode
-            : protectionMode
-                as UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode,
-      );
+  UploadProjectAvatarResponseTrustedIpsVariant0 _copyWith({Object? addresses = sdkOmittedValue, Object? deploymentType = sdkOmittedValue, Object? protectionMode = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedIpsVariant0(
+    addresses: identical(addresses, sdkOmittedValue) ? this.addresses : addresses as List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>,
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType,
+    protectionMode: identical(protectionMode, sdkOmittedValue) ? this.protectionMode : protectionMode as UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode,
+  );
 
-  factory UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseTrustedIpsVariant0(
-        addresses: ((json['addresses'] as List?)
-            ?.map((e) =>
-                UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem
-                    .fromJson(e as Map<String, dynamic>))
-            .toList())!,
-        deploymentType: (json['deploymentType'] != null
-            ? UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-        protectionMode: (json['protectionMode'] != null
-            ? UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode
-                .fromJson(json['protectionMode'] as String)
-            : null)!,
-      );
+  factory UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedIpsVariant0(
+    addresses: ((json['addresses'] as List?)?.map((e) => UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(e as Map<String, dynamic>)).toList())!,
+    deploymentType: (json['deploymentType'] != null ? UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+    protectionMode: (json['protectionMode'] != null ? UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode.fromJson(json['protectionMode'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'addresses': addresses.map((item) => item.toJson()).toList(),
-        'deploymentType': deploymentType.toJson(),
-        'protectionMode': protectionMode.toJson(),
-      };
+    'addresses': addresses.map((item) => item.toJson()).toList(),
+    'deploymentType': deploymentType.toJson(),
+    'protectionMode': protectionMode.toJson(),
+  };
 }
 
 class UploadProjectAvatarResponseTrustedIpsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType
-      deploymentType;
+  final UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType deploymentType;
 
-  const UploadProjectAvatarResponseTrustedIpsVariant1(
-      {required this.deploymentType});
+  const UploadProjectAvatarResponseTrustedIpsVariant1({required this.deploymentType});
 
-  UploadProjectAvatarResponseTrustedIpsVariant1 Function(
-      {UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType
-          deploymentType}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedIpsVariant1 Function({UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType deploymentType}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedIpsVariant1 _copyWith(
-          {Object? deploymentType = sdkOmittedValue}) =>
-      UploadProjectAvatarResponseTrustedIpsVariant1(
-        deploymentType: identical(deploymentType, sdkOmittedValue)
-            ? this.deploymentType
-            : deploymentType
-                as UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType,
-      );
+  UploadProjectAvatarResponseTrustedIpsVariant1 _copyWith({Object? deploymentType = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedIpsVariant1(
+    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType,
+  );
 
-  factory UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(
-          Map<String, dynamic> json) =>
-      UploadProjectAvatarResponseTrustedIpsVariant1(
-        deploymentType: (json['deploymentType'] != null
-            ? UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType
-                .fromJson(json['deploymentType'] as String)
-            : null)!,
-      );
+  factory UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedIpsVariant1(
+    deploymentType: (json['deploymentType'] != null ? UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'deploymentType': deploymentType.toJson(),
-      };
+    'deploymentType': deploymentType.toJson(),
+  };
 }
 
 sealed class UploadProjectAvatarResponseTrustedIps {
@@ -516,53 +236,24 @@ sealed class UploadProjectAvatarResponseTrustedIps {
   const UploadProjectAvatarResponseTrustedIps();
   factory UploadProjectAvatarResponseTrustedIps.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try {
-        final value =
-            UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(
-              value);
-        }
-      } catch (_) {}
-      try {
-        final value =
-            UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(json);
-        if (sdkKeepsEveryKey(json, value.toJson())) {
-          return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(
-              value);
-        }
-      } catch (_) {}
+      try { final value = UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(value); } } catch (_) {}
+      try { final value = UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(value); } } catch (_) {}
     }
-    try {
-      return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(
-          UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    try {
-      return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(
-          UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(
-              json as Map<String, dynamic>));
-    } catch (_) {}
-    throw FormatException(
-        "No variant matched for UploadProjectAvatarResponseTrustedIps");
+    try { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    throw FormatException("No variant matched for UploadProjectAvatarResponseTrustedIps");
   }
   Object? toJson();
 }
 
-final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0
-    extends UploadProjectAvatarResponseTrustedIps {
+final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0 extends UploadProjectAvatarResponseTrustedIps {
   final UploadProjectAvatarResponseTrustedIpsVariant0 value;
-  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(this.value);
+  @override Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1
-    extends UploadProjectAvatarResponseTrustedIps {
+final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1 extends UploadProjectAvatarResponseTrustedIps {
   final UploadProjectAvatarResponseTrustedIpsVariant1 value;
-  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(
-      this.value);
-  @override
-  Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(this.value);
+  @override Object? toJson() => value.toJson();
 }

@@ -8,448 +8,261 @@ part of 'user.dart';
 class UserEventPayloadVariant381 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Represents a budget for tracking and notifying teams on their spending.
   final UserEventPayloadVariant381Budget budget;
-
   /// Represents a budget for tracking and notifying teams on their spending.
   final SdkOptional<UserEventPayloadVariant381PrevBudget> prevBudget;
-
   /// Optional `string` value serialized in the `prevWebhookUrl` wire field.
   final SdkOptional<String> prevWebhookUrl;
-
   /// Stored for project budgets. Same value as `budget.scopeId`.
   final SdkOptional<String> projectId;
-
   /// Injected at read time from `payload.projectId`.
   final SdkOptional<String> projectName;
-
   /// Optional `string` value serialized in the `webhookUrl` wire field.
   final SdkOptional<String> webhookUrl;
 
-  const UserEventPayloadVariant381(
-      {required this.budget,
-      this.prevBudget = const SdkOmitted(),
-      this.prevWebhookUrl = const SdkOmitted(),
-      this.projectId = const SdkOmitted(),
-      this.projectName = const SdkOmitted(),
-      this.webhookUrl = const SdkOmitted()});
+  const UserEventPayloadVariant381({required this.budget, this.prevBudget = const SdkOmitted(), this.prevWebhookUrl = const SdkOmitted(), this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), this.webhookUrl = const SdkOmitted()});
 
-  UserEventPayloadVariant381 Function(
-      {UserEventPayloadVariant381Budget budget,
-      SdkOptional<UserEventPayloadVariant381PrevBudget> prevBudget,
-      SdkOptional<String> prevWebhookUrl,
-      SdkOptional<String> projectId,
-      SdkOptional<String> projectName,
-      SdkOptional<String> webhookUrl}) get copyWith => _copyWith;
+  UserEventPayloadVariant381 Function({UserEventPayloadVariant381Budget budget, SdkOptional<UserEventPayloadVariant381PrevBudget> prevBudget, SdkOptional<String> prevWebhookUrl, SdkOptional<String> projectId, SdkOptional<String> projectName, SdkOptional<String> webhookUrl}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant381 _copyWith(
-          {Object? budget = sdkOmittedValue,
-          Object? prevBudget = sdkOmittedValue,
-          Object? prevWebhookUrl = sdkOmittedValue,
-          Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? webhookUrl = sdkOmittedValue}) =>
-      UserEventPayloadVariant381(
-        budget: identical(budget, sdkOmittedValue)
-            ? this.budget
-            : budget as UserEventPayloadVariant381Budget,
-        prevBudget: identical(prevBudget, sdkOmittedValue)
-            ? this.prevBudget
-            : prevBudget as SdkOptional<UserEventPayloadVariant381PrevBudget>,
-        prevWebhookUrl: identical(prevWebhookUrl, sdkOmittedValue)
-            ? this.prevWebhookUrl
-            : prevWebhookUrl as SdkOptional<String>,
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-        webhookUrl: identical(webhookUrl, sdkOmittedValue)
-            ? this.webhookUrl
-            : webhookUrl as SdkOptional<String>,
-      );
+  UserEventPayloadVariant381 _copyWith({Object? budget = sdkOmittedValue, Object? prevBudget = sdkOmittedValue, Object? prevWebhookUrl = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? webhookUrl = sdkOmittedValue}) => UserEventPayloadVariant381(
+    budget: identical(budget, sdkOmittedValue) ? this.budget : budget as UserEventPayloadVariant381Budget,
+    prevBudget: identical(prevBudget, sdkOmittedValue) ? this.prevBudget : prevBudget as SdkOptional<UserEventPayloadVariant381PrevBudget>,
+    prevWebhookUrl: identical(prevWebhookUrl, sdkOmittedValue) ? this.prevWebhookUrl : prevWebhookUrl as SdkOptional<String>,
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+    webhookUrl: identical(webhookUrl, sdkOmittedValue) ? this.webhookUrl : webhookUrl as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant381.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant381(
-        budget: (json['budget'] != null
-            ? UserEventPayloadVariant381Budget.fromJson(
-                json['budget'] as Map<String, dynamic>)
-            : null)!,
-        prevBudget: json['prevBudget'] != null
-            ? SdkPresent((json['prevBudget'] != null
-                ? UserEventPayloadVariant381PrevBudget.fromJson(
-                    json['prevBudget'] as Map<String, dynamic>)
-                : null)!)
-            : const SdkOmitted(),
-        prevWebhookUrl: json['prevWebhookUrl'] != null
-            ? SdkPresent((json['prevWebhookUrl'] as String?)!)
-            : const SdkOmitted(),
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-        webhookUrl: json['webhookUrl'] != null
-            ? SdkPresent((json['webhookUrl'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant381.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant381(
+    budget: (json['budget'] != null ? UserEventPayloadVariant381Budget.fromJson(json['budget'] as Map<String, dynamic>) : null)!,
+    prevBudget: json['prevBudget'] != null ? SdkPresent((json['prevBudget'] != null ? UserEventPayloadVariant381PrevBudget.fromJson(json['prevBudget'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
+    prevWebhookUrl: json['prevWebhookUrl'] != null ? SdkPresent((json['prevWebhookUrl'] as String?)!) : const SdkOmitted(),
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+    webhookUrl: json['webhookUrl'] != null ? SdkPresent((json['webhookUrl'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        'budget': budget.toJson(),
-        ...switch (prevBudget) {
-          SdkPresent<UserEventPayloadVariant381PrevBudget>(
-            value: final value
-          ) =>
-            {
-              'prevBudget': value.toJson(),
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (prevWebhookUrl) {
-          SdkPresent<String>(value: final value) => {
-              'prevWebhookUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (webhookUrl) {
-          SdkPresent<String>(value: final value) => {
-              'webhookUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    'budget': budget.toJson(),
+    ...switch (prevBudget) {
+      SdkPresent<UserEventPayloadVariant381PrevBudget>(value: final value) => {'prevBudget': value.toJson(),},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (prevWebhookUrl) {
+      SdkPresent<String>(value: final value) => {'prevWebhookUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (webhookUrl) {
+      SdkPresent<String>(value: final value) => {'webhookUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant382 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
-
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
-
   /// Optional `string` value serialized in the `webhookUrl` wire field.
   final SdkOptional<String> webhookUrl;
 
-  const UserEventPayloadVariant382(
-      {this.projectId = const SdkOmitted(),
-      this.projectName = const SdkOmitted(),
-      this.webhookUrl = const SdkOmitted()});
+  const UserEventPayloadVariant382({this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), this.webhookUrl = const SdkOmitted()});
 
-  UserEventPayloadVariant382 Function(
-      {SdkOptional<String> projectId,
-      SdkOptional<String> projectName,
-      SdkOptional<String> webhookUrl}) get copyWith => _copyWith;
+  UserEventPayloadVariant382 Function({SdkOptional<String> projectId, SdkOptional<String> projectName, SdkOptional<String> webhookUrl}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant382 _copyWith(
-          {Object? projectId = sdkOmittedValue,
-          Object? projectName = sdkOmittedValue,
-          Object? webhookUrl = sdkOmittedValue}) =>
-      UserEventPayloadVariant382(
-        projectId: identical(projectId, sdkOmittedValue)
-            ? this.projectId
-            : projectId as SdkOptional<String>,
-        projectName: identical(projectName, sdkOmittedValue)
-            ? this.projectName
-            : projectName as SdkOptional<String>,
-        webhookUrl: identical(webhookUrl, sdkOmittedValue)
-            ? this.webhookUrl
-            : webhookUrl as SdkOptional<String>,
-      );
+  UserEventPayloadVariant382 _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? webhookUrl = sdkOmittedValue}) => UserEventPayloadVariant382(
+    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
+    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
+    webhookUrl: identical(webhookUrl, sdkOmittedValue) ? this.webhookUrl : webhookUrl as SdkOptional<String>,
+  );
 
-  factory UserEventPayloadVariant382.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant382(
-        projectId: json['projectId'] != null
-            ? SdkPresent((json['projectId'] as String?)!)
-            : const SdkOmitted(),
-        projectName: json['projectName'] != null
-            ? SdkPresent((json['projectName'] as String?)!)
-            : const SdkOmitted(),
-        webhookUrl: json['webhookUrl'] != null
-            ? SdkPresent((json['webhookUrl'] as String?)!)
-            : const SdkOmitted(),
-      );
+  factory UserEventPayloadVariant382.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant382(
+    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
+    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
+    webhookUrl: json['webhookUrl'] != null ? SdkPresent((json['webhookUrl'] as String?)!) : const SdkOmitted(),
+  );
 
   Map<String, dynamic> toJson() => {
-        ...switch (projectId) {
-          SdkPresent<String>(value: final value) => {
-              'projectId': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (projectName) {
-          SdkPresent<String>(value: final value) => {
-              'projectName': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        ...switch (webhookUrl) {
-          SdkPresent<String>(value: final value) => {
-              'webhookUrl': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-      };
+    ...switch (projectId) {
+      SdkPresent<String>(value: final value) => {'projectId': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (projectName) {
+      SdkPresent<String>(value: final value) => {'projectName': value,},
+      _ => const <String, dynamic>{},
+    },
+    ...switch (webhookUrl) {
+      SdkPresent<String>(value: final value) => {'webhookUrl': value,},
+      _ => const <String, dynamic>{},
+    },
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant383 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required enumerated value serialized in the `storeType` wire field.
   final UserEventPayloadVariant383StoreType storeType;
 
   const UserEventPayloadVariant383({required this.storeType});
 
-  UserEventPayloadVariant383 Function(
-          {UserEventPayloadVariant383StoreType storeType})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant383 Function({UserEventPayloadVariant383StoreType storeType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant383 _copyWith({Object? storeType = sdkOmittedValue}) =>
-      UserEventPayloadVariant383(
-        storeType: identical(storeType, sdkOmittedValue)
-            ? this.storeType
-            : storeType as UserEventPayloadVariant383StoreType,
-      );
+  UserEventPayloadVariant383 _copyWith({Object? storeType = sdkOmittedValue}) => UserEventPayloadVariant383(
+    storeType: identical(storeType, sdkOmittedValue) ? this.storeType : storeType as UserEventPayloadVariant383StoreType,
+  );
 
-  factory UserEventPayloadVariant383.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant383(
-        storeType: (json['storeType'] != null
-            ? UserEventPayloadVariant383StoreType.fromJson(
-                json['storeType'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant383.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant383(
+    storeType: (json['storeType'] != null ? UserEventPayloadVariant383StoreType.fromJson(json['storeType'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'storeType': storeType.toJson(),
-      };
+    'storeType': storeType.toJson(),
+  };
 }
 
 /// Required object value serialized in the `store` wire field.
 class UserEventPayloadVariant384Store {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
-
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventPayloadVariant384StoreType type_;
 
-  const UserEventPayloadVariant384Store(
-      {required this.id, this.name = const SdkOmitted(), required this.type_});
+  const UserEventPayloadVariant384Store({required this.id, this.name = const SdkOmitted(), required this.type_});
 
-  UserEventPayloadVariant384Store Function(
-      {String id,
-      SdkOptional<String> name,
-      UserEventPayloadVariant384StoreType type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant384Store Function({String id, SdkOptional<String> name, UserEventPayloadVariant384StoreType type_}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant384Store _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UserEventPayloadVariant384Store(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UserEventPayloadVariant384StoreType,
-      );
+  UserEventPayloadVariant384Store _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant384Store(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant384StoreType,
+  );
 
-  factory UserEventPayloadVariant384Store.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant384Store(
-        id: (json['id'] as String?)!,
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UserEventPayloadVariant384StoreType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant384Store.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant384Store(
+    id: (json['id'] as String?)!,
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UserEventPayloadVariant384StoreType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'id': id,
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant384 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `store` wire field.
   final UserEventPayloadVariant384Store store;
 
   const UserEventPayloadVariant384({required this.store});
 
-  UserEventPayloadVariant384 Function({UserEventPayloadVariant384Store store})
-      get copyWith => _copyWith;
+  UserEventPayloadVariant384 Function({UserEventPayloadVariant384Store store}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant384 _copyWith({Object? store = sdkOmittedValue}) =>
-      UserEventPayloadVariant384(
-        store: identical(store, sdkOmittedValue)
-            ? this.store
-            : store as UserEventPayloadVariant384Store,
-      );
+  UserEventPayloadVariant384 _copyWith({Object? store = sdkOmittedValue}) => UserEventPayloadVariant384(
+    store: identical(store, sdkOmittedValue) ? this.store : store as UserEventPayloadVariant384Store,
+  );
 
-  factory UserEventPayloadVariant384.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant384(
-        store: (json['store'] != null
-            ? UserEventPayloadVariant384Store.fromJson(
-                json['store'] as Map<String, dynamic>)
-            : null)!,
-      );
+  factory UserEventPayloadVariant384.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant384(
+    store: (json['store'] != null ? UserEventPayloadVariant384Store.fromJson(json['store'] as Map<String, dynamic>) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'store': store.toJson(),
-      };
+    'store': store.toJson(),
+  };
 }
 
 /// Required object value serialized in the `store` wire field.
 class UserEventPayloadVariant385Store {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required `string` value serialized in the `id` wire field.
   final String id;
-
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
-
   /// Required enumerated value serialized in the `type` wire field.
   final UserEventPayloadVariant385StoreType type_;
 
-  const UserEventPayloadVariant385Store(
-      {required this.id, this.name = const SdkOmitted(), required this.type_});
+  const UserEventPayloadVariant385Store({required this.id, this.name = const SdkOmitted(), required this.type_});
 
-  UserEventPayloadVariant385Store Function(
-      {String id,
-      SdkOptional<String> name,
-      UserEventPayloadVariant385StoreType type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant385Store Function({String id, SdkOptional<String> name, UserEventPayloadVariant385StoreType type_}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant385Store _copyWith(
-          {Object? id = sdkOmittedValue,
-          Object? name = sdkOmittedValue,
-          Object? type_ = sdkOmittedValue}) =>
-      UserEventPayloadVariant385Store(
-        id: identical(id, sdkOmittedValue) ? this.id : id as String,
-        name: identical(name, sdkOmittedValue)
-            ? this.name
-            : name as SdkOptional<String>,
-        type_: identical(type_, sdkOmittedValue)
-            ? this.type_
-            : type_ as UserEventPayloadVariant385StoreType,
-      );
+  UserEventPayloadVariant385Store _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant385Store(
+    id: identical(id, sdkOmittedValue) ? this.id : id as String,
+    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
+    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant385StoreType,
+  );
 
-  factory UserEventPayloadVariant385Store.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant385Store(
-        id: (json['id'] as String?)!,
-        name: json['name'] != null
-            ? SdkPresent((json['name'] as String?)!)
-            : const SdkOmitted(),
-        type_: (json['type'] != null
-            ? UserEventPayloadVariant385StoreType.fromJson(
-                json['type'] as String)
-            : null)!,
-      );
+  factory UserEventPayloadVariant385Store.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant385Store(
+    id: (json['id'] as String?)!,
+    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
+    type_: (json['type'] != null ? UserEventPayloadVariant385StoreType.fromJson(json['type'] as String) : null)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        ...switch (name) {
-          SdkPresent<String>(value: final value) => {
-              'name': value,
-            },
-          _ => const <String, dynamic>{},
-        },
-        'type': type_.toJson(),
-      };
+    'id': id,
+    ...switch (name) {
+      SdkPresent<String>(value: final value) => {'name': value,},
+      _ => const <String, dynamic>{},
+    },
+    'type': type_.toJson(),
+  };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant385 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-
   /// Required object value serialized in the `store` wire field.
   final UserEventPayloadVariant385Store store;
-
   /// Required `string` value serialized in the `destinationTeamId` wire field.
   final String destinationTeamId;
-
   /// Required `string` value serialized in the `destinationTeamName` wire field.
   final String destinationTeamName;
 
-  const UserEventPayloadVariant385(
-      {required this.store,
-      required this.destinationTeamId,
-      required this.destinationTeamName});
+  const UserEventPayloadVariant385({required this.store, required this.destinationTeamId, required this.destinationTeamName});
 
-  UserEventPayloadVariant385 Function(
-      {UserEventPayloadVariant385Store store,
-      String destinationTeamId,
-      String destinationTeamName}) get copyWith => _copyWith;
+  UserEventPayloadVariant385 Function({UserEventPayloadVariant385Store store, String destinationTeamId, String destinationTeamName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant385 _copyWith(
-          {Object? store = sdkOmittedValue,
-          Object? destinationTeamId = sdkOmittedValue,
-          Object? destinationTeamName = sdkOmittedValue}) =>
-      UserEventPayloadVariant385(
-        store: identical(store, sdkOmittedValue)
-            ? this.store
-            : store as UserEventPayloadVariant385Store,
-        destinationTeamId: identical(destinationTeamId, sdkOmittedValue)
-            ? this.destinationTeamId
-            : destinationTeamId as String,
-        destinationTeamName: identical(destinationTeamName, sdkOmittedValue)
-            ? this.destinationTeamName
-            : destinationTeamName as String,
-      );
+  UserEventPayloadVariant385 _copyWith({Object? store = sdkOmittedValue, Object? destinationTeamId = sdkOmittedValue, Object? destinationTeamName = sdkOmittedValue}) => UserEventPayloadVariant385(
+    store: identical(store, sdkOmittedValue) ? this.store : store as UserEventPayloadVariant385Store,
+    destinationTeamId: identical(destinationTeamId, sdkOmittedValue) ? this.destinationTeamId : destinationTeamId as String,
+    destinationTeamName: identical(destinationTeamName, sdkOmittedValue) ? this.destinationTeamName : destinationTeamName as String,
+  );
 
-  factory UserEventPayloadVariant385.fromJson(Map<String, dynamic> json) =>
-      UserEventPayloadVariant385(
-        store: (json['store'] != null
-            ? UserEventPayloadVariant385Store.fromJson(
-                json['store'] as Map<String, dynamic>)
-            : null)!,
-        destinationTeamId: (json['destinationTeamId'] as String?)!,
-        destinationTeamName: (json['destinationTeamName'] as String?)!,
-      );
+  factory UserEventPayloadVariant385.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant385(
+    store: (json['store'] != null ? UserEventPayloadVariant385Store.fromJson(json['store'] as Map<String, dynamic>) : null)!,
+    destinationTeamId: (json['destinationTeamId'] as String?)!,
+    destinationTeamName: (json['destinationTeamName'] as String?)!,
+  );
 
   Map<String, dynamic> toJson() => {
-        'store': store.toJson(),
-        'destinationTeamId': destinationTeamId,
-        'destinationTeamName': destinationTeamName,
-      };
+    'store': store.toJson(),
+    'destinationTeamId': destinationTeamId,
+    'destinationTeamName': destinationTeamName,
+  };
 }

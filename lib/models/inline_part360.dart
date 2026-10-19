@@ -5,406 +5,282 @@ part of 'inline.dart';
 
 // Inline operation models (part 360)
 final class UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration {
+
   final String value;
 
-  const UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._(
-      this.value);
+  const UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._(
-          value);
+  factory UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration.fromJson(String value) => UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._(value);
 
-  static const skipNamespaceQueue =
-      UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._(
-          'SKIP_NAMESPACE_QUEUE');
-  static const waitForNamespaceQueue =
-      UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._(
-          'WAIT_FOR_NAMESPACE_QUEUE');
+  static const skipNamespaceQueue = UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._('SKIP_NAMESPACE_QUEUE');
+  static const waitForNamespaceQueue = UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration._('WAIT_FOR_NAMESPACE_QUEUE');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigBuildQueueConfiguration && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
 final class UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel {
+
   final String value;
 
-  const UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._(
-      this.value);
+  const UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._(
-          value);
+  factory UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel.fromJson(String value) => UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._(value);
 
-  static const enhanced =
-      UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._(
-          'enhanced');
-  static const standard =
-      UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._(
-          'standard');
-  static const turbo =
-      UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._(
-          'turbo');
+  static const enhanced = UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._('enhanced');
+  static const standard = UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._('standard');
+  static const turbo = UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel._('turbo');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigElasticBuildMachineLabel && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled {
+
   final bool value;
 
-  const UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(
-      this.value);
+  const UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(
-          value);
+  factory UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(
-          false);
-  static const true_ =
-      UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(
-          true);
+  static const false_ = UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(false);
+  static const true_ = UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigElasticConcurrencyEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta {
+
   final bool value;
 
-  const UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(
-      this.value);
+  const UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(value);
+  factory UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta.fromJson(bool value) => UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(true);
+  static const false_ = UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(false);
+  static const true_ = UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigEnableFunctionsBeta && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseResourceConfigFluid {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseResourceConfigFluid._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigFluid.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseResourceConfigFluid._(value);
+  factory UpdateMicrofrontendsResponseResourceConfigFluid.fromJson(bool value) => UpdateMicrofrontendsResponseResourceConfigFluid._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseResourceConfigFluid._(false);
+  static const false_ = UpdateMicrofrontendsResponseResourceConfigFluid._(false);
   static const true_ = UpdateMicrofrontendsResponseResourceConfigFluid._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseResourceConfigFluid &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigFluid && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType {
+
   final String value;
 
-  const UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(
-      this.value);
+  const UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(
-          value);
+  factory UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType.fromJson(String value) => UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(value);
 
-  static const performance =
-      UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(
-          'performance');
-  static const performanceXl =
-      UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(
-          'performance_xl');
-  static const standard =
-      UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(
-          'standard');
-  static const standardLegacy =
-      UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._(
-          'standard_legacy');
+  static const performance = UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._('performance');
+  static const performanceXl = UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._('performance_xl');
+  static const standard = UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._('standard');
+  static const standardLegacy = UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType._('standard_legacy');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigFunctionDefaultMemoryType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover {
+
   final bool value;
 
-  const UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(
-      this.value);
+  const UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(
-          value);
+  factory UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover.fromJson(bool value) => UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(
-          false);
-  static const true_ =
-      UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(
-          true);
+  static const false_ = UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(false);
+  static const true_ = UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other
-          is UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigFunctionZeroConfigFailover && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 final class UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled._(value);
+  factory UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled.fromJson(bool value) => UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled._(true);
+  static const false_ = UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled._(false);
+  static const true_ = UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseResourceConfigIsNSNBDisabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.
 final class UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader {
+
   final bool value;
 
-  const UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(
-      this.value);
+  const UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(this.value);
 
-  factory UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(value);
+  factory UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader.fromJson(bool value) => UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(true);
+  static const false_ = UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(false);
+  static const true_ = UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseRollingReleaseCanaryResponseHeader && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// What to do when the gate trips: pause the rollout, or roll it back.
 final class UpdateMicrofrontendsResponseRollingReleaseGateAction {
+
   final String value;
 
   const UpdateMicrofrontendsResponseRollingReleaseGateAction._(this.value);
 
-  factory UpdateMicrofrontendsResponseRollingReleaseGateAction.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseRollingReleaseGateAction._(value);
+  factory UpdateMicrofrontendsResponseRollingReleaseGateAction.fromJson(String value) => UpdateMicrofrontendsResponseRollingReleaseGateAction._(value);
 
-  static const pause =
-      UpdateMicrofrontendsResponseRollingReleaseGateAction._('pause');
-  static const rollback =
-      UpdateMicrofrontendsResponseRollingReleaseGateAction._('rollback');
+  static const pause = UpdateMicrofrontendsResponseRollingReleaseGateAction._('pause');
+  static const rollback = UpdateMicrofrontendsResponseRollingReleaseGateAction._('rollback');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseRollingReleaseGateAction &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseRollingReleaseGateAction && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// The metric this check evaluates.
 final class UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType {
+
   final String value;
 
-  const UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType._(
-      this.value);
+  const UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType._(this.value);
 
-  factory UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType.fromJson(
-          String value) =>
-      UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType._(value);
+  factory UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType.fromJson(String value) => UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType._(value);
 
-  static const errorRate5xx =
-      UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType._(
-          'error-rate-5xx');
+  static const errorRate5xx = UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType._('error-rate-5xx');
 
   String toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseRollingReleaseGateChecksItemType && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// When true, a tripped gate is only reported — {@link action} is not taken.
 final class UpdateMicrofrontendsResponseRollingReleaseGateDryRun {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseRollingReleaseGateDryRun._(this.value);
 
-  factory UpdateMicrofrontendsResponseRollingReleaseGateDryRun.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseRollingReleaseGateDryRun._(value);
+  factory UpdateMicrofrontendsResponseRollingReleaseGateDryRun.fromJson(bool value) => UpdateMicrofrontendsResponseRollingReleaseGateDryRun._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseRollingReleaseGateDryRun._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseRollingReleaseGateDryRun._(true);
+  static const false_ = UpdateMicrofrontendsResponseRollingReleaseGateDryRun._(false);
+  static const true_ = UpdateMicrofrontendsResponseRollingReleaseGateDryRun._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseRollingReleaseGateDryRun &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseRollingReleaseGateDryRun && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
 
 /// Whether automated gating is enabled for this project's rollouts.
 final class UpdateMicrofrontendsResponseRollingReleaseGateEnabled {
+
   final bool value;
 
   const UpdateMicrofrontendsResponseRollingReleaseGateEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseRollingReleaseGateEnabled.fromJson(
-          bool value) =>
-      UpdateMicrofrontendsResponseRollingReleaseGateEnabled._(value);
+  factory UpdateMicrofrontendsResponseRollingReleaseGateEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseRollingReleaseGateEnabled._(value);
 
-  static const false_ =
-      UpdateMicrofrontendsResponseRollingReleaseGateEnabled._(false);
-  static const true_ =
-      UpdateMicrofrontendsResponseRollingReleaseGateEnabled._(true);
+  static const false_ = UpdateMicrofrontendsResponseRollingReleaseGateEnabled._(false);
+  static const true_ = UpdateMicrofrontendsResponseRollingReleaseGateEnabled._(true);
 
   bool toJson() => value;
 
-  @override
-  String toString() => value.toString();
+  @override String toString() => value.toString();
 
-  @override
-  bool operator ==(Object other) =>
-      other is UpdateMicrofrontendsResponseRollingReleaseGateEnabled &&
-      other.value == value;
+  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseRollingReleaseGateEnabled && other.value == value;
 
-  @override
-  int get hashCode => value.hashCode;
+  @override int get hashCode => value.hashCode;
+
 }
