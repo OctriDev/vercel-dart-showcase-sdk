@@ -4,63 +4,6 @@
 part of 'inline.dart';
 
 // Inline operation models (part 504)
-final class CreateProjectResponseConnectConfigurationsItemPassive {
-  final bool value;
-
-  const CreateProjectResponseConnectConfigurationsItemPassive._(this.value);
-
-  factory CreateProjectResponseConnectConfigurationsItemPassive.fromJson(
-          bool value) =>
-      CreateProjectResponseConnectConfigurationsItemPassive._(value);
-
-  static const false_ =
-      CreateProjectResponseConnectConfigurationsItemPassive._(false);
-  static const true_ =
-      CreateProjectResponseConnectConfigurationsItemPassive._(true);
-
-  bool toJson() => value;
-
-  @override
-  String toString() => value.toString();
-
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseConnectConfigurationsItemPassive &&
-      other.value == value;
-
-  @override
-  int get hashCode => value.hashCode;
-}
-
-/// Whether the host was inferred from the production deployment URL rather than explicitly provided.
-final class CreateProjectResponseCronsDefinitionsItemHostInferred {
-  final bool value;
-
-  const CreateProjectResponseCronsDefinitionsItemHostInferred._(this.value);
-
-  factory CreateProjectResponseCronsDefinitionsItemHostInferred.fromJson(
-          bool value) =>
-      CreateProjectResponseCronsDefinitionsItemHostInferred._(value);
-
-  static const false_ =
-      CreateProjectResponseCronsDefinitionsItemHostInferred._(false);
-  static const true_ =
-      CreateProjectResponseCronsDefinitionsItemHostInferred._(true);
-
-  bool toJson() => value;
-
-  @override
-  String toString() => value.toString();
-
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseCronsDefinitionsItemHostInferred &&
-      other.value == value;
-
-  @override
-  int get hashCode => value.hashCode;
-}
-
 /// The origin of this definition. 'api' means created via the API. Undefined means it originated from a deployment (vercel.json).
 final class CreateProjectResponseCronsDefinitionsItemSource {
   final String value;
@@ -414,6 +357,39 @@ final class CreateProjectResponseDefaultResourceConfigBuildMachineSelection {
   bool operator ==(Object other) =>
       other
           is CreateProjectResponseDefaultResourceConfigBuildMachineSelection &&
+      other.value == value;
+
+  @override
+  int get hashCode => value.hashCode;
+}
+
+final class CreateProjectResponseDefaultResourceConfigBuildMachineType {
+  final String value;
+
+  const CreateProjectResponseDefaultResourceConfigBuildMachineType._(
+      this.value);
+
+  factory CreateProjectResponseDefaultResourceConfigBuildMachineType.fromJson(
+          String value) =>
+      CreateProjectResponseDefaultResourceConfigBuildMachineType._(value);
+
+  static const basic =
+      CreateProjectResponseDefaultResourceConfigBuildMachineType._('basic');
+  static const enhanced =
+      CreateProjectResponseDefaultResourceConfigBuildMachineType._('enhanced');
+  static const standard =
+      CreateProjectResponseDefaultResourceConfigBuildMachineType._('standard');
+  static const turbo =
+      CreateProjectResponseDefaultResourceConfigBuildMachineType._('turbo');
+
+  String toJson() => value;
+
+  @override
+  String toString() => value.toString();
+
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectResponseDefaultResourceConfigBuildMachineType &&
       other.value == value;
 
   @override

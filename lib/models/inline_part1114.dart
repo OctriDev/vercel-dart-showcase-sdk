@@ -14,7 +14,7 @@ class UpdateFirewallConfigRequestBodyVariant10Value {
       conditionGroup;
   final UpdateFirewallConfigRequestBodyVariant10ValueAction action;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const UpdateFirewallConfigRequestBodyVariant10Value(
       {required this.name,
@@ -33,7 +33,7 @@ class UpdateFirewallConfigRequestBodyVariant10Value {
           conditionGroup,
       UpdateFirewallConfigRequestBodyVariant10ValueAction action,
       SdkOptional<bool> valid,
-      SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+      SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant10Value _copyWith(
           {Object? name = sdkOmittedValue,
@@ -62,7 +62,7 @@ class UpdateFirewallConfigRequestBodyVariant10Value {
             : valid as SdkOptional<bool>,
         validationErrors: identical(validationErrors, sdkOmittedValue)
             ? this.validationErrors
-            : validationErrors as SdkOptional<dynamic>,
+            : validationErrors as SdkOptional<List<String>>,
       );
 
   factory UpdateFirewallConfigRequestBodyVariant10Value.fromJson(
@@ -86,7 +86,9 @@ class UpdateFirewallConfigRequestBodyVariant10Value {
             ? SdkPresent((json['valid'] as bool?)!)
             : const SdkOmitted(),
         validationErrors: json['validationErrors'] != null
-            ? SdkPresent((json['validationErrors'])!)
+            ? SdkPresent(((json['validationErrors'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -108,7 +110,7 @@ class UpdateFirewallConfigRequestBodyVariant10Value {
           _ => const <String, dynamic>{},
         },
         ...switch (validationErrors) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'validationErrors': value,
             },
           _ => const <String, dynamic>{},
@@ -444,7 +446,7 @@ class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate {
   final SdkOptional<dynamic> redirect;
   final SdkOptional<String?> actionDuration;
   final SdkOptional<bool?> bypassSystem;
-  final SdkOptional<dynamic> logHeaders;
+  final SdkOptional<List<String>> logHeaders;
 
   const UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate(
       {required this.action,
@@ -460,7 +462,7 @@ class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate {
       SdkOptional<dynamic> redirect,
       SdkOptional<String?> actionDuration,
       SdkOptional<bool?> bypassSystem,
-      SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
+      SdkOptional<List<String>> logHeaders}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate _copyWith(
           {Object? action = sdkOmittedValue,
@@ -488,7 +490,7 @@ class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate {
             : bypassSystem as SdkOptional<bool?>,
         logHeaders: identical(logHeaders, sdkOmittedValue)
             ? this.logHeaders
-            : logHeaders as SdkOptional<dynamic>,
+            : logHeaders as SdkOptional<List<String>>,
       );
 
   factory UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate.fromJson(
@@ -511,7 +513,9 @@ class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate {
             ? SdkPresent(json['bypassSystem'] as bool?)
             : const SdkOmitted(),
         logHeaders: json['logHeaders'] != null
-            ? SdkPresent((json['logHeaders'])!)
+            ? SdkPresent(((json['logHeaders'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -542,7 +546,7 @@ class UpdateFirewallConfigRequestBodyVariant11ValueActionMitigate {
           _ => const <String, dynamic>{},
         },
         ...switch (logHeaders) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'logHeaders': value,
             },
           _ => const <String, dynamic>{},

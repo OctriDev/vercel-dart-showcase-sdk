@@ -4,36 +4,6 @@
 part of 'inline.dart';
 
 // Inline operation models (part 506)
-final class CreateProjectResponseDismissedToastsItemAction {
-  final String value;
-
-  const CreateProjectResponseDismissedToastsItemAction._(this.value);
-
-  factory CreateProjectResponseDismissedToastsItemAction.fromJson(
-          String value) =>
-      CreateProjectResponseDismissedToastsItemAction._(value);
-
-  static const accept =
-      CreateProjectResponseDismissedToastsItemAction._('accept');
-  static const cancel =
-      CreateProjectResponseDismissedToastsItemAction._('cancel');
-  static const delete =
-      CreateProjectResponseDismissedToastsItemAction._('delete');
-
-  String toJson() => value;
-
-  @override
-  String toString() => value.toString();
-
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectResponseDismissedToastsItemAction &&
-      other.value == value;
-
-  @override
-  int get hashCode => value.hashCode;
-}
-
 final class CreateProjectResponseEnableAffectedProjectsDeployments {
   final bool value;
 

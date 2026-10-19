@@ -16,7 +16,7 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
   final SdkOptional<PutFirewallConfigRequestBodyRulesetsVariant0ItemAction>
       action;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const PutFirewallConfigRequestBodyRulesetsVariant0Item(
       {this.id = const SdkOmitted(),
@@ -38,7 +38,7 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
       SdkOptional<PutFirewallConfigRequestBodyRulesetsVariant0ItemAction>
           action,
       SdkOptional<bool> valid,
-      SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+      SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   PutFirewallConfigRequestBodyRulesetsVariant0Item _copyWith(
           {Object? id = sdkOmittedValue,
@@ -72,7 +72,7 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
             : valid as SdkOptional<bool>,
         validationErrors: identical(validationErrors, sdkOmittedValue)
             ? this.validationErrors
-            : validationErrors as SdkOptional<dynamic>,
+            : validationErrors as SdkOptional<List<String>>,
       );
 
   factory PutFirewallConfigRequestBodyRulesetsVariant0Item.fromJson(
@@ -101,7 +101,9 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
             ? SdkPresent((json['valid'] as bool?)!)
             : const SdkOmitted(),
         validationErrors: json['validationErrors'] != null
-            ? SdkPresent((json['validationErrors'])!)
+            ? SdkPresent(((json['validationErrors'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -137,7 +139,7 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
           _ => const <String, dynamic>{},
         },
         ...switch (validationErrors) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'validationErrors': value,
             },
           _ => const <String, dynamic>{},
@@ -273,7 +275,7 @@ class PutFirewallConfigRequestBody {
   final SdkOptional<dynamic> rulesets;
   final SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips;
   final SdkOptional<bool> botIdEnabled;
-  final SdkOptional<dynamic> logHeaders;
+  final SdkOptional<List<String>> logHeaders;
 
   const PutFirewallConfigRequestBody(
       {required this.firewallEnabled,
@@ -293,7 +295,7 @@ class PutFirewallConfigRequestBody {
       SdkOptional<dynamic> rulesets,
       SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips,
       SdkOptional<bool> botIdEnabled,
-      SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
+      SdkOptional<List<String>> logHeaders}) get copyWith => _copyWith;
 
   PutFirewallConfigRequestBody _copyWith(
           {Object? firewallEnabled = sdkOmittedValue,
@@ -328,7 +330,7 @@ class PutFirewallConfigRequestBody {
             : botIdEnabled as SdkOptional<bool>,
         logHeaders: identical(logHeaders, sdkOmittedValue)
             ? this.logHeaders
-            : logHeaders as SdkOptional<dynamic>,
+            : logHeaders as SdkOptional<List<String>>,
       );
 
   factory PutFirewallConfigRequestBody.fromJson(Map<String, dynamic> json) =>
@@ -364,7 +366,9 @@ class PutFirewallConfigRequestBody {
             ? SdkPresent((json['botIdEnabled'] as bool?)!)
             : const SdkOmitted(),
         logHeaders: json['logHeaders'] != null
-            ? SdkPresent((json['logHeaders'])!)
+            ? SdkPresent(((json['logHeaders'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -413,7 +417,7 @@ class PutFirewallConfigRequestBody {
           _ => const <String, dynamic>{},
         },
         ...switch (logHeaders) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'logHeaders': value,
             },
           _ => const <String, dynamic>{},

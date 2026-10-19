@@ -4,39 +4,6 @@
 part of 'inline.dart';
 
 // Inline operation models (part 501)
-/// Type of the ENV variable
-final class CreateProjectRequestBodyEnvironmentVariablesItemType {
-  final String value;
-
-  const CreateProjectRequestBodyEnvironmentVariablesItemType._(this.value);
-
-  factory CreateProjectRequestBodyEnvironmentVariablesItemType.fromJson(
-          String value) =>
-      CreateProjectRequestBodyEnvironmentVariablesItemType._(value);
-
-  static const system =
-      CreateProjectRequestBodyEnvironmentVariablesItemType._('system');
-  static const encrypted =
-      CreateProjectRequestBodyEnvironmentVariablesItemType._('encrypted');
-  static const plain =
-      CreateProjectRequestBodyEnvironmentVariablesItemType._('plain');
-  static const sensitive =
-      CreateProjectRequestBodyEnvironmentVariablesItemType._('sensitive');
-
-  String toJson() => value;
-
-  @override
-  String toString() => value.toString();
-
-  @override
-  bool operator ==(Object other) =>
-      other is CreateProjectRequestBodyEnvironmentVariablesItemType &&
-      other.value == value;
-
-  @override
-  int get hashCode => value.hashCode;
-}
-
 /// The Git Provider of the repository
 final class CreateProjectRequestBodyGitRepositoryType {
   final String value;
@@ -419,6 +386,40 @@ final class CreateProjectRequestBodySandboxRegion {
   @override
   bool operator ==(Object other) =>
       other is CreateProjectRequestBodySandboxRegion && other.value == value;
+
+  @override
+  int get hashCode => value.hashCode;
+}
+
+final class CreateProjectRequestBodySsoProtectionDeploymentType {
+  final String value;
+
+  const CreateProjectRequestBodySsoProtectionDeploymentType._(this.value);
+
+  factory CreateProjectRequestBodySsoProtectionDeploymentType.fromJson(
+          String value) =>
+      CreateProjectRequestBodySsoProtectionDeploymentType._(value);
+
+  static const all =
+      CreateProjectRequestBodySsoProtectionDeploymentType._('all');
+  static const preview =
+      CreateProjectRequestBodySsoProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      CreateProjectRequestBodySsoProtectionDeploymentType._(
+          'prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains =
+      CreateProjectRequestBodySsoProtectionDeploymentType._(
+          'all_except_custom_domains');
+
+  String toJson() => value;
+
+  @override
+  String toString() => value.toString();
+
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectRequestBodySsoProtectionDeploymentType &&
+      other.value == value;
 
   @override
   int get hashCode => value.hashCode;
