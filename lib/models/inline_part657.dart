@@ -10,47 +10,71 @@ class UpdateSharedEnvVariableResponse {
   final List<UpdateSharedEnvVariableResponseFailedItem> failed;
   final List<UpdateSharedEnvVariableResponseUpdatedItem> updated;
 
-  const UpdateSharedEnvVariableResponse({required this.failed, required this.updated});
+  const UpdateSharedEnvVariableResponse(
+      {required this.failed, required this.updated});
 
-  UpdateSharedEnvVariableResponse Function({List<UpdateSharedEnvVariableResponseFailedItem> failed, List<UpdateSharedEnvVariableResponseUpdatedItem> updated}) get copyWith => _copyWith;
+  UpdateSharedEnvVariableResponse Function(
+          {List<UpdateSharedEnvVariableResponseFailedItem> failed,
+          List<UpdateSharedEnvVariableResponseUpdatedItem> updated})
+      get copyWith => _copyWith;
 
-  UpdateSharedEnvVariableResponse _copyWith({Object? failed = sdkOmittedValue, Object? updated = sdkOmittedValue}) => UpdateSharedEnvVariableResponse(
-    failed: identical(failed, sdkOmittedValue) ? this.failed : failed as List<UpdateSharedEnvVariableResponseFailedItem>,
-    updated: identical(updated, sdkOmittedValue) ? this.updated : updated as List<UpdateSharedEnvVariableResponseUpdatedItem>,
-  );
+  UpdateSharedEnvVariableResponse _copyWith(
+          {Object? failed = sdkOmittedValue,
+          Object? updated = sdkOmittedValue}) =>
+      UpdateSharedEnvVariableResponse(
+        failed: identical(failed, sdkOmittedValue)
+            ? this.failed
+            : failed as List<UpdateSharedEnvVariableResponseFailedItem>,
+        updated: identical(updated, sdkOmittedValue)
+            ? this.updated
+            : updated as List<UpdateSharedEnvVariableResponseUpdatedItem>,
+      );
 
-  factory UpdateSharedEnvVariableResponse.fromJson(Map<String, dynamic> json) => UpdateSharedEnvVariableResponse(
-    failed: ((json['failed'] as List?)?.map((e) => UpdateSharedEnvVariableResponseFailedItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    updated: ((json['updated'] as List?)?.map((e) => UpdateSharedEnvVariableResponseUpdatedItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory UpdateSharedEnvVariableResponse.fromJson(Map<String, dynamic> json) =>
+      UpdateSharedEnvVariableResponse(
+        failed: ((json['failed'] as List?)
+            ?.map((e) => UpdateSharedEnvVariableResponseFailedItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        updated: ((json['updated'] as List?)
+            ?.map((e) => UpdateSharedEnvVariableResponseUpdatedItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'failed': failed.map((item) => item.toJson()).toList(),
-    'updated': updated.map((item) => item.toJson()).toList(),
-  };
+        'failed': failed.map((item) => item.toJson()).toList(),
+        'updated': updated.map((item) => item.toJson()).toList(),
+      };
 }
 
 class DeleteSharedEnvVariableRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// IDs of the Shared Environment Variables to delete
   final List<String> ids;
 
   const DeleteSharedEnvVariableRequestBody({required this.ids});
 
-  DeleteSharedEnvVariableRequestBody Function({List<String> ids}) get copyWith => _copyWith;
+  DeleteSharedEnvVariableRequestBody Function({List<String> ids})
+      get copyWith => _copyWith;
 
-  DeleteSharedEnvVariableRequestBody _copyWith({Object? ids = sdkOmittedValue}) => DeleteSharedEnvVariableRequestBody(
-    ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
-  );
+  DeleteSharedEnvVariableRequestBody _copyWith(
+          {Object? ids = sdkOmittedValue}) =>
+      DeleteSharedEnvVariableRequestBody(
+        ids: identical(ids, sdkOmittedValue) ? this.ids : ids as List<String>,
+      );
 
-  factory DeleteSharedEnvVariableRequestBody.fromJson(Map<String, dynamic> json) => DeleteSharedEnvVariableRequestBody(
-    ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory DeleteSharedEnvVariableRequestBody.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteSharedEnvVariableRequestBody(
+        ids: ((json['ids'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'ids': ids,
-  };
+        'ids': ids,
+      };
 }
 
 class DeleteSharedEnvVariableResponseFailedItemError {
@@ -68,78 +92,170 @@ class DeleteSharedEnvVariableResponseFailedItemError {
   final SdkOptional<dynamic> target;
   final SdkOptional<dynamic> value;
 
-  const DeleteSharedEnvVariableResponseFailedItemError({this.action = const SdkOmitted(), required this.code, this.envVarId = const SdkOmitted(), this.envVarKey = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.key = const SdkOmitted(), this.link = const SdkOmitted(), required this.message, this.project = const SdkOmitted(), this.target = const SdkOmitted(), this.value = const SdkOmitted()});
+  const DeleteSharedEnvVariableResponseFailedItemError(
+      {this.action = const SdkOmitted(),
+      required this.code,
+      this.envVarId = const SdkOmitted(),
+      this.envVarKey = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.link = const SdkOmitted(),
+      required this.message,
+      this.project = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      this.value = const SdkOmitted()});
 
-  DeleteSharedEnvVariableResponseFailedItemError Function({SdkOptional<String> action, String code, SdkOptional<String> envVarId, SdkOptional<String> envVarKey, SdkOptional<String> gitBranch, SdkOptional<String> key, SdkOptional<String> link, String message, SdkOptional<String> project, SdkOptional<dynamic> target, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  DeleteSharedEnvVariableResponseFailedItemError Function(
+      {SdkOptional<String> action,
+      String code,
+      SdkOptional<String> envVarId,
+      SdkOptional<String> envVarKey,
+      SdkOptional<String> gitBranch,
+      SdkOptional<String> key,
+      SdkOptional<String> link,
+      String message,
+      SdkOptional<String> project,
+      SdkOptional<dynamic> target,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  DeleteSharedEnvVariableResponseFailedItemError _copyWith({Object? action = sdkOmittedValue, Object? code = sdkOmittedValue, Object? envVarId = sdkOmittedValue, Object? envVarKey = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? key = sdkOmittedValue, Object? link = sdkOmittedValue, Object? message = sdkOmittedValue, Object? project = sdkOmittedValue, Object? target = sdkOmittedValue, Object? value = sdkOmittedValue}) => DeleteSharedEnvVariableResponseFailedItemError(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<String>,
-    code: identical(code, sdkOmittedValue) ? this.code : code as String,
-    envVarId: identical(envVarId, sdkOmittedValue) ? this.envVarId : envVarId as SdkOptional<String>,
-    envVarKey: identical(envVarKey, sdkOmittedValue) ? this.envVarKey : envVarKey as SdkOptional<String>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    link: identical(link, sdkOmittedValue) ? this.link : link as SdkOptional<String>,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<String>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  DeleteSharedEnvVariableResponseFailedItemError _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? envVarId = sdkOmittedValue,
+          Object? envVarKey = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? link = sdkOmittedValue,
+          Object? message = sdkOmittedValue,
+          Object? project = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      DeleteSharedEnvVariableResponseFailedItemError(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<String>,
+        code: identical(code, sdkOmittedValue) ? this.code : code as String,
+        envVarId: identical(envVarId, sdkOmittedValue)
+            ? this.envVarId
+            : envVarId as SdkOptional<String>,
+        envVarKey: identical(envVarKey, sdkOmittedValue)
+            ? this.envVarKey
+            : envVarKey as SdkOptional<String>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        link: identical(link, sdkOmittedValue)
+            ? this.link
+            : link as SdkOptional<String>,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as SdkOptional<String>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<dynamic>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<dynamic>,
+      );
 
-  factory DeleteSharedEnvVariableResponseFailedItemError.fromJson(Map<String, dynamic> json) => DeleteSharedEnvVariableResponseFailedItemError(
-    action: json['action'] != null ? SdkPresent((json['action'] as String?)!) : const SdkOmitted(),
-    code: (json['code'] as String?)!,
-    envVarId: json['envVarId'] != null ? SdkPresent((json['envVarId'] as String?)!) : const SdkOmitted(),
-    envVarKey: json['envVarKey'] != null ? SdkPresent((json['envVarKey'] as String?)!) : const SdkOmitted(),
-    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    link: json['link'] != null ? SdkPresent((json['link'] as String?)!) : const SdkOmitted(),
-    message: (json['message'] as String?)!,
-    project: json['project'] != null ? SdkPresent((json['project'] as String?)!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  );
+  factory DeleteSharedEnvVariableResponseFailedItemError.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteSharedEnvVariableResponseFailedItemError(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] as String?)!)
+            : const SdkOmitted(),
+        code: (json['code'] as String?)!,
+        envVarId: json['envVarId'] != null
+            ? SdkPresent((json['envVarId'] as String?)!)
+            : const SdkOmitted(),
+        envVarKey: json['envVarKey'] != null
+            ? SdkPresent((json['envVarKey'] as String?)!)
+            : const SdkOmitted(),
+        gitBranch: json['gitBranch'] != null
+            ? SdkPresent((json['gitBranch'] as String?)!)
+            : const SdkOmitted(),
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        link: json['link'] != null
+            ? SdkPresent((json['link'] as String?)!)
+            : const SdkOmitted(),
+        message: (json['message'] as String?)!,
+        project: json['project'] != null
+            ? SdkPresent((json['project'] as String?)!)
+            : const SdkOmitted(),
+        target: json['target'] != null
+            ? SdkPresent((json['target'])!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<String>(value: final value) => {'action': value,},
-      _ => const <String, dynamic>{},
-    },
-    'code': code,
-    ...switch (envVarId) {
-      SdkPresent<String>(value: final value) => {'envVarId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (envVarKey) {
-      SdkPresent<String>(value: final value) => {'envVarKey': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (link) {
-      SdkPresent<String>(value: final value) => {'link': value,},
-      _ => const <String, dynamic>{},
-    },
-    'message': message,
-    ...switch (project) {
-      SdkPresent<String>(value: final value) => {'project': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<dynamic>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<String>(value: final value) => {
+              'action': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'code': code,
+        ...switch (envVarId) {
+          SdkPresent<String>(value: final value) => {
+              'envVarId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (envVarKey) {
+          SdkPresent<String>(value: final value) => {
+              'envVarKey': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (link) {
+          SdkPresent<String>(value: final value) => {
+              'link': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'message': message,
+        ...switch (project) {
+          SdkPresent<String>(value: final value) => {
+              'project': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<dynamic>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class DeleteSharedEnvVariableResponseFailedItem {
@@ -149,19 +265,30 @@ class DeleteSharedEnvVariableResponseFailedItem {
 
   const DeleteSharedEnvVariableResponseFailedItem({required this.error});
 
-  DeleteSharedEnvVariableResponseFailedItem Function({DeleteSharedEnvVariableResponseFailedItemError error}) get copyWith => _copyWith;
+  DeleteSharedEnvVariableResponseFailedItem Function(
+          {DeleteSharedEnvVariableResponseFailedItemError error})
+      get copyWith => _copyWith;
 
-  DeleteSharedEnvVariableResponseFailedItem _copyWith({Object? error = sdkOmittedValue}) => DeleteSharedEnvVariableResponseFailedItem(
-    error: identical(error, sdkOmittedValue) ? this.error : error as DeleteSharedEnvVariableResponseFailedItemError,
-  );
+  DeleteSharedEnvVariableResponseFailedItem _copyWith(
+          {Object? error = sdkOmittedValue}) =>
+      DeleteSharedEnvVariableResponseFailedItem(
+        error: identical(error, sdkOmittedValue)
+            ? this.error
+            : error as DeleteSharedEnvVariableResponseFailedItemError,
+      );
 
-  factory DeleteSharedEnvVariableResponseFailedItem.fromJson(Map<String, dynamic> json) => DeleteSharedEnvVariableResponseFailedItem(
-    error: (json['error'] != null ? DeleteSharedEnvVariableResponseFailedItemError.fromJson(json['error'] as Map<String, dynamic>) : null)!,
-  );
+  factory DeleteSharedEnvVariableResponseFailedItem.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteSharedEnvVariableResponseFailedItem(
+        error: (json['error'] != null
+            ? DeleteSharedEnvVariableResponseFailedItemError.fromJson(
+                json['error'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'error': error.toJson(),
-  };
+        'error': error.toJson(),
+      };
 }
 
 class DeleteSharedEnvVariableResponse {
@@ -170,22 +297,38 @@ class DeleteSharedEnvVariableResponse {
   final List<String> deleted;
   final List<DeleteSharedEnvVariableResponseFailedItem> failed;
 
-  const DeleteSharedEnvVariableResponse({required this.deleted, required this.failed});
+  const DeleteSharedEnvVariableResponse(
+      {required this.deleted, required this.failed});
 
-  DeleteSharedEnvVariableResponse Function({List<String> deleted, List<DeleteSharedEnvVariableResponseFailedItem> failed}) get copyWith => _copyWith;
+  DeleteSharedEnvVariableResponse Function(
+          {List<String> deleted,
+          List<DeleteSharedEnvVariableResponseFailedItem> failed})
+      get copyWith => _copyWith;
 
-  DeleteSharedEnvVariableResponse _copyWith({Object? deleted = sdkOmittedValue, Object? failed = sdkOmittedValue}) => DeleteSharedEnvVariableResponse(
-    deleted: identical(deleted, sdkOmittedValue) ? this.deleted : deleted as List<String>,
-    failed: identical(failed, sdkOmittedValue) ? this.failed : failed as List<DeleteSharedEnvVariableResponseFailedItem>,
-  );
+  DeleteSharedEnvVariableResponse _copyWith(
+          {Object? deleted = sdkOmittedValue,
+          Object? failed = sdkOmittedValue}) =>
+      DeleteSharedEnvVariableResponse(
+        deleted: identical(deleted, sdkOmittedValue)
+            ? this.deleted
+            : deleted as List<String>,
+        failed: identical(failed, sdkOmittedValue)
+            ? this.failed
+            : failed as List<DeleteSharedEnvVariableResponseFailedItem>,
+      );
 
-  factory DeleteSharedEnvVariableResponse.fromJson(Map<String, dynamic> json) => DeleteSharedEnvVariableResponse(
-    deleted: ((json['deleted'] as List?)?.map((e) => e as String).toList())!,
-    failed: ((json['failed'] as List?)?.map((e) => DeleteSharedEnvVariableResponseFailedItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory DeleteSharedEnvVariableResponse.fromJson(Map<String, dynamic> json) =>
+      DeleteSharedEnvVariableResponse(
+        deleted:
+            ((json['deleted'] as List?)?.map((e) => e as String).toList())!,
+        failed: ((json['failed'] as List?)
+            ?.map((e) => DeleteSharedEnvVariableResponseFailedItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deleted': deleted,
-    'failed': failed.map((item) => item.toJson()).toList(),
-  };
+        'deleted': deleted,
+        'failed': failed.map((item) => item.toJson()).toList(),
+      };
 }

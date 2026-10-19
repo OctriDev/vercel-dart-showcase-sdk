@@ -7,6 +7,7 @@ part of 'domains_registrar.dart';
 class SearchDomainsResponseResultsItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A valid domain name
   final String domain;
   final SearchDomainsResponseResultsItemVariant1Available available;
@@ -15,36 +16,67 @@ class SearchDomainsResponseResultsItemVariant1 {
   final double renewalPrice;
   final bool premium;
 
-  const SearchDomainsResponseResultsItemVariant1({required this.domain, required this.available, required this.years, required this.price, required this.renewalPrice, required this.premium});
+  const SearchDomainsResponseResultsItemVariant1(
+      {required this.domain,
+      required this.available,
+      required this.years,
+      required this.price,
+      required this.renewalPrice,
+      required this.premium});
 
-  SearchDomainsResponseResultsItemVariant1 Function({String domain, SearchDomainsResponseResultsItemVariant1Available available, double years, double price, double renewalPrice, bool premium}) get copyWith => _copyWith;
+  SearchDomainsResponseResultsItemVariant1 Function(
+      {String domain,
+      SearchDomainsResponseResultsItemVariant1Available available,
+      double years,
+      double price,
+      double renewalPrice,
+      bool premium}) get copyWith => _copyWith;
 
-  SearchDomainsResponseResultsItemVariant1 _copyWith({Object? domain = sdkOmittedValue, Object? available = sdkOmittedValue, Object? years = sdkOmittedValue, Object? price = sdkOmittedValue, Object? renewalPrice = sdkOmittedValue, Object? premium = sdkOmittedValue}) => SearchDomainsResponseResultsItemVariant1(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    available: identical(available, sdkOmittedValue) ? this.available : available as SearchDomainsResponseResultsItemVariant1Available,
-    years: identical(years, sdkOmittedValue) ? this.years : years as double,
-    price: identical(price, sdkOmittedValue) ? this.price : price as double,
-    renewalPrice: identical(renewalPrice, sdkOmittedValue) ? this.renewalPrice : renewalPrice as double,
-    premium: identical(premium, sdkOmittedValue) ? this.premium : premium as bool,
-  );
+  SearchDomainsResponseResultsItemVariant1 _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? available = sdkOmittedValue,
+          Object? years = sdkOmittedValue,
+          Object? price = sdkOmittedValue,
+          Object? renewalPrice = sdkOmittedValue,
+          Object? premium = sdkOmittedValue}) =>
+      SearchDomainsResponseResultsItemVariant1(
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        available: identical(available, sdkOmittedValue)
+            ? this.available
+            : available as SearchDomainsResponseResultsItemVariant1Available,
+        years: identical(years, sdkOmittedValue) ? this.years : years as double,
+        price: identical(price, sdkOmittedValue) ? this.price : price as double,
+        renewalPrice: identical(renewalPrice, sdkOmittedValue)
+            ? this.renewalPrice
+            : renewalPrice as double,
+        premium: identical(premium, sdkOmittedValue)
+            ? this.premium
+            : premium as bool,
+      );
 
-  factory SearchDomainsResponseResultsItemVariant1.fromJson(Map<String, dynamic> json) => SearchDomainsResponseResultsItemVariant1(
-    domain: (json['domain'] as String?)!,
-    available: (json['available'] != null ? SearchDomainsResponseResultsItemVariant1Available.fromJson(json['available'] as bool) : null)!,
-    years: ((json['years'] as num?)?.toDouble())!,
-    price: ((json['price'] as num?)?.toDouble())!,
-    renewalPrice: ((json['renewalPrice'] as num?)?.toDouble())!,
-    premium: (json['premium'] as bool?)!,
-  );
+  factory SearchDomainsResponseResultsItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      SearchDomainsResponseResultsItemVariant1(
+        domain: (json['domain'] as String?)!,
+        available: (json['available'] != null
+            ? SearchDomainsResponseResultsItemVariant1Available.fromJson(
+                json['available'] as bool)
+            : null)!,
+        years: ((json['years'] as num?)?.toDouble())!,
+        price: ((json['price'] as num?)?.toDouble())!,
+        renewalPrice: ((json['renewalPrice'] as num?)?.toDouble())!,
+        premium: (json['premium'] as bool?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'domain': domain,
-    'available': available.toJson(),
-    'years': years,
-    'price': price,
-    'renewalPrice': renewalPrice,
-    'premium': premium,
-  };
+        'domain': domain,
+        'available': available.toJson(),
+        'years': years,
+        'price': price,
+        'renewalPrice': renewalPrice,
+        'premium': premium,
+      };
 }
 
 sealed class SearchDomainsResponseResultsItem {
@@ -53,66 +85,126 @@ sealed class SearchDomainsResponseResultsItem {
   const SearchDomainsResponseResultsItem();
   factory SearchDomainsResponseResultsItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = SearchDomainsResponseResultsItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(value); } } catch (_) {}
-      try { final value = SearchDomainsResponseResultsItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(value); } } catch (_) {}
+      try {
+        final value = SearchDomainsResponseResultsItemVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = SearchDomainsResponseResultsItemVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(SearchDomainsResponseResultsItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(SearchDomainsResponseResultsItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for SearchDomainsResponseResultsItem");
+    try {
+      return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(
+          SearchDomainsResponseResultsItemVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(
+          SearchDomainsResponseResultsItemVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for SearchDomainsResponseResultsItem");
   }
   Object? toJson();
 }
 
-final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0 extends SearchDomainsResponseResultsItem {
+final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0
+    extends SearchDomainsResponseResultsItem {
   final SearchDomainsResponseResultsItemVariant0 value;
-  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1 extends SearchDomainsResponseResultsItem {
+final class SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1
+    extends SearchDomainsResponseResultsItem {
   final SearchDomainsResponseResultsItemVariant1 value;
-  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const SearchDomainsResponseResultsItemSearchDomainsResponseResultsItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// Typed representation of the `Unauthorized` API schema.
 class Unauthorized {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final UnauthorizedStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final UnauthorizedCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
+
   /// Optional `string` value serialized in the `reason` wire field.
   final SdkOptional<String> reason;
 
-  const Unauthorized({required this.status, required this.code, required this.message, this.reason = const SdkOmitted()});
+  const Unauthorized(
+      {required this.status,
+      required this.code,
+      required this.message,
+      this.reason = const SdkOmitted()});
 
-  Unauthorized Function({UnauthorizedStatus status, UnauthorizedCode code, String message, SdkOptional<String> reason}) get copyWith => _copyWith;
+  Unauthorized Function(
+      {UnauthorizedStatus status,
+      UnauthorizedCode code,
+      String message,
+      SdkOptional<String> reason}) get copyWith => _copyWith;
 
-  Unauthorized _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue, Object? reason = sdkOmittedValue}) => Unauthorized(
-    status: identical(status, sdkOmittedValue) ? this.status : status as UnauthorizedStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as UnauthorizedCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as SdkOptional<String>,
-  );
+  Unauthorized _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue,
+          Object? reason = sdkOmittedValue}) =>
+      Unauthorized(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as UnauthorizedStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as UnauthorizedCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+        reason: identical(reason, sdkOmittedValue)
+            ? this.reason
+            : reason as SdkOptional<String>,
+      );
 
   factory Unauthorized.fromJson(Map<String, dynamic> json) => Unauthorized(
-    status: (json['status'] != null ? UnauthorizedStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? UnauthorizedCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-    reason: json['reason'] != null ? SdkPresent((json['reason'] as String?)!) : const SdkOmitted(),
-  );
+        status: (json['status'] != null
+            ? UnauthorizedStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? UnauthorizedCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+        reason: json['reason'] != null
+            ? SdkPresent((json['reason'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-    ...switch (reason) {
-      SdkPresent<String>(value: final value) => {'reason': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+        ...switch (reason) {
+          SdkPresent<String>(value: final value) => {
+              'reason': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

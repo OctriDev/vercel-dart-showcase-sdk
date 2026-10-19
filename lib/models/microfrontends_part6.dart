@@ -7,80 +7,134 @@ part of 'microfrontends.dart';
 class GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Unix ms timestamp when the project is scheduled to expire.
   final double expiresAt;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0({required this.expiresAt});
+  const GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
+      {required this.expiresAt});
 
-  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0 Function({double expiresAt}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0 Function(
+      {double expiresAt}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0 _copyWith({Object? expiresAt = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as double,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0 _copyWith(
+          {Object? expiresAt = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as double,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
-    expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
+        expiresAt: ((json['expiresAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'expiresAt': expiresAt,
-  };
+        'expiresAt': expiresAt,
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Unix ms timestamp when the project was locked.
   final double lockedAt;
+
   /// userId of the actor that triggered the lock (system or admin).
   final String lockedBy;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1({required this.lockedAt, required this.lockedBy});
+  const GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
+      {required this.lockedAt, required this.lockedBy});
 
-  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1 Function({double lockedAt, String lockedBy}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1 Function(
+      {double lockedAt, String lockedBy}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1 _copyWith({Object? lockedAt = sdkOmittedValue, Object? lockedBy = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
-    lockedAt: identical(lockedAt, sdkOmittedValue) ? this.lockedAt : lockedAt as double,
-    lockedBy: identical(lockedBy, sdkOmittedValue) ? this.lockedBy : lockedBy as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1 _copyWith(
+          {Object? lockedAt = sdkOmittedValue,
+          Object? lockedBy = sdkOmittedValue}) =>
+      GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
+        lockedAt: identical(lockedAt, sdkOmittedValue)
+            ? this.lockedAt
+            : lockedAt as double,
+        lockedBy: identical(lockedBy, sdkOmittedValue)
+            ? this.lockedBy
+            : lockedBy as String,
+      );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
-    lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
-    lockedBy: (json['lockedBy'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
+        lockedAt: ((json['lockedAt'] as num?)?.toDouble())!,
+        lockedBy: (json['lockedBy'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'lockedAt': lockedAt,
-    'lockedBy': lockedBy,
-  };
+        'lockedAt': lockedAt,
+        'lockedBy': lockedBy,
+      };
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemExpiration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemExpiration();
-  factory GetMicrofrontendsInGroupResponseProjectsItemExpiration.fromJson(Object? json) {
+  factory GetMicrofrontendsInGroupResponseProjectsItemExpiration.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemExpiration");
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
+          GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
+          GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemExpiration");
   }
   Object? toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0 extends GetMicrofrontendsInGroupResponseProjectsItemExpiration {
+final class GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0
+    extends GetMicrofrontendsInGroupResponseProjectsItemExpiration {
   final GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1 extends GetMicrofrontendsInGroupResponseProjectsItemExpiration {
+final class GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1
+    extends GetMicrofrontendsInGroupResponseProjectsItemExpiration {
   final GetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1 value;
-  const GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetMicrofrontendsInGroupResponseProjectsItemExpirationGetMicrofrontendsInGroupResponseProjectsItemExpirationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0 {
@@ -90,52 +144,86 @@ class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0 {
   final String src;
   final double status;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0({this.expiry = const SdkOmitted(), required this.src, required this.status});
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(
+      {this.expiry = const SdkOmitted(),
+      required this.src,
+      required this.status});
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0 Function({SdkOptional<double> expiry, String src, double status}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0
+          Function({SdkOptional<double> expiry, String src, double status})
+      get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0 _copyWith({Object? expiry = sdkOmittedValue, Object? src = sdkOmittedValue, Object? status = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(
-    expiry: identical(expiry, sdkOmittedValue) ? this.expiry : expiry as SdkOptional<double>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as double,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0
+      _copyWith(
+              {Object? expiry = sdkOmittedValue,
+              Object? src = sdkOmittedValue,
+              Object? status = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(
+            expiry: identical(expiry, sdkOmittedValue)
+                ? this.expiry
+                : expiry as SdkOptional<double>,
+            src: identical(src, sdkOmittedValue) ? this.src : src as String,
+            status: identical(status, sdkOmittedValue)
+                ? this.status
+                : status as double,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(
-    expiry: json['expiry'] != null ? SdkPresent(((json['expiry'] as num?)?.toDouble())!) : const SdkOmitted(),
-    src: (json['src'] as String?)!,
-    status: ((json['status'] as num?)?.toDouble())!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(
+        expiry: json['expiry'] != null
+            ? SdkPresent(((json['expiry'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        src: (json['src'] as String?)!,
+        status: ((json['status'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (expiry) {
-      SdkPresent<double>(value: final value) => {'expiry': value,},
-      _ => const <String, dynamic>{},
-    },
-    'src': src,
-    'status': status,
-  };
+        ...switch (expiry) {
+          SdkPresent<double>(value: final value) => {
+              'expiry': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'src': src,
+        'status': status,
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction action;
+  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction
+      action;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate({required this.action});
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate(
+      {required this.action});
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate Function({GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction action}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction
+          action}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate _copyWith({Object? action = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate(
-    action: identical(action, sdkOmittedValue) ? this.action : action as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate
+      _copyWith({Object? action = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate(
+            action: identical(action, sdkOmittedValue)
+                ? this.action
+                : action
+                    as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate(
-    action: (json['action'] != null ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate(
+        action: (json['action'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1MitigateAction
+                .fromJson(json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-  };
+        'action': action.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value {
@@ -143,51 +231,92 @@ class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasI
   static const String constructionSurface = 'named';
   final String eq;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value({required this.eq});
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
+      {required this.eq});
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value Function({String eq}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
+      Function({String eq}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value _copyWith({Object? eq = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
+      _copyWith({Object? eq = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
+            eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
-    eq: (json['eq'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value(
+        eq: (json['eq'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'eq': eq,
-  };
+        'eq': eq,
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key key;
-  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type type_;
-  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value value;
+  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
+      key;
+  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
+      type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
+      value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0({required this.key, required this.type_, required this.value});
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0(
+      {required this.key, required this.type_, required this.value});
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0 Function({GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key key, GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type type_, GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value value}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
+          key,
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
+          type_,
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
+          value}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0(
-    key: identical(key, sdkOmittedValue) ? this.key : key as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0(
+            key: identical(key, sdkOmittedValue)
+                ? this.key
+                : key
+                    as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value
+                    as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0(
-    key: (json['key'] != null ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key.fromJson(json['key'] as String) : null)!,
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0(
+        key: (json['key'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Key
+                .fromJson(json['key'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant0Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key.toJson(),
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'key': key.toJson(),
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value {
@@ -195,94 +324,180 @@ class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasI
   static const String constructionSurface = 'named';
   final String eq;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value({required this.eq});
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
+      {required this.eq});
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value Function({String eq}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
+      Function({String eq}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value _copyWith({Object? eq = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
+      _copyWith({Object? eq = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
+            eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: (json['eq'] as String?)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value(
+        eq: (json['eq'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'eq': eq,
-  };
+        'eq': eq,
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type type_;
-  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value value;
+  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
+      type_;
+  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
+      value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1({required this.type_, required this.value});
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1(
+      {required this.type_, required this.value});
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1 Function({GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type type_, GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value value}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1 Function(
+      {GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
+          type_,
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
+          value}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1
+      _copyWith(
+              {Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1(
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value
+                    as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1(
-    type_: (json['type'] != null ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1(
+        type_: (json['type'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1HasItemVariant1Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<dynamic> has;
-  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate mitigate;
+  final GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate
+      mitigate;
   final SdkOptional<String> src;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1({required this.has, required this.mitigate, this.src = const SdkOmitted()});
+  const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(
+      {required this.has,
+      required this.mitigate,
+      this.src = const SdkOmitted()});
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1 Function({List<dynamic> has, GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate mitigate, SdkOptional<String> src}) get copyWith => _copyWith;
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1 Function(
+      {List<dynamic> has,
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate
+          mitigate,
+      SdkOptional<String> src}) get copyWith => _copyWith;
 
-  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1 _copyWith({Object? has = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? src = sdkOmittedValue}) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(
-    has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
-    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-  );
+  GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1
+      _copyWith(
+              {Object? has = sdkOmittedValue,
+              Object? mitigate = sdkOmittedValue,
+              Object? src = sdkOmittedValue}) =>
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(
+            has: identical(has, sdkOmittedValue)
+                ? this.has
+                : has as List<dynamic>,
+            mitigate: identical(mitigate, sdkOmittedValue)
+                ? this.mitigate
+                : mitigate
+                    as GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate,
+            src: identical(src, sdkOmittedValue)
+                ? this.src
+                : src as SdkOptional<String>,
+          );
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1.fromJson(Map<String, dynamic> json) => GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(
-    has: ((json['has'] as List?)?.map((e) => e).toList())!,
-    mitigate: (json['mitigate'] != null ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!,
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(
+        has: ((json['has'] as List?)?.map((e) => e).toList())!,
+        mitigate: (json['mitigate'] != null
+            ? GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1Mitigate
+                .fromJson(json['mitigate'] as Map<String, dynamic>)
+            : null)!,
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'has': has,
-    'mitigate': mitigate.toJson(),
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'has': has,
+        'mitigate': mitigate.toJson(),
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem();
-  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem.fromJson(Object? json) {
+  factory GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(value); } } catch (_) {}
-      try { final value = GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem");
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0(
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemGetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1(
+          GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItemVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetMicrofrontendsInGroupResponseProjectsItemInternalRoutesItem");
   }
   Object? toJson();
 }

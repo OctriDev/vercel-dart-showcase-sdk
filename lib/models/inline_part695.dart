@@ -12,45 +12,105 @@ class GetConfigurationsResponseVariant1ItemIntegration {
   final String icon;
   final GetConfigurationsResponseVariant1ItemIntegrationIsLegacy isLegacy;
   final String name;
-  final SdkOptional<List<GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>> tagIds;
+  final SdkOptional<
+      List<GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>> tagIds;
 
-  const GetConfigurationsResponseVariant1ItemIntegration({this.assignedBetaLabelAt = const SdkOmitted(), this.flags = const SdkOmitted(), required this.icon, required this.isLegacy, required this.name, this.tagIds = const SdkOmitted()});
+  const GetConfigurationsResponseVariant1ItemIntegration(
+      {this.assignedBetaLabelAt = const SdkOmitted(),
+      this.flags = const SdkOmitted(),
+      required this.icon,
+      required this.isLegacy,
+      required this.name,
+      this.tagIds = const SdkOmitted()});
 
-  GetConfigurationsResponseVariant1ItemIntegration Function({SdkOptional<double> assignedBetaLabelAt, SdkOptional<List<String>> flags, String icon, GetConfigurationsResponseVariant1ItemIntegrationIsLegacy isLegacy, String name, SdkOptional<List<GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>> tagIds}) get copyWith => _copyWith;
+  GetConfigurationsResponseVariant1ItemIntegration Function(
+      {SdkOptional<double> assignedBetaLabelAt,
+      SdkOptional<List<String>> flags,
+      String icon,
+      GetConfigurationsResponseVariant1ItemIntegrationIsLegacy isLegacy,
+      String name,
+      SdkOptional<
+              List<GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>>
+          tagIds}) get copyWith => _copyWith;
 
-  GetConfigurationsResponseVariant1ItemIntegration _copyWith({Object? assignedBetaLabelAt = sdkOmittedValue, Object? flags = sdkOmittedValue, Object? icon = sdkOmittedValue, Object? isLegacy = sdkOmittedValue, Object? name = sdkOmittedValue, Object? tagIds = sdkOmittedValue}) => GetConfigurationsResponseVariant1ItemIntegration(
-    assignedBetaLabelAt: identical(assignedBetaLabelAt, sdkOmittedValue) ? this.assignedBetaLabelAt : assignedBetaLabelAt as SdkOptional<double>,
-    flags: identical(flags, sdkOmittedValue) ? this.flags : flags as SdkOptional<List<String>>,
-    icon: identical(icon, sdkOmittedValue) ? this.icon : icon as String,
-    isLegacy: identical(isLegacy, sdkOmittedValue) ? this.isLegacy : isLegacy as GetConfigurationsResponseVariant1ItemIntegrationIsLegacy,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    tagIds: identical(tagIds, sdkOmittedValue) ? this.tagIds : tagIds as SdkOptional<List<GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>>,
-  );
+  GetConfigurationsResponseVariant1ItemIntegration _copyWith(
+          {Object? assignedBetaLabelAt = sdkOmittedValue,
+          Object? flags = sdkOmittedValue,
+          Object? icon = sdkOmittedValue,
+          Object? isLegacy = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? tagIds = sdkOmittedValue}) =>
+      GetConfigurationsResponseVariant1ItemIntegration(
+        assignedBetaLabelAt: identical(assignedBetaLabelAt, sdkOmittedValue)
+            ? this.assignedBetaLabelAt
+            : assignedBetaLabelAt as SdkOptional<double>,
+        flags: identical(flags, sdkOmittedValue)
+            ? this.flags
+            : flags as SdkOptional<List<String>>,
+        icon: identical(icon, sdkOmittedValue) ? this.icon : icon as String,
+        isLegacy: identical(isLegacy, sdkOmittedValue)
+            ? this.isLegacy
+            : isLegacy
+                as GetConfigurationsResponseVariant1ItemIntegrationIsLegacy,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        tagIds: identical(tagIds, sdkOmittedValue)
+            ? this.tagIds
+            : tagIds as SdkOptional<
+                List<
+                    GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>>,
+      );
 
-  factory GetConfigurationsResponseVariant1ItemIntegration.fromJson(Map<String, dynamic> json) => GetConfigurationsResponseVariant1ItemIntegration(
-    assignedBetaLabelAt: json['assignedBetaLabelAt'] != null ? SdkPresent(((json['assignedBetaLabelAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    flags: json['flags'] != null ? SdkPresent(((json['flags'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    icon: (json['icon'] as String?)!,
-    isLegacy: (json['isLegacy'] != null ? GetConfigurationsResponseVariant1ItemIntegrationIsLegacy.fromJson(json['isLegacy'] as bool) : null)!,
-    name: (json['name'] as String?)!,
-    tagIds: json['tagIds'] != null ? SdkPresent(((json['tagIds'] as List?)?.map((e) => GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-  );
+  factory GetConfigurationsResponseVariant1ItemIntegration.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationsResponseVariant1ItemIntegration(
+        assignedBetaLabelAt: json['assignedBetaLabelAt'] != null
+            ? SdkPresent(((json['assignedBetaLabelAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        flags: json['flags'] != null
+            ? SdkPresent(
+                ((json['flags'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        icon: (json['icon'] as String?)!,
+        isLegacy: (json['isLegacy'] != null
+            ? GetConfigurationsResponseVariant1ItemIntegrationIsLegacy.fromJson(
+                json['isLegacy'] as bool)
+            : null)!,
+        name: (json['name'] as String?)!,
+        tagIds: json['tagIds'] != null
+            ? SdkPresent(((json['tagIds'] as List?)
+                ?.map((e) =>
+                    GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem
+                        .fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (assignedBetaLabelAt) {
-      SdkPresent<double>(value: final value) => {'assignedBetaLabelAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (flags) {
-      SdkPresent<List<String>>(value: final value) => {'flags': value,},
-      _ => const <String, dynamic>{},
-    },
-    'icon': icon,
-    'isLegacy': isLegacy.toJson(),
-    'name': name,
-    ...switch (tagIds) {
-      SdkPresent<List<GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>>(value: final value) => {'tagIds': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (assignedBetaLabelAt) {
+          SdkPresent<double>(value: final value) => {
+              'assignedBetaLabelAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (flags) {
+          SdkPresent<List<String>>(value: final value) => {
+              'flags': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'icon': icon,
+        'isLegacy': isLegacy.toJson(),
+        'name': name,
+        ...switch (tagIds) {
+          SdkPresent<
+                List<
+                    GetConfigurationsResponseVariant1ItemIntegrationTagIdsItem>>(
+            value: final value
+          ) =>
+            {
+              'tagIds': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

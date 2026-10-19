@@ -10,243 +10,420 @@ sealed class TeamSamlRolesValue {
   const TeamSamlRolesValue();
   factory TeamSamlRolesValue.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = TeamSamlRolesValueVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return TeamSamlRolesValueTeamSamlRolesValueVariant0(value); } } catch (_) {}
-      try { final value = TeamSamlRolesValueVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return TeamSamlRolesValueTeamSamlRolesValueVariant1(value); } } catch (_) {}
+      try {
+        final value = TeamSamlRolesValueVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return TeamSamlRolesValueTeamSamlRolesValueVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = TeamSamlRolesValueVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return TeamSamlRolesValueTeamSamlRolesValueVariant1(value);
+        }
+      } catch (_) {}
     }
-    try { return TeamSamlRolesValueTeamSamlRolesValueVariant0(TeamSamlRolesValueVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return TeamSamlRolesValueTeamSamlRolesValueVariant1(TeamSamlRolesValueVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return TeamSamlRolesValueTeamSamlRolesValueVariant2(TeamSamlRolesValueVariant2.fromJson(json as String)); } catch (_) {}
+    try {
+      return TeamSamlRolesValueTeamSamlRolesValueVariant0(
+          TeamSamlRolesValueVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return TeamSamlRolesValueTeamSamlRolesValueVariant1(
+          TeamSamlRolesValueVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return TeamSamlRolesValueTeamSamlRolesValueVariant2(
+          TeamSamlRolesValueVariant2.fromJson(json as String));
+    } catch (_) {}
     throw FormatException("No variant matched for TeamSamlRolesValue");
   }
   Object? toJson();
 }
 
-final class TeamSamlRolesValueTeamSamlRolesValueVariant0 extends TeamSamlRolesValue {
+final class TeamSamlRolesValueTeamSamlRolesValueVariant0
+    extends TeamSamlRolesValue {
   final TeamSamlRolesValueVariant0 value;
   const TeamSamlRolesValueTeamSamlRolesValueVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class TeamSamlRolesValueTeamSamlRolesValueVariant1 extends TeamSamlRolesValue {
+final class TeamSamlRolesValueTeamSamlRolesValueVariant1
+    extends TeamSamlRolesValue {
   final TeamSamlRolesValueVariant1 value;
   const TeamSamlRolesValueTeamSamlRolesValueVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class TeamSamlRolesValueTeamSamlRolesValueVariant2 extends TeamSamlRolesValue {
+final class TeamSamlRolesValueTeamSamlRolesValueVariant2
+    extends TeamSamlRolesValue {
   final TeamSamlRolesValueVariant2 value;
   const TeamSamlRolesValueTeamSamlRolesValueVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
 /// When "Single Sign-On (SAML)" is configured, this object contains information regarding the configuration of the Identity Provider (IdP).
 class TeamSaml {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Information for the SAML Single Sign-On configuration.
   final SdkOptional<TeamSamlConnection> connection;
+
   /// The default redirect URI to use after successful SAML authentication.
   final SdkOptional<TeamSamlDefaultRedirectUri> defaultRedirectUri;
+
   /// Information for the Directory Sync configuration.
   final SdkOptional<TeamSamlDirectory> directory;
+
   /// When `true`, interactions with the Team **must** be done with an authentication token that has been authenticated with the Team's SAML Single Sign-On provider.
   final TeamSamlEnforced enforced;
+
   /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team roles and permissions, or an access group. Bare team roles are deprecated in favor of DirectorySyncRolesMapping.
   final SdkOptional<Map<String, dynamic>> roles;
 
-  const TeamSaml({this.connection = const SdkOmitted(), this.defaultRedirectUri = const SdkOmitted(), this.directory = const SdkOmitted(), required this.enforced, this.roles = const SdkOmitted()});
+  const TeamSaml(
+      {this.connection = const SdkOmitted(),
+      this.defaultRedirectUri = const SdkOmitted(),
+      this.directory = const SdkOmitted(),
+      required this.enforced,
+      this.roles = const SdkOmitted()});
 
-  TeamSaml Function({SdkOptional<TeamSamlConnection> connection, SdkOptional<TeamSamlDefaultRedirectUri> defaultRedirectUri, SdkOptional<TeamSamlDirectory> directory, TeamSamlEnforced enforced, SdkOptional<Map<String, dynamic>> roles}) get copyWith => _copyWith;
+  TeamSaml Function(
+      {SdkOptional<TeamSamlConnection> connection,
+      SdkOptional<TeamSamlDefaultRedirectUri> defaultRedirectUri,
+      SdkOptional<TeamSamlDirectory> directory,
+      TeamSamlEnforced enforced,
+      SdkOptional<Map<String, dynamic>> roles}) get copyWith => _copyWith;
 
-  TeamSaml _copyWith({Object? connection = sdkOmittedValue, Object? defaultRedirectUri = sdkOmittedValue, Object? directory = sdkOmittedValue, Object? enforced = sdkOmittedValue, Object? roles = sdkOmittedValue}) => TeamSaml(
-    connection: identical(connection, sdkOmittedValue) ? this.connection : connection as SdkOptional<TeamSamlConnection>,
-    defaultRedirectUri: identical(defaultRedirectUri, sdkOmittedValue) ? this.defaultRedirectUri : defaultRedirectUri as SdkOptional<TeamSamlDefaultRedirectUri>,
-    directory: identical(directory, sdkOmittedValue) ? this.directory : directory as SdkOptional<TeamSamlDirectory>,
-    enforced: identical(enforced, sdkOmittedValue) ? this.enforced : enforced as TeamSamlEnforced,
-    roles: identical(roles, sdkOmittedValue) ? this.roles : roles as SdkOptional<Map<String, dynamic>>,
-  );
+  TeamSaml _copyWith(
+          {Object? connection = sdkOmittedValue,
+          Object? defaultRedirectUri = sdkOmittedValue,
+          Object? directory = sdkOmittedValue,
+          Object? enforced = sdkOmittedValue,
+          Object? roles = sdkOmittedValue}) =>
+      TeamSaml(
+        connection: identical(connection, sdkOmittedValue)
+            ? this.connection
+            : connection as SdkOptional<TeamSamlConnection>,
+        defaultRedirectUri: identical(defaultRedirectUri, sdkOmittedValue)
+            ? this.defaultRedirectUri
+            : defaultRedirectUri as SdkOptional<TeamSamlDefaultRedirectUri>,
+        directory: identical(directory, sdkOmittedValue)
+            ? this.directory
+            : directory as SdkOptional<TeamSamlDirectory>,
+        enforced: identical(enforced, sdkOmittedValue)
+            ? this.enforced
+            : enforced as TeamSamlEnforced,
+        roles: identical(roles, sdkOmittedValue)
+            ? this.roles
+            : roles as SdkOptional<Map<String, dynamic>>,
+      );
 
   factory TeamSaml.fromJson(Map<String, dynamic> json) => TeamSaml(
-    connection: json['connection'] != null ? SdkPresent((json['connection'] != null ? TeamSamlConnection.fromJson(json['connection'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    defaultRedirectUri: json['defaultRedirectUri'] != null ? SdkPresent((json['defaultRedirectUri'] != null ? TeamSamlDefaultRedirectUri.fromJson(json['defaultRedirectUri'] as String) : null)!) : const SdkOmitted(),
-    directory: json['directory'] != null ? SdkPresent((json['directory'] != null ? TeamSamlDirectory.fromJson(json['directory'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    enforced: (json['enforced'] != null ? TeamSamlEnforced.fromJson(json['enforced'] as bool) : null)!,
-    roles: json['roles'] != null ? SdkPresent((json['roles'] == null ? null : json['roles'] as Map<String, dynamic>)!) : const SdkOmitted(),
-  );
+        connection: json['connection'] != null
+            ? SdkPresent((json['connection'] != null
+                ? TeamSamlConnection.fromJson(
+                    json['connection'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        defaultRedirectUri: json['defaultRedirectUri'] != null
+            ? SdkPresent((json['defaultRedirectUri'] != null
+                ? TeamSamlDefaultRedirectUri.fromJson(
+                    json['defaultRedirectUri'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        directory: json['directory'] != null
+            ? SdkPresent((json['directory'] != null
+                ? TeamSamlDirectory.fromJson(
+                    json['directory'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        enforced: (json['enforced'] != null
+            ? TeamSamlEnforced.fromJson(json['enforced'] as bool)
+            : null)!,
+        roles: json['roles'] != null
+            ? SdkPresent((json['roles'] == null
+                ? null
+                : json['roles'] as Map<String, dynamic>)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (connection) {
-      SdkPresent<TeamSamlConnection>(value: final value) => {'connection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultRedirectUri) {
-      SdkPresent<TeamSamlDefaultRedirectUri>(value: final value) => {'defaultRedirectUri': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (directory) {
-      SdkPresent<TeamSamlDirectory>(value: final value) => {'directory': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'enforced': enforced.toJson(),
-    ...switch (roles) {
-      SdkPresent<Map<String, dynamic>>(value: final value) => {'roles': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (connection) {
+          SdkPresent<TeamSamlConnection>(value: final value) => {
+              'connection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultRedirectUri) {
+          SdkPresent<TeamSamlDefaultRedirectUri>(value: final value) => {
+              'defaultRedirectUri': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (directory) {
+          SdkPresent<TeamSamlDirectory>(value: final value) => {
+              'directory': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enforced': enforced.toJson(),
+        ...switch (roles) {
+          SdkPresent<Map<String, dynamic>>(value: final value) => {
+              'roles': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// When enabled, creating and managing connectors requires Owner role or the ConnectorManager permission.
 class TeamStrictConnectors {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final TeamStrictConnectorsEnabled enabled;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
   const TeamStrictConnectors({required this.enabled, required this.updatedAt});
 
-  TeamStrictConnectors Function({TeamStrictConnectorsEnabled enabled, double updatedAt}) get copyWith => _copyWith;
+  TeamStrictConnectors Function(
+      {TeamStrictConnectorsEnabled enabled,
+      double updatedAt}) get copyWith => _copyWith;
 
-  TeamStrictConnectors _copyWith({Object? enabled = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => TeamStrictConnectors(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as TeamStrictConnectorsEnabled,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  TeamStrictConnectors _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      TeamStrictConnectors(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as TeamStrictConnectorsEnabled,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory TeamStrictConnectors.fromJson(Map<String, dynamic> json) => TeamStrictConnectors(
-    enabled: (json['enabled'] != null ? TeamStrictConnectorsEnabled.fromJson(json['enabled'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory TeamStrictConnectors.fromJson(Map<String, dynamic> json) =>
+      TeamStrictConnectors(
+        enabled: (json['enabled'] != null
+            ? TeamStrictConnectorsEnabled.fromJson(json['enabled'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    'updatedAt': updatedAt,
-  };
+        'enabled': enabled.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 /// When enabled, deployment protection settings require stricter permissions (owner-only).
 class TeamStrictDeploymentProtectionSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final TeamStrictDeploymentProtectionSettingsEnabled enabled;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
-  const TeamStrictDeploymentProtectionSettings({required this.enabled, required this.updatedAt});
+  const TeamStrictDeploymentProtectionSettings(
+      {required this.enabled, required this.updatedAt});
 
-  TeamStrictDeploymentProtectionSettings Function({TeamStrictDeploymentProtectionSettingsEnabled enabled, double updatedAt}) get copyWith => _copyWith;
+  TeamStrictDeploymentProtectionSettings Function(
+      {TeamStrictDeploymentProtectionSettingsEnabled enabled,
+      double updatedAt}) get copyWith => _copyWith;
 
-  TeamStrictDeploymentProtectionSettings _copyWith({Object? enabled = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => TeamStrictDeploymentProtectionSettings(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as TeamStrictDeploymentProtectionSettingsEnabled,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  TeamStrictDeploymentProtectionSettings _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      TeamStrictDeploymentProtectionSettings(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as TeamStrictDeploymentProtectionSettingsEnabled,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory TeamStrictDeploymentProtectionSettings.fromJson(Map<String, dynamic> json) => TeamStrictDeploymentProtectionSettings(
-    enabled: (json['enabled'] != null ? TeamStrictDeploymentProtectionSettingsEnabled.fromJson(json['enabled'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory TeamStrictDeploymentProtectionSettings.fromJson(
+          Map<String, dynamic> json) =>
+      TeamStrictDeploymentProtectionSettings(
+        enabled: (json['enabled'] != null
+            ? TeamStrictDeploymentProtectionSettingsEnabled.fromJson(
+                json['enabled'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    'updatedAt': updatedAt,
-  };
+        'enabled': enabled.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 /// When enabled, adding, changing, or removing project password protection requires Owner role.
 class TeamStrictPasswordProtectionSettings {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final TeamStrictPasswordProtectionSettingsEnabled enabled;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
-  const TeamStrictPasswordProtectionSettings({required this.enabled, required this.updatedAt});
+  const TeamStrictPasswordProtectionSettings(
+      {required this.enabled, required this.updatedAt});
 
-  TeamStrictPasswordProtectionSettings Function({TeamStrictPasswordProtectionSettingsEnabled enabled, double updatedAt}) get copyWith => _copyWith;
+  TeamStrictPasswordProtectionSettings Function(
+      {TeamStrictPasswordProtectionSettingsEnabled enabled,
+      double updatedAt}) get copyWith => _copyWith;
 
-  TeamStrictPasswordProtectionSettings _copyWith({Object? enabled = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => TeamStrictPasswordProtectionSettings(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as TeamStrictPasswordProtectionSettingsEnabled,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  TeamStrictPasswordProtectionSettings _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      TeamStrictPasswordProtectionSettings(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as TeamStrictPasswordProtectionSettingsEnabled,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory TeamStrictPasswordProtectionSettings.fromJson(Map<String, dynamic> json) => TeamStrictPasswordProtectionSettings(
-    enabled: (json['enabled'] != null ? TeamStrictPasswordProtectionSettingsEnabled.fromJson(json['enabled'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory TeamStrictPasswordProtectionSettings.fromJson(
+          Map<String, dynamic> json) =>
+      TeamStrictPasswordProtectionSettings(
+        enabled: (json['enabled'] != null
+            ? TeamStrictPasswordProtectionSettingsEnabled.fromJson(
+                json['enabled'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    'updatedAt': updatedAt,
-  };
+        'enabled': enabled.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 /// When enabled, creating shareable links requires Owner role.
 class TeamStrictShareableLinks {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `enabled` wire field.
   final TeamStrictShareableLinksEnabled enabled;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
 
-  const TeamStrictShareableLinks({required this.enabled, required this.updatedAt});
+  const TeamStrictShareableLinks(
+      {required this.enabled, required this.updatedAt});
 
-  TeamStrictShareableLinks Function({TeamStrictShareableLinksEnabled enabled, double updatedAt}) get copyWith => _copyWith;
+  TeamStrictShareableLinks Function(
+      {TeamStrictShareableLinksEnabled enabled,
+      double updatedAt}) get copyWith => _copyWith;
 
-  TeamStrictShareableLinks _copyWith({Object? enabled = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => TeamStrictShareableLinks(
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as TeamStrictShareableLinksEnabled,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  TeamStrictShareableLinks _copyWith(
+          {Object? enabled = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      TeamStrictShareableLinks(
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as TeamStrictShareableLinksEnabled,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory TeamStrictShareableLinks.fromJson(Map<String, dynamic> json) => TeamStrictShareableLinks(
-    enabled: (json['enabled'] != null ? TeamStrictShareableLinksEnabled.fromJson(json['enabled'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory TeamStrictShareableLinks.fromJson(Map<String, dynamic> json) =>
+      TeamStrictShareableLinks(
+        enabled: (json['enabled'] != null
+            ? TeamStrictShareableLinksEnabled.fromJson(json['enabled'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'enabled': enabled.toJson(),
-    'updatedAt': updatedAt,
-  };
+        'enabled': enabled.toJson(),
+        'updatedAt': updatedAt,
+      };
 }
 
 /// Required object value serialized in the `ipBuckets[]` wire field.
 class TeamIpBucketsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `bucket` wire field.
   final String bucket;
+
   /// Optional enumerated value serialized in the `default` wire field.
   final SdkOptional<TeamIpBucketsItemDefault> default_;
+
   /// Optional `number` value serialized in the `supportUntil` wire field.
   final SdkOptional<double> supportUntil;
 
-  const TeamIpBucketsItem({required this.bucket, this.default_ = const SdkOmitted(), this.supportUntil = const SdkOmitted()});
+  const TeamIpBucketsItem(
+      {required this.bucket,
+      this.default_ = const SdkOmitted(),
+      this.supportUntil = const SdkOmitted()});
 
-  TeamIpBucketsItem Function({String bucket, SdkOptional<TeamIpBucketsItemDefault> default_, SdkOptional<double> supportUntil}) get copyWith => _copyWith;
+  TeamIpBucketsItem Function(
+      {String bucket,
+      SdkOptional<TeamIpBucketsItemDefault> default_,
+      SdkOptional<double> supportUntil}) get copyWith => _copyWith;
 
-  TeamIpBucketsItem _copyWith({Object? bucket = sdkOmittedValue, Object? default_ = sdkOmittedValue, Object? supportUntil = sdkOmittedValue}) => TeamIpBucketsItem(
-    bucket: identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
-    default_: identical(default_, sdkOmittedValue) ? this.default_ : default_ as SdkOptional<TeamIpBucketsItemDefault>,
-    supportUntil: identical(supportUntil, sdkOmittedValue) ? this.supportUntil : supportUntil as SdkOptional<double>,
-  );
+  TeamIpBucketsItem _copyWith(
+          {Object? bucket = sdkOmittedValue,
+          Object? default_ = sdkOmittedValue,
+          Object? supportUntil = sdkOmittedValue}) =>
+      TeamIpBucketsItem(
+        bucket:
+            identical(bucket, sdkOmittedValue) ? this.bucket : bucket as String,
+        default_: identical(default_, sdkOmittedValue)
+            ? this.default_
+            : default_ as SdkOptional<TeamIpBucketsItemDefault>,
+        supportUntil: identical(supportUntil, sdkOmittedValue)
+            ? this.supportUntil
+            : supportUntil as SdkOptional<double>,
+      );
 
-  factory TeamIpBucketsItem.fromJson(Map<String, dynamic> json) => TeamIpBucketsItem(
-    bucket: (json['bucket'] as String?)!,
-    default_: json['default'] != null ? SdkPresent((json['default'] != null ? TeamIpBucketsItemDefault.fromJson(json['default'] as bool) : null)!) : const SdkOmitted(),
-    supportUntil: json['supportUntil'] != null ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory TeamIpBucketsItem.fromJson(Map<String, dynamic> json) =>
+      TeamIpBucketsItem(
+        bucket: (json['bucket'] as String?)!,
+        default_: json['default'] != null
+            ? SdkPresent((json['default'] != null
+                ? TeamIpBucketsItemDefault.fromJson(json['default'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        supportUntil: json['supportUntil'] != null
+            ? SdkPresent(((json['supportUntil'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'bucket': bucket,
-    ...switch (default_) {
-      SdkPresent<TeamIpBucketsItemDefault>(value: final value) => {'default': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (supportUntil) {
-      SdkPresent<double>(value: final value) => {'supportUntil': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'bucket': bucket,
+        ...switch (default_) {
+          SdkPresent<TeamIpBucketsItemDefault>(value: final value) => {
+              'default': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (supportUntil) {
+          SdkPresent<double>(value: final value) => {
+              'supportUntil': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

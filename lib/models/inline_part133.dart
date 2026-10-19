@@ -5,122 +5,180 @@ part of 'inline.dart';
 
 // Inline operation models (part 133)
 final class GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider {
-
   final String value;
 
-  const GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(this.value);
+  const GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(
+      this.value);
 
-  factory GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(String value) => GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(value);
+  factory GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(
+          String value) =>
+      GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._(value);
 
-  static const bitbucket = GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('bitbucket');
-  static const github = GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('github');
+  static const bitbucket =
+      GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('bitbucket');
+  static const github =
+      GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('github');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider {
-
   final String value;
 
-  const GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(this.value);
+  const GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(
+      this.value);
 
-  factory GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(String value) => GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(value);
+  factory GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(
+          String value) =>
+      GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          ._(value);
 
-  static const gitlab = GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._('gitlab');
+  static const gitlab =
+      GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          ._('gitlab');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetProjectsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 {
-
   final bool value;
 
-  const GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(this.value);
+  const GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(
+      this.value);
 
-  factory GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(bool value) => GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(value);
+  factory GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(
+          bool value) =>
+      GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(
+          value);
 
-  static const false_ = GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(false);
-  static const true_ = GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(true);
+  static const false_ =
+      GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(
+          false);
+  static const true_ =
+      GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetProjectsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 {
-
   final bool value;
 
-  const GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(this.value);
+  const GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(
+      this.value);
 
-  factory GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(bool value) => GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(value);
+  factory GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(
+          bool value) =>
+      GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(value);
 
-  static const false_ = GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(false);
-  static const true_ = GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(true);
+  static const false_ =
+      GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(false);
+  static const true_ =
+      GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetProjectsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetProjectsResponseDismissedToastsItemValueVariant3 {
-
   final bool value;
 
   const GetProjectsResponseDismissedToastsItemValueVariant3._(this.value);
 
-  factory GetProjectsResponseDismissedToastsItemValueVariant3.fromJson(bool value) => GetProjectsResponseDismissedToastsItemValueVariant3._(value);
+  factory GetProjectsResponseDismissedToastsItemValueVariant3.fromJson(
+          bool value) =>
+      GetProjectsResponseDismissedToastsItemValueVariant3._(value);
 
-  static const false_ = GetProjectsResponseDismissedToastsItemValueVariant3._(false);
-  static const true_ = GetProjectsResponseDismissedToastsItemValueVariant3._(true);
+  static const false_ =
+      GetProjectsResponseDismissedToastsItemValueVariant3._(false);
+  static const true_ =
+      GetProjectsResponseDismissedToastsItemValueVariant3._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetProjectsResponseDismissedToastsItemValueVariant3 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetProjectsResponseDismissedToastsItemValueVariant3 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetProjectsResponseEnvItemContentHintVariant0Type {
   redisUrl;
 
-  static GetProjectsResponseEnvItemContentHintVariant0Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-url': return GetProjectsResponseEnvItemContentHintVariant0Type.redisUrl;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant0Type: $value');
+      case 'redis-url':
+        return GetProjectsResponseEnvItemContentHintVariant0Type.redisUrl;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant0Type.redisUrl: return 'redis-url';
+      case GetProjectsResponseEnvItemContentHintVariant0Type.redisUrl:
+        return 'redis-url';
     }
   }
 
@@ -131,16 +189,22 @@ enum GetProjectsResponseEnvItemContentHintVariant0Type {
 enum GetProjectsResponseEnvItemContentHintVariant1Type {
   redisRestApiUrl;
 
-  static GetProjectsResponseEnvItemContentHintVariant1Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-url': return GetProjectsResponseEnvItemContentHintVariant1Type.redisRestApiUrl;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant1Type: $value');
+      case 'redis-rest-api-url':
+        return GetProjectsResponseEnvItemContentHintVariant1Type
+            .redisRestApiUrl;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant1Type.redisRestApiUrl: return 'redis-rest-api-url';
+      case GetProjectsResponseEnvItemContentHintVariant1Type.redisRestApiUrl:
+        return 'redis-rest-api-url';
     }
   }
 
@@ -151,16 +215,21 @@ enum GetProjectsResponseEnvItemContentHintVariant1Type {
 enum GetProjectsResponseEnvItemContentHintVariant10Type {
   postgresUser;
 
-  static GetProjectsResponseEnvItemContentHintVariant10Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant10Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-user': return GetProjectsResponseEnvItemContentHintVariant10Type.postgresUser;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant10Type: $value');
+      case 'postgres-user':
+        return GetProjectsResponseEnvItemContentHintVariant10Type.postgresUser;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant10Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant10Type.postgresUser: return 'postgres-user';
+      case GetProjectsResponseEnvItemContentHintVariant10Type.postgresUser:
+        return 'postgres-user';
     }
   }
 
@@ -171,16 +240,21 @@ enum GetProjectsResponseEnvItemContentHintVariant10Type {
 enum GetProjectsResponseEnvItemContentHintVariant11Type {
   postgresHost;
 
-  static GetProjectsResponseEnvItemContentHintVariant11Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant11Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-host': return GetProjectsResponseEnvItemContentHintVariant11Type.postgresHost;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant11Type: $value');
+      case 'postgres-host':
+        return GetProjectsResponseEnvItemContentHintVariant11Type.postgresHost;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant11Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant11Type.postgresHost: return 'postgres-host';
+      case GetProjectsResponseEnvItemContentHintVariant11Type.postgresHost:
+        return 'postgres-host';
     }
   }
 
@@ -191,16 +265,22 @@ enum GetProjectsResponseEnvItemContentHintVariant11Type {
 enum GetProjectsResponseEnvItemContentHintVariant12Type {
   postgresPassword;
 
-  static GetProjectsResponseEnvItemContentHintVariant12Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant12Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-password': return GetProjectsResponseEnvItemContentHintVariant12Type.postgresPassword;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant12Type: $value');
+      case 'postgres-password':
+        return GetProjectsResponseEnvItemContentHintVariant12Type
+            .postgresPassword;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant12Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant12Type.postgresPassword: return 'postgres-password';
+      case GetProjectsResponseEnvItemContentHintVariant12Type.postgresPassword:
+        return 'postgres-password';
     }
   }
 
@@ -211,16 +291,22 @@ enum GetProjectsResponseEnvItemContentHintVariant12Type {
 enum GetProjectsResponseEnvItemContentHintVariant13Type {
   postgresDatabase;
 
-  static GetProjectsResponseEnvItemContentHintVariant13Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant13Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-database': return GetProjectsResponseEnvItemContentHintVariant13Type.postgresDatabase;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant13Type: $value');
+      case 'postgres-database':
+        return GetProjectsResponseEnvItemContentHintVariant13Type
+            .postgresDatabase;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant13Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant13Type.postgresDatabase: return 'postgres-database';
+      case GetProjectsResponseEnvItemContentHintVariant13Type.postgresDatabase:
+        return 'postgres-database';
     }
   }
 
@@ -231,16 +317,22 @@ enum GetProjectsResponseEnvItemContentHintVariant13Type {
 enum GetProjectsResponseEnvItemContentHintVariant14Type {
   postgresUrlNoSsl;
 
-  static GetProjectsResponseEnvItemContentHintVariant14Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant14Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url-no-ssl': return GetProjectsResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant14Type: $value');
+      case 'postgres-url-no-ssl':
+        return GetProjectsResponseEnvItemContentHintVariant14Type
+            .postgresUrlNoSsl;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant14Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl: return 'postgres-url-no-ssl';
+      case GetProjectsResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl:
+        return 'postgres-url-no-ssl';
     }
   }
 
@@ -251,16 +343,23 @@ enum GetProjectsResponseEnvItemContentHintVariant14Type {
 enum GetProjectsResponseEnvItemContentHintVariant15Type {
   integrationStoreSecret;
 
-  static GetProjectsResponseEnvItemContentHintVariant15Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant15Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration-store-secret': return GetProjectsResponseEnvItemContentHintVariant15Type.integrationStoreSecret;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant15Type: $value');
+      case 'integration-store-secret':
+        return GetProjectsResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant15Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant15Type.integrationStoreSecret: return 'integration-store-secret';
+      case GetProjectsResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret:
+        return 'integration-store-secret';
     }
   }
 
@@ -271,16 +370,23 @@ enum GetProjectsResponseEnvItemContentHintVariant15Type {
 enum GetProjectsResponseEnvItemContentHintVariant16Type {
   flagsConnectionString;
 
-  static GetProjectsResponseEnvItemContentHintVariant16Type fromJson(String value) {
+  static GetProjectsResponseEnvItemContentHintVariant16Type fromJson(
+      String value) {
     switch (value) {
-      case 'flags-connection-string': return GetProjectsResponseEnvItemContentHintVariant16Type.flagsConnectionString;
-      default: throw ArgumentError('Unknown GetProjectsResponseEnvItemContentHintVariant16Type: $value');
+      case 'flags-connection-string':
+        return GetProjectsResponseEnvItemContentHintVariant16Type
+            .flagsConnectionString;
+      default:
+        throw ArgumentError(
+            'Unknown GetProjectsResponseEnvItemContentHintVariant16Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetProjectsResponseEnvItemContentHintVariant16Type.flagsConnectionString: return 'flags-connection-string';
+      case GetProjectsResponseEnvItemContentHintVariant16Type
+            .flagsConnectionString:
+        return 'flags-connection-string';
     }
   }
 

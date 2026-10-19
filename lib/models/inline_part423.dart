@@ -5,275 +5,426 @@ part of 'inline.dart';
 
 // Inline operation models (part 423)
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(
+          value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(
+          false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesProjects &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(
+          value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(
+          false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSandbox &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(
+          value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(
+          false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretsSync &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSso &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable
+          ._(value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable
+          ._(false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesTransferable &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0 {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(
+          value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(
+          false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductCapabilitiesV0Flavors &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(
+          value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(
+          false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductDisableResourceRenaming &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType {
-
   final String value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType.fromJson(String value) => CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType.fromJson(
+          String value) =>
+      CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType
+          ._(value);
 
-  static const addDrain = CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType._('add_drain');
-  static const configureProjectConnections = CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType._('configure_project_connections');
-  static const connectToProject = CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType._('connect_to_project');
+  static const addDrain =
+      CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType
+          ._('add_drain');
+  static const configureProjectConnections =
+      CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType
+          ._('configure_project_connections');
+  static const connectToProject =
+      CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType
+          ._('connect_to_project');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductGuidesItemStepsItemActionsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable
+          ._(value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable
+          ._(false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesBillable &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks
+          ._(value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks
+          ._(false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesChecks &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource
+          ._(value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource
+          ._(false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedImportResource &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning {
-
   final bool value;
 
-  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning._(this.value);
+  const CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning._(
+      this.value);
 
-  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning.fromJson(bool value) => CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning._(value);
+  factory CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning.fromJson(
+          bool value) =>
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning
+          ._(value);
 
-  static const false_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning._(false);
-  static const true_ = CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning._(true);
+  static const false_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning
+          ._(false);
+  static const true_ =
+      CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesConnectedProvisioning &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

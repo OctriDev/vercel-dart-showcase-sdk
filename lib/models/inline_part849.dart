@@ -7,270 +7,609 @@ part of 'inline.dart';
 class ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction> action;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive active;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction>
+      action;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive
+      active;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter({this.action = const SdkOmitted(), required this.active});
+  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter(
+      {this.action = const SdkOmitted(), required this.active});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction> action, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive active}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction>
+          action,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive
+          active}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter
+      _copyWith(
+              {Object? action = sdkOmittedValue,
+              Object? active = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter(
+            action: identical(action, sdkOmittedValue)
+                ? this.action
+                : action as SdkOptional<
+                    ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction>,
+            active: identical(active, sdkOmittedValue)
+                ? this.active
+                : active
+                    as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive.fromJson(json['active'] as bool) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-  };
+        ...switch (action) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilterAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction> action;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive active;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction>
+      action;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive
+      active;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp({this.action = const SdkOmitted(), required this.active});
+  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp(
+      {this.action = const SdkOmitted(), required this.active});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction> action, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive active}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction>
+          action,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive
+          active}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction>,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active
+                as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive.fromJson(json['active'] as bool) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-  };
+        ...switch (action) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwaspAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction> action;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive active;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction>
+      action;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive
+      active;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources({this.action = const SdkOmitted(), required this.active});
+  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources(
+      {this.action = const SdkOmitted(), required this.active});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction> action, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive active}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction>
+          action,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive
+          active}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources
+      _copyWith(
+              {Object? action = sdkOmittedValue,
+              Object? active = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources(
+            action: identical(action, sdkOmittedValue)
+                ? this.action
+                : action as SdkOptional<
+                    ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction>,
+            active: identical(active, sdkOmittedValue)
+                ? this.active
+                : active
+                    as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive.fromJson(json['active'] as bool) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-  };
+        ...switch (action) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSourcesAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction> action;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive active;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction>
+      action;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive
+      active;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset({this.action = const SdkOmitted(), required this.active});
+  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset(
+      {this.action = const SdkOmitted(), required this.active});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction> action, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive active}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction>
+          action,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive
+          active}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset
+      _copyWith(
+              {Object? action = sdkOmittedValue,
+              Object? active = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset(
+            action: identical(action, sdkOmittedValue)
+                ? this.action
+                : action as SdkOptional<
+                    ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction>,
+            active: identical(active, sdkOmittedValue)
+                ? this.active
+                : active
+                    as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive.fromJson(json['active'] as bool) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-  };
+        ...switch (action) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRulesetAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityManagedRules {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots aiBots;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter botFilter;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots
+      aiBots;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter
+      botFilter;
   final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp owasp;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources trafficSources;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset vercelRuleset;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources
+      trafficSources;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset
+      vercelRuleset;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRules({required this.aiBots, required this.botFilter, required this.owasp, required this.trafficSources, required this.vercelRuleset});
+  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRules(
+      {required this.aiBots,
+      required this.botFilter,
+      required this.owasp,
+      required this.trafficSources,
+      required this.vercelRuleset});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRules Function({ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots aiBots, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter botFilter, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp owasp, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources trafficSources, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset vercelRuleset}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRules Function(
+      {ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots
+          aiBots,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter
+          botFilter,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp owasp,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources
+          trafficSources,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset
+          vercelRuleset}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRules _copyWith({Object? aiBots = sdkOmittedValue, Object? botFilter = sdkOmittedValue, Object? owasp = sdkOmittedValue, Object? trafficSources = sdkOmittedValue, Object? vercelRuleset = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRules(
-    aiBots: identical(aiBots, sdkOmittedValue) ? this.aiBots : aiBots as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots,
-    botFilter: identical(botFilter, sdkOmittedValue) ? this.botFilter : botFilter as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter,
-    owasp: identical(owasp, sdkOmittedValue) ? this.owasp : owasp as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp,
-    trafficSources: identical(trafficSources, sdkOmittedValue) ? this.trafficSources : trafficSources as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources,
-    vercelRuleset: identical(vercelRuleset, sdkOmittedValue) ? this.vercelRuleset : vercelRuleset as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRules _copyWith(
+          {Object? aiBots = sdkOmittedValue,
+          Object? botFilter = sdkOmittedValue,
+          Object? owasp = sdkOmittedValue,
+          Object? trafficSources = sdkOmittedValue,
+          Object? vercelRuleset = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRules(
+        aiBots: identical(aiBots, sdkOmittedValue)
+            ? this.aiBots
+            : aiBots
+                as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots,
+        botFilter: identical(botFilter, sdkOmittedValue)
+            ? this.botFilter
+            : botFilter
+                as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter,
+        owasp: identical(owasp, sdkOmittedValue)
+            ? this.owasp
+            : owasp
+                as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp,
+        trafficSources: identical(trafficSources, sdkOmittedValue)
+            ? this.trafficSources
+            : trafficSources
+                as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources,
+        vercelRuleset: identical(vercelRuleset, sdkOmittedValue)
+            ? this.vercelRuleset
+            : vercelRuleset
+                as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRules.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRules(
-    aiBots: (json['ai_bots'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots.fromJson(json['ai_bots'] as Map<String, dynamic>) : null)!,
-    botFilter: (json['bot_filter'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter.fromJson(json['bot_filter'] as Map<String, dynamic>) : null)!,
-    owasp: (json['owasp'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp.fromJson(json['owasp'] as Map<String, dynamic>) : null)!,
-    trafficSources: (json['traffic_sources'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources.fromJson(json['traffic_sources'] as Map<String, dynamic>) : null)!,
-    vercelRuleset: (json['vercel_ruleset'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset.fromJson(json['vercel_ruleset'] as Map<String, dynamic>) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRules.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRules(
+        aiBots: (json['ai_bots'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots
+                .fromJson(json['ai_bots'] as Map<String, dynamic>)
+            : null)!,
+        botFilter: (json['bot_filter'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesBotFilter
+                .fromJson(json['bot_filter'] as Map<String, dynamic>)
+            : null)!,
+        owasp: (json['owasp'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesOwasp
+                .fromJson(json['owasp'] as Map<String, dynamic>)
+            : null)!,
+        trafficSources: (json['traffic_sources'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesTrafficSources
+                .fromJson(json['traffic_sources'] as Map<String, dynamic>)
+            : null)!,
+        vercelRuleset: (json['vercel_ruleset'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesVercelRuleset
+                .fromJson(json['vercel_ruleset'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'ai_bots': aiBots.toJson(),
-    'bot_filter': botFilter.toJson(),
-    'owasp': owasp.toJson(),
-    'traffic_sources': trafficSources.toJson(),
-    'vercel_ruleset': vercelRuleset.toJson(),
-  };
+        'ai_bots': aiBots.toJson(),
+        'bot_filter': botFilter.toJson(),
+        'owasp': owasp.toJson(),
+        'traffic_sources': trafficSources.toJson(),
+        'vercel_ruleset': vercelRuleset.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo algo;
+  final ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo
+      algo;
   final List<String> keys;
   final double limit;
   final double window;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit({required this.algo, required this.keys, required this.limit, required this.window});
+  const ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit(
+      {required this.algo,
+      required this.keys,
+      required this.limit,
+      required this.window});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit Function({ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo algo, List<String> keys, double limit, double window}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit Function(
+      {ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo
+          algo,
+      List<String> keys,
+      double limit,
+      double window}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit _copyWith({Object? algo = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? window = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit(
-    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo,
-    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
-    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
-    window: identical(window, sdkOmittedValue) ? this.window : window as double,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit
+      _copyWith(
+              {Object? algo = sdkOmittedValue,
+              Object? keys = sdkOmittedValue,
+              Object? limit = sdkOmittedValue,
+              Object? window = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit(
+            algo: identical(algo, sdkOmittedValue)
+                ? this.algo
+                : algo
+                    as ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo,
+            keys: identical(keys, sdkOmittedValue)
+                ? this.keys
+                : keys as List<String>,
+            limit: identical(limit, sdkOmittedValue)
+                ? this.limit
+                : limit as double,
+            window: identical(window, sdkOmittedValue)
+                ? this.window
+                : window as double,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit(
-    algo: (json['algo'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo.fromJson(json['algo'] as String) : null)!,
-    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-    limit: ((json['limit'] as num?)?.toDouble())!,
-    window: ((json['window'] as num?)?.toDouble())!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit(
+        algo: (json['algo'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimitAlgo
+                .fromJson(json['algo'] as String)
+            : null)!,
+        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+        limit: ((json['limit'] as num?)?.toDouble())!,
+        window: ((json['window'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'algo': algo.toJson(),
-    'keys': keys,
-    'limit': limit,
-    'window': window,
-  };
+        'algo': algo.toJson(),
+        'keys': keys,
+        'limit': limit,
+        'window': window,
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String location;
-  final ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent permanent;
+  final ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent
+      permanent;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect({required this.location, required this.permanent});
+  const ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect(
+      {required this.location, required this.permanent});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect Function({String location, ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent permanent}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect Function(
+      {String location,
+      ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent
+          permanent}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect _copyWith({Object? location = sdkOmittedValue, Object? permanent = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect(
-    location: identical(location, sdkOmittedValue) ? this.location : location as String,
-    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect
+      _copyWith(
+              {Object? location = sdkOmittedValue,
+              Object? permanent = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect(
+            location: identical(location, sdkOmittedValue)
+                ? this.location
+                : location as String,
+            permanent: identical(permanent, sdkOmittedValue)
+                ? this.permanent
+                : permanent
+                    as ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect(
-    location: (json['location'] as String?)!,
-    permanent: (json['permanent'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent.fromJson(json['permanent'] as bool) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect(
+        location: (json['location'] as String?)!,
+        permanent: (json['permanent'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirectPermanent
+                .fromJson(json['permanent'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'location': location,
-    'permanent': permanent.toJson(),
-  };
+        'location': location,
+        'permanent': permanent.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction action;
+  final ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction
+      action;
   final SdkOptional<String?> actionDuration;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?> bypassSystem;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?>
+      bypassSystem;
   final SdkOptional<dynamic> logHeaders;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?> rateLimit;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?> redirect;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?>
+      rateLimit;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?>
+      redirect;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue({required this.action, this.actionDuration = const SdkOmitted(), this.bypassSystem = const SdkOmitted(), this.logHeaders = const SdkOmitted(), this.rateLimit = const SdkOmitted(), this.redirect = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue(
+      {required this.action,
+      this.actionDuration = const SdkOmitted(),
+      this.bypassSystem = const SdkOmitted(),
+      this.logHeaders = const SdkOmitted(),
+      this.rateLimit = const SdkOmitted(),
+      this.redirect = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue Function({ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction action, SdkOptional<String?> actionDuration, SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?> bypassSystem, SdkOptional<dynamic> logHeaders, SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?> rateLimit, SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?> redirect}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue Function(
+      {ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction
+          action,
+      SdkOptional<String?> actionDuration,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?>
+          bypassSystem,
+      SdkOptional<dynamic> logHeaders,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?>
+          rateLimit,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?>
+          redirect}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue _copyWith({Object? action = sdkOmittedValue, Object? actionDuration = sdkOmittedValue, Object? bypassSystem = sdkOmittedValue, Object? logHeaders = sdkOmittedValue, Object? rateLimit = sdkOmittedValue, Object? redirect = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue(
-    action: identical(action, sdkOmittedValue) ? this.action : action as ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction,
-    actionDuration: identical(actionDuration, sdkOmittedValue) ? this.actionDuration : actionDuration as SdkOptional<String?>,
-    bypassSystem: identical(bypassSystem, sdkOmittedValue) ? this.bypassSystem : bypassSystem as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
-    rateLimit: identical(rateLimit, sdkOmittedValue) ? this.rateLimit : rateLimit as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?>,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? actionDuration = sdkOmittedValue,
+          Object? bypassSystem = sdkOmittedValue,
+          Object? logHeaders = sdkOmittedValue,
+          Object? rateLimit = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction,
+        actionDuration: identical(actionDuration, sdkOmittedValue)
+            ? this.actionDuration
+            : actionDuration as SdkOptional<String?>,
+        bypassSystem: identical(bypassSystem, sdkOmittedValue)
+            ? this.bypassSystem
+            : bypassSystem as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?>,
+        logHeaders: identical(logHeaders, sdkOmittedValue)
+            ? this.logHeaders
+            : logHeaders as SdkOptional<dynamic>,
+        rateLimit: identical(rateLimit, sdkOmittedValue)
+            ? this.rateLimit
+            : rateLimit as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?>,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue(
-    action: (json['action'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction.fromJson(json['action'] as String) : null)!,
-    actionDuration: json.containsKey('actionDuration') ? SdkPresent(json['actionDuration'] as String?) : const SdkOmitted(),
-    bypassSystem: json.containsKey('bypassSystem') ? SdkPresent(json['bypassSystem'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem.fromJson(json['bypassSystem'] as bool) : null) : const SdkOmitted(),
-    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
-    rateLimit: json.containsKey('rateLimit') ? SdkPresent(json['rateLimit'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit.fromJson(json['rateLimit'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect.fromJson(json['redirect'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValue(
+        action: (json['action'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueAction
+                .fromJson(json['action'] as String)
+            : null)!,
+        actionDuration: json.containsKey('actionDuration')
+            ? SdkPresent(json['actionDuration'] as String?)
+            : const SdkOmitted(),
+        bypassSystem: json.containsKey('bypassSystem')
+            ? SdkPresent(json['bypassSystem'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem
+                    .fromJson(json['bypassSystem'] as bool)
+                : null)
+            : const SdkOmitted(),
+        logHeaders: json['logHeaders'] != null
+            ? SdkPresent((json['logHeaders'])!)
+            : const SdkOmitted(),
+        rateLimit: json.containsKey('rateLimit')
+            ? SdkPresent(json['rateLimit'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit
+                    .fromJson(json['rateLimit'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect
+                    .fromJson(json['redirect'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    ...switch (actionDuration) {
-      SdkPresent<String?>(value: final value) => {'actionDuration': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (bypassSystem) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?>(value: final value) => {'bypassSystem': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rateLimit) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?>(value: final value) => {'rateLimit': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?>(value: final value) => {'redirect': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action.toJson(),
+        ...switch (actionDuration) {
+          SdkPresent<String?>(value: final value) => {
+              'actionDuration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (bypassSystem) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueBypassSystem?>(
+            value: final value
+          ) =>
+            {
+              'bypassSystem': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (logHeaders) {
+          SdkPresent<dynamic>(value: final value) => {
+              'logHeaders': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rateLimit) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRateLimit?>(
+            value: final value
+          ) =>
+            {
+              'rateLimit': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityRulesetsValueRedirect?>(
+            value: final value
+          ) =>
+            {
+              'redirect': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -6,292 +6,394 @@ part of 'inline.dart';
 // Inline operation models (part 574)
 /// Framework slug, when the service has one (omitted otherwise).
 final class UpdateProjectResponseServicesItemFramework {
-
   final String value;
 
   const UpdateProjectResponseServicesItemFramework._(this.value);
 
-  factory UpdateProjectResponseServicesItemFramework.fromJson(String value) => UpdateProjectResponseServicesItemFramework._(value);
+  factory UpdateProjectResponseServicesItemFramework.fromJson(String value) =>
+      UpdateProjectResponseServicesItemFramework._(value);
 
-  static const actixWeb = UpdateProjectResponseServicesItemFramework._('actix-web');
-  static const angular = UpdateProjectResponseServicesItemFramework._('angular');
+  static const actixWeb =
+      UpdateProjectResponseServicesItemFramework._('actix-web');
+  static const angular =
+      UpdateProjectResponseServicesItemFramework._('angular');
   static const ash = UpdateProjectResponseServicesItemFramework._('ash');
   static const astro = UpdateProjectResponseServicesItemFramework._('astro');
   static const axum = UpdateProjectResponseServicesItemFramework._('axum');
-  static const blitzjs = UpdateProjectResponseServicesItemFramework._('blitzjs');
+  static const blitzjs =
+      UpdateProjectResponseServicesItemFramework._('blitzjs');
   static const brunch = UpdateProjectResponseServicesItemFramework._('brunch');
   static const bun = UpdateProjectResponseServicesItemFramework._('bun');
-  static const container = UpdateProjectResponseServicesItemFramework._('container');
-  static const createReactApp = UpdateProjectResponseServicesItemFramework._('create-react-app');
+  static const container =
+      UpdateProjectResponseServicesItemFramework._('container');
+  static const createReactApp =
+      UpdateProjectResponseServicesItemFramework._('create-react-app');
   static const django = UpdateProjectResponseServicesItemFramework._('django');
-  static const docusaurus = UpdateProjectResponseServicesItemFramework._('docusaurus');
-  static const docusaurus2 = UpdateProjectResponseServicesItemFramework._('docusaurus-2');
+  static const docusaurus =
+      UpdateProjectResponseServicesItemFramework._('docusaurus');
+  static const docusaurus2 =
+      UpdateProjectResponseServicesItemFramework._('docusaurus-2');
   static const dojo = UpdateProjectResponseServicesItemFramework._('dojo');
-  static const eleventy = UpdateProjectResponseServicesItemFramework._('eleventy');
+  static const eleventy =
+      UpdateProjectResponseServicesItemFramework._('eleventy');
   static const elysia = UpdateProjectResponseServicesItemFramework._('elysia');
   static const ember = UpdateProjectResponseServicesItemFramework._('ember');
   static const eve = UpdateProjectResponseServicesItemFramework._('eve');
-  static const express = UpdateProjectResponseServicesItemFramework._('express');
-  static const factoryEve = UpdateProjectResponseServicesItemFramework._('factory-eve');
-  static const fastapi = UpdateProjectResponseServicesItemFramework._('fastapi');
-  static const fasthtml = UpdateProjectResponseServicesItemFramework._('fasthtml');
-  static const fastify = UpdateProjectResponseServicesItemFramework._('fastify');
+  static const express =
+      UpdateProjectResponseServicesItemFramework._('express');
+  static const factoryEve =
+      UpdateProjectResponseServicesItemFramework._('factory-eve');
+  static const fastapi =
+      UpdateProjectResponseServicesItemFramework._('fastapi');
+  static const fasthtml =
+      UpdateProjectResponseServicesItemFramework._('fasthtml');
+  static const fastify =
+      UpdateProjectResponseServicesItemFramework._('fastify');
   static const flask = UpdateProjectResponseServicesItemFramework._('flask');
   static const gatsby = UpdateProjectResponseServicesItemFramework._('gatsby');
   static const go = UpdateProjectResponseServicesItemFramework._('go');
-  static const gridsome = UpdateProjectResponseServicesItemFramework._('gridsome');
+  static const gridsome =
+      UpdateProjectResponseServicesItemFramework._('gridsome');
   static const h3 = UpdateProjectResponseServicesItemFramework._('h3');
   static const hexo = UpdateProjectResponseServicesItemFramework._('hexo');
   static const hono = UpdateProjectResponseServicesItemFramework._('hono');
   static const hugo = UpdateProjectResponseServicesItemFramework._('hugo');
-  static const hydrogen = UpdateProjectResponseServicesItemFramework._('hydrogen');
-  static const ionicAngular = UpdateProjectResponseServicesItemFramework._('ionic-angular');
-  static const ionicReact = UpdateProjectResponseServicesItemFramework._('ionic-react');
+  static const hydrogen =
+      UpdateProjectResponseServicesItemFramework._('hydrogen');
+  static const ionicAngular =
+      UpdateProjectResponseServicesItemFramework._('ionic-angular');
+  static const ionicReact =
+      UpdateProjectResponseServicesItemFramework._('ionic-react');
   static const jekyll = UpdateProjectResponseServicesItemFramework._('jekyll');
   static const koa = UpdateProjectResponseServicesItemFramework._('koa');
   static const mastra = UpdateProjectResponseServicesItemFramework._('mastra');
-  static const middleman = UpdateProjectResponseServicesItemFramework._('middleman');
+  static const middleman =
+      UpdateProjectResponseServicesItemFramework._('middleman');
   static const nestjs = UpdateProjectResponseServicesItemFramework._('nestjs');
   static const nextjs = UpdateProjectResponseServicesItemFramework._('nextjs');
   static const nitro = UpdateProjectResponseServicesItemFramework._('nitro');
   static const node = UpdateProjectResponseServicesItemFramework._('node');
   static const nuxtjs = UpdateProjectResponseServicesItemFramework._('nuxtjs');
   static const parcel = UpdateProjectResponseServicesItemFramework._('parcel');
-  static const polymer = UpdateProjectResponseServicesItemFramework._('polymer');
+  static const polymer =
+      UpdateProjectResponseServicesItemFramework._('polymer');
   static const preact = UpdateProjectResponseServicesItemFramework._('preact');
   static const python = UpdateProjectResponseServicesItemFramework._('python');
-  static const reactRouter = UpdateProjectResponseServicesItemFramework._('react-router');
-  static const redwoodjs = UpdateProjectResponseServicesItemFramework._('redwoodjs');
+  static const reactRouter =
+      UpdateProjectResponseServicesItemFramework._('react-router');
+  static const redwoodjs =
+      UpdateProjectResponseServicesItemFramework._('redwoodjs');
   static const remix = UpdateProjectResponseServicesItemFramework._('remix');
   static const ruby = UpdateProjectResponseServicesItemFramework._('ruby');
   static const rust = UpdateProjectResponseServicesItemFramework._('rust');
   static const saber = UpdateProjectResponseServicesItemFramework._('saber');
   static const sanity = UpdateProjectResponseServicesItemFramework._('sanity');
-  static const sanityV2 = UpdateProjectResponseServicesItemFramework._('sanity-v2');
+  static const sanityV2 =
+      UpdateProjectResponseServicesItemFramework._('sanity-v2');
   static const sapper = UpdateProjectResponseServicesItemFramework._('sapper');
   static const scully = UpdateProjectResponseServicesItemFramework._('scully');
-  static const services = UpdateProjectResponseServicesItemFramework._('services');
-  static const solidstart = UpdateProjectResponseServicesItemFramework._('solidstart');
-  static const solidstart1 = UpdateProjectResponseServicesItemFramework._('solidstart-1');
-  static const stencil = UpdateProjectResponseServicesItemFramework._('stencil');
-  static const storybook = UpdateProjectResponseServicesItemFramework._('storybook');
+  static const services =
+      UpdateProjectResponseServicesItemFramework._('services');
+  static const solidstart =
+      UpdateProjectResponseServicesItemFramework._('solidstart');
+  static const solidstart1 =
+      UpdateProjectResponseServicesItemFramework._('solidstart-1');
+  static const stencil =
+      UpdateProjectResponseServicesItemFramework._('stencil');
+  static const storybook =
+      UpdateProjectResponseServicesItemFramework._('storybook');
   static const svelte = UpdateProjectResponseServicesItemFramework._('svelte');
-  static const sveltekit = UpdateProjectResponseServicesItemFramework._('sveltekit');
-  static const sveltekit1 = UpdateProjectResponseServicesItemFramework._('sveltekit-1');
-  static const tanstackStart = UpdateProjectResponseServicesItemFramework._('tanstack-start');
-  static const tanstackStartLovable = UpdateProjectResponseServicesItemFramework._('tanstack-start-lovable');
+  static const sveltekit =
+      UpdateProjectResponseServicesItemFramework._('sveltekit');
+  static const sveltekit1 =
+      UpdateProjectResponseServicesItemFramework._('sveltekit-1');
+  static const tanstackStart =
+      UpdateProjectResponseServicesItemFramework._('tanstack-start');
+  static const tanstackStartLovable =
+      UpdateProjectResponseServicesItemFramework._('tanstack-start-lovable');
   static const umijs = UpdateProjectResponseServicesItemFramework._('umijs');
   static const vite = UpdateProjectResponseServicesItemFramework._('vite');
-  static const vitepress = UpdateProjectResponseServicesItemFramework._('vitepress');
+  static const vitepress =
+      UpdateProjectResponseServicesItemFramework._('vitepress');
   static const vue = UpdateProjectResponseServicesItemFramework._('vue');
-  static const vuepress = UpdateProjectResponseServicesItemFramework._('vuepress');
+  static const vuepress =
+      UpdateProjectResponseServicesItemFramework._('vuepress');
   static const xmcp = UpdateProjectResponseServicesItemFramework._('xmcp');
   static const zola = UpdateProjectResponseServicesItemFramework._('zola');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseServicesItemFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseServicesItemFramework &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Service kind (Service.type). Omitted for schemas that do not define one.
 final class UpdateProjectResponseServicesItemServiceType {
-
   final String value;
 
   const UpdateProjectResponseServicesItemServiceType._(this.value);
 
-  factory UpdateProjectResponseServicesItemServiceType.fromJson(String value) => UpdateProjectResponseServicesItemServiceType._(value);
+  factory UpdateProjectResponseServicesItemServiceType.fromJson(String value) =>
+      UpdateProjectResponseServicesItemServiceType._(value);
 
   static const cron = UpdateProjectResponseServicesItemServiceType._('cron');
   static const job = UpdateProjectResponseServicesItemServiceType._('job');
   static const web = UpdateProjectResponseServicesItemServiceType._('web');
-  static const worker = UpdateProjectResponseServicesItemServiceType._('worker');
+  static const worker =
+      UpdateProjectResponseServicesItemServiceType._('worker');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseServicesItemServiceType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseServicesItemServiceType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSkipGitConnectDuringLink {
-
   final bool value;
 
   const UpdateProjectResponseSkipGitConnectDuringLink._(this.value);
 
-  factory UpdateProjectResponseSkipGitConnectDuringLink.fromJson(bool value) => UpdateProjectResponseSkipGitConnectDuringLink._(value);
+  factory UpdateProjectResponseSkipGitConnectDuringLink.fromJson(bool value) =>
+      UpdateProjectResponseSkipGitConnectDuringLink._(value);
 
   static const false_ = UpdateProjectResponseSkipGitConnectDuringLink._(false);
   static const true_ = UpdateProjectResponseSkipGitConnectDuringLink._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSkipGitConnectDuringLink && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSkipGitConnectDuringLink &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSourceFilesOutsideRootDirectory {
-
   final bool value;
 
   const UpdateProjectResponseSourceFilesOutsideRootDirectory._(this.value);
 
-  factory UpdateProjectResponseSourceFilesOutsideRootDirectory.fromJson(bool value) => UpdateProjectResponseSourceFilesOutsideRootDirectory._(value);
+  factory UpdateProjectResponseSourceFilesOutsideRootDirectory.fromJson(
+          bool value) =>
+      UpdateProjectResponseSourceFilesOutsideRootDirectory._(value);
 
-  static const false_ = UpdateProjectResponseSourceFilesOutsideRootDirectory._(false);
-  static const true_ = UpdateProjectResponseSourceFilesOutsideRootDirectory._(true);
+  static const false_ =
+      UpdateProjectResponseSourceFilesOutsideRootDirectory._(false);
+  static const true_ =
+      UpdateProjectResponseSourceFilesOutsideRootDirectory._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSourceFilesOutsideRootDirectory && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSourceFilesOutsideRootDirectory &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSpeedInsightsHasData {
-
   final bool value;
 
   const UpdateProjectResponseSpeedInsightsHasData._(this.value);
 
-  factory UpdateProjectResponseSpeedInsightsHasData.fromJson(bool value) => UpdateProjectResponseSpeedInsightsHasData._(value);
+  factory UpdateProjectResponseSpeedInsightsHasData.fromJson(bool value) =>
+      UpdateProjectResponseSpeedInsightsHasData._(value);
 
   static const false_ = UpdateProjectResponseSpeedInsightsHasData._(false);
   static const true_ = UpdateProjectResponseSpeedInsightsHasData._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSpeedInsightsHasData && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSpeedInsightsHasData &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom {
-
   final String value;
 
-  const UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._(this.value);
+  const UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._(
+      this.value);
 
-  factory UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom.fromJson(String value) => UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._(value);
+  factory UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom.fromJson(
+          String value) =>
+      UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._(value);
 
-  static const all = UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('all');
-  static const allExceptCustomDomains = UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('all_except_custom_domains');
-  static const preview = UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom._('prod_deployment_urls_and_all_previews');
+  static const all =
+      UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('all');
+  static const allExceptCustomDomains =
+      UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('all_except_custom_domains');
+  static const preview =
+      UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom
+          ._('prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom {
-
   final String value;
 
-  const UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._(this.value);
+  const UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._(
+      this.value);
 
-  factory UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom.fromJson(String value) => UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._(value);
+  factory UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom.fromJson(
+          String value) =>
+      UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._(value);
 
-  static const all = UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._('all');
-  static const allExceptCustomDomains = UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._('all_except_custom_domains');
-  static const preview = UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._('prod_deployment_urls_and_all_previews');
+  static const all =
+      UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._('all');
+  static const allExceptCustomDomains =
+      UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._(
+          'all_except_custom_domains');
+  static const preview =
+      UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._(
+          'preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom._(
+          'prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseSsoProtectionDeploymentType {
-
   final String value;
 
   const UpdateProjectResponseSsoProtectionDeploymentType._(this.value);
 
-  factory UpdateProjectResponseSsoProtectionDeploymentType.fromJson(String value) => UpdateProjectResponseSsoProtectionDeploymentType._(value);
+  factory UpdateProjectResponseSsoProtectionDeploymentType.fromJson(
+          String value) =>
+      UpdateProjectResponseSsoProtectionDeploymentType._(value);
 
   static const all = UpdateProjectResponseSsoProtectionDeploymentType._('all');
-  static const allExceptCustomDomains = UpdateProjectResponseSsoProtectionDeploymentType._('all_except_custom_domains');
-  static const preview = UpdateProjectResponseSsoProtectionDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = UpdateProjectResponseSsoProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
+  static const allExceptCustomDomains =
+      UpdateProjectResponseSsoProtectionDeploymentType._(
+          'all_except_custom_domains');
+  static const preview =
+      UpdateProjectResponseSsoProtectionDeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      UpdateProjectResponseSsoProtectionDeploymentType._(
+          'prod_deployment_urls_and_all_previews');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseSsoProtectionDeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseSsoProtectionDeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseStaticIpsBuilds {
-
   final bool value;
 
   const UpdateProjectResponseStaticIpsBuilds._(this.value);
 
-  factory UpdateProjectResponseStaticIpsBuilds.fromJson(bool value) => UpdateProjectResponseStaticIpsBuilds._(value);
+  factory UpdateProjectResponseStaticIpsBuilds.fromJson(bool value) =>
+      UpdateProjectResponseStaticIpsBuilds._(value);
 
   static const false_ = UpdateProjectResponseStaticIpsBuilds._(false);
   static const true_ = UpdateProjectResponseStaticIpsBuilds._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseStaticIpsBuilds && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseStaticIpsBuilds && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateProjectResponseStaticIpsEnabled {
-
   final bool value;
 
   const UpdateProjectResponseStaticIpsEnabled._(this.value);
 
-  factory UpdateProjectResponseStaticIpsEnabled.fromJson(bool value) => UpdateProjectResponseStaticIpsEnabled._(value);
+  factory UpdateProjectResponseStaticIpsEnabled.fromJson(bool value) =>
+      UpdateProjectResponseStaticIpsEnabled._(value);
 
   static const false_ = UpdateProjectResponseStaticIpsEnabled._(false);
   static const true_ = UpdateProjectResponseStaticIpsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateProjectResponseStaticIpsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateProjectResponseStaticIpsEnabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

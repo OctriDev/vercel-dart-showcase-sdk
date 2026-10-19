@@ -8,102 +8,168 @@ part of 'domains_registrar.dart';
 class AdditionalContactInfoRequired {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final AdditionalContactInfoRequiredStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final AdditionalContactInfoRequiredCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const AdditionalContactInfoRequired({required this.status, required this.code, required this.message});
+  const AdditionalContactInfoRequired(
+      {required this.status, required this.code, required this.message});
 
-  AdditionalContactInfoRequired Function({AdditionalContactInfoRequiredStatus status, AdditionalContactInfoRequiredCode code, String message}) get copyWith => _copyWith;
+  AdditionalContactInfoRequired Function(
+      {AdditionalContactInfoRequiredStatus status,
+      AdditionalContactInfoRequiredCode code,
+      String message}) get copyWith => _copyWith;
 
-  AdditionalContactInfoRequired _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => AdditionalContactInfoRequired(
-    status: identical(status, sdkOmittedValue) ? this.status : status as AdditionalContactInfoRequiredStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as AdditionalContactInfoRequiredCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  AdditionalContactInfoRequired _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      AdditionalContactInfoRequired(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as AdditionalContactInfoRequiredStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as AdditionalContactInfoRequiredCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory AdditionalContactInfoRequired.fromJson(Map<String, dynamic> json) => AdditionalContactInfoRequired(
-    status: (json['status'] != null ? AdditionalContactInfoRequiredStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? AdditionalContactInfoRequiredCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory AdditionalContactInfoRequired.fromJson(Map<String, dynamic> json) =>
+      AdditionalContactInfoRequired(
+        status: (json['status'] != null
+            ? AdditionalContactInfoRequiredStatus.fromJson(
+                (json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? AdditionalContactInfoRequiredCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 /// Typed representation of the `BadRequest` API schema.
 class BadRequest {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final BadRequestStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final BadRequestCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const BadRequest({required this.status, required this.code, required this.message});
+  const BadRequest(
+      {required this.status, required this.code, required this.message});
 
-  BadRequest Function({BadRequestStatus status, BadRequestCode code, String message}) get copyWith => _copyWith;
+  BadRequest Function(
+      {BadRequestStatus status,
+      BadRequestCode code,
+      String message}) get copyWith => _copyWith;
 
-  BadRequest _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => BadRequest(
-    status: identical(status, sdkOmittedValue) ? this.status : status as BadRequestStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as BadRequestCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  BadRequest _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      BadRequest(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as BadRequestStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as BadRequestCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
   factory BadRequest.fromJson(Map<String, dynamic> json) => BadRequest(
-    status: (json['status'] != null ? BadRequestStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? BadRequestCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+        status: (json['status'] != null
+            ? BadRequestStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? BadRequestCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 /// The domain was bought too recently to determine verification status.
 class BoughtTooRecently {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final BoughtTooRecentlyStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final BoughtTooRecentlyCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const BoughtTooRecently({required this.status, required this.code, required this.message});
+  const BoughtTooRecently(
+      {required this.status, required this.code, required this.message});
 
-  BoughtTooRecently Function({BoughtTooRecentlyStatus status, BoughtTooRecentlyCode code, String message}) get copyWith => _copyWith;
+  BoughtTooRecently Function(
+      {BoughtTooRecentlyStatus status,
+      BoughtTooRecentlyCode code,
+      String message}) get copyWith => _copyWith;
 
-  BoughtTooRecently _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => BoughtTooRecently(
-    status: identical(status, sdkOmittedValue) ? this.status : status as BoughtTooRecentlyStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as BoughtTooRecentlyCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  BoughtTooRecently _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      BoughtTooRecently(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as BoughtTooRecentlyStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as BoughtTooRecentlyCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory BoughtTooRecently.fromJson(Map<String, dynamic> json) => BoughtTooRecently(
-    status: (json['status'] != null ? BoughtTooRecentlyStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? BoughtTooRecentlyCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory BoughtTooRecently.fromJson(Map<String, dynamic> json) =>
+      BoughtTooRecently(
+        status: (json['status'] != null
+            ? BoughtTooRecentlyStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? BoughtTooRecentlyCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 // CountryCode = String
@@ -114,68 +180,111 @@ class BoughtTooRecently {
 class DNSSECEnabled {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final DNSSECEnabledStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final DNSSECEnabledCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const DNSSECEnabled({required this.status, required this.code, required this.message});
+  const DNSSECEnabled(
+      {required this.status, required this.code, required this.message});
 
-  DNSSECEnabled Function({DNSSECEnabledStatus status, DNSSECEnabledCode code, String message}) get copyWith => _copyWith;
+  DNSSECEnabled Function(
+      {DNSSECEnabledStatus status,
+      DNSSECEnabledCode code,
+      String message}) get copyWith => _copyWith;
 
-  DNSSECEnabled _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => DNSSECEnabled(
-    status: identical(status, sdkOmittedValue) ? this.status : status as DNSSECEnabledStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as DNSSECEnabledCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  DNSSECEnabled _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      DNSSECEnabled(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as DNSSECEnabledStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as DNSSECEnabledCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
   factory DNSSECEnabled.fromJson(Map<String, dynamic> json) => DNSSECEnabled(
-    status: (json['status'] != null ? DNSSECEnabledStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? DNSSECEnabledCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+        status: (json['status'] != null
+            ? DNSSECEnabledStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? DNSSECEnabledCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 /// Duplicate domains were provided.
 class DuplicateDomains {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final DuplicateDomainsStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final DuplicateDomainsCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const DuplicateDomains({required this.status, required this.code, required this.message});
+  const DuplicateDomains(
+      {required this.status, required this.code, required this.message});
 
-  DuplicateDomains Function({DuplicateDomainsStatus status, DuplicateDomainsCode code, String message}) get copyWith => _copyWith;
+  DuplicateDomains Function(
+      {DuplicateDomainsStatus status,
+      DuplicateDomainsCode code,
+      String message}) get copyWith => _copyWith;
 
-  DuplicateDomains _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => DuplicateDomains(
-    status: identical(status, sdkOmittedValue) ? this.status : status as DuplicateDomainsStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as DuplicateDomainsCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  DuplicateDomains _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      DuplicateDomains(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as DuplicateDomainsStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as DuplicateDomainsCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory DuplicateDomains.fromJson(Map<String, dynamic> json) => DuplicateDomains(
-    status: (json['status'] != null ? DuplicateDomainsStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? DuplicateDomainsCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory DuplicateDomains.fromJson(Map<String, dynamic> json) =>
+      DuplicateDomains(
+        status: (json['status'] != null
+            ? DuplicateDomainsStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? DuplicateDomainsCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 // E164PhoneNumber = String
@@ -186,100 +295,167 @@ class DuplicateDomains {
 class EmojiTldNotSupported {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final EmojiTldNotSupportedStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final EmojiTldNotSupportedCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const EmojiTldNotSupported({required this.status, required this.code, required this.message});
+  const EmojiTldNotSupported(
+      {required this.status, required this.code, required this.message});
 
-  EmojiTldNotSupported Function({EmojiTldNotSupportedStatus status, EmojiTldNotSupportedCode code, String message}) get copyWith => _copyWith;
+  EmojiTldNotSupported Function(
+      {EmojiTldNotSupportedStatus status,
+      EmojiTldNotSupportedCode code,
+      String message}) get copyWith => _copyWith;
 
-  EmojiTldNotSupported _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => EmojiTldNotSupported(
-    status: identical(status, sdkOmittedValue) ? this.status : status as EmojiTldNotSupportedStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as EmojiTldNotSupportedCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  EmojiTldNotSupported _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      EmojiTldNotSupported(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as EmojiTldNotSupportedStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as EmojiTldNotSupportedCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory EmojiTldNotSupported.fromJson(Map<String, dynamic> json) => EmojiTldNotSupported(
-    status: (json['status'] != null ? EmojiTldNotSupportedStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? EmojiTldNotSupportedCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory EmojiTldNotSupported.fromJson(Map<String, dynamic> json) =>
+      EmojiTldNotSupported(
+        status: (json['status'] != null
+            ? EmojiTldNotSupportedStatus.fromJson(
+                (json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? EmojiTldNotSupportedCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 /// The expected price passed does not match the actual price.
 class ExpectedPriceMismatch {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final ExpectedPriceMismatchStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final ExpectedPriceMismatchCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const ExpectedPriceMismatch({required this.status, required this.code, required this.message});
+  const ExpectedPriceMismatch(
+      {required this.status, required this.code, required this.message});
 
-  ExpectedPriceMismatch Function({ExpectedPriceMismatchStatus status, ExpectedPriceMismatchCode code, String message}) get copyWith => _copyWith;
+  ExpectedPriceMismatch Function(
+      {ExpectedPriceMismatchStatus status,
+      ExpectedPriceMismatchCode code,
+      String message}) get copyWith => _copyWith;
 
-  ExpectedPriceMismatch _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => ExpectedPriceMismatch(
-    status: identical(status, sdkOmittedValue) ? this.status : status as ExpectedPriceMismatchStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as ExpectedPriceMismatchCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  ExpectedPriceMismatch _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      ExpectedPriceMismatch(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as ExpectedPriceMismatchStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as ExpectedPriceMismatchCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory ExpectedPriceMismatch.fromJson(Map<String, dynamic> json) => ExpectedPriceMismatch(
-    status: (json['status'] != null ? ExpectedPriceMismatchStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? ExpectedPriceMismatchCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory ExpectedPriceMismatch.fromJson(Map<String, dynamic> json) =>
+      ExpectedPriceMismatch(
+        status: (json['status'] != null
+            ? ExpectedPriceMismatchStatus.fromJson(
+                (json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? ExpectedPriceMismatchCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }
 
 /// Typed representation of the `Forbidden` API schema.
 class Forbidden {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final ForbiddenStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final ForbiddenCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const Forbidden({required this.status, required this.code, required this.message});
+  const Forbidden(
+      {required this.status, required this.code, required this.message});
 
-  Forbidden Function({ForbiddenStatus status, ForbiddenCode code, String message}) get copyWith => _copyWith;
+  Forbidden Function(
+      {ForbiddenStatus status,
+      ForbiddenCode code,
+      String message}) get copyWith => _copyWith;
 
-  Forbidden _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => Forbidden(
-    status: identical(status, sdkOmittedValue) ? this.status : status as ForbiddenStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as ForbiddenCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  Forbidden _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      Forbidden(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as ForbiddenStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as ForbiddenCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
   factory Forbidden.fromJson(Map<String, dynamic> json) => Forbidden(
-    status: (json['status'] != null ? ForbiddenStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? ForbiddenCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+        status: (json['status'] != null
+            ? ForbiddenStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? ForbiddenCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }

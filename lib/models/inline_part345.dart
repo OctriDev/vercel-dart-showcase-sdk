@@ -6,272 +6,392 @@ part of 'inline.dart';
 // Inline operation models (part 345)
 /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.
 final class GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource {
-
   final String value;
 
-  const GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(this.value);
+  const GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.fromJson(String value) => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(value);
+  factory GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.fromJson(
+          String value) =>
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(value);
 
-  static const apiTriggerGitDeploy = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('api-trigger-git-deploy');
-  static const cli = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('cli');
-  static const cloneRepo = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('clone/repo');
-  static const drop = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('drop');
-  static const git = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('git');
-  static const gitDeployHook = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('git-deploy-hook');
-  static const import_ = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('import');
-  static const importRepo = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('import/repo');
-  static const redeploy = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('redeploy');
-  static const v0Web = GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('v0-web');
+  static const apiTriggerGitDeploy =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+          'api-trigger-git-deploy');
+  static const cli =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('cli');
+  static const cloneRepo =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+          'clone/repo');
+  static const drop =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('drop');
+  static const git =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._('git');
+  static const gitDeployHook =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+          'git-deploy-hook');
+  static const import_ =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+          'import');
+  static const importRepo =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+          'import/repo');
+  static const redeploy =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+          'redeploy');
+  static const v0Web =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource._(
+          'v0-web');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.
 final class GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget {
-
   final String value;
 
-  const GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._(this.value);
+  const GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget.fromJson(String value) => GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._(value);
+  factory GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget.fromJson(
+          String value) =>
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._(value);
 
-  static const production = GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._('production');
-  static const staging = GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._('staging');
+  static const production =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._(
+          'production');
+  static const staging =
+      GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget._(
+          'staging');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage is the final stage (targetPercentage === 100)
 final class GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage {
-
   final bool value;
 
-  const GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(this.value);
+  const GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage.fromJson(bool value) => GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(value);
+  factory GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage.fromJson(
+          bool value) =>
+      GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(value);
 
-  static const false_ = GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(false);
-  static const true_ = GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(true);
+  static const false_ =
+      GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(false);
+  static const true_ =
+      GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseNextStageIsFinalStage &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to linearly shift traffic over the duration of this stage
 final class GetRollingReleaseResponseRollingReleaseNextStageLinearShift {
-
   final bool value;
 
-  const GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(this.value);
+  const GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseNextStageLinearShift.fromJson(bool value) => GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(value);
+  factory GetRollingReleaseResponseRollingReleaseNextStageLinearShift.fromJson(
+          bool value) =>
+      GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(value);
 
-  static const false_ = GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(false);
-  static const true_ = GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(true);
+  static const false_ =
+      GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(false);
+  static const true_ =
+      GetRollingReleaseResponseRollingReleaseNextStageLinearShift._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseNextStageLinearShift && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseNextStageLinearShift &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage requires manual approval to proceed
 final class GetRollingReleaseResponseRollingReleaseNextStageRequireApproval {
-
   final bool value;
 
-  const GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(this.value);
+  const GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseNextStageRequireApproval.fromJson(bool value) => GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(value);
+  factory GetRollingReleaseResponseRollingReleaseNextStageRequireApproval.fromJson(
+          bool value) =>
+      GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(value);
 
-  static const false_ = GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(false);
-  static const true_ = GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(true);
+  static const false_ =
+      GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(false);
+  static const true_ =
+      GetRollingReleaseResponseRollingReleaseNextStageRequireApproval._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseNextStageRequireApproval && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetRollingReleaseResponseRollingReleaseNextStageRequireApproval &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage is the final stage (targetPercentage === 100)
 final class GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage {
-
   final bool value;
 
-  const GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(this.value);
+  const GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage.fromJson(bool value) => GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(value);
+  factory GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage.fromJson(
+          bool value) =>
+      GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(value);
 
-  static const false_ = GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(false);
-  static const true_ = GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(true);
+  static const false_ =
+      GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(false);
+  static const true_ =
+      GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseStagesItemIsFinalStage &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to linearly shift traffic over the duration of this stage
 final class GetRollingReleaseResponseRollingReleaseStagesItemLinearShift {
-
   final bool value;
 
-  const GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(this.value);
+  const GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseStagesItemLinearShift.fromJson(bool value) => GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(value);
+  factory GetRollingReleaseResponseRollingReleaseStagesItemLinearShift.fromJson(
+          bool value) =>
+      GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(value);
 
-  static const false_ = GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(false);
-  static const true_ = GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(true);
+  static const false_ =
+      GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(false);
+  static const true_ =
+      GetRollingReleaseResponseRollingReleaseStagesItemLinearShift._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseStagesItemLinearShift && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseStagesItemLinearShift &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage requires manual approval to proceed
 final class GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval {
-
   final bool value;
 
-  const GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(this.value);
+  const GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(
+      this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval.fromJson(bool value) => GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(value);
+  factory GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval.fromJson(
+          bool value) =>
+      GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(value);
 
-  static const false_ = GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(false);
-  static const true_ = GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(true);
+  static const false_ =
+      GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(false);
+  static const true_ =
+      GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetRollingReleaseResponseRollingReleaseStagesItemRequireApproval &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The current state of the rolling release
 final class GetRollingReleaseResponseRollingReleaseState {
-
   final String value;
 
   const GetRollingReleaseResponseRollingReleaseState._(this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseState.fromJson(String value) => GetRollingReleaseResponseRollingReleaseState._(value);
+  factory GetRollingReleaseResponseRollingReleaseState.fromJson(String value) =>
+      GetRollingReleaseResponseRollingReleaseState._(value);
 
-  static const aborted = GetRollingReleaseResponseRollingReleaseState._('ABORTED');
-  static const active = GetRollingReleaseResponseRollingReleaseState._('ACTIVE');
-  static const complete = GetRollingReleaseResponseRollingReleaseState._('COMPLETE');
+  static const aborted =
+      GetRollingReleaseResponseRollingReleaseState._('ABORTED');
+  static const active =
+      GetRollingReleaseResponseRollingReleaseState._('ACTIVE');
+  static const complete =
+      GetRollingReleaseResponseRollingReleaseState._('COMPLETE');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseState && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseState &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// When set to `PAUSED`, the rollout is frozen at the current percentage until continued.
 final class GetRollingReleaseResponseRollingReleaseSubstate {
-
   final String value;
 
   const GetRollingReleaseResponseRollingReleaseSubstate._(this.value);
 
-  factory GetRollingReleaseResponseRollingReleaseSubstate.fromJson(String value) => GetRollingReleaseResponseRollingReleaseSubstate._(value);
+  factory GetRollingReleaseResponseRollingReleaseSubstate.fromJson(
+          String value) =>
+      GetRollingReleaseResponseRollingReleaseSubstate._(value);
 
-  static const paused = GetRollingReleaseResponseRollingReleaseSubstate._('PAUSED');
+  static const paused =
+      GetRollingReleaseResponseRollingReleaseSubstate._('PAUSED');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRollingReleaseResponseRollingReleaseSubstate && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRollingReleaseResponseRollingReleaseSubstate &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage is the final stage (targetPercentage === 100)
 final class ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage {
-
   final bool value;
 
-  const ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(this.value);
+  const ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(
+      this.value);
 
-  factory ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage.fromJson(bool value) => ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(value);
+  factory ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage.fromJson(
+          bool value) =>
+      ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(
+          value);
 
-  static const false_ = ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(false);
-  static const true_ = ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(true);
+  static const false_ =
+      ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(
+          false);
+  static const true_ =
+      ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ApproveRollingReleaseStageResponseRollingReleaseActiveStageIsFinalStage &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to linearly shift traffic over the duration of this stage
 final class ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift {
-
   final bool value;
 
-  const ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(this.value);
+  const ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(
+      this.value);
 
-  factory ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift.fromJson(bool value) => ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(value);
+  factory ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift.fromJson(
+          bool value) =>
+      ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(
+          value);
 
-  static const false_ = ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(false);
-  static const true_ = ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(true);
+  static const false_ =
+      ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(
+          false);
+  static const true_ =
+      ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ApproveRollingReleaseStageResponseRollingReleaseActiveStageLinearShift &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

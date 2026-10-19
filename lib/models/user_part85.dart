@@ -8,266 +8,485 @@ part of 'user.dart';
 class UserEventPayloadVariant249 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectorId` wire field.
   final String connectorId;
+
   /// Required `string` value serialized in the `connectorService` wire field.
   final String connectorService;
+
   /// Required `string` value serialized in the `connectorType` wire field.
   final String connectorType;
+
   /// Optional enumerated value serialized in the `emailVerified` wire field.
   final SdkOptional<UserEventPayloadVariant249EmailVerified> emailVerified;
+
   /// Required `string` value serialized in the `environment` wire field.
   final String environment;
+
   /// Required `string` value serialized in the `externalIssuer` wire field.
   final String externalIssuer;
+
   /// Required `string` value serialized in the `externalSubject` wire field.
   final String externalSubject;
+
   /// Required `string` value serialized in the `host` wire field.
   final String host;
+
   /// Optional `string` value serialized in the `installationId` wire field.
   final SdkOptional<String> installationId;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `sessionId` wire field.
   final String sessionId;
+
   /// Optional `string` value serialized in the `tenantId` wire field.
   final SdkOptional<String> tenantId;
 
-  const UserEventPayloadVariant249({required this.connectorId, required this.connectorService, required this.connectorType, this.emailVerified = const SdkOmitted(), required this.environment, required this.externalIssuer, required this.externalSubject, required this.host, this.installationId = const SdkOmitted(), required this.projectId, required this.sessionId, this.tenantId = const SdkOmitted()});
+  const UserEventPayloadVariant249(
+      {required this.connectorId,
+      required this.connectorService,
+      required this.connectorType,
+      this.emailVerified = const SdkOmitted(),
+      required this.environment,
+      required this.externalIssuer,
+      required this.externalSubject,
+      required this.host,
+      this.installationId = const SdkOmitted(),
+      required this.projectId,
+      required this.sessionId,
+      this.tenantId = const SdkOmitted()});
 
-  UserEventPayloadVariant249 Function({String connectorId, String connectorService, String connectorType, SdkOptional<UserEventPayloadVariant249EmailVerified> emailVerified, String environment, String externalIssuer, String externalSubject, String host, SdkOptional<String> installationId, String projectId, String sessionId, SdkOptional<String> tenantId}) get copyWith => _copyWith;
+  UserEventPayloadVariant249 Function(
+      {String connectorId,
+      String connectorService,
+      String connectorType,
+      SdkOptional<UserEventPayloadVariant249EmailVerified> emailVerified,
+      String environment,
+      String externalIssuer,
+      String externalSubject,
+      String host,
+      SdkOptional<String> installationId,
+      String projectId,
+      String sessionId,
+      SdkOptional<String> tenantId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant249 _copyWith({Object? connectorId = sdkOmittedValue, Object? connectorService = sdkOmittedValue, Object? connectorType = sdkOmittedValue, Object? emailVerified = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? externalIssuer = sdkOmittedValue, Object? externalSubject = sdkOmittedValue, Object? host = sdkOmittedValue, Object? installationId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? sessionId = sdkOmittedValue, Object? tenantId = sdkOmittedValue}) => UserEventPayloadVariant249(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    connectorService: identical(connectorService, sdkOmittedValue) ? this.connectorService : connectorService as String,
-    connectorType: identical(connectorType, sdkOmittedValue) ? this.connectorType : connectorType as String,
-    emailVerified: identical(emailVerified, sdkOmittedValue) ? this.emailVerified : emailVerified as SdkOptional<UserEventPayloadVariant249EmailVerified>,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
-    externalIssuer: identical(externalIssuer, sdkOmittedValue) ? this.externalIssuer : externalIssuer as String,
-    externalSubject: identical(externalSubject, sdkOmittedValue) ? this.externalSubject : externalSubject as String,
-    host: identical(host, sdkOmittedValue) ? this.host : host as String,
-    installationId: identical(installationId, sdkOmittedValue) ? this.installationId : installationId as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    sessionId: identical(sessionId, sdkOmittedValue) ? this.sessionId : sessionId as String,
-    tenantId: identical(tenantId, sdkOmittedValue) ? this.tenantId : tenantId as SdkOptional<String>,
-  );
+  UserEventPayloadVariant249 _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? connectorService = sdkOmittedValue,
+          Object? connectorType = sdkOmittedValue,
+          Object? emailVerified = sdkOmittedValue,
+          Object? environment = sdkOmittedValue,
+          Object? externalIssuer = sdkOmittedValue,
+          Object? externalSubject = sdkOmittedValue,
+          Object? host = sdkOmittedValue,
+          Object? installationId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? sessionId = sdkOmittedValue,
+          Object? tenantId = sdkOmittedValue}) =>
+      UserEventPayloadVariant249(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        connectorService: identical(connectorService, sdkOmittedValue)
+            ? this.connectorService
+            : connectorService as String,
+        connectorType: identical(connectorType, sdkOmittedValue)
+            ? this.connectorType
+            : connectorType as String,
+        emailVerified: identical(emailVerified, sdkOmittedValue)
+            ? this.emailVerified
+            : emailVerified
+                as SdkOptional<UserEventPayloadVariant249EmailVerified>,
+        environment: identical(environment, sdkOmittedValue)
+            ? this.environment
+            : environment as String,
+        externalIssuer: identical(externalIssuer, sdkOmittedValue)
+            ? this.externalIssuer
+            : externalIssuer as String,
+        externalSubject: identical(externalSubject, sdkOmittedValue)
+            ? this.externalSubject
+            : externalSubject as String,
+        host: identical(host, sdkOmittedValue) ? this.host : host as String,
+        installationId: identical(installationId, sdkOmittedValue)
+            ? this.installationId
+            : installationId as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        sessionId: identical(sessionId, sdkOmittedValue)
+            ? this.sessionId
+            : sessionId as String,
+        tenantId: identical(tenantId, sdkOmittedValue)
+            ? this.tenantId
+            : tenantId as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant249.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant249(
-    connectorId: (json['connectorId'] as String?)!,
-    connectorService: (json['connectorService'] as String?)!,
-    connectorType: (json['connectorType'] as String?)!,
-    emailVerified: json['emailVerified'] != null ? SdkPresent((json['emailVerified'] != null ? UserEventPayloadVariant249EmailVerified.fromJson(json['emailVerified'] as bool) : null)!) : const SdkOmitted(),
-    environment: (json['environment'] as String?)!,
-    externalIssuer: (json['externalIssuer'] as String?)!,
-    externalSubject: (json['externalSubject'] as String?)!,
-    host: (json['host'] as String?)!,
-    installationId: json['installationId'] != null ? SdkPresent((json['installationId'] as String?)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    sessionId: (json['sessionId'] as String?)!,
-    tenantId: json['tenantId'] != null ? SdkPresent((json['tenantId'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant249.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant249(
+        connectorId: (json['connectorId'] as String?)!,
+        connectorService: (json['connectorService'] as String?)!,
+        connectorType: (json['connectorType'] as String?)!,
+        emailVerified: json['emailVerified'] != null
+            ? SdkPresent((json['emailVerified'] != null
+                ? UserEventPayloadVariant249EmailVerified.fromJson(
+                    json['emailVerified'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        environment: (json['environment'] as String?)!,
+        externalIssuer: (json['externalIssuer'] as String?)!,
+        externalSubject: (json['externalSubject'] as String?)!,
+        host: (json['host'] as String?)!,
+        installationId: json['installationId'] != null
+            ? SdkPresent((json['installationId'] as String?)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        sessionId: (json['sessionId'] as String?)!,
+        tenantId: json['tenantId'] != null
+            ? SdkPresent((json['tenantId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'connectorService': connectorService,
-    'connectorType': connectorType,
-    ...switch (emailVerified) {
-      SdkPresent<UserEventPayloadVariant249EmailVerified>(value: final value) => {'emailVerified': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'environment': environment,
-    'externalIssuer': externalIssuer,
-    'externalSubject': externalSubject,
-    'host': host,
-    ...switch (installationId) {
-      SdkPresent<String>(value: final value) => {'installationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'sessionId': sessionId,
-    ...switch (tenantId) {
-      SdkPresent<String>(value: final value) => {'tenantId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'connectorId': connectorId,
+        'connectorService': connectorService,
+        'connectorType': connectorType,
+        ...switch (emailVerified) {
+          SdkPresent<UserEventPayloadVariant249EmailVerified>(
+            value: final value
+          ) =>
+            {
+              'emailVerified': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'environment': environment,
+        'externalIssuer': externalIssuer,
+        'externalSubject': externalSubject,
+        'host': host,
+        ...switch (installationId) {
+          SdkPresent<String>(value: final value) => {
+              'installationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'sessionId': sessionId,
+        ...switch (tenantId) {
+          SdkPresent<String>(value: final value) => {
+              'tenantId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `passport` wire field.
 class UserEventPayloadVariant250NextPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectorId` wire field.
   final String connectorId;
+
   /// Required enumerated value serialized in the `deploymentType` wire field.
   final UserEventPayloadVariant250NextPassportDeploymentType deploymentType;
 
-  const UserEventPayloadVariant250NextPassport({required this.connectorId, required this.deploymentType});
+  const UserEventPayloadVariant250NextPassport(
+      {required this.connectorId, required this.deploymentType});
 
-  UserEventPayloadVariant250NextPassport Function({String connectorId, UserEventPayloadVariant250NextPassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  UserEventPayloadVariant250NextPassport Function(
+          {String connectorId,
+          UserEventPayloadVariant250NextPassportDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant250NextPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UserEventPayloadVariant250NextPassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UserEventPayloadVariant250NextPassportDeploymentType,
-  );
+  UserEventPayloadVariant250NextPassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      UserEventPayloadVariant250NextPassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UserEventPayloadVariant250NextPassportDeploymentType,
+      );
 
-  factory UserEventPayloadVariant250NextPassport.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant250NextPassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? UserEventPayloadVariant250NextPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant250NextPassport.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant250NextPassport(
+        connectorId: (json['connectorId'] as String?)!,
+        deploymentType: (json['deploymentType'] != null
+            ? UserEventPayloadVariant250NextPassportDeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Required object value serialized in the `next` wire field.
 class UserEventPayloadVariant250Next {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `passport` wire field.
   final SdkOptional<UserEventPayloadVariant250NextPassport?> passport;
 
   const UserEventPayloadVariant250Next({this.passport = const SdkOmitted()});
 
-  UserEventPayloadVariant250Next Function({SdkOptional<UserEventPayloadVariant250NextPassport?> passport}) get copyWith => _copyWith;
+  UserEventPayloadVariant250Next Function(
+          {SdkOptional<UserEventPayloadVariant250NextPassport?> passport})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant250Next _copyWith({Object? passport = sdkOmittedValue}) => UserEventPayloadVariant250Next(
-    passport: identical(passport, sdkOmittedValue) ? this.passport : passport as SdkOptional<UserEventPayloadVariant250NextPassport?>,
-  );
+  UserEventPayloadVariant250Next _copyWith(
+          {Object? passport = sdkOmittedValue}) =>
+      UserEventPayloadVariant250Next(
+        passport: identical(passport, sdkOmittedValue)
+            ? this.passport
+            : passport as SdkOptional<UserEventPayloadVariant250NextPassport?>,
+      );
 
-  factory UserEventPayloadVariant250Next.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant250Next(
-    passport: json.containsKey('passport') ? SdkPresent(json['passport'] != null ? UserEventPayloadVariant250NextPassport.fromJson(json['passport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant250Next.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant250Next(
+        passport: json.containsKey('passport')
+            ? SdkPresent(json['passport'] != null
+                ? UserEventPayloadVariant250NextPassport.fromJson(
+                    json['passport'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (passport) {
-      SdkPresent<UserEventPayloadVariant250NextPassport?>(value: final value) => {'passport': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (passport) {
+          SdkPresent<UserEventPayloadVariant250NextPassport?>(
+            value: final value
+          ) =>
+            {
+              'passport': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional object value serialized in the `passport` wire field.
 class UserEventPayloadVariant250PreviousPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectorId` wire field.
   final String connectorId;
+
   /// Required enumerated value serialized in the `deploymentType` wire field.
   final UserEventPayloadVariant250PreviousPassportDeploymentType deploymentType;
 
-  const UserEventPayloadVariant250PreviousPassport({required this.connectorId, required this.deploymentType});
+  const UserEventPayloadVariant250PreviousPassport(
+      {required this.connectorId, required this.deploymentType});
 
-  UserEventPayloadVariant250PreviousPassport Function({String connectorId, UserEventPayloadVariant250PreviousPassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  UserEventPayloadVariant250PreviousPassport Function(
+      {String connectorId,
+      UserEventPayloadVariant250PreviousPassportDeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant250PreviousPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UserEventPayloadVariant250PreviousPassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UserEventPayloadVariant250PreviousPassportDeploymentType,
-  );
+  UserEventPayloadVariant250PreviousPassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      UserEventPayloadVariant250PreviousPassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UserEventPayloadVariant250PreviousPassportDeploymentType,
+      );
 
-  factory UserEventPayloadVariant250PreviousPassport.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant250PreviousPassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? UserEventPayloadVariant250PreviousPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant250PreviousPassport.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant250PreviousPassport(
+        connectorId: (json['connectorId'] as String?)!,
+        deploymentType: (json['deploymentType'] != null
+            ? UserEventPayloadVariant250PreviousPassportDeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 /// Required object value serialized in the `previous` wire field.
 class UserEventPayloadVariant250Previous {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `passport` wire field.
   final SdkOptional<UserEventPayloadVariant250PreviousPassport?> passport;
 
-  const UserEventPayloadVariant250Previous({this.passport = const SdkOmitted()});
+  const UserEventPayloadVariant250Previous(
+      {this.passport = const SdkOmitted()});
 
-  UserEventPayloadVariant250Previous Function({SdkOptional<UserEventPayloadVariant250PreviousPassport?> passport}) get copyWith => _copyWith;
+  UserEventPayloadVariant250Previous Function(
+          {SdkOptional<UserEventPayloadVariant250PreviousPassport?> passport})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant250Previous _copyWith({Object? passport = sdkOmittedValue}) => UserEventPayloadVariant250Previous(
-    passport: identical(passport, sdkOmittedValue) ? this.passport : passport as SdkOptional<UserEventPayloadVariant250PreviousPassport?>,
-  );
+  UserEventPayloadVariant250Previous _copyWith(
+          {Object? passport = sdkOmittedValue}) =>
+      UserEventPayloadVariant250Previous(
+        passport: identical(passport, sdkOmittedValue)
+            ? this.passport
+            : passport
+                as SdkOptional<UserEventPayloadVariant250PreviousPassport?>,
+      );
 
-  factory UserEventPayloadVariant250Previous.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant250Previous(
-    passport: json.containsKey('passport') ? SdkPresent(json['passport'] != null ? UserEventPayloadVariant250PreviousPassport.fromJson(json['passport'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant250Previous.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant250Previous(
+        passport: json.containsKey('passport')
+            ? SdkPresent(json['passport'] != null
+                ? UserEventPayloadVariant250PreviousPassport.fromJson(
+                    json['passport'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (passport) {
-      SdkPresent<UserEventPayloadVariant250PreviousPassport?>(value: final value) => {'passport': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (passport) {
+          SdkPresent<UserEventPayloadVariant250PreviousPassport?>(
+            value: final value
+          ) =>
+            {
+              'passport': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant250 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `next` wire field.
   final UserEventPayloadVariant250Next next;
+
   /// Required object value serialized in the `previous` wire field.
   final UserEventPayloadVariant250Previous previous;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
 
-  const UserEventPayloadVariant250({required this.next, required this.previous, required this.projectId, required this.projectName});
+  const UserEventPayloadVariant250(
+      {required this.next,
+      required this.previous,
+      required this.projectId,
+      required this.projectName});
 
-  UserEventPayloadVariant250 Function({UserEventPayloadVariant250Next next, UserEventPayloadVariant250Previous previous, String projectId, String projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant250 Function(
+      {UserEventPayloadVariant250Next next,
+      UserEventPayloadVariant250Previous previous,
+      String projectId,
+      String projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant250 _copyWith({Object? next = sdkOmittedValue, Object? previous = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant250(
-    next: identical(next, sdkOmittedValue) ? this.next : next as UserEventPayloadVariant250Next,
-    previous: identical(previous, sdkOmittedValue) ? this.previous : previous as UserEventPayloadVariant250Previous,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-  );
+  UserEventPayloadVariant250 _copyWith(
+          {Object? next = sdkOmittedValue,
+          Object? previous = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant250(
+        next: identical(next, sdkOmittedValue)
+            ? this.next
+            : next as UserEventPayloadVariant250Next,
+        previous: identical(previous, sdkOmittedValue)
+            ? this.previous
+            : previous as UserEventPayloadVariant250Previous,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+      );
 
-  factory UserEventPayloadVariant250.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant250(
-    next: (json['next'] != null ? UserEventPayloadVariant250Next.fromJson(json['next'] as Map<String, dynamic>) : null)!,
-    previous: (json['previous'] != null ? UserEventPayloadVariant250Previous.fromJson(json['previous'] as Map<String, dynamic>) : null)!,
-    projectId: (json['projectId'] as String?)!,
-    projectName: (json['projectName'] as String?)!,
-  );
+  factory UserEventPayloadVariant250.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant250(
+        next: (json['next'] != null
+            ? UserEventPayloadVariant250Next.fromJson(
+                json['next'] as Map<String, dynamic>)
+            : null)!,
+        previous: (json['previous'] != null
+            ? UserEventPayloadVariant250Previous.fromJson(
+                json['previous'] as Map<String, dynamic>)
+            : null)!,
+        projectId: (json['projectId'] as String?)!,
+        projectName: (json['projectName'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'next': next.toJson(),
-    'previous': previous.toJson(),
-    'projectId': projectId,
-    'projectName': projectName,
-  };
+        'next': next.toJson(),
+        'previous': previous.toJson(),
+        'projectId': projectId,
+        'projectName': projectName,
+      };
 }
 
 /// Optional object value serialized in the `passport` wire field.
 class UserEventPayloadVariant251NextPassport {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `connectorId` wire field.
   final String connectorId;
+
   /// Required enumerated value serialized in the `deploymentType` wire field.
   final UserEventPayloadVariant251NextPassportDeploymentType deploymentType;
 
-  const UserEventPayloadVariant251NextPassport({required this.connectorId, required this.deploymentType});
+  const UserEventPayloadVariant251NextPassport(
+      {required this.connectorId, required this.deploymentType});
 
-  UserEventPayloadVariant251NextPassport Function({String connectorId, UserEventPayloadVariant251NextPassportDeploymentType deploymentType}) get copyWith => _copyWith;
+  UserEventPayloadVariant251NextPassport Function(
+          {String connectorId,
+          UserEventPayloadVariant251NextPassportDeploymentType deploymentType})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant251NextPassport _copyWith({Object? connectorId = sdkOmittedValue, Object? deploymentType = sdkOmittedValue}) => UserEventPayloadVariant251NextPassport(
-    connectorId: identical(connectorId, sdkOmittedValue) ? this.connectorId : connectorId as String,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UserEventPayloadVariant251NextPassportDeploymentType,
-  );
+  UserEventPayloadVariant251NextPassport _copyWith(
+          {Object? connectorId = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue}) =>
+      UserEventPayloadVariant251NextPassport(
+        connectorId: identical(connectorId, sdkOmittedValue)
+            ? this.connectorId
+            : connectorId as String,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UserEventPayloadVariant251NextPassportDeploymentType,
+      );
 
-  factory UserEventPayloadVariant251NextPassport.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant251NextPassport(
-    connectorId: (json['connectorId'] as String?)!,
-    deploymentType: (json['deploymentType'] != null ? UserEventPayloadVariant251NextPassportDeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant251NextPassport.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant251NextPassport(
+        connectorId: (json['connectorId'] as String?)!,
+        deploymentType: (json['deploymentType'] != null
+            ? UserEventPayloadVariant251NextPassportDeploymentType.fromJson(
+                json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'connectorId': connectorId,
-    'deploymentType': deploymentType.toJson(),
-  };
+        'connectorId': connectorId,
+        'deploymentType': deploymentType.toJson(),
+      };
 }

@@ -20,7 +20,8 @@ Future<StageRedirectsResponse> stageRedirects(ClientConfig config,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<bool> overwrite = const SdkOmitted(),
     SdkOptional<String> name = const SdkOmitted(),
-    SdkOptional<List<StageRedirectsRequestBodyRedirectsItem>> redirects = const SdkOmitted(),
+    SdkOptional<List<StageRedirectsRequestBodyRedirectsItem>> redirects =
+        const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (name is SdkPresent<String>) {
     validateLength('name', name.value, max: 256);
@@ -29,8 +30,10 @@ Future<StageRedirectsResponse> stageRedirects(ClientConfig config,
   return (await sdkRequest<StageRedirectsResponse>('PUT', '/v1/bulk-redirects',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId_2), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId_2),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'projectId': projectId,
@@ -41,11 +44,11 @@ Future<StageRedirectsResponse> stageRedirects(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'stageRedirects',
-          fromJsonRaw: (value) => StageRedirectsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              StageRedirectsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists project-level bulk redirects, with optional filtering and sorting. Use `projectId` to identify the project, and `page` and `per_page` to paginate the results.
 ///
@@ -76,15 +79,24 @@ Future<dynamic> getRedirects(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'versionId': SdkQueryValue(SdkUtils.unwrapOptional(versionId), style: 'form', explode: true),
-            'q': SdkQueryValue(SdkUtils.unwrapOptional(q), style: 'form', explode: true),
-            'diff': SdkQueryValue(SdkUtils.unwrapOptional(diff), style: 'form', explode: true),
-            'page': SdkQueryValue(SdkUtils.unwrapOptional(page), style: 'form', explode: true),
-            'per_page': SdkQueryValue(SdkUtils.unwrapOptional(perPage), style: 'form', explode: true),
-            'sort_by': SdkQueryValue(SdkUtils.unwrapOptional(sortBy), style: 'form', explode: true),
-            'sort_order': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'versionId': SdkQueryValue(SdkUtils.unwrapOptional(versionId),
+                style: 'form', explode: true),
+            'q': SdkQueryValue(SdkUtils.unwrapOptional(q),
+                style: 'form', explode: true),
+            'diff': SdkQueryValue(SdkUtils.unwrapOptional(diff),
+                style: 'form', explode: true),
+            'page': SdkQueryValue(SdkUtils.unwrapOptional(page),
+                style: 'form', explode: true),
+            'per_page': SdkQueryValue(SdkUtils.unwrapOptional(perPage),
+                style: 'form', explode: true),
+            'sort_by': SdkQueryValue(SdkUtils.unwrapOptional(sortBy),
+                style: 'form', explode: true),
+            'sort_order': SdkQueryValue(SdkUtils.unwrapOptional(sortOrder),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRedirects',
@@ -92,7 +104,6 @@ Future<dynamic> getRedirects(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes specified redirects from the latest staged version for a project and stages the resulting changes. Provide the redirect source paths in `redirects`; the response includes the alias for the new version.
 ///
@@ -119,8 +130,10 @@ Future<DeleteRedirectsResponse> deleteRedirects(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'redirects': redirects, 'name': SdkUtils.unwrapOptional(name)},
           decoder: SdkResponseDecoder.json,
@@ -129,7 +142,6 @@ Future<DeleteRedirectsResponse> deleteRedirects(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Updates a single staged project redirect by matching its source path, then stages a new version. Supply the redirect's `source` in the body; use `restore` to restore that redirect from the latest production version to staging.
 ///
@@ -157,8 +169,10 @@ Future<EditRedirectResponse> editRedirect(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'redirect': redirect,
@@ -167,11 +181,11 @@ Future<EditRedirectResponse> editRedirect(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'editRedirect',
-          fromJsonRaw: (value) => EditRedirectResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              EditRedirectResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Restores specified staged redirects to their values in the production version, or removes them from staging if no production version exists. Provide the redirect source paths in `redirects`; the response reports which paths were restored and which could not be restored.
 ///
@@ -198,17 +212,19 @@ Future<RestoreRedirectsResponse> restoreRedirects(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'redirects': redirects, 'name': SdkUtils.unwrapOptional(name)},
           decoder: SdkResponseDecoder.json,
           operationId: 'restoreRedirects',
-          fromJsonRaw: (value) => RestoreRedirectsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              RestoreRedirectsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists the version history for a project's bulk redirects. Supply `projectId` to identify the project and use the Team parameters to perform the request on behalf of a Team.
 ///
@@ -226,16 +242,18 @@ Future<GetVersionsResponse> getVersions(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getVersions',
-          fromJsonRaw: (value) => GetVersionsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetVersionsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Changes a bulk redirect version by promoting staging, restoring a previous production version, or discarding a version. Supply the version `id` and an `action`; the response contains the updated version details.
 ///
@@ -260,8 +278,10 @@ Future<UpdateVersionResponse> updateVersion(ClientConfig config,
           config: config,
           query: {
             'projectId': SdkQueryValue(projectId, style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {
             'id': id,
@@ -270,7 +290,8 @@ Future<UpdateVersionResponse> updateVersion(ClientConfig config,
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'updateVersion',
-          fromJsonRaw: (value) => UpdateVersionResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              UpdateVersionResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

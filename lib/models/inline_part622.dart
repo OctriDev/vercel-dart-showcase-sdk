@@ -8,317 +8,861 @@ class GetDeploymentsResponseDeploymentsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<dynamic> aliasAssigned;
+
   /// An error object in case aliasing of the deployment failed.
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemAliasError?> aliasError;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemAliasError?>
+      aliasError;
+
   /// Commit attribution metadata
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemAttribution> attribution;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemAttribution>
+      attribution;
+
   /// Timestamp of when the deployment started building at.
   final SdkOptional<double> buildingAt;
+
   /// Detailed information about v2 deployment checks. Includes information about blocked workflows in the deployment lifecycle.
   final SdkOptional<GetDeploymentsResponseDeploymentsItemChecks> checks;
+
   /// Conclusion for checks
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemChecksConclusion> checksConclusion;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemChecksConclusion>
+      checksConclusion;
+
   /// State of all registered checks
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemChecksState> checksState;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemChecksState>
+      checksState;
+
   /// The flag saying if Secure Compute network is used for builds
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled> connectBuildsEnabled;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled>
+      connectBuildsEnabled;
+
   /// The ID of Secure Compute network used for this deployment
   final SdkOptional<String> connectConfigurationId;
+
   /// Timestamp of when the deployment got created.
   final double created;
   final double createdAt;
+
   /// Metadata information of the deployment creator.
   final GetDeploymentsResponseDeploymentsItemCreator creator;
+
   /// The custom environment used for this deployment, if any
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemCustomEnvironment> customEnvironment;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemCustomEnvironment>
+      customEnvironment;
+
   /// The default route that should be used for screenshots and links if configured with microfrontends.
   final SdkOptional<String> defaultRoute;
+
   /// Timestamp of when the deployment got deleted.
   final SdkOptional<double> deleted;
+
   /// Error code when the deployment is in an error state.
   final SdkOptional<String> errorCode;
+
   /// Error message when the deployment is in an canceled or error state.
   final SdkOptional<String?> errorMessage;
+
   /// The expiration configured by the project retention policy
   final SdkOptional<double> expiration;
+
   /// Vercel URL to inspect the deployment.
   final String? inspectorUrl;
+
   /// Deployment can be used for instant rollback
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?> isRollbackCandidate;
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemManualProvisioning> manualProvisioning;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?>
+      isRollbackCandidate;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemManualProvisioning>
+      manualProvisioning;
+
   /// Metadata information from the Git provider.
   final SdkOptional<Map<String, String>> meta;
+
   /// The name of the deployment.
   final String name;
+
   /// Indicates if the deployment encountered an out-of-memory error.
   final SdkOptional<GetDeploymentsResponseDeploymentsItemOomReport> oomReport;
+
   /// The ID of Secure Compute network used for this deployment's passive functions
   final SdkOptional<String> passiveConnectConfigurationId;
+
   /// Metadata about the source platform that triggered the deployment.
   final SdkOptional<GetDeploymentsResponseDeploymentsItemPlatform> platform;
   final SdkOptional<GetDeploymentsResponseDeploymentsItemPrebuilt> prebuilt;
+
   /// The project ID of the deployment
   final String projectId;
+
   /// The project settings which was used for this deployment
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettings> projectSettings;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettings>
+      projectSettings;
+
   /// The expiration proposed to replace the existing expiration
   final SdkOptional<double> proposedExpiration;
+
   /// Timestamp of when the deployment got ready.
   final SdkOptional<double> ready;
   final GetDeploymentsResponseDeploymentsItemReadyState readyState;
+
   /// Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of gradually transitioning production traffic - PROMOTED: has seen production traffic
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemReadySubstate> readySubstate;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemReadySubstate>
+      readySubstate;
+
   /// NSNB Blocked metadata
   final SdkOptional<GetDeploymentsResponseDeploymentsItemSeatBlock> seatBlock;
+
   /// Optional flag to indicate if the deployment was soft deleted by retention policy.
-  final SdkOptional<GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention> softDeletedByRetention;
+  final SdkOptional<GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention>
+      softDeletedByRetention;
+
   /// The source of the deployment.
   final SdkOptional<GetDeploymentsResponseDeploymentsItemSource> source;
+
   /// In which state is the deployment.
   final SdkOptional<GetDeploymentsResponseDeploymentsItemState> state;
+
   /// On which environment has the deployment been deployed to.
   final SdkOptional<GetDeploymentsResponseDeploymentsItemTarget?> target;
+
   /// The type of the deployment.
   final GetDeploymentsResponseDeploymentsItemType type_;
+
   /// The unique identifier of the deployment.
   final String uid;
+
   /// Timestamp of when the deployment was undeleted.
   final SdkOptional<double> undeleted;
+
   /// The URL of the deployment.
   final String url;
 
-  const GetDeploymentsResponseDeploymentsItem({this.aliasAssigned = const SdkOmitted(), this.aliasError = const SdkOmitted(), this.attribution = const SdkOmitted(), this.buildingAt = const SdkOmitted(), this.checks = const SdkOmitted(), this.checksConclusion = const SdkOmitted(), this.checksState = const SdkOmitted(), this.connectBuildsEnabled = const SdkOmitted(), this.connectConfigurationId = const SdkOmitted(), required this.created, required this.createdAt, required this.creator, this.customEnvironment = const SdkOmitted(), this.defaultRoute = const SdkOmitted(), this.deleted = const SdkOmitted(), this.errorCode = const SdkOmitted(), this.errorMessage = const SdkOmitted(), this.expiration = const SdkOmitted(), required this.inspectorUrl, this.isRollbackCandidate = const SdkOmitted(), this.manualProvisioning = const SdkOmitted(), this.meta = const SdkOmitted(), required this.name, this.oomReport = const SdkOmitted(), this.passiveConnectConfigurationId = const SdkOmitted(), this.platform = const SdkOmitted(), this.prebuilt = const SdkOmitted(), required this.projectId, this.projectSettings = const SdkOmitted(), this.proposedExpiration = const SdkOmitted(), this.ready = const SdkOmitted(), required this.readyState, this.readySubstate = const SdkOmitted(), this.seatBlock = const SdkOmitted(), this.softDeletedByRetention = const SdkOmitted(), this.source = const SdkOmitted(), this.state = const SdkOmitted(), this.target = const SdkOmitted(), required this.type_, required this.uid, this.undeleted = const SdkOmitted(), required this.url});
+  const GetDeploymentsResponseDeploymentsItem(
+      {this.aliasAssigned = const SdkOmitted(),
+      this.aliasError = const SdkOmitted(),
+      this.attribution = const SdkOmitted(),
+      this.buildingAt = const SdkOmitted(),
+      this.checks = const SdkOmitted(),
+      this.checksConclusion = const SdkOmitted(),
+      this.checksState = const SdkOmitted(),
+      this.connectBuildsEnabled = const SdkOmitted(),
+      this.connectConfigurationId = const SdkOmitted(),
+      required this.created,
+      required this.createdAt,
+      required this.creator,
+      this.customEnvironment = const SdkOmitted(),
+      this.defaultRoute = const SdkOmitted(),
+      this.deleted = const SdkOmitted(),
+      this.errorCode = const SdkOmitted(),
+      this.errorMessage = const SdkOmitted(),
+      this.expiration = const SdkOmitted(),
+      required this.inspectorUrl,
+      this.isRollbackCandidate = const SdkOmitted(),
+      this.manualProvisioning = const SdkOmitted(),
+      this.meta = const SdkOmitted(),
+      required this.name,
+      this.oomReport = const SdkOmitted(),
+      this.passiveConnectConfigurationId = const SdkOmitted(),
+      this.platform = const SdkOmitted(),
+      this.prebuilt = const SdkOmitted(),
+      required this.projectId,
+      this.projectSettings = const SdkOmitted(),
+      this.proposedExpiration = const SdkOmitted(),
+      this.ready = const SdkOmitted(),
+      required this.readyState,
+      this.readySubstate = const SdkOmitted(),
+      this.seatBlock = const SdkOmitted(),
+      this.softDeletedByRetention = const SdkOmitted(),
+      this.source = const SdkOmitted(),
+      this.state = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      required this.type_,
+      required this.uid,
+      this.undeleted = const SdkOmitted(),
+      required this.url});
 
-  GetDeploymentsResponseDeploymentsItem Function({SdkOptional<dynamic> aliasAssigned, SdkOptional<GetDeploymentsResponseDeploymentsItemAliasError?> aliasError, SdkOptional<GetDeploymentsResponseDeploymentsItemAttribution> attribution, SdkOptional<double> buildingAt, SdkOptional<GetDeploymentsResponseDeploymentsItemChecks> checks, SdkOptional<GetDeploymentsResponseDeploymentsItemChecksConclusion> checksConclusion, SdkOptional<GetDeploymentsResponseDeploymentsItemChecksState> checksState, SdkOptional<GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled> connectBuildsEnabled, SdkOptional<String> connectConfigurationId, double created, double createdAt, GetDeploymentsResponseDeploymentsItemCreator creator, SdkOptional<GetDeploymentsResponseDeploymentsItemCustomEnvironment> customEnvironment, SdkOptional<String> defaultRoute, SdkOptional<double> deleted, SdkOptional<String> errorCode, SdkOptional<String?> errorMessage, SdkOptional<double> expiration, String? inspectorUrl, SdkOptional<GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?> isRollbackCandidate, SdkOptional<GetDeploymentsResponseDeploymentsItemManualProvisioning> manualProvisioning, SdkOptional<Map<String, String>> meta, String name, SdkOptional<GetDeploymentsResponseDeploymentsItemOomReport> oomReport, SdkOptional<String> passiveConnectConfigurationId, SdkOptional<GetDeploymentsResponseDeploymentsItemPlatform> platform, SdkOptional<GetDeploymentsResponseDeploymentsItemPrebuilt> prebuilt, String projectId, SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettings> projectSettings, SdkOptional<double> proposedExpiration, SdkOptional<double> ready, GetDeploymentsResponseDeploymentsItemReadyState readyState, SdkOptional<GetDeploymentsResponseDeploymentsItemReadySubstate> readySubstate, SdkOptional<GetDeploymentsResponseDeploymentsItemSeatBlock> seatBlock, SdkOptional<GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention> softDeletedByRetention, SdkOptional<GetDeploymentsResponseDeploymentsItemSource> source, SdkOptional<GetDeploymentsResponseDeploymentsItemState> state, SdkOptional<GetDeploymentsResponseDeploymentsItemTarget?> target, GetDeploymentsResponseDeploymentsItemType type_, String uid, SdkOptional<double> undeleted, String url}) get copyWith => _copyWith;
+  GetDeploymentsResponseDeploymentsItem Function(
+      {SdkOptional<dynamic> aliasAssigned,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemAliasError?> aliasError,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemAttribution> attribution,
+      SdkOptional<double> buildingAt,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemChecks> checks,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemChecksConclusion>
+          checksConclusion,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemChecksState> checksState,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled>
+          connectBuildsEnabled,
+      SdkOptional<String> connectConfigurationId,
+      double created,
+      double createdAt,
+      GetDeploymentsResponseDeploymentsItemCreator creator,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemCustomEnvironment>
+          customEnvironment,
+      SdkOptional<String> defaultRoute,
+      SdkOptional<double> deleted,
+      SdkOptional<String> errorCode,
+      SdkOptional<String?> errorMessage,
+      SdkOptional<double> expiration,
+      String? inspectorUrl,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?>
+          isRollbackCandidate,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemManualProvisioning>
+          manualProvisioning,
+      SdkOptional<Map<String, String>> meta,
+      String name,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemOomReport> oomReport,
+      SdkOptional<String> passiveConnectConfigurationId,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemPlatform> platform,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemPrebuilt> prebuilt,
+      String projectId,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettings>
+          projectSettings,
+      SdkOptional<double> proposedExpiration,
+      SdkOptional<double> ready,
+      GetDeploymentsResponseDeploymentsItemReadyState readyState,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemReadySubstate>
+          readySubstate,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemSeatBlock> seatBlock,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention>
+          softDeletedByRetention,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemSource> source,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemState> state,
+      SdkOptional<GetDeploymentsResponseDeploymentsItemTarget?> target,
+      GetDeploymentsResponseDeploymentsItemType type_,
+      String uid,
+      SdkOptional<double> undeleted,
+      String url}) get copyWith => _copyWith;
 
-  GetDeploymentsResponseDeploymentsItem _copyWith({Object? aliasAssigned = sdkOmittedValue, Object? aliasError = sdkOmittedValue, Object? attribution = sdkOmittedValue, Object? buildingAt = sdkOmittedValue, Object? checks = sdkOmittedValue, Object? checksConclusion = sdkOmittedValue, Object? checksState = sdkOmittedValue, Object? connectBuildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? created = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? creator = sdkOmittedValue, Object? customEnvironment = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue, Object? deleted = sdkOmittedValue, Object? errorCode = sdkOmittedValue, Object? errorMessage = sdkOmittedValue, Object? expiration = sdkOmittedValue, Object? inspectorUrl = sdkOmittedValue, Object? isRollbackCandidate = sdkOmittedValue, Object? manualProvisioning = sdkOmittedValue, Object? meta = sdkOmittedValue, Object? name = sdkOmittedValue, Object? oomReport = sdkOmittedValue, Object? passiveConnectConfigurationId = sdkOmittedValue, Object? platform = sdkOmittedValue, Object? prebuilt = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectSettings = sdkOmittedValue, Object? proposedExpiration = sdkOmittedValue, Object? ready = sdkOmittedValue, Object? readyState = sdkOmittedValue, Object? readySubstate = sdkOmittedValue, Object? seatBlock = sdkOmittedValue, Object? softDeletedByRetention = sdkOmittedValue, Object? source = sdkOmittedValue, Object? state = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? undeleted = sdkOmittedValue, Object? url = sdkOmittedValue}) => GetDeploymentsResponseDeploymentsItem(
-    aliasAssigned: identical(aliasAssigned, sdkOmittedValue) ? this.aliasAssigned : aliasAssigned as SdkOptional<dynamic>,
-    aliasError: identical(aliasError, sdkOmittedValue) ? this.aliasError : aliasError as SdkOptional<GetDeploymentsResponseDeploymentsItemAliasError?>,
-    attribution: identical(attribution, sdkOmittedValue) ? this.attribution : attribution as SdkOptional<GetDeploymentsResponseDeploymentsItemAttribution>,
-    buildingAt: identical(buildingAt, sdkOmittedValue) ? this.buildingAt : buildingAt as SdkOptional<double>,
-    checks: identical(checks, sdkOmittedValue) ? this.checks : checks as SdkOptional<GetDeploymentsResponseDeploymentsItemChecks>,
-    checksConclusion: identical(checksConclusion, sdkOmittedValue) ? this.checksConclusion : checksConclusion as SdkOptional<GetDeploymentsResponseDeploymentsItemChecksConclusion>,
-    checksState: identical(checksState, sdkOmittedValue) ? this.checksState : checksState as SdkOptional<GetDeploymentsResponseDeploymentsItemChecksState>,
-    connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue) ? this.connectBuildsEnabled : connectBuildsEnabled as SdkOptional<GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled>,
-    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as SdkOptional<String>,
-    created: identical(created, sdkOmittedValue) ? this.created : created as double,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    creator: identical(creator, sdkOmittedValue) ? this.creator : creator as GetDeploymentsResponseDeploymentsItemCreator,
-    customEnvironment: identical(customEnvironment, sdkOmittedValue) ? this.customEnvironment : customEnvironment as SdkOptional<GetDeploymentsResponseDeploymentsItemCustomEnvironment>,
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    deleted: identical(deleted, sdkOmittedValue) ? this.deleted : deleted as SdkOptional<double>,
-    errorCode: identical(errorCode, sdkOmittedValue) ? this.errorCode : errorCode as SdkOptional<String>,
-    errorMessage: identical(errorMessage, sdkOmittedValue) ? this.errorMessage : errorMessage as SdkOptional<String?>,
-    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<double>,
-    inspectorUrl: identical(inspectorUrl, sdkOmittedValue) ? this.inspectorUrl : inspectorUrl as String?,
-    isRollbackCandidate: identical(isRollbackCandidate, sdkOmittedValue) ? this.isRollbackCandidate : isRollbackCandidate as SdkOptional<GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?>,
-    manualProvisioning: identical(manualProvisioning, sdkOmittedValue) ? this.manualProvisioning : manualProvisioning as SdkOptional<GetDeploymentsResponseDeploymentsItemManualProvisioning>,
-    meta: identical(meta, sdkOmittedValue) ? this.meta : meta as SdkOptional<Map<String, String>>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    oomReport: identical(oomReport, sdkOmittedValue) ? this.oomReport : oomReport as SdkOptional<GetDeploymentsResponseDeploymentsItemOomReport>,
-    passiveConnectConfigurationId: identical(passiveConnectConfigurationId, sdkOmittedValue) ? this.passiveConnectConfigurationId : passiveConnectConfigurationId as SdkOptional<String>,
-    platform: identical(platform, sdkOmittedValue) ? this.platform : platform as SdkOptional<GetDeploymentsResponseDeploymentsItemPlatform>,
-    prebuilt: identical(prebuilt, sdkOmittedValue) ? this.prebuilt : prebuilt as SdkOptional<GetDeploymentsResponseDeploymentsItemPrebuilt>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectSettings: identical(projectSettings, sdkOmittedValue) ? this.projectSettings : projectSettings as SdkOptional<GetDeploymentsResponseDeploymentsItemProjectSettings>,
-    proposedExpiration: identical(proposedExpiration, sdkOmittedValue) ? this.proposedExpiration : proposedExpiration as SdkOptional<double>,
-    ready: identical(ready, sdkOmittedValue) ? this.ready : ready as SdkOptional<double>,
-    readyState: identical(readyState, sdkOmittedValue) ? this.readyState : readyState as GetDeploymentsResponseDeploymentsItemReadyState,
-    readySubstate: identical(readySubstate, sdkOmittedValue) ? this.readySubstate : readySubstate as SdkOptional<GetDeploymentsResponseDeploymentsItemReadySubstate>,
-    seatBlock: identical(seatBlock, sdkOmittedValue) ? this.seatBlock : seatBlock as SdkOptional<GetDeploymentsResponseDeploymentsItemSeatBlock>,
-    softDeletedByRetention: identical(softDeletedByRetention, sdkOmittedValue) ? this.softDeletedByRetention : softDeletedByRetention as SdkOptional<GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as SdkOptional<GetDeploymentsResponseDeploymentsItemSource>,
-    state: identical(state, sdkOmittedValue) ? this.state : state as SdkOptional<GetDeploymentsResponseDeploymentsItemState>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<GetDeploymentsResponseDeploymentsItemTarget?>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentsResponseDeploymentsItemType,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
-    undeleted: identical(undeleted, sdkOmittedValue) ? this.undeleted : undeleted as SdkOptional<double>,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  GetDeploymentsResponseDeploymentsItem _copyWith(
+          {Object? aliasAssigned = sdkOmittedValue,
+          Object? aliasError = sdkOmittedValue,
+          Object? attribution = sdkOmittedValue,
+          Object? buildingAt = sdkOmittedValue,
+          Object? checks = sdkOmittedValue,
+          Object? checksConclusion = sdkOmittedValue,
+          Object? checksState = sdkOmittedValue,
+          Object? connectBuildsEnabled = sdkOmittedValue,
+          Object? connectConfigurationId = sdkOmittedValue,
+          Object? created = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? creator = sdkOmittedValue,
+          Object? customEnvironment = sdkOmittedValue,
+          Object? defaultRoute = sdkOmittedValue,
+          Object? deleted = sdkOmittedValue,
+          Object? errorCode = sdkOmittedValue,
+          Object? errorMessage = sdkOmittedValue,
+          Object? expiration = sdkOmittedValue,
+          Object? inspectorUrl = sdkOmittedValue,
+          Object? isRollbackCandidate = sdkOmittedValue,
+          Object? manualProvisioning = sdkOmittedValue,
+          Object? meta = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? oomReport = sdkOmittedValue,
+          Object? passiveConnectConfigurationId = sdkOmittedValue,
+          Object? platform = sdkOmittedValue,
+          Object? prebuilt = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectSettings = sdkOmittedValue,
+          Object? proposedExpiration = sdkOmittedValue,
+          Object? ready = sdkOmittedValue,
+          Object? readyState = sdkOmittedValue,
+          Object? readySubstate = sdkOmittedValue,
+          Object? seatBlock = sdkOmittedValue,
+          Object? softDeletedByRetention = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? state = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? undeleted = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      GetDeploymentsResponseDeploymentsItem(
+        aliasAssigned: identical(aliasAssigned, sdkOmittedValue)
+            ? this.aliasAssigned
+            : aliasAssigned as SdkOptional<dynamic>,
+        aliasError: identical(aliasError, sdkOmittedValue)
+            ? this.aliasError
+            : aliasError as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemAliasError?>,
+        attribution: identical(attribution, sdkOmittedValue)
+            ? this.attribution
+            : attribution as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemAttribution>,
+        buildingAt: identical(buildingAt, sdkOmittedValue)
+            ? this.buildingAt
+            : buildingAt as SdkOptional<double>,
+        checks: identical(checks, sdkOmittedValue)
+            ? this.checks
+            : checks
+                as SdkOptional<GetDeploymentsResponseDeploymentsItemChecks>,
+        checksConclusion: identical(checksConclusion, sdkOmittedValue)
+            ? this.checksConclusion
+            : checksConclusion as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemChecksConclusion>,
+        checksState: identical(checksState, sdkOmittedValue)
+            ? this.checksState
+            : checksState as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemChecksState>,
+        connectBuildsEnabled: identical(connectBuildsEnabled, sdkOmittedValue)
+            ? this.connectBuildsEnabled
+            : connectBuildsEnabled as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled>,
+        connectConfigurationId:
+            identical(connectConfigurationId, sdkOmittedValue)
+                ? this.connectConfigurationId
+                : connectConfigurationId as SdkOptional<String>,
+        created: identical(created, sdkOmittedValue)
+            ? this.created
+            : created as double,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        creator: identical(creator, sdkOmittedValue)
+            ? this.creator
+            : creator as GetDeploymentsResponseDeploymentsItemCreator,
+        customEnvironment: identical(customEnvironment, sdkOmittedValue)
+            ? this.customEnvironment
+            : customEnvironment as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemCustomEnvironment>,
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        deleted: identical(deleted, sdkOmittedValue)
+            ? this.deleted
+            : deleted as SdkOptional<double>,
+        errorCode: identical(errorCode, sdkOmittedValue)
+            ? this.errorCode
+            : errorCode as SdkOptional<String>,
+        errorMessage: identical(errorMessage, sdkOmittedValue)
+            ? this.errorMessage
+            : errorMessage as SdkOptional<String?>,
+        expiration: identical(expiration, sdkOmittedValue)
+            ? this.expiration
+            : expiration as SdkOptional<double>,
+        inspectorUrl: identical(inspectorUrl, sdkOmittedValue)
+            ? this.inspectorUrl
+            : inspectorUrl as String?,
+        isRollbackCandidate: identical(isRollbackCandidate, sdkOmittedValue)
+            ? this.isRollbackCandidate
+            : isRollbackCandidate as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?>,
+        manualProvisioning: identical(manualProvisioning, sdkOmittedValue)
+            ? this.manualProvisioning
+            : manualProvisioning as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemManualProvisioning>,
+        meta: identical(meta, sdkOmittedValue)
+            ? this.meta
+            : meta as SdkOptional<Map<String, String>>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        oomReport: identical(oomReport, sdkOmittedValue)
+            ? this.oomReport
+            : oomReport
+                as SdkOptional<GetDeploymentsResponseDeploymentsItemOomReport>,
+        passiveConnectConfigurationId:
+            identical(passiveConnectConfigurationId, sdkOmittedValue)
+                ? this.passiveConnectConfigurationId
+                : passiveConnectConfigurationId as SdkOptional<String>,
+        platform: identical(platform, sdkOmittedValue)
+            ? this.platform
+            : platform
+                as SdkOptional<GetDeploymentsResponseDeploymentsItemPlatform>,
+        prebuilt: identical(prebuilt, sdkOmittedValue)
+            ? this.prebuilt
+            : prebuilt
+                as SdkOptional<GetDeploymentsResponseDeploymentsItemPrebuilt>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectSettings: identical(projectSettings, sdkOmittedValue)
+            ? this.projectSettings
+            : projectSettings as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemProjectSettings>,
+        proposedExpiration: identical(proposedExpiration, sdkOmittedValue)
+            ? this.proposedExpiration
+            : proposedExpiration as SdkOptional<double>,
+        ready: identical(ready, sdkOmittedValue)
+            ? this.ready
+            : ready as SdkOptional<double>,
+        readyState: identical(readyState, sdkOmittedValue)
+            ? this.readyState
+            : readyState as GetDeploymentsResponseDeploymentsItemReadyState,
+        readySubstate: identical(readySubstate, sdkOmittedValue)
+            ? this.readySubstate
+            : readySubstate as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemReadySubstate>,
+        seatBlock: identical(seatBlock, sdkOmittedValue)
+            ? this.seatBlock
+            : seatBlock
+                as SdkOptional<GetDeploymentsResponseDeploymentsItemSeatBlock>,
+        softDeletedByRetention: identical(
+                softDeletedByRetention, sdkOmittedValue)
+            ? this.softDeletedByRetention
+            : softDeletedByRetention as SdkOptional<
+                GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention>,
+        source: identical(source, sdkOmittedValue)
+            ? this.source
+            : source
+                as SdkOptional<GetDeploymentsResponseDeploymentsItemSource>,
+        state: identical(state, sdkOmittedValue)
+            ? this.state
+            : state as SdkOptional<GetDeploymentsResponseDeploymentsItemState>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target
+                as SdkOptional<GetDeploymentsResponseDeploymentsItemTarget?>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetDeploymentsResponseDeploymentsItemType,
+        uid: identical(uid, sdkOmittedValue) ? this.uid : uid as String,
+        undeleted: identical(undeleted, sdkOmittedValue)
+            ? this.undeleted
+            : undeleted as SdkOptional<double>,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory GetDeploymentsResponseDeploymentsItem.fromJson(Map<String, dynamic> json) => GetDeploymentsResponseDeploymentsItem(
-    aliasAssigned: json.containsKey('aliasAssigned') ? SdkPresent(json['aliasAssigned']) : const SdkOmitted(),
-    aliasError: json.containsKey('aliasError') ? SdkPresent(json['aliasError'] != null ? GetDeploymentsResponseDeploymentsItemAliasError.fromJson(json['aliasError'] as Map<String, dynamic>) : null) : const SdkOmitted(),
-    attribution: json['attribution'] != null ? SdkPresent((json['attribution'] != null ? GetDeploymentsResponseDeploymentsItemAttribution.fromJson(json['attribution'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildingAt: json['buildingAt'] != null ? SdkPresent(((json['buildingAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    checks: json['checks'] != null ? SdkPresent((json['checks'] != null ? GetDeploymentsResponseDeploymentsItemChecks.fromJson(json['checks'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    checksConclusion: json['checksConclusion'] != null ? SdkPresent((json['checksConclusion'] != null ? GetDeploymentsResponseDeploymentsItemChecksConclusion.fromJson(json['checksConclusion'] as String) : null)!) : const SdkOmitted(),
-    checksState: json['checksState'] != null ? SdkPresent((json['checksState'] != null ? GetDeploymentsResponseDeploymentsItemChecksState.fromJson(json['checksState'] as String) : null)!) : const SdkOmitted(),
-    connectBuildsEnabled: json['connectBuildsEnabled'] != null ? SdkPresent((json['connectBuildsEnabled'] != null ? GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled.fromJson(json['connectBuildsEnabled'] as bool) : null)!) : const SdkOmitted(),
-    connectConfigurationId: json['connectConfigurationId'] != null ? SdkPresent((json['connectConfigurationId'] as String?)!) : const SdkOmitted(),
-    created: ((json['created'] as num?)?.toDouble())!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    creator: (json['creator'] != null ? GetDeploymentsResponseDeploymentsItemCreator.fromJson(json['creator'] as Map<String, dynamic>) : null)!,
-    customEnvironment: json['customEnvironment'] != null ? SdkPresent((json['customEnvironment'] != null ? GetDeploymentsResponseDeploymentsItemCustomEnvironment.fromJson(json['customEnvironment'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    deleted: json['deleted'] != null ? SdkPresent(((json['deleted'] as num?)?.toDouble())!) : const SdkOmitted(),
-    errorCode: json['errorCode'] != null ? SdkPresent((json['errorCode'] as String?)!) : const SdkOmitted(),
-    errorMessage: json.containsKey('errorMessage') ? SdkPresent(json['errorMessage'] as String?) : const SdkOmitted(),
-    expiration: json['expiration'] != null ? SdkPresent(((json['expiration'] as num?)?.toDouble())!) : const SdkOmitted(),
-    inspectorUrl: json.containsKey('inspectorUrl') ? json['inspectorUrl'] as String? : throw ArgumentError.value(null, 'inspectorUrl', 'Required property is missing'),
-    isRollbackCandidate: json.containsKey('isRollbackCandidate') ? SdkPresent(json['isRollbackCandidate'] != null ? GetDeploymentsResponseDeploymentsItemIsRollbackCandidate.fromJson(json['isRollbackCandidate'] as bool) : null) : const SdkOmitted(),
-    manualProvisioning: json['manualProvisioning'] != null ? SdkPresent((json['manualProvisioning'] != null ? GetDeploymentsResponseDeploymentsItemManualProvisioning.fromJson(json['manualProvisioning'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    meta: json['meta'] != null ? SdkPresent((json['meta'] == null ? null : Map<String, dynamic>.from(json['meta'] as Map).map((key, value) => MapEntry(key, value as String)))!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    oomReport: json['oomReport'] != null ? SdkPresent((json['oomReport'] != null ? GetDeploymentsResponseDeploymentsItemOomReport.fromJson(json['oomReport'] as String) : null)!) : const SdkOmitted(),
-    passiveConnectConfigurationId: json['passiveConnectConfigurationId'] != null ? SdkPresent((json['passiveConnectConfigurationId'] as String?)!) : const SdkOmitted(),
-    platform: json['platform'] != null ? SdkPresent((json['platform'] != null ? GetDeploymentsResponseDeploymentsItemPlatform.fromJson(json['platform'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    prebuilt: json['prebuilt'] != null ? SdkPresent((json['prebuilt'] != null ? GetDeploymentsResponseDeploymentsItemPrebuilt.fromJson(json['prebuilt'] as bool) : null)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    projectSettings: json['projectSettings'] != null ? SdkPresent((json['projectSettings'] != null ? GetDeploymentsResponseDeploymentsItemProjectSettings.fromJson(json['projectSettings'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    proposedExpiration: json['proposedExpiration'] != null ? SdkPresent(((json['proposedExpiration'] as num?)?.toDouble())!) : const SdkOmitted(),
-    ready: json['ready'] != null ? SdkPresent(((json['ready'] as num?)?.toDouble())!) : const SdkOmitted(),
-    readyState: (json['readyState'] != null ? GetDeploymentsResponseDeploymentsItemReadyState.fromJson(json['readyState'] as String) : null)!,
-    readySubstate: json['readySubstate'] != null ? SdkPresent((json['readySubstate'] != null ? GetDeploymentsResponseDeploymentsItemReadySubstate.fromJson(json['readySubstate'] as String) : null)!) : const SdkOmitted(),
-    seatBlock: json['seatBlock'] != null ? SdkPresent((json['seatBlock'] != null ? GetDeploymentsResponseDeploymentsItemSeatBlock.fromJson(json['seatBlock'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    softDeletedByRetention: json['softDeletedByRetention'] != null ? SdkPresent((json['softDeletedByRetention'] != null ? GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention.fromJson(json['softDeletedByRetention'] as bool) : null)!) : const SdkOmitted(),
-    source: json['source'] != null ? SdkPresent((json['source'] != null ? GetDeploymentsResponseDeploymentsItemSource.fromJson(json['source'] as String) : null)!) : const SdkOmitted(),
-    state: json['state'] != null ? SdkPresent((json['state'] != null ? GetDeploymentsResponseDeploymentsItemState.fromJson(json['state'] as String) : null)!) : const SdkOmitted(),
-    target: json.containsKey('target') ? SdkPresent(json['target'] != null ? GetDeploymentsResponseDeploymentsItemTarget.fromJson(json['target'] as String) : null) : const SdkOmitted(),
-    type_: (json['type'] != null ? GetDeploymentsResponseDeploymentsItemType.fromJson(json['type'] as String) : null)!,
-    uid: (json['uid'] as String?)!,
-    undeleted: json['undeleted'] != null ? SdkPresent(((json['undeleted'] as num?)?.toDouble())!) : const SdkOmitted(),
-    url: (json['url'] as String?)!,
-  );
+  factory GetDeploymentsResponseDeploymentsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentsResponseDeploymentsItem(
+        aliasAssigned: json.containsKey('aliasAssigned')
+            ? SdkPresent(json['aliasAssigned'])
+            : const SdkOmitted(),
+        aliasError: json.containsKey('aliasError')
+            ? SdkPresent(json['aliasError'] != null
+                ? GetDeploymentsResponseDeploymentsItemAliasError.fromJson(
+                    json['aliasError'] as Map<String, dynamic>)
+                : null)
+            : const SdkOmitted(),
+        attribution: json['attribution'] != null
+            ? SdkPresent((json['attribution'] != null
+                ? GetDeploymentsResponseDeploymentsItemAttribution.fromJson(
+                    json['attribution'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        buildingAt: json['buildingAt'] != null
+            ? SdkPresent(((json['buildingAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        checks: json['checks'] != null
+            ? SdkPresent((json['checks'] != null
+                ? GetDeploymentsResponseDeploymentsItemChecks.fromJson(
+                    json['checks'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        checksConclusion: json['checksConclusion'] != null
+            ? SdkPresent((json['checksConclusion'] != null
+                ? GetDeploymentsResponseDeploymentsItemChecksConclusion
+                    .fromJson(json['checksConclusion'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        checksState: json['checksState'] != null
+            ? SdkPresent((json['checksState'] != null
+                ? GetDeploymentsResponseDeploymentsItemChecksState.fromJson(
+                    json['checksState'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        connectBuildsEnabled: json['connectBuildsEnabled'] != null
+            ? SdkPresent((json['connectBuildsEnabled'] != null
+                ? GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled
+                    .fromJson(json['connectBuildsEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        connectConfigurationId: json['connectConfigurationId'] != null
+            ? SdkPresent((json['connectConfigurationId'] as String?)!)
+            : const SdkOmitted(),
+        created: ((json['created'] as num?)?.toDouble())!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        creator: (json['creator'] != null
+            ? GetDeploymentsResponseDeploymentsItemCreator.fromJson(
+                json['creator'] as Map<String, dynamic>)
+            : null)!,
+        customEnvironment: json['customEnvironment'] != null
+            ? SdkPresent((json['customEnvironment'] != null
+                ? GetDeploymentsResponseDeploymentsItemCustomEnvironment
+                    .fromJson(json['customEnvironment'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        defaultRoute: json['defaultRoute'] != null
+            ? SdkPresent((json['defaultRoute'] as String?)!)
+            : const SdkOmitted(),
+        deleted: json['deleted'] != null
+            ? SdkPresent(((json['deleted'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        errorCode: json['errorCode'] != null
+            ? SdkPresent((json['errorCode'] as String?)!)
+            : const SdkOmitted(),
+        errorMessage: json.containsKey('errorMessage')
+            ? SdkPresent(json['errorMessage'] as String?)
+            : const SdkOmitted(),
+        expiration: json['expiration'] != null
+            ? SdkPresent(((json['expiration'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        inspectorUrl: json.containsKey('inspectorUrl')
+            ? json['inspectorUrl'] as String?
+            : throw ArgumentError.value(
+                null, 'inspectorUrl', 'Required property is missing'),
+        isRollbackCandidate: json.containsKey('isRollbackCandidate')
+            ? SdkPresent(json['isRollbackCandidate'] != null
+                ? GetDeploymentsResponseDeploymentsItemIsRollbackCandidate
+                    .fromJson(json['isRollbackCandidate'] as bool)
+                : null)
+            : const SdkOmitted(),
+        manualProvisioning: json['manualProvisioning'] != null
+            ? SdkPresent((json['manualProvisioning'] != null
+                ? GetDeploymentsResponseDeploymentsItemManualProvisioning
+                    .fromJson(
+                        json['manualProvisioning'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        meta: json['meta'] != null
+            ? SdkPresent((json['meta'] == null
+                ? null
+                : Map<String, dynamic>.from(json['meta'] as Map)
+                    .map((key, value) => MapEntry(key, value as String)))!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        oomReport: json['oomReport'] != null
+            ? SdkPresent((json['oomReport'] != null
+                ? GetDeploymentsResponseDeploymentsItemOomReport.fromJson(
+                    json['oomReport'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        passiveConnectConfigurationId: json['passiveConnectConfigurationId'] !=
+                null
+            ? SdkPresent((json['passiveConnectConfigurationId'] as String?)!)
+            : const SdkOmitted(),
+        platform: json['platform'] != null
+            ? SdkPresent((json['platform'] != null
+                ? GetDeploymentsResponseDeploymentsItemPlatform.fromJson(
+                    json['platform'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        prebuilt: json['prebuilt'] != null
+            ? SdkPresent((json['prebuilt'] != null
+                ? GetDeploymentsResponseDeploymentsItemPrebuilt.fromJson(
+                    json['prebuilt'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        projectSettings: json['projectSettings'] != null
+            ? SdkPresent((json['projectSettings'] != null
+                ? GetDeploymentsResponseDeploymentsItemProjectSettings.fromJson(
+                    json['projectSettings'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        proposedExpiration: json['proposedExpiration'] != null
+            ? SdkPresent(((json['proposedExpiration'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        ready: json['ready'] != null
+            ? SdkPresent(((json['ready'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        readyState: (json['readyState'] != null
+            ? GetDeploymentsResponseDeploymentsItemReadyState.fromJson(
+                json['readyState'] as String)
+            : null)!,
+        readySubstate: json['readySubstate'] != null
+            ? SdkPresent((json['readySubstate'] != null
+                ? GetDeploymentsResponseDeploymentsItemReadySubstate.fromJson(
+                    json['readySubstate'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        seatBlock: json['seatBlock'] != null
+            ? SdkPresent((json['seatBlock'] != null
+                ? GetDeploymentsResponseDeploymentsItemSeatBlock.fromJson(
+                    json['seatBlock'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        softDeletedByRetention: json['softDeletedByRetention'] != null
+            ? SdkPresent((json['softDeletedByRetention'] != null
+                ? GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention
+                    .fromJson(json['softDeletedByRetention'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        source: json['source'] != null
+            ? SdkPresent((json['source'] != null
+                ? GetDeploymentsResponseDeploymentsItemSource.fromJson(
+                    json['source'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        state: json['state'] != null
+            ? SdkPresent((json['state'] != null
+                ? GetDeploymentsResponseDeploymentsItemState.fromJson(
+                    json['state'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        target: json.containsKey('target')
+            ? SdkPresent(json['target'] != null
+                ? GetDeploymentsResponseDeploymentsItemTarget.fromJson(
+                    json['target'] as String)
+                : null)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? GetDeploymentsResponseDeploymentsItemType.fromJson(
+                json['type'] as String)
+            : null)!,
+        uid: (json['uid'] as String?)!,
+        undeleted: json['undeleted'] != null
+            ? SdkPresent(((json['undeleted'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (aliasAssigned) {
-      SdkPresent<dynamic>(value: final value) => {'aliasAssigned': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (aliasError) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemAliasError?>(value: final value) => {'aliasError': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (attribution) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemAttribution>(value: final value) => {'attribution': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildingAt) {
-      SdkPresent<double>(value: final value) => {'buildingAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (checks) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemChecks>(value: final value) => {'checks': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (checksConclusion) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemChecksConclusion>(value: final value) => {'checksConclusion': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (checksState) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemChecksState>(value: final value) => {'checksState': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectBuildsEnabled) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled>(value: final value) => {'connectBuildsEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (connectConfigurationId) {
-      SdkPresent<String>(value: final value) => {'connectConfigurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'created': created,
-    'createdAt': createdAt,
-    'creator': creator.toJson(),
-    ...switch (customEnvironment) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemCustomEnvironment>(value: final value) => {'customEnvironment': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deleted) {
-      SdkPresent<double>(value: final value) => {'deleted': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (errorCode) {
-      SdkPresent<String>(value: final value) => {'errorCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (errorMessage) {
-      SdkPresent<String?>(value: final value) => {'errorMessage': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiration) {
-      SdkPresent<double>(value: final value) => {'expiration': value,},
-      _ => const <String, dynamic>{},
-    },
-    'inspectorUrl': inspectorUrl,
-    ...switch (isRollbackCandidate) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?>(value: final value) => {'isRollbackCandidate': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (manualProvisioning) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemManualProvisioning>(value: final value) => {'manualProvisioning': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (meta) {
-      SdkPresent<Map<String, String>>(value: final value) => {'meta': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    ...switch (oomReport) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemOomReport>(value: final value) => {'oomReport': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (passiveConnectConfigurationId) {
-      SdkPresent<String>(value: final value) => {'passiveConnectConfigurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (platform) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemPlatform>(value: final value) => {'platform': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (prebuilt) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemPrebuilt>(value: final value) => {'prebuilt': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    ...switch (projectSettings) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettings>(value: final value) => {'projectSettings': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (proposedExpiration) {
-      SdkPresent<double>(value: final value) => {'proposedExpiration': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ready) {
-      SdkPresent<double>(value: final value) => {'ready': value,},
-      _ => const <String, dynamic>{},
-    },
-    'readyState': readyState.toJson(),
-    ...switch (readySubstate) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemReadySubstate>(value: final value) => {'readySubstate': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (seatBlock) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemSeatBlock>(value: final value) => {'seatBlock': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (softDeletedByRetention) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention>(value: final value) => {'softDeletedByRetention': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (source) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemSource>(value: final value) => {'source': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (state) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemState>(value: final value) => {'state': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<GetDeploymentsResponseDeploymentsItemTarget?>(value: final value) => {'target': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    'uid': uid,
-    ...switch (undeleted) {
-      SdkPresent<double>(value: final value) => {'undeleted': value,},
-      _ => const <String, dynamic>{},
-    },
-    'url': url,
-  };
+        ...switch (aliasAssigned) {
+          SdkPresent<dynamic>(value: final value) => {
+              'aliasAssigned': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (aliasError) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemAliasError?>(
+            value: final value
+          ) =>
+            {
+              'aliasError': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (attribution) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemAttribution>(
+            value: final value
+          ) =>
+            {
+              'attribution': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildingAt) {
+          SdkPresent<double>(value: final value) => {
+              'buildingAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (checks) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemChecks>(
+            value: final value
+          ) =>
+            {
+              'checks': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (checksConclusion) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemChecksConclusion>(
+            value: final value
+          ) =>
+            {
+              'checksConclusion': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (checksState) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemChecksState>(
+            value: final value
+          ) =>
+            {
+              'checksState': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectBuildsEnabled) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemConnectBuildsEnabled>(
+            value: final value
+          ) =>
+            {
+              'connectBuildsEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (connectConfigurationId) {
+          SdkPresent<String>(value: final value) => {
+              'connectConfigurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'created': created,
+        'createdAt': createdAt,
+        'creator': creator.toJson(),
+        ...switch (customEnvironment) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemCustomEnvironment>(
+            value: final value
+          ) =>
+            {
+              'customEnvironment': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deleted) {
+          SdkPresent<double>(value: final value) => {
+              'deleted': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (errorCode) {
+          SdkPresent<String>(value: final value) => {
+              'errorCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (errorMessage) {
+          SdkPresent<String?>(value: final value) => {
+              'errorMessage': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiration) {
+          SdkPresent<double>(value: final value) => {
+              'expiration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'inspectorUrl': inspectorUrl,
+        ...switch (isRollbackCandidate) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemIsRollbackCandidate?>(
+            value: final value
+          ) =>
+            {
+              'isRollbackCandidate': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (manualProvisioning) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemManualProvisioning>(
+            value: final value
+          ) =>
+            {
+              'manualProvisioning': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (meta) {
+          SdkPresent<Map<String, String>>(value: final value) => {
+              'meta': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        ...switch (oomReport) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemOomReport>(
+            value: final value
+          ) =>
+            {
+              'oomReport': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (passiveConnectConfigurationId) {
+          SdkPresent<String>(value: final value) => {
+              'passiveConnectConfigurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (platform) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemPlatform>(
+            value: final value
+          ) =>
+            {
+              'platform': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (prebuilt) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemPrebuilt>(
+            value: final value
+          ) =>
+            {
+              'prebuilt': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        ...switch (projectSettings) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemProjectSettings>(
+            value: final value
+          ) =>
+            {
+              'projectSettings': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (proposedExpiration) {
+          SdkPresent<double>(value: final value) => {
+              'proposedExpiration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ready) {
+          SdkPresent<double>(value: final value) => {
+              'ready': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'readyState': readyState.toJson(),
+        ...switch (readySubstate) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemReadySubstate>(
+            value: final value
+          ) =>
+            {
+              'readySubstate': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (seatBlock) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemSeatBlock>(
+            value: final value
+          ) =>
+            {
+              'seatBlock': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (softDeletedByRetention) {
+          SdkPresent<
+                GetDeploymentsResponseDeploymentsItemSoftDeletedByRetention>(
+            value: final value
+          ) =>
+            {
+              'softDeletedByRetention': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (source) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemSource>(
+            value: final value
+          ) =>
+            {
+              'source': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (state) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemState>(
+            value: final value
+          ) =>
+            {
+              'state': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<GetDeploymentsResponseDeploymentsItemTarget?>(
+            value: final value
+          ) =>
+            {
+              'target': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        'uid': uid,
+        ...switch (undeleted) {
+          SdkPresent<double>(value: final value) => {
+              'undeleted': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'url': url,
+      };
 }

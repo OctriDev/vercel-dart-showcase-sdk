@@ -17,54 +17,130 @@ class ListTeamFlagSettingsResponseVariant1DataItem {
   final ListTeamFlagSettingsResponseVariant1DataItemTypeName typeName;
   final SdkOptional<double> updatedAt;
 
-  const ListTeamFlagSettingsResponseVariant1DataItem({this.createdAt = const SdkOmitted(), required this.enabled, required this.entities, required this.environments, required this.metadata, this.ownerId = const SdkOmitted(), required this.projectId, required this.typeName, this.updatedAt = const SdkOmitted()});
+  const ListTeamFlagSettingsResponseVariant1DataItem(
+      {this.createdAt = const SdkOmitted(),
+      required this.enabled,
+      required this.entities,
+      required this.environments,
+      required this.metadata,
+      this.ownerId = const SdkOmitted(),
+      required this.projectId,
+      required this.typeName,
+      this.updatedAt = const SdkOmitted()});
 
-  ListTeamFlagSettingsResponseVariant1DataItem Function({SdkOptional<double> createdAt, ListTeamFlagSettingsResponseVariant1DataItemEnabled enabled, List<ListTeamFlagSettingsResponseVariant1DataItemEntitiesItem> entities, List<String> environments, ListTeamFlagSettingsResponseVariant1DataItemMetadata metadata, SdkOptional<String> ownerId, String projectId, ListTeamFlagSettingsResponseVariant1DataItemTypeName typeName, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  ListTeamFlagSettingsResponseVariant1DataItem Function(
+      {SdkOptional<double> createdAt,
+      ListTeamFlagSettingsResponseVariant1DataItemEnabled enabled,
+      List<ListTeamFlagSettingsResponseVariant1DataItemEntitiesItem> entities,
+      List<String> environments,
+      ListTeamFlagSettingsResponseVariant1DataItemMetadata metadata,
+      SdkOptional<String> ownerId,
+      String projectId,
+      ListTeamFlagSettingsResponseVariant1DataItemTypeName typeName,
+      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  ListTeamFlagSettingsResponseVariant1DataItem _copyWith({Object? createdAt = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? entities = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? typeName = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ListTeamFlagSettingsResponseVariant1DataItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as ListTeamFlagSettingsResponseVariant1DataItemEnabled,
-    entities: identical(entities, sdkOmittedValue) ? this.entities : entities as List<ListTeamFlagSettingsResponseVariant1DataItemEntitiesItem>,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<String>,
-    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as ListTeamFlagSettingsResponseVariant1DataItemMetadata,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    typeName: identical(typeName, sdkOmittedValue) ? this.typeName : typeName as ListTeamFlagSettingsResponseVariant1DataItemTypeName,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-  );
+  ListTeamFlagSettingsResponseVariant1DataItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? entities = sdkOmittedValue,
+          Object? environments = sdkOmittedValue,
+          Object? metadata = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? typeName = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      ListTeamFlagSettingsResponseVariant1DataItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as ListTeamFlagSettingsResponseVariant1DataItemEnabled,
+        entities: identical(entities, sdkOmittedValue)
+            ? this.entities
+            : entities as List<
+                ListTeamFlagSettingsResponseVariant1DataItemEntitiesItem>,
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as List<String>,
+        metadata: identical(metadata, sdkOmittedValue)
+            ? this.metadata
+            : metadata as ListTeamFlagSettingsResponseVariant1DataItemMetadata,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        typeName: identical(typeName, sdkOmittedValue)
+            ? this.typeName
+            : typeName as ListTeamFlagSettingsResponseVariant1DataItemTypeName,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+      );
 
-  factory ListTeamFlagSettingsResponseVariant1DataItem.fromJson(Map<String, dynamic> json) => ListTeamFlagSettingsResponseVariant1DataItem(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabled: (json['enabled'] != null ? ListTeamFlagSettingsResponseVariant1DataItemEnabled.fromJson(json['enabled'] as bool) : null)!,
-    entities: ((json['entities'] as List?)?.map((e) => ListTeamFlagSettingsResponseVariant1DataItemEntitiesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    environments: ((json['environments'] as List?)?.map((e) => e as String).toList())!,
-    metadata: (json['metadata'] != null ? ListTeamFlagSettingsResponseVariant1DataItemMetadata.fromJson(json['metadata'] as Map<String, dynamic>) : null)!,
-    ownerId: json['ownerId'] != null ? SdkPresent((json['ownerId'] as String?)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    typeName: (json['typeName'] != null ? ListTeamFlagSettingsResponseVariant1DataItemTypeName.fromJson(json['typeName'] as String) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory ListTeamFlagSettingsResponseVariant1DataItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListTeamFlagSettingsResponseVariant1DataItem(
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        enabled: (json['enabled'] != null
+            ? ListTeamFlagSettingsResponseVariant1DataItemEnabled.fromJson(
+                json['enabled'] as bool)
+            : null)!,
+        entities: ((json['entities'] as List?)
+            ?.map((e) =>
+                ListTeamFlagSettingsResponseVariant1DataItemEntitiesItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        environments: ((json['environments'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+        metadata: (json['metadata'] != null
+            ? ListTeamFlagSettingsResponseVariant1DataItemMetadata.fromJson(
+                json['metadata'] as Map<String, dynamic>)
+            : null)!,
+        ownerId: json['ownerId'] != null
+            ? SdkPresent((json['ownerId'] as String?)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        typeName: (json['typeName'] != null
+            ? ListTeamFlagSettingsResponseVariant1DataItemTypeName.fromJson(
+                json['typeName'] as String)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'enabled': enabled.toJson(),
-    'entities': entities.map((item) => item.toJson()).toList(),
-    'environments': environments,
-    'metadata': metadata.toJson(),
-    ...switch (ownerId) {
-      SdkPresent<String>(value: final value) => {'ownerId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'typeName': typeName.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'enabled': enabled.toJson(),
+        'entities': entities.map((item) => item.toJson()).toList(),
+        'environments': environments,
+        'metadata': metadata.toJson(),
+        ...switch (ownerId) {
+          SdkPresent<String>(value: final value) => {
+              'ownerId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'typeName': typeName.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListTeamFlagSettingsResponseVariant1Pagination {
@@ -74,19 +150,27 @@ class ListTeamFlagSettingsResponseVariant1Pagination {
 
   const ListTeamFlagSettingsResponseVariant1Pagination({required this.next});
 
-  ListTeamFlagSettingsResponseVariant1Pagination Function({String? next}) get copyWith => _copyWith;
+  ListTeamFlagSettingsResponseVariant1Pagination Function({String? next})
+      get copyWith => _copyWith;
 
-  ListTeamFlagSettingsResponseVariant1Pagination _copyWith({Object? next = sdkOmittedValue}) => ListTeamFlagSettingsResponseVariant1Pagination(
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-  );
+  ListTeamFlagSettingsResponseVariant1Pagination _copyWith(
+          {Object? next = sdkOmittedValue}) =>
+      ListTeamFlagSettingsResponseVariant1Pagination(
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+      );
 
-  factory ListTeamFlagSettingsResponseVariant1Pagination.fromJson(Map<String, dynamic> json) => ListTeamFlagSettingsResponseVariant1Pagination(
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-  );
+  factory ListTeamFlagSettingsResponseVariant1Pagination.fromJson(
+          Map<String, dynamic> json) =>
+      ListTeamFlagSettingsResponseVariant1Pagination(
+        next: json.containsKey('next')
+            ? json['next'] as String?
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'next': next,
-  };
+        'next': next,
+      };
 }
 
 class ListTeamFlagSettingsResponseVariant1 {
@@ -95,24 +179,43 @@ class ListTeamFlagSettingsResponseVariant1 {
   final List<ListTeamFlagSettingsResponseVariant1DataItem> data;
   final ListTeamFlagSettingsResponseVariant1Pagination pagination;
 
-  const ListTeamFlagSettingsResponseVariant1({required this.data, required this.pagination});
+  const ListTeamFlagSettingsResponseVariant1(
+      {required this.data, required this.pagination});
 
-  ListTeamFlagSettingsResponseVariant1 Function({List<ListTeamFlagSettingsResponseVariant1DataItem> data, ListTeamFlagSettingsResponseVariant1Pagination pagination}) get copyWith => _copyWith;
+  ListTeamFlagSettingsResponseVariant1 Function(
+          {List<ListTeamFlagSettingsResponseVariant1DataItem> data,
+          ListTeamFlagSettingsResponseVariant1Pagination pagination})
+      get copyWith => _copyWith;
 
-  ListTeamFlagSettingsResponseVariant1 _copyWith({Object? data = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListTeamFlagSettingsResponseVariant1(
-    data: identical(data, sdkOmittedValue) ? this.data : data as List<ListTeamFlagSettingsResponseVariant1DataItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListTeamFlagSettingsResponseVariant1Pagination,
-  );
+  ListTeamFlagSettingsResponseVariant1 _copyWith(
+          {Object? data = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListTeamFlagSettingsResponseVariant1(
+        data: identical(data, sdkOmittedValue)
+            ? this.data
+            : data as List<ListTeamFlagSettingsResponseVariant1DataItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListTeamFlagSettingsResponseVariant1Pagination,
+      );
 
-  factory ListTeamFlagSettingsResponseVariant1.fromJson(Map<String, dynamic> json) => ListTeamFlagSettingsResponseVariant1(
-    data: ((json['data'] as List?)?.map((e) => ListTeamFlagSettingsResponseVariant1DataItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? ListTeamFlagSettingsResponseVariant1Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  );
+  factory ListTeamFlagSettingsResponseVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListTeamFlagSettingsResponseVariant1(
+        data: ((json['data'] as List?)
+            ?.map((e) => ListTeamFlagSettingsResponseVariant1DataItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        pagination: (json['pagination'] != null
+            ? ListTeamFlagSettingsResponseVariant1Pagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'data': data.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'data': data.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 class ListTeamFlagsV2ResponsePagination {
@@ -122,19 +225,27 @@ class ListTeamFlagsV2ResponsePagination {
 
   const ListTeamFlagsV2ResponsePagination({required this.next});
 
-  ListTeamFlagsV2ResponsePagination Function({String? next}) get copyWith => _copyWith;
+  ListTeamFlagsV2ResponsePagination Function({String? next}) get copyWith =>
+      _copyWith;
 
-  ListTeamFlagsV2ResponsePagination _copyWith({Object? next = sdkOmittedValue}) => ListTeamFlagsV2ResponsePagination(
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-  );
+  ListTeamFlagsV2ResponsePagination _copyWith(
+          {Object? next = sdkOmittedValue}) =>
+      ListTeamFlagsV2ResponsePagination(
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+      );
 
-  factory ListTeamFlagsV2ResponsePagination.fromJson(Map<String, dynamic> json) => ListTeamFlagsV2ResponsePagination(
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-  );
+  factory ListTeamFlagsV2ResponsePagination.fromJson(
+          Map<String, dynamic> json) =>
+      ListTeamFlagsV2ResponsePagination(
+        next: json.containsKey('next')
+            ? json['next'] as String?
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'next': next,
-  };
+        'next': next,
+      };
 }
 
 class ListTeamFlagsV2Response {
@@ -145,22 +256,37 @@ class ListTeamFlagsV2Response {
 
   const ListTeamFlagsV2Response({required this.pagination, required this.data});
 
-  ListTeamFlagsV2Response Function({ListTeamFlagsV2ResponsePagination pagination, List<ListTeamFlagsV2ResponseDataItem> data}) get copyWith => _copyWith;
+  ListTeamFlagsV2Response Function(
+      {ListTeamFlagsV2ResponsePagination pagination,
+      List<ListTeamFlagsV2ResponseDataItem> data}) get copyWith => _copyWith;
 
-  ListTeamFlagsV2Response _copyWith({Object? pagination = sdkOmittedValue, Object? data = sdkOmittedValue}) => ListTeamFlagsV2Response(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListTeamFlagsV2ResponsePagination,
-    data: identical(data, sdkOmittedValue) ? this.data : data as List<ListTeamFlagsV2ResponseDataItem>,
-  );
+  ListTeamFlagsV2Response _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? data = sdkOmittedValue}) =>
+      ListTeamFlagsV2Response(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListTeamFlagsV2ResponsePagination,
+        data: identical(data, sdkOmittedValue)
+            ? this.data
+            : data as List<ListTeamFlagsV2ResponseDataItem>,
+      );
 
-  factory ListTeamFlagsV2Response.fromJson(Map<String, dynamic> json) => ListTeamFlagsV2Response(
-    pagination: (json['pagination'] != null ? ListTeamFlagsV2ResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-    data: ((json['data'] as List?)?.map((e) => ListTeamFlagsV2ResponseDataItem.fromJson(e)).toList())!,
-  );
+  factory ListTeamFlagsV2Response.fromJson(Map<String, dynamic> json) =>
+      ListTeamFlagsV2Response(
+        pagination: (json['pagination'] != null
+            ? ListTeamFlagsV2ResponsePagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+        data: ((json['data'] as List?)
+            ?.map((e) => ListTeamFlagsV2ResponseDataItem.fromJson(e))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pagination': pagination.toJson(),
-    'data': data.map((item) => item.toJson()).toList(),
-  };
+        'pagination': pagination.toJson(),
+        'data': data.map((item) => item.toJson()).toList(),
+      };
 }
 
 class ListTeamFlagsResponsePagination {
@@ -170,19 +296,25 @@ class ListTeamFlagsResponsePagination {
 
   const ListTeamFlagsResponsePagination({required this.next});
 
-  ListTeamFlagsResponsePagination Function({String? next}) get copyWith => _copyWith;
+  ListTeamFlagsResponsePagination Function({String? next}) get copyWith =>
+      _copyWith;
 
-  ListTeamFlagsResponsePagination _copyWith({Object? next = sdkOmittedValue}) => ListTeamFlagsResponsePagination(
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-  );
+  ListTeamFlagsResponsePagination _copyWith({Object? next = sdkOmittedValue}) =>
+      ListTeamFlagsResponsePagination(
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+      );
 
-  factory ListTeamFlagsResponsePagination.fromJson(Map<String, dynamic> json) => ListTeamFlagsResponsePagination(
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-  );
+  factory ListTeamFlagsResponsePagination.fromJson(Map<String, dynamic> json) =>
+      ListTeamFlagsResponsePagination(
+        next: json.containsKey('next')
+            ? json['next'] as String?
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'next': next,
-  };
+        'next': next,
+      };
 }
 
 class ListTeamFlagsResponse {
@@ -193,22 +325,35 @@ class ListTeamFlagsResponse {
 
   const ListTeamFlagsResponse({required this.data, required this.pagination});
 
-  ListTeamFlagsResponse Function({List<Flag> data, ListTeamFlagsResponsePagination pagination}) get copyWith => _copyWith;
+  ListTeamFlagsResponse Function(
+      {List<Flag> data,
+      ListTeamFlagsResponsePagination pagination}) get copyWith => _copyWith;
 
-  ListTeamFlagsResponse _copyWith({Object? data = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListTeamFlagsResponse(
-    data: identical(data, sdkOmittedValue) ? this.data : data as List<Flag>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListTeamFlagsResponsePagination,
-  );
+  ListTeamFlagsResponse _copyWith(
+          {Object? data = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListTeamFlagsResponse(
+        data: identical(data, sdkOmittedValue) ? this.data : data as List<Flag>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListTeamFlagsResponsePagination,
+      );
 
-  factory ListTeamFlagsResponse.fromJson(Map<String, dynamic> json) => ListTeamFlagsResponse(
-    data: ((json['data'] as List?)?.map((e) => Flag.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? ListTeamFlagsResponsePagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  );
+  factory ListTeamFlagsResponse.fromJson(Map<String, dynamic> json) =>
+      ListTeamFlagsResponse(
+        data: ((json['data'] as List?)
+            ?.map((e) => Flag.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        pagination: (json['pagination'] != null
+            ? ListTeamFlagsResponsePagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'data': data.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'data': data.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 class CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions {
@@ -216,64 +361,134 @@ class CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions {
   static const String constructionSurface = 'named';
   final SdkOptional<bool> ignoreCase;
 
-  const CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions({this.ignoreCase = const SdkOmitted()});
+  const CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions(
+      {this.ignoreCase = const SdkOmitted()});
 
-  CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions Function({SdkOptional<bool> ignoreCase}) get copyWith => _copyWith;
+  CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions Function(
+      {SdkOptional<bool> ignoreCase}) get copyWith => _copyWith;
 
-  CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions _copyWith({Object? ignoreCase = sdkOmittedValue}) => CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions(
-    ignoreCase: identical(ignoreCase, sdkOmittedValue) ? this.ignoreCase : ignoreCase as SdkOptional<bool>,
-  );
+  CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions _copyWith(
+          {Object? ignoreCase = sdkOmittedValue}) =>
+      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions(
+        ignoreCase: identical(ignoreCase, sdkOmittedValue)
+            ? this.ignoreCase
+            : ignoreCase as SdkOptional<bool>,
+      );
 
-  factory CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions.fromJson(Map<String, dynamic> json) => CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions(
-    ignoreCase: json['ignoreCase'] != null ? SdkPresent((json['ignoreCase'] as bool?)!) : const SdkOmitted(),
-  );
+  factory CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions(
+        ignoreCase: json['ignoreCase'] != null
+            ? SdkPresent((json['ignoreCase'] as bool?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (ignoreCase) {
-      SdkPresent<bool>(value: final value) => {'ignoreCase': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (ignoreCase) {
+          SdkPresent<bool>(value: final value) => {
+              'ignoreCase': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateFlagSegmentRequestBodyDataRulesItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Typed representation of the `CreateFlagSegmentRequestDataRulesItemConditionsItemLhs` API schema.
   final CreateFlagSegmentRequestDataRulesItemConditionsItemLhs lhs;
   final CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp cmp;
+
   /// Typed representation of the `CreateFlagSegmentRequestDataRulesItemConditionsItemRhs` API schema.
   final SdkOptional<CreateFlagSegmentRequestDataRulesItemConditionsItemRhs> rhs;
-  final SdkOptional<CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions> cmpOptions;
+  final SdkOptional<
+          CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions>
+      cmpOptions;
 
-  const CreateFlagSegmentRequestBodyDataRulesItemConditionsItem({required this.lhs, required this.cmp, this.rhs = const SdkOmitted(), this.cmpOptions = const SdkOmitted()});
+  const CreateFlagSegmentRequestBodyDataRulesItemConditionsItem(
+      {required this.lhs,
+      required this.cmp,
+      this.rhs = const SdkOmitted(),
+      this.cmpOptions = const SdkOmitted()});
 
-  CreateFlagSegmentRequestBodyDataRulesItemConditionsItem Function({CreateFlagSegmentRequestDataRulesItemConditionsItemLhs lhs, CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp cmp, SdkOptional<CreateFlagSegmentRequestDataRulesItemConditionsItemRhs> rhs, SdkOptional<CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions> cmpOptions}) get copyWith => _copyWith;
+  CreateFlagSegmentRequestBodyDataRulesItemConditionsItem Function(
+      {CreateFlagSegmentRequestDataRulesItemConditionsItemLhs lhs,
+      CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp cmp,
+      SdkOptional<CreateFlagSegmentRequestDataRulesItemConditionsItemRhs> rhs,
+      SdkOptional<
+              CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions>
+          cmpOptions}) get copyWith => _copyWith;
 
-  CreateFlagSegmentRequestBodyDataRulesItemConditionsItem _copyWith({Object? lhs = sdkOmittedValue, Object? cmp = sdkOmittedValue, Object? rhs = sdkOmittedValue, Object? cmpOptions = sdkOmittedValue}) => CreateFlagSegmentRequestBodyDataRulesItemConditionsItem(
-    lhs: identical(lhs, sdkOmittedValue) ? this.lhs : lhs as CreateFlagSegmentRequestDataRulesItemConditionsItemLhs,
-    cmp: identical(cmp, sdkOmittedValue) ? this.cmp : cmp as CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp,
-    rhs: identical(rhs, sdkOmittedValue) ? this.rhs : rhs as SdkOptional<CreateFlagSegmentRequestDataRulesItemConditionsItemRhs>,
-    cmpOptions: identical(cmpOptions, sdkOmittedValue) ? this.cmpOptions : cmpOptions as SdkOptional<CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions>,
-  );
+  CreateFlagSegmentRequestBodyDataRulesItemConditionsItem _copyWith(
+          {Object? lhs = sdkOmittedValue,
+          Object? cmp = sdkOmittedValue,
+          Object? rhs = sdkOmittedValue,
+          Object? cmpOptions = sdkOmittedValue}) =>
+      CreateFlagSegmentRequestBodyDataRulesItemConditionsItem(
+        lhs: identical(lhs, sdkOmittedValue)
+            ? this.lhs
+            : lhs as CreateFlagSegmentRequestDataRulesItemConditionsItemLhs,
+        cmp: identical(cmp, sdkOmittedValue)
+            ? this.cmp
+            : cmp as CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp,
+        rhs: identical(rhs, sdkOmittedValue)
+            ? this.rhs
+            : rhs as SdkOptional<
+                CreateFlagSegmentRequestDataRulesItemConditionsItemRhs>,
+        cmpOptions: identical(cmpOptions, sdkOmittedValue)
+            ? this.cmpOptions
+            : cmpOptions as SdkOptional<
+                CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions>,
+      );
 
-  factory CreateFlagSegmentRequestBodyDataRulesItemConditionsItem.fromJson(Map<String, dynamic> json) => CreateFlagSegmentRequestBodyDataRulesItemConditionsItem(
-    lhs: (json['lhs'] != null ? CreateFlagSegmentRequestDataRulesItemConditionsItemLhs.fromJson(json['lhs']) : null)!,
-    cmp: (json['cmp'] != null ? CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp.fromJson(json['cmp'] as String) : null)!,
-    rhs: json['rhs'] != null ? SdkPresent((json['rhs'] != null ? CreateFlagSegmentRequestDataRulesItemConditionsItemRhs.fromJson(json['rhs']) : null)!) : const SdkOmitted(),
-    cmpOptions: json['cmpOptions'] != null ? SdkPresent((json['cmpOptions'] != null ? CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions.fromJson(json['cmpOptions'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory CreateFlagSegmentRequestBodyDataRulesItemConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentRequestBodyDataRulesItemConditionsItem(
+        lhs: (json['lhs'] != null
+            ? CreateFlagSegmentRequestDataRulesItemConditionsItemLhs.fromJson(
+                json['lhs'])
+            : null)!,
+        cmp: (json['cmp'] != null
+            ? CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmp
+                .fromJson(json['cmp'] as String)
+            : null)!,
+        rhs: json['rhs'] != null
+            ? SdkPresent((json['rhs'] != null
+                ? CreateFlagSegmentRequestDataRulesItemConditionsItemRhs
+                    .fromJson(json['rhs'])
+                : null)!)
+            : const SdkOmitted(),
+        cmpOptions: json['cmpOptions'] != null
+            ? SdkPresent((json['cmpOptions'] != null
+                ? CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions
+                    .fromJson(json['cmpOptions'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'lhs': lhs.toJson(),
-    'cmp': cmp.toJson(),
-    ...switch (rhs) {
-      SdkPresent<CreateFlagSegmentRequestDataRulesItemConditionsItemRhs>(value: final value) => {'rhs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (cmpOptions) {
-      SdkPresent<CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions>(value: final value) => {'cmpOptions': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'lhs': lhs.toJson(),
+        'cmp': cmp.toJson(),
+        ...switch (rhs) {
+          SdkPresent<CreateFlagSegmentRequestDataRulesItemConditionsItemRhs>(
+            value: final value
+          ) =>
+            {
+              'rhs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (cmpOptions) {
+          SdkPresent<
+                CreateFlagSegmentRequestBodyDataRulesItemConditionsItemCmpOptions>(
+            value: final value
+          ) =>
+            {
+              'cmpOptions': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

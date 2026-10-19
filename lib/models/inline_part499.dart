@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type {
   redisRestApiToken;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type
+      fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-token': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type.redisRestApiToken;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type: $value');
+      case 'redis-rest-api-token':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type
+            .redisRestApiToken;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type.redisRestApiToken: return 'redis-rest-api-token';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type
+            .redisRestApiToken:
+        return 'redis-rest-api-token';
     }
   }
 
@@ -27,16 +34,23 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant2Type {
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type {
   redisRestApiReadOnlyToken;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type
+      fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-read-only-token': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type.redisRestApiReadOnlyToken;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type: $value');
+      case 'redis-rest-api-read-only-token':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type
+            .redisRestApiReadOnlyToken;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type.redisRestApiReadOnlyToken: return 'redis-rest-api-read-only-token';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type
+            .redisRestApiReadOnlyToken:
+        return 'redis-rest-api-read-only-token';
     }
   }
 
@@ -47,16 +61,23 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant3Type {
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type {
   blobReadWriteToken;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type
+      fromJson(String value) {
     switch (value) {
-      case 'blob-read-write-token': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type.blobReadWriteToken;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type: $value');
+      case 'blob-read-write-token':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type
+            .blobReadWriteToken;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type.blobReadWriteToken: return 'blob-read-write-token';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type
+            .blobReadWriteToken:
+        return 'blob-read-write-token';
     }
   }
 
@@ -67,16 +88,23 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant4Type {
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type {
   blobStoreId;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type
+      fromJson(String value) {
     switch (value) {
-      case 'blob-store-id': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type.blobStoreId;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type: $value');
+      case 'blob-store-id':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type
+            .blobStoreId;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type.blobStoreId: return 'blob-store-id';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type
+            .blobStoreId:
+        return 'blob-store-id';
     }
   }
 
@@ -87,16 +115,23 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant5Type {
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type
+      fromJson(String value) {
     switch (value) {
-      case 'blob-webhook-public-key': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type.blobWebhookPublicKey;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type
+            .blobWebhookPublicKey;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type
+            .blobWebhookPublicKey:
+        return 'blob-webhook-public-key';
     }
   }
 
@@ -107,16 +142,23 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant6Type {
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type {
   postgresUrl;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-url': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type.postgresUrl;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type: $value');
+      case 'postgres-url':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type
+            .postgresUrl;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type.postgresUrl: return 'postgres-url';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type
+            .postgresUrl:
+        return 'postgres-url';
     }
   }
 
@@ -127,16 +169,23 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant7Type {
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-url-non-pooling': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type.postgresUrlNonPooling;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type
+            .postgresUrlNonPooling;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type
+            .postgresUrlNonPooling:
+        return 'postgres-url-non-pooling';
     }
   }
 
@@ -147,16 +196,23 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant8Type {
 enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type fromJson(String value) {
+  static CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-prisma-url': return CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type.postgresPrismaUrl;
-      default: throw ArgumentError('Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type: $value');
+      case 'postgres-prisma-url':
+        return CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type
+            .postgresPrismaUrl;
+      default:
+        throw ArgumentError(
+            'Unknown CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
+      case CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type
+            .postgresPrismaUrl:
+        return 'postgres-prisma-url';
     }
   }
 
@@ -165,107 +221,142 @@ enum CreateProjectEnvResponseCreatedVariant0ContentHintVariant9Type {
 }
 
 final class CreateProjectEnvResponseCreatedVariant0Decrypted {
-
   final bool value;
 
   const CreateProjectEnvResponseCreatedVariant0Decrypted._(this.value);
 
-  factory CreateProjectEnvResponseCreatedVariant0Decrypted.fromJson(bool value) => CreateProjectEnvResponseCreatedVariant0Decrypted._(value);
+  factory CreateProjectEnvResponseCreatedVariant0Decrypted.fromJson(
+          bool value) =>
+      CreateProjectEnvResponseCreatedVariant0Decrypted._(value);
 
-  static const false_ = CreateProjectEnvResponseCreatedVariant0Decrypted._(false);
+  static const false_ =
+      CreateProjectEnvResponseCreatedVariant0Decrypted._(false);
   static const true_ = CreateProjectEnvResponseCreatedVariant0Decrypted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectEnvResponseCreatedVariant0Decrypted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectEnvResponseCreatedVariant0Decrypted &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectEnvResponseCreatedVariant0InternalContentHintType {
-
   final String value;
 
-  const CreateProjectEnvResponseCreatedVariant0InternalContentHintType._(this.value);
+  const CreateProjectEnvResponseCreatedVariant0InternalContentHintType._(
+      this.value);
 
-  factory CreateProjectEnvResponseCreatedVariant0InternalContentHintType.fromJson(String value) => CreateProjectEnvResponseCreatedVariant0InternalContentHintType._(value);
+  factory CreateProjectEnvResponseCreatedVariant0InternalContentHintType.fromJson(
+          String value) =>
+      CreateProjectEnvResponseCreatedVariant0InternalContentHintType._(value);
 
-  static const flagsSecret = CreateProjectEnvResponseCreatedVariant0InternalContentHintType._('flags-secret');
+  static const flagsSecret =
+      CreateProjectEnvResponseCreatedVariant0InternalContentHintType._(
+          'flags-secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectEnvResponseCreatedVariant0InternalContentHintType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectEnvResponseCreatedVariant0InternalContentHintType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectEnvResponseCreatedVariant0System {
-
   final bool value;
 
   const CreateProjectEnvResponseCreatedVariant0System._(this.value);
 
-  factory CreateProjectEnvResponseCreatedVariant0System.fromJson(bool value) => CreateProjectEnvResponseCreatedVariant0System._(value);
+  factory CreateProjectEnvResponseCreatedVariant0System.fromJson(bool value) =>
+      CreateProjectEnvResponseCreatedVariant0System._(value);
 
   static const false_ = CreateProjectEnvResponseCreatedVariant0System._(false);
   static const true_ = CreateProjectEnvResponseCreatedVariant0System._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectEnvResponseCreatedVariant0System && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectEnvResponseCreatedVariant0System &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectEnvResponseCreatedVariant0TargetVariant0Item {
-
   final String value;
 
   const CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._(this.value);
 
-  factory CreateProjectEnvResponseCreatedVariant0TargetVariant0Item.fromJson(String value) => CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._(value);
+  factory CreateProjectEnvResponseCreatedVariant0TargetVariant0Item.fromJson(
+          String value) =>
+      CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._(value);
 
-  static const production = CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._('production');
-  static const preview = CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._('preview');
-  static const development = CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._('development');
+  static const production =
+      CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._('production');
+  static const preview =
+      CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._('preview');
+  static const development =
+      CreateProjectEnvResponseCreatedVariant0TargetVariant0Item._(
+          'development');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectEnvResponseCreatedVariant0TargetVariant0Item && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectEnvResponseCreatedVariant0TargetVariant0Item &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateProjectEnvResponseCreatedVariant0TargetVariant1 {
-
   final String value;
 
   const CreateProjectEnvResponseCreatedVariant0TargetVariant1._(this.value);
 
-  factory CreateProjectEnvResponseCreatedVariant0TargetVariant1.fromJson(String value) => CreateProjectEnvResponseCreatedVariant0TargetVariant1._(value);
+  factory CreateProjectEnvResponseCreatedVariant0TargetVariant1.fromJson(
+          String value) =>
+      CreateProjectEnvResponseCreatedVariant0TargetVariant1._(value);
 
-  static const production = CreateProjectEnvResponseCreatedVariant0TargetVariant1._('production');
-  static const preview = CreateProjectEnvResponseCreatedVariant0TargetVariant1._('preview');
-  static const development = CreateProjectEnvResponseCreatedVariant0TargetVariant1._('development');
+  static const production =
+      CreateProjectEnvResponseCreatedVariant0TargetVariant1._('production');
+  static const preview =
+      CreateProjectEnvResponseCreatedVariant0TargetVariant1._('preview');
+  static const development =
+      CreateProjectEnvResponseCreatedVariant0TargetVariant1._('development');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectEnvResponseCreatedVariant0TargetVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateProjectEnvResponseCreatedVariant0TargetVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

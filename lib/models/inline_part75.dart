@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type {
   redisRestApiUrl;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-url': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type.redisRestApiUrl;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type: $value');
+      case 'redis-rest-api-url':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type
+            .redisRestApiUrl;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type.redisRestApiUrl: return 'redis-rest-api-url';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type
+            .redisRestApiUrl:
+        return 'redis-rest-api-url';
     }
   }
 
@@ -27,16 +34,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant1Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type {
   postgresUser;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-user': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type.postgresUser;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type: $value');
+      case 'postgres-user':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type
+            .postgresUser;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type.postgresUser: return 'postgres-user';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type
+            .postgresUser:
+        return 'postgres-user';
     }
   }
 
@@ -47,16 +61,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant10Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type {
   postgresHost;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-host': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type.postgresHost;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type: $value');
+      case 'postgres-host':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type
+            .postgresHost;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type.postgresHost: return 'postgres-host';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type
+            .postgresHost:
+        return 'postgres-host';
     }
   }
 
@@ -67,16 +88,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant11Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type {
   postgresPassword;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-password': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type.postgresPassword;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type: $value');
+      case 'postgres-password':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type
+            .postgresPassword;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type.postgresPassword: return 'postgres-password';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type
+            .postgresPassword:
+        return 'postgres-password';
     }
   }
 
@@ -87,16 +115,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant12Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type {
   postgresDatabase;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-database': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type.postgresDatabase;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type: $value');
+      case 'postgres-database':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type
+            .postgresDatabase;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type.postgresDatabase: return 'postgres-database';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type
+            .postgresDatabase:
+        return 'postgres-database';
     }
   }
 
@@ -107,16 +142,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant13Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type {
   postgresUrlNoSsl;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-url-no-ssl': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type.postgresUrlNoSsl;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type: $value');
+      case 'postgres-url-no-ssl':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type
+            .postgresUrlNoSsl;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type.postgresUrlNoSsl: return 'postgres-url-no-ssl';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type
+            .postgresUrlNoSsl:
+        return 'postgres-url-no-ssl';
     }
   }
 
@@ -127,16 +169,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant14Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type {
   integrationStoreSecret;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type
+      fromJson(String value) {
     switch (value) {
-      case 'integration-store-secret': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type.integrationStoreSecret;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type: $value');
+      case 'integration-store-secret':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type
+            .integrationStoreSecret;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type.integrationStoreSecret: return 'integration-store-secret';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type
+            .integrationStoreSecret:
+        return 'integration-store-secret';
     }
   }
 
@@ -147,16 +196,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant15Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type {
   flagsConnectionString;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type
+      fromJson(String value) {
     switch (value) {
-      case 'flags-connection-string': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type.flagsConnectionString;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type: $value');
+      case 'flags-connection-string':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type
+            .flagsConnectionString;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type.flagsConnectionString: return 'flags-connection-string';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type
+            .flagsConnectionString:
+        return 'flags-connection-string';
     }
   }
 
@@ -167,16 +223,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant16Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type {
   redisRestApiToken;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type
+      fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-token': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type.redisRestApiToken;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type: $value');
+      case 'redis-rest-api-token':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type
+            .redisRestApiToken;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type.redisRestApiToken: return 'redis-rest-api-token';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type
+            .redisRestApiToken:
+        return 'redis-rest-api-token';
     }
   }
 
@@ -187,16 +250,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant2Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type {
   redisRestApiReadOnlyToken;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type
+      fromJson(String value) {
     switch (value) {
-      case 'redis-rest-api-read-only-token': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type.redisRestApiReadOnlyToken;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type: $value');
+      case 'redis-rest-api-read-only-token':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type
+            .redisRestApiReadOnlyToken;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type.redisRestApiReadOnlyToken: return 'redis-rest-api-read-only-token';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type
+            .redisRestApiReadOnlyToken:
+        return 'redis-rest-api-read-only-token';
     }
   }
 
@@ -207,16 +277,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant3Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type {
   blobReadWriteToken;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type
+      fromJson(String value) {
     switch (value) {
-      case 'blob-read-write-token': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type.blobReadWriteToken;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type: $value');
+      case 'blob-read-write-token':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type
+            .blobReadWriteToken;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type.blobReadWriteToken: return 'blob-read-write-token';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type
+            .blobReadWriteToken:
+        return 'blob-read-write-token';
     }
   }
 
@@ -227,16 +304,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant4Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type {
   blobStoreId;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type
+      fromJson(String value) {
     switch (value) {
-      case 'blob-store-id': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type.blobStoreId;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type: $value');
+      case 'blob-store-id':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type
+            .blobStoreId;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type.blobStoreId: return 'blob-store-id';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type
+            .blobStoreId:
+        return 'blob-store-id';
     }
   }
 
@@ -247,16 +331,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant5Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type
+      fromJson(String value) {
     switch (value) {
-      case 'blob-webhook-public-key': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type.blobWebhookPublicKey;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type
+            .blobWebhookPublicKey;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type
+            .blobWebhookPublicKey:
+        return 'blob-webhook-public-key';
     }
   }
 
@@ -267,16 +358,23 @@ enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant6Type {
 enum FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type {
   postgresUrl;
 
-  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type fromJson(String value) {
+  static FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type
+      fromJson(String value) {
     switch (value) {
-      case 'postgres-url': return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type.postgresUrl;
-      default: throw ArgumentError('Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type: $value');
+      case 'postgres-url':
+        return FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type
+            .postgresUrl;
+      default:
+        throw ArgumentError(
+            'Unknown FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type.postgresUrl: return 'postgres-url';
+      case FilterProjectEnvsResponseVariant1EnvsItemContentHintVariant7Type
+            .postgresUrl:
+        return 'postgres-url';
     }
   }
 

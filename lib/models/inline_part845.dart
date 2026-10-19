@@ -8,278 +8,764 @@ class ListProjectsResponseVariant1ProjectsItemResourceConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> buildMachineElasticLastUpdated;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason> buildMachineElasticReason;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition> buildMachineElasticTransition;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection> buildMachineSelection;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType> buildMachineType;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue> buildQueue;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta> enableFunctionsBeta;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFluid> fluid;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType> functionDefaultMemoryType;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason>
+      buildMachineElasticReason;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition>
+      buildMachineElasticTransition;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection>
+      buildMachineSelection;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType>
+      buildMachineType;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue>
+      buildQueue;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled>
+      elasticConcurrencyEnabled;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta>
+      enableFunctionsBeta;
+  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFluid>
+      fluid;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType>
+      functionDefaultMemoryType;
   final List<String> functionDefaultRegions;
   final SdkOptional<double> functionDefaultTimeout;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover> functionZeroConfigFailover;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled> isNsnbDisabled;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover>
+      functionZeroConfigFailover;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled>
+      isNsnbDisabled;
+
   /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine> elasticBuildMachine;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine>
+      elasticBuildMachine;
 
-  const ListProjectsResponseVariant1ProjectsItemResourceConfig({this.buildMachineElasticLastUpdated = const SdkOmitted(), this.buildMachineElasticReason = const SdkOmitted(), this.buildMachineElasticTransition = const SdkOmitted(), this.buildMachineSelection = const SdkOmitted(), this.buildMachineType = const SdkOmitted(), this.buildQueue = const SdkOmitted(), this.elasticConcurrencyEnabled = const SdkOmitted(), this.enableFunctionsBeta = const SdkOmitted(), this.fluid = const SdkOmitted(), this.functionDefaultMemoryType = const SdkOmitted(), required this.functionDefaultRegions, this.functionDefaultTimeout = const SdkOmitted(), this.functionZeroConfigFailover = const SdkOmitted(), this.isNsnbDisabled = const SdkOmitted(), this.elasticBuildMachine = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemResourceConfig(
+      {this.buildMachineElasticLastUpdated = const SdkOmitted(),
+      this.buildMachineElasticReason = const SdkOmitted(),
+      this.buildMachineElasticTransition = const SdkOmitted(),
+      this.buildMachineSelection = const SdkOmitted(),
+      this.buildMachineType = const SdkOmitted(),
+      this.buildQueue = const SdkOmitted(),
+      this.elasticConcurrencyEnabled = const SdkOmitted(),
+      this.enableFunctionsBeta = const SdkOmitted(),
+      this.fluid = const SdkOmitted(),
+      this.functionDefaultMemoryType = const SdkOmitted(),
+      required this.functionDefaultRegions,
+      this.functionDefaultTimeout = const SdkOmitted(),
+      this.functionZeroConfigFailover = const SdkOmitted(),
+      this.isNsnbDisabled = const SdkOmitted(),
+      this.elasticBuildMachine = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemResourceConfig Function({SdkOptional<double> buildMachineElasticLastUpdated, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason> buildMachineElasticReason, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition> buildMachineElasticTransition, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection> buildMachineSelection, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType> buildMachineType, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue> buildQueue, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled> elasticConcurrencyEnabled, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta> enableFunctionsBeta, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFluid> fluid, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType> functionDefaultMemoryType, List<String> functionDefaultRegions, SdkOptional<double> functionDefaultTimeout, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover> functionZeroConfigFailover, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled> isNsnbDisabled, SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine> elasticBuildMachine}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemResourceConfig Function(
+      {SdkOptional<double> buildMachineElasticLastUpdated,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason>
+          buildMachineElasticReason,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition>
+          buildMachineElasticTransition,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection>
+          buildMachineSelection,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType>
+          buildMachineType,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue>
+          buildQueue,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled>
+          elasticConcurrencyEnabled,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta>
+          enableFunctionsBeta,
+      SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFluid>
+          fluid,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType>
+          functionDefaultMemoryType,
+      List<String> functionDefaultRegions,
+      SdkOptional<double> functionDefaultTimeout,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover>
+          functionZeroConfigFailover,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled>
+          isNsnbDisabled,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine>
+          elasticBuildMachine}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemResourceConfig _copyWith({Object? buildMachineElasticLastUpdated = sdkOmittedValue, Object? buildMachineElasticReason = sdkOmittedValue, Object? buildMachineElasticTransition = sdkOmittedValue, Object? buildMachineSelection = sdkOmittedValue, Object? buildMachineType = sdkOmittedValue, Object? buildQueue = sdkOmittedValue, Object? elasticConcurrencyEnabled = sdkOmittedValue, Object? enableFunctionsBeta = sdkOmittedValue, Object? fluid = sdkOmittedValue, Object? functionDefaultMemoryType = sdkOmittedValue, Object? functionDefaultRegions = sdkOmittedValue, Object? functionDefaultTimeout = sdkOmittedValue, Object? functionZeroConfigFailover = sdkOmittedValue, Object? isNsnbDisabled = sdkOmittedValue, Object? elasticBuildMachine = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemResourceConfig(
-    buildMachineElasticLastUpdated: identical(buildMachineElasticLastUpdated, sdkOmittedValue) ? this.buildMachineElasticLastUpdated : buildMachineElasticLastUpdated as SdkOptional<double>,
-    buildMachineElasticReason: identical(buildMachineElasticReason, sdkOmittedValue) ? this.buildMachineElasticReason : buildMachineElasticReason as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason>,
-    buildMachineElasticTransition: identical(buildMachineElasticTransition, sdkOmittedValue) ? this.buildMachineElasticTransition : buildMachineElasticTransition as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition>,
-    buildMachineSelection: identical(buildMachineSelection, sdkOmittedValue) ? this.buildMachineSelection : buildMachineSelection as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection>,
-    buildMachineType: identical(buildMachineType, sdkOmittedValue) ? this.buildMachineType : buildMachineType as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType>,
-    buildQueue: identical(buildQueue, sdkOmittedValue) ? this.buildQueue : buildQueue as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue>,
-    elasticConcurrencyEnabled: identical(elasticConcurrencyEnabled, sdkOmittedValue) ? this.elasticConcurrencyEnabled : elasticConcurrencyEnabled as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled>,
-    enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue) ? this.enableFunctionsBeta : enableFunctionsBeta as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta>,
-    fluid: identical(fluid, sdkOmittedValue) ? this.fluid : fluid as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFluid>,
-    functionDefaultMemoryType: identical(functionDefaultMemoryType, sdkOmittedValue) ? this.functionDefaultMemoryType : functionDefaultMemoryType as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType>,
-    functionDefaultRegions: identical(functionDefaultRegions, sdkOmittedValue) ? this.functionDefaultRegions : functionDefaultRegions as List<String>,
-    functionDefaultTimeout: identical(functionDefaultTimeout, sdkOmittedValue) ? this.functionDefaultTimeout : functionDefaultTimeout as SdkOptional<double>,
-    functionZeroConfigFailover: identical(functionZeroConfigFailover, sdkOmittedValue) ? this.functionZeroConfigFailover : functionZeroConfigFailover as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover>,
-    isNsnbDisabled: identical(isNsnbDisabled, sdkOmittedValue) ? this.isNsnbDisabled : isNsnbDisabled as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled>,
-    elasticBuildMachine: identical(elasticBuildMachine, sdkOmittedValue) ? this.elasticBuildMachine : elasticBuildMachine as SdkOptional<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine>,
-  );
+  ListProjectsResponseVariant1ProjectsItemResourceConfig _copyWith(
+          {Object? buildMachineElasticLastUpdated = sdkOmittedValue,
+          Object? buildMachineElasticReason = sdkOmittedValue,
+          Object? buildMachineElasticTransition = sdkOmittedValue,
+          Object? buildMachineSelection = sdkOmittedValue,
+          Object? buildMachineType = sdkOmittedValue,
+          Object? buildQueue = sdkOmittedValue,
+          Object? elasticConcurrencyEnabled = sdkOmittedValue,
+          Object? enableFunctionsBeta = sdkOmittedValue,
+          Object? fluid = sdkOmittedValue,
+          Object? functionDefaultMemoryType = sdkOmittedValue,
+          Object? functionDefaultRegions = sdkOmittedValue,
+          Object? functionDefaultTimeout = sdkOmittedValue,
+          Object? functionZeroConfigFailover = sdkOmittedValue,
+          Object? isNsnbDisabled = sdkOmittedValue,
+          Object? elasticBuildMachine = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemResourceConfig(
+        buildMachineElasticLastUpdated:
+            identical(buildMachineElasticLastUpdated, sdkOmittedValue)
+                ? this.buildMachineElasticLastUpdated
+                : buildMachineElasticLastUpdated as SdkOptional<double>,
+        buildMachineElasticReason: identical(
+                buildMachineElasticReason, sdkOmittedValue)
+            ? this.buildMachineElasticReason
+            : buildMachineElasticReason as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason>,
+        buildMachineElasticTransition: identical(
+                buildMachineElasticTransition, sdkOmittedValue)
+            ? this.buildMachineElasticTransition
+            : buildMachineElasticTransition as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition>,
+        buildMachineSelection: identical(buildMachineSelection, sdkOmittedValue)
+            ? this.buildMachineSelection
+            : buildMachineSelection as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection>,
+        buildMachineType: identical(buildMachineType, sdkOmittedValue)
+            ? this.buildMachineType
+            : buildMachineType as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType>,
+        buildQueue: identical(buildQueue, sdkOmittedValue)
+            ? this.buildQueue
+            : buildQueue as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue>,
+        elasticConcurrencyEnabled: identical(
+                elasticConcurrencyEnabled, sdkOmittedValue)
+            ? this.elasticConcurrencyEnabled
+            : elasticConcurrencyEnabled as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled>,
+        enableFunctionsBeta: identical(enableFunctionsBeta, sdkOmittedValue)
+            ? this.enableFunctionsBeta
+            : enableFunctionsBeta as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta>,
+        fluid: identical(fluid, sdkOmittedValue)
+            ? this.fluid
+            : fluid as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigFluid>,
+        functionDefaultMemoryType: identical(
+                functionDefaultMemoryType, sdkOmittedValue)
+            ? this.functionDefaultMemoryType
+            : functionDefaultMemoryType as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType>,
+        functionDefaultRegions:
+            identical(functionDefaultRegions, sdkOmittedValue)
+                ? this.functionDefaultRegions
+                : functionDefaultRegions as List<String>,
+        functionDefaultTimeout:
+            identical(functionDefaultTimeout, sdkOmittedValue)
+                ? this.functionDefaultTimeout
+                : functionDefaultTimeout as SdkOptional<double>,
+        functionZeroConfigFailover: identical(
+                functionZeroConfigFailover, sdkOmittedValue)
+            ? this.functionZeroConfigFailover
+            : functionZeroConfigFailover as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover>,
+        isNsnbDisabled: identical(isNsnbDisabled, sdkOmittedValue)
+            ? this.isNsnbDisabled
+            : isNsnbDisabled as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled>,
+        elasticBuildMachine: identical(elasticBuildMachine, sdkOmittedValue)
+            ? this.elasticBuildMachine
+            : elasticBuildMachine as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine>,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemResourceConfig.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemResourceConfig(
-    buildMachineElasticLastUpdated: json['buildMachineElasticLastUpdated'] != null ? SdkPresent(((json['buildMachineElasticLastUpdated'] as num?)?.toDouble())!) : const SdkOmitted(),
-    buildMachineElasticReason: json['buildMachineElasticReason'] != null ? SdkPresent((json['buildMachineElasticReason'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason.fromJson(json['buildMachineElasticReason'] as String) : null)!) : const SdkOmitted(),
-    buildMachineElasticTransition: json['buildMachineElasticTransition'] != null ? SdkPresent((json['buildMachineElasticTransition'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition.fromJson(json['buildMachineElasticTransition'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildMachineSelection: json['buildMachineSelection'] != null ? SdkPresent((json['buildMachineSelection'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection.fromJson(json['buildMachineSelection'] as String) : null)!) : const SdkOmitted(),
-    buildMachineType: json['buildMachineType'] != null ? SdkPresent((json['buildMachineType'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType.fromJson(json['buildMachineType'] as String) : null)!) : const SdkOmitted(),
-    buildQueue: json['buildQueue'] != null ? SdkPresent((json['buildQueue'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue.fromJson(json['buildQueue'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null ? SdkPresent((json['elasticConcurrencyEnabled'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled.fromJson(json['elasticConcurrencyEnabled'] as bool) : null)!) : const SdkOmitted(),
-    enableFunctionsBeta: json['enableFunctionsBeta'] != null ? SdkPresent((json['enableFunctionsBeta'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta.fromJson(json['enableFunctionsBeta'] as bool) : null)!) : const SdkOmitted(),
-    fluid: json['fluid'] != null ? SdkPresent((json['fluid'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigFluid.fromJson(json['fluid'] as bool) : null)!) : const SdkOmitted(),
-    functionDefaultMemoryType: json['functionDefaultMemoryType'] != null ? SdkPresent((json['functionDefaultMemoryType'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType.fromJson(json['functionDefaultMemoryType'] as String) : null)!) : const SdkOmitted(),
-    functionDefaultRegions: ((json['functionDefaultRegions'] as List?)?.map((e) => e as String).toList())!,
-    functionDefaultTimeout: json['functionDefaultTimeout'] != null ? SdkPresent(((json['functionDefaultTimeout'] as num?)?.toDouble())!) : const SdkOmitted(),
-    functionZeroConfigFailover: json['functionZeroConfigFailover'] != null ? SdkPresent((json['functionZeroConfigFailover'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover.fromJson(json['functionZeroConfigFailover'] as bool) : null)!) : const SdkOmitted(),
-    isNsnbDisabled: json['isNSNBDisabled'] != null ? SdkPresent((json['isNSNBDisabled'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled.fromJson(json['isNSNBDisabled'] as bool) : null)!) : const SdkOmitted(),
-    elasticBuildMachine: json['elasticBuildMachine'] != null ? SdkPresent((json['elasticBuildMachine'] != null ? ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine.fromJson(json['elasticBuildMachine'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemResourceConfig.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemResourceConfig(
+        buildMachineElasticLastUpdated:
+            json['buildMachineElasticLastUpdated'] != null
+                ? SdkPresent(((json['buildMachineElasticLastUpdated'] as num?)
+                    ?.toDouble())!)
+                : const SdkOmitted(),
+        buildMachineElasticReason: json['buildMachineElasticReason'] != null
+            ? SdkPresent((json['buildMachineElasticReason'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason
+                    .fromJson(json['buildMachineElasticReason'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        buildMachineElasticTransition: json['buildMachineElasticTransition'] !=
+                null
+            ? SdkPresent((json['buildMachineElasticTransition'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition
+                    .fromJson(json['buildMachineElasticTransition']
+                        as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        buildMachineSelection: json['buildMachineSelection'] != null
+            ? SdkPresent((json['buildMachineSelection'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection
+                    .fromJson(json['buildMachineSelection'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        buildMachineType: json['buildMachineType'] != null
+            ? SdkPresent((json['buildMachineType'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType
+                    .fromJson(json['buildMachineType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        buildQueue: json['buildQueue'] != null
+            ? SdkPresent((json['buildQueue'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue
+                    .fromJson(json['buildQueue'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        elasticConcurrencyEnabled: json['elasticConcurrencyEnabled'] != null
+            ? SdkPresent((json['elasticConcurrencyEnabled'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled
+                    .fromJson(json['elasticConcurrencyEnabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        enableFunctionsBeta: json['enableFunctionsBeta'] != null
+            ? SdkPresent((json['enableFunctionsBeta'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta
+                    .fromJson(json['enableFunctionsBeta'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        fluid: json['fluid'] != null
+            ? SdkPresent((json['fluid'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigFluid
+                    .fromJson(json['fluid'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        functionDefaultMemoryType: json['functionDefaultMemoryType'] != null
+            ? SdkPresent((json['functionDefaultMemoryType'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType
+                    .fromJson(json['functionDefaultMemoryType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        functionDefaultRegions: ((json['functionDefaultRegions'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+        functionDefaultTimeout: json['functionDefaultTimeout'] != null
+            ? SdkPresent(
+                ((json['functionDefaultTimeout'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        functionZeroConfigFailover: json['functionZeroConfigFailover'] != null
+            ? SdkPresent((json['functionZeroConfigFailover'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover
+                    .fromJson(json['functionZeroConfigFailover'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        isNsnbDisabled: json['isNSNBDisabled'] != null
+            ? SdkPresent((json['isNSNBDisabled'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled
+                    .fromJson(json['isNSNBDisabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        elasticBuildMachine: json['elasticBuildMachine'] != null
+            ? SdkPresent((json['elasticBuildMachine'] != null
+                ? ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine
+                    .fromJson(
+                        json['elasticBuildMachine'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (buildMachineElasticLastUpdated) {
-      SdkPresent<double>(value: final value) => {'buildMachineElasticLastUpdated': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildMachineElasticReason) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason>(value: final value) => {'buildMachineElasticReason': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildMachineElasticTransition) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition>(value: final value) => {'buildMachineElasticTransition': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildMachineSelection) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection>(value: final value) => {'buildMachineSelection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildMachineType) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType>(value: final value) => {'buildMachineType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (buildQueue) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue>(value: final value) => {'buildQueue': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (elasticConcurrencyEnabled) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled>(value: final value) => {'elasticConcurrencyEnabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enableFunctionsBeta) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta>(value: final value) => {'enableFunctionsBeta': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (fluid) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigFluid>(value: final value) => {'fluid': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (functionDefaultMemoryType) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType>(value: final value) => {'functionDefaultMemoryType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'functionDefaultRegions': functionDefaultRegions,
-    ...switch (functionDefaultTimeout) {
-      SdkPresent<double>(value: final value) => {'functionDefaultTimeout': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (functionZeroConfigFailover) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover>(value: final value) => {'functionZeroConfigFailover': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isNsnbDisabled) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled>(value: final value) => {'isNSNBDisabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (elasticBuildMachine) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine>(value: final value) => {'elasticBuildMachine': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (buildMachineElasticLastUpdated) {
+          SdkPresent<double>(value: final value) => {
+              'buildMachineElasticLastUpdated': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildMachineElasticReason) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticReason>(
+            value: final value
+          ) =>
+            {
+              'buildMachineElasticReason': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildMachineElasticTransition) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineElasticTransition>(
+            value: final value
+          ) =>
+            {
+              'buildMachineElasticTransition': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildMachineSelection) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineSelection>(
+            value: final value
+          ) =>
+            {
+              'buildMachineSelection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildMachineType) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildMachineType>(
+            value: final value
+          ) =>
+            {
+              'buildMachineType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (buildQueue) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigBuildQueue>(
+            value: final value
+          ) =>
+            {
+              'buildQueue': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (elasticConcurrencyEnabled) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigElasticConcurrencyEnabled>(
+            value: final value
+          ) =>
+            {
+              'elasticConcurrencyEnabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enableFunctionsBeta) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigEnableFunctionsBeta>(
+            value: final value
+          ) =>
+            {
+              'enableFunctionsBeta': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (fluid) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigFluid>(
+            value: final value
+          ) =>
+            {
+              'fluid': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (functionDefaultMemoryType) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionDefaultMemoryType>(
+            value: final value
+          ) =>
+            {
+              'functionDefaultMemoryType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'functionDefaultRegions': functionDefaultRegions,
+        ...switch (functionDefaultTimeout) {
+          SdkPresent<double>(value: final value) => {
+              'functionDefaultTimeout': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (functionZeroConfigFailover) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigFunctionZeroConfigFailover>(
+            value: final value
+          ) =>
+            {
+              'functionZeroConfigFailover': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isNsnbDisabled) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigIsNSNBDisabled>(
+            value: final value
+          ) =>
+            {
+              'isNSNBDisabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (elasticBuildMachine) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemResourceConfigElasticBuildMachine>(
+            value: final value
+          ) =>
+            {
+              'elasticBuildMachine': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The checks to evaluate. An empty array means nothing is evaluated.
 class ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Request paths to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Matched exactly against the request path with any query string removed; no prefix or glob matching. Defaults to `[]` when omitted.
   final SdkOptional<List<String>> excludePaths;
+
   /// Response status codes to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.
   final SdkOptional<List<double>> excludeStatusCodes;
+
   /// Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.
   final SdkOptional<double> ingestWatermarkSeconds;
+
   /// A run fails only when the canary's error rate is higher and its one-sided Fisher p-value is below this significance level. Defaults to `0.05`; lower values require stronger evidence.
   final SdkOptional<double> significanceLevel;
+
   /// The metric this check evaluates.
-  final ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType type_;
+  final ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType
+      type_;
 
-  const ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem({this.excludePaths = const SdkOmitted(), this.excludeStatusCodes = const SdkOmitted(), this.ingestWatermarkSeconds = const SdkOmitted(), this.significanceLevel = const SdkOmitted(), required this.type_});
+  const ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem(
+      {this.excludePaths = const SdkOmitted(),
+      this.excludeStatusCodes = const SdkOmitted(),
+      this.ingestWatermarkSeconds = const SdkOmitted(),
+      this.significanceLevel = const SdkOmitted(),
+      required this.type_});
 
-  ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem Function({SdkOptional<List<String>> excludePaths, SdkOptional<List<double>> excludeStatusCodes, SdkOptional<double> ingestWatermarkSeconds, SdkOptional<double> significanceLevel, ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType type_}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem Function(
+      {SdkOptional<List<String>> excludePaths,
+      SdkOptional<List<double>> excludeStatusCodes,
+      SdkOptional<double> ingestWatermarkSeconds,
+      SdkOptional<double> significanceLevel,
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType
+          type_}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem _copyWith({Object? excludePaths = sdkOmittedValue, Object? excludeStatusCodes = sdkOmittedValue, Object? ingestWatermarkSeconds = sdkOmittedValue, Object? significanceLevel = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem(
-    excludePaths: identical(excludePaths, sdkOmittedValue) ? this.excludePaths : excludePaths as SdkOptional<List<String>>,
-    excludeStatusCodes: identical(excludeStatusCodes, sdkOmittedValue) ? this.excludeStatusCodes : excludeStatusCodes as SdkOptional<List<double>>,
-    ingestWatermarkSeconds: identical(ingestWatermarkSeconds, sdkOmittedValue) ? this.ingestWatermarkSeconds : ingestWatermarkSeconds as SdkOptional<double>,
-    significanceLevel: identical(significanceLevel, sdkOmittedValue) ? this.significanceLevel : significanceLevel as SdkOptional<double>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType,
-  );
+  ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem
+      _copyWith(
+              {Object? excludePaths = sdkOmittedValue,
+              Object? excludeStatusCodes = sdkOmittedValue,
+              Object? ingestWatermarkSeconds = sdkOmittedValue,
+              Object? significanceLevel = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem(
+            excludePaths: identical(excludePaths, sdkOmittedValue)
+                ? this.excludePaths
+                : excludePaths as SdkOptional<List<String>>,
+            excludeStatusCodes: identical(excludeStatusCodes, sdkOmittedValue)
+                ? this.excludeStatusCodes
+                : excludeStatusCodes as SdkOptional<List<double>>,
+            ingestWatermarkSeconds:
+                identical(ingestWatermarkSeconds, sdkOmittedValue)
+                    ? this.ingestWatermarkSeconds
+                    : ingestWatermarkSeconds as SdkOptional<double>,
+            significanceLevel: identical(significanceLevel, sdkOmittedValue)
+                ? this.significanceLevel
+                : significanceLevel as SdkOptional<double>,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem(
-    excludePaths: json['excludePaths'] != null ? SdkPresent(((json['excludePaths'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    excludeStatusCodes: json['excludeStatusCodes'] != null ? SdkPresent(((json['excludeStatusCodes'] as List?)?.map((e) => (e as num).toDouble()).toList())!) : const SdkOmitted(),
-    ingestWatermarkSeconds: json['ingestWatermarkSeconds'] != null ? SdkPresent(((json['ingestWatermarkSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    significanceLevel: json['significanceLevel'] != null ? SdkPresent(((json['significanceLevel'] as num?)?.toDouble())!) : const SdkOmitted(),
-    type_: (json['type'] != null ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem(
+        excludePaths: json['excludePaths'] != null
+            ? SdkPresent(((json['excludePaths'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        excludeStatusCodes: json['excludeStatusCodes'] != null
+            ? SdkPresent(((json['excludeStatusCodes'] as List?)
+                ?.map((e) => (e as num).toDouble())
+                .toList())!)
+            : const SdkOmitted(),
+        ingestWatermarkSeconds: json['ingestWatermarkSeconds'] != null
+            ? SdkPresent(
+                ((json['ingestWatermarkSeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        significanceLevel: json['significanceLevel'] != null
+            ? SdkPresent(((json['significanceLevel'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItemType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (excludePaths) {
-      SdkPresent<List<String>>(value: final value) => {'excludePaths': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (excludeStatusCodes) {
-      SdkPresent<List<double>>(value: final value) => {'excludeStatusCodes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ingestWatermarkSeconds) {
-      SdkPresent<double>(value: final value) => {'ingestWatermarkSeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (significanceLevel) {
-      SdkPresent<double>(value: final value) => {'significanceLevel': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-  };
+        ...switch (excludePaths) {
+          SdkPresent<List<String>>(value: final value) => {
+              'excludePaths': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (excludeStatusCodes) {
+          SdkPresent<List<double>>(value: final value) => {
+              'excludeStatusCodes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ingestWatermarkSeconds) {
+          SdkPresent<double>(value: final value) => {
+              'ingestWatermarkSeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (significanceLevel) {
+          SdkPresent<double>(value: final value) => {
+              'significanceLevel': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+      };
 }
 
 /// Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`.
 class ListProjectsResponseVariant1ProjectsItemRollingReleaseGate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// What to do when the gate trips: pause the rollout, or roll it back.
   final ListProjectsResponseVariant1ProjectsItemRollingReleaseGateAction action;
+
   /// The checks to evaluate. An empty array means nothing is evaluated.
-  final List<ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem> checks;
+  final List<
+          ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem>
+      checks;
+
   /// When true, a tripped gate is only reported — {@link action} is not taken.
   final ListProjectsResponseVariant1ProjectsItemRollingReleaseGateDryRun dryRun;
+
   /// Whether automated gating is enabled for this project's rollouts.
-  final ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled enabled;
+  final ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled
+      enabled;
+
   /// How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.
   final SdkOptional<double> failureThreshold;
+
   /// How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.
   final SdkOptional<double> windowSize;
 
-  const ListProjectsResponseVariant1ProjectsItemRollingReleaseGate({required this.action, required this.checks, required this.dryRun, required this.enabled, this.failureThreshold = const SdkOmitted(), this.windowSize = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemRollingReleaseGate(
+      {required this.action,
+      required this.checks,
+      required this.dryRun,
+      required this.enabled,
+      this.failureThreshold = const SdkOmitted(),
+      this.windowSize = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemRollingReleaseGate Function({ListProjectsResponseVariant1ProjectsItemRollingReleaseGateAction action, List<ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem> checks, ListProjectsResponseVariant1ProjectsItemRollingReleaseGateDryRun dryRun, ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled enabled, SdkOptional<double> failureThreshold, SdkOptional<double> windowSize}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemRollingReleaseGate Function(
+      {ListProjectsResponseVariant1ProjectsItemRollingReleaseGateAction action,
+      List<ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem>
+          checks,
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseGateDryRun dryRun,
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled enabled,
+      SdkOptional<double> failureThreshold,
+      SdkOptional<double> windowSize}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemRollingReleaseGate _copyWith({Object? action = sdkOmittedValue, Object? checks = sdkOmittedValue, Object? dryRun = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? failureThreshold = sdkOmittedValue, Object? windowSize = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemRollingReleaseGate(
-    action: identical(action, sdkOmittedValue) ? this.action : action as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateAction,
-    checks: identical(checks, sdkOmittedValue) ? this.checks : checks as List<ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem>,
-    dryRun: identical(dryRun, sdkOmittedValue) ? this.dryRun : dryRun as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateDryRun,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled,
-    failureThreshold: identical(failureThreshold, sdkOmittedValue) ? this.failureThreshold : failureThreshold as SdkOptional<double>,
-    windowSize: identical(windowSize, sdkOmittedValue) ? this.windowSize : windowSize as SdkOptional<double>,
-  );
+  ListProjectsResponseVariant1ProjectsItemRollingReleaseGate _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? checks = sdkOmittedValue,
+          Object? dryRun = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? failureThreshold = sdkOmittedValue,
+          Object? windowSize = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseGate(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateAction,
+        checks: identical(checks, sdkOmittedValue)
+            ? this.checks
+            : checks as List<
+                ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem>,
+        dryRun: identical(dryRun, sdkOmittedValue)
+            ? this.dryRun
+            : dryRun
+                as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateDryRun,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled
+                as ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled,
+        failureThreshold: identical(failureThreshold, sdkOmittedValue)
+            ? this.failureThreshold
+            : failureThreshold as SdkOptional<double>,
+        windowSize: identical(windowSize, sdkOmittedValue)
+            ? this.windowSize
+            : windowSize as SdkOptional<double>,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemRollingReleaseGate.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemRollingReleaseGate(
-    action: (json['action'] != null ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateAction.fromJson(json['action'] as String) : null)!,
-    checks: ((json['checks'] as List?)?.map((e) => ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    dryRun: (json['dryRun'] != null ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateDryRun.fromJson(json['dryRun'] as bool) : null)!,
-    enabled: (json['enabled'] != null ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled.fromJson(json['enabled'] as bool) : null)!,
-    failureThreshold: json['failureThreshold'] != null ? SdkPresent(((json['failureThreshold'] as num?)?.toDouble())!) : const SdkOmitted(),
-    windowSize: json['windowSize'] != null ? SdkPresent(((json['windowSize'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemRollingReleaseGate.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseGate(
+        action: (json['action'] != null
+            ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateAction
+                .fromJson(json['action'] as String)
+            : null)!,
+        checks: ((json['checks'] as List?)
+            ?.map((e) =>
+                ListProjectsResponseVariant1ProjectsItemRollingReleaseGateChecksItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        dryRun: (json['dryRun'] != null
+            ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateDryRun
+                .fromJson(json['dryRun'] as bool)
+            : null)!,
+        enabled: (json['enabled'] != null
+            ? ListProjectsResponseVariant1ProjectsItemRollingReleaseGateEnabled
+                .fromJson(json['enabled'] as bool)
+            : null)!,
+        failureThreshold: json['failureThreshold'] != null
+            ? SdkPresent(((json['failureThreshold'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        windowSize: json['windowSize'] != null
+            ? SdkPresent(((json['windowSize'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'checks': checks.map((item) => item.toJson()).toList(),
-    'dryRun': dryRun.toJson(),
-    'enabled': enabled.toJson(),
-    ...switch (failureThreshold) {
-      SdkPresent<double>(value: final value) => {'failureThreshold': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (windowSize) {
-      SdkPresent<double>(value: final value) => {'windowSize': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action.toJson(),
+        'checks': checks.map((item) => item.toJson()).toList(),
+        'dryRun': dryRun.toJson(),
+        'enabled': enabled.toJson(),
+        ...switch (failureThreshold) {
+          SdkPresent<double>(value: final value) => {
+              'failureThreshold': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (windowSize) {
+          SdkPresent<double>(value: final value) => {
+              'windowSize': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// An array of all the stages required during a deployment release. Each stage defines a target percentage and advancement rules. The final stage must always have targetPercentage: 100.
 class ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Duration in minutes for automatic advancement to the next stage
   final SdkOptional<double> duration;
+
   /// Whether to linearly shift traffic over the duration of this stage
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift> linearShift;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift>
+      linearShift;
+
   /// Whether or not this stage requires manual approval to proceed
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval> requireApproval;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval>
+      requireApproval;
+
   /// The percentage of traffic to serve to the canary deployment (0-100)
   final double targetPercentage;
 
-  const ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem({this.duration = const SdkOmitted(), this.linearShift = const SdkOmitted(), this.requireApproval = const SdkOmitted(), required this.targetPercentage});
+  const ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem(
+      {this.duration = const SdkOmitted(),
+      this.linearShift = const SdkOmitted(),
+      this.requireApproval = const SdkOmitted(),
+      required this.targetPercentage});
 
-  ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem Function({SdkOptional<double> duration, SdkOptional<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift> linearShift, SdkOptional<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval> requireApproval, double targetPercentage}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem Function(
+      {SdkOptional<double> duration,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift>
+          linearShift,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval>
+          requireApproval,
+      double targetPercentage}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem _copyWith({Object? duration = sdkOmittedValue, Object? linearShift = sdkOmittedValue, Object? requireApproval = sdkOmittedValue, Object? targetPercentage = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem(
-    duration: identical(duration, sdkOmittedValue) ? this.duration : duration as SdkOptional<double>,
-    linearShift: identical(linearShift, sdkOmittedValue) ? this.linearShift : linearShift as SdkOptional<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift>,
-    requireApproval: identical(requireApproval, sdkOmittedValue) ? this.requireApproval : requireApproval as SdkOptional<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval>,
-    targetPercentage: identical(targetPercentage, sdkOmittedValue) ? this.targetPercentage : targetPercentage as double,
-  );
+  ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem _copyWith(
+          {Object? duration = sdkOmittedValue,
+          Object? linearShift = sdkOmittedValue,
+          Object? requireApproval = sdkOmittedValue,
+          Object? targetPercentage = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem(
+        duration: identical(duration, sdkOmittedValue)
+            ? this.duration
+            : duration as SdkOptional<double>,
+        linearShift: identical(linearShift, sdkOmittedValue)
+            ? this.linearShift
+            : linearShift as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift>,
+        requireApproval: identical(requireApproval, sdkOmittedValue)
+            ? this.requireApproval
+            : requireApproval as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval>,
+        targetPercentage: identical(targetPercentage, sdkOmittedValue)
+            ? this.targetPercentage
+            : targetPercentage as double,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem(
-    duration: json['duration'] != null ? SdkPresent(((json['duration'] as num?)?.toDouble())!) : const SdkOmitted(),
-    linearShift: json['linearShift'] != null ? SdkPresent((json['linearShift'] != null ? ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift.fromJson(json['linearShift'] as bool) : null)!) : const SdkOmitted(),
-    requireApproval: json['requireApproval'] != null ? SdkPresent((json['requireApproval'] != null ? ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval.fromJson(json['requireApproval'] as bool) : null)!) : const SdkOmitted(),
-    targetPercentage: ((json['targetPercentage'] as num?)?.toDouble())!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItem(
+        duration: json['duration'] != null
+            ? SdkPresent(((json['duration'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        linearShift: json['linearShift'] != null
+            ? SdkPresent((json['linearShift'] != null
+                ? ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift
+                    .fromJson(json['linearShift'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        requireApproval: json['requireApproval'] != null
+            ? SdkPresent((json['requireApproval'] != null
+                ? ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval
+                    .fromJson(json['requireApproval'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        targetPercentage: ((json['targetPercentage'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (duration) {
-      SdkPresent<double>(value: final value) => {'duration': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (linearShift) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift>(value: final value) => {'linearShift': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (requireApproval) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval>(value: final value) => {'requireApproval': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'targetPercentage': targetPercentage,
-  };
+        ...switch (duration) {
+          SdkPresent<double>(value: final value) => {
+              'duration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (linearShift) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemLinearShift>(
+            value: final value
+          ) =>
+            {
+              'linearShift': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (requireApproval) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemRollingReleaseStagesItemRequireApproval>(
+            value: final value
+          ) =>
+            {
+              'requireApproval': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'targetPercentage': targetPercentage,
+      };
 }

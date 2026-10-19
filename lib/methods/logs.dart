@@ -22,12 +22,15 @@ Future<GetRuntimeLogsResponse> getRuntimeLogs(ClientConfig config,
           '/v1/projects/${Uri.encodeComponent(projectId.toString())}/deployments/${Uri.encodeComponent(deploymentId.toString())}/runtime-logs',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getRuntimeLogs',
-          fromJsonRaw: (value) => GetRuntimeLogsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetRuntimeLogsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

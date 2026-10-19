@@ -5,271 +5,404 @@ part of 'inline.dart';
 
 // Inline operation models (part 32)
 final class CreateDeploymentResponseVariant1ConfigFunctionMemoryType {
-
   final String value;
 
   const CreateDeploymentResponseVariant1ConfigFunctionMemoryType._(this.value);
 
-  factory CreateDeploymentResponseVariant1ConfigFunctionMemoryType.fromJson(String value) => CreateDeploymentResponseVariant1ConfigFunctionMemoryType._(value);
+  factory CreateDeploymentResponseVariant1ConfigFunctionMemoryType.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ConfigFunctionMemoryType._(value);
 
-  static const performance = CreateDeploymentResponseVariant1ConfigFunctionMemoryType._('performance');
-  static const performanceXl = CreateDeploymentResponseVariant1ConfigFunctionMemoryType._('performance_xl');
-  static const standard = CreateDeploymentResponseVariant1ConfigFunctionMemoryType._('standard');
-  static const standardLegacy = CreateDeploymentResponseVariant1ConfigFunctionMemoryType._('standard_legacy');
+  static const performance =
+      CreateDeploymentResponseVariant1ConfigFunctionMemoryType._('performance');
+  static const performanceXl =
+      CreateDeploymentResponseVariant1ConfigFunctionMemoryType._(
+          'performance_xl');
+  static const standard =
+      CreateDeploymentResponseVariant1ConfigFunctionMemoryType._('standard');
+  static const standardLegacy =
+      CreateDeploymentResponseVariant1ConfigFunctionMemoryType._(
+          'standard_legacy');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ConfigFunctionMemoryType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1ConfigFunctionMemoryType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ConfigFunctionType {
-
   final String value;
 
   const CreateDeploymentResponseVariant1ConfigFunctionType._(this.value);
 
-  factory CreateDeploymentResponseVariant1ConfigFunctionType.fromJson(String value) => CreateDeploymentResponseVariant1ConfigFunctionType._(value);
+  factory CreateDeploymentResponseVariant1ConfigFunctionType.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ConfigFunctionType._(value);
 
-  static const fluid = CreateDeploymentResponseVariant1ConfigFunctionType._('fluid');
-  static const standard = CreateDeploymentResponseVariant1ConfigFunctionType._('standard');
+  static const fluid =
+      CreateDeploymentResponseVariant1ConfigFunctionType._('fluid');
+  static const standard =
+      CreateDeploymentResponseVariant1ConfigFunctionType._('standard');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ConfigFunctionType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1ConfigFunctionType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU {
-
   final bool value;
 
   const CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU._(this.value);
 
-  factory CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU.fromJson(bool value) => CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU._(value);
+  factory CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU._(false);
-  static const true_ = CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1ConfigIsUsingActiveCPU &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Machine type that was used for the build.
 final class CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType._(this.value);
+  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType.fromJson(String value) => CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType._(value);
+  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType
+          ._(value);
 
-  static const basic = CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType._('basic');
-  static const enhanced = CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType._('enhanced');
-  static const standard = CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType._('standard');
-  static const turbo = CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType._('turbo');
+  static const basic =
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType
+          ._('basic');
+  static const enhanced =
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType
+          ._('enhanced');
+  static const standard =
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType
+          ._('standard');
+  static const turbo =
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType
+          ._('turbo');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ConfigResourceConfigBuildMachinePurchaseType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Build resource configuration snapshot for this deployment.
 final class CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration._(this.value);
+  const CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration.fromJson(String value) => CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration._(value);
+  factory CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration
+          ._(value);
 
-  static const skipNamespaceQueue = CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration._('SKIP_NAMESPACE_QUEUE');
-  static const waitForNamespaceQueue = CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration._('WAIT_FOR_NAMESPACE_QUEUE');
+  static const skipNamespaceQueue =
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration
+          ._('SKIP_NAMESPACE_QUEUE');
+  static const waitForNamespaceQueue =
+      CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration
+          ._('WAIT_FOR_NAMESPACE_QUEUE');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ConfigResourceConfigBuildQueueConfiguration &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// When elastic concurrency is used for this deployment, a value is set. The value tells the reason where the setting was coming from. - TEAM_SETTING: Inherited from team settings - PROJECT_SETTING: Inherited from project settings - SKIP_QUEUE: Manually triggered by user to skip the queues
 final class CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._(this.value);
+  const CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency.fromJson(String value) => CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._(value);
+  factory CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._(
+          value);
 
-  static const projectSetting = CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._('PROJECT_SETTING');
-  static const skipQueue = CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._('SKIP_QUEUE');
-  static const teamSetting = CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._('TEAM_SETTING');
+  static const projectSetting =
+      CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._(
+          'PROJECT_SETTING');
+  static const skipQueue =
+      CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._(
+          'SKIP_QUEUE');
+  static const teamSetting =
+      CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency._(
+          'TEAM_SETTING');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1ConfigResourceConfigElasticConcurrency &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1ConnectBuildsEnabled {
-
   final bool value;
 
   const CreateDeploymentResponseVariant1ConnectBuildsEnabled._(this.value);
 
-  factory CreateDeploymentResponseVariant1ConnectBuildsEnabled.fromJson(bool value) => CreateDeploymentResponseVariant1ConnectBuildsEnabled._(value);
+  factory CreateDeploymentResponseVariant1ConnectBuildsEnabled.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1ConnectBuildsEnabled._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1ConnectBuildsEnabled._(false);
-  static const true_ = CreateDeploymentResponseVariant1ConnectBuildsEnabled._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1ConnectBuildsEnabled._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1ConnectBuildsEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1ConnectBuildsEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1ConnectBuildsEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Principal type of the deployment creator.
 final class CreateDeploymentResponseVariant1CreatorType {
-
   final String value;
 
   const CreateDeploymentResponseVariant1CreatorType._(this.value);
 
-  factory CreateDeploymentResponseVariant1CreatorType.fromJson(String value) => CreateDeploymentResponseVariant1CreatorType._(value);
+  factory CreateDeploymentResponseVariant1CreatorType.fromJson(String value) =>
+      CreateDeploymentResponseVariant1CreatorType._(value);
 
   static const app = CreateDeploymentResponseVariant1CreatorType._('app');
-  static const integration = CreateDeploymentResponseVariant1CreatorType._('integration');
+  static const integration =
+      CreateDeploymentResponseVariant1CreatorType._('integration');
   static const system = CreateDeploymentResponseVariant1CreatorType._('system');
   static const user = CreateDeploymentResponseVariant1CreatorType._('user');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1CreatorType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1CreatorType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of matching to perform
 final class CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType._(this.value);
+  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType.fromJson(String value) => CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType._(value);
+  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType
+          ._(value);
 
-  static const endswith = CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType._('endsWith');
-  static const equals = CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType._('equals');
-  static const startswith = CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType._('startsWith');
+  static const endswith =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType
+          ._('endsWith');
+  static const equals =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType
+          ._('equals');
+  static const startswith =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType
+          ._('startsWith');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1CustomEnvironmentVariant0BranchMatcherType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode {
-
   final double value;
 
-  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode._(this.value);
+  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode.fromJson(double value) => CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode._(value);
+  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode.fromJson(
+          double value) =>
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode
+          ._(value);
 
-  static const v301 = CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode._(301);
-  static const v302 = CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode._(302);
-  static const v307 = CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode._(307);
-  static const v308 = CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode._(308);
+  static const v301 =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode
+          ._(301);
+  static const v302 =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode
+          ._(302);
+  static const v307 =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode
+          ._(307);
+  static const v308 =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode
+          ._(308);
 
   double toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemRedirectStatusCode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
 final class CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified {
-
   final bool value;
 
-  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified._(this.value);
+  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified.fromJson(bool value) => CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified._(value);
+  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified.fromJson(
+          bool value) =>
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified
+          ._(value);
 
-  static const false_ = CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified._(false);
-  static const true_ = CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified._(true);
+  static const false_ =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified
+          ._(false);
+  static const true_ =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CreateDeploymentResponseVariant1CustomEnvironmentVariant0DomainsItemVerified &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of environment (production, preview, or development)
 final class CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type {
-
   final String value;
 
-  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._(this.value);
+  const CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._(
+      this.value);
 
-  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type.fromJson(String value) => CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._(value);
+  factory CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type.fromJson(
+          String value) =>
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._(value);
 
-  static const development = CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._('development');
-  static const preview = CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._('preview');
-  static const production = CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._('production');
+  static const development =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._(
+          'development');
+  static const preview =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._(
+          'preview');
+  static const production =
+      CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type._(
+          'production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentResponseVariant1CustomEnvironmentVariant0Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

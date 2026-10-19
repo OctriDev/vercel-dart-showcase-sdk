@@ -5,274 +5,326 @@ part of 'inline.dart';
 
 // Inline operation models (part 407)
 final class PutFirewallConfigResponseActiveCrsPhpAction {
-
   final String value;
 
   const PutFirewallConfigResponseActiveCrsPhpAction._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsPhpAction.fromJson(String value) => PutFirewallConfigResponseActiveCrsPhpAction._(value);
+  factory PutFirewallConfigResponseActiveCrsPhpAction.fromJson(String value) =>
+      PutFirewallConfigResponseActiveCrsPhpAction._(value);
 
   static const deny = PutFirewallConfigResponseActiveCrsPhpAction._('deny');
   static const log = PutFirewallConfigResponseActiveCrsPhpAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsPhpAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsPhpAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsPhpActive {
-
   final bool value;
 
   const PutFirewallConfigResponseActiveCrsPhpActive._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsPhpActive.fromJson(bool value) => PutFirewallConfigResponseActiveCrsPhpActive._(value);
+  factory PutFirewallConfigResponseActiveCrsPhpActive.fromJson(bool value) =>
+      PutFirewallConfigResponseActiveCrsPhpActive._(value);
 
   static const false_ = PutFirewallConfigResponseActiveCrsPhpActive._(false);
   static const true_ = PutFirewallConfigResponseActiveCrsPhpActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsPhpActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsPhpActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsRceAction {
-
   final String value;
 
   const PutFirewallConfigResponseActiveCrsRceAction._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsRceAction.fromJson(String value) => PutFirewallConfigResponseActiveCrsRceAction._(value);
+  factory PutFirewallConfigResponseActiveCrsRceAction.fromJson(String value) =>
+      PutFirewallConfigResponseActiveCrsRceAction._(value);
 
   static const deny = PutFirewallConfigResponseActiveCrsRceAction._('deny');
   static const log = PutFirewallConfigResponseActiveCrsRceAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsRceAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsRceAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsRceActive {
-
   final bool value;
 
   const PutFirewallConfigResponseActiveCrsRceActive._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsRceActive.fromJson(bool value) => PutFirewallConfigResponseActiveCrsRceActive._(value);
+  factory PutFirewallConfigResponseActiveCrsRceActive.fromJson(bool value) =>
+      PutFirewallConfigResponseActiveCrsRceActive._(value);
 
   static const false_ = PutFirewallConfigResponseActiveCrsRceActive._(false);
   static const true_ = PutFirewallConfigResponseActiveCrsRceActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsRceActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsRceActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsRfiAction {
-
   final String value;
 
   const PutFirewallConfigResponseActiveCrsRfiAction._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsRfiAction.fromJson(String value) => PutFirewallConfigResponseActiveCrsRfiAction._(value);
+  factory PutFirewallConfigResponseActiveCrsRfiAction.fromJson(String value) =>
+      PutFirewallConfigResponseActiveCrsRfiAction._(value);
 
   static const deny = PutFirewallConfigResponseActiveCrsRfiAction._('deny');
   static const log = PutFirewallConfigResponseActiveCrsRfiAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsRfiAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsRfiAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsRfiActive {
-
   final bool value;
 
   const PutFirewallConfigResponseActiveCrsRfiActive._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsRfiActive.fromJson(bool value) => PutFirewallConfigResponseActiveCrsRfiActive._(value);
+  factory PutFirewallConfigResponseActiveCrsRfiActive.fromJson(bool value) =>
+      PutFirewallConfigResponseActiveCrsRfiActive._(value);
 
   static const false_ = PutFirewallConfigResponseActiveCrsRfiActive._(false);
   static const true_ = PutFirewallConfigResponseActiveCrsRfiActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsRfiActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsRfiActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsSdAction {
-
   final String value;
 
   const PutFirewallConfigResponseActiveCrsSdAction._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsSdAction.fromJson(String value) => PutFirewallConfigResponseActiveCrsSdAction._(value);
+  factory PutFirewallConfigResponseActiveCrsSdAction.fromJson(String value) =>
+      PutFirewallConfigResponseActiveCrsSdAction._(value);
 
   static const deny = PutFirewallConfigResponseActiveCrsSdAction._('deny');
   static const log = PutFirewallConfigResponseActiveCrsSdAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsSdAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsSdAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsSdActive {
-
   final bool value;
 
   const PutFirewallConfigResponseActiveCrsSdActive._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsSdActive.fromJson(bool value) => PutFirewallConfigResponseActiveCrsSdActive._(value);
+  factory PutFirewallConfigResponseActiveCrsSdActive.fromJson(bool value) =>
+      PutFirewallConfigResponseActiveCrsSdActive._(value);
 
   static const false_ = PutFirewallConfigResponseActiveCrsSdActive._(false);
   static const true_ = PutFirewallConfigResponseActiveCrsSdActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsSdActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsSdActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsSfAction {
-
   final String value;
 
   const PutFirewallConfigResponseActiveCrsSfAction._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsSfAction.fromJson(String value) => PutFirewallConfigResponseActiveCrsSfAction._(value);
+  factory PutFirewallConfigResponseActiveCrsSfAction.fromJson(String value) =>
+      PutFirewallConfigResponseActiveCrsSfAction._(value);
 
   static const deny = PutFirewallConfigResponseActiveCrsSfAction._('deny');
   static const log = PutFirewallConfigResponseActiveCrsSfAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsSfAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsSfAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsSfActive {
-
   final bool value;
 
   const PutFirewallConfigResponseActiveCrsSfActive._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsSfActive.fromJson(bool value) => PutFirewallConfigResponseActiveCrsSfActive._(value);
+  factory PutFirewallConfigResponseActiveCrsSfActive.fromJson(bool value) =>
+      PutFirewallConfigResponseActiveCrsSfActive._(value);
 
   static const false_ = PutFirewallConfigResponseActiveCrsSfActive._(false);
   static const true_ = PutFirewallConfigResponseActiveCrsSfActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsSfActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsSfActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsSqliAction {
-
   final String value;
 
   const PutFirewallConfigResponseActiveCrsSqliAction._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsSqliAction.fromJson(String value) => PutFirewallConfigResponseActiveCrsSqliAction._(value);
+  factory PutFirewallConfigResponseActiveCrsSqliAction.fromJson(String value) =>
+      PutFirewallConfigResponseActiveCrsSqliAction._(value);
 
   static const deny = PutFirewallConfigResponseActiveCrsSqliAction._('deny');
   static const log = PutFirewallConfigResponseActiveCrsSqliAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsSqliAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsSqliAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsSqliActive {
-
   final bool value;
 
   const PutFirewallConfigResponseActiveCrsSqliActive._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsSqliActive.fromJson(bool value) => PutFirewallConfigResponseActiveCrsSqliActive._(value);
+  factory PutFirewallConfigResponseActiveCrsSqliActive.fromJson(bool value) =>
+      PutFirewallConfigResponseActiveCrsSqliActive._(value);
 
   static const false_ = PutFirewallConfigResponseActiveCrsSqliActive._(false);
   static const true_ = PutFirewallConfigResponseActiveCrsSqliActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsSqliActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsSqliActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class PutFirewallConfigResponseActiveCrsXssAction {
-
   final String value;
 
   const PutFirewallConfigResponseActiveCrsXssAction._(this.value);
 
-  factory PutFirewallConfigResponseActiveCrsXssAction.fromJson(String value) => PutFirewallConfigResponseActiveCrsXssAction._(value);
+  factory PutFirewallConfigResponseActiveCrsXssAction.fromJson(String value) =>
+      PutFirewallConfigResponseActiveCrsXssAction._(value);
 
   static const deny = PutFirewallConfigResponseActiveCrsXssAction._('deny');
   static const log = PutFirewallConfigResponseActiveCrsXssAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is PutFirewallConfigResponseActiveCrsXssAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is PutFirewallConfigResponseActiveCrsXssAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

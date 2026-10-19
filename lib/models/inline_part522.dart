@@ -6,19 +6,21 @@ part of 'inline.dart';
 // Inline operation models (part 522)
 /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.
 final class CancelDeploymentResponseSource {
-
   final String value;
 
   const CancelDeploymentResponseSource._(this.value);
 
-  factory CancelDeploymentResponseSource.fromJson(String value) => CancelDeploymentResponseSource._(value);
+  factory CancelDeploymentResponseSource.fromJson(String value) =>
+      CancelDeploymentResponseSource._(value);
 
-  static const apiTriggerGitDeploy = CancelDeploymentResponseSource._('api-trigger-git-deploy');
+  static const apiTriggerGitDeploy =
+      CancelDeploymentResponseSource._('api-trigger-git-deploy');
   static const cli = CancelDeploymentResponseSource._('cli');
   static const cloneRepo = CancelDeploymentResponseSource._('clone/repo');
   static const drop = CancelDeploymentResponseSource._('drop');
   static const git = CancelDeploymentResponseSource._('git');
-  static const gitDeployHook = CancelDeploymentResponseSource._('git-deploy-hook');
+  static const gitDeployHook =
+      CancelDeploymentResponseSource._('git-deploy-hook');
   static const import_ = CancelDeploymentResponseSource._('import');
   static const importRepo = CancelDeploymentResponseSource._('import/repo');
   static const redeploy = CancelDeploymentResponseSource._('redeploy');
@@ -26,21 +28,24 @@ final class CancelDeploymentResponseSource {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseSource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseSource && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseStatus {
-
   final String value;
 
   const CancelDeploymentResponseStatus._(this.value);
 
-  factory CancelDeploymentResponseStatus.fromJson(String value) => CancelDeploymentResponseStatus._(value);
+  factory CancelDeploymentResponseStatus.fromJson(String value) =>
+      CancelDeploymentResponseStatus._(value);
 
   static const blocked = CancelDeploymentResponseStatus._('BLOCKED');
   static const building = CancelDeploymentResponseStatus._('BUILDING');
@@ -52,159 +57,185 @@ final class CancelDeploymentResponseStatus {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.
 final class CancelDeploymentResponseTarget {
-
   final String value;
 
   const CancelDeploymentResponseTarget._(this.value);
 
-  factory CancelDeploymentResponseTarget.fromJson(String value) => CancelDeploymentResponseTarget._(value);
+  factory CancelDeploymentResponseTarget.fromJson(String value) =>
+      CancelDeploymentResponseTarget._(value);
 
   static const production = CancelDeploymentResponseTarget._('production');
   static const staging = CancelDeploymentResponseTarget._('staging');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseTarget && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseTarget && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseTtyBuildLogs {
-
   final bool value;
 
   const CancelDeploymentResponseTtyBuildLogs._(this.value);
 
-  factory CancelDeploymentResponseTtyBuildLogs.fromJson(bool value) => CancelDeploymentResponseTtyBuildLogs._(value);
+  factory CancelDeploymentResponseTtyBuildLogs.fromJson(bool value) =>
+      CancelDeploymentResponseTtyBuildLogs._(value);
 
   static const false_ = CancelDeploymentResponseTtyBuildLogs._(false);
   static const true_ = CancelDeploymentResponseTtyBuildLogs._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseTtyBuildLogs && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseTtyBuildLogs && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseType {
-
   final String value;
 
   const CancelDeploymentResponseType._(this.value);
 
-  factory CancelDeploymentResponseType.fromJson(String value) => CancelDeploymentResponseType._(value);
+  factory CancelDeploymentResponseType.fromJson(String value) =>
+      CancelDeploymentResponseType._(value);
 
   static const lambdas = CancelDeploymentResponseType._('LAMBDAS');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The platform version that was used to create the deployment.
 final class CancelDeploymentResponseVersion {
-
   final int value;
 
   const CancelDeploymentResponseVersion._(this.value);
 
-  factory CancelDeploymentResponseVersion.fromJson(int value) => CancelDeploymentResponseVersion._(value);
+  factory CancelDeploymentResponseVersion.fromJson(int value) =>
+      CancelDeploymentResponseVersion._(value);
 
   static const v2 = CancelDeploymentResponseVersion._(2);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseVersion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseVersion && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Forces a new deployment even if there is a previous similar deployment. Set to `1` to bypass deployment deduplication and always trigger a fresh build.
 final class CreateDeploymentForceNew {
-
   final String value;
 
   const CreateDeploymentForceNew._(this.value);
 
-  factory CreateDeploymentForceNew.fromJson(String value) => CreateDeploymentForceNew._(value);
+  factory CreateDeploymentForceNew.fromJson(String value) =>
+      CreateDeploymentForceNew._(value);
 
   static const v0 = CreateDeploymentForceNew._('0');
   static const v1 = CreateDeploymentForceNew._('1');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentForceNew && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentForceNew && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Set to `1` to skip framework auto-detection and proceed without confirmation. By default, if Vercel detects a framework that differs from the project setting, the API returns a `400` asking you to confirm. Use this to suppress that check in automated pipelines.
 final class CreateDeploymentSkipAutoDetectionConfirmation {
-
   final String value;
 
   const CreateDeploymentSkipAutoDetectionConfirmation._(this.value);
 
-  factory CreateDeploymentSkipAutoDetectionConfirmation.fromJson(String value) => CreateDeploymentSkipAutoDetectionConfirmation._(value);
+  factory CreateDeploymentSkipAutoDetectionConfirmation.fromJson(
+          String value) =>
+      CreateDeploymentSkipAutoDetectionConfirmation._(value);
 
   static const v0 = CreateDeploymentSkipAutoDetectionConfirmation._('0');
   static const v1 = CreateDeploymentSkipAutoDetectionConfirmation._('1');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentSkipAutoDetectionConfirmation && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentSkipAutoDetectionConfirmation &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Selects a custom build machine for this deployment without changing project settings.
 final class CreateDeploymentRequestBodyBuildMachine {
-
   final String value;
 
   const CreateDeploymentRequestBodyBuildMachine._(this.value);
 
-  factory CreateDeploymentRequestBodyBuildMachine.fromJson(String value) => CreateDeploymentRequestBodyBuildMachine._(value);
+  factory CreateDeploymentRequestBodyBuildMachine.fromJson(String value) =>
+      CreateDeploymentRequestBodyBuildMachine._(value);
 
   static const turbo = CreateDeploymentRequestBodyBuildMachine._('turbo');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateDeploymentRequestBodyBuildMachine && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateDeploymentRequestBodyBuildMachine && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

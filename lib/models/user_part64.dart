@@ -8,118 +8,228 @@ part of 'user.dart';
 class UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `avatar` wire field.
   final SdkOptional<String> avatar;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String?> name;
+
   /// Required enumerated value serialized in the `type` wire field.
-  final UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type type_;
+  final UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type
+      type_;
+
   /// Required `string` value serialized in the `username` wire field.
   final String username;
 
-  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0({this.avatar = const SdkOmitted(), required this.id, this.name = const SdkOmitted(), required this.type_, required this.username});
+  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
+      {this.avatar = const SdkOmitted(),
+      required this.id,
+      this.name = const SdkOmitted(),
+      required this.type_,
+      required this.username});
 
-  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0 Function({SdkOptional<String> avatar, String id, SdkOptional<String?> name, UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type type_, String username}) get copyWith => _copyWith;
+  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0 Function(
+      {SdkOptional<String> avatar,
+      String id,
+      SdkOptional<String?> name,
+      UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type
+          type_,
+      String username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0 _copyWith({Object? avatar = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String?>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0 _copyWith(
+          {Object? avatar = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String?>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
-    avatar: json['avatar'] != null ? SdkPresent((json['avatar'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: json.containsKey('name') ? SdkPresent(json['name'] as String?) : const SdkOmitted(),
-    type_: (json['type'] != null ? UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type.fromJson(json['type'] as String) : null)!,
-    username: (json['username'] as String?)!,
-  );
+  factory UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
+        avatar: json['avatar'] != null
+            ? SdkPresent((json['avatar'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: json.containsKey('name')
+            ? SdkPresent(json['name'] as String?)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (avatar) {
-      SdkPresent<String>(value: final value) => {'avatar': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String?>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    'username': username,
-  };
+        ...switch (avatar) {
+          SdkPresent<String>(value: final value) => {
+              'avatar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String?>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        'username': username,
+      };
 }
 
 /// The principal that last edited this env var, when the editor id resolves to a known user or app. Lets clients render the right avatar instead of assuming every editor is a user.
 class UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `avatar` wire field.
   final SdkOptional<String> avatar;
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required enumerated value serialized in the `type` wire field.
-  final UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type type_;
+  final UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type
+      type_;
 
-  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1({this.avatar = const SdkOmitted(), required this.id, required this.name, required this.type_});
+  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
+      {this.avatar = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      required this.type_});
 
-  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1 Function({SdkOptional<String> avatar, String id, String name, UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1 Function(
+      {SdkOptional<String> avatar,
+      String id,
+      String name,
+      UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type
+          type_}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1 _copyWith({Object? avatar = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type,
-  );
+  UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1 _copyWith(
+          {Object? avatar = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type,
+      );
 
-  factory UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
-    avatar: json['avatar'] != null ? SdkPresent((json['avatar'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
+        avatar: json['avatar'] != null
+            ? SdkPresent((json['avatar'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (avatar) {
-      SdkPresent<String>(value: final value) => {'avatar': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    'type': type_.toJson(),
-  };
+        ...switch (avatar) {
+          SdkPresent<String>(value: final value) => {
+              'avatar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal();
-  factory UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal.fromJson(Object? json) {
+  factory UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(value); } } catch (_) {}
-      try { final value = UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal");
+    try {
+      return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
+          UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
+          UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal");
   }
   Object? toJson();
 }
 
-final class UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0 extends UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal {
+final class UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0
+    extends UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal {
   final UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0 value;
-  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1 extends UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal {
+final class UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1
+    extends UserEventPayloadVariant173OldEnvVarLastEditedByPrincipal {
   final UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1 value;
-  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UserEventPayloadVariant173OldEnvVarLastEditedByPrincipalUserEventPayloadVariant173OldEnvVarLastEditedByPrincipalVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

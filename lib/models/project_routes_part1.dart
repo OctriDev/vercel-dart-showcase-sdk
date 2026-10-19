@@ -7,39 +7,75 @@ part of 'project_routes.dart';
 class AddRouteResponseRouteRouteDestinationVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Routing-only path used to select a route inside the target service.
   final SdkOptional<String> path;
   final String service;
+
   /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
   final SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type> type_;
 
-  const AddRouteResponseRouteRouteDestinationVariant1({this.path = const SdkOmitted(), required this.service, this.type_ = const SdkOmitted()});
+  const AddRouteResponseRouteRouteDestinationVariant1(
+      {this.path = const SdkOmitted(),
+      required this.service,
+      this.type_ = const SdkOmitted()});
 
-  AddRouteResponseRouteRouteDestinationVariant1 Function({SdkOptional<String> path, String service, SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type> type_}) get copyWith => _copyWith;
+  AddRouteResponseRouteRouteDestinationVariant1 Function(
+          {SdkOptional<String> path,
+          String service,
+          SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type> type_})
+      get copyWith => _copyWith;
 
-  AddRouteResponseRouteRouteDestinationVariant1 _copyWith({Object? path = sdkOmittedValue, Object? service = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => AddRouteResponseRouteRouteDestinationVariant1(
-    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<String>,
-    service: identical(service, sdkOmittedValue) ? this.service : service as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<AddRouteResponseRouteRouteDestinationVariant1Type>,
-  );
+  AddRouteResponseRouteRouteDestinationVariant1 _copyWith(
+          {Object? path = sdkOmittedValue,
+          Object? service = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      AddRouteResponseRouteRouteDestinationVariant1(
+        path: identical(path, sdkOmittedValue)
+            ? this.path
+            : path as SdkOptional<String>,
+        service: identical(service, sdkOmittedValue)
+            ? this.service
+            : service as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<
+                AddRouteResponseRouteRouteDestinationVariant1Type>,
+      );
 
-  factory AddRouteResponseRouteRouteDestinationVariant1.fromJson(Map<String, dynamic> json) => AddRouteResponseRouteRouteDestinationVariant1(
-    path: json['path'] != null ? SdkPresent((json['path'] as String?)!) : const SdkOmitted(),
-    service: (json['service'] as String?)!,
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? AddRouteResponseRouteRouteDestinationVariant1Type.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory AddRouteResponseRouteRouteDestinationVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      AddRouteResponseRouteRouteDestinationVariant1(
+        path: json['path'] != null
+            ? SdkPresent((json['path'] as String?)!)
+            : const SdkOmitted(),
+        service: (json['service'] as String?)!,
+        type_: json['type'] != null
+            ? SdkPresent((json['type'] != null
+                ? AddRouteResponseRouteRouteDestinationVariant1Type.fromJson(
+                    json['type'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (path) {
-      SdkPresent<String>(value: final value) => {'path': value,},
-      _ => const <String, dynamic>{},
-    },
-    'service': service,
-    ...switch (type_) {
-      SdkPresent<AddRouteResponseRouteRouteDestinationVariant1Type>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (path) {
+          SdkPresent<String>(value: final value) => {
+              'path': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'service': service,
+        ...switch (type_) {
+          SdkPresent<AddRouteResponseRouteRouteDestinationVariant1Type>(
+            value: final value
+          ) =>
+            {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class AddRouteResponseRouteRouteDestination {
@@ -47,47 +83,73 @@ sealed class AddRouteResponseRouteRouteDestination {
   static const String constructionSurface = 'named';
   const AddRouteResponseRouteRouteDestination();
   factory AddRouteResponseRouteRouteDestination.fromJson(Object? json) {
-    if (json is String) { return AddRouteResponseRouteRouteDestinationString(json); }
-    try { return AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(AddRouteResponseRouteRouteDestinationVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for AddRouteResponseRouteRouteDestination");
+    if (json is String) {
+      return AddRouteResponseRouteRouteDestinationString(json);
+    }
+    try {
+      return AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(
+          AddRouteResponseRouteRouteDestinationVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for AddRouteResponseRouteRouteDestination");
   }
   Object? toJson();
 }
 
-final class AddRouteResponseRouteRouteDestinationString extends AddRouteResponseRouteRouteDestination {
+final class AddRouteResponseRouteRouteDestinationString
+    extends AddRouteResponseRouteRouteDestination {
   final String value;
   const AddRouteResponseRouteRouteDestinationString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1 extends AddRouteResponseRouteRouteDestination {
+final class AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1
+    extends AddRouteResponseRouteRouteDestination {
   final AddRouteResponseRouteRouteDestinationVariant1 value;
-  const AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const AddRouteResponseRouteRouteDestinationAddRouteResponseRouteRouteDestinationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 sealed class AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq();
-  factory AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq.fromJson(Object? json) {
-    if (json is String) { return AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqString(json); }
-    if (json is num) { return AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqDouble(json.toDouble()); }
-    throw FormatException("No variant matched for AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq");
+  factory AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq.fromJson(
+      Object? json) {
+    if (json is String) {
+      return AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqString(
+          json);
+    }
+    if (json is num) {
+      return AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqDouble(
+          json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq");
   }
   Object? toJson();
 }
 
-final class AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqString extends AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq {
+final class AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqString
+    extends AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq {
   final String value;
-  const AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqString(this.value);
-  @override Object? toJson() => value;
+  const AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqDouble extends AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq {
+final class AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqDouble
+    extends AddRouteResponseRouteRouteHasItemVariant0ValueVariant1Eq {
   final double value;
-  const AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqDouble(this.value);
-  @override Object? toJson() => value;
+  const AddRouteResponseRouteRouteHasItemVariant0ValueVariant1EqDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 class AddRouteResponseRouteRouteHasItemVariant0ValueVariant1 {
@@ -105,108 +167,223 @@ class AddRouteResponseRouteRouteHasItemVariant0ValueVariant1 {
   final SdkOptional<String> re;
   final SdkOptional<String> suf;
 
-  const AddRouteResponseRouteRouteHasItemVariant0ValueVariant1({this.eq = const SdkOmitted(), this.gt = const SdkOmitted(), this.gte = const SdkOmitted(), this.inc = const SdkOmitted(), this.lt = const SdkOmitted(), this.lte = const SdkOmitted(), this.neq = const SdkOmitted(), this.ninc = const SdkOmitted(), this.pre = const SdkOmitted(), this.re = const SdkOmitted(), this.suf = const SdkOmitted()});
+  const AddRouteResponseRouteRouteHasItemVariant0ValueVariant1(
+      {this.eq = const SdkOmitted(),
+      this.gt = const SdkOmitted(),
+      this.gte = const SdkOmitted(),
+      this.inc = const SdkOmitted(),
+      this.lt = const SdkOmitted(),
+      this.lte = const SdkOmitted(),
+      this.neq = const SdkOmitted(),
+      this.ninc = const SdkOmitted(),
+      this.pre = const SdkOmitted(),
+      this.re = const SdkOmitted(),
+      this.suf = const SdkOmitted()});
 
-  AddRouteResponseRouteRouteHasItemVariant0ValueVariant1 Function({SdkOptional<dynamic> eq, SdkOptional<double> gt, SdkOptional<double> gte, SdkOptional<List<String>> inc, SdkOptional<double> lt, SdkOptional<double> lte, SdkOptional<String> neq, SdkOptional<List<String>> ninc, SdkOptional<String> pre, SdkOptional<String> re, SdkOptional<String> suf}) get copyWith => _copyWith;
+  AddRouteResponseRouteRouteHasItemVariant0ValueVariant1 Function(
+      {SdkOptional<dynamic> eq,
+      SdkOptional<double> gt,
+      SdkOptional<double> gte,
+      SdkOptional<List<String>> inc,
+      SdkOptional<double> lt,
+      SdkOptional<double> lte,
+      SdkOptional<String> neq,
+      SdkOptional<List<String>> ninc,
+      SdkOptional<String> pre,
+      SdkOptional<String> re,
+      SdkOptional<String> suf}) get copyWith => _copyWith;
 
-  AddRouteResponseRouteRouteHasItemVariant0ValueVariant1 _copyWith({Object? eq = sdkOmittedValue, Object? gt = sdkOmittedValue, Object? gte = sdkOmittedValue, Object? inc = sdkOmittedValue, Object? lt = sdkOmittedValue, Object? lte = sdkOmittedValue, Object? neq = sdkOmittedValue, Object? ninc = sdkOmittedValue, Object? pre = sdkOmittedValue, Object? re = sdkOmittedValue, Object? suf = sdkOmittedValue}) => AddRouteResponseRouteRouteHasItemVariant0ValueVariant1(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as SdkOptional<dynamic>,
-    gt: identical(gt, sdkOmittedValue) ? this.gt : gt as SdkOptional<double>,
-    gte: identical(gte, sdkOmittedValue) ? this.gte : gte as SdkOptional<double>,
-    inc: identical(inc, sdkOmittedValue) ? this.inc : inc as SdkOptional<List<String>>,
-    lt: identical(lt, sdkOmittedValue) ? this.lt : lt as SdkOptional<double>,
-    lte: identical(lte, sdkOmittedValue) ? this.lte : lte as SdkOptional<double>,
-    neq: identical(neq, sdkOmittedValue) ? this.neq : neq as SdkOptional<String>,
-    ninc: identical(ninc, sdkOmittedValue) ? this.ninc : ninc as SdkOptional<List<String>>,
-    pre: identical(pre, sdkOmittedValue) ? this.pre : pre as SdkOptional<String>,
-    re: identical(re, sdkOmittedValue) ? this.re : re as SdkOptional<String>,
-    suf: identical(suf, sdkOmittedValue) ? this.suf : suf as SdkOptional<String>,
-  );
+  AddRouteResponseRouteRouteHasItemVariant0ValueVariant1 _copyWith(
+          {Object? eq = sdkOmittedValue,
+          Object? gt = sdkOmittedValue,
+          Object? gte = sdkOmittedValue,
+          Object? inc = sdkOmittedValue,
+          Object? lt = sdkOmittedValue,
+          Object? lte = sdkOmittedValue,
+          Object? neq = sdkOmittedValue,
+          Object? ninc = sdkOmittedValue,
+          Object? pre = sdkOmittedValue,
+          Object? re = sdkOmittedValue,
+          Object? suf = sdkOmittedValue}) =>
+      AddRouteResponseRouteRouteHasItemVariant0ValueVariant1(
+        eq: identical(eq, sdkOmittedValue)
+            ? this.eq
+            : eq as SdkOptional<dynamic>,
+        gt: identical(gt, sdkOmittedValue)
+            ? this.gt
+            : gt as SdkOptional<double>,
+        gte: identical(gte, sdkOmittedValue)
+            ? this.gte
+            : gte as SdkOptional<double>,
+        inc: identical(inc, sdkOmittedValue)
+            ? this.inc
+            : inc as SdkOptional<List<String>>,
+        lt: identical(lt, sdkOmittedValue)
+            ? this.lt
+            : lt as SdkOptional<double>,
+        lte: identical(lte, sdkOmittedValue)
+            ? this.lte
+            : lte as SdkOptional<double>,
+        neq: identical(neq, sdkOmittedValue)
+            ? this.neq
+            : neq as SdkOptional<String>,
+        ninc: identical(ninc, sdkOmittedValue)
+            ? this.ninc
+            : ninc as SdkOptional<List<String>>,
+        pre: identical(pre, sdkOmittedValue)
+            ? this.pre
+            : pre as SdkOptional<String>,
+        re: identical(re, sdkOmittedValue)
+            ? this.re
+            : re as SdkOptional<String>,
+        suf: identical(suf, sdkOmittedValue)
+            ? this.suf
+            : suf as SdkOptional<String>,
+      );
 
-  factory AddRouteResponseRouteRouteHasItemVariant0ValueVariant1.fromJson(Map<String, dynamic> json) => AddRouteResponseRouteRouteHasItemVariant0ValueVariant1(
-    eq: json['eq'] != null ? SdkPresent((json['eq'])!) : const SdkOmitted(),
-    gt: json['gt'] != null ? SdkPresent(((json['gt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    gte: json['gte'] != null ? SdkPresent(((json['gte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    inc: json['inc'] != null ? SdkPresent(((json['inc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    lt: json['lt'] != null ? SdkPresent(((json['lt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    lte: json['lte'] != null ? SdkPresent(((json['lte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    neq: json['neq'] != null ? SdkPresent((json['neq'] as String?)!) : const SdkOmitted(),
-    ninc: json['ninc'] != null ? SdkPresent(((json['ninc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    pre: json['pre'] != null ? SdkPresent((json['pre'] as String?)!) : const SdkOmitted(),
-    re: json['re'] != null ? SdkPresent((json['re'] as String?)!) : const SdkOmitted(),
-    suf: json['suf'] != null ? SdkPresent((json['suf'] as String?)!) : const SdkOmitted(),
-  );
+  factory AddRouteResponseRouteRouteHasItemVariant0ValueVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      AddRouteResponseRouteRouteHasItemVariant0ValueVariant1(
+        eq: json['eq'] != null ? SdkPresent((json['eq'])!) : const SdkOmitted(),
+        gt: json['gt'] != null
+            ? SdkPresent(((json['gt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        gte: json['gte'] != null
+            ? SdkPresent(((json['gte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        inc: json['inc'] != null
+            ? SdkPresent(
+                ((json['inc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        lt: json['lt'] != null
+            ? SdkPresent(((json['lt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        lte: json['lte'] != null
+            ? SdkPresent(((json['lte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        neq: json['neq'] != null
+            ? SdkPresent((json['neq'] as String?)!)
+            : const SdkOmitted(),
+        ninc: json['ninc'] != null
+            ? SdkPresent(
+                ((json['ninc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        pre: json['pre'] != null
+            ? SdkPresent((json['pre'] as String?)!)
+            : const SdkOmitted(),
+        re: json['re'] != null
+            ? SdkPresent((json['re'] as String?)!)
+            : const SdkOmitted(),
+        suf: json['suf'] != null
+            ? SdkPresent((json['suf'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (eq) {
-      SdkPresent<dynamic>(value: final value) => {'eq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gt) {
-      SdkPresent<double>(value: final value) => {'gt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gte) {
-      SdkPresent<double>(value: final value) => {'gte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (inc) {
-      SdkPresent<List<String>>(value: final value) => {'inc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lt) {
-      SdkPresent<double>(value: final value) => {'lt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lte) {
-      SdkPresent<double>(value: final value) => {'lte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (neq) {
-      SdkPresent<String>(value: final value) => {'neq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ninc) {
-      SdkPresent<List<String>>(value: final value) => {'ninc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pre) {
-      SdkPresent<String>(value: final value) => {'pre': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (re) {
-      SdkPresent<String>(value: final value) => {'re': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (suf) {
-      SdkPresent<String>(value: final value) => {'suf': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (eq) {
+          SdkPresent<dynamic>(value: final value) => {
+              'eq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gt) {
+          SdkPresent<double>(value: final value) => {
+              'gt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gte) {
+          SdkPresent<double>(value: final value) => {
+              'gte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (inc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'inc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lt) {
+          SdkPresent<double>(value: final value) => {
+              'lt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lte) {
+          SdkPresent<double>(value: final value) => {
+              'lte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (neq) {
+          SdkPresent<String>(value: final value) => {
+              'neq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ninc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'ninc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pre) {
+          SdkPresent<String>(value: final value) => {
+              'pre': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (re) {
+          SdkPresent<String>(value: final value) => {
+              're': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (suf) {
+          SdkPresent<String>(value: final value) => {
+              'suf': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class AddRouteResponseRouteRouteHasItemVariant0Value {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const AddRouteResponseRouteRouteHasItemVariant0Value();
-  factory AddRouteResponseRouteRouteHasItemVariant0Value.fromJson(Object? json) {
-    if (json is String) { return AddRouteResponseRouteRouteHasItemVariant0ValueString(json); }
-    try { return AddRouteResponseRouteRouteHasItemVariant0ValueAddRouteResponseRouteRouteHasItemVariant0ValueVariant1(AddRouteResponseRouteRouteHasItemVariant0ValueVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for AddRouteResponseRouteRouteHasItemVariant0Value");
+  factory AddRouteResponseRouteRouteHasItemVariant0Value.fromJson(
+      Object? json) {
+    if (json is String) {
+      return AddRouteResponseRouteRouteHasItemVariant0ValueString(json);
+    }
+    try {
+      return AddRouteResponseRouteRouteHasItemVariant0ValueAddRouteResponseRouteRouteHasItemVariant0ValueVariant1(
+          AddRouteResponseRouteRouteHasItemVariant0ValueVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for AddRouteResponseRouteRouteHasItemVariant0Value");
   }
   Object? toJson();
 }
 
-final class AddRouteResponseRouteRouteHasItemVariant0ValueString extends AddRouteResponseRouteRouteHasItemVariant0Value {
+final class AddRouteResponseRouteRouteHasItemVariant0ValueString
+    extends AddRouteResponseRouteRouteHasItemVariant0Value {
   final String value;
   const AddRouteResponseRouteRouteHasItemVariant0ValueString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class AddRouteResponseRouteRouteHasItemVariant0ValueAddRouteResponseRouteRouteHasItemVariant0ValueVariant1 extends AddRouteResponseRouteRouteHasItemVariant0Value {
+final class AddRouteResponseRouteRouteHasItemVariant0ValueAddRouteResponseRouteRouteHasItemVariant0ValueVariant1
+    extends AddRouteResponseRouteRouteHasItemVariant0Value {
   final AddRouteResponseRouteRouteHasItemVariant0ValueVariant1 value;
-  const AddRouteResponseRouteRouteHasItemVariant0ValueAddRouteResponseRouteRouteHasItemVariant0ValueVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const AddRouteResponseRouteRouteHasItemVariant0ValueAddRouteResponseRouteRouteHasItemVariant0ValueVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class AddRouteResponseRouteRouteHasItemVariant0 {
@@ -215,46 +392,73 @@ class AddRouteResponseRouteRouteHasItemVariant0 {
   final AddRouteResponseRouteRouteHasItemVariant0Type type_;
   final dynamic value;
 
-  const AddRouteResponseRouteRouteHasItemVariant0({required this.type_, required this.value});
+  const AddRouteResponseRouteRouteHasItemVariant0(
+      {required this.type_, required this.value});
 
-  AddRouteResponseRouteRouteHasItemVariant0 Function({AddRouteResponseRouteRouteHasItemVariant0Type type_, dynamic value}) get copyWith => _copyWith;
+  AddRouteResponseRouteRouteHasItemVariant0 Function(
+      {AddRouteResponseRouteRouteHasItemVariant0Type type_,
+      dynamic value}) get copyWith => _copyWith;
 
-  AddRouteResponseRouteRouteHasItemVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => AddRouteResponseRouteRouteHasItemVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as AddRouteResponseRouteRouteHasItemVariant0Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as dynamic,
-  );
+  AddRouteResponseRouteRouteHasItemVariant0 _copyWith(
+          {Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      AddRouteResponseRouteRouteHasItemVariant0(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as AddRouteResponseRouteRouteHasItemVariant0Type,
+        value:
+            identical(value, sdkOmittedValue) ? this.value : value as dynamic,
+      );
 
-  factory AddRouteResponseRouteRouteHasItemVariant0.fromJson(Map<String, dynamic> json) => AddRouteResponseRouteRouteHasItemVariant0(
-    type_: (json['type'] != null ? AddRouteResponseRouteRouteHasItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'])!,
-  );
+  factory AddRouteResponseRouteRouteHasItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      AddRouteResponseRouteRouteHasItemVariant0(
+        type_: (json['type'] != null
+            ? AddRouteResponseRouteRouteHasItemVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        value: (json['value'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'value': value,
-  };
+        'type': type_.toJson(),
+        'value': value,
+      };
 }
 
 sealed class AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq();
-  factory AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq.fromJson(Object? json) {
-    if (json is String) { return AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqString(json); }
-    if (json is num) { return AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqDouble(json.toDouble()); }
-    throw FormatException("No variant matched for AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq");
+  factory AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq.fromJson(
+      Object? json) {
+    if (json is String) {
+      return AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqString(
+          json);
+    }
+    if (json is num) {
+      return AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqDouble(
+          json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq");
   }
   Object? toJson();
 }
 
-final class AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqString extends AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq {
+final class AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqString
+    extends AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq {
   final String value;
-  const AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqString(this.value);
-  @override Object? toJson() => value;
+  const AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqDouble extends AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq {
+final class AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqDouble
+    extends AddRouteResponseRouteRouteHasItemVariant1ValueVariant1Eq {
   final double value;
-  const AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqDouble(this.value);
-  @override Object? toJson() => value;
+  const AddRouteResponseRouteRouteHasItemVariant1ValueVariant1EqDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }

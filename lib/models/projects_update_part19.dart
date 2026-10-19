@@ -8,30 +8,61 @@ class UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key key;
-  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type type_;
-  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value value;
+  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type
+      type_;
+  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value
+      value;
 
-  const UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0({required this.key, required this.type_, required this.value});
+  const UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
+      {required this.key, required this.type_, required this.value});
 
-  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0 Function({UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key key, UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type type_, UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value value}) get copyWith => _copyWith;
+  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0 Function(
+      {UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key key,
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type type_,
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value
+          value}) get copyWith => _copyWith;
 
-  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
-    key: identical(key, sdkOmittedValue) ? this.key : key as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value,
-  );
+  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0 _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key
+                as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value
+                as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value,
+      );
 
-  factory UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0.fromJson(Map<String, dynamic> json) => UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
-    key: (json['key'] != null ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(json['key'] as String) : null)!,
-    type_: (json['type'] != null ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
+        key: (json['key'] != null
+            ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key
+                .fromJson(json['key'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key.toJson(),
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'key': key.toJson(),
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value {
@@ -39,47 +70,75 @@ class UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value {
   static const String constructionSurface = 'named';
   final String eq;
 
-  const UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value({required this.eq});
+  const UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
+      {required this.eq});
 
-  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value Function({String eq}) get copyWith => _copyWith;
+  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value Function(
+      {String eq}) get copyWith => _copyWith;
 
-  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value _copyWith({Object? eq = sdkOmittedValue}) => UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-  );
+  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value _copyWith(
+          {Object? eq = sdkOmittedValue}) =>
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
+        eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+      );
 
-  factory UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(Map<String, dynamic> json) => UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: (json['eq'] as String?)!,
-  );
+  factory UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
+        eq: (json['eq'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'eq': eq,
-  };
+        'eq': eq,
+      };
 }
 
 class UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type type_;
-  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value value;
+  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type
+      type_;
+  final UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value
+      value;
 
-  const UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1({required this.type_, required this.value});
+  const UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
+      {required this.type_, required this.value});
 
-  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1 Function({UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type type_, UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value value}) get copyWith => _copyWith;
+  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1 Function(
+      {UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type type_,
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value
+          value}) get copyWith => _copyWith;
 
-  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value,
-  );
+  UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1 _copyWith(
+          {Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value
+                as UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value,
+      );
 
-  factory UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1.fromJson(Map<String, dynamic> json) => UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
-    type_: (json['type'] != null ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
+        type_: (json['type'] != null
+            ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? UpdateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class UpdateProjectResponseInternalRoutesItemVariant1 {
@@ -89,30 +148,54 @@ class UpdateProjectResponseInternalRoutesItemVariant1 {
   final UpdateProjectResponseInternalRoutesItemVariant1Mitigate mitigate;
   final SdkOptional<String> src;
 
-  const UpdateProjectResponseInternalRoutesItemVariant1({required this.has, required this.mitigate, this.src = const SdkOmitted()});
+  const UpdateProjectResponseInternalRoutesItemVariant1(
+      {required this.has,
+      required this.mitigate,
+      this.src = const SdkOmitted()});
 
-  UpdateProjectResponseInternalRoutesItemVariant1 Function({List<dynamic> has, UpdateProjectResponseInternalRoutesItemVariant1Mitigate mitigate, SdkOptional<String> src}) get copyWith => _copyWith;
+  UpdateProjectResponseInternalRoutesItemVariant1 Function(
+      {List<dynamic> has,
+      UpdateProjectResponseInternalRoutesItemVariant1Mitigate mitigate,
+      SdkOptional<String> src}) get copyWith => _copyWith;
 
-  UpdateProjectResponseInternalRoutesItemVariant1 _copyWith({Object? has = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? src = sdkOmittedValue}) => UpdateProjectResponseInternalRoutesItemVariant1(
-    has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
-    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as UpdateProjectResponseInternalRoutesItemVariant1Mitigate,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-  );
+  UpdateProjectResponseInternalRoutesItemVariant1 _copyWith(
+          {Object? has = sdkOmittedValue,
+          Object? mitigate = sdkOmittedValue,
+          Object? src = sdkOmittedValue}) =>
+      UpdateProjectResponseInternalRoutesItemVariant1(
+        has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
+        mitigate: identical(mitigate, sdkOmittedValue)
+            ? this.mitigate
+            : mitigate
+                as UpdateProjectResponseInternalRoutesItemVariant1Mitigate,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+      );
 
-  factory UpdateProjectResponseInternalRoutesItemVariant1.fromJson(Map<String, dynamic> json) => UpdateProjectResponseInternalRoutesItemVariant1(
-    has: ((json['has'] as List?)?.map((e) => e).toList())!,
-    mitigate: (json['mitigate'] != null ? UpdateProjectResponseInternalRoutesItemVariant1Mitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!,
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectResponseInternalRoutesItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseInternalRoutesItemVariant1(
+        has: ((json['has'] as List?)?.map((e) => e).toList())!,
+        mitigate: (json['mitigate'] != null
+            ? UpdateProjectResponseInternalRoutesItemVariant1Mitigate.fromJson(
+                json['mitigate'] as Map<String, dynamic>)
+            : null)!,
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'has': has,
-    'mitigate': mitigate.toJson(),
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'has': has,
+        'mitigate': mitigate.toJson(),
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class UpdateProjectResponseInternalRoutesItem {
@@ -121,26 +204,55 @@ sealed class UpdateProjectResponseInternalRoutesItem {
   const UpdateProjectResponseInternalRoutesItem();
   factory UpdateProjectResponseInternalRoutesItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateProjectResponseInternalRoutesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0(value); } } catch (_) {}
-      try { final value = UpdateProjectResponseInternalRoutesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            UpdateProjectResponseInternalRoutesItemVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateProjectResponseInternalRoutesItemVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0(UpdateProjectResponseInternalRoutesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1(UpdateProjectResponseInternalRoutesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateProjectResponseInternalRoutesItem");
+    try {
+      return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0(
+          UpdateProjectResponseInternalRoutesItemVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1(
+          UpdateProjectResponseInternalRoutesItemVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateProjectResponseInternalRoutesItem");
   }
   Object? toJson();
 }
 
-final class UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0 extends UpdateProjectResponseInternalRoutesItem {
+final class UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0
+    extends UpdateProjectResponseInternalRoutesItem {
   final UpdateProjectResponseInternalRoutesItemVariant0 value;
-  const UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1 extends UpdateProjectResponseInternalRoutesItem {
+final class UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1
+    extends UpdateProjectResponseInternalRoutesItem {
   final UpdateProjectResponseInternalRoutesItemVariant1 value;
-  const UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseInternalRoutesItemUpdateProjectResponseInternalRoutesItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class UpdateProjectResponseLinkVariant0DeployHooksItem {
@@ -152,36 +264,60 @@ class UpdateProjectResponseLinkVariant0DeployHooksItem {
   final String ref;
   final String url;
 
-  const UpdateProjectResponseLinkVariant0DeployHooksItem({this.createdAt = const SdkOmitted(), required this.id, required this.name, required this.ref, required this.url});
+  const UpdateProjectResponseLinkVariant0DeployHooksItem(
+      {this.createdAt = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      required this.ref,
+      required this.url});
 
-  UpdateProjectResponseLinkVariant0DeployHooksItem Function({SdkOptional<double> createdAt, String id, String name, String ref, String url}) get copyWith => _copyWith;
+  UpdateProjectResponseLinkVariant0DeployHooksItem Function(
+      {SdkOptional<double> createdAt,
+      String id,
+      String name,
+      String ref,
+      String url}) get copyWith => _copyWith;
 
-  UpdateProjectResponseLinkVariant0DeployHooksItem _copyWith({Object? createdAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? ref = sdkOmittedValue, Object? url = sdkOmittedValue}) => UpdateProjectResponseLinkVariant0DeployHooksItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  UpdateProjectResponseLinkVariant0DeployHooksItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? ref = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      UpdateProjectResponseLinkVariant0DeployHooksItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        ref: identical(ref, sdkOmittedValue) ? this.ref : ref as String,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory UpdateProjectResponseLinkVariant0DeployHooksItem.fromJson(Map<String, dynamic> json) => UpdateProjectResponseLinkVariant0DeployHooksItem(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    ref: (json['ref'] as String?)!,
-    url: (json['url'] as String?)!,
-  );
+  factory UpdateProjectResponseLinkVariant0DeployHooksItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseLinkVariant0DeployHooksItem(
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        ref: (json['ref'] as String?)!,
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    'ref': ref,
-    'url': url,
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        'ref': ref,
+        'url': url,
+      };
 }
 
 class UpdateProjectResponseLinkVariant0 {
@@ -194,73 +330,169 @@ class UpdateProjectResponseLinkVariant0 {
   final String productionBranch;
   final SdkOptional<String> repo;
   final SdkOptional<double> repoId;
+
   /// A new field, should be included in all new project links, is being added just in time when a deployment is created. This is needed for Protected Git scopes.
   final SdkOptional<double> repoOwnerId;
   final SdkOptional<UpdateProjectResponseLinkVariant0Sourceless> sourceless;
   final UpdateProjectResponseLinkVariant0Type type_;
   final SdkOptional<double> updatedAt;
 
-  const UpdateProjectResponseLinkVariant0({this.createdAt = const SdkOmitted(), required this.deployHooks, required this.gitCredentialId, required this.org, required this.productionBranch, this.repo = const SdkOmitted(), this.repoId = const SdkOmitted(), this.repoOwnerId = const SdkOmitted(), this.sourceless = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted()});
+  const UpdateProjectResponseLinkVariant0(
+      {this.createdAt = const SdkOmitted(),
+      required this.deployHooks,
+      required this.gitCredentialId,
+      required this.org,
+      required this.productionBranch,
+      this.repo = const SdkOmitted(),
+      this.repoId = const SdkOmitted(),
+      this.repoOwnerId = const SdkOmitted(),
+      this.sourceless = const SdkOmitted(),
+      required this.type_,
+      this.updatedAt = const SdkOmitted()});
 
-  UpdateProjectResponseLinkVariant0 Function({SdkOptional<double> createdAt, List<UpdateProjectResponseLinkVariant0DeployHooksItem> deployHooks, String gitCredentialId, String org, String productionBranch, SdkOptional<String> repo, SdkOptional<double> repoId, SdkOptional<double> repoOwnerId, SdkOptional<UpdateProjectResponseLinkVariant0Sourceless> sourceless, UpdateProjectResponseLinkVariant0Type type_, SdkOptional<double> updatedAt}) get copyWith => _copyWith;
+  UpdateProjectResponseLinkVariant0 Function(
+      {SdkOptional<double> createdAt,
+      List<UpdateProjectResponseLinkVariant0DeployHooksItem> deployHooks,
+      String gitCredentialId,
+      String org,
+      String productionBranch,
+      SdkOptional<String> repo,
+      SdkOptional<double> repoId,
+      SdkOptional<double> repoOwnerId,
+      SdkOptional<UpdateProjectResponseLinkVariant0Sourceless> sourceless,
+      UpdateProjectResponseLinkVariant0Type type_,
+      SdkOptional<double> updatedAt}) get copyWith => _copyWith;
 
-  UpdateProjectResponseLinkVariant0 _copyWith({Object? createdAt = sdkOmittedValue, Object? deployHooks = sdkOmittedValue, Object? gitCredentialId = sdkOmittedValue, Object? org = sdkOmittedValue, Object? productionBranch = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoOwnerId = sdkOmittedValue, Object? sourceless = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateProjectResponseLinkVariant0(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    deployHooks: identical(deployHooks, sdkOmittedValue) ? this.deployHooks : deployHooks as List<UpdateProjectResponseLinkVariant0DeployHooksItem>,
-    gitCredentialId: identical(gitCredentialId, sdkOmittedValue) ? this.gitCredentialId : gitCredentialId as String,
-    org: identical(org, sdkOmittedValue) ? this.org : org as String,
-    productionBranch: identical(productionBranch, sdkOmittedValue) ? this.productionBranch : productionBranch as String,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as SdkOptional<double>,
-    repoOwnerId: identical(repoOwnerId, sdkOmittedValue) ? this.repoOwnerId : repoOwnerId as SdkOptional<double>,
-    sourceless: identical(sourceless, sdkOmittedValue) ? this.sourceless : sourceless as SdkOptional<UpdateProjectResponseLinkVariant0Sourceless>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseLinkVariant0Type,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-  );
+  UpdateProjectResponseLinkVariant0 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? deployHooks = sdkOmittedValue,
+          Object? gitCredentialId = sdkOmittedValue,
+          Object? org = sdkOmittedValue,
+          Object? productionBranch = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? repoOwnerId = sdkOmittedValue,
+          Object? sourceless = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UpdateProjectResponseLinkVariant0(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        deployHooks: identical(deployHooks, sdkOmittedValue)
+            ? this.deployHooks
+            : deployHooks
+                as List<UpdateProjectResponseLinkVariant0DeployHooksItem>,
+        gitCredentialId: identical(gitCredentialId, sdkOmittedValue)
+            ? this.gitCredentialId
+            : gitCredentialId as String,
+        org: identical(org, sdkOmittedValue) ? this.org : org as String,
+        productionBranch: identical(productionBranch, sdkOmittedValue)
+            ? this.productionBranch
+            : productionBranch as String,
+        repo: identical(repo, sdkOmittedValue)
+            ? this.repo
+            : repo as SdkOptional<String>,
+        repoId: identical(repoId, sdkOmittedValue)
+            ? this.repoId
+            : repoId as SdkOptional<double>,
+        repoOwnerId: identical(repoOwnerId, sdkOmittedValue)
+            ? this.repoOwnerId
+            : repoOwnerId as SdkOptional<double>,
+        sourceless: identical(sourceless, sdkOmittedValue)
+            ? this.sourceless
+            : sourceless
+                as SdkOptional<UpdateProjectResponseLinkVariant0Sourceless>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UpdateProjectResponseLinkVariant0Type,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+      );
 
-  factory UpdateProjectResponseLinkVariant0.fromJson(Map<String, dynamic> json) => UpdateProjectResponseLinkVariant0(
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    deployHooks: ((json['deployHooks'] as List?)?.map((e) => UpdateProjectResponseLinkVariant0DeployHooksItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    gitCredentialId: (json['gitCredentialId'] as String?)!,
-    org: (json['org'] as String?)!,
-    productionBranch: (json['productionBranch'] as String?)!,
-    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
-    repoId: json['repoId'] != null ? SdkPresent(((json['repoId'] as num?)?.toDouble())!) : const SdkOmitted(),
-    repoOwnerId: json['repoOwnerId'] != null ? SdkPresent(((json['repoOwnerId'] as num?)?.toDouble())!) : const SdkOmitted(),
-    sourceless: json['sourceless'] != null ? SdkPresent((json['sourceless'] != null ? UpdateProjectResponseLinkVariant0Sourceless.fromJson(json['sourceless'] as bool) : null)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? UpdateProjectResponseLinkVariant0Type.fromJson(json['type'] as String) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory UpdateProjectResponseLinkVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseLinkVariant0(
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        deployHooks: ((json['deployHooks'] as List?)
+            ?.map((e) =>
+                UpdateProjectResponseLinkVariant0DeployHooksItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        gitCredentialId: (json['gitCredentialId'] as String?)!,
+        org: (json['org'] as String?)!,
+        productionBranch: (json['productionBranch'] as String?)!,
+        repo: json['repo'] != null
+            ? SdkPresent((json['repo'] as String?)!)
+            : const SdkOmitted(),
+        repoId: json['repoId'] != null
+            ? SdkPresent(((json['repoId'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        repoOwnerId: json['repoOwnerId'] != null
+            ? SdkPresent(((json['repoOwnerId'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        sourceless: json['sourceless'] != null
+            ? SdkPresent((json['sourceless'] != null
+                ? UpdateProjectResponseLinkVariant0Sourceless.fromJson(
+                    json['sourceless'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? UpdateProjectResponseLinkVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
-    'gitCredentialId': gitCredentialId,
-    'org': org,
-    'productionBranch': productionBranch,
-    ...switch (repo) {
-      SdkPresent<String>(value: final value) => {'repo': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (repoId) {
-      SdkPresent<double>(value: final value) => {'repoId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (repoOwnerId) {
-      SdkPresent<double>(value: final value) => {'repoOwnerId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sourceless) {
-      SdkPresent<UpdateProjectResponseLinkVariant0Sourceless>(value: final value) => {'sourceless': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'deployHooks': deployHooks.map((item) => item.toJson()).toList(),
+        'gitCredentialId': gitCredentialId,
+        'org': org,
+        'productionBranch': productionBranch,
+        ...switch (repo) {
+          SdkPresent<String>(value: final value) => {
+              'repo': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (repoId) {
+          SdkPresent<double>(value: final value) => {
+              'repoId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (repoOwnerId) {
+          SdkPresent<double>(value: final value) => {
+              'repoOwnerId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sourceless) {
+          SdkPresent<UpdateProjectResponseLinkVariant0Sourceless>(
+            value: final value
+          ) =>
+            {
+              'sourceless': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

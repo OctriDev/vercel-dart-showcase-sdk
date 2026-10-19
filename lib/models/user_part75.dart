@@ -8,230 +8,448 @@ part of 'user.dart';
 class UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `en` wire field.
   final String en;
 
-  const UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames({required this.en});
+  const UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames(
+      {required this.en});
 
-  UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames Function({String en}) get copyWith => _copyWith;
+  UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames Function(
+      {String en}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames _copyWith({Object? en = sdkOmittedValue}) => UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames(
-    en: identical(en, sdkOmittedValue) ? this.en : en as String,
-  );
+  UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames _copyWith(
+          {Object? en = sdkOmittedValue}) =>
+      UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames(
+        en: identical(en, sdkOmittedValue) ? this.en : en as String,
+      );
 
-  factory UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames(
-    en: (json['en'] as String?)!,
-  );
+  factory UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames(
+        en: (json['en'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'en': en,
-  };
+        'en': en,
+      };
 }
 
 /// Optional object value serialized in the `most_specific_subdivision` wire field.
 class UserEventPayloadVariant211GeolocationMostSpecificSubdivision {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `names` wire field.
   final UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames names;
 
-  const UserEventPayloadVariant211GeolocationMostSpecificSubdivision({required this.names});
+  const UserEventPayloadVariant211GeolocationMostSpecificSubdivision(
+      {required this.names});
 
-  UserEventPayloadVariant211GeolocationMostSpecificSubdivision Function({UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames names}) get copyWith => _copyWith;
+  UserEventPayloadVariant211GeolocationMostSpecificSubdivision Function(
+      {UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames
+          names}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant211GeolocationMostSpecificSubdivision _copyWith({Object? names = sdkOmittedValue}) => UserEventPayloadVariant211GeolocationMostSpecificSubdivision(
-    names: identical(names, sdkOmittedValue) ? this.names : names as UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames,
-  );
+  UserEventPayloadVariant211GeolocationMostSpecificSubdivision _copyWith(
+          {Object? names = sdkOmittedValue}) =>
+      UserEventPayloadVariant211GeolocationMostSpecificSubdivision(
+        names: identical(names, sdkOmittedValue)
+            ? this.names
+            : names
+                as UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames,
+      );
 
-  factory UserEventPayloadVariant211GeolocationMostSpecificSubdivision.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant211GeolocationMostSpecificSubdivision(
-    names: (json['names'] != null ? UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames.fromJson(json['names'] as Map<String, dynamic>) : null)!,
-  );
+  factory UserEventPayloadVariant211GeolocationMostSpecificSubdivision.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant211GeolocationMostSpecificSubdivision(
+        names: (json['names'] != null
+            ? UserEventPayloadVariant211GeolocationMostSpecificSubdivisionNames
+                .fromJson(json['names'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'names': names.toJson(),
-  };
+        'names': names.toJson(),
+      };
 }
 
 /// Optional object value serialized in the `geolocation` wire field.
 class UserEventPayloadVariant211Geolocation {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional object value serialized in the `city` wire field.
   final SdkOptional<UserEventPayloadVariant211GeolocationCity> city;
+
   /// Required object value serialized in the `country` wire field.
   final UserEventPayloadVariant211GeolocationCountry country;
+
   /// Optional object value serialized in the `most_specific_subdivision` wire field.
-  final SdkOptional<UserEventPayloadVariant211GeolocationMostSpecificSubdivision> mostSpecificSubdivision;
+  final SdkOptional<
+          UserEventPayloadVariant211GeolocationMostSpecificSubdivision>
+      mostSpecificSubdivision;
+
   /// Optional `string` value serialized in the `regionName` wire field.
   final SdkOptional<String> regionName;
 
-  const UserEventPayloadVariant211Geolocation({this.city = const SdkOmitted(), required this.country, this.mostSpecificSubdivision = const SdkOmitted(), this.regionName = const SdkOmitted()});
+  const UserEventPayloadVariant211Geolocation(
+      {this.city = const SdkOmitted(),
+      required this.country,
+      this.mostSpecificSubdivision = const SdkOmitted(),
+      this.regionName = const SdkOmitted()});
 
-  UserEventPayloadVariant211Geolocation Function({SdkOptional<UserEventPayloadVariant211GeolocationCity> city, UserEventPayloadVariant211GeolocationCountry country, SdkOptional<UserEventPayloadVariant211GeolocationMostSpecificSubdivision> mostSpecificSubdivision, SdkOptional<String> regionName}) get copyWith => _copyWith;
+  UserEventPayloadVariant211Geolocation Function(
+      {SdkOptional<UserEventPayloadVariant211GeolocationCity> city,
+      UserEventPayloadVariant211GeolocationCountry country,
+      SdkOptional<UserEventPayloadVariant211GeolocationMostSpecificSubdivision>
+          mostSpecificSubdivision,
+      SdkOptional<String> regionName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant211Geolocation _copyWith({Object? city = sdkOmittedValue, Object? country = sdkOmittedValue, Object? mostSpecificSubdivision = sdkOmittedValue, Object? regionName = sdkOmittedValue}) => UserEventPayloadVariant211Geolocation(
-    city: identical(city, sdkOmittedValue) ? this.city : city as SdkOptional<UserEventPayloadVariant211GeolocationCity>,
-    country: identical(country, sdkOmittedValue) ? this.country : country as UserEventPayloadVariant211GeolocationCountry,
-    mostSpecificSubdivision: identical(mostSpecificSubdivision, sdkOmittedValue) ? this.mostSpecificSubdivision : mostSpecificSubdivision as SdkOptional<UserEventPayloadVariant211GeolocationMostSpecificSubdivision>,
-    regionName: identical(regionName, sdkOmittedValue) ? this.regionName : regionName as SdkOptional<String>,
-  );
+  UserEventPayloadVariant211Geolocation _copyWith(
+          {Object? city = sdkOmittedValue,
+          Object? country = sdkOmittedValue,
+          Object? mostSpecificSubdivision = sdkOmittedValue,
+          Object? regionName = sdkOmittedValue}) =>
+      UserEventPayloadVariant211Geolocation(
+        city: identical(city, sdkOmittedValue)
+            ? this.city
+            : city as SdkOptional<UserEventPayloadVariant211GeolocationCity>,
+        country: identical(country, sdkOmittedValue)
+            ? this.country
+            : country as UserEventPayloadVariant211GeolocationCountry,
+        mostSpecificSubdivision: identical(
+                mostSpecificSubdivision, sdkOmittedValue)
+            ? this.mostSpecificSubdivision
+            : mostSpecificSubdivision as SdkOptional<
+                UserEventPayloadVariant211GeolocationMostSpecificSubdivision>,
+        regionName: identical(regionName, sdkOmittedValue)
+            ? this.regionName
+            : regionName as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant211Geolocation.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant211Geolocation(
-    city: json['city'] != null ? SdkPresent((json['city'] != null ? UserEventPayloadVariant211GeolocationCity.fromJson(json['city'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    country: (json['country'] != null ? UserEventPayloadVariant211GeolocationCountry.fromJson(json['country'] as Map<String, dynamic>) : null)!,
-    mostSpecificSubdivision: json['most_specific_subdivision'] != null ? SdkPresent((json['most_specific_subdivision'] != null ? UserEventPayloadVariant211GeolocationMostSpecificSubdivision.fromJson(json['most_specific_subdivision'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    regionName: json['regionName'] != null ? SdkPresent((json['regionName'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant211Geolocation.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant211Geolocation(
+        city: json['city'] != null
+            ? SdkPresent((json['city'] != null
+                ? UserEventPayloadVariant211GeolocationCity.fromJson(
+                    json['city'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        country: (json['country'] != null
+            ? UserEventPayloadVariant211GeolocationCountry.fromJson(
+                json['country'] as Map<String, dynamic>)
+            : null)!,
+        mostSpecificSubdivision: json['most_specific_subdivision'] != null
+            ? SdkPresent((json['most_specific_subdivision'] != null
+                ? UserEventPayloadVariant211GeolocationMostSpecificSubdivision
+                    .fromJson(json['most_specific_subdivision']
+                        as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        regionName: json['regionName'] != null
+            ? SdkPresent((json['regionName'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (city) {
-      SdkPresent<UserEventPayloadVariant211GeolocationCity>(value: final value) => {'city': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'country': country.toJson(),
-    ...switch (mostSpecificSubdivision) {
-      SdkPresent<UserEventPayloadVariant211GeolocationMostSpecificSubdivision>(value: final value) => {'most_specific_subdivision': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (regionName) {
-      SdkPresent<String>(value: final value) => {'regionName': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (city) {
+          SdkPresent<UserEventPayloadVariant211GeolocationCity>(
+            value: final value
+          ) =>
+            {
+              'city': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'country': country.toJson(),
+        ...switch (mostSpecificSubdivision) {
+          SdkPresent<
+                UserEventPayloadVariant211GeolocationMostSpecificSubdivision>(
+            value: final value
+          ) =>
+            {
+              'most_specific_subdivision': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (regionName) {
+          SdkPresent<String>(value: final value) => {
+              'regionName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `factors[]` wire field.
 class UserEventPayloadVariant211FactorsVariant0Item {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional enumerated value serialized in the `legacy` wire field.
   final SdkOptional<UserEventPayloadVariant211FactorsVariant0ItemLegacy> legacy;
+
   /// Required enumerated value serialized in the `origin` wire field.
   final UserEventPayloadVariant211FactorsVariant0ItemOrigin origin;
+
   /// Optional `string` value serialized in the `ssoType` wire field.
   final SdkOptional<String> ssoType;
+
   /// Optional `string` value serialized in the `teamId` wire field.
   final SdkOptional<String> teamId;
+
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant211FactorsVariant0Item({this.legacy = const SdkOmitted(), required this.origin, this.ssoType = const SdkOmitted(), this.teamId = const SdkOmitted(), this.username = const SdkOmitted()});
+  const UserEventPayloadVariant211FactorsVariant0Item(
+      {this.legacy = const SdkOmitted(),
+      required this.origin,
+      this.ssoType = const SdkOmitted(),
+      this.teamId = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant211FactorsVariant0Item Function({SdkOptional<UserEventPayloadVariant211FactorsVariant0ItemLegacy> legacy, UserEventPayloadVariant211FactorsVariant0ItemOrigin origin, SdkOptional<String> ssoType, SdkOptional<String> teamId, SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant211FactorsVariant0Item Function(
+      {SdkOptional<UserEventPayloadVariant211FactorsVariant0ItemLegacy> legacy,
+      UserEventPayloadVariant211FactorsVariant0ItemOrigin origin,
+      SdkOptional<String> ssoType,
+      SdkOptional<String> teamId,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant211FactorsVariant0Item _copyWith({Object? legacy = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? ssoType = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant211FactorsVariant0Item(
-    legacy: identical(legacy, sdkOmittedValue) ? this.legacy : legacy as SdkOptional<UserEventPayloadVariant211FactorsVariant0ItemLegacy>,
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as UserEventPayloadVariant211FactorsVariant0ItemOrigin,
-    ssoType: identical(ssoType, sdkOmittedValue) ? this.ssoType : ssoType as SdkOptional<String>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  UserEventPayloadVariant211FactorsVariant0Item _copyWith(
+          {Object? legacy = sdkOmittedValue,
+          Object? origin = sdkOmittedValue,
+          Object? ssoType = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant211FactorsVariant0Item(
+        legacy: identical(legacy, sdkOmittedValue)
+            ? this.legacy
+            : legacy as SdkOptional<
+                UserEventPayloadVariant211FactorsVariant0ItemLegacy>,
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin as UserEventPayloadVariant211FactorsVariant0ItemOrigin,
+        ssoType: identical(ssoType, sdkOmittedValue)
+            ? this.ssoType
+            : ssoType as SdkOptional<String>,
+        teamId: identical(teamId, sdkOmittedValue)
+            ? this.teamId
+            : teamId as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant211FactorsVariant0Item.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant211FactorsVariant0Item(
-    legacy: json['legacy'] != null ? SdkPresent((json['legacy'] != null ? UserEventPayloadVariant211FactorsVariant0ItemLegacy.fromJson(json['legacy'] as bool) : null)!) : const SdkOmitted(),
-    origin: (json['origin'] != null ? UserEventPayloadVariant211FactorsVariant0ItemOrigin.fromJson(json['origin'] as String) : null)!,
-    ssoType: json['ssoType'] != null ? SdkPresent((json['ssoType'] as String?)!) : const SdkOmitted(),
-    teamId: json['teamId'] != null ? SdkPresent((json['teamId'] as String?)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant211FactorsVariant0Item.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant211FactorsVariant0Item(
+        legacy: json['legacy'] != null
+            ? SdkPresent((json['legacy'] != null
+                ? UserEventPayloadVariant211FactorsVariant0ItemLegacy.fromJson(
+                    json['legacy'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        origin: (json['origin'] != null
+            ? UserEventPayloadVariant211FactorsVariant0ItemOrigin.fromJson(
+                json['origin'] as String)
+            : null)!,
+        ssoType: json['ssoType'] != null
+            ? SdkPresent((json['ssoType'] as String?)!)
+            : const SdkOmitted(),
+        teamId: json['teamId'] != null
+            ? SdkPresent((json['teamId'] as String?)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (legacy) {
-      SdkPresent<UserEventPayloadVariant211FactorsVariant0ItemLegacy>(value: final value) => {'legacy': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'origin': origin.toJson(),
-    ...switch (ssoType) {
-      SdkPresent<String>(value: final value) => {'ssoType': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamId) {
-      SdkPresent<String>(value: final value) => {'teamId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (legacy) {
+          SdkPresent<UserEventPayloadVariant211FactorsVariant0ItemLegacy>(
+            value: final value
+          ) =>
+            {
+              'legacy': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'origin': origin.toJson(),
+        ...switch (ssoType) {
+          SdkPresent<String>(value: final value) => {
+              'ssoType': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamId) {
+          SdkPresent<String>(value: final value) => {
+              'teamId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `factors[]` wire field.
 class UserEventPayloadVariant211FactorsVariant1ItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional enumerated value serialized in the `legacy` wire field.
-  final SdkOptional<UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy> legacy;
+  final SdkOptional<UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy>
+      legacy;
+
   /// Required enumerated value serialized in the `origin` wire field.
   final UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin origin;
+
   /// Optional `string` value serialized in the `ssoType` wire field.
   final SdkOptional<String> ssoType;
+
   /// Optional `string` value serialized in the `teamId` wire field.
   final SdkOptional<String> teamId;
+
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant211FactorsVariant1ItemVariant0({this.legacy = const SdkOmitted(), required this.origin, this.ssoType = const SdkOmitted(), this.teamId = const SdkOmitted(), this.username = const SdkOmitted()});
+  const UserEventPayloadVariant211FactorsVariant1ItemVariant0(
+      {this.legacy = const SdkOmitted(),
+      required this.origin,
+      this.ssoType = const SdkOmitted(),
+      this.teamId = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant211FactorsVariant1ItemVariant0 Function({SdkOptional<UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy> legacy, UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin origin, SdkOptional<String> ssoType, SdkOptional<String> teamId, SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant211FactorsVariant1ItemVariant0 Function(
+      {SdkOptional<UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy>
+          legacy,
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin origin,
+      SdkOptional<String> ssoType,
+      SdkOptional<String> teamId,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant211FactorsVariant1ItemVariant0 _copyWith({Object? legacy = sdkOmittedValue, Object? origin = sdkOmittedValue, Object? ssoType = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant211FactorsVariant1ItemVariant0(
-    legacy: identical(legacy, sdkOmittedValue) ? this.legacy : legacy as SdkOptional<UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy>,
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin,
-    ssoType: identical(ssoType, sdkOmittedValue) ? this.ssoType : ssoType as SdkOptional<String>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  UserEventPayloadVariant211FactorsVariant1ItemVariant0 _copyWith(
+          {Object? legacy = sdkOmittedValue,
+          Object? origin = sdkOmittedValue,
+          Object? ssoType = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0(
+        legacy: identical(legacy, sdkOmittedValue)
+            ? this.legacy
+            : legacy as SdkOptional<
+                UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy>,
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin
+                as UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin,
+        ssoType: identical(ssoType, sdkOmittedValue)
+            ? this.ssoType
+            : ssoType as SdkOptional<String>,
+        teamId: identical(teamId, sdkOmittedValue)
+            ? this.teamId
+            : teamId as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant211FactorsVariant1ItemVariant0.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant211FactorsVariant1ItemVariant0(
-    legacy: json['legacy'] != null ? SdkPresent((json['legacy'] != null ? UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy.fromJson(json['legacy'] as bool) : null)!) : const SdkOmitted(),
-    origin: (json['origin'] != null ? UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin.fromJson(json['origin'] as String) : null)!,
-    ssoType: json['ssoType'] != null ? SdkPresent((json['ssoType'] as String?)!) : const SdkOmitted(),
-    teamId: json['teamId'] != null ? SdkPresent((json['teamId'] as String?)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant211FactorsVariant1ItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant211FactorsVariant1ItemVariant0(
+        legacy: json['legacy'] != null
+            ? SdkPresent((json['legacy'] != null
+                ? UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy
+                    .fromJson(json['legacy'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        origin: (json['origin'] != null
+            ? UserEventPayloadVariant211FactorsVariant1ItemVariant0Origin
+                .fromJson(json['origin'] as String)
+            : null)!,
+        ssoType: json['ssoType'] != null
+            ? SdkPresent((json['ssoType'] as String?)!)
+            : const SdkOmitted(),
+        teamId: json['teamId'] != null
+            ? SdkPresent((json['teamId'] as String?)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (legacy) {
-      SdkPresent<UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy>(value: final value) => {'legacy': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'origin': origin.toJson(),
-    ...switch (ssoType) {
-      SdkPresent<String>(value: final value) => {'ssoType': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (teamId) {
-      SdkPresent<String>(value: final value) => {'teamId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (legacy) {
+          SdkPresent<
+                UserEventPayloadVariant211FactorsVariant1ItemVariant0Legacy>(
+            value: final value
+          ) =>
+            {
+              'legacy': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'origin': origin.toJson(),
+        ...switch (ssoType) {
+          SdkPresent<String>(value: final value) => {
+              'ssoType': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (teamId) {
+          SdkPresent<String>(value: final value) => {
+              'teamId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `factors[]` wire field.
 class UserEventPayloadVariant211FactorsVariant1ItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `origin` wire field.
   final UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin origin;
 
-  const UserEventPayloadVariant211FactorsVariant1ItemVariant1({required this.origin});
+  const UserEventPayloadVariant211FactorsVariant1ItemVariant1(
+      {required this.origin});
 
-  UserEventPayloadVariant211FactorsVariant1ItemVariant1 Function({UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin origin}) get copyWith => _copyWith;
+  UserEventPayloadVariant211FactorsVariant1ItemVariant1 Function(
+          {UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin origin})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant211FactorsVariant1ItemVariant1 _copyWith({Object? origin = sdkOmittedValue}) => UserEventPayloadVariant211FactorsVariant1ItemVariant1(
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin,
-  );
+  UserEventPayloadVariant211FactorsVariant1ItemVariant1 _copyWith(
+          {Object? origin = sdkOmittedValue}) =>
+      UserEventPayloadVariant211FactorsVariant1ItemVariant1(
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin
+                as UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin,
+      );
 
-  factory UserEventPayloadVariant211FactorsVariant1ItemVariant1.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant211FactorsVariant1ItemVariant1(
-    origin: (json['origin'] != null ? UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin.fromJson(json['origin'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant211FactorsVariant1ItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant211FactorsVariant1ItemVariant1(
+        origin: (json['origin'] != null
+            ? UserEventPayloadVariant211FactorsVariant1ItemVariant1Origin
+                .fromJson(json['origin'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'origin': origin.toJson(),
-  };
+        'origin': origin.toJson(),
+      };
 }

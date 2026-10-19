@@ -8,65 +8,136 @@ class CancelDeploymentResponseProjectSettingsSpeedInsights {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<double> canceledAt;
+
   /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
   final SdkOptional<double> dataReceivedAt;
   final SdkOptional<double> disabledAt;
   final SdkOptional<double> enabledAt;
-  final SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsightsHasData> hasData;
+  final SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsightsHasData>
+      hasData;
   final String id;
   final SdkOptional<double> paidAt;
 
-  const CancelDeploymentResponseProjectSettingsSpeedInsights({this.canceledAt = const SdkOmitted(), this.dataReceivedAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id, this.paidAt = const SdkOmitted()});
+  const CancelDeploymentResponseProjectSettingsSpeedInsights(
+      {this.canceledAt = const SdkOmitted(),
+      this.dataReceivedAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id,
+      this.paidAt = const SdkOmitted()});
 
-  CancelDeploymentResponseProjectSettingsSpeedInsights Function({SdkOptional<double> canceledAt, SdkOptional<double> dataReceivedAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsightsHasData> hasData, String id, SdkOptional<double> paidAt}) get copyWith => _copyWith;
+  CancelDeploymentResponseProjectSettingsSpeedInsights Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> dataReceivedAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsightsHasData>
+          hasData,
+      String id,
+      SdkOptional<double> paidAt}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseProjectSettingsSpeedInsights _copyWith({Object? canceledAt = sdkOmittedValue, Object? dataReceivedAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue}) => CancelDeploymentResponseProjectSettingsSpeedInsights(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue) ? this.dataReceivedAt : dataReceivedAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsightsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-  );
+  CancelDeploymentResponseProjectSettingsSpeedInsights _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? dataReceivedAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue}) =>
+      CancelDeploymentResponseProjectSettingsSpeedInsights(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        dataReceivedAt: identical(dataReceivedAt, sdkOmittedValue)
+            ? this.dataReceivedAt
+            : dataReceivedAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData as SdkOptional<
+                CancelDeploymentResponseProjectSettingsSpeedInsightsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+      );
 
-  factory CancelDeploymentResponseProjectSettingsSpeedInsights.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseProjectSettingsSpeedInsights(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    dataReceivedAt: json['dataReceivedAt'] != null ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? CancelDeploymentResponseProjectSettingsSpeedInsightsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseProjectSettingsSpeedInsights.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseProjectSettingsSpeedInsights(
+        canceledAt: json['canceledAt'] != null
+            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        dataReceivedAt: json['dataReceivedAt'] != null
+            ? SdkPresent(((json['dataReceivedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        disabledAt: json['disabledAt'] != null
+            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        enabledAt: json['enabledAt'] != null
+            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        hasData: json['hasData'] != null
+            ? SdkPresent((json['hasData'] != null
+                ? CancelDeploymentResponseProjectSettingsSpeedInsightsHasData
+                    .fromJson(json['hasData'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        paidAt: json['paidAt'] != null
+            ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dataReceivedAt) {
-      SdkPresent<double>(value: final value) => {'dataReceivedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<CancelDeploymentResponseProjectSettingsSpeedInsightsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dataReceivedAt) {
+          SdkPresent<double>(value: final value) => {
+              'dataReceivedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<
+                CancelDeploymentResponseProjectSettingsSpeedInsightsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CancelDeploymentResponseProjectSettingsWebAnalytics {
@@ -75,48 +146,100 @@ class CancelDeploymentResponseProjectSettingsWebAnalytics {
   final SdkOptional<double> canceledAt;
   final SdkOptional<double> disabledAt;
   final SdkOptional<double> enabledAt;
-  final SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalyticsHasData> hasData;
+  final SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalyticsHasData>
+      hasData;
   final String id;
 
-  const CancelDeploymentResponseProjectSettingsWebAnalytics({this.canceledAt = const SdkOmitted(), this.disabledAt = const SdkOmitted(), this.enabledAt = const SdkOmitted(), this.hasData = const SdkOmitted(), required this.id});
+  const CancelDeploymentResponseProjectSettingsWebAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      this.disabledAt = const SdkOmitted(),
+      this.enabledAt = const SdkOmitted(),
+      this.hasData = const SdkOmitted(),
+      required this.id});
 
-  CancelDeploymentResponseProjectSettingsWebAnalytics Function({SdkOptional<double> canceledAt, SdkOptional<double> disabledAt, SdkOptional<double> enabledAt, SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalyticsHasData> hasData, String id}) get copyWith => _copyWith;
+  CancelDeploymentResponseProjectSettingsWebAnalytics Function(
+      {SdkOptional<double> canceledAt,
+      SdkOptional<double> disabledAt,
+      SdkOptional<double> enabledAt,
+      SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalyticsHasData>
+          hasData,
+      String id}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseProjectSettingsWebAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? hasData = sdkOmittedValue, Object? id = sdkOmittedValue}) => CancelDeploymentResponseProjectSettingsWebAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as SdkOptional<double>,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as SdkOptional<double>,
-    hasData: identical(hasData, sdkOmittedValue) ? this.hasData : hasData as SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalyticsHasData>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  CancelDeploymentResponseProjectSettingsWebAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? hasData = sdkOmittedValue,
+          Object? id = sdkOmittedValue}) =>
+      CancelDeploymentResponseProjectSettingsWebAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as SdkOptional<double>,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as SdkOptional<double>,
+        hasData: identical(hasData, sdkOmittedValue)
+            ? this.hasData
+            : hasData as SdkOptional<
+                CancelDeploymentResponseProjectSettingsWebAnalyticsHasData>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory CancelDeploymentResponseProjectSettingsWebAnalytics.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseProjectSettingsWebAnalytics(
-    canceledAt: json['canceledAt'] != null ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    disabledAt: json['disabledAt'] != null ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    enabledAt: json['enabledAt'] != null ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    hasData: json['hasData'] != null ? SdkPresent((json['hasData'] != null ? CancelDeploymentResponseProjectSettingsWebAnalyticsHasData.fromJson(json['hasData'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  );
+  factory CancelDeploymentResponseProjectSettingsWebAnalytics.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseProjectSettingsWebAnalytics(
+        canceledAt: json['canceledAt'] != null
+            ? SdkPresent(((json['canceledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        disabledAt: json['disabledAt'] != null
+            ? SdkPresent(((json['disabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        enabledAt: json['enabledAt'] != null
+            ? SdkPresent(((json['enabledAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        hasData: json['hasData'] != null
+            ? SdkPresent((json['hasData'] != null
+                ? CancelDeploymentResponseProjectSettingsWebAnalyticsHasData
+                    .fromJson(json['hasData'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabledAt) {
-      SdkPresent<double>(value: final value) => {'disabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabledAt) {
-      SdkPresent<double>(value: final value) => {'enabledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hasData) {
-      SdkPresent<CancelDeploymentResponseProjectSettingsWebAnalyticsHasData>(value: final value) => {'hasData': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'disabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabledAt) {
+          SdkPresent<double>(value: final value) => {
+              'enabledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hasData) {
+          SdkPresent<
+                CancelDeploymentResponseProjectSettingsWebAnalyticsHasData>(
+            value: final value
+          ) =>
+            {
+              'hasData': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }
 
 class CancelDeploymentResponseProjectSettings {
@@ -125,170 +248,424 @@ class CancelDeploymentResponseProjectSettings {
   final SdkOptional<String?> buildCommand;
   final SdkOptional<String?> commandForIgnoringBuildStep;
   final SdkOptional<String?> devCommand;
-  final SdkOptional<CancelDeploymentResponseProjectSettingsFramework?> framework;
+  final SdkOptional<CancelDeploymentResponseProjectSettingsFramework?>
+      framework;
   final SdkOptional<String?> installCommand;
-  final SdkOptional<CancelDeploymentResponseProjectSettingsNodeVersion> nodeVersion;
+  final SdkOptional<CancelDeploymentResponseProjectSettingsNodeVersion>
+      nodeVersion;
   final SdkOptional<String?> outputDirectory;
-  final SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsights> speedInsights;
-  final SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalytics> webAnalytics;
+  final SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsights>
+      speedInsights;
+  final SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalytics>
+      webAnalytics;
 
-  const CancelDeploymentResponseProjectSettings({this.buildCommand = const SdkOmitted(), this.commandForIgnoringBuildStep = const SdkOmitted(), this.devCommand = const SdkOmitted(), this.framework = const SdkOmitted(), this.installCommand = const SdkOmitted(), this.nodeVersion = const SdkOmitted(), this.outputDirectory = const SdkOmitted(), this.speedInsights = const SdkOmitted(), this.webAnalytics = const SdkOmitted()});
+  const CancelDeploymentResponseProjectSettings(
+      {this.buildCommand = const SdkOmitted(),
+      this.commandForIgnoringBuildStep = const SdkOmitted(),
+      this.devCommand = const SdkOmitted(),
+      this.framework = const SdkOmitted(),
+      this.installCommand = const SdkOmitted(),
+      this.nodeVersion = const SdkOmitted(),
+      this.outputDirectory = const SdkOmitted(),
+      this.speedInsights = const SdkOmitted(),
+      this.webAnalytics = const SdkOmitted()});
 
-  CancelDeploymentResponseProjectSettings Function({SdkOptional<String?> buildCommand, SdkOptional<String?> commandForIgnoringBuildStep, SdkOptional<String?> devCommand, SdkOptional<CancelDeploymentResponseProjectSettingsFramework?> framework, SdkOptional<String?> installCommand, SdkOptional<CancelDeploymentResponseProjectSettingsNodeVersion> nodeVersion, SdkOptional<String?> outputDirectory, SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsights> speedInsights, SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalytics> webAnalytics}) get copyWith => _copyWith;
+  CancelDeploymentResponseProjectSettings Function(
+      {SdkOptional<String?> buildCommand,
+      SdkOptional<String?> commandForIgnoringBuildStep,
+      SdkOptional<String?> devCommand,
+      SdkOptional<CancelDeploymentResponseProjectSettingsFramework?> framework,
+      SdkOptional<String?> installCommand,
+      SdkOptional<CancelDeploymentResponseProjectSettingsNodeVersion>
+          nodeVersion,
+      SdkOptional<String?> outputDirectory,
+      SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsights>
+          speedInsights,
+      SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalytics>
+          webAnalytics}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseProjectSettings _copyWith({Object? buildCommand = sdkOmittedValue, Object? commandForIgnoringBuildStep = sdkOmittedValue, Object? devCommand = sdkOmittedValue, Object? framework = sdkOmittedValue, Object? installCommand = sdkOmittedValue, Object? nodeVersion = sdkOmittedValue, Object? outputDirectory = sdkOmittedValue, Object? speedInsights = sdkOmittedValue, Object? webAnalytics = sdkOmittedValue}) => CancelDeploymentResponseProjectSettings(
-    buildCommand: identical(buildCommand, sdkOmittedValue) ? this.buildCommand : buildCommand as SdkOptional<String?>,
-    commandForIgnoringBuildStep: identical(commandForIgnoringBuildStep, sdkOmittedValue) ? this.commandForIgnoringBuildStep : commandForIgnoringBuildStep as SdkOptional<String?>,
-    devCommand: identical(devCommand, sdkOmittedValue) ? this.devCommand : devCommand as SdkOptional<String?>,
-    framework: identical(framework, sdkOmittedValue) ? this.framework : framework as SdkOptional<CancelDeploymentResponseProjectSettingsFramework?>,
-    installCommand: identical(installCommand, sdkOmittedValue) ? this.installCommand : installCommand as SdkOptional<String?>,
-    nodeVersion: identical(nodeVersion, sdkOmittedValue) ? this.nodeVersion : nodeVersion as SdkOptional<CancelDeploymentResponseProjectSettingsNodeVersion>,
-    outputDirectory: identical(outputDirectory, sdkOmittedValue) ? this.outputDirectory : outputDirectory as SdkOptional<String?>,
-    speedInsights: identical(speedInsights, sdkOmittedValue) ? this.speedInsights : speedInsights as SdkOptional<CancelDeploymentResponseProjectSettingsSpeedInsights>,
-    webAnalytics: identical(webAnalytics, sdkOmittedValue) ? this.webAnalytics : webAnalytics as SdkOptional<CancelDeploymentResponseProjectSettingsWebAnalytics>,
-  );
+  CancelDeploymentResponseProjectSettings _copyWith(
+          {Object? buildCommand = sdkOmittedValue,
+          Object? commandForIgnoringBuildStep = sdkOmittedValue,
+          Object? devCommand = sdkOmittedValue,
+          Object? framework = sdkOmittedValue,
+          Object? installCommand = sdkOmittedValue,
+          Object? nodeVersion = sdkOmittedValue,
+          Object? outputDirectory = sdkOmittedValue,
+          Object? speedInsights = sdkOmittedValue,
+          Object? webAnalytics = sdkOmittedValue}) =>
+      CancelDeploymentResponseProjectSettings(
+        buildCommand: identical(buildCommand, sdkOmittedValue)
+            ? this.buildCommand
+            : buildCommand as SdkOptional<String?>,
+        commandForIgnoringBuildStep:
+            identical(commandForIgnoringBuildStep, sdkOmittedValue)
+                ? this.commandForIgnoringBuildStep
+                : commandForIgnoringBuildStep as SdkOptional<String?>,
+        devCommand: identical(devCommand, sdkOmittedValue)
+            ? this.devCommand
+            : devCommand as SdkOptional<String?>,
+        framework: identical(framework, sdkOmittedValue)
+            ? this.framework
+            : framework as SdkOptional<
+                CancelDeploymentResponseProjectSettingsFramework?>,
+        installCommand: identical(installCommand, sdkOmittedValue)
+            ? this.installCommand
+            : installCommand as SdkOptional<String?>,
+        nodeVersion: identical(nodeVersion, sdkOmittedValue)
+            ? this.nodeVersion
+            : nodeVersion as SdkOptional<
+                CancelDeploymentResponseProjectSettingsNodeVersion>,
+        outputDirectory: identical(outputDirectory, sdkOmittedValue)
+            ? this.outputDirectory
+            : outputDirectory as SdkOptional<String?>,
+        speedInsights: identical(speedInsights, sdkOmittedValue)
+            ? this.speedInsights
+            : speedInsights as SdkOptional<
+                CancelDeploymentResponseProjectSettingsSpeedInsights>,
+        webAnalytics: identical(webAnalytics, sdkOmittedValue)
+            ? this.webAnalytics
+            : webAnalytics as SdkOptional<
+                CancelDeploymentResponseProjectSettingsWebAnalytics>,
+      );
 
-  factory CancelDeploymentResponseProjectSettings.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseProjectSettings(
-    buildCommand: json.containsKey('buildCommand') ? SdkPresent(json['buildCommand'] as String?) : const SdkOmitted(),
-    commandForIgnoringBuildStep: json.containsKey('commandForIgnoringBuildStep') ? SdkPresent(json['commandForIgnoringBuildStep'] as String?) : const SdkOmitted(),
-    devCommand: json.containsKey('devCommand') ? SdkPresent(json['devCommand'] as String?) : const SdkOmitted(),
-    framework: json.containsKey('framework') ? SdkPresent(json['framework'] != null ? CancelDeploymentResponseProjectSettingsFramework.fromJson(json['framework'] as String) : null) : const SdkOmitted(),
-    installCommand: json.containsKey('installCommand') ? SdkPresent(json['installCommand'] as String?) : const SdkOmitted(),
-    nodeVersion: json['nodeVersion'] != null ? SdkPresent((json['nodeVersion'] != null ? CancelDeploymentResponseProjectSettingsNodeVersion.fromJson(json['nodeVersion'] as String) : null)!) : const SdkOmitted(),
-    outputDirectory: json.containsKey('outputDirectory') ? SdkPresent(json['outputDirectory'] as String?) : const SdkOmitted(),
-    speedInsights: json['speedInsights'] != null ? SdkPresent((json['speedInsights'] != null ? CancelDeploymentResponseProjectSettingsSpeedInsights.fromJson(json['speedInsights'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    webAnalytics: json['webAnalytics'] != null ? SdkPresent((json['webAnalytics'] != null ? CancelDeploymentResponseProjectSettingsWebAnalytics.fromJson(json['webAnalytics'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseProjectSettings.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseProjectSettings(
+        buildCommand: json.containsKey('buildCommand')
+            ? SdkPresent(json['buildCommand'] as String?)
+            : const SdkOmitted(),
+        commandForIgnoringBuildStep:
+            json.containsKey('commandForIgnoringBuildStep')
+                ? SdkPresent(json['commandForIgnoringBuildStep'] as String?)
+                : const SdkOmitted(),
+        devCommand: json.containsKey('devCommand')
+            ? SdkPresent(json['devCommand'] as String?)
+            : const SdkOmitted(),
+        framework: json.containsKey('framework')
+            ? SdkPresent(json['framework'] != null
+                ? CancelDeploymentResponseProjectSettingsFramework.fromJson(
+                    json['framework'] as String)
+                : null)
+            : const SdkOmitted(),
+        installCommand: json.containsKey('installCommand')
+            ? SdkPresent(json['installCommand'] as String?)
+            : const SdkOmitted(),
+        nodeVersion: json['nodeVersion'] != null
+            ? SdkPresent((json['nodeVersion'] != null
+                ? CancelDeploymentResponseProjectSettingsNodeVersion.fromJson(
+                    json['nodeVersion'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        outputDirectory: json.containsKey('outputDirectory')
+            ? SdkPresent(json['outputDirectory'] as String?)
+            : const SdkOmitted(),
+        speedInsights: json['speedInsights'] != null
+            ? SdkPresent((json['speedInsights'] != null
+                ? CancelDeploymentResponseProjectSettingsSpeedInsights.fromJson(
+                    json['speedInsights'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        webAnalytics: json['webAnalytics'] != null
+            ? SdkPresent((json['webAnalytics'] != null
+                ? CancelDeploymentResponseProjectSettingsWebAnalytics.fromJson(
+                    json['webAnalytics'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (buildCommand) {
-      SdkPresent<String?>(value: final value) => {'buildCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (commandForIgnoringBuildStep) {
-      SdkPresent<String?>(value: final value) => {'commandForIgnoringBuildStep': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (devCommand) {
-      SdkPresent<String?>(value: final value) => {'devCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (framework) {
-      SdkPresent<CancelDeploymentResponseProjectSettingsFramework?>(value: final value) => {'framework': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (installCommand) {
-      SdkPresent<String?>(value: final value) => {'installCommand': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (nodeVersion) {
-      SdkPresent<CancelDeploymentResponseProjectSettingsNodeVersion>(value: final value) => {'nodeVersion': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (outputDirectory) {
-      SdkPresent<String?>(value: final value) => {'outputDirectory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (speedInsights) {
-      SdkPresent<CancelDeploymentResponseProjectSettingsSpeedInsights>(value: final value) => {'speedInsights': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webAnalytics) {
-      SdkPresent<CancelDeploymentResponseProjectSettingsWebAnalytics>(value: final value) => {'webAnalytics': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (buildCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'buildCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (commandForIgnoringBuildStep) {
+          SdkPresent<String?>(value: final value) => {
+              'commandForIgnoringBuildStep': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (devCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'devCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (framework) {
+          SdkPresent<CancelDeploymentResponseProjectSettingsFramework?>(
+            value: final value
+          ) =>
+            {
+              'framework': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (installCommand) {
+          SdkPresent<String?>(value: final value) => {
+              'installCommand': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (nodeVersion) {
+          SdkPresent<CancelDeploymentResponseProjectSettingsNodeVersion>(
+            value: final value
+          ) =>
+            {
+              'nodeVersion': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (outputDirectory) {
+          SdkPresent<String?>(value: final value) => {
+              'outputDirectory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (speedInsights) {
+          SdkPresent<CancelDeploymentResponseProjectSettingsSpeedInsights>(
+            value: final value
+          ) =>
+            {
+              'speedInsights': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webAnalytics) {
+          SdkPresent<CancelDeploymentResponseProjectSettingsWebAnalytics>(
+            value: final value
+          ) =>
+            {
+              'webAnalytics': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Build machine configuration recorded for this deployment's build. See {@link DeploymentBuildMachine}. Distinct from the team/user `resourceConfig.buildMachine`, which only carries `default`.
 class CancelDeploymentResponseResourceConfigBuildMachine {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
   final SdkOptional<double> cores;
+
   /// The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type.
-  final SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType> defaultPurchaseType;
+  final SdkOptional<
+          CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType>
+      defaultPurchaseType;
+
   /// Whether the build ran on a fixed or elastic machine. Used to drive billing for the build.
-  final SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType> machineSelectionType;
+  final SdkOptional<
+          CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType>
+      machineSelectionType;
+
   /// Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive.
   final SdkOptional<double> memory;
+
   /// Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project.
-  final SdkOptional<CancelDeploymentResponseResourceConfigBuildMachinePurchaseType> purchaseType;
+  final SdkOptional<
+          CancelDeploymentResponseResourceConfigBuildMachinePurchaseType>
+      purchaseType;
+
   /// The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history.
-  final SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineSelectionSource> selectionSource;
+  final SdkOptional<
+          CancelDeploymentResponseResourceConfigBuildMachineSelectionSource>
+      selectionSource;
 
-  const CancelDeploymentResponseResourceConfigBuildMachine({this.cores = const SdkOmitted(), this.defaultPurchaseType = const SdkOmitted(), this.machineSelectionType = const SdkOmitted(), this.memory = const SdkOmitted(), this.purchaseType = const SdkOmitted(), this.selectionSource = const SdkOmitted()});
+  const CancelDeploymentResponseResourceConfigBuildMachine(
+      {this.cores = const SdkOmitted(),
+      this.defaultPurchaseType = const SdkOmitted(),
+      this.machineSelectionType = const SdkOmitted(),
+      this.memory = const SdkOmitted(),
+      this.purchaseType = const SdkOmitted(),
+      this.selectionSource = const SdkOmitted()});
 
-  CancelDeploymentResponseResourceConfigBuildMachine Function({SdkOptional<double> cores, SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType> defaultPurchaseType, SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType> machineSelectionType, SdkOptional<double> memory, SdkOptional<CancelDeploymentResponseResourceConfigBuildMachinePurchaseType> purchaseType, SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineSelectionSource> selectionSource}) get copyWith => _copyWith;
+  CancelDeploymentResponseResourceConfigBuildMachine Function(
+      {SdkOptional<double> cores,
+      SdkOptional<
+              CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType>
+          defaultPurchaseType,
+      SdkOptional<
+              CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType>
+          machineSelectionType,
+      SdkOptional<double> memory,
+      SdkOptional<
+              CancelDeploymentResponseResourceConfigBuildMachinePurchaseType>
+          purchaseType,
+      SdkOptional<
+              CancelDeploymentResponseResourceConfigBuildMachineSelectionSource>
+          selectionSource}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseResourceConfigBuildMachine _copyWith({Object? cores = sdkOmittedValue, Object? defaultPurchaseType = sdkOmittedValue, Object? machineSelectionType = sdkOmittedValue, Object? memory = sdkOmittedValue, Object? purchaseType = sdkOmittedValue, Object? selectionSource = sdkOmittedValue}) => CancelDeploymentResponseResourceConfigBuildMachine(
-    cores: identical(cores, sdkOmittedValue) ? this.cores : cores as SdkOptional<double>,
-    defaultPurchaseType: identical(defaultPurchaseType, sdkOmittedValue) ? this.defaultPurchaseType : defaultPurchaseType as SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType>,
-    machineSelectionType: identical(machineSelectionType, sdkOmittedValue) ? this.machineSelectionType : machineSelectionType as SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType>,
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as SdkOptional<double>,
-    purchaseType: identical(purchaseType, sdkOmittedValue) ? this.purchaseType : purchaseType as SdkOptional<CancelDeploymentResponseResourceConfigBuildMachinePurchaseType>,
-    selectionSource: identical(selectionSource, sdkOmittedValue) ? this.selectionSource : selectionSource as SdkOptional<CancelDeploymentResponseResourceConfigBuildMachineSelectionSource>,
-  );
+  CancelDeploymentResponseResourceConfigBuildMachine _copyWith(
+          {Object? cores = sdkOmittedValue,
+          Object? defaultPurchaseType = sdkOmittedValue,
+          Object? machineSelectionType = sdkOmittedValue,
+          Object? memory = sdkOmittedValue,
+          Object? purchaseType = sdkOmittedValue,
+          Object? selectionSource = sdkOmittedValue}) =>
+      CancelDeploymentResponseResourceConfigBuildMachine(
+        cores: identical(cores, sdkOmittedValue)
+            ? this.cores
+            : cores as SdkOptional<double>,
+        defaultPurchaseType: identical(defaultPurchaseType, sdkOmittedValue)
+            ? this.defaultPurchaseType
+            : defaultPurchaseType as SdkOptional<
+                CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType>,
+        machineSelectionType: identical(machineSelectionType, sdkOmittedValue)
+            ? this.machineSelectionType
+            : machineSelectionType as SdkOptional<
+                CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType>,
+        memory: identical(memory, sdkOmittedValue)
+            ? this.memory
+            : memory as SdkOptional<double>,
+        purchaseType: identical(purchaseType, sdkOmittedValue)
+            ? this.purchaseType
+            : purchaseType as SdkOptional<
+                CancelDeploymentResponseResourceConfigBuildMachinePurchaseType>,
+        selectionSource: identical(selectionSource, sdkOmittedValue)
+            ? this.selectionSource
+            : selectionSource as SdkOptional<
+                CancelDeploymentResponseResourceConfigBuildMachineSelectionSource>,
+      );
 
-  factory CancelDeploymentResponseResourceConfigBuildMachine.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseResourceConfigBuildMachine(
-    cores: json['cores'] != null ? SdkPresent(((json['cores'] as num?)?.toDouble())!) : const SdkOmitted(),
-    defaultPurchaseType: json['defaultPurchaseType'] != null ? SdkPresent((json['defaultPurchaseType'] != null ? CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.fromJson(json['defaultPurchaseType'] as String) : null)!) : const SdkOmitted(),
-    machineSelectionType: json['machineSelectionType'] != null ? SdkPresent((json['machineSelectionType'] != null ? CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType.fromJson(json['machineSelectionType'] as String) : null)!) : const SdkOmitted(),
-    memory: json['memory'] != null ? SdkPresent(((json['memory'] as num?)?.toDouble())!) : const SdkOmitted(),
-    purchaseType: json['purchaseType'] != null ? SdkPresent((json['purchaseType'] != null ? CancelDeploymentResponseResourceConfigBuildMachinePurchaseType.fromJson(json['purchaseType'] as String) : null)!) : const SdkOmitted(),
-    selectionSource: json['selectionSource'] != null ? SdkPresent((json['selectionSource'] != null ? CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.fromJson(json['selectionSource'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseResourceConfigBuildMachine.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseResourceConfigBuildMachine(
+        cores: json['cores'] != null
+            ? SdkPresent(((json['cores'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        defaultPurchaseType: json['defaultPurchaseType'] != null
+            ? SdkPresent((json['defaultPurchaseType'] != null
+                ? CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType
+                    .fromJson(json['defaultPurchaseType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        machineSelectionType: json['machineSelectionType'] != null
+            ? SdkPresent((json['machineSelectionType'] != null
+                ? CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType
+                    .fromJson(json['machineSelectionType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        memory: json['memory'] != null
+            ? SdkPresent(((json['memory'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        purchaseType: json['purchaseType'] != null
+            ? SdkPresent((json['purchaseType'] != null
+                ? CancelDeploymentResponseResourceConfigBuildMachinePurchaseType
+                    .fromJson(json['purchaseType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        selectionSource: json['selectionSource'] != null
+            ? SdkPresent((json['selectionSource'] != null
+                ? CancelDeploymentResponseResourceConfigBuildMachineSelectionSource
+                    .fromJson(json['selectionSource'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (cores) {
-      SdkPresent<double>(value: final value) => {'cores': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (defaultPurchaseType) {
-      SdkPresent<CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType>(value: final value) => {'defaultPurchaseType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (machineSelectionType) {
-      SdkPresent<CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType>(value: final value) => {'machineSelectionType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (memory) {
-      SdkPresent<double>(value: final value) => {'memory': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (purchaseType) {
-      SdkPresent<CancelDeploymentResponseResourceConfigBuildMachinePurchaseType>(value: final value) => {'purchaseType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (selectionSource) {
-      SdkPresent<CancelDeploymentResponseResourceConfigBuildMachineSelectionSource>(value: final value) => {'selectionSource': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (cores) {
+          SdkPresent<double>(value: final value) => {
+              'cores': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (defaultPurchaseType) {
+          SdkPresent<
+                CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType>(
+            value: final value
+          ) =>
+            {
+              'defaultPurchaseType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (machineSelectionType) {
+          SdkPresent<
+                CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType>(
+            value: final value
+          ) =>
+            {
+              'machineSelectionType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (memory) {
+          SdkPresent<double>(value: final value) => {
+              'memory': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (purchaseType) {
+          SdkPresent<
+                CancelDeploymentResponseResourceConfigBuildMachinePurchaseType>(
+            value: final value
+          ) =>
+            {
+              'purchaseType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (selectionSource) {
+          SdkPresent<
+                CancelDeploymentResponseResourceConfigBuildMachineSelectionSource>(
+            value: final value
+          ) =>
+            {
+              'selectionSource': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CancelDeploymentResponseResourceConfig {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Build machine configuration recorded for this deployment's build. See {@link DeploymentBuildMachine}. Distinct from the team/user `resourceConfig.buildMachine`, which only carries `default`.
-  final SdkOptional<CancelDeploymentResponseResourceConfigBuildMachine> buildMachine;
+  final SdkOptional<CancelDeploymentResponseResourceConfigBuildMachine>
+      buildMachine;
 
-  const CancelDeploymentResponseResourceConfig({this.buildMachine = const SdkOmitted()});
+  const CancelDeploymentResponseResourceConfig(
+      {this.buildMachine = const SdkOmitted()});
 
-  CancelDeploymentResponseResourceConfig Function({SdkOptional<CancelDeploymentResponseResourceConfigBuildMachine> buildMachine}) get copyWith => _copyWith;
+  CancelDeploymentResponseResourceConfig Function(
+      {SdkOptional<CancelDeploymentResponseResourceConfigBuildMachine>
+          buildMachine}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseResourceConfig _copyWith({Object? buildMachine = sdkOmittedValue}) => CancelDeploymentResponseResourceConfig(
-    buildMachine: identical(buildMachine, sdkOmittedValue) ? this.buildMachine : buildMachine as SdkOptional<CancelDeploymentResponseResourceConfigBuildMachine>,
-  );
+  CancelDeploymentResponseResourceConfig _copyWith(
+          {Object? buildMachine = sdkOmittedValue}) =>
+      CancelDeploymentResponseResourceConfig(
+        buildMachine: identical(buildMachine, sdkOmittedValue)
+            ? this.buildMachine
+            : buildMachine as SdkOptional<
+                CancelDeploymentResponseResourceConfigBuildMachine>,
+      );
 
-  factory CancelDeploymentResponseResourceConfig.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseResourceConfig(
-    buildMachine: json['buildMachine'] != null ? SdkPresent((json['buildMachine'] != null ? CancelDeploymentResponseResourceConfigBuildMachine.fromJson(json['buildMachine'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory CancelDeploymentResponseResourceConfig.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseResourceConfig(
+        buildMachine: json['buildMachine'] != null
+            ? SdkPresent((json['buildMachine'] != null
+                ? CancelDeploymentResponseResourceConfigBuildMachine.fromJson(
+                    json['buildMachine'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (buildMachine) {
-      SdkPresent<CancelDeploymentResponseResourceConfigBuildMachine>(value: final value) => {'buildMachine': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (buildMachine) {
+          SdkPresent<CancelDeploymentResponseResourceConfigBuildMachine>(
+            value: final value
+          ) =>
+            {
+              'buildMachine': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

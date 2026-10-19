@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type {
   decreasePlanItemQuantity;
 
-  static BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type fromJson(String value) {
+  static BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type
+      fromJson(String value) {
     switch (value) {
-      case 'decrease_plan_item_quantity': return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type.decreasePlanItemQuantity;
-      default: throw ArgumentError('Unknown BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type: $value');
+      case 'decrease_plan_item_quantity':
+        return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type
+            .decreasePlanItemQuantity;
+      default:
+        throw ArgumentError(
+            'Unknown BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type.decreasePlanItemQuantity: return 'decrease_plan_item_quantity';
+      case BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type
+            .decreasePlanItemQuantity:
+        return 'decrease_plan_item_quantity';
     }
   }
 
@@ -26,61 +33,92 @@ enum BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant2Type {
 
 /// When the subscription change should take effect.
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior {
-
   final String value;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior._(this.value);
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior._(
+      this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior
+          ._(value);
 
-  static const endOfTerm = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior._('end_of_term');
-  static const immediate = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior._('immediate');
+  static const endOfTerm =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior
+          ._('end_of_term');
+  static const immediate =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior
+          ._('immediate');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The source used as the authoritative price for this intent.
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource {
-
   final String value;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource._(this.value);
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource._(
+      this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource
+          ._(value);
 
-  static const copper = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource._('copper');
-  static const orb = BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource._('orb');
+  static const copper =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource
+          ._('copper');
+  static const orb =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource
+          ._('orb');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3OutputPricingSource &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type {
   adjustPlanItemQuantity;
 
-  static BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type fromJson(String value) {
+  static BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type
+      fromJson(String value) {
     switch (value) {
-      case 'adjust_plan_item_quantity': return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type.adjustPlanItemQuantity;
-      default: throw ArgumentError('Unknown BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type: $value');
+      case 'adjust_plan_item_quantity':
+        return BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type
+            .adjustPlanItemQuantity;
+      default:
+        throw ArgumentError(
+            'Unknown BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type.adjustPlanItemQuantity: return 'adjust_plan_item_quantity';
+      case BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type
+            .adjustPlanItemQuantity:
+        return 'adjust_plan_item_quantity';
     }
   }
 
@@ -89,190 +127,273 @@ enum BuyCreditsResponseVariant2OrbSubscriptionIntentConfigurationVariant3Type {
 }
 
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode {
-
   final String value;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode._(this.value);
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode._(
+      this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode._(
+          value);
 
-  static const sync_ = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode._('sync');
+  static const sync_ =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode._(
+          'sync');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant0Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode {
-
   final String value;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode._(this.value);
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode._(
+      this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode._(
+          value);
 
-  static const async_ = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode._('async');
+  static const async_ =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode._(
+          'async');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status {
-
   final String value;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(this.value);
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(
+      this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(
+          value);
 
-  static const canceled = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._('canceled');
-  static const failed = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._('failed');
-  static const pending = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._('pending');
-  static const running = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._('running');
+  static const canceled =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(
+          'canceled');
+  static const failed =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(
+          'failed');
+  static const pending =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(
+          'pending');
+  static const running =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status._(
+          'running');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant1Status &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode {
-
   final String value;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode._(this.value);
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode._(
+      this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode._(
+          value);
 
-  static const async_ = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode._('async');
+  static const async_ =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode._(
+          'async');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Mode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status {
-
   final String value;
 
-  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status._(this.value);
+  const BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status._(
+      this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status._(
+          value);
 
-  static const succeeded = BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status._('succeeded');
+  static const succeeded =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status._(
+          'succeeded');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is BuyCreditsResponseVariant2OrbSubscriptionIntentOrbUpdateVariant2Status &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The status of the Orb subscription intent.
 final class BuyCreditsResponseVariant2OrbSubscriptionIntentStatus {
-
   final String value;
 
   const BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._(this.value);
 
-  factory BuyCreditsResponseVariant2OrbSubscriptionIntentStatus.fromJson(String value) => BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._(value);
+  factory BuyCreditsResponseVariant2OrbSubscriptionIntentStatus.fromJson(
+          String value) =>
+      BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._(value);
 
-  static const failed = BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._('failed');
-  static const pending = BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._('pending');
-  static const succeeded = BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._('succeeded');
+  static const failed =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._('failed');
+  static const pending =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._('pending');
+  static const succeeded =
+      BuyCreditsResponseVariant2OrbSubscriptionIntentStatus._('succeeded');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is BuyCreditsResponseVariant2OrbSubscriptionIntentStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is BuyCreditsResponseVariant2OrbSubscriptionIntentStatus &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseAtprotoVariant0Enabled {
-
   final bool value;
 
   const CancelDeploymentResponseAtprotoVariant0Enabled._(this.value);
 
-  factory CancelDeploymentResponseAtprotoVariant0Enabled.fromJson(bool value) => CancelDeploymentResponseAtprotoVariant0Enabled._(value);
+  factory CancelDeploymentResponseAtprotoVariant0Enabled.fromJson(bool value) =>
+      CancelDeploymentResponseAtprotoVariant0Enabled._(value);
 
   static const false_ = CancelDeploymentResponseAtprotoVariant0Enabled._(false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseAtprotoVariant0Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseAtprotoVariant0Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseAtprotoVariant1Enabled {
-
   final bool value;
 
   const CancelDeploymentResponseAtprotoVariant1Enabled._(this.value);
 
-  factory CancelDeploymentResponseAtprotoVariant1Enabled.fromJson(bool value) => CancelDeploymentResponseAtprotoVariant1Enabled._(value);
+  factory CancelDeploymentResponseAtprotoVariant1Enabled.fromJson(bool value) =>
+      CancelDeploymentResponseAtprotoVariant1Enabled._(value);
 
   static const true_ = CancelDeploymentResponseAtprotoVariant1Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseAtprotoVariant1Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseAtprotoVariant1Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem {
-
   final String value;
 
-  const CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._(this.value);
+  const CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._(
+      this.value);
 
-  factory CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem.fromJson(String value) => CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._(value);
+  factory CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem.fromJson(
+          String value) =>
+      CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._(value);
 
-  static const account = CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._('account');
-  static const commit = CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._('commit');
-  static const identity = CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._('identity');
-  static const sync_ = CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._('sync');
+  static const account =
+      CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._('account');
+  static const commit =
+      CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._('commit');
+  static const identity =
+      CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._(
+          'identity');
+  static const sync_ =
+      CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem._('sync');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseAtprotoVariant1SubscriptionKindsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

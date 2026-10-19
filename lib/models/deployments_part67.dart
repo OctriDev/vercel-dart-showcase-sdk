@@ -12,39 +12,78 @@ class CreateDeploymentResponseVariant1RoutesItemVariant1 {
   final SdkOptional<String> src;
   final SdkOptional<double> status;
 
-  const CreateDeploymentResponseVariant1RoutesItemVariant1({this.dest = const SdkOmitted(), required this.handle, this.src = const SdkOmitted(), this.status = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1RoutesItemVariant1(
+      {this.dest = const SdkOmitted(),
+      required this.handle,
+      this.src = const SdkOmitted(),
+      this.status = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1RoutesItemVariant1 Function({SdkOptional<String> dest, CreateDeploymentResponseVariant1RoutesItemVariant1Handle handle, SdkOptional<String> src, SdkOptional<double> status}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1RoutesItemVariant1 Function(
+      {SdkOptional<String> dest,
+      CreateDeploymentResponseVariant1RoutesItemVariant1Handle handle,
+      SdkOptional<String> src,
+      SdkOptional<double> status}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1RoutesItemVariant1 _copyWith({Object? dest = sdkOmittedValue, Object? handle = sdkOmittedValue, Object? src = sdkOmittedValue, Object? status = sdkOmittedValue}) => CreateDeploymentResponseVariant1RoutesItemVariant1(
-    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
-    handle: identical(handle, sdkOmittedValue) ? this.handle : handle as CreateDeploymentResponseVariant1RoutesItemVariant1Handle,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as SdkOptional<double>,
-  );
+  CreateDeploymentResponseVariant1RoutesItemVariant1 _copyWith(
+          {Object? dest = sdkOmittedValue,
+          Object? handle = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? status = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1RoutesItemVariant1(
+        dest: identical(dest, sdkOmittedValue)
+            ? this.dest
+            : dest as SdkOptional<String>,
+        handle: identical(handle, sdkOmittedValue)
+            ? this.handle
+            : handle
+                as CreateDeploymentResponseVariant1RoutesItemVariant1Handle,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as SdkOptional<double>,
+      );
 
-  factory CreateDeploymentResponseVariant1RoutesItemVariant1.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1RoutesItemVariant1(
-    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
-    handle: (json['handle'] != null ? CreateDeploymentResponseVariant1RoutesItemVariant1Handle.fromJson(json['handle'] as String) : null)!,
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-    status: json['status'] != null ? SdkPresent(((json['status'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory CreateDeploymentResponseVariant1RoutesItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1RoutesItemVariant1(
+        dest: json['dest'] != null
+            ? SdkPresent((json['dest'] as String?)!)
+            : const SdkOmitted(),
+        handle: (json['handle'] != null
+            ? CreateDeploymentResponseVariant1RoutesItemVariant1Handle.fromJson(
+                json['handle'] as String)
+            : null)!,
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+        status: json['status'] != null
+            ? SdkPresent(((json['status'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (dest) {
-      SdkPresent<String>(value: final value) => {'dest': value,},
-      _ => const <String, dynamic>{},
-    },
-    'handle': handle.toJson(),
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (status) {
-      SdkPresent<double>(value: final value) => {'status': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (dest) {
+          SdkPresent<String>(value: final value) => {
+              'dest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'handle': handle.toJson(),
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (status) {
+          SdkPresent<double>(value: final value) => {
+              'status': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateDeploymentResponseVariant1RoutesItemVariant2 {
@@ -54,71 +93,121 @@ class CreateDeploymentResponseVariant1RoutesItemVariant2 {
   final CreateDeploymentResponseVariant1RoutesItemVariant2Middleware middleware;
   final String src;
 
-  const CreateDeploymentResponseVariant1RoutesItemVariant2({required this.continue_, required this.middleware, required this.src});
+  const CreateDeploymentResponseVariant1RoutesItemVariant2(
+      {required this.continue_, required this.middleware, required this.src});
 
-  CreateDeploymentResponseVariant1RoutesItemVariant2 Function({CreateDeploymentResponseVariant1RoutesItemVariant2Continue continue_, CreateDeploymentResponseVariant1RoutesItemVariant2Middleware middleware, String src}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1RoutesItemVariant2 Function(
+      {CreateDeploymentResponseVariant1RoutesItemVariant2Continue continue_,
+      CreateDeploymentResponseVariant1RoutesItemVariant2Middleware middleware,
+      String src}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1RoutesItemVariant2 _copyWith({Object? continue_ = sdkOmittedValue, Object? middleware = sdkOmittedValue, Object? src = sdkOmittedValue}) => CreateDeploymentResponseVariant1RoutesItemVariant2(
-    continue_: identical(continue_, sdkOmittedValue) ? this.continue_ : continue_ as CreateDeploymentResponseVariant1RoutesItemVariant2Continue,
-    middleware: identical(middleware, sdkOmittedValue) ? this.middleware : middleware as CreateDeploymentResponseVariant1RoutesItemVariant2Middleware,
-    src: identical(src, sdkOmittedValue) ? this.src : src as String,
-  );
+  CreateDeploymentResponseVariant1RoutesItemVariant2 _copyWith(
+          {Object? continue_ = sdkOmittedValue,
+          Object? middleware = sdkOmittedValue,
+          Object? src = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1RoutesItemVariant2(
+        continue_: identical(continue_, sdkOmittedValue)
+            ? this.continue_
+            : continue_
+                as CreateDeploymentResponseVariant1RoutesItemVariant2Continue,
+        middleware: identical(middleware, sdkOmittedValue)
+            ? this.middleware
+            : middleware
+                as CreateDeploymentResponseVariant1RoutesItemVariant2Middleware,
+        src: identical(src, sdkOmittedValue) ? this.src : src as String,
+      );
 
-  factory CreateDeploymentResponseVariant1RoutesItemVariant2.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1RoutesItemVariant2(
-    continue_: (json['continue'] != null ? CreateDeploymentResponseVariant1RoutesItemVariant2Continue.fromJson(json['continue'] as bool) : null)!,
-    middleware: (json['middleware'] != null ? CreateDeploymentResponseVariant1RoutesItemVariant2Middleware.fromJson((json['middleware'] as num).toInt()) : null)!,
-    src: (json['src'] as String?)!,
-  );
+  factory CreateDeploymentResponseVariant1RoutesItemVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1RoutesItemVariant2(
+        continue_: (json['continue'] != null
+            ? CreateDeploymentResponseVariant1RoutesItemVariant2Continue
+                .fromJson(json['continue'] as bool)
+            : null)!,
+        middleware: (json['middleware'] != null
+            ? CreateDeploymentResponseVariant1RoutesItemVariant2Middleware
+                .fromJson((json['middleware'] as num).toInt())
+            : null)!,
+        src: (json['src'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'continue': continue_.toJson(),
-    'middleware': middleware.toJson(),
-    'src': src,
-  };
+        'continue': continue_.toJson(),
+        'middleware': middleware.toJson(),
+        'src': src,
+      };
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory memory;
+  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+      memory;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests({required this.memory});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests(
+      {required this.memory});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests Function({CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory memory}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests Function(
+      {CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+          memory}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests _copyWith({Object? memory = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests(
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests
+      _copyWith({Object? memory = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests(
+            memory: identical(memory, sdkOmittedValue)
+                ? this.memory
+                : memory
+                    as CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests(
-    memory: (json['memory'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory.fromJson(json['memory'] as String) : null)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests(
+        memory: (json['memory'] != null
+            ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequestsMemory
+                .fromJson(json['memory'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'memory': memory.toJson(),
-  };
+        'memory': memory.toJson(),
+      };
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests requests;
+  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests
+      requests;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources({required this.requests});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources(
+      {required this.requests});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources Function({CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests requests}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources Function(
+      {CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests
+          requests}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources _copyWith({Object? requests = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources(
-    requests: identical(requests, sdkOmittedValue) ? this.requests : requests as CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources
+      _copyWith({Object? requests = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources(
+            requests: identical(requests, sdkOmittedValue)
+                ? this.requests
+                : requests
+                    as CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources(
-    requests: (json['requests'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests.fromJson(json['requests'] as Map<String, dynamic>) : null)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources(
+        requests: (json['requests'] != null
+            ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResourcesRequests
+                .fromJson(json['requests'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'requests': requests.toJson(),
-  };
+        'requests': requests.toJson(),
+      };
 }
 
 /// Set when this build produces the named daemon.
@@ -127,134 +216,262 @@ class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon {
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> command;
   final String entrypoint;
+
   /// Instance counts by region.
   final SdkOptional<Map<String, double>> instances;
+
   /// Instance counts by region.
   final SdkOptional<Map<String, double>> replicas;
-  final SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources> resources;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources>
+      resources;
   final String root;
   final SdkOptional<double> terminationGracePeriodSeconds;
   final String name;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon({this.command = const SdkOmitted(), required this.entrypoint, this.instances = const SdkOmitted(), this.replicas = const SdkOmitted(), this.resources = const SdkOmitted(), required this.root, this.terminationGracePeriodSeconds = const SdkOmitted(), required this.name});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon(
+      {this.command = const SdkOmitted(),
+      required this.entrypoint,
+      this.instances = const SdkOmitted(),
+      this.replicas = const SdkOmitted(),
+      this.resources = const SdkOmitted(),
+      required this.root,
+      this.terminationGracePeriodSeconds = const SdkOmitted(),
+      required this.name});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon Function({SdkOptional<List<String>> command, String entrypoint, SdkOptional<Map<String, double>> instances, SdkOptional<Map<String, double>> replicas, SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources> resources, String root, SdkOptional<double> terminationGracePeriodSeconds, String name}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon Function(
+      {SdkOptional<List<String>> command,
+      String entrypoint,
+      SdkOptional<Map<String, double>> instances,
+      SdkOptional<Map<String, double>> replicas,
+      SdkOptional<
+              CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources>
+          resources,
+      String root,
+      SdkOptional<double> terminationGracePeriodSeconds,
+      String name}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon _copyWith({Object? command = sdkOmittedValue, Object? entrypoint = sdkOmittedValue, Object? instances = sdkOmittedValue, Object? replicas = sdkOmittedValue, Object? resources = sdkOmittedValue, Object? root = sdkOmittedValue, Object? terminationGracePeriodSeconds = sdkOmittedValue, Object? name = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon(
-    command: identical(command, sdkOmittedValue) ? this.command : command as SdkOptional<List<String>>,
-    entrypoint: identical(entrypoint, sdkOmittedValue) ? this.entrypoint : entrypoint as String,
-    instances: identical(instances, sdkOmittedValue) ? this.instances : instances as SdkOptional<Map<String, double>>,
-    replicas: identical(replicas, sdkOmittedValue) ? this.replicas : replicas as SdkOptional<Map<String, double>>,
-    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as SdkOptional<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources>,
-    root: identical(root, sdkOmittedValue) ? this.root : root as String,
-    terminationGracePeriodSeconds: identical(terminationGracePeriodSeconds, sdkOmittedValue) ? this.terminationGracePeriodSeconds : terminationGracePeriodSeconds as SdkOptional<double>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon
+      _copyWith(
+              {Object? command = sdkOmittedValue,
+              Object? entrypoint = sdkOmittedValue,
+              Object? instances = sdkOmittedValue,
+              Object? replicas = sdkOmittedValue,
+              Object? resources = sdkOmittedValue,
+              Object? root = sdkOmittedValue,
+              Object? terminationGracePeriodSeconds = sdkOmittedValue,
+              Object? name = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon(
+            command: identical(command, sdkOmittedValue)
+                ? this.command
+                : command as SdkOptional<List<String>>,
+            entrypoint: identical(entrypoint, sdkOmittedValue)
+                ? this.entrypoint
+                : entrypoint as String,
+            instances: identical(instances, sdkOmittedValue)
+                ? this.instances
+                : instances as SdkOptional<Map<String, double>>,
+            replicas: identical(replicas, sdkOmittedValue)
+                ? this.replicas
+                : replicas as SdkOptional<Map<String, double>>,
+            resources: identical(resources, sdkOmittedValue)
+                ? this.resources
+                : resources as SdkOptional<
+                    CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources>,
+            root: identical(root, sdkOmittedValue) ? this.root : root as String,
+            terminationGracePeriodSeconds:
+                identical(terminationGracePeriodSeconds, sdkOmittedValue)
+                    ? this.terminationGracePeriodSeconds
+                    : terminationGracePeriodSeconds as SdkOptional<double>,
+            name: identical(name, sdkOmittedValue) ? this.name : name as String,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon(
-    command: json['command'] != null ? SdkPresent(((json['command'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    entrypoint: (json['entrypoint'] as String?)!,
-    instances: json['instances'] != null ? SdkPresent((json['instances'] == null ? null : Map<String, dynamic>.from(json['instances'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!) : const SdkOmitted(),
-    replicas: json['replicas'] != null ? SdkPresent((json['replicas'] == null ? null : Map<String, dynamic>.from(json['replicas'] as Map).map((key, value) => MapEntry(key, (value as num).toDouble())))!) : const SdkOmitted(),
-    resources: json['resources'] != null ? SdkPresent((json['resources'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources.fromJson(json['resources'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    root: (json['root'] as String?)!,
-    terminationGracePeriodSeconds: json['terminationGracePeriodSeconds'] != null ? SdkPresent(((json['terminationGracePeriodSeconds'] as num?)?.toDouble())!) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemon(
+        command: json['command'] != null
+            ? SdkPresent(
+                ((json['command'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        entrypoint: (json['entrypoint'] as String?)!,
+        instances: json['instances'] != null
+            ? SdkPresent((json['instances'] == null
+                ? null
+                : Map<String, dynamic>.from(json['instances'] as Map).map(
+                    (key, value) => MapEntry(key, (value as num).toDouble())))!)
+            : const SdkOmitted(),
+        replicas: json['replicas'] != null
+            ? SdkPresent((json['replicas'] == null
+                ? null
+                : Map<String, dynamic>.from(json['replicas'] as Map).map(
+                    (key, value) => MapEntry(key, (value as num).toDouble())))!)
+            : const SdkOmitted(),
+        resources: json['resources'] != null
+            ? SdkPresent((json['resources'] != null
+                ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources
+                    .fromJson(json['resources'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        root: (json['root'] as String?)!,
+        terminationGracePeriodSeconds: json['terminationGracePeriodSeconds'] !=
+                null
+            ? SdkPresent(
+                ((json['terminationGracePeriodSeconds'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (command) {
-      SdkPresent<List<String>>(value: final value) => {'command': value,},
-      _ => const <String, dynamic>{},
-    },
-    'entrypoint': entrypoint,
-    ...switch (instances) {
-      SdkPresent<Map<String, double>>(value: final value) => {'instances': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (replicas) {
-      SdkPresent<Map<String, double>>(value: final value) => {'replicas': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (resources) {
-      SdkPresent<CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources>(value: final value) => {'resources': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'root': root,
-    ...switch (terminationGracePeriodSeconds) {
-      SdkPresent<double>(value: final value) => {'terminationGracePeriodSeconds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-  };
+        ...switch (command) {
+          SdkPresent<List<String>>(value: final value) => {
+              'command': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'entrypoint': entrypoint,
+        ...switch (instances) {
+          SdkPresent<Map<String, double>>(value: final value) => {
+              'instances': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (replicas) {
+          SdkPresent<Map<String, double>>(value: final value) => {
+              'replicas': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (resources) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigDaemonResources>(
+            value: final value
+          ) =>
+            {
+              'resources': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'root': root,
+        ...switch (terminationGracePeriodSeconds) {
+          SdkPresent<double>(value: final value) => {
+              'terminationGracePeriodSeconds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+      };
 }
 
 sealed class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles();
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles.fromJson(Object? json) {
-    if (json is String) { return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesString(json); }
-    if (json is List) { return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesListString(json.map((e) => e as String).toList().cast<String>()); }
-    throw FormatException("No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles");
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles.fromJson(
+      Object? json) {
+    if (json is String) {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesString(
+          json);
+    }
+    if (json is List) {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesListString(
+          json.map((e) => e as String).toList().cast<String>());
+    }
+    throw FormatException(
+        "No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesString extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesString
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles {
   final String value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesString(this.value);
-  @override Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesListString extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesListString
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFiles {
   final List<String> value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesListString(this.value);
-  @override Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigExcludeFilesListString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode mode;
+  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+      mode;
 
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity({required this.mode});
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity(
+      {required this.mode});
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity Function({CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode mode}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity Function(
+      {CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+          mode}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity _copyWith({Object? mode = sdkOmittedValue}) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity(
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode,
-  );
+  CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity
+      _copyWith({Object? mode = sdkOmittedValue}) =>
+          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity(
+            mode: identical(mode, sdkOmittedValue)
+                ? this.mode
+                : mode
+                    as CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode,
+          );
 
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity(
-    mode: (json['mode'] != null ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode.fromJson(json['mode'] as String) : null)!,
-  );
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinity(
+        mode: (json['mode'] != null
+            ? CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueAffinityMode
+                .fromJson(json['mode'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'mode': mode.toJson(),
-  };
+        'mode': mode.toJson(),
+      };
 }
 
 sealed class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration();
-  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration.fromJson(Object? json) {
-    if (json is num) { return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(json.toDouble()); }
-    try { return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration");
+  factory CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration.fromJson(
+      Object? json) {
+    if (json is num) {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(
+          json.toDouble());
+    }
+    try {
+      return CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(
+          CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
+              .fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration");
   }
   Object? toJson();
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
+final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
   final double value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(this.value);
-  @override Object? toJson() => value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1 extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
-  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1 value;
-  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
+    extends CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDuration {
+  final CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1
+      value;
+  const CreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationCreateDeploymentResponseVariant1ServicesItemVariant0BuilderConfigFunctionsValueMaxDurationVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

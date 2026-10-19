@@ -20,90 +20,204 @@ class ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVaria
   final SdkOptional<String> re;
   final SdkOptional<String> suf;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1({this.eq = const SdkOmitted(), this.gt = const SdkOmitted(), this.gte = const SdkOmitted(), this.inc = const SdkOmitted(), this.list = const SdkOmitted(), this.lt = const SdkOmitted(), this.lte = const SdkOmitted(), this.neq = const SdkOmitted(), this.ninc = const SdkOmitted(), this.pre = const SdkOmitted(), this.re = const SdkOmitted(), this.suf = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1(
+      {this.eq = const SdkOmitted(),
+      this.gt = const SdkOmitted(),
+      this.gte = const SdkOmitted(),
+      this.inc = const SdkOmitted(),
+      this.list = const SdkOmitted(),
+      this.lt = const SdkOmitted(),
+      this.lte = const SdkOmitted(),
+      this.neq = const SdkOmitted(),
+      this.ninc = const SdkOmitted(),
+      this.pre = const SdkOmitted(),
+      this.re = const SdkOmitted(),
+      this.suf = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1 Function({SdkOptional<String> eq, SdkOptional<double> gt, SdkOptional<double> gte, SdkOptional<List<String>> inc, SdkOptional<String> list, SdkOptional<double> lt, SdkOptional<double> lte, SdkOptional<String> neq, SdkOptional<List<String>> ninc, SdkOptional<String> pre, SdkOptional<String> re, SdkOptional<String> suf}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1 Function(
+      {SdkOptional<String> eq,
+      SdkOptional<double> gt,
+      SdkOptional<double> gte,
+      SdkOptional<List<String>> inc,
+      SdkOptional<String> list,
+      SdkOptional<double> lt,
+      SdkOptional<double> lte,
+      SdkOptional<String> neq,
+      SdkOptional<List<String>> ninc,
+      SdkOptional<String> pre,
+      SdkOptional<String> re,
+      SdkOptional<String> suf}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1 _copyWith({Object? eq = sdkOmittedValue, Object? gt = sdkOmittedValue, Object? gte = sdkOmittedValue, Object? inc = sdkOmittedValue, Object? list = sdkOmittedValue, Object? lt = sdkOmittedValue, Object? lte = sdkOmittedValue, Object? neq = sdkOmittedValue, Object? ninc = sdkOmittedValue, Object? pre = sdkOmittedValue, Object? re = sdkOmittedValue, Object? suf = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as SdkOptional<String>,
-    gt: identical(gt, sdkOmittedValue) ? this.gt : gt as SdkOptional<double>,
-    gte: identical(gte, sdkOmittedValue) ? this.gte : gte as SdkOptional<double>,
-    inc: identical(inc, sdkOmittedValue) ? this.inc : inc as SdkOptional<List<String>>,
-    list: identical(list, sdkOmittedValue) ? this.list : list as SdkOptional<String>,
-    lt: identical(lt, sdkOmittedValue) ? this.lt : lt as SdkOptional<double>,
-    lte: identical(lte, sdkOmittedValue) ? this.lte : lte as SdkOptional<double>,
-    neq: identical(neq, sdkOmittedValue) ? this.neq : neq as SdkOptional<String>,
-    ninc: identical(ninc, sdkOmittedValue) ? this.ninc : ninc as SdkOptional<List<String>>,
-    pre: identical(pre, sdkOmittedValue) ? this.pre : pre as SdkOptional<String>,
-    re: identical(re, sdkOmittedValue) ? this.re : re as SdkOptional<String>,
-    suf: identical(suf, sdkOmittedValue) ? this.suf : suf as SdkOptional<String>,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1
+      _copyWith(
+              {Object? eq = sdkOmittedValue,
+              Object? gt = sdkOmittedValue,
+              Object? gte = sdkOmittedValue,
+              Object? inc = sdkOmittedValue,
+              Object? list = sdkOmittedValue,
+              Object? lt = sdkOmittedValue,
+              Object? lte = sdkOmittedValue,
+              Object? neq = sdkOmittedValue,
+              Object? ninc = sdkOmittedValue,
+              Object? pre = sdkOmittedValue,
+              Object? re = sdkOmittedValue,
+              Object? suf = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1(
+            eq: identical(eq, sdkOmittedValue)
+                ? this.eq
+                : eq as SdkOptional<String>,
+            gt: identical(gt, sdkOmittedValue)
+                ? this.gt
+                : gt as SdkOptional<double>,
+            gte: identical(gte, sdkOmittedValue)
+                ? this.gte
+                : gte as SdkOptional<double>,
+            inc: identical(inc, sdkOmittedValue)
+                ? this.inc
+                : inc as SdkOptional<List<String>>,
+            list: identical(list, sdkOmittedValue)
+                ? this.list
+                : list as SdkOptional<String>,
+            lt: identical(lt, sdkOmittedValue)
+                ? this.lt
+                : lt as SdkOptional<double>,
+            lte: identical(lte, sdkOmittedValue)
+                ? this.lte
+                : lte as SdkOptional<double>,
+            neq: identical(neq, sdkOmittedValue)
+                ? this.neq
+                : neq as SdkOptional<String>,
+            ninc: identical(ninc, sdkOmittedValue)
+                ? this.ninc
+                : ninc as SdkOptional<List<String>>,
+            pre: identical(pre, sdkOmittedValue)
+                ? this.pre
+                : pre as SdkOptional<String>,
+            re: identical(re, sdkOmittedValue)
+                ? this.re
+                : re as SdkOptional<String>,
+            suf: identical(suf, sdkOmittedValue)
+                ? this.suf
+                : suf as SdkOptional<String>,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1(
-    eq: json['eq'] != null ? SdkPresent((json['eq'] as String?)!) : const SdkOmitted(),
-    gt: json['gt'] != null ? SdkPresent(((json['gt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    gte: json['gte'] != null ? SdkPresent(((json['gte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    inc: json['inc'] != null ? SdkPresent(((json['inc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    list: json['list'] != null ? SdkPresent((json['list'] as String?)!) : const SdkOmitted(),
-    lt: json['lt'] != null ? SdkPresent(((json['lt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    lte: json['lte'] != null ? SdkPresent(((json['lte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    neq: json['neq'] != null ? SdkPresent((json['neq'] as String?)!) : const SdkOmitted(),
-    ninc: json['ninc'] != null ? SdkPresent(((json['ninc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    pre: json['pre'] != null ? SdkPresent((json['pre'] as String?)!) : const SdkOmitted(),
-    re: json['re'] != null ? SdkPresent((json['re'] as String?)!) : const SdkOmitted(),
-    suf: json['suf'] != null ? SdkPresent((json['suf'] as String?)!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemSrcVariant1(
+        eq: json['eq'] != null
+            ? SdkPresent((json['eq'] as String?)!)
+            : const SdkOmitted(),
+        gt: json['gt'] != null
+            ? SdkPresent(((json['gt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        gte: json['gte'] != null
+            ? SdkPresent(((json['gte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        inc: json['inc'] != null
+            ? SdkPresent(
+                ((json['inc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        list: json['list'] != null
+            ? SdkPresent((json['list'] as String?)!)
+            : const SdkOmitted(),
+        lt: json['lt'] != null
+            ? SdkPresent(((json['lt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        lte: json['lte'] != null
+            ? SdkPresent(((json['lte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        neq: json['neq'] != null
+            ? SdkPresent((json['neq'] as String?)!)
+            : const SdkOmitted(),
+        ninc: json['ninc'] != null
+            ? SdkPresent(
+                ((json['ninc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        pre: json['pre'] != null
+            ? SdkPresent((json['pre'] as String?)!)
+            : const SdkOmitted(),
+        re: json['re'] != null
+            ? SdkPresent((json['re'] as String?)!)
+            : const SdkOmitted(),
+        suf: json['suf'] != null
+            ? SdkPresent((json['suf'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (eq) {
-      SdkPresent<String>(value: final value) => {'eq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gt) {
-      SdkPresent<double>(value: final value) => {'gt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gte) {
-      SdkPresent<double>(value: final value) => {'gte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (inc) {
-      SdkPresent<List<String>>(value: final value) => {'inc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (list) {
-      SdkPresent<String>(value: final value) => {'list': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lt) {
-      SdkPresent<double>(value: final value) => {'lt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lte) {
-      SdkPresent<double>(value: final value) => {'lte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (neq) {
-      SdkPresent<String>(value: final value) => {'neq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ninc) {
-      SdkPresent<List<String>>(value: final value) => {'ninc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pre) {
-      SdkPresent<String>(value: final value) => {'pre': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (re) {
-      SdkPresent<String>(value: final value) => {'re': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (suf) {
-      SdkPresent<String>(value: final value) => {'suf': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (eq) {
+          SdkPresent<String>(value: final value) => {
+              'eq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gt) {
+          SdkPresent<double>(value: final value) => {
+              'gt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gte) {
+          SdkPresent<double>(value: final value) => {
+              'gte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (inc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'inc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (list) {
+          SdkPresent<String>(value: final value) => {
+              'list': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lt) {
+          SdkPresent<double>(value: final value) => {
+              'lt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lte) {
+          SdkPresent<double>(value: final value) => {
+              'lte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (neq) {
+          SdkPresent<String>(value: final value) => {
+              'neq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ninc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'ninc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pre) {
+          SdkPresent<String>(value: final value) => {
+              'pre': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (re) {
+          SdkPresent<String>(value: final value) => {
+              're': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (suf) {
+          SdkPresent<String>(value: final value) => {
+              'suf': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget {
@@ -111,170 +225,447 @@ class ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransfor
   static const String constructionSurface = 'named';
   final String key;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget({required this.key});
+  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget(
+      {required this.key});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget Function({String key}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget
+      Function({String key}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget _copyWith({Object? key = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget
+      _copyWith({Object? key = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget(
+            key: identical(key, sdkOmittedValue) ? this.key : key as String,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget(
-    key: (json['key'] as String?)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget(
+        key: (json['key'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-  };
+        'key': key,
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String args;
-  final ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp op;
-  final ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget target;
-  final ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType type_;
+  final ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp
+      op;
+  final ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget
+      target;
+  final ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType
+      type_;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem({required this.args, required this.op, required this.target, required this.type_});
+  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem(
+      {required this.args,
+      required this.op,
+      required this.target,
+      required this.type_});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem Function({String args, ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp op, ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget target, ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType type_}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem Function(
+      {String args,
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp
+          op,
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget
+          target,
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType
+          type_}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem _copyWith({Object? args = sdkOmittedValue, Object? op = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem(
-    args: identical(args, sdkOmittedValue) ? this.args : args as String,
-    op: identical(op, sdkOmittedValue) ? this.op : op as ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp,
-    target: identical(target, sdkOmittedValue) ? this.target : target as ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem
+      _copyWith(
+              {Object? args = sdkOmittedValue,
+              Object? op = sdkOmittedValue,
+              Object? target = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem(
+            args: identical(args, sdkOmittedValue) ? this.args : args as String,
+            op: identical(op, sdkOmittedValue)
+                ? this.op
+                : op
+                    as ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp,
+            target: identical(target, sdkOmittedValue)
+                ? this.target
+                : target
+                    as ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType,
+          );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem(
-    args: (json['args'] as String?)!,
-    op: (json['op'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp.fromJson(json['op'] as String) : null)!,
-    target: (json['target'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget.fromJson(json['target'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem(
+        args: (json['args'] as String?)!,
+        op: (json['op'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemOp
+                .fromJson(json['op'] as String)
+            : null)!,
+        target: (json['target'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemTarget
+                .fromJson(json['target'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItemType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'args': args,
-    'op': op.toJson(),
-    'target': target.toJson(),
-    'type': type_.toJson(),
-  };
+        'args': args,
+        'op': op.toJson(),
+        'target': target.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> dest;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle> handle;
-  final SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>> has;
-  final SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>> missing;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate> mitigate;
-  final SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>> responseHas;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle>
+      handle;
+  final SdkOptional<
+          List<
+              ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>>
+      has;
+  final SdkOptional<
+          List<
+              ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>>
+      missing;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate>
+      mitigate;
+  final SdkOptional<
+          List<
+              ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>>
+      responseHas;
   final SdkOptional<dynamic> src;
   final SdkOptional<double> status;
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement> tierRequirement;
-  final SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>> transforms;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement>
+      tierRequirement;
+  final SdkOptional<
+          List<
+              ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>>
+      transforms;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem({this.dest = const SdkOmitted(), this.handle = const SdkOmitted(), this.has = const SdkOmitted(), this.missing = const SdkOmitted(), this.mitigate = const SdkOmitted(), this.responseHas = const SdkOmitted(), this.src = const SdkOmitted(), this.status = const SdkOmitted(), this.tierRequirement = const SdkOmitted(), this.transforms = const SdkOmitted()});
+  const ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem(
+      {this.dest = const SdkOmitted(),
+      this.handle = const SdkOmitted(),
+      this.has = const SdkOmitted(),
+      this.missing = const SdkOmitted(),
+      this.mitigate = const SdkOmitted(),
+      this.responseHas = const SdkOmitted(),
+      this.src = const SdkOmitted(),
+      this.status = const SdkOmitted(),
+      this.tierRequirement = const SdkOmitted(),
+      this.transforms = const SdkOmitted()});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem Function({SdkOptional<String> dest, SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle> handle, SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>> has, SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>> missing, SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate> mitigate, SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>> responseHas, SdkOptional<dynamic> src, SdkOptional<double> status, SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement> tierRequirement, SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>> transforms}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem Function(
+      {SdkOptional<String> dest,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle>
+          handle,
+      SdkOptional<
+              List<
+                  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>>
+          has,
+      SdkOptional<
+              List<
+                  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>>
+          missing,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate>
+          mitigate,
+      SdkOptional<
+              List<
+                  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>>
+          responseHas,
+      SdkOptional<dynamic> src,
+      SdkOptional<double> status,
+      SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement>
+          tierRequirement,
+      SdkOptional<
+              List<
+                  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>>
+          transforms}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem _copyWith({Object? dest = sdkOmittedValue, Object? handle = sdkOmittedValue, Object? has = sdkOmittedValue, Object? missing = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? responseHas = sdkOmittedValue, Object? src = sdkOmittedValue, Object? status = sdkOmittedValue, Object? tierRequirement = sdkOmittedValue, Object? transforms = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem(
-    dest: identical(dest, sdkOmittedValue) ? this.dest : dest as SdkOptional<String>,
-    handle: identical(handle, sdkOmittedValue) ? this.handle : handle as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle>,
-    has: identical(has, sdkOmittedValue) ? this.has : has as SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>>,
-    missing: identical(missing, sdkOmittedValue) ? this.missing : missing as SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>>,
-    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate>,
-    responseHas: identical(responseHas, sdkOmittedValue) ? this.responseHas : responseHas as SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<dynamic>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as SdkOptional<double>,
-    tierRequirement: identical(tierRequirement, sdkOmittedValue) ? this.tierRequirement : tierRequirement as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement>,
-    transforms: identical(transforms, sdkOmittedValue) ? this.transforms : transforms as SdkOptional<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>>,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem _copyWith(
+          {Object? dest = sdkOmittedValue,
+          Object? handle = sdkOmittedValue,
+          Object? has = sdkOmittedValue,
+          Object? missing = sdkOmittedValue,
+          Object? mitigate = sdkOmittedValue,
+          Object? responseHas = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? tierRequirement = sdkOmittedValue,
+          Object? transforms = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem(
+        dest: identical(dest, sdkOmittedValue)
+            ? this.dest
+            : dest as SdkOptional<String>,
+        handle: identical(handle, sdkOmittedValue)
+            ? this.handle
+            : handle as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle>,
+        has: identical(has, sdkOmittedValue)
+            ? this.has
+            : has as SdkOptional<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>>,
+        missing: identical(missing, sdkOmittedValue)
+            ? this.missing
+            : missing as SdkOptional<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>>,
+        mitigate: identical(mitigate, sdkOmittedValue)
+            ? this.mitigate
+            : mitigate as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate>,
+        responseHas: identical(responseHas, sdkOmittedValue)
+            ? this.responseHas
+            : responseHas as SdkOptional<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>>,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<dynamic>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as SdkOptional<double>,
+        tierRequirement: identical(tierRequirement, sdkOmittedValue)
+            ? this.tierRequirement
+            : tierRequirement as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement>,
+        transforms: identical(transforms, sdkOmittedValue)
+            ? this.transforms
+            : transforms as SdkOptional<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>>,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem(
-    dest: json['dest'] != null ? SdkPresent((json['dest'] as String?)!) : const SdkOmitted(),
-    handle: json['handle'] != null ? SdkPresent((json['handle'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle.fromJson(json['handle'] as String) : null)!) : const SdkOmitted(),
-    has: json['has'] != null ? SdkPresent(((json['has'] as List?)?.map((e) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    missing: json['missing'] != null ? SdkPresent(((json['missing'] as List?)?.map((e) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    mitigate: json['mitigate'] != null ? SdkPresent((json['mitigate'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    responseHas: json['response_has'] != null ? SdkPresent(((json['response_has'] as List?)?.map((e) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    src: json['src'] != null ? SdkPresent((json['src'])!) : const SdkOmitted(),
-    status: json['status'] != null ? SdkPresent(((json['status'] as num?)?.toDouble())!) : const SdkOmitted(),
-    tierRequirement: json['tierRequirement'] != null ? SdkPresent((json['tierRequirement'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement.fromJson(json['tierRequirement'] as String) : null)!) : const SdkOmitted(),
-    transforms: json['transforms'] != null ? SdkPresent(((json['transforms'] as List?)?.map((e) => ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItem(
+        dest: json['dest'] != null
+            ? SdkPresent((json['dest'] as String?)!)
+            : const SdkOmitted(),
+        handle: json['handle'] != null
+            ? SdkPresent((json['handle'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle
+                    .fromJson(json['handle'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        has: json['has'] != null
+            ? SdkPresent(((json['has'] as List?)
+                ?.map((e) =>
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        missing: json['missing'] != null
+            ? SdkPresent(((json['missing'] as List?)
+                ?.map((e) =>
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        mitigate: json['mitigate'] != null
+            ? SdkPresent((json['mitigate'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate
+                    .fromJson(json['mitigate'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        responseHas: json['response_has'] != null
+            ? SdkPresent(((json['response_has'] as List?)
+                ?.map((e) =>
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        src: json['src'] != null
+            ? SdkPresent((json['src'])!)
+            : const SdkOmitted(),
+        status: json['status'] != null
+            ? SdkPresent(((json['status'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        tierRequirement: json['tierRequirement'] != null
+            ? SdkPresent((json['tierRequirement'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement
+                    .fromJson(json['tierRequirement'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        transforms: json['transforms'] != null
+            ? SdkPresent(((json['transforms'] as List?)
+                ?.map((e) =>
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (dest) {
-      SdkPresent<String>(value: final value) => {'dest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (handle) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle>(value: final value) => {'handle': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (has) {
-      SdkPresent<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>>(value: final value) => {'has': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (missing) {
-      SdkPresent<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>>(value: final value) => {'missing': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (mitigate) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate>(value: final value) => {'mitigate': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (responseHas) {
-      SdkPresent<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>>(value: final value) => {'response_has': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (src) {
-      SdkPresent<dynamic>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (status) {
-      SdkPresent<double>(value: final value) => {'status': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (tierRequirement) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement>(value: final value) => {'tierRequirement': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (transforms) {
-      SdkPresent<List<ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>>(value: final value) => {'transforms': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (dest) {
+          SdkPresent<String>(value: final value) => {
+              'dest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (handle) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHandle>(
+            value: final value
+          ) =>
+            {
+              'handle': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (has) {
+          SdkPresent<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemHasItem>>(
+            value: final value
+          ) =>
+            {
+              'has': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (missing) {
+          SdkPresent<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMissingItem>>(
+            value: final value
+          ) =>
+            {
+              'missing': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (mitigate) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemMitigate>(
+            value: final value
+          ) =>
+            {
+              'mitigate': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (responseHas) {
+          SdkPresent<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemResponseHasItem>>(
+            value: final value
+          ) =>
+            {
+              'response_has': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (src) {
+          SdkPresent<dynamic>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (status) {
+          SdkPresent<double>(value: final value) => {
+              'status': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (tierRequirement) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTierRequirement>(
+            value: final value
+          ) =>
+            {
+              'tierRequirement': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (transforms) {
+          SdkPresent<
+                List<
+                    ListProjectsResponseVariant1ProjectsItemSecurityFirewallRoutesItemTransformsItem>>(
+            value: final value
+          ) =>
+            {
+              'transforms': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction> action;
-  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive active;
+  final SdkOptional<
+          ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction>
+      action;
+  final ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive
+      active;
 
-  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots({this.action = const SdkOmitted(), required this.active});
+  const ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots(
+      {this.action = const SdkOmitted(), required this.active});
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots Function({SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction> action, ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive active}) get copyWith => _copyWith;
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots Function(
+      {SdkOptional<
+              ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction>
+          action,
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive
+          active}) get copyWith => _copyWith;
 
-  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive,
-  );
+  ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue}) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<
+                ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction>,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active
+                as ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive,
+      );
 
-  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots.fromJson(Map<String, dynamic> json) => ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive.fromJson(json['active'] as bool) : null)!,
-  );
+  factory ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBots(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-  };
+        ...switch (action) {
+          SdkPresent<
+                ListProjectsResponseVariant1ProjectsItemSecurityManagedRulesAiBotsAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+      };
 }

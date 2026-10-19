@@ -8,27 +8,46 @@ class ListProjectsDomainsResponseVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final List<ListProjectsDomainsResponseVariant1DomainsItem> domains;
+
   /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
   final Pagination pagination;
 
-  const ListProjectsDomainsResponseVariant1({required this.domains, required this.pagination});
+  const ListProjectsDomainsResponseVariant1(
+      {required this.domains, required this.pagination});
 
-  ListProjectsDomainsResponseVariant1 Function({List<ListProjectsDomainsResponseVariant1DomainsItem> domains, Pagination pagination}) get copyWith => _copyWith;
+  ListProjectsDomainsResponseVariant1 Function(
+      {List<ListProjectsDomainsResponseVariant1DomainsItem> domains,
+      Pagination pagination}) get copyWith => _copyWith;
 
-  ListProjectsDomainsResponseVariant1 _copyWith({Object? domains = sdkOmittedValue, Object? pagination = sdkOmittedValue}) => ListProjectsDomainsResponseVariant1(
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as List<ListProjectsDomainsResponseVariant1DomainsItem>,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Pagination,
-  );
+  ListProjectsDomainsResponseVariant1 _copyWith(
+          {Object? domains = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue}) =>
+      ListProjectsDomainsResponseVariant1(
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as List<ListProjectsDomainsResponseVariant1DomainsItem>,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as Pagination,
+      );
 
-  factory ListProjectsDomainsResponseVariant1.fromJson(Map<String, dynamic> json) => ListProjectsDomainsResponseVariant1(
-    domains: ((json['domains'] as List?)?.map((e) => ListProjectsDomainsResponseVariant1DomainsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    pagination: (json['pagination'] != null ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-  );
+  factory ListProjectsDomainsResponseVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsDomainsResponseVariant1(
+        domains: ((json['domains'] as List?)
+            ?.map((e) =>
+                ListProjectsDomainsResponseVariant1DomainsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+        pagination: (json['pagination'] != null
+            ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'domains': domains.map((item) => item.toJson()).toList(),
-    'pagination': pagination.toJson(),
-  };
+        'domains': domains.map((item) => item.toJson()).toList(),
+        'pagination': pagination.toJson(),
+      };
 }
 
 sealed class ListProjectsDomainsResponse {
@@ -37,57 +56,97 @@ sealed class ListProjectsDomainsResponse {
   const ListProjectsDomainsResponse();
   factory ListProjectsDomainsResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = ListProjectsDomainsResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(value); } } catch (_) {}
-      try { final value = ListProjectsDomainsResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = ListProjectsDomainsResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = ListProjectsDomainsResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(ListProjectsDomainsResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(ListProjectsDomainsResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
+          ListProjectsDomainsResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
+          ListProjectsDomainsResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for ListProjectsDomainsResponse");
   }
   Object? toJson();
 }
 
-final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant0 extends ListProjectsDomainsResponse {
+final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant0
+    extends ListProjectsDomainsResponse {
   final ListProjectsDomainsResponseVariant0 value;
-  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant1 extends ListProjectsDomainsResponse {
+final class ListProjectsDomainsResponseListProjectsDomainsResponseVariant1
+    extends ListProjectsDomainsResponse {
   final ListProjectsDomainsResponseVariant1 value;
-  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsDomainsResponseListProjectsDomainsResponseVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class ListProjectsResponseItemCreatorVariant0ViaVariant0App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
+
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const ListProjectsResponseItemCreatorVariant0ViaVariant0App({this.clientId = const SdkOmitted(), required this.id});
+  const ListProjectsResponseItemCreatorVariant0ViaVariant0App(
+      {this.clientId = const SdkOmitted(), required this.id});
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant0App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  ListProjectsResponseItemCreatorVariant0ViaVariant0App Function(
+      {SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant0App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => ListProjectsResponseItemCreatorVariant0ViaVariant0App(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  ListProjectsResponseItemCreatorVariant0ViaVariant0App _copyWith(
+          {Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant0App(
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory ListProjectsResponseItemCreatorVariant0ViaVariant0App.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemCreatorVariant0ViaVariant0App(
-    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  );
+  factory ListProjectsResponseItemCreatorVariant0ViaVariant0App.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant0App(
+        clientId: json['clientId'] != null
+            ? SdkPresent((json['clientId'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'clientId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'clientId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
@@ -97,24 +156,42 @@ class ListProjectsResponseItemCreatorVariant0ViaVariant0 {
   final ListProjectsResponseItemCreatorVariant0ViaVariant0App app;
   final ListProjectsResponseItemCreatorVariant0ViaVariant0Type type_;
 
-  const ListProjectsResponseItemCreatorVariant0ViaVariant0({required this.app, required this.type_});
+  const ListProjectsResponseItemCreatorVariant0ViaVariant0(
+      {required this.app, required this.type_});
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant0 Function({ListProjectsResponseItemCreatorVariant0ViaVariant0App app, ListProjectsResponseItemCreatorVariant0ViaVariant0Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemCreatorVariant0ViaVariant0 Function(
+          {ListProjectsResponseItemCreatorVariant0ViaVariant0App app,
+          ListProjectsResponseItemCreatorVariant0ViaVariant0Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant0 _copyWith({Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemCreatorVariant0ViaVariant0(
-    app: identical(app, sdkOmittedValue) ? this.app : app as ListProjectsResponseItemCreatorVariant0ViaVariant0App,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemCreatorVariant0ViaVariant0Type,
-  );
+  ListProjectsResponseItemCreatorVariant0ViaVariant0 _copyWith(
+          {Object? app = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant0(
+        app: identical(app, sdkOmittedValue)
+            ? this.app
+            : app as ListProjectsResponseItemCreatorVariant0ViaVariant0App,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemCreatorVariant0ViaVariant0Type,
+      );
 
-  factory ListProjectsResponseItemCreatorVariant0ViaVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemCreatorVariant0ViaVariant0(
-    app: (json['app'] != null ? ListProjectsResponseItemCreatorVariant0ViaVariant0App.fromJson(json['app'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemCreatorVariant0ViaVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemCreatorVariant0ViaVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant0(
+        app: (json['app'] != null
+            ? ListProjectsResponseItemCreatorVariant0ViaVariant0App.fromJson(
+                json['app'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemCreatorVariant0ViaVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'app': app.toJson(),
-    'type': type_.toJson(),
-  };
+        'app': app.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class ListProjectsResponseItemCreatorVariant0ViaVariant1Integration {
@@ -123,51 +200,84 @@ class ListProjectsResponseItemCreatorVariant0ViaVariant1Integration {
   final String configurationId;
   final String integrationId;
 
-  const ListProjectsResponseItemCreatorVariant0ViaVariant1Integration({required this.configurationId, required this.integrationId});
+  const ListProjectsResponseItemCreatorVariant0ViaVariant1Integration(
+      {required this.configurationId, required this.integrationId});
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant1Integration Function({String configurationId, String integrationId}) get copyWith => _copyWith;
+  ListProjectsResponseItemCreatorVariant0ViaVariant1Integration Function(
+      {String configurationId, String integrationId}) get copyWith => _copyWith;
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant1Integration _copyWith({Object? configurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue}) => ListProjectsResponseItemCreatorVariant0ViaVariant1Integration(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-  );
+  ListProjectsResponseItemCreatorVariant0ViaVariant1Integration _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue}) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant1Integration(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+      );
 
-  factory ListProjectsResponseItemCreatorVariant0ViaVariant1Integration.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemCreatorVariant0ViaVariant1Integration(
-    configurationId: (json['configurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-  );
+  factory ListProjectsResponseItemCreatorVariant0ViaVariant1Integration.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant1Integration(
+        configurationId: (json['configurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    'integrationId': integrationId,
-  };
+        'configurationId': configurationId,
+        'integrationId': integrationId,
+      };
 }
 
 /// Set when a Vercel App or Integration acts on behalf of a {@link User}. Captures user-consented OAuth delegation that the ACL layer may inspect to evaluate scope restrictions. This is NOT for impersonation or token-exchange provenance — those live on `auth.token`, not on the principal.
 class ListProjectsResponseItemCreatorVariant0ViaVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListProjectsResponseItemCreatorVariant0ViaVariant1Integration integration;
+  final ListProjectsResponseItemCreatorVariant0ViaVariant1Integration
+      integration;
   final ListProjectsResponseItemCreatorVariant0ViaVariant1Type type_;
 
-  const ListProjectsResponseItemCreatorVariant0ViaVariant1({required this.integration, required this.type_});
+  const ListProjectsResponseItemCreatorVariant0ViaVariant1(
+      {required this.integration, required this.type_});
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant1 Function({ListProjectsResponseItemCreatorVariant0ViaVariant1Integration integration, ListProjectsResponseItemCreatorVariant0ViaVariant1Type type_}) get copyWith => _copyWith;
+  ListProjectsResponseItemCreatorVariant0ViaVariant1 Function(
+          {ListProjectsResponseItemCreatorVariant0ViaVariant1Integration
+              integration,
+          ListProjectsResponseItemCreatorVariant0ViaVariant1Type type_})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemCreatorVariant0ViaVariant1 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => ListProjectsResponseItemCreatorVariant0ViaVariant1(
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as ListProjectsResponseItemCreatorVariant0ViaVariant1Integration,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemCreatorVariant0ViaVariant1Type,
-  );
+  ListProjectsResponseItemCreatorVariant0ViaVariant1 _copyWith(
+          {Object? integration = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant1(
+        integration: identical(integration, sdkOmittedValue)
+            ? this.integration
+            : integration
+                as ListProjectsResponseItemCreatorVariant0ViaVariant1Integration,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemCreatorVariant0ViaVariant1Type,
+      );
 
-  factory ListProjectsResponseItemCreatorVariant0ViaVariant1.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemCreatorVariant0ViaVariant1(
-    integration: (json['integration'] != null ? ListProjectsResponseItemCreatorVariant0ViaVariant1Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? ListProjectsResponseItemCreatorVariant0ViaVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory ListProjectsResponseItemCreatorVariant0ViaVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemCreatorVariant0ViaVariant1(
+        integration: (json['integration'] != null
+            ? ListProjectsResponseItemCreatorVariant0ViaVariant1Integration
+                .fromJson(json['integration'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemCreatorVariant0ViaVariant1Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integration': integration.toJson(),
-    'type': type_.toJson(),
-  };
+        'integration': integration.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 sealed class ListProjectsResponseItemCreatorVariant0Via {
@@ -176,26 +286,55 @@ sealed class ListProjectsResponseItemCreatorVariant0Via {
   const ListProjectsResponseItemCreatorVariant0Via();
   factory ListProjectsResponseItemCreatorVariant0Via.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = ListProjectsResponseItemCreatorVariant0ViaVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0(value); } } catch (_) {}
-      try { final value = ListProjectsResponseItemCreatorVariant0ViaVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemCreatorVariant0ViaVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            ListProjectsResponseItemCreatorVariant0ViaVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0(ListProjectsResponseItemCreatorVariant0ViaVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1(ListProjectsResponseItemCreatorVariant0ViaVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for ListProjectsResponseItemCreatorVariant0Via");
+    try {
+      return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0(
+          ListProjectsResponseItemCreatorVariant0ViaVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1(
+          ListProjectsResponseItemCreatorVariant0ViaVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for ListProjectsResponseItemCreatorVariant0Via");
   }
   Object? toJson();
 }
 
-final class ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0 extends ListProjectsResponseItemCreatorVariant0Via {
+final class ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0
+    extends ListProjectsResponseItemCreatorVariant0Via {
   final ListProjectsResponseItemCreatorVariant0ViaVariant0 value;
-  const ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1 extends ListProjectsResponseItemCreatorVariant0Via {
+final class ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1
+    extends ListProjectsResponseItemCreatorVariant0Via {
   final ListProjectsResponseItemCreatorVariant0ViaVariant1 value;
-  const ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const ListProjectsResponseItemCreatorVariant0ViaListProjectsResponseItemCreatorVariant0ViaVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class ListProjectsResponseItemCreatorVariant0User {
@@ -205,19 +344,24 @@ class ListProjectsResponseItemCreatorVariant0User {
 
   const ListProjectsResponseItemCreatorVariant0User({required this.id});
 
-  ListProjectsResponseItemCreatorVariant0User Function({String id}) get copyWith => _copyWith;
+  ListProjectsResponseItemCreatorVariant0User Function({String id})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemCreatorVariant0User _copyWith({Object? id = sdkOmittedValue}) => ListProjectsResponseItemCreatorVariant0User(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  ListProjectsResponseItemCreatorVariant0User _copyWith(
+          {Object? id = sdkOmittedValue}) =>
+      ListProjectsResponseItemCreatorVariant0User(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory ListProjectsResponseItemCreatorVariant0User.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemCreatorVariant0User(
-    id: (json['id'] as String?)!,
-  );
+  factory ListProjectsResponseItemCreatorVariant0User.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemCreatorVariant0User(
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-  };
+        'id': id,
+      };
 }
 
 class ListProjectsResponseItemCreatorVariant0 {
@@ -227,56 +371,94 @@ class ListProjectsResponseItemCreatorVariant0 {
   final dynamic via;
   final ListProjectsResponseItemCreatorVariant0User user;
 
-  const ListProjectsResponseItemCreatorVariant0({required this.type_, required this.via, required this.user});
+  const ListProjectsResponseItemCreatorVariant0(
+      {required this.type_, required this.via, required this.user});
 
-  ListProjectsResponseItemCreatorVariant0 Function({ListProjectsResponseItemCreatorVariant0Type type_, dynamic via, ListProjectsResponseItemCreatorVariant0User user}) get copyWith => _copyWith;
+  ListProjectsResponseItemCreatorVariant0 Function(
+          {ListProjectsResponseItemCreatorVariant0Type type_,
+          dynamic via,
+          ListProjectsResponseItemCreatorVariant0User user})
+      get copyWith => _copyWith;
 
-  ListProjectsResponseItemCreatorVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? via = sdkOmittedValue, Object? user = sdkOmittedValue}) => ListProjectsResponseItemCreatorVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as ListProjectsResponseItemCreatorVariant0Type,
-    via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
-    user: identical(user, sdkOmittedValue) ? this.user : user as ListProjectsResponseItemCreatorVariant0User,
-  );
+  ListProjectsResponseItemCreatorVariant0 _copyWith(
+          {Object? type_ = sdkOmittedValue,
+          Object? via = sdkOmittedValue,
+          Object? user = sdkOmittedValue}) =>
+      ListProjectsResponseItemCreatorVariant0(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as ListProjectsResponseItemCreatorVariant0Type,
+        via: identical(via, sdkOmittedValue) ? this.via : via as dynamic,
+        user: identical(user, sdkOmittedValue)
+            ? this.user
+            : user as ListProjectsResponseItemCreatorVariant0User,
+      );
 
-  factory ListProjectsResponseItemCreatorVariant0.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemCreatorVariant0(
-    type_: (json['type'] != null ? ListProjectsResponseItemCreatorVariant0Type.fromJson(json['type'] as String) : null)!,
-    via: json.containsKey('via') ? json['via'] : throw ArgumentError.value(null, 'via', 'Required property is missing'),
-    user: (json['user'] != null ? ListProjectsResponseItemCreatorVariant0User.fromJson(json['user'] as Map<String, dynamic>) : null)!,
-  );
+  factory ListProjectsResponseItemCreatorVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemCreatorVariant0(
+        type_: (json['type'] != null
+            ? ListProjectsResponseItemCreatorVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        via: json.containsKey('via')
+            ? json['via']
+            : throw ArgumentError.value(
+                null, 'via', 'Required property is missing'),
+        user: (json['user'] != null
+            ? ListProjectsResponseItemCreatorVariant0User.fromJson(
+                json['user'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'via': via,
-    'user': user.toJson(),
-  };
+        'type': type_.toJson(),
+        'via': via,
+        'user': user.toJson(),
+      };
 }
 
 class ListProjectsResponseItemCreatorVariant1App {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
   final SdkOptional<String> clientId;
+
   /// The internal ID of the Vercel App backing this principal.
   final String id;
 
-  const ListProjectsResponseItemCreatorVariant1App({this.clientId = const SdkOmitted(), required this.id});
+  const ListProjectsResponseItemCreatorVariant1App(
+      {this.clientId = const SdkOmitted(), required this.id});
 
-  ListProjectsResponseItemCreatorVariant1App Function({SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
+  ListProjectsResponseItemCreatorVariant1App Function(
+      {SdkOptional<String> clientId, String id}) get copyWith => _copyWith;
 
-  ListProjectsResponseItemCreatorVariant1App _copyWith({Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) => ListProjectsResponseItemCreatorVariant1App(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-  );
+  ListProjectsResponseItemCreatorVariant1App _copyWith(
+          {Object? clientId = sdkOmittedValue, Object? id = sdkOmittedValue}) =>
+      ListProjectsResponseItemCreatorVariant1App(
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+      );
 
-  factory ListProjectsResponseItemCreatorVariant1App.fromJson(Map<String, dynamic> json) => ListProjectsResponseItemCreatorVariant1App(
-    clientId: json['clientId'] != null ? SdkPresent((json['clientId'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-  );
+  factory ListProjectsResponseItemCreatorVariant1App.fromJson(
+          Map<String, dynamic> json) =>
+      ListProjectsResponseItemCreatorVariant1App(
+        clientId: json['clientId'] != null
+            ? SdkPresent((json['clientId'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (clientId) {
-      SdkPresent<String>(value: final value) => {'clientId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-  };
+        ...switch (clientId) {
+          SdkPresent<String>(value: final value) => {
+              'clientId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+      };
 }

@@ -8,157 +8,272 @@ part of 'sandboxes.dart';
 class SandboxInjectionRule {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The domain (or pattern) that this injection rule applies to. Supports wildcards like *.vercel.com.
   final String domain;
+
   /// The names of HTTP headers that have value that will be injected for requests to this domain.
   final SdkOptional<List<String>> headerNames;
 
-  const SandboxInjectionRule({required this.domain, this.headerNames = const SdkOmitted()});
+  const SandboxInjectionRule(
+      {required this.domain, this.headerNames = const SdkOmitted()});
 
-  SandboxInjectionRule Function({String domain, SdkOptional<List<String>> headerNames}) get copyWith => _copyWith;
+  SandboxInjectionRule Function(
+      {String domain,
+      SdkOptional<List<String>> headerNames}) get copyWith => _copyWith;
 
-  SandboxInjectionRule _copyWith({Object? domain = sdkOmittedValue, Object? headerNames = sdkOmittedValue}) => SandboxInjectionRule(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    headerNames: identical(headerNames, sdkOmittedValue) ? this.headerNames : headerNames as SdkOptional<List<String>>,
-  );
+  SandboxInjectionRule _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? headerNames = sdkOmittedValue}) =>
+      SandboxInjectionRule(
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        headerNames: identical(headerNames, sdkOmittedValue)
+            ? this.headerNames
+            : headerNames as SdkOptional<List<String>>,
+      );
 
-  factory SandboxInjectionRule.fromJson(Map<String, dynamic> json) => SandboxInjectionRule(
-    domain: (json['domain'] as String?)!,
-    headerNames: json['headerNames'] != null ? SdkPresent(((json['headerNames'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory SandboxInjectionRule.fromJson(Map<String, dynamic> json) =>
+      SandboxInjectionRule(
+        domain: (json['domain'] as String?)!,
+        headerNames: json['headerNames'] != null
+            ? SdkPresent(((json['headerNames'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'domain': domain,
-    ...switch (headerNames) {
-      SdkPresent<List<String>>(value: final value) => {'headerNames': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'domain': domain,
+        ...switch (headerNames) {
+          SdkPresent<List<String>>(value: final value) => {
+              'headerNames': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The network policy applied to this sandbox, if any.
 class SandboxNetworkPolicy {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to.
   final SdkOptional<List<String>> allowedCidrs;
+
   /// List of domain names the sandbox is allowed to connect to. Supports wildcard patterns (e.g., "*.vercel.com" matches all subdomains).
   final SdkOptional<List<String>> allowedDomains;
+
   /// List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.
   final SdkOptional<List<String>> deniedCidrs;
+
   /// HTTP header injection rules for outgoing requests matching specific domains.
   final SdkOptional<List<SandboxInjectionRule>> injectionRules;
+
   /// The network policy mode. - 'allow-all': All traffic is allowed. - 'deny-all': All traffic is blocked. - 'custom': Traffic is controlled by explicit allow/deny rules.
   final SandboxNetworkPolicyMode mode;
 
-  const SandboxNetworkPolicy({this.allowedCidrs = const SdkOmitted(), this.allowedDomains = const SdkOmitted(), this.deniedCidrs = const SdkOmitted(), this.injectionRules = const SdkOmitted(), required this.mode});
+  const SandboxNetworkPolicy(
+      {this.allowedCidrs = const SdkOmitted(),
+      this.allowedDomains = const SdkOmitted(),
+      this.deniedCidrs = const SdkOmitted(),
+      this.injectionRules = const SdkOmitted(),
+      required this.mode});
 
-  SandboxNetworkPolicy Function({SdkOptional<List<String>> allowedCidrs, SdkOptional<List<String>> allowedDomains, SdkOptional<List<String>> deniedCidrs, SdkOptional<List<SandboxInjectionRule>> injectionRules, SandboxNetworkPolicyMode mode}) get copyWith => _copyWith;
+  SandboxNetworkPolicy Function(
+      {SdkOptional<List<String>> allowedCidrs,
+      SdkOptional<List<String>> allowedDomains,
+      SdkOptional<List<String>> deniedCidrs,
+      SdkOptional<List<SandboxInjectionRule>> injectionRules,
+      SandboxNetworkPolicyMode mode}) get copyWith => _copyWith;
 
-  SandboxNetworkPolicy _copyWith({Object? allowedCidrs = sdkOmittedValue, Object? allowedDomains = sdkOmittedValue, Object? deniedCidrs = sdkOmittedValue, Object? injectionRules = sdkOmittedValue, Object? mode = sdkOmittedValue}) => SandboxNetworkPolicy(
-    allowedCidrs: identical(allowedCidrs, sdkOmittedValue) ? this.allowedCidrs : allowedCidrs as SdkOptional<List<String>>,
-    allowedDomains: identical(allowedDomains, sdkOmittedValue) ? this.allowedDomains : allowedDomains as SdkOptional<List<String>>,
-    deniedCidrs: identical(deniedCidrs, sdkOmittedValue) ? this.deniedCidrs : deniedCidrs as SdkOptional<List<String>>,
-    injectionRules: identical(injectionRules, sdkOmittedValue) ? this.injectionRules : injectionRules as SdkOptional<List<SandboxInjectionRule>>,
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as SandboxNetworkPolicyMode,
-  );
+  SandboxNetworkPolicy _copyWith(
+          {Object? allowedCidrs = sdkOmittedValue,
+          Object? allowedDomains = sdkOmittedValue,
+          Object? deniedCidrs = sdkOmittedValue,
+          Object? injectionRules = sdkOmittedValue,
+          Object? mode = sdkOmittedValue}) =>
+      SandboxNetworkPolicy(
+        allowedCidrs: identical(allowedCidrs, sdkOmittedValue)
+            ? this.allowedCidrs
+            : allowedCidrs as SdkOptional<List<String>>,
+        allowedDomains: identical(allowedDomains, sdkOmittedValue)
+            ? this.allowedDomains
+            : allowedDomains as SdkOptional<List<String>>,
+        deniedCidrs: identical(deniedCidrs, sdkOmittedValue)
+            ? this.deniedCidrs
+            : deniedCidrs as SdkOptional<List<String>>,
+        injectionRules: identical(injectionRules, sdkOmittedValue)
+            ? this.injectionRules
+            : injectionRules as SdkOptional<List<SandboxInjectionRule>>,
+        mode: identical(mode, sdkOmittedValue)
+            ? this.mode
+            : mode as SandboxNetworkPolicyMode,
+      );
 
-  factory SandboxNetworkPolicy.fromJson(Map<String, dynamic> json) => SandboxNetworkPolicy(
-    allowedCidrs: json['allowedCIDRs'] != null ? SdkPresent(((json['allowedCIDRs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    allowedDomains: json['allowedDomains'] != null ? SdkPresent(((json['allowedDomains'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    deniedCidrs: json['deniedCIDRs'] != null ? SdkPresent(((json['deniedCIDRs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    injectionRules: json['injectionRules'] != null ? SdkPresent(((json['injectionRules'] as List?)?.map((e) => SandboxInjectionRule.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    mode: (json['mode'] != null ? SandboxNetworkPolicyMode.fromJson(json['mode'] as String) : null)!,
-  );
+  factory SandboxNetworkPolicy.fromJson(Map<String, dynamic> json) =>
+      SandboxNetworkPolicy(
+        allowedCidrs: json['allowedCIDRs'] != null
+            ? SdkPresent(((json['allowedCIDRs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        allowedDomains: json['allowedDomains'] != null
+            ? SdkPresent(((json['allowedDomains'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        deniedCidrs: json['deniedCIDRs'] != null
+            ? SdkPresent(((json['deniedCIDRs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        injectionRules: json['injectionRules'] != null
+            ? SdkPresent(((json['injectionRules'] as List?)
+                ?.map((e) =>
+                    SandboxInjectionRule.fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        mode: (json['mode'] != null
+            ? SandboxNetworkPolicyMode.fromJson(json['mode'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (allowedCidrs) {
-      SdkPresent<List<String>>(value: final value) => {'allowedCIDRs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (allowedDomains) {
-      SdkPresent<List<String>>(value: final value) => {'allowedDomains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deniedCidrs) {
-      SdkPresent<List<String>>(value: final value) => {'deniedCIDRs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (injectionRules) {
-      SdkPresent<List<SandboxInjectionRule>>(value: final value) => {'injectionRules': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'mode': mode.toJson(),
-  };
+        ...switch (allowedCidrs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'allowedCIDRs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (allowedDomains) {
+          SdkPresent<List<String>>(value: final value) => {
+              'allowedDomains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deniedCidrs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'deniedCIDRs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (injectionRules) {
+          SdkPresent<List<SandboxInjectionRule>>(value: final value) => {
+              'injectionRules': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'mode': mode.toJson(),
+      };
 }
 
 /// This object represents a public route in a Vercel Sandbox.
 class SandboxPublicRoute {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The user port number that the route is mapped to.
   final double port;
+
   /// The subdomain assigned to this route.
   final String subdomain;
+
   /// Whether the route is reserved by the system (e.g. for internal use).
   final SdkOptional<SandboxPublicRouteSystem> system;
+
   /// A public URL to access the corresponding port in the Sandbox.
   final String url;
 
-  const SandboxPublicRoute({required this.port, required this.subdomain, this.system = const SdkOmitted(), required this.url});
+  const SandboxPublicRoute(
+      {required this.port,
+      required this.subdomain,
+      this.system = const SdkOmitted(),
+      required this.url});
 
-  SandboxPublicRoute Function({double port, String subdomain, SdkOptional<SandboxPublicRouteSystem> system, String url}) get copyWith => _copyWith;
+  SandboxPublicRoute Function(
+      {double port,
+      String subdomain,
+      SdkOptional<SandboxPublicRouteSystem> system,
+      String url}) get copyWith => _copyWith;
 
-  SandboxPublicRoute _copyWith({Object? port = sdkOmittedValue, Object? subdomain = sdkOmittedValue, Object? system = sdkOmittedValue, Object? url = sdkOmittedValue}) => SandboxPublicRoute(
-    port: identical(port, sdkOmittedValue) ? this.port : port as double,
-    subdomain: identical(subdomain, sdkOmittedValue) ? this.subdomain : subdomain as String,
-    system: identical(system, sdkOmittedValue) ? this.system : system as SdkOptional<SandboxPublicRouteSystem>,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  SandboxPublicRoute _copyWith(
+          {Object? port = sdkOmittedValue,
+          Object? subdomain = sdkOmittedValue,
+          Object? system = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      SandboxPublicRoute(
+        port: identical(port, sdkOmittedValue) ? this.port : port as double,
+        subdomain: identical(subdomain, sdkOmittedValue)
+            ? this.subdomain
+            : subdomain as String,
+        system: identical(system, sdkOmittedValue)
+            ? this.system
+            : system as SdkOptional<SandboxPublicRouteSystem>,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory SandboxPublicRoute.fromJson(Map<String, dynamic> json) => SandboxPublicRoute(
-    port: ((json['port'] as num?)?.toDouble())!,
-    subdomain: (json['subdomain'] as String?)!,
-    system: json['system'] != null ? SdkPresent((json['system'] != null ? SandboxPublicRouteSystem.fromJson(json['system'] as bool) : null)!) : const SdkOmitted(),
-    url: (json['url'] as String?)!,
-  );
+  factory SandboxPublicRoute.fromJson(Map<String, dynamic> json) =>
+      SandboxPublicRoute(
+        port: ((json['port'] as num?)?.toDouble())!,
+        subdomain: (json['subdomain'] as String?)!,
+        system: json['system'] != null
+            ? SdkPresent((json['system'] != null
+                ? SandboxPublicRouteSystem.fromJson(json['system'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'port': port,
-    'subdomain': subdomain,
-    ...switch (system) {
-      SdkPresent<SandboxPublicRouteSystem>(value: final value) => {'system': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'url': url,
-  };
+        'port': port,
+        'subdomain': subdomain,
+        ...switch (system) {
+          SdkPresent<SandboxPublicRouteSystem>(value: final value) => {
+              'system': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'url': url,
+      };
 }
 
 /// The quantity of data transfered to and from the sandbox, in bytes. This value is only available once the sandbox is stopped, and only if it stopped successfully.
 class SessionNetworkTransfer {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `egress` wire field.
   final double egress;
+
   /// Required `number` value serialized in the `ingress` wire field.
   final double ingress;
 
   const SessionNetworkTransfer({required this.egress, required this.ingress});
 
-  SessionNetworkTransfer Function({double egress, double ingress}) get copyWith => _copyWith;
+  SessionNetworkTransfer Function({double egress, double ingress})
+      get copyWith => _copyWith;
 
-  SessionNetworkTransfer _copyWith({Object? egress = sdkOmittedValue, Object? ingress = sdkOmittedValue}) => SessionNetworkTransfer(
-    egress: identical(egress, sdkOmittedValue) ? this.egress : egress as double,
-    ingress: identical(ingress, sdkOmittedValue) ? this.ingress : ingress as double,
-  );
+  SessionNetworkTransfer _copyWith(
+          {Object? egress = sdkOmittedValue,
+          Object? ingress = sdkOmittedValue}) =>
+      SessionNetworkTransfer(
+        egress:
+            identical(egress, sdkOmittedValue) ? this.egress : egress as double,
+        ingress: identical(ingress, sdkOmittedValue)
+            ? this.ingress
+            : ingress as double,
+      );
 
-  factory SessionNetworkTransfer.fromJson(Map<String, dynamic> json) => SessionNetworkTransfer(
-    egress: ((json['egress'] as num?)?.toDouble())!,
-    ingress: ((json['ingress'] as num?)?.toDouble())!,
-  );
+  factory SessionNetworkTransfer.fromJson(Map<String, dynamic> json) =>
+      SessionNetworkTransfer(
+        egress: ((json['egress'] as num?)?.toDouble())!,
+        ingress: ((json['ingress'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'egress': egress,
-    'ingress': ingress,
-  };
+        'egress': egress,
+        'ingress': ingress,
+      };
 }

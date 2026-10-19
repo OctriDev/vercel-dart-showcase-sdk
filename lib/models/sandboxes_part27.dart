@@ -7,202 +7,462 @@ part of 'sandboxes.dart';
 class UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Matcher for the entry key (header name or query key).
-  final SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey> key;
+  final SdkOptional<
+          UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey>
+      key;
+
   /// Matcher for the entry value.
-  final SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue> value;
+  final SdkOptional<
+          UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue>
+      value;
 
-  const UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem({this.key = const SdkOmitted(), this.value = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem(
+      {this.key = const SdkOmitted(), this.value = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem Function({SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey> key, SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue> value}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem Function(
+      {SdkOptional<
+              UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey>
+          key,
+      SdkOptional<
+              UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue>
+          value}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem(
+            key: identical(key, sdkOmittedValue)
+                ? this.key
+                : key as SdkOptional<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey>,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as SdkOptional<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue>,
+          );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem.fromJson(Map<String, dynamic> json) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem(
-    key: json['key'] != null ? SdkPresent((json['key'] != null ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey.fromJson(json['key'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'] != null ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue.fromJson(json['value'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem(
+        key: json['key'] != null
+            ? SdkPresent((json['key'] != null
+                ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey
+                    .fromJson(json['key'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'] != null
+                ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue
+                    .fromJson(json['value'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (key) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey>(value: final value) => {'key': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue>(value: final value) => {'value': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (key) {
+          SdkPresent<
+                UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemKey>(
+            value: final value
+          ) =>
+            {
+              'key': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<
+                UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItemValue>(
+            value: final value
+          ) =>
+            {
+              'value': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.
 class UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Match on the request path. Comparison is case-sensitive.
-  final SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath> path;
+  final SdkOptional<
+          UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath>
+      path;
+
   /// HTTP methods to match. Any single match succeeds (OR semantics).
   final SdkOptional<List<String>> method;
+
   /// Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.
-  final SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>> queryString;
+  final SdkOptional<
+          List<
+              UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>>
+      queryString;
+
   /// Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.
-  final SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>> headers;
+  final SdkOptional<
+          List<
+              UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>>
+      headers;
 
-  const UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch({this.path = const SdkOmitted(), this.method = const SdkOmitted(), this.queryString = const SdkOmitted(), this.headers = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch(
+      {this.path = const SdkOmitted(),
+      this.method = const SdkOmitted(),
+      this.queryString = const SdkOmitted(),
+      this.headers = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch Function({SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath> path, SdkOptional<List<String>> method, SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>> queryString, SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>> headers}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch Function(
+      {SdkOptional<
+              UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath>
+          path,
+      SdkOptional<List<String>> method,
+      SdkOptional<
+              List<
+                  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>>
+          queryString,
+      SdkOptional<
+              List<
+                  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>>
+          headers}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch _copyWith({Object? path = sdkOmittedValue, Object? method = sdkOmittedValue, Object? queryString = sdkOmittedValue, Object? headers = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch(
-    path: identical(path, sdkOmittedValue) ? this.path : path as SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath>,
-    method: identical(method, sdkOmittedValue) ? this.method : method as SdkOptional<List<String>>,
-    queryString: identical(queryString, sdkOmittedValue) ? this.queryString : queryString as SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>>,
-    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch _copyWith(
+          {Object? path = sdkOmittedValue,
+          Object? method = sdkOmittedValue,
+          Object? queryString = sdkOmittedValue,
+          Object? headers = sdkOmittedValue}) =>
+      UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch(
+        path: identical(path, sdkOmittedValue)
+            ? this.path
+            : path as SdkOptional<
+                UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath>,
+        method: identical(method, sdkOmittedValue)
+            ? this.method
+            : method as SdkOptional<List<String>>,
+        queryString: identical(queryString, sdkOmittedValue)
+            ? this.queryString
+            : queryString as SdkOptional<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>>,
+        headers: identical(headers, sdkOmittedValue)
+            ? this.headers
+            : headers as SdkOptional<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>>,
+      );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch.fromJson(Map<String, dynamic> json) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch(
-    path: json['path'] != null ? SdkPresent((json['path'] != null ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath.fromJson(json['path'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    method: json['method'] != null ? SdkPresent(((json['method'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    queryString: json['queryString'] != null ? SdkPresent(((json['queryString'] as List?)?.map((e) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    headers: json['headers'] != null ? SdkPresent(((json['headers'] as List?)?.map((e) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch(
+        path: json['path'] != null
+            ? SdkPresent((json['path'] != null
+                ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath
+                    .fromJson(json['path'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        method: json['method'] != null
+            ? SdkPresent(
+                ((json['method'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        queryString: json['queryString'] != null
+            ? SdkPresent(((json['queryString'] as List?)
+                ?.map((e) =>
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        headers: json['headers'] != null
+            ? SdkPresent(((json['headers'] as List?)
+                ?.map((e) =>
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (path) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath>(value: final value) => {'path': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (method) {
-      SdkPresent<List<String>>(value: final value) => {'method': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (queryString) {
-      SdkPresent<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>>(value: final value) => {'queryString': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (headers) {
-      SdkPresent<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>>(value: final value) => {'headers': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (path) {
+          SdkPresent<
+                UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchPath>(
+            value: final value
+          ) =>
+            {
+              'path': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (method) {
+          SdkPresent<List<String>>(value: final value) => {
+              'method': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (queryString) {
+          SdkPresent<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchQueryStringItem>>(
+            value: final value
+          ) =>
+            {
+              'queryString': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (headers) {
+          SdkPresent<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatchHeadersItem>>(
+            value: final value
+          ) =>
+            {
+              'headers': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The domain (or pattern) of requests to add headers for. Supports wildcards like *.example.com.
   final String domain;
+
   /// HTTP headers to inject into requests for this domain. Existing headers with the same name will be overridden.
   final Map<String, String> headers;
+
   /// Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.
-  final SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch> match;
+  final SdkOptional<
+      UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch> match;
 
-  const UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem({required this.domain, required this.headers, this.match = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem(
+      {required this.domain,
+      required this.headers,
+      this.match = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem Function({String domain, Map<String, String> headers, SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch> match}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem Function(
+      {String domain,
+      Map<String, String> headers,
+      SdkOptional<
+              UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch>
+          match}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem _copyWith({Object? domain = sdkOmittedValue, Object? headers = sdkOmittedValue, Object? match = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    headers: identical(headers, sdkOmittedValue) ? this.headers : headers as Map<String, String>,
-    match: identical(match, sdkOmittedValue) ? this.match : match as SdkOptional<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? headers = sdkOmittedValue,
+          Object? match = sdkOmittedValue}) =>
+      UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem(
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        headers: identical(headers, sdkOmittedValue)
+            ? this.headers
+            : headers as Map<String, String>,
+        match: identical(match, sdkOmittedValue)
+            ? this.match
+            : match as SdkOptional<
+                UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch>,
+      );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem.fromJson(Map<String, dynamic> json) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem(
-    domain: (json['domain'] as String?)!,
-    headers: (json['headers'] == null ? null : Map<String, dynamic>.from(json['headers'] as Map).map((key, value) => MapEntry(key, value as String)))!,
-    match: json['match'] != null ? SdkPresent((json['match'] != null ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch.fromJson(json['match'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem(
+        domain: (json['domain'] as String?)!,
+        headers: (json['headers'] == null
+            ? null
+            : Map<String, dynamic>.from(json['headers'] as Map)
+                .map((key, value) => MapEntry(key, value as String)))!,
+        match: json['match'] != null
+            ? SdkPresent((json['match'] != null
+                ? UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch
+                    .fromJson(json['match'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'domain': domain,
-    'headers': headers,
-    ...switch (match) {
-      SdkPresent<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch>(value: final value) => {'match': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'domain': domain,
+        'headers': headers,
+        ...switch (match) {
+          SdkPresent<
+                UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItemMatch>(
+            value: final value
+          ) =>
+            {
+              'match': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Network access policy for the sandbox.\n Controls which external hosts the sandbox can communicate with.\n Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.
 class UpdateSandboxRequestNetworkPolicyVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.
   final UpdateSandboxRequestNetworkPolicyVariant0Mode mode;
+
   /// List of domain names the sandbox is allowed to connect to. Only applies when mode is \"custom\". Supports wildcard patterns (e.g., \"*.example.com\" matches all subdomains).
   final SdkOptional<List<String>> allowedDomains;
+
   /// List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.
   final SdkOptional<List<String>> allowedCidrs;
+
   /// List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.
   final SdkOptional<List<String>> deniedCidrs;
+
   /// HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.
-  final SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>> injectionRules;
+  final SdkOptional<
+          List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>>
+      injectionRules;
 
-  const UpdateSandboxRequestNetworkPolicyVariant0({required this.mode, this.allowedDomains = const SdkOmitted(), this.allowedCidrs = const SdkOmitted(), this.deniedCidrs = const SdkOmitted(), this.injectionRules = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant0(
+      {required this.mode,
+      this.allowedDomains = const SdkOmitted(),
+      this.allowedCidrs = const SdkOmitted(),
+      this.deniedCidrs = const SdkOmitted(),
+      this.injectionRules = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant0 Function({UpdateSandboxRequestNetworkPolicyVariant0Mode mode, SdkOptional<List<String>> allowedDomains, SdkOptional<List<String>> allowedCidrs, SdkOptional<List<String>> deniedCidrs, SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>> injectionRules}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant0 Function(
+      {UpdateSandboxRequestNetworkPolicyVariant0Mode mode,
+      SdkOptional<List<String>> allowedDomains,
+      SdkOptional<List<String>> allowedCidrs,
+      SdkOptional<List<String>> deniedCidrs,
+      SdkOptional<
+              List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>>
+          injectionRules}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant0 _copyWith({Object? mode = sdkOmittedValue, Object? allowedDomains = sdkOmittedValue, Object? allowedCidrs = sdkOmittedValue, Object? deniedCidrs = sdkOmittedValue, Object? injectionRules = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant0(
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as UpdateSandboxRequestNetworkPolicyVariant0Mode,
-    allowedDomains: identical(allowedDomains, sdkOmittedValue) ? this.allowedDomains : allowedDomains as SdkOptional<List<String>>,
-    allowedCidrs: identical(allowedCidrs, sdkOmittedValue) ? this.allowedCidrs : allowedCidrs as SdkOptional<List<String>>,
-    deniedCidrs: identical(deniedCidrs, sdkOmittedValue) ? this.deniedCidrs : deniedCidrs as SdkOptional<List<String>>,
-    injectionRules: identical(injectionRules, sdkOmittedValue) ? this.injectionRules : injectionRules as SdkOptional<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant0 _copyWith(
+          {Object? mode = sdkOmittedValue,
+          Object? allowedDomains = sdkOmittedValue,
+          Object? allowedCidrs = sdkOmittedValue,
+          Object? deniedCidrs = sdkOmittedValue,
+          Object? injectionRules = sdkOmittedValue}) =>
+      UpdateSandboxRequestNetworkPolicyVariant0(
+        mode: identical(mode, sdkOmittedValue)
+            ? this.mode
+            : mode as UpdateSandboxRequestNetworkPolicyVariant0Mode,
+        allowedDomains: identical(allowedDomains, sdkOmittedValue)
+            ? this.allowedDomains
+            : allowedDomains as SdkOptional<List<String>>,
+        allowedCidrs: identical(allowedCidrs, sdkOmittedValue)
+            ? this.allowedCidrs
+            : allowedCidrs as SdkOptional<List<String>>,
+        deniedCidrs: identical(deniedCidrs, sdkOmittedValue)
+            ? this.deniedCidrs
+            : deniedCidrs as SdkOptional<List<String>>,
+        injectionRules: identical(injectionRules, sdkOmittedValue)
+            ? this.injectionRules
+            : injectionRules as SdkOptional<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>>,
+      );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant0.fromJson(Map<String, dynamic> json) => UpdateSandboxRequestNetworkPolicyVariant0(
-    mode: (json['mode'] != null ? UpdateSandboxRequestNetworkPolicyVariant0Mode.fromJson(json['mode'] as String) : null)!,
-    allowedDomains: json['allowedDomains'] != null ? SdkPresent(((json['allowedDomains'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    allowedCidrs: json['allowedCIDRs'] != null ? SdkPresent(((json['allowedCIDRs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    deniedCidrs: json['deniedCIDRs'] != null ? SdkPresent(((json['deniedCIDRs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    injectionRules: json['injectionRules'] != null ? SdkPresent(((json['injectionRules'] as List?)?.map((e) => UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory UpdateSandboxRequestNetworkPolicyVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSandboxRequestNetworkPolicyVariant0(
+        mode: (json['mode'] != null
+            ? UpdateSandboxRequestNetworkPolicyVariant0Mode.fromJson(
+                json['mode'] as String)
+            : null)!,
+        allowedDomains: json['allowedDomains'] != null
+            ? SdkPresent(((json['allowedDomains'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        allowedCidrs: json['allowedCIDRs'] != null
+            ? SdkPresent(((json['allowedCIDRs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        deniedCidrs: json['deniedCIDRs'] != null
+            ? SdkPresent(((json['deniedCIDRs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        injectionRules: json['injectionRules'] != null
+            ? SdkPresent(((json['injectionRules'] as List?)
+                ?.map((e) =>
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'mode': mode.toJson(),
-    ...switch (allowedDomains) {
-      SdkPresent<List<String>>(value: final value) => {'allowedDomains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (allowedCidrs) {
-      SdkPresent<List<String>>(value: final value) => {'allowedCIDRs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deniedCidrs) {
-      SdkPresent<List<String>>(value: final value) => {'deniedCIDRs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (injectionRules) {
-      SdkPresent<List<UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>>(value: final value) => {'injectionRules': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'mode': mode.toJson(),
+        ...switch (allowedDomains) {
+          SdkPresent<List<String>>(value: final value) => {
+              'allowedDomains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (allowedCidrs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'allowedCIDRs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deniedCidrs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'deniedCIDRs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (injectionRules) {
+          SdkPresent<
+                List<
+                    UpdateSandboxRequestNetworkPolicyVariant0InjectionRulesItem>>(
+            value: final value
+          ) =>
+            {
+              'injectionRules': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class UpdateSandboxRequestNetworkPolicyVariant1Allow {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateSandboxRequestNetworkPolicyVariant1Allow();
-  factory UpdateSandboxRequestNetworkPolicyVariant1Allow.fromJson(Object? json) {
-    if (json is List) { return UpdateSandboxRequestNetworkPolicyVariant1AllowListString(json.map((e) => e as String).toList().cast<String>()); }
-    if (json is Map) { return UpdateSandboxRequestNetworkPolicyVariant1AllowMap(Map<String, List<Map<String, dynamic>>>.from(json)); }
-    throw FormatException("No variant matched for UpdateSandboxRequestNetworkPolicyVariant1Allow");
+  factory UpdateSandboxRequestNetworkPolicyVariant1Allow.fromJson(
+      Object? json) {
+    if (json is List) {
+      return UpdateSandboxRequestNetworkPolicyVariant1AllowListString(
+          json.map((e) => e as String).toList().cast<String>());
+    }
+    if (json is Map) {
+      return UpdateSandboxRequestNetworkPolicyVariant1AllowMap(
+          Map<String, List<Map<String, dynamic>>>.from(json));
+    }
+    throw FormatException(
+        "No variant matched for UpdateSandboxRequestNetworkPolicyVariant1Allow");
   }
   Object? toJson();
 }
 
-final class UpdateSandboxRequestNetworkPolicyVariant1AllowListString extends UpdateSandboxRequestNetworkPolicyVariant1Allow {
+final class UpdateSandboxRequestNetworkPolicyVariant1AllowListString
+    extends UpdateSandboxRequestNetworkPolicyVariant1Allow {
   final List<String> value;
   const UpdateSandboxRequestNetworkPolicyVariant1AllowListString(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
-final class UpdateSandboxRequestNetworkPolicyVariant1AllowMap extends UpdateSandboxRequestNetworkPolicyVariant1Allow {
+final class UpdateSandboxRequestNetworkPolicyVariant1AllowMap
+    extends UpdateSandboxRequestNetworkPolicyVariant1Allow {
   final Map<String, List<Map<String, dynamic>>> value;
   const UpdateSandboxRequestNetworkPolicyVariant1AllowMap(this.value);
-  @override Object? toJson() => value;
+  @override
+  Object? toJson() => value;
 }
 
 class UpdateSandboxRequestNetworkPolicyVariant1Subnets {
@@ -211,63 +471,107 @@ class UpdateSandboxRequestNetworkPolicyVariant1Subnets {
   final SdkOptional<List<String>> allow;
   final SdkOptional<List<String>> deny;
 
-  const UpdateSandboxRequestNetworkPolicyVariant1Subnets({this.allow = const SdkOmitted(), this.deny = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant1Subnets(
+      {this.allow = const SdkOmitted(), this.deny = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant1Subnets Function({SdkOptional<List<String>> allow, SdkOptional<List<String>> deny}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant1Subnets Function(
+      {SdkOptional<List<String>> allow,
+      SdkOptional<List<String>> deny}) get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant1Subnets _copyWith({Object? allow = sdkOmittedValue, Object? deny = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant1Subnets(
-    allow: identical(allow, sdkOmittedValue) ? this.allow : allow as SdkOptional<List<String>>,
-    deny: identical(deny, sdkOmittedValue) ? this.deny : deny as SdkOptional<List<String>>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant1Subnets _copyWith(
+          {Object? allow = sdkOmittedValue, Object? deny = sdkOmittedValue}) =>
+      UpdateSandboxRequestNetworkPolicyVariant1Subnets(
+        allow: identical(allow, sdkOmittedValue)
+            ? this.allow
+            : allow as SdkOptional<List<String>>,
+        deny: identical(deny, sdkOmittedValue)
+            ? this.deny
+            : deny as SdkOptional<List<String>>,
+      );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant1Subnets.fromJson(Map<String, dynamic> json) => UpdateSandboxRequestNetworkPolicyVariant1Subnets(
-    allow: json['allow'] != null ? SdkPresent(((json['allow'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    deny: json['deny'] != null ? SdkPresent(((json['deny'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory UpdateSandboxRequestNetworkPolicyVariant1Subnets.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSandboxRequestNetworkPolicyVariant1Subnets(
+        allow: json['allow'] != null
+            ? SdkPresent(
+                ((json['allow'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        deny: json['deny'] != null
+            ? SdkPresent(
+                ((json['deny'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (allow) {
-      SdkPresent<List<String>>(value: final value) => {'allow': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deny) {
-      SdkPresent<List<String>>(value: final value) => {'deny': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (allow) {
+          SdkPresent<List<String>>(value: final value) => {
+              'allow': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deny) {
+          SdkPresent<List<String>>(value: final value) => {
+              'deny': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Match on the request path. Comparison is case-sensitive.
 class UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys.
   final SdkOptional<String> exact;
+
   /// Match values that start with the given prefix.
   final SdkOptional<String> startsWith;
 
-  const UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath({this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
+  const UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
+      {this.exact = const SdkOmitted(), this.startsWith = const SdkOmitted()});
 
-  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath Function({SdkOptional<String> exact, SdkOptional<String> startsWith}) get copyWith => _copyWith;
+  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath
+          Function({SdkOptional<String> exact, SdkOptional<String> startsWith})
+      get copyWith => _copyWith;
 
-  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath _copyWith({Object? exact = sdkOmittedValue, Object? startsWith = sdkOmittedValue}) => UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
-    exact: identical(exact, sdkOmittedValue) ? this.exact : exact as SdkOptional<String>,
-    startsWith: identical(startsWith, sdkOmittedValue) ? this.startsWith : startsWith as SdkOptional<String>,
-  );
+  UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath
+      _copyWith(
+              {Object? exact = sdkOmittedValue,
+              Object? startsWith = sdkOmittedValue}) =>
+          UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
+            exact: identical(exact, sdkOmittedValue)
+                ? this.exact
+                : exact as SdkOptional<String>,
+            startsWith: identical(startsWith, sdkOmittedValue)
+                ? this.startsWith
+                : startsWith as SdkOptional<String>,
+          );
 
-  factory UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath.fromJson(Map<String, dynamic> json) => UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
-    exact: json['exact'] != null ? SdkPresent((json['exact'] as String?)!) : const SdkOmitted(),
-    startsWith: json['startsWith'] != null ? SdkPresent((json['startsWith'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateSandboxRequestNetworkPolicyVariant1AllowVariant1ValueItemMatchPath(
+        exact: json['exact'] != null
+            ? SdkPresent((json['exact'] as String?)!)
+            : const SdkOmitted(),
+        startsWith: json['startsWith'] != null
+            ? SdkPresent((json['startsWith'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (exact) {
-      SdkPresent<String>(value: final value) => {'exact': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (startsWith) {
-      SdkPresent<String>(value: final value) => {'startsWith': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (exact) {
+          SdkPresent<String>(value: final value) => {
+              'exact': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (startsWith) {
+          SdkPresent<String>(value: final value) => {
+              'startsWith': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

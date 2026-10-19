@@ -6,12 +6,12 @@ part of 'inline.dart';
 // Inline operation models (part 532)
 /// The role of the user to invite
 final class InviteUserToTeamRequestBodyItemRole {
-
   final String value;
 
   const InviteUserToTeamRequestBodyItemRole._(this.value);
 
-  factory InviteUserToTeamRequestBodyItemRole.fromJson(String value) => InviteUserToTeamRequestBodyItemRole._(value);
+  factory InviteUserToTeamRequestBodyItemRole.fromJson(String value) =>
+      InviteUserToTeamRequestBodyItemRole._(value);
 
   static const owner = InviteUserToTeamRequestBodyItemRole._('OWNER');
   static const member = InviteUserToTeamRequestBodyItemRole._('MEMBER');
@@ -19,27 +19,32 @@ final class InviteUserToTeamRequestBodyItemRole {
   static const security = InviteUserToTeamRequestBodyItemRole._('SECURITY');
   static const billing = InviteUserToTeamRequestBodyItemRole._('BILLING');
   static const viewer = InviteUserToTeamRequestBodyItemRole._('VIEWER');
-  static const viewerForPlus = InviteUserToTeamRequestBodyItemRole._('VIEWER_FOR_PLUS');
-  static const contributor = InviteUserToTeamRequestBodyItemRole._('CONTRIBUTOR');
+  static const viewerForPlus =
+      InviteUserToTeamRequestBodyItemRole._('VIEWER_FOR_PLUS');
+  static const contributor =
+      InviteUserToTeamRequestBodyItemRole._('CONTRIBUTOR');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is InviteUserToTeamRequestBodyItemRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is InviteUserToTeamRequestBodyItemRole && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Repository provider (e.g., \"github\").
 final class ListVercelCiInvocationsProvider {
-
   final String value;
 
   const ListVercelCiInvocationsProvider._(this.value);
 
-  factory ListVercelCiInvocationsProvider.fromJson(String value) => ListVercelCiInvocationsProvider._(value);
+  factory ListVercelCiInvocationsProvider.fromJson(String value) =>
+      ListVercelCiInvocationsProvider._(value);
 
   static const github = ListVercelCiInvocationsProvider._('github');
   static const gitlab = ListVercelCiInvocationsProvider._('gitlab');
@@ -48,52 +53,66 @@ final class ListVercelCiInvocationsProvider {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListVercelCiInvocationsProvider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListVercelCiInvocationsProvider && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListVercelCiInvocationsStatusItem {
-
   final String value;
 
   const ListVercelCiInvocationsStatusItem._(this.value);
 
-  factory ListVercelCiInvocationsStatusItem.fromJson(String value) => ListVercelCiInvocationsStatusItem._(value);
+  factory ListVercelCiInvocationsStatusItem.fromJson(String value) =>
+      ListVercelCiInvocationsStatusItem._(value);
 
   static const new_ = ListVercelCiInvocationsStatusItem._('new');
   static const skipped = ListVercelCiInvocationsStatusItem._('skipped');
-  static const bootstrapping = ListVercelCiInvocationsStatusItem._('bootstrapping');
-  static const bootstrappingFailed = ListVercelCiInvocationsStatusItem._('bootstrapping_failed');
+  static const bootstrapping =
+      ListVercelCiInvocationsStatusItem._('bootstrapping');
+  static const bootstrappingFailed =
+      ListVercelCiInvocationsStatusItem._('bootstrapping_failed');
   static const snapshotted = ListVercelCiInvocationsStatusItem._('snapshotted');
-  static const sandboxNamed = ListVercelCiInvocationsStatusItem._('sandbox_named');
-  static const jobsOnHiveCloneDispatched = ListVercelCiInvocationsStatusItem._('jobs_on_hive_clone_dispatched');
-  static const jobsOnHiveDispatched = ListVercelCiInvocationsStatusItem._('jobs_on_hive_dispatched');
-  static const jobsOnHiveCompleted = ListVercelCiInvocationsStatusItem._('jobs_on_hive_completed');
-  static const jobsOnHiveFailed = ListVercelCiInvocationsStatusItem._('jobs_on_hive_failed');
-  static const awaitingJobs = ListVercelCiInvocationsStatusItem._('awaiting_jobs');
+  static const sandboxNamed =
+      ListVercelCiInvocationsStatusItem._('sandbox_named');
+  static const jobsOnHiveCloneDispatched =
+      ListVercelCiInvocationsStatusItem._('jobs_on_hive_clone_dispatched');
+  static const jobsOnHiveDispatched =
+      ListVercelCiInvocationsStatusItem._('jobs_on_hive_dispatched');
+  static const jobsOnHiveCompleted =
+      ListVercelCiInvocationsStatusItem._('jobs_on_hive_completed');
+  static const jobsOnHiveFailed =
+      ListVercelCiInvocationsStatusItem._('jobs_on_hive_failed');
+  static const awaitingJobs =
+      ListVercelCiInvocationsStatusItem._('awaiting_jobs');
   static const completed = ListVercelCiInvocationsStatusItem._('completed');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListVercelCiInvocationsStatusItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListVercelCiInvocationsStatusItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListVercelCiInvocationsConclusionItem {
-
   final String value;
 
   const ListVercelCiInvocationsConclusionItem._(this.value);
 
-  factory ListVercelCiInvocationsConclusionItem.fromJson(String value) => ListVercelCiInvocationsConclusionItem._(value);
+  factory ListVercelCiInvocationsConclusionItem.fromJson(String value) =>
+      ListVercelCiInvocationsConclusionItem._(value);
 
   static const succeeded = ListVercelCiInvocationsConclusionItem._('succeeded');
   static const failed = ListVercelCiInvocationsConclusionItem._('failed');
@@ -101,48 +120,62 @@ final class ListVercelCiInvocationsConclusionItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListVercelCiInvocationsConclusionItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListVercelCiInvocationsConclusionItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListVercelCiInvocationsSourceItem {
-
   final String value;
 
   const ListVercelCiInvocationsSourceItem._(this.value);
 
-  factory ListVercelCiInvocationsSourceItem.fromJson(String value) => ListVercelCiInvocationsSourceItem._(value);
+  factory ListVercelCiInvocationsSourceItem.fromJson(String value) =>
+      ListVercelCiInvocationsSourceItem._(value);
 
   static const vercelCi = ListVercelCiInvocationsSourceItem._('vercel-ci');
-  static const vercelNativeChecks = ListVercelCiInvocationsSourceItem._('vercel-native-checks');
+  static const vercelNativeChecks =
+      ListVercelCiInvocationsSourceItem._('vercel-native-checks');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListVercelCiInvocationsSourceItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListVercelCiInvocationsSourceItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0 {
   succeeded;
 
-  static ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'succeeded': return ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0.succeeded;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0: $value');
+      case 'succeeded':
+        return ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0
+            .succeeded;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0.succeeded: return 'succeeded';
+      case ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0
+            .succeeded:
+        return 'succeeded';
     }
   }
 
@@ -153,16 +186,23 @@ enum ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant0 {
 enum ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1 {
   failed;
 
-  static ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'failed': return ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1.failed;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1: $value');
+      case 'failed':
+        return ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1
+            .failed;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1.failed: return 'failed';
+      case ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1
+            .failed:
+        return 'failed';
     }
   }
 
@@ -173,16 +213,23 @@ enum ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant1 {
 enum ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2 {
   skipped;
 
-  static ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2
+      fromJson(String value) {
     switch (value) {
-      case 'skipped': return ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2.skipped;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2: $value');
+      case 'skipped':
+        return ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2.skipped: return 'skipped';
+      case ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2
+            .skipped:
+        return 'skipped';
     }
   }
 
@@ -193,16 +240,23 @@ enum ListVercelCiInvocationsResponseInvocationsItemCompletedConclusionVariant2 {
 enum ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0 {
   turboJson;
 
-  static ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'turbo-json': return ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0.turboJson;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0: $value');
+      case 'turbo-json':
+        return ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0
+            .turboJson;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0.turboJson: return 'turbo-json';
+      case ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant0
+            .turboJson:
+        return 'turbo-json';
     }
   }
 
@@ -213,16 +267,23 @@ enum ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVa
 enum ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1 {
   vercelCiConfig;
 
-  static ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'vercel-ci-config': return ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1.vercelCiConfig;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1: $value');
+      case 'vercel-ci-config':
+        return ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1
+            .vercelCiConfig;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1.vercelCiConfig: return 'vercel-ci-config';
+      case ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant1
+            .vercelCiConfig:
+        return 'vercel-ci-config';
     }
   }
 
@@ -233,16 +294,23 @@ enum ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVa
 enum ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2 {
   projectSettings;
 
-  static ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2
+      fromJson(String value) {
     switch (value) {
-      case 'project-settings': return ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2.projectSettings;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2: $value');
+      case 'project-settings':
+        return ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2
+            .projectSettings;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2.projectSettings: return 'project-settings';
+      case ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVariant2
+            .projectSettings:
+        return 'project-settings';
     }
   }
 
@@ -253,16 +321,23 @@ enum ListVercelCiInvocationsResponseInvocationsItemJobDefinitionsCreatedSourceVa
 enum ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0 {
   succeeded;
 
-  static ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'succeeded': return ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0.succeeded;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0: $value');
+      case 'succeeded':
+        return ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0
+            .succeeded;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0.succeeded: return 'succeeded';
+      case ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0
+            .succeeded:
+        return 'succeeded';
     }
   }
 
@@ -273,16 +348,23 @@ enum ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant0 {
 enum ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1 {
   failed;
 
-  static ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1 fromJson(String value) {
+  static ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'failed': return ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1.failed;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1: $value');
+      case 'failed':
+        return ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1
+            .failed;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1.failed: return 'failed';
+      case ListVercelCiInvocationsResponseInvocationsItemRunConclusionResultVariant1
+            .failed:
+        return 'failed';
     }
   }
 

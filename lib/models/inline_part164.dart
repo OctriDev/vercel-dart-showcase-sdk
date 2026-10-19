@@ -6,79 +6,101 @@ part of 'inline.dart';
 // Inline operation models (part 164)
 /// Whether the route is reserved by the system (e.g. for internal use).
 final class SandboxPublicRouteSystem {
-
   final bool value;
 
   const SandboxPublicRouteSystem._(this.value);
 
-  factory SandboxPublicRouteSystem.fromJson(bool value) => SandboxPublicRouteSystem._(value);
+  factory SandboxPublicRouteSystem.fromJson(bool value) =>
+      SandboxPublicRouteSystem._(value);
 
   static const true_ = SandboxPublicRouteSystem._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SandboxPublicRouteSystem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SandboxPublicRouteSystem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// `false` means the domain is unavailable or its availability could not be confirmed.
 final class SearchDomainsResponseResultsItemVariant0Available {
-
   final bool value;
 
   const SearchDomainsResponseResultsItemVariant0Available._(this.value);
 
-  factory SearchDomainsResponseResultsItemVariant0Available.fromJson(bool value) => SearchDomainsResponseResultsItemVariant0Available._(value);
+  factory SearchDomainsResponseResultsItemVariant0Available.fromJson(
+          bool value) =>
+      SearchDomainsResponseResultsItemVariant0Available._(value);
 
-  static const false_ = SearchDomainsResponseResultsItemVariant0Available._(false);
+  static const false_ =
+      SearchDomainsResponseResultsItemVariant0Available._(false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SearchDomainsResponseResultsItemVariant0Available && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SearchDomainsResponseResultsItemVariant0Available &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class SearchDomainsResponseResultsItemVariant1Available {
-
   final bool value;
 
   const SearchDomainsResponseResultsItemVariant1Available._(this.value);
 
-  factory SearchDomainsResponseResultsItemVariant1Available.fromJson(bool value) => SearchDomainsResponseResultsItemVariant1Available._(value);
+  factory SearchDomainsResponseResultsItemVariant1Available.fromJson(
+          bool value) =>
+      SearchDomainsResponseResultsItemVariant1Available._(value);
 
-  static const true_ = SearchDomainsResponseResultsItemVariant1Available._(true);
+  static const true_ =
+      SearchDomainsResponseResultsItemVariant1Available._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SearchDomainsResponseResultsItemVariant1Available && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SearchDomainsResponseResultsItemVariant1Available &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result {
   succeeded;
 
-  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result fromJson(String value) {
+  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result
+      fromJson(String value) {
     switch (value) {
-      case 'succeeded': return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result.succeeded;
-      default: throw ArgumentError('Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result: $value');
+      case 'succeeded':
+        return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result
+            .succeeded;
+      default:
+        throw ArgumentError(
+            'Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result.succeeded: return 'succeeded';
+      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result
+            .succeeded:
+        return 'succeeded';
     }
   }
 
@@ -89,16 +111,23 @@ enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant0Result 
 enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result {
   cached;
 
-  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result fromJson(String value) {
+  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result
+      fromJson(String value) {
     switch (value) {
-      case 'cached': return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result.cached;
-      default: throw ArgumentError('Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result: $value');
+      case 'cached':
+        return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result
+            .cached;
+      default:
+        throw ArgumentError(
+            'Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result.cached: return 'cached';
+      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result
+            .cached:
+        return 'cached';
     }
   }
 
@@ -109,16 +138,23 @@ enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant1Result 
 enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result {
   failed;
 
-  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result fromJson(String value) {
+  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result
+      fromJson(String value) {
     switch (value) {
-      case 'failed': return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result.failed;
-      default: throw ArgumentError('Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result: $value');
+      case 'failed':
+        return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result
+            .failed;
+      default:
+        throw ArgumentError(
+            'Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result.failed: return 'failed';
+      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result
+            .failed:
+        return 'failed';
     }
   }
 
@@ -129,16 +165,23 @@ enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant2Result 
 enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result {
   skipped;
 
-  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result fromJson(String value) {
+  static SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result
+      fromJson(String value) {
     switch (value) {
-      case 'skipped': return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result.skipped;
-      default: throw ArgumentError('Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result: $value');
+      case 'skipped':
+        return SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result.skipped: return 'skipped';
+      case SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result
+            .skipped:
+        return 'skipped';
     }
   }
 
@@ -148,12 +191,12 @@ enum SearchVercelCiLogsResponseInvocationsItemTasksItemConclusionVariant3Result 
 
 /// Required enumerated value serialized in the `cmp` wire field.
 final class SegmentDataRulesItemConditionsItemCmp {
-
   final String value;
 
   const SegmentDataRulesItemConditionsItemCmp._(this.value);
 
-  factory SegmentDataRulesItemConditionsItemCmp.fromJson(String value) => SegmentDataRulesItemConditionsItemCmp._(value);
+  factory SegmentDataRulesItemConditionsItemCmp.fromJson(String value) =>
+      SegmentDataRulesItemConditionsItemCmp._(value);
 
   static const contains = SegmentDataRulesItemConditionsItemCmp._('!contains');
   static const endswith = SegmentDataRulesItemConditionsItemCmp._('!endsWith');
@@ -161,13 +204,17 @@ final class SegmentDataRulesItemConditionsItemCmp {
   static const ex = SegmentDataRulesItemConditionsItemCmp._('!ex');
   static const oneof = SegmentDataRulesItemConditionsItemCmp._('!oneOf');
   static const regex = SegmentDataRulesItemConditionsItemCmp._('!regex');
-  static const startswith = SegmentDataRulesItemConditionsItemCmp._('!startsWith');
+  static const startswith =
+      SegmentDataRulesItemConditionsItemCmp._('!startsWith');
   static const after = SegmentDataRulesItemConditionsItemCmp._('after');
   static const before = SegmentDataRulesItemConditionsItemCmp._('before');
   static const contains2 = SegmentDataRulesItemConditionsItemCmp._('contains');
-  static const containsallof = SegmentDataRulesItemConditionsItemCmp._('containsAllOf');
-  static const containsanyof = SegmentDataRulesItemConditionsItemCmp._('containsAnyOf');
-  static const containsnoneof = SegmentDataRulesItemConditionsItemCmp._('containsNoneOf');
+  static const containsallof =
+      SegmentDataRulesItemConditionsItemCmp._('containsAllOf');
+  static const containsanyof =
+      SegmentDataRulesItemConditionsItemCmp._('containsAnyOf');
+  static const containsnoneof =
+      SegmentDataRulesItemConditionsItemCmp._('containsNoneOf');
   static const endswith2 = SegmentDataRulesItemConditionsItemCmp._('endsWith');
   static const eq2 = SegmentDataRulesItemConditionsItemCmp._('eq');
   static const ex2 = SegmentDataRulesItemConditionsItemCmp._('ex');
@@ -177,43 +224,53 @@ final class SegmentDataRulesItemConditionsItemCmp {
   static const lte = SegmentDataRulesItemConditionsItemCmp._('lte');
   static const oneof2 = SegmentDataRulesItemConditionsItemCmp._('oneOf');
   static const regex2 = SegmentDataRulesItemConditionsItemCmp._('regex');
-  static const startswith2 = SegmentDataRulesItemConditionsItemCmp._('startsWith');
+  static const startswith2 =
+      SegmentDataRulesItemConditionsItemCmp._('startsWith');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SegmentDataRulesItemConditionsItemCmp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SegmentDataRulesItemConditionsItemCmp && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `ignoreCase` wire field.
 final class SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase {
-
   final bool value;
 
   const SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase._(this.value);
 
-  factory SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(bool value) => SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase._(value);
+  factory SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(
+          bool value) =>
+      SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase._(value);
 
-  static const false_ = SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase._(false);
-  static const true_ = SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase._(true);
+  static const false_ =
+      SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase._(false);
+  static const true_ =
+      SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SegmentDataRulesItemConditionsItemCmpOptionsIgnoreCase &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `typeName` wire field.
 final class SegmentTypeName {
-
   final String value;
 
   const SegmentTypeName._(this.value);
@@ -224,28 +281,36 @@ final class SegmentTypeName {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is SegmentTypeName && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is SegmentTypeName && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 enum SegmentDataRulesItemConditionsItemLhsVariant0Type {
   segment;
 
-  static SegmentDataRulesItemConditionsItemLhsVariant0Type fromJson(String value) {
+  static SegmentDataRulesItemConditionsItemLhsVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'segment': return SegmentDataRulesItemConditionsItemLhsVariant0Type.segment;
-      default: throw ArgumentError('Unknown SegmentDataRulesItemConditionsItemLhsVariant0Type: $value');
+      case 'segment':
+        return SegmentDataRulesItemConditionsItemLhsVariant0Type.segment;
+      default:
+        throw ArgumentError(
+            'Unknown SegmentDataRulesItemConditionsItemLhsVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SegmentDataRulesItemConditionsItemLhsVariant0Type.segment: return 'segment';
+      case SegmentDataRulesItemConditionsItemLhsVariant0Type.segment:
+        return 'segment';
     }
   }
 
@@ -257,16 +322,21 @@ enum SegmentDataRulesItemConditionsItemLhsVariant0Type {
 enum SegmentDataRulesItemConditionsItemLhsVariant1Type {
   entity;
 
-  static SegmentDataRulesItemConditionsItemLhsVariant1Type fromJson(String value) {
+  static SegmentDataRulesItemConditionsItemLhsVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'entity': return SegmentDataRulesItemConditionsItemLhsVariant1Type.entity;
-      default: throw ArgumentError('Unknown SegmentDataRulesItemConditionsItemLhsVariant1Type: $value');
+      case 'entity':
+        return SegmentDataRulesItemConditionsItemLhsVariant1Type.entity;
+      default:
+        throw ArgumentError(
+            'Unknown SegmentDataRulesItemConditionsItemLhsVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case SegmentDataRulesItemConditionsItemLhsVariant1Type.entity: return 'entity';
+      case SegmentDataRulesItemConditionsItemLhsVariant1Type.entity:
+        return 'entity';
     }
   }
 

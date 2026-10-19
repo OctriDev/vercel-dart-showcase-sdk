@@ -8,31 +8,55 @@ class CreateFlagSegmentRequestBodyDataRulesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String id;
-  final List<CreateFlagSegmentRequestBodyDataRulesItemConditionsItem> conditions;
+  final List<CreateFlagSegmentRequestBodyDataRulesItemConditionsItem>
+      conditions;
+
   /// Typed representation of the `CreateFlagSegmentRequestDataRulesItemOutcome` API schema.
   final CreateFlagSegmentRequestDataRulesItemOutcome outcome;
 
-  const CreateFlagSegmentRequestBodyDataRulesItem({required this.id, required this.conditions, required this.outcome});
+  const CreateFlagSegmentRequestBodyDataRulesItem(
+      {required this.id, required this.conditions, required this.outcome});
 
-  CreateFlagSegmentRequestBodyDataRulesItem Function({String id, List<CreateFlagSegmentRequestBodyDataRulesItemConditionsItem> conditions, CreateFlagSegmentRequestDataRulesItemOutcome outcome}) get copyWith => _copyWith;
+  CreateFlagSegmentRequestBodyDataRulesItem Function(
+      {String id,
+      List<CreateFlagSegmentRequestBodyDataRulesItemConditionsItem> conditions,
+      CreateFlagSegmentRequestDataRulesItemOutcome
+          outcome}) get copyWith => _copyWith;
 
-  CreateFlagSegmentRequestBodyDataRulesItem _copyWith({Object? id = sdkOmittedValue, Object? conditions = sdkOmittedValue, Object? outcome = sdkOmittedValue}) => CreateFlagSegmentRequestBodyDataRulesItem(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<CreateFlagSegmentRequestBodyDataRulesItemConditionsItem>,
-    outcome: identical(outcome, sdkOmittedValue) ? this.outcome : outcome as CreateFlagSegmentRequestDataRulesItemOutcome,
-  );
+  CreateFlagSegmentRequestBodyDataRulesItem _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? conditions = sdkOmittedValue,
+          Object? outcome = sdkOmittedValue}) =>
+      CreateFlagSegmentRequestBodyDataRulesItem(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<
+                CreateFlagSegmentRequestBodyDataRulesItemConditionsItem>,
+        outcome: identical(outcome, sdkOmittedValue)
+            ? this.outcome
+            : outcome as CreateFlagSegmentRequestDataRulesItemOutcome,
+      );
 
-  factory CreateFlagSegmentRequestBodyDataRulesItem.fromJson(Map<String, dynamic> json) => CreateFlagSegmentRequestBodyDataRulesItem(
-    id: (json['id'] as String?)!,
-    conditions: ((json['conditions'] as List?)?.map((e) => CreateFlagSegmentRequestBodyDataRulesItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    outcome: (json['outcome'] != null ? CreateFlagSegmentRequestDataRulesItemOutcome.fromJson(json['outcome']) : null)!,
-  );
+  factory CreateFlagSegmentRequestBodyDataRulesItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentRequestBodyDataRulesItem(
+        id: (json['id'] as String?)!,
+        conditions: ((json['conditions'] as List?)
+            ?.map((e) => CreateFlagSegmentRequestBodyDataRulesItemConditionsItem
+                .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        outcome: (json['outcome'] != null
+            ? CreateFlagSegmentRequestDataRulesItemOutcome.fromJson(
+                json['outcome'])
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-    'outcome': outcome.toJson(),
-  };
+        'id': id,
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+        'outcome': outcome.toJson(),
+      };
 }
 
 class CreateFlagSegmentRequestBodyDataIncludeValueValueItem {
@@ -41,27 +65,39 @@ class CreateFlagSegmentRequestBodyDataIncludeValueValueItem {
   final SdkOptional<String> note;
   final String value;
 
-  const CreateFlagSegmentRequestBodyDataIncludeValueValueItem({this.note = const SdkOmitted(), required this.value});
+  const CreateFlagSegmentRequestBodyDataIncludeValueValueItem(
+      {this.note = const SdkOmitted(), required this.value});
 
-  CreateFlagSegmentRequestBodyDataIncludeValueValueItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  CreateFlagSegmentRequestBodyDataIncludeValueValueItem Function(
+      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  CreateFlagSegmentRequestBodyDataIncludeValueValueItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateFlagSegmentRequestBodyDataIncludeValueValueItem(
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  CreateFlagSegmentRequestBodyDataIncludeValueValueItem _copyWith(
+          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      CreateFlagSegmentRequestBodyDataIncludeValueValueItem(
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory CreateFlagSegmentRequestBodyDataIncludeValueValueItem.fromJson(Map<String, dynamic> json) => CreateFlagSegmentRequestBodyDataIncludeValueValueItem(
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory CreateFlagSegmentRequestBodyDataIncludeValueValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentRequestBodyDataIncludeValueValueItem(
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 class CreateFlagSegmentRequestBodyDataExcludeValueValueItem {
@@ -70,27 +106,39 @@ class CreateFlagSegmentRequestBodyDataExcludeValueValueItem {
   final SdkOptional<String> note;
   final String value;
 
-  const CreateFlagSegmentRequestBodyDataExcludeValueValueItem({this.note = const SdkOmitted(), required this.value});
+  const CreateFlagSegmentRequestBodyDataExcludeValueValueItem(
+      {this.note = const SdkOmitted(), required this.value});
 
-  CreateFlagSegmentRequestBodyDataExcludeValueValueItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  CreateFlagSegmentRequestBodyDataExcludeValueValueItem Function(
+      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  CreateFlagSegmentRequestBodyDataExcludeValueValueItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateFlagSegmentRequestBodyDataExcludeValueValueItem(
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  CreateFlagSegmentRequestBodyDataExcludeValueValueItem _copyWith(
+          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      CreateFlagSegmentRequestBodyDataExcludeValueValueItem(
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory CreateFlagSegmentRequestBodyDataExcludeValueValueItem.fromJson(Map<String, dynamic> json) => CreateFlagSegmentRequestBodyDataExcludeValueValueItem(
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory CreateFlagSegmentRequestBodyDataExcludeValueValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentRequestBodyDataExcludeValueValueItem(
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 /// The data of the segment
@@ -98,89 +146,249 @@ class CreateFlagSegmentRequestBodyData {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<CreateFlagSegmentRequestBodyDataRulesItem>> rules;
-  final SdkOptional<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>> include;
-  final SdkOptional<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>> exclude;
+  final SdkOptional<
+          Map<
+              String,
+              Map<String,
+                  List<CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>
+      include;
+  final SdkOptional<
+          Map<
+              String,
+              Map<String,
+                  List<CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>
+      exclude;
 
-  const CreateFlagSegmentRequestBodyData({this.rules = const SdkOmitted(), this.include = const SdkOmitted(), this.exclude = const SdkOmitted()});
+  const CreateFlagSegmentRequestBodyData(
+      {this.rules = const SdkOmitted(),
+      this.include = const SdkOmitted(),
+      this.exclude = const SdkOmitted()});
 
-  CreateFlagSegmentRequestBodyData Function({SdkOptional<List<CreateFlagSegmentRequestBodyDataRulesItem>> rules, SdkOptional<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>> include, SdkOptional<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>> exclude}) get copyWith => _copyWith;
+  CreateFlagSegmentRequestBodyData Function(
+      {SdkOptional<List<CreateFlagSegmentRequestBodyDataRulesItem>> rules,
+      SdkOptional<
+              Map<
+                  String,
+                  Map<
+                      String,
+                      List<
+                          CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>
+          include,
+      SdkOptional<
+              Map<
+                  String,
+                  Map<
+                      String,
+                      List<
+                          CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>
+          exclude}) get copyWith => _copyWith;
 
-  CreateFlagSegmentRequestBodyData _copyWith({Object? rules = sdkOmittedValue, Object? include = sdkOmittedValue, Object? exclude = sdkOmittedValue}) => CreateFlagSegmentRequestBodyData(
-    rules: identical(rules, sdkOmittedValue) ? this.rules : rules as SdkOptional<List<CreateFlagSegmentRequestBodyDataRulesItem>>,
-    include: identical(include, sdkOmittedValue) ? this.include : include as SdkOptional<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>,
-    exclude: identical(exclude, sdkOmittedValue) ? this.exclude : exclude as SdkOptional<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>,
-  );
+  CreateFlagSegmentRequestBodyData _copyWith(
+          {Object? rules = sdkOmittedValue,
+          Object? include = sdkOmittedValue,
+          Object? exclude = sdkOmittedValue}) =>
+      CreateFlagSegmentRequestBodyData(
+        rules: identical(rules, sdkOmittedValue)
+            ? this.rules
+            : rules
+                as SdkOptional<List<CreateFlagSegmentRequestBodyDataRulesItem>>,
+        include: identical(include, sdkOmittedValue)
+            ? this.include
+            : include as SdkOptional<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>,
+        exclude: identical(exclude, sdkOmittedValue)
+            ? this.exclude
+            : exclude as SdkOptional<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>,
+      );
 
-  factory CreateFlagSegmentRequestBodyData.fromJson(Map<String, dynamic> json) => CreateFlagSegmentRequestBodyData(
-    rules: json['rules'] != null ? SdkPresent(((json['rules'] as List?)?.map((e) => CreateFlagSegmentRequestBodyDataRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    include: json['include'] != null ? SdkPresent((json['include'] == null ? null : Map<String, dynamic>.from(json['include'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => CreateFlagSegmentRequestBodyDataIncludeValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))!) : const SdkOmitted(),
-    exclude: json['exclude'] != null ? SdkPresent((json['exclude'] == null ? null : Map<String, dynamic>.from(json['exclude'] as Map).map((key, value) => MapEntry(key, Map<String, dynamic>.from(value as Map).map((key, value) => MapEntry(key, (value as List).map((item) => CreateFlagSegmentRequestBodyDataExcludeValueValueItem.fromJson(item as Map<String, dynamic>)).toList())))))!) : const SdkOmitted(),
-  );
+  factory CreateFlagSegmentRequestBodyData.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentRequestBodyData(
+        rules: json['rules'] != null
+            ? SdkPresent(((json['rules'] as List?)
+                ?.map((e) => CreateFlagSegmentRequestBodyDataRulesItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        include: json['include'] != null
+            ? SdkPresent((json['include'] == null
+                ? null
+                : Map<String, dynamic>.from(json['include'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        Map<String, dynamic>.from(value as Map).map(
+                            (key, value) => MapEntry(
+                                key,
+                                (value as List)
+                                    .map((item) =>
+                                        CreateFlagSegmentRequestBodyDataIncludeValueValueItem
+                                            .fromJson(item as Map<String, dynamic>))
+                                    .toList())))))!)
+            : const SdkOmitted(),
+        exclude: json['exclude'] != null
+            ? SdkPresent((json['exclude'] == null
+                ? null
+                : Map<String, dynamic>.from(json['exclude'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        Map<String, dynamic>.from(value as Map).map(
+                            (key, value) => MapEntry(
+                                key,
+                                (value as List)
+                                    .map((item) =>
+                                        CreateFlagSegmentRequestBodyDataExcludeValueValueItem
+                                            .fromJson(item as Map<String, dynamic>))
+                                    .toList())))))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (rules) {
-      SdkPresent<List<CreateFlagSegmentRequestBodyDataRulesItem>>(value: final value) => {'rules': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (include) {
-      SdkPresent<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>(value: final value) => {'include': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (exclude) {
-      SdkPresent<Map<String, Map<String, List<CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>(value: final value) => {'exclude': value.map((key, value) => MapEntry(key, value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())))),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (rules) {
+          SdkPresent<List<CreateFlagSegmentRequestBodyDataRulesItem>>(
+            value: final value
+          ) =>
+            {
+              'rules': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (include) {
+          SdkPresent<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            CreateFlagSegmentRequestBodyDataIncludeValueValueItem>>>>(
+            value: final value
+          ) =>
+            {
+              'include': value.map((key, value) => MapEntry(
+                  key,
+                  value.map((key, value) => MapEntry(
+                      key, value.map((item) => item.toJson()).toList())))),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (exclude) {
+          SdkPresent<
+                Map<
+                    String,
+                    Map<
+                        String,
+                        List<
+                            CreateFlagSegmentRequestBodyDataExcludeValueValueItem>>>>(
+            value: final value
+          ) =>
+            {
+              'exclude': value.map((key, value) => MapEntry(
+                  key,
+                  value.map((key, value) => MapEntry(
+                      key, value.map((item) => item.toJson()).toList())))),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateFlagSegmentRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String slug;
+
   /// The entity who created the segment
   final SdkOptional<String> createdBy;
   final String label;
   final SdkOptional<String> description;
+
   /// The data of the segment
   final CreateFlagSegmentRequestBodyData data;
   final String hint;
 
-  const CreateFlagSegmentRequestBody({required this.slug, this.createdBy = const SdkOmitted(), required this.label, this.description = const SdkOmitted(), required this.data, required this.hint});
+  const CreateFlagSegmentRequestBody(
+      {required this.slug,
+      this.createdBy = const SdkOmitted(),
+      required this.label,
+      this.description = const SdkOmitted(),
+      required this.data,
+      required this.hint});
 
-  CreateFlagSegmentRequestBody Function({String slug, SdkOptional<String> createdBy, String label, SdkOptional<String> description, CreateFlagSegmentRequestBodyData data, String hint}) get copyWith => _copyWith;
+  CreateFlagSegmentRequestBody Function(
+      {String slug,
+      SdkOptional<String> createdBy,
+      String label,
+      SdkOptional<String> description,
+      CreateFlagSegmentRequestBodyData data,
+      String hint}) get copyWith => _copyWith;
 
-  CreateFlagSegmentRequestBody _copyWith({Object? slug = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? label = sdkOmittedValue, Object? description = sdkOmittedValue, Object? data = sdkOmittedValue, Object? hint = sdkOmittedValue}) => CreateFlagSegmentRequestBody(
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    data: identical(data, sdkOmittedValue) ? this.data : data as CreateFlagSegmentRequestBodyData,
-    hint: identical(hint, sdkOmittedValue) ? this.hint : hint as String,
-  );
+  CreateFlagSegmentRequestBody _copyWith(
+          {Object? slug = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? data = sdkOmittedValue,
+          Object? hint = sdkOmittedValue}) =>
+      CreateFlagSegmentRequestBody(
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as SdkOptional<String>,
+        label: identical(label, sdkOmittedValue) ? this.label : label as String,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        data: identical(data, sdkOmittedValue)
+            ? this.data
+            : data as CreateFlagSegmentRequestBodyData,
+        hint: identical(hint, sdkOmittedValue) ? this.hint : hint as String,
+      );
 
-  factory CreateFlagSegmentRequestBody.fromJson(Map<String, dynamic> json) => CreateFlagSegmentRequestBody(
-    slug: (json['slug'] as String?)!,
-    createdBy: json['createdBy'] != null ? SdkPresent((json['createdBy'] as String?)!) : const SdkOmitted(),
-    label: (json['label'] as String?)!,
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    data: (json['data'] != null ? CreateFlagSegmentRequestBodyData.fromJson(json['data'] as Map<String, dynamic>) : null)!,
-    hint: (json['hint'] as String?)!,
-  );
+  factory CreateFlagSegmentRequestBody.fromJson(Map<String, dynamic> json) =>
+      CreateFlagSegmentRequestBody(
+        slug: (json['slug'] as String?)!,
+        createdBy: json['createdBy'] != null
+            ? SdkPresent((json['createdBy'] as String?)!)
+            : const SdkOmitted(),
+        label: (json['label'] as String?)!,
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        data: (json['data'] != null
+            ? CreateFlagSegmentRequestBodyData.fromJson(
+                json['data'] as Map<String, dynamic>)
+            : null)!,
+        hint: (json['hint'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'slug': slug,
-    ...switch (createdBy) {
-      SdkPresent<String>(value: final value) => {'createdBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    'label': label,
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    'data': data.toJson(),
-    'hint': hint,
-  };
+        'slug': slug,
+        ...switch (createdBy) {
+          SdkPresent<String>(value: final value) => {
+              'createdBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'label': label,
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'data': data.toJson(),
+        'hint': hint,
+      };
 }
 
 class CreateFlagSegmentResponseDataExcludeValueValueItem {
@@ -189,27 +397,39 @@ class CreateFlagSegmentResponseDataExcludeValueValueItem {
   final SdkOptional<String> note;
   final String value;
 
-  const CreateFlagSegmentResponseDataExcludeValueValueItem({this.note = const SdkOmitted(), required this.value});
+  const CreateFlagSegmentResponseDataExcludeValueValueItem(
+      {this.note = const SdkOmitted(), required this.value});
 
-  CreateFlagSegmentResponseDataExcludeValueValueItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataExcludeValueValueItem Function(
+      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataExcludeValueValueItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateFlagSegmentResponseDataExcludeValueValueItem(
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  CreateFlagSegmentResponseDataExcludeValueValueItem _copyWith(
+          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      CreateFlagSegmentResponseDataExcludeValueValueItem(
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory CreateFlagSegmentResponseDataExcludeValueValueItem.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataExcludeValueValueItem(
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory CreateFlagSegmentResponseDataExcludeValueValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentResponseDataExcludeValueValueItem(
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 class CreateFlagSegmentResponseDataIncludeValueValueItem {
@@ -218,50 +438,86 @@ class CreateFlagSegmentResponseDataIncludeValueValueItem {
   final SdkOptional<String> note;
   final String value;
 
-  const CreateFlagSegmentResponseDataIncludeValueValueItem({this.note = const SdkOmitted(), required this.value});
+  const CreateFlagSegmentResponseDataIncludeValueValueItem(
+      {this.note = const SdkOmitted(), required this.value});
 
-  CreateFlagSegmentResponseDataIncludeValueValueItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataIncludeValueValueItem Function(
+      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataIncludeValueValueItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateFlagSegmentResponseDataIncludeValueValueItem(
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  CreateFlagSegmentResponseDataIncludeValueValueItem _copyWith(
+          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      CreateFlagSegmentResponseDataIncludeValueValueItem(
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory CreateFlagSegmentResponseDataIncludeValueValueItem.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataIncludeValueValueItem(
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory CreateFlagSegmentResponseDataIncludeValueValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentResponseDataIncludeValueValueItem(
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 class CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase> ignoreCase;
+  final SdkOptional<
+          CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase>
+      ignoreCase;
 
-  const CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions({this.ignoreCase = const SdkOmitted()});
+  const CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions(
+      {this.ignoreCase = const SdkOmitted()});
 
-  CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions Function({SdkOptional<CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase> ignoreCase}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions Function(
+      {SdkOptional<
+              CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase>
+          ignoreCase}) get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions _copyWith({Object? ignoreCase = sdkOmittedValue}) => CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions(
-    ignoreCase: identical(ignoreCase, sdkOmittedValue) ? this.ignoreCase : ignoreCase as SdkOptional<CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase>,
-  );
+  CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions _copyWith(
+          {Object? ignoreCase = sdkOmittedValue}) =>
+      CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions(
+        ignoreCase: identical(ignoreCase, sdkOmittedValue)
+            ? this.ignoreCase
+            : ignoreCase as SdkOptional<
+                CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase>,
+      );
 
-  factory CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions(
-    ignoreCase: json['ignoreCase'] != null ? SdkPresent((json['ignoreCase'] != null ? CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase.fromJson(json['ignoreCase'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptions(
+        ignoreCase: json['ignoreCase'] != null
+            ? SdkPresent((json['ignoreCase'] != null
+                ? CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase
+                    .fromJson(json['ignoreCase'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (ignoreCase) {
-      SdkPresent<CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase>(value: final value) => {'ignoreCase': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (ignoreCase) {
+          SdkPresent<
+                CreateFlagSegmentResponseDataRulesItemConditionsItemCmpOptionsIgnoreCase>(
+            value: final value
+          ) =>
+            {
+              'ignoreCase': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
