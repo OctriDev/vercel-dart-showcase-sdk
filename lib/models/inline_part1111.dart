@@ -313,7 +313,7 @@ class UpdateFirewallConfigRequestBodyVariant4Value {
   final List<UpdateFirewallConfigRequestBodyVariant4ValueConditionGroupItem>
       conditionGroup;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const UpdateFirewallConfigRequestBodyVariant4Value(
       {required this.name,
@@ -330,7 +330,7 @@ class UpdateFirewallConfigRequestBodyVariant4Value {
       List<UpdateFirewallConfigRequestBodyVariant4ValueConditionGroupItem>
           conditionGroup,
       SdkOptional<bool> valid,
-      SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+      SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant4Value _copyWith(
           {Object? name = sdkOmittedValue,
@@ -355,7 +355,7 @@ class UpdateFirewallConfigRequestBodyVariant4Value {
             : valid as SdkOptional<bool>,
         validationErrors: identical(validationErrors, sdkOmittedValue)
             ? this.validationErrors
-            : validationErrors as SdkOptional<dynamic>,
+            : validationErrors as SdkOptional<List<String>>,
       );
 
   factory UpdateFirewallConfigRequestBodyVariant4Value.fromJson(
@@ -375,7 +375,9 @@ class UpdateFirewallConfigRequestBodyVariant4Value {
             ? SdkPresent((json['valid'] as bool?)!)
             : const SdkOmitted(),
         validationErrors: json['validationErrors'] != null
-            ? SdkPresent((json['validationErrors'])!)
+            ? SdkPresent(((json['validationErrors'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -396,7 +398,7 @@ class UpdateFirewallConfigRequestBodyVariant4Value {
           _ => const <String, dynamic>{},
         },
         ...switch (validationErrors) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'validationErrors': value,
             },
           _ => const <String, dynamic>{},

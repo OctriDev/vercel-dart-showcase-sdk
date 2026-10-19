@@ -16,7 +16,7 @@ class PutFirewallConfigRequestBodyRulesItemActionMitigate {
       redirect;
   final SdkOptional<String?> actionDuration;
   final SdkOptional<bool?> bypassSystem;
-  final SdkOptional<dynamic> logHeaders;
+  final SdkOptional<List<String>> logHeaders;
 
   const PutFirewallConfigRequestBodyRulesItemActionMitigate(
       {required this.action,
@@ -36,7 +36,7 @@ class PutFirewallConfigRequestBodyRulesItemActionMitigate {
           redirect,
       SdkOptional<String?> actionDuration,
       SdkOptional<bool?> bypassSystem,
-      SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
+      SdkOptional<List<String>> logHeaders}) get copyWith => _copyWith;
 
   PutFirewallConfigRequestBodyRulesItemActionMitigate _copyWith(
           {Object? action = sdkOmittedValue,
@@ -66,7 +66,7 @@ class PutFirewallConfigRequestBodyRulesItemActionMitigate {
             : bypassSystem as SdkOptional<bool?>,
         logHeaders: identical(logHeaders, sdkOmittedValue)
             ? this.logHeaders
-            : logHeaders as SdkOptional<dynamic>,
+            : logHeaders as SdkOptional<List<String>>,
       );
 
   factory PutFirewallConfigRequestBodyRulesItemActionMitigate.fromJson(
@@ -95,7 +95,9 @@ class PutFirewallConfigRequestBodyRulesItemActionMitigate {
             ? SdkPresent(json['bypassSystem'] as bool?)
             : const SdkOmitted(),
         logHeaders: json['logHeaders'] != null
-            ? SdkPresent((json['logHeaders'])!)
+            ? SdkPresent(((json['logHeaders'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -134,7 +136,7 @@ class PutFirewallConfigRequestBodyRulesItemActionMitigate {
           _ => const <String, dynamic>{},
         },
         ...switch (logHeaders) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'logHeaders': value,
             },
           _ => const <String, dynamic>{},
@@ -199,7 +201,7 @@ class PutFirewallConfigRequestBodyRulesItem {
       conditionGroup;
   final PutFirewallConfigRequestBodyRulesItemAction action;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const PutFirewallConfigRequestBodyRulesItem(
       {this.id = const SdkOmitted(),
@@ -220,7 +222,7 @@ class PutFirewallConfigRequestBodyRulesItem {
           conditionGroup,
       PutFirewallConfigRequestBodyRulesItemAction action,
       SdkOptional<bool> valid,
-      SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+      SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   PutFirewallConfigRequestBodyRulesItem _copyWith(
           {Object? id = sdkOmittedValue,
@@ -253,7 +255,7 @@ class PutFirewallConfigRequestBodyRulesItem {
             : valid as SdkOptional<bool>,
         validationErrors: identical(validationErrors, sdkOmittedValue)
             ? this.validationErrors
-            : validationErrors as SdkOptional<dynamic>,
+            : validationErrors as SdkOptional<List<String>>,
       );
 
   factory PutFirewallConfigRequestBodyRulesItem.fromJson(
@@ -279,7 +281,9 @@ class PutFirewallConfigRequestBodyRulesItem {
             ? SdkPresent((json['valid'] as bool?)!)
             : const SdkOmitted(),
         validationErrors: json['validationErrors'] != null
-            ? SdkPresent((json['validationErrors'])!)
+            ? SdkPresent(((json['validationErrors'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -307,7 +311,7 @@ class PutFirewallConfigRequestBodyRulesItem {
           _ => const <String, dynamic>{},
         },
         ...switch (validationErrors) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'validationErrors': value,
             },
           _ => const <String, dynamic>{},

@@ -330,7 +330,7 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
   final SdkOptional<dynamic> redirect;
   final SdkOptional<String?> actionDuration;
   final SdkOptional<bool?> bypassSystem;
-  final SdkOptional<dynamic> logHeaders;
+  final SdkOptional<List<String>> logHeaders;
 
   const UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate(
       {required this.action,
@@ -346,7 +346,7 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
       SdkOptional<dynamic> redirect,
       SdkOptional<String?> actionDuration,
       SdkOptional<bool?> bypassSystem,
-      SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
+      SdkOptional<List<String>> logHeaders}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate _copyWith(
           {Object? action = sdkOmittedValue,
@@ -374,7 +374,7 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
             : bypassSystem as SdkOptional<bool?>,
         logHeaders: identical(logHeaders, sdkOmittedValue)
             ? this.logHeaders
-            : logHeaders as SdkOptional<dynamic>,
+            : logHeaders as SdkOptional<List<String>>,
       );
 
   factory UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate.fromJson(
@@ -397,7 +397,9 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
             ? SdkPresent(json['bypassSystem'] as bool?)
             : const SdkOmitted(),
         logHeaders: json['logHeaders'] != null
-            ? SdkPresent((json['logHeaders'])!)
+            ? SdkPresent(((json['logHeaders'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -428,7 +430,7 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
           _ => const <String, dynamic>{},
         },
         ...switch (logHeaders) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'logHeaders': value,
             },
           _ => const <String, dynamic>{},

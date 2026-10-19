@@ -14,7 +14,7 @@ class UpdateFirewallConfigRequestBodyVariant0Value {
       conditionGroup;
   final SdkOptional<UpdateFirewallConfigRequestBodyVariant0ValueAction> action;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const UpdateFirewallConfigRequestBodyVariant0Value(
       {required this.name,
@@ -33,7 +33,7 @@ class UpdateFirewallConfigRequestBodyVariant0Value {
           conditionGroup,
       SdkOptional<UpdateFirewallConfigRequestBodyVariant0ValueAction> action,
       SdkOptional<bool> valid,
-      SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+      SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant0Value _copyWith(
           {Object? name = sdkOmittedValue,
@@ -63,7 +63,7 @@ class UpdateFirewallConfigRequestBodyVariant0Value {
             : valid as SdkOptional<bool>,
         validationErrors: identical(validationErrors, sdkOmittedValue)
             ? this.validationErrors
-            : validationErrors as SdkOptional<dynamic>,
+            : validationErrors as SdkOptional<List<String>>,
       );
 
   factory UpdateFirewallConfigRequestBodyVariant0Value.fromJson(
@@ -89,7 +89,9 @@ class UpdateFirewallConfigRequestBodyVariant0Value {
             ? SdkPresent((json['valid'] as bool?)!)
             : const SdkOmitted(),
         validationErrors: json['validationErrors'] != null
-            ? SdkPresent((json['validationErrors'])!)
+            ? SdkPresent(((json['validationErrors'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -119,7 +121,7 @@ class UpdateFirewallConfigRequestBodyVariant0Value {
           _ => const <String, dynamic>{},
         },
         ...switch (validationErrors) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'validationErrors': value,
             },
           _ => const <String, dynamic>{},
@@ -420,7 +422,7 @@ class UpdateFirewallConfigRequestBodyVariant1Value {
       conditionGroup;
   final SdkOptional<UpdateFirewallConfigRequestBodyVariant1ValueAction> action;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const UpdateFirewallConfigRequestBodyVariant1Value(
       {required this.name,
@@ -439,7 +441,7 @@ class UpdateFirewallConfigRequestBodyVariant1Value {
           conditionGroup,
       SdkOptional<UpdateFirewallConfigRequestBodyVariant1ValueAction> action,
       SdkOptional<bool> valid,
-      SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+      SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant1Value _copyWith(
           {Object? name = sdkOmittedValue,
@@ -469,7 +471,7 @@ class UpdateFirewallConfigRequestBodyVariant1Value {
             : valid as SdkOptional<bool>,
         validationErrors: identical(validationErrors, sdkOmittedValue)
             ? this.validationErrors
-            : validationErrors as SdkOptional<dynamic>,
+            : validationErrors as SdkOptional<List<String>>,
       );
 
   factory UpdateFirewallConfigRequestBodyVariant1Value.fromJson(
@@ -495,7 +497,9 @@ class UpdateFirewallConfigRequestBodyVariant1Value {
             ? SdkPresent((json['valid'] as bool?)!)
             : const SdkOmitted(),
         validationErrors: json['validationErrors'] != null
-            ? SdkPresent((json['validationErrors'])!)
+            ? SdkPresent(((json['validationErrors'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
             : const SdkOmitted(),
       );
 
@@ -525,7 +529,7 @@ class UpdateFirewallConfigRequestBodyVariant1Value {
           _ => const <String, dynamic>{},
         },
         ...switch (validationErrors) {
-          SdkPresent<dynamic>(value: final value) => {
+          SdkPresent<List<String>>(value: final value) => {
               'validationErrors': value,
             },
           _ => const <String, dynamic>{},

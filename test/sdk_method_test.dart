@@ -1913,7 +1913,7 @@ void main() {
             SdkPresent<String?>((jsonDecode("\"devCommand\"") as String)),
         environmentVariables: SdkPresent<
             List<CreateProjectRequestBodyEnvironmentVariablesItem>>((jsonDecode(
-                    "[{\"key\":\"key\",\"target\":\"production\",\"gitBranch\":\"gitBranch\",\"type\":\"system\",\"value\":\"value\"}]")
+                    "[{\"key\":\"key\",\"target\":[\"production\"],\"gitBranch\":\"gitBranch\",\"type\":\"system\",\"value\":\"value\"}]")
                 as List)
             .map((element) =>
                 CreateProjectRequestBodyEnvironmentVariablesItem.fromJson(
@@ -2817,7 +2817,9 @@ void main() {
       await sdk_methods_39.dangerouslyDeleteByTags(
         config,
         projectIdOrName: (jsonDecode("\"Example Name\"") as String),
-        tags: jsonDecode("[\"tags\"]"),
+        tags: (jsonDecode("[\"tags\"]") as List)
+            .map((element) => (element as String))
+            .toList(),
         teamId: SdkPresent<String>(
             (jsonDecode("\"team_1a2b3c4d5e6f7g8h9i0j1k2l\"") as String)),
         slug:
@@ -7064,7 +7066,9 @@ void main() {
       await sdk_methods_39.invalidateByTags(
         config,
         projectIdOrName: (jsonDecode("\"Example Name\"") as String),
-        tags: jsonDecode("[\"tags\"]"),
+        tags: (jsonDecode("[\"tags\"]") as List)
+            .map((element) => (element as String))
+            .toList(),
         teamId: SdkPresent<String>(
             (jsonDecode("\"team_1a2b3c4d5e6f7g8h9i0j1k2l\"") as String)),
         slug:
@@ -8853,7 +8857,7 @@ void main() {
                 .cast<String, dynamic>())),
         rules: SdkPresent<
             List<PutFirewallConfigRequestBodyRulesItem>>((jsonDecode(
-                    "[{\"id\":\"id-1\",\"name\":\"Example Name\",\"description\":\"example text\",\"active\":false,\"conditionGroup\":[{\"conditions\":[{\"type\":\"host\",\"op\":\"re\",\"neg\":false,\"key\":\"key\",\"value\":\"value\"}]}],\"action\":{\"mitigate\":{\"action\":\"log\",\"rateLimit\":{\"algo\":\"fixed_window\",\"window\":1,\"limit\":1,\"keys\":[\"keys\"],\"action\":\"log\"},\"redirect\":{\"location\":\"location\",\"permanent\":false},\"actionDuration\":\"actionDuration\",\"bypassSystem\":false,\"logHeaders\":\"logHeaders\"}},\"valid\":false,\"validationErrors\":[\"validationErrors\"]}]")
+                    "[{\"id\":\"id-1\",\"name\":\"Example Name\",\"description\":\"example text\",\"active\":false,\"conditionGroup\":[{\"conditions\":[{\"type\":\"host\",\"op\":\"re\",\"neg\":false,\"key\":\"key\",\"value\":\"value\"}]}],\"action\":{\"mitigate\":{\"action\":\"log\",\"rateLimit\":{\"algo\":\"fixed_window\",\"window\":1,\"limit\":1,\"keys\":[\"keys\"],\"action\":\"log\"},\"redirect\":{\"location\":\"location\",\"permanent\":false},\"actionDuration\":\"actionDuration\",\"bypassSystem\":false,\"logHeaders\":[\"logHeaders\"]}},\"valid\":false,\"validationErrors\":[\"validationErrors\"]}]")
                 as List)
             .map((element) => PutFirewallConfigRequestBodyRulesItem.fromJson(
                 (element as Map).cast<String, dynamic>()))
@@ -8867,7 +8871,10 @@ void main() {
                 (element as Map).cast<String, dynamic>()))
             .toList()),
         botIdEnabled: SdkPresent<bool>((jsonDecode("false") as bool)),
-        logHeaders: SdkPresent<dynamic>(jsonDecode("\"logHeaders\"")),
+        logHeaders: SdkPresent<List<String>>(
+            (jsonDecode("[\"logHeaders\"]") as List)
+                .map((element) => (element as String))
+                .toList()),
       );
       expect(
         mismatch(

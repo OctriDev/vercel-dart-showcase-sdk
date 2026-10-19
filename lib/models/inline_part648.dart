@@ -346,20 +346,22 @@ class TestDrainResponseVariant1 {
 class InvalidateByTagsRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final dynamic tags;
+  final List<String> tags;
   final SdkOptional<InvalidateByTagsRequestBodyTarget> target;
 
   const InvalidateByTagsRequestBody(
       {required this.tags, this.target = const SdkOmitted()});
 
   InvalidateByTagsRequestBody Function(
-          {dynamic tags, SdkOptional<InvalidateByTagsRequestBodyTarget> target})
+          {List<String> tags,
+          SdkOptional<InvalidateByTagsRequestBodyTarget> target})
       get copyWith => _copyWith;
 
   InvalidateByTagsRequestBody _copyWith(
           {Object? tags = sdkOmittedValue, Object? target = sdkOmittedValue}) =>
       InvalidateByTagsRequestBody(
-        tags: identical(tags, sdkOmittedValue) ? this.tags : tags as dynamic,
+        tags:
+            identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
         target: identical(target, sdkOmittedValue)
             ? this.target
             : target as SdkOptional<InvalidateByTagsRequestBodyTarget>,
@@ -367,7 +369,7 @@ class InvalidateByTagsRequestBody {
 
   factory InvalidateByTagsRequestBody.fromJson(Map<String, dynamic> json) =>
       InvalidateByTagsRequestBody(
-        tags: (json['tags'])!,
+        tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
         target: json['target'] != null
             ? SdkPresent((json['target'] != null
                 ? InvalidateByTagsRequestBodyTarget.fromJson(
@@ -391,7 +393,7 @@ class DangerouslyDeleteByTagsRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<int> revalidationDeadlineSeconds;
-  final dynamic tags;
+  final List<String> tags;
   final SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget> target;
 
   const DangerouslyDeleteByTagsRequestBody(
@@ -401,7 +403,7 @@ class DangerouslyDeleteByTagsRequestBody {
 
   DangerouslyDeleteByTagsRequestBody Function(
           {SdkOptional<int> revalidationDeadlineSeconds,
-          dynamic tags,
+          List<String> tags,
           SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget> target})
       get copyWith => _copyWith;
 
@@ -414,7 +416,8 @@ class DangerouslyDeleteByTagsRequestBody {
             identical(revalidationDeadlineSeconds, sdkOmittedValue)
                 ? this.revalidationDeadlineSeconds
                 : revalidationDeadlineSeconds as SdkOptional<int>,
-        tags: identical(tags, sdkOmittedValue) ? this.tags : tags as dynamic,
+        tags:
+            identical(tags, sdkOmittedValue) ? this.tags : tags as List<String>,
         target: identical(target, sdkOmittedValue)
             ? this.target
             : target as SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget>,
@@ -427,7 +430,7 @@ class DangerouslyDeleteByTagsRequestBody {
             ? SdkPresent(
                 ((json['revalidationDeadlineSeconds'] as num?)?.toInt())!)
             : const SdkOmitted(),
-        tags: (json['tags'])!,
+        tags: ((json['tags'] as List?)?.map((e) => e as String).toList())!,
         target: json['target'] != null
             ? SdkPresent((json['target'] != null
                 ? DangerouslyDeleteByTagsRequestBodyTarget.fromJson(

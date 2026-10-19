@@ -2931,7 +2931,7 @@ class EdgeCacheNamespace {
   /// Marks a cache tag as stale, causing cache entries associated with that tag to be revalidated in the background on the next request.
   Future<void> invalidateByTags(
       {required String projectIdOrName,
-      required dynamic tags,
+      required List<String> tags,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<InvalidateByTagsRequestBodyTarget> target =
@@ -2951,7 +2951,7 @@ class EdgeCacheNamespace {
   /// Marks a cache tag as deleted, causing cache entries associated with that tag to be revalidated in the foreground on the next request. Use this method with caution because one tag can be associated with many paths and deleting the cache can cause many concurrent requests to the origin leading to cache stampede problem. This method is for advanced use cases and is not recommended; prefer using `invalidateByTag` instead.
   Future<void> dangerouslyDeleteByTags(
       {required String projectIdOrName,
-      required dynamic tags,
+      required List<String> tags,
       SdkOptional<String> teamId = const SdkOmitted(),
       SdkOptional<String> slug = const SdkOmitted(),
       SdkOptional<int> revalidationDeadlineSeconds = const SdkOmitted(),
@@ -7438,7 +7438,7 @@ class SecurityNamespace {
       SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips =
           const SdkOmitted(),
       SdkOptional<bool> botIdEnabled = const SdkOmitted(),
-      SdkOptional<dynamic> logHeaders = const SdkOmitted(),
+      SdkOptional<List<String>> logHeaders = const SdkOmitted(),
       RequestOptions? requestOptions}) async {
     return security_methods.putFirewallConfig(_config,
         projectId: projectId,

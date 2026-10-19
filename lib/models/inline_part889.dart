@@ -12,7 +12,7 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
   final String key;
 
   /// Deployment Target or Targets in which the ENV variable will be used
-  final dynamic target;
+  final List<CreateProjectRequestBodyEnvironmentVariablesItemTargetItem> target;
 
   /// If defined, the git branch of the environment variable (must have target=preview)
   final SdkOptional<String> gitBranch;
@@ -32,7 +32,7 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
 
   CreateProjectRequestBodyEnvironmentVariablesItem Function(
       {String key,
-      dynamic target,
+      List<CreateProjectRequestBodyEnvironmentVariablesItemTargetItem> target,
       SdkOptional<String> gitBranch,
       SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType> type_,
       String value}) get copyWith => _copyWith;
@@ -47,7 +47,8 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
         key: identical(key, sdkOmittedValue) ? this.key : key as String,
         target: identical(target, sdkOmittedValue)
             ? this.target
-            : target as dynamic,
+            : target as List<
+                CreateProjectRequestBodyEnvironmentVariablesItemTargetItem>,
         gitBranch: identical(gitBranch, sdkOmittedValue)
             ? this.gitBranch
             : gitBranch as SdkOptional<String>,
@@ -62,7 +63,11 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
           Map<String, dynamic> json) =>
       CreateProjectRequestBodyEnvironmentVariablesItem(
         key: (json['key'] as String?)!,
-        target: (json['target'])!,
+        target: ((json['target'] as List?)
+            ?.map((e) =>
+                CreateProjectRequestBodyEnvironmentVariablesItemTargetItem
+                    .fromJson(e as String))
+            .toList())!,
         gitBranch: json['gitBranch'] != null
             ? SdkPresent((json['gitBranch'] as String?)!)
             : const SdkOmitted(),
@@ -77,7 +82,7 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
 
   Map<String, dynamic> toJson() => {
         'key': key,
-        'target': target,
+        'target': target.map((item) => item.toJson()).toList(),
         ...switch (gitBranch) {
           SdkPresent<String>(value: final value) => {
               'gitBranch': value,

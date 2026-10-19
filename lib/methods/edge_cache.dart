@@ -15,11 +15,13 @@ import '../types.dart';
 /// [slug] The Team slug to perform the request on behalf of.
 Future<void> invalidateByTags(ClientConfig config,
     {required String projectIdOrName,
-    required dynamic tags,
+    required List<String> tags,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<InvalidateByTagsRequestBodyTarget> target = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
+  validateItems('tags', tags, min: 1, max: 16);
+
   return (await sdkRequest<void>('POST', '/v1/edge-cache/invalidate-by-tags',
           config: config,
           query: {
@@ -45,13 +47,14 @@ Future<void> invalidateByTags(ClientConfig config,
 /// [slug] The Team slug to perform the request on behalf of.
 Future<void> dangerouslyDeleteByTags(ClientConfig config,
     {required String projectIdOrName,
-    required dynamic tags,
+    required List<String> tags,
     SdkOptional<String> teamId = const SdkOmitted(),
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<int> revalidationDeadlineSeconds = const SdkOmitted(),
     SdkOptional<DangerouslyDeleteByTagsRequestBodyTarget> target =
         const SdkOmitted(),
     RequestOptions? requestOptions}) async {
+  validateItems('tags', tags, min: 1, max: 16);
   if (revalidationDeadlineSeconds is SdkPresent<int>) {
     validateRange(
         'revalidationDeadlineSeconds', revalidationDeadlineSeconds.value,
