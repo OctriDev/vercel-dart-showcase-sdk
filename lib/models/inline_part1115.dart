@@ -38,11 +38,11 @@ class UpdateFirewallConfigRequestBodyVariant11Value {
   final List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem> conditionGroup;
   final UpdateFirewallConfigRequestBodyVariant11ValueAction action;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const UpdateFirewallConfigRequestBodyVariant11Value({required this.name, this.description = const SdkOmitted(), required this.active, required this.conditionGroup, required this.action, this.valid = const SdkOmitted(), this.validationErrors = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant11Value Function({String name, SdkOptional<String> description, bool active, List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem> conditionGroup, UpdateFirewallConfigRequestBodyVariant11ValueAction action, SdkOptional<bool> valid, SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant11Value Function({String name, SdkOptional<String> description, bool active, List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem> conditionGroup, UpdateFirewallConfigRequestBodyVariant11ValueAction action, SdkOptional<bool> valid, SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant11Value _copyWith({Object? name = sdkOmittedValue, Object? description = sdkOmittedValue, Object? active = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? action = sdkOmittedValue, Object? valid = sdkOmittedValue, Object? validationErrors = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant11Value(
     name: identical(name, sdkOmittedValue) ? this.name : name as String,
@@ -51,7 +51,7 @@ class UpdateFirewallConfigRequestBodyVariant11Value {
     conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem>,
     action: identical(action, sdkOmittedValue) ? this.action : action as UpdateFirewallConfigRequestBodyVariant11ValueAction,
     valid: identical(valid, sdkOmittedValue) ? this.valid : valid as SdkOptional<bool>,
-    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as SdkOptional<dynamic>,
+    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as SdkOptional<List<String>>,
   );
 
   factory UpdateFirewallConfigRequestBodyVariant11Value.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant11Value(
@@ -61,7 +61,7 @@ class UpdateFirewallConfigRequestBodyVariant11Value {
     conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => UpdateFirewallConfigRequestBodyVariant11ValueConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
     action: (json['action'] != null ? UpdateFirewallConfigRequestBodyVariant11ValueAction.fromJson(json['action'] as Map<String, dynamic>) : null)!,
     valid: json['valid'] != null ? SdkPresent((json['valid'] as bool?)!) : const SdkOmitted(),
-    validationErrors: json['validationErrors'] != null ? SdkPresent((json['validationErrors'])!) : const SdkOmitted(),
+    validationErrors: json['validationErrors'] != null ? SdkPresent(((json['validationErrors'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
   );
 
   Map<String, dynamic> toJson() => {
@@ -78,7 +78,7 @@ class UpdateFirewallConfigRequestBodyVariant11Value {
       _ => const <String, dynamic>{},
     },
     ...switch (validationErrors) {
-      SdkPresent<dynamic>(value: final value) => {'validationErrors': value,},
+      SdkPresent<List<String>>(value: final value) => {'validationErrors': value,},
       _ => const <String, dynamic>{},
     },
   };

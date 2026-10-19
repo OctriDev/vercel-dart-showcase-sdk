@@ -4,29 +4,6 @@
 part of 'inline.dart';
 
 // Inline operation models (part 502)
-final class CreateProjectRequestBodySsoProtectionDeploymentType {
-
-  final String value;
-
-  const CreateProjectRequestBodySsoProtectionDeploymentType._(this.value);
-
-  factory CreateProjectRequestBodySsoProtectionDeploymentType.fromJson(String value) => CreateProjectRequestBodySsoProtectionDeploymentType._(value);
-
-  static const all = CreateProjectRequestBodySsoProtectionDeploymentType._('all');
-  static const preview = CreateProjectRequestBodySsoProtectionDeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = CreateProjectRequestBodySsoProtectionDeploymentType._('prod_deployment_urls_and_all_previews');
-  static const allExceptCustomDomains = CreateProjectRequestBodySsoProtectionDeploymentType._('all_except_custom_domains');
-
-  String toJson() => value;
-
-  @override String toString() => value.toString();
-
-  @override bool operator ==(Object other) => other is CreateProjectRequestBodySsoProtectionDeploymentType && other.value == value;
-
-  @override int get hashCode => value.hashCode;
-
-}
-
 final class CreateProjectResponseAliasItemConfiguredBy {
 
   final String value;
@@ -267,6 +244,48 @@ final class CreateProjectResponseAliasItemDeploymentReadyState {
   @override String toString() => value.toString();
 
   @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentReadyState && other.value == value;
+
+  @override int get hashCode => value.hashCode;
+
+}
+
+final class CreateProjectResponseAliasItemDeploymentReadySubstate {
+
+  final String value;
+
+  const CreateProjectResponseAliasItemDeploymentReadySubstate._(this.value);
+
+  factory CreateProjectResponseAliasItemDeploymentReadySubstate.fromJson(String value) => CreateProjectResponseAliasItemDeploymentReadySubstate._(value);
+
+  static const promoted = CreateProjectResponseAliasItemDeploymentReadySubstate._('PROMOTED');
+  static const rolling = CreateProjectResponseAliasItemDeploymentReadySubstate._('ROLLING');
+  static const staged = CreateProjectResponseAliasItemDeploymentReadySubstate._('STAGED');
+
+  String toJson() => value;
+
+  @override String toString() => value.toString();
+
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentReadySubstate && other.value == value;
+
+  @override int get hashCode => value.hashCode;
+
+}
+
+final class CreateProjectResponseAliasItemDeploymentType {
+
+  final String value;
+
+  const CreateProjectResponseAliasItemDeploymentType._(this.value);
+
+  factory CreateProjectResponseAliasItemDeploymentType.fromJson(String value) => CreateProjectResponseAliasItemDeploymentType._(value);
+
+  static const lambdas = CreateProjectResponseAliasItemDeploymentType._('LAMBDAS');
+
+  String toJson() => value;
+
+  @override String toString() => value.toString();
+
+  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentType && other.value == value;
 
   @override int get hashCode => value.hashCode;
 

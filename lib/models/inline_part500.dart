@@ -246,45 +246,47 @@ final class CreateProjectEnvResponseFailedItemErrorValueVariant1Item {
 
 }
 
-final class CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0 {
+final class CreateProjectRequestBodyEnvironmentVariablesItemTargetItem {
 
   final String value;
 
-  const CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0._(this.value);
+  const CreateProjectRequestBodyEnvironmentVariablesItemTargetItem._(this.value);
 
-  factory CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0.fromJson(String value) => CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0._(value);
+  factory CreateProjectRequestBodyEnvironmentVariablesItemTargetItem.fromJson(String value) => CreateProjectRequestBodyEnvironmentVariablesItemTargetItem._(value);
 
-  static const production = CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0._('production');
-  static const preview = CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0._('preview');
-  static const development = CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0._('development');
+  static const production = CreateProjectRequestBodyEnvironmentVariablesItemTargetItem._('production');
+  static const preview = CreateProjectRequestBodyEnvironmentVariablesItemTargetItem._('preview');
+  static const development = CreateProjectRequestBodyEnvironmentVariablesItemTargetItem._('development');
 
   String toJson() => value;
 
   @override String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant0 && other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectRequestBodyEnvironmentVariablesItemTargetItem && other.value == value;
 
   @override int get hashCode => value.hashCode;
 
 }
 
-final class CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item {
+/// Type of the ENV variable
+final class CreateProjectRequestBodyEnvironmentVariablesItemType {
 
   final String value;
 
-  const CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item._(this.value);
+  const CreateProjectRequestBodyEnvironmentVariablesItemType._(this.value);
 
-  factory CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item.fromJson(String value) => CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item._(value);
+  factory CreateProjectRequestBodyEnvironmentVariablesItemType.fromJson(String value) => CreateProjectRequestBodyEnvironmentVariablesItemType._(value);
 
-  static const production = CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item._('production');
-  static const preview = CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item._('preview');
-  static const development = CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item._('development');
+  static const system = CreateProjectRequestBodyEnvironmentVariablesItemType._('system');
+  static const encrypted = CreateProjectRequestBodyEnvironmentVariablesItemType._('encrypted');
+  static const plain = CreateProjectRequestBodyEnvironmentVariablesItemType._('plain');
+  static const sensitive = CreateProjectRequestBodyEnvironmentVariablesItemType._('sensitive');
 
   String toJson() => value;
 
   @override String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateProjectRequestBodyEnvironmentVariablesItemTargetVariant1Item && other.value == value;
+  @override bool operator ==(Object other) => other is CreateProjectRequestBodyEnvironmentVariablesItemType && other.value == value;
 
   @override int get hashCode => value.hashCode;
 

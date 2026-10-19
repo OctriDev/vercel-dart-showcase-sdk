@@ -182,11 +182,11 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
   final SdkOptional<dynamic> redirect;
   final SdkOptional<String?> actionDuration;
   final SdkOptional<bool?> bypassSystem;
-  final SdkOptional<dynamic> logHeaders;
+  final SdkOptional<List<String>> logHeaders;
 
   const UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate({required this.action, this.rateLimit = const SdkOmitted(), this.redirect = const SdkOmitted(), this.actionDuration = const SdkOmitted(), this.bypassSystem = const SdkOmitted(), this.logHeaders = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate Function({UpdateFirewallConfigRequestBodyVariant10ValueActionMitigateAction action, SdkOptional<dynamic> rateLimit, SdkOptional<dynamic> redirect, SdkOptional<String?> actionDuration, SdkOptional<bool?> bypassSystem, SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate Function({UpdateFirewallConfigRequestBodyVariant10ValueActionMitigateAction action, SdkOptional<dynamic> rateLimit, SdkOptional<dynamic> redirect, SdkOptional<String?> actionDuration, SdkOptional<bool?> bypassSystem, SdkOptional<List<String>> logHeaders}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate _copyWith({Object? action = sdkOmittedValue, Object? rateLimit = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? actionDuration = sdkOmittedValue, Object? bypassSystem = sdkOmittedValue, Object? logHeaders = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate(
     action: identical(action, sdkOmittedValue) ? this.action : action as UpdateFirewallConfigRequestBodyVariant10ValueActionMitigateAction,
@@ -194,7 +194,7 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
     redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<dynamic>,
     actionDuration: identical(actionDuration, sdkOmittedValue) ? this.actionDuration : actionDuration as SdkOptional<String?>,
     bypassSystem: identical(bypassSystem, sdkOmittedValue) ? this.bypassSystem : bypassSystem as SdkOptional<bool?>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
+    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<List<String>>,
   );
 
   factory UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate(
@@ -203,7 +203,7 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
     redirect: json['redirect'] != null ? SdkPresent((json['redirect'])!) : const SdkOmitted(),
     actionDuration: json.containsKey('actionDuration') ? SdkPresent(json['actionDuration'] as String?) : const SdkOmitted(),
     bypassSystem: json.containsKey('bypassSystem') ? SdkPresent(json['bypassSystem'] as bool?) : const SdkOmitted(),
-    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
+    logHeaders: json['logHeaders'] != null ? SdkPresent(((json['logHeaders'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
   );
 
   Map<String, dynamic> toJson() => {
@@ -225,7 +225,7 @@ class UpdateFirewallConfigRequestBodyVariant10ValueActionMitigate {
       _ => const <String, dynamic>{},
     },
     ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
+      SdkPresent<List<String>>(value: final value) => {'logHeaders': value,},
       _ => const <String, dynamic>{},
     },
   };

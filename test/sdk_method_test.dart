@@ -1319,7 +1319,7 @@ void main() {
         buildCommand: SdkPresent<String?>((jsonDecode("\"buildCommand\"") as String)),
         commandForIgnoringBuildStep: SdkPresent<String?>((jsonDecode("\"commandForIgnoringBuildStep\"") as String)),
         devCommand: SdkPresent<String?>((jsonDecode("\"devCommand\"") as String)),
-        environmentVariables: SdkPresent<List<CreateProjectRequestBodyEnvironmentVariablesItem>>((jsonDecode("[{\"key\":\"key\",\"target\":\"production\",\"gitBranch\":\"gitBranch\",\"type\":\"system\",\"value\":\"value\"}]") as List).map((element) => CreateProjectRequestBodyEnvironmentVariablesItem.fromJson((element as Map).cast<String, dynamic>())).toList()),
+        environmentVariables: SdkPresent<List<CreateProjectRequestBodyEnvironmentVariablesItem>>((jsonDecode("[{\"key\":\"key\",\"target\":[\"production\"],\"gitBranch\":\"gitBranch\",\"type\":\"system\",\"value\":\"value\"}]") as List).map((element) => CreateProjectRequestBodyEnvironmentVariablesItem.fromJson((element as Map).cast<String, dynamic>())).toList()),
         framework: SdkPresent<dynamic>(jsonDecode("\"container\"")),
         gitRepository: SdkPresent<CreateProjectRequestBodyGitRepository>(CreateProjectRequestBodyGitRepository.fromJson((jsonDecode("{\"repo\":\"repo\",\"type\":\"github\"}") as Map).cast<String, dynamic>())),
         installCommand: SdkPresent<String?>((jsonDecode("\"installCommand\"") as String)),
@@ -1853,7 +1853,7 @@ void main() {
       await sdk_methods_39.dangerouslyDeleteByTags(
         config,
         projectIdOrName: (jsonDecode("\"Example Name\"") as String),
-        tags: jsonDecode("[\"tags\"]"),
+        tags: (jsonDecode("[\"tags\"]") as List).map((element) => (element as String)).toList(),
         teamId: SdkPresent<String>((jsonDecode("\"team_1a2b3c4d5e6f7g8h9i0j1k2l\"") as String)),
         slug: SdkPresent<String>((jsonDecode("\"my-team-url-slug\"") as String)),
         revalidationDeadlineSeconds: SdkPresent<int>((jsonDecode("0") as num).toInt()),
@@ -5188,7 +5188,7 @@ void main() {
       await sdk_methods_39.invalidateByTags(
         config,
         projectIdOrName: (jsonDecode("\"Example Name\"") as String),
-        tags: jsonDecode("[\"tags\"]"),
+        tags: (jsonDecode("[\"tags\"]") as List).map((element) => (element as String)).toList(),
         teamId: SdkPresent<String>((jsonDecode("\"team_1a2b3c4d5e6f7g8h9i0j1k2l\"") as String)),
         slug: SdkPresent<String>((jsonDecode("\"my-team-url-slug\"") as String)),
         target: SdkPresent<InvalidateByTagsRequestBodyTarget>(InvalidateByTagsRequestBodyTarget.fromJson(jsonDecode("\"production\"") as String)),
@@ -6550,11 +6550,11 @@ void main() {
         slug: SdkPresent<String>((jsonDecode("\"my-team-url-slug\"") as String)),
         managedRules: SdkPresent<Map<String, dynamic>>(<String, dynamic>{}),
         crs: SdkPresent<PutFirewallConfigRequestBodyCrs>(PutFirewallConfigRequestBodyCrs.fromJson((jsonDecode("{\"sd\":{\"active\":false,\"action\":\"deny\"},\"ma\":{\"active\":false,\"action\":\"deny\"},\"lfi\":{\"active\":false,\"action\":\"deny\"},\"rfi\":{\"active\":false,\"action\":\"deny\"},\"rce\":{\"active\":false,\"action\":\"deny\"},\"php\":{\"active\":false,\"action\":\"deny\"},\"gen\":{\"active\":false,\"action\":\"deny\"},\"xss\":{\"active\":false,\"action\":\"deny\"},\"sqli\":{\"active\":false,\"action\":\"deny\"},\"sf\":{\"active\":false,\"action\":\"deny\"},\"java\":{\"active\":false,\"action\":\"deny\"}}") as Map).cast<String, dynamic>())),
-        rules: SdkPresent<List<PutFirewallConfigRequestBodyRulesItem>>((jsonDecode("[{\"id\":\"id-1\",\"name\":\"Example Name\",\"description\":\"example text\",\"active\":false,\"conditionGroup\":[{\"conditions\":[{\"type\":\"host\",\"op\":\"re\",\"neg\":false,\"key\":\"key\",\"value\":\"value\"}]}],\"action\":{\"mitigate\":{\"action\":\"log\",\"rateLimit\":{\"algo\":\"fixed_window\",\"window\":1,\"limit\":1,\"keys\":[\"keys\"],\"action\":\"log\"},\"redirect\":{\"location\":\"location\",\"permanent\":false},\"actionDuration\":\"actionDuration\",\"bypassSystem\":false,\"logHeaders\":\"logHeaders\"}},\"valid\":false,\"validationErrors\":[\"validationErrors\"]}]") as List).map((element) => PutFirewallConfigRequestBodyRulesItem.fromJson((element as Map).cast<String, dynamic>())).toList()),
+        rules: SdkPresent<List<PutFirewallConfigRequestBodyRulesItem>>((jsonDecode("[{\"id\":\"id-1\",\"name\":\"Example Name\",\"description\":\"example text\",\"active\":false,\"conditionGroup\":[{\"conditions\":[{\"type\":\"host\",\"op\":\"re\",\"neg\":false,\"key\":\"key\",\"value\":\"value\"}]}],\"action\":{\"mitigate\":{\"action\":\"log\",\"rateLimit\":{\"algo\":\"fixed_window\",\"window\":1,\"limit\":1,\"keys\":[\"keys\"],\"action\":\"log\"},\"redirect\":{\"location\":\"location\",\"permanent\":false},\"actionDuration\":\"actionDuration\",\"bypassSystem\":false,\"logHeaders\":[\"logHeaders\"]}},\"valid\":false,\"validationErrors\":[\"validationErrors\"]}]") as List).map((element) => PutFirewallConfigRequestBodyRulesItem.fromJson((element as Map).cast<String, dynamic>())).toList()),
         rulesets: SdkPresent<dynamic>(jsonDecode("[{\"id\":\"id-1\",\"name\":\"Example Name\",\"description\":\"example text\",\"active\":false,\"conditionGroup\":[{\"conditions\":[{\"type\":\"host\",\"op\":\"re\",\"neg\":false,\"key\":\"key\",\"value\":\"value\"}]}],\"action\":{\"mitigate\":{\"action\":\"deny\"}},\"valid\":false,\"validationErrors\":[\"validationErrors\"]}]")),
         ips: SdkPresent<List<PutFirewallConfigRequestBodyIpsItem>>((jsonDecode("[{\"id\":\"id-1\",\"hostname\":\"Example Name\",\"ip\":\"ip\",\"notes\":\"notes\",\"action\":\"deny\"}]") as List).map((element) => PutFirewallConfigRequestBodyIpsItem.fromJson((element as Map).cast<String, dynamic>())).toList()),
         botIdEnabled: SdkPresent<bool>((jsonDecode("false") as bool)),
-        logHeaders: SdkPresent<dynamic>(jsonDecode("\"logHeaders\"")),
+        logHeaders: SdkPresent<List<String>>((jsonDecode("[\"logHeaders\"]") as List).map((element) => (element as String)).toList()),
       );
       expect(
         mismatch(

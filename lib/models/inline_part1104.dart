@@ -14,11 +14,11 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
   final List<PutFirewallConfigRequestBodyRulesetsVariant0ItemConditionGroupItem> conditionGroup;
   final SdkOptional<PutFirewallConfigRequestBodyRulesetsVariant0ItemAction> action;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const PutFirewallConfigRequestBodyRulesetsVariant0Item({this.id = const SdkOmitted(), required this.name, this.description = const SdkOmitted(), required this.active, required this.conditionGroup, this.action = const SdkOmitted(), this.valid = const SdkOmitted(), this.validationErrors = const SdkOmitted()});
 
-  PutFirewallConfigRequestBodyRulesetsVariant0Item Function({SdkOptional<String> id, String name, SdkOptional<String> description, bool active, List<PutFirewallConfigRequestBodyRulesetsVariant0ItemConditionGroupItem> conditionGroup, SdkOptional<PutFirewallConfigRequestBodyRulesetsVariant0ItemAction> action, SdkOptional<bool> valid, SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBodyRulesetsVariant0Item Function({SdkOptional<String> id, String name, SdkOptional<String> description, bool active, List<PutFirewallConfigRequestBodyRulesetsVariant0ItemConditionGroupItem> conditionGroup, SdkOptional<PutFirewallConfigRequestBodyRulesetsVariant0ItemAction> action, SdkOptional<bool> valid, SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   PutFirewallConfigRequestBodyRulesetsVariant0Item _copyWith({Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? description = sdkOmittedValue, Object? active = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? action = sdkOmittedValue, Object? valid = sdkOmittedValue, Object? validationErrors = sdkOmittedValue}) => PutFirewallConfigRequestBodyRulesetsVariant0Item(
     id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
@@ -28,7 +28,7 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
     conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<PutFirewallConfigRequestBodyRulesetsVariant0ItemConditionGroupItem>,
     action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<PutFirewallConfigRequestBodyRulesetsVariant0ItemAction>,
     valid: identical(valid, sdkOmittedValue) ? this.valid : valid as SdkOptional<bool>,
-    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as SdkOptional<dynamic>,
+    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as SdkOptional<List<String>>,
   );
 
   factory PutFirewallConfigRequestBodyRulesetsVariant0Item.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBodyRulesetsVariant0Item(
@@ -39,7 +39,7 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
     conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => PutFirewallConfigRequestBodyRulesetsVariant0ItemConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
     action: json['action'] != null ? SdkPresent((json['action'] != null ? PutFirewallConfigRequestBodyRulesetsVariant0ItemAction.fromJson(json['action'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
     valid: json['valid'] != null ? SdkPresent((json['valid'] as bool?)!) : const SdkOmitted(),
-    validationErrors: json['validationErrors'] != null ? SdkPresent((json['validationErrors'])!) : const SdkOmitted(),
+    validationErrors: json['validationErrors'] != null ? SdkPresent(((json['validationErrors'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
   );
 
   Map<String, dynamic> toJson() => {
@@ -63,7 +63,7 @@ class PutFirewallConfigRequestBodyRulesetsVariant0Item {
       _ => const <String, dynamic>{},
     },
     ...switch (validationErrors) {
-      SdkPresent<dynamic>(value: final value) => {'validationErrors': value,},
+      SdkPresent<List<String>>(value: final value) => {'validationErrors': value,},
       _ => const <String, dynamic>{},
     },
   };
@@ -146,11 +146,11 @@ class PutFirewallConfigRequestBody {
   final SdkOptional<dynamic> rulesets;
   final SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips;
   final SdkOptional<bool> botIdEnabled;
-  final SdkOptional<dynamic> logHeaders;
+  final SdkOptional<List<String>> logHeaders;
 
   const PutFirewallConfigRequestBody({required this.firewallEnabled, this.managedRules = const SdkOmitted(), this.crs = const SdkOmitted(), this.rules = const SdkOmitted(), this.rulesets = const SdkOmitted(), this.ips = const SdkOmitted(), this.botIdEnabled = const SdkOmitted(), this.logHeaders = const SdkOmitted()});
 
-  PutFirewallConfigRequestBody Function({bool firewallEnabled, SdkOptional<Map<String, dynamic>> managedRules, SdkOptional<PutFirewallConfigRequestBodyCrs> crs, SdkOptional<List<PutFirewallConfigRequestBodyRulesItem>> rules, SdkOptional<dynamic> rulesets, SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips, SdkOptional<bool> botIdEnabled, SdkOptional<dynamic> logHeaders}) get copyWith => _copyWith;
+  PutFirewallConfigRequestBody Function({bool firewallEnabled, SdkOptional<Map<String, dynamic>> managedRules, SdkOptional<PutFirewallConfigRequestBodyCrs> crs, SdkOptional<List<PutFirewallConfigRequestBodyRulesItem>> rules, SdkOptional<dynamic> rulesets, SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips, SdkOptional<bool> botIdEnabled, SdkOptional<List<String>> logHeaders}) get copyWith => _copyWith;
 
   PutFirewallConfigRequestBody _copyWith({Object? firewallEnabled = sdkOmittedValue, Object? managedRules = sdkOmittedValue, Object? crs = sdkOmittedValue, Object? rules = sdkOmittedValue, Object? rulesets = sdkOmittedValue, Object? ips = sdkOmittedValue, Object? botIdEnabled = sdkOmittedValue, Object? logHeaders = sdkOmittedValue}) => PutFirewallConfigRequestBody(
     firewallEnabled: identical(firewallEnabled, sdkOmittedValue) ? this.firewallEnabled : firewallEnabled as bool,
@@ -160,7 +160,7 @@ class PutFirewallConfigRequestBody {
     rulesets: identical(rulesets, sdkOmittedValue) ? this.rulesets : rulesets as SdkOptional<dynamic>,
     ips: identical(ips, sdkOmittedValue) ? this.ips : ips as SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>>,
     botIdEnabled: identical(botIdEnabled, sdkOmittedValue) ? this.botIdEnabled : botIdEnabled as SdkOptional<bool>,
-    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<dynamic>,
+    logHeaders: identical(logHeaders, sdkOmittedValue) ? this.logHeaders : logHeaders as SdkOptional<List<String>>,
   );
 
   factory PutFirewallConfigRequestBody.fromJson(Map<String, dynamic> json) => PutFirewallConfigRequestBody(
@@ -171,7 +171,7 @@ class PutFirewallConfigRequestBody {
     rulesets: json['rulesets'] != null ? SdkPresent((json['rulesets'])!) : const SdkOmitted(),
     ips: json['ips'] != null ? SdkPresent(((json['ips'] as List?)?.map((e) => PutFirewallConfigRequestBodyIpsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
     botIdEnabled: json['botIdEnabled'] != null ? SdkPresent((json['botIdEnabled'] as bool?)!) : const SdkOmitted(),
-    logHeaders: json['logHeaders'] != null ? SdkPresent((json['logHeaders'])!) : const SdkOmitted(),
+    logHeaders: json['logHeaders'] != null ? SdkPresent(((json['logHeaders'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
   );
 
   Map<String, dynamic> toJson() => {
@@ -201,7 +201,7 @@ class PutFirewallConfigRequestBody {
       _ => const <String, dynamic>{},
     },
     ...switch (logHeaders) {
-      SdkPresent<dynamic>(value: final value) => {'logHeaders': value,},
+      SdkPresent<List<String>>(value: final value) => {'logHeaders': value,},
       _ => const <String, dynamic>{},
     },
   };

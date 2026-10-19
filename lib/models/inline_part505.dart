@@ -4,29 +4,6 @@
 part of 'inline.dart';
 
 // Inline operation models (part 505)
-final class CreateProjectResponseDefaultResourceConfigBuildMachineType {
-
-  final String value;
-
-  const CreateProjectResponseDefaultResourceConfigBuildMachineType._(this.value);
-
-  factory CreateProjectResponseDefaultResourceConfigBuildMachineType.fromJson(String value) => CreateProjectResponseDefaultResourceConfigBuildMachineType._(value);
-
-  static const basic = CreateProjectResponseDefaultResourceConfigBuildMachineType._('basic');
-  static const enhanced = CreateProjectResponseDefaultResourceConfigBuildMachineType._('enhanced');
-  static const standard = CreateProjectResponseDefaultResourceConfigBuildMachineType._('standard');
-  static const turbo = CreateProjectResponseDefaultResourceConfigBuildMachineType._('turbo');
-
-  String toJson() => value;
-
-  @override String toString() => value.toString();
-
-  @override bool operator ==(Object other) => other is CreateProjectResponseDefaultResourceConfigBuildMachineType && other.value == value;
-
-  @override int get hashCode => value.hashCode;
-
-}
-
 final class CreateProjectResponseDefaultResourceConfigBuildQueueConfiguration {
 
   final String value;
@@ -283,6 +260,28 @@ final class CreateProjectResponseDirectoryListing {
   @override String toString() => value.toString();
 
   @override bool operator ==(Object other) => other is CreateProjectResponseDirectoryListing && other.value == value;
+
+  @override int get hashCode => value.hashCode;
+
+}
+
+final class CreateProjectResponseDismissedToastsItemAction {
+
+  final String value;
+
+  const CreateProjectResponseDismissedToastsItemAction._(this.value);
+
+  factory CreateProjectResponseDismissedToastsItemAction.fromJson(String value) => CreateProjectResponseDismissedToastsItemAction._(value);
+
+  static const accept = CreateProjectResponseDismissedToastsItemAction._('accept');
+  static const cancel = CreateProjectResponseDismissedToastsItemAction._('cancel');
+  static const delete = CreateProjectResponseDismissedToastsItemAction._('delete');
+
+  String toJson() => value;
+
+  @override String toString() => value.toString();
+
+  @override bool operator ==(Object other) => other is CreateProjectResponseDismissedToastsItemAction && other.value == value;
 
   @override int get hashCode => value.hashCode;
 

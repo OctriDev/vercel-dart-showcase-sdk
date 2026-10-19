@@ -10,7 +10,7 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
   /// Name of the ENV variable
   final String key;
   /// Deployment Target or Targets in which the ENV variable will be used
-  final dynamic target;
+  final List<CreateProjectRequestBodyEnvironmentVariablesItemTargetItem> target;
   /// If defined, the git branch of the environment variable (must have target=preview)
   final SdkOptional<String> gitBranch;
   /// Type of the ENV variable
@@ -20,11 +20,11 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
 
   const CreateProjectRequestBodyEnvironmentVariablesItem({required this.key, required this.target, this.gitBranch = const SdkOmitted(), this.type_ = const SdkOmitted(), required this.value});
 
-  CreateProjectRequestBodyEnvironmentVariablesItem Function({String key, dynamic target, SdkOptional<String> gitBranch, SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType> type_, String value}) get copyWith => _copyWith;
+  CreateProjectRequestBodyEnvironmentVariablesItem Function({String key, List<CreateProjectRequestBodyEnvironmentVariablesItemTargetItem> target, SdkOptional<String> gitBranch, SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType> type_, String value}) get copyWith => _copyWith;
 
   CreateProjectRequestBodyEnvironmentVariablesItem _copyWith({Object? key = sdkOmittedValue, Object? target = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateProjectRequestBodyEnvironmentVariablesItem(
     key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    target: identical(target, sdkOmittedValue) ? this.target : target as dynamic,
+    target: identical(target, sdkOmittedValue) ? this.target : target as List<CreateProjectRequestBodyEnvironmentVariablesItemTargetItem>,
     gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
     type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<CreateProjectRequestBodyEnvironmentVariablesItemType>,
     value: identical(value, sdkOmittedValue) ? this.value : value as String,
@@ -32,7 +32,7 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
 
   factory CreateProjectRequestBodyEnvironmentVariablesItem.fromJson(Map<String, dynamic> json) => CreateProjectRequestBodyEnvironmentVariablesItem(
     key: (json['key'] as String?)!,
-    target: (json['target'])!,
+    target: ((json['target'] as List?)?.map((e) => CreateProjectRequestBodyEnvironmentVariablesItemTargetItem.fromJson(e as String)).toList())!,
     gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
     type_: json['type'] != null ? SdkPresent((json['type'] != null ? CreateProjectRequestBodyEnvironmentVariablesItemType.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
     value: (json['value'] as String?)!,
@@ -40,7 +40,7 @@ class CreateProjectRequestBodyEnvironmentVariablesItem {
 
   Map<String, dynamic> toJson() => {
     'key': key,
-    'target': target,
+    'target': target.map((item) => item.toJson()).toList(),
     ...switch (gitBranch) {
       SdkPresent<String>(value: final value) => {'gitBranch': value,},
       _ => const <String, dynamic>{},

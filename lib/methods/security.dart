@@ -69,7 +69,7 @@ Future<PutFirewallConfigResponse> putFirewallConfig(ClientConfig config,
     SdkOptional<dynamic> rulesets = const SdkOmitted(),
     SdkOptional<List<PutFirewallConfigRequestBodyIpsItem>> ips = const SdkOmitted(),
     SdkOptional<bool> botIdEnabled = const SdkOmitted(),
-    SdkOptional<dynamic> logHeaders = const SdkOmitted(),
+    SdkOptional<List<String>> logHeaders = const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   return (await sdkRequest<PutFirewallConfigResponse>(
           'PUT', '/v1/security/firewall/config',

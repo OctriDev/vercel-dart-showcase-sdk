@@ -4,48 +4,6 @@
 part of 'inline.dart';
 
 // Inline operation models (part 503)
-final class CreateProjectResponseAliasItemDeploymentReadySubstate {
-
-  final String value;
-
-  const CreateProjectResponseAliasItemDeploymentReadySubstate._(this.value);
-
-  factory CreateProjectResponseAliasItemDeploymentReadySubstate.fromJson(String value) => CreateProjectResponseAliasItemDeploymentReadySubstate._(value);
-
-  static const promoted = CreateProjectResponseAliasItemDeploymentReadySubstate._('PROMOTED');
-  static const rolling = CreateProjectResponseAliasItemDeploymentReadySubstate._('ROLLING');
-  static const staged = CreateProjectResponseAliasItemDeploymentReadySubstate._('STAGED');
-
-  String toJson() => value;
-
-  @override String toString() => value.toString();
-
-  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentReadySubstate && other.value == value;
-
-  @override int get hashCode => value.hashCode;
-
-}
-
-final class CreateProjectResponseAliasItemDeploymentType {
-
-  final String value;
-
-  const CreateProjectResponseAliasItemDeploymentType._(this.value);
-
-  factory CreateProjectResponseAliasItemDeploymentType.fromJson(String value) => CreateProjectResponseAliasItemDeploymentType._(value);
-
-  static const lambdas = CreateProjectResponseAliasItemDeploymentType._('LAMBDAS');
-
-  String toJson() => value;
-
-  @override String toString() => value.toString();
-
-  @override bool operator ==(Object other) => other is CreateProjectResponseAliasItemDeploymentType && other.value == value;
-
-  @override int get hashCode => value.hashCode;
-
-}
-
 final class CreateProjectResponseAliasItemDeploymentWithCache {
 
   final bool value;
@@ -276,6 +234,49 @@ final class CreateProjectResponseConnectConfigurationsItemEnvIdVariant1 {
   @override String toString() => value.toString();
 
   @override bool operator ==(Object other) => other is CreateProjectResponseConnectConfigurationsItemEnvIdVariant1 && other.value == value;
+
+  @override int get hashCode => value.hashCode;
+
+}
+
+final class CreateProjectResponseConnectConfigurationsItemPassive {
+
+  final bool value;
+
+  const CreateProjectResponseConnectConfigurationsItemPassive._(this.value);
+
+  factory CreateProjectResponseConnectConfigurationsItemPassive.fromJson(bool value) => CreateProjectResponseConnectConfigurationsItemPassive._(value);
+
+  static const false_ = CreateProjectResponseConnectConfigurationsItemPassive._(false);
+  static const true_ = CreateProjectResponseConnectConfigurationsItemPassive._(true);
+
+  bool toJson() => value;
+
+  @override String toString() => value.toString();
+
+  @override bool operator ==(Object other) => other is CreateProjectResponseConnectConfigurationsItemPassive && other.value == value;
+
+  @override int get hashCode => value.hashCode;
+
+}
+
+/// Whether the host was inferred from the production deployment URL rather than explicitly provided.
+final class CreateProjectResponseCronsDefinitionsItemHostInferred {
+
+  final bool value;
+
+  const CreateProjectResponseCronsDefinitionsItemHostInferred._(this.value);
+
+  factory CreateProjectResponseCronsDefinitionsItemHostInferred.fromJson(bool value) => CreateProjectResponseCronsDefinitionsItemHostInferred._(value);
+
+  static const false_ = CreateProjectResponseCronsDefinitionsItemHostInferred._(false);
+  static const true_ = CreateProjectResponseCronsDefinitionsItemHostInferred._(true);
+
+  bool toJson() => value;
+
+  @override String toString() => value.toString();
+
+  @override bool operator ==(Object other) => other is CreateProjectResponseCronsDefinitionsItemHostInferred && other.value == value;
 
   @override int get hashCode => value.hashCode;
 

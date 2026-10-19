@@ -81,11 +81,11 @@ class UpdateFirewallConfigRequestBodyVariant5Value {
   final bool active;
   final List<UpdateFirewallConfigRequestBodyVariant5ValueConditionGroupItem> conditionGroup;
   final SdkOptional<bool> valid;
-  final SdkOptional<dynamic> validationErrors;
+  final SdkOptional<List<String>> validationErrors;
 
   const UpdateFirewallConfigRequestBodyVariant5Value({required this.name, this.description = const SdkOmitted(), required this.active, required this.conditionGroup, this.valid = const SdkOmitted(), this.validationErrors = const SdkOmitted()});
 
-  UpdateFirewallConfigRequestBodyVariant5Value Function({String name, SdkOptional<String> description, bool active, List<UpdateFirewallConfigRequestBodyVariant5ValueConditionGroupItem> conditionGroup, SdkOptional<bool> valid, SdkOptional<dynamic> validationErrors}) get copyWith => _copyWith;
+  UpdateFirewallConfigRequestBodyVariant5Value Function({String name, SdkOptional<String> description, bool active, List<UpdateFirewallConfigRequestBodyVariant5ValueConditionGroupItem> conditionGroup, SdkOptional<bool> valid, SdkOptional<List<String>> validationErrors}) get copyWith => _copyWith;
 
   UpdateFirewallConfigRequestBodyVariant5Value _copyWith({Object? name = sdkOmittedValue, Object? description = sdkOmittedValue, Object? active = sdkOmittedValue, Object? conditionGroup = sdkOmittedValue, Object? valid = sdkOmittedValue, Object? validationErrors = sdkOmittedValue}) => UpdateFirewallConfigRequestBodyVariant5Value(
     name: identical(name, sdkOmittedValue) ? this.name : name as String,
@@ -93,7 +93,7 @@ class UpdateFirewallConfigRequestBodyVariant5Value {
     active: identical(active, sdkOmittedValue) ? this.active : active as bool,
     conditionGroup: identical(conditionGroup, sdkOmittedValue) ? this.conditionGroup : conditionGroup as List<UpdateFirewallConfigRequestBodyVariant5ValueConditionGroupItem>,
     valid: identical(valid, sdkOmittedValue) ? this.valid : valid as SdkOptional<bool>,
-    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as SdkOptional<dynamic>,
+    validationErrors: identical(validationErrors, sdkOmittedValue) ? this.validationErrors : validationErrors as SdkOptional<List<String>>,
   );
 
   factory UpdateFirewallConfigRequestBodyVariant5Value.fromJson(Map<String, dynamic> json) => UpdateFirewallConfigRequestBodyVariant5Value(
@@ -102,7 +102,7 @@ class UpdateFirewallConfigRequestBodyVariant5Value {
     active: (json['active'] as bool?)!,
     conditionGroup: ((json['conditionGroup'] as List?)?.map((e) => UpdateFirewallConfigRequestBodyVariant5ValueConditionGroupItem.fromJson(e as Map<String, dynamic>)).toList())!,
     valid: json['valid'] != null ? SdkPresent((json['valid'] as bool?)!) : const SdkOmitted(),
-    validationErrors: json['validationErrors'] != null ? SdkPresent((json['validationErrors'])!) : const SdkOmitted(),
+    validationErrors: json['validationErrors'] != null ? SdkPresent(((json['validationErrors'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
   );
 
   Map<String, dynamic> toJson() => {
@@ -118,7 +118,7 @@ class UpdateFirewallConfigRequestBodyVariant5Value {
       _ => const <String, dynamic>{},
     },
     ...switch (validationErrors) {
-      SdkPresent<dynamic>(value: final value) => {'validationErrors': value,},
+      SdkPresent<List<String>>(value: final value) => {'validationErrors': value,},
       _ => const <String, dynamic>{},
     },
   };
