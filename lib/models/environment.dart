@@ -5,5 +5,7 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'environment_part1.dart';
-part 'environment_part2.dart';
+part 'environment_create_shared_env_variable.dart';
+part 'environment_get_shared_env_var.dart';
+part 'environment_list_shared_env_variable.dart';
+part 'environment_update_shared_env_variable.dart';

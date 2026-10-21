@@ -5,4 +5,4 @@
 import '../sdk_utils.dart';
 import 'misc.dart';
 
-part 'vercel_part1.dart';
+part 'vercel_models.dart';

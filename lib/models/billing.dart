@@ -5,14 +5,14 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'billing_part1.dart';
-part 'billing_part2.dart';
-part 'billing_part3.dart';
-part 'billing_part4.dart';
-part 'billing_part5.dart';
-part 'billing_part6.dart';
-part 'billing_part7.dart';
-part 'billing_part8.dart';
-part 'billing_part9.dart';
-part 'billing_part10.dart';
-part 'billing_part11.dart';
+part 'billing_buy_credits_response.dart';
+part 'billing_buy_credits_response_variant1_purchase_intent_configuration_variant2_options.dart';
+part 'billing_buy_credits_response_variant1_purchase_intent_configuration_variant4_options_replace_pri.dart';
+part 'billing_buy_credits_response_variant1_purchase_intent_configuration_variant5_options.dart';
+part 'billing_buy_credits_response_variant1_purchase_intent_configuration_variant6_output.dart';
+part 'billing_buy_credits_response_variant1_purchase_intent_line_items_item.dart';
+part 'billing_buy_credits_response_variant2_orb_subscription_intent_configuration_variant0_output_chan.dart';
+part 'billing_buy_credits_response_variant2_orb_subscription_intent_configuration_variant1_output_chan.dart';
+part 'billing_buy_credits_response_variant2_orb_subscription_intent_configuration_variant2_output_chan.dart';
+part 'billing_buy_credits_response_variant2_orb_subscription_intent_configuration_variant3_output_chan.dart';
+part 'billing_buy_credits_response_variant2_orb_subscription_intent_orb_update_variant2.dart';

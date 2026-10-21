@@ -4,4 +4,4 @@
 // api_keys domain model library.
 import '../sdk_utils.dart';
 
-part 'api_keys_part1.dart';
+part 'api_keys_models.dart';

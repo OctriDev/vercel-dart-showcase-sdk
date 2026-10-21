@@ -7957,7 +7957,7 @@ class TeamsNamespace {
       SdkOptional<String> name = const SdkOmitted(),
       SdkOptional<String?> previewDeploymentSuffix = const SdkOmitted(),
       SdkOptional<bool> regenerateInviteCode = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodySaml> saml = const SdkOmitted(),
+      SdkOptional<UpdateTeamRequestBodySaml> saml = const SdkOmitted(),
       SdkOptional<String> slug_2 = const SdkOmitted(),
       SdkOptional<String> enablePreviewFeedback = const SdkOmitted(),
       SdkOptional<String> enableProductionFeedback = const SdkOmitted(),
@@ -7965,37 +7965,37 @@ class TeamsNamespace {
           const SdkOmitted(),
       SdkOptional<String> disjunctiveProductionSecretPolicy =
           const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyRemoteCaching> remoteCaching =
+      SdkOptional<UpdateTeamRequestBodyRemoteCaching> remoteCaching =
           const SdkOmitted(),
       SdkOptional<bool> hideIpAddresses = const SdkOmitted(),
       SdkOptional<bool> hideIpAddressesInLogDrains = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode>
-          dpAccessRequestsMode = const SdkOmitted(),
+      SdkOptional<UpdateTeamRequestBodyDpAccessRequestsMode> dpAccessRequestsMode =
+          const SdkOmitted(),
       SdkOptional<bool> requireVerifiedCommits = const SdkOmitted(),
       SdkOptional<bool> disableRepositoryDispatchEvents = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection>
+      SdkOptional<UpdateTeamRequestBodyDefaultDeploymentProtection>
           defaultDeploymentProtection = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDefaultPassport?> defaultPassport =
+      SdkOptional<UpdateTeamRequestBodyDefaultPassport?> defaultPassport =
           const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings>
+      SdkOptional<UpdateTeamRequestBodyDefaultExpirationSettings>
           defaultExpirationSettings = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestDeploymentPolicy> deploymentPolicy =
+      SdkOptional<UpdateTeamRequestDeploymentPolicy> deploymentPolicy =
           const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>
+      SdkOptional<UpdateTeamRequestBodyStrictDeploymentProtectionSettings>
           strictDeploymentProtectionSettings = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks>
+      SdkOptional<UpdateTeamRequestBodyStrictShareableLinks>
           strictShareableLinks = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>
+      SdkOptional<UpdateTeamRequestBodyStrictPasswordProtectionSettings>
           strictPasswordProtectionSettings = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyStrictConnectors> strictConnectors =
+      SdkOptional<UpdateTeamRequestBodyStrictConnectors> strictConnectors =
           const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestNsnbConfig> nsnbConfig = const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestDefaultProjectJobs> defaultProjectJobs =
+      SdkOptional<UpdateTeamRequestNsnbConfig> nsnbConfig = const SdkOmitted(),
+      SdkOptional<UpdateTeamRequestDefaultProjectJobs> defaultProjectJobs =
           const SdkOmitted(),
-      SdkOptional<UpdateTeamsRequestBodyResourceConfig> resourceConfig =
+      SdkOptional<UpdateTeamRequestBodyResourceConfig> resourceConfig =
           const SdkOmitted(),
       RequestOptions? requestOptions}) async {
-    return teams_methods.updateTeams(_config,
+    return teams_methods.updateTeam(_config,
         teamId: teamId,
         slug: slug,
         avatar: avatar,

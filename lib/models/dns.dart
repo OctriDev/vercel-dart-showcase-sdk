@@ -4,4 +4,4 @@
 // dns domain model library.
 import '../sdk_utils.dart';
 
-part 'dns_part1.dart';
+part 'dns_models.dart';

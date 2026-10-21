@@ -5,9 +5,16 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'vercel_ci_part1.dart';
-part 'vercel_ci_part2.dart';
-part 'vercel_ci_part3.dart';
-part 'vercel_ci_part4.dart';
-part 'vercel_ci_part5.dart';
-part 'vercel_ci_part6.dart';
+part 'vercel_ci_get_vercel_ci_invocation.dart';
+part 'vercel_ci_get_vercel_ci_invocation_tree_response_invocation_source.dart';
+part 'vercel_ci_get_vercel_ci_invocation_tree_response_jobs_item_run_completed_conclusion.dart';
+part 'vercel_ci_get_vercel_ci_invocation_tree_response_jobs_item_tasks_item_definition_operation.dart';
+part 'vercel_ci_get_vercel_ci_invocation_tree_response_jobs_item_tasks_item_run_completed_conclusion.dart';
+part 'vercel_ci_get_vercel_ci_job_run.dart';
+part 'vercel_ci_get_vercel_ci_task_logs.dart';
+part 'vercel_ci_list_vercel_ci_invocation_attempts.dart';
+part 'vercel_ci_list_vercel_ci_invocations.dart';
+part 'vercel_ci_list_vercel_ci_job_runs.dart';
+part 'vercel_ci_list_vercel_ci_task_definitions.dart';
+part 'vercel_ci_list_vercel_ci_task_runs.dart';
+part 'vercel_ci_search_vercel_ci_logs.dart';

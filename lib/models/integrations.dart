@@ -5,9 +5,8 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'integrations_part1.dart';
-part 'integrations_part2.dart';
-part 'integrations_part3.dart';
-part 'integrations_part4.dart';
-part 'integrations_part5.dart';
-part 'integrations_part6.dart';
+part 'integrations_create_integration_store_direct.dart';
+part 'integrations_get_configuration_response.dart';
+part 'integrations_get_configuration_response_variant0_transfer_request_variant1.dart';
+part 'integrations_get_configuration_response_variant1.dart';
+part 'integrations_get_configuration_response_variant2.dart';

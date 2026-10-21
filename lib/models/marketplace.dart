@@ -5,4 +5,4 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'marketplace_part1.dart';
+part 'marketplace_models.dart';

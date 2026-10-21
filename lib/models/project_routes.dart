@@ -5,12 +5,17 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'project_routes_part1.dart';
-part 'project_routes_part2.dart';
-part 'project_routes_part3.dart';
-part 'project_routes_part4.dart';
-part 'project_routes_part5.dart';
-part 'project_routes_part6.dart';
-part 'project_routes_part7.dart';
-part 'project_routes_part8.dart';
-part 'project_routes_part9.dart';
+part 'project_routes_add_route_response_route_route_destination.dart';
+part 'project_routes_add_route_response_route_route_has_item.dart';
+part 'project_routes_add_route_response_route_route_has_item_variant1_value.dart';
+part 'project_routes_add_route_response_route_route_missing_item.dart';
+part 'project_routes_add_route_response_route_route_missing_item_variant1_value.dart';
+part 'project_routes_add_route_response_route_route_transforms_item.dart';
+part 'project_routes_add_route_response_route_route_transforms_item_add_route_response_route_route_tra.dart';
+part 'project_routes_edit_route_response_route_route_destination.dart';
+part 'project_routes_edit_route_response_route_route_has_item.dart';
+part 'project_routes_edit_route_response_route_route_has_item_variant1_value.dart';
+part 'project_routes_edit_route_response_route_route_missing_item.dart';
+part 'project_routes_edit_route_response_route_route_missing_item_variant1_value.dart';
+part 'project_routes_edit_route_response_route_route_transforms_item.dart';
+part 'project_routes_edit_route_response_route_route_transforms_item_edit_route_response_route_route_t.dart';

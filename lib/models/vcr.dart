@@ -5,6 +5,10 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'vcr_part1.dart';
-part 'vcr_part2.dart';
-part 'vcr_part3.dart';
+part 'vcr_image_detail.dart';
+part 'vcr_image_layer.dart';
+part 'vcr_list_repository_images.dart';
+part 'vcr_shared.dart';
+part 'vcr_list_repositories.dart';
+part 'vcr_list_repository_permissions.dart';
+part 'vcr_get_repository_tag.dart';

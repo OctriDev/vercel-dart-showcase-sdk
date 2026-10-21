@@ -5,4 +5,4 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'networking_part1.dart';
+part 'networking_models.dart';

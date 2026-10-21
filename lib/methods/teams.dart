@@ -283,7 +283,7 @@ Future<Team> getTeams(ClientConfig config,
 ///   projects.
 /// [defaultPassport] Default Passport configuration for new projects.
 /// [deploymentPolicy] Typed representation of the
-///   `UpdateTeamsRequestDeploymentPolicy` API schema.
+///   `UpdateTeamRequestDeploymentPolicy` API schema.
 /// [strictDeploymentProtectionSettings] When enabled, deployment protection
 ///   settings require stricter permissions (owner-only).
 /// [strictShareableLinks] When enabled, creating shareable links requires Owner
@@ -292,12 +292,12 @@ Future<Team> getTeams(ClientConfig config,
 ///   removing project password protection requires Owner role.
 /// [strictConnectors] When enabled, creating and managing connectors requires
 ///   Owner role.
-/// [nsnbConfig] Typed representation of the `UpdateTeamsRequestNsnbConfig` API
+/// [nsnbConfig] Typed representation of the `UpdateTeamRequestNsnbConfig` API
 ///   schema.
 /// [defaultProjectJobs] Typed representation of the
-///   `UpdateTeamsRequestDefaultProjectJobs` API schema.
+///   `UpdateTeamRequestDefaultProjectJobs` API schema.
 /// [resourceConfig] Resource configuration for the team.
-Future<Team> updateTeams(ClientConfig config,
+Future<Team> updateTeam(ClientConfig config,
     {required String teamId,
     SdkOptional<String> slug = const SdkOmitted(),
     SdkOptional<String?> avatar = const SdkOmitted(),
@@ -306,40 +306,40 @@ Future<Team> updateTeams(ClientConfig config,
     SdkOptional<String> name = const SdkOmitted(),
     SdkOptional<String?> previewDeploymentSuffix = const SdkOmitted(),
     SdkOptional<bool> regenerateInviteCode = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodySaml> saml = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodySaml> saml = const SdkOmitted(),
     SdkOptional<String> slug_2 = const SdkOmitted(),
     SdkOptional<String> enablePreviewFeedback = const SdkOmitted(),
     SdkOptional<String> enableProductionFeedback = const SdkOmitted(),
     SdkOptional<String> sensitiveEnvironmentVariablePolicy = const SdkOmitted(),
     SdkOptional<String> disjunctiveProductionSecretPolicy = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyRemoteCaching> remoteCaching =
+    SdkOptional<UpdateTeamRequestBodyRemoteCaching> remoteCaching =
         const SdkOmitted(),
     SdkOptional<bool> hideIpAddresses = const SdkOmitted(),
     SdkOptional<bool> hideIpAddressesInLogDrains = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyDpAccessRequestsMode> dpAccessRequestsMode =
+    SdkOptional<UpdateTeamRequestBodyDpAccessRequestsMode> dpAccessRequestsMode =
         const SdkOmitted(),
     SdkOptional<bool> requireVerifiedCommits = const SdkOmitted(),
     SdkOptional<bool> disableRepositoryDispatchEvents = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyDefaultDeploymentProtection>
+    SdkOptional<UpdateTeamRequestBodyDefaultDeploymentProtection>
         defaultDeploymentProtection = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyDefaultPassport?> defaultPassport =
+    SdkOptional<UpdateTeamRequestBodyDefaultPassport?> defaultPassport =
         const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyDefaultExpirationSettings>
+    SdkOptional<UpdateTeamRequestBodyDefaultExpirationSettings>
         defaultExpirationSettings = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestDeploymentPolicy> deploymentPolicy =
+    SdkOptional<UpdateTeamRequestDeploymentPolicy> deploymentPolicy =
         const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyStrictDeploymentProtectionSettings>
+    SdkOptional<UpdateTeamRequestBodyStrictDeploymentProtectionSettings>
         strictDeploymentProtectionSettings = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyStrictShareableLinks>
+    SdkOptional<UpdateTeamRequestBodyStrictShareableLinks>
         strictShareableLinks = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyStrictPasswordProtectionSettings>
+    SdkOptional<UpdateTeamRequestBodyStrictPasswordProtectionSettings>
         strictPasswordProtectionSettings = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyStrictConnectors>
-        strictConnectors = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestNsnbConfig> nsnbConfig = const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestDefaultProjectJobs> defaultProjectJobs =
+    SdkOptional<UpdateTeamRequestBodyStrictConnectors> strictConnectors =
         const SdkOmitted(),
-    SdkOptional<UpdateTeamsRequestBodyResourceConfig> resourceConfig =
+    SdkOptional<UpdateTeamRequestNsnbConfig> nsnbConfig = const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestDefaultProjectJobs> defaultProjectJobs =
+        const SdkOmitted(),
+    SdkOptional<UpdateTeamRequestBodyResourceConfig> resourceConfig =
         const SdkOmitted(),
     RequestOptions? requestOptions}) async {
   if (avatar is SdkPresent<String?>) {
@@ -410,7 +410,7 @@ Future<Team> updateTeams(ClientConfig config,
             'resourceConfig': SdkUtils.unwrapOptional(resourceConfig)
           },
           decoder: SdkResponseDecoder.json,
-          operationId: 'updateTeams',
+          operationId: 'updateTeam',
           fromJsonRaw: (value) => Team.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
