@@ -8,217 +8,426 @@ part of 'connect.dart';
 class ConnectConnectorCreateDataVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// GitHub App numeric ID.
   final int appId;
+
   /// GitHub App slug.
   final String appSlug;
+
   /// GitHub App display name.
   final String appName;
+
   /// OAuth client ID assigned by GitHub.
   final String clientId;
+
   /// GitHub App owner.
   final SdkOptional<ConnectConnectorCreateDataVariant2Owner> owner;
+
   /// Additional provider metadata stored with the connector.
   final SdkOptional<Map<String, dynamic>> extras;
 
-  const ConnectConnectorCreateDataVariant2({required this.appId, required this.appSlug, required this.appName, required this.clientId, this.owner = const SdkOmitted(), this.extras = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant2(
+      {required this.appId,
+      required this.appSlug,
+      required this.appName,
+      required this.clientId,
+      this.owner = const SdkOmitted(),
+      this.extras = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant2 Function({int appId, String appSlug, String appName, String clientId, SdkOptional<ConnectConnectorCreateDataVariant2Owner> owner, SdkOptional<Map<String, dynamic>> extras}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant2 Function(
+      {int appId,
+      String appSlug,
+      String appName,
+      String clientId,
+      SdkOptional<ConnectConnectorCreateDataVariant2Owner> owner,
+      SdkOptional<Map<String, dynamic>> extras}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant2 _copyWith({Object? appId = sdkOmittedValue, Object? appSlug = sdkOmittedValue, Object? appName = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? extras = sdkOmittedValue}) => ConnectConnectorCreateDataVariant2(
-    appId: identical(appId, sdkOmittedValue) ? this.appId : appId as int,
-    appSlug: identical(appSlug, sdkOmittedValue) ? this.appSlug : appSlug as String,
-    appName: identical(appName, sdkOmittedValue) ? this.appName : appName as String,
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as SdkOptional<ConnectConnectorCreateDataVariant2Owner>,
-    extras: identical(extras, sdkOmittedValue) ? this.extras : extras as SdkOptional<Map<String, dynamic>>,
-  );
+  ConnectConnectorCreateDataVariant2 _copyWith(
+          {Object? appId = sdkOmittedValue,
+          Object? appSlug = sdkOmittedValue,
+          Object? appName = sdkOmittedValue,
+          Object? clientId = sdkOmittedValue,
+          Object? owner = sdkOmittedValue,
+          Object? extras = sdkOmittedValue}) =>
+      ConnectConnectorCreateDataVariant2(
+        appId: identical(appId, sdkOmittedValue) ? this.appId : appId as int,
+        appSlug: identical(appSlug, sdkOmittedValue)
+            ? this.appSlug
+            : appSlug as String,
+        appName: identical(appName, sdkOmittedValue)
+            ? this.appName
+            : appName as String,
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as String,
+        owner: identical(owner, sdkOmittedValue)
+            ? this.owner
+            : owner as SdkOptional<ConnectConnectorCreateDataVariant2Owner>,
+        extras: identical(extras, sdkOmittedValue)
+            ? this.extras
+            : extras as SdkOptional<Map<String, dynamic>>,
+      );
 
-  factory ConnectConnectorCreateDataVariant2.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant2(
-    appId: ((json['appId'] as num?)?.toInt())!,
-    appSlug: (json['appSlug'] as String?)!,
-    appName: (json['appName'] as String?)!,
-    clientId: (json['clientId'] as String?)!,
-    owner: json['owner'] != null ? SdkPresent((json['owner'] != null ? ConnectConnectorCreateDataVariant2Owner.fromJson(json['owner'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    extras: json['extras'] != null ? SdkPresent((json['extras'] == null ? null : json['extras'] as Map<String, dynamic>)!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorCreateDataVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectConnectorCreateDataVariant2(
+        appId: ((json['appId'] as num?)?.toInt())!,
+        appSlug: (json['appSlug'] as String?)!,
+        appName: (json['appName'] as String?)!,
+        clientId: (json['clientId'] as String?)!,
+        owner: json['owner'] != null
+            ? SdkPresent((json['owner'] != null
+                ? ConnectConnectorCreateDataVariant2Owner.fromJson(
+                    json['owner'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        extras: json['extras'] != null
+            ? SdkPresent((json['extras'] == null
+                ? null
+                : json['extras'] as Map<String, dynamic>)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'appId': appId,
-    'appSlug': appSlug,
-    'appName': appName,
-    'clientId': clientId,
-    ...switch (owner) {
-      SdkPresent<ConnectConnectorCreateDataVariant2Owner>(value: final value) => {'owner': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (extras) {
-      SdkPresent<Map<String, dynamic>>(value: final value) => {'extras': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'appId': appId,
+        'appSlug': appSlug,
+        'appName': appName,
+        'clientId': clientId,
+        ...switch (owner) {
+          SdkPresent<ConnectConnectorCreateDataVariant2Owner>(
+            value: final value
+          ) =>
+            {
+              'owner': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (extras) {
+          SdkPresent<Map<String, dynamic>>(value: final value) => {
+              'extras': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Linear organization that owns the OAuth application.
 class ConnectConnectorCreateDataVariant3OwnerOrganization {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Linear organization ID.
   final String id;
+
   /// Linear organization slug.
   final String slug;
+
   /// Linear organization name.
   final String name;
+
   /// Linear organization logo URL.
   final SdkOptional<String?> logoUrl;
 
-  const ConnectConnectorCreateDataVariant3OwnerOrganization({required this.id, required this.slug, required this.name, this.logoUrl = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant3OwnerOrganization(
+      {required this.id,
+      required this.slug,
+      required this.name,
+      this.logoUrl = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant3OwnerOrganization Function({String id, String slug, String name, SdkOptional<String?> logoUrl}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant3OwnerOrganization Function(
+      {String id,
+      String slug,
+      String name,
+      SdkOptional<String?> logoUrl}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant3OwnerOrganization _copyWith({Object? id = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? name = sdkOmittedValue, Object? logoUrl = sdkOmittedValue}) => ConnectConnectorCreateDataVariant3OwnerOrganization(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    logoUrl: identical(logoUrl, sdkOmittedValue) ? this.logoUrl : logoUrl as SdkOptional<String?>,
-  );
+  ConnectConnectorCreateDataVariant3OwnerOrganization _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? logoUrl = sdkOmittedValue}) =>
+      ConnectConnectorCreateDataVariant3OwnerOrganization(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        logoUrl: identical(logoUrl, sdkOmittedValue)
+            ? this.logoUrl
+            : logoUrl as SdkOptional<String?>,
+      );
 
-  factory ConnectConnectorCreateDataVariant3OwnerOrganization.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant3OwnerOrganization(
-    id: (json['id'] as String?)!,
-    slug: (json['slug'] as String?)!,
-    name: (json['name'] as String?)!,
-    logoUrl: json.containsKey('logoUrl') ? SdkPresent(json['logoUrl'] as String?) : const SdkOmitted(),
-  );
+  factory ConnectConnectorCreateDataVariant3OwnerOrganization.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectConnectorCreateDataVariant3OwnerOrganization(
+        id: (json['id'] as String?)!,
+        slug: (json['slug'] as String?)!,
+        name: (json['name'] as String?)!,
+        logoUrl: json.containsKey('logoUrl')
+            ? SdkPresent(json['logoUrl'] as String?)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'slug': slug,
-    'name': name,
-    ...switch (logoUrl) {
-      SdkPresent<String?>(value: final value) => {'logoUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        'slug': slug,
+        'name': name,
+        ...switch (logoUrl) {
+          SdkPresent<String?>(value: final value) => {
+              'logoUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Linear OAuth application metadata.
 class ConnectConnectorCreateDataVariant3Application {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Linear OAuth application ID.
   final String id;
+
   /// Linear OAuth client ID.
   final String clientId;
+
   /// Linear OAuth application name.
   final String name;
+
   /// Linear OAuth application description.
   final SdkOptional<String?> description;
+
   /// Linear OAuth application developer name.
   final SdkOptional<String?> developer;
+
   /// Linear OAuth application developer URL.
   final SdkOptional<String?> developerUrl;
+
   /// Linear OAuth application image URL.
   final SdkOptional<String?> imageUrl;
+
   /// Registered redirect URIs for the Linear OAuth application.
   final SdkOptional<List<String>> redirectUris;
+
   /// Linear OAuth application distribution mode.
   final SdkOptional<String?> distribution;
+
   /// Linear resource types delivered to the webhook.
   final SdkOptional<List<String>> webhookResourceTypes;
+
   /// Linear webhook URL.
   final SdkOptional<String?> webhookUrl;
+
   /// Whether the Linear webhook is enabled.
   final SdkOptional<bool> webhookEnabled;
+
   /// Linear OAuth application creation timestamp.
   final SdkOptional<String> createdAt;
+
   /// Linear OAuth application update timestamp.
   final SdkOptional<String> updatedAt;
 
-  const ConnectConnectorCreateDataVariant3Application({required this.id, required this.clientId, required this.name, this.description = const SdkOmitted(), this.developer = const SdkOmitted(), this.developerUrl = const SdkOmitted(), this.imageUrl = const SdkOmitted(), this.redirectUris = const SdkOmitted(), this.distribution = const SdkOmitted(), this.webhookResourceTypes = const SdkOmitted(), this.webhookUrl = const SdkOmitted(), this.webhookEnabled = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.updatedAt = const SdkOmitted()});
+  const ConnectConnectorCreateDataVariant3Application(
+      {required this.id,
+      required this.clientId,
+      required this.name,
+      this.description = const SdkOmitted(),
+      this.developer = const SdkOmitted(),
+      this.developerUrl = const SdkOmitted(),
+      this.imageUrl = const SdkOmitted(),
+      this.redirectUris = const SdkOmitted(),
+      this.distribution = const SdkOmitted(),
+      this.webhookResourceTypes = const SdkOmitted(),
+      this.webhookUrl = const SdkOmitted(),
+      this.webhookEnabled = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted()});
 
-  ConnectConnectorCreateDataVariant3Application Function({String id, String clientId, String name, SdkOptional<String?> description, SdkOptional<String?> developer, SdkOptional<String?> developerUrl, SdkOptional<String?> imageUrl, SdkOptional<List<String>> redirectUris, SdkOptional<String?> distribution, SdkOptional<List<String>> webhookResourceTypes, SdkOptional<String?> webhookUrl, SdkOptional<bool> webhookEnabled, SdkOptional<String> createdAt, SdkOptional<String> updatedAt}) get copyWith => _copyWith;
+  ConnectConnectorCreateDataVariant3Application Function(
+      {String id,
+      String clientId,
+      String name,
+      SdkOptional<String?> description,
+      SdkOptional<String?> developer,
+      SdkOptional<String?> developerUrl,
+      SdkOptional<String?> imageUrl,
+      SdkOptional<List<String>> redirectUris,
+      SdkOptional<String?> distribution,
+      SdkOptional<List<String>> webhookResourceTypes,
+      SdkOptional<String?> webhookUrl,
+      SdkOptional<bool> webhookEnabled,
+      SdkOptional<String> createdAt,
+      SdkOptional<String> updatedAt}) get copyWith => _copyWith;
 
-  ConnectConnectorCreateDataVariant3Application _copyWith({Object? id = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? name = sdkOmittedValue, Object? description = sdkOmittedValue, Object? developer = sdkOmittedValue, Object? developerUrl = sdkOmittedValue, Object? imageUrl = sdkOmittedValue, Object? redirectUris = sdkOmittedValue, Object? distribution = sdkOmittedValue, Object? webhookResourceTypes = sdkOmittedValue, Object? webhookUrl = sdkOmittedValue, Object? webhookEnabled = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => ConnectConnectorCreateDataVariant3Application(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String?>,
-    developer: identical(developer, sdkOmittedValue) ? this.developer : developer as SdkOptional<String?>,
-    developerUrl: identical(developerUrl, sdkOmittedValue) ? this.developerUrl : developerUrl as SdkOptional<String?>,
-    imageUrl: identical(imageUrl, sdkOmittedValue) ? this.imageUrl : imageUrl as SdkOptional<String?>,
-    redirectUris: identical(redirectUris, sdkOmittedValue) ? this.redirectUris : redirectUris as SdkOptional<List<String>>,
-    distribution: identical(distribution, sdkOmittedValue) ? this.distribution : distribution as SdkOptional<String?>,
-    webhookResourceTypes: identical(webhookResourceTypes, sdkOmittedValue) ? this.webhookResourceTypes : webhookResourceTypes as SdkOptional<List<String>>,
-    webhookUrl: identical(webhookUrl, sdkOmittedValue) ? this.webhookUrl : webhookUrl as SdkOptional<String?>,
-    webhookEnabled: identical(webhookEnabled, sdkOmittedValue) ? this.webhookEnabled : webhookEnabled as SdkOptional<bool>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<String>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<String>,
-  );
+  ConnectConnectorCreateDataVariant3Application _copyWith(
+          {Object? id = sdkOmittedValue,
+          Object? clientId = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? description = sdkOmittedValue,
+          Object? developer = sdkOmittedValue,
+          Object? developerUrl = sdkOmittedValue,
+          Object? imageUrl = sdkOmittedValue,
+          Object? redirectUris = sdkOmittedValue,
+          Object? distribution = sdkOmittedValue,
+          Object? webhookResourceTypes = sdkOmittedValue,
+          Object? webhookUrl = sdkOmittedValue,
+          Object? webhookEnabled = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      ConnectConnectorCreateDataVariant3Application(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String?>,
+        developer: identical(developer, sdkOmittedValue)
+            ? this.developer
+            : developer as SdkOptional<String?>,
+        developerUrl: identical(developerUrl, sdkOmittedValue)
+            ? this.developerUrl
+            : developerUrl as SdkOptional<String?>,
+        imageUrl: identical(imageUrl, sdkOmittedValue)
+            ? this.imageUrl
+            : imageUrl as SdkOptional<String?>,
+        redirectUris: identical(redirectUris, sdkOmittedValue)
+            ? this.redirectUris
+            : redirectUris as SdkOptional<List<String>>,
+        distribution: identical(distribution, sdkOmittedValue)
+            ? this.distribution
+            : distribution as SdkOptional<String?>,
+        webhookResourceTypes: identical(webhookResourceTypes, sdkOmittedValue)
+            ? this.webhookResourceTypes
+            : webhookResourceTypes as SdkOptional<List<String>>,
+        webhookUrl: identical(webhookUrl, sdkOmittedValue)
+            ? this.webhookUrl
+            : webhookUrl as SdkOptional<String?>,
+        webhookEnabled: identical(webhookEnabled, sdkOmittedValue)
+            ? this.webhookEnabled
+            : webhookEnabled as SdkOptional<bool>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<String>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<String>,
+      );
 
-  factory ConnectConnectorCreateDataVariant3Application.fromJson(Map<String, dynamic> json) => ConnectConnectorCreateDataVariant3Application(
-    id: (json['id'] as String?)!,
-    clientId: (json['clientId'] as String?)!,
-    name: (json['name'] as String?)!,
-    description: json.containsKey('description') ? SdkPresent(json['description'] as String?) : const SdkOmitted(),
-    developer: json.containsKey('developer') ? SdkPresent(json['developer'] as String?) : const SdkOmitted(),
-    developerUrl: json.containsKey('developerUrl') ? SdkPresent(json['developerUrl'] as String?) : const SdkOmitted(),
-    imageUrl: json.containsKey('imageUrl') ? SdkPresent(json['imageUrl'] as String?) : const SdkOmitted(),
-    redirectUris: json['redirectUris'] != null ? SdkPresent(((json['redirectUris'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    distribution: json.containsKey('distribution') ? SdkPresent(json['distribution'] as String?) : const SdkOmitted(),
-    webhookResourceTypes: json['webhookResourceTypes'] != null ? SdkPresent(((json['webhookResourceTypes'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    webhookUrl: json.containsKey('webhookUrl') ? SdkPresent(json['webhookUrl'] as String?) : const SdkOmitted(),
-    webhookEnabled: json['webhookEnabled'] != null ? SdkPresent((json['webhookEnabled'] as bool?)!) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent((json['createdAt'] as String?)!) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent((json['updatedAt'] as String?)!) : const SdkOmitted(),
-  );
+  factory ConnectConnectorCreateDataVariant3Application.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectConnectorCreateDataVariant3Application(
+        id: (json['id'] as String?)!,
+        clientId: (json['clientId'] as String?)!,
+        name: (json['name'] as String?)!,
+        description: json.containsKey('description')
+            ? SdkPresent(json['description'] as String?)
+            : const SdkOmitted(),
+        developer: json.containsKey('developer')
+            ? SdkPresent(json['developer'] as String?)
+            : const SdkOmitted(),
+        developerUrl: json.containsKey('developerUrl')
+            ? SdkPresent(json['developerUrl'] as String?)
+            : const SdkOmitted(),
+        imageUrl: json.containsKey('imageUrl')
+            ? SdkPresent(json['imageUrl'] as String?)
+            : const SdkOmitted(),
+        redirectUris: json['redirectUris'] != null
+            ? SdkPresent(((json['redirectUris'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        distribution: json.containsKey('distribution')
+            ? SdkPresent(json['distribution'] as String?)
+            : const SdkOmitted(),
+        webhookResourceTypes: json['webhookResourceTypes'] != null
+            ? SdkPresent(((json['webhookResourceTypes'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        webhookUrl: json.containsKey('webhookUrl')
+            ? SdkPresent(json['webhookUrl'] as String?)
+            : const SdkOmitted(),
+        webhookEnabled: json['webhookEnabled'] != null
+            ? SdkPresent((json['webhookEnabled'] as bool?)!)
+            : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent((json['createdAt'] as String?)!)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent((json['updatedAt'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'clientId': clientId,
-    'name': name,
-    ...switch (description) {
-      SdkPresent<String?>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (developer) {
-      SdkPresent<String?>(value: final value) => {'developer': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (developerUrl) {
-      SdkPresent<String?>(value: final value) => {'developerUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (imageUrl) {
-      SdkPresent<String?>(value: final value) => {'imageUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectUris) {
-      SdkPresent<List<String>>(value: final value) => {'redirectUris': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (distribution) {
-      SdkPresent<String?>(value: final value) => {'distribution': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookResourceTypes) {
-      SdkPresent<List<String>>(value: final value) => {'webhookResourceTypes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookUrl) {
-      SdkPresent<String?>(value: final value) => {'webhookUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookEnabled) {
-      SdkPresent<bool>(value: final value) => {'webhookEnabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<String>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<String>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'id': id,
+        'clientId': clientId,
+        'name': name,
+        ...switch (description) {
+          SdkPresent<String?>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (developer) {
+          SdkPresent<String?>(value: final value) => {
+              'developer': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (developerUrl) {
+          SdkPresent<String?>(value: final value) => {
+              'developerUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (imageUrl) {
+          SdkPresent<String?>(value: final value) => {
+              'imageUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectUris) {
+          SdkPresent<List<String>>(value: final value) => {
+              'redirectUris': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (distribution) {
+          SdkPresent<String?>(value: final value) => {
+              'distribution': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookResourceTypes) {
+          SdkPresent<List<String>>(value: final value) => {
+              'webhookResourceTypes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookUrl) {
+          SdkPresent<String?>(value: final value) => {
+              'webhookUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookEnabled) {
+          SdkPresent<bool>(value: final value) => {
+              'webhookEnabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<String>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<String>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

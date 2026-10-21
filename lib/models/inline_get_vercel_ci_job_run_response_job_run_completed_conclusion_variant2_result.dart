@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result {
   skipped;
 
-  static GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result fromJson(String value) {
+  static GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result
+      fromJson(String value) {
     switch (value) {
-      case 'skipped': return GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result.skipped;
-      default: throw ArgumentError('Unknown GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result: $value');
+      case 'skipped':
+        return GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result.skipped: return 'skipped';
+      case GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result
+            .skipped:
+        return 'skipped';
     }
   }
 
@@ -27,16 +34,23 @@ enum GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2Result {
 enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result {
   succeeded;
 
-  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result fromJson(String value) {
+  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result fromJson(
+      String value) {
     switch (value) {
-      case 'succeeded': return GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result.succeeded;
-      default: throw ArgumentError('Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result: $value');
+      case 'succeeded':
+        return GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result
+            .succeeded;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result.succeeded: return 'succeeded';
+      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result
+            .succeeded:
+        return 'succeeded';
     }
   }
 
@@ -47,16 +61,22 @@ enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant0Result {
 enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result {
   cached;
 
-  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result fromJson(String value) {
+  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result fromJson(
+      String value) {
     switch (value) {
-      case 'cached': return GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result.cached;
-      default: throw ArgumentError('Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result: $value');
+      case 'cached':
+        return GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result
+            .cached;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result.cached: return 'cached';
+      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result.cached:
+        return 'cached';
     }
   }
 
@@ -67,16 +87,22 @@ enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant1Result {
 enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result {
   failed;
 
-  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result fromJson(String value) {
+  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result fromJson(
+      String value) {
     switch (value) {
-      case 'failed': return GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result.failed;
-      default: throw ArgumentError('Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result: $value');
+      case 'failed':
+        return GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result
+            .failed;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result.failed: return 'failed';
+      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result.failed:
+        return 'failed';
     }
   }
 
@@ -87,16 +113,22 @@ enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant2Result {
 enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result {
   skipped;
 
-  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result fromJson(String value) {
+  static GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result fromJson(
+      String value) {
     switch (value) {
-      case 'skipped': return GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result.skipped;
-      default: throw ArgumentError('Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result: $value');
+      case 'skipped':
+        return GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result.skipped: return 'skipped';
+      case GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result.skipped:
+        return 'skipped';
     }
   }
 
@@ -106,118 +138,135 @@ enum GetVercelCiTaskLogsResponseTasksItemConclusionVariant3Result {
 
 /// Required enumerated value serialized in the `value[]` wire field.
 final class GlobalConfigItemValueVariant4 {
-
   final bool value;
 
   const GlobalConfigItemValueVariant4._(this.value);
 
-  factory GlobalConfigItemValueVariant4.fromJson(bool value) => GlobalConfigItemValueVariant4._(value);
+  factory GlobalConfigItemValueVariant4.fromJson(bool value) =>
+      GlobalConfigItemValueVariant4._(value);
 
   static const false_ = GlobalConfigItemValueVariant4._(false);
   static const true_ = GlobalConfigItemValueVariant4._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GlobalConfigItemValueVariant4 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GlobalConfigItemValueVariant4 && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class InternalServerErrorCode {
-
   final String value;
 
   const InternalServerErrorCode._(this.value);
 
-  factory InternalServerErrorCode.fromJson(String value) => InternalServerErrorCode._(value);
+  factory InternalServerErrorCode.fromJson(String value) =>
+      InternalServerErrorCode._(value);
 
-  static const internalServerError = InternalServerErrorCode._('internal_server_error');
+  static const internalServerError =
+      InternalServerErrorCode._('internal_server_error');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is InternalServerErrorCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is InternalServerErrorCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class InternalServerErrorStatus {
-
   final int value;
 
   const InternalServerErrorStatus._(this.value);
 
-  factory InternalServerErrorStatus.fromJson(int value) => InternalServerErrorStatus._(value);
+  factory InternalServerErrorStatus.fromJson(int value) =>
+      InternalServerErrorStatus._(value);
 
   static const v500 = InternalServerErrorStatus._(500);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is InternalServerErrorStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is InternalServerErrorStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `code` wire field.
 final class InvalidAdditionalContactInfoCode {
-
   final String value;
 
   const InvalidAdditionalContactInfoCode._(this.value);
 
-  factory InvalidAdditionalContactInfoCode.fromJson(String value) => InvalidAdditionalContactInfoCode._(value);
+  factory InvalidAdditionalContactInfoCode.fromJson(String value) =>
+      InvalidAdditionalContactInfoCode._(value);
 
-  static const invalidAdditionalContactInfo = InvalidAdditionalContactInfoCode._('invalid_additional_contact_info');
+  static const invalidAdditionalContactInfo =
+      InvalidAdditionalContactInfoCode._('invalid_additional_contact_info');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is InvalidAdditionalContactInfoCode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is InvalidAdditionalContactInfoCode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `status` wire field.
 final class InvalidAdditionalContactInfoStatus {
-
   final int value;
 
   const InvalidAdditionalContactInfoStatus._(this.value);
 
-  factory InvalidAdditionalContactInfoStatus.fromJson(int value) => InvalidAdditionalContactInfoStatus._(value);
+  factory InvalidAdditionalContactInfoStatus.fromJson(int value) =>
+      InvalidAdditionalContactInfoStatus._(value);
 
   static const v400 = InvalidAdditionalContactInfoStatus._(400);
 
   int toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is InvalidAdditionalContactInfoStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is InvalidAdditionalContactInfoStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The role used for the invitation
 final class InvitedTeamMemberRole {
-
   final String value;
 
   const InvitedTeamMemberRole._(this.value);
 
-  factory InvitedTeamMemberRole.fromJson(String value) => InvitedTeamMemberRole._(value);
+  factory InvitedTeamMemberRole.fromJson(String value) =>
+      InvitedTeamMemberRole._(value);
 
   static const billing = InvitedTeamMemberRole._('BILLING');
   static const contributor = InvitedTeamMemberRole._('CONTRIBUTOR');
@@ -230,49 +279,69 @@ final class InvitedTeamMemberRole {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is InvitedTeamMemberRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is InvitedTeamMemberRole && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The team permissions of the user
 final class InvitedTeamMemberTeamPermissionsItem {
-
   final String value;
 
   const InvitedTeamMemberTeamPermissionsItem._(this.value);
 
-  factory InvitedTeamMemberTeamPermissionsItem.fromJson(String value) => InvitedTeamMemberTeamPermissionsItem._(value);
+  factory InvitedTeamMemberTeamPermissionsItem.fromJson(String value) =>
+      InvitedTeamMemberTeamPermissionsItem._(value);
 
-  static const aigatewaybudgetmanager = InvitedTeamMemberTeamPermissionsItem._('AiGatewayBudgetManager');
-  static const aigatewaycredits = InvitedTeamMemberTeamPermissionsItem._('AiGatewayCredits');
-  static const aigatewaysettings = InvitedTeamMemberTeamPermissionsItem._('AiGatewaySettings');
-  static const aigatewaytranscriptsmanager = InvitedTeamMemberTeamPermissionsItem._('AiGatewayTranscriptsManager');
-  static const aigatewaytranscriptsviewer = InvitedTeamMemberTeamPermissionsItem._('AiGatewayTranscriptsViewer');
-  static const aigatewayuser = InvitedTeamMemberTeamPermissionsItem._('AiGatewayUser');
-  static const connectormanager = InvitedTeamMemberTeamPermissionsItem._('ConnectorManager');
-  static const createproject = InvitedTeamMemberTeamPermissionsItem._('CreateProject');
-  static const envvariablemanager = InvitedTeamMemberTeamPermissionsItem._('EnvVariableManager');
-  static const environmentmanager = InvitedTeamMemberTeamPermissionsItem._('EnvironmentManager');
-  static const fullproductiondeployment = InvitedTeamMemberTeamPermissionsItem._('FullProductionDeployment');
-  static const integrationmanager = InvitedTeamMemberTeamPermissionsItem._('IntegrationManager');
+  static const aigatewaybudgetmanager =
+      InvitedTeamMemberTeamPermissionsItem._('AiGatewayBudgetManager');
+  static const aigatewaycredits =
+      InvitedTeamMemberTeamPermissionsItem._('AiGatewayCredits');
+  static const aigatewaysettings =
+      InvitedTeamMemberTeamPermissionsItem._('AiGatewaySettings');
+  static const aigatewaytranscriptsmanager =
+      InvitedTeamMemberTeamPermissionsItem._('AiGatewayTranscriptsManager');
+  static const aigatewaytranscriptsviewer =
+      InvitedTeamMemberTeamPermissionsItem._('AiGatewayTranscriptsViewer');
+  static const aigatewayuser =
+      InvitedTeamMemberTeamPermissionsItem._('AiGatewayUser');
+  static const connectormanager =
+      InvitedTeamMemberTeamPermissionsItem._('ConnectorManager');
+  static const createproject =
+      InvitedTeamMemberTeamPermissionsItem._('CreateProject');
+  static const envvariablemanager =
+      InvitedTeamMemberTeamPermissionsItem._('EnvVariableManager');
+  static const environmentmanager =
+      InvitedTeamMemberTeamPermissionsItem._('EnvironmentManager');
+  static const fullproductiondeployment =
+      InvitedTeamMemberTeamPermissionsItem._('FullProductionDeployment');
+  static const integrationmanager =
+      InvitedTeamMemberTeamPermissionsItem._('IntegrationManager');
   static const orgadmin = InvitedTeamMemberTeamPermissionsItem._('OrgAdmin');
   static const orgviewer = InvitedTeamMemberTeamPermissionsItem._('OrgViewer');
-  static const usageviewer = InvitedTeamMemberTeamPermissionsItem._('UsageViewer');
+  static const usageviewer =
+      InvitedTeamMemberTeamPermissionsItem._('UsageViewer');
   static const v0builder = InvitedTeamMemberTeamPermissionsItem._('V0Builder');
   static const v0chatter = InvitedTeamMemberTeamPermissionsItem._('V0Chatter');
   static const v0viewer = InvitedTeamMemberTeamPermissionsItem._('V0Viewer');
-  static const workflowdecryptor = InvitedTeamMemberTeamPermissionsItem._('WorkflowDecryptor');
+  static const workflowdecryptor =
+      InvitedTeamMemberTeamPermissionsItem._('WorkflowDecryptor');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is InvitedTeamMemberTeamPermissionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is InvitedTeamMemberTeamPermissionsItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

@@ -4,40 +4,58 @@
 part of 'projects_get.dart';
 
 // projects_get domain models
-final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant11 extends GetProjectEnvResponseVariant0ContentHint {
+final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant11
+    extends GetProjectEnvResponseVariant0ContentHint {
   final GetProjectEnvResponseVariant0ContentHintVariant11 value;
-  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant11(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant11(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant12 extends GetProjectEnvResponseVariant0ContentHint {
+final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant12
+    extends GetProjectEnvResponseVariant0ContentHint {
   final GetProjectEnvResponseVariant0ContentHintVariant12 value;
-  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant12(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant12(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant13 extends GetProjectEnvResponseVariant0ContentHint {
+final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant13
+    extends GetProjectEnvResponseVariant0ContentHint {
   final GetProjectEnvResponseVariant0ContentHintVariant13 value;
-  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant13(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant13(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant14 extends GetProjectEnvResponseVariant0ContentHint {
+final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant14
+    extends GetProjectEnvResponseVariant0ContentHint {
   final GetProjectEnvResponseVariant0ContentHintVariant14 value;
-  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant14(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant14(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant15 extends GetProjectEnvResponseVariant0ContentHint {
+final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant15
+    extends GetProjectEnvResponseVariant0ContentHint {
   final GetProjectEnvResponseVariant0ContentHintVariant15 value;
-  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant15(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant15(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant16 extends GetProjectEnvResponseVariant0ContentHint {
+final class GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant16
+    extends GetProjectEnvResponseVariant0ContentHint {
   final GetProjectEnvResponseVariant0ContentHintVariant16 value;
-  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectEnvResponseVariant0ContentHintGetProjectEnvResponseVariant0ContentHintVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 sealed class GetProjectEnvResponseVariant0Target {
@@ -45,23 +63,41 @@ sealed class GetProjectEnvResponseVariant0Target {
   static const String constructionSurface = 'named';
   const GetProjectEnvResponseVariant0Target();
   factory GetProjectEnvResponseVariant0Target.fromJson(Object? json) {
-    if (json is List) { return GetProjectEnvResponseVariant0TargetListGetProjectEnvResponseVariant0TargetVariant0Item(json.map((e) => GetProjectEnvResponseVariant0TargetVariant0Item.fromJson(e as String)).toList().cast<GetProjectEnvResponseVariant0TargetVariant0Item>()); }
-    try { return GetProjectEnvResponseVariant0TargetGetProjectEnvResponseVariant0TargetVariant1(GetProjectEnvResponseVariant0TargetVariant1.fromJson(json as String)); } catch (_) {}
-    throw FormatException("No variant matched for GetProjectEnvResponseVariant0Target");
+    if (json is List) {
+      return GetProjectEnvResponseVariant0TargetListGetProjectEnvResponseVariant0TargetVariant0Item(
+          json
+              .map((e) =>
+                  GetProjectEnvResponseVariant0TargetVariant0Item.fromJson(
+                      e as String))
+              .toList()
+              .cast<GetProjectEnvResponseVariant0TargetVariant0Item>());
+    }
+    try {
+      return GetProjectEnvResponseVariant0TargetGetProjectEnvResponseVariant0TargetVariant1(
+          GetProjectEnvResponseVariant0TargetVariant1.fromJson(json as String));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetProjectEnvResponseVariant0Target");
   }
   Object? toJson();
 }
 
-final class GetProjectEnvResponseVariant0TargetListGetProjectEnvResponseVariant0TargetVariant0Item extends GetProjectEnvResponseVariant0Target {
+final class GetProjectEnvResponseVariant0TargetListGetProjectEnvResponseVariant0TargetVariant0Item
+    extends GetProjectEnvResponseVariant0Target {
   final List<GetProjectEnvResponseVariant0TargetVariant0Item> value;
-  const GetProjectEnvResponseVariant0TargetListGetProjectEnvResponseVariant0TargetVariant0Item(this.value);
-  @override Object? toJson() => value.map((e) => e.toJson()).toList();
+  const GetProjectEnvResponseVariant0TargetListGetProjectEnvResponseVariant0TargetVariant0Item(
+      this.value);
+  @override
+  Object? toJson() => value.map((e) => e.toJson()).toList();
 }
 
-final class GetProjectEnvResponseVariant0TargetGetProjectEnvResponseVariant0TargetVariant1 extends GetProjectEnvResponseVariant0Target {
+final class GetProjectEnvResponseVariant0TargetGetProjectEnvResponseVariant0TargetVariant1
+    extends GetProjectEnvResponseVariant0Target {
   final GetProjectEnvResponseVariant0TargetVariant1 value;
-  const GetProjectEnvResponseVariant0TargetGetProjectEnvResponseVariant0TargetVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetProjectEnvResponseVariant0TargetGetProjectEnvResponseVariant0TargetVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetProjectEnvResponseVariant0 {
@@ -79,126 +115,293 @@ class GetProjectEnvResponseVariant0 {
   final SdkOptional<String> gitBranch;
   final SdkOptional<String> id;
   final String key;
+
   /// This is used to identify variables that have been migrated from type secret to sensitive.
   final SdkOptional<String> sunsetSecretId;
   final SdkOptional<dynamic> target;
   final GetProjectEnvResponseVariant0Type type_;
   final SdkOptional<double> updatedAt;
   final SdkOptional<String?> updatedBy;
+
   /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
   final SdkOptional<GetProjectEnvResponseVariant0Visibility> visibility;
 
-  const GetProjectEnvResponseVariant0({this.comment = const SdkOmitted(), this.configurationId = const SdkOmitted(), this.contentHint = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.createdBy = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted(), required this.decrypted, this.edgeConfigId = const SdkOmitted(), this.edgeConfigTokenId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.id = const SdkOmitted(), required this.key, this.sunsetSecretId = const SdkOmitted(), this.target = const SdkOmitted(), required this.type_, this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted(), this.visibility = const SdkOmitted()});
+  const GetProjectEnvResponseVariant0(
+      {this.comment = const SdkOmitted(),
+      this.configurationId = const SdkOmitted(),
+      this.contentHint = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.createdBy = const SdkOmitted(),
+      this.customEnvironmentIds = const SdkOmitted(),
+      required this.decrypted,
+      this.edgeConfigId = const SdkOmitted(),
+      this.edgeConfigTokenId = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.id = const SdkOmitted(),
+      required this.key,
+      this.sunsetSecretId = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      required this.type_,
+      this.updatedAt = const SdkOmitted(),
+      this.updatedBy = const SdkOmitted(),
+      this.visibility = const SdkOmitted()});
 
-  GetProjectEnvResponseVariant0 Function({SdkOptional<String> comment, SdkOptional<String?> configurationId, SdkOptional<dynamic> contentHint, SdkOptional<double> createdAt, SdkOptional<String?> createdBy, SdkOptional<List<String>> customEnvironmentIds, GetProjectEnvResponseVariant0Decrypted decrypted, SdkOptional<String?> edgeConfigId, SdkOptional<String?> edgeConfigTokenId, SdkOptional<String> gitBranch, SdkOptional<String> id, String key, SdkOptional<String> sunsetSecretId, SdkOptional<dynamic> target, GetProjectEnvResponseVariant0Type type_, SdkOptional<double> updatedAt, SdkOptional<String?> updatedBy, SdkOptional<GetProjectEnvResponseVariant0Visibility> visibility}) get copyWith => _copyWith;
+  GetProjectEnvResponseVariant0 Function(
+          {SdkOptional<String> comment,
+          SdkOptional<String?> configurationId,
+          SdkOptional<dynamic> contentHint,
+          SdkOptional<double> createdAt,
+          SdkOptional<String?> createdBy,
+          SdkOptional<List<String>> customEnvironmentIds,
+          GetProjectEnvResponseVariant0Decrypted decrypted,
+          SdkOptional<String?> edgeConfigId,
+          SdkOptional<String?> edgeConfigTokenId,
+          SdkOptional<String> gitBranch,
+          SdkOptional<String> id,
+          String key,
+          SdkOptional<String> sunsetSecretId,
+          SdkOptional<dynamic> target,
+          GetProjectEnvResponseVariant0Type type_,
+          SdkOptional<double> updatedAt,
+          SdkOptional<String?> updatedBy,
+          SdkOptional<GetProjectEnvResponseVariant0Visibility> visibility})
+      get copyWith => _copyWith;
 
-  GetProjectEnvResponseVariant0 _copyWith({Object? comment = sdkOmittedValue, Object? configurationId = sdkOmittedValue, Object? contentHint = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue, Object? decrypted = sdkOmittedValue, Object? edgeConfigId = sdkOmittedValue, Object? edgeConfigTokenId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? id = sdkOmittedValue, Object? key = sdkOmittedValue, Object? sunsetSecretId = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? visibility = sdkOmittedValue}) => GetProjectEnvResponseVariant0(
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as SdkOptional<String?>,
-    contentHint: identical(contentHint, sdkOmittedValue) ? this.contentHint : contentHint as SdkOptional<dynamic>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String?>,
-    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
-    decrypted: identical(decrypted, sdkOmittedValue) ? this.decrypted : decrypted as GetProjectEnvResponseVariant0Decrypted,
-    edgeConfigId: identical(edgeConfigId, sdkOmittedValue) ? this.edgeConfigId : edgeConfigId as SdkOptional<String?>,
-    edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue) ? this.edgeConfigTokenId : edgeConfigTokenId as SdkOptional<String?>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue) ? this.sunsetSecretId : sunsetSecretId as SdkOptional<String>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<dynamic>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectEnvResponseVariant0Type,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String?>,
-    visibility: identical(visibility, sdkOmittedValue) ? this.visibility : visibility as SdkOptional<GetProjectEnvResponseVariant0Visibility>,
-  );
+  GetProjectEnvResponseVariant0 _copyWith(
+          {Object? comment = sdkOmittedValue,
+          Object? configurationId = sdkOmittedValue,
+          Object? contentHint = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? customEnvironmentIds = sdkOmittedValue,
+          Object? decrypted = sdkOmittedValue,
+          Object? edgeConfigId = sdkOmittedValue,
+          Object? edgeConfigTokenId = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? sunsetSecretId = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedBy = sdkOmittedValue,
+          Object? visibility = sdkOmittedValue}) =>
+      GetProjectEnvResponseVariant0(
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as SdkOptional<String?>,
+        contentHint: identical(contentHint, sdkOmittedValue)
+            ? this.contentHint
+            : contentHint as SdkOptional<dynamic>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as SdkOptional<String?>,
+        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
+            ? this.customEnvironmentIds
+            : customEnvironmentIds as SdkOptional<List<String>>,
+        decrypted: identical(decrypted, sdkOmittedValue)
+            ? this.decrypted
+            : decrypted as GetProjectEnvResponseVariant0Decrypted,
+        edgeConfigId: identical(edgeConfigId, sdkOmittedValue)
+            ? this.edgeConfigId
+            : edgeConfigId as SdkOptional<String?>,
+        edgeConfigTokenId: identical(edgeConfigTokenId, sdkOmittedValue)
+            ? this.edgeConfigTokenId
+            : edgeConfigTokenId as SdkOptional<String?>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        sunsetSecretId: identical(sunsetSecretId, sdkOmittedValue)
+            ? this.sunsetSecretId
+            : sunsetSecretId as SdkOptional<String>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<dynamic>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetProjectEnvResponseVariant0Type,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        updatedBy: identical(updatedBy, sdkOmittedValue)
+            ? this.updatedBy
+            : updatedBy as SdkOptional<String?>,
+        visibility: identical(visibility, sdkOmittedValue)
+            ? this.visibility
+            : visibility
+                as SdkOptional<GetProjectEnvResponseVariant0Visibility>,
+      );
 
-  factory GetProjectEnvResponseVariant0.fromJson(Map<String, dynamic> json) => GetProjectEnvResponseVariant0(
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-    configurationId: json.containsKey('configurationId') ? SdkPresent(json['configurationId'] as String?) : const SdkOmitted(),
-    contentHint: json.containsKey('contentHint') ? SdkPresent(json['contentHint']) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    createdBy: json.containsKey('createdBy') ? SdkPresent(json['createdBy'] as String?) : const SdkOmitted(),
-    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    decrypted: (json['decrypted'] != null ? GetProjectEnvResponseVariant0Decrypted.fromJson(json['decrypted'] as bool) : null)!,
-    edgeConfigId: json.containsKey('edgeConfigId') ? SdkPresent(json['edgeConfigId'] as String?) : const SdkOmitted(),
-    edgeConfigTokenId: json.containsKey('edgeConfigTokenId') ? SdkPresent(json['edgeConfigTokenId'] as String?) : const SdkOmitted(),
-    gitBranch: json['gitBranch'] != null ? SdkPresent((json['gitBranch'] as String?)!) : const SdkOmitted(),
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    key: (json['key'] as String?)!,
-    sunsetSecretId: json['sunsetSecretId'] != null ? SdkPresent((json['sunsetSecretId'] as String?)!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent((json['target'])!) : const SdkOmitted(),
-    type_: (json['type'] != null ? GetProjectEnvResponseVariant0Type.fromJson(json['type'] as String) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    updatedBy: json.containsKey('updatedBy') ? SdkPresent(json['updatedBy'] as String?) : const SdkOmitted(),
-    visibility: json['visibility'] != null ? SdkPresent((json['visibility'] != null ? GetProjectEnvResponseVariant0Visibility.fromJson(json['visibility'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory GetProjectEnvResponseVariant0.fromJson(Map<String, dynamic> json) =>
+      GetProjectEnvResponseVariant0(
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+        configurationId: json.containsKey('configurationId')
+            ? SdkPresent(json['configurationId'] as String?)
+            : const SdkOmitted(),
+        contentHint: json.containsKey('contentHint')
+            ? SdkPresent(json['contentHint'])
+            : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        createdBy: json.containsKey('createdBy')
+            ? SdkPresent(json['createdBy'] as String?)
+            : const SdkOmitted(),
+        customEnvironmentIds: json['customEnvironmentIds'] != null
+            ? SdkPresent(((json['customEnvironmentIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        decrypted: (json['decrypted'] != null
+            ? GetProjectEnvResponseVariant0Decrypted.fromJson(
+                json['decrypted'] as bool)
+            : null)!,
+        edgeConfigId: json.containsKey('edgeConfigId')
+            ? SdkPresent(json['edgeConfigId'] as String?)
+            : const SdkOmitted(),
+        edgeConfigTokenId: json.containsKey('edgeConfigTokenId')
+            ? SdkPresent(json['edgeConfigTokenId'] as String?)
+            : const SdkOmitted(),
+        gitBranch: json['gitBranch'] != null
+            ? SdkPresent((json['gitBranch'] as String?)!)
+            : const SdkOmitted(),
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        key: (json['key'] as String?)!,
+        sunsetSecretId: json['sunsetSecretId'] != null
+            ? SdkPresent((json['sunsetSecretId'] as String?)!)
+            : const SdkOmitted(),
+        target: json['target'] != null
+            ? SdkPresent((json['target'])!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? GetProjectEnvResponseVariant0Type.fromJson(json['type'] as String)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        updatedBy: json.containsKey('updatedBy')
+            ? SdkPresent(json['updatedBy'] as String?)
+            : const SdkOmitted(),
+        visibility: json['visibility'] != null
+            ? SdkPresent((json['visibility'] != null
+                ? GetProjectEnvResponseVariant0Visibility.fromJson(
+                    json['visibility'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (configurationId) {
-      SdkPresent<String?>(value: final value) => {'configurationId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (contentHint) {
-      SdkPresent<dynamic>(value: final value) => {'contentHint': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdBy) {
-      SdkPresent<String?>(value: final value) => {'createdBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentIds) {
-      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
-      _ => const <String, dynamic>{},
-    },
-    'decrypted': decrypted.toJson(),
-    ...switch (edgeConfigId) {
-      SdkPresent<String?>(value: final value) => {'edgeConfigId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (edgeConfigTokenId) {
-      SdkPresent<String?>(value: final value) => {'edgeConfigTokenId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    'key': key,
-    ...switch (sunsetSecretId) {
-      SdkPresent<String>(value: final value) => {'sunsetSecretId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<dynamic>(value: final value) => {'target': value,},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedBy) {
-      SdkPresent<String?>(value: final value) => {'updatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (visibility) {
-      SdkPresent<GetProjectEnvResponseVariant0Visibility>(value: final value) => {'visibility': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (configurationId) {
+          SdkPresent<String?>(value: final value) => {
+              'configurationId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (contentHint) {
+          SdkPresent<dynamic>(value: final value) => {
+              'contentHint': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdBy) {
+          SdkPresent<String?>(value: final value) => {
+              'createdBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'customEnvironmentIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'decrypted': decrypted.toJson(),
+        ...switch (edgeConfigId) {
+          SdkPresent<String?>(value: final value) => {
+              'edgeConfigId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (edgeConfigTokenId) {
+          SdkPresent<String?>(value: final value) => {
+              'edgeConfigTokenId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'key': key,
+        ...switch (sunsetSecretId) {
+          SdkPresent<String>(value: final value) => {
+              'sunsetSecretId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<dynamic>(value: final value) => {
+              'target': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedBy) {
+          SdkPresent<String?>(value: final value) => {
+              'updatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (visibility) {
+          SdkPresent<GetProjectEnvResponseVariant0Visibility>(
+            value: final value
+          ) =>
+            {
+              'visibility': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetProjectEnvResponseVariant1ContentHintVariant0 {
@@ -207,24 +410,40 @@ class GetProjectEnvResponseVariant1ContentHintVariant0 {
   final String storeId;
   final GetProjectEnvResponseVariant1ContentHintVariant0Type type_;
 
-  const GetProjectEnvResponseVariant1ContentHintVariant0({required this.storeId, required this.type_});
+  const GetProjectEnvResponseVariant1ContentHintVariant0(
+      {required this.storeId, required this.type_});
 
-  GetProjectEnvResponseVariant1ContentHintVariant0 Function({String storeId, GetProjectEnvResponseVariant1ContentHintVariant0Type type_}) get copyWith => _copyWith;
+  GetProjectEnvResponseVariant1ContentHintVariant0 Function(
+          {String storeId,
+          GetProjectEnvResponseVariant1ContentHintVariant0Type type_})
+      get copyWith => _copyWith;
 
-  GetProjectEnvResponseVariant1ContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectEnvResponseVariant1ContentHintVariant0(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectEnvResponseVariant1ContentHintVariant0Type,
-  );
+  GetProjectEnvResponseVariant1ContentHintVariant0 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetProjectEnvResponseVariant1ContentHintVariant0(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetProjectEnvResponseVariant1ContentHintVariant0Type,
+      );
 
-  factory GetProjectEnvResponseVariant1ContentHintVariant0.fromJson(Map<String, dynamic> json) => GetProjectEnvResponseVariant1ContentHintVariant0(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetProjectEnvResponseVariant1ContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectEnvResponseVariant1ContentHintVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectEnvResponseVariant1ContentHintVariant0(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetProjectEnvResponseVariant1ContentHintVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class GetProjectEnvResponseVariant1ContentHintVariant1 {
@@ -233,24 +452,40 @@ class GetProjectEnvResponseVariant1ContentHintVariant1 {
   final String storeId;
   final GetProjectEnvResponseVariant1ContentHintVariant1Type type_;
 
-  const GetProjectEnvResponseVariant1ContentHintVariant1({required this.storeId, required this.type_});
+  const GetProjectEnvResponseVariant1ContentHintVariant1(
+      {required this.storeId, required this.type_});
 
-  GetProjectEnvResponseVariant1ContentHintVariant1 Function({String storeId, GetProjectEnvResponseVariant1ContentHintVariant1Type type_}) get copyWith => _copyWith;
+  GetProjectEnvResponseVariant1ContentHintVariant1 Function(
+          {String storeId,
+          GetProjectEnvResponseVariant1ContentHintVariant1Type type_})
+      get copyWith => _copyWith;
 
-  GetProjectEnvResponseVariant1ContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectEnvResponseVariant1ContentHintVariant1(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectEnvResponseVariant1ContentHintVariant1Type,
-  );
+  GetProjectEnvResponseVariant1ContentHintVariant1 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetProjectEnvResponseVariant1ContentHintVariant1(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetProjectEnvResponseVariant1ContentHintVariant1Type,
+      );
 
-  factory GetProjectEnvResponseVariant1ContentHintVariant1.fromJson(Map<String, dynamic> json) => GetProjectEnvResponseVariant1ContentHintVariant1(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetProjectEnvResponseVariant1ContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectEnvResponseVariant1ContentHintVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectEnvResponseVariant1ContentHintVariant1(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetProjectEnvResponseVariant1ContentHintVariant1Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class GetProjectEnvResponseVariant1ContentHintVariant2 {
@@ -259,22 +494,38 @@ class GetProjectEnvResponseVariant1ContentHintVariant2 {
   final String storeId;
   final GetProjectEnvResponseVariant1ContentHintVariant2Type type_;
 
-  const GetProjectEnvResponseVariant1ContentHintVariant2({required this.storeId, required this.type_});
+  const GetProjectEnvResponseVariant1ContentHintVariant2(
+      {required this.storeId, required this.type_});
 
-  GetProjectEnvResponseVariant1ContentHintVariant2 Function({String storeId, GetProjectEnvResponseVariant1ContentHintVariant2Type type_}) get copyWith => _copyWith;
+  GetProjectEnvResponseVariant1ContentHintVariant2 Function(
+          {String storeId,
+          GetProjectEnvResponseVariant1ContentHintVariant2Type type_})
+      get copyWith => _copyWith;
 
-  GetProjectEnvResponseVariant1ContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetProjectEnvResponseVariant1ContentHintVariant2(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetProjectEnvResponseVariant1ContentHintVariant2Type,
-  );
+  GetProjectEnvResponseVariant1ContentHintVariant2 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetProjectEnvResponseVariant1ContentHintVariant2(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetProjectEnvResponseVariant1ContentHintVariant2Type,
+      );
 
-  factory GetProjectEnvResponseVariant1ContentHintVariant2.fromJson(Map<String, dynamic> json) => GetProjectEnvResponseVariant1ContentHintVariant2(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? GetProjectEnvResponseVariant1ContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetProjectEnvResponseVariant1ContentHintVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      GetProjectEnvResponseVariant1ContentHintVariant2(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? GetProjectEnvResponseVariant1ContentHintVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }

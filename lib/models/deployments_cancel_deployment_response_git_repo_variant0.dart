@@ -17,45 +17,96 @@ class CancelDeploymentResponseGitRepoVariant0 {
   final CancelDeploymentResponseGitRepoVariant0Type type_;
   final String url;
 
-  const CancelDeploymentResponseGitRepoVariant0({required this.defaultBranch, required this.name, required this.namespace, required this.ownerType, required this.path, required this.private, required this.projectId, required this.type_, required this.url});
+  const CancelDeploymentResponseGitRepoVariant0(
+      {required this.defaultBranch,
+      required this.name,
+      required this.namespace,
+      required this.ownerType,
+      required this.path,
+      required this.private,
+      required this.projectId,
+      required this.type_,
+      required this.url});
 
-  CancelDeploymentResponseGitRepoVariant0 Function({String defaultBranch, String name, String namespace, CancelDeploymentResponseGitRepoVariant0OwnerType ownerType, String path, CancelDeploymentResponseGitRepoVariant0Private private, double projectId, CancelDeploymentResponseGitRepoVariant0Type type_, String url}) get copyWith => _copyWith;
+  CancelDeploymentResponseGitRepoVariant0 Function(
+      {String defaultBranch,
+      String name,
+      String namespace,
+      CancelDeploymentResponseGitRepoVariant0OwnerType ownerType,
+      String path,
+      CancelDeploymentResponseGitRepoVariant0Private private,
+      double projectId,
+      CancelDeploymentResponseGitRepoVariant0Type type_,
+      String url}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitRepoVariant0 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? namespace = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? url = sdkOmittedValue}) => CancelDeploymentResponseGitRepoVariant0(
-    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    namespace: identical(namespace, sdkOmittedValue) ? this.namespace : namespace as String,
-    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as CancelDeploymentResponseGitRepoVariant0OwnerType,
-    path: identical(path, sdkOmittedValue) ? this.path : path as String,
-    private: identical(private, sdkOmittedValue) ? this.private : private as CancelDeploymentResponseGitRepoVariant0Private,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as double,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitRepoVariant0Type,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  CancelDeploymentResponseGitRepoVariant0 _copyWith(
+          {Object? defaultBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? namespace = sdkOmittedValue,
+          Object? ownerType = sdkOmittedValue,
+          Object? path = sdkOmittedValue,
+          Object? private = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? url = sdkOmittedValue}) =>
+      CancelDeploymentResponseGitRepoVariant0(
+        defaultBranch: identical(defaultBranch, sdkOmittedValue)
+            ? this.defaultBranch
+            : defaultBranch as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        namespace: identical(namespace, sdkOmittedValue)
+            ? this.namespace
+            : namespace as String,
+        ownerType: identical(ownerType, sdkOmittedValue)
+            ? this.ownerType
+            : ownerType as CancelDeploymentResponseGitRepoVariant0OwnerType,
+        path: identical(path, sdkOmittedValue) ? this.path : path as String,
+        private: identical(private, sdkOmittedValue)
+            ? this.private
+            : private as CancelDeploymentResponseGitRepoVariant0Private,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as double,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CancelDeploymentResponseGitRepoVariant0Type,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory CancelDeploymentResponseGitRepoVariant0.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitRepoVariant0(
-    defaultBranch: (json['defaultBranch'] as String?)!,
-    name: (json['name'] as String?)!,
-    namespace: (json['namespace'] as String?)!,
-    ownerType: (json['ownerType'] != null ? CancelDeploymentResponseGitRepoVariant0OwnerType.fromJson(json['ownerType'] as String) : null)!,
-    path: (json['path'] as String?)!,
-    private: (json['private'] != null ? CancelDeploymentResponseGitRepoVariant0Private.fromJson(json['private'] as bool) : null)!,
-    projectId: ((json['projectId'] as num?)?.toDouble())!,
-    type_: (json['type'] != null ? CancelDeploymentResponseGitRepoVariant0Type.fromJson(json['type'] as String) : null)!,
-    url: (json['url'] as String?)!,
-  );
+  factory CancelDeploymentResponseGitRepoVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseGitRepoVariant0(
+        defaultBranch: (json['defaultBranch'] as String?)!,
+        name: (json['name'] as String?)!,
+        namespace: (json['namespace'] as String?)!,
+        ownerType: (json['ownerType'] != null
+            ? CancelDeploymentResponseGitRepoVariant0OwnerType.fromJson(
+                json['ownerType'] as String)
+            : null)!,
+        path: (json['path'] as String?)!,
+        private: (json['private'] != null
+            ? CancelDeploymentResponseGitRepoVariant0Private.fromJson(
+                json['private'] as bool)
+            : null)!,
+        projectId: ((json['projectId'] as num?)?.toDouble())!,
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseGitRepoVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultBranch': defaultBranch,
-    'name': name,
-    'namespace': namespace,
-    'ownerType': ownerType.toJson(),
-    'path': path,
-    'private': private.toJson(),
-    'projectId': projectId,
-    'type': type_.toJson(),
-    'url': url,
-  };
+        'defaultBranch': defaultBranch,
+        'name': name,
+        'namespace': namespace,
+        'ownerType': ownerType.toJson(),
+        'path': path,
+        'private': private.toJson(),
+        'projectId': projectId,
+        'type': type_.toJson(),
+        'url': url,
+      };
 }
 
 class CancelDeploymentResponseGitRepoVariant1 {
@@ -72,48 +123,102 @@ class CancelDeploymentResponseGitRepoVariant1 {
   final double repoOwnerId;
   final CancelDeploymentResponseGitRepoVariant1Type type_;
 
-  const CancelDeploymentResponseGitRepoVariant1({required this.defaultBranch, required this.name, required this.org, required this.ownerType, required this.path, required this.private, required this.repo, required this.repoId, required this.repoOwnerId, required this.type_});
+  const CancelDeploymentResponseGitRepoVariant1(
+      {required this.defaultBranch,
+      required this.name,
+      required this.org,
+      required this.ownerType,
+      required this.path,
+      required this.private,
+      required this.repo,
+      required this.repoId,
+      required this.repoOwnerId,
+      required this.type_});
 
-  CancelDeploymentResponseGitRepoVariant1 Function({String defaultBranch, String name, String org, CancelDeploymentResponseGitRepoVariant1OwnerType ownerType, String path, CancelDeploymentResponseGitRepoVariant1Private private, String repo, double repoId, double repoOwnerId, CancelDeploymentResponseGitRepoVariant1Type type_}) get copyWith => _copyWith;
+  CancelDeploymentResponseGitRepoVariant1 Function(
+          {String defaultBranch,
+          String name,
+          String org,
+          CancelDeploymentResponseGitRepoVariant1OwnerType ownerType,
+          String path,
+          CancelDeploymentResponseGitRepoVariant1Private private,
+          String repo,
+          double repoId,
+          double repoOwnerId,
+          CancelDeploymentResponseGitRepoVariant1Type type_})
+      get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitRepoVariant1 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? org = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? repoOwnerId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseGitRepoVariant1(
-    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    org: identical(org, sdkOmittedValue) ? this.org : org as String,
-    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as CancelDeploymentResponseGitRepoVariant1OwnerType,
-    path: identical(path, sdkOmittedValue) ? this.path : path as String,
-    private: identical(private, sdkOmittedValue) ? this.private : private as CancelDeploymentResponseGitRepoVariant1Private,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
-    repoOwnerId: identical(repoOwnerId, sdkOmittedValue) ? this.repoOwnerId : repoOwnerId as double,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitRepoVariant1Type,
-  );
+  CancelDeploymentResponseGitRepoVariant1 _copyWith(
+          {Object? defaultBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? org = sdkOmittedValue,
+          Object? ownerType = sdkOmittedValue,
+          Object? path = sdkOmittedValue,
+          Object? private = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? repoOwnerId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CancelDeploymentResponseGitRepoVariant1(
+        defaultBranch: identical(defaultBranch, sdkOmittedValue)
+            ? this.defaultBranch
+            : defaultBranch as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        org: identical(org, sdkOmittedValue) ? this.org : org as String,
+        ownerType: identical(ownerType, sdkOmittedValue)
+            ? this.ownerType
+            : ownerType as CancelDeploymentResponseGitRepoVariant1OwnerType,
+        path: identical(path, sdkOmittedValue) ? this.path : path as String,
+        private: identical(private, sdkOmittedValue)
+            ? this.private
+            : private as CancelDeploymentResponseGitRepoVariant1Private,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        repoId:
+            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as double,
+        repoOwnerId: identical(repoOwnerId, sdkOmittedValue)
+            ? this.repoOwnerId
+            : repoOwnerId as double,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CancelDeploymentResponseGitRepoVariant1Type,
+      );
 
-  factory CancelDeploymentResponseGitRepoVariant1.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitRepoVariant1(
-    defaultBranch: (json['defaultBranch'] as String?)!,
-    name: (json['name'] as String?)!,
-    org: (json['org'] as String?)!,
-    ownerType: (json['ownerType'] != null ? CancelDeploymentResponseGitRepoVariant1OwnerType.fromJson(json['ownerType'] as String) : null)!,
-    path: (json['path'] as String?)!,
-    private: (json['private'] != null ? CancelDeploymentResponseGitRepoVariant1Private.fromJson(json['private'] as bool) : null)!,
-    repo: (json['repo'] as String?)!,
-    repoId: ((json['repoId'] as num?)?.toDouble())!,
-    repoOwnerId: ((json['repoOwnerId'] as num?)?.toDouble())!,
-    type_: (json['type'] != null ? CancelDeploymentResponseGitRepoVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CancelDeploymentResponseGitRepoVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseGitRepoVariant1(
+        defaultBranch: (json['defaultBranch'] as String?)!,
+        name: (json['name'] as String?)!,
+        org: (json['org'] as String?)!,
+        ownerType: (json['ownerType'] != null
+            ? CancelDeploymentResponseGitRepoVariant1OwnerType.fromJson(
+                json['ownerType'] as String)
+            : null)!,
+        path: (json['path'] as String?)!,
+        private: (json['private'] != null
+            ? CancelDeploymentResponseGitRepoVariant1Private.fromJson(
+                json['private'] as bool)
+            : null)!,
+        repo: (json['repo'] as String?)!,
+        repoId: ((json['repoId'] as num?)?.toDouble())!,
+        repoOwnerId: ((json['repoOwnerId'] as num?)?.toDouble())!,
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseGitRepoVariant1Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultBranch': defaultBranch,
-    'name': name,
-    'org': org,
-    'ownerType': ownerType.toJson(),
-    'path': path,
-    'private': private.toJson(),
-    'repo': repo,
-    'repoId': repoId,
-    'repoOwnerId': repoOwnerId,
-    'type': type_.toJson(),
-  };
+        'defaultBranch': defaultBranch,
+        'name': name,
+        'org': org,
+        'ownerType': ownerType.toJson(),
+        'path': path,
+        'private': private.toJson(),
+        'repo': repo,
+        'repoId': repoId,
+        'repoOwnerId': repoOwnerId,
+        'type': type_.toJson(),
+      };
 }
 
 class CancelDeploymentResponseGitRepoVariant2 {
@@ -130,48 +235,102 @@ class CancelDeploymentResponseGitRepoVariant2 {
   final CancelDeploymentResponseGitRepoVariant2Type type_;
   final String workspaceUuid;
 
-  const CancelDeploymentResponseGitRepoVariant2({required this.defaultBranch, required this.name, required this.owner, required this.ownerType, required this.path, required this.private, required this.repoUuid, required this.slug, required this.type_, required this.workspaceUuid});
+  const CancelDeploymentResponseGitRepoVariant2(
+      {required this.defaultBranch,
+      required this.name,
+      required this.owner,
+      required this.ownerType,
+      required this.path,
+      required this.private,
+      required this.repoUuid,
+      required this.slug,
+      required this.type_,
+      required this.workspaceUuid});
 
-  CancelDeploymentResponseGitRepoVariant2 Function({String defaultBranch, String name, String owner, CancelDeploymentResponseGitRepoVariant2OwnerType ownerType, String path, CancelDeploymentResponseGitRepoVariant2Private private, String repoUuid, String slug, CancelDeploymentResponseGitRepoVariant2Type type_, String workspaceUuid}) get copyWith => _copyWith;
+  CancelDeploymentResponseGitRepoVariant2 Function(
+      {String defaultBranch,
+      String name,
+      String owner,
+      CancelDeploymentResponseGitRepoVariant2OwnerType ownerType,
+      String path,
+      CancelDeploymentResponseGitRepoVariant2Private private,
+      String repoUuid,
+      String slug,
+      CancelDeploymentResponseGitRepoVariant2Type type_,
+      String workspaceUuid}) get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitRepoVariant2 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? repoUuid = sdkOmittedValue, Object? slug = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? workspaceUuid = sdkOmittedValue}) => CancelDeploymentResponseGitRepoVariant2(
-    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as CancelDeploymentResponseGitRepoVariant2OwnerType,
-    path: identical(path, sdkOmittedValue) ? this.path : path as String,
-    private: identical(private, sdkOmittedValue) ? this.private : private as CancelDeploymentResponseGitRepoVariant2Private,
-    repoUuid: identical(repoUuid, sdkOmittedValue) ? this.repoUuid : repoUuid as String,
-    slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitRepoVariant2Type,
-    workspaceUuid: identical(workspaceUuid, sdkOmittedValue) ? this.workspaceUuid : workspaceUuid as String,
-  );
+  CancelDeploymentResponseGitRepoVariant2 _copyWith(
+          {Object? defaultBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? owner = sdkOmittedValue,
+          Object? ownerType = sdkOmittedValue,
+          Object? path = sdkOmittedValue,
+          Object? private = sdkOmittedValue,
+          Object? repoUuid = sdkOmittedValue,
+          Object? slug = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? workspaceUuid = sdkOmittedValue}) =>
+      CancelDeploymentResponseGitRepoVariant2(
+        defaultBranch: identical(defaultBranch, sdkOmittedValue)
+            ? this.defaultBranch
+            : defaultBranch as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+        ownerType: identical(ownerType, sdkOmittedValue)
+            ? this.ownerType
+            : ownerType as CancelDeploymentResponseGitRepoVariant2OwnerType,
+        path: identical(path, sdkOmittedValue) ? this.path : path as String,
+        private: identical(private, sdkOmittedValue)
+            ? this.private
+            : private as CancelDeploymentResponseGitRepoVariant2Private,
+        repoUuid: identical(repoUuid, sdkOmittedValue)
+            ? this.repoUuid
+            : repoUuid as String,
+        slug: identical(slug, sdkOmittedValue) ? this.slug : slug as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CancelDeploymentResponseGitRepoVariant2Type,
+        workspaceUuid: identical(workspaceUuid, sdkOmittedValue)
+            ? this.workspaceUuid
+            : workspaceUuid as String,
+      );
 
-  factory CancelDeploymentResponseGitRepoVariant2.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitRepoVariant2(
-    defaultBranch: (json['defaultBranch'] as String?)!,
-    name: (json['name'] as String?)!,
-    owner: (json['owner'] as String?)!,
-    ownerType: (json['ownerType'] != null ? CancelDeploymentResponseGitRepoVariant2OwnerType.fromJson(json['ownerType'] as String) : null)!,
-    path: (json['path'] as String?)!,
-    private: (json['private'] != null ? CancelDeploymentResponseGitRepoVariant2Private.fromJson(json['private'] as bool) : null)!,
-    repoUuid: (json['repoUuid'] as String?)!,
-    slug: (json['slug'] as String?)!,
-    type_: (json['type'] != null ? CancelDeploymentResponseGitRepoVariant2Type.fromJson(json['type'] as String) : null)!,
-    workspaceUuid: (json['workspaceUuid'] as String?)!,
-  );
+  factory CancelDeploymentResponseGitRepoVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseGitRepoVariant2(
+        defaultBranch: (json['defaultBranch'] as String?)!,
+        name: (json['name'] as String?)!,
+        owner: (json['owner'] as String?)!,
+        ownerType: (json['ownerType'] != null
+            ? CancelDeploymentResponseGitRepoVariant2OwnerType.fromJson(
+                json['ownerType'] as String)
+            : null)!,
+        path: (json['path'] as String?)!,
+        private: (json['private'] != null
+            ? CancelDeploymentResponseGitRepoVariant2Private.fromJson(
+                json['private'] as bool)
+            : null)!,
+        repoUuid: (json['repoUuid'] as String?)!,
+        slug: (json['slug'] as String?)!,
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseGitRepoVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        workspaceUuid: (json['workspaceUuid'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultBranch': defaultBranch,
-    'name': name,
-    'owner': owner,
-    'ownerType': ownerType.toJson(),
-    'path': path,
-    'private': private.toJson(),
-    'repoUuid': repoUuid,
-    'slug': slug,
-    'type': type_.toJson(),
-    'workspaceUuid': workspaceUuid,
-  };
+        'defaultBranch': defaultBranch,
+        'name': name,
+        'owner': owner,
+        'ownerType': ownerType.toJson(),
+        'path': path,
+        'private': private.toJson(),
+        'repoUuid': repoUuid,
+        'slug': slug,
+        'type': type_.toJson(),
+        'workspaceUuid': workspaceUuid,
+      };
 }
 
 class CancelDeploymentResponseGitRepoVariant3 {
@@ -186,42 +345,87 @@ class CancelDeploymentResponseGitRepoVariant3 {
   final String repo;
   final CancelDeploymentResponseGitRepoVariant3Type type_;
 
-  const CancelDeploymentResponseGitRepoVariant3({required this.defaultBranch, required this.name, required this.org, required this.ownerType, required this.path, required this.private, required this.repo, required this.type_});
+  const CancelDeploymentResponseGitRepoVariant3(
+      {required this.defaultBranch,
+      required this.name,
+      required this.org,
+      required this.ownerType,
+      required this.path,
+      required this.private,
+      required this.repo,
+      required this.type_});
 
-  CancelDeploymentResponseGitRepoVariant3 Function({String defaultBranch, String name, String org, CancelDeploymentResponseGitRepoVariant3OwnerType ownerType, String path, CancelDeploymentResponseGitRepoVariant3Private private, String repo, CancelDeploymentResponseGitRepoVariant3Type type_}) get copyWith => _copyWith;
+  CancelDeploymentResponseGitRepoVariant3 Function(
+          {String defaultBranch,
+          String name,
+          String org,
+          CancelDeploymentResponseGitRepoVariant3OwnerType ownerType,
+          String path,
+          CancelDeploymentResponseGitRepoVariant3Private private,
+          String repo,
+          CancelDeploymentResponseGitRepoVariant3Type type_})
+      get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitRepoVariant3 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? org = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseGitRepoVariant3(
-    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    org: identical(org, sdkOmittedValue) ? this.org : org as String,
-    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as CancelDeploymentResponseGitRepoVariant3OwnerType,
-    path: identical(path, sdkOmittedValue) ? this.path : path as String,
-    private: identical(private, sdkOmittedValue) ? this.private : private as CancelDeploymentResponseGitRepoVariant3Private,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitRepoVariant3Type,
-  );
+  CancelDeploymentResponseGitRepoVariant3 _copyWith(
+          {Object? defaultBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? org = sdkOmittedValue,
+          Object? ownerType = sdkOmittedValue,
+          Object? path = sdkOmittedValue,
+          Object? private = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CancelDeploymentResponseGitRepoVariant3(
+        defaultBranch: identical(defaultBranch, sdkOmittedValue)
+            ? this.defaultBranch
+            : defaultBranch as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        org: identical(org, sdkOmittedValue) ? this.org : org as String,
+        ownerType: identical(ownerType, sdkOmittedValue)
+            ? this.ownerType
+            : ownerType as CancelDeploymentResponseGitRepoVariant3OwnerType,
+        path: identical(path, sdkOmittedValue) ? this.path : path as String,
+        private: identical(private, sdkOmittedValue)
+            ? this.private
+            : private as CancelDeploymentResponseGitRepoVariant3Private,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CancelDeploymentResponseGitRepoVariant3Type,
+      );
 
-  factory CancelDeploymentResponseGitRepoVariant3.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitRepoVariant3(
-    defaultBranch: (json['defaultBranch'] as String?)!,
-    name: (json['name'] as String?)!,
-    org: (json['org'] as String?)!,
-    ownerType: (json['ownerType'] != null ? CancelDeploymentResponseGitRepoVariant3OwnerType.fromJson(json['ownerType'] as String) : null)!,
-    path: (json['path'] as String?)!,
-    private: (json['private'] != null ? CancelDeploymentResponseGitRepoVariant3Private.fromJson(json['private'] as bool) : null)!,
-    repo: (json['repo'] as String?)!,
-    type_: (json['type'] != null ? CancelDeploymentResponseGitRepoVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CancelDeploymentResponseGitRepoVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseGitRepoVariant3(
+        defaultBranch: (json['defaultBranch'] as String?)!,
+        name: (json['name'] as String?)!,
+        org: (json['org'] as String?)!,
+        ownerType: (json['ownerType'] != null
+            ? CancelDeploymentResponseGitRepoVariant3OwnerType.fromJson(
+                json['ownerType'] as String)
+            : null)!,
+        path: (json['path'] as String?)!,
+        private: (json['private'] != null
+            ? CancelDeploymentResponseGitRepoVariant3Private.fromJson(
+                json['private'] as bool)
+            : null)!,
+        repo: (json['repo'] as String?)!,
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseGitRepoVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultBranch': defaultBranch,
-    'name': name,
-    'org': org,
-    'ownerType': ownerType.toJson(),
-    'path': path,
-    'private': private.toJson(),
-    'repo': repo,
-    'type': type_.toJson(),
-  };
+        'defaultBranch': defaultBranch,
+        'name': name,
+        'org': org,
+        'ownerType': ownerType.toJson(),
+        'path': path,
+        'private': private.toJson(),
+        'repo': repo,
+        'type': type_.toJson(),
+      };
 }
 
 class CancelDeploymentResponseGitRepoVariant4 {
@@ -229,53 +433,104 @@ class CancelDeploymentResponseGitRepoVariant4 {
   static const String constructionSurface = 'named';
   final String defaultBranch;
   final String name;
+
   /// Owner (namespace) slug.
   final String owner;
   final CancelDeploymentResponseGitRepoVariant4OwnerType ownerType;
   final String path;
   final CancelDeploymentResponseGitRepoVariant4Private private;
   final String repo;
+
   /// Origin repository id.
   final String repoId;
   final CancelDeploymentResponseGitRepoVariant4Type type_;
 
-  const CancelDeploymentResponseGitRepoVariant4({required this.defaultBranch, required this.name, required this.owner, required this.ownerType, required this.path, required this.private, required this.repo, required this.repoId, required this.type_});
+  const CancelDeploymentResponseGitRepoVariant4(
+      {required this.defaultBranch,
+      required this.name,
+      required this.owner,
+      required this.ownerType,
+      required this.path,
+      required this.private,
+      required this.repo,
+      required this.repoId,
+      required this.type_});
 
-  CancelDeploymentResponseGitRepoVariant4 Function({String defaultBranch, String name, String owner, CancelDeploymentResponseGitRepoVariant4OwnerType ownerType, String path, CancelDeploymentResponseGitRepoVariant4Private private, String repo, String repoId, CancelDeploymentResponseGitRepoVariant4Type type_}) get copyWith => _copyWith;
+  CancelDeploymentResponseGitRepoVariant4 Function(
+          {String defaultBranch,
+          String name,
+          String owner,
+          CancelDeploymentResponseGitRepoVariant4OwnerType ownerType,
+          String path,
+          CancelDeploymentResponseGitRepoVariant4Private private,
+          String repo,
+          String repoId,
+          CancelDeploymentResponseGitRepoVariant4Type type_})
+      get copyWith => _copyWith;
 
-  CancelDeploymentResponseGitRepoVariant4 _copyWith({Object? defaultBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? owner = sdkOmittedValue, Object? ownerType = sdkOmittedValue, Object? path = sdkOmittedValue, Object? private = sdkOmittedValue, Object? repo = sdkOmittedValue, Object? repoId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CancelDeploymentResponseGitRepoVariant4(
-    defaultBranch: identical(defaultBranch, sdkOmittedValue) ? this.defaultBranch : defaultBranch as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
-    ownerType: identical(ownerType, sdkOmittedValue) ? this.ownerType : ownerType as CancelDeploymentResponseGitRepoVariant4OwnerType,
-    path: identical(path, sdkOmittedValue) ? this.path : path as String,
-    private: identical(private, sdkOmittedValue) ? this.private : private as CancelDeploymentResponseGitRepoVariant4Private,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
-    repoId: identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CancelDeploymentResponseGitRepoVariant4Type,
-  );
+  CancelDeploymentResponseGitRepoVariant4 _copyWith(
+          {Object? defaultBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? owner = sdkOmittedValue,
+          Object? ownerType = sdkOmittedValue,
+          Object? path = sdkOmittedValue,
+          Object? private = sdkOmittedValue,
+          Object? repo = sdkOmittedValue,
+          Object? repoId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CancelDeploymentResponseGitRepoVariant4(
+        defaultBranch: identical(defaultBranch, sdkOmittedValue)
+            ? this.defaultBranch
+            : defaultBranch as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        owner: identical(owner, sdkOmittedValue) ? this.owner : owner as String,
+        ownerType: identical(ownerType, sdkOmittedValue)
+            ? this.ownerType
+            : ownerType as CancelDeploymentResponseGitRepoVariant4OwnerType,
+        path: identical(path, sdkOmittedValue) ? this.path : path as String,
+        private: identical(private, sdkOmittedValue)
+            ? this.private
+            : private as CancelDeploymentResponseGitRepoVariant4Private,
+        repo: identical(repo, sdkOmittedValue) ? this.repo : repo as String,
+        repoId:
+            identical(repoId, sdkOmittedValue) ? this.repoId : repoId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CancelDeploymentResponseGitRepoVariant4Type,
+      );
 
-  factory CancelDeploymentResponseGitRepoVariant4.fromJson(Map<String, dynamic> json) => CancelDeploymentResponseGitRepoVariant4(
-    defaultBranch: (json['defaultBranch'] as String?)!,
-    name: (json['name'] as String?)!,
-    owner: (json['owner'] as String?)!,
-    ownerType: (json['ownerType'] != null ? CancelDeploymentResponseGitRepoVariant4OwnerType.fromJson(json['ownerType'] as String) : null)!,
-    path: (json['path'] as String?)!,
-    private: (json['private'] != null ? CancelDeploymentResponseGitRepoVariant4Private.fromJson(json['private'] as bool) : null)!,
-    repo: (json['repo'] as String?)!,
-    repoId: (json['repoId'] as String?)!,
-    type_: (json['type'] != null ? CancelDeploymentResponseGitRepoVariant4Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CancelDeploymentResponseGitRepoVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      CancelDeploymentResponseGitRepoVariant4(
+        defaultBranch: (json['defaultBranch'] as String?)!,
+        name: (json['name'] as String?)!,
+        owner: (json['owner'] as String?)!,
+        ownerType: (json['ownerType'] != null
+            ? CancelDeploymentResponseGitRepoVariant4OwnerType.fromJson(
+                json['ownerType'] as String)
+            : null)!,
+        path: (json['path'] as String?)!,
+        private: (json['private'] != null
+            ? CancelDeploymentResponseGitRepoVariant4Private.fromJson(
+                json['private'] as bool)
+            : null)!,
+        repo: (json['repo'] as String?)!,
+        repoId: (json['repoId'] as String?)!,
+        type_: (json['type'] != null
+            ? CancelDeploymentResponseGitRepoVariant4Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultBranch': defaultBranch,
-    'name': name,
-    'owner': owner,
-    'ownerType': ownerType.toJson(),
-    'path': path,
-    'private': private.toJson(),
-    'repo': repo,
-    'repoId': repoId,
-    'type': type_.toJson(),
-  };
+        'defaultBranch': defaultBranch,
+        'name': name,
+        'owner': owner,
+        'ownerType': ownerType.toJson(),
+        'path': path,
+        'private': private.toJson(),
+        'repo': repo,
+        'repoId': repoId,
+        'type': type_.toJson(),
+      };
 }

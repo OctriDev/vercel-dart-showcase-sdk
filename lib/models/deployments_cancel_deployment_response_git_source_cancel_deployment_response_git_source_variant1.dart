@@ -4,20 +4,29 @@
 part of 'deployments.dart';
 
 // deployments domain models
-final class CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant16 extends CancelDeploymentResponseGitSource {
+final class CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant16
+    extends CancelDeploymentResponseGitSource {
   final CancelDeploymentResponseGitSourceVariant16 value;
-  const CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant17 extends CancelDeploymentResponseGitSource {
+final class CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant17
+    extends CancelDeploymentResponseGitSource {
   final CancelDeploymentResponseGitSourceVariant17 value;
-  const CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant17(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant17(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant18 extends CancelDeploymentResponseGitSource {
+final class CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant18
+    extends CancelDeploymentResponseGitSource {
   final CancelDeploymentResponseGitSourceVariant18 value;
-  const CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant18(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseGitSourceCancelDeploymentResponseGitSourceVariant18(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

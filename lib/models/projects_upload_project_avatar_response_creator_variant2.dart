@@ -10,24 +10,44 @@ class UploadProjectAvatarResponseCreatorVariant2 {
   final UploadProjectAvatarResponseCreatorVariant2Integration integration;
   final UploadProjectAvatarResponseCreatorVariant2Type type_;
 
-  const UploadProjectAvatarResponseCreatorVariant2({required this.integration, required this.type_});
+  const UploadProjectAvatarResponseCreatorVariant2(
+      {required this.integration, required this.type_});
 
-  UploadProjectAvatarResponseCreatorVariant2 Function({UploadProjectAvatarResponseCreatorVariant2Integration integration, UploadProjectAvatarResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseCreatorVariant2 Function(
+          {UploadProjectAvatarResponseCreatorVariant2Integration integration,
+          UploadProjectAvatarResponseCreatorVariant2Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseCreatorVariant2(
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as UploadProjectAvatarResponseCreatorVariant2Integration,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseCreatorVariant2Type,
-  );
+  UploadProjectAvatarResponseCreatorVariant2 _copyWith(
+          {Object? integration = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseCreatorVariant2(
+        integration: identical(integration, sdkOmittedValue)
+            ? this.integration
+            : integration
+                as UploadProjectAvatarResponseCreatorVariant2Integration,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UploadProjectAvatarResponseCreatorVariant2Type,
+      );
 
-  factory UploadProjectAvatarResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseCreatorVariant2(
-    integration: (json['integration'] != null ? UploadProjectAvatarResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseCreatorVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseCreatorVariant2(
+        integration: (json['integration'] != null
+            ? UploadProjectAvatarResponseCreatorVariant2Integration.fromJson(
+                json['integration'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? UploadProjectAvatarResponseCreatorVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integration': integration.toJson(),
-    'type': type_.toJson(),
-  };
+        'integration': integration.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseCreatorVariant3 {
@@ -37,19 +57,30 @@ class UploadProjectAvatarResponseCreatorVariant3 {
 
   const UploadProjectAvatarResponseCreatorVariant3({required this.type_});
 
-  UploadProjectAvatarResponseCreatorVariant3 Function({UploadProjectAvatarResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseCreatorVariant3 Function(
+          {UploadProjectAvatarResponseCreatorVariant3Type type_})
+      get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => UploadProjectAvatarResponseCreatorVariant3(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseCreatorVariant3Type,
-  );
+  UploadProjectAvatarResponseCreatorVariant3 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseCreatorVariant3(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UploadProjectAvatarResponseCreatorVariant3Type,
+      );
 
-  factory UploadProjectAvatarResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseCreatorVariant3(
-    type_: (json['type'] != null ? UploadProjectAvatarResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseCreatorVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseCreatorVariant3(
+        type_: (json['type'] != null
+            ? UploadProjectAvatarResponseCreatorVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 sealed class UploadProjectAvatarResponseCreator {
@@ -58,40 +89,93 @@ sealed class UploadProjectAvatarResponseCreator {
   const UploadProjectAvatarResponseCreator();
   factory UploadProjectAvatarResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UploadProjectAvatarResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0(value); } } catch (_) {}
-      try { final value = UploadProjectAvatarResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1(value); } } catch (_) {}
-      try { final value = UploadProjectAvatarResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2(value); } } catch (_) {}
-      try { final value = UploadProjectAvatarResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3(value); } } catch (_) {}
+      try {
+        final value = UploadProjectAvatarResponseCreatorVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UploadProjectAvatarResponseCreatorVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UploadProjectAvatarResponseCreatorVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UploadProjectAvatarResponseCreatorVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0(UploadProjectAvatarResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1(UploadProjectAvatarResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2(UploadProjectAvatarResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3(UploadProjectAvatarResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UploadProjectAvatarResponseCreator");
+    try {
+      return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0(
+          UploadProjectAvatarResponseCreatorVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1(
+          UploadProjectAvatarResponseCreatorVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2(
+          UploadProjectAvatarResponseCreatorVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3(
+          UploadProjectAvatarResponseCreatorVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UploadProjectAvatarResponseCreator");
   }
   Object? toJson();
 }
 
-final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0 extends UploadProjectAvatarResponseCreator {
+final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0
+    extends UploadProjectAvatarResponseCreator {
   final UploadProjectAvatarResponseCreatorVariant0 value;
-  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1 extends UploadProjectAvatarResponseCreator {
+final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1
+    extends UploadProjectAvatarResponseCreator {
   final UploadProjectAvatarResponseCreatorVariant1 value;
-  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2 extends UploadProjectAvatarResponseCreator {
+final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2
+    extends UploadProjectAvatarResponseCreator {
   final UploadProjectAvatarResponseCreatorVariant2 value;
-  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3 extends UploadProjectAvatarResponseCreator {
+final class UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3
+    extends UploadProjectAvatarResponseCreator {
   final UploadProjectAvatarResponseCreatorVariant3 value;
-  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseCreatorUploadProjectAvatarResponseCreatorVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

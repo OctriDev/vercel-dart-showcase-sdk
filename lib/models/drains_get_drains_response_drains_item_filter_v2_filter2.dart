@@ -7,58 +7,141 @@ part of 'drains.dart';
 class GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>> environments;
+  final SdkOptional<
+          List<
+              GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>>
+      environments;
 
-  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment({this.environments = const SdkOmitted()});
+  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment(
+      {this.environments = const SdkOmitted()});
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment Function({SdkOptional<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>> environments}) get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment Function(
+      {SdkOptional<
+              List<
+                  GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>>
+          environments}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment _copyWith({Object? environments = sdkOmittedValue}) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment(
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as SdkOptional<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>>,
-  );
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment _copyWith(
+          {Object? environments = sdkOmittedValue}) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment(
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as SdkOptional<
+                List<
+                    GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>>,
+      );
 
-  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment(
-    environments: json['environments'] != null ? SdkPresent(((json['environments'] as List?)?.map((e) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-  );
+  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment.fromJson(
+          Map<String, dynamic> json) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment(
+        environments: json['environments'] != null
+            ? SdkPresent(((json['environments'] as List?)
+                ?.map((e) =>
+                    GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem
+                        .fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (environments) {
-      SdkPresent<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>>(value: final value) => {'environments': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (environments) {
+          SdkPresent<
+                List<
+                    GetDrainsResponseDrainsItemFilterV2Filter2Variant0DeploymentEnvironmentsItem>>(
+            value: final value
+          ) =>
+            {
+              'environments': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs> legacyExcludeCachedStaticAssetLogs;
-  final SdkOptional<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>> sources;
+  final SdkOptional<
+          GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs>
+      legacyExcludeCachedStaticAssetLogs;
+  final SdkOptional<
+          List<
+              GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>>
+      sources;
 
-  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log({this.legacyExcludeCachedStaticAssetLogs = const SdkOmitted(), this.sources = const SdkOmitted()});
+  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log(
+      {this.legacyExcludeCachedStaticAssetLogs = const SdkOmitted(),
+      this.sources = const SdkOmitted()});
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log Function({SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs> legacyExcludeCachedStaticAssetLogs, SdkOptional<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>> sources}) get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log Function(
+      {SdkOptional<
+              GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs>
+          legacyExcludeCachedStaticAssetLogs,
+      SdkOptional<
+              List<
+                  GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>>
+          sources}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log _copyWith({Object? legacyExcludeCachedStaticAssetLogs = sdkOmittedValue, Object? sources = sdkOmittedValue}) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log(
-    legacyExcludeCachedStaticAssetLogs: identical(legacyExcludeCachedStaticAssetLogs, sdkOmittedValue) ? this.legacyExcludeCachedStaticAssetLogs : legacyExcludeCachedStaticAssetLogs as SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs>,
-    sources: identical(sources, sdkOmittedValue) ? this.sources : sources as SdkOptional<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>>,
-  );
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log _copyWith(
+          {Object? legacyExcludeCachedStaticAssetLogs = sdkOmittedValue,
+          Object? sources = sdkOmittedValue}) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log(
+        legacyExcludeCachedStaticAssetLogs: identical(
+                legacyExcludeCachedStaticAssetLogs, sdkOmittedValue)
+            ? this.legacyExcludeCachedStaticAssetLogs
+            : legacyExcludeCachedStaticAssetLogs as SdkOptional<
+                GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs>,
+        sources: identical(sources, sdkOmittedValue)
+            ? this.sources
+            : sources as SdkOptional<
+                List<
+                    GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>>,
+      );
 
-  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log(
-    legacyExcludeCachedStaticAssetLogs: json['legacy_excludeCachedStaticAssetLogs'] != null ? SdkPresent((json['legacy_excludeCachedStaticAssetLogs'] != null ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs.fromJson(json['legacy_excludeCachedStaticAssetLogs'] as bool) : null)!) : const SdkOmitted(),
-    sources: json['sources'] != null ? SdkPresent(((json['sources'] as List?)?.map((e) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-  );
+  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log.fromJson(
+          Map<String, dynamic> json) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log(
+        legacyExcludeCachedStaticAssetLogs: json[
+                    'legacy_excludeCachedStaticAssetLogs'] !=
+                null
+            ? SdkPresent((json['legacy_excludeCachedStaticAssetLogs'] != null
+                ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs
+                    .fromJson(
+                        json['legacy_excludeCachedStaticAssetLogs'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        sources: json['sources'] != null
+            ? SdkPresent(((json['sources'] as List?)
+                ?.map((e) =>
+                    GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem
+                        .fromJson(e as String))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (legacyExcludeCachedStaticAssetLogs) {
-      SdkPresent<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs>(value: final value) => {'legacy_excludeCachedStaticAssetLogs': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sources) {
-      SdkPresent<List<GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>>(value: final value) => {'sources': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (legacyExcludeCachedStaticAssetLogs) {
+          SdkPresent<
+                GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogLegacyExcludeCachedStaticAssetLogs>(
+            value: final value
+          ) =>
+            {
+              'legacy_excludeCachedStaticAssetLogs': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sources) {
+          SdkPresent<
+                List<
+                    GetDrainsResponseDrainsItemFilterV2Filter2Variant0LogSourcesItem>>(
+            value: final value
+          ) =>
+            {
+              'sources': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project {
@@ -66,67 +149,145 @@ class GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project {
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> ids;
 
-  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project({this.ids = const SdkOmitted()});
+  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project(
+      {this.ids = const SdkOmitted()});
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project Function({SdkOptional<List<String>> ids}) get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project Function(
+      {SdkOptional<List<String>> ids}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project _copyWith({Object? ids = sdkOmittedValue}) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project(
-    ids: identical(ids, sdkOmittedValue) ? this.ids : ids as SdkOptional<List<String>>,
-  );
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project _copyWith(
+          {Object? ids = sdkOmittedValue}) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project(
+        ids: identical(ids, sdkOmittedValue)
+            ? this.ids
+            : ids as SdkOptional<List<String>>,
+      );
 
-  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project(
-    ids: json['ids'] != null ? SdkPresent(((json['ids'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project.fromJson(
+          Map<String, dynamic> json) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project(
+        ids: json['ids'] != null
+            ? SdkPresent(
+                ((json['ids'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (ids) {
-      SdkPresent<List<String>>(value: final value) => {'ids': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (ids) {
+          SdkPresent<List<String>>(value: final value) => {
+              'ids': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetDrainsResponseDrainsItemFilterV2Filter2Variant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment> deployment;
+  final SdkOptional<
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment> deployment;
   final SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log> log;
-  final SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project> project;
+  final SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project>
+      project;
   final GetDrainsResponseDrainsItemFilterV2Filter2Variant0Type type_;
 
-  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0({this.deployment = const SdkOmitted(), this.log = const SdkOmitted(), this.project = const SdkOmitted(), required this.type_});
+  const GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
+      {this.deployment = const SdkOmitted(),
+      this.log = const SdkOmitted(),
+      this.project = const SdkOmitted(),
+      required this.type_});
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0 Function({SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment> deployment, SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log> log, SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project> project, GetDrainsResponseDrainsItemFilterV2Filter2Variant0Type type_}) get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0 Function(
+      {SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment>
+          deployment,
+      SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log> log,
+      SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project>
+          project,
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0Type
+          type_}) get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant0 _copyWith({Object? deployment = sdkOmittedValue, Object? log = sdkOmittedValue, Object? project = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
-    deployment: identical(deployment, sdkOmittedValue) ? this.deployment : deployment as SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment>,
-    log: identical(log, sdkOmittedValue) ? this.log : log as SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log>,
-    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDrainsResponseDrainsItemFilterV2Filter2Variant0Type,
-  );
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant0 _copyWith(
+          {Object? deployment = sdkOmittedValue,
+          Object? log = sdkOmittedValue,
+          Object? project = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
+        deployment: identical(deployment, sdkOmittedValue)
+            ? this.deployment
+            : deployment as SdkOptional<
+                GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment>,
+        log: identical(log, sdkOmittedValue)
+            ? this.log
+            : log as SdkOptional<
+                GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log>,
+        project: identical(project, sdkOmittedValue)
+            ? this.project
+            : project as SdkOptional<
+                GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetDrainsResponseDrainsItemFilterV2Filter2Variant0Type,
+      );
 
-  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
-    deployment: json['deployment'] != null ? SdkPresent((json['deployment'] != null ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment.fromJson(json['deployment'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    log: json['log'] != null ? SdkPresent((json['log'] != null ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log.fromJson(json['log'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    project: json['project'] != null ? SdkPresent((json['project'] != null ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project.fromJson(json['project'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    type_: (json['type'] != null ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
+        deployment: json['deployment'] != null
+            ? SdkPresent((json['deployment'] != null
+                ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment
+                    .fromJson(json['deployment'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        log: json['log'] != null
+            ? SdkPresent((json['log'] != null
+                ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log
+                    .fromJson(json['log'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        project: json['project'] != null
+            ? SdkPresent((json['project'] != null
+                ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project
+                    .fromJson(json['project'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        type_: (json['type'] != null
+            ? GetDrainsResponseDrainsItemFilterV2Filter2Variant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (deployment) {
-      SdkPresent<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment>(value: final value) => {'deployment': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (log) {
-      SdkPresent<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log>(value: final value) => {'log': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (project) {
-      SdkPresent<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project>(value: final value) => {'project': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'type': type_.toJson(),
-  };
+        ...switch (deployment) {
+          SdkPresent<
+                GetDrainsResponseDrainsItemFilterV2Filter2Variant0Deployment>(
+            value: final value
+          ) =>
+            {
+              'deployment': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (log) {
+          SdkPresent<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Log>(
+            value: final value
+          ) =>
+            {
+              'log': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (project) {
+          SdkPresent<GetDrainsResponseDrainsItemFilterV2Filter2Variant0Project>(
+            value: final value
+          ) =>
+            {
+              'project': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'type': type_.toJson(),
+      };
 }
 
 class GetDrainsResponseDrainsItemFilterV2Filter2Variant1 {
@@ -135,24 +296,37 @@ class GetDrainsResponseDrainsItemFilterV2Filter2Variant1 {
   final String text;
   final GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type type_;
 
-  const GetDrainsResponseDrainsItemFilterV2Filter2Variant1({required this.text, required this.type_});
+  const GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+      {required this.text, required this.type_});
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 Function({String text, GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type type_}) get copyWith => _copyWith;
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 Function(
+          {String text,
+          GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type type_})
+      get copyWith => _copyWith;
 
-  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 _copyWith({Object? text = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-    text: identical(text, sdkOmittedValue) ? this.text : text as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type,
-  );
+  GetDrainsResponseDrainsItemFilterV2Filter2Variant1 _copyWith(
+          {Object? text = sdkOmittedValue, Object? type_ = sdkOmittedValue}) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+        text: identical(text, sdkOmittedValue) ? this.text : text as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type,
+      );
 
-  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(Map<String, dynamic> json) => GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
-    text: (json['text'] as String?)!,
-    type_: (json['type'] != null ? GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+        text: (json['text'] as String?)!,
+        type_: (json['type'] != null
+            ? GetDrainsResponseDrainsItemFilterV2Filter2Variant1Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'text': text,
-    'type': type_.toJson(),
-  };
+        'text': text,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class GetDrainsResponseDrainsItemFilterV2Filter2 {
@@ -161,24 +335,53 @@ sealed class GetDrainsResponseDrainsItemFilterV2Filter2 {
   const GetDrainsResponseDrainsItemFilterV2Filter2();
   factory GetDrainsResponseDrainsItemFilterV2Filter2.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(value); } } catch (_) {}
-      try { final value = GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(value); } } catch (_) {}
+      try {
+        final value =
+            GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetDrainsResponseDrainsItemFilterV2Filter2");
+    try {
+      return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
+          GetDrainsResponseDrainsItemFilterV2Filter2Variant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+          GetDrainsResponseDrainsItemFilterV2Filter2Variant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetDrainsResponseDrainsItemFilterV2Filter2");
   }
   Object? toJson();
 }
 
-final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0 extends GetDrainsResponseDrainsItemFilterV2Filter2 {
+final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0
+    extends GetDrainsResponseDrainsItemFilterV2Filter2 {
   final GetDrainsResponseDrainsItemFilterV2Filter2Variant0 value;
-  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1 extends GetDrainsResponseDrainsItemFilterV2Filter2 {
+final class GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1
+    extends GetDrainsResponseDrainsItemFilterV2Filter2 {
   final GetDrainsResponseDrainsItemFilterV2Filter2Variant1 value;
-  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetDrainsResponseDrainsItemFilterV2Filter2GetDrainsResponseDrainsItemFilterV2Filter2Variant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

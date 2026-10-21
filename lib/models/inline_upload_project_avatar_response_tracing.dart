@@ -9,100 +9,196 @@ class UploadProjectAvatarResponseTracing {
   static const String constructionSurface = 'named';
   final SdkOptional<String> domains;
   final SdkOptional<List<String>> ignorePaths;
-  final SdkOptional<List<UploadProjectAvatarResponseTracingSamplingRulesItem>> samplingRules;
+  final SdkOptional<List<UploadProjectAvatarResponseTracingSamplingRulesItem>>
+      samplingRules;
 
-  const UploadProjectAvatarResponseTracing({this.domains = const SdkOmitted(), this.ignorePaths = const SdkOmitted(), this.samplingRules = const SdkOmitted()});
+  const UploadProjectAvatarResponseTracing(
+      {this.domains = const SdkOmitted(),
+      this.ignorePaths = const SdkOmitted(),
+      this.samplingRules = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTracing Function({SdkOptional<String> domains, SdkOptional<List<String>> ignorePaths, SdkOptional<List<UploadProjectAvatarResponseTracingSamplingRulesItem>> samplingRules}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTracing Function(
+      {SdkOptional<String> domains,
+      SdkOptional<List<String>> ignorePaths,
+      SdkOptional<List<UploadProjectAvatarResponseTracingSamplingRulesItem>>
+          samplingRules}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTracing _copyWith({Object? domains = sdkOmittedValue, Object? ignorePaths = sdkOmittedValue, Object? samplingRules = sdkOmittedValue}) => UploadProjectAvatarResponseTracing(
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<String>,
-    ignorePaths: identical(ignorePaths, sdkOmittedValue) ? this.ignorePaths : ignorePaths as SdkOptional<List<String>>,
-    samplingRules: identical(samplingRules, sdkOmittedValue) ? this.samplingRules : samplingRules as SdkOptional<List<UploadProjectAvatarResponseTracingSamplingRulesItem>>,
-  );
+  UploadProjectAvatarResponseTracing _copyWith(
+          {Object? domains = sdkOmittedValue,
+          Object? ignorePaths = sdkOmittedValue,
+          Object? samplingRules = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTracing(
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as SdkOptional<String>,
+        ignorePaths: identical(ignorePaths, sdkOmittedValue)
+            ? this.ignorePaths
+            : ignorePaths as SdkOptional<List<String>>,
+        samplingRules: identical(samplingRules, sdkOmittedValue)
+            ? this.samplingRules
+            : samplingRules as SdkOptional<
+                List<UploadProjectAvatarResponseTracingSamplingRulesItem>>,
+      );
 
-  factory UploadProjectAvatarResponseTracing.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTracing(
-    domains: json['domains'] != null ? SdkPresent((json['domains'] as String?)!) : const SdkOmitted(),
-    ignorePaths: json['ignorePaths'] != null ? SdkPresent(((json['ignorePaths'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    samplingRules: json['samplingRules'] != null ? SdkPresent(((json['samplingRules'] as List?)?.map((e) => UploadProjectAvatarResponseTracingSamplingRulesItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseTracing.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTracing(
+        domains: json['domains'] != null
+            ? SdkPresent((json['domains'] as String?)!)
+            : const SdkOmitted(),
+        ignorePaths: json['ignorePaths'] != null
+            ? SdkPresent(((json['ignorePaths'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        samplingRules: json['samplingRules'] != null
+            ? SdkPresent(((json['samplingRules'] as List?)
+                ?.map((e) => UploadProjectAvatarResponseTracingSamplingRulesItem
+                    .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (domains) {
-      SdkPresent<String>(value: final value) => {'domains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ignorePaths) {
-      SdkPresent<List<String>>(value: final value) => {'ignorePaths': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (samplingRules) {
-      SdkPresent<List<UploadProjectAvatarResponseTracingSamplingRulesItem>>(value: final value) => {'samplingRules': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (domains) {
+          SdkPresent<String>(value: final value) => {
+              'domains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ignorePaths) {
+          SdkPresent<List<String>>(value: final value) => {
+              'ignorePaths': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (samplingRules) {
+          SdkPresent<List<UploadProjectAvatarResponseTracingSamplingRulesItem>>(
+            value: final value
+          ) =>
+            {
+              'samplingRules': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset;
+  final SdkOptional<
+          UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0 Function({SdkOptional<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0 Function(
+      {SdkOptional<
+              UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset preset;
+  final UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1 Function({UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1 Function(
+      {UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1(
-    preset: (json['preset'] != null ? UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1(
+        preset: (json['preset'] != null
+            ? UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItemToVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem {
@@ -112,154 +208,288 @@ class UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem {
   final Map<String, List<String>> claims;
   final SdkOptional<String> label;
 
-  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem({required this.to, required this.claims, this.label = const SdkOmitted()});
+  const UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem(
+      {required this.to,
+      required this.claims,
+      this.label = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem Function({dynamic to, Map<String, List<String>> claims, SdkOptional<String> label}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem Function(
+      {dynamic to,
+      Map<String, List<String>> claims,
+      SdkOptional<String> label}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem _copyWith({Object? to = sdkOmittedValue, Object? claims = sdkOmittedValue, Object? label = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem(
-    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as Map<String, List<String>>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-  );
+  UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem _copyWith(
+          {Object? to = sdkOmittedValue,
+          Object? claims = sdkOmittedValue,
+          Object? label = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem(
+        to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+        claims: identical(claims, sdkOmittedValue)
+            ? this.claims
+            : claims as Map<String, List<String>>,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+      );
 
-  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem(
-    to: (json['to'])!,
-    claims: (json['claims'] == null ? null : Map<String, dynamic>.from(json['claims'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => item as String).toList())))!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesOidcProvidersValueItem(
+        to: (json['to'])!,
+        claims: (json['claims'] == null
+            ? null
+            : Map<String, dynamic>.from(json['claims'] as Map).map(
+                (key, value) => MapEntry(key,
+                    (value as List).map((item) => item as String).toList())))!,
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'to': to,
-    'claims': claims,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'to': to,
+        'claims': claims,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The source envs on the trusted project that are allowed to access `to`.
 class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset> preset;
+  final SdkOptional<
+          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0 Function({SdkOptional<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0 Function(
+      {SdkOptional<
+              UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The source envs on the trusted project that are allowed to access `to`.
 class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset preset;
+  final UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1 Function({UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1 Function(
+      {UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
-    preset: (json['preset'] != null ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1(
+        preset: (json['preset'] != null
+            ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemFromVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset> preset;
+  final SdkOptional<
+          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final List<String> slugs;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0({this.preset = const SdkOmitted(), required this.slugs});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+      {this.preset = const SdkOmitted(), required this.slugs});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0 Function({SdkOptional<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset> preset, List<String> slugs}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0 Function(
+      {SdkOptional<
+              UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>
+          preset,
+      List<String> slugs}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as List<String>,
-  );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset as SdkOptional<
+                    UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as List<String>,
+          );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0(
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-    slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0(
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        slugs: ((json['slugs'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (preset) {
-      SdkPresent<UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'slugs': slugs,
-  };
+        ...switch (preset) {
+          SdkPresent<
+                UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant0Preset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'slugs': slugs,
+      };
 }
 
 /// The target envs on the current project that may be accessed.
 class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset;
+  final UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+      preset;
+
   /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
   final SdkOptional<List<String>> slugs;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1({required this.preset, this.slugs = const SdkOmitted()});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+      {required this.preset, this.slugs = const SdkOmitted()});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function({UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset preset, SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 Function(
+      {UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+          preset,
+      SdkOptional<List<String>> slugs}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1 _copyWith({Object? preset = sdkOmittedValue, Object? slugs = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-  );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1
+      _copyWith(
+              {Object? preset = sdkOmittedValue,
+              Object? slugs = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+            preset: identical(preset, sdkOmittedValue)
+                ? this.preset
+                : preset
+                    as UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset,
+            slugs: identical(slugs, sdkOmittedValue)
+                ? this.slugs
+                : slugs as SdkOptional<List<String>>,
+          );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
-    preset: (json['preset'] != null ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset.fromJson(json['preset'] as String) : null)!,
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1(
+        preset: (json['preset'] != null
+            ? UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItemToVariant1Preset
+                .fromJson(json['preset'] as String)
+            : null)!,
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'preset': preset.toJson(),
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'preset': preset.toJson(),
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project.
@@ -269,22 +499,30 @@ class UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem {
   final dynamic from;
   final dynamic to;
 
-  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem({required this.from, required this.to});
+  const UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
+      {required this.from, required this.to});
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem Function({dynamic from, dynamic to}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem
+      Function({dynamic from, dynamic to}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem _copyWith({Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
-    from: identical(from, sdkOmittedValue) ? this.from : from as dynamic,
-    to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
-  );
+  UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem
+      _copyWith(
+              {Object? from = sdkOmittedValue, Object? to = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
+            from:
+                identical(from, sdkOmittedValue) ? this.from : from as dynamic,
+            to: identical(to, sdkOmittedValue) ? this.to : to as dynamic,
+          );
 
-  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
-    from: (json['from'])!,
-    to: (json['to'])!,
-  );
+  factory UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedSourcesProjectsValueCustomAllowItem(
+        from: (json['from'])!,
+        to: (json['to'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'from': from,
-    'to': to,
-  };
+        'from': from,
+        'to': to,
+      };
 }

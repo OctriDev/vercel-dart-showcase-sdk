@@ -10,79 +10,142 @@ class UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem {
   final SdkOptional<String> note;
   final String value;
 
-  const UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem({this.note = const SdkOmitted(), required this.value});
+  const UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
+      {this.note = const SdkOmitted(), required this.value});
 
-  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem Function({SdkOptional<String> note, String value}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem Function(
+      {SdkOptional<String> note, String value}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem _copyWith({Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem _copyWith(
+          {Object? note = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
-    note: json['note'] != null ? SdkPresent((json['note'] as String?)!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-  );
+  factory UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem(
+        note: json['note'] != null
+            ? SdkPresent((json['note'] as String?)!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-  };
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+      };
 }
 
 class UploadProjectAvatarResponseTrustedIpsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem> addresses;
-  final UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType deploymentType;
-  final UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode protectionMode;
+  final List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>
+      addresses;
+  final UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType
+      deploymentType;
+  final UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode
+      protectionMode;
 
-  const UploadProjectAvatarResponseTrustedIpsVariant0({required this.addresses, required this.deploymentType, required this.protectionMode});
+  const UploadProjectAvatarResponseTrustedIpsVariant0(
+      {required this.addresses,
+      required this.deploymentType,
+      required this.protectionMode});
 
-  UploadProjectAvatarResponseTrustedIpsVariant0 Function({List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem> addresses, UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType deploymentType, UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode protectionMode}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedIpsVariant0 Function(
+      {List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>
+          addresses,
+      UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType
+          deploymentType,
+      UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode
+          protectionMode}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedIpsVariant0 _copyWith({Object? addresses = sdkOmittedValue, Object? deploymentType = sdkOmittedValue, Object? protectionMode = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedIpsVariant0(
-    addresses: identical(addresses, sdkOmittedValue) ? this.addresses : addresses as List<UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>,
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType,
-    protectionMode: identical(protectionMode, sdkOmittedValue) ? this.protectionMode : protectionMode as UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode,
-  );
+  UploadProjectAvatarResponseTrustedIpsVariant0 _copyWith(
+          {Object? addresses = sdkOmittedValue,
+          Object? deploymentType = sdkOmittedValue,
+          Object? protectionMode = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTrustedIpsVariant0(
+        addresses: identical(addresses, sdkOmittedValue)
+            ? this.addresses
+            : addresses as List<
+                UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem>,
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType,
+        protectionMode: identical(protectionMode, sdkOmittedValue)
+            ? this.protectionMode
+            : protectionMode
+                as UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode,
+      );
 
-  factory UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedIpsVariant0(
-    addresses: ((json['addresses'] as List?)?.map((e) => UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    deploymentType: (json['deploymentType'] != null ? UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-    protectionMode: (json['protectionMode'] != null ? UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode.fromJson(json['protectionMode'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedIpsVariant0(
+        addresses: ((json['addresses'] as List?)
+            ?.map((e) =>
+                UploadProjectAvatarResponseTrustedIpsVariant0AddressesItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+        deploymentType: (json['deploymentType'] != null
+            ? UploadProjectAvatarResponseTrustedIpsVariant0DeploymentType
+                .fromJson(json['deploymentType'] as String)
+            : null)!,
+        protectionMode: (json['protectionMode'] != null
+            ? UploadProjectAvatarResponseTrustedIpsVariant0ProtectionMode
+                .fromJson(json['protectionMode'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'addresses': addresses.map((item) => item.toJson()).toList(),
-    'deploymentType': deploymentType.toJson(),
-    'protectionMode': protectionMode.toJson(),
-  };
+        'addresses': addresses.map((item) => item.toJson()).toList(),
+        'deploymentType': deploymentType.toJson(),
+        'protectionMode': protectionMode.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseTrustedIpsVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType deploymentType;
+  final UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType
+      deploymentType;
 
-  const UploadProjectAvatarResponseTrustedIpsVariant1({required this.deploymentType});
+  const UploadProjectAvatarResponseTrustedIpsVariant1(
+      {required this.deploymentType});
 
-  UploadProjectAvatarResponseTrustedIpsVariant1 Function({UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType deploymentType}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseTrustedIpsVariant1 Function(
+      {UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType
+          deploymentType}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseTrustedIpsVariant1 _copyWith({Object? deploymentType = sdkOmittedValue}) => UploadProjectAvatarResponseTrustedIpsVariant1(
-    deploymentType: identical(deploymentType, sdkOmittedValue) ? this.deploymentType : deploymentType as UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType,
-  );
+  UploadProjectAvatarResponseTrustedIpsVariant1 _copyWith(
+          {Object? deploymentType = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseTrustedIpsVariant1(
+        deploymentType: identical(deploymentType, sdkOmittedValue)
+            ? this.deploymentType
+            : deploymentType
+                as UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType,
+      );
 
-  factory UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseTrustedIpsVariant1(
-    deploymentType: (json['deploymentType'] != null ? UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType.fromJson(json['deploymentType'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseTrustedIpsVariant1(
+        deploymentType: (json['deploymentType'] != null
+            ? UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType
+                .fromJson(json['deploymentType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'deploymentType': deploymentType.toJson(),
-  };
+        'deploymentType': deploymentType.toJson(),
+      };
 }
 
 sealed class UploadProjectAvatarResponseTrustedIps {
@@ -91,24 +154,53 @@ sealed class UploadProjectAvatarResponseTrustedIps {
   const UploadProjectAvatarResponseTrustedIps();
   factory UploadProjectAvatarResponseTrustedIps.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(value); } } catch (_) {}
-      try { final value = UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UploadProjectAvatarResponseTrustedIps");
+    try {
+      return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(
+          UploadProjectAvatarResponseTrustedIpsVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(
+          UploadProjectAvatarResponseTrustedIpsVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UploadProjectAvatarResponseTrustedIps");
   }
   Object? toJson();
 }
 
-final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0 extends UploadProjectAvatarResponseTrustedIps {
+final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0
+    extends UploadProjectAvatarResponseTrustedIps {
   final UploadProjectAvatarResponseTrustedIpsVariant0 value;
-  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1 extends UploadProjectAvatarResponseTrustedIps {
+final class UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1
+    extends UploadProjectAvatarResponseTrustedIps {
   final UploadProjectAvatarResponseTrustedIpsVariant1 value;
-  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseTrustedIpsUploadProjectAvatarResponseTrustedIpsVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

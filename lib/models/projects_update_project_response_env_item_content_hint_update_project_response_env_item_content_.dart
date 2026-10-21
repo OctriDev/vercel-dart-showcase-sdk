@@ -4,38 +4,56 @@
 part of 'projects_update.dart';
 
 // projects_update domain models
-final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant11 extends UpdateProjectResponseEnvItemContentHint {
+final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant11
+    extends UpdateProjectResponseEnvItemContentHint {
   final UpdateProjectResponseEnvItemContentHintVariant11 value;
-  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant11(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant11(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant12 extends UpdateProjectResponseEnvItemContentHint {
+final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant12
+    extends UpdateProjectResponseEnvItemContentHint {
   final UpdateProjectResponseEnvItemContentHintVariant12 value;
-  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant12(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant12(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant13 extends UpdateProjectResponseEnvItemContentHint {
+final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant13
+    extends UpdateProjectResponseEnvItemContentHint {
   final UpdateProjectResponseEnvItemContentHintVariant13 value;
-  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant13(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant13(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant14 extends UpdateProjectResponseEnvItemContentHint {
+final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant14
+    extends UpdateProjectResponseEnvItemContentHint {
   final UpdateProjectResponseEnvItemContentHintVariant14 value;
-  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant14(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant14(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant15 extends UpdateProjectResponseEnvItemContentHint {
+final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant15
+    extends UpdateProjectResponseEnvItemContentHint {
   final UpdateProjectResponseEnvItemContentHintVariant15 value;
-  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant15(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant15(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant16 extends UpdateProjectResponseEnvItemContentHint {
+final class UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant16
+    extends UpdateProjectResponseEnvItemContentHint {
   final UpdateProjectResponseEnvItemContentHintVariant16 value;
-  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant16(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseEnvItemContentHintUpdateProjectResponseEnvItemContentHintVariant16(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

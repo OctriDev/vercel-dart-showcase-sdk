@@ -7,144 +7,359 @@ part of 'deployments.dart';
 class CreateDeploymentResponseVariant1ImagesRemotePatternsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Can be literal or wildcard. Single `*` matches a single subdomain. Double `**` matches any number of subdomains.
   final String hostname;
+
   /// Can be literal or wildcard. Single `*` matches a single path segment. Double `**` matches any number of path segments.
   final SdkOptional<String> pathname;
+
   /// Can be literal port such as `8080` or empty string meaning no port.
   final SdkOptional<String> port;
+
   /// Must be `http` or `https`.
-  final SdkOptional<CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol> protocol;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol>
+      protocol;
+
   /// Can be literal query string such as `?v=1` or empty string meaning no query string.
   final SdkOptional<String> search;
 
-  const CreateDeploymentResponseVariant1ImagesRemotePatternsItem({required this.hostname, this.pathname = const SdkOmitted(), this.port = const SdkOmitted(), this.protocol = const SdkOmitted(), this.search = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1ImagesRemotePatternsItem(
+      {required this.hostname,
+      this.pathname = const SdkOmitted(),
+      this.port = const SdkOmitted(),
+      this.protocol = const SdkOmitted(),
+      this.search = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1ImagesRemotePatternsItem Function({String hostname, SdkOptional<String> pathname, SdkOptional<String> port, SdkOptional<CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol> protocol, SdkOptional<String> search}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ImagesRemotePatternsItem Function(
+      {String hostname,
+      SdkOptional<String> pathname,
+      SdkOptional<String> port,
+      SdkOptional<
+              CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol>
+          protocol,
+      SdkOptional<String> search}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ImagesRemotePatternsItem _copyWith({Object? hostname = sdkOmittedValue, Object? pathname = sdkOmittedValue, Object? port = sdkOmittedValue, Object? protocol = sdkOmittedValue, Object? search = sdkOmittedValue}) => CreateDeploymentResponseVariant1ImagesRemotePatternsItem(
-    hostname: identical(hostname, sdkOmittedValue) ? this.hostname : hostname as String,
-    pathname: identical(pathname, sdkOmittedValue) ? this.pathname : pathname as SdkOptional<String>,
-    port: identical(port, sdkOmittedValue) ? this.port : port as SdkOptional<String>,
-    protocol: identical(protocol, sdkOmittedValue) ? this.protocol : protocol as SdkOptional<CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol>,
-    search: identical(search, sdkOmittedValue) ? this.search : search as SdkOptional<String>,
-  );
+  CreateDeploymentResponseVariant1ImagesRemotePatternsItem _copyWith(
+          {Object? hostname = sdkOmittedValue,
+          Object? pathname = sdkOmittedValue,
+          Object? port = sdkOmittedValue,
+          Object? protocol = sdkOmittedValue,
+          Object? search = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1ImagesRemotePatternsItem(
+        hostname: identical(hostname, sdkOmittedValue)
+            ? this.hostname
+            : hostname as String,
+        pathname: identical(pathname, sdkOmittedValue)
+            ? this.pathname
+            : pathname as SdkOptional<String>,
+        port: identical(port, sdkOmittedValue)
+            ? this.port
+            : port as SdkOptional<String>,
+        protocol: identical(protocol, sdkOmittedValue)
+            ? this.protocol
+            : protocol as SdkOptional<
+                CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol>,
+        search: identical(search, sdkOmittedValue)
+            ? this.search
+            : search as SdkOptional<String>,
+      );
 
-  factory CreateDeploymentResponseVariant1ImagesRemotePatternsItem.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ImagesRemotePatternsItem(
-    hostname: (json['hostname'] as String?)!,
-    pathname: json['pathname'] != null ? SdkPresent((json['pathname'] as String?)!) : const SdkOmitted(),
-    port: json['port'] != null ? SdkPresent((json['port'] as String?)!) : const SdkOmitted(),
-    protocol: json['protocol'] != null ? SdkPresent((json['protocol'] != null ? CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol.fromJson(json['protocol'] as String) : null)!) : const SdkOmitted(),
-    search: json['search'] != null ? SdkPresent((json['search'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateDeploymentResponseVariant1ImagesRemotePatternsItem.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ImagesRemotePatternsItem(
+        hostname: (json['hostname'] as String?)!,
+        pathname: json['pathname'] != null
+            ? SdkPresent((json['pathname'] as String?)!)
+            : const SdkOmitted(),
+        port: json['port'] != null
+            ? SdkPresent((json['port'] as String?)!)
+            : const SdkOmitted(),
+        protocol: json['protocol'] != null
+            ? SdkPresent((json['protocol'] != null
+                ? CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol
+                    .fromJson(json['protocol'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        search: json['search'] != null
+            ? SdkPresent((json['search'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'hostname': hostname,
-    ...switch (pathname) {
-      SdkPresent<String>(value: final value) => {'pathname': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (port) {
-      SdkPresent<String>(value: final value) => {'port': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (protocol) {
-      SdkPresent<CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol>(value: final value) => {'protocol': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (search) {
-      SdkPresent<String>(value: final value) => {'search': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'hostname': hostname,
+        ...switch (pathname) {
+          SdkPresent<String>(value: final value) => {
+              'pathname': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (port) {
+          SdkPresent<String>(value: final value) => {
+              'port': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (protocol) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ImagesRemotePatternsItemProtocol>(
+            value: final value
+          ) =>
+            {
+              'protocol': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (search) {
+          SdkPresent<String>(value: final value) => {
+              'search': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateDeploymentResponseVariant1Images {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<CreateDeploymentResponseVariant1ImagesContentDispositionType> contentDispositionType;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1ImagesContentDispositionType>
+      contentDispositionType;
   final SdkOptional<String> contentSecurityPolicy;
-  final SdkOptional<CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG> dangerouslyAllowSvg;
+  final SdkOptional<CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG>
+      dangerouslyAllowSvg;
   final SdkOptional<List<String>> domains;
-  final SdkOptional<List<CreateDeploymentResponseVariant1ImagesFormatsItem>> formats;
-  final SdkOptional<List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>> localPatterns;
+  final SdkOptional<List<CreateDeploymentResponseVariant1ImagesFormatsItem>>
+      formats;
+  final SdkOptional<
+          List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>>
+      localPatterns;
   final SdkOptional<double> minimumCacheTtl;
   final SdkOptional<List<double>> qualities;
-  final SdkOptional<List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>> remotePatterns;
+  final SdkOptional<
+          List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>>
+      remotePatterns;
   final SdkOptional<List<double>> sizes;
 
-  const CreateDeploymentResponseVariant1Images({this.contentDispositionType = const SdkOmitted(), this.contentSecurityPolicy = const SdkOmitted(), this.dangerouslyAllowSvg = const SdkOmitted(), this.domains = const SdkOmitted(), this.formats = const SdkOmitted(), this.localPatterns = const SdkOmitted(), this.minimumCacheTtl = const SdkOmitted(), this.qualities = const SdkOmitted(), this.remotePatterns = const SdkOmitted(), this.sizes = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1Images(
+      {this.contentDispositionType = const SdkOmitted(),
+      this.contentSecurityPolicy = const SdkOmitted(),
+      this.dangerouslyAllowSvg = const SdkOmitted(),
+      this.domains = const SdkOmitted(),
+      this.formats = const SdkOmitted(),
+      this.localPatterns = const SdkOmitted(),
+      this.minimumCacheTtl = const SdkOmitted(),
+      this.qualities = const SdkOmitted(),
+      this.remotePatterns = const SdkOmitted(),
+      this.sizes = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1Images Function({SdkOptional<CreateDeploymentResponseVariant1ImagesContentDispositionType> contentDispositionType, SdkOptional<String> contentSecurityPolicy, SdkOptional<CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG> dangerouslyAllowSvg, SdkOptional<List<String>> domains, SdkOptional<List<CreateDeploymentResponseVariant1ImagesFormatsItem>> formats, SdkOptional<List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>> localPatterns, SdkOptional<double> minimumCacheTtl, SdkOptional<List<double>> qualities, SdkOptional<List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>> remotePatterns, SdkOptional<List<double>> sizes}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1Images Function(
+      {SdkOptional<CreateDeploymentResponseVariant1ImagesContentDispositionType>
+          contentDispositionType,
+      SdkOptional<String> contentSecurityPolicy,
+      SdkOptional<CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG>
+          dangerouslyAllowSvg,
+      SdkOptional<List<String>> domains,
+      SdkOptional<List<CreateDeploymentResponseVariant1ImagesFormatsItem>>
+          formats,
+      SdkOptional<List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>>
+          localPatterns,
+      SdkOptional<double> minimumCacheTtl,
+      SdkOptional<List<double>> qualities,
+      SdkOptional<
+              List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>>
+          remotePatterns,
+      SdkOptional<List<double>> sizes}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1Images _copyWith({Object? contentDispositionType = sdkOmittedValue, Object? contentSecurityPolicy = sdkOmittedValue, Object? dangerouslyAllowSvg = sdkOmittedValue, Object? domains = sdkOmittedValue, Object? formats = sdkOmittedValue, Object? localPatterns = sdkOmittedValue, Object? minimumCacheTtl = sdkOmittedValue, Object? qualities = sdkOmittedValue, Object? remotePatterns = sdkOmittedValue, Object? sizes = sdkOmittedValue}) => CreateDeploymentResponseVariant1Images(
-    contentDispositionType: identical(contentDispositionType, sdkOmittedValue) ? this.contentDispositionType : contentDispositionType as SdkOptional<CreateDeploymentResponseVariant1ImagesContentDispositionType>,
-    contentSecurityPolicy: identical(contentSecurityPolicy, sdkOmittedValue) ? this.contentSecurityPolicy : contentSecurityPolicy as SdkOptional<String>,
-    dangerouslyAllowSvg: identical(dangerouslyAllowSvg, sdkOmittedValue) ? this.dangerouslyAllowSvg : dangerouslyAllowSvg as SdkOptional<CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG>,
-    domains: identical(domains, sdkOmittedValue) ? this.domains : domains as SdkOptional<List<String>>,
-    formats: identical(formats, sdkOmittedValue) ? this.formats : formats as SdkOptional<List<CreateDeploymentResponseVariant1ImagesFormatsItem>>,
-    localPatterns: identical(localPatterns, sdkOmittedValue) ? this.localPatterns : localPatterns as SdkOptional<List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>>,
-    minimumCacheTtl: identical(minimumCacheTtl, sdkOmittedValue) ? this.minimumCacheTtl : minimumCacheTtl as SdkOptional<double>,
-    qualities: identical(qualities, sdkOmittedValue) ? this.qualities : qualities as SdkOptional<List<double>>,
-    remotePatterns: identical(remotePatterns, sdkOmittedValue) ? this.remotePatterns : remotePatterns as SdkOptional<List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>>,
-    sizes: identical(sizes, sdkOmittedValue) ? this.sizes : sizes as SdkOptional<List<double>>,
-  );
+  CreateDeploymentResponseVariant1Images _copyWith(
+          {Object? contentDispositionType = sdkOmittedValue,
+          Object? contentSecurityPolicy = sdkOmittedValue,
+          Object? dangerouslyAllowSvg = sdkOmittedValue,
+          Object? domains = sdkOmittedValue,
+          Object? formats = sdkOmittedValue,
+          Object? localPatterns = sdkOmittedValue,
+          Object? minimumCacheTtl = sdkOmittedValue,
+          Object? qualities = sdkOmittedValue,
+          Object? remotePatterns = sdkOmittedValue,
+          Object? sizes = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1Images(
+        contentDispositionType: identical(
+                contentDispositionType, sdkOmittedValue)
+            ? this.contentDispositionType
+            : contentDispositionType as SdkOptional<
+                CreateDeploymentResponseVariant1ImagesContentDispositionType>,
+        contentSecurityPolicy: identical(contentSecurityPolicy, sdkOmittedValue)
+            ? this.contentSecurityPolicy
+            : contentSecurityPolicy as SdkOptional<String>,
+        dangerouslyAllowSvg: identical(dangerouslyAllowSvg, sdkOmittedValue)
+            ? this.dangerouslyAllowSvg
+            : dangerouslyAllowSvg as SdkOptional<
+                CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG>,
+        domains: identical(domains, sdkOmittedValue)
+            ? this.domains
+            : domains as SdkOptional<List<String>>,
+        formats: identical(formats, sdkOmittedValue)
+            ? this.formats
+            : formats as SdkOptional<
+                List<CreateDeploymentResponseVariant1ImagesFormatsItem>>,
+        localPatterns: identical(localPatterns, sdkOmittedValue)
+            ? this.localPatterns
+            : localPatterns as SdkOptional<
+                List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>>,
+        minimumCacheTtl: identical(minimumCacheTtl, sdkOmittedValue)
+            ? this.minimumCacheTtl
+            : minimumCacheTtl as SdkOptional<double>,
+        qualities: identical(qualities, sdkOmittedValue)
+            ? this.qualities
+            : qualities as SdkOptional<List<double>>,
+        remotePatterns: identical(remotePatterns, sdkOmittedValue)
+            ? this.remotePatterns
+            : remotePatterns as SdkOptional<
+                List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>>,
+        sizes: identical(sizes, sdkOmittedValue)
+            ? this.sizes
+            : sizes as SdkOptional<List<double>>,
+      );
 
-  factory CreateDeploymentResponseVariant1Images.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1Images(
-    contentDispositionType: json['contentDispositionType'] != null ? SdkPresent((json['contentDispositionType'] != null ? CreateDeploymentResponseVariant1ImagesContentDispositionType.fromJson(json['contentDispositionType'] as String) : null)!) : const SdkOmitted(),
-    contentSecurityPolicy: json['contentSecurityPolicy'] != null ? SdkPresent((json['contentSecurityPolicy'] as String?)!) : const SdkOmitted(),
-    dangerouslyAllowSvg: json['dangerouslyAllowSVG'] != null ? SdkPresent((json['dangerouslyAllowSVG'] != null ? CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG.fromJson(json['dangerouslyAllowSVG'] as bool) : null)!) : const SdkOmitted(),
-    domains: json['domains'] != null ? SdkPresent(((json['domains'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    formats: json['formats'] != null ? SdkPresent(((json['formats'] as List?)?.map((e) => CreateDeploymentResponseVariant1ImagesFormatsItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    localPatterns: json['localPatterns'] != null ? SdkPresent(((json['localPatterns'] as List?)?.map((e) => CreateDeploymentResponseVariant1ImagesLocalPatternsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    minimumCacheTtl: json['minimumCacheTTL'] != null ? SdkPresent(((json['minimumCacheTTL'] as num?)?.toDouble())!) : const SdkOmitted(),
-    qualities: json['qualities'] != null ? SdkPresent(((json['qualities'] as List?)?.map((e) => (e as num).toDouble()).toList())!) : const SdkOmitted(),
-    remotePatterns: json['remotePatterns'] != null ? SdkPresent(((json['remotePatterns'] as List?)?.map((e) => CreateDeploymentResponseVariant1ImagesRemotePatternsItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    sizes: json['sizes'] != null ? SdkPresent(((json['sizes'] as List?)?.map((e) => (e as num).toDouble()).toList())!) : const SdkOmitted(),
-  );
+  factory CreateDeploymentResponseVariant1Images.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1Images(
+        contentDispositionType: json['contentDispositionType'] != null
+            ? SdkPresent((json['contentDispositionType'] != null
+                ? CreateDeploymentResponseVariant1ImagesContentDispositionType
+                    .fromJson(json['contentDispositionType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        contentSecurityPolicy: json['contentSecurityPolicy'] != null
+            ? SdkPresent((json['contentSecurityPolicy'] as String?)!)
+            : const SdkOmitted(),
+        dangerouslyAllowSvg: json['dangerouslyAllowSVG'] != null
+            ? SdkPresent((json['dangerouslyAllowSVG'] != null
+                ? CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG
+                    .fromJson(json['dangerouslyAllowSVG'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        domains: json['domains'] != null
+            ? SdkPresent(
+                ((json['domains'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        formats: json['formats'] != null
+            ? SdkPresent(((json['formats'] as List?)
+                ?.map((e) =>
+                    CreateDeploymentResponseVariant1ImagesFormatsItem.fromJson(
+                        e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        localPatterns: json['localPatterns'] != null
+            ? SdkPresent(((json['localPatterns'] as List?)
+                ?.map((e) =>
+                    CreateDeploymentResponseVariant1ImagesLocalPatternsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        minimumCacheTtl: json['minimumCacheTTL'] != null
+            ? SdkPresent(((json['minimumCacheTTL'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        qualities: json['qualities'] != null
+            ? SdkPresent(((json['qualities'] as List?)
+                ?.map((e) => (e as num).toDouble())
+                .toList())!)
+            : const SdkOmitted(),
+        remotePatterns: json['remotePatterns'] != null
+            ? SdkPresent(((json['remotePatterns'] as List?)
+                ?.map((e) =>
+                    CreateDeploymentResponseVariant1ImagesRemotePatternsItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        sizes: json['sizes'] != null
+            ? SdkPresent(((json['sizes'] as List?)
+                ?.map((e) => (e as num).toDouble())
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (contentDispositionType) {
-      SdkPresent<CreateDeploymentResponseVariant1ImagesContentDispositionType>(value: final value) => {'contentDispositionType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (contentSecurityPolicy) {
-      SdkPresent<String>(value: final value) => {'contentSecurityPolicy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (dangerouslyAllowSvg) {
-      SdkPresent<CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG>(value: final value) => {'dangerouslyAllowSVG': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (domains) {
-      SdkPresent<List<String>>(value: final value) => {'domains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (formats) {
-      SdkPresent<List<CreateDeploymentResponseVariant1ImagesFormatsItem>>(value: final value) => {'formats': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (localPatterns) {
-      SdkPresent<List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>>(value: final value) => {'localPatterns': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (minimumCacheTtl) {
-      SdkPresent<double>(value: final value) => {'minimumCacheTTL': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (qualities) {
-      SdkPresent<List<double>>(value: final value) => {'qualities': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (remotePatterns) {
-      SdkPresent<List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>>(value: final value) => {'remotePatterns': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sizes) {
-      SdkPresent<List<double>>(value: final value) => {'sizes': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (contentDispositionType) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1ImagesContentDispositionType>(
+            value: final value
+          ) =>
+            {
+              'contentDispositionType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (contentSecurityPolicy) {
+          SdkPresent<String>(value: final value) => {
+              'contentSecurityPolicy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (dangerouslyAllowSvg) {
+          SdkPresent<CreateDeploymentResponseVariant1ImagesDangerouslyAllowSVG>(
+            value: final value
+          ) =>
+            {
+              'dangerouslyAllowSVG': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (domains) {
+          SdkPresent<List<String>>(value: final value) => {
+              'domains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (formats) {
+          SdkPresent<List<CreateDeploymentResponseVariant1ImagesFormatsItem>>(
+            value: final value
+          ) =>
+            {
+              'formats': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (localPatterns) {
+          SdkPresent<
+                List<CreateDeploymentResponseVariant1ImagesLocalPatternsItem>>(
+            value: final value
+          ) =>
+            {
+              'localPatterns': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (minimumCacheTtl) {
+          SdkPresent<double>(value: final value) => {
+              'minimumCacheTTL': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (qualities) {
+          SdkPresent<List<double>>(value: final value) => {
+              'qualities': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (remotePatterns) {
+          SdkPresent<
+                List<CreateDeploymentResponseVariant1ImagesRemotePatternsItem>>(
+            value: final value
+          ) =>
+            {
+              'remotePatterns': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sizes) {
+          SdkPresent<List<double>>(value: final value) => {
+              'sizes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateDeploymentResponseVariant1Integrations {
@@ -157,121 +372,243 @@ class CreateDeploymentResponseVariant1Integrations {
   final double startedAt;
   final CreateDeploymentResponseVariant1IntegrationsStatus status;
 
-  const CreateDeploymentResponseVariant1Integrations({this.claimedAt = const SdkOmitted(), this.completedAt = const SdkOmitted(), this.skippedAt = const SdkOmitted(), this.skippedBy = const SdkOmitted(), required this.startedAt, required this.status});
+  const CreateDeploymentResponseVariant1Integrations(
+      {this.claimedAt = const SdkOmitted(),
+      this.completedAt = const SdkOmitted(),
+      this.skippedAt = const SdkOmitted(),
+      this.skippedBy = const SdkOmitted(),
+      required this.startedAt,
+      required this.status});
 
-  CreateDeploymentResponseVariant1Integrations Function({SdkOptional<double> claimedAt, SdkOptional<double> completedAt, SdkOptional<double> skippedAt, SdkOptional<String> skippedBy, double startedAt, CreateDeploymentResponseVariant1IntegrationsStatus status}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1Integrations Function(
+          {SdkOptional<double> claimedAt,
+          SdkOptional<double> completedAt,
+          SdkOptional<double> skippedAt,
+          SdkOptional<String> skippedBy,
+          double startedAt,
+          CreateDeploymentResponseVariant1IntegrationsStatus status})
+      get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1Integrations _copyWith({Object? claimedAt = sdkOmittedValue, Object? completedAt = sdkOmittedValue, Object? skippedAt = sdkOmittedValue, Object? skippedBy = sdkOmittedValue, Object? startedAt = sdkOmittedValue, Object? status = sdkOmittedValue}) => CreateDeploymentResponseVariant1Integrations(
-    claimedAt: identical(claimedAt, sdkOmittedValue) ? this.claimedAt : claimedAt as SdkOptional<double>,
-    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
-    skippedAt: identical(skippedAt, sdkOmittedValue) ? this.skippedAt : skippedAt as SdkOptional<double>,
-    skippedBy: identical(skippedBy, sdkOmittedValue) ? this.skippedBy : skippedBy as SdkOptional<String>,
-    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as double,
-    status: identical(status, sdkOmittedValue) ? this.status : status as CreateDeploymentResponseVariant1IntegrationsStatus,
-  );
+  CreateDeploymentResponseVariant1Integrations _copyWith(
+          {Object? claimedAt = sdkOmittedValue,
+          Object? completedAt = sdkOmittedValue,
+          Object? skippedAt = sdkOmittedValue,
+          Object? skippedBy = sdkOmittedValue,
+          Object? startedAt = sdkOmittedValue,
+          Object? status = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1Integrations(
+        claimedAt: identical(claimedAt, sdkOmittedValue)
+            ? this.claimedAt
+            : claimedAt as SdkOptional<double>,
+        completedAt: identical(completedAt, sdkOmittedValue)
+            ? this.completedAt
+            : completedAt as SdkOptional<double>,
+        skippedAt: identical(skippedAt, sdkOmittedValue)
+            ? this.skippedAt
+            : skippedAt as SdkOptional<double>,
+        skippedBy: identical(skippedBy, sdkOmittedValue)
+            ? this.skippedBy
+            : skippedBy as SdkOptional<String>,
+        startedAt: identical(startedAt, sdkOmittedValue)
+            ? this.startedAt
+            : startedAt as double,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as CreateDeploymentResponseVariant1IntegrationsStatus,
+      );
 
-  factory CreateDeploymentResponseVariant1Integrations.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1Integrations(
-    claimedAt: json['claimedAt'] != null ? SdkPresent(((json['claimedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    skippedAt: json['skippedAt'] != null ? SdkPresent(((json['skippedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    skippedBy: json['skippedBy'] != null ? SdkPresent((json['skippedBy'] as String?)!) : const SdkOmitted(),
-    startedAt: ((json['startedAt'] as num?)?.toDouble())!,
-    status: (json['status'] != null ? CreateDeploymentResponseVariant1IntegrationsStatus.fromJson(json['status'] as String) : null)!,
-  );
+  factory CreateDeploymentResponseVariant1Integrations.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1Integrations(
+        claimedAt: json['claimedAt'] != null
+            ? SdkPresent(((json['claimedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        completedAt: json['completedAt'] != null
+            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        skippedAt: json['skippedAt'] != null
+            ? SdkPresent(((json['skippedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        skippedBy: json['skippedBy'] != null
+            ? SdkPresent((json['skippedBy'] as String?)!)
+            : const SdkOmitted(),
+        startedAt: ((json['startedAt'] as num?)?.toDouble())!,
+        status: (json['status'] != null
+            ? CreateDeploymentResponseVariant1IntegrationsStatus.fromJson(
+                json['status'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (claimedAt) {
-      SdkPresent<double>(value: final value) => {'claimedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (completedAt) {
-      SdkPresent<double>(value: final value) => {'completedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skippedAt) {
-      SdkPresent<double>(value: final value) => {'skippedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (skippedBy) {
-      SdkPresent<String>(value: final value) => {'skippedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    'startedAt': startedAt,
-    'status': status.toJson(),
-  };
+        ...switch (claimedAt) {
+          SdkPresent<double>(value: final value) => {
+              'claimedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (completedAt) {
+          SdkPresent<double>(value: final value) => {
+              'completedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skippedAt) {
+          SdkPresent<double>(value: final value) => {
+              'skippedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (skippedBy) {
+          SdkPresent<String>(value: final value) => {
+              'skippedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'startedAt': startedAt,
+        'status': status.toJson(),
+      };
 }
 
 /// Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.
 class CreateDeploymentResponseVariant1ManualProvisioning {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Timestamp when manual provisioning completed
   final SdkOptional<double> completedAt;
+
   /// Current provisioning state
   final CreateDeploymentResponseVariant1ManualProvisioningState state;
 
-  const CreateDeploymentResponseVariant1ManualProvisioning({this.completedAt = const SdkOmitted(), required this.state});
+  const CreateDeploymentResponseVariant1ManualProvisioning(
+      {this.completedAt = const SdkOmitted(), required this.state});
 
-  CreateDeploymentResponseVariant1ManualProvisioning Function({SdkOptional<double> completedAt, CreateDeploymentResponseVariant1ManualProvisioningState state}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1ManualProvisioning Function(
+          {SdkOptional<double> completedAt,
+          CreateDeploymentResponseVariant1ManualProvisioningState state})
+      get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1ManualProvisioning _copyWith({Object? completedAt = sdkOmittedValue, Object? state = sdkOmittedValue}) => CreateDeploymentResponseVariant1ManualProvisioning(
-    completedAt: identical(completedAt, sdkOmittedValue) ? this.completedAt : completedAt as SdkOptional<double>,
-    state: identical(state, sdkOmittedValue) ? this.state : state as CreateDeploymentResponseVariant1ManualProvisioningState,
-  );
+  CreateDeploymentResponseVariant1ManualProvisioning _copyWith(
+          {Object? completedAt = sdkOmittedValue,
+          Object? state = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1ManualProvisioning(
+        completedAt: identical(completedAt, sdkOmittedValue)
+            ? this.completedAt
+            : completedAt as SdkOptional<double>,
+        state: identical(state, sdkOmittedValue)
+            ? this.state
+            : state as CreateDeploymentResponseVariant1ManualProvisioningState,
+      );
 
-  factory CreateDeploymentResponseVariant1ManualProvisioning.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1ManualProvisioning(
-    completedAt: json['completedAt'] != null ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    state: (json['state'] != null ? CreateDeploymentResponseVariant1ManualProvisioningState.fromJson(json['state'] as String) : null)!,
-  );
+  factory CreateDeploymentResponseVariant1ManualProvisioning.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1ManualProvisioning(
+        completedAt: json['completedAt'] != null
+            ? SdkPresent(((json['completedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        state: (json['state'] != null
+            ? CreateDeploymentResponseVariant1ManualProvisioningState.fromJson(
+                json['state'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (completedAt) {
-      SdkPresent<double>(value: final value) => {'completedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'state': state.toJson(),
-  };
+        ...switch (completedAt) {
+          SdkPresent<double>(value: final value) => {
+              'completedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'state': state.toJson(),
+      };
 }
 
 class CreateDeploymentResponseVariant1MicrofrontendsVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The project name of the default app of this deployment's microfrontends group.
   final String defaultAppProjectName;
+
   /// A path that is used to take screenshots and as the default path in preview links when a domain for this microfrontend is shown in the UI.
   final SdkOptional<String> defaultRoute;
+
   /// The group of microfrontends that this project belongs to. Each microfrontend project must belong to a microfrontends group that is the set of microfrontends that are used together.
   final List<String> groupIds;
-  final SdkOptional<CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp> isDefaultApp;
+  final SdkOptional<
+          CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp>
+      isDefaultApp;
 
-  const CreateDeploymentResponseVariant1MicrofrontendsVariant0({required this.defaultAppProjectName, this.defaultRoute = const SdkOmitted(), required this.groupIds, this.isDefaultApp = const SdkOmitted()});
+  const CreateDeploymentResponseVariant1MicrofrontendsVariant0(
+      {required this.defaultAppProjectName,
+      this.defaultRoute = const SdkOmitted(),
+      required this.groupIds,
+      this.isDefaultApp = const SdkOmitted()});
 
-  CreateDeploymentResponseVariant1MicrofrontendsVariant0 Function({String defaultAppProjectName, SdkOptional<String> defaultRoute, List<String> groupIds, SdkOptional<CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp> isDefaultApp}) get copyWith => _copyWith;
+  CreateDeploymentResponseVariant1MicrofrontendsVariant0 Function(
+      {String defaultAppProjectName,
+      SdkOptional<String> defaultRoute,
+      List<String> groupIds,
+      SdkOptional<
+              CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp>
+          isDefaultApp}) get copyWith => _copyWith;
 
-  CreateDeploymentResponseVariant1MicrofrontendsVariant0 _copyWith({Object? defaultAppProjectName = sdkOmittedValue, Object? defaultRoute = sdkOmittedValue, Object? groupIds = sdkOmittedValue, Object? isDefaultApp = sdkOmittedValue}) => CreateDeploymentResponseVariant1MicrofrontendsVariant0(
-    defaultAppProjectName: identical(defaultAppProjectName, sdkOmittedValue) ? this.defaultAppProjectName : defaultAppProjectName as String,
-    defaultRoute: identical(defaultRoute, sdkOmittedValue) ? this.defaultRoute : defaultRoute as SdkOptional<String>,
-    groupIds: identical(groupIds, sdkOmittedValue) ? this.groupIds : groupIds as List<String>,
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as SdkOptional<CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp>,
-  );
+  CreateDeploymentResponseVariant1MicrofrontendsVariant0 _copyWith(
+          {Object? defaultAppProjectName = sdkOmittedValue,
+          Object? defaultRoute = sdkOmittedValue,
+          Object? groupIds = sdkOmittedValue,
+          Object? isDefaultApp = sdkOmittedValue}) =>
+      CreateDeploymentResponseVariant1MicrofrontendsVariant0(
+        defaultAppProjectName: identical(defaultAppProjectName, sdkOmittedValue)
+            ? this.defaultAppProjectName
+            : defaultAppProjectName as String,
+        defaultRoute: identical(defaultRoute, sdkOmittedValue)
+            ? this.defaultRoute
+            : defaultRoute as SdkOptional<String>,
+        groupIds: identical(groupIds, sdkOmittedValue)
+            ? this.groupIds
+            : groupIds as List<String>,
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp as SdkOptional<
+                CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp>,
+      );
 
-  factory CreateDeploymentResponseVariant1MicrofrontendsVariant0.fromJson(Map<String, dynamic> json) => CreateDeploymentResponseVariant1MicrofrontendsVariant0(
-    defaultAppProjectName: (json['defaultAppProjectName'] as String?)!,
-    defaultRoute: json['defaultRoute'] != null ? SdkPresent((json['defaultRoute'] as String?)!) : const SdkOmitted(),
-    groupIds: ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
-    isDefaultApp: json['isDefaultApp'] != null ? SdkPresent((json['isDefaultApp'] != null ? CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory CreateDeploymentResponseVariant1MicrofrontendsVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDeploymentResponseVariant1MicrofrontendsVariant0(
+        defaultAppProjectName: (json['defaultAppProjectName'] as String?)!,
+        defaultRoute: json['defaultRoute'] != null
+            ? SdkPresent((json['defaultRoute'] as String?)!)
+            : const SdkOmitted(),
+        groupIds:
+            ((json['groupIds'] as List?)?.map((e) => e as String).toList())!,
+        isDefaultApp: json['isDefaultApp'] != null
+            ? SdkPresent((json['isDefaultApp'] != null
+                ? CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp
+                    .fromJson(json['isDefaultApp'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'defaultAppProjectName': defaultAppProjectName,
-    ...switch (defaultRoute) {
-      SdkPresent<String>(value: final value) => {'defaultRoute': value,},
-      _ => const <String, dynamic>{},
-    },
-    'groupIds': groupIds,
-    ...switch (isDefaultApp) {
-      SdkPresent<CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp>(value: final value) => {'isDefaultApp': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'defaultAppProjectName': defaultAppProjectName,
+        ...switch (defaultRoute) {
+          SdkPresent<String>(value: final value) => {
+              'defaultRoute': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'groupIds': groupIds,
+        ...switch (isDefaultApp) {
+          SdkPresent<
+                CreateDeploymentResponseVariant1MicrofrontendsVariant0IsDefaultApp>(
+            value: final value
+          ) =>
+            {
+              'isDefaultApp': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

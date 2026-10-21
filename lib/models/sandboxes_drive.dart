@@ -8,92 +8,182 @@ part of 'sandboxes.dart';
 class Drive {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The time when the drive was created, in milliseconds since the epoch.
   final double createdAt;
+
   /// Current sandbox name the drive is attached to, if any.
   final SdkOptional<String> currentSandboxName;
+
   /// Current session ID the drive is attached to, if any.
   final SdkOptional<String> currentSessionId;
+
   /// The unique drive ID.
   final String id;
+
   /// The maximum drive size in bytes.
   final double maxSizeBytes;
+
   /// The unique drive name within the project.
   final String name;
+
   /// The ID of the source drive when this drive is a fork.
   final SdkOptional<String> parentDriveId;
+
   /// The project that owns the drive.
   final String projectId;
+
   /// The region where the drive is stored.
   final String region;
+
   /// The ID of the original drive at the root of this fork.
   final SdkOptional<String> rootDriveId;
+
   /// The last time the drive was updated, in milliseconds since the epoch.
   final double updatedAt;
+
   /// Whether this drive is managed by v0 on the customer's behalf.
   final SdkOptional<DriveV0> v0;
 
-  const Drive({required this.createdAt, this.currentSandboxName = const SdkOmitted(), this.currentSessionId = const SdkOmitted(), required this.id, required this.maxSizeBytes, required this.name, this.parentDriveId = const SdkOmitted(), required this.projectId, required this.region, this.rootDriveId = const SdkOmitted(), required this.updatedAt, this.v0 = const SdkOmitted()});
+  const Drive(
+      {required this.createdAt,
+      this.currentSandboxName = const SdkOmitted(),
+      this.currentSessionId = const SdkOmitted(),
+      required this.id,
+      required this.maxSizeBytes,
+      required this.name,
+      this.parentDriveId = const SdkOmitted(),
+      required this.projectId,
+      required this.region,
+      this.rootDriveId = const SdkOmitted(),
+      required this.updatedAt,
+      this.v0 = const SdkOmitted()});
 
-  Drive Function({double createdAt, SdkOptional<String> currentSandboxName, SdkOptional<String> currentSessionId, String id, double maxSizeBytes, String name, SdkOptional<String> parentDriveId, String projectId, String region, SdkOptional<String> rootDriveId, double updatedAt, SdkOptional<DriveV0> v0}) get copyWith => _copyWith;
+  Drive Function(
+      {double createdAt,
+      SdkOptional<String> currentSandboxName,
+      SdkOptional<String> currentSessionId,
+      String id,
+      double maxSizeBytes,
+      String name,
+      SdkOptional<String> parentDriveId,
+      String projectId,
+      String region,
+      SdkOptional<String> rootDriveId,
+      double updatedAt,
+      SdkOptional<DriveV0> v0}) get copyWith => _copyWith;
 
-  Drive _copyWith({Object? createdAt = sdkOmittedValue, Object? currentSandboxName = sdkOmittedValue, Object? currentSessionId = sdkOmittedValue, Object? id = sdkOmittedValue, Object? maxSizeBytes = sdkOmittedValue, Object? name = sdkOmittedValue, Object? parentDriveId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? region = sdkOmittedValue, Object? rootDriveId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? v0 = sdkOmittedValue}) => Drive(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    currentSandboxName: identical(currentSandboxName, sdkOmittedValue) ? this.currentSandboxName : currentSandboxName as SdkOptional<String>,
-    currentSessionId: identical(currentSessionId, sdkOmittedValue) ? this.currentSessionId : currentSessionId as SdkOptional<String>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    maxSizeBytes: identical(maxSizeBytes, sdkOmittedValue) ? this.maxSizeBytes : maxSizeBytes as double,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    parentDriveId: identical(parentDriveId, sdkOmittedValue) ? this.parentDriveId : parentDriveId as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    region: identical(region, sdkOmittedValue) ? this.region : region as String,
-    rootDriveId: identical(rootDriveId, sdkOmittedValue) ? this.rootDriveId : rootDriveId as SdkOptional<String>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<DriveV0>,
-  );
+  Drive _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? currentSandboxName = sdkOmittedValue,
+          Object? currentSessionId = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? maxSizeBytes = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? parentDriveId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? rootDriveId = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? v0 = sdkOmittedValue}) =>
+      Drive(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        currentSandboxName: identical(currentSandboxName, sdkOmittedValue)
+            ? this.currentSandboxName
+            : currentSandboxName as SdkOptional<String>,
+        currentSessionId: identical(currentSessionId, sdkOmittedValue)
+            ? this.currentSessionId
+            : currentSessionId as SdkOptional<String>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        maxSizeBytes: identical(maxSizeBytes, sdkOmittedValue)
+            ? this.maxSizeBytes
+            : maxSizeBytes as double,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        parentDriveId: identical(parentDriveId, sdkOmittedValue)
+            ? this.parentDriveId
+            : parentDriveId as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        region:
+            identical(region, sdkOmittedValue) ? this.region : region as String,
+        rootDriveId: identical(rootDriveId, sdkOmittedValue)
+            ? this.rootDriveId
+            : rootDriveId as SdkOptional<String>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        v0: identical(v0, sdkOmittedValue)
+            ? this.v0
+            : v0 as SdkOptional<DriveV0>,
+      );
 
   factory Drive.fromJson(Map<String, dynamic> json) => Drive(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    currentSandboxName: json['currentSandboxName'] != null ? SdkPresent((json['currentSandboxName'] as String?)!) : const SdkOmitted(),
-    currentSessionId: json['currentSessionId'] != null ? SdkPresent((json['currentSessionId'] as String?)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    maxSizeBytes: ((json['maxSizeBytes'] as num?)?.toDouble())!,
-    name: (json['name'] as String?)!,
-    parentDriveId: json['parentDriveId'] != null ? SdkPresent((json['parentDriveId'] as String?)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    region: (json['region'] as String?)!,
-    rootDriveId: json['rootDriveId'] != null ? SdkPresent((json['rootDriveId'] as String?)!) : const SdkOmitted(),
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? DriveV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
-  );
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        currentSandboxName: json['currentSandboxName'] != null
+            ? SdkPresent((json['currentSandboxName'] as String?)!)
+            : const SdkOmitted(),
+        currentSessionId: json['currentSessionId'] != null
+            ? SdkPresent((json['currentSessionId'] as String?)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        maxSizeBytes: ((json['maxSizeBytes'] as num?)?.toDouble())!,
+        name: (json['name'] as String?)!,
+        parentDriveId: json['parentDriveId'] != null
+            ? SdkPresent((json['parentDriveId'] as String?)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        region: (json['region'] as String?)!,
+        rootDriveId: json['rootDriveId'] != null
+            ? SdkPresent((json['rootDriveId'] as String?)!)
+            : const SdkOmitted(),
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        v0: json['v0'] != null
+            ? SdkPresent((json['v0'] != null
+                ? DriveV0.fromJson(json['v0'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    ...switch (currentSandboxName) {
-      SdkPresent<String>(value: final value) => {'currentSandboxName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (currentSessionId) {
-      SdkPresent<String>(value: final value) => {'currentSessionId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'maxSizeBytes': maxSizeBytes,
-    'name': name,
-    ...switch (parentDriveId) {
-      SdkPresent<String>(value: final value) => {'parentDriveId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'region': region,
-    ...switch (rootDriveId) {
-      SdkPresent<String>(value: final value) => {'rootDriveId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-    ...switch (v0) {
-      SdkPresent<DriveV0>(value: final value) => {'v0': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        ...switch (currentSandboxName) {
+          SdkPresent<String>(value: final value) => {
+              'currentSandboxName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (currentSessionId) {
+          SdkPresent<String>(value: final value) => {
+              'currentSessionId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'maxSizeBytes': maxSizeBytes,
+        'name': name,
+        ...switch (parentDriveId) {
+          SdkPresent<String>(value: final value) => {
+              'parentDriveId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'region': region,
+        ...switch (rootDriveId) {
+          SdkPresent<String>(value: final value) => {
+              'rootDriveId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+        ...switch (v0) {
+          SdkPresent<DriveV0>(value: final value) => {
+              'v0': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -11,52 +11,85 @@ class UploadProjectAvatarResponseInternalRoutesItemVariant0 {
   final String src;
   final double status;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant0({this.expiry = const SdkOmitted(), required this.src, required this.status});
+  const UploadProjectAvatarResponseInternalRoutesItemVariant0(
+      {this.expiry = const SdkOmitted(),
+      required this.src,
+      required this.status});
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant0 Function({SdkOptional<double> expiry, String src, double status}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseInternalRoutesItemVariant0 Function(
+      {SdkOptional<double> expiry,
+      String src,
+      double status}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant0 _copyWith({Object? expiry = sdkOmittedValue, Object? src = sdkOmittedValue, Object? status = sdkOmittedValue}) => UploadProjectAvatarResponseInternalRoutesItemVariant0(
-    expiry: identical(expiry, sdkOmittedValue) ? this.expiry : expiry as SdkOptional<double>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as double,
-  );
+  UploadProjectAvatarResponseInternalRoutesItemVariant0 _copyWith(
+          {Object? expiry = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? status = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant0(
+        expiry: identical(expiry, sdkOmittedValue)
+            ? this.expiry
+            : expiry as SdkOptional<double>,
+        src: identical(src, sdkOmittedValue) ? this.src : src as String,
+        status:
+            identical(status, sdkOmittedValue) ? this.status : status as double,
+      );
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseInternalRoutesItemVariant0(
-    expiry: json['expiry'] != null ? SdkPresent(((json['expiry'] as num?)?.toDouble())!) : const SdkOmitted(),
-    src: (json['src'] as String?)!,
-    status: ((json['status'] as num?)?.toDouble())!,
-  );
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant0(
+        expiry: json['expiry'] != null
+            ? SdkPresent(((json['expiry'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        src: (json['src'] as String?)!,
+        status: ((json['status'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (expiry) {
-      SdkPresent<double>(value: final value) => {'expiry': value,},
-      _ => const <String, dynamic>{},
-    },
-    'src': src,
-    'status': status,
-  };
+        ...switch (expiry) {
+          SdkPresent<double>(value: final value) => {
+              'expiry': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'src': src,
+        'status': status,
+      };
 }
 
 class UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction action;
+  final UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction
+      action;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate({required this.action});
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate(
+      {required this.action});
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate Function({UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction action}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate Function(
+      {UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction
+          action}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate _copyWith({Object? action = sdkOmittedValue}) => UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate(
-    action: identical(action, sdkOmittedValue) ? this.action : action as UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction,
-  );
+  UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate _copyWith(
+          {Object? action = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction,
+      );
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate(
-    action: (json['action'] != null ? UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate(
+        action: (json['action'] != null
+            ? UploadProjectAvatarResponseInternalRoutesItemVariant1MitigateAction
+                .fromJson(json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-  };
+        'action': action.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value {
@@ -64,51 +97,92 @@ class UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value 
   static const String constructionSurface = 'named';
   final String eq;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value({required this.eq});
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value(
+      {required this.eq});
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value Function({String eq}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value
+      Function({String eq}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value _copyWith({Object? eq = sdkOmittedValue}) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-  );
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value
+      _copyWith({Object? eq = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value(
+            eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+          );
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value(
-    eq: (json['eq'] as String?)!,
-  );
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value(
+        eq: (json['eq'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'eq': eq,
-  };
+        'eq': eq,
+      };
 }
 
 class UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key key;
-  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type type_;
-  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value value;
+  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key
+      key;
+  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
+      type_;
+  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value
+      value;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0({required this.key, required this.type_, required this.value});
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0(
+      {required this.key, required this.type_, required this.value});
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0 Function({UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key key, UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type type_, UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value value}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0 Function(
+      {UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key
+          key,
+      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
+          type_,
+      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value
+          value}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0(
-    key: identical(key, sdkOmittedValue) ? this.key : key as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value,
-  );
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0(
+            key: identical(key, sdkOmittedValue)
+                ? this.key
+                : key
+                    as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value
+                    as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value,
+          );
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0(
-    key: (json['key'] != null ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(json['key'] as String) : null)!,
-    type_: (json['type'] != null ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0(
+        key: (json['key'] != null
+            ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Key
+                .fromJson(json['key'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant0Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key.toJson(),
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'key': key.toJson(),
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value {
@@ -116,47 +190,78 @@ class UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value 
   static const String constructionSurface = 'named';
   final String eq;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value({required this.eq});
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value(
+      {required this.eq});
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value Function({String eq}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value
+      Function({String eq}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value _copyWith({Object? eq = sdkOmittedValue}) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-  );
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value
+      _copyWith({Object? eq = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value(
+            eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+          );
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: (json['eq'] as String?)!,
-  );
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value(
+        eq: (json['eq'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'eq': eq,
-  };
+        'eq': eq,
+      };
 }
 
 class UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type type_;
-  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value value;
+  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
+      type_;
+  final UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value
+      value;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1({required this.type_, required this.value});
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1(
+      {required this.type_, required this.value});
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1 Function({UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type type_, UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value value}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1 Function(
+      {UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
+          type_,
+      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value
+          value}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value,
-  );
+  UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1
+      _copyWith(
+              {Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1(
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value
+                    as UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value,
+          );
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1(
-    type_: (json['type'] != null ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1(
+        type_: (json['type'] != null
+            ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? UploadProjectAvatarResponseInternalRoutesItemVariant1HasItemVariant1Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class UploadProjectAvatarResponseInternalRoutesItemVariant1 {
@@ -166,30 +271,54 @@ class UploadProjectAvatarResponseInternalRoutesItemVariant1 {
   final UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate mitigate;
   final SdkOptional<String> src;
 
-  const UploadProjectAvatarResponseInternalRoutesItemVariant1({required this.has, required this.mitigate, this.src = const SdkOmitted()});
+  const UploadProjectAvatarResponseInternalRoutesItemVariant1(
+      {required this.has,
+      required this.mitigate,
+      this.src = const SdkOmitted()});
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1 Function({List<dynamic> has, UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate mitigate, SdkOptional<String> src}) get copyWith => _copyWith;
+  UploadProjectAvatarResponseInternalRoutesItemVariant1 Function(
+      {List<dynamic> has,
+      UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate mitigate,
+      SdkOptional<String> src}) get copyWith => _copyWith;
 
-  UploadProjectAvatarResponseInternalRoutesItemVariant1 _copyWith({Object? has = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? src = sdkOmittedValue}) => UploadProjectAvatarResponseInternalRoutesItemVariant1(
-    has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
-    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-  );
+  UploadProjectAvatarResponseInternalRoutesItemVariant1 _copyWith(
+          {Object? has = sdkOmittedValue,
+          Object? mitigate = sdkOmittedValue,
+          Object? src = sdkOmittedValue}) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1(
+        has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
+        mitigate: identical(mitigate, sdkOmittedValue)
+            ? this.mitigate
+            : mitigate
+                as UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+      );
 
-  factory UploadProjectAvatarResponseInternalRoutesItemVariant1.fromJson(Map<String, dynamic> json) => UploadProjectAvatarResponseInternalRoutesItemVariant1(
-    has: ((json['has'] as List?)?.map((e) => e).toList())!,
-    mitigate: (json['mitigate'] != null ? UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!,
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-  );
+  factory UploadProjectAvatarResponseInternalRoutesItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UploadProjectAvatarResponseInternalRoutesItemVariant1(
+        has: ((json['has'] as List?)?.map((e) => e).toList())!,
+        mitigate: (json['mitigate'] != null
+            ? UploadProjectAvatarResponseInternalRoutesItemVariant1Mitigate
+                .fromJson(json['mitigate'] as Map<String, dynamic>)
+            : null)!,
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'has': has,
-    'mitigate': mitigate.toJson(),
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'has': has,
+        'mitigate': mitigate.toJson(),
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class UploadProjectAvatarResponseInternalRoutesItem {
@@ -198,24 +327,55 @@ sealed class UploadProjectAvatarResponseInternalRoutesItem {
   const UploadProjectAvatarResponseInternalRoutesItem();
   factory UploadProjectAvatarResponseInternalRoutesItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UploadProjectAvatarResponseInternalRoutesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0(value); } } catch (_) {}
-      try { final value = UploadProjectAvatarResponseInternalRoutesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            UploadProjectAvatarResponseInternalRoutesItemVariant0.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UploadProjectAvatarResponseInternalRoutesItemVariant1.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0(UploadProjectAvatarResponseInternalRoutesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1(UploadProjectAvatarResponseInternalRoutesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UploadProjectAvatarResponseInternalRoutesItem");
+    try {
+      return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0(
+          UploadProjectAvatarResponseInternalRoutesItemVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1(
+          UploadProjectAvatarResponseInternalRoutesItemVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UploadProjectAvatarResponseInternalRoutesItem");
   }
   Object? toJson();
 }
 
-final class UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0 extends UploadProjectAvatarResponseInternalRoutesItem {
+final class UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0
+    extends UploadProjectAvatarResponseInternalRoutesItem {
   final UploadProjectAvatarResponseInternalRoutesItemVariant0 value;
-  const UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1 extends UploadProjectAvatarResponseInternalRoutesItem {
+final class UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1
+    extends UploadProjectAvatarResponseInternalRoutesItem {
   final UploadProjectAvatarResponseInternalRoutesItemVariant1 value;
-  const UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UploadProjectAvatarResponseInternalRoutesItemUploadProjectAvatarResponseInternalRoutesItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

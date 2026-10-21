@@ -7,247 +7,448 @@ part of 'inline.dart';
 class CreateRecordRequestBodyVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A subdomain name or an empty string for the root domain.
   final String name;
+
   /// Must be of type `A`.
   final CreateRecordRequestBodyVariant0Type type_;
+
   /// The TTL value. Must be a number between 60 and 2147483647. Default value is 60.
   final SdkOptional<double> ttl;
+
   /// The record value must be a valid IPv4 address.
   final String value;
+
   /// A comment to add context on what this DNS record is for
   final SdkOptional<String> comment;
 
-  const CreateRecordRequestBodyVariant0({required this.name, required this.type_, this.ttl = const SdkOmitted(), required this.value, this.comment = const SdkOmitted()});
+  const CreateRecordRequestBodyVariant0(
+      {required this.name,
+      required this.type_,
+      this.ttl = const SdkOmitted(),
+      required this.value,
+      this.comment = const SdkOmitted()});
 
-  CreateRecordRequestBodyVariant0 Function({String name, CreateRecordRequestBodyVariant0Type type_, SdkOptional<double> ttl, String value, SdkOptional<String> comment}) get copyWith => _copyWith;
+  CreateRecordRequestBodyVariant0 Function(
+      {String name,
+      CreateRecordRequestBodyVariant0Type type_,
+      SdkOptional<double> ttl,
+      String value,
+      SdkOptional<String> comment}) get copyWith => _copyWith;
 
-  CreateRecordRequestBodyVariant0 _copyWith({Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? value = sdkOmittedValue, Object? comment = sdkOmittedValue}) => CreateRecordRequestBodyVariant0(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateRecordRequestBodyVariant0Type,
-    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-  );
+  CreateRecordRequestBodyVariant0 _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? ttl = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? comment = sdkOmittedValue}) =>
+      CreateRecordRequestBodyVariant0(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateRecordRequestBodyVariant0Type,
+        ttl: identical(ttl, sdkOmittedValue)
+            ? this.ttl
+            : ttl as SdkOptional<double>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+      );
 
-  factory CreateRecordRequestBodyVariant0.fromJson(Map<String, dynamic> json) => CreateRecordRequestBodyVariant0(
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? CreateRecordRequestBodyVariant0Type.fromJson(json['type'] as String) : null)!,
-    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateRecordRequestBodyVariant0.fromJson(Map<String, dynamic> json) =>
+      CreateRecordRequestBodyVariant0(
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateRecordRequestBodyVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        ttl: json['ttl'] != null
+            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'type': type_.toJson(),
-    ...switch (ttl) {
-      SdkPresent<double>(value: final value) => {'ttl': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        'type': type_.toJson(),
+        ...switch (ttl) {
+          SdkPresent<double>(value: final value) => {
+              'ttl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateRecordRequestBodyVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A subdomain name or an empty string for the root domain.
   final String name;
+
   /// Must be of type `AAAA`.
   final CreateRecordRequestBodyVariant1Type type_;
+
   /// The TTL value. Must be a number between 60 and 2147483647. Default value is 60.
   final SdkOptional<double> ttl;
+
   /// An AAAA record pointing to an IPv6 address.
   final String value;
+
   /// A comment to add context on what this DNS record is for
   final SdkOptional<String> comment;
 
-  const CreateRecordRequestBodyVariant1({required this.name, required this.type_, this.ttl = const SdkOmitted(), required this.value, this.comment = const SdkOmitted()});
+  const CreateRecordRequestBodyVariant1(
+      {required this.name,
+      required this.type_,
+      this.ttl = const SdkOmitted(),
+      required this.value,
+      this.comment = const SdkOmitted()});
 
-  CreateRecordRequestBodyVariant1 Function({String name, CreateRecordRequestBodyVariant1Type type_, SdkOptional<double> ttl, String value, SdkOptional<String> comment}) get copyWith => _copyWith;
+  CreateRecordRequestBodyVariant1 Function(
+      {String name,
+      CreateRecordRequestBodyVariant1Type type_,
+      SdkOptional<double> ttl,
+      String value,
+      SdkOptional<String> comment}) get copyWith => _copyWith;
 
-  CreateRecordRequestBodyVariant1 _copyWith({Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? value = sdkOmittedValue, Object? comment = sdkOmittedValue}) => CreateRecordRequestBodyVariant1(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateRecordRequestBodyVariant1Type,
-    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-  );
+  CreateRecordRequestBodyVariant1 _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? ttl = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? comment = sdkOmittedValue}) =>
+      CreateRecordRequestBodyVariant1(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateRecordRequestBodyVariant1Type,
+        ttl: identical(ttl, sdkOmittedValue)
+            ? this.ttl
+            : ttl as SdkOptional<double>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+      );
 
-  factory CreateRecordRequestBodyVariant1.fromJson(Map<String, dynamic> json) => CreateRecordRequestBodyVariant1(
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? CreateRecordRequestBodyVariant1Type.fromJson(json['type'] as String) : null)!,
-    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateRecordRequestBodyVariant1.fromJson(Map<String, dynamic> json) =>
+      CreateRecordRequestBodyVariant1(
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateRecordRequestBodyVariant1Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        ttl: json['ttl'] != null
+            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'type': type_.toJson(),
-    ...switch (ttl) {
-      SdkPresent<double>(value: final value) => {'ttl': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        'type': type_.toJson(),
+        ...switch (ttl) {
+          SdkPresent<double>(value: final value) => {
+              'ttl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateRecordRequestBodyVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A subdomain name or an empty string for the root domain.
   final String name;
+
   /// Must be of type `ALIAS`.
   final CreateRecordRequestBodyVariant2Type type_;
+
   /// The TTL value. Must be a number between 60 and 2147483647. Default value is 60.
   final SdkOptional<double> ttl;
+
   /// An ALIAS virtual record pointing to a hostname resolved to an A record on server side.
   final String value;
+
   /// A comment to add context on what this DNS record is for
   final SdkOptional<String> comment;
 
-  const CreateRecordRequestBodyVariant2({required this.name, required this.type_, this.ttl = const SdkOmitted(), required this.value, this.comment = const SdkOmitted()});
+  const CreateRecordRequestBodyVariant2(
+      {required this.name,
+      required this.type_,
+      this.ttl = const SdkOmitted(),
+      required this.value,
+      this.comment = const SdkOmitted()});
 
-  CreateRecordRequestBodyVariant2 Function({String name, CreateRecordRequestBodyVariant2Type type_, SdkOptional<double> ttl, String value, SdkOptional<String> comment}) get copyWith => _copyWith;
+  CreateRecordRequestBodyVariant2 Function(
+      {String name,
+      CreateRecordRequestBodyVariant2Type type_,
+      SdkOptional<double> ttl,
+      String value,
+      SdkOptional<String> comment}) get copyWith => _copyWith;
 
-  CreateRecordRequestBodyVariant2 _copyWith({Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? value = sdkOmittedValue, Object? comment = sdkOmittedValue}) => CreateRecordRequestBodyVariant2(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateRecordRequestBodyVariant2Type,
-    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-  );
+  CreateRecordRequestBodyVariant2 _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? ttl = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? comment = sdkOmittedValue}) =>
+      CreateRecordRequestBodyVariant2(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateRecordRequestBodyVariant2Type,
+        ttl: identical(ttl, sdkOmittedValue)
+            ? this.ttl
+            : ttl as SdkOptional<double>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+      );
 
-  factory CreateRecordRequestBodyVariant2.fromJson(Map<String, dynamic> json) => CreateRecordRequestBodyVariant2(
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? CreateRecordRequestBodyVariant2Type.fromJson(json['type'] as String) : null)!,
-    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateRecordRequestBodyVariant2.fromJson(Map<String, dynamic> json) =>
+      CreateRecordRequestBodyVariant2(
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateRecordRequestBodyVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        ttl: json['ttl'] != null
+            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'type': type_.toJson(),
-    ...switch (ttl) {
-      SdkPresent<double>(value: final value) => {'ttl': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        'type': type_.toJson(),
+        ...switch (ttl) {
+          SdkPresent<double>(value: final value) => {
+              'ttl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateRecordRequestBodyVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A subdomain name or an empty string for the root domain.
   final String name;
+
   /// Must be of type `CAA`.
   final CreateRecordRequestBodyVariant3Type type_;
+
   /// The TTL value. Must be a number between 60 and 2147483647. Default value is 60.
   final SdkOptional<double> ttl;
+
   /// A CAA record to specify which Certificate Authorities (CAs) are allowed to issue certificates for the domain.
   final String value;
+
   /// A comment to add context on what this DNS record is for
   final SdkOptional<String> comment;
 
-  const CreateRecordRequestBodyVariant3({required this.name, required this.type_, this.ttl = const SdkOmitted(), required this.value, this.comment = const SdkOmitted()});
+  const CreateRecordRequestBodyVariant3(
+      {required this.name,
+      required this.type_,
+      this.ttl = const SdkOmitted(),
+      required this.value,
+      this.comment = const SdkOmitted()});
 
-  CreateRecordRequestBodyVariant3 Function({String name, CreateRecordRequestBodyVariant3Type type_, SdkOptional<double> ttl, String value, SdkOptional<String> comment}) get copyWith => _copyWith;
+  CreateRecordRequestBodyVariant3 Function(
+      {String name,
+      CreateRecordRequestBodyVariant3Type type_,
+      SdkOptional<double> ttl,
+      String value,
+      SdkOptional<String> comment}) get copyWith => _copyWith;
 
-  CreateRecordRequestBodyVariant3 _copyWith({Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? value = sdkOmittedValue, Object? comment = sdkOmittedValue}) => CreateRecordRequestBodyVariant3(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateRecordRequestBodyVariant3Type,
-    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-  );
+  CreateRecordRequestBodyVariant3 _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? ttl = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? comment = sdkOmittedValue}) =>
+      CreateRecordRequestBodyVariant3(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateRecordRequestBodyVariant3Type,
+        ttl: identical(ttl, sdkOmittedValue)
+            ? this.ttl
+            : ttl as SdkOptional<double>,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+      );
 
-  factory CreateRecordRequestBodyVariant3.fromJson(Map<String, dynamic> json) => CreateRecordRequestBodyVariant3(
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? CreateRecordRequestBodyVariant3Type.fromJson(json['type'] as String) : null)!,
-    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
-    value: (json['value'] as String?)!,
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateRecordRequestBodyVariant3.fromJson(Map<String, dynamic> json) =>
+      CreateRecordRequestBodyVariant3(
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateRecordRequestBodyVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        ttl: json['ttl'] != null
+            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        value: (json['value'] as String?)!,
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'type': type_.toJson(),
-    ...switch (ttl) {
-      SdkPresent<double>(value: final value) => {'ttl': value,},
-      _ => const <String, dynamic>{},
-    },
-    'value': value,
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        'type': type_.toJson(),
+        ...switch (ttl) {
+          SdkPresent<double>(value: final value) => {
+              'ttl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'value': value,
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateRecordRequestBodyVariant4 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A subdomain name or an empty string for the root domain.
   final String name;
+
   /// Must be of type `CNAME`.
   final CreateRecordRequestBodyVariant4Type type_;
+
   /// The TTL value. Must be a number between 60 and 2147483647. Default value is 60.
   final SdkOptional<double> ttl;
+
   /// A CNAME record mapping to another domain name.
   final SdkOptional<String> value;
+
   /// A comment to add context on what this DNS record is for
   final SdkOptional<String> comment;
 
-  const CreateRecordRequestBodyVariant4({required this.name, required this.type_, this.ttl = const SdkOmitted(), this.value = const SdkOmitted(), this.comment = const SdkOmitted()});
+  const CreateRecordRequestBodyVariant4(
+      {required this.name,
+      required this.type_,
+      this.ttl = const SdkOmitted(),
+      this.value = const SdkOmitted(),
+      this.comment = const SdkOmitted()});
 
-  CreateRecordRequestBodyVariant4 Function({String name, CreateRecordRequestBodyVariant4Type type_, SdkOptional<double> ttl, SdkOptional<String> value, SdkOptional<String> comment}) get copyWith => _copyWith;
+  CreateRecordRequestBodyVariant4 Function(
+      {String name,
+      CreateRecordRequestBodyVariant4Type type_,
+      SdkOptional<double> ttl,
+      SdkOptional<String> value,
+      SdkOptional<String> comment}) get copyWith => _copyWith;
 
-  CreateRecordRequestBodyVariant4 _copyWith({Object? name = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? ttl = sdkOmittedValue, Object? value = sdkOmittedValue, Object? comment = sdkOmittedValue}) => CreateRecordRequestBodyVariant4(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateRecordRequestBodyVariant4Type,
-    ttl: identical(ttl, sdkOmittedValue) ? this.ttl : ttl as SdkOptional<double>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-  );
+  CreateRecordRequestBodyVariant4 _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? ttl = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? comment = sdkOmittedValue}) =>
+      CreateRecordRequestBodyVariant4(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateRecordRequestBodyVariant4Type,
+        ttl: identical(ttl, sdkOmittedValue)
+            ? this.ttl
+            : ttl as SdkOptional<double>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+      );
 
-  factory CreateRecordRequestBodyVariant4.fromJson(Map<String, dynamic> json) => CreateRecordRequestBodyVariant4(
-    name: (json['name'] as String?)!,
-    type_: (json['type'] != null ? CreateRecordRequestBodyVariant4Type.fromJson(json['type'] as String) : null)!,
-    ttl: json['ttl'] != null ? SdkPresent(((json['ttl'] as num?)?.toDouble())!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateRecordRequestBodyVariant4.fromJson(Map<String, dynamic> json) =>
+      CreateRecordRequestBodyVariant4(
+        name: (json['name'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateRecordRequestBodyVariant4Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        ttl: json['ttl'] != null
+            ? SdkPresent(((json['ttl'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'type': type_.toJson(),
-    ...switch (ttl) {
-      SdkPresent<double>(value: final value) => {'ttl': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'name': name,
+        'type': type_.toJson(),
+        ...switch (ttl) {
+          SdkPresent<double>(value: final value) => {
+              'ttl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -8,270 +8,538 @@ part of 'user.dart';
 class UserEventPayloadVariant197 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
+
   /// Optional `string` value serialized in the `errorCode` wire field.
   final SdkOptional<String> errorCode;
+
   /// Required `string` value serialized in the `integrationId` wire field.
   final String integrationId;
+
   /// Required `string` value serialized in the `integrationProductSlug` wire field.
   final String integrationProductSlug;
+
   /// Required `string` value serialized in the `integrationSlug` wire field.
   final String integrationSlug;
+
   /// Required `string` value serialized in the `resourceId` wire field.
   final String resourceId;
+
   /// Required array value serialized in the `commands` wire field.
   final List<UserEventPayloadVariant197CommandsItem> commands;
+
   /// Optional `number` value serialized in the `errorIndex` wire field.
   final SdkOptional<double> errorIndex;
+
   /// Required enumerated value serialized in the `readonly` wire field.
   final UserEventPayloadVariant197Readonly readonly;
+
   /// Required enumerated value serialized in the `requestKind` wire field.
   final UserEventPayloadVariant197RequestKind requestKind;
 
-  const UserEventPayloadVariant197({required this.configurationId, this.errorCode = const SdkOmitted(), required this.integrationId, required this.integrationProductSlug, required this.integrationSlug, required this.resourceId, required this.commands, this.errorIndex = const SdkOmitted(), required this.readonly, required this.requestKind});
+  const UserEventPayloadVariant197(
+      {required this.configurationId,
+      this.errorCode = const SdkOmitted(),
+      required this.integrationId,
+      required this.integrationProductSlug,
+      required this.integrationSlug,
+      required this.resourceId,
+      required this.commands,
+      this.errorIndex = const SdkOmitted(),
+      required this.readonly,
+      required this.requestKind});
 
-  UserEventPayloadVariant197 Function({String configurationId, SdkOptional<String> errorCode, String integrationId, String integrationProductSlug, String integrationSlug, String resourceId, List<UserEventPayloadVariant197CommandsItem> commands, SdkOptional<double> errorIndex, UserEventPayloadVariant197Readonly readonly, UserEventPayloadVariant197RequestKind requestKind}) get copyWith => _copyWith;
+  UserEventPayloadVariant197 Function(
+          {String configurationId,
+          SdkOptional<String> errorCode,
+          String integrationId,
+          String integrationProductSlug,
+          String integrationSlug,
+          String resourceId,
+          List<UserEventPayloadVariant197CommandsItem> commands,
+          SdkOptional<double> errorIndex,
+          UserEventPayloadVariant197Readonly readonly,
+          UserEventPayloadVariant197RequestKind requestKind})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant197 _copyWith({Object? configurationId = sdkOmittedValue, Object? errorCode = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationProductSlug = sdkOmittedValue, Object? integrationSlug = sdkOmittedValue, Object? resourceId = sdkOmittedValue, Object? commands = sdkOmittedValue, Object? errorIndex = sdkOmittedValue, Object? readonly = sdkOmittedValue, Object? requestKind = sdkOmittedValue}) => UserEventPayloadVariant197(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    errorCode: identical(errorCode, sdkOmittedValue) ? this.errorCode : errorCode as SdkOptional<String>,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    integrationProductSlug: identical(integrationProductSlug, sdkOmittedValue) ? this.integrationProductSlug : integrationProductSlug as String,
-    integrationSlug: identical(integrationSlug, sdkOmittedValue) ? this.integrationSlug : integrationSlug as String,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as String,
-    commands: identical(commands, sdkOmittedValue) ? this.commands : commands as List<UserEventPayloadVariant197CommandsItem>,
-    errorIndex: identical(errorIndex, sdkOmittedValue) ? this.errorIndex : errorIndex as SdkOptional<double>,
-    readonly: identical(readonly, sdkOmittedValue) ? this.readonly : readonly as UserEventPayloadVariant197Readonly,
-    requestKind: identical(requestKind, sdkOmittedValue) ? this.requestKind : requestKind as UserEventPayloadVariant197RequestKind,
-  );
+  UserEventPayloadVariant197 _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? errorCode = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? integrationProductSlug = sdkOmittedValue,
+          Object? integrationSlug = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue,
+          Object? commands = sdkOmittedValue,
+          Object? errorIndex = sdkOmittedValue,
+          Object? readonly = sdkOmittedValue,
+          Object? requestKind = sdkOmittedValue}) =>
+      UserEventPayloadVariant197(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        errorCode: identical(errorCode, sdkOmittedValue)
+            ? this.errorCode
+            : errorCode as SdkOptional<String>,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        integrationProductSlug:
+            identical(integrationProductSlug, sdkOmittedValue)
+                ? this.integrationProductSlug
+                : integrationProductSlug as String,
+        integrationSlug: identical(integrationSlug, sdkOmittedValue)
+            ? this.integrationSlug
+            : integrationSlug as String,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as String,
+        commands: identical(commands, sdkOmittedValue)
+            ? this.commands
+            : commands as List<UserEventPayloadVariant197CommandsItem>,
+        errorIndex: identical(errorIndex, sdkOmittedValue)
+            ? this.errorIndex
+            : errorIndex as SdkOptional<double>,
+        readonly: identical(readonly, sdkOmittedValue)
+            ? this.readonly
+            : readonly as UserEventPayloadVariant197Readonly,
+        requestKind: identical(requestKind, sdkOmittedValue)
+            ? this.requestKind
+            : requestKind as UserEventPayloadVariant197RequestKind,
+      );
 
-  factory UserEventPayloadVariant197.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant197(
-    configurationId: (json['configurationId'] as String?)!,
-    errorCode: json['errorCode'] != null ? SdkPresent((json['errorCode'] as String?)!) : const SdkOmitted(),
-    integrationId: (json['integrationId'] as String?)!,
-    integrationProductSlug: (json['integrationProductSlug'] as String?)!,
-    integrationSlug: (json['integrationSlug'] as String?)!,
-    resourceId: (json['resourceId'] as String?)!,
-    commands: ((json['commands'] as List?)?.map((e) => UserEventPayloadVariant197CommandsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    errorIndex: json['errorIndex'] != null ? SdkPresent(((json['errorIndex'] as num?)?.toDouble())!) : const SdkOmitted(),
-    readonly: (json['readonly'] != null ? UserEventPayloadVariant197Readonly.fromJson(json['readonly'] as bool) : null)!,
-    requestKind: (json['requestKind'] != null ? UserEventPayloadVariant197RequestKind.fromJson(json['requestKind'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant197.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant197(
+        configurationId: (json['configurationId'] as String?)!,
+        errorCode: json['errorCode'] != null
+            ? SdkPresent((json['errorCode'] as String?)!)
+            : const SdkOmitted(),
+        integrationId: (json['integrationId'] as String?)!,
+        integrationProductSlug: (json['integrationProductSlug'] as String?)!,
+        integrationSlug: (json['integrationSlug'] as String?)!,
+        resourceId: (json['resourceId'] as String?)!,
+        commands: ((json['commands'] as List?)
+            ?.map((e) => UserEventPayloadVariant197CommandsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        errorIndex: json['errorIndex'] != null
+            ? SdkPresent(((json['errorIndex'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        readonly: (json['readonly'] != null
+            ? UserEventPayloadVariant197Readonly.fromJson(
+                json['readonly'] as bool)
+            : null)!,
+        requestKind: (json['requestKind'] != null
+            ? UserEventPayloadVariant197RequestKind.fromJson(
+                json['requestKind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    ...switch (errorCode) {
-      SdkPresent<String>(value: final value) => {'errorCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    'integrationId': integrationId,
-    'integrationProductSlug': integrationProductSlug,
-    'integrationSlug': integrationSlug,
-    'resourceId': resourceId,
-    'commands': commands.map((item) => item.toJson()).toList(),
-    ...switch (errorIndex) {
-      SdkPresent<double>(value: final value) => {'errorIndex': value,},
-      _ => const <String, dynamic>{},
-    },
-    'readonly': readonly.toJson(),
-    'requestKind': requestKind.toJson(),
-  };
+        'configurationId': configurationId,
+        ...switch (errorCode) {
+          SdkPresent<String>(value: final value) => {
+              'errorCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'integrationId': integrationId,
+        'integrationProductSlug': integrationProductSlug,
+        'integrationSlug': integrationSlug,
+        'resourceId': resourceId,
+        'commands': commands.map((item) => item.toJson()).toList(),
+        ...switch (errorIndex) {
+          SdkPresent<double>(value: final value) => {
+              'errorIndex': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'readonly': readonly.toJson(),
+        'requestKind': requestKind.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant198 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
+
   /// Optional `string` value serialized in the `errorCode` wire field.
   final SdkOptional<String> errorCode;
+
   /// Required `string` value serialized in the `integrationId` wire field.
   final String integrationId;
+
   /// Required `string` value serialized in the `integrationProductSlug` wire field.
   final String integrationProductSlug;
+
   /// Required `string` value serialized in the `integrationSlug` wire field.
   final String integrationSlug;
+
   /// Required `string` value serialized in the `resourceId` wire field.
   final String resourceId;
+
   /// Optional `string` value serialized in the `pattern` wire field.
   final SdkOptional<String> pattern;
+
   /// Required enumerated value serialized in the `requestKind` wire field.
   final UserEventPayloadVariant198RequestKind requestKind;
+
   /// Optional `string` value serialized in the `type` wire field.
   final SdkOptional<String> type_;
 
-  const UserEventPayloadVariant198({required this.configurationId, this.errorCode = const SdkOmitted(), required this.integrationId, required this.integrationProductSlug, required this.integrationSlug, required this.resourceId, this.pattern = const SdkOmitted(), required this.requestKind, this.type_ = const SdkOmitted()});
+  const UserEventPayloadVariant198(
+      {required this.configurationId,
+      this.errorCode = const SdkOmitted(),
+      required this.integrationId,
+      required this.integrationProductSlug,
+      required this.integrationSlug,
+      required this.resourceId,
+      this.pattern = const SdkOmitted(),
+      required this.requestKind,
+      this.type_ = const SdkOmitted()});
 
-  UserEventPayloadVariant198 Function({String configurationId, SdkOptional<String> errorCode, String integrationId, String integrationProductSlug, String integrationSlug, String resourceId, SdkOptional<String> pattern, UserEventPayloadVariant198RequestKind requestKind, SdkOptional<String> type_}) get copyWith => _copyWith;
+  UserEventPayloadVariant198 Function(
+      {String configurationId,
+      SdkOptional<String> errorCode,
+      String integrationId,
+      String integrationProductSlug,
+      String integrationSlug,
+      String resourceId,
+      SdkOptional<String> pattern,
+      UserEventPayloadVariant198RequestKind requestKind,
+      SdkOptional<String> type_}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant198 _copyWith({Object? configurationId = sdkOmittedValue, Object? errorCode = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationProductSlug = sdkOmittedValue, Object? integrationSlug = sdkOmittedValue, Object? resourceId = sdkOmittedValue, Object? pattern = sdkOmittedValue, Object? requestKind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UserEventPayloadVariant198(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    errorCode: identical(errorCode, sdkOmittedValue) ? this.errorCode : errorCode as SdkOptional<String>,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    integrationProductSlug: identical(integrationProductSlug, sdkOmittedValue) ? this.integrationProductSlug : integrationProductSlug as String,
-    integrationSlug: identical(integrationSlug, sdkOmittedValue) ? this.integrationSlug : integrationSlug as String,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as String,
-    pattern: identical(pattern, sdkOmittedValue) ? this.pattern : pattern as SdkOptional<String>,
-    requestKind: identical(requestKind, sdkOmittedValue) ? this.requestKind : requestKind as UserEventPayloadVariant198RequestKind,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<String>,
-  );
+  UserEventPayloadVariant198 _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? errorCode = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? integrationProductSlug = sdkOmittedValue,
+          Object? integrationSlug = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue,
+          Object? pattern = sdkOmittedValue,
+          Object? requestKind = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UserEventPayloadVariant198(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        errorCode: identical(errorCode, sdkOmittedValue)
+            ? this.errorCode
+            : errorCode as SdkOptional<String>,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        integrationProductSlug:
+            identical(integrationProductSlug, sdkOmittedValue)
+                ? this.integrationProductSlug
+                : integrationProductSlug as String,
+        integrationSlug: identical(integrationSlug, sdkOmittedValue)
+            ? this.integrationSlug
+            : integrationSlug as String,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as String,
+        pattern: identical(pattern, sdkOmittedValue)
+            ? this.pattern
+            : pattern as SdkOptional<String>,
+        requestKind: identical(requestKind, sdkOmittedValue)
+            ? this.requestKind
+            : requestKind as UserEventPayloadVariant198RequestKind,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant198.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant198(
-    configurationId: (json['configurationId'] as String?)!,
-    errorCode: json['errorCode'] != null ? SdkPresent((json['errorCode'] as String?)!) : const SdkOmitted(),
-    integrationId: (json['integrationId'] as String?)!,
-    integrationProductSlug: (json['integrationProductSlug'] as String?)!,
-    integrationSlug: (json['integrationSlug'] as String?)!,
-    resourceId: (json['resourceId'] as String?)!,
-    pattern: json['pattern'] != null ? SdkPresent((json['pattern'] as String?)!) : const SdkOmitted(),
-    requestKind: (json['requestKind'] != null ? UserEventPayloadVariant198RequestKind.fromJson(json['requestKind'] as String) : null)!,
-    type_: json['type'] != null ? SdkPresent((json['type'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant198.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant198(
+        configurationId: (json['configurationId'] as String?)!,
+        errorCode: json['errorCode'] != null
+            ? SdkPresent((json['errorCode'] as String?)!)
+            : const SdkOmitted(),
+        integrationId: (json['integrationId'] as String?)!,
+        integrationProductSlug: (json['integrationProductSlug'] as String?)!,
+        integrationSlug: (json['integrationSlug'] as String?)!,
+        resourceId: (json['resourceId'] as String?)!,
+        pattern: json['pattern'] != null
+            ? SdkPresent((json['pattern'] as String?)!)
+            : const SdkOmitted(),
+        requestKind: (json['requestKind'] != null
+            ? UserEventPayloadVariant198RequestKind.fromJson(
+                json['requestKind'] as String)
+            : null)!,
+        type_: json['type'] != null
+            ? SdkPresent((json['type'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    ...switch (errorCode) {
-      SdkPresent<String>(value: final value) => {'errorCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    'integrationId': integrationId,
-    'integrationProductSlug': integrationProductSlug,
-    'integrationSlug': integrationSlug,
-    'resourceId': resourceId,
-    ...switch (pattern) {
-      SdkPresent<String>(value: final value) => {'pattern': value,},
-      _ => const <String, dynamic>{},
-    },
-    'requestKind': requestKind.toJson(),
-    ...switch (type_) {
-      SdkPresent<String>(value: final value) => {'type': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'configurationId': configurationId,
+        ...switch (errorCode) {
+          SdkPresent<String>(value: final value) => {
+              'errorCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'integrationId': integrationId,
+        'integrationProductSlug': integrationProductSlug,
+        'integrationSlug': integrationSlug,
+        'resourceId': resourceId,
+        ...switch (pattern) {
+          SdkPresent<String>(value: final value) => {
+              'pattern': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'requestKind': requestKind.toJson(),
+        ...switch (type_) {
+          SdkPresent<String>(value: final value) => {
+              'type': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant199 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
+
   /// Optional `string` value serialized in the `errorCode` wire field.
   final SdkOptional<String> errorCode;
+
   /// Required `string` value serialized in the `integrationId` wire field.
   final String integrationId;
+
   /// Required `string` value serialized in the `integrationProductSlug` wire field.
   final String integrationProductSlug;
+
   /// Required `string` value serialized in the `integrationSlug` wire field.
   final String integrationSlug;
+
   /// Required `string` value serialized in the `resourceId` wire field.
   final String resourceId;
+
   /// Required array value serialized in the `keys` wire field.
   final List<String> keys;
+
   /// Required enumerated value serialized in the `requestKind` wire field.
   final UserEventPayloadVariant199RequestKind requestKind;
 
-  const UserEventPayloadVariant199({required this.configurationId, this.errorCode = const SdkOmitted(), required this.integrationId, required this.integrationProductSlug, required this.integrationSlug, required this.resourceId, required this.keys, required this.requestKind});
+  const UserEventPayloadVariant199(
+      {required this.configurationId,
+      this.errorCode = const SdkOmitted(),
+      required this.integrationId,
+      required this.integrationProductSlug,
+      required this.integrationSlug,
+      required this.resourceId,
+      required this.keys,
+      required this.requestKind});
 
-  UserEventPayloadVariant199 Function({String configurationId, SdkOptional<String> errorCode, String integrationId, String integrationProductSlug, String integrationSlug, String resourceId, List<String> keys, UserEventPayloadVariant199RequestKind requestKind}) get copyWith => _copyWith;
+  UserEventPayloadVariant199 Function(
+          {String configurationId,
+          SdkOptional<String> errorCode,
+          String integrationId,
+          String integrationProductSlug,
+          String integrationSlug,
+          String resourceId,
+          List<String> keys,
+          UserEventPayloadVariant199RequestKind requestKind})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant199 _copyWith({Object? configurationId = sdkOmittedValue, Object? errorCode = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationProductSlug = sdkOmittedValue, Object? integrationSlug = sdkOmittedValue, Object? resourceId = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? requestKind = sdkOmittedValue}) => UserEventPayloadVariant199(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    errorCode: identical(errorCode, sdkOmittedValue) ? this.errorCode : errorCode as SdkOptional<String>,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    integrationProductSlug: identical(integrationProductSlug, sdkOmittedValue) ? this.integrationProductSlug : integrationProductSlug as String,
-    integrationSlug: identical(integrationSlug, sdkOmittedValue) ? this.integrationSlug : integrationSlug as String,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as String,
-    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
-    requestKind: identical(requestKind, sdkOmittedValue) ? this.requestKind : requestKind as UserEventPayloadVariant199RequestKind,
-  );
+  UserEventPayloadVariant199 _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? errorCode = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? integrationProductSlug = sdkOmittedValue,
+          Object? integrationSlug = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue,
+          Object? keys = sdkOmittedValue,
+          Object? requestKind = sdkOmittedValue}) =>
+      UserEventPayloadVariant199(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        errorCode: identical(errorCode, sdkOmittedValue)
+            ? this.errorCode
+            : errorCode as SdkOptional<String>,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        integrationProductSlug:
+            identical(integrationProductSlug, sdkOmittedValue)
+                ? this.integrationProductSlug
+                : integrationProductSlug as String,
+        integrationSlug: identical(integrationSlug, sdkOmittedValue)
+            ? this.integrationSlug
+            : integrationSlug as String,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as String,
+        keys:
+            identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
+        requestKind: identical(requestKind, sdkOmittedValue)
+            ? this.requestKind
+            : requestKind as UserEventPayloadVariant199RequestKind,
+      );
 
-  factory UserEventPayloadVariant199.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant199(
-    configurationId: (json['configurationId'] as String?)!,
-    errorCode: json['errorCode'] != null ? SdkPresent((json['errorCode'] as String?)!) : const SdkOmitted(),
-    integrationId: (json['integrationId'] as String?)!,
-    integrationProductSlug: (json['integrationProductSlug'] as String?)!,
-    integrationSlug: (json['integrationSlug'] as String?)!,
-    resourceId: (json['resourceId'] as String?)!,
-    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-    requestKind: (json['requestKind'] != null ? UserEventPayloadVariant199RequestKind.fromJson(json['requestKind'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant199.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant199(
+        configurationId: (json['configurationId'] as String?)!,
+        errorCode: json['errorCode'] != null
+            ? SdkPresent((json['errorCode'] as String?)!)
+            : const SdkOmitted(),
+        integrationId: (json['integrationId'] as String?)!,
+        integrationProductSlug: (json['integrationProductSlug'] as String?)!,
+        integrationSlug: (json['integrationSlug'] as String?)!,
+        resourceId: (json['resourceId'] as String?)!,
+        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+        requestKind: (json['requestKind'] != null
+            ? UserEventPayloadVariant199RequestKind.fromJson(
+                json['requestKind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    ...switch (errorCode) {
-      SdkPresent<String>(value: final value) => {'errorCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    'integrationId': integrationId,
-    'integrationProductSlug': integrationProductSlug,
-    'integrationSlug': integrationSlug,
-    'resourceId': resourceId,
-    'keys': keys,
-    'requestKind': requestKind.toJson(),
-  };
+        'configurationId': configurationId,
+        ...switch (errorCode) {
+          SdkPresent<String>(value: final value) => {
+              'errorCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'integrationId': integrationId,
+        'integrationProductSlug': integrationProductSlug,
+        'integrationSlug': integrationSlug,
+        'resourceId': resourceId,
+        'keys': keys,
+        'requestKind': requestKind.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant200 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `configurationId` wire field.
   final String configurationId;
+
   /// Optional `string` value serialized in the `errorCode` wire field.
   final SdkOptional<String> errorCode;
+
   /// Required `string` value serialized in the `integrationId` wire field.
   final String integrationId;
+
   /// Required `string` value serialized in the `integrationProductSlug` wire field.
   final String integrationProductSlug;
+
   /// Required `string` value serialized in the `integrationSlug` wire field.
   final String integrationSlug;
+
   /// Required `string` value serialized in the `resourceId` wire field.
   final String resourceId;
+
   /// Required `string` value serialized in the `key` wire field.
   final String key;
+
   /// Required enumerated value serialized in the `requestKind` wire field.
   final UserEventPayloadVariant200RequestKind requestKind;
 
-  const UserEventPayloadVariant200({required this.configurationId, this.errorCode = const SdkOmitted(), required this.integrationId, required this.integrationProductSlug, required this.integrationSlug, required this.resourceId, required this.key, required this.requestKind});
+  const UserEventPayloadVariant200(
+      {required this.configurationId,
+      this.errorCode = const SdkOmitted(),
+      required this.integrationId,
+      required this.integrationProductSlug,
+      required this.integrationSlug,
+      required this.resourceId,
+      required this.key,
+      required this.requestKind});
 
-  UserEventPayloadVariant200 Function({String configurationId, SdkOptional<String> errorCode, String integrationId, String integrationProductSlug, String integrationSlug, String resourceId, String key, UserEventPayloadVariant200RequestKind requestKind}) get copyWith => _copyWith;
+  UserEventPayloadVariant200 Function(
+          {String configurationId,
+          SdkOptional<String> errorCode,
+          String integrationId,
+          String integrationProductSlug,
+          String integrationSlug,
+          String resourceId,
+          String key,
+          UserEventPayloadVariant200RequestKind requestKind})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant200 _copyWith({Object? configurationId = sdkOmittedValue, Object? errorCode = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? integrationProductSlug = sdkOmittedValue, Object? integrationSlug = sdkOmittedValue, Object? resourceId = sdkOmittedValue, Object? key = sdkOmittedValue, Object? requestKind = sdkOmittedValue}) => UserEventPayloadVariant200(
-    configurationId: identical(configurationId, sdkOmittedValue) ? this.configurationId : configurationId as String,
-    errorCode: identical(errorCode, sdkOmittedValue) ? this.errorCode : errorCode as SdkOptional<String>,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    integrationProductSlug: identical(integrationProductSlug, sdkOmittedValue) ? this.integrationProductSlug : integrationProductSlug as String,
-    integrationSlug: identical(integrationSlug, sdkOmittedValue) ? this.integrationSlug : integrationSlug as String,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as String,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    requestKind: identical(requestKind, sdkOmittedValue) ? this.requestKind : requestKind as UserEventPayloadVariant200RequestKind,
-  );
+  UserEventPayloadVariant200 _copyWith(
+          {Object? configurationId = sdkOmittedValue,
+          Object? errorCode = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? integrationProductSlug = sdkOmittedValue,
+          Object? integrationSlug = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? requestKind = sdkOmittedValue}) =>
+      UserEventPayloadVariant200(
+        configurationId: identical(configurationId, sdkOmittedValue)
+            ? this.configurationId
+            : configurationId as String,
+        errorCode: identical(errorCode, sdkOmittedValue)
+            ? this.errorCode
+            : errorCode as SdkOptional<String>,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        integrationProductSlug:
+            identical(integrationProductSlug, sdkOmittedValue)
+                ? this.integrationProductSlug
+                : integrationProductSlug as String,
+        integrationSlug: identical(integrationSlug, sdkOmittedValue)
+            ? this.integrationSlug
+            : integrationSlug as String,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as String,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        requestKind: identical(requestKind, sdkOmittedValue)
+            ? this.requestKind
+            : requestKind as UserEventPayloadVariant200RequestKind,
+      );
 
-  factory UserEventPayloadVariant200.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant200(
-    configurationId: (json['configurationId'] as String?)!,
-    errorCode: json['errorCode'] != null ? SdkPresent((json['errorCode'] as String?)!) : const SdkOmitted(),
-    integrationId: (json['integrationId'] as String?)!,
-    integrationProductSlug: (json['integrationProductSlug'] as String?)!,
-    integrationSlug: (json['integrationSlug'] as String?)!,
-    resourceId: (json['resourceId'] as String?)!,
-    key: (json['key'] as String?)!,
-    requestKind: (json['requestKind'] != null ? UserEventPayloadVariant200RequestKind.fromJson(json['requestKind'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant200.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant200(
+        configurationId: (json['configurationId'] as String?)!,
+        errorCode: json['errorCode'] != null
+            ? SdkPresent((json['errorCode'] as String?)!)
+            : const SdkOmitted(),
+        integrationId: (json['integrationId'] as String?)!,
+        integrationProductSlug: (json['integrationProductSlug'] as String?)!,
+        integrationSlug: (json['integrationSlug'] as String?)!,
+        resourceId: (json['resourceId'] as String?)!,
+        key: (json['key'] as String?)!,
+        requestKind: (json['requestKind'] != null
+            ? UserEventPayloadVariant200RequestKind.fromJson(
+                json['requestKind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configurationId': configurationId,
-    ...switch (errorCode) {
-      SdkPresent<String>(value: final value) => {'errorCode': value,},
-      _ => const <String, dynamic>{},
-    },
-    'integrationId': integrationId,
-    'integrationProductSlug': integrationProductSlug,
-    'integrationSlug': integrationSlug,
-    'resourceId': resourceId,
-    'key': key,
-    'requestKind': requestKind.toJson(),
-  };
+        'configurationId': configurationId,
+        ...switch (errorCode) {
+          SdkPresent<String>(value: final value) => {
+              'errorCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'integrationId': integrationId,
+        'integrationProductSlug': integrationProductSlug,
+        'integrationSlug': integrationSlug,
+        'resourceId': resourceId,
+        'key': key,
+        'requestKind': requestKind.toJson(),
+      };
 }

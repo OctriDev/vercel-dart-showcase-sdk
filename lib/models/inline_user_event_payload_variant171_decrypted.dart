@@ -6,40 +6,48 @@ part of 'inline.dart';
 // Inline operation models
 /// whether or not this env variable is decrypted
 final class UserEventPayloadVariant171Decrypted {
-
   final bool value;
 
   const UserEventPayloadVariant171Decrypted._(this.value);
 
-  factory UserEventPayloadVariant171Decrypted.fromJson(bool value) => UserEventPayloadVariant171Decrypted._(value);
+  factory UserEventPayloadVariant171Decrypted.fromJson(bool value) =>
+      UserEventPayloadVariant171Decrypted._(value);
 
   static const false_ = UserEventPayloadVariant171Decrypted._(false);
   static const true_ = UserEventPayloadVariant171Decrypted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant171Decrypted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant171Decrypted && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 enum UserEventPayloadVariant171LastEditedByPrincipalVariant0Type {
   user;
 
-  static UserEventPayloadVariant171LastEditedByPrincipalVariant0Type fromJson(String value) {
+  static UserEventPayloadVariant171LastEditedByPrincipalVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'user': return UserEventPayloadVariant171LastEditedByPrincipalVariant0Type.user;
-      default: throw ArgumentError('Unknown UserEventPayloadVariant171LastEditedByPrincipalVariant0Type: $value');
+      case 'user':
+        return UserEventPayloadVariant171LastEditedByPrincipalVariant0Type.user;
+      default:
+        throw ArgumentError(
+            'Unknown UserEventPayloadVariant171LastEditedByPrincipalVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPayloadVariant171LastEditedByPrincipalVariant0Type.user: return 'user';
+      case UserEventPayloadVariant171LastEditedByPrincipalVariant0Type.user:
+        return 'user';
     }
   }
 
@@ -51,16 +59,21 @@ enum UserEventPayloadVariant171LastEditedByPrincipalVariant0Type {
 enum UserEventPayloadVariant171LastEditedByPrincipalVariant1Type {
   app;
 
-  static UserEventPayloadVariant171LastEditedByPrincipalVariant1Type fromJson(String value) {
+  static UserEventPayloadVariant171LastEditedByPrincipalVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'app': return UserEventPayloadVariant171LastEditedByPrincipalVariant1Type.app;
-      default: throw ArgumentError('Unknown UserEventPayloadVariant171LastEditedByPrincipalVariant1Type: $value');
+      case 'app':
+        return UserEventPayloadVariant171LastEditedByPrincipalVariant1Type.app;
+      default:
+        throw ArgumentError(
+            'Unknown UserEventPayloadVariant171LastEditedByPrincipalVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPayloadVariant171LastEditedByPrincipalVariant1Type.app: return 'app';
+      case UserEventPayloadVariant171LastEditedByPrincipalVariant1Type.app:
+        return 'app';
     }
   }
 
@@ -70,35 +83,40 @@ enum UserEventPayloadVariant171LastEditedByPrincipalVariant1Type {
 
 /// environments this env variable targets
 final class UserEventPayloadVariant171TargetItem {
-
   final String value;
 
   const UserEventPayloadVariant171TargetItem._(this.value);
 
-  factory UserEventPayloadVariant171TargetItem.fromJson(String value) => UserEventPayloadVariant171TargetItem._(value);
+  factory UserEventPayloadVariant171TargetItem.fromJson(String value) =>
+      UserEventPayloadVariant171TargetItem._(value);
 
-  static const development = UserEventPayloadVariant171TargetItem._('development');
+  static const development =
+      UserEventPayloadVariant171TargetItem._('development');
   static const preview = UserEventPayloadVariant171TargetItem._('preview');
-  static const production = UserEventPayloadVariant171TargetItem._('production');
+  static const production =
+      UserEventPayloadVariant171TargetItem._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant171TargetItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant171TargetItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of this cosmos doc instance, if blank, assume secret.
 final class UserEventPayloadVariant171Type {
-
   final String value;
 
   const UserEventPayloadVariant171Type._(this.value);
 
-  factory UserEventPayloadVariant171Type.fromJson(String value) => UserEventPayloadVariant171Type._(value);
+  factory UserEventPayloadVariant171Type.fromJson(String value) =>
+      UserEventPayloadVariant171Type._(value);
 
   static const encrypted = UserEventPayloadVariant171Type._('encrypted');
   static const plain = UserEventPayloadVariant171Type._('plain');
@@ -107,95 +125,123 @@ final class UserEventPayloadVariant171Type {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant171Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant171Type && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `target[]` wire field.
 final class UserEventPayloadVariant172TargetItem {
-
   final String value;
 
   const UserEventPayloadVariant172TargetItem._(this.value);
 
-  factory UserEventPayloadVariant172TargetItem.fromJson(String value) => UserEventPayloadVariant172TargetItem._(value);
+  factory UserEventPayloadVariant172TargetItem.fromJson(String value) =>
+      UserEventPayloadVariant172TargetItem._(value);
 
-  static const development = UserEventPayloadVariant172TargetItem._('development');
+  static const development =
+      UserEventPayloadVariant172TargetItem._('development');
   static const preview = UserEventPayloadVariant172TargetItem._('preview');
-  static const production = UserEventPayloadVariant172TargetItem._('production');
+  static const production =
+      UserEventPayloadVariant172TargetItem._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant172TargetItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant172TargetItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// whether or not this env varible applies to custom environments
 final class UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments {
-
   final bool value;
 
-  const UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(this.value);
+  const UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(
+      this.value);
 
-  factory UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments.fromJson(bool value) => UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(value);
+  factory UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments.fromJson(
+          bool value) =>
+      UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(value);
 
-  static const false_ = UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(false);
-  static const true_ = UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(true);
+  static const false_ =
+      UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(false);
+  static const true_ =
+      UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UserEventPayloadVariant173NewEnvVarApplyToAllCustomEnvironments &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// whether or not this env variable is decrypted
 final class UserEventPayloadVariant173NewEnvVarDecrypted {
-
   final bool value;
 
   const UserEventPayloadVariant173NewEnvVarDecrypted._(this.value);
 
-  factory UserEventPayloadVariant173NewEnvVarDecrypted.fromJson(bool value) => UserEventPayloadVariant173NewEnvVarDecrypted._(value);
+  factory UserEventPayloadVariant173NewEnvVarDecrypted.fromJson(bool value) =>
+      UserEventPayloadVariant173NewEnvVarDecrypted._(value);
 
   static const false_ = UserEventPayloadVariant173NewEnvVarDecrypted._(false);
   static const true_ = UserEventPayloadVariant173NewEnvVarDecrypted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant173NewEnvVarDecrypted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant173NewEnvVarDecrypted &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `type` wire field.
 enum UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type {
   user;
 
-  static UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type fromJson(String value) {
+  static UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'user': return UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type.user;
-      default: throw ArgumentError('Unknown UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type: $value');
+      case 'user':
+        return UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type
+            .user;
+      default:
+        throw ArgumentError(
+            'Unknown UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type.user: return 'user';
+      case UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type
+            .user:
+        return 'user';
     }
   }
 
@@ -207,16 +253,23 @@ enum UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant0Type {
 enum UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type {
   app;
 
-  static UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type fromJson(String value) {
+  static UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'app': return UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type.app;
-      default: throw ArgumentError('Unknown UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type: $value');
+      case 'app':
+        return UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type
+            .app;
+      default:
+        throw ArgumentError(
+            'Unknown UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type.app: return 'app';
+      case UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type
+            .app:
+        return 'app';
     }
   }
 
@@ -226,69 +279,91 @@ enum UserEventPayloadVariant173NewEnvVarLastEditedByPrincipalVariant1Type {
 
 /// environments this env variable targets
 final class UserEventPayloadVariant173NewEnvVarTargetItem {
-
   final String value;
 
   const UserEventPayloadVariant173NewEnvVarTargetItem._(this.value);
 
-  factory UserEventPayloadVariant173NewEnvVarTargetItem.fromJson(String value) => UserEventPayloadVariant173NewEnvVarTargetItem._(value);
+  factory UserEventPayloadVariant173NewEnvVarTargetItem.fromJson(
+          String value) =>
+      UserEventPayloadVariant173NewEnvVarTargetItem._(value);
 
-  static const development = UserEventPayloadVariant173NewEnvVarTargetItem._('development');
-  static const preview = UserEventPayloadVariant173NewEnvVarTargetItem._('preview');
-  static const production = UserEventPayloadVariant173NewEnvVarTargetItem._('production');
+  static const development =
+      UserEventPayloadVariant173NewEnvVarTargetItem._('development');
+  static const preview =
+      UserEventPayloadVariant173NewEnvVarTargetItem._('preview');
+  static const production =
+      UserEventPayloadVariant173NewEnvVarTargetItem._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant173NewEnvVarTargetItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant173NewEnvVarTargetItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of this cosmos doc instance, if blank, assume secret.
 final class UserEventPayloadVariant173NewEnvVarType {
-
   final String value;
 
   const UserEventPayloadVariant173NewEnvVarType._(this.value);
 
-  factory UserEventPayloadVariant173NewEnvVarType.fromJson(String value) => UserEventPayloadVariant173NewEnvVarType._(value);
+  factory UserEventPayloadVariant173NewEnvVarType.fromJson(String value) =>
+      UserEventPayloadVariant173NewEnvVarType._(value);
 
-  static const encrypted = UserEventPayloadVariant173NewEnvVarType._('encrypted');
+  static const encrypted =
+      UserEventPayloadVariant173NewEnvVarType._('encrypted');
   static const plain = UserEventPayloadVariant173NewEnvVarType._('plain');
-  static const sensitive = UserEventPayloadVariant173NewEnvVarType._('sensitive');
+  static const sensitive =
+      UserEventPayloadVariant173NewEnvVarType._('sensitive');
   static const system = UserEventPayloadVariant173NewEnvVarType._('system');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant173NewEnvVarType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventPayloadVariant173NewEnvVarType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// whether or not this env varible applies to custom environments
 final class UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments {
-
   final bool value;
 
-  const UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(this.value);
+  const UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(
+      this.value);
 
-  factory UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments.fromJson(bool value) => UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(value);
+  factory UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments.fromJson(
+          bool value) =>
+      UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(value);
 
-  static const false_ = UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(false);
-  static const true_ = UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(true);
+  static const false_ =
+      UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(false);
+  static const true_ =
+      UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

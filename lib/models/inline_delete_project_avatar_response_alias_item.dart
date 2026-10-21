@@ -7,7 +7,8 @@ part of 'inline.dart';
 class DeleteProjectAvatarResponseAliasItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<DeleteProjectAvatarResponseAliasItemConfiguredBy?> configuredBy;
+  final SdkOptional<DeleteProjectAvatarResponseAliasItemConfiguredBy?>
+      configuredBy;
   final SdkOptional<double?> configuredChangedAt;
   final SdkOptional<double?> createdAt;
   final DeleteProjectAvatarResponseAliasItemDeployment? deployment;
@@ -15,69 +16,175 @@ class DeleteProjectAvatarResponseAliasItem {
   final DeleteProjectAvatarResponseAliasItemEnvironment environment;
   final SdkOptional<String?> gitBranch;
   final SdkOptional<String?> redirect;
-  final SdkOptional<DeleteProjectAvatarResponseAliasItemRedirectStatusCode?> redirectStatusCode;
+  final SdkOptional<DeleteProjectAvatarResponseAliasItemRedirectStatusCode?>
+      redirectStatusCode;
   final DeleteProjectAvatarResponseAliasItemTarget target;
 
-  const DeleteProjectAvatarResponseAliasItem({this.configuredBy = const SdkOmitted(), this.configuredChangedAt = const SdkOmitted(), this.createdAt = const SdkOmitted(), required this.deployment, required this.domain, required this.environment, this.gitBranch = const SdkOmitted(), this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), required this.target});
+  const DeleteProjectAvatarResponseAliasItem(
+      {this.configuredBy = const SdkOmitted(),
+      this.configuredChangedAt = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      required this.deployment,
+      required this.domain,
+      required this.environment,
+      this.gitBranch = const SdkOmitted(),
+      this.redirect = const SdkOmitted(),
+      this.redirectStatusCode = const SdkOmitted(),
+      required this.target});
 
-  DeleteProjectAvatarResponseAliasItem Function({SdkOptional<DeleteProjectAvatarResponseAliasItemConfiguredBy?> configuredBy, SdkOptional<double?> configuredChangedAt, SdkOptional<double?> createdAt, DeleteProjectAvatarResponseAliasItemDeployment? deployment, String domain, DeleteProjectAvatarResponseAliasItemEnvironment environment, SdkOptional<String?> gitBranch, SdkOptional<String?> redirect, SdkOptional<DeleteProjectAvatarResponseAliasItemRedirectStatusCode?> redirectStatusCode, DeleteProjectAvatarResponseAliasItemTarget target}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseAliasItem Function(
+          {SdkOptional<DeleteProjectAvatarResponseAliasItemConfiguredBy?>
+              configuredBy,
+          SdkOptional<double?> configuredChangedAt,
+          SdkOptional<double?> createdAt,
+          DeleteProjectAvatarResponseAliasItemDeployment? deployment,
+          String domain,
+          DeleteProjectAvatarResponseAliasItemEnvironment environment,
+          SdkOptional<String?> gitBranch,
+          SdkOptional<String?> redirect,
+          SdkOptional<DeleteProjectAvatarResponseAliasItemRedirectStatusCode?>
+              redirectStatusCode,
+          DeleteProjectAvatarResponseAliasItemTarget target})
+      get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseAliasItem _copyWith({Object? configuredBy = sdkOmittedValue, Object? configuredChangedAt = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? deployment = sdkOmittedValue, Object? domain = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? target = sdkOmittedValue}) => DeleteProjectAvatarResponseAliasItem(
-    configuredBy: identical(configuredBy, sdkOmittedValue) ? this.configuredBy : configuredBy as SdkOptional<DeleteProjectAvatarResponseAliasItemConfiguredBy?>,
-    configuredChangedAt: identical(configuredChangedAt, sdkOmittedValue) ? this.configuredChangedAt : configuredChangedAt as SdkOptional<double?>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double?>,
-    deployment: identical(deployment, sdkOmittedValue) ? this.deployment : deployment as DeleteProjectAvatarResponseAliasItemDeployment?,
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as DeleteProjectAvatarResponseAliasItemEnvironment,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
-    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<DeleteProjectAvatarResponseAliasItemRedirectStatusCode?>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as DeleteProjectAvatarResponseAliasItemTarget,
-  );
+  DeleteProjectAvatarResponseAliasItem _copyWith(
+          {Object? configuredBy = sdkOmittedValue,
+          Object? configuredChangedAt = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? deployment = sdkOmittedValue,
+          Object? domain = sdkOmittedValue,
+          Object? environment = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? redirectStatusCode = sdkOmittedValue,
+          Object? target = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseAliasItem(
+        configuredBy: identical(configuredBy, sdkOmittedValue)
+            ? this.configuredBy
+            : configuredBy as SdkOptional<
+                DeleteProjectAvatarResponseAliasItemConfiguredBy?>,
+        configuredChangedAt: identical(configuredChangedAt, sdkOmittedValue)
+            ? this.configuredChangedAt
+            : configuredChangedAt as SdkOptional<double?>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double?>,
+        deployment: identical(deployment, sdkOmittedValue)
+            ? this.deployment
+            : deployment as DeleteProjectAvatarResponseAliasItemDeployment?,
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        environment: identical(environment, sdkOmittedValue)
+            ? this.environment
+            : environment as DeleteProjectAvatarResponseAliasItemEnvironment,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<String?>,
+        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
+            ? this.redirectStatusCode
+            : redirectStatusCode as SdkOptional<
+                DeleteProjectAvatarResponseAliasItemRedirectStatusCode?>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as DeleteProjectAvatarResponseAliasItemTarget,
+      );
 
-  factory DeleteProjectAvatarResponseAliasItem.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseAliasItem(
-    configuredBy: json.containsKey('configuredBy') ? SdkPresent(json['configuredBy'] != null ? DeleteProjectAvatarResponseAliasItemConfiguredBy.fromJson(json['configuredBy'] as String) : null) : const SdkOmitted(),
-    configuredChangedAt: json.containsKey('configuredChangedAt') ? SdkPresent((json['configuredChangedAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    createdAt: json.containsKey('createdAt') ? SdkPresent((json['createdAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    deployment: json.containsKey('deployment') ? json['deployment'] != null ? DeleteProjectAvatarResponseAliasItemDeployment.fromJson(json['deployment'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'deployment', 'Required property is missing'),
-    domain: (json['domain'] as String?)!,
-    environment: (json['environment'] != null ? DeleteProjectAvatarResponseAliasItemEnvironment.fromJson(json['environment'] as String) : null)!,
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
-    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? DeleteProjectAvatarResponseAliasItemRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
-    target: (json['target'] != null ? DeleteProjectAvatarResponseAliasItemTarget.fromJson(json['target'] as String) : null)!,
-  );
+  factory DeleteProjectAvatarResponseAliasItem.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseAliasItem(
+        configuredBy: json.containsKey('configuredBy')
+            ? SdkPresent(json['configuredBy'] != null
+                ? DeleteProjectAvatarResponseAliasItemConfiguredBy.fromJson(
+                    json['configuredBy'] as String)
+                : null)
+            : const SdkOmitted(),
+        configuredChangedAt: json.containsKey('configuredChangedAt')
+            ? SdkPresent((json['configuredChangedAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        createdAt: json.containsKey('createdAt')
+            ? SdkPresent((json['createdAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        deployment: json.containsKey('deployment')
+            ? json['deployment'] != null
+                ? DeleteProjectAvatarResponseAliasItemDeployment.fromJson(
+                    json['deployment'] as Map<String, dynamic>)
+                : null
+            : throw ArgumentError.value(
+                null, 'deployment', 'Required property is missing'),
+        domain: (json['domain'] as String?)!,
+        environment: (json['environment'] != null
+            ? DeleteProjectAvatarResponseAliasItemEnvironment.fromJson(
+                json['environment'] as String)
+            : null)!,
+        gitBranch: json.containsKey('gitBranch')
+            ? SdkPresent(json['gitBranch'] as String?)
+            : const SdkOmitted(),
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] as String?)
+            : const SdkOmitted(),
+        redirectStatusCode: json.containsKey('redirectStatusCode')
+            ? SdkPresent(json['redirectStatusCode'] != null
+                ? DeleteProjectAvatarResponseAliasItemRedirectStatusCode
+                    .fromJson((json['redirectStatusCode'] as num).toDouble())
+                : null)
+            : const SdkOmitted(),
+        target: (json['target'] != null
+            ? DeleteProjectAvatarResponseAliasItemTarget.fromJson(
+                json['target'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (configuredBy) {
-      SdkPresent<DeleteProjectAvatarResponseAliasItemConfiguredBy?>(value: final value) => {'configuredBy': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (configuredChangedAt) {
-      SdkPresent<double?>(value: final value) => {'configuredChangedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double?>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'deployment': deployment?.toJson(),
-    'domain': domain,
-    'environment': environment.toJson(),
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirect) {
-      SdkPresent<String?>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectStatusCode) {
-      SdkPresent<DeleteProjectAvatarResponseAliasItemRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'target': target.toJson(),
-  };
+        ...switch (configuredBy) {
+          SdkPresent<DeleteProjectAvatarResponseAliasItemConfiguredBy?>(
+            value: final value
+          ) =>
+            {
+              'configuredBy': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (configuredChangedAt) {
+          SdkPresent<double?>(value: final value) => {
+              'configuredChangedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double?>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'deployment': deployment?.toJson(),
+        'domain': domain,
+        'environment': environment.toJson(),
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirect) {
+          SdkPresent<String?>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectStatusCode) {
+          SdkPresent<DeleteProjectAvatarResponseAliasItemRedirectStatusCode?>(
+            value: final value
+          ) =>
+            {
+              'redirectStatusCode': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'target': target.toJson(),
+      };
 }
 
 class DeleteProjectAvatarResponseAnalytics {
@@ -91,77 +198,150 @@ class DeleteProjectAvatarResponseAnalytics {
   final SdkOptional<double?> sampleRatePercent;
   final SdkOptional<double?> spendLimitInDollars;
 
-  const DeleteProjectAvatarResponseAnalytics({this.canceledAt = const SdkOmitted(), required this.disabledAt, required this.enabledAt, required this.id, this.paidAt = const SdkOmitted(), this.sampleRatePercent = const SdkOmitted(), this.spendLimitInDollars = const SdkOmitted()});
+  const DeleteProjectAvatarResponseAnalytics(
+      {this.canceledAt = const SdkOmitted(),
+      required this.disabledAt,
+      required this.enabledAt,
+      required this.id,
+      this.paidAt = const SdkOmitted(),
+      this.sampleRatePercent = const SdkOmitted(),
+      this.spendLimitInDollars = const SdkOmitted()});
 
-  DeleteProjectAvatarResponseAnalytics Function({SdkOptional<double?> canceledAt, double disabledAt, double enabledAt, String id, SdkOptional<double> paidAt, SdkOptional<double?> sampleRatePercent, SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseAnalytics Function(
+      {SdkOptional<double?> canceledAt,
+      double disabledAt,
+      double enabledAt,
+      String id,
+      SdkOptional<double> paidAt,
+      SdkOptional<double?> sampleRatePercent,
+      SdkOptional<double?> spendLimitInDollars}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseAnalytics _copyWith({Object? canceledAt = sdkOmittedValue, Object? disabledAt = sdkOmittedValue, Object? enabledAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? paidAt = sdkOmittedValue, Object? sampleRatePercent = sdkOmittedValue, Object? spendLimitInDollars = sdkOmittedValue}) => DeleteProjectAvatarResponseAnalytics(
-    canceledAt: identical(canceledAt, sdkOmittedValue) ? this.canceledAt : canceledAt as SdkOptional<double?>,
-    disabledAt: identical(disabledAt, sdkOmittedValue) ? this.disabledAt : disabledAt as double,
-    enabledAt: identical(enabledAt, sdkOmittedValue) ? this.enabledAt : enabledAt as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    paidAt: identical(paidAt, sdkOmittedValue) ? this.paidAt : paidAt as SdkOptional<double>,
-    sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue) ? this.sampleRatePercent : sampleRatePercent as SdkOptional<double?>,
-    spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue) ? this.spendLimitInDollars : spendLimitInDollars as SdkOptional<double?>,
-  );
+  DeleteProjectAvatarResponseAnalytics _copyWith(
+          {Object? canceledAt = sdkOmittedValue,
+          Object? disabledAt = sdkOmittedValue,
+          Object? enabledAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? paidAt = sdkOmittedValue,
+          Object? sampleRatePercent = sdkOmittedValue,
+          Object? spendLimitInDollars = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseAnalytics(
+        canceledAt: identical(canceledAt, sdkOmittedValue)
+            ? this.canceledAt
+            : canceledAt as SdkOptional<double?>,
+        disabledAt: identical(disabledAt, sdkOmittedValue)
+            ? this.disabledAt
+            : disabledAt as double,
+        enabledAt: identical(enabledAt, sdkOmittedValue)
+            ? this.enabledAt
+            : enabledAt as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        paidAt: identical(paidAt, sdkOmittedValue)
+            ? this.paidAt
+            : paidAt as SdkOptional<double>,
+        sampleRatePercent: identical(sampleRatePercent, sdkOmittedValue)
+            ? this.sampleRatePercent
+            : sampleRatePercent as SdkOptional<double?>,
+        spendLimitInDollars: identical(spendLimitInDollars, sdkOmittedValue)
+            ? this.spendLimitInDollars
+            : spendLimitInDollars as SdkOptional<double?>,
+      );
 
-  factory DeleteProjectAvatarResponseAnalytics.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseAnalytics(
-    canceledAt: json.containsKey('canceledAt') ? SdkPresent((json['canceledAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
-    enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    paidAt: json['paidAt'] != null ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    sampleRatePercent: json.containsKey('sampleRatePercent') ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble()) : const SdkOmitted(),
-    spendLimitInDollars: json.containsKey('spendLimitInDollars') ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble()) : const SdkOmitted(),
-  );
+  factory DeleteProjectAvatarResponseAnalytics.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseAnalytics(
+        canceledAt: json.containsKey('canceledAt')
+            ? SdkPresent((json['canceledAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        disabledAt: ((json['disabledAt'] as num?)?.toDouble())!,
+        enabledAt: ((json['enabledAt'] as num?)?.toDouble())!,
+        id: (json['id'] as String?)!,
+        paidAt: json['paidAt'] != null
+            ? SdkPresent(((json['paidAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        sampleRatePercent: json.containsKey('sampleRatePercent')
+            ? SdkPresent((json['sampleRatePercent'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        spendLimitInDollars: json.containsKey('spendLimitInDollars')
+            ? SdkPresent((json['spendLimitInDollars'] as num?)?.toDouble())
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (canceledAt) {
-      SdkPresent<double?>(value: final value) => {'canceledAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'disabledAt': disabledAt,
-    'enabledAt': enabledAt,
-    'id': id,
-    ...switch (paidAt) {
-      SdkPresent<double>(value: final value) => {'paidAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sampleRatePercent) {
-      SdkPresent<double?>(value: final value) => {'sampleRatePercent': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (spendLimitInDollars) {
-      SdkPresent<double?>(value: final value) => {'spendLimitInDollars': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (canceledAt) {
+          SdkPresent<double?>(value: final value) => {
+              'canceledAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'disabledAt': disabledAt,
+        'enabledAt': enabledAt,
+        'id': id,
+        ...switch (paidAt) {
+          SdkPresent<double>(value: final value) => {
+              'paidAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sampleRatePercent) {
+          SdkPresent<double?>(value: final value) => {
+              'sampleRatePercent': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (spendLimitInDollars) {
+          SdkPresent<double?>(value: final value) => {
+              'spendLimitInDollars': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class DeleteProjectAvatarResponseBlobs {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation — guards rely on it to protect the connected stores from being lost when the project is deleted or transferred.
   final SdkOptional<DeleteProjectAvatarResponseBlobsIsDefaultApp> isDefaultApp;
 
-  const DeleteProjectAvatarResponseBlobs({this.isDefaultApp = const SdkOmitted()});
+  const DeleteProjectAvatarResponseBlobs(
+      {this.isDefaultApp = const SdkOmitted()});
 
-  DeleteProjectAvatarResponseBlobs Function({SdkOptional<DeleteProjectAvatarResponseBlobsIsDefaultApp> isDefaultApp}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseBlobs Function(
+      {SdkOptional<DeleteProjectAvatarResponseBlobsIsDefaultApp>
+          isDefaultApp}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseBlobs _copyWith({Object? isDefaultApp = sdkOmittedValue}) => DeleteProjectAvatarResponseBlobs(
-    isDefaultApp: identical(isDefaultApp, sdkOmittedValue) ? this.isDefaultApp : isDefaultApp as SdkOptional<DeleteProjectAvatarResponseBlobsIsDefaultApp>,
-  );
+  DeleteProjectAvatarResponseBlobs _copyWith(
+          {Object? isDefaultApp = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseBlobs(
+        isDefaultApp: identical(isDefaultApp, sdkOmittedValue)
+            ? this.isDefaultApp
+            : isDefaultApp
+                as SdkOptional<DeleteProjectAvatarResponseBlobsIsDefaultApp>,
+      );
 
-  factory DeleteProjectAvatarResponseBlobs.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseBlobs(
-    isDefaultApp: json['isDefaultApp'] != null ? SdkPresent((json['isDefaultApp'] != null ? DeleteProjectAvatarResponseBlobsIsDefaultApp.fromJson(json['isDefaultApp'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory DeleteProjectAvatarResponseBlobs.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseBlobs(
+        isDefaultApp: json['isDefaultApp'] != null
+            ? SdkPresent((json['isDefaultApp'] != null
+                ? DeleteProjectAvatarResponseBlobsIsDefaultApp.fromJson(
+                    json['isDefaultApp'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (isDefaultApp) {
-      SdkPresent<DeleteProjectAvatarResponseBlobsIsDefaultApp>(value: final value) => {'isDefaultApp': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (isDefaultApp) {
+          SdkPresent<DeleteProjectAvatarResponseBlobsIsDefaultApp>(
+            value: final value
+          ) =>
+            {
+              'isDefaultApp': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class DeleteProjectAvatarResponseConnectConfigurationsItemAws {
@@ -170,34 +350,53 @@ class DeleteProjectAvatarResponseConnectConfigurationsItemAws {
   final SdkOptional<String> securityGroupId;
   final List<String> subnetIds;
 
-  const DeleteProjectAvatarResponseConnectConfigurationsItemAws({this.securityGroupId = const SdkOmitted(), required this.subnetIds});
+  const DeleteProjectAvatarResponseConnectConfigurationsItemAws(
+      {this.securityGroupId = const SdkOmitted(), required this.subnetIds});
 
-  DeleteProjectAvatarResponseConnectConfigurationsItemAws Function({SdkOptional<String> securityGroupId, List<String> subnetIds}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseConnectConfigurationsItemAws Function(
+      {SdkOptional<String> securityGroupId,
+      List<String> subnetIds}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseConnectConfigurationsItemAws _copyWith({Object? securityGroupId = sdkOmittedValue, Object? subnetIds = sdkOmittedValue}) => DeleteProjectAvatarResponseConnectConfigurationsItemAws(
-    securityGroupId: identical(securityGroupId, sdkOmittedValue) ? this.securityGroupId : securityGroupId as SdkOptional<String>,
-    subnetIds: identical(subnetIds, sdkOmittedValue) ? this.subnetIds : subnetIds as List<String>,
-  );
+  DeleteProjectAvatarResponseConnectConfigurationsItemAws _copyWith(
+          {Object? securityGroupId = sdkOmittedValue,
+          Object? subnetIds = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseConnectConfigurationsItemAws(
+        securityGroupId: identical(securityGroupId, sdkOmittedValue)
+            ? this.securityGroupId
+            : securityGroupId as SdkOptional<String>,
+        subnetIds: identical(subnetIds, sdkOmittedValue)
+            ? this.subnetIds
+            : subnetIds as List<String>,
+      );
 
-  factory DeleteProjectAvatarResponseConnectConfigurationsItemAws.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseConnectConfigurationsItemAws(
-    securityGroupId: json['securityGroupId'] != null ? SdkPresent((json['securityGroupId'] as String?)!) : const SdkOmitted(),
-    subnetIds: ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory DeleteProjectAvatarResponseConnectConfigurationsItemAws.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseConnectConfigurationsItemAws(
+        securityGroupId: json['securityGroupId'] != null
+            ? SdkPresent((json['securityGroupId'] as String?)!)
+            : const SdkOmitted(),
+        subnetIds:
+            ((json['subnetIds'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (securityGroupId) {
-      SdkPresent<String>(value: final value) => {'securityGroupId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'subnetIds': subnetIds,
-  };
+        ...switch (securityGroupId) {
+          SdkPresent<String>(value: final value) => {
+              'securityGroupId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'subnetIds': subnetIds,
+      };
 }
 
 class DeleteProjectAvatarResponseConnectConfigurationsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<DeleteProjectAvatarResponseConnectConfigurationsItemAws> aws;
-  final DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled buildsEnabled;
+  final SdkOptional<DeleteProjectAvatarResponseConnectConfigurationsItemAws>
+      aws;
+  final DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled
+      buildsEnabled;
   final String connectConfigurationId;
   final double createdAt;
   final SdkOptional<String> dc;
@@ -205,46 +404,112 @@ class DeleteProjectAvatarResponseConnectConfigurationsItem {
   final DeleteProjectAvatarResponseConnectConfigurationsItemPassive passive;
   final double updatedAt;
 
-  const DeleteProjectAvatarResponseConnectConfigurationsItem({this.aws = const SdkOmitted(), required this.buildsEnabled, required this.connectConfigurationId, required this.createdAt, this.dc = const SdkOmitted(), required this.envId, required this.passive, required this.updatedAt});
+  const DeleteProjectAvatarResponseConnectConfigurationsItem(
+      {this.aws = const SdkOmitted(),
+      required this.buildsEnabled,
+      required this.connectConfigurationId,
+      required this.createdAt,
+      this.dc = const SdkOmitted(),
+      required this.envId,
+      required this.passive,
+      required this.updatedAt});
 
-  DeleteProjectAvatarResponseConnectConfigurationsItem Function({SdkOptional<DeleteProjectAvatarResponseConnectConfigurationsItemAws> aws, DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled buildsEnabled, String connectConfigurationId, double createdAt, SdkOptional<String> dc, String envId, DeleteProjectAvatarResponseConnectConfigurationsItemPassive passive, double updatedAt}) get copyWith => _copyWith;
+  DeleteProjectAvatarResponseConnectConfigurationsItem Function(
+      {SdkOptional<DeleteProjectAvatarResponseConnectConfigurationsItemAws> aws,
+      DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled
+          buildsEnabled,
+      String connectConfigurationId,
+      double createdAt,
+      SdkOptional<String> dc,
+      String envId,
+      DeleteProjectAvatarResponseConnectConfigurationsItemPassive passive,
+      double updatedAt}) get copyWith => _copyWith;
 
-  DeleteProjectAvatarResponseConnectConfigurationsItem _copyWith({Object? aws = sdkOmittedValue, Object? buildsEnabled = sdkOmittedValue, Object? connectConfigurationId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? dc = sdkOmittedValue, Object? envId = sdkOmittedValue, Object? passive = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => DeleteProjectAvatarResponseConnectConfigurationsItem(
-    aws: identical(aws, sdkOmittedValue) ? this.aws : aws as SdkOptional<DeleteProjectAvatarResponseConnectConfigurationsItemAws>,
-    buildsEnabled: identical(buildsEnabled, sdkOmittedValue) ? this.buildsEnabled : buildsEnabled as DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled,
-    connectConfigurationId: identical(connectConfigurationId, sdkOmittedValue) ? this.connectConfigurationId : connectConfigurationId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    dc: identical(dc, sdkOmittedValue) ? this.dc : dc as SdkOptional<String>,
-    envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
-    passive: identical(passive, sdkOmittedValue) ? this.passive : passive as DeleteProjectAvatarResponseConnectConfigurationsItemPassive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  DeleteProjectAvatarResponseConnectConfigurationsItem _copyWith(
+          {Object? aws = sdkOmittedValue,
+          Object? buildsEnabled = sdkOmittedValue,
+          Object? connectConfigurationId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? dc = sdkOmittedValue,
+          Object? envId = sdkOmittedValue,
+          Object? passive = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      DeleteProjectAvatarResponseConnectConfigurationsItem(
+        aws: identical(aws, sdkOmittedValue)
+            ? this.aws
+            : aws as SdkOptional<
+                DeleteProjectAvatarResponseConnectConfigurationsItemAws>,
+        buildsEnabled: identical(buildsEnabled, sdkOmittedValue)
+            ? this.buildsEnabled
+            : buildsEnabled
+                as DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled,
+        connectConfigurationId:
+            identical(connectConfigurationId, sdkOmittedValue)
+                ? this.connectConfigurationId
+                : connectConfigurationId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        dc: identical(dc, sdkOmittedValue)
+            ? this.dc
+            : dc as SdkOptional<String>,
+        envId: identical(envId, sdkOmittedValue) ? this.envId : envId as String,
+        passive: identical(passive, sdkOmittedValue)
+            ? this.passive
+            : passive
+                as DeleteProjectAvatarResponseConnectConfigurationsItemPassive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory DeleteProjectAvatarResponseConnectConfigurationsItem.fromJson(Map<String, dynamic> json) => DeleteProjectAvatarResponseConnectConfigurationsItem(
-    aws: json['aws'] != null ? SdkPresent((json['aws'] != null ? DeleteProjectAvatarResponseConnectConfigurationsItemAws.fromJson(json['aws'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    buildsEnabled: (json['buildsEnabled'] != null ? DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled.fromJson(json['buildsEnabled'] as bool) : null)!,
-    connectConfigurationId: (json['connectConfigurationId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    dc: json['dc'] != null ? SdkPresent((json['dc'] as String?)!) : const SdkOmitted(),
-    envId: (json['envId'] as String?)!,
-    passive: (json['passive'] != null ? DeleteProjectAvatarResponseConnectConfigurationsItemPassive.fromJson(json['passive'] as bool) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory DeleteProjectAvatarResponseConnectConfigurationsItem.fromJson(
+          Map<String, dynamic> json) =>
+      DeleteProjectAvatarResponseConnectConfigurationsItem(
+        aws: json['aws'] != null
+            ? SdkPresent((json['aws'] != null
+                ? DeleteProjectAvatarResponseConnectConfigurationsItemAws
+                    .fromJson(json['aws'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        buildsEnabled: (json['buildsEnabled'] != null
+            ? DeleteProjectAvatarResponseConnectConfigurationsItemBuildsEnabled
+                .fromJson(json['buildsEnabled'] as bool)
+            : null)!,
+        connectConfigurationId: (json['connectConfigurationId'] as String?)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        dc: json['dc'] != null
+            ? SdkPresent((json['dc'] as String?)!)
+            : const SdkOmitted(),
+        envId: (json['envId'] as String?)!,
+        passive: (json['passive'] != null
+            ? DeleteProjectAvatarResponseConnectConfigurationsItemPassive
+                .fromJson(json['passive'] as bool)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (aws) {
-      SdkPresent<DeleteProjectAvatarResponseConnectConfigurationsItemAws>(value: final value) => {'aws': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'buildsEnabled': buildsEnabled.toJson(),
-    'connectConfigurationId': connectConfigurationId,
-    'createdAt': createdAt,
-    ...switch (dc) {
-      SdkPresent<String>(value: final value) => {'dc': value,},
-      _ => const <String, dynamic>{},
-    },
-    'envId': envId,
-    'passive': passive.toJson(),
-    'updatedAt': updatedAt,
-  };
+        ...switch (aws) {
+          SdkPresent<DeleteProjectAvatarResponseConnectConfigurationsItemAws>(
+            value: final value
+          ) =>
+            {
+              'aws': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'buildsEnabled': buildsEnabled.toJson(),
+        'connectConfigurationId': connectConfigurationId,
+        'createdAt': createdAt,
+        ...switch (dc) {
+          SdkPresent<String>(value: final value) => {
+              'dc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'envId': envId,
+        'passive': passive.toJson(),
+        'updatedAt': updatedAt,
+      };
 }

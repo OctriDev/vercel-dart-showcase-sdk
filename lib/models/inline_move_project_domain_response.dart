@@ -14,79 +14,184 @@ class MoveProjectDomainResponse {
   final String name;
   final String projectId;
   final SdkOptional<String?> redirect;
-  final SdkOptional<MoveProjectDomainResponseRedirectStatusCode?> redirectStatusCode;
+  final SdkOptional<MoveProjectDomainResponseRedirectStatusCode?>
+      redirectStatusCode;
   final SdkOptional<double> updatedAt;
+
   /// A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`.
-  final SdkOptional<List<MoveProjectDomainResponseVerificationItem>> verification;
+  final SdkOptional<List<MoveProjectDomainResponseVerificationItem>>
+      verification;
+
   /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
   final MoveProjectDomainResponseVerified verified;
 
-  const MoveProjectDomainResponse({required this.apexName, this.createdAt = const SdkOmitted(), this.customEnvironmentId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), required this.name, required this.projectId, this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.verification = const SdkOmitted(), required this.verified});
+  const MoveProjectDomainResponse(
+      {required this.apexName,
+      this.createdAt = const SdkOmitted(),
+      this.customEnvironmentId = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      required this.name,
+      required this.projectId,
+      this.redirect = const SdkOmitted(),
+      this.redirectStatusCode = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.verification = const SdkOmitted(),
+      required this.verified});
 
-  MoveProjectDomainResponse Function({String apexName, SdkOptional<double> createdAt, SdkOptional<String?> customEnvironmentId, SdkOptional<String?> gitBranch, String name, String projectId, SdkOptional<String?> redirect, SdkOptional<MoveProjectDomainResponseRedirectStatusCode?> redirectStatusCode, SdkOptional<double> updatedAt, SdkOptional<List<MoveProjectDomainResponseVerificationItem>> verification, MoveProjectDomainResponseVerified verified}) get copyWith => _copyWith;
+  MoveProjectDomainResponse Function(
+      {String apexName,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> customEnvironmentId,
+      SdkOptional<String?> gitBranch,
+      String name,
+      String projectId,
+      SdkOptional<String?> redirect,
+      SdkOptional<MoveProjectDomainResponseRedirectStatusCode?>
+          redirectStatusCode,
+      SdkOptional<double> updatedAt,
+      SdkOptional<List<MoveProjectDomainResponseVerificationItem>> verification,
+      MoveProjectDomainResponseVerified verified}) get copyWith => _copyWith;
 
-  MoveProjectDomainResponse _copyWith({Object? apexName = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? verification = sdkOmittedValue, Object? verified = sdkOmittedValue}) => MoveProjectDomainResponse(
-    apexName: identical(apexName, sdkOmittedValue) ? this.apexName : apexName as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String?>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
-    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<MoveProjectDomainResponseRedirectStatusCode?>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    verification: identical(verification, sdkOmittedValue) ? this.verification : verification as SdkOptional<List<MoveProjectDomainResponseVerificationItem>>,
-    verified: identical(verified, sdkOmittedValue) ? this.verified : verified as MoveProjectDomainResponseVerified,
-  );
+  MoveProjectDomainResponse _copyWith(
+          {Object? apexName = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? customEnvironmentId = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? redirectStatusCode = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? verification = sdkOmittedValue,
+          Object? verified = sdkOmittedValue}) =>
+      MoveProjectDomainResponse(
+        apexName: identical(apexName, sdkOmittedValue)
+            ? this.apexName
+            : apexName as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as SdkOptional<String?>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<String?>,
+        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
+            ? this.redirectStatusCode
+            : redirectStatusCode
+                as SdkOptional<MoveProjectDomainResponseRedirectStatusCode?>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        verification: identical(verification, sdkOmittedValue)
+            ? this.verification
+            : verification
+                as SdkOptional<List<MoveProjectDomainResponseVerificationItem>>,
+        verified: identical(verified, sdkOmittedValue)
+            ? this.verified
+            : verified as MoveProjectDomainResponseVerified,
+      );
 
-  factory MoveProjectDomainResponse.fromJson(Map<String, dynamic> json) => MoveProjectDomainResponse(
-    apexName: (json['apexName'] as String?)!,
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    customEnvironmentId: json.containsKey('customEnvironmentId') ? SdkPresent(json['customEnvironmentId'] as String?) : const SdkOmitted(),
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
-    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? MoveProjectDomainResponseRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    verification: json['verification'] != null ? SdkPresent(((json['verification'] as List?)?.map((e) => MoveProjectDomainResponseVerificationItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-    verified: (json['verified'] != null ? MoveProjectDomainResponseVerified.fromJson(json['verified'] as bool) : null)!,
-  );
+  factory MoveProjectDomainResponse.fromJson(Map<String, dynamic> json) =>
+      MoveProjectDomainResponse(
+        apexName: (json['apexName'] as String?)!,
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        customEnvironmentId: json.containsKey('customEnvironmentId')
+            ? SdkPresent(json['customEnvironmentId'] as String?)
+            : const SdkOmitted(),
+        gitBranch: json.containsKey('gitBranch')
+            ? SdkPresent(json['gitBranch'] as String?)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] as String?)
+            : const SdkOmitted(),
+        redirectStatusCode: json.containsKey('redirectStatusCode')
+            ? SdkPresent(json['redirectStatusCode'] != null
+                ? MoveProjectDomainResponseRedirectStatusCode.fromJson(
+                    (json['redirectStatusCode'] as num).toDouble())
+                : null)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        verification: json['verification'] != null
+            ? SdkPresent(((json['verification'] as List?)
+                ?.map((e) => MoveProjectDomainResponseVerificationItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+        verified: (json['verified'] != null
+            ? MoveProjectDomainResponseVerified.fromJson(
+                json['verified'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'apexName': apexName,
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentId) {
-      SdkPresent<String?>(value: final value) => {'customEnvironmentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'projectId': projectId,
-    ...switch (redirect) {
-      SdkPresent<String?>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectStatusCode) {
-      SdkPresent<MoveProjectDomainResponseRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (verification) {
-      SdkPresent<List<MoveProjectDomainResponseVerificationItem>>(value: final value) => {'verification': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    'verified': verified.toJson(),
-  };
+        'apexName': apexName,
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentId) {
+          SdkPresent<String?>(value: final value) => {
+              'customEnvironmentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'projectId': projectId,
+        ...switch (redirect) {
+          SdkPresent<String?>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectStatusCode) {
+          SdkPresent<MoveProjectDomainResponseRedirectStatusCode?>(
+            value: final value
+          ) =>
+            {
+              'redirectStatusCode': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (verification) {
+          SdkPresent<List<MoveProjectDomainResponseVerificationItem>>(
+            value: final value
+          ) =>
+            {
+              'verification': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'verified': verified.toJson(),
+      };
 }
 
 class VerifyProjectDomainResponse {
@@ -99,199 +204,430 @@ class VerifyProjectDomainResponse {
   final String name;
   final String projectId;
   final SdkOptional<String?> redirect;
-  final SdkOptional<VerifyProjectDomainResponseRedirectStatusCode?> redirectStatusCode;
+  final SdkOptional<VerifyProjectDomainResponseRedirectStatusCode?>
+      redirectStatusCode;
   final SdkOptional<double> updatedAt;
+
   /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
   final VerifyProjectDomainResponseVerified verified;
 
-  const VerifyProjectDomainResponse({required this.apexName, this.createdAt = const SdkOmitted(), this.customEnvironmentId = const SdkOmitted(), this.gitBranch = const SdkOmitted(), required this.name, required this.projectId, this.redirect = const SdkOmitted(), this.redirectStatusCode = const SdkOmitted(), this.updatedAt = const SdkOmitted(), required this.verified});
+  const VerifyProjectDomainResponse(
+      {required this.apexName,
+      this.createdAt = const SdkOmitted(),
+      this.customEnvironmentId = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      required this.name,
+      required this.projectId,
+      this.redirect = const SdkOmitted(),
+      this.redirectStatusCode = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      required this.verified});
 
-  VerifyProjectDomainResponse Function({String apexName, SdkOptional<double> createdAt, SdkOptional<String?> customEnvironmentId, SdkOptional<String?> gitBranch, String name, String projectId, SdkOptional<String?> redirect, SdkOptional<VerifyProjectDomainResponseRedirectStatusCode?> redirectStatusCode, SdkOptional<double> updatedAt, VerifyProjectDomainResponseVerified verified}) get copyWith => _copyWith;
+  VerifyProjectDomainResponse Function(
+      {String apexName,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> customEnvironmentId,
+      SdkOptional<String?> gitBranch,
+      String name,
+      String projectId,
+      SdkOptional<String?> redirect,
+      SdkOptional<VerifyProjectDomainResponseRedirectStatusCode?>
+          redirectStatusCode,
+      SdkOptional<double> updatedAt,
+      VerifyProjectDomainResponseVerified verified}) get copyWith => _copyWith;
 
-  VerifyProjectDomainResponse _copyWith({Object? apexName = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? customEnvironmentId = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? name = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? redirect = sdkOmittedValue, Object? redirectStatusCode = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? verified = sdkOmittedValue}) => VerifyProjectDomainResponse(
-    apexName: identical(apexName, sdkOmittedValue) ? this.apexName : apexName as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue) ? this.customEnvironmentId : customEnvironmentId as SdkOptional<String?>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    redirect: identical(redirect, sdkOmittedValue) ? this.redirect : redirect as SdkOptional<String?>,
-    redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue) ? this.redirectStatusCode : redirectStatusCode as SdkOptional<VerifyProjectDomainResponseRedirectStatusCode?>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    verified: identical(verified, sdkOmittedValue) ? this.verified : verified as VerifyProjectDomainResponseVerified,
-  );
+  VerifyProjectDomainResponse _copyWith(
+          {Object? apexName = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? customEnvironmentId = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? redirect = sdkOmittedValue,
+          Object? redirectStatusCode = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? verified = sdkOmittedValue}) =>
+      VerifyProjectDomainResponse(
+        apexName: identical(apexName, sdkOmittedValue)
+            ? this.apexName
+            : apexName as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        customEnvironmentId: identical(customEnvironmentId, sdkOmittedValue)
+            ? this.customEnvironmentId
+            : customEnvironmentId as SdkOptional<String?>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        redirect: identical(redirect, sdkOmittedValue)
+            ? this.redirect
+            : redirect as SdkOptional<String?>,
+        redirectStatusCode: identical(redirectStatusCode, sdkOmittedValue)
+            ? this.redirectStatusCode
+            : redirectStatusCode
+                as SdkOptional<VerifyProjectDomainResponseRedirectStatusCode?>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        verified: identical(verified, sdkOmittedValue)
+            ? this.verified
+            : verified as VerifyProjectDomainResponseVerified,
+      );
 
-  factory VerifyProjectDomainResponse.fromJson(Map<String, dynamic> json) => VerifyProjectDomainResponse(
-    apexName: (json['apexName'] as String?)!,
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    customEnvironmentId: json.containsKey('customEnvironmentId') ? SdkPresent(json['customEnvironmentId'] as String?) : const SdkOmitted(),
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    name: (json['name'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    redirect: json.containsKey('redirect') ? SdkPresent(json['redirect'] as String?) : const SdkOmitted(),
-    redirectStatusCode: json.containsKey('redirectStatusCode') ? SdkPresent(json['redirectStatusCode'] != null ? VerifyProjectDomainResponseRedirectStatusCode.fromJson((json['redirectStatusCode'] as num).toDouble()) : null) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    verified: (json['verified'] != null ? VerifyProjectDomainResponseVerified.fromJson(json['verified'] as bool) : null)!,
-  );
+  factory VerifyProjectDomainResponse.fromJson(Map<String, dynamic> json) =>
+      VerifyProjectDomainResponse(
+        apexName: (json['apexName'] as String?)!,
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        customEnvironmentId: json.containsKey('customEnvironmentId')
+            ? SdkPresent(json['customEnvironmentId'] as String?)
+            : const SdkOmitted(),
+        gitBranch: json.containsKey('gitBranch')
+            ? SdkPresent(json['gitBranch'] as String?)
+            : const SdkOmitted(),
+        name: (json['name'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        redirect: json.containsKey('redirect')
+            ? SdkPresent(json['redirect'] as String?)
+            : const SdkOmitted(),
+        redirectStatusCode: json.containsKey('redirectStatusCode')
+            ? SdkPresent(json['redirectStatusCode'] != null
+                ? VerifyProjectDomainResponseRedirectStatusCode.fromJson(
+                    (json['redirectStatusCode'] as num).toDouble())
+                : null)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        verified: (json['verified'] != null
+            ? VerifyProjectDomainResponseVerified.fromJson(
+                json['verified'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'apexName': apexName,
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentId) {
-      SdkPresent<String?>(value: final value) => {'customEnvironmentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    'name': name,
-    'projectId': projectId,
-    ...switch (redirect) {
-      SdkPresent<String?>(value: final value) => {'redirect': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectStatusCode) {
-      SdkPresent<VerifyProjectDomainResponseRedirectStatusCode?>(value: final value) => {'redirectStatusCode': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'verified': verified.toJson(),
-  };
+        'apexName': apexName,
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentId) {
+          SdkPresent<String?>(value: final value) => {
+              'customEnvironmentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'name': name,
+        'projectId': projectId,
+        ...switch (redirect) {
+          SdkPresent<String?>(value: final value) => {
+              'redirect': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectStatusCode) {
+          SdkPresent<VerifyProjectDomainResponseRedirectStatusCode?>(
+            value: final value
+          ) =>
+            {
+              'redirectStatusCode': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'verified': verified.toJson(),
+      };
 }
 
 class CreateProjectEnvRequestBodyVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The name of the environment variable
   final String key;
+
   /// The value of the environment variable
   final String value;
+
   /// The type of environment variable
   final CreateProjectEnvRequestBodyVariant0Type type_;
+
   /// The target environment of the environment variable
   final SdkOptional<List<CreateProjectEnvRequestBodyVariant0TargetItem>> target;
+
   /// If defined, the git branch of the environment variable (must have target=preview)
   final SdkOptional<String?> gitBranch;
+
   /// A comment to add context on what this environment variable is for
   final SdkOptional<String> comment;
+
   /// The custom environment IDs associated with the environment variable
   final SdkOptional<List<String>> customEnvironmentIds;
 
-  const CreateProjectEnvRequestBodyVariant0({required this.key, required this.value, required this.type_, this.target = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.comment = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted()});
+  const CreateProjectEnvRequestBodyVariant0(
+      {required this.key,
+      required this.value,
+      required this.type_,
+      this.target = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.comment = const SdkOmitted(),
+      this.customEnvironmentIds = const SdkOmitted()});
 
-  CreateProjectEnvRequestBodyVariant0 Function({String key, String value, CreateProjectEnvRequestBodyVariant0Type type_, SdkOptional<List<CreateProjectEnvRequestBodyVariant0TargetItem>> target, SdkOptional<String?> gitBranch, SdkOptional<String> comment, SdkOptional<List<String>> customEnvironmentIds}) get copyWith => _copyWith;
+  CreateProjectEnvRequestBodyVariant0 Function(
+      {String key,
+      String value,
+      CreateProjectEnvRequestBodyVariant0Type type_,
+      SdkOptional<List<CreateProjectEnvRequestBodyVariant0TargetItem>> target,
+      SdkOptional<String?> gitBranch,
+      SdkOptional<String> comment,
+      SdkOptional<List<String>>
+          customEnvironmentIds}) get copyWith => _copyWith;
 
-  CreateProjectEnvRequestBodyVariant0 _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? target = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? comment = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue}) => CreateProjectEnvRequestBodyVariant0(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectEnvRequestBodyVariant0Type,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<List<CreateProjectEnvRequestBodyVariant0TargetItem>>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
-  );
+  CreateProjectEnvRequestBodyVariant0 _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? comment = sdkOmittedValue,
+          Object? customEnvironmentIds = sdkOmittedValue}) =>
+      CreateProjectEnvRequestBodyVariant0(
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateProjectEnvRequestBodyVariant0Type,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<
+                List<CreateProjectEnvRequestBodyVariant0TargetItem>>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
+            ? this.customEnvironmentIds
+            : customEnvironmentIds as SdkOptional<List<String>>,
+      );
 
-  factory CreateProjectEnvRequestBodyVariant0.fromJson(Map<String, dynamic> json) => CreateProjectEnvRequestBodyVariant0(
-    key: (json['key'] as String?)!,
-    value: (json['value'] as String?)!,
-    type_: (json['type'] != null ? CreateProjectEnvRequestBodyVariant0Type.fromJson(json['type'] as String) : null)!,
-    target: json['target'] != null ? SdkPresent(((json['target'] as List?)?.map((e) => CreateProjectEnvRequestBodyVariant0TargetItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory CreateProjectEnvRequestBodyVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectEnvRequestBodyVariant0(
+        key: (json['key'] as String?)!,
+        value: (json['value'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateProjectEnvRequestBodyVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+        target: json['target'] != null
+            ? SdkPresent(((json['target'] as List?)
+                ?.map((e) =>
+                    CreateProjectEnvRequestBodyVariant0TargetItem.fromJson(
+                        e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        gitBranch: json.containsKey('gitBranch')
+            ? SdkPresent(json['gitBranch'] as String?)
+            : const SdkOmitted(),
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+        customEnvironmentIds: json['customEnvironmentIds'] != null
+            ? SdkPresent(((json['customEnvironmentIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'value': value,
-    'type': type_.toJson(),
-    ...switch (target) {
-      SdkPresent<List<CreateProjectEnvRequestBodyVariant0TargetItem>>(value: final value) => {'target': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentIds) {
-      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'key': key,
+        'value': value,
+        'type': type_.toJson(),
+        ...switch (target) {
+          SdkPresent<List<CreateProjectEnvRequestBodyVariant0TargetItem>>(
+            value: final value
+          ) =>
+            {
+              'target': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'customEnvironmentIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class CreateProjectEnvRequestBodyVariant1Item {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The name of the environment variable
   final String key;
+
   /// The value of the environment variable
   final String value;
+
   /// The type of environment variable
   final CreateProjectEnvRequestBodyVariant1ItemType type_;
+
   /// The target environment of the environment variable
-  final SdkOptional<List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>> target;
+  final SdkOptional<List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>>
+      target;
+
   /// If defined, the git branch of the environment variable (must have target=preview)
   final SdkOptional<String?> gitBranch;
+
   /// A comment to add context on what this environment variable is for
   final SdkOptional<String> comment;
+
   /// The custom environment IDs associated with the environment variable
   final SdkOptional<List<String>> customEnvironmentIds;
 
-  const CreateProjectEnvRequestBodyVariant1Item({required this.key, required this.value, required this.type_, this.target = const SdkOmitted(), this.gitBranch = const SdkOmitted(), this.comment = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted()});
+  const CreateProjectEnvRequestBodyVariant1Item(
+      {required this.key,
+      required this.value,
+      required this.type_,
+      this.target = const SdkOmitted(),
+      this.gitBranch = const SdkOmitted(),
+      this.comment = const SdkOmitted(),
+      this.customEnvironmentIds = const SdkOmitted()});
 
-  CreateProjectEnvRequestBodyVariant1Item Function({String key, String value, CreateProjectEnvRequestBodyVariant1ItemType type_, SdkOptional<List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>> target, SdkOptional<String?> gitBranch, SdkOptional<String> comment, SdkOptional<List<String>> customEnvironmentIds}) get copyWith => _copyWith;
+  CreateProjectEnvRequestBodyVariant1Item Function(
+          {String key,
+          String value,
+          CreateProjectEnvRequestBodyVariant1ItemType type_,
+          SdkOptional<List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>>
+              target,
+          SdkOptional<String?> gitBranch,
+          SdkOptional<String> comment,
+          SdkOptional<List<String>> customEnvironmentIds})
+      get copyWith => _copyWith;
 
-  CreateProjectEnvRequestBodyVariant1Item _copyWith({Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? target = sdkOmittedValue, Object? gitBranch = sdkOmittedValue, Object? comment = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue}) => CreateProjectEnvRequestBodyVariant1Item(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectEnvRequestBodyVariant1ItemType,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>>,
-    gitBranch: identical(gitBranch, sdkOmittedValue) ? this.gitBranch : gitBranch as SdkOptional<String?>,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
-  );
+  CreateProjectEnvRequestBodyVariant1Item _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? gitBranch = sdkOmittedValue,
+          Object? comment = sdkOmittedValue,
+          Object? customEnvironmentIds = sdkOmittedValue}) =>
+      CreateProjectEnvRequestBodyVariant1Item(
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as CreateProjectEnvRequestBodyVariant1ItemType,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<
+                List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>>,
+        gitBranch: identical(gitBranch, sdkOmittedValue)
+            ? this.gitBranch
+            : gitBranch as SdkOptional<String?>,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
+            ? this.customEnvironmentIds
+            : customEnvironmentIds as SdkOptional<List<String>>,
+      );
 
-  factory CreateProjectEnvRequestBodyVariant1Item.fromJson(Map<String, dynamic> json) => CreateProjectEnvRequestBodyVariant1Item(
-    key: (json['key'] as String?)!,
-    value: (json['value'] as String?)!,
-    type_: (json['type'] != null ? CreateProjectEnvRequestBodyVariant1ItemType.fromJson(json['type'] as String) : null)!,
-    target: json['target'] != null ? SdkPresent(((json['target'] as List?)?.map((e) => CreateProjectEnvRequestBodyVariant1ItemTargetItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    gitBranch: json.containsKey('gitBranch') ? SdkPresent(json['gitBranch'] as String?) : const SdkOmitted(),
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-  );
+  factory CreateProjectEnvRequestBodyVariant1Item.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectEnvRequestBodyVariant1Item(
+        key: (json['key'] as String?)!,
+        value: (json['value'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateProjectEnvRequestBodyVariant1ItemType.fromJson(
+                json['type'] as String)
+            : null)!,
+        target: json['target'] != null
+            ? SdkPresent(((json['target'] as List?)
+                ?.map((e) =>
+                    CreateProjectEnvRequestBodyVariant1ItemTargetItem.fromJson(
+                        e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        gitBranch: json.containsKey('gitBranch')
+            ? SdkPresent(json['gitBranch'] as String?)
+            : const SdkOmitted(),
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+        customEnvironmentIds: json['customEnvironmentIds'] != null
+            ? SdkPresent(((json['customEnvironmentIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'value': value,
-    'type': type_.toJson(),
-    ...switch (target) {
-      SdkPresent<List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>>(value: final value) => {'target': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gitBranch) {
-      SdkPresent<String?>(value: final value) => {'gitBranch': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentIds) {
-      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'key': key,
+        'value': value,
+        'type': type_.toJson(),
+        ...switch (target) {
+          SdkPresent<List<CreateProjectEnvRequestBodyVariant1ItemTargetItem>>(
+            value: final value
+          ) =>
+            {
+              'target': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gitBranch) {
+          SdkPresent<String?>(value: final value) => {
+              'gitBranch': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'customEnvironmentIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

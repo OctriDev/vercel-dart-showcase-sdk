@@ -6,282 +6,466 @@ part of 'inline.dart';
 // Inline operation models
 /// Whether to linearly shift traffic over the duration of this stage
 final class ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift {
-
   final bool value;
 
-  const ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(this.value);
+  const ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift.fromJson(bool value) => ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(value);
+  factory ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(false);
-  static const true_ = ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemRollingReleaseStagesItemLinearShift &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage requires manual approval to proceed
 final class ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval {
-
   final bool value;
 
-  const ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(this.value);
+  const ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval.fromJson(bool value) => ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(value);
+  factory ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(false);
-  static const true_ = ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(
+          false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemRollingReleaseStagesItemRequireApproval &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityAttackModeEnabled {
-
   final bool value;
 
   const ListProjectsResponseVariant0ItemSecurityAttackModeEnabled._(this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityAttackModeEnabled.fromJson(bool value) => ListProjectsResponseVariant0ItemSecurityAttackModeEnabled._(value);
+  factory ListProjectsResponseVariant0ItemSecurityAttackModeEnabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemSecurityAttackModeEnabled._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemSecurityAttackModeEnabled._(false);
-  static const true_ = ListProjectsResponseVariant0ItemSecurityAttackModeEnabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemSecurityAttackModeEnabled._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemSecurityAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityAttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemSecurityAttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityBotIdEnabled {
-
   final bool value;
 
   const ListProjectsResponseVariant0ItemSecurityBotIdEnabled._(this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityBotIdEnabled.fromJson(bool value) => ListProjectsResponseVariant0ItemSecurityBotIdEnabled._(value);
+  factory ListProjectsResponseVariant0ItemSecurityBotIdEnabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemSecurityBotIdEnabled._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemSecurityBotIdEnabled._(false);
-  static const true_ = ListProjectsResponseVariant0ItemSecurityBotIdEnabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemSecurityBotIdEnabled._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemSecurityBotIdEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityBotIdEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemSecurityBotIdEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallEnabled {
-
   final bool value;
 
   const ListProjectsResponseVariant0ItemSecurityFirewallEnabled._(this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallEnabled.fromJson(bool value) => ListProjectsResponseVariant0ItemSecurityFirewallEnabled._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallEnabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallEnabled._(value);
 
-  static const false_ = ListProjectsResponseVariant0ItemSecurityFirewallEnabled._(false);
-  static const true_ = ListProjectsResponseVariant0ItemSecurityFirewallEnabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant0ItemSecurityFirewallEnabled._(false);
+  static const true_ =
+      ListProjectsResponseVariant0ItemSecurityFirewallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant0ItemSecurityFirewallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._(this.value);
+  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle.fromJson(String value) => ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._(value);
 
-  static const finalize = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._('finalize');
-  static const init = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._('init');
+  static const finalize =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._(
+          'finalize');
+  static const init =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle._(
+          'init');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHandle &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(this.value);
+  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType.fromJson(String value) => ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          value);
 
-  static const cookie = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('cookie');
-  static const domainEnvironment = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('domain_environment');
-  static const environment = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('environment');
-  static const header = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('header');
-  static const headers = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('headers');
-  static const host = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('host');
-  static const initialRequestPath = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('initial_request_path');
-  static const ipAddress = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('ip_address');
-  static const method = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('method');
-  static const path = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('path');
-  static const protocol = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('protocol');
-  static const query = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('query');
-  static const region = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('region');
-  static const scheme = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('scheme');
-  static const trustedSource = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._('trusted_source');
+  static const cookie =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'cookie');
+  static const domainEnvironment =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'domain_environment');
+  static const environment =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'environment');
+  static const header =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'header');
+  static const headers =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'headers');
+  static const host =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'host');
+  static const initialRequestPath =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'initial_request_path');
+  static const ipAddress =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'ip_address');
+  static const method =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'method');
+  static const path =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'path');
+  static const protocol =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'protocol');
+  static const query =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'query');
+  static const region =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'region');
+  static const scheme =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'scheme');
+  static const trustedSource =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType._(
+          'trusted_source');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemHasItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._(this.value);
+  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType.fromJson(String value) => ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._(value);
 
-  static const cookie = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('cookie');
-  static const domainEnvironment = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('domain_environment');
-  static const environment = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('environment');
-  static const header = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('header');
-  static const headers = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('headers');
-  static const host = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('host');
-  static const initialRequestPath = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('initial_request_path');
-  static const ipAddress = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('ip_address');
-  static const method = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('method');
-  static const path = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('path');
-  static const protocol = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('protocol');
-  static const query = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('query');
-  static const region = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('region');
-  static const scheme = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('scheme');
-  static const trustedSource = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType._('trusted_source');
+  static const cookie =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('cookie');
+  static const domainEnvironment =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('domain_environment');
+  static const environment =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('environment');
+  static const header =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('header');
+  static const headers =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('headers');
+  static const host =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('host');
+  static const initialRequestPath =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('initial_request_path');
+  static const ipAddress =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('ip_address');
+  static const method =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('method');
+  static const path =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('path');
+  static const protocol =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('protocol');
+  static const query =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('query');
+  static const region =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('region');
+  static const scheme =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('scheme');
+  static const trustedSource =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType
+          ._('trusted_source');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMissingItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._(this.value);
+  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction.fromJson(String value) => ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction
+          ._(value);
 
-  static const bypass = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._('bypass');
-  static const challenge = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._('challenge');
-  static const deny = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._('deny');
-  static const log = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._('log');
-  static const rateLimit = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._('rate_limit');
-  static const redirect = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction._('redirect');
+  static const bypass =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction
+          ._('bypass');
+  static const challenge =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction
+          ._('challenge');
+  static const deny =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction
+          ._('deny');
+  static const log =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction
+          ._('log');
+  static const rateLimit =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction
+          ._('rate_limit');
+  static const redirect =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction
+          ._('redirect');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo._(this.value);
+  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo.fromJson(String value) => ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo
+          ._(value);
 
-  static const fixedWindow = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo._('fixed_window');
-  static const tokenBucket = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo._('token_bucket');
+  static const fixedWindow =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo
+          ._('fixed_window');
+  static const tokenBucket =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo
+          ._('token_bucket');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateErlAlgo &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1 {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1._(this.value);
+  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1.fromJson(String value) => ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1
+          ._(value);
 
-  static const unknown = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1._('*');
+  static const unknown =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1
+          ._('*');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemMitigateLogHeadersVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType {
-
   final String value;
 
-  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType._(this.value);
+  const ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType._(
+      this.value);
 
-  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType.fromJson(String value) => ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType._(value);
+  factory ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType.fromJson(
+          String value) =>
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType
+          ._(value);
 
-  static const responseStatus = ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType._('response_status');
+  static const responseStatus =
+      ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType
+          ._('response_status');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant0ItemSecurityFirewallRoutesItemResponseHasItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

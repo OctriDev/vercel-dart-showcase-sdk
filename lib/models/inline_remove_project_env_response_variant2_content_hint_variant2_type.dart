@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum RemoveProjectEnvResponseVariant2ContentHintVariant2Type {
   redisRestApiToken;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant2Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant2Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-token': return RemoveProjectEnvResponseVariant2ContentHintVariant2Type.redisRestApiToken;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant2Type: $value');
+      case 'redis-rest-api-token':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant2Type
+            .redisRestApiToken;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant2Type.redisRestApiToken: return 'redis-rest-api-token';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant2Type
+            .redisRestApiToken:
+        return 'redis-rest-api-token';
     }
   }
 
@@ -27,16 +34,23 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant2Type {
 enum RemoveProjectEnvResponseVariant2ContentHintVariant3Type {
   redisRestApiReadOnlyToken;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant3Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant3Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-read-only-token': return RemoveProjectEnvResponseVariant2ContentHintVariant3Type.redisRestApiReadOnlyToken;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant3Type: $value');
+      case 'redis-rest-api-read-only-token':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant3Type
+            .redisRestApiReadOnlyToken;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant3Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant3Type.redisRestApiReadOnlyToken: return 'redis-rest-api-read-only-token';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant3Type
+            .redisRestApiReadOnlyToken:
+        return 'redis-rest-api-read-only-token';
     }
   }
 
@@ -47,16 +61,23 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant3Type {
 enum RemoveProjectEnvResponseVariant2ContentHintVariant4Type {
   blobReadWriteToken;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant4Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant4Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-read-write-token': return RemoveProjectEnvResponseVariant2ContentHintVariant4Type.blobReadWriteToken;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant4Type: $value');
+      case 'blob-read-write-token':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant4Type
+            .blobReadWriteToken;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant4Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant4Type.blobReadWriteToken: return 'blob-read-write-token';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant4Type
+            .blobReadWriteToken:
+        return 'blob-read-write-token';
     }
   }
 
@@ -67,16 +88,22 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant4Type {
 enum RemoveProjectEnvResponseVariant2ContentHintVariant5Type {
   blobStoreId;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant5Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant5Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-store-id': return RemoveProjectEnvResponseVariant2ContentHintVariant5Type.blobStoreId;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant5Type: $value');
+      case 'blob-store-id':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant5Type
+            .blobStoreId;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant5Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant5Type.blobStoreId: return 'blob-store-id';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant5Type.blobStoreId:
+        return 'blob-store-id';
     }
   }
 
@@ -87,16 +114,23 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant5Type {
 enum RemoveProjectEnvResponseVariant2ContentHintVariant6Type {
   blobWebhookPublicKey;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant6Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant6Type fromJson(
+      String value) {
     switch (value) {
-      case 'blob-webhook-public-key': return RemoveProjectEnvResponseVariant2ContentHintVariant6Type.blobWebhookPublicKey;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant6Type: $value');
+      case 'blob-webhook-public-key':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant6Type
+            .blobWebhookPublicKey;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant6Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant6Type.blobWebhookPublicKey: return 'blob-webhook-public-key';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant6Type
+            .blobWebhookPublicKey:
+        return 'blob-webhook-public-key';
     }
   }
 
@@ -107,16 +141,22 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant6Type {
 enum RemoveProjectEnvResponseVariant2ContentHintVariant7Type {
   postgresUrl;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant7Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant7Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url': return RemoveProjectEnvResponseVariant2ContentHintVariant7Type.postgresUrl;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant7Type: $value');
+      case 'postgres-url':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant7Type
+            .postgresUrl;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant7Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant7Type.postgresUrl: return 'postgres-url';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant7Type.postgresUrl:
+        return 'postgres-url';
     }
   }
 
@@ -127,16 +167,23 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant7Type {
 enum RemoveProjectEnvResponseVariant2ContentHintVariant8Type {
   postgresUrlNonPooling;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant8Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant8Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url-non-pooling': return RemoveProjectEnvResponseVariant2ContentHintVariant8Type.postgresUrlNonPooling;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant8Type: $value');
+      case 'postgres-url-non-pooling':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant8Type
+            .postgresUrlNonPooling;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant8Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant8Type.postgresUrlNonPooling: return 'postgres-url-non-pooling';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant8Type
+            .postgresUrlNonPooling:
+        return 'postgres-url-non-pooling';
     }
   }
 
@@ -147,16 +194,23 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant8Type {
 enum RemoveProjectEnvResponseVariant2ContentHintVariant9Type {
   postgresPrismaUrl;
 
-  static RemoveProjectEnvResponseVariant2ContentHintVariant9Type fromJson(String value) {
+  static RemoveProjectEnvResponseVariant2ContentHintVariant9Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-prisma-url': return RemoveProjectEnvResponseVariant2ContentHintVariant9Type.postgresPrismaUrl;
-      default: throw ArgumentError('Unknown RemoveProjectEnvResponseVariant2ContentHintVariant9Type: $value');
+      case 'postgres-prisma-url':
+        return RemoveProjectEnvResponseVariant2ContentHintVariant9Type
+            .postgresPrismaUrl;
+      default:
+        throw ArgumentError(
+            'Unknown RemoveProjectEnvResponseVariant2ContentHintVariant9Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case RemoveProjectEnvResponseVariant2ContentHintVariant9Type.postgresPrismaUrl: return 'postgres-prisma-url';
+      case RemoveProjectEnvResponseVariant2ContentHintVariant9Type
+            .postgresPrismaUrl:
+        return 'postgres-prisma-url';
     }
   }
 
@@ -165,97 +219,123 @@ enum RemoveProjectEnvResponseVariant2ContentHintVariant9Type {
 }
 
 final class RemoveProjectEnvResponseVariant2Decrypted {
-
   final bool value;
 
   const RemoveProjectEnvResponseVariant2Decrypted._(this.value);
 
-  factory RemoveProjectEnvResponseVariant2Decrypted.fromJson(bool value) => RemoveProjectEnvResponseVariant2Decrypted._(value);
+  factory RemoveProjectEnvResponseVariant2Decrypted.fromJson(bool value) =>
+      RemoveProjectEnvResponseVariant2Decrypted._(value);
 
   static const false_ = RemoveProjectEnvResponseVariant2Decrypted._(false);
   static const true_ = RemoveProjectEnvResponseVariant2Decrypted._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RemoveProjectEnvResponseVariant2Decrypted && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RemoveProjectEnvResponseVariant2Decrypted &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class RemoveProjectEnvResponseVariant2InternalContentHintType {
-
   final String value;
 
   const RemoveProjectEnvResponseVariant2InternalContentHintType._(this.value);
 
-  factory RemoveProjectEnvResponseVariant2InternalContentHintType.fromJson(String value) => RemoveProjectEnvResponseVariant2InternalContentHintType._(value);
+  factory RemoveProjectEnvResponseVariant2InternalContentHintType.fromJson(
+          String value) =>
+      RemoveProjectEnvResponseVariant2InternalContentHintType._(value);
 
-  static const flagsSecret = RemoveProjectEnvResponseVariant2InternalContentHintType._('flags-secret');
+  static const flagsSecret =
+      RemoveProjectEnvResponseVariant2InternalContentHintType._('flags-secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RemoveProjectEnvResponseVariant2InternalContentHintType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RemoveProjectEnvResponseVariant2InternalContentHintType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class RemoveProjectEnvResponseVariant2TargetVariant0Item {
-
   final String value;
 
   const RemoveProjectEnvResponseVariant2TargetVariant0Item._(this.value);
 
-  factory RemoveProjectEnvResponseVariant2TargetVariant0Item.fromJson(String value) => RemoveProjectEnvResponseVariant2TargetVariant0Item._(value);
+  factory RemoveProjectEnvResponseVariant2TargetVariant0Item.fromJson(
+          String value) =>
+      RemoveProjectEnvResponseVariant2TargetVariant0Item._(value);
 
-  static const development = RemoveProjectEnvResponseVariant2TargetVariant0Item._('development');
-  static const preview = RemoveProjectEnvResponseVariant2TargetVariant0Item._('preview');
-  static const production = RemoveProjectEnvResponseVariant2TargetVariant0Item._('production');
+  static const development =
+      RemoveProjectEnvResponseVariant2TargetVariant0Item._('development');
+  static const preview =
+      RemoveProjectEnvResponseVariant2TargetVariant0Item._('preview');
+  static const production =
+      RemoveProjectEnvResponseVariant2TargetVariant0Item._('production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RemoveProjectEnvResponseVariant2TargetVariant0Item && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RemoveProjectEnvResponseVariant2TargetVariant0Item &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class RemoveProjectEnvResponseVariant2TargetVariant1 {
-
   final String value;
 
   const RemoveProjectEnvResponseVariant2TargetVariant1._(this.value);
 
-  factory RemoveProjectEnvResponseVariant2TargetVariant1.fromJson(String value) => RemoveProjectEnvResponseVariant2TargetVariant1._(value);
+  factory RemoveProjectEnvResponseVariant2TargetVariant1.fromJson(
+          String value) =>
+      RemoveProjectEnvResponseVariant2TargetVariant1._(value);
 
-  static const production = RemoveProjectEnvResponseVariant2TargetVariant1._('production');
-  static const preview = RemoveProjectEnvResponseVariant2TargetVariant1._('preview');
-  static const development = RemoveProjectEnvResponseVariant2TargetVariant1._('development');
+  static const production =
+      RemoveProjectEnvResponseVariant2TargetVariant1._('production');
+  static const preview =
+      RemoveProjectEnvResponseVariant2TargetVariant1._('preview');
+  static const development =
+      RemoveProjectEnvResponseVariant2TargetVariant1._('development');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RemoveProjectEnvResponseVariant2TargetVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RemoveProjectEnvResponseVariant2TargetVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class RemoveProjectEnvResponseVariant2Type {
-
   final String value;
 
   const RemoveProjectEnvResponseVariant2Type._(this.value);
 
-  factory RemoveProjectEnvResponseVariant2Type.fromJson(String value) => RemoveProjectEnvResponseVariant2Type._(value);
+  factory RemoveProjectEnvResponseVariant2Type.fromJson(String value) =>
+      RemoveProjectEnvResponseVariant2Type._(value);
 
   static const encrypted = RemoveProjectEnvResponseVariant2Type._('encrypted');
   static const plain = RemoveProjectEnvResponseVariant2Type._('plain');
@@ -265,10 +345,13 @@ final class RemoveProjectEnvResponseVariant2Type {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RemoveProjectEnvResponseVariant2Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RemoveProjectEnvResponseVariant2Type && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

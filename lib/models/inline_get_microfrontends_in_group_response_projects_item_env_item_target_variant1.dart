@@ -5,291 +5,461 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1 {
-
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1.fromJson(
+          String value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._(
+          value);
 
-  static const development = GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._('development');
-  static const preview = GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._('preview');
-  static const production = GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._('production');
+  static const development =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._(
+          'development');
+  static const preview =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._(
+          'preview');
+  static const production =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1._(
+          'production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemEnvItemTargetVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemType {
-
   final String value;
 
   const GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemType.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemType.fromJson(
+          String value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._(value);
 
-  static const encrypted = GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('encrypted');
-  static const plain = GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('plain');
-  static const secret = GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('secret');
-  static const sensitive = GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('sensitive');
-  static const system = GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('system');
+  static const encrypted =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('encrypted');
+  static const plain =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('plain');
+  static const secret =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('secret');
+  static const sensitive =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('sensitive');
+  static const system =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemType._('system');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemEnvItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetMicrofrontendsInGroupResponseProjectsItemEnvItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
 final class GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility {
-
   final String value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility.fromJson(
+          String value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._(value);
 
-  static const config = GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._('config');
-  static const secret = GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._('secret');
+  static const config =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._('config');
+  static const secret =
+      GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility._('secret');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetMicrofrontendsInGroupResponseProjectsItemEnvItemVisibility &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemFeaturesWebAnalytics &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemFramework {
-
   final String value;
 
   const GetMicrofrontendsInGroupResponseProjectsItemFramework._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemFramework.fromJson(String value) => GetMicrofrontendsInGroupResponseProjectsItemFramework._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemFramework.fromJson(
+          String value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._(value);
 
-  static const actixWeb = GetMicrofrontendsInGroupResponseProjectsItemFramework._('actix-web');
-  static const angular = GetMicrofrontendsInGroupResponseProjectsItemFramework._('angular');
-  static const ash = GetMicrofrontendsInGroupResponseProjectsItemFramework._('ash');
-  static const astro = GetMicrofrontendsInGroupResponseProjectsItemFramework._('astro');
-  static const axum = GetMicrofrontendsInGroupResponseProjectsItemFramework._('axum');
-  static const blitzjs = GetMicrofrontendsInGroupResponseProjectsItemFramework._('blitzjs');
-  static const brunch = GetMicrofrontendsInGroupResponseProjectsItemFramework._('brunch');
-  static const bun = GetMicrofrontendsInGroupResponseProjectsItemFramework._('bun');
-  static const container = GetMicrofrontendsInGroupResponseProjectsItemFramework._('container');
-  static const createReactApp = GetMicrofrontendsInGroupResponseProjectsItemFramework._('create-react-app');
-  static const django = GetMicrofrontendsInGroupResponseProjectsItemFramework._('django');
-  static const docusaurus = GetMicrofrontendsInGroupResponseProjectsItemFramework._('docusaurus');
-  static const docusaurus2 = GetMicrofrontendsInGroupResponseProjectsItemFramework._('docusaurus-2');
-  static const dojo = GetMicrofrontendsInGroupResponseProjectsItemFramework._('dojo');
-  static const eleventy = GetMicrofrontendsInGroupResponseProjectsItemFramework._('eleventy');
-  static const elysia = GetMicrofrontendsInGroupResponseProjectsItemFramework._('elysia');
-  static const ember = GetMicrofrontendsInGroupResponseProjectsItemFramework._('ember');
-  static const eve = GetMicrofrontendsInGroupResponseProjectsItemFramework._('eve');
-  static const express = GetMicrofrontendsInGroupResponseProjectsItemFramework._('express');
-  static const factoryEve = GetMicrofrontendsInGroupResponseProjectsItemFramework._('factory-eve');
-  static const fastapi = GetMicrofrontendsInGroupResponseProjectsItemFramework._('fastapi');
-  static const fasthtml = GetMicrofrontendsInGroupResponseProjectsItemFramework._('fasthtml');
-  static const fastify = GetMicrofrontendsInGroupResponseProjectsItemFramework._('fastify');
-  static const flask = GetMicrofrontendsInGroupResponseProjectsItemFramework._('flask');
-  static const gatsby = GetMicrofrontendsInGroupResponseProjectsItemFramework._('gatsby');
-  static const go = GetMicrofrontendsInGroupResponseProjectsItemFramework._('go');
-  static const gridsome = GetMicrofrontendsInGroupResponseProjectsItemFramework._('gridsome');
-  static const h3 = GetMicrofrontendsInGroupResponseProjectsItemFramework._('h3');
-  static const hexo = GetMicrofrontendsInGroupResponseProjectsItemFramework._('hexo');
-  static const hono = GetMicrofrontendsInGroupResponseProjectsItemFramework._('hono');
-  static const hugo = GetMicrofrontendsInGroupResponseProjectsItemFramework._('hugo');
-  static const hydrogen = GetMicrofrontendsInGroupResponseProjectsItemFramework._('hydrogen');
-  static const ionicAngular = GetMicrofrontendsInGroupResponseProjectsItemFramework._('ionic-angular');
-  static const ionicReact = GetMicrofrontendsInGroupResponseProjectsItemFramework._('ionic-react');
-  static const jekyll = GetMicrofrontendsInGroupResponseProjectsItemFramework._('jekyll');
-  static const koa = GetMicrofrontendsInGroupResponseProjectsItemFramework._('koa');
-  static const mastra = GetMicrofrontendsInGroupResponseProjectsItemFramework._('mastra');
-  static const middleman = GetMicrofrontendsInGroupResponseProjectsItemFramework._('middleman');
-  static const nestjs = GetMicrofrontendsInGroupResponseProjectsItemFramework._('nestjs');
-  static const nextjs = GetMicrofrontendsInGroupResponseProjectsItemFramework._('nextjs');
-  static const nitro = GetMicrofrontendsInGroupResponseProjectsItemFramework._('nitro');
-  static const node = GetMicrofrontendsInGroupResponseProjectsItemFramework._('node');
-  static const nuxtjs = GetMicrofrontendsInGroupResponseProjectsItemFramework._('nuxtjs');
-  static const parcel = GetMicrofrontendsInGroupResponseProjectsItemFramework._('parcel');
-  static const polymer = GetMicrofrontendsInGroupResponseProjectsItemFramework._('polymer');
-  static const preact = GetMicrofrontendsInGroupResponseProjectsItemFramework._('preact');
-  static const python = GetMicrofrontendsInGroupResponseProjectsItemFramework._('python');
-  static const reactRouter = GetMicrofrontendsInGroupResponseProjectsItemFramework._('react-router');
-  static const redwoodjs = GetMicrofrontendsInGroupResponseProjectsItemFramework._('redwoodjs');
-  static const remix = GetMicrofrontendsInGroupResponseProjectsItemFramework._('remix');
-  static const ruby = GetMicrofrontendsInGroupResponseProjectsItemFramework._('ruby');
-  static const rust = GetMicrofrontendsInGroupResponseProjectsItemFramework._('rust');
-  static const saber = GetMicrofrontendsInGroupResponseProjectsItemFramework._('saber');
-  static const sanity = GetMicrofrontendsInGroupResponseProjectsItemFramework._('sanity');
-  static const sanityV2 = GetMicrofrontendsInGroupResponseProjectsItemFramework._('sanity-v2');
-  static const sapper = GetMicrofrontendsInGroupResponseProjectsItemFramework._('sapper');
-  static const scully = GetMicrofrontendsInGroupResponseProjectsItemFramework._('scully');
-  static const services = GetMicrofrontendsInGroupResponseProjectsItemFramework._('services');
-  static const solidstart = GetMicrofrontendsInGroupResponseProjectsItemFramework._('solidstart');
-  static const solidstart1 = GetMicrofrontendsInGroupResponseProjectsItemFramework._('solidstart-1');
-  static const stencil = GetMicrofrontendsInGroupResponseProjectsItemFramework._('stencil');
-  static const storybook = GetMicrofrontendsInGroupResponseProjectsItemFramework._('storybook');
-  static const svelte = GetMicrofrontendsInGroupResponseProjectsItemFramework._('svelte');
-  static const sveltekit = GetMicrofrontendsInGroupResponseProjectsItemFramework._('sveltekit');
-  static const sveltekit1 = GetMicrofrontendsInGroupResponseProjectsItemFramework._('sveltekit-1');
-  static const tanstackStart = GetMicrofrontendsInGroupResponseProjectsItemFramework._('tanstack-start');
-  static const tanstackStartLovable = GetMicrofrontendsInGroupResponseProjectsItemFramework._('tanstack-start-lovable');
-  static const umijs = GetMicrofrontendsInGroupResponseProjectsItemFramework._('umijs');
-  static const vite = GetMicrofrontendsInGroupResponseProjectsItemFramework._('vite');
-  static const vitepress = GetMicrofrontendsInGroupResponseProjectsItemFramework._('vitepress');
-  static const vue = GetMicrofrontendsInGroupResponseProjectsItemFramework._('vue');
-  static const vuepress = GetMicrofrontendsInGroupResponseProjectsItemFramework._('vuepress');
-  static const xmcp = GetMicrofrontendsInGroupResponseProjectsItemFramework._('xmcp');
-  static const zola = GetMicrofrontendsInGroupResponseProjectsItemFramework._('zola');
+  static const actixWeb =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('actix-web');
+  static const angular =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('angular');
+  static const ash =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('ash');
+  static const astro =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('astro');
+  static const axum =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('axum');
+  static const blitzjs =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('blitzjs');
+  static const brunch =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('brunch');
+  static const bun =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('bun');
+  static const container =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('container');
+  static const createReactApp =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._(
+          'create-react-app');
+  static const django =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('django');
+  static const docusaurus =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('docusaurus');
+  static const docusaurus2 =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('docusaurus-2');
+  static const dojo =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('dojo');
+  static const eleventy =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('eleventy');
+  static const elysia =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('elysia');
+  static const ember =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('ember');
+  static const eve =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('eve');
+  static const express =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('express');
+  static const factoryEve =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('factory-eve');
+  static const fastapi =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('fastapi');
+  static const fasthtml =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('fasthtml');
+  static const fastify =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('fastify');
+  static const flask =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('flask');
+  static const gatsby =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('gatsby');
+  static const go =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('go');
+  static const gridsome =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('gridsome');
+  static const h3 =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('h3');
+  static const hexo =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('hexo');
+  static const hono =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('hono');
+  static const hugo =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('hugo');
+  static const hydrogen =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('hydrogen');
+  static const ionicAngular =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('ionic-angular');
+  static const ionicReact =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('ionic-react');
+  static const jekyll =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('jekyll');
+  static const koa =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('koa');
+  static const mastra =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('mastra');
+  static const middleman =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('middleman');
+  static const nestjs =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('nestjs');
+  static const nextjs =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('nextjs');
+  static const nitro =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('nitro');
+  static const node =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('node');
+  static const nuxtjs =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('nuxtjs');
+  static const parcel =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('parcel');
+  static const polymer =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('polymer');
+  static const preact =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('preact');
+  static const python =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('python');
+  static const reactRouter =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('react-router');
+  static const redwoodjs =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('redwoodjs');
+  static const remix =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('remix');
+  static const ruby =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('ruby');
+  static const rust =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('rust');
+  static const saber =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('saber');
+  static const sanity =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('sanity');
+  static const sanityV2 =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('sanity-v2');
+  static const sapper =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('sapper');
+  static const scully =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('scully');
+  static const services =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('services');
+  static const solidstart =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('solidstart');
+  static const solidstart1 =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('solidstart-1');
+  static const stencil =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('stencil');
+  static const storybook =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('storybook');
+  static const svelte =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('svelte');
+  static const sveltekit =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('sveltekit');
+  static const sveltekit1 =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('sveltekit-1');
+  static const tanstackStart =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('tanstack-start');
+  static const tanstackStartLovable =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._(
+          'tanstack-start-lovable');
+  static const umijs =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('umijs');
+  static const vite =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('vite');
+  static const vitepress =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('vitepress');
+  static const vue =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('vue');
+  static const vuepress =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('vuepress');
+  static const xmcp =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('xmcp');
+  static const zola =
+      GetMicrofrontendsInGroupResponseProjectsItemFramework._('zola');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetMicrofrontendsInGroupResponseProjectsItemFramework &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should comment on commits
 final class GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnCommit &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the Vercel bot should comment on PRs
 final class GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(
+          value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(
+          false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemGitCommentsOnPullRequest &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetMicrofrontendsInGroupResponseProjectsItemGitForkProtection &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetMicrofrontendsInGroupResponseProjectsItemGitLFS {
-
   final bool value;
 
   const GetMicrofrontendsInGroupResponseProjectsItemGitLFS._(this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemGitLFS.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemGitLFS._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemGitLFS.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemGitLFS._(value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemGitLFS._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemGitLFS._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitLFS._(false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitLFS._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemGitLFS && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetMicrofrontendsInGroupResponseProjectsItemGitLFS &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether consolidated commit status is enabled.
 final class GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled {
-
   final bool value;
 
-  const GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled._(this.value);
+  const GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled._(
+      this.value);
 
-  factory GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(bool value) => GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled._(value);
+  factory GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled.fromJson(
+          bool value) =>
+      GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(value);
 
-  static const false_ = GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled._(false);
-  static const true_ = GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled._(true);
+  static const false_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(false);
+  static const true_ =
+      GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetMicrofrontendsInGroupResponseProjectsItemGitProviderOptionsConsolidatedGitCommitStatusEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

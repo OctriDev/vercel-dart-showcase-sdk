@@ -10,24 +10,40 @@ class DeleteRedirectsResponseVariant2 {
   final String? alias;
   final DeleteRedirectsResponseVariant2Version version;
 
-  const DeleteRedirectsResponseVariant2({required this.alias, required this.version});
+  const DeleteRedirectsResponseVariant2(
+      {required this.alias, required this.version});
 
-  DeleteRedirectsResponseVariant2 Function({String? alias, DeleteRedirectsResponseVariant2Version version}) get copyWith => _copyWith;
+  DeleteRedirectsResponseVariant2 Function(
+          {String? alias, DeleteRedirectsResponseVariant2Version version})
+      get copyWith => _copyWith;
 
-  DeleteRedirectsResponseVariant2 _copyWith({Object? alias = sdkOmittedValue, Object? version = sdkOmittedValue}) => DeleteRedirectsResponseVariant2(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String?,
-    version: identical(version, sdkOmittedValue) ? this.version : version as DeleteRedirectsResponseVariant2Version,
-  );
+  DeleteRedirectsResponseVariant2 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? version = sdkOmittedValue}) =>
+      DeleteRedirectsResponseVariant2(
+        alias:
+            identical(alias, sdkOmittedValue) ? this.alias : alias as String?,
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as DeleteRedirectsResponseVariant2Version,
+      );
 
-  factory DeleteRedirectsResponseVariant2.fromJson(Map<String, dynamic> json) => DeleteRedirectsResponseVariant2(
-    alias: json.containsKey('alias') ? json['alias'] as String? : throw ArgumentError.value(null, 'alias', 'Required property is missing'),
-    version: (json['version'] != null ? DeleteRedirectsResponseVariant2Version.fromJson(json['version'] as Map<String, dynamic>) : null)!,
-  );
+  factory DeleteRedirectsResponseVariant2.fromJson(Map<String, dynamic> json) =>
+      DeleteRedirectsResponseVariant2(
+        alias: json.containsKey('alias')
+            ? json['alias'] as String?
+            : throw ArgumentError.value(
+                null, 'alias', 'Required property is missing'),
+        version: (json['version'] != null
+            ? DeleteRedirectsResponseVariant2Version.fromJson(
+                json['version'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'alias': alias,
-    'version': version.toJson(),
-  };
+        'alias': alias,
+        'version': version.toJson(),
+      };
 }
 
 sealed class DeleteRedirectsResponse {
@@ -36,32 +52,65 @@ sealed class DeleteRedirectsResponse {
   const DeleteRedirectsResponse();
   factory DeleteRedirectsResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = DeleteRedirectsResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteRedirectsResponseDeleteRedirectsResponseVariant0(value); } } catch (_) {}
-      try { final value = DeleteRedirectsResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteRedirectsResponseDeleteRedirectsResponseVariant1(value); } } catch (_) {}
-      try { final value = DeleteRedirectsResponseVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return DeleteRedirectsResponseDeleteRedirectsResponseVariant2(value); } } catch (_) {}
+      try {
+        final value = DeleteRedirectsResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return DeleteRedirectsResponseDeleteRedirectsResponseVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = DeleteRedirectsResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return DeleteRedirectsResponseDeleteRedirectsResponseVariant1(value);
+        }
+      } catch (_) {}
+      try {
+        final value = DeleteRedirectsResponseVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return DeleteRedirectsResponseDeleteRedirectsResponseVariant2(value);
+        }
+      } catch (_) {}
     }
-    try { return DeleteRedirectsResponseDeleteRedirectsResponseVariant0(DeleteRedirectsResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return DeleteRedirectsResponseDeleteRedirectsResponseVariant1(DeleteRedirectsResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return DeleteRedirectsResponseDeleteRedirectsResponseVariant2(DeleteRedirectsResponseVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return DeleteRedirectsResponseDeleteRedirectsResponseVariant0(
+          DeleteRedirectsResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return DeleteRedirectsResponseDeleteRedirectsResponseVariant1(
+          DeleteRedirectsResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return DeleteRedirectsResponseDeleteRedirectsResponseVariant2(
+          DeleteRedirectsResponseVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for DeleteRedirectsResponse");
   }
   Object? toJson();
 }
 
-final class DeleteRedirectsResponseDeleteRedirectsResponseVariant0 extends DeleteRedirectsResponse {
+final class DeleteRedirectsResponseDeleteRedirectsResponseVariant0
+    extends DeleteRedirectsResponse {
   final DeleteRedirectsResponseVariant0 value;
   const DeleteRedirectsResponseDeleteRedirectsResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteRedirectsResponseDeleteRedirectsResponseVariant1 extends DeleteRedirectsResponse {
+final class DeleteRedirectsResponseDeleteRedirectsResponseVariant1
+    extends DeleteRedirectsResponse {
   final DeleteRedirectsResponseVariant1 value;
   const DeleteRedirectsResponseDeleteRedirectsResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class DeleteRedirectsResponseDeleteRedirectsResponseVariant2 extends DeleteRedirectsResponse {
+final class DeleteRedirectsResponseDeleteRedirectsResponseVariant2
+    extends DeleteRedirectsResponse {
   final DeleteRedirectsResponseVariant2 value;
   const DeleteRedirectsResponseDeleteRedirectsResponseVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type {
   custom;
 
-  static UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'custom': return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
+      case 'custom':
+        return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+            .custom;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type.custom: return 'custom';
+      case UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemVariant1Type
+            .custom:
+        return 'custom';
     }
   }
 
@@ -25,122 +32,182 @@ enum UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemEnvironmentsItemV
 }
 
 final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(this.value);
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(String value) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._(value);
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._(value);
 
-  static const bitbucket = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('bitbucket');
-  static const github = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider._('github');
+  static const bitbucket =
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('bitbucket');
+  static const github =
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          ._('github');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(this.value);
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(String value) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._(value);
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          ._(value);
 
-  static const gitlab = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider._('gitlab');
+  static const gitlab =
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          ._('gitlab');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 {
-
   final bool value;
 
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(this.value);
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(bool value) => UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(value);
+  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+          ._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(false);
-  static const true_ = UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+          ._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2CurrentValueVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 {
-
   final bool value;
 
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(this.value);
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(bool value) => UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(value);
+  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(false);
-  static const true_ = UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseDismissedToastsItemValueVariant2PreviousValueVariant2 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3 {
-
   final bool value;
 
-  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(this.value);
+  const UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3.fromJson(bool value) => UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(value);
+  factory UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(false);
-  static const true_ = UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseDismissedToastsItemValueVariant3 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type {
   redisUrl;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-url': return UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type.redisUrl;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type: $value');
+      case 'redis-url':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type
+            .redisUrl;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type.redisUrl: return 'redis-url';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type.redisUrl:
+        return 'redis-url';
     }
   }
 
@@ -151,16 +218,23 @@ enum UpdateMicrofrontendsResponseEnvItemContentHintVariant0Type {
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type {
   redisRestApiUrl;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type fromJson(
+      String value) {
     switch (value) {
-      case 'redis-rest-api-url': return UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type.redisRestApiUrl;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type: $value');
+      case 'redis-rest-api-url':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type
+            .redisRestApiUrl;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type.redisRestApiUrl: return 'redis-rest-api-url';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type
+            .redisRestApiUrl:
+        return 'redis-rest-api-url';
     }
   }
 
@@ -171,16 +245,23 @@ enum UpdateMicrofrontendsResponseEnvItemContentHintVariant1Type {
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type {
   postgresUser;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-user': return UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type.postgresUser;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type: $value');
+      case 'postgres-user':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type
+            .postgresUser;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type.postgresUser: return 'postgres-user';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type
+            .postgresUser:
+        return 'postgres-user';
     }
   }
 
@@ -191,16 +272,23 @@ enum UpdateMicrofrontendsResponseEnvItemContentHintVariant10Type {
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type {
   postgresHost;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-host': return UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type.postgresHost;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type: $value');
+      case 'postgres-host':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type
+            .postgresHost;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type.postgresHost: return 'postgres-host';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type
+            .postgresHost:
+        return 'postgres-host';
     }
   }
 
@@ -211,16 +299,23 @@ enum UpdateMicrofrontendsResponseEnvItemContentHintVariant11Type {
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type {
   postgresPassword;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-password': return UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type.postgresPassword;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type: $value');
+      case 'postgres-password':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type
+            .postgresPassword;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type.postgresPassword: return 'postgres-password';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type
+            .postgresPassword:
+        return 'postgres-password';
     }
   }
 
@@ -231,16 +326,23 @@ enum UpdateMicrofrontendsResponseEnvItemContentHintVariant12Type {
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type {
   postgresDatabase;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-database': return UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type.postgresDatabase;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type: $value');
+      case 'postgres-database':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type
+            .postgresDatabase;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type.postgresDatabase: return 'postgres-database';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type
+            .postgresDatabase:
+        return 'postgres-database';
     }
   }
 
@@ -251,16 +353,23 @@ enum UpdateMicrofrontendsResponseEnvItemContentHintVariant13Type {
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type {
   postgresUrlNoSsl;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type fromJson(
+      String value) {
     switch (value) {
-      case 'postgres-url-no-ssl': return UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type: $value');
+      case 'postgres-url-no-ssl':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type
+            .postgresUrlNoSsl;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type.postgresUrlNoSsl: return 'postgres-url-no-ssl';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type
+            .postgresUrlNoSsl:
+        return 'postgres-url-no-ssl';
     }
   }
 
@@ -271,16 +380,23 @@ enum UpdateMicrofrontendsResponseEnvItemContentHintVariant14Type {
 enum UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type {
   integrationStoreSecret;
 
-  static UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type fromJson(String value) {
+  static UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type fromJson(
+      String value) {
     switch (value) {
-      case 'integration-store-secret': return UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type.integrationStoreSecret;
-      default: throw ArgumentError('Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type: $value');
+      case 'integration-store-secret':
+        return UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret;
+      default:
+        throw ArgumentError(
+            'Unknown UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type.integrationStoreSecret: return 'integration-store-secret';
+      case UpdateMicrofrontendsResponseEnvItemContentHintVariant15Type
+            .integrationStoreSecret:
+        return 'integration-store-secret';
     }
   }
 

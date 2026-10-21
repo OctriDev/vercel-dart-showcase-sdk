@@ -11,30 +11,62 @@ class GetRedirectsResponseVariant1 {
   final List<GetRedirectsResponseVariant1RedirectsItem> redirects;
   final SdkOptional<GetRedirectsResponseVariant1Version> version;
 
-  const GetRedirectsResponseVariant1({required this.pagination, required this.redirects, this.version = const SdkOmitted()});
+  const GetRedirectsResponseVariant1(
+      {required this.pagination,
+      required this.redirects,
+      this.version = const SdkOmitted()});
 
-  GetRedirectsResponseVariant1 Function({GetRedirectsResponseVariant1Pagination pagination, List<GetRedirectsResponseVariant1RedirectsItem> redirects, SdkOptional<GetRedirectsResponseVariant1Version> version}) get copyWith => _copyWith;
+  GetRedirectsResponseVariant1 Function(
+          {GetRedirectsResponseVariant1Pagination pagination,
+          List<GetRedirectsResponseVariant1RedirectsItem> redirects,
+          SdkOptional<GetRedirectsResponseVariant1Version> version})
+      get copyWith => _copyWith;
 
-  GetRedirectsResponseVariant1 _copyWith({Object? pagination = sdkOmittedValue, Object? redirects = sdkOmittedValue, Object? version = sdkOmittedValue}) => GetRedirectsResponseVariant1(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as GetRedirectsResponseVariant1Pagination,
-    redirects: identical(redirects, sdkOmittedValue) ? this.redirects : redirects as List<GetRedirectsResponseVariant1RedirectsItem>,
-    version: identical(version, sdkOmittedValue) ? this.version : version as SdkOptional<GetRedirectsResponseVariant1Version>,
-  );
+  GetRedirectsResponseVariant1 _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? redirects = sdkOmittedValue,
+          Object? version = sdkOmittedValue}) =>
+      GetRedirectsResponseVariant1(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as GetRedirectsResponseVariant1Pagination,
+        redirects: identical(redirects, sdkOmittedValue)
+            ? this.redirects
+            : redirects as List<GetRedirectsResponseVariant1RedirectsItem>,
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as SdkOptional<GetRedirectsResponseVariant1Version>,
+      );
 
-  factory GetRedirectsResponseVariant1.fromJson(Map<String, dynamic> json) => GetRedirectsResponseVariant1(
-    pagination: (json['pagination'] != null ? GetRedirectsResponseVariant1Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-    redirects: ((json['redirects'] as List?)?.map((e) => GetRedirectsResponseVariant1RedirectsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    version: json['version'] != null ? SdkPresent((json['version'] != null ? GetRedirectsResponseVariant1Version.fromJson(json['version'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory GetRedirectsResponseVariant1.fromJson(Map<String, dynamic> json) =>
+      GetRedirectsResponseVariant1(
+        pagination: (json['pagination'] != null
+            ? GetRedirectsResponseVariant1Pagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+        redirects: ((json['redirects'] as List?)
+            ?.map((e) => GetRedirectsResponseVariant1RedirectsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        version: json['version'] != null
+            ? SdkPresent((json['version'] != null
+                ? GetRedirectsResponseVariant1Version.fromJson(
+                    json['version'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'pagination': pagination.toJson(),
-    'redirects': redirects.map((item) => item.toJson()).toList(),
-    ...switch (version) {
-      SdkPresent<GetRedirectsResponseVariant1Version>(value: final value) => {'version': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'pagination': pagination.toJson(),
+        'redirects': redirects.map((item) => item.toJson()).toList(),
+        ...switch (version) {
+          SdkPresent<GetRedirectsResponseVariant1Version>(value: final value) =>
+            {
+              'version': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetRedirectsResponseVariant2Pagination {
@@ -44,171 +76,376 @@ class GetRedirectsResponseVariant2Pagination {
   final double page;
   final double perPage;
 
-  const GetRedirectsResponseVariant2Pagination({required this.numPages, required this.page, required this.perPage});
+  const GetRedirectsResponseVariant2Pagination(
+      {required this.numPages, required this.page, required this.perPage});
 
-  GetRedirectsResponseVariant2Pagination Function({double numPages, double page, double perPage}) get copyWith => _copyWith;
+  GetRedirectsResponseVariant2Pagination Function(
+      {double numPages, double page, double perPage}) get copyWith => _copyWith;
 
-  GetRedirectsResponseVariant2Pagination _copyWith({Object? numPages = sdkOmittedValue, Object? page = sdkOmittedValue, Object? perPage = sdkOmittedValue}) => GetRedirectsResponseVariant2Pagination(
-    numPages: identical(numPages, sdkOmittedValue) ? this.numPages : numPages as double,
-    page: identical(page, sdkOmittedValue) ? this.page : page as double,
-    perPage: identical(perPage, sdkOmittedValue) ? this.perPage : perPage as double,
-  );
+  GetRedirectsResponseVariant2Pagination _copyWith(
+          {Object? numPages = sdkOmittedValue,
+          Object? page = sdkOmittedValue,
+          Object? perPage = sdkOmittedValue}) =>
+      GetRedirectsResponseVariant2Pagination(
+        numPages: identical(numPages, sdkOmittedValue)
+            ? this.numPages
+            : numPages as double,
+        page: identical(page, sdkOmittedValue) ? this.page : page as double,
+        perPage: identical(perPage, sdkOmittedValue)
+            ? this.perPage
+            : perPage as double,
+      );
 
-  factory GetRedirectsResponseVariant2Pagination.fromJson(Map<String, dynamic> json) => GetRedirectsResponseVariant2Pagination(
-    numPages: ((json['numPages'] as num?)?.toDouble())!,
-    page: ((json['page'] as num?)?.toDouble())!,
-    perPage: ((json['per_page'] as num?)?.toDouble())!,
-  );
+  factory GetRedirectsResponseVariant2Pagination.fromJson(
+          Map<String, dynamic> json) =>
+      GetRedirectsResponseVariant2Pagination(
+        numPages: ((json['numPages'] as num?)?.toDouble())!,
+        page: ((json['page'] as num?)?.toDouble())!,
+        perPage: ((json['per_page'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'numPages': numPages,
-    'page': page,
-    'per_page': perPage,
-  };
+        'numPages': numPages,
+        'page': page,
+        'per_page': perPage,
+      };
 }
 
 class GetRedirectsResponseVariant2RedirectsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetRedirectsResponseVariant2RedirectsItemCaseSensitive> caseSensitive;
+  final SdkOptional<GetRedirectsResponseVariant2RedirectsItemCaseSensitive>
+      caseSensitive;
   final String destination;
-  final SdkOptional<GetRedirectsResponseVariant2RedirectsItemPermanent> permanent;
-  final SdkOptional<GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams> preserveQueryParams;
+  final SdkOptional<GetRedirectsResponseVariant2RedirectsItemPermanent>
+      permanent;
+  final SdkOptional<
+          GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams>
+      preserveQueryParams;
   final SdkOptional<GetRedirectsResponseVariant2RedirectsItemQuery> query;
-  final SdkOptional<GetRedirectsResponseVariant2RedirectsItemSensitive> sensitive;
+  final SdkOptional<GetRedirectsResponseVariant2RedirectsItemSensitive>
+      sensitive;
   final String source;
   final SdkOptional<double> statusCode;
 
-  const GetRedirectsResponseVariant2RedirectsItem({this.caseSensitive = const SdkOmitted(), required this.destination, this.permanent = const SdkOmitted(), this.preserveQueryParams = const SdkOmitted(), this.query = const SdkOmitted(), this.sensitive = const SdkOmitted(), required this.source, this.statusCode = const SdkOmitted()});
+  const GetRedirectsResponseVariant2RedirectsItem(
+      {this.caseSensitive = const SdkOmitted(),
+      required this.destination,
+      this.permanent = const SdkOmitted(),
+      this.preserveQueryParams = const SdkOmitted(),
+      this.query = const SdkOmitted(),
+      this.sensitive = const SdkOmitted(),
+      required this.source,
+      this.statusCode = const SdkOmitted()});
 
-  GetRedirectsResponseVariant2RedirectsItem Function({SdkOptional<GetRedirectsResponseVariant2RedirectsItemCaseSensitive> caseSensitive, String destination, SdkOptional<GetRedirectsResponseVariant2RedirectsItemPermanent> permanent, SdkOptional<GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams> preserveQueryParams, SdkOptional<GetRedirectsResponseVariant2RedirectsItemQuery> query, SdkOptional<GetRedirectsResponseVariant2RedirectsItemSensitive> sensitive, String source, SdkOptional<double> statusCode}) get copyWith => _copyWith;
+  GetRedirectsResponseVariant2RedirectsItem Function(
+      {SdkOptional<GetRedirectsResponseVariant2RedirectsItemCaseSensitive>
+          caseSensitive,
+      String destination,
+      SdkOptional<GetRedirectsResponseVariant2RedirectsItemPermanent> permanent,
+      SdkOptional<GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams>
+          preserveQueryParams,
+      SdkOptional<GetRedirectsResponseVariant2RedirectsItemQuery> query,
+      SdkOptional<GetRedirectsResponseVariant2RedirectsItemSensitive> sensitive,
+      String source,
+      SdkOptional<double> statusCode}) get copyWith => _copyWith;
 
-  GetRedirectsResponseVariant2RedirectsItem _copyWith({Object? caseSensitive = sdkOmittedValue, Object? destination = sdkOmittedValue, Object? permanent = sdkOmittedValue, Object? preserveQueryParams = sdkOmittedValue, Object? query = sdkOmittedValue, Object? sensitive = sdkOmittedValue, Object? source = sdkOmittedValue, Object? statusCode = sdkOmittedValue}) => GetRedirectsResponseVariant2RedirectsItem(
-    caseSensitive: identical(caseSensitive, sdkOmittedValue) ? this.caseSensitive : caseSensitive as SdkOptional<GetRedirectsResponseVariant2RedirectsItemCaseSensitive>,
-    destination: identical(destination, sdkOmittedValue) ? this.destination : destination as String,
-    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as SdkOptional<GetRedirectsResponseVariant2RedirectsItemPermanent>,
-    preserveQueryParams: identical(preserveQueryParams, sdkOmittedValue) ? this.preserveQueryParams : preserveQueryParams as SdkOptional<GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams>,
-    query: identical(query, sdkOmittedValue) ? this.query : query as SdkOptional<GetRedirectsResponseVariant2RedirectsItemQuery>,
-    sensitive: identical(sensitive, sdkOmittedValue) ? this.sensitive : sensitive as SdkOptional<GetRedirectsResponseVariant2RedirectsItemSensitive>,
-    source: identical(source, sdkOmittedValue) ? this.source : source as String,
-    statusCode: identical(statusCode, sdkOmittedValue) ? this.statusCode : statusCode as SdkOptional<double>,
-  );
+  GetRedirectsResponseVariant2RedirectsItem _copyWith(
+          {Object? caseSensitive = sdkOmittedValue,
+          Object? destination = sdkOmittedValue,
+          Object? permanent = sdkOmittedValue,
+          Object? preserveQueryParams = sdkOmittedValue,
+          Object? query = sdkOmittedValue,
+          Object? sensitive = sdkOmittedValue,
+          Object? source = sdkOmittedValue,
+          Object? statusCode = sdkOmittedValue}) =>
+      GetRedirectsResponseVariant2RedirectsItem(
+        caseSensitive: identical(caseSensitive, sdkOmittedValue)
+            ? this.caseSensitive
+            : caseSensitive as SdkOptional<
+                GetRedirectsResponseVariant2RedirectsItemCaseSensitive>,
+        destination: identical(destination, sdkOmittedValue)
+            ? this.destination
+            : destination as String,
+        permanent: identical(permanent, sdkOmittedValue)
+            ? this.permanent
+            : permanent as SdkOptional<
+                GetRedirectsResponseVariant2RedirectsItemPermanent>,
+        preserveQueryParams: identical(preserveQueryParams, sdkOmittedValue)
+            ? this.preserveQueryParams
+            : preserveQueryParams as SdkOptional<
+                GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams>,
+        query: identical(query, sdkOmittedValue)
+            ? this.query
+            : query
+                as SdkOptional<GetRedirectsResponseVariant2RedirectsItemQuery>,
+        sensitive: identical(sensitive, sdkOmittedValue)
+            ? this.sensitive
+            : sensitive as SdkOptional<
+                GetRedirectsResponseVariant2RedirectsItemSensitive>,
+        source:
+            identical(source, sdkOmittedValue) ? this.source : source as String,
+        statusCode: identical(statusCode, sdkOmittedValue)
+            ? this.statusCode
+            : statusCode as SdkOptional<double>,
+      );
 
-  factory GetRedirectsResponseVariant2RedirectsItem.fromJson(Map<String, dynamic> json) => GetRedirectsResponseVariant2RedirectsItem(
-    caseSensitive: json['caseSensitive'] != null ? SdkPresent((json['caseSensitive'] != null ? GetRedirectsResponseVariant2RedirectsItemCaseSensitive.fromJson(json['caseSensitive'] as bool) : null)!) : const SdkOmitted(),
-    destination: (json['destination'] as String?)!,
-    permanent: json['permanent'] != null ? SdkPresent((json['permanent'] != null ? GetRedirectsResponseVariant2RedirectsItemPermanent.fromJson(json['permanent'] as bool) : null)!) : const SdkOmitted(),
-    preserveQueryParams: json['preserveQueryParams'] != null ? SdkPresent((json['preserveQueryParams'] != null ? GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams.fromJson(json['preserveQueryParams'] as bool) : null)!) : const SdkOmitted(),
-    query: json['query'] != null ? SdkPresent((json['query'] != null ? GetRedirectsResponseVariant2RedirectsItemQuery.fromJson(json['query'] as bool) : null)!) : const SdkOmitted(),
-    sensitive: json['sensitive'] != null ? SdkPresent((json['sensitive'] != null ? GetRedirectsResponseVariant2RedirectsItemSensitive.fromJson(json['sensitive'] as bool) : null)!) : const SdkOmitted(),
-    source: (json['source'] as String?)!,
-    statusCode: json['statusCode'] != null ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory GetRedirectsResponseVariant2RedirectsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetRedirectsResponseVariant2RedirectsItem(
+        caseSensitive: json['caseSensitive'] != null
+            ? SdkPresent((json['caseSensitive'] != null
+                ? GetRedirectsResponseVariant2RedirectsItemCaseSensitive
+                    .fromJson(json['caseSensitive'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        destination: (json['destination'] as String?)!,
+        permanent: json['permanent'] != null
+            ? SdkPresent((json['permanent'] != null
+                ? GetRedirectsResponseVariant2RedirectsItemPermanent.fromJson(
+                    json['permanent'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        preserveQueryParams: json['preserveQueryParams'] != null
+            ? SdkPresent((json['preserveQueryParams'] != null
+                ? GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams
+                    .fromJson(json['preserveQueryParams'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        query: json['query'] != null
+            ? SdkPresent((json['query'] != null
+                ? GetRedirectsResponseVariant2RedirectsItemQuery.fromJson(
+                    json['query'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        sensitive: json['sensitive'] != null
+            ? SdkPresent((json['sensitive'] != null
+                ? GetRedirectsResponseVariant2RedirectsItemSensitive.fromJson(
+                    json['sensitive'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        source: (json['source'] as String?)!,
+        statusCode: json['statusCode'] != null
+            ? SdkPresent(((json['statusCode'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (caseSensitive) {
-      SdkPresent<GetRedirectsResponseVariant2RedirectsItemCaseSensitive>(value: final value) => {'caseSensitive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'destination': destination,
-    ...switch (permanent) {
-      SdkPresent<GetRedirectsResponseVariant2RedirectsItemPermanent>(value: final value) => {'permanent': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (preserveQueryParams) {
-      SdkPresent<GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams>(value: final value) => {'preserveQueryParams': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (query) {
-      SdkPresent<GetRedirectsResponseVariant2RedirectsItemQuery>(value: final value) => {'query': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (sensitive) {
-      SdkPresent<GetRedirectsResponseVariant2RedirectsItemSensitive>(value: final value) => {'sensitive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'source': source,
-    ...switch (statusCode) {
-      SdkPresent<double>(value: final value) => {'statusCode': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (caseSensitive) {
+          SdkPresent<GetRedirectsResponseVariant2RedirectsItemCaseSensitive>(
+            value: final value
+          ) =>
+            {
+              'caseSensitive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'destination': destination,
+        ...switch (permanent) {
+          SdkPresent<GetRedirectsResponseVariant2RedirectsItemPermanent>(
+            value: final value
+          ) =>
+            {
+              'permanent': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (preserveQueryParams) {
+          SdkPresent<
+                GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams>(
+            value: final value
+          ) =>
+            {
+              'preserveQueryParams': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (query) {
+          SdkPresent<GetRedirectsResponseVariant2RedirectsItemQuery>(
+            value: final value
+          ) =>
+            {
+              'query': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (sensitive) {
+          SdkPresent<GetRedirectsResponseVariant2RedirectsItemSensitive>(
+            value: final value
+          ) =>
+            {
+              'sensitive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'source': source,
+        ...switch (statusCode) {
+          SdkPresent<double>(value: final value) => {
+              'statusCode': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetRedirectsResponseVariant2Version {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The staging link for previewing redirects in this version.
   final SdkOptional<String> alias;
   final String createdBy;
+
   /// The unique identifier for the version.
   final String id;
+
   /// Whether this version is currently live in production.
   final SdkOptional<GetRedirectsResponseVariant2VersionIsLive> isLive;
+
   /// Whether this version has not been promoted to production yet and is not serving end users.
   final SdkOptional<GetRedirectsResponseVariant2VersionIsStaging> isStaging;
+
   /// The key of the version. The key may be duplicated across versions if the contents are the same as a different version.
   final String key;
   final double lastModified;
+
   /// Optional name for the version. If not provided, defaults to an ISO timestamp string.
   final SdkOptional<String> name;
+
   /// The number of redirects in this version.
   final SdkOptional<double> redirectCount;
 
-  const GetRedirectsResponseVariant2Version({this.alias = const SdkOmitted(), required this.createdBy, required this.id, this.isLive = const SdkOmitted(), this.isStaging = const SdkOmitted(), required this.key, required this.lastModified, this.name = const SdkOmitted(), this.redirectCount = const SdkOmitted()});
+  const GetRedirectsResponseVariant2Version(
+      {this.alias = const SdkOmitted(),
+      required this.createdBy,
+      required this.id,
+      this.isLive = const SdkOmitted(),
+      this.isStaging = const SdkOmitted(),
+      required this.key,
+      required this.lastModified,
+      this.name = const SdkOmitted(),
+      this.redirectCount = const SdkOmitted()});
 
-  GetRedirectsResponseVariant2Version Function({SdkOptional<String> alias, String createdBy, String id, SdkOptional<GetRedirectsResponseVariant2VersionIsLive> isLive, SdkOptional<GetRedirectsResponseVariant2VersionIsStaging> isStaging, String key, double lastModified, SdkOptional<String> name, SdkOptional<double> redirectCount}) get copyWith => _copyWith;
+  GetRedirectsResponseVariant2Version Function(
+      {SdkOptional<String> alias,
+      String createdBy,
+      String id,
+      SdkOptional<GetRedirectsResponseVariant2VersionIsLive> isLive,
+      SdkOptional<GetRedirectsResponseVariant2VersionIsStaging> isStaging,
+      String key,
+      double lastModified,
+      SdkOptional<String> name,
+      SdkOptional<double> redirectCount}) get copyWith => _copyWith;
 
-  GetRedirectsResponseVariant2Version _copyWith({Object? alias = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isLive = sdkOmittedValue, Object? isStaging = sdkOmittedValue, Object? key = sdkOmittedValue, Object? lastModified = sdkOmittedValue, Object? name = sdkOmittedValue, Object? redirectCount = sdkOmittedValue}) => GetRedirectsResponseVariant2Version(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isLive: identical(isLive, sdkOmittedValue) ? this.isLive : isLive as SdkOptional<GetRedirectsResponseVariant2VersionIsLive>,
-    isStaging: identical(isStaging, sdkOmittedValue) ? this.isStaging : isStaging as SdkOptional<GetRedirectsResponseVariant2VersionIsStaging>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    lastModified: identical(lastModified, sdkOmittedValue) ? this.lastModified : lastModified as double,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    redirectCount: identical(redirectCount, sdkOmittedValue) ? this.redirectCount : redirectCount as SdkOptional<double>,
-  );
+  GetRedirectsResponseVariant2Version _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isLive = sdkOmittedValue,
+          Object? isStaging = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? lastModified = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? redirectCount = sdkOmittedValue}) =>
+      GetRedirectsResponseVariant2Version(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isLive: identical(isLive, sdkOmittedValue)
+            ? this.isLive
+            : isLive as SdkOptional<GetRedirectsResponseVariant2VersionIsLive>,
+        isStaging: identical(isStaging, sdkOmittedValue)
+            ? this.isStaging
+            : isStaging
+                as SdkOptional<GetRedirectsResponseVariant2VersionIsStaging>,
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        lastModified: identical(lastModified, sdkOmittedValue)
+            ? this.lastModified
+            : lastModified as double,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        redirectCount: identical(redirectCount, sdkOmittedValue)
+            ? this.redirectCount
+            : redirectCount as SdkOptional<double>,
+      );
 
-  factory GetRedirectsResponseVariant2Version.fromJson(Map<String, dynamic> json) => GetRedirectsResponseVariant2Version(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    createdBy: (json['createdBy'] as String?)!,
-    id: (json['id'] as String?)!,
-    isLive: json['isLive'] != null ? SdkPresent((json['isLive'] != null ? GetRedirectsResponseVariant2VersionIsLive.fromJson(json['isLive'] as bool) : null)!) : const SdkOmitted(),
-    isStaging: json['isStaging'] != null ? SdkPresent((json['isStaging'] != null ? GetRedirectsResponseVariant2VersionIsStaging.fromJson(json['isStaging'] as bool) : null)!) : const SdkOmitted(),
-    key: (json['key'] as String?)!,
-    lastModified: ((json['lastModified'] as num?)?.toDouble())!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    redirectCount: json['redirectCount'] != null ? SdkPresent(((json['redirectCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory GetRedirectsResponseVariant2Version.fromJson(
+          Map<String, dynamic> json) =>
+      GetRedirectsResponseVariant2Version(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+        createdBy: (json['createdBy'] as String?)!,
+        id: (json['id'] as String?)!,
+        isLive: json['isLive'] != null
+            ? SdkPresent((json['isLive'] != null
+                ? GetRedirectsResponseVariant2VersionIsLive.fromJson(
+                    json['isLive'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        isStaging: json['isStaging'] != null
+            ? SdkPresent((json['isStaging'] != null
+                ? GetRedirectsResponseVariant2VersionIsStaging.fromJson(
+                    json['isStaging'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        key: (json['key'] as String?)!,
+        lastModified: ((json['lastModified'] as num?)?.toDouble())!,
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+        redirectCount: json['redirectCount'] != null
+            ? SdkPresent(((json['redirectCount'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdBy': createdBy,
-    'id': id,
-    ...switch (isLive) {
-      SdkPresent<GetRedirectsResponseVariant2VersionIsLive>(value: final value) => {'isLive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isStaging) {
-      SdkPresent<GetRedirectsResponseVariant2VersionIsStaging>(value: final value) => {'isStaging': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'key': key,
-    'lastModified': lastModified,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (redirectCount) {
-      SdkPresent<double>(value: final value) => {'redirectCount': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdBy': createdBy,
+        'id': id,
+        ...switch (isLive) {
+          SdkPresent<GetRedirectsResponseVariant2VersionIsLive>(
+            value: final value
+          ) =>
+            {
+              'isLive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isStaging) {
+          SdkPresent<GetRedirectsResponseVariant2VersionIsStaging>(
+            value: final value
+          ) =>
+            {
+              'isStaging': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'key': key,
+        'lastModified': lastModified,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (redirectCount) {
+          SdkPresent<double>(value: final value) => {
+              'redirectCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetRedirectsResponseVariant2 {
@@ -218,55 +455,98 @@ class GetRedirectsResponseVariant2 {
   final List<GetRedirectsResponseVariant2RedirectsItem> redirects;
   final GetRedirectsResponseVariant2Version version;
 
-  const GetRedirectsResponseVariant2({required this.pagination, required this.redirects, required this.version});
+  const GetRedirectsResponseVariant2(
+      {required this.pagination,
+      required this.redirects,
+      required this.version});
 
-  GetRedirectsResponseVariant2 Function({GetRedirectsResponseVariant2Pagination pagination, List<GetRedirectsResponseVariant2RedirectsItem> redirects, GetRedirectsResponseVariant2Version version}) get copyWith => _copyWith;
+  GetRedirectsResponseVariant2 Function(
+      {GetRedirectsResponseVariant2Pagination pagination,
+      List<GetRedirectsResponseVariant2RedirectsItem> redirects,
+      GetRedirectsResponseVariant2Version version}) get copyWith => _copyWith;
 
-  GetRedirectsResponseVariant2 _copyWith({Object? pagination = sdkOmittedValue, Object? redirects = sdkOmittedValue, Object? version = sdkOmittedValue}) => GetRedirectsResponseVariant2(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as GetRedirectsResponseVariant2Pagination,
-    redirects: identical(redirects, sdkOmittedValue) ? this.redirects : redirects as List<GetRedirectsResponseVariant2RedirectsItem>,
-    version: identical(version, sdkOmittedValue) ? this.version : version as GetRedirectsResponseVariant2Version,
-  );
+  GetRedirectsResponseVariant2 _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? redirects = sdkOmittedValue,
+          Object? version = sdkOmittedValue}) =>
+      GetRedirectsResponseVariant2(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as GetRedirectsResponseVariant2Pagination,
+        redirects: identical(redirects, sdkOmittedValue)
+            ? this.redirects
+            : redirects as List<GetRedirectsResponseVariant2RedirectsItem>,
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as GetRedirectsResponseVariant2Version,
+      );
 
-  factory GetRedirectsResponseVariant2.fromJson(Map<String, dynamic> json) => GetRedirectsResponseVariant2(
-    pagination: (json['pagination'] != null ? GetRedirectsResponseVariant2Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-    redirects: ((json['redirects'] as List?)?.map((e) => GetRedirectsResponseVariant2RedirectsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    version: (json['version'] != null ? GetRedirectsResponseVariant2Version.fromJson(json['version'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetRedirectsResponseVariant2.fromJson(Map<String, dynamic> json) =>
+      GetRedirectsResponseVariant2(
+        pagination: (json['pagination'] != null
+            ? GetRedirectsResponseVariant2Pagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+        redirects: ((json['redirects'] as List?)
+            ?.map((e) => GetRedirectsResponseVariant2RedirectsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        version: (json['version'] != null
+            ? GetRedirectsResponseVariant2Version.fromJson(
+                json['version'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pagination': pagination.toJson(),
-    'redirects': redirects.map((item) => item.toJson()).toList(),
-    'version': version.toJson(),
-  };
+        'pagination': pagination.toJson(),
+        'redirects': redirects.map((item) => item.toJson()).toList(),
+        'version': version.toJson(),
+      };
 }
 
 class DeleteRedirectsRequestBody {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> name;
+
   /// The redirects to delete. The source of the redirect is used to match the redirect to delete.
   final List<String> redirects;
 
-  const DeleteRedirectsRequestBody({this.name = const SdkOmitted(), required this.redirects});
+  const DeleteRedirectsRequestBody(
+      {this.name = const SdkOmitted(), required this.redirects});
 
-  DeleteRedirectsRequestBody Function({SdkOptional<String> name, List<String> redirects}) get copyWith => _copyWith;
+  DeleteRedirectsRequestBody Function(
+      {SdkOptional<String> name,
+      List<String> redirects}) get copyWith => _copyWith;
 
-  DeleteRedirectsRequestBody _copyWith({Object? name = sdkOmittedValue, Object? redirects = sdkOmittedValue}) => DeleteRedirectsRequestBody(
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    redirects: identical(redirects, sdkOmittedValue) ? this.redirects : redirects as List<String>,
-  );
+  DeleteRedirectsRequestBody _copyWith(
+          {Object? name = sdkOmittedValue,
+          Object? redirects = sdkOmittedValue}) =>
+      DeleteRedirectsRequestBody(
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        redirects: identical(redirects, sdkOmittedValue)
+            ? this.redirects
+            : redirects as List<String>,
+      );
 
-  factory DeleteRedirectsRequestBody.fromJson(Map<String, dynamic> json) => DeleteRedirectsRequestBody(
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    redirects: ((json['redirects'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory DeleteRedirectsRequestBody.fromJson(Map<String, dynamic> json) =>
+      DeleteRedirectsRequestBody(
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+        redirects:
+            ((json['redirects'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    'redirects': redirects,
-  };
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'redirects': redirects,
+      };
 }

@@ -5,183 +5,223 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetDeploymentEventsResponseVariant2PayloadProxyWafAction {
-
   final String value;
 
   const GetDeploymentEventsResponseVariant2PayloadProxyWafAction._(this.value);
 
-  factory GetDeploymentEventsResponseVariant2PayloadProxyWafAction.fromJson(String value) => GetDeploymentEventsResponseVariant2PayloadProxyWafAction._(value);
+  factory GetDeploymentEventsResponseVariant2PayloadProxyWafAction.fromJson(
+          String value) =>
+      GetDeploymentEventsResponseVariant2PayloadProxyWafAction._(value);
 
-  static const bypass = GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('bypass');
-  static const challenge = GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('challenge');
-  static const deny = GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('deny');
-  static const log = GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('log');
-  static const rateLimit = GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('rate_limit');
+  static const bypass =
+      GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('bypass');
+  static const challenge =
+      GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('challenge');
+  static const deny =
+      GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('deny');
+  static const log =
+      GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('log');
+  static const rateLimit =
+      GetDeploymentEventsResponseVariant2PayloadProxyWafAction._('rate_limit');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentEventsResponseVariant2PayloadProxyWafAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentEventsResponseVariant2PayloadProxyWafAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDeploymentEventsResponseVariant2Type {
-
   final String value;
 
   const GetDeploymentEventsResponseVariant2Type._(this.value);
 
-  factory GetDeploymentEventsResponseVariant2Type.fromJson(String value) => GetDeploymentEventsResponseVariant2Type._(value);
+  factory GetDeploymentEventsResponseVariant2Type.fromJson(String value) =>
+      GetDeploymentEventsResponseVariant2Type._(value);
 
   static const command = GetDeploymentEventsResponseVariant2Type._('command');
-  static const delimiter = GetDeploymentEventsResponseVariant2Type._('delimiter');
-  static const deploymentState = GetDeploymentEventsResponseVariant2Type._('deployment-state');
-  static const edgeFunctionInvocation = GetDeploymentEventsResponseVariant2Type._('edge-function-invocation');
+  static const delimiter =
+      GetDeploymentEventsResponseVariant2Type._('delimiter');
+  static const deploymentState =
+      GetDeploymentEventsResponseVariant2Type._('deployment-state');
+  static const edgeFunctionInvocation =
+      GetDeploymentEventsResponseVariant2Type._('edge-function-invocation');
   static const exit = GetDeploymentEventsResponseVariant2Type._('exit');
   static const fatal = GetDeploymentEventsResponseVariant2Type._('fatal');
   static const metric = GetDeploymentEventsResponseVariant2Type._('metric');
-  static const middleware = GetDeploymentEventsResponseVariant2Type._('middleware');
-  static const middlewareInvocation = GetDeploymentEventsResponseVariant2Type._('middleware-invocation');
+  static const middleware =
+      GetDeploymentEventsResponseVariant2Type._('middleware');
+  static const middlewareInvocation =
+      GetDeploymentEventsResponseVariant2Type._('middleware-invocation');
   static const report = GetDeploymentEventsResponseVariant2Type._('report');
   static const stderr = GetDeploymentEventsResponseVariant2Type._('stderr');
   static const stdout = GetDeploymentEventsResponseVariant2Type._('stdout');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentEventsResponseVariant2Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentEventsResponseVariant2Type && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDeploymentEventsResponseVariant3Level {
-
   final String value;
 
   const GetDeploymentEventsResponseVariant3Level._(this.value);
 
-  factory GetDeploymentEventsResponseVariant3Level.fromJson(String value) => GetDeploymentEventsResponseVariant3Level._(value);
+  factory GetDeploymentEventsResponseVariant3Level.fromJson(String value) =>
+      GetDeploymentEventsResponseVariant3Level._(value);
 
   static const error = GetDeploymentEventsResponseVariant3Level._('error');
   static const warning = GetDeploymentEventsResponseVariant3Level._('warning');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentEventsResponseVariant3Level && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentEventsResponseVariant3Level && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDeploymentEventsResponseVariant3Type {
-
   final String value;
 
   const GetDeploymentEventsResponseVariant3Type._(this.value);
 
-  factory GetDeploymentEventsResponseVariant3Type.fromJson(String value) => GetDeploymentEventsResponseVariant3Type._(value);
+  factory GetDeploymentEventsResponseVariant3Type.fromJson(String value) =>
+      GetDeploymentEventsResponseVariant3Type._(value);
 
   static const command = GetDeploymentEventsResponseVariant3Type._('command');
-  static const delimiter = GetDeploymentEventsResponseVariant3Type._('delimiter');
-  static const deploymentState = GetDeploymentEventsResponseVariant3Type._('deployment-state');
-  static const edgeFunctionInvocation = GetDeploymentEventsResponseVariant3Type._('edge-function-invocation');
+  static const delimiter =
+      GetDeploymentEventsResponseVariant3Type._('delimiter');
+  static const deploymentState =
+      GetDeploymentEventsResponseVariant3Type._('deployment-state');
+  static const edgeFunctionInvocation =
+      GetDeploymentEventsResponseVariant3Type._('edge-function-invocation');
   static const exit = GetDeploymentEventsResponseVariant3Type._('exit');
   static const fatal = GetDeploymentEventsResponseVariant3Type._('fatal');
   static const metric = GetDeploymentEventsResponseVariant3Type._('metric');
-  static const middleware = GetDeploymentEventsResponseVariant3Type._('middleware');
-  static const middlewareInvocation = GetDeploymentEventsResponseVariant3Type._('middleware-invocation');
+  static const middleware =
+      GetDeploymentEventsResponseVariant3Type._('middleware');
+  static const middlewareInvocation =
+      GetDeploymentEventsResponseVariant3Type._('middleware-invocation');
   static const report = GetDeploymentEventsResponseVariant3Type._('report');
   static const stderr = GetDeploymentEventsResponseVariant3Type._('stderr');
   static const stdout = GetDeploymentEventsResponseVariant3Type._('stdout');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentEventsResponseVariant3Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentEventsResponseVariant3Type && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetDeploymentEventsResponseVariant4Type {
-
   final String value;
 
   const GetDeploymentEventsResponseVariant4Type._(this.value);
 
-  factory GetDeploymentEventsResponseVariant4Type.fromJson(String value) => GetDeploymentEventsResponseVariant4Type._(value);
+  factory GetDeploymentEventsResponseVariant4Type.fromJson(String value) =>
+      GetDeploymentEventsResponseVariant4Type._(value);
 
-  static const aliasAssigned = GetDeploymentEventsResponseVariant4Type._('alias-assigned');
+  static const aliasAssigned =
+      GetDeploymentEventsResponseVariant4Type._('alias-assigned');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetDeploymentEventsResponseVariant4Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetDeploymentEventsResponseVariant4Type && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'disabled' never enrolls and opts out of automatic enrollment.
 final class UpdateDomainsRequestBodyVariant0EchMode {
-
   final String value;
 
   const UpdateDomainsRequestBodyVariant0EchMode._(this.value);
 
-  factory UpdateDomainsRequestBodyVariant0EchMode.fromJson(String value) => UpdateDomainsRequestBodyVariant0EchMode._(value);
+  factory UpdateDomainsRequestBodyVariant0EchMode.fromJson(String value) =>
+      UpdateDomainsRequestBodyVariant0EchMode._(value);
 
   static const auto = UpdateDomainsRequestBodyVariant0EchMode._('auto');
   static const disabled = UpdateDomainsRequestBodyVariant0EchMode._('disabled');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateDomainsRequestBodyVariant0EchMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateDomainsRequestBodyVariant0EchMode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.
 final class CreateSandboxesV3RequestBodyArchitecture {
-
   final String value;
 
   const CreateSandboxesV3RequestBodyArchitecture._(this.value);
 
-  factory CreateSandboxesV3RequestBodyArchitecture.fromJson(String value) => CreateSandboxesV3RequestBodyArchitecture._(value);
+  factory CreateSandboxesV3RequestBodyArchitecture.fromJson(String value) =>
+      CreateSandboxesV3RequestBodyArchitecture._(value);
 
   static const amd64 = CreateSandboxesV3RequestBodyArchitecture._('amd64');
   static const arm64 = CreateSandboxesV3RequestBodyArchitecture._('arm64');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV3RequestBodyArchitecture && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV3RequestBodyArchitecture && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSandboxesV3RequestBodyFailoverRegionsItem {
-
   final String value;
 
   const CreateSandboxesV3RequestBodyFailoverRegionsItem._(this.value);
 
-  factory CreateSandboxesV3RequestBodyFailoverRegionsItem.fromJson(String value) => CreateSandboxesV3RequestBodyFailoverRegionsItem._(value);
+  factory CreateSandboxesV3RequestBodyFailoverRegionsItem.fromJson(
+          String value) =>
+      CreateSandboxesV3RequestBodyFailoverRegionsItem._(value);
 
   static const iad1 = CreateSandboxesV3RequestBodyFailoverRegionsItem._('iad1');
   static const sfo1 = CreateSandboxesV3RequestBodyFailoverRegionsItem._('sfo1');
@@ -205,64 +245,77 @@ final class CreateSandboxesV3RequestBodyFailoverRegionsItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV3RequestBodyFailoverRegionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV3RequestBodyFailoverRegionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.
 final class CreateSandboxesV3RequestBodyMountsValueMode {
-
   final String value;
 
   const CreateSandboxesV3RequestBodyMountsValueMode._(this.value);
 
-  factory CreateSandboxesV3RequestBodyMountsValueMode.fromJson(String value) => CreateSandboxesV3RequestBodyMountsValueMode._(value);
+  factory CreateSandboxesV3RequestBodyMountsValueMode.fromJson(String value) =>
+      CreateSandboxesV3RequestBodyMountsValueMode._(value);
 
-  static const snapshot = CreateSandboxesV3RequestBodyMountsValueMode._('snapshot');
-  static const readWrite = CreateSandboxesV3RequestBodyMountsValueMode._('read-write');
+  static const snapshot =
+      CreateSandboxesV3RequestBodyMountsValueMode._('snapshot');
+  static const readWrite =
+      CreateSandboxesV3RequestBodyMountsValueMode._('read-write');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV3RequestBodyMountsValueMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV3RequestBodyMountsValueMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSandboxesV3RequestBodyPortsItem {
-
   final double value;
 
   const CreateSandboxesV3RequestBodyPortsItem._(this.value);
 
-  factory CreateSandboxesV3RequestBodyPortsItem.fromJson(double value) => CreateSandboxesV3RequestBodyPortsItem._(value);
+  factory CreateSandboxesV3RequestBodyPortsItem.fromJson(double value) =>
+      CreateSandboxesV3RequestBodyPortsItem._(value);
 
   static const v23456 = CreateSandboxesV3RequestBodyPortsItem._(23456);
 
   double toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV3RequestBodyPortsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV3RequestBodyPortsItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The Vercel region in which to create the sandbox.
 final class CreateSandboxesV3RequestBodyRegion {
-
   final String value;
 
   const CreateSandboxesV3RequestBodyRegion._(this.value);
 
-  factory CreateSandboxesV3RequestBodyRegion.fromJson(String value) => CreateSandboxesV3RequestBodyRegion._(value);
+  factory CreateSandboxesV3RequestBodyRegion.fromJson(String value) =>
+      CreateSandboxesV3RequestBodyRegion._(value);
 
   static const iad1 = CreateSandboxesV3RequestBodyRegion._('iad1');
   static const sfo1 = CreateSandboxesV3RequestBodyRegion._('sfo1');
@@ -286,10 +339,13 @@ final class CreateSandboxesV3RequestBodyRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesV3RequestBodyRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesV3RequestBodyRegion && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

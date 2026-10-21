@@ -11,30 +11,49 @@ class CreateProjectResponseInternalRoutesItemVariant0 {
   final String src;
   final double status;
 
-  const CreateProjectResponseInternalRoutesItemVariant0({this.expiry = const SdkOmitted(), required this.src, required this.status});
+  const CreateProjectResponseInternalRoutesItemVariant0(
+      {this.expiry = const SdkOmitted(),
+      required this.src,
+      required this.status});
 
-  CreateProjectResponseInternalRoutesItemVariant0 Function({SdkOptional<double> expiry, String src, double status}) get copyWith => _copyWith;
+  CreateProjectResponseInternalRoutesItemVariant0 Function(
+      {SdkOptional<double> expiry,
+      String src,
+      double status}) get copyWith => _copyWith;
 
-  CreateProjectResponseInternalRoutesItemVariant0 _copyWith({Object? expiry = sdkOmittedValue, Object? src = sdkOmittedValue, Object? status = sdkOmittedValue}) => CreateProjectResponseInternalRoutesItemVariant0(
-    expiry: identical(expiry, sdkOmittedValue) ? this.expiry : expiry as SdkOptional<double>,
-    src: identical(src, sdkOmittedValue) ? this.src : src as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as double,
-  );
+  CreateProjectResponseInternalRoutesItemVariant0 _copyWith(
+          {Object? expiry = sdkOmittedValue,
+          Object? src = sdkOmittedValue,
+          Object? status = sdkOmittedValue}) =>
+      CreateProjectResponseInternalRoutesItemVariant0(
+        expiry: identical(expiry, sdkOmittedValue)
+            ? this.expiry
+            : expiry as SdkOptional<double>,
+        src: identical(src, sdkOmittedValue) ? this.src : src as String,
+        status:
+            identical(status, sdkOmittedValue) ? this.status : status as double,
+      );
 
-  factory CreateProjectResponseInternalRoutesItemVariant0.fromJson(Map<String, dynamic> json) => CreateProjectResponseInternalRoutesItemVariant0(
-    expiry: json['expiry'] != null ? SdkPresent(((json['expiry'] as num?)?.toDouble())!) : const SdkOmitted(),
-    src: (json['src'] as String?)!,
-    status: ((json['status'] as num?)?.toDouble())!,
-  );
+  factory CreateProjectResponseInternalRoutesItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseInternalRoutesItemVariant0(
+        expiry: json['expiry'] != null
+            ? SdkPresent(((json['expiry'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        src: (json['src'] as String?)!,
+        status: ((json['status'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (expiry) {
-      SdkPresent<double>(value: final value) => {'expiry': value,},
-      _ => const <String, dynamic>{},
-    },
-    'src': src,
-    'status': status,
-  };
+        ...switch (expiry) {
+          SdkPresent<double>(value: final value) => {
+              'expiry': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'src': src,
+        'status': status,
+      };
 }
 
 class CreateProjectResponseInternalRoutesItemVariant1Mitigate {
@@ -42,21 +61,34 @@ class CreateProjectResponseInternalRoutesItemVariant1Mitigate {
   static const String constructionSurface = 'named';
   final CreateProjectResponseInternalRoutesItemVariant1MitigateAction action;
 
-  const CreateProjectResponseInternalRoutesItemVariant1Mitigate({required this.action});
+  const CreateProjectResponseInternalRoutesItemVariant1Mitigate(
+      {required this.action});
 
-  CreateProjectResponseInternalRoutesItemVariant1Mitigate Function({CreateProjectResponseInternalRoutesItemVariant1MitigateAction action}) get copyWith => _copyWith;
+  CreateProjectResponseInternalRoutesItemVariant1Mitigate Function(
+      {CreateProjectResponseInternalRoutesItemVariant1MitigateAction
+          action}) get copyWith => _copyWith;
 
-  CreateProjectResponseInternalRoutesItemVariant1Mitigate _copyWith({Object? action = sdkOmittedValue}) => CreateProjectResponseInternalRoutesItemVariant1Mitigate(
-    action: identical(action, sdkOmittedValue) ? this.action : action as CreateProjectResponseInternalRoutesItemVariant1MitigateAction,
-  );
+  CreateProjectResponseInternalRoutesItemVariant1Mitigate _copyWith(
+          {Object? action = sdkOmittedValue}) =>
+      CreateProjectResponseInternalRoutesItemVariant1Mitigate(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as CreateProjectResponseInternalRoutesItemVariant1MitigateAction,
+      );
 
-  factory CreateProjectResponseInternalRoutesItemVariant1Mitigate.fromJson(Map<String, dynamic> json) => CreateProjectResponseInternalRoutesItemVariant1Mitigate(
-    action: (json['action'] != null ? CreateProjectResponseInternalRoutesItemVariant1MitigateAction.fromJson(json['action'] as String) : null)!,
-  );
+  factory CreateProjectResponseInternalRoutesItemVariant1Mitigate.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseInternalRoutesItemVariant1Mitigate(
+        action: (json['action'] != null
+            ? CreateProjectResponseInternalRoutesItemVariant1MitigateAction
+                .fromJson(json['action'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-  };
+        'action': action.toJson(),
+      };
 }
 
 class CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value {
@@ -64,51 +96,88 @@ class CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value {
   static const String constructionSurface = 'named';
   final String eq;
 
-  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value({required this.eq});
+  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value(
+      {required this.eq});
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value Function({String eq}) get copyWith => _copyWith;
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value Function(
+      {String eq}) get copyWith => _copyWith;
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value _copyWith({Object? eq = sdkOmittedValue}) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-  );
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value _copyWith(
+          {Object? eq = sdkOmittedValue}) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value(
+        eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+      );
 
-  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value.fromJson(Map<String, dynamic> json) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value(
-    eq: (json['eq'] as String?)!,
-  );
+  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value(
+        eq: (json['eq'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'eq': eq,
-  };
+        'eq': eq,
+      };
 }
 
 class CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key key;
-  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type type_;
-  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value value;
+  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type
+      type_;
+  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value
+      value;
 
-  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0({required this.key, required this.type_, required this.value});
+  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
+      {required this.key, required this.type_, required this.value});
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0 Function({CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key key, CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type type_, CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value value}) get copyWith => _copyWith;
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0 Function(
+      {CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key key,
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type type_,
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value
+          value}) get copyWith => _copyWith;
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
-    key: identical(key, sdkOmittedValue) ? this.key : key as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value,
-  );
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0 _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key
+                as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value
+                as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value,
+      );
 
-  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0.fromJson(Map<String, dynamic> json) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
-    key: (json['key'] != null ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key.fromJson(json['key'] as String) : null)!,
-    type_: (json['type'] != null ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0(
+        key: (json['key'] != null
+            ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Key
+                .fromJson(json['key'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant0Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key.toJson(),
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'key': key.toJson(),
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value {
@@ -116,47 +185,75 @@ class CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value {
   static const String constructionSurface = 'named';
   final String eq;
 
-  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value({required this.eq});
+  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
+      {required this.eq});
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value Function({String eq}) get copyWith => _copyWith;
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value Function(
+      {String eq}) get copyWith => _copyWith;
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value _copyWith({Object? eq = sdkOmittedValue}) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
-  );
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value _copyWith(
+          {Object? eq = sdkOmittedValue}) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
+        eq: identical(eq, sdkOmittedValue) ? this.eq : eq as String,
+      );
 
-  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(Map<String, dynamic> json) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
-    eq: (json['eq'] as String?)!,
-  );
+  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value(
+        eq: (json['eq'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'eq': eq,
-  };
+        'eq': eq,
+      };
 }
 
 class CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type type_;
-  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value value;
+  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type
+      type_;
+  final CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value
+      value;
 
-  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1({required this.type_, required this.value});
+  const CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
+      {required this.type_, required this.value});
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1 Function({CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type type_, CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value value}) get copyWith => _copyWith;
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1 Function(
+      {CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type type_,
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value
+          value}) get copyWith => _copyWith;
 
-  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value,
-  );
+  CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1 _copyWith(
+          {Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value
+                as CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value,
+      );
 
-  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1.fromJson(Map<String, dynamic> json) => CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
-    type_: (json['type'] != null ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'] != null ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value.fromJson(json['value'] as Map<String, dynamic>) : null)!,
-  );
+  factory CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1(
+        type_: (json['type'] != null
+            ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? CreateProjectResponseInternalRoutesItemVariant1HasItemVariant1Value
+                .fromJson(json['value'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'value': value.toJson(),
-  };
+        'type': type_.toJson(),
+        'value': value.toJson(),
+      };
 }
 
 class CreateProjectResponseInternalRoutesItemVariant1 {
@@ -166,30 +263,54 @@ class CreateProjectResponseInternalRoutesItemVariant1 {
   final CreateProjectResponseInternalRoutesItemVariant1Mitigate mitigate;
   final SdkOptional<String> src;
 
-  const CreateProjectResponseInternalRoutesItemVariant1({required this.has, required this.mitigate, this.src = const SdkOmitted()});
+  const CreateProjectResponseInternalRoutesItemVariant1(
+      {required this.has,
+      required this.mitigate,
+      this.src = const SdkOmitted()});
 
-  CreateProjectResponseInternalRoutesItemVariant1 Function({List<dynamic> has, CreateProjectResponseInternalRoutesItemVariant1Mitigate mitigate, SdkOptional<String> src}) get copyWith => _copyWith;
+  CreateProjectResponseInternalRoutesItemVariant1 Function(
+      {List<dynamic> has,
+      CreateProjectResponseInternalRoutesItemVariant1Mitigate mitigate,
+      SdkOptional<String> src}) get copyWith => _copyWith;
 
-  CreateProjectResponseInternalRoutesItemVariant1 _copyWith({Object? has = sdkOmittedValue, Object? mitigate = sdkOmittedValue, Object? src = sdkOmittedValue}) => CreateProjectResponseInternalRoutesItemVariant1(
-    has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
-    mitigate: identical(mitigate, sdkOmittedValue) ? this.mitigate : mitigate as CreateProjectResponseInternalRoutesItemVariant1Mitigate,
-    src: identical(src, sdkOmittedValue) ? this.src : src as SdkOptional<String>,
-  );
+  CreateProjectResponseInternalRoutesItemVariant1 _copyWith(
+          {Object? has = sdkOmittedValue,
+          Object? mitigate = sdkOmittedValue,
+          Object? src = sdkOmittedValue}) =>
+      CreateProjectResponseInternalRoutesItemVariant1(
+        has: identical(has, sdkOmittedValue) ? this.has : has as List<dynamic>,
+        mitigate: identical(mitigate, sdkOmittedValue)
+            ? this.mitigate
+            : mitigate
+                as CreateProjectResponseInternalRoutesItemVariant1Mitigate,
+        src: identical(src, sdkOmittedValue)
+            ? this.src
+            : src as SdkOptional<String>,
+      );
 
-  factory CreateProjectResponseInternalRoutesItemVariant1.fromJson(Map<String, dynamic> json) => CreateProjectResponseInternalRoutesItemVariant1(
-    has: ((json['has'] as List?)?.map((e) => e).toList())!,
-    mitigate: (json['mitigate'] != null ? CreateProjectResponseInternalRoutesItemVariant1Mitigate.fromJson(json['mitigate'] as Map<String, dynamic>) : null)!,
-    src: json['src'] != null ? SdkPresent((json['src'] as String?)!) : const SdkOmitted(),
-  );
+  factory CreateProjectResponseInternalRoutesItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateProjectResponseInternalRoutesItemVariant1(
+        has: ((json['has'] as List?)?.map((e) => e).toList())!,
+        mitigate: (json['mitigate'] != null
+            ? CreateProjectResponseInternalRoutesItemVariant1Mitigate.fromJson(
+                json['mitigate'] as Map<String, dynamic>)
+            : null)!,
+        src: json['src'] != null
+            ? SdkPresent((json['src'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'has': has,
-    'mitigate': mitigate.toJson(),
-    ...switch (src) {
-      SdkPresent<String>(value: final value) => {'src': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'has': has,
+        'mitigate': mitigate.toJson(),
+        ...switch (src) {
+          SdkPresent<String>(value: final value) => {
+              'src': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class CreateProjectResponseInternalRoutesItem {
@@ -198,24 +319,53 @@ sealed class CreateProjectResponseInternalRoutesItem {
   const CreateProjectResponseInternalRoutesItem();
   factory CreateProjectResponseInternalRoutesItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CreateProjectResponseInternalRoutesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0(value); } } catch (_) {}
-      try { final value = CreateProjectResponseInternalRoutesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            CreateProjectResponseInternalRoutesItemVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            CreateProjectResponseInternalRoutesItemVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0(CreateProjectResponseInternalRoutesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1(CreateProjectResponseInternalRoutesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CreateProjectResponseInternalRoutesItem");
+    try {
+      return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0(
+          CreateProjectResponseInternalRoutesItemVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1(
+          CreateProjectResponseInternalRoutesItemVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateProjectResponseInternalRoutesItem");
   }
   Object? toJson();
 }
 
-final class CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0 extends CreateProjectResponseInternalRoutesItem {
+final class CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0
+    extends CreateProjectResponseInternalRoutesItem {
   final CreateProjectResponseInternalRoutesItemVariant0 value;
-  const CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1 extends CreateProjectResponseInternalRoutesItem {
+final class CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1
+    extends CreateProjectResponseInternalRoutesItem {
   final CreateProjectResponseInternalRoutesItemVariant1 value;
-  const CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateProjectResponseInternalRoutesItemCreateProjectResponseInternalRoutesItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

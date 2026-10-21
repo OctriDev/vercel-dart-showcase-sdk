@@ -5,12 +5,12 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UpdateSandboxRequestBodyFailoverRegionsItem {
-
   final String value;
 
   const UpdateSandboxRequestBodyFailoverRegionsItem._(this.value);
 
-  factory UpdateSandboxRequestBodyFailoverRegionsItem.fromJson(String value) => UpdateSandboxRequestBodyFailoverRegionsItem._(value);
+  factory UpdateSandboxRequestBodyFailoverRegionsItem.fromJson(String value) =>
+      UpdateSandboxRequestBodyFailoverRegionsItem._(value);
 
   static const iad1 = UpdateSandboxRequestBodyFailoverRegionsItem._('iad1');
   static const sfo1 = UpdateSandboxRequestBodyFailoverRegionsItem._('sfo1');
@@ -34,64 +34,75 @@ final class UpdateSandboxRequestBodyFailoverRegionsItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateSandboxRequestBodyFailoverRegionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateSandboxRequestBodyFailoverRegionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.
 final class UpdateSandboxRequestBodyMountsValueMode {
-
   final String value;
 
   const UpdateSandboxRequestBodyMountsValueMode._(this.value);
 
-  factory UpdateSandboxRequestBodyMountsValueMode.fromJson(String value) => UpdateSandboxRequestBodyMountsValueMode._(value);
+  factory UpdateSandboxRequestBodyMountsValueMode.fromJson(String value) =>
+      UpdateSandboxRequestBodyMountsValueMode._(value);
 
   static const snapshot = UpdateSandboxRequestBodyMountsValueMode._('snapshot');
-  static const readWrite = UpdateSandboxRequestBodyMountsValueMode._('read-write');
+  static const readWrite =
+      UpdateSandboxRequestBodyMountsValueMode._('read-write');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateSandboxRequestBodyMountsValueMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateSandboxRequestBodyMountsValueMode && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateSandboxRequestBodyPortsItem {
-
   final double value;
 
   const UpdateSandboxRequestBodyPortsItem._(this.value);
 
-  factory UpdateSandboxRequestBodyPortsItem.fromJson(double value) => UpdateSandboxRequestBodyPortsItem._(value);
+  factory UpdateSandboxRequestBodyPortsItem.fromJson(double value) =>
+      UpdateSandboxRequestBodyPortsItem._(value);
 
   static const v23456 = UpdateSandboxRequestBodyPortsItem._(23456);
 
   double toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateSandboxRequestBodyPortsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateSandboxRequestBodyPortsItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The Vercel region in which to create the sandbox.
 final class UpdateSandboxRequestBodyRegion {
-
   final String value;
 
   const UpdateSandboxRequestBodyRegion._(this.value);
 
-  factory UpdateSandboxRequestBodyRegion.fromJson(String value) => UpdateSandboxRequestBodyRegion._(value);
+  factory UpdateSandboxRequestBodyRegion.fromJson(String value) =>
+      UpdateSandboxRequestBodyRegion._(value);
 
   static const iad1 = UpdateSandboxRequestBodyRegion._('iad1');
   static const sfo1 = UpdateSandboxRequestBodyRegion._('sfo1');
@@ -115,22 +126,25 @@ final class UpdateSandboxRequestBodyRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateSandboxRequestBodyRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateSandboxRequestBodyRegion && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The runtime environment for the sandbox. Determines the pre-installed language runtimes and tools available.
 final class UpdateSandboxRequestBodyRuntime {
-
   final String value;
 
   const UpdateSandboxRequestBodyRuntime._(this.value);
 
-  factory UpdateSandboxRequestBodyRuntime.fromJson(String value) => UpdateSandboxRequestBodyRuntime._(value);
+  factory UpdateSandboxRequestBodyRuntime.fromJson(String value) =>
+      UpdateSandboxRequestBodyRuntime._(value);
 
   static const node22 = UpdateSandboxRequestBodyRuntime._('node22');
   static const node24 = UpdateSandboxRequestBodyRuntime._('node24');
@@ -139,102 +153,142 @@ final class UpdateSandboxRequestBodyRuntime {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateSandboxRequestBodyRuntime && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateSandboxRequestBodyRuntime && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem {
-
   final String value;
 
   const CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._(this.value);
 
-  factory CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem.fromJson(String value) => CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._(value);
+  factory CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem.fromJson(
+          String value) =>
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._(value);
 
-  static const iad1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('iad1');
-  static const sfo1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('sfo1');
-  static const cle1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('cle1');
-  static const cdg1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('cdg1');
-  static const fra1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('fra1');
-  static const arn1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('arn1');
-  static const sin1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('sin1');
-  static const pdx1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('pdx1');
-  static const lhr1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('lhr1');
-  static const icn1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('icn1');
-  static const bom1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('bom1');
-  static const cpt1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('cpt1');
-  static const dub1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('dub1');
-  static const gru1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('gru1');
-  static const hkg1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('hkg1');
-  static const syd1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('syd1');
-  static const yul1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('yul1');
-  static const hnd1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('hnd1');
-  static const kix1 = CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('kix1');
+  static const iad1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('iad1');
+  static const sfo1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('sfo1');
+  static const cle1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('cle1');
+  static const cdg1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('cdg1');
+  static const fra1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('fra1');
+  static const arn1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('arn1');
+  static const sin1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('sin1');
+  static const pdx1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('pdx1');
+  static const lhr1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('lhr1');
+  static const icn1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('icn1');
+  static const bom1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('bom1');
+  static const cpt1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('cpt1');
+  static const dub1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('dub1');
+  static const gru1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('gru1');
+  static const hkg1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('hkg1');
+  static const syd1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('syd1');
+  static const yul1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('yul1');
+  static const hnd1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('hnd1');
+  static const kix1 =
+      CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem._('kix1');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesByNameForkV2RequestBodyFailoverRegionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.
 final class CreateSandboxesByNameForkV2RequestBodyMountsValueMode {
-
   final String value;
 
   const CreateSandboxesByNameForkV2RequestBodyMountsValueMode._(this.value);
 
-  factory CreateSandboxesByNameForkV2RequestBodyMountsValueMode.fromJson(String value) => CreateSandboxesByNameForkV2RequestBodyMountsValueMode._(value);
+  factory CreateSandboxesByNameForkV2RequestBodyMountsValueMode.fromJson(
+          String value) =>
+      CreateSandboxesByNameForkV2RequestBodyMountsValueMode._(value);
 
-  static const snapshot = CreateSandboxesByNameForkV2RequestBodyMountsValueMode._('snapshot');
-  static const readWrite = CreateSandboxesByNameForkV2RequestBodyMountsValueMode._('read-write');
+  static const snapshot =
+      CreateSandboxesByNameForkV2RequestBodyMountsValueMode._('snapshot');
+  static const readWrite =
+      CreateSandboxesByNameForkV2RequestBodyMountsValueMode._('read-write');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesByNameForkV2RequestBodyMountsValueMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesByNameForkV2RequestBodyMountsValueMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CreateSandboxesByNameForkV2RequestBodyPortsItem {
-
   final double value;
 
   const CreateSandboxesByNameForkV2RequestBodyPortsItem._(this.value);
 
-  factory CreateSandboxesByNameForkV2RequestBodyPortsItem.fromJson(double value) => CreateSandboxesByNameForkV2RequestBodyPortsItem._(value);
+  factory CreateSandboxesByNameForkV2RequestBodyPortsItem.fromJson(
+          double value) =>
+      CreateSandboxesByNameForkV2RequestBodyPortsItem._(value);
 
-  static const v23456 = CreateSandboxesByNameForkV2RequestBodyPortsItem._(23456);
+  static const v23456 =
+      CreateSandboxesByNameForkV2RequestBodyPortsItem._(23456);
 
   double toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesByNameForkV2RequestBodyPortsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesByNameForkV2RequestBodyPortsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The Vercel region in which to create the sandbox.
 final class CreateSandboxesByNameForkV2RequestBodyRegion {
-
   final String value;
 
   const CreateSandboxesByNameForkV2RequestBodyRegion._(this.value);
 
-  factory CreateSandboxesByNameForkV2RequestBodyRegion.fromJson(String value) => CreateSandboxesByNameForkV2RequestBodyRegion._(value);
+  factory CreateSandboxesByNameForkV2RequestBodyRegion.fromJson(String value) =>
+      CreateSandboxesByNameForkV2RequestBodyRegion._(value);
 
   static const iad1 = CreateSandboxesByNameForkV2RequestBodyRegion._('iad1');
   static const sfo1 = CreateSandboxesByNameForkV2RequestBodyRegion._('sfo1');
@@ -258,17 +312,20 @@ final class CreateSandboxesByNameForkV2RequestBodyRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CreateSandboxesByNameForkV2RequestBodyRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CreateSandboxesByNameForkV2RequestBodyRegion &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Field to sort drives by.
 final class ListDrivesSortBy {
-
   final String value;
 
   const ListDrivesSortBy._(this.value);
@@ -281,10 +338,13 @@ final class ListDrivesSortBy {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListDrivesSortBy && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListDrivesSortBy && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

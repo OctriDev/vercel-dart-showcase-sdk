@@ -5,226 +5,290 @@ part of 'inline.dart';
 
 // Inline operation models
 final class RequestAccessToTeamResponseConfirmed {
-
   final bool value;
 
   const RequestAccessToTeamResponseConfirmed._(this.value);
 
-  factory RequestAccessToTeamResponseConfirmed.fromJson(bool value) => RequestAccessToTeamResponseConfirmed._(value);
+  factory RequestAccessToTeamResponseConfirmed.fromJson(bool value) =>
+      RequestAccessToTeamResponseConfirmed._(value);
 
   static const false_ = RequestAccessToTeamResponseConfirmed._(false);
   static const true_ = RequestAccessToTeamResponseConfirmed._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RequestAccessToTeamResponseConfirmed && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RequestAccessToTeamResponseConfirmed && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class RequestAccessToTeamResponseJoinedFromOrigin {
-
   final String value;
 
   const RequestAccessToTeamResponseJoinedFromOrigin._(this.value);
 
-  factory RequestAccessToTeamResponseJoinedFromOrigin.fromJson(String value) => RequestAccessToTeamResponseJoinedFromOrigin._(value);
+  factory RequestAccessToTeamResponseJoinedFromOrigin.fromJson(String value) =>
+      RequestAccessToTeamResponseJoinedFromOrigin._(value);
 
-  static const accountUpdate = RequestAccessToTeamResponseJoinedFromOrigin._('account-update');
-  static const bitbucket = RequestAccessToTeamResponseJoinedFromOrigin._('bitbucket');
+  static const accountUpdate =
+      RequestAccessToTeamResponseJoinedFromOrigin._('account-update');
+  static const bitbucket =
+      RequestAccessToTeamResponseJoinedFromOrigin._('bitbucket');
   static const dsync = RequestAccessToTeamResponseJoinedFromOrigin._('dsync');
-  static const feedback = RequestAccessToTeamResponseJoinedFromOrigin._('feedback');
+  static const feedback =
+      RequestAccessToTeamResponseJoinedFromOrigin._('feedback');
   static const github = RequestAccessToTeamResponseJoinedFromOrigin._('github');
   static const gitlab = RequestAccessToTeamResponseJoinedFromOrigin._('gitlab');
-  static const import_ = RequestAccessToTeamResponseJoinedFromOrigin._('import');
+  static const import_ =
+      RequestAccessToTeamResponseJoinedFromOrigin._('import');
   static const link = RequestAccessToTeamResponseJoinedFromOrigin._('link');
   static const mail = RequestAccessToTeamResponseJoinedFromOrigin._('mail');
-  static const nsnbAutoApprove = RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-auto-approve');
-  static const nsnbHobbyUpgrade = RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-hobby-upgrade');
-  static const nsnbInvite = RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-invite');
-  static const nsnbRedeploy = RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-redeploy');
-  static const nsnbRedeployAttributionCard = RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-redeploy-attribution-card');
-  static const nsnbRequestAccess = RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-request-access');
-  static const nsnbViewerUpgrade = RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-viewer-upgrade');
-  static const organizationTeams = RequestAccessToTeamResponseJoinedFromOrigin._('organization-teams');
+  static const nsnbAutoApprove =
+      RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-auto-approve');
+  static const nsnbHobbyUpgrade =
+      RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-hobby-upgrade');
+  static const nsnbInvite =
+      RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-invite');
+  static const nsnbRedeploy =
+      RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-redeploy');
+  static const nsnbRedeployAttributionCard =
+      RequestAccessToTeamResponseJoinedFromOrigin._(
+          'nsnb-redeploy-attribution-card');
+  static const nsnbRequestAccess =
+      RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-request-access');
+  static const nsnbViewerUpgrade =
+      RequestAccessToTeamResponseJoinedFromOrigin._('nsnb-viewer-upgrade');
+  static const organizationTeams =
+      RequestAccessToTeamResponseJoinedFromOrigin._('organization-teams');
   static const saml = RequestAccessToTeamResponseJoinedFromOrigin._('saml');
   static const teams = RequestAccessToTeamResponseJoinedFromOrigin._('teams');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RequestAccessToTeamResponseJoinedFromOrigin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RequestAccessToTeamResponseJoinedFromOrigin &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Current status of the membership. Will be `true` if confirmed, if pending it'll be `false`.
 final class GetTeamAccessRequestResponseConfirmed {
-
   final bool value;
 
   const GetTeamAccessRequestResponseConfirmed._(this.value);
 
-  factory GetTeamAccessRequestResponseConfirmed.fromJson(bool value) => GetTeamAccessRequestResponseConfirmed._(value);
+  factory GetTeamAccessRequestResponseConfirmed.fromJson(bool value) =>
+      GetTeamAccessRequestResponseConfirmed._(value);
 
   static const false_ = GetTeamAccessRequestResponseConfirmed._(false);
   static const true_ = GetTeamAccessRequestResponseConfirmed._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamAccessRequestResponseConfirmed && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamAccessRequestResponseConfirmed && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetTeamAccessRequestResponseJoinedFromOrigin {
-
   final String value;
 
   const GetTeamAccessRequestResponseJoinedFromOrigin._(this.value);
 
-  factory GetTeamAccessRequestResponseJoinedFromOrigin.fromJson(String value) => GetTeamAccessRequestResponseJoinedFromOrigin._(value);
+  factory GetTeamAccessRequestResponseJoinedFromOrigin.fromJson(String value) =>
+      GetTeamAccessRequestResponseJoinedFromOrigin._(value);
 
-  static const accountUpdate = GetTeamAccessRequestResponseJoinedFromOrigin._('account-update');
-  static const bitbucket = GetTeamAccessRequestResponseJoinedFromOrigin._('bitbucket');
+  static const accountUpdate =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('account-update');
+  static const bitbucket =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('bitbucket');
   static const dsync = GetTeamAccessRequestResponseJoinedFromOrigin._('dsync');
-  static const feedback = GetTeamAccessRequestResponseJoinedFromOrigin._('feedback');
-  static const github = GetTeamAccessRequestResponseJoinedFromOrigin._('github');
-  static const gitlab = GetTeamAccessRequestResponseJoinedFromOrigin._('gitlab');
-  static const import_ = GetTeamAccessRequestResponseJoinedFromOrigin._('import');
+  static const feedback =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('feedback');
+  static const github =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('github');
+  static const gitlab =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('gitlab');
+  static const import_ =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('import');
   static const link = GetTeamAccessRequestResponseJoinedFromOrigin._('link');
   static const mail = GetTeamAccessRequestResponseJoinedFromOrigin._('mail');
-  static const nsnbAutoApprove = GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-auto-approve');
-  static const nsnbHobbyUpgrade = GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-hobby-upgrade');
-  static const nsnbInvite = GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-invite');
-  static const nsnbRedeploy = GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-redeploy');
-  static const nsnbRedeployAttributionCard = GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-redeploy-attribution-card');
-  static const nsnbRequestAccess = GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-request-access');
-  static const nsnbViewerUpgrade = GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-viewer-upgrade');
-  static const organizationTeams = GetTeamAccessRequestResponseJoinedFromOrigin._('organization-teams');
+  static const nsnbAutoApprove =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-auto-approve');
+  static const nsnbHobbyUpgrade =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-hobby-upgrade');
+  static const nsnbInvite =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-invite');
+  static const nsnbRedeploy =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-redeploy');
+  static const nsnbRedeployAttributionCard =
+      GetTeamAccessRequestResponseJoinedFromOrigin._(
+          'nsnb-redeploy-attribution-card');
+  static const nsnbRequestAccess =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-request-access');
+  static const nsnbViewerUpgrade =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('nsnb-viewer-upgrade');
+  static const organizationTeams =
+      GetTeamAccessRequestResponseJoinedFromOrigin._('organization-teams');
   static const saml = GetTeamAccessRequestResponseJoinedFromOrigin._('saml');
   static const teams = GetTeamAccessRequestResponseJoinedFromOrigin._('teams');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetTeamAccessRequestResponseJoinedFromOrigin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetTeamAccessRequestResponseJoinedFromOrigin &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Field to sort the non-pinned tags by.
 final class ListRepositoryTagsSortBy {
-
   final String value;
 
   const ListRepositoryTagsSortBy._(this.value);
 
-  factory ListRepositoryTagsSortBy.fromJson(String value) => ListRepositoryTagsSortBy._(value);
+  factory ListRepositoryTagsSortBy.fromJson(String value) =>
+      ListRepositoryTagsSortBy._(value);
 
   static const updatedat = ListRepositoryTagsSortBy._('updatedAt');
   static const tag = ListRepositoryTagsSortBy._('tag');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListRepositoryTagsSortBy && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListRepositoryTagsSortBy && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Sort direction. Defaults to desc.
 final class ListRepositoryTagsSortOrder {
-
   final String value;
 
   const ListRepositoryTagsSortOrder._(this.value);
 
-  factory ListRepositoryTagsSortOrder.fromJson(String value) => ListRepositoryTagsSortOrder._(value);
+  factory ListRepositoryTagsSortOrder.fromJson(String value) =>
+      ListRepositoryTagsSortOrder._(value);
 
   static const asc = ListRepositoryTagsSortOrder._('asc');
   static const desc = ListRepositoryTagsSortOrder._('desc');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListRepositoryTagsSortOrder && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListRepositoryTagsSortOrder && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListRepositoryTagsResponseTagsItemKind {
-
   final String value;
 
   const ListRepositoryTagsResponseTagsItemKind._(this.value);
 
-  factory ListRepositoryTagsResponseTagsItemKind.fromJson(String value) => ListRepositoryTagsResponseTagsItemKind._(value);
+  factory ListRepositoryTagsResponseTagsItemKind.fromJson(String value) =>
+      ListRepositoryTagsResponseTagsItemKind._(value);
 
-  static const attestation = ListRepositoryTagsResponseTagsItemKind._('attestation');
+  static const attestation =
+      ListRepositoryTagsResponseTagsItemKind._('attestation');
   static const index2 = ListRepositoryTagsResponseTagsItemKind._('index');
   static const manifest = ListRepositoryTagsResponseTagsItemKind._('manifest');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListRepositoryTagsResponseTagsItemKind && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListRepositoryTagsResponseTagsItemKind && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListRepositoryTagsResponseTagsItemStatus {
-
   final String value;
 
   const ListRepositoryTagsResponseTagsItemStatus._(this.value);
 
-  factory ListRepositoryTagsResponseTagsItemStatus.fromJson(String value) => ListRepositoryTagsResponseTagsItemStatus._(value);
+  factory ListRepositoryTagsResponseTagsItemStatus.fromJson(String value) =>
+      ListRepositoryTagsResponseTagsItemStatus._(value);
 
   static const errored = ListRepositoryTagsResponseTagsItemStatus._('errored');
-  static const preparing = ListRepositoryTagsResponseTagsItemStatus._('preparing');
+  static const preparing =
+      ListRepositoryTagsResponseTagsItemStatus._('preparing');
   static const ready = ListRepositoryTagsResponseTagsItemStatus._('ready');
-  static const unoptimized = ListRepositoryTagsResponseTagsItemStatus._('unoptimized');
+  static const unoptimized =
+      ListRepositoryTagsResponseTagsItemStatus._('unoptimized');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListRepositoryTagsResponseTagsItemStatus && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListRepositoryTagsResponseTagsItemStatus && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0 {
   succeeded;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'succeeded': return ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0.succeeded;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0: $value');
+      case 'succeeded':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0
+            .succeeded;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0.succeeded: return 'succeeded';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant0
+            .succeeded:
+        return 'succeeded';
     }
   }
 
@@ -235,16 +299,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVarian
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1 {
   failed;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1
+      fromJson(String value) {
     switch (value) {
-      case 'failed': return ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1.failed;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1: $value');
+      case 'failed':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1
+            .failed;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1.failed: return 'failed';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant1
+            .failed:
+        return 'failed';
     }
   }
 
@@ -255,16 +326,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVarian
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2 {
   skipped;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2
+      fromJson(String value) {
     switch (value) {
-      case 'skipped': return ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2.skipped;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2: $value');
+      case 'skipped':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2
+            .skipped;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2.skipped: return 'skipped';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVariant2
+            .skipped:
+        return 'skipped';
     }
   }
 
@@ -275,16 +353,23 @@ enum ListVercelCiInvocationAttemptsResponseAttemptsItemCompletedConclusionVarian
 enum ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0 {
   turboJson;
 
-  static ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0 fromJson(String value) {
+  static ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0
+      fromJson(String value) {
     switch (value) {
-      case 'turbo-json': return ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0.turboJson;
-      default: throw ArgumentError('Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0: $value');
+      case 'turbo-json':
+        return ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0
+            .turboJson;
+      default:
+        throw ArgumentError(
+            'Unknown ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0.turboJson: return 'turbo-json';
+      case ListVercelCiInvocationAttemptsResponseAttemptsItemJobDefinitionsCreatedSourceVariant0
+            .turboJson:
+        return 'turbo-json';
     }
   }
 

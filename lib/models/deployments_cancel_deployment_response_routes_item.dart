@@ -10,32 +10,72 @@ sealed class CancelDeploymentResponseRoutesItem {
   const CancelDeploymentResponseRoutesItem();
   factory CancelDeploymentResponseRoutesItem.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CancelDeploymentResponseRoutesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0(value); } } catch (_) {}
-      try { final value = CancelDeploymentResponseRoutesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1(value); } } catch (_) {}
-      try { final value = CancelDeploymentResponseRoutesItemVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2(value); } } catch (_) {}
+      try {
+        final value = CancelDeploymentResponseRoutesItemVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = CancelDeploymentResponseRoutesItemVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = CancelDeploymentResponseRoutesItemVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0(CancelDeploymentResponseRoutesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1(CancelDeploymentResponseRoutesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2(CancelDeploymentResponseRoutesItemVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CancelDeploymentResponseRoutesItem");
+    try {
+      return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0(
+          CancelDeploymentResponseRoutesItemVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1(
+          CancelDeploymentResponseRoutesItemVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2(
+          CancelDeploymentResponseRoutesItemVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CancelDeploymentResponseRoutesItem");
   }
   Object? toJson();
 }
 
-final class CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0 extends CancelDeploymentResponseRoutesItem {
+final class CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0
+    extends CancelDeploymentResponseRoutesItem {
   final CancelDeploymentResponseRoutesItemVariant0 value;
-  const CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1 extends CancelDeploymentResponseRoutesItem {
+final class CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1
+    extends CancelDeploymentResponseRoutesItem {
   final CancelDeploymentResponseRoutesItemVariant1 value;
-  const CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2 extends CancelDeploymentResponseRoutesItem {
+final class CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2
+    extends CancelDeploymentResponseRoutesItem {
   final CancelDeploymentResponseRoutesItemVariant2 value;
-  const CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const CancelDeploymentResponseRoutesItemCancelDeploymentResponseRoutesItemVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

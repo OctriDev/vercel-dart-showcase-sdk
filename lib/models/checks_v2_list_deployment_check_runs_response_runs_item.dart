@@ -12,30 +12,53 @@ class ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef {
   final String jobDefinitionId;
   final double jobRunAttempt;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef({required this.invocationAttempt, required this.invocationId, required this.jobDefinitionId, required this.jobRunAttempt});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef(
+      {required this.invocationAttempt,
+      required this.invocationId,
+      required this.jobDefinitionId,
+      required this.jobRunAttempt});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef Function({double invocationAttempt, String invocationId, String jobDefinitionId, double jobRunAttempt}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef Function(
+      {double invocationAttempt,
+      String invocationId,
+      String jobDefinitionId,
+      double jobRunAttempt}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef _copyWith({Object? invocationAttempt = sdkOmittedValue, Object? invocationId = sdkOmittedValue, Object? jobDefinitionId = sdkOmittedValue, Object? jobRunAttempt = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef(
-    invocationAttempt: identical(invocationAttempt, sdkOmittedValue) ? this.invocationAttempt : invocationAttempt as double,
-    invocationId: identical(invocationId, sdkOmittedValue) ? this.invocationId : invocationId as String,
-    jobDefinitionId: identical(jobDefinitionId, sdkOmittedValue) ? this.jobDefinitionId : jobDefinitionId as String,
-    jobRunAttempt: identical(jobRunAttempt, sdkOmittedValue) ? this.jobRunAttempt : jobRunAttempt as double,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef _copyWith(
+          {Object? invocationAttempt = sdkOmittedValue,
+          Object? invocationId = sdkOmittedValue,
+          Object? jobDefinitionId = sdkOmittedValue,
+          Object? jobRunAttempt = sdkOmittedValue}) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef(
+        invocationAttempt: identical(invocationAttempt, sdkOmittedValue)
+            ? this.invocationAttempt
+            : invocationAttempt as double,
+        invocationId: identical(invocationId, sdkOmittedValue)
+            ? this.invocationId
+            : invocationId as String,
+        jobDefinitionId: identical(jobDefinitionId, sdkOmittedValue)
+            ? this.jobDefinitionId
+            : jobDefinitionId as String,
+        jobRunAttempt: identical(jobRunAttempt, sdkOmittedValue)
+            ? this.jobRunAttempt
+            : jobRunAttempt as double,
+      );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef(
-    invocationAttempt: ((json['invocationAttempt'] as num?)?.toDouble())!,
-    invocationId: (json['invocationId'] as String?)!,
-    jobDefinitionId: (json['jobDefinitionId'] as String?)!,
-    jobRunAttempt: ((json['jobRunAttempt'] as num?)?.toDouble())!,
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0ExpectationRef(
+        invocationAttempt: ((json['invocationAttempt'] as num?)?.toDouble())!,
+        invocationId: (json['invocationId'] as String?)!,
+        jobDefinitionId: (json['jobDefinitionId'] as String?)!,
+        jobRunAttempt: ((json['jobRunAttempt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'invocationAttempt': invocationAttempt,
-    'invocationId': invocationId,
-    'jobDefinitionId': jobDefinitionId,
-    'jobRunAttempt': jobRunAttempt,
-  };
+        'invocationAttempt': invocationAttempt,
+        'invocationId': invocationId,
+        'jobDefinitionId': jobDefinitionId,
+        'jobRunAttempt': jobRunAttempt,
+      };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary {
@@ -46,30 +69,50 @@ class ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary {
   final double succeeded;
   final double total;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary({required this.failed, required this.pending, required this.succeeded, required this.total});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary(
+      {required this.failed,
+      required this.pending,
+      required this.succeeded,
+      required this.total});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary Function({double failed, double pending, double succeeded, double total}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary Function(
+      {double failed,
+      double pending,
+      double succeeded,
+      double total}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary _copyWith({Object? failed = sdkOmittedValue, Object? pending = sdkOmittedValue, Object? succeeded = sdkOmittedValue, Object? total = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary(
-    failed: identical(failed, sdkOmittedValue) ? this.failed : failed as double,
-    pending: identical(pending, sdkOmittedValue) ? this.pending : pending as double,
-    succeeded: identical(succeeded, sdkOmittedValue) ? this.succeeded : succeeded as double,
-    total: identical(total, sdkOmittedValue) ? this.total : total as double,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary _copyWith(
+          {Object? failed = sdkOmittedValue,
+          Object? pending = sdkOmittedValue,
+          Object? succeeded = sdkOmittedValue,
+          Object? total = sdkOmittedValue}) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary(
+        failed:
+            identical(failed, sdkOmittedValue) ? this.failed : failed as double,
+        pending: identical(pending, sdkOmittedValue)
+            ? this.pending
+            : pending as double,
+        succeeded: identical(succeeded, sdkOmittedValue)
+            ? this.succeeded
+            : succeeded as double,
+        total: identical(total, sdkOmittedValue) ? this.total : total as double,
+      );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary(
-    failed: ((json['failed'] as num?)?.toDouble())!,
-    pending: ((json['pending'] as num?)?.toDouble())!,
-    succeeded: ((json['succeeded'] as num?)?.toDouble())!,
-    total: ((json['total'] as num?)?.toDouble())!,
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0TaskSummary(
+        failed: ((json['failed'] as num?)?.toDouble())!,
+        pending: ((json['pending'] as num?)?.toDouble())!,
+        succeeded: ((json['succeeded'] as num?)?.toDouble())!,
+        total: ((json['total'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'failed': failed,
-    'pending': pending,
-    'succeeded': succeeded,
-    'total': total,
-  };
+        'failed': failed,
+        'pending': pending,
+        'succeeded': succeeded,
+        'total': total,
+      };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0 {
@@ -81,39 +124,81 @@ class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0 {
   final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0Kind kind;
   final SdkOptional<String> resourceId;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0({this.externalResourceId = const SdkOmitted(), required this.integrationConfigurationId, required this.integrationId, required this.kind, this.resourceId = const SdkOmitted()});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0(
+      {this.externalResourceId = const SdkOmitted(),
+      required this.integrationConfigurationId,
+      required this.integrationId,
+      required this.kind,
+      this.resourceId = const SdkOmitted()});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0 Function({SdkOptional<String> externalResourceId, String integrationConfigurationId, String integrationId, ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0Kind kind, SdkOptional<String> resourceId}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0 Function(
+      {SdkOptional<String> externalResourceId,
+      String integrationConfigurationId,
+      String integrationId,
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0Kind kind,
+      SdkOptional<String> resourceId}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0 _copyWith({Object? externalResourceId = sdkOmittedValue, Object? integrationConfigurationId = sdkOmittedValue, Object? integrationId = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? resourceId = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0(
-    externalResourceId: identical(externalResourceId, sdkOmittedValue) ? this.externalResourceId : externalResourceId as SdkOptional<String>,
-    integrationConfigurationId: identical(integrationConfigurationId, sdkOmittedValue) ? this.integrationConfigurationId : integrationConfigurationId as String,
-    integrationId: identical(integrationId, sdkOmittedValue) ? this.integrationId : integrationId as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0Kind,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as SdkOptional<String>,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0 _copyWith(
+          {Object? externalResourceId = sdkOmittedValue,
+          Object? integrationConfigurationId = sdkOmittedValue,
+          Object? integrationId = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue}) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0(
+        externalResourceId: identical(externalResourceId, sdkOmittedValue)
+            ? this.externalResourceId
+            : externalResourceId as SdkOptional<String>,
+        integrationConfigurationId:
+            identical(integrationConfigurationId, sdkOmittedValue)
+                ? this.integrationConfigurationId
+                : integrationConfigurationId as String,
+        integrationId: identical(integrationId, sdkOmittedValue)
+            ? this.integrationId
+            : integrationId as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind
+                as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0Kind,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as SdkOptional<String>,
+      );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0(
-    externalResourceId: json['externalResourceId'] != null ? SdkPresent((json['externalResourceId'] as String?)!) : const SdkOmitted(),
-    integrationConfigurationId: (json['integrationConfigurationId'] as String?)!,
-    integrationId: (json['integrationId'] as String?)!,
-    kind: (json['kind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0Kind.fromJson(json['kind'] as String) : null)!,
-    resourceId: json['resourceId'] != null ? SdkPresent((json['resourceId'] as String?)!) : const SdkOmitted(),
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0(
+        externalResourceId: json['externalResourceId'] != null
+            ? SdkPresent((json['externalResourceId'] as String?)!)
+            : const SdkOmitted(),
+        integrationConfigurationId:
+            (json['integrationConfigurationId'] as String?)!,
+        integrationId: (json['integrationId'] as String?)!,
+        kind: (json['kind'] != null
+            ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant0Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        resourceId: json['resourceId'] != null
+            ? SdkPresent((json['resourceId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (externalResourceId) {
-      SdkPresent<String>(value: final value) => {'externalResourceId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'integrationConfigurationId': integrationConfigurationId,
-    'integrationId': integrationId,
-    'kind': kind.toJson(),
-    ...switch (resourceId) {
-      SdkPresent<String>(value: final value) => {'resourceId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (externalResourceId) {
+          SdkPresent<String>(value: final value) => {
+              'externalResourceId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'integrationConfigurationId': integrationConfigurationId,
+        'integrationId': integrationId,
+        'kind': kind.toJson(),
+        ...switch (resourceId) {
+          SdkPresent<String>(value: final value) => {
+              'resourceId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1 {
@@ -122,27 +207,47 @@ class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1 {
   final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1Kind kind;
   final SdkOptional<String> webhookId;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1({required this.kind, this.webhookId = const SdkOmitted()});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1(
+      {required this.kind, this.webhookId = const SdkOmitted()});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1 Function({ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1Kind kind, SdkOptional<String> webhookId}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1 Function(
+      {ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1Kind kind,
+      SdkOptional<String> webhookId}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1 _copyWith({Object? kind = sdkOmittedValue, Object? webhookId = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1Kind,
-    webhookId: identical(webhookId, sdkOmittedValue) ? this.webhookId : webhookId as SdkOptional<String>,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1 _copyWith(
+          {Object? kind = sdkOmittedValue,
+          Object? webhookId = sdkOmittedValue}) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1(
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind
+                as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1Kind,
+        webhookId: identical(webhookId, sdkOmittedValue)
+            ? this.webhookId
+            : webhookId as SdkOptional<String>,
+      );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1(
-    kind: (json['kind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1Kind.fromJson(json['kind'] as String) : null)!,
-    webhookId: json['webhookId'] != null ? SdkPresent((json['webhookId'] as String?)!) : const SdkOmitted(),
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1(
+        kind: (json['kind'] != null
+            ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant1Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        webhookId: json['webhookId'] != null
+            ? SdkPresent((json['webhookId'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-    ...switch (webhookId) {
-      SdkPresent<String>(value: final value) => {'webhookId': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'kind': kind.toJson(),
+        ...switch (webhookId) {
+          SdkPresent<String>(value: final value) => {
+              'webhookId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2 {
@@ -150,130 +255,247 @@ class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2 {
   static const String constructionSurface = 'named';
   final String externalCheckName;
   final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Kind kind;
-  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider provider;
+  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider
+      provider;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2({required this.externalCheckName, required this.kind, required this.provider});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2(
+      {required this.externalCheckName,
+      required this.kind,
+      required this.provider});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2 Function({String externalCheckName, ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Kind kind, ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider provider}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2 Function(
+      {String externalCheckName,
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Kind kind,
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider
+          provider}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2 _copyWith({Object? externalCheckName = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? provider = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2(
-    externalCheckName: identical(externalCheckName, sdkOmittedValue) ? this.externalCheckName : externalCheckName as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Kind,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2 _copyWith(
+          {Object? externalCheckName = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? provider = sdkOmittedValue}) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2(
+        externalCheckName: identical(externalCheckName, sdkOmittedValue)
+            ? this.externalCheckName
+            : externalCheckName as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind
+                as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Kind,
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider
+                as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider,
+      );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2(
-    externalCheckName: (json['externalCheckName'] as String?)!,
-    kind: (json['kind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Kind.fromJson(json['kind'] as String) : null)!,
-    provider: (json['provider'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider.fromJson(json['provider'] as String) : null)!,
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2(
+        externalCheckName: (json['externalCheckName'] as String?)!,
+        kind: (json['kind'] != null
+            ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+        provider: (json['provider'] != null
+            ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant2Provider
+                .fromJson(json['provider'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'externalCheckName': externalCheckName,
-    'kind': kind.toJson(),
-    'provider': provider.toJson(),
-  };
+        'externalCheckName': externalCheckName,
+        'kind': kind.toJson(),
+        'provider': provider.toJson(),
+      };
 }
 
 /// Native Vercel checks — check definition and check run `source`.
 class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin> origin;
-  final SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind> subKind;
+  final SdkOptional<
+          ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin>
+      origin;
+  final SdkOptional<
+          ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind>
+      subKind;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3({this.origin = const SdkOmitted(), this.subKind = const SdkOmitted()});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3(
+      {this.origin = const SdkOmitted(), this.subKind = const SdkOmitted()});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3 Function({SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin> origin, SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind> subKind}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3 Function(
+      {SdkOptional<
+              ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin>
+          origin,
+      SdkOptional<
+              ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind>
+          subKind}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3 _copyWith({Object? origin = sdkOmittedValue, Object? subKind = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3(
-    origin: identical(origin, sdkOmittedValue) ? this.origin : origin as SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin>,
-    subKind: identical(subKind, sdkOmittedValue) ? this.subKind : subKind as SdkOptional<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind>,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3 _copyWith(
+          {Object? origin = sdkOmittedValue,
+          Object? subKind = sdkOmittedValue}) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3(
+        origin: identical(origin, sdkOmittedValue)
+            ? this.origin
+            : origin as SdkOptional<
+                ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin>,
+        subKind: identical(subKind, sdkOmittedValue)
+            ? this.subKind
+            : subKind as SdkOptional<
+                ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind>,
+      );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3(
-    origin: json['origin'] != null ? SdkPresent((json['origin'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin.fromJson(json['origin'] as String) : null)!) : const SdkOmitted(),
-    subKind: json['subKind'] != null ? SdkPresent((json['subKind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind.fromJson(json['subKind'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3(
+        origin: json['origin'] != null
+            ? SdkPresent((json['origin'] != null
+                ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin
+                    .fromJson(json['origin'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        subKind: json['subKind'] != null
+            ? SdkPresent((json['subKind'] != null
+                ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind
+                    .fromJson(json['subKind'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (origin) {
-      SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin>(value: final value) => {'origin': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (subKind) {
-      SdkPresent<ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind>(value: final value) => {'subKind': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (origin) {
+          SdkPresent<
+                ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3Origin>(
+            value: final value
+          ) =>
+            {
+              'origin': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (subKind) {
+          SdkPresent<
+                ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant3SubKind>(
+            value: final value
+          ) =>
+            {
+              'subKind': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind kind;
+  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind
+      kind;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0({required this.kind});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
+      {required this.kind});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0 Function({ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind kind}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0 Function(
+      {ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind
+          kind}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0 _copyWith({Object? kind = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0
+      _copyWith({Object? kind = sdkOmittedValue}) =>
+          ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind,
+          );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
-    kind: (json['kind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind.fromJson(json['kind'] as String) : null)!,
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0(
+        kind: (json['kind'] != null
+            ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant0Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-  };
+        'kind': kind.toJson(),
+      };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind kind;
+  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind
+      kind;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1({required this.kind});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
+      {required this.kind});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1 Function({ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind kind}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1 Function(
+      {ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind
+          kind}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1 _copyWith({Object? kind = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1
+      _copyWith({Object? kind = sdkOmittedValue}) =>
+          ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind,
+          );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
-    kind: (json['kind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind.fromJson(json['kind'] as String) : null)!,
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1(
+        kind: (json['kind'] != null
+            ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant1Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind.toJson(),
-  };
+        'kind': kind.toJson(),
+      };
 }
 
 class ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String job;
-  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind kind;
+  final ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind
+      kind;
 
-  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2({required this.job, required this.kind});
+  const ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
+      {required this.job, required this.kind});
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2 Function({String job, ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind kind}) get copyWith => _copyWith;
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2 Function(
+      {String job,
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind
+          kind}) get copyWith => _copyWith;
 
-  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2 _copyWith({Object? job = sdkOmittedValue, Object? kind = sdkOmittedValue}) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
-    job: identical(job, sdkOmittedValue) ? this.job : job as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind,
-  );
+  ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2
+      _copyWith(
+              {Object? job = sdkOmittedValue,
+              Object? kind = sdkOmittedValue}) =>
+          ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
+            job: identical(job, sdkOmittedValue) ? this.job : job as String,
+            kind: identical(kind, sdkOmittedValue)
+                ? this.kind
+                : kind
+                    as ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind,
+          );
 
-  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2.fromJson(Map<String, dynamic> json) => ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
-    job: (json['job'] as String?)!,
-    kind: (json['kind'] != null ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind.fromJson(json['kind'] as String) : null)!,
-  );
+  factory ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2(
+        job: (json['job'] as String?)!,
+        kind: (json['kind'] != null
+            ? ListDeploymentCheckRunsResponseRunsItemVariant0SourceVariant4SelectionVariant2Kind
+                .fromJson(json['kind'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'job': job,
-    'kind': kind.toJson(),
-  };
+        'job': job,
+        'kind': kind.toJson(),
+      };
 }

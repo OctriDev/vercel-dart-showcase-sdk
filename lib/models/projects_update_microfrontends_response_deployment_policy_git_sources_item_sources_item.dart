@@ -9,33 +9,60 @@ class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVaria
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String org;
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider provider;
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+      provider;
   final SdkOptional<String> repo;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0({required this.org, required this.provider, this.repo = const SdkOmitted()});
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+      {required this.org,
+      required this.provider,
+      this.repo = const SdkOmitted()});
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 Function({String org, UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider provider, SdkOptional<String> repo}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 Function(
+      {String org,
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+          provider,
+      SdkOptional<String> repo}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 _copyWith({Object? org = sdkOmittedValue, Object? provider = sdkOmittedValue, Object? repo = sdkOmittedValue}) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-    org: identical(org, sdkOmittedValue) ? this.org : org as String,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider,
-    repo: identical(repo, sdkOmittedValue) ? this.repo : repo as SdkOptional<String>,
-  );
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+      _copyWith(
+              {Object? org = sdkOmittedValue,
+              Object? provider = sdkOmittedValue,
+              Object? repo = sdkOmittedValue}) =>
+          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+            org: identical(org, sdkOmittedValue) ? this.org : org as String,
+            provider: identical(provider, sdkOmittedValue)
+                ? this.provider
+                : provider
+                    as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider,
+            repo: identical(repo, sdkOmittedValue)
+                ? this.repo
+                : repo as SdkOptional<String>,
+          );
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
-    org: (json['org'] as String?)!,
-    provider: (json['provider'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider.fromJson(json['provider'] as String) : null)!,
-    repo: json['repo'] != null ? SdkPresent((json['repo'] as String?)!) : const SdkOmitted(),
-  );
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+        org: (json['org'] as String?)!,
+        provider: (json['provider'] != null
+            ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0Provider
+                .fromJson(json['provider'] as String)
+            : null)!,
+        repo: json['repo'] != null
+            ? SdkPresent((json['repo'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'org': org,
-    'provider': provider.toJson(),
-    ...switch (repo) {
-      SdkPresent<String>(value: final value) => {'repo': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'org': org,
+        'provider': provider.toJson(),
+        ...switch (repo) {
+          SdkPresent<String>(value: final value) => {
+              'repo': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively.
@@ -44,58 +71,121 @@ class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVaria
   static const String constructionSurface = 'named';
   final String namespace;
   final SdkOptional<String> project;
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider provider;
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+      provider;
 
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1({required this.namespace, this.project = const SdkOmitted(), required this.provider});
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+      {required this.namespace,
+      this.project = const SdkOmitted(),
+      required this.provider});
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 Function({String namespace, SdkOptional<String> project, UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider provider}) get copyWith => _copyWith;
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 Function(
+      {String namespace,
+      SdkOptional<String> project,
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+          provider}) get copyWith => _copyWith;
 
-  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 _copyWith({Object? namespace = sdkOmittedValue, Object? project = sdkOmittedValue, Object? provider = sdkOmittedValue}) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-    namespace: identical(namespace, sdkOmittedValue) ? this.namespace : namespace as String,
-    project: identical(project, sdkOmittedValue) ? this.project : project as SdkOptional<String>,
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider,
-  );
+  UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+      _copyWith(
+              {Object? namespace = sdkOmittedValue,
+              Object? project = sdkOmittedValue,
+              Object? provider = sdkOmittedValue}) =>
+          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+            namespace: identical(namespace, sdkOmittedValue)
+                ? this.namespace
+                : namespace as String,
+            project: identical(project, sdkOmittedValue)
+                ? this.project
+                : project as SdkOptional<String>,
+            provider: identical(provider, sdkOmittedValue)
+                ? this.provider
+                : provider
+                    as UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider,
+          );
 
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(Map<String, dynamic> json) => UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
-    namespace: (json['namespace'] as String?)!,
-    project: json['project'] != null ? SdkPresent((json['project'] as String?)!) : const SdkOmitted(),
-    provider: (json['provider'] != null ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider.fromJson(json['provider'] as String) : null)!,
-  );
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+        namespace: (json['namespace'] as String?)!,
+        project: json['project'] != null
+            ? SdkPresent((json['project'] as String?)!)
+            : const SdkOmitted(),
+        provider: (json['provider'] != null
+            ? UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1Provider
+                .fromJson(json['provider'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'namespace': namespace,
-    ...switch (project) {
-      SdkPresent<String>(value: final value) => {'project': value,},
-      _ => const <String, dynamic>{},
-    },
-    'provider': provider.toJson(),
-  };
+        'namespace': namespace,
+        ...switch (project) {
+          SdkPresent<String>(value: final value) => {
+              'project': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'provider': provider.toJson(),
+      };
 }
 
 sealed class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem();
-  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem.fromJson(Object? json) {
+  factory UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem.fromJson(
+      Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(value); } } catch (_) {}
-      try { final value = UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+                .fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem");
+    try {
+      return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+          UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem");
   }
   Object? toJson();
 }
 
-final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem {
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0 value;
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+    extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem {
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0
+      value;
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem {
-  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1 value;
-  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+    extends UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItem {
+  final UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1
+      value;
+  const UpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemUpdateMicrofrontendsResponseDeploymentPolicyGitSourcesItemSourcesItemVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

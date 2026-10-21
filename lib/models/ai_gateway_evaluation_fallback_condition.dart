@@ -8,165 +8,251 @@ part of 'ai_gateway.dart';
 class AiGatewayEvaluationFallbackConditionVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `confidenceBelow` wire field.
   final double confidenceBelow;
+
   /// Optional `string` value serialized in the `question` wire field.
   final SdkOptional<String> question;
 
-  const AiGatewayEvaluationFallbackConditionVariant0({required this.confidenceBelow, this.question = const SdkOmitted()});
+  const AiGatewayEvaluationFallbackConditionVariant0(
+      {required this.confidenceBelow, this.question = const SdkOmitted()});
 
-  AiGatewayEvaluationFallbackConditionVariant0 Function({double confidenceBelow, SdkOptional<String> question}) get copyWith => _copyWith;
+  AiGatewayEvaluationFallbackConditionVariant0 Function(
+      {double confidenceBelow,
+      SdkOptional<String> question}) get copyWith => _copyWith;
 
-  AiGatewayEvaluationFallbackConditionVariant0 _copyWith({Object? confidenceBelow = sdkOmittedValue, Object? question = sdkOmittedValue}) => AiGatewayEvaluationFallbackConditionVariant0(
-    confidenceBelow: identical(confidenceBelow, sdkOmittedValue) ? this.confidenceBelow : confidenceBelow as double,
-    question: identical(question, sdkOmittedValue) ? this.question : question as SdkOptional<String>,
-  );
+  AiGatewayEvaluationFallbackConditionVariant0 _copyWith(
+          {Object? confidenceBelow = sdkOmittedValue,
+          Object? question = sdkOmittedValue}) =>
+      AiGatewayEvaluationFallbackConditionVariant0(
+        confidenceBelow: identical(confidenceBelow, sdkOmittedValue)
+            ? this.confidenceBelow
+            : confidenceBelow as double,
+        question: identical(question, sdkOmittedValue)
+            ? this.question
+            : question as SdkOptional<String>,
+      );
 
-  factory AiGatewayEvaluationFallbackConditionVariant0.fromJson(Map<String, dynamic> json) => AiGatewayEvaluationFallbackConditionVariant0(
-    confidenceBelow: ((json['confidenceBelow'] as num?)?.toDouble())!,
-    question: json['question'] != null ? SdkPresent((json['question'] as String?)!) : const SdkOmitted(),
-  );
+  factory AiGatewayEvaluationFallbackConditionVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayEvaluationFallbackConditionVariant0(
+        confidenceBelow: ((json['confidenceBelow'] as num?)?.toDouble())!,
+        question: json['question'] != null
+            ? SdkPresent((json['question'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'confidenceBelow': confidenceBelow,
-    ...switch (question) {
-      SdkPresent<String>(value: final value) => {'question': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'confidenceBelow': confidenceBelow,
+        ...switch (question) {
+          SdkPresent<String>(value: final value) => {
+              'question': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Without a question, checks every Boolean question.
 class AiGatewayEvaluationFallbackConditionVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `probabilityBetween` wire field.
   final List<double> probabilityBetween;
+
   /// Optional `string` value serialized in the `question` wire field.
   final SdkOptional<String> question;
 
-  const AiGatewayEvaluationFallbackConditionVariant1({required this.probabilityBetween, this.question = const SdkOmitted()});
+  const AiGatewayEvaluationFallbackConditionVariant1(
+      {required this.probabilityBetween, this.question = const SdkOmitted()});
 
-  AiGatewayEvaluationFallbackConditionVariant1 Function({List<double> probabilityBetween, SdkOptional<String> question}) get copyWith => _copyWith;
+  AiGatewayEvaluationFallbackConditionVariant1 Function(
+      {List<double> probabilityBetween,
+      SdkOptional<String> question}) get copyWith => _copyWith;
 
-  AiGatewayEvaluationFallbackConditionVariant1 _copyWith({Object? probabilityBetween = sdkOmittedValue, Object? question = sdkOmittedValue}) => AiGatewayEvaluationFallbackConditionVariant1(
-    probabilityBetween: identical(probabilityBetween, sdkOmittedValue) ? this.probabilityBetween : probabilityBetween as List<double>,
-    question: identical(question, sdkOmittedValue) ? this.question : question as SdkOptional<String>,
-  );
+  AiGatewayEvaluationFallbackConditionVariant1 _copyWith(
+          {Object? probabilityBetween = sdkOmittedValue,
+          Object? question = sdkOmittedValue}) =>
+      AiGatewayEvaluationFallbackConditionVariant1(
+        probabilityBetween: identical(probabilityBetween, sdkOmittedValue)
+            ? this.probabilityBetween
+            : probabilityBetween as List<double>,
+        question: identical(question, sdkOmittedValue)
+            ? this.question
+            : question as SdkOptional<String>,
+      );
 
-  factory AiGatewayEvaluationFallbackConditionVariant1.fromJson(Map<String, dynamic> json) => AiGatewayEvaluationFallbackConditionVariant1(
-    probabilityBetween: ((json['probabilityBetween'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    question: json['question'] != null ? SdkPresent((json['question'] as String?)!) : const SdkOmitted(),
-  );
+  factory AiGatewayEvaluationFallbackConditionVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayEvaluationFallbackConditionVariant1(
+        probabilityBetween: ((json['probabilityBetween'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        question: json['question'] != null
+            ? SdkPresent((json['question'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'probabilityBetween': probabilityBetween,
-    ...switch (question) {
-      SdkPresent<String>(value: final value) => {'question': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'probabilityBetween': probabilityBetween,
+        ...switch (question) {
+          SdkPresent<String>(value: final value) => {
+              'question': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `when` wire field.
 class AiGatewayEvaluationFallbackConditionVariant2 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `any` wire field.
   final List<AiGatewayEvaluationFallbackCondition> any;
 
   const AiGatewayEvaluationFallbackConditionVariant2({required this.any});
 
-  AiGatewayEvaluationFallbackConditionVariant2 Function({List<AiGatewayEvaluationFallbackCondition> any}) get copyWith => _copyWith;
+  AiGatewayEvaluationFallbackConditionVariant2 Function(
+          {List<AiGatewayEvaluationFallbackCondition> any})
+      get copyWith => _copyWith;
 
-  AiGatewayEvaluationFallbackConditionVariant2 _copyWith({Object? any = sdkOmittedValue}) => AiGatewayEvaluationFallbackConditionVariant2(
-    any: identical(any, sdkOmittedValue) ? this.any : any as List<AiGatewayEvaluationFallbackCondition>,
-  );
+  AiGatewayEvaluationFallbackConditionVariant2 _copyWith(
+          {Object? any = sdkOmittedValue}) =>
+      AiGatewayEvaluationFallbackConditionVariant2(
+        any: identical(any, sdkOmittedValue)
+            ? this.any
+            : any as List<AiGatewayEvaluationFallbackCondition>,
+      );
 
-  factory AiGatewayEvaluationFallbackConditionVariant2.fromJson(Map<String, dynamic> json) => AiGatewayEvaluationFallbackConditionVariant2(
-    any: ((json['any'] as List?)?.map((e) => AiGatewayEvaluationFallbackCondition.fromJson(e)).toList())!,
-  );
+  factory AiGatewayEvaluationFallbackConditionVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayEvaluationFallbackConditionVariant2(
+        any: ((json['any'] as List?)
+            ?.map((e) => AiGatewayEvaluationFallbackCondition.fromJson(e))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'any': any.map((item) => item.toJson()).toList(),
-  };
+        'any': any.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// Required object value serialized in the `any[]` wire field.
 class AiGatewayEvaluationFallbackConditionVariant3 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `all` wire field.
   final List<AiGatewayEvaluationFallbackCondition> all;
 
   const AiGatewayEvaluationFallbackConditionVariant3({required this.all});
 
-  AiGatewayEvaluationFallbackConditionVariant3 Function({List<AiGatewayEvaluationFallbackCondition> all}) get copyWith => _copyWith;
+  AiGatewayEvaluationFallbackConditionVariant3 Function(
+          {List<AiGatewayEvaluationFallbackCondition> all})
+      get copyWith => _copyWith;
 
-  AiGatewayEvaluationFallbackConditionVariant3 _copyWith({Object? all = sdkOmittedValue}) => AiGatewayEvaluationFallbackConditionVariant3(
-    all: identical(all, sdkOmittedValue) ? this.all : all as List<AiGatewayEvaluationFallbackCondition>,
-  );
+  AiGatewayEvaluationFallbackConditionVariant3 _copyWith(
+          {Object? all = sdkOmittedValue}) =>
+      AiGatewayEvaluationFallbackConditionVariant3(
+        all: identical(all, sdkOmittedValue)
+            ? this.all
+            : all as List<AiGatewayEvaluationFallbackCondition>,
+      );
 
-  factory AiGatewayEvaluationFallbackConditionVariant3.fromJson(Map<String, dynamic> json) => AiGatewayEvaluationFallbackConditionVariant3(
-    all: ((json['all'] as List?)?.map((e) => AiGatewayEvaluationFallbackCondition.fromJson(e)).toList())!,
-  );
+  factory AiGatewayEvaluationFallbackConditionVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayEvaluationFallbackConditionVariant3(
+        all: ((json['all'] as List?)
+            ?.map((e) => AiGatewayEvaluationFallbackCondition.fromJson(e))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'all': all.map((item) => item.toJson()).toList(),
-  };
+        'all': all.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// Required object value serialized in the `atLeast` wire field.
 class AiGatewayEvaluationFallbackConditionVariant4AtLeast {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `conditions` wire field.
   final List<AiGatewayEvaluationFallbackCondition> conditions;
+
   /// Required `number` value serialized in the `count` wire field.
   final double count;
 
-  const AiGatewayEvaluationFallbackConditionVariant4AtLeast({required this.conditions, required this.count});
+  const AiGatewayEvaluationFallbackConditionVariant4AtLeast(
+      {required this.conditions, required this.count});
 
-  AiGatewayEvaluationFallbackConditionVariant4AtLeast Function({List<AiGatewayEvaluationFallbackCondition> conditions, double count}) get copyWith => _copyWith;
+  AiGatewayEvaluationFallbackConditionVariant4AtLeast Function(
+      {List<AiGatewayEvaluationFallbackCondition> conditions,
+      double count}) get copyWith => _copyWith;
 
-  AiGatewayEvaluationFallbackConditionVariant4AtLeast _copyWith({Object? conditions = sdkOmittedValue, Object? count = sdkOmittedValue}) => AiGatewayEvaluationFallbackConditionVariant4AtLeast(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<AiGatewayEvaluationFallbackCondition>,
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-  );
+  AiGatewayEvaluationFallbackConditionVariant4AtLeast _copyWith(
+          {Object? conditions = sdkOmittedValue,
+          Object? count = sdkOmittedValue}) =>
+      AiGatewayEvaluationFallbackConditionVariant4AtLeast(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<AiGatewayEvaluationFallbackCondition>,
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+      );
 
-  factory AiGatewayEvaluationFallbackConditionVariant4AtLeast.fromJson(Map<String, dynamic> json) => AiGatewayEvaluationFallbackConditionVariant4AtLeast(
-    conditions: ((json['conditions'] as List?)?.map((e) => AiGatewayEvaluationFallbackCondition.fromJson(e)).toList())!,
-    count: ((json['count'] as num?)?.toDouble())!,
-  );
+  factory AiGatewayEvaluationFallbackConditionVariant4AtLeast.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayEvaluationFallbackConditionVariant4AtLeast(
+        conditions: ((json['conditions'] as List?)
+            ?.map((e) => AiGatewayEvaluationFallbackCondition.fromJson(e))
+            .toList())!,
+        count: ((json['count'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-    'count': count,
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+        'count': count,
+      };
 }
 
 /// Required object value serialized in the `all[]` wire field.
 class AiGatewayEvaluationFallbackConditionVariant4 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `atLeast` wire field.
   final AiGatewayEvaluationFallbackConditionVariant4AtLeast atLeast;
 
   const AiGatewayEvaluationFallbackConditionVariant4({required this.atLeast});
 
-  AiGatewayEvaluationFallbackConditionVariant4 Function({AiGatewayEvaluationFallbackConditionVariant4AtLeast atLeast}) get copyWith => _copyWith;
+  AiGatewayEvaluationFallbackConditionVariant4 Function(
+          {AiGatewayEvaluationFallbackConditionVariant4AtLeast atLeast})
+      get copyWith => _copyWith;
 
-  AiGatewayEvaluationFallbackConditionVariant4 _copyWith({Object? atLeast = sdkOmittedValue}) => AiGatewayEvaluationFallbackConditionVariant4(
-    atLeast: identical(atLeast, sdkOmittedValue) ? this.atLeast : atLeast as AiGatewayEvaluationFallbackConditionVariant4AtLeast,
-  );
+  AiGatewayEvaluationFallbackConditionVariant4 _copyWith(
+          {Object? atLeast = sdkOmittedValue}) =>
+      AiGatewayEvaluationFallbackConditionVariant4(
+        atLeast: identical(atLeast, sdkOmittedValue)
+            ? this.atLeast
+            : atLeast as AiGatewayEvaluationFallbackConditionVariant4AtLeast,
+      );
 
-  factory AiGatewayEvaluationFallbackConditionVariant4.fromJson(Map<String, dynamic> json) => AiGatewayEvaluationFallbackConditionVariant4(
-    atLeast: (json['atLeast'] != null ? AiGatewayEvaluationFallbackConditionVariant4AtLeast.fromJson(json['atLeast'] as Map<String, dynamic>) : null)!,
-  );
+  factory AiGatewayEvaluationFallbackConditionVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      AiGatewayEvaluationFallbackConditionVariant4(
+        atLeast: (json['atLeast'] != null
+            ? AiGatewayEvaluationFallbackConditionVariant4AtLeast.fromJson(
+                json['atLeast'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'atLeast': atLeast.toJson(),
-  };
+        'atLeast': atLeast.toJson(),
+      };
 }
 
 sealed class AiGatewayEvaluationFallbackCondition {
@@ -175,48 +261,119 @@ sealed class AiGatewayEvaluationFallbackCondition {
   const AiGatewayEvaluationFallbackCondition();
   factory AiGatewayEvaluationFallbackCondition.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = AiGatewayEvaluationFallbackConditionVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0(value); } } catch (_) {}
-      try { final value = AiGatewayEvaluationFallbackConditionVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1(value); } } catch (_) {}
-      try { final value = AiGatewayEvaluationFallbackConditionVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2(value); } } catch (_) {}
-      try { final value = AiGatewayEvaluationFallbackConditionVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3(value); } } catch (_) {}
-      try { final value = AiGatewayEvaluationFallbackConditionVariant4.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4(value); } } catch (_) {}
+      try {
+        final value =
+            AiGatewayEvaluationFallbackConditionVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            AiGatewayEvaluationFallbackConditionVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            AiGatewayEvaluationFallbackConditionVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            AiGatewayEvaluationFallbackConditionVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            AiGatewayEvaluationFallbackConditionVariant4.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0(AiGatewayEvaluationFallbackConditionVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1(AiGatewayEvaluationFallbackConditionVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2(AiGatewayEvaluationFallbackConditionVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3(AiGatewayEvaluationFallbackConditionVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4(AiGatewayEvaluationFallbackConditionVariant4.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for AiGatewayEvaluationFallbackCondition");
+    try {
+      return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0(
+          AiGatewayEvaluationFallbackConditionVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1(
+          AiGatewayEvaluationFallbackConditionVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2(
+          AiGatewayEvaluationFallbackConditionVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3(
+          AiGatewayEvaluationFallbackConditionVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4(
+          AiGatewayEvaluationFallbackConditionVariant4.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for AiGatewayEvaluationFallbackCondition");
   }
   Object? toJson();
 }
 
-final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0 extends AiGatewayEvaluationFallbackCondition {
+final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0
+    extends AiGatewayEvaluationFallbackCondition {
   final AiGatewayEvaluationFallbackConditionVariant0 value;
-  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1 extends AiGatewayEvaluationFallbackCondition {
+final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1
+    extends AiGatewayEvaluationFallbackCondition {
   final AiGatewayEvaluationFallbackConditionVariant1 value;
-  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2 extends AiGatewayEvaluationFallbackCondition {
+final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2
+    extends AiGatewayEvaluationFallbackCondition {
   final AiGatewayEvaluationFallbackConditionVariant2 value;
-  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3 extends AiGatewayEvaluationFallbackCondition {
+final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3
+    extends AiGatewayEvaluationFallbackCondition {
   final AiGatewayEvaluationFallbackConditionVariant3 value;
-  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4 extends AiGatewayEvaluationFallbackCondition {
+final class AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4
+    extends AiGatewayEvaluationFallbackCondition {
   final AiGatewayEvaluationFallbackConditionVariant4 value;
-  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4(this.value);
-  @override Object? toJson() => value.toJson();
+  const AiGatewayEvaluationFallbackConditionAiGatewayEvaluationFallbackConditionVariant4(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

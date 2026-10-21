@@ -10,24 +10,43 @@ class GetSecurityFirewallConfigResponseDraftCrsSqli {
   final GetSecurityFirewallConfigResponseDraftCrsSqliAction action;
   final GetSecurityFirewallConfigResponseDraftCrsSqliActive active;
 
-  const GetSecurityFirewallConfigResponseDraftCrsSqli({required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseDraftCrsSqli(
+      {required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseDraftCrsSqli Function({GetSecurityFirewallConfigResponseDraftCrsSqliAction action, GetSecurityFirewallConfigResponseDraftCrsSqliActive active}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftCrsSqli Function(
+          {GetSecurityFirewallConfigResponseDraftCrsSqliAction action,
+          GetSecurityFirewallConfigResponseDraftCrsSqliActive active})
+      get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftCrsSqli _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftCrsSqli(
-    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseDraftCrsSqliAction,
-    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseDraftCrsSqliActive,
-  );
+  GetSecurityFirewallConfigResponseDraftCrsSqli _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponseDraftCrsSqli(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as GetSecurityFirewallConfigResponseDraftCrsSqliAction,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active as GetSecurityFirewallConfigResponseDraftCrsSqliActive,
+      );
 
-  factory GetSecurityFirewallConfigResponseDraftCrsSqli.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftCrsSqli(
-    action: (json['action'] != null ? GetSecurityFirewallConfigResponseDraftCrsSqliAction.fromJson(json['action'] as String) : null)!,
-    active: (json['active'] != null ? GetSecurityFirewallConfigResponseDraftCrsSqliActive.fromJson(json['active'] as bool) : null)!,
-  );
+  factory GetSecurityFirewallConfigResponseDraftCrsSqli.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponseDraftCrsSqli(
+        action: (json['action'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsSqliAction.fromJson(
+                json['action'] as String)
+            : null)!,
+        active: (json['active'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsSqliActive.fromJson(
+                json['active'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'active': active.toJson(),
-  };
+        'action': action.toJson(),
+        'active': active.toJson(),
+      };
 }
 
 class GetSecurityFirewallConfigResponseDraftCrsXss {
@@ -36,24 +55,43 @@ class GetSecurityFirewallConfigResponseDraftCrsXss {
   final GetSecurityFirewallConfigResponseDraftCrsXssAction action;
   final GetSecurityFirewallConfigResponseDraftCrsXssActive active;
 
-  const GetSecurityFirewallConfigResponseDraftCrsXss({required this.action, required this.active});
+  const GetSecurityFirewallConfigResponseDraftCrsXss(
+      {required this.action, required this.active});
 
-  GetSecurityFirewallConfigResponseDraftCrsXss Function({GetSecurityFirewallConfigResponseDraftCrsXssAction action, GetSecurityFirewallConfigResponseDraftCrsXssActive active}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftCrsXss Function(
+          {GetSecurityFirewallConfigResponseDraftCrsXssAction action,
+          GetSecurityFirewallConfigResponseDraftCrsXssActive active})
+      get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftCrsXss _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftCrsXss(
-    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseDraftCrsXssAction,
-    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseDraftCrsXssActive,
-  );
+  GetSecurityFirewallConfigResponseDraftCrsXss _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponseDraftCrsXss(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as GetSecurityFirewallConfigResponseDraftCrsXssAction,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active as GetSecurityFirewallConfigResponseDraftCrsXssActive,
+      );
 
-  factory GetSecurityFirewallConfigResponseDraftCrsXss.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftCrsXss(
-    action: (json['action'] != null ? GetSecurityFirewallConfigResponseDraftCrsXssAction.fromJson(json['action'] as String) : null)!,
-    active: (json['active'] != null ? GetSecurityFirewallConfigResponseDraftCrsXssActive.fromJson(json['active'] as bool) : null)!,
-  );
+  factory GetSecurityFirewallConfigResponseDraftCrsXss.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponseDraftCrsXss(
+        action: (json['action'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsXssAction.fromJson(
+                json['action'] as String)
+            : null)!,
+        active: (json['active'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsXssActive.fromJson(
+                json['active'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'active': active.toJson(),
-  };
+        'action': action.toJson(),
+        'active': active.toJson(),
+      };
 }
 
 class GetSecurityFirewallConfigResponseDraftCrs {
@@ -71,51 +109,143 @@ class GetSecurityFirewallConfigResponseDraftCrs {
   final GetSecurityFirewallConfigResponseDraftCrsSqli sqli;
   final GetSecurityFirewallConfigResponseDraftCrsXss xss;
 
-  const GetSecurityFirewallConfigResponseDraftCrs({required this.gen, required this.java, required this.lfi, required this.ma, required this.php, required this.rce, required this.rfi, required this.sd, required this.sf, required this.sqli, required this.xss});
+  const GetSecurityFirewallConfigResponseDraftCrs(
+      {required this.gen,
+      required this.java,
+      required this.lfi,
+      required this.ma,
+      required this.php,
+      required this.rce,
+      required this.rfi,
+      required this.sd,
+      required this.sf,
+      required this.sqli,
+      required this.xss});
 
-  GetSecurityFirewallConfigResponseDraftCrs Function({GetSecurityFirewallConfigResponseDraftCrsGen gen, GetSecurityFirewallConfigResponseDraftCrsJava java, GetSecurityFirewallConfigResponseDraftCrsLfi lfi, GetSecurityFirewallConfigResponseDraftCrsMa ma, GetSecurityFirewallConfigResponseDraftCrsPhp php, GetSecurityFirewallConfigResponseDraftCrsRce rce, GetSecurityFirewallConfigResponseDraftCrsRfi rfi, GetSecurityFirewallConfigResponseDraftCrsSd sd, GetSecurityFirewallConfigResponseDraftCrsSf sf, GetSecurityFirewallConfigResponseDraftCrsSqli sqli, GetSecurityFirewallConfigResponseDraftCrsXss xss}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftCrs Function(
+          {GetSecurityFirewallConfigResponseDraftCrsGen gen,
+          GetSecurityFirewallConfigResponseDraftCrsJava java,
+          GetSecurityFirewallConfigResponseDraftCrsLfi lfi,
+          GetSecurityFirewallConfigResponseDraftCrsMa ma,
+          GetSecurityFirewallConfigResponseDraftCrsPhp php,
+          GetSecurityFirewallConfigResponseDraftCrsRce rce,
+          GetSecurityFirewallConfigResponseDraftCrsRfi rfi,
+          GetSecurityFirewallConfigResponseDraftCrsSd sd,
+          GetSecurityFirewallConfigResponseDraftCrsSf sf,
+          GetSecurityFirewallConfigResponseDraftCrsSqli sqli,
+          GetSecurityFirewallConfigResponseDraftCrsXss xss})
+      get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftCrs _copyWith({Object? gen = sdkOmittedValue, Object? java = sdkOmittedValue, Object? lfi = sdkOmittedValue, Object? ma = sdkOmittedValue, Object? php = sdkOmittedValue, Object? rce = sdkOmittedValue, Object? rfi = sdkOmittedValue, Object? sd = sdkOmittedValue, Object? sf = sdkOmittedValue, Object? sqli = sdkOmittedValue, Object? xss = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftCrs(
-    gen: identical(gen, sdkOmittedValue) ? this.gen : gen as GetSecurityFirewallConfigResponseDraftCrsGen,
-    java: identical(java, sdkOmittedValue) ? this.java : java as GetSecurityFirewallConfigResponseDraftCrsJava,
-    lfi: identical(lfi, sdkOmittedValue) ? this.lfi : lfi as GetSecurityFirewallConfigResponseDraftCrsLfi,
-    ma: identical(ma, sdkOmittedValue) ? this.ma : ma as GetSecurityFirewallConfigResponseDraftCrsMa,
-    php: identical(php, sdkOmittedValue) ? this.php : php as GetSecurityFirewallConfigResponseDraftCrsPhp,
-    rce: identical(rce, sdkOmittedValue) ? this.rce : rce as GetSecurityFirewallConfigResponseDraftCrsRce,
-    rfi: identical(rfi, sdkOmittedValue) ? this.rfi : rfi as GetSecurityFirewallConfigResponseDraftCrsRfi,
-    sd: identical(sd, sdkOmittedValue) ? this.sd : sd as GetSecurityFirewallConfigResponseDraftCrsSd,
-    sf: identical(sf, sdkOmittedValue) ? this.sf : sf as GetSecurityFirewallConfigResponseDraftCrsSf,
-    sqli: identical(sqli, sdkOmittedValue) ? this.sqli : sqli as GetSecurityFirewallConfigResponseDraftCrsSqli,
-    xss: identical(xss, sdkOmittedValue) ? this.xss : xss as GetSecurityFirewallConfigResponseDraftCrsXss,
-  );
+  GetSecurityFirewallConfigResponseDraftCrs _copyWith(
+          {Object? gen = sdkOmittedValue,
+          Object? java = sdkOmittedValue,
+          Object? lfi = sdkOmittedValue,
+          Object? ma = sdkOmittedValue,
+          Object? php = sdkOmittedValue,
+          Object? rce = sdkOmittedValue,
+          Object? rfi = sdkOmittedValue,
+          Object? sd = sdkOmittedValue,
+          Object? sf = sdkOmittedValue,
+          Object? sqli = sdkOmittedValue,
+          Object? xss = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponseDraftCrs(
+        gen: identical(gen, sdkOmittedValue)
+            ? this.gen
+            : gen as GetSecurityFirewallConfigResponseDraftCrsGen,
+        java: identical(java, sdkOmittedValue)
+            ? this.java
+            : java as GetSecurityFirewallConfigResponseDraftCrsJava,
+        lfi: identical(lfi, sdkOmittedValue)
+            ? this.lfi
+            : lfi as GetSecurityFirewallConfigResponseDraftCrsLfi,
+        ma: identical(ma, sdkOmittedValue)
+            ? this.ma
+            : ma as GetSecurityFirewallConfigResponseDraftCrsMa,
+        php: identical(php, sdkOmittedValue)
+            ? this.php
+            : php as GetSecurityFirewallConfigResponseDraftCrsPhp,
+        rce: identical(rce, sdkOmittedValue)
+            ? this.rce
+            : rce as GetSecurityFirewallConfigResponseDraftCrsRce,
+        rfi: identical(rfi, sdkOmittedValue)
+            ? this.rfi
+            : rfi as GetSecurityFirewallConfigResponseDraftCrsRfi,
+        sd: identical(sd, sdkOmittedValue)
+            ? this.sd
+            : sd as GetSecurityFirewallConfigResponseDraftCrsSd,
+        sf: identical(sf, sdkOmittedValue)
+            ? this.sf
+            : sf as GetSecurityFirewallConfigResponseDraftCrsSf,
+        sqli: identical(sqli, sdkOmittedValue)
+            ? this.sqli
+            : sqli as GetSecurityFirewallConfigResponseDraftCrsSqli,
+        xss: identical(xss, sdkOmittedValue)
+            ? this.xss
+            : xss as GetSecurityFirewallConfigResponseDraftCrsXss,
+      );
 
-  factory GetSecurityFirewallConfigResponseDraftCrs.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftCrs(
-    gen: (json['gen'] != null ? GetSecurityFirewallConfigResponseDraftCrsGen.fromJson(json['gen'] as Map<String, dynamic>) : null)!,
-    java: (json['java'] != null ? GetSecurityFirewallConfigResponseDraftCrsJava.fromJson(json['java'] as Map<String, dynamic>) : null)!,
-    lfi: (json['lfi'] != null ? GetSecurityFirewallConfigResponseDraftCrsLfi.fromJson(json['lfi'] as Map<String, dynamic>) : null)!,
-    ma: (json['ma'] != null ? GetSecurityFirewallConfigResponseDraftCrsMa.fromJson(json['ma'] as Map<String, dynamic>) : null)!,
-    php: (json['php'] != null ? GetSecurityFirewallConfigResponseDraftCrsPhp.fromJson(json['php'] as Map<String, dynamic>) : null)!,
-    rce: (json['rce'] != null ? GetSecurityFirewallConfigResponseDraftCrsRce.fromJson(json['rce'] as Map<String, dynamic>) : null)!,
-    rfi: (json['rfi'] != null ? GetSecurityFirewallConfigResponseDraftCrsRfi.fromJson(json['rfi'] as Map<String, dynamic>) : null)!,
-    sd: (json['sd'] != null ? GetSecurityFirewallConfigResponseDraftCrsSd.fromJson(json['sd'] as Map<String, dynamic>) : null)!,
-    sf: (json['sf'] != null ? GetSecurityFirewallConfigResponseDraftCrsSf.fromJson(json['sf'] as Map<String, dynamic>) : null)!,
-    sqli: (json['sqli'] != null ? GetSecurityFirewallConfigResponseDraftCrsSqli.fromJson(json['sqli'] as Map<String, dynamic>) : null)!,
-    xss: (json['xss'] != null ? GetSecurityFirewallConfigResponseDraftCrsXss.fromJson(json['xss'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetSecurityFirewallConfigResponseDraftCrs.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponseDraftCrs(
+        gen: (json['gen'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsGen.fromJson(
+                json['gen'] as Map<String, dynamic>)
+            : null)!,
+        java: (json['java'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsJava.fromJson(
+                json['java'] as Map<String, dynamic>)
+            : null)!,
+        lfi: (json['lfi'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsLfi.fromJson(
+                json['lfi'] as Map<String, dynamic>)
+            : null)!,
+        ma: (json['ma'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsMa.fromJson(
+                json['ma'] as Map<String, dynamic>)
+            : null)!,
+        php: (json['php'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsPhp.fromJson(
+                json['php'] as Map<String, dynamic>)
+            : null)!,
+        rce: (json['rce'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsRce.fromJson(
+                json['rce'] as Map<String, dynamic>)
+            : null)!,
+        rfi: (json['rfi'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsRfi.fromJson(
+                json['rfi'] as Map<String, dynamic>)
+            : null)!,
+        sd: (json['sd'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsSd.fromJson(
+                json['sd'] as Map<String, dynamic>)
+            : null)!,
+        sf: (json['sf'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsSf.fromJson(
+                json['sf'] as Map<String, dynamic>)
+            : null)!,
+        sqli: (json['sqli'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsSqli.fromJson(
+                json['sqli'] as Map<String, dynamic>)
+            : null)!,
+        xss: (json['xss'] != null
+            ? GetSecurityFirewallConfigResponseDraftCrsXss.fromJson(
+                json['xss'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'gen': gen.toJson(),
-    'java': java.toJson(),
-    'lfi': lfi.toJson(),
-    'ma': ma.toJson(),
-    'php': php.toJson(),
-    'rce': rce.toJson(),
-    'rfi': rfi.toJson(),
-    'sd': sd.toJson(),
-    'sf': sf.toJson(),
-    'sqli': sqli.toJson(),
-    'xss': xss.toJson(),
-  };
+        'gen': gen.toJson(),
+        'java': java.toJson(),
+        'lfi': lfi.toJson(),
+        'ma': ma.toJson(),
+        'php': php.toJson(),
+        'rce': rce.toJson(),
+        'rfi': rfi.toJson(),
+        'sd': sd.toJson(),
+        'sf': sf.toJson(),
+        'sqli': sqli.toJson(),
+        'xss': xss.toJson(),
+      };
 }
 
 class GetSecurityFirewallConfigResponseDraftIpsItem {
@@ -127,134 +257,286 @@ class GetSecurityFirewallConfigResponseDraftIpsItem {
   final String ip;
   final SdkOptional<String> notes;
 
-  const GetSecurityFirewallConfigResponseDraftIpsItem({required this.action, required this.hostname, required this.id, required this.ip, this.notes = const SdkOmitted()});
+  const GetSecurityFirewallConfigResponseDraftIpsItem(
+      {required this.action,
+      required this.hostname,
+      required this.id,
+      required this.ip,
+      this.notes = const SdkOmitted()});
 
-  GetSecurityFirewallConfigResponseDraftIpsItem Function({GetSecurityFirewallConfigResponseDraftIpsItemAction action, String hostname, String id, String ip, SdkOptional<String> notes}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftIpsItem Function(
+      {GetSecurityFirewallConfigResponseDraftIpsItemAction action,
+      String hostname,
+      String id,
+      String ip,
+      SdkOptional<String> notes}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftIpsItem _copyWith({Object? action = sdkOmittedValue, Object? hostname = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ip = sdkOmittedValue, Object? notes = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftIpsItem(
-    action: identical(action, sdkOmittedValue) ? this.action : action as GetSecurityFirewallConfigResponseDraftIpsItemAction,
-    hostname: identical(hostname, sdkOmittedValue) ? this.hostname : hostname as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
-    notes: identical(notes, sdkOmittedValue) ? this.notes : notes as SdkOptional<String>,
-  );
+  GetSecurityFirewallConfigResponseDraftIpsItem _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? hostname = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? ip = sdkOmittedValue,
+          Object? notes = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponseDraftIpsItem(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as GetSecurityFirewallConfigResponseDraftIpsItemAction,
+        hostname: identical(hostname, sdkOmittedValue)
+            ? this.hostname
+            : hostname as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
+        notes: identical(notes, sdkOmittedValue)
+            ? this.notes
+            : notes as SdkOptional<String>,
+      );
 
-  factory GetSecurityFirewallConfigResponseDraftIpsItem.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftIpsItem(
-    action: (json['action'] != null ? GetSecurityFirewallConfigResponseDraftIpsItemAction.fromJson(json['action'] as String) : null)!,
-    hostname: (json['hostname'] as String?)!,
-    id: (json['id'] as String?)!,
-    ip: (json['ip'] as String?)!,
-    notes: json['notes'] != null ? SdkPresent((json['notes'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetSecurityFirewallConfigResponseDraftIpsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponseDraftIpsItem(
+        action: (json['action'] != null
+            ? GetSecurityFirewallConfigResponseDraftIpsItemAction.fromJson(
+                json['action'] as String)
+            : null)!,
+        hostname: (json['hostname'] as String?)!,
+        id: (json['id'] as String?)!,
+        ip: (json['ip'] as String?)!,
+        notes: json['notes'] != null
+            ? SdkPresent((json['notes'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'action': action.toJson(),
-    'hostname': hostname,
-    'id': id,
-    'ip': ip,
-    ...switch (notes) {
-      SdkPresent<String>(value: final value) => {'notes': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'action': action.toJson(),
+        'hostname': hostname,
+        'id': id,
+        'ip': ip,
+        ...switch (notes) {
+          SdkPresent<String>(value: final value) => {
+              'notes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetSecurityFirewallConfigResponseDraftManagedRulesAiBots {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction> action;
+  final SdkOptional<
+      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction> action;
   final GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive active;
   final SdkOptional<String> updatedAt;
   final SdkOptional<String> userId;
   final SdkOptional<String> username;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesAiBots({this.action = const SdkOmitted(), required this.active, this.updatedAt = const SdkOmitted(), this.userId = const SdkOmitted(), this.username = const SdkOmitted()});
+  const GetSecurityFirewallConfigResponseDraftManagedRulesAiBots(
+      {this.action = const SdkOmitted(),
+      required this.active,
+      this.updatedAt = const SdkOmitted(),
+      this.userId = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  GetSecurityFirewallConfigResponseDraftManagedRulesAiBots Function({SdkOptional<GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction> action, GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive active, SdkOptional<String> updatedAt, SdkOptional<String> userId, SdkOptional<String> username}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftManagedRulesAiBots Function(
+      {SdkOptional<
+              GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction>
+          action,
+      GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive active,
+      SdkOptional<String> updatedAt,
+      SdkOptional<String> userId,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftManagedRulesAiBots _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? username = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftManagedRulesAiBots(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<String>,
-    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  GetSecurityFirewallConfigResponseDraftManagedRulesAiBots _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? userId = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponseDraftManagedRulesAiBots(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<
+                GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction>,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active
+                as GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<String>,
+        userId: identical(userId, sdkOmittedValue)
+            ? this.userId
+            : userId as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesAiBots.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftManagedRulesAiBots(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive.fromJson(json['active'] as bool) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent((json['updatedAt'] as String?)!) : const SdkOmitted(),
-    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesAiBots.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponseDraftManagedRulesAiBots(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent((json['updatedAt'] as String?)!)
+            : const SdkOmitted(),
+        userId: json['userId'] != null
+            ? SdkPresent((json['userId'] as String?)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<String>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (userId) {
-      SdkPresent<String>(value: final value) => {'userId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<
+                GetSecurityFirewallConfigResponseDraftManagedRulesAiBotsAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<String>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (userId) {
+          SdkPresent<String>(value: final value) => {
+              'userId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction> action;
-  final GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive active;
+  final SdkOptional<
+          GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction>
+      action;
+  final GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive
+      active;
   final SdkOptional<String> updatedAt;
   final SdkOptional<String> userId;
   final SdkOptional<String> username;
 
-  const GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection({this.action = const SdkOmitted(), required this.active, this.updatedAt = const SdkOmitted(), this.userId = const SdkOmitted(), this.username = const SdkOmitted()});
+  const GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection(
+      {this.action = const SdkOmitted(),
+      required this.active,
+      this.updatedAt = const SdkOmitted(),
+      this.userId = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection Function({SdkOptional<GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction> action, GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive active, SdkOptional<String> updatedAt, SdkOptional<String> userId, SdkOptional<String> username}) get copyWith => _copyWith;
+  GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection Function(
+      {SdkOptional<
+              GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction>
+          action,
+      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive
+          active,
+      SdkOptional<String> updatedAt,
+      SdkOptional<String> userId,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? username = sdkOmittedValue}) => GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<String>,
-    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? userId = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<
+                GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction>,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active
+                as GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<String>,
+        userId: identical(userId, sdkOmittedValue)
+            ? this.userId
+            : userId as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection.fromJson(Map<String, dynamic> json) => GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive.fromJson(json['active'] as bool) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent((json['updatedAt'] as String?)!) : const SdkOmitted(),
-    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection.fromJson(
+          Map<String, dynamic> json) =>
+      GetSecurityFirewallConfigResponseDraftManagedRulesBotProtection(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent((json['updatedAt'] as String?)!)
+            : const SdkOmitted(),
+        userId: json['userId'] != null
+            ? SdkPresent((json['userId'] as String?)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<String>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (userId) {
-      SdkPresent<String>(value: final value) => {'userId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<
+                GetSecurityFirewallConfigResponseDraftManagedRulesBotProtectionAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<String>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (userId) {
+          SdkPresent<String>(value: final value) => {
+              'userId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

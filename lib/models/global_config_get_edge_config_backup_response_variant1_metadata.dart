@@ -12,42 +12,81 @@ class GetEdgeConfigBackupResponseVariant1Metadata {
   final SdkOptional<String> updatedAt;
   final SdkOptional<String> updatedBy;
 
-  const GetEdgeConfigBackupResponseVariant1Metadata({this.itemsBytes = const SdkOmitted(), this.itemsCount = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted()});
+  const GetEdgeConfigBackupResponseVariant1Metadata(
+      {this.itemsBytes = const SdkOmitted(),
+      this.itemsCount = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.updatedBy = const SdkOmitted()});
 
-  GetEdgeConfigBackupResponseVariant1Metadata Function({SdkOptional<double> itemsBytes, SdkOptional<double> itemsCount, SdkOptional<String> updatedAt, SdkOptional<String> updatedBy}) get copyWith => _copyWith;
+  GetEdgeConfigBackupResponseVariant1Metadata Function(
+      {SdkOptional<double> itemsBytes,
+      SdkOptional<double> itemsCount,
+      SdkOptional<String> updatedAt,
+      SdkOptional<String> updatedBy}) get copyWith => _copyWith;
 
-  GetEdgeConfigBackupResponseVariant1Metadata _copyWith({Object? itemsBytes = sdkOmittedValue, Object? itemsCount = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue}) => GetEdgeConfigBackupResponseVariant1Metadata(
-    itemsBytes: identical(itemsBytes, sdkOmittedValue) ? this.itemsBytes : itemsBytes as SdkOptional<double>,
-    itemsCount: identical(itemsCount, sdkOmittedValue) ? this.itemsCount : itemsCount as SdkOptional<double>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<String>,
-    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String>,
-  );
+  GetEdgeConfigBackupResponseVariant1Metadata _copyWith(
+          {Object? itemsBytes = sdkOmittedValue,
+          Object? itemsCount = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedBy = sdkOmittedValue}) =>
+      GetEdgeConfigBackupResponseVariant1Metadata(
+        itemsBytes: identical(itemsBytes, sdkOmittedValue)
+            ? this.itemsBytes
+            : itemsBytes as SdkOptional<double>,
+        itemsCount: identical(itemsCount, sdkOmittedValue)
+            ? this.itemsCount
+            : itemsCount as SdkOptional<double>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<String>,
+        updatedBy: identical(updatedBy, sdkOmittedValue)
+            ? this.updatedBy
+            : updatedBy as SdkOptional<String>,
+      );
 
-  factory GetEdgeConfigBackupResponseVariant1Metadata.fromJson(Map<String, dynamic> json) => GetEdgeConfigBackupResponseVariant1Metadata(
-    itemsBytes: json['itemsBytes'] != null ? SdkPresent(((json['itemsBytes'] as num?)?.toDouble())!) : const SdkOmitted(),
-    itemsCount: json['itemsCount'] != null ? SdkPresent(((json['itemsCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent((json['updatedAt'] as String?)!) : const SdkOmitted(),
-    updatedBy: json['updatedBy'] != null ? SdkPresent((json['updatedBy'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetEdgeConfigBackupResponseVariant1Metadata.fromJson(
+          Map<String, dynamic> json) =>
+      GetEdgeConfigBackupResponseVariant1Metadata(
+        itemsBytes: json['itemsBytes'] != null
+            ? SdkPresent(((json['itemsBytes'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        itemsCount: json['itemsCount'] != null
+            ? SdkPresent(((json['itemsCount'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent((json['updatedAt'] as String?)!)
+            : const SdkOmitted(),
+        updatedBy: json['updatedBy'] != null
+            ? SdkPresent((json['updatedBy'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (itemsBytes) {
-      SdkPresent<double>(value: final value) => {'itemsBytes': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (itemsCount) {
-      SdkPresent<double>(value: final value) => {'itemsCount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<String>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedBy) {
-      SdkPresent<String>(value: final value) => {'updatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (itemsBytes) {
+          SdkPresent<double>(value: final value) => {
+              'itemsBytes': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (itemsCount) {
+          SdkPresent<double>(value: final value) => {
+              'itemsCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<String>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedBy) {
+          SdkPresent<String>(value: final value) => {
+              'updatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetEdgeConfigBackupResponseVariant1User {
@@ -59,39 +98,71 @@ class GetEdgeConfigBackupResponseVariant1User {
   final SdkOptional<String> name;
   final String username;
 
-  const GetEdgeConfigBackupResponseVariant1User({this.avatar = const SdkOmitted(), required this.email, required this.id, this.name = const SdkOmitted(), required this.username});
+  const GetEdgeConfigBackupResponseVariant1User(
+      {this.avatar = const SdkOmitted(),
+      required this.email,
+      required this.id,
+      this.name = const SdkOmitted(),
+      required this.username});
 
-  GetEdgeConfigBackupResponseVariant1User Function({SdkOptional<String> avatar, String email, String id, SdkOptional<String> name, String username}) get copyWith => _copyWith;
+  GetEdgeConfigBackupResponseVariant1User Function(
+      {SdkOptional<String> avatar,
+      String email,
+      String id,
+      SdkOptional<String> name,
+      String username}) get copyWith => _copyWith;
 
-  GetEdgeConfigBackupResponseVariant1User _copyWith({Object? avatar = sdkOmittedValue, Object? email = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? username = sdkOmittedValue}) => GetEdgeConfigBackupResponseVariant1User(
-    avatar: identical(avatar, sdkOmittedValue) ? this.avatar : avatar as SdkOptional<String>,
-    email: identical(email, sdkOmittedValue) ? this.email : email as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as String,
-  );
+  GetEdgeConfigBackupResponseVariant1User _copyWith(
+          {Object? avatar = sdkOmittedValue,
+          Object? email = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      GetEdgeConfigBackupResponseVariant1User(
+        avatar: identical(avatar, sdkOmittedValue)
+            ? this.avatar
+            : avatar as SdkOptional<String>,
+        email: identical(email, sdkOmittedValue) ? this.email : email as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as String,
+      );
 
-  factory GetEdgeConfigBackupResponseVariant1User.fromJson(Map<String, dynamic> json) => GetEdgeConfigBackupResponseVariant1User(
-    avatar: json['avatar'] != null ? SdkPresent((json['avatar'] as String?)!) : const SdkOmitted(),
-    email: (json['email'] as String?)!,
-    id: (json['id'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    username: (json['username'] as String?)!,
-  );
+  factory GetEdgeConfigBackupResponseVariant1User.fromJson(
+          Map<String, dynamic> json) =>
+      GetEdgeConfigBackupResponseVariant1User(
+        avatar: json['avatar'] != null
+            ? SdkPresent((json['avatar'] as String?)!)
+            : const SdkOmitted(),
+        email: (json['email'] as String?)!,
+        id: (json['id'] as String?)!,
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+        username: (json['username'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (avatar) {
-      SdkPresent<String>(value: final value) => {'avatar': value,},
-      _ => const <String, dynamic>{},
-    },
-    'email': email,
-    'id': id,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    'username': username,
-  };
+        ...switch (avatar) {
+          SdkPresent<String>(value: final value) => {
+              'avatar': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'email': email,
+        'id': id,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'username': username,
+      };
 }
 
 class GetEdgeConfigBackupResponseVariant1 {
@@ -103,33 +174,68 @@ class GetEdgeConfigBackupResponseVariant1 {
   final GetEdgeConfigBackupResponseVariant1Metadata metadata;
   final GetEdgeConfigBackupResponseVariant1User user;
 
-  const GetEdgeConfigBackupResponseVariant1({required this.backup, required this.id, required this.lastModified, required this.metadata, required this.user});
+  const GetEdgeConfigBackupResponseVariant1(
+      {required this.backup,
+      required this.id,
+      required this.lastModified,
+      required this.metadata,
+      required this.user});
 
-  GetEdgeConfigBackupResponseVariant1 Function({GetEdgeConfigBackupResponseVariant1Backup backup, String id, double lastModified, GetEdgeConfigBackupResponseVariant1Metadata metadata, GetEdgeConfigBackupResponseVariant1User user}) get copyWith => _copyWith;
+  GetEdgeConfigBackupResponseVariant1 Function(
+      {GetEdgeConfigBackupResponseVariant1Backup backup,
+      String id,
+      double lastModified,
+      GetEdgeConfigBackupResponseVariant1Metadata metadata,
+      GetEdgeConfigBackupResponseVariant1User user}) get copyWith => _copyWith;
 
-  GetEdgeConfigBackupResponseVariant1 _copyWith({Object? backup = sdkOmittedValue, Object? id = sdkOmittedValue, Object? lastModified = sdkOmittedValue, Object? metadata = sdkOmittedValue, Object? user = sdkOmittedValue}) => GetEdgeConfigBackupResponseVariant1(
-    backup: identical(backup, sdkOmittedValue) ? this.backup : backup as GetEdgeConfigBackupResponseVariant1Backup,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    lastModified: identical(lastModified, sdkOmittedValue) ? this.lastModified : lastModified as double,
-    metadata: identical(metadata, sdkOmittedValue) ? this.metadata : metadata as GetEdgeConfigBackupResponseVariant1Metadata,
-    user: identical(user, sdkOmittedValue) ? this.user : user as GetEdgeConfigBackupResponseVariant1User,
-  );
+  GetEdgeConfigBackupResponseVariant1 _copyWith(
+          {Object? backup = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? lastModified = sdkOmittedValue,
+          Object? metadata = sdkOmittedValue,
+          Object? user = sdkOmittedValue}) =>
+      GetEdgeConfigBackupResponseVariant1(
+        backup: identical(backup, sdkOmittedValue)
+            ? this.backup
+            : backup as GetEdgeConfigBackupResponseVariant1Backup,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        lastModified: identical(lastModified, sdkOmittedValue)
+            ? this.lastModified
+            : lastModified as double,
+        metadata: identical(metadata, sdkOmittedValue)
+            ? this.metadata
+            : metadata as GetEdgeConfigBackupResponseVariant1Metadata,
+        user: identical(user, sdkOmittedValue)
+            ? this.user
+            : user as GetEdgeConfigBackupResponseVariant1User,
+      );
 
-  factory GetEdgeConfigBackupResponseVariant1.fromJson(Map<String, dynamic> json) => GetEdgeConfigBackupResponseVariant1(
-    backup: (json['backup'] != null ? GetEdgeConfigBackupResponseVariant1Backup.fromJson(json['backup'] as Map<String, dynamic>) : null)!,
-    id: (json['id'] as String?)!,
-    lastModified: ((json['lastModified'] as num?)?.toDouble())!,
-    metadata: (json['metadata'] != null ? GetEdgeConfigBackupResponseVariant1Metadata.fromJson(json['metadata'] as Map<String, dynamic>) : null)!,
-    user: (json['user'] != null ? GetEdgeConfigBackupResponseVariant1User.fromJson(json['user'] as Map<String, dynamic>) : null)!,
-  );
+  factory GetEdgeConfigBackupResponseVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetEdgeConfigBackupResponseVariant1(
+        backup: (json['backup'] != null
+            ? GetEdgeConfigBackupResponseVariant1Backup.fromJson(
+                json['backup'] as Map<String, dynamic>)
+            : null)!,
+        id: (json['id'] as String?)!,
+        lastModified: ((json['lastModified'] as num?)?.toDouble())!,
+        metadata: (json['metadata'] != null
+            ? GetEdgeConfigBackupResponseVariant1Metadata.fromJson(
+                json['metadata'] as Map<String, dynamic>)
+            : null)!,
+        user: (json['user'] != null
+            ? GetEdgeConfigBackupResponseVariant1User.fromJson(
+                json['user'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'backup': backup.toJson(),
-    'id': id,
-    'lastModified': lastModified,
-    'metadata': metadata.toJson(),
-    'user': user.toJson(),
-  };
+        'backup': backup.toJson(),
+        'id': id,
+        'lastModified': lastModified,
+        'metadata': metadata.toJson(),
+        'user': user.toJson(),
+      };
 }
 
 sealed class GetEdgeConfigBackupResponse {
@@ -138,24 +244,50 @@ sealed class GetEdgeConfigBackupResponse {
   const GetEdgeConfigBackupResponse();
   factory GetEdgeConfigBackupResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = GetEdgeConfigBackupResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0(value); } } catch (_) {}
-      try { final value = GetEdgeConfigBackupResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = GetEdgeConfigBackupResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = GetEdgeConfigBackupResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0(GetEdgeConfigBackupResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1(GetEdgeConfigBackupResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0(
+          GetEdgeConfigBackupResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1(
+          GetEdgeConfigBackupResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for GetEdgeConfigBackupResponse");
   }
   Object? toJson();
 }
 
-final class GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0 extends GetEdgeConfigBackupResponse {
+final class GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0
+    extends GetEdgeConfigBackupResponse {
   final GetEdgeConfigBackupResponseVariant0 value;
-  const GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1 extends GetEdgeConfigBackupResponse {
+final class GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1
+    extends GetEdgeConfigBackupResponse {
   final GetEdgeConfigBackupResponseVariant1 value;
-  const GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const GetEdgeConfigBackupResponseGetEdgeConfigBackupResponseVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

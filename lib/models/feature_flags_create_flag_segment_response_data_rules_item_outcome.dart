@@ -9,21 +9,34 @@ class CreateFlagSegmentResponseDataRulesItemOutcomeVariant0 {
   static const String constructionSurface = 'named';
   final CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type type_;
 
-  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant0({required this.type_});
+  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
+      {required this.type_});
 
-  CreateFlagSegmentResponseDataRulesItemOutcomeVariant0 Function({CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type type_}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataRulesItemOutcomeVariant0 Function(
+          {CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type type_})
+      get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataRulesItemOutcomeVariant0 _copyWith({Object? type_ = sdkOmittedValue}) => CreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type,
-  );
+  CreateFlagSegmentResponseDataRulesItemOutcomeVariant0 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      CreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type,
+      );
 
-  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant0.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
-    type_: (json['type'] != null ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
+        type_: (json['type'] != null
+            ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 class CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base {
@@ -33,27 +46,46 @@ class CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base {
   final String kind;
   final CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType type_;
 
-  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base({required this.attribute, required this.kind, required this.type_});
+  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base(
+      {required this.attribute, required this.kind, required this.type_});
 
-  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base Function({String attribute, String kind, CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType type_}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base Function(
+          {String attribute,
+          String kind,
+          CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType type_})
+      get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base _copyWith({Object? attribute = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base(
-    attribute: identical(attribute, sdkOmittedValue) ? this.attribute : attribute as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType,
-  );
+  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base _copyWith(
+          {Object? attribute = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base(
+        attribute: identical(attribute, sdkOmittedValue)
+            ? this.attribute
+            : attribute as String,
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType,
+      );
 
-  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base(
-    attribute: (json['attribute'] as String?)!,
-    kind: (json['kind'] as String?)!,
-    type_: (json['type'] != null ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType.fromJson(json['type'] as String) : null)!,
-  );
+  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base(
+        attribute: (json['attribute'] as String?)!,
+        kind: (json['kind'] as String?)!,
+        type_: (json['type'] != null
+            ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant1BaseType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'attribute': attribute,
-    'kind': kind,
-    'type': type_.toJson(),
-  };
+        'attribute': attribute,
+        'kind': kind,
+        'type': type_.toJson(),
+      };
 }
 
 class CreateFlagSegmentResponseDataRulesItemOutcomeVariant1 {
@@ -63,27 +95,52 @@ class CreateFlagSegmentResponseDataRulesItemOutcomeVariant1 {
   final double passPromille;
   final CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type type_;
 
-  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant1({required this.base_, required this.passPromille, required this.type_});
+  const CreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
+      {required this.base_, required this.passPromille, required this.type_});
 
-  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1 Function({CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base base_, double passPromille, CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type type_}) get copyWith => _copyWith;
+  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1 Function(
+          {CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base base_,
+          double passPromille,
+          CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type type_})
+      get copyWith => _copyWith;
 
-  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1 _copyWith({Object? base_ = sdkOmittedValue, Object? passPromille = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => CreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
-    base_: identical(base_, sdkOmittedValue) ? this.base_ : base_ as CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base,
-    passPromille: identical(passPromille, sdkOmittedValue) ? this.passPromille : passPromille as double,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type,
-  );
+  CreateFlagSegmentResponseDataRulesItemOutcomeVariant1 _copyWith(
+          {Object? base_ = sdkOmittedValue,
+          Object? passPromille = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      CreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
+        base_: identical(base_, sdkOmittedValue)
+            ? this.base_
+            : base_
+                as CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base,
+        passPromille: identical(passPromille, sdkOmittedValue)
+            ? this.passPromille
+            : passPromille as double,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_
+                as CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type,
+      );
 
-  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant1.fromJson(Map<String, dynamic> json) => CreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
-    base_: (json['base'] != null ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base.fromJson(json['base'] as Map<String, dynamic>) : null)!,
-    passPromille: ((json['passPromille'] as num?)?.toDouble())!,
-    type_: (json['type'] != null ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory CreateFlagSegmentResponseDataRulesItemOutcomeVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
+        base_: (json['base'] != null
+            ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Base
+                .fromJson(json['base'] as Map<String, dynamic>)
+            : null)!,
+        passPromille: ((json['passPromille'] as num?)?.toDouble())!,
+        type_: (json['type'] != null
+            ? CreateFlagSegmentResponseDataRulesItemOutcomeVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'base': base_.toJson(),
-    'passPromille': passPromille,
-    'type': type_.toJson(),
-  };
+        'base': base_.toJson(),
+        'passPromille': passPromille,
+        'type': type_.toJson(),
+      };
 }
 
 sealed class CreateFlagSegmentResponseDataRulesItemOutcome {
@@ -92,24 +149,55 @@ sealed class CreateFlagSegmentResponseDataRulesItemOutcome {
   const CreateFlagSegmentResponseDataRulesItemOutcome();
   factory CreateFlagSegmentResponseDataRulesItemOutcome.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CreateFlagSegmentResponseDataRulesItemOutcomeVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0(value); } } catch (_) {}
-      try { final value = CreateFlagSegmentResponseDataRulesItemOutcomeVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1(value); } } catch (_) {}
+      try {
+        final value =
+            CreateFlagSegmentResponseDataRulesItemOutcomeVariant0.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value =
+            CreateFlagSegmentResponseDataRulesItemOutcomeVariant1.fromJson(
+                json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0(CreateFlagSegmentResponseDataRulesItemOutcomeVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1(CreateFlagSegmentResponseDataRulesItemOutcomeVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for CreateFlagSegmentResponseDataRulesItemOutcome");
+    try {
+      return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
+          CreateFlagSegmentResponseDataRulesItemOutcomeVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
+          CreateFlagSegmentResponseDataRulesItemOutcomeVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for CreateFlagSegmentResponseDataRulesItemOutcome");
   }
   Object? toJson();
 }
 
-final class CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0 extends CreateFlagSegmentResponseDataRulesItemOutcome {
+final class CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0
+    extends CreateFlagSegmentResponseDataRulesItemOutcome {
   final CreateFlagSegmentResponseDataRulesItemOutcomeVariant0 value;
-  const CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1 extends CreateFlagSegmentResponseDataRulesItemOutcome {
+final class CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1
+    extends CreateFlagSegmentResponseDataRulesItemOutcome {
   final CreateFlagSegmentResponseDataRulesItemOutcomeVariant1 value;
-  const CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const CreateFlagSegmentResponseDataRulesItemOutcomeCreateFlagSegmentResponseDataRulesItemOutcomeVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

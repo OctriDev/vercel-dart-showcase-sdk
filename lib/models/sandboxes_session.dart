@@ -8,207 +8,420 @@ part of 'sandboxes.dart';
 class SessionNetworkTransfer {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `egress` wire field.
   final double egress;
+
   /// Required `number` value serialized in the `ingress` wire field.
   final double ingress;
 
   const SessionNetworkTransfer({required this.egress, required this.ingress});
 
-  SessionNetworkTransfer Function({double egress, double ingress}) get copyWith => _copyWith;
+  SessionNetworkTransfer Function({double egress, double ingress})
+      get copyWith => _copyWith;
 
-  SessionNetworkTransfer _copyWith({Object? egress = sdkOmittedValue, Object? ingress = sdkOmittedValue}) => SessionNetworkTransfer(
-    egress: identical(egress, sdkOmittedValue) ? this.egress : egress as double,
-    ingress: identical(ingress, sdkOmittedValue) ? this.ingress : ingress as double,
-  );
+  SessionNetworkTransfer _copyWith(
+          {Object? egress = sdkOmittedValue,
+          Object? ingress = sdkOmittedValue}) =>
+      SessionNetworkTransfer(
+        egress:
+            identical(egress, sdkOmittedValue) ? this.egress : egress as double,
+        ingress: identical(ingress, sdkOmittedValue)
+            ? this.ingress
+            : ingress as double,
+      );
 
-  factory SessionNetworkTransfer.fromJson(Map<String, dynamic> json) => SessionNetworkTransfer(
-    egress: ((json['egress'] as num?)?.toDouble())!,
-    ingress: ((json['ingress'] as num?)?.toDouble())!,
-  );
+  factory SessionNetworkTransfer.fromJson(Map<String, dynamic> json) =>
+      SessionNetworkTransfer(
+        egress: ((json['egress'] as num?)?.toDouble())!,
+        ingress: ((json['ingress'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'egress': egress,
-    'ingress': ingress,
-  };
+        'egress': egress,
+        'ingress': ingress,
+      };
 }
 
 /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
 class Session {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The time when the sandbox was aborted, in milliseconds since the epoch.
   final SdkOptional<double> abortedAt;
+
   /// The amount of CPU time the sandbox consumed, if available, in milliseconds. This value is only available once the sandbox is stopped, and only if it stopped successfully.
   final SdkOptional<double> activeCpuDurationMs;
+
   /// CPU architecture of the sandbox.
   final SdkOptional<SessionArchitecture> architecture;
+
   /// The time when the sandbox was created, in milliseconds since the epoch.
   final double createdAt;
+
   /// The working directory of the sandbox.
   final String cwd;
+
   /// The duration of the sandbox in milliseconds.
   final SdkOptional<double> duration;
+
   /// The unique identifier of the sandbox.
   final String id;
+
   /// Memory allocated to this sandbox in MB.
   final double memory;
+
   /// The network policy applied to this sandbox, if any.
   final SdkOptional<SandboxNetworkPolicy> networkPolicy;
+
   /// The quantity of data transfered to and from the sandbox, in bytes. This value is only available once the sandbox is stopped, and only if it stopped successfully.
   final SdkOptional<SessionNetworkTransfer> networkTransfer;
+
   /// The unique identifier of the project associated with this session.
   final String projectId;
+
   /// The region where the sandbox is hosted.
   final String region;
+
   /// The time when the sandbox was requested, in milliseconds since the epoch.
   final double requestedAt;
+
   /// The time when the sandbox was requested to stop, in milliseconds since the epoch.
   final SdkOptional<double> requestedStopAt;
+
   /// The runtime of the sandbox.
   final String runtime;
+
   /// The time when a snapshot was requested, in milliseconds since the epoch.
   final SdkOptional<double> snapshottedAt;
+
   /// The name of the source sandbox.
   final String sourceSandboxName;
+
   /// The unique identifier of the snapshot associated with this sandbox, if any.
   final SdkOptional<String> sourceSnapshotId;
+
   /// The time when the sandbox was started, in milliseconds since the epoch.
   final SdkOptional<double> startedAt;
+
   /// The status of the sandbox.
   final SessionStatus status;
+
   /// The time when the sandbox was stopped, in milliseconds since the epoch.
   final SdkOptional<double> stoppedAt;
+
   /// The maximum amount of time the sandbox will run for in milliseconds.
   final double timeout;
+
   /// The last time the sandbox was updated, in milliseconds since the epoch.
   final double updatedAt;
+
   /// Whether this sandbox is managed by v0 on the customer's behalf.
   final SdkOptional<SessionV0> v0;
+
   /// Number of vCPUs allocated to this sandbox.
   final double vcpus;
 
-  const Session({this.abortedAt = const SdkOmitted(), this.activeCpuDurationMs = const SdkOmitted(), this.architecture = const SdkOmitted(), required this.createdAt, required this.cwd, this.duration = const SdkOmitted(), required this.id, required this.memory, this.networkPolicy = const SdkOmitted(), this.networkTransfer = const SdkOmitted(), required this.projectId, required this.region, required this.requestedAt, this.requestedStopAt = const SdkOmitted(), required this.runtime, this.snapshottedAt = const SdkOmitted(), required this.sourceSandboxName, this.sourceSnapshotId = const SdkOmitted(), this.startedAt = const SdkOmitted(), required this.status, this.stoppedAt = const SdkOmitted(), required this.timeout, required this.updatedAt, this.v0 = const SdkOmitted(), required this.vcpus});
+  const Session(
+      {this.abortedAt = const SdkOmitted(),
+      this.activeCpuDurationMs = const SdkOmitted(),
+      this.architecture = const SdkOmitted(),
+      required this.createdAt,
+      required this.cwd,
+      this.duration = const SdkOmitted(),
+      required this.id,
+      required this.memory,
+      this.networkPolicy = const SdkOmitted(),
+      this.networkTransfer = const SdkOmitted(),
+      required this.projectId,
+      required this.region,
+      required this.requestedAt,
+      this.requestedStopAt = const SdkOmitted(),
+      required this.runtime,
+      this.snapshottedAt = const SdkOmitted(),
+      required this.sourceSandboxName,
+      this.sourceSnapshotId = const SdkOmitted(),
+      this.startedAt = const SdkOmitted(),
+      required this.status,
+      this.stoppedAt = const SdkOmitted(),
+      required this.timeout,
+      required this.updatedAt,
+      this.v0 = const SdkOmitted(),
+      required this.vcpus});
 
-  Session Function({SdkOptional<double> abortedAt, SdkOptional<double> activeCpuDurationMs, SdkOptional<SessionArchitecture> architecture, double createdAt, String cwd, SdkOptional<double> duration, String id, double memory, SdkOptional<SandboxNetworkPolicy> networkPolicy, SdkOptional<SessionNetworkTransfer> networkTransfer, String projectId, String region, double requestedAt, SdkOptional<double> requestedStopAt, String runtime, SdkOptional<double> snapshottedAt, String sourceSandboxName, SdkOptional<String> sourceSnapshotId, SdkOptional<double> startedAt, SessionStatus status, SdkOptional<double> stoppedAt, double timeout, double updatedAt, SdkOptional<SessionV0> v0, double vcpus}) get copyWith => _copyWith;
+  Session Function(
+      {SdkOptional<double> abortedAt,
+      SdkOptional<double> activeCpuDurationMs,
+      SdkOptional<SessionArchitecture> architecture,
+      double createdAt,
+      String cwd,
+      SdkOptional<double> duration,
+      String id,
+      double memory,
+      SdkOptional<SandboxNetworkPolicy> networkPolicy,
+      SdkOptional<SessionNetworkTransfer> networkTransfer,
+      String projectId,
+      String region,
+      double requestedAt,
+      SdkOptional<double> requestedStopAt,
+      String runtime,
+      SdkOptional<double> snapshottedAt,
+      String sourceSandboxName,
+      SdkOptional<String> sourceSnapshotId,
+      SdkOptional<double> startedAt,
+      SessionStatus status,
+      SdkOptional<double> stoppedAt,
+      double timeout,
+      double updatedAt,
+      SdkOptional<SessionV0> v0,
+      double vcpus}) get copyWith => _copyWith;
 
-  Session _copyWith({Object? abortedAt = sdkOmittedValue, Object? activeCpuDurationMs = sdkOmittedValue, Object? architecture = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? cwd = sdkOmittedValue, Object? duration = sdkOmittedValue, Object? id = sdkOmittedValue, Object? memory = sdkOmittedValue, Object? networkPolicy = sdkOmittedValue, Object? networkTransfer = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? region = sdkOmittedValue, Object? requestedAt = sdkOmittedValue, Object? requestedStopAt = sdkOmittedValue, Object? runtime = sdkOmittedValue, Object? snapshottedAt = sdkOmittedValue, Object? sourceSandboxName = sdkOmittedValue, Object? sourceSnapshotId = sdkOmittedValue, Object? startedAt = sdkOmittedValue, Object? status = sdkOmittedValue, Object? stoppedAt = sdkOmittedValue, Object? timeout = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? v0 = sdkOmittedValue, Object? vcpus = sdkOmittedValue}) => Session(
-    abortedAt: identical(abortedAt, sdkOmittedValue) ? this.abortedAt : abortedAt as SdkOptional<double>,
-    activeCpuDurationMs: identical(activeCpuDurationMs, sdkOmittedValue) ? this.activeCpuDurationMs : activeCpuDurationMs as SdkOptional<double>,
-    architecture: identical(architecture, sdkOmittedValue) ? this.architecture : architecture as SdkOptional<SessionArchitecture>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as String,
-    duration: identical(duration, sdkOmittedValue) ? this.duration : duration as SdkOptional<double>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    memory: identical(memory, sdkOmittedValue) ? this.memory : memory as double,
-    networkPolicy: identical(networkPolicy, sdkOmittedValue) ? this.networkPolicy : networkPolicy as SdkOptional<SandboxNetworkPolicy>,
-    networkTransfer: identical(networkTransfer, sdkOmittedValue) ? this.networkTransfer : networkTransfer as SdkOptional<SessionNetworkTransfer>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    region: identical(region, sdkOmittedValue) ? this.region : region as String,
-    requestedAt: identical(requestedAt, sdkOmittedValue) ? this.requestedAt : requestedAt as double,
-    requestedStopAt: identical(requestedStopAt, sdkOmittedValue) ? this.requestedStopAt : requestedStopAt as SdkOptional<double>,
-    runtime: identical(runtime, sdkOmittedValue) ? this.runtime : runtime as String,
-    snapshottedAt: identical(snapshottedAt, sdkOmittedValue) ? this.snapshottedAt : snapshottedAt as SdkOptional<double>,
-    sourceSandboxName: identical(sourceSandboxName, sdkOmittedValue) ? this.sourceSandboxName : sourceSandboxName as String,
-    sourceSnapshotId: identical(sourceSnapshotId, sdkOmittedValue) ? this.sourceSnapshotId : sourceSnapshotId as SdkOptional<String>,
-    startedAt: identical(startedAt, sdkOmittedValue) ? this.startedAt : startedAt as SdkOptional<double>,
-    status: identical(status, sdkOmittedValue) ? this.status : status as SessionStatus,
-    stoppedAt: identical(stoppedAt, sdkOmittedValue) ? this.stoppedAt : stoppedAt as SdkOptional<double>,
-    timeout: identical(timeout, sdkOmittedValue) ? this.timeout : timeout as double,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<SessionV0>,
-    vcpus: identical(vcpus, sdkOmittedValue) ? this.vcpus : vcpus as double,
-  );
+  Session _copyWith(
+          {Object? abortedAt = sdkOmittedValue,
+          Object? activeCpuDurationMs = sdkOmittedValue,
+          Object? architecture = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? cwd = sdkOmittedValue,
+          Object? duration = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? memory = sdkOmittedValue,
+          Object? networkPolicy = sdkOmittedValue,
+          Object? networkTransfer = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? requestedAt = sdkOmittedValue,
+          Object? requestedStopAt = sdkOmittedValue,
+          Object? runtime = sdkOmittedValue,
+          Object? snapshottedAt = sdkOmittedValue,
+          Object? sourceSandboxName = sdkOmittedValue,
+          Object? sourceSnapshotId = sdkOmittedValue,
+          Object? startedAt = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? stoppedAt = sdkOmittedValue,
+          Object? timeout = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? v0 = sdkOmittedValue,
+          Object? vcpus = sdkOmittedValue}) =>
+      Session(
+        abortedAt: identical(abortedAt, sdkOmittedValue)
+            ? this.abortedAt
+            : abortedAt as SdkOptional<double>,
+        activeCpuDurationMs: identical(activeCpuDurationMs, sdkOmittedValue)
+            ? this.activeCpuDurationMs
+            : activeCpuDurationMs as SdkOptional<double>,
+        architecture: identical(architecture, sdkOmittedValue)
+            ? this.architecture
+            : architecture as SdkOptional<SessionArchitecture>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        cwd: identical(cwd, sdkOmittedValue) ? this.cwd : cwd as String,
+        duration: identical(duration, sdkOmittedValue)
+            ? this.duration
+            : duration as SdkOptional<double>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        memory:
+            identical(memory, sdkOmittedValue) ? this.memory : memory as double,
+        networkPolicy: identical(networkPolicy, sdkOmittedValue)
+            ? this.networkPolicy
+            : networkPolicy as SdkOptional<SandboxNetworkPolicy>,
+        networkTransfer: identical(networkTransfer, sdkOmittedValue)
+            ? this.networkTransfer
+            : networkTransfer as SdkOptional<SessionNetworkTransfer>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        region:
+            identical(region, sdkOmittedValue) ? this.region : region as String,
+        requestedAt: identical(requestedAt, sdkOmittedValue)
+            ? this.requestedAt
+            : requestedAt as double,
+        requestedStopAt: identical(requestedStopAt, sdkOmittedValue)
+            ? this.requestedStopAt
+            : requestedStopAt as SdkOptional<double>,
+        runtime: identical(runtime, sdkOmittedValue)
+            ? this.runtime
+            : runtime as String,
+        snapshottedAt: identical(snapshottedAt, sdkOmittedValue)
+            ? this.snapshottedAt
+            : snapshottedAt as SdkOptional<double>,
+        sourceSandboxName: identical(sourceSandboxName, sdkOmittedValue)
+            ? this.sourceSandboxName
+            : sourceSandboxName as String,
+        sourceSnapshotId: identical(sourceSnapshotId, sdkOmittedValue)
+            ? this.sourceSnapshotId
+            : sourceSnapshotId as SdkOptional<String>,
+        startedAt: identical(startedAt, sdkOmittedValue)
+            ? this.startedAt
+            : startedAt as SdkOptional<double>,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as SessionStatus,
+        stoppedAt: identical(stoppedAt, sdkOmittedValue)
+            ? this.stoppedAt
+            : stoppedAt as SdkOptional<double>,
+        timeout: identical(timeout, sdkOmittedValue)
+            ? this.timeout
+            : timeout as double,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        v0: identical(v0, sdkOmittedValue)
+            ? this.v0
+            : v0 as SdkOptional<SessionV0>,
+        vcpus: identical(vcpus, sdkOmittedValue) ? this.vcpus : vcpus as double,
+      );
 
   factory Session.fromJson(Map<String, dynamic> json) => Session(
-    abortedAt: json['abortedAt'] != null ? SdkPresent(((json['abortedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    activeCpuDurationMs: json['activeCpuDurationMs'] != null ? SdkPresent(((json['activeCpuDurationMs'] as num?)?.toDouble())!) : const SdkOmitted(),
-    architecture: json['architecture'] != null ? SdkPresent((json['architecture'] != null ? SessionArchitecture.fromJson(json['architecture'] as String) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    cwd: (json['cwd'] as String?)!,
-    duration: json['duration'] != null ? SdkPresent(((json['duration'] as num?)?.toDouble())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    memory: ((json['memory'] as num?)?.toDouble())!,
-    networkPolicy: json['networkPolicy'] != null ? SdkPresent((json['networkPolicy'] != null ? SandboxNetworkPolicy.fromJson(json['networkPolicy'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    networkTransfer: json['networkTransfer'] != null ? SdkPresent((json['networkTransfer'] != null ? SessionNetworkTransfer.fromJson(json['networkTransfer'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    projectId: (json['projectId'] as String?)!,
-    region: (json['region'] as String?)!,
-    requestedAt: ((json['requestedAt'] as num?)?.toDouble())!,
-    requestedStopAt: json['requestedStopAt'] != null ? SdkPresent(((json['requestedStopAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    runtime: (json['runtime'] as String?)!,
-    snapshottedAt: json['snapshottedAt'] != null ? SdkPresent(((json['snapshottedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    sourceSandboxName: (json['sourceSandboxName'] as String?)!,
-    sourceSnapshotId: json['sourceSnapshotId'] != null ? SdkPresent((json['sourceSnapshotId'] as String?)!) : const SdkOmitted(),
-    startedAt: json['startedAt'] != null ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    status: (json['status'] != null ? SessionStatus.fromJson(json['status'] as String) : null)!,
-    stoppedAt: json['stoppedAt'] != null ? SdkPresent(((json['stoppedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    timeout: ((json['timeout'] as num?)?.toDouble())!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? SessionV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
-    vcpus: ((json['vcpus'] as num?)?.toDouble())!,
-  );
+        abortedAt: json['abortedAt'] != null
+            ? SdkPresent(((json['abortedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        activeCpuDurationMs: json['activeCpuDurationMs'] != null
+            ? SdkPresent(((json['activeCpuDurationMs'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        architecture: json['architecture'] != null
+            ? SdkPresent((json['architecture'] != null
+                ? SessionArchitecture.fromJson(json['architecture'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        cwd: (json['cwd'] as String?)!,
+        duration: json['duration'] != null
+            ? SdkPresent(((json['duration'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        memory: ((json['memory'] as num?)?.toDouble())!,
+        networkPolicy: json['networkPolicy'] != null
+            ? SdkPresent((json['networkPolicy'] != null
+                ? SandboxNetworkPolicy.fromJson(
+                    json['networkPolicy'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        networkTransfer: json['networkTransfer'] != null
+            ? SdkPresent((json['networkTransfer'] != null
+                ? SessionNetworkTransfer.fromJson(
+                    json['networkTransfer'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        projectId: (json['projectId'] as String?)!,
+        region: (json['region'] as String?)!,
+        requestedAt: ((json['requestedAt'] as num?)?.toDouble())!,
+        requestedStopAt: json['requestedStopAt'] != null
+            ? SdkPresent(((json['requestedStopAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        runtime: (json['runtime'] as String?)!,
+        snapshottedAt: json['snapshottedAt'] != null
+            ? SdkPresent(((json['snapshottedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        sourceSandboxName: (json['sourceSandboxName'] as String?)!,
+        sourceSnapshotId: json['sourceSnapshotId'] != null
+            ? SdkPresent((json['sourceSnapshotId'] as String?)!)
+            : const SdkOmitted(),
+        startedAt: json['startedAt'] != null
+            ? SdkPresent(((json['startedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        status: (json['status'] != null
+            ? SessionStatus.fromJson(json['status'] as String)
+            : null)!,
+        stoppedAt: json['stoppedAt'] != null
+            ? SdkPresent(((json['stoppedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        timeout: ((json['timeout'] as num?)?.toDouble())!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        v0: json['v0'] != null
+            ? SdkPresent((json['v0'] != null
+                ? SessionV0.fromJson(json['v0'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        vcpus: ((json['vcpus'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (abortedAt) {
-      SdkPresent<double>(value: final value) => {'abortedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (activeCpuDurationMs) {
-      SdkPresent<double>(value: final value) => {'activeCpuDurationMs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (architecture) {
-      SdkPresent<SessionArchitecture>(value: final value) => {'architecture': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    'cwd': cwd,
-    ...switch (duration) {
-      SdkPresent<double>(value: final value) => {'duration': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'memory': memory,
-    ...switch (networkPolicy) {
-      SdkPresent<SandboxNetworkPolicy>(value: final value) => {'networkPolicy': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (networkTransfer) {
-      SdkPresent<SessionNetworkTransfer>(value: final value) => {'networkTransfer': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'projectId': projectId,
-    'region': region,
-    'requestedAt': requestedAt,
-    ...switch (requestedStopAt) {
-      SdkPresent<double>(value: final value) => {'requestedStopAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'runtime': runtime,
-    ...switch (snapshottedAt) {
-      SdkPresent<double>(value: final value) => {'snapshottedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'sourceSandboxName': sourceSandboxName,
-    ...switch (sourceSnapshotId) {
-      SdkPresent<String>(value: final value) => {'sourceSnapshotId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (startedAt) {
-      SdkPresent<double>(value: final value) => {'startedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'status': status.toJson(),
-    ...switch (stoppedAt) {
-      SdkPresent<double>(value: final value) => {'stoppedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'timeout': timeout,
-    'updatedAt': updatedAt,
-    ...switch (v0) {
-      SdkPresent<SessionV0>(value: final value) => {'v0': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'vcpus': vcpus,
-  };
+        ...switch (abortedAt) {
+          SdkPresent<double>(value: final value) => {
+              'abortedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (activeCpuDurationMs) {
+          SdkPresent<double>(value: final value) => {
+              'activeCpuDurationMs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (architecture) {
+          SdkPresent<SessionArchitecture>(value: final value) => {
+              'architecture': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        'cwd': cwd,
+        ...switch (duration) {
+          SdkPresent<double>(value: final value) => {
+              'duration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'memory': memory,
+        ...switch (networkPolicy) {
+          SdkPresent<SandboxNetworkPolicy>(value: final value) => {
+              'networkPolicy': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (networkTransfer) {
+          SdkPresent<SessionNetworkTransfer>(value: final value) => {
+              'networkTransfer': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectId': projectId,
+        'region': region,
+        'requestedAt': requestedAt,
+        ...switch (requestedStopAt) {
+          SdkPresent<double>(value: final value) => {
+              'requestedStopAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'runtime': runtime,
+        ...switch (snapshottedAt) {
+          SdkPresent<double>(value: final value) => {
+              'snapshottedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'sourceSandboxName': sourceSandboxName,
+        ...switch (sourceSnapshotId) {
+          SdkPresent<String>(value: final value) => {
+              'sourceSnapshotId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (startedAt) {
+          SdkPresent<double>(value: final value) => {
+              'startedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'status': status.toJson(),
+        ...switch (stoppedAt) {
+          SdkPresent<double>(value: final value) => {
+              'stoppedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'timeout': timeout,
+        'updatedAt': updatedAt,
+        ...switch (v0) {
+          SdkPresent<SessionV0>(value: final value) => {
+              'v0': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'vcpus': vcpus,
+      };
 }

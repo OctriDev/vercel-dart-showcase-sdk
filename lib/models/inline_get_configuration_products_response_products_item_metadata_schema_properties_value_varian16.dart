@@ -9,21 +9,27 @@ class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueV
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0.fromJson(Map<String, dynamic> json) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0(
-    expr: (json['expr'] as String?)!,
-  );
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiDisabledVariant0(
+        expr: (json['expr'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
 class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue {
@@ -31,21 +37,27 @@ class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueV
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue.fromJson(Map<String, dynamic> json) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue(
-    expr: (json['expr'] as String?)!,
-  );
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiFormattedValue(
+        expr: (json['expr'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
 class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0 {
@@ -53,21 +65,27 @@ class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueV
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0.fromJson(Map<String, dynamic> json) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0(
-    expr: (json['expr'] as String?)!,
-  );
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiHiddenVariant0(
+        expr: (json['expr'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
 class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0 {
@@ -75,21 +93,27 @@ class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueV
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0.fromJson(Map<String, dynamic> json) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0(
-    expr: (json['expr'] as String?)!,
-  );
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemDisabledVariant0(
+        expr: (json['expr'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
 class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0 {
@@ -97,21 +121,27 @@ class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueV
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0.fromJson(Map<String, dynamic> json) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0(
-    expr: (json['expr'] as String?)!,
-  );
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItemHiddenVariant0(
+        expr: (json['expr'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }
 
 class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem {
@@ -123,42 +153,83 @@ class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueV
   final String label;
   final String value;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem({this.description = const SdkOmitted(), this.disabled = const SdkOmitted(), this.hidden = const SdkOmitted(), required this.label, required this.value});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem(
+      {this.description = const SdkOmitted(),
+      this.disabled = const SdkOmitted(),
+      this.hidden = const SdkOmitted(),
+      required this.label,
+      required this.value});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem Function({SdkOptional<String> description, SdkOptional<dynamic> disabled, SdkOptional<dynamic> hidden, String label, String value}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem Function(
+      {SdkOptional<String> description,
+      SdkOptional<dynamic> disabled,
+      SdkOptional<dynamic> hidden,
+      String label,
+      String value}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem _copyWith({Object? description = sdkOmittedValue, Object? disabled = sdkOmittedValue, Object? hidden = sdkOmittedValue, Object? label = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem(
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    disabled: identical(disabled, sdkOmittedValue) ? this.disabled : disabled as SdkOptional<dynamic>,
-    hidden: identical(hidden, sdkOmittedValue) ? this.hidden : hidden as SdkOptional<dynamic>,
-    label: identical(label, sdkOmittedValue) ? this.label : label as String,
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem
+      _copyWith(
+              {Object? description = sdkOmittedValue,
+              Object? disabled = sdkOmittedValue,
+              Object? hidden = sdkOmittedValue,
+              Object? label = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem(
+            description: identical(description, sdkOmittedValue)
+                ? this.description
+                : description as SdkOptional<String>,
+            disabled: identical(disabled, sdkOmittedValue)
+                ? this.disabled
+                : disabled as SdkOptional<dynamic>,
+            hidden: identical(hidden, sdkOmittedValue)
+                ? this.hidden
+                : hidden as SdkOptional<dynamic>,
+            label: identical(label, sdkOmittedValue)
+                ? this.label
+                : label as String,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem.fromJson(Map<String, dynamic> json) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem(
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    disabled: json['disabled'] != null ? SdkPresent((json['disabled'])!) : const SdkOmitted(),
-    hidden: json['hidden'] != null ? SdkPresent((json['hidden'])!) : const SdkOmitted(),
-    label: (json['label'] as String?)!,
-    value: (json['value'] as String?)!,
-  );
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiOptionsItem(
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        disabled: json['disabled'] != null
+            ? SdkPresent((json['disabled'])!)
+            : const SdkOmitted(),
+        hidden: json['hidden'] != null
+            ? SdkPresent((json['hidden'])!)
+            : const SdkOmitted(),
+        label: (json['label'] as String?)!,
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (disabled) {
-      SdkPresent<dynamic>(value: final value) => {'disabled': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (hidden) {
-      SdkPresent<dynamic>(value: final value) => {'hidden': value,},
-      _ => const <String, dynamic>{},
-    },
-    'label': label,
-    'value': value,
-  };
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (disabled) {
+          SdkPresent<dynamic>(value: final value) => {
+              'disabled': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (hidden) {
+          SdkPresent<dynamic>(value: final value) => {
+              'hidden': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'label': label,
+        'value': value,
+      };
 }
 
 class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0 {
@@ -166,19 +237,25 @@ class GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueV
   static const String constructionSurface = 'named';
   final String expr;
 
-  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0({required this.expr});
+  const GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
+      {required this.expr});
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0 Function({String expr}) get copyWith => _copyWith;
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0
+      Function({String expr}) get copyWith => _copyWith;
 
-  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0 _copyWith({Object? expr = sdkOmittedValue}) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
-    expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
-  );
+  GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0
+      _copyWith({Object? expr = sdkOmittedValue}) =>
+          GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
+            expr: identical(expr, sdkOmittedValue) ? this.expr : expr as String,
+          );
 
-  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0.fromJson(Map<String, dynamic> json) => GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
-    expr: (json['expr'] as String?)!,
-  );
+  factory GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetConfigurationProductsResponseProductsItemMetadataSchemaPropertiesValueVariant4UiReadOnlyVariant0(
+        expr: (json['expr'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'expr': expr,
-  };
+        'expr': expr,
+      };
 }

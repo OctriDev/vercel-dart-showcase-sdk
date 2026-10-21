@@ -10,24 +10,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant0 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant0Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant0({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant0(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant0 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant0Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant0 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant0Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant0 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant0(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant0Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant0 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant0(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant0Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant0.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant0(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant0Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant0(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant0Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant1 {
@@ -36,24 +52,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant1 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant1Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant1({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant1(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant1 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant1Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant1 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant1Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant1 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant1(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant1Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant1 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant1(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant1Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant1.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant1(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant1Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant1(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant1Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant2 {
@@ -62,24 +94,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant2 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant2Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant2({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant2(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant2 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant2Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant2 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant2Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant2 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant2(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant2Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant2 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant2(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant2Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant2.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant2(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant2(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant3 {
@@ -88,24 +136,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant3 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant3Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant3({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant3(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant3 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant3Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant3 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant3Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant3 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant3(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant3Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant3 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant3(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant3Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant3.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant3(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant3(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant4 {
@@ -114,24 +178,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant4 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant4Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant4({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant4(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant4 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant4Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant4 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant4Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant4 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant4(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant4Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant4 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant4(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant4Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant4.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant4(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant4Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant4.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant4(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant4Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant5 {
@@ -140,24 +220,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant5 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant5Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant5({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant5(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant5 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant5Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant5 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant5Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant5 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant5(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant5Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant5 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant5(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant5Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant5.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant5(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant5Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant5.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant5(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant5Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant6 {
@@ -166,24 +262,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant6 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant6Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant6({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant6(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant6 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant6Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant6 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant6Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant6 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant6(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant6Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant6 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant6(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant6Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant6.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant6(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant6Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant6.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant6(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant6Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant7 {
@@ -192,24 +304,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant7 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant7Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant7({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant7(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant7 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant7Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant7 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant7Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant7 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant7(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant7Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant7 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant7(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant7Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant7.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant7(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant7Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant7.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant7(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant7Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant8 {
@@ -218,24 +346,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant8 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant8Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant8({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant8(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant8 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant8Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant8 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant8Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant8 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant8(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant8Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant8 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant8(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant8Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant8.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant8(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant8Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant8.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant8(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant8Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant9 {
@@ -244,24 +388,40 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant9 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant9Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant9({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant9(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant9 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant9Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant9 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant9Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant9 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant9(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant9Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant9 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant9(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant9Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant9.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant9(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant9Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant9.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant9(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant9Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }
 
 class RemoveProjectEnvResponseVariant2ContentHintVariant10 {
@@ -270,22 +430,38 @@ class RemoveProjectEnvResponseVariant2ContentHintVariant10 {
   final String storeId;
   final RemoveProjectEnvResponseVariant2ContentHintVariant10Type type_;
 
-  const RemoveProjectEnvResponseVariant2ContentHintVariant10({required this.storeId, required this.type_});
+  const RemoveProjectEnvResponseVariant2ContentHintVariant10(
+      {required this.storeId, required this.type_});
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant10 Function({String storeId, RemoveProjectEnvResponseVariant2ContentHintVariant10Type type_}) get copyWith => _copyWith;
+  RemoveProjectEnvResponseVariant2ContentHintVariant10 Function(
+          {String storeId,
+          RemoveProjectEnvResponseVariant2ContentHintVariant10Type type_})
+      get copyWith => _copyWith;
 
-  RemoveProjectEnvResponseVariant2ContentHintVariant10 _copyWith({Object? storeId = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => RemoveProjectEnvResponseVariant2ContentHintVariant10(
-    storeId: identical(storeId, sdkOmittedValue) ? this.storeId : storeId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant10Type,
-  );
+  RemoveProjectEnvResponseVariant2ContentHintVariant10 _copyWith(
+          {Object? storeId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant10(
+        storeId: identical(storeId, sdkOmittedValue)
+            ? this.storeId
+            : storeId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as RemoveProjectEnvResponseVariant2ContentHintVariant10Type,
+      );
 
-  factory RemoveProjectEnvResponseVariant2ContentHintVariant10.fromJson(Map<String, dynamic> json) => RemoveProjectEnvResponseVariant2ContentHintVariant10(
-    storeId: (json['storeId'] as String?)!,
-    type_: (json['type'] != null ? RemoveProjectEnvResponseVariant2ContentHintVariant10Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory RemoveProjectEnvResponseVariant2ContentHintVariant10.fromJson(
+          Map<String, dynamic> json) =>
+      RemoveProjectEnvResponseVariant2ContentHintVariant10(
+        storeId: (json['storeId'] as String?)!,
+        type_: (json['type'] != null
+            ? RemoveProjectEnvResponseVariant2ContentHintVariant10Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'storeId': storeId,
-    'type': type_.toJson(),
-  };
+        'storeId': storeId,
+        'type': type_.toJson(),
+      };
 }

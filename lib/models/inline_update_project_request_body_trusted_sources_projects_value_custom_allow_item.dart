@@ -7,63 +7,125 @@ part of 'inline.dart';
 class UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
   final UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemTo to;
+
   /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
-  final UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom from;
+  final UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom
+      from;
 
-  const UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem({required this.to, required this.from});
+  const UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem(
+      {required this.to, required this.from});
 
-  UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem Function({UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemTo to, UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom from}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem Function(
+      {UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemTo to,
+      UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom
+          from}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem _copyWith({Object? to = sdkOmittedValue, Object? from = sdkOmittedValue}) => UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem(
-    to: identical(to, sdkOmittedValue) ? this.to : to as UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemTo,
-    from: identical(from, sdkOmittedValue) ? this.from : from as UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom,
-  );
+  UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem _copyWith(
+          {Object? to = sdkOmittedValue, Object? from = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem(
+        to: identical(to, sdkOmittedValue)
+            ? this.to
+            : to
+                as UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemTo,
+        from: identical(from, sdkOmittedValue)
+            ? this.from
+            : from
+                as UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom,
+      );
 
-  factory UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem(
-    to: (json['to'] != null ? UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemTo.fromJson(json['to'] as Map<String, dynamic>) : null)!,
-    from: (json['from'] != null ? UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom.fromJson(json['from'] as Map<String, dynamic>) : null)!,
-  );
+  factory UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem(
+        to: (json['to'] != null
+            ? UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemTo
+                .fromJson(json['to'] as Map<String, dynamic>)
+            : null)!,
+        from: (json['from'] != null
+            ? UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItemFrom
+                .fromJson(json['from'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'to': to.toJson(),
-    'from': from.toJson(),
-  };
+        'to': to.toJson(),
+        'from': from.toJson(),
+      };
 }
 
 class UpdateProjectRequestBodyTrustedSourcesProjectsValue {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The label or description of the trusted source
   final SdkOptional<String> label;
+
   /// Optional overrides for the default same-env-by-slug matching. An empty array denies all access and is only allowed for the current project.
-  final SdkOptional<List<UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>> customAllow;
+  final SdkOptional<
+          List<
+              UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>>
+      customAllow;
 
-  const UpdateProjectRequestBodyTrustedSourcesProjectsValue({this.label = const SdkOmitted(), this.customAllow = const SdkOmitted()});
+  const UpdateProjectRequestBodyTrustedSourcesProjectsValue(
+      {this.label = const SdkOmitted(), this.customAllow = const SdkOmitted()});
 
-  UpdateProjectRequestBodyTrustedSourcesProjectsValue Function({SdkOptional<String> label, SdkOptional<List<UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>> customAllow}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyTrustedSourcesProjectsValue Function(
+      {SdkOptional<String> label,
+      SdkOptional<
+              List<
+                  UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>>
+          customAllow}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyTrustedSourcesProjectsValue _copyWith({Object? label = sdkOmittedValue, Object? customAllow = sdkOmittedValue}) => UpdateProjectRequestBodyTrustedSourcesProjectsValue(
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    customAllow: identical(customAllow, sdkOmittedValue) ? this.customAllow : customAllow as SdkOptional<List<UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>>,
-  );
+  UpdateProjectRequestBodyTrustedSourcesProjectsValue _copyWith(
+          {Object? label = sdkOmittedValue,
+          Object? customAllow = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyTrustedSourcesProjectsValue(
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        customAllow: identical(customAllow, sdkOmittedValue)
+            ? this.customAllow
+            : customAllow as SdkOptional<
+                List<
+                    UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>>,
+      );
 
-  factory UpdateProjectRequestBodyTrustedSourcesProjectsValue.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyTrustedSourcesProjectsValue(
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    customAllow: json['customAllow'] != null ? SdkPresent(((json['customAllow'] as List?)?.map((e) => UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory UpdateProjectRequestBodyTrustedSourcesProjectsValue.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyTrustedSourcesProjectsValue(
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+        customAllow: json['customAllow'] != null
+            ? SdkPresent(((json['customAllow'] as List?)
+                ?.map((e) =>
+                    UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem
+                        .fromJson(e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customAllow) {
-      SdkPresent<List<UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>>(value: final value) => {'customAllow': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customAllow) {
+          SdkPresent<
+                List<
+                    UpdateProjectRequestBodyTrustedSourcesProjectsValueCustomAllowItem>>(
+            value: final value
+          ) =>
+            {
+              'customAllow': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
@@ -71,131 +133,285 @@ class UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<List<String>> slugs;
-  final SdkOptional<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset> preset;
+  final SdkOptional<
+          UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset>
+      preset;
 
-  const UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo({this.slugs = const SdkOmitted(), this.preset = const SdkOmitted()});
+  const UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo(
+      {this.slugs = const SdkOmitted(), this.preset = const SdkOmitted()});
 
-  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo Function({SdkOptional<List<String>> slugs, SdkOptional<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset> preset}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo Function(
+      {SdkOptional<List<String>> slugs,
+      SdkOptional<
+              UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset>
+          preset}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo _copyWith({Object? slugs = sdkOmittedValue, Object? preset = sdkOmittedValue}) => UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo(
-    slugs: identical(slugs, sdkOmittedValue) ? this.slugs : slugs as SdkOptional<List<String>>,
-    preset: identical(preset, sdkOmittedValue) ? this.preset : preset as SdkOptional<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset>,
-  );
+  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo _copyWith(
+          {Object? slugs = sdkOmittedValue,
+          Object? preset = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo(
+        slugs: identical(slugs, sdkOmittedValue)
+            ? this.slugs
+            : slugs as SdkOptional<List<String>>,
+        preset: identical(preset, sdkOmittedValue)
+            ? this.preset
+            : preset as SdkOptional<
+                UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset>,
+      );
 
-  factory UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo(
-    slugs: json['slugs'] != null ? SdkPresent(((json['slugs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    preset: json['preset'] != null ? SdkPresent((json['preset'] != null ? UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset.fromJson(json['preset'] as String) : null)!) : const SdkOmitted(),
-  );
+  factory UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo(
+        slugs: json['slugs'] != null
+            ? SdkPresent(
+                ((json['slugs'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        preset: json['preset'] != null
+            ? SdkPresent((json['preset'] != null
+                ? UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset
+                    .fromJson(json['preset'] as String)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (slugs) {
-      SdkPresent<List<String>>(value: final value) => {'slugs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (preset) {
-      SdkPresent<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset>(value: final value) => {'preset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (slugs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'slugs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (preset) {
+          SdkPresent<
+                UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemToPreset>(
+            value: final value
+          ) =>
+            {
+              'preset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The label or description of the trusted source
   final SdkOptional<String> label;
+
   /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
   final UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo to;
   final Map<String, List<String>> claims;
 
-  const UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem({this.label = const SdkOmitted(), required this.to, required this.claims});
+  const UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem(
+      {this.label = const SdkOmitted(),
+      required this.to,
+      required this.claims});
 
-  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem Function({SdkOptional<String> label, UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo to, Map<String, List<String>> claims}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem Function(
+      {SdkOptional<String> label,
+      UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo to,
+      Map<String, List<String>> claims}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem _copyWith({Object? label = sdkOmittedValue, Object? to = sdkOmittedValue, Object? claims = sdkOmittedValue}) => UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem(
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    to: identical(to, sdkOmittedValue) ? this.to : to as UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo,
-    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as Map<String, List<String>>,
-  );
+  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem _copyWith(
+          {Object? label = sdkOmittedValue,
+          Object? to = sdkOmittedValue,
+          Object? claims = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem(
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        to: identical(to, sdkOmittedValue)
+            ? this.to
+            : to
+                as UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo,
+        claims: identical(claims, sdkOmittedValue)
+            ? this.claims
+            : claims as Map<String, List<String>>,
+      );
 
-  factory UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem(
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    to: (json['to'] != null ? UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo.fromJson(json['to'] as Map<String, dynamic>) : null)!,
-    claims: (json['claims'] == null ? null : Map<String, dynamic>.from(json['claims'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => item as String).toList())))!,
-  );
+  factory UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem(
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+        to: (json['to'] != null
+            ? UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItemTo
+                .fromJson(json['to'] as Map<String, dynamic>)
+            : null)!,
+        claims: (json['claims'] == null
+            ? null
+            : Map<String, dynamic>.from(json['claims'] as Map).map(
+                (key, value) => MapEntry(key,
+                    (value as List).map((item) => item as String).toList())))!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    'to': to.toJson(),
-    'claims': claims,
-  };
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'to': to.toJson(),
+        'claims': claims,
+      };
 }
 
 /// Deployment Protection Trusted Sources
 class UpdateProjectRequestBodyTrustedSources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Allow same-team Vercel CI access to preview and production deployments built from the same repository as the CI run. The deployment source repository, not the current project repository link, is authoritative. Defaults to enabled when not stored. Omitting this field preserves its stored value, including when trustedSources is cleared. Set true explicitly to re-enable.
   final SdkOptional<bool> enableVercelCiSameRepository;
-  final SdkOptional<Map<String, UpdateProjectRequestBodyTrustedSourcesProjectsValue>> projects;
-  final SdkOptional<Map<String, List<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>> oidcProviders;
+  final SdkOptional<
+          Map<String, UpdateProjectRequestBodyTrustedSourcesProjectsValue>>
+      projects;
+  final SdkOptional<
+          Map<
+              String,
+              List<
+                  UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>>
+      oidcProviders;
 
-  const UpdateProjectRequestBodyTrustedSources({this.enableVercelCiSameRepository = const SdkOmitted(), this.projects = const SdkOmitted(), this.oidcProviders = const SdkOmitted()});
+  const UpdateProjectRequestBodyTrustedSources(
+      {this.enableVercelCiSameRepository = const SdkOmitted(),
+      this.projects = const SdkOmitted(),
+      this.oidcProviders = const SdkOmitted()});
 
-  UpdateProjectRequestBodyTrustedSources Function({SdkOptional<bool> enableVercelCiSameRepository, SdkOptional<Map<String, UpdateProjectRequestBodyTrustedSourcesProjectsValue>> projects, SdkOptional<Map<String, List<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>> oidcProviders}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyTrustedSources Function(
+      {SdkOptional<bool> enableVercelCiSameRepository,
+      SdkOptional<
+              Map<String, UpdateProjectRequestBodyTrustedSourcesProjectsValue>>
+          projects,
+      SdkOptional<
+              Map<
+                  String,
+                  List<
+                      UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>>
+          oidcProviders}) get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyTrustedSources _copyWith({Object? enableVercelCiSameRepository = sdkOmittedValue, Object? projects = sdkOmittedValue, Object? oidcProviders = sdkOmittedValue}) => UpdateProjectRequestBodyTrustedSources(
-    enableVercelCiSameRepository: identical(enableVercelCiSameRepository, sdkOmittedValue) ? this.enableVercelCiSameRepository : enableVercelCiSameRepository as SdkOptional<bool>,
-    projects: identical(projects, sdkOmittedValue) ? this.projects : projects as SdkOptional<Map<String, UpdateProjectRequestBodyTrustedSourcesProjectsValue>>,
-    oidcProviders: identical(oidcProviders, sdkOmittedValue) ? this.oidcProviders : oidcProviders as SdkOptional<Map<String, List<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>>,
-  );
+  UpdateProjectRequestBodyTrustedSources _copyWith(
+          {Object? enableVercelCiSameRepository = sdkOmittedValue,
+          Object? projects = sdkOmittedValue,
+          Object? oidcProviders = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyTrustedSources(
+        enableVercelCiSameRepository:
+            identical(enableVercelCiSameRepository, sdkOmittedValue)
+                ? this.enableVercelCiSameRepository
+                : enableVercelCiSameRepository as SdkOptional<bool>,
+        projects: identical(projects, sdkOmittedValue)
+            ? this.projects
+            : projects as SdkOptional<
+                Map<String,
+                    UpdateProjectRequestBodyTrustedSourcesProjectsValue>>,
+        oidcProviders: identical(oidcProviders, sdkOmittedValue)
+            ? this.oidcProviders
+            : oidcProviders as SdkOptional<
+                Map<
+                    String,
+                    List<
+                        UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>>,
+      );
 
-  factory UpdateProjectRequestBodyTrustedSources.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyTrustedSources(
-    enableVercelCiSameRepository: json['enableVercelCiSameRepository'] != null ? SdkPresent((json['enableVercelCiSameRepository'] as bool?)!) : const SdkOmitted(),
-    projects: json['projects'] != null ? SdkPresent((json['projects'] == null ? null : Map<String, dynamic>.from(json['projects'] as Map).map((key, value) => MapEntry(key, UpdateProjectRequestBodyTrustedSourcesProjectsValue.fromJson(value as Map<String, dynamic>))))!) : const SdkOmitted(),
-    oidcProviders: json['oidcProviders'] != null ? SdkPresent((json['oidcProviders'] == null ? null : Map<String, dynamic>.from(json['oidcProviders'] as Map).map((key, value) => MapEntry(key, (value as List).map((item) => UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem.fromJson(item as Map<String, dynamic>)).toList())))!) : const SdkOmitted(),
-  );
+  factory UpdateProjectRequestBodyTrustedSources.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyTrustedSources(
+        enableVercelCiSameRepository:
+            json['enableVercelCiSameRepository'] != null
+                ? SdkPresent((json['enableVercelCiSameRepository'] as bool?)!)
+                : const SdkOmitted(),
+        projects: json['projects'] != null
+            ? SdkPresent((json['projects'] == null
+                ? null
+                : Map<String, dynamic>.from(json['projects'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        UpdateProjectRequestBodyTrustedSourcesProjectsValue
+                            .fromJson(value as Map<String, dynamic>))))!)
+            : const SdkOmitted(),
+        oidcProviders: json['oidcProviders'] != null
+            ? SdkPresent((json['oidcProviders'] == null
+                ? null
+                : Map<String, dynamic>.from(json['oidcProviders'] as Map).map(
+                    (key, value) => MapEntry(
+                        key,
+                        (value as List)
+                            .map((item) =>
+                                UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem
+                                    .fromJson(item as Map<String, dynamic>))
+                            .toList())))!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (enableVercelCiSameRepository) {
-      SdkPresent<bool>(value: final value) => {'enableVercelCiSameRepository': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projects) {
-      SdkPresent<Map<String, UpdateProjectRequestBodyTrustedSourcesProjectsValue>>(value: final value) => {'projects': value.map((key, value) => MapEntry(key, value.toJson())),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (oidcProviders) {
-      SdkPresent<Map<String, List<UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>>(value: final value) => {'oidcProviders': value.map((key, value) => MapEntry(key, value.map((item) => item.toJson()).toList())),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (enableVercelCiSameRepository) {
+          SdkPresent<bool>(value: final value) => {
+              'enableVercelCiSameRepository': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projects) {
+          SdkPresent<
+                Map<String,
+                    UpdateProjectRequestBodyTrustedSourcesProjectsValue>>(
+            value: final value
+          ) =>
+            {
+              'projects':
+                  value.map((key, value) => MapEntry(key, value.toJson())),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (oidcProviders) {
+          SdkPresent<
+                Map<
+                    String,
+                    List<
+                        UpdateProjectRequestBodyTrustedSourcesOidcProvidersValueItem>>>(
+            value: final value
+          ) =>
+            {
+              'oidcProviders': value.map((key, value) =>
+                  MapEntry(key, value.map((item) => item.toJson()).toList())),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class UpdateProjectRequestBodyOptionsAllowlistPathsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The regex path that should not be protected by Deployment Protection
   final String value;
 
-  const UpdateProjectRequestBodyOptionsAllowlistPathsItem({required this.value});
+  const UpdateProjectRequestBodyOptionsAllowlistPathsItem(
+      {required this.value});
 
-  UpdateProjectRequestBodyOptionsAllowlistPathsItem Function({String value}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyOptionsAllowlistPathsItem Function({String value})
+      get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyOptionsAllowlistPathsItem _copyWith({Object? value = sdkOmittedValue}) => UpdateProjectRequestBodyOptionsAllowlistPathsItem(
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-  );
+  UpdateProjectRequestBodyOptionsAllowlistPathsItem _copyWith(
+          {Object? value = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyOptionsAllowlistPathsItem(
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+      );
 
-  factory UpdateProjectRequestBodyOptionsAllowlistPathsItem.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyOptionsAllowlistPathsItem(
-    value: (json['value'] as String?)!,
-  );
+  factory UpdateProjectRequestBodyOptionsAllowlistPathsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyOptionsAllowlistPathsItem(
+        value: (json['value'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'value': value,
-  };
+        'value': value,
+      };
 }
 
 /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
@@ -206,55 +422,99 @@ class UpdateProjectRequestBodyOptionsAllowlist {
 
   const UpdateProjectRequestBodyOptionsAllowlist({required this.paths});
 
-  UpdateProjectRequestBodyOptionsAllowlist Function({List<UpdateProjectRequestBodyOptionsAllowlistPathsItem> paths}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyOptionsAllowlist Function(
+          {List<UpdateProjectRequestBodyOptionsAllowlistPathsItem> paths})
+      get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyOptionsAllowlist _copyWith({Object? paths = sdkOmittedValue}) => UpdateProjectRequestBodyOptionsAllowlist(
-    paths: identical(paths, sdkOmittedValue) ? this.paths : paths as List<UpdateProjectRequestBodyOptionsAllowlistPathsItem>,
-  );
+  UpdateProjectRequestBodyOptionsAllowlist _copyWith(
+          {Object? paths = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyOptionsAllowlist(
+        paths: identical(paths, sdkOmittedValue)
+            ? this.paths
+            : paths as List<UpdateProjectRequestBodyOptionsAllowlistPathsItem>,
+      );
 
-  factory UpdateProjectRequestBodyOptionsAllowlist.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyOptionsAllowlist(
-    paths: ((json['paths'] as List?)?.map((e) => UpdateProjectRequestBodyOptionsAllowlistPathsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory UpdateProjectRequestBodyOptionsAllowlist.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyOptionsAllowlist(
+        paths: ((json['paths'] as List?)
+            ?.map((e) =>
+                UpdateProjectRequestBodyOptionsAllowlistPathsItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'paths': paths.map((item) => item.toJson()).toList(),
-  };
+        'paths': paths.map((item) => item.toJson()).toList(),
+      };
 }
 
 class UpdateProjectRequestBodyDismissedToastsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// unique identifier for the dismissed toast
   final String key;
+
   /// unix timestamp representing the time the toast was dimissed
   final double dismissedAt;
+
   /// Whether the toast was dismissed, the action was accepted, or the dismissal with this key should be removed
   final UpdateProjectRequestBodyDismissedToastsItemAction action;
+
   /// Typed representation of the `UpdateProjectRequestDismissedToastsItemValue` API schema.
   final UpdateProjectRequestDismissedToastsItemValue value;
 
-  const UpdateProjectRequestBodyDismissedToastsItem({required this.key, required this.dismissedAt, required this.action, required this.value});
+  const UpdateProjectRequestBodyDismissedToastsItem(
+      {required this.key,
+      required this.dismissedAt,
+      required this.action,
+      required this.value});
 
-  UpdateProjectRequestBodyDismissedToastsItem Function({String key, double dismissedAt, UpdateProjectRequestBodyDismissedToastsItemAction action, UpdateProjectRequestDismissedToastsItemValue value}) get copyWith => _copyWith;
+  UpdateProjectRequestBodyDismissedToastsItem Function(
+          {String key,
+          double dismissedAt,
+          UpdateProjectRequestBodyDismissedToastsItemAction action,
+          UpdateProjectRequestDismissedToastsItemValue value})
+      get copyWith => _copyWith;
 
-  UpdateProjectRequestBodyDismissedToastsItem _copyWith({Object? key = sdkOmittedValue, Object? dismissedAt = sdkOmittedValue, Object? action = sdkOmittedValue, Object? value = sdkOmittedValue}) => UpdateProjectRequestBodyDismissedToastsItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    dismissedAt: identical(dismissedAt, sdkOmittedValue) ? this.dismissedAt : dismissedAt as double,
-    action: identical(action, sdkOmittedValue) ? this.action : action as UpdateProjectRequestBodyDismissedToastsItemAction,
-    value: identical(value, sdkOmittedValue) ? this.value : value as UpdateProjectRequestDismissedToastsItemValue,
-  );
+  UpdateProjectRequestBodyDismissedToastsItem _copyWith(
+          {Object? key = sdkOmittedValue,
+          Object? dismissedAt = sdkOmittedValue,
+          Object? action = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UpdateProjectRequestBodyDismissedToastsItem(
+        key: identical(key, sdkOmittedValue) ? this.key : key as String,
+        dismissedAt: identical(dismissedAt, sdkOmittedValue)
+            ? this.dismissedAt
+            : dismissedAt as double,
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as UpdateProjectRequestBodyDismissedToastsItemAction,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as UpdateProjectRequestDismissedToastsItemValue,
+      );
 
-  factory UpdateProjectRequestBodyDismissedToastsItem.fromJson(Map<String, dynamic> json) => UpdateProjectRequestBodyDismissedToastsItem(
-    key: (json['key'] as String?)!,
-    dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
-    action: (json['action'] != null ? UpdateProjectRequestBodyDismissedToastsItemAction.fromJson(json['action'] as String) : null)!,
-    value: (json['value'] != null ? UpdateProjectRequestDismissedToastsItemValue.fromJson(json['value']) : null)!,
-  );
+  factory UpdateProjectRequestBodyDismissedToastsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectRequestBodyDismissedToastsItem(
+        key: (json['key'] as String?)!,
+        dismissedAt: ((json['dismissedAt'] as num?)?.toDouble())!,
+        action: (json['action'] != null
+            ? UpdateProjectRequestBodyDismissedToastsItemAction.fromJson(
+                json['action'] as String)
+            : null)!,
+        value: (json['value'] != null
+            ? UpdateProjectRequestDismissedToastsItemValue.fromJson(
+                json['value'])
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'dismissedAt': dismissedAt,
-    'action': action.toJson(),
-    'value': value.toJson(),
-  };
+        'key': key,
+        'dismissedAt': dismissedAt,
+        'action': action.toJson(),
+        'value': value.toJson(),
+      };
 }

@@ -8,276 +8,633 @@ part of 'user.dart';
 class UserEventPayloadVariant379Budget {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Date time when budget is created
   final double createdAt;
+
   /// Budget amount (USD / dollars)
   final double fixedBudget;
+
   /// Sort key that needs to be unique per teamId
   final String id;
+
   /// Is the budget currently active for a customer
   final UserEventPayloadVariant379BudgetIsActive isActive;
+
   /// Array of 50, 75, 100 to keep track of notifications sent out
   final List<double> notifiedAt;
+
   /// Should all projects be paused if budget is exceeded
-  final SdkOptional<UserEventPayloadVariant379BudgetPauseProjects> pauseProjects;
+  final SdkOptional<UserEventPayloadVariant379BudgetPauseProjects>
+      pauseProjects;
+
   /// Array of the last 3 months of spend data
   final List<double> previousSpend;
+
   /// The acive pricing plan the team is billed with
   final SdkOptional<UserEventPayloadVariant379BudgetPricingPlan> pricingPlan;
+
   /// Which budget this is. Matches Copper SDK `BudgetScope`. Omitted on events published before team/org/project scopes existed (treat as team).
   final SdkOptional<UserEventPayloadVariant379BudgetScope> scope;
+
   /// Project id when `scope` is `project`.
   final SdkOptional<String> scopeId;
+
   /// Partition key
   final String teamId;
+
   /// The budget type
   final UserEventPayloadVariant379BudgetType type_;
+
   /// Date time when budget is updated last
   final SdkOptional<double> updatedAt;
+
   /// Webhook id that corresponds to a webhook in Cosmos webhook collection
   final SdkOptional<String> webhookId;
+
   /// Keep track if the webhook has been called for the month
-  final SdkOptional<UserEventPayloadVariant379BudgetWebhookNotified> webhookNotified;
+  final SdkOptional<UserEventPayloadVariant379BudgetWebhookNotified>
+      webhookNotified;
 
-  const UserEventPayloadVariant379Budget({required this.createdAt, required this.fixedBudget, required this.id, required this.isActive, required this.notifiedAt, this.pauseProjects = const SdkOmitted(), required this.previousSpend, this.pricingPlan = const SdkOmitted(), this.scope = const SdkOmitted(), this.scopeId = const SdkOmitted(), required this.teamId, required this.type_, this.updatedAt = const SdkOmitted(), this.webhookId = const SdkOmitted(), this.webhookNotified = const SdkOmitted()});
+  const UserEventPayloadVariant379Budget(
+      {required this.createdAt,
+      required this.fixedBudget,
+      required this.id,
+      required this.isActive,
+      required this.notifiedAt,
+      this.pauseProjects = const SdkOmitted(),
+      required this.previousSpend,
+      this.pricingPlan = const SdkOmitted(),
+      this.scope = const SdkOmitted(),
+      this.scopeId = const SdkOmitted(),
+      required this.teamId,
+      required this.type_,
+      this.updatedAt = const SdkOmitted(),
+      this.webhookId = const SdkOmitted(),
+      this.webhookNotified = const SdkOmitted()});
 
-  UserEventPayloadVariant379Budget Function({double createdAt, double fixedBudget, String id, UserEventPayloadVariant379BudgetIsActive isActive, List<double> notifiedAt, SdkOptional<UserEventPayloadVariant379BudgetPauseProjects> pauseProjects, List<double> previousSpend, SdkOptional<UserEventPayloadVariant379BudgetPricingPlan> pricingPlan, SdkOptional<UserEventPayloadVariant379BudgetScope> scope, SdkOptional<String> scopeId, String teamId, UserEventPayloadVariant379BudgetType type_, SdkOptional<double> updatedAt, SdkOptional<String> webhookId, SdkOptional<UserEventPayloadVariant379BudgetWebhookNotified> webhookNotified}) get copyWith => _copyWith;
+  UserEventPayloadVariant379Budget Function(
+      {double createdAt,
+      double fixedBudget,
+      String id,
+      UserEventPayloadVariant379BudgetIsActive isActive,
+      List<double> notifiedAt,
+      SdkOptional<UserEventPayloadVariant379BudgetPauseProjects> pauseProjects,
+      List<double> previousSpend,
+      SdkOptional<UserEventPayloadVariant379BudgetPricingPlan> pricingPlan,
+      SdkOptional<UserEventPayloadVariant379BudgetScope> scope,
+      SdkOptional<String> scopeId,
+      String teamId,
+      UserEventPayloadVariant379BudgetType type_,
+      SdkOptional<double> updatedAt,
+      SdkOptional<String> webhookId,
+      SdkOptional<UserEventPayloadVariant379BudgetWebhookNotified>
+          webhookNotified}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant379Budget _copyWith({Object? createdAt = sdkOmittedValue, Object? fixedBudget = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isActive = sdkOmittedValue, Object? notifiedAt = sdkOmittedValue, Object? pauseProjects = sdkOmittedValue, Object? previousSpend = sdkOmittedValue, Object? pricingPlan = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? scopeId = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? webhookId = sdkOmittedValue, Object? webhookNotified = sdkOmittedValue}) => UserEventPayloadVariant379Budget(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    fixedBudget: identical(fixedBudget, sdkOmittedValue) ? this.fixedBudget : fixedBudget as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isActive: identical(isActive, sdkOmittedValue) ? this.isActive : isActive as UserEventPayloadVariant379BudgetIsActive,
-    notifiedAt: identical(notifiedAt, sdkOmittedValue) ? this.notifiedAt : notifiedAt as List<double>,
-    pauseProjects: identical(pauseProjects, sdkOmittedValue) ? this.pauseProjects : pauseProjects as SdkOptional<UserEventPayloadVariant379BudgetPauseProjects>,
-    previousSpend: identical(previousSpend, sdkOmittedValue) ? this.previousSpend : previousSpend as List<double>,
-    pricingPlan: identical(pricingPlan, sdkOmittedValue) ? this.pricingPlan : pricingPlan as SdkOptional<UserEventPayloadVariant379BudgetPricingPlan>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<UserEventPayloadVariant379BudgetScope>,
-    scopeId: identical(scopeId, sdkOmittedValue) ? this.scopeId : scopeId as SdkOptional<String>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant379BudgetType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    webhookId: identical(webhookId, sdkOmittedValue) ? this.webhookId : webhookId as SdkOptional<String>,
-    webhookNotified: identical(webhookNotified, sdkOmittedValue) ? this.webhookNotified : webhookNotified as SdkOptional<UserEventPayloadVariant379BudgetWebhookNotified>,
-  );
+  UserEventPayloadVariant379Budget _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? fixedBudget = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isActive = sdkOmittedValue,
+          Object? notifiedAt = sdkOmittedValue,
+          Object? pauseProjects = sdkOmittedValue,
+          Object? previousSpend = sdkOmittedValue,
+          Object? pricingPlan = sdkOmittedValue,
+          Object? scope = sdkOmittedValue,
+          Object? scopeId = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? webhookId = sdkOmittedValue,
+          Object? webhookNotified = sdkOmittedValue}) =>
+      UserEventPayloadVariant379Budget(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        fixedBudget: identical(fixedBudget, sdkOmittedValue)
+            ? this.fixedBudget
+            : fixedBudget as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isActive: identical(isActive, sdkOmittedValue)
+            ? this.isActive
+            : isActive as UserEventPayloadVariant379BudgetIsActive,
+        notifiedAt: identical(notifiedAt, sdkOmittedValue)
+            ? this.notifiedAt
+            : notifiedAt as List<double>,
+        pauseProjects: identical(pauseProjects, sdkOmittedValue)
+            ? this.pauseProjects
+            : pauseProjects
+                as SdkOptional<UserEventPayloadVariant379BudgetPauseProjects>,
+        previousSpend: identical(previousSpend, sdkOmittedValue)
+            ? this.previousSpend
+            : previousSpend as List<double>,
+        pricingPlan: identical(pricingPlan, sdkOmittedValue)
+            ? this.pricingPlan
+            : pricingPlan
+                as SdkOptional<UserEventPayloadVariant379BudgetPricingPlan>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as SdkOptional<UserEventPayloadVariant379BudgetScope>,
+        scopeId: identical(scopeId, sdkOmittedValue)
+            ? this.scopeId
+            : scopeId as SdkOptional<String>,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventPayloadVariant379BudgetType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        webhookId: identical(webhookId, sdkOmittedValue)
+            ? this.webhookId
+            : webhookId as SdkOptional<String>,
+        webhookNotified: identical(webhookNotified, sdkOmittedValue)
+            ? this.webhookNotified
+            : webhookNotified
+                as SdkOptional<UserEventPayloadVariant379BudgetWebhookNotified>,
+      );
 
-  factory UserEventPayloadVariant379Budget.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant379Budget(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    fixedBudget: ((json['fixedBudget'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    isActive: (json['isActive'] != null ? UserEventPayloadVariant379BudgetIsActive.fromJson(json['isActive'] as bool) : null)!,
-    notifiedAt: ((json['notifiedAt'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    pauseProjects: json['pauseProjects'] != null ? SdkPresent((json['pauseProjects'] != null ? UserEventPayloadVariant379BudgetPauseProjects.fromJson(json['pauseProjects'] as bool) : null)!) : const SdkOmitted(),
-    previousSpend: ((json['previousSpend'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    pricingPlan: json['pricingPlan'] != null ? SdkPresent((json['pricingPlan'] != null ? UserEventPayloadVariant379BudgetPricingPlan.fromJson(json['pricingPlan'] as String) : null)!) : const SdkOmitted(),
-    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? UserEventPayloadVariant379BudgetScope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
-    scopeId: json['scopeId'] != null ? SdkPresent((json['scopeId'] as String?)!) : const SdkOmitted(),
-    teamId: (json['teamId'] as String?)!,
-    type_: (json['type'] != null ? UserEventPayloadVariant379BudgetType.fromJson(json['type'] as String) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    webhookId: json['webhookId'] != null ? SdkPresent((json['webhookId'] as String?)!) : const SdkOmitted(),
-    webhookNotified: json['webhookNotified'] != null ? SdkPresent((json['webhookNotified'] != null ? UserEventPayloadVariant379BudgetWebhookNotified.fromJson(json['webhookNotified'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant379Budget.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant379Budget(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        fixedBudget: ((json['fixedBudget'] as num?)?.toDouble())!,
+        id: (json['id'] as String?)!,
+        isActive: (json['isActive'] != null
+            ? UserEventPayloadVariant379BudgetIsActive.fromJson(
+                json['isActive'] as bool)
+            : null)!,
+        notifiedAt: ((json['notifiedAt'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        pauseProjects: json['pauseProjects'] != null
+            ? SdkPresent((json['pauseProjects'] != null
+                ? UserEventPayloadVariant379BudgetPauseProjects.fromJson(
+                    json['pauseProjects'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        previousSpend: ((json['previousSpend'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        pricingPlan: json['pricingPlan'] != null
+            ? SdkPresent((json['pricingPlan'] != null
+                ? UserEventPayloadVariant379BudgetPricingPlan.fromJson(
+                    json['pricingPlan'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        scope: json['scope'] != null
+            ? SdkPresent((json['scope'] != null
+                ? UserEventPayloadVariant379BudgetScope.fromJson(
+                    json['scope'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        scopeId: json['scopeId'] != null
+            ? SdkPresent((json['scopeId'] as String?)!)
+            : const SdkOmitted(),
+        teamId: (json['teamId'] as String?)!,
+        type_: (json['type'] != null
+            ? UserEventPayloadVariant379BudgetType.fromJson(
+                json['type'] as String)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        webhookId: json['webhookId'] != null
+            ? SdkPresent((json['webhookId'] as String?)!)
+            : const SdkOmitted(),
+        webhookNotified: json['webhookNotified'] != null
+            ? SdkPresent((json['webhookNotified'] != null
+                ? UserEventPayloadVariant379BudgetWebhookNotified.fromJson(
+                    json['webhookNotified'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'fixedBudget': fixedBudget,
-    'id': id,
-    'isActive': isActive.toJson(),
-    'notifiedAt': notifiedAt,
-    ...switch (pauseProjects) {
-      SdkPresent<UserEventPayloadVariant379BudgetPauseProjects>(value: final value) => {'pauseProjects': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'previousSpend': previousSpend,
-    ...switch (pricingPlan) {
-      SdkPresent<UserEventPayloadVariant379BudgetPricingPlan>(value: final value) => {'pricingPlan': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scope) {
-      SdkPresent<UserEventPayloadVariant379BudgetScope>(value: final value) => {'scope': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scopeId) {
-      SdkPresent<String>(value: final value) => {'scopeId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'teamId': teamId,
-    'type': type_.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookId) {
-      SdkPresent<String>(value: final value) => {'webhookId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookNotified) {
-      SdkPresent<UserEventPayloadVariant379BudgetWebhookNotified>(value: final value) => {'webhookNotified': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        'fixedBudget': fixedBudget,
+        'id': id,
+        'isActive': isActive.toJson(),
+        'notifiedAt': notifiedAt,
+        ...switch (pauseProjects) {
+          SdkPresent<UserEventPayloadVariant379BudgetPauseProjects>(
+            value: final value
+          ) =>
+            {
+              'pauseProjects': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'previousSpend': previousSpend,
+        ...switch (pricingPlan) {
+          SdkPresent<UserEventPayloadVariant379BudgetPricingPlan>(
+            value: final value
+          ) =>
+            {
+              'pricingPlan': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scope) {
+          SdkPresent<UserEventPayloadVariant379BudgetScope>(
+            value: final value
+          ) =>
+            {
+              'scope': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scopeId) {
+          SdkPresent<String>(value: final value) => {
+              'scopeId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'teamId': teamId,
+        'type': type_.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookId) {
+          SdkPresent<String>(value: final value) => {
+              'webhookId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookNotified) {
+          SdkPresent<UserEventPayloadVariant379BudgetWebhookNotified>(
+            value: final value
+          ) =>
+            {
+              'webhookNotified': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant379 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Represents a budget for tracking and notifying teams on their spending.
   final UserEventPayloadVariant379Budget budget;
+
   /// Stored for project budgets. Same value as `budget.scopeId`.
   final SdkOptional<String> projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
+
   /// Optional `string` value serialized in the `webhookUrl` wire field.
   final SdkOptional<String> webhookUrl;
 
-  const UserEventPayloadVariant379({required this.budget, this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted(), this.webhookUrl = const SdkOmitted()});
+  const UserEventPayloadVariant379(
+      {required this.budget,
+      this.projectId = const SdkOmitted(),
+      this.projectName = const SdkOmitted(),
+      this.webhookUrl = const SdkOmitted()});
 
-  UserEventPayloadVariant379 Function({UserEventPayloadVariant379Budget budget, SdkOptional<String> projectId, SdkOptional<String> projectName, SdkOptional<String> webhookUrl}) get copyWith => _copyWith;
+  UserEventPayloadVariant379 Function(
+      {UserEventPayloadVariant379Budget budget,
+      SdkOptional<String> projectId,
+      SdkOptional<String> projectName,
+      SdkOptional<String> webhookUrl}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant379 _copyWith({Object? budget = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? webhookUrl = sdkOmittedValue}) => UserEventPayloadVariant379(
-    budget: identical(budget, sdkOmittedValue) ? this.budget : budget as UserEventPayloadVariant379Budget,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-    webhookUrl: identical(webhookUrl, sdkOmittedValue) ? this.webhookUrl : webhookUrl as SdkOptional<String>,
-  );
+  UserEventPayloadVariant379 _copyWith(
+          {Object? budget = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? webhookUrl = sdkOmittedValue}) =>
+      UserEventPayloadVariant379(
+        budget: identical(budget, sdkOmittedValue)
+            ? this.budget
+            : budget as UserEventPayloadVariant379Budget,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+        webhookUrl: identical(webhookUrl, sdkOmittedValue)
+            ? this.webhookUrl
+            : webhookUrl as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant379.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant379(
-    budget: (json['budget'] != null ? UserEventPayloadVariant379Budget.fromJson(json['budget'] as Map<String, dynamic>) : null)!,
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-    webhookUrl: json['webhookUrl'] != null ? SdkPresent((json['webhookUrl'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant379.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant379(
+        budget: (json['budget'] != null
+            ? UserEventPayloadVariant379Budget.fromJson(
+                json['budget'] as Map<String, dynamic>)
+            : null)!,
+        projectId: json['projectId'] != null
+            ? SdkPresent((json['projectId'] as String?)!)
+            : const SdkOmitted(),
+        projectName: json['projectName'] != null
+            ? SdkPresent((json['projectName'] as String?)!)
+            : const SdkOmitted(),
+        webhookUrl: json['webhookUrl'] != null
+            ? SdkPresent((json['webhookUrl'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'budget': budget.toJson(),
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookUrl) {
-      SdkPresent<String>(value: final value) => {'webhookUrl': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'budget': budget.toJson(),
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookUrl) {
+          SdkPresent<String>(value: final value) => {
+              'webhookUrl': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Represents a budget for tracking and notifying teams on their spending.
 class UserEventPayloadVariant380Budget {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Date time when budget is created
   final double createdAt;
+
   /// Budget amount (USD / dollars)
   final double fixedBudget;
+
   /// Sort key that needs to be unique per teamId
   final String id;
+
   /// Is the budget currently active for a customer
   final UserEventPayloadVariant380BudgetIsActive isActive;
+
   /// Array of 50, 75, 100 to keep track of notifications sent out
   final List<double> notifiedAt;
+
   /// Should all projects be paused if budget is exceeded
-  final SdkOptional<UserEventPayloadVariant380BudgetPauseProjects> pauseProjects;
+  final SdkOptional<UserEventPayloadVariant380BudgetPauseProjects>
+      pauseProjects;
+
   /// Array of the last 3 months of spend data
   final List<double> previousSpend;
+
   /// The acive pricing plan the team is billed with
   final SdkOptional<UserEventPayloadVariant380BudgetPricingPlan> pricingPlan;
+
   /// Which budget this is. Matches Copper SDK `BudgetScope`. Omitted on events published before team/org/project scopes existed (treat as team).
   final SdkOptional<UserEventPayloadVariant380BudgetScope> scope;
+
   /// Project id when `scope` is `project`.
   final SdkOptional<String> scopeId;
+
   /// Partition key
   final String teamId;
+
   /// The budget type
   final UserEventPayloadVariant380BudgetType type_;
+
   /// Date time when budget is updated last
   final SdkOptional<double> updatedAt;
+
   /// Webhook id that corresponds to a webhook in Cosmos webhook collection
   final SdkOptional<String> webhookId;
+
   /// Keep track if the webhook has been called for the month
-  final SdkOptional<UserEventPayloadVariant380BudgetWebhookNotified> webhookNotified;
+  final SdkOptional<UserEventPayloadVariant380BudgetWebhookNotified>
+      webhookNotified;
 
-  const UserEventPayloadVariant380Budget({required this.createdAt, required this.fixedBudget, required this.id, required this.isActive, required this.notifiedAt, this.pauseProjects = const SdkOmitted(), required this.previousSpend, this.pricingPlan = const SdkOmitted(), this.scope = const SdkOmitted(), this.scopeId = const SdkOmitted(), required this.teamId, required this.type_, this.updatedAt = const SdkOmitted(), this.webhookId = const SdkOmitted(), this.webhookNotified = const SdkOmitted()});
+  const UserEventPayloadVariant380Budget(
+      {required this.createdAt,
+      required this.fixedBudget,
+      required this.id,
+      required this.isActive,
+      required this.notifiedAt,
+      this.pauseProjects = const SdkOmitted(),
+      required this.previousSpend,
+      this.pricingPlan = const SdkOmitted(),
+      this.scope = const SdkOmitted(),
+      this.scopeId = const SdkOmitted(),
+      required this.teamId,
+      required this.type_,
+      this.updatedAt = const SdkOmitted(),
+      this.webhookId = const SdkOmitted(),
+      this.webhookNotified = const SdkOmitted()});
 
-  UserEventPayloadVariant380Budget Function({double createdAt, double fixedBudget, String id, UserEventPayloadVariant380BudgetIsActive isActive, List<double> notifiedAt, SdkOptional<UserEventPayloadVariant380BudgetPauseProjects> pauseProjects, List<double> previousSpend, SdkOptional<UserEventPayloadVariant380BudgetPricingPlan> pricingPlan, SdkOptional<UserEventPayloadVariant380BudgetScope> scope, SdkOptional<String> scopeId, String teamId, UserEventPayloadVariant380BudgetType type_, SdkOptional<double> updatedAt, SdkOptional<String> webhookId, SdkOptional<UserEventPayloadVariant380BudgetWebhookNotified> webhookNotified}) get copyWith => _copyWith;
+  UserEventPayloadVariant380Budget Function(
+      {double createdAt,
+      double fixedBudget,
+      String id,
+      UserEventPayloadVariant380BudgetIsActive isActive,
+      List<double> notifiedAt,
+      SdkOptional<UserEventPayloadVariant380BudgetPauseProjects> pauseProjects,
+      List<double> previousSpend,
+      SdkOptional<UserEventPayloadVariant380BudgetPricingPlan> pricingPlan,
+      SdkOptional<UserEventPayloadVariant380BudgetScope> scope,
+      SdkOptional<String> scopeId,
+      String teamId,
+      UserEventPayloadVariant380BudgetType type_,
+      SdkOptional<double> updatedAt,
+      SdkOptional<String> webhookId,
+      SdkOptional<UserEventPayloadVariant380BudgetWebhookNotified>
+          webhookNotified}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant380Budget _copyWith({Object? createdAt = sdkOmittedValue, Object? fixedBudget = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isActive = sdkOmittedValue, Object? notifiedAt = sdkOmittedValue, Object? pauseProjects = sdkOmittedValue, Object? previousSpend = sdkOmittedValue, Object? pricingPlan = sdkOmittedValue, Object? scope = sdkOmittedValue, Object? scopeId = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? webhookId = sdkOmittedValue, Object? webhookNotified = sdkOmittedValue}) => UserEventPayloadVariant380Budget(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    fixedBudget: identical(fixedBudget, sdkOmittedValue) ? this.fixedBudget : fixedBudget as double,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isActive: identical(isActive, sdkOmittedValue) ? this.isActive : isActive as UserEventPayloadVariant380BudgetIsActive,
-    notifiedAt: identical(notifiedAt, sdkOmittedValue) ? this.notifiedAt : notifiedAt as List<double>,
-    pauseProjects: identical(pauseProjects, sdkOmittedValue) ? this.pauseProjects : pauseProjects as SdkOptional<UserEventPayloadVariant380BudgetPauseProjects>,
-    previousSpend: identical(previousSpend, sdkOmittedValue) ? this.previousSpend : previousSpend as List<double>,
-    pricingPlan: identical(pricingPlan, sdkOmittedValue) ? this.pricingPlan : pricingPlan as SdkOptional<UserEventPayloadVariant380BudgetPricingPlan>,
-    scope: identical(scope, sdkOmittedValue) ? this.scope : scope as SdkOptional<UserEventPayloadVariant380BudgetScope>,
-    scopeId: identical(scopeId, sdkOmittedValue) ? this.scopeId : scopeId as SdkOptional<String>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UserEventPayloadVariant380BudgetType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    webhookId: identical(webhookId, sdkOmittedValue) ? this.webhookId : webhookId as SdkOptional<String>,
-    webhookNotified: identical(webhookNotified, sdkOmittedValue) ? this.webhookNotified : webhookNotified as SdkOptional<UserEventPayloadVariant380BudgetWebhookNotified>,
-  );
+  UserEventPayloadVariant380Budget _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? fixedBudget = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isActive = sdkOmittedValue,
+          Object? notifiedAt = sdkOmittedValue,
+          Object? pauseProjects = sdkOmittedValue,
+          Object? previousSpend = sdkOmittedValue,
+          Object? pricingPlan = sdkOmittedValue,
+          Object? scope = sdkOmittedValue,
+          Object? scopeId = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? webhookId = sdkOmittedValue,
+          Object? webhookNotified = sdkOmittedValue}) =>
+      UserEventPayloadVariant380Budget(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        fixedBudget: identical(fixedBudget, sdkOmittedValue)
+            ? this.fixedBudget
+            : fixedBudget as double,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isActive: identical(isActive, sdkOmittedValue)
+            ? this.isActive
+            : isActive as UserEventPayloadVariant380BudgetIsActive,
+        notifiedAt: identical(notifiedAt, sdkOmittedValue)
+            ? this.notifiedAt
+            : notifiedAt as List<double>,
+        pauseProjects: identical(pauseProjects, sdkOmittedValue)
+            ? this.pauseProjects
+            : pauseProjects
+                as SdkOptional<UserEventPayloadVariant380BudgetPauseProjects>,
+        previousSpend: identical(previousSpend, sdkOmittedValue)
+            ? this.previousSpend
+            : previousSpend as List<double>,
+        pricingPlan: identical(pricingPlan, sdkOmittedValue)
+            ? this.pricingPlan
+            : pricingPlan
+                as SdkOptional<UserEventPayloadVariant380BudgetPricingPlan>,
+        scope: identical(scope, sdkOmittedValue)
+            ? this.scope
+            : scope as SdkOptional<UserEventPayloadVariant380BudgetScope>,
+        scopeId: identical(scopeId, sdkOmittedValue)
+            ? this.scopeId
+            : scopeId as SdkOptional<String>,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UserEventPayloadVariant380BudgetType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        webhookId: identical(webhookId, sdkOmittedValue)
+            ? this.webhookId
+            : webhookId as SdkOptional<String>,
+        webhookNotified: identical(webhookNotified, sdkOmittedValue)
+            ? this.webhookNotified
+            : webhookNotified
+                as SdkOptional<UserEventPayloadVariant380BudgetWebhookNotified>,
+      );
 
-  factory UserEventPayloadVariant380Budget.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant380Budget(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    fixedBudget: ((json['fixedBudget'] as num?)?.toDouble())!,
-    id: (json['id'] as String?)!,
-    isActive: (json['isActive'] != null ? UserEventPayloadVariant380BudgetIsActive.fromJson(json['isActive'] as bool) : null)!,
-    notifiedAt: ((json['notifiedAt'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    pauseProjects: json['pauseProjects'] != null ? SdkPresent((json['pauseProjects'] != null ? UserEventPayloadVariant380BudgetPauseProjects.fromJson(json['pauseProjects'] as bool) : null)!) : const SdkOmitted(),
-    previousSpend: ((json['previousSpend'] as List?)?.map((e) => (e as num).toDouble()).toList())!,
-    pricingPlan: json['pricingPlan'] != null ? SdkPresent((json['pricingPlan'] != null ? UserEventPayloadVariant380BudgetPricingPlan.fromJson(json['pricingPlan'] as String) : null)!) : const SdkOmitted(),
-    scope: json['scope'] != null ? SdkPresent((json['scope'] != null ? UserEventPayloadVariant380BudgetScope.fromJson(json['scope'] as String) : null)!) : const SdkOmitted(),
-    scopeId: json['scopeId'] != null ? SdkPresent((json['scopeId'] as String?)!) : const SdkOmitted(),
-    teamId: (json['teamId'] as String?)!,
-    type_: (json['type'] != null ? UserEventPayloadVariant380BudgetType.fromJson(json['type'] as String) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    webhookId: json['webhookId'] != null ? SdkPresent((json['webhookId'] as String?)!) : const SdkOmitted(),
-    webhookNotified: json['webhookNotified'] != null ? SdkPresent((json['webhookNotified'] != null ? UserEventPayloadVariant380BudgetWebhookNotified.fromJson(json['webhookNotified'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant380Budget.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant380Budget(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        fixedBudget: ((json['fixedBudget'] as num?)?.toDouble())!,
+        id: (json['id'] as String?)!,
+        isActive: (json['isActive'] != null
+            ? UserEventPayloadVariant380BudgetIsActive.fromJson(
+                json['isActive'] as bool)
+            : null)!,
+        notifiedAt: ((json['notifiedAt'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        pauseProjects: json['pauseProjects'] != null
+            ? SdkPresent((json['pauseProjects'] != null
+                ? UserEventPayloadVariant380BudgetPauseProjects.fromJson(
+                    json['pauseProjects'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        previousSpend: ((json['previousSpend'] as List?)
+            ?.map((e) => (e as num).toDouble())
+            .toList())!,
+        pricingPlan: json['pricingPlan'] != null
+            ? SdkPresent((json['pricingPlan'] != null
+                ? UserEventPayloadVariant380BudgetPricingPlan.fromJson(
+                    json['pricingPlan'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        scope: json['scope'] != null
+            ? SdkPresent((json['scope'] != null
+                ? UserEventPayloadVariant380BudgetScope.fromJson(
+                    json['scope'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        scopeId: json['scopeId'] != null
+            ? SdkPresent((json['scopeId'] as String?)!)
+            : const SdkOmitted(),
+        teamId: (json['teamId'] as String?)!,
+        type_: (json['type'] != null
+            ? UserEventPayloadVariant380BudgetType.fromJson(
+                json['type'] as String)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        webhookId: json['webhookId'] != null
+            ? SdkPresent((json['webhookId'] as String?)!)
+            : const SdkOmitted(),
+        webhookNotified: json['webhookNotified'] != null
+            ? SdkPresent((json['webhookNotified'] != null
+                ? UserEventPayloadVariant380BudgetWebhookNotified.fromJson(
+                    json['webhookNotified'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'fixedBudget': fixedBudget,
-    'id': id,
-    'isActive': isActive.toJson(),
-    'notifiedAt': notifiedAt,
-    ...switch (pauseProjects) {
-      SdkPresent<UserEventPayloadVariant380BudgetPauseProjects>(value: final value) => {'pauseProjects': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'previousSpend': previousSpend,
-    ...switch (pricingPlan) {
-      SdkPresent<UserEventPayloadVariant380BudgetPricingPlan>(value: final value) => {'pricingPlan': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scope) {
-      SdkPresent<UserEventPayloadVariant380BudgetScope>(value: final value) => {'scope': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (scopeId) {
-      SdkPresent<String>(value: final value) => {'scopeId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'teamId': teamId,
-    'type': type_.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookId) {
-      SdkPresent<String>(value: final value) => {'webhookId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (webhookNotified) {
-      SdkPresent<UserEventPayloadVariant380BudgetWebhookNotified>(value: final value) => {'webhookNotified': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        'fixedBudget': fixedBudget,
+        'id': id,
+        'isActive': isActive.toJson(),
+        'notifiedAt': notifiedAt,
+        ...switch (pauseProjects) {
+          SdkPresent<UserEventPayloadVariant380BudgetPauseProjects>(
+            value: final value
+          ) =>
+            {
+              'pauseProjects': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'previousSpend': previousSpend,
+        ...switch (pricingPlan) {
+          SdkPresent<UserEventPayloadVariant380BudgetPricingPlan>(
+            value: final value
+          ) =>
+            {
+              'pricingPlan': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scope) {
+          SdkPresent<UserEventPayloadVariant380BudgetScope>(
+            value: final value
+          ) =>
+            {
+              'scope': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (scopeId) {
+          SdkPresent<String>(value: final value) => {
+              'scopeId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'teamId': teamId,
+        'type': type_.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookId) {
+          SdkPresent<String>(value: final value) => {
+              'webhookId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (webhookNotified) {
+          SdkPresent<UserEventPayloadVariant380BudgetWebhookNotified>(
+            value: final value
+          ) =>
+            {
+              'webhookNotified': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

@@ -8,97 +8,213 @@ part of 'connect.dart';
 class ConnectUpdateConnectorRequestRequest {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Whether the triggers are enabled for this connector.
   final SdkOptional<bool> triggers;
+
   /// Plaintext verification inputs, validated by the trigger driver and encrypted into stored triggerData. An empty object makes no changes.
   final SdkOptional<Map<String, Object?>> triggerVerificationInput;
+
   /// Additional registration inputs, validated by the trigger driver. Requires triggers: true. Shared verification credentials are read from triggerData.
   final SdkOptional<Map<String, Object?>> triggerRegistrationInput;
+
   /// Default trigger events for this connector.
   final SdkOptional<List<String>> events;
+
   /// Provider configuration fields to update.
   final SdkOptional<ConnectConnectorUpdateDataRequest> data;
+
   /// SHA-1 digest of a PNG or JPEG icon that is at least 640 by 640 pixels. This field does not accept a URL or image bytes. First compute the digest and upload the raw image with [POST /v2/files](https://vercel.com/docs/rest-api/deployments/upload-deployment-files). Send `Content-Length` and the same 40-character digest in `x-vercel-digest`. Then set `icon` to that digest. ```js import { createHash } from 'node:crypto'; import { readFile } from 'node:fs/promises'; const VERCEL_TOKEN = process.env.VERCEL_TOKEN; const connectorId = 'scl_...'; const bytes = await readFile('icon.png'); const digest = createHash('sha1').update(bytes).digest('hex'); await fetch('https://api.vercel.com/v2/files', { method: 'POST', headers: { Authorization: `Bearer ${VERCEL_TOKEN}`, 'Content-Type': 'application/octet-stream', 'Content-Length': String(bytes.length), 'x-vercel-digest': digest, }, body: bytes, }); await fetch(`https://api.vercel.com/v2/connect/connectors/${connectorId}`, { method: 'PATCH', headers: { Authorization: `Bearer ${VERCEL_TOKEN}`, 'Content-Type': 'application/json', }, body: JSON.stringify({ icon: digest }), }); ```
   final SdkOptional<String> icon;
+
   /// Optional `string` value serialized in the `backgroundColor` wire field.
   final SdkOptional<String> backgroundColor;
+
   /// Optional `string` value serialized in the `accentColor` wire field.
   final SdkOptional<String> accentColor;
+
   /// Full team-scoped UID, such as `slack/my-bot`. It cannot contain whitespace, `%`, `#`, control characters, or Vercel-owned namespaces. Changing it breaks callers that use the old UID. The stable connector ID does not change.
   final SdkOptional<String> uid;
+
   /// Display name for the connector. It is trimmed and cannot be empty or contain control characters.
   final SdkOptional<String> name;
 
-  const ConnectUpdateConnectorRequestRequest({this.triggers = const SdkOmitted(), this.triggerVerificationInput = const SdkOmitted(), this.triggerRegistrationInput = const SdkOmitted(), this.events = const SdkOmitted(), this.data = const SdkOmitted(), this.icon = const SdkOmitted(), this.backgroundColor = const SdkOmitted(), this.accentColor = const SdkOmitted(), this.uid = const SdkOmitted(), this.name = const SdkOmitted()});
+  const ConnectUpdateConnectorRequestRequest(
+      {this.triggers = const SdkOmitted(),
+      this.triggerVerificationInput = const SdkOmitted(),
+      this.triggerRegistrationInput = const SdkOmitted(),
+      this.events = const SdkOmitted(),
+      this.data = const SdkOmitted(),
+      this.icon = const SdkOmitted(),
+      this.backgroundColor = const SdkOmitted(),
+      this.accentColor = const SdkOmitted(),
+      this.uid = const SdkOmitted(),
+      this.name = const SdkOmitted()});
 
-  ConnectUpdateConnectorRequestRequest Function({SdkOptional<bool> triggers, SdkOptional<Map<String, Object?>> triggerVerificationInput, SdkOptional<Map<String, Object?>> triggerRegistrationInput, SdkOptional<List<String>> events, SdkOptional<ConnectConnectorUpdateDataRequest> data, SdkOptional<String> icon, SdkOptional<String> backgroundColor, SdkOptional<String> accentColor, SdkOptional<String> uid, SdkOptional<String> name}) get copyWith => _copyWith;
+  ConnectUpdateConnectorRequestRequest Function(
+      {SdkOptional<bool> triggers,
+      SdkOptional<Map<String, Object?>> triggerVerificationInput,
+      SdkOptional<Map<String, Object?>> triggerRegistrationInput,
+      SdkOptional<List<String>> events,
+      SdkOptional<ConnectConnectorUpdateDataRequest> data,
+      SdkOptional<String> icon,
+      SdkOptional<String> backgroundColor,
+      SdkOptional<String> accentColor,
+      SdkOptional<String> uid,
+      SdkOptional<String> name}) get copyWith => _copyWith;
 
-  ConnectUpdateConnectorRequestRequest _copyWith({Object? triggers = sdkOmittedValue, Object? triggerVerificationInput = sdkOmittedValue, Object? triggerRegistrationInput = sdkOmittedValue, Object? events = sdkOmittedValue, Object? data = sdkOmittedValue, Object? icon = sdkOmittedValue, Object? backgroundColor = sdkOmittedValue, Object? accentColor = sdkOmittedValue, Object? uid = sdkOmittedValue, Object? name = sdkOmittedValue}) => ConnectUpdateConnectorRequestRequest(
-    triggers: identical(triggers, sdkOmittedValue) ? this.triggers : triggers as SdkOptional<bool>,
-    triggerVerificationInput: identical(triggerVerificationInput, sdkOmittedValue) ? this.triggerVerificationInput : triggerVerificationInput as SdkOptional<Map<String, Object?>>,
-    triggerRegistrationInput: identical(triggerRegistrationInput, sdkOmittedValue) ? this.triggerRegistrationInput : triggerRegistrationInput as SdkOptional<Map<String, Object?>>,
-    events: identical(events, sdkOmittedValue) ? this.events : events as SdkOptional<List<String>>,
-    data: identical(data, sdkOmittedValue) ? this.data : data as SdkOptional<ConnectConnectorUpdateDataRequest>,
-    icon: identical(icon, sdkOmittedValue) ? this.icon : icon as SdkOptional<String>,
-    backgroundColor: identical(backgroundColor, sdkOmittedValue) ? this.backgroundColor : backgroundColor as SdkOptional<String>,
-    accentColor: identical(accentColor, sdkOmittedValue) ? this.accentColor : accentColor as SdkOptional<String>,
-    uid: identical(uid, sdkOmittedValue) ? this.uid : uid as SdkOptional<String>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-  );
+  ConnectUpdateConnectorRequestRequest _copyWith(
+          {Object? triggers = sdkOmittedValue,
+          Object? triggerVerificationInput = sdkOmittedValue,
+          Object? triggerRegistrationInput = sdkOmittedValue,
+          Object? events = sdkOmittedValue,
+          Object? data = sdkOmittedValue,
+          Object? icon = sdkOmittedValue,
+          Object? backgroundColor = sdkOmittedValue,
+          Object? accentColor = sdkOmittedValue,
+          Object? uid = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      ConnectUpdateConnectorRequestRequest(
+        triggers: identical(triggers, sdkOmittedValue)
+            ? this.triggers
+            : triggers as SdkOptional<bool>,
+        triggerVerificationInput:
+            identical(triggerVerificationInput, sdkOmittedValue)
+                ? this.triggerVerificationInput
+                : triggerVerificationInput as SdkOptional<Map<String, Object?>>,
+        triggerRegistrationInput:
+            identical(triggerRegistrationInput, sdkOmittedValue)
+                ? this.triggerRegistrationInput
+                : triggerRegistrationInput as SdkOptional<Map<String, Object?>>,
+        events: identical(events, sdkOmittedValue)
+            ? this.events
+            : events as SdkOptional<List<String>>,
+        data: identical(data, sdkOmittedValue)
+            ? this.data
+            : data as SdkOptional<ConnectConnectorUpdateDataRequest>,
+        icon: identical(icon, sdkOmittedValue)
+            ? this.icon
+            : icon as SdkOptional<String>,
+        backgroundColor: identical(backgroundColor, sdkOmittedValue)
+            ? this.backgroundColor
+            : backgroundColor as SdkOptional<String>,
+        accentColor: identical(accentColor, sdkOmittedValue)
+            ? this.accentColor
+            : accentColor as SdkOptional<String>,
+        uid: identical(uid, sdkOmittedValue)
+            ? this.uid
+            : uid as SdkOptional<String>,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+      );
 
-  factory ConnectUpdateConnectorRequestRequest.fromJson(Map<String, dynamic> json) => ConnectUpdateConnectorRequestRequest(
-    triggers: json['triggers'] != null ? SdkPresent((json['triggers'] as bool?)!) : const SdkOmitted(),
-    triggerVerificationInput: json['triggerVerificationInput'] != null ? SdkPresent((json['triggerVerificationInput'] == null ? null : Map<String, dynamic>.from(json['triggerVerificationInput'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
-    triggerRegistrationInput: json['triggerRegistrationInput'] != null ? SdkPresent((json['triggerRegistrationInput'] == null ? null : Map<String, dynamic>.from(json['triggerRegistrationInput'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
-    events: json['events'] != null ? SdkPresent(((json['events'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    data: json['data'] != null ? SdkPresent((json['data'] != null ? ConnectConnectorUpdateDataRequest.fromJson(json['data']) : null)!) : const SdkOmitted(),
-    icon: json['icon'] != null ? SdkPresent((json['icon'] as String?)!) : const SdkOmitted(),
-    backgroundColor: json['backgroundColor'] != null ? SdkPresent((json['backgroundColor'] as String?)!) : const SdkOmitted(),
-    accentColor: json['accentColor'] != null ? SdkPresent((json['accentColor'] as String?)!) : const SdkOmitted(),
-    uid: json['uid'] != null ? SdkPresent((json['uid'] as String?)!) : const SdkOmitted(),
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-  );
+  factory ConnectUpdateConnectorRequestRequest.fromJson(
+          Map<String, dynamic> json) =>
+      ConnectUpdateConnectorRequestRequest(
+        triggers: json['triggers'] != null
+            ? SdkPresent((json['triggers'] as bool?)!)
+            : const SdkOmitted(),
+        triggerVerificationInput: json['triggerVerificationInput'] != null
+            ? SdkPresent((json['triggerVerificationInput'] == null
+                ? null
+                : Map<String, dynamic>.from(
+                        json['triggerVerificationInput'] as Map)
+                    .map((key, value) => MapEntry(key, value)))!)
+            : const SdkOmitted(),
+        triggerRegistrationInput: json['triggerRegistrationInput'] != null
+            ? SdkPresent((json['triggerRegistrationInput'] == null
+                ? null
+                : Map<String, dynamic>.from(
+                        json['triggerRegistrationInput'] as Map)
+                    .map((key, value) => MapEntry(key, value)))!)
+            : const SdkOmitted(),
+        events: json['events'] != null
+            ? SdkPresent(
+                ((json['events'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        data: json['data'] != null
+            ? SdkPresent((json['data'] != null
+                ? ConnectConnectorUpdateDataRequest.fromJson(json['data'])
+                : null)!)
+            : const SdkOmitted(),
+        icon: json['icon'] != null
+            ? SdkPresent((json['icon'] as String?)!)
+            : const SdkOmitted(),
+        backgroundColor: json['backgroundColor'] != null
+            ? SdkPresent((json['backgroundColor'] as String?)!)
+            : const SdkOmitted(),
+        accentColor: json['accentColor'] != null
+            ? SdkPresent((json['accentColor'] as String?)!)
+            : const SdkOmitted(),
+        uid: json['uid'] != null
+            ? SdkPresent((json['uid'] as String?)!)
+            : const SdkOmitted(),
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (triggers) {
-      SdkPresent<bool>(value: final value) => {'triggers': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (triggerVerificationInput) {
-      SdkPresent<Map<String, Object?>>(value: final value) => {'triggerVerificationInput': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (triggerRegistrationInput) {
-      SdkPresent<Map<String, Object?>>(value: final value) => {'triggerRegistrationInput': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (events) {
-      SdkPresent<List<String>>(value: final value) => {'events': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (data) {
-      SdkPresent<ConnectConnectorUpdateDataRequest>(value: final value) => {'data': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (icon) {
-      SdkPresent<String>(value: final value) => {'icon': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (backgroundColor) {
-      SdkPresent<String>(value: final value) => {'backgroundColor': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (accentColor) {
-      SdkPresent<String>(value: final value) => {'accentColor': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (uid) {
-      SdkPresent<String>(value: final value) => {'uid': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (triggers) {
+          SdkPresent<bool>(value: final value) => {
+              'triggers': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (triggerVerificationInput) {
+          SdkPresent<Map<String, Object?>>(value: final value) => {
+              'triggerVerificationInput': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (triggerRegistrationInput) {
+          SdkPresent<Map<String, Object?>>(value: final value) => {
+              'triggerRegistrationInput': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (events) {
+          SdkPresent<List<String>>(value: final value) => {
+              'events': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (data) {
+          SdkPresent<ConnectConnectorUpdateDataRequest>(value: final value) => {
+              'data': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (icon) {
+          SdkPresent<String>(value: final value) => {
+              'icon': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (backgroundColor) {
+          SdkPresent<String>(value: final value) => {
+              'backgroundColor': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (accentColor) {
+          SdkPresent<String>(value: final value) => {
+              'accentColor': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (uid) {
+          SdkPresent<String>(value: final value) => {
+              'uid': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

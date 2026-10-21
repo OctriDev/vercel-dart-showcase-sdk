@@ -8,186 +8,322 @@ part of 'user.dart';
 class AuthUserActiveDashboardViewsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional enumerated value serialized in the `favoritesViewPreference` wire field.
-  final SdkOptional<AuthUserActiveDashboardViewsItemFavoritesViewPreference?> favoritesViewPreference;
+  final SdkOptional<AuthUserActiveDashboardViewsItemFavoritesViewPreference?>
+      favoritesViewPreference;
+
   /// Optional enumerated value serialized in the `recentsViewPreference` wire field.
-  final SdkOptional<AuthUserActiveDashboardViewsItemRecentsViewPreference?> recentsViewPreference;
+  final SdkOptional<AuthUserActiveDashboardViewsItemRecentsViewPreference?>
+      recentsViewPreference;
+
   /// Required `string` value serialized in the `scopeId` wire field.
   final String scopeId;
+
   /// Optional enumerated value serialized in the `viewPreference` wire field.
-  final SdkOptional<AuthUserActiveDashboardViewsItemViewPreference?> viewPreference;
+  final SdkOptional<AuthUserActiveDashboardViewsItemViewPreference?>
+      viewPreference;
 
-  const AuthUserActiveDashboardViewsItem({this.favoritesViewPreference = const SdkOmitted(), this.recentsViewPreference = const SdkOmitted(), required this.scopeId, this.viewPreference = const SdkOmitted()});
+  const AuthUserActiveDashboardViewsItem(
+      {this.favoritesViewPreference = const SdkOmitted(),
+      this.recentsViewPreference = const SdkOmitted(),
+      required this.scopeId,
+      this.viewPreference = const SdkOmitted()});
 
-  AuthUserActiveDashboardViewsItem Function({SdkOptional<AuthUserActiveDashboardViewsItemFavoritesViewPreference?> favoritesViewPreference, SdkOptional<AuthUserActiveDashboardViewsItemRecentsViewPreference?> recentsViewPreference, String scopeId, SdkOptional<AuthUserActiveDashboardViewsItemViewPreference?> viewPreference}) get copyWith => _copyWith;
+  AuthUserActiveDashboardViewsItem Function(
+      {SdkOptional<AuthUserActiveDashboardViewsItemFavoritesViewPreference?>
+          favoritesViewPreference,
+      SdkOptional<AuthUserActiveDashboardViewsItemRecentsViewPreference?>
+          recentsViewPreference,
+      String scopeId,
+      SdkOptional<AuthUserActiveDashboardViewsItemViewPreference?>
+          viewPreference}) get copyWith => _copyWith;
 
-  AuthUserActiveDashboardViewsItem _copyWith({Object? favoritesViewPreference = sdkOmittedValue, Object? recentsViewPreference = sdkOmittedValue, Object? scopeId = sdkOmittedValue, Object? viewPreference = sdkOmittedValue}) => AuthUserActiveDashboardViewsItem(
-    favoritesViewPreference: identical(favoritesViewPreference, sdkOmittedValue) ? this.favoritesViewPreference : favoritesViewPreference as SdkOptional<AuthUserActiveDashboardViewsItemFavoritesViewPreference?>,
-    recentsViewPreference: identical(recentsViewPreference, sdkOmittedValue) ? this.recentsViewPreference : recentsViewPreference as SdkOptional<AuthUserActiveDashboardViewsItemRecentsViewPreference?>,
-    scopeId: identical(scopeId, sdkOmittedValue) ? this.scopeId : scopeId as String,
-    viewPreference: identical(viewPreference, sdkOmittedValue) ? this.viewPreference : viewPreference as SdkOptional<AuthUserActiveDashboardViewsItemViewPreference?>,
-  );
+  AuthUserActiveDashboardViewsItem _copyWith(
+          {Object? favoritesViewPreference = sdkOmittedValue,
+          Object? recentsViewPreference = sdkOmittedValue,
+          Object? scopeId = sdkOmittedValue,
+          Object? viewPreference = sdkOmittedValue}) =>
+      AuthUserActiveDashboardViewsItem(
+        favoritesViewPreference:
+            identical(favoritesViewPreference, sdkOmittedValue)
+                ? this.favoritesViewPreference
+                : favoritesViewPreference as SdkOptional<
+                    AuthUserActiveDashboardViewsItemFavoritesViewPreference?>,
+        recentsViewPreference: identical(recentsViewPreference, sdkOmittedValue)
+            ? this.recentsViewPreference
+            : recentsViewPreference as SdkOptional<
+                AuthUserActiveDashboardViewsItemRecentsViewPreference?>,
+        scopeId: identical(scopeId, sdkOmittedValue)
+            ? this.scopeId
+            : scopeId as String,
+        viewPreference: identical(viewPreference, sdkOmittedValue)
+            ? this.viewPreference
+            : viewPreference
+                as SdkOptional<AuthUserActiveDashboardViewsItemViewPreference?>,
+      );
 
-  factory AuthUserActiveDashboardViewsItem.fromJson(Map<String, dynamic> json) => AuthUserActiveDashboardViewsItem(
-    favoritesViewPreference: json.containsKey('favoritesViewPreference') ? SdkPresent(json['favoritesViewPreference'] != null ? AuthUserActiveDashboardViewsItemFavoritesViewPreference.fromJson(json['favoritesViewPreference'] as String) : null) : const SdkOmitted(),
-    recentsViewPreference: json.containsKey('recentsViewPreference') ? SdkPresent(json['recentsViewPreference'] != null ? AuthUserActiveDashboardViewsItemRecentsViewPreference.fromJson(json['recentsViewPreference'] as String) : null) : const SdkOmitted(),
-    scopeId: (json['scopeId'] as String?)!,
-    viewPreference: json.containsKey('viewPreference') ? SdkPresent(json['viewPreference'] != null ? AuthUserActiveDashboardViewsItemViewPreference.fromJson(json['viewPreference'] as String) : null) : const SdkOmitted(),
-  );
+  factory AuthUserActiveDashboardViewsItem.fromJson(
+          Map<String, dynamic> json) =>
+      AuthUserActiveDashboardViewsItem(
+        favoritesViewPreference: json.containsKey('favoritesViewPreference')
+            ? SdkPresent(json['favoritesViewPreference'] != null
+                ? AuthUserActiveDashboardViewsItemFavoritesViewPreference
+                    .fromJson(json['favoritesViewPreference'] as String)
+                : null)
+            : const SdkOmitted(),
+        recentsViewPreference: json.containsKey('recentsViewPreference')
+            ? SdkPresent(json['recentsViewPreference'] != null
+                ? AuthUserActiveDashboardViewsItemRecentsViewPreference
+                    .fromJson(json['recentsViewPreference'] as String)
+                : null)
+            : const SdkOmitted(),
+        scopeId: (json['scopeId'] as String?)!,
+        viewPreference: json.containsKey('viewPreference')
+            ? SdkPresent(json['viewPreference'] != null
+                ? AuthUserActiveDashboardViewsItemViewPreference.fromJson(
+                    json['viewPreference'] as String)
+                : null)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (favoritesViewPreference) {
-      SdkPresent<AuthUserActiveDashboardViewsItemFavoritesViewPreference?>(value: final value) => {'favoritesViewPreference': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (recentsViewPreference) {
-      SdkPresent<AuthUserActiveDashboardViewsItemRecentsViewPreference?>(value: final value) => {'recentsViewPreference': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'scopeId': scopeId,
-    ...switch (viewPreference) {
-      SdkPresent<AuthUserActiveDashboardViewsItemViewPreference?>(value: final value) => {'viewPreference': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (favoritesViewPreference) {
+          SdkPresent<AuthUserActiveDashboardViewsItemFavoritesViewPreference?>(
+            value: final value
+          ) =>
+            {
+              'favoritesViewPreference': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (recentsViewPreference) {
+          SdkPresent<AuthUserActiveDashboardViewsItemRecentsViewPreference?>(
+            value: final value
+          ) =>
+            {
+              'recentsViewPreference': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'scopeId': scopeId,
+        ...switch (viewPreference) {
+          SdkPresent<AuthUserActiveDashboardViewsItemViewPreference?>(
+            value: final value
+          ) =>
+            {
+              'viewPreference': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `dismissals[]` wire field.
 class AuthUserDismissedToastsItemDismissalsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `string` value serialized in the `scopeId` wire field.
   final String scopeId;
 
-  const AuthUserDismissedToastsItemDismissalsItem({required this.createdAt, required this.scopeId});
+  const AuthUserDismissedToastsItemDismissalsItem(
+      {required this.createdAt, required this.scopeId});
 
-  AuthUserDismissedToastsItemDismissalsItem Function({double createdAt, String scopeId}) get copyWith => _copyWith;
+  AuthUserDismissedToastsItemDismissalsItem Function(
+      {double createdAt, String scopeId}) get copyWith => _copyWith;
 
-  AuthUserDismissedToastsItemDismissalsItem _copyWith({Object? createdAt = sdkOmittedValue, Object? scopeId = sdkOmittedValue}) => AuthUserDismissedToastsItemDismissalsItem(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    scopeId: identical(scopeId, sdkOmittedValue) ? this.scopeId : scopeId as String,
-  );
+  AuthUserDismissedToastsItemDismissalsItem _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? scopeId = sdkOmittedValue}) =>
+      AuthUserDismissedToastsItemDismissalsItem(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        scopeId: identical(scopeId, sdkOmittedValue)
+            ? this.scopeId
+            : scopeId as String,
+      );
 
-  factory AuthUserDismissedToastsItemDismissalsItem.fromJson(Map<String, dynamic> json) => AuthUserDismissedToastsItemDismissalsItem(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    scopeId: (json['scopeId'] as String?)!,
-  );
+  factory AuthUserDismissedToastsItemDismissalsItem.fromJson(
+          Map<String, dynamic> json) =>
+      AuthUserDismissedToastsItemDismissalsItem(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        scopeId: (json['scopeId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'scopeId': scopeId,
-  };
+        'createdAt': createdAt,
+        'scopeId': scopeId,
+      };
 }
 
 /// A record of when, under a certain scopeId, a toast was dismissed
 class AuthUserDismissedToastsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `dismissals` wire field.
   final List<AuthUserDismissedToastsItemDismissalsItem> dismissals;
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
-  const AuthUserDismissedToastsItem({required this.dismissals, required this.name});
+  const AuthUserDismissedToastsItem(
+      {required this.dismissals, required this.name});
 
-  AuthUserDismissedToastsItem Function({List<AuthUserDismissedToastsItemDismissalsItem> dismissals, String name}) get copyWith => _copyWith;
+  AuthUserDismissedToastsItem Function(
+      {List<AuthUserDismissedToastsItemDismissalsItem> dismissals,
+      String name}) get copyWith => _copyWith;
 
-  AuthUserDismissedToastsItem _copyWith({Object? dismissals = sdkOmittedValue, Object? name = sdkOmittedValue}) => AuthUserDismissedToastsItem(
-    dismissals: identical(dismissals, sdkOmittedValue) ? this.dismissals : dismissals as List<AuthUserDismissedToastsItemDismissalsItem>,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  AuthUserDismissedToastsItem _copyWith(
+          {Object? dismissals = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      AuthUserDismissedToastsItem(
+        dismissals: identical(dismissals, sdkOmittedValue)
+            ? this.dismissals
+            : dismissals as List<AuthUserDismissedToastsItemDismissalsItem>,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory AuthUserDismissedToastsItem.fromJson(Map<String, dynamic> json) => AuthUserDismissedToastsItem(
-    dismissals: ((json['dismissals'] as List?)?.map((e) => AuthUserDismissedToastsItemDismissalsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    name: (json['name'] as String?)!,
-  );
+  factory AuthUserDismissedToastsItem.fromJson(Map<String, dynamic> json) =>
+      AuthUserDismissedToastsItem(
+        dismissals: ((json['dismissals'] as List?)
+            ?.map((e) => AuthUserDismissedToastsItemDismissalsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'dismissals': dismissals.map((item) => item.toJson()).toList(),
-    'name': name,
-  };
+        'dismissals': dismissals.map((item) => item.toJson()).toList(),
+        'name': name,
+      };
 }
 
 /// A list of projects and spaces across teams that a user has marked as a favorite.
 class AuthUserFavoriteProjectsAndSpacesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
 
-  const AuthUserFavoriteProjectsAndSpacesItem({required this.projectId, required this.teamId});
+  const AuthUserFavoriteProjectsAndSpacesItem(
+      {required this.projectId, required this.teamId});
 
-  AuthUserFavoriteProjectsAndSpacesItem Function({String projectId, String teamId}) get copyWith => _copyWith;
+  AuthUserFavoriteProjectsAndSpacesItem Function(
+      {String projectId, String teamId}) get copyWith => _copyWith;
 
-  AuthUserFavoriteProjectsAndSpacesItem _copyWith({Object? projectId = sdkOmittedValue, Object? teamId = sdkOmittedValue}) => AuthUserFavoriteProjectsAndSpacesItem(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-  );
+  AuthUserFavoriteProjectsAndSpacesItem _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue}) =>
+      AuthUserFavoriteProjectsAndSpacesItem(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+      );
 
-  factory AuthUserFavoriteProjectsAndSpacesItem.fromJson(Map<String, dynamic> json) => AuthUserFavoriteProjectsAndSpacesItem(
-    projectId: (json['projectId'] as String?)!,
-    teamId: (json['teamId'] as String?)!,
-  );
+  factory AuthUserFavoriteProjectsAndSpacesItem.fromJson(
+          Map<String, dynamic> json) =>
+      AuthUserFavoriteProjectsAndSpacesItem(
+        projectId: (json['projectId'] as String?)!,
+        teamId: (json['teamId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    'teamId': teamId,
-  };
+        'projectId': projectId,
+        'teamId': teamId,
+      };
 }
 
 sealed class AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId();
-  factory AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId.fromJson(Object? json) {
-    if (json is String) { return AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdString(json); }
-    if (json is num) { return AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdDouble(json.toDouble()); }
-    throw FormatException("No variant matched for AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId");
+  factory AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId.fromJson(
+      Object? json) {
+    if (json is String) {
+      return AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdString(
+          json);
+    }
+    if (json is num) {
+      return AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdDouble(
+          json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId");
   }
   Object? toJson();
 }
 
-final class AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdString extends AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId {
+final class AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdString
+    extends AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId {
   final String value;
-  const AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdString(this.value);
-  @override Object? toJson() => value;
+  const AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdDouble extends AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId {
+final class AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdDouble
+    extends AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceId {
   final double value;
-  const AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdDouble(this.value);
-  @override Object? toJson() => value;
+  const AuthUserPreferredScopesAndGitNamespacesItemGitNamespaceIdDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 /// Required object value serialized in the `preferredScopesAndGitNamespaces[]` wire field.
 class AuthUserPreferredScopesAndGitNamespacesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required API value serialized in the `gitNamespaceId` wire field.
   final dynamic gitNamespaceId;
+
   /// Required `string` value serialized in the `scopeId` wire field.
   final String scopeId;
 
-  const AuthUserPreferredScopesAndGitNamespacesItem({required this.gitNamespaceId, required this.scopeId});
+  const AuthUserPreferredScopesAndGitNamespacesItem(
+      {required this.gitNamespaceId, required this.scopeId});
 
-  AuthUserPreferredScopesAndGitNamespacesItem Function({dynamic gitNamespaceId, String scopeId}) get copyWith => _copyWith;
+  AuthUserPreferredScopesAndGitNamespacesItem Function(
+      {dynamic gitNamespaceId, String scopeId}) get copyWith => _copyWith;
 
-  AuthUserPreferredScopesAndGitNamespacesItem _copyWith({Object? gitNamespaceId = sdkOmittedValue, Object? scopeId = sdkOmittedValue}) => AuthUserPreferredScopesAndGitNamespacesItem(
-    gitNamespaceId: identical(gitNamespaceId, sdkOmittedValue) ? this.gitNamespaceId : gitNamespaceId as dynamic,
-    scopeId: identical(scopeId, sdkOmittedValue) ? this.scopeId : scopeId as String,
-  );
+  AuthUserPreferredScopesAndGitNamespacesItem _copyWith(
+          {Object? gitNamespaceId = sdkOmittedValue,
+          Object? scopeId = sdkOmittedValue}) =>
+      AuthUserPreferredScopesAndGitNamespacesItem(
+        gitNamespaceId: identical(gitNamespaceId, sdkOmittedValue)
+            ? this.gitNamespaceId
+            : gitNamespaceId as dynamic,
+        scopeId: identical(scopeId, sdkOmittedValue)
+            ? this.scopeId
+            : scopeId as String,
+      );
 
-  factory AuthUserPreferredScopesAndGitNamespacesItem.fromJson(Map<String, dynamic> json) => AuthUserPreferredScopesAndGitNamespacesItem(
-    gitNamespaceId: json.containsKey('gitNamespaceId') ? json['gitNamespaceId'] : throw ArgumentError.value(null, 'gitNamespaceId', 'Required property is missing'),
-    scopeId: (json['scopeId'] as String?)!,
-  );
+  factory AuthUserPreferredScopesAndGitNamespacesItem.fromJson(
+          Map<String, dynamic> json) =>
+      AuthUserPreferredScopesAndGitNamespacesItem(
+        gitNamespaceId: json.containsKey('gitNamespaceId')
+            ? json['gitNamespaceId']
+            : throw ArgumentError.value(
+                null, 'gitNamespaceId', 'Required property is missing'),
+        scopeId: (json['scopeId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'gitNamespaceId': gitNamespaceId,
-    'scopeId': scopeId,
-  };
+        'gitNamespaceId': gitNamespaceId,
+        'scopeId': scopeId,
+      };
 }

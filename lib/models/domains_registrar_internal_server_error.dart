@@ -8,32 +8,55 @@ part of 'domains_registrar.dart';
 class InternalServerError {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final InternalServerErrorStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final InternalServerErrorCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const InternalServerError({required this.status, required this.code, required this.message});
+  const InternalServerError(
+      {required this.status, required this.code, required this.message});
 
-  InternalServerError Function({InternalServerErrorStatus status, InternalServerErrorCode code, String message}) get copyWith => _copyWith;
+  InternalServerError Function(
+      {InternalServerErrorStatus status,
+      InternalServerErrorCode code,
+      String message}) get copyWith => _copyWith;
 
-  InternalServerError _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => InternalServerError(
-    status: identical(status, sdkOmittedValue) ? this.status : status as InternalServerErrorStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as InternalServerErrorCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  InternalServerError _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      InternalServerError(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as InternalServerErrorStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as InternalServerErrorCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
-  factory InternalServerError.fromJson(Map<String, dynamic> json) => InternalServerError(
-    status: (json['status'] != null ? InternalServerErrorStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? InternalServerErrorCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+  factory InternalServerError.fromJson(Map<String, dynamic> json) =>
+      InternalServerError(
+        status: (json['status'] != null
+            ? InternalServerErrorStatus.fromJson(
+                (json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? InternalServerErrorCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }

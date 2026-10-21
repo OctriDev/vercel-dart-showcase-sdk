@@ -10,27 +10,43 @@ class CreateDrainRequestSourceVariant0 {
   final SdkOptional<String> kind;
   final String externalResourceId;
 
-  const CreateDrainRequestSourceVariant0({this.kind = const SdkOmitted(), required this.externalResourceId});
+  const CreateDrainRequestSourceVariant0(
+      {this.kind = const SdkOmitted(), required this.externalResourceId});
 
-  CreateDrainRequestSourceVariant0 Function({SdkOptional<String> kind, String externalResourceId}) get copyWith => _copyWith;
+  CreateDrainRequestSourceVariant0 Function(
+      {SdkOptional<String> kind,
+      String externalResourceId}) get copyWith => _copyWith;
 
-  CreateDrainRequestSourceVariant0 _copyWith({Object? kind = sdkOmittedValue, Object? externalResourceId = sdkOmittedValue}) => CreateDrainRequestSourceVariant0(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as SdkOptional<String>,
-    externalResourceId: identical(externalResourceId, sdkOmittedValue) ? this.externalResourceId : externalResourceId as String,
-  );
+  CreateDrainRequestSourceVariant0 _copyWith(
+          {Object? kind = sdkOmittedValue,
+          Object? externalResourceId = sdkOmittedValue}) =>
+      CreateDrainRequestSourceVariant0(
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as SdkOptional<String>,
+        externalResourceId: identical(externalResourceId, sdkOmittedValue)
+            ? this.externalResourceId
+            : externalResourceId as String,
+      );
 
-  factory CreateDrainRequestSourceVariant0.fromJson(Map<String, dynamic> json) => CreateDrainRequestSourceVariant0(
-    kind: json['kind'] != null ? SdkPresent((json['kind'] as String?)!) : const SdkOmitted(),
-    externalResourceId: (json['externalResourceId'] as String?)!,
-  );
+  factory CreateDrainRequestSourceVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDrainRequestSourceVariant0(
+        kind: json['kind'] != null
+            ? SdkPresent((json['kind'] as String?)!)
+            : const SdkOmitted(),
+        externalResourceId: (json['externalResourceId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (kind) {
-      SdkPresent<String>(value: final value) => {'kind': value,},
-      _ => const <String, dynamic>{},
-    },
-    'externalResourceId': externalResourceId,
-  };
+        ...switch (kind) {
+          SdkPresent<String>(value: final value) => {
+              'kind': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'externalResourceId': externalResourceId,
+      };
 }
 
 class CreateDrainRequestSourceVariant1 {
@@ -39,27 +55,42 @@ class CreateDrainRequestSourceVariant1 {
   final SdkOptional<String> kind;
   final String resourceId;
 
-  const CreateDrainRequestSourceVariant1({this.kind = const SdkOmitted(), required this.resourceId});
+  const CreateDrainRequestSourceVariant1(
+      {this.kind = const SdkOmitted(), required this.resourceId});
 
-  CreateDrainRequestSourceVariant1 Function({SdkOptional<String> kind, String resourceId}) get copyWith => _copyWith;
+  CreateDrainRequestSourceVariant1 Function(
+      {SdkOptional<String> kind, String resourceId}) get copyWith => _copyWith;
 
-  CreateDrainRequestSourceVariant1 _copyWith({Object? kind = sdkOmittedValue, Object? resourceId = sdkOmittedValue}) => CreateDrainRequestSourceVariant1(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as SdkOptional<String>,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as String,
-  );
+  CreateDrainRequestSourceVariant1 _copyWith(
+          {Object? kind = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue}) =>
+      CreateDrainRequestSourceVariant1(
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as SdkOptional<String>,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as String,
+      );
 
-  factory CreateDrainRequestSourceVariant1.fromJson(Map<String, dynamic> json) => CreateDrainRequestSourceVariant1(
-    kind: json['kind'] != null ? SdkPresent((json['kind'] as String?)!) : const SdkOmitted(),
-    resourceId: (json['resourceId'] as String?)!,
-  );
+  factory CreateDrainRequestSourceVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDrainRequestSourceVariant1(
+        kind: json['kind'] != null
+            ? SdkPresent((json['kind'] as String?)!)
+            : const SdkOmitted(),
+        resourceId: (json['resourceId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (kind) {
-      SdkPresent<String>(value: final value) => {'kind': value,},
-      _ => const <String, dynamic>{},
-    },
-    'resourceId': resourceId,
-  };
+        ...switch (kind) {
+          SdkPresent<String>(value: final value) => {
+              'kind': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'resourceId': resourceId,
+      };
 }
 
 class CreateDrainRequestSourceVariant2 {
@@ -69,19 +100,24 @@ class CreateDrainRequestSourceVariant2 {
 
   const CreateDrainRequestSourceVariant2({required this.kind});
 
-  CreateDrainRequestSourceVariant2 Function({String kind}) get copyWith => _copyWith;
+  CreateDrainRequestSourceVariant2 Function({String kind}) get copyWith =>
+      _copyWith;
 
-  CreateDrainRequestSourceVariant2 _copyWith({Object? kind = sdkOmittedValue}) => CreateDrainRequestSourceVariant2(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-  );
+  CreateDrainRequestSourceVariant2 _copyWith(
+          {Object? kind = sdkOmittedValue}) =>
+      CreateDrainRequestSourceVariant2(
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+      );
 
-  factory CreateDrainRequestSourceVariant2.fromJson(Map<String, dynamic> json) => CreateDrainRequestSourceVariant2(
-    kind: (json['kind'] as String?)!,
-  );
+  factory CreateDrainRequestSourceVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDrainRequestSourceVariant2(
+        kind: (json['kind'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind,
-  };
+        'kind': kind,
+      };
 }
 
 class CreateDrainRequestSourceVariant3 {
@@ -91,19 +127,24 @@ class CreateDrainRequestSourceVariant3 {
 
   const CreateDrainRequestSourceVariant3({required this.kind});
 
-  CreateDrainRequestSourceVariant3 Function({String kind}) get copyWith => _copyWith;
+  CreateDrainRequestSourceVariant3 Function({String kind}) get copyWith =>
+      _copyWith;
 
-  CreateDrainRequestSourceVariant3 _copyWith({Object? kind = sdkOmittedValue}) => CreateDrainRequestSourceVariant3(
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
-  );
+  CreateDrainRequestSourceVariant3 _copyWith(
+          {Object? kind = sdkOmittedValue}) =>
+      CreateDrainRequestSourceVariant3(
+        kind: identical(kind, sdkOmittedValue) ? this.kind : kind as String,
+      );
 
-  factory CreateDrainRequestSourceVariant3.fromJson(Map<String, dynamic> json) => CreateDrainRequestSourceVariant3(
-    kind: (json['kind'] as String?)!,
-  );
+  factory CreateDrainRequestSourceVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      CreateDrainRequestSourceVariant3(
+        kind: (json['kind'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'kind': kind,
-  };
+        'kind': kind,
+      };
 }
 
 sealed class CreateDrainRequestSource {
@@ -112,40 +153,88 @@ sealed class CreateDrainRequestSource {
   const CreateDrainRequestSource();
   factory CreateDrainRequestSource.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = CreateDrainRequestSourceVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDrainRequestSourceCreateDrainRequestSourceVariant0(value); } } catch (_) {}
-      try { final value = CreateDrainRequestSourceVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDrainRequestSourceCreateDrainRequestSourceVariant1(value); } } catch (_) {}
-      try { final value = CreateDrainRequestSourceVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDrainRequestSourceCreateDrainRequestSourceVariant2(value); } } catch (_) {}
-      try { final value = CreateDrainRequestSourceVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return CreateDrainRequestSourceCreateDrainRequestSourceVariant3(value); } } catch (_) {}
+      try {
+        final value = CreateDrainRequestSourceVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateDrainRequestSourceCreateDrainRequestSourceVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = CreateDrainRequestSourceVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateDrainRequestSourceCreateDrainRequestSourceVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = CreateDrainRequestSourceVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateDrainRequestSourceCreateDrainRequestSourceVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = CreateDrainRequestSourceVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return CreateDrainRequestSourceCreateDrainRequestSourceVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return CreateDrainRequestSourceCreateDrainRequestSourceVariant0(CreateDrainRequestSourceVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateDrainRequestSourceCreateDrainRequestSourceVariant1(CreateDrainRequestSourceVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateDrainRequestSourceCreateDrainRequestSourceVariant2(CreateDrainRequestSourceVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return CreateDrainRequestSourceCreateDrainRequestSourceVariant3(CreateDrainRequestSourceVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return CreateDrainRequestSourceCreateDrainRequestSourceVariant0(
+          CreateDrainRequestSourceVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateDrainRequestSourceCreateDrainRequestSourceVariant1(
+          CreateDrainRequestSourceVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateDrainRequestSourceCreateDrainRequestSourceVariant2(
+          CreateDrainRequestSourceVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return CreateDrainRequestSourceCreateDrainRequestSourceVariant3(
+          CreateDrainRequestSourceVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for CreateDrainRequestSource");
   }
   Object? toJson();
 }
 
-final class CreateDrainRequestSourceCreateDrainRequestSourceVariant0 extends CreateDrainRequestSource {
+final class CreateDrainRequestSourceCreateDrainRequestSourceVariant0
+    extends CreateDrainRequestSource {
   final CreateDrainRequestSourceVariant0 value;
   const CreateDrainRequestSourceCreateDrainRequestSourceVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateDrainRequestSourceCreateDrainRequestSourceVariant1 extends CreateDrainRequestSource {
+final class CreateDrainRequestSourceCreateDrainRequestSourceVariant1
+    extends CreateDrainRequestSource {
   final CreateDrainRequestSourceVariant1 value;
   const CreateDrainRequestSourceCreateDrainRequestSourceVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateDrainRequestSourceCreateDrainRequestSourceVariant2 extends CreateDrainRequestSource {
+final class CreateDrainRequestSourceCreateDrainRequestSourceVariant2
+    extends CreateDrainRequestSource {
   final CreateDrainRequestSourceVariant2 value;
   const CreateDrainRequestSourceCreateDrainRequestSourceVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class CreateDrainRequestSourceCreateDrainRequestSourceVariant3 extends CreateDrainRequestSource {
+final class CreateDrainRequestSourceCreateDrainRequestSourceVariant3
+    extends CreateDrainRequestSource {
   final CreateDrainRequestSourceVariant3 value;
   const CreateDrainRequestSourceCreateDrainRequestSourceVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

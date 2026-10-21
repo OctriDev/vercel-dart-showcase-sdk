@@ -8,279 +8,503 @@ part of 'user.dart';
 class UserEventPayloadVariant490After {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Claim matchers an OIDC token must satisfy to use the policy.
   final List<UserEventPayloadVariant490AfterClaimsItem> claims;
+
   /// Required `string` value serialized in the `clientId` wire field.
   final String clientId;
+
   /// Creation time (epoch ms).
   final double createdAt;
+
   /// Required `string` value serialized in the `issuerUrl` wire field.
   final String issuerUrl;
+
   /// Human-readable policy name, or `null` when unnamed.
   final String? name;
+
   /// Permission boundary (`['*']` = the app's full declared permissions).
   final List<String> permissions;
+
   /// Required `string` value serialized in the `policyId` wire field.
   final String policyId;
+
   /// Resource boundary, or `null` when the policy has none.
   final UserEventPayloadVariant490AfterResources? resources;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
+
   /// Last-update time (epoch ms).
   final double updatedAt;
 
-  const UserEventPayloadVariant490After({required this.claims, required this.clientId, required this.createdAt, required this.issuerUrl, required this.name, required this.permissions, required this.policyId, required this.resources, required this.teamId, required this.updatedAt});
+  const UserEventPayloadVariant490After(
+      {required this.claims,
+      required this.clientId,
+      required this.createdAt,
+      required this.issuerUrl,
+      required this.name,
+      required this.permissions,
+      required this.policyId,
+      required this.resources,
+      required this.teamId,
+      required this.updatedAt});
 
-  UserEventPayloadVariant490After Function({List<UserEventPayloadVariant490AfterClaimsItem> claims, String clientId, double createdAt, String issuerUrl, String? name, List<String> permissions, String policyId, UserEventPayloadVariant490AfterResources? resources, String teamId, double updatedAt}) get copyWith => _copyWith;
+  UserEventPayloadVariant490After Function(
+      {List<UserEventPayloadVariant490AfterClaimsItem> claims,
+      String clientId,
+      double createdAt,
+      String issuerUrl,
+      String? name,
+      List<String> permissions,
+      String policyId,
+      UserEventPayloadVariant490AfterResources? resources,
+      String teamId,
+      double updatedAt}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant490After _copyWith({Object? claims = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? issuerUrl = sdkOmittedValue, Object? name = sdkOmittedValue, Object? permissions = sdkOmittedValue, Object? policyId = sdkOmittedValue, Object? resources = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UserEventPayloadVariant490After(
-    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as List<UserEventPayloadVariant490AfterClaimsItem>,
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    issuerUrl: identical(issuerUrl, sdkOmittedValue) ? this.issuerUrl : issuerUrl as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String?,
-    permissions: identical(permissions, sdkOmittedValue) ? this.permissions : permissions as List<String>,
-    policyId: identical(policyId, sdkOmittedValue) ? this.policyId : policyId as String,
-    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as UserEventPayloadVariant490AfterResources?,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  UserEventPayloadVariant490After _copyWith(
+          {Object? claims = sdkOmittedValue,
+          Object? clientId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? issuerUrl = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? permissions = sdkOmittedValue,
+          Object? policyId = sdkOmittedValue,
+          Object? resources = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UserEventPayloadVariant490After(
+        claims: identical(claims, sdkOmittedValue)
+            ? this.claims
+            : claims as List<UserEventPayloadVariant490AfterClaimsItem>,
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        issuerUrl: identical(issuerUrl, sdkOmittedValue)
+            ? this.issuerUrl
+            : issuerUrl as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String?,
+        permissions: identical(permissions, sdkOmittedValue)
+            ? this.permissions
+            : permissions as List<String>,
+        policyId: identical(policyId, sdkOmittedValue)
+            ? this.policyId
+            : policyId as String,
+        resources: identical(resources, sdkOmittedValue)
+            ? this.resources
+            : resources as UserEventPayloadVariant490AfterResources?,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory UserEventPayloadVariant490After.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant490After(
-    claims: ((json['claims'] as List?)?.map((e) => UserEventPayloadVariant490AfterClaimsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    clientId: (json['clientId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    issuerUrl: (json['issuerUrl'] as String?)!,
-    name: json.containsKey('name') ? json['name'] as String? : throw ArgumentError.value(null, 'name', 'Required property is missing'),
-    permissions: ((json['permissions'] as List?)?.map((e) => e as String).toList())!,
-    policyId: (json['policyId'] as String?)!,
-    resources: json.containsKey('resources') ? json['resources'] != null ? UserEventPayloadVariant490AfterResources.fromJson(json['resources'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'resources', 'Required property is missing'),
-    teamId: (json['teamId'] as String?)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory UserEventPayloadVariant490After.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant490After(
+        claims: ((json['claims'] as List?)
+            ?.map((e) => UserEventPayloadVariant490AfterClaimsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        clientId: (json['clientId'] as String?)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        issuerUrl: (json['issuerUrl'] as String?)!,
+        name: json.containsKey('name')
+            ? json['name'] as String?
+            : throw ArgumentError.value(
+                null, 'name', 'Required property is missing'),
+        permissions:
+            ((json['permissions'] as List?)?.map((e) => e as String).toList())!,
+        policyId: (json['policyId'] as String?)!,
+        resources: json.containsKey('resources')
+            ? json['resources'] != null
+                ? UserEventPayloadVariant490AfterResources.fromJson(
+                    json['resources'] as Map<String, dynamic>)
+                : null
+            : throw ArgumentError.value(
+                null, 'resources', 'Required property is missing'),
+        teamId: (json['teamId'] as String?)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'claims': claims.map((item) => item.toJson()).toList(),
-    'clientId': clientId,
-    'createdAt': createdAt,
-    'issuerUrl': issuerUrl,
-    'name': name,
-    'permissions': permissions,
-    'policyId': policyId,
-    'resources': resources?.toJson(),
-    'teamId': teamId,
-    'updatedAt': updatedAt,
-  };
+        'claims': claims.map((item) => item.toJson()).toList(),
+        'clientId': clientId,
+        'createdAt': createdAt,
+        'issuerUrl': issuerUrl,
+        'name': name,
+        'permissions': permissions,
+        'policyId': policyId,
+        'resources': resources?.toJson(),
+        'teamId': teamId,
+        'updatedAt': updatedAt,
+      };
 }
 
 /// Resource boundary, or `null` when the policy has none.
 class UserEventPayloadVariant490BeforeResources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required array value serialized in the `projectIds` wire field.
   final List<String> projectIds;
 
   const UserEventPayloadVariant490BeforeResources({required this.projectIds});
 
-  UserEventPayloadVariant490BeforeResources Function({List<String> projectIds}) get copyWith => _copyWith;
+  UserEventPayloadVariant490BeforeResources Function({List<String> projectIds})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant490BeforeResources _copyWith({Object? projectIds = sdkOmittedValue}) => UserEventPayloadVariant490BeforeResources(
-    projectIds: identical(projectIds, sdkOmittedValue) ? this.projectIds : projectIds as List<String>,
-  );
+  UserEventPayloadVariant490BeforeResources _copyWith(
+          {Object? projectIds = sdkOmittedValue}) =>
+      UserEventPayloadVariant490BeforeResources(
+        projectIds: identical(projectIds, sdkOmittedValue)
+            ? this.projectIds
+            : projectIds as List<String>,
+      );
 
-  factory UserEventPayloadVariant490BeforeResources.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant490BeforeResources(
-    projectIds: ((json['projectIds'] as List?)?.map((e) => e as String).toList())!,
-  );
+  factory UserEventPayloadVariant490BeforeResources.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant490BeforeResources(
+        projectIds:
+            ((json['projectIds'] as List?)?.map((e) => e as String).toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectIds': projectIds,
-  };
+        'projectIds': projectIds,
+      };
 }
 
 /// Required object value serialized in the `values[]` wire field.
 class UserEventPayloadVariant490BeforeClaimsItemValuesItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `value` wire field.
   final String value;
+
   /// Required enumerated value serialized in the `wildcards` wire field.
   final UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards wildcards;
 
-  const UserEventPayloadVariant490BeforeClaimsItemValuesItem({required this.value, required this.wildcards});
+  const UserEventPayloadVariant490BeforeClaimsItemValuesItem(
+      {required this.value, required this.wildcards});
 
-  UserEventPayloadVariant490BeforeClaimsItemValuesItem Function({String value, UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards wildcards}) get copyWith => _copyWith;
+  UserEventPayloadVariant490BeforeClaimsItemValuesItem Function(
+      {String value,
+      UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards
+          wildcards}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant490BeforeClaimsItemValuesItem _copyWith({Object? value = sdkOmittedValue, Object? wildcards = sdkOmittedValue}) => UserEventPayloadVariant490BeforeClaimsItemValuesItem(
-    value: identical(value, sdkOmittedValue) ? this.value : value as String,
-    wildcards: identical(wildcards, sdkOmittedValue) ? this.wildcards : wildcards as UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards,
-  );
+  UserEventPayloadVariant490BeforeClaimsItemValuesItem _copyWith(
+          {Object? value = sdkOmittedValue,
+          Object? wildcards = sdkOmittedValue}) =>
+      UserEventPayloadVariant490BeforeClaimsItemValuesItem(
+        value: identical(value, sdkOmittedValue) ? this.value : value as String,
+        wildcards: identical(wildcards, sdkOmittedValue)
+            ? this.wildcards
+            : wildcards
+                as UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards,
+      );
 
-  factory UserEventPayloadVariant490BeforeClaimsItemValuesItem.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant490BeforeClaimsItemValuesItem(
-    value: (json['value'] as String?)!,
-    wildcards: (json['wildcards'] != null ? UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards.fromJson(json['wildcards'] as bool) : null)!,
-  );
+  factory UserEventPayloadVariant490BeforeClaimsItemValuesItem.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant490BeforeClaimsItemValuesItem(
+        value: (json['value'] as String?)!,
+        wildcards: (json['wildcards'] != null
+            ? UserEventPayloadVariant490BeforeClaimsItemValuesItemWildcards
+                .fromJson(json['wildcards'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'value': value,
-    'wildcards': wildcards.toJson(),
-  };
+        'value': value,
+        'wildcards': wildcards.toJson(),
+      };
 }
 
 /// Claim matchers an OIDC token must satisfy to use the policy.
 class UserEventPayloadVariant490BeforeClaimsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
+
   /// Required array value serialized in the `values` wire field.
   final List<UserEventPayloadVariant490BeforeClaimsItemValuesItem> values;
 
-  const UserEventPayloadVariant490BeforeClaimsItem({required this.name, required this.values});
+  const UserEventPayloadVariant490BeforeClaimsItem(
+      {required this.name, required this.values});
 
-  UserEventPayloadVariant490BeforeClaimsItem Function({String name, List<UserEventPayloadVariant490BeforeClaimsItemValuesItem> values}) get copyWith => _copyWith;
+  UserEventPayloadVariant490BeforeClaimsItem Function(
+          {String name,
+          List<UserEventPayloadVariant490BeforeClaimsItemValuesItem> values})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant490BeforeClaimsItem _copyWith({Object? name = sdkOmittedValue, Object? values = sdkOmittedValue}) => UserEventPayloadVariant490BeforeClaimsItem(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    values: identical(values, sdkOmittedValue) ? this.values : values as List<UserEventPayloadVariant490BeforeClaimsItemValuesItem>,
-  );
+  UserEventPayloadVariant490BeforeClaimsItem _copyWith(
+          {Object? name = sdkOmittedValue, Object? values = sdkOmittedValue}) =>
+      UserEventPayloadVariant490BeforeClaimsItem(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        values: identical(values, sdkOmittedValue)
+            ? this.values
+            : values
+                as List<UserEventPayloadVariant490BeforeClaimsItemValuesItem>,
+      );
 
-  factory UserEventPayloadVariant490BeforeClaimsItem.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant490BeforeClaimsItem(
-    name: (json['name'] as String?)!,
-    values: ((json['values'] as List?)?.map((e) => UserEventPayloadVariant490BeforeClaimsItemValuesItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory UserEventPayloadVariant490BeforeClaimsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant490BeforeClaimsItem(
+        name: (json['name'] as String?)!,
+        values: ((json['values'] as List?)
+            ?.map((e) =>
+                UserEventPayloadVariant490BeforeClaimsItemValuesItem.fromJson(
+                    e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'values': values.map((item) => item.toJson()).toList(),
-  };
+        'name': name,
+        'values': values.map((item) => item.toJson()).toList(),
+      };
 }
 
 /// A full point-in-time snapshot of an OIDC exchange policy, captured on every lifecycle event so the audit trail records exactly what the policy looked like. Mirrors the management endpoints' public response shape.
 class UserEventPayloadVariant490Before {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Claim matchers an OIDC token must satisfy to use the policy.
   final List<UserEventPayloadVariant490BeforeClaimsItem> claims;
+
   /// Required `string` value serialized in the `clientId` wire field.
   final String clientId;
+
   /// Creation time (epoch ms).
   final double createdAt;
+
   /// Required `string` value serialized in the `issuerUrl` wire field.
   final String issuerUrl;
+
   /// Human-readable policy name, or `null` when unnamed.
   final String? name;
+
   /// Permission boundary (`['*']` = the app's full declared permissions).
   final List<String> permissions;
+
   /// Required `string` value serialized in the `policyId` wire field.
   final String policyId;
+
   /// Resource boundary, or `null` when the policy has none.
   final UserEventPayloadVariant490BeforeResources? resources;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
+
   /// Last-update time (epoch ms).
   final double updatedAt;
 
-  const UserEventPayloadVariant490Before({required this.claims, required this.clientId, required this.createdAt, required this.issuerUrl, required this.name, required this.permissions, required this.policyId, required this.resources, required this.teamId, required this.updatedAt});
+  const UserEventPayloadVariant490Before(
+      {required this.claims,
+      required this.clientId,
+      required this.createdAt,
+      required this.issuerUrl,
+      required this.name,
+      required this.permissions,
+      required this.policyId,
+      required this.resources,
+      required this.teamId,
+      required this.updatedAt});
 
-  UserEventPayloadVariant490Before Function({List<UserEventPayloadVariant490BeforeClaimsItem> claims, String clientId, double createdAt, String issuerUrl, String? name, List<String> permissions, String policyId, UserEventPayloadVariant490BeforeResources? resources, String teamId, double updatedAt}) get copyWith => _copyWith;
+  UserEventPayloadVariant490Before Function(
+      {List<UserEventPayloadVariant490BeforeClaimsItem> claims,
+      String clientId,
+      double createdAt,
+      String issuerUrl,
+      String? name,
+      List<String> permissions,
+      String policyId,
+      UserEventPayloadVariant490BeforeResources? resources,
+      String teamId,
+      double updatedAt}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant490Before _copyWith({Object? claims = sdkOmittedValue, Object? clientId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? issuerUrl = sdkOmittedValue, Object? name = sdkOmittedValue, Object? permissions = sdkOmittedValue, Object? policyId = sdkOmittedValue, Object? resources = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UserEventPayloadVariant490Before(
-    claims: identical(claims, sdkOmittedValue) ? this.claims : claims as List<UserEventPayloadVariant490BeforeClaimsItem>,
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    issuerUrl: identical(issuerUrl, sdkOmittedValue) ? this.issuerUrl : issuerUrl as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String?,
-    permissions: identical(permissions, sdkOmittedValue) ? this.permissions : permissions as List<String>,
-    policyId: identical(policyId, sdkOmittedValue) ? this.policyId : policyId as String,
-    resources: identical(resources, sdkOmittedValue) ? this.resources : resources as UserEventPayloadVariant490BeforeResources?,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-  );
+  UserEventPayloadVariant490Before _copyWith(
+          {Object? claims = sdkOmittedValue,
+          Object? clientId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? issuerUrl = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? permissions = sdkOmittedValue,
+          Object? policyId = sdkOmittedValue,
+          Object? resources = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UserEventPayloadVariant490Before(
+        claims: identical(claims, sdkOmittedValue)
+            ? this.claims
+            : claims as List<UserEventPayloadVariant490BeforeClaimsItem>,
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        issuerUrl: identical(issuerUrl, sdkOmittedValue)
+            ? this.issuerUrl
+            : issuerUrl as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String?,
+        permissions: identical(permissions, sdkOmittedValue)
+            ? this.permissions
+            : permissions as List<String>,
+        policyId: identical(policyId, sdkOmittedValue)
+            ? this.policyId
+            : policyId as String,
+        resources: identical(resources, sdkOmittedValue)
+            ? this.resources
+            : resources as UserEventPayloadVariant490BeforeResources?,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+      );
 
-  factory UserEventPayloadVariant490Before.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant490Before(
-    claims: ((json['claims'] as List?)?.map((e) => UserEventPayloadVariant490BeforeClaimsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    clientId: (json['clientId'] as String?)!,
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    issuerUrl: (json['issuerUrl'] as String?)!,
-    name: json.containsKey('name') ? json['name'] as String? : throw ArgumentError.value(null, 'name', 'Required property is missing'),
-    permissions: ((json['permissions'] as List?)?.map((e) => e as String).toList())!,
-    policyId: (json['policyId'] as String?)!,
-    resources: json.containsKey('resources') ? json['resources'] != null ? UserEventPayloadVariant490BeforeResources.fromJson(json['resources'] as Map<String, dynamic>) : null : throw ArgumentError.value(null, 'resources', 'Required property is missing'),
-    teamId: (json['teamId'] as String?)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-  );
+  factory UserEventPayloadVariant490Before.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant490Before(
+        claims: ((json['claims'] as List?)
+            ?.map((e) => UserEventPayloadVariant490BeforeClaimsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        clientId: (json['clientId'] as String?)!,
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        issuerUrl: (json['issuerUrl'] as String?)!,
+        name: json.containsKey('name')
+            ? json['name'] as String?
+            : throw ArgumentError.value(
+                null, 'name', 'Required property is missing'),
+        permissions:
+            ((json['permissions'] as List?)?.map((e) => e as String).toList())!,
+        policyId: (json['policyId'] as String?)!,
+        resources: json.containsKey('resources')
+            ? json['resources'] != null
+                ? UserEventPayloadVariant490BeforeResources.fromJson(
+                    json['resources'] as Map<String, dynamic>)
+                : null
+            : throw ArgumentError.value(
+                null, 'resources', 'Required property is missing'),
+        teamId: (json['teamId'] as String?)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'claims': claims.map((item) => item.toJson()).toList(),
-    'clientId': clientId,
-    'createdAt': createdAt,
-    'issuerUrl': issuerUrl,
-    'name': name,
-    'permissions': permissions,
-    'policyId': policyId,
-    'resources': resources?.toJson(),
-    'teamId': teamId,
-    'updatedAt': updatedAt,
-  };
+        'claims': claims.map((item) => item.toJson()).toList(),
+        'clientId': clientId,
+        'createdAt': createdAt,
+        'issuerUrl': issuerUrl,
+        'name': name,
+        'permissions': permissions,
+        'policyId': policyId,
+        'resources': resources?.toJson(),
+        'teamId': teamId,
+        'updatedAt': updatedAt,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant490 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// A full point-in-time snapshot of an OIDC exchange policy, captured on every lifecycle event so the audit trail records exactly what the policy looked like. Mirrors the management endpoints' public response shape.
   final UserEventPayloadVariant490After after;
+
   /// A full point-in-time snapshot of an OIDC exchange policy, captured on every lifecycle event so the audit trail records exactly what the policy looked like. Mirrors the management endpoints' public response shape.
   final UserEventPayloadVariant490Before before;
+
   /// Optional `string` value serialized in the `appName` wire field.
   final SdkOptional<String> appName;
 
-  const UserEventPayloadVariant490({required this.after, required this.before, this.appName = const SdkOmitted()});
+  const UserEventPayloadVariant490(
+      {required this.after,
+      required this.before,
+      this.appName = const SdkOmitted()});
 
-  UserEventPayloadVariant490 Function({UserEventPayloadVariant490After after, UserEventPayloadVariant490Before before, SdkOptional<String> appName}) get copyWith => _copyWith;
+  UserEventPayloadVariant490 Function(
+      {UserEventPayloadVariant490After after,
+      UserEventPayloadVariant490Before before,
+      SdkOptional<String> appName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant490 _copyWith({Object? after = sdkOmittedValue, Object? before = sdkOmittedValue, Object? appName = sdkOmittedValue}) => UserEventPayloadVariant490(
-    after: identical(after, sdkOmittedValue) ? this.after : after as UserEventPayloadVariant490After,
-    before: identical(before, sdkOmittedValue) ? this.before : before as UserEventPayloadVariant490Before,
-    appName: identical(appName, sdkOmittedValue) ? this.appName : appName as SdkOptional<String>,
-  );
+  UserEventPayloadVariant490 _copyWith(
+          {Object? after = sdkOmittedValue,
+          Object? before = sdkOmittedValue,
+          Object? appName = sdkOmittedValue}) =>
+      UserEventPayloadVariant490(
+        after: identical(after, sdkOmittedValue)
+            ? this.after
+            : after as UserEventPayloadVariant490After,
+        before: identical(before, sdkOmittedValue)
+            ? this.before
+            : before as UserEventPayloadVariant490Before,
+        appName: identical(appName, sdkOmittedValue)
+            ? this.appName
+            : appName as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant490.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant490(
-    after: (json['after'] != null ? UserEventPayloadVariant490After.fromJson(json['after'] as Map<String, dynamic>) : null)!,
-    before: (json['before'] != null ? UserEventPayloadVariant490Before.fromJson(json['before'] as Map<String, dynamic>) : null)!,
-    appName: json['appName'] != null ? SdkPresent((json['appName'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant490.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant490(
+        after: (json['after'] != null
+            ? UserEventPayloadVariant490After.fromJson(
+                json['after'] as Map<String, dynamic>)
+            : null)!,
+        before: (json['before'] != null
+            ? UserEventPayloadVariant490Before.fromJson(
+                json['before'] as Map<String, dynamic>)
+            : null)!,
+        appName: json['appName'] != null
+            ? SdkPresent((json['appName'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'after': after.toJson(),
-    'before': before.toJson(),
-    ...switch (appName) {
-      SdkPresent<String>(value: final value) => {'appName': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'after': after.toJson(),
+        'before': before.toJson(),
+        ...switch (appName) {
+          SdkPresent<String>(value: final value) => {
+              'appName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `names` wire field.
 class UserEventPayloadVariant491GeolocationCityNames {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `en` wire field.
   final String en;
 
   const UserEventPayloadVariant491GeolocationCityNames({required this.en});
 
-  UserEventPayloadVariant491GeolocationCityNames Function({String en}) get copyWith => _copyWith;
+  UserEventPayloadVariant491GeolocationCityNames Function({String en})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant491GeolocationCityNames _copyWith({Object? en = sdkOmittedValue}) => UserEventPayloadVariant491GeolocationCityNames(
-    en: identical(en, sdkOmittedValue) ? this.en : en as String,
-  );
+  UserEventPayloadVariant491GeolocationCityNames _copyWith(
+          {Object? en = sdkOmittedValue}) =>
+      UserEventPayloadVariant491GeolocationCityNames(
+        en: identical(en, sdkOmittedValue) ? this.en : en as String,
+      );
 
-  factory UserEventPayloadVariant491GeolocationCityNames.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant491GeolocationCityNames(
-    en: (json['en'] as String?)!,
-  );
+  factory UserEventPayloadVariant491GeolocationCityNames.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant491GeolocationCityNames(
+        en: (json['en'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'en': en,
-  };
+        'en': en,
+      };
 }

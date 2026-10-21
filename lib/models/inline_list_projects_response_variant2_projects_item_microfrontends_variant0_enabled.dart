@@ -6,284 +6,429 @@ part of 'inline.dart';
 // Inline operation models
 /// Whether microfrontends are enabled for this project.
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled._(
+          value);
 
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled._(true);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits
+          ._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0FreeProjectForLegacyLimits &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp
+          ._(value);
 
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp._(true);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant0IsDefaultApp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether to add microfrontends routing to aliases. This means domains in this project will route as a microfrontend.
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
+          ._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1DoNotRouteWithMicrofrontendsRouting &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether microfrontends are enabled for this project.
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled._(
+          value);
 
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled._(true);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the project was part of the legacy limits for hobby and pro-trial before billing was added. This field is only set when the team is upgraded to a paid plan and we are backfilling the subscription status. We cap the subscription to 2 projects and set this field for the 3rd project. When this field is set, the project is not charged for and we do not call any billing APIs for this project.
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits
+          ._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1FreeProjectForLegacyLimits &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp._(false);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp
+          ._(false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1IsDefaultApp &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether observability data should be routed to this microfrontend project or a root project.
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject
+          ._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant1RouteObservabilityToThisProject &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled._(
+          value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled._(false);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled._(
+          false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(value);
+  factory ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits
+          ._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits
+          ._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits
+          ._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemMicrofrontendsVariant2FreeProjectForLegacyLimits &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class ListProjectsResponseVariant2ProjectsItemNodeVersion {
-
   final String value;
 
   const ListProjectsResponseVariant2ProjectsItemNodeVersion._(this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemNodeVersion.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemNodeVersion._(value);
+  factory ListProjectsResponseVariant2ProjectsItemNodeVersion.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._(value);
 
-  static const v10X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('10.x');
-  static const v12X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('12.x');
-  static const v14X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('14.x');
-  static const v16X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('16.x');
-  static const v18X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('18.x');
-  static const v20X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('20.x');
-  static const v22X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('22.x');
-  static const v24X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('24.x');
-  static const v26X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('26.x');
-  static const v810X = ListProjectsResponseVariant2ProjectsItemNodeVersion._('8.10.x');
+  static const v10X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('10.x');
+  static const v12X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('12.x');
+  static const v14X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('14.x');
+  static const v16X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('16.x');
+  static const v18X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('18.x');
+  static const v20X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('20.x');
+  static const v22X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('22.x');
+  static const v24X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('24.x');
+  static const v26X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('26.x');
+  static const v810X =
+      ListProjectsResponseVariant2ProjectsItemNodeVersion._('8.10.x');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemNodeVersion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant2ProjectsItemNodeVersion &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not to generate OpenID Connect JSON Web Tokens.
 final class ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled {
-
   final bool value;
 
-  const ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled.fromJson(bool value) => ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(value);
+  factory ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled.fromJson(
+          bool value) =>
+      ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(value);
 
-  static const false_ = ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(false);
-  static const true_ = ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(true);
+  static const false_ =
+      ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(false);
+  static const true_ =
+      ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is ListProjectsResponseVariant2ProjectsItemOidcTokenConfigEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// - team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`
 final class ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode {
-
   final String value;
 
-  const ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._(this.value);
+  const ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._(
+      this.value);
 
-  factory ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode.fromJson(String value) => ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._(value);
+  factory ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode.fromJson(
+          String value) =>
+      ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._(
+          value);
 
-  static const global = ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._('global');
-  static const team = ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._('team');
+  static const global =
+      ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._(
+          'global');
+  static const team =
+      ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode._(
+          'team');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is ListProjectsResponseVariant2ProjectsItemOidcTokenConfigIssuerMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

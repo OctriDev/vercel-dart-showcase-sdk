@@ -7,190 +7,380 @@ part of 'inline.dart';
 class EditRouteResponseRoute {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional description of what the routing rule does.
   final SdkOptional<String> description;
+
   /// Whether the routing rule is enabled. Defaults to true.
   final SdkOptional<EditRouteResponseRouteEnabled> enabled;
+
   /// Unique identifier for the routing rule.
   final String id;
+
   /// Human-readable name for the routing rule.
   final String name;
+
   /// Original destination provided by user.
   final SdkOptional<String> rawDest;
+
   /// Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses.
   final SdkOptional<String> rawSrc;
+
   /// The route definition from @vercel/routing-utils.
   final EditRouteResponseRouteRoute route;
   final SdkOptional<EditRouteResponseRouteRouteType> routeType;
+
   /// The syntax type of the source pattern. Determines how the pattern is compiled to regex.
   final SdkOptional<EditRouteResponseRouteSrcSyntax> srcSyntax;
+
   /// Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production.
   final SdkOptional<EditRouteResponseRouteStaged> staged;
 
-  const EditRouteResponseRoute({this.description = const SdkOmitted(), this.enabled = const SdkOmitted(), required this.id, required this.name, this.rawDest = const SdkOmitted(), this.rawSrc = const SdkOmitted(), required this.route, this.routeType = const SdkOmitted(), this.srcSyntax = const SdkOmitted(), this.staged = const SdkOmitted()});
+  const EditRouteResponseRoute(
+      {this.description = const SdkOmitted(),
+      this.enabled = const SdkOmitted(),
+      required this.id,
+      required this.name,
+      this.rawDest = const SdkOmitted(),
+      this.rawSrc = const SdkOmitted(),
+      required this.route,
+      this.routeType = const SdkOmitted(),
+      this.srcSyntax = const SdkOmitted(),
+      this.staged = const SdkOmitted()});
 
-  EditRouteResponseRoute Function({SdkOptional<String> description, SdkOptional<EditRouteResponseRouteEnabled> enabled, String id, String name, SdkOptional<String> rawDest, SdkOptional<String> rawSrc, EditRouteResponseRouteRoute route, SdkOptional<EditRouteResponseRouteRouteType> routeType, SdkOptional<EditRouteResponseRouteSrcSyntax> srcSyntax, SdkOptional<EditRouteResponseRouteStaged> staged}) get copyWith => _copyWith;
+  EditRouteResponseRoute Function(
+          {SdkOptional<String> description,
+          SdkOptional<EditRouteResponseRouteEnabled> enabled,
+          String id,
+          String name,
+          SdkOptional<String> rawDest,
+          SdkOptional<String> rawSrc,
+          EditRouteResponseRouteRoute route,
+          SdkOptional<EditRouteResponseRouteRouteType> routeType,
+          SdkOptional<EditRouteResponseRouteSrcSyntax> srcSyntax,
+          SdkOptional<EditRouteResponseRouteStaged> staged})
+      get copyWith => _copyWith;
 
-  EditRouteResponseRoute _copyWith({Object? description = sdkOmittedValue, Object? enabled = sdkOmittedValue, Object? id = sdkOmittedValue, Object? name = sdkOmittedValue, Object? rawDest = sdkOmittedValue, Object? rawSrc = sdkOmittedValue, Object? route = sdkOmittedValue, Object? routeType = sdkOmittedValue, Object? srcSyntax = sdkOmittedValue, Object? staged = sdkOmittedValue}) => EditRouteResponseRoute(
-    description: identical(description, sdkOmittedValue) ? this.description : description as SdkOptional<String>,
-    enabled: identical(enabled, sdkOmittedValue) ? this.enabled : enabled as SdkOptional<EditRouteResponseRouteEnabled>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-    rawDest: identical(rawDest, sdkOmittedValue) ? this.rawDest : rawDest as SdkOptional<String>,
-    rawSrc: identical(rawSrc, sdkOmittedValue) ? this.rawSrc : rawSrc as SdkOptional<String>,
-    route: identical(route, sdkOmittedValue) ? this.route : route as EditRouteResponseRouteRoute,
-    routeType: identical(routeType, sdkOmittedValue) ? this.routeType : routeType as SdkOptional<EditRouteResponseRouteRouteType>,
-    srcSyntax: identical(srcSyntax, sdkOmittedValue) ? this.srcSyntax : srcSyntax as SdkOptional<EditRouteResponseRouteSrcSyntax>,
-    staged: identical(staged, sdkOmittedValue) ? this.staged : staged as SdkOptional<EditRouteResponseRouteStaged>,
-  );
+  EditRouteResponseRoute _copyWith(
+          {Object? description = sdkOmittedValue,
+          Object? enabled = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? rawDest = sdkOmittedValue,
+          Object? rawSrc = sdkOmittedValue,
+          Object? route = sdkOmittedValue,
+          Object? routeType = sdkOmittedValue,
+          Object? srcSyntax = sdkOmittedValue,
+          Object? staged = sdkOmittedValue}) =>
+      EditRouteResponseRoute(
+        description: identical(description, sdkOmittedValue)
+            ? this.description
+            : description as SdkOptional<String>,
+        enabled: identical(enabled, sdkOmittedValue)
+            ? this.enabled
+            : enabled as SdkOptional<EditRouteResponseRouteEnabled>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+        rawDest: identical(rawDest, sdkOmittedValue)
+            ? this.rawDest
+            : rawDest as SdkOptional<String>,
+        rawSrc: identical(rawSrc, sdkOmittedValue)
+            ? this.rawSrc
+            : rawSrc as SdkOptional<String>,
+        route: identical(route, sdkOmittedValue)
+            ? this.route
+            : route as EditRouteResponseRouteRoute,
+        routeType: identical(routeType, sdkOmittedValue)
+            ? this.routeType
+            : routeType as SdkOptional<EditRouteResponseRouteRouteType>,
+        srcSyntax: identical(srcSyntax, sdkOmittedValue)
+            ? this.srcSyntax
+            : srcSyntax as SdkOptional<EditRouteResponseRouteSrcSyntax>,
+        staged: identical(staged, sdkOmittedValue)
+            ? this.staged
+            : staged as SdkOptional<EditRouteResponseRouteStaged>,
+      );
 
-  factory EditRouteResponseRoute.fromJson(Map<String, dynamic> json) => EditRouteResponseRoute(
-    description: json['description'] != null ? SdkPresent((json['description'] as String?)!) : const SdkOmitted(),
-    enabled: json['enabled'] != null ? SdkPresent((json['enabled'] != null ? EditRouteResponseRouteEnabled.fromJson(json['enabled'] as bool) : null)!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    name: (json['name'] as String?)!,
-    rawDest: json['rawDest'] != null ? SdkPresent((json['rawDest'] as String?)!) : const SdkOmitted(),
-    rawSrc: json['rawSrc'] != null ? SdkPresent((json['rawSrc'] as String?)!) : const SdkOmitted(),
-    route: (json['route'] != null ? EditRouteResponseRouteRoute.fromJson(json['route'] as Map<String, dynamic>) : null)!,
-    routeType: json['routeType'] != null ? SdkPresent((json['routeType'] != null ? EditRouteResponseRouteRouteType.fromJson(json['routeType'] as String) : null)!) : const SdkOmitted(),
-    srcSyntax: json['srcSyntax'] != null ? SdkPresent((json['srcSyntax'] != null ? EditRouteResponseRouteSrcSyntax.fromJson(json['srcSyntax'] as String) : null)!) : const SdkOmitted(),
-    staged: json['staged'] != null ? SdkPresent((json['staged'] != null ? EditRouteResponseRouteStaged.fromJson(json['staged'] as bool) : null)!) : const SdkOmitted(),
-  );
+  factory EditRouteResponseRoute.fromJson(Map<String, dynamic> json) =>
+      EditRouteResponseRoute(
+        description: json['description'] != null
+            ? SdkPresent((json['description'] as String?)!)
+            : const SdkOmitted(),
+        enabled: json['enabled'] != null
+            ? SdkPresent((json['enabled'] != null
+                ? EditRouteResponseRouteEnabled.fromJson(
+                    json['enabled'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        name: (json['name'] as String?)!,
+        rawDest: json['rawDest'] != null
+            ? SdkPresent((json['rawDest'] as String?)!)
+            : const SdkOmitted(),
+        rawSrc: json['rawSrc'] != null
+            ? SdkPresent((json['rawSrc'] as String?)!)
+            : const SdkOmitted(),
+        route: (json['route'] != null
+            ? EditRouteResponseRouteRoute.fromJson(
+                json['route'] as Map<String, dynamic>)
+            : null)!,
+        routeType: json['routeType'] != null
+            ? SdkPresent((json['routeType'] != null
+                ? EditRouteResponseRouteRouteType.fromJson(
+                    json['routeType'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        srcSyntax: json['srcSyntax'] != null
+            ? SdkPresent((json['srcSyntax'] != null
+                ? EditRouteResponseRouteSrcSyntax.fromJson(
+                    json['srcSyntax'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        staged: json['staged'] != null
+            ? SdkPresent((json['staged'] != null
+                ? EditRouteResponseRouteStaged.fromJson(json['staged'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (description) {
-      SdkPresent<String>(value: final value) => {'description': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (enabled) {
-      SdkPresent<EditRouteResponseRouteEnabled>(value: final value) => {'enabled': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'name': name,
-    ...switch (rawDest) {
-      SdkPresent<String>(value: final value) => {'rawDest': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (rawSrc) {
-      SdkPresent<String>(value: final value) => {'rawSrc': value,},
-      _ => const <String, dynamic>{},
-    },
-    'route': route.toJson(),
-    ...switch (routeType) {
-      SdkPresent<EditRouteResponseRouteRouteType>(value: final value) => {'routeType': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (srcSyntax) {
-      SdkPresent<EditRouteResponseRouteSrcSyntax>(value: final value) => {'srcSyntax': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (staged) {
-      SdkPresent<EditRouteResponseRouteStaged>(value: final value) => {'staged': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (description) {
+          SdkPresent<String>(value: final value) => {
+              'description': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (enabled) {
+          SdkPresent<EditRouteResponseRouteEnabled>(value: final value) => {
+              'enabled': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'name': name,
+        ...switch (rawDest) {
+          SdkPresent<String>(value: final value) => {
+              'rawDest': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (rawSrc) {
+          SdkPresent<String>(value: final value) => {
+              'rawSrc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'route': route.toJson(),
+        ...switch (routeType) {
+          SdkPresent<EditRouteResponseRouteRouteType>(value: final value) => {
+              'routeType': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (srcSyntax) {
+          SdkPresent<EditRouteResponseRouteSrcSyntax>(value: final value) => {
+              'srcSyntax': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (staged) {
+          SdkPresent<EditRouteResponseRouteStaged>(value: final value) => {
+              'staged': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// A version of routing rules stored in S3.
 class EditRouteResponseVersion {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// The staging alias for previewing this version.
   final SdkOptional<String> alias;
+
   /// The user who created this version.
   final String createdBy;
+
   /// Unique identifier for the version.
   final String id;
+
   /// Whether this version is currently live in production.
   final SdkOptional<EditRouteResponseVersionIsLive> isLive;
+
   /// Whether this version is staged and not yet promoted to production.
   final SdkOptional<EditRouteResponseVersionIsStaging> isStaging;
+
   /// Timestamp of when this version was last modified.
   final double lastModified;
+
   /// The number of routing rules in this version.
   final SdkOptional<double> ruleCount;
+
   /// The S3 key where the routing rules are stored.
   final String s3Key;
 
-  const EditRouteResponseVersion({this.alias = const SdkOmitted(), required this.createdBy, required this.id, this.isLive = const SdkOmitted(), this.isStaging = const SdkOmitted(), required this.lastModified, this.ruleCount = const SdkOmitted(), required this.s3Key});
+  const EditRouteResponseVersion(
+      {this.alias = const SdkOmitted(),
+      required this.createdBy,
+      required this.id,
+      this.isLive = const SdkOmitted(),
+      this.isStaging = const SdkOmitted(),
+      required this.lastModified,
+      this.ruleCount = const SdkOmitted(),
+      required this.s3Key});
 
-  EditRouteResponseVersion Function({SdkOptional<String> alias, String createdBy, String id, SdkOptional<EditRouteResponseVersionIsLive> isLive, SdkOptional<EditRouteResponseVersionIsStaging> isStaging, double lastModified, SdkOptional<double> ruleCount, String s3Key}) get copyWith => _copyWith;
+  EditRouteResponseVersion Function(
+      {SdkOptional<String> alias,
+      String createdBy,
+      String id,
+      SdkOptional<EditRouteResponseVersionIsLive> isLive,
+      SdkOptional<EditRouteResponseVersionIsStaging> isStaging,
+      double lastModified,
+      SdkOptional<double> ruleCount,
+      String s3Key}) get copyWith => _copyWith;
 
-  EditRouteResponseVersion _copyWith({Object? alias = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? id = sdkOmittedValue, Object? isLive = sdkOmittedValue, Object? isStaging = sdkOmittedValue, Object? lastModified = sdkOmittedValue, Object? ruleCount = sdkOmittedValue, Object? s3Key = sdkOmittedValue}) => EditRouteResponseVersion(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    isLive: identical(isLive, sdkOmittedValue) ? this.isLive : isLive as SdkOptional<EditRouteResponseVersionIsLive>,
-    isStaging: identical(isStaging, sdkOmittedValue) ? this.isStaging : isStaging as SdkOptional<EditRouteResponseVersionIsStaging>,
-    lastModified: identical(lastModified, sdkOmittedValue) ? this.lastModified : lastModified as double,
-    ruleCount: identical(ruleCount, sdkOmittedValue) ? this.ruleCount : ruleCount as SdkOptional<double>,
-    s3Key: identical(s3Key, sdkOmittedValue) ? this.s3Key : s3Key as String,
-  );
+  EditRouteResponseVersion _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? isLive = sdkOmittedValue,
+          Object? isStaging = sdkOmittedValue,
+          Object? lastModified = sdkOmittedValue,
+          Object? ruleCount = sdkOmittedValue,
+          Object? s3Key = sdkOmittedValue}) =>
+      EditRouteResponseVersion(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        isLive: identical(isLive, sdkOmittedValue)
+            ? this.isLive
+            : isLive as SdkOptional<EditRouteResponseVersionIsLive>,
+        isStaging: identical(isStaging, sdkOmittedValue)
+            ? this.isStaging
+            : isStaging as SdkOptional<EditRouteResponseVersionIsStaging>,
+        lastModified: identical(lastModified, sdkOmittedValue)
+            ? this.lastModified
+            : lastModified as double,
+        ruleCount: identical(ruleCount, sdkOmittedValue)
+            ? this.ruleCount
+            : ruleCount as SdkOptional<double>,
+        s3Key: identical(s3Key, sdkOmittedValue) ? this.s3Key : s3Key as String,
+      );
 
-  factory EditRouteResponseVersion.fromJson(Map<String, dynamic> json) => EditRouteResponseVersion(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    createdBy: (json['createdBy'] as String?)!,
-    id: (json['id'] as String?)!,
-    isLive: json['isLive'] != null ? SdkPresent((json['isLive'] != null ? EditRouteResponseVersionIsLive.fromJson(json['isLive'] as bool) : null)!) : const SdkOmitted(),
-    isStaging: json['isStaging'] != null ? SdkPresent((json['isStaging'] != null ? EditRouteResponseVersionIsStaging.fromJson(json['isStaging'] as bool) : null)!) : const SdkOmitted(),
-    lastModified: ((json['lastModified'] as num?)?.toDouble())!,
-    ruleCount: json['ruleCount'] != null ? SdkPresent(((json['ruleCount'] as num?)?.toDouble())!) : const SdkOmitted(),
-    s3Key: (json['s3Key'] as String?)!,
-  );
+  factory EditRouteResponseVersion.fromJson(Map<String, dynamic> json) =>
+      EditRouteResponseVersion(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+        createdBy: (json['createdBy'] as String?)!,
+        id: (json['id'] as String?)!,
+        isLive: json['isLive'] != null
+            ? SdkPresent((json['isLive'] != null
+                ? EditRouteResponseVersionIsLive.fromJson(
+                    json['isLive'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        isStaging: json['isStaging'] != null
+            ? SdkPresent((json['isStaging'] != null
+                ? EditRouteResponseVersionIsStaging.fromJson(
+                    json['isStaging'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        lastModified: ((json['lastModified'] as num?)?.toDouble())!,
+        ruleCount: json['ruleCount'] != null
+            ? SdkPresent(((json['ruleCount'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        s3Key: (json['s3Key'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    'createdBy': createdBy,
-    'id': id,
-    ...switch (isLive) {
-      SdkPresent<EditRouteResponseVersionIsLive>(value: final value) => {'isLive': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (isStaging) {
-      SdkPresent<EditRouteResponseVersionIsStaging>(value: final value) => {'isStaging': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'lastModified': lastModified,
-    ...switch (ruleCount) {
-      SdkPresent<double>(value: final value) => {'ruleCount': value,},
-      _ => const <String, dynamic>{},
-    },
-    's3Key': s3Key,
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdBy': createdBy,
+        'id': id,
+        ...switch (isLive) {
+          SdkPresent<EditRouteResponseVersionIsLive>(value: final value) => {
+              'isLive': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (isStaging) {
+          SdkPresent<EditRouteResponseVersionIsStaging>(value: final value) => {
+              'isStaging': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'lastModified': lastModified,
+        ...switch (ruleCount) {
+          SdkPresent<double>(value: final value) => {
+              'ruleCount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        's3Key': s3Key,
+      };
 }
 
 class EditRouteResponse {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<EditRouteResponseRoute> route;
+
   /// A version of routing rules stored in S3.
   final EditRouteResponseVersion version;
 
-  const EditRouteResponse({this.route = const SdkOmitted(), required this.version});
+  const EditRouteResponse(
+      {this.route = const SdkOmitted(), required this.version});
 
-  EditRouteResponse Function({SdkOptional<EditRouteResponseRoute> route, EditRouteResponseVersion version}) get copyWith => _copyWith;
+  EditRouteResponse Function(
+      {SdkOptional<EditRouteResponseRoute> route,
+      EditRouteResponseVersion version}) get copyWith => _copyWith;
 
-  EditRouteResponse _copyWith({Object? route = sdkOmittedValue, Object? version = sdkOmittedValue}) => EditRouteResponse(
-    route: identical(route, sdkOmittedValue) ? this.route : route as SdkOptional<EditRouteResponseRoute>,
-    version: identical(version, sdkOmittedValue) ? this.version : version as EditRouteResponseVersion,
-  );
+  EditRouteResponse _copyWith(
+          {Object? route = sdkOmittedValue,
+          Object? version = sdkOmittedValue}) =>
+      EditRouteResponse(
+        route: identical(route, sdkOmittedValue)
+            ? this.route
+            : route as SdkOptional<EditRouteResponseRoute>,
+        version: identical(version, sdkOmittedValue)
+            ? this.version
+            : version as EditRouteResponseVersion,
+      );
 
-  factory EditRouteResponse.fromJson(Map<String, dynamic> json) => EditRouteResponse(
-    route: json['route'] != null ? SdkPresent((json['route'] != null ? EditRouteResponseRoute.fromJson(json['route'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    version: (json['version'] != null ? EditRouteResponseVersion.fromJson(json['version'] as Map<String, dynamic>) : null)!,
-  );
+  factory EditRouteResponse.fromJson(Map<String, dynamic> json) =>
+      EditRouteResponse(
+        route: json['route'] != null
+            ? SdkPresent((json['route'] != null
+                ? EditRouteResponseRoute.fromJson(
+                    json['route'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        version: (json['version'] != null
+            ? EditRouteResponseVersion.fromJson(
+                json['version'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (route) {
-      SdkPresent<EditRouteResponseRoute>(value: final value) => {'route': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'version': version.toJson(),
-  };
+        ...switch (route) {
+          SdkPresent<EditRouteResponseRoute>(value: final value) => {
+              'route': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'version': version.toJson(),
+      };
 }
 
 class GenerateRouteRequestBodyCurrentRoutePathCondition {
@@ -199,30 +389,50 @@ class GenerateRouteRequestBodyCurrentRoutePathCondition {
   final SdkOptional<String> value;
   final SdkOptional<String> syntax;
 
-  const GenerateRouteRequestBodyCurrentRoutePathCondition({this.value = const SdkOmitted(), this.syntax = const SdkOmitted()});
+  const GenerateRouteRequestBodyCurrentRoutePathCondition(
+      {this.value = const SdkOmitted(), this.syntax = const SdkOmitted()});
 
-  GenerateRouteRequestBodyCurrentRoutePathCondition Function({SdkOptional<String> value, SdkOptional<String> syntax}) get copyWith => _copyWith;
+  GenerateRouteRequestBodyCurrentRoutePathCondition Function(
+      {SdkOptional<String> value,
+      SdkOptional<String> syntax}) get copyWith => _copyWith;
 
-  GenerateRouteRequestBodyCurrentRoutePathCondition _copyWith({Object? value = sdkOmittedValue, Object? syntax = sdkOmittedValue}) => GenerateRouteRequestBodyCurrentRoutePathCondition(
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-    syntax: identical(syntax, sdkOmittedValue) ? this.syntax : syntax as SdkOptional<String>,
-  );
+  GenerateRouteRequestBodyCurrentRoutePathCondition _copyWith(
+          {Object? value = sdkOmittedValue,
+          Object? syntax = sdkOmittedValue}) =>
+      GenerateRouteRequestBodyCurrentRoutePathCondition(
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+        syntax: identical(syntax, sdkOmittedValue)
+            ? this.syntax
+            : syntax as SdkOptional<String>,
+      );
 
-  factory GenerateRouteRequestBodyCurrentRoutePathCondition.fromJson(Map<String, dynamic> json) => GenerateRouteRequestBodyCurrentRoutePathCondition(
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-    syntax: json['syntax'] != null ? SdkPresent((json['syntax'] as String?)!) : const SdkOmitted(),
-  );
+  factory GenerateRouteRequestBodyCurrentRoutePathCondition.fromJson(
+          Map<String, dynamic> json) =>
+      GenerateRouteRequestBodyCurrentRoutePathCondition(
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+        syntax: json['syntax'] != null
+            ? SdkPresent((json['syntax'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (syntax) {
-      SdkPresent<String>(value: final value) => {'syntax': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (syntax) {
+          SdkPresent<String>(value: final value) => {
+              'syntax': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GenerateRouteRequestBodyCurrentRouteConditionsItem {
@@ -234,46 +444,94 @@ class GenerateRouteRequestBodyCurrentRouteConditionsItem {
   final SdkOptional<String> value;
   final SdkOptional<bool> missing;
 
-  const GenerateRouteRequestBodyCurrentRouteConditionsItem({this.field = const SdkOmitted(), this.operator_ = const SdkOmitted(), this.key = const SdkOmitted(), this.value = const SdkOmitted(), this.missing = const SdkOmitted()});
+  const GenerateRouteRequestBodyCurrentRouteConditionsItem(
+      {this.field = const SdkOmitted(),
+      this.operator_ = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.value = const SdkOmitted(),
+      this.missing = const SdkOmitted()});
 
-  GenerateRouteRequestBodyCurrentRouteConditionsItem Function({SdkOptional<String> field, SdkOptional<String> operator_, SdkOptional<String> key, SdkOptional<String> value, SdkOptional<bool> missing}) get copyWith => _copyWith;
+  GenerateRouteRequestBodyCurrentRouteConditionsItem Function(
+      {SdkOptional<String> field,
+      SdkOptional<String> operator_,
+      SdkOptional<String> key,
+      SdkOptional<String> value,
+      SdkOptional<bool> missing}) get copyWith => _copyWith;
 
-  GenerateRouteRequestBodyCurrentRouteConditionsItem _copyWith({Object? field = sdkOmittedValue, Object? operator_ = sdkOmittedValue, Object? key = sdkOmittedValue, Object? value = sdkOmittedValue, Object? missing = sdkOmittedValue}) => GenerateRouteRequestBodyCurrentRouteConditionsItem(
-    field: identical(field, sdkOmittedValue) ? this.field : field as SdkOptional<String>,
-    operator_: identical(operator_, sdkOmittedValue) ? this.operator_ : operator_ as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-    missing: identical(missing, sdkOmittedValue) ? this.missing : missing as SdkOptional<bool>,
-  );
+  GenerateRouteRequestBodyCurrentRouteConditionsItem _copyWith(
+          {Object? field = sdkOmittedValue,
+          Object? operator_ = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? value = sdkOmittedValue,
+          Object? missing = sdkOmittedValue}) =>
+      GenerateRouteRequestBodyCurrentRouteConditionsItem(
+        field: identical(field, sdkOmittedValue)
+            ? this.field
+            : field as SdkOptional<String>,
+        operator_: identical(operator_, sdkOmittedValue)
+            ? this.operator_
+            : operator_ as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+        missing: identical(missing, sdkOmittedValue)
+            ? this.missing
+            : missing as SdkOptional<bool>,
+      );
 
-  factory GenerateRouteRequestBodyCurrentRouteConditionsItem.fromJson(Map<String, dynamic> json) => GenerateRouteRequestBodyCurrentRouteConditionsItem(
-    field: json['field'] != null ? SdkPresent((json['field'] as String?)!) : const SdkOmitted(),
-    operator_: json['operator'] != null ? SdkPresent((json['operator'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-    missing: json['missing'] != null ? SdkPresent((json['missing'] as bool?)!) : const SdkOmitted(),
-  );
+  factory GenerateRouteRequestBodyCurrentRouteConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GenerateRouteRequestBodyCurrentRouteConditionsItem(
+        field: json['field'] != null
+            ? SdkPresent((json['field'] as String?)!)
+            : const SdkOmitted(),
+        operator_: json['operator'] != null
+            ? SdkPresent((json['operator'] as String?)!)
+            : const SdkOmitted(),
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+        missing: json['missing'] != null
+            ? SdkPresent((json['missing'] as bool?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (field) {
-      SdkPresent<String>(value: final value) => {'field': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (operator_) {
-      SdkPresent<String>(value: final value) => {'operator': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (missing) {
-      SdkPresent<bool>(value: final value) => {'missing': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (field) {
+          SdkPresent<String>(value: final value) => {
+              'field': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (operator_) {
+          SdkPresent<String>(value: final value) => {
+              'operator': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (missing) {
+          SdkPresent<bool>(value: final value) => {
+              'missing': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

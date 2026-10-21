@@ -5,282 +5,341 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetRedirectsResponseVariant2RedirectsItemCaseSensitive {
-
   final bool value;
 
   const GetRedirectsResponseVariant2RedirectsItemCaseSensitive._(this.value);
 
-  factory GetRedirectsResponseVariant2RedirectsItemCaseSensitive.fromJson(bool value) => GetRedirectsResponseVariant2RedirectsItemCaseSensitive._(value);
+  factory GetRedirectsResponseVariant2RedirectsItemCaseSensitive.fromJson(
+          bool value) =>
+      GetRedirectsResponseVariant2RedirectsItemCaseSensitive._(value);
 
-  static const false_ = GetRedirectsResponseVariant2RedirectsItemCaseSensitive._(false);
-  static const true_ = GetRedirectsResponseVariant2RedirectsItemCaseSensitive._(true);
+  static const false_ =
+      GetRedirectsResponseVariant2RedirectsItemCaseSensitive._(false);
+  static const true_ =
+      GetRedirectsResponseVariant2RedirectsItemCaseSensitive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRedirectsResponseVariant2RedirectsItemCaseSensitive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRedirectsResponseVariant2RedirectsItemCaseSensitive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetRedirectsResponseVariant2RedirectsItemPermanent {
-
   final bool value;
 
   const GetRedirectsResponseVariant2RedirectsItemPermanent._(this.value);
 
-  factory GetRedirectsResponseVariant2RedirectsItemPermanent.fromJson(bool value) => GetRedirectsResponseVariant2RedirectsItemPermanent._(value);
+  factory GetRedirectsResponseVariant2RedirectsItemPermanent.fromJson(
+          bool value) =>
+      GetRedirectsResponseVariant2RedirectsItemPermanent._(value);
 
-  static const false_ = GetRedirectsResponseVariant2RedirectsItemPermanent._(false);
-  static const true_ = GetRedirectsResponseVariant2RedirectsItemPermanent._(true);
+  static const false_ =
+      GetRedirectsResponseVariant2RedirectsItemPermanent._(false);
+  static const true_ =
+      GetRedirectsResponseVariant2RedirectsItemPermanent._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRedirectsResponseVariant2RedirectsItemPermanent && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRedirectsResponseVariant2RedirectsItemPermanent &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams {
-
   final bool value;
 
-  const GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(this.value);
+  const GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(
+      this.value);
 
-  factory GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams.fromJson(bool value) => GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(value);
+  factory GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams.fromJson(
+          bool value) =>
+      GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(value);
 
-  static const false_ = GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(false);
-  static const true_ = GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(true);
+  static const false_ =
+      GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(false);
+  static const true_ =
+      GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRedirectsResponseVariant2RedirectsItemPreserveQueryParams &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetRedirectsResponseVariant2RedirectsItemQuery {
-
   final bool value;
 
   const GetRedirectsResponseVariant2RedirectsItemQuery._(this.value);
 
-  factory GetRedirectsResponseVariant2RedirectsItemQuery.fromJson(bool value) => GetRedirectsResponseVariant2RedirectsItemQuery._(value);
+  factory GetRedirectsResponseVariant2RedirectsItemQuery.fromJson(bool value) =>
+      GetRedirectsResponseVariant2RedirectsItemQuery._(value);
 
   static const false_ = GetRedirectsResponseVariant2RedirectsItemQuery._(false);
   static const true_ = GetRedirectsResponseVariant2RedirectsItemQuery._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRedirectsResponseVariant2RedirectsItemQuery && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRedirectsResponseVariant2RedirectsItemQuery &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetRedirectsResponseVariant2RedirectsItemSensitive {
-
   final bool value;
 
   const GetRedirectsResponseVariant2RedirectsItemSensitive._(this.value);
 
-  factory GetRedirectsResponseVariant2RedirectsItemSensitive.fromJson(bool value) => GetRedirectsResponseVariant2RedirectsItemSensitive._(value);
+  factory GetRedirectsResponseVariant2RedirectsItemSensitive.fromJson(
+          bool value) =>
+      GetRedirectsResponseVariant2RedirectsItemSensitive._(value);
 
-  static const false_ = GetRedirectsResponseVariant2RedirectsItemSensitive._(false);
-  static const true_ = GetRedirectsResponseVariant2RedirectsItemSensitive._(true);
+  static const false_ =
+      GetRedirectsResponseVariant2RedirectsItemSensitive._(false);
+  static const true_ =
+      GetRedirectsResponseVariant2RedirectsItemSensitive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRedirectsResponseVariant2RedirectsItemSensitive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRedirectsResponseVariant2RedirectsItemSensitive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version is currently live in production.
 final class GetRedirectsResponseVariant2VersionIsLive {
-
   final bool value;
 
   const GetRedirectsResponseVariant2VersionIsLive._(this.value);
 
-  factory GetRedirectsResponseVariant2VersionIsLive.fromJson(bool value) => GetRedirectsResponseVariant2VersionIsLive._(value);
+  factory GetRedirectsResponseVariant2VersionIsLive.fromJson(bool value) =>
+      GetRedirectsResponseVariant2VersionIsLive._(value);
 
   static const false_ = GetRedirectsResponseVariant2VersionIsLive._(false);
   static const true_ = GetRedirectsResponseVariant2VersionIsLive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRedirectsResponseVariant2VersionIsLive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRedirectsResponseVariant2VersionIsLive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version has not been promoted to production yet and is not serving end users.
 final class GetRedirectsResponseVariant2VersionIsStaging {
-
   final bool value;
 
   const GetRedirectsResponseVariant2VersionIsStaging._(this.value);
 
-  factory GetRedirectsResponseVariant2VersionIsStaging.fromJson(bool value) => GetRedirectsResponseVariant2VersionIsStaging._(value);
+  factory GetRedirectsResponseVariant2VersionIsStaging.fromJson(bool value) =>
+      GetRedirectsResponseVariant2VersionIsStaging._(value);
 
   static const false_ = GetRedirectsResponseVariant2VersionIsStaging._(false);
   static const true_ = GetRedirectsResponseVariant2VersionIsStaging._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetRedirectsResponseVariant2VersionIsStaging && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetRedirectsResponseVariant2VersionIsStaging &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version is currently live in production.
 final class EditRedirectResponseVersionIsLive {
-
   final bool value;
 
   const EditRedirectResponseVersionIsLive._(this.value);
 
-  factory EditRedirectResponseVersionIsLive.fromJson(bool value) => EditRedirectResponseVersionIsLive._(value);
+  factory EditRedirectResponseVersionIsLive.fromJson(bool value) =>
+      EditRedirectResponseVersionIsLive._(value);
 
   static const false_ = EditRedirectResponseVersionIsLive._(false);
   static const true_ = EditRedirectResponseVersionIsLive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is EditRedirectResponseVersionIsLive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is EditRedirectResponseVersionIsLive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version has not been promoted to production yet and is not serving end users.
 final class EditRedirectResponseVersionIsStaging {
-
   final bool value;
 
   const EditRedirectResponseVersionIsStaging._(this.value);
 
-  factory EditRedirectResponseVersionIsStaging.fromJson(bool value) => EditRedirectResponseVersionIsStaging._(value);
+  factory EditRedirectResponseVersionIsStaging.fromJson(bool value) =>
+      EditRedirectResponseVersionIsStaging._(value);
 
   static const false_ = EditRedirectResponseVersionIsStaging._(false);
   static const true_ = EditRedirectResponseVersionIsStaging._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is EditRedirectResponseVersionIsStaging && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is EditRedirectResponseVersionIsStaging && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version is currently live in production.
 final class StageRedirectsResponseVersionIsLive {
-
   final bool value;
 
   const StageRedirectsResponseVersionIsLive._(this.value);
 
-  factory StageRedirectsResponseVersionIsLive.fromJson(bool value) => StageRedirectsResponseVersionIsLive._(value);
+  factory StageRedirectsResponseVersionIsLive.fromJson(bool value) =>
+      StageRedirectsResponseVersionIsLive._(value);
 
   static const false_ = StageRedirectsResponseVersionIsLive._(false);
   static const true_ = StageRedirectsResponseVersionIsLive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is StageRedirectsResponseVersionIsLive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is StageRedirectsResponseVersionIsLive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version has not been promoted to production yet and is not serving end users.
 final class StageRedirectsResponseVersionIsStaging {
-
   final bool value;
 
   const StageRedirectsResponseVersionIsStaging._(this.value);
 
-  factory StageRedirectsResponseVersionIsStaging.fromJson(bool value) => StageRedirectsResponseVersionIsStaging._(value);
+  factory StageRedirectsResponseVersionIsStaging.fromJson(bool value) =>
+      StageRedirectsResponseVersionIsStaging._(value);
 
   static const false_ = StageRedirectsResponseVersionIsStaging._(false);
   static const true_ = StageRedirectsResponseVersionIsStaging._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is StageRedirectsResponseVersionIsStaging && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is StageRedirectsResponseVersionIsStaging && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version is currently live in production.
 final class RestoreRedirectsResponseVersionIsLive {
-
   final bool value;
 
   const RestoreRedirectsResponseVersionIsLive._(this.value);
 
-  factory RestoreRedirectsResponseVersionIsLive.fromJson(bool value) => RestoreRedirectsResponseVersionIsLive._(value);
+  factory RestoreRedirectsResponseVersionIsLive.fromJson(bool value) =>
+      RestoreRedirectsResponseVersionIsLive._(value);
 
   static const false_ = RestoreRedirectsResponseVersionIsLive._(false);
   static const true_ = RestoreRedirectsResponseVersionIsLive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RestoreRedirectsResponseVersionIsLive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RestoreRedirectsResponseVersionIsLive && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether this version has not been promoted to production yet and is not serving end users.
 final class RestoreRedirectsResponseVersionIsStaging {
-
   final bool value;
 
   const RestoreRedirectsResponseVersionIsStaging._(this.value);
 
-  factory RestoreRedirectsResponseVersionIsStaging.fromJson(bool value) => RestoreRedirectsResponseVersionIsStaging._(value);
+  factory RestoreRedirectsResponseVersionIsStaging.fromJson(bool value) =>
+      RestoreRedirectsResponseVersionIsStaging._(value);
 
   static const false_ = RestoreRedirectsResponseVersionIsStaging._(false);
   static const true_ = RestoreRedirectsResponseVersionIsStaging._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is RestoreRedirectsResponseVersionIsStaging && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is RestoreRedirectsResponseVersionIsStaging && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

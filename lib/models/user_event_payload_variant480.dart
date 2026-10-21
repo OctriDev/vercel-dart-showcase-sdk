@@ -8,280 +8,475 @@ part of 'user.dart';
 class UserEventPayloadVariant480 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required object value serialized in the `configuration` wire field.
   final UserEventPayloadVariant480Configuration configuration;
+
   /// Optional `string` value serialized in the `newName` wire field.
   final SdkOptional<String> newName;
+
   /// Required object value serialized in the `peering` wire field.
   final UserEventPayloadVariant480Peering peering;
+
   /// Required object value serialized in the `team` wire field.
   final UserEventPayloadVariant480Team team;
 
-  const UserEventPayloadVariant480({required this.configuration, this.newName = const SdkOmitted(), required this.peering, required this.team});
+  const UserEventPayloadVariant480(
+      {required this.configuration,
+      this.newName = const SdkOmitted(),
+      required this.peering,
+      required this.team});
 
-  UserEventPayloadVariant480 Function({UserEventPayloadVariant480Configuration configuration, SdkOptional<String> newName, UserEventPayloadVariant480Peering peering, UserEventPayloadVariant480Team team}) get copyWith => _copyWith;
+  UserEventPayloadVariant480 Function(
+      {UserEventPayloadVariant480Configuration configuration,
+      SdkOptional<String> newName,
+      UserEventPayloadVariant480Peering peering,
+      UserEventPayloadVariant480Team team}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant480 _copyWith({Object? configuration = sdkOmittedValue, Object? newName = sdkOmittedValue, Object? peering = sdkOmittedValue, Object? team = sdkOmittedValue}) => UserEventPayloadVariant480(
-    configuration: identical(configuration, sdkOmittedValue) ? this.configuration : configuration as UserEventPayloadVariant480Configuration,
-    newName: identical(newName, sdkOmittedValue) ? this.newName : newName as SdkOptional<String>,
-    peering: identical(peering, sdkOmittedValue) ? this.peering : peering as UserEventPayloadVariant480Peering,
-    team: identical(team, sdkOmittedValue) ? this.team : team as UserEventPayloadVariant480Team,
-  );
+  UserEventPayloadVariant480 _copyWith(
+          {Object? configuration = sdkOmittedValue,
+          Object? newName = sdkOmittedValue,
+          Object? peering = sdkOmittedValue,
+          Object? team = sdkOmittedValue}) =>
+      UserEventPayloadVariant480(
+        configuration: identical(configuration, sdkOmittedValue)
+            ? this.configuration
+            : configuration as UserEventPayloadVariant480Configuration,
+        newName: identical(newName, sdkOmittedValue)
+            ? this.newName
+            : newName as SdkOptional<String>,
+        peering: identical(peering, sdkOmittedValue)
+            ? this.peering
+            : peering as UserEventPayloadVariant480Peering,
+        team: identical(team, sdkOmittedValue)
+            ? this.team
+            : team as UserEventPayloadVariant480Team,
+      );
 
-  factory UserEventPayloadVariant480.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant480(
-    configuration: (json['configuration'] != null ? UserEventPayloadVariant480Configuration.fromJson(json['configuration'] as Map<String, dynamic>) : null)!,
-    newName: json['newName'] != null ? SdkPresent((json['newName'] as String?)!) : const SdkOmitted(),
-    peering: (json['peering'] != null ? UserEventPayloadVariant480Peering.fromJson(json['peering'] as Map<String, dynamic>) : null)!,
-    team: (json['team'] != null ? UserEventPayloadVariant480Team.fromJson(json['team'] as Map<String, dynamic>) : null)!,
-  );
+  factory UserEventPayloadVariant480.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant480(
+        configuration: (json['configuration'] != null
+            ? UserEventPayloadVariant480Configuration.fromJson(
+                json['configuration'] as Map<String, dynamic>)
+            : null)!,
+        newName: json['newName'] != null
+            ? SdkPresent((json['newName'] as String?)!)
+            : const SdkOmitted(),
+        peering: (json['peering'] != null
+            ? UserEventPayloadVariant480Peering.fromJson(
+                json['peering'] as Map<String, dynamic>)
+            : null)!,
+        team: (json['team'] != null
+            ? UserEventPayloadVariant480Team.fromJson(
+                json['team'] as Map<String, dynamic>)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'configuration': configuration.toJson(),
-    ...switch (newName) {
-      SdkPresent<String>(value: final value) => {'newName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'peering': peering.toJson(),
-    'team': team.toJson(),
-  };
+        'configuration': configuration.toJson(),
+        ...switch (newName) {
+          SdkPresent<String>(value: final value) => {
+              'newName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'peering': peering.toJson(),
+        'team': team.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant481 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `tier` wire field.
   final UserEventPayloadVariant481Tier tier;
 
   const UserEventPayloadVariant481({required this.tier});
 
-  UserEventPayloadVariant481 Function({UserEventPayloadVariant481Tier tier}) get copyWith => _copyWith;
+  UserEventPayloadVariant481 Function({UserEventPayloadVariant481Tier tier})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant481 _copyWith({Object? tier = sdkOmittedValue}) => UserEventPayloadVariant481(
-    tier: identical(tier, sdkOmittedValue) ? this.tier : tier as UserEventPayloadVariant481Tier,
-  );
+  UserEventPayloadVariant481 _copyWith({Object? tier = sdkOmittedValue}) =>
+      UserEventPayloadVariant481(
+        tier: identical(tier, sdkOmittedValue)
+            ? this.tier
+            : tier as UserEventPayloadVariant481Tier,
+      );
 
-  factory UserEventPayloadVariant481.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant481(
-    tier: (json['tier'] != null ? UserEventPayloadVariant481Tier.fromJson(json['tier'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant481.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant481(
+        tier: (json['tier'] != null
+            ? UserEventPayloadVariant481Tier.fromJson(json['tier'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'tier': tier.toJson(),
-  };
+        'tier': tier.toJson(),
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant482 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `id` wire field.
   final String id;
+
   /// Required `string` value serialized in the `url` wire field.
   final String url;
 
   const UserEventPayloadVariant482({required this.id, required this.url});
 
-  UserEventPayloadVariant482 Function({String id, String url}) get copyWith => _copyWith;
+  UserEventPayloadVariant482 Function({String id, String url}) get copyWith =>
+      _copyWith;
 
-  UserEventPayloadVariant482 _copyWith({Object? id = sdkOmittedValue, Object? url = sdkOmittedValue}) => UserEventPayloadVariant482(
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    url: identical(url, sdkOmittedValue) ? this.url : url as String,
-  );
+  UserEventPayloadVariant482 _copyWith(
+          {Object? id = sdkOmittedValue, Object? url = sdkOmittedValue}) =>
+      UserEventPayloadVariant482(
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        url: identical(url, sdkOmittedValue) ? this.url : url as String,
+      );
 
-  factory UserEventPayloadVariant482.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant482(
-    id: (json['id'] as String?)!,
-    url: (json['url'] as String?)!,
-  );
+  factory UserEventPayloadVariant482.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant482(
+        id: (json['id'] as String?)!,
+        url: (json['url'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'id': id,
-    'url': url,
-  };
+        'id': id,
+        'url': url,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant483 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `chatId` wire field.
   final String chatId;
+
   /// Optional `string` value serialized in the `chatTitle` wire field.
   final SdkOptional<String> chatTitle;
 
-  const UserEventPayloadVariant483({required this.chatId, this.chatTitle = const SdkOmitted()});
+  const UserEventPayloadVariant483(
+      {required this.chatId, this.chatTitle = const SdkOmitted()});
 
-  UserEventPayloadVariant483 Function({String chatId, SdkOptional<String> chatTitle}) get copyWith => _copyWith;
+  UserEventPayloadVariant483 Function(
+      {String chatId, SdkOptional<String> chatTitle}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant483 _copyWith({Object? chatId = sdkOmittedValue, Object? chatTitle = sdkOmittedValue}) => UserEventPayloadVariant483(
-    chatId: identical(chatId, sdkOmittedValue) ? this.chatId : chatId as String,
-    chatTitle: identical(chatTitle, sdkOmittedValue) ? this.chatTitle : chatTitle as SdkOptional<String>,
-  );
+  UserEventPayloadVariant483 _copyWith(
+          {Object? chatId = sdkOmittedValue,
+          Object? chatTitle = sdkOmittedValue}) =>
+      UserEventPayloadVariant483(
+        chatId:
+            identical(chatId, sdkOmittedValue) ? this.chatId : chatId as String,
+        chatTitle: identical(chatTitle, sdkOmittedValue)
+            ? this.chatTitle
+            : chatTitle as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant483.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant483(
-    chatId: (json['chatId'] as String?)!,
-    chatTitle: json['chatTitle'] != null ? SdkPresent((json['chatTitle'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant483.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant483(
+        chatId: (json['chatId'] as String?)!,
+        chatTitle: json['chatTitle'] != null
+            ? SdkPresent((json['chatTitle'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'chatId': chatId,
-    ...switch (chatTitle) {
-      SdkPresent<String>(value: final value) => {'chatTitle': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'chatId': chatId,
+        ...switch (chatTitle) {
+          SdkPresent<String>(value: final value) => {
+              'chatTitle': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `events[]` wire field.
 class UserEventPayloadVariant484EventsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `cacheCreationInputTokens` wire field.
   final double cacheCreationInputTokens;
+
   /// Required `number` value serialized in the `cacheReadInputTokens` wire field.
   final double cacheReadInputTokens;
+
   /// Required `string` value serialized in the `eventId` wire field.
   final String eventId;
+
   /// Required `number` value serialized in the `inputTokens` wire field.
   final double inputTokens;
+
   /// Required `string` value serialized in the `modelId` wire field.
   final String modelId;
+
   /// Required `number` value serialized in the `outputTokens` wire field.
   final double outputTokens;
+
   /// Required `string` value serialized in the `timestamp` wire field.
   final String timestamp;
+
   /// Required `number` value serialized in the `totalTokens` wire field.
   final double totalTokens;
 
-  const UserEventPayloadVariant484EventsItem({required this.cacheCreationInputTokens, required this.cacheReadInputTokens, required this.eventId, required this.inputTokens, required this.modelId, required this.outputTokens, required this.timestamp, required this.totalTokens});
+  const UserEventPayloadVariant484EventsItem(
+      {required this.cacheCreationInputTokens,
+      required this.cacheReadInputTokens,
+      required this.eventId,
+      required this.inputTokens,
+      required this.modelId,
+      required this.outputTokens,
+      required this.timestamp,
+      required this.totalTokens});
 
-  UserEventPayloadVariant484EventsItem Function({double cacheCreationInputTokens, double cacheReadInputTokens, String eventId, double inputTokens, String modelId, double outputTokens, String timestamp, double totalTokens}) get copyWith => _copyWith;
+  UserEventPayloadVariant484EventsItem Function(
+      {double cacheCreationInputTokens,
+      double cacheReadInputTokens,
+      String eventId,
+      double inputTokens,
+      String modelId,
+      double outputTokens,
+      String timestamp,
+      double totalTokens}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant484EventsItem _copyWith({Object? cacheCreationInputTokens = sdkOmittedValue, Object? cacheReadInputTokens = sdkOmittedValue, Object? eventId = sdkOmittedValue, Object? inputTokens = sdkOmittedValue, Object? modelId = sdkOmittedValue, Object? outputTokens = sdkOmittedValue, Object? timestamp = sdkOmittedValue, Object? totalTokens = sdkOmittedValue}) => UserEventPayloadVariant484EventsItem(
-    cacheCreationInputTokens: identical(cacheCreationInputTokens, sdkOmittedValue) ? this.cacheCreationInputTokens : cacheCreationInputTokens as double,
-    cacheReadInputTokens: identical(cacheReadInputTokens, sdkOmittedValue) ? this.cacheReadInputTokens : cacheReadInputTokens as double,
-    eventId: identical(eventId, sdkOmittedValue) ? this.eventId : eventId as String,
-    inputTokens: identical(inputTokens, sdkOmittedValue) ? this.inputTokens : inputTokens as double,
-    modelId: identical(modelId, sdkOmittedValue) ? this.modelId : modelId as String,
-    outputTokens: identical(outputTokens, sdkOmittedValue) ? this.outputTokens : outputTokens as double,
-    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as String,
-    totalTokens: identical(totalTokens, sdkOmittedValue) ? this.totalTokens : totalTokens as double,
-  );
+  UserEventPayloadVariant484EventsItem _copyWith(
+          {Object? cacheCreationInputTokens = sdkOmittedValue,
+          Object? cacheReadInputTokens = sdkOmittedValue,
+          Object? eventId = sdkOmittedValue,
+          Object? inputTokens = sdkOmittedValue,
+          Object? modelId = sdkOmittedValue,
+          Object? outputTokens = sdkOmittedValue,
+          Object? timestamp = sdkOmittedValue,
+          Object? totalTokens = sdkOmittedValue}) =>
+      UserEventPayloadVariant484EventsItem(
+        cacheCreationInputTokens:
+            identical(cacheCreationInputTokens, sdkOmittedValue)
+                ? this.cacheCreationInputTokens
+                : cacheCreationInputTokens as double,
+        cacheReadInputTokens: identical(cacheReadInputTokens, sdkOmittedValue)
+            ? this.cacheReadInputTokens
+            : cacheReadInputTokens as double,
+        eventId: identical(eventId, sdkOmittedValue)
+            ? this.eventId
+            : eventId as String,
+        inputTokens: identical(inputTokens, sdkOmittedValue)
+            ? this.inputTokens
+            : inputTokens as double,
+        modelId: identical(modelId, sdkOmittedValue)
+            ? this.modelId
+            : modelId as String,
+        outputTokens: identical(outputTokens, sdkOmittedValue)
+            ? this.outputTokens
+            : outputTokens as double,
+        timestamp: identical(timestamp, sdkOmittedValue)
+            ? this.timestamp
+            : timestamp as String,
+        totalTokens: identical(totalTokens, sdkOmittedValue)
+            ? this.totalTokens
+            : totalTokens as double,
+      );
 
-  factory UserEventPayloadVariant484EventsItem.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant484EventsItem(
-    cacheCreationInputTokens: ((json['cacheCreationInputTokens'] as num?)?.toDouble())!,
-    cacheReadInputTokens: ((json['cacheReadInputTokens'] as num?)?.toDouble())!,
-    eventId: (json['eventId'] as String?)!,
-    inputTokens: ((json['inputTokens'] as num?)?.toDouble())!,
-    modelId: (json['modelId'] as String?)!,
-    outputTokens: ((json['outputTokens'] as num?)?.toDouble())!,
-    timestamp: (json['timestamp'] as String?)!,
-    totalTokens: ((json['totalTokens'] as num?)?.toDouble())!,
-  );
+  factory UserEventPayloadVariant484EventsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant484EventsItem(
+        cacheCreationInputTokens:
+            ((json['cacheCreationInputTokens'] as num?)?.toDouble())!,
+        cacheReadInputTokens:
+            ((json['cacheReadInputTokens'] as num?)?.toDouble())!,
+        eventId: (json['eventId'] as String?)!,
+        inputTokens: ((json['inputTokens'] as num?)?.toDouble())!,
+        modelId: (json['modelId'] as String?)!,
+        outputTokens: ((json['outputTokens'] as num?)?.toDouble())!,
+        timestamp: (json['timestamp'] as String?)!,
+        totalTokens: ((json['totalTokens'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'cacheCreationInputTokens': cacheCreationInputTokens,
-    'cacheReadInputTokens': cacheReadInputTokens,
-    'eventId': eventId,
-    'inputTokens': inputTokens,
-    'modelId': modelId,
-    'outputTokens': outputTokens,
-    'timestamp': timestamp,
-    'totalTokens': totalTokens,
-  };
+        'cacheCreationInputTokens': cacheCreationInputTokens,
+        'cacheReadInputTokens': cacheReadInputTokens,
+        'eventId': eventId,
+        'inputTokens': inputTokens,
+        'modelId': modelId,
+        'outputTokens': outputTokens,
+        'timestamp': timestamp,
+        'totalTokens': totalTokens,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant484 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `chatId` wire field.
   final String chatId;
+
   /// Required array value serialized in the `events` wire field.
   final List<UserEventPayloadVariant484EventsItem> events;
+
   /// Required `number` value serialized in the `inputTokens` wire field.
   final double inputTokens;
+
   /// Required `string` value serialized in the `messageId` wire field.
   final String messageId;
+
   /// Required `string` value serialized in the `model` wire field.
   final String model;
+
   /// Required `number` value serialized in the `outputTokens` wire field.
   final double outputTokens;
+
   /// Required `number` value serialized in the `timestamp` wire field.
   final double timestamp;
+
   /// Required `string` value serialized in the `useCase` wire field.
   final String useCase;
 
-  const UserEventPayloadVariant484({required this.chatId, required this.events, required this.inputTokens, required this.messageId, required this.model, required this.outputTokens, required this.timestamp, required this.useCase});
+  const UserEventPayloadVariant484(
+      {required this.chatId,
+      required this.events,
+      required this.inputTokens,
+      required this.messageId,
+      required this.model,
+      required this.outputTokens,
+      required this.timestamp,
+      required this.useCase});
 
-  UserEventPayloadVariant484 Function({String chatId, List<UserEventPayloadVariant484EventsItem> events, double inputTokens, String messageId, String model, double outputTokens, double timestamp, String useCase}) get copyWith => _copyWith;
+  UserEventPayloadVariant484 Function(
+      {String chatId,
+      List<UserEventPayloadVariant484EventsItem> events,
+      double inputTokens,
+      String messageId,
+      String model,
+      double outputTokens,
+      double timestamp,
+      String useCase}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant484 _copyWith({Object? chatId = sdkOmittedValue, Object? events = sdkOmittedValue, Object? inputTokens = sdkOmittedValue, Object? messageId = sdkOmittedValue, Object? model = sdkOmittedValue, Object? outputTokens = sdkOmittedValue, Object? timestamp = sdkOmittedValue, Object? useCase = sdkOmittedValue}) => UserEventPayloadVariant484(
-    chatId: identical(chatId, sdkOmittedValue) ? this.chatId : chatId as String,
-    events: identical(events, sdkOmittedValue) ? this.events : events as List<UserEventPayloadVariant484EventsItem>,
-    inputTokens: identical(inputTokens, sdkOmittedValue) ? this.inputTokens : inputTokens as double,
-    messageId: identical(messageId, sdkOmittedValue) ? this.messageId : messageId as String,
-    model: identical(model, sdkOmittedValue) ? this.model : model as String,
-    outputTokens: identical(outputTokens, sdkOmittedValue) ? this.outputTokens : outputTokens as double,
-    timestamp: identical(timestamp, sdkOmittedValue) ? this.timestamp : timestamp as double,
-    useCase: identical(useCase, sdkOmittedValue) ? this.useCase : useCase as String,
-  );
+  UserEventPayloadVariant484 _copyWith(
+          {Object? chatId = sdkOmittedValue,
+          Object? events = sdkOmittedValue,
+          Object? inputTokens = sdkOmittedValue,
+          Object? messageId = sdkOmittedValue,
+          Object? model = sdkOmittedValue,
+          Object? outputTokens = sdkOmittedValue,
+          Object? timestamp = sdkOmittedValue,
+          Object? useCase = sdkOmittedValue}) =>
+      UserEventPayloadVariant484(
+        chatId:
+            identical(chatId, sdkOmittedValue) ? this.chatId : chatId as String,
+        events: identical(events, sdkOmittedValue)
+            ? this.events
+            : events as List<UserEventPayloadVariant484EventsItem>,
+        inputTokens: identical(inputTokens, sdkOmittedValue)
+            ? this.inputTokens
+            : inputTokens as double,
+        messageId: identical(messageId, sdkOmittedValue)
+            ? this.messageId
+            : messageId as String,
+        model: identical(model, sdkOmittedValue) ? this.model : model as String,
+        outputTokens: identical(outputTokens, sdkOmittedValue)
+            ? this.outputTokens
+            : outputTokens as double,
+        timestamp: identical(timestamp, sdkOmittedValue)
+            ? this.timestamp
+            : timestamp as double,
+        useCase: identical(useCase, sdkOmittedValue)
+            ? this.useCase
+            : useCase as String,
+      );
 
-  factory UserEventPayloadVariant484.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant484(
-    chatId: (json['chatId'] as String?)!,
-    events: ((json['events'] as List?)?.map((e) => UserEventPayloadVariant484EventsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-    inputTokens: ((json['inputTokens'] as num?)?.toDouble())!,
-    messageId: (json['messageId'] as String?)!,
-    model: (json['model'] as String?)!,
-    outputTokens: ((json['outputTokens'] as num?)?.toDouble())!,
-    timestamp: ((json['timestamp'] as num?)?.toDouble())!,
-    useCase: (json['useCase'] as String?)!,
-  );
+  factory UserEventPayloadVariant484.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant484(
+        chatId: (json['chatId'] as String?)!,
+        events: ((json['events'] as List?)
+            ?.map((e) => UserEventPayloadVariant484EventsItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+        inputTokens: ((json['inputTokens'] as num?)?.toDouble())!,
+        messageId: (json['messageId'] as String?)!,
+        model: (json['model'] as String?)!,
+        outputTokens: ((json['outputTokens'] as num?)?.toDouble())!,
+        timestamp: ((json['timestamp'] as num?)?.toDouble())!,
+        useCase: (json['useCase'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'chatId': chatId,
-    'events': events.map((item) => item.toJson()).toList(),
-    'inputTokens': inputTokens,
-    'messageId': messageId,
-    'model': model,
-    'outputTokens': outputTokens,
-    'timestamp': timestamp,
-    'useCase': useCase,
-  };
+        'chatId': chatId,
+        'events': events.map((item) => item.toJson()).toList(),
+        'inputTokens': inputTokens,
+        'messageId': messageId,
+        'model': model,
+        'outputTokens': outputTokens,
+        'timestamp': timestamp,
+        'useCase': useCase,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant485 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `chatId` wire field.
   final String chatId;
+
   /// Optional `string` value serialized in the `chatTitle` wire field.
   final SdkOptional<String> chatTitle;
+
   /// Required `string` value serialized in the `messageId` wire field.
   final String messageId;
 
-  const UserEventPayloadVariant485({required this.chatId, this.chatTitle = const SdkOmitted(), required this.messageId});
+  const UserEventPayloadVariant485(
+      {required this.chatId,
+      this.chatTitle = const SdkOmitted(),
+      required this.messageId});
 
-  UserEventPayloadVariant485 Function({String chatId, SdkOptional<String> chatTitle, String messageId}) get copyWith => _copyWith;
+  UserEventPayloadVariant485 Function(
+      {String chatId,
+      SdkOptional<String> chatTitle,
+      String messageId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant485 _copyWith({Object? chatId = sdkOmittedValue, Object? chatTitle = sdkOmittedValue, Object? messageId = sdkOmittedValue}) => UserEventPayloadVariant485(
-    chatId: identical(chatId, sdkOmittedValue) ? this.chatId : chatId as String,
-    chatTitle: identical(chatTitle, sdkOmittedValue) ? this.chatTitle : chatTitle as SdkOptional<String>,
-    messageId: identical(messageId, sdkOmittedValue) ? this.messageId : messageId as String,
-  );
+  UserEventPayloadVariant485 _copyWith(
+          {Object? chatId = sdkOmittedValue,
+          Object? chatTitle = sdkOmittedValue,
+          Object? messageId = sdkOmittedValue}) =>
+      UserEventPayloadVariant485(
+        chatId:
+            identical(chatId, sdkOmittedValue) ? this.chatId : chatId as String,
+        chatTitle: identical(chatTitle, sdkOmittedValue)
+            ? this.chatTitle
+            : chatTitle as SdkOptional<String>,
+        messageId: identical(messageId, sdkOmittedValue)
+            ? this.messageId
+            : messageId as String,
+      );
 
-  factory UserEventPayloadVariant485.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant485(
-    chatId: (json['chatId'] as String?)!,
-    chatTitle: json['chatTitle'] != null ? SdkPresent((json['chatTitle'] as String?)!) : const SdkOmitted(),
-    messageId: (json['messageId'] as String?)!,
-  );
+  factory UserEventPayloadVariant485.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant485(
+        chatId: (json['chatId'] as String?)!,
+        chatTitle: json['chatTitle'] != null
+            ? SdkPresent((json['chatTitle'] as String?)!)
+            : const SdkOmitted(),
+        messageId: (json['messageId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'chatId': chatId,
-    ...switch (chatTitle) {
-      SdkPresent<String>(value: final value) => {'chatTitle': value,},
-      _ => const <String, dynamic>{},
-    },
-    'messageId': messageId,
-  };
+        'chatId': chatId,
+        ...switch (chatTitle) {
+          SdkPresent<String>(value: final value) => {
+              'chatTitle': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'messageId': messageId,
+      };
 }

@@ -8,247 +8,481 @@ part of 'user.dart';
 class UserEventPayloadVariant14 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Present on new events only. Equivalent to "stripe" when absent.
   final SdkOptional<UserEventPayloadVariant14Provider> provider;
+
   /// Present on new events only. Equivalent to `stripeAccount` when absent.
   final SdkOptional<String> providerAccount;
+
   /// Present when `provider` is "stripe". Equivalent to `providerAccount`.
   final SdkOptional<String> stripeAccount;
+
   /// Present when `provider` is "stripe".
   final SdkOptional<String> stripeOrganisation;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
+
   /// Required `string` value serialized in the `teamSlug` wire field.
   final String teamSlug;
 
-  const UserEventPayloadVariant14({this.provider = const SdkOmitted(), this.providerAccount = const SdkOmitted(), this.stripeAccount = const SdkOmitted(), this.stripeOrganisation = const SdkOmitted(), required this.teamId, required this.teamSlug});
+  const UserEventPayloadVariant14(
+      {this.provider = const SdkOmitted(),
+      this.providerAccount = const SdkOmitted(),
+      this.stripeAccount = const SdkOmitted(),
+      this.stripeOrganisation = const SdkOmitted(),
+      required this.teamId,
+      required this.teamSlug});
 
-  UserEventPayloadVariant14 Function({SdkOptional<UserEventPayloadVariant14Provider> provider, SdkOptional<String> providerAccount, SdkOptional<String> stripeAccount, SdkOptional<String> stripeOrganisation, String teamId, String teamSlug}) get copyWith => _copyWith;
+  UserEventPayloadVariant14 Function(
+      {SdkOptional<UserEventPayloadVariant14Provider> provider,
+      SdkOptional<String> providerAccount,
+      SdkOptional<String> stripeAccount,
+      SdkOptional<String> stripeOrganisation,
+      String teamId,
+      String teamSlug}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant14 _copyWith({Object? provider = sdkOmittedValue, Object? providerAccount = sdkOmittedValue, Object? stripeAccount = sdkOmittedValue, Object? stripeOrganisation = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? teamSlug = sdkOmittedValue}) => UserEventPayloadVariant14(
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as SdkOptional<UserEventPayloadVariant14Provider>,
-    providerAccount: identical(providerAccount, sdkOmittedValue) ? this.providerAccount : providerAccount as SdkOptional<String>,
-    stripeAccount: identical(stripeAccount, sdkOmittedValue) ? this.stripeAccount : stripeAccount as SdkOptional<String>,
-    stripeOrganisation: identical(stripeOrganisation, sdkOmittedValue) ? this.stripeOrganisation : stripeOrganisation as SdkOptional<String>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    teamSlug: identical(teamSlug, sdkOmittedValue) ? this.teamSlug : teamSlug as String,
-  );
+  UserEventPayloadVariant14 _copyWith(
+          {Object? provider = sdkOmittedValue,
+          Object? providerAccount = sdkOmittedValue,
+          Object? stripeAccount = sdkOmittedValue,
+          Object? stripeOrganisation = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? teamSlug = sdkOmittedValue}) =>
+      UserEventPayloadVariant14(
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as SdkOptional<UserEventPayloadVariant14Provider>,
+        providerAccount: identical(providerAccount, sdkOmittedValue)
+            ? this.providerAccount
+            : providerAccount as SdkOptional<String>,
+        stripeAccount: identical(stripeAccount, sdkOmittedValue)
+            ? this.stripeAccount
+            : stripeAccount as SdkOptional<String>,
+        stripeOrganisation: identical(stripeOrganisation, sdkOmittedValue)
+            ? this.stripeOrganisation
+            : stripeOrganisation as SdkOptional<String>,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        teamSlug: identical(teamSlug, sdkOmittedValue)
+            ? this.teamSlug
+            : teamSlug as String,
+      );
 
-  factory UserEventPayloadVariant14.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant14(
-    provider: json['provider'] != null ? SdkPresent((json['provider'] != null ? UserEventPayloadVariant14Provider.fromJson(json['provider'] as String) : null)!) : const SdkOmitted(),
-    providerAccount: json['providerAccount'] != null ? SdkPresent((json['providerAccount'] as String?)!) : const SdkOmitted(),
-    stripeAccount: json['stripeAccount'] != null ? SdkPresent((json['stripeAccount'] as String?)!) : const SdkOmitted(),
-    stripeOrganisation: json['stripeOrganisation'] != null ? SdkPresent((json['stripeOrganisation'] as String?)!) : const SdkOmitted(),
-    teamId: (json['teamId'] as String?)!,
-    teamSlug: (json['teamSlug'] as String?)!,
-  );
+  factory UserEventPayloadVariant14.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant14(
+        provider: json['provider'] != null
+            ? SdkPresent((json['provider'] != null
+                ? UserEventPayloadVariant14Provider.fromJson(
+                    json['provider'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        providerAccount: json['providerAccount'] != null
+            ? SdkPresent((json['providerAccount'] as String?)!)
+            : const SdkOmitted(),
+        stripeAccount: json['stripeAccount'] != null
+            ? SdkPresent((json['stripeAccount'] as String?)!)
+            : const SdkOmitted(),
+        stripeOrganisation: json['stripeOrganisation'] != null
+            ? SdkPresent((json['stripeOrganisation'] as String?)!)
+            : const SdkOmitted(),
+        teamId: (json['teamId'] as String?)!,
+        teamSlug: (json['teamSlug'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (provider) {
-      SdkPresent<UserEventPayloadVariant14Provider>(value: final value) => {'provider': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (providerAccount) {
-      SdkPresent<String>(value: final value) => {'providerAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (stripeAccount) {
-      SdkPresent<String>(value: final value) => {'stripeAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (stripeOrganisation) {
-      SdkPresent<String>(value: final value) => {'stripeOrganisation': value,},
-      _ => const <String, dynamic>{},
-    },
-    'teamId': teamId,
-    'teamSlug': teamSlug,
-  };
+        ...switch (provider) {
+          SdkPresent<UserEventPayloadVariant14Provider>(value: final value) => {
+              'provider': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (providerAccount) {
+          SdkPresent<String>(value: final value) => {
+              'providerAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (stripeAccount) {
+          SdkPresent<String>(value: final value) => {
+              'stripeAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (stripeOrganisation) {
+          SdkPresent<String>(value: final value) => {
+              'stripeOrganisation': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'teamId': teamId,
+        'teamSlug': teamSlug,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant15 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Present on new events only. Equivalent to "stripe" when absent.
   final SdkOptional<UserEventPayloadVariant15Provider> provider;
+
   /// Present on new events only. Equivalent to `stripeAccount` when absent.
   final SdkOptional<String> providerAccount;
+
   /// Present when `provider` is "stripe". Equivalent to `providerAccount`.
   final SdkOptional<String> stripeAccount;
+
   /// Present when `provider` is "stripe".
   final SdkOptional<String> stripeOrganisation;
+
   /// Required `string` value serialized in the `blockCode` wire field.
   final String blockCode;
+
   /// Required `string` value serialized in the `reason` wire field.
   final String reason;
 
-  const UserEventPayloadVariant15({this.provider = const SdkOmitted(), this.providerAccount = const SdkOmitted(), this.stripeAccount = const SdkOmitted(), this.stripeOrganisation = const SdkOmitted(), required this.blockCode, required this.reason});
+  const UserEventPayloadVariant15(
+      {this.provider = const SdkOmitted(),
+      this.providerAccount = const SdkOmitted(),
+      this.stripeAccount = const SdkOmitted(),
+      this.stripeOrganisation = const SdkOmitted(),
+      required this.blockCode,
+      required this.reason});
 
-  UserEventPayloadVariant15 Function({SdkOptional<UserEventPayloadVariant15Provider> provider, SdkOptional<String> providerAccount, SdkOptional<String> stripeAccount, SdkOptional<String> stripeOrganisation, String blockCode, String reason}) get copyWith => _copyWith;
+  UserEventPayloadVariant15 Function(
+      {SdkOptional<UserEventPayloadVariant15Provider> provider,
+      SdkOptional<String> providerAccount,
+      SdkOptional<String> stripeAccount,
+      SdkOptional<String> stripeOrganisation,
+      String blockCode,
+      String reason}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant15 _copyWith({Object? provider = sdkOmittedValue, Object? providerAccount = sdkOmittedValue, Object? stripeAccount = sdkOmittedValue, Object? stripeOrganisation = sdkOmittedValue, Object? blockCode = sdkOmittedValue, Object? reason = sdkOmittedValue}) => UserEventPayloadVariant15(
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as SdkOptional<UserEventPayloadVariant15Provider>,
-    providerAccount: identical(providerAccount, sdkOmittedValue) ? this.providerAccount : providerAccount as SdkOptional<String>,
-    stripeAccount: identical(stripeAccount, sdkOmittedValue) ? this.stripeAccount : stripeAccount as SdkOptional<String>,
-    stripeOrganisation: identical(stripeOrganisation, sdkOmittedValue) ? this.stripeOrganisation : stripeOrganisation as SdkOptional<String>,
-    blockCode: identical(blockCode, sdkOmittedValue) ? this.blockCode : blockCode as String,
-    reason: identical(reason, sdkOmittedValue) ? this.reason : reason as String,
-  );
+  UserEventPayloadVariant15 _copyWith(
+          {Object? provider = sdkOmittedValue,
+          Object? providerAccount = sdkOmittedValue,
+          Object? stripeAccount = sdkOmittedValue,
+          Object? stripeOrganisation = sdkOmittedValue,
+          Object? blockCode = sdkOmittedValue,
+          Object? reason = sdkOmittedValue}) =>
+      UserEventPayloadVariant15(
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as SdkOptional<UserEventPayloadVariant15Provider>,
+        providerAccount: identical(providerAccount, sdkOmittedValue)
+            ? this.providerAccount
+            : providerAccount as SdkOptional<String>,
+        stripeAccount: identical(stripeAccount, sdkOmittedValue)
+            ? this.stripeAccount
+            : stripeAccount as SdkOptional<String>,
+        stripeOrganisation: identical(stripeOrganisation, sdkOmittedValue)
+            ? this.stripeOrganisation
+            : stripeOrganisation as SdkOptional<String>,
+        blockCode: identical(blockCode, sdkOmittedValue)
+            ? this.blockCode
+            : blockCode as String,
+        reason:
+            identical(reason, sdkOmittedValue) ? this.reason : reason as String,
+      );
 
-  factory UserEventPayloadVariant15.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant15(
-    provider: json['provider'] != null ? SdkPresent((json['provider'] != null ? UserEventPayloadVariant15Provider.fromJson(json['provider'] as String) : null)!) : const SdkOmitted(),
-    providerAccount: json['providerAccount'] != null ? SdkPresent((json['providerAccount'] as String?)!) : const SdkOmitted(),
-    stripeAccount: json['stripeAccount'] != null ? SdkPresent((json['stripeAccount'] as String?)!) : const SdkOmitted(),
-    stripeOrganisation: json['stripeOrganisation'] != null ? SdkPresent((json['stripeOrganisation'] as String?)!) : const SdkOmitted(),
-    blockCode: (json['blockCode'] as String?)!,
-    reason: (json['reason'] as String?)!,
-  );
+  factory UserEventPayloadVariant15.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant15(
+        provider: json['provider'] != null
+            ? SdkPresent((json['provider'] != null
+                ? UserEventPayloadVariant15Provider.fromJson(
+                    json['provider'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        providerAccount: json['providerAccount'] != null
+            ? SdkPresent((json['providerAccount'] as String?)!)
+            : const SdkOmitted(),
+        stripeAccount: json['stripeAccount'] != null
+            ? SdkPresent((json['stripeAccount'] as String?)!)
+            : const SdkOmitted(),
+        stripeOrganisation: json['stripeOrganisation'] != null
+            ? SdkPresent((json['stripeOrganisation'] as String?)!)
+            : const SdkOmitted(),
+        blockCode: (json['blockCode'] as String?)!,
+        reason: (json['reason'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (provider) {
-      SdkPresent<UserEventPayloadVariant15Provider>(value: final value) => {'provider': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (providerAccount) {
-      SdkPresent<String>(value: final value) => {'providerAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (stripeAccount) {
-      SdkPresent<String>(value: final value) => {'stripeAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (stripeOrganisation) {
-      SdkPresent<String>(value: final value) => {'stripeOrganisation': value,},
-      _ => const <String, dynamic>{},
-    },
-    'blockCode': blockCode,
-    'reason': reason,
-  };
+        ...switch (provider) {
+          SdkPresent<UserEventPayloadVariant15Provider>(value: final value) => {
+              'provider': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (providerAccount) {
+          SdkPresent<String>(value: final value) => {
+              'providerAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (stripeAccount) {
+          SdkPresent<String>(value: final value) => {
+              'stripeAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (stripeOrganisation) {
+          SdkPresent<String>(value: final value) => {
+              'stripeOrganisation': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'blockCode': blockCode,
+        'reason': reason,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant16 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Present on new events only. Equivalent to "stripe" when absent.
   final SdkOptional<UserEventPayloadVariant16Provider> provider;
+
   /// Present on new events only. Equivalent to `stripeAccount` when absent.
   final SdkOptional<String> providerAccount;
+
   /// Present when `provider` is "stripe". Equivalent to `providerAccount`.
   final SdkOptional<String> stripeAccount;
+
   /// Required `string` value serialized in the `projectName` wire field.
   final String projectName;
+
   /// Required `string` value serialized in the `resourceId` wire field.
   final String resourceId;
 
-  const UserEventPayloadVariant16({this.provider = const SdkOmitted(), this.providerAccount = const SdkOmitted(), this.stripeAccount = const SdkOmitted(), required this.projectName, required this.resourceId});
+  const UserEventPayloadVariant16(
+      {this.provider = const SdkOmitted(),
+      this.providerAccount = const SdkOmitted(),
+      this.stripeAccount = const SdkOmitted(),
+      required this.projectName,
+      required this.resourceId});
 
-  UserEventPayloadVariant16 Function({SdkOptional<UserEventPayloadVariant16Provider> provider, SdkOptional<String> providerAccount, SdkOptional<String> stripeAccount, String projectName, String resourceId}) get copyWith => _copyWith;
+  UserEventPayloadVariant16 Function(
+      {SdkOptional<UserEventPayloadVariant16Provider> provider,
+      SdkOptional<String> providerAccount,
+      SdkOptional<String> stripeAccount,
+      String projectName,
+      String resourceId}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant16 _copyWith({Object? provider = sdkOmittedValue, Object? providerAccount = sdkOmittedValue, Object? stripeAccount = sdkOmittedValue, Object? projectName = sdkOmittedValue, Object? resourceId = sdkOmittedValue}) => UserEventPayloadVariant16(
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as SdkOptional<UserEventPayloadVariant16Provider>,
-    providerAccount: identical(providerAccount, sdkOmittedValue) ? this.providerAccount : providerAccount as SdkOptional<String>,
-    stripeAccount: identical(stripeAccount, sdkOmittedValue) ? this.stripeAccount : stripeAccount as SdkOptional<String>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as String,
-    resourceId: identical(resourceId, sdkOmittedValue) ? this.resourceId : resourceId as String,
-  );
+  UserEventPayloadVariant16 _copyWith(
+          {Object? provider = sdkOmittedValue,
+          Object? providerAccount = sdkOmittedValue,
+          Object? stripeAccount = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue,
+          Object? resourceId = sdkOmittedValue}) =>
+      UserEventPayloadVariant16(
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as SdkOptional<UserEventPayloadVariant16Provider>,
+        providerAccount: identical(providerAccount, sdkOmittedValue)
+            ? this.providerAccount
+            : providerAccount as SdkOptional<String>,
+        stripeAccount: identical(stripeAccount, sdkOmittedValue)
+            ? this.stripeAccount
+            : stripeAccount as SdkOptional<String>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as String,
+        resourceId: identical(resourceId, sdkOmittedValue)
+            ? this.resourceId
+            : resourceId as String,
+      );
 
-  factory UserEventPayloadVariant16.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant16(
-    provider: json['provider'] != null ? SdkPresent((json['provider'] != null ? UserEventPayloadVariant16Provider.fromJson(json['provider'] as String) : null)!) : const SdkOmitted(),
-    providerAccount: json['providerAccount'] != null ? SdkPresent((json['providerAccount'] as String?)!) : const SdkOmitted(),
-    stripeAccount: json['stripeAccount'] != null ? SdkPresent((json['stripeAccount'] as String?)!) : const SdkOmitted(),
-    projectName: (json['projectName'] as String?)!,
-    resourceId: (json['resourceId'] as String?)!,
-  );
+  factory UserEventPayloadVariant16.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant16(
+        provider: json['provider'] != null
+            ? SdkPresent((json['provider'] != null
+                ? UserEventPayloadVariant16Provider.fromJson(
+                    json['provider'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        providerAccount: json['providerAccount'] != null
+            ? SdkPresent((json['providerAccount'] as String?)!)
+            : const SdkOmitted(),
+        stripeAccount: json['stripeAccount'] != null
+            ? SdkPresent((json['stripeAccount'] as String?)!)
+            : const SdkOmitted(),
+        projectName: (json['projectName'] as String?)!,
+        resourceId: (json['resourceId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (provider) {
-      SdkPresent<UserEventPayloadVariant16Provider>(value: final value) => {'provider': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (providerAccount) {
-      SdkPresent<String>(value: final value) => {'providerAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (stripeAccount) {
-      SdkPresent<String>(value: final value) => {'stripeAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    'projectName': projectName,
-    'resourceId': resourceId,
-  };
+        ...switch (provider) {
+          SdkPresent<UserEventPayloadVariant16Provider>(value: final value) => {
+              'provider': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (providerAccount) {
+          SdkPresent<String>(value: final value) => {
+              'providerAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (stripeAccount) {
+          SdkPresent<String>(value: final value) => {
+              'stripeAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'projectName': projectName,
+        'resourceId': resourceId,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant17 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Present on new events only. Equivalent to "stripe" when absent.
   final SdkOptional<UserEventPayloadVariant17Provider> provider;
+
   /// Present on new events only. Equivalent to `stripeAccount` when absent.
   final SdkOptional<String> providerAccount;
+
   /// Present when `provider` is "stripe". Equivalent to `providerAccount`.
   final SdkOptional<String> stripeAccount;
+
   /// Present when `provider` is "stripe".
   final SdkOptional<String> stripeOrganisation;
+
   /// Required `string` value serialized in the `teamId` wire field.
   final String teamId;
+
   /// Okta user id.
   final String actorId;
+
   /// Optional `string` value serialized in the `actorName` wire field.
   final SdkOptional<String> actorName;
+
   /// Required enumerated value serialized in the `actorType` wire field.
   final UserEventPayloadVariant17ActorType actorType;
 
-  const UserEventPayloadVariant17({this.provider = const SdkOmitted(), this.providerAccount = const SdkOmitted(), this.stripeAccount = const SdkOmitted(), this.stripeOrganisation = const SdkOmitted(), required this.teamId, required this.actorId, this.actorName = const SdkOmitted(), required this.actorType});
+  const UserEventPayloadVariant17(
+      {this.provider = const SdkOmitted(),
+      this.providerAccount = const SdkOmitted(),
+      this.stripeAccount = const SdkOmitted(),
+      this.stripeOrganisation = const SdkOmitted(),
+      required this.teamId,
+      required this.actorId,
+      this.actorName = const SdkOmitted(),
+      required this.actorType});
 
-  UserEventPayloadVariant17 Function({SdkOptional<UserEventPayloadVariant17Provider> provider, SdkOptional<String> providerAccount, SdkOptional<String> stripeAccount, SdkOptional<String> stripeOrganisation, String teamId, String actorId, SdkOptional<String> actorName, UserEventPayloadVariant17ActorType actorType}) get copyWith => _copyWith;
+  UserEventPayloadVariant17 Function(
+      {SdkOptional<UserEventPayloadVariant17Provider> provider,
+      SdkOptional<String> providerAccount,
+      SdkOptional<String> stripeAccount,
+      SdkOptional<String> stripeOrganisation,
+      String teamId,
+      String actorId,
+      SdkOptional<String> actorName,
+      UserEventPayloadVariant17ActorType actorType}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant17 _copyWith({Object? provider = sdkOmittedValue, Object? providerAccount = sdkOmittedValue, Object? stripeAccount = sdkOmittedValue, Object? stripeOrganisation = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? actorId = sdkOmittedValue, Object? actorName = sdkOmittedValue, Object? actorType = sdkOmittedValue}) => UserEventPayloadVariant17(
-    provider: identical(provider, sdkOmittedValue) ? this.provider : provider as SdkOptional<UserEventPayloadVariant17Provider>,
-    providerAccount: identical(providerAccount, sdkOmittedValue) ? this.providerAccount : providerAccount as SdkOptional<String>,
-    stripeAccount: identical(stripeAccount, sdkOmittedValue) ? this.stripeAccount : stripeAccount as SdkOptional<String>,
-    stripeOrganisation: identical(stripeOrganisation, sdkOmittedValue) ? this.stripeOrganisation : stripeOrganisation as SdkOptional<String>,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    actorId: identical(actorId, sdkOmittedValue) ? this.actorId : actorId as String,
-    actorName: identical(actorName, sdkOmittedValue) ? this.actorName : actorName as SdkOptional<String>,
-    actorType: identical(actorType, sdkOmittedValue) ? this.actorType : actorType as UserEventPayloadVariant17ActorType,
-  );
+  UserEventPayloadVariant17 _copyWith(
+          {Object? provider = sdkOmittedValue,
+          Object? providerAccount = sdkOmittedValue,
+          Object? stripeAccount = sdkOmittedValue,
+          Object? stripeOrganisation = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? actorId = sdkOmittedValue,
+          Object? actorName = sdkOmittedValue,
+          Object? actorType = sdkOmittedValue}) =>
+      UserEventPayloadVariant17(
+        provider: identical(provider, sdkOmittedValue)
+            ? this.provider
+            : provider as SdkOptional<UserEventPayloadVariant17Provider>,
+        providerAccount: identical(providerAccount, sdkOmittedValue)
+            ? this.providerAccount
+            : providerAccount as SdkOptional<String>,
+        stripeAccount: identical(stripeAccount, sdkOmittedValue)
+            ? this.stripeAccount
+            : stripeAccount as SdkOptional<String>,
+        stripeOrganisation: identical(stripeOrganisation, sdkOmittedValue)
+            ? this.stripeOrganisation
+            : stripeOrganisation as SdkOptional<String>,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        actorId: identical(actorId, sdkOmittedValue)
+            ? this.actorId
+            : actorId as String,
+        actorName: identical(actorName, sdkOmittedValue)
+            ? this.actorName
+            : actorName as SdkOptional<String>,
+        actorType: identical(actorType, sdkOmittedValue)
+            ? this.actorType
+            : actorType as UserEventPayloadVariant17ActorType,
+      );
 
-  factory UserEventPayloadVariant17.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant17(
-    provider: json['provider'] != null ? SdkPresent((json['provider'] != null ? UserEventPayloadVariant17Provider.fromJson(json['provider'] as String) : null)!) : const SdkOmitted(),
-    providerAccount: json['providerAccount'] != null ? SdkPresent((json['providerAccount'] as String?)!) : const SdkOmitted(),
-    stripeAccount: json['stripeAccount'] != null ? SdkPresent((json['stripeAccount'] as String?)!) : const SdkOmitted(),
-    stripeOrganisation: json['stripeOrganisation'] != null ? SdkPresent((json['stripeOrganisation'] as String?)!) : const SdkOmitted(),
-    teamId: (json['teamId'] as String?)!,
-    actorId: (json['actorId'] as String?)!,
-    actorName: json['actorName'] != null ? SdkPresent((json['actorName'] as String?)!) : const SdkOmitted(),
-    actorType: (json['actorType'] != null ? UserEventPayloadVariant17ActorType.fromJson(json['actorType'] as String) : null)!,
-  );
+  factory UserEventPayloadVariant17.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant17(
+        provider: json['provider'] != null
+            ? SdkPresent((json['provider'] != null
+                ? UserEventPayloadVariant17Provider.fromJson(
+                    json['provider'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        providerAccount: json['providerAccount'] != null
+            ? SdkPresent((json['providerAccount'] as String?)!)
+            : const SdkOmitted(),
+        stripeAccount: json['stripeAccount'] != null
+            ? SdkPresent((json['stripeAccount'] as String?)!)
+            : const SdkOmitted(),
+        stripeOrganisation: json['stripeOrganisation'] != null
+            ? SdkPresent((json['stripeOrganisation'] as String?)!)
+            : const SdkOmitted(),
+        teamId: (json['teamId'] as String?)!,
+        actorId: (json['actorId'] as String?)!,
+        actorName: json['actorName'] != null
+            ? SdkPresent((json['actorName'] as String?)!)
+            : const SdkOmitted(),
+        actorType: (json['actorType'] != null
+            ? UserEventPayloadVariant17ActorType.fromJson(
+                json['actorType'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (provider) {
-      SdkPresent<UserEventPayloadVariant17Provider>(value: final value) => {'provider': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (providerAccount) {
-      SdkPresent<String>(value: final value) => {'providerAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (stripeAccount) {
-      SdkPresent<String>(value: final value) => {'stripeAccount': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (stripeOrganisation) {
-      SdkPresent<String>(value: final value) => {'stripeOrganisation': value,},
-      _ => const <String, dynamic>{},
-    },
-    'teamId': teamId,
-    'actorId': actorId,
-    ...switch (actorName) {
-      SdkPresent<String>(value: final value) => {'actorName': value,},
-      _ => const <String, dynamic>{},
-    },
-    'actorType': actorType.toJson(),
-  };
+        ...switch (provider) {
+          SdkPresent<UserEventPayloadVariant17Provider>(value: final value) => {
+              'provider': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (providerAccount) {
+          SdkPresent<String>(value: final value) => {
+              'providerAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (stripeAccount) {
+          SdkPresent<String>(value: final value) => {
+              'stripeAccount': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (stripeOrganisation) {
+          SdkPresent<String>(value: final value) => {
+              'stripeOrganisation': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'teamId': teamId,
+        'actorId': actorId,
+        ...switch (actorName) {
+          SdkPresent<String>(value: final value) => {
+              'actorName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'actorType': actorType.toJson(),
+      };
 }

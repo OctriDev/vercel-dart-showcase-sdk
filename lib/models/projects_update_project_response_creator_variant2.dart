@@ -10,24 +10,43 @@ class UpdateProjectResponseCreatorVariant2 {
   final UpdateProjectResponseCreatorVariant2Integration integration;
   final UpdateProjectResponseCreatorVariant2Type type_;
 
-  const UpdateProjectResponseCreatorVariant2({required this.integration, required this.type_});
+  const UpdateProjectResponseCreatorVariant2(
+      {required this.integration, required this.type_});
 
-  UpdateProjectResponseCreatorVariant2 Function({UpdateProjectResponseCreatorVariant2Integration integration, UpdateProjectResponseCreatorVariant2Type type_}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant2 Function(
+          {UpdateProjectResponseCreatorVariant2Integration integration,
+          UpdateProjectResponseCreatorVariant2Type type_})
+      get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant2 _copyWith({Object? integration = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant2(
-    integration: identical(integration, sdkOmittedValue) ? this.integration : integration as UpdateProjectResponseCreatorVariant2Integration,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseCreatorVariant2Type,
-  );
+  UpdateProjectResponseCreatorVariant2 _copyWith(
+          {Object? integration = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue}) =>
+      UpdateProjectResponseCreatorVariant2(
+        integration: identical(integration, sdkOmittedValue)
+            ? this.integration
+            : integration as UpdateProjectResponseCreatorVariant2Integration,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UpdateProjectResponseCreatorVariant2Type,
+      );
 
-  factory UpdateProjectResponseCreatorVariant2.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant2(
-    integration: (json['integration'] != null ? UpdateProjectResponseCreatorVariant2Integration.fromJson(json['integration'] as Map<String, dynamic>) : null)!,
-    type_: (json['type'] != null ? UpdateProjectResponseCreatorVariant2Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateProjectResponseCreatorVariant2.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseCreatorVariant2(
+        integration: (json['integration'] != null
+            ? UpdateProjectResponseCreatorVariant2Integration.fromJson(
+                json['integration'] as Map<String, dynamic>)
+            : null)!,
+        type_: (json['type'] != null
+            ? UpdateProjectResponseCreatorVariant2Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'integration': integration.toJson(),
-    'type': type_.toJson(),
-  };
+        'integration': integration.toJson(),
+        'type': type_.toJson(),
+      };
 }
 
 class UpdateProjectResponseCreatorVariant3 {
@@ -37,19 +56,30 @@ class UpdateProjectResponseCreatorVariant3 {
 
   const UpdateProjectResponseCreatorVariant3({required this.type_});
 
-  UpdateProjectResponseCreatorVariant3 Function({UpdateProjectResponseCreatorVariant3Type type_}) get copyWith => _copyWith;
+  UpdateProjectResponseCreatorVariant3 Function(
+          {UpdateProjectResponseCreatorVariant3Type type_})
+      get copyWith => _copyWith;
 
-  UpdateProjectResponseCreatorVariant3 _copyWith({Object? type_ = sdkOmittedValue}) => UpdateProjectResponseCreatorVariant3(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as UpdateProjectResponseCreatorVariant3Type,
-  );
+  UpdateProjectResponseCreatorVariant3 _copyWith(
+          {Object? type_ = sdkOmittedValue}) =>
+      UpdateProjectResponseCreatorVariant3(
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as UpdateProjectResponseCreatorVariant3Type,
+      );
 
-  factory UpdateProjectResponseCreatorVariant3.fromJson(Map<String, dynamic> json) => UpdateProjectResponseCreatorVariant3(
-    type_: (json['type'] != null ? UpdateProjectResponseCreatorVariant3Type.fromJson(json['type'] as String) : null)!,
-  );
+  factory UpdateProjectResponseCreatorVariant3.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateProjectResponseCreatorVariant3(
+        type_: (json['type'] != null
+            ? UpdateProjectResponseCreatorVariant3Type.fromJson(
+                json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-  };
+        'type': type_.toJson(),
+      };
 }
 
 sealed class UpdateProjectResponseCreator {
@@ -58,40 +88,93 @@ sealed class UpdateProjectResponseCreator {
   const UpdateProjectResponseCreator();
   factory UpdateProjectResponseCreator.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateProjectResponseCreatorVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0(value); } } catch (_) {}
-      try { final value = UpdateProjectResponseCreatorVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1(value); } } catch (_) {}
-      try { final value = UpdateProjectResponseCreatorVariant2.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2(value); } } catch (_) {}
-      try { final value = UpdateProjectResponseCreatorVariant3.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3(value); } } catch (_) {}
+      try {
+        final value = UpdateProjectResponseCreatorVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateProjectResponseCreatorVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateProjectResponseCreatorVariant2.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateProjectResponseCreatorVariant3.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0(UpdateProjectResponseCreatorVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1(UpdateProjectResponseCreatorVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2(UpdateProjectResponseCreatorVariant2.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3(UpdateProjectResponseCreatorVariant3.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateProjectResponseCreator");
+    try {
+      return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0(
+          UpdateProjectResponseCreatorVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1(
+          UpdateProjectResponseCreatorVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2(
+          UpdateProjectResponseCreatorVariant2.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3(
+          UpdateProjectResponseCreatorVariant3.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateProjectResponseCreator");
   }
   Object? toJson();
 }
 
-final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0 extends UpdateProjectResponseCreator {
+final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0
+    extends UpdateProjectResponseCreator {
   final UpdateProjectResponseCreatorVariant0 value;
-  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1 extends UpdateProjectResponseCreator {
+final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1
+    extends UpdateProjectResponseCreator {
   final UpdateProjectResponseCreatorVariant1 value;
-  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2 extends UpdateProjectResponseCreator {
+final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2
+    extends UpdateProjectResponseCreator {
   final UpdateProjectResponseCreatorVariant2 value;
-  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant2(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3 extends UpdateProjectResponseCreator {
+final class UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3
+    extends UpdateProjectResponseCreator {
   final UpdateProjectResponseCreatorVariant3 value;
-  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateProjectResponseCreatorUpdateProjectResponseCreatorVariant3(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

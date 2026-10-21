@@ -5,112 +5,207 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType {
-
   final String value;
 
-  const GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._(this.value);
+  const GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._(
+      this.value);
 
-  factory GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType.fromJson(String value) => GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._(value);
+  factory GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType.fromJson(
+          String value) =>
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._(value);
 
-  static const botCategory = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_category');
-  static const botName = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_name');
-  static const botProtection = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_protection');
-  static const botStatus = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('bot_status');
-  static const cookie = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('cookie');
-  static const domainEnvironment = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('domain_environment');
-  static const environment = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('environment');
-  static const geoAsNumber = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_as_number');
-  static const geoCity = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_city');
-  static const geoContinent = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_continent');
-  static const geoCountry = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_country');
-  static const geoCountryRegion = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('geo_country_region');
-  static const header = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('header');
-  static const host = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('host');
-  static const ipAddress = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('ip_address');
-  static const ja3Digest = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('ja3_digest');
-  static const ja4Digest = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('ja4_digest');
-  static const method = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('method');
-  static const path = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('path');
-  static const protocol = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('protocol');
-  static const query = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('query');
-  static const rateLimitApiId = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('rate_limit_api_id');
-  static const rawPath = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('raw_path');
-  static const region = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('region');
-  static const responseCode = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('response_code');
-  static const route = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('route');
-  static const ruleset = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('ruleset');
-  static const scheme = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('scheme');
-  static const serverAction = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('server_action');
-  static const sharedCondition = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('shared_condition');
-  static const targetPath = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('target_path');
-  static const trafficSource = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('traffic_source');
-  static const trustedSource = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('trusted_source');
-  static const userAgent = GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType._('user_agent');
+  static const botCategory =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_category');
+  static const botName =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_name');
+  static const botProtection =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_protection');
+  static const botStatus =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('bot_status');
+  static const cookie =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('cookie');
+  static const domainEnvironment =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('domain_environment');
+  static const environment =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('environment');
+  static const geoAsNumber =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_as_number');
+  static const geoCity =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_city');
+  static const geoContinent =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_continent');
+  static const geoCountry =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_country');
+  static const geoCountryRegion =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('geo_country_region');
+  static const header =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('header');
+  static const host =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('host');
+  static const ipAddress =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ip_address');
+  static const ja3Digest =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ja3_digest');
+  static const ja4Digest =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ja4_digest');
+  static const method =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('method');
+  static const path =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('path');
+  static const protocol =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('protocol');
+  static const query =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('query');
+  static const rateLimitApiId =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('rate_limit_api_id');
+  static const rawPath =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('raw_path');
+  static const region =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('region');
+  static const responseCode =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('response_code');
+  static const route =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('route');
+  static const ruleset =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('ruleset');
+  static const scheme =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('scheme');
+  static const serverAction =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('server_action');
+  static const sharedCondition =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('shared_condition');
+  static const targetPath =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('target_path');
+  static const trafficSource =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('traffic_source');
+  static const trustedSource =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('trusted_source');
+  static const userAgent =
+      GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType
+          ._('user_agent');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is GetFirewallConfigResponseRulesItemVariant1ConditionGroupItemConditionsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class GetFirewallConfigResponseRulesItemVariant1Valid {
-
   final bool value;
 
   const GetFirewallConfigResponseRulesItemVariant1Valid._(this.value);
 
-  factory GetFirewallConfigResponseRulesItemVariant1Valid.fromJson(bool value) => GetFirewallConfigResponseRulesItemVariant1Valid._(value);
+  factory GetFirewallConfigResponseRulesItemVariant1Valid.fromJson(
+          bool value) =>
+      GetFirewallConfigResponseRulesItemVariant1Valid._(value);
 
-  static const false_ = GetFirewallConfigResponseRulesItemVariant1Valid._(false);
+  static const false_ =
+      GetFirewallConfigResponseRulesItemVariant1Valid._(false);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetFirewallConfigResponseRulesItemVariant1Valid && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetFirewallConfigResponseRulesItemVariant1Valid &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Informational marker for a system-owned default drain.
 final class GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor {
-
   final String value;
 
-  const GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor._(this.value);
+  const GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor._(
+      this.value);
 
-  factory GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor.fromJson(String value) => GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor._(value);
+  factory GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor.fromJson(
+          String value) =>
+      GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor._(value);
 
-  static const eveTracing = GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor._('eve-tracing');
+  static const eveTracing =
+      GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor._(
+          'eve-tracing');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetIntegrationLogDrainsResponseItemSourceVariant0DefaultFor &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 enum GetIntegrationLogDrainsResponseItemSourceVariant0Kind {
   selfServed;
 
-  static GetIntegrationLogDrainsResponseItemSourceVariant0Kind fromJson(String value) {
+  static GetIntegrationLogDrainsResponseItemSourceVariant0Kind fromJson(
+      String value) {
     switch (value) {
-      case 'self-served': return GetIntegrationLogDrainsResponseItemSourceVariant0Kind.selfServed;
-      default: throw ArgumentError('Unknown GetIntegrationLogDrainsResponseItemSourceVariant0Kind: $value');
+      case 'self-served':
+        return GetIntegrationLogDrainsResponseItemSourceVariant0Kind.selfServed;
+      default:
+        throw ArgumentError(
+            'Unknown GetIntegrationLogDrainsResponseItemSourceVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetIntegrationLogDrainsResponseItemSourceVariant0Kind.selfServed: return 'self-served';
+      case GetIntegrationLogDrainsResponseItemSourceVariant0Kind.selfServed:
+        return 'self-served';
     }
   }
 
@@ -121,16 +216,22 @@ enum GetIntegrationLogDrainsResponseItemSourceVariant0Kind {
 enum GetIntegrationLogDrainsResponseItemSourceVariant1Kind {
   integration;
 
-  static GetIntegrationLogDrainsResponseItemSourceVariant1Kind fromJson(String value) {
+  static GetIntegrationLogDrainsResponseItemSourceVariant1Kind fromJson(
+      String value) {
     switch (value) {
-      case 'integration': return GetIntegrationLogDrainsResponseItemSourceVariant1Kind.integration;
-      default: throw ArgumentError('Unknown GetIntegrationLogDrainsResponseItemSourceVariant1Kind: $value');
+      case 'integration':
+        return GetIntegrationLogDrainsResponseItemSourceVariant1Kind
+            .integration;
+      default:
+        throw ArgumentError(
+            'Unknown GetIntegrationLogDrainsResponseItemSourceVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetIntegrationLogDrainsResponseItemSourceVariant1Kind.integration: return 'integration';
+      case GetIntegrationLogDrainsResponseItemSourceVariant1Kind.integration:
+        return 'integration';
     }
   }
 
@@ -143,14 +244,18 @@ enum GetKmsIssuerResponsePoliciesItemVariant0Kind {
 
   static GetKmsIssuerResponsePoliciesItemVariant0Kind fromJson(String value) {
     switch (value) {
-      case 'project-grant': return GetKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant;
-      default: throw ArgumentError('Unknown GetKmsIssuerResponsePoliciesItemVariant0Kind: $value');
+      case 'project-grant':
+        return GetKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant;
+      default:
+        throw ArgumentError(
+            'Unknown GetKmsIssuerResponsePoliciesItemVariant0Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant: return 'project-grant';
+      case GetKmsIssuerResponsePoliciesItemVariant0Kind.projectGrant:
+        return 'project-grant';
     }
   }
 
@@ -163,14 +268,18 @@ enum GetKmsIssuerResponsePoliciesItemVariant1Kind {
 
   static GetKmsIssuerResponsePoliciesItemVariant1Kind fromJson(String value) {
     switch (value) {
-      case 'connex-grant': return GetKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant;
-      default: throw ArgumentError('Unknown GetKmsIssuerResponsePoliciesItemVariant1Kind: $value');
+      case 'connex-grant':
+        return GetKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant;
+      default:
+        throw ArgumentError(
+            'Unknown GetKmsIssuerResponsePoliciesItemVariant1Kind: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant: return 'connex-grant';
+      case GetKmsIssuerResponsePoliciesItemVariant1Kind.connexGrant:
+        return 'connex-grant';
     }
   }
 
@@ -181,16 +290,22 @@ enum GetKmsIssuerResponsePoliciesItemVariant1Kind {
 enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type {
   user;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'user': return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type.user;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type: $value');
+      case 'user':
+        return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type
+            .user;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type.user: return 'user';
+      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type.user:
+        return 'user';
     }
   }
 
@@ -201,16 +316,23 @@ enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0Type {
 enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type {
   app;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'app': return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type.app;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type: $value');
+      case 'app':
+        return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type
+            .app;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type.app: return 'app';
+      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type
+            .app:
+        return 'app';
     }
   }
 
@@ -221,16 +343,23 @@ enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant0Type 
 enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type {
   integration;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'integration': return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type.integration;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type: $value');
+      case 'integration':
+        return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type
+            .integration;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type.integration: return 'integration';
+      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type
+            .integration:
+        return 'integration';
     }
   }
 
@@ -241,16 +370,22 @@ enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant0ViaVariant1Type 
 enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type {
   app;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'app': return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type.app;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type: $value');
+      case 'app':
+        return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type
+            .app;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type.app: return 'app';
+      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type.app:
+        return 'app';
     }
   }
 
@@ -261,16 +396,23 @@ enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant1Type {
 enum GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type {
   integration;
 
-  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type fromJson(String value) {
+  static GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type
+      fromJson(String value) {
     switch (value) {
-      case 'integration': return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type.integration;
-      default: throw ArgumentError('Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type: $value');
+      case 'integration':
+        return GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type
+            .integration;
+      default:
+        throw ArgumentError(
+            'Unknown GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type.integration: return 'integration';
+      case GetMicrofrontendsInGroupResponseProjectsItemCreatorVariant2Type
+            .integration:
+        return 'integration';
     }
   }
 

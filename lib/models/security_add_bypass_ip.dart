@@ -15,42 +15,83 @@ class AddBypassIpResponseVariant0ResultItem {
   final String ownerId;
   final String projectId;
 
-  const AddBypassIpResponseVariant0ResultItem({required this.domain, required this.id, this.ip = const SdkOmitted(), required this.isProjectRule, required this.note, required this.ownerId, required this.projectId});
+  const AddBypassIpResponseVariant0ResultItem(
+      {required this.domain,
+      required this.id,
+      this.ip = const SdkOmitted(),
+      required this.isProjectRule,
+      required this.note,
+      required this.ownerId,
+      required this.projectId});
 
-  AddBypassIpResponseVariant0ResultItem Function({String domain, String id, SdkOptional<String> ip, AddBypassIpResponseVariant0ResultItemIsProjectRule isProjectRule, String note, String ownerId, String projectId}) get copyWith => _copyWith;
+  AddBypassIpResponseVariant0ResultItem Function(
+      {String domain,
+      String id,
+      SdkOptional<String> ip,
+      AddBypassIpResponseVariant0ResultItemIsProjectRule isProjectRule,
+      String note,
+      String ownerId,
+      String projectId}) get copyWith => _copyWith;
 
-  AddBypassIpResponseVariant0ResultItem _copyWith({Object? domain = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ip = sdkOmittedValue, Object? isProjectRule = sdkOmittedValue, Object? note = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue}) => AddBypassIpResponseVariant0ResultItem(
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    ip: identical(ip, sdkOmittedValue) ? this.ip : ip as SdkOptional<String>,
-    isProjectRule: identical(isProjectRule, sdkOmittedValue) ? this.isProjectRule : isProjectRule as AddBypassIpResponseVariant0ResultItemIsProjectRule,
-    note: identical(note, sdkOmittedValue) ? this.note : note as String,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-  );
+  AddBypassIpResponseVariant0ResultItem _copyWith(
+          {Object? domain = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? ip = sdkOmittedValue,
+          Object? isProjectRule = sdkOmittedValue,
+          Object? note = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue}) =>
+      AddBypassIpResponseVariant0ResultItem(
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        ip: identical(ip, sdkOmittedValue)
+            ? this.ip
+            : ip as SdkOptional<String>,
+        isProjectRule: identical(isProjectRule, sdkOmittedValue)
+            ? this.isProjectRule
+            : isProjectRule
+                as AddBypassIpResponseVariant0ResultItemIsProjectRule,
+        note: identical(note, sdkOmittedValue) ? this.note : note as String,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+      );
 
-  factory AddBypassIpResponseVariant0ResultItem.fromJson(Map<String, dynamic> json) => AddBypassIpResponseVariant0ResultItem(
-    domain: (json['Domain'] as String?)!,
-    id: (json['Id'] as String?)!,
-    ip: json['Ip'] != null ? SdkPresent((json['Ip'] as String?)!) : const SdkOmitted(),
-    isProjectRule: (json['IsProjectRule'] != null ? AddBypassIpResponseVariant0ResultItemIsProjectRule.fromJson(json['IsProjectRule'] as bool) : null)!,
-    note: (json['Note'] as String?)!,
-    ownerId: (json['OwnerId'] as String?)!,
-    projectId: (json['ProjectId'] as String?)!,
-  );
+  factory AddBypassIpResponseVariant0ResultItem.fromJson(
+          Map<String, dynamic> json) =>
+      AddBypassIpResponseVariant0ResultItem(
+        domain: (json['Domain'] as String?)!,
+        id: (json['Id'] as String?)!,
+        ip: json['Ip'] != null
+            ? SdkPresent((json['Ip'] as String?)!)
+            : const SdkOmitted(),
+        isProjectRule: (json['IsProjectRule'] != null
+            ? AddBypassIpResponseVariant0ResultItemIsProjectRule.fromJson(
+                json['IsProjectRule'] as bool)
+            : null)!,
+        note: (json['Note'] as String?)!,
+        ownerId: (json['OwnerId'] as String?)!,
+        projectId: (json['ProjectId'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'Domain': domain,
-    'Id': id,
-    ...switch (ip) {
-      SdkPresent<String>(value: final value) => {'Ip': value,},
-      _ => const <String, dynamic>{},
-    },
-    'IsProjectRule': isProjectRule.toJson(),
-    'Note': note,
-    'OwnerId': ownerId,
-    'ProjectId': projectId,
-  };
+        'Domain': domain,
+        'Id': id,
+        ...switch (ip) {
+          SdkPresent<String>(value: final value) => {
+              'Ip': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'IsProjectRule': isProjectRule.toJson(),
+        'Note': note,
+        'OwnerId': ownerId,
+        'ProjectId': projectId,
+      };
 }
 
 class AddBypassIpResponseVariant0 {
@@ -60,27 +101,51 @@ class AddBypassIpResponseVariant0 {
   final dynamic pagination;
   final List<AddBypassIpResponseVariant0ResultItem> result;
 
-  const AddBypassIpResponseVariant0({required this.ok, required this.pagination, required this.result});
+  const AddBypassIpResponseVariant0(
+      {required this.ok, required this.pagination, required this.result});
 
-  AddBypassIpResponseVariant0 Function({AddBypassIpResponseVariant0Ok ok, dynamic pagination, List<AddBypassIpResponseVariant0ResultItem> result}) get copyWith => _copyWith;
+  AddBypassIpResponseVariant0 Function(
+          {AddBypassIpResponseVariant0Ok ok,
+          dynamic pagination,
+          List<AddBypassIpResponseVariant0ResultItem> result})
+      get copyWith => _copyWith;
 
-  AddBypassIpResponseVariant0 _copyWith({Object? ok = sdkOmittedValue, Object? pagination = sdkOmittedValue, Object? result = sdkOmittedValue}) => AddBypassIpResponseVariant0(
-    ok: identical(ok, sdkOmittedValue) ? this.ok : ok as AddBypassIpResponseVariant0Ok,
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as dynamic,
-    result: identical(result, sdkOmittedValue) ? this.result : result as List<AddBypassIpResponseVariant0ResultItem>,
-  );
+  AddBypassIpResponseVariant0 _copyWith(
+          {Object? ok = sdkOmittedValue,
+          Object? pagination = sdkOmittedValue,
+          Object? result = sdkOmittedValue}) =>
+      AddBypassIpResponseVariant0(
+        ok: identical(ok, sdkOmittedValue)
+            ? this.ok
+            : ok as AddBypassIpResponseVariant0Ok,
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as dynamic,
+        result: identical(result, sdkOmittedValue)
+            ? this.result
+            : result as List<AddBypassIpResponseVariant0ResultItem>,
+      );
 
-  factory AddBypassIpResponseVariant0.fromJson(Map<String, dynamic> json) => AddBypassIpResponseVariant0(
-    ok: (json['ok'] != null ? AddBypassIpResponseVariant0Ok.fromJson(json['ok'] as bool) : null)!,
-    pagination: json.containsKey('pagination') ? json['pagination'] : throw ArgumentError.value(null, 'pagination', 'Required property is missing'),
-    result: ((json['result'] as List?)?.map((e) => AddBypassIpResponseVariant0ResultItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory AddBypassIpResponseVariant0.fromJson(Map<String, dynamic> json) =>
+      AddBypassIpResponseVariant0(
+        ok: (json['ok'] != null
+            ? AddBypassIpResponseVariant0Ok.fromJson(json['ok'] as bool)
+            : null)!,
+        pagination: json.containsKey('pagination')
+            ? json['pagination']
+            : throw ArgumentError.value(
+                null, 'pagination', 'Required property is missing'),
+        result: ((json['result'] as List?)
+            ?.map((e) => AddBypassIpResponseVariant0ResultItem.fromJson(
+                e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'ok': ok.toJson(),
-    'pagination': pagination,
-    'result': result.map((item) => item.toJson()).toList(),
-  };
+        'ok': ok.toJson(),
+        'pagination': pagination,
+        'result': result.map((item) => item.toJson()).toList(),
+      };
 }
 
 class AddBypassIpResponseVariant1ResultItem {
@@ -94,88 +159,200 @@ class AddBypassIpResponseVariant1ResultItem {
   final SdkOptional<double?> expiresAt;
   final String id;
   final String ip;
-  final SdkOptional<AddBypassIpResponseVariant1ResultItemIsProjectRule> isProjectRule;
+  final SdkOptional<AddBypassIpResponseVariant1ResultItemIsProjectRule>
+      isProjectRule;
   final SdkOptional<String> note;
   final String ownerId;
   final SdkOptional<String> projectId;
   final String updatedAt;
   final String updatedAtHour;
 
-  const AddBypassIpResponseVariant1ResultItem({this.action = const SdkOmitted(), this.actorId = const SdkOmitted(), required this.createdAt, this.deletedAt = const SdkOmitted(), required this.domain, this.expiresAt = const SdkOmitted(), required this.id, required this.ip, this.isProjectRule = const SdkOmitted(), this.note = const SdkOmitted(), required this.ownerId, this.projectId = const SdkOmitted(), required this.updatedAt, required this.updatedAtHour});
+  const AddBypassIpResponseVariant1ResultItem(
+      {this.action = const SdkOmitted(),
+      this.actorId = const SdkOmitted(),
+      required this.createdAt,
+      this.deletedAt = const SdkOmitted(),
+      required this.domain,
+      this.expiresAt = const SdkOmitted(),
+      required this.id,
+      required this.ip,
+      this.isProjectRule = const SdkOmitted(),
+      this.note = const SdkOmitted(),
+      required this.ownerId,
+      this.projectId = const SdkOmitted(),
+      required this.updatedAt,
+      required this.updatedAtHour});
 
-  AddBypassIpResponseVariant1ResultItem Function({SdkOptional<AddBypassIpResponseVariant1ResultItemAction> action, SdkOptional<String> actorId, String createdAt, SdkOptional<String> deletedAt, String domain, SdkOptional<double?> expiresAt, String id, String ip, SdkOptional<AddBypassIpResponseVariant1ResultItemIsProjectRule> isProjectRule, SdkOptional<String> note, String ownerId, SdkOptional<String> projectId, String updatedAt, String updatedAtHour}) get copyWith => _copyWith;
+  AddBypassIpResponseVariant1ResultItem Function(
+      {SdkOptional<AddBypassIpResponseVariant1ResultItemAction> action,
+      SdkOptional<String> actorId,
+      String createdAt,
+      SdkOptional<String> deletedAt,
+      String domain,
+      SdkOptional<double?> expiresAt,
+      String id,
+      String ip,
+      SdkOptional<AddBypassIpResponseVariant1ResultItemIsProjectRule>
+          isProjectRule,
+      SdkOptional<String> note,
+      String ownerId,
+      SdkOptional<String> projectId,
+      String updatedAt,
+      String updatedAtHour}) get copyWith => _copyWith;
 
-  AddBypassIpResponseVariant1ResultItem _copyWith({Object? action = sdkOmittedValue, Object? actorId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? domain = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? ip = sdkOmittedValue, Object? isProjectRule = sdkOmittedValue, Object? note = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedAtHour = sdkOmittedValue}) => AddBypassIpResponseVariant1ResultItem(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<AddBypassIpResponseVariant1ResultItemAction>,
-    actorId: identical(actorId, sdkOmittedValue) ? this.actorId : actorId as SdkOptional<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<String>,
-    domain: identical(domain, sdkOmittedValue) ? this.domain : domain as String,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<double?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
-    isProjectRule: identical(isProjectRule, sdkOmittedValue) ? this.isProjectRule : isProjectRule as SdkOptional<AddBypassIpResponseVariant1ResultItemIsProjectRule>,
-    note: identical(note, sdkOmittedValue) ? this.note : note as SdkOptional<String>,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-    updatedAtHour: identical(updatedAtHour, sdkOmittedValue) ? this.updatedAtHour : updatedAtHour as String,
-  );
+  AddBypassIpResponseVariant1ResultItem _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? actorId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? deletedAt = sdkOmittedValue,
+          Object? domain = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? ip = sdkOmittedValue,
+          Object? isProjectRule = sdkOmittedValue,
+          Object? note = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedAtHour = sdkOmittedValue}) =>
+      AddBypassIpResponseVariant1ResultItem(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action
+                as SdkOptional<AddBypassIpResponseVariant1ResultItemAction>,
+        actorId: identical(actorId, sdkOmittedValue)
+            ? this.actorId
+            : actorId as SdkOptional<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        deletedAt: identical(deletedAt, sdkOmittedValue)
+            ? this.deletedAt
+            : deletedAt as SdkOptional<String>,
+        domain:
+            identical(domain, sdkOmittedValue) ? this.domain : domain as String,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as SdkOptional<double?>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        ip: identical(ip, sdkOmittedValue) ? this.ip : ip as String,
+        isProjectRule: identical(isProjectRule, sdkOmittedValue)
+            ? this.isProjectRule
+            : isProjectRule as SdkOptional<
+                AddBypassIpResponseVariant1ResultItemIsProjectRule>,
+        note: identical(note, sdkOmittedValue)
+            ? this.note
+            : note as SdkOptional<String>,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+        updatedAtHour: identical(updatedAtHour, sdkOmittedValue)
+            ? this.updatedAtHour
+            : updatedAtHour as String,
+      );
 
-  factory AddBypassIpResponseVariant1ResultItem.fromJson(Map<String, dynamic> json) => AddBypassIpResponseVariant1ResultItem(
-    action: json['Action'] != null ? SdkPresent((json['Action'] != null ? AddBypassIpResponseVariant1ResultItemAction.fromJson(json['Action'] as String) : null)!) : const SdkOmitted(),
-    actorId: json['ActorId'] != null ? SdkPresent((json['ActorId'] as String?)!) : const SdkOmitted(),
-    createdAt: (json['CreatedAt'] as String?)!,
-    deletedAt: json['DeletedAt'] != null ? SdkPresent((json['DeletedAt'] as String?)!) : const SdkOmitted(),
-    domain: (json['Domain'] as String?)!,
-    expiresAt: json.containsKey('ExpiresAt') ? SdkPresent((json['ExpiresAt'] as num?)?.toDouble()) : const SdkOmitted(),
-    id: (json['Id'] as String?)!,
-    ip: (json['Ip'] as String?)!,
-    isProjectRule: json['IsProjectRule'] != null ? SdkPresent((json['IsProjectRule'] != null ? AddBypassIpResponseVariant1ResultItemIsProjectRule.fromJson(json['IsProjectRule'] as bool) : null)!) : const SdkOmitted(),
-    note: json['Note'] != null ? SdkPresent((json['Note'] as String?)!) : const SdkOmitted(),
-    ownerId: (json['OwnerId'] as String?)!,
-    projectId: json['ProjectId'] != null ? SdkPresent((json['ProjectId'] as String?)!) : const SdkOmitted(),
-    updatedAt: (json['UpdatedAt'] as String?)!,
-    updatedAtHour: (json['UpdatedAtHour'] as String?)!,
-  );
+  factory AddBypassIpResponseVariant1ResultItem.fromJson(
+          Map<String, dynamic> json) =>
+      AddBypassIpResponseVariant1ResultItem(
+        action: json['Action'] != null
+            ? SdkPresent((json['Action'] != null
+                ? AddBypassIpResponseVariant1ResultItemAction.fromJson(
+                    json['Action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        actorId: json['ActorId'] != null
+            ? SdkPresent((json['ActorId'] as String?)!)
+            : const SdkOmitted(),
+        createdAt: (json['CreatedAt'] as String?)!,
+        deletedAt: json['DeletedAt'] != null
+            ? SdkPresent((json['DeletedAt'] as String?)!)
+            : const SdkOmitted(),
+        domain: (json['Domain'] as String?)!,
+        expiresAt: json.containsKey('ExpiresAt')
+            ? SdkPresent((json['ExpiresAt'] as num?)?.toDouble())
+            : const SdkOmitted(),
+        id: (json['Id'] as String?)!,
+        ip: (json['Ip'] as String?)!,
+        isProjectRule: json['IsProjectRule'] != null
+            ? SdkPresent((json['IsProjectRule'] != null
+                ? AddBypassIpResponseVariant1ResultItemIsProjectRule.fromJson(
+                    json['IsProjectRule'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        note: json['Note'] != null
+            ? SdkPresent((json['Note'] as String?)!)
+            : const SdkOmitted(),
+        ownerId: (json['OwnerId'] as String?)!,
+        projectId: json['ProjectId'] != null
+            ? SdkPresent((json['ProjectId'] as String?)!)
+            : const SdkOmitted(),
+        updatedAt: (json['UpdatedAt'] as String?)!,
+        updatedAtHour: (json['UpdatedAtHour'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<AddBypassIpResponseVariant1ResultItemAction>(value: final value) => {'Action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (actorId) {
-      SdkPresent<String>(value: final value) => {'ActorId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'CreatedAt': createdAt,
-    ...switch (deletedAt) {
-      SdkPresent<String>(value: final value) => {'DeletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'Domain': domain,
-    ...switch (expiresAt) {
-      SdkPresent<double?>(value: final value) => {'ExpiresAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'Id': id,
-    'Ip': ip,
-    ...switch (isProjectRule) {
-      SdkPresent<AddBypassIpResponseVariant1ResultItemIsProjectRule>(value: final value) => {'IsProjectRule': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (note) {
-      SdkPresent<String>(value: final value) => {'Note': value,},
-      _ => const <String, dynamic>{},
-    },
-    'OwnerId': ownerId,
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'ProjectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    'UpdatedAt': updatedAt,
-    'UpdatedAtHour': updatedAtHour,
-  };
+        ...switch (action) {
+          SdkPresent<AddBypassIpResponseVariant1ResultItemAction>(
+            value: final value
+          ) =>
+            {
+              'Action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (actorId) {
+          SdkPresent<String>(value: final value) => {
+              'ActorId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'CreatedAt': createdAt,
+        ...switch (deletedAt) {
+          SdkPresent<String>(value: final value) => {
+              'DeletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'Domain': domain,
+        ...switch (expiresAt) {
+          SdkPresent<double?>(value: final value) => {
+              'ExpiresAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'Id': id,
+        'Ip': ip,
+        ...switch (isProjectRule) {
+          SdkPresent<AddBypassIpResponseVariant1ResultItemIsProjectRule>(
+            value: final value
+          ) =>
+            {
+              'IsProjectRule': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (note) {
+          SdkPresent<String>(value: final value) => {
+              'Note': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'OwnerId': ownerId,
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'ProjectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'UpdatedAt': updatedAt,
+        'UpdatedAtHour': updatedAtHour,
+      };
 }
 
 class AddBypassIpResponseVariant1 {
@@ -184,27 +361,51 @@ class AddBypassIpResponseVariant1 {
   final AddBypassIpResponseVariant1Ok ok;
   final SdkOptional<List<AddBypassIpResponseVariant1ResultItem>> result;
 
-  const AddBypassIpResponseVariant1({required this.ok, this.result = const SdkOmitted()});
+  const AddBypassIpResponseVariant1(
+      {required this.ok, this.result = const SdkOmitted()});
 
-  AddBypassIpResponseVariant1 Function({AddBypassIpResponseVariant1Ok ok, SdkOptional<List<AddBypassIpResponseVariant1ResultItem>> result}) get copyWith => _copyWith;
+  AddBypassIpResponseVariant1 Function(
+          {AddBypassIpResponseVariant1Ok ok,
+          SdkOptional<List<AddBypassIpResponseVariant1ResultItem>> result})
+      get copyWith => _copyWith;
 
-  AddBypassIpResponseVariant1 _copyWith({Object? ok = sdkOmittedValue, Object? result = sdkOmittedValue}) => AddBypassIpResponseVariant1(
-    ok: identical(ok, sdkOmittedValue) ? this.ok : ok as AddBypassIpResponseVariant1Ok,
-    result: identical(result, sdkOmittedValue) ? this.result : result as SdkOptional<List<AddBypassIpResponseVariant1ResultItem>>,
-  );
+  AddBypassIpResponseVariant1 _copyWith(
+          {Object? ok = sdkOmittedValue, Object? result = sdkOmittedValue}) =>
+      AddBypassIpResponseVariant1(
+        ok: identical(ok, sdkOmittedValue)
+            ? this.ok
+            : ok as AddBypassIpResponseVariant1Ok,
+        result: identical(result, sdkOmittedValue)
+            ? this.result
+            : result
+                as SdkOptional<List<AddBypassIpResponseVariant1ResultItem>>,
+      );
 
-  factory AddBypassIpResponseVariant1.fromJson(Map<String, dynamic> json) => AddBypassIpResponseVariant1(
-    ok: (json['ok'] != null ? AddBypassIpResponseVariant1Ok.fromJson(json['ok'] as bool) : null)!,
-    result: json['result'] != null ? SdkPresent(((json['result'] as List?)?.map((e) => AddBypassIpResponseVariant1ResultItem.fromJson(e as Map<String, dynamic>)).toList())!) : const SdkOmitted(),
-  );
+  factory AddBypassIpResponseVariant1.fromJson(Map<String, dynamic> json) =>
+      AddBypassIpResponseVariant1(
+        ok: (json['ok'] != null
+            ? AddBypassIpResponseVariant1Ok.fromJson(json['ok'] as bool)
+            : null)!,
+        result: json['result'] != null
+            ? SdkPresent(((json['result'] as List?)
+                ?.map((e) => AddBypassIpResponseVariant1ResultItem.fromJson(
+                    e as Map<String, dynamic>))
+                .toList())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'ok': ok.toJson(),
-    ...switch (result) {
-      SdkPresent<List<AddBypassIpResponseVariant1ResultItem>>(value: final value) => {'result': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'ok': ok.toJson(),
+        ...switch (result) {
+          SdkPresent<List<AddBypassIpResponseVariant1ResultItem>>(
+            value: final value
+          ) =>
+            {
+              'result': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class AddBypassIpResponse {
@@ -213,24 +414,44 @@ sealed class AddBypassIpResponse {
   const AddBypassIpResponse();
   factory AddBypassIpResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = AddBypassIpResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AddBypassIpResponseAddBypassIpResponseVariant0(value); } } catch (_) {}
-      try { final value = AddBypassIpResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return AddBypassIpResponseAddBypassIpResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = AddBypassIpResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return AddBypassIpResponseAddBypassIpResponseVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = AddBypassIpResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return AddBypassIpResponseAddBypassIpResponseVariant1(value);
+        }
+      } catch (_) {}
     }
-    try { return AddBypassIpResponseAddBypassIpResponseVariant0(AddBypassIpResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return AddBypassIpResponseAddBypassIpResponseVariant1(AddBypassIpResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return AddBypassIpResponseAddBypassIpResponseVariant0(
+          AddBypassIpResponseVariant0.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return AddBypassIpResponseAddBypassIpResponseVariant1(
+          AddBypassIpResponseVariant1.fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for AddBypassIpResponse");
   }
   Object? toJson();
 }
 
-final class AddBypassIpResponseAddBypassIpResponseVariant0 extends AddBypassIpResponse {
+final class AddBypassIpResponseAddBypassIpResponseVariant0
+    extends AddBypassIpResponse {
   final AddBypassIpResponseVariant0 value;
   const AddBypassIpResponseAddBypassIpResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class AddBypassIpResponseAddBypassIpResponseVariant1 extends AddBypassIpResponse {
+final class AddBypassIpResponseAddBypassIpResponseVariant1
+    extends AddBypassIpResponse {
   final AddBypassIpResponseVariant1 value;
   const AddBypassIpResponseAddBypassIpResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

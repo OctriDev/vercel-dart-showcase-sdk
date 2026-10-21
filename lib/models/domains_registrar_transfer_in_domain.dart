@@ -8,32 +8,53 @@ part of 'domains_registrar.dart';
 class DNSSECEnabled {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required enumerated value serialized in the `status` wire field.
   final DNSSECEnabledStatus status;
+
   /// Required enumerated value serialized in the `code` wire field.
   final DNSSECEnabledCode code;
+
   /// Required `string` value serialized in the `message` wire field.
   final String message;
 
-  const DNSSECEnabled({required this.status, required this.code, required this.message});
+  const DNSSECEnabled(
+      {required this.status, required this.code, required this.message});
 
-  DNSSECEnabled Function({DNSSECEnabledStatus status, DNSSECEnabledCode code, String message}) get copyWith => _copyWith;
+  DNSSECEnabled Function(
+      {DNSSECEnabledStatus status,
+      DNSSECEnabledCode code,
+      String message}) get copyWith => _copyWith;
 
-  DNSSECEnabled _copyWith({Object? status = sdkOmittedValue, Object? code = sdkOmittedValue, Object? message = sdkOmittedValue}) => DNSSECEnabled(
-    status: identical(status, sdkOmittedValue) ? this.status : status as DNSSECEnabledStatus,
-    code: identical(code, sdkOmittedValue) ? this.code : code as DNSSECEnabledCode,
-    message: identical(message, sdkOmittedValue) ? this.message : message as String,
-  );
+  DNSSECEnabled _copyWith(
+          {Object? status = sdkOmittedValue,
+          Object? code = sdkOmittedValue,
+          Object? message = sdkOmittedValue}) =>
+      DNSSECEnabled(
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as DNSSECEnabledStatus,
+        code: identical(code, sdkOmittedValue)
+            ? this.code
+            : code as DNSSECEnabledCode,
+        message: identical(message, sdkOmittedValue)
+            ? this.message
+            : message as String,
+      );
 
   factory DNSSECEnabled.fromJson(Map<String, dynamic> json) => DNSSECEnabled(
-    status: (json['status'] != null ? DNSSECEnabledStatus.fromJson((json['status'] as num).toInt()) : null)!,
-    code: (json['code'] != null ? DNSSECEnabledCode.fromJson(json['code'] as String) : null)!,
-    message: (json['message'] as String?)!,
-  );
+        status: (json['status'] != null
+            ? DNSSECEnabledStatus.fromJson((json['status'] as num).toInt())
+            : null)!,
+        code: (json['code'] != null
+            ? DNSSECEnabledCode.fromJson(json['code'] as String)
+            : null)!,
+        message: (json['message'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'status': status.toJson(),
-    'code': code.toJson(),
-    'message': message,
-  };
+        'status': status.toJson(),
+        'code': code.toJson(),
+        'message': message,
+      };
 }

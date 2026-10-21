@@ -8,108 +8,229 @@ part of 'sandboxes.dart';
 class Snapshot {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// CPU architecture required to restore the snapshot.
   final SdkOptional<SnapshotArchitecture> architecture;
+
   /// The time when the snapshot was created, in milliseconds since the epoch.
   final double createdAt;
+
   /// The method used to create the snapshot.
   final SdkOptional<SnapshotCreationMethod> creationMethod;
+
   /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.
   final SdkOptional<double> expiresAt;
+
   /// The unique identifier of the snapshot.
   final String id;
+
   /// The last time the snapshot was used (e.g. to resume or create a sandbox), in milliseconds since the epoch. Falls back to `createdAt` for older snapshots that predate this field.
   final double lastUsedAt;
+
   /// The unique identifier of the parent snapshot, if this snapshot was created from another snapshot.
   final SdkOptional<String> parentId;
+
   /// The region where the snapshot is stored.
   final SdkOptional<String> region;
+
   /// The regions where the snapshot is available.
   final SdkOptional<List<String>> regions;
+
   /// The size of the snapshot in bytes.
   final double sizeBytes;
+
   /// The unique identifier of the session from which the snapshot was created.
   final String sourceSessionId;
+
   /// The status of the snapshot.
   final SnapshotStatus status;
+
   /// The last time the snapshot was updated, in milliseconds since the epoch.
   final double updatedAt;
+
   /// Whether this snapshot is managed by v0 on the customer's behalf.
   final SdkOptional<SnapshotV0> v0;
 
-  const Snapshot({this.architecture = const SdkOmitted(), required this.createdAt, this.creationMethod = const SdkOmitted(), this.expiresAt = const SdkOmitted(), required this.id, required this.lastUsedAt, this.parentId = const SdkOmitted(), this.region = const SdkOmitted(), this.regions = const SdkOmitted(), required this.sizeBytes, required this.sourceSessionId, required this.status, required this.updatedAt, this.v0 = const SdkOmitted()});
+  const Snapshot(
+      {this.architecture = const SdkOmitted(),
+      required this.createdAt,
+      this.creationMethod = const SdkOmitted(),
+      this.expiresAt = const SdkOmitted(),
+      required this.id,
+      required this.lastUsedAt,
+      this.parentId = const SdkOmitted(),
+      this.region = const SdkOmitted(),
+      this.regions = const SdkOmitted(),
+      required this.sizeBytes,
+      required this.sourceSessionId,
+      required this.status,
+      required this.updatedAt,
+      this.v0 = const SdkOmitted()});
 
-  Snapshot Function({SdkOptional<SnapshotArchitecture> architecture, double createdAt, SdkOptional<SnapshotCreationMethod> creationMethod, SdkOptional<double> expiresAt, String id, double lastUsedAt, SdkOptional<String> parentId, SdkOptional<String> region, SdkOptional<List<String>> regions, double sizeBytes, String sourceSessionId, SnapshotStatus status, double updatedAt, SdkOptional<SnapshotV0> v0}) get copyWith => _copyWith;
+  Snapshot Function(
+      {SdkOptional<SnapshotArchitecture> architecture,
+      double createdAt,
+      SdkOptional<SnapshotCreationMethod> creationMethod,
+      SdkOptional<double> expiresAt,
+      String id,
+      double lastUsedAt,
+      SdkOptional<String> parentId,
+      SdkOptional<String> region,
+      SdkOptional<List<String>> regions,
+      double sizeBytes,
+      String sourceSessionId,
+      SnapshotStatus status,
+      double updatedAt,
+      SdkOptional<SnapshotV0> v0}) get copyWith => _copyWith;
 
-  Snapshot _copyWith({Object? architecture = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? creationMethod = sdkOmittedValue, Object? expiresAt = sdkOmittedValue, Object? id = sdkOmittedValue, Object? lastUsedAt = sdkOmittedValue, Object? parentId = sdkOmittedValue, Object? region = sdkOmittedValue, Object? regions = sdkOmittedValue, Object? sizeBytes = sdkOmittedValue, Object? sourceSessionId = sdkOmittedValue, Object? status = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? v0 = sdkOmittedValue}) => Snapshot(
-    architecture: identical(architecture, sdkOmittedValue) ? this.architecture : architecture as SdkOptional<SnapshotArchitecture>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    creationMethod: identical(creationMethod, sdkOmittedValue) ? this.creationMethod : creationMethod as SdkOptional<SnapshotCreationMethod>,
-    expiresAt: identical(expiresAt, sdkOmittedValue) ? this.expiresAt : expiresAt as SdkOptional<double>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as String,
-    lastUsedAt: identical(lastUsedAt, sdkOmittedValue) ? this.lastUsedAt : lastUsedAt as double,
-    parentId: identical(parentId, sdkOmittedValue) ? this.parentId : parentId as SdkOptional<String>,
-    region: identical(region, sdkOmittedValue) ? this.region : region as SdkOptional<String>,
-    regions: identical(regions, sdkOmittedValue) ? this.regions : regions as SdkOptional<List<String>>,
-    sizeBytes: identical(sizeBytes, sdkOmittedValue) ? this.sizeBytes : sizeBytes as double,
-    sourceSessionId: identical(sourceSessionId, sdkOmittedValue) ? this.sourceSessionId : sourceSessionId as String,
-    status: identical(status, sdkOmittedValue) ? this.status : status as SnapshotStatus,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    v0: identical(v0, sdkOmittedValue) ? this.v0 : v0 as SdkOptional<SnapshotV0>,
-  );
+  Snapshot _copyWith(
+          {Object? architecture = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? creationMethod = sdkOmittedValue,
+          Object? expiresAt = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? lastUsedAt = sdkOmittedValue,
+          Object? parentId = sdkOmittedValue,
+          Object? region = sdkOmittedValue,
+          Object? regions = sdkOmittedValue,
+          Object? sizeBytes = sdkOmittedValue,
+          Object? sourceSessionId = sdkOmittedValue,
+          Object? status = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? v0 = sdkOmittedValue}) =>
+      Snapshot(
+        architecture: identical(architecture, sdkOmittedValue)
+            ? this.architecture
+            : architecture as SdkOptional<SnapshotArchitecture>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        creationMethod: identical(creationMethod, sdkOmittedValue)
+            ? this.creationMethod
+            : creationMethod as SdkOptional<SnapshotCreationMethod>,
+        expiresAt: identical(expiresAt, sdkOmittedValue)
+            ? this.expiresAt
+            : expiresAt as SdkOptional<double>,
+        id: identical(id, sdkOmittedValue) ? this.id : id as String,
+        lastUsedAt: identical(lastUsedAt, sdkOmittedValue)
+            ? this.lastUsedAt
+            : lastUsedAt as double,
+        parentId: identical(parentId, sdkOmittedValue)
+            ? this.parentId
+            : parentId as SdkOptional<String>,
+        region: identical(region, sdkOmittedValue)
+            ? this.region
+            : region as SdkOptional<String>,
+        regions: identical(regions, sdkOmittedValue)
+            ? this.regions
+            : regions as SdkOptional<List<String>>,
+        sizeBytes: identical(sizeBytes, sdkOmittedValue)
+            ? this.sizeBytes
+            : sizeBytes as double,
+        sourceSessionId: identical(sourceSessionId, sdkOmittedValue)
+            ? this.sourceSessionId
+            : sourceSessionId as String,
+        status: identical(status, sdkOmittedValue)
+            ? this.status
+            : status as SnapshotStatus,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        v0: identical(v0, sdkOmittedValue)
+            ? this.v0
+            : v0 as SdkOptional<SnapshotV0>,
+      );
 
   factory Snapshot.fromJson(Map<String, dynamic> json) => Snapshot(
-    architecture: json['architecture'] != null ? SdkPresent((json['architecture'] != null ? SnapshotArchitecture.fromJson(json['architecture'] as String) : null)!) : const SdkOmitted(),
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    creationMethod: json['creationMethod'] != null ? SdkPresent((json['creationMethod'] != null ? SnapshotCreationMethod.fromJson(json['creationMethod'] as String) : null)!) : const SdkOmitted(),
-    expiresAt: json['expiresAt'] != null ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    id: (json['id'] as String?)!,
-    lastUsedAt: ((json['lastUsedAt'] as num?)?.toDouble())!,
-    parentId: json['parentId'] != null ? SdkPresent((json['parentId'] as String?)!) : const SdkOmitted(),
-    region: json['region'] != null ? SdkPresent((json['region'] as String?)!) : const SdkOmitted(),
-    regions: json['regions'] != null ? SdkPresent(((json['regions'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    sizeBytes: ((json['sizeBytes'] as num?)?.toDouble())!,
-    sourceSessionId: (json['sourceSessionId'] as String?)!,
-    status: (json['status'] != null ? SnapshotStatus.fromJson(json['status'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    v0: json['v0'] != null ? SdkPresent((json['v0'] != null ? SnapshotV0.fromJson(json['v0'] as bool) : null)!) : const SdkOmitted(),
-  );
+        architecture: json['architecture'] != null
+            ? SdkPresent((json['architecture'] != null
+                ? SnapshotArchitecture.fromJson(json['architecture'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        creationMethod: json['creationMethod'] != null
+            ? SdkPresent((json['creationMethod'] != null
+                ? SnapshotCreationMethod.fromJson(
+                    json['creationMethod'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        expiresAt: json['expiresAt'] != null
+            ? SdkPresent(((json['expiresAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        id: (json['id'] as String?)!,
+        lastUsedAt: ((json['lastUsedAt'] as num?)?.toDouble())!,
+        parentId: json['parentId'] != null
+            ? SdkPresent((json['parentId'] as String?)!)
+            : const SdkOmitted(),
+        region: json['region'] != null
+            ? SdkPresent((json['region'] as String?)!)
+            : const SdkOmitted(),
+        regions: json['regions'] != null
+            ? SdkPresent(
+                ((json['regions'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        sizeBytes: ((json['sizeBytes'] as num?)?.toDouble())!,
+        sourceSessionId: (json['sourceSessionId'] as String?)!,
+        status: (json['status'] != null
+            ? SnapshotStatus.fromJson(json['status'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        v0: json['v0'] != null
+            ? SdkPresent((json['v0'] != null
+                ? SnapshotV0.fromJson(json['v0'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (architecture) {
-      SdkPresent<SnapshotArchitecture>(value: final value) => {'architecture': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'createdAt': createdAt,
-    ...switch (creationMethod) {
-      SdkPresent<SnapshotCreationMethod>(value: final value) => {'creationMethod': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (expiresAt) {
-      SdkPresent<double>(value: final value) => {'expiresAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'id': id,
-    'lastUsedAt': lastUsedAt,
-    ...switch (parentId) {
-      SdkPresent<String>(value: final value) => {'parentId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (region) {
-      SdkPresent<String>(value: final value) => {'region': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (regions) {
-      SdkPresent<List<String>>(value: final value) => {'regions': value,},
-      _ => const <String, dynamic>{},
-    },
-    'sizeBytes': sizeBytes,
-    'sourceSessionId': sourceSessionId,
-    'status': status.toJson(),
-    'updatedAt': updatedAt,
-    ...switch (v0) {
-      SdkPresent<SnapshotV0>(value: final value) => {'v0': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (architecture) {
+          SdkPresent<SnapshotArchitecture>(value: final value) => {
+              'architecture': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'createdAt': createdAt,
+        ...switch (creationMethod) {
+          SdkPresent<SnapshotCreationMethod>(value: final value) => {
+              'creationMethod': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (expiresAt) {
+          SdkPresent<double>(value: final value) => {
+              'expiresAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'id': id,
+        'lastUsedAt': lastUsedAt,
+        ...switch (parentId) {
+          SdkPresent<String>(value: final value) => {
+              'parentId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (region) {
+          SdkPresent<String>(value: final value) => {
+              'region': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (regions) {
+          SdkPresent<List<String>>(value: final value) => {
+              'regions': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'sizeBytes': sizeBytes,
+        'sourceSessionId': sourceSessionId,
+        'status': status.toJson(),
+        'updatedAt': updatedAt,
+        ...switch (v0) {
+          SdkPresent<SnapshotV0>(value: final value) => {
+              'v0': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

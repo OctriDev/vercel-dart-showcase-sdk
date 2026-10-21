@@ -4,60 +4,97 @@
 part of 'deployments.dart';
 
 // deployments domain models
-final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueVariant1 extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Value {
-  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueVariant1 value;
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueVariant1
+    extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Value {
+  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueVariant1
+      value;
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0ValueVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type type_;
+  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type
+      type_;
   final dynamic value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0({required this.type_, required this.value});
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0(
+      {required this.type_, required this.value});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0 Function({GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type type_, dynamic value}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0 Function(
+      {GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type
+          type_,
+      dynamic value}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0 _copyWith({Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0(
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as dynamic,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0
+      _copyWith(
+              {Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0(
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as dynamic,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0(
-    type_: (json['type'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type.fromJson(json['type'] as String) : null)!,
-    value: (json['value'])!,
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0(
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant0Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: (json['value'])!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'type': type_.toJson(),
-    'value': value,
-  };
+        'type': type_.toJson(),
+        'value': value,
+      };
 }
 
 sealed class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq();
-  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq.fromJson(Object? json) {
-    if (json is String) { return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqString(json); }
-    if (json is num) { return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqDouble(json.toDouble()); }
-    throw FormatException("No variant matched for GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq");
+  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq.fromJson(
+      Object? json) {
+    if (json is String) {
+      return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqString(
+          json);
+    }
+    if (json is num) {
+      return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqDouble(
+          json.toDouble());
+    }
+    throw FormatException(
+        "No variant matched for GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq");
   }
   Object? toJson();
 }
 
-final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqString extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq {
+final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqString
+    extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq {
   final String value;
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqString(this.value);
-  @override Object? toJson() => value;
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqDouble extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq {
+final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqDouble
+    extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1Eq {
   final double value;
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqDouble(this.value);
-  @override Object? toJson() => value;
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1EqDouble(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
 class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1 {
@@ -75,141 +112,287 @@ class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVa
   final SdkOptional<String> re;
   final SdkOptional<String> suf;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1({this.eq = const SdkOmitted(), this.gt = const SdkOmitted(), this.gte = const SdkOmitted(), this.inc = const SdkOmitted(), this.lt = const SdkOmitted(), this.lte = const SdkOmitted(), this.neq = const SdkOmitted(), this.ninc = const SdkOmitted(), this.pre = const SdkOmitted(), this.re = const SdkOmitted(), this.suf = const SdkOmitted()});
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(
+      {this.eq = const SdkOmitted(),
+      this.gt = const SdkOmitted(),
+      this.gte = const SdkOmitted(),
+      this.inc = const SdkOmitted(),
+      this.lt = const SdkOmitted(),
+      this.lte = const SdkOmitted(),
+      this.neq = const SdkOmitted(),
+      this.ninc = const SdkOmitted(),
+      this.pre = const SdkOmitted(),
+      this.re = const SdkOmitted(),
+      this.suf = const SdkOmitted()});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1 Function({SdkOptional<dynamic> eq, SdkOptional<double> gt, SdkOptional<double> gte, SdkOptional<List<String>> inc, SdkOptional<double> lt, SdkOptional<double> lte, SdkOptional<String> neq, SdkOptional<List<String>> ninc, SdkOptional<String> pre, SdkOptional<String> re, SdkOptional<String> suf}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1 Function(
+      {SdkOptional<dynamic> eq,
+      SdkOptional<double> gt,
+      SdkOptional<double> gte,
+      SdkOptional<List<String>> inc,
+      SdkOptional<double> lt,
+      SdkOptional<double> lte,
+      SdkOptional<String> neq,
+      SdkOptional<List<String>> ninc,
+      SdkOptional<String> pre,
+      SdkOptional<String> re,
+      SdkOptional<String> suf}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1 _copyWith({Object? eq = sdkOmittedValue, Object? gt = sdkOmittedValue, Object? gte = sdkOmittedValue, Object? inc = sdkOmittedValue, Object? lt = sdkOmittedValue, Object? lte = sdkOmittedValue, Object? neq = sdkOmittedValue, Object? ninc = sdkOmittedValue, Object? pre = sdkOmittedValue, Object? re = sdkOmittedValue, Object? suf = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(
-    eq: identical(eq, sdkOmittedValue) ? this.eq : eq as SdkOptional<dynamic>,
-    gt: identical(gt, sdkOmittedValue) ? this.gt : gt as SdkOptional<double>,
-    gte: identical(gte, sdkOmittedValue) ? this.gte : gte as SdkOptional<double>,
-    inc: identical(inc, sdkOmittedValue) ? this.inc : inc as SdkOptional<List<String>>,
-    lt: identical(lt, sdkOmittedValue) ? this.lt : lt as SdkOptional<double>,
-    lte: identical(lte, sdkOmittedValue) ? this.lte : lte as SdkOptional<double>,
-    neq: identical(neq, sdkOmittedValue) ? this.neq : neq as SdkOptional<String>,
-    ninc: identical(ninc, sdkOmittedValue) ? this.ninc : ninc as SdkOptional<List<String>>,
-    pre: identical(pre, sdkOmittedValue) ? this.pre : pre as SdkOptional<String>,
-    re: identical(re, sdkOmittedValue) ? this.re : re as SdkOptional<String>,
-    suf: identical(suf, sdkOmittedValue) ? this.suf : suf as SdkOptional<String>,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1
+      _copyWith(
+              {Object? eq = sdkOmittedValue,
+              Object? gt = sdkOmittedValue,
+              Object? gte = sdkOmittedValue,
+              Object? inc = sdkOmittedValue,
+              Object? lt = sdkOmittedValue,
+              Object? lte = sdkOmittedValue,
+              Object? neq = sdkOmittedValue,
+              Object? ninc = sdkOmittedValue,
+              Object? pre = sdkOmittedValue,
+              Object? re = sdkOmittedValue,
+              Object? suf = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(
+            eq: identical(eq, sdkOmittedValue)
+                ? this.eq
+                : eq as SdkOptional<dynamic>,
+            gt: identical(gt, sdkOmittedValue)
+                ? this.gt
+                : gt as SdkOptional<double>,
+            gte: identical(gte, sdkOmittedValue)
+                ? this.gte
+                : gte as SdkOptional<double>,
+            inc: identical(inc, sdkOmittedValue)
+                ? this.inc
+                : inc as SdkOptional<List<String>>,
+            lt: identical(lt, sdkOmittedValue)
+                ? this.lt
+                : lt as SdkOptional<double>,
+            lte: identical(lte, sdkOmittedValue)
+                ? this.lte
+                : lte as SdkOptional<double>,
+            neq: identical(neq, sdkOmittedValue)
+                ? this.neq
+                : neq as SdkOptional<String>,
+            ninc: identical(ninc, sdkOmittedValue)
+                ? this.ninc
+                : ninc as SdkOptional<List<String>>,
+            pre: identical(pre, sdkOmittedValue)
+                ? this.pre
+                : pre as SdkOptional<String>,
+            re: identical(re, sdkOmittedValue)
+                ? this.re
+                : re as SdkOptional<String>,
+            suf: identical(suf, sdkOmittedValue)
+                ? this.suf
+                : suf as SdkOptional<String>,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(
-    eq: json['eq'] != null ? SdkPresent((json['eq'])!) : const SdkOmitted(),
-    gt: json['gt'] != null ? SdkPresent(((json['gt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    gte: json['gte'] != null ? SdkPresent(((json['gte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    inc: json['inc'] != null ? SdkPresent(((json['inc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    lt: json['lt'] != null ? SdkPresent(((json['lt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    lte: json['lte'] != null ? SdkPresent(((json['lte'] as num?)?.toDouble())!) : const SdkOmitted(),
-    neq: json['neq'] != null ? SdkPresent((json['neq'] as String?)!) : const SdkOmitted(),
-    ninc: json['ninc'] != null ? SdkPresent(((json['ninc'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    pre: json['pre'] != null ? SdkPresent((json['pre'] as String?)!) : const SdkOmitted(),
-    re: json['re'] != null ? SdkPresent((json['re'] as String?)!) : const SdkOmitted(),
-    suf: json['suf'] != null ? SdkPresent((json['suf'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(
+        eq: json['eq'] != null ? SdkPresent((json['eq'])!) : const SdkOmitted(),
+        gt: json['gt'] != null
+            ? SdkPresent(((json['gt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        gte: json['gte'] != null
+            ? SdkPresent(((json['gte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        inc: json['inc'] != null
+            ? SdkPresent(
+                ((json['inc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        lt: json['lt'] != null
+            ? SdkPresent(((json['lt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        lte: json['lte'] != null
+            ? SdkPresent(((json['lte'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        neq: json['neq'] != null
+            ? SdkPresent((json['neq'] as String?)!)
+            : const SdkOmitted(),
+        ninc: json['ninc'] != null
+            ? SdkPresent(
+                ((json['ninc'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        pre: json['pre'] != null
+            ? SdkPresent((json['pre'] as String?)!)
+            : const SdkOmitted(),
+        re: json['re'] != null
+            ? SdkPresent((json['re'] as String?)!)
+            : const SdkOmitted(),
+        suf: json['suf'] != null
+            ? SdkPresent((json['suf'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (eq) {
-      SdkPresent<dynamic>(value: final value) => {'eq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gt) {
-      SdkPresent<double>(value: final value) => {'gt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (gte) {
-      SdkPresent<double>(value: final value) => {'gte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (inc) {
-      SdkPresent<List<String>>(value: final value) => {'inc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lt) {
-      SdkPresent<double>(value: final value) => {'lt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lte) {
-      SdkPresent<double>(value: final value) => {'lte': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (neq) {
-      SdkPresent<String>(value: final value) => {'neq': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ninc) {
-      SdkPresent<List<String>>(value: final value) => {'ninc': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (pre) {
-      SdkPresent<String>(value: final value) => {'pre': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (re) {
-      SdkPresent<String>(value: final value) => {'re': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (suf) {
-      SdkPresent<String>(value: final value) => {'suf': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (eq) {
+          SdkPresent<dynamic>(value: final value) => {
+              'eq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gt) {
+          SdkPresent<double>(value: final value) => {
+              'gt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (gte) {
+          SdkPresent<double>(value: final value) => {
+              'gte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (inc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'inc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lt) {
+          SdkPresent<double>(value: final value) => {
+              'lt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lte) {
+          SdkPresent<double>(value: final value) => {
+              'lte': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (neq) {
+          SdkPresent<String>(value: final value) => {
+              'neq': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ninc) {
+          SdkPresent<List<String>>(value: final value) => {
+              'ninc': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (pre) {
+          SdkPresent<String>(value: final value) => {
+              'pre': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (re) {
+          SdkPresent<String>(value: final value) => {
+              're': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (suf) {
+          SdkPresent<String>(value: final value) => {
+              'suf': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 sealed class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value();
-  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value.fromJson(Object? json) {
-    if (json is String) { return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueString(json); }
-    try { return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value");
+  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value.fromJson(
+      Object? json) {
+    if (json is String) {
+      return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueString(
+          json);
+    }
+    try {
+      return GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(
+          GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1
+              .fromJson(json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value");
   }
   Object? toJson();
 }
 
-final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueString extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value {
+final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueString
+    extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value {
   final String value;
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueString(this.value);
-  @override Object? toJson() => value;
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueString(
+      this.value);
+  @override
+  Object? toJson() => value;
 }
 
-final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1 extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value {
-  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1 value;
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+final class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1
+    extends GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Value {
+  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1
+      value;
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueGetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1ValueVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
 class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String key;
-  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type type_;
+  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type
+      type_;
   final SdkOptional<dynamic> value;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1({required this.key, required this.type_, this.value = const SdkOmitted()});
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1(
+      {required this.key,
+      required this.type_,
+      this.value = const SdkOmitted()});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1 Function({String key, GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1 Function(
+      {String key,
+      GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type
+          type_,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1 _copyWith({Object? key = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1(
-    key: identical(key, sdkOmittedValue) ? this.key : key as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1(
+            key: identical(key, sdkOmittedValue) ? this.key : key as String,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as SdkOptional<dynamic>,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1(
-    key: (json['key'] as String?)!,
-    type_: (json['type'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type.fromJson(json['type'] as String) : null)!,
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1(
+        key: (json['key'] as String?)!,
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemMissingItemVariant1Type
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'key': key,
-    'type': type_.toJson(),
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'key': key,
+        'type': type_.toJson(),
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem {
@@ -217,34 +400,73 @@ class GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsIte
   static const String constructionSurface = 'named';
   final String args;
   final SdkOptional<List<String>> env;
-  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp op;
-  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType type_;
+  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp
+      op;
+  final GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType
+      type_;
 
-  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem({required this.args, this.env = const SdkOmitted(), required this.op, required this.type_});
+  const GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem(
+      {required this.args,
+      this.env = const SdkOmitted(),
+      required this.op,
+      required this.type_});
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem Function({String args, SdkOptional<List<String>> env, GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp op, GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType type_}) get copyWith => _copyWith;
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem Function(
+      {String args,
+      SdkOptional<List<String>> env,
+      GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp
+          op,
+      GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType
+          type_}) get copyWith => _copyWith;
 
-  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem _copyWith({Object? args = sdkOmittedValue, Object? env = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue}) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem(
-    args: identical(args, sdkOmittedValue) ? this.args : args as String,
-    env: identical(env, sdkOmittedValue) ? this.env : env as SdkOptional<List<String>>,
-    op: identical(op, sdkOmittedValue) ? this.op : op as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType,
-  );
+  GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem
+      _copyWith(
+              {Object? args = sdkOmittedValue,
+              Object? env = sdkOmittedValue,
+              Object? op = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue}) =>
+          GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem(
+            args: identical(args, sdkOmittedValue) ? this.args : args as String,
+            env: identical(env, sdkOmittedValue)
+                ? this.env
+                : env as SdkOptional<List<String>>,
+            op: identical(op, sdkOmittedValue)
+                ? this.op
+                : op
+                    as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType,
+          );
 
-  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem.fromJson(Map<String, dynamic> json) => GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem(
-    args: (json['args'] as String?)!,
-    env: json['env'] != null ? SdkPresent(((json['env'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    op: (json['op'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp.fromJson(json['op'] as String) : null)!,
-    type_: (json['type'] != null ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType.fromJson(json['type'] as String) : null)!,
-  );
+  factory GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItem(
+        args: (json['args'] as String?)!,
+        env: json['env'] != null
+            ? SdkPresent(
+                ((json['env'] as List?)?.map((e) => e as String).toList())!)
+            : const SdkOmitted(),
+        op: (json['op'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemOp
+                .fromJson(json['op'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetDeploymentResponseVariant1ServicesItemVariant1RewritesItemTransformsItemType
+                .fromJson(json['type'] as String)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'args': args,
-    ...switch (env) {
-      SdkPresent<List<String>>(value: final value) => {'env': value,},
-      _ => const <String, dynamic>{},
-    },
-    'op': op.toJson(),
-    'type': type_.toJson(),
-  };
+        'args': args,
+        ...switch (env) {
+          SdkPresent<List<String>>(value: final value) => {
+              'env': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'op': op.toJson(),
+        'type': type_.toJson(),
+      };
 }

@@ -10,14 +10,17 @@ enum TeamLimitedde9e749a {
 
   static TeamLimitedde9e749a fromJson(bool value) {
     switch (value) {
-      case false: return TeamLimitedde9e749a.false_;
-      default: throw ArgumentError('Unknown TeamLimitedde9e749a: $value');
+      case false:
+        return TeamLimitedde9e749a.false_;
+      default:
+        throw ArgumentError('Unknown TeamLimitedde9e749a: $value');
     }
   }
 
   bool toJson() {
     switch (this) {
-      case TeamLimitedde9e749a.false_: return false;
+      case TeamLimitedde9e749a.false_:
+        return false;
     }
   }
 
@@ -27,57 +30,64 @@ enum TeamLimitedde9e749a {
 
 /// Required enumerated value serialized in the `confirmed` wire field.
 final class TeamMembershipConfirmed {
-
   final bool value;
 
   const TeamMembershipConfirmed._(this.value);
 
-  factory TeamMembershipConfirmed.fromJson(bool value) => TeamMembershipConfirmed._(value);
+  factory TeamMembershipConfirmed.fromJson(bool value) =>
+      TeamMembershipConfirmed._(value);
 
   static const true_ = TeamMembershipConfirmed._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamMembershipConfirmed && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamMembershipConfirmed && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `isOrgBackingTeamMembership` wire field.
 final class TeamMembershipIsOrgBackingTeamMembership {
-
   final bool value;
 
   const TeamMembershipIsOrgBackingTeamMembership._(this.value);
 
-  factory TeamMembershipIsOrgBackingTeamMembership.fromJson(bool value) => TeamMembershipIsOrgBackingTeamMembership._(value);
+  factory TeamMembershipIsOrgBackingTeamMembership.fromJson(bool value) =>
+      TeamMembershipIsOrgBackingTeamMembership._(value);
 
   static const false_ = TeamMembershipIsOrgBackingTeamMembership._(false);
   static const true_ = TeamMembershipIsOrgBackingTeamMembership._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamMembershipIsOrgBackingTeamMembership && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamMembershipIsOrgBackingTeamMembership && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `origin` wire field.
 final class TeamMembershipJoinedFromOrigin {
-
   final String value;
 
   const TeamMembershipJoinedFromOrigin._(this.value);
 
-  factory TeamMembershipJoinedFromOrigin.fromJson(String value) => TeamMembershipJoinedFromOrigin._(value);
+  factory TeamMembershipJoinedFromOrigin.fromJson(String value) =>
+      TeamMembershipJoinedFromOrigin._(value);
 
-  static const accountUpdate = TeamMembershipJoinedFromOrigin._('account-update');
+  static const accountUpdate =
+      TeamMembershipJoinedFromOrigin._('account-update');
   static const bitbucket = TeamMembershipJoinedFromOrigin._('bitbucket');
   static const dsync = TeamMembershipJoinedFromOrigin._('dsync');
   static const feedback = TeamMembershipJoinedFromOrigin._('feedback');
@@ -86,35 +96,44 @@ final class TeamMembershipJoinedFromOrigin {
   static const import_ = TeamMembershipJoinedFromOrigin._('import');
   static const link = TeamMembershipJoinedFromOrigin._('link');
   static const mail = TeamMembershipJoinedFromOrigin._('mail');
-  static const nsnbAutoApprove = TeamMembershipJoinedFromOrigin._('nsnb-auto-approve');
-  static const nsnbHobbyUpgrade = TeamMembershipJoinedFromOrigin._('nsnb-hobby-upgrade');
+  static const nsnbAutoApprove =
+      TeamMembershipJoinedFromOrigin._('nsnb-auto-approve');
+  static const nsnbHobbyUpgrade =
+      TeamMembershipJoinedFromOrigin._('nsnb-hobby-upgrade');
   static const nsnbInvite = TeamMembershipJoinedFromOrigin._('nsnb-invite');
   static const nsnbRedeploy = TeamMembershipJoinedFromOrigin._('nsnb-redeploy');
-  static const nsnbRedeployAttributionCard = TeamMembershipJoinedFromOrigin._('nsnb-redeploy-attribution-card');
-  static const nsnbRequestAccess = TeamMembershipJoinedFromOrigin._('nsnb-request-access');
-  static const nsnbViewerUpgrade = TeamMembershipJoinedFromOrigin._('nsnb-viewer-upgrade');
-  static const organizationTeams = TeamMembershipJoinedFromOrigin._('organization-teams');
+  static const nsnbRedeployAttributionCard =
+      TeamMembershipJoinedFromOrigin._('nsnb-redeploy-attribution-card');
+  static const nsnbRequestAccess =
+      TeamMembershipJoinedFromOrigin._('nsnb-request-access');
+  static const nsnbViewerUpgrade =
+      TeamMembershipJoinedFromOrigin._('nsnb-viewer-upgrade');
+  static const organizationTeams =
+      TeamMembershipJoinedFromOrigin._('organization-teams');
   static const saml = TeamMembershipJoinedFromOrigin._('saml');
   static const teams = TeamMembershipJoinedFromOrigin._('teams');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamMembershipJoinedFromOrigin && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamMembershipJoinedFromOrigin && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `role` wire field.
 final class TeamMembershipRole {
-
   final String value;
 
   const TeamMembershipRole._(this.value);
 
-  factory TeamMembershipRole.fromJson(String value) => TeamMembershipRole._(value);
+  factory TeamMembershipRole.fromJson(String value) =>
+      TeamMembershipRole._(value);
 
   static const billing = TeamMembershipRole._('BILLING');
   static const contributor = TeamMembershipRole._('CONTRIBUTOR');
@@ -127,61 +146,80 @@ final class TeamMembershipRole {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamMembershipRole && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamMembershipRole && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `teamPermissions[]` wire field.
 final class TeamMembershipTeamPermissionsItem {
-
   final String value;
 
   const TeamMembershipTeamPermissionsItem._(this.value);
 
-  factory TeamMembershipTeamPermissionsItem.fromJson(String value) => TeamMembershipTeamPermissionsItem._(value);
+  factory TeamMembershipTeamPermissionsItem.fromJson(String value) =>
+      TeamMembershipTeamPermissionsItem._(value);
 
-  static const aigatewaybudgetmanager = TeamMembershipTeamPermissionsItem._('AiGatewayBudgetManager');
-  static const aigatewaycredits = TeamMembershipTeamPermissionsItem._('AiGatewayCredits');
-  static const aigatewaysettings = TeamMembershipTeamPermissionsItem._('AiGatewaySettings');
-  static const aigatewaytranscriptsmanager = TeamMembershipTeamPermissionsItem._('AiGatewayTranscriptsManager');
-  static const aigatewaytranscriptsviewer = TeamMembershipTeamPermissionsItem._('AiGatewayTranscriptsViewer');
-  static const aigatewayuser = TeamMembershipTeamPermissionsItem._('AiGatewayUser');
-  static const connectormanager = TeamMembershipTeamPermissionsItem._('ConnectorManager');
-  static const createproject = TeamMembershipTeamPermissionsItem._('CreateProject');
-  static const envvariablemanager = TeamMembershipTeamPermissionsItem._('EnvVariableManager');
-  static const environmentmanager = TeamMembershipTeamPermissionsItem._('EnvironmentManager');
-  static const fullproductiondeployment = TeamMembershipTeamPermissionsItem._('FullProductionDeployment');
-  static const integrationmanager = TeamMembershipTeamPermissionsItem._('IntegrationManager');
+  static const aigatewaybudgetmanager =
+      TeamMembershipTeamPermissionsItem._('AiGatewayBudgetManager');
+  static const aigatewaycredits =
+      TeamMembershipTeamPermissionsItem._('AiGatewayCredits');
+  static const aigatewaysettings =
+      TeamMembershipTeamPermissionsItem._('AiGatewaySettings');
+  static const aigatewaytranscriptsmanager =
+      TeamMembershipTeamPermissionsItem._('AiGatewayTranscriptsManager');
+  static const aigatewaytranscriptsviewer =
+      TeamMembershipTeamPermissionsItem._('AiGatewayTranscriptsViewer');
+  static const aigatewayuser =
+      TeamMembershipTeamPermissionsItem._('AiGatewayUser');
+  static const connectormanager =
+      TeamMembershipTeamPermissionsItem._('ConnectorManager');
+  static const createproject =
+      TeamMembershipTeamPermissionsItem._('CreateProject');
+  static const envvariablemanager =
+      TeamMembershipTeamPermissionsItem._('EnvVariableManager');
+  static const environmentmanager =
+      TeamMembershipTeamPermissionsItem._('EnvironmentManager');
+  static const fullproductiondeployment =
+      TeamMembershipTeamPermissionsItem._('FullProductionDeployment');
+  static const integrationmanager =
+      TeamMembershipTeamPermissionsItem._('IntegrationManager');
   static const orgadmin = TeamMembershipTeamPermissionsItem._('OrgAdmin');
   static const orgviewer = TeamMembershipTeamPermissionsItem._('OrgViewer');
   static const usageviewer = TeamMembershipTeamPermissionsItem._('UsageViewer');
   static const v0builder = TeamMembershipTeamPermissionsItem._('V0Builder');
   static const v0chatter = TeamMembershipTeamPermissionsItem._('V0Chatter');
   static const v0viewer = TeamMembershipTeamPermissionsItem._('V0Viewer');
-  static const workflowdecryptor = TeamMembershipTeamPermissionsItem._('WorkflowDecryptor');
+  static const workflowdecryptor =
+      TeamMembershipTeamPermissionsItem._('WorkflowDecryptor');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamMembershipTeamPermissionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamMembershipTeamPermissionsItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `teamRoles[]` wire field.
 final class TeamMembershipTeamRolesItem {
-
   final String value;
 
   const TeamMembershipTeamRolesItem._(this.value);
 
-  factory TeamMembershipTeamRolesItem.fromJson(String value) => TeamMembershipTeamRolesItem._(value);
+  factory TeamMembershipTeamRolesItem.fromJson(String value) =>
+      TeamMembershipTeamRolesItem._(value);
 
   static const billing = TeamMembershipTeamRolesItem._('BILLING');
   static const contributor = TeamMembershipTeamRolesItem._('CONTRIBUTOR');
@@ -194,22 +232,25 @@ final class TeamMembershipTeamRolesItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamMembershipTeamRolesItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamMembershipTeamRolesItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Required enumerated value serialized in the `preference` wire field.
 final class TeamNsnbConfigPreference {
-
   final String value;
 
   const TeamNsnbConfigPreference._(this.value);
 
-  factory TeamNsnbConfigPreference.fromJson(String value) => TeamNsnbConfigPreference._(value);
+  factory TeamNsnbConfigPreference.fromJson(String value) =>
+      TeamNsnbConfigPreference._(value);
 
   static const autoApproval = TeamNsnbConfigPreference._('auto-approval');
   static const block = TeamNsnbConfigPreference._('block');
@@ -217,17 +258,19 @@ final class TeamNsnbConfigPreference {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamNsnbConfigPreference && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamNsnbConfigPreference && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether the team is a platform team.
 final class TeamPlatform {
-
   final bool value;
 
   const TeamPlatform._(this.value);
@@ -239,54 +282,63 @@ final class TeamPlatform {
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamPlatform && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamPlatform && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Optional enumerated value serialized in the `enabled` wire field.
 final class TeamRemoteCachingEnabled {
-
   final bool value;
 
   const TeamRemoteCachingEnabled._(this.value);
 
-  factory TeamRemoteCachingEnabled.fromJson(bool value) => TeamRemoteCachingEnabled._(value);
+  factory TeamRemoteCachingEnabled.fromJson(bool value) =>
+      TeamRemoteCachingEnabled._(value);
 
   static const false_ = TeamRemoteCachingEnabled._(false);
   static const true_ = TeamRemoteCachingEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamRemoteCachingEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamRemoteCachingEnabled && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created. Projects may override this via `project.gitProviderOptions.requireVerifiedCommits` (gated by `Project:Update`).
 final class TeamRequireVerifiedCommits {
-
   final bool value;
 
   const TeamRequireVerifiedCommits._(this.value);
 
-  factory TeamRequireVerifiedCommits.fromJson(bool value) => TeamRequireVerifiedCommits._(value);
+  factory TeamRequireVerifiedCommits.fromJson(bool value) =>
+      TeamRequireVerifiedCommits._(value);
 
   static const false_ = TeamRequireVerifiedCommits._(false);
   static const true_ = TeamRequireVerifiedCommits._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is TeamRequireVerifiedCommits && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is TeamRequireVerifiedCommits && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

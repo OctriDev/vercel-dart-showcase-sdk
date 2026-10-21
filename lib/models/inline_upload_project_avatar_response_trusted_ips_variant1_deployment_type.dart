@@ -5,37 +5,51 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType {
-
   final String value;
 
-  const UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._(this.value);
+  const UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._(
+      this.value);
 
-  factory UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType.fromJson(String value) => UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._(value);
+  factory UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._(value);
 
-  static const all = UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._('all');
-  static const allExceptCustomDomains = UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._('all_except_custom_domains');
-  static const preview = UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._('preview');
-  static const prodDeploymentUrlsAndAllPreviews = UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._('prod_deployment_urls_and_all_previews');
-  static const production = UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._('production');
+  static const all =
+      UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._('all');
+  static const allExceptCustomDomains =
+      UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._(
+          'all_except_custom_domains');
+  static const preview =
+      UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._('preview');
+  static const prodDeploymentUrlsAndAllPreviews =
+      UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._(
+          'prod_deployment_urls_and_all_previews');
+  static const production =
+      UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType._(
+          'production');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseTrustedIpsVariant1DeploymentType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.
 final class UserEventCategoriesItem {
-
   final String value;
 
   const UserEventCategoriesItem._(this.value);
 
-  factory UserEventCategoriesItem.fromJson(String value) => UserEventCategoriesItem._(value);
+  factory UserEventCategoriesItem.fromJson(String value) =>
+      UserEventCategoriesItem._(value);
 
   static const account = UserEventCategoriesItem._('account');
   static const ai = UserEventCategoriesItem._('ai');
@@ -63,29 +77,33 @@ final class UserEventCategoriesItem {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventCategoriesItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventCategoriesItem && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The type of entity.
 final class UserEventEntitiesItemType {
-
   final String value;
 
   const UserEventEntitiesItemType._(this.value);
 
-  factory UserEventEntitiesItemType.fromJson(String value) => UserEventEntitiesItemType._(value);
+  factory UserEventEntitiesItemType.fromJson(String value) =>
+      UserEventEntitiesItemType._(value);
 
   static const app = UserEventEntitiesItemType._('app');
   static const author = UserEventEntitiesItemType._('author');
   static const bitbucketLogin = UserEventEntitiesItemType._('bitbucket_login');
   static const bold = UserEventEntitiesItemType._('bold');
   static const deploymentHost = UserEventEntitiesItemType._('deployment_host');
-  static const deploymentInspector = UserEventEntitiesItemType._('deployment_inspector');
+  static const deploymentInspector =
+      UserEventEntitiesItemType._('deployment_inspector');
   static const dnsRecord = UserEventEntitiesItemType._('dns_record');
   static const edgeConfig = UserEventEntitiesItemType._('edge-config');
   static const envVarName = UserEventEntitiesItemType._('env_var_name');
@@ -106,10 +124,13 @@ final class UserEventEntitiesItemType {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UserEventEntitiesItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UserEventEntitiesItemType && other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

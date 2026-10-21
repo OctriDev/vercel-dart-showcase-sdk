@@ -7,16 +7,23 @@ part of 'inline.dart';
 enum CancelDeploymentResponseServicesItemVariant0Schema {
   experimentalservices;
 
-  static CancelDeploymentResponseServicesItemVariant0Schema fromJson(String value) {
+  static CancelDeploymentResponseServicesItemVariant0Schema fromJson(
+      String value) {
     switch (value) {
-      case 'experimentalServices': return CancelDeploymentResponseServicesItemVariant0Schema.experimentalservices;
-      default: throw ArgumentError('Unknown CancelDeploymentResponseServicesItemVariant0Schema: $value');
+      case 'experimentalServices':
+        return CancelDeploymentResponseServicesItemVariant0Schema
+            .experimentalservices;
+      default:
+        throw ArgumentError(
+            'Unknown CancelDeploymentResponseServicesItemVariant0Schema: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CancelDeploymentResponseServicesItemVariant0Schema.experimentalservices: return 'experimentalServices';
+      case CancelDeploymentResponseServicesItemVariant0Schema
+            .experimentalservices:
+        return 'experimentalServices';
     }
   }
 
@@ -25,212 +32,303 @@ enum CancelDeploymentResponseServicesItemVariant0Schema {
 }
 
 final class CancelDeploymentResponseServicesItemVariant0Trigger {
-
   final String value;
 
   const CancelDeploymentResponseServicesItemVariant0Trigger._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant0Trigger.fromJson(String value) => CancelDeploymentResponseServicesItemVariant0Trigger._(value);
+  factory CancelDeploymentResponseServicesItemVariant0Trigger.fromJson(
+          String value) =>
+      CancelDeploymentResponseServicesItemVariant0Trigger._(value);
 
-  static const queue = CancelDeploymentResponseServicesItemVariant0Trigger._('queue');
-  static const schedule = CancelDeploymentResponseServicesItemVariant0Trigger._('schedule');
-  static const workflow = CancelDeploymentResponseServicesItemVariant0Trigger._('workflow');
+  static const queue =
+      CancelDeploymentResponseServicesItemVariant0Trigger._('queue');
+  static const schedule =
+      CancelDeploymentResponseServicesItemVariant0Trigger._('schedule');
+  static const workflow =
+      CancelDeploymentResponseServicesItemVariant0Trigger._('workflow');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant0Trigger && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseServicesItemVariant0Trigger &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseServicesItemVariant0Type {
-
   final String value;
 
   const CancelDeploymentResponseServicesItemVariant0Type._(this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant0Type.fromJson(String value) => CancelDeploymentResponseServicesItemVariant0Type._(value);
+  factory CancelDeploymentResponseServicesItemVariant0Type.fromJson(
+          String value) =>
+      CancelDeploymentResponseServicesItemVariant0Type._(value);
 
-  static const cron = CancelDeploymentResponseServicesItemVariant0Type._('cron');
+  static const cron =
+      CancelDeploymentResponseServicesItemVariant0Type._('cron');
   static const job = CancelDeploymentResponseServicesItemVariant0Type._('job');
   static const web = CancelDeploymentResponseServicesItemVariant0Type._('web');
-  static const worker = CancelDeploymentResponseServicesItemVariant0Type._('worker');
+  static const worker =
+      CancelDeploymentResponseServicesItemVariant0Type._('worker');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant0Type && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseServicesItemVariant0Type &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Generated value shape, must be `"url"`.
 final class CancelDeploymentResponseServicesItemVariant1BindingsItemFormat {
-
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1BindingsItemFormat._(this.value);
+  const CancelDeploymentResponseServicesItemVariant1BindingsItemFormat._(
+      this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1BindingsItemFormat.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1BindingsItemFormat._(value);
+  factory CancelDeploymentResponseServicesItemVariant1BindingsItemFormat.fromJson(
+          String value) =>
+      CancelDeploymentResponseServicesItemVariant1BindingsItemFormat._(value);
 
-  static const url = CancelDeploymentResponseServicesItemVariant1BindingsItemFormat._('url');
+  static const url =
+      CancelDeploymentResponseServicesItemVariant1BindingsItemFormat._('url');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1BindingsItemFormat && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseServicesItemVariant1BindingsItemFormat &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// If present, must be `"service"` for Service-to-Service HTTP bindings.
 final class CancelDeploymentResponseServicesItemVariant1BindingsItemType {
-
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1BindingsItemType._(this.value);
+  const CancelDeploymentResponseServicesItemVariant1BindingsItemType._(
+      this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1BindingsItemType.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1BindingsItemType._(value);
+  factory CancelDeploymentResponseServicesItemVariant1BindingsItemType.fromJson(
+          String value) =>
+      CancelDeploymentResponseServicesItemVariant1BindingsItemType._(value);
 
-  static const service = CancelDeploymentResponseServicesItemVariant1BindingsItemType._('service');
+  static const service =
+      CancelDeploymentResponseServicesItemVariant1BindingsItemType._('service');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1BindingsItemType && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseServicesItemVariant1BindingsItemType &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle {
-
   final bool value;
 
-  const CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(this.value);
+  const CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(
+      this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle.fromJson(bool value) => CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(value);
+  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle.fromJson(
+          bool value) =>
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(value);
 
-  static const false_ = CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(false);
-  static const true_ = CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(true);
+  static const false_ =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(false);
+  static const true_ =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CancelDeploymentResponseServicesItemVariant1BuilderConfigBundle &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory {
-
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory._(this.value);
+  const CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory._(
+      this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory._(value);
+  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory.fromJson(
+          String value) =>
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory
+          ._(value);
 
-  static const v1gi = CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory._('1Gi');
-  static const v2gi = CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory._('2Gi');
-  static const v4gi = CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory._('4Gi');
-  static const v8gi = CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory._('8Gi');
+  static const v1gi =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory
+          ._('1Gi');
+  static const v2gi =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory
+          ._('2Gi');
+  static const v4gi =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory
+          ._('4Gi');
+  static const v8gi =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory
+          ._('8Gi');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CancelDeploymentResponseServicesItemVariant1BuilderConfigDaemonResourcesRequestsMemory &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug {
-
   final bool value;
 
-  const CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(this.value);
+  const CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(
+      this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug.fromJson(bool value) => CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(value);
+  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug.fromJson(
+          bool value) =>
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(value);
 
-  static const false_ = CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(false);
-  static const true_ = CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(true);
+  static const false_ =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(false);
+  static const true_ =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is CancelDeploymentResponseServicesItemVariant1BuilderConfigDebug &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode {
-
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode._(this.value);
+  const CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode._(
+      this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode._(value);
+  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode.fromJson(
+          String value) =>
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode
+          ._(value);
 
-  static const strict = CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode._('strict');
+  static const strict =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode
+          ._('strict');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueAffinityMode &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture {
-
   final String value;
 
-  const CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture._(this.value);
+  const CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture._(
+      this.value);
 
-  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture.fromJson(String value) => CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture._(value);
+  factory CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture.fromJson(
+          String value) =>
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture
+          ._(value);
 
-  static const arm64 = CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture._('arm64');
-  static const x8664 = CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture._('x86_64');
+  static const arm64 =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture
+          ._('arm64');
+  static const x8664 =
+      CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture
+          ._('x86_64');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueArchitecture &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Event type - must be "queue/v1beta" (REQUIRED)
 enum CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type {
   queueV1beta;
 
-  static CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type fromJson(String value) {
+  static CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+      fromJson(String value) {
     switch (value) {
-      case 'queue/v1beta': return CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta;
-      default: throw ArgumentError('Unknown CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type: $value');
+      case 'queue/v1beta':
+        return CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+            .queueV1beta;
+      default:
+        throw ArgumentError(
+            'Unknown CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type.queueV1beta: return 'queue/v1beta';
+      case CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant0Type
+            .queueV1beta:
+        return 'queue/v1beta';
     }
   }
 
@@ -242,16 +340,23 @@ enum CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExpe
 enum CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type {
   queueV2beta;
 
-  static CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type fromJson(String value) {
+  static CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type
+      fromJson(String value) {
     switch (value) {
-      case 'queue/v2beta': return CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta;
-      default: throw ArgumentError('Unknown CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type: $value');
+      case 'queue/v2beta':
+        return CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type
+            .queueV2beta;
+      default:
+        throw ArgumentError(
+            'Unknown CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type.queueV2beta: return 'queue/v2beta';
+      case CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant1Type
+            .queueV2beta:
+        return 'queue/v2beta';
     }
   }
 
@@ -263,16 +368,23 @@ enum CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExpe
 enum CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type {
   scheduleV1beta;
 
-  static CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type fromJson(String value) {
+  static CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type
+      fromJson(String value) {
     switch (value) {
-      case 'schedule/v1beta': return CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta;
-      default: throw ArgumentError('Unknown CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type: $value');
+      case 'schedule/v1beta':
+        return CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type
+            .scheduleV1beta;
+      default:
+        throw ArgumentError(
+            'Unknown CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type: $value');
     }
   }
 
   String toJson() {
     switch (this) {
-      case CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type.scheduleV1beta: return 'schedule/v1beta';
+      case CancelDeploymentResponseServicesItemVariant1BuilderConfigFunctionsValueExperimentalTriggersItemVariant2Type
+            .scheduleV1beta:
+        return 'schedule/v1beta';
     }
   }
 

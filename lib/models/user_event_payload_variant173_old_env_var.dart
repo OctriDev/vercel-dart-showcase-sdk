@@ -8,241 +8,520 @@ part of 'user.dart';
 class UserEventPayloadVariant173OldEnvVar {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// whether or not this env varible applies to custom environments
-  final SdkOptional<UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments> applyToAllCustomEnvironments;
+  final SdkOptional<
+          UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments>
+      applyToAllCustomEnvironments;
+
   /// A user provided comment that describes what this Shared Env Var is for.
   final SdkOptional<String> comment;
+
   /// The date when the Shared Env Var was created.
   final SdkOptional<String> created;
+
   /// Timestamp for when the Shared Env Var was created.
   final SdkOptional<double> createdAt;
+
   /// The unique identifier of the user who created the Shared Env Var.
   final SdkOptional<String?> createdBy;
+
   /// The custom environment IDs that this Shared Env Var is scoped to.
   final SdkOptional<List<String>> customEnvironmentIds;
+
   /// whether or not this env variable is decrypted
   final SdkOptional<UserEventPayloadVariant173OldEnvVarDecrypted> decrypted;
+
   /// Timestamp for when the Shared Env Var was (soft) deleted.
   final SdkOptional<double> deletedAt;
+
   /// The unique identifier of the user who deleted the Shared Env Var.
   final SdkOptional<String?> deletedBy;
+
   /// The unique identifier of the Shared Env Var.
   final SdkOptional<String> id;
+
   /// The name of the Shared Env Var.
   final SdkOptional<String> key;
+
   /// The last editor full name or username.
   final SdkOptional<String> lastEditedByDisplayName;
+
   /// Optional API value serialized in the `lastEditedByPrincipal` wire field.
   final SdkOptional<dynamic> lastEditedByPrincipal;
+
   /// The unique identifier of the owner (team) the Shared Env Var was created for.
   final SdkOptional<String?> ownerId;
+
   /// The unique identifiers of the projects which the Shared Env Var is linked to.
   final SdkOptional<List<String>> projectId;
+
   /// environments this env variable targets
   final SdkOptional<List<UserEventPayloadVariant173OldEnvVarTargetItem>> target;
+
   /// The type of this cosmos doc instance, if blank, assume secret.
   final SdkOptional<UserEventPayloadVariant173OldEnvVarType> type_;
+
   /// Timestamp for when the Shared Env Var was last updated.
   final SdkOptional<double> updatedAt;
+
   /// The unique identifier of the user who last updated the Shared Env Var.
   final SdkOptional<String?> updatedBy;
+
   /// The value of the Shared Env Var.
   final SdkOptional<String> value;
 
-  const UserEventPayloadVariant173OldEnvVar({this.applyToAllCustomEnvironments = const SdkOmitted(), this.comment = const SdkOmitted(), this.created = const SdkOmitted(), this.createdAt = const SdkOmitted(), this.createdBy = const SdkOmitted(), this.customEnvironmentIds = const SdkOmitted(), this.decrypted = const SdkOmitted(), this.deletedAt = const SdkOmitted(), this.deletedBy = const SdkOmitted(), this.id = const SdkOmitted(), this.key = const SdkOmitted(), this.lastEditedByDisplayName = const SdkOmitted(), this.lastEditedByPrincipal = const SdkOmitted(), this.ownerId = const SdkOmitted(), this.projectId = const SdkOmitted(), this.target = const SdkOmitted(), this.type_ = const SdkOmitted(), this.updatedAt = const SdkOmitted(), this.updatedBy = const SdkOmitted(), this.value = const SdkOmitted()});
+  const UserEventPayloadVariant173OldEnvVar(
+      {this.applyToAllCustomEnvironments = const SdkOmitted(),
+      this.comment = const SdkOmitted(),
+      this.created = const SdkOmitted(),
+      this.createdAt = const SdkOmitted(),
+      this.createdBy = const SdkOmitted(),
+      this.customEnvironmentIds = const SdkOmitted(),
+      this.decrypted = const SdkOmitted(),
+      this.deletedAt = const SdkOmitted(),
+      this.deletedBy = const SdkOmitted(),
+      this.id = const SdkOmitted(),
+      this.key = const SdkOmitted(),
+      this.lastEditedByDisplayName = const SdkOmitted(),
+      this.lastEditedByPrincipal = const SdkOmitted(),
+      this.ownerId = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      this.target = const SdkOmitted(),
+      this.type_ = const SdkOmitted(),
+      this.updatedAt = const SdkOmitted(),
+      this.updatedBy = const SdkOmitted(),
+      this.value = const SdkOmitted()});
 
-  UserEventPayloadVariant173OldEnvVar Function({SdkOptional<UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments> applyToAllCustomEnvironments, SdkOptional<String> comment, SdkOptional<String> created, SdkOptional<double> createdAt, SdkOptional<String?> createdBy, SdkOptional<List<String>> customEnvironmentIds, SdkOptional<UserEventPayloadVariant173OldEnvVarDecrypted> decrypted, SdkOptional<double> deletedAt, SdkOptional<String?> deletedBy, SdkOptional<String> id, SdkOptional<String> key, SdkOptional<String> lastEditedByDisplayName, SdkOptional<dynamic> lastEditedByPrincipal, SdkOptional<String?> ownerId, SdkOptional<List<String>> projectId, SdkOptional<List<UserEventPayloadVariant173OldEnvVarTargetItem>> target, SdkOptional<UserEventPayloadVariant173OldEnvVarType> type_, SdkOptional<double> updatedAt, SdkOptional<String?> updatedBy, SdkOptional<String> value}) get copyWith => _copyWith;
+  UserEventPayloadVariant173OldEnvVar Function(
+      {SdkOptional<
+              UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments>
+          applyToAllCustomEnvironments,
+      SdkOptional<String> comment,
+      SdkOptional<String> created,
+      SdkOptional<double> createdAt,
+      SdkOptional<String?> createdBy,
+      SdkOptional<List<String>> customEnvironmentIds,
+      SdkOptional<UserEventPayloadVariant173OldEnvVarDecrypted> decrypted,
+      SdkOptional<double> deletedAt,
+      SdkOptional<String?> deletedBy,
+      SdkOptional<String> id,
+      SdkOptional<String> key,
+      SdkOptional<String> lastEditedByDisplayName,
+      SdkOptional<dynamic> lastEditedByPrincipal,
+      SdkOptional<String?> ownerId,
+      SdkOptional<List<String>> projectId,
+      SdkOptional<List<UserEventPayloadVariant173OldEnvVarTargetItem>> target,
+      SdkOptional<UserEventPayloadVariant173OldEnvVarType> type_,
+      SdkOptional<double> updatedAt,
+      SdkOptional<String?> updatedBy,
+      SdkOptional<String> value}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant173OldEnvVar _copyWith({Object? applyToAllCustomEnvironments = sdkOmittedValue, Object? comment = sdkOmittedValue, Object? created = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? customEnvironmentIds = sdkOmittedValue, Object? decrypted = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? deletedBy = sdkOmittedValue, Object? id = sdkOmittedValue, Object? key = sdkOmittedValue, Object? lastEditedByDisplayName = sdkOmittedValue, Object? lastEditedByPrincipal = sdkOmittedValue, Object? ownerId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? target = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? updatedBy = sdkOmittedValue, Object? value = sdkOmittedValue}) => UserEventPayloadVariant173OldEnvVar(
-    applyToAllCustomEnvironments: identical(applyToAllCustomEnvironments, sdkOmittedValue) ? this.applyToAllCustomEnvironments : applyToAllCustomEnvironments as SdkOptional<UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments>,
-    comment: identical(comment, sdkOmittedValue) ? this.comment : comment as SdkOptional<String>,
-    created: identical(created, sdkOmittedValue) ? this.created : created as SdkOptional<String>,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as SdkOptional<double>,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as SdkOptional<String?>,
-    customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue) ? this.customEnvironmentIds : customEnvironmentIds as SdkOptional<List<String>>,
-    decrypted: identical(decrypted, sdkOmittedValue) ? this.decrypted : decrypted as SdkOptional<UserEventPayloadVariant173OldEnvVarDecrypted>,
-    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double>,
-    deletedBy: identical(deletedBy, sdkOmittedValue) ? this.deletedBy : deletedBy as SdkOptional<String?>,
-    id: identical(id, sdkOmittedValue) ? this.id : id as SdkOptional<String>,
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    lastEditedByDisplayName: identical(lastEditedByDisplayName, sdkOmittedValue) ? this.lastEditedByDisplayName : lastEditedByDisplayName as SdkOptional<String>,
-    lastEditedByPrincipal: identical(lastEditedByPrincipal, sdkOmittedValue) ? this.lastEditedByPrincipal : lastEditedByPrincipal as SdkOptional<dynamic>,
-    ownerId: identical(ownerId, sdkOmittedValue) ? this.ownerId : ownerId as SdkOptional<String?>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<List<String>>,
-    target: identical(target, sdkOmittedValue) ? this.target : target as SdkOptional<List<UserEventPayloadVariant173OldEnvVarTargetItem>>,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as SdkOptional<UserEventPayloadVariant173OldEnvVarType>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<double>,
-    updatedBy: identical(updatedBy, sdkOmittedValue) ? this.updatedBy : updatedBy as SdkOptional<String?>,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<String>,
-  );
+  UserEventPayloadVariant173OldEnvVar _copyWith(
+          {Object? applyToAllCustomEnvironments = sdkOmittedValue,
+          Object? comment = sdkOmittedValue,
+          Object? created = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? customEnvironmentIds = sdkOmittedValue,
+          Object? decrypted = sdkOmittedValue,
+          Object? deletedAt = sdkOmittedValue,
+          Object? deletedBy = sdkOmittedValue,
+          Object? id = sdkOmittedValue,
+          Object? key = sdkOmittedValue,
+          Object? lastEditedByDisplayName = sdkOmittedValue,
+          Object? lastEditedByPrincipal = sdkOmittedValue,
+          Object? ownerId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? target = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? updatedBy = sdkOmittedValue,
+          Object? value = sdkOmittedValue}) =>
+      UserEventPayloadVariant173OldEnvVar(
+        applyToAllCustomEnvironments: identical(
+                applyToAllCustomEnvironments, sdkOmittedValue)
+            ? this.applyToAllCustomEnvironments
+            : applyToAllCustomEnvironments as SdkOptional<
+                UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments>,
+        comment: identical(comment, sdkOmittedValue)
+            ? this.comment
+            : comment as SdkOptional<String>,
+        created: identical(created, sdkOmittedValue)
+            ? this.created
+            : created as SdkOptional<String>,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as SdkOptional<double>,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as SdkOptional<String?>,
+        customEnvironmentIds: identical(customEnvironmentIds, sdkOmittedValue)
+            ? this.customEnvironmentIds
+            : customEnvironmentIds as SdkOptional<List<String>>,
+        decrypted: identical(decrypted, sdkOmittedValue)
+            ? this.decrypted
+            : decrypted
+                as SdkOptional<UserEventPayloadVariant173OldEnvVarDecrypted>,
+        deletedAt: identical(deletedAt, sdkOmittedValue)
+            ? this.deletedAt
+            : deletedAt as SdkOptional<double>,
+        deletedBy: identical(deletedBy, sdkOmittedValue)
+            ? this.deletedBy
+            : deletedBy as SdkOptional<String?>,
+        id: identical(id, sdkOmittedValue)
+            ? this.id
+            : id as SdkOptional<String>,
+        key: identical(key, sdkOmittedValue)
+            ? this.key
+            : key as SdkOptional<String>,
+        lastEditedByDisplayName:
+            identical(lastEditedByDisplayName, sdkOmittedValue)
+                ? this.lastEditedByDisplayName
+                : lastEditedByDisplayName as SdkOptional<String>,
+        lastEditedByPrincipal: identical(lastEditedByPrincipal, sdkOmittedValue)
+            ? this.lastEditedByPrincipal
+            : lastEditedByPrincipal as SdkOptional<dynamic>,
+        ownerId: identical(ownerId, sdkOmittedValue)
+            ? this.ownerId
+            : ownerId as SdkOptional<String?>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<List<String>>,
+        target: identical(target, sdkOmittedValue)
+            ? this.target
+            : target as SdkOptional<
+                List<UserEventPayloadVariant173OldEnvVarTargetItem>>,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as SdkOptional<UserEventPayloadVariant173OldEnvVarType>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<double>,
+        updatedBy: identical(updatedBy, sdkOmittedValue)
+            ? this.updatedBy
+            : updatedBy as SdkOptional<String?>,
+        value: identical(value, sdkOmittedValue)
+            ? this.value
+            : value as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant173OldEnvVar.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant173OldEnvVar(
-    applyToAllCustomEnvironments: json['applyToAllCustomEnvironments'] != null ? SdkPresent((json['applyToAllCustomEnvironments'] != null ? UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments.fromJson(json['applyToAllCustomEnvironments'] as bool) : null)!) : const SdkOmitted(),
-    comment: json['comment'] != null ? SdkPresent((json['comment'] as String?)!) : const SdkOmitted(),
-    created: json['created'] != null ? SdkPresent((json['created'] as String?)!) : const SdkOmitted(),
-    createdAt: json['createdAt'] != null ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    createdBy: json.containsKey('createdBy') ? SdkPresent(json['createdBy'] as String?) : const SdkOmitted(),
-    customEnvironmentIds: json['customEnvironmentIds'] != null ? SdkPresent(((json['customEnvironmentIds'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    decrypted: json['decrypted'] != null ? SdkPresent((json['decrypted'] != null ? UserEventPayloadVariant173OldEnvVarDecrypted.fromJson(json['decrypted'] as bool) : null)!) : const SdkOmitted(),
-    deletedAt: json['deletedAt'] != null ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    deletedBy: json.containsKey('deletedBy') ? SdkPresent(json['deletedBy'] as String?) : const SdkOmitted(),
-    id: json['id'] != null ? SdkPresent((json['id'] as String?)!) : const SdkOmitted(),
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    lastEditedByDisplayName: json['lastEditedByDisplayName'] != null ? SdkPresent((json['lastEditedByDisplayName'] as String?)!) : const SdkOmitted(),
-    lastEditedByPrincipal: json['lastEditedByPrincipal'] != null ? SdkPresent((json['lastEditedByPrincipal'])!) : const SdkOmitted(),
-    ownerId: json.containsKey('ownerId') ? SdkPresent(json['ownerId'] as String?) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent(((json['projectId'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    target: json['target'] != null ? SdkPresent(((json['target'] as List?)?.map((e) => UserEventPayloadVariant173OldEnvVarTargetItem.fromJson(e as String)).toList())!) : const SdkOmitted(),
-    type_: json['type'] != null ? SdkPresent((json['type'] != null ? UserEventPayloadVariant173OldEnvVarType.fromJson(json['type'] as String) : null)!) : const SdkOmitted(),
-    updatedAt: json['updatedAt'] != null ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    updatedBy: json.containsKey('updatedBy') ? SdkPresent(json['updatedBy'] as String?) : const SdkOmitted(),
-    value: json['value'] != null ? SdkPresent((json['value'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant173OldEnvVar.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant173OldEnvVar(
+        applyToAllCustomEnvironments: json['applyToAllCustomEnvironments'] !=
+                null
+            ? SdkPresent((json['applyToAllCustomEnvironments'] != null
+                ? UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments
+                    .fromJson(json['applyToAllCustomEnvironments'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        comment: json['comment'] != null
+            ? SdkPresent((json['comment'] as String?)!)
+            : const SdkOmitted(),
+        created: json['created'] != null
+            ? SdkPresent((json['created'] as String?)!)
+            : const SdkOmitted(),
+        createdAt: json['createdAt'] != null
+            ? SdkPresent(((json['createdAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        createdBy: json.containsKey('createdBy')
+            ? SdkPresent(json['createdBy'] as String?)
+            : const SdkOmitted(),
+        customEnvironmentIds: json['customEnvironmentIds'] != null
+            ? SdkPresent(((json['customEnvironmentIds'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        decrypted: json['decrypted'] != null
+            ? SdkPresent((json['decrypted'] != null
+                ? UserEventPayloadVariant173OldEnvVarDecrypted.fromJson(
+                    json['decrypted'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        deletedAt: json['deletedAt'] != null
+            ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        deletedBy: json.containsKey('deletedBy')
+            ? SdkPresent(json['deletedBy'] as String?)
+            : const SdkOmitted(),
+        id: json['id'] != null
+            ? SdkPresent((json['id'] as String?)!)
+            : const SdkOmitted(),
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        lastEditedByDisplayName: json['lastEditedByDisplayName'] != null
+            ? SdkPresent((json['lastEditedByDisplayName'] as String?)!)
+            : const SdkOmitted(),
+        lastEditedByPrincipal: json['lastEditedByPrincipal'] != null
+            ? SdkPresent((json['lastEditedByPrincipal'])!)
+            : const SdkOmitted(),
+        ownerId: json.containsKey('ownerId')
+            ? SdkPresent(json['ownerId'] as String?)
+            : const SdkOmitted(),
+        projectId: json['projectId'] != null
+            ? SdkPresent(((json['projectId'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        target: json['target'] != null
+            ? SdkPresent(((json['target'] as List?)
+                ?.map((e) =>
+                    UserEventPayloadVariant173OldEnvVarTargetItem.fromJson(
+                        e as String))
+                .toList())!)
+            : const SdkOmitted(),
+        type_: json['type'] != null
+            ? SdkPresent((json['type'] != null
+                ? UserEventPayloadVariant173OldEnvVarType.fromJson(
+                    json['type'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent(((json['updatedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        updatedBy: json.containsKey('updatedBy')
+            ? SdkPresent(json['updatedBy'] as String?)
+            : const SdkOmitted(),
+        value: json['value'] != null
+            ? SdkPresent((json['value'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (applyToAllCustomEnvironments) {
-      SdkPresent<UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments>(value: final value) => {'applyToAllCustomEnvironments': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (comment) {
-      SdkPresent<String>(value: final value) => {'comment': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (created) {
-      SdkPresent<String>(value: final value) => {'created': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdAt) {
-      SdkPresent<double>(value: final value) => {'createdAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (createdBy) {
-      SdkPresent<String?>(value: final value) => {'createdBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (customEnvironmentIds) {
-      SdkPresent<List<String>>(value: final value) => {'customEnvironmentIds': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (decrypted) {
-      SdkPresent<UserEventPayloadVariant173OldEnvVarDecrypted>(value: final value) => {'decrypted': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deletedAt) {
-      SdkPresent<double>(value: final value) => {'deletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deletedBy) {
-      SdkPresent<String?>(value: final value) => {'deletedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (id) {
-      SdkPresent<String>(value: final value) => {'id': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastEditedByDisplayName) {
-      SdkPresent<String>(value: final value) => {'lastEditedByDisplayName': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (lastEditedByPrincipal) {
-      SdkPresent<dynamic>(value: final value) => {'lastEditedByPrincipal': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (ownerId) {
-      SdkPresent<String?>(value: final value) => {'ownerId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<List<String>>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (target) {
-      SdkPresent<List<UserEventPayloadVariant173OldEnvVarTargetItem>>(value: final value) => {'target': value.map((item) => item.toJson()).toList(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (type_) {
-      SdkPresent<UserEventPayloadVariant173OldEnvVarType>(value: final value) => {'type': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedAt) {
-      SdkPresent<double>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (updatedBy) {
-      SdkPresent<String?>(value: final value) => {'updatedBy': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (value) {
-      SdkPresent<String>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (applyToAllCustomEnvironments) {
+          SdkPresent<
+                UserEventPayloadVariant173OldEnvVarApplyToAllCustomEnvironments>(
+            value: final value
+          ) =>
+            {
+              'applyToAllCustomEnvironments': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (comment) {
+          SdkPresent<String>(value: final value) => {
+              'comment': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (created) {
+          SdkPresent<String>(value: final value) => {
+              'created': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdAt) {
+          SdkPresent<double>(value: final value) => {
+              'createdAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (createdBy) {
+          SdkPresent<String?>(value: final value) => {
+              'createdBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (customEnvironmentIds) {
+          SdkPresent<List<String>>(value: final value) => {
+              'customEnvironmentIds': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (decrypted) {
+          SdkPresent<UserEventPayloadVariant173OldEnvVarDecrypted>(
+            value: final value
+          ) =>
+            {
+              'decrypted': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deletedAt) {
+          SdkPresent<double>(value: final value) => {
+              'deletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deletedBy) {
+          SdkPresent<String?>(value: final value) => {
+              'deletedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (id) {
+          SdkPresent<String>(value: final value) => {
+              'id': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastEditedByDisplayName) {
+          SdkPresent<String>(value: final value) => {
+              'lastEditedByDisplayName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (lastEditedByPrincipal) {
+          SdkPresent<dynamic>(value: final value) => {
+              'lastEditedByPrincipal': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (ownerId) {
+          SdkPresent<String?>(value: final value) => {
+              'ownerId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<List<String>>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (target) {
+          SdkPresent<List<UserEventPayloadVariant173OldEnvVarTargetItem>>(
+            value: final value
+          ) =>
+            {
+              'target': value.map((item) => item.toJson()).toList(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (type_) {
+          SdkPresent<UserEventPayloadVariant173OldEnvVarType>(
+            value: final value
+          ) =>
+            {
+              'type': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedAt) {
+          SdkPresent<double>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (updatedBy) {
+          SdkPresent<String?>(value: final value) => {
+              'updatedBy': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (value) {
+          SdkPresent<String>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `newProjects[]` wire field.
 class UserEventPayloadVariant173UpdateDiffNewProjectsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
 
-  const UserEventPayloadVariant173UpdateDiffNewProjectsItem({required this.projectId, this.projectName = const SdkOmitted()});
+  const UserEventPayloadVariant173UpdateDiffNewProjectsItem(
+      {required this.projectId, this.projectName = const SdkOmitted()});
 
-  UserEventPayloadVariant173UpdateDiffNewProjectsItem Function({String projectId, SdkOptional<String> projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant173UpdateDiffNewProjectsItem Function(
+      {String projectId,
+      SdkOptional<String> projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant173UpdateDiffNewProjectsItem _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant173UpdateDiffNewProjectsItem(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-  );
+  UserEventPayloadVariant173UpdateDiffNewProjectsItem _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant173UpdateDiffNewProjectsItem(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant173UpdateDiffNewProjectsItem.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant173UpdateDiffNewProjectsItem(
-    projectId: (json['projectId'] as String?)!,
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant173UpdateDiffNewProjectsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant173UpdateDiffNewProjectsItem(
+        projectId: (json['projectId'] as String?)!,
+        projectName: json['projectName'] != null
+            ? SdkPresent((json['projectName'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'projectId': projectId,
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Required object value serialized in the `oldProjects[]` wire field.
 class UserEventPayloadVariant173UpdateDiffOldProjectsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
 
-  const UserEventPayloadVariant173UpdateDiffOldProjectsItem({required this.projectId, this.projectName = const SdkOmitted()});
+  const UserEventPayloadVariant173UpdateDiffOldProjectsItem(
+      {required this.projectId, this.projectName = const SdkOmitted()});
 
-  UserEventPayloadVariant173UpdateDiffOldProjectsItem Function({String projectId, SdkOptional<String> projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant173UpdateDiffOldProjectsItem Function(
+      {String projectId,
+      SdkOptional<String> projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant173UpdateDiffOldProjectsItem _copyWith({Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant173UpdateDiffOldProjectsItem(
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-  );
+  UserEventPayloadVariant173UpdateDiffOldProjectsItem _copyWith(
+          {Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant173UpdateDiffOldProjectsItem(
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant173UpdateDiffOldProjectsItem.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant173UpdateDiffOldProjectsItem(
-    projectId: (json['projectId'] as String?)!,
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant173UpdateDiffOldProjectsItem.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant173UpdateDiffOldProjectsItem(
+        projectId: (json['projectId'] as String?)!,
+        projectName: json['projectName'] != null
+            ? SdkPresent((json['projectName'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'projectId': projectId,
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'projectId': projectId,
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

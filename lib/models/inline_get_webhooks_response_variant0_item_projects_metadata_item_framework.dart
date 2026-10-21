@@ -5,226 +5,485 @@ part of 'inline.dart';
 
 // Inline operation models
 final class GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework {
-
   final String value;
 
-  const GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(this.value);
+  const GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+      this.value);
 
-  factory GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework.fromJson(String value) => GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(value);
+  factory GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework.fromJson(
+          String value) =>
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(value);
 
-  static const actixWeb = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('actix-web');
-  static const angular = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('angular');
-  static const ash = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ash');
-  static const astro = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('astro');
-  static const axum = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('axum');
-  static const blitzjs = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('blitzjs');
-  static const brunch = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('brunch');
-  static const bun = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('bun');
-  static const container = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('container');
-  static const createReactApp = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('create-react-app');
-  static const django = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('django');
-  static const docusaurus = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('docusaurus');
-  static const docusaurus2 = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('docusaurus-2');
-  static const dojo = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('dojo');
-  static const eleventy = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('eleventy');
-  static const elysia = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('elysia');
-  static const ember = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ember');
-  static const eve = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('eve');
-  static const express = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('express');
-  static const factoryEve = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('factory-eve');
-  static const fastapi = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('fastapi');
-  static const fasthtml = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('fasthtml');
-  static const fastify = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('fastify');
-  static const flask = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('flask');
-  static const gatsby = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('gatsby');
-  static const go = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('go');
-  static const gridsome = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('gridsome');
-  static const h3 = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('h3');
-  static const hexo = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('hexo');
-  static const hono = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('hono');
-  static const hugo = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('hugo');
-  static const hydrogen = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('hydrogen');
-  static const ionicAngular = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ionic-angular');
-  static const ionicReact = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ionic-react');
-  static const jekyll = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('jekyll');
-  static const koa = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('koa');
-  static const mastra = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('mastra');
-  static const middleman = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('middleman');
-  static const nestjs = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nestjs');
-  static const nextjs = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nextjs');
-  static const nitro = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nitro');
-  static const node = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('node');
-  static const nuxtjs = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nuxtjs');
-  static const parcel = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('parcel');
-  static const polymer = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('polymer');
-  static const preact = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('preact');
-  static const python = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('python');
-  static const reactRouter = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('react-router');
-  static const redwoodjs = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('redwoodjs');
-  static const remix = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('remix');
-  static const ruby = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ruby');
-  static const rust = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('rust');
-  static const saber = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('saber');
-  static const sanity = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('sanity');
-  static const sanityV2 = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('sanity-v2');
-  static const sapper = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('sapper');
-  static const scully = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('scully');
-  static const services = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('services');
-  static const solidstart = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('solidstart');
-  static const solidstart1 = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('solidstart-1');
-  static const stencil = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('stencil');
-  static const storybook = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('storybook');
-  static const svelte = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('svelte');
-  static const sveltekit = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('sveltekit');
-  static const sveltekit1 = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('sveltekit-1');
-  static const tanstackStart = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('tanstack-start');
-  static const tanstackStartLovable = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('tanstack-start-lovable');
-  static const umijs = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('umijs');
-  static const vite = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('vite');
-  static const vitepress = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('vitepress');
-  static const vue = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('vue');
-  static const vuepress = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('vuepress');
-  static const xmcp = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('xmcp');
-  static const zola = GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('zola');
+  static const actixWeb =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'actix-web');
+  static const angular =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('angular');
+  static const ash =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ash');
+  static const astro =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('astro');
+  static const axum =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('axum');
+  static const blitzjs =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('blitzjs');
+  static const brunch =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('brunch');
+  static const bun =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('bun');
+  static const container =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'container');
+  static const createReactApp =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'create-react-app');
+  static const django =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('django');
+  static const docusaurus =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'docusaurus');
+  static const docusaurus2 =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'docusaurus-2');
+  static const dojo =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('dojo');
+  static const eleventy =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'eleventy');
+  static const elysia =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('elysia');
+  static const ember =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ember');
+  static const eve =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('eve');
+  static const express =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('express');
+  static const factoryEve =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'factory-eve');
+  static const fastapi =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('fastapi');
+  static const fasthtml =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'fasthtml');
+  static const fastify =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('fastify');
+  static const flask =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('flask');
+  static const gatsby =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('gatsby');
+  static const go =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('go');
+  static const gridsome =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'gridsome');
+  static const h3 =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('h3');
+  static const hexo =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('hexo');
+  static const hono =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('hono');
+  static const hugo =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('hugo');
+  static const hydrogen =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'hydrogen');
+  static const ionicAngular =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'ionic-angular');
+  static const ionicReact =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'ionic-react');
+  static const jekyll =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('jekyll');
+  static const koa =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('koa');
+  static const mastra =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('mastra');
+  static const middleman =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'middleman');
+  static const nestjs =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nestjs');
+  static const nextjs =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nextjs');
+  static const nitro =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nitro');
+  static const node =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('node');
+  static const nuxtjs =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('nuxtjs');
+  static const parcel =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('parcel');
+  static const polymer =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('polymer');
+  static const preact =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('preact');
+  static const python =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('python');
+  static const reactRouter =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'react-router');
+  static const redwoodjs =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'redwoodjs');
+  static const remix =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('remix');
+  static const ruby =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('ruby');
+  static const rust =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('rust');
+  static const saber =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('saber');
+  static const sanity =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('sanity');
+  static const sanityV2 =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'sanity-v2');
+  static const sapper =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('sapper');
+  static const scully =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('scully');
+  static const services =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'services');
+  static const solidstart =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'solidstart');
+  static const solidstart1 =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'solidstart-1');
+  static const stencil =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('stencil');
+  static const storybook =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'storybook');
+  static const svelte =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('svelte');
+  static const sveltekit =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'sveltekit');
+  static const sveltekit1 =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'sveltekit-1');
+  static const tanstackStart =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'tanstack-start');
+  static const tanstackStartLovable =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'tanstack-start-lovable');
+  static const umijs =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('umijs');
+  static const vite =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('vite');
+  static const vitepress =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'vitepress');
+  static const vue =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('vue');
+  static const vuepress =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._(
+          'vuepress');
+  static const xmcp =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('xmcp');
+  static const zola =
+      GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework._('zola');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetWebhooksResponseVariant0ItemProjectsMetadataItemFramework &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// The webhooks events
 final class GetWebhooksResponseVariant1ItemEventsItem {
-
   final String value;
 
   const GetWebhooksResponseVariant1ItemEventsItem._(this.value);
 
-  factory GetWebhooksResponseVariant1ItemEventsItem.fromJson(String value) => GetWebhooksResponseVariant1ItemEventsItem._(value);
+  factory GetWebhooksResponseVariant1ItemEventsItem.fromJson(String value) =>
+      GetWebhooksResponseVariant1ItemEventsItem._(value);
 
-  static const aiGatewayAutoReloadLimitReached = GetWebhooksResponseVariant1ItemEventsItem._('ai-gateway.auto-reload.limit-reached');
-  static const aiGatewayBalanceDepleted = GetWebhooksResponseVariant1ItemEventsItem._('ai-gateway.balance-depleted');
-  static const alertsTriggered = GetWebhooksResponseVariant1ItemEventsItem._('alerts.triggered');
-  static const botidAnomaly = GetWebhooksResponseVariant1ItemEventsItem._('botid.anomaly');
-  static const budgetReached = GetWebhooksResponseVariant1ItemEventsItem._('budget.reached');
-  static const commentCreated = GetWebhooksResponseVariant1ItemEventsItem._('comment.created');
-  static const commentDeleted = GetWebhooksResponseVariant1ItemEventsItem._('comment.deleted');
-  static const commentMentioned = GetWebhooksResponseVariant1ItemEventsItem._('comment.mentioned');
-  static const commentReactionAdded = GetWebhooksResponseVariant1ItemEventsItem._('comment.reaction-added');
-  static const commentReactionRemoved = GetWebhooksResponseVariant1ItemEventsItem._('comment.reaction-removed');
-  static const commentResolved = GetWebhooksResponseVariant1ItemEventsItem._('comment.resolved');
-  static const commentUnresolved = GetWebhooksResponseVariant1ItemEventsItem._('comment.unresolved');
-  static const commentUpdated = GetWebhooksResponseVariant1ItemEventsItem._('comment.updated');
-  static const deployment = GetWebhooksResponseVariant1ItemEventsItem._('deployment');
-  static const deploymentCanceled = GetWebhooksResponseVariant1ItemEventsItem._('deployment-canceled');
-  static const deploymentCheckRerequested = GetWebhooksResponseVariant1ItemEventsItem._('deployment-check-rerequested');
-  static const deploymentChecksCompleted = GetWebhooksResponseVariant1ItemEventsItem._('deployment-checks-completed');
-  static const deploymentError = GetWebhooksResponseVariant1ItemEventsItem._('deployment-error');
-  static const deploymentPrepared = GetWebhooksResponseVariant1ItemEventsItem._('deployment-prepared');
-  static const deploymentReady = GetWebhooksResponseVariant1ItemEventsItem._('deployment-ready');
-  static const deploymentBlocked = GetWebhooksResponseVariant1ItemEventsItem._('deployment.blocked');
-  static const deploymentBuildRequested = GetWebhooksResponseVariant1ItemEventsItem._('deployment.build-requested');
-  static const deploymentCanceled2 = GetWebhooksResponseVariant1ItemEventsItem._('deployment.canceled');
-  static const deploymentCheckRerequested2 = GetWebhooksResponseVariant1ItemEventsItem._('deployment.check-rerequested');
-  static const deploymentCheckrunCancel = GetWebhooksResponseVariant1ItemEventsItem._('deployment.checkrun.cancel');
-  static const deploymentCheckrunStart = GetWebhooksResponseVariant1ItemEventsItem._('deployment.checkrun.start');
-  static const deploymentChecksFailed = GetWebhooksResponseVariant1ItemEventsItem._('deployment.checks.failed');
-  static const deploymentChecksSucceeded = GetWebhooksResponseVariant1ItemEventsItem._('deployment.checks.succeeded');
-  static const deploymentCleanup = GetWebhooksResponseVariant1ItemEventsItem._('deployment.cleanup');
-  static const deploymentCreated = GetWebhooksResponseVariant1ItemEventsItem._('deployment.created');
-  static const deploymentError2 = GetWebhooksResponseVariant1ItemEventsItem._('deployment.error');
-  static const deploymentIntegrationActionCancel = GetWebhooksResponseVariant1ItemEventsItem._('deployment.integration.action.cancel');
-  static const deploymentIntegrationActionCleanup = GetWebhooksResponseVariant1ItemEventsItem._('deployment.integration.action.cleanup');
-  static const deploymentIntegrationActionStart = GetWebhooksResponseVariant1ItemEventsItem._('deployment.integration.action.start');
-  static const deploymentPromoted = GetWebhooksResponseVariant1ItemEventsItem._('deployment.promoted');
-  static const deploymentReady2 = GetWebhooksResponseVariant1ItemEventsItem._('deployment.ready');
-  static const deploymentRollback = GetWebhooksResponseVariant1ItemEventsItem._('deployment.rollback');
-  static const deploymentSucceeded = GetWebhooksResponseVariant1ItemEventsItem._('deployment.succeeded');
-  static const domainCreated = GetWebhooksResponseVariant1ItemEventsItem._('domain-created');
-  static const domainAutoRenewChanged = GetWebhooksResponseVariant1ItemEventsItem._('domain.auto-renew.changed');
-  static const domainCertificateAdd = GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.add');
-  static const domainCertificateAddFailed = GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.add.failed');
-  static const domainCertificateDeleted = GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.deleted');
-  static const domainCertificateRenew = GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.renew');
-  static const domainCertificateRenewFailed = GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.renew.failed');
-  static const domainCreated2 = GetWebhooksResponseVariant1ItemEventsItem._('domain.created');
-  static const domainDnsRecordsChanged = GetWebhooksResponseVariant1ItemEventsItem._('domain.dns.records.changed');
-  static const domainRenewal = GetWebhooksResponseVariant1ItemEventsItem._('domain.renewal');
-  static const domainRenewalFailed = GetWebhooksResponseVariant1ItemEventsItem._('domain.renewal.failed');
-  static const domainTransferInCompleted = GetWebhooksResponseVariant1ItemEventsItem._('domain.transfer-in.completed');
-  static const domainTransferInFailed = GetWebhooksResponseVariant1ItemEventsItem._('domain.transfer-in.failed');
-  static const domainTransferInStarted = GetWebhooksResponseVariant1ItemEventsItem._('domain.transfer-in.started');
-  static const edgeConfigCreated = GetWebhooksResponseVariant1ItemEventsItem._('edge-config.created');
-  static const edgeConfigDeleted = GetWebhooksResponseVariant1ItemEventsItem._('edge-config.deleted');
-  static const edgeConfigItemsUpdated = GetWebhooksResponseVariant1ItemEventsItem._('edge-config.items.updated');
-  static const firewallAttack = GetWebhooksResponseVariant1ItemEventsItem._('firewall.attack');
-  static const firewallCustomRuleAnomaly = GetWebhooksResponseVariant1ItemEventsItem._('firewall.custom-rule-anomaly');
-  static const firewallSystemRuleAnomaly = GetWebhooksResponseVariant1ItemEventsItem._('firewall.system-rule-anomaly');
-  static const flagCreated = GetWebhooksResponseVariant1ItemEventsItem._('flag.created');
-  static const flagDeleted = GetWebhooksResponseVariant1ItemEventsItem._('flag.deleted');
-  static const flagSegmentCreated = GetWebhooksResponseVariant1ItemEventsItem._('flag.segment.created');
-  static const flagSegmentDeleted = GetWebhooksResponseVariant1ItemEventsItem._('flag.segment.deleted');
-  static const flagSegmentUpdated = GetWebhooksResponseVariant1ItemEventsItem._('flag.segment.updated');
-  static const flagUpdated = GetWebhooksResponseVariant1ItemEventsItem._('flag.updated');
-  static const functionArchivalRequired = GetWebhooksResponseVariant1ItemEventsItem._('function.archival-required');
-  static const functionRemovalRequired = GetWebhooksResponseVariant1ItemEventsItem._('function.removal-required');
-  static const integrationConfigurationPermissionUpdated = GetWebhooksResponseVariant1ItemEventsItem._('integration-configuration-permission-updated');
-  static const integrationConfigurationRemoved = GetWebhooksResponseVariant1ItemEventsItem._('integration-configuration-removed');
-  static const integrationConfigurationScopeChangeConfirmed = GetWebhooksResponseVariant1ItemEventsItem._('integration-configuration-scope-change-confirmed');
-  static const integrationConfigurationPermissionUpgraded = GetWebhooksResponseVariant1ItemEventsItem._('integration-configuration.permission-upgraded');
-  static const integrationConfigurationRemoved2 = GetWebhooksResponseVariant1ItemEventsItem._('integration-configuration.removed');
-  static const integrationConfigurationScopeChangeConfirmed2 = GetWebhooksResponseVariant1ItemEventsItem._('integration-configuration.scope-change-confirmed');
-  static const integrationConfigurationTransferred = GetWebhooksResponseVariant1ItemEventsItem._('integration-configuration.transferred');
-  static const integrationResourceProjectConnected = GetWebhooksResponseVariant1ItemEventsItem._('integration-resource.project-connected');
-  static const integrationResourceProjectDisconnected = GetWebhooksResponseVariant1ItemEventsItem._('integration-resource.project-disconnected');
-  static const marketplaceInvoiceCreated = GetWebhooksResponseVariant1ItemEventsItem._('marketplace.invoice.created');
-  static const marketplaceInvoiceNotpaid = GetWebhooksResponseVariant1ItemEventsItem._('marketplace.invoice.notpaid');
-  static const marketplaceInvoiceOverdue = GetWebhooksResponseVariant1ItemEventsItem._('marketplace.invoice.overdue');
-  static const marketplaceInvoicePaid = GetWebhooksResponseVariant1ItemEventsItem._('marketplace.invoice.paid');
-  static const marketplaceInvoiceRefunded = GetWebhooksResponseVariant1ItemEventsItem._('marketplace.invoice.refunded');
-  static const marketplaceMemberChanged = GetWebhooksResponseVariant1ItemEventsItem._('marketplace.member.changed');
-  static const messageCreated = GetWebhooksResponseVariant1ItemEventsItem._('message.created');
-  static const messageDeleted = GetWebhooksResponseVariant1ItemEventsItem._('message.deleted');
-  static const messageMentioned = GetWebhooksResponseVariant1ItemEventsItem._('message.mentioned');
-  static const messageReactionAdded = GetWebhooksResponseVariant1ItemEventsItem._('message.reaction-added');
-  static const messageReactionRemoved = GetWebhooksResponseVariant1ItemEventsItem._('message.reaction-removed');
-  static const messageUpdated = GetWebhooksResponseVariant1ItemEventsItem._('message.updated');
-  static const observabilityAnomaly = GetWebhooksResponseVariant1ItemEventsItem._('observability.anomaly');
-  static const observabilityAnomalyError = GetWebhooksResponseVariant1ItemEventsItem._('observability.anomaly-error');
-  static const observabilityErrorAnomaly = GetWebhooksResponseVariant1ItemEventsItem._('observability.error-anomaly');
-  static const observabilityUsageAnomaly = GetWebhooksResponseVariant1ItemEventsItem._('observability.usage-anomaly');
-  static const projectCreated = GetWebhooksResponseVariant1ItemEventsItem._('project-created');
-  static const projectRemoved = GetWebhooksResponseVariant1ItemEventsItem._('project-removed');
-  static const projectCreated2 = GetWebhooksResponseVariant1ItemEventsItem._('project.created');
-  static const projectDomainCreated = GetWebhooksResponseVariant1ItemEventsItem._('project.domain.created');
-  static const projectDomainDeleted = GetWebhooksResponseVariant1ItemEventsItem._('project.domain.deleted');
-  static const projectDomainMoved = GetWebhooksResponseVariant1ItemEventsItem._('project.domain.moved');
-  static const projectDomainUnverified = GetWebhooksResponseVariant1ItemEventsItem._('project.domain.unverified');
-  static const projectDomainUpdated = GetWebhooksResponseVariant1ItemEventsItem._('project.domain.updated');
-  static const projectDomainVerified = GetWebhooksResponseVariant1ItemEventsItem._('project.domain.verified');
-  static const projectEnvVariableCreated = GetWebhooksResponseVariant1ItemEventsItem._('project.env-variable.created');
-  static const projectEnvVariableDeleted = GetWebhooksResponseVariant1ItemEventsItem._('project.env-variable.deleted');
-  static const projectEnvVariableUpdated = GetWebhooksResponseVariant1ItemEventsItem._('project.env-variable.updated');
-  static const projectRemoved2 = GetWebhooksResponseVariant1ItemEventsItem._('project.removed');
-  static const projectRenamed = GetWebhooksResponseVariant1ItemEventsItem._('project.renamed');
-  static const projectRollingReleaseAborted = GetWebhooksResponseVariant1ItemEventsItem._('project.rolling-release.aborted');
-  static const projectRollingReleaseApproved = GetWebhooksResponseVariant1ItemEventsItem._('project.rolling-release.approved');
-  static const projectRollingReleaseCompleted = GetWebhooksResponseVariant1ItemEventsItem._('project.rolling-release.completed');
-  static const projectRollingReleaseStarted = GetWebhooksResponseVariant1ItemEventsItem._('project.rolling-release.started');
-  static const testWebhook = GetWebhooksResponseVariant1ItemEventsItem._('test-webhook');
-  static const threadResolved = GetWebhooksResponseVariant1ItemEventsItem._('thread.resolved');
-  static const threadUnresolved = GetWebhooksResponseVariant1ItemEventsItem._('thread.unresolved');
+  static const aiGatewayAutoReloadLimitReached =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'ai-gateway.auto-reload.limit-reached');
+  static const aiGatewayBalanceDepleted =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'ai-gateway.balance-depleted');
+  static const alertsTriggered =
+      GetWebhooksResponseVariant1ItemEventsItem._('alerts.triggered');
+  static const botidAnomaly =
+      GetWebhooksResponseVariant1ItemEventsItem._('botid.anomaly');
+  static const budgetReached =
+      GetWebhooksResponseVariant1ItemEventsItem._('budget.reached');
+  static const commentCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.created');
+  static const commentDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.deleted');
+  static const commentMentioned =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.mentioned');
+  static const commentReactionAdded =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.reaction-added');
+  static const commentReactionRemoved =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.reaction-removed');
+  static const commentResolved =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.resolved');
+  static const commentUnresolved =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.unresolved');
+  static const commentUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._('comment.updated');
+  static const deployment =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment');
+  static const deploymentCanceled =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment-canceled');
+  static const deploymentCheckRerequested =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'deployment-check-rerequested');
+  static const deploymentChecksCompleted =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'deployment-checks-completed');
+  static const deploymentError =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment-error');
+  static const deploymentPrepared =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment-prepared');
+  static const deploymentReady =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment-ready');
+  static const deploymentBlocked =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.blocked');
+  static const deploymentBuildRequested =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.build-requested');
+  static const deploymentCanceled2 =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.canceled');
+  static const deploymentCheckRerequested2 =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'deployment.check-rerequested');
+  static const deploymentCheckrunCancel =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.checkrun.cancel');
+  static const deploymentCheckrunStart =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.checkrun.start');
+  static const deploymentChecksFailed =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.checks.failed');
+  static const deploymentChecksSucceeded =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'deployment.checks.succeeded');
+  static const deploymentCleanup =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.cleanup');
+  static const deploymentCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.created');
+  static const deploymentError2 =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.error');
+  static const deploymentIntegrationActionCancel =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'deployment.integration.action.cancel');
+  static const deploymentIntegrationActionCleanup =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'deployment.integration.action.cleanup');
+  static const deploymentIntegrationActionStart =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'deployment.integration.action.start');
+  static const deploymentPromoted =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.promoted');
+  static const deploymentReady2 =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.ready');
+  static const deploymentRollback =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.rollback');
+  static const deploymentSucceeded =
+      GetWebhooksResponseVariant1ItemEventsItem._('deployment.succeeded');
+  static const domainCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain-created');
+  static const domainAutoRenewChanged =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.auto-renew.changed');
+  static const domainCertificateAdd =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.add');
+  static const domainCertificateAddFailed =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'domain.certificate.add.failed');
+  static const domainCertificateDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.deleted');
+  static const domainCertificateRenew =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.certificate.renew');
+  static const domainCertificateRenewFailed =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'domain.certificate.renew.failed');
+  static const domainCreated2 =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.created');
+  static const domainDnsRecordsChanged =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.dns.records.changed');
+  static const domainRenewal =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.renewal');
+  static const domainRenewalFailed =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.renewal.failed');
+  static const domainTransferInCompleted =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'domain.transfer-in.completed');
+  static const domainTransferInFailed =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.transfer-in.failed');
+  static const domainTransferInStarted =
+      GetWebhooksResponseVariant1ItemEventsItem._('domain.transfer-in.started');
+  static const edgeConfigCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('edge-config.created');
+  static const edgeConfigDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._('edge-config.deleted');
+  static const edgeConfigItemsUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._('edge-config.items.updated');
+  static const firewallAttack =
+      GetWebhooksResponseVariant1ItemEventsItem._('firewall.attack');
+  static const firewallCustomRuleAnomaly =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'firewall.custom-rule-anomaly');
+  static const firewallSystemRuleAnomaly =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'firewall.system-rule-anomaly');
+  static const flagCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('flag.created');
+  static const flagDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._('flag.deleted');
+  static const flagSegmentCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('flag.segment.created');
+  static const flagSegmentDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._('flag.segment.deleted');
+  static const flagSegmentUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._('flag.segment.updated');
+  static const flagUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._('flag.updated');
+  static const functionArchivalRequired =
+      GetWebhooksResponseVariant1ItemEventsItem._('function.archival-required');
+  static const functionRemovalRequired =
+      GetWebhooksResponseVariant1ItemEventsItem._('function.removal-required');
+  static const integrationConfigurationPermissionUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-configuration-permission-updated');
+  static const integrationConfigurationRemoved =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-configuration-removed');
+  static const integrationConfigurationScopeChangeConfirmed =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-configuration-scope-change-confirmed');
+  static const integrationConfigurationPermissionUpgraded =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-configuration.permission-upgraded');
+  static const integrationConfigurationRemoved2 =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-configuration.removed');
+  static const integrationConfigurationScopeChangeConfirmed2 =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-configuration.scope-change-confirmed');
+  static const integrationConfigurationTransferred =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-configuration.transferred');
+  static const integrationResourceProjectConnected =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-resource.project-connected');
+  static const integrationResourceProjectDisconnected =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'integration-resource.project-disconnected');
+  static const marketplaceInvoiceCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'marketplace.invoice.created');
+  static const marketplaceInvoiceNotpaid =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'marketplace.invoice.notpaid');
+  static const marketplaceInvoiceOverdue =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'marketplace.invoice.overdue');
+  static const marketplaceInvoicePaid =
+      GetWebhooksResponseVariant1ItemEventsItem._('marketplace.invoice.paid');
+  static const marketplaceInvoiceRefunded =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'marketplace.invoice.refunded');
+  static const marketplaceMemberChanged =
+      GetWebhooksResponseVariant1ItemEventsItem._('marketplace.member.changed');
+  static const messageCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('message.created');
+  static const messageDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._('message.deleted');
+  static const messageMentioned =
+      GetWebhooksResponseVariant1ItemEventsItem._('message.mentioned');
+  static const messageReactionAdded =
+      GetWebhooksResponseVariant1ItemEventsItem._('message.reaction-added');
+  static const messageReactionRemoved =
+      GetWebhooksResponseVariant1ItemEventsItem._('message.reaction-removed');
+  static const messageUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._('message.updated');
+  static const observabilityAnomaly =
+      GetWebhooksResponseVariant1ItemEventsItem._('observability.anomaly');
+  static const observabilityAnomalyError =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'observability.anomaly-error');
+  static const observabilityErrorAnomaly =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'observability.error-anomaly');
+  static const observabilityUsageAnomaly =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'observability.usage-anomaly');
+  static const projectCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('project-created');
+  static const projectRemoved =
+      GetWebhooksResponseVariant1ItemEventsItem._('project-removed');
+  static const projectCreated2 =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.created');
+  static const projectDomainCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.domain.created');
+  static const projectDomainDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.domain.deleted');
+  static const projectDomainMoved =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.domain.moved');
+  static const projectDomainUnverified =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.domain.unverified');
+  static const projectDomainUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.domain.updated');
+  static const projectDomainVerified =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.domain.verified');
+  static const projectEnvVariableCreated =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'project.env-variable.created');
+  static const projectEnvVariableDeleted =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'project.env-variable.deleted');
+  static const projectEnvVariableUpdated =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'project.env-variable.updated');
+  static const projectRemoved2 =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.removed');
+  static const projectRenamed =
+      GetWebhooksResponseVariant1ItemEventsItem._('project.renamed');
+  static const projectRollingReleaseAborted =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'project.rolling-release.aborted');
+  static const projectRollingReleaseApproved =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'project.rolling-release.approved');
+  static const projectRollingReleaseCompleted =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'project.rolling-release.completed');
+  static const projectRollingReleaseStarted =
+      GetWebhooksResponseVariant1ItemEventsItem._(
+          'project.rolling-release.started');
+  static const testWebhook =
+      GetWebhooksResponseVariant1ItemEventsItem._('test-webhook');
+  static const threadResolved =
+      GetWebhooksResponseVariant1ItemEventsItem._('thread.resolved');
+  static const threadUnresolved =
+      GetWebhooksResponseVariant1ItemEventsItem._('thread.unresolved');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is GetWebhooksResponseVariant1ItemEventsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is GetWebhooksResponseVariant1ItemEventsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

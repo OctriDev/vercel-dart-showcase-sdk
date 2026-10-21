@@ -17,25 +17,33 @@ Future<GetStorageStoresByIdResponse> getStorageStoresById(ClientConfig config,
           'GET', '/storage/stores/${Uri.encodeComponent(id.toString())}',
           config: config,
           query: {
-            'skip-metadata': SdkQueryValue(SdkUtils.unwrapOptional(skipMetadata), style: 'form', explode: true),
-            'include-guides': SdkQueryValue(SdkUtils.unwrapOptional(includeGuides), style: 'form', explode: true)
+            'skip-metadata': SdkQueryValue(
+                SdkUtils.unwrapOptional(skipMetadata),
+                style: 'form',
+                explode: true),
+            'include-guides': SdkQueryValue(
+                SdkUtils.unwrapOptional(includeGuides),
+                style: 'form',
+                explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getStorageStoresById',
-          fromJsonRaw: (value) => GetStorageStoresByIdResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetStorageStoresByIdResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
 
-
 /// Creates a Blob store with a name and optional region, access setting, and project association. Choose a supported region and set `access` to `public` or `private`; access defaults to public when omitted. The response includes the created store and its configuration.
-Future<CreateStorageStoresBlobResponse>
-    createStorageStoresBlob(ClientConfig config,
-        {required String name,
-        SdkOptional<CreateStorageStoresBlobRequestBodyRegion> region = const SdkOmitted(),
-        SdkOptional<CreateStorageStoresBlobRequestBodyAccess> access = const SdkOmitted(),
-        SdkOptional<String> projectId = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CreateStorageStoresBlobResponse> createStorageStoresBlob(
+    ClientConfig config,
+    {required String name,
+    SdkOptional<CreateStorageStoresBlobRequestBodyRegion> region =
+        const SdkOmitted(),
+    SdkOptional<CreateStorageStoresBlobRequestBodyAccess> access =
+        const SdkOmitted(),
+    SdkOptional<String> projectId = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   validateLength('name', name, max: 70);
   if (projectId is SdkPresent<String>) {
     validateLength('projectId', projectId.value, max: 50);
@@ -52,21 +60,24 @@ Future<CreateStorageStoresBlobResponse>
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'createStorageStoresBlob',
-          fromJsonRaw: (value) => CreateStorageStoresBlobResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateStorageStoresBlobResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
 
-
 /// Deletes a Blob store by its identifier. Use the returned identifier to confirm which store was deleted. The store must be accessible to the authenticated user.
-Future<DeleteStorageStoresBlobByIdResponse> deleteStorageStoresBlobById(ClientConfig config,
-    {required String id, RequestOptions? requestOptions}) async {
+Future<DeleteStorageStoresBlobByIdResponse> deleteStorageStoresBlobById(
+    ClientConfig config,
+    {required String id,
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<DeleteStorageStoresBlobByIdResponse>('DELETE',
           '/storage/stores/blob/${Uri.encodeComponent(id.toString())}',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteStorageStoresBlobById',
-          fromJsonRaw: (value) => DeleteStorageStoresBlobByIdResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => DeleteStorageStoresBlobByIdResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

@@ -8,6 +8,7 @@ class UpdateKmsIssuerPolicyResponseVariant0 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String createdAt;
+
   /// Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim.
   final List<String> environments;
   final UpdateKmsIssuerPolicyResponseVariant0Kind kind;
@@ -16,42 +17,91 @@ class UpdateKmsIssuerPolicyResponseVariant0 {
   final SdkOptional<Map<String, Object?>> tokenClaims;
   final String updatedAt;
 
-  const UpdateKmsIssuerPolicyResponseVariant0({required this.createdAt, required this.environments, required this.kind, required this.projectId, required this.teamId, this.tokenClaims = const SdkOmitted(), required this.updatedAt});
+  const UpdateKmsIssuerPolicyResponseVariant0(
+      {required this.createdAt,
+      required this.environments,
+      required this.kind,
+      required this.projectId,
+      required this.teamId,
+      this.tokenClaims = const SdkOmitted(),
+      required this.updatedAt});
 
-  UpdateKmsIssuerPolicyResponseVariant0 Function({String createdAt, List<String> environments, UpdateKmsIssuerPolicyResponseVariant0Kind kind, String projectId, String teamId, SdkOptional<Map<String, Object?>> tokenClaims, String updatedAt}) get copyWith => _copyWith;
+  UpdateKmsIssuerPolicyResponseVariant0 Function(
+      {String createdAt,
+      List<String> environments,
+      UpdateKmsIssuerPolicyResponseVariant0Kind kind,
+      String projectId,
+      String teamId,
+      SdkOptional<Map<String, Object?>> tokenClaims,
+      String updatedAt}) get copyWith => _copyWith;
 
-  UpdateKmsIssuerPolicyResponseVariant0 _copyWith({Object? createdAt = sdkOmittedValue, Object? environments = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? teamId = sdkOmittedValue, Object? tokenClaims = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateKmsIssuerPolicyResponseVariant0(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    environments: identical(environments, sdkOmittedValue) ? this.environments : environments as List<String>,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateKmsIssuerPolicyResponseVariant0Kind,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    teamId: identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
-    tokenClaims: identical(tokenClaims, sdkOmittedValue) ? this.tokenClaims : tokenClaims as SdkOptional<Map<String, Object?>>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-  );
+  UpdateKmsIssuerPolicyResponseVariant0 _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? environments = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? teamId = sdkOmittedValue,
+          Object? tokenClaims = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UpdateKmsIssuerPolicyResponseVariant0(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        environments: identical(environments, sdkOmittedValue)
+            ? this.environments
+            : environments as List<String>,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as UpdateKmsIssuerPolicyResponseVariant0Kind,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        teamId:
+            identical(teamId, sdkOmittedValue) ? this.teamId : teamId as String,
+        tokenClaims: identical(tokenClaims, sdkOmittedValue)
+            ? this.tokenClaims
+            : tokenClaims as SdkOptional<Map<String, Object?>>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+      );
 
-  factory UpdateKmsIssuerPolicyResponseVariant0.fromJson(Map<String, dynamic> json) => UpdateKmsIssuerPolicyResponseVariant0(
-    createdAt: (json['createdAt'] as String?)!,
-    environments: ((json['environments'] as List?)?.map((e) => e as String).toList())!,
-    kind: (json['kind'] != null ? UpdateKmsIssuerPolicyResponseVariant0Kind.fromJson(json['kind'] as String) : null)!,
-    projectId: (json['projectId'] as String?)!,
-    teamId: (json['teamId'] as String?)!,
-    tokenClaims: json['tokenClaims'] != null ? SdkPresent((json['tokenClaims'] == null ? null : Map<String, dynamic>.from(json['tokenClaims'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
-    updatedAt: (json['updatedAt'] as String?)!,
-  );
+  factory UpdateKmsIssuerPolicyResponseVariant0.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateKmsIssuerPolicyResponseVariant0(
+        createdAt: (json['createdAt'] as String?)!,
+        environments: ((json['environments'] as List?)
+            ?.map((e) => e as String)
+            .toList())!,
+        kind: (json['kind'] != null
+            ? UpdateKmsIssuerPolicyResponseVariant0Kind.fromJson(
+                json['kind'] as String)
+            : null)!,
+        projectId: (json['projectId'] as String?)!,
+        teamId: (json['teamId'] as String?)!,
+        tokenClaims: json['tokenClaims'] != null
+            ? SdkPresent((json['tokenClaims'] == null
+                ? null
+                : Map<String, dynamic>.from(json['tokenClaims'] as Map)
+                    .map((key, value) => MapEntry(key, value)))!)
+            : const SdkOmitted(),
+        updatedAt: (json['updatedAt'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'environments': environments,
-    'kind': kind.toJson(),
-    'projectId': projectId,
-    'teamId': teamId,
-    ...switch (tokenClaims) {
-      SdkPresent<Map<String, Object?>>(value: final value) => {'tokenClaims': value,},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-  };
+        'createdAt': createdAt,
+        'environments': environments,
+        'kind': kind.toJson(),
+        'projectId': projectId,
+        'teamId': teamId,
+        ...switch (tokenClaims) {
+          SdkPresent<Map<String, Object?>>(value: final value) => {
+              'tokenClaims': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+      };
 }
 
 class UpdateKmsIssuerPolicyResponseVariant1 {
@@ -63,36 +113,74 @@ class UpdateKmsIssuerPolicyResponseVariant1 {
   final SdkOptional<Map<String, Object?>> tokenClaims;
   final String updatedAt;
 
-  const UpdateKmsIssuerPolicyResponseVariant1({required this.clientId, required this.createdAt, required this.kind, this.tokenClaims = const SdkOmitted(), required this.updatedAt});
+  const UpdateKmsIssuerPolicyResponseVariant1(
+      {required this.clientId,
+      required this.createdAt,
+      required this.kind,
+      this.tokenClaims = const SdkOmitted(),
+      required this.updatedAt});
 
-  UpdateKmsIssuerPolicyResponseVariant1 Function({String clientId, String createdAt, UpdateKmsIssuerPolicyResponseVariant1Kind kind, SdkOptional<Map<String, Object?>> tokenClaims, String updatedAt}) get copyWith => _copyWith;
+  UpdateKmsIssuerPolicyResponseVariant1 Function(
+      {String clientId,
+      String createdAt,
+      UpdateKmsIssuerPolicyResponseVariant1Kind kind,
+      SdkOptional<Map<String, Object?>> tokenClaims,
+      String updatedAt}) get copyWith => _copyWith;
 
-  UpdateKmsIssuerPolicyResponseVariant1 _copyWith({Object? clientId = sdkOmittedValue, Object? createdAt = sdkOmittedValue, Object? kind = sdkOmittedValue, Object? tokenClaims = sdkOmittedValue, Object? updatedAt = sdkOmittedValue}) => UpdateKmsIssuerPolicyResponseVariant1(
-    clientId: identical(clientId, sdkOmittedValue) ? this.clientId : clientId as String,
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as String,
-    kind: identical(kind, sdkOmittedValue) ? this.kind : kind as UpdateKmsIssuerPolicyResponseVariant1Kind,
-    tokenClaims: identical(tokenClaims, sdkOmittedValue) ? this.tokenClaims : tokenClaims as SdkOptional<Map<String, Object?>>,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as String,
-  );
+  UpdateKmsIssuerPolicyResponseVariant1 _copyWith(
+          {Object? clientId = sdkOmittedValue,
+          Object? createdAt = sdkOmittedValue,
+          Object? kind = sdkOmittedValue,
+          Object? tokenClaims = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue}) =>
+      UpdateKmsIssuerPolicyResponseVariant1(
+        clientId: identical(clientId, sdkOmittedValue)
+            ? this.clientId
+            : clientId as String,
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as String,
+        kind: identical(kind, sdkOmittedValue)
+            ? this.kind
+            : kind as UpdateKmsIssuerPolicyResponseVariant1Kind,
+        tokenClaims: identical(tokenClaims, sdkOmittedValue)
+            ? this.tokenClaims
+            : tokenClaims as SdkOptional<Map<String, Object?>>,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as String,
+      );
 
-  factory UpdateKmsIssuerPolicyResponseVariant1.fromJson(Map<String, dynamic> json) => UpdateKmsIssuerPolicyResponseVariant1(
-    clientId: (json['clientId'] as String?)!,
-    createdAt: (json['createdAt'] as String?)!,
-    kind: (json['kind'] != null ? UpdateKmsIssuerPolicyResponseVariant1Kind.fromJson(json['kind'] as String) : null)!,
-    tokenClaims: json['tokenClaims'] != null ? SdkPresent((json['tokenClaims'] == null ? null : Map<String, dynamic>.from(json['tokenClaims'] as Map).map((key, value) => MapEntry(key, value)))!) : const SdkOmitted(),
-    updatedAt: (json['updatedAt'] as String?)!,
-  );
+  factory UpdateKmsIssuerPolicyResponseVariant1.fromJson(
+          Map<String, dynamic> json) =>
+      UpdateKmsIssuerPolicyResponseVariant1(
+        clientId: (json['clientId'] as String?)!,
+        createdAt: (json['createdAt'] as String?)!,
+        kind: (json['kind'] != null
+            ? UpdateKmsIssuerPolicyResponseVariant1Kind.fromJson(
+                json['kind'] as String)
+            : null)!,
+        tokenClaims: json['tokenClaims'] != null
+            ? SdkPresent((json['tokenClaims'] == null
+                ? null
+                : Map<String, dynamic>.from(json['tokenClaims'] as Map)
+                    .map((key, value) => MapEntry(key, value)))!)
+            : const SdkOmitted(),
+        updatedAt: (json['updatedAt'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'clientId': clientId,
-    'createdAt': createdAt,
-    'kind': kind.toJson(),
-    ...switch (tokenClaims) {
-      SdkPresent<Map<String, Object?>>(value: final value) => {'tokenClaims': value,},
-      _ => const <String, dynamic>{},
-    },
-    'updatedAt': updatedAt,
-  };
+        'clientId': clientId,
+        'createdAt': createdAt,
+        'kind': kind.toJson(),
+        ...switch (tokenClaims) {
+          SdkPresent<Map<String, Object?>>(value: final value) => {
+              'tokenClaims': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'updatedAt': updatedAt,
+      };
 }
 
 sealed class UpdateKmsIssuerPolicyResponse {
@@ -101,24 +189,51 @@ sealed class UpdateKmsIssuerPolicyResponse {
   const UpdateKmsIssuerPolicyResponse();
   factory UpdateKmsIssuerPolicyResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = UpdateKmsIssuerPolicyResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0(value); } } catch (_) {}
-      try { final value = UpdateKmsIssuerPolicyResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = UpdateKmsIssuerPolicyResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0(
+              value);
+        }
+      } catch (_) {}
+      try {
+        final value = UpdateKmsIssuerPolicyResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1(
+              value);
+        }
+      } catch (_) {}
     }
-    try { return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0(UpdateKmsIssuerPolicyResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1(UpdateKmsIssuerPolicyResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    throw FormatException("No variant matched for UpdateKmsIssuerPolicyResponse");
+    try {
+      return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0(
+          UpdateKmsIssuerPolicyResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1(
+          UpdateKmsIssuerPolicyResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    throw FormatException(
+        "No variant matched for UpdateKmsIssuerPolicyResponse");
   }
   Object? toJson();
 }
 
-final class UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0 extends UpdateKmsIssuerPolicyResponse {
+final class UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0
+    extends UpdateKmsIssuerPolicyResponse {
   final UpdateKmsIssuerPolicyResponseVariant0 value;
-  const UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant0(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1 extends UpdateKmsIssuerPolicyResponse {
+final class UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1
+    extends UpdateKmsIssuerPolicyResponse {
   final UpdateKmsIssuerPolicyResponseVariant1 value;
-  const UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  const UpdateKmsIssuerPolicyResponseUpdateKmsIssuerPolicyResponseVariant1(
+      this.value);
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -11,27 +11,41 @@ class ListAuthTokensResponseVariant0Pagination {
   final String? next;
   final String? prev;
 
-  const ListAuthTokensResponseVariant0Pagination({required this.count, required this.next, required this.prev});
+  const ListAuthTokensResponseVariant0Pagination(
+      {required this.count, required this.next, required this.prev});
 
-  ListAuthTokensResponseVariant0Pagination Function({double count, String? next, String? prev}) get copyWith => _copyWith;
+  ListAuthTokensResponseVariant0Pagination Function(
+      {double count, String? next, String? prev}) get copyWith => _copyWith;
 
-  ListAuthTokensResponseVariant0Pagination _copyWith({Object? count = sdkOmittedValue, Object? next = sdkOmittedValue, Object? prev = sdkOmittedValue}) => ListAuthTokensResponseVariant0Pagination(
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    next: identical(next, sdkOmittedValue) ? this.next : next as String?,
-    prev: identical(prev, sdkOmittedValue) ? this.prev : prev as String?,
-  );
+  ListAuthTokensResponseVariant0Pagination _copyWith(
+          {Object? count = sdkOmittedValue,
+          Object? next = sdkOmittedValue,
+          Object? prev = sdkOmittedValue}) =>
+      ListAuthTokensResponseVariant0Pagination(
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        next: identical(next, sdkOmittedValue) ? this.next : next as String?,
+        prev: identical(prev, sdkOmittedValue) ? this.prev : prev as String?,
+      );
 
-  factory ListAuthTokensResponseVariant0Pagination.fromJson(Map<String, dynamic> json) => ListAuthTokensResponseVariant0Pagination(
-    count: ((json['count'] as num?)?.toDouble())!,
-    next: json.containsKey('next') ? json['next'] as String? : throw ArgumentError.value(null, 'next', 'Required property is missing'),
-    prev: json.containsKey('prev') ? json['prev'] as String? : throw ArgumentError.value(null, 'prev', 'Required property is missing'),
-  );
+  factory ListAuthTokensResponseVariant0Pagination.fromJson(
+          Map<String, dynamic> json) =>
+      ListAuthTokensResponseVariant0Pagination(
+        count: ((json['count'] as num?)?.toDouble())!,
+        next: json.containsKey('next')
+            ? json['next'] as String?
+            : throw ArgumentError.value(
+                null, 'next', 'Required property is missing'),
+        prev: json.containsKey('prev')
+            ? json['prev'] as String?
+            : throw ArgumentError.value(
+                null, 'prev', 'Required property is missing'),
+      );
 
   Map<String, dynamic> toJson() => {
-    'count': count,
-    'next': next,
-    'prev': prev,
-  };
+        'count': count,
+        'next': next,
+        'prev': prev,
+      };
 }
 
 class ListAuthTokensResponseVariant0 {
@@ -40,51 +54,83 @@ class ListAuthTokensResponseVariant0 {
   final ListAuthTokensResponseVariant0Pagination pagination;
   final List<AuthToken> tokens;
 
-  const ListAuthTokensResponseVariant0({required this.pagination, required this.tokens});
+  const ListAuthTokensResponseVariant0(
+      {required this.pagination, required this.tokens});
 
-  ListAuthTokensResponseVariant0 Function({ListAuthTokensResponseVariant0Pagination pagination, List<AuthToken> tokens}) get copyWith => _copyWith;
+  ListAuthTokensResponseVariant0 Function(
+      {ListAuthTokensResponseVariant0Pagination pagination,
+      List<AuthToken> tokens}) get copyWith => _copyWith;
 
-  ListAuthTokensResponseVariant0 _copyWith({Object? pagination = sdkOmittedValue, Object? tokens = sdkOmittedValue}) => ListAuthTokensResponseVariant0(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as ListAuthTokensResponseVariant0Pagination,
-    tokens: identical(tokens, sdkOmittedValue) ? this.tokens : tokens as List<AuthToken>,
-  );
+  ListAuthTokensResponseVariant0 _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? tokens = sdkOmittedValue}) =>
+      ListAuthTokensResponseVariant0(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as ListAuthTokensResponseVariant0Pagination,
+        tokens: identical(tokens, sdkOmittedValue)
+            ? this.tokens
+            : tokens as List<AuthToken>,
+      );
 
-  factory ListAuthTokensResponseVariant0.fromJson(Map<String, dynamic> json) => ListAuthTokensResponseVariant0(
-    pagination: (json['pagination'] != null ? ListAuthTokensResponseVariant0Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-    tokens: ((json['tokens'] as List?)?.map((e) => AuthToken.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListAuthTokensResponseVariant0.fromJson(Map<String, dynamic> json) =>
+      ListAuthTokensResponseVariant0(
+        pagination: (json['pagination'] != null
+            ? ListAuthTokensResponseVariant0Pagination.fromJson(
+                json['pagination'] as Map<String, dynamic>)
+            : null)!,
+        tokens: ((json['tokens'] as List?)
+            ?.map((e) => AuthToken.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pagination': pagination.toJson(),
-    'tokens': tokens.map((item) => item.toJson()).toList(),
-  };
+        'pagination': pagination.toJson(),
+        'tokens': tokens.map((item) => item.toJson()).toList(),
+      };
 }
 
 class ListAuthTokensResponseVariant1 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
   final Pagination pagination;
   final List<AuthToken> tokens;
 
-  const ListAuthTokensResponseVariant1({required this.pagination, required this.tokens});
+  const ListAuthTokensResponseVariant1(
+      {required this.pagination, required this.tokens});
 
-  ListAuthTokensResponseVariant1 Function({Pagination pagination, List<AuthToken> tokens}) get copyWith => _copyWith;
+  ListAuthTokensResponseVariant1 Function(
+      {Pagination pagination,
+      List<AuthToken> tokens}) get copyWith => _copyWith;
 
-  ListAuthTokensResponseVariant1 _copyWith({Object? pagination = sdkOmittedValue, Object? tokens = sdkOmittedValue}) => ListAuthTokensResponseVariant1(
-    pagination: identical(pagination, sdkOmittedValue) ? this.pagination : pagination as Pagination,
-    tokens: identical(tokens, sdkOmittedValue) ? this.tokens : tokens as List<AuthToken>,
-  );
+  ListAuthTokensResponseVariant1 _copyWith(
+          {Object? pagination = sdkOmittedValue,
+          Object? tokens = sdkOmittedValue}) =>
+      ListAuthTokensResponseVariant1(
+        pagination: identical(pagination, sdkOmittedValue)
+            ? this.pagination
+            : pagination as Pagination,
+        tokens: identical(tokens, sdkOmittedValue)
+            ? this.tokens
+            : tokens as List<AuthToken>,
+      );
 
-  factory ListAuthTokensResponseVariant1.fromJson(Map<String, dynamic> json) => ListAuthTokensResponseVariant1(
-    pagination: (json['pagination'] != null ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>) : null)!,
-    tokens: ((json['tokens'] as List?)?.map((e) => AuthToken.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory ListAuthTokensResponseVariant1.fromJson(Map<String, dynamic> json) =>
+      ListAuthTokensResponseVariant1(
+        pagination: (json['pagination'] != null
+            ? Pagination.fromJson(json['pagination'] as Map<String, dynamic>)
+            : null)!,
+        tokens: ((json['tokens'] as List?)
+            ?.map((e) => AuthToken.fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'pagination': pagination.toJson(),
-    'tokens': tokens.map((item) => item.toJson()).toList(),
-  };
+        'pagination': pagination.toJson(),
+        'tokens': tokens.map((item) => item.toJson()).toList(),
+      };
 }
 
 sealed class ListAuthTokensResponse {
@@ -93,24 +139,46 @@ sealed class ListAuthTokensResponse {
   const ListAuthTokensResponse();
   factory ListAuthTokensResponse.fromJson(Object? json) {
     if (json is Map<String, dynamic>) {
-      try { final value = ListAuthTokensResponseVariant0.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListAuthTokensResponseListAuthTokensResponseVariant0(value); } } catch (_) {}
-      try { final value = ListAuthTokensResponseVariant1.fromJson(json); if (sdkKeepsEveryKey(json, value.toJson())) { return ListAuthTokensResponseListAuthTokensResponseVariant1(value); } } catch (_) {}
+      try {
+        final value = ListAuthTokensResponseVariant0.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListAuthTokensResponseListAuthTokensResponseVariant0(value);
+        }
+      } catch (_) {}
+      try {
+        final value = ListAuthTokensResponseVariant1.fromJson(json);
+        if (sdkKeepsEveryKey(json, value.toJson())) {
+          return ListAuthTokensResponseListAuthTokensResponseVariant1(value);
+        }
+      } catch (_) {}
     }
-    try { return ListAuthTokensResponseListAuthTokensResponseVariant0(ListAuthTokensResponseVariant0.fromJson(json as Map<String, dynamic>)); } catch (_) {}
-    try { return ListAuthTokensResponseListAuthTokensResponseVariant1(ListAuthTokensResponseVariant1.fromJson(json as Map<String, dynamic>)); } catch (_) {}
+    try {
+      return ListAuthTokensResponseListAuthTokensResponseVariant0(
+          ListAuthTokensResponseVariant0.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
+    try {
+      return ListAuthTokensResponseListAuthTokensResponseVariant1(
+          ListAuthTokensResponseVariant1.fromJson(
+              json as Map<String, dynamic>));
+    } catch (_) {}
     throw FormatException("No variant matched for ListAuthTokensResponse");
   }
   Object? toJson();
 }
 
-final class ListAuthTokensResponseListAuthTokensResponseVariant0 extends ListAuthTokensResponse {
+final class ListAuthTokensResponseListAuthTokensResponseVariant0
+    extends ListAuthTokensResponse {
   final ListAuthTokensResponseVariant0 value;
   const ListAuthTokensResponseListAuthTokensResponseVariant0(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }
 
-final class ListAuthTokensResponseListAuthTokensResponseVariant1 extends ListAuthTokensResponse {
+final class ListAuthTokensResponseListAuthTokensResponseVariant1
+    extends ListAuthTokensResponse {
   final ListAuthTokensResponseVariant1 value;
   const ListAuthTokensResponseListAuthTokensResponseVariant1(this.value);
-  @override Object? toJson() => value.toJson();
+  @override
+  Object? toJson() => value.toJson();
 }

@@ -9,34 +9,39 @@ import '../types.dart';
 /// Replaces the DNS records associated with a domain. Use this operation when you need to stage a replacement set of records rather than update one record individually. The response returns the identifiers of the records involved.
 ///
 /// [domain] The domain name
-Future<ReplaceDomainsByDomainRecordsResponse> replaceDomainsByDomainRecords(ClientConfig config,
-    {required String domain, RequestOptions? requestOptions}) async {
+Future<ReplaceDomainsByDomainRecordsResponse> replaceDomainsByDomainRecords(
+    ClientConfig config,
+    {required String domain,
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<ReplaceDomainsByDomainRecordsResponse>(
           'PUT', '/domains/${Uri.encodeComponent(domain.toString())}/records',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'replaceDomainsByDomainRecords',
-          fromJsonRaw: (value) => ReplaceDomainsByDomainRecordsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ReplaceDomainsByDomainRecordsResponse.fromJson(
+                  value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
 
-
 /// Retrieves a DNS record by its unique identifier. Use this operation to inspect the record's domain, name, type, value, and other available properties. The response contains the requested record.
 ///
 /// [recordId] The unique ID of the DNS record
-Future<GetDomainsRecordsByRecordIdResponse> getDomainsRecordsByRecordId(ClientConfig config,
-    {required String recordId, RequestOptions? requestOptions}) async {
+Future<GetDomainsRecordsByRecordIdResponse> getDomainsRecordsByRecordId(
+    ClientConfig config,
+    {required String recordId,
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetDomainsRecordsByRecordIdResponse>(
           'GET', '/domains/records/${Uri.encodeComponent(recordId.toString())}',
           config: config,
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainsRecordsByRecordId',
-          fromJsonRaw: (value) => GetDomainsRecordsByRecordIdResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDomainsRecordsByRecordIdResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves configuration information for a domain, including its detected configuration and recommended DNS values. Use `projectIdOrName` to associate a domain that is not yet linked to a project, and `strict` to control whether the response includes only nameservers assigned directly to the domain. The response also indicates supported certificate challenges and whether the domain is misconfigured.
 ///
@@ -62,18 +67,24 @@ Future<GetDomainConfigResponse> getDomainConfig(ClientConfig config,
           'GET', '/v6/domains/${Uri.encodeComponent(domain.toString())}/config',
           config: config,
           query: {
-            'projectIdOrName': SdkQueryValue(SdkUtils.unwrapOptional(projectIdOrName), style: 'form', explode: true),
-            'strict': SdkQueryValue(SdkUtils.unwrapOptional(strict), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'projectIdOrName': SdkQueryValue(
+                SdkUtils.unwrapOptional(projectIdOrName),
+                style: 'form',
+                explode: true),
+            'strict': SdkQueryValue(SdkUtils.unwrapOptional(strict),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainConfig',
-          fromJsonRaw: (value) => GetDomainConfigResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetDomainConfigResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves the TXT record needed to verify ownership of a domain for the authenticated user's team. Add the returned record to `_vercel.{domain}` in your DNS configuration before completing the ownership claim. Then call POST /domains/:domain/claim to transfer ownership.
 ///
@@ -82,26 +93,28 @@ Future<GetDomainConfigResponse> getDomainConfig(ClientConfig config,
 /// [domain] The domain name to get the verification record for
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetDomainVerificationRecordResponse>
-    getDomainVerificationRecord(ClientConfig config,
-        {required String domain,
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<GetDomainVerificationRecordResponse> getDomainVerificationRecord(
+    ClientConfig config,
+    {required String domain,
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetDomainVerificationRecordResponse>('GET',
           '/v9/domains/${Uri.encodeComponent(domain.toString())}/verification',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainVerificationRecord',
-          fromJsonRaw: (value) => GetDomainVerificationRecordResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDomainVerificationRecordResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Claims ownership of a domain for the authenticated user's team by verifying a TXT record. First add the record returned by GET /domains/:domain/verification to `_vercel.{domain}` in your DNS configuration. Once verified, ownership transfers to your team even if another user or team currently owns the domain.
 ///
@@ -119,16 +132,18 @@ Future<ClaimDomainOwnershipResponse> claimDomainOwnership(ClientConfig config,
           'POST', '/v9/domains/${Uri.encodeComponent(domain.toString())}/claim',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'claimDomainOwnership',
-          fromJsonRaw: (value) => ClaimDomainOwnershipResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => ClaimDomainOwnershipResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists project domains associated with an apex domain owned by the authenticated user's account. Use `limit` to control the maximum number of results and `since` or `until` to filter by creation time using JavaScript timestamps. The response includes pagination metadata and the matching project domains.
 ///
@@ -140,32 +155,37 @@ Future<ClaimDomainOwnershipResponse> claimDomainOwnership(ClientConfig config,
 /// [until] Get project domains created before this JavaScript timestamp.
 /// [teamId] The Team identifier to perform the request on behalf of.
 /// [slug] The Team slug to perform the request on behalf of.
-Future<GetDomainProjectDomainsResponse>
-    getDomainProjectDomains(ClientConfig config,
-        {required String domain,
-        SdkOptional<double> limit = const SdkOmitted(),
-        SdkOptional<double> since = const SdkOmitted(),
-        SdkOptional<double> until = const SdkOmitted(),
-        SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<GetDomainProjectDomainsResponse> getDomainProjectDomains(
+    ClientConfig config,
+    {required String domain,
+    SdkOptional<double> limit = const SdkOmitted(),
+    SdkOptional<double> since = const SdkOmitted(),
+    SdkOptional<double> until = const SdkOmitted(),
+    SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<GetDomainProjectDomainsResponse>('GET',
           '/v1/domains/${Uri.encodeComponent(domain.toString())}/project-domains',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
+                style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomainProjectDomains',
-          fromJsonRaw: (value) => GetDomainProjectDomainsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => GetDomainProjectDomainsResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Retrieves information about a domain registered to an account or team. Use `teamId` or `slug` to make the request on behalf of a team.
 ///
@@ -183,16 +203,18 @@ Future<GetDomainsResponse> getDomains(ClientConfig config,
           'GET', '/v5/domains/${Uri.encodeComponent(domain.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'getDomains',
-          fromJsonRaw: (value) => GetDomainsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              GetDomainsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Lists domains registered to the authenticated user or team. Use `since` and `until` to filter by creation time, and `limit` to control the number of domains returned; the response includes pagination metadata.
 ///
@@ -213,19 +235,24 @@ Future<ListDomainsResponse> listDomains(ClientConfig config,
   return (await sdkRequest<ListDomainsResponse>('GET', '/v5/domains',
           config: config,
           query: {
-            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit), style: 'form', explode: true),
-            'since': SdkQueryValue(SdkUtils.unwrapOptional(since), style: 'form', explode: true),
-            'until': SdkQueryValue(SdkUtils.unwrapOptional(until), style: 'form', explode: true),
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'limit': SdkQueryValue(SdkUtils.unwrapOptional(limit),
+                style: 'form', explode: true),
+            'since': SdkQueryValue(SdkUtils.unwrapOptional(since),
+                style: 'form', explode: true),
+            'until': SdkQueryValue(SdkUtils.unwrapOptional(until),
+                style: 'form', explode: true),
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'listDomains',
-          fromJsonRaw: (value) => ListDomainsResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              ListDomainsResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Adds an apex domain to the authenticated user's account or team. Supply `name` and use the `method` field to select the add or move-in operation; a move-in request can also include its transfer token. Use the transfer-in endpoint for transfers from external registrars.
 ///
@@ -235,27 +262,29 @@ Future<ListDomainsResponse> listDomains(ClientConfig config,
 /// [slug] The Team slug to perform the request on behalf of.
 /// [method] The domain operation to perform. It can be either `add` or
 ///   `move-in`.
-Future<CreateOrTransferDomainResponse>
-    createOrTransferDomain(ClientConfig config,
-        {SdkOptional<String> teamId = const SdkOmitted(),
-        SdkOptional<String> slug = const SdkOmitted(),
-        SdkOptional<String> method = const SdkOmitted(),
-        RequestOptions? requestOptions}) async {
+Future<CreateOrTransferDomainResponse> createOrTransferDomain(
+    ClientConfig config,
+    {SdkOptional<String> teamId = const SdkOmitted(),
+    SdkOptional<String> slug = const SdkOmitted(),
+    SdkOptional<String> method = const SdkOmitted(),
+    RequestOptions? requestOptions}) async {
   return (await sdkRequest<CreateOrTransferDomainResponse>(
           'POST', '/v7/domains',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: {'method': SdkUtils.unwrapOptional(method)},
           decoder: SdkResponseDecoder.json,
           operationId: 'createOrTransferDomain',
-          fromJsonRaw: (value) => CreateOrTransferDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) => CreateOrTransferDomainResponse.fromJson(
+              value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }
-
 
 /// Updates settings for an apex domain or moves the domain to another user or team. Use the update operation for domain settings, or the move-out operation to specify a `destination`; use the dedicated registrar endpoints to change auto-renew or nameservers.
 ///
@@ -273,8 +302,10 @@ Future<UpdateDomainsResponse> updateDomains(ClientConfig config,
           'PATCH', '/v3/domains/${Uri.encodeComponent(domain.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           body: body,
           decoder: SdkResponseDecoder.json,
@@ -283,7 +314,6 @@ Future<UpdateDomainsResponse> updateDomains(ClientConfig config,
           options: requestOptions))
       .data;
 }
-
 
 /// Deletes a registered domain from Vercel. Use `domain` to identify the domain to remove; deleting it also removes any aliases associated with it.
 ///
@@ -301,12 +331,15 @@ Future<DeleteDomainResponse> deleteDomain(ClientConfig config,
           'DELETE', '/v6/domains/${Uri.encodeComponent(domain.toString())}',
           config: config,
           query: {
-            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId), style: 'form', explode: true),
-            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug), style: 'form', explode: true)
+            'teamId': SdkQueryValue(SdkUtils.unwrapOptional(teamId),
+                style: 'form', explode: true),
+            'slug': SdkQueryValue(SdkUtils.unwrapOptional(slug),
+                style: 'form', explode: true)
           },
           decoder: SdkResponseDecoder.json,
           operationId: 'deleteDomain',
-          fromJsonRaw: (value) => DeleteDomainResponse.fromJson(value as Map<String, dynamic>),
+          fromJsonRaw: (value) =>
+              DeleteDomainResponse.fromJson(value as Map<String, dynamic>),
           options: requestOptions))
       .data;
 }

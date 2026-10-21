@@ -8,37 +8,62 @@ part of 'sandboxes.dart';
 class NamedSandboxKeepLastSnapshots {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Number of most recent snapshots to keep.
   final double count;
+
   /// Whether to immediately delete evicted snapshots.
   final NamedSandboxKeepLastSnapshotsDeleteEvicted deleteEvicted;
+
   /// Expiration time in milliseconds for kept snapshots.
   final SdkOptional<double> expiration;
 
-  const NamedSandboxKeepLastSnapshots({required this.count, required this.deleteEvicted, this.expiration = const SdkOmitted()});
+  const NamedSandboxKeepLastSnapshots(
+      {required this.count,
+      required this.deleteEvicted,
+      this.expiration = const SdkOmitted()});
 
-  NamedSandboxKeepLastSnapshots Function({double count, NamedSandboxKeepLastSnapshotsDeleteEvicted deleteEvicted, SdkOptional<double> expiration}) get copyWith => _copyWith;
+  NamedSandboxKeepLastSnapshots Function(
+      {double count,
+      NamedSandboxKeepLastSnapshotsDeleteEvicted deleteEvicted,
+      SdkOptional<double> expiration}) get copyWith => _copyWith;
 
-  NamedSandboxKeepLastSnapshots _copyWith({Object? count = sdkOmittedValue, Object? deleteEvicted = sdkOmittedValue, Object? expiration = sdkOmittedValue}) => NamedSandboxKeepLastSnapshots(
-    count: identical(count, sdkOmittedValue) ? this.count : count as double,
-    deleteEvicted: identical(deleteEvicted, sdkOmittedValue) ? this.deleteEvicted : deleteEvicted as NamedSandboxKeepLastSnapshotsDeleteEvicted,
-    expiration: identical(expiration, sdkOmittedValue) ? this.expiration : expiration as SdkOptional<double>,
-  );
+  NamedSandboxKeepLastSnapshots _copyWith(
+          {Object? count = sdkOmittedValue,
+          Object? deleteEvicted = sdkOmittedValue,
+          Object? expiration = sdkOmittedValue}) =>
+      NamedSandboxKeepLastSnapshots(
+        count: identical(count, sdkOmittedValue) ? this.count : count as double,
+        deleteEvicted: identical(deleteEvicted, sdkOmittedValue)
+            ? this.deleteEvicted
+            : deleteEvicted as NamedSandboxKeepLastSnapshotsDeleteEvicted,
+        expiration: identical(expiration, sdkOmittedValue)
+            ? this.expiration
+            : expiration as SdkOptional<double>,
+      );
 
-  factory NamedSandboxKeepLastSnapshots.fromJson(Map<String, dynamic> json) => NamedSandboxKeepLastSnapshots(
-    count: ((json['count'] as num?)?.toDouble())!,
-    deleteEvicted: (json['deleteEvicted'] != null ? NamedSandboxKeepLastSnapshotsDeleteEvicted.fromJson(json['deleteEvicted'] as bool) : null)!,
-    expiration: json['expiration'] != null ? SdkPresent(((json['expiration'] as num?)?.toDouble())!) : const SdkOmitted(),
-  );
+  factory NamedSandboxKeepLastSnapshots.fromJson(Map<String, dynamic> json) =>
+      NamedSandboxKeepLastSnapshots(
+        count: ((json['count'] as num?)?.toDouble())!,
+        deleteEvicted: (json['deleteEvicted'] != null
+            ? NamedSandboxKeepLastSnapshotsDeleteEvicted.fromJson(
+                json['deleteEvicted'] as bool)
+            : null)!,
+        expiration: json['expiration'] != null
+            ? SdkPresent(((json['expiration'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'count': count,
-    'deleteEvicted': deleteEvicted.toJson(),
-    ...switch (expiration) {
-      SdkPresent<double>(value: final value) => {'expiration': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'count': count,
+        'deleteEvicted': deleteEvicted.toJson(),
+        ...switch (expiration) {
+          SdkPresent<double>(value: final value) => {
+              'expiration': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Key-value pairs of mount path and drive.
@@ -49,87 +74,168 @@ class NamedSandboxMountsValue {
   final SdkOptional<NamedSandboxMountsValueMode> mode;
   final SdkOptional<String> snapshot;
 
-  const NamedSandboxMountsValue({required this.drive, this.mode = const SdkOmitted(), this.snapshot = const SdkOmitted()});
+  const NamedSandboxMountsValue(
+      {required this.drive,
+      this.mode = const SdkOmitted(),
+      this.snapshot = const SdkOmitted()});
 
-  NamedSandboxMountsValue Function({String drive, SdkOptional<NamedSandboxMountsValueMode> mode, SdkOptional<String> snapshot}) get copyWith => _copyWith;
+  NamedSandboxMountsValue Function(
+      {String drive,
+      SdkOptional<NamedSandboxMountsValueMode> mode,
+      SdkOptional<String> snapshot}) get copyWith => _copyWith;
 
-  NamedSandboxMountsValue _copyWith({Object? drive = sdkOmittedValue, Object? mode = sdkOmittedValue, Object? snapshot = sdkOmittedValue}) => NamedSandboxMountsValue(
-    drive: identical(drive, sdkOmittedValue) ? this.drive : drive as String,
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as SdkOptional<NamedSandboxMountsValueMode>,
-    snapshot: identical(snapshot, sdkOmittedValue) ? this.snapshot : snapshot as SdkOptional<String>,
-  );
+  NamedSandboxMountsValue _copyWith(
+          {Object? drive = sdkOmittedValue,
+          Object? mode = sdkOmittedValue,
+          Object? snapshot = sdkOmittedValue}) =>
+      NamedSandboxMountsValue(
+        drive: identical(drive, sdkOmittedValue) ? this.drive : drive as String,
+        mode: identical(mode, sdkOmittedValue)
+            ? this.mode
+            : mode as SdkOptional<NamedSandboxMountsValueMode>,
+        snapshot: identical(snapshot, sdkOmittedValue)
+            ? this.snapshot
+            : snapshot as SdkOptional<String>,
+      );
 
-  factory NamedSandboxMountsValue.fromJson(Map<String, dynamic> json) => NamedSandboxMountsValue(
-    drive: (json['drive'] as String?)!,
-    mode: json['mode'] != null ? SdkPresent((json['mode'] != null ? NamedSandboxMountsValueMode.fromJson(json['mode'] as String) : null)!) : const SdkOmitted(),
-    snapshot: json['snapshot'] != null ? SdkPresent((json['snapshot'] as String?)!) : const SdkOmitted(),
-  );
+  factory NamedSandboxMountsValue.fromJson(Map<String, dynamic> json) =>
+      NamedSandboxMountsValue(
+        drive: (json['drive'] as String?)!,
+        mode: json['mode'] != null
+            ? SdkPresent((json['mode'] != null
+                ? NamedSandboxMountsValueMode.fromJson(json['mode'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        snapshot: json['snapshot'] != null
+            ? SdkPresent((json['snapshot'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'drive': drive,
-    ...switch (mode) {
-      SdkPresent<NamedSandboxMountsValueMode>(value: final value) => {'mode': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (snapshot) {
-      SdkPresent<String>(value: final value) => {'snapshot': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'drive': drive,
+        ...switch (mode) {
+          SdkPresent<NamedSandboxMountsValueMode>(value: final value) => {
+              'mode': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (snapshot) {
+          SdkPresent<String>(value: final value) => {
+              'snapshot': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// Network policy configuration.
 class NamedSandboxNetworkPolicy {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional array value serialized in the `allowedCIDRs` wire field.
   final SdkOptional<List<String>> allowedCidrs;
+
   /// Optional array value serialized in the `allowedDomains` wire field.
   final SdkOptional<List<String>> allowedDomains;
+
   /// Optional array value serialized in the `deniedCIDRs` wire field.
   final SdkOptional<List<String>> deniedCidrs;
+
   /// Required enumerated value serialized in the `mode` wire field.
   final NamedSandboxNetworkPolicyMode mode;
+
   /// Optional `string` value serialized in the `s3Key` wire field.
   final SdkOptional<String> s3Key;
 
-  const NamedSandboxNetworkPolicy({this.allowedCidrs = const SdkOmitted(), this.allowedDomains = const SdkOmitted(), this.deniedCidrs = const SdkOmitted(), required this.mode, this.s3Key = const SdkOmitted()});
+  const NamedSandboxNetworkPolicy(
+      {this.allowedCidrs = const SdkOmitted(),
+      this.allowedDomains = const SdkOmitted(),
+      this.deniedCidrs = const SdkOmitted(),
+      required this.mode,
+      this.s3Key = const SdkOmitted()});
 
-  NamedSandboxNetworkPolicy Function({SdkOptional<List<String>> allowedCidrs, SdkOptional<List<String>> allowedDomains, SdkOptional<List<String>> deniedCidrs, NamedSandboxNetworkPolicyMode mode, SdkOptional<String> s3Key}) get copyWith => _copyWith;
+  NamedSandboxNetworkPolicy Function(
+      {SdkOptional<List<String>> allowedCidrs,
+      SdkOptional<List<String>> allowedDomains,
+      SdkOptional<List<String>> deniedCidrs,
+      NamedSandboxNetworkPolicyMode mode,
+      SdkOptional<String> s3Key}) get copyWith => _copyWith;
 
-  NamedSandboxNetworkPolicy _copyWith({Object? allowedCidrs = sdkOmittedValue, Object? allowedDomains = sdkOmittedValue, Object? deniedCidrs = sdkOmittedValue, Object? mode = sdkOmittedValue, Object? s3Key = sdkOmittedValue}) => NamedSandboxNetworkPolicy(
-    allowedCidrs: identical(allowedCidrs, sdkOmittedValue) ? this.allowedCidrs : allowedCidrs as SdkOptional<List<String>>,
-    allowedDomains: identical(allowedDomains, sdkOmittedValue) ? this.allowedDomains : allowedDomains as SdkOptional<List<String>>,
-    deniedCidrs: identical(deniedCidrs, sdkOmittedValue) ? this.deniedCidrs : deniedCidrs as SdkOptional<List<String>>,
-    mode: identical(mode, sdkOmittedValue) ? this.mode : mode as NamedSandboxNetworkPolicyMode,
-    s3Key: identical(s3Key, sdkOmittedValue) ? this.s3Key : s3Key as SdkOptional<String>,
-  );
+  NamedSandboxNetworkPolicy _copyWith(
+          {Object? allowedCidrs = sdkOmittedValue,
+          Object? allowedDomains = sdkOmittedValue,
+          Object? deniedCidrs = sdkOmittedValue,
+          Object? mode = sdkOmittedValue,
+          Object? s3Key = sdkOmittedValue}) =>
+      NamedSandboxNetworkPolicy(
+        allowedCidrs: identical(allowedCidrs, sdkOmittedValue)
+            ? this.allowedCidrs
+            : allowedCidrs as SdkOptional<List<String>>,
+        allowedDomains: identical(allowedDomains, sdkOmittedValue)
+            ? this.allowedDomains
+            : allowedDomains as SdkOptional<List<String>>,
+        deniedCidrs: identical(deniedCidrs, sdkOmittedValue)
+            ? this.deniedCidrs
+            : deniedCidrs as SdkOptional<List<String>>,
+        mode: identical(mode, sdkOmittedValue)
+            ? this.mode
+            : mode as NamedSandboxNetworkPolicyMode,
+        s3Key: identical(s3Key, sdkOmittedValue)
+            ? this.s3Key
+            : s3Key as SdkOptional<String>,
+      );
 
-  factory NamedSandboxNetworkPolicy.fromJson(Map<String, dynamic> json) => NamedSandboxNetworkPolicy(
-    allowedCidrs: json['allowedCIDRs'] != null ? SdkPresent(((json['allowedCIDRs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    allowedDomains: json['allowedDomains'] != null ? SdkPresent(((json['allowedDomains'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    deniedCidrs: json['deniedCIDRs'] != null ? SdkPresent(((json['deniedCIDRs'] as List?)?.map((e) => e as String).toList())!) : const SdkOmitted(),
-    mode: (json['mode'] != null ? NamedSandboxNetworkPolicyMode.fromJson(json['mode'] as String) : null)!,
-    s3Key: json['s3Key'] != null ? SdkPresent((json['s3Key'] as String?)!) : const SdkOmitted(),
-  );
+  factory NamedSandboxNetworkPolicy.fromJson(Map<String, dynamic> json) =>
+      NamedSandboxNetworkPolicy(
+        allowedCidrs: json['allowedCIDRs'] != null
+            ? SdkPresent(((json['allowedCIDRs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        allowedDomains: json['allowedDomains'] != null
+            ? SdkPresent(((json['allowedDomains'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        deniedCidrs: json['deniedCIDRs'] != null
+            ? SdkPresent(((json['deniedCIDRs'] as List?)
+                ?.map((e) => e as String)
+                .toList())!)
+            : const SdkOmitted(),
+        mode: (json['mode'] != null
+            ? NamedSandboxNetworkPolicyMode.fromJson(json['mode'] as String)
+            : null)!,
+        s3Key: json['s3Key'] != null
+            ? SdkPresent((json['s3Key'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (allowedCidrs) {
-      SdkPresent<List<String>>(value: final value) => {'allowedCIDRs': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (allowedDomains) {
-      SdkPresent<List<String>>(value: final value) => {'allowedDomains': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (deniedCidrs) {
-      SdkPresent<List<String>>(value: final value) => {'deniedCIDRs': value,},
-      _ => const <String, dynamic>{},
-    },
-    'mode': mode.toJson(),
-    ...switch (s3Key) {
-      SdkPresent<String>(value: final value) => {'s3Key': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (allowedCidrs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'allowedCIDRs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (allowedDomains) {
+          SdkPresent<List<String>>(value: final value) => {
+              'allowedDomains': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (deniedCidrs) {
+          SdkPresent<List<String>>(value: final value) => {
+              'deniedCIDRs': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'mode': mode.toJson(),
+        ...switch (s3Key) {
+          SdkPresent<String>(value: final value) => {
+              's3Key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

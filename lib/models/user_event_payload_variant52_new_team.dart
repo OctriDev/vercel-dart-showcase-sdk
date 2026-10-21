@@ -8,292 +8,482 @@ part of 'user.dart';
 class UserEventPayloadVariant52NewTeam {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant52NewTeam({required this.name});
 
-  UserEventPayloadVariant52NewTeam Function({String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant52NewTeam Function({String name}) get copyWith =>
+      _copyWith;
 
-  UserEventPayloadVariant52NewTeam _copyWith({Object? name = sdkOmittedValue}) => UserEventPayloadVariant52NewTeam(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant52NewTeam _copyWith(
+          {Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant52NewTeam(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant52NewTeam.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant52NewTeam(
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant52NewTeam.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant52NewTeam(
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-  };
+        'name': name,
+      };
 }
 
 /// Optional object value serialized in the `oldTeam` wire field.
 class UserEventPayloadVariant52OldTeam {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `name` wire field.
   final String name;
 
   const UserEventPayloadVariant52OldTeam({required this.name});
 
-  UserEventPayloadVariant52OldTeam Function({String name}) get copyWith => _copyWith;
+  UserEventPayloadVariant52OldTeam Function({String name}) get copyWith =>
+      _copyWith;
 
-  UserEventPayloadVariant52OldTeam _copyWith({Object? name = sdkOmittedValue}) => UserEventPayloadVariant52OldTeam(
-    name: identical(name, sdkOmittedValue) ? this.name : name as String,
-  );
+  UserEventPayloadVariant52OldTeam _copyWith(
+          {Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant52OldTeam(
+        name: identical(name, sdkOmittedValue) ? this.name : name as String,
+      );
 
-  factory UserEventPayloadVariant52OldTeam.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant52OldTeam(
-    name: (json['name'] as String?)!,
-  );
+  factory UserEventPayloadVariant52OldTeam.fromJson(
+          Map<String, dynamic> json) =>
+      UserEventPayloadVariant52OldTeam(
+        name: (json['name'] as String?)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-  };
+        'name': name,
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant52 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `alias` wire field.
   final String alias;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
+
   /// Optional object value serialized in the `newTeam` wire field.
   final SdkOptional<UserEventPayloadVariant52NewTeam> newTeam;
+
   /// Optional object value serialized in the `oldTeam` wire field.
   final SdkOptional<UserEventPayloadVariant52OldTeam> oldTeam;
 
-  const UserEventPayloadVariant52({required this.alias, this.name = const SdkOmitted(), this.newTeam = const SdkOmitted(), this.oldTeam = const SdkOmitted()});
+  const UserEventPayloadVariant52(
+      {required this.alias,
+      this.name = const SdkOmitted(),
+      this.newTeam = const SdkOmitted(),
+      this.oldTeam = const SdkOmitted()});
 
-  UserEventPayloadVariant52 Function({String alias, SdkOptional<String> name, SdkOptional<UserEventPayloadVariant52NewTeam> newTeam, SdkOptional<UserEventPayloadVariant52OldTeam> oldTeam}) get copyWith => _copyWith;
+  UserEventPayloadVariant52 Function(
+          {String alias,
+          SdkOptional<String> name,
+          SdkOptional<UserEventPayloadVariant52NewTeam> newTeam,
+          SdkOptional<UserEventPayloadVariant52OldTeam> oldTeam})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant52 _copyWith({Object? alias = sdkOmittedValue, Object? name = sdkOmittedValue, Object? newTeam = sdkOmittedValue, Object? oldTeam = sdkOmittedValue}) => UserEventPayloadVariant52(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-    newTeam: identical(newTeam, sdkOmittedValue) ? this.newTeam : newTeam as SdkOptional<UserEventPayloadVariant52NewTeam>,
-    oldTeam: identical(oldTeam, sdkOmittedValue) ? this.oldTeam : oldTeam as SdkOptional<UserEventPayloadVariant52OldTeam>,
-  );
+  UserEventPayloadVariant52 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? name = sdkOmittedValue,
+          Object? newTeam = sdkOmittedValue,
+          Object? oldTeam = sdkOmittedValue}) =>
+      UserEventPayloadVariant52(
+        alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+        newTeam: identical(newTeam, sdkOmittedValue)
+            ? this.newTeam
+            : newTeam as SdkOptional<UserEventPayloadVariant52NewTeam>,
+        oldTeam: identical(oldTeam, sdkOmittedValue)
+            ? this.oldTeam
+            : oldTeam as SdkOptional<UserEventPayloadVariant52OldTeam>,
+      );
 
-  factory UserEventPayloadVariant52.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant52(
-    alias: (json['alias'] as String?)!,
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-    newTeam: json['newTeam'] != null ? SdkPresent((json['newTeam'] != null ? UserEventPayloadVariant52NewTeam.fromJson(json['newTeam'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    oldTeam: json['oldTeam'] != null ? SdkPresent((json['oldTeam'] != null ? UserEventPayloadVariant52OldTeam.fromJson(json['oldTeam'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant52.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant52(
+        alias: (json['alias'] as String?)!,
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+        newTeam: json['newTeam'] != null
+            ? SdkPresent((json['newTeam'] != null
+                ? UserEventPayloadVariant52NewTeam.fromJson(
+                    json['newTeam'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        oldTeam: json['oldTeam'] != null
+            ? SdkPresent((json['oldTeam'] != null
+                ? UserEventPayloadVariant52OldTeam.fromJson(
+                    json['oldTeam'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'alias': alias,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (newTeam) {
-      SdkPresent<UserEventPayloadVariant52NewTeam>(value: final value) => {'newTeam': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (oldTeam) {
-      SdkPresent<UserEventPayloadVariant52OldTeam>(value: final value) => {'oldTeam': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'alias': alias,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (newTeam) {
+          SdkPresent<UserEventPayloadVariant52NewTeam>(value: final value) => {
+              'newTeam': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (oldTeam) {
+          SdkPresent<UserEventPayloadVariant52OldTeam>(value: final value) => {
+              'oldTeam': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant53 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `string` value serialized in the `alias` wire field.
   final String alias;
+
   /// Required `string` value serialized in the `aliasId` wire field.
   final String aliasId;
+
   /// Required `string` value serialized in the `deploymentId` wire field.
   final String? deploymentId;
+
   /// Optional `string` value serialized in the `name` wire field.
   final SdkOptional<String> name;
 
-  const UserEventPayloadVariant53({required this.alias, required this.aliasId, required this.deploymentId, this.name = const SdkOmitted()});
+  const UserEventPayloadVariant53(
+      {required this.alias,
+      required this.aliasId,
+      required this.deploymentId,
+      this.name = const SdkOmitted()});
 
-  UserEventPayloadVariant53 Function({String alias, String aliasId, String? deploymentId, SdkOptional<String> name}) get copyWith => _copyWith;
+  UserEventPayloadVariant53 Function(
+      {String alias,
+      String aliasId,
+      String? deploymentId,
+      SdkOptional<String> name}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant53 _copyWith({Object? alias = sdkOmittedValue, Object? aliasId = sdkOmittedValue, Object? deploymentId = sdkOmittedValue, Object? name = sdkOmittedValue}) => UserEventPayloadVariant53(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
-    aliasId: identical(aliasId, sdkOmittedValue) ? this.aliasId : aliasId as String,
-    deploymentId: identical(deploymentId, sdkOmittedValue) ? this.deploymentId : deploymentId as String?,
-    name: identical(name, sdkOmittedValue) ? this.name : name as SdkOptional<String>,
-  );
+  UserEventPayloadVariant53 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? aliasId = sdkOmittedValue,
+          Object? deploymentId = sdkOmittedValue,
+          Object? name = sdkOmittedValue}) =>
+      UserEventPayloadVariant53(
+        alias: identical(alias, sdkOmittedValue) ? this.alias : alias as String,
+        aliasId: identical(aliasId, sdkOmittedValue)
+            ? this.aliasId
+            : aliasId as String,
+        deploymentId: identical(deploymentId, sdkOmittedValue)
+            ? this.deploymentId
+            : deploymentId as String?,
+        name: identical(name, sdkOmittedValue)
+            ? this.name
+            : name as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant53.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant53(
-    alias: (json['alias'] as String?)!,
-    aliasId: (json['aliasId'] as String?)!,
-    deploymentId: json.containsKey('deploymentId') ? json['deploymentId'] as String? : throw ArgumentError.value(null, 'deploymentId', 'Required property is missing'),
-    name: json['name'] != null ? SdkPresent((json['name'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant53.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant53(
+        alias: (json['alias'] as String?)!,
+        aliasId: (json['aliasId'] as String?)!,
+        deploymentId: json.containsKey('deploymentId')
+            ? json['deploymentId'] as String?
+            : throw ArgumentError.value(
+                null, 'deploymentId', 'Required property is missing'),
+        name: json['name'] != null
+            ? SdkPresent((json['name'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'alias': alias,
-    'aliasId': aliasId,
-    'deploymentId': deploymentId,
-    ...switch (name) {
-      SdkPresent<String>(value: final value) => {'name': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'alias': alias,
+        'aliasId': aliasId,
+        'deploymentId': deploymentId,
+        ...switch (name) {
+          SdkPresent<String>(value: final value) => {
+              'name': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant54 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `alias` wire field.
   final SdkOptional<String> alias;
+
   /// Optional `string` value serialized in the `email` wire field.
   final SdkOptional<String> email;
+
   /// Optional `string` value serialized in the `username` wire field.
   final SdkOptional<String> username;
 
-  const UserEventPayloadVariant54({this.alias = const SdkOmitted(), this.email = const SdkOmitted(), this.username = const SdkOmitted()});
+  const UserEventPayloadVariant54(
+      {this.alias = const SdkOmitted(),
+      this.email = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  UserEventPayloadVariant54 Function({SdkOptional<String> alias, SdkOptional<String> email, SdkOptional<String> username}) get copyWith => _copyWith;
+  UserEventPayloadVariant54 Function(
+      {SdkOptional<String> alias,
+      SdkOptional<String> email,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant54 _copyWith({Object? alias = sdkOmittedValue, Object? email = sdkOmittedValue, Object? username = sdkOmittedValue}) => UserEventPayloadVariant54(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    email: identical(email, sdkOmittedValue) ? this.email : email as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  UserEventPayloadVariant54 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? email = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      UserEventPayloadVariant54(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        email: identical(email, sdkOmittedValue)
+            ? this.email
+            : email as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant54.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant54(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    email: json['email'] != null ? SdkPresent((json['email'] as String?)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant54.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant54(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+        email: json['email'] != null
+            ? SdkPresent((json['email'] as String?)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (email) {
-      SdkPresent<String>(value: final value) => {'email': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (email) {
+          SdkPresent<String>(value: final value) => {
+              'email': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant55 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `alias` wire field.
   final SdkOptional<String> alias;
 
   const UserEventPayloadVariant55({this.alias = const SdkOmitted()});
 
-  UserEventPayloadVariant55 Function({SdkOptional<String> alias}) get copyWith => _copyWith;
+  UserEventPayloadVariant55 Function({SdkOptional<String> alias})
+      get copyWith => _copyWith;
 
-  UserEventPayloadVariant55 _copyWith({Object? alias = sdkOmittedValue}) => UserEventPayloadVariant55(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-  );
+  UserEventPayloadVariant55 _copyWith({Object? alias = sdkOmittedValue}) =>
+      UserEventPayloadVariant55(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant55.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant55(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant55.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant55(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant56 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `alias` wire field.
   final SdkOptional<String> alias;
+
   /// Optional `string` value serialized in the `email` wire field.
   final SdkOptional<String> email;
 
-  const UserEventPayloadVariant56({this.alias = const SdkOmitted(), this.email = const SdkOmitted()});
+  const UserEventPayloadVariant56(
+      {this.alias = const SdkOmitted(), this.email = const SdkOmitted()});
 
-  UserEventPayloadVariant56 Function({SdkOptional<String> alias, SdkOptional<String> email}) get copyWith => _copyWith;
+  UserEventPayloadVariant56 Function(
+      {SdkOptional<String> alias,
+      SdkOptional<String> email}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant56 _copyWith({Object? alias = sdkOmittedValue, Object? email = sdkOmittedValue}) => UserEventPayloadVariant56(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    email: identical(email, sdkOmittedValue) ? this.email : email as SdkOptional<String>,
-  );
+  UserEventPayloadVariant56 _copyWith(
+          {Object? alias = sdkOmittedValue, Object? email = sdkOmittedValue}) =>
+      UserEventPayloadVariant56(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        email: identical(email, sdkOmittedValue)
+            ? this.email
+            : email as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant56.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant56(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    email: json['email'] != null ? SdkPresent((json['email'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant56.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant56(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+        email: json['email'] != null
+            ? SdkPresent((json['email'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (email) {
-      SdkPresent<String>(value: final value) => {'email': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (email) {
+          SdkPresent<String>(value: final value) => {
+              'email': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 /// The payload of the event, if requested.
 class UserEventPayloadVariant57 {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Optional `string` value serialized in the `alias` wire field.
   final SdkOptional<String> alias;
+
   /// Optional `string` value serialized in the `aliasId` wire field.
   final SdkOptional<String> aliasId;
+
   /// Optional `string` value serialized in the `projectId` wire field.
   final SdkOptional<String> projectId;
+
   /// Optional `string` value serialized in the `projectName` wire field.
   final SdkOptional<String> projectName;
 
-  const UserEventPayloadVariant57({this.alias = const SdkOmitted(), this.aliasId = const SdkOmitted(), this.projectId = const SdkOmitted(), this.projectName = const SdkOmitted()});
+  const UserEventPayloadVariant57(
+      {this.alias = const SdkOmitted(),
+      this.aliasId = const SdkOmitted(),
+      this.projectId = const SdkOmitted(),
+      this.projectName = const SdkOmitted()});
 
-  UserEventPayloadVariant57 Function({SdkOptional<String> alias, SdkOptional<String> aliasId, SdkOptional<String> projectId, SdkOptional<String> projectName}) get copyWith => _copyWith;
+  UserEventPayloadVariant57 Function(
+      {SdkOptional<String> alias,
+      SdkOptional<String> aliasId,
+      SdkOptional<String> projectId,
+      SdkOptional<String> projectName}) get copyWith => _copyWith;
 
-  UserEventPayloadVariant57 _copyWith({Object? alias = sdkOmittedValue, Object? aliasId = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? projectName = sdkOmittedValue}) => UserEventPayloadVariant57(
-    alias: identical(alias, sdkOmittedValue) ? this.alias : alias as SdkOptional<String>,
-    aliasId: identical(aliasId, sdkOmittedValue) ? this.aliasId : aliasId as SdkOptional<String>,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as SdkOptional<String>,
-    projectName: identical(projectName, sdkOmittedValue) ? this.projectName : projectName as SdkOptional<String>,
-  );
+  UserEventPayloadVariant57 _copyWith(
+          {Object? alias = sdkOmittedValue,
+          Object? aliasId = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? projectName = sdkOmittedValue}) =>
+      UserEventPayloadVariant57(
+        alias: identical(alias, sdkOmittedValue)
+            ? this.alias
+            : alias as SdkOptional<String>,
+        aliasId: identical(aliasId, sdkOmittedValue)
+            ? this.aliasId
+            : aliasId as SdkOptional<String>,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as SdkOptional<String>,
+        projectName: identical(projectName, sdkOmittedValue)
+            ? this.projectName
+            : projectName as SdkOptional<String>,
+      );
 
-  factory UserEventPayloadVariant57.fromJson(Map<String, dynamic> json) => UserEventPayloadVariant57(
-    alias: json['alias'] != null ? SdkPresent((json['alias'] as String?)!) : const SdkOmitted(),
-    aliasId: json['aliasId'] != null ? SdkPresent((json['aliasId'] as String?)!) : const SdkOmitted(),
-    projectId: json['projectId'] != null ? SdkPresent((json['projectId'] as String?)!) : const SdkOmitted(),
-    projectName: json['projectName'] != null ? SdkPresent((json['projectName'] as String?)!) : const SdkOmitted(),
-  );
+  factory UserEventPayloadVariant57.fromJson(Map<String, dynamic> json) =>
+      UserEventPayloadVariant57(
+        alias: json['alias'] != null
+            ? SdkPresent((json['alias'] as String?)!)
+            : const SdkOmitted(),
+        aliasId: json['aliasId'] != null
+            ? SdkPresent((json['aliasId'] as String?)!)
+            : const SdkOmitted(),
+        projectId: json['projectId'] != null
+            ? SdkPresent((json['projectId'] as String?)!)
+            : const SdkOmitted(),
+        projectName: json['projectName'] != null
+            ? SdkPresent((json['projectName'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (alias) {
-      SdkPresent<String>(value: final value) => {'alias': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (aliasId) {
-      SdkPresent<String>(value: final value) => {'aliasId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectId) {
-      SdkPresent<String>(value: final value) => {'projectId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (projectName) {
-      SdkPresent<String>(value: final value) => {'projectName': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (alias) {
+          SdkPresent<String>(value: final value) => {
+              'alias': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (aliasId) {
+          SdkPresent<String>(value: final value) => {
+              'aliasId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectId) {
+          SdkPresent<String>(value: final value) => {
+              'projectId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (projectName) {
+          SdkPresent<String>(value: final value) => {
+              'projectName': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

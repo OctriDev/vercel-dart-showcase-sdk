@@ -6,93 +6,138 @@ part of 'inline.dart';
 // Inline operation models
 /// Whether to linearly shift traffic over the duration of this stage
 final class UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift {
-
   final bool value;
 
-  const UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(this.value);
+  const UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift.fromJson(bool value) => UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(value);
+  factory UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(false);
-  static const true_ = UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseRollingReleaseStagesItemLinearShift &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether or not this stage requires manual approval to proceed
 final class UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval {
-
   final bool value;
 
-  const UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(this.value);
+  const UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval.fromJson(bool value) => UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(value);
+  factory UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(
+          value);
 
-  static const false_ = UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(false);
-  static const true_ = UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(
+          false);
+  static const true_ =
+      UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UpdateMicrofrontendsResponseRollingReleaseStagesItemRequireApproval &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSandboxFailoverRegionsItem {
-
   final String value;
 
   const UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._(this.value);
 
-  factory UpdateMicrofrontendsResponseSandboxFailoverRegionsItem.fromJson(String value) => UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._(value);
+  factory UpdateMicrofrontendsResponseSandboxFailoverRegionsItem.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._(value);
 
-  static const arn1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('arn1');
-  static const bom1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('bom1');
-  static const cdg1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('cdg1');
-  static const cle1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('cle1');
-  static const cpt1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('cpt1');
-  static const dub1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('dub1');
-  static const fra1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('fra1');
-  static const gru1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('gru1');
-  static const hkg1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('hkg1');
-  static const hnd1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('hnd1');
-  static const iad1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('iad1');
-  static const icn1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('icn1');
-  static const kix1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('kix1');
-  static const lhr1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('lhr1');
-  static const pdx1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('pdx1');
-  static const sfo1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('sfo1');
-  static const sin1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('sin1');
-  static const syd1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('syd1');
-  static const yul1 = UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('yul1');
+  static const arn1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('arn1');
+  static const bom1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('bom1');
+  static const cdg1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('cdg1');
+  static const cle1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('cle1');
+  static const cpt1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('cpt1');
+  static const dub1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('dub1');
+  static const fra1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('fra1');
+  static const gru1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('gru1');
+  static const hkg1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('hkg1');
+  static const hnd1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('hnd1');
+  static const iad1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('iad1');
+  static const icn1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('icn1');
+  static const kix1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('kix1');
+  static const lhr1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('lhr1');
+  static const pdx1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('pdx1');
+  static const sfo1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('sfo1');
+  static const sin1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('sin1');
+  static const syd1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('syd1');
+  static const yul1 =
+      UpdateMicrofrontendsResponseSandboxFailoverRegionsItem._('yul1');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSandboxFailoverRegionsItem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSandboxFailoverRegionsItem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSandboxRegion {
-
   final String value;
 
   const UpdateMicrofrontendsResponseSandboxRegion._(this.value);
 
-  factory UpdateMicrofrontendsResponseSandboxRegion.fromJson(String value) => UpdateMicrofrontendsResponseSandboxRegion._(value);
+  factory UpdateMicrofrontendsResponseSandboxRegion.fromJson(String value) =>
+      UpdateMicrofrontendsResponseSandboxRegion._(value);
 
   static const arn1 = UpdateMicrofrontendsResponseSandboxRegion._('arn1');
   static const bom1 = UpdateMicrofrontendsResponseSandboxRegion._('bom1');
@@ -116,178 +161,234 @@ final class UpdateMicrofrontendsResponseSandboxRegion {
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSandboxRegion && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSandboxRegion &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityAttackModeEnabled {
-
   final bool value;
 
   const UpdateMicrofrontendsResponseSecurityAttackModeEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityAttackModeEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseSecurityAttackModeEnabled._(value);
+  factory UpdateMicrofrontendsResponseSecurityAttackModeEnabled.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseSecurityAttackModeEnabled._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseSecurityAttackModeEnabled._(false);
-  static const true_ = UpdateMicrofrontendsResponseSecurityAttackModeEnabled._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseSecurityAttackModeEnabled._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseSecurityAttackModeEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityAttackModeEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityAttackModeEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityBotIdEnabled {
-
   final bool value;
 
   const UpdateMicrofrontendsResponseSecurityBotIdEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityBotIdEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseSecurityBotIdEnabled._(value);
+  factory UpdateMicrofrontendsResponseSecurityBotIdEnabled.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseSecurityBotIdEnabled._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseSecurityBotIdEnabled._(false);
+  static const false_ =
+      UpdateMicrofrontendsResponseSecurityBotIdEnabled._(false);
   static const true_ = UpdateMicrofrontendsResponseSecurityBotIdEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityBotIdEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityBotIdEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityFirewallEnabled {
-
   final bool value;
 
   const UpdateMicrofrontendsResponseSecurityFirewallEnabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityFirewallEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseSecurityFirewallEnabled._(value);
+  factory UpdateMicrofrontendsResponseSecurityFirewallEnabled.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseSecurityFirewallEnabled._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseSecurityFirewallEnabled._(false);
-  static const true_ = UpdateMicrofrontendsResponseSecurityFirewallEnabled._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseSecurityFirewallEnabled._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseSecurityFirewallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityFirewallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityFirewallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled {
-
   final bool value;
 
-  const UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(this.value);
+  const UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled.fromJson(bool value) => UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(value);
+  factory UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled.fromJson(
+          bool value) =>
+      UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(value);
 
-  static const false_ = UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(false);
-  static const true_ = UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(true);
+  static const false_ =
+      UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(false);
+  static const true_ =
+      UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityFirewallSeawallEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityJa3Enabled {
-
   final bool value;
 
   const UpdateMicrofrontendsResponseSecurityJa3Enabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityJa3Enabled.fromJson(bool value) => UpdateMicrofrontendsResponseSecurityJa3Enabled._(value);
+  factory UpdateMicrofrontendsResponseSecurityJa3Enabled.fromJson(bool value) =>
+      UpdateMicrofrontendsResponseSecurityJa3Enabled._(value);
 
   static const false_ = UpdateMicrofrontendsResponseSecurityJa3Enabled._(false);
   static const true_ = UpdateMicrofrontendsResponseSecurityJa3Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityJa3Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityJa3Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityJa4Enabled {
-
   final bool value;
 
   const UpdateMicrofrontendsResponseSecurityJa4Enabled._(this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityJa4Enabled.fromJson(bool value) => UpdateMicrofrontendsResponseSecurityJa4Enabled._(value);
+  factory UpdateMicrofrontendsResponseSecurityJa4Enabled.fromJson(bool value) =>
+      UpdateMicrofrontendsResponseSecurityJa4Enabled._(value);
 
   static const false_ = UpdateMicrofrontendsResponseSecurityJa4Enabled._(false);
   static const true_ = UpdateMicrofrontendsResponseSecurityJa4Enabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityJa4Enabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityJa4Enabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityLogHeadersVariant1 {
-
   final String value;
 
   const UpdateMicrofrontendsResponseSecurityLogHeadersVariant1._(this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityLogHeadersVariant1.fromJson(String value) => UpdateMicrofrontendsResponseSecurityLogHeadersVariant1._(value);
+  factory UpdateMicrofrontendsResponseSecurityLogHeadersVariant1.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseSecurityLogHeadersVariant1._(value);
 
-  static const unknown = UpdateMicrofrontendsResponseSecurityLogHeadersVariant1._('*');
+  static const unknown =
+      UpdateMicrofrontendsResponseSecurityLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityLogHeadersVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityLogHeadersVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction {
-
   final String value;
 
-  const UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._(this.value);
+  const UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._(
+      this.value);
 
-  factory UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction.fromJson(String value) => UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._(value);
+  factory UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction.fromJson(
+          String value) =>
+      UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._(value);
 
-  static const challenge = UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._('challenge');
-  static const deny = UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._('deny');
-  static const log = UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._('log');
+  static const challenge =
+      UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._(
+          'challenge');
+  static const deny =
+      UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._('deny');
+  static const log =
+      UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

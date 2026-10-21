@@ -5,282 +5,416 @@ part of 'inline.dart';
 
 // Inline operation models
 final class UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive {
-
   final bool value;
 
-  const UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(this.value);
+  const UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive.fromJson(bool value) => UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(value);
+  factory UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(value);
 
-  static const false_ = UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(false);
-  static const true_ = UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(true);
+  static const false_ =
+      UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(false);
+  static const true_ =
+      UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseSecurityManagedRulesBotFilterActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityManagedRulesOwaspAction {
-
   final String value;
 
-  const UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._(this.value);
+  const UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityManagedRulesOwaspAction.fromJson(String value) => UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._(value);
+  factory UploadProjectAvatarResponseSecurityManagedRulesOwaspAction.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._(value);
 
-  static const challenge = UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._('challenge');
-  static const deny = UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._('deny');
-  static const log = UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._('log');
+  static const challenge =
+      UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._('challenge');
+  static const deny =
+      UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._('deny');
+  static const log =
+      UploadProjectAvatarResponseSecurityManagedRulesOwaspAction._('log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityManagedRulesOwaspAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseSecurityManagedRulesOwaspAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityManagedRulesOwaspActive {
-
   final bool value;
 
-  const UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(this.value);
+  const UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityManagedRulesOwaspActive.fromJson(bool value) => UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(value);
+  factory UploadProjectAvatarResponseSecurityManagedRulesOwaspActive.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(value);
 
-  static const false_ = UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(false);
-  static const true_ = UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(true);
+  static const false_ =
+      UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(false);
+  static const true_ =
+      UploadProjectAvatarResponseSecurityManagedRulesOwaspActive._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityManagedRulesOwaspActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseSecurityManagedRulesOwaspActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction {
-
   final String value;
 
-  const UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(this.value);
+  const UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction.fromJson(String value) => UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(value);
+  factory UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          value);
 
-  static const challenge = UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._('challenge');
-  static const deny = UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._('deny');
-  static const log = UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._('log');
+  static const challenge =
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          'challenge');
+  static const deny =
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          'deny');
+  static const log =
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive {
-
   final bool value;
 
-  const UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(this.value);
+  const UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive.fromJson(bool value) => UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(value);
+  factory UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(
+          value);
 
-  static const false_ = UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(false);
-  static const true_ = UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(true);
+  static const false_ =
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(
+          false);
+  static const true_ =
+      UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseSecurityManagedRulesTrafficSourcesActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction {
-
   final String value;
 
-  const UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._(this.value);
+  const UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction.fromJson(String value) => UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._(value);
+  factory UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._(
+          value);
 
-  static const challenge = UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._('challenge');
-  static const deny = UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._('deny');
-  static const log = UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._('log');
+  static const challenge =
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._(
+          'challenge');
+  static const deny =
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._(
+          'deny');
+  static const log =
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction._(
+          'log');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive {
-
   final bool value;
 
-  const UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(this.value);
+  const UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive.fromJson(bool value) => UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(value);
+  factory UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(
+          value);
 
-  static const false_ = UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(false);
-  static const true_ = UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(true);
+  static const false_ =
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(
+          false);
+  static const true_ =
+      UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive._(
+          true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseSecurityManagedRulesVercelRulesetActive &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
 final class UploadProjectAvatarResponseSecurityPageIntegrityEnabled {
-
   final bool value;
 
   const UploadProjectAvatarResponseSecurityPageIntegrityEnabled._(this.value);
 
-  factory UploadProjectAvatarResponseSecurityPageIntegrityEnabled.fromJson(bool value) => UploadProjectAvatarResponseSecurityPageIntegrityEnabled._(value);
+  factory UploadProjectAvatarResponseSecurityPageIntegrityEnabled.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseSecurityPageIntegrityEnabled._(value);
 
-  static const false_ = UploadProjectAvatarResponseSecurityPageIntegrityEnabled._(false);
-  static const true_ = UploadProjectAvatarResponseSecurityPageIntegrityEnabled._(true);
+  static const false_ =
+      UploadProjectAvatarResponseSecurityPageIntegrityEnabled._(false);
+  static const true_ =
+      UploadProjectAvatarResponseSecurityPageIntegrityEnabled._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityPageIntegrityEnabled && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseSecurityPageIntegrityEnabled &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityRulesetsValueAction {
-
   final String value;
 
   const UploadProjectAvatarResponseSecurityRulesetsValueAction._(this.value);
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValueAction.fromJson(String value) => UploadProjectAvatarResponseSecurityRulesetsValueAction._(value);
+  factory UploadProjectAvatarResponseSecurityRulesetsValueAction.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._(value);
 
-  static const allow = UploadProjectAvatarResponseSecurityRulesetsValueAction._('allow');
-  static const bypass = UploadProjectAvatarResponseSecurityRulesetsValueAction._('bypass');
-  static const challenge = UploadProjectAvatarResponseSecurityRulesetsValueAction._('challenge');
-  static const deny = UploadProjectAvatarResponseSecurityRulesetsValueAction._('deny');
-  static const log = UploadProjectAvatarResponseSecurityRulesetsValueAction._('log');
-  static const rateLimit = UploadProjectAvatarResponseSecurityRulesetsValueAction._('rate_limit');
-  static const redirect = UploadProjectAvatarResponseSecurityRulesetsValueAction._('redirect');
+  static const allow =
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._('allow');
+  static const bypass =
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._('bypass');
+  static const challenge =
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._('challenge');
+  static const deny =
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._('deny');
+  static const log =
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._('log');
+  static const rateLimit =
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._('rate_limit');
+  static const redirect =
+      UploadProjectAvatarResponseSecurityRulesetsValueAction._('redirect');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityRulesetsValueAction && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseSecurityRulesetsValueAction &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem {
-
   final bool value;
 
-  const UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(this.value);
+  const UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem.fromJson(bool value) => UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(value);
+  factory UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(value);
 
-  static const false_ = UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(false);
-  static const true_ = UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(true);
+  static const false_ =
+      UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(false);
+  static const true_ =
+      UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseSecurityRulesetsValueBypassSystem &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1 {
-
   final String value;
 
-  const UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1._(this.value);
+  const UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1.fromJson(String value) => UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1._(value);
+  factory UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1._(
+          value);
 
-  static const unknown = UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1._('*');
+  static const unknown =
+      UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1._('*');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1 && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseSecurityRulesetsValueLogHeadersVariant1 &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo {
-
   final String value;
 
-  const UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._(this.value);
+  const UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo.fromJson(String value) => UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._(value);
+  factory UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo.fromJson(
+          String value) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._(value);
 
-  static const fixedWindow = UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._('fixed_window');
-  static const tokenBucket = UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._('token_bucket');
+  static const fixedWindow =
+      UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._(
+          'fixed_window');
+  static const tokenBucket =
+      UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo._(
+          'token_bucket');
 
   String toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other is UploadProjectAvatarResponseSecurityRulesetsValueRateLimitAlgo &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }
 
 final class UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent {
-
   final bool value;
 
-  const UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(this.value);
+  const UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(
+      this.value);
 
-  factory UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent.fromJson(bool value) => UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(value);
+  factory UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent.fromJson(
+          bool value) =>
+      UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(
+          value);
 
-  static const false_ = UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(false);
-  static const true_ = UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(true);
+  static const false_ =
+      UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(
+          false);
+  static const true_ =
+      UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent._(true);
 
   bool toJson() => value;
 
-  @override String toString() => value.toString();
+  @override
+  String toString() => value.toString();
 
-  @override bool operator ==(Object other) => other is UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent && other.value == value;
+  @override
+  bool operator ==(Object other) =>
+      other
+          is UploadProjectAvatarResponseSecurityRulesetsValueRedirectPermanent &&
+      other.value == value;
 
-  @override int get hashCode => value.hashCode;
-
+  @override
+  int get hashCode => value.hashCode;
 }

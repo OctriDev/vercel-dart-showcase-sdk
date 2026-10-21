@@ -8,86 +8,174 @@ part of 'feature_flags.dart';
 class FlagsSdkKeyWithSecrets {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
+
   /// Required `number` value serialized in the `createdAt` wire field.
   final double createdAt;
+
   /// Required `string` value serialized in the `createdBy` wire field.
   final String createdBy;
+
   /// Optional `number` value serialized in the `deletedAt` wire field.
   final SdkOptional<double> deletedAt;
+
   /// Required `string` value serialized in the `environment` wire field.
   final String environment;
+
   /// Required `string` value serialized in the `hashKey` wire field.
   final String hashKey;
+
   /// Optional `string` value serialized in the `label` wire field.
   final SdkOptional<String> label;
+
   /// Partially-masked representation of the SDK key value, safe to display in UIs. The value is the `vf_&lt;type&gt;_` prefix followed by the first 3 characters of the secret portion and a fixed 8-character `*` mask (e.g. `vf_server_abc********`).
   final String partialKeyValue;
+
   /// Required `string` value serialized in the `projectId` wire field.
   final String projectId;
+
   /// Required enumerated value serialized in the `type` wire field.
   final FlagsSdkKeyWithSecretsType type_;
+
   /// Required `number` value serialized in the `updatedAt` wire field.
   final double updatedAt;
+
   /// Cleartext value of the SDK key.
   final String keyValue;
+
   /// Cleartext value of the Global Config token, when the project has a Global Config connection.
   final SdkOptional<String> tokenValue;
 
-  const FlagsSdkKeyWithSecrets({required this.createdAt, required this.createdBy, this.deletedAt = const SdkOmitted(), required this.environment, required this.hashKey, this.label = const SdkOmitted(), required this.partialKeyValue, required this.projectId, required this.type_, required this.updatedAt, required this.keyValue, this.tokenValue = const SdkOmitted()});
+  const FlagsSdkKeyWithSecrets(
+      {required this.createdAt,
+      required this.createdBy,
+      this.deletedAt = const SdkOmitted(),
+      required this.environment,
+      required this.hashKey,
+      this.label = const SdkOmitted(),
+      required this.partialKeyValue,
+      required this.projectId,
+      required this.type_,
+      required this.updatedAt,
+      required this.keyValue,
+      this.tokenValue = const SdkOmitted()});
 
-  FlagsSdkKeyWithSecrets Function({double createdAt, String createdBy, SdkOptional<double> deletedAt, String environment, String hashKey, SdkOptional<String> label, String partialKeyValue, String projectId, FlagsSdkKeyWithSecretsType type_, double updatedAt, String keyValue, SdkOptional<String> tokenValue}) get copyWith => _copyWith;
+  FlagsSdkKeyWithSecrets Function(
+      {double createdAt,
+      String createdBy,
+      SdkOptional<double> deletedAt,
+      String environment,
+      String hashKey,
+      SdkOptional<String> label,
+      String partialKeyValue,
+      String projectId,
+      FlagsSdkKeyWithSecretsType type_,
+      double updatedAt,
+      String keyValue,
+      SdkOptional<String> tokenValue}) get copyWith => _copyWith;
 
-  FlagsSdkKeyWithSecrets _copyWith({Object? createdAt = sdkOmittedValue, Object? createdBy = sdkOmittedValue, Object? deletedAt = sdkOmittedValue, Object? environment = sdkOmittedValue, Object? hashKey = sdkOmittedValue, Object? label = sdkOmittedValue, Object? partialKeyValue = sdkOmittedValue, Object? projectId = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? keyValue = sdkOmittedValue, Object? tokenValue = sdkOmittedValue}) => FlagsSdkKeyWithSecrets(
-    createdAt: identical(createdAt, sdkOmittedValue) ? this.createdAt : createdAt as double,
-    createdBy: identical(createdBy, sdkOmittedValue) ? this.createdBy : createdBy as String,
-    deletedAt: identical(deletedAt, sdkOmittedValue) ? this.deletedAt : deletedAt as SdkOptional<double>,
-    environment: identical(environment, sdkOmittedValue) ? this.environment : environment as String,
-    hashKey: identical(hashKey, sdkOmittedValue) ? this.hashKey : hashKey as String,
-    label: identical(label, sdkOmittedValue) ? this.label : label as SdkOptional<String>,
-    partialKeyValue: identical(partialKeyValue, sdkOmittedValue) ? this.partialKeyValue : partialKeyValue as String,
-    projectId: identical(projectId, sdkOmittedValue) ? this.projectId : projectId as String,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as FlagsSdkKeyWithSecretsType,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as double,
-    keyValue: identical(keyValue, sdkOmittedValue) ? this.keyValue : keyValue as String,
-    tokenValue: identical(tokenValue, sdkOmittedValue) ? this.tokenValue : tokenValue as SdkOptional<String>,
-  );
+  FlagsSdkKeyWithSecrets _copyWith(
+          {Object? createdAt = sdkOmittedValue,
+          Object? createdBy = sdkOmittedValue,
+          Object? deletedAt = sdkOmittedValue,
+          Object? environment = sdkOmittedValue,
+          Object? hashKey = sdkOmittedValue,
+          Object? label = sdkOmittedValue,
+          Object? partialKeyValue = sdkOmittedValue,
+          Object? projectId = sdkOmittedValue,
+          Object? type_ = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? keyValue = sdkOmittedValue,
+          Object? tokenValue = sdkOmittedValue}) =>
+      FlagsSdkKeyWithSecrets(
+        createdAt: identical(createdAt, sdkOmittedValue)
+            ? this.createdAt
+            : createdAt as double,
+        createdBy: identical(createdBy, sdkOmittedValue)
+            ? this.createdBy
+            : createdBy as String,
+        deletedAt: identical(deletedAt, sdkOmittedValue)
+            ? this.deletedAt
+            : deletedAt as SdkOptional<double>,
+        environment: identical(environment, sdkOmittedValue)
+            ? this.environment
+            : environment as String,
+        hashKey: identical(hashKey, sdkOmittedValue)
+            ? this.hashKey
+            : hashKey as String,
+        label: identical(label, sdkOmittedValue)
+            ? this.label
+            : label as SdkOptional<String>,
+        partialKeyValue: identical(partialKeyValue, sdkOmittedValue)
+            ? this.partialKeyValue
+            : partialKeyValue as String,
+        projectId: identical(projectId, sdkOmittedValue)
+            ? this.projectId
+            : projectId as String,
+        type_: identical(type_, sdkOmittedValue)
+            ? this.type_
+            : type_ as FlagsSdkKeyWithSecretsType,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as double,
+        keyValue: identical(keyValue, sdkOmittedValue)
+            ? this.keyValue
+            : keyValue as String,
+        tokenValue: identical(tokenValue, sdkOmittedValue)
+            ? this.tokenValue
+            : tokenValue as SdkOptional<String>,
+      );
 
-  factory FlagsSdkKeyWithSecrets.fromJson(Map<String, dynamic> json) => FlagsSdkKeyWithSecrets(
-    createdAt: ((json['createdAt'] as num?)?.toDouble())!,
-    createdBy: (json['createdBy'] as String?)!,
-    deletedAt: json['deletedAt'] != null ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!) : const SdkOmitted(),
-    environment: (json['environment'] as String?)!,
-    hashKey: (json['hashKey'] as String?)!,
-    label: json['label'] != null ? SdkPresent((json['label'] as String?)!) : const SdkOmitted(),
-    partialKeyValue: (json['partialKeyValue'] as String?)!,
-    projectId: (json['projectId'] as String?)!,
-    type_: (json['type'] != null ? FlagsSdkKeyWithSecretsType.fromJson(json['type'] as String) : null)!,
-    updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
-    keyValue: (json['keyValue'] as String?)!,
-    tokenValue: json['tokenValue'] != null ? SdkPresent((json['tokenValue'] as String?)!) : const SdkOmitted(),
-  );
+  factory FlagsSdkKeyWithSecrets.fromJson(Map<String, dynamic> json) =>
+      FlagsSdkKeyWithSecrets(
+        createdAt: ((json['createdAt'] as num?)?.toDouble())!,
+        createdBy: (json['createdBy'] as String?)!,
+        deletedAt: json['deletedAt'] != null
+            ? SdkPresent(((json['deletedAt'] as num?)?.toDouble())!)
+            : const SdkOmitted(),
+        environment: (json['environment'] as String?)!,
+        hashKey: (json['hashKey'] as String?)!,
+        label: json['label'] != null
+            ? SdkPresent((json['label'] as String?)!)
+            : const SdkOmitted(),
+        partialKeyValue: (json['partialKeyValue'] as String?)!,
+        projectId: (json['projectId'] as String?)!,
+        type_: (json['type'] != null
+            ? FlagsSdkKeyWithSecretsType.fromJson(json['type'] as String)
+            : null)!,
+        updatedAt: ((json['updatedAt'] as num?)?.toDouble())!,
+        keyValue: (json['keyValue'] as String?)!,
+        tokenValue: json['tokenValue'] != null
+            ? SdkPresent((json['tokenValue'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    'createdAt': createdAt,
-    'createdBy': createdBy,
-    ...switch (deletedAt) {
-      SdkPresent<double>(value: final value) => {'deletedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    'environment': environment,
-    'hashKey': hashKey,
-    ...switch (label) {
-      SdkPresent<String>(value: final value) => {'label': value,},
-      _ => const <String, dynamic>{},
-    },
-    'partialKeyValue': partialKeyValue,
-    'projectId': projectId,
-    'type': type_.toJson(),
-    'updatedAt': updatedAt,
-    'keyValue': keyValue,
-    ...switch (tokenValue) {
-      SdkPresent<String>(value: final value) => {'tokenValue': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        'createdAt': createdAt,
+        'createdBy': createdBy,
+        ...switch (deletedAt) {
+          SdkPresent<double>(value: final value) => {
+              'deletedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'environment': environment,
+        'hashKey': hashKey,
+        ...switch (label) {
+          SdkPresent<String>(value: final value) => {
+              'label': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        'partialKeyValue': partialKeyValue,
+        'projectId': projectId,
+        'type': type_.toJson(),
+        'updatedAt': updatedAt,
+        'keyValue': keyValue,
+        ...switch (tokenValue) {
+          SdkPresent<String>(value: final value) => {
+              'tokenValue': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }

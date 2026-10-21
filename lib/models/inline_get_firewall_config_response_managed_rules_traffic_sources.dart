@@ -7,288 +7,640 @@ part of 'inline.dart';
 class GetFirewallConfigResponseManagedRulesTrafficSources {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSourcesAction> action;
+  final SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSourcesAction>
+      action;
   final GetFirewallConfigResponseManagedRulesTrafficSourcesActive active;
   final SdkOptional<String> updatedAt;
   final SdkOptional<String> userId;
   final SdkOptional<String> username;
 
-  const GetFirewallConfigResponseManagedRulesTrafficSources({this.action = const SdkOmitted(), required this.active, this.updatedAt = const SdkOmitted(), this.userId = const SdkOmitted(), this.username = const SdkOmitted()});
+  const GetFirewallConfigResponseManagedRulesTrafficSources(
+      {this.action = const SdkOmitted(),
+      required this.active,
+      this.updatedAt = const SdkOmitted(),
+      this.userId = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  GetFirewallConfigResponseManagedRulesTrafficSources Function({SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSourcesAction> action, GetFirewallConfigResponseManagedRulesTrafficSourcesActive active, SdkOptional<String> updatedAt, SdkOptional<String> userId, SdkOptional<String> username}) get copyWith => _copyWith;
+  GetFirewallConfigResponseManagedRulesTrafficSources Function(
+      {SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSourcesAction>
+          action,
+      GetFirewallConfigResponseManagedRulesTrafficSourcesActive active,
+      SdkOptional<String> updatedAt,
+      SdkOptional<String> userId,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  GetFirewallConfigResponseManagedRulesTrafficSources _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? username = sdkOmittedValue}) => GetFirewallConfigResponseManagedRulesTrafficSources(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSourcesAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as GetFirewallConfigResponseManagedRulesTrafficSourcesActive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<String>,
-    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  GetFirewallConfigResponseManagedRulesTrafficSources _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? userId = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      GetFirewallConfigResponseManagedRulesTrafficSources(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<
+                GetFirewallConfigResponseManagedRulesTrafficSourcesAction>,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active
+                as GetFirewallConfigResponseManagedRulesTrafficSourcesActive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<String>,
+        userId: identical(userId, sdkOmittedValue)
+            ? this.userId
+            : userId as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory GetFirewallConfigResponseManagedRulesTrafficSources.fromJson(Map<String, dynamic> json) => GetFirewallConfigResponseManagedRulesTrafficSources(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? GetFirewallConfigResponseManagedRulesTrafficSourcesAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? GetFirewallConfigResponseManagedRulesTrafficSourcesActive.fromJson(json['active'] as bool) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent((json['updatedAt'] as String?)!) : const SdkOmitted(),
-    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetFirewallConfigResponseManagedRulesTrafficSources.fromJson(
+          Map<String, dynamic> json) =>
+      GetFirewallConfigResponseManagedRulesTrafficSources(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? GetFirewallConfigResponseManagedRulesTrafficSourcesAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? GetFirewallConfigResponseManagedRulesTrafficSourcesActive
+                .fromJson(json['active'] as bool)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent((json['updatedAt'] as String?)!)
+            : const SdkOmitted(),
+        userId: json['userId'] != null
+            ? SdkPresent((json['userId'] as String?)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<GetFirewallConfigResponseManagedRulesTrafficSourcesAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<String>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (userId) {
-      SdkPresent<String>(value: final value) => {'userId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<GetFirewallConfigResponseManagedRulesTrafficSourcesAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<String>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (userId) {
+          SdkPresent<String>(value: final value) => {
+              'userId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetFirewallConfigResponseManagedRulesVercelRuleset {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetFirewallConfigResponseManagedRulesVercelRulesetAction> action;
+  final SdkOptional<GetFirewallConfigResponseManagedRulesVercelRulesetAction>
+      action;
   final GetFirewallConfigResponseManagedRulesVercelRulesetActive active;
   final SdkOptional<String> updatedAt;
   final SdkOptional<String> userId;
   final SdkOptional<String> username;
 
-  const GetFirewallConfigResponseManagedRulesVercelRuleset({this.action = const SdkOmitted(), required this.active, this.updatedAt = const SdkOmitted(), this.userId = const SdkOmitted(), this.username = const SdkOmitted()});
+  const GetFirewallConfigResponseManagedRulesVercelRuleset(
+      {this.action = const SdkOmitted(),
+      required this.active,
+      this.updatedAt = const SdkOmitted(),
+      this.userId = const SdkOmitted(),
+      this.username = const SdkOmitted()});
 
-  GetFirewallConfigResponseManagedRulesVercelRuleset Function({SdkOptional<GetFirewallConfigResponseManagedRulesVercelRulesetAction> action, GetFirewallConfigResponseManagedRulesVercelRulesetActive active, SdkOptional<String> updatedAt, SdkOptional<String> userId, SdkOptional<String> username}) get copyWith => _copyWith;
+  GetFirewallConfigResponseManagedRulesVercelRuleset Function(
+      {SdkOptional<GetFirewallConfigResponseManagedRulesVercelRulesetAction>
+          action,
+      GetFirewallConfigResponseManagedRulesVercelRulesetActive active,
+      SdkOptional<String> updatedAt,
+      SdkOptional<String> userId,
+      SdkOptional<String> username}) get copyWith => _copyWith;
 
-  GetFirewallConfigResponseManagedRulesVercelRuleset _copyWith({Object? action = sdkOmittedValue, Object? active = sdkOmittedValue, Object? updatedAt = sdkOmittedValue, Object? userId = sdkOmittedValue, Object? username = sdkOmittedValue}) => GetFirewallConfigResponseManagedRulesVercelRuleset(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<GetFirewallConfigResponseManagedRulesVercelRulesetAction>,
-    active: identical(active, sdkOmittedValue) ? this.active : active as GetFirewallConfigResponseManagedRulesVercelRulesetActive,
-    updatedAt: identical(updatedAt, sdkOmittedValue) ? this.updatedAt : updatedAt as SdkOptional<String>,
-    userId: identical(userId, sdkOmittedValue) ? this.userId : userId as SdkOptional<String>,
-    username: identical(username, sdkOmittedValue) ? this.username : username as SdkOptional<String>,
-  );
+  GetFirewallConfigResponseManagedRulesVercelRuleset _copyWith(
+          {Object? action = sdkOmittedValue,
+          Object? active = sdkOmittedValue,
+          Object? updatedAt = sdkOmittedValue,
+          Object? userId = sdkOmittedValue,
+          Object? username = sdkOmittedValue}) =>
+      GetFirewallConfigResponseManagedRulesVercelRuleset(
+        action: identical(action, sdkOmittedValue)
+            ? this.action
+            : action as SdkOptional<
+                GetFirewallConfigResponseManagedRulesVercelRulesetAction>,
+        active: identical(active, sdkOmittedValue)
+            ? this.active
+            : active
+                as GetFirewallConfigResponseManagedRulesVercelRulesetActive,
+        updatedAt: identical(updatedAt, sdkOmittedValue)
+            ? this.updatedAt
+            : updatedAt as SdkOptional<String>,
+        userId: identical(userId, sdkOmittedValue)
+            ? this.userId
+            : userId as SdkOptional<String>,
+        username: identical(username, sdkOmittedValue)
+            ? this.username
+            : username as SdkOptional<String>,
+      );
 
-  factory GetFirewallConfigResponseManagedRulesVercelRuleset.fromJson(Map<String, dynamic> json) => GetFirewallConfigResponseManagedRulesVercelRuleset(
-    action: json['action'] != null ? SdkPresent((json['action'] != null ? GetFirewallConfigResponseManagedRulesVercelRulesetAction.fromJson(json['action'] as String) : null)!) : const SdkOmitted(),
-    active: (json['active'] != null ? GetFirewallConfigResponseManagedRulesVercelRulesetActive.fromJson(json['active'] as bool) : null)!,
-    updatedAt: json['updatedAt'] != null ? SdkPresent((json['updatedAt'] as String?)!) : const SdkOmitted(),
-    userId: json['userId'] != null ? SdkPresent((json['userId'] as String?)!) : const SdkOmitted(),
-    username: json['username'] != null ? SdkPresent((json['username'] as String?)!) : const SdkOmitted(),
-  );
+  factory GetFirewallConfigResponseManagedRulesVercelRuleset.fromJson(
+          Map<String, dynamic> json) =>
+      GetFirewallConfigResponseManagedRulesVercelRuleset(
+        action: json['action'] != null
+            ? SdkPresent((json['action'] != null
+                ? GetFirewallConfigResponseManagedRulesVercelRulesetAction
+                    .fromJson(json['action'] as String)
+                : null)!)
+            : const SdkOmitted(),
+        active: (json['active'] != null
+            ? GetFirewallConfigResponseManagedRulesVercelRulesetActive.fromJson(
+                json['active'] as bool)
+            : null)!,
+        updatedAt: json['updatedAt'] != null
+            ? SdkPresent((json['updatedAt'] as String?)!)
+            : const SdkOmitted(),
+        userId: json['userId'] != null
+            ? SdkPresent((json['userId'] as String?)!)
+            : const SdkOmitted(),
+        username: json['username'] != null
+            ? SdkPresent((json['username'] as String?)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<GetFirewallConfigResponseManagedRulesVercelRulesetAction>(value: final value) => {'action': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'active': active.toJson(),
-    ...switch (updatedAt) {
-      SdkPresent<String>(value: final value) => {'updatedAt': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (userId) {
-      SdkPresent<String>(value: final value) => {'userId': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (username) {
-      SdkPresent<String>(value: final value) => {'username': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (action) {
+          SdkPresent<GetFirewallConfigResponseManagedRulesVercelRulesetAction>(
+            value: final value
+          ) =>
+            {
+              'action': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'active': active.toJson(),
+        ...switch (updatedAt) {
+          SdkPresent<String>(value: final value) => {
+              'updatedAt': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (userId) {
+          SdkPresent<String>(value: final value) => {
+              'userId': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (username) {
+          SdkPresent<String>(value: final value) => {
+              'username': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetFirewallConfigResponseManagedRules {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<GetFirewallConfigResponseManagedRulesAiBots> aiBots;
-  final SdkOptional<GetFirewallConfigResponseManagedRulesBotProtection> botProtection;
+  final SdkOptional<GetFirewallConfigResponseManagedRulesBotProtection>
+      botProtection;
   final SdkOptional<GetFirewallConfigResponseManagedRulesOwasp> owasp;
-  final SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSources> trafficSources;
-  final SdkOptional<GetFirewallConfigResponseManagedRulesVercelRuleset> vercelRuleset;
+  final SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSources>
+      trafficSources;
+  final SdkOptional<GetFirewallConfigResponseManagedRulesVercelRuleset>
+      vercelRuleset;
 
-  const GetFirewallConfigResponseManagedRules({this.aiBots = const SdkOmitted(), this.botProtection = const SdkOmitted(), this.owasp = const SdkOmitted(), this.trafficSources = const SdkOmitted(), this.vercelRuleset = const SdkOmitted()});
+  const GetFirewallConfigResponseManagedRules(
+      {this.aiBots = const SdkOmitted(),
+      this.botProtection = const SdkOmitted(),
+      this.owasp = const SdkOmitted(),
+      this.trafficSources = const SdkOmitted(),
+      this.vercelRuleset = const SdkOmitted()});
 
-  GetFirewallConfigResponseManagedRules Function({SdkOptional<GetFirewallConfigResponseManagedRulesAiBots> aiBots, SdkOptional<GetFirewallConfigResponseManagedRulesBotProtection> botProtection, SdkOptional<GetFirewallConfigResponseManagedRulesOwasp> owasp, SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSources> trafficSources, SdkOptional<GetFirewallConfigResponseManagedRulesVercelRuleset> vercelRuleset}) get copyWith => _copyWith;
+  GetFirewallConfigResponseManagedRules Function(
+      {SdkOptional<GetFirewallConfigResponseManagedRulesAiBots> aiBots,
+      SdkOptional<GetFirewallConfigResponseManagedRulesBotProtection>
+          botProtection,
+      SdkOptional<GetFirewallConfigResponseManagedRulesOwasp> owasp,
+      SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSources>
+          trafficSources,
+      SdkOptional<GetFirewallConfigResponseManagedRulesVercelRuleset>
+          vercelRuleset}) get copyWith => _copyWith;
 
-  GetFirewallConfigResponseManagedRules _copyWith({Object? aiBots = sdkOmittedValue, Object? botProtection = sdkOmittedValue, Object? owasp = sdkOmittedValue, Object? trafficSources = sdkOmittedValue, Object? vercelRuleset = sdkOmittedValue}) => GetFirewallConfigResponseManagedRules(
-    aiBots: identical(aiBots, sdkOmittedValue) ? this.aiBots : aiBots as SdkOptional<GetFirewallConfigResponseManagedRulesAiBots>,
-    botProtection: identical(botProtection, sdkOmittedValue) ? this.botProtection : botProtection as SdkOptional<GetFirewallConfigResponseManagedRulesBotProtection>,
-    owasp: identical(owasp, sdkOmittedValue) ? this.owasp : owasp as SdkOptional<GetFirewallConfigResponseManagedRulesOwasp>,
-    trafficSources: identical(trafficSources, sdkOmittedValue) ? this.trafficSources : trafficSources as SdkOptional<GetFirewallConfigResponseManagedRulesTrafficSources>,
-    vercelRuleset: identical(vercelRuleset, sdkOmittedValue) ? this.vercelRuleset : vercelRuleset as SdkOptional<GetFirewallConfigResponseManagedRulesVercelRuleset>,
-  );
+  GetFirewallConfigResponseManagedRules _copyWith(
+          {Object? aiBots = sdkOmittedValue,
+          Object? botProtection = sdkOmittedValue,
+          Object? owasp = sdkOmittedValue,
+          Object? trafficSources = sdkOmittedValue,
+          Object? vercelRuleset = sdkOmittedValue}) =>
+      GetFirewallConfigResponseManagedRules(
+        aiBots: identical(aiBots, sdkOmittedValue)
+            ? this.aiBots
+            : aiBots
+                as SdkOptional<GetFirewallConfigResponseManagedRulesAiBots>,
+        botProtection: identical(botProtection, sdkOmittedValue)
+            ? this.botProtection
+            : botProtection as SdkOptional<
+                GetFirewallConfigResponseManagedRulesBotProtection>,
+        owasp: identical(owasp, sdkOmittedValue)
+            ? this.owasp
+            : owasp as SdkOptional<GetFirewallConfigResponseManagedRulesOwasp>,
+        trafficSources: identical(trafficSources, sdkOmittedValue)
+            ? this.trafficSources
+            : trafficSources as SdkOptional<
+                GetFirewallConfigResponseManagedRulesTrafficSources>,
+        vercelRuleset: identical(vercelRuleset, sdkOmittedValue)
+            ? this.vercelRuleset
+            : vercelRuleset as SdkOptional<
+                GetFirewallConfigResponseManagedRulesVercelRuleset>,
+      );
 
-  factory GetFirewallConfigResponseManagedRules.fromJson(Map<String, dynamic> json) => GetFirewallConfigResponseManagedRules(
-    aiBots: json['ai_bots'] != null ? SdkPresent((json['ai_bots'] != null ? GetFirewallConfigResponseManagedRulesAiBots.fromJson(json['ai_bots'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    botProtection: json['bot_protection'] != null ? SdkPresent((json['bot_protection'] != null ? GetFirewallConfigResponseManagedRulesBotProtection.fromJson(json['bot_protection'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    owasp: json['owasp'] != null ? SdkPresent((json['owasp'] != null ? GetFirewallConfigResponseManagedRulesOwasp.fromJson(json['owasp'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    trafficSources: json['traffic_sources'] != null ? SdkPresent((json['traffic_sources'] != null ? GetFirewallConfigResponseManagedRulesTrafficSources.fromJson(json['traffic_sources'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-    vercelRuleset: json['vercel_ruleset'] != null ? SdkPresent((json['vercel_ruleset'] != null ? GetFirewallConfigResponseManagedRulesVercelRuleset.fromJson(json['vercel_ruleset'] as Map<String, dynamic>) : null)!) : const SdkOmitted(),
-  );
+  factory GetFirewallConfigResponseManagedRules.fromJson(
+          Map<String, dynamic> json) =>
+      GetFirewallConfigResponseManagedRules(
+        aiBots: json['ai_bots'] != null
+            ? SdkPresent((json['ai_bots'] != null
+                ? GetFirewallConfigResponseManagedRulesAiBots.fromJson(
+                    json['ai_bots'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        botProtection: json['bot_protection'] != null
+            ? SdkPresent((json['bot_protection'] != null
+                ? GetFirewallConfigResponseManagedRulesBotProtection.fromJson(
+                    json['bot_protection'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        owasp: json['owasp'] != null
+            ? SdkPresent((json['owasp'] != null
+                ? GetFirewallConfigResponseManagedRulesOwasp.fromJson(
+                    json['owasp'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        trafficSources: json['traffic_sources'] != null
+            ? SdkPresent((json['traffic_sources'] != null
+                ? GetFirewallConfigResponseManagedRulesTrafficSources.fromJson(
+                    json['traffic_sources'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+        vercelRuleset: json['vercel_ruleset'] != null
+            ? SdkPresent((json['vercel_ruleset'] != null
+                ? GetFirewallConfigResponseManagedRulesVercelRuleset.fromJson(
+                    json['vercel_ruleset'] as Map<String, dynamic>)
+                : null)!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (aiBots) {
-      SdkPresent<GetFirewallConfigResponseManagedRulesAiBots>(value: final value) => {'ai_bots': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (botProtection) {
-      SdkPresent<GetFirewallConfigResponseManagedRulesBotProtection>(value: final value) => {'bot_protection': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (owasp) {
-      SdkPresent<GetFirewallConfigResponseManagedRulesOwasp>(value: final value) => {'owasp': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (trafficSources) {
-      SdkPresent<GetFirewallConfigResponseManagedRulesTrafficSources>(value: final value) => {'traffic_sources': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (vercelRuleset) {
-      SdkPresent<GetFirewallConfigResponseManagedRulesVercelRuleset>(value: final value) => {'vercel_ruleset': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (aiBots) {
+          SdkPresent<GetFirewallConfigResponseManagedRulesAiBots>(
+            value: final value
+          ) =>
+            {
+              'ai_bots': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (botProtection) {
+          SdkPresent<GetFirewallConfigResponseManagedRulesBotProtection>(
+            value: final value
+          ) =>
+            {
+              'bot_protection': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (owasp) {
+          SdkPresent<GetFirewallConfigResponseManagedRulesOwasp>(
+            value: final value
+          ) =>
+            {
+              'owasp': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (trafficSources) {
+          SdkPresent<GetFirewallConfigResponseManagedRulesTrafficSources>(
+            value: final value
+          ) =>
+            {
+              'traffic_sources': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (vercelRuleset) {
+          SdkPresent<GetFirewallConfigResponseManagedRulesVercelRuleset>(
+            value: final value
+          ) =>
+            {
+              'vercel_ruleset': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final SdkOptional<String> key;
-  final SdkOptional<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg> neg;
-  final GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp op;
-  final GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType type_;
+  final SdkOptional<
+          GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg>
+      neg;
+  final GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp
+      op;
+  final GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType
+      type_;
   final SdkOptional<dynamic> value;
 
-  const GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem({this.key = const SdkOmitted(), this.neg = const SdkOmitted(), required this.op, required this.type_, this.value = const SdkOmitted()});
+  const GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem(
+      {this.key = const SdkOmitted(),
+      this.neg = const SdkOmitted(),
+      required this.op,
+      required this.type_,
+      this.value = const SdkOmitted()});
 
-  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem Function({SdkOptional<String> key, SdkOptional<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg> neg, GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp op, GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType type_, SdkOptional<dynamic> value}) get copyWith => _copyWith;
+  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem Function(
+      {SdkOptional<String> key,
+      SdkOptional<
+              GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg>
+          neg,
+      GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp
+          op,
+      GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType
+          type_,
+      SdkOptional<dynamic> value}) get copyWith => _copyWith;
 
-  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem _copyWith({Object? key = sdkOmittedValue, Object? neg = sdkOmittedValue, Object? op = sdkOmittedValue, Object? type_ = sdkOmittedValue, Object? value = sdkOmittedValue}) => GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem(
-    key: identical(key, sdkOmittedValue) ? this.key : key as SdkOptional<String>,
-    neg: identical(neg, sdkOmittedValue) ? this.neg : neg as SdkOptional<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg>,
-    op: identical(op, sdkOmittedValue) ? this.op : op as GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp,
-    type_: identical(type_, sdkOmittedValue) ? this.type_ : type_ as GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType,
-    value: identical(value, sdkOmittedValue) ? this.value : value as SdkOptional<dynamic>,
-  );
+  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem
+      _copyWith(
+              {Object? key = sdkOmittedValue,
+              Object? neg = sdkOmittedValue,
+              Object? op = sdkOmittedValue,
+              Object? type_ = sdkOmittedValue,
+              Object? value = sdkOmittedValue}) =>
+          GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem(
+            key: identical(key, sdkOmittedValue)
+                ? this.key
+                : key as SdkOptional<String>,
+            neg: identical(neg, sdkOmittedValue)
+                ? this.neg
+                : neg as SdkOptional<
+                    GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg>,
+            op: identical(op, sdkOmittedValue)
+                ? this.op
+                : op
+                    as GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp,
+            type_: identical(type_, sdkOmittedValue)
+                ? this.type_
+                : type_
+                    as GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType,
+            value: identical(value, sdkOmittedValue)
+                ? this.value
+                : value as SdkOptional<dynamic>,
+          );
 
-  factory GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem.fromJson(Map<String, dynamic> json) => GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem(
-    key: json['key'] != null ? SdkPresent((json['key'] as String?)!) : const SdkOmitted(),
-    neg: json['neg'] != null ? SdkPresent((json['neg'] != null ? GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg.fromJson(json['neg'] as bool) : null)!) : const SdkOmitted(),
-    op: (json['op'] != null ? GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp.fromJson(json['op'] as String) : null)!,
-    type_: (json['type'] != null ? GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType.fromJson(json['type'] as String) : null)!,
-    value: json['value'] != null ? SdkPresent((json['value'])!) : const SdkOmitted(),
-  );
+  factory GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem(
+        key: json['key'] != null
+            ? SdkPresent((json['key'] as String?)!)
+            : const SdkOmitted(),
+        neg: json['neg'] != null
+            ? SdkPresent((json['neg'] != null
+                ? GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg
+                    .fromJson(json['neg'] as bool)
+                : null)!)
+            : const SdkOmitted(),
+        op: (json['op'] != null
+            ? GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemOp
+                .fromJson(json['op'] as String)
+            : null)!,
+        type_: (json['type'] != null
+            ? GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemType
+                .fromJson(json['type'] as String)
+            : null)!,
+        value: json['value'] != null
+            ? SdkPresent((json['value'])!)
+            : const SdkOmitted(),
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (key) {
-      SdkPresent<String>(value: final value) => {'key': value,},
-      _ => const <String, dynamic>{},
-    },
-    ...switch (neg) {
-      SdkPresent<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg>(value: final value) => {'neg': value.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'op': op.toJson(),
-    'type': type_.toJson(),
-    ...switch (value) {
-      SdkPresent<dynamic>(value: final value) => {'value': value,},
-      _ => const <String, dynamic>{},
-    },
-  };
+        ...switch (key) {
+          SdkPresent<String>(value: final value) => {
+              'key': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+        ...switch (neg) {
+          SdkPresent<
+                GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItemNeg>(
+            value: final value
+          ) =>
+            {
+              'neg': value.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'op': op.toJson(),
+        'type': type_.toJson(),
+        ...switch (value) {
+          SdkPresent<dynamic>(value: final value) => {
+              'value': value,
+            },
+          _ => const <String, dynamic>{},
+        },
+      };
 }
 
 class GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final List<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem> conditions;
+  final List<
+          GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem>
+      conditions;
 
-  const GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem({required this.conditions});
+  const GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem(
+      {required this.conditions});
 
-  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem Function({List<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem> conditions}) get copyWith => _copyWith;
+  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem Function(
+      {List<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem>
+          conditions}) get copyWith => _copyWith;
 
-  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem _copyWith({Object? conditions = sdkOmittedValue}) => GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem(
-    conditions: identical(conditions, sdkOmittedValue) ? this.conditions : conditions as List<GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem>,
-  );
+  GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem _copyWith(
+          {Object? conditions = sdkOmittedValue}) =>
+      GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem(
+        conditions: identical(conditions, sdkOmittedValue)
+            ? this.conditions
+            : conditions as List<
+                GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem>,
+      );
 
-  factory GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem.fromJson(Map<String, dynamic> json) => GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem(
-    conditions: ((json['conditions'] as List?)?.map((e) => GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem.fromJson(e as Map<String, dynamic>)).toList())!,
-  );
+  factory GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem.fromJson(
+          Map<String, dynamic> json) =>
+      GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItem(
+        conditions: ((json['conditions'] as List?)
+            ?.map((e) =>
+                GetFirewallConfigResponseRulesetsVariant0ItemConditionGroupItemConditionsItem
+                    .fromJson(e as Map<String, dynamic>))
+            .toList())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'conditions': conditions.map((item) => item.toJson()).toList(),
-  };
+        'conditions': conditions.map((item) => item.toJson()).toList(),
+      };
 }
 
 class GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
-  final SdkOptional<GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?> action;
-  final GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo algo;
+  final SdkOptional<
+          GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?>
+      action;
+  final GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo
+      algo;
   final List<String> keys;
   final double limit;
   final double window;
 
-  const GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit({this.action = const SdkOmitted(), required this.algo, required this.keys, required this.limit, required this.window});
+  const GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit(
+      {this.action = const SdkOmitted(),
+      required this.algo,
+      required this.keys,
+      required this.limit,
+      required this.window});
 
-  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit Function({SdkOptional<GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?> action, GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo algo, List<String> keys, double limit, double window}) get copyWith => _copyWith;
+  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit Function(
+      {SdkOptional<
+              GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?>
+          action,
+      GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo
+          algo,
+      List<String> keys,
+      double limit,
+      double window}) get copyWith => _copyWith;
 
-  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit _copyWith({Object? action = sdkOmittedValue, Object? algo = sdkOmittedValue, Object? keys = sdkOmittedValue, Object? limit = sdkOmittedValue, Object? window = sdkOmittedValue}) => GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit(
-    action: identical(action, sdkOmittedValue) ? this.action : action as SdkOptional<GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?>,
-    algo: identical(algo, sdkOmittedValue) ? this.algo : algo as GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo,
-    keys: identical(keys, sdkOmittedValue) ? this.keys : keys as List<String>,
-    limit: identical(limit, sdkOmittedValue) ? this.limit : limit as double,
-    window: identical(window, sdkOmittedValue) ? this.window : window as double,
-  );
+  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit
+      _copyWith(
+              {Object? action = sdkOmittedValue,
+              Object? algo = sdkOmittedValue,
+              Object? keys = sdkOmittedValue,
+              Object? limit = sdkOmittedValue,
+              Object? window = sdkOmittedValue}) =>
+          GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit(
+            action: identical(action, sdkOmittedValue)
+                ? this.action
+                : action as SdkOptional<
+                    GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?>,
+            algo: identical(algo, sdkOmittedValue)
+                ? this.algo
+                : algo
+                    as GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo,
+            keys: identical(keys, sdkOmittedValue)
+                ? this.keys
+                : keys as List<String>,
+            limit: identical(limit, sdkOmittedValue)
+                ? this.limit
+                : limit as double,
+            window: identical(window, sdkOmittedValue)
+                ? this.window
+                : window as double,
+          );
 
-  factory GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit.fromJson(Map<String, dynamic> json) => GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit(
-    action: json.containsKey('action') ? SdkPresent(json['action'] != null ? GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction.fromJson(json['action'] as String) : null) : const SdkOmitted(),
-    algo: (json['algo'] != null ? GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo.fromJson(json['algo'] as String) : null)!,
-    keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
-    limit: ((json['limit'] as num?)?.toDouble())!,
-    window: ((json['window'] as num?)?.toDouble())!,
-  );
+  factory GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit.fromJson(
+          Map<String, dynamic> json) =>
+      GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimit(
+        action: json.containsKey('action')
+            ? SdkPresent(json['action'] != null
+                ? GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction
+                    .fromJson(json['action'] as String)
+                : null)
+            : const SdkOmitted(),
+        algo: (json['algo'] != null
+            ? GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAlgo
+                .fromJson(json['algo'] as String)
+            : null)!,
+        keys: ((json['keys'] as List?)?.map((e) => e as String).toList())!,
+        limit: ((json['limit'] as num?)?.toDouble())!,
+        window: ((json['window'] as num?)?.toDouble())!,
+      );
 
   Map<String, dynamic> toJson() => {
-    ...switch (action) {
-      SdkPresent<GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?>(value: final value) => {'action': value?.toJson(),},
-      _ => const <String, dynamic>{},
-    },
-    'algo': algo.toJson(),
-    'keys': keys,
-    'limit': limit,
-    'window': window,
-  };
+        ...switch (action) {
+          SdkPresent<
+                GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRateLimitAction?>(
+            value: final value
+          ) =>
+            {
+              'action': value?.toJson(),
+            },
+          _ => const <String, dynamic>{},
+        },
+        'algo': algo.toJson(),
+        'keys': keys,
+        'limit': limit,
+        'window': window,
+      };
 }
 
 class GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect {
   /// This model is constructed from named fields in one call.
   static const String constructionSurface = 'named';
   final String location;
-  final GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent permanent;
+  final GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent
+      permanent;
 
-  const GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect({required this.location, required this.permanent});
+  const GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect(
+      {required this.location, required this.permanent});
 
-  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect Function({String location, GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent permanent}) get copyWith => _copyWith;
+  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect Function(
+      {String location,
+      GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent
+          permanent}) get copyWith => _copyWith;
 
-  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect _copyWith({Object? location = sdkOmittedValue, Object? permanent = sdkOmittedValue}) => GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect(
-    location: identical(location, sdkOmittedValue) ? this.location : location as String,
-    permanent: identical(permanent, sdkOmittedValue) ? this.permanent : permanent as GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent,
-  );
+  GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect _copyWith(
+          {Object? location = sdkOmittedValue,
+          Object? permanent = sdkOmittedValue}) =>
+      GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect(
+        location: identical(location, sdkOmittedValue)
+            ? this.location
+            : location as String,
+        permanent: identical(permanent, sdkOmittedValue)
+            ? this.permanent
+            : permanent
+                as GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent,
+      );
 
-  factory GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect.fromJson(Map<String, dynamic> json) => GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect(
-    location: (json['location'] as String?)!,
-    permanent: (json['permanent'] != null ? GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent.fromJson(json['permanent'] as bool) : null)!,
-  );
+  factory GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect.fromJson(
+          Map<String, dynamic> json) =>
+      GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirect(
+        location: (json['location'] as String?)!,
+        permanent: (json['permanent'] != null
+            ? GetFirewallConfigResponseRulesetsVariant0ItemActionMitigateRedirectPermanent
+                .fromJson(json['permanent'] as bool)
+            : null)!,
+      );
 
   Map<String, dynamic> toJson() => {
-    'location': location,
-    'permanent': permanent.toJson(),
-  };
+        'location': location,
+        'permanent': permanent.toJson(),
+      };
 }
