@@ -5,4 +5,4 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'domains_registrar_contact_part1.dart';
+part 'domains_registrar_contact_models.dart';

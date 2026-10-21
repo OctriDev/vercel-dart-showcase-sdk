@@ -5,5 +5,5 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'bulk_redirects_part1.dart';
-part 'bulk_redirects_part2.dart';
+part 'bulk_redirects_delete_redirects_response.dart';
+part 'bulk_redirects_delete_redirects_response_variant2.dart';

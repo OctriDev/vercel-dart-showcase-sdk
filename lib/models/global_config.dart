@@ -6,6 +6,7 @@ import '../sdk_utils.dart';
 import 'inline.dart';
 import 'shared.dart';
 
-part 'global_config_part1.dart';
-part 'global_config_part2.dart';
-part 'global_config_part3.dart';
+part 'global_config_get_edge_config_backup_response.dart';
+part 'global_config_get_edge_config_backup_response_variant1_metadata.dart';
+part 'global_config_shared.dart';
+part 'global_config_patch_edge_config_items.dart';

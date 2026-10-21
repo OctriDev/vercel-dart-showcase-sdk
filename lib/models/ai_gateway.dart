@@ -5,9 +5,18 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'ai_gateway_part1.dart';
-part 'ai_gateway_part2.dart';
-part 'ai_gateway_part3.dart';
-part 'ai_gateway_part4.dart';
-part 'ai_gateway_part5.dart';
-part 'ai_gateway_part6.dart';
+part 'ai_gateway_budget.dart';
+part 'ai_gateway_budget_default.dart';
+part 'ai_gateway_evaluation_fallback_condition.dart';
+part 'ai_gateway_provider_option_bag.dart';
+part 'ai_gateway_router_selector_option_bag.dart';
+part 'ai_gateway_rule.dart';
+part 'ai_gateway_virtual_model_config_inference_region_providers_value.dart';
+part 'ai_gateway_virtual_model_config.dart';
+part 'ai_gateway_virtual_model_config_list.dart';
+part 'ai_gateway_virtual_model_config_models_item.dart';
+part 'ai_gateway_list_ai_gateway_budget_defaults.dart';
+part 'ai_gateway_list_ai_gateway_budgets.dart';
+part 'ai_gateway_list_ai_gateway_routers.dart';
+part 'ai_gateway_list_ai_gateway_rules.dart';
+part 'ai_gateway_get_ai_gateway_virtual_model_config.dart';

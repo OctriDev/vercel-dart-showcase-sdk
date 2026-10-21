@@ -5,6 +5,6 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'misc_part1.dart';
-part 'misc_part2.dart';
-part 'misc_part3.dart';
+part 'misc_rate_limit_notice.dart';
+part 'misc_registrant_field.dart';
+part 'misc_registrant_field_variant2_required_when_variant1.dart';

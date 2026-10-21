@@ -5,7 +5,10 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'kms_part1.dart';
-part 'kms_part2.dart';
-part 'kms_part3.dart';
-part 'kms_part4.dart';
+part 'kms_create_kms_issuer_policy.dart';
+part 'kms_create_kms_issuer.dart';
+part 'kms_get_kms_issuer.dart';
+part 'kms_list_kms_issuers.dart';
+part 'kms_revoke_kms_signing_key.dart';
+part 'kms_update_kms_issuer_policy.dart';
+part 'kms_update_kms_issuer.dart';

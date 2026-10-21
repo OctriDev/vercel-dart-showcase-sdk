@@ -6,5 +6,6 @@ import '../sdk_utils.dart';
 import 'inline.dart';
 import 'shared.dart';
 
-part 'authentication_part1.dart';
-part 'authentication_part2.dart';
+part 'authentication_shared.dart';
+part 'authentication_exchange_sso_token.dart';
+part 'authentication_list_auth_tokens.dart';

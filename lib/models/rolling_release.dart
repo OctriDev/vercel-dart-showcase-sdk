@@ -5,5 +5,5 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'rolling_release_part1.dart';
-part 'rolling_release_part2.dart';
+part 'rolling_release_get_rolling_release_billing_status.dart';
+part 'rolling_release_update_rolling_release_config.dart';

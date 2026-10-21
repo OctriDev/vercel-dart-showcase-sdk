@@ -4,5 +4,5 @@
 // web_analytics domain model library.
 import '../sdk_utils.dart';
 
-part 'web_analytics_part1.dart';
-part 'web_analytics_part2.dart';
+part 'web_analytics_count_events.dart';
+part 'web_analytics_count_pageviews.dart';

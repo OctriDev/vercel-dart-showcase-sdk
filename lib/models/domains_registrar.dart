@@ -5,6 +5,24 @@
 import '../sdk_utils.dart';
 import 'inline.dart';
 
-part 'domains_registrar_part1.dart';
-part 'domains_registrar_part2.dart';
-part 'domains_registrar_part3.dart';
+part 'domains_registrar_additional_contact_info_required.dart';
+part 'domains_registrar_bad_request.dart';
+part 'domains_registrar_country_code.dart';
+part 'domains_registrar_e164_phone_number.dart';
+part 'domains_registrar_email_address.dart';
+part 'domains_registrar_emoji_tld_not_supported.dart';
+part 'domains_registrar_expected_price_mismatch.dart';
+part 'domains_registrar_forbidden.dart';
+part 'domains_registrar_http_api_decode_error.dart';
+part 'domains_registrar_internal_server_error.dart';
+part 'domains_registrar_invalid_additional_contact_info.dart';
+part 'domains_registrar_issue.dart';
+part 'domains_registrar_language_code_required.dart';
+part 'domains_registrar_non_empty_trimmed_string.dart';
+part 'domains_registrar_property_key.dart';
+part 'domains_registrar_unauthorized.dart';
+part 'domains_registrar_get_domain_contact_verification.dart';
+part 'domains_registrar_transfer_in_domain.dart';
+part 'domains_registrar_buy_domains.dart';
+part 'domains_registrar_update_domain_nameservers.dart';
+part 'domains_registrar_search_domains.dart';
